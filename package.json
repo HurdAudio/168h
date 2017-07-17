@@ -1,0 +1,19 @@
+{
+  "name": "168h",
+  "version": "1.0.0",
+  "description": "Personal daytimer for obsessive productivity.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HurdAudio/168h.git"
+  },
+  "author": "Devin Hurd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HurdAudio/168h/issues"
+  },
+  "homepage": "https://github.com/HurdAudio/168h#readme"
+}
