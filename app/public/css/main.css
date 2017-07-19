@@ -131,14 +131,498 @@ a.btn:hover {
   margin-left: 0.4em;
   margin-top: 0;
   text-align: left;
+  text-rendering: geometricPrecision;
   border: solid #000000 3px;
+  padding-left: 0em;
+  padding-top: 0;
+  overflow: scroll;
+  height: 565px;
+  width: 30%;
+}
+
+#focusPanel {
+  width: 30%;
+  height: 565px;
+  overflow: scroll;
+
+  margin-left: 0.4em;
+  border: solid #000000 3px;
+  background-color: #eeeeee;
+}
+
+#goalsPanel {
+  width: 30%;
+  height: 565px;
+  overflow: scroll;
+
+  margin-left: 0.4em;
+  border: solid #000000 3px;
+  background-color: #eeeeee;
 }
 
 #daytimer h4 {
+  margin-left: 0.4em;
 }
- #daytimer p {
+#daytimer p {
    font-size: 24px;
-   margin-left: 1em;
-   margin-top: 0;
-   margin-bottom: 1em;
+   margin-left: 0.7em;
+   margin-top: 0.2em;
+
  }
+
+
+ .hour {
+   border: solid #111111 1px;
+   height: 1em;
+ }
+
+ #focusPanel h3 {
+   font-family: 'Neuton', serif;
+   font-size: 24px;
+   margin-left: 0.9em;
+ }
+
+ #focusPanel p {
+   font-family: 'Neuton', sans-serif;
+   font-size: 18px;
+   margin-left: 0.6em;
+   margin-right: 0.6em;
+   margin-top: 0;
+ }
+
+#focusPanel h2 {
+  font-family: 'Neuton', sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+.holidays {
+  font-family: 'Neuton', sans-serif;
+  font-size: 24px;
+  text-align: center;
+  background-color: pink;
+  margin-top: 0;
+  padding-top: 0;
+  border-top: solid pink 1px;
+}
+
+.holidays img {
+  width: 100%;
+}
+
+.events {
+  font-family: 'Neuton', sans-serif;
+  font-size: 24px;
+  text-align: left;
+  padding-left: 2.5em;
+  background-color: #ffff77;
+  border-top: solid #ffff77 1px;
+}
+
+.billsAndTasks {
+  font-family: 'Neuton', sans-serif;
+  font-size: 24px;
+  text-align: left;
+  padding-left: 0.5em;
+  background-color: #cc9900;
+  border-top: solid black 1px;
+  border-bottom: solid black 1px;
+  padding-bottom: 0.5em;
+}
+
+.billsAndTasks p {
+}
+
+.billsAndTasks a {
+  height: 0.4em;
+  padding-bottom: 2.4em;
+  padding-top: 0;
+  /*font-family: 'Concert One', cursive;
+  font-size: 24px;
+  border: solid black 3px;
+  border-radius: 5%;
+  text-align: center;
+  width: 130px;
+  height: 25px;
+  padding-bottom: 2em;
+  float: inline-block;
+  margin-left: 10em;
+  height: 24px;
+  width: 140px;*/
+}
+
+#sleepGoals {
+  background-color: #DB3B2D;
+}
+
+#sleepGoals h4 {
+  text-align: center;
+  font-family: 'Concert One', cursive;
+  font-size: 24px;
+}
+
+#sleepGoals h5 {
+  text-align: center;
+  font-family: 'Neuton', sans-serif;
+  font-size: 24px;
+}
+
+#sleepGoals h1 {
+  text-align: center;
+  font-family: 'Space Mono', monospace;
+  font-size: 36px;
+  z-index: 4;
+}
+
+#sleepGoals p {
+  text-align: center;
+  font-family: 'Neuton', sans-serif;
+  font-size: 24px;
+}
+
+#exerciseGoals {
+  background-color: #22bc44;
+}
+
+#exerciseGoals h4 {
+  text-align: center;
+  font-family: 'Concert One', cursive;
+  font-size: 24px;
+}
+
+#exerciseGoals h5 {
+  text-align: center;
+  font-family: 'Neuton', sans-serif;
+  font-size: 24px;
+}
+
+#exerciseGoals h1 {
+  text-align: center;
+  font-family: 'Space Mono', monospace;
+  font-size: 36px;
+  z-index: 4;
+}
+
+#exerciseGoals p {
+  text-align: center;
+  font-family: 'Neuton', sans-serif;
+  font-size: 24px;
+}
+
+#readingGoals {
+  background-color: #22bc44;
+}
+
+#readingGoals h4 {
+  text-align: center;
+  font-family: 'Concert One', cursive;
+  font-size: 24px;
+}
+
+#readingGoals h5 {
+  text-align: center;
+  font-family: 'Neuton', sans-serif;
+  font-size: 24px;
+}
+
+#readingGoals h1 {
+  text-align: center;
+  font-family: 'Space Mono', monospace;
+  font-size: 36px;
+  z-index: 4;
+}
+
+#readingGoals p {
+  text-align: center;
+  font-family: 'Neuton', sans-serif;
+  font-size: 24px;
+}
+
+#codingGoals {
+  background-color: #22bc44;
+}
+
+#codingGoals h4 {
+  text-align: center;
+  font-family: 'Concert One', cursive;
+  font-size: 24px;
+}
+
+#codingGoals h5 {
+  text-align: center;
+  font-family: 'Neuton', sans-serif;
+  font-size: 24px;
+}
+
+#codingGoals h1 {
+  text-align: center;
+  font-family: 'Space Mono', monospace;
+  font-size: 36px;
+  z-index: 4;
+}
+
+#codingGoals p {
+  text-align: center;
+  font-family: 'Neuton', sans-serif;
+  font-size: 24px;
+}
+
+#creativeGoals {
+  background-color: #E2C286;
+}
+
+#creativeGoals h4 {
+  text-align: center;
+  font-family: 'Concert One', cursive;
+  font-size: 24px;
+}
+
+#creativeGoals h5 {
+  text-align: center;
+  font-family: 'Neuton', sans-serif;
+  font-size: 24px;
+}
+
+#creativeGoals h1 {
+  text-align: center;
+  font-family: 'Space Mono', monospace;
+  font-size: 36px;
+  z-index: 4;
+}
+
+#creativeGoals p {
+  text-align: center;
+  font-family: 'Neuton', sans-serif;
+  font-size: 24px;
+}
+
+.sleepBlockStart {
+  height: 100%;
+  background-color: #3B69B9;
+  opacity: 0.8;
+}
+
+.sleepBlockStart :after {
+  font-family: 'Space Mono', monospace;
+  font-size: 24px;
+  margin-left: 2em;
+  content: "   Sleep";
+}
+
+.sleepBlock {
+  height: 100%;
+  background-color: #3B69B9;
+  border-top: solid #3B69B9 3px;
+  z-index: 5;
+  opacity: 0.8;
+}
+
+.jobHuntBlockStart {
+  height: 100%;
+  background-color: #495753;
+  opacity: 0.8;
+}
+
+.jobHuntBlockStart :after {
+  font-family: 'Space Mono', monospace;
+  font-size: 24px;
+  margin-left: 2em;
+  content: "   Job Hunt";
+}
+
+.jobHuntBlock {
+  height: 100%;
+  background-color: #495753;
+  border-top: solid #495753 3px;
+  z-index: 5;
+  opacity: 0.8;
+}
+
+.exerciseBlockStart {
+  height: 100%;
+  background-color: #B89697;
+  opacity: 0.8;
+}
+
+.exerciseBlockStart :after {
+  font-family: 'Space Mono', monospace;
+  font-size: 24px;
+  margin-left: 2em;
+  content: "   Exercise";
+}
+
+.exerciseBlock {
+  height: 100%;
+  background-color: #B89697;
+  border-top: solid #B89697 3px;
+  z-index: 5;
+  opacity: 0.8;
+}
+
+.mealBlockStart {
+  height: 100%;
+  background-color: #897751;
+  opacity: 0.8;
+}
+
+.mealBlockStart :after {
+  font-family: 'Space Mono', monospace;
+  font-size: 24px;
+  margin-left: 2em;
+  content: "   Meal";
+}
+
+.mealBlock {
+  height: 100%;
+  background-color: #897751;
+  border-top: solid #897751 3px;
+  z-index: 5;
+  opacity: 0.8;
+}
+
+.breakBlockStart {
+  height: 100%;
+  background-color: #E5EEE9;
+  opacity: 0.8;
+}
+
+.breakBlockStart :after {
+  font-family: 'Space Mono', monospace;
+  font-size: 24px;
+  margin-left: 2em;
+  content: "   Break";
+}
+
+.breakBlock {
+  height: 100%;
+  background-color: #E5EEE9;
+  border-top: solid #E5EEE9 3px;
+  z-index: 5;
+  opacity: 0.8;
+}
+
+.offsiteEventBlockStart {
+  height: 100%;
+  background-color: #756D65;
+  opacity: 0.8;
+}
+
+.offsiteEventBlockStart :after {
+  font-family: 'Space Mono', monospace;
+  font-size: 24px;
+  margin-left: 2em;
+  content: "   Offsite Event";
+}
+
+.offsiteEventBlock {
+  height: 100%;
+  background-color: #756D65;
+  border-top: solid #756D65 3px;
+  z-index: 5;
+  opacity: 0.8;
+}
+
+.meetingBlockStart {
+  height: 100%;
+  background-color: #BD435D;
+  opacity: 0.8;
+}
+
+.meetingBlockStart :after {
+  font-family: 'Space Mono', monospace;
+  font-size: 24px;
+  margin-left: 2em;
+  content: "   Meeting";
+}
+
+.meetingBlock {
+  height: 100%;
+  background-color: #BD435D;
+  border-top: solid #BD435D 3px;
+  z-index: 5;
+  opacity: 0.8;
+}
+
+.codingBlockStart {
+  height: 100%;
+  background-color: #2D4860;
+  opacity: 0.8;
+}
+
+.codingBlockStart :after {
+  font-family: 'Space Mono', monospace;
+  font-size: 24px;
+  margin-left: 2em;
+  content: "   Coding";
+}
+
+.codingBlock {
+  height: 100%;
+  background-color: #2D4860;
+  border-top: solid #2D4860 3px;
+  z-index: 5;
+  opacity: 0.8;
+}
+
+.adminBlockStart {
+  height: 100%;
+  background-color: #86863D;
+  opacity: 0.8;
+}
+
+.adminBlockStart :after {
+  font-family: 'Space Mono', monospace;
+  font-size: 24px;
+  margin-left: 2em;
+  content: "   Admin";
+}
+
+.adminBlock {
+  height: 100%;
+  background-color: #86863D;
+  border-top: solid #86863D 3px;
+  z-index: 5;
+  opacity: 0.8;
+}
+
+.readingBlockStart {
+  height: 100%;
+  background-color: #CA9577;
+  opacity: 0.8;
+}
+
+.readingBlockStart :after {
+  font-family: 'Space Mono', monospace;
+  font-size: 24px;
+  margin-left: 2em;
+  content: "   Reading";
+}
+
+.readingBlock {
+  height: 100%;
+  background-color: #CA9577;
+  border-top: solid #CA9577 3px;
+  z-index: 5;
+  opacity: 0.8;
+}
+
+#daySchedule {
+  background-image: url(../img/background-2044512_1920.jpg);
+  background-repeat: repeat;
+  font-family: 'Neuton', sans-serif;
+  text-align: center;
+}
+
+#daySchedule h3 {
+  font-size: 36px;
+
+}
+
+#daySchedule h4 {
+  font-size: 24px;
+  border-top: solid #000000 1px;
+}
+
+#daySchedule p {
+  font-size: 24px;
+}
