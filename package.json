@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/HurdAudio/168h/issues"
   },
-  "homepage": "https://github.com/HurdAudio/168h#readme"
+  "homepage": "https://github.com/HurdAudio/168h#readme",
+  "dependencies": {
+    "express": "^4.15.3",
+    "knex": "^0.13.0",
+    "pg": "^7.0.1"
+  }
 }

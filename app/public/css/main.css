@@ -128,16 +128,16 @@ a.btn:hover {
   background-size: 75%;
   font-family: 'Neuton', serif;
   font-size: 48px;
-  margin-left: 0.4em;
+  margin-left: 0;
   margin-top: 0;
   text-align: left;
   text-rendering: geometricPrecision;
   border: solid #000000 3px;
-  padding-left: 0em;
+  padding-left: 0.1em;
   padding-top: 0;
   overflow: scroll;
   height: 565px;
-  width: 30%;
+  width: 38%;
 }
 
 #focusPanel {
@@ -145,7 +145,7 @@ a.btn:hover {
   height: 565px;
   overflow: scroll;
 
-  margin-left: 0.4em;
+  margin-left: 0.1em;
   border: solid #000000 3px;
   background-color: #eeeeee;
 }
@@ -155,7 +155,7 @@ a.btn:hover {
   height: 565px;
   overflow: scroll;
 
-  margin-left: 0.4em;
+  margin-left: 0.1em;
   border: solid #000000 3px;
   background-color: #eeeeee;
 }
