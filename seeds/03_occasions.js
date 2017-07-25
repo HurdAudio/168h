@@ -49,6 +49,33 @@ exports.seed = function(knex, Promise) {
           is_annual: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 6,
+          user_id: 1,
+          name: 'Mason\'s birthday',
+          day_of: new Date('2018-03-13'),
+          is_annual: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 7,
+          user_id: 1,
+          name: 'Day of unspeakable loss',
+          day_of: new Date('2018-06-03'),
+          is_annual: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 8,
+          user_id: 1,
+          name: 'Jon & Jerrie Anniversary',
+          day_of: new Date('2018-06-30'),
+          is_annual: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     })

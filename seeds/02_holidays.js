@@ -13296,6 +13296,76 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 858,
+          user_id: 1,
+          name: 'Canada Day',
+          color: '#FCF2D9',
+          picture: './img/holidays/canadaday.jpg',
+          day_of: new Date('2018-07-01'),
+          is_annual: true,
+          rule: null,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 859,
+          user_id: 1,
+          name: 'Independence Day',
+          color: '#333164',
+          picture: './img/holidays/independenceday.jpg',
+          day_of: new Date('2018-07-04'),
+          is_annual: true,
+          rule: null,
+          art_override: true,
+          music_override: false,
+          override_content: {
+            "img_paths": "[ './img/holidays/independence01.jpg', './img/holidays/independence02.jpg' ]",
+            "titles": "[ 'The Declaration of Independence, July 4, 1776', 'George Washington with His Army Crossing the Delaware' ]",
+            "artists": "[ 'Edward Hicks', 'Edward Hicks' ]",
+            "years": "[ '1845', '1848' ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 860,
+          user_id: 1,
+          name: 'World Population Day',
+          color: '#2BA16D',
+          picture: './img/holidays/worldpopulationday.jpg',
+          day_of: new Date('2018-07-11'),
+          is_annual: true,
+          rule: null,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 861,
+          user_id: 1,
+          name: 'Bastille Day',
+          color: '#FB676B',
+          picture: './img/holidays/bastilleday.jpg',
+          day_of: new Date('2018-07-14'),
+          is_annual: true,
+          rule: null,
+          art_override: true,
+          music_override: false,
+          override_content: {
+            "img_paths": "[ './img/holidays/bastille01.jpg' ]",
+            "titles": "[ 'Bastille Day, Boulevard Rochechouart, Paris' ]",
+            "artists": "[ 'Childe Hassam' ]",
+            "years": "[ '1889' ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     })

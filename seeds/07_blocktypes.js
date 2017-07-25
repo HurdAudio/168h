@@ -10,6 +10,7 @@ exports.seed = function(knex, Promise) {
           user_id: 1,
           type: 'sleep',
           keys: null,
+          color: '#3B69B9',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
         },
@@ -21,6 +22,7 @@ exports.seed = function(knex, Promise) {
             "keys": "['exertionString']",
             "exertionStringValues": "['aerobic', 'free weights', 'lower', 'other', 'upper', 'walking']"
           },
+          color: '#B89697',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
         },
@@ -32,6 +34,7 @@ exports.seed = function(knex, Promise) {
             "keys": "['adminType']",
             "adminTypeValues": "['bills', 'chores', 'emails', 'errands', 'planning']"
           },
+          color: '#86863D',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
         },
@@ -43,6 +46,7 @@ exports.seed = function(knex, Promise) {
             "keys": "['project']",
             "projectValues": "['educational', 'personal', 'professional']"
           },
+          color: '#2D4860',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
         },
@@ -54,6 +58,7 @@ exports.seed = function(knex, Promise) {
             "keys": "['resources']",
             "resourcesValues": "['emails', 'linkedIn', 'indeed', 'zipRecruiter', 'talent', 'stackOverflow']"
           },
+          color: '#495753',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
         },
@@ -62,6 +67,7 @@ exports.seed = function(knex, Promise) {
           user_id: 1,
           type: 'job',
           keys: null,
+          color: '#ffffff',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
         },
@@ -70,6 +76,7 @@ exports.seed = function(knex, Promise) {
           user_id: 1,
           type: 'education',
           keys: null,
+          color: '#dddddd',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
         },
@@ -81,6 +88,7 @@ exports.seed = function(knex, Promise) {
             "keys": "['mealType']",
             "mealTypeValues": "['breakfast', 'brunch', 'lunch', 'dinner', 'snack', 'social']"
           },
+          color: '#897751',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
         },
@@ -89,6 +97,7 @@ exports.seed = function(knex, Promise) {
           user_id: 1,
           type: 'break',
           keys: null,
+          color: '#E5EEE9',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
         },
@@ -100,6 +109,7 @@ exports.seed = function(knex, Promise) {
             "keys": "['readingType']",
             "readingTypeValues": "['reading list', 'tech reading', 'blogs/periodicals']"
           },
+          color: '#CA9577',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
         },
@@ -111,6 +121,7 @@ exports.seed = function(knex, Promise) {
             "keys": "['podcastType', 'podcastURL']",
             "podcastTypeValues": "['tech', 'music', 'books', 'beer', 'politics']"
           },
+          color: '#999999',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
         },
@@ -121,6 +132,7 @@ exports.seed = function(knex, Promise) {
           keys: {
             "keys": "['companyName', 'onsite', 'companyURL']"
           },
+          color: '#777777',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
         },
@@ -132,6 +144,7 @@ exports.seed = function(knex, Promise) {
             "keys": "['appointmentType']",
             "appointmentTypeValues": "['dentist', 'doctor', 'haircut', 'physical therapy', 'legal']"
           },
+          color: '#555555',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
         },
@@ -142,6 +155,7 @@ exports.seed = function(knex, Promise) {
           keys: {
             "keys": "['attendees', 'objective']"
           },
+          color: '#BD435D',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
         },
@@ -153,6 +167,7 @@ exports.seed = function(knex, Promise) {
             "keys": "['eventType']",
             "eventTypeValues": "['film', 'concert', 'sporting event', 'theater', 'meetup', 'party']"
           },
+          color: '#111111',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
         },
@@ -164,6 +179,7 @@ exports.seed = function(knex, Promise) {
             "keys": "['eventType', 'streamingURL']",
             "eventTypeValues": "['film', 'series', 'live stream', 'sporting event', 'online attendance']"
           },
+          color: '#756D65',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
         },
@@ -175,6 +191,16 @@ exports.seed = function(knex, Promise) {
             "keys": "['creativeType']",
             "creativeTypeValues": "['writing', 'composing', 'blogging']"
           },
+          color: '#aaaaaa',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 18,
+          user_id: 1,
+          type: 'unstructured time',
+          keys: null,
+          color: '#000000',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
