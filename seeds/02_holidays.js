@@ -13366,6 +13366,51 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 862,
+          user_id: 1,
+          name: 'Book Lover\'s Day',
+          color: '#9B1B12',
+          picture: './img/holidays/bookloversday.jpg',
+          day_of: new Date('2018-08-09'),
+          is_annual: true,
+          rule: null,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 863,
+          user_id: 1,
+          name: 'Civic Holiday (Canada)',
+          color: '#B2E5F8',
+          picture: './img/holidays/civicholiday.png',
+          day_of: new Date('2017-08-07'),
+          is_annual: false,
+          rule: '[ "august", "monday", 1 ]',
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 864,
+          user_id: 1,
+          name: 'Women\'s Equality Day',
+          color: '#F8E502',
+          picture: './img/holidays/womensequalityday.jpg',
+          day_of: new Date('2017-08-26'),
+          is_annual: true,
+          rule: null,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     })
