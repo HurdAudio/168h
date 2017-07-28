@@ -86,7 +86,15 @@ exports.seed = function(knex, Promise) {
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
         },
-
+        {
+          id: 10,
+          user_id: 1,
+          name: 'Ethan\'s Birthday',
+          day_of: new Date('2017-08-15'),
+          is_annual: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        }
       ]);
     })
     .then(() => {
