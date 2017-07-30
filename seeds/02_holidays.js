@@ -14796,6 +14796,86 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 957,
+          user_id: 1,
+          name: 'Canadian Thanksgiving',
+          color: '#B31607',
+          picture: './img/holidays/canadianthanksgiving.jpg',
+          day_of: new Date('2017-10-09'),
+          is_annual: false,
+          rule: '[ "october", "monday", 2 ]',
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 958,
+          user_id: 1,
+          name: 'United Nations Day',
+          color: '#2161FF',
+          picture: './img/holidays/unitednationsday.jpg',
+          day_of: new Date('2017-10-24'),
+          is_annual: true,
+          rule: null,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 959,
+          user_id: 1,
+          name: 'Hermit Day',
+          color: '#86BA72',
+          picture: './img/holidays/hermitday.jpg',
+          day_of: new Date('2017-10-29'),
+          is_annual: true,
+          rule: null,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 960,
+          user_id: 1,
+          name: 'Halloween',
+          color: '#2D4892',
+          picture: './img/holidays/halloween.jpg',
+          day_of: new Date('2017-10-29'),
+          is_annual: true,
+          rule: null,
+          art_override: true,
+          music_override: false,
+          override_content: {
+            "img_paths": "[ './img/holidays/halloween01.jpg', './img/holidays/halloween02.jpg', './img/holidays/halloween03.jpg', './img/holidays/halloween04.jpg', './img/holidays/halloween05.jpg' ]",
+            "titles": "[ 'Halloween', 'Halloween, Monhegan', 'Pumpkinhead - Self-Portrait', 'Warm Halloween', 'Pumpkin' ]",
+            "artists": "[ 'Grandma Moses', 'Jamie Wyeth', 'Jamie Wyeth', 'Jamie Wyeth', 'Gene Davis' ]",
+            "years": "[ '1955', '1972', '1972', '1989', '1959' ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 961,
+          user_id: 1,
+          name: 'Social Media Blackout Day',
+          color: '#000000',
+          picture: './img/holidays/socialmediablackoutdat.jpg',
+          day_of: new Date('2017-10-19'),
+          is_annual: true,
+          rule: null,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     })
