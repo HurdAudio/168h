@@ -89,6 +89,186 @@ a.btn:hover {
   margin-bottom: 0.3em;
 }
 
+#weekStrip {
+  width: 100%;
+  background-image: url(../img/background-2044512_1920.jpg);
+  background-repeat: no-repeat;
+  padding-left: 0;
+  background-color: #ccddee;
+  height: 5.5em;
+  margin-bottom: 0em;
+}
+
+#mondayCol {
+  width: 14.2%;
+  height: auto;
+  text-align: center;
+  font-family: 'Alike Angular', serif;
+}
+
+#mondayCol :hover {
+  cursor: pointer;
+}
+
+#mondayCol h1 {
+  font-size: 36px;
+  letter-spacing: normal;
+  padding: 0;
+  margin: 0;
+}
+
+#mondayCol p {
+  font-size: 18px;
+  letter-spacing: normal;
+  padding: 0;
+  margin: 0;
+}
+
+#tuesdayCol {
+  width: 14.2%;
+  text-align: center;
+  font-family: 'Alike Angular', serif;
+}
+
+#tuesdayCol :hover {
+  cursor: pointer;
+}
+
+#tuesdayCol h1 {
+  font-size: 36px;
+  letter-spacing: normal;
+  padding: 0;
+  margin: 0;
+}
+
+#tuesdayCol p {
+  font-size: 18px;
+  letter-spacing: normal;
+  padding: 0;
+  margin: 0;
+}
+
+#wednesdayCol {
+  width: 14.2%;
+  text-align: center;
+  font-family: 'Alike Angular', serif;
+}
+
+#wednesdayCol :hover {
+  cursor: pointer;
+}
+
+#wednesdayCol h1 {
+  font-size: 36px;
+  letter-spacing: normal;
+  padding: 0;
+  margin: 0;
+}
+
+#wednesdayCol p {
+  font-size: 18px;
+  letter-spacing: normal;
+  padding: 0;
+  margin: 0;
+}
+
+#thursdayCol {
+  width: 14.2%;
+  text-align: center;
+  font-family: 'Alike Angular', serif;
+}
+
+#thursdayCol :hover {
+  cursor: pointer;
+}
+
+#thursdayCol h1 {
+  font-size: 36px;
+  letter-spacing: normal;
+  padding: 0;
+  margin: 0;
+}
+
+#thursdayCol p {
+  font-size: 18px;
+  letter-spacing: normal;
+  padding: 0;
+  margin: 0;
+}
+
+
+#fridayCol {
+  width: 14.2%;
+  text-align: center;
+  font-family: 'Alike Angular', serif;
+}
+
+#fridayCol :hover {
+  cursor: pointer;
+}
+
+#fridayCol h1 {
+  font-size: 36px;
+  letter-spacing: normal;
+  padding: 0;
+  margin: 0;
+}
+
+#fridayCol p {
+  font-size: 18px;
+  letter-spacing: normal;
+  padding: 0;
+  margin: 0;
+}
+
+#saturdayCol {
+  width: 14.2%;
+  text-align: center;
+  font-family: 'Alike Angular', serif;
+}
+
+#saturdayCol :hover {
+  cursor: pointer;
+}
+
+#saturdayCol h1 {
+  font-size: 36px;
+  letter-spacing: normal;
+  padding: 0;
+  margin: 0;
+}
+
+#saturdayCol p {
+  font-size: 18px;
+  letter-spacing: normal;
+  padding: 0;
+  margin: 0;
+}
+
+#sundayCol {
+  width: 14.2%;
+  text-align: center;
+  font-family: 'Alike Angular', serif;
+}
+
+#sundayCol :hover {
+  cursor: pointer;
+}
+
+#sundayCol h1 {
+  font-size: 36px;
+  letter-spacing: normal;
+  padding: 0;
+  margin: 0;
+}
+
+#sundayCol p {
+  font-size: 18px;
+  letter-spacing: normal;
+  padding: 0;
+  margin: 0;
+}
+
 #planfor {
   font-family: 'Alike Angular', serif;
   font-size: 18px;
@@ -140,6 +320,139 @@ a.btn:hover {
   width: 38%;
 }
 
+#mondayDay {
+  width: 13.7%;
+  background-image: url(../img/background-2030242.jpg);
+  background-repeat: repeat;
+  background-size: 75%;
+  font-family: 'Neuton', serif;
+  font-size: 24px;
+  letter-spacing: normal;
+  margin-left: 0;
+  margin-top: 0;
+  text-align: left;
+  text-rendering: geometricPrecision;
+  border: solid #000000 3px;
+  overflow: scroll;
+  height: 565px;
+  padding-left: 0;
+  margin-left: 0.2em;
+}
+
+#tuesdayDay {
+  width: 13.7%;
+  background-image: url(../img/background-2030242.jpg);
+  background-repeat: repeat;
+  background-size: 75%;
+  font-family: 'Neuton', serif;
+  font-size: 24px;
+  letter-spacing: normal;
+  margin-left: 0;
+  margin-top: 0;
+  text-align: left;
+  text-rendering: geometricPrecision;
+  border: solid #000000 3px;
+  overflow: scroll;
+  height: 565px;
+  padding-left: 0;
+  margin-left: 0.05em;
+}
+
+#wednesdayDay {
+  width: 13.7%;
+  background-image: url(../img/background-2030242.jpg);
+  background-repeat: repeat;
+  background-size: 75%;
+  font-family: 'Neuton', serif;
+  font-size: 24px;
+  letter-spacing: normal;
+  margin-left: 0;
+  margin-top: 0;
+  text-align: left;
+  text-rendering: geometricPrecision;
+  border: solid #000000 3px;
+  overflow: scroll;
+  height: 565px;
+  padding-left: 0;
+  margin-left: 0.05em;
+}
+
+#thursdayDay {
+  width: 13.7%;
+  background-image: url(../img/background-2030242.jpg);
+  background-repeat: repeat;
+  background-size: 75%;
+  font-family: 'Neuton', serif;
+  font-size: 24px;
+  letter-spacing: normal;
+  margin-left: 0;
+  margin-top: 0;
+  text-align: left;
+  text-rendering: geometricPrecision;
+  border: solid #000000 3px;
+  overflow: scroll;
+  height: 565px;
+  padding-left: 0;
+  margin-left: 0.05em;
+}
+
+#fridayDay {
+  width: 13.7%;
+  background-image: url(../img/background-2030242.jpg);
+  background-repeat: repeat;
+  background-size: 75%;
+  font-family: 'Neuton', serif;
+  font-size: 24px;
+  letter-spacing: normal;
+  margin-left: 0;
+  margin-top: 0;
+  text-align: left;
+  text-rendering: geometricPrecision;
+  border: solid #000000 3px;
+  overflow: scroll;
+  height: 565px;
+  padding-left: 0;
+  margin-left: 0.05em;
+}
+
+#saturdayDay {
+  width: 13.7%;
+  background-image: url(../img/background-2030242.jpg);
+  background-repeat: repeat;
+  background-size: 75%;
+  font-family: 'Neuton', serif;
+  font-size: 24px;
+  letter-spacing: normal;
+  margin-left: 0;
+  margin-top: 0;
+  text-align: left;
+  text-rendering: geometricPrecision;
+  border: solid #000000 3px;
+  overflow: scroll;
+  height: 565px;
+  padding-left: 0;
+  margin-left: 0.05em;
+}
+
+#sundayDay {
+  width: 13.7%;
+  background-image: url(../img/background-2030242.jpg);
+  background-repeat: repeat;
+  background-size: 75%;
+  font-family: 'Neuton', serif;
+  font-size: 24px;
+  letter-spacing: normal;
+  margin-left: 0;
+  margin-top: 0;
+  text-align: left;
+  text-rendering: geometricPrecision;
+  border: solid #000000 3px;
+  overflow: scroll;
+  height: 565px;
+  padding-left: 0;
+  margin-left: 0.05em;
+}
+
 #focusPanel {
   width: 30%;
   height: 565px;
@@ -170,10 +483,31 @@ a.btn:hover {
 
  }
 
+ .weekHours {
+   padding: 0;
+   margin: 0;
+   text-align: left;
+ }
+
 
  .hour {
    border: solid #111111 1px;
    height: 1em;
+ }
+
+ .hourWeek {
+   margin: 0;
+   padding: 0;
+   height: 1.1em;
+   width: 99%;
+   border-bottom: solid #111111 1px;
+ }
+
+ .hourWeek p {
+   margin: 0;
+   padding: 0;
+   padding-left: 0.8em;
+   font-size: 18px;
  }
 
  #focusPanel h3 {
@@ -402,10 +736,25 @@ a.btn:hover {
   opacity: 0.8;
 }
 
+.sleepBlockStartWeek {
+  height: 1.18em;
+  background-color: #3B69B9;
+  opacity: 0.8;
+  border-top: solid #3B69B9 3px;
+  border-bottom: solid #3B69B9 3px;
+}
+
 .sleepBlockStart :after {
   font-family: 'Space Mono', monospace;
   font-size: 24px;
   margin-left: 2em;
+  content: "   Sleep";
+}
+
+.sleepBlockStartWeek :after {
+  font-family: 'Space Mono', monospace;
+  font-size: 18px;
+  margin-left: 1em;
   content: "   Sleep";
 }
 
@@ -417,9 +766,24 @@ a.btn:hover {
   opacity: 0.8;
 }
 
+.sleepBlockWeek {
+  height: 1.15em;
+  background-color: #3B69B9;
+  border-top: solid #3B69B9 3px;
+  opacity: 0.8;
+}
+
 .jobHuntBlockStart {
   height: 100%;
   background-color: #495753;
+  opacity: 0.8;
+}
+
+.jobHuntBlockStartWeek {
+  height: 1.18em;
+  background-color: #495753;
+  border-top: solid #495753 3px;
+  border-bottom: solid #495753 3px;
   opacity: 0.8;
 }
 
@@ -427,6 +791,13 @@ a.btn:hover {
   font-family: 'Space Mono', monospace;
   font-size: 24px;
   margin-left: 2em;
+  content: "   Job Hunt";
+}
+
+.jobHuntBlockStartWeek :after {
+  font-family: 'Space Mono', monospace;
+  font-size: 18px;
+  margin-left: 1em;
   content: "   Job Hunt";
 }
 
@@ -438,17 +809,43 @@ a.btn:hover {
   opacity: 0.8;
 }
 
+.jobHuntBlockWeek {
+  height: 1.18em;
+  background-color: #495753;
+  border-top: solid #495753 3px;
+  border-bottom: solid #495753 3px;
+  z-index: 5;
+  opacity: 0.8;
+}
+
 .exerciseBlockStart {
   height: 100%;
   background-color: #B89697;
   opacity: 0.8;
 }
 
+.exerciseBlockStartWeek {
+  height: 1.18em;
+  background-color: #B89697;
+  border-top: solid #B89697 3px;
+  border-bottom: solid #B89697 3px;
+  opacity: 0.8;
+}
+
+
+
 .exerciseBlockStart :after {
   font-family: 'Space Mono', monospace;
   font-size: 24px;
   margin-left: 2em;
   content: "   Exercise";
+}
+
+.exerciseBlockStartWeek :after {
+  font-family: 'Space Mono', monospace;
+  font-size: 18px;
+  margin-left: 1em;
+  content: " Exercise";
 }
 
 .exerciseBlock {
@@ -459,16 +856,39 @@ a.btn:hover {
   opacity: 0.8;
 }
 
+.exerciseBlockWeek {
+  height: 1.18em;
+  background-color: #B89697;
+  border-top: solid #B89697 3px;
+  border-bottom: solid #B89697 3px;
+  opacity: 0.8;
+}
+
 .mealBlockStart {
   height: 100%;
   background-color: #897751;
   opacity: 0.8;
 }
 
+.mealBlockStartWeek {
+  height: 1.18em;
+  background-color: #897751;
+  opacity: 0.8;
+  border-top: solid #897751 3px;
+  border-bottom: solid #897751 3px;
+}
+
 .mealBlockStart :after {
   font-family: 'Space Mono', monospace;
   font-size: 24px;
   margin-left: 2em;
+  content: "   Meal";
+}
+
+.mealBlockStartWeek :after {
+  font-family: 'Space Mono', monospace;
+  font-size: 18px;
+  margin-left: 1em;
   content: "   Meal";
 }
 
@@ -480,9 +900,25 @@ a.btn:hover {
   opacity: 0.8;
 }
 
+.mealBlockWeek {
+  height: 1.15em;
+  background-color: #897751;
+  border-top: solid #897751 1px;
+  z-index: 5;
+  opacity: 0.8;
+}
+
 .breakBlockStart {
   height: 100%;
   background-color: #E5EEE9;
+  opacity: 0.8;
+}
+
+.breakBlockStartWeek {
+  height: 1.18em;
+  background-color: #E5EEE9;
+  border-top: solid #E5EEE9 3px;
+  border-bottom: solid #E5EEE9 3px;
   opacity: 0.8;
 }
 
@@ -490,6 +926,13 @@ a.btn:hover {
   font-family: 'Space Mono', monospace;
   font-size: 24px;
   margin-left: 2em;
+  content: "   Break";
+}
+
+.breakBlockStartWeek :after {
+  font-family: 'Space Mono', monospace;
+  font-size: 18px;
+  margin-left: 1em;
   content: "   Break";
 }
 
@@ -501,9 +944,26 @@ a.btn:hover {
   opacity: 0.8;
 }
 
+.breakBlockWeek {
+  height: 1.18em;
+  background-color: #E5EEE9;
+  border-top: solid #E5EEE9 3px;
+  border-bottom: solid #E5EEE9 3px;
+  z-index: 5;
+  opacity: 0.8;
+}
+
 .offsiteEventBlockStart {
   height: 100%;
   background-color: #756D65;
+  opacity: 0.8;
+}
+
+.offsiteEventBlockStartWeek {
+  height: 1.18em;
+  background-color: #756D65;
+  border-top: solid #756D65 3px;
+  border-bottom: solid #756D65 3px;
   opacity: 0.8;
 }
 
@@ -514,10 +974,26 @@ a.btn:hover {
   content: "   Offsite Event";
 }
 
+.offsiteEventBlockStartWeek :after {
+  font-family: 'Space Mono', monospace;
+  font-size: 18px;
+  margin-left: 1em;
+  content: "   Offsite";
+}
+
 .offsiteEventBlock {
   height: 100%;
   background-color: #756D65;
   border-top: solid #756D65 3px;
+  z-index: 5;
+  opacity: 0.8;
+}
+
+.offsiteEventBlockWeek {
+  height: 1.18em;
+  background-color: #756D65;
+  border-top: solid #756D65 3px;
+  border-bottom: solid #756D65 3px;
   z-index: 5;
   opacity: 0.8;
 }
@@ -528,10 +1004,25 @@ a.btn:hover {
   opacity: 0.8;
 }
 
+.meetingBlockStartWeek {
+  height: 1.18em;
+  background-color: #BD435D;
+  opacity: 0.8;
+  border-top: solid #BD435D 3px;
+  border-bottom: solid #BD435D 3px;
+}
+
 .meetingBlockStart :after {
   font-family: 'Space Mono', monospace;
   font-size: 24px;
   margin-left: 2em;
+  content: "   Meeting";
+}
+
+.meetingBlockStartWeek :after {
+  font-family: 'Space Mono', monospace;
+  font-size: 18px;
+  margin-left: 1em;
   content: "   Meeting";
 }
 
@@ -543,9 +1034,26 @@ a.btn:hover {
   opacity: 0.8;
 }
 
+.meetingBlockWeek {
+  height: 1.18em;
+  background-color: #BD435D;
+  border-top: solid #BD435D 3px;
+  border-bottom: solid #BD435D 1px;
+  z-index: 5;
+  opacity: 0.8;
+}
+
 .codingBlockStart {
   height: 100%;
   background-color: #2D4860;
+  opacity: 0.8;
+}
+
+.codingBlockStartWeek {
+  height: 1.18em;
+  background-color: #2D4860;
+  border-top: solid #2D4860 3px;
+  border-bottom: solid #2D4860 3px;
   opacity: 0.8;
 }
 
@@ -553,6 +1061,13 @@ a.btn:hover {
   font-family: 'Space Mono', monospace;
   font-size: 24px;
   margin-left: 2em;
+  content: "   Coding";
+}
+
+.codingBlockStartWeek :after {
+  font-family: 'Space Mono', monospace;
+  font-size: 18px;
+  margin-left: 1em;
   content: "   Coding";
 }
 
@@ -564,16 +1079,40 @@ a.btn:hover {
   opacity: 0.8;
 }
 
+.codingBlockWeek {
+  height: 1.18em;
+  background-color: #2D4860;
+  border-top: solid #2D4860 3px;
+  border-bottom: solid #2D4860 3px;
+  z-index: 5;
+  opacity: 0.8;
+}
+
 .adminBlockStart {
   height: 100%;
   background-color: #86863D;
   opacity: 0.8;
 }
 
+.adminBlockStartWeek {
+  height: 1.18em;
+  background-color: #86863D;
+  opacity: 0.8;
+  border-top: solid #86863D 1px;
+  border-bottom: solid #86863D 1px;
+}
+
 .adminBlockStart :after {
   font-family: 'Space Mono', monospace;
   font-size: 24px;
   margin-left: 2em;
+  content: "   Admin";
+}
+
+.adminBlockStartWeek :after {
+  font-family: 'Space Mono', monospace;
+  font-size: 18px;
+  margin-left: 1em;
   content: "   Admin";
 }
 
@@ -585,10 +1124,27 @@ a.btn:hover {
   opacity: 0.8;
 }
 
+.adminBlockWeek {
+  height: 1.18em;
+  background-color: #86863D;
+  border-top: solid #86863D 3px;
+  border-bottom: solid #86863D 1px;
+  z-index: 5;
+  opacity: 0.8;
+}
+
 .readingBlockStart {
   height: 100%;
   background-color: #CA9577;
   opacity: 0.8;
+}
+
+.readingBlockStartWeek {
+  height: 1.18em;
+  background-color: #CA9577;
+  opacity: 0.8;
+  border-top: solid #CA9577 3px;
+  border-bottom: solid #CA9577 3px;
 }
 
 .readingBlockStart :after {
@@ -598,10 +1154,71 @@ a.btn:hover {
   content: "   Reading";
 }
 
+.readingBlockStartWeek :after {
+  font-family: 'Space Mono', monospace;
+  font-size: 18px;
+  margin-left: 1em;
+  content: "   Reading";
+}
+
 .readingBlock {
   height: 100%;
   background-color: #CA9577;
   border-top: solid #CA9577 3px;
+  z-index: 5;
+  opacity: 0.8;
+}
+
+.readingBlockWeek {
+  height: 1.18em;
+  background-color: #CA9577;
+  border-top: solid #CA9577 3px;
+  border-bottom: solid #CA9577 3px;
+  z-index: 5;
+  opacity: 0.8;
+}
+
+.onsiteEventBlockStart {
+  height: 100%;
+  background-color: #888;
+  opacity: 0.8;
+}
+
+.onsiteEventBlockStartWeek {
+  height: 1.18em;
+  background-color: #888;
+  border-top: solid #888 3px;
+  border-bottom: solid #888 3px;
+  opacity: 0.8;
+}
+
+.onsiteEventBlockStart :after {
+  font-family: 'Space Mono', monospace;
+  font-size: 24px;
+  margin-left: 2em;
+  content: "   Onsite Event";
+}
+
+.onsiteEventBlockStartWeek :after {
+  font-family: 'Space Mono', monospace;
+  font-size: 18px;
+  margin-left: 1em;
+  content: "   Onsite";
+}
+
+.onsiteEventBlock {
+  height: 100%;
+  background-color: #888;
+  border-top: solid #888 3px;
+  z-index: 5;
+  opacity: 0.8;
+}
+
+.onsiteEventBlockWeek {
+  height: 1.18em;
+  background-color: #888;
+  border-top: solid #888 3px;
+  border-bottom: solid #888 3px;
   z-index: 5;
   opacity: 0.8;
 }

@@ -167,7 +167,7 @@ exports.seed = function(knex, Promise) {
             "keys": "['eventType']",
             "eventTypeValues": "['film', 'concert', 'sporting event', 'theater', 'meetup', 'party']"
           },
-          color: '#111111',
+          color: '#888',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
         },

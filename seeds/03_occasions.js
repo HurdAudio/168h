@@ -94,6 +94,24 @@ exports.seed = function(knex, Promise) {
           is_annual: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 11,
+          user_id: 1,
+          name: 'Alex\'s Birthday',
+          day_of: new Date('2004-10-19'),
+          is_annual: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 12,
+          user_id: 1,
+          name: 'Nancy\'s Birthday',
+          day_of: new Date('2017-10-18'),
+          is_annual: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     })

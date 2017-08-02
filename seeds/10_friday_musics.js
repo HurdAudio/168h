@@ -64,6 +64,36 @@ exports.seed = function(knex, Promise) {
           a_string: 'Shakara (1972) by Fela Kuti',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 7,
+          user_id: 1,
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3674212828/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://felakuti.bandcamp.com/album/roforofo-fight-1972',
+          a_string: 'Roforofo Fight (1972) by Fela Kuti',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 8,
+          user_id: 1,
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3619221695/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://felakuti.bandcamp.com/album/afrodisiac-1972-73',
+          a_string: 'Afrodisiac (1972/73) by Fela Kuti',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 9,
+          user_id: 1,
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=264497188/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://felakuti.bandcamp.com/album/gentleman-1973',
+          a_string: 'Gentleman (1973) by Fela Kuti',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {

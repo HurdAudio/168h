@@ -34,6 +34,36 @@ exports.seed = function(knex, Promise) {
           a_string: 'In Some Far Place: Roma 1977 by Sun Ra',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 4,
+          user_id: 1,
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3437772679/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sunn.bandcamp.com/album/-',
+          a_string: 'НЕЖИТЬ: живьём в России by SUNN O)))',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 5,
+          user_id: 1,
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2176417243/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sunn.bandcamp.com/album/kannon-japanese-bonus-tracks',
+          a_string: 'Kannon (Japanese bonus tracks) by SUNN O)))',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 6,
+          user_id: 1,
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1334381257/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sunn.bandcamp.com/album/kannon',
+          a_string: 'Kannon by SUNN O)))',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
