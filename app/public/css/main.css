@@ -99,8 +99,27 @@ a.btn:hover {
   margin-bottom: 0em;
 }
 
+#weekCol {
+  width: 12%;
+  height: auto;
+  text-align: center;
+  font-family: 'Alike Angular', serif;
+}
+
+#weekCol h1 {
+  font-size: 30px;
+  margin-top: 0.8em;
+}
+
 #mondayCol {
   width: 14.2%;
+  height: auto;
+  text-align: center;
+  font-family: 'Alike Angular', serif;
+}
+
+#mondayColMonth {
+  width: 12%;
   height: auto;
   text-align: center;
   font-family: 'Alike Angular', serif;
@@ -110,11 +129,20 @@ a.btn:hover {
   cursor: pointer;
 }
 
+
 #mondayCol h1 {
   font-size: 36px;
   letter-spacing: normal;
   padding: 0;
   margin: 0;
+}
+
+#mondayColMonth h1 {
+  font-size: 30px;
+  letter-spacing: normal;
+  padding: 0;
+  margin: 0;
+  margin-top: 0.8em;
 }
 
 #mondayCol p {
@@ -130,6 +158,12 @@ a.btn:hover {
   font-family: 'Alike Angular', serif;
 }
 
+#tuesdayColMonth {
+  width: 12%;
+  text-align: center;
+  font-family: 'Alike Angular', serif;
+}
+
 #tuesdayCol :hover {
   cursor: pointer;
 }
@@ -139,6 +173,14 @@ a.btn:hover {
   letter-spacing: normal;
   padding: 0;
   margin: 0;
+}
+
+#tuesdayColMonth h1 {
+  font-size: 30px;
+  letter-spacing: normal;
+  padding: 0;
+  margin: 0;
+  margin-top: 0.8em;
 }
 
 #tuesdayCol p {
@@ -154,6 +196,12 @@ a.btn:hover {
   font-family: 'Alike Angular', serif;
 }
 
+#wednesdayColMonth {
+  width: 12%;
+  text-align: center;
+  font-family: 'Alike Angular', serif;
+}
+
 #wednesdayCol :hover {
   cursor: pointer;
 }
@@ -163,6 +211,14 @@ a.btn:hover {
   letter-spacing: normal;
   padding: 0;
   margin: 0;
+}
+
+#wednesdayColMonth h1 {
+  font-size: 30px;
+  letter-spacing: normal;
+  padding: 0;
+  margin: 0;
+  margin-top: 0.8em;
 }
 
 #wednesdayCol p {
@@ -178,6 +234,12 @@ a.btn:hover {
   font-family: 'Alike Angular', serif;
 }
 
+#thursdayColMonth {
+  width: 12%;
+  text-align: center;
+  font-family: 'Alike Angular', serif;
+}
+
 #thursdayCol :hover {
   cursor: pointer;
 }
@@ -187,6 +249,14 @@ a.btn:hover {
   letter-spacing: normal;
   padding: 0;
   margin: 0;
+}
+
+#thursdayColMonth h1 {
+  font-size: 30px;
+  letter-spacing: normal;
+  padding: 0;
+  margin: 0;
+  margin-top: 0.8em;
 }
 
 #thursdayCol p {
@@ -203,6 +273,12 @@ a.btn:hover {
   font-family: 'Alike Angular', serif;
 }
 
+#fridayColMonth {
+  width: 12%;
+  text-align: center;
+  font-family: 'Alike Angular', serif;
+}
+
 #fridayCol :hover {
   cursor: pointer;
 }
@@ -212,6 +288,14 @@ a.btn:hover {
   letter-spacing: normal;
   padding: 0;
   margin: 0;
+}
+
+#fridayColMonth h1 {
+  font-size: 30px;
+  letter-spacing: normal;
+  padding: 0;
+  margin: 0;
+  margin-top: 0.8em;
 }
 
 #fridayCol p {
@@ -227,6 +311,12 @@ a.btn:hover {
   font-family: 'Alike Angular', serif;
 }
 
+#saturdayColMonth {
+  width: 12%;
+  text-align: center;
+  font-family: 'Alike Angular', serif;
+}
+
 #saturdayCol :hover {
   cursor: pointer;
 }
@@ -236,6 +326,14 @@ a.btn:hover {
   letter-spacing: normal;
   padding: 0;
   margin: 0;
+}
+
+#saturdayColMonth h1 {
+  font-size: 30px;
+  letter-spacing: normal;
+  padding: 0;
+  margin: 0;
+  margin-top: 0.8em;
 }
 
 #saturdayCol p {
@@ -251,6 +349,12 @@ a.btn:hover {
   font-family: 'Alike Angular', serif;
 }
 
+#sundayColMonth {
+  width: 12%;
+  text-align: center;
+  font-family: 'Alike Angular', serif;
+}
+
 #sundayCol :hover {
   cursor: pointer;
 }
@@ -260,6 +364,14 @@ a.btn:hover {
   letter-spacing: normal;
   padding: 0;
   margin: 0;
+}
+
+#sundayColMonth h1 {
+  font-size: 30px;
+  letter-spacing: normal;
+  padding: 0;
+  margin: 0;
+  margin-top: 0.8em;
 }
 
 #sundayCol p {
@@ -289,11 +401,24 @@ a.btn:hover {
 
 }
 
+#monthDayView {
+  font-family: 'Asul', serif;
+  font-size: 24px;
+  padding-top: 0;
+  text-align: center;
+}
+
 #month {
   font-family: 'Asul', serif;
   font-size: 24px;
   padding-top: 0;
   text-align: center;
+}
+
+#yearDayView {
+  font-family: 'Eczar', serif;
+  font-size: 27px;
+  padding-top:0;
 }
 
 #year {
@@ -1242,4 +1367,695 @@ a.btn:hover {
 
 #daySchedule p {
   font-size: 24px;
+}
+
+#pomodoro {
+
+  width: 20%;
+  align-content: center;
+  text-align: center;
+  font-family: 'Asul', sans-serif;
+}
+
+#pomodoro h4 {
+  font-size: 36px;
+  background-image: url(../img/food-2027563.svg);
+  background-repeat: no-repeat;
+  background-size: 50%;
+}
+
+#pomodoro li {
+  float: left;
+}
+
+#pomoTitle {
+  display: initial;
+}
+
+#pomoTimerSetting {
+  display: initial;
+  float: left;
+}
+
+#pomoTimerSetting h2 {
+  float: left;
+}
+
+#pomoTimerSetting button {
+  float: left;
+  margin-top: 3.4em;
+  width: 40px;
+  border-radius: 100%;
+  background-color: #00FF00;
+  opacity: 0.5;
+}
+
+
+#pomoTimerSetting p {
+  float: left;
+  margin-right: 1em;
+  margin-left: 0;
+  margin-top: 2em;
+}
+
+#pomoBreakSetting {
+  display: none;
+}
+
+#numberOfPomos {
+  display: none;
+}
+
+#pomoCountdown {
+  display: none;
+}
+
+#breakCountdown {
+  display: none;
+}
+
+#nextPomo {
+  display: none;
+}
+
+#pomoNext {
+  font-size: 18px;
+  background-color: #ddff11;
+  opacity: 0.9;
+  border-radius: 10%;
+  margin-left: 1.4em;
+}
+#monthStrip {
+  height: 4.4em;
+  text-align: center;
+}
+
+#monthTitle  h1 {
+  font-family: 'Asul', sans-serif;
+  font-size: 48px;
+  padding: 0;
+  margin: 0;
+}
+
+#month {
+  padding-left: 4em;
+  width: 100%;
+
+  height: 5.5em;
+  margin-bottom: 0em;
+}
+
+
+
+.day {
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  border: solid #000000 4px;
+}
+
+#month :hover {
+  cursor: pointer;
+}
+
+
+.weekMonthView {
+  width: 100%;
+}
+
+#monthTable {
+  align-content: center;
+  height: 100%;
+
+}
+
+#week6 {
+  display: none;
+}
+
+#weekOf1Cell {
+  background-image: url(../img/modern-migration-of-the-spirit-the-epic-of-american-civilization-1934.jpg);
+  background-size: 100%;
+  border: solid silver 5px;
+  z-index: 4;
+}
+
+#weekOf1Cell :hover {
+  color: #ffffff;
+
+}
+
+#week1Monday {
+  color: #999FFF;
+}
+
+#week1MondayCell :hover {
+  color: white;
+}
+
+#week1MondayCell {
+  background-image: url(../img/glass-2502963_1920.jpg);
+  opacity: 0.4;
+}
+
+#week1TuesdayCell :hover {
+  color: red;
+}
+
+#week1Tuesday {
+  color: white;
+}
+
+#week1TuesdayCell {
+  background-image: url(../img/glass-2418168_1920.jpg);
+  background-size: 140%;
+  opacity: 0.4;
+}
+
+#week1Wednesday {
+  color: white;
+}
+
+#week1WednesdayCell :hover {
+  color: red;
+}
+
+#week1WednesdayCell {
+  background-image: url(../img/glass-2418168_1920.jpg);
+  background-size: 140%;
+  opacity: 0.4;
+}
+
+#week1Thursday {
+  color: white;
+}
+
+#week1ThursdayCell :hover {
+  color: red;
+}
+
+#week1ThursdayCell {
+  background-image: url(../img/glass-2418168_1920.jpg);
+  background-size: 140%;
+  opacity: 0.4;
+}
+
+#week1Friday {
+  color: white;
+}
+
+#week1FridayCell :hover {
+  color: red;
+}
+
+#week1FridayCell {
+  background-image: url(../img/fela3680.jpg);
+  background-size: 140%;
+  opacity: 0.4;
+}
+
+#week1Saturday {
+  color: black;
+}
+
+#week1SaturdayCell :hover {
+  color: silver;
+}
+
+#week1SaturdayCell {
+  background-image: url(../img/baseball-field-1563858_640.jpg);
+  background-size: 150%;
+  opacity: 0.9;
+  border: solid silver 5px;
+  z-index: 4;
+}
+
+#week1Sunday {
+  color: black;
+}
+
+#week1SundayCell :hover {
+  color: silver;
+}
+
+#week1SundayCell {
+  background-image: url(../img/SunRa71.jpg);
+  background-size: 140%;
+  opacity: 0.9;
+}
+
+#weekOf2Cell :hover {
+  color: white;
+}
+
+#weekOf2Cell {
+  background-image: url(../img/highway-and-byways-1929.jpg);
+  background-size: 100%;
+}
+
+#week2MondayCell :hover {
+  color: silver;
+}
+
+#week2MondayCell {
+  background-image: url(../img/glass-2418168_1920.jpg);
+  background-size: 140%;
+  opacity: 0.9;
+
+}
+
+#week2Monday {
+  color: black;
+}
+
+#week2TuesdayCell :hover {
+  color: silver;
+}
+
+#week2TuesdayCell {
+  background-image: url(../img/glass-2418168_1920.jpg);
+  background-size: 140%;
+  opacity: 0.9;
+
+}
+
+#week2Tuesday {
+  color: black;
+}
+
+#week2WednesdayCell :hover {
+  color: silver;
+}
+
+#week2WednesdayCell {
+  background-image: url(../img/glass-2418168_1920.jpg);
+  background-size: 140%;
+  opacity: 0.9;
+
+}
+
+#week2Wednesday {
+  color: black;
+}
+
+#week2ThursdayCell :hover {
+  color: silver;
+}
+
+#week2ThursdayCell {
+  background-image: url(../img/glass-2418168_1920.jpg);
+  background-size: 140%;
+  opacity: 0.9;
+
+}
+
+#week2Thursday {
+  color: black;
+}
+
+#week2FridayCell :hover {
+  color: silver;
+}
+
+#week2FridayCell {
+  background-image: url(../img/fela2.jpg);
+  background-size: 100%;
+  opacity: 0.9;
+
+}
+
+#week2Friday {
+  color: black;
+}
+
+#week2SaturdayCell :hover {
+  color: silver;
+}
+
+#week2SaturdayCell {
+  background-image: url(../img/baseball-1425124_640.jpg);
+  background-size: 140%;
+  opacity: 0.9;
+
+}
+
+#week2Saturday {
+  color: black;
+}
+
+#week2SundayCell :hover {
+  color: silver;
+}
+
+#week2SundayCell {
+  background-image: url(../img/sunno1.jpg);
+  background-size: 120%;
+  opacity: 0.9;
+
+}
+
+#week2Sunday {
+  color: black;
+}
+
+#weekOf3Cell :hover {
+  color: white;
+}
+
+#weekOf3Cell {
+  background-image: url(../img/ile-de-france-1935.jpg);
+  background-size: 140%;
+}
+
+#week3MondayCell :hover {
+  color: silver;
+}
+
+#week3MondayCell {
+  background-image: url(../img/glass-2418168_1920.jpg);
+  background-size: 140%;
+  opacity: 0.9;
+
+}
+
+#week3Monday {
+  color: black;
+}
+
+#week3TuesdayCell :hover {
+  color: silver;
+}
+
+#week3TuesdayCell {
+  background-image: url(../img/glass-2418168_1920.jpg);
+  background-size: 140%;
+  opacity: 0.9;
+
+}
+
+#week3Tuesday {
+  color: black;
+}
+
+#week3WednesdayCell :hover {
+  color: silver;
+}
+
+#week3WednesdayCell {
+  background-image: url(../img/glass-2418168_1920.jpg);
+  background-size: 140%;
+  opacity: 0.9;
+
+}
+
+#week3Wednesday {
+  color: black;
+}
+
+#week3ThursdayCell :hover {
+  color: silver;
+}
+
+#week3ThursdayCell {
+  background-image: url(../img/glass-2418168_1920.jpg);
+  background-size: 140%;
+  opacity: 0.9;
+
+}
+
+#week3Thursday {
+  color: black;
+}
+
+#week3FridayCell :hover {
+  color: silver;
+}
+
+#week3FridayCell {
+  background-image: url(../img/fela3.jpg);
+  background-size: 100%;
+  opacity: 0.9;
+
+}
+
+#week3Friday {
+  color: black;
+}
+
+#week3SaturdayCell :hover {
+  color: silver;
+}
+
+#week3SaturdayCell {
+  background-image: url(../img/seattle-1037404_640.jpg);
+  background-size: 180%;
+  opacity: 0.9;
+
+}
+
+#week3Saturday {
+  color: black;
+}
+
+#week3SundayCell :hover {
+  color: silver;
+}
+
+#week3SundayCell {
+  background-image: url(../img/250px-SunAraw.jpg);
+  background-size: 120%;
+  opacity: 0.9;
+
+}
+
+#week3Sunday {
+  color: black;
+}
+
+#weekOf4Cell :hover {
+  color: white;
+}
+
+#weekOf4Cell {
+  background-image: url(../img/the-blue-ship-1934.jpg);
+  background-size: 140%;
+}
+
+#week4MondayCell :hover {
+  color: silver;
+}
+
+#week4MondayCell {
+  background-image: url(../img/glass-2418168_1920.jpg);
+  background-size: 140%;
+  opacity: 0.9;
+
+}
+
+#week4Monday {
+  color: black;
+}
+
+#week4TuesdayCell :hover {
+  color: silver;
+}
+
+#week4TuesdayCell {
+  background-image: url(../img/glass-2418168_1920.jpg);
+  background-size: 140%;
+  opacity: 0.9;
+
+}
+
+#week4Tuesday {
+  color: black;
+}
+
+#week4WednesdayCell :hover {
+  color: silver;
+}
+
+#week4WednesdayCell {
+  background-image: url(../img/glass-2418168_1920.jpg);
+  background-size: 140%;
+  opacity: 0.9;
+
+}
+
+#week4Wednesday {
+  color: black;
+}
+
+#week4ThursdayCell :hover {
+  color: silver;
+}
+
+#week4ThursdayCell {
+  background-image: url(../img/glass-2418168_1920.jpg);
+  background-size: 140%;
+  opacity: 0.9;
+
+}
+
+#week4Thursday {
+  color: black;
+}
+
+#week4FridayCell :hover {
+  color: silver;
+}
+
+#week4FridayCell {
+  background-image: url(../img/Kuti-Fela-Anikulapo.jpg);
+  background-size: 100%;
+  opacity: 0.9;
+
+}
+
+#week4Friday {
+  color: black;
+}
+
+#week4SaturdayCell :hover {
+  color: silver;
+}
+
+#week4SaturdayCell {
+  background-image: url(../img/baseball-647423_640.jpg);
+  background-size: 180%;
+  opacity: 0.9;
+
+}
+
+#week4Saturday {
+  color: black;
+}
+
+#week4SundayCell :hover {
+  color: silver;
+}
+
+#week4SundayCell {
+  background-image: url(../img/sunra4.jpg);
+  background-size: 120%;
+  opacity: 0.9;
+
+}
+
+#week4Sunday {
+  color: black;
+}
+
+#weekOf5Cell :hover {
+  color: white;
+}
+
+#weekOf5Cell {
+  background-image: url(../img/danae-1908.jpg);
+  background-size: 140%;
+}
+
+#week5MondayCell :hover {
+  color: silver;
+}
+
+#week5MondayCell {
+  background-image: url(../img/glass-2418168_1920.jpg);
+  background-size: 140%;
+  opacity: 0.9;
+
+}
+
+#week5Monday {
+  color: black;
+}
+
+#week5TuesdayCell :hover {
+  color: silver;
+}
+
+#week5TuesdayCell {
+  background-image: url(../img/glass-2418168_1920.jpg);
+  background-size: 140%;
+  opacity: 0.9;
+
+}
+
+#week5Tuesday {
+  color: black;
+}
+
+#week5WednesdayCell :hover {
+  color: silver;
+}
+
+#week5WednesdayCell {
+  background-image: url(../img/glass-2418168_1920.jpg);
+  background-size: 140%;
+  opacity: 0.9;
+
+}
+
+#week5Wednesday {
+  color: black;
+}
+
+#week5ThursdayCell :hover {
+  color: silver;
+}
+
+#week5ThursdayCell {
+  background-image: url(../img/glass-2418168_1920.jpg);
+  background-size: 140%;
+  opacity: 0.9;
+
+}
+
+#week5Thursday {
+  color: black;
+}
+
+#week5FridayCell :hover {
+  color: white;
+}
+
+#week5FridayCell {
+  background-image: url(../img/glass-2502963_1920.jpg);
+  background-size: 160%;
+  opacity: 0.9;
+
+}
+
+#week5Friday {
+  color: #999FFF;
+}
+
+#week5SaturdayCell :hover {
+  color: white;
+}
+
+#week5SaturdayCell {
+  background-image: url(../img/glass-2502963_1920.jpg);
+  background-size: 160%;
+  opacity: 0.9;
+
+}
+
+#week5Saturday {
+  color: #999FFF;
+}
+
+#week5SundayCell :hover {
+  color: white;
+}
+
+#week5SundayCell {
+  background-image: url(../img/glass-2502963_1920.jpg);
+  background-size: 160%;
+  opacity: 0.9;
+
+}
+
+#week5Sunday {
+  color: #999FFF;
 }
