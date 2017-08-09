@@ -1,10 +1,15 @@
 body{
+
   background-color: #22bc44;
 
 }
 
 #logo {
 
+}
+
+#logo2 img {
+  width: 100%;
 }
 
 #clock {
@@ -87,6 +92,12 @@ a.btn:hover {
   background-color: #ccddee;
   height: 5em;
   margin-bottom: 0.3em;
+}
+
+#dateStrip p {
+  font-family: 'Alike Angular', serif;
+  font-weight: 200;
+  font-size: 18px;
 }
 
 #weekStrip {
@@ -2058,4 +2069,67 @@ a.btn:hover {
 
 #week5Sunday {
   color: #999FFF;
+}
+
+footer {
+  text-align: center;
+  width: 100%;
+  position: relative;
+
+}
+
+footer h1 {
+  font-family: 'Asul', sans-serif;
+  float: left;
+  margin-top: 1.05em;
+  margin-left: 0.3em;
+}
+
+footer p {
+  font-family: 'Asul', sans-serif;
+  float: left;
+  padding-left: 1.4em;
+  margin-top: 2.6em;
+  font-size: 18px;
+}
+
+footer h2 {
+  font-family: 'Asul', sans-serif;
+  float: left;
+  padding-left: 3em;
+  margin-top: 1.7em;
+}
+
+footer h3 {
+  font-family: 'Asul', sans-serif;
+  float: left;
+  padding-left: 2em;
+  margin-top: 2.5em;
+}
+
+footer img {
+  position: relative;
+  float: left;
+  width: 60%;
+  padding: 0;
+  border: solid #000000 1px;
+  border-radius: 33%;
+}
+
+#footerCol1 {
+  display: none;
+}
+
+#footerCol3 {
+  text-align: center;
+  font-weight: normal;
+}
+
+#loginDiv {
+  background-image: url(../img/background-2044512_1920.jpg);
+  background-repeat: no-repeat;
+  align-content: center;
+  padding-left: 13em;
+  padding-top: 8em;
+  padding-bottom: 8em;
 }

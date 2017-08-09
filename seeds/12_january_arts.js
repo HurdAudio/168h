@@ -204,6 +204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 11,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/underground-metaphysical-landscape-c-1960-4.jpg',
+          title: 'Underground. Metaphysical Landscape',
+          artist: 'Margit Selska',
+          year: '1960',
+          rule: {
+            "monday": "[15, 17, 20, 21]",
+            "tuesday": "[17, 19, 20, 23]",
+            "wednesday": "[2, 3, 5, 6]",
+            "thursday": "[5, 8, 9, 19]",
+            "friday": "[7, 8, 11, 13]",
+            "saturday": "[10, 11, 13, 15]",
+            "sunday": "[13, 15, 17, 18]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 12,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/harmony-in-blue-and-green-abstract-composition.jpg',
+          title: 'Harmony in Blue and Green. Abstract Composition',
+          artist: 'Natalia Goncharova',
+          year: 'XIX-XX cent.',
+          rule: {
+            "monday": "[13, 15, 17, 18]",
+            "tuesday": "[15, 17, 20, 21]",
+            "wednesday": "[17, 19, 20, 23]",
+            "thursday": "[2, 3, 5, 6]",
+            "friday": "[5, 8, 9, 19]",
+            "saturday": "[7, 8, 11, 13]",
+            "sunday": "[10, 11, 13, 15]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 13,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/2005-60-80.jpg',
+          title: 'Sorrow, Leaning Woman',
+          artist: 'Volodymyr Loboda',
+          year: '2005',
+          rule: {
+            "monday": "[13, 15, 17, 18]",
+            "tuesday": "[15, 17, 20, 21]",
+            "wednesday": "[17, 19, 20, 23]",
+            "thursday": "[2, 3, 5, 6]",
+            "friday": "[5, 8, 9, 19]",
+            "saturday": "[7, 8, 11, 13]",
+            "sunday": "[10, 11, 13, 15]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 14,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/untitled-1.jpg',
+          title: 'Untitled',
+          artist: 'Tiberiy Szilvashi',
+          year: 'XX cent.',
+          rule: {
+            "monday": "[10, 11, 13, 15]",
+            "tuesday": "[13, 15, 17, 18]",
+            "wednesday": "[15, 17, 21, 24]",
+            "thursday": "[17, 19, 20, 23]",
+            "friday": "[2, 3, 5, 6]",
+            "saturday": "[5, 8, 9, 19]",
+            "sunday": "[7, 8, 11, 13]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 15,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/cote-de-provence(1).jpg',
+          title: 'Cote de provence',
+          artist: 'Paul Klee',
+          year: 'XIX-XX cent.',
+          rule: {
+            "monday": "[8, 9, 12, 14]",
+            "tuesday": "[11, 12, 14, 16]",
+            "wednesday": "[14, 16, 18, 19]",
+            "thursday": "[16, 18, 22, 25]",
+            "friday": "[18, 20, 21, 24]",
+            "saturday": "[3, 4, 6, 7]",
+            "sunday": "[6, 9, 10, 20]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {

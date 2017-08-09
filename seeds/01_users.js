@@ -9,7 +9,7 @@ exports.seed = function(knex, Promise) {
           id: 1,
           name: 'Devin Hurd',
           email: 'devin@devinhurd.com',
-          hashed_password: '$2a$12$aAVThP21ZgwFBEP8W.QgGuftAuRAnGHb.UMHaroARz4rZDCTc/2qS',
+          hashed_password: '$2a$12$zlJZuGFGcqgLQyy/nVtoQeafv47g8dNTGTJL/x7EmSbPSiFLi.aMS',
           is_admin: true,
           user_avatar_url: 'https://media.licdn.com/media/AAEAAQAAAAAAAAf8AAAAJGMwZDYyMzc2LTAzOGEtNGYwOS1iMDViLTFlYjAyYjYzODIyMQ.jpg',
           associates: {},

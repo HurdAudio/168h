@@ -112,6 +112,15 @@ exports.seed = function(knex, Promise) {
           is_annual: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 13,
+          user_id: 1,
+          name: 'Ryan\'s Birthday',
+          day_of: new Date('2017-11-01'),
+          is_annual: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     })

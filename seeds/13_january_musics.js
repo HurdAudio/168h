@@ -58,6 +58,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 4,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'http://bandcamp.com/EmbeddedPlayer/album=1694219055/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://shop.avantmedia.org/album/cage-unlocked',
+          a_string: 'Cage, Unlocked by John Cage',
+          rule: {
+            "monday": "[ 5, 9, 11, 15]",
+            "tuesday": "[7, 14, 16, 19]",
+            "wednesday": "[10, 14, 16, 19]",
+            "thursday": "[1, 5, 7, 11]",
+            "saturday": "[7, 14, 16, 15]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 5,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'http://bandcamp.com/EmbeddedPlayer/album=4102887759/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://shop.avantmedia.org/album/voices-sine-waves',
+          a_string: 'Voices  + Sine Waves by Randy Gibson',
+          rule: {
+            "monday": "[ 7, 14, 16, 15]",
+            "tuesday": "[10, 14, 16, 19]",
+            "wednesday": "[1, 5, 7, 11]",
+            "thursday": "[7, 14, 16, 15]",
+            "saturday": "[5, 9, 11, 15]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 6,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1493146789/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://juliawolfemusic.bandcamp.com/album/the-string-quartets',
+          a_string: 'The String Quartets by Julia Wolfe',
+          rule: {
+            "monday": "[ 5, 9, 11, 15]",
+            "tuesday": "[1, 5, 7, 11]",
+            "wednesday": "[7, 14, 16, 15]",
+            "thursday": "[5, 9, 11, 15]",
+            "saturday": "[7, 14, 16, 15]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
