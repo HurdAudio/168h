@@ -304,6 +304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 16,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/still-life-1945.jpg',
+          title: 'Still Life',
+          artist: 'William Baziotes',
+          year: '1945',
+          rule: {
+            "monday": "[6, 9, 10, 20]",
+            "tuesday": "[8, 9, 12, 14]",
+            "wednesday": "[11, 12, 14, 16]",
+            "thursday": "[14, 16, 18, 19]",
+            "friday": "[16, 18, 22, 25]",
+            "saturday": "[18, 20, 21, 24]",
+            "sunday": "[3, 4, 6, 7]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 17,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/asheville(1).jpg',
+          title: 'Asheville',
+          artist: 'Willem de Kooning',
+          year: '1948',
+          rule: {
+            "monday": "[3, 4, 6, 7]",
+            "tuesday": "[6, 9, 10, 20]",
+            "wednesday": "[8, 9, 12, 14]",
+            "thursday": "[11, 12, 14, 16]",
+            "friday": "[14, 16, 18, 19]",
+            "saturday": "[16, 18, 22, 25]",
+            "sunday": "[18, 20, 21, 24]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 18,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/celeste-ii-acr-lico-sobre-tabla-2006-60x50.jpg',
+          title: 'Celeste II',
+          artist: 'Requena Nozal',
+          year: '2006',
+          rule: {
+            "monday": "[18, 20, 21, 24]",
+            "tuesday": "[3, 4, 6, 7]",
+            "wednesday": "[6, 9, 10, 20]",
+            "thursday": "[8, 9, 12, 14]",
+            "friday": "[11, 12, 14, 16]",
+            "saturday": "[14, 16, 18, 19]",
+            "sunday": "[16, 18, 22, 25]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 19,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/taxi-cab-ii-1959.jpg',
+          title: 'Taxi Cab II',
+          artist: 'Al Held',
+          year: '1959',
+          rule: {
+            "monday": "[16, 18, 22, 25]",
+            "tuesday": "[18, 20, 21, 24]",
+            "wednesday": "[3, 4, 6, 7]",
+            "thursday": "[6, 9, 10, 20]",
+            "friday": "[8, 9, 12, 14]",
+            "saturday": "[11, 12, 14, 16]",
+            "sunday": "[14, 16, 18, 19]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 20,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/abstract-composition.jpg',
+          title: 'Abstract Composition',
+          artist: 'Victor Hugo',
+          year: 'XIX cent.',
+          rule: {
+            "monday": "[14, 16, 18, 19]",
+            "tuesday": "[16, 18, 22, 25]",
+            "wednesday": "[18, 20, 21, 24]",
+            "thursday": "[3, 4, 6, 7]",
+            "friday": "[6, 9, 10, 20]",
+            "saturday": "[8, 9, 12, 14]",
+            "sunday": "[11, 12, 14, 16]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {

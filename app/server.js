@@ -12,6 +12,8 @@ const app = express();
 const users = require('./routes/users.js');
 const holidays = require('./routes/holidays.js');
 const holidaysbyuser = require('./routes/holidaysbyuser.js');
+const occasions = require('./routes/occasions.js');
+const occasionsbyuser = require('./routes/occasionsbyuser.js');
 // const user_blogs = require('./routes/user_blogs.js');
 // const blog_comments = require('./routes/blog_comments.js');
 // const books = require('./routes/books.js');
@@ -125,6 +127,8 @@ app.use('/moment', express.static(path.join(__dirname, '../node_modules/moment/m
  app.use('/users', users);
  app.use('/holidays', holidays);
  app.use('/holidaysbyuser', holidaysbyuser);
+ app.use('/occasions', occasions);
+ app.use('/occasionsbyuser', occasionsbyuser);
 // app.use('/user_blogs', user_blogs);
 // app.use('/blog_comments', blog_comments);
 // app.use('/books', books);

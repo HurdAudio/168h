@@ -112,6 +112,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 7,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2996579334/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://prawnshocker.bandcamp.com/album/charles-ives-orchestral-set-no-2',
+          a_string: 'Charles Ives - Orchestral Set no. 2 by Prawnshocker',
+          rule: {
+            "monday": "[ 7, 14, 16, 15]",
+            "tuesday": "[5, 9, 11, 16]",
+            "wednesday": "[1, 5, 7, 11]",
+            "thursday": "[7, 14, 16, 15]",
+            "saturday": "[5, 9, 11, 15]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 8,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2951262651/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://johnlutheradams.bandcamp.com/album/canticles-of-the-holy-wind',
+          a_string: 'Canticles of the Holy Wind by John Luther Adams &amp; The Crossing',
+          rule: {
+            "monday": "[ 6, 10, 12, 16]",
+            "tuesday": "[8, 15, 17, 16]",
+            "wednesday": "[6, 10, 12, 17]",
+            "thursday": "[2, 6, 8, 12]",
+            "saturday": "[8, 15, 17, 16]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 9,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4151449444/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bangonacan.bandcamp.com/album/in-c',
+          a_string: 'In C by Bang on a Can All-Stars',
+          rule: {
+            "monday": "[ 8, 15, 17, 16]",
+            "tuesday": "[6, 10, 12, 16]",
+            "wednesday": "[8, 15, 17, 16]",
+            "thursday": "[6, 10, 12, 17]",
+            "saturday": "[2, 6, 8, 12]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {

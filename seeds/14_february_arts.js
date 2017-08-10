@@ -124,6 +124,86 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 7,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/harriet-tubman-series-panel-4-1940(1).jpg',
+          title: 'Harriet Tubman Series (Panel #4)',
+          artist: 'Jacob Lawrence',
+          year: '1940',
+          rule: {
+            "monday": "[5, 13, 21, 29]",
+            "tuesday": "[7, 15, 23, 2]",
+            "wednesday": "[9, 17, 25, 4]",
+            "thursday": "[11, 19, 27, 6]",
+            "friday": "[13, 21, 28, 8]",
+            "saturday": "[1, 9, 17, 25]",
+            "sunday": "[3, 11, 19, 27]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 8,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/cabeza.jpg',
+          title: 'Cabeza',
+          artist: 'Jean-Michel Basquiat',
+          year: '1982',
+          rule: {
+            "monday": "[4, 12, 20, 28]",
+            "tuesday": "[6, 14, 22, 1]",
+            "wednesday": "[8, 16, 24, 3]",
+            "thursday": "[10, 18, 26, 5]",
+            "friday": "[12, 20, 28, 7]",
+            "saturday": "[14, 22, 29, 9]",
+            "sunday": "[2, 10, 18, 26]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 9,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/untitled-2000.jpg',
+          title: 'Untitled',
+          artist: 'David Hammons',
+          year: '2000',
+          rule: {
+            "monday": "[2, 10, 18, 26]",
+            "tuesday": "[4, 12, 20, 28]",
+            "wednesday": "[6, 14, 22, 1]",
+            "thursday": "[8, 16, 24, 3]",
+            "friday": "[10, 18, 26, 5]",
+            "saturday": "[12, 20, 28, 7]",
+            "sunday": "[14, 22, 29, 9]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 10,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/untitled-1986.jpg',
+          title: 'Untitled',
+          artist: 'Fab 5 Freddy',
+          year: '1986',
+          rule: {
+            "monday": "[14, 22, 29, 9]",
+            "tuesday": "[2, 10, 18, 26]",
+            "wednesday": "[4, 12, 20, 28]",
+            "thursday": "[6, 14, 22, 1]",
+            "friday": "[8, 16, 24, 3]",
+            "saturday": "[10, 18, 26, 5]",
+            "sunday": "[12, 20, 28, 7]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
