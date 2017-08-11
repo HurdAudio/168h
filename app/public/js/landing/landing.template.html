@@ -39,7 +39,7 @@
           </fieldset>
         </form>
       </li>
-      <li><a id="loginSubmit" href="#" class="btn">submit</a></li>
+      <li><a id="loginSubmit" href="#" class="btn" ng-click="$ctrl.loginAttempt()">submit</a></li>
       <li><a id="loginExit" href="#" class="btn">exit</a></li>
       <li><a id="loginForgotPassword" href="#"><p>forgot password?</p></a></li>
     </ul>
@@ -50,6 +50,7 @@
     <ul>
 
       <li><a id="landingInfo" href="#" class="btn">info</a></li>
+      <li id="loginFailSpace"><h3 id="loginFailNotice"></h3></li>
     </ul>
   </div>
 

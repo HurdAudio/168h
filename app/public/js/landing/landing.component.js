@@ -1,8 +1,21 @@
 (function() {
   'use strict';
 
+  var stopBlinker = true;
+
   function setClock(){
        document.getElementById("clockLanding").innerHTML=new Date().toLocaleTimeString('en-GB');
+  }
+
+  function getCookie (name) {
+    var cookies = document.cookie.split(';');
+    for(var i=0 ; i < cookies.length ; ++i) {
+        var pair = cookies[i].trim().split('=');
+        if(pair[0] === name) {
+            return (pair[1]);
+          }
+    }
+    return null;
   }
 
   function fadeInLogin(timer) {
@@ -67,7 +80,7 @@
 
   function fadeOutButtons (element1, element2, element3, nextElements) {
     var fadeTime = 0.6;
-    var delayTime = (fadeTime * 1000)/2;
+    var delayTime = (fadeTime * 1000);
 
     element1.setAttribute("style", "visibility: hidden; opacity: 0; transition: visibility 0s " + fadeTime + "s, opacity " + fadeTime + "s linear;");
     setTimeout(()=>{
@@ -96,10 +109,13 @@
     let loginForgotPassword = document.getElementById('loginForgotPassword');
     let landingInfo = document.getElementById('landingInfo');
     let userLoginForm = document.getElementById('userLoginForm');
+    let loginFailNotice = document.getElementById('loginFailNotice');
     let timer = 1.4;
     let delay = (timer * 1000)/2;
 
-
+    loginFailNotice.innerHTML = '';
+    stopBlinker = true;
+    loginFailNotice.setAttribute("style", "display: none;");
     loginExit.setAttribute("style", "visibility: hidden; opacity: 0;");
     loginEmail.setAttribute("style", "visibility: hidden; opacity: 0;");
     loginEmail.value = '';
@@ -129,6 +145,58 @@
 
   }
 
+  function blinkingCursor(displayNote, element) {
+    if ((element.innerHTML === '>') || (element.innerHTML === '')) {
+      return;
+    } else {
+      element.innerHTML = displayNote;
+      setTimeout(()=>{
+        if (!stopBlinker) {
+          element.innerHTML = displayNote + '_';
+        }
+        setTimeout(()=>{
+          if (!stopBlinker) {
+            blinkingCursor(displayNote, element);
+          }
+        }, 500);
+      }, 500);
+    }
+  }
+
+  function messageDisplay (message, display, element, delay) {
+    if (display[display.length - 1] !== '<') {
+      element.innerHTML = display + '_';
+    }
+    if (message === '') {
+      stopBlinker = false;
+      blinkingCursor(display, element);
+      return;
+    }
+    let newDisplay = display + message[0];
+    let newMessage = message.slice(1);
+    let setDelay = delay;
+    if (newDisplay[1] === '>') {
+      setDelay = setDelay * 1000;
+    }
+    setTimeout(()=>{
+      messageDisplay(newMessage, newDisplay, element, delay);
+    }, setDelay) ;
+  }
+
+  function emailAndPasswordMismatch() {
+    console.log('inform the user');
+    stopBlinker = true;
+    let loginFailNotice = document.getElementById('loginFailNotice');
+    let messageString = '<br>>ERROR(403): <br>>Login failure.<br>>Email/password<br> mismatch.<br>>';
+
+    loginFailNotice.setAttribute("style", "display: initial;");
+    loginFailNotice.innerHTML = '>';
+    setTimeout(()=>{
+      messageDisplay(messageString, '', loginFailNotice, 40);
+    }, 500);
+
+  }
+
   angular.module('app')
     .component('landing', {
       controller: LandingController,
@@ -141,12 +209,56 @@
       const vm = this;
 
       vm.$onInit = onInit;
+      vm.loginAttempt = loginAttempt;
 
 
+      function loginAttempt() {
+        //alert('We are logging in');
+        let loginEmail = document.getElementById('loginEmail');
+        let loginPassword = document.getElementById('loginPassword');
+        let loginObj = {
+          email: loginEmail.value,
+          password: loginPassword.value
+        };
+        $http.post('users/login', loginObj)
+        .then(loginResultData=>{
+          let loginResult = loginResultData.data;
+          if (loginResult.login === 'forbidden') {
+            emailAndPasswordMismatch();
+          } else {
+            console.log('set cookies and change state');
+            $http.get(`/users/${loginResult.id}`)
+            .then(userData=>{
+              let user = userData.data;
+              console.log(user);
+              document.cookie = user.security.key + "=" + user.security.value;
+              document.cookie = "h168userId=" + user.id;
+              $http.get(`/users/${loginResult.id}`).then(()=>{
+                $state.go('dayview');
+              });
+            });
+          }
+        });
 
+
+      }
 
       function onInit() {
         console.log("Landing is lit");
+        //check cookies for user already logged in - change page state if this is a return user
+        if (getCookie('h168userId') !== null) {
+          let loggedInUser = getCookie('h168userId');
+          $http.get(`/users/${loggedInUser}`)
+          .then(userInfoData=>{
+            let userInfo = userInfoData.data;
+            let cookey = userInfo.security.key;
+            let cookvalue = userInfo.security.value;
+            if (getCookie(cookey) === cookvalue) {
+              $state.go('dayview');
+            }
+          });
+        }
+
         var myTimer = setInterval(setClock,1000);
         var landingLogin = document.getElementById('landingLogin');
         var landingNewUser = document.getElementById('landingNewUser');

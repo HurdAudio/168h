@@ -21,6 +21,14 @@ body{
   font-size: 24px;
 }
 
+#clockDayview {
+  margin: 0;
+  padding-left: -5em;
+  padding-top: 1.1em;
+  font-family: 'Space Mono', monospace;
+  font-size: 24px;
+}
+
 #clockLanding {
   margin: 0;
   margin-left: -4em;
@@ -2139,9 +2147,9 @@ footer img {
   background-repeat: no-repeat;
   align-content: center;
   padding-left: 13em;
-  padding-top: 8em;
+  padding-top: 1em;
   padding-bottom: 8em;
-  height: 146px;
+  height: 176px;
 }
 
 #loginEmail {
@@ -2191,4 +2199,16 @@ footer img {
 
 #userLoginForm {
   display: none;
+}
+
+#loginFailSpace {
+
+}
+
+#loginFailNotice {
+  display: none;
+  font-family: 'Space Mono', monospace;
+  color: #ff0000;
+  font-size: 30px;
+  font-weight: bolder;
 }

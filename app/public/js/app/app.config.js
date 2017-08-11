@@ -21,6 +21,12 @@
         url: '/',
         parent: 'app',
         component: 'landing'
+      })
+      .state({
+        name: 'dayview',
+        url: '/dayview',
+        parent: 'app',
+        component: 'dayview'
       });
       // .state({
       //   name: 'resume',

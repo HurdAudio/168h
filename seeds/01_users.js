@@ -13,6 +13,10 @@ exports.seed = function(knex, Promise) {
           is_admin: true,
           user_avatar_url: 'https://media.licdn.com/media/AAEAAQAAAAAAAAf8AAAAJGMwZDYyMzc2LTAzOGEtNGYwOS1iMDViLTFlYjAyYjYzODIyMQ.jpg',
           associates: {},
+          security: {
+            "key": "nYeYs~_OHOXrL_XZ8IK3i8",
+            "value": "PFIQefgqVYZPdaJcy09nVT"
+          },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
         }

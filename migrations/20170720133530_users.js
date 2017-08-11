@@ -8,6 +8,8 @@ exports.up = function(knex, Promise) {
     table.boolean('is_admin').notNullable().defaultTo(false);
     table.string('user_avatar_url').defaultTo(null);
     table.json('associates').defaultTo(null);
+    table.json('security').defaultTo(null);
+    table.json('email_reset').defaultTo(null);
     table.timestamps(true, true);
   });
 };
