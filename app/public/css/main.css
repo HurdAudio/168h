@@ -2162,6 +2162,46 @@ footer img {
   opacity: 0;
 }
 
+#newUserName {
+  visibility: hidden;
+  font-family: 'Alike Angular', serif;
+  font-size: 18px;
+  width: 400px;
+  margin-bottom: .5em;
+  margin-left: -4em;
+  opacity: 0;
+}
+
+#newUserEmail {
+  visibility: hidden;
+  font-family: 'Alike Angular', serif;
+  font-size: 18px;
+  width: 400px;
+  margin-bottom: .5em;
+  margin-left: -4em;
+  opacity: 0;
+}
+
+#newUserPassword {
+  visibility: hidden;
+  font-family: 'Alike Angular', serif;
+  font-size: 18px;
+  width: 400px;
+  margin-bottom: .5em;
+  margin-left: -4em;
+  opacity: 0;
+}
+
+#newUserVerifyPassword {
+  visibility: hidden;
+  font-family: 'Alike Angular', serif;
+  font-size: 18px;
+  width: 400px;
+  margin-bottom: .5em;
+  margin-left: -4em;
+  opacity: 0;
+}
+
 #loginPassword {
   visibility: hidden;
   font-family: 'Alike Angular', serif;
@@ -2201,6 +2241,10 @@ footer img {
   display: none;
 }
 
+#newUserForm {
+  display: initial;
+}
+
 #loginFailSpace {
 
 }
@@ -2211,4 +2255,18 @@ footer img {
   color: #ff0000;
   font-size: 30px;
   font-weight: bolder;
+}
+
+#newUserSubmit {
+  visibility: hidden;
+  opacity: 0;
+}
+
+#newUserExit {
+  visibility: hidden;
+  opacity: 0;
+}
+
+#nextContinue {
+  display: none;
 }

@@ -24,7 +24,7 @@
       })
       .state({
         name: 'dayview',
-        url: '/dayview',
+        url: '/dayview/:id',
         parent: 'app',
         component: 'dayview'
       });

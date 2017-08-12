@@ -26,7 +26,8 @@
 
       function onInit() {
         console.log("Dayview is lit");
-        var myTimerDayview = setInterval(setClockDay,1000);
+        var myTimer = setInterval(setClockDay,1000);
+        console.log($stateParams.id);
 
 
       }

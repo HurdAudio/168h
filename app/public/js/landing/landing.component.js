@@ -18,6 +18,42 @@
     return null;
   }
 
+  function fadeInNewUserSignup(timer) {
+    //let newUserForm = document.getElementById('newUserForm');
+    let delayTime = (timer * 1000);
+    let newUserName = document.getElementById('newUserName');
+    let newUserEmail = document.getElementById('newUserEmail');
+    let newUserPassword = document.getElementById('newUserPassword');
+    let newUserVerifyPassword = document.getElementById('newUserVerifyPassword');
+    let newUserSubmit = document.getElementById('newUserSubmit');
+    let newUserExit = document.getElementById('newUserExit');
+
+    newUserName.setAttribute("style", "visibility: visible; opacity: 1; transition: opacity " + timer + "s linear;");
+    setTimeout(()=>{
+      newUserEmail.setAttribute("style", "visibility: visible; opacity: 1; transition: opacity " + timer + "s linear;");
+      setTimeout(()=>{
+        newUserPassword.setAttribute("style", "visibility: visible; opacity: 1; transition: opacity " + timer + "s linear;");
+        setTimeout(()=>{
+          newUserVerifyPassword.setAttribute("style", "visibility: visible; opacity: 1; transition: opacity " + timer + "s linear;");
+          setTimeout(()=>{
+            newUserSubmit.setAttribute("style", "visibility: visible; opacity: 1; transition: opacity " + timer + "s linear; position: relative; display:block; width: 120px; margin: 10px auto; padding: 10px; border-radius: 2%; background-color: #ffff77; border: 1px solid #0000cc; font-family: 'Asul', sans-serif; font-size: 24px; color: #000; text-align: center; text-decoration: none; transform-style: flat; transition: all 250ms ease-out; &:before, &:after { position: absolute; z-index: -5; 	transition: all 250ms ease-out;}");
+            setTimeout(()=>{
+              newUserExit.setAttribute("style", "visibility: visible; opacity: 1; transition: opacity " + timer + "s linear; position: relative; display:block; width: 120px; margin: 10px auto; padding: 10px; border-radius: 2%; background-color: #ffff77; border: 1px solid #0000cc; font-family: 'Asul', sans-serif; font-size: 24px; color: #000; text-align: center; text-decoration: none; transform-style: flat; transition: all 250ms ease-out; &:before, &:after { position: absolute; z-index: -5; 	transition: all 250ms ease-out;}");
+            }, (delayTime/2));
+          }, (delayTime/2));
+        }, delayTime);
+      }, delayTime);
+    }, delayTime);
+
+    newUserExit.addEventListener('click', ()=>{
+      newUserName.value = '';
+      newUserEmail.value = '';
+      newUserPassword.value = '';
+      newUserVerifyPassword.value = '';
+      resetInitialState();
+    });
+  }
+
   function fadeInLogin(timer) {
     var loginEmail = document.getElementById('loginEmail');
     var loginSubmit = document.getElementById('loginSubmit');
@@ -100,6 +136,13 @@
   }
 
   function resetInitialState() {
+    let newUserName = document.getElementById('newUserName');
+    let newUserEmail = document.getElementById('newUserEmail');
+    let newUserPassword = document.getElementById('newUserPassword');
+    let newUserVerifyPassword = document.getElementById('newUserVerifyPassword');
+    let newUserSubmit = document.getElementById('newUserSubmit');
+    let newUserExit = document.getElementById('newUserExit');
+
     let landingLogin = document.getElementById('landingLogin');
     let landingNewUser = document.getElementById('landingNewUser');
     let loginEmail = document.getElementById('loginEmail');
@@ -117,6 +160,12 @@
     stopBlinker = true;
     loginFailNotice.setAttribute("style", "display: none;");
     loginExit.setAttribute("style", "visibility: hidden; opacity: 0;");
+    newUserName.setAttribute("style", "visibility: hidden; opacity: 0;");
+    newUserEmail.setAttribute("style", "visibility: hidden; opacity: 0;");
+    newUserPassword.setAttribute("style", "visibility: hidden; opacity: 0;");
+    newUserVerifyPassword.setAttribute("style", "visibility: hidden; opacity: 0;");
+    newUserSubmit.setAttribute("style", "visibility: hidden; opacity: 0;");
+    newUserExit.setAttribute("style", "visibility: hidden; opacity: 0;");
     loginEmail.setAttribute("style", "visibility: hidden; opacity: 0;");
     loginEmail.value = '';
     loginPassword.setAttribute("style", "visibility: hidden; opacity: 0;");
@@ -183,6 +232,66 @@
     }, setDelay) ;
   }
 
+  function welcomeNewUserMessage() {
+    stopBlinker = true;
+    let loginFailNotice = document.getElementById('loginFailNotice');
+    let newUserName = document.getElementById('newUserName');
+    let messageString = '>WELCOME, ' + newUserName.value + '. <br>>Your account is ready. <br>>Let\'s set up your 168h calendar features.<br>>';
+
+    loginFailNotice.setAttribute("style", "display: initial;");
+    setTimeout(()=>{
+      messageDisplay(messageString, '', loginFailNotice, 40);
+    }, 500);
+  }
+
+  function passwordEntriesMismatch() {
+    stopBlinker = true;
+    let loginFailNotice = document.getElementById('loginFailNotice');
+    let newUserName = document.getElementById('newUserName');
+    let messageString = '>ERROR: <br>>Password values do not match, <br>>' + newUserName.value + '. <br>>';
+
+    loginFailNotice.setAttribute("style", "display: initial;");
+    setTimeout(()=>{
+      messageDisplay(messageString, '', loginFailNotice, 40);
+    }, 500);
+  }
+
+  function pleaseEnterPasswordValues() {
+    stopBlinker = true;
+    let loginFailNotice = document.getElementById('loginFailNotice');
+    let newUserName = document.getElementById('newUserName');
+    let messageString = '>ERROR: <br>>Invalid password(s), <br>>' + newUserName.value + '. <br>>';
+
+    loginFailNotice.setAttribute("style", "display: initial;");
+    setTimeout(()=>{
+      messageDisplay(messageString, '', loginFailNotice, 40);
+    }, 500);
+  }
+
+  function emailAlreadyInSystem() {
+    stopBlinker = true;
+    let loginFailNotice = document.getElementById('loginFailNotice');
+    let newUserName = document.getElementById('newUserName');
+    let messageString = '>ERROR: <br>>Email already associated with an account, <br>>' + newUserName.value + '. <br>>';
+
+    loginFailNotice.setAttribute("style", "display: initial;");
+    setTimeout(()=>{
+      messageDisplay(messageString, '', loginFailNotice, 40);
+    }, 500);
+  }
+
+  function invalidEmailNotice() {
+    stopBlinker = true;
+    let loginFailNotice = document.getElementById('loginFailNotice');
+    let newUserName = document.getElementById('newUserName');
+    let messageString = '>ERROR: <br>>Please enter a valid email address, <br>>' + newUserName.value + '. <br>>';
+
+    loginFailNotice.setAttribute("style", "display: initial;");
+    setTimeout(()=>{
+      messageDisplay(messageString, '', loginFailNotice, 40);
+    }, 500);
+  }
+
   function emailAndPasswordMismatch() {
     console.log('inform the user');
     stopBlinker = true;
@@ -210,8 +319,66 @@
 
       vm.$onInit = onInit;
       vm.loginAttempt = loginAttempt;
+      vm.newUserSubmit = newUserSubmit;
 
+      function newUserSubmit() {
+        let newUserEmail = document.getElementById('newUserEmail');
+        var emailEntry = newUserEmail.value.toLowerCase();
+        let newUserPassword = document.getElementById('newUserPassword');
+        let newUserVerifyPassword = document.getElementById('newUserVerifyPassword');
+        let newUserName = document.getElementById('newUserName');
+        let newUserSubmit = document.getElementById('newUserSubmit');
+        let newUserExit = document.getElementById('newUserExit');
+        let nextContinue = document.getElementById('nextContinue');
 
+        //check for valid email
+        if ((emailEntry.length < 1) || (emailEntry.indexOf('@') === -1) || (emailEntry.indexOf('.') === -1) || (emailEntry.indexOf('.') === (emailEntry.length - 1))) {
+          invalidEmailNotice();
+          return;
+        }
+        //check that email is not already in user database
+        let checkUniqueObj = {
+          email: emailEntry
+        };
+        $http.post('/users/byemail', checkUniqueObj)
+        .then(isItUniqueData=>{
+          let isItUnique = isItUniqueData.data;
+          if (isItUnique.email !== 'unique') {
+            emailAlreadyInSystem();
+            return;
+          }
+          //check that password content exists
+          if ((newUserPassword.value.length < 1) || (newUserVerifyPassword.value.length < 1)) {
+            pleaseEnterPasswordValues();
+            return;
+          }
+          //check that password fields match
+          if (newUserPassword.value !== newUserVerifyPassword.value) {
+            passwordEntriesMismatch();
+            return;
+          }
+          //post - send welcome message - continue button
+          let submitNewUserObj = {
+            name: newUserName.value,
+            email: newUserEmail.value,
+            password: newUserPassword.value,
+            is_admin: false,
+            user_avatar_url: '',
+            associates: {}
+          };
+          $http.post('/users', submitNewUserObj)
+          .then(submittedUserData=>{
+            let submittedUser = submittedUserData.data[0];
+            console.log(submittedUser);
+            welcomeNewUserMessage();
+            newUserSubmit.setAttribute("style", "display: none;");
+            newUserExit.setAttribute("style", "display: none;");
+            nextContinue.setAttribute("style", "display: initial; position: relative; display:block; width: 120px; margin: 10px auto; padding: 10px; border-radius: 2%; background-color: #ffff77; border: 1px solid #0000cc; font-family: 'Asul', sans-serif; font-size: 24px; color: #000; text-align: center; text-decoration: none; transform-style: flat; transition: all 250ms ease-out; &:before, &:after { position: absolute; z-index: -5; 	transition: all 250ms ease-out;}");
+          });
+        });
+
+        //post - send welcome message - continue button
+      }
       function loginAttempt() {
         //alert('We are logging in');
         let loginEmail = document.getElementById('loginEmail');
@@ -234,7 +401,13 @@
               document.cookie = user.security.key + "=" + user.security.value;
               document.cookie = "h168userId=" + user.id;
               $http.get(`/users/${loginResult.id}`).then(()=>{
-                $state.go('dayview');
+                let currentDate = new Date();
+                let yyyy = currentDate.getFullYear();
+                let mm = currentDate.getMonth() + 1;
+                let dd = currentDate.getDate();
+                let today = 'user=' + loginResult.id + '&dayof=' + yyyy + '-' + mm + '-' + dd;
+                $state.go('dayview', {id: today});
+                //myTimer = undefined;
               });
             });
           }
@@ -254,26 +427,49 @@
             let cookey = userInfo.security.key;
             let cookvalue = userInfo.security.value;
             if (getCookie(cookey) === cookvalue) {
-              $state.go('dayview');
+              let userObject = {
+                user_id: loggedInUser
+              };
+              $http.post('/users/loginstatus', userObject)
+              .then(loginStatusData=>{
+                let loginStatus = loginStatusData.data;
+                if (loginStatus.session !== 'empty') {
+                  let currentDate = new Date();
+                  let yyyy = currentDate.getFullYear();
+                  let mm = currentDate.getMonth() + 1;
+                  let dd = currentDate.getDate();
+                  let today = 'user=' + userInfo.id + '&dayof=' + yyyy + '-' + mm + '-' + dd;
+                  $state.go('dayview', {id: today});
+                  myTimer = undefined;
+                } else {
+                  console.log('forbidden access');
+                }
+              });
+              // $state.go('dayview');
             }
           });
+        } else {
+
+          var myTimer = setInterval(setClock,1000);
+          var landingLogin = document.getElementById('landingLogin');
+          var landingNewUser = document.getElementById('landingNewUser');
+          var landingInfo = document.getElementById('landingInfo');
+          var loginExit = document.getElementById('loginExit');
+          var userLoginForm = document.getElementById('userLoginForm');
+
+          landingLogin.addEventListener('click', ()=>{
+            userLoginForm.setAttribute("style", "display: initial;");
+            fadeOutButtons(landingInfo, landingNewUser,landingLogin, fadeInLogin);
+
+          });
+          landingNewUser.addEventListener('click', ()=>{
+
+            fadeOutButtons(landingInfo, landingLogin, landingNewUser, fadeInNewUserSignup);
+          });
+          loginExit.addEventListener('click', ()=>{
+            resetInitialState();
+          });
         }
-
-        var myTimer = setInterval(setClock,1000);
-        var landingLogin = document.getElementById('landingLogin');
-        var landingNewUser = document.getElementById('landingNewUser');
-        var landingInfo = document.getElementById('landingInfo');
-        var loginExit = document.getElementById('loginExit');
-        var userLoginForm = document.getElementById('userLoginForm');
-
-        landingLogin.addEventListener('click', ()=>{
-          userLoginForm.setAttribute("style", "display: initial;");
-          fadeOutButtons(landingInfo, landingNewUser,landingLogin, fadeInLogin);
-
-        });
-        loginExit.addEventListener('click', ()=>{
-          resetInitialState();
-        });
 
 
       }

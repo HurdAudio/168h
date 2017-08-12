@@ -38,11 +38,11 @@ router.use(function (req,res,next) {
 
 router.post('/loginstatus', (req, res, next)=>{
   console.log('called');
-  if ((!req.body.user_id) || (req.session === null)) {
+  if ((!req.body.user_id) || (!req.session)) {
     let obj = {
       session: 'empty'
     };
-    res.send(obj);
+    console.log(obj);
   }
   knex('users')
   .where('id', req.body.user_id)
@@ -51,11 +51,45 @@ router.post('/loginstatus', (req, res, next)=>{
     if (!user) {
       return next();
     }
-    if (req.session.userId === req.body.user_id) {
+    if (req.session.userId == req.body.user_id) {
+      console.log(req.session.userId);
       res.send(user);
     } else {
-      res.sendStatus(403);
+      let obj = {
+        session: 'empty'
+      };
+      console.log(obj);
+      console.log(req.session.userId);
+      console.log(req.body.user_id);
+      res.send(obj);
     }
+  })
+  .catch((err) => {
+    next(err);
+  });
+});
+
+router.post('/byemail', (req, res, next)=>{
+  console.log('called');
+  if (!req.body.email) {
+    let obj = {
+      email: 'unique'
+    };
+    console.log(obj);
+  }
+  knex('users')
+  .where('email', req.body.email)
+  .first()
+  .then((user) => {
+    if (!user) {
+      let obj = {
+        email: 'unique'
+      };
+      res.send(obj);
+    } else {
+      res.send(user);
+    }
+
   })
   .catch((err) => {
     next(err);
@@ -161,7 +195,8 @@ router.post('/', (req, res, next) => {
 
 router.post('/logout',(req,res,next) => {
   req.session = null;
-  res.send();
+
+  res.send({session:'cleared'});
 });
 
 
