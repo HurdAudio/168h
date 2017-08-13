@@ -404,6 +404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 21,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/moonlight-and-lamplight-1937.jpg',
+          title: 'Moonlight and Lamplight',
+          artist: 'Winifred Nicholson',
+          year: '1937',
+          rule: {
+            "monday": "[12, 13, 15, 17]",
+            "tuesday": "[15, 17, 19, 20]",
+            "wednesday": "[17, 19, 23, 26]",
+            "thursday": "[19, 21, 22, 25]",
+            "friday": "[4, 5, 7, 8]",
+            "saturday": "[7, 10, 11, 21]",
+            "sunday": "[9, 10, 13, 15]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 22,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/powidok-s-o-ca-1949.jpg',
+          title: 'Powidok słońca',
+          artist: 'Wladyslaw Strzeminski',
+          year: '1949',
+          rule: {
+            "monday": "[9, 10, 13, 15]",
+            "tuesday": "[12, 13, 15, 17]",
+            "wednesday": "[15, 17, 19, 20]",
+            "thursday": "[17, 19, 23, 26]",
+            "friday": "[19, 21, 22, 25]",
+            "saturday": "[4, 5, 7, 8]",
+            "sunday": "[7, 10, 11, 21]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 23,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/untitled-35.jpg',
+          title: 'Untitled',
+          artist: 'Tiberiy Szilvashi',
+          year: 'XX cent.',
+          rule: {
+            "monday": "[7, 10, 11, 21]",
+            "tuesday": "[9, 10, 13, 15]",
+            "wednesday": "[12, 13, 15, 17]",
+            "thursday": "[15, 17, 19, 20]",
+            "friday": "[17, 19, 23, 26]",
+            "saturday": "[19, 21, 22, 25]",
+            "sunday": "[4, 5, 7, 8]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 24,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/portrait.jpg',
+          title: 'Portrait',
+          artist: 'Lyubov Popova',
+          year: 'XX cent.',
+          rule: {
+            "monday": "[4, 5, 7, 8]",
+            "tuesday": "[7, 10, 11, 21]",
+            "wednesday": "[9, 10, 13, 15]",
+            "thursday": "[12, 13, 15, 17]",
+            "friday": "[15, 17, 19, 20]",
+            "saturday": "[17, 19, 23, 26]",
+            "sunday": "[19, 21, 22, 25]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 25,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/city-of-the-sun.jpg',
+          title: 'City of the Sun',
+          artist: 'Darren Waterston',
+          year: '2012',
+          rule: {
+            "monday": "[19, 21, 22, 25]",
+            "tuesday": "[4, 5, 7, 8]",
+            "wednesday": "[7, 10, 11, 21]",
+            "thursday": "[9, 10, 13, 15]",
+            "friday": "[12, 13, 15, 17]",
+            "saturday": "[15, 17, 19, 20]",
+            "sunday": "[17, 19, 23, 26]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {

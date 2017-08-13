@@ -8,11 +8,11 @@
   </div>
   <div class="pure-u-2-5">
     <ul>
-      <li><a href="" class="btn">Today</a></li>
+      <li><a href="" class="btn" ng-click="$ctrl.gotoToday()">Today</a></li>
       <li><a href="" class="btn">Week</a></li>
       <li><a href="" class="btn">Month</a></li>
-      <li><a href="" class="btn">Previous</a></li>
-      <li><a href="" class="btn">Next Day</a></li>
+      <li><a href="" class="btn" ng-click="$ctrl.previousDay()">Previous</a></li>
+      <li><a href="" class="btn" ng-click="$ctrl.nextDay()">Next Day</a></li>
       <li><a href="" class="btn">Profile</a></li>
     </ul>
   </div>
@@ -60,17 +60,17 @@
     <h2></h2>
   </div>
   <div id="dayOfWeek" class="pure-u-1-5">
-    <h1>Monday</h1>
+    <h1 id="weekdaySlot"></h1>
   </div>
   <div id="numericalDate" class="pure-u-1-5">
-    <h1>17</h1>
+    <h1 id="numdaySlot"></h1>
   </div>
   <div id="monthDayView" class="pure-u-1-5">
-    <h1>July</h1>
+    <h1 id="monthSlot"></h1>
 
   </div>
   <div id="yearDayView" class="pure-u-1-5">
-    <h2>2017</h2>
+    <h2 id="yearSlot"></h2>
   </div>
 </div>
 

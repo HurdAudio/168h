@@ -204,6 +204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 11,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/starry-night-and-the-astronauts-1972.jpg',
+          title: 'Starry Night and the Astronauts',
+          artist: 'Alma Woodsey Thomas',
+          year: '1972',
+          rule: {
+            "monday": "[12, 20, 28, 7]",
+            "tuesday": "[14, 22, 29, 9]",
+            "wednesday": "[2, 10, 18, 26]",
+            "thursday": "[4, 12, 20, 28]",
+            "friday": "[9, 14, 22, 1]",
+            "saturday": "[8, 16, 24, 3]",
+            "sunday": "[10, 18, 26, 5]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 12,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/untitled-1986-3.jpg',
+          title: 'Untitled',
+          artist: 'Fab 5 Freddy',
+          year: '1986',
+          rule: {
+            "monday": "[10, 18, 26, 5]",
+            "tuesday": "[12, 20, 28, 7]",
+            "wednesday": "[14, 22, 29, 9]",
+            "thursday": "[2, 10, 18, 26]",
+            "friday": "[4, 12, 20, 28]",
+            "saturday": "[9, 14, 22, 1]",
+            "sunday": "[8, 16, 24, 3]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 13,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/untitled-1989.jpg',
+          title: 'Untitled',
+          artist: 'David Hammons',
+          year: '1989',
+          rule: {
+            "monday": "[8, 16, 24, 3]",
+            "tuesday": "[10, 18, 26, 5]",
+            "wednesday": "[12, 20, 28, 9]",
+            "thursday": "[14, 22, 29, 9]",
+            "friday": "[2, 10, 18, 26]",
+            "saturday": "[4, 12, 20, 28]",
+            "sunday": "[9, 14, 22, 1]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 14,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/flexible.jpg',
+          title: 'Flexible',
+          artist: 'Jean-Michel Basquiat',
+          year: '1984',
+          rule: {
+            "monday": "[10, 15, 23, 2]",
+            "tuesday": "[9, 17, 25, 4]",
+            "wednesday": "[11, 19, 27, 6]",
+            "thursday": "[13, 21, 29, 10]",
+            "friday": "[15, 23, 1, 10]",
+            "saturday": "[3, 11, 19, 27]",
+            "sunday": "[5, 13, 21, 29]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 15,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/strike-1949.jpg',
+          title: 'Strike',
+          artist: 'Jacob Lawrence',
+          year: '1949',
+          rule: {
+            "monday": "[5, 13, 21, 29]",
+            "tuesday": "[10, 15, 23, 2]",
+            "wednesday": "[9, 17, 25, 4]",
+            "thursday": "[11, 19, 27, 6]",
+            "friday": "[13, 21, 29, 10]",
+            "saturday": "[15, 23, 1, 10]",
+            "sunday": "[3, 11, 19, 27]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {

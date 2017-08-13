@@ -58,6 +58,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 4,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'http://bandcamp.com/EmbeddedPlayer/album=1930485249/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://firehouse12records.com/album/9-compositions-iridium-2006',
+          a_string: '9 Compositions (Iridium) 2006 by Anthony Braxton',
+          rule: {
+            "monday": "[ 6, 10, 12, 16]",
+            "tuesday": "[8, 12, 14, 18]",
+            "wednesday": "[11, 15, 17, 20]",
+            "thursday": "[2, 6, 8, 12]",
+            "saturday": "[4, 8, 10, 14]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 5,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'http://bandcamp.com/EmbeddedPlayer/album=3415041672/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://firehouse12records.com/album/that-not',
+          a_string: 'that / not by Tyshawn Sorey',
+          rule: {
+            "monday": "[ 4, 8, 10, 14]",
+            "tuesday": "[6, 10, 12, 16]",
+            "wednesday": "[8, 12, 14, 18]",
+            "thursday": "[11, 15, 17, 20]",
+            "saturday": "[2, 6, 8, 12]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 6,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=872497733/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bangonacan.bandcamp.com/album/a-ballad-for-many',
+          a_string: 'A Ballad For Many by Bang On A Can &amp; Don Byron',
+          rule: {
+            "monday": "[ 2, 6, 8, 12]",
+            "tuesday": "[4, 8, 10, 14]",
+            "wednesday": "[6, 10, 12, 16]",
+            "thursday": "[18, 12, 14, 18]",
+            "saturday": "[11, 15, 17, 20]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {

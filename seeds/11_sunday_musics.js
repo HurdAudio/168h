@@ -154,6 +154,36 @@ exports.seed = function(knex, Promise) {
           a_string: 'REHEARSAL DEMO NOV 11 2011 by SUNN O)))',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 16,
+          user_id: 1,
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=77309917/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sunaraw.bandcamp.com/album/live-roma',
+          a_string: 'Live ROMA by SUN ARAW BAND X',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 17,
+          user_id: 1,
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2943071476/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sunaraw.bandcamp.com/album/two-from-the-desert-yucca-valley-2012',
+          a_string: 'TWO FROM THE DESERT: YUCCA VALLEY 2012 by SUN ARAW BAND IX',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 18,
+          user_id: 1,
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1816768686/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sunaraw.bandcamp.com/album/formatting-formants-adelaide-2012',
+          a_string: 'FORMATTING FORMANTS: ADELAIDE 2012 by SUN ARAW BAND V',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {

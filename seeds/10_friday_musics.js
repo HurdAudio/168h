@@ -184,6 +184,36 @@ exports.seed = function(knex, Promise) {
           a_string: 'Ikoyi Blindness (1975) by Fela Kuti',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 19,
+          user_id: 1,
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1366516094/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://felakuti.bandcamp.com/album/kalakuta-show-1976',
+          a_string: 'Kalakuta Show (1976) by Fela Kuti',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 20,
+          user_id: 1,
+          source: 'bandcamp',
+          src_string: 'src="https://bandcamp.com/EmbeddedPlayer/album=4227166811/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://felakuti.bandcamp.com/album/yellow-fever-1976',
+          a_string: 'Yellow Fever (1976) by Fela Kuti',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 21,
+          user_id: 1,
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2971232088/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://felakuti.bandcamp.com/album/na-poi-1976',
+          a_string: 'Na Poi (1976) by Fela Kuti',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {

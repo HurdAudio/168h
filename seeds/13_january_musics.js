@@ -166,6 +166,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 10,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2877878179/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://idischidiangelica.bandcamp.com/album/angelica-music',
+          a_string: 'Angelica Music by Christian Wolff',
+          rule: {
+            "monday": "[ 2, 6, 8, 12]",
+            "tuesday": "[8, 15, 17, 16]",
+            "wednesday": "[6, 10, 12, 16]",
+            "thursday": "[8, 15, 17, 16]",
+            "saturday": "[6, 10, 12, 17]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 11,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'src="https://bandcamp.com/EmbeddedPlayer/album=952221414/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://pauline-oliveros.bandcamp.com/album/water-above-sky-below-now',
+          a_string: 'Water Above Sky Below Now by Pauline Oliveros and Ione',
+          rule: {
+            "monday": "[ 6, 10, 12, 17]",
+            "tuesday": "[2, 6, 8, 12]",
+            "wednesday": "[8, 15, 17, 16]",
+            "thursday": "[6, 10, 12, 16]",
+            "saturday": "[8, 15, 17, 16]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 12,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3243291892/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://quatuorbozzini-actuellecd.bandcamp.com/album/john-cage-four',
+          a_string: 'John Cage: Four by Quatuor Bozzini',
+          rule: {
+            "monday": "[ 8, 15, 17, 16]",
+            "tuesday": "[6, 10, 12, 17]",
+            "wednesday": "[2, 6, 8, 12]",
+            "thursday": "[8, 15, 17, 16]",
+            "saturday": "[6, 10, 12, 16]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
