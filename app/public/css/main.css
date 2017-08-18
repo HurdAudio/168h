@@ -469,7 +469,7 @@ a.btn:hover {
   padding-left: 0.1em;
   padding-top: 0;
   overflow: scroll;
-  height: 565px;
+  height: 13.6em;
   width: 38%;
 }
 
@@ -630,7 +630,7 @@ a.btn:hover {
   margin-left: 0.4em;
 }
 #daytimer p {
-   font-size: 24px;
+   font-size: 42px;
    margin-left: 0.7em;
    margin-top: 0.2em;
 
@@ -645,7 +645,7 @@ a.btn:hover {
 
  .hour {
    border: solid #111111 1px;
-   height: 1em;
+   height: 1.4em;
  }
 
  .hourWeek {
@@ -1398,7 +1398,7 @@ a.btn:hover {
 }
 
 #pomodoro {
-
+  visibility: visible;
   width: 20%;
   align-content: center;
   text-align: center;

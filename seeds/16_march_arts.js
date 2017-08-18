@@ -124,6 +124,86 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 7,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/1.jpg',
+          title: 'The baptism of Christ',
+          artist: 'Ende',
+          year: '975',
+          rule: {
+            "monday": "[ 31, 10, 18, 28 ]",
+            "tuesday": "[ 30, 9, 17, 27 ]",
+            "wednesday": "[ 29, 8, 16, 26 ]",
+            "thursday": "[ 28, 7, 15, 25 ]",
+            "friday": "[ 27, 6, 14, 24 ]",
+            "saturday": "[ 2, 12, 20, 30 ]",
+            "sunday": "[ 1, 11, 19, 29 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 8,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/breastfeeding-mother-of-paula-modersohn-becker-1902.jpg',
+          title: 'Breastfeeding mother of Paula Modersohn-Becker',
+          artist: 'Paula Modersohn-Becker',
+          year: '1902',
+          rule: {
+            "monday": "[ 1, 11, 19, 29 ]",
+            "tuesday": "[ 31, 10, 18, 28 ]",
+            "wednesday": "[ 30, 9, 17, 27 ]",
+            "thursday": "[ 29, 8, 16, 26 ]",
+            "friday": "[ 28, 7, 15, 25 ]",
+            "saturday": "[ 27, 6, 14, 24 ]",
+            "sunday": "[ 2, 12, 20, 30 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 9,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/espagnole.jpg',
+          title: 'Espagnole',
+          artist: 'Natalia Goncharova',
+          year: '1914',
+          rule: {
+            "monday": "[ 2, 12, 20, 30 ]",
+            "tuesday": "[ 1, 11, 19, 29 ]",
+            "wednesday": "[ 31, 10, 18, 28 ]",
+            "thursday": "[ 30, 9, 17, 27 ]",
+            "friday": "[ 29, 8, 16, 26 ]",
+            "saturday": "[ 28, 7, 15, 25 ]",
+            "sunday": "[ 27, 6, 14, 24 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 10,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/blue-cats-with-butterflies.jpg',
+          title: 'Blue Cats with Butterflies',
+          artist: 'Laurel Burch',
+          year: '?',
+          rule: {
+            "monday": "[ 27, 6, 14, 24 ]",
+            "tuesday": "[ 2, 12, 20, 30 ]",
+            "wednesday": "[ 1, 11, 19, 29 ]",
+            "thursday": "[ 31, 10, 18, 28 ]",
+            "friday": "[ 30, 9, 17, 27 ]",
+            "saturday": "[ 29, 8, 16, 26 ]",
+            "sunday": "[ 28, 7, 15, 25 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {

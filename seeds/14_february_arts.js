@@ -304,6 +304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 16,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/the-return-of-odysseus-homage-to-pintoricchio-and-benin-1977.jpg',
+          title: 'The Return of Odysseus (Homage to Pintoricchio and Benin)',
+          artist: 'Romare Bearden',
+          year: '1977',
+          rule: {
+            "monday": "[3, 11, 19, 27]",
+            "tuesday": "[5, 13, 21, 29]",
+            "wednesday": "[10, 15, 23, 2]",
+            "thursday": "[9, 17, 25, 4]",
+            "friday": "[11, 19, 27, 6]",
+            "saturday": "[13, 21, 29, 10]",
+            "sunday": "[15, 23, 1, 10]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 17,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/salome-1900.jpg',
+          title: 'Salome',
+          artist: 'Henry Ossawa Tanner',
+          year: '1900',
+          rule: {
+            "monday": "[15, 23, 1, 10]",
+            "tuesday": "[3, 11, 19, 27]",
+            "wednesday": "[5, 13, 21, 29]",
+            "thursday": "[10, 15, 23, 2]",
+            "friday": "[9, 17, 25, 4]",
+            "saturday": "[11, 19, 27, 6]",
+            "sunday": "[13, 21, 29, 10]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 18,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/time-before-history-1994.jpg',
+          title: 'Time Before History',
+          artist: 'Sam Gilliam',
+          year: '1994',
+          rule: {
+            "monday": "[13, 21, 29, 10]",
+            "tuesday": "[15, 23, 1, 10]",
+            "wednesday": "[3, 11, 19, 27]",
+            "thursday": "[5, 13, 21, 29]",
+            "friday": "[10, 15, 23, 2]",
+            "saturday": "[9, 17, 25, 4]",
+            "sunday": "[11, 19, 27, 6]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 19,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/self-portrait-1941.jpg',
+          title: 'Self-Portrait',
+          artist: 'Horace Pippin',
+          year: '1941',
+          rule: {
+            "monday": "[11, 19, 27, 6]",
+            "tuesday": "[13, 21, 29, 10]",
+            "wednesday": "[15, 23, 1, 10]",
+            "thursday": "[3, 11, 19, 27]",
+            "friday": "[5, 13, 21, 29]",
+            "saturday": "[10, 15, 23, 2]",
+            "sunday": "[9, 17, 25, 4]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 20,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/white-roses-sing-and-sing-1976.jpg',
+          title: 'White Roses Sing and Sing',
+          artist: 'Alma Woodsey Thomas',
+          year: '1976',
+          rule: {
+            "monday": "[9, 17, 25, 4]",
+            "tuesday": "[11, 19, 27, 6]",
+            "wednesday": "[13, 21, 29, 10]",
+            "thursday": "[15, 23, 1, 10]",
+            "friday": "[3, 11, 19, 27]",
+            "saturday": "[5, 13, 21, 29]",
+            "sunday": "[10, 15, 23, 2]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {

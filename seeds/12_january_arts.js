@@ -504,6 +504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 26,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/untitled-1973-3.jpg',
+          title: 'Untitled',
+          artist: 'Luciano Bartolini',
+          year: '1973',
+          rule: {
+            "monday": "[17, 19, 23, 26]",
+            "tuesday": "[19, 21, 22, 25]",
+            "wednesday": "[4, 5, 7, 8]",
+            "thursday": "[7, 10, 11, 21]",
+            "friday": "[9, 10, 13, 15]",
+            "saturday": "[12, 13, 15, 17]",
+            "sunday": "[15, 17, 19, 20]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 27,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/reminiscence-2005.jpg',
+          title: 'Reminiscence',
+          artist: 'Toko Shinoda',
+          year: '2005',
+          rule: {
+            "monday": "[15, 17, 19, 20]",
+            "tuesday": "[17, 19, 23, 26]",
+            "wednesday": "[19, 21, 22, 25]",
+            "thursday": "[4, 5, 7, 8]",
+            "friday": "[7, 10, 11, 21]",
+            "saturday": "[9, 10, 13, 15]",
+            "sunday": "[12, 13, 15, 17]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 28,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/hv2-no-17b-1992(1).jpg',
+          title: 'HV2, No 17b',
+          artist: 'John Cage',
+          year: '1992',
+          rule: {
+            "monday": "[13, 14, 16, 18]",
+            "tuesday": "[16, 18, 20, 21]",
+            "wednesday": "[18, 20, 24, 27]",
+            "thursday": "[20, 22, 23, 26]",
+            "friday": "[5, 6, 8, 9]",
+            "saturday": "[8, 11, 12, 22]",
+            "sunday": "[10, 11, 14, 16]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 29,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/bacchus-1983.jpg',
+          title: 'Bacchus',
+          artist: 'Elaine de Kooning',
+          year: '1983',
+          rule: {
+            "monday": "[10, 11, 14, 16]",
+            "tuesday": "[13, 14, 16, 18]",
+            "wednesday": "[16, 18, 20, 21]",
+            "thursday": "[18, 20, 24, 27]",
+            "friday": "[20, 22, 23, 26]",
+            "saturday": "[5, 6, 8, 9]",
+            "sunday": "[8, 11, 12, 22]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 30,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/le-vent-du-soleil-1996.jpg',
+          title: 'Le vent du soleil',
+          artist: 'Gotthard Graubner',
+          year: '1996',
+          rule: {
+            "monday": "[ 8, 11, 12, 22]",
+            "tuesday": "[10, 11, 14, 16]",
+            "wednesday": "[13, 14, 16, 18]",
+            "thursday": "[16, 18, 20, 21]",
+            "friday": "[18, 20, 24, 27]",
+            "saturday": "[20, 22, 23, 26]",
+            "sunday": "[5, 6, 8, 9]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {

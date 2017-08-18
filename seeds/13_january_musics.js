@@ -220,6 +220,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 13,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4131036755/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://davidlangmusic.bandcamp.com/album/the-national-anthems',
+          a_string: 'the national anthems by David Lang &amp; L.A. Master Chorale',
+          rule: {
+            "monday": "[ 6, 10, 12, 16]",
+            "tuesday": "[8, 15, 17, 16]",
+            "wednesday": "[6, 10, 12, 17]",
+            "thursday": "[2, 6, 8, 12]",
+            "saturday": "[8, 15, 17, 16]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 14,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3676445445/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://foommusic.bandcamp.com/album/pythagorean-dream',
+          a_string: 'Pythagorean Dream by Rhys Chatham',
+          rule: {
+            "monday": "[ 9, 16, 18, 17]",
+            "tuesday": "[7, 11, 13, 17]",
+            "wednesday": "[9, 16, 18, 17]",
+            "thursday": "[7, 11, 13, 18]",
+            "saturday": "[3, 7, 9, 13]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 15,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1904975454/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://unseenworlds.bandcamp.com/album/daytime-viewing',
+          a_string: 'Daytime Viewing by Jacqueline Humbert &amp; David Rosenboom',
+          rule: {
+            "monday": "[ 3, 7, 9, 13]",
+            "tuesday": "[9, 16, 18, 17]",
+            "wednesday": "[7, 11, 13, 17]",
+            "thursday": "[9, 16, 18, 17]",
+            "saturday": "[7, 11, 13, 18]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {

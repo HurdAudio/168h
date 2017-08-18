@@ -84,7 +84,7 @@ router.delete('/:id', (req, res, next) => {
           record = row;
 
 
-          return knex('holidays')
+          return knex('occasions')
             .del()
             .where('id', req.params.id);
         })

@@ -7,6 +7,8 @@
   var day = 0;
   var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
   var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  var hours = ['h0', 'h030', 'h1', 'h130', 'h2', 'h230', 'h3', 'h330', 'h4', 'h430', 'h5', 'h530', 'h6', 'h630', 'h7', 'h730', 'h8', 'h830', 'h9', 'h930', 'h10', 'h1030', 'h11', 'h1130', 'h12', 'h1230', 'h13', 'h1330', 'h14', 'h1430', 'h15', 'h1530', 'h16', 'h1630', 'h17', 'h1730', 'h18', 'h1830', 'h19', 'h1930', 'h20', 'h2030', 'h21', 'h2130', 'h22', 'h2230', 'h23', 'h2330' ];
+  var pulses = [ '#ff0000', '#ff1100', '#ff2211', '#ff3322', '#ff4433', '#ff5544', '#ff6655', '#ff7766', '#ff8877', '#ff9988', '#ffaa99', '#ffbbaa', '#ffccbb', '#ffddcc', '#ffeedd', '#ffffee', '#ffeeff', '#ffddee', '#ffccdd', '#ffbbcc', '#ffaabb', '#ff99aa', '#ff8899', '#ff7788', '#ff6677', '#ff5566', '#ff4455', '#ff3344', '#ff2233', '#ff1122', '#ff0011' ];
 
   function getCookie (name) {
     var cookies = document.cookie.split(';');
@@ -142,6 +144,108 @@
         return(displayDate);
       }
 
+      function getTense(checkDate) {
+        let whatTense = '';
+        let today = new Date();
+
+        if (checkDate.getFullYear() > today.getFullYear()) {
+          whatTense = 'future';
+        } else if (checkDate.getFullYear() < today.getFullYear()) {
+          whatTense = 'past';
+        } else {
+          if (checkDate.getMonth() > today.getMonth()) {
+            whatTense = 'future';
+          } else if (checkDate.getMonth() < today.getMonth()) {
+            whatTense = 'past';
+          } else {
+            if (checkDate.getDay() > today.getDay()) {
+              whatTense = 'future';
+            } else if (checkDate.getDay() < today.getDay()) {
+              whatTense = 'past';
+            } else {
+              whatTense = 'present';
+            }
+          }
+        }
+
+        return(whatTense);
+      }
+
+      function getCurrentTimePosition() {
+        let position = 0;
+        let timer = new Date();
+        let nowHour = timer.getHours();
+        let nowMinute = timer.getMinutes();
+
+
+
+        if (nowMinute < 30) {
+          position = nowHour * 2;
+        } else {
+          position = (nowHour * 2) + 1;
+        }
+
+
+
+        return(position);
+      }
+
+      function pulseThePresent(currentTimePoint, pulseColor) {
+        if (getTense(viewDate) !== 'present') {
+          return;
+        }
+        let element = document.getElementById(hours[currentTimePoint]);
+        if (currentTimePoint !== getCurrentTimePosition()) {
+
+          element.setAttribute("style", "color: #bb9933;");
+          if (currentTimePoint !== (hours.length - 1)) {
+            pulseThePresent((currentTimePoint + 1), pulseColor);
+          }
+        } else {
+          setTimeout(()=>{
+
+            element.setAttribute("style", "color: " + pulses[pulseColor] + ";");
+            if (pulseColor === (pulses.length - 1)) {
+              pulseThePresent(currentTimePoint, 0);
+            } else {
+              pulseThePresent(currentTimePoint, (pulseColor + 1));
+            }
+          }, 150);
+        }
+      }
+
+      function setTimeColors() {
+        //Check date for past, present or future
+        let tense = getTense(viewDate);
+        let multiElement = document.getElementsByClassName('hour');
+        let currentTimePosition = getCurrentTimePosition();
+        let pomodoro = document.getElementById('pomodoro');
+
+        if (tense === 'future') {
+          pomodoro.setAttribute("style", "visibility: collapse;");
+          for (let i = 0; i < multiElement.length; i++) {
+            multiElement[i].setAttribute("style", "color: #000000;");
+          }
+        } else if (tense === 'past') {
+          pomodoro.setAttribute("style", "visibility: collapse;");
+          for (let j = 0; j < multiElement.length; j++) {
+            multiElement[j].setAttribute("style", "color: #bb9933;");
+          }
+        } else {
+          pomodoro.setAttribute("style", "visibility: visible;");
+          //TODO update hours using clock string
+          for (let k = 0; k < currentTimePosition; k++) {
+            let element = document.getElementById(hours[k]);
+            element.setAttribute("style", "color: #bb9933;");
+          }
+          for (let l = (currentTimePosition + 1); l < hours.length; l++) {
+            let elementFuture = document.getElementById(hours[l]);
+            elementFuture.setAttribute("style", "color: #000000;");
+          }
+          pulseThePresent(currentTimePosition, 0);
+        }
+      }
+
       function onInit() {
         console.log("Dayview is lit");
 
@@ -172,11 +276,11 @@
           });
         }
         viewDate = getDateViewFromParams(userDateViewString);
-        console.log(viewDate);
         weekdaySlot.innerHTML = days[viewDate.getDay()];
         numdaySlot.innerHTML = day;
         monthSlot.innerHTML = months[viewDate.getMonth()];
         yearSlot.innerHTML = year;
+        setTimeColors();
 
       }
 
