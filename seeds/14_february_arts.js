@@ -404,6 +404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 21,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/anna-mae-1944.jpg',
+          title: 'Anna Mae',
+          artist: 'William H. Johnson',
+          year: '1944',
+          rule: {
+            "monday": "[11, 16, 24, 3]",
+            "tuesday": "[10, 18, 26, 5]",
+            "wednesday": "[12, 20, 28, 7]",
+            "thursday": "[14, 22, 1, 11]",
+            "friday": "[16, 24, 2, 11]",
+            "saturday": "[4, 12, 20, 28]",
+            "sunday": "[6, 14, 22, 1]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 22,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/portrait-of-an-african-american-man-1820.jpg',
+          title: 'Portrait of an African American Man',
+          artist: 'Joshua Johnson',
+          year: '1820',
+          rule: {
+            "monday": "[6, 14, 22, 1]",
+            "tuesday": "[11, 16, 24, 3]",
+            "wednesday": "[10, 18, 26, 5]",
+            "thursday": "[12, 20, 28, 7]",
+            "friday": "[14, 22, 1, 11]",
+            "saturday": "[16, 24, 2, 11]",
+            "sunday": "[4, 12, 20, 28]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 23,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/newspaper-boy-1869.jpg',
+          title: 'Newspaper Boy',
+          artist: 'Edward Mitchell Bannister',
+          year: '1869',
+          rule: {
+            "monday": "[4, 12, 20, 28]",
+            "tuesday": "[6, 14, 22, 1]",
+            "wednesday": "[11, 16, 24, 3]",
+            "thursday": "[10, 18, 26, 5]",
+            "friday": "[12, 20, 28, 7]",
+            "saturday": "[14, 22, 1, 11]",
+            "sunday": "[16, 24, 2, 11]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 24,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/sojourner-truth-et-al.jpg',
+          title: 'Sojourner Truth, Et. Al',
+          artist: 'Charles Wilbert White',
+          year: '?',
+          rule: {
+            "monday": "[16, 24, 2, 11]",
+            "tuesday": "[4, 12, 20, 28]",
+            "wednesday": "[6, 14, 22, 1]",
+            "thursday": "[11, 16, 24, 3]",
+            "friday": "[10, 18, 26, 5]",
+            "saturday": "[12, 20, 28, 7]",
+            "sunday": "[14, 22, 1, 11]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 25,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/254613800-03182015-terry_adkins_16_bomb_oral_history.jpg',
+          title: 'Fire\'s Either',
+          artist: 'Terry Adkins',
+          year: '1994',
+          rule: {
+            "monday": "[14, 22, 1, 11]",
+            "tuesday": "[16, 24, 2, 11]",
+            "wednesday": "[4, 12, 20, 28]",
+            "thursday": "[6, 14, 22, 1]",
+            "friday": "[11, 16, 24, 3]",
+            "saturday": "[10, 18, 26, 5]",
+            "sunday": "[12, 20, 28, 7]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {

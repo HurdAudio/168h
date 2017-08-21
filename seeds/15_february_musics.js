@@ -160,9 +160,63 @@ exports.seed = function(knex, Promise) {
           rule: {
             "monday": "[ 7, 11, 13, 17]",
             "tuesday": "[19, 13, 15, 20]",
-            "wednesday": "12, 16, 18, 21]",
+            "wednesday": "[12, 16, 18, 21]",
             "thursday": "[3, 7, 9, 13]",
             "saturday": "[5, 9, 11, 15]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 10,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'http://bandcamp.com/EmbeddedPlayer/album=3807849704/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sunnysidezone.com/album/proximity',
+          a_string: 'Proximity by Andrew Cyrille &amp; Bill McHenry',
+          rule: {
+            "monday": "[ 5, 9, 11, 15]",
+            "tuesday": "[ 7, 11, 13, 17]",
+            "wednesday": "[ 19, 13, 15, 20]",
+            "thursday": "[ 12, 16, 18, 21]",
+            "saturday": "[ 3, 7, 9, 13]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 11,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3122607953/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tanksounds.bandcamp.com/album/bardo-tank',
+          a_string: 'BARDO TANK by Ron Miles',
+          rule: {
+            "monday": "[ 3, 7, 9, 13]",
+            "tuesday": "[ 5, 9, 11, 15]",
+            "wednesday": "[ 7, 11, 13, 17]",
+            "thursday": "[ 19, 13, 15, 20]",
+            "saturday": "[ 12, 16, 18, 21]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 12,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1859384950/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cuneiformrecords.bandcamp.com/album/ten-freedom-summers-2',
+          a_string: 'Ten Freedom Summers by Wadada Leo Smith',
+          rule: {
+            "monday": "[ 12, 16, 18, 21]",
+            "tuesday": "[ 3, 7, 9, 13]",
+            "wednesday": "[ 5, 9, 11, 15]",
+            "thursday": "[ 7, 11, 13, 17]",
+            "saturday": "[ 19, 13, 15, 20]"
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')

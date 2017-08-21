@@ -274,6 +274,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 16,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1247105358/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://johnlutheradams.bandcamp.com/album/the-mathematics-of-resonant-bodies',
+          a_string: 'The Mathematics of Resonant Bodies by John Luther Adams',
+          rule: {
+            "monday": "[ 7, 11, 13, 18]",
+            "tuesday": "[3, 7, 9, 13]",
+            "wednesday": "[9, 16, 18, 17]",
+            "thursday": "[7, 11, 13, 17]",
+            "saturday": "[9, 16, 18, 17]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 17,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3228057692/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bangonacan.bandcamp.com/album/music-in-5ths-two-pages',
+          a_string: 'Music in 5ths/Two Pages by Bang on a Can All-Stars',
+          rule: {
+            "monday": "[ 9, 16, 18, 17]",
+            "tuesday": "[7, 11, 13, 18]",
+            "wednesday": "[3, 7, 9, 13]",
+            "thursday": "[9, 16, 18, 17]",
+            "saturday": "[7, 11, 13, 17]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 18,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3376465769/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sopercussion.bandcamp.com/album/steve-reich-drumming',
+          a_string: 'Steve Reich: Drumming by So Percussion',
+          rule: {
+            "monday": "[ 7, 11, 13, 17]",
+            "tuesday": "[9, 16, 18, 17]",
+            "wednesday": "[7, 11, 13, 18]",
+            "thursday": "[3, 7, 9, 13]",
+            "saturday": "[9, 16, 18, 17]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {

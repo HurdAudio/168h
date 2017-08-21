@@ -17,19 +17,21 @@
     </ul>
   </div>
   <div id="pomodoro" class="pure-u-1-5">
+    <button id="pomoPrevious">PREV</button>
     <h4 id="pomoTitle">Pomodoro</h4>
+
     <button id="pomoNext">NEXT</button>
     <ul>
       <li id="pomoTimerSetting">
         <p>Focus Interval:</p>
-        <button>-</button>
-        <h2>25</h2>
-        <button>+</button>
+        <button id="decreasePomoInterval">-</button>
+        <h2 id="setPomoInterval"></h2>
+        <button id="increasePomoInterval">+</button>
       </li>
       <li id="pomoBreakSetting">
         <p>Break Interval:</p>
         <button>-</button>
-        <h2>4 minutes</h2>
+        <h2 id="setBreakInterval"></h2>
         <button>+</button>
       </li>
       <li id="numberOfPomos">
@@ -332,11 +334,14 @@
     <iframe id="curatedMusic" style="border: 0; width: 100%; height: 550px;" src="https://bandcamp.com/EmbeddedPlayer/album=2629874419/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a id="curatedMusicData" href="http://kylebobbydunn.bandcamp.com/album/infinite-sadness">Infinite Sadness by Kyle Bobby Dunn</a></iframe>
   </div>
   <div id="goalsPanel" class="pure-u-1-3">
-    <div class="holidays">
-      <p>Jovian Easter</p>
-      <img src="https://c2.staticflickr.com/4/3502/3466675164_b3caed9555_b.jpg">
-    </div>
-    <div class="events">
+    <main ng-repeat="holiday in $ctrl.holidays | orderBy : $ctrl.sortBy">
+      <div class="holidays" style="background-color:{{holiday.color}}">
+        <p class="holidayName">{{holiday.name}}</p>
+
+        <img src="{{holiday.picture}}">
+      </div>
+    </main>
+    <div class="occasions">
       <p>Birthday: Ian Smith</p>
     </div>
     <div id="daySchedule">

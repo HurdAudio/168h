@@ -204,6 +204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 11,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/iracema.jpg',
+          title: 'Iracema',
+          artist: 'Lilian Greisse',
+          year: '2017',
+          rule: {
+            "monday": "[ 28, 7, 15, 25 ]",
+            "tuesday": "[ 27, 6, 14, 24 ]",
+            "wednesday": "[ 2, 12, 20, 30 ]",
+            "thursday": "[ 1, 11, 19, 29 ]",
+            "friday": "[ 31, 10, 18, 28 ]",
+            "saturday": "[ 30, 9, 17, 27 ]",
+            "sunday": "[ 29, 8, 16, 26 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 12,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/untitled-swirls-1977.jpg',
+          title: 'Untitled (Swirls)',
+          artist: 'Ruth Vollmer',
+          year: '1977',
+          rule: {
+            "monday": "[ 29, 8, 16, 26 ]",
+            "tuesday": "[ 28, 7, 15, 25 ]",
+            "wednesday": "[ 27, 6, 14, 24 ]",
+            "thursday": "[ 2, 12, 20, 30 ]",
+            "friday": "[ 1, 11, 19, 29 ]",
+            "saturday": "[ 31, 10, 18, 28 ]",
+            "sunday": "[ 30, 9, 17, 27 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 13,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/self-portrait-1906.jpg',
+          title: 'Self portrait',
+          artist: 'Paula Modersohn-Becker',
+          year: '1906',
+          rule: {
+            "monday": "[ 30, 9, 17, 27 ]",
+            "tuesday": "[ 29, 8, 16, 26 ]",
+            "wednesday": "[ 28, 7, 15, 25 ]",
+            "thursday": "[ 27, 6, 14, 24 ]",
+            "friday": "[ 2, 12, 20, 30 ]",
+            "saturday": "[ 1, 11, 19, 29 ]",
+            "sunday": "[ 31, 10, 18, 28 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 14,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/blue.jpg',
+          title: 'What\'s under beauty?',
+          artist: 'Tamara',
+          year: '2015',
+          rule: {
+            "monday": "[ 1, 11, 19, 29 ]",
+            "tuesday": "[ 31, 10, 18, 28 ]",
+            "wednesday": "[ 30, 9, 17, 27 ]",
+            "thursday": "[ 29, 8, 16, 26 ]",
+            "friday": "[ 28, 7, 15, 25 ]",
+            "saturday": "[ 3, 13, 21, 31 ]",
+            "sunday": "[ 2, 12, 20, 30 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 15,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/flames-1918.jpg',
+          title: 'Flames',
+          artist: 'Uemura Shoen',
+          year: '1918',
+          rule: {
+            "monday": "[ 2, 12, 20, 30 ]",
+            "tuesday": "[ 1, 11, 19, 29 ]",
+            "wednesday": "[ 31, 10, 18, 28 ]",
+            "thursday": "[ 30, 9, 17, 27 ]",
+            "friday": "[ 29, 8, 16, 26 ]",
+            "saturday": "[ 28, 7, 15, 25 ]",
+            "sunday": "[ 3, 13, 21, 31 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {

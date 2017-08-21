@@ -18,6 +18,8 @@ const bills = require('./routes/bills.js');
 const billsbyuser = require('./routes/billsbyuser.js');
 const tasks = require('./routes/tasks.js');
 const tasksbyuser = require('./routes/tasksbyuser.js');
+const observances = require('./routes/observances.js');
+const observancesbyuser = require('./routes/observancesbyuser.js');
 // const user_blogs = require('./routes/user_blogs.js');
 // const blog_comments = require('./routes/blog_comments.js');
 // const books = require('./routes/books.js');
@@ -137,6 +139,8 @@ app.use('/moment', express.static(path.join(__dirname, '../node_modules/moment/m
  app.use('/billsbyuser', billsbyuser);
  app.use('/tasks', tasks);
  app.use('/tasksbyuser', tasksbyuser);
+ app.use('/observances', observances);
+ app.use('/observancesbyuser', observancesbyuser);
 // app.use('/user_blogs', user_blogs);
 // app.use('/blog_comments', blog_comments);
 // app.use('/books', books);

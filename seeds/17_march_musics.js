@@ -58,6 +58,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 4,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1439897988/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://intaktrec.bandcamp.com/album/lonelyville',
+          a_string: 'Lonelyville by Sylvie Courvoisier',
+          rule: {
+            "monday": "[2, 8, 14, 22]",
+            "tuesday": "[1, 7, 13, 21]",
+            "wednesday": "[5, 11, 17, 25]",
+            "thursday": "[4, 10, 16, 24]",
+            "saturday": "[3, 9, 15, 23]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 5,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=784569706/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://intaktrec.bandcamp.com/album/passagio',
+          a_string: 'Passagio by Sylvie Courvoisier, Joëlle Léandre, Susie Ibarra',
+          rule: {
+            "monday": "[3, 9, 15, 23]",
+            "tuesday": "[2, 8, 14, 22]",
+            "wednesday": "[1, 7, 13, 21]",
+            "thursday": "[5, 11, 17, 25]",
+            "saturday": "[4, 10, 16, 24]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 6,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'http://bandcamp.com/EmbeddedPlayer/album=513818594/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://firehouse12records.com/album/life-carries-me-this-way',
+          a_string: 'Life Carries Me This Way by Myra Melford',
+          rule: {
+            "monday": "[4, 10, 16, 24]",
+            "tuesday": "[3, 9, 15, 23]",
+            "wednesday": "[2, 8, 14, 22]",
+            "thursday": "[1, 7, 13, 21]",
+            "saturday": "[5, 11, 17, 25]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {

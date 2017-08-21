@@ -604,6 +604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 31,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/heliogravuren-zu-den-documenta-bildern-1993.jpg',
+          title: 'Heliogravuren zu den Documenta Bildern',
+          artist: 'Gunther Forg',
+          year: '1993',
+          rule: {
+            "monday": "[ 5, 6, 8, 9]",
+            "tuesday": "[8, 11, 12, 22]",
+            "wednesday": "[10, 11, 14, 16]",
+            "thursday": "[13, 14, 16, 18]",
+            "friday": "[16, 18, 20, 21]",
+            "saturday": "[18, 20, 24, 27]",
+            "sunday": "[20, 22, 23, 26]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 32,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/the-air-1937.jpg',
+          title: 'The Air',
+          artist: 'Joan Miro',
+          year: '1937',
+          rule: {
+            "monday": "[ 20, 22, 23, 26]",
+            "tuesday": "[5, 6, 8, 9]",
+            "wednesday": "[8, 11, 12, 22]",
+            "thursday": "[10, 11, 14, 16]",
+            "friday": "[13, 14, 16, 18]",
+            "saturday": "[16, 18, 20, 21]",
+            "sunday": "[18, 20, 24, 27]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 33,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/the-moon-woman-cuts-the-circle-1943.jpg',
+          title: 'The Moon-Woman Cuts the Circle',
+          artist: 'Jackson Pollock',
+          year: '1943',
+          rule: {
+            "monday": "[ 18, 20, 24, 27]",
+            "tuesday": "[20, 22, 23, 26]",
+            "wednesday": "[5, 6, 8, 9]",
+            "thursday": "[8, 11, 12, 22]",
+            "friday": "[10, 11, 14, 16]",
+            "saturday": "[13, 14, 16, 18]",
+            "sunday": "[16, 18, 20, 21]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 34,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/tyranny-of-space-1946.jpg',
+          title: 'Tyranny of Space',
+          artist: 'Perle Fine',
+          year: '1946',
+          rule: {
+            "monday": "[ 16, 18, 20, 21]",
+            "tuesday": "[18, 20, 24, 27]",
+            "wednesday": "[20, 22, 23, 26]",
+            "thursday": "[5, 6, 8, 9]",
+            "friday": "[8, 11, 12, 22]",
+            "saturday": "[10, 11, 14, 16]",
+            "sunday": "[13, 14, 16, 18]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 35,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/yellow-predominance-1949.jpg',
+          title: 'Yellow Predominance',
+          artist: 'Hans Hofmann',
+          year: '1949',
+          rule: {
+            "monday": "[ 14, 15, 17, 19]",
+            "tuesday": "[17, 19, 21, 22]",
+            "wednesday": "[19, 21, 25, 28]",
+            "thursday": "[21, 23, 24, 27]",
+            "friday": "[6, 7, 9, 10]",
+            "saturday": "[9, 12, 13, 23]",
+            "sunday": "[11, 12, 15, 17]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {

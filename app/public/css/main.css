@@ -618,7 +618,7 @@ a.btn:hover {
 
 #goalsPanel {
   width: 30%;
-  height: 565px;
+  height: 41em;
   overflow: scroll;
 
   margin-left: 0.1em;
@@ -1447,7 +1447,29 @@ a.btn:hover {
 }
 
 #pomoBreakSetting {
-  display: none;
+  visibility: hidden;
+  float: left;
+}
+
+#pomoBreakSetting h2 {
+  float: left;
+}
+
+#pomoBreakSetting button {
+  float: left;
+  margin-top: 3.4em;
+  width: 40px;
+  border-radius: 100%;
+  background-color: #00FF00;
+  opacity: 0.5;
+}
+
+
+#pomoBreakSetting p {
+  float: left;
+  margin-right: 1em;
+  margin-left: 0;
+  margin-top: 2em;
 }
 
 #numberOfPomos {
@@ -1473,6 +1495,24 @@ a.btn:hover {
   border-radius: 10%;
   margin-left: 1.4em;
 }
+
+#setPomoInterval {
+  font-family: 'Space Mono', monospace;
+}
+
+#setBreakInterval {
+  font-family: 'Space Mono', monospace;
+}
+
+#pomoPrevious {
+  display: none;
+  font-size: 18px;
+  background-color: #ddff11;
+  opacity: 0.9;
+  border-radius: 10%;
+  margin-left: -1.8em;
+}
+
 #monthStrip {
   height: 4.4em;
   text-align: center;
@@ -2269,4 +2309,10 @@ footer img {
 
 #nextContinue {
   display: none;
+}
+
+.holidayName {
+  font-family: 'Asul', sans-serif;
+  font-weight: 200;
+  font-size: 36px;
 }
