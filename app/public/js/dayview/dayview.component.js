@@ -12,7 +12,7 @@
   var pomoInterval = 25;
   var pomoBreakInterval = 5;
   var numberOfPomo = 4;
-  var pomoStateArr = [ 'pomoTimerSetting', 'pomoBreakSetting'];
+  var pomoStateArr = [ 'pomoTimerSetting', 'pomoBreakSetting', 'numberOfPomos'];
   var pomoState = 0;
 
   function getCookie (name) {
@@ -48,6 +48,127 @@
       vm.previousDay = previousDay;
       vm.nextDay = nextDay;
       vm.gotoToday = gotoToday;
+      vm.addOccasionToDay = addOccasionToDay;
+      vm.submitOccasionToDay = submitOccasionToDay;
+      vm.editOccasion = editOccasion;
+
+      function editOccasion (occasionID) {
+        console.log(occasionID);
+        let editOccasionName = document.getElementById('editOccasionName');
+        let addOccasionButton = document.getElementById('addOccasionButton');
+        let occasionsList = document.getElementById('occasionsList');
+        let editDeleteOccasion = document.getElementById('editDeleteOccasion');
+        let deleteOccasionButton = document.getElementById('deleteOccasionButton');
+        let editOccasionButton = document.getElementById('editOccasionButton');
+
+        editOccasionName.value = '';
+        addOccasionButton.setAttribute("style", "display: none;");
+        occasionsList.setAttribute("style", "display: none;");
+        editDeleteOccasion.setAttribute("style", "display: initial;");
+        $http.get(`/occasions/${occasionID}`)
+        .then(editData=>{
+          let edit = editData.data;
+          let listItem = document.getElementById(edit.name + edit.id);
+          editOccasionName.value = edit.name;
+
+          deleteOccasionButton.addEventListener('click', ()=>{
+            $http.delete(`/occasions/${occasionID}`)
+            .then(deletedData=>{
+              let deleted = deletedData.data;
+
+              listItem.parentNode.removeChild(listItem);
+
+              addOccasionButton.setAttribute("style", "display: initial;");
+              occasionsList.setAttribute("style", "display: initial;");
+              editDeleteOccasion.setAttribute("style", "display: none;");
+              deleteOccasionButton.removeEventListener('click', ()=>{
+                console.log('removed');
+              });
+              editOccasionButton.removeEventListener('click', ()=>{
+                console.log('removed');
+              });
+              console.log(vm.occasions);
+
+
+
+            });
+          });
+
+          editOccasionButton.addEventListener('click', ()=>{
+            console.log(editOccasionName.value);
+            let patchObject = {};
+            let patchedDisplay = document.getElementById(edit.name + edit.id);
+            patchObject.name = editOccasionName.value;
+            $http.patch(`/occasions/${occasionID}`, patchObject)
+            .then(patchedData=>{
+              let patched = patchedData.data;
+              console.log(patched);
+              patchedDisplay.innerHTML = '-' + patched.name;
+
+            });
+            addOccasionButton.setAttribute("style", "display: initial;");
+            occasionsList.setAttribute("style", "display: initial;");
+            editDeleteOccasion.setAttribute("style", "display: none;");
+            editOccasionButton.removeEventListener('click', ()=>{
+              console.log('removed');
+            });
+            deleteOccasionButton.removeEventListener('click', ()=>{
+              console.log('removed');
+            });
+            editOccasionName.value = '';
+          });
+
+        });
+      }
+
+      function submitOccasionToDay () {
+
+        let yyyy = viewDate.getFullYear();
+        let mm = viewDate.getMonth() + 1;
+        if (mm < 10) {
+          mm = '0' + mm;
+        }
+        let dd = viewDate.getDate();
+        if (dd < 10) {
+          dd = '0' + dd;
+        }
+        let addOccasionButton = document.getElementById('addOccasionButton');
+        let addNewOccasion = document.getElementById('addNewOccasion');
+        let newOccasionsName = document.getElementById('newOccasionsName');
+        let isAnnualOccasion = document.getElementById('isAnnualOccasion');
+        let occasionEntryName = newOccasionsName.value;
+        newOccasionsName.value = null;
+        newOccasionsName.placeholder = 'occasion';
+        if (occasionEntryName.length > 0) {
+          let occasionObject = {};
+          let addDate = new Date(yyyy + '-' + mm + '-' + dd + 'T00:54:02.315Z');
+          occasionObject.user_id = currentUserId;
+          occasionObject.name = occasionEntryName;
+          occasionObject.day_of = addDate;
+          occasionObject.is_annual = isAnnualOccasion.checked;
+          //vm.occasions.push(occasionObject);
+          $http.post('/occasions', occasionObject)
+          .then(ocData=>{
+            let oc = ocData.data;
+            vm.occasions.push(oc[0]);
+            //console.log(oc);
+          });
+        }
+
+
+        //console.log(isAnnualOccasion.checked);
+
+        addOccasionButton.setAttribute("style", "display: initial;");
+        addNewOccasion.setAttribute("style", "display: none;");
+      }
+
+      function addOccasionToDay () {
+        let addOccasionButton = document.getElementById('addOccasionButton');
+        let addNewOccasion = document.getElementById('addNewOccasion');
+
+        addOccasionButton.setAttribute("style", "display: none;");
+        addNewOccasion.setAttribute("style", "display: initial;");
+      }
 
       function previousDay() {
         let navDay = new Date(viewDate);
@@ -228,10 +349,37 @@
         let pomoPrevious = document.getElementById('pomoPrevious');
         let pomoBreakSetting = document.getElementById('pomoBreakSetting');
         let setBreakInterval = document.getElementById('setBreakInterval');
+        let numberOfPomos = document.getElementById('numberOfPomos');
+        let decreaseBreakInterval = document.getElementById('decreaseBreakInterval');
+        let increaseBreakInterval = document.getElementById('increaseBreakInterval');
+
 
 
         setPomoInterval.innerHTML = pomoInterval;
         setBreakInterval.innerHTML = pomoBreakInterval;
+
+        decreaseBreakInterval.addEventListener('click', ()=>{
+          --pomoBreakInterval;
+          if (pomoBreakInterval === 1) {
+            decreaseBreakInterval.setAttribute("style", "display: none;");
+            increaseBreakInterval.setAttribute("style", "display: initial;");
+          } else {
+            decreaseBreakInterval.setAttribute("style", "display: initial;");
+            increaseBreakInterval.setAttribute("style", "display: initial;");
+          }
+          setBreakInterval.innerHTML = pomoBreakInterval;
+        });
+        increaseBreakInterval.addEventListener('click', ()=>{
+          ++pomoBreakInterval;
+          if (pomoBreakInterval === 15) {
+            decreaseBreakInterval.setAttribute("style", "display: initial;");
+            increaseBreakInterval.setAttribute("style", "display: none;");
+          } else {
+            decreaseBreakInterval.setAttribute("style", "display: initial;");
+            increaseBreakInterval.setAttribute("style", "display: initial;");
+          }
+          setBreakInterval.innerHTML = pomoBreakInterval;
+        });
 
         decreasePomoInterval.addEventListener('click', ()=>{
 
@@ -281,6 +429,14 @@
               pomoBreakSetting.setAttribute("style", "visibility: hidden; opacity: 0; transition: visibility 0s " + timer + "s, opacity " + timer + "s linear;");
               setTimeout(()=>{
                 pomoBreakSetting.setAttribute("style", "display: none;");
+                numberOfPomos.setAttribute("style", "display: initial;");
+                numberOfPomos.setAttribute("style", "visibility: visible; opacity: 1; transition: opacity " + timer + "s linear;");
+              }, (timer*1000));
+              break;
+            case ('numberOfPomos'):
+              numberOfPomos.setAttribute("style", "visibility: hidden; opacity: 0; transition: visibility 0s " + timer + "s, opacity " + timer + "s linear;");
+              setTimeout(()=>{
+                numberOfPomos.setAttribute("style", "display: none;");
                 pomoTimerSetting.setAttribute("style", "display: initial;");
                 pomoTimerSetting.setAttribute("style", "visibility: visible; opacity: 1; transition: opacity " + timer + "s linear;");
               }, (timer*1000));
@@ -302,14 +458,19 @@
           } else {
             pomoNext.setAttribute("style", "display: initial;");
           }
+          if (newState === 0) {
+            pomoPrevious.setAttribute("style", "display: none;");
+          } else {
+            pomoPrevious.setAttribute("style", "display: initial;");
+          }
           pomoState = newState;
           switch (pomoStateArr[currentState]) {
             case ('pomoTimerSetting'):
               pomoTimerSetting.setAttribute("style", "visibility: hidden; opacity: 0; transition: visibility 0s " + timer + "s, opacity " + timer + "s linear;");
               setTimeout(()=>{
                 pomoTimerSetting.setAttribute("style", "display: none;");
-                pomoBreakSetting.setAttribute("style", "display: initial;");
-                pomoBreakSetting.setAttribute("style", "visibility: visible; opacity: 1; transition: opacity " + timer + "s linear;");
+                numberOfPomos.setAttribute("style", "display: initial;");
+                numberOfPomos.setAttribute("style", "visibility: visible; opacity: 1; transition: opacity " + timer + "s linear;");
               }, (timer*1000));
               break;
             case ('pomoBreakSetting'):
@@ -318,6 +479,14 @@
                 pomoBreakSetting.setAttribute("style", "display: none;");
                 pomoTimerSetting.setAttribute("style", "display: initial;");
                 pomoTimerSetting.setAttribute("style", "visibility: visible; opacity: 1; transition: opacity " + timer + "s linear;");
+              }, (timer*1000));
+              break;
+            case ('numberOfPomos'):
+              numberOfPomos.setAttribute("style", "visibility: hidden; opacity: 0; transition: visibility 0s " + timer + "s, opacity " + timer + "s linear;");
+              setTimeout(()=>{
+                numberOfPomos.setAttribute("style", "display: none;");
+                pomoBreakSetting.setAttribute("style", "display: initial;");
+                pomoBreakSetting.setAttribute("style", "visibility: visible; opacity: 1; transition: opacity " + timer + "s linear;");
               }, (timer*1000));
               break;
             default:
@@ -453,16 +622,16 @@
                     }
                     break;
                   case ('Cyber Monday'):
-                    if ((viewDate.getMonth() === 10) && (viewDate.getDay() === 1)) {
-                      if (((viewDate.getDate() - 4) > 21) && ((viewDate.getDate() - 4) < 29)) {
+                    if (((viewDate.getMonth() === 11) || (viewDate.getMonth() === 10)) && (viewDate.getDay() === 1)) {
+                      if (((viewDate.getMonth() === 10) && ((viewDate.getDate() - 4) > 21) && ((viewDate.getDate() - 4) < 29)) || (viewDate.getMonth() === 11) && ((viewDate.getDate() - 4) < -1 )) {
                         holidayArray.push(holidayList[i]);
                       }
                     }
                     break;
                   case ('Advent'):
-                    if (viewDate.getDay() === 7) {
+                    if (viewDate.getDay() === 6) {
                       if ((viewDate.getMonth() === 10) || (viewDate.getMonth() === 11)) {
-                        let xmas = new Date(viewDate.getFullYear() + '-12-25');
+                        let xmas = new Date(viewDate.getFullYear() + '-12-25T13:44:00.000Z');
                         switch (xmas.getDay()) {
                           case (0):
                             if ((viewDate.getDate() === 3) || (viewDate.getDate() === 10) || (viewDate.getDate() === 17) || (viewDate.getDate() === 24)) {
@@ -526,6 +695,13 @@
                       }
                     }
                     break;
+                  case ('Arbor Day'):
+                    if ((viewDate.getMonth() === 3) &&(viewDate.getDay() === 5)) {
+                      if (viewDate.getDate() > 23) {
+                        holidayArray.push(holidayList[i]);
+                      }
+                    }
+                    break;
                   case ('Canadian Thanksgiving'):
                     if ((viewDate.getMonth() === 9) && (viewDate.getDay() === 1)) {
                       if ((viewDate.getDate() > 7) && (viewDate.getDate() < 15)) {
@@ -556,6 +732,34 @@
         });
       }
 
+      function detectOccasions () {
+        let occasionArray = [];
+        //let occasionsTitle = document.getElementById('occasionsTitle');
+        $http.get(`/occasionsbyuser/${currentUserId}`)
+        .then(occasionsListData=>{
+          let occasionsList = occasionsListData.data;
+          for (let i = 0; i < occasionsList.length; i++) {
+            let yyyy = parseInt(occasionsList[i].day_of.slice(0,4));
+            let mm = parseInt(occasionsList[i].day_of.slice(5,7));
+            let dd = parseInt(occasionsList[i].day_of.slice(8,10));
+
+            if ((parseInt(yyyy) === viewDate.getFullYear()) && (mm === (viewDate.getMonth() + 1)) && (dd === viewDate.getDate())) {
+              occasionArray.push(occasionsList[i]);
+            } else {
+              if (occasionsList[i].is_annual) {
+                if ((mm === (viewDate.getMonth() + 1)) && (dd === viewDate.getDate())) {
+                  occasionArray.push(occasionsList[i]);
+                }
+              }
+            }
+          }
+          // if (occasionArray.length < 1) {
+          //   occasionsTitle.innerHTML = '';
+          // }
+          vm.occasions = occasionArray;
+        });
+      }
+
       function onInit() {
         console.log("Dayview is lit");
 
@@ -567,6 +771,8 @@
         let yearSlot = document.getElementById('yearSlot');
         let pomoBreakSetting = document.getElementById('pomoBreakSetting');
         pomoBreakSetting.setAttribute("style", "display: none;");
+        let numberOfPomos = document.getElementById('numberOfPomos');
+        numberOfPomos.setAttribute("style", "display: none;");
 
         let userDateViewString = ($stateParams.id);
         currentUserId = getUserFromParams(userDateViewString);
@@ -594,6 +800,7 @@
         yearSlot.innerHTML = year;
         setTimeColors();
         detectHolidays();
+        detectOccasions();
 
       }
 

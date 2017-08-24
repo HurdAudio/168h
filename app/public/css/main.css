@@ -1473,7 +1473,28 @@ a.btn:hover {
 }
 
 #numberOfPomos {
-  display: none;
+  visibility: hidden;
+  float: left;
+}
+
+#numberOfPomos p {
+  float: left;
+  margin-right: 1em;
+  margin-left: 0;
+  margin-top: 2em;
+}
+
+#numberOfPomos h2 {
+  float: left;
+}
+
+#numberOfPomos button {
+  float: left;
+  margin-top: 3.4em;
+  width: 40px;
+  border-radius: 100%;
+  background-color: #00FF00;
+  opacity: 0.5;
 }
 
 #pomoCountdown {
@@ -1501,6 +1522,10 @@ a.btn:hover {
 }
 
 #setBreakInterval {
+  font-family: 'Space Mono', monospace;
+}
+
+#setNumberOfPomos {
   font-family: 'Space Mono', monospace;
 }
 
@@ -2315,4 +2340,55 @@ footer img {
   font-family: 'Asul', sans-serif;
   font-weight: 200;
   font-size: 36px;
+}
+
+.occasions {
+  background-image: url(../img/background-2044512_1920.jpg);
+  background-repeat: no-repeat;
+  align-content: center;
+  font-family: 'Asul', sans-serif;
+  font-weight: 200;
+  font-size: 36px;
+}
+
+.occasions a {
+  float: right;
+}
+
+.occasions h2 {
+  font-family: 'Alike Angular', serif;
+  font-size: 24px;
+}
+
+#addNewOccasion {
+  display: none;
+}
+
+#newOccasionsName {
+  font-family: 'Alike Angular', serif;
+  font-size: 18px;
+  width: 80%;
+  margin-left: 0.8em;
+}
+
+#isAnnualOccasion {
+  float: left;
+  height: 0.9em;
+}
+
+#addNewOccasion h4 {
+  font-family: 'Alike Angular', serif;
+  font-size: 18px;
+  margin-left: 0.4em;
+}
+
+#editDeleteOccasion {
+  display: none;
+}
+
+#editOccasionName {
+  font-family: 'Alike Angular', serif;
+  font-size: 18px;
+  width: 80%;
+  margin-left: 0.8em;
 }

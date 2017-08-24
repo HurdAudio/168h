@@ -504,6 +504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 26,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/dsc-0046-copy_orig.jpg',
+          title: 'Border Distilled',
+          artist: 'Mequitta Ahuja',
+          year: '2016',
+          rule: {
+            "monday": "[12, 20, 28, 7]",
+            "tuesday": "[14, 22, 1, 11]",
+            "wednesday": "[16, 24, 20, 11]",
+            "thursday": "[4, 12, 20, 28]",
+            "friday": "[6, 14, 22, 1]",
+            "saturday": "[11, 16, 24, 3]",
+            "sunday": "[10, 18, 26, 5]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 27,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/The_Artwork_of_Larry_D._Alexander_013.jpg',
+          title: 'Princess of the Blue',
+          artist: 'Larry D. Alexander',
+          year: '2007',
+          rule: {
+            "monday": "[10, 18, 26, 5]",
+            "tuesday": "[12, 20, 28, 7]",
+            "wednesday": "[14, 22, 1, 11]",
+            "thursday": "[16, 24, 20, 11]",
+            "friday": "[4, 12, 20, 28]",
+            "saturday": "[6, 14, 22, 1]",
+            "sunday": "[11, 16, 24, 3]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 28,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/303gallery-LaylahAli_h.jpg',
+          title: 'Untitled',
+          artist: 'Laylah Ali',
+          year: '2005 - 2007',
+          rule: {
+            "monday": "[12, 17, 25, 4]",
+            "tuesday": "[11, 19, 27, 6]",
+            "wednesday": "[13, 21, 29, 8]",
+            "thursday": "[15, 23, 2, 12]",
+            "friday": "[17, 25, 21, 12]",
+            "saturday": "[5, 13, 21, 29]",
+            "sunday": "[7, 15, 23, 2]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 29,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/JulesAllenPhotography-Rhythmology3.jpg',
+          title: 'Rhythmology Series',
+          artist: 'Jules Allen',
+          year: '2006',
+          rule: {
+            "monday": "[7, 15, 23, 2]",
+            "tuesday": "[12, 17, 25, 4]",
+            "wednesday": "[11, 19, 27, 6]",
+            "thursday": "[13, 21, 29, 8]",
+            "friday": "[15, 23, 2, 12]",
+            "saturday": "[17, 25, 21, 12]",
+            "sunday": "[5, 13, 21, 29]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 30,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/110106carverfallcolor1a.jpg',
+          title: 'Statue of George Washington Carver',
+          artist: 'Tina Allen',
+          year: 'xx - xxi Cent.',
+          rule: {
+            "monday": "[5, 13, 21, 29]",
+            "tuesday": "[7, 15, 23, 2]",
+            "wednesday": "[12, 17, 25, 4]",
+            "thursday": "[11, 19, 27, 6]",
+            "friday": "[13, 21, 29, 8]",
+            "saturday": "[15, 23, 2, 12]",
+            "sunday": "[17, 25, 21, 12]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {

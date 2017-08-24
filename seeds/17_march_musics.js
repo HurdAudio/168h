@@ -112,6 +112,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 7,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1989500445/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ditzner.bandcamp.com/album/free-flight',
+          a_string: 'free flight by MARILYN CRISPELL, ERWIN DITZNER, SEBASTIAN GRAMSS',
+          rule: {
+            "monday": "[6, 12, 18, 26]",
+            "tuesday": "[5, 11, 17, 25]",
+            "wednesday": "[4, 10, 16, 24]",
+            "thursday": "[3, 9, 15, 23]",
+            "saturday": "[2, 8, 14, 22]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 8,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1807806451/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ayler-records.bandcamp.com/album/can-you-hear-me',
+          a_string: 'Can You Hear Me? by Joëlle Léandre',
+          rule: {
+            "monday": "[2, 8, 14, 22]",
+            "tuesday": "[6, 12, 18, 26]",
+            "wednesday": "[5, 11, 17, 25]",
+            "thursday": "[4, 10, 16, 24]",
+            "saturday": "[3, 9, 15, 23]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 9,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2104549245/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bocian.bandcamp.com/album/scrumptious-sabotage',
+          a_string: 'Scrumptious Sabotage by Ikue Mori &amp; Maja S.K. Ratkje',
+          rule: {
+            "monday": "[3, 9, 15, 23]",
+            "tuesday": "[2, 8, 14, 22]",
+            "wednesday": "[6, 12, 18, 26]",
+            "thursday": "[5, 11, 17, 25]",
+            "saturday": "[4, 10, 16, 24]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {

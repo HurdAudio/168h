@@ -304,6 +304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 16,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/st-michael-and-the-dragon.jpg',
+          title: 'St. Michael and the dragon',
+          artist: 'Claricia',
+          year: '?',
+          rule: {
+            "monday": "[ 3, 13, 21, 31 ]",
+            "tuesday": "[ 2, 12, 20, 30 ]",
+            "wednesday": "[ 1, 11, 19, 29 ]",
+            "thursday": "[ 31, 10, 18, 28 ]",
+            "friday": "[ 30, 9, 17, 27 ]",
+            "saturday": "[ 29, 8, 16, 26 ]",
+            "sunday": "[ 28, 7, 15, 25 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 17,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/bild-no-84-1918.jpg',
+          title: 'Bild no. 84',
+          artist: 'Jacoba van Heemskerck',
+          year: '1918',
+          rule: {
+            "monday": "[ 28, 7, 15, 25 ]",
+            "tuesday": "[ 3, 13, 21, 31 ]",
+            "wednesday": "[ 2, 12, 20, 30 ]",
+            "thursday": "[ 1, 11, 19, 29 ]",
+            "friday": "[ 31, 10, 18, 28 ]",
+            "saturday": "[ 30, 9, 17, 27 ]",
+            "sunday": "[ 29, 8, 16, 26 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 18,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/stil-life.jpg',
+          title: 'Stil life',
+          artist: 'Mariam Aslamazian',
+          year: '?',
+          rule: {
+            "monday": "[ 29, 8, 16, 26 ]",
+            "tuesday": "[ 28, 7, 15, 25 ]",
+            "wednesday": "[ 3, 13, 21, 31 ]",
+            "thursday": "[ 2, 12, 20, 30 ]",
+            "friday": "[ 1, 11, 19, 29 ]",
+            "saturday": "[ 31, 10, 18, 28 ]",
+            "sunday": "[ 30, 9, 17, 27 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 19,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/mr-bumps-and-his-monkey-by-walter-de-la-mare-1942.jpg',
+          title: 'Mr. Bumps and His Monkey by Walter de la Mare',
+          artist: 'Dorothy Lathrop',
+          year: '1942',
+          rule: {
+            "monday": "[ 30, 9, 17, 27 ]",
+            "tuesday": "[ 29, 8, 16, 26 ]",
+            "wednesday": "[ 28, 7, 15, 25 ]",
+            "thursday": "[ 3, 13, 21, 31 ]",
+            "friday": "[ 2, 12, 20, 30 ]",
+            "saturday": "[ 1, 11, 19, 29 ]",
+            "sunday": "[ 31, 10, 18, 28 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 20,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/composition-19.jpg',
+          title: 'Composition 19',
+          artist: 'Sonia Delaunay',
+          year: '1930',
+          rule: {
+            "monday": "[ 31, 10, 18, 28 ]",
+            "tuesday": "[ 30, 9, 17, 27 ]",
+            "wednesday": "[ 29, 8, 16, 26 ]",
+            "thursday": "[ 28, 7, 15, 25 ]",
+            "friday": "[ 3, 13, 21, 31 ]",
+            "saturday": "[ 2, 12, 20, 30 ]",
+            "sunday": "[ 1, 11, 19, 29 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {

@@ -4,7 +4,7 @@ exports.up = function(knex, Promise) {
     table.increments().primary();
     table.integer('user_id').notNullable().defaultTo(1).references('id').inTable('users').onDelete('CASCADE').index();
     table.string('name').defaultTo(null);
-    table.date('day_of').notNullable().defaultTo('1970-01-01');
+    table.date('day_of').notNullable().defaultTo('1970-01-01T13:44:00.000Z');
     table.boolean('is_annual').notNullable().defaultTo(true);
     table.timestamps(true, true);
   });

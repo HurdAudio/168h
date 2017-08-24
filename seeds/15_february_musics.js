@@ -220,6 +220,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 13,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3006941689/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://destination-out.bandcamp.com/album/the-complete-in-berlin-88-box-set',
+          a_string: 'THE COMPLETE IN BERLIN &#39;88 (BOX SET) by CECIL TAYLOR',
+          rule: {
+            "monday": "[ 19, 13, 15, 20]",
+            "tuesday": "[ 12, 16, 18, 21]",
+            "wednesday": "[ 3, 7, 9, 13]",
+            "thursday": "[ 5, 9, 11, 15]",
+            "saturday": "[ 7, 11, 13, 17]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 14,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=836618089/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://oliverlake.bandcamp.com/album/lake-tchicai-osgood-westergaard',
+          a_string: 'Lake | Tchicai | Osgood | Westergaard by Oliver Lake, John Tchaicai, Kresten Osgood, Jonas Westergaard',
+          rule: {
+            "monday": "[ 8, 12, 14, 18]",
+            "tuesday": "[ 20, 14, 16, 21]",
+            "wednesday": "[ 13, 17, 19, 22]",
+            "thursday": "[ 4, 8, 10, 14]",
+            "saturday": "[ 6, 10, 12, 16]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 15,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1318856636/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://caribouband.bandcamp.com/album/caribou-vibration-ensemble-featuring-marshall-allen',
+          a_string: 'Caribou Vibration Ensemble Featuring Marshall Allen by Caribou Vibration Ensemble',
+          rule: {
+            "monday": "[ 6, 10, 12, 16]",
+            "tuesday": "[ 8, 12, 14, 18]",
+            "wednesday": "[ 20, 14, 16, 21]",
+            "thursday": "[ 13, 17, 19, 22]",
+            "saturday": "[ 4, 8, 10, 14]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {

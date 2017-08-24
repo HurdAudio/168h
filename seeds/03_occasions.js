@@ -9,7 +9,7 @@ exports.seed = function(knex, Promise) {
           id: 1,
           user_id: 1,
           name: 'Kay Lyn\'s birthday',
-          day_of: new Date('2018-01-21'),
+          day_of: new Date('2018-01-21T13:44:00.000Z'),
           is_annual: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -18,7 +18,7 @@ exports.seed = function(knex, Promise) {
           id: 2,
           user_id: 1,
           name: 'Nathan Grigg\'s birthday',
-          day_of: new Date('2018-01-17'),
+          day_of: new Date('2018-01-17T13:44:00.000Z'),
           is_annual: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -27,7 +27,7 @@ exports.seed = function(knex, Promise) {
           id: 3,
           user_id: 1,
           name: 'Birthday',
-          day_of: new Date('2018-03-08'),
+          day_of: new Date('2018-03-08T13:44:00.000Z'),
           is_annual: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -36,7 +36,7 @@ exports.seed = function(knex, Promise) {
           id: 4,
           user_id: 1,
           name: 'Jerrie Hurd\'s birthday',
-          day_of: new Date('2018-04-03'),
+          day_of: new Date('2018-04-03T13:44:00.000Z'),
           is_annual: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -45,7 +45,7 @@ exports.seed = function(knex, Promise) {
           id: 5,
           user_id: 1,
           name: 'Shannon\'s birthday',
-          day_of: new Date('2018-05-25'),
+          day_of: new Date('2018-05-28T13:44:00.000Z'),
           is_annual: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -54,7 +54,7 @@ exports.seed = function(knex, Promise) {
           id: 6,
           user_id: 1,
           name: 'Mason\'s birthday',
-          day_of: new Date('2018-03-13'),
+          day_of: new Date('2018-03-13T13:44:00.000Z'),
           is_annual: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -62,8 +62,8 @@ exports.seed = function(knex, Promise) {
         {
           id: 7,
           user_id: 1,
-          name: 'Day of unspeakable loss',
-          day_of: new Date('2018-06-03'),
+          name: 'Day of unbearable loss',
+          day_of: new Date('2018-06-03T13:44:00.000Z'),
           is_annual: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -72,7 +72,7 @@ exports.seed = function(knex, Promise) {
           id: 8,
           user_id: 1,
           name: 'Jon & Jerrie Anniversary',
-          day_of: new Date('2018-06-30'),
+          day_of: new Date('2018-06-30T13:44:00.000Z'),
           is_annual: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -81,7 +81,7 @@ exports.seed = function(knex, Promise) {
           id: 9,
           user_id: 1,
           name: 'Devin & Kay Anniversary',
-          day_of: new Date('2018-07-01'),
+          day_of: new Date('2018-07-01T13:44:00.000Z'),
           is_annual: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -90,7 +90,7 @@ exports.seed = function(knex, Promise) {
           id: 10,
           user_id: 1,
           name: 'Ethan\'s Birthday',
-          day_of: new Date('2017-08-15'),
+          day_of: new Date('2017-08-15T13:44:00.000Z'),
           is_annual: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -99,7 +99,7 @@ exports.seed = function(knex, Promise) {
           id: 11,
           user_id: 1,
           name: 'Alex\'s Birthday',
-          day_of: new Date('2004-10-19'),
+          day_of: new Date('2004-10-19T13:44:00.000Z'),
           is_annual: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -108,7 +108,7 @@ exports.seed = function(knex, Promise) {
           id: 12,
           user_id: 1,
           name: 'Nancy\'s Birthday',
-          day_of: new Date('2017-10-18'),
+          day_of: new Date('2017-10-18T13:44:00.000Z'),
           is_annual: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -117,7 +117,16 @@ exports.seed = function(knex, Promise) {
           id: 13,
           user_id: 1,
           name: 'Ryan\'s Birthday',
-          day_of: new Date('2017-11-01'),
+          day_of: new Date('2017-12-01T13:44:00.000Z'),
+          is_annual: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 14,
+          user_id: 1,
+          name: 'Jon\'s Birthday',
+          day_of: new Date('2017-07-28T13:44:00.000Z'),
           is_annual: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')

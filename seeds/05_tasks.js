@@ -10,7 +10,7 @@ exports.seed = function(knex, Promise) {
           user_id: 1,
           name: 'Write migration and seed files',
           user_notes: 'This app needs a database. A database needs data. Back end programming is sexy.',
-          due_date: new Date('2017-08-31'),
+          due_date: new Date('2017-08-31T13:44:00.000Z'),
           is_completed: false,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')

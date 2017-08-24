@@ -704,6 +704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 36,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/number-236.jpg',
+          title: 'Number 236',
+          artist: 'Anne Ryan',
+          year: '?',
+          rule: {
+            "monday": "[ 11, 12, 15, 17]",
+            "tuesday": "[14, 15, 17, 10]",
+            "wednesday": "[17, 19, 21, 22]",
+            "thursday": "[19, 21, 25, 28]",
+            "friday": "[21, 23, 24, 27]",
+            "saturday": "[6, 7, 9, 10]",
+            "sunday": "[9, 12, 13, 23]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 37,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/white-butterflies-sleep-on-a-violet-bed-1970.jpg',
+          title: 'White Butterflies Sleep on a Violet Bed',
+          artist: 'Walasse Ting',
+          year: '1970',
+          rule: {
+            "monday": "[ 9, 12, 13, 23]",
+            "tuesday": "[11, 12, 15, 17]",
+            "wednesday": "[14, 15, 17, 10]",
+            "thursday": "[17, 19, 21, 22]",
+            "friday": "[19, 21, 25, 28]",
+            "saturday": "[21, 23, 24, 27]",
+            "sunday": "[6, 7, 9, 10]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 38,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/homenaje-a-diana-iii-acr-lico-sobre-tablex-2014-122x-100.jpg',
+          title: 'Homenaje a Diana III',
+          artist: 'Requena Nozal',
+          year: '2014',
+          rule: {
+            "monday": "[ 6, 7, 9, 10]",
+            "tuesday": "[9, 12, 13, 23]",
+            "wednesday": "[11, 12, 15, 17]",
+            "thursday": "[14, 15, 17, 10]",
+            "friday": "[17, 19, 21, 22]",
+            "saturday": "[19, 21, 25, 28]",
+            "sunday": "[21, 23, 24, 27]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 39,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/untitled-1972.jpg',
+          title: 'Untitled',
+          artist: 'Rafa Nasiri',
+          year: '1972',
+          rule: {
+            "monday": "[ 21, 23, 24, 27]",
+            "tuesday": "[6, 7, 9, 10]",
+            "wednesday": "[9, 12, 13, 23]",
+            "thursday": "[11, 12, 15, 17]",
+            "friday": "[14, 15, 17, 10]",
+            "saturday": "[17, 19, 21, 22]",
+            "sunday": "[19, 21, 25, 28]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 40,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/interior-temporary-factory-day.jpg',
+          title: 'INTERIOR, TEMPORARY FACTORY - DAY',
+          artist: 'Marc Horowitz',
+          year: '2015',
+          rule: {
+            "monday": "[ 19, 21, 25, 28]",
+            "tuesday": "[21, 23, 24, 27]",
+            "wednesday": "[6, 7, 9, 10]",
+            "thursday": "[9, 12, 13, 23]",
+            "friday": "[11, 12, 15, 17]",
+            "saturday": "[14, 15, 17, 10]",
+            "sunday": "[17, 19, 21, 22]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {

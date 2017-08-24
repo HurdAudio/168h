@@ -30,15 +30,15 @@
       </li>
       <li id="pomoBreakSetting">
         <p>Break Interval:</p>
-        <button>-</button>
+        <button id="decreaseBreakInterval">-</button>
         <h2 id="setBreakInterval"></h2>
-        <button>+</button>
+        <button id="increaseBreakInterval">+</button>
       </li>
       <li id="numberOfPomos">
         <p>Number of Pomos:</p>
-        <button>-</button>
-        <h2>4</h2>
-        <button>+</button>
+        <button id="decreaseNumberOfPomos">-</button>
+        <h2 id="setNumberOfPomos">4</h2>
+        <button id="increaseNumberOfPomos">+</button>
       </li>
       <li id="pomoCountdown">
         <h1>25:00</h1>
@@ -342,7 +342,40 @@
       </div>
     </main>
     <div class="occasions">
-      <p>Birthday: Ian Smith</p>
+      <h2 id="occasionsTitle">Occasions:</h2>
+      <div id="occasionsList">
+        <main ng-repeat="occasion in $ctrl.occasions | orderBy : $ctrl.sortBy">
+          <p ng-click="$ctrl.editOccasion(occasion.id)" id="{{occasion.name + occasion.id}}"> - {{occasion.name}}</p>
+        </main>
+      </div>
+      <a href="" class="btn" id="addOccasionButton" ng-click="$ctrl.addOccasionToDay()">add</a>
+      <div id="addNewOccasion">
+        <form id="newOccasionForm" class="pure-form">
+          <fieldset class="pure-group">
+            <input id="newOccasionsName" type="text" class="pure-input-1" placeholder="occasion">
+            <h4>Occurs Annually:</h4>
+            <input id="isAnnualOccasion" type="checkbox" class="pure-input-1" checked>
+
+
+          </fieldset>
+        </form>
+        <a href="" id="submitOccasionButton" class="btn" ng-click="$ctrl.submitOccasionToDay()">submit</a>
+
+      </div>
+      <div id="editDeleteOccasion">
+        <form id="editExistingOccasionForm" class="pure-form">
+          <fieldset class="pure-group">
+            <input id="editOccasionName" type="text" class="pure-input-1">
+
+
+          </fieldset>
+        </form>
+        <a href="" id="deleteOccasionButton" class="btn">delete</a>
+        <a href="" id="editOccasionButton" class="btn">edit</a>
+
+      </div>
+      <br>
+      <br>
     </div>
     <div id="daySchedule">
       <h3>Schedule</h3>

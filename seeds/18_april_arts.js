@@ -124,6 +124,86 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 7,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/folk-art-american-flag-and-baseball-mitt-garry-gay.jpg',
+          title: 'Folk Art American Flag And Baseball Mitt',
+          artist: 'Garry Gay',
+          year: 'XX cent.',
+          rule: {
+            "monday": "[ 31, 6, 12, 18 ]",
+            "tuesday": "[ 30, 5, 11, 17 ]",
+            "wednesday": "[ 29, 4, 10, 16 ]",
+            "thursday": "[ 28, 3, 9, 15 ]",
+            "friday": "[ 27, 2, 8, 14 ]",
+            "saturday": "[ 2, 8, 14, 20 ]",
+            "sunday": "[ 16, 7, 13, 19 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 8,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/holland-gallery-alex-rodriguez-steven-baseball-art.jpg',
+          title: 'Alex Rodriguez Baseball',
+          artist: 'Stephen Holland',
+          year: 'XXI cent.',
+          rule: {
+            "monday": "[ 16, 7, 13, 19 ]",
+            "tuesday": "[ 31, 6, 12, 18 ]",
+            "wednesday": "[ 30, 5, 11, 17 ]",
+            "thursday": "[ 29, 4, 10, 16 ]",
+            "friday": "[ 28, 3, 9, 15 ]",
+            "saturday": "[ 27, 2, 8, 14 ]",
+            "sunday": "[ 2, 8, 14, 20 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 9,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/american-baseball-garry-gay.jpg',
+          title: 'American Baseball',
+          artist: 'Garry Gay',
+          year: 'XX - XXI Cent.',
+          rule: {
+            "monday": "[ 2, 8, 14, 20 ]",
+            "tuesday": "[ 16, 7, 13, 19 ]",
+            "wednesday": "[ 31, 6, 12, 18 ]",
+            "thursday": "[ 30, 5, 11, 17 ]",
+            "friday": "[ 29, 4, 10, 16 ]",
+            "saturday": "[ 28, 3, 9, 15 ]",
+            "sunday": "[ 27, 2, 8, 14 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 10,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/28f0098012fff59d1d91df64b6713aa1--dodgers-baseball-baseball-players.jpg',
+          title: 'Jackie Robinson',
+          artist: 'Graig Kreindler',
+          year: 'XX - XXI Cent.',
+          rule: {
+            "monday": "[ 27, 2, 8, 14 ]",
+            "tuesday": "[ 2, 8, 14, 20 ]",
+            "wednesday": "[ 16, 7, 13, 19 ]",
+            "thursday": "[ 31, 6, 12, 18 ]",
+            "friday": "[ 30, 5, 11, 17 ]",
+            "saturday": "[ 29, 4, 10, 16 ]",
+            "sunday": "[ 28, 3, 9, 15 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {

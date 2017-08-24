@@ -328,6 +328,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 19,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3901965012/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://karlrecords.bandcamp.com/album/silver-apples-of-the-moon',
+          a_string: 'Silver Apples Of The Moon by MORTON SUBOTNICK',
+          rule: {
+            "monday": "[ 9, 16, 18, 17]",
+            "tuesday": "[7, 11, 13, 17]",
+            "wednesday": "[9, 16, 18, 17]",
+            "thursday": "[7, 11, 13, 18]",
+            "saturday": "[3, 7, 9, 13]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 20,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=566335179/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://calderquartet.bandcamp.com/album/terry-riley-two-early-works',
+          a_string: 'Terry Riley - Two Early Works by Calder Quartet',
+          rule: {
+            "monday": "[ 3, 7, 9, 13]",
+            "tuesday": "[9, 16, 18, 17]",
+            "wednesday": "[7, 11, 13, 17]",
+            "thursday": "[9, 16, 18, 17]",
+            "saturday": "[7, 11, 13, 18]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 21,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2440156746/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://opengraveswithstuartdempster.bandcamp.com/album/flightpatterns-2',
+          a_string: 'flightpatterns by Open Graves with Stuart Dempster',
+          rule: {
+            "monday": "[ 8, 12, 14, 19]",
+            "tuesday": "[4, 8, 10, 14]",
+            "wednesday": "[10, 17, 19, 18]",
+            "thursday": "[8, 12, 14, 18]",
+            "saturday": "[10, 17, 19, 18]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
