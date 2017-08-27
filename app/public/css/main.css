@@ -465,7 +465,6 @@ a.btn:hover {
   margin-top: 0;
   text-align: left;
   text-rendering: geometricPrecision;
-  border: solid #000000 3px;
   padding-left: 0.1em;
   padding-top: 0;
   overflow: scroll;
@@ -607,23 +606,29 @@ a.btn:hover {
 }
 
 #focusPanel {
-  width: 30%;
-  height: 565px;
-  overflow: scroll;
-
-  margin-left: 0.1em;
-  border: solid #000000 3px;
-  background-color: #eeeeee;
-}
-
-#goalsPanel {
-  width: 30%;
+  width: 30.5%;
   height: 41em;
   overflow: scroll;
 
   margin-left: 0.1em;
-  border: solid #000000 3px;
   background-color: #eeeeee;
+}
+
+#schedulePanel {
+  height: 41em;
+  overflow: scroll;
+
+  margin-left: 0.1em;
+  background-color: #eeeeee;
+}
+
+#goalsPanel {
+  width: 30.5%;
+  height: 41em;
+  overflow: scroll;
+
+  margin-left: 0.1em;
+
 }
 
 #daytimer h4 {
@@ -690,7 +695,6 @@ a.btn:hover {
   background-color: pink;
   margin-top: 0;
   padding-top: 0;
-  border-top: solid pink 1px;
 }
 
 .holidays img {
@@ -711,20 +715,22 @@ a.btn:hover {
   font-size: 24px;
   text-align: left;
   padding-left: 0.5em;
-  background-color: #cc9900;
-  border-top: solid black 1px;
-  border-bottom: solid black 1px;
-  padding-bottom: 0.5em;
+  background: ##22bc44;
+  background: -webkit-linear-gradient(-45deg, #22bc44, #cc9900); background: -o-linear-gradient(-45deg, #22bc44, #cc9900);   background: -moz-linear-gradient(-45deg, #22bc44, #cc9900); background: linear-gradient(-45deg, #22bc44, #cc9900);
+  /*background-color: #cc9900;*/
+
+  padding-bottom: 1.5em;
 }
 
 .billsAndTasks p {
+  margin-left: 1.7em;
 }
 
 .billsAndTasks a {
-  height: 0.4em;
+  /* height: 0.4em;
   padding-bottom: 2.4em;
   padding-top: 0;
-  /*font-family: 'Concert One', cursive;
+  font-family: 'Concert One', cursive;
   font-size: 24px;
   border: solid black 3px;
   border-radius: 5%;
@@ -736,6 +742,7 @@ a.btn:hover {
   margin-left: 10em;
   height: 24px;
   width: 140px;*/
+
 }
 
 #sleepGoals {
@@ -1498,7 +1505,33 @@ a.btn:hover {
 }
 
 #pomoCountdown {
-  display: none;
+  visibility: hidden;
+  float: left;
+}
+
+#pomoCountdown p {
+  float: right;
+  margin-left: 5em;
+  margin-top: 0;
+}
+
+#pomoCountdown h2 {
+  font-family: 'Space Mono', monospace;
+  float: left;
+  margin-bottom: 0;
+}
+
+#pomoCountdown button {
+  font-size: 18px;
+  background-color: #ddff11;
+  opacity: 0.9;
+  border-radius: 10%;
+  margin-left: 0;
+  float: left;
+}
+
+#pomoCountdown p {
+  float:left;
 }
 
 #breakCountdown {
@@ -2391,4 +2424,57 @@ footer img {
   font-size: 18px;
   width: 80%;
   margin-left: 0.8em;
+}
+
+.paidPal {
+  display: none;
+}
+
+.paidPal p {
+  font-family: 'Alike Angular', serif;
+  font-size: 18px;
+  margin-left: 3em;
+}
+
+.paidPal number[type=number] {
+  margin-left: 3em;
+  width: 40%;
+}
+
+.billInfos {
+  display: none;
+}
+
+#addBillButton {
+  float: right;
+  margin-right: 0.5em;
+}
+
+#billEntryForm {
+  display: none;
+  font-family: 'Alike Angular', serif;
+  font-size: 18px;
+  margin-left: 3em;
+}
+
+#billEntryForm input[type=text] {
+  margin-left: 0.4em;
+  width: 80%;
+}
+
+#billEntryForm input[type=number] {
+  margin-left: 0.4em;
+  width: 80%;
+}
+
+#billEntryForm input[type=date] {
+  margin-left: 0.4em;
+  width: 80%;
+}
+
+#billEntryErrorField {
+  font-family: 'Alike Angular', serif;
+  font-size: 24px;
+  margin-left: 1em;
+  color: #ff0000;
 }

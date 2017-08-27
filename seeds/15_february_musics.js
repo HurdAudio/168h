@@ -274,6 +274,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 16,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2383996781/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://noahhoward.bandcamp.com/album/noah-howard-quartet',
+          a_string: 'Noah Howard Quartet by Noah Howard',
+          rule: {
+            "monday": "[ 4, 8, 10, 14]",
+            "tuesday": "[ 6, 10, 12, 16]",
+            "wednesday": "[ 8, 12, 14, 18]",
+            "thursday": "[ 20, 14, 16, 21]",
+            "saturday": "[ 13, 17, 19, 22]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 17,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=362621699/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ronnieboykins.bandcamp.com/album/the-will-come-is-now',
+          a_string: 'The Will Come Is Now by Ronnie Boykins',
+          rule: {
+            "monday": "[13, 17, 19, 22]",
+            "tuesday": "[ 4, 8, 10, 14]",
+            "wednesday": "[ 6, 10, 12, 16]",
+            "thursday": "[ 8, 12, 14, 18]",
+            "saturday": "[ 20, 14, 16, 21]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 18,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=840979423/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://franklowe.bandcamp.com/album/the-loweski',
+          a_string: 'The Loweski by Frank Lowe',
+          rule: {
+            "monday": "[20, 14, 16, 21]",
+            "tuesday": "[ 13, 17, 19, 22]",
+            "wednesday": "[ 4, 8, 10, 14]",
+            "thursday": "[ 6, 10, 12, 16]",
+            "saturday": "[ 8, 12, 14, 18]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {

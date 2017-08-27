@@ -166,6 +166,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 10,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1527382468/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://lindaoh.bandcamp.com/album/sun-pictures',
+          a_string: 'Sun Pictures by Linda Oh',
+          rule: {
+            "monday": "[4, 10, 16, 24]",
+            "tuesday": "[3, 9, 15, 23]",
+            "wednesday": "[2, 8, 14, 22]",
+            "thursday": "[6, 12, 18, 26]",
+            "saturday": "[5, 11, 17, 25]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 11,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3065200155/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://aphoniarecordings.bandcamp.com/album/sub-rosa',
+          a_string: 'sub-Rosa by Amy Denio',
+          rule: {
+            "monday": "[5, 11, 17, 25]",
+            "tuesday": "[4, 10, 16, 24]",
+            "wednesday": "[3, 9, 15, 23]",
+            "thursday": "[2, 8, 14, 22]",
+            "saturday": "[6, 12, 18, 26]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 12,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1571887307/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://amydenio.bandcamp.com/album/make-it-funky-god-2',
+          a_string: 'Make It Funky God by The Billy Tipton Memorial Sax Quartet',
+          rule: {
+            "monday": "[6, 12, 18, 26]",
+            "tuesday": "[5, 11, 17, 25]",
+            "wednesday": "[4, 10, 16, 24]",
+            "thursday": "[3, 9, 15, 23]",
+            "saturday": "[2, 8, 14, 22]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {

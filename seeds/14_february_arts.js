@@ -604,6 +604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 31,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/symbolAllston.jpg',
+          title: 'Symbol',
+          artist: 'Charles Alston',
+          year: '1953',
+          rule: {
+            "monday": "[17, 25, 21, 12]",
+            "tuesday": "[5, 13, 21, 29]",
+            "wednesday": "[7, 15, 23, 2]",
+            "thursday": "[12, 17, 25, 4]",
+            "friday": "[11, 19, 27, 6]",
+            "saturday": "[13, 21, 29, 8]",
+            "sunday": "[15, 23, 2, 12]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 32,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/IdRatherTwoStepThanWaltz.jpg',
+          title: 'I\'d Rather Two-Step Than Waltz',
+          artist: 'Amalia Amaki',
+          year: '2001',
+          rule: {
+            "monday": "[15, 23, 2, 12]",
+            "tuesday": "[17, 25, 21, 12]",
+            "wednesday": "[5, 13, 21, 29]",
+            "thursday": "[7, 15, 23, 2]",
+            "friday": "[12, 17, 25, 4]",
+            "saturday": "[11, 19, 27, 6]",
+            "sunday": "[13, 21, 29, 8]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 33,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/932_my_mother_was_the_greatest_dancer1.90b7m3itx6w4wsg88wkg84wgw.6ylu316ao144c8c4woosog48w.th.jpeg',
+          title: 'My Mother Was the Greatest Dancer',
+          artist: 'Emma Amos',
+          year: '2009',
+          rule: {
+            "monday": "[13, 21, 29, 8]",
+            "tuesday": "[15, 23, 2, 12]",
+            "wednesday": "[17, 25, 21, 12]",
+            "thursday": "[5, 13, 21, 29]",
+            "friday": "[ 7, 15, 23, 2 ]",
+            "saturday": "[12, 17, 25, 4]",
+            "sunday": "[11, 19, 27, 6]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 34,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/7795.jpg',
+          title: 'Corner Pocket',
+          artist: 'Benny Andrews',
+          year: '1989',
+          rule: {
+            "monday": "[11, 19, 27, 6]",
+            "tuesday": "[13, 21, 29, 8]",
+            "wednesday": "[15, 23, 2, 12]",
+            "thursday": "[17, 25, 21, 12]",
+            "friday": "[ 5, 13, 21, 29 ]",
+            "saturday": "[7, 15, 23, 2]",
+            "sunday": "[12, 17, 25, 4]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 35,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/hqdefault.jpg',
+          title: 'Walking on Thin Ice',
+          artist: 'Edgar Arceneaux',
+          year: '2003',
+          rule: {
+            "monday": "[13, 18, 24, 5]",
+            "tuesday": "[12, 20, 28, 7]",
+            "wednesday": "[14, 22, 1, 9]",
+            "thursday": "[16, 24, 3, 13]",
+            "friday": "[ 18, 26, 22, 13 ]",
+            "saturday": "[6, 14, 22, 1]",
+            "sunday": "[8, 16, 24, 3]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {

@@ -12,7 +12,7 @@
   var pomoInterval = 25;
   var pomoBreakInterval = 5;
   var numberOfPomo = 4;
-  var pomoStateArr = [ 'pomoTimerSetting', 'pomoBreakSetting', 'numberOfPomos'];
+  var pomoStateArr = [ 'pomoTimerSetting', 'pomoBreakSetting', 'numberOfPomos', 'pomoCountdown'];
   var pomoState = 0;
 
   function getCookie (name) {
@@ -51,6 +51,210 @@
       vm.addOccasionToDay = addOccasionToDay;
       vm.submitOccasionToDay = submitOccasionToDay;
       vm.editOccasion = editOccasion;
+      vm.payBillButton = payBillButton;
+      vm.billInfo = billInfo;
+      vm.addBillToDay = addBillToDay;
+
+      function addBillToDay() {
+        let addBillButton = document.getElementById('addBillButton');
+        let billEntryForm = document.getElementById('billEntryForm');
+        let billEntryErrorField = document.getElementById('billEntryErrorField');
+        let billEntryCancelButton = document.getElementById('billEntryCancelButton');
+        let billSubmitButton = document.getElementById('billSubmitButton');
+        let enterBillName = document.getElementById('enterBillName');
+        let enterAmountDue = document.getElementById('enterAmountDue');
+        let enterDueDate = document.getElementById('enterDueDate');
+        let enterBalance = document.getElementById('enterBalance');
+        let enterDebtHolder = document.getElementById('enterDebtHolder');
+        let enterBillAddressLine1 = document.getElementById('enterBillAddressLine1');
+        let enterBillAddressLine2 = document.getElementById('enterBillAddressLine2');
+        let enterBillAddressCity = document.getElementById('enterBillAddressCity');
+        let enterBillAddressState = document.getElementById('enterBillAddressState');
+        let enterBillAddressZip = document.getElementById('enterBillAddressZip');
+
+        addBillButton.setAttribute("style", "display: none;");
+        billEntryForm.setAttribute("style", "display: initial;");
+
+        billSubmitButton.addEventListener('click', ()=>{
+          let billSubmit = {};
+          if (enterBillName.value) {
+            billSubmit.name = enterBillName.value;
+            if (enterAmountDue.value) {
+              billSubmit.amount_due = enterAmountDue.value;
+              if (enterDueDate.value) {
+                billSubmit.due_date = new Date(enterDueDate.value + 'T13:44:00.000Z');
+                billSubmit.clean_date = getCleanDate(enterDueDate.value);
+                billEntryErrorField.innerHTML = '';
+                if (enterBalance.value) {
+                  billSubmit.balance = enterBalance.value;
+                }
+                if (enterDebtHolder.value) {
+                  billSubmit.pay_to = enterDebtHolder.value;
+                }
+                if (enterBillAddressLine1.value) {
+                  billSubmit.address_line1 = enterBillAddressLine1.value;
+                }
+                if (enterBillAddressLine2.value) {
+                  billSubmit.address_line2 = enterBillAddressLine2.value;
+
+                }
+                if (enterBillAddressCity.value) {
+                  billSubmit.city = enterBillAddressCity.value;
+                }
+                if (enterBillAddressState.value) {
+                  billSubmit.state = enterBillAddressState.value;
+                }
+                if (enterBillAddressZip.value) {
+                  billSubmit.zip = enterBillAddressZip.value;
+                }
+                billSubmit.is_paid = false;
+                billSubmit.amount_paid = 0.00;
+                billSubmit.user_id = currentUserId;
+                $http.post('/bills', billSubmit)
+                .then(newBillData=>{
+                  let newBill = newBillData.data;
+                  newBill[0].clean_date = billSubmit.clean_date;
+                  switch(getBillTense(viewDate, newBill.due_date)) {
+                    case ('past'):
+
+                      if (days === 1) {
+                        newBill[0].due_state = ' was due yesterday.';
+                      } else {
+                        newBill[0].due_state = ' is ' + days + '  days overdue!';
+                      }
+                      break;
+                    case ('present'):
+
+                      newBill[0].due_state = ' is DUE today!';
+                      break;
+                    case ('future'):
+                      days = getFutureDueDate(viewDate, newBill[0].due_date);
+                      if (days === 1) {
+                        newBill[0].due_state = ' is due tomorrow.';
+                      } else {
+                        newBill[0].due_state = ' is due in ' + days + ' days.';
+                      }
+                      break;
+                    default:
+                      console.log('non-standard state');
+                  }
+                  vm.bills.push(newBill[0]);
+
+                  billEntryForm.setAttribute("style", "display: none;");
+                  billEntryErrorField.innerHTML = '';
+                  addBillButton.setAttribute("style", "display: initial; position: relative; display: block; width: 120px; margin: 10px auto; padding: 10px; border-radius: 2%; background-color: #ffff77; border: 1px solid #0000cc; font-family: 'Asul', sans-serif; font-size: 24px; color: #000; text-align: center; text-decoration: none; transform-style: flat; transition: all 250ms ease-out; &:before, &:after {content: \"\"; position: absolute; z-index: -5; transition: all 250ms ease-out;}");
+                  enterBillName.value = '';
+                  enterAmountDue.value = '';
+                  enterDueDate.value = '';
+                  enterBalance.value = '';
+                  enterDebtHolder.value = '';
+                  enterBillAddressLine1.value = '';
+                  enterBillAddressLine2.value = '';
+                  enterBillAddressCity.value = '';
+                  enterBillAddressState.value = '';
+                  enterBillAddressZip.value = '';
+                  billEntryErrorField.value = '';
+
+                  billEntryCancelButton.removeEventListener('click', ()=>{
+                    console.log('tidy');
+                  });
+                  billSubmitButton.removeEventListener('click', ()=>{
+                    console.log('tidy');
+                  });
+                });
+
+              } else {
+                billEntryErrorField.innerHTML = 'Please enter a due date';
+              }
+            } else {
+              billEntryErrorField.innerHTML = 'Please enter amount due';
+            }
+          } else {
+            billEntryErrorField.innerHTML = 'Please enter bill name';
+          }
+
+        });
+
+        billEntryCancelButton.addEventListener('click', ()=>{
+          billEntryForm.setAttribute("style", "display: none;");
+          billEntryErrorField.innerHTML = '';
+          addBillButton.setAttribute("style", "display: initial; position: relative; display: block; width: 120px; margin: 10px auto; padding: 10px; border-radius: 2%; background-color: #ffff77; border: 1px solid #0000cc; font-family: 'Asul', sans-serif; font-size: 24px; color: #000; text-align: center; text-decoration: none; transform-style: flat; transition: all 250ms ease-out; &:before, &:after {content: \"\"; position: absolute; z-index: -5; transition: all 250ms ease-out;}");
+
+          billEntryCancelButton.removeEventListener('click', ()=>{
+            console.log('tidy');
+          });
+          billSubmitButton.removeEventListener('click', ()=>{
+            console.log('tidy');
+          });
+        });
+      }
+
+      function billInfo(billId) {
+        $http.get(`/bills/${billId}`)
+        .then(theBillData=>{
+          let theBill = theBillData.data;
+          console.log(theBill);
+          let infoButton = document.getElementById(theBill.name + theBill.id + theBill.name + theBill.id +theBill.name);
+          let infoDiv = document.getElementById(theBill.name + theBill.id + theBill.name + theBill.id);
+          let exitButton = document.getElementById(theBill.id + theBill.name + theBill.name + theBill.name);
+
+
+          infoDiv.setAttribute("style", "display: initial;");
+          infoButton.setAttribute("style", "display: none;");
+          exitButton.addEventListener('click', ()=>{
+            infoDiv.setAttribute("style", "display: none;");
+            infoButton.setAttribute("style", "display: initial; position: relative; display: block; width: 120px; margin: 10px auto; padding: 10px; border-radius: 2%; background-color: #ffff77; border: 1px solid #0000cc; font-family: 'Asul', sans-serif; font-size: 24px; color: #000; text-align: center; text-decoration: none; transform-style: flat; transition: all 250ms ease-out; &:before, &:after {content: \"\"; position: absolute; z-index: -5; transition: all 250ms ease-out;}");
+            exitButton.removeEventListener('click', ()=>{
+              console.log('removed event listener');
+            });
+          });
+        });
+      }
+
+      function payBillButton(billId) {
+        console.log(billId);
+        $http.get(`/bills/${billId}`)
+        .then(theBillData=>{
+          let theBill = theBillData.data;
+          let paymentAmount = document.getElementById(theBill.user_id + theBill.name + theBill.id);
+          let firstPayButton = document.getElementById(theBill.name + theBill.user_id + theBill.id);
+          let paidPalDiv = document.getElementById(theBill.id + theBill.name);
+          let secondPayButton = document.getElementById(theBill.name + theBill.id + theBill.name);
+          let cancelKey = document.getElementById(theBill.name + theBill.name + theBill.id);
+          firstPayButton.setAttribute("style", "display:none;");
+          paidPalDiv.setAttribute("style", "display: initial;");
+          paymentAmount.value = theBill.amount_due;
+          paymentAmount.setAttribute("style", "margin-left: 4em; width: 40%;");
+          cancelKey.addEventListener('click', ()=>{
+            firstPayButton.setAttribute("style", "display: initial; position: relative; display: block; width: 120px; margin: 10px auto; padding: 10px; border-radius: 2%; background-color: #ffff77; border: 1px solid #0000cc; font-family: 'Asul', sans-serif; font-size: 24px; color: #000; text-align: center; text-decoration: none; transform-style: flat; transition: all 250ms ease-out; &:before, &:after {content: \"\"; position: absolute; z-index: -5; transition: all 250ms ease-out;}");
+            paidPalDiv.setAttribute("style", "display: none; align-self: center;");
+            cancelKey.removeEventListener('click', ()=>{
+              console.log('don\'t really need event listener here');
+              secondPayButton.removeEventListener('click', ()=>{
+                console.log('safety');
+              });
+            });
+          });
+          secondPayButton.addEventListener('click', ()=>{
+            let patchObject = {};
+            patchObject.amount_paid = paymentAmount.value;
+            patchObject.is_paid = true;
+            patchObject.date_paid = new Date();
+            $http.patch(`/bills/${billId}`, patchObject)
+            .then(data=>{
+              let patchedBill = data.data;
+              let paidBillField = document.getElementById(theBill.name + theBill.id);
+              console.log(patchedBill);
+              paidPalDiv.setAttribute("style", "display: none;");
+              paidBillField.parentNode.removeChild(paidBillField);
+            });
+
+            cancelKey.removeEventListener('click', ()=>{
+              console.log('tidy');
+            });
+          });
+        });
+      }
 
       function editOccasion (occasionID) {
         console.log(occasionID);
@@ -352,12 +556,39 @@
         let numberOfPomos = document.getElementById('numberOfPomos');
         let decreaseBreakInterval = document.getElementById('decreaseBreakInterval');
         let increaseBreakInterval = document.getElementById('increaseBreakInterval');
+        let pomoCountdown = document.getElementById('pomoCountdown');
+        let decreaseNumberOfPomos = document.getElementById('decreaseNumberOfPomos');
+        let increaseNumberOfPomos = document.getElementById('increaseNumberOfPomos');
+        let setNumberOfPomos = document.getElementById('setNumberOfPomos');
 
-
+        pomoCountdown.setAttribute("style", "display:none;");
 
         setPomoInterval.innerHTML = pomoInterval;
         setBreakInterval.innerHTML = pomoBreakInterval;
+        setNumberOfPomos.innerHTML = numberOfPomo;
 
+        increaseNumberOfPomos.addEventListener('click', ()=>{
+          ++numberOfPomo;
+          if (numberOfPomo === 8) {
+            increaseNumberOfPomos.setAttribute("style", "display: none;");
+            decreaseNumberOfPomos.setAttribute("style", "display: initial;");
+          } else {
+            increaseNumberOfPomos.setAttribute("style", "display: initial;");
+            decreaseNumberOfPomos.setAttribute("style", "display: initial;");
+          }
+          setNumberOfPomos.innerHTML = numberOfPomo;
+        });
+        decreaseNumberOfPomos.addEventListener('click', ()=>{
+          --numberOfPomo;
+          if (numberOfPomo === 1) {
+            increaseNumberOfPomos.setAttribute("style", "display: initial;");
+            decreaseNumberOfPomos.setAttribute("style", "display: none;");
+          } else {
+            increaseNumberOfPomos.setAttribute("style", "display: initial;");
+            decreaseNumberOfPomos.setAttribute("style", "display: initial;");
+          }
+          setNumberOfPomos.innerHTML = numberOfPomo;
+        });
         decreaseBreakInterval.addEventListener('click', ()=>{
           --pomoBreakInterval;
           if (pomoBreakInterval === 1) {
@@ -405,6 +636,8 @@
             decreasePomoInterval.setAttribute("style", "display: initial;");
           }
         });
+
+
         pomoNext.addEventListener('click', ()=>{
           let timer = 1;
           let currentState = pomoState;
@@ -435,10 +668,12 @@
               break;
             case ('numberOfPomos'):
               numberOfPomos.setAttribute("style", "visibility: hidden; opacity: 0; transition: visibility 0s " + timer + "s, opacity " + timer + "s linear;");
+              pomoNext.setAttribute("style", "visibility: hidden; opacity: 0; transition: visibility 0s " + timer + "s, opacity " + timer + "s linear;");
               setTimeout(()=>{
                 numberOfPomos.setAttribute("style", "display: none;");
-                pomoTimerSetting.setAttribute("style", "display: initial;");
-                pomoTimerSetting.setAttribute("style", "visibility: visible; opacity: 1; transition: opacity " + timer + "s linear;");
+                pomoNext.setAttribute("style", "visibility: visible; display: none;");
+                pomoCountdown.setAttribute("style", "display: initial;");
+                pomoCountdown.setAttribute("style", "visibility: visible; opacity: 1; transition: opacity " + timer + "s linear;");
               }, (timer*1000));
               break;
             default:
@@ -487,6 +722,15 @@
                 numberOfPomos.setAttribute("style", "display: none;");
                 pomoBreakSetting.setAttribute("style", "display: initial;");
                 pomoBreakSetting.setAttribute("style", "visibility: visible; opacity: 1; transition: opacity " + timer + "s linear;");
+              }, (timer*1000));
+              break;
+            case ('pomoCountdown'):
+              pomoCountdown.setAttribute("style", "visibility: hidden; opacity: 0; transition: visibility 0s " + timer + "s, opacity " + timer + "s linear;");
+              pomoNext.setAttribute("style", "display: initial;");
+              setTimeout(()=>{
+                pomoCountdown.setAttribute("style", "display: none;");
+                numberOfPomos.setAttribute("style", "display: initial;");
+                numberOfPomos.setAttribute("style", "visibility: visible; opacity: 1; transition: opacity " + timer + "s linear;");
               }, (timer*1000));
               break;
             default:
@@ -725,7 +969,6 @@
 
 
           }
-          console.log(holidayArray);
           vm.holidays = holidayArray;
           //art override_content
           //music override_content
@@ -757,6 +1000,257 @@
           //   occasionsTitle.innerHTML = '';
           // }
           vm.occasions = occasionArray;
+        });
+      }
+
+      function sameDay(date1, date2) {
+        let result = true;
+        let comp1 = new Date(date1);
+        let comp2 = new Date(date2);
+        console.log('here!!');
+        if (comp1.getFullYear() !== comp2.getFullYear()) {
+          result = false;
+        }
+        if (comp1.getMonth() !== comp2.getMonth()) {
+          result = false;
+        }
+        if (comp1.getDate() !== comp2.getDate()) {
+          result = false;
+        }
+        console.log(result);
+        return(result);
+      }
+
+      function getOverdueStatus(viewingDate, due) {
+        let day = new Date(viewingDate);
+        let dueDay = new Date(due);
+        let result = 0;
+        do {
+          ++result;
+          day.setDate(day.getDate()-1);
+        } while(!sameDay(day, dueDay));
+
+        return(result);
+      }
+
+      function getFutureDueDate(viewingDate, due) {
+        let day = new Date(viewingDate);
+        let dueDay = new Date(due);
+        let result = 0;
+        do {
+          ++result;
+          day.setDate(day.getDate()+1);
+        } while(!sameDay(day, dueDay));
+
+        return(result);
+      }
+
+      function getBillTense(calendarDate, billDate) {
+        let compareToDate = new Date(calendarDate);
+        let billDue = new Date(billDate);
+        let tense = '';
+        if (compareToDate.getFullYear() !== billDue.getFullYear()) {
+          if (compareToDate.getFullYear() > billDue.getFullYear()) {
+            tense = 'past';
+          } else {
+            tense = 'future';
+          }
+        } else if (compareToDate.getMonth() !== billDue.getMonth()) {
+          if (compareToDate.getMonth() > billDue.getMonth()) {
+            tense = 'past';
+          } else {
+            tense = 'future';
+          }
+        } else if (compareToDate.getDate() !== billDue.getDate()) {
+          if (compareToDate.getDate() > billDue.getDate()) {
+            tense = 'past';
+          } else {
+            tense = 'future';
+          }
+        } else {
+          tense = 'present';
+        }
+        console.log(tense);
+        return(tense);
+      }
+
+      function overdueFlash(elem) {
+        elem.setAttribute("style", "background: #ff0000; background: -webkit-linear-gradient(0deg, #ff0000, #cc9900); background: -o-linear-gradient(0deg, #ff0000, #cc9900);   background: -moz-linear-gradient(0deg, #ff0000, #cc9900); background: linear-gradient(0deg, #ff0000, #cc9900); transition: background 125ms ease;");
+        setTimeout(()=>{
+          elem.setAttribute("style", "background: #ee0011; background-color: -webkit-linear-gradient(45deg, #ee0011, #cc9900); background: -o-linear-gradient(45deg, #ee0011, #cc9900);   background: -moz-linear-gradient(45deg, #ee0011, #cc9900); background: linear-gradient(45deg, #ee0011, #cc9900); transition: background 125ms ease;");
+          setTimeout(()=>{
+            elem.setAttribute("style", "background: #dd0022; background-color: -webkit-linear-gradient(90deg, #dd0022, #cc9900); background: -o-linear-gradient(90deg, #dd0022, #cc9900);   background: -moz-linear-gradient(90deg, #dd0022, #cc9900); background: linear-gradient(90deg, #dd0022, #cc9900); transition: background 125ms ease;");
+            setTimeout(()=>{
+              elem.setAttribute("style", "background: #cc0033; background-color: -webkit-linear-gradient(135deg, #cc0033, #cc9900); background: -o-linear-gradient(135deg, #cc0033, #cc9900);   background: -moz-linear-gradient(135deg, #cc0033, #cc9900); background: linear-gradient(135deg, #cc0033, #cc9900); transition: background 125ms ease;");
+              setTimeout(()=>{
+                elem.setAttribute("style", "background: #bb1144; background-color: -webkit-linear-gradient(180deg, #bb1144, #cc9900); background: -o-linear-gradient(180deg, #bb1144, #cc9900);   background: -moz-linear-gradient(180deg, #bb1144, #cc9900); background: linear-gradient(180deg,#bb1144, #cc9900); transition: background 125ms ease;");
+                setTimeout(()=>{
+                  elem.setAttribute("style", "background: #aa2255; background-color: -webkit-linear-gradient(-135deg, #aa2255, #cc9900); background: -o-linear-gradient(-135deg, #aa2255, #cc9900);   background: -moz-linear-gradient(-135deg, #aa2255, #cc9900); background: linear-gradient(-135deg, #aa2255, #cc9900); transition: background 125ms ease;");
+                  setTimeout(()=>{
+                    elem.setAttribute("style", "background: #bb3344; background-color: -webkit-linear-gradient(-90deg, #bb3344, #cc9900); background: -o-linear-gradient(-90deg, #bb3344, #cc9900);   background: -moz-linear-gradient(-90deg, #bb3344, #cc9900); background: linear-gradient(-90deg, #bb3344, #cc9900); transition: background 125ms ease;");
+                    setTimeout(()=>{
+                      elem.setAttribute("style", "background: #cc4433; background-color: -webkit-linear-gradient(-45deg, #cc4433, #cc9900); background: -o-linear-gradient(-45deg, #cc4433, #cc9900);   background: -moz-linear-gradient(-45deg, #cc4433, #cc9900); background: linear-gradient(-45deg, #cc4433, #cc9900); transition: background 125ms ease;");
+                      setTimeout(()=>{
+                        elem.setAttribute("style", "background: #dd5522; background: -webkit-linear-gradient(0deg, #dd5522, #cc9900); background: -o-linear-gradient(0deg, #dd5522, #cc9900);   background: -moz-linear-gradient(0deg, #dd5522, #cc9900); background: linear-gradient(0deg, #dd5522, #cc9900); transition: background 125ms ease;");
+                        setTimeout(()=>{
+                          elem.setAttribute("style", "background: #ee4411; background: -webkit-linear-gradient(45deg, #ee4411, #cc9900); background: -o-linear-gradient(45deg, #ee4411, #cc9900);   background: -moz-linear-gradient(45deg, #ee4411, #cc9900); background: linear-gradient(45deg, #ee4411, #cc9900); transition: background 125ms ease;");
+                          setTimeout(()=>{
+                            elem.setAttribute("style", "background: #ff3300; background: -webkit-linear-gradient(90deg, #ff3300, #cc9900); background: -o-linear-gradient(90deg, #ff3300, #cc9900);   background: -moz-linear-gradient(90deg, #ff3300, #cc9900); background: linear-gradient(90deg, #ff3300, #cc9900); transition: background 125ms ease;");
+                            setTimeout(()=>{
+                              elem.setAttribute("style", "background: #ff2200; background: -webkit-linear-gradient(135deg, #ff2200, #cc9900); background: -o-linear-gradient(135deg, #ff2200, #cc9900);   background: -moz-linear-gradient(135deg, #ff2200, #cc9900); background: linear-gradient(135deg, #ff2200, #cc9900); transition: background 125ms ease;");
+                              setTimeout(()=>{
+                                elem.setAttribute("style", "background: #ff1100; background: -webkit-linear-gradient(180deg, #ff1100, #cc9900); background: -o-linear-gradient(180deg, #ff1100, #cc9900);   background: -moz-linear-gradient(180deg, #ff1100, #cc9900); background: linear-gradient(180deg, #ff1100, #cc9900); transition: background 125ms ease;");
+                                setTimeout(()=>{
+                                  elem.setAttribute("style", "background: #ff0000; background: -webkit-linear-gradient(-135deg, #ff0000, #cc9900); background: -o-linear-gradient(-135deg, #ff0000, #cc9900);   background: -moz-linear-gradient(-135deg, #ff0000, #cc9900); background: linear-gradient(-135deg, #ff0000, #cc9900); transition: background 125ms ease;");
+                                  setTimeout(()=>{
+                                    elem.setAttribute("style", "background: #ff0000; background: -webkit-linear-gradient(-90deg, #ff0000, #cc9900); background: -o-linear-gradient(-90deg, #ff0000, #cc9900);   background: -moz-linear-gradient(-90deg, #ff0000, #cc9900); background: linear-gradient(-90deg, #ff0000, #cc9900); transition: background 125ms ease;");
+                                    setTimeout(()=>{
+                                      elem.setAttribute("style", "background: #ff0000; background: -webkit-linear-gradient(-45deg, #ff0000, #cc9900); background: -o-linear-gradient(-45deg, #ff0000, #cc9900);   background: -moz-linear-gradient(-45deg, #ff0000, #cc9900); background: linear-gradient(-45deg, #ff0000, #cc9900); transition: background 125ms ease;");
+                                      setTimeout(()=>{
+                                        overdueFlash(elem);
+                                      }, 65);
+                                    }, 65);
+                                  }, 65);
+                                }, 65);
+                              }, 65);
+                            }, 65);
+                          }, 65);
+                        }, 65);
+                      }, 65);
+                    }, 65);
+                  }, 65);
+                }, 65);
+              }, 65);
+            }, 65);
+          }, 65);
+        }, 65);
+      }
+
+      function getCleanDate(theDate) {
+        let cleanString = '';
+        let yyyy = theDate.slice(0, 4);
+        let mm = theDate.slice(5, 7);
+        let dd = theDate.slice(8, 10);
+        if (dd[0] === '0') {
+          dd = dd[1];
+        }
+        switch(mm) {
+          case('01'):
+            mm = 'January';
+            break;
+          case('02'):
+            mm = 'February';
+            break;
+          case('03'):
+            mm = 'March';
+            break;
+          case('04'):
+            mm = 'April';
+            break;
+          case('05'):
+            mm = 'May';
+            break;
+          case('06'):
+            mm = 'June';
+            break;
+          case('07'):
+            mm = 'July';
+            break;
+          case('08'):
+            mm = 'August';
+            break;
+          case('09'):
+            mm = 'September';
+            break;
+          case('10'):
+            mm = 'October';
+            break;
+          case('11'):
+            mm = "November";
+            break;
+          case('12'):
+            mm = "December";
+            break;
+          default:
+            console.log('date error ' + mm);
+        }
+        cleanString = dd + ' ' + mm + ' ' + yyyy;
+
+
+        return(cleanString);
+      }
+
+      function detectBills() {
+        $http.get(`/billsByUser/${currentUserId}`)
+        .then(currentBillsData=>{
+          let days = 0;
+          let currentBills = currentBillsData.data;
+          let currentBillsDue = [];
+          let element = document.getElementById('billsList');
+          let todaysBills = [];
+          let yesterdaysBills = [];
+          currentBillsDue = currentBills.filter((bill)=>{
+            return (bill.is_paid === false);
+          });
+          if (currentBillsDue.length > 0) {
+            for (let i = 0; i < currentBillsDue.length; i++) {
+              currentBillsDue[i].clean_date = getCleanDate(currentBillsDue[i].due_date);
+              console.log(currentBillsDue[i].due_date);
+              switch(getBillTense(viewDate, currentBillsDue[i].due_date)) {
+                case ('past'):
+                  // element = document.getElementById(currentBillsDue[i].name + currentBillsDue[i].id);
+                  // overdueFlash(element);
+                  yesterdaysBills.push(currentBillsDue[i]);
+                  days = getOverdueStatus(viewDate, currentBillsDue[i].due_date);
+                  if (days === 1) {
+                    currentBillsDue[i].due_state = ' was due yesterday.';
+                  } else {
+                    currentBillsDue[i].due_state = ' is ' + days + '  days overdue!';
+                  }
+                  break;
+                case ('present'):
+                  // element = document.getElementById(currentBillsDue[i].name + currentBillsDue[i].id);
+                  // console.log(element);
+                  // element.setAttribute("style", "background-color: #ff0000;");
+                  todaysBills.push(currentBillsDue[i]);
+                  currentBillsDue[i].due_state = ' is DUE today!';
+                  break;
+                case ('future'):
+                  days = getFutureDueDate(viewDate, currentBillsDue[i].due_date);
+                  if (days === 1) {
+                    currentBillsDue[i].due_state = ' is due tomorrow.';
+                  } else {
+                    currentBillsDue[i].due_state = ' is due in ' + days + ' days.';
+                  }
+                  break;
+                default:
+                  console.log('non-standard state');
+              }
+
+            }
+          } else {
+            element.setAttribute("style", "display: none;");
+          }
+          vm.bills = currentBillsDue;
+          console.log(todaysBills);
+          let idString = '';
+
+          setTimeout(()=>{
+            if (todaysBills.length > 0) {
+              for (let dueNow = 0; dueNow < todaysBills.length; dueNow++) {
+                idString = todaysBills[dueNow].name + todaysBills[dueNow].id;
+                console.log(idString);
+                document.getElementById(idString).setAttribute("style", "background: #ff0000; background: -webkit-linear-gradient(-45deg, #ff0000, #cc9900); background: -o-linear-gradient(-45deg, #ff0000, #cc9900);   background: -moz-linear-gradient(-45deg, #ff0000, #cc9900); background: linear-gradient(-45deg, #ff0000, #cc9900);");
+              }
+            }
+            if (yesterdaysBills.length > 0) {
+              for (let dueThen = 0; dueThen < yesterdaysBills.length; dueThen++) {
+                element = document.getElementById(yesterdaysBills[dueThen].name + yesterdaysBills[dueThen].id);
+                overdueFlash(element);
+              }
+            }
+          }, 1000);
+
         });
       }
 
@@ -801,6 +1295,7 @@
         setTimeColors();
         detectHolidays();
         detectOccasions();
+        detectBills();
 
       }
 

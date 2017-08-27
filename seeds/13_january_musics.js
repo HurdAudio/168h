@@ -382,6 +382,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 22,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2278108239/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://johnlutheradams.bandcamp.com/album/ilimaq',
+          a_string: 'Ilimaq by John Luther Adams &amp; Glenn Kotche',
+          rule: {
+            "monday": "[ 10, 17, 19, 18]",
+            "tuesday": "[8, 12, 14, 19]",
+            "wednesday": "[4, 8, 10, 14]",
+            "thursday": "[10, 17, 19, 18]",
+            "saturday": "[8, 12, 14, 18]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 23,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3693055811/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://zeitkratzer.bandcamp.com/album/james-tenney-old-school',
+          a_string: 'James Tenney [old school] by zeitkratzer',
+          rule: {
+            "monday": "[ 8, 12, 14, 18]",
+            "tuesday": "[10, 17, 19, 18]",
+            "wednesday": "[8, 12, 14, 19]",
+            "thursday": "[4, 8, 10, 14]",
+            "saturday": "[10, 17, 19, 18]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 24,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4040307402/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sarahhennies.bandcamp.com/album/still-and-moving-lines-of-silence-in-families-of-hyperbolas',
+          a_string: 'Still and Moving Lines of Silence In Families of Hyperbolas by Alvin Lucier',
+          rule: {
+            "monday": "[ 10, 17, 19, 18]",
+            "tuesday": "[8, 12, 14, 18]",
+            "wednesday": "[10, 17, 19, 18]",
+            "thursday": "[8, 12, 14, 19]",
+            "saturday": "[4, 8, 10, 14]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {

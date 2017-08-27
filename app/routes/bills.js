@@ -41,8 +41,17 @@ router.post('/', (req, res, next) => {
   .insert({
     user_id: req.body.user_id,
     name: req.body.name,
+    pay_to: req.body.pay_to,
+    address_line1: req.body.address_line1,
+    address_line2: req.body.address_line2,
+    city: req.body.city,
+    state: req.body.state,
+    zip: req.body.zip,
+    balance: req.body.balance,
     amount_due: req.body.amount_due,
+    amount_paid: req.body.amount_paid,
     due_date: req.body.due_date,
+    date_paid: req.body.date_paid,
     is_paid: req.body.is_paid
   }, '*')
   .then((result) => {
@@ -60,8 +69,17 @@ router.patch('/:id', (req, res, next) => {
   .update({
     user_id: req.body.user_id,
     name: req.body.name,
+    pay_to: req.body.pay_to,
+    address_line1: req.body.address_line1,
+    address_line2: req.body.address_line2,
+    city: req.body.city,
+    state: req.body.state,
+    zip: req.body.zip,
+    balance: req.body.balance,
     amount_due: req.body.amount_due,
+    amount_paid: req.body.amount_paid,
     due_date: req.body.due_date,
+    date_paid: req.body.date_paid,
     is_paid: req.body.is_paid
   }, '*')
     .then((results)=>{
@@ -98,8 +116,17 @@ router.delete('/:id', (req, res, next) => {
             id: holder,
             user_id: record.user_id,
             name: record.name,
+            pay_to: record.pay_to,
+            address_line1: record.address_line1,
+            address_line2: record.address_line2,
+            city: record.city,
+            state: record.state,
+            zip: record.zip,
+            balance: record.balance,
             amount_due: record.amount_due,
+            amount_paid: record.amount_paid,
             due_date: record.due_date,
+            date_paid: record.date_paid,
             is_paid: record.is_paid,
             created_at: record.created_at,
             updated_at: record.updated_at

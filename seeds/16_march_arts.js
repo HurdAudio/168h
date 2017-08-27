@@ -404,6 +404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 21,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/untitled-1951.jpg',
+          title: 'Untitled',
+          artist: 'Helen Frankenthaler',
+          year: '1951',
+          rule: {
+            "monday": "[ 2, 12, 20, 30 ]",
+            "tuesday": "[ 1, 11, 19, 29 ]",
+            "wednesday": "[ 31, 10, 18, 28 ]",
+            "thursday": "[ 30, 9, 17, 27 ]",
+            "friday": "[ 29, 8, 16, 26 ]",
+            "saturday": "[ 4, 14, 22, 1 ]",
+            "sunday": "[ 3, 13, 21, 31 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 22,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/nude-girl-1910.jpg',
+          title: 'Nude Girl',
+          artist: 'Gwen John',
+          year: '1909 - 1910',
+          rule: {
+            "monday": "[ 3, 13, 21, 31 ]",
+            "tuesday": "[ 2, 12, 20, 30 ]",
+            "wednesday": "[ 1, 11, 19, 29 ]",
+            "thursday": "[ 31, 10, 18, 28 ]",
+            "friday": "[ 30, 9, 17, 27 ]",
+            "saturday": "[ 29, 8, 16, 26 ]",
+            "sunday": "[ 4, 14, 22, 1 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 23,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/the-broken-column-1944.jpg',
+          title: 'The Broken Column',
+          artist: 'Frida Kahlo',
+          year: '1944',
+          rule: {
+            "monday": "[ 4, 14, 22, 1 ]",
+            "tuesday": "[ 3, 13, 21, 31 ]",
+            "wednesday": "[ 2, 12, 20, 30 ]",
+            "thursday": "[ 1, 11, 19, 29 ]",
+            "friday": "[ 31, 10, 18, 28 ]",
+            "saturday": "[ 30, 9, 17, 27 ]",
+            "sunday": "[ 29, 8, 16, 26 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 24,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/repulse-bay.jpg',
+          title: 'Repulse Bay',
+          artist: 'Dominique Gonzalez-Foerster',
+          year: '?',
+          rule: {
+            "monday": "[ 29, 8, 16, 26 ]",
+            "tuesday": "[ 4, 14, 22, 1 ]",
+            "wednesday": "[ 3, 13, 21, 31 ]",
+            "thursday": "[ 2, 12, 20, 30 ]",
+            "friday": "[ 1, 11, 19, 29 ]",
+            "saturday": "[ 31, 10, 18, 28 ]",
+            "sunday": "[ 30, 9, 17, 27 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 25,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/untitled-your-body-is-a-battleground-1989.jpg',
+          title: 'Untitled (your body is a battleground)',
+          artist: 'Barbara Kruger',
+          year: '1989',
+          rule: {
+            "monday": "[ 30, 9, 17, 27 ]",
+            "tuesday": "[ 29, 8, 16, 26 ]",
+            "wednesday": "[ 4, 14, 22, 1 ]",
+            "thursday": "[ 3, 13, 21, 31 ]",
+            "friday": "[ 2, 12, 20, 30 ]",
+            "saturday": "[ 1, 11, 19, 29 ]",
+            "sunday": "[ 31, 10, 18, 28 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {

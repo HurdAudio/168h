@@ -134,7 +134,7 @@ exports.seed = function(knex, Promise) {
           artist: 'Garry Gay',
           year: 'XX cent.',
           rule: {
-            "monday": "[ 31, 6, 12, 18 ]",
+            "monday": "[ 30, 6, 12, 18 ]",
             "tuesday": "[ 30, 5, 11, 17 ]",
             "wednesday": "[ 29, 4, 10, 16 ]",
             "thursday": "[ 28, 3, 9, 15 ]",
@@ -155,7 +155,7 @@ exports.seed = function(knex, Promise) {
           year: 'XXI cent.',
           rule: {
             "monday": "[ 16, 7, 13, 19 ]",
-            "tuesday": "[ 31, 6, 12, 18 ]",
+            "tuesday": "[ 30, 6, 12, 18 ]",
             "wednesday": "[ 30, 5, 11, 17 ]",
             "thursday": "[ 29, 4, 10, 16 ]",
             "friday": "[ 28, 3, 9, 15 ]",
@@ -176,7 +176,7 @@ exports.seed = function(knex, Promise) {
           rule: {
             "monday": "[ 2, 8, 14, 20 ]",
             "tuesday": "[ 16, 7, 13, 19 ]",
-            "wednesday": "[ 31, 6, 12, 18 ]",
+            "wednesday": "[ 30, 6, 12, 18 ]",
             "thursday": "[ 30, 5, 11, 17 ]",
             "friday": "[ 29, 4, 10, 16 ]",
             "saturday": "[ 28, 3, 9, 15 ]",
@@ -197,10 +197,110 @@ exports.seed = function(knex, Promise) {
             "monday": "[ 27, 2, 8, 14 ]",
             "tuesday": "[ 2, 8, 14, 20 ]",
             "wednesday": "[ 16, 7, 13, 19 ]",
-            "thursday": "[ 31, 6, 12, 18 ]",
+            "thursday": "[ 30, 6, 12, 18 ]",
             "friday": "[ 30, 5, 11, 17 ]",
             "saturday": "[ 29, 4, 10, 16 ]",
             "sunday": "[ 28, 3, 9, 15 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 11,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/sketch-CWS_9bfddcca-8e4d-4430-84d8-d93cfb43f4ec_grande.jpg',
+          title: 'Guaranteed Rate Field',
+          artist: 'S. Preston',
+          year: '2017',
+          rule: {
+            "monday": "[ 28, 3, 9, 15 ]",
+            "tuesday": "[ 27, 2, 8, 14 ]",
+            "wednesday": "[ 2, 8, 14, 20 ]",
+            "thursday": "[ 16, 7, 13, 19 ]",
+            "friday": "[ 30, 6, 12, 18 ]",
+            "saturday": "[ 30, 5, 11, 17 ]",
+            "sunday": "[ 29, 4, 10, 16 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 12,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/crosley10951.jpg',
+          title: 'Crosley Field, Cincinnati',
+          artist: 'Historical Photograph',
+          year: 'xx Cent.',
+          rule: {
+            "monday": "[ 29, 4, 10, 16 ]",
+            "tuesday": "[ 28, 3, 9, 15 ]",
+            "wednesday": "[ 27, 2, 8, 14 ]",
+            "thursday": "[ 2, 8, 14, 20 ]",
+            "friday": "[ 16, 7, 13, 19 ]",
+            "saturday": "[ 30, 6, 12, 18 ]",
+            "sunday": "[ 30, 5, 11, 17 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 13,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/il_fullxfull.386018171_nznr_05d79c35-9ac2-4cb9-b5fe-4f346c852fec_grande.jpeg',
+          title: 'Chicago White Sox Canvas',
+          artist: 'Holy Cow Canvas Studios',
+          year: 'xx - xxi Cent.',
+          rule: {
+            "monday": "[ 30, 5, 11, 17 ]",
+            "tuesday": "[ 29, 4, 10, 16 ]",
+            "wednesday": "[ 28, 3, 9, 15 ]",
+            "thursday": "[ 27, 2, 8, 14 ]",
+            "friday": "[ 2, 8, 14, 20 ]",
+            "saturday": "[ 16, 7, 13, 19 ]",
+            "sunday": "[ 1, 6, 12, 18 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 14,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/pointillism_2005_chicago_white_sox_world_series_by_negativesanction-d4nthm5.png',
+          title: 'Pointillism 2005 Chicago White Sox World Series',
+          artist: 'NegativeSanction',
+          year: '2012 - 2017',
+          rule: {
+            "monday": "[ 2, 7, 13, 19 ]",
+            "tuesday": "[ 1, 5, 12, 18 ]",
+            "wednesday": "[ 30, 5, 11, 17 ]",
+            "thursday": "[ 29, 4, 10, 16 ]",
+            "friday": "[ 28, 3, 9, 15 ]",
+            "saturday": "[ 3, 9, 15, 21 ]",
+            "sunday": "[ 17, 8, 14, 20 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 15,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/chicago-white-sox-us-cellular-field-flag-digitally-painted-david-haskett.jpg',
+          title: 'Chicago White Sox Us Cellular Field Flag',
+          artist: 'David Haskett',
+          year: '2015',
+          rule: {
+            "monday": "[ 17, 8, 14, 20 ]",
+            "tuesday": "[ 2, 7, 13, 19 ]",
+            "wednesday": "[ 1, 5, 12, 18 ]",
+            "thursday": "[ 30, 5, 11, 17 ]",
+            "friday": "[ 29, 4, 10, 16 ]",
+            "saturday": "[ 28, 3, 9, 15 ]",
+            "sunday": "[ 3, 9, 15, 21 ]"
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')

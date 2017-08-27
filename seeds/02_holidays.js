@@ -15053,7 +15053,7 @@ exports.seed = function(knex, Promise) {
           name: 'Advent',
           color: '#A14707',
           picture: './img/holidays/advent.jpg',
-          day_of: new Date('2017-12-03T13:44:00.000Z'),
+          day_of: new Date('2017-12-02T13:44:00.000Z'),
           is_annual: false,
           rule: "['four saturdays before christmas']",
           art_override: false,

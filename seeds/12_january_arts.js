@@ -804,6 +804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 41,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/transparent-shadow.jpg',
+          title: 'Transparent Shadow',
+          artist: 'Toko Shinoda',
+          year: '?',
+          rule: {
+            "monday": "[ 17, 19, 21, 22]",
+            "tuesday": "[19, 21, 25, 28]",
+            "wednesday": "[21, 23, 24, 27]",
+            "thursday": "[6, 7, 9, 10]",
+            "friday": "[9, 12, 13, 23]",
+            "saturday": "[11, 12, 15, 17]",
+            "sunday": "[14, 15, 17, 10]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 42,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/the-parachutists-1944.jpg',
+          title: 'The Parachutists',
+          artist: 'William Baziotes',
+          year: '1944',
+          rule: {
+            "monday": "[ 15, 16, 18, 11]",
+            "tuesday": "[18, 20, 22, 23]",
+            "wednesday": "[20, 22, 26, 29]",
+            "thursday": "[22, 24, 25, 28]",
+            "friday": "[7, 8, 10, 11]",
+            "saturday": "[10, 13, 14, 24]",
+            "sunday": "[12, 13, 16, 18]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 43,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/bird-of-the-spirit-1943.jpg',
+          title: 'Bird of the Spirit',
+          artist: 'Morris Graves',
+          year: '1943',
+          rule: {
+            "monday": "[ 12, 13, 16, 18]",
+            "tuesday": "[15, 16, 18, 11]",
+            "wednesday": "[18, 20, 22, 23]",
+            "thursday": "[20, 22, 26, 29]",
+            "friday": "[22, 24, 25, 28]",
+            "saturday": "[7, 8, 10, 11]",
+            "sunday": "[10, 13, 14, 24]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 44,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/untitled-1947.jpg',
+          title: 'Untitled',
+          artist: 'Giorgio Cavallon',
+          year: '1947',
+          rule: {
+            "monday": "[ 10, 13, 14, 24]",
+            "tuesday": "[12, 13, 16, 18]",
+            "wednesday": "[15, 16, 18, 11]",
+            "thursday": "[18, 20, 22, 23]",
+            "friday": "[20, 22, 26, 29]",
+            "saturday": "[22, 24, 25, 28]",
+            "sunday": "[7, 8, 10, 11]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 45,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/abstract-eye-1943.jpg',
+          title: 'Abstract Eye',
+          artist: 'Richard Pousette-Dart',
+          year: '1943',
+          rule: {
+            "monday": "[ 7, 8, 10, 11]",
+            "tuesday": "[10, 13, 14, 24]",
+            "wednesday": "[12, 13, 16, 18]",
+            "thursday": "[15, 16, 18, 11]",
+            "friday": "[18, 20, 22, 23]",
+            "saturday": "[20, 22, 26, 29]",
+            "sunday": "[22, 24, 25, 28]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {

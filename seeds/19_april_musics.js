@@ -58,6 +58,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 4,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3580399100/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://aerophonicrecords.bandcamp.com/album/hit-the-ground-running-all-proceeds-to-benefit-refugee-one',
+          a_string: 'Hit The Ground Running                                    (all proceeds to benefit Refugee One) by Rempis/Piet/Daisy',
+          rule: {
+            "monday": "[2, 10, 22, 27]",
+            "tuesday": "[1, 9, 21, 26]",
+            "wednesday": "[5, 13, 25, 30]",
+            "thursday": "[4, 12, 24, 29]",
+            "saturday": "[3, 11, 23, 28]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 5,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1243137714/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://joemcphee.bandcamp.com/album/the-dream-book',
+          a_string: 'The Dream Book by Joe McPhee &amp; Dominic Duval',
+          rule: {
+            "monday": "[3, 11, 23, 28]",
+            "tuesday": "[2, 10, 22, 27]",
+            "wednesday": "[1, 9, 21, 26]",
+            "thursday": "[5, 13, 25, 30]",
+            "saturday": "[4, 12, 24, 29]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 6,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3668515304/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://mattpiet.bandcamp.com/album/live-at-constellation',
+          a_string: 'Live At Constellation by Matt Piet Trio',
+          rule: {
+            "monday": "[4, 12, 24, 29]",
+            "tuesday": "[3, 11, 23, 28]",
+            "wednesday": "[2, 10, 22, 27]",
+            "thursday": "[1, 9, 21, 26]",
+            "saturday": "[5, 13, 25, 30]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
