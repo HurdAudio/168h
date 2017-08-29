@@ -382,6 +382,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 22,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=541207510/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://eremiterecords.bandcamp.com/album/spirit-house',
+          a_string: 'Spirit House by Jemeel Moondoc &amp; The Jus Grew Orchestra',
+          rule: {
+            "monday": "[ 14, 18, 20, 23]",
+            "tuesday": "[ 5, 9, 11, 15]",
+            "wednesday": "[ 7, 11, 13, 17]",
+            "thursday": "[ 9, 13, 15, 19]",
+            "saturday": "[ 21, 15, 17, 22]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 23,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1011163605/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://eremiterecords.bandcamp.com/album/captain-of-the-deep',
+          a_string: 'Captain of the Deep by Denis Charles',
+          rule: {
+            "monday": "[ 21, 15, 17, 22]",
+            "tuesday": "[ 14, 18, 20, 23]",
+            "wednesday": "[ 5, 9, 11, 15]",
+            "thursday": "[ 7, 11, 13, 17]",
+            "saturday": "[ 9, 13, 15, 19]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 24,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1823302346/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://eremiterecords.bandcamp.com/album/new-world-pygmies',
+          a_string: 'New World Pygmies by Jemeel Moondoc &amp; William Parker',
+          rule: {
+            "monday": "[ 9, 13, 15, 19]",
+            "tuesday": "[ 21, 15, 17, 22]",
+            "wednesday": "[ 14, 18, 20, 23]",
+            "thursday": "[ 5, 9, 11, 15]",
+            "saturday": "[ 7, 11, 13, 17]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
