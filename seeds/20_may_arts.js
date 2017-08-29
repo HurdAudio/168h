@@ -204,6 +204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 11,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/workers-1916.jpg',
+          title: 'Workers',
+          artist: 'Pavel Filonov',
+          year: '1915 - 1916',
+          rule: {
+            "monday": "[ 23, 2, 12, 22 ]",
+            "tuesday": "[ 21, 31, 10, 20 ]",
+            "wednesday": "[ 2, 12, 22, 1 ]",
+            "thursday": "[ 31, 10, 20, 30 ]",
+            "friday": "[ 29, 8, 18, 28 ]",
+            "saturday": "[ 27, 6, 16, 26 ]",
+            "sunday": "[ 25, 4, 14, 24 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 12,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/worker-1933.jpg',
+          title: 'Worker',
+          artist: 'Kazimir Malevich',
+          year: '1933',
+          rule: {
+            "monday": "[ 25, 4, 14, 24 ]",
+            "tuesday": "[ 23, 2, 12, 22 ]",
+            "wednesday": "[ 21, 31, 10, 20 ]",
+            "thursday": "[ 2, 12, 22, 1 ]",
+            "friday": "[ 31, 10, 20, 30 ]",
+            "saturday": "[ 29, 8, 18, 28 ]",
+            "sunday": "[ 27, 6, 16, 26 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 13,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/a-school-teacher-explaining-the-meaning-of-a-letter-to-illiterate-workers-1516.jpg',
+          title: 'A School Teacher Explaining the Meaning of a Letter to Illiterate Workers',
+          artist: 'Hans Holbein the Younger',
+          year: '1516',
+          rule: {
+            "monday": "[ 27, 6, 16, 26 ]",
+            "tuesday": "[ 25, 4, 14, 24 ]",
+            "wednesday": "[ 23, 2, 12, 22 ]",
+            "thursday": "[ 21, 31, 10, 20 ]",
+            "friday": "[ 2, 12, 22, 1 ]",
+            "saturday": "[ 31, 10, 20, 30 ]",
+            "sunday": "[ 29, 8, 18, 28 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 14,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/workers-1927.jpg',
+          title: 'Workers',
+          artist: 'Martiros Sarian',
+          year: '1927',
+          rule: {
+            "monday": "[ 30, 9, 19, 29 ]",
+            "tuesday": "[ 28, 7, 17, 27 ]",
+            "wednesday": "[ 26, 5, 15, 25 ]",
+            "thursday": "[ 24, 3, 13, 23 ]",
+            "friday": "[ 22, 1, 11, 21 ]",
+            "saturday": "[ 3, 13, 23, 2 ]",
+            "sunday": "[ 1, 11, 21, 31 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 15,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/workers-on-the-beet-field-1876.jpg',
+          title: 'Workers on the beet field',
+          artist: 'Max Liebermann',
+          year: '1876',
+          rule: {
+            "monday": "[ 1, 11, 21, 31 ]",
+            "tuesday": "[ 30, 9, 19, 29 ]",
+            "wednesday": "[ 28, 7, 17, 27 ]",
+            "thursday": "[ 26, 5, 15, 25 ]",
+            "friday": "[ 24, 3, 13, 23 ]",
+            "saturday": "[ 22, 1, 11, 21 ]",
+            "sunday": "[ 3, 13, 23, 2 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
