@@ -490,6 +490,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 28,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2801425194/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tobytwining.bandcamp.com/album/eurydice',
+          a_string: 'Eurydice by Toby Twining',
+          rule: {
+            "monday": "[ 9, 13, 15, 19 ]",
+            "tuesday": "[ 11, 18, 20, 19 ]",
+            "wednesday": "[ 9, 13, 15, 20 ]",
+            "thursday": "[ 5, 9, 11, 15 ]",
+            "saturday": "[ 11, 18, 20, 19 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 29,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4040906099/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://brycedessner.bandcamp.com/album/music-for-wood-and-strings-performed-by-so-percussion',
+          a_string: 'Music for Wood and Strings performed by So Percussion by Bryce Dessner',
+          rule: {
+            "monday": "[ 11, 18, 20, 19 ]",
+            "tuesday": "[ 9, 13, 15, 19 ]",
+            "wednesday": "[ 11, 18, 20, 19 ]",
+            "thursday": "[ 9, 13, 15, 20 ]",
+            "saturday": "[ 5, 9, 11, 15 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 30,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2107418158/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://newfocusrecordings.bandcamp.com/album/transient-canvas',
+          a_string: 'Transient Canvas by Transient Canvas',
+          rule: {
+            "monday": "[ 5, 9, 11, 15 ]",
+            "tuesday": "[ 11, 18, 20, 19 ]",
+            "wednesday": "[ 9, 13, 15, 19 ]",
+            "thursday": "[ 11, 18, 20, 19 ]",
+            "saturday": "[ 9, 13, 15, 20 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
