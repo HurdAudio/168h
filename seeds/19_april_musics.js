@@ -166,6 +166,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 10,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1028063960/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://johnbutcher.bandcamp.com/album/bell-trove-spools-2',
+          a_string: 'Bell Trove Spools by John Butcher',
+          rule: {
+            "monday": "[ 4, 12, 24, 29 ]",
+            "tuesday": "[ 3, 11, 23, 28 ]",
+            "wednesday": "[ 2, 10, 22, 27 ]",
+            "thursday": "[ 6, 14, 26, 1 ]",
+            "saturday": "[ 5, 13, 25, 30 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 11,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2362157429/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jasonkaohwang.bandcamp.com/album/jason-kao-hwang-edge-2006',
+          a_string: 'Jason Kao Hwang/EDGE (2006) by Jason Kao Hwang/EDGE',
+          rule: {
+            "monday": "[ 5, 13, 25, 30 ]",
+            "tuesday": "[ 4, 12, 24, 29 ]",
+            "wednesday": "[ 3, 11, 23, 28 ]",
+            "thursday": "[ 2, 10, 22, 27 ]",
+            "saturday": "[ 6, 14, 26, 1 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 12,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3016926047/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://joemcphee.bandcamp.com/album/journey',
+          a_string: 'Journey by Trio X',
+          rule: {
+            "monday": "[ 6, 14, 26, 1 ]",
+            "tuesday": "[ 5, 13, 25, 30 ]",
+            "wednesday": "[ 4, 12, 24, 29 ]",
+            "thursday": "[ 3, 11, 23, 28 ]",
+            "saturday": "[ 2, 10, 22, 27 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
