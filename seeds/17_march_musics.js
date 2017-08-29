@@ -274,6 +274,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 16,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1981644578/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://zeenaparkins.bandcamp.com/album/three-harps-tuning-forks-electronics-2',
+          a_string: 'Three Harps, Tuning Forks &amp; Electronics by Zeena Parkins',
+          rule: {
+            "monday": "[ 6, 12, 18, 26 ]",
+            "tuesday": "[ 5, 11, 17, 25 ]",
+            "wednesday": "[ 4, 10, 16, 24 ]",
+            "thursday": "[ 3, 9, 15, 23 ]",
+            "saturday": "[ 7, 13, 19, 27 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 17,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3762222841/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://leonelkaplan.bandcamp.com/album/silo',
+          a_string: 'Silo by Audrey Chen, Leonel Kaplan, Nate Wooley',
+          rule: {
+            "monday": "[ 7, 13, 19, 27 ]",
+            "tuesday": "[ 6, 12, 18, 26 ]",
+            "wednesday": "[ 5, 11, 17, 25 ]",
+            "thursday": "[ 4, 10, 16, 24 ]",
+            "saturday": "[ 3, 9, 15, 23 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 18,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=414719190/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://inexhaustibleeditions.bandcamp.com/album/scoriacon',
+          a_string: 'Scoriacon by Réplica: Birgit Ulher / Felipe Araya',
+          rule: {
+            "monday": "[ 3, 9, 15, 23 ]",
+            "tuesday": "[ 7, 13, 19, 27 ]",
+            "wednesday": "[ 6, 12, 18, 26 ]",
+            "thursday": "[ 5, 11, 17, 25 ]",
+            "saturday": "[ 4, 10, 16, 24 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
