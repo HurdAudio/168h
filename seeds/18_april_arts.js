@@ -398,9 +398,109 @@ exports.seed = function(knex, Promise) {
             "tuesday": "[ 30, 5, 11, 17 ]",
             "wednesday": "[ 29, 4, 10, 16 ]",
             "thursday": "[ 28, 3, 9, 15 ]",
-            "friday": "[ 3, 9, 145 21 ]",
+            "friday": "[ 3, 9, 14, 21 ]",
             "saturday": "[ 17, 8, 14, 20 ]",
             "sunday": "[ 2, 7, 13, 19 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 21,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/il_340x270.973649198_2b43.jpg',
+          title: 'Oakland Colliseum',
+          artist: 'ArchiGRAPH',
+          year: 'xxi Cent.',
+          rule: {
+            "monday": "[ 3, 8, 14, 20 ]",
+            "tuesday": "[ 2, 6, 22, 19 ]",
+            "wednesday": "[ 1, 6, 12, 18 ]",
+            "thursday": "[ 30, 5, 11, 17 ]",
+            "friday": "[ 29, 4, 10, 16 ]",
+            "saturday": "[ 4, 10, 15, 22 ]",
+            "sunday": "[ 18, 9, 15, 21 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 22,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/Elephant Man-east oakland.jpg',
+          title: 'A\'s Artist',
+          artist: 'RMA',
+          year: 'xxi Cent.',
+          rule: {
+            "monday": "[ 18, 9, 15, 21 ]",
+            "tuesday": "[ 3, 8, 14, 20 ]",
+            "wednesday": "[ 2, 6, 22, 19 ]",
+            "thursday": "[ 1, 6, 12, 18 ]",
+            "friday": "[ 30, 5, 11, 17 ]",
+            "saturday": "[ 29, 4, 10, 16 ]",
+            "sunday": "[ 4, 10, 15, 22 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 23,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/il_570xN.389675523_rdae.jpg',
+          title: 'Oakland A\'s Painting',
+          artist: 'Justin Patten',
+          year: 'xxi Cent.',
+          rule: {
+            "monday": "[ 4, 10, 15, 22 ]",
+            "tuesday": "[ 18, 9, 15, 21 ]",
+            "wednesday": "[ 3, 8, 14, 20 ]",
+            "thursday": "[ 2, 6, 22, 19 ]",
+            "friday": "[ 1, 6, 12, 18 ]",
+            "saturday": "[ 30, 5, 11, 17 ]",
+            "sunday": "[ 29, 4, 10, 16 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 24,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/As+on+deck+circle.jpeg',
+          title: 'A\'s On Deck Circle',
+          artist: 'Muneesh Jain',
+          year: '2013',
+          rule: {
+            "monday": "[ 29, 4, 10, 16 ]",
+            "tuesday": "[ 4, 10, 15, 22 ]",
+            "wednesday": "[ 18, 9, 15, 21 ]",
+            "thursday": "[ 3, 8, 14, 20 ]",
+            "friday": "[ 2, 6, 22, 19 ]",
+            "saturday": "[ 1, 6, 12, 18 ]",
+            "sunday": "[ 30, 5, 11, 17 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 25,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/Oakland-Athletics_01.jpg',
+          title: 'Oakland Athletics Baseball',
+          artist: 'Dowdle Folk Art',
+          year: 'xxi Cent.',
+          rule: {
+            "monday": "[ 30, 5, 11, 17 ]",
+            "tuesday": "[ 29, 4, 10, 16 ]",
+            "wednesday": "[ 4, 10, 15, 22 ]",
+            "thursday": "[ 18, 9, 15, 21 ]",
+            "friday": "[ 3, 8, 14, 20 ]",
+            "saturday": "[ 2, 6, 22, 19 ]",
+            "sunday": "[ 1, 6, 12, 18 ]"
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
