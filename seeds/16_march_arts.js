@@ -589,8 +589,8 @@ exports.seed = function(knex, Promise) {
           id: 30,
           user_id: 1,
           theme: 'women\'s history',
-          img_path: './img/march/.jpg',
-          title: 'figures-in-a-garden-1981',
+          img_path: './img/march/figures-in-a-garden-1981.jpg',
+          title: 'Figures in a Garden',
           artist: 'Eileen Agar',
           year: '1979 - 1981',
           rule: {
@@ -601,6 +601,106 @@ exports.seed = function(knex, Promise) {
             "friday": "[ 1, 11, 19, 29 ]",
             "saturday": "[ 31, 10, 18, 28 ]",
             "sunday": "[ 30, 9, 17, 27 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 31,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/the-mahatmas-present-standing-point-series-ii-no-2a-1920.jpg',
+          title: 'The Mahatmas Present Standing Point, Series II, No. 2a',
+          artist: 'Hilma af Klint',
+          year: '1920',
+          rule: {
+            "monday": "[ 30, 9, 17, 27 ]",
+            "tuesday": "[ 5, 15, 23, 2 ]",
+            "wednesday": "[ 4, 14, 24, 1 ]",
+            "thursday": "[ 3, 13, 21, 31 ]",
+            "friday": "[ 2, 12, 20, 30 ]",
+            "saturday": "[ 1, 11, 19, 29 ]",
+            "sunday": "[ 31, 10, 18, 28 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 32,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/stilhet-1907.jpg',
+          title: 'Stilhet',
+          artist: 'Helene Schjerfbeck',
+          year: '1907',
+          rule: {
+            "monday": "[ 31, 10, 18, 28 ]",
+            "tuesday": "[ 30, 9, 17, 27 ]",
+            "wednesday": "[ 5, 15, 23, 2 ]",
+            "thursday": "[ 4, 14, 24, 1 ]",
+            "friday": "[ 3, 13, 21, 31 ]",
+            "saturday": "[ 2, 12, 20, 30 ]",
+            "sunday": "[ 1, 11, 19, 29 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 33,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/unknown-title-4.jpg',
+          title: 'unknown title',
+          artist: 'Seraphine Louis',
+          year: '?',
+          rule: {
+            "monday": "[ 1, 11, 19, 29 ]",
+            "tuesday": "[ 31, 10, 18, 28 ]",
+            "wednesday": "[ 30, 9, 17, 27 ]",
+            "thursday": "[ 5, 15, 23, 2 ]",
+            "friday": "[ 4, 14, 24, 1 ]",
+            "saturday": "[ 3, 13, 21, 31 ]",
+            "sunday": "[ 2, 12, 20, 30 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 34,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/display-image-3.jpg',
+          title: 'The Dinner-Hour',
+          artist: 'Anna Ancher',
+          year: 'c.1914',
+          rule: {
+            "monday": "[ 2, 12, 20, 30 ]",
+            "tuesday": "[ 1, 11, 19, 29 ]",
+            "wednesday": "[ 31, 10, 18, 28 ]",
+            "thursday": "[ 30, 9, 17, 27 ]",
+            "friday": "[ 5, 15, 23, 2 ]",
+            "saturday": "[ 4, 14, 24, 1 ]",
+            "sunday": "[ 3, 13, 21, 31 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 35,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/simpkin-at-the-tailor-s-bedside-1902.jpg',
+          title: 'Simpkin at the Tailor\’s Bedside',
+          artist: 'Beatrix Potter',
+          year: '1902',
+          rule: {
+            "monday": "[ 4, 14, 22, 1 ]",
+            "tuesday": "[ 3, 13, 21, 31 ]",
+            "wednesday": "[ 2, 12, 20, 30 ]",
+            "thursday": "[ 1, 11, 19, 29 ]",
+            "friday": "[ 31, 10, 18, 28 ]",
+            "saturday": "[ 6, 16, 24, 3 ]",
+            "sunday": "[ 5, 15, 25, 2 ]"
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
