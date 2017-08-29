@@ -789,7 +789,7 @@ exports.seed = function(knex, Promise) {
           id: 40,
           user_id: 1,
           theme: 'black history',
-          img_path: './img/february/.jpg',
+          img_path: './img/february/H0045-L24499585.jpg',
           title: 'Untitled',
           artist: 'Henry Wilmer Bannarn',
           year: 'xx Cent.',
@@ -801,6 +801,106 @@ exports.seed = function(knex, Promise) {
             "friday": "[ 8, 16, 24, 3 ]",
             "saturday": "[13, 18, 24, 5 ]",
             "sunday": "[12, 20, 28, 7 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 41,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Edward_Mitchell_Bannisters_painting_Driving_Home_the_Cows.jpg',
+          title: 'Driving Home the Cows',
+          artist: 'Edward Mitchell Bannister',
+          year: '1881',
+          rule: {
+            "monday": "[ 12, 20, 28, 7 ]",
+            "tuesday": "[ 14, 24, 1, 9 ]",
+            "wednesday": "[ 16, 24, 3, 13 ]",
+            "thursday": "[ 18, 26, 22, 13 ]",
+            "friday": "[ 6, 14, 22, 1 ]",
+            "saturday": "[ 8, 16, 24, 3 ]",
+            "sunday": "[ 13, 18, 24, 5 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 42,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/arniebarnes.jpg',
+          title: 'Fastbreak',
+          artist: 'Ernie Barnes',
+          year: 'xx Cent.',
+          rule: {
+            "monday": "[ 14, 19, 25, 6 ]",
+            "tuesday": "[ 13, 21, 29, 8 ]",
+            "wednesday": "[ 15, 25, 2, 10 ]",
+            "thursday": "[ 17, 25, 4, 14 ]",
+            "friday": "[ 19, 27, 23, 13 ]",
+            "saturday": "[ 7, 15, 23, 2 ]",
+            "sunday": "[ 9, 17, 25, 4 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 43,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Richmond-Barthe-The-Singing-Slave-1940.jpg',
+          title: 'The Singing Slave',
+          artist: 'Richmond Barthé',
+          year: '1940',
+          rule: {
+            "monday": "[ 9, 17, 25, 4 ]",
+            "tuesday": "[ 14, 19, 25, 6 ]",
+            "wednesday": "[ 13, 21, 29, 8 ]",
+            "thursday": "[ 15, 25, 2, 10 ]",
+            "friday": "[ 17, 25, 4, 14 ]",
+            "saturday": "[ 19, 27, 23, 13 ]",
+            "sunday": "[ 7, 15, 23, 2 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 44,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/800px-WEB_DuBois_1918.jpg',
+          title: 'W.E.B. Du Bois, photographed in 1918',
+          artist: 'C.M. Battey',
+          year: '1918',
+          rule: {
+            "monday": "[ 7, 15, 23, 2 ]",
+            "tuesday": "[ 9, 17, 25, 4 ]",
+            "wednesday": "[ 14, 19, 25, 6 ]",
+            "thursday": "[ 13, 21, 29, 8 ]",
+            "friday": "[ 15, 25, 2, 10 ]",
+            "saturday": "[ 17, 25, 4, 14 ]",
+            "sunday": "[ 19, 27, 23, 13 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 45,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Romare_Bearden_-_The_Calabash,_1970,_Library_of_Congress.jpg',
+          title: 'The Calabash',
+          artist: 'Romare Bearden',
+          year: '1970',
+          rule: {
+            "monday": "[ 19, 27, 23, 13 ]",
+            "tuesday": "[ 7, 15, 23, 2 ]",
+            "wednesday": "[ 9, 17, 25, 4 ]",
+            "thursday": "[ 14, 19, 25, 6 ]",
+            "friday": "[ 13, 21, 29, 8 ]",
+            "saturday": "[ 15, 25, 2, 10 ]",
+            "sunday": "[ 17, 25, 4, 14 ]"
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
