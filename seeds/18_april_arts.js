@@ -304,6 +304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 16,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/pic_mia_marlins_park.jpg',
+          title: 'Minimalist Marlins Park Poster Variant 1',
+          artist: 'S. Preston',
+          year: 'xxi Cent.',
+          rule: {
+            "monday": "[ 3, 9, 15, 21 ]",
+            "tuesday": "[ 17, 8, 14, 20 ]",
+            "wednesday": "[ 2, 7, 13, 19 ]",
+            "thursday": "[ 1, 5, 21, 18 ]",
+            "friday": "[ 30, 5, 11, 17 ]",
+            "saturday": "[ 29, 4, 10, 16 ]",
+            "sunday": "[ 28, 3, 9, 15 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 17,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/giancarlo-stanton-miami-marlins-pixel-art-3-joe-hamilton.jpg',
+          title: 'Giancarlo Stanton Miami Marlins Pixel Art',
+          artist: 'Joe Hamilton',
+          year: '2017',
+          rule: {
+            "monday": "[ 28, 3, 9, 15 ]",
+            "tuesday": "[ 3, 9, 15, 21 ]",
+            "wednesday": "[ 17, 8, 14, 20 ]",
+            "thursday": "[ 2, 7, 13, 19 ]",
+            "friday": "[ 1, 5, 21, 18 ]",
+            "saturday": "[ 30, 5, 11, 17 ]",
+            "sunday": "[ 29, 4, 10, 16 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 18,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/7a119829143321.55e622eeb2d7f.png',
+          title: 'Dee Gordon / Miami Marlins',
+          artist: 'Jose Maria Ruiz',
+          year: 'xxi Cent.',
+          rule: {
+            "monday": "[ 29, 4, 10, 16 ]",
+            "tuesday": "[ 28, 3, 9, 15 ]",
+            "wednesday": "[ 3, 9, 15, 21 ]",
+            "thursday": "[ 17, 8, 14, 20 ]",
+            "friday": "[ 2, 7, 13, 19 ]",
+            "saturday": "[ 1, 5, 21, 18 ]",
+            "sunday": "[ 30, 5, 11, 17 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 19,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/il_570xN.638270473_fxy9.jpg',
+          title: 'Miami Marlins Sugar Skull',
+          artist: 'MYantz',
+          year: 'xxi Cent.',
+          rule: {
+            "monday": "[ 30, 5, 11, 17 ]",
+            "tuesday": "[ 29, 4, 10, 16 ]",
+            "wednesday": "[ 28, 3, 9, 15 ]",
+            "thursday": "[ 3, 9, 15, 21 ]",
+            "friday": "[ 17, 8, 14, 20 ]",
+            "saturday": "[ 2, 7, 13, 19 ]",
+            "sunday": "[ 1, 5, 21, 18 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 20,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/marlinshomerun.jpg',
+          title: 'Marlins Home Run Sculpture',
+          artist: 'Red Grooms',
+          year: 'xxi Cent.',
+          rule: {
+            "monday": "[ 1, 5, 21, 18 ]",
+            "tuesday": "[ 30, 5, 11, 17 ]",
+            "wednesday": "[ 29, 4, 10, 16 ]",
+            "thursday": "[ 28, 3, 9, 15 ]",
+            "friday": "[ 3, 9, 145 21 ]",
+            "saturday": "[ 17, 8, 14, 20 ]",
+            "sunday": "[ 2, 7, 13, 19 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {

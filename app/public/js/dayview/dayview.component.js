@@ -54,6 +54,249 @@
       vm.payBillButton = payBillButton;
       vm.billInfo = billInfo;
       vm.addBillToDay = addBillToDay;
+      vm.taskCompletedButton = taskCompletedButton;
+      vm.taskInfo = taskInfo;
+      vm.addTaskToDay = addTaskToDay;
+
+      function addTaskToDay() {
+        let taskEntryForm = document.getElementById('taskEntryForm');
+        let addTaskButton = document.getElementById('addTaskButton');
+        let taskEntryCancelButton = document.getElementById('taskEntryCancelButton');
+        let taskSubmitButton = document.getElementById('taskSubmitButton');
+        let enterTaskName = document.getElementById('enterTaskName');
+        let taskEntryErrorField = document.getElementById('taskEntryErrorField');
+        let enterTaskInfos = document.getElementById('enterTaskInfos');
+        let enterTaskDate = document.getElementById('enterTaskDate');
+        let days = 0;
+
+        taskEntryForm.setAttribute("style", "display: initial;");
+        addTaskButton.setAttribute("style", "display: none;");
+
+
+        taskEntryCancelButton.addEventListener('click', ()=>{
+
+          taskEntryErrorField.innerHTML = '';
+          enterTaskName.value = '';
+          enterTaskInfos.value = '';
+          enterTaskDate.value = '';
+          taskEntryForm.setAttribute("style", "display: none;");
+          addTaskButton.setAttribute("style", "display: initial; position: relative; display: block; width: 120px; margin: 10px auto; padding: 10px; border-radius: 2%; background-color: #ffff77; border: 1px solid #0000cc; font-family: 'Asul', sans-serif; font-size: 24px; color: #000; text-align: center; text-decoration: none; transform-style: flat; transition: all 250ms ease-out; &:before, &:after {content: \"\"; position: absolute; z-index: -5; transition: all 250ms ease-out;}");
+          taskEntryCancelButton.removeEventListener('click', ()=>{
+            console.log('tidy');
+          });
+          taskSubmitButton.removeEventListener('click', ()=>{
+            console.log('tidy');
+          });
+        });
+        taskSubmitButton.addEventListener('click', ()=>{
+          let newTaskSubmission = {};
+          if (enterTaskName.value === '') {
+            taskEntryErrorField.innerHTML = 'Please enter Task Name';
+          } else {
+            newTaskSubmission.name = enterTaskName.value;
+            newTaskSubmission.user_notes = enterTaskInfos.value;
+            if (enterTaskDate.value === '') {
+              taskEntryErrorField.innerHTML = 'Please enter Due Date';
+            } else {
+              taskEntryErrorField.innerHTML = '';
+              newTaskSubmission.due_date = new Date(enterTaskDate.value + 'T13:44:00.000Z');
+              newTaskSubmission.is_completed = false;
+              newTaskSubmission.user_id = currentUserId;
+              newTaskSubmission.completed_date = null;
+              $http.post('/tasks', newTaskSubmission)
+              .then(addedTaskData=>{
+                let addedTask = addedTaskData.data[0];
+                addedTask.clean_date = getCleanDate(addedTask.due_date);
+                switch(getBillTense(viewDate, addedTask.due_date)) {
+                  case ('past'):
+                    days = getOverdueStatus(viewDate, addedTask.due_date);
+                    if (days === 1) {
+                      addedTask.due_state = ' was due yesterday.';
+                    } else {
+                      addedTask.due_state = ' is ' + days + '  days overdue!';
+                    }
+                    break;
+                  case ('present'):
+
+                    addedTask.due_state = ' is DUE today!';
+                    break;
+                  case ('future'):
+                    days = getFutureDueDate(viewDate, addedTask.due_date);
+                    if (days === 1) {
+                      addedTask.due_state = ' is due tomorrow.';
+                    } else {
+                      addedTask.due_state = ' is due in ' + days + ' days.';
+                    }
+                    break;
+                  default:
+                    console.log('non-standard state');
+                }
+                vm.tasks.push(addedTask);
+                taskEntryErrorField.innerHTML = '';
+                enterTaskName.value = '';
+                enterTaskInfos.value = '';
+                enterTaskDate.value = '';
+                taskEntryForm.setAttribute("style", "display: none;");
+                addTaskButton.setAttribute("style", "display: initial; position: relative; display: block; width: 120px; margin: 10px auto; padding: 10px; border-radius: 2%; background-color: #ffff77; border: 1px solid #0000cc; font-family: 'Asul', sans-serif; font-size: 24px; color: #000; text-align: center; text-decoration: none; transform-style: flat; transition: all 250ms ease-out; &:before, &:after {content: \"\"; position: absolute; z-index: -5; transition: all 250ms ease-out;}");
+                taskEntryCancelButton.removeEventListener('click', ()=>{
+                  console.log('tidy');
+                });
+                taskSubmitButton.removeEventListener('click', ()=>{
+                  console.log('tidy');
+                });
+              });
+            }
+          }
+
+
+        });
+      }
+
+      function taskInfo(taskID) {
+
+        $http.get(`/tasks/${taskID}`)
+        .then(taskData=>{
+          let task = taskData.data;
+          let taskInfoPane = document.getElementById(task.id + task.name);
+          let infoButton = document.getElementById(task.name + task.id + task.name + task.id + task.name);
+          let exitButton = document.getElementById(task.name + task.name +task.id);
+          let taskEditForm = document.getElementById(task.name + task.id + task.name + task.name);
+          let taskEditButton = document.getElementById(task.name + task.id + task.name);
+          let taskPatchSubmit = document.getElementById(task.id + task.name + task.id + task.name + task.user_id + task.name);
+          let taskEditName = document.getElementById(task.user_id + task.name + task.id);
+          let taskEditUserNotes = document.getElementById(task.name + task.user_id + task.name + task.id);
+          let taskEditDate = document.getElementById(task.id +task.name + task.id + task.name +task.name + task.name + task.id);
+          let days = 0;
+          let errorField = document.getElementById(task.name + task.user_id + task.name + task.id + task.name + task.id);
+          taskInfoPane.setAttribute("style", "display: initial;");
+          infoButton.setAttribute("style", "display: none;");
+          taskEditForm.setAttribute("style", "display: none;");
+          errorField.setAttribute("style", "font-family: 'Alike Angular', serif; color: #ff0000; font-size: 18px; margin-left: 3em;");
+
+
+          exitButton.addEventListener('click', ()=>{
+            taskInfoPane.setAttribute("style", "display: none;");
+            infoButton.setAttribute("style", "display: initial; position: relative; display: block; width: 120px; margin: 10px auto; padding: 10px; border-radius: 2%; background-color: #ffff77; border: 1px solid #0000cc; font-family: 'Asul', sans-serif; font-size: 24px; color: #000; text-align: center; text-decoration: none; transform-style: flat; transition: all 250ms ease-out; &:before, &:after {content: \"\"; position: absolute; z-index: -5; transition: all 250ms ease-out;}");
+            taskEditButton.setAttribute("style", "display: initial; position: relative; display: block; width: 120px; margin: 10px auto; padding: 10px; border-radius: 2%; background-color: #ffff77; border: 1px solid #0000cc; font-family: 'Asul', sans-serif; font-size: 24px; color: #000; text-align: center; text-decoration: none; transform-style: flat; transition: all 250ms ease-out; &:before, &:after {content: \"\"; position: absolute; z-index: -5; transition: all 250ms ease-out;}");
+            taskEditName.value = '';
+            taskEditUserNotes.value = '';
+            taskEditDate.value = '';
+            errorField.innerHTML = '';
+            exitButton.removeEventListener('click', ()=>{
+              console.log('tidy');
+            });
+            taskEditButton.removeEventListener('click', ()=>{
+              console.log('tidy');
+            });
+            taskPatchSubmit.removeEventListener('click', ()=>{
+              console.log('tidy');
+            });
+          });
+          taskEditButton.addEventListener('click', ()=>{
+            taskEditForm.setAttribute("style", "display: intial;");
+            taskEditButton.setAttribute("style", "display: none;");
+          });
+          taskPatchSubmit.addEventListener('click', ()=>{
+            let taskPatcher = {};
+            console.log(taskEditDate.value);
+            if (taskEditName.value.length < 1) {
+              taskPatcher.name = task.name;
+            } else {
+              taskPatcher.name = taskEditName.value;
+            }
+            if (taskEditUserNotes.value.length < 1) {
+              taskPatcher.user_notes = task.user_notes;
+            } else {
+              taskPatcher.user_notes = taskEditUserNotes.value;
+            }
+            if (taskEditDate.value !== '') {
+              taskPatcher.due_date = new Date(taskEditDate.value + 'T13:44:00.000Z');
+            } else {
+              taskPatcher.due_date = task.due_date;
+            }
+            if ((taskEditName.value.length < 1) && (taskEditUserNotes.value.length < 1) && (taskEditDate.value.length !== '')) {
+              errorField.innerHTML = 'Please Enter Task Data';
+            } else {
+              $http.patch(`/tasks/${taskID}`, taskPatcher)
+              .then(patchedTaskData=>{
+                let patchedTask = patchedTaskData.data;
+                console.log(patchedTask);
+                errorField.innerHTML = '';
+                //TODO update the vm.tasks entry to reflect patched data;
+                for (let i = 0; i < vm.tasks.length; i++) {
+                  if (vm.tasks[i].id === patchedTask.id) {
+                    vm.tasks[i].name = patchedTask.name;
+                    vm.tasks[i].user_notes = patchedTask.user_notes;
+                    vm.tasks[i].due_date = patchedTask.due_date;
+                    vm.tasks[i].clean_date = getCleanDate(patchedTask.due_date);
+                    switch(getBillTense(viewDate, patchedTask.due_date)) {
+                      case ('past'):
+                        days = getOverdueStatus(viewDate, patchedTask.due_date);
+                        if (days === 1) {
+                          vm.tasks[i].due_state = ' was due yesterday.';
+                        } else {
+                          vm.tasks[i].due_state = ' is ' + days + '  days overdue!';
+                        }
+                        break;
+                      case ('present'):
+
+                        vm.tasks[i].due_state = ' is DUE today!';
+                        break;
+                      case ('future'):
+                        days = getFutureDueDate(viewDate, patchedTask.due_date);
+                        if (days === 1) {
+                          vm.tasks[i].due_state = ' is due tomorrow.';
+                        } else {
+                          vm.tasks[i].due_state = ' is due in ' + days + ' days.';
+                        }
+                        break;
+                      default:
+                        console.log('non-standard state');
+                    }
+                  }
+                }
+
+
+                taskInfoPane.setAttribute("style", "display: none;");
+                infoButton.setAttribute("style", "display: initial; position: relative; display: block; width: 120px; margin: 10px auto; padding: 10px; border-radius: 2%; background-color: #ffff77; border: 1px solid #0000cc; font-family: 'Asul', sans-serif; font-size: 24px; color: #000; text-align: center; text-decoration: none; transform-style: flat; transition: all 250ms ease-out; &:before, &:after {content: \"\"; position: absolute; z-index: -5; transition: all 250ms ease-out;}");
+                taskEditButton.setAttribute("style", "display: initial; position: relative; display: block; width: 120px; margin: 10px auto; padding: 10px; border-radius: 2%; background-color: #ffff77; border: 1px solid #0000cc; font-family: 'Asul', sans-serif; font-size: 24px; color: #000; text-align: center; text-decoration: none; transform-style: flat; transition: all 250ms ease-out; &:before, &:after {content: \"\"; position: absolute; z-index: -5; transition: all 250ms ease-out;}");
+                taskEditName.value = '';
+                taskEditUserNotes.value = '';
+                taskEditDate.value = '';
+                exitButton.removeEventListener('click', ()=>{
+                  console.log('tidy');
+                });
+                taskEditButton.removeEventListener('click', ()=>{
+                  console.log('tidy');
+                });
+                taskPatchSubmit.removeEventListener('click', ()=>{
+                  console.log('tidy');
+                });
+              });
+            }
+          });
+        });
+
+      }
+
+      function taskCompletedButton(taskID) {
+        //console.log(taskID);
+
+        let taskCompletion = {};
+        let doneDate = new Date();
+        taskCompletion.is_completed = true;
+        taskCompletion.completed_date = new Date(doneDate + 'T13:44:00.000Z');
+        $http.get(`/tasks/${taskID}`)
+        .then(completedTaskData=>{
+          let completedTask = completedTaskData.data;
+          let taskDisplay = document.getElementById(completedTask.name + completedTask.id);
+          $http.patch(`/tasks/${taskID}`, taskCompletion)
+          .then(taskData=>{
+            let task = taskData.data;
+            taskDisplay.parentNode.removeChild(taskDisplay);
+          });
+        });
+      }
 
       function addBillToDay() {
         let addBillButton = document.getElementById('addBillButton');
@@ -544,6 +787,33 @@
         }
       }
 
+      function getClockString(hundredthsOfASeconds) {
+        let clockString = '';
+        let minuteString = '';
+        let secondString = '';
+        let hundredthSecondString = '';
+        let minute = Math.floor(hundredthsOfASeconds/6000);
+        let seconds = Math.floor((hundredthsOfASeconds - (minute * 6000))/100);
+        let hundreths = (hundredthsOfASeconds - (minute * 6000) - (seconds * 100));
+        minuteString = minute.toString();
+        if (seconds < 10) {
+          secondString = '0' + seconds.toString();
+        } else {
+          secondString = seconds.toString();
+        }
+        if (hundreths < 10) {
+          hundredthSecondString = '0' + hundreths.toString();
+        } else {
+          hundredthSecondString = hundreths.toString();
+        }
+        clockString = minuteString + ':' + secondString + '.' + hundredthSecondString;
+
+
+
+
+        return(clockString);
+      }
+
       function pomoHandler() {
         let pomoTimerSetting = document.getElementById('pomoTimerSetting');
         let pomoNext = document.getElementById('pomoNext');
@@ -560,12 +830,129 @@
         let decreaseNumberOfPomos = document.getElementById('decreaseNumberOfPomos');
         let increaseNumberOfPomos = document.getElementById('increaseNumberOfPomos');
         let setNumberOfPomos = document.getElementById('setNumberOfPomos');
+        let countdownClock = document.getElementById('countdownClock');
+        let countdownPause = document.getElementById('countdownPause');
+        let countdownResume = document.getElementById('countdownResume');
+        let cancelPomo = document.getElementById('cancelPomo');
+        let countdownStart = document.getElementById('countdownStart');
+        let pomoFocusCounter = document.getElementById('pomoFocusCounter');
+
 
         pomoCountdown.setAttribute("style", "display:none;");
+        countdownPause.setAttribute("style", "display: none;");
+        countdownResume.setAttribute("style", "display: none;");
+        cancelPomo.setAttribute("style", "display: none;");
 
         setPomoInterval.innerHTML = pomoInterval;
         setBreakInterval.innerHTML = pomoBreakInterval;
         setNumberOfPomos.innerHTML = numberOfPomo;
+        countdownClock.innerHTML = getClockString(pomoInterval * 6000);
+
+
+        countdownStart.addEventListener('click', ()=>{
+          let paused = false;
+          let cancelled = false;
+          let pomoSequencer = [];
+          let timerValue = pomoInterval * 6000;
+          let breakTimerValue = pomoBreakInterval * 6000;
+          let sequenceIndex = 0;
+          let pomoStep = 1;
+
+          countdownStart.setAttribute("style", "display: none;");
+          countdownPause.setAttribute("style", "display: initial;");
+          pomoPrevious.setAttribute("style", "display: none;");
+
+          for (let i = 0; i < numberOfPomo; i++) {
+            pomoSequencer[sequenceIndex] = {};
+            pomoSequencer[sequenceIndex].interval = 'Focus: ';
+            pomoSequencer[sequenceIndex].pomo = pomoStep;
+            pomoSequencer[sequenceIndex].timer = timerValue;
+            if (pomoStep !== numberOfPomo) {
+              ++sequenceIndex;
+              pomoSequencer[sequenceIndex] = {};
+              pomoSequencer[sequenceIndex].interval = 'Break: ';
+              pomoSequencer[sequenceIndex].pomo = pomoStep;
+              pomoSequencer[sequenceIndex].timer = breakTimerValue;
+              ++pomoStep;
+            }
+            ++sequenceIndex;
+          }
+
+          function runTheTimer(sequence) {
+            if (cancelled) {
+              runTheTimer([]);
+              return;
+            }
+            if (sequence.length < 1) {
+              countdownClock.setAttribute("style", "color: #000000;");
+              countdownClock.innerHTML = '0:00.00';
+              pomoFocusCounter.innerHTML = 'Completed';
+              countdownPause.setAttribute("style", "display: none;");
+              cancelPomo.setAttribute("style", "display: initial;");
+              cancelPomo.innerHTML = 'Done';
+              return;
+            }
+            if ((sequence[0].interval === 'Focus: ') && (sequence[0].timer === timerValue)) {
+              //Start of sequence, reset display values
+              countdownClock.setAttribute("style", "color: #000000;");
+              pomoFocusCounter.innerHTML = sequence[0].interval + sequence[0].pomo;
+            }
+            if ((sequence[0].interval === 'Break: ') && (sequence[0].timer === breakTimerValue)) {
+              //Start of Sequence, reset display values
+              countdownClock.setAttribute("style", "color: #000000;");
+              pomoFocusCounter.innerHTML = sequence[0].interval + sequence[0].pomo;
+            }
+            countdownClock.innerHTML = getClockString(sequence[0].timer);
+            if (sequence[0].timer === 1000) {
+              countdownClock.setAttribute("style", "color: #ff0000;");
+            }
+            if (!paused) {
+              --sequence[0].timer;
+            }
+            setTimeout(()=>{
+              if (sequence[0].timer === 0) {
+                runTheTimer(sequence.slice(1));
+              } else {
+                runTheTimer(sequence);
+              }
+            }, 10);
+          }
+
+          runTheTimer(pomoSequencer);
+
+
+
+          countdownPause.addEventListener('click', ()=>{
+            countdownPause.setAttribute("style", "display: none;");
+            countdownResume.setAttribute("style", "display: initial;");
+            cancelPomo.setAttribute("style", "display: initial;");
+            paused = true;
+          });
+          countdownResume.addEventListener('click', ()=>{
+            countdownPause.setAttribute("style", "display: initial;");
+            countdownResume.setAttribute("style", "display: none;");
+            cancelPomo.setAttribute("style", "display: none;");
+            paused = false;
+          });
+          cancelPomo.addEventListener('click', ()=>{
+            cancelled = true;
+            pomoState = 0;
+            countdownPause.setAttribute("style", "display: none;");
+            countdownResume.setAttribute("style", "display: none;");
+            cancelPomo.setAttribute("style", "display: none;");
+            countdownStart.setAttribute("style", "display: initial;");
+            cancelPomo.innerHTML = 'Cancel';
+            countdownClock.innerHTML = getClockString(pomoInterval * 6000);
+            pomoCountdown.setAttribute("style", "visibility: hidden; opacity: 0; transition: visibility 0s 1s, opacity 1s linear;");
+            pomoNext.setAttribute("style", "display: initial;");
+            setTimeout(()=>{
+              pomoCountdown.setAttribute("style", "display: none;");
+              pomoTimerSetting.setAttribute("style", "display: initial;");
+              pomoTimerSetting.setAttribute("style", "visibility: visible; opacity: 1; transition: opacity 1s linear;");
+            }, 1000);
+          });
+        });
+
 
         increaseNumberOfPomos.addEventListener('click', ()=>{
           ++numberOfPomo;
@@ -577,6 +964,7 @@
             decreaseNumberOfPomos.setAttribute("style", "display: initial;");
           }
           setNumberOfPomos.innerHTML = numberOfPomo;
+
         });
         decreaseNumberOfPomos.addEventListener('click', ()=>{
           --numberOfPomo;
@@ -616,6 +1004,7 @@
 
           --pomoInterval;
           setPomoInterval.innerHTML = pomoInterval;
+          countdownClock.innerHTML = getClockString(pomoInterval * 6000);
           if (pomoInterval === 1) {
             decreasePomoInterval.setAttribute("style", "display: none;");
             increasePomoInterval.setAttribute("style", "display: initial;");
@@ -627,6 +1016,7 @@
         increasePomoInterval.addEventListener('click', ()=>{
 
           ++pomoInterval;
+          countdownClock.innerHTML = getClockString(pomoInterval * 6000);
           setPomoInterval.innerHTML = pomoInterval;
           if (pomoInterval === 60) {
             increasePomoInterval.setAttribute("style", "display: none;");
@@ -751,12 +1141,12 @@
         let pomodoro = document.getElementById('pomodoro');
 
         if (tense === 'future') {
-          pomodoro.setAttribute("style", "visibility: collapse;");
+          pomodoro.parentNode.removeChild(pomodoro);
           for (let i = 0; i < multiElement.length; i++) {
             multiElement[i].setAttribute("style", "color: #000000;");
           }
         } else if (tense === 'past') {
-          pomodoro.setAttribute("style", "visibility: collapse;");
+          pomodoro.parentNode.removeChild(pomodoro);
           for (let j = 0; j < multiElement.length; j++) {
             multiElement[j].setAttribute("style", "color: #bb9933;");
           }
@@ -1254,6 +1644,80 @@
         });
       }
 
+      function detectTasks() {
+        $http.get(`/tasksbyuser/${currentUserId}`)
+        .then(currentTasksData=>{
+          let days = 0;
+          let currentTasks = currentTasksData.data;
+          let currentTasksDue = [];
+          let element = document.getElementById('tasksList');
+          let todaysTasks = [];
+          let yesterdaysTasks = [];
+          currentTasksDue = currentTasks.filter((task)=>{
+            return (task.is_completed === false);
+          });
+          if (currentTasksDue.length > 0) {
+            for (let i = 0; i < currentTasksDue.length; i++) {
+              currentTasksDue[i].clean_date = getCleanDate(currentTasksDue[i].due_date);
+              console.log(currentTasksDue[i].due_date);
+              switch(getBillTense(viewDate, currentTasksDue[i].due_date)) {
+                case ('past'):
+                  // element = document.getElementById(currentBillsDue[i].name + currentBillsDue[i].id);
+                  // overdueFlash(element);
+                  yesterdaysTasks.push(currentTasksDue[i]);
+                  days = getOverdueStatus(viewDate, currentTasksDue[i].due_date);
+                  if (days === 1) {
+                    currentTasksDue[i].due_state = ' was due yesterday.';
+                  } else {
+                    currentTasksDue[i].due_state = ' is ' + days + '  days overdue!';
+                  }
+                  break;
+                case ('present'):
+                  // element = document.getElementById(currentBillsDue[i].name + currentBillsDue[i].id);
+                  // console.log(element);
+                  // element.setAttribute("style", "background-color: #ff0000;");
+                  todaysTasks.push(currentTasksDue[i]);
+                  currentTasksDue[i].due_state = ' is DUE today!';
+                  break;
+                case ('future'):
+                  days = getFutureDueDate(viewDate, currentTasksDue[i].due_date);
+                  if (days === 1) {
+                    currentTasksDue[i].due_state = ' is due tomorrow.';
+                  } else {
+                    currentTasksDue[i].due_state = ' is due in ' + days + ' days.';
+                  }
+                  break;
+                default:
+                  console.log('non-standard state');
+              }
+
+            }
+          } else {
+            element.setAttribute("style", "display: none;");
+          }
+          vm.tasks = currentTasksDue;
+          console.log(todaysTasks);
+          let idString = '';
+
+          setTimeout(()=>{
+            if (todaysTasks.length > 0) {
+              for (let dueNow = 0; dueNow < todaysTasks.length; dueNow++) {
+                idString = todaysTasks[dueNow].name + todaysTasks[dueNow].id;
+                console.log(idString);
+                document.getElementById(idString).setAttribute("style", "background: #ff0000; background: -webkit-linear-gradient(-45deg, #ff0000, #cc9900); background: -o-linear-gradient(-45deg, #ff0000, #cc9900);   background: -moz-linear-gradient(-45deg, #ff0000, #cc9900); background: linear-gradient(-45deg, #ff0000, #cc9900);");
+              }
+            }
+            if (yesterdaysTasks.length > 0) {
+              for (let dueThen = 0; dueThen < yesterdaysTasks.length; dueThen++) {
+                element = document.getElementById(yesterdaysTasks[dueThen].name + yesterdaysTasks[dueThen].id);
+                overdueFlash(element);
+              }
+            }
+          }, 1000);
+
+        });
+      }
+
       function onInit() {
         console.log("Dayview is lit");
 
@@ -1296,6 +1760,7 @@
         detectHolidays();
         detectOccasions();
         detectBills();
+        detectTasks();
 
       }
 

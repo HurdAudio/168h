@@ -124,6 +124,86 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 7,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/project-of-poster-the-center-of-textile-workers-in-belgium-celebration-on-18th-september-1938(1).jpg',
+          title: 'Project of poster "The center of textile workers in Belgium (celebration on 18th september)"',
+          artist: 'Rene Magritte',
+          year: '1938',
+          rule: {
+            "monday": "[ 29, 8, 18, 28 ]",
+            "tuesday": "[ 27, 6, 16, 26 ]",
+            "wednesday": "[ 25, 4, 14, 24 ]",
+            "thursday": "[ 23, 2, 12, 22 ]",
+            "friday": "[ 21, 31, 10, 20 ]",
+            "saturday": "[ 2, 12, 22, 1 ]",
+            "sunday": "[ 31, 10, 20, 30 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 8,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/project-of-poster-the-center-of-textile-workers-in-belgium-1938-2(1).jpg',
+          title: 'Project of poster "The center of textile workers in Belgium"',
+          artist: 'Rene Magritte',
+          year: '1938',
+          rule: {
+            "monday": "[ 31, 10, 20, 30 ]",
+            "tuesday": "[ 29, 8, 18, 28 ]",
+            "wednesday": "[ 27, 6, 16, 26 ]",
+            "thursday": "[ 25, 4, 14, 24 ]",
+            "friday": "[ 23, 2, 12, 22 ]",
+            "saturday": "[ 21, 31, 10, 20 ]",
+            "sunday": "[ 2, 12, 22, 1 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 9,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/mush-with-wineskins-1912(1).jpg',
+          title: 'Workers with a barrel (diptych)',
+          artist: 'Niko Pirosmani',
+          year: '1912',
+          rule: {
+            "monday": "[ 2, 12, 22, 1 ]",
+            "tuesday": "[ 31, 10, 20, 30 ]",
+            "wednesday": "[ 29, 8, 18, 28 ]",
+            "thursday": "[ 27, 6, 16, 26 ]",
+            "friday": "[ 25, 4, 14, 24 ]",
+            "saturday": "[ 23, 2, 12, 22 ]",
+            "sunday": "[ 21, 31, 10, 20 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 10,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/udarnitzi-record-breaking-workers-at-the-factory-krasnaya-zaria-1931.jpg',
+          title: 'Udarnitzi (Record Breaking Workers) at the Factory Krasnaya Zaria',
+          artist: 'Pavel Filonov',
+          year: '1931',
+          rule: {
+            "monday": "[ 21, 31, 10, 20 ]",
+            "tuesday": "[ 2, 12, 22, 1 ]",
+            "wednesday": "[ 31, 10, 20, 30 ]",
+            "thursday": "[ 29, 8, 18, 28 ]",
+            "friday": "[ 27, 6, 16, 26 ]",
+            "saturday": "[ 25, 4, 14, 24 ]",
+            "sunday": "[ 23, 2, 12, 22 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {

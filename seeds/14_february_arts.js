@@ -704,6 +704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 36,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/a88554e480b8305523f99878b1823408.jpg',
+          title: 'For God\'s Sake, Look at that Art!',
+          artist: 'Kyle Baker',
+          year: 'xxi Cent.',
+          rule: {
+            "monday": "[8, 16, 24, 3]",
+            "tuesday": "[13, 18, 24, 5]",
+            "wednesday": "[12, 20, 28, 7]",
+            "thursday": "[14, 22, 1, 9]",
+            "friday": "[ 16, 24, 3, 13 ]",
+            "saturday": "[18, 26, 22, 13]",
+            "sunday": "[6, 14, 22, 1]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 37,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/baker,m_crown46nov.jpg',
+          title: 'Western Bandit Trails No. 7',
+          artist: 'Matt Baker',
+          year: '1946',
+          rule: {
+            "monday": "[6, 14, 22, 1]",
+            "tuesday": "[8, 16, 24, 3]",
+            "wednesday": "[13, 18, 24, 5]",
+            "thursday": "[12, 20, 28, 7]",
+            "friday": "[ 14, 22, 1, 9 ]",
+            "saturday": "[16, 24, 3, 13]",
+            "sunday": "[18, 26, 22, 13]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 38,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/seattle-pic-470.jpg',
+          title: 'Image of two women taken in Seattle',
+          artist: 'James Presley Ball',
+          year: '1869',
+          rule: {
+            "monday": "[ 18, 26, 22, 13 ]",
+            "tuesday": "[6, 14, 22, 1 ]",
+            "wednesday": "[8, 16, 24, 3 ]",
+            "thursday": "[13, 18, 24, 5 ]",
+            "friday": "[ 12, 20, 28, 7 ]",
+            "saturday": "[14, 22, 1, 9 ]",
+            "sunday": "[16, 24, 3, 13 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 39,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/7dc4b_july10_camh_img.jpg',
+          title: 'Three Navy Sailors',
+          artist: 'Alvin Baltrop',
+          year: '1979 - 1972',
+          rule: {
+            "monday": "[ 16, 24, 3, 13 ]",
+            "tuesday": "[ 18, 26, 22, 13 ]",
+            "wednesday": "[ 6, 14, 22, 1 ]",
+            "thursday": "[ 8, 16, 24, 3 ]",
+            "friday": "[ 13, 18, 24, 5 ]",
+            "saturday": "[12, 20, 28, 7 ]",
+            "sunday": "[14, 22, 1, 9 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 40,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/.jpg',
+          title: 'Untitled',
+          artist: 'Henry Wilmer Bannarn',
+          year: 'xx Cent.',
+          rule: {
+            "monday": "[ 14, 22, 1, 9 ]",
+            "tuesday": "[ 16, 24, 3, 13 ]",
+            "wednesday": "[ 18, 26, 22, 13 ]",
+            "thursday": "[ 6, 14, 22, 1 ]",
+            "friday": "[ 8, 16, 24, 3 ]",
+            "saturday": "[13, 18, 24, 5 ]",
+            "sunday": "[12, 20, 28, 7 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {

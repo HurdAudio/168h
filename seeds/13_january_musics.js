@@ -436,6 +436,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 25,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1856637749/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://parlourtapes.bandcamp.com/album/diligence-is-to-magic-as-progress-is-to-flight',
+          a_string: 'DILIGENCE IS TO MAGIC AS PROGRESS IS TO FLIGHT by Katherine Young, Austin Wulliman, Ensemble Dal Niente',
+          rule: {
+            "monday": "[ 4, 8, 10, 14]",
+            "tuesday": "[10, 17, 19, 18]",
+            "wednesday": "[8, 12, 14, 18]",
+            "thursday": "[10, 17, 19, 18]",
+            "saturday": "[8, 12, 14, 19]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 26,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3535429355/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://michaelvincentwaller.bandcamp.com/album/the-south-shore-4',
+          a_string: 'The South Shore by Michael Vincent Waller',
+          rule: {
+            "monday": "[ 8, 12, 14, 19]",
+            "tuesday": "[4, 8, 10, 14]",
+            "wednesday": "[10, 17, 19, 18]",
+            "thursday": "[8, 12, 14, 18]",
+            "saturday": "[10, 17, 19, 18]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 27,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2971922029/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://starkland.bandcamp.com/album/from-a-to-z',
+          a_string: 'From A to Z by compilation',
+          rule: {
+            "monday": "[ 10, 17, 19, 18]",
+            "tuesday": "[8, 12, 14, 19]",
+            "wednesday": "[4, 8, 10, 14]",
+            "thursday": "[10, 17, 19, 18]",
+            "saturday": "[8, 12, 14, 18]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {

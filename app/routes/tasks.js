@@ -43,6 +43,7 @@ router.post('/', (req, res, next) => {
     name: req.body.name,
     user_notes: req.body.user_notes,
     due_date: req.body.due_date,
+    completed_date: req.body.completed_date,
     is_completed: req.body.is_completed
   }, '*')
   .then((result) => {
@@ -62,6 +63,7 @@ router.patch('/:id', (req, res, next) => {
     name: req.body.name,
     user_notes: req.body.user_notes,
     due_date: req.body.due_date,
+    completed_date: req.body.completed_date,
     is_completed: req.body.is_completed
   }, '*')
     .then((results)=>{
@@ -100,6 +102,7 @@ router.delete('/:id', (req, res, next) => {
             name: record.name,
             user_notes: record.user_notes,
             due_date: record.due_date,
+            completed_date: record.completed_date,
             is_completed: record.is_completed,
             created_at: record.created_at,
             updated_at: record.updated_at

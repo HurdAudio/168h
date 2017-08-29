@@ -504,6 +504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 26,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/saint-catherine-of-alexandria-presumed-self-portrait-1589.jpg',
+          title: 'Saint Catherine of Alexandria (presumed self-portrait)',
+          artist: 'Barbara Longhi',
+          year: '1589',
+          rule: {
+            "monday": "[ 31, 10, 18, 28 ]",
+            "tuesday": "[ 30, 9, 17, 27 ]",
+            "wednesday": "[ 29, 8, 16, 26 ]",
+            "thursday": "[ 4, 14, 22, 1 ]",
+            "friday": "[ 3, 13, 21, 31 ]",
+            "saturday": "[ 2, 12, 20, 30 ]",
+            "sunday": "[ 1, 11, 19, 29 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 27,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/dada-portrait-of-berenice-abbott-1926.jpg',
+          title: 'Dada Portrait of Berenice Abbott',
+          artist: 'Elsa von Freytag-Loringhoven',
+          year: '1926',
+          rule: {
+            "monday": "[ 1, 11, 19, 29 ]",
+            "tuesday": "[ 31, 10, 18, 28 ]",
+            "wednesday": "[ 30, 9, 17, 27 ]",
+            "thursday": "[ 29, 8, 16, 26 ]",
+            "friday": "[ 4, 14, 22, 1 ]",
+            "saturday": "[ 3, 13, 21, 31 ]",
+            "sunday": "[ 2, 12, 20, 30 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 28,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/pere-ubu-1936.jpg',
+          title: 'Pere Ubu',
+          artist: 'Dora Maar',
+          year: '1936',
+          rule: {
+            "monday": "[ 3, 13, 21, 31 ]",
+            "tuesday": "[ 2, 12, 20, 30 ]",
+            "wednesday": "[ 1, 11, 19, 29 ]",
+            "thursday": "[ 31, 10, 18, 28 ]",
+            "friday": "[ 30, 9, 17, 27 ]",
+            "saturday": "[ 5, 15, 23, 2 ]",
+            "sunday": "[ 4, 14, 22, 1 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 29,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/woman-with-a-cat-c-1970-4.jpg',
+          title: 'Woman with a Cat',
+          artist: 'Margit Selska',
+          year: '1970',
+          rule: {
+            "monday": "[ 4, 14, 22, 1 ]",
+            "tuesday": "[ 3, 13, 21, 31 ]",
+            "wednesday": "[ 2, 12, 20, 30 ]",
+            "thursday": "[ 1, 11, 19, 29 ]",
+            "friday": "[ 31, 10, 18, 28 ]",
+            "saturday": "[ 30, 9, 17, 27 ]",
+            "sunday": "[ 5, 15, 23, 2 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 30,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/.jpg',
+          title: 'figures-in-a-garden-1981',
+          artist: 'Eileen Agar',
+          year: '1979 - 1981',
+          rule: {
+            "monday": "[ 5, 15, 23, 2 ]",
+            "tuesday": "[ 4, 14, 24, 1 ]",
+            "wednesday": "[ 3, 13, 21, 31 ]",
+            "thursday": "[ 2, 12, 20, 30 ]",
+            "friday": "[ 1, 11, 19, 29 ]",
+            "saturday": "[ 31, 10, 18, 28 ]",
+            "sunday": "[ 30, 9, 17, 27 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {

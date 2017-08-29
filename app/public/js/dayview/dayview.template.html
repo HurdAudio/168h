@@ -41,9 +41,12 @@
         <button id="increaseNumberOfPomos">+</button>
       </li>
       <li id="pomoCountdown">
-        <button>Start</button>
-        <p>Pomo: 1</p>
-        <h1>25:00</h1>
+        <button id="countdownResume">Resume</button>
+        <button id="countdownStart">Start</button>
+        <button id="countdownPause">Pause</button>
+        <button id="cancelPomo">Cancel</button>
+        <p id="pomoFocusCounter">Pomo: 1</p>
+        <h1 id="countdownClock"></h1>
 
 
       </li>
@@ -491,10 +494,69 @@
 
     </div>
 
+    <div id="tasksList">
+      <div class="billsAndTasks">
+        <a href="" class="btn" id="addTaskButton" ng-click="$ctrl.addTaskToDay()">add</a>
+        <h2>Task Tracker</h2>
+        <div id="taskEntryForm">
+          <form class="pure-form">
+            <fieldset class="pure-group">
+              <input id="enterTaskName" type="text" class="pure-input-1" placeholder="Task Name">
+              <input id="enterTaskInfos" type="text" class="pure-input-1" placeholder="Additional Information (optional)">
+              <p>Task Due:</p>
+              <input id="enterTaskDate" type="date" class="pure-input-1">
 
-    <div class="billsAndTasks">
-      <p>Migration and seed files due tomorrow</p><a href="#" class="btn"><p>completed</p></a>
+
+              <h3 id="taskEntryErrorField"></h3>
+
+
+            </fieldset>
+
+          </form>
+          <a href="" class="btn" id="taskSubmitButton">submit</a>
+          <a href="" class="btn" id="taskEntryCancelButton">cancel</a>
+
+        </div>
+
+
+
+      </div>
+      <main ng-repeat="task in $ctrl.tasks | orderBy : $ctrl.sortBy">
+        <div class="billsAndTasks" id="{{task.name + task.id}}">
+          <p>{{task.name}}{{task.due_state}}</p>
+          <a href="" ng-click="$ctrl.taskCompletedButton(task.id)" class="btn" id="{{task.name + task.user_id + task.id}}">done</a>
+          <div class="taskPal" id="{{task.id + task.name}}">
+            <p>{{task.name}}</p>
+            <p>{{task.user_notes}}</p>
+            <p>Due: {{task.clean_date}}</p>
+            <div id="{{task.name + task.id + task.name + task.name}}">
+              <form class="pure-form">
+                <fieldset class="pure-group">
+
+                  <input id="{{task.user_id + task.name + task.id}}" type="text" class="pure-input-1" placeholder="{{task.name}}">
+                  <input id="{{task.name + task.user_id + task.name + task.id}}" type="text" class="pure-input-1" placeholder="{{task.user_notes}}">
+                  <p>New Due Date:</p>
+                  <input id="{{task.id +task.name + task.id + task.name +task.name + task.name + task.id}}" type="date" class="pure-input-1">
+                </fieldset>
+
+              </form>
+              <h3 id="{{task.name + task.user_id + task.name + task.id + task.name + task.id}}"></h3>
+              <a href="" id="{{task.id + task.name + task.id + task.name + task.user_id + task.name}}" class="btn">submit</a>
+            </div>
+
+            <a href="" id="{{task.name + task.id + task.name}}" class="btn">edit</a>
+            <a href="" id="{{task.name + task.name + task.id}}" class="btn">exit</a>
+
+          </div>
+          <a href="" ng-click="$ctrl.taskInfo(task.id)" class="btn" id="{{task.name + task.id + task.name + task.id + task.name}}">info</a>
+        </div>
+      </main>
     </div>
+
+
+    <!-- <div class="billsAndTasks">
+      <p>Migration and seed files due tomorrow</p><a href="#" class="btn"><p>completed</p></a>
+    </div> -->
     <div id="sleepGoals">
       <h4>Sleep Goal: 56 hours</h4>
       <h5>Projected Sleep for current week:</h5><h1>52</h1>

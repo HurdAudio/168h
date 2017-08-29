@@ -904,6 +904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 46,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/no-61-rust-and-blue.jpg',
+          title: 'No.61 (Rust and Blue)',
+          artist: 'Mark Rothko',
+          year: '1953',
+          rule: {
+            "monday": "[ 22, 24, 25, 28]",
+            "tuesday": "[7, 8, 10, 11]",
+            "wednesday": "[10, 13, 14, 24]",
+            "thursday": "[12, 13, 16, 18]",
+            "friday": "[15, 16, 18, 11]",
+            "saturday": "[18, 20, 22, 23]",
+            "sunday": "[20, 22, 26, 29]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 47,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/buchanan-1987.jpg',
+          title: 'Buchanan',
+          artist: 'Albert Irvin',
+          year: '1987',
+          rule: {
+            "monday": "[ 20, 22, 26, 29]",
+            "tuesday": "[22, 24, 25, 28]",
+            "wednesday": "[7, 8, 10, 11]",
+            "thursday": "[10, 13, 14, 24]",
+            "friday": "[12, 13, 16, 18]",
+            "saturday": "[15, 16, 18, 11]",
+            "sunday": "[18, 20, 22, 23]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 48,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/bright-colors-on-pale-green-1976.jpg',
+          title: 'Bright Colors on Pale Green',
+          artist: 'Robert Goodnough',
+          year: '1976',
+          rule: {
+            "monday": "[ 18, 20, 22, 23]",
+            "tuesday": "[20, 22, 26, 29]",
+            "wednesday": "[22, 24, 25, 28]",
+            "thursday": "[7, 8, 10, 11]",
+            "friday": "[10, 13, 14, 24]",
+            "saturday": "[12, 13, 16, 18]",
+            "sunday": "[15, 16, 18, 11]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 49,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/black-red-1962.jpg',
+          title: 'Black/Red',
+          artist: 'Jack Youngerman',
+          year: '1962',
+          rule: {
+            "monday": "[ 16, 17, 19, 12]",
+            "tuesday": "[19, 21, 23, 24]",
+            "wednesday": "[21, 23, 27, 30]",
+            "thursday": "[23, 25, 26, 29]",
+            "friday": "[8, 9, 11, 12]",
+            "saturday": "[11, 14, 15, 25]",
+            "sunday": "[13, 14, 17, 19]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 50,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/hoop-la-1965.jpg',
+          title: 'Hoop-La',
+          artist: 'Jeremy Moon',
+          year: '1965',
+          rule: {
+            "monday": "[ 13, 14, 17, 19]",
+            "tuesday": "[16, 17, 19, 12]",
+            "wednesday": "[19, 21, 23, 24]",
+            "thursday": "[21, 23, 27, 30]",
+            "friday": "[23, 25, 26, 29]",
+            "saturday": "[8, 9, 11, 12]",
+            "sunday": "[11, 14, 15, 25]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {

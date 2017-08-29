@@ -24,6 +24,8 @@ const blocktypes = require('./routes/blocktypes.js');
 const blocktypesbyuser = require('./routes/blocktypesbyuser.js');
 const timeblocks = require('./routes/timeblocks.js');
 const timeblocksbyuser = require('./routes/timeblocksbyuser.js');
+const goals = require('./routes/goals.js');
+const goalsbyuser = require('./routes/goalsbyuser.js');
 // const user_blogs = require('./routes/user_blogs.js');
 // const blog_comments = require('./routes/blog_comments.js');
 // const books = require('./routes/books.js');
@@ -149,6 +151,8 @@ app.use('/moment', express.static(path.join(__dirname, '../node_modules/moment/m
  app.use('/blocktypesbyuser', blocktypesbyuser);
  app.use('/timeblocks', timeblocks);
  app.use('/timeblocksbyuser', timeblocksbyuser);
+ app.use('/goals', goals);
+ app.use('/goalsbyuser', goalsbyuser);
 // app.use('/user_blogs', user_blogs);
 // app.use('/blog_comments', blog_comments);
 // app.use('/books', books);

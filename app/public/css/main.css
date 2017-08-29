@@ -1588,7 +1588,7 @@ a.btn:hover {
   width: 100%;
 
   height: 5.5em;
-  margin-bottom: 0em;
+  margin-bottom: 0;
 }
 
 
@@ -2441,11 +2441,62 @@ footer img {
   width: 40%;
 }
 
+.taskPal {
+  display: initial;
+  align-items: center;
+  align-content: center;
+}
+
+.taskPal p {
+  font-family: 'Alike Angular', serif;
+  font-size: 18px;
+  margin-left: 3em;
+}
+
+.taskPal input[type=text] {
+  width: 95%;
+  align-self: center;
+}
+
+.taskPal input[type=date] {
+  width: 75%;
+  align-self: center;
+}
+
+#taskEntryForm {
+  display: initial;
+  align-items: center;
+  align-content: center;
+}
+
+
+
+#taskEntryForm  p {
+  font-family: 'Alike Angular', serif;
+  font-size: 18px;
+  margin-left: 3em;
+}
+
+#taskEntryForm input[type=text] {
+  width: 95%;
+  align-self: center;
+}
+
+#taskEntryForm input[type=date] {
+  width: 75%;
+  align-self: center;
+}
+
 .billInfos {
   display: none;
 }
 
 #addBillButton {
+  float: right;
+  margin-right: 0.5em;
+}
+
+#addTaskButton {
   float: right;
   margin-right: 0.5em;
 }
@@ -2477,4 +2528,25 @@ footer img {
   font-size: 24px;
   margin-left: 1em;
   color: #ff0000;
+}
+
+.taskPal {
+  display: none;
+}
+
+#taskEntryForm {
+  display: none;
+}
+
+#taskEntryErrorField {
+  font-family: 'Alike Angular', serif;
+  font-size: 24px;
+  margin-left: 1em;
+  color: #ff0000;
+}
+
+#countdownClock {
+  font-family: 'Space Mono', monospace;
+  font-weight: bolder;
+  font-size: 24px;
 }

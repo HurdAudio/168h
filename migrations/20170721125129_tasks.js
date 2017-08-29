@@ -6,6 +6,7 @@ exports.up = function(knex, Promise) {
     table.string('name').notNullable().defaultTo('');
     table.text('user_notes').notNullable().defaultTo('');
     table.date('due_date').notNullable().defaultTo('1970-01-01');
+    table.date('completed_date').defaultTo(null);
     table.boolean('is_completed').notNullable().defaultTo(false);
     table.timestamps(true, true);
   });

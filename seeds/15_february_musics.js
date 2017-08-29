@@ -328,6 +328,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 19,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3516001583/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://destination-out.bandcamp.com/album/berlin-skyscraper',
+          a_string: 'Berlin Skyscraper by BUTCH MORRIS',
+          rule: {
+            "monday": "[ 8, 12, 14, 18]",
+            "tuesday": "[ 20, 14, 16, 21]",
+            "wednesday": "[ 13, 17, 19, 22]",
+            "thursday": "[ 4, 8, 10, 14]",
+            "saturday": "[ 6, 10, 12, 16]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 20,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=771456059/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://destination-out.bandcamp.com/album/portrait',
+          a_string: 'Portrait by SAM RIVERS',
+          rule: {
+            "monday": "[ 6, 10, 12, 16]",
+            "tuesday": "[ 8, 12, 14, 18]",
+            "wednesday": "[ 20, 14, 16, 21]",
+            "thursday": "[ 13, 17, 19, 22]",
+            "saturday": "[ 4, 8, 10, 14]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 21,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1717215428/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://destination-out.bandcamp.com/album/nailed',
+          a_string: 'Nailed by CECIL TAYLOR',
+          rule: {
+            "monday": "[ 5, 9, 11, 15]",
+            "tuesday": "[ 7, 11, 13, 17]",
+            "wednesday": "[ 9, 13, 15, 19]",
+            "thursday": "[ 21, 15, 17, 22]",
+            "saturday": "[ 14, 18, 20, 23]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {

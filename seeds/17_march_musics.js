@@ -220,6 +220,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 13,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3001875899/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://infrequentseams.bandcamp.com/album/mzm',
+          a_string: 'MZM by Miya Masaoka, Zeena Parkins, Myra Melford',
+          rule: {
+            "monday": "[ 2, 8, 14, 22 ]",
+            "tuesday": "[ 6, 12, 18, 26 ]",
+            "wednesday": "[ 5, 11, 17, 25 ]",
+            "thursday": "[ 4, 10, 16, 24 ]",
+            "saturday": "[ 3, 9, 15, 23 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 14,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=769961488/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://conniecrothersvirgdzurinkotwo-pianoquintet.bandcamp.com/album/connie-crothers-virg-dzurinko-two-piano-quintet',
+          a_string: 'Connie Crothers/Virg Dzurinko Two-Piano Quintet by Connie Crothers/Virg Dzurinko Two-Piano Quintet',
+          rule: {
+            "monday": "[ 4, 10, 16, 24 ]",
+            "tuesday": "[ 3, 9, 15, 23 ]",
+            "wednesday": "[ 7, 13, 19, 27 ]",
+            "thursday": "[ 6, 12, 18, 26 ]",
+            "saturday": "[ 5, 11, 17, 25 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 15,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1288456079/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://lydialunch.bandcamp.com/album/retrovirus',
+          a_string: 'Retrovirus by Lydia Lunch',
+          rule: {
+            "monday": "[ 5, 11, 17, 25 ]",
+            "tuesday": "[ 4, 10, 16, 24 ]",
+            "wednesday": "[ 3, 9, 15, 23 ]",
+            "thursday": "[ 7, 13, 19, 27 ]",
+            "saturday": "[ 6, 12, 18, 26 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
