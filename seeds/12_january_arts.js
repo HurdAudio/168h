@@ -1004,6 +1004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 51,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/aeroflower-1942.jpg',
+          title: 'Aeroflower',
+          artist: 'Jimmy Ernst',
+          year: '1942',
+          rule: {
+            "monday": "[ 11, 14, 15, 25]",
+            "tuesday": "[13, 14, 17, 19]",
+            "wednesday": "[16, 17, 19, 12]",
+            "thursday": "[19, 21, 23, 24]",
+            "friday": "[21, 23, 27, 30]",
+            "saturday": "[23, 25, 26, 29]",
+            "sunday": "[8, 9, 11, 12]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 52,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/still-life-at-the-sea-1946.jpg',
+          title: 'Still Life at the Sea',
+          artist: 'Antonio Corpora',
+          year: '1946',
+          rule: {
+            "monday": "[ 8, 9, 11, 12]",
+            "tuesday": "[11, 14, 15, 25]",
+            "wednesday": "[13, 14, 17, 19]",
+            "thursday": "[16, 17, 19, 12]",
+            "friday": "[19, 21, 23, 24]",
+            "saturday": "[21, 23, 27, 30]",
+            "sunday": "[23, 25, 26, 29]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 53,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/dwarf-1947.jpg',
+          title: 'Dwarf',
+          artist: 'William Baziotes',
+          year: '1947',
+          rule: {
+            "monday": "[ 23, 25, 26, 29 ]",
+            "tuesday": "[ 8, 9, 11, 12 ]",
+            "wednesday": "[ 11, 14, 15, 25 ]",
+            "thursday": "[ 13, 14, 16, 19 ]",
+            "friday": "[ 16, 17, 19, 12 ]",
+            "saturday": "[ 19, 21, 23, 24 ]",
+            "sunday": "[ 21, 23, 27, 30 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 54,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/a-time-for-fear-1949.jpg',
+          title: 'A Time for Fear',
+          artist: 'Jimmy Ernst',
+          year: '1949',
+          rule: {
+            "monday": "[ 21, 23, 27, 30 ]",
+            "tuesday": "[ 23, 25, 26, 29 ]",
+            "wednesday": "[ 8, 9, 11, 12 ]",
+            "thursday": "[ 11, 14, 15, 25 ]",
+            "friday": "[ 13, 14, 16, 19 ]",
+            "saturday": "[ 16, 17, 19, 12 ]",
+            "sunday": "[ 19, 21, 23, 24 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 55,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/chicago-1951.jpg',
+          title: 'Chicago',
+          artist: 'Aaron Siskind',
+          year: '1951',
+          rule: {
+            "monday": "[ 19, 21, 23, 24 ]",
+            "tuesday": "[ 21, 23, 27, 30 ]",
+            "wednesday": "[ 23, 25, 26, 29 ]",
+            "thursday": "[ 8, 9, 11, 12 ]",
+            "friday": "[ 11, 14, 15, 25 ]",
+            "saturday": "[ 13, 14, 16, 19 ]",
+            "sunday": "[ 16, 17, 10, 12 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
