@@ -7,7 +7,7 @@
   var day = 0;
   var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
   var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
-  var hours = ['h0', 'h030', 'h1', 'h130', 'h2', 'h230', 'h3', 'h330', 'h4', 'h430', 'h5', 'h530', 'h6', 'h630', 'h7', 'h730', 'h8', 'h830', 'h9', 'h930', 'h10', 'h1030', 'h11', 'h1130', 'h12', 'h1230', 'h13', 'h1330', 'h14', 'h1430', 'h15', 'h1530', 'h16', 'h1630', 'h17', 'h1730', 'h18', 'h1830', 'h19', 'h1930', 'h20', 'h2030', 'h21', 'h2130', 'h22', 'h2230', 'h23', 'h2330' ];
+  var hours = ['h0', 'h030', 'h1', 'h130', 'h2', 'h230', 'h3', 'h330', 'h4', 'h430', 'h5', 'h530', 'h6', 'h630', 'h7', 'h730', 'h8', 'h830', 'h9', 'h930', 'h10', 'h1030', 'h11', 'h1130', 'h12', 'h1230', 'h13', 'h1330', 'h14', 'h1430', 'h15', 'h1530', 'h16', 'h1630', 'h17', 'h1730', 'h18', 'h1830', 'h19', 'h1930', 'h20', 'h2030', 'h21', 'h2130', 'h22', 'h2230', 'h23', 'h2330', 'h00' ];
   var pulses = [ '#ff0000', '#ff1100', '#ff2211', '#ff3322', '#ff4433', '#ff5544', '#ff6655', '#ff7766', '#ff8877', '#ff9988', '#ffaa99', '#ffbbaa', '#ffccbb', '#ffddcc', '#ffeedd', '#ffffee', '#ffeeff', '#ffddee', '#ffccdd', '#ffbbcc', '#ffaabb', '#ff99aa', '#ff8899', '#ff7788', '#ff6677', '#ff5566', '#ff4455', '#ff3344', '#ff2233', '#ff1122', '#ff0011' ];
   var pomoInterval = 25;
   var pomoBreakInterval = 5;
@@ -634,7 +634,9 @@
 
       function gotoToday() {
         let navDay = new Date();
+        navDay.setDate(navDay.getDate());
         let idString = 'user=' + currentUserId + '&dayof=' + navDay.getFullYear() + '-' + (navDay.getMonth() + 1) + '-' + navDay.getDate();
+        console.log(idString);
         $state.go('dayview', {id: idString});
       }
 
@@ -1718,6 +1720,139 @@
         });
       }
 
+      function convertTimeToID(time) {
+        let timeID = '';
+        let timeCheck = time.toString();
+        let hour = '';
+        if (timeCheck[11] === '0') {
+          if (timeCheck[12] === '0') {
+            hour = '00';
+          } else {
+            hour = timeCheck[12];
+          }
+        } else {
+          hour = timeCheck.slice(11,13);
+        }
+
+        if (timeCheck[14] === '3') {
+          timeID = 'h' + hour + '30';
+        } else {
+          timeID = 'h' + hour;
+        }
+
+        return(timeID);
+      }
+
+      function timeblockRange(block) {
+        let times = [];
+        let start = convertTimeToID(block.start_time);
+        console.log(start);
+        let end = convertTimeToID(block.end_time);
+        console.log(end);
+
+        let index = hours.indexOf(start);
+        let endIndex = hours.indexOf(end);
+
+        if (endIndex < index) {
+          index = 0;
+        }
+
+        for (let i = index; i < endIndex; i++) {
+          times.push(hours[i]);
+        }
+        console.log(times);
+        return(times);
+      }
+
+      function setFillAppointments(timeblock, lineID) {
+        let element = document.getElementById(lineID);
+        element = element.children[0];
+        $http.get(`/blocktypes/${timeblock.block_type}`)
+        .then(blockData=>{
+          let block = blockData.data;
+          element.setAttribute("style", "height: 100%; background-color: " + block.color + "; opacity: 0.8; border-top: solid " + block.color + " 3px;");
+          element.appointment = timeblock.id;
+        });
+      }
+
+      function setToplineAppointment(timeblock, lineID) {
+        console.log(lineID);
+        let element = document.getElementById(lineID);
+        element = element.children[0];
+        $http.get(`/blocktypes/${timeblock.block_type}`)
+        .then(blockData=>{
+          let block = blockData.data;
+          element.setAttribute("style", "height: 100%; background-color: " + block.color + "; opacity: 0.8; border-top: solid " + block.color + " 3px;");
+          element.appointment = timeblock.id;
+          element = element.children[0];
+          element.innerHTML = element.innerHTML + ' - ' + block.type;
+        });
+      }
+
+      function getAppointmentTense(referenceDate, startTimeDate) {
+
+
+        let tense = 'present';
+        let start = startTimeDate.toString();
+        let referenceYear = referenceDate.getFullYear();
+        let startYear = parseInt(start.slice(0, 4));
+        let referenceMonth = referenceDate.getMonth() +1;
+        let startMonth = start.slice(5, 7);
+        startMonth = parseInt(startMonth);
+        let referenceDay = referenceDate.getDate();
+        let startDay = start.slice(8, 10);
+        startDay = parseInt(startDay);
+
+        if (startYear > referenceYear) {
+          tense = 'future';
+        } else if (startYear < referenceYear) {
+          tense = 'past';
+        } else {
+          if (startMonth > referenceMonth) {
+            tense = 'future';
+          } else if (startMonth < referenceMonth) {
+            tense = 'past';
+          } else {
+            if (startDay > referenceDay) {
+              tense = 'future';
+            } else if (startDay < referenceDay) {
+              tense = 'past';
+            } else {
+              tense = 'present';
+            }
+          }
+        }
+
+
+        return(tense);
+      }
+
+      function detectTimeBlocks() {
+
+        $http.get(`/timeblocksbyuser/${currentUserId}`)
+        .then(fullUserTimeblocksData=>{
+          let fullUserTimeblocks = fullUserTimeblocksData.data;
+          let todaysTimeblocks = [];
+          todaysTimeblocks = fullUserTimeblocks.filter((block)=>{
+            return ((getAppointmentTense(viewDate, block.start_time)) === 'present');
+          });
+          if (todaysTimeblocks.length > 0) {
+            let fillArray = [];
+
+             for (let i = 0; i < todaysTimeblocks.length; i++) {
+               fillArray[i] = [];
+               fillArray[i] = timeblockRange(todaysTimeblocks[i]);
+               setToplineAppointment(todaysTimeblocks[i], fillArray[i][0]);
+               if (fillArray[i].length > 1) {
+                 for (let j = 1; j < fillArray[i].length; j++) {
+                   setFillAppointments(todaysTimeblocks[i], fillArray[i][j]);
+                 }
+               }
+             }
+          }
+        });
+      }
+
       function onInit() {
         console.log("Dayview is lit");
 
@@ -1761,6 +1896,7 @@
         detectOccasions();
         detectBills();
         detectTasks();
+        detectTimeBlocks();
 
       }
 
