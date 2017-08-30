@@ -334,6 +334,36 @@ exports.seed = function(knex, Promise) {
           a_string: 'Dømkirke by SUNN O)))',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 34,
+          user_id: 1,
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2350225072/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sunaraw.bandcamp.com/album/ancient-romans',
+          a_string: 'Ancient Romans by SUN ARAW',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 35,
+          user_id: 1,
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1350047369/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sunarawmonofonus.bandcamp.com/album/houston-abstros',
+          a_string: 'Houston Abstros by Sun Araw',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 36,
+          user_id: 1,
+          source: 'bandcamp',
+          src_string: 'http://bandcamp.com/EmbeddedPlayer/album=458873983/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://shop.mentalgroove.ch/album/geneva-hits',
+          a_string: 'Geneva Hits by Sun Araw',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
