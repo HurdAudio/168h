@@ -304,6 +304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 16,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/bloody-sunday-shooting-workers-near-the-winter-palace-january-9-1905-1.jpg',
+          title: 'Bloody Sunday. Shooting workers near the Winter Palace January 9, 1905.',
+          artist: 'Ivan Vladimirov',
+          year: 'XIX-XX cent.',
+          rule: {
+            "monday": "[ 3, 13, 23, 2 ]",
+            "tuesday": "[ 1, 11, 21, 31 ]",
+            "wednesday": "[ 30, 9, 19, 29 ]",
+            "thursday": "[ 28, 7, 17, 27 ]",
+            "friday": "[ 26, 5, 15, 25 ]",
+            "saturday": "[ 24, 3, 13, 23 ]",
+            "sunday": "[ 22, 1, 11, 21 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 17,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/steel-workers.jpg',
+          title: 'Steel Workers',
+          artist: 'Corneliu Baba',
+          year: 'XX cent.',
+          rule: {
+            "monday": "[ 22, 1, 11, 21 ]",
+            "tuesday": "[ 3, 13, 23, 2 ]",
+            "wednesday": "[ 1, 11, 21, 31 ]",
+            "thursday": "[ 30, 9, 19, 29 ]",
+            "friday": "[ 28, 7, 17, 27 ]",
+            "saturday": "[ 26, 5, 15, 25 ]",
+            "sunday": "[ 24, 3, 13, 23 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 18,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/house-workers-in-the-bronx.jpg',
+          title: 'House Workers in the Bronx',
+          artist: 'Abraham Manievich',
+          year: 'XIX-XX cent.',
+          rule: {
+            "monday": "[ 24, 3, 13, 23 ]",
+            "tuesday": "[ 22, 1, 11, 21 ]",
+            "wednesday": "[ 3, 13, 23, 2 ]",
+            "thursday": "[ 1, 11, 21, 31 ]",
+            "friday": "[ 30, 9, 19, 29 ]",
+            "saturday": "[ 28, 7, 17, 27 ]",
+            "sunday": "[ 26, 5, 15, 25 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 19,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/farm-farm-workers-mt-williamson-in-background-manzanar-relocation-center-california-1943.jpg',
+          title: 'Farm, farm workers, Mt. Williamson in background, Manzanar Relocation Center, California',
+          artist: 'Ansel Adams',
+          year: '1943',
+          rule: {
+            "monday": "[ 26, 5, 15, 25 ]",
+            "tuesday": "[ 24, 3, 13, 23 ]",
+            "wednesday": "[ 22, 1, 11, 21 ]",
+            "thursday": "[ 3, 13, 23, 2 ]",
+            "friday": "[ 1, 11, 21, 31 ]",
+            "saturday": "[ 30, 9, 19, 29 ]",
+            "sunday": "[ 28, 7, 17, 27 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 20,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/muncitor-agricultura-1931.jpg',
+          title: 'Worker (Agriculture)',
+          artist: 'Alexandru Phoebus',
+          year: '1931',
+          rule: {
+            "monday": "[ 28, 7, 17, 27 ]",
+            "tuesday": "[ 26, 5, 15, 25 ]",
+            "wednesday": "[ 24, 3, 13, 23 ]",
+            "thursday": "[ 22, 1, 11, 21 ]",
+            "friday": "[ 3, 13, 23, 2 ]",
+            "saturday": "[ 1, 11, 21, 31 ]",
+            "sunday": "[ 30, 9, 19, 29 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
