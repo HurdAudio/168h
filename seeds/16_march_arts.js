@@ -704,6 +704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 36,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/going-up-1978.jpg',
+          title: 'Going Up',
+          artist: 'Betty Parsons',
+          year: '1978',
+          rule: {
+            "monday": "[ 5, 15, 25, 2 ]",
+            "tuesday": "[ 4, 14, 22, 1 ]",
+            "wednesday": "[ 3, 13, 21, 31 ]",
+            "thursday": "[ 2, 12, 20, 30 ]",
+            "friday": "[ 1, 11, 19, 29 ]",
+            "saturday": "[ 31, 10, 18, 28 ]",
+            "sunday": "[ 6, 16, 24, 3 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 37,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/bog-ia-apelor.jpg',
+          title: 'Richness of Waters',
+          artist: 'Micaela Eleutheriade',
+          year: '?',
+          rule: {
+            "monday": "[ 6, 16, 24, 3 ]",
+            "tuesday": "[ 5, 15, 25, 2 ]",
+            "wednesday": "[ 4, 14, 22, 1 ]",
+            "thursday": "[ 3, 13, 21, 31 ]",
+            "friday": "[ 2, 12, 20, 30 ]",
+            "saturday": "[ 1, 11, 19, 29 ]",
+            "sunday": "[ 31, 10, 18, 28 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 38,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/windows-no-2-1965.jpg',
+          title: 'Windows (no. 2)',
+          artist: 'Alice Neel',
+          year: '1965',
+          rule: {
+            "monday": "[ 31, 10, 18, 28 ]",
+            "tuesday": "[ 6, 16, 24, 3 ]",
+            "wednesday": "[ 5, 15, 25, 2 ]",
+            "thursday": "[ 4, 14, 22, 1 ]",
+            "friday": "[ 3, 13, 21, 31 ]",
+            "saturday": "[ 2, 12, 20, 30 ]",
+            "sunday": "[ 1, 11, 19, 29 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 39,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/diario(2).jpg',
+          title: 'Diario',
+          artist: 'Bice Lazzari',
+          year: '?',
+          rule: {
+            "monday": "[ 1, 11, 19, 29 ]",
+            "tuesday": "[ 31, 10, 18, 28 ]",
+            "wednesday": "[ 6, 16, 24, 3 ]",
+            "thursday": "[ 5, 15, 25, 2 ]",
+            "friday": "[ 4, 14, 22, 1 ]",
+            "saturday": "[ 3, 13, 21, 31 ]",
+            "sunday": "[ 2, 12, 20, 30 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 40,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/courtyard-in-nork.jpg',
+          title: 'Courtyard in Nork',
+          artist: 'Gohar Fermanyan',
+          year: '?',
+          rule: {
+            "monday": "[ 2, 12, 20, 30 ]",
+            "tuesday": "[ 1, 11, 19, 29 ]",
+            "wednesday": "[ 31, 10, 18, 28 ]",
+            "thursday": "[ 6, 16, 24, 3 ]",
+            "friday": "[ 5, 15, 25, 2 ]",
+            "saturday": "[ 4, 14, 22, 1 ]",
+            "sunday": "[ 3, 13, 21, 31 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
