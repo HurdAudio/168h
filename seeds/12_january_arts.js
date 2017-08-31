@@ -1104,6 +1104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 56,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/it-was-yellow-and-pink-ii.jpg',
+          title: 'It Was Yellow and Pink II',
+          artist: 'Georgia O\'Keeffe',
+          year: '1959',
+          rule: {
+            "monday": "[ 17, 18, 9, 13 ]",
+            "tuesday": "[ 20, 22, 24, 25 ]",
+            "wednesday": "[ 22, 24, 28, 31 ]",
+            "thursday": "[ 24, 26, 27, 30 ]",
+            "friday": "[ 9, 10, 12, 13 ]",
+            "saturday": "[ 12, 15, 16, 26 ]",
+            "sunday": "[ 14, 15, 17, 20 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 57,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/song-cycle-1988.jpg',
+          title: 'Song Cycle',
+          artist: 'Ralph Hotere',
+          year: '1988',
+          rule: {
+            "monday": "[ 14, 15, 17, 20 ]",
+            "tuesday": "[ 17, 18, 9, 13 ]",
+            "wednesday": "[ 20, 22, 24, 25 ]",
+            "thursday": "[ 22, 24, 28, 31 ]",
+            "friday": "[ 24, 26, 27, 30 ]",
+            "saturday": "[ 9, 10, 12, 13 ]",
+            "sunday": "[ 12, 15, 16, 26 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 58,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/sunset.jpg',
+          title: 'Sunset',
+          artist: 'Cy Twombly',
+          year: '1957',
+          rule: {
+            "monday": "[ 12, 15, 16, 26 ]",
+            "tuesday": "[ 14, 15, 17, 20 ]",
+            "wednesday": "[ 17, 18, 9, 13 ]",
+            "thursday": "[ 20, 22, 24, 25 ]",
+            "friday": "[ 22, 24, 28, 31 ]",
+            "saturday": "[ 24, 26, 27, 30 ]",
+            "sunday": "[ 9, 10, 12, 13 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 59,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/iridescent-interpenetration-no-4-study-of-light-1912.jpg',
+          title: 'Iridescent Interpenetration No. 4 - Study of light',
+          artist: 'Giacomo Balla',
+          year: '1912',
+          rule: {
+            "monday": "[ 9, 10, 12, 13 ]",
+            "tuesday": "[ 12, 15, 16, 26 ]",
+            "wednesday": "[ 14, 15, 17, 20 ]",
+            "thursday": "[ 17, 18, 9, 13 ]",
+            "friday": "[ 20, 22, 24, 25 ]",
+            "saturday": "[ 22, 24, 28, 31 ]",
+            "sunday": "[ 24, 26, 27, 30 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 60,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/states-of-mind-iii-those-who-stay-1911-1.jpg',
+          title: 'States of Mind III: Those Who Stay',
+          artist: 'Umberto Boccioni',
+          year: '1911',
+          rule: {
+            "monday": "[ 24, 26, 27, 30 ]",
+            "tuesday": "[ 9, 10, 12, 13 ]",
+            "wednesday": "[ 12, 15, 16, 26 ]",
+            "thursday": "[ 14, 15, 17, 20 ]",
+            "friday": "[ 17, 18, 9, 13 ]",
+            "saturday": "[ 20, 22, 24, 25 ]",
+            "sunday": "[ 22, 24, 28, 31 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
