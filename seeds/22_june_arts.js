@@ -124,6 +124,86 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 7,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/untitled-35mm-transparency-1990.jpg',
+          title: 'Untitled (35mm Transparency)',
+          artist: 'Li Yuan-chia',
+          year: '1990',
+          rule: {
+            "monday": "[ 30, 10, 20, 28 ]",
+            "tuesday": "[ 29, 9, 19, 27 ]",
+            "wednesday": "[ 28, 8, 18, 26 ]",
+            "thursday": "[ 27, 7, 17, 25 ]",
+            "friday": "[ 26, 6, 16, 24 ]",
+            "saturday": "[ 2, 12, 22, 30 ]",
+            "sunday": "[ 1, 11, 21, 29 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 8,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/untitled-1930.jpg',
+          title: 'Untitled',
+          artist: 'Kansuke Yamamoto',
+          year: '1930',
+          rule: {
+            "monday": "[ 1, 11, 21, 29 ]",
+            "tuesday": "[ 30, 10, 20, 28 ]",
+            "wednesday": "[ 29, 9, 19, 27 ]",
+            "thursday": "[ 28, 8, 18, 26 ]",
+            "friday": "[ 27, 7, 17, 25 ]",
+            "saturday": "[ 26, 6, 16, 24 ]",
+            "sunday": "[ 2, 12, 22, 30 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 9,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/pavilion-de-l-elegance-madeleine-vionnet-1937.jpg',
+          title: 'Pavilion de l\'elegance (Madeleine Vionnet)',
+          artist: 'Wols',
+          year: '1937',
+          rule: {
+            "monday": "[ 2, 12, 22, 30 ]",
+            "tuesday": "[ 1, 11, 21, 29 ]",
+            "wednesday": "[ 30, 10, 20, 28 ]",
+            "thursday": "[ 29, 9, 19, 27 ]",
+            "friday": "[ 28, 8, 18, 26 ]",
+            "saturday": "[ 27, 7, 17, 25 ]",
+            "sunday": "[ 26, 6, 16, 24 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 10,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/ridiculous-portrait-contact-sheet-1972.jpg',
+          title: 'Ridiculous Portrait (Contact Sheet)',
+          artist: 'May Wilson',
+          year: '1972',
+          rule: {
+            "monday": "[ 26, 6, 16, 24 ]",
+            "tuesday": "[ 2, 12, 22, 30 ]",
+            "wednesday": "[ 1, 11, 21, 29 ]",
+            "thursday": "[ 30, 10, 20, 28 ]",
+            "friday": "[ 29, 9, 19, 27 ]",
+            "saturday": "[ 28, 8, 18, 26 ]",
+            "sunday": "[ 27, 7, 17, 25 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
