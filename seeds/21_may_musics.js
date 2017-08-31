@@ -112,6 +112,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 7,
+          user_id: 1,
+          theme: 'avant garde/new music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2631696285/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://joseperez.bandcamp.com/album/el-piano-del-siglo-xx',
+          a_string: 'El piano del Siglo XX by José María Pérez',
+          rule: {
+            "monday": "[ 6, 12, 19, 1 ]",
+            "tuesday": "[ 5, 11, 18, 31 ]",
+            "wednesday": "[ 4, 10, 17, 30 ]",
+            "thursday": "[ 3, 9, 16, 29 ]",
+            "saturday": "[ 2, 8, 15, 28 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 8,
+          user_id: 1,
+          theme: 'avant garde/new music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=518491629/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://streifenjunko.bandcamp.com/album/sval-torv',
+          a_string: 'Sval torv by Streifenjunko',
+          rule: {
+            "monday": "[ 2, 8, 15, 28 ]",
+            "tuesday": "[ 6, 12, 19, 1 ]",
+            "wednesday": "[ 5, 11, 18, 31 ]",
+            "thursday": "[ 4, 10, 17, 30 ]",
+            "saturday": "[ 3, 9, 16, 29 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 9,
+          user_id: 1,
+          theme: 'avant garde/new music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2224588625/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://nilsfrahm.bandcamp.com/album/music-for-the-motion-picture-victoria-bonus-track-version',
+          a_string: 'Music for the Motion Picture Victoria (Bonus Track Version) by Nils Frahm',
+          rule: {
+            "monday": "[ 3, 9, 16, 29 ]",
+            "tuesday": "[ 2, 8, 15, 28 ]",
+            "wednesday": "[ 6, 12, 19, 1 ]",
+            "thursday": "[ 5, 11, 18, 31 ]",
+            "saturday": "[ 4, 10, 17, 30 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
