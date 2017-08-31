@@ -544,6 +544,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 31,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2070829749/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://idischidiangelica.bandcamp.com/album/lazy-afternoon-among-the-crocodiles',
+          a_string: 'Lazy Afternoon Among the Crocodiles by Terry Riley/Stefano Scodanibbio',
+          rule: {
+            "monday": "[ 9, 13, 15, 20 ]",
+            "tuesday": "[ 15, 9, 11, 15 ]",
+            "wednesday": "[ 11, 18, 20, 19 ]",
+            "thursday": "[ 9, 13, 15, 19 ]",
+            "saturday": "[ 11, 18, 20, 19 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 32,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3505415038/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bethtuba.bandcamp.com/album/still',
+          a_string: 'Still by Beth McDonald',
+          rule: {
+            "monday": "[ 11, 18, 20, 19 ]",
+            "tuesday": "[ 9, 13, 15, 20 ]",
+            "wednesday": "[ 15, 9, 11, 15 ]",
+            "thursday": "[ 11, 18, 20, 19 ]",
+            "saturday": "[ 9, 13, 15, 19 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 33,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1134084309/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jasperstringquartet.bandcamp.com/album/unbound',
+          a_string: 'Unbound by Jasper String Quartet',
+          rule: {
+            "monday": "[ 9, 13, 15, 19 ]",
+            "tuesday": "[ 11, 18, 20, 19 ]",
+            "wednesday": "[ 19, 13, 15, 20 ]",
+            "thursday": "[ 15, 9, 11, 15 ]",
+            "saturday": "[ 11, 18, 20, 19 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
