@@ -220,6 +220,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 13,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=612056518/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jebbishop.bandcamp.com/album/2009-middle-west',
+          a_string: '2009 (Middle West) by Jeb Bishop Trio',
+          rule: {
+            "monday": "[ 2, 10, 22, 27 ]",
+            "tuesday": "[ 6, 14, 26, 1 ]",
+            "wednesday": "[ 5, 13, 25, 30 ]",
+            "thursday": "[ 4, 12, 24, 29 ]",
+            "saturday": "[ 3, 11, 23, 28 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 14,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4107847956/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://vandermark1.bandcamp.com/album/escalator',
+          a_string: 'Escalator by Ken Vandermark, Klaus Kugel, Mark Tokar',
+          rule: {
+            "monday": "[ 4, 12, 24, 29 ]",
+            "tuesday": "[ 3, 11, 23, 28 ]",
+            "wednesday": "[ 7, 15, 27, 2 ]",
+            "thursday": "[ 6, 14, 26, 1 ]",
+            "saturday": "[ 5, 13, 25, 30 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 15,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3393583437/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://blackzonemythchant.bandcamp.com/album/mane-thecel-phares',
+          a_string: 'Mane Thecel Phares by Black Zone Myth Chant',
+          rule: {
+            "monday": "[ 5, 13, 25, 30 ]",
+            "tuesday": "[ 4, 12, 24, 29 ]",
+            "wednesday": "[ 3, 11, 23, 28 ]",
+            "thursday": "[ 7, 15, 27, 2 ]",
+            "saturday": "[ 6, 14, 26, 1 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
