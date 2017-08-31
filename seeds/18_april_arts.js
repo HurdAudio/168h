@@ -504,6 +504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 26,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/Truisilo_PNC_Park_p32_large.jpg',
+          title: 'PNC Park',
+          artist: 'Trusilo',
+          year: 'xxi Cent.',
+          rule: {
+            "monday": "[ 1, 6, 12, 18 ]",
+            "tuesday": "[ 30, 5, 11, 17 ]",
+            "wednesday": "[ 29, 4, 10, 16 ]",
+            "thursday": "[ 4, 10, 15, 22 ]",
+            "friday": "[ 18, 9, 15, 21 ]",
+            "saturday": "[ 3, 8, 14, 20 ]",
+            "sunday": "[ 2, 6, 22, 19 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 27,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/spring-sunset-from-the-roberto-clemente-bridge-joseph-heh.jpg',
+          title: 'PNC Park Sunset From The Roberto Clemente Bridge, Pittsburgh, Pennsylvania, USA',
+          artist: 'Joseph Heh',
+          year: '2015',
+          rule: {
+            "monday": "[ 2, 6, 22, 19 ]",
+            "tuesday": "[ 1, 6, 12, 18 ]",
+            "wednesday": "[ 30, 5, 11, 17 ]",
+            "thursday": "[ 29, 4, 10, 16 ]",
+            "friday": "[ 4, 10, 15, 22 ]",
+            "saturday": "[ 18, 9, 15, 21 ]",
+            "sunday": "[ 3, 8, 14, 20 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 28,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/Clemente.jpg',
+          title: 'excerpted from: Clemente - Graphic Novel',
+          artist: 'Wilfred Santiago',
+          year: '2017',
+          rule: {
+            "monday": "[ 4, 9, 15, 21 ]",
+            "tuesday": "[ 3, 7, 23, 20 ]",
+            "wednesday": "[ 2, 7, 13, 19 ]",
+            "thursday": "[ 1, 6, 12, 18 ]",
+            "friday": "[ 30, 5, 11, 17 ]",
+            "saturday": "[ 5, 11, 16, 23 ]",
+            "sunday": "[ 19, 10, 16, 22 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 29,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/lsp-ppbm60dd.jpg',
+          title: 'The Road to the 1960 World Series',
+          artist: 'Daniel Duffy',
+          year: 'xxi Cent.',
+          rule: {
+            "monday": "[ 19, 10, 16, 22 ]",
+            "tuesday": "[ 4, 9, 15, 21 ]",
+            "wednesday": "[ 3, 7, 23, 20 ]",
+            "thursday": "[ 2, 7, 13, 19 ]",
+            "friday": "[ 1, 6, 12, 18 ]",
+            "saturday": "[ 30, 5, 11, 17 ]",
+            "sunday": "[ 5, 11, 16, 23 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 30,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/Baseball painting Honus Wagner Pittsburgh Pirates.jpg',
+          title: 'THE FLYING DUTCHMAN',
+          artist: 'John Robertson',
+          year: 'xxi Cent.',
+          rule: {
+            "monday": "[ 5, 11, 16, 23 ]",
+            "tuesday": "[ 19, 10, 16, 22 ]",
+            "wednesday": "[ 4, 9, 15, 21 ]",
+            "thursday": "[ 3, 7, 23, 20 ]",
+            "friday": "[ 2, 7, 13, 19 ]",
+            "saturday": "[ 1, 6, 12, 18 ]",
+            "sunday": "[ 30, 5, 11, 17 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
