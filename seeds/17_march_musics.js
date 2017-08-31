@@ -328,6 +328,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 19,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2553087840/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://amydenio.bandcamp.com/album/birthing-chair-blues',
+          a_string: 'Birthing Chair Blues by Amy Denio / Spoot Music',
+          rule: {
+            "monday": "[ 4, 10, 16, 24 ]",
+            "tuesday": "[ 3, 9, 15, 23 ]",
+            "wednesday": "[ 7, 13, 19, 27 ]",
+            "thursday": "[ 6, 12, 18, 26 ]",
+            "saturday": "[ 5, 11, 17, 25 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 20,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1251608128/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://missymazzoli.bandcamp.com/album/song-from-the-uproar',
+          a_string: 'Song From the Uproar by Missy Mazzoli, Abigail Fischer, and NOW Ensemble',
+          rule: {
+            "monday": "[ 5, 11, 17, 25 ]",
+            "tuesday": "[ 4, 10, 16, 24 ]",
+            "wednesday": "[ 3, 9, 15, 23 ]",
+            "thursday": "[ 7, 13, 19, 27 ]",
+            "saturday": "[ 6, 12, 18, 26 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 21,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3264313737/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://avamendozamusic.bandcamp.com/album/quit-your-unnatural-ways',
+          a_string: 'Quit Your Unnatural Ways by Ava Mendoza &amp; Nick Tamburro',
+          rule: {
+            "monday": "[ 7, 13, 19, 27 ]",
+            "tuesday": "[ 6, 12, 18, 26 ]",
+            "wednesday": "[ 5, 11, 17, 25 ]",
+            "thursday": "[ 4, 10, 16, 24 ]",
+            "saturday": "[ 8, 14, 20, 28 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
