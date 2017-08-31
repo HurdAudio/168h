@@ -28,6 +28,8 @@ const goals = require('./routes/goals.js');
 const goalsbyuser = require('./routes/goalsbyuser.js');
 const friday_musics = require('./routes/friday_musics.js');
 const friday_musicsbyuser = require('./routes/friday_musicsbyuser.js');
+const sunday_musics = require('./routes/sunday_musics.js');
+const sunday_musicsbyuser = require('./routes/sunday_musicsbyuser.js');
 // const user_blogs = require('./routes/user_blogs.js');
 // const blog_comments = require('./routes/blog_comments.js');
 // const books = require('./routes/books.js');
@@ -157,6 +159,8 @@ app.use('/moment', express.static(path.join(__dirname, '../node_modules/moment/m
  app.use('/goalsbyuser', goalsbyuser);
  app.use('/friday_musics', friday_musics);
  app.use('/friday_musicsbyuser', friday_musicsbyuser);
+ app.use('/sunday_musics', sunday_musics);
+ app.use('/sunday_musicsbyuser', sunday_musicsbyuser);
 // app.use('/user_blogs', user_blogs);
 // app.use('/blog_comments', blog_comments);
 // app.use('/books', books);
