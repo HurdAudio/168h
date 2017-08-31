@@ -15,6 +15,21 @@
   var pomoStateArr = [ 'pomoTimerSetting', 'pomoBreakSetting', 'numberOfPomos', 'pomoCountdown'];
   var pomoState = 0;
 
+  function spokenOutput (str) {
+    var u = new SpeechSynthesisUtterance();
+    var synth = window.speechSynthesis;
+    u.text = str;
+    u.lang = 'en-US';
+    u.rate = 1.08;
+    //  u.voice = voices[0];
+    u.onend = function(event) {
+     setTimeout(function() {
+       console.log(str);
+     });
+   };
+    speechSynthesis.speak(u);
+  }
+
   function getCookie (name) {
     var cookies = document.cookie.split(';');
     for(var i=0 ; i < cookies.length ; ++i) {
@@ -57,6 +72,33 @@
       vm.taskCompletedButton = taskCompletedButton;
       vm.taskInfo = taskInfo;
       vm.addTaskToDay = addTaskToDay;
+      vm.verbalizeTimeblock = verbalizeTimeblock;
+
+      function verbalizeTimeblock(blockID) {
+        console.log(blockID);
+        let idValue = parseInt(blockID);
+        console.log(idValue);
+        if (blockID) {
+          $http.get(`/timeblocks/${idValue}`)
+          .then(timeData=>{
+            let time = timeData.data;
+            let userNotes = time.user_notes;
+            let location = time.location;
+            $http.get(`/blocktypes/${time.block_type}`)
+            .then(blockData=>{
+              let block = blockData.data;
+              let speakString = block.type;
+              if ((location !== null) && (location !== '')) {
+                speakString += ' at ' + location;
+              }
+              if ((userNotes !== null) && (userNotes !== '')) {
+                speakString += '. ' + userNotes;
+              }
+              spokenOutput(speakString);
+            });
+          });
+        }
+      }
 
       function addTaskToDay() {
         let taskEntryForm = document.getElementById('taskEntryForm');
@@ -886,6 +928,7 @@
               return;
             }
             if (sequence.length < 1) {
+              spokenOutput('Pomodoro sequence completed.');
               countdownClock.setAttribute("style", "color: #000000;");
               countdownClock.innerHTML = '0:00.00';
               pomoFocusCounter.innerHTML = 'Completed';
@@ -898,15 +941,33 @@
               //Start of sequence, reset display values
               countdownClock.setAttribute("style", "color: #000000;");
               pomoFocusCounter.innerHTML = sequence[0].interval + sequence[0].pomo;
+              spokenOutput('Focus now.');
             }
             if ((sequence[0].interval === 'Break: ') && (sequence[0].timer === breakTimerValue)) {
               //Start of Sequence, reset display values
               countdownClock.setAttribute("style", "color: #000000;");
               pomoFocusCounter.innerHTML = sequence[0].interval + sequence[0].pomo;
+              spokenOutput('Break time.');
             }
             countdownClock.innerHTML = getClockString(sequence[0].timer);
             if (sequence[0].timer === 1000) {
               countdownClock.setAttribute("style", "color: #ff0000;");
+              spokenOutput('Ten seconds remaining.');
+            }
+            if (sequence[0].timer === 500) {
+              spokenOutput('Five.');
+            }
+            if (sequence[0].timer === 400) {
+              spokenOutput('Four.');
+            }
+            if (sequence[0].timer === 300) {
+              spokenOutput('Three.');
+            }
+            if (sequence[0].timer === 200) {
+              spokenOutput('Two.');
+            }
+            if (sequence[0].timer === 100) {
+              spokenOutput('One... and ');
             }
             if (!paused) {
               --sequence[0].timer;
@@ -1776,7 +1837,7 @@
       }
 
       function setToplineAppointment(timeblock, lineID) {
-        console.log(lineID);
+        console.log(timeblock.id);
         let element = document.getElementById(lineID);
         element = element.children[0];
         $http.get(`/blocktypes/${timeblock.block_type}`)
@@ -1786,6 +1847,17 @@
           element.appointment = timeblock.id;
           element = element.children[0];
           element.innerHTML = element.innerHTML + ' - ' + block.type;
+          //element.setAttribute("ng-click", "$ctrl.verbalizeTimeblock(" + parseInt(timeblock.id) + ")");
+          let newButton = document.createElement('button');
+          element.appendChild(newButton);
+          //newButton.innerHTML = 'speak';
+          let speaker = document.createElement('img');
+          newButton.appendChild(speaker);
+          speaker.src ="./img/icon-1628258_640.png";
+          speaker.setAttribute("style", "width: 60%;");
+          newButton.addEventListener('click', ()=>{
+            verbalizeTimeblock(timeblock.id);
+          });
         });
       }
 

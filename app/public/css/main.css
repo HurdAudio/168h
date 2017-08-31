@@ -2550,3 +2550,15 @@ footer img {
   font-weight: bolder;
   font-size: 24px;
 }
+
+.hour button {
+  font-size: 18px;
+  background-color: #ddff11;
+  opacity: 0.9;
+  border-radius: 100%;
+  margin-left: 0;
+  float: right;
+  margin-right: 0.6em;
+  width: 3em;
+  height: 3em;
+}
