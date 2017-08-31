@@ -436,6 +436,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 25,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1659727331/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://f-a-t-a-k-a.bandcamp.com/album/tangle',
+          a_string: 'Tangle by John Butcher, Thomas Lehn, Matthew Shipp',
+          rule: {
+            "monday": "[ 7, 11, 13, 17]",
+            "tuesday": "[ 9, 13, 15, 19]",
+            "wednesday": "[ 21, 15, 17, 22]",
+            "thursday": "[ 14, 18, 20, 23]",
+            "saturday": "[ 5, 9, 11, 15]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 26,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4181318941/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tourdebras.bandcamp.com/album/matana-roberts-sam-shalabi-nicolas-caloia-feldspar',
+          a_string: 'Matana Roberts, Sam Shalabi, Nicolas Caloia - Feldspar by Matana Roberts (sax alto), Sam Shalabi (guitare électrique), Nicolas Caloia (contrebasse)',
+          rule: {
+            "monday": "[ 5, 9, 11, 15]",
+            "tuesday": "[ 7, 11, 13, 17]",
+            "wednesday": "[ 9, 13, 15, 19]",
+            "thursday": "[ 21, 15, 17, 22]",
+            "saturday": "[ 14, 18, 20, 23]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 27,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2169487895/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://destination-out.bandcamp.com/album/fractured-dimensions',
+          a_string: 'Fractured  Dimensions by WILLIAM PARKER',
+          rule: {
+            "monday": "[ 14, 18, 20, 23]",
+            "tuesday": "[ 5, 9, 11, 15]",
+            "wednesday": "[ 7, 11, 13, 17]",
+            "thursday": "[ 9, 13, 15, 19]",
+            "saturday": "[ 21, 15, 17, 22]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
