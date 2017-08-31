@@ -1160,7 +1160,7 @@
             let element = document.getElementById(hours[k]);
             element.setAttribute("style", "color: #bb9933;");
           }
-          for (let l = (currentTimePosition + 1); l < hours.length; l++) {
+          for (let l = (currentTimePosition + 1); l < hours.length - 1; l++) {
             let elementFuture = document.getElementById(hours[l]);
             elementFuture.setAttribute("style", "color: #000000;");
           }
