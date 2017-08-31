@@ -904,6 +904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 46,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/990705.jpg',
+          title: 'Country Morning',
+          artist: 'Arthello Beck, Jr.',
+          year: 'xx Cent.',
+          rule: {
+            "monday": "[ 17, 25, 4, 14 ]",
+            "tuesday": "[ 19, 27, 23, 13 ]",
+            "wednesday": "[ 7, 15, 23, 2 ]",
+            "thursday": "[ 9, 17, 25, 4 ]",
+            "friday": "[ 14, 19, 25, 6 ]",
+            "saturday": "[ 13, 21, 29, 8 ]",
+            "sunday": "[ 15, 25, 2, 10 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 47,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Booker_T_Washington_New_Orleans_1915.jpg',
+          title: 'Booker T. Washington, New Orleans',
+          artist: 'Arthur P. Bedou',
+          year: '1915',
+          rule: {
+            "monday": "[ 15, 25, 2, 10 ]",
+            "tuesday": "[ 17, 25, 4, 14 ]",
+            "wednesday": "[ 19, 27, 23, 13 ]",
+            "thursday": "[ 7, 15, 23, 2 ]",
+            "friday": "[ 9, 17, 25, 4 ]",
+            "saturday": "[ 14, 19, 25, 6 ]",
+            "sunday": "[ 13, 21, 29, 8 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 48,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/2013-12-09-mandela.jpg',
+          title: 'Nelson Mandela, Father of a Rainbow Nation, Goes Home',
+          artist: 'Darrin Bell',
+          year: '2013',
+          rule: {
+            "monday": "[ 13, 21, 29, 8 ]",
+            "tuesday": "[ 15, 25, 2, 10 ]",
+            "wednesday": "[ 17, 25, 4, 14 ]",
+            "thursday": "[ 19, 27, 23, 13 ]",
+            "friday": "[ 7, 15, 23, 2 ]",
+            "saturday": "[ 9, 17, 25, 4 ]",
+            "sunday": "[ 14, 19, 25, 6 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 49,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/1013542.jpg',
+          title: 'Intimate Circles',
+          artist: 'Mary Bell',
+          year: 'xx Cent.',
+          rule: {
+            "monday": "[ 15, 20, 26, 7 ]",
+            "tuesday": "[ 14, 22, 1, 9 ]",
+            "wednesday": "[ 16, 26, 3, 11 ]",
+            "thursday": "[ 18, 26, 5, 15 ]",
+            "friday": "[ 20, 28, 24, 14 ]",
+            "saturday": "[ 8, 16, 24, 3 ]",
+            "sunday": "[ 10, 18, 26, 5 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 50,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/20120729-BEY-slide-R3DW-articleLarge.jpg',
+          title: '1970s Harlem',
+          artist: 'Dawoud Bey',
+          year: 'xx Cent.',
+          rule: {
+            "monday": "[ 10, 18, 26, 5 ]",
+            "tuesday": "[ 15, 20, 26, 7 ]",
+            "wednesday": "[ 14, 22, 1, 9 ]",
+            "thursday": "[ 16, 26, 3, 11 ]",
+            "friday": "[ 18, 26, 5, 15 ]",
+            "saturday": "[ 20, 28, 24, 14 ]",
+            "sunday": "[ 8, 16, 24, 3 ]"
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {

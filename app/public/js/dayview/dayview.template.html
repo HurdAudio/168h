@@ -341,7 +341,7 @@
   </div>
   <div id="goalsPanel" class="pure-u-1-3">
     <main ng-repeat="holiday in $ctrl.holidays | orderBy : $ctrl.sortBy">
-      <div class="holidays" style="background-color:{{holiday.color}}">
+      <div class="holidays" style="background:{{holiday.color}}; background-color: -webkit-linear-gradient(135deg, {{holiday.color}}, #ffffff); background: -o-linear-gradient(135deg, {{holiday.color}}, #ffffff);   background: -moz-linear-gradient(135deg, {{holiday.color}}, #ffffff); background: linear-gradient(135deg, {{holiday.color}}, #ffffff);">
         <p class="holidayName">{{holiday.name}}</p>
 
         <img src="{{holiday.picture}}">
