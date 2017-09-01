@@ -1,6 +1,11 @@
 body{
 
-  background-color: #22bc44;
+
+  background: #22bc44;
+  background-color: -webkit-linear-gradient(-135deg, #22dc44, #22aa44);
+  background: -o-linear-gradient(-135deg, #22dc44, #22aa44);
+  background: -moz-linear-gradient(-135deg, #22dc44, #22aa44);
+  background: linear-gradient(-135deg, #22dc44, #22aa44);
 
 }
 
@@ -651,6 +656,7 @@ a.btn:hover {
  .hour {
    border: solid #111111 1px;
    height: 1.4em;
+   background-color: transparent;
  }
 
  .hourWeek {
@@ -2561,4 +2567,118 @@ footer img {
   margin-right: 0.6em;
   width: 3em;
   height: 3em;
+}
+
+#editDeleteAppointments {
+  display: none;
+  width: 30.5%;
+  height: 41em;
+  overflow: scroll;
+
+
+  margin-left: 0.1em;
+  background: #22bc44;
+  background-color: -webkit-linear-gradient(135deg, #22ac44, #abdada);
+  background: -o-linear-gradient(135deg, #22ac44, #abdada);
+  background: -moz-linear-gradient(135deg, #22ac44, #abdada);
+  background: linear-gradient(135deg, #22ac44, #abdada);
+}
+
+#editDeleteAppointments h2 {
+  font-family: 'Asul', sans-serif;
+  font-size: 30px;
+  color: #000000;
+  margin-left: 1.4em;
+
+}
+
+#editDeleteAppointments h3 {
+  font-family: 'Asul', sans-serif;
+  font-size: 24px;
+  color: #000000;
+  margin-left: 1.4em;
+
+}
+
+#editDeleteAppointments p {
+  font-family: 'Alike Angular', serif;
+  font-size: 24px;
+  margin-left: 1.2em;
+}
+
+#editDeleteAppointments a {
+  float: left;
+  margin-left: 0.6em;
+}
+
+#editDeleteBlocktypeSelector {
+  font-family: 'Alike Angular', serif;
+  font-size: 18px;
+  margin-left: 3em;
+  width: 80%;
+}
+
+#blockKeysSelector {
+  font-family: 'Alike Angular', serif;
+  font-size: 18px;
+  margin-left: 3em;
+  width: 80%;
+}
+
+.timePositioning {
+  align-items: center;
+  align-content: center;
+  float:left;
+  width: 43%;
+  margin-left: 1.2em;
+  padding-bottom: 2.5em;
+}
+
+.timePositioning button {
+  border-radius: 100%;
+  font-size: 18px;
+  background-color: #ddff11;
+  opacity: 0.9;
+  border-radius: 100%;
+  float: left;
+  margin: 0.2em;
+  margin-left: 2.2em;
+  padding: 0;
+  width: 2em;
+  height: 2em;
+}
+
+#editDeleteStart {
+  font-family: 'Space Mono', monospace;
+  font-size: 18px;
+  background-color: #ffffff;
+  width: 3.3em;
+  padding-left: 0.3em;
+  border-radius: 5%;
+  padding-left: -3em;
+}
+
+#editDeleteEnd {
+  font-family: 'Space Mono', monospace;
+  font-size: 18px;
+  background-color: #ffffff;
+  padding-left: 0.3em;
+  width: 3.3em;
+  border-radius: 5%;
+  padding-left: -3em;
+}
+
+#editLocation {
+  font-family: 'Alike Angular', serif;
+  font-size: 18px;
+  margin-left: 3em;
+  width: 80%;
+}
+
+#editUserNotes {
+  font-family: 'Alike Angular', serif;
+  font-size: 18px;
+  margin-left: 3em;
+  width: 80%;
+  rows: 5;
 }

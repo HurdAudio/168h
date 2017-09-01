@@ -8,6 +8,7 @@
   var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
   var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
   var hours = ['h0', 'h030', 'h1', 'h130', 'h2', 'h230', 'h3', 'h330', 'h4', 'h430', 'h5', 'h530', 'h6', 'h630', 'h7', 'h730', 'h8', 'h830', 'h9', 'h930', 'h10', 'h1030', 'h11', 'h1130', 'h12', 'h1230', 'h13', 'h1330', 'h14', 'h1430', 'h15', 'h1530', 'h16', 'h1630', 'h17', 'h1730', 'h18', 'h1830', 'h19', 'h1930', 'h20', 'h2030', 'h21', 'h2130', 'h22', 'h2230', 'h23', 'h2330', 'h00' ];
+  var hoursTime = ['0:00', '0:30', '1:00', '1:30', '2:00', '2:30', '3:00', '3:30', '4:00', '4:30', '5:00', '5:30', '6:00', '6:30', '7:00', '7:30', '8:00', '8:30', '9:00', '9:30', '10:00', '10:30', '11:00', '11:30', '12:00', '12:30', '13:00', '13:30', '14:00', '14:30', '15:00', '15:30', '16:00', '16:30', '17:00', '17:30', '18:00', '18:30', '19:00', '19:30', '20:00', '20:30', '21:00', '21:30', '22:00', '22:30', '23:00', '23:30', '24:00' ];
   var pulses = [ '#ff0000', '#ff1100', '#ff2211', '#ff3322', '#ff4433', '#ff5544', '#ff6655', '#ff7766', '#ff8877', '#ff9988', '#ffaa99', '#ffbbaa', '#ffccbb', '#ffddcc', '#ffeedd', '#ffffee', '#ffeeff', '#ffddee', '#ffccdd', '#ffbbcc', '#ffaabb', '#ff99aa', '#ff8899', '#ff7788', '#ff6677', '#ff5566', '#ff4455', '#ff3344', '#ff2233', '#ff1122', '#ff0011' ];
   var pomoInterval = 25;
   var pomoBreakInterval = 5;
@@ -20,7 +21,7 @@
     var synth = window.speechSynthesis;
     u.text = str;
     u.lang = 'en-US';
-    u.rate = 1.08;
+    u.rate = 0.98;
     //  u.voice = voices[0];
     u.onend = function(event) {
      setTimeout(function() {
@@ -75,9 +76,9 @@
       vm.verbalizeTimeblock = verbalizeTimeblock;
 
       function verbalizeTimeblock(blockID) {
-        console.log(blockID);
+        //console.log(blockID);
         let idValue = parseInt(blockID);
-        console.log(idValue);
+        //console.log(idValue);
         if (blockID) {
           $http.get(`/timeblocks/${idValue}`)
           .then(timeData=>{
@@ -1825,6 +1826,280 @@
         return(times);
       }
 
+      function resetScheduleField(timeblockRemoved) {
+        let divArray = timeblockRange(timeblockRemoved);
+        let element = document.getElementById(divArray[0]);
+        let strCut = element.children[0].children[0].innerHTML.indexOf(' -');
+        element.children[0].children[0].innerHTML = element.children[0].children[0].innerHTML.slice(0, strCut);
+        element.children[0].appointment = undefined;
+
+        for (let i = 0; i < divArray.length; i++) {
+          element = document.getElementById(divArray[i]);
+          element.children[0].setAttribute("style", "background-color: transparent;");
+          element.children[0].appointment = undefined;
+
+        }
+
+      }
+
+      function populateKeys(element, block, initialString, timeblock) {
+        while (element.firstChild) {
+          element.removeChild(element.firstChild);
+        }
+
+        let newSelect;
+        let keyValueList = block.keys[block.keys.keys[0] + "Values"];
+        let keyInUse = keyValueList[timeblock.block_data[block.keys.keys[0]]];
+
+        for (let i = 0; i <keyValueList.length; i++) {
+          newSelect = document.createElement('option');
+          element.appendChild(newSelect);
+          newSelect.innerHTML = keyValueList[i];
+        }
+        newSelect = document.createElement('option');
+        element.appendChild(newSelect);
+        newSelect.innerHTML = initialString;
+
+        return(keyInUse);
+      }
+
+      function populateSelections(element, selectionsArray, initialString, timeblock) {
+
+        while (element.firstChild) {
+          element.removeChild(element.firstChild);
+        }
+
+        let newSelect;
+        let blockIdInUse = {};
+
+        for (let i = 0; i < selectionsArray.length; i++) {
+          newSelect = document.createElement('option');
+          element.appendChild(newSelect);
+          newSelect.innerHTML = selectionsArray[i].type;
+          newSelect.blocktype = selectionsArray[i].id;
+          if (selectionsArray[i].id === timeblock.block_type) {
+            blockIdInUse = selectionsArray[i];
+            element.value = selectionsArray[i].type;
+          }
+        }
+
+        newSelect = document.createElement('option');
+        element.appendChild(newSelect);
+        newSelect.innerHTML = initialString;
+
+        return(blockIdInUse);
+      }
+
+      function setEditorColor(element, color) {
+
+
+        element.setAttribute("style", "display: initial; width: 30.5%; height: 41em; overflow: scroll; margin-left: 0.1em; background: " + color +"; background-color: -webkit-linear-gradient(135deg, " + color + ", #abdada); background: -o-linear-gradient(135deg, " + color + ", #abdada); background: -moz-linear-gradient(135deg, " + color + ", #abdada); background: linear-gradient(135deg, " + color + ", #abdada);");
+      }
+
+      function timeString (time) {
+        let outputString = '';
+        let timer = time.toString();
+        if (timer[11] === '0') {
+          outputString = timer.slice(12, 16);
+        } else {
+          outputString = timer.slice(11, 16);
+        }
+
+        return(outputString);
+      }
+
+      function updateEndTimeButtons(timeID, endTime, decrease, increase) {
+        let indexPoint = hoursTime.indexOf(endTime);
+        let check;
+        if (indexPoint > (hoursTime.length - 2)) {
+          increase.setAttribute("style", "visibility: hidden;");
+        } else {
+          check = document.getElementById(hours[indexPoint]);
+          if (check.children[0].appointment === undefined) {
+            increase.setAttribute("style", "visibility: visible;");
+          } else {
+            increase.setAttribute("style", "visibility: hidden;");
+          }
+        }
+        if (indexPoint === 1) {
+          decrease.setAttribute("style", "visibility: hidden;");
+        } else {
+          check = document.getElementById(hours[indexPoint - 2]);
+          if (check.children[0].appointment === timeID) {
+            decrease.setAttribute("style", "visibility: visible;");
+          } else {
+            decrease.setAttribute("style", "visibility: hidden;");
+          }
+        }
+      }
+
+      function updateStartTimeButtons(timeID, startTime, decrease, increase) {
+        let indexPoint = hoursTime.indexOf(startTime);
+        let check;
+        if (indexPoint === 0) {
+          decrease.setAttribute("style", "visibility: hidden;");
+        } else {
+          check = document.getElementById(hours[indexPoint - 1]);
+          if (check.children[0].appointment === undefined) {
+            decrease.setAttribute("style", "visibility: visible;");
+          } else {
+            decrease.setAttribute("style", "visibility: hidden;");
+          }
+        }
+        if (indexPoint === (indexPoint.length - 2)) {
+          increase.setAttribute("style", "visibility: hidden;");
+        } else {
+          check = document.getElementById(hours[indexPoint + 1]);
+          if ((check.children[0].appointment === undefined) || (check.children[0].appointment === timeID)) {
+            increase.setAttribute("style", "visibility: visible;");
+          } else {
+            increase.setAttribute("style", "visibility: hidden;");
+          }
+        }
+      }
+
+      function keyButtonHandler(keyButton) {
+        let newElement;
+        let appendDiv = keyButton.div;
+
+
+        keyButton.button.addEventListener('click', ()=>{
+          if (appendDiv.lastChild.value !== '') {
+            newElement = document.createElement('input');
+            appendDiv.appendChild(newElement);
+            newElement.type = "text";
+            newElement.class = "pure-input-1";
+            newElement.value = '';
+            newElement.id = keyButton.keyEntry + keyButton.keyEntryNumber;
+            ++keyButton.keyEntryNumber;
+            newElement.setAttribute("style", "font-family: 'Alike Angular', serif; font-size: 18px; margin-left: 3em; width: 80%;");
+          }
+        });
+      }
+
+      function populateKeySubfields(element, timeblock, currentBlock) {
+        let newEntry;
+        let newEntryTitle;
+        let newDiv;
+        let divArray = [];
+        let buttonObject = {};
+
+        while(element.firstChild) {
+          element.removeChild(element.firstChild);
+        }
+
+        for (let i = 1; i < currentBlock.keys.keys.length; i++) {
+          newDiv = document.createElement('div');
+          element.appendChild(newDiv);
+
+          newEntryTitle = document.createElement('p');
+          newDiv.appendChild(newEntryTitle);
+          newEntryTitle.innerHTML = currentBlock.keys.keys[i] + ':';
+          newEntryTitle.setAttribute("style", "margin-bottom:0.2em;");
+
+          newDiv.id = currentBlock.keys.keys[i] + 'Div';
+          newEntry = document.createElement('button');
+          newDiv.appendChild(newEntry);
+          newEntry.innerHTML = 'add new';
+
+          newEntry.setAttribute("style", "font-weight: bolder; font-family: 'Asul', sans-serif;; font-size: 24px; background: " + currentBlock.color + "; background-color: -webkit-linear-gradient(135deg, " + currentBlock.color + ", #ffffff); background: -o-linear-gradient(135deg, " + currentBlock.color + ", #ffffff); background: -moz-linear-gradient(135deg, " + currentBlock.color + ", #ffffff); background: linear-gradient(135deg, " + currentBlock.color + ", #ffffff); opacity: 0.7; margin-left: 2.2em; margin-top: 0; margin-bottom: 0");
+          buttonObject.div = newDiv;
+          buttonObject.button = newEntry;
+          buttonObject.keyEntry = currentBlock.keys.keys[i];
+          buttonObject.keyEntryNumber = currentBlock.keys.keys.length;
+          divArray.push(buttonObject);
+          keyButtonHandler(buttonObject);
+
+
+          if (timeblock.block_data[currentBlock.keys.keys[i]]) {
+            for (let j = 0; j < timeblock.block_data[currentBlock.keys.keys[i]].length; j++) {
+              newEntry = document.createElement('input');
+              newDiv.appendChild(newEntry);
+              newEntry.type = "text";
+              newEntry.id = "currentBlock.keys.keys[i] + i";
+              newEntry.class = "pure-input-1";
+              newEntry.value = timeblock.block_data[currentBlock.keys.keys[i]][j];
+              newEntry.setAttribute("style", "font-family: 'Alike Angular', serif; font-size: 18px; margin-left: 3em; width: 80%;");
+            }
+          }
+
+
+        }
+
+      }
+
+      function editAppointment(blockID) {
+        console.log(blockID);
+        let editDeleteAppointments = document.getElementById('editDeleteAppointments');
+        let goalsPanel = document.getElementById('goalsPanel');
+        let editAppointmentCancel = document.getElementById('editAppointmentCancel');
+        let editDeleteBlocktypeSelector = document.getElementById('editDeleteBlocktypeSelector');
+        let editDeleteStart = document.getElementById('editDeleteStart');
+        let editDeleteEnd = document.getElementById('editDeleteEnd');
+        let editDeleteStartDecrease = document.getElementById('editDeleteStartDecrease');
+        let editDeleteStartIncrease = document.getElementById('editDeleteStartIncrease');
+        let editDeleteEndDecrease = document.getElementById('editDeleteEndDecrease');
+        let editDeleteEndIncrease = document.getElementById('editDeleteEndIncrease');
+        let editLocation = document.getElementById('editLocation');
+        editLocation.value = '';
+        let editUserNotes = document.getElementById('editUserNotes');
+        editUserNotes.value = '';
+        let editBlockKeys = document.getElementById('editBlockKeys');
+        let blockKeysSelector = document.getElementById('blockKeysSelector');
+        let editAdditionalKeys = document.getElementById('editAdditionalKeys');
+        let editAppointmentDelete = document.getElementById('editAppointmentDelete');
+        while(editAdditionalKeys.firstChild) {
+          editAdditionalKeys.removeChild(editAdditionalKeys.firstChild);
+        }
+        if (blockID !== undefined) {
+          $http.get(`/timeblocks/${blockID}`)
+          .then(blockData=>{
+            let timeblock = blockData.data;
+            console.log(timeblock);
+            $http.get(`/blocktypesbyuser/${currentUserId}`)
+            .then(blocksData=>{
+              let blocks = blocksData.data;
+              let currentBlocktype = populateSelections(editDeleteBlocktypeSelector, blocks, 'add new blocktype...', timeblock);
+              if (currentBlocktype.keys === null) {
+                editBlockKeys.setAttribute("style", "display: none;");
+              } else {
+                editBlockKeys.setAttribute("style", "display: initial;");
+                let currentKey = populateKeys(blockKeysSelector, currentBlocktype, 'add new value...', timeblock);
+                blockKeysSelector.value = currentKey;
+                if (currentBlocktype.keys.keys.length > 1) {
+                  populateKeySubfields(editAdditionalKeys, timeblock, currentBlocktype);
+
+                }
+              }
+              setEditorColor(editDeleteAppointments, currentBlocktype.color);
+              editDeleteStart.innerHTML = timeString(timeblock.start_time);
+              editDeleteEnd.innerHTML = timeString(timeblock.end_time);
+              updateStartTimeButtons(timeblock.id, editDeleteStart.innerHTML, editDeleteStartDecrease, editDeleteStartIncrease);
+              updateEndTimeButtons(timeblock.id, editDeleteEnd.innerHTML, editDeleteEndDecrease, editDeleteEndIncrease);
+              editLocation.value = timeblock.location;
+              editUserNotes.value = timeblock.user_notes;
+            });
+          });
+
+          editDeleteAppointments.setAttribute("style", "display: initial;");
+          goalsPanel.setAttribute("style", "display: none;");
+
+          editAppointmentCancel.addEventListener('click', ()=>{
+            editDeleteAppointments.setAttribute("style", "display: none;");
+            goalsPanel.setAttribute("style", "display: initial;");
+          });
+          editAppointmentDelete.addEventListener('click', ()=>{
+            editDeleteAppointments.setAttribute("style", "display: none;");
+            goalsPanel.setAttribute("style", "display: initial;");
+            $http.delete(`/timeblocks/${blockID}`)
+            .then(deletedData=>{
+              let deleted = deletedData.data;
+              resetScheduleField(deleted);
+            });
+          });
+        }
+      }
+
       function setFillAppointments(timeblock, lineID) {
         let element = document.getElementById(lineID);
         element = element.children[0];
@@ -1833,6 +2108,9 @@
           let block = blockData.data;
           element.setAttribute("style", "height: 100%; background-color: " + block.color + "; opacity: 0.8; border-top: solid " + block.color + " 3px;");
           element.appointment = timeblock.id;
+          element.addEventListener('click', ()=>{
+            editAppointment(element.appointment);
+          });
         });
       }
 
@@ -1855,8 +2133,16 @@
           newButton.appendChild(speaker);
           speaker.src ="./img/icon-1628258_640.png";
           speaker.setAttribute("style", "width: 60%;");
-          newButton.addEventListener('click', ()=>{
+          element.appointment = timeblock.id;
+          newButton.addEventListener('click', (e)=>{
+            e.preventDefault();
+            e.stopPropagation();
             verbalizeTimeblock(timeblock.id);
+          });
+          element.addEventListener('click', (e)=>{
+            e.preventDefault();
+            e.stopPropagation();
+            editAppointment(element.appointment);
           });
         });
       }

@@ -14,13 +14,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Hilma af Klint',
           year: '1906',
           rule: {
-            "monday": "[4, 7, 8, 10]",
-            "tuesday": "[6, 7, 10, 12]",
-            "wednesday": "[9, 10, 12, 14]",
-            "thursday": "[12, 14, 16, 17]",
-            "friday": "[14, 16, 19, 20]",
-            "saturday": "[16, 18, 19, 22]",
-            "sunday": "[1, 2, 4, 5]"
+            "monday": [4, 7, 8, 10],
+            "tuesday": [6, 7, 10, 12],
+            "wednesday": [9, 10, 12, 14],
+            "thursday": [12, 14, 16, 17],
+            "friday": [14, 16, 19, 20],
+            "saturday": [16, 18, 19, 22],
+            "sunday": [1, 2, 4, 5]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -34,13 +34,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Wassily Kandinsky',
           year: '1909',
           rule: {
-            "monday": "[1, 2, 4, 5]",
-            "tuesday": "[4, 7, 8, 10]",
-            "wednesday": "[6, 7, 10, 12]",
-            "thursday": "[9, 10, 12, 14]",
-            "friday": "[12, 14, 16, 17]",
-            "saturday": "[14, 16, 19, 20]",
-            "sunday": "[16, 18, 19, 22]"
+            "monday": [1, 2, 4, 5],
+            "tuesday": [4, 7, 8, 10],
+            "wednesday": [6, 7, 10, 12],
+            "thursday": [9, 10, 12, 14],
+            "friday": [12, 14, 16, 17],
+            "saturday": [14, 16, 19, 20],
+            "sunday": [16, 18, 19, 22]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -54,13 +54,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Hilma af Klint',
           year: '1907',
           rule: {
-            "monday": "[16, 18, 19, 22]",
-            "tuesday": "[1, 2, 4, 5]",
-            "wednesday": "[4, 7, 8, 10]",
-            "thursday": "[6, 7, 10, 12]",
-            "friday": "[9, 10, 12, 14]",
-            "saturday": "[12, 14, 16, 17]",
-            "sunday": "[14, 16, 19, 20]"
+            "monday": [16, 18, 19, 22],
+            "tuesday": [1, 2, 4, 5],
+            "wednesday": [4, 7, 8, 10],
+            "thursday": [6, 7, 10, 12],
+            "friday": [9, 10, 12, 14],
+            "saturday": [12, 14, 16, 17],
+            "sunday": [14, 16, 19, 20]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -74,13 +74,13 @@ exports.seed = function(knex, Promise) {
           artist: 'John Marin',
           year: '1928',
           rule: {
-            "monday": "[14, 16, 19, 20]",
-            "tuesday": "[16, 18, 19, 22]",
-            "wednesday": "[1, 2, 4, 5]",
-            "thursday": "[4, 7, 8, 10]",
-            "friday": "[6, 7, 10, 12]",
-            "saturday": "[9, 10, 12, 14]",
-            "sunday": "[12, 14, 16, 17]"
+            "monday": [14, 16, 19, 20],
+            "tuesday": [16, 18, 19, 22],
+            "wednesday": [1, 2, 4, 5],
+            "thursday": [4, 7, 8, 10],
+            "friday": [6, 7, 10, 12],
+            "saturday": [9, 10, 12, 14],
+            "sunday": [12, 14, 16, 17]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -94,13 +94,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Wassily Kandinsky',
           year: '1909',
           rule: {
-            "monday": "[12, 14, 16, 17]",
-            "tuesday": "[14, 16, 19, 20]",
-            "wednesday": "[16, 18, 19, 22]",
-            "thursday": "[1, 2, 4, 5]",
-            "friday": "[4, 7, 8, 10]",
-            "saturday": "[6, 7, 10, 12]",
-            "sunday": "[9, 10, 12, 14]"
+            "monday": [12, 14, 16, 17],
+            "tuesday": [14, 16, 19, 20],
+            "wednesday": [16, 18, 19, 22],
+            "thursday": [1, 2, 4, 5],
+            "friday": [4, 7, 8, 10],
+            "saturday": [6, 7, 10, 12],
+            "sunday": [9, 10, 12, 14]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -114,13 +114,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Hilma af Klint',
           year: '1915',
           rule: {
-            "monday": "[9, 10, 12, 14]",
-            "tuesday": "[12, 14, 16, 17]",
-            "wednesday": "[14, 16, 19, 20]",
-            "thursday": "[16, 18, 19, 22]",
-            "friday": "[1, 2, 4, 5]",
-            "saturday": "[4, 7, 8, 10]",
-            "sunday": "[6, 7, 10, 12]"
+            "monday": [9, 10, 12, 14],
+            "tuesday": [12, 14, 16, 17],
+            "wednesday": [14, 16, 19, 20],
+            "thursday": [16, 18, 19, 22],
+            "friday": [1, 2, 4, 5],
+            "saturday": [4, 7, 8, 10],
+            "sunday": [6, 7, 10, 12]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -134,13 +134,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Arthur Beecher Carles',
           year: '1910',
           rule: {
-            "monday": "[6, 7, 10, 12]",
-            "tuesday": "[9, 10, 12, 14]",
-            "wednesday": "[12, 14, 16, 17]",
-            "thursday": "[14, 16, 19, 20]",
-            "friday": "[16, 18, 19, 22]",
-            "saturday": "[1, 2, 4, 5]",
-            "sunday": "[4, 7, 8, 18]"
+            "monday": [6, 7, 10, 12],
+            "tuesday": [9, 10, 12, 14],
+            "wednesday": [12, 14, 16, 17],
+            "thursday": [14, 16, 19, 20],
+            "friday": [16, 18, 19, 22],
+            "saturday": [1, 2, 4, 5],
+            "sunday": [4, 7, 8, 18]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -154,13 +154,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Gosta Adrian-Nilsson',
           year: '1912',
           rule: {
-            "monday": "[5, 8, 9, 19]",
-            "tuesday": "[7, 8, 11, 13]",
-            "wednesday": "[10, 11, 13, 15]",
-            "thursday": "[13, 15, 17, 18]",
-            "friday": "[15, 17, 20, 21]",
-            "saturday": "[17, 19, 20, 23]",
-            "sunday": "[2, 3, 5, 6]"
+            "monday": [5, 8, 9, 19],
+            "tuesday": [7, 8, 11, 13],
+            "wednesday": [10, 11, 13, 15],
+            "thursday": [13, 15, 17, 18],
+            "friday": [15, 17, 20, 21],
+            "saturday": [17, 19, 20, 23],
+            "sunday": [2, 3, 5, 6]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -174,13 +174,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Paul Klee',
           year: '1929',
           rule: {
-            "monday": "[2, 3, 5, 6]",
-            "tuesday": "[5, 8, 9, 19]",
-            "wednesday": "[7, 8, 11, 13]",
-            "thursday": "[10, 11, 13, 15]",
-            "friday": "[13, 15, 17, 18]",
-            "saturday": "[15, 17, 20, 21]",
-            "sunday": "[17, 19, 20, 23]"
+            "monday": [2, 3, 5, 6],
+            "tuesday": [5, 8, 9, 19],
+            "wednesday": [7, 8, 11, 13],
+            "thursday": [10, 11, 13, 15],
+            "friday": [13, 15, 17, 18],
+            "saturday": [15, 17, 20, 21],
+            "sunday": [17, 19, 20, 23]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -194,13 +194,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Toshi Yoshida',
           year: '1962',
           rule: {
-            "monday": "[17, 19, 20, 23]",
-            "tuesday": "[2, 3, 5, 6]",
-            "wednesday": "[5, 8, 9, 19]",
-            "thursday": "[7, 8, 11, 13]",
-            "friday": "[10, 11, 13, 15]",
-            "saturday": "[13, 15, 17, 18]",
-            "sunday": "[15, 17, 20, 21]"
+            "monday": [17, 19, 20, 23],
+            "tuesday": [2, 3, 5, 6],
+            "wednesday": [5, 8, 9, 19],
+            "thursday": [7, 8, 11, 13],
+            "friday": [10, 11, 13, 15],
+            "saturday": [13, 15, 17, 18],
+            "sunday": [15, 17, 20, 21]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -214,13 +214,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Margit Selska',
           year: '1960',
           rule: {
-            "monday": "[15, 17, 20, 21]",
-            "tuesday": "[17, 19, 20, 23]",
-            "wednesday": "[2, 3, 5, 6]",
-            "thursday": "[5, 8, 9, 19]",
-            "friday": "[7, 8, 11, 13]",
-            "saturday": "[10, 11, 13, 15]",
-            "sunday": "[13, 15, 17, 18]"
+            "monday": [15, 17, 20, 21],
+            "tuesday": [17, 19, 20, 23],
+            "wednesday": [2, 3, 5, 6],
+            "thursday": [5, 8, 9, 19],
+            "friday": [7, 8, 11, 13],
+            "saturday": [10, 11, 13, 15],
+            "sunday": [13, 15, 17, 18]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -234,13 +234,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Natalia Goncharova',
           year: 'XIX-XX cent.',
           rule: {
-            "monday": "[13, 15, 17, 18]",
-            "tuesday": "[15, 17, 20, 21]",
-            "wednesday": "[17, 19, 20, 23]",
-            "thursday": "[2, 3, 5, 6]",
-            "friday": "[5, 8, 9, 19]",
-            "saturday": "[7, 8, 11, 13]",
-            "sunday": "[10, 11, 13, 15]"
+            "monday": [13, 15, 17, 18],
+            "tuesday": [15, 17, 20, 21],
+            "wednesday": [17, 19, 20, 23],
+            "thursday": [2, 3, 5, 6],
+            "friday": [5, 8, 9, 19],
+            "saturday": [7, 8, 11, 13],
+            "sunday": [10, 11, 13, 15]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -254,13 +254,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Volodymyr Loboda',
           year: '2005',
           rule: {
-            "monday": "[13, 15, 17, 18]",
-            "tuesday": "[15, 17, 20, 21]",
-            "wednesday": "[17, 19, 20, 23]",
-            "thursday": "[2, 3, 5, 6]",
-            "friday": "[5, 8, 9, 19]",
-            "saturday": "[7, 8, 11, 13]",
-            "sunday": "[10, 11, 13, 15]"
+            "monday": [13, 15, 17, 18],
+            "tuesday": [15, 17, 20, 21],
+            "wednesday": [17, 19, 20, 23],
+            "thursday": [2, 3, 5, 6],
+            "friday": [5, 8, 9, 19],
+            "saturday": [7, 8, 11, 13],
+            "sunday": [10, 11, 13, 15]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -274,13 +274,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Tiberiy Szilvashi',
           year: 'XX cent.',
           rule: {
-            "monday": "[10, 11, 13, 15]",
-            "tuesday": "[13, 15, 17, 18]",
-            "wednesday": "[15, 17, 21, 24]",
-            "thursday": "[17, 19, 20, 23]",
-            "friday": "[2, 3, 5, 6]",
-            "saturday": "[5, 8, 9, 19]",
-            "sunday": "[7, 8, 11, 13]"
+            "monday": [10, 11, 13, 15],
+            "tuesday": [13, 15, 17, 18],
+            "wednesday": [15, 17, 21, 24],
+            "thursday": [17, 19, 20, 23],
+            "friday": [2, 3, 5, 6],
+            "saturday": [5, 8, 9, 19],
+            "sunday": [7, 8, 11, 13]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -294,13 +294,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Paul Klee',
           year: 'XIX-XX cent.',
           rule: {
-            "monday": "[8, 9, 12, 14]",
-            "tuesday": "[11, 12, 14, 16]",
-            "wednesday": "[14, 16, 18, 19]",
-            "thursday": "[16, 18, 22, 25]",
-            "friday": "[18, 20, 21, 24]",
-            "saturday": "[3, 4, 6, 7]",
-            "sunday": "[6, 9, 10, 20]"
+            "monday": [8, 9, 12, 14],
+            "tuesday": [11, 12, 14, 16],
+            "wednesday": [14, 16, 18, 19],
+            "thursday": [16, 18, 22, 25],
+            "friday": [18, 20, 21, 24],
+            "saturday": [3, 4, 6, 7],
+            "sunday": [6, 9, 10, 20]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -314,13 +314,13 @@ exports.seed = function(knex, Promise) {
           artist: 'William Baziotes',
           year: '1945',
           rule: {
-            "monday": "[6, 9, 10, 20]",
-            "tuesday": "[8, 9, 12, 14]",
-            "wednesday": "[11, 12, 14, 16]",
-            "thursday": "[14, 16, 18, 19]",
-            "friday": "[16, 18, 22, 25]",
-            "saturday": "[18, 20, 21, 24]",
-            "sunday": "[3, 4, 6, 7]"
+            "monday": [6, 9, 10, 20],
+            "tuesday": [8, 9, 12, 14],
+            "wednesday": [11, 12, 14, 16],
+            "thursday": [14, 16, 18, 19],
+            "friday": [16, 18, 22, 25],
+            "saturday": [18, 20, 21, 24],
+            "sunday": [3, 4, 6, 7]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -334,13 +334,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Willem de Kooning',
           year: '1948',
           rule: {
-            "monday": "[3, 4, 6, 7]",
-            "tuesday": "[6, 9, 10, 20]",
-            "wednesday": "[8, 9, 12, 14]",
-            "thursday": "[11, 12, 14, 16]",
-            "friday": "[14, 16, 18, 19]",
-            "saturday": "[16, 18, 22, 25]",
-            "sunday": "[18, 20, 21, 24]"
+            "monday": [3, 4, 6, 7],
+            "tuesday": [6, 9, 10, 20],
+            "wednesday": [8, 9, 12, 14],
+            "thursday": [11, 12, 14, 16],
+            "friday": [14, 16, 18, 19],
+            "saturday": [16, 18, 22, 25],
+            "sunday": [18, 20, 21, 24]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -354,13 +354,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Requena Nozal',
           year: '2006',
           rule: {
-            "monday": "[18, 20, 21, 24]",
-            "tuesday": "[3, 4, 6, 7]",
-            "wednesday": "[6, 9, 10, 20]",
-            "thursday": "[8, 9, 12, 14]",
-            "friday": "[11, 12, 14, 16]",
-            "saturday": "[14, 16, 18, 19]",
-            "sunday": "[16, 18, 22, 25]"
+            "monday": [18, 20, 21, 24],
+            "tuesday": [3, 4, 6, 7],
+            "wednesday": [6, 9, 10, 20],
+            "thursday": [8, 9, 12, 14],
+            "friday": [11, 12, 14, 16],
+            "saturday": [14, 16, 18, 19],
+            "sunday": [16, 18, 22, 25]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -374,13 +374,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Al Held',
           year: '1959',
           rule: {
-            "monday": "[16, 18, 22, 25]",
-            "tuesday": "[18, 20, 21, 24]",
-            "wednesday": "[3, 4, 6, 7]",
-            "thursday": "[6, 9, 10, 20]",
-            "friday": "[8, 9, 12, 14]",
-            "saturday": "[11, 12, 14, 16]",
-            "sunday": "[14, 16, 18, 19]"
+            "monday": [16, 18, 22, 25],
+            "tuesday": [18, 20, 21, 24],
+            "wednesday": [3, 4, 6, 7],
+            "thursday": [6, 9, 10, 20],
+            "friday": [8, 9, 12, 14],
+            "saturday": [11, 12, 14, 16],
+            "sunday": [14, 16, 18, 19]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -394,13 +394,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Victor Hugo',
           year: 'XIX cent.',
           rule: {
-            "monday": "[14, 16, 18, 19]",
-            "tuesday": "[16, 18, 22, 25]",
-            "wednesday": "[18, 20, 21, 24]",
-            "thursday": "[3, 4, 6, 7]",
-            "friday": "[6, 9, 10, 20]",
-            "saturday": "[8, 9, 12, 14]",
-            "sunday": "[11, 12, 14, 16]"
+            "monday": [14, 16, 18, 19],
+            "tuesday": [16, 18, 22, 25],
+            "wednesday": [18, 20, 21, 24],
+            "thursday": [3, 4, 6, 7],
+            "friday": [6, 9, 10, 20],
+            "saturday": [8, 9, 12, 14],
+            "sunday": [11, 12, 14, 16]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -414,13 +414,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Winifred Nicholson',
           year: '1937',
           rule: {
-            "monday": "[12, 13, 15, 17]",
-            "tuesday": "[15, 17, 19, 20]",
-            "wednesday": "[17, 19, 23, 26]",
-            "thursday": "[19, 21, 22, 25]",
-            "friday": "[4, 5, 7, 8]",
-            "saturday": "[7, 10, 11, 21]",
-            "sunday": "[9, 10, 13, 15]"
+            "monday": [12, 13, 15, 17],
+            "tuesday": [15, 17, 19, 20],
+            "wednesday": [17, 19, 23, 26],
+            "thursday": [19, 21, 22, 25],
+            "friday": [4, 5, 7, 8],
+            "saturday": [7, 10, 11, 21],
+            "sunday": [9, 10, 13, 15]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -434,13 +434,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Wladyslaw Strzeminski',
           year: '1949',
           rule: {
-            "monday": "[9, 10, 13, 15]",
-            "tuesday": "[12, 13, 15, 17]",
-            "wednesday": "[15, 17, 19, 20]",
-            "thursday": "[17, 19, 23, 26]",
-            "friday": "[19, 21, 22, 25]",
-            "saturday": "[4, 5, 7, 8]",
-            "sunday": "[7, 10, 11, 21]"
+            "monday": [9, 10, 13, 15],
+            "tuesday": [12, 13, 15, 17],
+            "wednesday": [15, 17, 19, 20],
+            "thursday": [17, 19, 23, 26],
+            "friday": [19, 21, 22, 25],
+            "saturday": [4, 5, 7, 8],
+            "sunday": [7, 10, 11, 21]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -454,13 +454,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Tiberiy Szilvashi',
           year: 'XX cent.',
           rule: {
-            "monday": "[7, 10, 11, 21]",
-            "tuesday": "[9, 10, 13, 15]",
-            "wednesday": "[12, 13, 15, 17]",
-            "thursday": "[15, 17, 19, 20]",
-            "friday": "[17, 19, 23, 26]",
-            "saturday": "[19, 21, 22, 25]",
-            "sunday": "[4, 5, 7, 8]"
+            "monday": [7, 10, 11, 21],
+            "tuesday": [9, 10, 13, 15],
+            "wednesday": [12, 13, 15, 17],
+            "thursday": [15, 17, 19, 20],
+            "friday": [17, 19, 23, 26],
+            "saturday": [19, 21, 22, 25],
+            "sunday": [4, 5, 7, 8]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -474,13 +474,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Lyubov Popova',
           year: 'XX cent.',
           rule: {
-            "monday": "[4, 5, 7, 8]",
-            "tuesday": "[7, 10, 11, 21]",
-            "wednesday": "[9, 10, 13, 15]",
-            "thursday": "[12, 13, 15, 17]",
-            "friday": "[15, 17, 19, 20]",
-            "saturday": "[17, 19, 23, 26]",
-            "sunday": "[19, 21, 22, 25]"
+            "monday": [4, 5, 7, 8],
+            "tuesday": [7, 10, 11, 21],
+            "wednesday": [9, 10, 13, 15],
+            "thursday": [12, 13, 15, 17],
+            "friday": [15, 17, 19, 20],
+            "saturday": [17, 19, 23, 26],
+            "sunday": [19, 21, 22, 25]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -494,13 +494,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Darren Waterston',
           year: '2012',
           rule: {
-            "monday": "[19, 21, 22, 25]",
-            "tuesday": "[4, 5, 7, 8]",
-            "wednesday": "[7, 10, 11, 21]",
-            "thursday": "[9, 10, 13, 15]",
-            "friday": "[12, 13, 15, 17]",
-            "saturday": "[15, 17, 19, 20]",
-            "sunday": "[17, 19, 23, 26]"
+            "monday": [19, 21, 22, 25],
+            "tuesday": [4, 5, 7, 8],
+            "wednesday": [7, 10, 11, 21],
+            "thursday": [9, 10, 13, 15],
+            "friday": [12, 13, 15, 17],
+            "saturday": [15, 17, 19, 20],
+            "sunday": [17, 19, 23, 26]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -514,13 +514,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Luciano Bartolini',
           year: '1973',
           rule: {
-            "monday": "[17, 19, 23, 26]",
-            "tuesday": "[19, 21, 22, 25]",
-            "wednesday": "[4, 5, 7, 8]",
-            "thursday": "[7, 10, 11, 21]",
-            "friday": "[9, 10, 13, 15]",
-            "saturday": "[12, 13, 15, 17]",
-            "sunday": "[15, 17, 19, 20]"
+            "monday": [17, 19, 23, 26],
+            "tuesday": [19, 21, 22, 25],
+            "wednesday": [4, 5, 7, 8],
+            "thursday": [7, 10, 11, 21],
+            "friday": [9, 10, 13, 15],
+            "saturday": [12, 13, 15, 17],
+            "sunday": [15, 17, 19, 20]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -534,13 +534,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Toko Shinoda',
           year: '2005',
           rule: {
-            "monday": "[15, 17, 19, 20]",
-            "tuesday": "[17, 19, 23, 26]",
-            "wednesday": "[19, 21, 22, 25]",
-            "thursday": "[4, 5, 7, 8]",
-            "friday": "[7, 10, 11, 21]",
-            "saturday": "[9, 10, 13, 15]",
-            "sunday": "[12, 13, 15, 17]"
+            "monday": [15, 17, 19, 20],
+            "tuesday": [17, 19, 23, 26],
+            "wednesday": [19, 21, 22, 25],
+            "thursday": [4, 5, 7, 8],
+            "friday": [7, 10, 11, 21],
+            "saturday": [9, 10, 13, 15],
+            "sunday": [12, 13, 15, 17]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -554,13 +554,13 @@ exports.seed = function(knex, Promise) {
           artist: 'John Cage',
           year: '1992',
           rule: {
-            "monday": "[13, 14, 16, 18]",
-            "tuesday": "[16, 18, 20, 21]",
-            "wednesday": "[18, 20, 24, 27]",
-            "thursday": "[20, 22, 23, 26]",
-            "friday": "[5, 6, 8, 9]",
-            "saturday": "[8, 11, 12, 22]",
-            "sunday": "[10, 11, 14, 16]"
+            "monday": [13, 14, 16, 18],
+            "tuesday": [16, 18, 20, 21],
+            "wednesday": [18, 20, 24, 27],
+            "thursday": [20, 22, 23, 26],
+            "friday": [5, 6, 8, 9],
+            "saturday": [8, 11, 12, 22],
+            "sunday": [10, 11, 14, 16]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -574,13 +574,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Elaine de Kooning',
           year: '1983',
           rule: {
-            "monday": "[10, 11, 14, 16]",
-            "tuesday": "[13, 14, 16, 18]",
-            "wednesday": "[16, 18, 20, 21]",
-            "thursday": "[18, 20, 24, 27]",
-            "friday": "[20, 22, 23, 26]",
-            "saturday": "[5, 6, 8, 9]",
-            "sunday": "[8, 11, 12, 22]"
+            "monday": [10, 11, 14, 16],
+            "tuesday": [13, 14, 16, 18],
+            "wednesday": [16, 18, 20, 21],
+            "thursday": [18, 20, 24, 27],
+            "friday": [20, 22, 23, 26],
+            "saturday": [5, 6, 8, 9],
+            "sunday": [8, 11, 12, 22]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -594,13 +594,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Gotthard Graubner',
           year: '1996',
           rule: {
-            "monday": "[ 8, 11, 12, 22]",
-            "tuesday": "[10, 11, 14, 16]",
-            "wednesday": "[13, 14, 16, 18]",
-            "thursday": "[16, 18, 20, 21]",
-            "friday": "[18, 20, 24, 27]",
-            "saturday": "[20, 22, 23, 26]",
-            "sunday": "[5, 6, 8, 9]"
+            "monday": [ 8, 11, 12, 22],
+            "tuesday": [10, 11, 14, 16],
+            "wednesday": [13, 14, 16, 18],
+            "thursday": [16, 18, 20, 21],
+            "friday": [18, 20, 24, 27],
+            "saturday": [20, 22, 23, 26],
+            "sunday": [5, 6, 8, 9]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -614,13 +614,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Gunther Forg',
           year: '1993',
           rule: {
-            "monday": "[ 5, 6, 8, 9]",
-            "tuesday": "[8, 11, 12, 22]",
-            "wednesday": "[10, 11, 14, 16]",
-            "thursday": "[13, 14, 16, 18]",
-            "friday": "[16, 18, 20, 21]",
-            "saturday": "[18, 20, 24, 27]",
-            "sunday": "[20, 22, 23, 26]"
+            "monday": [ 5, 6, 8, 9],
+            "tuesday": [8, 11, 12, 22],
+            "wednesday": [10, 11, 14, 16],
+            "thursday": [13, 14, 16, 18],
+            "friday": [16, 18, 20, 21],
+            "saturday": [18, 20, 24, 27],
+            "sunday": [20, 22, 23, 26]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -634,13 +634,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Joan Miro',
           year: '1937',
           rule: {
-            "monday": "[ 20, 22, 23, 26]",
-            "tuesday": "[5, 6, 8, 9]",
-            "wednesday": "[8, 11, 12, 22]",
-            "thursday": "[10, 11, 14, 16]",
-            "friday": "[13, 14, 16, 18]",
-            "saturday": "[16, 18, 20, 21]",
-            "sunday": "[18, 20, 24, 27]"
+            "monday": [ 20, 22, 23, 26],
+            "tuesday": [5, 6, 8, 9],
+            "wednesday": [8, 11, 12, 22],
+            "thursday": [10, 11, 14, 16],
+            "friday": [13, 14, 16, 18],
+            "saturday": [16, 18, 20, 21],
+            "sunday": [18, 20, 24, 27]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -654,13 +654,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Jackson Pollock',
           year: '1943',
           rule: {
-            "monday": "[ 18, 20, 24, 27]",
-            "tuesday": "[20, 22, 23, 26]",
-            "wednesday": "[5, 6, 8, 9]",
-            "thursday": "[8, 11, 12, 22]",
-            "friday": "[10, 11, 14, 16]",
-            "saturday": "[13, 14, 16, 18]",
-            "sunday": "[16, 18, 20, 21]"
+            "monday": [ 18, 20, 24, 27],
+            "tuesday": [20, 22, 23, 26],
+            "wednesday": [5, 6, 8, 9],
+            "thursday": [8, 11, 12, 22],
+            "friday": [10, 11, 14, 16],
+            "saturday": [13, 14, 16, 18],
+            "sunday": [16, 18, 20, 21]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -674,13 +674,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Perle Fine',
           year: '1946',
           rule: {
-            "monday": "[ 16, 18, 20, 21]",
-            "tuesday": "[18, 20, 24, 27]",
-            "wednesday": "[20, 22, 23, 26]",
-            "thursday": "[5, 6, 8, 9]",
-            "friday": "[8, 11, 12, 22]",
-            "saturday": "[10, 11, 14, 16]",
-            "sunday": "[13, 14, 16, 18]"
+            "monday": [ 16, 18, 20, 21],
+            "tuesday": [18, 20, 24, 27],
+            "wednesday": [20, 22, 23, 26],
+            "thursday": [5, 6, 8, 9],
+            "friday": [8, 11, 12, 22],
+            "saturday": [10, 11, 14, 16],
+            "sunday": [13, 14, 16, 18]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -694,13 +694,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Hans Hofmann',
           year: '1949',
           rule: {
-            "monday": "[ 14, 15, 17, 19]",
-            "tuesday": "[17, 19, 21, 22]",
-            "wednesday": "[19, 21, 25, 28]",
-            "thursday": "[21, 23, 24, 27]",
-            "friday": "[6, 7, 9, 10]",
-            "saturday": "[9, 12, 13, 23]",
-            "sunday": "[11, 12, 15, 17]"
+            "monday": [ 14, 15, 17, 19],
+            "tuesday": [17, 19, 21, 22],
+            "wednesday": [19, 21, 25, 28],
+            "thursday": [21, 23, 24, 27],
+            "friday": [6, 7, 9, 10],
+            "saturday": [9, 12, 13, 23],
+            "sunday": [11, 12, 15, 17]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -714,13 +714,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Anne Ryan',
           year: '?',
           rule: {
-            "monday": "[ 11, 12, 15, 17]",
-            "tuesday": "[14, 15, 17, 10]",
-            "wednesday": "[17, 19, 21, 22]",
-            "thursday": "[19, 21, 25, 28]",
-            "friday": "[21, 23, 24, 27]",
-            "saturday": "[6, 7, 9, 10]",
-            "sunday": "[9, 12, 13, 23]"
+            "monday": [ 11, 12, 15, 17],
+            "tuesday": [14, 15, 17, 10],
+            "wednesday": [17, 19, 21, 22],
+            "thursday": [19, 21, 25, 28],
+            "friday": [21, 23, 24, 27],
+            "saturday": [6, 7, 9, 10],
+            "sunday": [9, 12, 13, 23]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -734,13 +734,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Walasse Ting',
           year: '1970',
           rule: {
-            "monday": "[ 9, 12, 13, 23]",
-            "tuesday": "[11, 12, 15, 17]",
-            "wednesday": "[14, 15, 17, 10]",
-            "thursday": "[17, 19, 21, 22]",
-            "friday": "[19, 21, 25, 28]",
-            "saturday": "[21, 23, 24, 27]",
-            "sunday": "[6, 7, 9, 10]"
+            "monday": [ 9, 12, 13, 23],
+            "tuesday": [11, 12, 15, 17],
+            "wednesday": [14, 15, 17, 10],
+            "thursday": [17, 19, 21, 22],
+            "friday": [19, 21, 25, 28],
+            "saturday": [21, 23, 24, 27],
+            "sunday": [6, 7, 9, 10]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -754,13 +754,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Requena Nozal',
           year: '2014',
           rule: {
-            "monday": "[ 6, 7, 9, 10]",
-            "tuesday": "[9, 12, 13, 23]",
-            "wednesday": "[11, 12, 15, 17]",
-            "thursday": "[14, 15, 17, 10]",
-            "friday": "[17, 19, 21, 22]",
-            "saturday": "[19, 21, 25, 28]",
-            "sunday": "[21, 23, 24, 27]"
+            "monday": [ 6, 7, 9, 10],
+            "tuesday": [9, 12, 13, 23],
+            "wednesday": [11, 12, 15, 17],
+            "thursday": [14, 15, 17, 10],
+            "friday": [17, 19, 21, 22],
+            "saturday": [19, 21, 25, 28],
+            "sunday": [21, 23, 24, 27]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -774,13 +774,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Rafa Nasiri',
           year: '1972',
           rule: {
-            "monday": "[ 21, 23, 24, 27]",
-            "tuesday": "[6, 7, 9, 10]",
-            "wednesday": "[9, 12, 13, 23]",
-            "thursday": "[11, 12, 15, 17]",
-            "friday": "[14, 15, 17, 10]",
-            "saturday": "[17, 19, 21, 22]",
-            "sunday": "[19, 21, 25, 28]"
+            "monday": [ 21, 23, 24, 27],
+            "tuesday": [6, 7, 9, 10],
+            "wednesday": [9, 12, 13, 23],
+            "thursday": [11, 12, 15, 17],
+            "friday": [14, 15, 17, 10],
+            "saturday": [17, 19, 21, 22],
+            "sunday": [19, 21, 25, 28]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -794,13 +794,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Marc Horowitz',
           year: '2015',
           rule: {
-            "monday": "[ 19, 21, 25, 28]",
-            "tuesday": "[21, 23, 24, 27]",
-            "wednesday": "[6, 7, 9, 10]",
-            "thursday": "[9, 12, 13, 23]",
-            "friday": "[11, 12, 15, 17]",
-            "saturday": "[14, 15, 17, 10]",
-            "sunday": "[17, 19, 21, 22]"
+            "monday": [ 19, 21, 25, 28],
+            "tuesday": [21, 23, 24, 27],
+            "wednesday": [6, 7, 9, 10],
+            "thursday": [9, 12, 13, 23],
+            "friday": [11, 12, 15, 17],
+            "saturday": [14, 15, 17, 10],
+            "sunday": [17, 19, 21, 22]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -814,13 +814,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Toko Shinoda',
           year: '?',
           rule: {
-            "monday": "[ 17, 19, 21, 22]",
-            "tuesday": "[19, 21, 25, 28]",
-            "wednesday": "[21, 23, 24, 27]",
-            "thursday": "[6, 7, 9, 10]",
-            "friday": "[9, 12, 13, 23]",
-            "saturday": "[11, 12, 15, 17]",
-            "sunday": "[14, 15, 17, 10]"
+            "monday": [ 17, 19, 21, 22],
+            "tuesday": [19, 21, 25, 28],
+            "wednesday": [21, 23, 24, 27],
+            "thursday": [6, 7, 9, 10],
+            "friday": [9, 12, 13, 23],
+            "saturday": [11, 12, 15, 17],
+            "sunday": [14, 15, 17, 10]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -834,13 +834,13 @@ exports.seed = function(knex, Promise) {
           artist: 'William Baziotes',
           year: '1944',
           rule: {
-            "monday": "[ 15, 16, 18, 11]",
-            "tuesday": "[18, 20, 22, 23]",
-            "wednesday": "[20, 22, 26, 29]",
-            "thursday": "[22, 24, 25, 28]",
-            "friday": "[7, 8, 10, 11]",
-            "saturday": "[10, 13, 14, 24]",
-            "sunday": "[12, 13, 16, 18]"
+            "monday": [ 15, 16, 18, 11],
+            "tuesday": [18, 20, 22, 23],
+            "wednesday": [20, 22, 26, 29],
+            "thursday": [22, 24, 25, 28],
+            "friday": [7, 8, 10, 11],
+            "saturday": [10, 13, 14, 24],
+            "sunday": [12, 13, 16, 18]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -854,13 +854,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Morris Graves',
           year: '1943',
           rule: {
-            "monday": "[ 12, 13, 16, 18]",
-            "tuesday": "[15, 16, 18, 11]",
-            "wednesday": "[18, 20, 22, 23]",
-            "thursday": "[20, 22, 26, 29]",
-            "friday": "[22, 24, 25, 28]",
-            "saturday": "[7, 8, 10, 11]",
-            "sunday": "[10, 13, 14, 24]"
+            "monday": [ 12, 13, 16, 18],
+            "tuesday": [15, 16, 18, 11],
+            "wednesday": [18, 20, 22, 23],
+            "thursday": [20, 22, 26, 29],
+            "friday": [22, 24, 25, 28],
+            "saturday": [7, 8, 10, 11],
+            "sunday": [10, 13, 14, 24]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -874,13 +874,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Giorgio Cavallon',
           year: '1947',
           rule: {
-            "monday": "[ 10, 13, 14, 24]",
-            "tuesday": "[12, 13, 16, 18]",
-            "wednesday": "[15, 16, 18, 11]",
-            "thursday": "[18, 20, 22, 23]",
-            "friday": "[20, 22, 26, 29]",
-            "saturday": "[22, 24, 25, 28]",
-            "sunday": "[7, 8, 10, 11]"
+            "monday": [ 10, 13, 14, 24],
+            "tuesday": [12, 13, 16, 18],
+            "wednesday": [15, 16, 18, 11],
+            "thursday": [18, 20, 22, 23],
+            "friday": [20, 22, 26, 29],
+            "saturday": [22, 24, 25, 28],
+            "sunday": [7, 8, 10, 11]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -894,13 +894,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Richard Pousette-Dart',
           year: '1943',
           rule: {
-            "monday": "[ 7, 8, 10, 11]",
-            "tuesday": "[10, 13, 14, 24]",
-            "wednesday": "[12, 13, 16, 18]",
-            "thursday": "[15, 16, 18, 11]",
-            "friday": "[18, 20, 22, 23]",
-            "saturday": "[20, 22, 26, 29]",
-            "sunday": "[22, 24, 25, 28]"
+            "monday": [ 7, 8, 10, 11],
+            "tuesday": [10, 13, 14, 24],
+            "wednesday": [12, 13, 16, 18],
+            "thursday": [15, 16, 18, 11],
+            "friday": [18, 20, 22, 23],
+            "saturday": [20, 22, 26, 29],
+            "sunday": [22, 24, 25, 28]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -914,13 +914,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Mark Rothko',
           year: '1953',
           rule: {
-            "monday": "[ 22, 24, 25, 28]",
-            "tuesday": "[7, 8, 10, 11]",
-            "wednesday": "[10, 13, 14, 24]",
-            "thursday": "[12, 13, 16, 18]",
-            "friday": "[15, 16, 18, 11]",
-            "saturday": "[18, 20, 22, 23]",
-            "sunday": "[20, 22, 26, 29]"
+            "monday": [ 22, 24, 25, 28],
+            "tuesday": [7, 8, 10, 11],
+            "wednesday": [10, 13, 14, 24],
+            "thursday": [12, 13, 16, 18],
+            "friday": [15, 16, 18, 11],
+            "saturday": [18, 20, 22, 23],
+            "sunday": [20, 22, 26, 29]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -934,13 +934,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Albert Irvin',
           year: '1987',
           rule: {
-            "monday": "[ 20, 22, 26, 29]",
-            "tuesday": "[22, 24, 25, 28]",
-            "wednesday": "[7, 8, 10, 11]",
-            "thursday": "[10, 13, 14, 24]",
-            "friday": "[12, 13, 16, 18]",
-            "saturday": "[15, 16, 18, 11]",
-            "sunday": "[18, 20, 22, 23]"
+            "monday": [ 20, 22, 26, 29],
+            "tuesday": [22, 24, 25, 28],
+            "wednesday": [7, 8, 10, 11],
+            "thursday": [10, 13, 14, 24],
+            "friday": [12, 13, 16, 18],
+            "saturday": [15, 16, 18, 11],
+            "sunday": [18, 20, 22, 23]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -954,13 +954,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Robert Goodnough',
           year: '1976',
           rule: {
-            "monday": "[ 18, 20, 22, 23]",
-            "tuesday": "[20, 22, 26, 29]",
-            "wednesday": "[22, 24, 25, 28]",
-            "thursday": "[7, 8, 10, 11]",
-            "friday": "[10, 13, 14, 24]",
-            "saturday": "[12, 13, 16, 18]",
-            "sunday": "[15, 16, 18, 11]"
+            "monday": [ 18, 20, 22, 23],
+            "tuesday": [20, 22, 26, 29],
+            "wednesday": [22, 24, 25, 28],
+            "thursday": [7, 8, 10, 11],
+            "friday": [10, 13, 14, 24],
+            "saturday": [12, 13, 16, 18],
+            "sunday": [15, 16, 18, 11]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -974,13 +974,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Jack Youngerman',
           year: '1962',
           rule: {
-            "monday": "[ 16, 17, 19, 12]",
-            "tuesday": "[19, 21, 23, 24]",
-            "wednesday": "[21, 23, 27, 30]",
-            "thursday": "[23, 25, 26, 29]",
-            "friday": "[8, 9, 11, 12]",
-            "saturday": "[11, 14, 15, 25]",
-            "sunday": "[13, 14, 17, 19]"
+            "monday": [ 16, 17, 19, 12],
+            "tuesday": [19, 21, 23, 24],
+            "wednesday": [21, 23, 27, 30],
+            "thursday": [23, 25, 26, 29],
+            "friday": [8, 9, 11, 12],
+            "saturday": [11, 14, 15, 25],
+            "sunday": [13, 14, 17, 19]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -994,13 +994,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Jeremy Moon',
           year: '1965',
           rule: {
-            "monday": "[ 13, 14, 17, 19]",
-            "tuesday": "[16, 17, 19, 12]",
-            "wednesday": "[19, 21, 23, 24]",
-            "thursday": "[21, 23, 27, 30]",
-            "friday": "[23, 25, 26, 29]",
-            "saturday": "[8, 9, 11, 12]",
-            "sunday": "[11, 14, 15, 25]"
+            "monday": [ 13, 14, 17, 19],
+            "tuesday": [16, 17, 19, 12],
+            "wednesday": [19, 21, 23, 24],
+            "thursday": [21, 23, 27, 30],
+            "friday": [23, 25, 26, 29],
+            "saturday": [8, 9, 11, 12],
+            "sunday": [11, 14, 15, 25]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -1014,13 +1014,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Jimmy Ernst',
           year: '1942',
           rule: {
-            "monday": "[ 11, 14, 15, 25]",
-            "tuesday": "[13, 14, 17, 19]",
-            "wednesday": "[16, 17, 19, 12]",
-            "thursday": "[19, 21, 23, 24]",
-            "friday": "[21, 23, 27, 30]",
-            "saturday": "[23, 25, 26, 29]",
-            "sunday": "[8, 9, 11, 12]"
+            "monday": [ 11, 14, 15, 25],
+            "tuesday": [13, 14, 17, 19],
+            "wednesday": [16, 17, 19, 12],
+            "thursday": [19, 21, 23, 24],
+            "friday": [21, 23, 27, 30],
+            "saturday": [23, 25, 26, 29],
+            "sunday": [8, 9, 11, 12]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -1034,13 +1034,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Antonio Corpora',
           year: '1946',
           rule: {
-            "monday": "[ 8, 9, 11, 12]",
-            "tuesday": "[11, 14, 15, 25]",
-            "wednesday": "[13, 14, 17, 19]",
-            "thursday": "[16, 17, 19, 12]",
-            "friday": "[19, 21, 23, 24]",
-            "saturday": "[21, 23, 27, 30]",
-            "sunday": "[23, 25, 26, 29]"
+            "monday": [ 8, 9, 11, 12],
+            "tuesday": [11, 14, 15, 25],
+            "wednesday": [13, 14, 17, 19],
+            "thursday": [16, 17, 19, 12],
+            "friday": [19, 21, 23, 24],
+            "saturday": [21, 23, 27, 30],
+            "sunday": [23, 25, 26, 29]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -1054,13 +1054,13 @@ exports.seed = function(knex, Promise) {
           artist: 'William Baziotes',
           year: '1947',
           rule: {
-            "monday": "[ 23, 25, 26, 29 ]",
-            "tuesday": "[ 8, 9, 11, 12 ]",
-            "wednesday": "[ 11, 14, 15, 25 ]",
-            "thursday": "[ 13, 14, 16, 19 ]",
-            "friday": "[ 16, 17, 19, 12 ]",
-            "saturday": "[ 19, 21, 23, 24 ]",
-            "sunday": "[ 21, 23, 27, 30 ]"
+            "monday": [ 23, 25, 26, 29 ],
+            "tuesday": [ 8, 9, 11, 12 ],
+            "wednesday": [ 11, 14, 15, 25 ],
+            "thursday": [ 13, 14, 16, 19 ],
+            "friday": [ 16, 17, 19, 12 ],
+            "saturday": [ 19, 21, 23, 24 ],
+            "sunday": [ 21, 23, 27, 30 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -1074,13 +1074,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Jimmy Ernst',
           year: '1949',
           rule: {
-            "monday": "[ 21, 23, 27, 30 ]",
-            "tuesday": "[ 23, 25, 26, 29 ]",
-            "wednesday": "[ 8, 9, 11, 12 ]",
-            "thursday": "[ 11, 14, 15, 25 ]",
-            "friday": "[ 13, 14, 16, 19 ]",
-            "saturday": "[ 16, 17, 19, 12 ]",
-            "sunday": "[ 19, 21, 23, 24 ]"
+            "monday": [ 21, 23, 27, 30 ],
+            "tuesday": [ 23, 25, 26, 29 ],
+            "wednesday": [ 8, 9, 11, 12 ],
+            "thursday": [ 11, 14, 15, 25 ],
+            "friday": [ 13, 14, 16, 19 ],
+            "saturday": [ 16, 17, 19, 12 ],
+            "sunday": [ 19, 21, 23, 24 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -1094,13 +1094,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Aaron Siskind',
           year: '1951',
           rule: {
-            "monday": "[ 19, 21, 23, 24 ]",
-            "tuesday": "[ 21, 23, 27, 30 ]",
-            "wednesday": "[ 23, 25, 26, 29 ]",
-            "thursday": "[ 8, 9, 11, 12 ]",
-            "friday": "[ 11, 14, 15, 25 ]",
-            "saturday": "[ 13, 14, 16, 19 ]",
-            "sunday": "[ 16, 17, 10, 12 ]"
+            "monday": [ 19, 21, 23, 24 ],
+            "tuesday": [ 21, 23, 27, 30 ],
+            "wednesday": [ 23, 25, 26, 29 ],
+            "thursday": [ 8, 9, 11, 12 ],
+            "friday": [ 11, 14, 15, 25 ],
+            "saturday": [ 13, 14, 16, 19 ],
+            "sunday": [ 16, 17, 10, 12 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -1114,13 +1114,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Georgia O\'Keeffe',
           year: '1959',
           rule: {
-            "monday": "[ 17, 18, 9, 13 ]",
-            "tuesday": "[ 20, 22, 24, 25 ]",
-            "wednesday": "[ 22, 24, 28, 31 ]",
-            "thursday": "[ 24, 26, 27, 30 ]",
-            "friday": "[ 9, 10, 12, 13 ]",
-            "saturday": "[ 12, 15, 16, 26 ]",
-            "sunday": "[ 14, 15, 17, 20 ]"
+            "monday": [ 17, 18, 9, 13 ],
+            "tuesday": [ 20, 22, 24, 25 ],
+            "wednesday": [ 22, 24, 28, 31 ],
+            "thursday": [ 24, 26, 27, 30 ],
+            "friday": [ 9, 10, 12, 13 ],
+            "saturday": [ 12, 15, 16, 26 ],
+            "sunday": [ 14, 15, 17, 20 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -1134,13 +1134,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Ralph Hotere',
           year: '1988',
           rule: {
-            "monday": "[ 14, 15, 17, 20 ]",
-            "tuesday": "[ 17, 18, 9, 13 ]",
-            "wednesday": "[ 20, 22, 24, 25 ]",
-            "thursday": "[ 22, 24, 28, 31 ]",
-            "friday": "[ 24, 26, 27, 30 ]",
-            "saturday": "[ 9, 10, 12, 13 ]",
-            "sunday": "[ 12, 15, 16, 26 ]"
+            "monday": [ 14, 15, 17, 20 ],
+            "tuesday": [ 17, 18, 9, 13 ],
+            "wednesday": [ 20, 22, 24, 25 ],
+            "thursday": [ 22, 24, 28, 31 ],
+            "friday": [ 24, 26, 27, 30 ],
+            "saturday": [ 9, 10, 12, 13 ],
+            "sunday": [ 12, 15, 16, 26 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -1154,13 +1154,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Cy Twombly',
           year: '1957',
           rule: {
-            "monday": "[ 12, 15, 16, 26 ]",
-            "tuesday": "[ 14, 15, 17, 20 ]",
-            "wednesday": "[ 17, 18, 9, 13 ]",
-            "thursday": "[ 20, 22, 24, 25 ]",
-            "friday": "[ 22, 24, 28, 31 ]",
-            "saturday": "[ 24, 26, 27, 30 ]",
-            "sunday": "[ 9, 10, 12, 13 ]"
+            "monday": [ 12, 15, 16, 26 ],
+            "tuesday": [ 14, 15, 17, 20 ],
+            "wednesday": [ 17, 18, 9, 13 ],
+            "thursday": [ 20, 22, 24, 25 ],
+            "friday": [ 22, 24, 28, 31 ],
+            "saturday": [ 24, 26, 27, 30 ],
+            "sunday": [ 9, 10, 12, 13 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -1174,13 +1174,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Giacomo Balla',
           year: '1912',
           rule: {
-            "monday": "[ 9, 10, 12, 13 ]",
-            "tuesday": "[ 12, 15, 16, 26 ]",
-            "wednesday": "[ 14, 15, 17, 20 ]",
-            "thursday": "[ 17, 18, 9, 13 ]",
-            "friday": "[ 20, 22, 24, 25 ]",
-            "saturday": "[ 22, 24, 28, 31 ]",
-            "sunday": "[ 24, 26, 27, 30 ]"
+            "monday": [ 9, 10, 12, 13 ],
+            "tuesday": [ 12, 15, 16, 26 ],
+            "wednesday": [ 14, 15, 17, 20 ],
+            "thursday": [ 17, 18, 9, 13 ],
+            "friday": [ 20, 22, 24, 25 ],
+            "saturday": [ 22, 24, 28, 31 ],
+            "sunday": [ 24, 26, 27, 30 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -1194,13 +1194,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Umberto Boccioni',
           year: '1911',
           rule: {
-            "monday": "[ 24, 26, 27, 30 ]",
-            "tuesday": "[ 9, 10, 12, 13 ]",
-            "wednesday": "[ 12, 15, 16, 26 ]",
-            "thursday": "[ 14, 15, 17, 20 ]",
-            "friday": "[ 17, 18, 9, 13 ]",
-            "saturday": "[ 20, 22, 24, 25 ]",
-            "sunday": "[ 22, 24, 28, 31 ]"
+            "monday": [ 24, 26, 27, 30 ],
+            "tuesday": [ 9, 10, 12, 13 ],
+            "wednesday": [ 12, 15, 16, 26 ],
+            "thursday": [ 14, 15, 17, 20 ],
+            "friday": [ 17, 18, 9, 13 ],
+            "saturday": [ 20, 22, 24, 25 ],
+            "sunday": [ 22, 24, 28, 31 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')

@@ -14,11 +14,11 @@ exports.seed = function(knex, Promise) {
           href_string: 'http://newfocusrecordings.bandcamp.com/album/hushers',
           a_string: 'Hushers by Quince Contemporary Vocal Ensemble',
           rule: {
-            "monday": "[ 4, 10, 17, 30 ]",
-            "tuesday": "[ 3, 9, 16, 29 ]",
-            "wednesday": "[ 2, 8, 15, 28 ]",
-            "thursday": "[ 1, 7, 14, 27 ]",
-            "saturday": "[ 5, 11, 18, 31 ]"
+            "monday": [ 4, 10, 17, 30 ],
+            "tuesday": [ 3, 9, 16, 29 ],
+            "wednesday": [ 2, 8, 15, 28 ],
+            "thursday": [ 1, 7, 14, 27 ],
+            "saturday": [ 5, 11, 18, 31 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -32,11 +32,11 @@ exports.seed = function(knex, Promise) {
           href_string: 'http://karlrecords.bandcamp.com/album/la-l-gende-deer',
           a_string: 'La Légende d&#39;Eer by IANNIS XENAKIS',
           rule: {
-            "monday": "[ 5, 11, 18, 31 ]",
-            "tuesday": "[ 4, 10, 17, 30 ]",
-            "wednesday": "[ 3, 9, 16, 29 ]",
-            "thursday": "[ 2, 8, 15, 28 ]",
-            "saturday": "[ 1, 7, 14, 27 ]"
+            "monday": [ 5, 11, 18, 31 ],
+            "tuesday": [ 4, 10, 17, 30 ],
+            "wednesday": [ 3, 9, 16, 29 ],
+            "thursday": [ 2, 8, 15, 28 ],
+            "saturday": [ 1, 7, 14, 27 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -50,11 +50,11 @@ exports.seed = function(knex, Promise) {
           href_string: 'http://karlrecords.bandcamp.com/album/complete-song-books',
           a_string: 'Complete Song Books by JOHN CAGE, REINHOLD FRIEDL',
           rule: {
-            "monday": "[ 1, 7, 14, 27 ]",
-            "tuesday": "[ 5, 11, 18, 31 ]",
-            "wednesday": "[ 4, 10, 17, 30 ]",
-            "thursday": "[ 3, 9, 16, 29 ]",
-            "saturday": "[ 2, 8, 15, 28 ]"
+            "monday": [ 1, 7, 14, 27 ],
+            "tuesday": [ 5, 11, 18, 31 ],
+            "wednesday": [ 4, 10, 17, 30 ],
+            "thursday": [ 3, 9, 16, 29 ],
+            "saturday": [ 2, 8, 15, 28 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -68,11 +68,11 @@ exports.seed = function(knex, Promise) {
           href_string: 'http://zeitkratzer.bandcamp.com/album/karlheinz-stockhausen-old-school',
           a_string: 'Karlheinz Stockhausen [old school] by zeitkratzer',
           rule: {
-            "monday": "[ 2, 8, 15, 28 ]",
-            "tuesday": "[ 1, 7, 14, 27 ]",
-            "wednesday": "[ 5, 11, 18, 31 ]",
-            "thursday": "[ 4, 10, 17, 30 ]",
-            "saturday": "[ 3, 9, 16, 29 ]"
+            "monday": [ 2, 8, 15, 28 ],
+            "tuesday": [ 1, 7, 14, 27 ],
+            "wednesday": [ 5, 11, 18, 31 ],
+            "thursday": [ 4, 10, 17, 30 ],
+            "saturday": [ 3, 9, 16, 29 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -86,11 +86,11 @@ exports.seed = function(knex, Promise) {
           href_string: 'http://idmtheftable.bandcamp.com/album/leaving-the-keyboard-that-plays-itself-down-by-the-river-between-2-30-and-3-30-am-august-3rd-2017',
           a_string: 'Leaving the keyboard that plays itself down by the river between 2:30 and 3:30 AM August 3rd 2017 by id m theft able',
           rule: {
-            "monday": "[ 3, 9, 16, 29 ]",
-            "tuesday": "[ 2, 8, 15, 28 ]",
-            "wednesday": "[ 1, 7, 14, 27 ]",
-            "thursday": "[ 5, 11, 18, 31 ]",
-            "saturday": "[ 4, 10, 17, 30 ]"
+            "monday": [ 3, 9, 16, 29 ],
+            "tuesday": [ 2, 8, 15, 28 ],
+            "wednesday": [ 1, 7, 14, 27 ],
+            "thursday": [ 5, 11, 18, 31 ],
+            "saturday": [ 4, 10, 17, 30 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -104,11 +104,11 @@ exports.seed = function(knex, Promise) {
           href_string: 'http://babel-label.bandcamp.com/album/karlheinz-stockhausen-tierkreis',
           a_string: 'KARLHEINZ STOCKHAUSEN TIERKREIS by BRUNO HEINEN SEXTET',
           rule: {
-            "monday": "[ 4, 10, 17, 30 ]",
-            "tuesday": "[ 3, 9, 16, 29 ]",
-            "wednesday": "[ 2, 8, 15, 28 ]",
-            "thursday": "[ 1, 7, 14, 27 ]",
-            "saturday": "[ 5, 11, 18, 31 ]"
+            "monday": [ 4, 10, 17, 30 ],
+            "tuesday": [ 3, 9, 16, 29 ],
+            "wednesday": [ 2, 8, 15, 28 ],
+            "thursday": [ 1, 7, 14, 27 ],
+            "saturday": [ 5, 11, 18, 31 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -122,11 +122,11 @@ exports.seed = function(knex, Promise) {
           href_string: 'http://joseperez.bandcamp.com/album/el-piano-del-siglo-xx',
           a_string: 'El piano del Siglo XX by José María Pérez',
           rule: {
-            "monday": "[ 6, 12, 19, 1 ]",
-            "tuesday": "[ 5, 11, 18, 31 ]",
-            "wednesday": "[ 4, 10, 17, 30 ]",
-            "thursday": "[ 3, 9, 16, 29 ]",
-            "saturday": "[ 2, 8, 15, 28 ]"
+            "monday": [ 6, 12, 19, 1 ],
+            "tuesday": [ 5, 11, 18, 31 ],
+            "wednesday": [ 4, 10, 17, 30 ],
+            "thursday": [ 3, 9, 16, 29 ],
+            "saturday": [ 2, 8, 15, 28 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -140,11 +140,11 @@ exports.seed = function(knex, Promise) {
           href_string: 'http://streifenjunko.bandcamp.com/album/sval-torv',
           a_string: 'Sval torv by Streifenjunko',
           rule: {
-            "monday": "[ 2, 8, 15, 28 ]",
-            "tuesday": "[ 6, 12, 19, 1 ]",
-            "wednesday": "[ 5, 11, 18, 31 ]",
-            "thursday": "[ 4, 10, 17, 30 ]",
-            "saturday": "[ 3, 9, 16, 29 ]"
+            "monday": [ 2, 8, 15, 28 ],
+            "tuesday": [ 6, 12, 19, 1 ],
+            "wednesday": [ 5, 11, 18, 31 ],
+            "thursday": [ 4, 10, 17, 30 ],
+            "saturday": [ 3, 9, 16, 29 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -158,11 +158,11 @@ exports.seed = function(knex, Promise) {
           href_string: 'http://nilsfrahm.bandcamp.com/album/music-for-the-motion-picture-victoria-bonus-track-version',
           a_string: 'Music for the Motion Picture Victoria (Bonus Track Version) by Nils Frahm',
           rule: {
-            "monday": "[ 3, 9, 16, 29 ]",
-            "tuesday": "[ 2, 8, 15, 28 ]",
-            "wednesday": "[ 6, 12, 19, 1 ]",
-            "thursday": "[ 5, 11, 18, 31 ]",
-            "saturday": "[ 4, 10, 17, 30 ]"
+            "monday": [ 3, 9, 16, 29 ],
+            "tuesday": [ 2, 8, 15, 28 ],
+            "wednesday": [ 6, 12, 19, 1 ],
+            "thursday": [ 5, 11, 18, 31 ],
+            "saturday": [ 4, 10, 17, 30 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')

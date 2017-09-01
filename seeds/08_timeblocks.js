@@ -122,8 +122,9 @@ exports.seed = function(knex, Promise) {
           user_notes: "Bring the donuts",
           location: 'Big Meeting Room',
           block_data: {
-            "attendees": "[ 'Bradley Efting', 'Anna Banana', 'Lex Luthor', 'Benson Hedges', 'McCormick Schmick']",
-            "objective": "Tighten the protocol budgets"
+            "meetingType": 2,
+            "attendees": [ 'Bradley Efting', 'Anna Banana', 'Lex Luthor', 'Benson Hedges', 'McCormick Schmick'],
+            "objective": ["Tighten the protocol budgets"]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -151,7 +152,7 @@ exports.seed = function(knex, Promise) {
           user_notes: "Email tag time",
           location: 'Home office',
           block_data: {
-            "project": 3
+            "project": 2
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -180,7 +181,7 @@ exports.seed = function(knex, Promise) {
           location: 'MLB.TV',
           block_data: {
             "eventType": 3,
-            "streamingURL": "https://mlb.tv"
+            "streamingURL": ["https://mlb.tv"]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
