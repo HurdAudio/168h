@@ -2033,6 +2033,91 @@
 
       }
 
+      function changeBlocktype(blocksArray, newType) {
+        let blocker = {};
+
+        for (let i = 0; i < blocksArray.length; i++) {
+          if (blocksArray[i].type === newType) {
+            blocker = blocksArray[i];
+          }
+        }
+
+        return(blocker);
+      }
+
+      function sideblockUpdate(timeblock, blocktype) {
+        let timeArray = timeblockRange(timeblock);
+        let element = document.getElementById(timeArray[0]);
+        let title = element.children[0].children[0].innerHTML;
+        console.log(title);
+        let insertText = blocktype.type;
+        let splicePoint1 = title.indexOf(' - ') + 3;
+        let splicePoint2 = title.indexOf('<button');
+        let replaceText = title.slice(0, splicePoint1) + insertText + title.slice(splicePoint2);
+        console.log(replaceText);
+        element.children[0].children[0].innerHTML = replaceText;
+        element.children[0].setAttribute("style", "background-color: " + blocktype.color + "; opacity: 0.8; border-top: solid " + blocktype.color + " 6px;");
+        element.children[0].children[0].children[0].addEventListener('click', (e)=>{
+          e.preventDefault();
+          e.stopPropagation();
+          verbalizeTimeblock(timeblock.id);
+        });
+        if (timeArray.length > 1) {
+          for (let i = 1; i < timeArray.length; i++) {
+            element = document.getElementById(timeArray[i]);
+            element.children[0].setAttribute("style", "background-color: " + blocktype.color + "; opacity: 0.8; border-top: solid " + blocktype.color + " 6px;");
+          }
+        }
+      }
+
+      function updateBlockType(currentTimeblock, updatedBlock) {
+        let editDeleteAppointments = document.getElementById('editDeleteAppointments');
+        let blockKeysSelector = document.getElementById('blockKeysSelector');
+        let editAdditionalKeys = document.getElementById('editAdditionalKeys');
+        let editBlockKeys = document.getElementById('editBlockKeys');
+        let block_data = currentTimeblock.block_data;
+        let patchObject = {
+          block_type: updatedBlock.id
+        };
+        if (updatedBlock.keys) {
+          editBlockKeys.setAttribute("style", "display: initial;");
+          if (updatedBlock.keys.keys.length > 1) {
+            editAdditionalKeys.setAttribute("style", "display: initial;");
+          } else {
+            editAdditionalKeys.setAttribute("style", "display: none;");
+          }
+        } else {
+          editBlockKeys.setAttribute("style", "display: none;");
+          editAdditionalKeys.setAttribute("style", "display: none;");
+        }
+        if (updatedBlock.keys) {
+          if (block_data === null) {
+            block_data = {};
+          }
+          if (currentTimeblock.block_data[updatedBlock.keys.keys[0]] === undefined) {
+            block_data[updatedBlock.keys.keys[0]] = 0;
+            patchObject.block_data = block_data;
+          }
+        }
+        $http.patch(`/timeblocks/${currentTimeblock.id}`, patchObject)
+        .then(timeblockData=>{
+          let timeblock = timeblockData.data;
+          sideblockUpdate(timeblock, updatedBlock);
+          setEditorColor(editDeleteAppointments, updatedBlock.color);
+          while(blockKeysSelector.firstChild) {
+            blockKeysSelector.removeChild(blockKeysSelector.firstChild);
+          }
+          while(editAdditionalKeys.firstChild) {
+            editAdditionalKeys.removeChild(editAdditionalKeys.firstChild);
+          }
+          populateKeys(blockKeysSelector, updatedBlock, 'add new value...', timeblock);
+          if (updatedBlock.keys.keys.length > 1) {
+            populateKeySubfields(editAdditionalKeys, timeblock, updatedBlock);
+          }
+
+        });
+      }
+
       function editAppointment(blockID) {
         console.log(blockID);
         currentEdit = blockID;
@@ -2040,7 +2125,16 @@
         let editDeleteAppointments = document.getElementById('editDeleteAppointments');
         let goalsPanel = document.getElementById('goalsPanel');
         let editAppointmentCancel = document.getElementById('editAppointmentCancel');
+        let editDeleteFormFieldset = document.getElementById('editDeleteFormFieldset');
         let editDeleteBlocktypeSelector = document.getElementById('editDeleteBlocktypeSelector');
+        if (editDeleteBlocktypeSelector) {
+          editDeleteBlocktypeSelector.parentNode.removeChild(editDeleteBlocktypeSelector);
+          editDeleteBlocktypeSelector = document.createElement('select');
+          editDeleteFormFieldset.appendChild(editDeleteBlocktypeSelector);
+          editDeleteBlocktypeSelector.id = "editDeleteBlocktypeSelector";
+          editDeleteBlocktypeSelector.setAttribute("style", "font-family: 'Alike Angular', serif; font-size: 18px; margin-left: 3em; width: 80%;");
+
+        }
         let editDeleteStart = document.getElementById('editDeleteStart');
         let editDeleteEnd = document.getElementById('editDeleteEnd');
         let editDeleteStartDecrease = document.getElementById('editDeleteStartDecrease');
@@ -2096,11 +2190,28 @@
               updateEndTimeButtons(timeblock.id, editDeleteEnd.innerHTML, editDeleteEndDecrease, editDeleteEndIncrease);
               editLocation.value = timeblock.location;
               editUserNotes.value = timeblock.user_notes;
+
+              //// Selector Block Type Listener
+
+              editDeleteBlocktypeSelector.addEventListener('change', ()=>{
+                console.log(editDeleteBlocktypeSelector.value);
+                if (editDeleteBlocktypeSelector.value !== 'add new blocktype...') {
+                  currentBlocktype = changeBlocktype(blocks, editDeleteBlocktypeSelector.value);
+                  updateBlockType(timeblock, currentBlocktype);
+                } else {
+                  //TODO new blocktype CRUD
+                  console.log('filler');
+                }
+              });
             });
           });
 
+
+
           editDeleteAppointments.setAttribute("style", "display: initial;");
           goalsPanel.setAttribute("style", "display: none;");
+
+
 
           editAppointmentCancel.addEventListener('click', ()=>{
             editDeleteAppointments.setAttribute("style", "display: none;");
