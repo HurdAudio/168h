@@ -5,6 +5,7 @@
   var year = 0;
   var month = 0;
   var day = 0;
+  var currentEdit = 0;
   var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
   var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
   var hours = ['h0', 'h030', 'h1', 'h130', 'h2', 'h230', 'h3', 'h330', 'h4', 'h430', 'h5', 'h530', 'h6', 'h630', 'h7', 'h730', 'h8', 'h830', 'h9', 'h930', 'h10', 'h1030', 'h11', 'h1130', 'h12', 'h1230', 'h13', 'h1330', 'h14', 'h1430', 'h15', 'h1530', 'h16', 'h1630', 'h17', 'h1730', 'h18', 'h1830', 'h19', 'h1930', 'h20', 'h2030', 'h21', 'h2130', 'h22', 'h2230', 'h23', 'h2330', 'h00' ];
@@ -1832,11 +1833,15 @@
         let strCut = element.children[0].children[0].innerHTML.indexOf(' -');
         element.children[0].children[0].innerHTML = element.children[0].children[0].innerHTML.slice(0, strCut);
         element.children[0].appointment = undefined;
+        element.children[0].children[0].appointment = undefined;
+        element.appointment = undefined;
 
         for (let i = 0; i < divArray.length; i++) {
           element = document.getElementById(divArray[i]);
           element.children[0].setAttribute("style", "background-color: transparent;");
           element.children[0].appointment = undefined;
+          element.children[0].children[0].appointment = undefined;
+          element.appointment = undefined;
 
         }
 
@@ -2030,6 +2035,8 @@
 
       function editAppointment(blockID) {
         console.log(blockID);
+        currentEdit = blockID;
+        let editDeleteForm = document.getElementById('editDeleteForm');
         let editDeleteAppointments = document.getElementById('editDeleteAppointments');
         let goalsPanel = document.getElementById('goalsPanel');
         let editAppointmentCancel = document.getElementById('editAppointmentCancel');
@@ -2048,10 +2055,21 @@
         let blockKeysSelector = document.getElementById('blockKeysSelector');
         let editAdditionalKeys = document.getElementById('editAdditionalKeys');
         let editAppointmentDelete = document.getElementById('editAppointmentDelete');
+        if (editAppointmentDelete) {
+          editAppointmentDelete.parentNode.removeChild(editAppointmentDelete);
+        }
+        editAppointmentDelete = document.createElement('a');
+        editDeleteForm.appendChild(editAppointmentDelete);
+        //editAppointmentDelete.href = "";
+
+        editAppointmentDelete.className = "btn";
+        editAppointmentDelete.id = "editAppointmentDelete";
+        editAppointmentDelete.setAttribute("style", "float: left; margin-left: 0.6em; cursor: pointer;");
+        editAppointmentDelete.innerHTML = "delete";
         while(editAdditionalKeys.firstChild) {
           editAdditionalKeys.removeChild(editAdditionalKeys.firstChild);
         }
-        if (blockID !== undefined) {
+        if (blockID) {
           $http.get(`/timeblocks/${blockID}`)
           .then(blockData=>{
             let timeblock = blockData.data;
@@ -2091,11 +2109,14 @@
           editAppointmentDelete.addEventListener('click', ()=>{
             editDeleteAppointments.setAttribute("style", "display: none;");
             goalsPanel.setAttribute("style", "display: initial;");
-            $http.delete(`/timeblocks/${blockID}`)
-            .then(deletedData=>{
-              let deleted = deletedData.data;
-              resetScheduleField(deleted);
-            });
+            if (currentEdit) {
+              $http.delete(`/timeblocks/${currentEdit}`)
+              .then(deletedData=>{
+                let deleted = deletedData.data;
+                currentEdit = 0;
+                resetScheduleField(deleted);
+              });
+            }
           });
         }
       }
