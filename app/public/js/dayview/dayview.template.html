@@ -326,6 +326,40 @@
     </div>
   </div>
 
+  <div id="blocktypeCRUD">
+    <h2>Add Blocktype</h2>
+    <form id="blocktypeCRUDForm" class="pure-form pure-form-stacked">
+      <fieldset>
+        <p>Block Name:</p>
+        <input type="text" id="blocktypeCRUDType" class="pure-input-1">
+
+        <p>Color:</p>
+        <input type="color" id="blocktypeCRUDColor" class="pure-input-1" value="#22ac44">
+        <br><br><br>
+        <p>Subtypes</p>
+        <input type="checkbox" id="blocktypeCRUDSubtypes" class="pure-input-1" checked>
+        <div id="blocktypeCRUDSubtypeMaker">
+          <button>add new</button>
+          <input type="text" class="pure-input-1">
+
+          <p>Additional Data Types:</p>
+          <input type="checkbox" id="blocktypeCRUDKeychain" class="pure-input-1" checked>
+          <div id="keychainList">
+            <button>add new</button>
+            <input type="text" class="pure-input-1">
+
+          </div>
+
+        </div>
+        <a href="" class="btn">submit</a>
+        <a href="" class="btn">cancel</a>
+
+      </fieldset>
+
+    </form>
+
+  </div>
+
   <div id="editDeleteAppointments" class="pure-u-1-3">
     <h2>Edit/Delete Timeblock</h2>
     <form id="editDeleteForm" class="pure-form pure-form-stacked">

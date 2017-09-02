@@ -77,9 +77,7 @@
       vm.verbalizeTimeblock = verbalizeTimeblock;
 
       function verbalizeTimeblock(blockID) {
-        //console.log(blockID);
         let idValue = parseInt(blockID);
-        //console.log(idValue);
         if (blockID) {
           $http.get(`/timeblocks/${idValue}`)
           .then(timeData=>{
@@ -242,7 +240,6 @@
           });
           taskPatchSubmit.addEventListener('click', ()=>{
             let taskPatcher = {};
-            console.log(taskEditDate.value);
             if (taskEditName.value.length < 1) {
               taskPatcher.name = task.name;
             } else {
@@ -264,7 +261,6 @@
               $http.patch(`/tasks/${taskID}`, taskPatcher)
               .then(patchedTaskData=>{
                 let patchedTask = patchedTaskData.data;
-                console.log(patchedTask);
                 errorField.innerHTML = '';
                 //TODO update the vm.tasks entry to reflect patched data;
                 for (let i = 0; i < vm.tasks.length; i++) {
@@ -324,7 +320,6 @@
       }
 
       function taskCompletedButton(taskID) {
-        //console.log(taskID);
 
         let taskCompletion = {};
         let doneDate = new Date();
@@ -480,7 +475,6 @@
         $http.get(`/bills/${billId}`)
         .then(theBillData=>{
           let theBill = theBillData.data;
-          console.log(theBill);
           let infoButton = document.getElementById(theBill.name + theBill.id + theBill.name + theBill.id +theBill.name);
           let infoDiv = document.getElementById(theBill.name + theBill.id + theBill.name + theBill.id);
           let exitButton = document.getElementById(theBill.id + theBill.name + theBill.name + theBill.name);
@@ -531,7 +525,6 @@
             .then(data=>{
               let patchedBill = data.data;
               let paidBillField = document.getElementById(theBill.name + theBill.id);
-              console.log(patchedBill);
               paidPalDiv.setAttribute("style", "display: none;");
               paidBillField.parentNode.removeChild(paidBillField);
             });
@@ -544,7 +537,6 @@
       }
 
       function editOccasion (occasionID) {
-        console.log(occasionID);
         let editOccasionName = document.getElementById('editOccasionName');
         let addOccasionButton = document.getElementById('addOccasionButton');
         let occasionsList = document.getElementById('occasionsList');
@@ -573,12 +565,9 @@
               occasionsList.setAttribute("style", "display: initial;");
               editDeleteOccasion.setAttribute("style", "display: none;");
               deleteOccasionButton.removeEventListener('click', ()=>{
-                console.log('removed');
               });
               editOccasionButton.removeEventListener('click', ()=>{
-                console.log('removed');
               });
-              console.log(vm.occasions);
 
 
 
@@ -586,14 +575,12 @@
           });
 
           editOccasionButton.addEventListener('click', ()=>{
-            console.log(editOccasionName.value);
             let patchObject = {};
             let patchedDisplay = document.getElementById(edit.name + edit.id);
             patchObject.name = editOccasionName.value;
             $http.patch(`/occasions/${occasionID}`, patchObject)
             .then(patchedData=>{
               let patched = patchedData.data;
-              console.log(patched);
               patchedDisplay.innerHTML = '-' + patched.name;
 
             });
@@ -642,12 +629,10 @@
           .then(ocData=>{
             let oc = ocData.data;
             vm.occasions.push(oc[0]);
-            //console.log(oc);
           });
         }
 
 
-        //console.log(isAnnualOccasion.checked);
 
         addOccasionButton.setAttribute("style", "display: initial;");
         addNewOccasion.setAttribute("style", "display: none;");
@@ -680,7 +665,6 @@
         let navDay = new Date();
         navDay.setDate(navDay.getDate());
         let idString = 'user=' + currentUserId + '&dayof=' + navDay.getFullYear() + '-' + (navDay.getMonth() + 1) + '-' + navDay.getDate();
-        console.log(idString);
         $state.go('dayview', {id: idString});
       }
 
@@ -757,7 +741,6 @@
         } else {
           dateParamInput = dateParamInput + day;
         }
-        console.log(dateParamInput);
         displayDate = new Date(dateParamInput);
         displayDate.setDate(displayDate.getDate() + 1);
         return(displayDate);
@@ -1236,7 +1219,6 @@
         $http.get(`/holidaysbyuser/${currentUserId}`)
         .then(holidayData=>{
           let holidayList = holidayData.data;
-          //console.log(holidayList);
           for (let i = 0; i < holidayList.length; i++) {
             // check for exact date match
             let yyyy = parseInt(holidayList[i].day_of.slice(0,4));
@@ -1244,13 +1226,10 @@
             let dd = parseInt(holidayList[i].day_of.slice(8,10));
 
             if ((yyyy === viewDate.getFullYear()) && (mm === (viewDate.getMonth() + 1)) && (dd === viewDate.getDate())) {
-              console.log(holidayList[i]);
               holidayArray.push(holidayList[i]);
             } else {
               if (holidayList[i].is_annual) {
-                console.log(parseInt('01'));
-                console.log(mm - 1);
-                console.log(viewDate.getMonth());
+
                 if (((mm - 1) === viewDate.getMonth()) && (dd === viewDate.getDate())) {
                   holidayArray.push(holidayList[i]);
                 }
@@ -1462,7 +1441,6 @@
         let result = true;
         let comp1 = new Date(date1);
         let comp2 = new Date(date2);
-        console.log('here!!');
         if (comp1.getFullYear() !== comp2.getFullYear()) {
           result = false;
         }
@@ -1472,7 +1450,6 @@
         if (comp1.getDate() !== comp2.getDate()) {
           result = false;
         }
-        console.log(result);
         return(result);
       }
 
@@ -1525,7 +1502,6 @@
         } else {
           tense = 'present';
         }
-        console.log(tense);
         return(tense);
       }
 
@@ -1650,7 +1626,6 @@
           if (currentBillsDue.length > 0) {
             for (let i = 0; i < currentBillsDue.length; i++) {
               currentBillsDue[i].clean_date = getCleanDate(currentBillsDue[i].due_date);
-              console.log(currentBillsDue[i].due_date);
               switch(getBillTense(viewDate, currentBillsDue[i].due_date)) {
                 case ('past'):
                   // element = document.getElementById(currentBillsDue[i].name + currentBillsDue[i].id);
@@ -1665,7 +1640,6 @@
                   break;
                 case ('present'):
                   // element = document.getElementById(currentBillsDue[i].name + currentBillsDue[i].id);
-                  // console.log(element);
                   // element.setAttribute("style", "background-color: #ff0000;");
                   todaysBills.push(currentBillsDue[i]);
                   currentBillsDue[i].due_state = ' is DUE today!';
@@ -1687,14 +1661,12 @@
             element.setAttribute("style", "display: none;");
           }
           vm.bills = currentBillsDue;
-          console.log(todaysBills);
           let idString = '';
 
           setTimeout(()=>{
             if (todaysBills.length > 0) {
               for (let dueNow = 0; dueNow < todaysBills.length; dueNow++) {
                 idString = todaysBills[dueNow].name + todaysBills[dueNow].id;
-                console.log(idString);
                 document.getElementById(idString).setAttribute("style", "background: #ff0000; background: -webkit-linear-gradient(-45deg, #ff0000, #cc9900); background: -o-linear-gradient(-45deg, #ff0000, #cc9900);   background: -moz-linear-gradient(-45deg, #ff0000, #cc9900); background: linear-gradient(-45deg, #ff0000, #cc9900);");
               }
             }
@@ -1724,7 +1696,6 @@
           if (currentTasksDue.length > 0) {
             for (let i = 0; i < currentTasksDue.length; i++) {
               currentTasksDue[i].clean_date = getCleanDate(currentTasksDue[i].due_date);
-              console.log(currentTasksDue[i].due_date);
               switch(getBillTense(viewDate, currentTasksDue[i].due_date)) {
                 case ('past'):
                   // element = document.getElementById(currentBillsDue[i].name + currentBillsDue[i].id);
@@ -1739,7 +1710,6 @@
                   break;
                 case ('present'):
                   // element = document.getElementById(currentBillsDue[i].name + currentBillsDue[i].id);
-                  // console.log(element);
                   // element.setAttribute("style", "background-color: #ff0000;");
                   todaysTasks.push(currentTasksDue[i]);
                   currentTasksDue[i].due_state = ' is DUE today!';
@@ -1761,14 +1731,12 @@
             element.setAttribute("style", "display: none;");
           }
           vm.tasks = currentTasksDue;
-          console.log(todaysTasks);
           let idString = '';
 
           setTimeout(()=>{
             if (todaysTasks.length > 0) {
               for (let dueNow = 0; dueNow < todaysTasks.length; dueNow++) {
                 idString = todaysTasks[dueNow].name + todaysTasks[dueNow].id;
-                console.log(idString);
                 document.getElementById(idString).setAttribute("style", "background: #ff0000; background: -webkit-linear-gradient(-45deg, #ff0000, #cc9900); background: -o-linear-gradient(-45deg, #ff0000, #cc9900);   background: -moz-linear-gradient(-45deg, #ff0000, #cc9900); background: linear-gradient(-45deg, #ff0000, #cc9900);");
               }
             }
@@ -1809,9 +1777,7 @@
       function timeblockRange(block) {
         let times = [];
         let start = convertTimeToID(block.start_time);
-        console.log(start);
         let end = convertTimeToID(block.end_time);
-        console.log(end);
 
         let index = hours.indexOf(start);
         let endIndex = hours.indexOf(end);
@@ -1823,7 +1789,6 @@
         for (let i = index; i < endIndex; i++) {
           times.push(hours[i]);
         }
-        console.log(times);
         return(times);
       }
 
@@ -1848,11 +1813,20 @@
       }
 
       function populateKeys(element, block, initialString, timeblock) {
-        while (element.firstChild) {
-          element.removeChild(element.firstChild);
+
+        if (element.firstChild) {
+          while (element.firstChild) {
+            element.removeChild(element.firstChild);
+          }
+        }
+        //console.log(block.keys);
+
+        if (block.keys === null) {
+          return;
         }
 
         let newSelect;
+
         let keyValueList = block.keys[block.keys.keys[0] + "Values"];
         let keyInUse = keyValueList[timeblock.block_data[block.keys.keys[0]]];
 
@@ -2007,7 +1981,7 @@
           newDiv.appendChild(newEntry);
           newEntry.innerHTML = 'add new';
 
-          newEntry.setAttribute("style", "font-weight: bolder; font-family: 'Asul', sans-serif;; font-size: 24px; background: " + currentBlock.color + "; background-color: -webkit-linear-gradient(135deg, " + currentBlock.color + ", #ffffff); background: -o-linear-gradient(135deg, " + currentBlock.color + ", #ffffff); background: -moz-linear-gradient(135deg, " + currentBlock.color + ", #ffffff); background: linear-gradient(135deg, " + currentBlock.color + ", #ffffff); opacity: 0.7; margin-left: 2.2em; margin-top: 0; margin-bottom: 0");
+          newEntry.setAttribute("style", "font-weight: bolder; font-family: 'Asul', sans-serif; font-size: 24px; background: " + currentBlock.color + "; background-color: -webkit-linear-gradient(135deg, " + currentBlock.color + ", #ffffff); background: -o-linear-gradient(135deg, " + currentBlock.color + ", #ffffff); background: -moz-linear-gradient(135deg, " + currentBlock.color + ", #ffffff); background: linear-gradient(135deg, " + currentBlock.color + ", #ffffff); opacity: 0.7; margin-left: 2.2em; margin-top: 0; margin-bottom: 0;");
           buttonObject.div = newDiv;
           buttonObject.button = newEntry;
           buttonObject.keyEntry = currentBlock.keys.keys[i];
@@ -2049,12 +2023,10 @@
         let timeArray = timeblockRange(timeblock);
         let element = document.getElementById(timeArray[0]);
         let title = element.children[0].children[0].innerHTML;
-        console.log(title);
         let insertText = blocktype.type;
         let splicePoint1 = title.indexOf(' - ') + 3;
         let splicePoint2 = title.indexOf('<button');
         let replaceText = title.slice(0, splicePoint1) + insertText + title.slice(splicePoint2);
-        console.log(replaceText);
         element.children[0].children[0].innerHTML = replaceText;
         element.children[0].setAttribute("style", "background-color: " + blocktype.color + "; opacity: 0.8; border-top: solid " + blocktype.color + " 6px;");
         element.children[0].children[0].children[0].addEventListener('click', (e)=>{
@@ -2076,10 +2048,12 @@
         let editAdditionalKeys = document.getElementById('editAdditionalKeys');
         let editBlockKeys = document.getElementById('editBlockKeys');
         let block_data = currentTimeblock.block_data;
+
         let patchObject = {
-          block_type: updatedBlock.id
+          block_type: updatedBlock.id,
         };
-        if (updatedBlock.keys) {
+        if (updatedBlock.keys !== null) {
+
           editBlockKeys.setAttribute("style", "display: initial;");
           if (updatedBlock.keys.keys.length > 1) {
             editAdditionalKeys.setAttribute("style", "display: initial;");
@@ -2087,39 +2061,54 @@
             editAdditionalKeys.setAttribute("style", "display: none;");
           }
         } else {
+
           editBlockKeys.setAttribute("style", "display: none;");
           editAdditionalKeys.setAttribute("style", "display: none;");
         }
-        if (updatedBlock.keys) {
-          if (block_data === null) {
+        if (updatedBlock.keys !== null) {
+
+          if ((block_data === undefined) || (block_data === null)) {
             block_data = {};
           }
-          if (currentTimeblock.block_data[updatedBlock.keys.keys[0]] === undefined) {
+          if ((currentTimeblock.block_data === null) || (currentTimeblock.block_data[updatedBlock.keys.keys[0]] === undefined)) {
             block_data[updatedBlock.keys.keys[0]] = 0;
             patchObject.block_data = block_data;
           }
         }
+
         $http.patch(`/timeblocks/${currentTimeblock.id}`, patchObject)
         .then(timeblockData=>{
           let timeblock = timeblockData.data;
           sideblockUpdate(timeblock, updatedBlock);
           setEditorColor(editDeleteAppointments, updatedBlock.color);
-          while(blockKeysSelector.firstChild) {
-            blockKeysSelector.removeChild(blockKeysSelector.firstChild);
+          if (blockKeysSelector.firstChild) {
+            while(blockKeysSelector.firstChild) {
+              blockKeysSelector.removeChild(blockKeysSelector.firstChild);
+            }
           }
-          while(editAdditionalKeys.firstChild) {
-            editAdditionalKeys.removeChild(editAdditionalKeys.firstChild);
+          if (editAdditionalKeys.firstChild) {
+            while(editAdditionalKeys.firstChild) {
+              editAdditionalKeys.removeChild(editAdditionalKeys.firstChild);
+            }
           }
-          populateKeys(blockKeysSelector, updatedBlock, 'add new value...', timeblock);
-          if (updatedBlock.keys.keys.length > 1) {
-            populateKeySubfields(editAdditionalKeys, timeblock, updatedBlock);
+
+          if (blockKeysSelector) {
+            populateKeys(blockKeysSelector, updatedBlock, 'add new value...', timeblock);
+
           }
+          if (updatedBlock.keys !== null) {
+            if (updatedBlock.keys.keys.length > 1) {
+              populateKeySubfields(editAdditionalKeys, timeblock, updatedBlock);
+            }
+            blockKeysSelector.value = updatedBlock.keys[updatedBlock.keys.keys[0] + "Values"][timeblock.block_data[updatedBlock.keys.keys[0]]];
+          }
+
+
 
         });
       }
 
       function editAppointment(blockID) {
-        console.log(blockID);
         currentEdit = blockID;
         let editDeleteForm = document.getElementById('editDeleteForm');
         let editDeleteAppointments = document.getElementById('editDeleteAppointments');
@@ -2139,6 +2128,7 @@
         let editDeleteEnd = document.getElementById('editDeleteEnd');
         let editDeleteStartDecrease = document.getElementById('editDeleteStartDecrease');
         let editDeleteStartIncrease = document.getElementById('editDeleteStartIncrease');
+        let blocktypeCRUD = document.getElementById('blocktypeCRUD');
         let editDeleteEndDecrease = document.getElementById('editDeleteEndDecrease');
         let editDeleteEndIncrease = document.getElementById('editDeleteEndIncrease');
         let editLocation = document.getElementById('editLocation');
@@ -2167,7 +2157,6 @@
           $http.get(`/timeblocks/${blockID}`)
           .then(blockData=>{
             let timeblock = blockData.data;
-            console.log(timeblock);
             $http.get(`/blocktypesbyuser/${currentUserId}`)
             .then(blocksData=>{
               let blocks = blocksData.data;
@@ -2194,13 +2183,13 @@
               //// Selector Block Type Listener
 
               editDeleteBlocktypeSelector.addEventListener('change', ()=>{
-                console.log(editDeleteBlocktypeSelector.value);
                 if (editDeleteBlocktypeSelector.value !== 'add new blocktype...') {
                   currentBlocktype = changeBlocktype(blocks, editDeleteBlocktypeSelector.value);
                   updateBlockType(timeblock, currentBlocktype);
                 } else {
                   //TODO new blocktype CRUD
-                  console.log('filler');
+                  blocktypeCRUD.setAttribute("style", "display: initial;");
+                  editDeleteAppointments.setAttribute("style", "display: none;");
                 }
               });
             });
@@ -2209,6 +2198,7 @@
 
 
           editDeleteAppointments.setAttribute("style", "display: initial;");
+          blocktypeCRUD.setAttribute("style", "display: none;");
           goalsPanel.setAttribute("style", "display: none;");
 
 
@@ -2247,7 +2237,6 @@
       }
 
       function setToplineAppointment(timeblock, lineID) {
-        console.log(timeblock.id);
         let element = document.getElementById(lineID);
         element = element.children[0];
         $http.get(`/blocktypes/${timeblock.block_type}`)
