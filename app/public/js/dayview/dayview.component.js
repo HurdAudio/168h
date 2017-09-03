@@ -2001,6 +2001,11 @@
               newEntry.setAttribute("style", "font-family: 'Alike Angular', serif; font-size: 18px; margin-left: 3em; width: 80%;");
             }
           }
+          newEntry = document.createElement('input');
+          newDiv.appendChild(newEntry);
+          newEntry.type = "text";
+          newEntry.class = "pure-input-1";
+          newEntry.setAttribute("style", "font-family: 'Alike Angular', serif; font-size: 18px; margin-left: 3em; width: 80%;");
 
 
         }
@@ -2108,6 +2113,254 @@
         });
       }
 
+      function blocktypeCRUDHandler(timeblock) {
+        let blocktypeCRUDForm = document.getElementById('blocktypeCRUDForm');
+        let blocktypeCRUDColor = document.getElementById('blocktypeCRUDColor');
+        let blocktypeCRUDAddNewSubtype = document.getElementById('blocktypeCRUDAddNewSubtype');
+        let blocktypeCRUDAdditionalDataTypeAdds = document.getElementById('blocktypeCRUDAdditionalDataTypeAdds');
+        let blocktypeCRUDSubtypes = document.getElementById('blocktypeCRUDSubtypes');
+        let blocktypeCRUDSubtypeMaker = document.getElementById('blocktypeCRUDSubtypeMaker');
+        let blocktypeCRUDKeychain = document.getElementById('blocktypeCRUDKeychain');
+        let keychainList = document.getElementById('keychainList');
+        keychainList.setAttribute("style", "display: none;");
+        let addingTheSubtypes = document.getElementById('addingTheSubtypes');
+        let blocktypeCRUDCancelButton = document.getElementById('blocktypeCRUDCancelButton');
+        let blocktypeCRUDButtonsField = document.getElementById('blocktypeCRUDButtonsField');
+        let blocktypeCRUDSubmitButton = document.getElementById('blocktypeCRUDSubmitButton');
+        if (blocktypeCRUDSubmitButton) {
+          blocktypeCRUDSubmitButton.parentNode.removeChild(blocktypeCRUDSubmitButton);
+          blocktypeCRUDSubmitButton = document.createElement('a');
+          blocktypeCRUDButtonsField.appendChild(blocktypeCRUDSubmitButton);
+          blocktypeCRUDSubmitButton.id = "blocktypeCRUDSubmitButton";
+          blocktypeCRUDSubmitButton.className = "btn";
+          blocktypeCRUDSubmitButton.innerHTML = "submit";
+          blocktypeCRUDSubmitButton.setAttribute("style", "cursor: pointer;");
+        }
+        if (blocktypeCRUDCancelButton) {
+          blocktypeCRUDCancelButton.parentNode.removeChild(blocktypeCRUDCancelButton);
+          blocktypeCRUDCancelButton = document.createElement('a');
+          blocktypeCRUDButtonsField.appendChild(blocktypeCRUDCancelButton);
+          blocktypeCRUDCancelButton.id = "blocktypeCRUDCancelButton";
+          blocktypeCRUDCancelButton.className = "btn";
+          blocktypeCRUDCancelButton.innerHTML = "cancel";
+          blocktypeCRUDCancelButton.setAttribute("style", "cursor: pointer;");
+        }
+        let blocktypeCRUDType = document.getElementById('blocktypeCRUDType');
+        let blocktypeCRUD = document.getElementById('blocktypeCRUD');
+        let editDeleteAppointments = document.getElementById('editDeleteAppointments');
+        let blocktypeCRUDErrorField = document.getElementById('blocktypeCRUDErrorField');
+        let newSubtypeField;
+        let subtypeChildren;
+        let secondaryTypeChildren;
+        let secondarySubtypeField;
+
+        blocktypeCRUDSubtypes.checked = true;
+        blocktypeCRUDKeychain.checked = false;
+
+
+
+        //console.log(blocktypeCRUDColor.value);
+
+        blocktypeCRUDForm.setAttribute("style", "background: " + blocktypeCRUDColor.value + "; background-color: -webkit-linear-gradient(135deg, " + blocktypeCRUDColor.value + ", #abdada); background: -o-linear-gradient(135deg, " + blocktypeCRUDColor.value + ", #abdada); background: -moz-linear-gradient(135deg, " + blocktypeCRUDColor.value + ", #abdada); background: linear-gradient(135deg, " + blocktypeCRUDColor.value + ", #abdada);");
+
+        blocktypeCRUDAddNewSubtype.setAttribute("style", "background: " + blocktypeCRUDColor.value + "; background-color: -webkit-linear-gradient(135deg, " + blocktypeCRUDColor.value + ", #abdada); background: -o-linear-gradient(135deg, " + blocktypeCRUDColor.value + ", #abdada); background: -moz-linear-gradient(135deg, " + blocktypeCRUDColor.value + ", #abdada); background: linear-gradient(135deg, " + blocktypeCRUDColor.value + ", #abdada);");
+
+        blocktypeCRUDAdditionalDataTypeAdds.setAttribute("style", "background: " + blocktypeCRUDColor.value + "; background-color: -webkit-linear-gradient(135deg, " + blocktypeCRUDColor.value + ", #abdada); background: -o-linear-gradient(135deg, " + blocktypeCRUDColor.value + ", #abdada); background: -moz-linear-gradient(135deg, " + blocktypeCRUDColor.value + ", #abdada); background: linear-gradient(135deg, " + blocktypeCRUDColor.value + ", #abdada);");
+
+        $http.get(`/blocktypesbyuser/${currentUserId}`)
+        .then(blocksData=>{
+          let blocks = blocksData.data;
+
+
+          blocktypeCRUDAddNewSubtype.addEventListener('click', ()=>{
+            let blankTextField = false;
+            subtypeChildren = addingTheSubtypes.children;
+            if (subtypeChildren.length > 1) {
+              for (let i = 1; i < subtypeChildren.length; i++) {
+                if (subtypeChildren[i].value === '') {
+                  blankTextField = true;
+                }
+              }
+            }
+            if (!blankTextField) {
+              newSubtypeField = document.createElement('input');
+              addingTheSubtypes.appendChild(newSubtypeField);
+              newSubtypeField.type = "text";
+              newSubtypeField.className = "pure-input-1";
+            }
+          });
+
+          blocktypeCRUDAdditionalDataTypeAdds.addEventListener('click', ()=>{
+            let blankTextField = false;
+            secondaryTypeChildren = keychainList.children;
+            if (secondaryTypeChildren.length > 1) {
+              for (let i = 1; i < secondaryTypeChildren.length; i++) {
+                if (secondaryTypeChildren[i].value === '') {
+                  blankTextField = true;
+                }
+              }
+            }
+            if (!blankTextField) {
+              secondarySubtypeField = document.createElement('input');
+              keychainList.appendChild(secondarySubtypeField);
+              secondarySubtypeField.type = "text";
+              secondarySubtypeField.className = "pure-input-1";
+            }
+          });
+
+          blocktypeCRUDSubtypes.addEventListener('change', ()=>{
+            if (blocktypeCRUDSubtypes.checked) {
+              blocktypeCRUDSubtypeMaker.setAttribute("style", "display: initial;");
+            } else {
+              blocktypeCRUDSubtypeMaker.setAttribute("style", "display: none;");
+            }
+          });
+
+          blocktypeCRUDKeychain.addEventListener('change', ()=>{
+            if (blocktypeCRUDKeychain.checked) {
+              keychainList.setAttribute("style", "display: initial;");
+            } else {
+              keychainList.setAttribute("style", "display: none;");
+            }
+          });
+
+          blocktypeCRUDColor.addEventListener('change', ()=>{
+            blocktypeCRUDForm.setAttribute("style", "background: " + blocktypeCRUDColor.value + "; background-color: -webkit-linear-gradient(135deg, " + blocktypeCRUDColor.value + ", #abdada); background: -o-linear-gradient(135deg, " + blocktypeCRUDColor.value + ", #abdada); background: -moz-linear-gradient(135deg, " + blocktypeCRUDColor.value + ", #abdada); background: linear-gradient(135deg, " + blocktypeCRUDColor.value + ", #abdada);");
+
+            blocktypeCRUDAddNewSubtype.setAttribute("style", "background: " + blocktypeCRUDColor.value + "; background-color: -webkit-linear-gradient(135deg, " + blocktypeCRUDColor.value + ", #abdada); background: -o-linear-gradient(135deg, " + blocktypeCRUDColor.value + ", #abdada); background: -moz-linear-gradient(135deg, " + blocktypeCRUDColor.value + ", #abdada); background: linear-gradient(135deg, " + blocktypeCRUDColor.value + ", #abdada);");
+
+            blocktypeCRUDAdditionalDataTypeAdds.setAttribute("style", "background: " + blocktypeCRUDColor.value + "; background-color: -webkit-linear-gradient(135deg, " + blocktypeCRUDColor.value + ", #abdada); background: -o-linear-gradient(135deg, " + blocktypeCRUDColor.value + ", #abdada); background: -moz-linear-gradient(135deg, " + blocktypeCRUDColor.value + ", #abdada); background: linear-gradient(135deg, " + blocktypeCRUDColor.value + ", #abdada);");
+          });
+
+          blocktypeCRUDCancelButton.addEventListener('click', ()=>{
+            //console.log('deleteded');
+            blocktypeCRUDType.value = '';
+            blocktypeCRUDColor.value = '#22ac44';
+            blocktypeCRUDSubtypes.checked = true;
+            addingTheSubtypes.children[1].value = '';
+            if (addingTheSubtypes.children.length > 2) {
+              while (addingTheSubtypes.children[2]) {
+                addingTheSubtypes.removeChild(addingTheSubtypes.children[2]);
+              }
+            }
+            blocktypeCRUDKeychain.checked = false;
+            keychainList.children[1].value = '';
+            if (keychainList.children.length > 2) {
+              while (keychainList.children[2]) {
+                keychainList.removeChild(keychainList.children[2]);
+              }
+            }
+            keychainList.setAttribute("style", "display: none;");
+            blocktypeCRUDSubtypeMaker.setAttribute("style", "display: initial;");
+            blocktypeCRUDForm.setAttribute("style", "background: " + blocktypeCRUDColor.value + "; background-color: -webkit-linear-gradient(135deg, " + blocktypeCRUDColor.value + ", #abdada); background: -o-linear-gradient(135deg, " + blocktypeCRUDColor.value + ", #abdada); background: -moz-linear-gradient(135deg, " + blocktypeCRUDColor.value + ", #abdada); background: linear-gradient(135deg, " + blocktypeCRUDColor.value + ", #abdada);");
+
+            blocktypeCRUDAddNewSubtype.setAttribute("style", "background: " + blocktypeCRUDColor.value + "; background-color: -webkit-linear-gradient(135deg, " + blocktypeCRUDColor.value + ", #abdada); background: -o-linear-gradient(135deg, " + blocktypeCRUDColor.value + ", #abdada); background: -moz-linear-gradient(135deg, " + blocktypeCRUDColor.value + ", #abdada); background: linear-gradient(135deg, " + blocktypeCRUDColor.value + ", #abdada);");
+
+            blocktypeCRUDAdditionalDataTypeAdds.setAttribute("style", "background: " + blocktypeCRUDColor.value + "; background-color: -webkit-linear-gradient(135deg, " + blocktypeCRUDColor.value + ", #abdada); background: -o-linear-gradient(135deg, " + blocktypeCRUDColor.value + ", #abdada); background: -moz-linear-gradient(135deg, " + blocktypeCRUDColor.value + ", #abdada); background: linear-gradient(135deg, " + blocktypeCRUDColor.value + ", #abdada);");
+            blocktypeCRUDErrorField.innerHTML = '';
+            blocktypeCRUD.setAttribute("style", "display: none;");
+            editDeleteAppointments.setAttribute("style", "display: initial;");
+            editAppointment(timeblock.id);
+          });
+
+          blocktypeCRUDSubmitButton.addEventListener('click', ()=>{
+            blocktypeCRUDErrorField.innerHTML = '';
+            if (blocktypeCRUDType.value === '') {
+              blocktypeCRUDErrorField.innerHTML = 'Please enter a blocktype name.';
+              blocktypeCRUDErrorField.setAttribute("style", "color: #ff0000; font-size: 18px; font-family: 'Asul', sans-serif; margin-left: 3em;");
+              return;
+            } else {
+              for (let i = 0; i < blocks.length; i++) {
+                if (blocktypeCRUDType.value === blocks[i].type) {
+                  blocktypeCRUDErrorField.innerHTML = 'That blocktype name is already in use.';
+                  blocktypeCRUDErrorField.setAttribute("style", "color: #ff0000; font-size: 18px; font-family: 'Asul', sans-serif; margin-left: 3em;");
+                  return;
+                }
+              }
+            }
+            if (blocktypeCRUDSubtypes.checked) {
+              if (addingTheSubtypes.children[1].value === '') {
+                blocktypeCRUDErrorField.innerHTML = 'Please enter at least one subtype (or uncheck subtypes).';
+                blocktypeCRUDErrorField.setAttribute("style", "color: #ff0000; font-size: 18px; font-family: 'Asul', sans-serif; margin-left: 3em;");
+                return;
+              }
+              if (blocktypeCRUDKeychain.checked) {
+                if (keychainList.children[1].value === '') {
+                  blocktypeCRUDErrorField.innerHTML = 'Please enter at least one additional data type value (or uncheck additional data types).';
+                  blocktypeCRUDErrorField.setAttribute("style", "color: #ff0000; font-size: 18px; font-family: 'Asul', sans-serif; margin-left: 3em;");
+                  return;
+                }
+              }
+            }
+            // We've cleared all the checks, now we package up the user input as an object for posting
+            let blockSubmit = {
+              user_id: currentUserId,
+              type: blocktypeCRUDType.value,
+              color: blocktypeCRUDColor.value
+            };
+            if (blocktypeCRUDSubtypes.checked) {
+              blockSubmit.keys = {};
+              blockSubmit.keys.keys = [];
+              blockSubmit.keys.keys[0] = blocktypeCRUDType.value + "Type";
+              blockSubmit.keys[blockSubmit.keys.keys[0] + "Values"] = [];
+              for (let j = 1; j < addingTheSubtypes.children.length; j++) {
+                blockSubmit.keys[blockSubmit.keys.keys[0] + "Values"].push(addingTheSubtypes.children[j].value);
+              }
+              if (blocktypeCRUDKeychain.checked) {
+                for (let k = 1; k < keychainList.children.length; k++) {
+                  blockSubmit.keys.keys[k] = keychainList.children[k].value;
+                }
+              }
+            }
+            //post new blocktype
+            $http.post('/blocktypes', blockSubmit)
+            .then(addedBlockData=>{
+              let addedBlock = addedBlockData.data[0];
+              let timeUpdate = {
+                block_type: addedBlock.id
+              };
+              if (addedBlock.keys !== null) {
+                timeUpdate.block_data = {};
+                timeUpdate.block_data[addedBlock.keys.keys[0]] = 0;
+              }
+              $http.patch(`/timeblocks/${timeblock.id}`, timeUpdate)
+              .then(timeUpdatedData=>{
+                let timeUpdated = timeUpdatedData.data;
+                console.log(timeUpdated);
+                blocktypeCRUDType.value = '';
+                blocktypeCRUDColor.value = '#22ac44';
+                blocktypeCRUDSubtypes.checked = true;
+                addingTheSubtypes.children[1].value = '';
+                if (addingTheSubtypes.children.length > 2) {
+                  while (addingTheSubtypes.children[2]) {
+                    addingTheSubtypes.removeChild(addingTheSubtypes.children[2]);
+                  }
+                }
+                blocktypeCRUDKeychain.checked = false;
+                keychainList.children[1].value = '';
+                if (keychainList.children.length > 2) {
+                  while (keychainList.children[2]) {
+                    keychainList.removeChild(keychainList.children[2]);
+                  }
+                }
+                keychainList.setAttribute("style", "display: none;");
+                blocktypeCRUDSubtypeMaker.setAttribute("style", "display: initial;");
+                blocktypeCRUDForm.setAttribute("style", "background: " + blocktypeCRUDColor.value + "; background-color: -webkit-linear-gradient(135deg, " + blocktypeCRUDColor.value + ", #abdada); background: -o-linear-gradient(135deg, " + blocktypeCRUDColor.value + ", #abdada); background: -moz-linear-gradient(135deg, " + blocktypeCRUDColor.value + ", #abdada); background: linear-gradient(135deg, " + blocktypeCRUDColor.value + ", #abdada);");
+
+                blocktypeCRUDAddNewSubtype.setAttribute("style", "background: " + blocktypeCRUDColor.value + "; background-color: -webkit-linear-gradient(135deg, " + blocktypeCRUDColor.value + ", #abdada); background: -o-linear-gradient(135deg, " + blocktypeCRUDColor.value + ", #abdada); background: -moz-linear-gradient(135deg, " + blocktypeCRUDColor.value + ", #abdada); background: linear-gradient(135deg, " + blocktypeCRUDColor.value + ", #abdada);");
+
+                blocktypeCRUDAdditionalDataTypeAdds.setAttribute("style", "background: " + blocktypeCRUDColor.value + "; background-color: -webkit-linear-gradient(135deg, " + blocktypeCRUDColor.value + ", #abdada); background: -o-linear-gradient(135deg, " + blocktypeCRUDColor.value + ", #abdada); background: -moz-linear-gradient(135deg, " + blocktypeCRUDColor.value + ", #abdada); background: linear-gradient(135deg, " + blocktypeCRUDColor.value + ", #abdada);");
+                blocktypeCRUDErrorField.innerHTML = '';
+                blocktypeCRUD.setAttribute("style", "display: none;");
+                editDeleteAppointments.setAttribute("style", "display: initial;");
+                editAppointment(timeblock.id);
+                sideblockUpdate(timeblock, addedBlock);
+              });
+            });
+          });
+        });
+      }
+
       function editAppointment(blockID) {
         currentEdit = blockID;
         let editDeleteForm = document.getElementById('editDeleteForm');
@@ -2190,6 +2443,7 @@
                   //TODO new blocktype CRUD
                   blocktypeCRUD.setAttribute("style", "display: initial;");
                   editDeleteAppointments.setAttribute("style", "display: none;");
+                  blocktypeCRUDHandler(timeblock);
                 }
               });
             });

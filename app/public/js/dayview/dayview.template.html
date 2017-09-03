@@ -327,8 +327,9 @@
   </div>
 
   <div id="blocktypeCRUD">
-    <h2>Add Blocktype</h2>
+
     <form id="blocktypeCRUDForm" class="pure-form pure-form-stacked">
+      <h2>Add Blocktype</h2>
       <fieldset>
         <p>Block Name:</p>
         <input type="text" id="blocktypeCRUDType" class="pure-input-1">
@@ -337,22 +338,27 @@
         <input type="color" id="blocktypeCRUDColor" class="pure-input-1" value="#22ac44">
         <br><br><br>
         <p>Subtypes</p>
-        <input type="checkbox" id="blocktypeCRUDSubtypes" class="pure-input-1" checked>
+        <input type="checkbox" id="blocktypeCRUDSubtypes" class="pure-input-1" checked><br>
         <div id="blocktypeCRUDSubtypeMaker">
-          <button>add new</button>
-          <input type="text" class="pure-input-1">
+          <div id="addingTheSubtypes">
+            <button id="blocktypeCRUDAddNewSubtype">add new</button>
+            <input type="text" class="pure-input-1">
+          </div>
 
           <p>Additional Data Types:</p>
-          <input type="checkbox" id="blocktypeCRUDKeychain" class="pure-input-1" checked>
+          <input type="checkbox" id="blocktypeCRUDKeychain" class="pure-input-1"><br>
           <div id="keychainList">
-            <button>add new</button>
+            <button id="blocktypeCRUDAdditionalDataTypeAdds">add new</button>
             <input type="text" class="pure-input-1">
 
           </div>
 
         </div>
-        <a href="" class="btn">submit</a>
-        <a href="" class="btn">cancel</a>
+        <h2 id="blocktypeCRUDErrorField"></h2>
+        <div id="blocktypeCRUDButtonsField">
+          <a href="" class="btn" id="blocktypeCRUDSubmitButton">submit</a>
+          <a href="" class="btn" id="blocktypeCRUDCancelButton">cancel</a>
+        </div>
 
       </fieldset>
 

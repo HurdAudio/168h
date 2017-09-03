@@ -2780,3 +2780,11 @@ footer img {
   margin-top: 0em;
   margin-left: 4em;
 }
+
+#blocktypeCRUDErrorField {
+  font-family: 'Asul', sans-serif;
+  color: red;
+  font-size: 12px;
+  margin-left: 3em;
+
+}
