@@ -2361,6 +2361,92 @@
         });
       }
 
+      function updateBlockSubtype(timeblock, blocktype, blockKey) {
+        let submission = {
+          block_data: timeblock.block_data
+        };
+        submission.block_data[blocktype.keys.keys[0]] = blocktype.keys[blocktype.keys.keys[0] + "Values"].indexOf(blockKey);
+
+        $http.patch(`/timeblocks/${timeblock.id}`, submission)
+        .then();
+
+      }
+
+      function subtypeCRUDHandler(timeblock, block) {
+        let editDeleteAppointments = document.getElementById('editDeleteAppointments');
+        let blocktypeCRUDErrorField = document.getElementById('blocktypeCRUDErrorField');
+        let subtypeCRUDEntry = document.getElementById('subtypeCRUDEntry');
+        let subtypeCRUD = document.getElementById('subtypeCRUD');
+        let subtypeCRUDButtonsField = document.getElementById('subtypeCRUDButtonsField');
+        let subtypeCRUDSubmissionButton = document.getElementById('subtypeCRUDSubmissionButton');
+        if (subtypeCRUDSubmissionButton) {
+          subtypeCRUDSubmissionButton.parentNode.removeChild(subtypeCRUDSubmissionButton);
+          subtypeCRUDSubmissionButton = document.createElement('a');
+          subtypeCRUDButtonsField.appendChild(subtypeCRUDSubmissionButton);
+          subtypeCRUDSubmissionButton.id = "subtypeCRUDSubmissionButton";
+          subtypeCRUDSubmissionButton.className = "btn";
+          subtypeCRUDSubmissionButton.innerHTML = "submit";
+          subtypeCRUDSubmissionButton.setAttribute("style", "cursor: pointer;");
+        }
+        let subtypeCRUDCancelButton = document.getElementById('subtypeCRUDCancelButton');
+        if (subtypeCRUDCancelButton) {
+          subtypeCRUDCancelButton.parentNode.removeChild(subtypeCRUDCancelButton);
+          subtypeCRUDCancelButton = document.createElement('a');
+          subtypeCRUDButtonsField.appendChild(subtypeCRUDCancelButton);
+          subtypeCRUDCancelButton.id = "subtypeCRUDCancelButton";
+          subtypeCRUDCancelButton.className = "btn";
+          subtypeCRUDCancelButton.innerHTML = "cancel";
+          subtypeCRUDCancelButton.setAttribute("style", "cursor: pointer;");
+        }
+
+        subtypeCRUDCancelButton.addEventListener('click', ()=>{
+          subtypeCRUDEntry.value = '';
+          subtypeCRUD.setAttribute("style", "display: none;");
+          editDeleteAppointments.setAttribute("style", "display: initial;");
+          blocktypeCRUDErrorField.innerHTML = '';
+          editAppointment(timeblock.id);
+        });
+
+        subtypeCRUDSubmissionButton.addEventListener('click', ()=>{
+          if (subtypeCRUDEntry.value === '') {
+            blocktypeCRUDErrorField = 'Please enter a valid subtype value.';
+            blocktypeCRUDErrorField.setAttribute("style", "color: #ff0000; font-size: 18px; font-family: 'Asul', sans-serif; margin-left: 3em;");
+            return;
+          }
+          if (block.keys[block.keys.keys[0] + "Values"].indexOf(subtypeCRUDEntry.value) !== -1) {
+            blocktypeCRUDErrorField = 'This value already exists in the blocktype construct.';
+            blocktypeCRUDErrorField.setAttribute("style", "color: #ff0000; font-size: 18px; font-family: 'Asul', sans-serif; margin-left: 3em;");
+            return;
+          }
+
+          let blockSub = {
+            keys: block.keys
+          };
+          blockSub.keys[blockSub.keys.keys[0] + "Values"][blockSub.keys[blockSub.keys.keys[0] + "Values"].length] = (subtypeCRUDEntry.value);
+          $http.patch(`/blocktypes/${block.id}`, blockSub)
+          .then(updatedBlockData=>{
+            let updatedBlock = updatedBlockData.data;
+            let timeSub = {
+              block_data: timeblock.block_data
+            };
+            timeSub.block_data[updatedBlock.keys.keys[0]] = updatedBlock.keys[updatedBlock.keys.keys[0] + "Values"].indexOf(subtypeCRUDEntry.value);
+            $http.patch(`/timeblocks/${timeblock.id}`, timeSub)
+            .then(updatedTimeData=>{
+              let updatedTime = updatedTimeData.data;
+              subtypeCRUDEntry.value = '';
+              subtypeCRUD.setAttribute("style", "display: none;");
+              editDeleteAppointments.setAttribute("style", "display: initial;");
+              blocktypeCRUDErrorField.innerHTML = '';
+              editAppointment(timeblock.id);
+            });
+          });
+
+          //TODO clear input field
+          //TODO hide div, open edit div
+          //TODO reset edit with new values
+        });
+      }
+
       function editAppointment(blockID) {
         currentEdit = blockID;
         let editDeleteForm = document.getElementById('editDeleteForm');
@@ -2377,6 +2463,16 @@
           editDeleteBlocktypeSelector.setAttribute("style", "font-family: 'Alike Angular', serif; font-size: 18px; margin-left: 3em; width: 80%;");
 
         }
+        let blockKeysSelector = document.getElementById('blockKeysSelector');
+        let editBlockKeys = document.getElementById('editBlockKeys');
+        if (blockKeysSelector) {
+          blockKeysSelector.parentNode.removeChild(blockKeysSelector);
+          blockKeysSelector = document.createElement('select');
+          editBlockKeys.appendChild(blockKeysSelector);
+          blockKeysSelector.id = "blockKeysSelector";
+          blockKeysSelector.setAttribute("style", "font-family: 'Alike Angular', serif; font-size: 18px; margin-left: 3em; width: 80%;");
+
+        }
         let editDeleteStart = document.getElementById('editDeleteStart');
         let editDeleteEnd = document.getElementById('editDeleteEnd');
         let editDeleteStartDecrease = document.getElementById('editDeleteStartDecrease');
@@ -2388,8 +2484,9 @@
         editLocation.value = '';
         let editUserNotes = document.getElementById('editUserNotes');
         editUserNotes.value = '';
-        let editBlockKeys = document.getElementById('editBlockKeys');
-        let blockKeysSelector = document.getElementById('blockKeysSelector');
+        let subtypeCRUD = document.getElementById('subtypeCRUD');
+
+
         let editAdditionalKeys = document.getElementById('editAdditionalKeys');
         let editAppointmentDelete = document.getElementById('editAppointmentDelete');
         if (editAppointmentDelete) {
@@ -2440,10 +2537,27 @@
                   currentBlocktype = changeBlocktype(blocks, editDeleteBlocktypeSelector.value);
                   updateBlockType(timeblock, currentBlocktype);
                 } else {
-                  //TODO new blocktype CRUD
                   blocktypeCRUD.setAttribute("style", "display: initial;");
                   editDeleteAppointments.setAttribute("style", "display: none;");
                   blocktypeCRUDHandler(timeblock);
+                }
+              });
+
+              //// Selector Subtype Listener
+
+              blockKeysSelector.addEventListener('change', ()=>{
+                console.log(blockKeysSelector.value);
+                if (blockKeysSelector.value !== 'add new value...') {
+                  updateBlockSubtype(timeblock, currentBlocktype, blockKeysSelector.value);
+                  if (currentBlocktype.keys.keys.length > 1) {
+                    populateKeySubfields(editAdditionalKeys, timeblock, currentBlocktype);
+                  } else {
+                    editAdditionalKeys.setAttribute("style", "display: none;");
+                  }
+                } else {
+                  subtypeCRUD.setAttribute("style", "display: initial;");
+                  editDeleteAppointments.setAttribute("style", "display: none;");
+                  subtypeCRUDHandler(timeblock, currentBlocktype);
                 }
               });
             });

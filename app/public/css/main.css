@@ -2788,3 +2788,55 @@ footer img {
   margin-left: 3em;
 
 }
+
+#subtypeCRUD {
+  display: none;
+  width: 30.5%;
+  height: 41em;
+  overflow: scroll;
+
+
+  margin-left: 0.1em;
+  background: #22bc44;
+  background-color: -webkit-linear-gradient(135deg, #22ac44, #abdada);
+  background: -o-linear-gradient(135deg, #22ac44, #abdada);
+  background: -moz-linear-gradient(135deg, #22ac44, #abdada);
+  background: linear-gradient(135deg, #22ac44, #abdada);
+}
+
+#subtypeCRUD h2 {
+  font-family: 'Asul', sans-serif;
+  font-size: 30px;
+  color: #000000;
+  margin-left: 1.4em;
+  letter-spacing: normal;
+
+}
+
+#subtypeCRUD h3 {
+  font-family: 'Asul', sans-serif;
+  font-size: 24px;
+  color: #000000;
+  margin-left: 1.4em;
+  letter-spacing: normal;
+}
+
+#subtypeCRUD p {
+  font-family: 'Alike Angular', serif;
+  font-size: 24px;
+  margin-left: 1.2em;
+  letter-spacing: normal;
+}
+
+#subtypeCRUD a {
+  float: left;
+  margin-left: 2.9em;
+  letter-spacing: normal;
+}
+
+#subtypeCRUDEntry {
+  font-family: 'Alike Angular', serif;
+  font-size: 18px;
+  margin-left: 3em;
+  width: 80%;
+}
