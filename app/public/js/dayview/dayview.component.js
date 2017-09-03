@@ -1937,9 +1937,30 @@
         }
       }
 
-      function keyButtonHandler(keyButton) {
+      function additionalSuptypeInputHandler(element, timeblock, inputField, index) {
+        element.addEventListener('focusout', ()=>{
+          let sub = {
+            block_data: timeblock.block_data
+          };
+          if (element.value !== '') {
+            if (sub.block_data[inputField][index] === undefined) {
+
+            }
+            sub.block_data[inputField][index] = element.value;
+            $http.patch(`/timeblocks/${timeblock.id}`, sub)
+            .then(data=>{
+              console.log(data.data);
+            });
+          }
+        });
+      }
+
+      function keyButtonHandler(keyButton, timeblock) {
         let newElement;
         let appendDiv = keyButton.div;
+        let inputField = appendDiv.id.toString();
+        inputField = inputField.slice(0, inputField.length - 3);
+        let index = 0;
 
 
         keyButton.button.addEventListener('click', ()=>{
@@ -1952,6 +1973,12 @@
             newElement.id = keyButton.keyEntry + keyButton.keyEntryNumber;
             ++keyButton.keyEntryNumber;
             newElement.setAttribute("style", "font-family: 'Alike Angular', serif; font-size: 18px; margin-left: 3em; width: 80%;");
+            for (let i = 2; i < appendDiv.children.length; i++) {
+              if (appendDiv.children[i] === newElement) {
+                index = i - 2;
+              }
+            }
+            additionalSuptypeInputHandler(newElement, timeblock, inputField, index);
           }
         });
       }
@@ -1987,7 +2014,7 @@
           buttonObject.keyEntry = currentBlock.keys.keys[i];
           buttonObject.keyEntryNumber = currentBlock.keys.keys.length;
           divArray.push(buttonObject);
-          keyButtonHandler(buttonObject);
+          keyButtonHandler(buttonObject, timeblock);
 
 
           if (timeblock.block_data[currentBlock.keys.keys[i]]) {
@@ -1999,6 +2026,7 @@
               newEntry.class = "pure-input-1";
               newEntry.value = timeblock.block_data[currentBlock.keys.keys[i]][j];
               newEntry.setAttribute("style", "font-family: 'Alike Angular', serif; font-size: 18px; margin-left: 3em; width: 80%;");
+              additionalSuptypeInputHandler(newEntry, timeblock, currentBlock.keys.keys[i], j);
             }
           }
           newEntry = document.createElement('input');
@@ -2006,6 +2034,7 @@
           newEntry.type = "text";
           newEntry.class = "pure-input-1";
           newEntry.setAttribute("style", "font-family: 'Alike Angular', serif; font-size: 18px; margin-left: 3em; width: 80%;");
+          additionalSuptypeInputHandler(newEntry, timeblock, currentBlock.keys.keys[i], timeblock.block_data[currentBlock.keys.keys[i]].length);
 
 
         }
