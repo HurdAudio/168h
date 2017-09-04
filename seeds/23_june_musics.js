@@ -58,6 +58,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 4,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3514634362/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://timhecker.bandcamp.com/album/love-streams',
+          a_string: 'Love Streams by Tim Hecker',
+          rule: {
+            "monday": [ 28, 2, 8, 19 ],
+            "tuesday": [ 27, 1, 7, 18 ],
+            "wednesday": [ 1, 5, 11, 22 ],
+            "thursday": [ 30, 4, 10, 21 ],
+            "saturday": [ 29, 3, 9, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 5,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1112581834/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sonicmeditations.bandcamp.com/album/exquisite-lust',
+          a_string: 'Exquisite Lust by Expo 70',
+          rule: {
+            "monday": [ 29, 3, 9, 20 ],
+            "tuesday": [ 28, 2, 8, 19 ],
+            "wednesday": [ 27, 1, 7, 18 ],
+            "thursday": [ 1, 5, 11, 22 ],
+            "saturday": [ 30, 4, 10, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 6,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3966425461/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://omahara.bandcamp.com/album/omahara-3',
+          a_string: 'Omahara by Omahara',
+          rule: {
+            "monday": [ 30, 4, 10, 21 ],
+            "tuesday": [ 29, 3, 9, 20 ],
+            "wednesday": [ 28, 2, 8, 19 ],
+            "thursday": [ 27, 1, 7, 18 ],
+            "saturday": [ 1, 5, 11, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
