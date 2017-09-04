@@ -2747,7 +2747,7 @@
 
       }
 
-      function editAppointment(blockID) {
+      function editAppointment(blockID, divTimeString) {
         currentEdit = blockID;
         let editDeleteForm = document.getElementById('editDeleteForm');
         let editDeleteAppointments = document.getElementById('editDeleteAppointments');
@@ -2993,7 +2993,92 @@
               });
             }
           });
+        } else {
+          console.log(divTimeString);
+          //TODO create functionality
+          createNewAppointment(divTimeString);
         }
+      }
+
+      function createNewAppointment(start) {
+        let startIndex = hoursTime.indexOf(start);
+        let endIndex = startIndex + 1;
+        let mmString = '';
+        let ddString = '';
+        let startTimeString = '';
+        let endTimeString = '';
+        let fullStartTimeString = '';
+        let fullEndTimeString = '';
+        if (hoursTime[startIndex].length === 4) {
+          startTimeString = '0' + hoursTime[startIndex];
+        } else {
+          startTimeString = hoursTime[startIndex];
+        }
+        if (hoursTime[endIndex].length === 4) {
+          endTimeString = '0' + hoursTime[endIndex];
+        } else {
+          endTimeString = hoursTime[endIndex];
+        }
+        $http.get(`/blocktypesbyuser/${currentUserId}`)
+        .then(userBlocksData=>{
+          let userBlocks = userBlocksData.data;
+          let appointmentObject = {
+            user_id: currentUserId,
+            block_type: userBlocks[0].id,
+            user_notes: '',
+            location: ''
+          };
+          let yyyy = viewDate.getFullYear();
+          let mm = viewDate.getMonth() + 1;
+          let dd = viewDate.getDate();
+          let tail = ':00.000Z';
+          if (mm < 10) {
+            mmString = '0' + mm;
+          } else {
+            mmString = mm.toString();
+          }
+          if (dd < 10) {
+            ddString = '0' + dd;
+          } else {
+            ddString = dd.toString();
+          }
+          fullStartTimeString = yyyy + '-' + mmString + '-' + ddString + 'T' + startTimeString + tail;
+          fullEndTimeString = yyyy + '-' + mmString + '-' + ddString + 'T' + endTimeString + tail;
+          appointmentObject.start_time = new Date(fullStartTimeString);
+          appointmentObject.end_time = new Date(fullEndTimeString);
+          if (userBlocks[0].keys !== null) {
+            appointmentObject.block_data = {};
+            appointmentObject.block_data[userBlocks[0].keys.keys[0] + "Type"] = 0;
+          } else {
+            appointmentObject.block_data = null;
+          }
+          $http.post('/timeblocks', appointmentObject)
+          .then(timeblockAddedData=>{
+            let timeblockAdded = timeblockAddedData.data[0];
+            //TODO add new block to left pane
+            let addBlockDiv = document.getElementById(hours[startIndex]);
+            let divString = hoursTime[startIndex] + ' - ' + userBlocks[0].type;
+            addBlockDiv.children[0].appointment = timeblockAdded.id;
+            addBlockDiv.children[0].children[0].innerHTML = divString;
+            addBlockDiv.children[0].setAttribute("style", "background-color: " + userBlocks[0].color + "; opacity: 0.8; border-top: solid " + userBlocks[0].color + " 6px;");
+            let newButton = document.createElement('button');
+            addBlockDiv.children[0].children[0].appendChild(newButton);
+            //newButton.innerHTML = 'speak';
+            let speaker = document.createElement('img');
+            newButton.appendChild(speaker);
+            speaker.src ="./img/icon-1628258_640.png";
+            speaker.setAttribute("style", "width: 60%;");
+            newButton.addEventListener('click', (e)=>{
+              e.preventDefault();
+              e.stopPropagation();
+              console.log(timeblockAdded.id);
+              verbalizeTimeblock(timeblockAdded.id);
+            });
+            //TODO pass new block over to editor
+            editAppointment(timeblockAdded.id);
+          });
+        });
+
       }
 
       function setFillAppointments(timeblock, lineID) {
@@ -3034,7 +3119,7 @@
             e.stopPropagation();
             verbalizeTimeblock(timeblock.id);
           });
-          element.addEventListener('click', (e)=>{
+          element.children[0].addEventListener('click', (e)=>{
             e.preventDefault();
             e.stopPropagation();
             editAppointment(element.appointment, element.children[0].innerHTML);
@@ -3080,12 +3165,21 @@
         return(tense);
       }
 
+      function emptyHourEventListener(element) {
+        element.addEventListener('click', (e)=>{
+          e.preventDefault();
+          e.stopPropagation();
+          editAppointment(element.appointment, element.children[0].innerHTML);
+        });
+      }
+
       function detectTimeBlocks() {
 
         $http.get(`/timeblocksbyuser/${currentUserId}`)
         .then(fullUserTimeblocksData=>{
           let fullUserTimeblocks = fullUserTimeblocksData.data;
           let todaysTimeblocks = [];
+          let timeDiv;
           todaysTimeblocks = fullUserTimeblocks.filter((block)=>{
             return ((getAppointmentTense(viewDate, block.start_time)) === 'present');
           });
@@ -3102,6 +3196,12 @@
                  }
                }
              }
+          }
+          for (let k = 0; k < (hours.length - 1); k++) {
+            timeDiv = document.getElementById(hours[k]);
+            if (timeDiv.children[0].appointment === undefined) {
+              emptyHourEventListener(timeDiv.children[0]);
+            }
           }
         });
       }
