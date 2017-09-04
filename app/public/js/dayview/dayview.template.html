@@ -410,7 +410,7 @@
 
         </div>
 
-        <div class="timePositioning">
+        <div id="startTimeEditor" class="timePositioning">
           <h3>Start Time:</h3>
           <h2 id="editDeleteStart">00:00</h2>
 
@@ -618,7 +618,7 @@
           <form class="pure-form">
             <fieldset class="pure-group">
               <input id="enterTaskName" type="text" class="pure-input-1" placeholder="Task Name">
-              <input id="enterTaskInfos" type="text" class="pure-input-1" placeholder="Additional Information (optional)">
+              <textarea id="enterTaskInfos" type="text" class="pure-input-1" placeholder="Additional Information (optional)" rows="5"></textarea>
               <p>Task Due:</p>
               <input id="enterTaskDate" type="date" class="pure-input-1">
 
@@ -650,7 +650,7 @@
                 <fieldset class="pure-group">
 
                   <input id="{{task.user_id + task.name + task.id}}" type="text" class="pure-input-1" placeholder="{{task.name}}">
-                  <input id="{{task.name + task.user_id + task.name + task.id}}" type="text" class="pure-input-1" placeholder="{{task.user_notes}}">
+                  <textarea id="{{task.name + task.user_id + task.name + task.id}}" type="textarea" rows="5" class="pure-input-1" placeholder="{{task.user_notes}}"></textarea>
                   <p>New Due Date:</p>
                   <input id="{{task.id +task.name + task.id + task.name +task.name + task.name + task.id}}" type="date" class="pure-input-1">
                 </fieldset>

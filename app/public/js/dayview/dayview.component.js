@@ -1912,8 +1912,9 @@
         }
       }
 
-      function updateStartTimeButtons(timeID, startTime, decrease, increase) {
+      function updateStartTimeButtons(timeID, startTime, endTime, decrease, increase) {
         let indexPoint = hoursTime.indexOf(startTime);
+        let indexPoint2 = hoursTime.indexOf(endTime);
         let check;
         if (indexPoint === 0) {
           decrease.setAttribute("style", "visibility: hidden;");
@@ -1930,7 +1931,11 @@
         } else {
           check = document.getElementById(hours[indexPoint + 1]);
           if ((check.children[0].appointment === undefined) || (check.children[0].appointment === timeID)) {
-            increase.setAttribute("style", "visibility: visible;");
+            if ((indexPoint2 - indexPoint) === 1) {
+              increase.setAttribute("style", "visibility: hidden;");
+            } else {
+              increase.setAttribute("style", "visibility: visible;");
+            }
           } else {
             increase.setAttribute("style", "visibility: hidden;");
           }
@@ -2470,10 +2475,159 @@
             });
           });
 
-          //TODO clear input field
-          //TODO hide div, open edit div
-          //TODO reset edit with new values
+
         });
+      }
+
+      function rollforwardStartTimeHalfHour(timeblock, block) {
+        $http.get(`/timeblocks/${timeblock.id}`)
+        .then(currentData=>{
+          let current = currentData.data;
+          let editDeleteStart = document.getElementById('editDeleteStart');
+          let editDeleteStartDecrease = document.getElementById('editDeleteStartDecrease');
+          let editDeleteStartIncrease = document.getElementById('editDeleteStartIncrease');
+          let editDeleteEnd = document.getElementById('editDeleteEnd');
+          let submit = {
+            start_time: current.start_time
+          };
+          let firstPart = submit.start_time.slice(0, 11);
+          let timePart = submit.start_time.slice(11, 16);
+          let thirdPart = submit.start_time.slice(16);
+          let timeString = '';
+          let index = 0;
+          let elementNew;
+          let elementOld;
+          let elementOldSnippet = '';
+          if (timePart[0] === '0') {
+            timeString = timePart.slice(1);
+          } else {
+            timeString = timePart;
+          }
+          index = hoursTime.indexOf(timeString);
+          timeString = hoursTime[index + 1];
+          if (timeString.length === 4) {
+            timePart = '0' + timeString;
+          } else {
+            timePart = timeString;
+          }
+          submit.start_time = new Date(firstPart + timePart + thirdPart);
+          $http.patch(`/timeblocks/${current.id}`, submit)
+          .then(updatedTimeData=>{
+            let updatedTime = updatedTimeData.data;
+            editDeleteStart.innerHTML = timeString;
+            //TODO update sidePanel
+            elementOld = document.getElementById(hours[index]);
+            elementNew = document.getElementById(hours[index+1]);
+            let oldString = elementOld.children[0].children[0].innerHTML;
+            let newString = elementNew.children[0].children[0].innerHTML;
+            elementOldSnippet = oldString.slice(oldString.indexOf(' - '));
+            newString = newString + elementOldSnippet;
+            oldString = oldString.slice(0, oldString.indexOf(' - '));
+            elementOld.children[0].children[0].innerHTML = oldString;
+            elementNew.children[0].children[0].innerHTML = newString;
+            elementOld.children[0].appointment = undefined;
+            elementOld.children[0].setAttribute("style", "background-color: transparent;");
+
+            //TODO update button status - delete needs to update .appointment values
+            updateStartTimeButtons(timeblock.id, editDeleteStart.innerHTML, editDeleteEnd.innerHTML, editDeleteStartDecrease, editDeleteStartIncrease);
+            // if (getTense(viewDate) === 'past') {
+            //
+            //   elementNew.children[0].setAttribute("style", "background-color: " + block.color + "; opacity: 0.8; border-top: solid " + block.color + " 3px; border-bottom: solid " + block.color + " 3px; color: #bb9933;");
+            // } else if (getTense(viewDate) === 'future') {
+            //   elementNew.children[0].setAttribute("style", "background-color: " + block.color + "; opacity: 0.8; border-top: solid " + block.color + " 3px; border-bottom: solid " + block.color + " 3px; color: #000000;");
+            // } else {
+            //   let currentTimePosition = getCurrentTimePosition();
+            //   if (hours.indexOf(elementNew.id) < currentTimePosition) {
+            //     elementNew.children[0].setAttribute("style", "background-color: " + block.color + "; opacity: 0.8; border-top: solid " + block.color + " 3px; border-bottom: solid " + block.color + " 3px; color: #bb9933;");
+            //   } else if (hours.indexOf(elementNew.id) > currentTimePosition) {
+            //     elementNew.children[0].setAttribute("style", "background-color: " + block.color + "; opacity: 0.8; border-top: solid " + block.color + " 3px; border-bottom: solid " + block.color + " 3px; color: #000000;");
+            //   } else {
+            //     elementNew.children[0].setAttribute("style", "background-color: " + block.color + "; opacity: 0.8; border-top: solid " + block.color + " 3px; border-bottom: solid " + block.color + " 3px;");
+            //   }
+            // }
+            elementNew.children[0].children[0].children[0].addEventListener('click', (e)=>{
+              e.preventDefault();
+              e.stopPropagation();
+              verbalizeTimeblock(current.id);
+            });
+            //setTimeColors();
+          });
+        });
+      }
+
+      function rollbackStartTimeHalfHour(timeblock, block) {
+        $http.get(`/timeblocks/${timeblock.id}`)
+        .then(currentData=>{
+          let current = currentData.data;
+          let editDeleteStart = document.getElementById('editDeleteStart');
+          let editDeleteStartDecrease = document.getElementById('editDeleteStartDecrease');
+          let editDeleteStartIncrease = document.getElementById('editDeleteStartIncrease');
+          let editDeleteEnd = document.getElementById('editDeleteEnd');
+          let submit = {
+            start_time: current.start_time
+          };
+          let firstPart = submit.start_time.slice(0, 11);
+          let timePart = submit.start_time.slice(11, 16);
+          let thirdPart = submit.start_time.slice(16);
+          let timeString = '';
+          let index = 0;
+          let elementNew;
+          let elementOld;
+          let elementOldSnippet = '';
+          if (timePart[0] === '0') {
+            timeString = timePart.slice(1);
+          } else {
+            timeString = timePart;
+          }
+          index = hoursTime.indexOf(timeString);
+          timeString = hoursTime[index - 1];
+          if (timeString.length === 4) {
+            timePart = '0' + timeString;
+          } else {
+            timePart = timeString;
+          }
+          submit.start_time = new Date(firstPart + timePart + thirdPart);
+          $http.patch(`/timeblocks/${current.id}`, submit)
+          .then(updatedTimeData=>{
+            let updatedTime = updatedTimeData.data;
+            editDeleteStart.innerHTML = timeString;
+            //TODO update sidePanel
+            elementOld = document.getElementById(hours[index]);
+            elementNew = document.getElementById(hours[index-1]);
+            let oldString = elementOld.children[0].children[0].innerHTML;
+            let newString = elementNew.children[0].children[0].innerHTML;
+            elementOldSnippet = oldString.slice(oldString.indexOf(' - '));
+            newString = newString + elementOldSnippet;
+            oldString = oldString.slice(0, oldString.indexOf(' - '));
+            elementOld.children[0].children[0].innerHTML = oldString;
+            elementNew.children[0].children[0].innerHTML = newString;
+            elementNew.children[0].appointment = updatedTime.id;
+
+            //TODO update button status - delete needs to update .appointment values
+            updateStartTimeButtons(timeblock.id, editDeleteStart.innerHTML, editDeleteEnd.innerHTML, editDeleteStartDecrease, editDeleteStartIncrease);
+            if (getTense(viewDate) === 'past') {
+              elementNew.children[0].setAttribute("style", "background-color: " + block.color + "; opacity: 0.8; border-top: solid " + block.color + " 7px; color: #bb9933;");
+            } else if (getTense(viewDate) === 'future') {
+              elementNew.children[0].setAttribute("style", "background-color: " + block.color + "; opacity: 0.8; border-top: solid " + block.color + " 7px; color: #000000;");
+            } else {
+              let currentTimePosition = getCurrentTimePosition();
+              if (hours.indexOf(elementNew.id) < currentTimePosition) {
+                elementNew.children[0].setAttribute("style", "background-color: " + block.color + "; opacity: 0.8; border-top: solid " + block.color + " 7px; color: #bb9933;");
+              } else if (hours.indexOf(elementNew.id) > currentTimePosition) {
+                elementNew.children[0].setAttribute("style", "background-color: " + block.color + "; opacity: 0.8; border-top: solid " + block.color + " 7px; color: #000000;");
+              } else {
+                elementNew.children[0].setAttribute("style", "background-color: " + block.color + "; opacity: 0.8; border-top: solid " + block.color + " 7px;");
+              }
+            }
+            elementNew.children[0].children[0].children[0].addEventListener('click', (e)=>{
+              e.preventDefault();
+              e.stopPropagation();
+              verbalizeTimeblock(current.id);
+            });
+            //setTimeColors();
+          });
+        });
+
       }
 
       function editAppointment(blockID) {
@@ -2505,7 +2659,32 @@
         let editDeleteStart = document.getElementById('editDeleteStart');
         let editDeleteEnd = document.getElementById('editDeleteEnd');
         let editDeleteStartDecrease = document.getElementById('editDeleteStartDecrease');
+        let timeImage;
+        let startTimeEditor = document.getElementById('startTimeEditor');
+        if (editDeleteStartDecrease) {
+          editDeleteStartDecrease.parentNode.removeChild(editDeleteStartDecrease);
+          editDeleteStartDecrease = document.createElement('button');
+          startTimeEditor.appendChild(editDeleteStartDecrease);
+          editDeleteStartDecrease.id = "editDeleteStartDecrease";
+          timeImage = document.createElement('img');
+          editDeleteStartDecrease.appendChild(timeImage);
+          timeImage.src = "./img/noun_592617_cc.png";
+          timeImage.setAttribute("style", "width: 100%; height: 100%;");
+          editDeleteStartDecrease.setAttribute("style", "border-radius: 100%; font-size: 18px; background-color: #ddff11; opacity: 0.9; border-radius: 100%; float: left; margin: 0.2em; margin-left: 2.2em; padding: 0; width: 2em; height: 2em;");
+
+        }
         let editDeleteStartIncrease = document.getElementById('editDeleteStartIncrease');
+        if (editDeleteStartIncrease) {
+          editDeleteStartIncrease.parentNode.removeChild(editDeleteStartIncrease);
+          editDeleteStartIncrease = document.createElement('button');
+          startTimeEditor.appendChild(editDeleteStartIncrease);
+          editDeleteStartIncrease.id = "editDeleteStartIncrease";
+          timeImage = document.createElement('img');
+          editDeleteStartIncrease.appendChild(timeImage);
+          timeImage.src = "./img/noun_651094_cc.png";
+          timeImage.setAttribute("style", "width: 100%; height: 100%;");
+          editDeleteStartIncrease.setAttribute("style", "border-radius: 100%; font-size: 18px; background-color: #ddff11; opacity: 0.9; border-radius: 100%; float: left; margin: 0.2em; margin-left: 2.2em; padding: 0; width: 2em; height: 2em;");
+        }
         let blocktypeCRUD = document.getElementById('blocktypeCRUD');
         let editDeleteEndDecrease = document.getElementById('editDeleteEndDecrease');
         let editDeleteEndIncrease = document.getElementById('editDeleteEndIncrease');
@@ -2554,7 +2733,7 @@
               setEditorColor(editDeleteAppointments, currentBlocktype.color);
               editDeleteStart.innerHTML = timeString(timeblock.start_time);
               editDeleteEnd.innerHTML = timeString(timeblock.end_time);
-              updateStartTimeButtons(timeblock.id, editDeleteStart.innerHTML, editDeleteStartDecrease, editDeleteStartIncrease);
+              updateStartTimeButtons(timeblock.id, editDeleteStart.innerHTML, editDeleteEnd.innerHTML, editDeleteStartDecrease, editDeleteStartIncrease);
               updateEndTimeButtons(timeblock.id, editDeleteEnd.innerHTML, editDeleteEndDecrease, editDeleteEndIncrease);
               editLocation.value = timeblock.location;
               editUserNotes.value = timeblock.user_notes;
@@ -2588,6 +2767,17 @@
                   editDeleteAppointments.setAttribute("style", "display: none;");
                   subtypeCRUDHandler(timeblock, currentBlocktype);
                 }
+              });
+
+              //// Start Time Decrease Button Listener
+              editDeleteStartDecrease.addEventListener('click', ()=>{
+                console.log('click');
+                rollbackStartTimeHalfHour(timeblock, currentBlocktype);
+              });
+
+              //// Start Time Increase Button Listener
+              editDeleteStartIncrease.addEventListener('click', ()=>{
+                rollforwardStartTimeHalfHour(timeblock, currentBlocktype);
               });
             });
           });

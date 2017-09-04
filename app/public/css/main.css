@@ -2464,6 +2464,11 @@ footer img {
   align-self: center;
 }
 
+.taskPal textarea[type=textarea] {
+  width: 95%;
+  align-self: center;
+}
+
 .taskPal input[type=date] {
   width: 75%;
   align-self: center;
@@ -2484,6 +2489,11 @@ footer img {
 }
 
 #taskEntryForm input[type=text] {
+  width: 95%;
+  align-self: center;
+}
+
+#enterTaskInfos {
   width: 95%;
   align-self: center;
 }
