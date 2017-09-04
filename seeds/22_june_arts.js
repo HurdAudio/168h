@@ -204,6 +204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 11,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/blindman-s-buff-1898.jpg',
+          title: 'Blindman\'s Buff',
+          artist: 'Clarence White',
+          year: '1898',
+          rule: {
+            "monday": [ 27, 7, 17, 25 ],
+            "tuesday": [ 26, 6, 16, 24 ],
+            "wednesday": [ 2, 12, 22, 30 ],
+            "thursday": [ 1, 11, 21, 29 ],
+            "friday": [ 30, 10, 20, 28 ],
+            "saturday": [ 29, 9, 19, 27 ],
+            "sunday": [ 28, 8, 18, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 12,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/nude-1925.jpg',
+          title: 'Nude',
+          artist: 'Edward Weston',
+          year: '1925',
+          rule: {
+            "monday": [ 28, 8, 18, 26 ],
+            "tuesday": [ 27, 7, 17, 25 ],
+            "wednesday": [ 26, 6, 16, 24 ],
+            "thursday": [ 2, 12, 22, 30 ],
+            "friday": [ 1, 11, 21, 29 ],
+            "saturday": [ 30, 10, 20, 28 ],
+            "sunday": [ 29, 9, 19, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 13,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/1994-6-1994.jpg',
+          title: '1994.6',
+          artist: 'Ai Weiwei',
+          year: '1994',
+          rule: {
+            "monday": [ 29, 9, 19, 27 ],
+            "tuesday": [ 28, 8, 18, 26 ],
+            "wednesday": [ 27, 7, 17, 25 ],
+            "thursday": [ 26, 6, 16, 24 ],
+            "friday": [ 2, 12, 22, 30 ],
+            "saturday": [ 1, 11, 21, 29 ],
+            "sunday": [ 30, 10, 20, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 14,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/arnold-schwarzenegger-1977.jpg',
+          title: 'Arnold Schwarzenegger',
+          artist: 'Andy Warhol',
+          year: '1977',
+          rule: {
+            "monday": [ 1, 11, 21, 29 ],
+            "tuesday": [ 30, 10, 20, 28 ],
+            "wednesday": [ 29, 9, 19, 27 ],
+            "thursday": [ 28, 8, 18, 26 ],
+            "friday": [ 27, 7, 17, 25 ],
+            "saturday": [ 3, 13, 23, 1 ],
+            "sunday": [ 2, 12, 22, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 15,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/fotogramma-1997.jpg',
+          title: 'Fotogramma',
+          artist: 'Luigi Veronesi',
+          year: '1997',
+          rule: {
+            "monday": [ 2, 12, 22, 30 ],
+            "tuesday": [ 1, 11, 21, 29 ],
+            "wednesday": [ 30, 10, 20, 28 ],
+            "thursday": [ 29, 9, 19, 27 ],
+            "friday": [ 28, 8, 18, 26 ],
+            "saturday": [ 27, 7, 17, 25 ],
+            "sunday": [ 3, 13, 23, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
