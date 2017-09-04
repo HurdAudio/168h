@@ -274,6 +274,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 16,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1328109578/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://chrisspeed.bandcamp.com/album/ruins',
+          a_string: 'Ruins by Chris Speed &amp; Zeno De Rossi',
+          rule: {
+            "monday": [ 6, 14, 26, 1 ],
+            "tuesday": [ 5, 13, 25, 30 ],
+            "wednesday": [ 4, 12, 24, 29 ],
+            "thursday": [ 3, 11, 23, 28 ],
+            "saturday": [ 7, 15, 27, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 17,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3923641399/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://aerophonicrecords.bandcamp.com/album/lattice',
+          a_string: 'Lattice by Dave Rempis Solo',
+          rule: {
+            "monday": [ 7, 15, 27, 2 ],
+            "tuesday": [ 6, 14, 26, 1 ],
+            "wednesday": [ 5, 13, 25, 30 ],
+            "thursday": [ 4, 12, 24, 29 ],
+            "saturday": [ 3, 11, 23, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 18,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3596587766/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://hernanifaustino.bandcamp.com/album/lisbon-connection',
+          a_string: 'Lisbon Connection by Lisbon Connection',
+          rule: {
+            "monday": [ 3, 11, 23, 28 ],
+            "tuesday": [ 7, 15, 27, 2 ],
+            "wednesday": [ 6, 14, 26, 1 ],
+            "thursday": [ 5, 13, 25, 30 ],
+            "saturday": [ 4, 12, 24, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
