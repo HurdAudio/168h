@@ -404,6 +404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 21,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/workers-in-the-snow-1913.jpg',
+          title: 'Workers in the Snow',
+          artist: 'Edvard Munch',
+          year: '1913',
+          rule: {
+            "monday": [ 31, 10, 20, 30 ],
+            "tuesday": [ 29, 8, 18, 28 ],
+            "wednesday": [ 27, 6, 16, 26 ],
+            "thursday": [ 25, 4, 14, 24 ],
+            "friday": [ 23, 2, 12, 22 ],
+            "saturday": [ 4, 14, 24, 3 ],
+            "sunday": [ 2, 12, 22, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 22,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/american-workers-1922.jpg',
+          title: 'American workers',
+          artist: 'David Burliuk',
+          year: '1922',
+          rule: {
+            "monday": [ 2, 12, 22, 1 ],
+            "tuesday": [ 31, 10, 20, 30 ],
+            "wednesday": [ 29, 8, 18, 28 ],
+            "thursday": [ 27, 6, 16, 26 ],
+            "friday": [ 25, 4, 14, 24 ],
+            "saturday": [ 23, 2, 12, 22 ],
+            "sunday": [ 4, 14, 24, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 23,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/workers-in-the-fields.jpg',
+          title: 'Workers in the Fields',
+          artist: 'Camille Pissarro',
+          year: 'c.1896 - c.1897',
+          rule: {
+            "monday": [ 4, 14, 24, 3 ],
+            "tuesday": [ 2, 12, 22, 1 ],
+            "wednesday": [ 31, 10, 20, 30 ],
+            "thursday": [ 29, 8, 18, 28 ],
+            "friday": [ 27, 6, 16, 26 ],
+            "saturday": [ 25, 4, 14, 24 ],
+            "sunday": [ 23, 2, 12, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 24,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/project-of-poster-the-center-of-textile-workers-in-belgium-to-reduce-working-hours-1938(1).jpg',
+          title: 'Project of poster "The center of textile workers in Belgium (to reduce working hours)"',
+          artist: 'Rene Magritte',
+          year: '1938',
+          rule: {
+            "monday": [ 23, 2, 12, 22 ],
+            "tuesday": [ 4, 14, 24, 3 ],
+            "wednesday": [ 2, 12, 22, 1 ],
+            "thursday": [ 31, 10, 20, 30 ],
+            "friday": [ 29, 8, 18, 28 ],
+            "saturday": [ 27, 6, 16, 26 ],
+            "sunday": [ 25, 4, 14, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 25,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/alliance-of-the-peasant-and-the-industrial-worker-1924.jpg',
+          title: 'Alliance of the Peasant and the Industrial Worker',
+          artist: 'Diego Rivera',
+          year: '1924',
+          rule: {
+            "monday": [ 25, 4, 14, 24 ],
+            "tuesday": [ 23, 2, 12, 22 ],
+            "wednesday": [ 4, 14, 24, 3 ],
+            "thursday": [ 2, 12, 22, 1 ],
+            "friday": [ 31, 10, 20, 30 ],
+            "saturday": [ 29, 8, 18, 28 ],
+            "sunday": [ 27, 6, 16, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
