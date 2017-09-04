@@ -2479,6 +2479,22 @@
         });
       }
 
+      function grabLatestUserNotes(timeblock, editUserNotes) {
+        let submission = {
+          user_notes: editUserNotes.value
+        };
+        $http.patch(`/timeblocks/${timeblock.id}`, submission)
+        .then();
+      }
+
+      function grabLatestLocation(timeblock, editLocation) {
+        let submission = {
+          location: editLocation.value
+        };
+        $http.patch(`/timeblocks/${timeblock.id}`, submission)
+        .then();
+      }
+
       function rollforwardEndTimeHalfHour(timeblock, block) {
         $http.get(`/timeblocks/${timeblock.id}`)
         .then(currentData=>{
@@ -2800,10 +2816,30 @@
           timeImage.setAttribute("style", "width: 100%; height: 100%;");
           editDeleteEndIncrease.setAttribute("style", "border-radius: 100%; font-size: 18px; background-color: #ddff11; opacity: 0.9; border-radius: 100%; float: left; margin: 0.2em; margin-left: 2.2em; padding: 0; width: 2em; height: 2em;");
         }
+        let locationField = document.getElementById('locationField');
         let editLocation = document.getElementById('editLocation');
         editLocation.value = '';
+        if (editLocation) {
+          editLocation.parentNode.removeChild(editLocation);
+          editLocation = document.createElement('input');
+          locationField.appendChild(editLocation);
+          editLocation.id = "editLocation";
+          editLocation.type = "text";
+          editLocation.className = "pure-input-1";
+          editLocation.setAttribute("style", "font-family: 'Alike Angular', serif; font-size: 18px; margin-left: 3em; width: 80%;");
+        }
+        let notesField = document.getElementById('notesField');
         let editUserNotes = document.getElementById('editUserNotes');
         editUserNotes.value = '';
+        if (editUserNotes) {
+          editUserNotes.parentNode.removeChild(editUserNotes);
+          editUserNotes = document.createElement('textarea');
+          notesField.appendChild(editUserNotes);
+          editUserNotes.id = "editUserNotes";
+          editUserNotes.rows = "5";
+          editUserNotes.className = "pure-input-1";
+          editUserNotes.setAttribute("style", "font-family: 'Alike Angular', serif; font-size: 18px; margin-left: 3em; width: 80%; rows: 5;");
+        }
         let subtypeCRUD = document.getElementById('subtypeCRUD');
 
 
@@ -2901,6 +2937,16 @@
               //// End Time Increase Button Listener
               editDeleteEndIncrease.addEventListener('click', ()=>{
                 rollforwardEndTimeHalfHour(timeblock, currentBlocktype);
+              });
+
+              //// Location Field Listener
+              editLocation.addEventListener('focusout', ()=>{
+                grabLatestLocation(timeblock, editLocation);
+              });
+
+              //// User Notes Listener
+              editUserNotes.addEventListener('focusout', ()=>{
+                grabLatestUserNotes(timeblock, editUserNotes);
               });
             });
           });
