@@ -1999,50 +1999,61 @@
           element.removeChild(element.firstChild);
         }
 
-        for (let i = 1; i < currentBlock.keys.keys.length; i++) {
-          newDiv = document.createElement('div');
-          element.appendChild(newDiv);
+        $http.get(`/timeblocks/${timeblock.id}`)
+        .then(currentData=>{
+          let current = currentData.data;
+          $http.get(`/blocktypes/${current.block_type}`)
+          .then(updatedBlockData=>{
+            let updatedBlock = updatedBlockData.data;
+            for (let i = 1; i < updatedBlock.keys.keys.length; i++) {
+              newDiv = document.createElement('div');
+              element.appendChild(newDiv);
 
-          newEntryTitle = document.createElement('p');
-          newDiv.appendChild(newEntryTitle);
-          newEntryTitle.innerHTML = currentBlock.keys.keys[i] + ':';
-          newEntryTitle.setAttribute("style", "margin-bottom:0.2em;");
+              newEntryTitle = document.createElement('p');
+              newDiv.appendChild(newEntryTitle);
+              newEntryTitle.innerHTML = updatedBlock.keys.keys[i] + ':';
+              newEntryTitle.setAttribute("style", "margin-bottom:0.2em;");
 
-          newDiv.id = currentBlock.keys.keys[i] + 'Div';
-          newEntry = document.createElement('button');
-          newDiv.appendChild(newEntry);
-          newEntry.innerHTML = 'add new';
+              newDiv.id = updatedBlock.keys.keys[i] + 'Div';
+              newEntry = document.createElement('button');
+              newDiv.appendChild(newEntry);
+              newEntry.innerHTML = 'add new';
 
-          newEntry.setAttribute("style", "font-weight: bolder; font-family: 'Asul', sans-serif; font-size: 24px; background: " + currentBlock.color + "; background-color: -webkit-linear-gradient(135deg, " + currentBlock.color + ", #ffffff); background: -o-linear-gradient(135deg, " + currentBlock.color + ", #ffffff); background: -moz-linear-gradient(135deg, " + currentBlock.color + ", #ffffff); background: linear-gradient(135deg, " + currentBlock.color + ", #ffffff); opacity: 0.7; margin-left: 2.2em; margin-top: 0; margin-bottom: 0;");
-          buttonObject.div = newDiv;
-          buttonObject.button = newEntry;
-          buttonObject.keyEntry = currentBlock.keys.keys[i];
-          buttonObject.keyEntryNumber = currentBlock.keys.keys.length;
-          divArray.push(buttonObject);
-          keyButtonHandler(buttonObject, timeblock);
+              newEntry.setAttribute("style", "font-weight: bolder; font-family: 'Asul', sans-serif; font-size: 24px; background: " + updatedBlock.color + "; background-color: -webkit-linear-gradient(135deg, " + updatedBlock.color + ", #ffffff); background: -o-linear-gradient(135deg, " + updatedBlock.color + ", #ffffff); background: -moz-linear-gradient(135deg, " + updatedBlock.color + ", #ffffff); background: linear-gradient(135deg, " + updatedBlock.color + ", #ffffff); opacity: 0.7; margin-left: 2.2em; margin-top: 0; margin-bottom: 0;");
+              buttonObject.div = newDiv;
+              buttonObject.button = newEntry;
+              buttonObject.keyEntry = updatedBlock.keys.keys[i];
+              buttonObject.keyEntryNumber = updatedBlock.keys.keys.length;
+              divArray.push(buttonObject);
+              keyButtonHandler(buttonObject, current);
 
+              if (current.block_data[updatedBlock.keys.keys[i]] === undefined) {
+                current.block_data[updatedBlock.keys.keys[i]] = [];
+              }
 
-          if (timeblock.block_data[currentBlock.keys.keys[i]]) {
-            for (let j = 0; j < timeblock.block_data[currentBlock.keys.keys[i]].length; j++) {
+              if (current.block_data[updatedBlock.keys.keys[i]]) {
+                for (let j = 0; j < current.block_data[updatedBlock.keys.keys[i]].length; j++) {
+                  newEntry = document.createElement('input');
+                  newDiv.appendChild(newEntry);
+                  newEntry.type = "text";
+                  newEntry.id = "updatedBlock.keys.keys[i] + i";
+                  newEntry.class = "pure-input-1";
+                  newEntry.value = current.block_data[updatedBlock.keys.keys[i]][j];
+                  newEntry.setAttribute("style", "font-family: 'Alike Angular', serif; font-size: 18px; margin-left: 3em; width: 80%;");
+                  additionalSuptypeInputHandler(newEntry, current, updatedBlock.keys.keys[i], j);
+                }
+              }
               newEntry = document.createElement('input');
               newDiv.appendChild(newEntry);
               newEntry.type = "text";
-              newEntry.id = "currentBlock.keys.keys[i] + i";
               newEntry.class = "pure-input-1";
-              newEntry.value = timeblock.block_data[currentBlock.keys.keys[i]][j];
               newEntry.setAttribute("style", "font-family: 'Alike Angular', serif; font-size: 18px; margin-left: 3em; width: 80%;");
-              additionalSuptypeInputHandler(newEntry, timeblock, currentBlock.keys.keys[i], j);
+              additionalSuptypeInputHandler(newEntry, current, updatedBlock.keys.keys[i], current.block_data[updatedBlock.keys.keys[i]].length);
+
+
             }
-          }
-          newEntry = document.createElement('input');
-          newDiv.appendChild(newEntry);
-          newEntry.type = "text";
-          newEntry.class = "pure-input-1";
-          newEntry.setAttribute("style", "font-family: 'Alike Angular', serif; font-size: 18px; margin-left: 3em; width: 80%;");
-          additionalSuptypeInputHandler(newEntry, timeblock, currentBlock.keys.keys[i], timeblock.block_data[currentBlock.keys.keys[i]].length);
-
-
-        }
+          });
+        });
 
       }
 
@@ -2120,6 +2131,7 @@
           let timeblock = timeblockData.data;
           sideblockUpdate(timeblock, updatedBlock);
           setEditorColor(editDeleteAppointments, updatedBlock.color);
+          //editAppointment(timeblock.id);
           if (blockKeysSelector.firstChild) {
             while(blockKeysSelector.firstChild) {
               blockKeysSelector.removeChild(blockKeysSelector.firstChild);
@@ -2892,6 +2904,12 @@
                 if (editDeleteBlocktypeSelector.value !== 'add new blocktype...') {
                   currentBlocktype = changeBlocktype(blocks, editDeleteBlocktypeSelector.value);
                   updateBlockType(timeblock, currentBlocktype);
+                  // if (editAdditionalKeys.firstChild) {
+                  //   while (editAdditionalKeys.firstChild) {
+                  //     editAdditionalKeys.removeChild.firstChild;
+                  //   }
+                  // }
+                  populateKeySubfields(editAdditionalKeys, timeblock, currentBlocktype);
                 } else {
                   blocktypeCRUD.setAttribute("style", "display: initial;");
                   editDeleteAppointments.setAttribute("style", "display: none;");
