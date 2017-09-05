@@ -645,45 +645,69 @@
       </main>
     </div>
 
+    <div id="goalsPane">
+
+      <h1>Goals:</h1>
+      <main ng-repeat="goal in $ctrl.goals | orderBy : $ctrl.sortBy">
+        <div id="{{goal.type + goal.id}}" class="goalsDisplay">
+          <h1>{{goal.type}}</h1>
+          <h2>Weekly Goal: {{goal.weekly_goal}} hours</h2>
+          <div id="{{goal.type + goal.id + goal.type}}" class="calendarWeekGoalsReport">
+            <h3>Projected hours for calendar week: </h3>
+            <h1>{{goal.calendar_week_total}}</h1>
+            <p id="{{goal.type + goal.id + goal.type + goal.id}}" class="goalsMessage"><strong>{{goal.calendar_week_message}}</strong></p>
+          </div>
+          <div id="{{goal.type + goal.id + goal.type + goal.id + goal.type}}" class="sevenDayGoalsReport">
+            <h3>Projected hours over next seven days:</h3>
+            <h1>{{goal.current_week_total}}</h1>
+            <p id="{{goal.type + goal.id + goal.type + goal.id + goal.type + goal.id}}" class="goalsMessage"><strong>{{goal.current_week_message}}</strong></p>
+
+          </div>
+
+        </div>
+
+      </main>
+    </div>
+
 
     <!-- <div class="billsAndTasks">
       <p>Migration and seed files due tomorrow</p><a href="#" class="btn"><p>completed</p></a>
     </div> -->
-    <div id="sleepGoals">
+    <!-- <div id="sleepGoals">
       <h4>Sleep Goal: 56 hours</h4>
       <h5>Projected Sleep for current week:</h5><h1>52</h1>
       <p>4 hours below current goal</p>
       <h5>Projected Sleep for next 7 days:</h5><h1>48</h1>
       <p>8 hours below current goal</p>
-    </div>
-    <div id="exerciseGoals">
+    </div> -->
+    <!-- <div id="exerciseGoals">
       <h4>Exercise Goal: 6 hours</h4>
       <h5>Projected exercise for current week:</h5><h1>6</h1>
       <p>meets current goal</p>
       <h5>Projected exercise for next 7 days:</h5><h1>5</h1>
       <p>1 hour below current goal</p>
-    </div>
-    <div id="readingGoals">
+    </div> -->
+    <!-- <div id="readingGoals">
       <h4>Reading Goal: 20 hours</h4>
       <h5>Projected reading time for current week:</h5><h1>18</h1>
       <p>2 hours below current goal</p>
       <h5>Projected reading for next 7 days:</h5><h1>22</h1>
       <p>2 hours above current goal</p>
-    </div>
-    <div id="codingGoals">
+    </div> -->
+    <!-- <div id="codingGoals">
       <h4>Coding Goal: 36 hours</h4>
       <h5>Projected coding for current week:</h5><h1>36</h1>
       <p>meets current goal</p>
       <h5>Projected coding for next 7 days:</h5><h1>36</h1>
       <p>meets current goal</p>
-    </div>
-    <div id="creativeGoals">
+    </div> -->
+    <!-- <div id="creativeGoals">
       <h4>Creative Goal: 12 hours</h4>
       <h5>Projected creative for current week:</h5><h1>10</h1>
       <p>2 hours below current goal</p>
       <h5>Projected creative for next 7 days:</h5><h1>5</h1>
       <p>7 hours below current goal</p>
-    </div>
+    </div> -->
 
 
   </div>

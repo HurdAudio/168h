@@ -648,7 +648,7 @@
 
       function previousDay() {
         let navDay = new Date(viewDate);
-        navDay.setDate(navDay.getDate() - 1);
+        navDay.setDate(navDay.getDate()-1);
         let idString = 'user=' + currentUserId + '&dayof=' + navDay.getFullYear() + '-' + (navDay.getMonth() + 1) + '-' + navDay.getDate();
         $state.go('dayview', {id: idString});
 
@@ -685,12 +685,12 @@
 
       }
 
-      function getYear(parseInput) {
+      function getH168Year(parseInput) {
 
         return(parseInt(parseInput.slice(0, 4)));
       }
 
-      function getMonth(parseInput) {
+      function getH168Month(parseInput) {
         let position = 5;
         let monthAsString = '';
 
@@ -702,7 +702,7 @@
         return(parseInt(monthAsString));
       }
 
-      function getDay(parseInput) {
+      function getH168Day(parseInput) {
         let position = 5;
         let dayAsString = '';
 
@@ -726,9 +726,9 @@
         for (let i = position; i < parseThis.length; i++) {
           passedDateString = passedDateString + parseThis[i];
         }
-        year = getYear(passedDateString);
-        month = getMonth(passedDateString);
-        day = getDay(passedDateString);
+        year = getH168Year(passedDateString);
+        month = getH168Month(passedDateString);
+        day = getH168Day(passedDateString);
 
         dateParamInput = year + '-';
         if (month < 10) {
@@ -1505,40 +1505,42 @@
         return(tense);
       }
 
-      function overdueFlash(elem) {
-        elem.setAttribute("style", "background: #ff0000; background: -webkit-linear-gradient(0deg, #ff0000, #cc9900); background: -o-linear-gradient(0deg, #ff0000, #cc9900);   background: -moz-linear-gradient(0deg, #ff0000, #cc9900); background: linear-gradient(0deg, #ff0000, #cc9900); transition: background 125ms ease;");
-        setTimeout(()=>{
-          elem.setAttribute("style", "background: #ee0011; background-color: -webkit-linear-gradient(45deg, #ee0011, #cc9900); background: -o-linear-gradient(45deg, #ee0011, #cc9900);   background: -moz-linear-gradient(45deg, #ee0011, #cc9900); background: linear-gradient(45deg, #ee0011, #cc9900); transition: background 125ms ease;");
+      function overdueFlash(elem, message) {
+        if (message !== 'stop') {
+          elem.setAttribute("style", "background: #ff0000; background: -webkit-linear-gradient(0deg, #ff0000, #cc9900); background: -o-linear-gradient(0deg, #ff0000, #cc9900);   background: -moz-linear-gradient(0deg, #ff0000, #cc9900); background: linear-gradient(0deg, #ff0000, #cc9900); transition: background 125ms ease;");
           setTimeout(()=>{
-            elem.setAttribute("style", "background: #dd0022; background-color: -webkit-linear-gradient(90deg, #dd0022, #cc9900); background: -o-linear-gradient(90deg, #dd0022, #cc9900);   background: -moz-linear-gradient(90deg, #dd0022, #cc9900); background: linear-gradient(90deg, #dd0022, #cc9900); transition: background 125ms ease;");
+            elem.setAttribute("style", "background: #ee0011; background-color: -webkit-linear-gradient(45deg, #ee0011, #cc9900); background: -o-linear-gradient(45deg, #ee0011, #cc9900);   background: -moz-linear-gradient(45deg, #ee0011, #cc9900); background: linear-gradient(45deg, #ee0011, #cc9900); transition: background 125ms ease;");
             setTimeout(()=>{
-              elem.setAttribute("style", "background: #cc0033; background-color: -webkit-linear-gradient(135deg, #cc0033, #cc9900); background: -o-linear-gradient(135deg, #cc0033, #cc9900);   background: -moz-linear-gradient(135deg, #cc0033, #cc9900); background: linear-gradient(135deg, #cc0033, #cc9900); transition: background 125ms ease;");
+              elem.setAttribute("style", "background: #dd0022; background-color: -webkit-linear-gradient(90deg, #dd0022, #cc9900); background: -o-linear-gradient(90deg, #dd0022, #cc9900);   background: -moz-linear-gradient(90deg, #dd0022, #cc9900); background: linear-gradient(90deg, #dd0022, #cc9900); transition: background 125ms ease;");
               setTimeout(()=>{
-                elem.setAttribute("style", "background: #bb1144; background-color: -webkit-linear-gradient(180deg, #bb1144, #cc9900); background: -o-linear-gradient(180deg, #bb1144, #cc9900);   background: -moz-linear-gradient(180deg, #bb1144, #cc9900); background: linear-gradient(180deg,#bb1144, #cc9900); transition: background 125ms ease;");
+                elem.setAttribute("style", "background: #cc0033; background-color: -webkit-linear-gradient(135deg, #cc0033, #cc9900); background: -o-linear-gradient(135deg, #cc0033, #cc9900);   background: -moz-linear-gradient(135deg, #cc0033, #cc9900); background: linear-gradient(135deg, #cc0033, #cc9900); transition: background 125ms ease;");
                 setTimeout(()=>{
-                  elem.setAttribute("style", "background: #aa2255; background-color: -webkit-linear-gradient(-135deg, #aa2255, #cc9900); background: -o-linear-gradient(-135deg, #aa2255, #cc9900);   background: -moz-linear-gradient(-135deg, #aa2255, #cc9900); background: linear-gradient(-135deg, #aa2255, #cc9900); transition: background 125ms ease;");
+                  elem.setAttribute("style", "background: #bb1144; background-color: -webkit-linear-gradient(180deg, #bb1144, #cc9900); background: -o-linear-gradient(180deg, #bb1144, #cc9900);   background: -moz-linear-gradient(180deg, #bb1144, #cc9900); background: linear-gradient(180deg,#bb1144, #cc9900); transition: background 125ms ease;");
                   setTimeout(()=>{
-                    elem.setAttribute("style", "background: #bb3344; background-color: -webkit-linear-gradient(-90deg, #bb3344, #cc9900); background: -o-linear-gradient(-90deg, #bb3344, #cc9900);   background: -moz-linear-gradient(-90deg, #bb3344, #cc9900); background: linear-gradient(-90deg, #bb3344, #cc9900); transition: background 125ms ease;");
+                    elem.setAttribute("style", "background: #aa2255; background-color: -webkit-linear-gradient(-135deg, #aa2255, #cc9900); background: -o-linear-gradient(-135deg, #aa2255, #cc9900);   background: -moz-linear-gradient(-135deg, #aa2255, #cc9900); background: linear-gradient(-135deg, #aa2255, #cc9900); transition: background 125ms ease;");
                     setTimeout(()=>{
-                      elem.setAttribute("style", "background: #cc4433; background-color: -webkit-linear-gradient(-45deg, #cc4433, #cc9900); background: -o-linear-gradient(-45deg, #cc4433, #cc9900);   background: -moz-linear-gradient(-45deg, #cc4433, #cc9900); background: linear-gradient(-45deg, #cc4433, #cc9900); transition: background 125ms ease;");
+                      elem.setAttribute("style", "background: #bb3344; background-color: -webkit-linear-gradient(-90deg, #bb3344, #cc9900); background: -o-linear-gradient(-90deg, #bb3344, #cc9900);   background: -moz-linear-gradient(-90deg, #bb3344, #cc9900); background: linear-gradient(-90deg, #bb3344, #cc9900); transition: background 125ms ease;");
                       setTimeout(()=>{
-                        elem.setAttribute("style", "background: #dd5522; background: -webkit-linear-gradient(0deg, #dd5522, #cc9900); background: -o-linear-gradient(0deg, #dd5522, #cc9900);   background: -moz-linear-gradient(0deg, #dd5522, #cc9900); background: linear-gradient(0deg, #dd5522, #cc9900); transition: background 125ms ease;");
+                        elem.setAttribute("style", "background: #cc4433; background-color: -webkit-linear-gradient(-45deg, #cc4433, #cc9900); background: -o-linear-gradient(-45deg, #cc4433, #cc9900);   background: -moz-linear-gradient(-45deg, #cc4433, #cc9900); background: linear-gradient(-45deg, #cc4433, #cc9900); transition: background 125ms ease;");
                         setTimeout(()=>{
-                          elem.setAttribute("style", "background: #ee4411; background: -webkit-linear-gradient(45deg, #ee4411, #cc9900); background: -o-linear-gradient(45deg, #ee4411, #cc9900);   background: -moz-linear-gradient(45deg, #ee4411, #cc9900); background: linear-gradient(45deg, #ee4411, #cc9900); transition: background 125ms ease;");
+                          elem.setAttribute("style", "background: #dd5522; background: -webkit-linear-gradient(0deg, #dd5522, #cc9900); background: -o-linear-gradient(0deg, #dd5522, #cc9900);   background: -moz-linear-gradient(0deg, #dd5522, #cc9900); background: linear-gradient(0deg, #dd5522, #cc9900); transition: background 125ms ease;");
                           setTimeout(()=>{
-                            elem.setAttribute("style", "background: #ff3300; background: -webkit-linear-gradient(90deg, #ff3300, #cc9900); background: -o-linear-gradient(90deg, #ff3300, #cc9900);   background: -moz-linear-gradient(90deg, #ff3300, #cc9900); background: linear-gradient(90deg, #ff3300, #cc9900); transition: background 125ms ease;");
+                            elem.setAttribute("style", "background: #ee4411; background: -webkit-linear-gradient(45deg, #ee4411, #cc9900); background: -o-linear-gradient(45deg, #ee4411, #cc9900);   background: -moz-linear-gradient(45deg, #ee4411, #cc9900); background: linear-gradient(45deg, #ee4411, #cc9900); transition: background 125ms ease;");
                             setTimeout(()=>{
-                              elem.setAttribute("style", "background: #ff2200; background: -webkit-linear-gradient(135deg, #ff2200, #cc9900); background: -o-linear-gradient(135deg, #ff2200, #cc9900);   background: -moz-linear-gradient(135deg, #ff2200, #cc9900); background: linear-gradient(135deg, #ff2200, #cc9900); transition: background 125ms ease;");
+                              elem.setAttribute("style", "background: #ff3300; background: -webkit-linear-gradient(90deg, #ff3300, #cc9900); background: -o-linear-gradient(90deg, #ff3300, #cc9900);   background: -moz-linear-gradient(90deg, #ff3300, #cc9900); background: linear-gradient(90deg, #ff3300, #cc9900); transition: background 125ms ease;");
                               setTimeout(()=>{
-                                elem.setAttribute("style", "background: #ff1100; background: -webkit-linear-gradient(180deg, #ff1100, #cc9900); background: -o-linear-gradient(180deg, #ff1100, #cc9900);   background: -moz-linear-gradient(180deg, #ff1100, #cc9900); background: linear-gradient(180deg, #ff1100, #cc9900); transition: background 125ms ease;");
+                                elem.setAttribute("style", "background: #ff2200; background: -webkit-linear-gradient(135deg, #ff2200, #cc9900); background: -o-linear-gradient(135deg, #ff2200, #cc9900);   background: -moz-linear-gradient(135deg, #ff2200, #cc9900); background: linear-gradient(135deg, #ff2200, #cc9900); transition: background 125ms ease;");
                                 setTimeout(()=>{
-                                  elem.setAttribute("style", "background: #ff0000; background: -webkit-linear-gradient(-135deg, #ff0000, #cc9900); background: -o-linear-gradient(-135deg, #ff0000, #cc9900);   background: -moz-linear-gradient(-135deg, #ff0000, #cc9900); background: linear-gradient(-135deg, #ff0000, #cc9900); transition: background 125ms ease;");
+                                  elem.setAttribute("style", "background: #ff1100; background: -webkit-linear-gradient(180deg, #ff1100, #cc9900); background: -o-linear-gradient(180deg, #ff1100, #cc9900);   background: -moz-linear-gradient(180deg, #ff1100, #cc9900); background: linear-gradient(180deg, #ff1100, #cc9900); transition: background 125ms ease;");
                                   setTimeout(()=>{
-                                    elem.setAttribute("style", "background: #ff0000; background: -webkit-linear-gradient(-90deg, #ff0000, #cc9900); background: -o-linear-gradient(-90deg, #ff0000, #cc9900);   background: -moz-linear-gradient(-90deg, #ff0000, #cc9900); background: linear-gradient(-90deg, #ff0000, #cc9900); transition: background 125ms ease;");
+                                    elem.setAttribute("style", "background: #ff0000; background: -webkit-linear-gradient(-135deg, #ff0000, #cc9900); background: -o-linear-gradient(-135deg, #ff0000, #cc9900);   background: -moz-linear-gradient(-135deg, #ff0000, #cc9900); background: linear-gradient(-135deg, #ff0000, #cc9900); transition: background 125ms ease;");
                                     setTimeout(()=>{
-                                      elem.setAttribute("style", "background: #ff0000; background: -webkit-linear-gradient(-45deg, #ff0000, #cc9900); background: -o-linear-gradient(-45deg, #ff0000, #cc9900);   background: -moz-linear-gradient(-45deg, #ff0000, #cc9900); background: linear-gradient(-45deg, #ff0000, #cc9900); transition: background 125ms ease;");
+                                      elem.setAttribute("style", "background: #ff0000; background: -webkit-linear-gradient(-90deg, #ff0000, #cc9900); background: -o-linear-gradient(-90deg, #ff0000, #cc9900);   background: -moz-linear-gradient(-90deg, #ff0000, #cc9900); background: linear-gradient(-90deg, #ff0000, #cc9900); transition: background 125ms ease;");
                                       setTimeout(()=>{
-                                        overdueFlash(elem);
+                                        elem.setAttribute("style", "background: #ff0000; background: -webkit-linear-gradient(-45deg, #ff0000, #cc9900); background: -o-linear-gradient(-45deg, #ff0000, #cc9900);   background: -moz-linear-gradient(-45deg, #ff0000, #cc9900); background: linear-gradient(-45deg, #ff0000, #cc9900); transition: background 125ms ease;");
+                                        setTimeout(()=>{
+                                          overdueFlash(elem);
+                                        }, 65);
                                       }, 65);
                                     }, 65);
                                   }, 65);
@@ -1554,7 +1556,7 @@
               }, 65);
             }, 65);
           }, 65);
-        }, 65);
+        }
       }
 
       function getCleanDate(theDate) {
@@ -2981,6 +2983,7 @@
             editDeleteAppointments.setAttribute("style", "display: none;");
             goalsPanel.setAttribute("style", "display: initial;");
             setScheduleGenerator();
+            setGoalsReport();
           });
           editAppointmentDelete.addEventListener('click', ()=>{
             editDeleteAppointments.setAttribute("style", "display: none;");
@@ -2992,6 +2995,7 @@
                 currentEdit = 0;
                 resetScheduleField(deleted);
                 setScheduleGenerator();
+                setGoalsReport();
               });
             }
           });
@@ -3212,6 +3216,186 @@
         });
       }
 
+      function blockDuration (timeblock) {
+        let duration = 0;
+        let start = hoursTime.indexOf(getCleanTime(timeblock.start_time));
+        let finish = hoursTime.indexOf(getCleanTime(timeblock.end_time));
+        if (finish === 0) {
+          finish = hoursTime.length - 1;
+        }
+        duration = (finish - start)/2;
+        return(duration);
+      }
+
+      function currentWeekGoals(userGoal, index, weekGoal, block) {
+        let floatingDate = new Date(viewDate);
+        let message = '';
+        let quantified;
+        let week = [];
+
+        let projected = 0;
+        for (let h = 0; h < 7; h++) {
+          week[h] = {};
+        }
+
+
+        $http.get(`/timeblocksbyuser/${currentUserId}`)
+        .then(userTimeblocksData=>{
+          let userTimeblocks = userTimeblocksData.data;
+          for (let i = 0; i < week.length; i++) {
+            week[i].date = new Date(floatingDate);
+            week[i].date.setDate(floatingDate.getDate()+i);
+            week[i].timeblocks = [];
+            for (let j = 0; j < userTimeblocks.length; j++) {
+              if (getAppointmentTense(week[i].date, userTimeblocks[j].start_time) === 'present') {
+                week[i].timeblocks.push(userTimeblocks[j]);
+              }
+            }
+          }
+          console.log(week);
+          for (let k = 0; k < week.length; k++) {
+            if (week[k].timeblocks.length > 0) {
+              for (let m = 0; m < week[k].timeblocks.length; m++) {
+                if (week[k].timeblocks[m].block_type === userGoal.block_type) {
+                  projected += blockDuration(week[k].timeblocks[m]);
+                }
+              }
+            }
+          }
+          let calendarWeekDiv = document.getElementById(vm.goals[index].type + vm.goals[index].id + vm.goals[index].type + vm.goals[index].id + vm.goals[index].type);
+          if (projected < weekGoal) {
+            quantified = weekGoal - projected;
+            message = quantified + ' hours below goal.';
+            if (projected < (weekGoal * 0.6)) {
+              overdueFlash(calendarWeekDiv);
+            } else if (projected < (weekGoal * 0.7)) {
+              calendarWeekDiv.setAttribute("style", "background-color: #ff0000; background-color: -webkit-linear-gradient(135deg, #ff0000, #22aa44); background: -o-linear-gradient(135deg, #ff0000, #22aa44); background: -moz-linear-gradient(135deg, #ff0000, #22aa44); background: linear-gradient(135deg, #ff0000, #22aa44);");
+            } else if (projected < (weekGoal * 0.8)) {
+              calendarWeekDiv.setAttribute("style", "background-color: #ffff00; background-color: -webkit-linear-gradient(135deg, #ffff00, #22aa44); background: -o-linear-gradient(135deg, #ffff00, #22aa44); background: -moz-linear-gradient(135deg, #ffff00, #22aa44); background: linear-gradient(135deg, #ffff00, #22aa44);");
+            } else if (projected < (weekGoal * 0.9)) {
+              calendarWeekDiv.setAttribute("style", "background-color: #00ff00; background-color: -webkit-linear-gradient(135deg, #00ff00, #22aa44); background: -o-linear-gradient(135deg, #00ff00, #22aa44); background: -moz-linear-gradient(135deg, #00ff00, #22aa44); background: linear-gradient(135deg, #00ff00, #22aa44);");
+            } else {
+              calendarWeekDiv.setAttribute("style", "background-color: transparent;");
+            }
+          } else if (projected > weekGoal) {
+            quantified = projected - weekGoal;
+            message = quantified + ' hours over goal.';
+          } else {
+            message = 'You are right on track.';
+          }
+          vm.goals[index].current_week_total = projected;
+          vm.goals[index].current_week_message = message;
+          let goalDiv = document.getElementById(vm.goals[index].type + vm.goals[index].id);
+          goalDiv.setAttribute("style", "background: " + block.color +"; background-color: -webkit-linear-gradient(135deg, " + block.color + ", #abdada); background: -o-linear-gradient(135deg, " + block.color + ", #abdada); background: -moz-linear-gradient(135deg, " + block.color + ", #abdada); background: linear-gradient(135deg, " + block.color + ", #abdada); opacity: 0.8;");
+
+
+        });
+      }
+
+      function calendarWeekGoals(userGoal, index, weekGoal, block) {
+        let floatingDate;
+        let message = '';
+        let quantified;
+        let week = [];
+
+        let projected = 0;
+        for (let h = 0; h < 7; h++) {
+          week[h] = {};
+        }
+        console.log(viewDate.getDay());
+        if (viewDate.getDay() === 1) {
+          floatingDate = new Date(viewDate);
+        } else {
+          floatingDate = new Date(viewDate);
+          while(floatingDate.getDay() !==1) {
+            floatingDate.setDate(floatingDate.getDate()-1);
+          }
+        }
+        $http.get(`/timeblocksbyuser/${currentUserId}`)
+        .then(userTimeblocksData=>{
+          let userTimeblocks = userTimeblocksData.data;
+          for (let i = 0; i < week.length; i++) {
+            week[i].date = new Date(floatingDate);
+            week[i].date.setDate(floatingDate.getDate()+i);
+            week[i].timeblocks = [];
+            for (let j = 0; j < userTimeblocks.length; j++) {
+              if (getAppointmentTense(week[i].date, userTimeblocks[j].start_time) === 'present') {
+                week[i].timeblocks.push(userTimeblocks[j]);
+              }
+            }
+          }
+          console.log(week);
+          for (let k = 0; k < week.length; k++) {
+            if (week[k].timeblocks.length > 0) {
+              for (let m = 0; m < week[k].timeblocks.length; m++) {
+                if (week[k].timeblocks[m].block_type === userGoal.block_type) {
+                  projected += blockDuration(week[k].timeblocks[m]);
+                }
+              }
+            }
+          }
+          let calendarWeekDiv = document.getElementById(vm.goals[index].type + vm.goals[index].id + vm.goals[index].type);
+          if (projected < weekGoal) {
+            quantified = weekGoal - projected;
+            message = quantified + ' hours below goal.';
+            if (projected < (weekGoal * 0.6)) {
+              overdueFlash(calendarWeekDiv);
+            } else if (projected < (weekGoal * 0.7)) {
+              calendarWeekDiv.setAttribute("style", "background-color: #ff0000; background-color: -webkit-linear-gradient(135deg, #ff0000, #22aa44); background: -o-linear-gradient(135deg, #ff0000, #22aa44); background: -moz-linear-gradient(135deg, #ff0000, #22aa44); background: linear-gradient(135deg, #ff0000, #22aa44);");
+            } else if (projected < (weekGoal * 0.8)) {
+              calendarWeekDiv.setAttribute("style", "background-color: #ffff00; background-color: -webkit-linear-gradient(135deg, #ffff00, #22aa44); background: -o-linear-gradient(135deg, #ffff00, #22aa44); background: -moz-linear-gradient(135deg, #ffff00, #22aa44); background: linear-gradient(135deg, #ffff00, #22aa44);");
+            } else if (projected < (weekGoal * 0.9)) {
+              calendarWeekDiv.setAttribute("style", "background-color: #00ff00; background-color: -webkit-linear-gradient(135deg, #00ff00, #22aa44); background: -o-linear-gradient(135deg, #00ff00, #22aa44); background: -moz-linear-gradient(135deg, #00ff00, #22aa44); background: linear-gradient(135deg, #00ff00, #22aa44);");
+            } else {
+              calendarWeekDiv.setAttribute("style", "background-color: transparent;");
+            }
+          } else if (projected > weekGoal) {
+            quantified = projected - weekGoal;
+            message = quantified + ' hours over goal.';
+          } else {
+            message = 'You are right on track.';
+          }
+          vm.goals[index].calendar_week_total = projected;
+          vm.goals[index].calendar_week_message = message;
+
+
+        });
+
+      }
+
+      function grabGoaltypeAndReport (userGoal, index, weekGoal) {
+        $http.get(`/blocktypes/${userGoal.block_type}`)
+        .then(blockData=>{
+          let block = blockData.data;
+
+
+          vm.goals[index].type = block.type;
+
+          //goalDiv.setAttribute("style", "background: " + block.color +"; background-color: -webkit-linear-gradient(135deg, " + block.color + ", #abdada); background: -o-linear-gradient(135deg, " + block.color + ", #abdada); background: -moz-linear-gradient(135deg, " + block.color + ", #abdada); background: linear-gradient(135deg, " + block.color + ", #abdada);");
+          calendarWeekGoals(userGoal, index, weekGoal, block);
+          currentWeekGoals(userGoal, index, weekGoal, block);
+        });
+      }
+
+      function setGoalsReport() {
+        let goalsPane = document.getElementById('goalsPane');
+        vm.goals = [];
+        $http.get(`/goalsbyuser/${currentUserId}`)
+        .then(userGoalsData=>{
+          let userGoals = userGoalsData.data;
+          if (userGoals.length < 1) {
+            goalsPane.setAttribute("style", "display: none;");
+            return;
+          }
+          for (let i = 0; i < userGoals.length; i++) {
+            vm.goals[i] = {};
+            vm.goals[i].weekly_goal = userGoals[i].weekly_goal;
+            vm.goals[i].id = userGoals[i].id;
+            grabGoaltypeAndReport(userGoals[i], i, userGoals[i].weekly_goal);
+          }
+        });
+      }
+
       function setScheduleGenerator() {
         let daySchedule = document.getElementById('daySchedule');
         vm.appointments = [];
@@ -3325,6 +3509,7 @@
         detectTasks();
         detectTimeBlocks();
         setScheduleGenerator();
+        setGoalsReport();
       }
 
     }

@@ -2865,3 +2865,27 @@ footer img {
   margin-left: 3em;
   width: 80%;
 }
+
+#goalsPane {
+  font-family: 'Alike Angular', serif;
+}
+
+#goalsPane h1 {
+  font-size: 48px;
+  margin-left: 1.8em;
+}
+
+#goalsPane h2 {
+  font-size: 36px;
+  margin-left: 1em;
+}
+
+#goalsPane h3 {
+  font-size: 30px;
+  margin-left: 1em;
+}
+
+#goalsPane p {
+  font-size: 24px;
+  margin-left: 1em;
+}
