@@ -490,6 +490,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 28,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2692661850/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://marionbrown.bandcamp.com/album/why-not',
+          a_string: 'Why Not by Marion Brown',
+          rule: {
+            "monday": [ 22, 16, 18, 24],
+            "tuesday": [ 15, 19, 21, 24],
+            "wednesday": [ 6, 10, 12, 16],
+            "thursday": [ 8, 12, 14, 18],
+            "saturday": [ 10, 14, 16, 20]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 29,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=194836613/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://pharoahsanders.bandcamp.com/album/pharoah-sanders-quintet',
+          a_string: 'Pharoah Sanders Quintet by Pharoah Sanders',
+          rule: {
+            "monday": [ 10, 14, 16, 20],
+            "tuesday": [ 22, 16, 18, 24],
+            "wednesday": [ 15, 19, 21, 24],
+            "thursday": [ 6, 10, 12, 16],
+            "saturday": [ 8, 12, 14, 18]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 30,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2978623574/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://marzettewatts.bandcamp.com/album/and-company',
+          a_string: 'And Company by Marzette Watts',
+          rule: {
+            "monday": [ 8, 12, 14, 18],
+            "tuesday": [ 10, 14, 16, 20],
+            "wednesday": [ 22, 16, 18, 24],
+            "thursday": [ 15, 19, 21, 24],
+            "saturday": [ 6, 10, 12, 16]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
