@@ -604,6 +604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 31,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/6732492143_b84b2b6617.jpg',
+          title: 'The Audience',
+          artist: 'Michael Snow',
+          year: '1989',
+          rule: {
+            "monday": [ 30, 5, 11, 17 ],
+            "tuesday": [ 5, 11, 16, 23 ],
+            "wednesday": [ 19, 10, 16, 22 ],
+            "thursday": [ 4, 9, 15, 21 ],
+            "friday": [ 3, 7, 23, 20 ],
+            "saturday": [ 2, 7, 13, 19 ],
+            "sunday": [ 1, 6, 12, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 32,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/jays.jpg',
+          title: 'My Love/Hate Relationship with the Blue Jays\' Success',
+          artist: 'unknown',
+          year: 'xxi Cent.',
+          rule: {
+            "monday": [ 1, 6, 12, 18 ],
+            "tuesday": [ 30, 5, 11, 17 ],
+            "wednesday": [ 5, 11, 16, 23 ],
+            "thursday": [ 19, 10, 16, 22 ],
+            "friday": [ 4, 9, 15, 21 ],
+            "saturday": [ 3, 7, 23, 20 ],
+            "sunday": [ 2, 7, 13, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 33,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/Kennth-Lochhead-Top-o-the-9th-e1444413105840-803x603.jpg',
+          title: 'Top of the 9th',
+          artist: 'Kenneth Lochhead',
+          year: 'xx Cent.',
+          rule: {
+            "monday": [ 2, 7, 13, 19 ],
+            "tuesday": [ 1, 6, 12, 18 ],
+            "wednesday": [ 30, 5, 11, 17 ],
+            "thursday": [ 5, 11, 16, 23 ],
+            "friday": [ 19, 10, 16, 22 ],
+            "saturday": [ 4, 9, 15, 21 ],
+            "sunday": [ 3, 7, 23, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 34,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/DavidPdone4.gif',
+          title: 'David Price',
+          artist: 'Chris Ripley',
+          year: '2015',
+          rule: {
+            "monday": [ 3, 7, 23, 20 ],
+            "tuesday": [ 2, 7, 13, 19 ],
+            "wednesday": [ 1, 6, 12, 18 ],
+            "thursday": [ 30, 5, 11, 17 ],
+            "friday": [ 5, 11, 16, 23 ],
+            "saturday": [ 19, 10, 16, 22 ],
+            "sunday": [ 4, 9, 15, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 35,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/pillaraldsg5-300x236.gif',
+          title: 'Jason Pillard',
+          artist: 'Chris Ripley',
+          year: '2016',
+          rule: {
+            "monday": [ 5, 10, 16, 22 ],
+            "tuesday": [ 4, 8, 24, 21 ],
+            "wednesday": [ 3, 8, 14, 20 ],
+            "thursday": [ 2, 7, 13, 19 ],
+            "friday": [ 1, 6, 12, 18 ],
+            "saturday": [ 6, 12, 17, 24 ],
+            "sunday": [ 20, 10, 17, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
