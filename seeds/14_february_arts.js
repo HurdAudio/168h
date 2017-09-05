@@ -1004,6 +1004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 51,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/13nubia.jpg',
+          title: 'House of the Turtle',
+          artist: 'John T. Biggers',
+          year: 'xx Cent.',
+          rule: {
+            "monday": [ 8, 16, 24, 3 ],
+            "tuesday": [ 10, 18, 26, 5 ],
+            "wednesday": [ 15, 20, 26, 7 ],
+            "thursday": [ 14, 22, 1, 9 ],
+            "friday": [ 16, 26, 3, 11 ],
+            "saturday": [ 18, 26, 5, 15 ],
+            "sunday": [ 20, 28, 24, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 52,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/2011_Sanford_Biggers_CHESHIRE_428H.jpg',
+          title: 'Cheshire',
+          artist: 'Sanford Biggers',
+          year: '2008',
+          rule: {
+            "monday": [ 20, 28, 24, 14 ],
+            "tuesday": [ 8, 16, 24, 3 ],
+            "wednesday": [ 10, 18, 26, 5 ],
+            "thursday": [ 15, 20, 26, 7 ],
+            "friday": [ 14, 22, 1, 9 ],
+            "saturday": [ 16, 26, 3, 11 ],
+            "sunday": [ 18, 26, 5, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 53,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Co4SwDqXEAAoHvT.jpg',
+          title: 'Fantastique',
+          artist: 'Gene Bilbrew',
+          year: '1950s',
+          rule: {
+            "monday": [ 18, 26, 5, 15 ],
+            "tuesday": [ 20, 28, 24, 14 ],
+            "wednesday": [ 8, 16, 24, 3 ],
+            "thursday": [ 10, 18, 26, 5 ],
+            "friday": [ 15, 20, 26, 7 ],
+            "saturday": [ 14, 22, 1, 9 ],
+            "sunday": [ 16, 26, 3, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 54,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Mcarthur-binion-self-portrait.jpg',
+          title: 'Self Portrait: XVI',
+          artist: 'McArthur Binion',
+          year: '2014',
+          rule: {
+            "monday": [ 16, 26, 3, 11 ],
+            "tuesday": [ 18, 26, 5, 15 ],
+            "wednesday": [ 20, 28, 24, 14 ],
+            "thursday": [ 8, 16, 24, 3 ],
+            "friday": [ 10, 18, 26, 5 ],
+            "saturday": [ 15, 20, 26, 7 ],
+            "sunday": [ 14, 22, 1, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 55,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/129291288091107104_984d57ff-cd88-4daf-963d-b64ca1ffc6e7_180908_570.jpeg',
+          title: 'Youth',
+          artist: 'Robert Blackburn',
+          year: '1951',
+          rule: {
+            "monday": [ 14, 22, 1, 9 ],
+            "tuesday": [ 16, 26, 3, 11 ],
+            "wednesday": [ 18, 26, 5, 15 ],
+            "thursday": [ 20, 28, 24, 14 ],
+            "friday": [ 8, 16, 24, 3 ],
+            "saturday": [ 10, 18, 26, 5 ],
+            "sunday": [ 15, 20, 26, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
