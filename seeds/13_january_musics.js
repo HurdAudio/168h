@@ -598,6 +598,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 34,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2594763072/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://johnlutheradams.bandcamp.com/album/inuksuit',
+          a_string: 'Inuksuit by John Luther Adams',
+          rule: {
+            "monday": [ 11, 18, 20, 19 ],
+            "tuesday": [ 9, 13, 15, 19 ],
+            "wednesday": [ 11, 18, 20, 19 ],
+            "thursday": [ 19, 13, 15, 20 ],
+            "saturday": [ 15, 9, 11, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 35,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=674817097/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://newamsterdamrecords.bandcamp.com/album/not-two',
+          a_string: 'Not Two by Amir ElSaffar / Rivers of Sound',
+          rule: {
+            "monday": [ 16, 10, 12, 16 ],
+            "tuesday": [ 12, 19, 21, 20 ],
+            "wednesday": [ 10, 14, 16, 20 ],
+            "thursday": [ 12, 19, 21, 20 ],
+            "saturday": [ 20, 14, 16, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 36,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2077421539/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://nostalgicsynchronic.bandcamp.com/album/nostalgic-synchronic-etudes-for-prepared-digital-piano',
+          a_string: 'Nostalgic Synchronic: Etudes for Prepared Digital Piano by Dan Trueman (performed by Adam Sliwinski)',
+          rule: {
+            "monday": [ 20, 14, 16, 21 ],
+            "tuesday": [ 16, 10, 12, 16 ],
+            "wednesday": [ 12, 19, 21, 20 ],
+            "thursday": [ 10, 14, 16, 20 ],
+            "saturday": [ 12, 19, 21, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
