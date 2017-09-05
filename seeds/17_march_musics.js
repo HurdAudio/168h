@@ -382,6 +382,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 22,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1924932317/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://rectangle-records.bandcamp.com/album/dire-du-dire',
+          a_string: 'Dire du dire by Joëlle Léandre',
+          rule: {
+            "monday": [ 8, 14, 20, 28 ],
+            "tuesday": [ 7, 13, 19, 27 ],
+            "wednesday": [ 6, 12, 18, 26 ],
+            "thursday": [ 5, 11, 17, 25 ],
+            "saturday": [ 4, 10, 16, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 23,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'http://bandcamp.com/EmbeddedPlayer/album=2248117061/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://firehouse12records.com/album/the-whole-tree-gone',
+          a_string: 'The Whole Tree Gone by Myra Melford&#39;s Be Bread',
+          rule: {
+            "monday": [ 4, 10, 16, 24 ],
+            "tuesday": [ 8, 14, 20, 28 ],
+            "wednesday": [ 7, 13, 19, 27 ],
+            "thursday": [ 6, 12, 18, 26 ],
+            "saturday": [ 5, 11, 17, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 24,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3990709858/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://maryhalvorson.bandcamp.com/album/away-with-you',
+          a_string: 'Away With You by Mary Halvorson',
+          rule: {
+            "monday": [ 5, 11, 17, 25 ],
+            "tuesday": [ 4, 10, 16, 24 ],
+            "wednesday": [ 8, 14, 20, 28 ],
+            "thursday": [ 7, 13, 19, 27 ],
+            "saturday": [ 6, 12, 18, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
