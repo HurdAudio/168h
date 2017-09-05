@@ -804,6 +804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 41,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/3-lemons-18x24in-2015-oil-svetlana-kanyo-2.jpg',
+          title: 'Lemons',
+          artist: 'Svetlana Kanyo',
+          year: '2015',
+          rule: {
+            "monday": [ 3, 13, 21, 31 ],
+            "tuesday": [ 2, 12, 20, 30 ],
+            "wednesday": [ 1, 11, 19, 29 ],
+            "thursday": [ 31, 10, 18, 28 ],
+            "friday": [ 6, 16, 24, 3 ],
+            "saturday": [ 5, 15, 25, 2 ],
+            "sunday": [ 4, 14, 22, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 42,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/untitled-2005.jpg',
+          title: 'Untitled',
+          artist: 'Tea Jorjadze',
+          year: '2005',
+          rule: {
+            "monday": [ 5, 15, 23, 2 ],
+            "tuesday": [ 4, 14, 22, 1 ],
+            "wednesday": [ 3, 13, 21, 31 ],
+            "thursday": [ 2, 12, 20, 30 ],
+            "friday": [ 1, 11, 19, 29 ],
+            "saturday": [ 7, 17, 25, 4 ],
+            "sunday": [ 6, 16, 26, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 43,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/monika-blatton-dzokejka.jpg',
+          title: 'Lady Jockey',
+          artist: 'Monica Blatton',
+          year: '2009',
+          rule: {
+            "monday": [ 6, 16, 26, 3 ],
+            "tuesday": [ 5, 15, 23, 2 ],
+            "wednesday": [ 4, 14, 22, 1 ],
+            "thursday": [ 3, 13, 21, 31 ],
+            "friday": [ 2, 12, 20, 30 ],
+            "saturday": [ 1, 11, 19, 29 ],
+            "sunday": [ 7, 17, 25, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 44,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/heaven.jpg',
+          title: 'Heaven',
+          artist: 'Dana Levin',
+          year: '?',
+          rule: {
+            "monday": [ 7, 17, 25, 4 ],
+            "tuesday": [ 6, 16, 26, 3 ],
+            "wednesday": [ 5, 15, 23, 2 ],
+            "thursday": [ 4, 14, 22, 1 ],
+            "friday": [ 3, 13, 21, 31 ],
+            "saturday": [ 2, 12, 20, 30 ],
+            "sunday": [ 1, 11, 10, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 45,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/family-tree-2012.jpg',
+          title: 'Family Tree',
+          artist: 'Wangechi Mutu',
+          year: '2012',
+          rule: {
+            "monday": [ 1, 11, 10, 29 ],
+            "tuesday": [ 7, 17, 25, 4 ],
+            "wednesday": [ 6, 16, 26, 3 ],
+            "thursday": [ 5, 15, 23, 2 ],
+            "friday": [ 4, 14, 22, 1 ],
+            "saturday": [ 3, 13, 21, 31 ],
+            "sunday": [ 2, 12, 20, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
