@@ -614,6 +614,8 @@ a.btn:hover {
   width: 30.5%;
   height: 41em;
   overflow: scroll;
+  background-image: url(../img/background-2044512_1920.jpg);
+  background-repeat: repeat;
 
   margin-left: 0.1em;
   background-color: #eeeeee;
@@ -631,6 +633,8 @@ a.btn:hover {
   width: 30.5%;
   height: 41em;
   overflow: scroll;
+  background-image: url(../img/background-2044512_1920.jpg);
+  background-repeat: repeat;
 
   margin-left: 0.1em;
 
@@ -1390,24 +1394,36 @@ a.btn:hover {
 }
 
 #daySchedule {
+  display: none;
   background-image: url(../img/background-2044512_1920.jpg);
   background-repeat: repeat;
   font-family: 'Neuton', sans-serif;
-  text-align: center;
+  text-align: left;
+
+  border-top: solid #000000 1px;
 }
 
 #daySchedule h3 {
   font-size: 36px;
-
+  border-top: solid #000000 1px;
+  margin-left: 0.4em;
 }
 
 #daySchedule h4 {
-  font-size: 24px;
-  border-top: solid #000000 1px;
+  font-family: 'Neuton', sans-serif;
+  font-size: 36px;
+  text-align: center;
+
 }
 
 #daySchedule p {
+  margin: 0;
+  margin-top: -0.5em;
+  margin-left: 1.4em;
+  padding: 0;
+  padding-top: 0.4em;
   font-size: 24px;
+  white-space: pre-wrap;
 }
 
 #pomodoro {
@@ -2382,8 +2398,7 @@ footer img {
 }
 
 .occasions {
-  background-image: url(../img/background-2044512_1920.jpg);
-  background-repeat: no-repeat;
+
   align-content: center;
   font-family: 'Asul', sans-serif;
   font-weight: 200;

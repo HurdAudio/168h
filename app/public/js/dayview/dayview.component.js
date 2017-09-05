@@ -2980,6 +2980,7 @@
           editAppointmentCancel.addEventListener('click', ()=>{
             editDeleteAppointments.setAttribute("style", "display: none;");
             goalsPanel.setAttribute("style", "display: initial;");
+            setScheduleGenerator();
           });
           editAppointmentDelete.addEventListener('click', ()=>{
             editDeleteAppointments.setAttribute("style", "display: none;");
@@ -2990,6 +2991,7 @@
                 let deleted = deletedData.data;
                 currentEdit = 0;
                 resetScheduleField(deleted);
+                setScheduleGenerator();
               });
             }
           });
@@ -3173,6 +3175,78 @@
         });
       }
 
+      function getCleanTime(block) {
+        //console.log(block);
+        let time = '';
+        if (block[11] === '0') {
+          time = block.slice(12, 16);
+        } else {
+          time = block.slice(11, 16);
+        }
+
+        return(time);
+      }
+
+      function getBlockDataForAppointments(timeblock, index) {
+        let datasString = '';
+        $http.get(`/blocktypes/${timeblock.block_type}`)
+        .then(blockData=>{
+          let block = blockData.data;
+          vm.appointments[index].blocktype = block.type;
+          if (timeblock.block_data !== null) {
+            vm.appointments[index].blocksubtype = block.keys[block.keys.keys[0] + "Values"][timeblock.block_data[block.keys.keys[0]]];
+            if (block.keys.keys.length > 1) {
+              for (let i = 1; i < block.keys.keys.length; i++) {
+                datasString += block.keys.keys[i] + ': \n';
+                if (timeblock.block_data[block.keys.keys[i]] !== undefined) {
+                  if (timeblock.block_data[block.keys.keys[i]].length > 0) {
+                    for (let j = 0; j < timeblock.block_data[block.keys.keys[i]].length; j++) {
+                      datasString += '\t' +  timeblock.block_data[block.keys.keys[i]][j] + '\n';
+                    }
+                  }
+                }
+              }
+              vm.appointments[index].additional_datas = datasString;
+            }
+          }
+        });
+      }
+
+      function setScheduleGenerator() {
+        let daySchedule = document.getElementById('daySchedule');
+        vm.appointments = [];
+        let index = 0;
+        $http.get(`/timeblocksbyuser/${currentUserId}`)
+        .then(fullUserTimeBlocksData=>{
+          let fullUserTimeBlocks = fullUserTimeBlocksData.data;
+          let todaysTimeblocks = [];
+          todaysTimeblocks = fullUserTimeBlocks.filter((block)=>{
+            return((getAppointmentTense(viewDate, block.start_time)) === 'present');
+          });
+          if (todaysTimeblocks.length > 0) {
+
+            for (let i = 0; i < (hoursTime.length - 1); i++) {
+              for (let j = 0; j < todaysTimeblocks.length; j++) {
+                if (getCleanTime(todaysTimeblocks[j].start_time) === hoursTime[i]) {
+                  console.log(hoursTime[i]);
+                  vm.appointments[index] = {};
+                  vm.appointments[index].start_time_clean = hoursTime[i];
+                  vm.appointments[index].end_time_clean = getCleanTime(todaysTimeblocks[j].end_time);
+                  getBlockDataForAppointments(todaysTimeblocks[j], index);
+                  vm.appointments[index].location = todaysTimeblocks[j].location;
+                  vm.appointments[index].user_notes = todaysTimeblocks[j].user_notes;
+                  ++index;
+                }
+              }
+            }
+            daySchedule.setAttribute("style", "display: initial;");
+          } else {
+            daySchedule.setAttribute("style", "display: none;");
+          }
+        });
+        daySchedule.setAttribute("style", "background-image: url(../img/background-2044512_1920.jpg); background-repeat: repeat; font-family: 'Neuton', sans-serif; text-align: left; border-top: solid #000000 1px;");
+      }
+
       function detectTimeBlocks() {
 
         $http.get(`/timeblocksbyuser/${currentUserId}`)
@@ -3250,7 +3324,7 @@
         detectBills();
         detectTasks();
         detectTimeBlocks();
-
+        setScheduleGenerator();
       }
 
     }

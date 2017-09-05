@@ -503,47 +503,20 @@
       <br>
     </div>
     <div id="daySchedule">
-      <h3>Schedule</h3>
-      <h4>0:00 - 6:00</h4>
-      <p>Sleep</p>
-      <h4>6:00 - 6:30</h4>
-      <p>Unstructured Time</p>
-      <h4>6:30 - 7:30</h4>
-      <p>Exercise - Aerobic workout day</p>
-      <h4>7:30 - 8:30</h4>
-      <p>Meal - Breakfast</p>
-      <h4>8:30 - 9:00</h4>
-      <p>Unstructured Time</p>
-      <h4>9:00 - 11:00</h4>
-      <p>Job Hunt</p>
-      <p>Indeed.com, LinkedIn.com and Zip Recruiter day</p>
-      <h4>11:00 - 11:30</h4>
-      <p>Break</p>
-      <h4>11:30 - 12:00</h4>
-      <p>Admin - Meeting prep</p>
-      <p>Prepare for Job Seekers Anonymous meeting - codewars solutions</p>
-      <h4>12:00 - 13:00</h4>
-      <p>Meal - Lunch</p>
-      <p>Sack lunch day</p>
-      <h4>13:00 - 15:00</h4>
-      <p>Coding</p>
-      <p>Front End mock-up for calendar app</p>
-      <h4>15:00 - 16:00</h4>
-      <p>Meeting - Job Seekers Anonymous</p>
-      <p>Main Floor Boardroom - codewars preparations</p>
-      <h4>16:00 - 16:30</h4>
-      <p>Admin - errands: buy stamps</p>
-      <h4>16:30 - 17:30</h4>
-      <p>Coding</p>
-      <p>Continue front-end mockups</p>
-      <h4>17:30 - 19:00</h4>
-      <p>Reading</p>
-      <p><em>The Blank Wall</em> / <em>SQL Hacks</em></p>
-      <h4>19:00 - 22:00</h4>
-      <p>Offsite Event</p>
-      <p>Seattle Mariners @ Houston Atros - MLB.TV feed</p>
-      <h4>22:00 - 24:00</h4>
-      <p>Sleep</p>
+      <h3>Today's Schedule:</h3>
+      <div id="scheduleBlocks">
+        <main ng-repeat="appointment in $ctrl.appointments | orderBy: $ctrl.chronological">
+          <h3>{{appointment.start_time_clean}} - {{appointment.end_time_clean}}</h3>
+          <br>
+          <h4>{{appointment.blocktype}} - {{appointment.blocksubtype}}</h4>
+          <br>
+          <p>Location: {{appointment.location}}</p>
+          <p>{{appointment.user_notes}}</p>
+          <p>{{appointment.additional_datas}}</p>
+
+
+        </main>
+      </div>
     </div>
 
     <div id="billsList">
