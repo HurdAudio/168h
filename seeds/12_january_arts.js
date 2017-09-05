@@ -1204,6 +1204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 61,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/machine-5-1950.jpg',
+          title: 'Machine 5',
+          artist: 'Hedda Sterne',
+          year: '1950',
+          rule: {
+            "monday": [ 22, 24, 28, 31 ],
+            "tuesday": [ 24, 26, 27, 30 ],
+            "wednesday": [ 9, 10, 22, 13 ],
+            "thursday": [ 12, 15, 16, 26 ],
+            "friday": [ 14, 15, 17, 20 ],
+            "saturday": [ 17, 18, 9, 13 ],
+            "sunday": [ 20, 22, 24, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 62,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/untitled-1945.jpg',
+          title: 'Untitled',
+          artist: 'Barnett Newman',
+          year: '1945',
+          rule: {
+            "monday": [ 20, 22, 24, 25 ],
+            "tuesday": [ 22, 24, 28, 31 ],
+            "wednesday": [ 24, 26, 27, 30 ],
+            "thursday": [ 9, 10, 22, 13 ],
+            "friday": [ 12, 15, 16, 26 ],
+            "saturday": [ 14, 15, 17, 20 ],
+            "sunday": [ 17, 18, 9, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 63,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/transection-i-1971.jpg',
+          title: 'Transection I',
+          artist: 'Clarence Holbrook Carter',
+          year: '1971',
+          rule: {
+            "monday": [ 18, 19, 10, 14 ],
+            "tuesday": [ 21, 23, 25, 26 ],
+            "wednesday": [ 23, 25, 29, 1 ],
+            "thursday": [ 25, 27, 28, 31 ],
+            "friday": [ 10, 11, 23, 14 ],
+            "saturday": [ 13, 15, 17, 27 ],
+            "sunday": [ 15, 16, 18, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 64,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/equinox-1958.jpg',
+          title: 'Equinox',
+          artist: 'Hans Hofmann',
+          year: '1958',
+          rule: {
+            "monday": [ 15, 16, 18, 21 ],
+            "tuesday": [ 18, 19, 10, 14 ],
+            "wednesday": [ 21, 23, 25, 26 ],
+            "thursday": [ 23, 25, 29, 1 ],
+            "friday": [ 25, 27, 28, 31 ],
+            "saturday": [ 10, 11, 23, 14 ],
+            "sunday": [ 13, 15, 17, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 65,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/moroccan-door-1991.jpg',
+          title: 'Moroccan Door',
+          artist: 'Howard Hodgkin',
+          year: '1991',
+          rule: {
+            "monday": [ 13, 15, 17, 27 ],
+            "tuesday": [ 15, 16, 18, 21 ],
+            "wednesday": [ 18, 19, 10, 14 ],
+            "thursday": [ 21, 23, 25, 26 ],
+            "friday": [ 23, 25, 29, 1 ],
+            "saturday": [ 25, 27, 28, 31 ],
+            "sunday": [ 10, 11, 23, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
