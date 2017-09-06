@@ -304,6 +304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 16,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/surimpression-1934.jpg',
+          title: 'Surimpression',
+          artist: 'Raoul Ubac',
+          year: '1934',
+          rule: {
+            "monday": [ 3, 13, 23, 30 ],
+            "tuesday": [ 2, 12, 22, 30 ],
+            "wednesday": [ 1, 11, 21, 29 ],
+            "thursday": [ 30, 10, 20, 28 ],
+            "friday": [ 29, 9, 19, 27 ],
+            "saturday": [ 28, 8, 18, 26 ],
+            "sunday": [ 27, 7, 17, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 17,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/atlas-i-1995.jpg',
+          title: 'Atlas I',
+          artist: 'Rirkrit Tiravanija',
+          year: '1995',
+          rule: {
+            "monday": [ 27, 7, 17, 25 ],
+            "tuesday": [ 3, 13, 23, 30 ],
+            "wednesday": [ 2, 12, 22, 30 ],
+            "thursday": [ 1, 11, 21, 29 ],
+            "friday": [ 30, 10, 20, 28 ],
+            "saturday": [ 29, 9, 19, 27 ],
+            "sunday": [ 28, 8, 18, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 18,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/wolfgangtillmans-1992lutz-alex-sitting-in-the-trees-1.jpg',
+          title: 'Lutz Alex Sitting in the Trees 1',
+          artist: 'Wolfgang Tillmans',
+          year: '1992',
+          rule: {
+            "monday": [ 28, 8, 18, 26 ],
+            "tuesday": [ 27, 7, 17, 25 ],
+            "wednesday": [ 3, 13, 23, 30 ],
+            "thursday": [ 2, 12, 22, 30 ],
+            "friday": [ 1, 11, 21, 29 ],
+            "saturday": [ 30, 10, 20, 28 ],
+            "sunday": [ 29, 9, 19, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 19,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/photograph-of-photograph-1973.jpg',
+          title: 'Photograph of Photograph',
+          artist: 'Takamatsu Jiro',
+          year: '1973',
+          rule: {
+            "monday": [ 29, 9, 19, 27 ],
+            "tuesday": [ 28, 8, 18, 26 ],
+            "wednesday": [ 27, 7, 17, 25 ],
+            "thursday": [ 3, 13, 23, 30 ],
+            "friday": [ 2, 12, 22, 30 ],
+            "saturday": [ 1, 11, 21, 29 ],
+            "sunday": [ 30, 10, 20, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 20,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/self-portrait-with-dada-kopf-dada-head-1920.jpg',
+          title: 'Self-portrait with Dada-Kopf (Dada Head)',
+          artist: 'Sophie Taeuber-Arp',
+          year: '1920',
+          rule: {
+            "monday": [ 30, 10, 20, 28 ],
+            "tuesday": [ 29, 9, 19, 27 ],
+            "wednesday": [ 28, 8, 18, 26 ],
+            "thursday": [ 27, 7, 17, 25 ],
+            "friday": [ 3, 13, 23, 30 ],
+            "saturday": [ 2, 12, 22, 30 ],
+            "sunday": [ 1, 11, 21, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
