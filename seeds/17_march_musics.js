@@ -436,6 +436,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 25,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3449127882/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://longsongrecords.bandcamp.com/album/duet',
+          a_string: 'DUET by Satoko Fujii, Joe Fonda',
+          rule: {
+            "monday": [ 6, 12, 18, 26 ],
+            "tuesday": [ 5, 11, 17, 25 ],
+            "wednesday": [ 4, 10, 16, 24 ],
+            "thursday": [ 8, 14, 20, 28 ],
+            "saturday": [ 7, 13, 19, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 26,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3989473477/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://rovasaxophonequartet.bandcamp.com/album/an-alligator-in-your-wallet',
+          a_string: 'An Alligator in Your Wallet by Rova Sax Quartet + Satoko Fujii + Orkestrova',
+          rule: {
+            "monday": [ 7, 13, 19, 27 ],
+            "tuesday": [ 6, 12, 18, 26 ],
+            "wednesday": [ 5, 11, 17, 25 ],
+            "thursday": [ 4, 10, 16, 24 ],
+            "saturday": [ 8, 14, 20, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 27,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2665408563/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://amydenio.bandcamp.com/album/tone-dogs-ankety-low-day',
+          a_string: 'Tone Dogs: Ankety Low Day by Amy Denio / Spoot Music',
+          rule: {
+            "monday": [ 8, 14, 20, 28 ],
+            "tuesday": [ 7, 13, 19, 27 ],
+            "wednesday": [ 6, 12, 18, 26 ],
+            "thursday": [ 5, 11, 17, 25 ],
+            "saturday": [ 4, 10, 16, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
