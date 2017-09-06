@@ -32,6 +32,8 @@ const sunday_musics = require('./routes/sunday_musics.js');
 const sunday_musicsbyuser = require('./routes/sunday_musicsbyuser.js');
 const january_arts = require('./routes/january_arts.js');
 const january_artsbyuser = require('./routes/january_artsbyuser.js');
+const january_musics = require('./routes/january_musics.js');
+const january_musicsbyuser = require('./routes/january_musicsbyuser.js');
 // const user_blogs = require('./routes/user_blogs.js');
 // const blog_comments = require('./routes/blog_comments.js');
 // const books = require('./routes/books.js');
@@ -164,7 +166,9 @@ app.use('/moment', express.static(path.join(__dirname, '../node_modules/moment/m
  app.use('/sunday_musics', sunday_musics);
  app.use('/sunday_musicsbyuser', sunday_musicsbyuser);
  app.use('/january_arts', january_arts);
- app.use('/january_artsbyuser', january_artsbyuser)
+ app.use('/january_artsbyuser', january_artsbyuser);
+ app.use('/january_musics', january_musics);
+ app.use('/january_musicsbyuser', january_musicsbyuser);
 // app.use('/user_blogs', user_blogs);
 // app.use('/blog_comments', blog_comments);
 // app.use('/books', books);
