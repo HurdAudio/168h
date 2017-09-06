@@ -1304,6 +1304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 66,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/modinha-2007.jpg',
+          title: 'Modinha',
+          artist: 'Beatriz Milhazes',
+          year: '2007',
+          rule: {
+            "monday": [ 10, 11, 23, 14 ],
+            "tuesday": [ 13, 15, 17, 27 ],
+            "wednesday": [ 15, 16, 18, 21 ],
+            "thursday": [ 18, 19, 10, 14 ],
+            "friday": [ 21, 23, 25, 26 ],
+            "saturday": [ 23, 25, 29, 1 ],
+            "sunday": [ 25, 27, 28, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 67,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/after-monet-1878.jpg',
+          title: 'After Monet',
+          artist: 'Sherrie Levine',
+          year: '1878',
+          rule: {
+            "monday": [ 25, 27, 28, 31 ],
+            "tuesday": [ 10, 11, 23, 14 ],
+            "wednesday": [ 13, 15, 17, 27 ],
+            "thursday": [ 15, 16, 18, 21 ],
+            "friday": [ 18, 19, 10, 14 ],
+            "saturday": [ 21, 23, 25, 26 ],
+            "sunday": [ 23, 25, 29, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 68,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/the-black-city-i-new-york-1949.jpg',
+          title: 'The Black City I (New York)',
+          artist: 'William Congdon',
+          year: '1949',
+          rule: {
+            "monday": [ 23, 25, 29, 1 ],
+            "tuesday": [ 25, 27, 28, 31 ],
+            "wednesday": [ 10, 11, 23, 14 ],
+            "thursday": [ 13, 15, 17, 27 ],
+            "friday": [ 15, 16, 18, 21 ],
+            "saturday": [ 18, 19, 10, 14 ],
+            "sunday": [ 21, 23, 25, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 69,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/n-y-1-road-4-1956.jpg',
+          title: 'N.Y. 1 (Road #4)',
+          artist: 'Hedda Sterne',
+          year: '1956',
+          rule: {
+            "monday": [ 21, 23, 25, 26 ],
+            "tuesday": [ 23, 25, 29, 1 ],
+            "wednesday": [ 25, 27, 28, 31 ],
+            "thursday": [ 10, 11, 23, 14],
+            "friday": [ 13, 15, 17, 27 ],
+            "saturday": [ 15, 16, 18, 21 ],
+            "sunday": [ 18, 19, 10, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 70,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/water-of-the-flowery-mill.jpg',
+          title: 'Water of the Flowery Mill',
+          artist: 'Arshile Gorky',
+          year: 'XX cent.',
+          rule: {
+            "monday": [ 19, 20, 11, 15 ],
+            "tuesday": [ 22, 24, 26, 27 ],
+            "wednesday": [ 24, 26, 30, 2 ],
+            "thursday": [ 26, 28, 29, 1],
+            "friday": [ 11, 12, 24, 15 ],
+            "saturday": [ 14, 16, 18, 28 ],
+            "sunday": [ 16, 17, 19, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
