@@ -220,6 +220,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 13,
+          user_id: 1,
+          theme: 'avant garde/new music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=588183065/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://finderskeepersrecords.bandcamp.com/album/mal-fices',
+          a_string: 'Maléfices by Pierre Henry',
+          rule: {
+            "monday": [ 2, 8, 15, 28 ],
+            "tuesday": [ 6, 12, 19, 1 ],
+            "wednesday": [ 5, 11, 18, 31 ],
+            "thursday": [ 4, 10, 17, 30 ],
+            "saturday": [ 3, 9, 16, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 14,
+          user_id: 1,
+          theme: 'avant garde/new music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1435388351/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://forcednostalgia.bandcamp.com/album/submerged-vessels-and-other-stories',
+          a_string: 'Submerged Vessels And Other Stories by Vazz',
+          rule: {
+            "monday": [ 4, 10, 17, 30 ],
+            "tuesday": [ 3, 9, 16, 29 ],
+            "wednesday": [ 7, 13, 20, 2 ],
+            "thursday": [ 6, 12, 19, 1 ],
+            "saturday": [ 5, 11, 18, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 15,
+          user_id: 1,
+          theme: 'avant garde/new music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=13695074/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://forcednostalgia.bandcamp.com/album/sombrero-fallout-2',
+          a_string: 'Sombrero Fallout by Pump',
+          rule: {
+            "monday": [ 5, 11, 18, 31 ],
+            "tuesday": [ 4, 10, 17, 30 ],
+            "wednesday": [ 3, 9, 16, 29 ],
+            "thursday": [ 7, 13, 20, 2 ],
+            "saturday": [ 6, 12, 19, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
