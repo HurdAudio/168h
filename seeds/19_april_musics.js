@@ -328,6 +328,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 19,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=205068890/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cuneiformrecords.bandcamp.com/album/bremen-to-bridgwater',
+          a_string: 'Bremen to Bridgwater by Chris McGregor&#39;s Brotherhood Of Breath',
+          rule: {
+            "monday": [ 4, 12, 24, 29 ],
+            "tuesday": [ 3, 11, 23, 28 ],
+            "wednesday": [ 7, 15, 27, 2 ],
+            "thursday": [ 6, 14, 26, 1 ],
+            "saturday": [ 5, 13, 25, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 20,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=905997959/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cuneiformrecords.bandcamp.com/album/beating-the-teens-songs-of-steve-lacy',
+          a_string: 'Beating The Teens: Songs Of Steve Lacy by Ideal Bread',
+          rule: {
+            "monday": [ 5, 13, 25, 30 ],
+            "tuesday": [ 4, 12, 24, 29 ],
+            "wednesday": [ 3, 11, 23, 28 ],
+            "thursday": [ 7, 15, 27, 2 ],
+            "saturday": [ 6, 14, 26, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 21,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3156874954/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cuneiformrecords.bandcamp.com/album/a-night-walking-through-mirrors',
+          a_string: 'A Night Walking Through Mirrors by Chicago / London Underground',
+          rule: {
+            "monday": [ 7, 15, 27, 2 ],
+            "tuesday": [ 6, 14, 26, 1 ],
+            "wednesday": [ 5, 13, 25, 30 ],
+            "thursday": [ 4, 12, 24, 29 ],
+            "saturday": [ 8, 16, 28, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
