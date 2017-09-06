@@ -904,6 +904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 46,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/hell.jpg',
+          title: 'Hell',
+          artist: 'Herrad of Landsberg',
+          year: '?',
+          rule: {
+            "monday": [ 2, 12, 20, 30 ],
+            "tuesday": [ 1, 11, 10, 29 ],
+            "wednesday": [ 7, 17, 25, 4 ],
+            "thursday": [ 6, 16, 26, 3 ],
+            "friday": [ 5, 15, 23, 2 ],
+            "saturday": [ 4, 14, 22, 1 ],
+            "sunday": [ 3, 13, 21, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 47,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/pained-madonna.jpg',
+          title: 'Pained Madonna',
+          artist: 'Plautilla Nelli',
+          year: '?',
+          rule: {
+            "monday": [ 3, 13, 21, 31 ],
+            "tuesday": [ 2, 12, 20, 30 ],
+            "wednesday": [ 1, 11, 10, 29 ],
+            "thursday": [ 7, 17, 25, 4 ],
+            "friday": [ 6, 16, 26, 3 ],
+            "saturday": [ 5, 15, 23, 2 ],
+            "sunday": [ 4, 14, 22, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 48,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/madonna-adoring-the-child-1605.jpg',
+          title: 'Madonna Adoring the Child',
+          artist: 'Barbara Longhi',
+          year: '1605',
+          rule: {
+            "monday": [ 4, 14, 22, 1 ],
+            "tuesday": [ 3, 13, 21, 31 ],
+            "wednesday": [ 2, 12, 20, 30 ],
+            "thursday": [ 1, 11, 10, 29 ],
+            "friday": [ 7, 17, 25, 4 ],
+            "saturday": [ 6, 16, 26, 3 ],
+            "sunday": [ 5, 15, 23, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 49,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/sleeping-venus-1630.jpg',
+          title: 'Sleeping Venus',
+          artist: 'Artemisia Gentileschi',
+          year: '1630',
+          rule: {
+            "monday": [ 6, 16, 24, 3 ],
+            "tuesday": [ 5, 15, 23, 2 ],
+            "wednesday": [ 4, 14, 22, 1 ],
+            "thursday": [ 3, 13, 21, 31 ],
+            "friday": [ 2, 12, 11, 30 ],
+            "saturday": [ 8, 17, 26, 5 ],
+            "sunday": [ 7, 17, 27, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 50,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/flowers-in-a-vase-1654.jpg',
+          title: 'Flowers in a vase',
+          artist: 'Judith Leyster',
+          year: '1654',
+          rule: {
+            "monday": [ 7, 17, 27, 4 ],
+            "tuesday": [ 6, 16, 24, 3 ],
+            "wednesday": [ 5, 15, 23, 2 ],
+            "thursday": [ 4, 14, 22, 1 ],
+            "friday": [ 3, 13, 21, 31 ],
+            "saturday": [ 2, 12, 11, 30 ],
+            "sunday": [ 8, 17, 26, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
