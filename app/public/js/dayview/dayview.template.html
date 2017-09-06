@@ -451,10 +451,25 @@
     <h3>Word of the Day:</h3>
     <h2>exculpatory</h2>
     <p>1. tending to clear from a charge of fault or guilt.</p>
-    <h3>Observances:</h3>
+    <div id="observancesPane">
+      <h3>Observances:</h3>
 
-    <img src="./img/DavidKing.jpg" width="100%">
-    <p>David King, born 1965</p>
+      <main ng-repeat="observance in $ctrl.observances | orderBy : $ctrl.sortBy">
+        <div class="observe" style="background:{{observance.color}}; background-color: -webkit-linear-gradient(135deg, {{observance.color}}, #ffffff); background: -o-linear-gradient(135deg, {{observance.color}}, #ffffff);   background: -moz-linear-gradient(135deg, {{observance.color}}, #ffffff); background: linear-gradient(135deg, {{observance.color}}, #ffffff);">
+          <br>
+          <br>
+          <img src="{{observance.picture}}">
+          <p>{{observance.name}}</p>
+          <br>
+          <br>
+        </div>
+
+
+      </main>
+
+      <!-- <img src="./img/DavidKing.jpg" width="100%">
+      <p>David King, born 1965</p> -->
+    </div>
 
     <iframe id="curatedMusic" style="border: 0; width: 100%; height: 550px;" src="https://bandcamp.com/EmbeddedPlayer/album=2629874419/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a id="curatedMusicData" href="http://kylebobbydunn.bandcamp.com/album/infinite-sadness">Infinite Sadness by Kyle Bobby Dunn</a></iframe>
   </div>

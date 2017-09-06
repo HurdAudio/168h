@@ -1406,6 +1406,28 @@
           vm.holidays = holidayArray;
           //art override_content
           //music override_content
+          detectObservances();
+        });
+      }
+
+      function detectObservances() {
+        vm.observances = [];
+        let observancesPane = document.getElementById('observancesPane');
+        $http.get(`/observancesbyuser/${currentUserId}`)
+        .then(userObservancesData=>{
+          let userObservances = userObservancesData.data;
+          let observanceDate;
+          for (let i = 0; i < userObservances.length; i++) {
+            observanceDate = new Date(userObservances[i].day_of);
+            if ((viewDate.getMonth() === observanceDate.getMonth()) && (viewDate.getDate() === observanceDate.getDate())) {
+              vm.observances.push(userObservances[i]);
+            }
+          }
+          if (vm.observances.length < 1) {
+            observancesPane.setAttribute("style", "display: none;");
+          }
+          //art override content
+          //music override content
         });
       }
 
