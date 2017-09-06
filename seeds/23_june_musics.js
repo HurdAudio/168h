@@ -112,6 +112,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 7,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1246693833/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://phillniblock.bandcamp.com/album/touch-five',
+          a_string: 'Touch Five by Phill Niblock',
+          rule: {
+            "monday": [ 2, 6, 12, 23 ],
+            "tuesday": [ 1, 5, 11, 22 ],
+            "wednesday": [ 30, 4, 9, 21 ],
+            "thursday": [ 29, 3, 9, 20 ],
+            "saturday": [ 28, 2, 8, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 8,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3218298308/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://helenscarsdale.bandcamp.com/album/spots-in-the-sun',
+          a_string: 'spots in the sun by matt shoemaker',
+          rule: {
+            "monday": [ 28, 2, 8, 19 ],
+            "tuesday": [ 2, 6, 12, 23 ],
+            "wednesday": [ 1, 5, 11, 22 ],
+            "thursday": [ 30, 4, 9, 21 ],
+            "saturday": [ 29, 3, 9, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 9,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=475957477/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://helenscarsdale.bandcamp.com/album/surrender-render-end',
+          a_string: 'surrender, render, end by francisco meirino',
+          rule: {
+            "monday": [ 29, 3, 9, 20 ],
+            "tuesday": [ 28, 2, 8, 19 ],
+            "wednesday": [ 2, 6, 12, 23 ],
+            "thursday": [ 1, 5, 11, 22 ],
+            "saturday": [ 30, 4, 9, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
