@@ -424,6 +424,36 @@ exports.seed = function(knex, Promise) {
           a_string: 'La Mort Noir Dans Esch / Alzette by SUNN O)))',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 43,
+          user_id: 1,
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=404307415/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://leavingrecords.bandcamp.com/album/livephreaxxx',
+          a_string: 'LIVEPHREAXXX!!!! by Sun Araw &amp; Matthewdavid',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 44,
+          user_id: 1,
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1000095990/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://rvng.bandcamp.com/album/frkwys-vol-9-icon-give-thank',
+          a_string: 'FRKWYS Vol. 9: ICON GIVE THANK by Sun Araw, M. Geddes Gengras &amp; The Congos',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 45,
+          user_id: 1,
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2782890406/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://hanginggardens.bandcamp.com/album/sun-araw-adam-willetts-hsp-13th-oct-10',
+          a_string: 'Sun Araw / Adam Willetts (HSP 13th Oct &#39;10) by Hanging Gardens Live Recording',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
