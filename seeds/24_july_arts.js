@@ -124,6 +124,86 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 7,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/at-la-bastille-portrait-of-jeanne-wenz-1889.jpg',
+          title: 'At La Bastille (Portrait of Jeanne Wenz)',
+          artist: 'Henri de Toulouse-Lautrec',
+          year: '1889',
+          rule: {
+            "monday": [ 2, 13, 24, 4 ],
+            "tuesday": [ 1, 12, 23, 3 ],
+            "wednesday": [ 31, 11, 22, 2 ],
+            "thursday": [ 30, 10, 21, 1 ],
+            "friday": [ 29, 9, 20, 31 ],
+            "saturday": [ 4, 15, 26, 6 ],
+            "sunday": [ 3, 14, 25, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 8,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/place-de-la-bastille-3.jpg',
+          title: 'Place de la Bastille',
+          artist: 'Edouard Cortes',
+          year: 'XIX-XX cent.',
+          rule: {
+            "monday": [ 3, 14, 25, 5 ],
+            "tuesday": [ 2, 13, 24, 4 ],
+            "wednesday": [ 1, 12, 23, 3 ],
+            "thursday": [ 31, 11, 22, 2 ],
+            "friday": [ 30, 10, 21, 1 ],
+            "saturday": [ 29, 9, 20, 31 ],
+            "sunday": [ 4, 15, 26, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 9,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/bastille-flux-2007.jpg',
+          title: 'Bastille Flux',
+          artist: 'Gerard Fromanger',
+          year: '2007',
+          rule: {
+            "monday": [ 4, 15, 26, 6 ],
+            "tuesday": [ 3, 14, 25, 5 ],
+            "wednesday": [ 2, 13, 24, 4 ],
+            "thursday": [ 1, 12, 23, 3 ],
+            "friday": [ 31, 11, 22, 2 ],
+            "saturday": [ 30, 10, 21, 1 ],
+            "sunday": [ 29, 9, 20, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 10,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/bastille-day-boulevard-rochechouart-paris.jpg',
+          title: 'Bastille Day, Boulevard Rochechouart, Paris',
+          artist: 'Childe Hassam',
+          year: '1889',
+          rule: {
+            "monday": [ 29, 9, 20, 31 ],
+            "tuesday": [ 4, 15, 26, 6 ],
+            "wednesday": [ 3, 14, 25, 5 ],
+            "thursday": [ 2, 13, 24, 4 ],
+            "friday": [ 1, 12, 23, 3 ],
+            "saturday": [ 31, 11, 22, 2 ],
+            "sunday": [ 30, 10, 21, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
