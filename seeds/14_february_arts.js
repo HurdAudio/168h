@@ -1104,6 +1104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 56,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/preparing-to-sound-the-alarm-thomas-blackshear.jpg',
+          title: 'Preparing to Sound the Alarm',
+          artist: 'Thomas Blackshear',
+          year: 'xx Cent.',
+          rule: {
+            "monday": [ 16, 21, 27, 8 ],
+            "tuesday": [ 15, 23, 2, 10 ],
+            "wednesday": [ 17, 27, 4, 12 ],
+            "thursday": [ 19, 27, 6, 16 ],
+            "friday": [ 21, 29, 25, 15 ],
+            "saturday": [ 9, 17, 25, 4 ],
+            "sunday": [ 11, 19, 27, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 57,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/20161004_134100292_B Blayton Spirits In Space 1971.jpg',
+          title: 'Spirits in Space',
+          artist: 'Betty Blayton-Taylor',
+          year: '1971',
+          rule: {
+            "monday": [ 11, 19, 27, 6 ],
+            "tuesday": [ 16, 21, 27, 8 ],
+            "wednesday": [ 15, 23, 2, 10 ],
+            "thursday": [ 17, 27, 4, 12 ],
+            "friday": [ 19, 27, 6, 16 ],
+            "saturday": [ 21, 29, 25, 15 ],
+            "sunday": [ 9, 17, 25, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 58,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/p1010558.jpg',
+          title: 'The Conversationalist',
+          artist: 'Chakaia Booker',
+          year: '1997',
+          rule: {
+            "monday": [ 9, 17, 25, 4 ],
+            "tuesday": [ 11, 19, 27, 6 ],
+            "wednesday": [ 16, 21, 27, 8 ],
+            "thursday": [ 15, 23, 2, 10 ],
+            "friday": [ 17, 27, 4, 12 ],
+            "saturday": [ 19, 27, 6, 16 ],
+            "sunday": [ 21, 29, 25, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 59,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Mural-_Those_We_Remember_by_Edythe_Boone_located_in_Balmy_Alley,_San_Francisco,_California_LCCN2013630325.tif.jpg',
+          title: 'Those We Remember',
+          artist: 'Edythe Boone',
+          year: '2011',
+          rule: {
+            "monday": [ 21, 29, 25, 15 ],
+            "tuesday": [ 9, 17, 25, 4 ],
+            "wednesday": [ 11, 19, 27, 6 ],
+            "thursday": [ 16, 21, 27, 8 ],
+            "friday": [ 15, 23, 2, 10 ],
+            "saturday": [ 17, 27, 4, 12 ],
+            "sunday": [ 19, 27, 6, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 60,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/5fb19a8e2e14c1e5fb1b6658e7f5fbdc.jpg',
+          title: 'Compu-toon',
+          artist: 'Charles Boyce',
+          year: '2004',
+          rule: {
+            "monday": [ 19, 27, 6, 16 ],
+            "tuesday": [ 21, 29, 25, 15 ],
+            "wednesday": [ 9, 17, 25, 4 ],
+            "thursday": [ 11, 19, 27, 6 ],
+            "friday": [ 16, 21, 27, 8 ],
+            "saturday": [ 15, 23, 2, 10 ],
+            "sunday": [ 17, 27, 4, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
