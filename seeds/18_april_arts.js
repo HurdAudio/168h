@@ -704,6 +704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 36,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/chase-field-2015-line-drawing-c-h-apperson.jpg',
+          title: 'Chase Field 2015 Line Drawing',
+          artist: 'C H Apperson',
+          year: '2015',
+          rule: {
+            "monday": [ 20, 10, 17, 23 ],
+            "tuesday": [ 5, 10, 16, 22 ],
+            "wednesday": [ 4, 8, 24, 21 ],
+            "thursday": [ 3, 8, 14, 20 ],
+            "friday": [ 2, 7, 13, 19 ],
+            "saturday": [ 1, 6, 12, 18 ],
+            "sunday": [ 6, 12, 17, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 37,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/13690449_G.jpg',
+          title: 'Chase Field',
+          artist: 'unknown',
+          year: '2017',
+          rule: {
+            "monday": [ 6, 12, 17, 24 ],
+            "tuesday": [ 20, 10, 17, 23 ],
+            "wednesday": [ 5, 10, 16, 22 ],
+            "thursday": [ 4, 8, 24, 21 ],
+            "friday": [ 3, 8, 14, 20 ],
+            "saturday": [ 2, 7, 13, 19 ],
+            "sunday": [ 1, 6, 12, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 38,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/310e39a77c37e89a4adffec980080079--baseball-art-arizona-diamondbacks.jpg',
+          title: 'Paul Goldschmidt',
+          artist: 'Behance',
+          year: 'xxi Cent.',
+          rule: {
+            "monday": [ 1, 6, 12, 18 ],
+            "tuesday": [ 6, 12, 17, 24 ],
+            "wednesday": [ 20, 10, 17, 23 ],
+            "thursday": [ 5, 10, 16, 22 ],
+            "friday": [ 4, 8, 24, 21 ],
+            "saturday": [ 3, 8, 14, 20 ],
+            "sunday": [ 2, 7, 13, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 39,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/671681606.jpg',
+          title: 'Paul Goldschmidt #44 of the Arizona Diamondbacks bats against the Cleveland Indians',
+          artist: 'Getty Images',
+          year: '2016',
+          rule: {
+            "monday": [ 2, 7, 13, 19 ],
+            "tuesday": [ 1, 6, 12, 18 ],
+            "wednesday": [ 6, 12, 17, 24 ],
+            "thursday": [ 20, 10, 17, 23 ],
+            "friday": [ 5, 10, 16, 22 ],
+            "saturday": [ 4, 8, 24, 21 ],
+            "sunday": [ 3, 8, 14, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 40,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/Arizona-Diamondbacks_01.jpg',
+          title: 'Arizona Diamondbacks',
+          artist: 'Dowdle',
+          year: 'xxi Cent.',
+          rule: {
+            "monday": [ 3, 8, 14, 20 ],
+            "tuesday": [ 2, 7, 13, 19 ],
+            "wednesday": [ 1, 6, 12, 18 ],
+            "thursday": [ 6, 12, 17, 24 ],
+            "friday": [ 20, 10, 17, 23 ],
+            "saturday": [ 5, 10, 16, 22 ],
+            "sunday": [ 4, 8, 24, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
