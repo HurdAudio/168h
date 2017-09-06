@@ -504,6 +504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 26,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/portrait-of-a-railway-worker-misha-meheteli(1).jpg',
+          title: 'Portrait of a railway worker (Misha Meheteli)',
+          artist: 'Niko Pirosmani',
+          year: 'XIX-XX cent.',
+          rule: {
+            "monday": [ 27, 6, 16, 26 ],
+            "tuesday": [ 25, 4, 14, 24 ],
+            "wednesday": [ 23, 2, 12, 22 ],
+            "thursday": [ 4, 14, 24, 3 ],
+            "friday": [ 2, 12, 22, 1 ],
+            "saturday": [ 31, 10, 20, 30 ],
+            "sunday": [ 29, 8, 18, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 27,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/worker-in-a-cap.jpg',
+          title: 'Worker in a Cap',
+          artist: 'Pavel Filonov',
+          year: 'c.1935',
+          rule: {
+            "monday": [ 29, 8, 18, 28 ],
+            "tuesday": [ 27, 6, 16, 26 ],
+            "wednesday": [ 25, 4, 14, 24 ],
+            "thursday": [ 23, 2, 12, 22 ],
+            "friday": [ 4, 14, 24, 3 ],
+            "saturday": [ 2, 12, 22, 1 ],
+            "sunday": [ 31, 10, 20, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 28,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/workers-1920.jpg',
+          title: 'Workers',
+          artist: 'Pierre Bonnard',
+          year: 'c.1916 - 1920',
+          rule: {
+            "monday": [ 1, 11, 21, 31 ],
+            "tuesday": [ 30, 9, 19, 29 ],
+            "wednesday": [ 28, 7, 17, 27 ],
+            "thursday": [ 26, 5, 15, 25 ],
+            "friday": [ 24, 3, 13, 23 ],
+            "saturday": [ 5, 15, 25, 4 ],
+            "sunday": [ 3, 13, 23, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 29,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/young-worker-1869.jpg',
+          title: 'Young Worker',
+          artist: 'William-Adolphe Bouguereau',
+          year: '1869',
+          rule: {
+            "monday": [ 3, 13, 23, 2 ],
+            "tuesday": [ 1, 11, 21, 31 ],
+            "wednesday": [ 30, 9, 19, 29 ],
+            "thursday": [ 28, 7, 17, 27 ],
+            "friday": [ 26, 5, 15, 25 ],
+            "saturday": [ 24, 3, 13, 23 ],
+            "sunday": [ 5, 15, 25, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 30,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/a-worker-s-day-1904.jpg',
+          title: 'A Worker\'s Day',
+          artist: 'Giacomo Balla',
+          year: '1904',
+          rule: {
+            "monday": [ 5, 15, 25, 4 ],
+            "tuesday": [ 3, 13, 23, 2 ],
+            "wednesday": [ 1, 11, 21, 31 ],
+            "thursday": [ 30, 9, 19, 29 ],
+            "friday": [ 28, 7, 17, 27 ],
+            "saturday": [ 26, 5, 15, 25 ],
+            "sunday": [ 24, 3, 13, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
