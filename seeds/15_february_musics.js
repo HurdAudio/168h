@@ -544,6 +544,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 31,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=624313275/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://eremiterecords.bandcamp.com/album/the-all-star-game',
+          a_string: 'The All Star Game by Marshall Allen, Hamid Drake, Kidd Jordan, William Parker, Alan Silva',
+          rule: {
+            "monday": [ 6, 10, 12, 16],
+            "tuesday": [ 8, 12, 14, 18],
+            "wednesday": [ 10, 14, 16, 20],
+            "thursday": [ 22, 16, 18, 24],
+            "saturday": [ 15, 19, 21, 24]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 32,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4092995023/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://eremiterecords.bandcamp.com/album/bobs-pink-cadillac',
+          a_string: 'Bob&#39;s Pink Cadillac by William Parker',
+          rule: {
+            "monday": [ 5, 19, 21, 24],
+            "tuesday": [ 6, 10, 12, 16],
+            "wednesday": [ 8, 12, 14, 18],
+            "thursday": [ 10, 14, 16, 20],
+            "saturday": [ 22, 16, 18, 24]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 33,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=740688057/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://eremiterecords.bandcamp.com/album/new-world-pygmies-ii',
+          a_string: 'New World Pygmies II by Jemeel Moondoc &amp; William Parker with Hamid Drake',
+          rule: {
+            "monday": [ 22, 16, 18, 24],
+            "tuesday": [ 5, 19, 21, 24],
+            "wednesday": [ 6, 10, 12, 16],
+            "thursday": [ 8, 12, 14, 18],
+            "saturday": [ 10, 14, 16, 20]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
