@@ -652,6 +652,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 37,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2687508128/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://michaelgordonmusic.bandcamp.com/album/timber',
+          a_string: 'Timber by Michael Gordon',
+          rule: {
+            "monday": [ 12, 19, 21, 20 ],
+            "tuesday": [ 20, 14, 16, 21 ],
+            "wednesday": [ 16, 10, 12, 16 ],
+            "thursday": [ 12, 19, 21, 20 ],
+            "saturday": [ 10, 14, 16, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 38,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2115639627/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://dalnientedeerhoof.bandcamp.com/album/balter-saunier',
+          a_string: 'Balter / Saunier by Dal Niente &amp; Deerhoof',
+          rule: {
+            "monday": [ 10, 14, 16, 20 ],
+            "tuesday": [ 12, 19, 21, 20 ],
+            "wednesday": [ 20, 14, 16, 21 ],
+            "thursday": [ 16, 10, 12, 16 ],
+            "saturday": [ 12, 19, 21, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 39,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=314662615/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://newfocusrecordings.bandcamp.com/album/nicholas-dieugenio-and-mimi-solomon-into-the-silence',
+          a_string: 'Nicholas DiEugenio and Mimi Solomon: Into the Silence by Nicholas DiEugenio and Mimi Solomon',
+          rule: {
+            "monday": [ 12, 19, 21, 20 ],
+            "tuesday": [ 10, 14, 16, 20 ],
+            "wednesday": [ 12, 19, 21, 20 ],
+            "thursday": [ 20, 14, 16, 21 ],
+            "saturday": [ 16, 10, 12, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
