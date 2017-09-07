@@ -2906,3 +2906,13 @@ footer img {
   font-size: 30px;
   margin-left: 1.4em;
 }
+
+#artPane {
+  display: none;
+}
+
+#artPane p {
+  font-family: 'Alike Angular', serif;
+  font-size: 18px;
+  margin-left: 1.4em;
+}

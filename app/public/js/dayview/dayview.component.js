@@ -75,6 +75,78 @@
       vm.taskInfo = taskInfo;
       vm.addTaskToDay = addTaskToDay;
       vm.verbalizeTimeblock = verbalizeTimeblock;
+      vm.advanceArt = advanceArt;
+
+      function advanceArt(index) {
+        let nextArt = Math.floor(Math.random()*vm.arts.length);
+        let currentArt = document.getElementById('art' + index);
+        if (vm.arts.length > 1) {
+          if (nextArt === index) {
+            while(nextArt === index) {
+              nextArt = Math.floor(Math.random()*vm.arts.length);
+            }
+          }
+        }
+        let nextElement;
+        if (nextArt === vm.arts.length) {
+          nextArt = 0;
+        }
+        nextElement = document.getElementById('art' + nextArt);
+        transitionPane(currentArt, nextElement);
+        // currentArt.setAttribute("style", "display: none;");
+        // nextElement.setAttribute("style", "display: initial;");
+
+      }
+
+      function transitionPane(oldPane, newPane) {
+        let fadeTime = 2;
+
+        switch (Math.floor(Math.random()*4)) {
+          case(0):
+            oldPane.setAttribute("style", "-webkit-transform: rotateY(270deg); transform: rotateY(270deg); transition: transform " + fadeTime + "s linear;");
+            setTimeout(()=>{
+              oldPane.setAttribute("style", "display: none; -webkit-transform: rotateY(0deg); transform: rotateY(0deg);");
+              newPane.setAttribute("style", "display: initial; visibility: hidden; -webkit-transform: rotateY(90deg); transform: rotateY(90deg);");
+              setTimeout(()=>{
+                newPane.setAttribute("style", "visibility: visible; -webkit-transform: rotateY(0deg); transform: rotateY(0deg); transition: transform " + fadeTime/2 + "s linear;");
+              }, (fadeTime * 25));
+            }, (fadeTime * 1000));
+            break;
+          case(1):
+            oldPane.setAttribute("style", "-webkit-transform: rotateZ(360deg); transform: rotateZ(360deg); opacity: 0; transition: transform " + fadeTime + "s, opacity "+ fadeTime +"s linear;");
+            setTimeout(()=>{
+              oldPane.setAttribute("style", "display: none; -webkit-transform: rotateY(0deg); transform: rotateY(0deg);");
+              newPane.setAttribute("style", "display: initial; visibility: hidden; -webkit-transform: rotateZ(180deg); transform: rotateZ(180deg); opacity: 0;");
+              setTimeout(()=>{
+                newPane.setAttribute("style", "visibility: visible; -webkit-transform: rotateZ(0deg); transform: rotateZ(0deg); opacity: 1; transition: transform " + fadeTime/2 + "s, opacity " + fadeTime + "s linear;");
+              }, (fadeTime * 25));
+            }, (fadeTime * 1000));
+            break;
+          case(2):
+            oldPane.setAttribute("style", "-webkit-transform: rotateX(270deg); transform: rotateX(270deg); transition: transform " + fadeTime + "s linear;");
+            setTimeout(()=>{
+              oldPane.setAttribute("style", "display: none; -webkit-transform: rotateX(0deg); transform: rotateX(0deg);");
+              newPane.setAttribute("style", "display: initial; visibility: hidden; -webkit-transform: rotateX(900deg); transform: rotateX(90deg);");
+              setTimeout(()=>{
+                newPane.setAttribute("style", "visibility: visible; -webkit-transform: rotateX(0deg); transform: rotateX(0deg); transition: transform " + fadeTime/2 + "s linear;");
+              }, (fadeTime * 25));
+            }, (fadeTime * 1000));
+            break;
+          default:
+          oldPane.setAttribute("style", "visibility: hidden; opacity: 0; transition: visibility 0s " + fadeTime + "s, opacity " + fadeTime + "s linear;");
+          //newPane.setAttribute("style", "visibility: hidden; opacity: 0; display: initial;");
+          setTimeout(()=>{
+            oldPane.setAttribute("style", "display:none;");
+            newPane.setAttribute("style", "display: initial; visibility: hidden; opacity: 0;");
+            setTimeout(()=>{
+              newPane.setAttribute("style", "display: initial; visibility: visible; opacity: 1; transition: opacity " + fadeTime/2 + "s linear;");
+            }, (fadeTime * 25));
+
+          }, (fadeTime * 1000));
+        }
+
+
+      }
 
       function verbalizeTimeblock(blockID) {
         let idValue = parseInt(blockID);
@@ -1405,12 +1477,30 @@
           }
           vm.holidays = holidayArray;
           //art override_content
+          vm.arts = [];
+          let indexArt = 0;
+          if (vm.holidays.length > 0) {
+            for (let i = 0; i < vm.holidays.length; i++) {
+              if (vm.holidays[i].art_override) {
+                for (let j = 0; j < vm.holidays[i].override_content.img_paths.length; j++) {
+                  vm.arts[indexArt] = {};
+                  vm.arts[indexArt].img_path = vm.holidays[i].override_content.img_paths[j];
+                  vm.arts[indexArt].artist = vm.holidays[i].override_content.artists[j];
+                  vm.arts[indexArt].title = vm.holidays[i].override_content.titles[j];
+                  vm.arts[indexArt].year = vm.holidays[i].override_content.years[j];
+                  vm.arts[indexArt].index = indexArt;
+                  ++indexArt;
+                }
+              }
+            }
+          }
           //music override_content
           detectObservances();
         });
       }
 
       function detectObservances() {
+        let indexArt = vm.arts.length;
         vm.observances = [];
         let observancesPane = document.getElementById('observancesPane');
         $http.get(`/observancesbyuser/${currentUserId}`)
@@ -1425,10 +1515,109 @@
           }
           if (vm.observances.length < 1) {
             observancesPane.setAttribute("style", "display: none;");
+          } else {
+            for (let j = 0; j < vm.observances.length; j++) {
+              if (vm.observances[j].art_override) {
+                for (let k = 0; k < vm.observances[j].override_content.img_paths.length; k++) {
+                  vm.arts[indexArt] = {};
+                  vm.arts[indexArt].img_path = vm.observances[j].override_content.img_paths[k];
+                  vm.arts[indexArt].artist = vm.observances[j].override_content.artists[k];
+                  vm.arts[indexArt].title = vm.observances[j].override_content.titles[k];
+                  vm.arts[indexArt].year = vm.observances[j].override_content.years[k];
+                  vm.arts[indexArt].index = indexArt;
+                  ++indexArt;
+                }
+              }
+            }
           }
           //art override content
+          monthArt();
           //music override content
         });
+      }
+
+
+
+
+      function monthArt() {
+        let theDate = new Date(viewDate);
+        let monthTable = '';
+        let theDay = '';
+        let indexArt = vm.arts.length;
+        let artPane = document.getElementById('artPane');
+        let element;
+
+        switch(theDate.getMonth()) {
+          case(0):
+            monthTable = 'january_artsbyuser';
+            break;
+          default:
+            console.log('month art not yet supported');
+        }
+        switch(theDate.getDay()) {
+          case(0):
+            theDay = 'sunday';
+            break;
+          case(1):
+            theDay = 'monday';
+            break;
+          case(2):
+            theDay = 'tuesday';
+            break;
+          case(3):
+            theDay = 'wednesday';
+            break;
+          case(4):
+            theDay = 'thursday';
+            break;
+          case(5):
+            theDay = 'friday';
+            break;
+          case(6):
+            theDay = 'saturday';
+            break;
+          default:
+            console.log('bad day value');
+        }
+        if (monthTable !== '') {
+          $http.get(`/${monthTable}/${currentUserId}`)
+          .then(monthArtData=>{
+            let monthArt = monthArtData.data;
+            for (let i = 0; i < monthArt.length; i++) {
+              if (monthArt[i].rule[theDay].indexOf(theDate.getDate()) !== -1) {
+                vm.arts[indexArt] = {};
+                vm.arts[indexArt].img_path = monthArt[i].img_path;
+                vm.arts[indexArt].artist = monthArt[i].artist;
+                vm.arts[indexArt].title = monthArt[i].title;
+                vm.arts[indexArt].year = monthArt[i].year;
+                vm.arts[indexArt].index = indexArt;
+                ++indexArt;
+              }
+            }
+            if (vm.arts.length > 1) {
+              let indice = 0;
+
+              //console.log(vm.arts.length);
+              setTimeout(()=>{
+                for (let a = 0; a <vm.arts.length; a++) {
+                  element = document.getElementById('art' + a);
+                  if (element !== null) {
+                    element.setAttribute("style", "display: none;");
+                  }
+                }
+                indice = Math.floor(Math.random() * (vm.arts.length));
+                element = document.getElementById('art' + indice);
+                element.setAttribute("style", "display: initial;");
+                artPane.setAttribute("style", "display: initial;");
+              }, 10);
+
+
+            }
+
+
+          });
+        }
+
       }
 
       function detectOccasions () {
