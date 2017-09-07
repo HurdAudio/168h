@@ -166,6 +166,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 10,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1254767643/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://kylebobbydunn.bandcamp.com/album/in-miserum-stercus',
+          a_string: 'In Miserum Stercus by Kyle Bobby Dunn',
+          rule: {
+            "monday": [ 30, 4, 9, 21 ],
+            "tuesday": [ 29, 3, 9, 20 ],
+            "wednesday": [ 28, 2, 8, 19 ],
+            "thursday": [ 2, 6, 12, 23 ],
+            "saturday": [ 1, 5, 11, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 11,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2347154279/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://eileanrec.bandcamp.com/album/stay-sea',
+          a_string: 'Stay / Sea by HolyKindOf',
+          rule: {
+            "monday": [ 1, 5, 11, 22 ],
+            "tuesday": [ 30, 4, 9, 21 ],
+            "wednesday": [ 29, 3, 9, 20 ],
+            "thursday": [ 28, 2, 8, 19 ],
+            "saturday": [ 2, 6, 12, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 12,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2922557334/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://lowpoint.bandcamp.com/album/glisten',
+          a_string: 'Glisten by Tim Catlin &amp; Machinefabriek',
+          rule: {
+            "monday": [ 2, 6, 12, 23 ],
+            "tuesday": [ 1, 5, 11, 22 ],
+            "wednesday": [ 30, 4, 9, 21 ],
+            "thursday": [ 29, 3, 9, 20 ],
+            "saturday": [ 28, 2, 8, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
