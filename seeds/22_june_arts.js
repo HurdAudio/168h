@@ -404,6 +404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 21,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/cabot-street-cinema-massachusetts-1978.jpg',
+          title: 'Cabot Street Cinema, Massachusetts',
+          artist: 'Hiroshi Sugimoto',
+          year: '1978',
+          rule: {
+            "monday": [ 2, 12, 22, 30 ],
+            "tuesday": [ 1, 11, 21, 29 ],
+            "wednesday": [ 30, 10, 20, 28 ],
+            "thursday": [ 29, 9, 19, 27 ],
+            "friday": [ 28, 8, 18, 26 ],
+            "saturday": [ 4, 14, 24, 1 ],
+            "sunday": [ 3, 13, 23, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 22,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/self-portrait-1886.jpg',
+          title: 'Self-portrait',
+          artist: 'Alfred Stieglitz',
+          year: '1886',
+          rule: {
+            "monday": [ 3, 13, 23, 1 ],
+            "tuesday": [ 2, 12, 22, 30 ],
+            "wednesday": [ 1, 11, 21, 29 ],
+            "thursday": [ 30, 10, 20, 28 ],
+            "friday": [ 29, 9, 19, 27 ],
+            "saturday": [ 28, 8, 18, 26 ],
+            "sunday": [ 4, 14, 24, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 23,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/prince-albert-1938.jpg',
+          title: 'Prince Albert',
+          artist: 'Frederick Sommer',
+          year: '1938',
+          rule: {
+            "monday": [ 4, 14, 24, 1 ],
+            "tuesday": [ 3, 13, 23, 1 ],
+            "wednesday": [ 2, 12, 22, 30 ],
+            "thursday": [ 1, 11, 21, 29 ],
+            "friday": [ 30, 10, 20, 28 ],
+            "saturday": [ 29, 9, 19, 27 ],
+            "sunday": [ 28, 8, 18, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 24,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/las-animas-1997.jpg',
+          title: 'Las Animas',
+          artist: 'Kiki Smith',
+          year: '1997',
+          rule: {
+            "monday": [ 28, 8, 18, 26 ],
+            "tuesday": [ 4, 14, 24, 1 ],
+            "wednesday": [ 3, 13, 23, 1 ],
+            "thursday": [ 2, 12, 22, 30 ],
+            "friday": [ 1, 11, 21, 29 ],
+            "saturday": [ 30, 10, 20, 28 ],
+            "sunday": [ 29, 9, 19, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 25,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/gloucester-16a-1944.jpg',
+          title: 'Gloucester 16A',
+          artist: 'Aaron Siskind',
+          year: '1944',
+          rule: {
+            "monday": [ 29, 9, 19, 27 ],
+            "tuesday": [ 28, 8, 18, 26 ],
+            "wednesday": [ 4, 14, 24, 1 ],
+            "thursday": [ 3, 13, 23, 1 ],
+            "friday": [ 2, 12, 22, 30 ],
+            "saturday": [ 1, 11, 21, 29 ],
+            "sunday": [ 30, 10, 20, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
