@@ -804,6 +804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 41,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/hit-and-run-frozen-in-time-fine-art-photography.jpg',
+          title: 'Hit And Run',
+          artist: 'Frozen in Time Fine Art Photography',
+          year: '2013',
+          rule: {
+            "monday": [ 4, 8, 24, 21 ],
+            "tuesday": [ 3, 8, 14, 20 ],
+            "wednesday": [ 2, 7, 13, 19 ],
+            "thursday": [ 1, 6, 12, 18 ],
+            "friday": [ 6, 12, 17, 24 ],
+            "saturday": [ 20, 10, 17, 23 ],
+            "sunday": [ 5, 10, 16, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 42,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/pic_cle_progressive_field.jpg',
+          title: 'VARIANT 1: TOOTHBRUSH LIGHTS',
+          artist: 'S. Preston',
+          year: 'xxi Cent.',
+          rule: {
+            "monday": [ 6, 11, 17, 23 ],
+            "tuesday": [ 5, 9, 25, 22 ],
+            "wednesday": [ 4, 9, 14, 21 ],
+            "thursday": [ 3, 8, 14, 20 ],
+            "friday": [ 2, 7, 13, 19 ],
+            "saturday": [ 7, 13, 18, 25 ],
+            "sunday": [ 21, 11, 18, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 43,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/Cleveland_Indians_Grady_Sizemore_c409_large.jpg',
+          title: 'Cleveland Indians Grady Sizemore',
+          artist: 'Skyline Pictures',
+          year: '2006',
+          rule: {
+            "monday": [ 21, 11, 18, 24 ],
+            "tuesday": [ 6, 11, 17, 23 ],
+            "wednesday": [ 5, 9, 25, 22 ],
+            "thursday": [ 4, 9, 14, 21 ],
+            "friday": [ 3, 8, 14, 20 ],
+            "saturday": [ 2, 7, 13, 19 ],
+            "sunday": [ 7, 13, 18, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 44,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/kluber-1-hitter-1-710x434.png',
+          title: 'Corey Kluber 1-hitter Cleveland Indians',
+          artist: 'unknown',
+          year: 'xxi Cent.',
+          rule: {
+            "monday": [ 7, 13, 18, 25 ],
+            "tuesday": [ 21, 11, 18, 24 ],
+            "wednesday": [ 6, 11, 17, 23 ],
+            "thursday": [ 5, 9, 25, 22 ],
+            "friday": [ 4, 9, 14, 21 ],
+            "saturday": [ 3, 8, 14, 20 ],
+            "sunday": [ 2, 7, 13, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 45,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/2a205ca2-3b66-46de-90a3-b493f2b9bafc_lg.jpeg',
+          title: '1937 Bob Feller Cleveland Indians',
+          artist: 'Acme Newspictures',
+          year: '1937',
+          rule: {
+            "monday": [ 2, 7, 13, 19 ],
+            "tuesday": [ 7, 13, 18, 25 ],
+            "wednesday": [ 21, 11, 18, 24 ],
+            "thursday": [ 6, 11, 17, 23 ],
+            "friday": [ 5, 9, 25, 22 ],
+            "saturday": [ 4, 9, 14, 21 ],
+            "sunday": [ 3, 8, 14, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
