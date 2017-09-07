@@ -1579,6 +1579,7 @@
           default:
             console.log('bad day value');
         }
+
         if (monthTable !== '') {
           $http.get(`/${monthTable}/${currentUserId}`)
           .then(monthArtData=>{
@@ -1594,30 +1595,52 @@
                 ++indexArt;
               }
             }
+            if (vm.arts.length > 1) {
+              let indice = 0;
+
+              //console.log(vm.arts.length);
+              setTimeout(()=>{
+                for (let a = 0; a <vm.arts.length; a++) {
+                  element = document.getElementById('art' + a);
+                  if (element !== null) {
+                    element.setAttribute("style", "display: none;");
+                  }
+                }
+                indice = Math.floor(Math.random() * (vm.arts.length));
+                element = document.getElementById('art' + indice);
+                element.setAttribute("style", "display: initial;");
+                artPane.setAttribute("style", "display: initial;");
+              }, 10);
+
+
+            }
 
 
 
           });
-        }
-        if (vm.arts.length > 1) {
-          let indice = 0;
 
-          //console.log(vm.arts.length);
-          setTimeout(()=>{
-            for (let a = 0; a <vm.arts.length; a++) {
-              element = document.getElementById('art' + a);
-              if (element !== null) {
-                element.setAttribute("style", "display: none;");
+        } else {
+          if (vm.arts.length > 1) {
+            let indice = 0;
+
+            //console.log(vm.arts.length);
+            setTimeout(()=>{
+              for (let a = 0; a <vm.arts.length; a++) {
+                element = document.getElementById('art' + a);
+                if (element !== null) {
+                  element.setAttribute("style", "display: none;");
+                }
               }
-            }
-            indice = Math.floor(Math.random() * (vm.arts.length));
-            element = document.getElementById('art' + indice);
-            element.setAttribute("style", "display: initial;");
-            artPane.setAttribute("style", "display: initial;");
-          }, 10);
+              indice = Math.floor(Math.random() * (vm.arts.length));
+              element = document.getElementById('art' + indice);
+              element.setAttribute("style", "display: initial;");
+              artPane.setAttribute("style", "display: initial;");
+            }, 10);
 
 
+          }
         }
+
 
       }
 
