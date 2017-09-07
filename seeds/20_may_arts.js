@@ -604,6 +604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 31,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/at-the-workers-outskirts-in-the-days-of-overthrowing-the-autocracy.jpg',
+          title: 'At the workers\' outskirts in the days of overthrowing the autocracy',
+          artist: 'Ivan Vladimirov',
+          year: 'XIX-XX cent.',
+          rule: {
+            "monday": [ 24, 3, 13, 23 ],
+            "tuesday": [ 5, 15, 25, 4 ],
+            "wednesday": [ 3, 13, 23, 2 ],
+            "thursday": [ 1, 11, 21, 31 ],
+            "friday": [ 30, 9, 19, 29 ],
+            "saturday": [ 28, 7, 17, 27 ],
+            "sunday": [ 26, 5, 15, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 32,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/garment-workers-exploited-by-fruit-of-the-loom.jpg',
+          title: 'Garment Workers Exploited by Fruit of the Loom',
+          artist: 'Sue Coe',
+          year: 'XX cent.',
+          rule: {
+            "monday": [ 26, 5, 15, 25 ],
+            "tuesday": [ 24, 3, 13, 23 ],
+            "wednesday": [ 5, 15, 25, 4 ],
+            "thursday": [ 3, 13, 23, 2 ],
+            "friday": [ 1, 11, 21, 31 ],
+            "saturday": [ 30, 9, 19, 29 ],
+            "sunday": [ 28, 7, 17, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 33,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/workers-1935.jpg',
+          title: 'Workers',
+          artist: 'M. H. Maxy',
+          year: '1935',
+          rule: {
+            "monday": [ 28, 7, 17, 27 ],
+            "tuesday": [ 26, 5, 15, 25 ],
+            "wednesday": [ 24, 3, 13, 23 ],
+            "thursday": [ 5, 15, 25, 4 ],
+            "friday": [ 3, 13, 23, 2 ],
+            "saturday": [ 1, 11, 21, 31 ],
+            "sunday": [ 30, 9, 19, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 34,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/italian-village-workers-making-hats-1880.jpg',
+          title: 'Italian village workers making hats',
+          artist: 'Peder Severin Kroyer',
+          year: '1880',
+          rule: {
+            "monday": [ 30, 9, 19, 29 ],
+            "tuesday": [ 28, 7, 17, 27 ],
+            "wednesday": [ 26, 5, 15, 25 ],
+            "thursday": [ 24, 3, 13, 23 ],
+            "friday": [ 5, 15, 25, 4 ],
+            "saturday": [ 3, 13, 23, 2 ],
+            "sunday": [ 1, 11, 21, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 35,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/farm-workers-1880.jpg',
+          title: 'Farm Workers',
+          artist: 'Pierre Emmanuel Damoye',
+          year: '1880',
+          rule: {
+            "monday": [ 2, 12, 22, 1 ],
+            "tuesday": [ 31, 10, 20, 30 ],
+            "wednesday": [ 29, 8, 18, 28 ],
+            "thursday": [ 27, 6, 16, 26 ],
+            "friday": [ 25, 4, 14, 24 ],
+            "saturday": [ 6, 16, 26, 5 ],
+            "sunday": [ 4, 14, 24, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
