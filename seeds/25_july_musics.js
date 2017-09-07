@@ -58,6 +58,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 4,
+          user_id: 1,
+          theme: 'commercially viable genre',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2161883254/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://dva2.bandcamp.com/album/nipomo',
+          a_string: 'http://dva2.bandcamp.com/album/nipomo',
+          rule: {
+            "monday": [ 30, 1, 5, 13 ],
+            "tuesday": [ 29, 31, 4, 12 ],
+            "wednesday": [ 2, 4, 8, 16 ],
+            "thursday": [ 1, 3, 7, 15 ],
+            "saturday": [ 31, 2, 6, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 5,
+          user_id: 1,
+          theme: 'commercially viable genre',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=602852303/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://dama-libra.bandcamp.com/album/claw',
+          a_string: 'Claw by Dama/Libra',
+          rule: {
+            "monday": [ 31, 2, 6, 14 ],
+            "tuesday": [ 30, 1, 5, 13 ],
+            "wednesday": [ 29, 31, 4, 12 ],
+            "thursday": [ 2, 4, 8, 16 ],
+            "saturday": [ 1, 3, 7, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 6,
+          user_id: 1,
+          theme: 'commercially viable genre',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=928201781/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://antiquatedfuture.bandcamp.com/album/recurring-chasms',
+          a_string: 'Recurring Chasms by The Washboard Abs',
+          rule: {
+            "monday": [ 1, 3, 7, 15 ],
+            "tuesday": [ 31, 2, 6, 14 ],
+            "wednesday": [ 30, 1, 5, 13 ],
+            "thursday": [ 29, 31, 4, 12 ],
+            "saturday": [ 2, 4, 8, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
