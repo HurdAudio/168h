@@ -274,6 +274,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 16,
+          user_id: 1,
+          theme: 'avant garde/new music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3033247197/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bangonacan.bandcamp.com/album/bang-on-a-can-meets-kyaw-kyaw-naing',
+          a_string: 'Bang on a Can Meets Kyaw Kyaw Naing by Bang on a Can',
+          rule: {
+            "monday": [ 6, 12, 19, 1 ],
+            "tuesday": [ 5, 11, 18, 31 ],
+            "wednesday": [ 4, 10, 17, 30 ],
+            "thursday": [ 3, 9, 16, 29 ],
+            "saturday": [ 7, 13, 20, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 17,
+          user_id: 1,
+          theme: 'avant garde/new music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1935970520/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://hakanai.bandcamp.com/album/hakanai',
+          a_string: 'Hakanai by Hakanai',
+          rule: {
+            "monday": [ 7, 13, 20, 2 ],
+            "tuesday": [ 6, 12, 19, 1 ],
+            "wednesday": [ 5, 11, 18, 31 ],
+            "thursday": [ 4, 10, 17, 30 ],
+            "saturday": [ 3, 9, 16, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 18,
+          user_id: 1,
+          theme: 'avant garde/new music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1808973990/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://gizehrecords.bandcamp.com/album/through-the-sparkle',
+          a_string: 'Through the Sparkle by Astrïd &amp; Rachel Grimes',
+          rule: {
+            "monday": [ 3, 9, 16, 29 ],
+            "tuesday": [ 7, 13, 20, 2 ],
+            "wednesday": [ 6, 12, 19, 1 ],
+            "thursday": [ 5, 11, 18, 31 ],
+            "saturday": [ 4, 10, 17, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
