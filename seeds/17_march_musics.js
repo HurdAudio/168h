@@ -490,6 +490,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 28,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=379150300/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://finderskeepersrecords.bandcamp.com/album/buchla-concerts-1975',
+          a_string: 'Buchla Concerts 1975 by Suzanne Ciani',
+          rule: {
+            "monday": [ 5, 11, 17, 25 ],
+            "tuesday": [ 9, 15, 21, 29 ],
+            "wednesday": [ 8, 14, 20, 28 ],
+            "thursday": [ 7, 13, 19, 27 ],
+            "saturday": [ 6, 12, 18, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 29,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2173569023/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://franreed.bandcamp.com/album/soop-kitchen',
+          a_string: 'Soop Kitchen by Fran Reed',
+          rule: {
+            "monday": [ 6, 12, 18, 26 ],
+            "tuesday": [ 5, 11, 17, 25 ],
+            "wednesday": [ 9, 15, 21, 29 ],
+            "thursday": [ 8, 14, 20, 28 ],
+            "saturday": [ 7, 13, 19, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 30,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2960999910/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://senufoeditions.bandcamp.com/album/geelriandre-arthesis',
+          a_string: 'Geelriandre / Arthesis by Eliane Radigue',
+          rule: {
+            "monday": [ 7, 13, 19, 27 ],
+            "tuesday": [ 6, 12, 18, 26 ],
+            "wednesday": [ 5, 11, 17, 25 ],
+            "thursday": [ 9, 15, 21, 29 ],
+            "saturday": [ 8, 14, 20, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
