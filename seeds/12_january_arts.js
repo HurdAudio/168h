@@ -1404,6 +1404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 71,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/macchie-1971.jpg',
+          title: 'Macchie',
+          artist: 'Giulio Turcato',
+          year: '1971',
+          rule: {
+            "monday": [ 16, 17, 19, 22 ],
+            "tuesday": [ 19, 20, 11, 15 ],
+            "wednesday": [ 22, 24, 26, 27 ],
+            "thursday": [ 24, 26, 30, 2 ],
+            "friday": [ 26, 28, 29, 1 ],
+            "saturday": [ 11, 12, 24, 15 ],
+            "sunday": [ 14, 16, 18, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 72,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/ju-jitsu-1913.jpg',
+          title: 'Ju-Jitsu',
+          artist: 'David Bomberg',
+          year: '1913',
+          rule: {
+            "monday": [ 14, 16, 18, 28 ],
+            "tuesday": [ 16, 17, 19, 22 ],
+            "wednesday": [ 19, 20, 11, 15 ],
+            "thursday": [ 22, 24, 26, 27 ],
+            "friday": [ 24, 26, 30, 2 ],
+            "saturday": [ 26, 28, 29, 1 ],
+            "sunday": [ 11, 12, 24, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 73,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/untitled-1912tyt.jpg',
+          title: 'Untitled',
+          artist: 'Jacques Villon',
+          year: '1912',
+          rule: {
+            "monday": [ 11, 12, 24, 15 ],
+            "tuesday": [ 14, 16, 18, 28 ],
+            "wednesday": [ 16, 17, 19, 22 ],
+            "thursday": [ 19, 20, 11, 15 ],
+            "friday": [ 22, 24, 26, 27 ],
+            "saturday": [ 24, 26, 30, 2 ],
+            "sunday": [ 26, 28, 29, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 74,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/bomen-1915.jpg',
+          title: 'Bomen',
+          artist: 'Jacoba van Heemskerck',
+          year: '1915',
+          rule: {
+            "monday": [ 26, 28, 29, 1 ],
+            "tuesday": [ 11, 12, 24, 15 ],
+            "wednesday": [ 14, 16, 18, 28 ],
+            "thursday": [ 16, 17, 19, 22 ],
+            "friday": [ 19, 20, 11, 15 ],
+            "saturday": [ 22, 24, 26, 27 ],
+            "sunday": [ 24, 26, 30, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 75,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/woman-verso-untitled.jpg',
+          title: 'Woman/Verso: Untitled',
+          artist: 'Willem de Kooning',
+          year: '1948',
+          rule: {
+            "monday": [ 24, 26, 30, 2 ],
+            "tuesday": [ 26, 28, 29, 1 ],
+            "wednesday": [ 11, 12, 24, 15 ],
+            "thursday": [ 14, 16, 18, 28 ],
+            "friday": [ 16, 17, 19, 22 ],
+            "saturday": [ 19, 20, 11, 15 ],
+            "sunday": [ 22, 24, 26, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
