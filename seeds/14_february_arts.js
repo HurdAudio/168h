@@ -1204,6 +1204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 61,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/BREWER-Unity-COURIER-SERIES_web-600.jpg',
+          title: 'Unity',
+          artist: 'Tina Williams Brewer',
+          year: '2015',
+          rule: {
+            "monday": [ 17, 27, 4, 12 ],
+            "tuesday": [ 19, 27, 6, 16 ],
+            "wednesday": [ 21, 29, 25, 15 ],
+            "thursday": [ 9, 17, 25, 4 ],
+            "friday": [ 11, 19, 27, 6 ],
+            "saturday": [ 16, 21, 27, 8 ],
+            "sunday": [ 15, 23, 2, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 62,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/25426_h550w916gt.3.jpg',
+          title: 'Strange Fruit (Urban Suite)',
+          artist: 'Michael Bramwell',
+          year: '1999',
+          rule: {
+            "monday": [ 15, 23, 2, 10 ],
+            "tuesday": [ 17, 27, 4, 12 ],
+            "wednesday": [ 19, 27, 6, 16 ],
+            "thursday": [ 21, 29, 25, 15 ],
+            "friday": [ 9, 17, 25, 4 ],
+            "saturday": [ 11, 19, 27, 6 ],
+            "sunday": [ 16, 21, 27, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 63,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/bradford1_1.jpg',
+          title: 'No Time to Expand the Sea',
+          artist: 'Mark Bradford',
+          year: '?',
+          rule: {
+            "monday": [ 17, 22, 28, 9 ],
+            "tuesday": [ 16, 24, 3, 11 ],
+            "wednesday": [ 18, 28, 5, 13 ],
+            "thursday": [ 20, 28, 7, 17 ],
+            "friday": [ 22, 1, 26, 16 ],
+            "saturday": [ 10, 18, 26, 5 ],
+            "sunday": [ 12, 20, 28, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 64,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/1item0527.jpg',
+          title: 'A Community Within reach',
+          artist: 'Frank J. Brown',
+          year: '?',
+          rule: {
+            "monday": [ 12, 20, 28, 7 ],
+            "tuesday": [ 17, 22, 28, 9 ],
+            "wednesday": [ 16, 24, 3, 11 ],
+            "thursday": [ 18, 28, 5, 13 ],
+            "friday": [ 20, 28, 7, 17 ],
+            "saturday": [ 22, 1, 26, 16 ],
+            "sunday": [ 10, 18, 26, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 65,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Anthony_Braxton.jpg',
+          title: 'Anthony Braxton, 1970',
+          artist: 'Frederick J. Brown',
+          year: '2002',
+          rule: {
+            "monday": [ 10, 18, 26, 5 ],
+            "tuesday": [ 12, 20, 28, 7 ],
+            "wednesday": [ 17, 22, 28, 9 ],
+            "thursday": [ 16, 24, 3, 11 ],
+            "friday": [ 18, 28, 5, 13 ],
+            "saturday": [ 20, 28, 7, 17 ],
+            "sunday": [ 22, 1, 26, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
