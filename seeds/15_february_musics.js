@@ -598,6 +598,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 34,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3411340270/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ayler-records.bandcamp.com/album/ode-to-albert-ayler',
+          a_string: 'Ode to Albert Ayler by Mark O&#39;Leary &amp; Sunny Murray',
+          rule: {
+            "monday": [ 10, 14, 16, 20],
+            "tuesday": [ 22, 16, 18, 24],
+            "wednesday": [ 5, 19, 21, 24],
+            "thursday": [ 6, 10, 12, 16],
+            "saturday": [ 8, 12, 14, 18]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 35,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=872217913/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://eremiterecords.bandcamp.com/album/we-are-not-at-the-opera',
+          a_string: 'We Are Not At The Opera by Sunny Murray &amp; Sabir Mateen',
+          rule: {
+            "monday": [ 9, 13, 15, 19],
+            "tuesday": [ 11, 15, 17, 21],
+            "wednesday": [ 23, 17, 19, 25],
+            "thursday": [ 6, 20, 22, 25],
+            "saturday": [ 7, 11, 13, 17]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 36,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2696818120/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://eremiterecords.bandcamp.com/album/drum-dance-to-the-motherland',
+          a_string: 'Drum Dance to the Motherland by Khan Jamal Creative Arts Ensemble',
+          rule: {
+            "monday": [ 7, 11, 13, 17],
+            "tuesday": [ 9, 13, 15, 19],
+            "wednesday": [ 11, 15, 17, 21],
+            "thursday": [ 23, 17, 19, 25],
+            "saturday": [ 6, 20, 22, 25]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
