@@ -1551,6 +1551,9 @@
           case(0):
             monthTable = 'january_artsbyuser';
             break;
+          case(1):
+            monthTable = 'february_artsbyuser';
+            break;
           default:
             console.log('month art not yet supported');
         }
