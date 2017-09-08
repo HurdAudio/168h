@@ -706,6 +706,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 40,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=137747104/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://mattsmiley.bandcamp.com/album/2012-open-space-festival-of-new-music-john-cage',
+          a_string: '2012 Open Space Festival of New Music: John Cage by MTM + The UNC Scratch Music Orchestra',
+          rule: {
+            "monday": [ 16, 10, 12, 16 ],
+            "tuesday": [ 12, 19, 21, 20 ],
+            "wednesday": [ 10, 14, 16, 20 ],
+            "thursday": [ 12, 19, 21, 20 ],
+            "saturday": [ 20, 14, 16, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 41,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4208840544/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://karlrecords.bandcamp.com/album/the-wild-bull',
+          a_string: 'The Wild Bull by MORTON SUBOTNICK',
+          rule: {
+            "monday": [ 20, 14, 16, 21 ],
+            "tuesday": [ 16, 10, 12, 16 ],
+            "wednesday": [ 12, 19, 21, 20 ],
+            "thursday": [ 10, 14, 16, 20 ],
+            "saturday": [ 12, 19, 21, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 42,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1011216190/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cantaloupemusic.bandcamp.com/album/revelation',
+          a_string: 'Revelation by Michael Harrison',
+          rule: {
+            "monday": [ 13, 20, 22, 21 ],
+            "tuesday": [ 21, 15, 17, 22 ],
+            "wednesday": [ 17, 11, 13, 17 ],
+            "thursday": [ 13, 20, 22, 21 ],
+            "saturday": [ 11, 15, 17, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
