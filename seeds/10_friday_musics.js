@@ -484,6 +484,16 @@ exports.seed = function(knex, Promise) {
           a_string: 'Red Hot + Fela by Fela Kuti',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 49,
+          user_id: 1,
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1972772984/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://felakuti.bandcamp.com/album/highlife-jazz-and-afro-soul-1963-69',
+          a_string: 'Highlife-Jazz and Afro-Soul (1963-69) by Fela Kuti',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
