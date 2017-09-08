@@ -485,7 +485,19 @@
       <p>David King, born 1965</p> -->
     </div>
 
-    <iframe id="curatedMusic" style="border: 0; width: 100%; height: 550px;" src="https://bandcamp.com/EmbeddedPlayer/album=2629874419/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a id="curatedMusicData" href="http://kylebobbydunn.bandcamp.com/album/infinite-sadness">Infinite Sadness by Kyle Bobby Dunn</a></iframe>
+    <div id="musicPlayer">
+      <main ng-repeat="music in $ctrl.musics">
+        <div id="musics{{music.index}}">
+          <iframe ng-src="{{music.src_string}}" style="border: 0; width: 100%; height: 600px;" seamless><a href="{{music.href_string}}">{{music.a_string}}</a></iframe>
+        </div>
+
+      </main>
+      <a href="" id="musicPlayerBackSelection" class="btn">previous</a>
+      <a href="" id="musicPlayerNextSelection" class="btn">next</a>
+
+    </div>
+
+    <!-- <iframe id="curatedMusic" style="border: 0; width: 100%; height: 550px;" src="https://bandcamp.com/EmbeddedPlayer/album=2629874419/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a id="curatedMusicData" href="http://kylebobbydunn.bandcamp.com/album/infinite-sadness">Infinite Sadness by Kyle Bobby Dunn</a></iframe> -->
   </div>
   <div id="goalsPanel" class="pure-u-1-3">
     <main ng-repeat="holiday in $ctrl.holidays | orderBy : $ctrl.sortBy">

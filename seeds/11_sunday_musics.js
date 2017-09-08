@@ -19,9 +19,9 @@ exports.seed = function(knex, Promise) {
           id: 2,
           user_id: 1,
           source: 'bandcamp',
-          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=959487973/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
-          href_string: 'https://bandcamp.com/EmbeddedPlayer/album=959487973/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
-          a_string: 'Discipline 27-11 by Sun Ra',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2295729343/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sunramusic.bandcamp.com/album/discipline-27-ii-remastered',
+          a_string: 'Discipline 27-II (Remastered) by Sun Ra &amp; His Arkestra',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
         },

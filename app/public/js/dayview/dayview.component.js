@@ -1495,12 +1495,29 @@
             }
           }
           //music override_content
+          vm.musics = [];
+          let indexMusic = 0;
+          if(vm.holidays.length > 0) {
+            for (let k = 0; k < vm.holidays.length; k++) {
+              if (vm.holidays[k].music_override) {
+                for(let l = 0; l < vm.holidays[k].override_content.sources.length; l++) {
+                  vm.musics[indexMusic] = {};
+                  vm.musics[indexMusic].index = indexMusic;
+                  vm.musics[indexMusic].src_string = vm.holidays[k].override_content.src_strings[l];
+                  vm.musics[indexMusic].href_string = vm.holidays[k].override_content.href_strings[l];
+                  vm.musics[indexMusic].a_string = vm.holidays[k].override_content.a_strings[l];
+                  ++indexMusic;
+                }
+              }
+            }
+          }
           detectObservances();
         });
       }
 
       function detectObservances() {
         let indexArt = vm.arts.length;
+        let indexMusic = vm.musics.length;
         vm.observances = [];
         let observancesPane = document.getElementById('observancesPane');
         $http.get(`/observancesbyuser/${currentUserId}`)
@@ -1528,15 +1545,209 @@
                   ++indexArt;
                 }
               }
+              if (vm.observances[j].music_override) {
+                for (let l = 0; l < vm.observances[j].override_content.sources.length; l++) {
+                  vm.musics[indexMusic] = {};
+                  vm.musics[indexMusic].index = indexMusic;
+                  vm.musics[indexMusic].src_string =  vm.observances[j].override_content.src_strings[l];
+                  vm.musics[indexMusic].href_string = vm.observances[j].override_content.href_strings[l];
+                  vm.musics[indexMusic].a_string = vm.observances[j].override_content.a_strings[l];
+                  ++indexMusic;
+                }
+              }
             }
           }
           //art override content
           monthArt();
           //music override content
+          monthMusic();
         });
       }
 
+      function randomizedArray(length) {
+        let arr = [];
+        let rand = 0;
 
+        for (let i = 0; i < length; i++) {
+          arr[i] = i;
+        }
+        for (let k = 0; k < arr.length; k++) {
+          for (let j = 0; j < arr.length; j++) {
+            rand = Math.floor(Math.random() * arr.length);
+            if (rand !== j) {
+              [arr[j], arr[rand]] = [arr[rand], arr[j]];
+            }
+          }
+        }
+
+        return(arr);
+      }
+
+      function monthMusic() {
+        let indexMusic = vm.musics.length;
+        let theDate = new Date(viewDate);
+        let theMonthString = '';
+        let dayOfWeek = '';
+        let musicPlayer = document.getElementById('musicPlayer');
+        let element;
+        let secondElement;
+        let indiceArray = [];
+        let indice = 0;
+        let musicPlayerBackSelection = document.getElementById('musicPlayerBackSelection');
+        let musicPlayerNextSelection = document.getElementById('musicPlayerNextSelection');
+        document.getElementById('musicPlayer');
+
+        // Sunday and Friday override the monthArt
+        if ((theDate.getDay() === 0) || (theDate.getDay() === 5)) {
+          let theDayString = '';
+          if (theDate.getDay() === 0) {
+            theDayString = 'sunday_musicsbyuser';
+          } else {
+            theDayString = 'friday_musicsbyuser';
+          }
+          $http.get(`/${theDayString}/${currentUserId}`)
+          .then(specialDayMusicData=>{
+            let specialDayMusic = specialDayMusicData.data;
+            for (let i = 0; i < specialDayMusic.length; i++) {
+              vm.musics[indexMusic] = {};
+              vm.musics[indexMusic].index = indexMusic;
+              vm.musics[indexMusic].src_string = specialDayMusic[i].src_string;
+              vm.musics[indexMusic].href_string = specialDayMusic[i].href_string;
+              vm.musics[indexMusic].a_string = specialDayMusic[i].a_string;
+              ++indexMusic;
+            }
+            setTimeout(()=>{
+              if (vm.musics.length > 0) {
+                indiceArray = randomizedArray(vm.musics.length);
+                for (let qq = 1; qq < indiceArray.length; qq++) {
+                  element = document.getElementById('musics' + indiceArray[qq]);
+                  element.setAttribute("style", "display: none;");
+                }
+                musicPlayer.setAttribute("style", "display: initial;");
+                musicPlayerBackSelection.addEventListener('click', ()=>{
+                  element = document.getElementById('musics' + indiceArray[indice]);
+                  if (indice === 0) {
+                    indice = indiceArray.length - 1;
+                  } else {
+                    --indice;
+                  }
+                  secondElement = document.getElementById('musics' + indiceArray[indice]);
+                  transitionPane(element, secondElement);
+                });
+                musicPlayerNextSelection.addEventListener('click', ()=>{
+                  element = document.getElementById('musics' + indiceArray[indice]);
+                  ++indice;
+                  if (indice === indiceArray.length) {
+                    indice = 0;
+                  }
+                  secondElement = document.getElementById('musics' + indiceArray[indice]);
+                  transitionPane(element, secondElement);
+                  secondElement.children[0]["ng-src"] = vm.musics[indiceArray[indice]].src_string;
+                  secondElement.children[0].href = vm.musics[indiceArray[indice]].href_string;
+                  secondElement.children[0].contentWindow.location(vm.musics[indiceArray[indice]].href_string);
+                });
+              } else {
+                if (vm.musics.length !== 0) {
+                  musicPlayer.setAttribute("style", "display: initial;");
+                }
+                musicPlayerBackSelection.setAttribute("style", "display: none;");
+                musicPlayerNextSelection.setAttribute("style", "display: none;");
+              }
+            }, (vm.musics.length * 1500));
+          });
+        } else {
+          switch(theDate.getDay()) {
+            case(1):
+              dayOfWeek = 'monday';
+              break;
+            case(2):
+              dayOfWeek = 'tuesday';
+              break;
+            case(3):
+              dayOfWeek = 'wednesday';
+              break;
+            case(4):
+              dayOfWeek = 'thursday';
+              break;
+            case(6):
+              dayOfWeek = 'saturday';
+              break;
+            default:
+              console.log('day not supported');
+          }
+          switch(theDate.getMonth()) {
+            case(0):
+              theMonthString = 'january_musicsbyuser';
+              break;
+            default:
+              console.log('month not yet supported');
+          }
+          if (theMonthString !== '') {
+            $http.get(`/${theMonthString}/${currentUserId}`)
+            .then(monthMusicData=>{
+              let monthMusic = monthMusicData.data;
+              for (let pp = 0; pp < monthMusic.length; pp++) {
+                if (monthMusic[pp].rule[dayOfWeek].indexOf(theDate.getDate()) !== -1) {
+                  vm.musics[indexMusic] = {};
+                  vm.musics[indexMusic].index = indexMusic;
+                  vm.musics[indexMusic].src_string = monthMusic[pp].src_string;
+                  vm.musics[indexMusic].href_string = monthMusic[pp].href_string;
+                  vm.musics[indexMusic].a_string = monthMusic[pp].a_string;
+                  ++indexMusic;
+                }
+
+              }
+              setTimeout(()=>{
+                if (vm.musics.length > 0) {
+                  indiceArray = randomizedArray(vm.musics.length);
+                  for (let qq = 1; qq < indiceArray.length; qq++) {
+                    element = document.getElementById('musics' + indiceArray[qq]);
+                    element.setAttribute("style", "display: none;");
+                  }
+                  musicPlayer.setAttribute("style", "display: initial;");
+                  musicPlayerBackSelection.addEventListener('click', ()=>{
+                    element = document.getElementById('musics' + indiceArray[indice]);
+                    if (indice === 0) {
+                      indice = indiceArray.length - 1;
+                    } else {
+                      --indice;
+                    }
+                    secondElement = document.getElementById('musics' + indiceArray[indice]);
+                    transitionPane(element, secondElement);
+                  });
+                  musicPlayerNextSelection.addEventListener('click', ()=>{
+                    element = document.getElementById('musics' + indiceArray[indice]);
+                    ++indice;
+                    if (indice === indiceArray.length) {
+                      indice = 0;
+                    }
+                    secondElement = document.getElementById('musics' + indiceArray[indice]);
+                    transitionPane(element, secondElement);
+                    secondElement.children[0]["ng-src"] = vm.musics[indiceArray[indice]].src_string;
+                    secondElement.children[0].href = vm.musics[indiceArray[indice]].href_string;
+                    secondElement.children[0].contentWindow.location(vm.musics[indiceArray[indice]].href_string);
+                  });
+                } else {
+                  if (vm.musics.length !== 0) {
+                    musicPlayer.setAttribute("style", "display: initial;");
+                  }
+                  musicPlayerBackSelection.setAttribute("style", "display: none;");
+                  musicPlayerNextSelection.setAttribute("style", "display: none;");
+                }
+              }, (vm.musics.length * 1500));
+            });
+          } else {
+            setTimeout(()=>{
+              if (vm.musics.length < 1) {
+                musicPlayer.setAttribute("style", "display: none;");
+              } else {
+                console.log(vm.musics);
+              }
+            }, 55);
+
+          }
+        }
+      }
 
 
       function monthArt() {

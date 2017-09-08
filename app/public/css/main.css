@@ -2916,3 +2916,12 @@ footer img {
   font-size: 18px;
   margin-left: 1.4em;
 }
+
+#musicPlayer a {
+  float: left;
+  margin-left: 2.7em;
+}
+
+#musicPlayer {
+  display: initial;
+}
