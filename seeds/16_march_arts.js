@@ -1004,6 +1004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 51,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/lady-in-an-interior.jpg',
+          title: 'Lady in an interior',
+          artist: 'Thalia Flora-Karavia',
+          year: '?',
+          rule: {
+            "monday": [ 8, 17, 26, 5 ],
+            "tuesday": [ 7, 17, 27, 4 ],
+            "wednesday": [ 6, 16, 24, 3 ],
+            "thursday": [ 5, 15, 23, 2 ],
+            "friday": [ 4, 14, 22, 1 ],
+            "saturday": [ 3, 13, 21, 31 ],
+            "sunday": [ 2, 12, 11, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 52,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/mother-marie-poussepin.jpg',
+          title: 'Mother Marie Poussepin',
+          artist: 'Gwen John',
+          year: 'c.1915 - c.1920',
+          rule: {
+            "monday": [ 2, 12, 11, 30 ],
+            "tuesday": [ 8, 17, 26, 5 ],
+            "wednesday": [ 7, 17, 27, 4 ],
+            "thursday": [ 6, 16, 24, 3 ],
+            "friday": [ 5, 15, 23, 2 ],
+            "saturday": [ 4, 14, 22, 1 ],
+            "sunday": [ 3, 13, 21, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 53,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/book-of-foot-1996.jpg',
+          title: 'Book of Foot',
+          artist: 'Lenore Tawney',
+          year: '1996',
+          rule: {
+            "monday": [ 3, 13, 21, 31 ],
+            "tuesday": [ 2, 12, 11, 30 ],
+            "wednesday": [ 8, 17, 26, 5 ],
+            "thursday": [ 7, 17, 27, 4 ],
+            "friday": [ 6, 16, 24, 3 ],
+            "saturday": [ 5, 15, 23, 2 ],
+            "sunday": [ 4, 14, 22, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 54,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/untitled-celestial-realm-1956.jpg',
+          title: 'Untitled, Celestial Realm',
+          artist: 'Lolo Soldevilla',
+          year: '1956',
+          rule: {
+            "monday": [ 4, 14, 22, 1 ],
+            "tuesday": [ 3, 13, 21, 31 ],
+            "wednesday": [ 2, 12, 11, 30 ],
+            "thursday": [ 8, 17, 26, 5 ],
+            "friday": [ 7, 17, 27, 4 ],
+            "saturday": [ 6, 16, 24, 3 ],
+            "sunday": [ 5, 15, 23, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 55,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/seascape-1970-2.jpg',
+          title: 'Seascape',
+          artist: 'Margit Selska',
+          year: '1970',
+          rule: {
+            "monday": [ 5, 15, 23, 2 ],
+            "tuesday": [ 4, 14, 22, 1 ],
+            "wednesday": [ 3, 13, 21, 31 ],
+            "thursday": [ 2, 12, 11, 30 ],
+            "friday": [ 8, 17, 26, 5 ],
+            "saturday": [ 7, 17, 27, 4 ],
+            "sunday": [ 6, 16, 24, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
