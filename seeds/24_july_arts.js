@@ -304,6 +304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 16,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/la-derniere-bastille.jpg',
+          title: 'La Derniere Bastille',
+          artist: 'Theophile Steinlen',
+          year: 'XIX-XX cent.',
+          rule: {
+            "monday": [ 5, 16, 27, 7 ],
+            "tuesday": [ 4, 15, 26, 6 ],
+            "wednesday": [ 3, 14, 25, 5 ],
+            "thursday": [ 2, 13, 24, 4 ],
+            "friday": [ 1, 12, 23, 3 ],
+            "saturday": [ 31, 11, 22, 2 ],
+            "sunday": [ 30, 10, 21, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 17,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/the-dreams-in-the-witch-house-h-p-lovecraft-2016-1.jpg',
+          title: 'the Dreams in the Witch House (H P Lovecraft )',
+          artist: 'Kim Prisu',
+          year: '2016',
+          rule: {
+            "monday": [ 30, 10, 21, 1 ],
+            "tuesday": [ 5, 16, 27, 7 ],
+            "wednesday": [ 4, 15, 26, 6 ],
+            "thursday": [ 3, 14, 25, 5 ],
+            "friday": [ 2, 13, 24, 4 ],
+            "saturday": [ 1, 12, 23, 3 ],
+            "sunday": [ 31, 11, 22, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 18,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/luthier-1997.jpg',
+          title: 'Luthier',
+          artist: 'Jerome Mesnager',
+          year: '1997',
+          rule: {
+            "monday": [ 31, 11, 22, 2 ],
+            "tuesday": [ 30, 10, 21, 1 ],
+            "wednesday": [ 5, 16, 27, 7 ],
+            "thursday": [ 4, 15, 26, 6 ],
+            "friday": [ 3, 14, 25, 5 ],
+            "saturday": [ 2, 13, 24, 4 ],
+            "sunday": [ 1, 12, 23, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 19,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/untitled-2002-1.jpg',
+          title: 'Untitled',
+          artist: 'Moon Pil Shim',
+          year: '2002',
+          rule: {
+            "monday": [ 1, 12, 23, 3 ],
+            "tuesday": [ 31, 11, 22, 2 ],
+            "wednesday": [ 30, 10, 21, 1 ],
+            "thursday": [ 5, 16, 27, 7 ],
+            "friday": [ 4, 15, 26, 6 ],
+            "saturday": [ 3, 14, 25, 5 ],
+            "sunday": [ 2, 13, 24, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 20,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/les-baronnes-130-x-162-2007.jpg',
+          title: 'Les Baronnes',
+          artist: 'Pietropoli Patrick',
+          year: '2007',
+          rule: {
+            "monday": [ 2, 13, 24, 4 ],
+            "tuesday": [ 1, 12, 23, 3 ],
+            "wednesday": [ 31, 11, 22, 2 ],
+            "thursday": [ 30, 10, 21, 1 ],
+            "friday": [ 5, 16, 27, 7 ],
+            "saturday": [ 4, 15, 26, 6 ],
+            "sunday": [ 3, 14, 25, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
