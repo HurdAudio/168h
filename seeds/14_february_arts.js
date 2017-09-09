@@ -1304,6 +1304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 66,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/DSC0097online.jpg',
+          title: 'Les Croisses',
+          artist: 'Manuelita Brown',
+          year: 'xx Cent.',
+          rule: {
+            "monday": [ 22, 1, 26, 16 ],
+            "tuesday": [ 10, 18, 26, 5 ],
+            "wednesday": [ 12, 20, 28, 7 ],
+            "thursday": [ 17, 22, 28, 9 ],
+            "friday": [ 16, 24, 3, 11 ],
+            "saturday": [ 18, 28, 5, 13 ],
+            "sunday": [ 20, 28, 7, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 67,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Granny_Buck_Brown_Cartoon.JPG',
+          title: 'A Playboy Buck Brown cartoon used on a subscription form for the magazine in 1972',
+          artist: 'Robert Brown',
+          year: '1972',
+          rule: {
+            "monday": [ 20, 28, 7, 17 ],
+            "tuesday": [ 22, 1, 26, 16 ],
+            "wednesday": [ 10, 18, 26, 5 ],
+            "thursday": [ 12, 20, 28, 7 ],
+            "friday": [ 17, 22, 28, 9 ],
+            "saturday": [ 16, 24, 3, 11 ],
+            "sunday": [ 18, 28, 5, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 68,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Pb233585-1024x773.jpg',
+          title: 'Three Shacks',
+          artist: 'Beverly Buchanan',
+          year: '2004',
+          rule: {
+            "monday": [ 18, 28, 5, 13 ],
+            "tuesday": [ 20, 28, 7, 17 ],
+            "wednesday": [ 22, 1, 26, 16 ],
+            "thursday": [ 10, 18, 26, 5 ],
+            "friday": [ 12, 20, 28, 7 ],
+            "saturday": [ 17, 22, 28, 9 ],
+            "sunday": [ 16, 24, 3, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 69,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Booker_T._Washington,_portrait_bust_in_patined_plaster.jpg',
+          title: 'Booker T. Washington',
+          artist: 'Selma Burke',
+          year: '1935',
+          rule: {
+            "monday": [ 16, 24, 3, 11 ],
+            "tuesday": [ 18, 28, 5, 13 ],
+            "wednesday": [ 20, 28, 7, 17 ],
+            "thursday": [ 22, 1, 26, 16 ],
+            "friday": [ 10, 18, 26, 5 ],
+            "saturday": [ 12, 20, 28, 7 ],
+            "sunday": [ 17, 22, 28, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 70,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/calvinburnett_561_0.jpg',
+          title: '?',
+          artist: 'Calvin Burnett',
+          year: '?',
+          rule: {
+            "monday": [ 18, 23, 29, 10 ],
+            "tuesday": [ 17, 25, 4, 12 ],
+            "wednesday": [ 19, 29, 6, 14 ],
+            "thursday": [ 21, 29, 8, 18 ],
+            "friday": [ 23, 2, 27, 17 ],
+            "saturday": [ 11, 19, 27, 6 ],
+            "sunday": [ 13, 21, 29, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
