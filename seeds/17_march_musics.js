@@ -544,6 +544,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 31,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=64459792/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://janelleppin.bandcamp.com/album/american-god',
+          a_string: 'American God by Mellow Diamond',
+          rule: {
+            "monday": [ 8, 14, 20, 28 ],
+            "tuesday": [ 7, 13, 19, 27 ],
+            "wednesday": [ 6, 12, 18, 26 ],
+            "thursday": [ 5, 11, 17, 25 ],
+            "saturday": [ 9, 15, 21, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 32,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3182866185/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://darktree.bandcamp.com/album/en-corps',
+          a_string: 'En Corps by Eve Risser • Benjamin Duboc • Edward Perraud',
+          rule: {
+            "monday": [ 9, 15, 21, 29 ],
+            "tuesday": [ 8, 14, 20, 28 ],
+            "wednesday": [ 7, 13, 19, 27 ],
+            "thursday": [ 6, 12, 18, 26 ],
+            "saturday": [ 5, 11, 17, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 33,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2614010070/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://soundanatomy.bandcamp.com/album/hiss-and-viscera',
+          a_string: 'Hiss and Viscera by Audrey Chen &amp; Richard Scott',
+          rule: {
+            "monday": [ 5, 11, 17, 25 ],
+            "tuesday": [ 9, 15, 21, 29 ],
+            "wednesday": [ 8, 14, 20, 28 ],
+            "thursday": [ 7, 13, 19, 28 ],
+            "saturday": [ 6, 12, 18, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
