@@ -124,6 +124,86 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 7,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/capelli-rossi-red-hair.jpg',
+          title: 'Capelli Rossi (Red Hair)',
+          artist: 'Ernst Ludwig Kirchner',
+          year: '1914',
+          rule: {
+            "monday": [ 3, 7, 15, 31 ],
+            "tuesday": [ 2, 6, 14, 30 ],
+            "wednesday": [ 1, 5, 13, 29 ],
+            "thursday": [ 31, 4, 12, 28 ],
+            "friday": [ 30, 3, 11, 27 ],
+            "saturday": [ 5, 9, 17, 2 ],
+            "sunday": [ 4, 8, 16, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 8,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/jack-of-clubs-1916.jpg',
+          title: 'Jack of Clubs',
+          artist: 'Olga Rozanova',
+          year: '1916',
+          rule: {
+            "monday": [ 4, 8, 16, 1 ],
+            "tuesday": [ 3, 7, 15, 31 ],
+            "wednesday": [ 2, 6, 14, 30 ],
+            "thursday": [ 1, 5, 13, 29 ],
+            "friday": [ 31, 4, 12, 28 ],
+            "saturday": [ 30, 3, 11, 27 ],
+            "sunday": [ 5, 9, 17, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 9,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/a-victim-of-society.jpg',
+          title: 'A Victim of Society',
+          artist: 'George Grosz',
+          year: '1919',
+          rule: {
+            "monday": [ 5, 9, 17, 2 ],
+            "tuesday": [ 4, 8, 16, 1 ],
+            "wednesday": [ 3, 7, 15, 31 ],
+            "thursday": [ 2, 6, 14, 30 ],
+            "friday": [ 1, 5, 13, 29 ],
+            "saturday": [ 31, 4, 12, 28 ],
+            "sunday": [ 30, 3, 11, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 10,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/flamboyant-landscape-1933.jpg',
+          title: 'Flamboyant landscape',
+          artist: 'Martiros Sarian',
+          year: '1933',
+          rule: {
+            "monday": [ 30, 3, 11, 27 ],
+            "tuesday": [ 5, 9, 17, 2 ],
+            "wednesday": [ 4, 8, 16, 1 ],
+            "thursday": [ 3, 7, 15, 31 ],
+            "friday": [ 2, 6, 14, 30 ],
+            "saturday": [ 1, 5, 13, 29 ],
+            "sunday": [ 31, 4, 12, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
