@@ -904,6 +904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 46,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/Citi Field Never Looked So Good  Mets Merized Online.jpg',
+          title: 'Citi Field Never Looked So Good',
+          artist: 'Mets Merized Online',
+          year: 'xxi Cent.',
+          rule: {
+            "monday": [ 3, 8, 14, 20 ],
+            "tuesday": [ 2, 7, 13, 19 ],
+            "wednesday": [ 7, 13, 18, 25 ],
+            "thursday": [ 21, 11, 18, 24 ],
+            "friday": [ 6, 11, 17, 23 ],
+            "saturday": [ 5, 9, 25, 22 ],
+            "sunday": [ 4, 9, 14, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 47,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/CitiField-Panorama-from-the-Back-Row-in-Centerfiel_art.jpg',
+          title: 'Citi Field Panorama from the Back Row in Centerfield',
+          artist: 'Augies Panoramas Online',
+          year: 'xxi Cent.',
+          rule: {
+            "monday": [ 4, 9, 14, 21 ],
+            "tuesday": [ 3, 8, 14, 20 ],
+            "wednesday": [ 2, 7, 13, 19 ],
+            "thursday": [ 7, 13, 18, 25 ],
+            "friday": [ 21, 11, 18, 24 ],
+            "saturday": [ 6, 11, 17, 23 ],
+            "sunday": [ 5, 9, 25, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 48,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/new-yorker-june-3rd-1991-jb-handelsma.jpg',
+          title: 'New Yorker, June 3rd, 1991',
+          artist: 'J.B. Handelsman',
+          year: '1991',
+          rule: {
+            "monday": [ 5, 9, 25, 22 ],
+            "tuesday": [ 4, 9, 14, 21 ],
+            "wednesday": [ 3, 8, 14, 20 ],
+            "thursday": [ 2, 7, 13, 19 ],
+            "friday": [ 7, 13, 18, 25 ],
+            "saturday": [ 21, 11, 18, 24 ],
+            "sunday": [ 6, 11, 17, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 49,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/tumblr_ml0o1xXkix1rjm1abo1_1280.jpg',
+          title: 'Tom Seaver New York Mets Watercolor',
+          artist: 'MichaelPattison',
+          year: '2013',
+          rule: {
+            "monday": [ 7, 12, 18, 24 ],
+            "tuesday": [ 6, 10, 25, 23 ],
+            "wednesday": [ 5, 10, 15, 22 ],
+            "thursday": [ 4, 9, 15, 21 ],
+            "friday": [ 3, 8, 14, 20 ],
+            "saturday": [ 8, 14, 19, 26 ],
+            "sunday": [ 22, 12, 19, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 50,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/366_allen18art3.jpg',
+          title: 'Home of the first Mets game - the Polo Grounds',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 22, 12, 19, 25 ],
+            "tuesday": [ 7, 12, 18, 24 ],
+            "wednesday": [ 6, 10, 25, 23 ],
+            "thursday": [ 5, 10, 15, 22 ],
+            "friday": [ 4, 9, 15, 21 ],
+            "saturday": [ 3, 8, 14, 20 ],
+            "sunday": [ 8, 14, 19, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
