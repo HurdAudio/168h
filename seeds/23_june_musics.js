@@ -220,6 +220,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 13,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=315244532/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://itsnotyouitsme.bandcamp.com/album/this-i-featuring-theo-bleckmann-sk-li-sverrisson',
+          a_string: 'This I (featuring Theo Bleckmann &amp; Skúli Sverrisson) by itsnotyouitsme',
+          rule: {
+            "monday": [ 28, 2, 8, 19 ],
+            "tuesday": [ 2, 6, 12, 23 ],
+            "wednesday": [ 1, 5, 11, 22 ],
+            "thursday": [ 30, 4, 9, 21 ],
+            "saturday": [ 29, 3, 9, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 14,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2093749474/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://timhecker.bandcamp.com/album/virgins-paper-bag-edition',
+          a_string: 'Virgins (Paper Bag edition) by Tim Hecker',
+          rule: {
+            "monday": [ 30, 4, 10, 21 ],
+            "tuesday": [ 29, 3, 9, 20 ],
+            "wednesday": [ 3, 7, 13, 24 ],
+            "thursday": [ 2, 6, 12, 23 ],
+            "saturday": [ 1, 5, 10, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 15,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3270291878/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://dronarivm.bandcamp.com/album/open-to-the-sea',
+          a_string: 'Open To The Sea by Enrico Coniglio &amp; Matteo Uggeri',
+          rule: {
+            "monday": [ 1, 5, 10, 22 ],
+            "tuesday": [ 30, 4, 10, 21 ],
+            "wednesday": [ 29, 3, 9, 20 ],
+            "thursday": [ 3, 7, 13, 24 ],
+            "saturday": [ 2, 6, 12, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
