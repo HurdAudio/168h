@@ -754,9 +754,63 @@ exports.seed = function(knex, Promise) {
           rule: {
             "monday": [ 13, 20, 22, 21 ],
             "tuesday": [ 21, 15, 17, 22 ],
-            "wednesday": [ 17, 11, 13, 17 ],
+            "wednesday": [ 17, 11, 13, 1 ],
             "thursday": [ 13, 20, 22, 21 ],
             "saturday": [ 11, 15, 17, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 43,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=136079918/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://juliawolfemusic.bandcamp.com/album/steel-hammer',
+          a_string: 'Steel Hammer by Julia Wolfe ft. Bang on a Can All-Stars &amp; Trio Mediaeval',
+          rule: {
+            "monday": [ 11, 15, 17, 21 ],
+            "tuesday": [ 13, 20, 22, 21 ],
+            "wednesday": [ 21, 15, 17, 22 ],
+            "thursday": [ 17, 11, 13, 1 ],
+            "saturday": [ 13, 20, 22, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 44,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1728663263/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bunitamarcus.bandcamp.com/album/favorite-works-from-the-1980s',
+          a_string: 'Favorite Works from the 1980&#39;s by Bunita Marcus',
+          rule: {
+            "monday": [ 13, 20, 22, 21 ],
+            "tuesday": [ 11, 15, 17, 21 ],
+            "wednesday": [ 13, 20, 22, 21 ],
+            "thursday": [ 21, 15, 17, 22 ],
+            "saturday": [ 17, 11, 13, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 45,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3851191522/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://randallholt.bandcamp.com/album/inside-the-kingdom-of-splendor-and-madness',
+          a_string: 'Inside the Kingdom of Splendor and Madness by Randall Holt',
+          rule: {
+            "monday": [ 17, 11, 13, 1 ],
+            "tuesday": [ 13, 20, 22, 21 ],
+            "wednesday": [ 11, 15, 17, 21 ],
+            "thursday": [ 13, 20, 22, 21 ],
+            "saturday": [ 21, 15, 17, 22 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
