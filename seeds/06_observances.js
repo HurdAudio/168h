@@ -7512,6 +7512,152 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 478,
+          user_id: 1,
+          name: 'Vilhelm Lundstrøm (artist), born 1893',
+          color: '#404364',
+          picture: './img/artists/vilhelmlundstrøm.jpg',
+          day_of: new Date ('1893-05-26T13:44:00.000Z'),
+          is_annual: true,
+          art_override: true,
+          music_override: false,
+          override_content: {
+            "img_paths": [ './img/artists/vilhelm01.jpg', './img/artists/vilhelm02.jpg', './img/artists/vilhelm03.jpg', './img/artists/vilhelm04.jpg', './img/artists/vilhelm05.jpg', './img/artists/vilhelm06.jpg', './img/artists/vilhelm07.jpg', './img/artists/vilhelm08.jpg', './img/artists/vilhelm09.jpg', './img/artists/vilhelm10.jpg'  ],
+            "titles": [ 'Composition I', 'Two Sisters', 'Selvportræt', 'Two Female Nudes', 'Still Life with Water Jug, Towel and Jars', 'Nude', 'Stående Model', 'Still Life with White Jar, Orange and Book', 'Seated Female Nude', 'Still Life' ],
+            "artists": [ 'Vilhelm Lundstrøm', 'Vilhelm Lundstrøm', 'Vilhelm Lundstrøm', 'Vilhelm Lundstrøm', 'Vilhelm Lundstrøm', 'Vilhelm Lundstrøm', 'Vilhelm Lundstrøm', 'Vilhelm Lundstrøm', 'Vilhelm Lundstrøm', 'Vilhelm Lundstrøm' ],
+            "years": [ '1918', '1923', '1927', '1927', '1929', '1930', '1932', '1933', '1940', '1941' ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 479,
+          user_id: 1,
+          name: 'Jamie Moyer (pitcher), born 1962',
+          color: '#16131A',
+          picture: './img/baseball/jamiemoyer.jpg',
+          day_of: new Date ('1962-11-18T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 480,
+          user_id: 1,
+          name: 'Hideo Nomo pitches his second career no hitter for the Boston Red Sox vs. Baltimore Orioles in 2001',
+          color: '#C0B3B3',
+          picture: './img/baseball/hideonomonono2.jpg',
+          day_of: new Date ('2001-04-04T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 481,
+          user_id: 1,
+          name: 'Hideo Nomo pitches first career no-hitter for the Los Angeles Dodgers vs. Colorado Rockies in 1996',
+          color: '#131F32',
+          picture: './img/baseball/hideonomonono1.jpg',
+          day_of: new Date ('1996-09-17T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 482,
+          user_id: 1,
+          name: 'The Queen of the Night by Alexander Chee published in 2016',
+          color: '#98693F',
+          picture: './img/books/thequeenofthenight.jpg',
+          day_of: new Date ('2016-02-02T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 483,
+          user_id: 1,
+          name: 'Man Ray (artist), born 1890',
+          color: '#434343',
+          picture: './img/artists/manray.jpg',
+          day_of: new Date ('1890-08-27T13:44:00.000Z'),
+          is_annual: true,
+          art_override: true,
+          music_override: false,
+          override_content: {
+            "img_paths": [ './img/artists/manray01.jpg', './img/artists/manray02.jpg', './img/artists/manray03.jpg', './img/artists/manray04.jpg', './img/artists/manray05.jpg', './img/artists/manray06.jpg', './img/artists/manray07.jpg', './img/artists/manray08.jpg', './img/artists/manray09.jpg', './img/artists/manray10.jpg', './img/artists/manray11.jpg', './img/artists/manray12.jpg', './img/artists/manray13.jpg', './img/artists/manray14.jpg', './img/artists/manray15.jpg', './img/artists/manray16.jpg', './img/artists/manray17.jpg', './img/artists/manray18.jpg', './img/artists/manray19.jpg', './img/artists/manray20.jpg', './img/artists/manray21.jpg', './img/artists/manray22.jpg', './img/artists/manray23.jpg', './img/artists/manray24.jpg', './img/artists/manray25.jpg', './img/artists/manray26.jpg', './img/artists/manray27.jpg', './img/artists/manray28.jpg', './img/artists/manray29.jpg', './img/artists/manray30.jpg', './img/artists/manray31.jpg', './img/artists/manray32.jpg', './img/artists/manray33.jpg', './img/artists/manray34.jpg', './img/artists/manray35.jpg', './img/artists/manray36.jpg', './img/artists/manray37.jpg', './img/artists/manray38.jpg', './img/artists/manray39.jpg', './img/artists/manray40.jpg', './img/artists/manray41.jpg', './img/artists/manray42.jpg', './img/artists/manray43.jpg', './img/artists/manray44.jpg', './img/artists/manray45.jpg', './img/artists/manray46.jpg', './img/artists/manray47.jpg', './img/artists/manray48.jpg', './img/artists/manray49.jpg', './img/artists/manray50.jpg', './img/artists/manray51.jpg', './img/artists/manray52.jpg', './img/artists/manray53.jpg', './img/artists/manray54.jpg', './img/artists/manray55.jpg', './img/artists/manray56.jpg', './img/artists/manray57.jpg', './img/artists/manray58.jpg', './img/artists/manray59.jpg', './img/artists/manray60.jpg', './img/artists/manray61.jpg', './img/artists/manray62.jpg', './img/artists/manray63.jpg', './img/artists/manray64.jpg', './img/artists/manray65.jpg', './img/artists/manray66.jpg', './img/artists/manray67.jpg', './img/artists/manray68.jpg', './img/artists/manray69.jpg', './img/artists/manray70.jpg', './img/artists/manray71.jpg', './img/artists/manray72.jpg', './img/artists/manray73.jpg', './img/artists/manray74.jpg', './img/artists/manray75.jpg', './img/artists/manray76.jpg', './img/artists/manray77.jpg', './img/artists/manray78.jpg', './img/artists/manray79.jpg', './img/artists/manray80.jpg', './img/artists/manray81.jpg'  ],
+            "titles": [ 'Untitled', 'Premier Promenade', 'Still Life with Red Tea Kettle', 'The hill', 'Portrait of Alfred Stieglitz', 'Departure of Summer', 'Hills', 'Landscape', 'Ridgefield Landscape', 'The Black Tray', 'Untitled', 'Untitled', 'Invention', 'Self-Portrait Assemblage', 'Silhouette', 'Orquesta Sinfonica', 'Jazz', 'The Coat Stand', 'The Enigma of Isidore Ducasse', 'Return to Reason', 'Tristan Tzara', 'Rrose Selavy alias Marcel Duchamp', 'Portrait of Rose Sélavy', 'The Gift', 'Kiki de Montparnasse', 'Rayograph (The Kiss)', 'Indestructible Object (or Object to Be Destroyed)', 'Ingre\'s Violin', 'Peggy Guggenheim', 'Black and white', 'Concrete Mixer from the portfolio Revolving Doors', 'Decanter from the portfolio Revolving Doors', 'Dragonfly from the portfolio Revolving Doors', 'Legend from the portfolio Revolving Doors', 'Long Distance from the portfolio Revolving Doors', 'Mime from the portfolio Revolving Doors', 'Orchestra from the portfolio Revolving Doors', 'Shadows from the portfolio Revolving Doors', 'The Meeting from the portfolio Revolving Doors', 'Young Girl (Jeune fille) from the portfolio Revolving Doors', 'Optical Hopes and Illusions', 'Composition (Marchand de Couleurs)', 'Woman with Long Hair', 'Primacy of Matter over Thought', 'Lee Miller', 'Prayer', 'André Breton', 'Solarisation', 'Glass tears', 'Self-Portrait with Gun', 'Veiled Erotic Meret Oppenheim', 'Me, She', 'Minotaur', 'The Kiss', 'Dora Marr', 'Observatory Time: The Lovers', 'Dora Maar', 'La Fortune', 'Pisces', 'Le Beau Temps', 'Nut Girls (Les Filles des Noix)', 'Self-Portrait', 'Promenade', 'As You Like It', 'Diderot\'s Harpsichord or The Merchant of Venice', 'Shakespearean Equation: King Lear', 'Shakespearean Equation: Measure For Measure', 'Shakespearean Equation: Twelfth Night', 'Untitled Abstract', 'Untitled (The Three Graces)', 'Electro-Magie', 'A Night at Saint Jean', 'Cadeau/Gift (Replica of the Lost 1921 Original)', 'Mina Loy', 'Portrait of Juliet', 'The Imaginary Portrait of the Marquis de Sade', 'Kiki de Montparnasse', 'Self-Portrait', 'Lee Miller', 'Juliet et Margaret', 'Observatory Time: The Lovers' ],
+            "artists": [ 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray', 'Man Ray' ],
+            "years": [ '1908', '1912', '1913', '1913', '1913', '1914', '1914', '1914', '1914', '1914', '1915', '1915', '1916', '1916', '1916', '1916', '1919', '1920', '1920', '1921', '1921', '1921', '1921', '1921', '1922', '1922', '1923', '1924', '1924', '1926', '1926', '1926', '1926', '1926', '1926', '1926', '1926', '1926', '1926', '1926', '1928', '1929', '1929', '1929', '1930', '1931', 'c.1930', '1931', '1932', '1932', '1933', '1934', '1934', '1935', '1936', '1936', '1936', '1938', '1938', '1939', '1941', '1941', '1915 - 1945', '1948', '1948', '1948', '1948', '1948', '1948', '1969', '1972', '?', '?', '?', '?', '?', '?', '?', '?', '?', '?' ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 484,
+          user_id: 1,
+          name: 'Morton Subotnick (composer), born 1933',
+          color: '#484222',
+          picture: './img/musicians/mortonsubtnick.jpg',
+          day_of: new Date ('1933-04-14T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: true,
+          override_content: {
+            "sources": [ 'bandcamp', 'bandcamp' ],
+            "src_strings": [ 'https://bandcamp.com/EmbeddedPlayer/album=3901965012/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=4208840544/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/' ],
+            "href_strings": [ 'http://karlrecords.bandcamp.com/album/silver-apples-of-the-moon', 'http://karlrecords.bandcamp.com/album/the-wild-bull' ],
+            "a_strings": [ 'Silver Apples Of The Moon by MORTON SUBOTNICK', 'The Wild Bull by MORTON SUBOTNICK' ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 485,
+          user_id: 1,
+          name: 'Art Taylor (drummer), born 1929',
+          color: '#DCC211',
+          picture: './img/musicians/arttaylor.jpg',
+          day_of: new Date ('1929-04-06T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 486,
+          user_id: 1,
+          name: 'Timothy Young (guitar), born 1970',
+          color: '#333333',
+          picture: './img/musicians/timothyyoung.jpg',
+          day_of: new Date ('1970-11-11T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: true,
+          override_content: {
+            "sources": [ 'bandcamp' ],
+            "src_strings": [ 'https://bandcamp.com/EmbeddedPlayer/album=2760733808/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/' ],
+            "href_strings": [ 'http://jennro.bandcamp.com/album/3-nights' ],
+            "a_strings": [ '3 NIGHTS by jenn romero &amp; timothy young' ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
