@@ -1104,6 +1104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 56,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/portrait-of-philomene.jpg',
+          title: 'Portrait of Philomene',
+          artist: 'Sonia Delaunay',
+          year: '1907',
+          rule: {
+            "monday": [ 7, 17, 25, 4 ],
+            "tuesday": [ 6, 16, 24, 3 ],
+            "wednesday": [ 5, 15, 23, 2 ],
+            "thursday": [ 4, 14, 22, 1 ],
+            "friday": [ 3, 13, 12, 31 ],
+            "saturday": [ 9, 18, 27, 6 ],
+            "sunday": [ 8, 18, 28, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 57,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/full-moon-1980.jpg',
+          title: 'Full Moon',
+          artist: 'Louise Nevelson',
+          year: '1980',
+          rule: {
+            "monday": [ 8, 18, 28, 5 ],
+            "tuesday": [ 7, 17, 25, 4 ],
+            "wednesday": [ 6, 16, 24, 3 ],
+            "thursday": [ 5, 15, 23, 2 ],
+            "friday": [ 4, 14, 22, 1 ],
+            "saturday": [ 3, 13, 12, 31 ],
+            "sunday": [ 9, 18, 27, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 58,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/nu.jpg',
+          title: 'Nu',
+          artist: 'Tarsila do Amaral',
+          year: '?',
+          rule: {
+            "monday": [ 9, 18, 27, 6 ],
+            "tuesday": [ 8, 18, 28, 5 ],
+            "wednesday": [ 7, 17, 25, 4 ],
+            "thursday": [ 6, 16, 24, 3 ],
+            "friday": [ 5, 15, 23, 2 ],
+            "saturday": [ 4, 14, 22, 1 ],
+            "sunday": [ 3, 13, 12, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 59,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/dawn-1933.jpg',
+          title: 'Dawn',
+          artist: 'Laura Knight',
+          year: '1933',
+          rule: {
+            "monday": [ 3, 13, 12, 31 ],
+            "tuesday": [ 9, 18, 27, 6 ],
+            "wednesday": [ 8, 18, 28, 5 ],
+            "thursday": [ 7, 17, 25, 4 ],
+            "friday": [ 6, 16, 24, 3 ],
+            "saturday": [ 5, 15, 23, 2 ],
+            "sunday": [ 4, 14, 22, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 60,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/unknown-title-5.jpg',
+          title: 'unknown title',
+          artist: 'Lucia Demetriade Balacescu',
+          year: '?',
+          rule: {
+            "monday": [ 4, 14, 22, 1 ],
+            "tuesday": [ 3, 13, 12, 31 ],
+            "wednesday": [ 9, 18, 27, 6 ],
+            "thursday": [ 8, 18, 28, 5 ],
+            "friday": [ 7, 17, 25, 4 ],
+            "saturday": [ 6, 16, 24, 3 ],
+            "sunday": [ 5, 15, 23, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
