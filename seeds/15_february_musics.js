@@ -652,6 +652,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 37,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3436708453/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://franklowe.bandcamp.com/album/black-beings',
+          a_string: 'Black Beings by Frank Lowe',
+          rule: {
+            "monday": [ 6, 20, 22, 25],
+            "tuesday": [ 7, 11, 13, 17],
+            "wednesday": [ 9, 13, 15, 19],
+            "thursday": [ 11, 15, 17, 21],
+            "saturday": [ 23, 17, 19, 25]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 38,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3182862440/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://aumfidelity.bandcamp.com/album/live-in-santanna-arresi-2004',
+          a_string: 'Live in Sant&#39;Anna Arresi, 2004 by David S. Ware &amp; Matthew Shipp',
+          rule: {
+            "monday": [ 23, 17, 19, 25],
+            "tuesday": [ 6, 20, 22, 25],
+            "wednesday": [ 7, 11, 13, 17],
+            "thursday": [ 9, 13, 15, 19],
+            "saturday": [ 11, 15, 17, 21]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 39,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1768578986/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://aumfidelity.bandcamp.com/album/live-in-new-york-2010',
+          a_string: 'Live in New York, 2010 by David S. Ware Trio',
+          rule: {
+            "monday": [ 11, 15, 17, 21],
+            "tuesday": [ 23, 17, 19, 25],
+            "wednesday": [ 6, 20, 22, 25],
+            "thursday": [ 7, 11, 13, 17],
+            "saturday": [ 9, 13, 15, 19]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
