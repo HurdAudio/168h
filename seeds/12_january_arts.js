@@ -1504,6 +1504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 76,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/bleu-vert-jaune-orange-1954.jpg',
+          title: 'Bleu-Vert-Jaune-Orange',
+          artist: 'Francois Morellet',
+          year: '1954',
+          rule: {
+            "monday": [ 22, 24, 26, 27 ],
+            "tuesday": [ 24, 26, 30, 2 ],
+            "wednesday": [ 26, 28, 29, 1 ],
+            "thursday": [ 11, 12, 24, 15 ],
+            "friday": [ 14, 16, 18, 28 ],
+            "saturday": [ 16, 17, 19, 22 ],
+            "sunday": [ 19, 20, 11, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 77,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/floris-1964.jpg',
+          title: 'Floris',
+          artist: 'Bernard Cohen',
+          year: '1964',
+          rule: {
+            "monday": [ 20, 21, 12, 16 ],
+            "tuesday": [ 23, 25, 26, 28 ],
+            "wednesday": [ 25, 27, 31, 3 ],
+            "thursday": [ 27, 29, 30, 2 ],
+            "friday": [ 12, 13, 25, 16 ],
+            "saturday": [ 15, 17, 19, 29 ],
+            "sunday": [ 17, 18, 20, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 78,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/moby-dick-1956.jpg',
+          title: 'Moby Dick',
+          artist: 'Marcelle Loubchansky',
+          year: '1956',
+          rule: {
+            "monday": [ 17, 18, 20, 23 ],
+            "tuesday": [ 20, 21, 12, 16 ],
+            "wednesday": [ 23, 25, 26, 28 ],
+            "thursday": [ 25, 27, 31, 3 ],
+            "friday": [ 27, 29, 30, 2 ],
+            "saturday": [ 12, 13, 25, 16 ],
+            "sunday": [ 15, 17, 19, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 79,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/la-guitare-1944.jpg',
+          title: 'La Guitare',
+          artist: 'Gustave Singier',
+          year: '1944',
+          rule: {
+            "monday": [ 15, 17, 19, 29 ],
+            "tuesday": [ 17, 18, 20, 23 ],
+            "wednesday": [ 20, 21, 12, 16 ],
+            "thursday": [ 23, 25, 26, 28 ],
+            "friday": [ 25, 27, 31, 3 ],
+            "saturday": [ 27, 29, 30, 2 ],
+            "sunday": [ 12, 13, 25, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 80,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/october-1955.jpg',
+          title: 'October',
+          artist: 'Roger Bissière',
+          year: '1955',
+          rule: {
+            "monday": [ 12, 13, 25, 16 ],
+            "tuesday": [ 15, 17, 19, 29 ],
+            "wednesday": [ 17, 18, 20, 23 ],
+            "thursday": [ 20, 21, 12, 16 ],
+            "friday": [ 23, 25, 26, 28 ],
+            "saturday": [ 25, 27, 31, 3 ],
+            "sunday": [ 27, 29, 30, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
