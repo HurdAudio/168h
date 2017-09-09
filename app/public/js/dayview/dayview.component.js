@@ -1608,13 +1608,33 @@
           $http.get(`/${theDayString}/${currentUserId}`)
           .then(specialDayMusicData=>{
             let specialDayMusic = specialDayMusicData.data;
-            for (let i = 0; i < specialDayMusic.length; i++) {
-              vm.musics[indexMusic] = {};
-              vm.musics[indexMusic].index = indexMusic;
-              vm.musics[indexMusic].src_string = specialDayMusic[i].src_string;
-              vm.musics[indexMusic].href_string = specialDayMusic[i].href_string;
-              vm.musics[indexMusic].a_string = specialDayMusic[i].a_string;
-              ++indexMusic;
+            if (specialDayMusic.length > 5) {
+              let filteredDaySelections = [];
+              let rander = Math.floor(Math.random() * specialDayMusic.length);
+              filteredDaySelections.push(rander);
+              do {
+                rander = Math.floor(Math.random() * specialDayMusic.length);
+                if (filteredDaySelections.indexOf(rander) === -1) {
+                  filteredDaySelections.push(rander);
+                }
+              } while(filteredDaySelections.length < 5);
+              for (let hh = 0; hh < filteredDaySelections.length; hh++) {
+                vm.musics[indexMusic] = {};
+                vm.musics[indexMusic].index = indexMusic;
+                vm.musics[indexMusic].src_string = specialDayMusic[filteredDaySelections[hh]].src_string;
+                vm.musics[indexMusic].href_string = specialDayMusic[filteredDaySelections[hh]].href_string;
+                vm.musics[indexMusic].a_string = specialDayMusic[filteredDaySelections[hh]].a_string;
+                ++indexMusic;
+              }
+            } else {
+              for (let i = 0; i < specialDayMusic.length; i++) {
+                vm.musics[indexMusic] = {};
+                vm.musics[indexMusic].index = indexMusic;
+                vm.musics[indexMusic].src_string = specialDayMusic[i].src_string;
+                vm.musics[indexMusic].href_string = specialDayMusic[i].href_string;
+                vm.musics[indexMusic].a_string = specialDayMusic[i].a_string;
+                ++indexMusic;
+              }
             }
             setTimeout(()=>{
               if (vm.musics.length > 0) {
@@ -3913,6 +3933,22 @@
         });
       }
 
+      function historicalTrivia() {
+        let sendDate = new Date(viewDate);
+        let yearFact = document.getElementById('yearFact');
+        let eventFact = document.getElementById('eventFact');
+
+        $http.get(`/onthisdayinhistory/${sendDate}`)
+        .then(historicalJSONData=>{
+          let historicalJSON = historicalJSONData.data.data;
+          let rand = Math.floor(Math.random() * historicalJSON.Events.length);
+          yearFact.innerHTML = "On this day in " + historicalJSON.Events[rand].year;
+          eventFact.innerHTML = historicalJSON.Events[rand].text;
+
+        });
+
+      }
+
       function onInit() {
         console.log("Dayview is lit");
 
@@ -3959,6 +3995,7 @@
         detectTimeBlocks();
         setScheduleGenerator();
         setGoalsReport();
+        historicalTrivia();
       }
 
     }

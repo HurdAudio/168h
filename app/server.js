@@ -5,7 +5,7 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const knex = require('knex');
 const bcrypt = require('bcrypt');
-// const request = require('request');
+const request = require('request');
 
 const app = express();
 // const visitorfeedbacks = require('./routes/visitorfeedbacks.js');
@@ -170,6 +170,14 @@ app.use('/moment', express.static(path.join(__dirname, '../node_modules/moment/m
 // app.use('/fantasyteams', fantasyteams);
 // app.use('/headtoheadmatchups', headtoheadmatchups);
 // app.use('/rotisseriematchups', rotisseriematchups);
+app.get('/onthisdayinhistory/:date', (req, res, next) =>{
+  let newUrl = 'http://history.muffinlabs.com/date/';
+  let date = new Date(req.params.date);
+  let month = date.getMonth() + 1;
+  let day = date.getDate();
+  let queryString = newUrl + month + '/' + day;
+  return request(queryString).pipe(res);
+});
 
 
 

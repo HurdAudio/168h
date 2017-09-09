@@ -2925,3 +2925,17 @@ footer img {
 #musicPlayer {
   display: initial;
 }
+
+#todayInHistoricalEvents {
+  font-family: 'Alike Angular', serif;
+}
+
+#todayInHistoricalEvents h3 {
+  font-size: 30px;
+  margin-left: 2em;
+}
+
+#todayInHistoricalEvents p {
+  font-size: 24px;
+  margin-left: 1.4em;
+}
