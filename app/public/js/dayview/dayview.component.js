@@ -1699,6 +1699,9 @@
             case(0):
               theMonthString = 'january_musicsbyuser';
               break;
+            case(1):
+              theMonthString = "february_musicsbyuser";
+              break;
             default:
               console.log('month not yet supported');
           }
@@ -1706,6 +1709,7 @@
             $http.get(`/${theMonthString}/${currentUserId}`)
             .then(monthMusicData=>{
               let monthMusic = monthMusicData.data;
+              console.log(monthMusic);
               for (let pp = 0; pp < monthMusic.length; pp++) {
                 if (monthMusic[pp].rule[dayOfWeek].indexOf(theDate.getDate()) !== -1) {
                   vm.musics[indexMusic] = {};

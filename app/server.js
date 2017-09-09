@@ -36,6 +36,8 @@ const january_musics = require('./routes/january_musics.js');
 const january_musicsbyuser = require('./routes/january_musicsbyuser.js');
 const february_arts = require('./routes/february_arts.js');
 const february_artsbyuser = require('./routes/february_artsbyuser.js');
+const february_musics = require('./routes/february_musics.js');
+const february_musicsbyuser = require('./routes/february_musicsbyuser.js');
 
 const port = process.env.PORT || 3007;
 
@@ -75,6 +77,8 @@ app.use('/moment', express.static(path.join(__dirname, '../node_modules/moment/m
  app.use('/january_musicsbyuser', january_musicsbyuser);
  app.use('/february_arts', february_arts);
  app.use('/february_artsbyuser', february_artsbyuser);
+ app.use('/february_musics', february_musics);
+ app.use('/february_musicsbyuser', february_musicsbyuser);
 // app.use('/user_blogs', user_blogs);
 // app.use('/blog_comments', blog_comments);
 // app.use('/books', books);
