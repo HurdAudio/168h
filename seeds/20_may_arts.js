@@ -704,6 +704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 36,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/workers-on-their-way-home-1915.jpg',
+          title: 'Workers on Their Way Home',
+          artist: 'Edvard Munch',
+          year: '1913 - 1915',
+          rule: {
+            "monday": [ 4, 14, 24, 3 ],
+            "tuesday": [ 2, 12, 22, 1 ],
+            "wednesday": [ 31, 10, 20, 30 ],
+            "thursday": [ 29, 8, 18, 28 ],
+            "friday": [ 27, 6, 16, 26 ],
+            "saturday": [ 25, 4, 14, 24 ],
+            "sunday": [ 6, 16, 26, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 37,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/workers-1922.jpg',
+          title: 'Workers',
+          artist: 'David Burliuk',
+          year: '1922',
+          rule: {
+            "monday": [ 6, 16, 26, 5 ],
+            "tuesday": [ 4, 14, 24, 3 ],
+            "wednesday": [ 2, 12, 22, 1 ],
+            "thursday": [ 31, 10, 20, 30 ],
+            "friday": [ 29, 8, 18, 28 ],
+            "saturday": [ 27, 6, 16, 26 ],
+            "sunday": [ 25, 4, 14, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 38,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/worker-and-peasant-1927.jpg',
+          title: 'Worker and peasant',
+          artist: 'Aleksandr Deyneka',
+          year: '1927',
+          rule: {
+            "monday": [ 25, 4, 14, 24 ],
+            "tuesday": [ 6, 16, 26, 5 ],
+            "wednesday": [ 4, 14, 24, 3 ],
+            "thursday": [ 2, 12, 22, 1 ],
+            "friday": [ 31, 10, 20, 30 ],
+            "saturday": [ 29, 8, 18, 28 ],
+            "sunday": [ 27, 6, 16, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 39,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/project-of-poster-the-center-of-textile-workers-in-belgium-1938-1(1).jpg',
+          title: 'Project of poster "The center of textile workers in Belgium"',
+          artist: 'Rene Magritte',
+          year: '1938',
+          rule: {
+            "monday": [ 27, 6, 16, 26 ],
+            "tuesday": [ 25, 4, 14, 24 ],
+            "wednesday": [ 6, 16, 26, 5 ],
+            "thursday": [ 4, 14, 24, 3 ],
+            "friday": [ 2, 12, 22, 1 ],
+            "saturday": [ 31, 10, 20, 30 ],
+            "sunday": [ 29, 8, 18, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 40,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/girl-in-red-scarf-worker-1925.jpg',
+          title: 'Girl in red scarf (worker)',
+          artist: 'Kuzma Petrov-Vodkin',
+          year: '1925',
+          rule: {
+            "monday": [ 29, 8, 18, 28 ],
+            "tuesday": [ 27, 6, 16, 26 ],
+            "wednesday": [ 25, 4, 14, 24 ],
+            "thursday": [ 6, 16, 26, 5 ],
+            "friday": [ 4, 14, 24, 3 ],
+            "saturday": [ 2, 12, 22, 1 ],
+            "sunday": [ 31, 10, 20, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
