@@ -328,6 +328,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 19,
+          user_id: 1,
+          theme: 'avant garde/new music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2430724552/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ronminis.bandcamp.com/album/-',
+          a_string: 'נקודת אור by Ron Minis',
+          rule: {
+            "monday": [ 4, 10, 17, 30 ],
+            "tuesday": [ 3, 9, 16, 29 ],
+            "wednesday": [ 7, 13, 20, 2 ],
+            "thursday": [ 6, 12, 19, 1 ],
+            "saturday": [ 5, 11, 18, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 20,
+          user_id: 1,
+          theme: 'avant garde/new music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2033214861/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://highmoss.bandcamp.com/album/north-towards-ever',
+          a_string: 'North Towards Ever by Haworth Hodgkinson',
+          rule: {
+            "monday": [ 5, 11, 18, 31 ],
+            "tuesday": [ 4, 10, 17, 30 ],
+            "wednesday": [ 3, 9, 16, 29 ],
+            "thursday": [ 7, 13, 20, 2 ],
+            "saturday": [ 6, 12, 19, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 21,
+          user_id: 1,
+          theme: 'avant garde/new music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1899744312/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://discusmusic.bandcamp.com/album/theta-two-47cd',
+          a_string: 'Theta Two - 47CD by Orchestra Of The Upper Atmosphere',
+          rule: {
+            "monday": [ 7, 13, 20, 2 ],
+            "tuesday": [ 6, 12, 19, 1 ],
+            "wednesday": [ 5, 11, 18, 31 ],
+            "thursday": [ 4, 10, 17, 30 ],
+            "saturday": [ 8, 14, 21, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
