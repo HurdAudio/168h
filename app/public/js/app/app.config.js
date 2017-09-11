@@ -27,6 +27,12 @@
         url: '/dayview/:id',
         parent: 'app',
         component: 'dayview'
+      })
+      .state({
+        name: 'weekview',
+        url: '/weekview',
+        parent: 'app',
+        component: 'weekview'
       });
       // .state({
       //   name: 'resume',

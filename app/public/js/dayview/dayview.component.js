@@ -1,5 +1,8 @@
 (function() {
   'use strict';
+  var dayClock = false;
+  var weekClock = false;
+  var myTimer = setInterval(setClockDay,1000);
   var currentUserId = 0;
   var viewDate;
   var year = 0;
@@ -45,7 +48,9 @@
 
 
   function setClockDay(){
-       document.getElementById("clockDayview").innerHTML=new Date().toLocaleTimeString('en-GB');
+    if ((dayClock) && (!weekClock)){
+      document.getElementById("clockDayview").innerHTML=new Date().toLocaleTimeString('en-GB');
+    }
   }
 
 
@@ -76,6 +81,7 @@
       vm.addTaskToDay = addTaskToDay;
       vm.verbalizeTimeblock = verbalizeTimeblock;
       vm.advanceArt = advanceArt;
+      vm.gotoWeek = gotoWeek;
 
       function advanceArt(index) {
         let nextArt = Math.floor(Math.random()*vm.arts.length);
@@ -718,10 +724,18 @@
         addNewOccasion.setAttribute("style", "display: initial;");
       }
 
+      function gotoWeek() {
+        myTimer = undefined;
+        dayClock = false;
+        weekClock = true;
+        $state.go('weekview');
+      }
+
       function previousDay() {
         let navDay = new Date(viewDate);
         navDay.setDate(navDay.getDate()-1);
         let idString = 'user=' + currentUserId + '&dayof=' + navDay.getFullYear() + '-' + (navDay.getMonth() + 1) + '-' + navDay.getDate();
+        myTimer = undefined;
         $state.go('dayview', {id: idString});
 
       }
@@ -730,6 +744,7 @@
         let navDay = new Date(viewDate);
         navDay.setDate(navDay.getDate() + 1);
         let idString = 'user=' + currentUserId + '&dayof=' + navDay.getFullYear() + '-' + (navDay.getMonth() + 1) + '-' + navDay.getDate();
+        myTimer = undefined;
         $state.go('dayview', {id: idString});
       }
 
@@ -737,6 +752,7 @@
         let navDay = new Date();
         navDay.setDate(navDay.getDate());
         let idString = 'user=' + currentUserId + '&dayof=' + navDay.getFullYear() + '-' + (navDay.getMonth() + 1) + '-' + navDay.getDate();
+        myTimer = undefined;
         $state.go('dayview', {id: idString});
       }
 
@@ -4516,44 +4532,48 @@
             if ((dictionaryReturn.suggestion !== undefined) && (dictionaryReturn.suggestion.length > 0)) {
               sendToDictionary(dictionaryReturn.suggestion[Math.floor(Math.random() * dictionaryReturn.suggestion.length)]);
             } else {
-              wordOfDay.innerHTML = dictionaryReturn.entry[0].ew;
-              if (dictionaryReturn.entry[0].hw[0]._ === undefined) {
-                wordSyllable.innerHTML = dictionaryReturn.entry[0].hw;
-              } else {
-                wordSyllable.innerHTML = dictionaryReturn.entry[0].hw[0]._;
-              }
-              if (dictionaryReturn.entry[0].pr !== undefined) {
-                if ((dictionaryReturn.entry[0].pr[0] === undefined) || (dictionaryReturn.entry[0].pr[0]._ === undefined)) {
-                  pronounciation.innerHTML = '(' + dictionaryReturn.entry[0].pr + ')';
+              if ((dictionaryReturn.entry[0].ew !== undefined) || (dictionaryReturn.entry[0].def !== undefined)) {
+                wordOfDay.innerHTML = dictionaryReturn.entry[0].ew;
+                if (dictionaryReturn.entry[0].hw[0]._ === undefined) {
+                  wordSyllable.innerHTML = dictionaryReturn.entry[0].hw;
                 } else {
-                  pronounciation.innerHTML = '(' + dictionaryReturn.entry[0].pr[0]._ + ')';
+                  wordSyllable.innerHTML = dictionaryReturn.entry[0].hw[0]._;
                 }
-              } else {
-                pronounciation.innerHTML = '';
-              }
-              vm.definitions = [];
-              //let incrementDefs = 0;
-              for (let i = 0; i < dictionaryReturn.entry.length; i++) {
-                vm.definitions[i] = {};
-                vm.definitions[i].entryWord = dictionaryReturn.entry[i].ew[0];
-                vm.definitions[i].wordType = dictionaryReturn.entry[i].fl[0];
-                meaningString = dictionaryReturn.entry[i].def[0].date + '    ';
-                for (let j = 0; j < dictionaryReturn.entry[i].def[0].dt.length; j++) {
-                  //incrementDefs = j + 1;
-                  //meaningString += incrementDefs + '. ';
-                  if (dictionaryReturn.entry[i].def !== undefined) {
-                    if (typeof(dictionaryReturn.entry[i].def[0].dt[j]) === 'object') {
-                      //if (dictionaryReturn.entry[i].def[0].dt[j]._ !== undefined) {
-                        meaningString += dictionaryReturn.entry[i].def[0].dt[j]._ + ' ';
-                      ///} else {
-                        ///meaningString += dictionaryReturn.entry[i].def[0].dt[j].un[0] + ' ';
-                      ///}
-                    } else {
-                      meaningString += dictionaryReturn.entry[i].def[0].dt[j] + '. ';
+                if (dictionaryReturn.entry[0].pr !== undefined) {
+                  if ((dictionaryReturn.entry[0].pr[0] === undefined) || (dictionaryReturn.entry[0].pr[0]._ === undefined)) {
+                    pronounciation.innerHTML = '(' + dictionaryReturn.entry[0].pr + ')';
+                  } else {
+                    pronounciation.innerHTML = '(' + dictionaryReturn.entry[0].pr[0]._ + ')';
+                  }
+                } else {
+                  pronounciation.innerHTML = '';
+                }
+                vm.definitions = [];
+                //let incrementDefs = 0;
+                for (let i = 0; i < dictionaryReturn.entry.length; i++) {
+                  vm.definitions[i] = {};
+                  vm.definitions[i].entryWord = dictionaryReturn.entry[i].ew[0];
+                  vm.definitions[i].wordType = dictionaryReturn.entry[i].fl[0];
+                  meaningString = dictionaryReturn.entry[i].def[0].date + '    ';
+                  for (let j = 0; j < dictionaryReturn.entry[i].def[0].dt.length; j++) {
+                    //incrementDefs = j + 1;
+                    //meaningString += incrementDefs + '. ';
+                    if (dictionaryReturn.entry[i].def !== undefined) {
+                      if (typeof(dictionaryReturn.entry[i].def[0].dt[j]) === 'object') {
+                        //if (dictionaryReturn.entry[i].def[0].dt[j]._ !== undefined) {
+                          meaningString += dictionaryReturn.entry[i].def[0].dt[j]._ + ' ';
+                        ///} else {
+                          ///meaningString += dictionaryReturn.entry[i].def[0].dt[j].un[0] + ' ';
+                        ///}
+                      } else {
+                        meaningString += dictionaryReturn.entry[i].def[0].dt[j] + '. ';
+                      }
                     }
                   }
+                  vm.definitions[i].definition = meaningString;
                 }
-                vm.definitions[i].definition = meaningString;
+              } else {
+                wordOfTheDay();
               }
             }
           });
@@ -4605,9 +4625,11 @@
 
       function onInit() {
         console.log("Dayview is lit");
+        dayClock = true;
+        weekClock = false;
 
 
-        var myTimer = setInterval(setClockDay,1000);
+
         let weekdaySlot = document.getElementById('weekdaySlot');
         let numdaySlot = document.getElementById('numdaySlot');
         let monthSlot = document.getElementById('monthSlot');
@@ -4624,6 +4646,7 @@
         if (parseInt(userCookie) !== parseInt(currentUserId)) {
 
           alert('forbidden user access');
+          myTimer = undefined;
           $state.go('landing');
         } else {
           $http.get(`/users/${currentUserId}`)
@@ -4632,6 +4655,7 @@
             if ((getCookie(userAccount.security.key)) !== (userAccount.security.value)) {
 
               alert('access denied');
+              myTimer = undefined;
               $state.go('landing');
             }
           });
