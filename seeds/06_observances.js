@@ -7658,6 +7658,129 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 487,
+          user_id: 1,
+          name: 'Christian Marclay (turntablist/artist), born 1955',
+          color: '#E8D22F',
+          picture: './img/musicians/christianmarclay.jpg',
+          day_of: new Date ('1955-01-11T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: true,
+          override_content: {
+            "sources": [ 'bandcamp' ],
+            "src_strings": [ 'https://bandcamp.com/EmbeddedPlayer/album=218403701/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/' ],
+            "href_strings": [ 'http://christianmarclay.bandcamp.com/album/more-encores-2' ],
+            "a_strings": [ 'More Encores by Christian Marclay' ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 488,
+          user_id: 1,
+          name: 'Hal Newhouser (pitcher), born 1921',
+          color: '#2F3332',
+          picture: './img/baseball/halnewhouser.jpg',
+          day_of: new Date ('1921-05-20T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 489,
+          user_id: 1,
+          name: 'Rivers by Michael Farris Smith published in 2013',
+          color: '#BCD1CC',
+          picture: './img/books/rivers.jpg',
+          day_of: new Date ('2013-09-10T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 490,
+          user_id: 1,
+          name: 'Kurt Schwitters (artist), born 1887',
+          color: '#8F6D3F',
+          picture: './img/artists/kurtschwitters.jpg',
+          day_of: new Date ('1887-06-20T13:44:00.000Z'),
+          is_annual: true,
+          art_override: true,
+          music_override: false,
+          override_content: {
+            "img_paths": [ './img/artists/schwitters01.jpg', './img/artists/schwitters02.jpg', './img/artists/schwitters03.jpg', './img/artists/schwitters04.jpg', './img/artists/schwitters05.jpg', './img/artists/schwitters06.jpg', './img/artists/schwitters07.jpg', './img/artists/schwitters08.jpg', './img/artists/schwitters09.jpg', './img/artists/schwitters10.jpg', './img/artists/schwitters11.jpg', './img/artists/schwitters12.jpg', './img/artists/schwitters13.jpg', './img/artists/schwitters14.jpg', './img/artists/schwitters15.jpg', './img/artists/schwitters16.jpg', './img/artists/schwitters17.jpg', './img/artists/schwitters18.jpg', './img/artists/schwitters19.jpg', './img/artists/schwitters20.jpg', './img/artists/schwitters21.jpg', './img/artists/schwitters22.jpg', './img/artists/schwitters23.jpg', './img/artists/schwitters24.jpg', './img/artists/schwitters25.jpg', './img/artists/schwitters26.jpg', './img/artists/schwitters27.jpg', './img/artists/schwitters28.jpg', './img/artists/schwitters29.jpg', './img/artists/schwitters30.jpg', './img/artists/schwitters31.jpg', './img/artists/schwitters32.jpg', './img/artists/schwitters33.jpg', './img/artists/schwitters34.jpg', './img/artists/schwitters35.jpg', './img/artists/schwitters36.jpg', './img/artists/schwitters37.jpg', './img/artists/schwitters38.jpg', './img/artists/schwitters39.jpg' ],
+            "titles": [ 'The And-Picture', 'N Watercolor 1. (The Heart Goes from Sugar to Coffee)', 'Construction for Noble Ladies', 'Mountain Graveyard', 'Merzbild Rossfett', 'Mai 191', 'Picture with Light Center', 'Revolving', 'Merz Picture 25A: The Star Picture', 'Merzpicture Thirty-One', 'Forms in Space', 'Cherry Picture', 'Santa Claus', 'something or other', 'Mz 231. Miss Blanche', 'Aphorism', 'Relief with Cross and Square', '(Elikan)', 'Small Sailors\' Home', 'Oorlog', 'Man soll nicht asen mit Phrasen', 'New Merzpicture', 'Merzbau seen from the outside', '(Pino Antoni)', 'Merzbau', 'The Spring Door', 'Merzpicture with Rainbow', 'Merzbild Alf', 'Untitled (D’Cily)', '(Difficult)', 'Hitler Gang', 'Heavy Relief', 'Relief in Relief', 'Chicken and Egg', 'The Holy Night by Antoni Allegri, known as Correggio...', 'For Kate', 'Lofty', 'Mother and Egg', 'The Clown' ],
+            "artists": [ 'Kurt Schwitters', 'Kurt Schwitters', 'Kurt Schwitters', 'Kurt Schwitters', 'Kurt Schwitters', 'Kurt Schwitters', 'Kurt Schwitters', 'Kurt Schwitters', 'Kurt Schwitters', 'Kurt Schwitters', 'Kurt Schwitters', 'Kurt Schwitters', 'Kurt Schwitters', 'Kurt Schwitters', 'Kurt Schwitters', 'Kurt Schwitters', 'Kurt Schwitters', 'Kurt Schwitters', 'Kurt Schwitters', 'Kurt Schwitters', 'Kurt Schwitters', 'Kurt Schwitters', 'Kurt Schwitters', 'Kurt Schwitters', 'Kurt Schwitters', 'Kurt Schwitters', 'Kurt Schwitters', 'Kurt Schwitters', 'Kurt Schwitters', 'Kurt Schwitters', 'Kurt Schwitters', 'Kurt Schwitters', 'Kurt Schwitters', 'Kurt Schwitters', 'Kurt Schwitters', 'Kurt Schwitters', 'Kurt Schwitters', 'Kurt Schwitters', 'Kurt Schwitters' ],
+            "years": [ '1919', '1919', '1919', '1919', 'c.1919', 'c.1919', '1919', '1919', '1920', '1920', '1920', '1921', '1922', '1922', '1923', '1923', '1924', 'c.1925', '1926', '1930', '1930', '1931', '1933', '1933 - 1934', '1923 - 1937', '1938', 'c.1939', '1939', '1942', '1942 - 1943', '1944', '1945', '1945', '1946', '1947', '1947', '1947', '1947', '1947' ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 491,
+          user_id: 1,
+          name: 'Miroslav Vitouš (bassist), born 1947',
+          color: '#131210',
+          picture: './img/musicians/miroslavvitouš.jpg',
+          day_of: new Date ('1947-12-06T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: true,
+          override_content: {
+            "sources": [ 'bandcamp' ],
+            "src_strings": [ 'http://bandcamp.com/EmbeddedPlayer/album=1818048457/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/' ],
+            "href_strings": [ 'http://bandcamp.for-tune.pl/album/wings' ],
+            "a_strings": [ 'Wings by Adam Pierończyk &amp; Miroslav Vitous' ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 492,
+          user_id: 1,
+          name: 'David S. Ware (reeds), born 1949',
+          color: '#DC9F2A',
+          picture: './img/musicians/davidsware.jpg',
+          day_of: new Date ('1949-11-07T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: true,
+          override_content: {
+            "sources": [ 'bandcamp', 'bandcamp' ],
+            "src_strings": [ 'https://bandcamp.com/EmbeddedPlayer/album=659111791/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=1768578986/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/' ],
+            "href_strings": [ 'http://aumfidelity.bandcamp.com/album/organica-solo-saxophones-vol-2', 'http://aumfidelity.bandcamp.com/album/live-in-new-york-2010' ],
+            "a_strings": [ 'Organica (solo saxophones, vol. 2) by David S. Ware', 'Live in New York, 2010 by David S. Ware Trio' ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 493,
+          user_id: 1,
+          name: 'Hector Zazou (composer), born 1948',
+          color: '#2352B2',
+          picture: './img/musicians/hectorzazou.jpg',
+          day_of: new Date ('1948-07-11T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: true,
+          override_content: {
+            "sources": [ 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp' ],
+            "src_strings": [ 'https://bandcamp.com/EmbeddedPlayer/album=2517262434/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=244080358/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=1154201969/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=1405552921/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=822499786/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=185173954/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/' ],
+            "href_strings": [ 'http://hectorzazou.bandcamp.com/album/in-the-house-of-mirrors', 'http://hectorzazou.bandcamp.com/album/12-las-vegas-is-cursed', 'http://hectorzazou.bandcamp.com/album/glyph', 'http://hectorzazou.bandcamp.com/album/geologies', 'http://hectorzazou.bandcamp.com/album/reivax-au-bongo', 'http://hectorzazou.bandcamp.com/album/geographies' ],
+            "a_strings": [ 'In The House Of Mirrors by Hector Zazou', '12 (Las Vegas Is Cursed) by Hector Zazou', 'Glyph by Hector Zazou', 'Geologies by Hector Zazou', 'Reivax Au Bongo by Hector Zazou', 'Geographies by Hector Zazou' ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
