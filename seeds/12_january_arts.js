@@ -1604,6 +1604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 81,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/volume-1958-1.jpg',
+          title: 'Volume',
+          artist: 'Dadamaino',
+          year: '1958',
+          rule: {
+            "monday": [ 27, 29, 30, 2 ],
+            "tuesday": [ 12, 13, 25, 16 ],
+            "wednesday": [ 15, 17, 19, 29 ],
+            "thursday": [ 17, 18, 20, 23 ],
+            "friday": [ 20, 21, 12, 16 ],
+            "saturday": [ 23, 25, 26, 28 ],
+            "sunday": [ 25, 27, 31, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 82,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/constructive-decorative-composition-1924-7.jpg',
+          title: 'Constructive-decorative composition',
+          artist: 'David Kakabadze',
+          year: '1924',
+          rule: {
+            "monday": [ 25, 27, 31, 3 ],
+            "tuesday": [ 27, 29, 30, 2 ],
+            "wednesday": [ 12, 13, 25, 16 ],
+            "thursday": [ 15, 17, 19, 29 ],
+            "friday": [ 17, 18, 20, 23 ],
+            "saturday": [ 20, 21, 12, 16 ],
+            "sunday": [ 23, 25, 26, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 83,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/untitled-2002.jpg',
+          title: 'Untitled',
+          artist: 'Doreen Reid Nakamarra',
+          year: '2002',
+          rule: {
+            "monday": [ 23, 25, 26, 28 ],
+            "tuesday": [ 25, 27, 31, 3 ],
+            "wednesday": [ 27, 29, 30, 2 ],
+            "thursday": [ 12, 13, 25, 16 ],
+            "friday": [ 15, 17, 19, 29 ],
+            "saturday": [ 17, 18, 20, 23 ],
+            "sunday": [ 20, 21, 12, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 84,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/mount-tamalpais.png',
+          title: 'Mount Tamalpais',
+          artist: 'Etel Adnan',
+          year: '1985',
+          rule: {
+            "monday": [ 21, 22, 13, 17 ],
+            "tuesday": [ 24, 26, 27, 29 ],
+            "wednesday": [ 26, 28, 1, 4 ],
+            "thursday": [ 28, 30, 31, 3 ],
+            "friday": [ 13, 14, 26, 17 ],
+            "saturday": [ 16, 18, 20, 30 ],
+            "sunday": [ 18, 19, 21, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 85,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/untitled-1970-1.jpg',
+          title: 'Untitled',
+          artist: 'Nasreen Mohamedi',
+          year: '1970',
+          rule: {
+            "monday": [ 18, 19, 21, 24 ],
+            "tuesday": [ 21, 22, 13, 17 ],
+            "wednesday": [ 24, 26, 27, 29 ],
+            "thursday": [ 26, 28, 1, 4 ],
+            "friday": [ 28, 30, 31, 3 ],
+            "saturday": [ 13, 14, 26, 17 ],
+            "sunday": [ 16, 18, 20, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
