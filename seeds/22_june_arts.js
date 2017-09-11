@@ -604,6 +604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 31,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/conoco-shamrock-texas-from-five-views-from-the-panhandle-series.jpg',
+          title: 'Conoco - Shamrock, Texas (from Five Views from the Panhandle Series)',
+          artist: 'Edward Ruscha',
+          year: 'XX cent.',
+          rule: {
+            "monday": [ 29, 9, 29, 27 ],
+            "tuesday": [ 5, 15, 25, 2 ],
+            "wednesday": [ 4, 14, 24, 2 ],
+            "thursday": [ 3, 13, 23, 1 ],
+            "friday": [ 2, 12, 22, 30 ],
+            "saturday": [ 1, 11, 21, 29 ],
+            "sunday": [ 30, 10, 20, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 32,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/postcard-1968.jpg',
+          title: 'Postcard',
+          artist: 'Dieter Roth',
+          year: '1968',
+          rule: {
+            "monday": [ 30, 10, 20, 28 ],
+            "tuesday": [ 29, 9, 29, 27 ],
+            "wednesday": [ 5, 15, 25, 2 ],
+            "thursday": [ 4, 14, 24, 2 ],
+            "friday": [ 3, 13, 23, 1 ],
+            "saturday": [ 2, 12, 22, 30 ],
+            "sunday": [ 1, 11, 21, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 33,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/vormittagsspuk-1927.jpg',
+          title: 'Vormittagsspuk',
+          artist: 'Hans Richter',
+          year: '1927',
+          rule: {
+            "monday": [ 1, 11, 21, 29 ],
+            "tuesday": [ 30, 10, 20, 28 ],
+            "wednesday": [ 29, 9, 29, 27 ],
+            "thursday": [ 5, 15, 25, 2 ],
+            "friday": [ 4, 14, 24, 2 ],
+            "saturday": [ 3, 13, 23, 1 ],
+            "sunday": [ 2, 12, 22, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 34,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/the-coat-stand-1920.jpg',
+          title: 'The Coat Stand',
+          artist: 'Man Ray',
+          year: '1920',
+          rule: {
+            "monday": [ 2, 12, 22, 30 ],
+            "tuesday": [ 1, 11, 21, 29 ],
+            "wednesday": [ 30, 10, 20, 28 ],
+            "thursday": [ 29, 9, 29, 27 ],
+            "friday": [ 5, 15, 25, 2 ],
+            "saturday": [ 4, 14, 24, 2 ],
+            "sunday": [ 3, 13, 23, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 35,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/untitled-cowboys-1986.jpg',
+          title: 'Untitled (Cowboys)',
+          artist: 'Richard Prince',
+          year: '1986',
+          rule: {
+            "monday": [ 4, 14, 24, 2 ],
+            "tuesday": [ 3, 13, 23, 1 ],
+            "wednesday": [ 2, 12, 22, 30 ],
+            "thursday": [ 1, 11, 21, 29 ],
+            "friday": [30, 10, 30, 28 ],
+            "saturday": [ 6, 16, 26, 3 ],
+            "sunday": [ 5, 15, 25, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
