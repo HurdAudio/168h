@@ -1204,6 +1204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 61,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/asleep-1937.jpg',
+          title: 'Asleep',
+          artist: 'Toyen',
+          year: '1937',
+          rule: {
+            "monday": [ 5, 15, 23, 2 ],
+            "tuesday": [ 4, 14, 22, 1 ],
+            "wednesday": [ 3, 13, 12, 31 ],
+            "thursday": [ 9, 18, 27, 6 ],
+            "friday": [ 8, 18, 28, 5 ],
+            "saturday": [ 7, 17, 25, 4 ],
+            "sunday": [ 6, 16, 24, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 62,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/1441500527473.jpg',
+          title: 'Self Portrait',
+          artist: 'Guan Zilan',
+          year: '?',
+          rule: {
+            "monday": [ 6, 16, 24, 3 ],
+            "tuesday": [ 5, 15, 23, 2 ],
+            "wednesday": [ 4, 14, 22, 1 ],
+            "thursday": [ 3, 13, 12, 31 ],
+            "friday": [ 9, 18, 27, 6 ],
+            "saturday": [ 8, 18, 28, 5 ],
+            "sunday": [ 7, 17, 25, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 63,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/longing-1977.jpg',
+          title: 'Longing',
+          artist: 'Joyce Kozloff',
+          year: '1977',
+          rule: {
+            "monday": [ 8, 18, 26, 5 ],
+            "tuesday": [ 7, 17, 25, 4 ],
+            "wednesday": [ 6, 16, 24, 3 ],
+            "thursday": [ 5, 15, 23, 2 ],
+            "friday": [ 4, 14, 13, 1 ],
+            "saturday": [ 10, 19, 28, 7 ],
+            "sunday": [ 9, 19, 29, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 64,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/indian-church-1929.jpg',
+          title: 'Indian Church',
+          artist: 'Emily Carr',
+          year: '1929',
+          rule: {
+            "monday": [ 9, 19, 29, 6 ],
+            "tuesday": [ 8, 18, 26, 5 ],
+            "wednesday": [ 7, 17, 25, 4 ],
+            "thursday": [ 6, 16, 24, 3 ],
+            "friday": [ 5, 15, 23, 2 ],
+            "saturday": [ 4, 14, 13, 1 ],
+            "sunday": [ 10, 19, 28, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 65,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/artwork-images-424175658-163937-diane-arbus.jpg',
+          title: 'Girl in a Shiny Dress',
+          artist: 'Diane Arbus',
+          year: '1967',
+          rule: {
+            "monday": [ 10, 19, 28, 7 ],
+            "tuesday": [ 9, 19, 29, 6 ],
+            "wednesday": [ 8, 18, 26, 5 ],
+            "thursday": [ 7, 17, 25, 4 ],
+            "friday": [ 6, 16, 24, 3 ],
+            "saturday": [ 5, 15, 23, 2 ],
+            "sunday": [ 4, 14, 13, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
