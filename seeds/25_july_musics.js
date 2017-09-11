@@ -166,6 +166,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 10,
+          user_id: 1,
+          theme: 'commercially viable genre',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1474790758/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://deerhoof.bandcamp.com/album/la-isla-bonita',
+          a_string: 'La Isla Bonita by Deerhoof',
+          rule: {
+            "monday": [ 1, 3, 7, 15 ],
+            "tuesday": [ 31, 2, 6, 14 ],
+            "wednesday": [ 30, 1, 5, 13 ],
+            "thursday": [ 3, 5, 9, 17 ],
+            "saturday": [ 2, 4, 8, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 11,
+          user_id: 1,
+          theme: 'commercially viable genre',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1217250207/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://fakebuildings.bandcamp.com/album/primitive-advertising-3',
+          a_string: 'Primitive Advertising by Fake Buildings',
+          rule: {
+            "monday": [ 2, 4, 8, 16 ],
+            "tuesday": [ 1, 3, 7, 15 ],
+            "wednesday": [ 31, 2, 6, 14 ],
+            "thursday": [ 30, 1, 5, 13 ],
+            "saturday": [ 3, 5, 9, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 12,
+          user_id: 1,
+          theme: 'commercially viable genre',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2946865467/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ztapes.bandcamp.com/album/saint-molly',
+          a_string: 'Saint Molly by Fox Academy',
+          rule: {
+            "monday": [ 3, 5, 9, 17 ],
+            "tuesday": [ 2, 4, 8, 16 ],
+            "wednesday": [ 1, 3, 7, 15 ],
+            "thursday": [ 31, 2, 6, 14 ],
+            "saturday": [ 30, 1, 5, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
