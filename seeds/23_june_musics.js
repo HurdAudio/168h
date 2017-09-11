@@ -274,6 +274,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 16,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1040093344/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://phillniblock.bandcamp.com/album/touch-works-for-hurdy-gurdy-and-voice',
+          a_string: 'Touch Works, for Hurdy Gurdy and Voice by Phill Niblock',
+          rule: {
+            "monday": [ 2, 6, 12, 23 ],
+            "tuesday": [ 1, 5, 10, 22 ],
+            "wednesday": [ 30, 4, 10, 21 ],
+            "thursday": [ 29, 3, 9, 20 ],
+            "saturday": [ 3, 7, 13, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 17,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2056492879/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://orphax.bandcamp.com/album/dream-sequence-4',
+          a_string: 'Dream Sequence #4 by Orphax',
+          rule: {
+            "monday": [ 3, 7, 13, 24 ],
+            "tuesday": [ 2, 6, 12, 23 ],
+            "wednesday": [ 1, 5, 10, 22 ],
+            "thursday": [ 30, 4, 10, 21 ],
+            "saturday": [ 29, 7, 9, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 18,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1381228377/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://assemblyfield.bandcamp.com/album/solarism',
+          a_string: 'Solarism by Projektions',
+          rule: {
+            "monday": [ 29, 7, 9, 20 ],
+            "tuesday": [ 3, 7, 13, 24 ],
+            "wednesday": [ 2, 6, 12, 23 ],
+            "thursday": [ 1, 5, 10, 22 ],
+            "saturday": [ 30, 4, 10, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
