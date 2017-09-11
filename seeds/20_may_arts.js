@@ -804,6 +804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 41,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/the-workers-1916.jpg',
+          title: 'The Workers',
+          artist: 'Pavel Filonov',
+          year: '1915 - 1916',
+          rule: {
+            "monday": [ 31, 10, 20, 30 ],
+            "tuesday": [ 29, 8, 18, 28 ],
+            "wednesday": [ 27, 6, 16, 26 ],
+            "thursday": [ 25, 4, 14, 24 ],
+            "friday": [ 6, 16, 26, 5 ],
+            "saturday": [ 4, 14, 24, 3 ],
+            "sunday": [ 2, 12, 22, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 42,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/the-return-of-the-farm-workers-from-the-fields.jpg',
+          title: 'The Return of the Farm Workers from the Fields',
+          artist: 'Peter Paul Rubens',
+          year: 'c.1640',
+          rule: {
+            "monday": [ 3, 13, 23, 2 ],
+            "tuesday": [ 1, 11, 21, 31 ],
+            "wednesday": [ 30, 9, 19, 29 ],
+            "thursday": [ 28, 7, 17, 27 ],
+            "friday": [ 26, 5, 15, 25 ],
+            "saturday": [ 7, 17, 27, 6 ],
+            "sunday": [ 5, 15, 25, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 43,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/not_detected_219731.jpg',
+          title: 'Workers of all countries unite!',
+          artist: 'Kazimir Malevich',
+          year: '1918',
+          rule: {
+            "monday": [ 5, 15, 25, 4 ],
+            "tuesday": [ 3, 13, 23, 2 ],
+            "wednesday": [ 1, 11, 21, 31 ],
+            "thursday": [ 30, 9, 19, 29 ],
+            "friday": [ 28, 7, 17, 27 ],
+            "saturday": [ 26, 5, 15, 25 ],
+            "sunday": [ 7, 17, 27, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 44,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/the-laundry-worker-1888.jpg',
+          title: 'The Laundry Worker',
+          artist: 'Henri de Toulouse-Lautrec',
+          year: '1884 - 1888',
+          rule: {
+            "monday": [ 7, 17, 27, 6 ],
+            "tuesday": [ 5, 15, 25, 4 ],
+            "wednesday": [ 3, 13, 23, 2 ],
+            "thursday": [ 1, 11, 21, 31 ],
+            "friday": [ 30, 9, 19, 29 ],
+            "saturday": [ 28, 7, 17, 27 ],
+            "sunday": [ 26, 5, 15, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 45,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/there-is-such-a-party-lenin-on-the-1-st-all-russian-congress-of-workers-and-soldiers-deputies-1934.jpg',
+          title: 'There is such a party! (Lenin on the 1st All-Russian Congress of Workers\' and Soldiers\'Deputies in Petrograd)',
+          artist: 'Konstantin Yuon',
+          year: '1934',
+          rule: {
+            "monday": [ 26, 5, 15, 25 ],
+            "tuesday": [ 7, 17, 27, 6 ],
+            "wednesday": [ 5, 15, 25, 4 ],
+            "thursday": [ 3, 13, 23, 2 ],
+            "friday": [ 1, 11, 21, 31 ],
+            "saturday": [ 30, 9, 19, 29 ],
+            "sunday": [ 28, 7, 17, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
