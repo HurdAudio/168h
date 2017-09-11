@@ -598,6 +598,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 34,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1696851893/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://unseenworlds.bandcamp.com/album/the-expanding-universe',
+          a_string: 'The Expanding Universe by Laurie Spiegel',
+          rule: {
+            "monday": [ 6, 12, 18, 26 ],
+            "tuesday": [ 5, 11, 17, 25 ],
+            "wednesday": [ 9, 15, 21, 29 ],
+            "thursday": [ 8, 14, 20, 28 ],
+            "saturday": [ 7, 13, 19, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 35,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3639273125/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://unseenworlds.bandcamp.com/album/the-death-of-don-juan',
+          a_string: 'The Death of Don Juan by Elodie Lauten',
+          rule: {
+            "monday": [ 8, 14, 20, 29 ],
+            "tuesday": [ 7, 13, 19, 27 ],
+            "wednesday": [ 6, 12, 18, 26 ],
+            "thursday": [ 10, 16, 22, 30 ],
+            "saturday": [ 9, 15, 21, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 36,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1241345468/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://biancaaviaz.bandcamp.com/album/arco-iris',
+          a_string: 'Arco-Iris by Bianca Aviaz',
+          rule: {
+            "monday": [ 9, 15, 21, 29 ],
+            "tuesday": [ 8, 14, 20, 29 ],
+            "wednesday": [ 7, 13, 19, 27 ],
+            "thursday": [ 6, 12, 18, 26 ],
+            "saturday": [ 10, 16, 22, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
