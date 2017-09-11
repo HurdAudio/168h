@@ -18,7 +18,7 @@ exports.seed = function(knex, Promise) {
           balance: 29600.00,
           amount_due: 587.42,
           amount_paid: 0.00,
-          due_date: new Date('2017-08-28T13:44:00.000Z'),
+          due_date: new Date('2017-10-28T13:44:00.000Z'),
           is_paid: false,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
