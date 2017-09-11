@@ -1004,6 +1004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 51,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/seattle-mariners.jpg',
+          title: 'Safeco Field',
+          artist: 'Kelly Walker',
+          year: 'XXI Cent.',
+          rule: {
+            "monday": [ 8, 14, 19, 26 ],
+            "tuesday": [ 22, 12, 19, 25 ],
+            "wednesday": [ 7, 12, 18, 24 ],
+            "thursday": [ 6, 10, 25, 23 ],
+            "friday": [ 5, 10, 15, 22 ],
+            "saturday": [ 4, 9, 15, 21 ],
+            "sunday": [ 3, 8, 14, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 52,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/ph_niehaus_500x291.jpg',
+          title: 'Dave Niehaus Statue',
+          artist: 'Lou Cella',
+          year: 'xxi Cent.',
+          rule: {
+            "monday": [ 3, 8, 14, 20 ],
+            "tuesday": [ 8, 14, 19, 26 ],
+            "wednesday": [ 22, 12, 19, 25 ],
+            "thursday": [ 7, 12, 18, 24 ],
+            "friday": [ 6, 10, 25, 23 ],
+            "saturday": [ 5, 10, 15, 22 ],
+            "sunday": [ 4, 9, 15, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 53,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/robinson-cano-seattle-mariners-art-joe-hamilton.jpg',
+          title: 'Robinson Cano Seattle Mariners',
+          artist: 'Joe Hamilton',
+          year: '2016',
+          rule: {
+            "monday": [ 4, 9, 15, 21 ],
+            "tuesday": [ 3, 8, 14, 20 ],
+            "wednesday": [ 8, 14, 19, 26 ],
+            "thursday": [ 22, 12, 19, 25 ],
+            "friday": [ 7, 12, 18, 24 ],
+            "saturday": [ 6, 10, 25, 23 ],
+            "sunday": [ 5, 10, 15, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 54,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/ken-griffey-jr-michael-pattison.jpg',
+          title: 'Ken Griffey Jr.',
+          artist: 'Michael Pattison',
+          year: '2012',
+          rule: {
+            "monday": [ 5, 10, 15, 22 ],
+            "tuesday": [ 4, 9, 15, 21 ],
+            "wednesday": [ 3, 8, 14, 20 ],
+            "thursday": [ 8, 14, 19, 26 ],
+            "friday": [ 22, 12, 19, 25 ],
+            "saturday": [ 7, 12, 18, 24 ],
+            "sunday": [ 6, 10, 25, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 55,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/f8350c241a16ef5ceb2744cea2d5d702--baseball-art-caricature.jpg',
+          title: 'Randy Johnson',
+          artist: 'S. Preston',
+          year: 'xxi Cent.',
+          rule: {
+            "monday": [ 6, 10, 25, 23 ],
+            "tuesday": [ 5, 10, 15, 22 ],
+            "wednesday": [ 4, 9, 15, 21 ],
+            "thursday": [ 3, 8, 14, 20 ],
+            "friday": [ 8, 14, 19, 26 ],
+            "saturday": [ 22, 12, 19, 25 ],
+            "sunday": [ 7, 12, 18, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
