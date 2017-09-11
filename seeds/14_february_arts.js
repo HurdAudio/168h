@@ -1404,6 +1404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 71,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/684431.jpg',
+          title: 'Violets',
+          artist: 'Pauline Powell Burns',
+          year: 'c. 1890',
+          rule: {
+            "monday": [ 13, 21, 29, 8 ],
+            "tuesday": [ 18, 23, 29, 10 ],
+            "wednesday": [ 17, 25, 4, 12 ],
+            "thursday": [ 19, 29, 6, 14 ],
+            "friday": [ 21, 29, 8, 18 ],
+            "saturday": [ 23, 2, 27, 17 ],
+            "sunday": [ 11, 19, 27, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 72,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Event_horizon-1091793626.jpg',
+          title: 'Event Horizon',
+          artist: 'Robert Butler Jr',
+          year: 'xxi Cent.',
+          rule: {
+            "monday": [ 11, 19, 27, 6 ],
+            "tuesday": [ 13, 21, 29, 8 ],
+            "wednesday": [ 18, 23, 29, 10 ],
+            "thursday": [ 17, 25, 4, 12 ],
+            "friday": [ 19, 29, 6, 14 ],
+            "saturday": [ 21, 29, 8, 18 ],
+            "sunday": [ 23, 2, 27, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 73,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/frank__calloway_untitled_detail_802_118.jpg',
+          title: 'Untitled',
+          artist: 'Frank Calloway',
+          year: 'xx Cent.',
+          rule: {
+            "monday": [ 23, 2, 27, 17 ],
+            "tuesday": [ 11, 19, 27, 6 ],
+            "wednesday": [ 13, 21, 29, 8 ],
+            "thursday": [ 18, 23, 29, 10 ],
+            "friday": [ 17, 25, 4, 12 ],
+            "saturday": [ 19, 29, 6, 14 ],
+            "sunday": [ 21, 29, 8, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 74,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/ESimmsCampbell.png',
+          title: 'Cuties',
+          artist: 'E. Simms Campbell',
+          year: '1968',
+          rule: {
+            "monday": [ 21, 29, 8, 18 ],
+            "tuesday": [ 23, 2, 27, 17 ],
+            "wednesday": [ 11, 19, 27, 6 ],
+            "thursday": [ 13, 21, 29, 8 ],
+            "friday": [ 18, 23, 29, 10 ],
+            "saturday": [ 17, 25, 4, 12 ],
+            "sunday": [ 19, 29, 6, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 75,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/casey-vision.jpg',
+          title: 'Vision',
+          artist: 'Bernie Casey',
+          year: 'xx Cent.',
+          rule: {
+            "monday": [ 19, 29, 6, 14 ],
+            "tuesday": [ 21, 29, 8, 18 ],
+            "wednesday": [ 23, 2, 27, 17 ],
+            "thursday": [ 11, 19, 27, 6 ],
+            "friday": [ 13, 21, 29, 8 ],
+            "saturday": [ 18, 23, 29, 10 ],
+            "sunday": [ 17, 25, 4, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
