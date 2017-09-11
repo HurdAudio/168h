@@ -706,6 +706,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 40,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1211209639/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://mellowyellowlive.bandcamp.com/album/dollar-brand-abdullah-ibrahim-with-don-cherry-carlos-ward-in-berlin-1972',
+          a_string: 'DOLLAR BRAND (Abdullah Ibrahim) with Don Cherry, Carlos Ward  in Berlin 1972 by DOLLAR BRAND (Abdullah Ibrahim)',
+          rule: {
+            "monday": [ 9, 13, 15, 19],
+            "tuesday": [ 11, 15, 17, 21],
+            "wednesday": [ 23, 17, 19, 25],
+            "thursday": [ 6, 20, 22, 25],
+            "saturday": [ 7, 11, 13, 17]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 41,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1160806144/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://safarrepublique.bandcamp.com/album/safar-republique',
+          a_string: 'Safar Republique by Safar Republique',
+          rule: {
+            "monday": [ 7, 11, 13, 17 ],
+            "tuesday": [ 9, 13, 15, 19 ],
+            "wednesday": [ 11, 15, 17, 21 ],
+            "thursday": [ 23, 17, 19, 25 ],
+            "saturday": [ 6, 20, 2, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 42,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1173944759/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://hotcasarecords.bandcamp.com/album/african-woman',
+          a_string: 'African Woman by King Bucknor Jr &amp; AfroDisk Beat 79',
+          rule: {
+            "monday": [ 7, 21, 2, 26 ],
+            "tuesday": [ 8, 12, 14, 18 ],
+            "wednesday": [ 10, 14, 16, 20 ],
+            "thursday": [ 12, 16, 18, 22 ],
+            "saturday": [ 24, 18, 20, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
