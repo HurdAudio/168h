@@ -6,6 +6,9 @@ const bodyParser = require('body-parser');
 const knex = require('knex');
 const bcrypt = require('bcrypt');
 const request = require('request');
+const parseString = require('xml2js').parseString;
+
+require('dotenv').config();
 
 const app = express();
 // const visitorfeedbacks = require('./routes/visitorfeedbacks.js');
@@ -183,6 +186,32 @@ app.get('/onthisdayinhistory/:date', (req, res, next) =>{
   return request(queryString).pipe(res);
 });
 
+app.get('/words/:word', (req, res, next)=>{
+  //returns synonyms
+  let newURL = 'https://api.datamuse.com/words?ml=' + req.params.word;
+  return request(newURL).pipe(res);
+});
+
+app.get('/wordassociation/:word', (req, res, next)=>{
+  //returns strongly associated words
+  let newURL = 'https://api.datamuse.com/words?rel_trg=' + req.params.word;
+  return request(newURL).pipe(res);
+});
+
+app.get('/dictionary/:word', (req, res, next)=>{
+  let queryString1 = 'http://www.dictionaryapi.com/api/v1/references/collegiate/xml/';
+  let queryString2 = '?key=';
+  request(queryString1 + req.params.word + queryString2 + process.env.DICTIONARY_KEY).pipe(res);
+
+
+});
+
+app.post('/xmlconverter/', (req, res, next)=>{
+  //console.log(req.body.data);
+   parseString(req.body.data, (err, result)=>{
+     res.send(result);
+   });
+});
 
 
 app.use('*', function(req, res, next) {

@@ -1485,7 +1485,7 @@ exports.seed = function(knex, Promise) {
           override_content: {
             "img_paths": [ './img/artists/crotti01.jpg', './img/artists/crotti02.jpg', './img/artists/crotti03.jpg', './img/artists/crotti04.jpg', './img/artists/crotti05.jpg', './img/artists/crotti06.jpg', './img/artists/crotti07.jpg' ],
             "titles": [ 'Universal architecture', 'Le Clown (The Clown)', 'Femme au Long Cou', 'Femme a la Torque Rouge', 'Eclatement des pensees', 'Explicatif/Manisfeste Tabu', 'Retrato de Edison. (Portrait of Edison)' ],
-            "artists": [ 'Jean Crotti', 'Jean Crotti', 'Jean Crotti', 'Jean Crotti', 'Jean Crotti', 'Jean Crotti' ],
+            "artists": [ 'Jean Crotti', 'Jean Crotti', 'Jean Crotti', 'Jean Crotti', 'Jean Crotti', 'Jean Crotti', 'Jean Crotti' ],
             "years": [ '1920', '1916', '1923', '1920', '1926', '1921', '1920' ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),

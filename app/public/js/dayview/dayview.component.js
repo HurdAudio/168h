@@ -1662,9 +1662,9 @@
                   }
                   secondElement = document.getElementById('musics' + indiceArray[indice]);
                   transitionPane(element, secondElement);
-                  secondElement.children[0]["ng-src"] = vm.musics[indiceArray[indice]].src_string;
-                  secondElement.children[0].href = vm.musics[indiceArray[indice]].href_string;
-                  secondElement.children[0].contentWindow.location(vm.musics[indiceArray[indice]].href_string);
+                  //secondElement.children[0]["ng-src"] = vm.musics[indiceArray[indice]].src_string;
+                  //secondElement.children[0].href = vm.musics[indiceArray[indice]].href_string;
+                  //secondElement.children[0].contentWindow.location(vm.musics[indiceArray[indice]].href_string);
                 });
               } else {
                 if (vm.musics.length !== 0) {
@@ -1726,7 +1726,9 @@
                   indiceArray = randomizedArray(vm.musics.length);
                   for (let qq = 1; qq < indiceArray.length; qq++) {
                     element = document.getElementById('musics' + indiceArray[qq]);
-                    element.setAttribute("style", "display: none;");
+                    if (element) {
+                      element.setAttribute("style", "display: none;");
+                    }
                   }
                   musicPlayer.setAttribute("style", "display: initial;");
                   musicPlayerBackSelection.addEventListener('click', ()=>{
@@ -3953,6 +3955,654 @@
 
       }
 
+      function januaryGenerator() {
+        let janWords = ['hockey', 'frappe', 'glacial', 'abstraction', 'purloin', 'precis', 'missile', 'unorthodox', 'contrarian', 'glaciation', 'framboise', 'gelid', 'catchment', 'despoil', 'peroration', 'counterfire', 'idiosyncratic', 'myopic', 'metamorphism', 'zabaglione', 'chthonic', 'effluent', 'valorize', 'larghetto', 'glaive', 'incongruous', 'keratomileusis', 'hornblende', 'profiterole', 'faery', 'leachate'];
+
+        return(janWords);
+      }
+
+      function februaryGenerator() {
+        let febWords = [ 'taffeta', 'gloss', 'velvet', 'sabbath', 'achromatic', 'mordant', 'philosophy', 'chronicle', 'antecedent', 'jacquard', 'brilliance', 'jabot', 'kislev', 'optic', 'sarcastic', 'ethos', 'diarist', 'prevenient', 'chambray', 'eclat', 'shantung', 'shabbat', 'heteroptics', 'contemptuous', 'paradigm', 'hagiographer', 'soteriological', 'seersucker', 'panache'];
+
+        return(febWords);
+      }
+
+      function marchGenerator() {
+        let marchWords = [ 'transparent', 'facade', 'spyglass', 'suffrage', 'gender', 'sex', 'discrimination', 'daughter', 'mujeres', 'semiperspicuous', 'wainscotting', 'eratosthenes', 'vassalage', 'protogyny', 'pornocracy', 'selectivity', 'sophomore', 'chateaux', 'cymophanous', 'etagere', 'ptolemies', 'confederated', 'antherozoid', 'prostibulous', 'elution', 'signee', 'yquem', 'semitranslucent', 'ormolu', 'fatimid', 'suzerain'];
+
+        return(marchWords);
+      }
+
+      function aprilGenerator() {
+        let aprilWords = [ 'reservoir', 'hidrosis', 'aqueduct', 'affiliate', 'pitching', 'doubleheaders', 'agents', 'gratis', 'unconfined', 'plenum', 'diaphoresis', 'spillway', 'ancillary', 'baserunning', 'scrimmage', 'intermediaries', 'natch', 'qu', 'politburo', 'tachypnea', 'tributary', 'exogenous', 'errors', 'trochil', 'depolarisation', 'whatchamacallit', 'none', 'dissidence', 'oesophagitis', 'lake' ];
+
+        return (aprilWords);
+      }
+
+      function mayGenerator() {
+        let mayWords = [ 'environment', 'photinia', 'ligustrum', 'labor', 'egalitarianism', 'collectivism', 'underground', 'modernist', 'krautrock', 'ecosystem', 'nandina', 'cotoneaster', 'project', 'morality', 'statist', 'guerrilla', 'deconstructionist', 'experimentalism', 'phytoplankton', 'ixora', 'pieris', 'engineering', 'aretaics', 'ideology', 'rebellion', 'dadaist', 'psychedelia', 'photosynthesis', 'fritillaria', 'tuberosa', 'technology' ];
+
+        return(mayWords);
+      }
+
+      function juneGenerator() {
+        let juneWords = [ 'lens', 'luminescent', 'illumination', 'photography', 'camera', 'postcard', 'ambient', 'monotone', 'bagpipe', 'focus', 'radiant', 'daylight', 'cinematographer', 'transmitter', 'leaflet', 'sonic', 'orotund', 'didgeridoo', 'crux', 'sylphlike', 'lucubratory', 'auteur', 'transducer', 'prospectus', 'harmonic', 'turgid', 'gamelan', 'linchpin', 'lissome', 'noctidial' ];
+
+        return(juneWords);
+      }
+
+      function julyGenerator() {
+        let julyWords = [ 'turbine', 'vapor', 'pressure', 'overthrow', 'unrest', 'transformation', 'exploitation', 'industrial', 'advertising', 'nacelle', 'carbonated', 'stress', 'destabilize', 'chaos', 'revolution', 'deprivation', 'workers', 'hype', 'bezel', 'exhaust', 'accentuate', 'destroy', 'bedlam', 'liberation', 'plight', 'technicians', 'ballyhoo', 'chamfer', 'deplete', 'reinforce', 'obliterate' ];
+
+        return(julyWords);
+      }
+
+      function augustGenerator() {
+        let augustWords = [ 'incumbent', 'abecedarian', 'original', 'prefecture', 'fashionable', 'progressive', 'bandwidth', 'din', 'cacophony', 'operator', 'basal', 'germinal', 'governorate', 'rakish', 'degenerative', 'amplitude', 'ruckus', 'dissonance', 'franchisee', 'proximal', 'heterochromatic', 'oblast', 'unconventional', 'neurological', 'magnitude', 'tumult', 'abnormality', 'proprietor', 'femoral', 'intramolecular', 'enclave' ];
+
+        return(augustWords);
+      }
+
+      function septemberGenerator() {
+        let septemberWords = [ 'upholstery', 'hides', 'nubuck', 'blog', 'position', 'situation', 'composite', 'algebra', 'derivation', 'garnish', 'obliterate', 'ripstop', 'open', 'attitude', 'conditions', 'complex', 'numeracy', 'diversion', 'chervil', 'annihilate', 'vulcanised', 'unobstructed', 'mentality', 'stipulation', 'sprawling', 'phonics', 'digression', 'fennel', 'slay', 'monofilaments' ];
+
+        return(septemberWords);
+      }
+
+      function octoberGenerator() {
+        let octoberWords = [ 'aestival', 'unseasonal', 'gelid', 'ideological', 'imperialism', 'proletariat', 'hardcore', 'argentiferous', 'copper', 'isotherombrose', 'torrential', 'stygian', 'psychotropic', 'empire', 'bourgeoisie', 'adrenalized', 'galena', 'cobalt', 'isocheim', 'severe', 'phantasmal', 'narcotic', 'conglomerate', 'aristocracy', 'slaphappy', 'hornblende', 'luteocobaltic', 'teleutospore', 'brutal', 'saurian', 'psychostimulant' ];
+
+        return(octoberWords);
+      }
+
+      function novemberGenerator() {
+        let novemberWords = [ 'wavelength', 'grisaille', 'monochrome', 'reductive', 'futurism', 'serialism', 'rift', 'darfur', 'africans', 'exciton', 'mezzotint', 'grayscale', 'tendentious', 'steampunk', 'structuralism', 'estrangement', 'nunc', 'hottentots', 'photoemission', 'gouache', 'antialiasing', 'prejudicial', 'nerd', 'platonism', 'ostracism', 'quis', 'xhosas', 'anisotropy', 'pointillism', 'transmissivity' ];
+
+        return(novemberWords);
+      }
+
+      function decemberGenerator() {
+        let decemberWords = [ 'sleet', 'precipitation', 'avalanche', 'fiction', 'containerboard', 'granulate', 'volleyball', 'bra', 'national', 'snowy', 'haste', 'snowdrift', 'imagination', 'polypropylene', 'degumming', 'baseball', 'chemise', 'patriot', 'subzero', 'impetuosity', 'slush', 'ingenuity', 'nylon', 'thermic', 'stadium', 'negligee', 'copatriot', 'artic', 'timidity', 'gravel', 'dexterity' ];
+
+        return(decemberWords);
+      }
+
+      function generateWordArray() {
+        let arr = [ 'helicopter' ];
+        let dateGen = new Date(viewDate);
+        switch(dateGen.getMonth()) {
+          case(0):
+            arr = januaryGenerator();
+            break;
+          case(1):
+            arr = februaryGenerator();
+            break;
+          case(2):
+            arr = marchGenerator();
+            break;
+          case(3):
+            arr = aprilGenerator();
+            break;
+          case(4):
+            arr = mayGenerator();
+            break;
+          case(5):
+            arr = juneGenerator();
+            break;
+          case(6):
+            arr = julyGenerator();
+            break;
+          case(7):
+            arr = augustGenerator();
+            break;
+          case(8):
+            arr = septemberGenerator();
+            break;
+          case(9):
+            arr = octoberGenerator();
+            break;
+          case(10):
+            arr = novemberGenerator();
+            break;
+          case(11):
+            arr = decemberGenerator();
+            break;
+          default:
+            console.log(arr);
+        }
+
+        return(arr);
+      }
+
+      function sendToSaturday(baseWord) {
+        let nextWord = '';
+        let baseDate = new Date(viewDate);
+        $http.get(`/words/${baseWord}`)
+        .then(wordList1Data=>{
+          let wordList1 = wordList1Data.data;
+          if (wordList1.length > 1) {
+            nextWord = wordList1[Math.floor(Math.random() * wordList1.length)].word;
+          } else if (wordList1.length < 1) {
+            nextWord = baseWord;
+          } else {
+            nextWord = wordList1[0].word;
+          }
+          nextWord = nextWord.split(' ').join('+');
+          $http.get(`/wordassociation/${nextWord}`)
+          .then(wordList2Data=>{
+            let wordList2 = wordList2Data.data;
+            if (wordList2.length > 1) {
+              nextWord = wordList2[Math.floor(Math.random() * wordList2.length)].word;
+            } else if (wordList2.length < 1) {
+              nextWord = nextWord;
+            } else {
+              nextWord = wordList2[0].word;
+            }
+            nextWord = nextWord.split(' ').join('+');
+            $http.get(`/words/${nextWord}`)
+            .then(wordList3Data=>{
+              let wordList3 = wordList3Data.data;
+              if (wordList3.length > 1) {
+                nextWord = wordList3[baseDate.getFullYear() % wordList3.length].word;
+              } else if (wordList3.length < 1) {
+                nextWord = nextWord;
+              } else {
+                nextWord = wordList3[0].word;
+              }
+              nextWord = nextWord.split(' ').join('+');
+              $http.get(`/wordassociation/${nextWord}`)
+              .then(wordList4Data=>{
+                let wordList4 = wordList4Data.data;
+                if (wordList4.length > 1) {
+                  nextWord = wordList4[Math.floor(Math.random() * wordList4.length)].word;
+                } else if (wordList4.length < 1) {
+                  nextWord = nextWord;
+                } else {
+                  nextWord = wordList4[0].word;
+                }
+                nextWord = nextWord.split(' ').join('+');
+                $http.get(`/words/${nextWord}`)
+                .then(wordList5Data=>{
+                  let wordList5 = wordList5Data.data;
+                  if (wordList5.length > 1) {
+                    nextWord = wordList5[Math.floor(Math.random() * wordList5.length)].word;
+                  } else if (wordList5.length < 1) {
+                    nextWord = nextWord;
+                  } else {
+                    nextWord = wordList5[0].word;
+                  }
+                  nextWord = nextWord.split(' ').join('+');
+                  $http.get(`/words/${nextWord}`)
+                  .then(wordList6Data=>{
+                    let wordList6 = wordList6Data.data;
+                    if (wordList6.length > 1) {
+                      nextWord = wordList6[Math.floor(Math.random() * wordList6.length)].word;
+                    } else if (wordList6.length < 1) {
+                      nextWord = nextWord;
+                    } else {
+                      nextWord = wordList6[0].word;
+                    }
+                    nextWord = nextWord.split(' ').join('+');
+                    $http.get(`/wordassociation/${nextWord}`)
+                    .then(wordList7Data=>{
+                      let wordList7 = wordList7Data.data;
+                      if (wordList7.length > 1) {
+                        nextWord = wordList7[Math.floor(Math.random() * wordList7.length)].word;
+                      } else if (wordList7.length < 1) {
+                        nextWord = nextWord;
+                      } else {
+                        nextWord = wordList7[0].word;
+                      }
+                      if (nextWord.indexOf(' ') !== -1) {
+                        nextWord = nextWord.slice(0, nextWord.indexOf(' '));
+                      }
+                      if (nextWord.indexOf('+') !== -1) {
+                        nextWord = nextWord.slice(0, nextWord.indexOf('+'));
+                      }
+                      sendToDictionary(nextWord);
+                    });
+                  });
+                });
+              });
+            });
+          });
+        });
+      }
+
+      function sendToFriday(baseWord) {
+        let nextWord = '';
+        let baseDate = new Date(viewDate);
+        $http.get(`/words/${baseWord}`)
+        .then(wordList1Data=>{
+          let wordList1 = wordList1Data.data;
+          if (wordList1.length > 1) {
+            nextWord = wordList1[Math.floor(Math.random() * wordList1.length)].word;
+          } else if (wordList1.length < 1) {
+            nextWord = baseWord;
+          } else {
+            nextWord = wordList1[0].word;
+            nextWord = nextWord.split(' ').join('+');
+          }
+          $http.get(`/wordassociation/${nextWord}`)
+          .then(wordList2Data=>{
+            let wordList2 = wordList2Data.data;
+            if (wordList2.length > 1) {
+              nextWord = wordList2[baseDate.getFullYear() % wordList2.length].word;
+            } else if (wordList2.length < 1) {
+              nextWord = nextWord;
+            } else {
+              nextWord = wordList2[0].word;
+            }
+            if (nextWord.indexOf(' ') !== -1) {
+              nextWord = nextWord.slice(0, nextWord.indexOf(' '));
+            }
+            if (nextWord.indexOf('+') !== -1) {
+              nextWord = nextWord.slice(0, nextWord.indexOf('+'));
+            }
+            sendToDictionary(nextWord);
+          });
+        });
+      }
+
+      function sendToThursday(baseWord) {
+        let nextWord = '';
+        let baseDate = new Date(viewDate);
+        $http.get(`/wordassociation/${baseWord}`)
+        .then(wordList1Data=>{
+          let wordList1 = wordList1Data.data;
+          if (wordList1.length > 1) {
+            nextWord = wordList1[baseDate.getFullYear() % wordList1.length].word;
+          } else if (wordList1.length < 1) {
+            nextWord = baseWord;
+          } else {
+            nextWord = wordList1[0].word;
+          }
+          nextWord = nextWord.split(' ').join('+');
+          $http.get(`/words/${nextWord}`)
+          .then(wordList2Data=>{
+            let wordList2 = wordList2Data.data;
+            if (wordList2.length > 1) {
+              nextWord = wordList2[Math.floor(Math.random() * wordList2.length)].word;
+            } else if (wordList2.length < 1) {
+              nextWord = nextWord;
+            } else {
+              nextWord = wordList2[0].word;
+            }
+            nextWord = nextWord.split(' ').join('+');
+            $http.get(`/words/${nextWord}`)
+            .then(wordList3Data=>{
+              let wordList3 = wordList3Data.data;
+              if (wordList3.length > 1) {
+                nextWord = wordList3[Math.floor(Math.random() * wordList3.length)].word;
+              } else if (wordList3.length < 1) {
+                nextWord = nextWord;
+              } else {
+                nextWord = wordList3[0].word;
+              }
+              nextWord = nextWord.split(' ').join('+');
+              $http.get(`/wordassociation/${nextWord}`)
+              .then(wordList4Data=>{
+                let wordList4 = wordList4Data.data;
+                if (wordList4.length > 1) {
+                  nextWord = wordList4[baseDate.getFullYear() % wordList4.length].word;
+                } else if (wordList4.length <1) {
+                  nextWord = nextWord;
+                } else {
+                  nextWord = wordList4[0].word;
+                }
+                nextWord = nextWord.split(' ').join('+');
+                $http.get(`/words/${nextWord}`)
+                .then(wordList5Data=>{
+                  let wordList5 = wordList5Data.data;
+                  if (wordList5.length > 1) {
+                    nextWord = wordList5[Math.floor(Math.random() * wordList5.length)].word;
+                  } else if (wordList5.length < 1) {
+                    nextWord = nextWord;
+                  } else {
+                    nextWord = wordList5[0].word;
+                  }
+                  if (nextWord.indexOf(' ') !== -1) {
+                    nextWord = nextWord.slice(0, nextWord.indexOf(' '));
+                  }
+                  if (nextWord.indexOf('+') !== -1) {
+                    nextWord = nextWord.slice(0, nextWord.indexOf('+'));
+                  }
+                  sendToDictionary(nextWord);
+                });
+              });
+            });
+          });
+        });
+      }
+
+      function sendToWednesday(baseWord) {
+        let nextWord = '';
+        let baseDate = new Date(viewDate);
+        $http.get(`/wordassociation/${baseWord}`)
+        .then(wordList1Data=>{
+          let wordList1 = wordList1Data.data;
+          if (wordList1.length > 1) {
+            nextWord = wordList1[Math.floor(Math.random() * wordList1.length)].word;
+          } else if (wordList1.length < 1) {
+            nextWord = baseWord;
+          } else {
+            nextWord = wordList1[0].word;
+          }
+          nextWord = nextWord.split(' ').join('+');
+          $http.get(`/wordassociation/${nextWord}`)
+          .then(wordList2Data=>{
+            let wordList2 = wordList2Data.data;
+            if (wordList2.length > 1) {
+              nextWord = wordList2[Math.floor(Math.random() * wordList2.length)].word;
+            } else if (wordList2.length < 1) {
+              nextWord = nextWord;
+            } else {
+              nextWord = wordList2[0].word;
+            }
+            nextWord = nextWord.split(' ').join('+');
+            $http.get(`/words/${nextWord}`)
+            .then(wordList3Data=>{
+              let wordList3 = wordList3Data.data;
+              if (wordList3.length > 1) {
+                nextWord = wordList3[baseDate.getFullYear() % wordList3.length].word;
+              } else if (wordList3.length < 1) {
+                nextWord = nextWord;
+              } else {
+                nextWord = wordList3[0].word;
+              }
+              nextWord = nextWord.split(' ').join('+');
+              $http.get(`/words/${nextWord}`)
+              .then(wordList4Data=>{
+                let wordList4 = wordList4Data.data;
+                if (wordList4.length > 1) {
+                  nextWord = wordList4[Math.floor(Math.random() * wordList4.length)].word;
+                } else if (wordList4.length < 1) {
+                  nextWord = nextWord;
+                } else {
+                  nextWord = wordList4[0].word;
+                }
+                nextWord = nextWord.split(' ').join('+');
+                $http.get(`/words/${nextWord}`)
+                .then(wordList5Data=>{
+                  let wordList5 = wordList5Data.data;
+                  if (wordList5.length > 1) {
+                    nextWord = wordList5[Math.floor(Math.random() * wordList5.length)].word;
+                  } else if (wordList5.length < 1) {
+                    nextWord = nextWord;
+                  } else {
+                    nextWord = wordList5[0].word;
+                  }
+                  if (nextWord.indexOf(' ') !== -1) {
+                    nextWord = nextWord.slice(0, nextWord.indexOf(' '));
+                  }
+                  if (nextWord.indexOf('+') !== -1) {
+                    nextWord = nextWord.slice(0, nextWord.indexOf('+'));
+                  }
+                  sendToDictionary(nextWord);
+                });
+              });
+            });
+          });
+        });
+      }
+
+      function sendToTuesday(baseWord) {
+        let nextWord = '';
+        let baseDate = new Date(viewDate);
+        if ((Math.floor(Math.random() * 4)) === 0) {
+          sendToDictionary(baseWord);
+        } else {
+          $http.get(`/wordassociation/${baseWord}`)
+          .then(wordList1Data=>{
+            let wordList1 = wordList1Data.data;
+            if (wordList1.length > 1) {
+              nextWord = wordList1[baseDate.getFullYear() % wordList1.length].word;
+            } else if (wordList1.length < 1) {
+              nextWord = baseWord;
+            } else {
+              nextWord = wordList1[0].word;
+            }
+            nextWord = nextWord.split(' ').join('+');
+            $http.get(`/words/${nextWord}`)
+            .then(wordList2Data=>{
+              let wordList2 = wordList2Data.data;
+              if (wordList2.length > 1) {
+                nextWord = wordList2[Math.floor(Math.random() * wordList2.length)].word;
+              } else if (wordList2.length < 1) {
+                nextWord = nextWord;
+              } else {
+                nextWord = wordList2[0].word;
+              }
+              if (nextWord.indexOf(' ') !== -1) {
+                nextWord = nextWord.slice(0, nextWord.indexOf(' '));
+              }
+              if (nextWord.indexOf('+') !== -1) {
+                nextWord = nextWord.slice(0, nextWord.indexOf('+'));
+              }
+              sendToDictionary(nextWord);
+            });
+          });
+        }
+      }
+
+      function sendToMonday(baseWord) {
+        let nextWord = '';
+        let baseDate = new Date(viewDate);
+        $http.get(`/words/${baseWord}`)
+        .then(wordList1Data=>{
+          let wordList1 = wordList1Data.data;
+          if (wordList1.length > 1) {
+            nextWord = wordList1[Math.floor(Math.random() * wordList1.length)].word;
+          } else if (wordList1.length < 1) {
+            nextWord = baseWord;
+          } else {
+            nextWord = wordList1[0].word;
+          }
+          nextWord = nextWord.split(' ').join('+');
+          $http.get(`/words/${nextWord}`)
+          .then(wordList2Data=>{
+            let wordList2 = wordList2Data.data;
+            if (wordList2.length > 1) {
+              nextWord = wordList2[Math.floor(Math.random() * wordList2.length)].word;
+            } else if (wordList2.length < 1) {
+              nextWord = nextWord;
+            } else {
+              nextWord = wordList2[0].word;
+            }
+            nextWord = nextWord.split(' ').join('+');
+            $http.get(`/words/${nextWord}`)
+            .then(wordList3Data=>{
+              let wordList3 = wordList3Data.data;
+              if (wordList3.length > 1) {
+                nextWord = wordList3[Math.floor(Math.random() * wordList3.length)].word;
+              } else if (wordList3.length < 1) {
+                nextWord = nextWord;
+              } else {
+                nextWord = wordList3[0].word;
+              }
+              nextWord = nextWord.split(' ').join('+');
+              $http.get(`/wordassociation/${nextWord}`)
+              .then(wordList4Data=>{
+                let wordList4 = wordList4Data.data;
+                if (wordList4.length > 1) {
+                  nextWord = wordList4[baseDate.getFullYear() % wordList4.length].word;
+                } else if (wordList4.length < 1) {
+                  nextWord = nextWord;
+                } else {
+                  nextWord = wordList4[0].word;
+                }
+                if (nextWord.indexOf(' ') !== -1) {
+                  nextWord = nextWord.slice(0, nextWord.indexOf(' '));
+                }
+                if (nextWord.indexOf('+') !== -1) {
+                  nextWord = nextWord.slice(0, nextWord.indexOf('+'));
+                }
+                sendToDictionary(nextWord);
+              });
+            });
+          });
+        });
+      }
+
+      function sendToSunday(baseWord) {
+        let nextWord = '';
+        let baseDate = new Date(viewDate);
+        $http.get(`/wordassociation/${baseWord}`)
+        .then(associatedWordsData=>{
+          let associatedWords = associatedWordsData.data;
+          if (associatedWords.length > 1) {
+            nextWord = associatedWords[Math.floor(Math.random() * associatedWords.length)].word;
+          } else if (associatedWords.length < 1) {
+            nextWord = baseWord;
+          } else {
+            nextWord = associatedWords[0].word;
+          }
+          nextWord = nextWord.split(' ').join('+');
+          $http.get(`/words/${nextWord}`)
+          .then(wordDerriveData=>{
+            let wordDerrive = wordDerriveData.data;
+            if (wordDerrive.length > 1) {
+              nextWord = wordDerrive[Math.floor(Math.random() * wordDerrive.length)].word;
+            } else if (wordDerrive.length < 1) {
+              nextWord = nextWord;
+            } else {
+              nextWord = wordDerrive[0].word;
+            }
+            nextWord = nextWord.split(' ').join('+');
+            $http.get(`/wordassociation/${nextWord}`)
+            .then(nestedWordData=>{
+              let nestedWords = nestedWordData.data;
+              if (nestedWords.length > 1) {
+                nextWord = nestedWords[Math.floor(Math.random() * nestedWords.length)].word;
+              } else if (nestedWords.length < 1) {
+                nextWord = nextWord;
+              } else {
+                nextWord = nestedWords[0].word;
+              }
+              nextWord = nextWord.split(' ').join('+');
+              $http.get(`/words/${nextWord}`)
+              .then(wordsData=>{
+                let words = wordsData.data;
+                nextWord = words[baseDate.getFullYear() % words.length].word;
+                //console.log(nextWord);
+                //nextWord = nextWord.split(' ').join('+');
+                if (nextWord.indexOf(' ') !== -1) {
+                  nextWord = nextWord.slice(0, nextWord.indexOf(' '));
+                }
+                if (nextWord.indexOf('+') !== -1) {
+                  nextWord = nextWord.slice(0, nextWord.indexOf('+'));
+                }
+                sendToDictionary(nextWord);
+              });
+            });
+          });
+        });
+      }
+
+      function sendToDictionary(word) {
+        console.log(word);
+        let wordOfDay = document.getElementById('wordOfDay');
+        let wordSyllable = document.getElementById('wordSyllable');
+        let pronounciation = document.getElementById('pronounciation');
+        let meaningString = '';
+        $http.get(`/dictionary/${word}`)
+        .then(xmlData=>{
+          let xml = xmlData.data;
+          console.log(xml);
+          $http.post('/xmlconverter', { data: xml })
+          .then(dictionaryReturnData=>{
+            let dictionaryReturn = dictionaryReturnData.data.entry_list;
+            console.log(dictionaryReturn);
+            if ((dictionaryReturn.suggestion !== undefined) && (dictionaryReturn.suggestion.length > 0)) {
+              sendToDictionary(dictionaryReturn.suggestion[Math.floor(Math.random() * dictionaryReturn.suggestion.length)]);
+            } else {
+              wordOfDay.innerHTML = dictionaryReturn.entry[0].ew;
+              if (dictionaryReturn.entry[0].hw[0]._ === undefined) {
+                wordSyllable.innerHTML = dictionaryReturn.entry[0].hw;
+              } else {
+                wordSyllable.innerHTML = dictionaryReturn.entry[0].hw[0]._;
+              }
+              if (dictionaryReturn.entry[0].pr !== undefined) {
+                if ((dictionaryReturn.entry[0].pr[0] === undefined) || (dictionaryReturn.entry[0].pr[0]._ === undefined)) {
+                  pronounciation.innerHTML = '(' + dictionaryReturn.entry[0].pr + ')';
+                } else {
+                  pronounciation.innerHTML = '(' + dictionaryReturn.entry[0].pr[0]._ + ')';
+                }
+              } else {
+                pronounciation.innerHTML = '';
+              }
+              vm.definitions = [];
+              //let incrementDefs = 0;
+              for (let i = 0; i < dictionaryReturn.entry.length; i++) {
+                vm.definitions[i] = {};
+                vm.definitions[i].entryWord = dictionaryReturn.entry[i].ew[0];
+                vm.definitions[i].wordType = dictionaryReturn.entry[i].fl[0];
+                meaningString = dictionaryReturn.entry[i].def[0].date + '    ';
+                for (let j = 0; j < dictionaryReturn.entry[i].def[0].dt.length; j++) {
+                  //incrementDefs = j + 1;
+                  //meaningString += incrementDefs + '. ';
+                  if (dictionaryReturn.entry[i].def !== undefined) {
+                    if (typeof(dictionaryReturn.entry[i].def[0].dt[j]) === 'object') {
+                      //if (dictionaryReturn.entry[i].def[0].dt[j]._ !== undefined) {
+                        meaningString += dictionaryReturn.entry[i].def[0].dt[j]._ + ' ';
+                      ///} else {
+                        ///meaningString += dictionaryReturn.entry[i].def[0].dt[j].un[0] + ' ';
+                      ///}
+                    } else {
+                      meaningString += dictionaryReturn.entry[i].def[0].dt[j] + '. ';
+                    }
+                  }
+                }
+                vm.definitions[i].definition = meaningString;
+              }
+            }
+          });
+        });
+      }
+
+      function wordOfTheDay() {
+        let generateDate = new Date(viewDate);
+        // $http.get('/dictionary/helicopter')
+        //  .then(data=>{
+        //    console.log(data.data);
+        //    $http.post('/xmlconverter', { data: data.data })
+        //    .then(letItFlyData=>{
+        //      console.log(letItFlyData.data.entry_list.entry);
+        //   });
+        //  });
+        //TODO write a word generator based on date
+        let wordsArray = generateWordArray();
+        console.log(wordsArray.length);
+        switch(generateDate.getDay()) {
+          case(0):
+            sendToSunday(wordsArray[generateDate.getDate() - 1]);
+            break;
+          case(1):
+            sendToMonday(wordsArray[generateDate.getDate() - 1]);
+            break;
+          case(2):
+            sendToTuesday(wordsArray[generateDate.getDate() - 1]);
+            break;
+          case(3):
+            sendToWednesday(wordsArray[generateDate.getDate() - 1]);
+            break;
+          case(4):
+            sendToThursday(wordsArray[generateDate.getDate() - 1]);
+            break;
+          case(5):
+            sendToFriday(wordsArray[generateDate.getDate() - 1]);
+            break;
+          case(6):
+            sendToSaturday(wordsArray[generateDate.getDate() - 1]);
+            break;
+          default:
+            console.log('the day is long');
+        }
+        //TODO run word through a randomized set of synonym, association apis
+        //TODO pass final word through dictionary to get definitions
+        //TODO send word to front end
+      }
+
       function onInit() {
         console.log("Dayview is lit");
 
@@ -4000,6 +4650,15 @@
         setScheduleGenerator();
         setGoalsReport();
         historicalTrivia();
+        wordOfTheDay();
+        // $http.get('/dictionary/ems')
+        // .then(data=>{
+        //   console.log(data.data);
+        //   $http.post('/xmlconverter', { data: data.data })
+        //   .then(letItFlyData=>{
+        //     console.log(letItFlyData.data.entry_list.entry);
+        //   });
+        // });
       }
 
     }

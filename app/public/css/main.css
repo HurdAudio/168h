@@ -2939,3 +2939,29 @@ footer img {
   font-size: 24px;
   margin-left: 1.4em;
 }
+
+#wordOfTheDayPane {
+  font-family: 'Alike Angular', serif;
+}
+
+#wordOfTheDayPane h3 {
+  font-size: 30px;
+  margin-left: 2em;
+}
+
+#wordOfTheDayPane h1 {
+  font-size: 42px;
+  margin-left: 0.9em;
+  margin-bottom: 0;
+}
+
+#wordSyllable {
+  font-size: 24px;
+  margin-left: -2em;
+}
+
+#wordOfTheDayPane p {
+  font-size: 24px;
+  margin-left: 0.5em;
+  margin-top: 0;
+}

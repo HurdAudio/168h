@@ -468,10 +468,23 @@
     <!-- <h3>On this day in 1918</h3>
     <p>Tsar Nicholas II of Russia and his immediate family and retainers are executed by Bolshevik Chekists at the Ipatiev House in Yekaterinburg, Russia.</p> -->
 
+    <div id="wordOfTheDayPane">
+      <h3>Word of the Day:</h3>
+      <h1 id="wordOfDay"></h1>
+      <h2 id="wordSyllable"></h2>
+      <p id="pronounciation"></p>
+      <main ng-repeat="definition in $ctrl.definitions">
+        <p>{{definition.entryWord}}</p>
+        <p>{{definition.wordType}}</p>
+        <p>{{definition.definition}}</p>
 
-    <h3>Word of the Day:</h3>
+      </main>
+
+
+    </div>
+    <!-- <h3>Word of the Day:</h3>
     <h2>exculpatory</h2>
-    <p>1. tending to clear from a charge of fault or guilt.</p>
+    <p>1. tending to clear from a charge of fault or guilt.</p> -->
     <div id="observancesPane">
       <h3>Observances:</h3>
 
