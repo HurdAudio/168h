@@ -814,6 +814,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 46,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2393287899/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://rhyschatham.bandcamp.com/album/outdoor-spell-2',
+          a_string: 'Outdoor Spell by Rhys Chatham',
+          rule: {
+            "monday": [ 21, 15, 17, 22 ],
+            "tuesday": [ 17, 11, 13, 1 ],
+            "wednesday": [ 13, 20, 22, 21 ],
+            "thursday": [ 11, 15, 17, 21 ],
+            "saturday": [ 13, 20, 22, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 47,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=405648307/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://anechoicmedia.bandcamp.com/album/bluecube',
+          a_string: 'blueCube( ) by Kim Cascone',
+          rule: {
+            "monday": [ 13, 20, 22, 21 ],
+            "tuesday": [ 21, 15, 17, 22 ],
+            "wednesday": [ 17, 11, 13, 1 ],
+            "thursday": [ 13, 20, 22, 21 ],
+            "saturday": [ 11, 15, 17, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 48,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2312517878/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://thessalonians.bandcamp.com/album/solaristics',
+          a_string: 'Solaristics by Thessalonians',
+          rule: {
+            "monday": [ 11, 15, 17, 21 ],
+            "tuesday": [ 13, 20, 22, 21 ],
+            "wednesday": [ 21, 15, 17, 22 ],
+            "thursday": [ 17, 11, 13, 1 ],
+            "saturday": [ 13, 20, 22, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
