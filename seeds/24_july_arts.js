@@ -404,6 +404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 21,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/eurydice-n-19-1996.jpg',
+          title: 'Eurydice n. 19',
+          artist: 'Bracha L. Ettinger',
+          year: '1996',
+          rule: {
+            "monday": [ 4, 15, 26, 6 ],
+            "tuesday": [ 3, 14, 25, 5 ],
+            "wednesday": [ 2, 13, 24, 4 ],
+            "thursday": [ 1, 12, 23, 3 ],
+            "friday": [ 31, 11, 22, 2 ],
+            "saturday": [ 6, 17, 28, 8 ],
+            "sunday": [ 5, 16, 27, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 22,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/the-oval-room-1967.jpg',
+          title: 'The Oval Room',
+          artist: 'Christian Boltanski',
+          year: '1967',
+          rule: {
+            "monday": [ 5, 16, 27, 7 ],
+            "tuesday": [ 4, 15, 26, 6 ],
+            "wednesday": [ 3, 14, 25, 5 ],
+            "thursday": [ 2, 13, 24, 4 ],
+            "friday": [ 1, 12, 23, 3 ],
+            "saturday": [ 31, 11, 22, 2 ],
+            "sunday": [ 6, 17, 28, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 23,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/le-cri-1974.jpg',
+          title: 'Le cri',
+          artist: 'Ivan Tovar',
+          year: '1974',
+          rule: {
+            "monday": [ 6, 17, 28, 8 ],
+            "tuesday": [ 5, 16, 27, 7 ],
+            "wednesday": [ 4, 15, 26, 6 ],
+            "thursday": [ 3, 14, 25, 5 ],
+            "friday": [ 2, 13, 24, 4 ],
+            "saturday": [ 1, 12, 23, 3 ],
+            "sunday": [ 31, 11, 22, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 24,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/ficelage-2.jpg',
+          title: 'Ficelage',
+          artist: 'Andre-Pierre Arnal',
+          year: '?',
+          rule: {
+            "monday": [ 31, 11, 22, 2 ],
+            "tuesday": [ 6, 17, 28, 8 ],
+            "wednesday": [ 5, 16, 27, 7 ],
+            "thursday": [ 4, 15, 26, 6 ],
+            "friday": [ 3, 14, 25, 5 ],
+            "saturday": [ 2, 13, 24, 4 ],
+            "sunday": [ 1, 12, 23, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 25,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/peinture-acrylique-blanche-sur-tissu-ray-blanc-et-rouge-1970.jpg',
+          title: 'Peinture acrylique blanche sur tissu rayé blanc et rouge',
+          artist: 'Daniel Buren',
+          year: '1970',
+          rule: {
+            "monday": [ 1, 12, 23, 3 ],
+            "tuesday": [ 31, 11, 22, 2 ],
+            "wednesday": [ 6, 17, 28, 8 ],
+            "thursday": [ 5, 16, 27, 7 ],
+            "friday": [ 4, 15, 26, 6 ],
+            "saturday": [ 3, 14, 25, 5 ],
+            "sunday": [ 2, 13, 24, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
