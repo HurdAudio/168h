@@ -9,6 +9,8 @@ const cookieSession = require('cookie-session');
 const bcrypt = require('bcrypt');
 const saltRounds = 12;
 const nanoid = require('nanoid');
+
+const nodemailer = require('nodemailer');
 // const myPlaintextPassword = 'whip it';
 // const someOtherPlaintextPassword = 'into shape';
 
@@ -93,6 +95,109 @@ router.post('/byemail', (req, res, next)=>{
   })
   .catch((err) => {
     next(err);
+  });
+});
+
+router.post('/lostpassword/:id', (req, res, next)=>{
+  console.log('it\'s emailing time!');
+  let linkString = 'http://localhost:3007/' + '/passwordreset/';
+  let user = req.params.id;
+  let idendifier = nanoid() + nanoid();
+
+  let smtp = {
+    host: 'smtp.mail.com',
+    port: 587,
+    secure: false
+  };
+  let account = {
+    smtp: smtp,
+    user: process.env.EMAIL_ACCOUNT,
+    pass: process.env.EMAIL_PASSWORD
+  };
+
+  knex('users')
+  .where({id: user})
+  .first()
+  .update({
+    security: {
+      "key": req.body.security.key,
+      "value": req.body.security.value,
+      "passwordRecovery": idendifier
+    }
+  }, '*')
+  .then((result)=>{
+    //console.log(req.body.email);
+    // nodemailer.createTestAccount((err)=>{
+    //   if (err) {
+    //     console.log('failed to create a testing account');
+    //     return(err);
+    //   }
+    //   console.log('Credentials obtained, sending message...');
+    // });
+
+    let transporter = nodemailer.createTransport(
+        {
+            host: account.smtp.host,
+            port: account.smtp.port,
+            secure: account.smtp.secure,
+            auth: {
+                user: account.user,
+                pass: account.pass
+            },
+            tls: {
+              rejectUnauthorized: false
+            },
+            logger: true,
+            debug: true // include SMTP traffic in the logs
+        },
+        {
+            // default message fields
+
+            // sender info
+            from: process.env.EMAIL_ACCOUNT
+        }
+    );
+
+    transporter.verify(function(error, success) {
+      if (error) {
+        console.log(error);
+      } else {
+        console.log('Server is ready to take our messages');
+      }
+    });
+
+    // Message object
+    let message = {
+        // Comma separated list of recipients
+        from: process.env.EMAIL_ACCOUNT,
+        to: req.body.email,
+
+        // Subject of the message
+        subject: 'Your 168h password reset link',
+
+        // plaintext body
+        text: 'Please click this link to reset your password:',
+
+        // HTML body
+        html: '<a href="' + linkString + 'user=' + req.body.id + '&recovery=' + idendifier + '">168h_password_reset</a>'
+
+    };
+
+    transporter.sendMail(message, (error, info) => {
+        if (error) {
+            console.log('Error occurred');
+            console.log(error.message);
+            return process.exit(1);
+        }
+
+        console.log('Message sent successfully!');
+        console.log(nodemailer.getTestMessageUrl(info));
+
+        // only needed when using pooled connections
+        //transporter.close();
+    });
+
+
   });
 });
 
@@ -197,6 +302,23 @@ router.post('/logout',(req,res,next) => {
   req.session = null;
 
   res.send({session:'cleared'});
+});
+
+router.patch('/resetsecurity/:id', (req, res, next)=>{
+
+  var key = nanoid();
+  var value = nanoid();
+  knex('users')
+  .where('id', req.params.id)
+  .update({
+    security: { "key": key, "value": value }
+  }, '*' )
+  .then((results)=>{
+     res.status(200).send(results[0]);
+  })
+  .catch((err) => {
+    next(err);
+  });
 });
 
 

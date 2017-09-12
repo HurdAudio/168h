@@ -256,11 +256,22 @@
     }, 500);
   }
 
+  function noAccount() {
+    stopBlinker = true;
+    let loginFailNotice = document.getElementById('loginFailNotice');
+    let messageString = '>ERROR: <br>>No account associated with email. <br>>';
+
+    loginFailNotice.setAttribute("style", "display: initial;");
+    setTimeout(()=>{
+      messageDisplay(messageString, '', loginFailNotice, 40);
+    }, 500);
+  }
+
   function pleaseEnterPasswordValues() {
     stopBlinker = true;
     let loginFailNotice = document.getElementById('loginFailNotice');
     let newUserName = document.getElementById('newUserName');
-    let messageString = '>ERROR: <br>>Invalid password(s), <br>>' + newUserName.value + '. <br>>';
+    let messageString = '><br>>ERROR: <br>>Invalid password(s), <br>>' + newUserName.value + '. <br>>';
 
     loginFailNotice.setAttribute("style", "display: initial;");
     setTimeout(()=>{
@@ -320,6 +331,43 @@
       vm.$onInit = onInit;
       vm.loginAttempt = loginAttempt;
       vm.newUserSubmit = newUserSubmit;
+      vm.lostPassword = lostPassword;
+
+      function lostPassword() {
+        //console.log('Why you forget your password?');
+        let loginEmail = document.getElementById('loginEmail');
+        let checkEmail = loginEmail.value;
+        let submitObj = {
+          email: checkEmail
+        };
+        $http.post('/users/byemail', submitObj)
+        .then(userAccountData=>{
+          let userAccount = userAccountData.data;
+          if (userAccount.email === 'unique') {
+            noAccount();
+          } else {
+            //send email to user with link to password reset page
+            let sub = {
+              email: checkEmail,
+              id: userAccount.id
+            }
+            $http.get(`/users/${userAccount.id}`)
+            .then(userInfoData=>{
+              let userInfo = userInfoData.data;
+              sub.security = {
+                key: userInfo.security.key,
+                value: userInfo.security.value
+              };
+              $http.post(`/users/lostpassword/${userAccount.id}`, sub)
+              .then(emailData=>{
+                let email = emailData.data;
+                console.log(email);
+              });
+            });
+
+          }
+        });
+      }
 
       function newUserSubmit() {
         let newUserEmail = document.getElementById('newUserEmail');

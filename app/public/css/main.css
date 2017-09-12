@@ -2973,3 +2973,32 @@ footer img {
   margin-left: 0.5em;
   margin-top: 0;
 }
+
+#passwordReset {
+  font-family: 'Alike Angular', serif;
+  font-size: 24px;
+  align-self: center;
+  background-image: url(../img/background-2044512_1920.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 15em;
+}
+
+#passwordReset p {
+  font-family: 'Alike Angular', serif;
+  font-size: 18px;
+}
+#passwordReset input[type=password]{
+  margin-bottom: 1em;
+  font-size: 18px;
+}
+
+#resettingThePassword h1 {
+  font-family: 'Alike Angular', serif;
+  font-size: 48px;
+  margin-left: 3em;
+}
+
+#passwordReset {
+
+}

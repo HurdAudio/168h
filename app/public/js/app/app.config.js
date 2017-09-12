@@ -33,6 +33,12 @@
         url: '/weekview',
         parent: 'app',
         component: 'weekview'
+      })
+      .state({
+        name: 'passwordreset',
+        url: '/passwordreset/:id',
+        parent: 'app',
+        component: 'passwordreset'
       });
       // .state({
       //   name: 'resume',
