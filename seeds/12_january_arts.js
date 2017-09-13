@@ -1704,6 +1704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 86,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/la-m-scara-m-gica-1969.jpg',
+          title: 'La Máscara Mágica',
+          artist: 'Carlos Merida',
+          year: '1969',
+          rule: {
+            "monday": [ 16, 18, 20, 30 ],
+            "tuesday": [ 18, 19, 21, 24 ],
+            "wednesday": [ 21, 22, 13, 17 ],
+            "thursday": [ 24, 26, 27, 29 ],
+            "friday": [ 26, 28, 1, 4 ],
+            "saturday": [ 28, 30, 31, 3 ],
+            "sunday": [ 13, 14, 26, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 87,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/architectural-structures-1925.jpg',
+          title: 'Architectural Structures',
+          artist: 'Lajos Kassak',
+          year: '1925',
+          rule: {
+            "monday": [ 13, 14, 26, 17 ],
+            "tuesday": [ 16, 18, 20, 30 ],
+            "wednesday": [ 18, 19, 21, 24 ],
+            "thursday": [ 21, 22, 13, 17 ],
+            "friday": [ 24, 26, 27, 29 ],
+            "saturday": [ 26, 28, 1, 4 ],
+            "sunday": [ 28, 30, 31, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 88,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/painting-918-1972.jpg',
+          title: 'Painting 918',
+          artist: 'Luis Feito',
+          year: '1972',
+          rule: {
+            "monday": [ 28, 30, 31, 3 ],
+            "tuesday": [ 13, 14, 26, 17 ],
+            "wednesday": [ 16, 18, 20, 30 ],
+            "thursday": [ 18, 19, 21, 24 ],
+            "friday": [ 21, 22, 13, 17 ],
+            "saturday": [ 24, 26, 27, 29 ],
+            "sunday": [ 26, 28, 1, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 89,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/multichromic-i-1970.jpg',
+          title: 'Multichromic I',
+          artist: 'Wen-Ying Tsai',
+          year: '1970',
+          rule: {
+            "monday": [ 26, 28, 1, 4 ],
+            "tuesday": [ 28, 30, 31, 3 ],
+            "wednesday": [ 13, 14, 26, 17 ],
+            "thursday": [ 16, 18, 20, 30 ],
+            "friday": [ 18, 19, 21, 24 ],
+            "saturday": [ 21, 22, 13, 17 ],
+            "sunday": [ 24, 26, 27, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 90,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/q1-75-s-2-1977.jpg',
+          title: 'Q1 75 S#2',
+          artist: 'Jack Tworkov',
+          year: '1977',
+          rule: {
+            "monday": [ 24, 26, 27, 29 ],
+            "tuesday": [ 26, 28, 1, 4 ],
+            "wednesday": [ 28, 30, 31, 3 ],
+            "thursday": [ 13, 14, 26, 17 ],
+            "friday": [ 16, 18, 20, 30 ],
+            "saturday": [ 18, 19, 21, 24 ],
+            "sunday": [ 21, 22, 13, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
