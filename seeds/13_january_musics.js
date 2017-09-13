@@ -868,6 +868,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 49,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'http://bandcamp.com/EmbeddedPlayer/album=3597114623/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://eaux.ro/album/omert',
+          a_string: 'Omertà by Rrose x Tujurikkuja',
+          rule: {
+            "monday": [ 14, 21, 23, 22 ],
+            "tuesday": [ 12, 16, 18, 22 ],
+            "wednesday": [ 14, 21, 23, 22 ],
+            "thursday": [ 22, 16, 18, 23 ],
+            "saturday": [ 18, 12, 14, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 50,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2929129774/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://unseenworlds.bandcamp.com/album/satie-slowly',
+          a_string: 'Satie Slowly by Philip Corner',
+          rule: {
+            "monday": [ 18, 12, 14, 2 ],
+            "tuesday": [ 14, 21, 23, 22 ],
+            "wednesday": [ 12, 16, 18, 22 ],
+            "thursday": [ 14, 21, 23, 22 ],
+            "saturday": [ 22, 16, 18, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 51,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1021630657/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://unseenworlds.bandcamp.com/album/electronic-music-from-the-seventies-and-eighties',
+          a_string: 'Electronic Music from the Seventies and Eighties by Carl Stone',
+          rule: {
+            "monday": [ 22, 16, 18, 23 ],
+            "tuesday": [ 18, 12, 14, 2 ],
+            "wednesday": [ 14, 21, 23, 22 ],
+            "thursday": [ 12, 16, 18, 22 ],
+            "saturday": [ 14, 21, 23, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
