@@ -1104,6 +1104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 56,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/busch-stadium-st-louis-cardinals-black-white-ballpark-village-david-haskett.jpg',
+          title: 'Busch Stadium St. Louis Cardinals',
+          artist: 'David Haskett',
+          year: 'xxi Cent.',
+          rule: {
+            "monday": [ 8, 13, 19, 25 ],
+            "tuesday": [ 7, 11, 26, 24 ],
+            "wednesday": [ 6, 11, 16, 23 ],
+            "thursday": [ 5, 10, 16, 22 ],
+            "friday": [ 4, 9, 15, 21 ],
+            "saturday": [ 9, 15, 20, 27 ],
+            "sunday": [ 23, 13, 20, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 57,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/il_340x270.1007953515_nd6d.jpg',
+          title: 'Busch Stadium',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 23, 13, 20, 26 ],
+            "tuesday": [ 8, 13, 19, 25 ],
+            "wednesday": [ 7, 11, 26, 24 ],
+            "thursday": [ 6, 11, 16, 23 ],
+            "friday": [ 5, 10, 16, 22 ],
+            "saturday": [ 4, 9, 15, 21 ],
+            "sunday": [ 9, 15, 20, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 58,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/St-Louis-Cardinals_01.jpg',
+          title: 'St. Louis Cardinals',
+          artist: 'Dowdle',
+          year: 'xxi Cent.',
+          rule: {
+            "monday": [ 9, 15, 20, 27 ],
+            "tuesday": [ 23, 13, 20, 26 ],
+            "wednesday": [ 8, 13, 19, 25 ],
+            "thursday": [ 7, 11, 26, 24 ],
+            "friday": [ 6, 11, 16, 23 ],
+            "saturday": [ 5, 10, 16, 22 ],
+            "sunday": [ 4, 9, 15, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 59,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/BASEBALL-molina-Steven-Walden--3.jpg',
+          title: 'St Louis Cardinals Yadier Molina',
+          artist: 'Steven Walden',
+          year: 'xxi Cent.',
+          rule: {
+            "monday": [ 4, 9, 15, 21 ],
+            "tuesday": [ 9, 15, 20, 27 ],
+            "wednesday": [ 23, 13, 20, 26 ],
+            "thursday": [ 8, 13, 19, 25 ],
+            "friday": [ 7, 11, 26, 24 ],
+            "saturday": [ 6, 11, 16, 23 ],
+            "sunday": [ 5, 10, 16, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 60,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/go-cards-st-louis-cardinals-2011-world-series-champions-dan-haraga.jpg',
+          title: 'Go Cards!',
+          artist: 'Dan Haraga',
+          year: '2011',
+          rule: {
+            "monday": [ 5, 10, 16, 22 ],
+            "tuesday": [ 4, 9, 15, 21 ],
+            "wednesday": [ 9, 15, 20, 27 ],
+            "thursday": [ 23, 13, 20, 26 ],
+            "friday": [ 8, 13, 19, 25 ],
+            "saturday": [ 7, 11, 26, 24 ],
+            "sunday": [ 6, 11, 16, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
