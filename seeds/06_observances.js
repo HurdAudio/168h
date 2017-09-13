@@ -7889,6 +7889,62 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 501,
+          user_id: 1,
+          name: 'Mike Piazza (catcher), born 1968',
+          color: '#120F44',
+          picture: './img/baseball/mikepiazza.jpg',
+          day_of: new Date ('1937-06-26T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 502,
+          user_id: 1,
+          name: 'The world ended on this day in 1925 as foretold to Margaret Rowan in a vision by the Angel Gabriel',
+          color: '#333A29',
+          picture: './img/doomsday/margaretrowancookoo.jpg',
+          day_of: new Date ('1925-02-13T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 503,
+          user_id: 1,
+          name: 'Stuff Smith (violinist), born 1909',
+          color: '#EFF1DC',
+          picture: './img/musicians/stuffsmith.jpg',
+          day_of: new Date ('1909-08-14T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 504,
+          user_id: 1,
+          name: 'Three Day Road by Joseph Boyden published in 2005',
+          color: '#4D4038',
+          picture: './img/books/threedayroad.jpg',
+          day_of: new Date ('2005-03-17T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
