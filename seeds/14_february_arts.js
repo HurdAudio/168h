@@ -1504,6 +1504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 76,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Mother_and_Child.gif',
+          title: 'Mother and Child',
+          artist: 'Elizabeth Catlett',
+          year: '1939',
+          rule: {
+            "monday": [ 17, 25, 4, 12 ],
+            "tuesday": [ 19, 29, 6, 14 ],
+            "wednesday": [ 21, 29, 8, 18 ],
+            "thursday": [ 23, 2, 27, 17 ],
+            "friday": [ 11, 19, 27, 6 ],
+            "saturday": [ 13, 21, 29, 8 ],
+            "sunday": [ 18, 23, 29, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 77,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/2e739b173b8654380f211f2f2dc957bd.jpg',
+          title: 'Soundsuit',
+          artist: 'Nick Cave',
+          year: 'xxi Cent.',
+          rule: {
+            "monday": [ 19, 24, 1, 11 ],
+            "tuesday": [ 18, 26, 5, 13 ],
+            "wednesday": [ 20, 1, 7, 15 ],
+            "thursday": [ 22, 1, 9, 19 ],
+            "friday": [ 24, 3, 28, 18 ],
+            "saturday": [ 12, 20, 28, 7 ],
+            "sunday": [ 14, 22, 1, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 78,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Michael_Ray_Charles_-(Forever_Free)_‘Servin_with_a_smile’,-_1994.gif',
+          title: '(Forever Free) ‘Servin with a smile’',
+          artist: 'Michael Ray Charles',
+          year: '1994',
+          rule: {
+            "monday": [ 14, 22, 1, 9 ],
+            "tuesday": [ 19, 24, 1, 11 ],
+            "wednesday": [ 18, 26, 5, 13 ],
+            "thursday": [ 20, 1, 7, 15 ],
+            "friday": [ 22, 1, 9, 19 ],
+            "saturday": [ 24, 3, 28, 18 ],
+            "sunday": [ 12, 20, 28, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 79,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/2adcd_sept7_pma_img.jpg',
+          title: 'Malcolm X #3',
+          artist: 'Barbara Chase-Riboud',
+          year: '1969',
+          rule: {
+            "monday": [ 12, 20, 28, 7 ],
+            "tuesday": [ 14, 22, 1, 9 ],
+            "wednesday": [ 19, 24, 1, 11 ],
+            "thursday": [ 18, 26, 5, 13 ],
+            "friday": [ 20, 1, 7, 15 ],
+            "saturday": [ 22, 1, 9, 19 ],
+            "sunday": [ 24, 3, 28, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 80,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/2550028-DVKSMXZY-7.jpg',
+          title: 'Parisian Rose for Her',
+          artist: 'Jamour Chames',
+          year: 'xxi Cent.',
+          rule: {
+            "monday": [ 24, 3, 28, 18 ],
+            "tuesday": [ 12, 20, 28, 7 ],
+            "wednesday": [ 14, 22, 1, 9  ],
+            "thursday": [ 19, 24, 1, 11 ],
+            "friday": [ 18, 26, 5, 13 ],
+            "saturday": [ 20, 1, 7, 15 ],
+            "sunday": [ 22, 1, 9, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
