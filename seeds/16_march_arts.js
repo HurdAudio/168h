@@ -1304,6 +1304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 66,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/three-symbols-1930.jpg',
+          title: 'Three Symbols',
+          artist: 'Eileen Agar',
+          year: '1930',
+          rule: {
+            "monday": [ 4, 14, 13, 1 ],
+            "tuesday": [ 10, 19, 28, 7 ],
+            "wednesday": [ 9, 19, 29, 6 ],
+            "thursday": [ 8, 18, 26, 5 ],
+            "friday": [ 7, 17, 25, 4 ],
+            "saturday": [ 6, 16, 24, 3 ],
+            "sunday": [ 5, 15, 23, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 67,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/plastic-sphere-cube-triangle-red-2010.jpg',
+          title: 'Plastic Sphere Cube Triangle Red',
+          artist: 'Angela Bulloch',
+          year: '2010',
+          rule: {
+            "monday": [ 5, 15, 23, 2 ],
+            "tuesday": [ 4, 14, 13, 1 ],
+            "wednesday": [ 10, 19, 28, 7 ],
+            "thursday": [ 9, 19, 29, 6 ],
+            "friday": [ 8, 18, 26, 5 ],
+            "saturday": [ 7, 17, 25, 4 ],
+            "sunday": [ 6, 16, 24, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 68,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/woman-with-an-umbrella-1880.jpg',
+          title: 'Woman with an Umbrella',
+          artist: 'Marie Bracquemond',
+          year: '1880',
+          rule: {
+            "monday": [ 6, 16, 24, 3 ],
+            "tuesday": [ 5, 15, 23, 2 ],
+            "wednesday": [ 4, 14, 13, 1 ],
+            "thursday": [ 10, 19, 28, 7 ],
+            "friday": [ 9, 19, 29, 6 ],
+            "saturday": [ 8, 18, 26, 5 ],
+            "sunday": [ 7, 17, 25, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 69,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/bild-no-15-berg-und-schiffe-1914.jpg',
+          title: 'Bild no. 15, Berg und Schiffe',
+          artist: 'Jacoba van Heemskerck',
+          year: '1914',
+          rule: {
+            "monday": [ 7, 17, 25, 4 ],
+            "tuesday": [ 6, 16, 24, 3 ],
+            "wednesday": [ 5, 15, 23, 2 ],
+            "thursday": [ 4, 14, 13, 1 ],
+            "friday": [ 10, 19, 28, 7 ],
+            "saturday": [ 9, 19, 29, 6 ],
+            "sunday": [ 8, 18, 26, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 70,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/sans-titre-main-coquillage-1934.jpg',
+          title: 'Sans Titre (Main-coquillage)',
+          artist: 'Dora Maar',
+          year: '1934',
+          rule: {
+            "monday": [ 9, 19, 27, 6 ],
+            "tuesday": [ 8, 18, 26, 5 ],
+            "wednesday": [ 7, 17, 25, 4 ],
+            "thursday": [ 6, 16, 24, 3 ],
+            "friday": [ 5, 15, 24, 2 ],
+            "saturday": [ 11, 20, 29, 7 ],
+            "sunday": [ 10, 20, 30, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
