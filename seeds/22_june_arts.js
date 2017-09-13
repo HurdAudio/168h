@@ -704,6 +704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 36,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/untitled-1959.jpg',
+          title: 'Untitled',
+          artist: 'Otto Piene',
+          year: '1959',
+          rule: {
+            "monday": [ 5, 15, 25, 3 ],
+            "tuesday": [ 4, 14, 24, 2 ],
+            "wednesday": [ 3, 13, 23, 1 ],
+            "thursday": [ 2, 12, 22, 30 ],
+            "friday": [ 1, 11, 21, 29 ],
+            "saturday": [ 30, 10, 30, 28 ],
+            "sunday": [ 6, 16, 26, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 37,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/the-egg-1967.jpg',
+          title: 'The Egg',
+          artist: 'Lygia Pape',
+          year: '1967',
+          rule: {
+            "monday": [ 6, 16, 26, 3 ],
+            "tuesday": [ 5, 15, 25, 3 ],
+            "wednesday": [ 4, 14, 24, 2 ],
+            "thursday": [ 3, 13, 23, 1 ],
+            "friday": [ 2, 12, 22, 30 ],
+            "saturday": [ 1, 11, 21, 29 ],
+            "sunday": [ 30, 10, 30, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 38,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/whirlpool-eye-of-the-storm-1973.jpg',
+          title: 'Whirlpool (Eye of the Storm)',
+          artist: 'Dennis Oppenheim',
+          year: '1973',
+          rule: {
+            "monday": [ 30, 10, 30, 28 ],
+            "tuesday": [ 6, 16, 26, 3 ],
+            "wednesday": [ 5, 15, 25, 3 ],
+            "thursday": [ 4, 14, 24, 2 ],
+            "friday": [ 3, 13, 23, 1 ],
+            "saturday": [ 2, 12, 22, 30 ],
+            "sunday": [ 1, 11, 21, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 39,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/1965-1-d-tail-photo-1965.jpg',
+          title: '1965 / 1 - ∞ /détail photo ?',
+          artist: 'Roman Opalka',
+          year: '1965',
+          rule: {
+            "monday": [ 1, 11, 21, 29 ],
+            "tuesday": [ 30, 10, 30, 28 ],
+            "wednesday": [ 6, 16, 26, 3 ],
+            "thursday": [ 5, 15, 25, 3 ],
+            "friday": [ 4, 14, 24, 2 ],
+            "saturday": [ 3, 13, 23, 1 ],
+            "sunday": [ 2, 12, 22, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 40,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/untitled-1980.jpg',
+          title: 'Untitled',
+          artist: 'Eduardo Nery',
+          year: '1980',
+          rule: {
+            "monday": [ 2, 12, 22, 30 ],
+            "tuesday": [ 1, 11, 21, 29 ],
+            "wednesday": [ 30, 10, 30, 28 ],
+            "thursday": [ 6, 16, 26, 3 ],
+            "friday": [ 5, 15, 25, 3 ],
+            "saturday": [ 4, 14, 24, 2 ],
+            "sunday": [ 3, 13, 23, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
