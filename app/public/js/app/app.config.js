@@ -39,6 +39,12 @@
         url: '/passwordreset/:id',
         parent: 'app',
         component: 'passwordreset'
+      })
+      .state({
+        name: 'monthview',
+        url: '/monthview',
+        parent: 'app',
+        component: 'monthview'
       });
       // .state({
       //   name: 'resume',

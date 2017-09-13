@@ -82,6 +82,14 @@
       vm.verbalizeTimeblock = verbalizeTimeblock;
       vm.advanceArt = advanceArt;
       vm.gotoWeek = gotoWeek;
+      vm.gotoMonth = gotoMonth;
+
+      function gotoMonth() {
+        myTimer = undefined;
+        dayClock = false;
+        weekClock = true;
+        $state.go('monthview');
+      }
 
       function advanceArt(index) {
         let nextArt = Math.floor(Math.random()*vm.arts.length);
