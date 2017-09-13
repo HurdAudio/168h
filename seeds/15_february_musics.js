@@ -760,6 +760,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 43,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=619498598/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://artensembleofchicago.bandcamp.com/album/non-cognitive-aspects-of-the-city-live-at-iridium',
+          a_string: 'Non-Cognitive Aspects of the City - Live at Iridium by Art Ensemble of Chicago',
+          rule: {
+            "monday": [ 24, 18, 20, 26 ],
+            "tuesday": [ 7, 21, 2, 26 ],
+            "wednesday": [ 8, 12, 14, 18 ],
+            "thursday": [ 10, 14, 16, 20 ],
+            "saturday": [ 12, 16, 18, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 44,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=267460253/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://caligolarecords.bandcamp.com/album/jazz-r-evolution',
+          a_string: '«Jazz (R)evolution» by Baba Sissoko with Antonello Salis &amp; Famoudou Don Moye',
+          rule: {
+            "monday": [ 12, 16, 18, 22 ],
+            "tuesday": [ 24, 18, 20, 26 ],
+            "wednesday": [ 7, 21, 2, 26 ],
+            "thursday": [ 8, 12, 14, 18 ],
+            "saturday": [ 10, 14, 16, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 45,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1952058313/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tyshawn-sorey.bandcamp.com/album/verisimilitude',
+          a_string: 'Verisimilitude by Tyshawn Sorey',
+          rule: {
+            "monday": [ 10, 14, 16, 20 ],
+            "tuesday": [ 12, 16, 18, 22 ],
+            "wednesday": [ 24, 18, 20, 26 ],
+            "thursday": [ 7, 21, 2, 26 ],
+            "saturday": [ 8, 12, 14, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
