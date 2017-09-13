@@ -232,6 +232,17 @@
     }, setDelay) ;
   }
 
+  function linkSentToEmail() {
+    stopBlinker = true;
+    let loginFailNotice = document.getElementById('loginFailNotice');
+    let messageString = '><br>>Link for resetting password has been sent to your email address.<br>>';
+
+    loginFailNotice.setAttribute("style", "display: initial;");
+    setTimeout(()=>{
+      messageDisplay(messageString, '', loginFailNotice, 40);
+    }, 500);
+  }
+
   function welcomeNewUserMessage() {
     stopBlinker = true;
     let loginFailNotice = document.getElementById('loginFailNotice');
@@ -350,7 +361,7 @@
             let sub = {
               email: checkEmail,
               id: userAccount.id
-            }
+            };
             $http.get(`/users/${userAccount.id}`)
             .then(userInfoData=>{
               let userInfo = userInfoData.data;
@@ -362,6 +373,7 @@
               .then(emailData=>{
                 let email = emailData.data;
                 console.log(email);
+                linkSentToEmail();
               });
             });
 

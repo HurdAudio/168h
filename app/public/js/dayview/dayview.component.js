@@ -83,6 +83,22 @@
       vm.advanceArt = advanceArt;
       vm.gotoWeek = gotoWeek;
       vm.gotoMonth = gotoMonth;
+      vm.speakWord = speakWord;
+      vm.speakHistory = speakHistory;
+
+      function speakHistory() {
+        let yearFact = document.getElementById('yearFact');
+        let eventFact = document.getElementById('eventFact');
+        let history = yearFact.innerHTML + eventFact.innerHTML;
+        spokenOutput(history);
+      }
+
+
+
+      function speakWord() {
+        let wordOfDay = document.getElementById('wordOfDay');
+        spokenOutput(wordOfDay.innerHTML);
+      }
 
       function gotoMonth() {
         myTimer = undefined;
@@ -736,7 +752,14 @@
         myTimer = undefined;
         dayClock = false;
         weekClock = true;
-        $state.go('weekview');
+        let navDay = new Date(viewDate);
+        if (navDay.getDay() !== 1) {
+          while(navDay.getDay() !==1) {
+            navDay.setDate(navDay.getDate()-1);
+          }
+        }
+        let idString = 'user=' + currentUserId + '&weekof=' + navDay.getFullYear() + '-' + (navDay.getMonth() + 1) + '-' + navDay.getDate();
+        $state.go('weekview', {id: idString});
       }
 
       function previousDay() {

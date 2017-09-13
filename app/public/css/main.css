@@ -136,7 +136,7 @@ a.btn:hover {
   background-repeat: no-repeat;
   padding-left: 0;
   background-color: #ccddee;
-  height: 5.5em;
+  height: auto;
   margin-bottom: 0em;
 }
 
@@ -157,6 +157,7 @@ a.btn:hover {
   height: auto;
   text-align: center;
   font-family: 'Alike Angular', serif;
+  border-right: 1px solid #000000;
 }
 
 #mondayColMonth {
@@ -197,6 +198,7 @@ a.btn:hover {
   width: 14.2%;
   text-align: center;
   font-family: 'Alike Angular', serif;
+  border-right: 1px solid #000000;
 }
 
 #tuesdayColMonth {
@@ -235,6 +237,7 @@ a.btn:hover {
   width: 14.2%;
   text-align: center;
   font-family: 'Alike Angular', serif;
+  border-right: 1px solid #000000;
 }
 
 #wednesdayColMonth {
@@ -273,6 +276,7 @@ a.btn:hover {
   width: 14.2%;
   text-align: center;
   font-family: 'Alike Angular', serif;
+  border-right: 1px solid #000000;
 }
 
 #thursdayColMonth {
@@ -312,6 +316,7 @@ a.btn:hover {
   width: 14.2%;
   text-align: center;
   font-family: 'Alike Angular', serif;
+  border-right: 1px solid #000000;
 }
 
 #fridayColMonth {
@@ -350,6 +355,7 @@ a.btn:hover {
   width: 14.2%;
   text-align: center;
   font-family: 'Alike Angular', serif;
+  border-right: 1px solid #000000;
 }
 
 #saturdayColMonth {
@@ -486,7 +492,7 @@ a.btn:hover {
 }
 
 #mondayDay {
-  width: 13.7%;
+  width: 98.5%;
   background-image: url(../img/background-2030242.jpg);
   background-repeat: repeat;
   background-size: 75%;
@@ -497,15 +503,14 @@ a.btn:hover {
   margin-top: 0;
   text-align: left;
   text-rendering: geometricPrecision;
-  border: solid #000000 3px;
   overflow: scroll;
-  height: 565px;
-  padding-left: 0;
-  margin-left: 0.2em;
+  height: 28.1em;
+  padding: 0;
+  margin: 0.1em;
 }
 
 #tuesdayDay {
-  width: 13.7%;
+  width: 98.5%;
   background-image: url(../img/background-2030242.jpg);
   background-repeat: repeat;
   background-size: 75%;
@@ -516,15 +521,14 @@ a.btn:hover {
   margin-top: 0;
   text-align: left;
   text-rendering: geometricPrecision;
-  border: solid #000000 3px;
   overflow: scroll;
-  height: 565px;
-  padding-left: 0;
-  margin-left: 0.05em;
+  height: 28.1em;
+  padding: 0;
+  margin: 0.1em;
 }
 
 #wednesdayDay {
-  width: 13.7%;
+  width: 98.5%;
   background-image: url(../img/background-2030242.jpg);
   background-repeat: repeat;
   background-size: 75%;
@@ -535,15 +539,14 @@ a.btn:hover {
   margin-top: 0;
   text-align: left;
   text-rendering: geometricPrecision;
-  border: solid #000000 3px;
   overflow: scroll;
-  height: 565px;
-  padding-left: 0;
-  margin-left: 0.05em;
+  height: 28.1em;
+  padding: 0;
+  margin: 0.1em;
 }
 
 #thursdayDay {
-  width: 13.7%;
+  width: 98.5%;
   background-image: url(../img/background-2030242.jpg);
   background-repeat: repeat;
   background-size: 75%;
@@ -554,15 +557,14 @@ a.btn:hover {
   margin-top: 0;
   text-align: left;
   text-rendering: geometricPrecision;
-  border: solid #000000 3px;
   overflow: scroll;
-  height: 565px;
-  padding-left: 0;
-  margin-left: 0.05em;
+  height: 28.1em;
+  padding: 0;
+  margin: 0.1em;
 }
 
 #fridayDay {
-  width: 13.7%;
+  width: 98.5%;
   background-image: url(../img/background-2030242.jpg);
   background-repeat: repeat;
   background-size: 75%;
@@ -573,15 +575,14 @@ a.btn:hover {
   margin-top: 0;
   text-align: left;
   text-rendering: geometricPrecision;
-  border: solid #000000 3px;
   overflow: scroll;
-  height: 565px;
-  padding-left: 0;
-  margin-left: 0.05em;
+  height: 28.1em;
+  padding: 0;
+  margin: 0.1em;
 }
 
 #saturdayDay {
-  width: 13.7%;
+  width: 98.5%;
   background-image: url(../img/background-2030242.jpg);
   background-repeat: repeat;
   background-size: 75%;
@@ -592,15 +593,14 @@ a.btn:hover {
   margin-top: 0;
   text-align: left;
   text-rendering: geometricPrecision;
-  border: solid #000000 3px;
   overflow: scroll;
-  height: 565px;
-  padding-left: 0;
-  margin-left: 0.05em;
+  height: 28.1em;
+  padding: 0;
+  margin: 0.1em;
 }
 
 #sundayDay {
-  width: 13.7%;
+  width: 98.5%;
   background-image: url(../img/background-2030242.jpg);
   background-repeat: repeat;
   background-size: 75%;
@@ -611,11 +611,10 @@ a.btn:hover {
   margin-top: 0;
   text-align: left;
   text-rendering: geometricPrecision;
-  border: solid #000000 3px;
   overflow: scroll;
-  height: 565px;
-  padding-left: 0;
-  margin-left: 0.05em;
+  height: 28.1em;
+  padding: 0;
+  margin: 0.1em;
 }
 
 #focusPanel {
@@ -3001,4 +3000,8 @@ footer img {
 
 #passwordReset {
 
+}
+
+.weekDays {
+  height: 4.2em;
 }

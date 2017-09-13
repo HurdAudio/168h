@@ -30,7 +30,7 @@
       })
       .state({
         name: 'weekview',
-        url: '/weekview',
+        url: '/weekview/:id',
         parent: 'app',
         component: 'weekview'
       })
