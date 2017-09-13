@@ -504,6 +504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 26,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/imprints-of-a-no-50-paintbrush-repeated-at-regular-intervals-of-30-cm-1995.jpg',
+          title: 'Imprints of a No. 50 Paintbrush Repeated at Regular Intervals of 30 cm.',
+          artist: 'Niele Toroni',
+          year: '1995',
+          rule: {
+            "monday": [ 2, 13, 24, 4 ],
+            "tuesday": [ 1, 12, 23, 3 ],
+            "wednesday": [ 31, 11, 22, 2 ],
+            "thursday": [ 6, 17, 28, 8 ],
+            "friday": [ 5, 16, 27, 7 ],
+            "saturday": [ 4, 15, 26, 6 ],
+            "sunday": [ 3, 14, 25, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 27,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/last-year-in-capri-exotic-title-1962.jpg',
+          title: 'Last Year in Capri (exotic title)',
+          artist: 'Martial Raysse',
+          year: '1962',
+          rule: {
+            "monday": [ 3, 14, 25, 5 ],
+            "tuesday": [ 2, 13, 24, 4 ],
+            "wednesday": [ 1, 12, 23, 3 ],
+            "thursday": [ 31, 11, 22, 2 ],
+            "friday": [ 6, 17, 28, 8 ],
+            "saturday": [ 5, 16, 27, 7 ],
+            "sunday": [ 4, 15, 26, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 28,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/histoires-natturelles-1973.jpg',
+          title: 'Histoires Natturelles',
+          artist: 'Jorge Camacho',
+          year: '1973',
+          rule: {
+            "monday": [ 5, 16, 27, 7 ],
+            "tuesday": [ 4, 15, 26, 6 ],
+            "wednesday": [ 3, 14, 25, 5 ],
+            "thursday": [ 2, 13, 24, 4 ],
+            "friday": [ 1, 12, 23, 3 ],
+            "saturday": [ 7, 18, 29, 9 ],
+            "sunday": [ 6, 17, 28, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 29,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/six-round-wooden-bars-1975.jpg',
+          title: 'Six Round Wooden Bars',
+          artist: 'Andre Cadere',
+          year: '1975',
+          rule: {
+            "monday": [ 6, 17, 28, 8 ],
+            "tuesday": [ 5, 16, 27, 7 ],
+            "wednesday": [ 4, 15, 26, 6 ],
+            "thursday": [ 3, 14, 25, 5 ],
+            "friday": [ 2, 13, 24, 4 ],
+            "saturday": [ 1, 12, 23, 3 ],
+            "sunday": [ 7, 18, 29, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 30,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/1965-1-unknown-detail-of-detail-1.jpg',
+          title: '1965 / 1 - ∞ / unknown detail of detail',
+          artist: 'Roman Opalka',
+          year: '1965',
+          rule: {
+            "monday": [ 7, 18, 29, 9 ],
+            "tuesday": [ 6, 17, 28, 8 ],
+            "wednesday": [ 5, 16, 27, 7 ],
+            "thursday": [ 4, 15, 26, 6 ],
+            "friday": [ 3, 14, 25, 5 ],
+            "saturday": [ 2, 13, 24, 4 ],
+            "sunday": [ 1, 12, 23, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
