@@ -904,6 +904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 46,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/portrait-of-worker-yakobchenko-1938.jpg',
+          title: 'Portrait of worker Yakobchenko',
+          artist: 'Pyotr Konchalovsky',
+          year: '1938',
+          rule: {
+            "monday": [ 28, 7, 17, 27 ],
+            "tuesday": [ 26, 5, 15, 25 ],
+            "wednesday": [ 7, 17, 27, 6 ],
+            "thursday": [ 5, 15, 25, 4 ],
+            "friday": [ 3, 13, 23, 2 ],
+            "saturday": [ 1, 11, 21, 31 ],
+            "sunday": [ 30, 9, 19, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 47,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/the-revolt-of-the-soldiers-and-workers-in-the-days-of-february-1917.jpg',
+          title: 'The revolt of the soldiers and workers in the days of February 1917',
+          artist: 'Ivan Vladimirov',
+          year: 'XIX-XX cent.',
+          rule: {
+            "monday": [ 30, 9, 19, 29 ],
+            "tuesday": [ 28, 7, 17, 27 ],
+            "wednesday": [ 26, 5, 15, 25 ],
+            "thursday": [ 7, 17, 27, 6 ],
+            "friday": [ 5, 15, 25, 4 ],
+            "saturday": [ 3, 13, 23, 2 ],
+            "sunday": [ 1, 11, 21, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 48,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/woman-worker-1923.jpg',
+          title: 'Woman Worker',
+          artist: 'Victor Brauner',
+          year: '1923',
+          rule: {
+            "monday": [ 1, 11, 21, 31 ],
+            "tuesday": [ 30, 9, 19, 29 ],
+            "wednesday": [ 28, 7, 17, 27 ],
+            "thursday": [ 26, 5, 15, 25 ],
+            "friday": [ 7, 17, 27, 6 ],
+            "saturday": [ 5, 15, 25, 4 ],
+            "sunday": [ 3, 13, 23, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 49,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/two-workers-on-strike.jpg',
+          title: 'Two Workers on Strike',
+          artist: 'Nicolae Vermont',
+          year: 'XIX-XX cent.',
+          rule: {
+            "monday": [ 4, 14, 24, 3 ],
+            "tuesday": [ 2, 12, 22, 1 ],
+            "wednesday": [ 31, 10, 20, 30 ],
+            "thursday": [ 29, 8, 18, 28 ],
+            "friday": [ 27, 6, 16, 26 ],
+            "saturday": [ 8, 18, 28, 7 ],
+            "sunday": [ 6, 16, 26, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 50,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/field-workers-1961.jpg',
+          title: 'Field Workers',
+          artist: 'Josef Herman',
+          year: '1961',
+          rule: {
+            "monday": [ 6, 16, 26, 5 ],
+            "tuesday": [ 4, 14, 24, 3 ],
+            "wednesday": [ 2, 12, 22, 1 ],
+            "thursday": [ 31, 10, 20, 30 ],
+            "friday": [ 29, 8, 18, 28 ],
+            "saturday": [ 27, 6, 16, 26 ],
+            "sunday": [ 8, 18, 28, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
