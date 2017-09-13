@@ -328,6 +328,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 19,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1094705682/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://touch333.bandcamp.com/album/figueroa-terrace',
+          a_string: 'Figueroa Terrace by Thomas Ankersmit',
+          rule: {
+            "monday": [ 30, 4, 10, 21 ],
+            "tuesday": [ 29, 7, 9, 20 ],
+            "wednesday": [ 3, 7, 13, 24 ],
+            "thursday": [ 2, 6, 12, 23 ],
+            "saturday": [ 1, 5, 10, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 20,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=644271494/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://orenambarchi.bandcamp.com/album/live-knots',
+          a_string: 'Live Knots by Oren Ambarchi',
+          rule: {
+            "monday": [ 1, 5, 10, 22 ],
+            "tuesday": [ 30, 4, 10, 21 ],
+            "wednesday": [ 29, 7, 9, 20 ],
+            "thursday": [ 3, 7, 13, 24 ],
+            "saturday": [ 2, 6, 12, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 21,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3406973740/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://emmanuelholterbach.bandcamp.com/album/trois-disques-p-les-pour-eliane-radigue',
+          a_string: 'Trois Disques Pâles (pour Eliane Radigue) by Emmanuel Holterbach',
+          rule: {
+            "monday": [ 3, 7, 13, 23 ],
+            "tuesday": [ 2, 6, 11, 23 ],
+            "wednesday": [ 1, 5, 11, 22 ],
+            "thursday": [ 30, 8, 10, 21 ],
+            "saturday": [ 4, 8, 14, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
