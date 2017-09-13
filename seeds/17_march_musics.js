@@ -652,6 +652,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 37,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2532295302/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://konvojrecords.bandcamp.com/album/squid-police',
+          a_string: 'Squid Police by Lotte Anker &amp; Jakob Riis',
+          rule: {
+            "monday": [ 10, 16, 22, 30 ],
+            "tuesday": [ 9, 15, 21, 29 ],
+            "wednesday": [ 8, 14, 20, 29 ],
+            "thursday": [ 7, 13, 19, 27 ],
+            "saturday": [ 6, 12, 18, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 38,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1707925128/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ideologicorgan.bandcamp.com/album/ghil',
+          a_string: 'Ghil by Okkyung Lee',
+          rule: {
+            "monday": [ 6, 12, 18, 26 ],
+            "tuesday": [ 10, 16, 22, 30 ],
+            "wednesday": [ 9, 15, 21, 29 ],
+            "thursday": [ 8, 14, 20, 29 ],
+            "saturday": [ 7, 13, 19, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 39,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2569024353/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://intlanthem.bandcamp.com/album/not-living-in-fear',
+          a_string: 'Not Living in Fear by Hear in Now (Mazz Swift, Tomeka Reid, Silvia Bolognesi)',
+          rule: {
+            "monday": [ 7, 13, 19, 27 ],
+            "tuesday": [ 6, 12, 18, 26 ],
+            "wednesday": [ 10, 16, 22, 30 ],
+            "thursday": [ 9, 15, 21, 29 ],
+            "saturday": [ 8, 14, 20, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
