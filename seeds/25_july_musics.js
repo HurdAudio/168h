@@ -274,6 +274,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 16,
+          user_id: 1,
+          theme: 'commercially viable genre',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1280447735/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://dva2.bandcamp.com/album/hu',
+          a_string: 'HU by Dva',
+          rule: {
+            "monday": [ 3, 5, 9, 17 ],
+            "tuesday": [ 2, 4, 8, 16 ],
+            "wednesday": [ 1, 3, 7, 15 ],
+            "thursday": [ 31, 2, 6, 14 ],
+            "saturday": [ 4, 6, 10, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 17,
+          user_id: 1,
+          theme: 'commercially viable genre',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3565451903/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bsmrocks.bandcamp.com/album/health',
+          a_string: 'Health by Alpha Male Tea Party',
+          rule: {
+            "monday": [ 4, 6, 10, 18 ],
+            "tuesday": [ 3, 5, 9, 17 ],
+            "wednesday": [ 2, 4, 8, 16 ],
+            "thursday": [ 1, 3, 7, 15 ],
+            "saturday": [ 31, 2, 6, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 18,
+          user_id: 1,
+          theme: 'commercially viable genre',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4231337207/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bsmrocks.bandcamp.com/album/twin-galaxies',
+          a_string: 'Twin Galaxies by Delta Sleep',
+          rule: {
+            "monday": [ 31, 2, 6, 14 ],
+            "tuesday": [ 4, 6, 10, 18 ],
+            "wednesday": [ 3, 5, 9, 17 ],
+            "thursday": [ 2, 4, 8, 16 ],
+            "saturday": [ 1, 3, 7, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
