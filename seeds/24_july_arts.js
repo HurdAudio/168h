@@ -604,6 +604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 31,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/paris-review-1967.jpg',
+          title: 'Paris Review',
+          artist: 'Marisol Escobar',
+          year: '1967',
+          rule: {
+            "monday": [ 1, 12, 23, 3 ],
+            "tuesday": [ 7, 18, 29, 9 ],
+            "wednesday": [ 6, 17, 28, 8 ],
+            "thursday": [ 5, 16, 27, 7 ],
+            "friday": [ 4, 15, 26, 6 ],
+            "saturday": [ 3, 14, 25, 5 ],
+            "sunday": [ 2, 13, 24, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 32,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/progression-1959.jpg',
+          title: 'Progression',
+          artist: 'Horacio Garcia-Rossi',
+          year: '1959',
+          rule: {
+            "monday": [ 2, 13, 24, 4 ],
+            "tuesday": [ 1, 12, 23, 3 ],
+            "wednesday": [ 7, 18, 29, 9 ],
+            "thursday": [ 6, 17, 28, 8 ],
+            "friday": [ 5, 16, 27, 7 ],
+            "saturday": [ 4, 15, 26, 6 ],
+            "sunday": [ 3, 14, 25, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 33,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/don-quichotte-les-duegnes-1988.jpg',
+          title: 'Don Quichotte: Les duegnes',
+          artist: 'Bernard Buffet',
+          year: '1988',
+          rule: {
+            "monday": [ 3, 14, 25, 5 ],
+            "tuesday": [ 2, 13, 24, 4 ],
+            "wednesday": [ 1, 12, 23, 3 ],
+            "thursday": [ 7, 18, 29, 9 ],
+            "friday": [ 6, 17, 28, 8 ],
+            "saturday": [ 5, 16, 27, 7 ],
+            "sunday": [ 4, 15, 26, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 34,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/unknown-title-1.jpg',
+          title: 'unknown title',
+          artist: 'Jacques Le Marechal',
+          year: '?',
+          rule: {
+            "monday": [ 4, 15, 26, 6 ],
+            "tuesday": [ 3, 14, 25, 5 ],
+            "wednesday": [ 2, 13, 24, 4 ],
+            "thursday": [ 1, 12, 23, 3 ],
+            "friday": [ 7, 18, 29, 9 ],
+            "saturday": [ 6, 17, 28, 8 ],
+            "sunday": [ 5, 16, 27, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 35,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/dock-1991.jpg',
+          title: 'Dock',
+          artist: 'Louis Pons',
+          year: '1991',
+          rule: {
+            "monday": [ 6, 17, 28, 8 ],
+            "tuesday": [ 5, 16, 27, 7 ],
+            "wednesday": [ 4, 15, 26, 6 ],
+            "thursday": [ 3, 14, 25, 5 ],
+            "friday": [ 2, 13, 24, 4 ],
+            "saturday": [ 8, 19, 30, 10 ],
+            "sunday": [ 7, 18, 29, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
