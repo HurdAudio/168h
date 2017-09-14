@@ -1204,6 +1204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 61,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/Baltimore_Orioles_Cal_Ripken_Jr_ba39_large.jpg',
+          title: 'Cal Ripken Jr.',
+          artist: 'GL',
+          year: 'xxi Cent.',
+          rule: {
+            "monday": [ 6, 11, 16, 23 ],
+            "tuesday": [ 5, 10, 16, 22 ],
+            "wednesday": [ 4, 9, 15, 21 ],
+            "thursday": [ 9, 15, 20, 27 ],
+            "friday": [ 23, 13, 20, 26 ],
+            "saturday": [ 8, 13, 19, 25 ],
+            "sunday": [ 7, 11, 26, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 62,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/117df1280e537c30ae0b66a145277619--baltimore-orioles-art-prints.jpg',
+          title: 'BROOKS ROBINSON BALTIMORE ORIOLES',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 7, 11, 26, 24 ],
+            "tuesday": [ 6, 11, 16, 23 ],
+            "wednesday": [ 5, 10, 16, 22 ],
+            "thursday": [ 4, 9, 15, 21 ],
+            "friday": [ 9, 15, 20, 27 ],
+            "saturday": [ 23, 13, 20, 26 ],
+            "sunday": [ 8, 13, 19, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 63,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/IMG_61998.jpg',
+          title: 'Baltimore Orioles Stadium Oriole Park at Camden Yards Baltimore',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 9, 14, 20, 26 ],
+            "tuesday": [ 8, 12, 27, 25 ],
+            "wednesday": [ 7, 12, 17, 24 ],
+            "thursday": [ 6, 11, 17, 23 ],
+            "friday": [ 5, 10, 16, 22 ],
+            "saturday": [ 10, 16, 21, 28 ],
+            "sunday": [ 24, 14, 21, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 64,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/behind-the-plate-paul-mangold.jpg',
+          title: 'Behind The Plate',
+          artist: 'Paul Mangold',
+          year: 'xxi Cent.',
+          rule: {
+            "monday": [ 24, 14, 21, 27 ],
+            "tuesday": [ 9, 14, 20, 26 ],
+            "wednesday": [ 8, 12, 27, 25 ],
+            "thursday": [ 7, 12, 17, 24 ],
+            "friday": [ 6, 11, 17, 23 ],
+            "saturday": [ 5, 10, 16, 22 ],
+            "sunday": [ 10, 16, 21, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 65,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/OrioleParkatCamdenYards.jpg',
+          title: 'Orioles Park at Camden Yards',
+          artist: 'Max Mason',
+          year: 'xxi Cent.',
+          rule: {
+            "monday": [ 10, 16, 21, 28 ],
+            "tuesday": [ 24, 14, 21, 27 ],
+            "wednesday": [ 9, 14, 20, 26 ],
+            "thursday": [ 8, 12, 27, 25 ],
+            "friday": [ 7, 12, 17, 24 ],
+            "saturday": [ 6, 11, 17, 23 ],
+            "sunday": [ 5, 10, 16, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
