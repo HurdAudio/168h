@@ -598,6 +598,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 34,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4002071568/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://marswilliams.bandcamp.com/album/unusual-words',
+          a_string: 'Unusual Words by BONESHAKER',
+          rule: {
+            "monday": [ 6, 14, 26, 1 ],
+            "tuesday": [ 5, 13, 25, 30 ],
+            "wednesday": [ 9, 17, 29, 4 ],
+            "thursday": [ 8, 16, 28, 3 ],
+            "saturday": [ 7, 15, 27, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 35,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1307492242/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://intlanthem.bandcamp.com/album/the-new-breed',
+          a_string: 'The New Breed by Jeff Parker',
+          rule: {
+            "monday": [ 8, 16, 28, 3 ],
+            "tuesday": [ 7, 15, 27, 2 ],
+            "wednesday": [ 6, 14, 26, 1 ],
+            "thursday": [ 10, 18, 30, 5 ],
+            "saturday": [ 9, 17, 29, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 36,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3496899550/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://thebridgesessions.bandcamp.com/album/twins',
+          a_string: 'Twins by Twins',
+          rule: {
+            "monday": [ 9, 17, 29, 4 ],
+            "tuesday": [ 8, 16, 28, 3 ],
+            "wednesday": [ 7, 15, 27, 2 ],
+            "thursday": [ 6, 14, 26, 1 ],
+            "saturday": [ 10, 18, 30, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
