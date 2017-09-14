@@ -490,6 +490,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 28,
+          user_id: 1,
+          theme: 'avant garde/new music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3096869906/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://garethdavisfrances-marieuitti.bandcamp.com/album/gramercy',
+          a_string: 'Gramercy by Gareth Davis &amp; Frances-Marie Uitti',
+          rule: {
+            "monday": [ 5, 11, 18, 31 ],
+            "tuesday": [ 9, 15, 22, 4 ],
+            "wednesday": [ 8, 14, 21, 3 ],
+            "thursday": [ 7, 13, 20, 2 ],
+            "saturday": [ 6, 12, 19, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 29,
+          user_id: 1,
+          theme: 'avant garde/new music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3273592205/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sluchaj.bandcamp.com/album/thunder',
+          a_string: 'Thunder by Agustí Fernández / Frances Marie Uitti / Joel Ryan',
+          rule: {
+            "monday": [ 6, 12, 19, 1 ],
+            "tuesday": [ 5, 11, 18, 31 ],
+            "wednesday": [ 9, 15, 22, 4 ],
+            "thursday": [ 8, 14, 21, 3 ],
+            "saturday": [ 7, 13, 20, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 30,
+          user_id: 1,
+          theme: 'avant garde/new music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2041730779/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://aishaorazbayeva.bandcamp.com/album/the-hand-gallery',
+          a_string: 'The Hand Gallery by Aisha Orazbayeva',
+          rule: {
+            "monday": [ 7, 13, 20, 2 ],
+            "tuesday": [ 6, 12, 19, 1 ],
+            "wednesday": [ 5, 11, 18, 31 ],
+            "thursday": [ 9, 15, 22, 4 ],
+            "saturday": [ 8, 14, 21, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
