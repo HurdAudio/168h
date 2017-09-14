@@ -85,6 +85,7 @@
       vm.gotoMonth = gotoMonth;
       vm.speakWord = speakWord;
       vm.speakHistory = speakHistory;
+      vm.userProfile = userProfile;
 
       function speakHistory() {
         let yearFact = document.getElementById('yearFact');
@@ -98,6 +99,13 @@
       function speakWord() {
         let wordOfDay = document.getElementById('wordOfDay');
         spokenOutput(wordOfDay.innerHTML);
+      }
+
+      function userProfile() {
+        myTimer = undefined;
+        dayClock = false;
+        weekClock = true;
+        $state.go('userprofile');
       }
 
       function gotoMonth() {

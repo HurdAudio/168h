@@ -45,6 +45,12 @@
         url: '/monthview',
         parent: 'app',
         component: 'monthview'
+      })
+      .state({
+        name: 'userprofile',
+        url: '/userprofile',
+        parent: 'app',
+        component: 'userprofile'
       });
       // .state({
       //   name: 'resume',
