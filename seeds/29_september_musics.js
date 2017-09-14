@@ -58,6 +58,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 4,
+          user_id: 1,
+          theme: 'math rock/progressive rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2048046098/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://artbears.bandcamp.com/album/revisited',
+          a_string: 'revisited by Art Bears',
+          rule: {
+            "monday": [ 2, 22, 30, 24 ],
+            "tuesday": [ 1, 21, 29, 23 ],
+            "wednesday": [ 5, 25, 3, 27 ],
+            "thursday": [ 4, 24, 2, 26 ],
+            "saturday": [ 3, 23, 1, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 5,
+          user_id: 1,
+          theme: 'math rock/progressive rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1761798674/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://beak.bandcamp.com/album/recordings-05-01-09-17-01-09',
+          a_string: 'Recordings 05/01/09 &gt; 17/01/09 by BEAK&gt;',
+          rule: {
+            "monday": [ 3, 23, 1, 25 ],
+            "tuesday": [ 2, 22, 30, 24 ],
+            "wednesday": [ 1, 21, 29, 23 ],
+            "thursday": [ 5, 25, 3, 27 ],
+            "saturday": [ 4, 24, 2, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 6,
+          user_id: 1,
+          theme: 'math rock/progressive rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1702491211/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://silentisland.bandcamp.com/album/re-quator',
+          a_string: 'Re-quator by Silent Island',
+          rule: {
+            "monday": [ 4, 24, 2, 26 ],
+            "tuesday": [ 3, 23, 1, 25 ],
+            "wednesday": [ 2, 22, 30, 24 ],
+            "thursday": [ 1, 21, 29, 23 ],
+            "saturday": [ 5, 25, 3, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
