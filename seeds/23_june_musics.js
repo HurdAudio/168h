@@ -382,6 +382,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 22,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1703488108/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://pioulard.bandcamp.com/album/lignin-poise',
+          a_string: 'Lignin Poise by Benoît Pioulard',
+          rule: {
+            "monday": [ 4, 8, 14, 25 ],
+            "tuesday": [ 3, 7, 13, 23 ],
+            "wednesday": [ 2, 6, 11, 23 ],
+            "thursday": [ 1, 5, 11, 22 ],
+            "saturday": [ 30, 8, 10, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 23,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=605498052/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://starsofthelid.bandcamp.com/album/and-their-refinement-of-the-decline',
+          a_string: 'and their Refinement of the Decline by Stars of the Lid',
+          rule: {
+            "monday": [ 30, 8, 10, 21 ],
+            "tuesday": [ 4, 8, 14, 25 ],
+            "wednesday": [ 3, 7, 13, 23 ],
+            "thursday": [ 2, 6, 11, 23 ],
+            "saturday": [ 1, 5, 11, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 24,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2983148247/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://irisarri.bandcamp.com/album/seventeen-words',
+          a_string: 'Seventeen Words by Gailes',
+          rule: {
+            "monday": [ 1, 5, 11, 22 ],
+            "tuesday": [ 30, 8, 10, 21 ],
+            "wednesday": [ 4, 8, 14, 25 ],
+            "thursday": [ 3, 7, 13, 23 ],
+            "saturday": [ 2, 6, 11, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
