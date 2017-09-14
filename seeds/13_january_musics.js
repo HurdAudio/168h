@@ -922,6 +922,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 52,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2542953025/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://trystero.bandcamp.com/album/perfect-lives-the-park',
+          a_string: 'Perfect Lives: The Park by Robert Ashley',
+          rule: {
+            "monday": [ 14, 21, 23, 22 ],
+            "tuesday": [ 22, 16, 18, 23 ],
+            "wednesday": [ 18, 12, 14, 2 ],
+            "thursday": [ 14, 21, 23, 22 ],
+            "saturday": [ 12, 16, 18, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 53,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1796086025/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://trystero.bandcamp.com/album/living-room',
+          a_string: 'Living Room by Trystero',
+          rule: {
+            "monday": [ 12, 16, 18, 22 ],
+            "tuesday": [ 14, 21, 23, 22 ],
+            "wednesday": [ 22, 16, 18, 23 ],
+            "thursday": [ 18, 12, 14, 2 ],
+            "saturday": [ 14, 21, 23, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 54,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1975731649/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bazantar.bandcamp.com/album/blood-and-holywater-2',
+          a_string: 'Blood and Holywater by Mark Deutsch',
+          rule: {
+            "monday": [ 14, 21, 23, 22 ],
+            "tuesday": [ 12, 16, 18, 22 ],
+            "wednesday": [ 14, 21, 23, 22 ],
+            "thursday": [ 22, 16, 18, 23 ],
+            "saturday": [ 18, 12, 14, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
