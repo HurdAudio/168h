@@ -1404,6 +1404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 71,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/ridiculous-portrait-1969.jpg',
+          title: 'Ridiculous Portrait',
+          artist: 'May Wilson',
+          year: '1969',
+          rule: {
+            "monday": [ 10, 20, 30, 7 ],
+            "tuesday": [ 9, 19, 27, 6 ],
+            "wednesday": [ 8, 18, 26, 5 ],
+            "thursday": [ 7, 17, 25, 4 ],
+            "friday": [ 6, 16, 24, 3 ],
+            "saturday": [ 5, 15, 24, 2 ],
+            "sunday": [ 11, 20, 29, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 72,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/a-little-boy-lost-1920-1.jpg',
+          title: 'A Little Boy Lost',
+          artist: 'Dorothy Lathrop',
+          year: '1920',
+          rule: {
+            "monday": [ 11, 20, 29, 7 ],
+            "tuesday": [ 10, 20, 30, 7 ],
+            "wednesday": [ 9, 19, 27, 6 ],
+            "thursday": [ 8, 18, 26, 5 ],
+            "friday": [ 7, 17, 25, 4 ],
+            "saturday": [ 6, 16, 24, 3 ],
+            "sunday": [ 5, 15, 24, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 73,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/reinforcements-troops-marching-1917.jpg',
+          title: 'Reinforcements: Troops Marching',
+          artist: 'Grace Cossington Smith',
+          year: '1917',
+          rule: {
+            "monday": [ 5, 15, 24, 2 ],
+            "tuesday": [ 11, 20, 29, 7 ],
+            "wednesday": [ 10, 20, 30, 7 ],
+            "thursday": [ 9, 19, 27, 6 ],
+            "friday": [ 8, 18, 26, 5 ],
+            "saturday": [ 7, 17, 25, 4 ],
+            "sunday": [ 6, 16, 24, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 74,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/self-portrait-with-violin-1928.jpg',
+          title: 'Self-portrait with violin',
+          artist: 'Antonietta Raphael',
+          year: '1928',
+          rule: {
+            "monday": [ 6, 16, 24, 3 ],
+            "tuesday": [ 5, 15, 24, 2 ],
+            "wednesday": [ 11, 20, 29, 7 ],
+            "thursday": [ 10, 20, 30, 7 ],
+            "friday": [ 9, 19, 27, 6 ],
+            "saturday": [ 8, 18, 26, 5 ],
+            "sunday": [ 7, 17, 25, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 75,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/musical-chairs-1951.jpg',
+          title: 'Musical Chairs',
+          artist: 'Dorothea Tanning',
+          year: '1951',
+          rule: {
+            "monday": [ 7, 17, 25, 4 ],
+            "tuesday": [ 6, 16, 24, 3 ],
+            "wednesday": [ 5, 15, 24, 2 ],
+            "thursday": [ 11, 20, 29, 7 ],
+            "friday": [ 10, 20, 30, 7 ],
+            "saturday": [ 9, 19, 27, 6 ],
+            "sunday": [ 8, 18, 26, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
