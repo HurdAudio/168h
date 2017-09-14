@@ -1004,6 +1004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 51,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/hotel-worker-1952.jpg',
+          title: 'Hotel Worker',
+          artist: 'Varlin',
+          year: '1952',
+          rule: {
+            "monday": [ 8, 18, 28, 7 ],
+            "tuesday": [ 6, 16, 26, 5 ],
+            "wednesday": [ 4, 14, 24, 3 ],
+            "thursday": [ 2, 12, 22, 1 ],
+            "friday": [ 31, 10, 20, 30 ],
+            "saturday": [ 29, 8, 18, 28 ],
+            "sunday": [ 27, 6, 16, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 52,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/workers-on-their-way-home-i-1920.jpg',
+          title: 'Workers on their way home I',
+          artist: 'Edvard Munch',
+          year: '1918 - 1920',
+          rule: {
+            "monday": [ 27, 6, 16, 26 ],
+            "tuesday": [ 8, 18, 28, 7 ],
+            "wednesday": [ 6, 16, 26, 5 ],
+            "thursday": [ 4, 14, 24, 3 ],
+            "friday": [ 2, 12, 22, 1 ],
+            "saturday": [ 31, 10, 20, 30 ],
+            "sunday": [ 29, 8, 18, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 53,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/a-worker-with-the-lamp-1951.jpg',
+          title: 'A worker with the lamp',
+          artist: 'Fernand Leger',
+          year: '1951',
+          rule: {
+            "monday": [ 29, 8, 18, 28 ],
+            "tuesday": [ 27, 6, 16, 26 ],
+            "wednesday": [ 8, 18, 28, 7 ],
+            "thursday": [ 6, 16, 26, 5 ],
+            "friday": [ 4, 14, 24, 3 ],
+            "saturday": [ 2, 12, 22, 1 ],
+            "sunday": [ 31, 10, 20, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 54,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/workers-in-the-fields-1.jpg',
+          title: 'Workers in the Fields',
+          artist: 'Camille Pissarro',
+          year: 'c.1896 - c.1897',
+          rule: {
+            "monday": [ 31, 10, 20, 30 ],
+            "tuesday": [ 29, 8, 18, 28 ],
+            "wednesday": [ 27, 6, 16, 26 ],
+            "thursday": [ 8, 18, 28, 7 ],
+            "friday": [ 6, 16, 26, 5 ],
+            "saturday": [ 4, 14, 24, 3 ],
+            "sunday": [ 2, 12, 22, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 55,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/project-of-poster-the-center-of-textile-workers-in-belgium-1938(1).jpg',
+          title: 'Project of poster "The center of textile workers in Belgium"',
+          artist: 'Rene Magritte',
+          year: '1938',
+          rule: {
+            "monday": [ 2, 12, 22, 1 ],
+            "tuesday": [ 31, 10, 20, 30 ],
+            "wednesday": [ 29, 8, 18, 28 ],
+            "thursday": [ 27, 6, 16, 26 ],
+            "friday": [ 8, 18, 28, 7 ],
+            "saturday": [ 6, 16, 26, 5 ],
+            "sunday": [ 4, 14, 24, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
