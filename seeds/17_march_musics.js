@@ -706,6 +706,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 40,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=243232998/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://janelleppin.bandcamp.com/album/mellow-diamond',
+          a_string: 'Mellow Diamond by Janel Leppin',
+          rule: {
+            "monday": [ 8, 14, 20, 29 ],
+            "tuesday": [ 7, 13, 19, 27 ],
+            "wednesday": [ 6, 12, 18, 26 ],
+            "thursday": [ 10, 16, 22, 30 ],
+            "saturday": [ 9, 15, 21, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 41,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3942018341/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://liminalsoundseries.bandcamp.com/album/susan-alcorn-21415',
+          a_string: 'Susan Alcorn 2.14.15 by Liminal Sound Series',
+          rule: {
+            "monday": [ 9, 15, 21, 29 ],
+            "tuesday": [ 8, 14, 20, 29 ],
+            "wednesday": [ 7, 13, 19, 27 ],
+            "thursday": [ 6, 12, 18, 26 ],
+            "saturday": [ 10, 16, 22, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 42,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2550162340/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://marissanadler.bandcamp.com/album/marissa-nadler',
+          a_string: 'Marissa Nadler by Marissa Nadler',
+          rule: {
+            "monday": [ 11, 17, 23, 31 ],
+            "tuesday": [ 10, 16, 22, 30 ],
+            "wednesday": [ 9, 15, 21, 30 ],
+            "thursday": [ 8, 14, 20, 28 ],
+            "saturday": [ 7, 13, 19, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
