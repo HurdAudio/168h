@@ -1804,6 +1804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 91,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/comp-100-1958.jpg',
+          title: '#100',
+          artist: 'Adolf Fleischmann',
+          year: '1958',
+          rule: {
+            "monday": [ 22, 23, 14, 18 ],
+            "tuesday": [ 25, 27, 28, 30 ],
+            "wednesday": [ 27, 29, 2, 5 ],
+            "thursday": [ 29, 31, 1, 4 ],
+            "friday": [ 14, 15, 26, 18 ],
+            "saturday": [ 17, 19, 21, 31 ],
+            "sunday": [ 19, 20, 22, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 92,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/planos-y-color-liberados-1947.jpg',
+          title: 'Planos y color liberados',
+          artist: 'Gyula Kosice',
+          year: '1947',
+          rule: {
+            "monday": [ 19, 20, 22, 25 ],
+            "tuesday": [ 22, 23, 14, 18 ],
+            "wednesday": [ 25, 27, 28, 30 ],
+            "thursday": [ 27, 29, 2, 5 ],
+            "friday": [ 29, 31, 1, 4 ],
+            "saturday": [ 14, 15, 26, 18 ],
+            "sunday": [ 17, 19, 21, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 93,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/untitled-2.jpg',
+          title: 'Untitled',
+          artist: 'Rubem Ludolf',
+          year: 'XX-XXI cent.',
+          rule: {
+            "monday": [ 17, 19, 21, 31 ],
+            "tuesday": [ 19, 20, 22, 25 ],
+            "wednesday": [ 22, 23, 14, 18 ],
+            "thursday": [ 25, 27, 28, 30 ],
+            "friday": [ 27, 29, 2, 5 ],
+            "saturday": [ 29, 31, 1, 4 ],
+            "sunday": [ 14, 15, 26, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 94,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/santarossa-1974.jpg',
+          title: 'Santarossa',
+          artist: 'Afro',
+          year: '1974',
+          rule: {
+            "monday": [ 14, 15, 26, 18 ],
+            "tuesday": [ 17, 19, 21, 31 ],
+            "wednesday": [ 19, 20, 22, 25 ],
+            "thursday": [ 22, 23, 14, 18 ],
+            "friday": [ 25, 27, 28, 30 ],
+            "saturday": [ 27, 29, 2, 5 ],
+            "sunday": [ 29, 31, 1, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 95,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/m-cano-fracture-construction.jpg',
+          title: 'Mécano-Fracture Construction',
+          artist: 'Henryk Berlewi',
+          year: 'XX cent.',
+          rule: {
+            "monday": [ 29, 31, 1, 4 ],
+            "tuesday": [ 14, 15, 26, 18 ],
+            "wednesday": [ 17, 19, 21, 31 ],
+            "thursday": [ 19, 20, 22, 25 ],
+            "friday": [ 22, 23, 14, 18 ],
+            "saturday": [ 25, 27, 28, 30 ],
+            "sunday": [ 27, 29, 2, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
