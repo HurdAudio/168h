@@ -149,7 +149,7 @@ exports.seed = function(knex, Promise) {
           id: 8,
           user_id: 1,
           theme: 'baseball',
-          img_path: './img/april/holland-gallery-alex-rodriguez-steven-baseball-art.jpg',
+          img_path: './img/april/holland-gallery-alex-rodriguez-steven-baseball-art.jpeg',
           title: 'Alex Rodriguez Baseball',
           artist: 'Stephen Holland',
           year: 'XXI cent.',
@@ -971,7 +971,7 @@ exports.seed = function(knex, Promise) {
           theme: 'baseball',
           img_path: './img/april/tumblr_ml0o1xXkix1rjm1abo1_1280.jpg',
           title: 'Tom Seaver New York Mets Watercolor',
-          artist: 'MichaelPattison',
+          artist: 'Michael Pattison',
           year: '2013',
           rule: {
             "monday": [ 7, 12, 18, 24 ],

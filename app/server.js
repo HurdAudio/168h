@@ -45,6 +45,8 @@ const march_arts = require('./routes/march_arts.js');
 const march_artsbyuser = require('./routes/march_artsbyuser.js');
 const march_musics = require('./routes/march_musics.js');
 const march_musicsbyuser = require('./routes/march_musicsbyuser.js');
+const april_arts = require('./routes/april_arts.js');
+const april_artsbyuser = require('./routes/april_artsbyuser.js');
 
 const port = process.env.PORT || 3007;
 
@@ -90,6 +92,8 @@ app.use('/moment', express.static(path.join(__dirname, '../node_modules/moment/m
  app.use('/march_artsbyuser', march_artsbyuser);
  app.use('/march_musics', march_musics);
  app.use('/march_musicsbyuser', march_musicsbyuser);
+ app.use('/april_arts', april_arts);
+ app.use('/april_artsbyuser', april_artsbyuser);
 // app.use('/user_blogs', user_blogs);
 // app.use('/blog_comments', blog_comments);
 // app.use('/books', books);
