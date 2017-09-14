@@ -137,7 +137,7 @@ exports.seed = function(knex, Promise) {
             "monday": [ 2, 8, 26, 4 ],
             "tuesday": [ 1, 7, 25, 3 ],
             "wednesday": [ 30, 6, 24, 2 ],
-            "thursday": [ 29, 5, 23, 31 ],
+            "thursday": [ 29, 5, 23, 1 ],
             "friday": [ 28, 4, 22, 30 ],
             "saturday": [ 4, 10, 28, 6 ],
             "sunday": [ 3, 9, 27, 5 ]
@@ -158,7 +158,7 @@ exports.seed = function(knex, Promise) {
             "tuesday": [ 2, 8, 26, 4 ],
             "wednesday": [ 1, 7, 25, 3 ],
             "thursday": [ 30, 6, 24, 2 ],
-            "friday": [ 29, 5, 23, 31 ],
+            "friday": [ 29, 5, 23, 1 ],
             "saturday": [ 28, 4, 22, 30 ],
             "sunday": [ 4, 10, 28, 6 ]
           },
@@ -179,7 +179,7 @@ exports.seed = function(knex, Promise) {
             "wednesday": [ 2, 8, 26, 4 ],
             "thursday": [ 1, 7, 25, 3 ],
             "friday": [ 30, 6, 24, 2 ],
-            "saturday": [ 29, 5, 23, 31 ],
+            "saturday": [ 29, 5, 23, 1 ],
             "sunday": [ 28, 4, 22, 30 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
@@ -200,7 +200,7 @@ exports.seed = function(knex, Promise) {
             "thursday": [ 2, 8, 26, 4 ],
             "friday": [ 1, 7, 25, 3 ],
             "saturday": [ 30, 6, 24, 2 ],
-            "sunday": [ 29, 5, 23, 31 ]
+            "sunday": [ 29, 5, 23, 1 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -214,7 +214,7 @@ exports.seed = function(knex, Promise) {
           artist: 'Piero Dorazio',
           year: '1968',
           rule: {
-            "monday": [ 29, 5, 23, 31 ],
+            "monday": [ 29, 5, 23, 1 ],
             "tuesday": [ 28, 4, 22, 30 ],
             "wednesday": [ 4, 10, 28, 6 ],
             "thursday": [ 3, 9, 27, 5 ],
@@ -235,7 +235,7 @@ exports.seed = function(knex, Promise) {
           year: '1970',
           rule: {
             "monday": [ 30, 6, 24, 2 ],
-            "tuesday": [ 29, 5, 23, 31 ],
+            "tuesday": [ 29, 5, 23, 1 ],
             "wednesday": [ 28, 4, 22, 30 ],
             "thursday": [ 4, 10, 28, 6 ],
             "friday": [ 3, 9, 27, 5 ],
@@ -256,7 +256,7 @@ exports.seed = function(knex, Promise) {
           rule: {
             "monday": [ 1, 7, 25, 3 ],
             "tuesday": [ 30, 6, 24, 2 ],
-            "wednesday": [ 29, 5, 23, 31 ],
+            "wednesday": [ 29, 5, 23, 1 ],
             "thursday": [ 28, 4, 22, 30 ],
             "friday": [ 4, 10, 28, 6 ],
             "saturday": [ 3, 9, 27, 5 ],
@@ -274,13 +274,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Leo Leuppi',
           year: '1950',
           rule: {
-            "monday": [ 2, 8, 26, 4 ],
-            "tuesday": [ 1, 7, 25, 3 ],
-            "wednesday": [ 30, 6, 24, 2 ],
-            "thursday": [ 29, 5, 23, 31 ],
-            "friday": [ 28, 4, 22, 30 ],
-            "saturday": [ 4, 10, 28, 6 ],
-            "sunday": [ 3, 9, 27, 5 ]
+            "monday": [ 3, 9, 27, 5 ],
+            "tuesday": [ 2, 8, 26, 4 ],
+            "wednesday": [ 1, 7, 25, 3 ],
+            "thursday": [ 30, 6, 24, 2 ],
+            "friday": [ 29, 5, 23, 1 ],
+            "saturday": [ 5, 11, 29, 7 ],
+            "sunday": [ 4, 10, 28, 6 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -294,13 +294,13 @@ exports.seed = function(knex, Promise) {
           artist: 'Robert Goodnough',
           year: '1961',
           rule: {
-            "monday": [ 3, 9, 27, 5 ],
-            "tuesday": [ 2, 8, 26, 4 ],
-            "wednesday": [ 1, 7, 25, 3 ],
-            "thursday": [ 30, 6, 24, 2 ],
-            "friday": [ 29, 5, 23, 31 ],
-            "saturday": [ 28, 4, 22, 30 ],
-            "sunday": [ 4, 10, 28, 6 ]
+            "monday": [ 4, 10, 28, 6 ],
+            "tuesday": [ 3, 9, 27, 5 ],
+            "wednesday": [ 2, 8, 26, 4 ],
+            "thursday": [ 1, 7, 25, 3 ],
+            "friday": [ 30, 6, 24, 2 ],
+            "saturday": [ 29, 5, 23, 1 ],
+            "sunday": [ 5, 11, 29, 7 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')

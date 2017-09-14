@@ -166,6 +166,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 10,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3137693925/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://wolf-eyes.bandcamp.com/album/burned-mind',
+          a_string: 'Burned Mind by Wolf Eyes',
+          rule: {
+            "monday": [ 7, 15, 31, 30 ],
+            "tuesday": [ 6, 14, 30, 29 ],
+            "wednesday": [ 5, 13, 29, 28 ],
+            "thursday": [ 9, 17, 2, 3 ],
+            "saturday": [ 8, 16, 1, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 11,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=341125608/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://samrog.bandcamp.com/album/neon-amazon',
+          a_string: 'Neon Amazon by Sam Rog',
+          rule: {
+            "monday": [ 8, 16, 1, 31 ],
+            "tuesday": [ 7, 15, 31, 30 ],
+            "wednesday": [ 6, 14, 30, 29 ],
+            "thursday": [ 5, 13, 29, 28 ],
+            "saturday": [ 9, 17, 2, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 12,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3298020341/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://trippyabacus.bandcamp.com/album/t-ra-p',
+          a_string: 't/ra/p by Abacus',
+          rule: {
+            "monday": [ 9, 17, 2, 3 ],
+            "tuesday": [ 8, 16, 1, 31 ],
+            "wednesday": [ 7, 15, 31, 30 ],
+            "thursday": [ 6, 14, 30, 29 ],
+            "saturday": [ 5, 13, 29, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
