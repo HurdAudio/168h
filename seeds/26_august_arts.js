@@ -404,6 +404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 21,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/odalisque-1931.jpg',
+          title: 'Odalisque',
+          artist: 'Francisc Sirato',
+          year: '1931',
+          rule: {
+            "monday": [ 5, 9, 17, 2 ],
+            "tuesday": [ 4, 8, 16, 1 ],
+            "wednesday": [ 3, 7, 15, 31 ],
+            "thursday": [ 2, 5, 14, 30 ],
+            "friday": [ 1, 5, 13, 29 ],
+            "saturday": [ 7, 11, 19, 4 ],
+            "sunday": [ 6, 10, 18, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 22,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/nude-sitting-1902.jpg',
+          title: 'Nude sitting',
+          artist: 'Nicolae Vermont',
+          year: '1902',
+          rule: {
+            "monday": [ 6, 10, 18, 3 ],
+            "tuesday": [ 5, 9, 17, 2 ],
+            "wednesday": [ 4, 8, 16, 1 ],
+            "thursday": [ 3, 7, 15, 31 ],
+            "friday": [ 2, 5, 14, 30 ],
+            "saturday": [ 1, 5, 13, 29 ],
+            "sunday": [ 7, 11, 19, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 23,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/j-zef-pankiewicz-fili-anka-herbaty-wizyta.jpg',
+          title: 'Filiżanka Herbaty (wizyta)',
+          artist: 'Józef Pankiewicz',
+          year: '1922',
+          rule: {
+            "monday": [ 7, 11, 19, 4 ],
+            "tuesday": [ 6, 10, 18, 3 ],
+            "wednesday": [ 5, 9, 17, 2 ],
+            "thursday": [ 4, 8, 16, 1 ],
+            "friday": [ 3, 7, 15, 31 ],
+            "saturday": [ 2, 5, 14, 30 ],
+            "sunday": [ 1, 5, 13, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 24,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/bittersweet-1935.jpg',
+          title: 'Bittersweet',
+          artist: 'Georges Rouault',
+          year: '1935',
+          rule: {
+            "monday": [ 1, 5, 13, 29 ],
+            "tuesday": [ 7, 11, 19, 4 ],
+            "wednesday": [ 6, 10, 18, 3 ],
+            "thursday": [ 5, 9, 17, 2 ],
+            "friday": [ 4, 8, 16, 1 ],
+            "saturday": [ 3, 7, 15, 31 ],
+            "sunday": [ 2, 5, 14, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 25,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/asakusa-kannon-tokyo-1926.jpg',
+          title: 'Asakusa Kannon, Tokyo',
+          artist: 'Shotei Takahashi',
+          year: '1926',
+          rule: {
+            "monday": [ 2, 5, 14, 30 ],
+            "tuesday": [ 1, 5, 13, 29 ],
+            "wednesday": [ 7, 11, 19, 4 ],
+            "thursday": [ 6, 10, 18, 3 ],
+            "friday": [ 5, 9, 17, 2 ],
+            "saturday": [ 4, 8, 16, 1 ],
+            "sunday": [ 3, 7, 15, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
