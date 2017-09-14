@@ -814,6 +814,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 46,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2325637060/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://futuramarge.bandcamp.com/album/live-at-the-riverbop',
+          a_string: 'Live At The Riverbop by Roy Haynes Quartet',
+          rule: {
+            "monday": [ 8, 12, 14, 18 ],
+            "tuesday": [ 10, 14, 16, 20 ],
+            "wednesday": [ 12, 16, 18, 22 ],
+            "thursday": [ 24, 18, 20, 26 ],
+            "saturday": [ 7, 21, 2, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 47,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3667949691/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://mikereed1.bandcamp.com/album/flesh-bone',
+          a_string: 'Flesh &amp; Bone by Mike Reed',
+          rule: {
+            "monday": [ 7, 21, 2, 26 ],
+            "tuesday": [ 8, 12, 14, 18 ],
+            "wednesday": [ 10, 14, 16, 20 ],
+            "thursday": [ 12, 16, 18, 22 ],
+            "saturday": [ 24, 18, 20, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 48,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1165914647/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://joemcphee.bandcamp.com/album/the-watermelon-suite',
+          a_string: 'The Watermelon Suite by Trio X',
+          rule: {
+            "monday": [ 24, 18, 20, 26 ],
+            "tuesday": [ 7, 21, 2, 26 ],
+            "wednesday": [ 8, 12, 14, 18 ],
+            "thursday": [ 10, 14, 16, 20 ],
+            "saturday": [ 12, 16, 18, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
