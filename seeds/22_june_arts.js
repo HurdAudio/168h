@@ -698,7 +698,7 @@ exports.seed = function(knex, Promise) {
             "tuesday": [ 3, 13, 23, 1 ],
             "wednesday": [ 2, 12, 22, 30 ],
             "thursday": [ 1, 11, 21, 29 ],
-            "friday": [30, 10, 30, 28 ],
+            "friday": [30, 10, 20, 28 ],
             "saturday": [ 6, 16, 26, 3 ],
             "sunday": [ 5, 15, 25, 3 ]
           },
@@ -719,7 +719,7 @@ exports.seed = function(knex, Promise) {
             "wednesday": [ 3, 13, 23, 1 ],
             "thursday": [ 2, 12, 22, 30 ],
             "friday": [ 1, 11, 21, 29 ],
-            "saturday": [ 30, 10, 30, 28 ],
+            "saturday": [ 30, 10, 20, 28 ],
             "sunday": [ 6, 16, 26, 3 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
@@ -740,7 +740,7 @@ exports.seed = function(knex, Promise) {
             "thursday": [ 3, 13, 23, 1 ],
             "friday": [ 2, 12, 22, 30 ],
             "saturday": [ 1, 11, 21, 29 ],
-            "sunday": [ 30, 10, 30, 28 ]
+            "sunday": [ 30, 10, 20, 28 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -754,7 +754,7 @@ exports.seed = function(knex, Promise) {
           artist: 'Dennis Oppenheim',
           year: '1973',
           rule: {
-            "monday": [ 30, 10, 30, 28 ],
+            "monday": [ 30, 10, 20, 28 ],
             "tuesday": [ 6, 16, 26, 3 ],
             "wednesday": [ 5, 15, 25, 3 ],
             "thursday": [ 4, 14, 24, 2 ],
@@ -775,7 +775,7 @@ exports.seed = function(knex, Promise) {
           year: '1965',
           rule: {
             "monday": [ 1, 11, 21, 29 ],
-            "tuesday": [ 30, 10, 30, 28 ],
+            "tuesday": [ 30, 10, 20, 28 ],
             "wednesday": [ 6, 16, 26, 3 ],
             "thursday": [ 5, 15, 25, 3 ],
             "friday": [ 4, 14, 24, 2 ],
@@ -796,11 +796,111 @@ exports.seed = function(knex, Promise) {
           rule: {
             "monday": [ 2, 12, 22, 30 ],
             "tuesday": [ 1, 11, 21, 29 ],
-            "wednesday": [ 30, 10, 30, 28 ],
+            "wednesday": [ 30, 10, 20, 28 ],
             "thursday": [ 6, 16, 26, 3 ],
             "friday": [ 5, 15, 25, 3 ],
             "saturday": [ 4, 14, 24, 2 ],
             "sunday": [ 3, 13, 23, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 41,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/l-odalisque-turbulente-1967.jpg',
+          title: 'L\'odalisque turbulente',
+          artist: 'Pierre Molinier',
+          year: '1967',
+          rule: {
+            "monday": [ 3, 13, 23, 1 ],
+            "tuesday": [ 2, 12, 22, 30 ],
+            "wednesday": [ 1, 11, 21, 29 ],
+            "thursday": [ 30, 10, 20, 28 ],
+            "friday": [ 6, 16, 26, 3 ],
+            "saturday": [ 5, 15, 25, 3 ],
+            "sunday": [ 4, 14, 24, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 42,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/double-portrait.jpg',
+          title: 'Double Portrait',
+          artist: 'Laszlo Moholy-Nagy',
+          year: 'c.1923',
+          rule: {
+            "monday": [ 5, 15, 25, 3 ],
+            "tuesday": [ 4, 14, 24, 2 ],
+            "wednesday": [ 3, 13, 23, 1 ],
+            "thursday": [ 2, 12, 22, 30 ],
+            "friday": [ 1, 11, 21, 29 ],
+            "saturday": [ 7, 17, 27, 4 ],
+            "sunday": [ 6, 16, 26, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 43,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/untitled-1970-3.jpg',
+          title: 'Untitled',
+          artist: 'Nasreen Mohamedi',
+          year: '1970',
+          rule: {
+            "monday": [ 6, 16, 26, 4 ],
+            "tuesday": [ 5, 15, 25, 3 ],
+            "wednesday": [ 4, 14, 24, 2 ],
+            "thursday": [ 3, 13, 23, 1 ],
+            "friday": [ 2, 12, 22, 30 ],
+            "saturday": [ 1, 11, 21, 29 ],
+            "sunday": [ 7, 17, 27, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 44,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/le-pont-neuf-daguerreotype-1848.jpg',
+          title: 'Le Pont Neuf (daguerreotype)',
+          artist: 'Anton Melbye',
+          year: '1848',
+          rule: {
+            "monday": [ 7, 17, 27, 4 ],
+            "tuesday": [ 6, 16, 26, 4 ],
+            "wednesday": [ 5, 15, 25, 3 ],
+            "thursday": [ 4, 14, 24, 2 ],
+            "friday": [ 3, 13, 23, 1 ],
+            "saturday": [ 2, 12, 22, 30 ],
+            "sunday": [ 1, 11, 21, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 45,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/painting-objects-1980.jpg',
+          title: 'Painting-Objects',
+          artist: 'Florin Maxa',
+          year: '1980',
+          rule: {
+            "monday": [ 1, 11, 21, 29 ],
+            "tuesday": [ 7, 17, 27, 4 ],
+            "wednesday": [ 6, 16, 26, 4 ],
+            "thursday": [ 5, 15, 25, 3 ],
+            "friday": [ 4, 14, 24, 2 ],
+            "saturday": [ 3, 13, 23, 1 ],
+            "sunday": [ 2, 12, 22, 30 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
