@@ -220,6 +220,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 13,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=482187387/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://black-dice.bandcamp.com/album/creature-comforts',
+          a_string: 'Creature Comforts by Black Dice',
+          rule: {
+            "monday": [ 5, 13, 29, 28 ],
+            "tuesday": [ 9, 17, 2, 3 ],
+            "wednesday": [ 8, 16, 1, 31 ],
+            "thursday": [ 7, 15, 31, 30 ],
+            "saturday": [ 6, 14, 30, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 14,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=669718914/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://merzbow.bandcamp.com/album/dharma',
+          a_string: 'Dharma by Merzbow',
+          rule: {
+            "monday": [ 7, 15, 31, 30 ],
+            "tuesday": [ 6, 14, 30, 29 ],
+            "wednesday": [ 10, 18, 3, 4 ],
+            "thursday": [ 9, 17, 2, 1 ],
+            "saturday": [ 8, 16, 1, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 15,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2432690131/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cuneiformrecords.bandcamp.com/album/chronolyse',
+          a_string: 'Chronolyse by Richard Pinhas',
+          rule: {
+            "monday": [ 8, 16, 1, 31 ],
+            "tuesday": [ 7, 15, 31, 30 ],
+            "wednesday": [ 6, 14, 30, 29 ],
+            "thursday": [ 10, 18, 3, 4 ],
+            "saturday": [ 9, 17, 2, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
