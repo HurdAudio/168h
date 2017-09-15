@@ -704,6 +704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 36,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/cosmique-1972.jpg',
+          title: 'Cosmique',
+          artist: 'Jean Miotte',
+          year: '1972',
+          rule: {
+            "monday": [ 7, 18, 29, 9 ],
+            "tuesday": [ 6, 17, 28, 8 ],
+            "wednesday": [ 5, 16, 27, 7 ],
+            "thursday": [ 4, 15, 26, 6 ],
+            "friday": [ 3, 14, 25, 5 ],
+            "saturday": [ 2, 13, 24, 4 ],
+            "sunday": [ 8, 19, 30, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 37,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/signals-series-2-1968.jpg',
+          title: 'Signals (Series 2)',
+          artist: 'Takis',
+          year: '1968',
+          rule: {
+            "monday": [ 8, 19, 30, 10 ],
+            "tuesday": [ 7, 18, 29, 9 ],
+            "wednesday": [ 6, 17, 28, 8 ],
+            "thursday": [ 5, 16, 27, 7 ],
+            "friday": [ 4, 15, 26, 6 ],
+            "saturday": [ 3, 14, 25, 5 ],
+            "sunday": [ 2, 13, 24, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 38,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/deux-noirs-sur-raies-vertes-1981.jpg',
+          title: 'Deux noirs sur Raies Vertes',
+          artist: 'Francois Arnal',
+          year: '1981',
+          rule: {
+            "monday": [ 2, 13, 24, 4 ],
+            "tuesday": [ 8, 19, 30, 10 ],
+            "wednesday": [ 7, 18, 29, 9 ],
+            "thursday": [ 6, 17, 28, 8 ],
+            "friday": [ 5, 16, 27, 7 ],
+            "saturday": [ 4, 15, 26, 6 ],
+            "sunday": [ 3, 14, 25, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 39,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/notes-par-deux-2003.jpg',
+          title: 'Notes par Deux',
+          artist: 'Genevieve Asse',
+          year: '2003',
+          rule: {
+            "monday": [ 3, 14, 25, 5 ],
+            "tuesday": [ 2, 13, 24, 4 ],
+            "wednesday": [ 8, 19, 30, 10 ],
+            "thursday": [ 7, 18, 29, 9 ],
+            "friday": [ 6, 17, 28, 8 ],
+            "saturday": [ 5, 16, 27, 7 ],
+            "sunday": [ 4, 15, 26, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 40,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/etude-pour-hommage-a-claude-nicolas-ledoux-1959.jpg',
+          title: 'Etude pour Hommage a Claude Nicolas Ledoux',
+          artist: 'Jacques Busse',
+          year: '1959',
+          rule: {
+            "monday": [ 4, 15, 26, 6 ],
+            "tuesday": [ 3, 14, 25, 5 ],
+            "wednesday": [ 2, 13, 24, 4 ],
+            "thursday": [ 8, 19, 30, 10 ],
+            "friday": [ 7, 18, 29, 9 ],
+            "saturday": [ 6, 17, 28, 8 ],
+            "sunday": [ 5, 16, 27, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
