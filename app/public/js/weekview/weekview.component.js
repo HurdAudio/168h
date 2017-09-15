@@ -11,7 +11,10 @@
   var fridayDate = new Date();
   var saturdayDate = new Date();
   var sundayDate = new Date();
-  let months = [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  var months = [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  var dayStrips = [ 'mondayDatestrip', 'mondayName', 'tuesdayDatestrip', 'tuesdayName', 'wednesdayDateStrip', 'wednesdayName', 'thursdayDatestrip', 'thursdayName', 'fridayDatestrip', 'fridayName', 'saturdayDatestrip', 'saturdayName', 'sundayDatestrip', 'sundayName' ];
+  var pulses = [ '#ff0000', '#ff1100', '#ff2211', '#ff3322', '#ff4433', '#ff5544', '#ff6655', '#ff7766', '#ff8877', '#ff9988', '#ffaa99', '#ffbbaa', '#ffccbb', '#ffddcc', '#ffeedd', '#ffffee', '#ffeeff', '#ffddee', '#ffccdd', '#ffbbcc', '#ffaabb', '#ff99aa', '#ff8899', '#ff7788', '#ff6677', '#ff5566', '#ff4455', '#ff3344', '#ff2233', '#ff1122', '#ff0011' ];
+  var pulsePoint = 0;
 
   function getCookie (name) {
     var cookies = document.cookie.split(';');
@@ -183,6 +186,81 @@
         sundayDatestrip.innerHTML = sundayDate.getDate() + ' ' + months[sundayDate.getMonth()] + ' ' + sundayDate.getFullYear();
       }
 
+      function getTense(time) {
+        let tense = '';
+        let checkTime = new Date(time);
+        let current = new Date();
+
+        if (current.getFullYear() < checkTime.getFullYear()) {
+          tense = 'future';
+        } else if (current.getFullYear() > checkTime.getFullYear()) {
+          tense = 'past';
+        } else {
+          if (current.getMonth() < checkTime.getMonth()) {
+            tense = 'future';
+          } else if (current.getMonth() > checkTime.getMonth()) {
+            tense = 'past';
+          } else {
+            if (current.getDate() < checkTime.getDate()) {
+              tense = 'future';
+            } else if (current.getDate() > checkTime.getDate()) {
+              tense = 'past';
+            } else {
+              tense = 'present';
+            }
+          }
+        }
+
+        return(tense);
+      }
+
+      function flashThePresent(element1, element2, time) {
+        let checkTime = new Date(time);
+        if (getTense(checkTime) !== 'present') {
+          element1.setAttribute("style", "color: #bb9933;");
+          element2.setAttribute("style", "color: #bb9933;");
+          setPastPresentDays();
+        } else {
+          element1.setAttribute("style", "color: " + pulses[pulsePoint] + ";");
+          element2.setAttribute("style", "color: " + pulses[pulsePoint] + ";");
+          ++pulsePoint;
+          if (pulsePoint === pulses.length) {
+            pulsePoint = 0;
+          }
+          setTimeout(()=>{
+            flashThePresent(element1, element2, time);
+          }, 200);
+        }
+      }
+
+      function setPastPresentDays() {
+        let dayVals = [ 'monday', mondayDate, 'tuesday', tuesdayDate, 'wednesday', wednesdayDate, 'thursday', thursdayDate, 'friday', fridayDate, 'saturday', saturdayDate, 'sunday', sundayDate ];
+        let checkDate = new Date();
+        let displayDate;
+        let displayDay;
+
+        for (let i = 0; i < dayStrips.length; i += 2) {
+          checkDate = new Date(dayVals[i + 1]);
+          displayDate = document.getElementById(dayStrips[i]);
+          displayDay = document.getElementById(dayStrips[i + 1]);
+          switch(getTense(checkDate)) {
+            case('past'):
+              displayDate.setAttribute("style", "color: #bb9933;");
+              displayDay.setAttribute("style", "color: #bb9933;");
+              break;
+            case('future'):
+            displayDate.setAttribute("style", "color: #000000;");
+            displayDay.setAttribute("style", "color: #000000;");
+              break;
+            case('present'):
+              flashThePresent(displayDate, displayDay, checkDate);
+              break;
+            default:
+              console.log('unsupported tense');
+          }
+        }
+      }
+
 
       function onInit() {
         console.log("Weekview is lit");
@@ -210,6 +288,7 @@
             }
           });
         }
+        setPastPresentDays();
 
       }
 
