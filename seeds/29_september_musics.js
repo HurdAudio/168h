@@ -112,6 +112,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 7,
+          user_id: 1,
+          theme: 'math rock/progressive rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3338847054/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://doncaballero.bandcamp.com/album/punkgasm',
+          a_string: 'Punkgasm by Don Caballero',
+          rule: {
+            "monday": [ 6, 26, 4, 28 ],
+            "tuesday": [ 5, 25, 3, 27 ],
+            "wednesday": [ 4, 24, 2, 26 ],
+            "thursday": [ 3, 23, 1, 25 ],
+            "saturday": [ 2, 22, 30, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 8,
+          user_id: 1,
+          theme: 'math rock/progressive rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=627033204/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://thistownneedsguns.bandcamp.com/album/this-town-needs-guns',
+          a_string: 'This Town Needs Guns by TTNG',
+          rule: {
+            "monday": [ 2, 22, 30, 24 ],
+            "tuesday": [ 6, 26, 4, 28 ],
+            "wednesday": [ 5, 25, 3, 27 ],
+            "thursday": [ 4, 24, 2, 26 ],
+            "saturday": [ 3, 23, 1, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 9,
+          user_id: 1,
+          theme: 'math rock/progressive rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4141035187/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://teramelos.bandcamp.com/album/trash-generator',
+          a_string: 'Trash Generator by Tera Melos',
+          rule: {
+            "monday": [ 3, 23, 1, 25 ],
+            "tuesday": [ 2, 22, 30, 24 ],
+            "wednesday": [ 6, 26, 4, 28 ],
+            "thursday": [ 5, 25, 3, 27 ],
+            "saturday": [ 4, 24, 2, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
