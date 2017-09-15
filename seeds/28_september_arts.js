@@ -304,6 +304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 16,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/multiplicatiion-of-the-arcs-1954.jpg',
+          title: 'Multiplicatiion of the Arcs',
+          artist: 'Yves Tanguy',
+          year: '1954',
+          rule: {
+            "monday": [ 5, 11, 29, 7 ],
+            "tuesday": [ 4, 10, 28, 6 ],
+            "wednesday": [ 3, 9, 27, 5 ],
+            "thursday": [ 2, 8, 26, 4 ],
+            "friday": [ 1, 7, 25, 3 ],
+            "saturday": [ 30, 6, 24, 2 ],
+            "sunday": [ 29, 5, 23, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 17,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/illustration-for-v-voiculescu-s-last-shakespearean-sonnets-1982(3).jpg',
+          title: 'Illustration for V. Voiculescu\'s "Last Shakespearean Sonnets"',
+          artist: 'Margareta Sterian',
+          year: '1982',
+          rule: {
+            "monday": [ 29, 5, 23, 1 ],
+            "tuesday": [ 5, 11, 29, 7 ],
+            "wednesday": [ 4, 10, 28, 6 ],
+            "thursday": [ 3, 9, 27, 5 ],
+            "friday": [ 2, 8, 26, 4 ],
+            "saturday": [ 1, 7, 25, 3 ],
+            "sunday": [ 30, 6, 24, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 18,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/my-oneness-a-universe-of-colours-1957.jpg',
+          title: 'My Oneness, A Universe of Colours',
+          artist: 'Alfred Jensen',
+          year: '1957',
+          rule: {
+            "monday": [ 30, 6, 24, 2 ],
+            "tuesday": [ 29, 5, 23, 1 ],
+            "wednesday": [ 5, 11, 29, 7 ],
+            "thursday": [ 4, 10, 28, 6 ],
+            "friday": [ 3, 9, 27, 5 ],
+            "saturday": [ 2, 8, 26, 4 ],
+            "sunday": [ 1, 7, 25, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 19,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/two-bathers-1960.jpg',
+          title: 'Two Bathers',
+          artist: 'Elmer Bischoff',
+          year: '1960',
+          rule: {
+            "monday": [ 1, 7, 25, 3 ],
+            "tuesday": [ 30, 6, 24, 2 ],
+            "wednesday": [ 29, 5, 23, 1 ],
+            "thursday": [ 5, 11, 29, 7 ],
+            "friday": [ 4, 10, 28, 6 ],
+            "saturday": [ 3, 9, 27, 5 ],
+            "sunday": [ 2, 8, 26, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 20,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/collins-st-5p-m-1955.jpg',
+          title: 'Collins St. 5p.m.',
+          artist: 'John Brack',
+          year: '1955',
+          rule: {
+            "monday": [ 2, 8, 26, 4 ],
+            "tuesday": [ 1, 7, 25, 3 ],
+            "wednesday": [ 30, 6, 24, 2 ],
+            "thursday": [ 29, 5, 23, 1 ],
+            "friday": [ 5, 11, 29, 7 ],
+            "saturday": [ 4, 10, 28, 6 ],
+            "sunday": [ 3, 9, 27, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
