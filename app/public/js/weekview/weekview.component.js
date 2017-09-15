@@ -16,6 +16,21 @@
   var pulses = [ '#ff0000', '#ff1100', '#ff2211', '#ff3322', '#ff4433', '#ff5544', '#ff6655', '#ff7766', '#ff8877', '#ff9988', '#ffaa99', '#ffbbaa', '#ffccbb', '#ffddcc', '#ffeedd', '#ffffee', '#ffeeff', '#ffddee', '#ffccdd', '#ffbbcc', '#ffaabb', '#ff99aa', '#ff8899', '#ff7788', '#ff6677', '#ff5566', '#ff4455', '#ff3344', '#ff2233', '#ff1122', '#ff0011' ];
   var pulsePoint = 0;
 
+  function spokenOutput (str) {
+    var u = new SpeechSynthesisUtterance();
+    var synth = window.speechSynthesis;
+    u.text = str;
+    u.lang = 'en-US';
+    u.rate = 0.98;
+    //  u.voice = voices[0];
+    u.onend = function(event) {
+     setTimeout(function() {
+       console.log(str);
+     });
+   };
+    speechSynthesis.speak(u);
+  }
+
   function getCookie (name) {
     var cookies = document.cookie.split(';');
     for(var i=0 ; i < cookies.length ; ++i) {
@@ -261,6 +276,224 @@
         }
       }
 
+      function grabHolidays(allHollidays, day) {
+        let today = [];
+        let checkDate = new Date(day);
+        let holiDate;
+
+        for (let i = 0; i < allHollidays.length; i++) {
+          holiDate = new Date(allHollidays[i].day_of);
+          if ((checkDate.getFullYear() === holiDate.getFullYear()) && (checkDate.getMonth() === holiDate.getMonth()) && (checkDate.getDate() === holiDate.getDate())) {
+            today.push(allHollidays[i]);
+          } else if ((allHollidays[i].is_annual) && (checkDate.getMonth() === holiDate.getMonth()) && (checkDate.getDate() === holiDate.getDate())) {
+            today.push(allHollidays[i]);
+          } else {
+            switch (allHollidays[i].name) {
+              case ('Martin Luther King Day'):
+                if ((checkDate.getMonth() === 0) && (checkDate.getDay() === 1)) {
+                  if ((checkDate.getDate() > 14) && (checkDate.getDate() < 22)) {
+                    today.push(today[i]);
+                  }
+                }
+                break;
+              case ('Clean Out Your Computer Day'):
+                if ((checkDate.getMonth() === 1) && (checkDate.getDay() === 1)) {
+                  if ((checkDate.getDate() > 7) && (checkDate.getDate() < 15)) {
+                    today.push(allHollidays[i]);
+                  }
+                }
+                break;
+              case ('President\'s Day'):
+                if ((checkDate.getMonth() === 1) && (checkDate.getDay() === 1)) {
+                  if ((checkDate.getDate() > 14) && (checkDate.getDate() < 22)) {
+                    today.push(allHollidays[i]);
+                  }
+                }
+                break;
+              case ('Father\'s Day'):
+                if ((checkDate.getMonth() === 5) && (checkDate.getDay() === 0)) {
+                  if ((checkDate.getDate() > 14) && (checkDate.getDate() < 22)) {
+                    today.push(allHollidays[i]);
+                  }
+                }
+                break;
+              case ('Labour Day'):
+                if ((checkDate.getMonth() === 8) && (checkDate.getDay() === 1)) {
+                  if (checkDate.getDate() < 8) {
+                    today.push(allHollidays[i]);
+                  }
+                }
+                break;
+              case ('Mother\'s Day'):
+                if ((checkDate.getMonth() === 4) && (checkDate.getDay() === 0)) {
+                  if ((checkDate.getDate() > 7) && (checkDate.getDate() < 15)) {
+                    today.push(allHollidays[i]);
+                  }
+                }
+                break;
+              case ('Book Lover\'s Day'):
+                if ((checkDate.getMonth() === 9) && (checkDate.getDay === 7)) {
+                  if (checkDate.getDay() < 8) {
+                    today.push(allHollidays[i]);
+                  }
+                }
+                break;
+              case ('Thanksgiving Day'):
+                if ((checkDate.getMonth() === 10) && (checkDate.getDay() === 4)) {
+                  if ((checkDate.getDate() > 21) && (checkDate.getDate() < 29)) {
+                    today.push(allHollidays[i]);
+                  }
+                }
+                break;
+              case ('Black Friday'):
+                if ((checkDate.getMonth() === 10) && (checkDate.getDay() === 5)) {
+                  if (((checkDate.getDate() - 1) > 21) && ((checkDate.getDate() - 1) < 29)) {
+                    today.push(allHollidays[i]);
+                  }
+                }
+                break;
+              case ('Cyber Monday'):
+                if (((checkDate.getMonth() === 11) || (checkDate.getMonth() === 10)) && (checkDate.getDay() === 1)) {
+                  if (((checkDate.getMonth() === 10) && ((checkDate.getDate() - 4) > 21) && ((checkDate.getDate() - 4) < 29)) || (checkDate.getMonth() === 11) && ((checkDate.getDate() - 4) < -1 )) {
+                    today.push(allHollidays[i]);
+                  }
+                }
+                break;
+              case ('Advent'):
+                if (checkDate.getDay() === 6) {
+                  if ((checkDate.getMonth() === 10) || (checkDate.getMonth() === 11)) {
+                    let xmas = new Date(checkDate.getFullYear() + '-12-25T13:44:00.000Z');
+                    switch (xmas.getDay()) {
+                      case (0):
+                        if ((checkDate.getDate() === 3) || (checkDate.getDate() === 10) || (checkDate.getDate() === 17) || (checkDate.getDate() === 24)) {
+                          today.push(allHollidays[i]);
+                        }
+                        break;
+                      case (1):
+                        if ((checkDate.getDate() === 2) || (checkDate.getDate() === 9) || (checkDate.getDate() === 16) || (checkDate.getDate() === 23)) {
+                          today.push(allHollidays[i]);
+                        }
+                        break;
+                      case (2):
+                        if ((checkDate.getDate() === 1) ||   (checkDate.getDate() === 8) || (checkDate.getDate() === 15) || (checkDate.getDate() === 22)) {
+                        today.push(allHollidays[i]);
+                        }
+                        break;
+                      case (3):
+                        if ((checkDate.getDate() === 31) ||   (checkDate.getDate() === 7) || (checkDate.getDate() === 14) || (checkDate.getDate() === 21)) {
+                          today.push(allHollidays[i]);
+                        }
+                        break;
+                      case (4):
+                        if ((checkDate.getDate() === 30) ||   (checkDate.getDate() === 6) || (checkDate.getDate() === 13) || (checkDate.getDate() === 20)) {
+                          today.push(allHollidays[i]);
+                        }
+                        break;
+                      case (5):
+                        if ((checkDate.getDate() === 29) ||   (checkDate.getDate() === 5) || (checkDate.getDate() === 12) || (checkDate.getDate() === 19)) {
+                          today.push(allHollidays[i]);
+                        }
+                        break;
+                      case (6):
+                        if ((checkDate.getDate() === 28) ||   (checkDate.getDate() === 4) || (checkDate.getDate() === 11) || (checkDate.getDate() === 18)) {
+                          today.push(allHollidays[i]);
+                        }
+                        break;
+                      default:
+                      console.log('impossible situation for advent');
+                    }
+                  }
+                }
+                break;
+              case ('Victoria Day'):
+                if ((checkDate.getMonth() === 4) && (checkDate.getDay() === 1)) {
+                  if ((checkDate.getDate() > 17) && (checkDate.getDate() < 25)) {
+                    today.push(allHollidays[i]);
+                  }
+                }
+                break;
+              case ('Civic Holiday (Canada)'):
+                if ((checkDate.getMonth() === 7) && (checkDate.getDay() === 1)) {
+                  if (checkDate.getDate() < 8) {
+                    today.push(allHollidays[i]);
+                  }
+                }
+                break;
+              case ('Indigenous Peoples\' Day'):
+                if ((checkDate.getMonth() === 8) && (checkDate.getDay() === 5)) {
+                  if ((checkDate.getDate() > 21) && (checkDate.getDate() < 29)) {
+                    today.push(allHollidays[i]);
+                  }
+                }
+                break;
+              case ('Arbor Day'):
+                if ((checkDate.getMonth() === 3) &&(checkDate.getDay() === 5)) {
+                  if (checkDate.getDate() > 23) {
+                    today.push(allHollidays[i]);
+                  }
+                }
+                break;
+              case ('Canadian Thanksgiving'):
+                if ((checkDate.getMonth() === 9) && (checkDate.getDay() === 1)) {
+                  if ((checkDate.getDate() > 7) && (checkDate.getDate() < 15)) {
+                    today.push(allHollidays[i]);
+                  }
+                }
+                break;
+              case ('Memorial Day'):
+                if ((checkDate.getMonth() === 4) && (checkDate.getDay() === 1)) {
+                  if (checkDate.getDate() > 24) {
+                    today.push(allHollidays[i]);
+                  }
+                }
+                break;
+              default:
+                console.log('non-float holiday');
+            }
+          }
+        }
+
+        return(today);
+      }
+
+      function setHolidayButton(element, holidata) {
+
+        element.addEventListener('click', (e)=>{
+          e.preventDefault();
+          e.stopPropagation();
+          for (let i = 0; i < holidata.length; i++) {
+            if (i > 0) {
+              spokenOutput('... and ');
+            }
+            spokenOutput(holidata[i].name);
+          }
+        });
+      }
+
+      function setHolidayButtons() {
+        let holidayButtons = [ 'mondayHolidayButton', 'tuesdayHolidayButton', 'wednesdayHolidayButton', 'thursdayHolidayButton', 'fridayHolidayButton', 'saturdayHolidayButton', 'sundayHolidayButton'];
+        let weekDates = [ mondayDate, tuesdayDate, wednesdayDate, thursdayDate, fridayDate, saturdayDate, sundayDate ];
+        let checkDate;
+        let holiDayness = [];
+        let element;
+
+        $http.get(`/holidaysbyuser/${currentUserId}`)
+        .then(holidaysData=>{
+          let holidays = holidaysData.data;
+          for (let i = 0; i < holidayButtons.length; i++) {
+            holiDayness = [];
+            checkDate = new Date(weekDates[i]);
+            holiDayness = grabHolidays(holidays, checkDate);
+            if (holiDayness.length > 0) {
+              element = document.getElementById(holidayButtons[i]);
+              element.setAttribute("style", "visibility: visible;");
+              setHolidayButton(element, holiDayness);
+              element.parentNode.setAttribute("style", "background: " + holiDayness[0].color + "; background: -webkit-linear-gradient(45deg, " + holiDayness[0].color + ", #ffffff); background: -o-linear-gradient(135deg, " +  holiDayness[0].color + ", #ffffff);   background: -moz-linear-gradient(135deg, " + holiDayness[0].color + ", #ffffff); background: linear-gradient(135deg, " + holiDayness[0].color + ", #ffffff);");
+            }
+          }
+        });
+      }
+
 
       function onInit() {
         console.log("Weekview is lit");
@@ -289,7 +522,7 @@
           });
         }
         setPastPresentDays();
-
+        setHolidayButtons();
       }
 
     }
