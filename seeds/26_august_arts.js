@@ -504,6 +504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 26,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/fanny-machine-the-machinery-1928.jpg',
+          title: 'Fanny Machine - The machinery',
+          artist: 'Frantisek Kupka',
+          year: '1928',
+          rule: {
+            "monday": [ 3, 7, 15, 31 ],
+            "tuesday": [ 2, 5, 14, 30 ],
+            "wednesday": [ 1, 5, 13, 29 ],
+            "thursday": [ 7, 11, 19, 4 ],
+            "friday": [ 6, 10, 18, 3 ],
+            "saturday": [ 5, 9, 17, 2 ],
+            "sunday": [ 4, 8, 16, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 27,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/october-idyll-1905.jpg',
+          title: 'October Idyll',
+          artist: 'Mstislav Dobuzhinsky',
+          year: '1905',
+          rule: {
+            "monday": [ 4, 8, 16, 1 ],
+            "tuesday": [ 3, 7, 15, 31 ],
+            "wednesday": [ 2, 5, 14, 30 ],
+            "thursday": [ 1, 5, 13, 29 ],
+            "friday": [ 7, 11, 19, 4 ],
+            "saturday": [ 6, 10, 18, 3 ],
+            "sunday": [ 5, 9, 17, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 28,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/psyche-discovers-that-her-secret-lover-is-cupid.jpg',
+          title: 'Psyche Discovers That Her Secret Lover Is Cupid',
+          artist: 'Maurice Denis',
+          year: '1908',
+          rule: {
+            "monday": [ 6, 10, 18, 3 ],
+            "tuesday": [ 5, 9, 17, 2 ],
+            "wednesday": [ 4, 8, 16, 1 ],
+            "thursday": [ 3, 6, 15, 31 ],
+            "friday": [ 2, 6, 14, 30 ],
+            "saturday": [ 8, 12, 20, 5 ],
+            "sunday": [ 7, 11, 19, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 29,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/planos-de-color-con-dos-maderas-superpuestas-1928.jpg',
+          title: 'Planos de color con dos maderas superpuestas',
+          artist: 'Joaquin Torres Garcia',
+          year: '1928',
+          rule: {
+            "monday": [ 7, 11, 19, 4 ],
+            "tuesday": [ 6, 10, 18, 3 ],
+            "wednesday": [ 5, 9, 17, 2 ],
+            "thursday": [ 4, 8, 16, 1 ],
+            "friday": [ 3, 6, 15, 31 ],
+            "saturday": [ 2, 6, 14, 30 ],
+            "sunday": [ 8, 12, 20, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 30,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/mottled-landscape-1924.jpg',
+          title: 'Mottled landscape',
+          artist: 'Martiros Sarian',
+          year: '1924',
+          rule: {
+            "monday": [ 8, 12, 20, 5 ],
+            "tuesday": [ 7, 11, 19, 4 ],
+            "wednesday": [ 6, 10, 18, 3 ],
+            "thursday": [ 5, 9, 17, 2 ],
+            "friday": [ 4, 8, 16, 1 ],
+            "saturday": [ 3, 6, 15, 31 ],
+            "sunday": [ 2, 6, 14, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
