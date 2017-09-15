@@ -904,6 +904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 46,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/eros-crom-tico-1964.jpg',
+          title: 'Eros Cromático',
+          artist: 'Jorge Martins',
+          year: '1964',
+          rule: {
+            "monday": [ 2, 12, 22, 30 ],
+            "tuesday": [ 1, 11, 21, 29 ],
+            "wednesday": [ 7, 17, 27, 4 ],
+            "thursday": [ 6, 16, 26, 4 ],
+            "friday": [ 5, 15, 25, 3 ],
+            "saturday": [ 4, 14, 24, 2 ],
+            "sunday": [ 3, 13, 23, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 47,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/antiportrait-1984.jpg',
+          title: 'Antiportrait',
+          artist: 'Marcel Marien',
+          year: '1984',
+          rule: {
+            "monday": [ 3, 13, 23, 1 ],
+            "tuesday": [ 2, 12, 22, 30 ],
+            "wednesday": [ 1, 11, 21, 29 ],
+            "thursday": [ 7, 17, 27, 4 ],
+            "friday": [ 6, 16, 26, 4 ],
+            "saturday": [ 5, 15, 25, 3 ],
+            "sunday": [ 4, 14, 24, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 48,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/new-york-boy-shining-shoes-july-1952-1952.jpg',
+          title: 'New York (Boy Shining Shoes), July 1952',
+          artist: 'Vivian Maier',
+          year: '1952',
+          rule: {
+            "monday": [ 4, 14, 24, 2 ],
+            "tuesday": [ 3, 13, 23, 1 ],
+            "wednesday": [ 2, 12, 22, 30 ],
+            "thursday": [ 1, 11, 21, 29 ],
+            "friday": [ 7, 17, 27, 4 ],
+            "saturday": [ 6, 16, 26, 4 ],
+            "sunday": [ 5, 15, 25, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 49,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/double-portrait-1930.jpg',
+          title: 'Double Portrait',
+          artist: 'Dora Maar',
+          year: '1930',
+          rule: {
+            "monday": [ 6, 16, 26, 4 ],
+            "tuesday": [ 5, 15, 25, 3 ],
+            "wednesday": [ 4, 14, 24, 2 ],
+            "thursday": [ 3, 13, 23, 1 ],
+            "friday": [ 2, 12, 22, 30 ],
+            "saturday": [ 8, 18, 28, 5 ],
+            "sunday": [ 7, 17, 27, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 50,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/buried-cube-containing-an-object-of-importance-but-little-value-1968.jpg',
+          title: 'Buried Cube Containing an Object of Importance but Little Value',
+          artist: 'Sol LeWitt',
+          year: '1968',
+          rule: {
+            "monday": [ 7, 17, 27, 5 ],
+            "tuesday": [ 6, 16, 26, 4 ],
+            "wednesday": [ 5, 15, 25, 3 ],
+            "thursday": [ 4, 14, 24, 2 ],
+            "friday": [ 3, 13, 23, 1 ],
+            "saturday": [ 2, 12, 22, 30 ],
+            "sunday": [ 8, 18, 28, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
