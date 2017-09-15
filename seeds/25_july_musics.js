@@ -328,6 +328,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 19,
+          user_id: 1,
+          theme: 'commercially viable genre',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1799431156/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://deerhoof.bandcamp.com/album/friend-opportunity-2',
+          a_string: 'Friend Opportunity by Deerhoof',
+          rule: {
+            "monday": [ 1, 3, 7, 15 ],
+            "tuesday": [ 31, 2, 6, 14 ],
+            "wednesday": [ 4, 6, 10, 18 ],
+            "thursday": [ 3, 5, 9, 17 ],
+            "saturday": [ 2, 4, 8, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 20,
+          user_id: 1,
+          theme: 'commercially viable genre',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3989667233/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://xiuxiu.bandcamp.com/album/forget',
+          a_string: 'FORGET by Xiu Xiu',
+          rule: {
+            "monday": [ 2, 4, 8, 16 ],
+            "tuesday": [ 1, 3, 7, 15 ],
+            "wednesday": [ 31, 2, 6, 14 ],
+            "thursday": [ 4, 6, 10, 18 ],
+            "saturday": [ 3, 5, 9, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 21,
+          user_id: 1,
+          theme: 'commercially viable genre',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2465859575/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ofmontreal.bandcamp.com/album/rune-husk',
+          a_string: 'Rune Husk by of Montreal',
+          rule: {
+            "monday": [ 4, 6, 10, 18 ],
+            "tuesday": [ 3, 5, 9, 17 ],
+            "wednesday": [ 2, 4, 8, 16 ],
+            "thursday": [ 1, 3, 7, 15 ],
+            "saturday": [ 5, 7, 11, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
