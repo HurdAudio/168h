@@ -7945,6 +7945,86 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 505,
+          user_id: 1,
+          name: 'Nam June Paik (artist), born 1932',
+          color: '151517',
+          picture: './img/artists/namjunepaik.jpg',
+          day_of: new Date ('1932-07-20T13:44:00.000Z'),
+          is_annual: true,
+          art_override: true,
+          music_override: false,
+          override_content: {
+            "img_paths": [ './img/artists/paik01.jpg', './img/artists/paik02.jpg', './img/artists/paik03.jpg', './img/artists/paik04.jpg', './img/artists/paik05.jpg', './img/artists/paik06.jpg', './img/artists/paik07.jpg', './img/artists/paik08.jpg', './img/artists/paik09.jpg', './img/artists/paik10.jpg', './img/artists/paik11.jpg', './img/artists/paik12.jpg', './img/artists/paik13.jpg', './img/artists/paik14.jpg', './img/artists/paik15.jpg', './img/artists/paik16.jpg', './img/artists/paik17.jpg', './img/artists/paik18.jpg', './img/artists/paik19.jpg', './img/artists/paik20.jpg', './img/artists/paik21.jpg', './img/artists/paik22.jpg' ],
+            "titles": [ 'Life Is Tape', 'Untitled', 'V-Idea', 'Radio Man', 'Li Tai Po', 'Beuys Vox', 'Evolution, Revolution, Resolution', 'TV is New Heart', 'Allen in Vision', 'I Ching 36', 'Fin de Siecle', 'More Log in Less Logging', 'Robot', 'Fractal Flasher', 'Electronic Superhighway: Continental U.S., Alaska, Hawaii', 'Diamond Sat', 'TV-Tulips', 'Ommah', 'Flower', 'Good Girl/Bad Girl', 'Hydra-Budda', 'Pre-Bell-Man' ],
+            "artists": [ 'Nam June Paik', 'Nam June Paik', 'Nam June Paik', 'Nam June Paik', 'Nam June Paik', 'Nam June Paik', 'Nam June Paik', 'Nam June Paik', 'Nam June Paik', 'Nam June Paik', 'Nam June Paik', 'Nam June Paik', 'Nam June Paik', 'Nam June Paik', 'Nam June Paik', 'Nam June Paik', 'Nam June Paik', 'Nam June Paik', 'Nam June Paik', 'Nam June Paik', 'Nam June Paik', 'Nam June Paik' ],
+            "years": [ '1976', '1978', '1984', '1987', '1988', '1989', '1989', '1989', '1990', '1991', '1993', '1993', '1993', '1994', '1996', '1998', '2000', '2005', '2006', '?', '?', '?' ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 506,
+          user_id: 1,
+          name: 'Kenny Rogers pitches a perfect game for the Texas Rangers vs. California Angels in 1994',
+          color: '#A91017',
+          picture: './img/baseball/kennyrogersperfecto.jpg',
+          day_of: new Date ('1994-07-28T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 507,
+          user_id: 1,
+          name: 'The rapture took place on this day in 1992 according to the "Rainbow Man" Rollen Stewart',
+          color: '#DDA600',
+          picture: './img/doomsday/rollenstewartwacko.jpeg',
+          day_of: new Date ('1992-09-28T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 508,
+          user_id: 1,
+          name: 'Ben Vautier (artist), born 1935',
+          color: '#BC2061',
+          picture: './img/artists/benvautier.JPG',
+          day_of: new Date ('1935-07-18T13:44:00.000Z'),
+          is_annual: true,
+          art_override: true,
+          music_override: false,
+          override_content: {
+            "img_paths": [ './img/artists/ben01.jpg', './img/artists/ben02.jpg', './img/artists/ben03.jpg', './img/artists/ben04.jpg', './img/artists/ben05.jpg', './img/artists/ben06.jpg', './img/artists/ben07.jpg', './img/artists/ben08.jpg', './img/artists/ben09.jpg', './img/artists/ben10.jpg', './img/artists/ben11.jpg', './img/artists/ben12.jpg', './img/artists/ben13.jpg', './img/artists/ben14.jpg', './img/artists/ben15.jpg', './img/artists/ben16.jpg', './img/artists/ben17.jpg', './img/artists/ben18.jpg', './img/artists/ben19.jpg', './img/artists/ben20.jpg', './img/artists/ben21.jpg', './img/artists/ben22.jpg', './img/artists/ben23.jpg', './img/artists/ben24.jpg' ],
+            "titles": [ 'copier = art', 'Geste: Manger un oeuf dur à 12h32', 'Geste: Descendre le var', 'Ben vous confessera, puis après derrière, vous pourrez vous suicider', 'A Vendre', 'Art Is Ego', 'Geste: Me Cacher Sous un Drap au Milieu d\'une Place Publique', 'La Vérité est Que', '(1) Surface (2) Matière (3) Communication', 'Même un point noir est oeuvre d\'art', 'Per cambiare l\'arte', 'Style', 'Partie du tout a Ben', 'Sometimes I drink to forget art', 'No More Art', 'Peinture Rouge', 'Certificat', 'Artiste au poil!', 'Voulez-vous que j\'enlève mon T-shirt maintenant ou après?', 'Je Suis dans la Lune', '7 Ans de Bonheur, Livre d\'art', 'Aimez-vous les uns les autres', 'C\'est la vie', 'Lights out' ],
+            "artists": [ 'Ben Vautier', 'Ben Vautier', 'Ben Vautier', 'Ben Vautier', 'Ben Vautier', 'Ben Vautier', 'Ben Vautier', 'Ben Vautier', 'Ben Vautier', 'Ben Vautier', 'Ben Vautier', 'Ben Vautier', 'Ben Vautier', 'Ben Vautier', 'Ben Vautier', 'Ben Vautier', 'Ben Vautier', 'Ben Vautier', 'Ben Vautier', 'Ben Vautier', 'Ben Vautier', 'Ben Vautier', 'Ben Vautier', 'Ben Vautier' ],
+            "years": [ '1962', '1966', '1969', '1970', '1971', '1971', '1971', '1971', '1971', '1972', '1975', '1974', '1984', '1984', '1985', '1987', '1988', '1989', '1989', '1990', '1991', '1992', '1998', '2001' ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 509,
+          user_id: 1,
+          name: 'Charles Wuorinen (composer) born 1938',
+          color: '#834627',
+          picture: './img/musicians/charleswuorinen.jpg',
+          day_of: new Date ('1938-06-09T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
