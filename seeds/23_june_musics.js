@@ -436,6 +436,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 25,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1545097450/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://oneohtrixpointnever1.bandcamp.com/album/rifts',
+          a_string: 'Rifts by Oneohtrix Point Never',
+          rule: {
+            "monday": [ 2, 6, 11, 23 ],
+            "tuesday": [ 1, 5, 11, 22 ],
+            "wednesday": [ 30, 8, 10, 21 ],
+            "thursday": [ 4, 8, 14, 25 ],
+            "saturday": [ 3, 7, 13, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 26,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=941299459/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://benfrost.bandcamp.com/album/black-marrow',
+          a_string: 'Black Marrow by Ben Frost',
+          rule: {
+            "monday": [ 3, 7, 13, 23 ],
+            "tuesday": [ 2, 6, 11, 23 ],
+            "wednesday": [ 1, 5, 11, 22 ],
+            "thursday": [ 30, 8, 10, 21 ],
+            "saturday": [ 4, 8, 14, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 27,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=547528775/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://fennesz.bandcamp.com/album/mahler-remixed',
+          a_string: 'Mahler Remixed by fennesz',
+          rule: {
+            "monday": [ 4, 8, 14, 25 ],
+            "tuesday": [ 3, 7, 13, 23 ],
+            "wednesday": [ 2, 6, 11, 23 ],
+            "thursday": [ 1, 5, 11, 22 ],
+            "saturday": [ 30, 8, 10, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
