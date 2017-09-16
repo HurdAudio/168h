@@ -1504,6 +1504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 76,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/upper-east-side.jpg',
+          title: 'Upper East Side',
+          artist: 'Hai-Hsin Huang',
+          year: '2015',
+          rule: {
+            "monday": [ 8, 18, 26, 5 ],
+            "tuesday": [ 7, 17, 25, 4 ],
+            "wednesday": [ 6, 16, 24, 3 ],
+            "thursday": [ 5, 15, 24, 2 ],
+            "friday": [ 11, 20, 29, 7 ],
+            "saturday": [ 10, 20, 30, 7 ],
+            "sunday": [ 9, 19, 27, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 77,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/true-to-life-2005.jpg',
+          title: 'True to Life',
+          artist: 'Valerie Jaudon',
+          year: '2005',
+          rule: {
+            "monday": [ 10, 20, 28, 7 ],
+            "tuesday": [ 9, 19, 27, 6 ],
+            "wednesday": [ 8, 18, 26, 5 ],
+            "thursday": [ 7, 17, 25, 4 ],
+            "friday": [ 6, 16, 25, 3 ],
+            "saturday": [ 12, 21, 30, 8 ],
+            "sunday": [ 11, 21, 31, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 78,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/cosmos-n-3-1977.jpg',
+          title: 'Cosmos N°3',
+          artist: 'Martha Boto',
+          year: '1977',
+          rule: {
+            "monday": [ 11, 21, 31, 8 ],
+            "tuesday": [ 10, 20, 28, 7 ],
+            "wednesday": [ 9, 19, 27, 6 ],
+            "thursday": [ 8, 18, 26, 5 ],
+            "friday": [ 7, 17, 25, 4 ],
+            "saturday": [ 6, 16, 25, 3 ],
+            "sunday": [ 12, 21, 30, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 79,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/display-image-22.jpg',
+          title: 'Cemetery',
+          artist: 'Alice Bailly',
+          year: '1913',
+          rule: {
+            "monday": [ 12, 21, 30, 8 ],
+            "tuesday": [ 11, 21, 31, 8 ],
+            "wednesday": [ 10, 20, 28, 7 ],
+            "thursday": [ 9, 19, 27, 6 ],
+            "friday": [ 8, 18, 26, 5 ],
+            "saturday": [ 7, 17, 25, 4 ],
+            "sunday": [ 6, 16, 25, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 80,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/the-quay-at-dinard-1911.jpg',
+          title: 'The Quay at Dinard',
+          artist: 'Ethel Carrick',
+          year: '1911',
+          rule: {
+            "monday": [ 6, 16, 25, 3 ],
+            "tuesday": [ 12, 21, 30, 8 ],
+            "wednesday": [ 11, 21, 31, 8 ],
+            "thursday": [ 10, 20, 28, 7 ],
+            "friday": [ 9, 19, 27, 6 ],
+            "saturday": [ 8, 18, 26, 5 ],
+            "sunday": [ 7, 17, 25, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
