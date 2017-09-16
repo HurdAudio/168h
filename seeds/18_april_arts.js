@@ -1304,6 +1304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 66,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/coors-field-mood-jessica-mcgraw.jpg',
+          title: 'Coors Field Mood',
+          artist: 'Jessica Brooks',
+          year: '2012',
+          rule: {
+            "monday": [ 5, 10, 16, 22 ],
+            "tuesday": [ 10, 16, 21, 28 ],
+            "wednesday": [ 24, 14, 21, 27 ],
+            "thursday": [ 9, 14, 20, 26 ],
+            "friday": [ 8, 12, 27, 25 ],
+            "saturday": [ 7, 12, 17, 24 ],
+            "sunday": [ 6, 11, 17, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 67,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/Coors-Field--Colorado-Rockies_art.jpg',
+          title: 'Coors Field - Colorado Rockies',
+          artist: 'Ffooter',
+          year: '2009',
+          rule: {
+            "monday": [ 6, 11, 17, 23 ],
+            "tuesday": [ 5, 10, 16, 22 ],
+            "wednesday": [ 10, 16, 21, 28 ],
+            "thursday": [ 24, 14, 21, 27 ],
+            "friday": [ 9, 14, 20, 26 ],
+            "saturday": [ 8, 12, 27, 25 ],
+            "sunday": [ 7, 12, 17, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 68,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/Colorado-Rockies_01.jpg',
+          title: 'Colorado Rockies',
+          artist: 'Dowdle',
+          year: 'xxi Cent.',
+          rule: {
+            "monday": [ 7, 12, 17, 24 ],
+            "tuesday": [ 6, 11, 17, 23 ],
+            "wednesday": [ 5, 10, 16, 22 ],
+            "thursday": [ 10, 16, 21, 28 ],
+            "friday": [ 24, 14, 21, 27 ],
+            "saturday": [ 9, 14, 20, 26 ],
+            "sunday": [ 8, 12, 27, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 69,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/charlie-blackmon-colorado-rockies-pixel-art-5-joe-hamilton.jpg',
+          title: 'Charlie Blackmon Colorado Rockies ',
+          artist: 'Joe Hamilton',
+          year: '2017',
+          rule: {
+            "monday": [ 8, 12, 27, 25 ],
+            "tuesday": [ 7, 12, 17, 24 ],
+            "wednesday": [ 6, 11, 17, 23 ],
+            "thursday": [ 5, 10, 16, 22 ],
+            "friday": [ 10, 16, 21, 28 ],
+            "saturday": [ 24, 14, 21, 27 ],
+            "sunday": [ 9, 14, 20, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 70,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/142612572_master_1428446281702_16333606_ver1.0_640_480.jpg',
+          title: 'The Player',
+          artist: 'George Lundeen',
+          year: '2005',
+          rule: {
+            "monday": [ 10, 15, 21, 27 ],
+            "tuesday": [ 9, 13, 28, 26 ],
+            "wednesday": [ 8, 13, 18, 25 ],
+            "thursday": [ 7, 12, 18, 24 ],
+            "friday": [ 6, 11, 17, 23 ],
+            "saturday": [ 11, 17, 22, 29 ],
+            "sunday": [ 25, 15, 22, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
