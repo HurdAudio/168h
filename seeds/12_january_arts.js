@@ -1904,6 +1904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 96,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/rudow-osa-1949.jpg',
+          title: 'Rudowłosa',
+          artist: 'Wladyslaw Strzeminski',
+          year: '1949',
+          rule: {
+            "monday": [ 27, 29, 2, 5 ],
+            "tuesday": [ 29, 31, 1, 4 ],
+            "wednesday": [ 14, 15, 26, 18 ],
+            "thursday": [ 17, 19, 21, 31 ],
+            "friday": [ 19, 20, 22, 25 ],
+            "saturday": [ 22, 23, 14, 18 ],
+            "sunday": [ 25, 27, 28, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 97,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/untitled-1aa.jpg',
+          title: 'Untitled',
+          artist: 'Johannes Itten',
+          year: 'XX cent.',
+          rule: {
+            "monday": [ 25, 27, 28, 30 ],
+            "tuesday": [ 27, 29, 2, 5 ],
+            "wednesday": [ 29, 31, 1, 4 ],
+            "thursday": [ 14, 15, 26, 18 ],
+            "friday": [ 17, 19, 21, 31 ],
+            "saturday": [ 19, 20, 22, 25 ],
+            "sunday": [ 22, 23, 14, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 98,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/me-and-the-moon-1937.jpg',
+          title: 'Me and the Moon',
+          artist: 'Arthur Dove',
+          year: '1937',
+          rule: {
+            "monday": [ 23, 24, 15, 19 ],
+            "tuesday": [ 26, 28, 29, 31 ],
+            "wednesday": [ 28, 30, 3, 6 ],
+            "thursday": [ 30, 1, 2, 5 ],
+            "friday": [ 15, 16, 27, 19 ],
+            "saturday": [ 18, 20, 22, 1 ],
+            "sunday": [ 20, 21, 23, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 99,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/allah-2010.jpg',
+          title: 'Allah',
+          artist: 'M.F. Husain',
+          year: '2010',
+          rule: {
+            "monday": [ 20, 21, 23, 26 ],
+            "tuesday": [ 23, 24, 15, 19 ],
+            "wednesday": [ 26, 28, 29, 31 ],
+            "thursday": [ 28, 30, 3, 6 ],
+            "friday": [ 30, 1, 2, 5 ],
+            "saturday": [ 15, 16, 27, 19 ],
+            "sunday": [ 18, 20, 22, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 100,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/senza-titolo-1939(1).jpg',
+          title: 'Senza titolo',
+          artist: 'Bice Lazzari',
+          year: '1939',
+          rule: {
+            "monday": [ 18, 20, 22, 1  ],
+            "tuesday": [ 20, 21, 23, 26 ],
+            "wednesday": [ 23, 24, 15, 19 ],
+            "thursday": [ 26, 28, 29, 31 ],
+            "friday": [ 28, 30, 3, 6 ],
+            "saturday": [ 30, 1, 2, 5 ],
+            "sunday": [ 15, 16, 27, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
