@@ -976,6 +976,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 55,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/track=3442178856/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://lisamoore.bandcamp.com/track/sonatra-by-michael-gordon',
+          a_string: '&quot;Sonatra&quot; by Michael Gordon by Lisa Moore, piano',
+          rule: {
+            "monday": [ 18, 12, 14, 2 ],
+            "tuesday": [ 14, 21, 23, 22 ],
+            "wednesday": [ 12, 16, 18, 22 ],
+            "thursday": [ 14, 21, 23, 22 ],
+            "saturday": [ 22, 16, 18, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 56,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3809571461/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cantaloupemusic.bandcamp.com/album/time-loops',
+          a_string: 'Time Loops by Michael Harrison &amp; Maya Beiser',
+          rule: {
+            "monday": [ 23, 17, 19, 24 ],
+            "tuesday": [ 19, 13, 15, 3 ],
+            "wednesday": [ 15, 22, 24, 23 ],
+            "thursday": [ 13, 17, 19, 23 ],
+            "saturday": [ 15, 22, 24, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 57,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4060482110/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ensembleetal.bandcamp.com/album/the-slow-reveal',
+          a_string: 'The Slow Reveal by ensemble, et al.',
+          rule: {
+            "monday": [ 15, 22, 24, 23 ],
+            "tuesday": [ 23, 17, 19, 24 ],
+            "wednesday": [ 19, 13, 15, 3 ],
+            "thursday": [ 15, 22, 24, 23 ],
+            "saturday": [ 13, 17, 19, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
