@@ -1704,6 +1704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 86,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/cortor-woman-in-an-interior.jpg',
+          title: 'Woman in an Interior',
+          artist: 'Eldzier Cortor',
+          year: 'xx Cent.',
+          rule: {
+            "monday": [ 13, 21, 29, 8 ],
+            "tuesday": [ 15, 23, 2, 10 ],
+            "wednesday": [ 20, 25, 2, 12 ],
+            "thursday": [ 19, 27, 6, 14 ],
+            "friday": [ 21, 2, 8, 16 ],
+            "saturday": [ 23, 2, 10, 20 ],
+            "sunday": [ 25, 4, 29, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 87,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/rr.jpg',
+          title: 'Shoe Shine',
+          artist: 'Ernest Crichlow',
+          year: '1953',
+          rule: {
+            "monday": [ 25, 4, 29, 19 ],
+            "tuesday": [ 13, 21, 29, 8 ],
+            "wednesday": [ 15, 23, 2, 10 ],
+            "thursday": [ 20, 25, 2, 12 ],
+            "friday": [ 19, 27, 6, 14 ],
+            "saturday": [ 21, 2, 8, 16 ],
+            "sunday": [ 23, 2, 10, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 88,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/800px-American-cities-145.jpg',
+          title: 'Douglass Square, Boston',
+          artist: 'Allan Crite',
+          year: '1936',
+          rule: {
+            "monday": [ 23, 2, 10, 20 ],
+            "tuesday": [ 25, 4, 29, 19 ],
+            "wednesday": [ 13, 21, 29, 8 ],
+            "thursday": [ 15, 23, 2, 10 ],
+            "friday": [ 20, 25, 2, 12 ],
+            "saturday": [ 19, 27, 6, 14 ],
+            "sunday": [ 21, 2, 8, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 89,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/2e5e366f865231cbd11b4b783ccf659b.jpg',
+          title: 'Figurative Composition #7',
+          artist: 'Emilio Cruz',
+          year: '1965',
+          rule: {
+            "monday": [ 21, 2, 8, 16 ],
+            "tuesday": [ 23, 2, 10, 20 ],
+            "wednesday": [ 25, 4, 29, 19 ],
+            "thursday": [ 13, 21, 29, 8 ],
+            "friday": [ 15, 23, 2, 10 ],
+            "saturday": [ 20, 25, 2, 12 ],
+            "sunday": [ 19, 27, 6, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 90,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/splendid.jpg',
+          title: 'Splendid',
+          artist: 'Frank E. Cummings III',
+          year: 'xx Cent.',
+          rule: {
+            "monday": [ 19, 27, 6, 14 ],
+            "tuesday": [ 21, 2, 8, 16 ],
+            "wednesday": [ 23, 2, 10, 20 ],
+            "thursday": [ 25, 4, 29, 19 ],
+            "friday": [ 13, 21, 29, 8 ],
+            "saturday": [ 15, 23, 2, 10 ],
+            "sunday": [ 20, 25, 2, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
