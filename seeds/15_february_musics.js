@@ -868,6 +868,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 49,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2037657663/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://henrythreadgill.bandcamp.com/album/up-popped-the-two-lips',
+          a_string: 'Up Popped The Two Lips by Henry Threadgill&#39;s Zooid',
+          rule: {
+            "monday": [ 13, 17, 19, 21 ],
+            "tuesday": [ 25, 19, 21, 27 ],
+            "wednesday": [ 8, 22, 3, 27 ],
+            "thursday": [ 9, 13, 15, 19 ],
+            "saturday": [ 11, 15, 17, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 50,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1393903022/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://stevecoleman.bandcamp.com/album/harvesting-semblances-and-affinities',
+          a_string: 'Harvesting Semblances and Affinities by Steve Coleman',
+          rule: {
+            "monday": [ 11, 15, 17, 21 ],
+            "tuesday": [ 13, 17, 19, 21 ],
+            "wednesday": [ 25, 19, 21, 27 ],
+            "thursday": [ 8, 22, 3, 27 ],
+            "saturday": [ 9, 13, 15, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 51,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2071939863/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://pheeroanaklaff.bandcamp.com/album/live-at-the-fez',
+          a_string: 'Live at the Fez by Pheeroan akLaff',
+          rule: {
+            "monday": [ 9, 13, 15, 19 ],
+            "tuesday": [ 11, 15, 17, 21 ],
+            "wednesday": [ 13, 17, 19, 21 ],
+            "thursday": [ 25, 19, 21, 27 ],
+            "saturday": [ 8, 22, 3, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
