@@ -470,6 +470,66 @@
         });
       }
 
+      function occasionButtonSpeaker(element, occasionArray) {
+
+        element.addEventListener('click', (e)=>{
+          e.preventDefault();
+          e.stopPropagation();
+          for (let i = 0; i < occasionArray.length; i++) {
+            if (i > 0) {
+              spokenOutput('... and ');
+            } else {
+              spokenOutput('Remember...');
+            }
+            spokenOutput(occasionArray[i].name);
+          }
+        });
+      }
+
+      function grabOccasions(occasions, dayOf) {
+        let checkDate = new Date(dayOf);
+        let occasionArray = [];
+        let occasionDate;
+
+        for (let i = 0; i < occasions.length; i++) {
+          occasionDate = new Date(occasions[i].day_of);
+          if (occasions[i].is_annual) {
+            if ((checkDate.getMonth() === occasionDate.getMonth()) && (checkDate.getDate() === occasionDate.getDate())) {
+              occasionArray.push(occasions[i]);
+            }
+          } else {
+            if ((checkDate.getFullYear() === occasionDate.getFullYear()) && (checkDate.getMonth() === occasionDate.getMonth()) && (checkDate.getDate() === occasionDate.getDate())) {
+              occasionArray.push(occasions[i]);
+            }
+          }
+        }
+
+        return(occasionArray);
+      }
+
+      function setOccasionButtons() {
+        let occasionButtons = [ 'mondayOccasionButton', 'tuesdayOccasionButton', 'wednesdayOccasionButton', 'thursdayOccasionButton', 'fridayOccasionButton', 'saturdayOccasionButton', 'sundayOccasionButton' ];
+        let weekDates = [ mondayDate, tuesdayDate, wednesdayDate, thursdayDate, fridayDate, saturdayDate, sundayDate ];
+        let checkDate;
+        let occasionArray = [];
+        let element;
+
+        $http.get(`/occasionsbyuser/${currentUserId}`)
+        .then(occasionsData=>{
+          let occasions = occasionsData.data;
+          for (let i = 0; i < occasionButtons.length; i++) {
+            occasionArray = [];
+            checkDate = new Date(weekDates[i]);
+            occasionArray = grabOccasions(occasions, checkDate);
+            if (occasionArray.length > 0) {
+              element = document.getElementById(occasionButtons[i]);
+              element.setAttribute("style", "visibility: visible;");
+              occasionButtonSpeaker(element, occasionArray);
+            }
+          }
+        });
+      }
+
       function setHolidayButtons() {
         let holidayButtons = [ 'mondayHolidayButton', 'tuesdayHolidayButton', 'wednesdayHolidayButton', 'thursdayHolidayButton', 'fridayHolidayButton', 'saturdayHolidayButton', 'sundayHolidayButton'];
         let weekDates = [ mondayDate, tuesdayDate, wednesdayDate, thursdayDate, fridayDate, saturdayDate, sundayDate ];
@@ -523,6 +583,7 @@
         }
         setPastPresentDays();
         setHolidayButtons();
+        setOccasionButtons();
       }
 
     }
