@@ -470,6 +470,19 @@
         });
       }
 
+      function billButtonSpeaker(element, bills) {
+        element.addEventListener('click', (e)=>{
+          e.preventDefault();
+          e.stopPropagation();
+          for (let i = 0; i < bills.length; i++) {
+            if (i > 0) {
+              spokenOutput('... and ');
+            }
+            spokenOutput(bills[i].name + " is due on this day.");
+          }
+        });
+      }
+
       function occasionButtonSpeaker(element, occasionArray) {
 
         element.addEventListener('click', (e)=>{
@@ -484,6 +497,23 @@
             spokenOutput(occasionArray[i].name);
           }
         });
+      }
+
+      function getBillsForDay(bills, dayOf) {
+        let checkDate = new Date(dayOf);
+        let biller = [];
+        let billDate;
+
+        for (let i = 0; i < bills.length; i++) {
+          billDate = new Date(bills[i].due_date);
+          if (!bills[i].is_paid) {
+            if ((checkDate.getFullYear() === billDate.getFullYear()) && (checkDate.getMonth() === billDate.getMonth()) && (checkDate.getDate() === billDate.getDate())) {
+              biller.push(bills[i]);
+            }
+          }
+        }
+
+        return(biller);
       }
 
       function grabOccasions(occasions, dayOf) {
@@ -505,6 +535,29 @@
         }
 
         return(occasionArray);
+      }
+
+      function setBillsButtons() {
+        let billsButtons = [ 'mondayBillsButton', 'tuesdayBillsButton', 'wednesdayBillsButton', 'thursdayBillsButton', 'fridayBillsButton', 'saturdayBillsButton', 'sundayBillsButton' ];
+        let weekDates = [ mondayDate, tuesdayDate, wednesdayDate, thursdayDate, fridayDate, saturdayDate, sundayDate ];
+        let checkDate;
+        let billsArray = [];
+        let element;
+
+        $http.get(`/billsbyuser/${currentUserId}`)
+        .then(billsData=>{
+          let bills = billsData.data;
+          for (let i = 0; i < billsButtons.length; i++) {
+            checkDate = new Date(weekDates[i]);
+            billsArray = [];
+            billsArray = getBillsForDay(bills, checkDate);
+            if (billsArray.length > 0) {
+              element = document.getElementById(billsButtons[i]);
+              element.setAttribute("style", "visibility: visible;");
+              billButtonSpeaker(element, billsArray);
+            }
+          }
+        });
       }
 
       function setOccasionButtons() {
@@ -584,6 +637,7 @@
         setPastPresentDays();
         setHolidayButtons();
         setOccasionButtons();
+        setBillsButtons();
       }
 
     }
