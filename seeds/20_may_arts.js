@@ -1104,6 +1104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 56,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/workers-1926.jpg',
+          title: 'Workers',
+          artist: 'Kuzma Petrov-Vodkin',
+          year: '1926',
+          rule: {
+            "monday": [ 5, 15, 25, 4 ],
+            "tuesday": [ 3, 13, 23, 2 ],
+            "wednesday": [ 1, 11, 21, 31 ],
+            "thursday": [ 30, 9, 19, 29 ],
+            "friday": [ 28, 7, 17, 27 ],
+            "saturday": [ 9, 19, 29, 8 ],
+            "sunday": [ 7, 17, 27, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 57,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/a-french-worker.jpg',
+          title: 'A French Worker',
+          artist: 'Pavel Filonov',
+          year: 'XIX-XX cent.',
+          rule: {
+            "monday": [ 7, 17, 27, 6 ],
+            "tuesday": [ 5, 15, 25, 4 ],
+            "wednesday": [ 3, 13, 23, 2 ],
+            "thursday": [ 1, 11, 21, 31 ],
+            "friday": [ 30, 9, 19, 29 ],
+            "saturday": [ 28, 7, 17, 27 ],
+            "sunday": [ 9, 19, 29, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 58,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/attentive-worker-1913.jpg',
+          title: 'Attentive Worker',
+          artist: 'Kazimir Malevich',
+          year: '1913',
+          rule: {
+            "monday": [ 9, 19, 29, 8 ],
+            "tuesday": [ 7, 17, 27, 6 ],
+            "wednesday": [ 5, 15, 25, 4 ],
+            "thursday": [ 3, 13, 23, 2 ],
+            "friday": [ 1, 11, 21, 31 ],
+            "saturday": [ 30, 9, 19, 29 ],
+            "sunday": [ 28, 7, 17, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 59,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/a-worker-at-celeyran-1882.jpg',
+          title: 'A Worker at Celeyran',
+          artist: 'Henri de Toulouse-Lautrec',
+          year: '1882',
+          rule: {
+            "monday": [ 28, 7, 17, 27 ],
+            "tuesday": [ 9, 19, 29, 8 ],
+            "wednesday": [ 7, 17, 27, 6 ],
+            "thursday": [ 5, 15, 25, 4 ],
+            "friday": [ 3, 13, 23, 2 ],
+            "saturday": [ 1, 11, 21, 31 ],
+            "sunday": [ 30, 9, 19, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 60,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/seeing-the-unit-of-workers-to-the-front-1928.jpg',
+          title: 'Seeing the unit of workers to the front',
+          artist: 'Konstantin Yuon',
+          year: '1928',
+          rule: {
+            "monday": [ 30, 9, 19, 29 ],
+            "tuesday": [ 28, 7, 17, 27 ],
+            "wednesday": [ 9, 19, 29, 8 ],
+            "thursday": [ 7, 17, 27, 6 ],
+            "friday": [ 5, 15, 25, 4 ],
+            "saturday": [ 3, 13, 23, 2 ],
+            "sunday": [ 1, 11, 21, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
