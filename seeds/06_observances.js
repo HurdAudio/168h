@@ -8025,6 +8025,76 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 510,
+          user_id: 1,
+          name: 'Babe Ruth (outfielder and pitcher), born 1895',
+          color: '#171717',
+          picture: './img/baseball/baberuth.jpg',
+          day_of: new Date ('1895-02-06T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 511,
+          user_id: 1,
+          name: 'Max Scherzer pitches his second no-hitter of the 2015 season for the Washington Nationals vs. New York Mets',
+          color: '#81231B',
+          picture: './img/baseball/scherzernonon2.jpg',
+          day_of: new Date ('2015-10-03T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 512,
+          user_id: 1,
+          name: 'Max Scherzer pitches his first of two no-hitters in the 2015 season for the Washington Nationals vs. Pittsburgh Pirates',
+          color: '#C81B0A',
+          picture: './img/baseball/maxscherzernonon1.jpg',
+          day_of: new Date ('2015-06-20T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 513,
+          user_id: 1,
+          name: 'The southeastern US was destroyed by a Soviet nuclear attack as the beginning of the third woe of the Apocalypse according to the UFO prophet George Van Tassel.',
+          color: '#9509FF',
+          picture: './img/doomsday/georgevanfruitloop.jpg',
+          day_of: new Date ('1967-08-20T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 514,
+          user_id: 1,
+          name: 'Beatrice Wood (artist), born 1893',
+          color: '#8C3C73',
+          picture: './img/artists/beatricewood.jpg',
+          day_of: new Date ('1893-03-03T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
