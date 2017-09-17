@@ -490,6 +490,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 28,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1616218889/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://kylebobbydunn.bandcamp.com/album/a-young-persons-guide-to-kyle-bobby-dunn',
+          a_string: 'A Young Person&#39;s Guide To Kyle Bobby Dunn by Kyle Bobby Dunn',
+          rule: {
+            "monday": [ 1, 9, 11, 22 ],
+            "tuesday": [ 5, 9, 15, 26 ],
+            "wednesday": [ 4, 8, 14, 24 ],
+            "thursday": [ 3, 7, 12, 24 ],
+            "saturday": [ 2, 6, 12, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 29,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3922067933/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://airtexture.bandcamp.com/album/air-texture-volume-i',
+          a_string: 'Air Texture Volume I by Air Texture',
+          rule: {
+            "monday": [ 2, 6, 12, 23 ],
+            "tuesday": [ 1, 9, 11, 22 ],
+            "wednesday": [ 5, 9, 15, 26 ],
+            "thursday": [ 4, 8, 14, 24 ],
+            "saturday": [ 3, 7, 12, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 30,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1748224388/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://adambryanbaumwiltzie.bandcamp.com/album/travels-in-constants-vol-24',
+          a_string: 'Travels in Constants Vol 24 by Adam Bryanbaum Wiltzie',
+          rule: {
+            "monday": [ 3, 7, 12, 24 ],
+            "tuesday": [ 2, 6, 12, 23 ],
+            "wednesday": [ 1, 9, 11, 22 ],
+            "thursday": [ 5, 9, 15, 26 ],
+            "saturday": [ 4, 8, 14, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
