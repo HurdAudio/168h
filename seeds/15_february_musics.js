@@ -922,6 +922,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 52,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1181445539/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'https://bandcamp.com/EmbeddedPlayer/album=1181445539/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          a_string: 'Love and Ghosts by Farmers By Nature : Gerald Cleaver / William Parker / Craig Taborn',
+          rule: {
+            "monday": [ 8, 22, 3, 27 ],
+            "tuesday": [ 9, 13, 15, 19 ],
+            "wednesday": [ 11, 15, 17, 21 ],
+            "thursday": [ 13, 17, 19, 21 ],
+            "saturday": [ 25, 19, 21, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 53,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2300004674/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://wadadaleosmith.bandcamp.com/album/saturn-conjunct-the-grand-canyon-in-a-sweet-embrace',
+          a_string: 'Saturn, Conjunct the Grand Canyon in a Sweet Embrace by Wadada Leo Smith &amp; Anthony Braxton',
+          rule: {
+            "monday": [ 25, 19, 21, 27 ],
+            "tuesday": [ 8, 22, 3, 27 ],
+            "wednesday": [ 9, 13, 15, 19 ],
+            "thursday": [ 11, 15, 17, 21 ],
+            "saturday": [ 13, 17, 19, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 54,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'http://bandcamp.com/EmbeddedPlayer/album=1781387528/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tuffcity.com/album/psychelphia',
+          a_string: 'Psychelphia by Mary Jane Hooper',
+          rule: {
+            "monday": [ 13, 17, 19, 21 ],
+            "tuesday": [ 25, 19, 21, 27 ],
+            "wednesday": [ 8, 22, 3, 27 ],
+            "thursday": [ 9, 13, 15, 19 ],
+            "saturday": [ 11, 15, 17, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
