@@ -1204,6 +1204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 61,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/worker-s-settlement-and-concrete-plant-davalu-ararat-region-1937.jpg',
+          title: 'Worker\'s Settlement and Concrete Plant, Davalu, Ararat Region',
+          artist: 'Martiros Sarian',
+          year: '1937',
+          rule: {
+            "monday": [ 1, 11, 21, 31 ],
+            "tuesday": [ 30, 9, 19, 29 ],
+            "wednesday": [ 28, 7, 17, 27 ],
+            "thursday": [ 9, 19, 29, 8 ],
+            "friday": [ 7, 17, 27, 6 ],
+            "saturday": [ 5, 15, 25, 4 ],
+            "sunday": [ 3, 13, 23, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 62,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/venetian-glass-workers-1882.jpg',
+          title: 'Venetian Glass Workers',
+          artist: 'John Singer Sargent',
+          year: '1882',
+          rule: {
+            "monday": [ 3, 13, 23, 2 ],
+            "tuesday": [ 1, 11, 21, 31 ],
+            "wednesday": [ 30, 9, 19, 29 ],
+            "thursday": [ 28, 7, 17, 27 ],
+            "friday": [ 9, 19, 29, 8 ],
+            "saturday": [ 7, 17, 27, 6 ],
+            "sunday": [ 5, 15, 25, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 63,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/at-the-workers-outskirts-of-the-days-of-the-overthrow-of-the-autocracy-february-1917.jpg',
+          title: 'At the workers\' outskirts of the days of the overthrow of the autocracy. February 1917',
+          artist: 'Ivan Vladimirov',
+          year: '1917',
+          rule: {
+            "monday": [ 6, 16, 26, 5 ],
+            "tuesday": [ 4, 14, 24, 3 ],
+            "wednesday": [ 2, 12, 22, 1 ],
+            "thursday": [ 31, 10, 20, 30 ],
+            "friday": [ 29, 8, 18, 28 ],
+            "saturday": [ 10, 20, 30, 9 ],
+            "sunday": [ 8, 18, 28, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 64,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/the-manual-workers-and-the-intellectuals-1927.jpg',
+          title: 'The Manual Workers and the Intellectuals',
+          artist: 'Janos Mattis-Teutsch',
+          year: '1927',
+          rule: {
+            "monday": [ 8, 18, 28, 7 ],
+            "tuesday": [ 6, 16, 26, 5 ],
+            "wednesday": [ 4, 14, 24, 3 ],
+            "thursday": [ 2, 12, 22, 1 ],
+            "friday": [ 31, 10, 20, 30 ],
+            "saturday": [ 29, 8, 18, 28 ],
+            "sunday": [ 10, 20, 30, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 65,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/woman-worker-1893.jpg',
+          title: 'Woman Worker',
+          artist: 'Stefan Luchian',
+          year: '1893',
+          rule: {
+            "monday": [ 10, 20, 30, 9 ],
+            "tuesday": [ 8, 18, 28, 7 ],
+            "wednesday": [ 6, 16, 26, 5 ],
+            "thursday": [ 4, 14, 24, 3 ],
+            "friday": [ 2, 12, 22, 1 ],
+            "saturday": [ 31, 10, 20, 30 ],
+            "sunday": [ 29, 8, 18, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
