@@ -58,6 +58,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 4,
+          user_id: 1,
+          theme: 'hardcore punk, metal and nurse with wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1215305700/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://nursewithwound1.bandcamp.com/album/lofoten-deadhead',
+          a_string: 'Lofoten Deadhead by Nurse With Wound',
+          rule: {
+            "monday": [ 6, 16, 26, 29 ],
+            "tuesday": [ 5, 15, 25, 28 ],
+            "wednesday": [ 9, 19, 29, 1 ],
+            "thursday": [ 8, 18, 28, 31 ],
+            "saturday": [ 7, 17, 27, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 5,
+          user_id: 1,
+          theme: 'hardcore punk, metal and nurse with wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3708541054/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://locrian.bandcamp.com/album/infinite-dissolution',
+          a_string: 'Infinite Dissolution by Locrian',
+          rule: {
+            "monday": [ 7, 17, 27, 30 ],
+            "tuesday": [ 6, 16, 26, 29 ],
+            "wednesday": [ 5, 15, 25, 28 ],
+            "thursday": [ 9, 19, 29, 1 ],
+            "saturday": [ 8, 18, 28, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 6,
+          user_id: 1,
+          theme: 'hardcore punk, metal and nurse with wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3338179255/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://mamiffer.bandcamp.com/album/statu-nascendi-japanese-bonus-disc',
+          a_string: 'Statu Nascendi (Japanese Bonus Disc) by Mamiffer',
+          rule: {
+            "monday": [ 8, 18, 28, 31 ],
+            "tuesday": [ 7, 17, 27, 30 ],
+            "wednesday": [ 6, 16, 26, 29 ],
+            "thursday": [ 5, 15, 25, 28 ],
+            "saturday": [ 9, 19, 29, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
