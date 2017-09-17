@@ -604,6 +604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 31,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/the-blonde-woman.jpg',
+          title: 'The Blonde Woman',
+          artist: 'Albert Marquet',
+          year: '?',
+          rule: {
+            "monday": [ 2, 6, 14, 30 ],
+            "tuesday": [ 8, 12, 20, 5 ],
+            "wednesday": [ 7, 11, 19, 4 ],
+            "thursday": [ 6, 10, 18, 3 ],
+            "friday": [ 5, 9, 17, 2 ],
+            "saturday": [ 4, 8, 16, 1 ],
+            "sunday": [ 3, 6, 15, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 32,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/wines-liquors-1910.jpg',
+          title: 'Wines, Liquors',
+          artist: 'Maurice de Vlaminck',
+          year: '1910',
+          rule: {
+            "monday": [ 3, 6, 15, 31 ],
+            "tuesday": [ 2, 6, 14, 30 ],
+            "wednesday": [ 8, 12, 20, 5 ],
+            "thursday": [ 7, 11, 19, 4 ],
+            "friday": [ 6, 10, 18, 3 ],
+            "saturday": [ 5, 9, 17, 2 ],
+            "sunday": [ 4, 8, 16, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 33,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/le-maquereau-1935.jpg',
+          title: 'Le Maquereau',
+          artist: 'Camille Bombois',
+          year: '1935',
+          rule: {
+            "monday": [ 4, 8, 16, 1 ],
+            "tuesday": [ 3, 6, 15, 31 ],
+            "wednesday": [ 2, 6, 14, 30 ],
+            "thursday": [ 8, 12, 20, 5 ],
+            "friday": [ 7, 11, 19, 4 ],
+            "saturday": [ 6, 10, 18, 3 ],
+            "sunday": [ 5, 9, 17, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 34,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/the-tribute-money-1915.jpg',
+          title: 'The tribute money',
+          artist: 'Emil Nolde',
+          year: '1915',
+          rule: {
+            "monday": [ 5, 9, 17, 2 ],
+            "tuesday": [ 4, 8, 16, 1 ],
+            "wednesday": [ 3, 6, 15, 31 ],
+            "thursday": [ 2, 6, 14, 30 ],
+            "friday": [ 8, 12, 20, 5 ],
+            "saturday": [ 7, 11, 19, 4 ],
+            "sunday": [ 6, 10, 18, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 35,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/the-demonstration.jpg',
+          title: 'The Demonstration',
+          artist: 'Emmanuel Zairis',
+          year: '?',
+          rule: {
+            "monday": [ 7, 11, 19, 4 ],
+            "tuesday": [ 6, 10, 18, 3 ],
+            "wednesday": [ 5, 9, 17, 2 ],
+            "thursday": [ 4, 7, 16, 1 ],
+            "friday": [ 3, 7, 15, 31 ],
+            "saturday": [ 9, 13, 21, 6 ],
+            "sunday": [ 8, 11, 20, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
