@@ -274,6 +274,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 16,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=824963388/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://arrington.bandcamp.com/album/saturn-returns-2004',
+          a_string: 'Saturn Returns (2004) by Arrington de Dionyso and Thollem McDonas',
+          rule: {
+            "monday": [ 9, 17, 2, 1 ],
+            "tuesday": [ 8, 16, 1, 31 ],
+            "wednesday": [ 7, 15, 31, 30 ],
+            "thursday": [ 6, 14, 30, 29 ],
+            "saturday": [ 10, 18, 3, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 17,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1112452603/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://instinctorecords.bandcamp.com/album/lumbobas-tube',
+          a_string: 'Lumboba&#39;s Tube by Zom Zoms',
+          rule: {
+            "monday": [ 10, 18, 3, 4 ],
+            "tuesday": [ 9, 17, 2, 1 ],
+            "wednesday": [ 8, 16, 1, 31 ],
+            "thursday": [ 7, 15, 31, 30 ],
+            "saturday": [ 6, 14, 30, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 18,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2169340236/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://coldcave.bandcamp.com/album/cremations',
+          a_string: 'Cremations by Cold Cave',
+          rule: {
+            "monday": [ 6, 14, 30, 29 ],
+            "tuesday": [ 10, 18, 3, 4 ],
+            "wednesday": [ 9, 17, 2, 1 ],
+            "thursday": [ 8, 16, 1, 31 ],
+            "saturday": [ 7, 15, 31, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
