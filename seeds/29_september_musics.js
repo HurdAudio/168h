@@ -166,6 +166,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 10,
+          user_id: 1,
+          theme: 'math rock/progressive rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2840280732/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://stickmen-moonjune.bandcamp.com/album/roppongi',
+          a_string: 'Roppongi by Stick Men featuring Mel Collins',
+          rule: {
+            "monday": [ 4, 24, 2, 26 ],
+            "tuesday": [ 3, 23, 1, 25 ],
+            "wednesday": [ 2, 22, 30, 24 ],
+            "thursday": [ 6, 26, 4, 28 ],
+            "saturday": [ 5, 25, 3, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 11,
+          user_id: 1,
+          theme: 'math rock/progressive rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=297370005/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://vattnet.bandcamp.com/album/vattnet',
+          a_string: 'Vattnet by Vattnet',
+          rule: {
+            "monday": [ 5, 25, 3, 27 ],
+            "tuesday": [ 4, 24, 2, 26 ],
+            "wednesday": [ 3, 23, 1, 25 ],
+            "thursday": [ 2, 22, 30, 24 ],
+            "saturday": [ 6, 26, 4, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 12,
+          user_id: 1,
+          theme: 'math rock/progressive rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=911440374/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://electricorange.bandcamp.com/album/eoxxv',
+          a_string: 'EOXXV by electric orange',
+          rule: {
+            "monday": [ 6, 26, 4, 28 ],
+            "tuesday": [ 5, 25, 3, 27 ],
+            "wednesday": [ 4, 24, 2, 26 ],
+            "thursday": [ 3, 23, 1, 25 ],
+            "saturday": [ 2, 22, 30, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
