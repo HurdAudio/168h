@@ -2004,6 +2004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 101,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/composition-35.jpg',
+          title: 'Composition 35',
+          artist: 'Sonia Delaunay',
+          year: 'c.1930',
+          rule: {
+            "monday": [ 15, 16, 27, 19 ],
+            "tuesday": [ 18, 20, 22, 1 ],
+            "wednesday": [ 20, 21, 23, 26 ],
+            "thursday": [ 23, 24, 15, 19 ],
+            "friday": [ 26, 28, 29, 31 ],
+            "saturday": [ 28, 30, 3, 6 ],
+            "sunday": [ 30, 1, 2, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 102,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/colored-composition-hommage-to-johann-sebastian-bachh.jpg',
+          title: 'Colored composition (Hommage to Johann Sebastian Bachh)',
+          artist: 'August Macke',
+          year: '1912',
+          rule: {
+            "monday": [ 30, 1, 2, 5 ],
+            "tuesday": [ 15, 16, 27, 19 ],
+            "wednesday": [ 18, 20, 22, 1 ],
+            "thursday": [ 20, 21, 23, 26 ],
+            "friday": [ 23, 24, 15, 19 ],
+            "saturday": [ 26, 28, 29, 31 ],
+            "sunday": [ 28, 30, 3, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 103,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/colored-rhythm-study-for-the-film-1913(35).jpg',
+          title: 'Colored Rhythm: Study for the Film',
+          artist: 'Leopold Survage',
+          year: '1913',
+          rule: {
+            "monday": [ 28, 30, 3, 6 ],
+            "tuesday": [ 30, 1, 2, 5 ],
+            "wednesday": [ 15, 16, 27, 19 ],
+            "thursday": [ 18, 20, 22, 1 ],
+            "friday": [ 20, 21, 23, 26 ],
+            "saturday": [ 23, 24, 15, 19 ],
+            "sunday": [ 26, 28, 29, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 104,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/diagonal-planes-1925.jpg',
+          title: 'Diagonal Planes',
+          artist: 'Frantisek Kupka',
+          year: '1925',
+          rule: {
+            "monday": [ 26, 28, 29, 31 ],
+            "tuesday": [ 28, 30, 3, 6 ],
+            "wednesday": [ 30, 1, 2, 5 ],
+            "thursday": [ 15, 16, 27, 19 ],
+            "friday": [ 18, 20, 22, 1 ],
+            "saturday": [ 20, 21, 23, 26 ],
+            "sunday": [ 23, 24, 15, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 105,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/stained-glass-windows-for-the-university-of-caracas.jpg',
+          title: 'Stained glass windows for the University of Caracas',
+          artist: 'Fernand Leger',
+          year: 'XIX-XX cent.',
+          rule: {
+            "monday": [ 24, 25, 16, 20 ],
+            "tuesday": [ 27, 29, 30, 1 ],
+            "wednesday": [ 29, 31, 4, 7 ],
+            "thursday": [ 31, 2, 3, 6 ],
+            "friday": [ 16, 17, 28, 20 ],
+            "saturday": [ 19, 21, 23, 2 ],
+            "sunday": [ 21, 22, 14, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
