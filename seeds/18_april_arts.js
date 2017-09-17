@@ -1404,6 +1404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 71,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/1-comerica-park-detroit-skyline-b-and-g-art.jpg',
+          title: 'Comerica Park Detroit Skyline',
+          artist: 'A And N Art',
+          year: '2013',
+          rule: {
+            "monday": [ 25, 15, 22, 28 ],
+            "tuesday": [ 10, 15, 21, 27 ],
+            "wednesday": [ 9, 13, 28, 26 ],
+            "thursday": [ 8, 13, 18, 25 ],
+            "friday": [ 7, 12, 18, 24 ],
+            "saturday": [ 6, 11, 17, 23 ],
+            "sunday": [ 11, 17, 22, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 72,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/detroit001.jpg',
+          title: 'Comerica Park Tiger',
+          artist: 'Rukkus',
+          year: '2015',
+          rule: {
+            "monday": [ 11, 17, 22, 29 ],
+            "tuesday": [ 25, 15, 22, 28 ],
+            "wednesday": [ 10, 15, 21, 27 ],
+            "thursday": [ 9, 13, 28, 26 ],
+            "friday": [ 8, 13, 18, 25 ],
+            "saturday": [ 7, 12, 18, 24 ],
+            "sunday": [ 6, 11, 17, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 73,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/triple-crown-winner-detroit-tigers-miguel-cabrera-b-and-g-art.jpg',
+          title: 'Triple Crown Winner Detroit Tigers Miguel Cabrera',
+          artist: ' A And N Art',
+          year: '2012',
+          rule: {
+            "monday": [ 6, 11, 17, 23 ],
+            "tuesday": [ 11, 17, 22, 29 ],
+            "wednesday": [ 25, 15, 22, 28 ],
+            "thursday": [ 10, 15, 21, 27 ],
+            "friday": [ 9, 13, 28, 26 ],
+            "saturday": [ 8, 13, 18, 25 ],
+            "sunday": [ 7, 12, 18, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 74,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/il_340x270.637314895_9vaq.jpg',
+          title: 'Detroit Tigers Justin Verlander',
+          artist: 'Glicee Prints',
+          year: 'xxi Cent.',
+          rule: {
+            "monday": [ 7, 12, 18, 24 ],
+            "tuesday": [ 6, 11, 17, 23 ],
+            "wednesday": [ 11, 17, 22, 29 ],
+            "thursday": [ 25, 15, 22, 28 ],
+            "friday": [ 10, 15, 21, 27 ],
+            "saturday": [ 9, 13, 28, 26 ],
+            "sunday": [ 8, 13, 18, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 75,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/art-houtteman-detrit-tigers-pitcher.jpg',
+          title: 'Art Houtteman Detroit Tigers Pitcher',
+          artist: '?',
+          year: '1950s',
+          rule: {
+            "monday": [ 8, 13, 18, 25 ],
+            "tuesday": [ 7, 12, 18, 24 ],
+            "wednesday": [ 6, 11, 17, 23 ],
+            "thursday": [ 11, 17, 22, 29 ],
+            "friday": [ 25, 15, 22, 28 ],
+            "saturday": [ 10, 15, 21, 27 ],
+            "sunday": [ 9, 13, 28, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
