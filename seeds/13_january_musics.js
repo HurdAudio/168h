@@ -1030,6 +1030,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 58,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3625848699/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://lisamoore.bandcamp.com/album/piano-etudes-and-a-dream-by-hannah-lash',
+          a_string: 'Piano Etudes and a Dream by Hannah Lash by Lisa Moore, piano',
+          rule: {
+            "monday": [ 13, 17, 19, 23 ],
+            "tuesday": [ 15, 22, 24, 23 ],
+            "wednesday": [ 23, 17, 19, 24 ],
+            "thursday": [ 19, 13, 15, 3 ],
+            "saturday": [ 15, 22, 24, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 59,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2097578068/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://n5md.bandcamp.com/album/seafaring',
+          a_string: 'Seafaring by Last Days',
+          rule: {
+            "monday": [ 15, 22, 24, 23 ],
+            "tuesday": [ 13, 17, 19, 23 ],
+            "wednesday": [ 15, 22, 24, 23 ],
+            "thursday": [ 23, 17, 19, 24 ],
+            "saturday": [ 19, 13, 15, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 60,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3488538009/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://benbabbitt.bandcamp.com/album/kentucky-route-zero-act-ii',
+          a_string: 'Kentucky Route Zero- Act II by Ben Babbitt',
+          rule: {
+            "monday": [ 19, 13, 15, 3 ],
+            "tuesday": [ 15, 22, 24, 23 ],
+            "wednesday": [ 13, 17, 19, 23 ],
+            "thursday": [ 15, 22, 24, 23 ],
+            "saturday": [ 23, 17, 19, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
