@@ -1804,6 +1804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 91,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/image11.jpg',
+          title: 'American Jazz Series #11',
+          artist: 'Michael A. Cumings',
+          year: 'xxi Cent.',
+          rule: {
+            "monday": [ 21, 26, 3, 13 ],
+            "tuesday": [ 20, 28, 7, 15 ],
+            "wednesday": [ 22, 3, 9, 17 ],
+            "thursday": [ 24, 3, 11, 21 ],
+            "friday": [ 26, 5, 1, 20 ],
+            "saturday": [ 14, 22, 1, 9 ],
+            "sunday": [ 16, 24, 3, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 92,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/folk_5146_image.jpg',
+          title: 'M.L. King',
+          artist: 'Ulysses Davis',
+          year: 'xx Cent.',
+          rule: {
+            "monday": [ 16, 24, 3, 11 ],
+            "tuesday": [ 21, 26, 3, 13 ],
+            "wednesday": [ 20, 28, 7, 15 ],
+            "thursday": [ 22, 3, 9, 17 ],
+            "friday": [ 24, 3, 11, 21 ],
+            "saturday": [ 26, 5, 1, 20 ],
+            "sunday": [ 14, 22, 1, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 93,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/501450dc3006ca275de386e59b39e852.jpg',
+          title: 'Diversity',
+          artist: 'Bing Davis',
+          year: '?',
+          rule: {
+            "monday": [ 14, 22, 1, 9 ],
+            "tuesday": [ 16, 24, 3, 11 ],
+            "wednesday": [ 21, 26, 3, 13 ],
+            "thursday": [ 20, 28, 7, 15 ],
+            "friday": [ 22, 3, 9, 17 ],
+            "saturday": [ 24, 3, 11, 21 ],
+            "sunday": [ 26, 5, 1, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 94,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/roy-decarava-pickets.jpg',
+          title: 'Pickets',
+          artist: 'Roy DeCarava ',
+          year: '1946',
+          rule: {
+            "monday": [ 26, 5, 1, 20 ],
+            "tuesday": [ 14, 22, 1, 9 ],
+            "wednesday": [ 16, 24, 3, 11 ],
+            "thursday": [ 21, 26, 3, 13 ],
+            "friday": [ 20, 28, 7, 15 ],
+            "saturday": [ 22, 3, 9, 17 ],
+            "sunday": [ 24, 3, 11, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 95,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Jazz Quartet 1946.jpg',
+          title: 'Jazz Quartet',
+          artist: 'Beauford Delaney',
+          year: '1946',
+          rule: {
+            "monday": [ 24, 3, 11, 21 ],
+            "tuesday": [ 26, 5, 1, 20 ],
+            "wednesday": [ 14, 22, 1, 9 ],
+            "thursday": [ 16, 24, 3, 11 ],
+            "friday": [ 21, 26, 3, 13 ],
+            "saturday": [ 20, 28, 7, 15 ],
+            "sunday": [ 22, 3, 9, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
