@@ -814,6 +814,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 46,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2412125441/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://laubrock-intakt.bandcamp.com/album/serpentines',
+          a_string: 'Serpentines by Ingrid Laubrock',
+          rule: {
+            "monday": [ 10, 16, 22, 30 ],
+            "tuesday": [ 9, 15, 21, 30 ],
+            "wednesday": [ 8, 14, 20, 28 ],
+            "thursday": [ 7, 13, 19, 27 ],
+            "saturday": [ 11, 17, 23, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 47,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4017614520/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jessicapavone.bandcamp.com/album/walking-sleeping-breathing',
+          a_string: 'Walking, Sleeping, Breathing by Jessica Pavone',
+          rule: {
+            "monday": [ 11, 17, 23, 31 ],
+            "tuesday": [ 10, 16, 22, 30 ],
+            "wednesday": [ 9, 15, 21, 30 ],
+            "thursday": [ 8, 14, 20, 28 ],
+            "saturday": [ 7, 13, 19, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 48,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1050554170/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://krisdavis.bandcamp.com/album/duopoly',
+          a_string: 'Duopoly by Kris Davis',
+          rule: {
+            "monday": [ 7, 13, 19, 27 ],
+            "tuesday": [ 11, 17, 23, 31 ],
+            "wednesday": [ 10, 16, 22, 30 ],
+            "thursday": [ 9, 15, 21, 30 ],
+            "saturday": [ 8, 14, 20, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
