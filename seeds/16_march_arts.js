@@ -1604,6 +1604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 81,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/flowers-on-the-blue-background-1943.jpg',
+          title: 'Flowers on the blue background',
+          artist: 'Kateryna Bilokur',
+          year: '1942 - 1943',
+          rule: {
+            "monday": [ 7, 17, 25, 4 ],
+            "tuesday": [ 6, 16, 25, 3 ],
+            "wednesday": [ 12, 21, 30, 8 ],
+            "thursday": [ 11, 21, 31, 8 ],
+            "friday": [ 10, 20, 28, 7 ],
+            "saturday": [ 9, 19, 27, 6 ],
+            "sunday": [ 8, 18, 26, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 82,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/indeed-1991.jpg',
+          title: 'Indeed',
+          artist: 'Valerie Jaudon',
+          year: '1991',
+          rule: {
+            "monday": [ 8, 18, 26, 5 ],
+            "tuesday": [ 7, 17, 25, 4 ],
+            "wednesday": [ 6, 16, 25, 3 ],
+            "thursday": [ 12, 21, 30, 8 ],
+            "friday": [ 11, 21, 31, 8 ],
+            "saturday": [ 10, 20, 28, 7 ],
+            "sunday": [ 9, 19, 27, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 83,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/inhabited-painting-1976.jpg',
+          title: 'Inhabited Painting',
+          artist: 'Helena Almeida',
+          year: '1976',
+          rule: {
+            "monday": [ 9, 19, 27, 6 ],
+            "tuesday": [ 8, 18, 26, 5 ],
+            "wednesday": [ 7, 17, 25, 4 ],
+            "thursday": [ 6, 16, 25, 3 ],
+            "friday": [ 12, 21, 30, 8 ],
+            "saturday": [ 11, 21, 31, 8 ],
+            "sunday": [ 10, 20, 28, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 84,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/smiling-girl-1921.jpg',
+          title: 'Smiling Girl',
+          artist: 'Helene Schjerfbeck',
+          year: '1921',
+          rule: {
+            "monday": [ 10, 20, 28, 7 ],
+            "tuesday": [ 9, 19, 27, 6 ],
+            "wednesday": [ 8, 18, 26, 5 ],
+            "thursday": [ 7, 17, 25, 4 ],
+            "friday": [ 6, 16, 25, 3 ],
+            "saturday": [ 12, 21, 30, 8 ],
+            "sunday": [ 11, 21, 31, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 85,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/portrait-d-une-n-gresse-1800.jpg',
+          title: 'Portrait d\'une négresse',
+          artist: 'Marie-Guillemine Benoist',
+          year: '1800',
+          rule: {
+            "monday": [ 11, 21, 31, 8 ],
+            "tuesday": [ 10, 20, 28, 7 ],
+            "wednesday": [ 9, 19, 27, 6 ],
+            "thursday": [ 8, 18, 26, 5 ],
+            "friday": [ 7, 17, 25, 4 ],
+            "saturday": [ 6, 16, 25, 3 ],
+            "sunday": [ 12, 21, 30, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
