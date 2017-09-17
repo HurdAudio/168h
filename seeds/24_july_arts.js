@@ -804,6 +804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 41,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/palais-royal-fountain-paris-1996.jpg',
+          title: 'Palais Royal Fountain, Paris',
+          artist: 'Pol Bury',
+          year: '1996',
+          rule: {
+            "monday": [ 5, 16, 27, 7 ],
+            "tuesday": [ 4, 15, 26, 6 ],
+            "wednesday": [ 3, 14, 25, 5 ],
+            "thursday": [ 2, 13, 24, 4 ],
+            "friday": [ 8, 19, 30, 10 ],
+            "saturday": [ 7, 18, 29, 9 ],
+            "sunday": [ 6, 17, 28, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 42,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/the-necrophile-dedicated-to-sergeant-bertrand-1965.jpg',
+          title: 'The Necrophile (dedicated to Sergeant Bertrand)',
+          artist: 'Jean Benoit',
+          year: '1965',
+          rule: {
+            "monday": [ 7, 17, 29, 9 ],
+            "tuesday": [ 6, 17, 28, 8 ],
+            "wednesday": [ 5, 16, 27, 7 ],
+            "thursday": [ 4, 15, 26, 6 ],
+            "friday": [ 3, 14, 25, 5 ],
+            "saturday": [ 9, 20, 31, 11 ],
+            "sunday": [ 8, 19, 30, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 43,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/apocalypse-du-printemps.jpg',
+          title: 'Apocalypse du printemps',
+          artist: 'Jean Messagier',
+          year: '?',
+          rule: {
+            "monday": [ 8, 19, 30, 10 ],
+            "tuesday": [ 7, 17, 29, 9 ],
+            "wednesday": [ 6, 17, 28, 8 ],
+            "thursday": [ 5, 16, 27, 7 ],
+            "friday": [ 4, 15, 26, 6 ],
+            "saturday": [ 3, 14, 25, 5 ],
+            "sunday": [ 9, 20, 31, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 44,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/04-08-1993-1993.jpg',
+          title: '04-08-1993',
+          artist: 'Zao Wou-Ki',
+          year: '1993',
+          rule: {
+            "monday": [ 9, 20, 31, 11 ],
+            "tuesday": [ 8, 19, 30, 10 ],
+            "wednesday": [ 7, 17, 29, 9 ],
+            "thursday": [ 6, 17, 28, 8 ],
+            "friday": [ 5, 16, 27, 7 ],
+            "saturday": [ 4, 15, 26, 6 ],
+            "sunday": [ 3, 14, 25, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 45,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/la-tour-eiffel-et-la-rue-de-la-manutention.jpg',
+          title: 'La Tour Eiffel et la rue de la manutention',
+          artist: 'Maurice Boitel',
+          year: '?',
+          rule: {
+            "monday": [ 3, 14, 25, 5 ],
+            "tuesday": [ 9, 20, 31, 11 ],
+            "wednesday": [ 8, 19, 30, 10 ],
+            "thursday": [ 7, 17, 29, 9 ],
+            "friday": [ 6, 17, 28, 8 ],
+            "saturday": [ 5, 16, 27, 7 ],
+            "sunday": [ 4, 15, 26, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
