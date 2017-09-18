@@ -15,6 +15,8 @@
   var dayStrips = [ 'mondayDatestrip', 'mondayName', 'tuesdayDatestrip', 'tuesdayName', 'wednesdayDateStrip', 'wednesdayName', 'thursdayDatestrip', 'thursdayName', 'fridayDatestrip', 'fridayName', 'saturdayDatestrip', 'saturdayName', 'sundayDatestrip', 'sundayName' ];
   var pulses = [ '#ff0000', '#ff1100', '#ff2211', '#ff3322', '#ff4433', '#ff5544', '#ff6655', '#ff7766', '#ff8877', '#ff9988', '#ffaa99', '#ffbbaa', '#ffccbb', '#ffddcc', '#ffeedd', '#ffffee', '#ffeeff', '#ffddee', '#ffccdd', '#ffbbcc', '#ffaabb', '#ff99aa', '#ff8899', '#ff7788', '#ff6677', '#ff5566', '#ff4455', '#ff3344', '#ff2233', '#ff1122', '#ff0011' ];
   var pulsePoint = 0;
+  var hours = ['0h', '030h', '1h', '130h', '2h', '230h', '3h', '330h', '4h', '430h', '5h', '530h', '6h', '630h', '7h', '730h', '8h', '830h', '9h', '930h', '10h', '1030h', '11h', '1130h', '12h', '1230h', '13h', '1330h', '14h', '1430h', '15h', '1530h', '16h', '1630h', '17h', '1730h', '18h', '1830h', '19h', '1930h', '20h', '2030h', '21h', '2130h', '22h', '2230h', '23h', '2330h', '0h' ];
+  var hoursTime = ['0:00', '0:30', '1:00', '1:30', '2:00', '2:30', '3:00', '3:30', '4:00', '4:30', '5:00', '5:30', '6:00', '6:30', '7:00', '7:30', '8:00', '8:30', '9:00', '9:30', '10:00', '10:30', '11:00', '11:30', '12:00', '12:30', '13:00', '13:30', '14:00', '14:30', '15:00', '15:30', '16:00', '16:30', '17:00', '17:30', '18:00', '18:30', '19:00', '19:30', '20:00', '20:30', '21:00', '21:30', '22:00', '22:30', '23:00', '23:30', '24:00' ];
 
   function spokenOutput (str) {
     var u = new SpeechSynthesisUtterance();
@@ -658,6 +660,98 @@
         });
       }
 
+      function getAppointmentsForDay(blocks, dayOf) {
+        let checkDate = new Date(dayOf);
+        let arr = [];
+
+        arr = blocks.filter((timeblock)=>{
+          let apptime = new Date(timeblock.start_time);
+          let apptEnd = new Date(timeblock.end_time);
+          return (((apptime.getFullYear() === checkDate.getFullYear()) && (apptime.getMonth() === checkDate.getMonth()) && (apptime.getDate() === checkDate.getDate())) || ((apptEnd.getFullYear() === checkDate.getFullYear()) && (apptEnd.getMonth() === checkDate.getMonth()) && (apptEnd.getDate() === checkDate.getDate())));
+        });
+
+        return(arr);
+      }
+
+      function populateCalendarDisplay(dayOfWeek, dayOf, apptArray, blocks) {
+        let indexOfStart = 0;
+        let indexOfEnd = 0;
+        let element;
+        let startTime;
+        let endTime;
+        let minutesString = '';
+        let endMinutesString = '';
+        let blockReference = {};
+
+        for (let i = 0; i < apptArray.length; i++) {
+          startTime = new Date(apptArray[i].start_time);
+          endTime = new Date(apptArray[i].end_time);
+          if (startTime.getMinutes() === 0) {
+            minutesString = ':00';
+          } else {
+            minutesString = ':30';
+          }
+          if (endTime.getMinutes() === 0) {
+            endMinutesString = ':00';
+          } else {
+            endMinutesString = ':30';
+          }
+          indexOfStart = hoursTime.indexOf((startTime.getHours() + 4) + minutesString);
+          indexOfEnd = hoursTime.indexOf((endTime.getHours() + 4) + endMinutesString);
+          blockReference = {};
+          if (indexOfStart === (hoursTime.length - 1)) {
+            indexOfStart = 0;
+          }
+          if (indexOfEnd < indexOfStart) {
+            indexOfEnd = hoursTime.length - 1;
+          }
+
+          for (let j = 0; j < blocks.length; j++) {
+            if (blocks[j].id === apptArray[i].block_type) {
+              blockReference = blocks[j];
+            }
+          }
+          
+          element = document.getElementById(dayOfWeek + hours[indexOfStart]);
+          element.children[0].children[0].innerHTML = hoursTime[indexOfStart] + ' - ' + blockReference.type;
+          element.children[0].appointment = apptArray[i].id;
+          element.children[0].setAttribute("style", "background-color: " + blockReference.color + "; opacity: 0.8; border-top: solid " + blockReference.color + " 6px;");
+
+          if (indexOfEnd > (indexOfStart + 1)) {
+            for (let k = (indexOfStart + 1); k < indexOfEnd; k++) {
+              element = document.getElementById(dayOfWeek + hours[k]);
+              element.children[0].appointment = apptArray[i].id;
+              element.children[0].setAttribute("style", "background-color: " + blockReference.color + "; opacity: 0.8; border-top: solid " + blockReference.color + " 6px;");
+            }
+          }
+
+        }
+      }
+
+      function readAppointmentBlocks() {
+        let weekArray = [ 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'];
+        let weekDates = [ mondayDate, tuesdayDate, wednesdayDate, thursdayDate, fridayDate, saturdayDate, sundayDate ];
+        let appointmentsArray = [];
+        let checkDate;
+
+        $http.get(`/blocktypesbyuser/${currentUserId}`)
+        .then(blocksData=>{
+          let blocks = blocksData.data;
+          $http.get(`/timeblocksbyuser/${currentUserId}`)
+          .then(timeblocksData=>{
+            let timeblocks = timeblocksData.data;
+            for (let i = 0; i < weekArray.length; i++) {
+              appointmentsArray[i] = [];
+              checkDate = new Date(weekDates[i]);
+              appointmentsArray[i] = getAppointmentsForDay(timeblocks, checkDate);
+              if (appointmentsArray[i].length > 0) {
+                populateCalendarDisplay(weekArray[i], weekDates[i], appointmentsArray[i], blocks);
+              }
+            }
+          });
+        });
+      }
+
 
       function onInit() {
         console.log("Weekview is lit");
@@ -690,6 +784,7 @@
         setOccasionButtons();
         setBillsButtons();
         setTasksButtons();
+        readAppointmentBlocks();
       }
 
     }

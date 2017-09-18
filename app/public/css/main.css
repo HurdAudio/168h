@@ -683,6 +683,7 @@ a.btn:hover {
    padding: 0;
    padding-left: 0.8em;
    font-size: 18px;
+   font-weight: normal;
  }
 
  #focusPanel h3 {
