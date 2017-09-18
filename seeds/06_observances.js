@@ -8095,6 +8095,81 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 515,
+          user_id: 1,
+          name: 'David Rosenboom (composer), born 1947',
+          color: '#161711',
+          picture: './img/musicians/davidrosenboom.jpg',
+          day_of: new Date ('1947-09-09T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: true,
+          override_content: {
+            "sources": [ 'bandcamp', 'bandcamp' ],
+            "src_strings": [ 'https://bandcamp.com/EmbeddedPlayer/album=3143762263/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=1904975454/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/' ],
+            "href_strings": [ 'http://davidrosenboom.bandcamp.com/album/zones-of-influence', 'http://unseenworlds.bandcamp.com/album/daytime-viewing' ],
+            "a_strings": [ 'Zones of Influence by David Rosenboom', 'Daytime Viewing by Jacqueline Humbert &amp; David Rosenboom' ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 516,
+          user_id: 1,
+          name: 'Tris Speaker (centerfielder), born 1888',
+          color: '#787878',
+          picture: './img/baseball/trisspeaker.jpg',
+          day_of: new Date ('1888-04-04T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 517,
+          user_id: 1,
+          name: 'Virgil Trucks throws his first of 2 no-hitters in 1952 for the Detroit Tigers vs. Washington Senators',
+          color: '#888888',
+          picture: './img/baseball/virgiltrucksnono1.jpg',
+          day_of: new Date ('1952-05-15T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 518,
+          user_id: 1,
+          name: 'Virgil Trucks throws his second no-hitter of the 1952 season for the Detroit Tigers vs. New York Yankees',
+          color: '#404040',
+          picture: './img/baseball/virgiltrucksnono2.jpg',
+          day_of: new Date ('1952-08-25T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 519,
+          user_id: 1,
+          name: 'The world ended on this day in 1997, on the day marking the 6,000th year after creation, as per 17th Century archbishop James Ussher\'s most true prediction.',
+          color: '#180A0A',
+          picture: './img/doomsday/jamesbullshitussher.jpg',
+          day_of: new Date ('1997-10-23T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
