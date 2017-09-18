@@ -470,6 +470,19 @@
         });
       }
 
+      function tasksButtonSpeaker(element, tasks) {
+        element.addEventListener('click', (e)=>{
+          e.preventDefault();
+          e.stopPropagation();
+          for (let i = 0; i < tasks.length; i++) {
+            if (i > 0) {
+              spokenOutput('... and ');
+            }
+            spokenOutput(tasks[i].name + ' is due on this day.');
+          }
+        });
+      }
+
       function billButtonSpeaker(element, bills) {
         element.addEventListener('click', (e)=>{
           e.preventDefault();
@@ -497,6 +510,21 @@
             spokenOutput(occasionArray[i].name);
           }
         });
+      }
+
+      function getTheDaysTasks(tasks, dayOf) {
+        let checkDate = new Date(dayOf);
+        let tasker = [];
+        let taskDate;
+
+        for (let i = 0; i < tasks.length; i++) {
+          taskDate = new Date(tasks[i].due_date);
+          if((checkDate.getFullYear() === taskDate.getFullYear()) && (checkDate.getMonth() === taskDate.getMonth()) && (checkDate.getDate() === taskDate.getDate())) {
+            tasker.push(tasks[i]);
+          }
+        }
+
+        return(tasker);
       }
 
       function getBillsForDay(bills, dayOf) {
@@ -535,6 +563,29 @@
         }
 
         return(occasionArray);
+      }
+
+      function setTasksButtons() {
+        let tasksButtons = [ 'mondayTasksButton', 'tuesdayTasksButton', 'wednesdayTasksButton', 'thursdayTasksButton', 'fridayTasksButton', 'saturdayTasksButton', 'sundayTasksButton' ];
+        let weekDates = [ mondayDate, tuesdayDate, wednesdayDate, thursdayDate, fridayDate, saturdayDate, sundayDate ];
+        let checkDate;
+        let tasksArray = [];
+        let element;
+
+        $http.get(`/tasksbyuser/${currentUserId}`)
+        .then(tasksData=>{
+          let tasks = tasksData.data;
+          for (let i = 0; i < tasksButtons.length; i++) {
+            checkDate = new Date(weekDates[i]);
+            tasksArray = [];
+            tasksArray = getTheDaysTasks(tasks, checkDate);
+            if (tasksArray.length > 0) {
+              element = document.getElementById(tasksButtons[i]);
+              element.setAttribute("style", "visibility: visible;");
+              tasksButtonSpeaker(element, tasksArray);
+            }
+          }
+        });
       }
 
       function setBillsButtons() {
@@ -638,6 +689,7 @@
         setHolidayButtons();
         setOccasionButtons();
         setBillsButtons();
+        setTasksButtons();
       }
 
     }
