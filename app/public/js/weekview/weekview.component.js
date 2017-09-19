@@ -663,11 +663,31 @@
       function getAppointmentsForDay(blocks, dayOf) {
         let checkDate = new Date(dayOf);
         let arr = [];
+        let year = checkDate.getFullYear();
+        let month = checkDate.getMonth();
+        let day = checkDate.getDate();
 
         arr = blocks.filter((timeblock)=>{
           let apptime = new Date(timeblock.start_time);
           let apptEnd = new Date(timeblock.end_time);
-          return (((apptime.getFullYear() === checkDate.getFullYear()) && (apptime.getMonth() === checkDate.getMonth()) && (apptime.getDate() === checkDate.getDate())) || ((apptEnd.getFullYear() === checkDate.getFullYear()) && (apptEnd.getMonth() === checkDate.getMonth()) && (apptEnd.getDate() === checkDate.getDate())));
+          let startYear = apptime.getFullYear();
+          let startMonth = apptime.getMonth();
+          let startDate = apptime.getDate();
+          let endYear = apptEnd.getFullYear();
+          let endMonth = apptEnd.getMonth();
+          let endDate = apptEnd.getDate();
+
+          if (endDate !== startDate) {
+            startDate = endDate;
+            if (endMonth !== startMonth) {
+              startMonth = endMonth;
+            }
+            if (endYear !== startYear) {
+              startYear === endYear;
+            }
+          }
+
+          return ((year === startYear) && (month === startMonth) && (day === startDate));
         });
 
         return(arr);
@@ -711,17 +731,23 @@
               blockReference = blocks[j];
             }
           }
-          
+
+          if (dayOfWeek === 'friday') {
+            console.log(apptArray[i]);
+            console.log(endTime);
+            console.log(endTime.getHours() + 4);
+          }
+
           element = document.getElementById(dayOfWeek + hours[indexOfStart]);
           element.children[0].children[0].innerHTML = hoursTime[indexOfStart] + ' - ' + blockReference.type;
           element.children[0].appointment = apptArray[i].id;
-          element.children[0].setAttribute("style", "background-color: " + blockReference.color + "; opacity: 0.8; border-top: solid " + blockReference.color + " 6px;");
+          element.children[0].setAttribute("style", "background-color: " + blockReference.color + "; opacity: 0.8; border-top: solid " + blockReference.color + " 6px; border-bottom: solid " + blockReference.color + " 1px;");
 
           if (indexOfEnd > (indexOfStart + 1)) {
             for (let k = (indexOfStart + 1); k < indexOfEnd; k++) {
               element = document.getElementById(dayOfWeek + hours[k]);
               element.children[0].appointment = apptArray[i].id;
-              element.children[0].setAttribute("style", "background-color: " + blockReference.color + "; opacity: 0.8; border-top: solid " + blockReference.color + " 6px;");
+              element.children[0].setAttribute("style", "background-color: " + blockReference.color + "; opacity: 0.8; border-top: solid " + blockReference.color + " 6px; border-bottom: solid " + blockReference.color + " 1px;");
             }
           }
 
@@ -745,7 +771,7 @@
               checkDate = new Date(weekDates[i]);
               appointmentsArray[i] = getAppointmentsForDay(timeblocks, checkDate);
               if (appointmentsArray[i].length > 0) {
-                populateCalendarDisplay(weekArray[i], weekDates[i], appointmentsArray[i], blocks);
+                populateCalendarDisplay(weekArray[i], checkDate, appointmentsArray[i], blocks);
               }
             }
           });

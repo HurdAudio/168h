@@ -53,7 +53,7 @@ router.post('/loginstatus', (req, res, next)=>{
     if (!user) {
       return next();
     }
-    if (req.session.userId == req.body.user_id) {
+    if (req.session.userId === req.body.user_id) {
       console.log(req.session.userId);
       res.send(user);
     } else {
