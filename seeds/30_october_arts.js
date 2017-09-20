@@ -304,6 +304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 16,
+          user_id: 1,
+          theme: 'russian revolution',
+          img_path: './img/october/popup_ksssrpost_0024.jpg',
+          title: 'Pencils "Mospoligraf"',
+          artist: '?',
+          year: '1928',
+          rule: {
+            "monday": [ 8, 19, 30, 3 ],
+            "tuesday": [ 7, 18, 29, 2 ],
+            "wednesday": [ 6, 17, 28, 1 ],
+            "thursday": [ 5, 16, 27, 31 ],
+            "friday": [ 4, 15, 26, 30 ],
+            "saturday": [ 3, 14, 25, 29 ],
+            "sunday": [ 2, 13, 24, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 17,
+          user_id: 1,
+          theme: 'russian revolution',
+          img_path: './img/october/popup_ksssrpost_0023.jpg',
+          title: 'Movie poster "Communards\' Pipe"',
+          artist: 'A.Bielski',
+          year: '1929',
+          rule: {
+            "monday": [ 2, 13, 24, 28 ],
+            "tuesday": [ 8, 19, 30, 3 ],
+            "wednesday": [ 7, 18, 29, 2 ],
+            "thursday": [ 6, 17, 28, 1 ],
+            "friday": [ 5, 16, 27, 31 ],
+            "saturday": [ 4, 15, 26, 30 ],
+            "sunday": [ 3, 14, 25, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 18,
+          user_id: 1,
+          theme: 'russian revolution',
+          img_path: './img/october/popup_ksssrpost_0022.jpg',
+          title: 'Journey to Mars',
+          artist: 'N.Prusakov, G.Borisov',
+          year: '1926',
+          rule: {
+            "monday": [ 3, 14, 25, 29 ],
+            "tuesday": [ 2, 13, 24, 28 ],
+            "wednesday": [ 8, 19, 30, 3 ],
+            "thursday": [ 7, 18, 29, 2 ],
+            "friday": [ 6, 17, 28, 1 ],
+            "saturday": [ 5, 16, 27, 31 ],
+            "sunday": [ 4, 15, 26, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 19,
+          user_id: 1,
+          theme: 'russian revolution',
+          img_path: './img/october/popup_ksssrpost_0019.jpg',
+          title: 'Poster of the movie "1905 Bronenosits Potemkin"',
+          artist: 'A.Lavinskii',
+          year: '1928',
+          rule: {
+            "monday": [ 4, 15, 26, 30 ],
+            "tuesday": [ 3, 14, 25, 29 ],
+            "wednesday": [ 2, 13, 24, 28 ],
+            "thursday": [ 8, 19, 30, 3 ],
+            "friday": [ 7, 18, 29, 2 ],
+            "saturday": [ 6, 17, 28, 1 ],
+            "sunday": [ 5, 16, 27, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 20,
+          user_id: 1,
+          theme: 'russian revolution',
+          img_path: './img/october/popup_ksssrpost_0018.jpg',
+          title: 'Touring the poster of the Moscow Chamber Theatre (French language)',
+          artist: 'V.Stenberg,G.Stenberg',
+          year: '1923',
+          rule: {
+            "monday": [ 5, 16, 27, 31 ],
+            "tuesday": [ 4, 15, 26, 30 ],
+            "wednesday": [ 3, 14, 25, 29 ],
+            "thursday": [ 2, 13, 24, 28 ],
+            "friday": [ 8, 19, 30, 3 ],
+            "saturday": [ 7, 18, 29, 2 ],
+            "sunday": [ 6, 17, 28, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
