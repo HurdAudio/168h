@@ -976,6 +976,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 55,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=186878699/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://intaktrec.bandcamp.com/album/sequel-for-lester-bowie',
+          a_string: 'Sequel (For Lester Bowie) by George Lewis',
+          rule: {
+            "monday": [ 11, 15, 17, 21 ],
+            "tuesday": [ 13, 17, 19, 21 ],
+            "wednesday": [ 25, 19, 21, 27 ],
+            "thursday": [ 8, 22, 3, 27 ],
+            "saturday": [ 9, 13, 15, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 56,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2809226534/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ghostnoterecords.bandcamp.com/album/def-trance-beat-modalities-of-rhythm',
+          a_string: 'Def Trance Beat (Modalities of Rhythm) by Steve Coleman &amp; Five Elements',
+          rule: {
+            "monday": [ 10, 14, 16, 20 ],
+            "tuesday": [ 12, 16, 18, 22 ],
+            "wednesday": [ 14, 18, 20, 22 ],
+            "thursday": [ 26, 20, 22, 28 ],
+            "saturday": [ 9, 23, 4, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 57,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'http://bandcamp.com/EmbeddedPlayer/album=3134492544/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bandcamp.for-tune.pl/album/quartet-warsaw-2012',
+          a_string: 'Quartet (Warsaw) 2012 by Anthony Braxton',
+          rule: {
+            "monday": [ 9, 23, 4, 28 ],
+            "tuesday": [ 10, 14, 16, 20 ],
+            "wednesday": [ 12, 16, 18, 22 ],
+            "thursday": [ 14, 18, 20, 22 ],
+            "saturday": [ 26, 20, 22, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
