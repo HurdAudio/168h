@@ -704,6 +704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 36,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/proue-de-naivre-et-papillons-1925.jpg',
+          title: 'Proue de naivre et papillons',
+          artist: 'Pierre Roy',
+          year: '1925',
+          rule: {
+            "monday": [ 8, 11, 20, 5 ],
+            "tuesday": [ 7, 11, 19, 4 ],
+            "wednesday": [ 6, 10, 18, 3 ],
+            "thursday": [ 5, 9, 17, 2 ],
+            "friday": [ 4, 7, 16, 1 ],
+            "saturday": [ 3, 7, 15, 31 ],
+            "sunday": [ 9, 13, 21, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 37,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/die-k-nigin-von-saba-1918.jpg',
+          title: 'Die Königin von Saba',
+          artist: 'Arthur Segal',
+          year: '1918',
+          rule: {
+            "monday": [ 9, 13, 21, 6 ],
+            "tuesday": [ 8, 11, 20, 5 ],
+            "wednesday": [ 7, 11, 19, 4 ],
+            "thursday": [ 6, 10, 18, 3 ],
+            "friday": [ 5, 9, 17, 2 ],
+            "saturday": [ 4, 7, 16, 1 ],
+            "sunday": [ 3, 7, 15, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 38,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/fishing-boats-at-collioure.jpg',
+          title: 'Fishing boats at Collioure',
+          artist: 'Henri Martin',
+          year: '?',
+          rule: {
+            "monday": [ 3, 7, 15, 31 ],
+            "tuesday": [ 9, 13, 21, 6 ],
+            "wednesday": [ 8, 11, 20, 5 ],
+            "thursday": [ 7, 11, 19, 4 ],
+            "friday": [ 6, 10, 18, 3 ],
+            "saturday": [ 5, 9, 17, 2 ],
+            "sunday": [ 4, 7, 16, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 39,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/mih-ly-k-rolyi-1930.jpg',
+          title: 'Mihály Károlyi',
+          artist: 'Bertalan Por',
+          year: '1930',
+          rule: {
+            "monday": [ 4, 7, 16, 1 ],
+            "tuesday": [ 3, 7, 15, 31 ],
+            "wednesday": [ 9, 13, 21, 6 ],
+            "thursday": [ 8, 11, 20, 5 ],
+            "friday": [ 7, 11, 19, 4 ],
+            "saturday": [ 6, 10, 18, 3 ],
+            "sunday": [ 5, 9, 17, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 40,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/the-accordion-player-1919.jpg',
+          title: 'The Accordion Player',
+          artist: 'Gino Severini',
+          year: '1919',
+          rule: {
+            "monday": [ 5, 9, 17, 2 ],
+            "tuesday": [ 4, 7, 16, 1 ],
+            "wednesday": [ 3, 7, 15, 31 ],
+            "thursday": [ 9, 13, 21, 6 ],
+            "friday": [ 8, 11, 20, 5 ],
+            "saturday": [ 7, 11, 19, 4 ],
+            "sunday": [ 6, 10, 18, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
