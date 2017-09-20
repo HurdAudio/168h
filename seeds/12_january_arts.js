@@ -2104,6 +2104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 106,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/inganno-di-afrodite-1979.jpg',
+          title: 'Inganno di Afrodite',
+          artist: 'Alberto Biasi',
+          year: '1979',
+          rule: {
+            "monday": [ 21, 22, 14, 17 ],
+            "tuesday": [ 24, 25, 16, 20 ],
+            "wednesday": [ 27, 29, 30, 1 ],
+            "thursday": [ 29, 31, 4, 7 ],
+            "friday": [ 31, 2, 3, 6 ],
+            "saturday": [ 16, 17, 28, 20 ],
+            "sunday": [ 19, 21, 23, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 107,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/five-o-clock-tea-1917.jpg',
+          title: 'Five o\'clock tea',
+          artist: 'Julius Evola',
+          year: '1917',
+          rule: {
+            "monday": [ 19, 21, 23, 2 ],
+            "tuesday": [ 21, 22, 14, 17 ],
+            "wednesday": [ 24, 25, 16, 20 ],
+            "thursday": [ 27, 29, 30, 1 ],
+            "friday": [ 29, 31, 4, 7 ],
+            "saturday": [ 31, 2, 3, 6 ],
+            "sunday": [ 16, 17, 28, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 108,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/new-york-city-i-1942.jpg',
+          title: 'New York City I',
+          artist: 'Piet Mondrian',
+          year: '1942',
+          rule: {
+            "monday": [ 16, 17, 28, 20 ],
+            "tuesday": [ 19, 21, 23, 2 ],
+            "wednesday": [ 21, 22, 14, 17 ],
+            "thursday": [ 24, 25, 16, 20 ],
+            "friday": [ 27, 29, 30, 1 ],
+            "saturday": [ 29, 31, 4, 7 ],
+            "sunday": [ 31, 2, 3, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 109,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/untitled-1945a.jpg',
+          title: 'Untitled',
+          artist: 'Lidy Prati',
+          year: '1945',
+          rule: {
+            "monday": [ 31, 2, 3, 6 ],
+            "tuesday": [ 16, 17, 28, 20 ],
+            "wednesday": [ 19, 21, 23, 2 ],
+            "thursday": [ 21, 22, 14, 17 ],
+            "friday": [ 24, 25, 16, 20 ],
+            "saturday": [ 27, 29, 30, 1 ],
+            "sunday": [ 29, 31, 4, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 110,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/pintura-mad-1948.jpg',
+          title: 'Pintura Madí',
+          artist: 'Gyula Kosice',
+          year: '1948',
+          rule: {
+            "monday": [ 29, 31, 4, 7 ],
+            "tuesday": [ 31, 2, 3, 6 ],
+            "wednesday": [ 16, 17, 28, 20 ],
+            "thursday": [ 19, 21, 23, 2 ],
+            "friday": [ 21, 22, 14, 17 ],
+            "saturday": [ 24, 25, 16, 20 ],
+            "sunday": [ 27, 29, 30, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
