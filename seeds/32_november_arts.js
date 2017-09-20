@@ -124,6 +124,86 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 7,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/bivest-1-1965.jpg',
+          title: 'Bivest + 1',
+          artist: 'Gianni Piacentino',
+          year: '1965',
+          rule: {
+            "monday": [ 7, 12, 18, 23 ],
+            "tuesday": [ 6, 11, 17, 22 ],
+            "wednesday": [ 5, 10, 16, 21 ],
+            "thursday": [ 4, 9, 15, 20 ],
+            "friday": [ 3, 8, 14, 21 ],
+            "saturday": [ 9, 14, 20, 25 ],
+            "sunday": [ 8, 13, 19, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 8,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/untitled-no-5-1974.jpg',
+          title: 'Untitled No. 5',
+          artist: 'Michael Heizer',
+          year: '1974',
+          rule: {
+            "monday": [ 8, 13, 19, 24 ],
+            "tuesday": [ 7, 12, 18, 23 ],
+            "wednesday": [ 6, 11, 17, 22 ],
+            "thursday": [ 5, 10, 16, 21 ],
+            "friday": [ 4, 9, 15, 20 ],
+            "saturday": [ 3, 8, 14, 21 ],
+            "sunday": [ 9, 14, 20, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 9,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/untitled-2001.jpg',
+          title: 'Untitled',
+          artist: 'Olivier Mosset',
+          year: '2001',
+          rule: {
+            "monday": [ 9, 14, 20, 25 ],
+            "tuesday": [ 8, 13, 19, 24 ],
+            "wednesday": [ 7, 12, 18, 23 ],
+            "thursday": [ 6, 11, 17, 22 ],
+            "friday": [ 5, 10, 16, 21 ],
+            "saturday": [ 4, 9, 15, 20 ],
+            "sunday": [ 3, 8, 14, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 10,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/deep-rhythm-of-lights-1975.jpg',
+          title: 'Deep Rhythm of Lights',
+          artist: 'Kishio Suga',
+          year: '1975',
+          rule: {
+            "monday": [ 3, 8, 14, 21 ],
+            "tuesday": [ 9, 14, 20, 25 ],
+            "wednesday": [ 8, 13, 19, 24 ],
+            "thursday": [ 7, 12, 18, 23 ],
+            "friday": [ 6, 11, 17, 22 ],
+            "saturday": [ 5, 10, 16, 21 ],
+            "sunday": [ 4, 9, 15, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
