@@ -760,6 +760,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 43,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=514392964/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://natewooley.bandcamp.com/album/argonautica',
+          a_string: 'Argonautica by Nate Wooley',
+          rule: {
+            "monday": [ 6, 14, 26, 1 ],
+            "tuesday": [ 10, 18, 30, 5 ],
+            "wednesday": [ 9, 17, 29, 4 ],
+            "thursday": [ 8, 16, 28, 3 ],
+            "saturday": [ 7, 15, 27, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 44,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2827536636/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://peterevansmusic.bandcamp.com/album/genesis',
+          a_string: 'Genesis by Peter Evans Quintet',
+          rule: {
+            "monday": [ 7, 15, 27, 2 ],
+            "tuesday": [ 6, 14, 26, 1 ],
+            "wednesday": [ 10, 18, 30, 5 ],
+            "thursday": [ 9, 17, 29, 4 ],
+            "saturday": [ 8, 16, 28, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 45,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1107896037/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://rossmchenry.bandcamp.com/album/child-of-somebody',
+          a_string: 'Child Of Somebody by Ross McHenry',
+          rule: {
+            "monday": [ 8, 16, 28, 3 ],
+            "tuesday": [ 7, 15, 27, 2 ],
+            "wednesday": [ 6, 14, 26, 1 ],
+            "thursday": [ 10, 18, 30, 5 ],
+            "saturday": [ 9, 17, 29, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
