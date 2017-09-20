@@ -1504,6 +1504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 76,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/phillies_image.jpg',
+          title: 'Citizens Bank Park',
+          artist: 'Britt Miller',
+          year: '2011',
+          rule: {
+            "monday": [ 9, 13, 28, 26 ],
+            "tuesday": [ 8, 13, 18, 25 ],
+            "wednesday": [ 7, 12, 18, 24 ],
+            "thursday": [ 6, 11, 17, 23 ],
+            "friday": [ 11, 17, 22, 29 ],
+            "saturday": [ 25, 15, 22, 28 ],
+            "sunday": [ 10, 15, 21, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 77,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/Double-Play-at-Citizens-Bank-Park_0.jpg',
+          title: 'Double Play at Citizens Bank Park',
+          artist: 'Max Mason',
+          year: '2010',
+          rule: {
+            "monday": [ 11, 16, 22, 28 ],
+            "tuesday": [ 10, 14, 29, 27 ],
+            "wednesday": [ 9, 14, 19, 26 ],
+            "thursday": [ 8, 13, 19, 25 ],
+            "friday": [ 7, 12, 18, 24 ],
+            "saturday": [ 12, 18, 23, 30 ],
+            "sunday": [ 26, 16, 23, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 78,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/701064b6085b0ee9d52cc7b1a2cbc05d.jpg',
+          title: 'Mike Schmidt',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 26, 16, 23, 29 ],
+            "tuesday": [ 11, 16, 22, 28 ],
+            "wednesday": [ 10, 14, 29, 27 ],
+            "thursday": [ 9, 14, 19, 26 ],
+            "friday": [ 8, 13, 19, 25 ],
+            "saturday": [ 7, 12, 18, 24 ],
+            "sunday": [ 12, 18, 23, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 79,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/362f7aa3a6786fc85d6732c4adbee128.jpg',
+          title: 'Phillies Vintage Player Art',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 12, 18, 23, 30 ],
+            "tuesday": [ 26, 16, 23, 29 ],
+            "wednesday": [ 11, 16, 22, 28 ],
+            "thursday": [ 10, 14, 29, 27 ],
+            "friday": [ 9, 14, 19, 26 ],
+            "saturday": [ 8, 13, 19, 25 ],
+            "sunday": [ 7, 12, 18, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 80,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/1f89453b-01ac-4334-b701-fa4bf3e459bd_lg.jpeg',
+          title: '1945 Jimmie Foxx Philadelphia Phillies',
+          artist: 'WM. C Green',
+          year: '1945',
+          rule: {
+            "monday": [ 7, 12, 18, 24 ],
+            "tuesday": [ 12, 18, 23, 30 ],
+            "wednesday": [ 26, 16, 23, 29 ],
+            "thursday": [ 11, 16, 22, 28 ],
+            "friday": [ 10, 14, 29, 27 ],
+            "saturday": [ 9, 14, 19, 26 ],
+            "sunday": [ 8, 13, 19, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
