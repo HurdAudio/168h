@@ -868,6 +868,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 49,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=787965443/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://parishurley.bandcamp.com/album/the-sketch-series-1',
+          a_string: 'THE SKETCH SERIES__1 by Paris Hurley',
+          rule: {
+            "monday": [ 9, 15, 21, 29 ],
+            "tuesday": [ 8, 14, 20, 28 ],
+            "wednesday": [ 12, 18, 24, 1 ],
+            "thursday": [ 11, 17, 23, 31 ],
+            "saturday": [ 10, 16, 22, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 50,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2252879736/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://amydenio.bandcamp.com/album/tiptons-sax-quartet-cookbook',
+          a_string: 'Tiptons Sax Quartet: COOKBOOK by Amy Denio / Spoot Music',
+          rule: {
+            "monday": [ 10, 16, 22, 31 ],
+            "tuesday": [ 9, 15, 21, 29 ],
+            "wednesday": [ 8, 14, 20, 28 ],
+            "thursday": [ 12, 18, 24, 1 ],
+            "saturday": [ 11, 17, 23, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 51,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2034543457/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://triodakali-kronosquartet.bandcamp.com/album/ladilikan',
+          a_string: 'Ladilikan by Trio Da Kali and Kronos Quartet',
+          rule: {
+            "monday": [ 11, 17, 23, 31 ],
+            "tuesday": [ 10, 16, 22, 31 ],
+            "wednesday": [ 9, 15, 21, 29 ],
+            "thursday": [ 8, 14, 20, 28 ],
+            "saturday": [ 12, 18, 24, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
