@@ -1904,6 +1904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 96,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/joseph-delaney.png',
+          title: 'Woman in Striped Dress',
+          artist: 'Joseph Delaney',
+          year: '1964',
+          rule: {
+            "monday": [ 22, 3, 9, 17 ],
+            "tuesday": [ 24, 3, 11, 21 ],
+            "wednesday": [ 26, 5, 1, 20 ],
+            "thursday": [ 14, 22, 1, 9 ],
+            "friday": [ 16, 24, 3, 11 ],
+            "saturday": [ 21, 26, 3, 13 ],
+            "sunday": [ 20, 28, 7, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 97,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/ExhibitImgs-RomancingTheEye2.jpg',
+          title: 'Adam and Eve',
+          artist: 'Louis Delsarte',
+          year: '?',
+          rule: {
+            "monday": [ 20, 28, 7, 15 ],
+            "tuesday": [ 22, 3, 9, 17 ],
+            "wednesday": [ 24, 3, 11, 21 ],
+            "thursday": [ 26, 5, 1, 20 ],
+            "friday": [ 14, 22, 1, 9 ],
+            "saturday": [ 16, 24, 3, 11 ],
+            "sunday": [ 21, 26, 3, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 98,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Dont-Matter-How-Raggly-The-Flag-It-Still-Got-To-Tie-Us-Together.jpg',
+          title: 'Don’t Matter How Raggly The Flag, It Still Got To Tie Us Together',
+          artist: 'Thornton Dial',
+          year: '2003',
+          rule: {
+            "monday": [ 21, 26, 3, 13 ],
+            "tuesday": [ 20, 28, 7, 15 ],
+            "wednesday": [ 22, 3, 9, 17 ],
+            "thursday": [ 24, 3, 11, 21 ],
+            "friday": [ 26, 5, 1, 20 ],
+            "saturday": [ 14, 22, 1, 9 ],
+            "sunday": [ 16, 24, 3, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 99,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/788355-6.jpg',
+          title: 'Sharecroppers',
+          artist: 'Terry Dixon',
+          year: '?',
+          rule: {
+            "monday": [ 16, 24, 3, 11 ],
+            "tuesday": [ 21, 26, 3, 13 ],
+            "wednesday": [ 20, 28, 7, 15 ],
+            "thursday": [ 22, 3, 9, 17 ],
+            "friday": [ 24, 3, 11, 21 ],
+            "saturday": [ 26, 5, 1, 20 ],
+            "sunday": [ 14, 22, 1, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 100,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/AfriCOBRA.jpg',
+          title: 'Majority',
+          artist: 'Jeff Donaldson',
+          year: '1977',
+          rule: {
+            "monday": [ 14, 22, 1, 9 ],
+            "tuesday": [ 16, 24, 3, 11 ],
+            "wednesday": [ 21, 26, 3, 13 ],
+            "thursday": [ 20, 28, 7, 15 ],
+            "friday": [ 22, 3, 9, 17 ],
+            "saturday": [ 24, 3, 11, 21 ],
+            "sunday": [ 26, 5, 1, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
