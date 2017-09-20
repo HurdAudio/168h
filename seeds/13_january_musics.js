@@ -1084,6 +1084,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 61,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3489930462/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tobytwining.bandcamp.com/album/chrysalid-requiem-2',
+          a_string: 'Chrysalid Requiem by Toby Twining',
+          rule: {
+            "monday": [ 23, 17, 19, 24 ],
+            "tuesday": [ 19, 13, 15, 3 ],
+            "wednesday": [ 15, 22, 24, 23 ],
+            "thursday": [ 13, 17, 19, 23 ],
+            "saturday": [ 15, 22, 24, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 62,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4022937516/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tedhearne.bandcamp.com/album/sound-from-the-bench-2',
+          a_string: 'Sound from the Bench by Ted Hearne &amp; The Crossing',
+          rule: {
+            "monday": [ 15, 22, 24, 23 ],
+            "tuesday": [ 23, 17, 19, 24 ],
+            "wednesday": [ 19, 13, 15, 3 ],
+            "thursday": [ 15, 22, 24, 23 ],
+            "saturday": [ 13, 17, 19, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 63,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=988142525/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cantaloupemusic.bandcamp.com/album/threads',
+          a_string: 'Threads by So Percussion &amp; Paul Lansky',
+          rule: {
+            "monday": [ 14, 18, 20, 24 ],
+            "tuesday": [ 16, 23, 25, 24 ],
+            "wednesday": [ 24, 18, 20, 25 ],
+            "thursday": [ 20, 14, 16, 4 ],
+            "saturday": [ 16, 23, 25, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
