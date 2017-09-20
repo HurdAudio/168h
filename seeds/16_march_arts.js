@@ -1704,6 +1704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 86,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/venetian-woman-attributed-1.jpg',
+          title: 'Venetian Woman (attributed)',
+          artist: 'Marietta Robusti',
+          year: '?',
+          rule: {
+            "monday": [ 12, 21, 30, 8 ],
+            "tuesday": [ 11, 21, 31, 8 ],
+            "wednesday": [ 10, 20, 28, 7 ],
+            "thursday": [ 9, 19, 27, 6 ],
+            "friday": [ 8, 18, 26, 5 ],
+            "saturday": [ 7, 17, 25, 4 ],
+            "sunday": [ 6, 16, 25, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 87,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/young-woman.jpg',
+          title: 'Young Woman',
+          artist: 'Berthe Morisot',
+          year: '1871',
+          rule: {
+            "monday": [ 6, 16, 25, 3 ],
+            "tuesday": [ 12, 21, 30, 8 ],
+            "wednesday": [ 11, 21, 31, 8 ],
+            "thursday": [ 10, 20, 28, 7 ],
+            "friday": [ 9, 19, 27, 6 ],
+            "saturday": [ 8, 18, 26, 5 ],
+            "sunday": [ 7, 17, 25, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 88,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/blumenstilleben-1954.jpg',
+          title: 'Blumenstilleben',
+          artist: 'Helen Dahm',
+          year: '1954',
+          rule: {
+            "monday": [ 7, 17, 25, 4 ],
+            "tuesday": [ 6, 16, 25, 3 ],
+            "wednesday": [ 12, 21, 30, 8 ],
+            "thursday": [ 11, 21, 31, 8 ],
+            "friday": [ 10, 20, 28, 7 ],
+            "saturday": [ 9, 19, 27, 6 ],
+            "sunday": [ 8, 18, 26, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 89,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/accordment-series-15-on-its-way-1977.jpg',
+          title: 'Accordment Series #15: On Its Way',
+          artist: 'Perle Fine',
+          year: '1977',
+          rule: {
+            "monday": [ 8, 18, 26, 5 ],
+            "tuesday": [ 7, 17, 25, 4 ],
+            "wednesday": [ 6, 16, 25, 3 ],
+            "thursday": [ 12, 21, 30, 8 ],
+            "friday": [ 11, 21, 31, 8 ],
+            "saturday": [ 10, 20, 28, 7 ],
+            "sunday": [ 9, 19, 27, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 90,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/the-model-1925.jpg',
+          title: 'The Model',
+          artist: 'Tamara de Lempicka',
+          year: '1925',
+          rule: {
+            "monday": [ 9, 19, 27, 6 ],
+            "tuesday": [ 8, 18, 26, 5 ],
+            "wednesday": [ 7, 17, 25, 4 ],
+            "thursday": [ 6, 16, 25, 3 ],
+            "friday": [ 12, 21, 30, 8 ],
+            "saturday": [ 11, 21, 31, 8 ],
+            "sunday": [ 10, 20, 28, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
