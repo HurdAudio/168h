@@ -1104,6 +1104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 56,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/circus-budapest-19-may-1920-1920.jpg',
+          title: 'Circus, Budapest, 19 May 1920',
+          artist: 'Andre Kertesz',
+          year: '1920',
+          rule: {
+            "monday": [ 7, 17, 27, 5 ],
+            "tuesday": [ 6, 16, 26, 4 ],
+            "wednesday": [ 5, 15, 25, 3 ],
+            "thursday": [ 4, 14, 24, 2 ],
+            "friday": [ 3, 13, 23, 1 ],
+            "saturday": [ 9, 19, 29, 6 ],
+            "sunday": [ 8, 18, 28, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 57,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/chief-flying-hawk-1898.jpg',
+          title: 'Chief Flying Hawk',
+          artist: 'Gertrude Kasebier',
+          year: '1898',
+          rule: {
+            "monday": [ 8, 18, 28, 6 ],
+            "tuesday": [ 7, 17, 27, 5 ],
+            "wednesday": [ 6, 16, 26, 4 ],
+            "thursday": [ 5, 15, 25, 3 ],
+            "friday": [ 4, 14, 24, 2 ],
+            "saturday": [ 3, 13, 23, 1 ],
+            "sunday": [ 9, 19, 29, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 58,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/gipsy-camp-1910.jpg',
+          title: 'Gipsy Camp',
+          artist: 'David Kakabadze',
+          year: '1910',
+          rule: {
+            "monday": [ 9, 19, 29, 6 ],
+            "tuesday": [ 8, 18, 28, 6 ],
+            "wednesday": [ 7, 17, 27, 5 ],
+            "thursday": [ 6, 16, 26, 4 ],
+            "friday": [ 5, 15, 25, 3 ],
+            "saturday": [ 4, 14, 24, 2 ],
+            "sunday": [ 3, 13, 23, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 59,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/girl-t-1996.jpg',
+          title: 'Girl-T',
+          artist: 'Leiko Ikemura',
+          year: '1996',
+          rule: {
+            "monday": [ 3, 13, 23, 1 ],
+            "tuesday": [ 9, 19, 29, 6 ],
+            "wednesday": [ 8, 18, 28, 6 ],
+            "thursday": [ 7, 17, 27, 5 ],
+            "friday": [ 6, 16, 26, 4 ],
+            "saturday": [ 5, 15, 25, 3 ],
+            "sunday": [ 4, 14, 24, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 60,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/duration-piece-4-bradford-massachusetts-1968.jpg',
+          title: 'Duration Piece #4 Bradford Massachusetts',
+          artist: 'Douglas Huebler',
+          year: '1968',
+          rule: {
+            "monday": [ 4, 14, 24, 2 ],
+            "tuesday": [ 3, 13, 23, 1 ],
+            "wednesday": [ 9, 19, 29, 6 ],
+            "thursday": [ 8, 18, 28, 6 ],
+            "friday": [ 7, 17, 27, 5 ],
+            "saturday": [ 6, 16, 26, 4 ],
+            "sunday": [ 5, 15, 25, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
