@@ -652,6 +652,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 37,
+          user_id: 1,
+          theme: 'avant garde/new music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=331011142/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sentieriselvaggi.bandcamp.com/album/ac-dc',
+          a_string: 'AC/DC by Sentieri Selvaggi',
+          rule: {
+            "monday": [ 10, 16, 23, 5 ],
+            "tuesday": [ 9, 15, 22, 4 ],
+            "wednesday": [ 8, 14, 21, 3 ],
+            "thursday": [ 7, 13, 20, 2 ],
+            "saturday": [ 6, 12, 19, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 38,
+          user_id: 1,
+          theme: 'avant garde/new music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1072730020/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://homenormal.bandcamp.com/album/dietro-a-un-vetro',
+          a_string: 'Dietro a un vetro by Giulio Fagiolini',
+          rule: {
+            "monday": [ 6, 12, 19, 1 ],
+            "tuesday": [ 10, 16, 23, 5 ],
+            "wednesday": [ 9, 15, 22, 4 ],
+            "thursday": [ 8, 14, 21, 3 ],
+            "saturday": [ 7, 13, 20, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 39,
+          user_id: 1,
+          theme: 'avant garde/new music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1876175985/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://zeitkratzer.bandcamp.com/album/serbian-war-songs',
+          a_string: 'Serbian War Songs by zeitkratzer / SVETLANA SPAJIC / DRAGANA TOMIĆ  / OBRAD MILIC',
+          rule: {
+            "monday": [ 7, 13, 20, 2 ],
+            "tuesday": [ 6, 12, 19, 1 ],
+            "wednesday": [ 10, 16, 23, 5 ],
+            "thursday": [ 9, 15, 22, 4 ],
+            "saturday": [ 8, 14, 21, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
