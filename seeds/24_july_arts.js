@@ -900,7 +900,107 @@ exports.seed = function(knex, Promise) {
             "thursday": [ 7, 17, 29, 9 ],
             "friday": [ 6, 17, 28, 8 ],
             "saturday": [ 5, 16, 27, 7 ],
-            "sunday": [ 4, 15, 26, 6 ]
+            "sunday": [  ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 46,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/les-voiles-1984.jpg',
+          title: 'Les Voiles',
+          artist: 'Carlos Nadal',
+          year: '1984',
+          rule: {
+            "monday": [ 4, 15, 26, 6 ],
+            "tuesday": [ 3, 14, 25, 5 ],
+            "wednesday": [ 9, 20, 31, 11 ],
+            "thursday": [ 8, 19, 30, 10 ],
+            "friday": [ 7, 17, 29, 9 ],
+            "saturday": [ 6, 17, 28, 8 ],
+            "sunday": [ 5, 16, 27, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 47,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/defil-des-soldats-de-plomb-1970.jpg',
+          title: 'Defilé des Soldats de Plomb',
+          artist: 'Natalia Dumitresco',
+          year: '1970',
+          rule: {
+            "monday": [ 5, 16, 27, 7 ],
+            "tuesday": [ 4, 15, 26, 6 ],
+            "wednesday": [ 3, 14, 25, 5 ],
+            "thursday": [ 9, 20, 31, 11 ],
+            "friday": [ 8, 19, 30, 10 ],
+            "saturday": [ 7, 17, 29, 9 ],
+            "sunday": [ 6, 17, 28, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 48,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/personnages-1964.jpg',
+          title: 'Personnages',
+          artist: 'Aurel Cojan',
+          year: '1964',
+          rule: {
+            "monday": [ 6, 17, 28, 8 ],
+            "tuesday": [ 5, 16, 27, 7 ],
+            "wednesday": [ 4, 15, 26, 6 ],
+            "thursday": [ 3, 14, 25, 5 ],
+            "friday": [ 9, 20, 31, 11 ],
+            "saturday": [ 8, 19, 30, 10 ],
+            "sunday": [ 7, 17, 29, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 49,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/untitled-3.jpg',
+          title: 'Untitled',
+          artist: 'Wols',
+          year: '?',
+          rule: {
+            "monday": [ 8, 18, 30, 10 ],
+            "tuesday": [ 7, 18, 29, 9 ],
+            "wednesday": [ 6, 17, 28, 8 ],
+            "thursday": [ 5, 16, 27, 7 ],
+            "friday": [ 4, 15, 26, 6 ],
+            "saturday": [ 10, 21, 1, 12 ],
+            "sunday": [ 9, 20, 31, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 50,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/fen-tre-toil-e-1962.jpg',
+          title: 'Fenêtre étoilée',
+          artist: 'Adrien Dax',
+          year: '1962',
+          rule: {
+            "monday": [ 9, 20, 31, 11 ],
+            "tuesday": [ 8, 18, 30, 10 ],
+            "wednesday": [ 7, 18, 29, 9 ],
+            "thursday": [ 6, 17, 28, 8 ],
+            "friday": [ 5, 16, 27, 7 ],
+            "saturday": [ 4, 15, 26, 6 ],
+            "sunday": [ 10, 21, 1, 12 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
