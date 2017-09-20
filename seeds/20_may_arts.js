@@ -1300,7 +1300,107 @@ exports.seed = function(knex, Promise) {
             "thursday": [ 4, 14, 24, 3 ],
             "friday": [ 2, 12, 22, 1 ],
             "saturday": [ 31, 10, 20, 30 ],
-            "sunday": [ 29, 8, 18, 28 ]
+            "sunday": [  ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 66,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/construction-workers-ouvriers-du-ba-timent.jpg',
+          title: 'Construction workers',
+          artist: 'Theophile Steinlen',
+          year: 'XIX-XX cent.',
+          rule: {
+            "monday": [ 29, 8, 18, 28 ],
+            "tuesday": [ 10, 20, 30, 9 ],
+            "wednesday": [ 8, 18, 28, 7 ],
+            "thursday": [ 6, 16, 26, 5 ],
+            "friday": [ 4, 14, 24, 3 ],
+            "saturday": [ 2, 12, 22, 1 ],
+            "sunday": [ 31, 10, 20, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 67,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/tavern-in-st-cloud-1890.jpg',
+          title: 'Edvard Munch',
+          artist: '1890',
+          year: '',
+          rule: {
+            "monday": [ 31, 10, 20, 30 ],
+            "tuesday": [ 29, 8, 18, 28 ],
+            "wednesday": [ 10, 20, 30, 9 ],
+            "thursday": [ 8, 18, 28, 7 ],
+            "friday": [ 6, 16, 26, 5 ],
+            "saturday": [ 4, 14, 24, 3 ],
+            "sunday": [ 2, 12, 22, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 68,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/the-fisherman-1902.jpg',
+          title: 'The Fisherman',
+          artist: 'Edvard Munch',
+          year: '1902',
+          rule: {
+            "monday": [ 2, 12, 22, 1 ],
+            "tuesday": [ 31, 10, 20, 30 ],
+            "wednesday": [ 29, 8, 18, 28 ],
+            "thursday": [ 10, 20, 30, 9 ],
+            "friday": [ 8, 18, 28, 7 ],
+            "saturday": [ 6, 16, 26, 5 ],
+            "sunday": [ 4, 14, 24, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 69,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/the-haymaker-1916.jpg',
+          title: 'The Haymaker',
+          artist: 'Edvard Munch',
+          year: '1916',
+          rule: {
+            "monday": [ 4, 14, 24, 3 ],
+            "tuesday": [ 2, 12, 22, 1 ],
+            "wednesday": [ 31, 10, 20, 30 ],
+            "thursday": [ 29, 8, 18, 28 ],
+            "friday": [ 10, 20, 30, 9 ],
+            "saturday": [ 8, 18, 28, 7 ],
+            "sunday": [ 6, 16, 26, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 70,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/the-mechanic-1920.jpg',
+          title: 'The Mechanic',
+          artist: 'Fernand Leger',
+          year: '1920',
+          rule: {
+            "monday": [ 7, 17, 27, 6 ],
+            "tuesday": [ 5, 15, 25, 4 ],
+            "wednesday": [ 3, 13, 23, 2 ],
+            "thursday": [ 1, 11, 21, 31 ],
+            "friday": [ 30, 9, 19, 29 ],
+            "saturday": [ 11, 21, 31, 10 ],
+            "sunday": [ 9, 19, 29, 8 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
