@@ -328,6 +328,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 19,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2286701044/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://wolf-eyes.bandcamp.com/album/wolf-eyes-burning-log-session-july-20th-2016',
+          a_string: 'Wolf Eyes Burning Log session July 20th 2016 by Wolf Eyes',
+          rule: {
+            "monday": [ 7, 15, 31, 30 ],
+            "tuesday": [ 6, 14, 30, 29 ],
+            "wednesday": [ 10, 18, 3, 4 ],
+            "thursday": [ 9, 17, 2, 1 ],
+            "saturday": [ 8, 16, 1, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 20,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=783684778/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://kevindrumm.bandcamp.com/album/artificial-organ',
+          a_string: 'Artificial Organ by Kevin Drumm',
+          rule: {
+            "monday": [ 8, 16, 1, 31 ],
+            "tuesday": [ 7, 15, 31, 30 ],
+            "wednesday": [ 6, 14, 30, 29 ],
+            "thursday": [ 10, 18, 3, 4 ],
+            "saturday": [ 9, 17, 2, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 21,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=72989750/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://glisteningexamples.bandcamp.com/album/dissolution',
+          a_string: 'Dissolution by Olivia Block',
+          rule: {
+            "monday": [ 10, 18, 3, 4 ],
+            "tuesday": [ 7, 15, 31, 30 ],
+            "wednesday": [ 8, 16, 1, 31 ],
+            "thursday": [ 7, 15, 31, 30 ],
+            "saturday": [ 11, 19, 4, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
