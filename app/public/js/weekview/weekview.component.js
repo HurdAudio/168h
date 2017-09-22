@@ -778,6 +778,437 @@
         });
       }
 
+      function updateToplineCRUD (timeblock, element) {
+        let daysOfWeek = [ 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        let monthsOfYear = [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ];
+        let startTime = new Date(timeblock.start_time);
+        let endTime = new Date(timeblock.end_time);
+        let checkDate;
+        let dateString = '';
+
+        if ((startTime.getFullYear() !== endTime.getFullYear()) || (startTime.getMonth() !== endTime.getMonth()) || (startTime.getDate() !== endTime.getDate())) {
+          checkDate = new Date(endTime);
+        } else {
+          checkDate = new Date(startTime);
+        }
+
+        dateString = daysOfWeek[checkDate.getDay()] + ', ' + checkDate.getDate() + ' ' + monthsOfYear[checkDate.getMonth()] + ' ' + checkDate.getFullYear() + ':';
+        element.innerHTML = dateString;
+      }
+
+      function populateBlockTypesSelect(currentBlock, blocks, selectorElement) {
+        let element;
+
+        while (selectorElement.firstChild) {
+          selectorElement.removeChild(selectorElement.firstChild);
+        }
+
+        for (let i = 0; i < blocks.length; i++) {
+          element = document.createElement('option');
+          selectorElement.appendChild(element);
+          element.innerHTML = blocks[i].type;
+        }
+        selectorElement.value = currentBlock.type;
+        element = document.createElement('option');
+        selectorElement.appendChild(element);
+        element.innerHTML = 'add new blocktype...';
+      }
+
+      function populateBlockSubkeys(currentBlock, blocks, timeblock, selectorElement) {
+        let element;
+
+        while (selectorElement.firstChild) {
+          selectorElement.removeChild(selectorElement.firstChild);
+        }
+
+        for (let i = 0; i < currentBlock.keys[currentBlock.keys.keys[0] + 'Values'].length; i++) {
+          element = document.createElement('option');
+          selectorElement.appendChild(element);
+          element.innerHTML = currentBlock.keys[currentBlock.keys.keys[0] + 'Values'][i];
+        }
+        selectorElement.value = currentBlock.keys[currentBlock.keys.keys[0] + 'Values'][timeblock.block_data[currentBlock.keys.keys[0]]];
+        element = document.createElement('option');
+        selectorElement.appendChild(element);
+        element.innerHTML = 'add new value...';
+      }
+
+      function populateBlockExtraValues(currentBlock, blocks, timeblock, valuesDiv) {
+        let element;
+
+        while (valuesDiv.firstChild) {
+          valuesDiv.removeChild(valuesDiv.firstChild);
+        }
+
+        for (let i = 1; i < currentBlock.keys.keys.length; i++) {
+          element = document.createElement('h1');
+          valuesDiv.appendChild(element);
+          element.setAttribute("style", "font-family: 'Alike Angular', serif; font-size: 24px; color: #000000; margin-left: 5em;");
+          element.innerHTML = currentBlock.keys.keys[i] + ':';
+          element = document.createElement('button');
+          valuesDiv.appendChild(element);
+          element.innerHTML = 'add new';
+          element.setAttribute("style", "font-weight: bolder; font-family: 'Asul', sans-serif; font-size: 24px; background: " + currentBlock.color + "; background-color: -webkit-linear-gradient(135deg, " + currentBlock.color + ", #ffffff); background: -o-linear-gradient(135deg, " + currentBlock.color + ", #ffffff); background: -moz-linear-gradient(135deg, " + currentBlock.color + ", #ffffff); background: linear-gradient(135deg, " + currentBlock.color + ", #ffffff); opacity: 0.7; margin-left: 7em; margin-top: 0; margin-bottom: 0;");
+          if ((timeblock.block_data !== null) && (timeblock.block_data !== undefined) && (timeblock.block_data[currentBlock.keys.keys[i]] !== undefined)) {
+            for (let j = 0; j < timeblock.block_data[currentBlock.keys.keys[i]].length; j++) {
+              element = document.createElement('input');
+              valuesDiv.appendChild(element);
+              element.type = 'text';
+              element.class = 'pure-input-1';
+              element.setAttribute("style", "font-family: 'Alike Angular', serif; font-size: 18px; margin-left: 8em; width: 20em;");
+              element.value = timeblock.block_data[currentBlock.keys.keys[i]][j];
+            }
+          } else {
+            element = document.createElement('input');
+            valuesDiv.appendChild(element);
+            element.type = 'text';
+            element.class = 'pure-input-1';
+            element.setAttribute("style", "font-family: 'Alike Angular', serif; font-size: 18px; margin-left: 8em; width: 20em;");
+          }
+
+        }
+      }
+
+      function updateStartDisplay(timeblock, startDisplay) {
+        let timeString = '';
+        let startTime = new Date(timeblock.start_time);
+        let endTime = new Date(timeblock.end_time);
+        if ((endTime.getFullYear() !== startTime.getFullYear()) || (endTime.getMonth() !== startTime.getMonth()) || endTime.getDate() !== startTime.getDate()) {
+          timeString = hoursTime[0];
+        } else {
+          timeString = (startTime.getHours() + 4) + ':';
+          if (startTime.getMinutes() === 0) {
+            timeString += '00';
+          } else {
+            timeString += '30';
+          }
+        }
+        startDisplay.innerHTML = timeString;
+      }
+
+      function updateEndDisplay(timeblock, endDisplay) {
+        let timeString = '';
+        let endTime = new Date(timeblock.end_time);
+
+        timeString = (endTime.getHours() + 4) + ':';
+        if (endTime.getMinutes() === 0) {
+          timeString += '00';
+        } else {
+          timeString += '30';
+        }
+
+        endDisplay.innerHTML = timeString;
+      }
+      function populateUserLocation(timeblock, locationField) {
+        locationField.value = timeblock.location;
+      }
+
+      function populateUserNotes(timeblock, notesField) {
+        notesField.value = timeblock.user_notes;
+      }
+
+      function obtainWeekday(timeblock) {
+        let weekDays = [ 'sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday' ];
+        let start = new Date(timeblock.start_time);
+        let end = new Date(timeblock.end_time);
+        if ((start.getFullYear() !== end.getFullYear()) || (start.getMonth() !== end.getMonth()) || (start.getDate() !== end.getDate())) {
+          return(weekDays[end.getDay()]);
+        } else {
+          return(weekDays[start.getDay()]);
+        }
+      }
+
+      function obtainStartIndex(timeblock) {
+        let index = 0;
+        let checkDate = new Date(timeblock.start_time);
+        let end = new Date(timeblock.end_time);
+        let timeString = (checkDate.getHours() + 4) + ':';
+        if ((end.getFullYear() !== checkDate.getFullYear()) || (end.getMonth() !== checkDate.getMonth()) || (end.getDate() !== checkDate.getDate())) {
+          return(index);
+        }
+        if (checkDate.getMinutes() === 0) {
+          timeString += '00';
+        } else {
+          timeString += '30';
+        }
+        if (timeString === '0:00') {
+          index = 0;
+        } else {
+          index = hoursTime.indexOf(timeString);
+        }
+
+        return(index);
+      }
+
+      function obtainEndIndex(timeblock) {
+        let index = 0;
+        let checkDate = new Date(timeblock.end_time);
+        let timeString = (checkDate.getHours() + 4) + ':';
+        if (checkDate.getMinutes() === 0) {
+          timeString += '00';
+        } else {
+          timeString += '30';
+        }
+        if ((timeString === '0:00') || (timeString === '24:00')) {
+          index = hours.length - 1;
+        } else {
+          index = hoursTime.indexOf(timeString);
+        }
+
+        return(index);
+      }
+
+      function deleteAppointment(timeblock) {
+        let element;
+
+        let startIndex = 0;
+        let endIndex = 0;
+        let weekday = '';
+        $http.delete(`/timeblocks/${timeblock.id}`)
+        .then(timedBlockData=>{
+          let timedBlock = timedBlockData.data;
+          weekday = obtainWeekday(timeblock);
+          startIndex = obtainStartIndex(timeblock);
+          endIndex = obtainEndIndex(timeblock);
+          for (let i = startIndex; i < endIndex; i++) {
+            element = document.getElementById(weekday + hours[i]);
+            if (i === startIndex) {
+              element.children[0].children[0].innerHTML = hoursTime[i];
+            }
+            element.children[0].appointment = undefined;
+            element.children[0].setAttribute("style", "background-color: transparent;");
+          }
+        });
+      }
+
+      function appointmentEditor(appointment) {
+        let timeCRUDPopup = document.getElementById('timeCRUDPopup');
+        let weekStrip = document.getElementById('weekStrip');
+        let buttonsOfCRUD = document.getElementById('buttonsOfCRUD');
+        let weekEditAppointmentDelete = document.getElementById('weekEditAppointmentDelete');
+        if (weekEditAppointmentDelete) {
+          weekEditAppointmentDelete.parentNode.removeChild(weekEditAppointmentDelete);
+          weekEditAppointmentDelete = document.createElement('a');
+          buttonsOfCRUD.appendChild(weekEditAppointmentDelete);
+          weekEditAppointmentDelete.id = "weekEditAppointmentDelete";
+          weekEditAppointmentDelete.className = "btn";
+          weekEditAppointmentDelete.innerHTML = "delete";
+          weekEditAppointmentDelete.setAttribute("style", "cursor: pointer; float: left; margin-left: 8%;");
+        }
+        let weekEditAppointmentCancel = document.getElementById('weekEditAppointmentCancel');
+        if (weekEditAppointmentCancel) {
+          weekEditAppointmentCancel.parentNode.removeChild(weekEditAppointmentCancel);
+          weekEditAppointmentCancel = document.createElement('a');
+          buttonsOfCRUD.appendChild(weekEditAppointmentCancel);
+          weekEditAppointmentCancel.id = "weekEditAppointmentCancel";
+          weekEditAppointmentCancel.className = "btn";
+          weekEditAppointmentCancel.innerHTML = "done";
+          weekEditAppointmentCancel.setAttribute("style", "cursor: pointer; float: left; margin-left: 8%;");
+        }
+
+        let usernameTimeblock = document.getElementById('usernameTimeblock');
+        let weekviewBlocktypeSelect = document.getElementById('weekviewBlocktypeSelect');
+        let weekBlocktypeSelector = document.getElementById('weekBlocktypeSelector');
+        if (weekBlocktypeSelector) {
+          weekBlocktypeSelector.parentNode.removeChild(weekBlocktypeSelector);
+          weekBlocktypeSelector = document.createElement('select');
+          weekviewBlocktypeSelect.appendChild(weekBlocktypeSelector);
+          weekBlocktypeSelector.id = 'weekBlocktypeSelector';
+          weekBlocktypeSelector.setAttribute("style", "font-family: 'Alike Angular', serif; font-size: 18px; margin-left: 5.8em; margin-bottom: 1em; width: 46em;");
+        }
+        let weekBlockKeys = document.getElementById('weekBlockKeys');
+        let weekBlockKeysSelector = document.getElementById('weekBlockKeysSelector');
+        if (weekBlockKeysSelector) {
+          weekBlockKeysSelector.parentNode.removeChild(weekBlockKeysSelector);
+          weekBlockKeysSelector = document.createElement('select');
+          weekBlockKeys.appendChild(weekBlockKeysSelector);
+          weekBlockKeysSelector.id = 'weekBlockKeysSelector';
+          weekBlockKeysSelector.setAttribute("style", "font-family: 'Alike Angular', serif; font-size: 18px; margin-left: 5.8em; width: 46em;");
+        }
+        let weekStartTimeDisplay = document.getElementById('weekStartTimeDisplay');
+        let weekAdditionalKeys = document.getElementById('weekAdditionalKeys');
+        let weekEditStart = document.getElementById('weekEditStart');
+        if (weekEditStart) {
+          while(weekStartTimeDisplay.firstChild) {
+            weekStartTimeDisplay.removeChild(weekStartTimeDisplay.firstChild);
+          }
+          weekEditStart = document.createElement('h3');
+          weekStartTimeDisplay.appendChild(weekEditStart);
+          weekEditStart.innerHTML = 'Start Time:';
+          weekEditStart = document.createElement('h2');
+          weekStartTimeDisplay.appendChild(weekEditStart);
+          weekEditStart.id = 'weekEditStart';
+          weekEditStart.setAttribute("style", "width: 3em; margin-left: 2em; padding-left: 0.2em; background-color:#ffffff; border-radius: 5px;");
+        }
+        let weekEndTimeDisplay = document.getElementById('weekEndTimeDisplay');
+        let weekEditEnd = document.getElementById('weekEditEnd');
+        if (weekEditEnd) {
+          while(weekEndTimeDisplay.firstChild) {
+            weekEndTimeDisplay.removeChild(weekEndTimeDisplay.firstChild);
+          }
+          weekEditEnd = document.createElement('h3');
+          weekEndTimeDisplay.appendChild(weekEditEnd);
+          weekEditEnd.innerHTML = 'End Time:';
+          weekEditEnd = document.createElement('h2');
+          weekEndTimeDisplay.appendChild(weekEditEnd);
+          weekEditEnd.id = 'weekEditEnd';
+          weekEditEnd.setAttribute("style", "width: 3em; margin-left: 2em; padding-left: 0.2em; background-color:#ffffff; border-radius: 5px;");
+          // let el = document.createElement('br');
+          // weekEndTimeDisplay.appendChild(el);
+
+        }
+        let weekLocationField = document.getElementById('weekLocationField');
+        let weekEditLocation = document.getElementById('weekEditLocation');
+        if (weekEditLocation) {
+          weekEditLocation.parentNode.removeChild(weekEditLocation);
+          weekEditLocation = document.createElement('input');
+          weekLocationField.appendChild(weekEditLocation);
+          weekEditLocation.id = 'weekEditLocation';
+          weekEditLocation.type = 'text';
+          weekEditLocation.class = 'pure-input-1';
+          weekEditLocation.setAttribute("style", "width: 46em; margin-left: 0");
+        }
+        let weekNotesField = document.getElementById('weekNotesField');
+        let weekEditUserNotes = document.getElementById('weekEditUserNotes');
+        if (weekEditUserNotes) {
+          weekEditUserNotes.parentNode.removeChild(weekEditUserNotes);
+          weekEditUserNotes = document.createElement('textarea');
+          weekNotesField.appendChild(weekEditUserNotes);
+          weekEditUserNotes.id = 'weekEditUserNotes';
+          weekEditUserNotes.rows = "5";
+          weekEditUserNotes.class = "pure-input-1";
+          weekEditUserNotes.setAttribute("style", "width: 46em; margin-left: 0");
+        }
+        let buttonImage;
+        let weekTimestartButtons = document.getElementById('weekTimestartButtons');
+        let weekEditStartDecrease = document.getElementById('weekEditStartDecrease');
+        if (weekEditStartDecrease) {
+          weekEditStartDecrease.parentNode.removeChild(weekEditStartDecrease);
+          weekEditStartDecrease = document.createElement('button');
+          weekTimestartButtons.appendChild(weekEditStartDecrease);
+          weekEditStartDecrease.id = 'weekEditStartDecrease';
+          buttonImage = document.createElement('img');
+          weekEditStartDecrease.appendChild(buttonImage);
+          buttonImage.src = './img/noun_592617_cc.png';
+          buttonImage.setAttribute("style", "height: 100%; width: 100%;");
+        }
+        let weekEditStartIncrease = document.getElementById('weekEditStartIncrease');
+        if (weekEditStartIncrease) {
+          weekEditStartIncrease.parentNode.removeChild(weekEditStartIncrease);
+          weekEditStartIncrease = document.createElement('button');
+          weekTimestartButtons.appendChild(weekEditStartIncrease);
+          weekEditStartIncrease.id = 'weekEditStartIncrease';
+          buttonImage = document.createElement('img');
+          weekEditStartIncrease.appendChild(buttonImage);
+          buttonImage.src = './img/noun_651094_cc.png';
+          buttonImage.setAttribute("style", "height: 100%; width: 100%;");
+        }
+        let weekTimeendButtons = document.getElementById('weekTimeendButtons');
+        let weekEditEndDecrease = document.getElementById('weekEditEndDecrease');
+        if (weekEditEndDecrease) {
+          weekEditEndDecrease.parentNode.removeChild(weekEditEndDecrease);
+          weekEditEndDecrease = document.createElement('button');
+          weekTimeendButtons.appendChild(weekEditEndDecrease);
+          weekEditEndDecrease.id = 'weekEditEndDecrease';
+          buttonImage = document.createElement('img');
+          weekEditEndDecrease.appendChild(buttonImage);
+          buttonImage.src = './img/noun_592617_cc.png';
+          buttonImage.setAttribute("style", "height: 100%; width: 100%;");
+        }
+        let weekEditEndIncrease = document.getElementById('weekEditEndIncrease');
+        if (weekEditEndIncrease) {
+          weekEditEndIncrease.parentNode.removeChild(weekEditEndIncrease);
+          weekEditEndIncrease = document.createElement('button');
+          weekTimeendButtons.appendChild(weekEditEndIncrease);
+          weekEditEndIncrease.id = 'weekEditEndIncrease';
+          buttonImage = document.createElement('img');
+          weekEditEndIncrease.appendChild(buttonImage);
+          buttonImage.src = './img/noun_651094_cc.png';
+          buttonImage.setAttribute("style", "height: 100%; width: 100%;");
+        }
+
+        //timeCRUDPopup.setAttribute("style", "visibility: visible; opacity: 0.9;");
+        weekStrip.setAttribute("style", "opacity: 0.6;");
+
+        $http.get(`/timeblocks/${appointment}`)
+        .then(timeblockData=>{
+          let timeblock = timeblockData.data;
+          $http.get(`/blocktypesbyuser/${currentUserId}`)
+          .then(blocksData=>{
+            let blocks = blocksData.data;
+            let currentBlock;
+            for (let i = 0; i < blocks.length; i++) {
+              if (blocks[i].id === timeblock.block_type) {
+                currentBlock = blocks[i];
+              }
+            }
+            updateToplineCRUD(timeblock, usernameTimeblock);
+            populateBlockTypesSelect(currentBlock, blocks, weekBlocktypeSelector);
+            if ((currentBlock.keys !== null) && (currentBlock.keys !== undefined) && (currentBlock.keys.keys.length > 0)) {
+              populateBlockSubkeys(currentBlock, blocks, timeblock, weekBlockKeysSelector);
+              weekBlockKeys.setAttribute("style", "display: initial;");
+              if (currentBlock.keys.keys.length > 1) {
+                populateBlockExtraValues(currentBlock, blocks, timeblock, weekAdditionalKeys);
+                weekAdditionalKeys.setAttribute("style", "display: initial; margin-left: 24em;");
+              } else {
+                while (weekAdditionalKeys.firstChild) {
+                  weekAdditionalKeys.removeChild(weekAdditionalKeys.firstChild);
+                }
+                weekAdditionalKeys.setAttribute("style", "display: none;");
+              }
+            } else {
+              weekBlockKeys.setAttribute("style", "display: none;");
+              weekAdditionalKeys.setAttribute("style", "display: none;");
+            }
+            updateStartDisplay(timeblock, weekEditStart);
+            updateEndDisplay(timeblock, weekEditEnd);
+            populateUserLocation(timeblock, weekEditLocation);
+            console.log(timeblock.location);
+            populateUserNotes(timeblock, weekEditUserNotes);
+            timeCRUDPopup.setAttribute("style", "visibility: visible; opacity: 0.8; background: " + currentBlock.value + "; background-color: -webkit-linear-gradient(135deg, " + currentBlock.color + ", #abdada); background: -o-linear-gradient(135deg, " + currentBlock.color + ", #abdada); background: -moz-linear-gradient(135deg, " + currentBlock.color + ", #abdada); background: linear-gradient(135deg, " + currentBlock.color + ", #abdada); position: fixed; align-self: center; width: 64em; align-items: center; align-content: center; margin-left: 14em; margin-right: 10em; margin-top: 1em; padding-left: 3.6em; padding-right: 3.6em; border-radius: 10px; border: solid 3px #000000; overflow: scroll; height: 60%; z-index: 3;");
+            weekEditAppointmentDelete.addEventListener('click', ()=>{
+              deleteAppointment(timeblock);
+              timeCRUDPopup.setAttribute("style", "visibility: hidden; opacity: 0;");
+              weekStrip.setAttribute("style", "opacity: 1;");
+            });
+          });
+        });
+        weekEditAppointmentCancel.addEventListener('click', ()=>{
+          timeCRUDPopup.setAttribute("style", "visibility: hidden; opacity: 0;");
+          weekStrip.setAttribute("style", "opacity: 1;");
+        });
+      }
+
+      function weekEdit(appointment) {
+
+
+        if (appointment === undefined) {
+          //alert(appointment);
+          console.log(appointment);
+        } else {
+          appointmentEditor(appointment);
+        }
+
+      }
+
+      function halfHourEventListen(halfHourDiv) {
+
+        halfHourDiv.addEventListener('click', ()=>{
+          weekEdit(halfHourDiv.appointment);
+        });
+      }
+
+      function setHalfhourListeners() {
+        let weekArray = [ 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'];
+        let element;
+
+        for (let i = 0; i < weekArray.length; i++) {
+          for (let j = 0; j < (hours.length - 1); j++) {
+            element = document.getElementById(weekArray[i] + hours[j]);
+            halfHourEventListen(element.children[0]);
+          }
+        }
+      }
+
 
       function onInit() {
         console.log("Weekview is lit");
@@ -811,6 +1242,7 @@
         setBillsButtons();
         setTasksButtons();
         readAppointmentBlocks();
+        setHalfhourListeners();
       }
 
     }
