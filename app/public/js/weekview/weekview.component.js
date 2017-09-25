@@ -668,8 +668,10 @@
         let day = checkDate.getDate();
 
         arr = blocks.filter((timeblock)=>{
-          let apptime = new Date(timeblock.start_time);
-          let apptEnd = new Date(timeblock.end_time);
+          let holder = timeblock.start_time.slice(0, 10) + 'T14:35:51.367Z';
+          let apptime = new Date(holder);
+          holder = timeblock.end_time.slice(0, 10) + 'T14:35:51.367Z';
+          let apptEnd = new Date(holder);
           let startYear = apptime.getFullYear();
           let startMonth = apptime.getMonth();
           let startDate = apptime.getDate();
@@ -683,13 +685,12 @@
               startMonth = endMonth;
             }
             if (endYear !== startYear) {
-              startYear === endYear;
+              startYear = endYear;
             }
           }
-
           return ((year === startYear) && (month === startMonth) && (day === startDate));
         });
-
+        console.log(arr);
         return(arr);
       }
 
@@ -702,10 +703,13 @@
         let minutesString = '';
         let endMinutesString = '';
         let blockReference = {};
+        let holder = '';
 
         for (let i = 0; i < apptArray.length; i++) {
-          startTime = new Date(apptArray[i].start_time);
-          endTime = new Date(apptArray[i].end_time);
+          holder = apptArray[i].start_time.slice(0, 16);
+          startTime = new Date(holder);
+          holder = apptArray[i].end_time.slice(0,16);
+          endTime = new Date(holder);
           if (startTime.getMinutes() === 0) {
             minutesString = ':00';
           } else {
@@ -716,8 +720,8 @@
           } else {
             endMinutesString = ':30';
           }
-          indexOfStart = hoursTime.indexOf((startTime.getHours() + 4) + minutesString);
-          indexOfEnd = hoursTime.indexOf((endTime.getHours() + 4) + endMinutesString);
+          indexOfStart = hoursTime.indexOf((startTime.getHours()) + minutesString);
+          indexOfEnd = hoursTime.indexOf((endTime.getHours()) + endMinutesString);
           blockReference = {};
           if (indexOfStart === (hoursTime.length - 1)) {
             indexOfStart = 0;
@@ -731,13 +735,11 @@
               blockReference = blocks[j];
             }
           }
-
           if (dayOfWeek === 'friday') {
             console.log(apptArray[i]);
             console.log(endTime);
-            console.log(endTime.getHours() + 4);
+            console.log(endTime.getHours());
           }
-
           element = document.getElementById(dayOfWeek + hours[indexOfStart]);
           element.children[0].children[0].innerHTML = hoursTime[indexOfStart] + ' - ' + blockReference.type;
           element.children[0].appointment = apptArray[i].id;
@@ -826,6 +828,12 @@
           selectorElement.appendChild(element);
           element.innerHTML = currentBlock.keys[currentBlock.keys.keys[0] + 'Values'][i];
         }
+        if (timeblock.block_data === null) {
+          timeblock.block_data = {};
+        }
+        if (timeblock.block_data[currentBlock.keys.keys[0]] === undefined) {
+          timeblock.block_data[currentBlock.keys.keys[0]] = 0;
+        }
         selectorElement.value = currentBlock.keys[currentBlock.keys.keys[0] + 'Values'][timeblock.block_data[currentBlock.keys.keys[0]]];
         element = document.createElement('option');
         selectorElement.appendChild(element);
@@ -870,12 +878,14 @@
 
       function updateStartDisplay(timeblock, startDisplay) {
         let timeString = '';
-        let startTime = new Date(timeblock.start_time);
-        let endTime = new Date(timeblock.end_time);
+        let holder = (timeblock.start_time.slice(0, 16));
+        let startTime = new Date(holder);
+        holder = (timeblock.end_time.slice(0, 16));
+        let endTime = new Date(holder);
         if ((endTime.getFullYear() !== startTime.getFullYear()) || (endTime.getMonth() !== startTime.getMonth()) || endTime.getDate() !== startTime.getDate()) {
           timeString = hoursTime[0];
         } else {
-          timeString = (startTime.getHours() + 4) + ':';
+          timeString = (startTime.getHours()) + ':';
           if (startTime.getMinutes() === 0) {
             timeString += '00';
           } else {
@@ -887,9 +897,10 @@
 
       function updateEndDisplay(timeblock, endDisplay) {
         let timeString = '';
-        let endTime = new Date(timeblock.end_time);
+        let holder = timeblock.end_time.slice(0, 16);
+        let endTime = new Date(holder);
 
-        timeString = (endTime.getHours() + 4) + ':';
+        timeString = (endTime.getHours()) + ':';
         if (endTime.getMinutes() === 0) {
           timeString += '00';
         } else {
@@ -919,9 +930,11 @@
 
       function obtainStartIndex(timeblock) {
         let index = 0;
-        let checkDate = new Date(timeblock.start_time);
-        let end = new Date(timeblock.end_time);
-        let timeString = (checkDate.getHours() + 4) + ':';
+        let holder = timeblock.start_time.slice(0, 16);
+        let checkDate = new Date(holder);
+        holder = timeblock.end_time.slice(0, 16);
+        let end = new Date(holder);
+        let timeString = (checkDate.getHours()) + ':';
         if ((end.getFullYear() !== checkDate.getFullYear()) || (end.getMonth() !== checkDate.getMonth()) || (end.getDate() !== checkDate.getDate())) {
           return(index);
         }
@@ -941,8 +954,9 @@
 
       function obtainEndIndex(timeblock) {
         let index = 0;
-        let checkDate = new Date(timeblock.end_time);
-        let timeString = (checkDate.getHours() + 4) + ':';
+        let holder = timeblock.end_time.slice(0, 16);
+        let checkDate = new Date(holder);
+        let timeString = (checkDate.getHours()) + ':';
         if (checkDate.getMinutes() === 0) {
           timeString += '00';
         } else {
@@ -976,6 +990,239 @@
             }
             element.children[0].appointment = undefined;
             element.children[0].setAttribute("style", "background-color: transparent;");
+          }
+        });
+      }
+
+      function handleWeekviewBlocktypeCRUD(currentAppointment) {
+        let blocktypeCRUDPopup = document.getElementById('blocktypeCRUDPopup');
+        let timeCRUDPopup = document.getElementById('timeCRUDPopup');
+        let weekBlocktypeCRUDCancelButton = document.getElementById('weekBlocktypeCRUDCancelButton');
+        let weekBlocktypeCRUDColor = document.getElementById('weekBlocktypeCRUDColor');
+        let weekBlockTitle = document.getElementById('weekBlockTitle');
+        let weekBlockCRUDForm = document.getElementById('weekBlockCRUDForm');
+        let weekBlocktypeCRUDAddNewSubtype = document.getElementById('weekBlocktypeCRUDAddNewSubtype');
+        let weekBlocktypeCRUDAdditionalDataTypeAdds = document.getElementById('weekBlocktypeCRUDAdditionalDataTypeAdds');
+        let weekBlocktypeCRUDSubtypes = document.getElementById('weekBlocktypeCRUDSubtypes');
+        let weekBlocktypeCRUDSubtypeMaker = document.getElementById('weekBlocktypeCRUDSubtypeMaker');
+        let addingTheWeekSubtypes = document.getElementById('addingTheWeekSubtypes');
+        let weekBlocktypeCRUDKeychain = document.getElementById('weekBlocktypeCRUDKeychain');
+        let weekKeychainList = document.getElementById('weekKeychainList');
+        let weekBlocktypeCRUDSubmitButton = document.getElementById('weekBlocktypeCRUDSubmitButton');
+        let weekBlocktypeCRUDErrorField = document.getElementById('weekBlocktypeCRUDErrorField');
+        let weekBlocktypeCRUDType = document.getElementById('weekBlocktypeCRUDType');
+        let elements;
+        let populateNewField = false;
+
+        blocktypeCRUDPopup.setAttribute("style", "visibility: visible; opacity: 1; z-index: 2;");
+        timeCRUDPopup.setAttribute("style", "visibility: hidden; z-index: -1;");
+
+
+        weekBlocktypeCRUDSubtypes.addEventListener('click', ()=>{
+          if (weekBlocktypeCRUDSubtypes.checked) {
+            weekBlocktypeCRUDSubtypeMaker.setAttribute("style", "display: initial;");
+          } else {
+            weekBlocktypeCRUDSubtypeMaker.setAttribute("style", "display: none;");
+          }
+        });
+
+        weekBlocktypeCRUDColor.addEventListener('change', ()=>{
+          weekBlockTitle.setAttribute("style", "background: " + weekBlocktypeCRUDColor.value + "; background-color: -webkit-linear-gradient(-135deg, " + weekBlocktypeCRUDColor.value + ", #abdada); background: -o-linear-gradient(-135deg, " + weekBlocktypeCRUDColor.value + "#22ac44, #abdada); background: -moz-linear-gradient(-135deg, " + weekBlocktypeCRUDColor.value + ", #abdada); background: linear-gradient(-135deg, " + weekBlocktypeCRUDColor.value + ", #abdada);");
+          weekBlockCRUDForm.setAttribute("style", "background: " + weekBlocktypeCRUDColor.value + "; background-color: -webkit-linear-gradient(135deg, " + weekBlocktypeCRUDColor.value + ", #abdada); background: -o-linear-gradient(135deg, " + weekBlocktypeCRUDColor.value + ", #abdada); background: -moz-linear-gradient(135deg, " + weekBlocktypeCRUDColor.value + "#, #abdada); background: linear-gradient(135deg, " + weekBlocktypeCRUDColor.value + ", #abdada);");
+          weekBlocktypeCRUDAddNewSubtype.setAttribute("style", "background: " + weekBlocktypeCRUDColor.value + "; background-color: -webkit-linear-gradient(135deg, " + weekBlocktypeCRUDColor.value + ", #abdada); background: -o-linear-gradient(135deg, " + weekBlocktypeCRUDColor.value + ", #abdada); background: -moz-linear-gradient(135deg, " + weekBlocktypeCRUDColor.value + "#, #abdada); background: linear-gradient(135deg, " + weekBlocktypeCRUDColor.value + ", #abdada);");
+          weekBlocktypeCRUDAdditionalDataTypeAdds.setAttribute("style", "background: " + weekBlocktypeCRUDColor.value + "; background-color: -webkit-linear-gradient(135deg, " + weekBlocktypeCRUDColor.value + ", #abdada); background: -o-linear-gradient(135deg, " + weekBlocktypeCRUDColor.value + ", #abdada); background: -moz-linear-gradient(135deg, " + weekBlocktypeCRUDColor.value + "#, #abdada); background: linear-gradient(135deg, " + weekBlocktypeCRUDColor.value + ", #abdada);");
+        });
+
+        weekBlocktypeCRUDAddNewSubtype.addEventListener('click', ()=>{
+          let inputAdd;
+          populateNewField = true;
+          elements = addingTheWeekSubtypes.children;
+          if (elements.length > 1) {
+            for (let i = 1; i < elements.length; i++) {
+              if (elements[i].value === '') {
+                populateNewField = false;
+              }
+            }
+          }
+
+          if (populateNewField) {
+            inputAdd = document.createElement('input');
+            weekBlocktypeCRUDAddNewSubtype.parentNode.appendChild(inputAdd);
+            inputAdd.type = 'text';
+            inputAdd.className = 'pure-input-1';
+          }
+        });
+
+        weekBlocktypeCRUDAdditionalDataTypeAdds.addEventListener('click', ()=>{
+          let inputAdd;
+          populateNewField = true;
+          elements = weekKeychainList.children;
+          if (elements.length > 1) {
+            for (let i = 1; i <elements.length; i++) {
+              if (elements[i].value === '') {
+                populateNewField = false;
+              }
+            }
+          }
+
+          if (populateNewField) {
+            inputAdd = document.createElement('input');
+            weekKeychainList.appendChild(inputAdd);
+            inputAdd.type = 'text';
+            inputAdd.className = 'pure-input-1';
+          }
+        });
+
+        weekBlocktypeCRUDKeychain.addEventListener('click', ()=>{
+          if (weekBlocktypeCRUDKeychain.checked) {
+            weekKeychainList.setAttribute("style", "display: initial;");
+          } else {
+            weekKeychainList.setAttribute("style", "display: none;");
+          }
+        });
+
+        weekBlocktypeCRUDSubmitButton.addEventListener('click', ()=>{
+          //TODO check validity of input
+          let submissionObject = {
+            user_id: currentUserId,
+            color: weekBlocktypeCRUDColor.value
+          };
+          if (weekBlocktypeCRUDType.value === '') {
+            weekBlocktypeCRUDErrorField.innerHTML = '*Please input a blocktype name';
+          } else {
+            $http.get(`/blocktypesbyuser/${currentUserId}`)
+            .then(userBlocksData=>{
+              let userBlocks = userBlocksData.data;
+              let redundancy = userBlocks.filter((block)=>{
+                return(block.type === weekBlocktypeCRUDType.value);
+              });
+              if (redundancy.length !== 0) {
+                weekBlocktypeCRUDErrorField.innerHTML = '*That blocktype name already exists!';
+              } else {
+                submissionObject.type = weekBlocktypeCRUDType.value;
+                if (!weekBlocktypeCRUDSubtypes.checked) {
+                  submissionObject.keys = null;
+                } else {
+                  submissionObject.keys = {};
+                }
+                if (weekBlocktypeCRUDSubtypes.checked && (addingTheWeekSubtypes.children[1].value === '')) {
+                  weekBlocktypeCRUDErrorField.innerHTML = '*Please enter at least one subtype or uncheck subtype option';
+                  return;
+                } else if (weekBlocktypeCRUDSubtypes.checked) {
+                  submissionObject.keys.keys = [];
+                  submissionObject.keys.keys[0] = weekBlocktypeCRUDType.value + 'Type';
+                  submissionObject.keys[submissionObject.keys.keys[0] + 'Values'] = [];
+                  let valueRun = addingTheWeekSubtypes.children;
+                  for (let i = 1; i < valueRun.length; i++) {
+                    if (addingTheWeekSubtypes.children[i].value !== '') {
+                      submissionObject.keys[submissionObject.keys.keys[0] + 'Values'].push(addingTheWeekSubtypes.children[i].value);
+                    }
+                  }
+                }
+                if (weekBlocktypeCRUDKeychain.checked && (weekKeychainList.children[1].value === '')) {
+                  weekBlocktypeCRUDErrorField.innerHTML = '*Please enter at least one additional data type or uncheck additional tada types option';
+                  return;
+                } else if (weekBlocktypeCRUDKeychain.checked) {
+                  let subs = weekKeychainList.children;
+                  for (let j = 1; j < subs.length; j++) {
+                    if (subs[j].value !== '') {
+                      submissionObject.keys.keys.push(subs[j].value);
+                    }
+                  }
+                }
+                $http.post('/blocktypes', submissionObject)
+                .then(addedBlockData=>{
+                  let addedBlock = addedBlockData.data[0];
+                  let timeSub = {
+                    block_type: addedBlock.id
+                  };
+                  $http.patch(`/timeblocks/${currentAppointment}`, timeSub)
+                  .then(updatedTimerData=>{
+                    let updatedTimer = updatedTimerData.data;
+                    readAppointmentBlocks();
+                    blocktypeCRUDPopup.setAttribute("style", "visibility: hidden; opacity: 0.2; z-index: -2;");
+                    timeCRUDPopup.setAttribute("style", "visibility: visible; z-index: 3;");
+                    appointmentEditor(currentAppointment);
+                    weekBlocktypeCRUDColor.value = '#22ac44';
+                    weekBlockTitle.setAttribute("style", "background: #22ac44; background-color: -webkit-linear-gradient(-135deg, #22ac44, #abdada); background: -o-linear-gradient(-135deg, #22ac44, #abdada); background: -moz-linear-gradient(-135deg, #22ac44, #abdada); background: linear-gradient(-135deg, #22ac44, #abdada);");
+                    weekBlockCRUDForm.setAttribute("style", "background: #22ac44; background-color: -webkit-linear-gradient(135deg, #22ac44, #abdada); background: -o-linear-gradient(135deg, #22ac44, #abdada); background: -moz-linear-gradient(135deg, #22ac44, #abdada); background: linear-gradient(135deg, #22ac44, #abdada);");
+                    weekBlocktypeCRUDAddNewSubtype.setAttribute("style", "background-color: -webkit-linear-gradient(135deg, #22ac44, #abdada); background: -o-linear-gradient(135deg, #22ac44, #abdada); background: -moz-linear-gradient(135deg, #22ac44, #abdada); background: linear-gradient(135deg, #22ac44, #abdada);");
+                    weekBlocktypeCRUDAdditionalDataTypeAdds.setAttribute("style", "background-color: -webkit-linear-gradient(135deg, #22ac44, #abdada); background: -o-linear-gradient(135deg, #22ac44, #abdada); background: -moz-linear-gradient(135deg, #22ac44, #abdada); background: linear-gradient(135deg, #22ac44, #abdada);");
+                    weekBlocktypeCRUDSubtypeMaker.setAttribute("style", "display: initial;");
+                    weekBlocktypeCRUDSubtypes.checked = true;
+                    weekBlocktypeCRUDKeychain.checked = false;
+                    weekKeychainList.setAttribute("style", "display: none;");
+                    while(addingTheWeekSubtypes.children[2]){
+                      addingTheWeekSubtypes.removeChild(addingTheWeekSubtypes.children[2]);
+                    }
+                    while(weekKeychainList.children[2]) {
+                      weekKeychainList.removeChild(weekKeychainList.children[2]);
+                    }
+                    weekKeychainList.children[1].value = '';
+                    addingTheWeekSubtypes.children[1].value = '';
+                    weekBlocktypeCRUDErrorField.innerHTML = '';
+                    weekBlocktypeCRUDType.value = '';
+                  });
+                });
+              }
+            });
+          }
+        });
+
+        weekBlocktypeCRUDCancelButton.addEventListener('click', ()=>{
+          blocktypeCRUDPopup.setAttribute("style", "visibility: hidden; opacity: 0.2; z-index: -2;");
+          timeCRUDPopup.setAttribute("style", "visibility: visible; z-index: 3;");
+          appointmentEditor(currentAppointment);
+          weekBlocktypeCRUDColor.value = '#22ac44';
+          weekBlockTitle.setAttribute("style", "background: #22ac44; background-color: -webkit-linear-gradient(-135deg, #22ac44, #abdada); background: -o-linear-gradient(-135deg, #22ac44, #abdada); background: -moz-linear-gradient(-135deg, #22ac44, #abdada); background: linear-gradient(-135deg, #22ac44, #abdada);");
+          weekBlockCRUDForm.setAttribute("style", "background: #22ac44; background-color: -webkit-linear-gradient(135deg, #22ac44, #abdada); background: -o-linear-gradient(135deg, #22ac44, #abdada); background: -moz-linear-gradient(135deg, #22ac44, #abdada); background: linear-gradient(135deg, #22ac44, #abdada);");
+          weekBlocktypeCRUDAddNewSubtype.setAttribute("style", "background-color: -webkit-linear-gradient(135deg, #22ac44, #abdada); background: -o-linear-gradient(135deg, #22ac44, #abdada); background: -moz-linear-gradient(135deg, #22ac44, #abdada); background: linear-gradient(135deg, #22ac44, #abdada);");
+          weekBlocktypeCRUDAdditionalDataTypeAdds.setAttribute("style", "background-color: -webkit-linear-gradient(135deg, #22ac44, #abdada); background: -o-linear-gradient(135deg, #22ac44, #abdada); background: -moz-linear-gradient(135deg, #22ac44, #abdada); background: linear-gradient(135deg, #22ac44, #abdada);");
+          weekBlocktypeCRUDSubtypeMaker.setAttribute("style", "display: initial;");
+          weekBlocktypeCRUDSubtypes.checked = true;
+          weekBlocktypeCRUDKeychain.checked = false;
+          weekKeychainList.setAttribute("style", "display: none;");
+          while(addingTheWeekSubtypes.children[2]){
+            addingTheWeekSubtypes.removeChild(addingTheWeekSubtypes.children[2]);
+          }
+          while(weekKeychainList.children[2]) {
+            weekKeychainList.removeChild(weekKeychainList.children[2]);
+          }
+          weekKeychainList.children[1].value = '';
+          addingTheWeekSubtypes.children[1].value = '';
+          weekBlocktypeCRUDErrorField.innerHTML = '';
+          weekBlocktypeCRUDType.value = '';
+        });
+      }
+
+      function blockTypeHandler(weekBlocktypeSelector, currentAppointment) {
+        let subObj = {};
+
+        weekBlocktypeSelector.addEventListener('change', ()=>{
+          if (weekBlocktypeSelector.value !== 'add new blocktype...') {
+            $http.get(`/blocktypesbyuser/${currentUserId}`)
+            .then(userBlocksData=>{
+              let userBlocks = userBlocksData.data;
+              let newBlock = userBlocks.filter((block)=>{
+                return(block.type === weekBlocktypeSelector.value);
+              });
+              if (newBlock.length !== 1) {
+                alert('error on the blocktype');
+                return;
+              } else {
+                subObj.block_type = newBlock[0].id;
+                $http.patch(`/timeblocks/${currentAppointment}`, subObj)
+                .then(()=>{
+                  appointmentEditor(currentAppointment);
+                  readAppointmentBlocks();
+                });
+              }
+            });
+          } else {
+            console.log('this is where we open a new modal');
+            //TODO modal for blocktype CRUD interactions
+            handleWeekviewBlocktypeCRUD(currentAppointment);
+            //TODO blocktype CRUD interactions
           }
         });
       }
@@ -1143,6 +1390,7 @@
             }
             updateToplineCRUD(timeblock, usernameTimeblock);
             populateBlockTypesSelect(currentBlock, blocks, weekBlocktypeSelector);
+            blockTypeHandler(weekBlocktypeSelector, appointment);
             if ((currentBlock.keys !== null) && (currentBlock.keys !== undefined) && (currentBlock.keys.keys.length > 0)) {
               populateBlockSubkeys(currentBlock, blocks, timeblock, weekBlockKeysSelector);
               weekBlockKeys.setAttribute("style", "display: initial;");
