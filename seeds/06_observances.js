@@ -8170,6 +8170,53 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 520,
+          user_id: 1,
+          name: 'Arnold Schoenberg (composer), born 1874',
+          color: '#424242',
+          picture: './img/musicians/arnoldschoenberg.jpg',
+          day_of: new Date ('1874-09-13T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: true,
+          override_content: {
+            "sources": [ 'bandcamp' ],
+            "src_strings": [ 'https://bandcamp.com/EmbeddedPlayer/album=708236002/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/' ],
+            "href_strings": [ 'http://krasovskyvaidman.bandcamp.com/album/schoenberg-steuermann-korngold' ],
+            "a_strings": [ 'Schoenberg - Steuermann, Korngold by Vera Vaidman, Shmuel Magen, Emanuel Krasovsky' ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 521,
+          user_id: 1,
+          name: 'Pie Traynor (third baseman), born 1989',
+          color: '#696969',
+          picture: './img/baseball/pietraynor.jpeg',
+          day_of: new Date ('1898-11-11T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 522,
+          user_id: 1,
+          name: 'Abdul Wadud (cellist), born 1947',
+          color: '#410D00',
+          picture: './img/musicians/abdulwadud.jpg',
+          day_of: new Date ('1947-04-30T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
