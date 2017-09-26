@@ -1004,6 +1004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 51,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/echiquier-1971.jpg',
+          title: 'Echiquier',
+          artist: 'Aurelie Nemours',
+          year: '1971',
+          rule: {
+            "monday": [ 10, 21, 1, 12 ],
+            "tuesday": [ 9, 20, 31, 11 ],
+            "wednesday": [ 8, 18, 30, 10 ],
+            "thursday": [ 7, 18, 29, 9 ],
+            "friday": [ 6, 17, 28, 8 ],
+            "saturday": [ 5, 16, 27, 7 ],
+            "sunday": [ 4, 15, 26, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 52,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/personnage-sur-fond-nocturne-toil.jpg',
+          title: 'Personnage sur fond nocturne étoilé',
+          artist: 'Gaston Chaissac',
+          year: '?',
+          rule: {
+            "monday": [ 4, 15, 26, 6 ],
+            "tuesday": [ 10, 21, 1, 12 ],
+            "wednesday": [ 9, 20, 31, 11 ],
+            "thursday": [ 8, 18, 30, 10 ],
+            "friday": [ 7, 18, 29, 9 ],
+            "saturday": [ 6, 17, 28, 8 ],
+            "sunday": [ 5, 16, 27, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 53,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/terrasse-la-nuit-1986.jpg',
+          title: 'Terrasse la nuit',
+          artist: 'Jean Bertholle',
+          year: '1986',
+          rule: {
+            "monday": [ 5, 16, 27, 7 ],
+            "tuesday": [ 4, 15, 26, 6 ],
+            "wednesday": [ 10, 21, 1, 12 ],
+            "thursday": [ 9, 20, 31, 11 ],
+            "friday": [ 8, 18, 30, 10 ],
+            "saturday": [ 7, 18, 29, 9 ],
+            "sunday": [ 6, 17, 28, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 54,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/rue-mouffetard-paris-1954.jpg',
+          title: 'Rue Mouffetard, Paris',
+          artist: 'Henri Cartier-Bresson',
+          year: '1954',
+          rule: {
+            "monday": [ 6, 17, 28, 8 ],
+            "tuesday": [ 5, 16, 27, 7 ],
+            "wednesday": [ 4, 15, 26, 6 ],
+            "thursday": [ 10, 21, 1, 12 ],
+            "friday": [ 9, 20, 31, 11 ],
+            "saturday": [ 8, 18, 30, 10 ],
+            "sunday": [ 7, 18, 29, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 55,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/eau.jpg',
+          title: 'Eau',
+          artist: 'Dora Maar',
+          year: '?',
+          rule: {
+            "monday": [ 7, 18, 29, 9 ],
+            "tuesday": [ 6, 17, 28, 8 ],
+            "wednesday": [ 5, 16, 27, 7 ],
+            "thursday": [ 4, 15, 26, 6 ],
+            "friday": [ 10, 21, 1, 12 ],
+            "saturday": [ 9, 20, 31, 11 ],
+            "sunday": [ 8, 18, 30, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
