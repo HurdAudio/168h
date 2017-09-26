@@ -204,6 +204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 11,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/untitled-1986.jpg',
+          title: 'Untitled',
+          artist: 'Fred Sandback',
+          year: '1986',
+          rule: {
+            "monday": [ 4, 9, 15, 20 ],
+            "tuesday": [ 3, 8, 14, 21 ],
+            "wednesday": [ 9, 14, 20, 25 ],
+            "thursday": [ 8, 13, 19, 24 ],
+            "friday": [ 7, 12, 18, 23 ],
+            "saturday": [ 6, 11, 17, 22 ],
+            "sunday": [ 5, 10, 16, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 12,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/the-whole-soul-summed-up-1979.jpg',
+          title: 'The Whole Soul Summed Up',
+          artist: 'Christopher Wilmarth',
+          year: '1979',
+          rule: {
+            "monday": [ 5, 10, 16, 21 ],
+            "tuesday": [ 4, 9, 15, 20 ],
+            "wednesday": [ 3, 8, 14, 21 ],
+            "thursday": [ 9, 14, 20, 25 ],
+            "friday": [ 8, 13, 19, 24 ],
+            "saturday": [ 7, 12, 18, 23 ],
+            "sunday": [ 6, 11, 17, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 13,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/yellow-painting-14-1995.jpg',
+          title: 'Yellow Painting #14',
+          artist: 'Joseph Marioni',
+          year: '1995',
+          rule: {
+            "monday": [ 6, 11, 17, 22 ],
+            "tuesday": [ 5, 10, 16, 21 ],
+            "wednesday": [ 4, 9, 15, 20 ],
+            "thursday": [ 3, 8, 14, 21 ],
+            "friday": [ 9, 14, 20, 25 ],
+            "saturday": [ 8, 13, 19, 24 ],
+            "sunday": [ 7, 12, 18, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 14,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/untitled-1993.jpg',
+          title: 'Untitled',
+          artist: 'Gunter Umberg',
+          year: '1993',
+          rule: {
+            "monday": [ 8, 13, 19, 24 ],
+            "tuesday": [ 7, 12, 18, 23 ],
+            "wednesday": [ 6, 11, 17, 22 ],
+            "thursday": [ 5, 10, 16, 21 ],
+            "friday": [ 4, 9, 15, 22 ],
+            "saturday": [ 10, 15, 21, 26 ],
+            "sunday": [ 9, 14, 20, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 15,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/step-by-step-2002.jpg',
+          title: 'Step by Step',
+          artist: 'Richard Tuttle',
+          year: '2002',
+          rule: {
+            "monday": [ 9, 14, 20, 25 ],
+            "tuesday": [ 8, 13, 19, 24 ],
+            "wednesday": [ 7, 12, 18, 23 ],
+            "thursday": [ 6, 11, 17, 22 ],
+            "friday": [ 5, 10, 16, 21 ],
+            "saturday": [ 4, 9, 15, 22 ],
+            "sunday": [ 10, 15, 21, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
