@@ -706,6 +706,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 40,
+          user_id: 1,
+          theme: 'avant garde/new music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=867626409/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://adriankingwell.bandcamp.com/album/babylon',
+          a_string: 'babylon by Adrian Kingwell',
+          rule: {
+            "monday": [ 8, 14, 21, 3 ],
+            "tuesday": [ 7, 13, 20, 2 ],
+            "wednesday": [ 6, 12, 19, 1 ],
+            "thursday": [ 10, 16, 23, 5 ],
+            "saturday": [ 9, 15, 22, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 41,
+          user_id: 1,
+          theme: 'avant garde/new music',
+          source: 'bandcamp',
+          src_string: 'http://bandcamp.com/EmbeddedPlayer/album=1724237696/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://shop.diatribe.ie/album/for-violin-and-electronics',
+          a_string: 'For Violin and Electronics by Darragh Morgan',
+          rule: {
+            "monday": [ 9, 15, 22, 4 ],
+            "tuesday": [ 8, 14, 21, 3 ],
+            "wednesday": [ 7, 13, 20, 2 ],
+            "thursday": [ 6, 12, 19, 1 ],
+            "saturday": [ 10, 16, 23, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 42,
+          user_id: 1,
+          theme: 'avant garde/new music',
+          source: 'bandcamp',
+          src_string: 'http://bandcamp.com/EmbeddedPlayer/album=644646204/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://shop.diatribe.ie/album/stargazer',
+          a_string: 'Stargazer by Ensemble Ériu',
+          rule: {
+            "monday": [ 11, 17, 24, 6 ],
+            "tuesday": [ 10, 16, 23, 5 ],
+            "wednesday": [ 9, 15, 22, 4 ],
+            "thursday": [ 8, 14, 21, 3 ],
+            "saturday": [ 7, 13, 20, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
