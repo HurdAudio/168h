@@ -1404,6 +1404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 71,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/the-three-comrades-1920.jpg',
+          title: 'The Three Comrades',
+          artist: 'Fernand Leger',
+          year: '1920',
+          rule: {
+            "monday": [ 9, 19, 29, 8 ],
+            "tuesday": [ 7, 17, 27, 6 ],
+            "wednesday": [ 5, 15, 25, 4 ],
+            "thursday": [ 3, 13, 23, 2 ],
+            "friday": [ 1, 11, 21, 31 ],
+            "saturday": [ 30, 9, 19, 29 ],
+            "sunday": [ 11, 21, 31, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 72,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/fishermen-1921.jpg',
+          title: 'Fishermen',
+          artist: 'Fernand Leger',
+          year: '1921',
+          rule: {
+            "monday": [ 11, 21, 31, 10 ],
+            "tuesday": [ 9, 19, 29, 8 ],
+            "wednesday": [ 7, 17, 27, 6 ],
+            "thursday": [ 5, 15, 25, 4 ],
+            "friday": [ 3, 13, 23, 2 ],
+            "saturday": [ 1, 11, 21, 31 ],
+            "sunday": [ 30, 9, 19, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 73,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/the-butcher-shop-1921.jpg',
+          title: 'The Butcher Shop',
+          artist: 'Fernand Leger',
+          year: '1921',
+          rule: {
+            "monday": [ 30, 9, 19, 29 ],
+            "tuesday": [ 11, 21, 31, 10 ],
+            "wednesday": [ 9, 19, 29, 8 ],
+            "thursday": [ 7, 17, 27, 6 ],
+            "friday": [ 5, 15, 25, 4 ],
+            "saturday": [ 3, 13, 23, 2 ],
+            "sunday": [ 1, 11, 21, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 74,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/the-man-in-the-blue-hat-1937.jpg',
+          title: 'The man in the blue hat',
+          artist: 'Fernand Leger',
+          year: '1937',
+          rule: {
+            "monday": [ 1, 11, 21, 31 ],
+            "tuesday": [ 30, 9, 19, 29 ],
+            "wednesday": [ 11, 21, 31, 10 ],
+            "thursday": [ 9, 19, 29, 8 ],
+            "friday": [ 7, 17, 27, 6 ],
+            "saturday": [ 5, 15, 25, 4 ],
+            "sunday": [ 3, 13, 23, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 75,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/manufacturers-on-a-blue-background-1951.jpg',
+          title: 'Manufacturers on a blue background',
+          artist: 'Fernand Leger',
+          year: '1951',
+          rule: {
+            "monday": [ 3, 13, 23, 2 ],
+            "tuesday": [ 1, 11, 21, 31 ],
+            "wednesday": [ 30, 9, 19, 29 ],
+            "thursday": [ 11, 21, 31, 10 ],
+            "friday": [ 9, 19, 29, 8 ],
+            "saturday": [ 7, 17, 27, 6 ],
+            "sunday": [ 5, 15, 25, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
