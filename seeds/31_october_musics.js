@@ -166,6 +166,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 10,
+          user_id: 1,
+          theme: 'hardcore punk, metal and nurse with wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=423189070/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://nursewithwound1.bandcamp.com/album/automating-volume-one',
+          a_string: 'Automating Volume One by Nurse With Wound',
+          rule: {
+            "monday": [ 8, 18, 28, 31 ],
+            "tuesday": [ 7, 17, 27, 30 ],
+            "wednesday": [ 6, 16, 26, 29 ],
+            "thursday": [ 10, 20, 30, 2 ],
+            "saturday": [ 9, 19, 29, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 11,
+          user_id: 1,
+          theme: 'hardcore punk, metal and nurse with wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4251755056/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://candlelightrecordsuk.bandcamp.com/album/reverence',
+          a_string: 'Reverence by Emperor',
+          rule: {
+            "monday": [ 9, 19, 29, 1 ],
+            "tuesday": [ 8, 18, 28, 31 ],
+            "wednesday": [ 7, 17, 27, 30 ],
+            "thursday": [ 6, 16, 26, 29 ],
+            "saturday": [ 10, 20, 30, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 12,
+          user_id: 1,
+          theme: 'hardcore punk, metal and nurse with wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2218492553/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://i-voidhangerrecords.bandcamp.com/album/infamata',
+          a_string: 'Infamata by SHEIDIM',
+          rule: {
+            "monday": [ 10, 20, 30, 2 ],
+            "tuesday": [ 9, 19, 29, 1 ],
+            "wednesday": [ 8, 18, 28, 31 ],
+            "thursday": [ 7, 17, 27, 30 ],
+            "saturday": [ 6, 16, 26, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
