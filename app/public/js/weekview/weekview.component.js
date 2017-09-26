@@ -1363,6 +1363,79 @@
         });
       }
 
+      function updateClockEndButtons(timeblock, weekEditEndDecrease, weekEditEndIncrease) {
+        let weekDays = [ 'sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+        let endTime = document.getElementById('weekEditEnd').innerHTML;
+        let index = hoursTime.indexOf(endTime);
+        let checkTime;
+        let holder;
+        let priorDiv;
+        let postDiv;
+        let priorPriorDiv;
+        holder = timeblock.end_time.slice(0, 16);
+        checkTime = new Date(holder);
+        let dayPrefix = weekDays[checkTime.getDay()];
+        postDiv = document.getElementById(dayPrefix + hours[index]);
+        if (index === 1) {
+          weekEditEndDecrease.setAttribute("style", "visibility: hidden;");
+        } else {
+          priorDiv = document.getElementById(dayPrefix + hours[index - 1]);
+          priorPriorDiv = document.getElementById(dayPrefix + hours[index - 2]);
+          if (priorPriorDiv.children[0].appointment !== timeblock.id) {
+            weekEditEndDecrease.setAttribute("style", "visibility: hidden;");
+          } else {
+            weekEditEndDecrease.addEventListener('click', ()=>{
+              let decreaseEndSubmission = {};
+              let updatedEndTime = hoursTime[index - 1];
+              if (updatedEndTime.length < 5) {
+                updatedEndTime = '0' + updatedEndTime;
+              }
+              holder = timeblock.end_time.slice(0, 11);
+              let dateChange = new Date(holder + updatedEndTime + ':00.000Z');
+              decreaseEndSubmission.end_time = dateChange;
+              $http.patch(`/timeblocks/${timeblock.id}`, decreaseEndSubmission)
+              .then(()=>{
+                readAppointmentBlocks();
+                appointmentEditor(timeblock.id);
+                postDiv.children[0].appointment = timeblock.id;
+                $http.get(`/blocktypes/${timeblock.block_type}`)
+                .then(blockData=>{
+                  let block = blockData.data;
+                  postDiv.children[0].setAttribute("style", "background-color: " + block.color + "; opacity: 0.8; border-top: solid " + block.color + " 6px; border-bottom: solid " + block.color + " 1px;");
+                });
+              });
+            });
+          }
+        }
+        if (index === (hours.length - 1)) {
+          weekEditEndIncrease.setAttribute("style", "visibility: hidden;");
+        } else {
+          if (postDiv.children[0].appointment !== undefined) {
+            weekEditEndIncrease.setAttribute("style", "visibility: hidden;");
+          } else {
+            console.log('we listen here too');
+            weekEditEndIncrease.addEventListener('click', ()=>{
+              let increaseEndSubmission = {};
+              let increasedEndTime = hoursTime[index + 1];
+              if (increasedEndTime.length < 5) {
+                increasedEndTime = '0' + increasedEndTime;
+              }
+              holder = timeblock.end_time.slice(0, 11);
+              let changeDate = new Date(holder + increasedEndTime + ':00.000Z');
+              increaseEndSubmission.end_time = changeDate;
+              $http.patch(`/timeblocks/${timeblock.id}`, increaseEndSubmission)
+              .then(()=>{
+                readAppointmentBlocks();
+                appointmentEditor(timeblock.id);
+                startDiv.children[0].children[0].innerHTML = hoursTime[index];
+                startDiv.children[0].appointment = undefined;
+                startDiv.children[0].setAttribute("style", "background-color: transparent;");
+              });
+            });
+          }
+        }
+      }
+
       function updateClockStartButtons(timeblock, weekEditStartDecrease, weekEditStartIncrease) {
         let weekDays = [ 'sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
         let startTime = document.getElementById('weekEditStart').innerHTML;
@@ -1379,11 +1452,7 @@
         checkTime = new Date(holder);
         let dayPrefix = weekDays[checkTime.getDay()];
         let startDiv = document.getElementById(dayPrefix + hours[index]);
-        console.log(checkTime);
-        console.log(dayPrefix);
-        console.log(startTime);
-        console.log(index);
-        console.log(startDiv);
+
         if (index === 0) {
           weekEditStartDecrease.setAttribute("style", "visibility: hidden;");
         } else {
@@ -1623,6 +1692,7 @@
             updateStartDisplay(timeblock, weekEditStart);
             updateClockStartButtons(timeblock, weekEditStartDecrease, weekEditStartIncrease);
             updateEndDisplay(timeblock, weekEditEnd);
+            updateClockEndButtons(timeblock, weekEditEndDecrease, weekEditEndIncrease);
             populateUserLocation(timeblock, weekEditLocation);
             populateUserNotes(timeblock, weekEditUserNotes);
             timeCRUDPopup.setAttribute("style", "visibility: visible; opacity: 0.8; background: " + currentBlock.value + "; background-color: -webkit-linear-gradient(135deg, " + currentBlock.color + ", #abdada); background: -o-linear-gradient(135deg, " + currentBlock.color + ", #abdada); background: -moz-linear-gradient(135deg, " + currentBlock.color + ", #abdada); background: linear-gradient(135deg, " + currentBlock.color + ", #abdada); position: fixed; align-self: center; width: 64em; align-items: center; align-content: center; margin-left: 14em; margin-right: 10em; margin-top: 1em; padding-left: 3.6em; padding-right: 3.6em; border-radius: 10px; border: solid 3px #000000; overflow: scroll; height: 60%; z-index: 3;");
