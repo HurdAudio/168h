@@ -690,7 +690,6 @@
           }
           return ((year === startYear) && (month === startMonth) && (day === startDate));
         });
-        console.log(arr);
         return(arr);
       }
 
@@ -1220,9 +1219,92 @@
             });
           } else {
             console.log('this is where we open a new modal');
-            //TODO modal for blocktype CRUD interactions
             handleWeekviewBlocktypeCRUD(currentAppointment);
-            //TODO blocktype CRUD interactions
+          }
+        });
+      }
+
+      function handleSubtypeValueCRUD(timeblock) {
+        let subtypeValueCRUDPopup = document.getElementById('subtypeValueCRUDPopup');
+        let timeCRUDPopup = document.getElementById('timeCRUDPopup');
+        let weekSubvalTitle = document.getElementById('weekSubvalTitle');
+        let weekNewSubValueForm = document.getElementById('weekNewSubValueForm');
+        let weekSubtypeCRUDCancelButton = document.getElementById('weekSubtypeCRUDCancelButton');
+        let weekSubtypeValueField = document.getElementById('weekSubtypeValueField');
+        let weekSubtypeCRUDSubmitButton = document.getElementById('weekSubtypeCRUDSubmitButton');
+
+        subtypeValueCRUDPopup.setAttribute("style", "visibility: visible; opacity: 1; z-index: 2;");
+        timeCRUDPopup.setAttribute("style", "visibility: hidden; z-index: -1;");
+
+        $http.get(`/blocktypes/${timeblock.block_type}`)
+        .then(blockData=>{
+          let block = blockData.data;
+          weekSubvalTitle.setAttribute("style", "background: " + block.color + "; background-color: -webkit-linear-gradient(-135deg, " + block.color + ", #abdada); background: -o-linear-gradient(-135deg, " + block.color + ", #abdada); background: -moz-linear-gradient(-135deg, " + block.color + ", #abdada); background: linear-gradient(-135deg, " + block.color + ", #abdada);");
+          weekNewSubValueForm.setAttribute("style", "background: " + block.color + "; background-color: -webkit-linear-gradient(135deg, " + block.color +", #abdada); background: -o-linear-gradient(135deg, " + block.color + ", #abdada); background: -moz-linear-gradient(135deg, " + block.color + ", #abdada); background: linear-gradient(135deg, " + block.color + ", #abdada);");
+
+          weekSubtypeCRUDSubmitButton.addEventListener('click', ()=>{
+            console.log(weekSubtypeValueField.value);
+            if (weekSubtypeValueField.value === '') {
+              appointmentEditor(timeblock.id);
+              subtypeValueCRUDPopup.setAttribute("style", "visibility: hidden; z-index: -1;");
+            } else {
+              if (block.keys.keys.indexOf(weekSubtypeValueField.value) !== -1) {
+                appointmentEditor(timeblock.id);
+                subtypeValueCRUDPopup.setAttribute("style", "visibility: hidden; z-index: -1;");
+              } else {
+                let blockSubmitObj = {
+                  keys: block.keys
+                };
+                let timeblockSubmitObj = {
+                  block_data: timeblock.block_data
+                };
+                blockSubmitObj.keys[blockSubmitObj.keys.keys[0] + 'Values'].push(weekSubtypeValueField.value);
+                timeblockSubmitObj.block_data[blockSubmitObj.keys.keys[0]] = blockSubmitObj.keys[blockSubmitObj.keys.keys[0] + 'Values'].indexOf(weekSubtypeValueField.value);
+
+                $http.patch(`/blocktypes/${block.id}`, blockSubmitObj)
+                .then(()=>{
+                  $http.patch(`/timeblocks/${timeblock.id}`, timeblockSubmitObj)
+                  .then(()=>{
+                    appointmentEditor(timeblock.id);
+                    subtypeValueCRUDPopup.setAttribute("style", "visibility: hidden; z-index: -1;");
+                    weekSubtypeValueField.value = '';
+                  });
+                });
+              }
+            }
+          });
+
+          weekSubtypeCRUDCancelButton.addEventListener('click', ()=>{
+
+            appointmentEditor(timeblock.id);
+            subtypeValueCRUDPopup.setAttribute("style", "visibility: hidden; z-index: -1;");
+            weekSubtypeValueField.value = '';
+
+          });
+
+        });
+      }
+
+      function weekBlockKeysListener(selectorElement, timeblock) {
+        selectorElement.addEventListener('change', ()=>{
+          if (selectorElement.value !== 'add new value...') {
+            $http.get(`/blocktypes/${timeblock.block_type}`)
+            .then(blockData=>{
+              let block = blockData.data;
+              let subObj = {
+                block_data: timeblock.block_data
+              };
+              subObj.block_data[block.keys.keys[0]] = block.keys[block.keys.keys[0] + 'Values'].indexOf(selectorElement.value);
+              $http.patch(`/timeblocks/${timeblock.id}`, subObj)
+              .then(updateTimeData=>{
+                let updateTime = updateTimeData.data;
+                console.log(updateTime);
+              });
+            });
+          } else {
+            //TODO value CRUD
+            console.log('we crud here');
+            handleSubtypeValueCRUD(timeblock);
           }
         });
       }
@@ -1394,6 +1476,7 @@
             if ((currentBlock.keys !== null) && (currentBlock.keys !== undefined) && (currentBlock.keys.keys.length > 0)) {
               populateBlockSubkeys(currentBlock, blocks, timeblock, weekBlockKeysSelector);
               weekBlockKeys.setAttribute("style", "display: initial;");
+              weekBlockKeysListener(weekBlockKeysSelector, timeblock, currentBlock);
               if (currentBlock.keys.keys.length > 1) {
                 populateBlockExtraValues(currentBlock, blocks, timeblock, weekAdditionalKeys);
                 weekAdditionalKeys.setAttribute("style", "display: initial; margin-left: 24em;");

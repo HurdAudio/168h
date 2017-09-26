@@ -3030,8 +3030,26 @@ footer img {
   border-radius: 5px;
 
 }
+
 #weekBlockTitle {
 
+  font-family: 'Asul', serif;
+  font-size: 36px;
+  background: #22ac44;
+  background-color: -webkit-linear-gradient(-135deg, #22ac44, #abdada);
+  background: -o-linear-gradient(-135deg, #22ac44, #abdada);
+  background: -moz-linear-gradient(-135deg, #22ac44, #abdada);
+  background: linear-gradient(-135deg, #22ac44, #abdada);
+  padding: 0;
+  margin: 0;
+  margin-left: 8em;
+  margin-top: 1em;
+  padding-left: 2em;
+  width: 26.09em;
+  border-radius: 5px;
+}
+
+#weekSubvalTitle {
   font-family: 'Asul', serif;
   font-size: 36px;
   background: #22ac44;
@@ -3068,6 +3086,26 @@ footer img {
   height: 550px;
 }
 
+#weekNewSubValueForm {
+  opacity: 0.9;
+
+  font-family: 'Alike Angular', serif;
+  font-size: 24px;
+  background: #22ac44;
+  background-color: -webkit-linear-gradient(135deg, #22ac44, #abdada);
+  background: -o-linear-gradient(135deg, #22ac44, #abdada);
+  background: -moz-linear-gradient(135deg, #22ac44, #abdada);
+  background: linear-gradient(135deg, #22ac44, #abdada);
+  margin-left: 12em;
+  width: 35.11em;
+  padding-left: 3.5em;
+  padding-right: 3.5em;
+  z-index: 5;
+  border-radius: 5px;
+  overflow: scroll;
+  height: 250px;
+}
+
 #weekBlocktypeCRUDType {
   width: 27em;
   margin-left: 3em;
@@ -3102,6 +3140,11 @@ footer img {
   height: auto;
   padding: 0;
   float: left;
+}
+
+#weekSubtypeValueField {
+  width: 27em;
+  margin-left: 3em;
 }
 
 #addingTheWeekSubtypes input[type=text] {
@@ -3148,6 +3191,11 @@ footer img {
 
 #blocktypeCRUDPopup {
   position: fixed;
+  visibility: hidden;
+}
+
+#subtypeValueCRUDPopup {
+  position:fixed;
   visibility: hidden;
 }
 
@@ -3243,4 +3291,14 @@ footer img {
 #weekEditAppointmentCancel {
   float: left;
   margin-left: 8%;
+}
+
+#weekSubtypeCRUDSubmitButton {
+  float: left;
+  margin-left: 20%;
+}
+
+#weekSubtypeCRUDCancelButton {
+  float: left;
+  margin-left: 20%;
 }
