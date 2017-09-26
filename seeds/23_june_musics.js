@@ -598,6 +598,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 34,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1904128458/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://brianconniffe.bandcamp.com/album/bornless-ep',
+          a_string: 'Bornless EP by Brian Conniffe',
+          rule: {
+            "monday": [ 2, 6, 12, 23 ],
+            "tuesday": [ 1, 9, 11, 22 ],
+            "wednesday": [ 5, 9, 15, 26 ],
+            "thursday": [ 4, 8, 14, 24 ],
+            "saturday": [ 3, 7, 12, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 35,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=911509297/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://timhecker.bandcamp.com/album/harmony-in-ultraviolet',
+          a_string: 'Harmony In Ultraviolet by Tim Hecker',
+          rule: {
+            "monday": [ 4, 8, 13, 25 ],
+            "tuesday": [ 3, 7, 13, 24 ],
+            "wednesday": [ 2, 10, 12, 23 ],
+            "thursday": [ 6, 10, 16, 27 ],
+            "saturday": [ 5, 9, 15, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 36,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2967472899/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://kaitlynaureliasmith.bandcamp.com/album/frkwys-vol-13-sunergy',
+          a_string: 'FRKWYS Vol. 13: Sunergy by Kaitlyn Aurelia Smith &amp; Suzanne Ciani',
+          rule: {
+            "monday": [ 5, 9, 15, 25 ],
+            "tuesday": [ 4, 8, 13, 25 ],
+            "wednesday": [ 3, 7, 13, 24 ],
+            "thursday": [ 2, 10, 12, 23 ],
+            "saturday": [ 6, 10, 16, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
