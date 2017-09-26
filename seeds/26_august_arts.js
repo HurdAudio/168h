@@ -804,6 +804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 41,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/la-femme-l-ventail-woman-with-fan-1913.jpg',
+          title: 'La Femme à l\'Éventail (Woman with Fan)',
+          artist: 'Jean Metzinger',
+          year: '1913',
+          rule: {
+            "monday": [ 6, 10, 18, 3 ],
+            "tuesday": [ 5, 9, 17, 2 ],
+            "wednesday": [ 4, 7, 16, 1 ],
+            "thursday": [ 3, 7, 15, 31 ],
+            "friday": [ 9, 13, 21, 6 ],
+            "saturday": [ 8, 11, 20, 5 ],
+            "sunday": [ 7, 11, 19, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 42,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/still-life-with-t-ang-horse-1921.jpg',
+          title: 'Still Life with T\'ang Horse',
+          artist: 'Roger Fry',
+          year: '1921',
+          rule: {
+            "monday": [ 8, 12, 20, 5 ],
+            "tuesday": [ 7, 11, 19, 4 ],
+            "wednesday": [ 6, 10, 18, 3 ],
+            "thursday": [ 5, 8, 17, 2 ],
+            "friday": [ 4, 8, 16, 1 ],
+            "saturday": [ 10, 14, 22, 7 ],
+            "sunday": [ 9, 12, 21, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 43,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/picture-xvi-the-great-gate-of-kiev-stage-set-for-mussorgsky-s-pictures-at-an-exhibition-in-1928(1).jpg',
+          title: 'Picture XVI, The Great Gate of Kiev. Stage set for Mussorgsky\'s Pictures at an Exhibition in Friedrich Theater, Dessau.',
+          artist: 'Wassily Kandinsky',
+          year: '1928',
+          rule: {
+            "monday": [ 9, 12, 21, 6 ],
+            "tuesday": [ 8, 12, 20, 5 ],
+            "wednesday": [ 7, 11, 19, 4 ],
+            "thursday": [ 6, 10, 18, 3 ],
+            "friday": [ 5, 8, 17, 2 ],
+            "saturday": [ 4, 8, 16, 1 ],
+            "sunday": [ 10, 14, 22, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 44,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/eiffel-tower.jpg',
+          title: 'Eiffel Tower',
+          artist: 'Robert Delaunay',
+          year: '1922',
+          rule: {
+            "monday": [ 10, 14, 22, 7 ],
+            "tuesday": [ 9, 12, 21, 6 ],
+            "wednesday": [ 8, 12, 20, 5 ],
+            "thursday": [ 7, 11, 19, 4 ],
+            "friday": [ 6, 10, 18, 3 ],
+            "saturday": [ 5, 8, 17, 2 ],
+            "sunday": [ 4, 8, 16, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 45,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/visitation-in-blue.jpg',
+          title: 'Visitation in Blue',
+          artist: 'Maurice Denis',
+          year: '?',
+          rule: {
+            "monday": [ 4, 8, 16, 1 ],
+            "tuesday": [ 10, 14, 22, 7 ],
+            "wednesday": [ 9, 12, 21, 6 ],
+            "thursday": [ 8, 12, 20, 5 ],
+            "friday": [ 7, 11, 19, 4 ],
+            "saturday": [ 6, 10, 18, 3 ],
+            "sunday": [ 5, 8, 17, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
