@@ -1397,12 +1397,10 @@
               .then(()=>{
                 readAppointmentBlocks();
                 appointmentEditor(timeblock.id);
-                postDiv.children[0].appointment = timeblock.id;
-                $http.get(`/blocktypes/${timeblock.block_type}`)
-                .then(blockData=>{
-                  let block = blockData.data;
-                  postDiv.children[0].setAttribute("style", "background-color: " + block.color + "; opacity: 0.8; border-top: solid " + block.color + " 6px; border-bottom: solid " + block.color + " 1px;");
-                });
+                priorDiv.children[0].appointment = undefined;
+                priorDiv.children[0].setAttribute("style", "background-color: transparent;");
+
+
               });
             });
           }
@@ -1427,9 +1425,9 @@
               .then(()=>{
                 readAppointmentBlocks();
                 appointmentEditor(timeblock.id);
-                startDiv.children[0].children[0].innerHTML = hoursTime[index];
-                startDiv.children[0].appointment = undefined;
-                startDiv.children[0].setAttribute("style", "background-color: transparent;");
+                // startDiv.children[0].children[0].innerHTML = hoursTime[index];
+                // startDiv.children[0].appointment = undefined;
+                // startDiv.children[0].setAttribute("style", "background-color: transparent;");
               });
             });
           }
