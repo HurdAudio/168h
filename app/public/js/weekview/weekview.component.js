@@ -839,37 +839,89 @@
         element.innerHTML = 'add new value...';
       }
 
+      function handleListenerAdditionalTypes(element, timeblock, currentBlock, keyString, index) {
+        element.addEventListener('focusout', ()=>{
+          console.log('focusout');
+          let subObj = {
+            block_data: timeblock.block_data
+          };
+          if (subObj.block_data[keyString] === undefined) {
+            subObj.block_data[keyString] = [];
+          }
+          if (element.value !== '') {
+            subObj.block_data[keyString][index] = element.value;
+            $http.patch(`/timeblocks/${timeblock.id}`, subObj)
+            .then(()=>{
+              console.log(subObj);
+            });
+          }
+
+        });
+      }
+
+      function handleButtonFieldsListener(element, timeblock, currentBlock, fieldString) {
+
+
+
+        element.addEventListener('click', ()=>{
+          let emptyFields = false;
+          let kids = element.parentNode.children;
+          let addOn;
+          let index = kids.length - 2;
+          for (let i = 2; i < kids.length; i++) {
+            if (kids[i].value === '') {
+              emptyFields = true;
+            }
+          }
+          if (!emptyFields) {
+            addOn = document.createElement('input');
+            element.parentNode.appendChild(addOn);
+            addOn.type = 'text';
+            addOn.class = 'pure-input-1';
+            addOn.setAttribute("style", "font-family: 'Alike Angular', serif; font-size: 18px; margin-left: 8em; width: 20em;");
+            handleListenerAdditionalTypes(addOn, timeblock, currentBlock, fieldString, index);
+          }
+        });
+      }
+
       function populateBlockExtraValues(currentBlock, blocks, timeblock, valuesDiv) {
         let element;
+        let subDiv;
 
         while (valuesDiv.firstChild) {
           valuesDiv.removeChild(valuesDiv.firstChild);
         }
 
         for (let i = 1; i < currentBlock.keys.keys.length; i++) {
+          subDiv = document.createElement('div');
+          valuesDiv.appendChild(subDiv);
+          subDiv.id = currentBlock.keys.keys[i];
           element = document.createElement('h1');
-          valuesDiv.appendChild(element);
+          subDiv.appendChild(element);
           element.setAttribute("style", "font-family: 'Alike Angular', serif; font-size: 24px; color: #000000; margin-left: 5em;");
           element.innerHTML = currentBlock.keys.keys[i] + ':';
           element = document.createElement('button');
-          valuesDiv.appendChild(element);
+          subDiv.appendChild(element);
           element.innerHTML = 'add new';
           element.setAttribute("style", "font-weight: bolder; font-family: 'Asul', sans-serif; font-size: 24px; background: " + currentBlock.color + "; background-color: -webkit-linear-gradient(135deg, " + currentBlock.color + ", #ffffff); background: -o-linear-gradient(135deg, " + currentBlock.color + ", #ffffff); background: -moz-linear-gradient(135deg, " + currentBlock.color + ", #ffffff); background: linear-gradient(135deg, " + currentBlock.color + ", #ffffff); opacity: 0.7; margin-left: 7em; margin-top: 0; margin-bottom: 0;");
+          handleButtonFieldsListener(element, timeblock, currentBlock, currentBlock.keys.keys[i]);
           if ((timeblock.block_data !== null) && (timeblock.block_data !== undefined) && (timeblock.block_data[currentBlock.keys.keys[i]] !== undefined)) {
             for (let j = 0; j < timeblock.block_data[currentBlock.keys.keys[i]].length; j++) {
               element = document.createElement('input');
-              valuesDiv.appendChild(element);
+              subDiv.appendChild(element);
               element.type = 'text';
               element.class = 'pure-input-1';
               element.setAttribute("style", "font-family: 'Alike Angular', serif; font-size: 18px; margin-left: 8em; width: 20em;");
               element.value = timeblock.block_data[currentBlock.keys.keys[i]][j];
+              handleListenerAdditionalTypes(element, timeblock, currentBlock, currentBlock.keys.keys[i], j);
             }
           } else {
             element = document.createElement('input');
-            valuesDiv.appendChild(element);
+            subDiv.appendChild(element);
             element.type = 'text';
             element.class = 'pure-input-1';
             element.setAttribute("style", "font-family: 'Alike Angular', serif; font-size: 18px; margin-left: 8em; width: 20em;");
+            handleListenerAdditionalTypes(element, timeblock, currentBlock, currentBlock.keys.keys[i], 0);
           }
 
         }
