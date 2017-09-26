@@ -814,6 +814,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 46,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1498188536/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://aramshelton.bandcamp.com/album/octet',
+          a_string: 'OCTET by Aram Shelton',
+          rule: {
+            "monday": [ 9, 17, 29, 4 ],
+            "tuesday": [ 8, 16, 28, 3 ],
+            "wednesday": [ 7, 15, 27, 2 ],
+            "thursday": [ 6, 14, 26, 1 ],
+            "saturday": [ 10, 18, 30, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 47,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2521744569/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://aramshelton.bandcamp.com/album/bygning-g',
+          a_string: 'Bygning G by Aram Shelton &amp; Håkon Berre',
+          rule: {
+            "monday": [ 10, 18, 30, 5 ],
+            "tuesday": [ 9, 17, 29, 4 ],
+            "wednesday": [ 8, 16, 28, 3 ],
+            "thursday": [ 7, 15, 27, 2 ],
+            "saturday": [ 6, 14, 26, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 48,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3183556239/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://aramshelton.bandcamp.com/album/sticks-and-reed',
+          a_string: 'Sticks and Reed by Aram Shelton &amp; Frank Rosaly',
+          rule: {
+            "monday": [ 6, 14, 26, 1 ],
+            "tuesday": [ 10, 18, 30, 5 ],
+            "wednesday": [ 9, 17, 29, 4 ],
+            "thursday": [ 8, 16, 28, 3 ],
+            "saturday": [ 7, 15, 27, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
