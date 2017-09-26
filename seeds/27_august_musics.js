@@ -382,6 +382,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 22,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=920537162/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://idmtheftable.bandcamp.com/album/hangin-flaccid-like-a-wet-lilac',
+          a_string: 'Hangin&#39; Flaccid Like a Wet Lilac by i&#39;d m thfft able',
+          rule: {
+            "monday": [ 11, 19, 4, 5 ],
+            "tuesday": [ 10, 18, 3, 4 ],
+            "wednesday": [ 7, 15, 31, 30 ],
+            "thursday": [ 8, 16, 1, 31 ],
+            "saturday": [ 7, 15, 31, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 23,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=946995988/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sipulijaska.bandcamp.com/album/algoritmi',
+          a_string: 'Algoritmi by Sipulijaska',
+          rule: {
+            "monday": [ 7, 15, 31, 30 ],
+            "tuesday": [ 11, 19, 4, 5 ],
+            "wednesday": [ 10, 18, 3, 4 ],
+            "thursday": [ 7, 15, 31, 30 ],
+            "saturday": [ 8, 16, 1, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 24,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=563982890/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ambifunk.bandcamp.com/album/live-at-akusmata-helsinki-02112016',
+          a_string: 'Live at Akusmata, Helsinki 02.11.2016 by Robert Jürjendal, Kaido Kirikmäe, Petri Kuljuntausta',
+          rule: {
+            "monday": [ 8, 16, 1, 31 ],
+            "tuesday": [ 7, 15, 31, 30 ],
+            "wednesday": [ 11, 19, 4, 5 ],
+            "thursday": [ 10, 18, 3, 4 ],
+            "saturday": [ 7, 15, 31, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
