@@ -604,6 +604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 31,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/monadi-1949.jpg',
+          title: 'Monadi',
+          artist: 'Mario Ballocco',
+          year: '1949',
+          rule: {
+            "monday": [ 1, 7, 25, 3 ],
+            "tuesday": [ 7, 13, 1, 9 ],
+            "wednesday": [ 6, 12, 30, 8 ],
+            "thursday": [ 5, 11, 29, 7 ],
+            "friday": [ 4, 10, 28, 6 ],
+            "saturday": [ 3, 9, 27, 5 ],
+            "sunday": [ 2, 8, 26, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 32,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/est-calor-em-evora-1983.jpg',
+          title: 'Està Calor em Evora',
+          artist: 'Antonio Dacosta',
+          year: '1983',
+          rule: {
+            "monday": [ 2, 8, 26, 4 ],
+            "tuesday": [ 1, 7, 25, 3 ],
+            "wednesday": [ 7, 13, 1, 9 ],
+            "thursday": [ 6, 12, 30, 8 ],
+            "friday": [ 5, 11, 29, 7 ],
+            "saturday": [ 4, 10, 28, 6 ],
+            "sunday": [ 3, 9, 27, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 33,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/cronus-young-1968.jpg',
+          title: 'Cronus Young',
+          artist: 'David Hare',
+          year: '1968',
+          rule: {
+            "monday": [ 3, 9, 27, 5 ],
+            "tuesday": [ 2, 8, 26, 4 ],
+            "wednesday": [ 1, 7, 25, 3 ],
+            "thursday": [ 7, 13, 1, 9 ],
+            "friday": [ 6, 12, 30, 8 ],
+            "saturday": [ 5, 11, 29, 7 ],
+            "sunday": [ 4, 10, 28, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 34,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/typographic-nude-1965.jpg',
+          title: 'Typographic Nude',
+          artist: 'Robert Heinecken',
+          year: '1965',
+          rule: {
+            "monday": [ 4, 10, 28, 6 ],
+            "tuesday": [ 3, 9, 27, 5 ],
+            "wednesday": [ 2, 8, 26, 4 ],
+            "thursday": [ 1, 7, 25, 3 ],
+            "friday": [ 7, 13, 1, 9 ],
+            "saturday": [ 6, 12, 30, 8 ],
+            "sunday": [ 5, 11, 29, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 35,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/10th-sculpture-1963.jpg',
+          title: '10th Sculpture',
+          artist: 'Michael Bolus',
+          year: '1963',
+          rule: {
+            "monday": [ 6, 12, 30, 8 ],
+            "tuesday": [ 5, 11, 29, 7 ],
+            "wednesday": [ 4, 10, 28, 6 ],
+            "thursday": [ 3, 9, 27, 5 ],
+            "friday": [ 2, 8, 26, 4 ],
+            "saturday": [ 8, 14, 2, 10 ],
+            "sunday": [ 7, 13, 1, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
