@@ -782,8 +782,10 @@
       function updateToplineCRUD (timeblock, element) {
         let daysOfWeek = [ 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
         let monthsOfYear = [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ];
-        let startTime = new Date(timeblock.start_time);
-        let endTime = new Date(timeblock.end_time);
+        let holder = timeblock.start_time.slice(0, 16);
+        let startTime = new Date(holder);
+        holder = timeblock.end_time.slice(0, 16);
+        let endTime = new Date(holder);
         let checkDate;
         let dateString = '';
 
@@ -1361,6 +1363,82 @@
         });
       }
 
+      function updateClockStartButtons(timeblock, weekEditStartDecrease, weekEditStartIncrease) {
+        let weekDays = [ 'sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+        let startTime = document.getElementById('weekEditStart').innerHTML;
+        let index = hoursTime.indexOf(startTime);
+        let checkTime;
+        let holder;
+        let priorDiv;
+        let postDiv;
+        if (index !== 0) {
+          holder = timeblock.start_time.slice(0, 16);
+        } else {
+          holder = timeblock.end_time.slice(0, 16);
+        }
+        checkTime = new Date(holder);
+        let dayPrefix = weekDays[checkTime.getDay()];
+        let startDiv = document.getElementById(dayPrefix + hours[index]);
+        console.log(checkTime);
+        console.log(dayPrefix);
+        console.log(startTime);
+        console.log(index);
+        console.log(startDiv);
+        if (index === 0) {
+          weekEditStartDecrease.setAttribute("style", "visibility: hidden;");
+        } else {
+          priorDiv = document.getElementById(dayPrefix + hours[index - 1]);
+          if (priorDiv.children[0].appointment !== undefined) {
+            weekEditStartDecrease.setAttribute("style", "visibility: hidden;");
+          } else {
+            weekEditStartDecrease.addEventListener('click', ()=>{
+              let decreaseStartSubmission = {};
+              let updatedStartTime = hoursTime[index - 1];
+              if (updatedStartTime.length < 5) {
+                updatedStartTime = '0' + updatedStartTime;
+              }
+              holder = timeblock.start_time.slice(0, 11);
+              let dateChange = new Date(holder + updatedStartTime + ':00.000Z');
+              decreaseStartSubmission.start_time = dateChange;
+              $http.patch(`/timeblocks/${timeblock.id}`, decreaseStartSubmission)
+              .then(()=>{
+                readAppointmentBlocks();
+                appointmentEditor(timeblock.id);
+                startDiv.children[0].children[0].innerHTML = hoursTime[index];
+                priorDiv.children[0].appointment = timeblock.id;
+              });
+            });
+          }
+        }
+        if (index === (hours.length - 2)) {
+          weekEditStartIncrease.setAttribute("style", "visibility: hidden;");
+        } else {
+          postDiv = document.getElementById(dayPrefix + hours[index + 1]);
+          if (postDiv.children[0].appointment !== timeblock.id) {
+            weekEditStartIncrease.setAttribute("style", "visibility: hidden;");
+          } else {
+            weekEditStartIncrease.addEventListener('click', ()=>{
+              let increaseSubmission = {};
+              let increasedStartTime = hoursTime[index + 1];
+              if (increasedStartTime.length < 5) {
+                increasedStartTime = '0' + increasedStartTime;
+              }
+              holder = timeblock.start_time.slice(0, 11);
+              let changeDate = new Date(holder + increasedStartTime + ':00.000Z');
+              increaseSubmission.start_time = changeDate;
+              $http.patch(`/timeblocks/${timeblock.id}`, increaseSubmission)
+              .then(()=>{
+                readAppointmentBlocks();
+                appointmentEditor(timeblock.id);
+                startDiv.children[0].children[0].innerHTML = hoursTime[index];
+                startDiv.children[0].appointment = undefined;
+                startDiv.children[0].setAttribute("style", "background-color: transparent;");
+              });
+            });
+          }
+        }
+      }
+
       function appointmentEditor(appointment) {
         let timeCRUDPopup = document.getElementById('timeCRUDPopup');
         let weekStrip = document.getElementById('weekStrip');
@@ -1543,9 +1621,9 @@
               weekAdditionalKeys.setAttribute("style", "display: none;");
             }
             updateStartDisplay(timeblock, weekEditStart);
+            updateClockStartButtons(timeblock, weekEditStartDecrease, weekEditStartIncrease);
             updateEndDisplay(timeblock, weekEditEnd);
             populateUserLocation(timeblock, weekEditLocation);
-            console.log(timeblock.location);
             populateUserNotes(timeblock, weekEditUserNotes);
             timeCRUDPopup.setAttribute("style", "visibility: visible; opacity: 0.8; background: " + currentBlock.value + "; background-color: -webkit-linear-gradient(135deg, " + currentBlock.color + ", #abdada); background: -o-linear-gradient(135deg, " + currentBlock.color + ", #abdada); background: -moz-linear-gradient(135deg, " + currentBlock.color + ", #abdada); background: linear-gradient(135deg, " + currentBlock.color + ", #abdada); position: fixed; align-self: center; width: 64em; align-items: center; align-content: center; margin-left: 14em; margin-right: 10em; margin-top: 1em; padding-left: 3.6em; padding-right: 3.6em; border-radius: 10px; border: solid 3px #000000; overflow: scroll; height: 60%; z-index: 3;");
             weekEditAppointmentDelete.addEventListener('click', ()=>{
