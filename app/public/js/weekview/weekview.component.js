@@ -1508,6 +1508,34 @@
         }
       }
 
+      function handleLocationListener(timeblock, weekEditLocation) {
+        weekEditLocation.addEventListener('focusout', ()=>{
+          let sub = {
+            location: weekEditLocation.value
+          };
+          if (timeblock.location !== sub.location) {
+            $http.patch(`/timeblocks/${timeblock.id}`, sub)
+            .then(()=>{
+              console.log('patched');
+            });
+          }
+        });
+      }
+
+      function handleUserNotesListener(timeblock, weekEditUserNotes) {
+        weekEditUserNotes.addEventListener('focusout', ()=>{
+          let sub = {
+            user_notes: weekEditUserNotes.value
+          };
+          if (timeblock.user_notes !== sub.user_notes) {
+            $http.patch(`/timeblocks/${timeblock.id}`, sub)
+            .then(()=>{
+              console.log('patched');
+            });
+          }
+        });
+      }
+
       function appointmentEditor(appointment) {
         let timeCRUDPopup = document.getElementById('timeCRUDPopup');
         let weekStrip = document.getElementById('weekStrip');
@@ -1694,7 +1722,9 @@
             updateEndDisplay(timeblock, weekEditEnd);
             updateClockEndButtons(timeblock, weekEditEndDecrease, weekEditEndIncrease);
             populateUserLocation(timeblock, weekEditLocation);
+            handleLocationListener(timeblock, weekEditLocation);
             populateUserNotes(timeblock, weekEditUserNotes);
+            handleUserNotesListener(timeblock, weekEditUserNotes);
             timeCRUDPopup.setAttribute("style", "visibility: visible; opacity: 0.8; background: " + currentBlock.value + "; background-color: -webkit-linear-gradient(135deg, " + currentBlock.color + ", #abdada); background: -o-linear-gradient(135deg, " + currentBlock.color + ", #abdada); background: -moz-linear-gradient(135deg, " + currentBlock.color + ", #abdada); background: linear-gradient(135deg, " + currentBlock.color + ", #abdada); position: fixed; align-self: center; width: 64em; align-items: center; align-content: center; margin-left: 14em; margin-right: 10em; margin-top: 1em; padding-left: 3.6em; padding-right: 3.6em; border-radius: 10px; border: solid 3px #000000; overflow: scroll; height: 60%; z-index: 3;");
             weekEditAppointmentDelete.addEventListener('click', ()=>{
               deleteAppointment(timeblock);
