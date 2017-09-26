@@ -1604,6 +1604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 81,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/ballpark_480x225.jpg',
+          title: 'Globe Life Park in Arlington',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 8, 13, 19, 25 ],
+            "tuesday": [ 7, 12, 18, 24 ],
+            "wednesday": [ 12, 18, 23, 30 ],
+            "thursday": [ 26, 16, 23, 29 ],
+            "friday": [ 11, 16, 22, 28 ],
+            "saturday": [ 10, 14, 29, 27 ],
+            "sunday": [ 9, 14, 19, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 82,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/rangers_ballpark_in_arlington.jpg',
+          title: 'Globe Life Park on Opening Day 2009',
+          artist: 'Alan Garrison',
+          year: '2009',
+          rule: {
+            "monday": [ 9, 14, 19, 26 ],
+            "tuesday": [ 8, 13, 19, 25 ],
+            "wednesday": [ 7, 12, 18, 24 ],
+            "thursday": [ 12, 18, 23, 30 ],
+            "friday": [ 26, 16, 23, 29 ],
+            "saturday": [ 11, 16, 22, 28 ],
+            "sunday": [ 10, 14, 29, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 83,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/b79ced3fe9d22a05cba2ed8fdad67aaf--sports-decor-sports-art.jpg',
+          title: 'Texas Ranger catcher Pudge Rodriguez',
+          artist: 'Robert Hurst',
+          year: '?',
+          rule: {
+            "monday": [ 10, 14, 29, 27 ],
+            "tuesday": [ 9, 14, 19, 26 ],
+            "wednesday": [ 8, 13, 19, 25 ],
+            "thursday": [ 7, 12, 18, 24 ],
+            "friday": [ 12, 18, 23, 30 ],
+            "saturday": [ 26, 16, 23, 29 ],
+            "sunday": [ 11, 16, 22, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 84,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/0811 Rangers art 2.jpeg',
+          title: 'Texas Rangers: Joey Gallo',
+          artist: 'Richard W. Rodriguez',
+          year: '2017',
+          rule: {
+            "monday": [ 11, 16, 22, 28 ],
+            "tuesday": [ 10, 14, 29, 27 ],
+            "wednesday": [ 9, 14, 19, 26 ],
+            "thursday": [ 8, 13, 19, 25 ],
+            "friday": [ 7, 12, 18, 24 ],
+            "saturday": [ 12, 18, 23, 30 ],
+            "sunday": [ 26, 16, 23, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 85,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/Nolan-Ryan-Texas-Rangers-MLB-Art-by-E-L-Vela_art.jpg',
+          title: 'Nolan Ryan, Texas Rangers',
+          artist: 'E. L. Vela',
+          year: '2011',
+          rule: {
+            "monday": [ 26, 16, 23, 29 ],
+            "tuesday": [ 11, 16, 22, 28 ],
+            "wednesday": [ 10, 14, 29, 27 ],
+            "thursday": [ 9, 14, 19, 26 ],
+            "friday": [ 8, 13, 19, 25 ],
+            "saturday": [ 7, 12, 18, 24 ],
+            "sunday": [ 12, 18, 23, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
