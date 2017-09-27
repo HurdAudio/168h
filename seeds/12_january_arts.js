@@ -2204,6 +2204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 111,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/conjunto-dos-contr-rios-1989.jpg',
+          title: 'Conjunto dos Contrários',
+          artist: 'Eduardo Nery',
+          year: '1989',
+          rule: {
+            "monday": [ 27, 29, 30, 1 ],
+            "tuesday": [ 29, 31, 4, 7 ],
+            "wednesday": [ 31, 2, 3, 6 ],
+            "thursday": [ 16, 17, 28, 20 ],
+            "friday": [ 19, 21, 23, 2 ],
+            "saturday": [ 21, 22, 14, 17 ],
+            "sunday": [ 24, 25, 16, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 112,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/untitled-1985.jpg',
+          title: 'Untitled',
+          artist: 'Alberto Biasi',
+          year: '1985',
+          rule: {
+            "monday": [ 25, 26, 17, 21 ],
+            "tuesday": [ 28, 30, 31, 2 ],
+            "wednesday": [ 30, 1, 5, 8 ],
+            "thursday": [ 1, 3, 4, 7 ],
+            "friday": [ 17, 18, 29, 21 ],
+            "saturday": [ 20, 22, 24, 3 ],
+            "sunday": [ 22, 23, 15, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 113,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/print-1-from-paper-clip-suite-1974.jpg',
+          title: 'Print 1 From Paper Clip Suite',
+          artist: 'Richard Smith',
+          year: '1974',
+          rule: {
+            "monday": [ 22, 23, 15, 18 ],
+            "tuesday": [ 25, 26, 17, 21 ],
+            "wednesday": [ 28, 30, 31, 2 ],
+            "thursday": [ 30, 1, 5, 8 ],
+            "friday": [ 1, 3, 4, 7 ],
+            "saturday": [ 17, 18, 29, 21 ],
+            "sunday": [ 20, 22, 24, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 114,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/after-malevich-02-2012.jpg',
+          title: 'After Malevich 02',
+          artist: 'Tess Jaray',
+          year: '2012',
+          rule: {
+            "monday": [ 20, 22, 24, 3 ],
+            "tuesday": [ 22, 23, 15, 18 ],
+            "wednesday": [ 25, 26, 17, 21 ],
+            "thursday": [ 28, 30, 31, 2 ],
+            "friday": [ 30, 1, 5, 8 ],
+            "saturday": [ 1, 3, 4, 7 ],
+            "sunday": [ 17, 18, 29, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 115,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/4-trames-de-tirets-pivot-es-sur-un-c-t-1971.jpg',
+          title: '4 trames de tirets pivotées sur un côté',
+          artist: 'Francois Morellet',
+          year: '1971',
+          rule: {
+            "monday": [ 17, 18, 29, 21 ],
+            "tuesday": [ 20, 22, 24, 3 ],
+            "wednesday": [ 22, 23, 15, 18 ],
+            "thursday": [ 25, 26, 17, 21 ],
+            "friday": [ 28, 30, 31, 2 ],
+            "saturday": [ 30, 1, 5, 8 ],
+            "sunday": [ 1, 3, 4, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
