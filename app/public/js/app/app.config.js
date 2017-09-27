@@ -42,7 +42,7 @@
       })
       .state({
         name: 'monthview',
-        url: '/monthview',
+        url: '/monthview/:id',
         parent: 'app',
         component: 'monthview'
       })

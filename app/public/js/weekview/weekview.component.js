@@ -1,7 +1,9 @@
 (function() {
   'use strict';
   var dayClock = false;
-  var weekClock = false;
+  var weekClock = true;
+  var monthClock = false;
+  var landingClock = false;
   var myTimer = setInterval(setClockWeek,1000);
   var currentUserId = 0;
   var mondayDate = new Date();
@@ -46,8 +48,10 @@
 
 
   function setClockWeek(){
-    if ((weekClock) && (!dayClock)) {
-       document.getElementById("clockWeekview").innerHTML=new Date().toLocaleTimeString('en-GB');
+    if ((weekClock) && (!dayClock) && (!monthClock) && (!landingClock)) {
+      if(document.getElementById("clockWeekview")) {
+        document.getElementById("clockWeekview").innerHTML=new Date().toLocaleTimeString('en-GB');
+      }
      }
   }
 
@@ -68,6 +72,25 @@
       vm.gotoPreviousWeek = gotoPreviousWeek;
       vm.gotoNextWeek = gotoNextWeek;
       vm.toDayview = toDayview;
+      vm.gotoMonth = gotoMonth;
+
+      function gotoMonth() {
+        let mons = new Date(mondayDate);
+        let suns = new Date(sundayDate);
+        let month = (mons.getMonth() + 1);
+        let year = mons.getFullYear();
+        if (mons.getMonth() !== suns.getMonth()) {
+          if (suns.getDate() > 3) {
+            month = (suns.getMonth() +1);
+            if (mons.getFullYear() !== suns.getFullYear()) {
+              year = suns.getFullYear();
+            }
+          }
+        }
+        let idString = 'user=' +currentUserId + '&year=' + year + '&month=' + month;
+        weekClock = false;
+        $state.go('monthview', {id: idString});
+      }
 
       function toDayview(dayString) {
         let navDate;
@@ -97,7 +120,6 @@
             console.log('unsupported day');
         }
         let idString = 'user=' + currentUserId + '&dayof=' + navDate.getFullYear() + '-' + (navDate.getMonth() + 1) + '-' + navDate.getDate();
-        myTimer = undefined;
         dayClock = true;
         weekClock = false;
         $state.go('dayview', {id: idString});
@@ -134,8 +156,6 @@
         let navDay = new Date();
         navDay.setDate(navDay.getDate());
         let idString = 'user=' + currentUserId + '&dayof=' + navDay.getFullYear() + '-' + (navDay.getMonth() + 1) + '-' + navDay.getDate();
-        myTimer = undefined;
-        dayClock = true;
         weekClock = false;
         $state.go('dayview', {id: idString});
       }
@@ -1854,13 +1874,16 @@
         //check cookies for user already logged in - change page state if this is a return user
         dayClock = false;
         weekClock = true;
+        monthClock = false;
+        landingClock = false;
+
         let userDateViewString = ($stateParams.id);
         currentUserId = getUserFromParams(userDateViewString);
         setMonday(userDateViewString);
         if (parseInt(userCookie) !== parseInt(currentUserId)) {
           //forbidden
           alert('forbidden user access');
-          myTimer = undefined;
+          weekClock = false;
           $state.go('landing');
         } else {
           $http.get(`/users/${currentUserId}`)
@@ -1869,7 +1892,7 @@
             if ((getCookie(userAccount.security.key)) !== (userAccount.security.value)) {
 
               alert('access denied');
-              myTimer = undefined;
+              weekClock = false;
               $state.go('landing');
             }
           });

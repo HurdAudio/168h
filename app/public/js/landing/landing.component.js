@@ -1,10 +1,16 @@
 (function() {
   'use strict';
+  var landingClock = true;
+  var weekClock = false;
+  var dayClock = false;
+  var monthClock = false;
 
   var stopBlinker = true;
 
   function setClock(){
+    if ((landingClock) && (!weekClock) && (!dayClock) && (!monthClock)) {
        document.getElementById("clockLanding").innerHTML=new Date().toLocaleTimeString('en-GB');
+     }
   }
 
   function getCookie (name) {
@@ -466,6 +472,7 @@
                 let mm = currentDate.getMonth() + 1;
                 let dd = currentDate.getDate();
                 let today = 'user=' + loginResult.id + '&dayof=' + yyyy + '-' + mm + '-' + dd;
+                landingClock = false;
                 $state.go('dayview', {id: today});
                 //myTimer = undefined;
               });
@@ -478,6 +485,10 @@
 
       function onInit() {
         console.log("Landing is lit");
+        landingClock = true;
+        weekClock = false;
+        dayClock = false;
+        monthClock = false;
         //check cookies for user already logged in - change page state if this is a return user
         if (getCookie('h168userId') !== null) {
           let loggedInUser = getCookie('h168userId');
@@ -499,6 +510,7 @@
                   let mm = currentDate.getMonth() + 1;
                   let dd = currentDate.getDate();
                   let today = 'user=' + userInfo.id + '&dayof=' + yyyy + '-' + mm + '-' + dd;
+                  landingClock = false;
                   $state.go('dayview', {id: today});
                   myTimer = undefined;
                 } else {

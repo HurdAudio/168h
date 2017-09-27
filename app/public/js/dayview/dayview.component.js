@@ -2,6 +2,8 @@
   'use strict';
   var dayClock = false;
   var weekClock = false;
+  var monthClock = false;
+  var landingClock = false;
   var myTimer = setInterval(setClockDay,1000);
   var currentUserId = 0;
   var viewDate;
@@ -48,7 +50,7 @@
 
 
   function setClockDay(){
-    if ((dayClock) && (!weekClock)){
+    if ((dayClock) && (!weekClock) && (!monthClock) && (!landingClock)){
       document.getElementById("clockDayview").innerHTML=new Date().toLocaleTimeString('en-GB');
     }
   }
@@ -104,15 +106,37 @@
       function userProfile() {
         myTimer = undefined;
         dayClock = false;
-        weekClock = true;
         $state.go('userprofile');
       }
 
       function gotoMonth() {
         myTimer = undefined;
         dayClock = false;
-        weekClock = true;
-        $state.go('monthview');
+        let increment = 0;
+        let navDay = new Date(viewDate);
+        let dayMonth = (navDay.getMonth() + 1);
+        let dayYear = navDay.getFullYear();
+        let mondayYear = dayYear;
+        let mondayMonth = dayMonth;
+        if (navDay.getDay() !== 1) {
+          while(navDay.getDay() !==1) {
+            navDay.setDate(navDay.getDate()-1);
+            ++increment;
+          }
+        }
+        mondayMonth = (navDay.getMonth() + 1);
+        mondayYear = navDay.getFullYear();
+        if (dayMonth !== mondayMonth) {
+          if (increment > 4) {
+            dayMonth = mondayMonth;
+            if (mondayYear !== dayYear) {
+              dayYear = mondayYear;
+            }
+          }
+        }
+        let idString = 'user=' + currentUserId + '&year=' + dayYear + '&month=' + dayMonth;
+        dayClock = false;
+        $state.go('monthview', {id: idString});
       }
 
       function advanceArt(index) {
@@ -757,9 +781,7 @@
       }
 
       function gotoWeek() {
-        myTimer = undefined;
         dayClock = false;
-        weekClock = true;
         let navDay = new Date(viewDate);
         if (navDay.getDay() !== 1) {
           while(navDay.getDay() !==1) {
@@ -767,6 +789,7 @@
           }
         }
         let idString = 'user=' + currentUserId + '&weekof=' + navDay.getFullYear() + '-' + (navDay.getMonth() + 1) + '-' + navDay.getDate();
+        dayClock = false;
         $state.go('weekview', {id: idString});
       }
 
@@ -774,7 +797,7 @@
         let navDay = new Date(viewDate);
         navDay.setDate(navDay.getDate()-1);
         let idString = 'user=' + currentUserId + '&dayof=' + navDay.getFullYear() + '-' + (navDay.getMonth() + 1) + '-' + navDay.getDate();
-        myTimer = undefined;
+        dayClock = false;
         $state.go('dayview', {id: idString});
 
       }
@@ -783,7 +806,7 @@
         let navDay = new Date(viewDate);
         navDay.setDate(navDay.getDate() + 1);
         let idString = 'user=' + currentUserId + '&dayof=' + navDay.getFullYear() + '-' + (navDay.getMonth() + 1) + '-' + navDay.getDate();
-        myTimer = undefined;
+        dayClock = false;
         $state.go('dayview', {id: idString});
       }
 
@@ -791,7 +814,7 @@
         let navDay = new Date();
         navDay.setDate(navDay.getDate());
         let idString = 'user=' + currentUserId + '&dayof=' + navDay.getFullYear() + '-' + (navDay.getMonth() + 1) + '-' + navDay.getDate();
-        myTimer = undefined;
+        dayClock = false;
         $state.go('dayview', {id: idString});
       }
 
@@ -932,12 +955,13 @@
           }
         } else {
           setTimeout(()=>{
-
-            element.setAttribute("style", "color: " + pulses[pulseColor] + ";");
-            if (pulseColor === (pulses.length - 1)) {
-              pulseThePresent(currentTimePoint, 0);
-            } else {
-              pulseThePresent(currentTimePoint, (pulseColor + 1));
+            if (element) {
+              element.setAttribute("style", "color: " + pulses[pulseColor] + ";");
+              if (pulseColor === (pulses.length - 1)) {
+                pulseThePresent(currentTimePoint, 0);
+              } else {
+                pulseThePresent(currentTimePoint, (pulseColor + 1));
+              }
             }
           }, 150);
         }
@@ -4687,6 +4711,8 @@
         console.log("Dayview is lit");
         dayClock = true;
         weekClock = false;
+        monthClock = false;
+        landingClock = false;
 
 
 
@@ -4706,7 +4732,7 @@
         if (parseInt(userCookie) !== parseInt(currentUserId)) {
 
           alert('forbidden user access');
-          myTimer = undefined;
+          dayClock = false;
           $state.go('landing');
         } else {
           $http.get(`/users/${currentUserId}`)
@@ -4715,7 +4741,7 @@
             if ((getCookie(userAccount.security.key)) !== (userAccount.security.value)) {
 
               alert('access denied');
-              myTimer = undefined;
+              dayClock = false;
               $state.go('landing');
             }
           });
