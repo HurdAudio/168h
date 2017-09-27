@@ -220,6 +220,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 13,
+          user_id: 1,
+          theme: 'hardcore punk, metal and nurse with wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1384948701/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://nursewithwound1.bandcamp.com/album/a-sucked-orange',
+          a_string: 'A Sucked Orange by Nurse With Wound',
+          rule: {
+            "monday": [ 6, 16, 26, 29 ],
+            "tuesday": [ 10, 20, 30, 2 ],
+            "wednesday": [ 9, 19, 29, 1 ],
+            "thursday": [ 8, 18, 28, 31 ],
+            "saturday": [ 7, 17, 27, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 14,
+          user_id: 1,
+          theme: 'hardcore punk, metal and nurse with wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2561425467/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://seriousbeak.bandcamp.com/album/huxwhukw-2',
+          a_string: 'Huxwhukw by Serious Beak',
+          rule: {
+            "monday": [ 8, 18, 28, 31 ],
+            "tuesday": [ 7, 17, 27, 30 ],
+            "wednesday": [ 11, 21, 31, 3 ],
+            "thursday": [ 10, 20, 30, 2 ],
+            "saturday": [ 9, 19, 29, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 15,
+          user_id: 1,
+          theme: 'hardcore punk, metal and nurse with wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=506985205/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://viakurushimi.bandcamp.com/album/kurushimi',
+          a_string: 'Kurushimi by Kurushimi',
+          rule: {
+            "monday": [ 9, 19, 29, 1 ],
+            "tuesday": [ 8, 18, 28, 31 ],
+            "wednesday": [ 7, 17, 27, 30 ],
+            "thursday": [ 11, 21, 31, 3 ],
+            "saturday": [ 10, 20, 30, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
