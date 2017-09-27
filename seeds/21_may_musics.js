@@ -760,6 +760,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 43,
+          user_id: 1,
+          theme: 'avant garde/new music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2823942019/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://subjamlabel.bandcamp.com/album/infinite-loop',
+          a_string: 'Infinite Loop by Wang Fan',
+          rule: {
+            "monday": [ 7, 13, 20, 2 ],
+            "tuesday": [ 11, 17, 24, 6 ],
+            "wednesday": [ 10, 16, 23, 5 ],
+            "thursday": [ 9, 15, 22, 4 ],
+            "saturday": [ 8, 14, 21, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 44,
+          user_id: 1,
+          theme: 'avant garde/new music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=286075715/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://subjamlabel.bandcamp.com/album/tropoi',
+          a_string: 'Tropoi by Olaf Hochherz',
+          rule: {
+            "monday": [ 8, 14, 21, 3 ],
+            "tuesday": [ 7, 13, 20, 2 ],
+            "wednesday": [ 11, 17, 24, 6 ],
+            "thursday": [ 10, 16, 23, 5 ],
+            "saturday": [ 9, 15, 22, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 45,
+          user_id: 1,
+          theme: 'avant garde/new music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2199662800/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://subjamlabel.bandcamp.com/album/bottom',
+          a_string: 'Bottom by Goh Lee Kwang',
+          rule: {
+            "monday": [ 9, 15, 22, 4 ],
+            "tuesday": [ 8, 14, 21, 3 ],
+            "wednesday": [ 7, 13, 20, 2 ],
+            "thursday": [ 11, 17, 24, 6 ],
+            "saturday": [ 10, 16, 23, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
