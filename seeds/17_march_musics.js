@@ -922,6 +922,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 52,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=24344286/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://kalmanovitch.bandcamp.com/album/heart-mountain-myra-melford-tanya-kalmanovitch',
+          a_string: 'Heart Mountain // Myra Melford + Tanya Kalmanovitch by Myra Melford and Tanya Kalmanovitch',
+          rule: {
+            "monday": [ 12, 18, 24, 1 ],
+            "tuesday": [ 11, 17, 23, 31 ],
+            "wednesday": [ 10, 16, 22, 31 ],
+            "thursday": [ 9, 15, 21, 29 ],
+            "saturday": [ 8, 14, 20, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 53,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1145363017/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://zara-mcfarlane.bandcamp.com/album/arise',
+          a_string: 'Arise by Zara Mcfarlane',
+          rule: {
+            "monday": [ 8, 14, 20, 28 ],
+            "tuesday": [ 12, 18, 24, 1 ],
+            "wednesday": [ 11, 17, 23, 31 ],
+            "thursday": [ 10, 16, 22, 31 ],
+            "saturday": [ 9, 15, 21, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 54,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4034378625/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://janelleppin.bandcamp.com/album/songs-for-voice-and-mellotron',
+          a_string: 'Songs for Voice and Mellotron by Janel Leppin',
+          rule: {
+            "monday": [ 9, 15, 21, 29 ],
+            "tuesday": [ 8, 14, 20, 28 ],
+            "wednesday": [ 12, 18, 24, 1 ],
+            "thursday": [ 11, 17, 23, 31 ],
+            "saturday": [ 10, 16, 22, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
