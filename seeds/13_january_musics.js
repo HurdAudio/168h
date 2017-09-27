@@ -1138,6 +1138,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 64,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2425687750/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://brooklynyouthchorus.bandcamp.com/album/black-mountain-songs',
+          a_string: 'Black Mountain Songs by Brooklyn Youth Chorus',
+          rule: {
+            "monday": [ 16, 23, 25, 24 ],
+            "tuesday": [ 14, 18, 20, 24 ],
+            "wednesday": [ 16, 23, 25, 24 ],
+            "thursday": [ 24, 18, 20, 25 ],
+            "saturday": [ 20, 14, 16, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 65,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3361243335/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://nowensemble.bandcamp.com/album/awake-2',
+          a_string: 'Awake by NOW Ensemble',
+          rule: {
+            "monday": [ 20, 14, 16, 4 ],
+            "tuesday": [ 16, 23, 25, 24 ],
+            "wednesday": [ 14, 18, 20, 24 ],
+            "thursday": [ 16, 23, 25, 24 ],
+            "saturday": [ 24, 18, 20, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 66,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2321323404/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://alarmwillsound.bandcamp.com/album/steve-reich-tehillim-the-desert-music',
+          a_string: 'Steve Reich: Tehillim &amp;The Desert Music by Alarm Will Sound &amp; Ossia',
+          rule: {
+            "monday": [ 24, 18, 20, 25 ],
+            "tuesday": [ 20, 14, 16, 4 ],
+            "wednesday": [ 16, 23, 25, 24 ],
+            "thursday": [ 14, 18, 20, 24 ],
+            "saturday": [ 16, 23, 25, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
