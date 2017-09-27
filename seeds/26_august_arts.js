@@ -904,6 +904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 46,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/musicians-1927.jpg',
+          title: 'Musicians',
+          artist: 'Carlos Merida',
+          year: '1927',
+          rule: {
+            "monday": [ 5, 8, 17, 2 ],
+            "tuesday": [ 4, 8, 16, 1 ],
+            "wednesday": [ 10, 14, 22, 7 ],
+            "thursday": [ 9, 12, 21, 6 ],
+            "friday": [ 8, 12, 20, 5 ],
+            "saturday": [ 7, 11, 19, 4 ],
+            "sunday": [ 6, 10, 18, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 47,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/hommage-delaunay-et-gleizes-1938.jpg',
+          title: 'Hommage à Delaunay et Gleizes',
+          artist: 'Adolf Fleischmann',
+          year: '1938',
+          rule: {
+            "monday": [ 6, 10, 18, 3 ],
+            "tuesday": [ 5, 8, 17, 2 ],
+            "wednesday": [ 4, 8, 16, 1 ],
+            "thursday": [ 10, 14, 22, 7 ],
+            "friday": [ 9, 12, 21, 6 ],
+            "saturday": [ 8, 12, 20, 5 ],
+            "sunday": [ 7, 11, 19, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 48,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/from-thorheiten-1901-3.jpg',
+          title: 'from Thorheiten',
+          artist: 'Thomas Theodor Heine',
+          year: '1901',
+          rule: {
+            "monday": [ 7, 11, 19, 4 ],
+            "tuesday": [ 6, 10, 18, 3 ],
+            "wednesday": [ 5, 8, 17, 2 ],
+            "thursday": [ 4, 8, 16, 1 ],
+            "friday": [ 10, 14, 22, 7 ],
+            "saturday": [ 9, 12, 21, 6 ],
+            "sunday": [ 8, 12, 20, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 49,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/not_detected_235984.jpg',
+          title: 'The Widow I',
+          artist: 'Kathe Kollwitz',
+          year: '1921',
+          rule: {
+            "monday": [ 9, 13, 21, 6 ],
+            "tuesday": [ 8, 12, 20, 5 ],
+            "wednesday": [ 7, 11, 19, 4 ],
+            "thursday": [ 6, 9, 18, 3 ],
+            "friday": [ 5, 9, 17, 2 ],
+            "saturday": [ 11, 15, 23, 8 ],
+            "sunday": [ 10, 13, 22, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 50,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/ashbury-park-south-1920.jpg',
+          title: 'Ashbury Park South',
+          artist: 'Florine Stettheimer',
+          year: '1920',
+          rule: {
+            "monday": [ 10, 13, 22, 7 ],
+            "tuesday": [ 9, 13, 21, 6 ],
+            "wednesday": [ 8, 12, 20, 5 ],
+            "thursday": [ 7, 11, 19, 4 ],
+            "friday": [ 6, 9, 18, 3 ],
+            "saturday": [ 5, 9, 17, 2 ],
+            "sunday": [ 11, 15, 23, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
