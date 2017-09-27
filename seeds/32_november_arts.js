@@ -304,6 +304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 16,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/vii-15-din-14-1989.jpg',
+          title: 'VII 15 Din 14',
+          artist: 'Hanne Darboven',
+          year: '1989',
+          rule: {
+            "monday": [ 10, 15, 21, 26 ],
+            "tuesday": [ 9, 14, 20, 25 ],
+            "wednesday": [ 8, 13, 19, 24 ],
+            "thursday": [ 7, 12, 18, 23 ],
+            "friday": [ 6, 11, 17, 22 ],
+            "saturday": [ 5, 10, 16, 21 ],
+            "sunday": [ 4, 9, 15, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 17,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/d-finition-m-thode-505-lettre-au-docteur-barnes-2010.jpg',
+          title: 'dé-finition/méthode #505: lettre au docteur barnes',
+          artist: 'Claude Rutault',
+          year: '2010',
+          rule: {
+            "monday": [ 4, 9, 15, 22 ],
+            "tuesday": [ 10, 15, 21, 26 ],
+            "wednesday": [ 9, 14, 20, 25 ],
+            "thursday": [ 8, 13, 19, 24 ],
+            "friday": [ 7, 12, 18, 23 ],
+            "saturday": [ 6, 11, 17, 22 ],
+            "sunday": [ 5, 10, 16, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 18,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/untitled-712-7ft-x-7ft-1978.jpg',
+          title: 'Untitled, 712, 7ft x 7ft',
+          artist: 'Robert Swain',
+          year: '1978',
+          rule: {
+            "monday": [ 5, 10, 16, 21 ],
+            "tuesday": [ 4, 9, 15, 22 ],
+            "wednesday": [ 10, 15, 21, 26 ],
+            "thursday": [ 9, 14, 20, 25 ],
+            "friday": [ 8, 13, 19, 24 ],
+            "saturday": [ 7, 12, 18, 23 ],
+            "sunday": [ 6, 11, 17, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 19,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/green-portrait-9.jpg',
+          title: 'Green Portrait #9',
+          artist: 'Phil Sims',
+          year: '?',
+          rule: {
+            "monday": [ 6, 11, 17, 22 ],
+            "tuesday": [ 5, 10, 16, 21 ],
+            "wednesday": [ 4, 9, 15, 22 ],
+            "thursday": [ 10, 15, 21, 26 ],
+            "friday": [ 9, 14, 20, 25 ],
+            "saturday": [ 8, 13, 19, 24 ],
+            "sunday": [ 7, 12, 18, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 20,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/as-if-to-1992.jpg',
+          title: 'As, If, To',
+          artist: 'Peter Downsbrough',
+          year: '1992',
+          rule: {
+            "monday": [ 7, 12, 18, 23 ],
+            "tuesday": [ 6, 11, 17, 22 ],
+            "wednesday": [ 5, 10, 16, 21 ],
+            "thursday": [ 4, 9, 15, 22 ],
+            "friday": [ 10, 15, 21, 26 ],
+            "saturday": [ 9, 14, 20, 25 ],
+            "sunday": [ 8, 13, 19, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
