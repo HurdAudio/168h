@@ -1737,22 +1737,101 @@
         });
       }
 
-      function weekEdit(appointment) {
+      function weekEdit(appointment, day, hour) {
 
 
         if (appointment === undefined) {
           //alert(appointment);
-          console.log(appointment);
+          console.log(day + ' ' + hoursTime[hours.indexOf(hour)]);
+          let addAppointment = {
+            user_id: currentUserId,
+            location: '',
+            user_notes: null
+          };
+          let aptDate;
+          let hourString = hoursTime[hours.indexOf(hour)];
+          let endHourString = hoursTime[hours.indexOf(hour) + 1];
+          if (hourString.length < 5) {
+            hourString = '0' + hourString;
+          }
+          if (endHourString.length < 5) {
+            endHourString = '0' + endHourString;
+          }
+          switch(day){
+            case('monday'):
+              aptDate = new Date(mondayDate);
+              break;
+            case('tuesday'):
+              aptDate = new Date(tuesdayDate);
+              break;
+            case('wednesday'):
+              aptDate = new Date(wednesdayDate);
+              break;
+            case('thursday'):
+              aptDate = new Date(thursdayDate);
+              break;
+            case('friday'):
+              aptDate = new Date(fridayDate);
+              break;
+            case('saturday'):
+              aptDate = new Date(saturdayDate);
+              break;
+            case('sunday'):
+              aptDate = new Date(sundayDate);
+              break;
+            default:
+              console.log('bad day value');
+          }
+          let calMonth = (aptDate.getMonth() + 1).toString();
+          if (calMonth.length < 2) {
+            calMonth = '0' + calMonth;
+          }
+          let calDate = aptDate.getDate().toString();
+          if (calDate.length < 2) {
+            calDate = '0' + calDate;
+          }
+          //let startTime = new Date(aptDate.getFullYear() + '-' + calMonth + '-' + calDate + 'T' + hourString + ':00.000Z');
+          addAppointment.start_time = aptDate.getFullYear() + '-' + calMonth + '-' + calDate + 'T' + hourString + ':00.000Z';
+          console.log(addAppointment.start_time);
+          if (endHourString === '24:00') {
+            endHourString = '00:00';
+            aptDate.setDate(aptDate.getDate()+1);
+            calMonth = (aptDate.getMonth() + 1).toString();
+            if (calMonth.length < 2) {
+              calMonth = '0' + calMonth;
+            }
+            calDate = aptDate.getDate().toString();
+            if (calDate.length < 2) {
+              calDate = '0' + calDate;
+            }
+          }
+          addAppointment.end_time = aptDate.getFullYear() + '-' + calMonth + '-' + calDate + 'T' + endHourString + ':00.000Z';
+          addAppointment.block_data = {};
+          $http.get(`/blocktypesbyuser/${currentUserId}`)
+          .then(userBlocksData=>{
+            let userBlocks = userBlocksData.data;
+            addAppointment.block_type = userBlocks[0].id;
+            if (userBlocks[0].keys !== null) {
+              addAppointment.block_data[userBlocks[0].keys.keys[0]] = 0;
+            }
+            $http.post('/timeblocks', addAppointment)
+            .then(appointData=>{
+              let appoint = appointData.data[0];
+              readAppointmentBlocks();
+              appointmentEditor(appoint.id);
+            });
+          });
+
         } else {
           appointmentEditor(appointment);
         }
 
       }
 
-      function halfHourEventListen(halfHourDiv) {
+      function halfHourEventListen(halfHourDiv, divDay, divHour) {
 
         halfHourDiv.addEventListener('click', ()=>{
-          weekEdit(halfHourDiv.appointment);
+          weekEdit(halfHourDiv.appointment, divDay, divHour);
         });
       }
 
@@ -1763,7 +1842,7 @@
         for (let i = 0; i < weekArray.length; i++) {
           for (let j = 0; j < (hours.length - 1); j++) {
             element = document.getElementById(weekArray[i] + hours[j]);
-            halfHourEventListen(element.children[0]);
+            halfHourEventListen(element.children[0], weekArray[i], hours[j]);
           }
         }
       }
