@@ -2004,6 +2004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 101,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Aspiration,_Aaron_Douglas,_1936,_DeYoung_Museum_of_Fine_Arts.jpg',
+          title: 'Aspiration',
+          artist: 'Aaron Douglas',
+          year: '1936',
+          rule: {
+            "monday": [ 26, 5, 1, 20 ],
+            "tuesday": [ 14, 22, 1, 9 ],
+            "wednesday": [ 16, 24, 3, 11 ],
+            "thursday": [ 21, 26, 3, 13 ],
+            "friday": [ 20, 28, 7, 15 ],
+            "saturday": [ 22, 3, 9, 17 ],
+            "sunday": [ 24, 3, 11, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 102,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/EMORY-DOUGLASforbobbyseale.jpg',
+          title: 'for Bobby Seale',
+          artist: 'Emory Douglas',
+          year: 'XX cent.',
+          rule: {
+            "monday": [ 24, 3, 11, 21 ],
+            "tuesday": [ 26, 5, 1, 20 ],
+            "wednesday": [ 14, 22, 1, 9 ],
+            "thursday": [ 16, 24, 3, 11 ],
+            "friday": [ 21, 26, 3, 13 ],
+            "saturday": [ 20, 28, 7, 15 ],
+            "sunday": [ 22, 3, 9, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 103,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/jd-white-paintings-4.jpg',
+          title: 'White Painting',
+          artist: 'John E. Dowell Jr.',
+          year: 'XX cent.',
+          rule: {
+            "monday": [ 22, 3, 9, 17 ],
+            "tuesday": [ 24, 3, 11, 21 ],
+            "wednesday": [ 26, 5, 1, 20 ],
+            "thursday": [ 14, 22, 1, 9 ],
+            "friday": [ 16, 24, 3, 11 ],
+            "saturday": [ 21, 26, 3, 13 ],
+            "sunday": [ 20, 28, 7, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 104,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Driskell_Woman_with_Flowers.jpg',
+          title: 'Woman with Flowers',
+          artist: 'David Driskell',
+          year: '1972',
+          rule: {
+            "monday": [ 20, 28, 7, 15 ],
+            "tuesday": [ 22, 3, 9, 17 ],
+            "wednesday": [ 24, 3, 11, 21 ],
+            "thursday": [ 26, 5, 1, 20 ],
+            "friday": [ 14, 22, 1, 9 ],
+            "saturday": [ 16, 24, 3, 11 ],
+            "sunday": [ 21, 26, 3, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 105,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Robert-Duncanson-Land-of-the-Lotos-Eaters-631.jpg',
+          title: 'Land of the Lotus Eaters',
+          artist: 'Robert S. Duncanson',
+          year: '1860 - 1861',
+          rule: {
+            "monday": [ 22, 27, 4, 14 ],
+            "tuesday": [ 21, 29, 8, 16 ],
+            "wednesday": [ 23, 4, 10, 18 ],
+            "thursday": [ 25, 4, 12, 22 ],
+            "friday": [ 27, 6, 2, 21 ],
+            "saturday": [ 15, 23, 2, 10 ],
+            "sunday": [ 17, 25, 4, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
