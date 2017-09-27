@@ -652,6 +652,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 37,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=185406926/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://loscil.bandcamp.com/album/suns',
+          a_string: 'Suns by loscil',
+          rule: {
+            "monday": [ 6, 10, 16, 27 ],
+            "tuesday": [ 5, 9, 15, 25 ],
+            "wednesday": [ 4, 8, 13, 25 ],
+            "thursday": [ 3, 7, 13, 24 ],
+            "saturday": [ 2, 10, 12, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 38,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2018875982/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://huron.bandcamp.com/album/the-red-tape',
+          a_string: 'the red tape by Huron',
+          rule: {
+            "monday": [ 2, 10, 12, 23 ],
+            "tuesday": [ 6, 10, 16, 27 ],
+            "wednesday": [ 5, 9, 15, 25 ],
+            "thursday": [ 4, 8, 13, 25 ],
+            "saturday": [ 3, 7, 13, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 39,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2502611751/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://xxchamxx.bandcamp.com/album/land-1',
+          a_string: 'LAND #1 by CHAM',
+          rule: {
+            "monday": [ 3, 7, 13, 24 ],
+            "tuesday": [ 2, 10, 12, 23 ],
+            "wednesday": [ 6, 10, 16, 27 ],
+            "thursday": [ 5, 9, 15, 25 ],
+            "saturday": [ 4, 8, 13, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
