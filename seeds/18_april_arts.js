@@ -1704,6 +1704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 86,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/wrigley_field_bricks___ivy_canvas_art.jpg',
+          title: 'Wrigley Field Bricks & Ivy',
+          artist: 'Holy Cow Canvas',
+          year: 'XXI cent.',
+          rule: {
+            "monday": [ 12, 18, 23, 30 ],
+            "tuesday": [ 26, 16, 23, 29 ],
+            "wednesday": [ 11, 16, 22, 28 ],
+            "thursday": [ 10, 14, 29, 27 ],
+            "friday": [ 9, 14, 19, 26 ],
+            "saturday": [ 8, 13, 19, 25 ],
+            "sunday": [ 7, 12, 18, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 87,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/wrigleygiclee.jpg',
+          title: 'Wrigley Field',
+          artist: 'Al Sorenson',
+          year: '1945',
+          rule: {
+            "monday": [ 7, 12, 18, 24 ],
+            "tuesday": [ 12, 18, 23, 30 ],
+            "wednesday": [ 26, 16, 23, 29 ],
+            "thursday": [ 11, 16, 22, 28 ],
+            "friday": [ 10, 14, 29, 27 ],
+            "saturday": [ 9, 14, 19, 26 ],
+            "sunday": [ 8, 13, 19, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 88,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/5d54152dc404252300a2e4810c90abe0--cubs-win-cubs-baseball.jpg',
+          title: 'Chicago Cubs Painting',
+          artist: 'Justin Patten',
+          year: 'xxi Cent.',
+          rule: {
+            "monday": [ 8, 13, 19, 25 ],
+            "tuesday": [ 7, 12, 18, 24 ],
+            "wednesday": [ 12, 18, 23, 30 ],
+            "thursday": [ 26, 16, 23, 29 ],
+            "friday": [ 11, 16, 22, 28 ],
+            "saturday": [ 10, 14, 29, 27 ],
+            "sunday": [ 9, 14, 19, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 89,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/Angell-At-Last.jpg',
+          title: 'The Cubs Win the World Series',
+          artist: 'unknown',
+          year: '?',
+          rule: {
+            "monday": [ 9, 14, 19, 26 ],
+            "tuesday": [ 8, 13, 19, 25 ],
+            "wednesday": [ 7, 12, 18, 24 ],
+            "thursday": [ 12, 18, 23, 30 ],
+            "friday": [ 26, 16, 23, 29 ],
+            "saturday": [ 11, 16, 22, 28 ],
+            "sunday": [ 10, 14, 29, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 90,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/jon-lester-chicago-cubs-dave-olsen.jpg',
+          title: 'Jon Lester Chicago Cubs',
+          artist: 'Dave Olsen',
+          year: '2016',
+          rule: {
+            "monday": [ 10, 14, 29, 27 ],
+            "tuesday": [ 9, 14, 19, 26 ],
+            "wednesday": [ 8, 13, 19, 25 ],
+            "thursday": [ 7, 12, 18, 24 ],
+            "friday": [ 12, 18, 23, 30 ],
+            "saturday": [ 26, 16, 23, 29 ],
+            "sunday": [ 11, 16, 22, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
