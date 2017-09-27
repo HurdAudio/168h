@@ -328,6 +328,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 19,
+          user_id: 1,
+          theme: 'math rock/progressive rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2895599953/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jackotheclock.bandcamp.com/album/repetitions-of-the-old-city-i',
+          a_string: 'Repetitions of the Old City - I by Jack O&#39; The Clock',
+          rule: {
+            "monday": [ 4, 24, 2, 26 ],
+            "tuesday": [ 3, 23, 1, 25 ],
+            "wednesday": [ 7, 27, 5, 29 ],
+            "thursday": [ 6, 26, 4, 28 ],
+            "saturday": [ 5, 25, 3, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 20,
+          user_id: 1,
+          theme: 'math rock/progressive rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3005376859/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bigbigtrain.bandcamp.com/album/grimspound-hi-resolution-audio',
+          a_string: 'Grimspound (hi resolution audio) by Big Big Train',
+          rule: {
+            "monday": [ 5, 25, 3, 27 ],
+            "tuesday": [ 4, 24, 2, 26 ],
+            "wednesday": [ 3, 23, 1, 25 ],
+            "thursday": [ 7, 27, 5, 29 ],
+            "saturday": [ 6, 26, 4, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 21,
+          user_id: 1,
+          theme: 'math rock/progressive rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1395941753/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://soen-sweden.bandcamp.com/album/lykaia',
+          a_string: 'Lykaia by Soen',
+          rule: {
+            "monday": [ 7, 27, 5, 29 ],
+            "tuesday": [ 6, 26, 4, 28 ],
+            "wednesday": [ 5, 25, 3, 27 ],
+            "thursday": [ 4, 24, 2, 26 ],
+            "saturday": [ 8, 28, 6, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
