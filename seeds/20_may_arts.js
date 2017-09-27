@@ -1504,6 +1504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 76,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/manufacturers-with-aloe-1951.jpg',
+          title: 'Manufacturers with Aloe',
+          artist: 'Fernand Leger',
+          year: '1951',
+          rule: {
+            "monday": [ 5, 15, 25, 4 ],
+            "tuesday": [ 3, 13, 23, 2 ],
+            "wednesday": [ 1, 11, 21, 31 ],
+            "thursday": [ 30, 9, 19, 29 ],
+            "friday": [ 11, 21, 31, 10 ],
+            "saturday": [ 9, 19, 29, 8 ],
+            "sunday": [ 7, 17, 27, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 77,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/builder-character-in-the-framework.jpg',
+          title: 'Builder, character in the framework',
+          artist: 'Fernand Leger',
+          year: '?',
+          rule: {
+            "monday": [ 8, 18, 28, 7 ],
+            "tuesday": [ 6, 16, 26, 5 ],
+            "wednesday": [ 4, 14, 24, 3 ],
+            "thursday": [ 2, 12, 22, 1 ],
+            "friday": [ 31, 10, 20, 30 ],
+            "saturday": [ 12, 22, 1, 11 ],
+            "sunday": [ 10, 20, 30, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 78,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/characters-in-the-truck.jpg',
+          title: 'Characters in the truck',
+          artist: 'Fernand Leger',
+          year: '?',
+          rule: {
+            "monday": [ 10, 20, 30, 9 ],
+            "tuesday": [ 8, 18, 28, 7 ],
+            "wednesday": [ 6, 16, 26, 5 ],
+            "thursday": [ 4, 14, 24, 3 ],
+            "friday": [ 2, 12, 22, 1 ],
+            "saturday": [ 31, 10, 20, 30 ],
+            "sunday": [ 12, 22, 1, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 79,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/threshing-the-floor-in-a-georgian-country-village-1915.jpg',
+          title: 'Threshing the floor in a Georgian country village',
+          artist: 'Niko Pirosmani',
+          year: '1915',
+          rule: {
+            "monday": [ 12, 22, 1, 11 ],
+            "tuesday": [ 10, 20, 30, 9 ],
+            "wednesday": [ 8, 18, 28, 7 ],
+            "thursday": [ 6, 16, 26, 5 ],
+            "friday": [ 4, 14, 24, 3 ],
+            "saturday": [ 2, 12, 22, 1 ],
+            "sunday": [ 31, 10, 20, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 80,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/woman-inspector-of-market-hygiene-1916(1).jpg',
+          title: 'Sanitary inspector woman of the market',
+          artist: 'Niko Pirosmani',
+          year: '1916',
+          rule: {
+            "monday": [ 31, 10, 20, 30 ],
+            "tuesday": [ 12, 22, 1, 11 ],
+            "wednesday": [ 10, 20, 30, 9 ],
+            "thursday": [ 8, 18, 28, 7 ],
+            "friday": [ 6, 16, 26, 5 ],
+            "saturday": [ 4, 14, 24, 3 ],
+            "sunday": [ 2, 12, 22, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
