@@ -1030,6 +1030,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 58,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=274380109/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://destination-out.bandcamp.com/album/burning-cloud-2',
+          a_string: 'Burning Cloud by BUTCH MORRIS',
+          rule: {
+            "monday": [ 26, 20, 22, 28 ],
+            "tuesday": [ 9, 23, 4, 28 ],
+            "wednesday": [ 10, 14, 16, 20 ],
+            "thursday": [ 12, 16, 18, 22 ],
+            "saturday": [ 14, 18, 20, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 59,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4169089856/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jotongo.bandcamp.com/album/african-funk-experimentals-1968-1982-2017',
+          a_string: 'African Funk Experimentals (1968-1982 + 2017) by Jo Tongo',
+          rule: {
+            "monday": [ 14, 18, 20, 22 ],
+            "tuesday": [ 26, 20, 22, 28 ],
+            "wednesday": [ 9, 23, 4, 28 ],
+            "thursday": [ 10, 14, 16, 20 ],
+            "saturday": [ 12, 16, 18, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 60,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3765249079/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://maalemmahmoudgania.bandcamp.com/album/colours-of-the-night',
+          a_string: 'Colours of the Night by Maalem Mahmoud Gania',
+          rule: {
+            "monday": [ 12, 16, 18, 22 ],
+            "tuesday": [ 14, 18, 20, 22 ],
+            "wednesday": [ 26, 20, 22, 28 ],
+            "thursday": [ 9, 23, 4, 28 ],
+            "saturday": [ 10, 14, 16, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
