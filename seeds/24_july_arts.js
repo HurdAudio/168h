@@ -1104,6 +1104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 56,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/along-the-way-1969.jpg',
+          title: 'Along the Way..',
+          artist: 'Georges Hugnet',
+          year: '1969',
+          rule: {
+            "monday": [ 9, 19, 31, 11 ],
+            "tuesday": [ 8, 19, 30, 10 ],
+            "wednesday": [ 7, 18, 29, 9 ],
+            "thursday": [ 6, 17, 28, 8 ],
+            "friday": [ 5, 16, 27, 7 ],
+            "saturday": [ 11, 22, 2, 13 ],
+            "sunday": [ 10, 21, 1, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 57,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/untitled(1).jpg',
+          title: 'Untitled',
+          artist: 'Pierre Tal-Coat',
+          year: '?',
+          rule: {
+            "monday": [ 10, 21, 1, 12 ],
+            "tuesday": [ 9, 19, 31, 11 ],
+            "wednesday": [ 8, 19, 30, 10 ],
+            "thursday": [ 7, 18, 29, 9 ],
+            "friday": [ 6, 17, 28, 8 ],
+            "saturday": [ 5, 16, 27, 7 ],
+            "sunday": [ 11, 22, 2, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 58,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/lutte-as-ciel-1937.jpg',
+          title: 'Lutte as Ciel',
+          artist: 'John Ferren',
+          year: '1937',
+          rule: {
+            "monday": [ 11, 22, 2, 13 ],
+            "tuesday": [ 10, 21, 1, 12 ],
+            "wednesday": [ 9, 19, 31, 11 ],
+            "thursday": [ 8, 19, 30, 10 ],
+            "friday": [ 7, 18, 29, 9 ],
+            "saturday": [ 6, 17, 28, 8 ],
+            "sunday": [ 5, 16, 27, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 59,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/loxos.jpg',
+          title: 'Loxos',
+          artist: 'Maurice Esteve',
+          year: '?',
+          rule: {
+            "monday": [ 5, 16, 27, 7 ],
+            "tuesday": [ 11, 22, 2, 13 ],
+            "wednesday": [ 10, 21, 1, 12 ],
+            "thursday": [ 9, 19, 31, 11 ],
+            "friday": [ 8, 19, 30, 10 ],
+            "saturday": [ 7, 18, 29, 9 ],
+            "sunday": [ 6, 17, 28, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 60,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/beetles-1951.jpg',
+          title: 'Beetles',
+          artist: 'Germaine Richier',
+          year: '1951',
+          rule: {
+            "monday": [ 6, 17, 28, 8 ],
+            "tuesday": [ 5, 16, 27, 7 ],
+            "wednesday": [ 11, 22, 2, 13 ],
+            "thursday": [ 10, 21, 1, 12 ],
+            "friday": [ 9, 19, 31, 11 ],
+            "saturday": [ 8, 19, 30, 10 ],
+            "sunday": [ 7, 18, 29, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
