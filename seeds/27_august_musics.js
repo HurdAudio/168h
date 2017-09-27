@@ -436,6 +436,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 25,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3025660758/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://arrington.bandcamp.com/album/unheard-indonesia-vol-7-pancak-silat-situbondo',
+          a_string: 'UNHEARD INDONESIA Vol. 7 Pancak Silat Situbondo by Arrington de Dionyso with Lima Jari Sakti Rasyit',
+          rule: {
+            "monday": [ 7, 15, 31, 30 ],
+            "tuesday": [ 8, 16, 1, 31 ],
+            "wednesday": [ 7, 15, 31, 30 ],
+            "thursday": [ 11, 19, 4, 5 ],
+            "saturday": [ 10, 18, 3, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 26,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3318145375/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jaccrecords.bandcamp.com/album/timeless',
+          a_string: 'Timeless by Marcelo dos Reis &amp; Eve Risser',
+          rule: {
+            "monday": [ 10, 18, 3, 4 ],
+            "tuesday": [ 7, 15, 31, 30 ],
+            "wednesday": [ 8, 16, 1, 31 ],
+            "thursday": [ 7, 15, 31, 30 ],
+            "saturday": [ 11, 19, 4, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 27,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3146416018/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://joemorrisritiglacialeratic.bandcamp.com/album/likewise',
+          a_string: 'Likewise by Stone House',
+          rule: {
+            "monday": [ 11, 19, 4, 5 ],
+            "tuesday": [ 10, 18, 3, 4 ],
+            "wednesday": [ 7, 15, 31, 30 ],
+            "thursday": [ 8, 16, 1, 31 ],
+            "saturday": [ 7, 15, 31, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
