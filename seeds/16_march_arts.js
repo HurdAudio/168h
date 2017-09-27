@@ -1804,6 +1804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 91,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/a-young-woman-seated-by-a-window.jpg',
+          title: 'A YOUNG WOMAN SEATED BY A WINDOW',
+          artist: 'Marie-Denise Villers',
+          year: '?',
+          rule: {
+            "monday": [ 11, 21, 29, 8 ],
+            "tuesday": [ 10, 20, 28, 7 ],
+            "wednesday": [ 9, 19, 27, 6 ],
+            "thursday": [ 8, 18, 26, 5 ],
+            "friday": [ 7, 17, 26, 4 ],
+            "saturday": [ 13, 22, 31, 9 ],
+            "sunday": [ 12, 22, 1, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 92,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/mountain-landscape-switzerland-1914.jpg',
+          title: 'Mountain landscape. Switzerland',
+          artist: 'Zinaida Serebriakova',
+          year: '1914',
+          rule: {
+            "monday": [ 12, 22, 1, 9 ],
+            "tuesday": [ 11, 21, 29, 8 ],
+            "wednesday": [ 10, 20, 28, 7 ],
+            "thursday": [ 9, 19, 27, 6 ],
+            "friday": [ 8, 18, 26, 5 ],
+            "saturday": [ 7, 17, 26, 4 ],
+            "sunday": [ 13, 22, 31, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 93,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/abstract-1954.jpg',
+          title: 'Abstract',
+          artist: 'Sonya Rapoport',
+          year: '1954',
+          rule: {
+            "monday": [ 13, 22, 31, 9 ],
+            "tuesday": [ 12, 22, 1, 9 ],
+            "wednesday": [ 11, 21, 29, 8 ],
+            "thursday": [ 10, 20, 28, 7 ],
+            "friday": [ 9, 19, 27, 6 ],
+            "saturday": [ 8, 18, 26, 5 ],
+            "sunday": [ 7, 17, 26, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 94,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/the-deluge.jpg',
+          title: 'The Deluge',
+          artist: 'Winifred Knights',
+          year: '1920',
+          rule: {
+            "monday": [ 7, 17, 26, 4 ],
+            "tuesday": [ 13, 22, 31, 9 ],
+            "wednesday": [ 12, 22, 1, 9 ],
+            "thursday": [ 11, 21, 29, 8 ],
+            "friday": [ 10, 20, 28, 7 ],
+            "saturday": [ 9, 19, 27, 6 ],
+            "sunday": [ 8, 18, 26, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 95,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/kusama-in-a-foreign-country.jpg',
+          title: 'Kusama In A Foreign Country',
+          artist: 'Yayoi Kusama',
+          year: '?',
+          rule: {
+            "monday": [ 8, 18, 26, 5 ],
+            "tuesday": [ 7, 17, 26, 4 ],
+            "wednesday": [ 13, 22, 31, 9 ],
+            "thursday": [ 12, 22, 1, 9 ],
+            "friday": [ 11, 21, 29, 8 ],
+            "saturday": [ 10, 20, 28, 7 ],
+            "sunday": [ 9, 19, 27, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
