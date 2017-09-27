@@ -1304,6 +1304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 66,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/garters-1939.jpg',
+          title: 'Garters',
+          artist: 'Philippe Halsman',
+          year: '1939',
+          rule: {
+            "monday": [ 4, 14, 24, 2 ],
+            "tuesday": [ 10, 20, 30, 7 ],
+            "wednesday": [ 9, 19, 29, 7 ],
+            "thursday": [ 8, 18, 28, 6 ],
+            "friday": [ 7, 17, 27, 5 ],
+            "saturday": [ 6, 16, 26, 4 ],
+            "sunday": [ 5, 15, 25, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 67,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/shanghai-2000.jpg',
+          title: 'Shanghai',
+          artist: 'Andreas Gursky',
+          year: '2000',
+          rule: {
+            "monday": [ 5, 15, 25, 3 ],
+            "tuesday": [ 4, 14, 24, 2 ],
+            "wednesday": [ 10, 20, 30, 7 ],
+            "thursday": [ 9, 19, 29, 7 ],
+            "friday": [ 8, 18, 28, 6 ],
+            "saturday": [ 7, 17, 27, 5 ],
+            "sunday": [ 6, 16, 26, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 68,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/untitled-diptych-1984.jpg',
+          title: 'Untitled Diptych',
+          artist: 'Gunther Forg',
+          year: '1984',
+          rule: {
+            "monday": [ 6, 16, 26, 4 ],
+            "tuesday": [ 5, 15, 25, 3 ],
+            "wednesday": [ 4, 14, 24, 2 ],
+            "thursday": [ 10, 20, 30, 7 ],
+            "friday": [ 9, 19, 29, 7 ],
+            "saturday": [ 8, 18, 28, 6 ],
+            "sunday": [ 7, 17, 27, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 69,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/seascape-ibiza-1972.jpg',
+          title: 'Seascape, Ibiza',
+          artist: 'Franco Fontana',
+          year: '1972',
+          rule: {
+            "monday": [ 7, 17, 27, 5 ],
+            "tuesday": [ 6, 16, 26, 4 ],
+            "wednesday": [ 5, 15, 25, 3 ],
+            "thursday": [ 4, 14, 24, 2 ],
+            "friday": [ 10, 20, 30, 7 ],
+            "saturday": [ 9, 19, 29, 7 ],
+            "sunday": [ 8, 18, 28, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 70,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/forty-eight-view-of-lochness-1997.jpg',
+          title: 'Forty-Eight View of Lochness',
+          artist: 'Spencer Finch',
+          year: '1997',
+          rule: {
+            "monday": [ 9, 19, 29, 7 ],
+            "tuesday": [ 8, 18, 28, 6 ],
+            "wednesday": [ 7, 17, 27, 5 ],
+            "thursday": [ 6, 16, 26, 4 ],
+            "friday": [ 5, 15, 25, 3 ],
+            "saturday": [ 11, 21, 31, 8 ],
+            "sunday": [ 10, 20, 30, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
