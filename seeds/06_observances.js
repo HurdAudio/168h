@@ -8217,6 +8217,48 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 523,
+          user_id: 1,
+          name: 'Tristan Tzara (poet/essayist/journalist/performance artist), born 1896',
+          color: '#A8AD99',
+          picture: './img/authors/tristantzara.jpg',
+          day_of: new Date ('1896-04-16T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 524,
+          user_id: 1,
+          name: 'Edinson Vólquez pitches a no-hitter in 2017 for the Miami Marlins vs. Arizona Diamondbacks',
+          color: '#121413',
+          picture: './img/baseball/edinsonnono.jpg',
+          day_of: new Date ('2017-06-03T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 525,
+          user_id: 1,
+          name: 'The world ended on this day with the return of Jesus according to the prophet and convicted tax-evader Ronald Weinland',
+          color: '#704B44',
+          picture: './img/doomsday/ronaldweinland.png',
+          day_of: new Date ('2012-05-27T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
