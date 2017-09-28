@@ -2304,6 +2304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 116,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/le-temps-1975.jpg',
+          title: 'Le temps',
+          artist: 'Aki Kuroda',
+          year: '1975',
+          rule: {
+            "monday": [ 1, 3, 4, 7 ],
+            "tuesday": [ 17, 18, 29, 21 ],
+            "wednesday": [ 20, 22, 24, 3 ],
+            "thursday": [ 22, 23, 15, 18 ],
+            "friday": [ 25, 26, 17, 21 ],
+            "saturday": [ 28, 30, 31, 2 ],
+            "sunday": [ 30, 1, 5, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 117,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/18-l-1965.jpg',
+          title: '#18 L',
+          artist: 'Paul Reed',
+          year: '1965',
+          rule: {
+            "monday": [ 30, 1, 5, 8 ],
+            "tuesday": [ 1, 3, 4, 7 ],
+            "wednesday": [ 17, 18, 29, 21 ],
+            "thursday": [ 20, 22, 24, 3 ],
+            "friday": [ 22, 23, 15, 18 ],
+            "saturday": [ 25, 26, 17, 21 ],
+            "sunday": [ 28, 30, 31, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 118,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/dialogue-i-1967.jpg',
+          title: 'Dialogue I',
+          artist: 'Constantin Flondor',
+          year: '1967',
+          rule: {
+            "monday": [ 28, 30, 31, 2 ],
+            "tuesday": [ 30, 1, 5, 8 ],
+            "wednesday": [ 1, 3, 4, 7 ],
+            "thursday": [ 17, 18, 29, 21 ],
+            "friday": [ 20, 22, 24, 3 ],
+            "saturday": [ 22, 23, 15, 18 ],
+            "sunday": [ 25, 26, 17, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 119,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/relational-painting-64-1953.jpg',
+          title: 'Relational Painting #64',
+          artist: 'Fritz Glarner',
+          year: '1953',
+          rule: {
+            "monday": [ 26, 27, 18, 22 ],
+            "tuesday": [ 29, 31, 1, 3 ],
+            "wednesday": [ 31, 2, 6, 9 ],
+            "thursday": [ 2, 4, 5, 8 ],
+            "friday": [ 18, 19, 30, 22 ],
+            "saturday": [ 21, 23, 15, 4 ],
+            "sunday": [ 23, 24, 16, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 120,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/four-blue-five-1962.jpg',
+          title: 'Four Blue Five',
+          artist: 'Thomas Downing',
+          year: '1962',
+          rule: {
+            "monday": [ 23, 24, 16, 19 ],
+            "tuesday": [ 26, 27, 18, 22 ],
+            "wednesday": [ 29, 31, 1, 3 ],
+            "thursday": [ 31, 2, 6, 9 ],
+            "friday": [ 2, 4, 5, 8 ],
+            "saturday": [ 18, 19, 30, 22 ],
+            "sunday": [ 21, 23, 15, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
