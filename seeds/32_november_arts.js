@@ -404,6 +404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 21,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/stanza-azzurra-2006.jpg',
+          title: 'Stanza azzurra',
+          artist: 'Ettore Spalletti',
+          year: '2006',
+          rule: {
+            "monday": [ 9, 14, 20, 25 ],
+            "tuesday": [ 8, 13, 19, 24 ],
+            "wednesday": [ 7, 12, 18, 23 ],
+            "thursday": [ 6, 11, 17, 22 ],
+            "friday": [ 5, 10, 16, 23 ],
+            "saturday": [ 11, 16, 22, 27 ],
+            "sunday": [ 10, 15, 21, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 22,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/portrait-1993.jpg',
+          title: 'Portrait',
+          artist: 'Imi Knoebel',
+          year: '1993',
+          rule: {
+            "monday": [ 10, 15, 21, 26 ],
+            "tuesday": [ 9, 14, 20, 25 ],
+            "wednesday": [ 8, 13, 19, 24 ],
+            "thursday": [ 7, 12, 18, 23 ],
+            "friday": [ 6, 11, 17, 22 ],
+            "saturday": [ 5, 10, 16, 23 ],
+            "sunday": [ 11, 16, 22, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 23,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/la-maison-de-la-celle-saint-cloud-1974.jpg',
+          title: 'La Maison de La Celle-Saint-Cloud',
+          artist: 'Jean-Pierre Raynaud',
+          year: '1974',
+          rule: {
+            "monday": [ 11, 16, 22, 27 ],
+            "tuesday": [ 10, 15, 21, 26 ],
+            "wednesday": [ 9, 14, 20, 25 ],
+            "thursday": [ 8, 13, 19, 24 ],
+            "friday": [ 7, 12, 18, 23 ],
+            "saturday": [ 6, 11, 17, 22 ],
+            "sunday": [ 5, 10, 16, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 24,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/barcelona-7-1989.jpg',
+          title: 'Barcelona 7',
+          artist: 'Larry Bell',
+          year: '1989',
+          rule: {
+            "monday": [ 5, 10, 16, 23 ],
+            "tuesday": [ 11, 16, 22, 27 ],
+            "wednesday": [ 10, 15, 21, 26 ],
+            "thursday": [ 9, 14, 20, 25 ],
+            "friday": [ 8, 13, 19, 24 ],
+            "saturday": [ 7, 12, 18, 23 ],
+            "sunday": [ 6, 11, 17, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 25,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/maleri-1964.jpg',
+          title: 'Maleri',
+          artist: 'Jan Groth',
+          year: '1964',
+          rule: {
+            "monday": [ 6, 11, 17, 22 ],
+            "tuesday": [ 5, 10, 16, 23 ],
+            "wednesday": [ 11, 16, 22, 27 ],
+            "thursday": [ 10, 15, 21, 26 ],
+            "friday": [ 9, 14, 20, 25 ],
+            "saturday": [ 8, 13, 19, 24 ],
+            "sunday": [ 7, 12, 18, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
