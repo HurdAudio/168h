@@ -821,15 +821,24 @@
 
       function populateBlockTypesSelect(currentBlock, blocks, selectorElement) {
         let element;
+        let blockTypes = blocks.sort((a, b)=>{
+          if (a.type.toLowerCase() < b.type.toLowerCase()) {
+            return -1;
+          } else if (a.type.toLowerCase() > b.type.toLowerCase()) {
+            return 1;
+          } else {
+            return 0;
+          }
+        });
 
         while (selectorElement.firstChild) {
           selectorElement.removeChild(selectorElement.firstChild);
         }
 
-        for (let i = 0; i < blocks.length; i++) {
+        for (let i = 0; i < blockTypes.length; i++) {
           element = document.createElement('option');
           selectorElement.appendChild(element);
-          element.innerHTML = blocks[i].type;
+          element.innerHTML = blockTypes[i].type;
         }
         selectorElement.value = currentBlock.type;
         element = document.createElement('option');
@@ -844,10 +853,20 @@
           selectorElement.removeChild(selectorElement.firstChild);
         }
 
-        for (let i = 0; i < currentBlock.keys[currentBlock.keys.keys[0] + 'Values'].length; i++) {
+        let valuesList = currentBlock.keys[currentBlock.keys.keys[0] + 'Values'].sort((a, b)=>{
+          if (a.toLowerCase() < b.toLowerCase()) {
+            return -1;
+          } else if (a.toLowerCase() > b.toLowerCase()) {
+            return 1;
+          } else {
+            return 0;
+          }
+        });
+
+        for (let i = 0; i < valuesList.length; i++) {
           element = document.createElement('option');
           selectorElement.appendChild(element);
-          element.innerHTML = currentBlock.keys[currentBlock.keys.keys[0] + 'Values'][i];
+          element.innerHTML = valuesList[i];
         }
         if (timeblock.block_data === null) {
           timeblock.block_data = {};
@@ -1830,9 +1849,18 @@
           $http.get(`/blocktypesbyuser/${currentUserId}`)
           .then(userBlocksData=>{
             let userBlocks = userBlocksData.data;
-            addAppointment.block_type = userBlocks[0].id;
-            if (userBlocks[0].keys !== null) {
-              addAppointment.block_data[userBlocks[0].keys.keys[0]] = 0;
+            let sortedBlocks = userBlocks.sort((a, b)=>{
+              if (a.type.toLowerCase() < b.type.toLowerCase()) {
+                return -1;
+              } else if (a.type.toLowerCase() > b.type.toLowerCase()) {
+                return 1;
+              } else {
+                return 0;
+              }
+            });
+            addAppointment.block_type = sortedBlocks[0].id;
+            if (sortedBlocks[0].keys !== null) {
+              addAppointment.block_data[sortedBlocks[0].keys.keys[0]] = 0;
             }
             $http.post('/timeblocks', addAppointment)
             .then(appointData=>{

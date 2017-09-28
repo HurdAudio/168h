@@ -2408,12 +2408,21 @@
         let newSelect;
 
         let keyValueList = block.keys[block.keys.keys[0] + "Values"];
+        let keyValueSorted = keyValueList.sort((a, b)=>{
+          if (a.toLowerCase() < b.toLowerCase()) {
+            return -1;
+          } else if (a.toLowerCase() > b.toLowerCase()) {
+            return 1;
+          } else {
+            return 0;
+          }
+        });
         let keyInUse = keyValueList[timeblock.block_data[block.keys.keys[0]]];
 
-        for (let i = 0; i <keyValueList.length; i++) {
+        for (let i = 0; i <keyValueSorted.length; i++) {
           newSelect = document.createElement('option');
           element.appendChild(newSelect);
-          newSelect.innerHTML = keyValueList[i];
+          newSelect.innerHTML = keyValueSorted[i];
         }
         newSelect = document.createElement('option');
         element.appendChild(newSelect);
@@ -3458,7 +3467,16 @@
             $http.get(`/blocktypesbyuser/${currentUserId}`)
             .then(blocksData=>{
               let blocks = blocksData.data;
-              let currentBlocktype = populateSelections(editDeleteBlocktypeSelector, blocks, 'add new blocktype...', timeblock);
+              let sortedBlocks = blocks.sort((a, b)=>{
+                if (a.type.toLowerCase() < b.type.toLowerCase()) {
+                  return -1;
+                } else if (a.type.toLowerCase() > b.type.toLowerCase()) {
+                  return 1;
+                } else {
+                  return 0;
+                }
+              });
+              let currentBlocktype = populateSelections(editDeleteBlocktypeSelector, sortedBlocks, 'add new blocktype...', timeblock);
               if (currentBlocktype.keys === null) {
                 editBlockKeys.setAttribute("style", "display: none;");
               } else {
@@ -3606,9 +3624,18 @@
         $http.get(`/blocktypesbyuser/${currentUserId}`)
         .then(userBlocksData=>{
           let userBlocks = userBlocksData.data;
+          let sortedBlocks = userBlocks.sort((a, b)=>{
+            if (a.type.toLowerCase() < b.type.toLowerCase()) {
+              return -1;
+            } else if (a.type.toLowerCase() > b.type.toLowerCase()) {
+              return 1;
+            } else {
+              return 0;
+            }
+          });
           let appointmentObject = {
             user_id: currentUserId,
-            block_type: userBlocks[0].id,
+            block_type: sortedBlocks[0].id,
             user_notes: '',
             location: ''
           };
@@ -3630,9 +3657,9 @@
           fullEndTimeString = yyyy + '-' + mmString + '-' + ddString + 'T' + endTimeString + tail;
           appointmentObject.start_time = new Date(fullStartTimeString);
           appointmentObject.end_time = new Date(fullEndTimeString);
-          if (userBlocks[0].keys !== null) {
+          if (sortedBlocks[0].keys !== null) {
             appointmentObject.block_data = {};
-            appointmentObject.block_data[userBlocks[0].keys.keys[0] + "Type"] = 0;
+            appointmentObject.block_data[sortedBlocks[0].keys.keys[0] + "Type"] = 0;
           } else {
             appointmentObject.block_data = null;
           }
