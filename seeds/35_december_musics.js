@@ -58,6 +58,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 4,
+          user_id: 1,
+          theme: 'brazil and pan-south american',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1775467947/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://desmonta.bandcamp.com/album/conta',
+          a_string: '&quot;conta&quot; by M.TAKARA',
+          rule: {
+            "monday": [ 4, 10, 16, 22 ],
+            "tuesday": [ 3, 9, 15, 21 ],
+            "wednesday": [ 7, 13, 19, 25 ],
+            "thursday": [ 6, 12, 18, 24 ],
+            "saturday": [ 5, 11, 17, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 5,
+          user_id: 1,
+          theme: 'brazil and pan-south american',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2940843005/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://graxa.bandcamp.com/album/a-concorr-ncia-demais',
+          a_string: 'A concorrência é demais! by Graxa',
+          rule: {
+            "monday": [ 5, 11, 17, 23 ],
+            "tuesday": [ 4, 10, 16, 22 ],
+            "wednesday": [ 3, 9, 15, 21 ],
+            "thursday": [ 7, 13, 19, 25 ],
+            "saturday": [ 6, 12, 18, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 6,
+          user_id: 1,
+          theme: 'brazil and pan-south american',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=535551876/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ubiquitycompilations.bandcamp.com/album/brasil-do-brazil',
+          a_string: 'Brasil do Brazil by Various Artists',
+          rule: {
+            "monday": [ 6, 12, 18, 24 ],
+            "tuesday": [ 5, 11, 17, 23 ],
+            "wednesday": [ 4, 10, 16, 22 ],
+            "thursday": [3, 9, 15, 21  ],
+            "saturday": [ 7, 13, 19, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
