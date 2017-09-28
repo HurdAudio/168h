@@ -1004,6 +1004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 51,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/petrograd-red-columns-1922.jpg',
+          title: 'Petrograd. Red columns.',
+          artist: 'Anna Ostroumova-Lebedeva',
+          year: '1922',
+          rule: {
+            "monday": [ 11, 15, 23, 8 ],
+            "tuesday": [ 10, 13, 22, 7 ],
+            "wednesday": [ 9, 13, 21, 6 ],
+            "thursday": [ 8, 12, 20, 5 ],
+            "friday": [ 7, 11, 19, 4 ],
+            "saturday": [ 6, 9, 18, 3 ],
+            "sunday": [ 5, 9, 17, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 52,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/homme-cactus-dansant-1939.jpg',
+          title: 'Homme cactus dansant',
+          artist: 'Julio Gonzalez',
+          year: '1939',
+          rule: {
+            "monday": [ 5, 9, 17, 2 ],
+            "tuesday": [ 11, 15, 23, 8 ],
+            "wednesday": [ 10, 13, 22, 7 ],
+            "thursday": [ 9, 13, 21, 6 ],
+            "friday": [ 8, 12, 20, 5 ],
+            "saturday": [ 7, 11, 19, 4 ],
+            "sunday": [ 6, 9, 18, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 53,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/portrait-of-natalia-petrovna-konchalovsky-the-artist-s-daughter-in-pink-dress-1925.jpg',
+          title: 'Portrait of Natalia Petrovna Konchalovsky, the artist\'s daughter (in pink dress)',
+          artist: 'Pyotr Konchalovsky',
+          year: '1925',
+          rule: {
+            "monday": [ 6, 9, 18, 3 ],
+            "tuesday": [ 5, 9, 17, 2 ],
+            "wednesday": [ 11, 15, 23, 8 ],
+            "thursday": [ 10, 13, 22, 7 ],
+            "friday": [ 9, 13, 21, 6 ],
+            "saturday": [ 8, 12, 20, 5 ],
+            "sunday": [ 7, 11, 19, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 54,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/hauptstrasse-mit-mann-1934(1).jpg',
+          title: 'Hauptstrasse (Mit Mann)',
+          artist: 'Gabriele Munter',
+          year: '1934',
+          rule: {
+            "monday": [ 7, 11, 19, 4 ],
+            "tuesday": [ 6, 9, 18, 3 ],
+            "wednesday": [ 5, 9, 17, 2 ],
+            "thursday": [ 11, 15, 23, 8 ],
+            "friday": [ 10, 13, 22, 7 ],
+            "saturday": [ 9, 13, 21, 6 ],
+            "sunday": [ 8, 12, 20, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 55,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/not_detected_235938.jpg',
+          title: 'Female nude seated on the ground',
+          artist: 'Oskar Kokoschka',
+          year: '1913',
+          rule: {
+            "monday": [ 8, 12, 20, 5 ],
+            "tuesday": [ 7, 11, 19, 4 ],
+            "wednesday": [ 6, 9, 18, 3 ],
+            "thursday": [ 5, 9, 17, 2 ],
+            "friday": [ 11, 15, 23, 8 ],
+            "saturday": [ 10, 13, 22, 7 ],
+            "sunday": [ 9, 13, 21, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
