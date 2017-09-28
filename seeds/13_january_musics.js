@@ -1192,6 +1192,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 67,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2843949395/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cuneiformrecords.bandcamp.com/album/the-continuing-story-of-counterpoint-parts-1-4-8-complete',
+          a_string: 'The Continuing Story of Counterpoint Parts 1-4+8 (Complete) by David Borden / Mother Mallard',
+          rule: {
+            "monday": [ 16, 23, 25, 24 ],
+            "tuesday": [ 24, 18, 20, 25 ],
+            "wednesday": [ 20, 14, 16, 4 ],
+            "thursday": [ 16, 23, 25, 24 ],
+            "saturday": [ 14, 18, 20, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 68,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1975746660/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cuneiformrecords.bandcamp.com/album/for',
+          a_string: 'For by The Claudia Quintet',
+          rule: {
+            "monday": [ 14, 18, 20, 24 ],
+            "tuesday": [ 16, 23, 25, 24 ],
+            "wednesday": [ 24, 18, 20, 25 ],
+            "thursday": [ 20, 14, 16, 4 ],
+            "saturday": [ 16, 23, 25, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 69,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3640489591/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cuneiformrecords.bandcamp.com/album/1970-1973',
+          a_string: '1970-1973 by Mother Mallard&#39;s Portable Masterpiece Co.',
+          rule: {
+            "monday": [ 16, 23, 25, 24 ],
+            "tuesday": [ 14, 18, 20, 24 ],
+            "wednesday": [ 16, 23, 25, 24 ],
+            "thursday": [ 24, 18, 20, 25 ],
+            "saturday": [ 20, 14, 16, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
