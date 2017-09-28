@@ -1904,6 +1904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 96,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/erin-hanson-crystal-light.jpg',
+          title: 'Crystal Light',
+          artist: 'Erin Hanson',
+          year: '2016',
+          rule: {
+            "monday": [ 9, 19, 27, 6 ],
+            "tuesday": [ 8, 18, 26, 5 ],
+            "wednesday": [ 7, 17, 26, 4 ],
+            "thursday": [ 13, 22, 31, 9 ],
+            "friday": [ 12, 22, 1, 9 ],
+            "saturday": [ 11, 21, 29, 8 ],
+            "sunday": [ 10, 20, 28, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 97,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/face-eater-2004.jpg',
+          title: 'Face Eater',
+          artist: 'Dana Schutz',
+          year: '2004',
+          rule: {
+            "monday": [ 10, 20, 28, 7 ],
+            "tuesday": [ 9, 19, 27, 6 ],
+            "wednesday": [ 8, 18, 26, 5 ],
+            "thursday": [ 7, 17, 26, 4 ],
+            "friday": [ 13, 22, 31, 9 ],
+            "saturday": [ 12, 22, 1, 9 ],
+            "sunday": [ 11, 21, 29, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 98,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/blue-sky-1932.jpg',
+          title: 'Blue Sky',
+          artist: 'Emily Carr',
+          year: '1932',
+          rule: {
+            "monday": [ 12, 22, 30, 9 ],
+            "tuesday": [ 11, 21, 29, 8 ],
+            "wednesday": [ 10, 20, 28, 7 ],
+            "thursday": [ 9, 19, 27, 6 ],
+            "friday": [ 8, 18, 27, 5 ],
+            "saturday": [ 14, 23, 1, 10 ],
+            "sunday": [ 13, 23, 2, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 99,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/untitled(4).jpg',
+          title: 'Untitled',
+          artist: 'Hilma af Klint',
+          year: '?',
+          rule: {
+            "monday": [ 13, 23, 2, 10 ],
+            "tuesday": [ 12, 22, 30, 9 ],
+            "wednesday": [ 11, 21, 29, 8 ],
+            "thursday": [ 10, 20, 28, 7 ],
+            "friday": [ 9, 19, 27, 6 ],
+            "saturday": [ 8, 18, 27, 5 ],
+            "sunday": [ 14, 23, 1, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 100,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/will-eat-you-to-make-you-mine-2009.jpg',
+          title: 'Will Eat You to Make You Mine',
+          artist: 'Samira Eskandarfar',
+          year: '2009',
+          rule: {
+            "monday": [ 14, 23, 1, 10 ],
+            "tuesday": [ 13, 23, 2, 10 ],
+            "wednesday": [ 12, 22, 30, 9 ],
+            "thursday": [ 11, 21, 29, 8 ],
+            "friday": [ 10, 20, 28, 7 ],
+            "saturday": [ 9, 19, 27, 6 ],
+            "sunday": [ 8, 18, 27, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
