@@ -804,6 +804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 41,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/madchen-am-meer.jpg',
+          title: 'Madchen am Meer',
+          artist: 'Dieter Asmus',
+          year: '1973',
+          rule: {
+            "monday": [ 5, 11, 29, 7 ],
+            "tuesday": [ 4, 10, 28, 6 ],
+            "wednesday": [ 3, 9, 27, 5 ],
+            "thursday": [ 2, 8, 26, 4 ],
+            "friday": [ 8, 14, 2, 10 ],
+            "saturday": [ 7, 13, 1, 9 ],
+            "sunday": [ 6, 12, 30, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 42,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/sunrise-in-mallorca.jpg',
+          title: 'Sunrise in Mallorca',
+          artist: 'Jerry W. McDaniel',
+          year: '2011',
+          rule: {
+            "monday": [ 7, 13, 1, 9 ],
+            "tuesday": [ 6, 12, 30, 8 ],
+            "wednesday": [ 5, 11, 29, 7 ],
+            "thursday": [ 4, 10, 28, 6 ],
+            "friday": [ 3, 9, 27, 5 ],
+            "saturday": [ 9, 15, 3, 11 ],
+            "sunday": [ 8, 14, 2, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 43,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/escale-1964.jpg',
+          title: 'Escale',
+          artist: 'Herve Telemaque',
+          year: '1964',
+          rule: {
+            "monday": [ 8, 14, 2, 10 ],
+            "tuesday": [ 7, 13, 1, 9 ],
+            "wednesday": [ 6, 12, 30, 8 ],
+            "thursday": [ 5, 11, 29, 7 ],
+            "friday": [ 4, 10, 28, 6 ],
+            "saturday": [ 3, 9, 27, 5 ],
+            "sunday": [ 9, 15, 3, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 44,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/web910.jpg',
+          title: 'Para Largo Tiempo',
+          artist: 'Vlady Kibalchich Rusakov',
+          year: '?',
+          rule: {
+            "monday": [ 9, 15, 3, 11 ],
+            "tuesday": [ 8, 14, 2, 10 ],
+            "wednesday": [ 7, 13, 1, 9 ],
+            "thursday": [ 6, 12, 30, 8 ],
+            "friday": [ 5, 11, 29, 7 ],
+            "saturday": [ 4, 10, 28, 6 ],
+            "sunday": [ 3, 9, 27, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 45,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/untitled-death-mask-1978-1.jpg',
+          title: 'Untitled (Death Mask)',
+          artist: 'Arnulf Rainer',
+          year: '1978',
+          rule: {
+            "monday": [ 3, 9, 27, 5 ],
+            "tuesday": [ 9, 15, 3, 11 ],
+            "wednesday": [ 8, 14, 2, 10 ],
+            "thursday": [ 7, 13, 1, 9 ],
+            "friday": [ 6, 12, 30, 8 ],
+            "saturday": [ 5, 11, 29, 7 ],
+            "sunday": [ 4, 10, 28, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
