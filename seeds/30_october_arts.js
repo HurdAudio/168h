@@ -604,6 +604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 31,
+          user_id: 1,
+          theme: 'russian revolution',
+          img_path: './img/october/popup_ksssrpost_0005.jpg',
+          title: 'The most businesslike',
+          artist: 'A.Rodchenko, V. Mayakovsky',
+          year: '1923',
+          rule: {
+            "monday": [ 4, 15, 26, 30 ],
+            "tuesday": [ 10, 21, 1, 5 ],
+            "wednesday": [ 9, 20, 31, 4 ],
+            "thursday": [ 8, 19, 30, 3 ],
+            "friday": [ 7, 18, 29, 2 ],
+            "saturday": [ 6, 17, 28, 1 ],
+            "sunday": [ 5, 16, 27, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 32,
+          user_id: 1,
+          theme: 'russian revolution',
+          img_path: './img/october/popup_ksssrpost_0004.jpg',
+          title: 'Read Young Guard magazine',
+          artist: 'A. Rodchenko, V. Mayakovsky',
+          year: '1924',
+          rule: {
+            "monday": [ 5, 16, 27, 31 ],
+            "tuesday": [ 4, 15, 26, 30 ],
+            "wednesday": [ 10, 21, 1, 5 ],
+            "thursday": [ 9, 20, 31, 4 ],
+            "friday": [ 8, 19, 30, 3 ],
+            "saturday": [ 7, 18, 29, 2 ],
+            "sunday": [ 6, 17, 28, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 33,
+          user_id: 1,
+          theme: 'russian revolution',
+          img_path: './img/october/popup_ksssrpost_0003.jpg',
+          title: 'Best Pacifier',
+          artist: 'A.Rodchenko,V.Mayakovsky',
+          year: '1923',
+          rule: {
+            "monday": [ 6, 17, 28, 1 ],
+            "tuesday": [ 5, 16, 27, 31 ],
+            "wednesday": [ 4, 15, 26, 30 ],
+            "thursday": [ 10, 21, 1, 5 ],
+            "friday": [ 9, 20, 31, 4 ],
+            "saturday": [ 8, 19, 30, 3 ],
+            "sunday": [ 7, 18, 29, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 34,
+          user_id: 1,
+          theme: 'russian revolution',
+          img_path: './img/october/popup_parenthoodsovpost_00009.jpg',
+          title: 'Young Leninists....',
+          artist: 'V.Izenberg',
+          year: '1924',
+          rule: {
+            "monday": [ 7, 18, 29, 2 ],
+            "tuesday": [ 6, 17, 28, 1 ],
+            "wednesday": [ 5, 16, 27, 31 ],
+            "thursday": [ 4, 15, 26, 30 ],
+            "friday": [ 10, 21, 1, 5 ],
+            "saturday": [ 9, 20, 31, 4 ],
+            "sunday": [ 8, 19, 30, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 35,
+          user_id: 1,
+          theme: 'russian revolution',
+          img_path: './img/october/popup_parenthoodsovpost_00006.jpg',
+          title: 'Do not hit the child...',
+          artist: 'A.Laptev',
+          year: '1929',
+          rule: {
+            "monday": [ 9, 20, 31, 4 ],
+            "tuesday": [ 8, 19, 30, 3 ],
+            "wednesday": [ 7, 18, 29, 2 ],
+            "thursday": [ 6, 17, 28, 1 ],
+            "friday": [ 5, 16, 27, 31 ],
+            "saturday": [ 11, 22, 2, 6 ],
+            "sunday": [ 10, 21, 1, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
