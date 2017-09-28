@@ -490,6 +490,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 28,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3173709007/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://caminanterecordings.bandcamp.com/album/merzdub',
+          a_string: 'Merzdub by Jamie Saft / Merzbow',
+          rule: {
+            "monday": [ 8, 16, 1, 31 ],
+            "tuesday": [ 12, 20, 5, 6 ],
+            "wednesday": [ 11, 19, 4, 5 ],
+            "thursday": [ 8, 16, 1, 31 ],
+            "saturday": [ 9, 17, 2, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 29,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=585814970/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bleibmodern.bandcamp.com/album/antagonism-lp',
+          a_string: 'Antagonism LP by Bleib Modern',
+          rule: {
+            "monday": [ 9, 17, 2, 1 ],
+            "tuesday": [ 8, 16, 1, 31 ],
+            "wednesday": [ 12, 20, 5, 6 ],
+            "thursday": [ 11, 19, 4, 5 ],
+            "saturday": [ 8, 16, 1, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 30,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4233208522/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://redvenicerecords.bandcamp.com/album/torturing-nurse-slave',
+          a_string: 'Torturing Nurse - Slave by Torturing Nurse',
+          rule: {
+            "monday": [ 8, 16, 1, 31 ],
+            "tuesday": [ 9, 17, 2, 1 ],
+            "wednesday": [ 8, 16, 1, 31 ],
+            "thursday": [ 12, 20, 5, 6 ],
+            "saturday": [ 11, 19, 4, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
