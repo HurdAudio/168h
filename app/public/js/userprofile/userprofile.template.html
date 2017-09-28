@@ -2,177 +2,110 @@
   <div id="logo" class="pure-u-1-5">
     <img href="#" src="./img/onlinelogomaker-071717-1242-0242.png">
   </div>
-  <div id="clock" class="pure-u-1-5">
+  <div id="userProfileClock" class="pure-u-1-5">
 
     <p></p>
   </div>
   <div class="pure-u-2-5">
     <ul>
-      <li><a href="" class="btn">Month</a></li>
+      <li><a href="" class="btn" ng-click="$ctrl.gotoMonthView()">Month</a></li>
       <li><a href="" class="btn" ng-click="$ctrl.gotoDayview()">Day</a></li>
-      <li><a href="" class="btn">Week</a></li>
+      <li><a href="" class="btn" ng-click="$ctrl.gotoWeek()">Week</a></li>
       <li><a href="" class="btn">Year</a></li>
       <li><a href="" class="btn">Next</a></li>
-      <li><a href="" class="btn">Profile</a></li>
+      <li><a href="" class="btn" ng-click="$ctrl.logout()">logout</a></li>
     </ul>
   </div>
 </div>
 
-<div id="dateStrip" class="pure-g">
-  <div id="monthTitle" class="pure-u-1-1">
-    <p>Hello, Devin Hurd.</p>
-    <p>Today is: Monday 7 August 2017</p>
+<div id="greetingDateStrip" class="pure-g">
+  <div id="greetingStrip" class="pure-u-1-2">
+    <p id="greetingsUser"></p>
+    <p id="greetingsDate"></p>
+  </div>
+  <div id="adminMsg" class="pure-u-1-2">
+    <h3>Messages from the Admins:</h3>
+    <p>Welcome to 168h! We are all time travellers at present.</p>
   </div>
 </div>
 
 <div id="dashboard" class="pure-g">
-  <div id="userDash" class="pure-u-1-6">
+  <div id="userProfilePortal" class="pure-u-1-3">
+    <div id="profileZone">
+      <div id="userPic">
 
-    <ul>
-      <li><a href="" class="btn">User Profile</a></li>
-      <li><a href="" class="btn">Personal Info</a></li>
-      <li><a href="" class="btn">Change Password</a></li>
-      <li><a href="" class="btn">View/Add Associates</a></li>
-      <li><a href="" class="btn">Log Out</a></li>
+        <a href="" id="userEditor" class="btn" ng-click="$ctrl.profileEditor()">edit profile</a>
+      </div>
+    </div>
+    <div id="blocktypeZone">
+      <div>
+        <img src="../img/cube-2351878_1280.jpg">
+        <a href="" id="blocktypeManager" class="btn">block edit</a>
+      </div>
 
-    </ul>
-  </div>
-  <div id="billsDash" class="pure-u-1-6">
-    <ul>
-      <li><a href="" class="btn">Bills</a></li>
-      <li><a href="" class="btn">Current Bills</a></li>
-      <li><a href="" class="btn">Add/Delete Bills</a></li>
-      <li><a href="" class="btn">Past Bills</a></li>
-      <li><a href="" class="btn">Bills Report</a></li>
-
-    </ul>
+    </div>
 
   </div>
-  <div id="tasksDash" class="pure-u-1-6">
-    <ul>
-      <li><a href="" class="btn">Tasks</a></li>
-      <li><a href="" class="btn">Current Tasks</a></li>
-      <li><a href="" class="btn">Add/Delete Tasks</a></li>
-      <li><a href="" class="btn">Past Tasks</a></li>
-      <li><a href="" class="btn">Task Report</a></li>
+  <div id="generalEditing" class="pure-u-1-3">
+    <div id="userEditorDiv">
+      <div id="userEditBar">
+        <a href="" class="btn" id="userProfileDone" ng-click="$ctrl.closeUserEditor()">done</a>
+        <h1>Profile Editor</h1>
 
-    </ul>
+      </div>
+      <form id="userEditorForm" class="pure-form pure-form-stacked">
+        <fieldset>
+          <div id="weekSubsEntry">
+            <p>Name:</p>
+            <input type="text" id="userNameInput" class="pure-input-1">
+            <a href="" class="btn" id="updateUserName">submit</a>
+          </div>
+          <br><br>
 
+        </fieldset>
+        <div id="userOptionButtons">
+          <a href="" class="btn" id="changeProfilePhoto" ng-click="$ctrl.userPhotoEditor()">photo</a>
+          <a href="" class="btn" id="changePassword">password</a>
+          <a href="" class="btn" id="changeEmail">email</a>
+          <a href="" class="btn" id="changeFriends">friends</a>
+        </div>
+        <a href="#" id="adminAccess"><p>admin</p></a>
+        <a href="#" id="deleteAccount"><p>delete account</p></a>
+
+
+
+      </form>
+    </div>
   </div>
-  <div id="goalsDash" class="pure-u-1-6">
-    <ul>
-      <li><a href="" class="btn">Goals</a></li>
-      <li><a href="" class="btn">Current Goals</a></li>
-      <li><a href="" class="btn">Set Goals</a></li>
-      <li><a href="" class="btn">Add Goals</a></li>
-      <li><a href="" class="btn">Goals Report</a></li>
+  <div id="secondaryEditing" class="pure-u-1-3">
+    <div id="userProfilePhotoDiv">
+      <div id="userProfilePhotoBar">
+        <a href="" class="btn" id="userProfilePhotoDone" ng-click="$ctrl.userPhotoEditDone()">done</a>
+        <h1>User Profile Photo</h1>
 
-    </ul>
+      </div>
+      <form id="userProfilePhotoForm" class="pure-form pure-form-stacked">
+        <fieldset>
+          <img id="photoReference">
+          <p id="onlineurl">Online URL:</p>
+          <input type="text" id="newPhotoURL" class="pure-input-1">
+          <a href="" class="btn" id="verifyPhotoURL">verify</a>
+          <a href="" class="btn" id="updatePhotoURL">submit</a>
+          <p id="or">or</p>
+          <a href="" class="btn" id="uploadPhoto">upload</a>
 
-  </div>
-  <div id="blocksDash" class="pure-u-1-6">
-    <ul>
-      <li><a href="" class="btn">Timeblocks</a></li>
-      <li><a href="" class="btn">Current Blocks</a></li>
-      <li><a href="" class="btn">Add Block Types</a></li>
-      <li><a href="" class="btn">Edit Block Types</a></li>
-      <li><a href="" class="btn">Block Report</a></li>
+        </fieldset>
+        <div id="userProfilePhotoButtons">
 
-    </ul>
 
-  </div>
-  <div id="holidaysDash" class="pure-u-1-6">
-    <ul>
-      <li><a href="" class="btn">Holidays</a></li>
-      <li><a href="" class="btn">View Holidays</a></li>
-      <li><a href="" class="btn">Add/Delete Holidays</a></li>
-      <li><a href="" class="btn">Edit Holidays</a></li>
-      <li><a href="" class="btn">Holiday Report</a></li>
+        </div>
 
-    </ul>
 
-  </div>
 
-</div>
-<div id="dashboard2" class="pure-g">
-  <div id="userDash2" class="pure-u-1-6">
-    <ul>
-      <li><a href="" class="btn">Occasions</a></li>
-      <li><a href="" class="btn">View Occasions</a></li>
-      <li><a href="" class="btn">Add/Delete Occasions</a></li>
-      <li><a href="" class="btn">Edit Occasions</a></li>
-      <li><a href="" class="btn">Occasion Report</a></li>
 
-    </ul>
-  </div>
-  <div id="observancesDash" class="pure-u-1-6">
-    <ul>
-      <li><a href="" class="btn">Observances</a></li>
-      <li><a href="" class="btn">View Observes</a></li>
-      <li><a href="" class="btn">Add/Delete Observes</a></li>
-      <li><a href="" class="btn">Edit Observes</a></li>
-      <li><a href="" class="btn">Observes Report</a></li>
+      </form>
 
-    </ul>
-
-  </div>
-  <div id="fridayMusicDash" class="pure-u-1-6">
-    <ul>
-      <li><a href="" class="btn">Friday Music</a></li>
-      <li><a href="" class="btn">View Playlist</a></li>
-      <li><a href="" class="btn">Curate New</a></li>
-      <li><a href="" class="btn">Edit Playlist</a></li>
-      <li><a href="" class="btn">Friday Report</a></li>
-
-    </ul>
-
-  </div>
-  <div id="sundayMusicDash" class="pure-u-1-6">
-    <ul>
-      <li><a href="" class="btn">Sunday Music</a></li>
-      <li><a href="" class="btn">View Playlist</a></li>
-      <li><a href="" class="btn">Curate New</a></li>
-      <li><a href="" class="btn">Edit Playlist</a></li>
-      <li><a href="" class="btn">Sunday Report</a></li>
-
-    </ul>
-
-  </div>
-  <div id="artCurationDash" class="pure-u-1-6">
-    <ul>
-      <li><a href="" class="btn">Art Curation</a></li>
-      <li><a href="" class="btn">View Art</a></li>
-      <li><a href="" class="btn">Add/Delete Art</a></li>
-      <li><a href="" class="btn">Edit Art</a></li>
-      <li><a href="" class="btn">Art Report</a></li>
-
-    </ul>
-
-  </div>
-  <div id="musicCurationDash" class="pure-u-1-6">
-    <ul>
-      <li><a href="" class="btn">Music Curation</a></li>
-      <li><a href="" class="btn">View Music</a></li>
-      <li><a href="" class="btn">Add/Delete Music</a></li>
-      <li><a href="" class="btn">Edit Music</a></li>
-      <li><a href="" class="btn">Music Report</a></li>
-
-    </ul>
-
-  </div>
-
-</div>
-<div class="pure-g">
-  <div id="tileCurationDash" class="pure-u-1-6">
-    <ul>
-      <li><a href="" class="btn">Tile Curation</a></li>
-      <li><a href="" class="btn">View Tiles</a></li>
-      <li><a href="" class="btn">Add/Delete Tiles</a></li>
-      <li><a href="" class="btn">Edit Tiles</a></li>
-      <li><a href="" class="btn">Tiles Report</a></li>
-
-    </ul>
-
+    </div>
   </div>
 
 </div>

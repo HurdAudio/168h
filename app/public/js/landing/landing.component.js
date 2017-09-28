@@ -375,11 +375,12 @@
                 key: userInfo.security.key,
                 value: userInfo.security.value
               };
+              linkSentToEmail();
               $http.post(`/users/lostpassword/${userAccount.id}`, sub)
               .then(emailData=>{
                 let email = emailData.data;
                 console.log(email);
-                linkSentToEmail();
+
               });
             });
 

@@ -3,6 +3,7 @@
   var dayClock = false;
   var weekClock = false;
   var monthClock = true;
+  var profileClock = false;
   var currentUserId;
   var months = [ 'zero', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ];
   var viewMonth = 0;
@@ -11,7 +12,7 @@
 
 
   function setClock(){
-    if ((monthClock) && (!weekClock) && (!dayClock)) {
+    if ((monthClock) && (!weekClock) && (!dayClock) && (!profileClock)) {
        document.getElementById("monthClock").innerHTML=new Date().toLocaleTimeString('en-GB');
      }
   }
@@ -91,6 +92,12 @@
       vm.gotoLastMonth = gotoLastMonth;
       vm.gotoNextMonth = gotoNextMonth;
       vm.gotoThisWeek = gotoThisWeek;
+      vm.gotoProfile = gotoProfile;
+
+      function gotoProfile() {
+        monthClock = false;
+        $state.go('userprofile', {id: currentUserId});
+      }
 
       function gotoDay() {
         let navDay = new Date();

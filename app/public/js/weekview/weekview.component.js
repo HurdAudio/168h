@@ -73,6 +73,12 @@
       vm.gotoNextWeek = gotoNextWeek;
       vm.toDayview = toDayview;
       vm.gotoMonth = gotoMonth;
+      vm.gotoProfile = gotoProfile;
+
+      function gotoProfile() {
+        weekClock = false;
+        $state.go('userprofile', {id: currentUserId});
+      }
 
       function gotoMonth() {
         let mons = new Date(mondayDate);

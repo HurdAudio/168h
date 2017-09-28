@@ -104,13 +104,11 @@
       }
 
       function userProfile() {
-        myTimer = undefined;
         dayClock = false;
-        $state.go('userprofile');
+        $state.go('userprofile', {id: currentUserId});
       }
 
       function gotoMonth() {
-        myTimer = undefined;
         dayClock = false;
         let increment = 0;
         let navDay = new Date(viewDate);

@@ -48,7 +48,7 @@
       })
       .state({
         name: 'userprofile',
-        url: '/userprofile',
+        url: '/userprofile/:id',
         parent: 'app',
         component: 'userprofile'
       });
