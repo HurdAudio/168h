@@ -166,6 +166,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 10,
+          user_id: 1,
+          theme: 'ethiopia and pan-african',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=315745298/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ethiopiquesseries.bandcamp.com/album/various-artists-more-ethiopian-soul-and-groove',
+          a_string: 'VARIOUS ARTISTS - MORE ETHIOPIAN SOUL AND GROOVE by Various Artists',
+          rule: {
+            "monday": [ 30, 11, 22, 24 ],
+            "tuesday": [ 29, 10, 21, 23 ],
+            "wednesday": [ 28, 9, 20, 22 ],
+            "thursday": [ 2, 13, 24, 26 ],
+            "saturday": [ 1, 12, 23, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 11,
+          user_id: 1,
+          theme: 'ethiopia and pan-african',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2223744/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://hoodnaorchestra.bandcamp.com/album/alem-single-feat-demisu-belete-adyabo-ensemble',
+          a_string: 'ALEM single feat. Demisu Belete &amp; ADYABO Ensemble by Hoodna Orchestra',
+          rule: {
+            "monday": [ 1, 12, 23, 25 ],
+            "tuesday": [ 30, 11, 22, 24 ],
+            "wednesday": [ 29, 10, 21, 23 ],
+            "thursday": [ 28, 9, 20, 22 ],
+            "saturday": [ 2, 13, 24, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 12,
+          user_id: 1,
+          theme: 'ethiopia and pan-african',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1465697662/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://korruptflozferti.bandcamp.com/album/southern-roads',
+          a_string: 'SOUTHERN ROADS by Ozferti',
+          rule: {
+            "monday": [ 2, 13, 24, 26 ],
+            "tuesday": [ 1, 12, 23, 25 ],
+            "wednesday": [ 30, 11, 22, 24 ],
+            "thursday": [ 29, 10, 21, 23 ],
+            "saturday": [ 28, 9, 20, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
