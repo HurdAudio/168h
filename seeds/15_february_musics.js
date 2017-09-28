@@ -1084,6 +1084,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 61,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2454365750/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://essoafrojamfunkbeat.bandcamp.com/album/juntos',
+          a_string: 'Juntos by ¡Esso! Afrojam Funkbeat',
+          rule: {
+            "monday": [ 10, 14, 16, 20 ],
+            "tuesday": [ 12, 16, 18, 22 ],
+            "wednesday": [ 14, 18, 20, 22 ],
+            "thursday": [ 26, 20, 22, 28 ],
+            "saturday": [ 9, 23, 4, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 62,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=925922551/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://pasteurlappe.bandcamp.com/album/na-man-pass-man',
+          a_string: 'Na Man Pass Man by Pasteur Lappe',
+          rule: {
+            "monday": [ 9, 23, 4, 28 ],
+            "tuesday": [ 10, 14, 16, 20 ],
+            "wednesday": [ 12, 16, 18, 22 ],
+            "thursday": [ 14, 18, 20, 22 ],
+            "saturday": [ 26, 20, 22, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 63,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3912228382/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sookie1.bandcamp.com/album/sookie',
+          a_string: 'Sookie by Sookie',
+          rule: {
+            "monday": [ 27, 21, 23, 29 ],
+            "tuesday": [ 10, 15, 17, 29 ],
+            "wednesday": [ 11, 15, 17, 21 ],
+            "thursday": [ 13, 17, 19, 23 ],
+            "saturday": [ 15, 19, 21, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
