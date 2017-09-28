@@ -2104,6 +2104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 106,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/william-edmondson-noahs-ark.jpg',
+          title: 'Noah\'s Ark',
+          artist: 'William Edmondson',
+          year: '1930',
+          rule: {
+            "monday": [ 17, 25, 4, 12 ],
+            "tuesday": [ 22, 27, 4, 14 ],
+            "wednesday": [ 21, 29, 8, 16 ],
+            "thursday": [ 23, 4, 10, 18 ],
+            "friday": [ 25, 4, 12, 22 ],
+            "saturday": [ 27, 6, 2, 21 ],
+            "sunday": [ 15, 23, 2, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 107,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/melvin-edwards-steel-life-1985-1991.jpg',
+          title: 'Steel Life',
+          artist: 'Melvin Edwards',
+          year: '1985-91',
+          rule: {
+            "monday": [ 15, 23, 2, 10 ],
+            "tuesday": [ 17, 25, 4, 12 ],
+            "wednesday": [ 22, 27, 4, 14 ],
+            "thursday": [ 21, 29, 8, 16 ],
+            "friday": [ 23, 4, 10, 18 ],
+            "saturday": [ 25, 4, 12, 22 ],
+            "sunday": [ 27, 6, 2, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 108,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Ellison_Walter_Old_Policy_Wheel_resize.jpg',
+          title: 'Old Policy Wheel',
+          artist: 'Walter Ellison',
+          year: '1935',
+          rule: {
+            "monday": [ 27, 6, 2, 21 ],
+            "tuesday": [ 15, 23, 2, 10 ],
+            "wednesday": [ 17, 25, 4, 12 ],
+            "thursday": [ 22, 27, 4, 14 ],
+            "friday": [ 21, 29, 8, 16 ],
+            "saturday": [ 23, 4, 10, 18 ],
+            "sunday": [ 25, 4, 12, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 109,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/MinnieEvans-visionary-artist.jpeg',
+          title: 'Wrightsville Beach',
+          artist: 'Minnie Evans',
+          year: '1968',
+          rule: {
+            "monday": [ 25, 4, 12, 22 ],
+            "tuesday": [ 27, 6, 2, 21 ],
+            "wednesday": [ 15, 23, 2, 10 ],
+            "thursday": [ 17, 25, 4, 12 ],
+            "friday": [ 22, 27, 4, 14 ],
+            "saturday": [ 21, 29, 8, 16 ],
+            "sunday": [ 23, 4, 10, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 110,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Meta_Vaux_Warrick_Fuller,_Ethiopia_Awakening.jpg',
+          title: 'Meta Vaux Warrick Fuller',
+          artist: 'Ethiopia Awakening',
+          year: '1914',
+          rule: {
+            "monday": [ 23, 4, 10, 18 ],
+            "tuesday": [ 25, 4, 12, 22 ],
+            "wednesday": [ 27, 6, 2, 21 ],
+            "thursday": [ 15, 23, 2, 10 ],
+            "friday": [ 17, 25, 4, 12 ],
+            "saturday": [ 22, 27, 4, 14 ],
+            "sunday": [ 21, 29, 8, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
