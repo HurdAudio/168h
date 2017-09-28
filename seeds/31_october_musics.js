@@ -275,7 +275,60 @@ exports.seed = function(knex, Promise) {
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
         },
-        
+        {
+          id: 16,
+          user_id: 1,
+          theme: 'hardcore punk, metal and nurse with wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1252178260/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://nursewithwound1.bandcamp.com/album/simple-headphone-mind',
+          a_string: 'Simple Headphone Mind by Nurse With Wound',
+          rule: {
+            "monday": [ 10, 20, 30, 2 ],
+            "tuesday": [ 9, 19, 29, 1 ],
+            "wednesday": [ 8, 18, 28, 31 ],
+            "thursday": [ 7, 17, 27, 30 ],
+            "saturday": [ 11, 21, 31, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 17,
+          user_id: 1,
+          theme: 'hardcore punk, metal and nurse with wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=221334160/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://howlinggiant.bandcamp.com/album/black-hole-space-wizard-part-2',
+          a_string: 'Black Hole Space Wizard: Part 2 by Howling Giant',
+          rule: {
+            "monday": [ 11, 21, 31, 3 ],
+            "tuesday": [ 10, 20, 30, 2 ],
+            "wednesday": [ 9, 19, 29, 1 ],
+            "thursday": [ 8, 18, 28, 31 ],
+            "saturday": [ 7, 17, 27, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 18,
+          user_id: 1,
+          theme: 'hardcore punk, metal and nurse with wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1330913740/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://spaceslug.bandcamp.com/album/time-travel-dilemma',
+          a_string: 'Time Travel Dilemma by Spaceslug',
+          rule: {
+            "monday": [ 7, 17, 27, 30 ],
+            "tuesday": [ 11, 21, 31, 3 ],
+            "wednesday": [ 10, 20, 30, 2 ],
+            "thursday": [ 9, 19, 29, 1 ],
+            "saturday": [ 8, 18, 28, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        }
       ]);
     }).then(() => {
       return knex.raw("SELECT setval('october_musics_id_seq', (SELECT MAX(id) FROM october_musics));");
