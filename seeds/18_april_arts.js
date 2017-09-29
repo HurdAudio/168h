@@ -1804,6 +1804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 91,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/1946444l.jpg',
+          title: 'Fenway Park Centerfield',
+          artist: 'Loretta Feeney',
+          year: '2015',
+          rule: {
+            "monday": [ 12, 17, 23, 29 ],
+            "tuesday": [ 11, 15, 30, 28 ],
+            "wednesday": [ 10, 15, 20, 27 ],
+            "thursday": [ 9, 14, 20, 26 ],
+            "friday": [ 8, 13, 19, 25 ],
+            "saturday": [ 13, 19, 24, 1 ],
+            "sunday": [ 27, 17, 23, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 92,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/boston-red-sox-and-new-york-yankees-at-fenway-park-art-donna-doherty.jpg',
+          title: 'Boston Red Sox And New York Yankees At Fenway Park',
+          artist: 'Donna Doherty',
+          year: '2014',
+          rule: {
+            "monday": [ 27, 17, 23, 30 ],
+            "tuesday": [ 12, 17, 23, 29 ],
+            "wednesday": [ 11, 15, 30, 28 ],
+            "thursday": [ 10, 15, 20, 27 ],
+            "friday": [ 9, 14, 20, 26 ],
+            "saturday": [ 8, 13, 19, 25 ],
+            "sunday": [ 13, 19, 24, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 93,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/DO_3.jpg',
+          title: 'David Ortiz',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 13, 19, 24, 1 ],
+            "tuesday": [ 27, 17, 23, 30 ],
+            "wednesday": [ 12, 17, 23, 29 ],
+            "thursday": [ 11, 15, 30, 28 ],
+            "friday": [ 10, 15, 20, 27 ],
+            "saturday": [ 9, 14, 20, 26 ],
+            "sunday": [ 8, 13, 19, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 94,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/Dave_Roberts_The_Steal.jpg',
+          title: 'Dave Roberts the Steal',
+          artist: 'Kris Borzilleri',
+          year: '',
+          rule: {
+            "monday": [ 8, 13, 19, 25 ],
+            "tuesday": [ 13, 19, 24, 1 ],
+            "wednesday": [ 27, 17, 23, 30 ],
+            "thursday": [ 12, 17, 23, 29 ],
+            "friday": [ 11, 15, 30, 28 ],
+            "saturday": [ 10, 15, 20, 27 ],
+            "sunday": [ 9, 14, 20, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 95,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/be7c7aaf9317726b4570ccdadffedc6c.jpg',
+          title: 'Boston!',
+          artist: 'Arabel',
+          year: 'XXI cent.',
+          rule: {
+            "monday": [ 9, 14, 20, 26 ],
+            "tuesday": [ 8, 13, 19, 25 ],
+            "wednesday": [ 13, 19, 24, 1 ],
+            "thursday": [ 27, 17, 23, 30 ],
+            "friday": [ 12, 17, 23, 29 ],
+            "saturday": [ 11, 15, 30, 28 ],
+            "sunday": [ 10, 15, 20, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
