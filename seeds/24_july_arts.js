@@ -1204,6 +1204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 61,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/five-nudes-1950.jpg',
+          title: 'Five Nudes',
+          artist: 'Sanyu',
+          year: '1950',
+          rule: {
+            "monday": [ 7, 18, 29, 9 ],
+            "tuesday": [ 6, 17, 28, 8 ],
+            "wednesday": [ 5, 16, 27, 7 ],
+            "thursday": [ 11, 22, 2, 13 ],
+            "friday": [ 10, 21, 1, 12 ],
+            "saturday": [ 9, 19, 31, 11 ],
+            "sunday": [ 8, 19, 30, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 62,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/hymne-1961.jpg',
+          title: 'Hymne',
+          artist: 'Michel Seuphor',
+          year: '1961',
+          rule: {
+            "monday": [ 8, 19, 30, 10 ],
+            "tuesday": [ 7, 18, 29, 9 ],
+            "wednesday": [ 6, 17, 28, 8 ],
+            "thursday": [ 5, 16, 27, 7 ],
+            "friday": [ 11, 22, 2, 13 ],
+            "saturday": [ 10, 21, 1, 12 ],
+            "sunday": [ 9, 19, 31, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 63,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/the-kiss-1935.jpg',
+          title: 'The Kiss',
+          artist: 'Brassai',
+          year: '1935',
+          rule: {
+            "monday": [ 10, 20, 1, 12 ],
+            "tuesday": [ 9, 20, 31, 11 ],
+            "wednesday": [ 8, 19, 29, 10 ],
+            "thursday": [ 7, 18, 29, 9 ],
+            "friday": [ 6, 17, 28, 8 ],
+            "saturday": [ 12, 23, 3, 14 ],
+            "sunday": [ 11, 22, 2, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 64,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/t-te-de-profil.jpg',
+          title: 'Tête de profil',
+          artist: 'Jean Fautrier',
+          year: '?',
+          rule: {
+            "monday": [ 11, 22, 2, 13 ],
+            "tuesday": [ 10, 20, 1, 12 ],
+            "wednesday": [ 9, 20, 31, 11 ],
+            "thursday": [ 8, 19, 29, 10 ],
+            "friday": [ 7, 18, 29, 9 ],
+            "saturday": [ 6, 17, 28, 8 ],
+            "sunday": [ 12, 23, 3, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 65,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/couple-in-the-night.jpg',
+          title: 'Couple in the night',
+          artist: 'Andre Masson',
+          year: '1958',
+          rule: {
+            "monday": [ 12, 23, 3, 14 ],
+            "tuesday": [ 11, 22, 2, 13 ],
+            "wednesday": [ 10, 20, 1, 12 ],
+            "thursday": [ 9, 20, 31, 11 ],
+            "friday": [ 8, 19, 29, 10 ],
+            "saturday": [ 7, 18, 29, 9 ],
+            "sunday": [ 6, 17, 28, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
