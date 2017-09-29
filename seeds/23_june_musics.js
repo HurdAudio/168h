@@ -706,6 +706,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 40,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4286426371/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://eileanrec.bandcamp.com/album/excavation',
+          a_string: 'Excavation by Cicely Irvine',
+          rule: {
+            "monday": [ 4, 8, 13, 25 ],
+            "tuesday": [ 3, 7, 13, 24 ],
+            "wednesday": [ 2, 10, 12, 23 ],
+            "thursday": [ 6, 10, 16, 27 ],
+            "saturday": [ 5, 9, 15, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 41,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=873660777/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://dronarivm.bandcamp.com/album/branches',
+          a_string: 'Branches by Cyril Secq / Orla Wren',
+          rule: {
+            "monday": [ 5, 9, 15, 25 ],
+            "tuesday": [ 4, 8, 13, 25 ],
+            "wednesday": [ 3, 7, 13, 24 ],
+            "thursday": [ 2, 10, 12, 23 ],
+            "saturday": [ 6, 10, 16, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 42,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=382220642/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://dronarivm.bandcamp.com/album/sinfonietta',
+          a_string: 'Sinfonietta by Marsen Jules',
+          rule: {
+            "monday": [ 7, 11, 17, 28 ],
+            "tuesday": [ 6, 10, 16, 26 ],
+            "wednesday": [ 5, 9, 14, 26 ],
+            "thursday": [ 4, 8, 14, 25 ],
+            "saturday": [ 3, 11, 13, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
