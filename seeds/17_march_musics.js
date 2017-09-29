@@ -1030,6 +1030,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 58,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1386012059/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://victoire.bandcamp.com/album/cathedral-city',
+          a_string: 'Cathedral City by Victoire',
+          rule: {
+            "monday": [ 9, 15, 21, 29 ],
+            "tuesday": [ 13, 19, 25, 2 ],
+            "wednesday": [ 12, 18, 24, 1 ],
+            "thursday": [ 11, 17, 23, 1 ],
+            "saturday": [ 10, 16, 22, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 59,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=827414202/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://anasilvera.bandcamp.com/album/the-aviary',
+          a_string: 'The Aviary by Ana Silvera',
+          rule: {
+            "monday": [ 10, 16, 22, 30 ],
+            "tuesday": [ 9, 15, 21, 29 ],
+            "wednesday": [ 13, 19, 25, 2 ],
+            "thursday": [ 12, 18, 24, 1 ],
+            "saturday": [ 11, 17, 23, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 60,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'http://bandcamp.com/EmbeddedPlayer/album=1485264710/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://music.sofiatalvik.com/album/the-owls-are-not-what-they-seem',
+          a_string: 'The Owls Are Not What They Seem by Sofia Talvik',
+          rule: {
+            "monday": [ 11, 17, 23, 1 ],
+            "tuesday": [ 10, 16, 22, 30 ],
+            "wednesday": [ 9, 15, 21, 29 ],
+            "thursday": [ 13, 19, 25, 2 ],
+            "saturday": [ 12, 18, 24, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
