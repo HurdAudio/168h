@@ -2204,6 +2204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 111,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Gallagher,_Wiglette_from,_DeLuxe.jpeg',
+          title: ' Wiglette from "DeLuxe"',
+          artist: 'Ellen Gallagher',
+          year: '2004-2005',
+          rule: {
+            "monday": [ 21, 29, 8, 16 ],
+            "tuesday": [ 23, 4, 10, 18 ],
+            "wednesday": [ 25, 4, 12, 22 ],
+            "thursday": [ 27, 6, 2, 21 ],
+            "friday": [ 15, 23, 2, 10 ],
+            "saturday": [ 17, 25, 4, 12 ],
+            "sunday": [ 22, 27, 4, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 112,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/20110521013911-Gallery000832.jpg',
+          title: 'Shoe Shine Stands',
+          artist: 'Theaster Gates',
+          year: '2010',
+          rule: {
+            "monday": [ 23, 28, 5, 15 ],
+            "tuesday": [ 22, 1, 9, 17 ],
+            "wednesday": [ 24, 5, 11, 19 ],
+            "thursday": [ 26, 5, 13, 23 ],
+            "friday": [ 28, 7, 3, 22 ],
+            "saturday": [ 16, 24, 3, 11 ],
+            "sunday": [ 18, 26, 5, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 113,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/reginald-k-gee-two-normal-people.jpg',
+          title: 'Two Normal People',
+          artist: 'Reginald K Gee',
+          year: '2014',
+          rule: {
+            "monday": [ 18, 26, 5, 13 ],
+            "tuesday": [ 23, 28, 5, 15 ],
+            "wednesday": [ 22, 1, 9, 17 ],
+            "thursday": [ 24, 5, 11, 19 ],
+            "friday": [ 26, 5, 13, 23 ],
+            "saturday": [ 28, 7, 3, 22 ],
+            "sunday": [ 16, 24, 3, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 114,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/dance.jpg',
+          title: 'Dance Turquoise',
+          artist: 'Herbert Gentry',
+          year: 'xxi Cent.',
+          rule: {
+            "monday": [ 16, 24, 3, 11 ],
+            "tuesday": [ 18, 26, 5, 13 ],
+            "wednesday": [ 23, 28, 5, 15 ],
+            "thursday": [ 22, 1, 9, 17 ],
+            "friday": [ 24, 5, 11, 19 ],
+            "saturday": [ 26, 5, 13, 23 ],
+            "sunday": [ 28, 7, 3, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 115,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Squires-WG-02.jpg',
+          title: 'Abstract I',
+          artist: 'Wilda Gerideau-Squires',
+          year: '2008',
+          rule: {
+            "monday": [ 28, 7, 3, 22 ],
+            "tuesday": [ 16, 24, 3, 11 ],
+            "wednesday": [ 18, 26, 5, 13 ],
+            "thursday": [ 23, 28, 5, 15 ],
+            "friday": [ 22, 1, 9, 17 ],
+            "saturday": [ 24, 5, 11, 19 ],
+            "sunday": [ 26, 5, 13, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
