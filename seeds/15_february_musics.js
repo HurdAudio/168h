@@ -1138,6 +1138,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 64,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2051639327/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jazzheadrecords.bandcamp.com/album/hexis',
+          a_string: 'Hexis by The Monash Art Ensemble with George Lewis',
+          rule: {
+            "monday": [ 15, 19, 21, 23 ],
+            "tuesday": [ 27, 21, 23, 29 ],
+            "wednesday": [ 10, 15, 17, 29 ],
+            "thursday": [ 11, 15, 17, 21 ],
+            "saturday": [ 13, 17, 19, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 65,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=701651663/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://billdixon.bandcamp.com/album/tapestries-for-small-orchestra',
+          a_string: 'Tapestries for Small Orchestra by Bill Dixon',
+          rule: {
+            "monday": [ 13, 17, 19, 23 ],
+            "tuesday": [ 15, 19, 21, 23 ],
+            "wednesday": [ 27, 21, 23, 29 ],
+            "thursday": [ 10, 15, 17, 29 ],
+            "saturday": [ 11, 15, 17, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 66,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1644073358/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://culturepower45.bandcamp.com/album/cp4507-fruition',
+          a_string: 'CP4507: Fruition by Various Artist',
+          rule: {
+            "monday": [ 11, 15, 17, 21 ],
+            "tuesday": [ 13, 17, 19, 23 ],
+            "wednesday": [ 15, 19, 21, 23 ],
+            "thursday": [ 27, 21, 23, 29 ],
+            "saturday": [ 10, 15, 17, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
