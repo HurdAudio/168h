@@ -2004,6 +2004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 101,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/comforter-2007.jpg',
+          title: 'Comforter',
+          artist: 'Catherine Murphy',
+          year: '2007',
+          rule: {
+            "monday": [ 8, 18, 27, 5 ],
+            "tuesday": [ 14, 23, 1, 10 ],
+            "wednesday": [ 13, 23, 2, 10 ],
+            "thursday": [ 12, 22, 30, 9 ],
+            "friday": [ 11, 21, 29, 8 ],
+            "saturday": [ 10, 20, 28, 7 ],
+            "sunday": [ 9, 19, 27, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 102,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/the-blue-room-wissett-lodge-1916.jpg',
+          title: 'The Blue Room, Wissett Lodge',
+          artist: 'Vanessa Bell',
+          year: '1916',
+          rule: {
+            "monday": [ 9, 19, 27, 6 ],
+            "tuesday": [ 8, 18, 27, 5 ],
+            "wednesday": [ 14, 23, 1, 10 ],
+            "thursday": [ 13, 23, 2, 10 ],
+            "friday": [ 12, 22, 30, 9 ],
+            "saturday": [ 11, 21, 29, 8 ],
+            "sunday": [ 10, 20, 28, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 103,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/flower-markets-with-white-umbrella.jpg',
+          title: 'Flower Markets with White Umbrella',
+          artist: 'Ethel Carrick',
+          year: '?',
+          rule: {
+            "monday": [ 10, 20, 28, 7 ],
+            "tuesday": [ 9, 19, 27, 6 ],
+            "wednesday": [ 8, 18, 27, 5 ],
+            "thursday": [ 14, 23, 1, 10 ],
+            "friday": [ 13, 23, 2, 10 ],
+            "saturday": [ 12, 22, 30, 9 ],
+            "sunday": [ 11, 21, 29, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 104,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/the-last-act-1929.jpg',
+          title: 'The Last Act',
+          artist: 'Laura Knight',
+          year: '1929',
+          rule: {
+            "monday": [ 11, 21, 29, 8 ],
+            "tuesday": [ 10, 20, 28, 7 ],
+            "wednesday": [ 9, 19, 27, 6 ],
+            "thursday": [ 8, 18, 27, 5 ],
+            "friday": [ 14, 23, 1, 10 ],
+            "saturday": [ 13, 23, 2, 10 ],
+            "sunday": [ 12, 22, 30, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 105,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/the-easy-isn-t-done-easy-2007.jpg',
+          title: 'The easy isn\'t done easy',
+          artist: 'Tea Jorjadze',
+          year: '2007',
+          rule: {
+            "monday": [ 13, 23, 31, 10 ],
+            "tuesday": [ 12, 22, 30, 9 ],
+            "wednesday": [ 11, 21, 29, 8 ],
+            "thursday": [ 10, 20, 28, 7 ],
+            "friday": [ 9, 19, 28, 6 ],
+            "saturday": [ 15, 24, 2, 11 ],
+            "sunday": [ 14, 24, 3, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
