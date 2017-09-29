@@ -2404,6 +2404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 121,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/ohne-titel-in-der-erde-1987.jpg',
+          title: 'Ohne Titel (In Der Erde)',
+          artist: 'Jurgen Partenheimer',
+          year: '1987',
+          rule: {
+            "monday": [ 21, 23, 15, 4 ],
+            "tuesday": [ 23, 24, 16, 19 ],
+            "wednesday": [ 26, 27, 18, 22 ],
+            "thursday": [ 29, 31, 1, 3 ],
+            "friday": [ 31, 2, 6, 9 ],
+            "saturday": [ 2, 4, 5, 8 ],
+            "sunday": [ 18, 19, 30, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 122,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/seated-figure-1954.jpg',
+          title: 'Seated Figure',
+          artist: 'Conrad Marca-Relli',
+          year: '1953 - 1954',
+          rule: {
+            "monday": [ 18, 19, 30, 22 ],
+            "tuesday": [ 21, 23, 15, 4 ],
+            "wednesday": [ 23, 24, 16, 19 ],
+            "thursday": [ 26, 27, 18, 22 ],
+            "friday": [ 29, 31, 1, 3 ],
+            "saturday": [ 31, 2, 6, 9 ],
+            "sunday": [ 2, 4, 5, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 123,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/statue-in-a-cemetery-1959.jpg',
+          title: 'Statue in a Cemetery',
+          artist: 'Endre Balint',
+          year: '1959',
+          rule: {
+            "monday": [ 2, 4, 5, 8 ],
+            "tuesday": [ 18, 19, 30, 22 ],
+            "wednesday": [ 21, 23, 15, 4 ],
+            "thursday": [ 23, 24, 16, 19 ],
+            "friday": [ 26, 27, 18, 22 ],
+            "saturday": [ 29, 31, 1, 3 ],
+            "sunday": [  ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 124,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/reclining-nude-red-nude-1956.jpg',
+          title: 'Reclining Nude (Red Nude)',
+          artist: 'William Scott',
+          year: '1956',
+          rule: {
+            "monday": [ 31, 2, 6, 9 ],
+            "tuesday": [ 2, 4, 5, 8 ],
+            "wednesday": [ 18, 19, 30, 22 ],
+            "thursday": [ 21, 23, 15, 4 ],
+            "friday": [ 23, 24, 16, 19 ],
+            "saturday": [ 26, 27, 18, 22 ],
+            "sunday": [ 29, 31, 1, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 125,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/tornado-1911.jpg',
+          title: 'Tornado',
+          artist: 'Joe Goode',
+          year: '1911',
+          rule: {
+            "monday": [ 29, 31, 1, 3 ],
+            "tuesday": [ 31, 2, 6, 9 ],
+            "wednesday": [ 2, 4, 5, 8 ],
+            "thursday": [ 18, 19, 30, 22 ],
+            "friday": [ 21, 23, 15, 4 ],
+            "saturday": [ 23, 24, 16, 19 ],
+            "sunday": [ 26, 27, 18, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
