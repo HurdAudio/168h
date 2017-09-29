@@ -814,6 +814,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 46,
+          user_id: 1,
+          theme: 'avant garde/new music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2060426740/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://erratum.bandcamp.com/album/cathedrale-de-strasbourg',
+          a_string: 'CATHEDRALE DE STRASBOURG by CHARLEMAGNE PALESTINE',
+          rule: {
+            "monday": [ 10, 16, 23, 5 ],
+            "tuesday": [ 9, 15, 22, 4 ],
+            "wednesday": [ 8, 14, 21, 3 ],
+            "thursday": [ 7, 13, 20, 2 ],
+            "saturday": [ 11, 17, 24, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 47,
+          user_id: 1,
+          theme: 'avant garde/new music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3821231848/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://erratum.bandcamp.com/album/fill-my-body-with-flowers-and-rice',
+          a_string: 'Fill My Body With Flowers And Rice by ALICE KEMP',
+          rule: {
+            "monday": [ 11, 17, 24, 6 ],
+            "tuesday": [ 10, 16, 23, 5 ],
+            "wednesday": [ 9, 15, 22, 4 ],
+            "thursday": [ 8, 14, 21, 3 ],
+            "saturday": [ 7, 13, 20, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 48,
+          user_id: 1,
+          theme: 'avant garde/new music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=174824813/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://erratum.bandcamp.com/album/the-last-man-in-europe',
+          a_string: 'THE LAST MAN IN EUROPE by ZBIGNIEW KARKOWSKI',
+          rule: {
+            "monday": [ 7, 13, 20, 2 ],
+            "tuesday": [ 11, 17, 24, 6 ],
+            "wednesday": [ 10, 16, 23, 5 ],
+            "thursday": [ 9, 15, 22, 4 ],
+            "saturday": [ 8, 14, 21, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
