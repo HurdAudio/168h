@@ -1604,6 +1604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 81,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/chariot-near-eatery(1).jpg',
+          title: 'Phaeton by the canteen',
+          artist: 'Niko Pirosmani',
+          year: '1916',
+          rule: {
+            "monday": [ 2, 12, 22, 1 ],
+            "tuesday": [ 31, 10, 20, 30 ],
+            "wednesday": [ 12, 22, 1, 11 ],
+            "thursday": [ 10, 20, 30, 9 ],
+            "friday": [ 8, 18, 28, 7 ],
+            "saturday": [ 6, 16, 26, 5 ],
+            "sunday": [ 4, 14, 24, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 82,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/woman-milks-a-cow-1916(1).jpg',
+          title: 'Woman milks a cow',
+          artist: 'Niko Pirosmani',
+          year: '1916',
+          rule: {
+            "monday": [ 4, 14, 24, 3 ],
+            "tuesday": [ 2, 12, 22, 1 ],
+            "wednesday": [ 31, 10, 20, 30 ],
+            "thursday": [ 12, 22, 1, 11 ],
+            "friday": [ 10, 20, 30, 9 ],
+            "saturday": [ 8, 18, 28, 7 ],
+            "sunday": [ 6, 16, 26, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 83,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/farmer-with-a-bull-1916.jpg',
+          title: 'Farmer with a Bull',
+          artist: 'Niko Pirosmani',
+          year: '1916',
+          rule: {
+            "monday": [ 6, 16, 26, 5 ],
+            "tuesday": [ 4, 14, 24, 3 ],
+            "wednesday": [ 2, 12, 22, 1 ],
+            "thursday": [ 31, 10, 20, 30 ],
+            "friday": [ 12, 22, 1, 11 ],
+            "saturday": [ 10, 20, 30, 9 ],
+            "sunday": [ 8, 18, 28, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 84,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/bourgeois-in-a-carriage-1913.jpg',
+          title: 'Bourgeois in a Carriage',
+          artist: 'Pavel Filonov',
+          year: '1913',
+          rule: {
+            "monday": [ 9, 19, 29, 8 ],
+            "tuesday": [ 6, 17, 27, 6 ],
+            "wednesday": [ 5, 15, 25, 4 ],
+            "thursday": [ 3, 13, 23, 2 ],
+            "friday": [ 1, 11, 21, 31 ],
+            "saturday": [ 13, 23, 2, 12 ],
+            "sunday": [ 11, 21, 31, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 85,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/those-who-have-nothing-to-lose-1912.jpg',
+          title: 'Those Who Have Nothing to Lose',
+          artist: 'Pavel Filonov',
+          year: '1912',
+          rule: {
+            "monday": [ 11, 21, 31, 10 ],
+            "tuesday": [ 9, 19, 29, 8 ],
+            "wednesday": [ 6, 17, 27, 6 ],
+            "thursday": [ 5, 15, 25, 4 ],
+            "friday": [ 3, 13, 23, 2 ],
+            "saturday": [ 1, 11, 21, 31 ],
+            "sunday": [ 13, 23, 2, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
