@@ -1246,6 +1246,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 70,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3169532022/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://alvinlucier.bandcamp.com/album/still-and-moving-lines',
+          a_string: 'Still and Moving Lines by Alvin Lucier',
+          rule: {
+            "monday": [ 21, 15, 17, 5 ],
+            "tuesday": [ 17, 24, 26, 25 ],
+            "wednesday": [ 15, 19, 21, 25 ],
+            "thursday": [ 17, 24, 26, 25 ],
+            "saturday": [ 25, 19, 21, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 71,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=699195872/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://chriswelcome.bandcamp.com/album/selected-chamber-works-2011-2015',
+          a_string: 'Selected Chamber Works: 2011-2015 by Chris Welcome',
+          rule: {
+            "monday": [ 25, 19, 21, 26 ],
+            "tuesday": [ 21, 15, 17, 5 ],
+            "wednesday": [ 17, 24, 26, 25 ],
+            "thursday": [ 15, 19, 21, 25 ],
+            "saturday": [ 17, 24, 26, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 72,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3581604249/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jonathanzorn.bandcamp.com/album/and-perforation',
+          a_string: 'And Perforation by Jonathan Zorn',
+          rule: {
+            "monday": [ 17, 24, 26, 25 ],
+            "tuesday": [ 25, 19, 21, 26 ],
+            "wednesday": [ 21, 15, 17, 5 ],
+            "thursday": [ 17, 24, 26, 25 ],
+            "saturday": [ 15, 19, 21, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
