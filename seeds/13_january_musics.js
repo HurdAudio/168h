@@ -190,7 +190,7 @@ exports.seed = function(knex, Promise) {
           user_id: 1,
           theme: 'american mavericks',
           source: 'bandcamp',
-          src_string: 'src="https://bandcamp.com/EmbeddedPlayer/album=952221414/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=952221414/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://pauline-oliveros.bandcamp.com/album/water-above-sky-below-now',
           a_string: 'Water Above Sky Below Now by Pauline Oliveros and Ione',
           rule: {

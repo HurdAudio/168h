@@ -7,6 +7,7 @@ const knex = require('knex');
 const bcrypt = require('bcrypt');
 const request = require('request');
 const parseString = require('xml2js').parseString;
+const fileUpload = require('express-fileupload');
 
 require('dotenv').config();
 
@@ -68,6 +69,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, '/../', 'node_modules')));
 // app.use('/scripts', express.static(path.join(__dirname, '../node_modules/vexflow/releases/')));
 app.use('/moment', express.static(path.join(__dirname, '../node_modules/moment/min/')));
+app.use(fileUpload());
 
 
 
@@ -153,6 +155,23 @@ app.post('/xmlconverter/', (req, res, next)=>{
    parseString(req.body.data, (err, result)=>{
      res.send(result);
    });
+});
+
+app.post('/photo_upload', (req, res, next)=>{
+  console.log(req);
+  if (!req.files) {
+    return res.status(400).send('No files were uploaded.');
+  }
+  let photo = req.files.userPhoto;
+  let link = './uploads/' + photo.name;
+  photo.mv(link, function(err) {
+    if (err) {
+      return res.status(500).send(err);
+    }
+
+    res.send(link);
+  });
+
 });
 
 

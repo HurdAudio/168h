@@ -18,6 +18,8 @@
   </div>
 </div>
 
+
+
 <div id="greetingDateStrip" class="pure-g">
   <div id="greetingStrip" class="pure-u-1-2">
     <p id="greetingsUser"></p>
@@ -27,6 +29,23 @@
     <h3>Messages from the Admins:</h3>
     <p>Welcome to 168h! We are all time travellers at present.</p>
   </div>
+</div>
+
+<div id="photoUploadFormDiv">
+
+  <div id="photoUploaderBar">
+
+    <h1>Photo Upload</h1>
+  </div>
+  <form id="photoUploadForm" enctype="multipart/form-data" class="pure-form pure-form-stacked">
+    <fieldset>
+      <input type="file" name="userPhoto" id="userPhotoInput" class="pure-input-1">
+      <div id="photoUploaderButtonsField">
+        <a href="" class="btn" id="photoSubmit">submit</a>
+        <a href="" class="btn" id="photoCancel">cancel</a>
+      </div>
+    </fieldset>
+  </form>
 </div>
 
 <div id="dashboard" class="pure-g">
@@ -86,13 +105,15 @@
       </div>
       <form id="userProfilePhotoForm" class="pure-form pure-form-stacked">
         <fieldset>
-          <img id="photoReference">
+          <img id="photoReference" src="https://mediasia.iafor.org/wp-content/uploads/sites/30/2017/02/IAFOR-Blank-Avatar-Image.jpg">
           <p id="onlineurl">Online URL:</p>
           <input type="text" id="newPhotoURL" class="pure-input-1">
-          <a href="" class="btn" id="verifyPhotoURL">verify</a>
-          <a href="" class="btn" id="updatePhotoURL">submit</a>
+          <div id="verifyOrSubmit">
+            <a href="" class="btn" id="verifyPhotoURL">verify</a>
+            <a href="" class="btn" id="updatePhotoURL">submit</a>
+          </div>
           <p id="or">or</p>
-          <a href="" class="btn" id="uploadPhoto">upload</a>
+          <a href="" class="btn" id="uploadPhoto" ng-click="$ctrl.photUploader()">upload</a>
 
         </fieldset>
         <div id="userProfilePhotoButtons">

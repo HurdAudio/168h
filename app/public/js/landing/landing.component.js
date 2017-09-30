@@ -4,13 +4,16 @@
   var weekClock = false;
   var dayClock = false;
   var monthClock = false;
+  var profileClock = false;
 
   var stopBlinker = true;
 
   function setClock(){
-    if ((landingClock) && (!weekClock) && (!dayClock) && (!monthClock)) {
+    //if ((landingClock) && (!weekClock) && (!dayClock) && (!monthClock) && (!profileClock)) {
        document.getElementById("clockLanding").innerHTML=new Date().toLocaleTimeString('en-GB');
-     }
+       document.getElementById('doubleClock').innerHTML=new Date().toLocaleTimeString('ko-KR');
+       document.getElementById('tripleClock').innerHTML=new Date().toLocaleTimeString('en-US');
+     //}
   }
 
   function getCookie (name) {
@@ -484,12 +487,38 @@
 
       }
 
+      function rotateClock(element) {
+        let timer = 20 + Math.floor(Math.random() * 120);
+
+        element.setAttribute("style", "-webkit-transform: skew(0deg, 45deg); -moz-transform: skew(0deg, 45deg); -o-transform: skew(0deg, 45deg); -ms-transform: skew(0deg, 45deg); transform: skew(0deg, 45deg); transition: transform " + timer + "s linear;");
+        setTimeout(()=>{
+          element.setAttribute("style", "-webkit-transform: rotateY(180deg); -moz-transform: rotateY(180deg); -o-transform: rotateY(180deg); -ms-transform: rotateY(180deg); transform: rotateY(180deg); transition: transform " + timer + "s linear;");
+          setTimeout(()=>{
+            element.setAttribute("style", "-webkit-transform: skew(0deg, -45deg); -moz-transform: skew(0deg, -45deg); -o-transform: skew(0deg, -45deg); -ms-transform: skew(0deg, -45deg); transform: skew(0deg, -45deg); transition: transform " + timer + "s linear;");
+            setTimeout(()=>{
+              element.setAttribute("style", "-webkit-transform: rotateX(180deg); -moz-transform: rotateX(180deg); -o-transform: rotateX(180deg); -ms-transform: rotateX(180deg); transform: rotateX(180deg); transition: transform " + timer + "s linear;");
+              setTimeout(()=>{
+                element.setAttribute("style", "-webkit-transform: skew(0deg, 180deg); -moz-transform: skew(0deg, 180deg); -o-transform: skew(0deg, 180deg); -ms-transform: skew(0deg, 180deg); transform: skew(0deg, 180deg); transition: transform " + timer + "s linear;");
+                setTimeout(()=>{
+                  element.setAttribute("style", "-webkit-transform: rotateZ(180deg); -moz-transform: rotateZ(180deg); -o-transform: rotateZ(180deg); -ms-transform: rotateZ(180deg); transform: rotateZ(180deg); transition: transform " + timer + "s linear;");
+                  setTimeout(()=>{
+                    rotateClock(element);
+                  }, (timer * 1000));
+                }, (timer * 1000));
+              });
+            }, (timer * 1000));
+          }, (timer * 1000));
+        }, (timer * 1000));
+
+      }
+
       function onInit() {
         console.log("Landing is lit");
         landingClock = true;
         weekClock = false;
         dayClock = false;
         monthClock = false;
+        profileClock = false;
         //check cookies for user already logged in - change page state if this is a return user
         if (getCookie('h168userId') !== null) {
           let loggedInUser = getCookie('h168userId');
@@ -529,6 +558,17 @@
           var landingInfo = document.getElementById('landingInfo');
           var loginExit = document.getElementById('loginExit');
           var userLoginForm = document.getElementById('userLoginForm');
+
+          setTimeout(()=>{
+            rotateClock(document.getElementById('clockLanding'));
+            setTimeout(()=>{
+              rotateClock(document.getElementById('doubleClock'));
+              setTimeout(()=>{
+                rotateClock(document.getElementById('tripleClock'));
+              }, 30000);
+            }, 30000);
+          }, 30000);
+
 
           landingLogin.addEventListener('click', ()=>{
             userLoginForm.setAttribute("style", "display: initial;");

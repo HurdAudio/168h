@@ -350,7 +350,6 @@ router.patch('/:id', (req, res, next) => {
       .update({
         name: req.body.name,
         email: req.body.email,
-        hashed_password: hashed_password,
         is_admin: req.body.is_admin,
         user_avatar_url: req.body.user_avatar_url,
         associates: req.body.associates

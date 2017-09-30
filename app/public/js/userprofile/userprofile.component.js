@@ -65,6 +65,57 @@
       vm.gotoMonthView = gotoMonthView;
       vm.gotoWeek = gotoWeek;
       vm.logout = logout;
+      vm.photUploader = photUploader;
+
+      function photUploader() {
+        let photoUploadFormDiv = document.getElementById('photoUploadFormDiv');
+        let dashboard = document.getElementById('dashboard');
+        let userProfilePhotoForm = document.getElementById('userProfilePhotoForm');
+        let photoUploaderButtonsField = document.getElementById('photoUploaderButtonsField');
+        let photoSubmit = document.getElementById('photoSubmit');
+        if (photoSubmit) {
+          photoSubmit.parentNode.removeChild(photoSubmit);
+          photoSubmit = document.createElement('a');
+          photoUploaderButtonsField.appendChild(photoSubmit);
+          photoSubmit.id = 'photoSubmit';
+          photoSubmit.className = 'btn';
+          photoSubmit.setAttribute("style", "cursor: pointer;");
+          photoSubmit.innerHTML = 'submit';
+          photoSubmit.type = 'submit';
+        }
+        let photoCancel = document.getElementById('photoCancel');
+        if (photoCancel) {
+          photoCancel.parentNode.removeChild(photoCancel);
+          photoCancel = document.createElement('a');
+          photoUploaderButtonsField.appendChild(photoCancel);
+          photoCancel.id = 'photoCancel';
+          photoCancel.className = 'btn';
+          photoCancel.setAttribute("style", "cursor: pointer;");
+          photoCancel.innerHTML = 'cancel';
+        }
+        let userPhotoInput = document.getElementById('userPhotoInput');
+
+
+        photoUploadFormDiv.setAttribute("style", "visibility: visible; z-index: 2;");
+        dashboard.setAttribute("style", "opacity: 0.3;");
+        userProfilePhotoForm.setAttribute("style", "visibility: hidden;");
+
+        photoSubmit.addEventListener('click', ()=>{
+
+          console.log(userPhotoInput.files[0]);
+          console.log(userPhotoInput);
+          // $http.post('/photo_upload', subObj)
+          // .then(data=>{
+          //   console.log(data.data);
+          // });
+        });
+
+        photoCancel.addEventListener('click', ()=>{
+          photoUploadFormDiv.setAttribute("style", "visibility: hidden; z-index: -2;");
+          dashboard.setAttribute("style", "opacity: 1;");
+          userProfilePhotoForm.setAttribute("style", "visibility: visible;");
+        });
+      }
 
       function logout() {
         $http.get(`/users/${currentUserId}`)
@@ -97,20 +148,92 @@
         let userProfilePhotoDiv = document.getElementById('userProfilePhotoDiv');
         let changeProfilePhoto = document.getElementById('changeProfilePhoto');
         let userProfileDone = document.getElementById('userProfileDone');
+        let changePassword = document.getElementById('changePassword');
+        let changeEmail = document.getElementById('changeEmail');
+        let changeFriends = document.getElementById('changeFriends');
+        let newPhotoURL = document.getElementById('newPhotoURL');
+        let photoReference = document.getElementById('photoReference');
+        let profilePhoto = document.getElementById('profilePhoto');
 
         userProfilePhotoDiv.setAttribute("style", "display: none;");
         changeProfilePhoto.setAttribute("style", "visibility: visible;");
         userProfileDone.setAttribute("style", "visibility: visible;");
+        changePassword.setAttribute("style", "visibility: visible;");
+        changeEmail.setAttribute("style", "visibility: visible;");
+        changeFriends.setAttribute("style", "visibility: visible;");
+        newPhotoURL.value = '';
+        $http.get(`/users/${currentUserId}`)
+        .then((userData=>{
+          let user = userData.data;
+          if (user.user_avatar_url !== '') {
+            photoReference.src = user.user_avatar_url;
+            profilePhoto.src = user.user_avatar_url;
+          }
+        }));
       }
 
       function userPhotoEditor() {
         let userProfilePhotoDiv = document.getElementById('userProfilePhotoDiv');
         let changeProfilePhoto = document.getElementById('changeProfilePhoto');
         let userProfileDone = document.getElementById('userProfileDone');
+        let changePassword = document.getElementById('changePassword');
+        let changeEmail = document.getElementById('changeEmail');
+        let changeFriends = document.getElementById('changeFriends');
+        let verifyOrSubmit = document.getElementById('verifyOrSubmit');
+        let verifyPhotoURL = document.getElementById('verifyPhotoURL');
+        if (verifyPhotoURL) {
+          verifyPhotoURL.parentNode.removeChild(verifyPhotoURL);
+          verifyPhotoURL = document.createElement('a');
+          verifyOrSubmit.appendChild(verifyPhotoURL);
+          verifyPhotoURL.id = 'verifyPhotoURL';
+          verifyPhotoURL.className = 'btn';
+          verifyPhotoURL.innerHTML = 'verify';
+          verifyPhotoURL.setAttribute("style", "cursor: pointer;");
+        }
+        let updatePhotoURL = document.getElementById('updatePhotoURL');
+        if (updatePhotoURL) {
+          updatePhotoURL.parentNode.removeChild(updatePhotoURL);
+          updatePhotoURL = document.createElement('a');
+          verifyOrSubmit.appendChild(updatePhotoURL);
+          updatePhotoURL.id = 'updatePhotoURL';
+          updatePhotoURL.className = 'btn';
+          updatePhotoURL.innerHTML = 'submit';
+          updatePhotoURL.setAttribute("style", "cursor: pointer;");
+        }
+        let newPhotoURL = document.getElementById('newPhotoURL');
+        let photoReference = document.getElementById('photoReference');
+        let profilePhoto = document.getElementById('profilePhoto');
+
 
         userProfilePhotoDiv.setAttribute("style", "display: initial;");
         changeProfilePhoto.setAttribute("style", "visibility: hidden;");
         userProfileDone.setAttribute("style", "visibility: hidden;");
+        changePassword.setAttribute("style", "visibility: hidden;");
+        changeEmail.setAttribute("style", "visibility: hidden;");
+        changeFriends.setAttribute("style", "visibility: hidden;");
+
+        verifyPhotoURL.addEventListener('click', ()=>{
+          if (newPhotoURL.value !== '') {
+            photoReference.src = newPhotoURL.value;
+          }
+        });
+        updatePhotoURL.addEventListener('click', ()=>{
+          if (newPhotoURL.value !== '') {
+            let subObj = {
+              user_avatar_url: newPhotoURL.value
+            };
+            console.log(subObj);
+            $http.patch(`/users/${currentUserId}`, subObj)
+            .then(userData=>{
+              let user = userData.data;
+              console.log(user);
+              if (user.user_avatar_url !== '') {
+                photoReference.src = user.user_avatar_url;
+                profilePhoto.src = user.user_avatar_url;
+              }
+            });
+          }
+        });
       }
 
       function profileEditor() {
@@ -251,7 +374,8 @@
             let profilePhoto = document.createElement('img');
             let photoReference = document.getElementById('photoReference');
             userPic.appendChild(profilePhoto);
-            if (userAccount.user_avatar_url !== null) {
+            profilePhoto.id = 'profilePhoto';
+            if (userAccount.user_avatar_url !== '') {
               profilePhoto.src = userAccount.user_avatar_url;
               photoReference.src = userAccount.user_avatar_url;
 
