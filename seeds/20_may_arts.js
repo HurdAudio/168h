@@ -1675,7 +1675,7 @@ exports.seed = function(knex, Promise) {
           year: '1913',
           rule: {
             "monday": [ 9, 19, 29, 8 ],
-            "tuesday": [ 6, 17, 27, 6 ],
+            "tuesday": [ 6, 17, 27, 16 ],
             "wednesday": [ 5, 15, 25, 4 ],
             "thursday": [ 3, 13, 23, 2 ],
             "friday": [ 1, 11, 21, 31 ],
@@ -1696,11 +1696,111 @@ exports.seed = function(knex, Promise) {
           rule: {
             "monday": [ 11, 21, 31, 10 ],
             "tuesday": [ 9, 19, 29, 8 ],
-            "wednesday": [ 6, 17, 27, 6 ],
+            "wednesday": [ 6, 17, 27, 16 ],
             "thursday": [ 5, 15, 25, 4 ],
             "friday": [ 3, 13, 23, 2 ],
             "saturday": [ 1, 11, 21, 31 ],
             "sunday": [ 13, 23, 2, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 86,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/milkmaids-1914.jpg',
+          title: 'Milkmaids',
+          artist: 'Pavel Filonov',
+          year: '1914',
+          rule: {
+            "monday": [ 13, 23, 2, 12 ],
+            "tuesday": [ 11, 21, 31, 10 ],
+            "wednesday": [ 9, 19, 29, 8 ],
+            "thursday": [ 6, 17, 27, 16 ],
+            "friday": [ 5, 15, 25, 4 ],
+            "saturday": [ 3, 13, 23, 2 ],
+            "sunday": [ 1, 11, 21, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 87,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/the-february-revolution-1926.jpg',
+          title: 'The February Revolution',
+          artist: 'Pavel Filonov',
+          year: '1924 - 1926',
+          rule: {
+            "monday": [ 1, 11, 21, 31 ],
+            "tuesday": [ 13, 23, 2, 12 ],
+            "wednesday": [ 11, 21, 31, 10 ],
+            "thursday": [ 9, 19, 29, 8 ],
+            "friday": [ 6, 17, 27, 16 ],
+            "saturday": [ 5, 15, 25, 4 ],
+            "sunday": [ 3, 13, 23, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 88,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/goelro-lenin-s-plan-for-the-electrification-of-russia-1931.jpg',
+          title: 'GOELRO (Lenin s Plan for the Electrification of Russia)',
+          artist: 'Pavel Filonov',
+          year: '1931',
+          rule: {
+            "monday": [ 3, 13, 23, 2 ],
+            "tuesday": [ 1, 11, 21, 31 ],
+            "wednesday": [ 13, 23, 2, 12 ],
+            "thursday": [ 11, 21, 31, 10 ],
+            "friday": [ 9, 19, 29, 8 ],
+            "saturday": [ 6, 17, 27, 16 ],
+            "sunday": [ 5, 15, 25, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 89,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/the-kolkhoznik-member-of-a-collective-farm-1931.jpg',
+          title: 'The Kolkhoznik (Member of a Collective Farm)',
+          artist: 'Pavel Filonov',
+          year: '1931',
+          rule: {
+            "monday": [ 5, 15, 25, 4 ],
+            "tuesday": [ 3, 13, 23, 2 ],
+            "wednesday": [ 1, 11, 21, 31 ],
+            "thursday": [ 13, 23, 2, 12 ],
+            "friday": [ 11, 21, 31, 10 ],
+            "saturday": [ 9, 19, 29, 8 ],
+            "sunday": [ 6, 17, 27, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 90,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/pedagogics.jpg',
+          title: 'Pedagogics',
+          artist: 'Pavel Filonov',
+          year: '?',
+          rule: {
+            "monday": [ 6, 17, 27, 16 ],
+            "tuesday": [ 5, 15, 25, 4 ],
+            "wednesday": [ 3, 13, 23, 2 ],
+            "thursday": [ 1, 11, 21, 31 ],
+            "friday": [ 13, 23, 2, 12 ],
+            "saturday": [ 11, 21, 31, 10 ],
+            "sunday": [ 9, 19, 29, 8 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
