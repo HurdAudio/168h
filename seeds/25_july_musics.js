@@ -652,6 +652,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 37,
+          user_id: 1,
+          theme: 'commercially viable genre',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1670100583/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://deerhoof.bandcamp.com/album/fever-121614',
+          a_string: 'Fever 121614 by Deerhoof',
+          rule: {
+            "monday": [ 6, 8, 12, 20 ],
+            "tuesday": [ 5, 7, 11, 19 ],
+            "wednesday": [ 4, 6, 10, 18 ],
+            "thursday": [ 3, 5, 9, 17 ],
+            "saturday": [ 7, 9, 13, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 38,
+          user_id: 1,
+          theme: 'commercially viable genre',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4103317405/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tendonlevey.bandcamp.com/album/countertorch',
+          a_string: 'Countertorch by Tendon Levey',
+          rule: {
+            "monday": [ 7, 9, 13, 21 ],
+            "tuesday": [ 6, 8, 12, 20 ],
+            "wednesday": [ 5, 7, 11, 19 ],
+            "thursday": [ 4, 6, 10, 18 ],
+            "saturday": [ 3, 5, 9, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 39,
+          user_id: 1,
+          theme: 'commercially viable genre',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3219900620/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://hardrubberorchestra.bandcamp.com/album/crush',
+          a_string: 'Crush by John Korsrud&#39;s Hard Rubber Orchestra',
+          rule: {
+            "monday": [ 3, 5, 9, 17 ],
+            "tuesday": [ 7, 9, 13, 21 ],
+            "wednesday": [ 6, 8, 12, 20 ],
+            "thursday": [ 5, 7, 11, 19 ],
+            "saturday": [ 4, 6, 10, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
