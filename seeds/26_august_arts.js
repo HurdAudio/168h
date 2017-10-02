@@ -1104,6 +1104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 56,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/nude-on-sand-oceano-1935.jpg',
+          title: 'Nude on Sand, Oceano',
+          artist: 'Edward Weston',
+          year: '1935',
+          rule: {
+            "monday": [ 10, 14, 22, 7 ],
+            "tuesday": [ 9, 13, 21, 6 ],
+            "wednesday": [ 8, 12, 20, 5 ],
+            "thursday": [ 7, 10, 19, 4 ],
+            "friday": [ 6, 10, 18, 3 ],
+            "saturday": [ 12, 16, 24, 9 ],
+            "sunday": [ 11, 14, 23, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 57,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/portrait-of-b-khmelnitsky.jpg',
+          title: 'Portrait of B. Khmelnitsky',
+          artist: 'Heorhiy Narbut',
+          year: '?',
+          rule: {
+            "monday": [ 11, 14, 23, 8 ],
+            "tuesday": [ 10, 14, 22, 7 ],
+            "wednesday": [ 9, 13, 21, 6 ],
+            "thursday": [ 8, 12, 20, 5 ],
+            "friday": [ 7, 10, 19, 4 ],
+            "saturday": [ 6, 10, 18, 3 ],
+            "sunday": [ 12, 16, 24, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 58,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/gypsies-from-dobruja.jpg',
+          title: 'Gypsies from Dobruja',
+          artist: 'Stefan Dimitrescu',
+          year: '?',
+          rule: {
+            "monday": [ 12, 16, 24, 9 ],
+            "tuesday": [ 11, 14, 23, 8 ],
+            "wednesday": [ 10, 14, 22, 7 ],
+            "thursday": [ 9, 13, 21, 6 ],
+            "friday": [ 8, 12, 20, 5 ],
+            "saturday": [ 7, 10, 19, 4 ],
+            "sunday": [ 6, 10, 18, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 59,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/model-1913.jpg',
+          title: 'Model',
+          artist: 'Vladimir Tatlin',
+          year: '1913',
+          rule: {
+            "monday": [ 6, 10, 18, 3 ],
+            "tuesday": [ 12, 16, 24, 9 ],
+            "wednesday": [ 11, 14, 23, 8 ],
+            "thursday": [ 10, 14, 22, 7 ],
+            "friday": [ 9, 13, 21, 6 ],
+            "saturday": [ 8, 12, 20, 5 ],
+            "sunday": [ 7, 10, 19, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 60,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/abstract-no-7-1939.jpg',
+          title: 'Abstract No. 7',
+          artist: 'Lawren Harris',
+          year: '1939',
+          rule: {
+            "monday": [ 7, 10, 19, 4 ],
+            "tuesday": [ 6, 10, 18, 3 ],
+            "wednesday": [ 12, 16, 24, 9 ],
+            "thursday": [ 11, 14, 23, 8 ],
+            "friday": [ 10, 14, 22, 7 ],
+            "saturday": [ 9, 13, 21, 6 ],
+            "sunday": [ 8, 12, 20, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
