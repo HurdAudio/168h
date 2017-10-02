@@ -107,8 +107,62 @@ exports.seed = function(knex, Promise) {
             "monday": [ 6, 12, 18, 24 ],
             "tuesday": [ 5, 11, 17, 23 ],
             "wednesday": [ 4, 10, 16, 22 ],
-            "thursday": [3, 9, 15, 21  ],
+            "thursday": [ 3, 9, 15, 21 ],
             "saturday": [ 7, 13, 19, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 7,
+          user_id: 1,
+          theme: 'brazil and pan-south american',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1384877798/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sinewave1.bandcamp.com/album/para-uso-recreativo',
+          a_string: 'Para Uso Recreativo by Sick',
+          rule: {
+            "monday": [ 8, 14, 20, 26 ],
+            "tuesday": [ 7, 13, 19, 25 ],
+            "wednesday": [ 6, 12, 18, 24 ],
+            "thursday": [ 5, 11, 17, 23 ],
+            "saturday": [ 4, 10, 16, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 8,
+          user_id: 1,
+          theme: 'brazil and pan-south american',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2370054641/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tomze.bandcamp.com/album/tom-z',
+          a_string: 'Tom Zé by Tom Ze',
+          rule: {
+            "monday": [ 4, 10, 16, 22 ],
+            "tuesday": [ 8, 14, 20, 26 ],
+            "wednesday": [ 7, 13, 19, 25 ],
+            "thursday": [ 6, 12, 18, 24 ],
+            "saturday": [ 5, 11, 17, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 9,
+          user_id: 1,
+          theme: 'brazil and pan-south american',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2340267301/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://theblogthatcelebratesitself.bandcamp.com/album/va-the-sea',
+          a_string: 'VA - The Sea by TBTCI',
+          rule: {
+            "monday": [ 5, 11, 17, 23 ],
+            "tuesday": [ 4, 10, 16, 22 ],
+            "wednesday": [ 8, 14, 20, 26 ],
+            "thursday": [ 7, 13, 19, 25 ],
+            "saturday": [ 6, 12, 18, 24 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
