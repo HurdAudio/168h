@@ -1084,6 +1084,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 61,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=749764053/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://torihandsleytrio.bandcamp.com/album/tori-handsley-trio',
+          a_string: 'TORI HANDSLEY TRIO by TORI HANDSLEY TRIO',
+          rule: {
+            "monday": [ 12, 18, 24, 1 ],
+            "tuesday": [ 11, 17, 23, 1 ],
+            "wednesday": [ 10, 16, 22, 30 ],
+            "thursday": [ 9, 15, 21, 29 ],
+            "saturday": [ 13, 19, 25, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 62,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=806085606/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://nerijamusic.bandcamp.com/album/n-rija-ep',
+          a_string: 'NÉRIJA EP by NÉRIJA',
+          rule: {
+            "monday": [ 13, 19, 25, 2 ],
+            "tuesday": [ 12, 18, 24, 1 ],
+            "wednesday": [ 11, 17, 23, 1 ],
+            "thursday": [ 10, 16, 22, 30 ],
+            "saturday": [ 9, 15, 21, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 63,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2712715838/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://xeniarubinos.bandcamp.com/album/black-terry-cat',
+          a_string: 'Black Terry Cat by Xenia Rubinos',
+          rule: {
+            "monday": [ 10, 16, 22, 30 ],
+            "tuesday": [ 14, 20, 26, 3 ],
+            "wednesday": [ 13, 19, 25, 2 ],
+            "thursday": [ 12, 18, 24, 2 ],
+            "saturday": [ 11, 17, 23, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
