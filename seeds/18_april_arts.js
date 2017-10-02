@@ -1904,6 +1904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 96,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/dodger-stadium-mural.jpg',
+          title: 'Dodger Stadium Mural',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 10, 15, 20, 27 ],
+            "tuesday": [ 9, 14, 20, 26 ],
+            "wednesday": [ 8, 13, 19, 25 ],
+            "thursday": [ 13, 19, 24, 1 ],
+            "friday": [ 27, 17, 23, 30 ],
+            "saturday": [ 12, 17, 23, 29 ],
+            "sunday": [ 11, 15, 30, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 97,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/il_340x270.1179884686_99qy.jpg',
+          title: 'Dodger Stadium',
+          artist: 'marzjr',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 11, 15, 30, 28 ],
+            "tuesday": [ 10, 15, 20, 27 ],
+            "wednesday": [ 9, 14, 20, 26 ],
+            "thursday": [ 8, 13, 19, 25 ],
+            "friday": [ 13, 19, 24, 1 ],
+            "saturday": [ 27, 17, 23, 30 ],
+            "sunday": [ 12, 17, 23, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 98,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/KIRK-GIBSON_ART-2.jpg',
+          title: 'Kirk Gibson Los Angeles Dodgers',
+          artist: 'Canvas ART',
+          year: 'xxi Cent.',
+          rule: {
+            "monday": [ 13, 18, 24, 30 ],
+            "tuesday": [ 12, 16, 1, 29 ],
+            "wednesday": [ 11, 16, 21, 28 ],
+            "thursday": [ 10, 15, 21, 27 ],
+            "friday": [ 9, 14, 20, 26 ],
+            "saturday": [ 14, 20, 25, 2 ],
+            "sunday": [ 28, 18, 24, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 99,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/la-dodgers-pitcher-sandy-koufax-1965-everett.jpg',
+          title: 'L.A. Dodgers Pitcher Sandy Koufax',
+          artist: 'Everett',
+          year: '1965',
+          rule: {
+            "monday": [ 28, 18, 24, 1 ],
+            "tuesday": [ 13, 18, 24, 30 ],
+            "wednesday": [ 12, 16, 1, 29 ],
+            "thursday": [ 11, 16, 21, 28 ],
+            "friday": [ 10, 15, 21, 27 ],
+            "saturday": [ 9, 14, 20, 26 ],
+            "sunday": [ 14, 20, 25, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 100,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/cubism-la-dodgers-baserunner-painting-tommervik.jpg',
+          title: 'Cubism LA Dodgers Baserunner Painting',
+          artist: 'Tommervik',
+          year: '2011',
+          rule: {
+            "monday": [ 14, 20, 25, 2 ],
+            "tuesday": [ 28, 18, 24, 1 ],
+            "wednesday": [ 13, 18, 24, 30 ],
+            "thursday": [ 12, 16, 1, 29 ],
+            "friday": [ 11, 16, 21, 28 ],
+            "saturday": [ 10, 15, 21, 27 ],
+            "sunday": [ 9, 14, 20, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
