@@ -5,6 +5,9 @@
   var dayClock = false;
   var monthClock = false;
   var profileClock = false;
+  var productivePane = false;
+  var customizePane = false;
+  var socialPane = false;
 
   var stopBlinker = true;
 
@@ -352,6 +355,10 @@
       vm.loginAttempt = loginAttempt;
       vm.newUserSubmit = newUserSubmit;
       vm.lostPassword = lostPassword;
+      vm.restoreToLanding = restoreToLanding;
+      vm.controlProduction = controlProduction;
+      vm.controlCustoms = controlCustoms;
+      vm.controlSociety = controlSociety;
 
       function lostPassword() {
         //console.log('Why you forget your password?');
@@ -449,6 +456,7 @@
 
         //post - send welcome message - continue button
       }
+
       function loginAttempt() {
         //alert('We are logging in');
         let loginEmail = document.getElementById('loginEmail');
@@ -487,6 +495,138 @@
 
       }
 
+      function controlSociety() {
+        let slogan = document.getElementById('slogan');
+        let sellingLine = document.getElementById('sellingLine');
+        let beSocial = document.getElementById('beSocial');
+        let promoText = document.getElementById('promoText');
+        let infoColumn2 = document.getElementById('infoColumn2');
+        let infoColumn1 = document.getElementById('infoColumn1');
+        let infoColumn3 = document.getElementById('infoColumn3');
+        let loginDiv = document.getElementById('loginDiv');
+
+        if (socialPane) {
+
+          socialPane = false;
+          beSocial.setAttribute("style", "visibility: visible; -webkit-transform: rotateY(90deg); -moz-transform: rotateY(90deg); -o-transform: rotateY(90deg); -ms-transform: rotateY(90deg); transform: rotateY(90deg); transition: transform 1s linear;");
+          setTimeout(()=>{
+            beSocial.setAttribute("style", "visibility: hidden;");
+            if ((!productivePane) && (!customizePane)) {
+              slogan.setAttribute("style", "display: initial; background: #22bc44; background-color: -webkit-linear-gradient(-135deg, #22dc44, #22aa44); background: -o-linear-gradient(-135deg, #22dc44, #22aa44); background: -moz-linear-gradient(-135deg, #22dc44, #22aa44); background: linear-gradient(-135deg, #22dc44, #22aa44); font-family: 'Asul', serif; font-size: 72px; align-self: center; margin-left: 3vmin; background-color: transparent; display: inline-block; border-radius: 10px; -moz-box-shadow: -1px 1px 1px #19262E, -2px 2px 2px #1E2A33, -3px 3px  3px #242F38, -4px 4px 4px #29343D, -5px 5px 7px #2E3942, -6px 6px 8px #333E47, -7px 7px 9px #38434C, -8px 8px 10px #4C4851; -webkit-box-shadow: -1px 1px 1px #19262E, -2px 2px 2px #1E2A33, -3px 3px  3px #242F38, -4px 4px 4px #29343D, -5px 5px 7px #2E3942, -6px 6px 8px #333E47, -7px 7px 9px #38434C, -8px 8px 10px #4C4851; box-shadow: -1px 1px 1px #19262E, -2px 2px 2px #1E2A33, -3px 3px  3px #242F38, -4px 4px 4px #29343D, -5px 5px 7px #2E3942, -6px 6px 8px #333E47, -7px 7px 9px #38434C, -8px 8px 10px #4C4851; padding-left: 2vmin; padding-right: 2vmin; font-weight:bold;");
+              sellingLine.setAttribute("style", "visibility: visible;");
+              promoText.setAttribute("style", "visibility: visible;");
+              infoColumn2.setAttribute("style", "margin-top: 50vmin;");
+              infoColumn1.setAttribute("style", "margin-top: 50vmin;");
+              infoColumn3.setAttribute("style", "margin-top: 50vmin;");
+              loginDiv.setAttribute("style", "visibility: visible;");
+            }
+          }, 1000);
+        } else {
+          if ((!productivePane) && (!customizePane)) {
+            slogan.setAttribute("style", "display: none;");
+            sellingLine.setAttribute("style", "visibility: hidden;");
+            promoText.setAttribute("style", "visibility: hidden;");
+            loginDiv.setAttribute("style", "visibility: hidden;");
+          }
+          socialPane = true;
+          infoColumn2.setAttribute("style", "margin-top: 0;");
+          infoColumn1.setAttribute("style", "margin-top: 0;");
+          infoColumn3.setAttribute("style", "margin-top: 0;");
+          beSocial.setAttribute("style", "visibility: visible; -webkit-transform: rotateY(-35deg); -moz-transform: rotateY(-35deg); -o-transform: rotateY(-35deg); -ms-transform: rotateY(-35deg); transform: rotateY(-35deg); transition: transform 1s linear;");
+          setTimeout(()=>{
+            beSocial.setAttribute("style", "visibility: visible; -webkit-transform: rotateY(5deg); -moz-transform: rotateY(5deg); -o-transform: rotateY(5deg); -ms-transform: rotateY(5deg); transform: rotateY(5deg); transition: transform 1s linear;");
+          }, 1000);
+        }
+      }
+
+      function controlCustoms() {
+        let slogan = document.getElementById('slogan');
+        let sellingLine = document.getElementById('sellingLine');
+        let beCustom = document.getElementById('beCustom');
+        let promoText = document.getElementById('promoText');
+        let infoColumn3 = document.getElementById('infoColumn3');
+        let infoColumn2 = document.getElementById('infoColumn2');
+        let infoColumn1 = document.getElementById('infoColumn1');
+        let loginDiv = document.getElementById('loginDiv');
+
+        if (customizePane) {
+
+          customizePane = false;
+          beCustom.setAttribute("style", "visibility: visible; -webkit-transform: rotateY(90deg); -moz-transform: rotateY(90deg); -o-transform: rotateY(90deg); -ms-transform: rotateY(90deg); transform: rotateY(90deg); transition: transform 1s linear;");
+          setTimeout(()=>{
+            beCustom.setAttribute("style", "visibility: hidden;");
+            if ((!productivePane) && (!socialPane)) {
+              slogan.setAttribute("style", "display: initial; background: #22bc44; background-color: -webkit-linear-gradient(-135deg, #22dc44, #22aa44); background: -o-linear-gradient(-135deg, #22dc44, #22aa44); background: -moz-linear-gradient(-135deg, #22dc44, #22aa44); background: linear-gradient(-135deg, #22dc44, #22aa44); font-family: 'Asul', serif; font-size: 72px; align-self: center; margin-left: 3vmin; background-color: transparent; display: inline-block; border-radius: 10px; -moz-box-shadow: -1px 1px 1px #19262E, -2px 2px 2px #1E2A33, -3px 3px  3px #242F38, -4px 4px 4px #29343D, -5px 5px 7px #2E3942, -6px 6px 8px #333E47, -7px 7px 9px #38434C, -8px 8px 10px #4C4851; -webkit-box-shadow: -1px 1px 1px #19262E, -2px 2px 2px #1E2A33, -3px 3px  3px #242F38, -4px 4px 4px #29343D, -5px 5px 7px #2E3942, -6px 6px 8px #333E47, -7px 7px 9px #38434C, -8px 8px 10px #4C4851; box-shadow: -1px 1px 1px #19262E, -2px 2px 2px #1E2A33, -3px 3px  3px #242F38, -4px 4px 4px #29343D, -5px 5px 7px #2E3942, -6px 6px 8px #333E47, -7px 7px 9px #38434C, -8px 8px 10px #4C4851; padding-left: 2vmin; padding-right: 2vmin; font-weight:bold;");
+              sellingLine.setAttribute("style", "visibility: visible;");
+              promoText.setAttribute("style", "visibility: visible;");
+              infoColumn2.setAttribute("style", "margin-top: 50vmin;");
+              infoColumn1.setAttribute("style", "margin-top: 50vmin;");
+              infoColumn3.setAttribute("style", "margin-top: 50vmin;");
+              loginDiv.setAttribute("style", "visibility: visible;");
+            }
+          }, 1000);
+        } else {
+          if ((!productivePane) && (!socialPane)) {
+            slogan.setAttribute("style", "display: none;");
+            sellingLine.setAttribute("style", "visibility: hidden;");
+            promoText.setAttribute("style", "visibility: hidden;");
+            loginDiv.setAttribute("style", "visibility: hidden;");
+          }
+          customizePane = true;
+          infoColumn2.setAttribute("style", "margin-top: 0;");
+          infoColumn1.setAttribute("style", "margin-top: 0;");
+          infoColumn3.setAttribute("style", "margin-top: 0;");
+          beCustom.setAttribute("style", "visibility: visible; -webkit-transform: rotateY(-35deg); -moz-transform: rotateY(-35deg); -o-transform: rotateY(-35deg); -ms-transform: rotateY(-35deg); transform: rotateY(-35deg); transition: transform 1s linear;");
+          setTimeout(()=>{
+            beCustom.setAttribute("style", "visibility: visible; -webkit-transform: rotateY(5deg); -moz-transform: rotateY(5deg); -o-transform: rotateY(5deg); -ms-transform: rotateY(5deg); transform: rotateY(5deg); transition: transform 1s linear;");
+          }, 1000);
+        }
+      }
+
+      function controlProduction() {
+        let slogan = document.getElementById('slogan');
+        let sellingLine = document.getElementById('sellingLine');
+        let beProductive = document.getElementById('beProductive');
+        let promoText = document.getElementById('promoText');
+        let infoColumn1 = document.getElementById('infoColumn1');
+        let infoColumn2 = document.getElementById('infoColumn2');
+        let infoColumn3 = document.getElementById('infoColumn3');
+        let loginDiv = document.getElementById('loginDiv');
+
+        if (productivePane) {
+
+          productivePane = false;
+          beProductive.setAttribute("style", "visibility: visible; -webkit-transform: rotateY(90deg); -moz-transform: rotateY(90deg); -o-transform: rotateY(90deg); -ms-transform: rotateY(90deg); transform: rotateY(90deg); transition: transform 1s linear;");
+          setTimeout(()=>{
+            beProductive.setAttribute("style", "visibility: hidden;");
+            if ((!customizePane) && (!socialPane)) {
+              slogan.setAttribute("style", "display: initial; background: #22bc44; background-color: -webkit-linear-gradient(-135deg, #22dc44, #22aa44); background: -o-linear-gradient(-135deg, #22dc44, #22aa44); background: -moz-linear-gradient(-135deg, #22dc44, #22aa44); background: linear-gradient(-135deg, #22dc44, #22aa44); font-family: 'Asul', serif; font-size: 72px; align-self: center; margin-left: 3vmin; background-color: transparent; display: inline-block; border-radius: 10px; -moz-box-shadow: -1px 1px 1px #19262E, -2px 2px 2px #1E2A33, -3px 3px  3px #242F38, -4px 4px 4px #29343D, -5px 5px 7px #2E3942, -6px 6px 8px #333E47, -7px 7px 9px #38434C, -8px 8px 10px #4C4851; -webkit-box-shadow: -1px 1px 1px #19262E, -2px 2px 2px #1E2A33, -3px 3px  3px #242F38, -4px 4px 4px #29343D, -5px 5px 7px #2E3942, -6px 6px 8px #333E47, -7px 7px 9px #38434C, -8px 8px 10px #4C4851; box-shadow: -1px 1px 1px #19262E, -2px 2px 2px #1E2A33, -3px 3px  3px #242F38, -4px 4px 4px #29343D, -5px 5px 7px #2E3942, -6px 6px 8px #333E47, -7px 7px 9px #38434C, -8px 8px 10px #4C4851; padding-left: 2vmin; padding-right: 2vmin; font-weight:bold;");
+              sellingLine.setAttribute("style", "visibility: visible;");
+              promoText.setAttribute("style", "visibility: visible;");
+              infoColumn1.setAttribute("style", "margin-top: 50vmin;");
+              infoColumn2.setAttribute("style", "margin-top: 50vmin;");
+              infoColumn3.setAttribute("style", "margin-top: 50vmin;");
+              loginDiv.setAttribute("style", "visibility: visible;");
+            }
+          }, 1000);
+        } else {
+          if ((!customizePane) && (!socialPane)) {
+            slogan.setAttribute("style", "display: none;");
+            sellingLine.setAttribute("style", "visibility: hidden;");
+            promoText.setAttribute("style", "visibility: hidden;");
+            loginDiv.setAttribute("style", "visibility: hidden;");
+          }
+          productivePane = true;
+          infoColumn1.setAttribute("style", "margin-top: 0;");
+          infoColumn2.setAttribute("style", "margin-top: 0;");
+          infoColumn3.setAttribute("style", "margin-top: 0;");
+          beProductive.setAttribute("style", "visibility: visible; -webkit-transform: rotateY(-35deg); -moz-transform: rotateY(-35deg); -o-transform: rotateY(-35deg); -ms-transform: rotateY(-35deg); transform: rotateY(-35deg); transition: transform 1s linear;");
+          setTimeout(()=>{
+            beProductive.setAttribute("style", "visibility: visible; -webkit-transform: rotateY(5deg); -moz-transform: rotateY(5deg); -o-transform: rotateY(5deg); -ms-transform: rotateY(5deg); transform: rotateY(5deg); transition: transform 1s linear;");
+          }, 1000);
+        }
+      }
+
       function rotateClock(element) {
         let timer = 20 + Math.floor(Math.random() * 120);
 
@@ -509,6 +649,68 @@
             }, (timer * 1000));
           }, (timer * 1000));
         }, (timer * 1000));
+
+      }
+
+      function restoreToLanding() {
+        let timer = 0.25;
+        let loginDiv = document.getElementById('loginDiv');
+        let logo2img = document.getElementById('logo2img');
+        let infoDiv = document.getElementById('infoDiv');
+        let infoBorder1 = document.getElementById('infoBorder1');
+        let infoBorder2 = document.getElementById('infoBorder2');
+        let infoBorder3 = document.getElementById('infoBorder3');
+        let infoSloganLine = document.getElementById('infoSloganLine');
+
+        loginDiv.setAttribute("style", "visibility: visible; opacity: 1; transition: visibility 0s " + timer + "s, opacity " + timer + "s linear;");
+        logo2img.setAttribute("style", "visibility: visible; opacity: 1; transition: visibility 0s " + timer + "s, opacity " + timer + "s linear;");
+        infoBorder3.setAttribute("style", "opacity: 0; transition: opacity " + (timer * 5) + "s linear;");
+
+        setTimeout(()=>{
+          infoDiv.setAttribute("style", "-webkit-transform: rotateY(90deg); -moz-transform: rotateY(90deg); -o-transform: rotateY(90deg); -ms-transform: rotateY(90deg); transform: rotateY(90deg); transition: transform " + (timer * 4) + "s linear;");
+          setTimeout(()=>{
+            infoBorder1.setAttribute("style", "-webkit-transform: rotateX(180deg); -moz-transform: rotateX(180deg); -o-transform: rotateX(180deg); -ms-transform: rotateX(180deg); transform: rotateX(180deg); transition: transform " + (timer * 4) + "s linear;");
+            setTimeout(()=>{
+              infoBorder2.setAttribute("style", "-webkit-transform: rotateY(360deg); -moz-transform: rotateY(360deg); -o-transform: rotateY(360deg); -ms-transform: rotateY(360deg); transform: rotateY(360deg); transition: transform " + (timer * 4) + "s linear;");
+              infoSloganLine.setAttribute("style", "opacity: 0; transition: opacity " + (timer * 8) + "s linear;");
+              resetInitialState();
+            }, (timer * 250));
+
+          }, (timer * 250));
+
+
+
+        }, (timer * 250));
+      }
+
+      function displayInfo() {
+        let timer = 0.25;
+        //let loginDiv = document.getElementById('loginDiv');
+        let logo2img = document.getElementById('logo2img');
+        let infoDiv = document.getElementById('infoDiv');
+        let infoBorder1 = document.getElementById('infoBorder1');
+        let infoBorder2 = document.getElementById('infoBorder2');
+        let infoBorder3 = document.getElementById('infoBorder3');
+        let infoSloganLine = document.getElementById('infoSloganLine');
+
+        //loginDiv.setAttribute("style", "visibility: hidden; opacity: 0; transition: visibility 0s " + timer + "s, opacity " + timer + "s linear;");
+        logo2img.setAttribute("style", "visibility: hidden; opacity: 0; transition: visibility 0s " + timer + "s, opacity " + timer + "s linear;");
+        infoBorder3.setAttribute("style", "opacity: 1; transition: opacity " + (timer * 5) + "s linear;");
+
+        setTimeout(()=>{
+          infoDiv.setAttribute("style", "-webkit-transform: rotateY(0deg); -moz-transform: rotateY(0deg); -o-transform: rotateY(0deg); -ms-transform: rotateY(0deg); transform: rotateY(0deg); transition: transform " + (timer * 4) + "s linear;");
+          setTimeout(()=>{
+            infoBorder1.setAttribute("style", "-webkit-transform: rotateX(0deg); -moz-transform: rotateX(0deg); -o-transform: rotateX(0deg); -ms-transform: rotateX(0deg); transform: rotateX(0deg); transition: transform " + (timer * 4) + "s linear;");
+            setTimeout(()=>{
+              infoBorder2.setAttribute("style", "-webkit-transform: rotateY(0deg); -moz-transform: rotateY(0deg); -o-transform: rotateY(0deg); -ms-transform: rotateY(0deg); transform: rotateY(0deg); transition: transform " + (timer * 4) + "s linear;");
+              infoSloganLine.setAttribute("style", "opacity: 0.9; transition: opacity " + (timer * 8) + "s linear;");
+            }, (timer * 250));
+
+          }, (timer * 250));
+
+
+
+        }, (timer * 250));
 
       }
 
@@ -558,6 +760,7 @@
           var landingInfo = document.getElementById('landingInfo');
           var loginExit = document.getElementById('loginExit');
           var userLoginForm = document.getElementById('userLoginForm');
+          var landingInfo = document.getElementById('landingInfo');
 
           setTimeout(()=>{
             rotateClock(document.getElementById('clockLanding'));
@@ -578,6 +781,9 @@
           landingNewUser.addEventListener('click', ()=>{
 
             fadeOutButtons(landingInfo, landingLogin, landingNewUser, fadeInNewUserSignup);
+          });
+          landingInfo.addEventListener('click', ()=>{
+            fadeOutButtons(landingLogin, landingNewUser, landingInfo, displayInfo);
           });
           loginExit.addEventListener('click', ()=>{
             resetInitialState();
