@@ -8287,6 +8287,34 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 528,
+          user_id: 1,
+          name: 'Vernor Vinge (author/computer scientist)',
+          color: '#975340',
+          picture: './img/authors/vernorvinge.jpg',
+          day_of: new Date ('1944-10-02T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 529,
+          user_id: 1,
+          name: 'Deacon White (third baseman/catcher/right fielder), born 1847',
+          color: '#D3CAA3',
+          picture: './img/baseball/deaconwhite.jpg',
+          day_of: new Date ('1847-12-02T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
