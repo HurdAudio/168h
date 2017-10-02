@@ -504,6 +504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 26,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/for-pearl-1970(1).jpg',
+          title: 'For Pearl',
+          artist: 'Brice Marden',
+          year: '1970',
+          rule: {
+            "monday": [ 7, 12, 18, 23 ],
+            "tuesday": [ 6, 11, 17, 22 ],
+            "wednesday": [ 5, 10, 16, 23 ],
+            "thursday": [ 11, 16, 22, 27 ],
+            "friday": [ 10, 15, 21, 26 ],
+            "saturday": [ 9, 14, 20, 25 ],
+            "sunday": [ 8, 13, 19, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 27,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/photo-souvenir-1-carr-1-cercle-4-triangles-hauts-reliefs-situ-s-h-travail-situ-2010.jpg',
+          title: 'Photo-souvenir: 1 carré = 1 cercle + 4 triangles, Hauts-reliefs situés H, travail situé',
+          artist: 'Daniel Buren',
+          year: '2010',
+          rule: {
+            "monday": [ 8, 13, 19, 24 ],
+            "tuesday": [ 7, 12, 18, 23 ],
+            "wednesday": [ 6, 11, 17, 22 ],
+            "thursday": [ 5, 10, 16, 23 ],
+            "friday": [ 11, 16, 22, 27 ],
+            "saturday": [ 10, 15, 21, 26 ],
+            "sunday": [ 9, 14, 20, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 28,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/sem-titulo-1983.jpg',
+          title: 'Sem titulo',
+          artist: 'Angelo de Sousa',
+          year: '1983',
+          rule: {
+            "monday": [ 10, 15, 21, 26 ],
+            "tuesday": [ 9, 14, 20, 25 ],
+            "wednesday": [ 8, 13, 19, 24 ],
+            "thursday": [ 7, 12, 18, 23 ],
+            "friday": [ 6, 11, 17, 24 ],
+            "saturday": [ 12, 17, 23, 28 ],
+            "sunday": [ 11, 16, 22, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 29,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/28-septembre-1984-1992.jpg',
+          title: '28 septembre 1984',
+          artist: 'Michel Parmentier',
+          year: '1992',
+          rule: {
+            "monday": [ 11, 16, 22, 27 ],
+            "tuesday": [ 10, 15, 21, 26 ],
+            "wednesday": [ 9, 14, 20, 25 ],
+            "thursday": [ 8, 13, 19, 24 ],
+            "friday": [ 7, 12, 18, 23 ],
+            "saturday": [ 6, 11, 17, 24 ],
+            "sunday": [ 12, 17, 23, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 30,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/always-now-1981.jpg',
+          title: 'Always Now',
+          artist: 'Tess Jaray',
+          year: '1981',
+          rule: {
+            "monday": [ 12, 17, 23, 28 ],
+            "tuesday": [ 11, 16, 22, 27 ],
+            "wednesday": [ 10, 15, 21, 26 ],
+            "thursday": [ 9, 14, 20, 25 ],
+            "friday": [ 8, 13, 19, 24 ],
+            "saturday": [ 7, 12, 18, 23 ],
+            "sunday": [ 6, 11, 17, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
