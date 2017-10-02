@@ -1192,6 +1192,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 67,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3567174391/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://charlesbradley.bandcamp.com/album/changes',
+          a_string: 'Changes by Charles Bradley',
+          rule: {
+            "monday": [ 10, 15, 17, 29 ],
+            "tuesday": [ 11, 15, 17, 21 ],
+            "wednesday": [ 13, 17, 19, 23 ],
+            "thursday": [ 15, 19, 21, 23 ],
+            "saturday": [ 27, 21, 23, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 68,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1828909607/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sugarayrayford.bandcamp.com/album/the-world-that-we-live-in',
+          a_string: 'The World That We Live In by SUGARAY RAYFORD',
+          rule: {
+            "monday": [ 27, 21, 23, 29 ],
+            "tuesday": [ 10, 15, 17, 29 ],
+            "wednesday": [ 11, 15, 17, 21 ],
+            "thursday": [ 13, 17, 19, 23 ],
+            "saturday": [ 15, 19, 21, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 69,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1402368525/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'https://bandcamp.com/EmbeddedPlayer/album=1402368525/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          a_string: 'EAST by IVY SOLE.',
+          rule: {
+            "monday": [ 15, 19, 21, 23 ],
+            "tuesday": [ 27, 21, 23, 29 ],
+            "wednesday": [ 10, 15, 17, 29 ],
+            "thursday": [ 11, 15, 17, 21 ],
+            "saturday": [ 13, 17, 19, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
