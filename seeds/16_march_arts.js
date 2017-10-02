@@ -2104,6 +2104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 106,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/arena-v-1978.jpg',
+          title: 'Arena V',
+          artist: 'Dorothea Rockburne',
+          year: '1978',
+          rule: {
+            "monday": [ 14, 24, 3, 11 ],
+            "tuesday": [ 13, 23, 31, 10 ],
+            "wednesday": [ 12, 22, 30, 9 ],
+            "thursday": [ 11, 21, 29, 8 ],
+            "friday": [ 10, 20, 28, 7 ],
+            "saturday": [ 9, 19, 28, 6 ],
+            "sunday": [ 15, 24, 2, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 107,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/champs-de-petrol-2013.jpg',
+          title: 'Oil Fields',
+          artist: 'Etel Adnan',
+          year: '2013',
+          rule: {
+            "monday": [ 15, 24, 2, 11 ],
+            "tuesday": [ 14, 24, 3, 11 ],
+            "wednesday": [ 13, 23, 31, 10 ],
+            "thursday": [ 12, 22, 30, 9 ],
+            "friday": [ 11, 21, 29, 8 ],
+            "saturday": [ 10, 20, 28, 7 ],
+            "sunday": [ 9, 19, 28, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 108,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/blumen.jpg',
+          title: 'Blumen',
+          artist: 'Helen Dahm',
+          year: '?',
+          rule: {
+            "monday": [ 9, 19, 28, 6 ],
+            "tuesday": [ 15, 24, 2, 11 ],
+            "wednesday": [ 14, 24, 3, 11 ],
+            "thursday": [ 13, 23, 31, 10 ],
+            "friday": [ 12, 22, 30, 9 ],
+            "saturday": [ 11, 21, 29, 8 ],
+            "sunday": [ 10, 20, 28, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 109,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/pillars-of-salt.jpg',
+          title: 'Pillars of salt',
+          artist: 'Natalia Goncharova',
+          year: '1908',
+          rule: {
+            "monday": [ 10, 20, 28, 7 ],
+            "tuesday": [ 9, 19, 28, 6 ],
+            "wednesday": [ 15, 24, 2, 11 ],
+            "thursday": [ 14, 24, 3, 11 ],
+            "friday": [ 13, 23, 31, 10 ],
+            "saturday": [ 12, 22, 30, 9 ],
+            "sunday": [ 11, 21, 29, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 110,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/glimpse-upon-waking-1976.jpg',
+          title: 'Glimpse Upon Waking',
+          artist: 'Winifred Nicholson',
+          year: '1976',
+          rule: {
+            "monday": [ 11, 21, 29, 8 ],
+            "tuesday": [ 10, 20, 28, 7 ],
+            "wednesday": [ 9, 19, 28, 6 ],
+            "thursday": [ 15, 24, 2, 11 ],
+            "friday": [ 14, 24, 3, 11 ],
+            "saturday": [ 13, 23, 31, 10 ],
+            "sunday": [ 12, 22, 30, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
