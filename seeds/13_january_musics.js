@@ -1300,6 +1300,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 73,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3475745204/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cantaloupemusic.bandcamp.com/album/zippo-songs',
+          a_string: 'Zippo Songs by Cantaloupe Music',
+          rule: {
+            "monday": [ 15, 19, 21, 25 ],
+            "tuesday": [ 17, 24, 26, 25 ],
+            "wednesday": [ 25, 19, 21, 26 ],
+            "thursday": [ 21, 15, 17, 5 ],
+            "saturday": [ 17, 24, 26, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 74,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4115830382/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://lisamoore.bandcamp.com/album/lightning-slingers-and-dead-ringers',
+          a_string: 'Lightning Slingers and Dead Ringers by Lisa Moore and Annie Gosfield',
+          rule: {
+            "monday": [ 17, 24, 26, 25 ],
+            "tuesday": [ 15, 19, 21, 25 ],
+            "wednesday": [ 17, 24, 26, 25 ],
+            "thursday": [ 25, 19, 21, 26 ],
+            "saturday": [ 21, 15, 17, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 75,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=953844037/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jonathanzorn.bandcamp.com/album/language-as-dust',
+          a_string: 'Language as Dust by Jonathan Zorn',
+          rule: {
+            "monday": [ 21, 15, 17, 5 ],
+            "tuesday": [ 17, 24, 26, 25 ],
+            "wednesday": [ 15, 19, 21, 25 ],
+            "thursday": [ 17, 24, 26, 25 ],
+            "saturday": [ 25, 19, 21, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
