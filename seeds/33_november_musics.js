@@ -220,6 +220,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 13,
+          user_id: 1,
+          theme: 'ethiopia and pan-african',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1684187707/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://akalewube.bandcamp.com/album/akal-wub',
+          a_string: 'Akalé Wubé by Akalé Wubé',
+          rule: {
+            "monday": [ 28, 9, 20, 22 ],
+            "tuesday": [ 2, 13, 24, 26 ],
+            "wednesday": [ 1, 12, 23, 25 ],
+            "thursday": [ 30, 11, 22, 24 ],
+            "saturday": [ 29, 10, 21, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 14,
+          user_id: 1,
+          theme: 'ethiopia and pan-african',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1788037664/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://akalewube.bandcamp.com/album/mata',
+          a_string: 'Mata by Akalé Wubé',
+          rule: {
+            "monday": [ 30, 11, 22, 24 ],
+            "tuesday": [ 29, 10, 21, 23 ],
+            "wednesday": [ 3, 14, 25, 27 ],
+            "thursday": [ 2, 13, 24, 26 ],
+            "saturday": [ 1, 12, 23, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 15,
+          user_id: 1,
+          theme: 'ethiopia and pan-african',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1294737427/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://akalewube.bandcamp.com/album/sost',
+          a_string: 'Sost by Akalé Wubé',
+          rule: {
+            "monday": [ 1, 12, 23, 25 ],
+            "tuesday": [ 30, 11, 22, 24 ],
+            "wednesday": [ 29, 10, 21, 23 ],
+            "thursday": [ 3, 14, 25, 27 ],
+            "saturday": [ 2, 13, 24, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
