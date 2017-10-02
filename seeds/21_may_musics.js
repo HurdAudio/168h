@@ -868,6 +868,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 49,
+          user_id: 1,
+          theme: 'avant garde/new music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4363051/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://rainbowbridge.bandcamp.com/album/international-exports-and-the-reasons',
+          a_string: 'International Exports And The Reasons by Posset/Pregnant Spore',
+          rule: {
+            "monday": [ 9, 15, 22, 4 ],
+            "tuesday": [ 8, 14, 21, 3 ],
+            "wednesday": [ 12, 18, 25, 7 ],
+            "thursday": [ 11, 17, 24, 6 ],
+            "saturday": [ 10, 16, 23, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 50,
+          user_id: 1,
+          theme: 'avant garde/new music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2060810605/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://accidentdutravail.bandcamp.com/album/boucles',
+          a_string: 'boucles by Accident du Travail',
+          rule: {
+            "monday": [ 10, 16, 23, 5 ],
+            "tuesday": [ 9, 15, 22, 4 ],
+            "wednesday": [ 8, 14, 21, 3 ],
+            "thursday": [ 12, 18, 25, 7 ],
+            "saturday": [ 11, 17, 24, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 51,
+          user_id: 1,
+          theme: 'avant garde/new music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1136447753/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://1631recordings.bandcamp.com/album/disarm',
+          a_string: 'Disarm by Tristan Eckerson',
+          rule: {
+            "monday": [ 11, 17, 24, 6 ],
+            "tuesday": [ 10, 16, 23, 5 ],
+            "wednesday": [ 9, 15, 22, 4 ],
+            "thursday": [ 8, 14, 21, 3 ],
+            "saturday": [ 12, 18, 25, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
