@@ -2304,6 +2304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 116,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/sam-gilliam-as-kids-go!.jpg',
+          title: 'As Kids Go!',
+          artist: 'Sam Gilliam',
+          year: '1996',
+          rule: {
+            "monday": [ 26, 5, 13, 23 ],
+            "tuesday": [ 28, 7, 3, 22 ],
+            "wednesday": [ 16, 24, 3, 11 ],
+            "thursday": [ 18, 26, 5, 13 ],
+            "friday": [ 23, 28, 5, 15 ],
+            "saturday": [ 22, 1, 9, 17 ],
+            "sunday": [ 24, 5, 11, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 117,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/1974.118.12_1a.jpg',
+          title: 'Hot Dog Bridge',
+          artist: 'Russell T. Gordon',
+          year: '1974',
+          rule: {
+            "monday": [ 24, 5, 11, 19 ],
+            "tuesday": [ 26, 5, 13, 23 ],
+            "wednesday": [ 28, 7, 3, 22 ],
+            "thursday": [ 16, 24, 3, 11 ],
+            "friday": [ 18, 26, 5, 13 ],
+            "saturday": [ 23, 28, 5, 15 ],
+            "sunday": [ 22, 1, 9, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 118,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/HeroForHire15.jpg',
+          title: 'Luke Cage, Hero for Hire #15',
+          artist: 'Billy Graham',
+          year: '1973',
+          rule: {
+            "monday": [ 22, 1, 9, 17 ],
+            "tuesday": [ 24, 5, 11, 19 ],
+            "wednesday": [ 26, 5, 13, 23 ],
+            "thursday": [ 28, 7, 3, 22 ],
+            "friday": [ 16, 24, 3, 11 ],
+            "saturday": [ 18, 26, 5, 13 ],
+            "sunday": [ 23, 28, 5, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 119,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/LonnieGraham_AIR_03.jpg',
+          title: 'Young Man with Sunday Dinner, Muguga, Kenya',
+          artist: 'Lonnie Graham',
+          year: '1996',
+          rule: {
+            "monday": [ 24, 29, 6, 16 ],
+            "tuesday": [ 23, 2, 10, 18 ],
+            "wednesday": [ 25, 6, 12, 20 ],
+            "thursday": [ 27, 6, 14, 24 ],
+            "friday": [ 29, 8, 4, 23 ],
+            "saturday": [ 17, 25, 4, 12 ],
+            "sunday": [ 19, 27, 6, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 120,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/pntg-gra.005126c-cropped.jpg',
+          title: 'The Birth of a Genius in the Midnight Sun',
+          artist: 'Deborah Grant',
+          year: '1912',
+          rule: {
+            "monday": [ 19, 27, 6, 14 ],
+            "tuesday": [ 24, 29, 6, 16 ],
+            "wednesday": [ 23, 2, 10, 18 ],
+            "thursday": [ 25, 6, 12, 20 ],
+            "friday": [ 27, 6, 14, 24 ],
+            "saturday": [ 29, 8, 4, 23 ],
+            "sunday": [ 17, 25, 4, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
