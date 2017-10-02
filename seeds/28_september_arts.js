@@ -904,6 +904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 46,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/self-portrait-1955.jpg',
+          title: 'Self-portrait',
+          artist: 'John Brack',
+          year: '1955',
+          rule: {
+            "monday": [ 4, 10, 28, 6 ],
+            "tuesday": [ 3, 9, 27, 5 ],
+            "wednesday": [ 9, 15, 3, 11 ],
+            "thursday": [ 8, 14, 2, 10 ],
+            "friday": [ 7, 13, 1, 9 ],
+            "saturday": [ 6, 12, 30, 8 ],
+            "sunday": [ 5, 11, 29, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 47,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/forme-1998.jpg',
+          title: 'Forme',
+          artist: 'Olivier Debre',
+          year: '1998',
+          rule: {
+            "monday": [ 5, 11, 29, 7 ],
+            "tuesday": [ 4, 10, 28, 6 ],
+            "wednesday": [ 3, 9, 27, 5 ],
+            "thursday": [ 9, 15, 3, 11 ],
+            "friday": [ 8, 14, 2, 10 ],
+            "saturday": [ 7, 13, 1, 9 ],
+            "sunday": [ 6, 12, 30, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 48,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/untitled-1956-1.jpg',
+          title: 'Untitled',
+          artist: 'Zao Wou-Ki',
+          year: '1956',
+          rule: {
+            "monday": [ 6, 12, 30, 8 ],
+            "tuesday": [ 5, 11, 29, 7 ],
+            "wednesday": [ 4, 10, 28, 6 ],
+            "thursday": [ 3, 9, 27, 5 ],
+            "friday": [ 9, 15, 3, 11 ],
+            "saturday": [ 8, 14, 2, 10 ],
+            "sunday": [ 7, 13, 1, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 49,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/composition-1954.jpg',
+          title: 'Composition',
+          artist: 'Huguette Arthur Bertrand',
+          year: '1954',
+          rule: {
+            "monday": [ 8, 14, 2, 10 ],
+            "tuesday": [ 7, 13, 1, 9 ],
+            "wednesday": [ 6, 12, 30, 8 ],
+            "thursday": [ 5, 11, 29, 7 ],
+            "friday": [ 4, 10, 28, 6 ],
+            "saturday": [ 10, 16, 4, 12 ],
+            "sunday": [ 9, 15, 3, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 50,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/peinture-23-mai-1969-1969.jpg',
+          title: 'Peinture 23 Mai 1969',
+          artist: 'Pierre Soulages',
+          year: '1969',
+          rule: {
+            "monday": [ 9, 15, 3, 11 ],
+            "tuesday": [ 8, 14, 2, 10 ],
+            "wednesday": [ 7, 13, 1, 9 ],
+            "thursday": [ 6, 12, 30, 8 ],
+            "friday": [ 5, 11, 29, 7 ],
+            "saturday": [ 4, 10, 28, 6 ],
+            "sunday": [ 10, 16, 4, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
