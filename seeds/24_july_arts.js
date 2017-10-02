@@ -1304,6 +1304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 66,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/panneaux-de-signalisation-de-chemin-de-fer-1918.jpg',
+          title: 'Panneaux de signalisation de chemin de fer',
+          artist: 'Jean Hugo',
+          year: '1918',
+          rule: {
+            "monday": [ 6, 17, 28, 8 ],
+            "tuesday": [ 12, 23, 3, 14 ],
+            "wednesday": [ 11, 22, 2, 13 ],
+            "thursday": [ 10, 20, 1, 12 ],
+            "friday": [ 9, 20, 31, 11 ],
+            "saturday": [ 8, 19, 29, 10 ],
+            "sunday": [ 7, 18, 29, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 67,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/adoration.jpg',
+          title: 'Adoration',
+          artist: 'Erte',
+          year: '?',
+          rule: {
+            "monday": [ 7, 18, 29, 9 ],
+            "tuesday": [ 6, 17, 28, 8 ],
+            "wednesday": [ 12, 23, 3, 14 ],
+            "thursday": [ 11, 22, 2, 13 ],
+            "friday": [ 10, 20, 1, 12 ],
+            "saturday": [ 9, 20, 31, 11 ],
+            "sunday": [ 8, 19, 29, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 68,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/the-guitar-player.jpg',
+          title: 'The Guitar Player',
+          artist: 'Ossip Zadkine',
+          year: '1920',
+          rule: {
+            "monday": [ 8, 19, 29, 10 ],
+            "tuesday": [ 7, 18, 29, 9 ],
+            "wednesday": [ 6, 17, 28, 8 ],
+            "thursday": [ 12, 23, 3, 14 ],
+            "friday": [ 11, 22, 2, 13 ],
+            "saturday": [ 10, 20, 1, 12 ],
+            "sunday": [ 9, 20, 31, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 69,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/silence-ici-j-ordonne-nathalie-paley-en-sphinx-1932.jpg',
+          title: 'Silence! Ici j’ordonne… (Nathalie Paley en sphinx)',
+          artist: 'Jean Cocteau',
+          year: '1932',
+          rule: {
+            "monday": [ 9, 20, 31, 11 ],
+            "tuesday": [ 8, 19, 29, 10 ],
+            "wednesday": [ 7, 18, 29, 9 ],
+            "thursday": [ 6, 17, 28, 8 ],
+            "friday": [ 12, 23, 3, 14 ],
+            "saturday": [ 11, 22, 2, 13 ],
+            "sunday": [ 10, 20, 1, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 70,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/still-life-1920.jpg',
+          title: 'Still Life',
+          artist: 'Le Corbusier',
+          year: '1920',
+          rule: {
+            "monday": [ 11, 21, 2, 13 ],
+            "tuesday": [ 10, 21, 1, 12 ],
+            "wednesday": [ 9, 20, 30, 11 ],
+            "thursday": [ 8, 19, 30, 10 ],
+            "friday": [ 7, 18, 29, 9 ],
+            "saturday": [ 13, 24, 4, 15 ],
+            "sunday": [ 12, 23, 3, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
