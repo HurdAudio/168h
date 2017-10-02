@@ -544,6 +544,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 31,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=430240605/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://wolf-eyes.bandcamp.com/album/time-of-clearing',
+          a_string: 'Time Of Clearing by Wolf Eyes',
+          rule: {
+            "monday": [ 11, 19, 4, 5 ],
+            "tuesday": [ 8, 16, 1, 31 ],
+            "wednesday": [ 9, 17, 2, 1 ],
+            "thursday": [ 8, 16, 1, 31 ],
+            "saturday": [ 12, 20, 5, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 32,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1937172481/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://kevindrumm.bandcamp.com/album/triangles',
+          a_string: 'TRIANGLES by Kevin Drumm',
+          rule: {
+            "monday": [ 12, 20, 5, 6 ],
+            "tuesday": [ 11, 19, 4, 5 ],
+            "wednesday": [ 8, 16, 1, 31 ],
+            "thursday": [ 9, 17, 2, 1 ],
+            "saturday": [ 8, 16, 1, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 33,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1265430461/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://frozenreeds.bandcamp.com/album/joy-boy',
+          a_string: 'Joy Boy by Julius Eastman',
+          rule: {
+            "monday": [ 8, 16, 1, 31 ],
+            "tuesday": [ 12, 20, 5, 6 ],
+            "wednesday": [ 11, 19, 4, 5 ],
+            "thursday": [ 8, 16, 1, 31 ],
+            "saturday": [ 9, 17, 2, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
