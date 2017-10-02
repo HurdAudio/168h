@@ -760,6 +760,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 43,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1445261392/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://forestswords.bandcamp.com/album/compassion',
+          a_string: 'Compassion by Forest Swords',
+          rule: {
+            "monday": [ 3, 11, 13, 24 ],
+            "tuesday": [ 7, 11, 17, 28 ],
+            "wednesday": [ 6, 10, 16, 26 ],
+            "thursday": [ 5, 9, 14, 26 ],
+            "saturday": [ 4, 8, 14, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 44,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=565792550/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://dreamcatalogue.bandcamp.com/album/--18',
+          a_string: '新しい日の誕生 by 2814',
+          rule: {
+            "monday": [ 4, 8, 14, 25 ],
+            "tuesday": [ 3, 11, 13, 24 ],
+            "wednesday": [ 7, 11, 17, 28 ],
+            "thursday": [ 6, 10, 16, 26 ],
+            "saturday": [ 5, 9, 14, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 45,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1719169483/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://telepathtelepath.bandcamp.com/album/--42',
+          a_string: '仮想夢女の子 by 仮想夢プラザ',
+          rule: {
+            "monday": [ 5, 9, 14, 26 ],
+            "tuesday": [ 4, 8, 14, 25 ],
+            "wednesday": [ 3, 11, 13, 24 ],
+            "thursday": [ 7, 11, 17, 28 ],
+            "saturday": [ 6, 10, 16, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
