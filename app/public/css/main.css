@@ -3390,8 +3390,8 @@ footer img {
   margin: 5vmin;
 }
 
-/*.day {
-  background-image: url(../img/january_tiles/pattern-2054291_1920.jpg);
+.day {
+  background-image: url(../img/february_tiles/Red-Silk-Fabric-Texture-1.jpg);
   background-repeat: no-repeat;
-  background-size: 1050%;
-}*/
+  background-size: 200%;
+}
