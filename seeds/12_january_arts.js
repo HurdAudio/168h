@@ -2504,6 +2504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 126,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/fluctuating-planes-1952.jpg',
+          title: 'Fluctuating Planes',
+          artist: 'Jock Macdonald',
+          year: '1952',
+          rule: {
+            "monday": [ 27, 28, 19, 23 ],
+            "tuesday": [ 30, 1, 2, 4 ],
+            "wednesday": [ 1, 3, 7, 10 ],
+            "thursday": [ 3, 5, 6, 9 ],
+            "friday": [ 19, 20, 31, 23 ],
+            "saturday": [ 22, 24, 16, 5 ],
+            "sunday": [ 24, 25, 17, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 127,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/astrazione-1921.jpg',
+          title: 'Astrazione',
+          artist: 'Julius Evola',
+          year: '1921',
+          rule: {
+            "monday": [ 24, 25, 17, 20 ],
+            "tuesday": [ 27, 28, 19, 23 ],
+            "wednesday": [ 30, 1, 2, 4 ],
+            "thursday": [ 1, 3, 7, 10 ],
+            "friday": [ 3, 5, 6, 9 ],
+            "saturday": [ 19, 20, 31, 23 ],
+            "sunday": [ 22, 24, 16, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 128,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/bouquet-1928.jpg',
+          title: 'Bouquet',
+          artist: 'Jean Fautrier',
+          year: '1928',
+          rule: {
+            "monday": [ 22, 24, 16, 5 ],
+            "tuesday": [ 24, 25, 17, 20 ],
+            "wednesday": [ 27, 28, 19, 23 ],
+            "thursday": [ 30, 1, 2, 4 ],
+            "friday": [ 1, 3, 7, 10 ],
+            "saturday": [ 3, 5, 6, 9 ],
+            "sunday": [ 19, 20, 31, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 129,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/lighthouse-1915.jpg',
+          title: 'Lighthouse',
+          artist: 'Marsden Hartley',
+          year: '1915',
+          rule: {
+            "monday": [ 19, 20, 31, 23 ],
+            "tuesday": [ 22, 24, 16, 5 ],
+            "wednesday": [ 24, 25, 17, 20 ],
+            "thursday": [ 27, 28, 19, 23 ],
+            "friday": [ 30, 1, 2, 4 ],
+            "saturday": [ 1, 3, 7, 10 ],
+            "sunday": [ 3, 5, 6, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 130,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/sketch-painted-in-santa-fe-new-mexico-1944.jpg',
+          title: 'Sketch Painted in Santa Fe, New Mexico',
+          artist: 'Lawren Harris',
+          year: '1944',
+          rule: {
+            "monday": [ 3, 5, 6, 9 ],
+            "tuesday": [ 19, 20, 31, 23 ],
+            "wednesday": [ 22, 24, 16, 5 ],
+            "thursday": [ 24, 25, 17, 20 ],
+            "friday": [ 27, 28, 19, 23 ],
+            "saturday": [ 30, 1, 2, 4 ],
+            "sunday": [ 1, 3, 7, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
