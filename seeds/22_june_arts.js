@@ -1399,7 +1399,7 @@ exports.seed = function(knex, Promise) {
             "wednesday": [ 7, 17, 27, 5 ],
             "thursday": [ 6, 16, 26, 4 ],
             "friday": [ 5, 15, 25, 3 ],
-            "saturday": [ 11, 21, 31, 8 ],
+            "saturday": [ 11, 21, 1, 8 ],
             "sunday": [ 10, 20, 30, 8 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
@@ -1420,7 +1420,7 @@ exports.seed = function(knex, Promise) {
             "thursday": [ 7, 17, 27, 5 ],
             "friday": [ 6, 16, 26, 4 ],
             "saturday": [ 5, 15, 25, 3 ],
-            "sunday": [ 11, 21, 31, 8 ]
+            "sunday": [ 11, 21, 1, 8 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -1434,7 +1434,7 @@ exports.seed = function(knex, Promise) {
           artist: 'Frank Eugene',
           year: '1897',
           rule: {
-            "monday": [ 11, 21, 31, 8 ],
+            "monday": [ 11, 21, 1, 8 ],
             "tuesday": [ 10, 20, 30, 8 ],
             "wednesday": [ 9, 19, 29, 7 ],
             "thursday": [ 8, 18, 28, 6 ],
@@ -1455,7 +1455,7 @@ exports.seed = function(knex, Promise) {
           year: '1953',
           rule: {
             "monday": [ 5, 15, 25, 3 ],
-            "tuesday": [ 11, 21, 31, 8 ],
+            "tuesday": [ 11, 21, 1, 8 ],
             "wednesday": [ 10, 20, 30, 8 ],
             "thursday": [ 9, 19, 29, 7 ],
             "friday": [ 8, 18, 28, 6 ],
@@ -1476,7 +1476,7 @@ exports.seed = function(knex, Promise) {
           rule: {
             "monday": [ 6, 16, 26, 4 ],
             "tuesday": [ 5, 15, 25, 3 ],
-            "wednesday": [ 11, 21, 31, 8 ],
+            "wednesday": [ 11, 21, 1, 8 ],
             "thursday": [ 10, 20, 30, 8 ],
             "friday": [ 9, 19, 29, 7 ],
             "saturday": [ 8, 18, 28, 6 ],
@@ -1497,10 +1497,110 @@ exports.seed = function(knex, Promise) {
             "monday": [ 7, 17, 27, 5 ],
             "tuesday": [ 6, 16, 26, 4 ],
             "wednesday": [ 5, 15, 25, 3 ],
-            "thursday": [ 11, 21, 31, 8 ],
+            "thursday": [ 11, 21, 1, 8 ],
             "friday": [ 10, 20, 30, 8 ],
             "saturday": [ 9, 19, 29, 7 ],
             "sunday": [ 8, 18, 28, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 76,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/downtown-morton-mississippi-1969.jpg',
+          title: 'Downtown Morton, Mississippi',
+          artist: 'William Eggleston',
+          year: '1969',
+          rule: {
+            "monday": [ 8, 18, 28, 6 ],
+            "tuesday": [ 7, 17, 27, 5 ],
+            "wednesday": [ 6, 16, 26, 4 ],
+            "thursday": [ 5, 15, 25, 3 ],
+            "friday": [ 11, 21, 1, 8 ],
+            "saturday": [ 10, 20, 30, 8 ],
+            "sunday": [ 9, 19, 29, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 77,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/thomas-eakins-and-j-laurie-wallace-1883-1.jpg',
+          title: 'Thomas Eakins and J. Laurie Wallace',
+          artist: 'Thomas Eakins',
+          year: '1883',
+          rule: {
+            "monday": [ 10, 20, 30, 8 ],
+            "tuesday": [ 9, 19, 29, 7 ],
+            "wednesday": [ 8, 18, 28, 6 ],
+            "thursday": [ 7, 17, 27, 5 ],
+            "friday": [ 6, 16, 26, 4 ],
+            "saturday": [ 12, 22, 2, 9 ],
+            "sunday": [ 11, 21, 1, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 78,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/behind-the-scenes-1902.jpg',
+          title: 'Behind the Scenes',
+          artist: 'Pierre Dubreuil',
+          year: '1902',
+          rule: {
+            "monday": [ 11, 21, 1, 9 ],
+            "tuesday": [ 10, 20, 30, 8 ],
+            "wednesday": [ 9, 19, 29, 7 ],
+            "thursday": [ 8, 18, 28, 6 ],
+            "friday": [ 7, 17, 27, 5 ],
+            "saturday": [ 6, 16, 26, 4 ],
+            "sunday": [ 12, 22, 2, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 79,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/kiss-by-the-hotel-de-ville-1950.jpg',
+          title: 'Kiss by the Hotel de Ville',
+          artist: 'Robert Doisneau',
+          year: '1950',
+          rule: {
+            "monday": [ 12, 22, 2, 9 ],
+            "tuesday": [ 11, 21, 1, 9 ],
+            "wednesday": [ 10, 20, 30, 8 ],
+            "thursday": [ 9, 19, 29, 7 ],
+            "friday": [ 8, 18, 28, 6 ],
+            "saturday": [ 7, 17, 27, 5 ],
+            "sunday": [ 6, 16, 26, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 80,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/behind-the-scenes-1904.jpg',
+          title: 'Behind the Scenes',
+          artist: 'Robert Demachy',
+          year: '1904',
+          rule: {
+            "monday": [ 6, 16, 26, 4 ],
+            "tuesday": [ 12, 22, 2, 9 ],
+            "wednesday": [ 11, 21, 1, 9 ],
+            "thursday": [ 10, 20, 30, 8 ],
+            "friday": [ 9, 19, 29, 7 ],
+            "saturday": [ 8, 18, 28, 6 ],
+            "sunday": [ 7, 17, 27, 5 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
