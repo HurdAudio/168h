@@ -2204,6 +2204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 111,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/stadia-ii-2004.jpg',
+          title: 'Stadia II',
+          artist: 'Julie Mehretu',
+          year: '2004',
+          rule: {
+            "monday": [ 12, 22, 30, 9 ],
+            "tuesday": [ 11, 21, 29, 8 ],
+            "wednesday": [ 10, 20, 28, 7 ],
+            "thursday": [ 9, 19, 28, 6 ],
+            "friday": [ 15, 24, 2, 11 ],
+            "saturday": [ 14, 24, 3, 11 ],
+            "sunday": [ 13, 23, 31, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 112,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/flat-jumbo-clips-2009.jpg',
+          title: 'Flat Jumbo [Clips]',
+          artist: 'Sarah Morris',
+          year: '2009',
+          rule: {
+            "monday": [ 14, 24, 1, 11 ],
+            "tuesday": [ 13, 23, 31, 10 ],
+            "wednesday": [ 12, 22, 30, 9 ],
+            "thursday": [ 11, 21, 29, 8 ],
+            "friday": [ 10, 20, 29, 7 ],
+            "saturday": [ 16, 25, 3, 12 ],
+            "sunday": [ 15, 25, 4, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 113,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/boy-with-rooster.jpg',
+          title: 'Boy with rooster',
+          artist: 'Natalia Goncharova',
+          year: '1910',
+          rule: {
+            "monday": [ 15, 25, 4, 12 ],
+            "tuesday": [ 14, 24, 1, 11 ],
+            "wednesday": [ 13, 23, 31, 10 ],
+            "thursday": [ 12, 22, 30, 9 ],
+            "friday": [ 11, 21, 29, 8 ],
+            "saturday": [ 10, 20, 29, 7 ],
+            "sunday": [ 16, 25, 3, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 114,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/women-s-costume-1918.jpg',
+          title: 'Women\'s costume',
+          artist: 'Aleksandra Ekster',
+          year: '1918',
+          rule: {
+            "monday": [ 16, 25, 3, 12 ],
+            "tuesday": [ 15, 25, 4, 12 ],
+            "wednesday": [ 14, 24, 1, 11 ],
+            "thursday": [ 13, 23, 31, 10 ],
+            "friday": [ 12, 22, 30, 9 ],
+            "saturday": [ 11, 21, 29, 8 ],
+            "sunday": [ 10, 20, 29, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 115,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/chamin-s-alentejanas.jpg',
+          title: 'Chaminés alentejanas',
+          artist: 'Mily Possoz',
+          year: '?',
+          rule: {
+            "monday": [ 10, 20, 29, 7 ],
+            "tuesday": [ 16, 25, 3, 12 ],
+            "wednesday": [ 15, 25, 4, 12 ],
+            "thursday": [ 14, 24, 1, 11 ],
+            "friday": [ 13, 23, 31, 10 ],
+            "saturday": [ 12, 22, 30, 9 ],
+            "sunday": [ 11, 21, 29, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
