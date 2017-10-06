@@ -1030,6 +1030,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 58,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3873763248/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://johnbutcher1.bandcamp.com/album/nigemizu',
+          a_string: 'Nigemizu by John Butcher',
+          rule: {
+            "monday": [ 8, 16, 28, 3 ],
+            "tuesday": [ 12, 20, 2, 7 ],
+            "wednesday": [ 11, 19, 1, 6 ],
+            "thursday": [ 10, 86, 30, 5 ],
+            "saturday": [ 9, 17, 29, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 59,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2991576717/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://danblacksberg.bandcamp.com/album/radiant-others',
+          a_string: 'Radiant Others by Dan Blacksberg',
+          rule: {
+            "monday": [ 9, 17, 29, 4 ],
+            "tuesday": [ 8, 16, 28, 3 ],
+            "wednesday": [ 12, 20, 2, 7 ],
+            "thursday": [ 11, 19, 1, 6 ],
+            "saturday": [ 10, 86, 30, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 60,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=434562700/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://grahamcostello.bandcamp.com/album/s-t-r-a-t-a',
+          a_string: 'S T R A T A by Graham Costello&#39;s STRATA',
+          rule: {
+            "monday": [ 10, 86, 30, 5 ],
+            "tuesday": [ 9, 17, 29, 4 ],
+            "wednesday": [ 8, 16, 28, 3 ],
+            "thursday": [ 12, 20, 2, 7 ],
+            "saturday": [ 11, 19, 1, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
