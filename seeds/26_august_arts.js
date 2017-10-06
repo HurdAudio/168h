@@ -1204,6 +1204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 61,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/highway-and-byways-1929(1).jpg',
+          title: 'Highway and byways',
+          artist: 'Paul Klee',
+          year: '1929',
+          rule: {
+            "monday": [ 8, 12, 20, 5 ],
+            "tuesday": [ 7, 10, 19, 4 ],
+            "wednesday": [ 6, 10, 18, 3 ],
+            "thursday": [ 12, 16, 24, 9 ],
+            "friday": [ 11, 14, 23, 8 ],
+            "saturday": [ 10, 14, 22, 7 ],
+            "sunday": [ 9, 13, 21, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 62,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/the-white-man-1907.jpg',
+          title: 'The White Man',
+          artist: 'Lyonel Feininger',
+          year: '1907',
+          rule: {
+            "monday": [ 9, 13, 21, 6 ],
+            "tuesday": [ 8, 12, 20, 5 ],
+            "wednesday": [ 7, 10, 19, 4 ],
+            "thursday": [ 6, 10, 18, 3 ],
+            "friday": [ 12, 16, 24, 9 ],
+            "saturday": [ 11, 14, 23, 8 ],
+            "sunday": [ 10, 14, 22, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 63,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/chashma-shahi.jpg',
+          title: 'Chashma Shahi',
+          artist: 'Abanindranath Tagore',
+          year: '?',
+          rule: {
+            "monday": [ 11, 15, 23, 8 ],
+            "tuesday": [ 10, 14, 22, 7 ],
+            "wednesday": [ 9, 13, 21, 6 ],
+            "thursday": [ 8, 11, 20, 5 ],
+            "friday": [ 7, 11, 19, 4 ],
+            "saturday": [ 13, 17, 25, 10 ],
+            "sunday": [ 12, 15, 24, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 64,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/baigneuse.jpg',
+          title: 'Baigneuse',
+          artist: 'Nicolae Vermont',
+          year: '?',
+          rule: {
+            "monday": [ 12, 15, 24, 9 ],
+            "tuesday": [ 11, 15, 23, 8 ],
+            "wednesday": [ 10, 14, 22, 7 ],
+            "thursday": [ 9, 13, 21, 6 ],
+            "friday": [ 8, 11, 20, 5 ],
+            "saturday": [ 7, 11, 19, 4 ],
+            "sunday": [ 13, 17, 25, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 65,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/21439.jpg',
+          title: 'Departure of Empress Elizabeth Petrovna',
+          artist: 'Eugene Lanceray',
+          year: '1916',
+          rule: {
+            "monday": [ 13, 17, 25, 10 ],
+            "tuesday": [ 12, 15, 24, 9 ],
+            "wednesday": [ 11, 15, 23, 8 ],
+            "thursday": [ 10, 14, 22, 7 ],
+            "friday": [ 9, 13, 21, 6 ],
+            "saturday": [ 8, 11, 20, 5 ],
+            "sunday": [ 7, 11, 19, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
