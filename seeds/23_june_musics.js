@@ -814,6 +814,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 46,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=867883367/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://timhecker.bandcamp.com/album/ravedeath-1972',
+          a_string: 'Ravedeath, 1972 by Tim Hecker',
+          rule: {
+            "monday": [ 6, 10, 16, 26 ],
+            "tuesday": [ 5, 9, 14, 26 ],
+            "wednesday": [ 4, 8, 14, 25 ],
+            "thursday": [ 3, 11, 13, 24 ],
+            "saturday": [ 7, 11, 17, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 47,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1248245268/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://necrodeathmort.bandcamp.com/album/overland',
+          a_string: 'Overland by Necro Deathmort',
+          rule: {
+            "monday": [ 7, 11, 17, 28 ],
+            "tuesday": [ 6, 10, 16, 26 ],
+            "wednesday": [ 5, 9, 14, 26 ],
+            "thursday": [ 4, 8, 14, 25 ],
+            "saturday": [ 3, 11, 13, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 48,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3828099932/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://orphax.bandcamp.com/album/studies-in-dissonance',
+          a_string: 'Studies in dissonance by Orphax',
+          rule: {
+            "monday": [ 3, 11, 13, 24 ],
+            "tuesday": [ 7, 11, 17, 28 ],
+            "wednesday": [ 6, 10, 16, 26 ],
+            "thursday": [ 5, 9, 14, 26 ],
+            "saturday": [ 4, 8, 14, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
