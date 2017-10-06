@@ -3558,8 +3558,8 @@ footer img {
   display: none;
 }
 
-/*.day {
-  background-image: url(../img/january_tiles/ice_texture_by_kikariz_stock.jpg);
+.day {
+  background-image: url(../img/february_tiles/red_chenille_fabric_texture_by_beckas.jpg);
   background-repeat: no-repeat;
-  background-size: 350%;
-}*/
+  background-size: 200%;
+}

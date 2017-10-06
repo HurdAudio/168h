@@ -8,14 +8,28 @@ exports.seed = function(knex, Promise) {
         {
           id: 1,
           user_id: 1,
-          theme: 'ice',
+          theme: 'silk',
           type: 'default',
-          src_string: '../img/february/Red-Silk-Fabric-Texture-1.jpg',
+          src_string: '../img/february_tiles/Red-Silk-Fabric-Texture-1.jpg',
           repeat_value: 'no-repeat',
           size_value: '200%',
           color_dark: '#76081B',
           color_medium: '#CD2C3A',
           color_light: '#E8526B',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 2,
+          user_id: 1,
+          theme: 'silk',
+          type: 'week',
+          src_string: '../img/february_tiles/red_chenille_fabric_texture_by_beckas.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '200%',
+          color_dark: '#2A0100',
+          color_medium: '#9F0E11',
+          color_light: '#CF0709',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
