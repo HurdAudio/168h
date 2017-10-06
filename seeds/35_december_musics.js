@@ -166,6 +166,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 10,
+          user_id: 1,
+          theme: 'brazil and pan-south american',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=808439901/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://coaxodosapo.bandcamp.com/album/oquadro',
+          a_string: 'OQuadro by OQuadro',
+          rule: {
+            "monday": [ 6, 12, 18, 24 ],
+            "tuesday": [ 5, 11, 17, 23 ],
+            "wednesday": [ 4, 10, 16, 22 ],
+            "thursday": [ 8, 14, 20, 26 ],
+            "saturday": [ 7, 13, 19, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 11,
+          user_id: 1,
+          theme: 'brazil and pan-south american',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1811681915/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://coaxodosapo.bandcamp.com/album/piano-solos',
+          a_string: 'Piano Solos by Guilherme Arantes',
+          rule: {
+            "monday": [ 7, 13, 19, 25 ],
+            "tuesday": [ 6, 12, 18, 24 ],
+            "wednesday": [ 5, 11, 17, 23 ],
+            "thursday": [ 4, 10, 16, 22 ],
+            "saturday": [ 8, 14, 20, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 12,
+          user_id: 1,
+          theme: 'brazil and pan-south american',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1742007145/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://coaxodosapo.bandcamp.com/album/as-ganhadeiras-de-itapu',
+          a_string: 'As Ganhadeiras de Itapuã by As Ganhadeiras de Itapuã',
+          rule: {
+            "monday": [ 8, 14, 20, 26 ],
+            "tuesday": [ 7, 13, 19, 25 ],
+            "wednesday": [ 6, 12, 18, 24 ],
+            "thursday": [ 5, 11, 17, 23 ],
+            "saturday": [ 4, 10, 16, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
