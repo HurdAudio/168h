@@ -1604,6 +1604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 81,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/un-cantique-1895.jpg',
+          title: 'Un Cantique',
+          artist: 'Adolph de Meyer',
+          year: '1895',
+          rule: {
+            "monday": [ 7, 17, 27, 5 ],
+            "tuesday": [ 6, 16, 26, 4 ],
+            "wednesday": [ 12, 22, 2, 9 ],
+            "thursday": [ 11, 21, 1, 9 ],
+            "friday": [ 10, 20, 30, 8 ],
+            "saturday": [ 9, 19, 29, 7 ],
+            "sunday": [ 8, 18, 28, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 82,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/un-chien-andalou-film-still-1928.jpg',
+          title: 'Un Chien Andalou (film still)',
+          artist: 'Salvador Dali',
+          year: '1928',
+          rule: {
+            "monday": [ 8, 18, 28, 6 ],
+            "tuesday": [ 7, 17, 27, 5 ],
+            "wednesday": [ 6, 16, 26, 4 ],
+            "thursday": [ 12, 22, 2, 9 ],
+            "friday": [ 11, 21, 1, 9 ],
+            "saturday": [ 10, 20, 30, 8 ],
+            "sunday": [ 9, 19, 29, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 83,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/2-1.jpg',
+          title: 'untitled',
+          artist: 'daisuke yokota',
+          year: '2015',
+          rule: {
+            "monday": [ 9, 19, 29, 7 ],
+            "tuesday": [ 8, 18, 28, 6 ],
+            "wednesday": [ 7, 17, 27, 5 ],
+            "thursday": [ 6, 16, 26, 4 ],
+            "friday": [ 12, 22, 2, 9 ],
+            "saturday": [ 11, 21, 1, 9 ],
+            "sunday": [ 10, 20, 30, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 84,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/buckley.jpg',
+          title: 'Buckley',
+          artist: 'Ralston Crawford',
+          year: 'XX cent.',
+          rule: {
+            "monday": [ 11, 21, 1, 9 ],
+            "tuesday": [ 10, 20, 30, 8 ],
+            "wednesday": [ 9, 19, 29, 7 ],
+            "thursday": [ 8, 18, 28, 6 ],
+            "friday": [ 7, 17, 7, 5 ],
+            "saturday": [ 13, 23, 3, 10 ],
+            "sunday": [ 12, 22, 2, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 85,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/st-paul-s-and-cogs-1904.jpg',
+          title: 'St. Paul\'s and Cogs',
+          artist: 'Alvin Langdon Coburn',
+          year: '1904',
+          rule: {
+            "monday": [ 12, 22, 2, 10 ],
+            "tuesday": [ 11, 21, 1, 9 ],
+            "wednesday": [ 10, 20, 30, 8 ],
+            "thursday": [ 9, 19, 29, 7 ],
+            "friday": [ 8, 18, 28, 6 ],
+            "saturday": [ 7, 17, 7, 5 ],
+            "sunday": [ 13, 23, 3, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
