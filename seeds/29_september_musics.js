@@ -490,6 +490,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 28,
+          user_id: 1,
+          theme: 'math rock/progressive rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2796246848/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://beholdtheelder.bandcamp.com/album/reflections-of-a-floating-world',
+          a_string: 'Reflections of a Floating World by Elder',
+          rule: {
+            "monday": [ 5, 25, 3, 27 ],
+            "tuesday": [ 9, 29, 7, 1 ],
+            "wednesday": [ 8, 28, 6, 30 ],
+            "thursday": [ 7, 27, 5, 29 ],
+            "saturday": [ 6, 26, 4, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 29,
+          user_id: 1,
+          theme: 'math rock/progressive rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4268244820/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://profoundlorerecords.bandcamp.com/album/heartless',
+          a_string: 'Heartless by PALLBEARER',
+          rule: {
+            "monday": [ 6, 26, 4, 28 ],
+            "tuesday": [ 5, 25, 3, 27 ],
+            "wednesday": [ 9, 29, 7, 1 ],
+            "thursday": [ 8, 28, 6, 30 ],
+            "saturday": [ 7, 27, 5, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 30,
+          user_id: 1,
+          theme: 'math rock/progressive rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1016358289/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://exeyeband.bandcamp.com/album/ex-eye',
+          a_string: 'Ex Eye by Ex Eye',
+          rule: {
+            "monday": [ 7, 27, 5, 29 ],
+            "tuesday": [ 6, 26, 4, 28 ],
+            "wednesday": [ 5, 25, 3, 27 ],
+            "thursday": [ 9, 29, 7, 1 ],
+            "saturday": [ 8, 28, 6, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
