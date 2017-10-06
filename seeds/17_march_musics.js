@@ -1138,6 +1138,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 64,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3555060177/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://yullippe.bandcamp.com/album/lys',
+          a_string: 'Lys by Yullippe',
+          rule: {
+            "monday": [ 11, 17, 23, 31 ],
+            "tuesday": [ 10, 16, 22, 30 ],
+            "wednesday": [ 14, 20, 26, 3 ],
+            "thursday": [ 13, 19, 25, 2 ],
+            "saturday": [ 12, 18, 24, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 65,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=37961648/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://mapledeathrecords.bandcamp.com/album/contravveleno',
+          a_string: 'Contravveleno by Havah',
+          rule: {
+            "monday": [ 12, 18, 24, 2 ],
+            "tuesday": [ 11, 17, 23, 31 ],
+            "wednesday": [ 10, 16, 22, 30 ],
+            "thursday": [ 14, 20, 26, 3 ],
+            "saturday": [ 13, 19, 25, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 66,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3641669032/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://chaptermusic.bandcamp.com/album/second-of-spring',
+          a_string: 'Second Of Spring by Beaches',
+          rule: {
+            "monday": [ 13, 19, 25, 2 ],
+            "tuesday": [ 12, 18, 24, 2 ],
+            "wednesday": [ 11, 17, 23, 31 ],
+            "thursday": [ 10, 16, 22, 30 ],
+            "saturday": [ 14, 20, 26, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
