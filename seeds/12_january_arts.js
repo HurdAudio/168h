@@ -2604,6 +2604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 131,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/grand-musicien-1920.jpg',
+          title: 'Grand musicien',
+          artist: 'Georges Ribemont-Dessaignes',
+          year: '1920',
+          rule: {
+            "monday": [ 1, 3, 7, 10 ],
+            "tuesday": [ 3, 5, 6, 9 ],
+            "wednesday": [ 19, 20, 31, 23 ],
+            "thursday": [ 22, 24, 16, 5 ],
+            "friday": [ 24, 25, 17, 20 ],
+            "saturday": [ 27, 28, 19, 23 ],
+            "sunday": [ 30, 1, 2, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 132,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/composition-1937.jpg',
+          title: 'Composition',
+          artist: 'Sophie Taeuber-Arp',
+          year: '1937',
+          rule: {
+            "monday": [ 30, 1, 2, 4 ],
+            "tuesday": [ 1, 3, 7, 10 ],
+            "wednesday": [ 3, 5, 6, 9 ],
+            "thursday": [ 19, 20, 31, 23 ],
+            "friday": [ 22, 24, 16, 5 ],
+            "saturday": [ 24, 25, 17, 20 ],
+            "sunday": [ 27, 28, 19, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 133,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/legendary-landscape-azul-y-naranja-1964.jpg',
+          title: 'Legendary Landscape (Azul y Naranja)',
+          artist: 'Gunther Gerzso',
+          year: '1964',
+          rule: {
+            "monday": [ 28, 29, 20, 24 ],
+            "tuesday": [ 31, 2, 3, 5 ],
+            "wednesday": [ 2, 4, 8, 11 ],
+            "thursday": [ 4, 6, 7, 10 ],
+            "friday": [ 20, 21, 1, 24 ],
+            "saturday": [ 23, 25, 17, 6 ],
+            "sunday": [ 25, 26, 18, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 134,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/c-136-1965.jpg',
+          title: 'C 136',
+          artist: 'Tadasky',
+          year: '1965',
+          rule: {
+            "monday": [ 25, 26, 18, 21 ],
+            "tuesday": [ 28, 29, 20, 24 ],
+            "wednesday": [ 31, 2, 3, 5 ],
+            "thursday": [ 2, 4, 8, 11 ],
+            "friday": [ 4, 6, 7, 10 ],
+            "saturday": [ 20, 21, 1, 24 ],
+            "sunday": [ 23, 25, 17, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 135,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/en-courbes-violontes-1947.jpg',
+          title: 'En Courbes Violontes',
+          artist: 'Marcelle Cahn',
+          year: '1947',
+          rule: {
+            "monday": [ 23, 25, 17, 6 ],
+            "tuesday": [ 25, 26, 18, 21 ],
+            "wednesday": [ 28, 29, 20, 24 ],
+            "thursday": [ 31, 2, 3, 5 ],
+            "friday": [ 2, 4, 8, 11 ],
+            "saturday": [ 4, 6, 7, 10 ],
+            "sunday": [ 20, 21, 1, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
