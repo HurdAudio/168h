@@ -1804,6 +1804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 91,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/carpenter-1911.jpg',
+          title: 'Carpenter',
+          artist: 'Kazimir Malevich',
+          year: '1911',
+          rule: {
+            "monday": [ 10, 20, 30, 9 ],
+            "tuesday": [ 7, 18, 28, 17 ],
+            "wednesday": [ 6, 16, 26, 5 ],
+            "thursday": [ 4, 14, 24, 3 ],
+            "friday": [ 2, 12, 22, 1 ],
+            "saturday": [ 14, 24, 3, 13 ],
+            "sunday": [ 12, 22, 1, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 92,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/gardener-1911.jpg',
+          title: 'Gardener',
+          artist: 'Kazimir Malevich',
+          year: '1911',
+          rule: {
+            "monday": [ 12, 22, 1, 11 ],
+            "tuesday": [ 10, 20, 30, 9 ],
+            "wednesday": [ 7, 18, 28, 17 ],
+            "thursday": [ 6, 16, 26, 5 ],
+            "friday": [ 4, 14, 24, 3 ],
+            "saturday": [ 2, 12, 22, 1 ],
+            "sunday": [ 14, 24, 3, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 93,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/plowman-1911.jpg',
+          title: 'Plowman',
+          artist: 'Kazimir Malevich',
+          year: '1911',
+          rule: {
+            "monday": [ 14, 24, 3, 13 ],
+            "tuesday": [ 12, 22, 1, 11 ],
+            "wednesday": [ 10, 20, 30, 9 ],
+            "thursday": [ 7, 18, 28, 17 ],
+            "friday": [ 6, 16, 26, 5 ],
+            "saturday": [ 4, 14, 24, 3 ],
+            "sunday": [ 2, 12, 22, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 94,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/reaping-1911.jpg',
+          title: 'Reaping',
+          artist: 'Kazimir Malevich',
+          year: '1911',
+          rule: {
+            "monday": [ 2, 12, 22, 1 ],
+            "tuesday": [ 14, 24, 3, 13 ],
+            "wednesday": [ 12, 22, 1, 11 ],
+            "thursday": [ 10, 20, 30, 9 ],
+            "friday": [ 7, 18, 28, 17 ],
+            "saturday": [ 6, 16, 26, 5 ],
+            "sunday": [ 4, 14, 24, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 95,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/two-and-a-pushcart-1911.jpg',
+          title: 'Two and a pushcart',
+          artist: 'Kazimir Malevich',
+          year: '1911',
+          rule: {
+            "monday": [ 4, 14, 24, 3 ],
+            "tuesday": [ 2, 12, 22, 1 ],
+            "wednesday": [ 14, 24, 3, 13 ],
+            "thursday": [ 12, 22, 1, 11 ],
+            "friday": [ 10, 20, 30, 9 ],
+            "saturday": [ 7, 18, 28, 17 ],
+            "sunday": [ 6, 16, 26, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
