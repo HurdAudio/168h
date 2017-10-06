@@ -1404,6 +1404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 71,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/liberation-1944.jpg',
+          title: 'Liberation',
+          artist: 'Jules Lefranc',
+          year: '1944',
+          rule: {
+            "monday": [ 12, 23, 3, 14 ],
+            "tuesday": [ 11, 21, 2, 13 ],
+            "wednesday": [ 10, 21, 1, 12 ],
+            "thursday": [ 9, 20, 30, 11 ],
+            "friday": [ 8, 19, 30, 10 ],
+            "saturday": [ 7, 18, 29, 9 ],
+            "sunday": [ 13, 24, 4, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 72,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/abstract-composition.jpg',
+          title: 'Abstract Composition',
+          artist: 'Jean Arp',
+          year: '1915',
+          rule: {
+            "monday": [ 13, 24, 4, 15 ],
+            "tuesday": [ 12, 23, 3, 14 ],
+            "wednesday": [ 11, 21, 2, 13 ],
+            "thursday": [ 10, 21, 1, 12 ],
+            "friday": [ 9, 20, 30, 11 ],
+            "saturday": [ 8, 19, 30, 10 ],
+            "sunday": [ 7, 18, 29, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 73,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/chatting-1928.jpg',
+          title: 'Chatting',
+          artist: 'Lajos Tihanyi',
+          year: '1928',
+          rule: {
+            "monday": [ 7, 18, 29, 9 ],
+            "tuesday": [ 13, 24, 4, 15 ],
+            "wednesday": [ 12, 23, 3, 14 ],
+            "thursday": [ 11, 21, 2, 13 ],
+            "friday": [ 10, 21, 1, 12 ],
+            "saturday": [ 9, 20, 30, 11 ],
+            "sunday": [ 8, 19, 30, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 74,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/eiffel-tower-1.jpg',
+          title: 'Eiffel Tower',
+          artist: 'Robert Delaunay',
+          year: '1911',
+          rule: {
+            "monday": [ 8, 19, 30, 10 ],
+            "tuesday": [ 7, 18, 29, 9 ],
+            "wednesday": [ 13, 24, 4, 15 ],
+            "thursday": [ 12, 23, 3, 14 ],
+            "friday": [ 11, 21, 2, 13 ],
+            "saturday": [ 10, 21, 1, 12 ],
+            "sunday": [ 9, 20, 30, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 75,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/man-with-pipe-1919.jpg',
+          title: 'Man with Pipe',
+          artist: 'Henri Laurens',
+          year: '1919',
+          rule: {
+            "monday": [ 9, 20, 30, 11 ],
+            "tuesday": [ 8, 19, 30, 10 ],
+            "wednesday": [ 7, 18, 29, 9 ],
+            "thursday": [ 13, 24, 4, 15 ],
+            "friday": [ 12, 23, 3, 14 ],
+            "saturday": [ 11, 21, 2, 13 ],
+            "sunday": [ 10, 21, 1, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
