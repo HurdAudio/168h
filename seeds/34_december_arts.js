@@ -404,6 +404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 21,
+          user_id: 1,
+          theme: 'pulp',
+          img_path: './img/december/28-08-16,War.jpg',
+          title: 'War Stories',
+          artist: 'Rudolph Belarski',
+          year: '1928',
+          rule: {
+            "monday": [ 5, 18, 26, 1 ],
+            "tuesday": [ 4, 17, 25, 31 ],
+            "wednesday": [ 3, 16, 24, 30 ],
+            "thursday": [ 2, 15, 23, 29 ],
+            "friday": [ 1, 14, 22, 28 ],
+            "saturday": [ 7, 20, 28, 3 ],
+            "sunday": [ 6, 19, 27, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 22,
+          user_id: 1,
+          theme: 'pulp',
+          img_path: './img/december/52-00,Illus2.jpg',
+          title: 'illustration',
+          artist: 'Jim Bentley',
+          year: '1952',
+          rule: {
+            "monday": [ 6, 19, 27, 2 ],
+            "tuesday": [5, 18, 26, 1 ],
+            "wednesday": [ 4, 17, 25, 31 ],
+            "thursday": [ 3, 16, 24, 30 ],
+            "friday": [ 2, 15, 23, 29 ],
+            "saturday": [ 1, 14, 22, 28 ],
+            "sunday": [ 7, 20, 28, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 23,
+          user_id: 1,
+          theme: 'pulp',
+          img_path: './img/december/34-00,Dutton.jpg',
+          title: 'Dutton Books',
+          artist: 'David Berger',
+          year: '1934',
+          rule: {
+            "monday": [ 7, 20, 28, 3 ],
+            "tuesday": [ 6, 19, 27, 2 ],
+            "wednesday": [ 5, 18, 26, 1 ],
+            "thursday": [ 4, 17, 25, 31 ],
+            "friday": [ 3, 16, 24, 30 ],
+            "saturday": [ 2, 15, 23, 29 ],
+            "sunday": [ 1, 14, 22, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 24,
+          user_id: 1,
+          theme: 'pulp',
+          img_path: './img/december/35-10,Bedtime.jpg',
+          title: 'Bedtime Stories',
+          artist: 'Earle Bergey ',
+          year: '1935',
+          rule: {
+            "monday": [ 1, 14, 22, 28 ],
+            "tuesday": [ 7, 20, 28, 3 ],
+            "wednesday": [ 6, 19, 27, 2 ],
+            "thursday": [ 5, 18, 26, 1 ],
+            "friday": [ 4, 17, 25, 31 ],
+            "saturday": [ 3, 16, 24, 30 ],
+            "sunday": [ 2, 15, 23, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 25,
+          user_id: 1,
+          theme: 'pulp',
+          img_path: './img/december/36-08,ThrillWndr.jpg',
+          title: 'Thrilling Wonder',
+          artist: 'Jack Binder',
+          year: '1936',
+          rule: {
+            "monday": [ 2, 15, 23, 29 ],
+            "tuesday": [ 1, 14, 22, 28 ],
+            "wednesday": [ 7, 20, 28, 3 ],
+            "thursday": [ 6, 19, 27, 2 ],
+            "friday": [ 5, 18, 26, 1 ],
+            "saturday": [ 4, 17, 25, 31 ],
+            "sunday": [ 3, 16, 24, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
