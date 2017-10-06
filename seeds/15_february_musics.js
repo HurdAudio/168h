@@ -1246,6 +1246,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 70,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4279583872/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://parisdjs.bandcamp.com/album/africa-is-the-future',
+          a_string: 'Africa Is The Future by Kologbo',
+          rule: {
+            "monday": [ 14, 18, 20, 24 ],
+            "tuesday": [ 16, 20, 22, 24 ],
+            "wednesday": [ 28, 22, 24, 30 ],
+            "thursday": [ 11, 16, 18, 30 ],
+            "saturday": [ 12, 16, 18, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 71,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2874278163/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://muyiwakunnuji-osemako.bandcamp.com/album/mo-juba-o',
+          a_string: 'Mo Juba O by Muyiwa Kunnuji &amp; OSEMAKO',
+          rule: {
+            "monday": [ 12, 16, 18, 22 ],
+            "tuesday": [ 14, 18, 20, 24 ],
+            "wednesday": [ 16, 20, 22, 24 ],
+            "thursday": [ 28, 22, 24, 30 ],
+            "saturday": [ 11, 16, 18, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 72,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1159025980/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://africaseven.bandcamp.com/album/du-mali-1',
+          a_string: 'Du Mali by Sorry Bamba',
+          rule: {
+            "monday": [ 11, 16, 18, 30 ],
+            "tuesday": [ 12, 16, 18, 22 ],
+            "wednesday": [ 14, 18, 20, 24 ],
+            "thursday": [ 16, 20, 22, 24 ],
+            "saturday": [ 28, 22, 24, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
