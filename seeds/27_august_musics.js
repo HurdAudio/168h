@@ -598,6 +598,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 34,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=154027505/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://djll.bandcamp.com/album/from-outhouse-to-icehouse',
+          a_string: 'From Outhouse to Icehouse by Tom Djll/Ross Rabin',
+          rule: {
+            "monday": [ 9, 17, 2, 1 ],
+            "tuesday": [ 8, 16, 1, 31 ],
+            "wednesday": [ 12, 20, 5, 6 ],
+            "thursday": [ 11, 19, 4, 5 ],
+            "saturday": [ 8, 16, 1, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 35,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2131501157/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://timperkis.bandcamp.com/album/kinda-green',
+          a_string: 'Kinda Green by Tim Perkis / Tom Djll',
+          rule: {
+            "monday": [ 9, 17, 2, 1 ],
+            "tuesday": [ 10, 18, 3, 2 ],
+            "wednesday": [ 14, 22, 4, 3 ],
+            "thursday": [ 13, 21, 6, 7 ],
+            "saturday": [ 12, 20, 5, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 36,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2498444657/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://timperkis.bandcamp.com/album/applied-cryptography',
+          a_string: 'Applied Cryptography by Tim Perkis &amp; Scott Walton',
+          rule: {
+            "monday": [ 12, 20, 5, 6 ],
+            "tuesday": [ 9, 17, 2, 1 ],
+            "wednesday": [ 10, 18, 3, 2 ],
+            "thursday": [ 14, 22, 4, 3 ],
+            "saturday": [ 13, 21, 6, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
