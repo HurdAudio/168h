@@ -66,6 +66,8 @@
       vm.gotoWeek = gotoWeek;
       vm.logout = logout;
       vm.photUploader = photUploader;
+      vm.blocktypeEditor = blocktypeEditor;
+      vm.closeBlocktypeEditor = closeBlocktypeEditor;
 
       function photUploader() {
         let photoUploadFormDiv = document.getElementById('photoUploadFormDiv');
@@ -236,6 +238,17 @@
         });
       }
 
+      function blocktypeEditor() {
+        let blocktypeManager = document.getElementById('blocktypeManager');
+        let blocktypeEditDiv = document.getElementById('blocktypeEditDiv');
+        let blocktypeZone = document.getElementById('blocktypeZone');
+
+
+        blocktypeManager.setAttribute("style", "visibility: hidden;");
+        blocktypeEditDiv.setAttribute("style", "display: initial;");
+        blocktypeZone.setAttribute("style", "opacity: 0.4;");
+      }
+
       function profileEditor() {
         let userEditor = document.getElementById('userEditor');
         let userEditorDiv = document.getElementById('userEditorDiv');
@@ -279,6 +292,17 @@
         profileZone.setAttribute("style", "opacity: 0.4;");
 
 
+      }
+
+      function closeBlocktypeEditor() {
+        let blocktypeManager = document.getElementById('blocktypeManager');
+        let blocktypeEditDiv = document.getElementById('blocktypeEditDiv');
+        let blocktypeZone = document.getElementById('blocktypeZone');
+
+
+        blocktypeManager.setAttribute("style", "visibility: visible;");
+        blocktypeEditDiv.setAttribute("style", "display: none;");
+        blocktypeZone.setAttribute("style", "opacity: 1;");
       }
 
       function closeUserEditor() {
@@ -331,6 +355,25 @@
         $state.go('monthview', {id: idString});
       }
 
+      function setUserBlockTypes() {
+        $http.get(`/blocktypesbyuser/${currentUserId}`)
+        .then(userBlocksData=>{
+          let userBlocks = userBlocksData.data;
+
+          vm.userblocktypes = userBlocks.sort((a, b)=>{
+            if (a.type.toLowerCase() < b.type.toLowerCase()) {
+              return -1;
+            } else if (a.type.toLowerCase() > b.type.toLowerCase()) {
+              return 1;
+            } else {
+              return 0;
+            }
+          });
+
+
+        });
+      }
+
       function updateGreetingStrip(user) {
         let weekday = [ 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday' ];
         let months = [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
@@ -370,6 +413,7 @@
               $state.go('landing');
             }
             updateGreetingStrip(userAccount);
+            setUserBlockTypes();
             let userPic = document.getElementById('userPic');
             let profilePhoto = document.createElement('img');
             let photoReference = document.getElementById('photoReference');

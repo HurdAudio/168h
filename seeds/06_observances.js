@@ -3237,7 +3237,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 207,
           user_id: 1,
-          name: 'Martin Odersky (computer scientist), bron 1958',
+          name: 'Martin Odersky (computer scientist), born 1958',
           color: '#5DD9F9',
           picture: './img/maths/martinodersky.jpg',
           day_of: new Date ('1958-09-05T13:44:00.000Z'),
@@ -3760,7 +3760,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 239,
           user_id: 1,
-          name: 'Ron Santo (third baseman), bron 1940',
+          name: 'Ron Santo (third baseman), born 1940',
           color: '#E2E3E5',
           picture: './img/baseball/ronsanto.jpg',
           day_of: new Date ('1940-02-25T13:44:00.000Z'),
@@ -4103,7 +4103,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 261,
           user_id: 1,
-          name: 'Charles Ives (composer), bron 1874',
+          name: 'Charles Ives (composer), born 1874',
           color: '#898989',
           picture: './img/musicians/charlesives.jpg',
           day_of: new Date ('1874-10-20T13:44:00.000Z'),
@@ -5200,7 +5200,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 329,
           user_id: 1,
-          name: 'Joe McPhee (reeds/trumpet), bron 1939',
+          name: 'Joe McPhee (reeds/trumpet), born 1939',
           color: '#E9EBDD',
           picture: './img/musicians/joemcphee.jpg',
           day_of: new Date ('1939-11-03T13:44:00.000Z'),
@@ -7179,7 +7179,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 455,
           user_id: 1,
-          name: 'Joe Kelley (left fielder/first baseman), bron 1871',
+          name: 'Joe Kelley (left fielder/first baseman), born 1871',
           color: '#ACACAC',
           picture: './img/baseball/joekelley.jpg',
           day_of: new Date ('1871-12-09T13:44:00.000Z'),
@@ -8193,7 +8193,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 521,
           user_id: 1,
-          name: 'Pie Traynor (third baseman), born 1989',
+          name: 'Pie Traynor (third baseman), born 1898',
           color: '#696969',
           picture: './img/baseball/pietraynor.jpeg',
           day_of: new Date ('1898-11-11T13:44:00.000Z'),
@@ -8263,7 +8263,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 526,
           user_id: 1,
-          name: 'Arky Vaughan (shortstop/third baseman), bron 1912',
+          name: 'Arky Vaughan (shortstop/third baseman), born 1912',
           color: '#F7F7F7',
           picture: './img/baseball/arkyvaughan.jpg',
           day_of: new Date ('1912-03-09T13:44:00.000Z'),

@@ -209,8 +209,8 @@ exports.seed = function(knex, Promise) {
           id: 11,
           user_id: 1,
           theme: 'french revolution',
-          img_path: './img/july/.jpg',
-          title: 'place-de-la-bastille-2',
+          img_path: './img/july/place-de-la-bastille-2.jpg',
+          title: 'Place de la Bastille',
           artist: 'Edouard Cortes',
           year: 'XIX-XX cent.',
           rule: {
