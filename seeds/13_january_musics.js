@@ -1354,6 +1354,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 76,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2085894503/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://nicomuhly.bandcamp.com/album/drones',
+          a_string: 'Drones by Nico Muhly',
+          rule: {
+            "monday": [ 25, 19, 21, 26 ],
+            "tuesday": [ 21, 15, 17, 5 ],
+            "wednesday": [ 17, 24, 26, 25 ],
+            "thursday": [ 15, 19, 21, 25 ],
+            "saturday": [ 17, 24, 26, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 77,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2667946205/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://valgeir.bandcamp.com/album/architecture-of-loss',
+          a_string: 'Architecture of Loss by Valgeir Sigurðsson',
+          rule: {
+            "monday": [ 18, 25, 27, 26 ],
+            "tuesday": [ 26, 20, 22, 27 ],
+            "wednesday": [ 22, 16, 18, 6 ],
+            "thursday": [ 18, 25, 27, 26 ],
+            "saturday": [ 16, 20, 22, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 78,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2799098735/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://zeitkratzer.bandcamp.com/album/alvin-lucier-old-school',
+          a_string: 'Alvin Lucier [old school] by zeitkratzer',
+          rule: {
+            "monday": [ 16, 20, 22, 26 ],
+            "tuesday": [ 18, 25, 27, 26 ],
+            "wednesday": [ 26, 20, 22, 27 ],
+            "thursday": [ 22, 16, 18, 6 ],
+            "saturday": [ 18, 25, 27, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
