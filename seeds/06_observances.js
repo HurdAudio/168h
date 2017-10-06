@@ -8315,6 +8315,34 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 530,
+          user_id: 1,
+          name: 'Stefan Wolpe (composer), born 1902',
+          color: '#060606',
+          picture: './img/musicians/stefanwolpe.jpg',
+          day_of: new Date ('1902-08-25T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 531,
+          user_id: 1,
+          name: 'Cy Young pitches a perfect game in 1905 for the Boston Red Sox vs. Detroit Tigers',
+          color: '#3C3C3C',
+          picture: './img/baseball/cyyoungnono.jpg',
+          day_of: new Date ('1904-05-05T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {

@@ -135,7 +135,6 @@
       <div id="userProfilePhotoBar">
         <a href="" class="btn" id="userProfilePhotoDone" ng-click="$ctrl.userPhotoEditDone()">done</a>
         <h1>User Profile Photo</h1>
-
       </div>
       <form id="userProfilePhotoForm" class="pure-form pure-form-stacked">
         <fieldset>
@@ -148,15 +147,46 @@
           </div>
           <p id="or">or</p>
           <a href="" class="btn" id="uploadPhoto" ng-click="$ctrl.photUploader()">upload</a>
-
         </fieldset>
         <div id="userProfilePhotoButtons">
-
-
         </div>
+      </form>
+    </div>
+    <div id="userExistingBlockEditorDiv">
+      <div id="userExistingBlocksEditorBar">
+        <a href="" class="btn" id="userExistingBlocksEditorDone" ng-click="$ctrl.userExistingBlocksEditorDone()">done</a>
+        <h1 id="existingBlockEditorTitle"></h1>
+      </div>
+      <form id="existingBlocksEditorForm" class="pure-form pure-form-stacked">
+        <fieldset>
+          <p>Blocktype Name:</p>
+          <input type="text" id="existingBlocktypeEditorType" class="pure-input-1">
+          <p>Color:</p>
+          <input type="color" id="existingBlocktypeEditorColor" class="pure-input-1">
+          <div id="existingBlocksSubtypesAndSubSubTypes">
+            <p>Subtypes:</p>
+            <input type="checkbox" id="existingBlocktypeCheck" class="pure-input-1" checked><br>
+            <div id="existingBlockSubs">
+              <div id="existingSubFields">
+                <button id="existingBlockAddNewSubtype">add new</button><br>
+                <button class="removal">DELETE</button>
+                <input type="text" class="pure-input-1">
 
+              </div>
+              <p>Additional Subtypes:</p>
+              <input type="checkbox" id="existingBlockSubSubtypes" class="pure-input-1" unchecked>
+              <div id="existingBlockSubSubs">
+                <div id="existingSubSubFields">
+                  <button id="existingBlockAddNewSubSubtype">add new</button><br>
+                  <button class="removal">DELETE</button>
+                  <input type="text" class="pure-input-1">
 
+                </div>
+              </div>
 
+            </div>
+          </div>
+        </fieldset>
 
       </form>
 

@@ -50,10 +50,13 @@ body{
 
 #userProfileClock {
   margin: 0;
-  padding-left: -5em;
-  padding-top: 1.1em;
+  padding-left: 2em;
+  padding-top: 0.1em;
   font-family: 'Space Mono', monospace;
   font-size: 24px;
+  -webkit-transform: skew(-40deg, 0deg) rotateZ(-35deg);
+  transform: skew(-40deg, 0deg) rotateZ(-35deg);
+  text-shadow: -1px 1px 1px #19262E, -2px 2px 2px #1E2A33;
 }
 
 #clockDayview {
@@ -2997,6 +3000,33 @@ footer img {
   margin-top: 0.2em;
 }
 
+#userExistingBlocksEditorBar {
+  font-family: 'Asul', serif;
+  font-size: 18px
+  background: #22ac44;
+  background-color: -webkit-linear-gradient(-135deg, #22ac44, #abdada);
+  background: -o-linear-gradient(-135deg, #22ac44, #abdada);
+  background: -moz-linear-gradient(-135deg, #22ac44, #abdada);
+  background: linear-gradient(-135deg, #22ac44, #abdada);
+  border-radius: 5px;
+  margin: 0;
+  padding:0;
+  height: 3.8em;
+  top: 0%;
+  opacity: 1;
+}
+
+#userExistingBlocksEditorBar h1 {
+  margin-left: 2em;
+  padding-top: 0.4em;
+}
+
+#userExistingBlocksEditorBar a {
+  float:right;
+  margin-right: 1.1em;
+  margin-top: 0.2em;
+}
+
 #userEditorForm {
   font-family: 'Alike Angular', serif;
   font-size: 24px;
@@ -3043,6 +3073,50 @@ footer img {
   background: linear-gradient(135deg, #22ac44, #abdada);
   border-radius: 5px;
   opacity: 1;
+}
+
+#existingBlocksEditorForm {
+  font-family: 'Alike Angular', serif;
+  font-size: 24px;
+  background: #22ac44;
+  background-color: -webkit-linear-gradient(135deg, #22ac44, #abdada);
+  background: -o-linear-gradient(135deg, #22ac44, #abdada);
+  background: -moz-linear-gradient(135deg, #22ac44, #abdada);
+  background: linear-gradient(135deg, #22ac44, #abdada);
+  border-radius: 5px;
+  opacity: 1;
+}
+
+#existingBlocksEditorForm p {
+  margin-left: 2em;
+}
+
+#existingBlocksEditorForm input[type=text] {
+  margin-left: 3em;
+  margin-right: 0;
+}
+
+#existingBlocksEditorForm input[type=checkbox] {
+  -ms-transform: scale(3); /* IE */
+  -moz-transform: scale(3); /* FF */
+  -webkit-transform: scale(3); /* Safari and Chrome */
+  -o-transform: scale(3); /* Opera */
+  margin-bottom: 0.5em;
+}
+
+#existingBlocktypeEditorColor {
+  margin-left: 5em;
+  height: 2em;
+  width: 3em;
+}
+
+#existingBlocksEditorForm button {
+  margin-left: 2em;
+}
+
+.removal {
+  float: left;
+  margin: 1em 0 0.2em 0;
 }
 
 #weekSubsEntry {
@@ -3478,6 +3552,10 @@ footer img {
 #beSocial p {
   font-size: 24px;
   margin: 5vmin;
+}
+
+#userExistingBlockEditorDiv {
+  display: none;
 }
 
 /*.day {

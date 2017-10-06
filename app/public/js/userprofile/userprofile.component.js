@@ -68,6 +68,37 @@
       vm.photUploader = photUploader;
       vm.blocktypeEditor = blocktypeEditor;
       vm.closeBlocktypeEditor = closeBlocktypeEditor;
+      vm.editBlock = editBlock;
+      vm.userExistingBlocksEditorDone = userExistingBlocksEditorDone;
+
+      function userExistingBlocksEditorDone() {
+        let userExistingBlockEditorDiv = document.getElementById('userExistingBlockEditorDiv');
+        let blockEditDone = document.getElementById('blockEditDone');
+
+        userExistingBlockEditorDiv.setAttribute("style", "display: none;");
+        blockEditDone.setAttribute("style", "visibility: visible;");
+      }
+
+      function editBlock(blockId) {
+        let userExistingBlockEditorDiv = document.getElementById('userExistingBlockEditorDiv');
+        let blockEditDone = document.getElementById('blockEditDone');
+        let existingBlockEditorTitle = document.getElementById('existingBlockEditorTitle');
+        let userExistingBlocksEditorBar = document.getElementById('userExistingBlocksEditorBar');
+        let existingBlocksEditorForm = document.getElementById('existingBlocksEditorForm');
+
+
+
+        $http.get(`/blocktypes/${blockId}`)
+        .then(blockData=>{
+          let block = blockData.data;
+          existingBlockEditorTitle.innerHTML = block.type;
+          userExistingBlocksEditorBar.setAttribute("style", "background: " + block.color + "; background-color: -webkit-linear-gradient(-135deg, " + block.color + ", #abdada); background: -o-linear-gradient(-135deg, " + block.color + ", #abdada); background: -moz-linear-gradient(-135deg, " + block.color + ", #abdada); background: linear-gradient(-135deg, " + block.color + ", #abdada);");
+          existingBlocksEditorForm.setAttribute("style", "background: " + block.color + "; background-color: -webkit-linear-gradient(135deg, " + block.color + ", #abdada); background: -o-linear-gradient(135deg, " + block.color + ", #abdada); background: -moz-linear-gradient(135deg, " + block.color + ", #abdada); background: linear-gradient(135deg, " + block.color + ", #abdada);");
+        });
+
+        userExistingBlockEditorDiv.setAttribute("style", "display: initial;");
+        blockEditDone.setAttribute("style", "visibility: hidden;");
+      }
 
       function photUploader() {
         let photoUploadFormDiv = document.getElementById('photoUploadFormDiv');
