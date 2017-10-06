@@ -2004,6 +2004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 101,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/poi_gallery_image-image-f1c92a25-5f3c-4959-bf56-37cf3b350a95.jpg',
+          title: 'Kauffman Stadium',
+          artist: '?',
+          year: '2015',
+          rule: {
+            "monday": [ 9, 14, 20, 26 ],
+            "tuesday": [ 14, 20, 25, 2 ],
+            "wednesday": [ 28, 18, 24, 1 ],
+            "thursday": [ 13, 18, 24, 30 ],
+            "friday": [ 12, 16, 1, 29 ],
+            "saturday": [ 11, 16, 21, 28 ],
+            "sunday": [ 10, 15, 21, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 102,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/stealth-bomber-over-kauffman-stadium-raye-pond.jpg',
+          title: 'Stealth Bomber Over Kauffman Stadium',
+          artist: 'Raye Pond',
+          year: '2013',
+          rule: {
+            "monday": [ 10, 15, 21, 27 ],
+            "tuesday": [ 9, 14, 20, 26 ],
+            "wednesday": [ 14, 20, 25, 2 ],
+            "thursday": [ 28, 18, 24, 1 ],
+            "friday": [ 13, 18, 24, 30 ],
+            "saturday": [ 12, 16, 1, 29 ],
+            "sunday": [ 11, 16, 21, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 103,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/Royals-Mural-Complete-400x300.jpg',
+          title: 'KC Royals World Series Mural',
+          artist: 'William Rose',
+          year: '2015',
+          rule: {
+            "monday": [ 11, 16, 21, 28 ],
+            "tuesday": [ 10, 15, 21, 27 ],
+            "wednesday": [ 9, 14, 20, 26 ],
+            "thursday": [ 14, 20, 25, 2 ],
+            "friday": [ 28, 18, 24, 1 ],
+            "saturday": [ 13, 18, 24, 30 ],
+            "sunday": [ 12, 16, 1, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 104,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/eric-hosmer-of-the-kansas-city-royals-dave-olsen.jpg',
+          title: 'Eric Hosmer Of The Kansas City Royals',
+          artist: 'Dave Olsen',
+          year: '2015',
+          rule: {
+            "monday": [ 12, 16, 1, 29 ],
+            "tuesday": [ 11, 16, 21, 28 ],
+            "wednesday": [ 10, 15, 21, 27 ],
+            "thursday": [ 9, 14, 20, 26 ],
+            "friday": [ 14, 20, 25, 2 ],
+            "saturday": [ 28, 18, 24, 1 ],
+            "sunday": [ 13, 18, 24, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 105,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/e23c9f851f1c347a0f899d9235ef262d.jpg',
+          title: 'Kansas City Municipal Stadium In The 1950\'s',
+          artist: 'Dwight Goss',
+          year: 'XX - XXI cent.',
+          rule: {
+            "monday": [ 14, 19, 25, 1 ],
+            "tuesday": [ 13, 17, 2, 30 ],
+            "wednesday": [ 12, 17, 22, 29 ],
+            "thursday": [ 11, 16, 22, 28 ],
+            "friday": [ 10, 15, 21, 27 ],
+            "saturday": [ 15, 21, 26, 3 ],
+            "sunday": [ 29, 19, 25, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
