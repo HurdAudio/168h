@@ -378,7 +378,61 @@ exports.seed = function(knex, Promise) {
             "tuesday": [ 10, 20, 30, 2 ],
             "wednesday": [ 9, 19, 29, 1 ],
             "thursday": [ 8, 18, 28, 31 ],
-            "saturday": [ 11, 22, 1, 4 ]
+            "saturday": [ 12, 22, 1, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 22,
+          user_id: 1,
+          theme: 'hardcore punk, metal and nurse with wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1209444808/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://relapsealumni.bandcamp.com/album/a-deleted-symphony-for-the-beaten-down',
+          a_string: 'A Deleted Symphony for the Beaten Down by Soilent Green',
+          rule: {
+            "monday": [ 12, 22, 1, 4 ],
+            "tuesday": [ 11, 21, 31, 3 ],
+            "wednesday": [ 10, 20, 30, 2 ],
+            "thursday": [ 9, 19, 29, 1 ],
+            "saturday": [ 8, 18, 28, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 23,
+          user_id: 1,
+          theme: 'hardcore punk, metal and nurse with wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4008720429/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cloakroom.bandcamp.com/album/time-well',
+          a_string: 'Time Well by Cloakroom',
+          rule: {
+            "monday": [ 8, 18, 28, 31 ],
+            "tuesday": [ 12, 22, 1, 4 ],
+            "wednesday": [ 11, 21, 31, 3 ],
+            "thursday": [ 10, 20, 30, 2 ],
+            "saturday": [ 9, 19, 29, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 24,
+          user_id: 1,
+          theme: 'hardcore punk, metal and nurse with wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=795143880/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://nothing.bandcamp.com/album/tired-of-tomorrow-deluxe-version',
+          a_string: 'Tired of Tomorrow (Deluxe Version) by Nothing',
+          rule: {
+            "monday": [ 9, 19, 29, 1 ],
+            "tuesday": [ 8, 18, 28, 31 ],
+            "wednesday": [ 12, 22, 1, 4 ],
+            "thursday": [ 11, 21, 31, 3 ],
+            "saturday": [ 10, 20, 30, 2 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
