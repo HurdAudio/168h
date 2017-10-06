@@ -2404,6 +2404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 121,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/todd-gray-wumbus-l-CR.jpg',
+          title: 'Wumbus',
+          artist: 'Todd Gray',
+          year: '2015',
+          rule: {
+            "monday": [ 17, 25, 4, 12 ],
+            "tuesday": [ 19, 27, 6, 14 ],
+            "wednesday": [ 24, 29, 6, 16 ],
+            "thursday": [ 23, 2, 10, 18 ],
+            "friday": [ 25, 6, 12, 20 ],
+            "saturday": [ 27, 6, 14, 24 ],
+            "sunday": [ 29, 8, 4, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 122,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/What She Said Study (Yellow).jpg',
+          title: 'What She Said (Yellow)',
+          artist: 'Leamon Green',
+          year: '2011',
+          rule: {
+            "monday": [ 29, 8, 4, 23 ],
+            "tuesday": [ 17, 25, 4, 12 ],
+            "wednesday": [ 19, 27, 6, 14 ],
+            "thursday": [ 24, 29, 6, 16 ],
+            "friday": [ 23, 2, 10, 18 ],
+            "saturday": [ 25, 6, 12, 20 ],
+            "sunday": [ 27, 6, 14, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 123,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/ee1468c39055d6eb8f2017ee1b47151d.jpg',
+          title: 'Partially Buried in Three Parts',
+          artist: 'Renée Green',
+          year: '1996 - 1997',
+          rule: {
+            "monday": [ 27, 6, 14, 24 ],
+            "tuesday": [ 29, 8, 4, 23 ],
+            "wednesday": [ 17, 25, 4, 12 ],
+            "thursday": [ 19, 27, 6, 14 ],
+            "friday": [ 24, 29, 6, 16 ],
+            "saturday": [ 23, 2, 10, 18 ],
+            "sunday": [ 25, 6, 12, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 124,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/mario-4.jpg',
+          title: 'The Ant No. 4',
+          artist: 'Mario Gully',
+          year: '2004',
+          rule: {
+            "monday": [ 25, 6, 12, 20 ],
+            "tuesday": [ 27, 6, 14, 24 ],
+            "wednesday": [ 29, 8, 4, 23 ],
+            "thursday": [ 17, 25, 4, 12 ],
+            "friday": [ 19, 27, 6, 14 ],
+            "saturday": [ 24, 29, 6, 16 ],
+            "sunday": [ 23, 2, 10, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 125,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/detroit_vacuum_streetart_374475_o.jpg',
+          title: 'The Heidelberg Project',
+          artist: 'Tyree Guyton',
+          year: '2004',
+          rule: {
+            "monday": [ 23, 2, 10, 18 ],
+            "tuesday": [ 25, 6, 12, 20 ],
+            "wednesday": [ 27, 6, 14, 24 ],
+            "thursday": [ 29, 8, 4, 23 ],
+            "friday": [ 17, 25, 4, 12 ],
+            "saturday": [ 19, 27, 6, 14 ],
+            "sunday": [ 24, 29, 6, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
