@@ -8343,6 +8343,34 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 532,
+          user_id: 1,
+          name: 'Cy Young (pitcher), born 1867',
+          color: '#0C0C0C',
+          picture: './img/baseball/cyyoung.jpg',
+          day_of: new Date ('1867-03-29T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 533,
+          user_id: 1,
+          name: 'Jordan Zimmermann pitches a no-hitter for the Washington Nationals vs. Miami Marlins',
+          color: '#A90109',
+          picture: './img/baseball/jordanzimmermannnono.jpg',
+          day_of: new Date ('2014-09-28T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
