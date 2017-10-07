@@ -3117,6 +3117,11 @@ footer img {
 .removal {
   float: left;
   margin: 1em 0 0.2em 0;
+  background: #19262E;
+  background-color: -webkit-linear-gradient(135deg, #19262E, #abdada);
+  background: -o-linear-gradient(135deg, #19262E, #abdada);
+  background: -moz-linear-gradient(135deg, #19262E, #abdada);
+  background: linear-gradient(135deg, #19262E, #abdada); 
 }
 
 #weekSubsEntry {

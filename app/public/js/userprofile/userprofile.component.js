@@ -79,12 +79,207 @@
         blockEditDone.setAttribute("style", "visibility: visible;");
       }
 
+      function subsubValuesEventListeners(deleteButton, textEntry, block, index) {
+
+        deleteButton.addEventListener('click', ()=>{
+          let subObj = {
+            keys: block.keys
+          };
+          if (block.keys.keys.length !== index) {
+            subObj.keys.keys.splice(index, 1);
+            $http.patch(`/blocktypes/${block.id}`, subObj)
+            .then(patchedData=>{
+              let patched = patchedData.data;
+              setSubSubtypes(deleteButton.parentNode, patched);
+            });
+          } else {
+            textEntry.parentNode.removeChild(textEntry);
+            deleteButton.parentNode.removeChild(deleteButton);
+          }
+        });
+
+        textEntry.addEventListener('focusout', ()=>{
+          if (textEntry.value !== '') {
+            let subObj = {
+              keys: block.keys
+            };
+            subObj.keys.keys[index] = textEntry.value;
+            $http.patch(`/blocktypes/${block.id}`, subObj)
+            .then(patchedData=>{
+              let patched = patchedData.data;
+              console.log(patched);
+            });
+          }
+        });
+      }
+
+      function valuesEventListeners(deleteButton, textEntry, block, index) {
+
+        deleteButton.addEventListener('click', ()=>{
+          let subObj = {
+            keys: block.keys
+          };
+          if (subObj.keys[subObj.keys.keys[0] + 'Values'].length !== index) {
+            subObj.keys[subObj.keys.keys[0] + 'Values'].splice(index, 1);
+            $http.patch(`/blocktypes/${block.id}`, subObj)
+            .then(patchedData=>{
+              let patched = patchedData.data;
+              setSubtypes(deleteButton.parentNode, patched);
+
+            });
+          } else {
+            textEntry.parentNode.removeChild(textEntry);
+            deleteButton.parentNode.removeChild(deleteButton);
+          }
+        });
+
+        textEntry.addEventListener('focusout', ()=>{
+          if (textEntry.value !== '') {
+            let subObj = {
+              keys: block.keys
+            };
+            subObj.keys[subObj.keys.keys[0] + 'Values'][index] = textEntry.value;
+            $http.patch(`/blocktypes/${block.id}`, subObj)
+            .then(patchedData=>{
+              let patched = patchedData.data;
+              console.log(patched);
+            });
+          }
+        });
+      }
+
+      function setSubSubtypes(element, block) {
+        let delBut;
+        let valueText;
+
+        while (element.children[0]) {
+          element.removeChild(element.children[0]);
+        }
+        if (block.keys.keys.length > 1) {
+          for (let i = 1; i < block.keys.keys.length; i++) {
+            delBut = document.createElement('button');
+            element.appendChild(delBut);
+            delBut.className = 'removal';
+            delBut.innerHTML = 'DELETE';
+            valueText = document.createElement('input');
+            element.appendChild(valueText);
+            valueText.type = 'text';
+            valueText.className = "pure-input-1";
+            valueText.value = block.keys.keys[i];
+            subsubValuesEventListeners(delBut, valueText, block, i);
+          }
+        }
+        delBut = document.createElement('button');
+        element.appendChild(delBut);
+        delBut.className = 'removal';
+        delBut.innerHTML = 'DELETE';
+        valueText = document.createElement('input');
+        element.appendChild(valueText);
+        valueText.type = 'text';
+        valueText.className = "pure-input-1";
+        subsubValuesEventListeners(delBut, valueText, block, block.keys.keys.length);
+      }
+
+      function setSubtypes(element, block) {
+        let delBut;
+        let valueText;
+
+        while (element.children[0]) {
+          element.removeChild(element.children[0]);
+        }
+        if (block.keys[block.keys.keys[0] + 'Values'].length > 0) {
+          for (let i = 0; i < block.keys[block.keys.keys[0] + 'Values'].length; i++) {
+            delBut = document.createElement('button');
+            element.appendChild(delBut);
+            delBut.className = 'removal';
+            delBut.innerHTML = 'DELETE';
+            valueText = document.createElement('input');
+            element.appendChild(valueText);
+            valueText.type = "text";
+            valueText.className = "pure-input-1";
+            valueText.value = block.keys[block.keys.keys[0] + 'Values'][i];
+            valuesEventListeners(delBut, valueText, block, i);
+          }
+        }
+        delBut = document.createElement('button');
+        element.appendChild(delBut);
+        delBut.className = 'removal';
+        delBut.innerHTML = 'DELETE';
+        valueText = document.createElement('input');
+        element.appendChild(valueText);
+        valueText.type = "text";
+        valueText.className = "pure-input-1";
+        valuesEventListeners(delBut, valueText, block, block.keys[block.keys.keys[0] + 'Values'].length);
+      }
+
       function editBlock(blockId) {
         let userExistingBlockEditorDiv = document.getElementById('userExistingBlockEditorDiv');
         let blockEditDone = document.getElementById('blockEditDone');
         let existingBlockEditorTitle = document.getElementById('existingBlockEditorTitle');
         let userExistingBlocksEditorBar = document.getElementById('userExistingBlocksEditorBar');
         let existingBlocksEditorForm = document.getElementById('existingBlocksEditorForm');
+        let existingBlocktypeEditorTypeDiv = document.getElementById('existingBlocktypeEditorTypeDiv');
+        let existingBlocktypeEditorType = document.getElementById('existingBlocktypeEditorType');
+        if (existingBlocktypeEditorType) {
+          existingBlocktypeEditorType.parentNode.removeChild(existingBlocktypeEditorType);
+          existingBlocktypeEditorType = document.createElement('input');
+          existingBlocktypeEditorTypeDiv.appendChild(existingBlocktypeEditorType);
+          existingBlocktypeEditorType.id = 'existingBlocktypeEditorType';
+          existingBlocktypeEditorType.type = 'text';
+          existingBlocktypeEditorType.className = "pure-input-1";
+        }
+        let existingBlocktypeColorDiv = document.getElementById('existingBlocktypeColorDiv');
+        let existingBlocktypeEditorColor = document.getElementById('existingBlocktypeEditorColor');
+        if (existingBlocktypeEditorColor) {
+          existingBlocktypeEditorColor.parentNode.removeChild(existingBlocktypeEditorColor);
+          existingBlocktypeEditorColor = document.createElement('input');
+          existingBlocktypeColorDiv.appendChild(existingBlocktypeEditorColor);
+          existingBlocktypeEditorColor.id = 'existingBlocktypeEditorColor';
+          existingBlocktypeEditorColor.type = 'color';
+          existingBlocktypeEditorColor.className = "pure-input-1";
+        }
+        let existingBlocktypesSubCheckDiv = document.getElementById('existingBlocktypesSubCheckDiv');
+        let existingBlocktypeCheck = document.getElementById('existingBlocktypeCheck');
+        if (existingBlocktypeCheck) {
+          existingBlocktypeCheck.parentNode.removeChild(existingBlocktypeCheck);
+          existingBlocktypeCheck = document.createElement('input');
+          existingBlocktypesSubCheckDiv.appendChild(existingBlocktypeCheck);
+          existingBlocktypeCheck.id = 'existingBlocktypeCheck';
+          existingBlocktypeCheck.type = 'checkbox';
+          existingBlocktypeCheck.className = "pure-input-1";
+        }
+        let existingBlockSubs = document.getElementById('existingBlockSubs');
+        let existingSubFields = document.getElementById('existingSubFields');
+        let existingAddNewDivAnchor = document.getElementById('existingAddNewDivAnchor');
+        let existingBlockAddNewSubtype = document.getElementById('existingBlockAddNewSubtype');
+        if (existingBlockAddNewSubtype) {
+          existingBlockAddNewSubtype.parentNode.removeChild(existingBlockAddNewSubtype);
+          existingBlockAddNewSubtype = document.createElement('button');
+          existingAddNewDivAnchor.appendChild(existingBlockAddNewSubtype);
+          existingBlockAddNewSubtype.id = 'existingBlockAddNewSubtype';
+          existingBlockAddNewSubtype.innerHTML = 'add new';
+        }
+        let existingBlockSubSubtypesCheckboxAnchorDiv = document.getElementById('existingBlockSubSubtypesCheckboxAnchorDiv');
+        let existingBlockSubSubtypes = document.getElementById('existingBlockSubSubtypes');
+        if (existingBlockSubSubtypes) {
+          existingBlockSubSubtypes.parentNode.removeChild(existingBlockSubSubtypes);
+          existingBlockSubSubtypes = document.createElement('input');
+          existingBlockSubSubtypesCheckboxAnchorDiv.appendChild(existingBlockSubSubtypes);
+          existingBlockSubSubtypes.id = 'existingBlockSubSubtypes';
+          existingBlockSubSubtypes.type = 'checkbox';
+          existingBlockSubSubtypes.className = "pure-input-1";
+        }
+        let existingBlockSubSubs = document.getElementById('existingBlockSubSubs');
+        let existingBlockAddNewSubtypeAnchorDiv = document.getElementById('existingBlockAddNewSubtypeAnchorDiv');
+        let existingBlockAddNewSubSubtype = document.getElementById('existingBlockAddNewSubSubtype');
+        if (existingBlockAddNewSubSubtype) {
+          existingBlockAddNewSubSubtype.parentNode.removeChild(existingBlockAddNewSubSubtype);
+          existingBlockAddNewSubSubtype = document.createElement('button');
+          existingBlockAddNewSubtypeAnchorDiv.appendChild(existingBlockAddNewSubSubtype);
+          existingBlockAddNewSubSubtype.id = 'existingBlockAddNewSubSubtype';
+          existingBlockAddNewSubSubtype.innerHTML = 'add new';
+        }
+        let existingSubSubFields = document.getElementById('existingSubSubFields');
 
 
 
@@ -94,6 +289,145 @@
           existingBlockEditorTitle.innerHTML = block.type;
           userExistingBlocksEditorBar.setAttribute("style", "background: " + block.color + "; background-color: -webkit-linear-gradient(-135deg, " + block.color + ", #abdada); background: -o-linear-gradient(-135deg, " + block.color + ", #abdada); background: -moz-linear-gradient(-135deg, " + block.color + ", #abdada); background: linear-gradient(-135deg, " + block.color + ", #abdada);");
           existingBlocksEditorForm.setAttribute("style", "background: " + block.color + "; background-color: -webkit-linear-gradient(135deg, " + block.color + ", #abdada); background: -o-linear-gradient(135deg, " + block.color + ", #abdada); background: -moz-linear-gradient(135deg, " + block.color + ", #abdada); background: linear-gradient(135deg, " + block.color + ", #abdada);");
+          existingBlockAddNewSubtype.setAttribute("style", "background: " + block.color + "; background-color: -webkit-linear-gradient(135deg, " + block.color + ", #ffffff); background: -o-linear-gradient(135deg, " + block.color + ", #ffffff); background: -moz-linear-gradient(135deg, " + block.color + ", #ffffff); background: linear-gradient(135deg, " + block.color + ", #ffffff);");
+          existingBlockAddNewSubSubtype.setAttribute("style", "background: " + block.color + "; background-color: -webkit-linear-gradient(135deg, " + block.color + ", #ffffff); background: -o-linear-gradient(135deg, " + block.color + ", #ffffff); background: -moz-linear-gradient(135deg, " + block.color + ", #ffffff); background: linear-gradient(135deg, " + block.color + ", #ffffff);");
+          existingBlocktypeEditorType.value = block.type;
+          existingBlocktypeEditorColor.value = block.color;
+          if (block.keys !== null) {
+            if (block.keys.keys !== undefined) {
+              existingBlocktypeCheck.checked = true;
+              existingBlockSubs.setAttribute("style", "display: initial;");
+              setSubtypes(existingSubFields, block);
+              if (block.keys.keys.length > 1) {
+                existingBlockSubSubtypes.checked = true;
+                existingBlockSubSubs.setAttribute("style", "display: initial;");
+                setSubSubtypes(existingSubSubFields, block);
+              } else {
+                existingBlockSubSubtypes.checked = false;
+                existingBlockSubSubs.setAttribute("style", "display: none;");
+              }
+            } else {
+              existingBlocktypeCheck.checked = false;
+              existingBlockSubs.setAttribute("style", "display: none;");
+            }
+          } else {
+            existingBlocktypeCheck.checked = false;
+            existingBlockSubs.setAttribute("style", "display: none;");
+          }
+
+          existingBlockAddNewSubSubtype.addEventListener('click', ()=>{
+            console.log('logic goes here');
+            let delBut;
+            let valueText;
+            let noBlankFields = true;
+            if (existingSubSubFields.children[0]) {
+              for (let i = 0; i < existingSubSubFields.children.length; i++) {
+                if (existingSubSubFields.children[i] && (existingSubSubFields.children[i].innerHTML !== 'DELETE')) {
+                  if (existingSubSubFields.children[i].value === '') {
+                    noBlankFields = false;
+                  }
+                }
+              }
+            }
+            if (noBlankFields) {
+              delBut = document.createElement('button');
+              existingSubSubFields.appendChild(delBut);
+              delBut.className = 'removal';
+              delBut.innerHTML = 'DELETE';
+              valueText = document.createElement('input');
+              existingSubSubFields.appendChild(valueText);
+              valueText.type = "text";
+              valueText.className = "pure-input-1";
+              subsubValuesEventListeners(delBut, valueText, block, block.keys.keys.length);
+            }
+          });
+
+          existingBlockSubSubtypes.addEventListener('click', ()=>{
+            if (existingBlockSubSubtypes.checked) {
+              existingBlockSubSubs.setAttribute("style", "display: initial;");
+              setSubSubtypes(existingSubSubFields, block);
+            } else {
+              existingBlockSubSubs.setAttribute("style", "display: none;");
+            }
+          });
+
+          existingBlocktypeCheck.addEventListener('click', ()=>{
+            if(existingBlocktypeCheck.checked) {
+              existingBlockSubs.setAttribute("style", "display: initial;");
+              if (block.keys === null) {
+                let subObj = {
+                  keys: {}
+                };
+                subObj.keys.keys = [];
+                subObj.keys.keys[0] = block.type + 'Type';
+                subObj.keys[subObj.keys.keys[0] + 'Values'] = [];
+                $http.patch(`/blocktypes/${block.id}`, subObj)
+                .then(patchedData=>{
+                  let patched = patchedData.data;
+                  block = patched;
+                  setSubtypes(existingSubFields, block);
+                });
+              } else {
+                setSubtypes(existingSubFields, block);
+              }
+            } else {
+              existingBlockSubs.setAttribute("style", "display: none;");
+            }
+           });
+
+           existingBlockAddNewSubtype.addEventListener('click', ()=>{
+             let delBut;
+             let valueText;
+             let noBlankFields = true;
+             if (existingSubFields.children[0]) {
+               for (let i = 0; i < existingSubFields.children.length; i++) {
+                 if (existingSubFields.children[i] && (existingSubFields.children[i].innerHTML !== 'DELETE')) {
+                   if (existingSubFields.children[i].value === '') {
+                     noBlankFields = false;
+                   }
+                 }
+               }
+             }
+             if (noBlankFields) {
+               delBut = document.createElement('button');
+               existingSubFields.appendChild(delBut);
+               delBut.className = 'removal';
+               delBut.innerHTML = 'DELETE';
+               valueText = document.createElement('input');
+               existingSubFields.appendChild(valueText);
+               valueText.type = "text";
+               valueText.className = "pure-input-1";
+               valuesEventListeners(delBut, valueText, block, block.keys[block.keys.keys[0] + 'Values'].length);
+             }
+           });
+
+          existingBlocktypeEditorColor.addEventListener('change', ()=>{
+            let subObj = {
+              color: existingBlocktypeEditorColor.value
+            };
+            userExistingBlocksEditorBar.setAttribute("style", "background: " + existingBlocktypeEditorColor.value + "; background-color: -webkit-linear-gradient(-135deg, " + existingBlocktypeEditorColor.value + ", #abdada); background: -o-linear-gradient(-135deg, " + existingBlocktypeEditorColor.value + ", #abdada); background: -moz-linear-gradient(-135deg, " + existingBlocktypeEditorColor.value + ", #abdada); background: linear-gradient(-135deg, " + existingBlocktypeEditorColor.value + ", #abdada);");
+            existingBlocksEditorForm.setAttribute("style", "background: " + existingBlocktypeEditorColor.value + "; background-color: -webkit-linear-gradient(135deg, " + existingBlocktypeEditorColor.value + ", #abdada); background: -o-linear-gradient(135deg, " + existingBlocktypeEditorColor.value + ", #abdada); background: -moz-linear-gradient(135deg, " + existingBlocktypeEditorColor.value + ", #abdada); background: linear-gradient(135deg, " + existingBlocktypeEditorColor.value + ", #abdada);");
+            existingBlockAddNewSubtype.setAttribute("style", "background: " + existingBlocktypeEditorColor.value + "; background-color: -webkit-linear-gradient(135deg, " + existingBlocktypeEditorColor.value + ", #ffffff); background: -o-linear-gradient(135deg, " + existingBlocktypeEditorColor.value + ", #ffffff); background: -moz-linear-gradient(135deg, " + existingBlocktypeEditorColor.value + ", #ffffff); background: linear-gradient(135deg, " + existingBlocktypeEditorColor.value + ", #ffffff);");
+            existingBlockAddNewSubSubtype.setAttribute("style", "background: " + existingBlocktypeEditorColor.value + "; background-color: -webkit-linear-gradient(135deg, " + existingBlocktypeEditorColor.value + ", #ffffff); background: -o-linear-gradient(135deg, " + existingBlocktypeEditorColor.value + ", #ffffff); background: -moz-linear-gradient(135deg, " + existingBlocktypeEditorColor.value + ", #ffffff); background: linear-gradient(135deg, " + existingBlocktypeEditorColor.value + ", #ffffff);");
+            $http.patch(`/blocktypes/${block.id}`, subObj)
+            .then(patchedData=>{
+              let patched = patchedData;
+              block.color = patched.color;
+            });
+          });
+          existingBlocktypeEditorType.addEventListener('focusout', ()=>{
+            let subObj = {
+              type: existingBlocktypeEditorType.value
+            };
+            if (existingBlocktypeEditorType.value !== '') {
+              $http.patch(`/blocktypes/${block.id}`, subObj)
+              .then(patchedData=>{
+                let patched = patchedData.data;
+                block.type = patched.type;
+                console.log(patched);
+              });
+            }
+          });
         });
 
         userExistingBlockEditorDiv.setAttribute("style", "display: initial;");

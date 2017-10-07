@@ -111,6 +111,8 @@
       <form id="blockEditorForm" class="pure-form pure-form-stacked">
         <fieldset>
           <div id="existingBlocks">
+            <a href="" class="btn" id="addBlocktype" ng-click="$ctrl.createNewBlocktype()">new block</a>
+            <a href="" class="btn" id="blockReporter">report</a>
             <main ng-repeat="block in $ctrl.userblocktypes | orderBy : $ctrl.sortBy">
               <p>{{block.type}}</p><br>
               <div class="indiBlockEdit">
@@ -118,7 +120,7 @@
               <a href="" class="btn" ng-cick="$ctrl.deleteBlock(block.id)">delete</a>
             </div>
             </main>
-            <a href="" class="btn" id="addBlocktype" ng-click="$ctrl.createNewBlocktype()">new block</a>
+
           </div>
         </fieldset>
 
@@ -160,24 +162,41 @@
       <form id="existingBlocksEditorForm" class="pure-form pure-form-stacked">
         <fieldset>
           <p>Blocktype Name:</p>
-          <input type="text" id="existingBlocktypeEditorType" class="pure-input-1">
+          <div id="existingBlocktypeEditorTypeDiv">
+            <input type="text" id="existingBlocktypeEditorType" class="pure-input-1">
+          </div>
           <p>Color:</p>
-          <input type="color" id="existingBlocktypeEditorColor" class="pure-input-1">
+          <div id="existingBlocktypeColorDiv">
+            <input type="color" id="existingBlocktypeEditorColor" class="pure-input-1">
+          </div>
           <div id="existingBlocksSubtypesAndSubSubTypes">
             <p>Subtypes:</p>
-            <input type="checkbox" id="existingBlocktypeCheck" class="pure-input-1" checked><br>
+            <div id="existingBlocktypesSubCheckDiv">
+              <input type="checkbox" id="existingBlocktypeCheck" class="pure-input-1" checked>
+            </div>
+            <br>
             <div id="existingBlockSubs">
+              <div id="existingAddNewDivAnchor">
+                <button id="existingBlockAddNewSubtype">add new</button>
+              </div>
               <div id="existingSubFields">
-                <button id="existingBlockAddNewSubtype">add new</button><br>
+
                 <button class="removal">DELETE</button>
                 <input type="text" class="pure-input-1">
 
               </div>
               <p>Additional Subtypes:</p>
-              <input type="checkbox" id="existingBlockSubSubtypes" class="pure-input-1" unchecked>
+              <div id="existingBlockSubSubtypesCheckboxAnchorDiv">
+                <input type="checkbox" id="existingBlockSubSubtypes" class="pure-input-1" unchecked>
+
+              </div>
+
               <div id="existingBlockSubSubs">
+                <div id="existingBlockAddNewSubtypeAnchorDiv">
+                  <button id="existingBlockAddNewSubSubtype">add new</button>
+                </div>
                 <div id="existingSubSubFields">
-                  <button id="existingBlockAddNewSubSubtype">add new</button><br>
+
                   <button class="removal">DELETE</button>
                   <input type="text" class="pure-input-1">
 
