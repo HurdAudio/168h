@@ -70,6 +70,26 @@
       vm.closeBlocktypeEditor = closeBlocktypeEditor;
       vm.editBlock = editBlock;
       vm.userExistingBlocksEditorDone = userExistingBlocksEditorDone;
+      vm.createNewBlocktype = createNewBlocktype;
+
+      function createNewBlocktype() {
+        let subObj = {
+          user_id: currentUserId,
+          type: '',
+          keys: null,
+          color: '#ffffff'
+        };
+        $http.post('/blocktypes', subObj)
+        .then(submittedBlockData=>{
+          let submittedBlock = submittedBlockData.data[0];
+          editBlock(submittedBlock.id);
+        });
+      }
+
+      function deleteTheBlankBlock(theId) {
+        $http.delete(`/blocktypes/${theId}`)
+        .then();
+      }
 
       function userExistingBlocksEditorDone() {
         let userExistingBlockEditorDiv = document.getElementById('userExistingBlockEditorDiv');
@@ -77,6 +97,21 @@
 
         userExistingBlockEditorDiv.setAttribute("style", "display: none;");
         blockEditDone.setAttribute("style", "visibility: visible;");
+        $http.get(`/blocktypesbyuser/${currentUserId}`)
+        .then(userBlocksData=>{
+          let userBlocks = userBlocksData.data;
+          let emptyBlocks = userBlocks.filter((blok)=>{
+            return (blok.type === '');
+          });
+          if (emptyBlocks.length > 0) {
+            for (let i = 0; i < emptyBlocks.length; i++) {
+              deleteTheBlankBlock(emptyBlocks[i].id);
+            }
+          } else {
+            setUserBlockTypes();
+          }
+        });
+
       }
 
       function subsubValuesEventListeners(deleteButton, textEntry, block, index) {
@@ -420,6 +455,7 @@
               type: existingBlocktypeEditorType.value
             };
             if (existingBlocktypeEditorType.value !== '') {
+              existingBlockEditorTitle.innerHTML = existingBlocktypeEditorType.value;
               $http.patch(`/blocktypes/${block.id}`, subObj)
               .then(patchedData=>{
                 let patched = patchedData.data;
