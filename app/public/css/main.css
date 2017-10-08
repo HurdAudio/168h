@@ -3121,7 +3121,7 @@ footer img {
   background-color: -webkit-linear-gradient(135deg, #19262E, #abdada);
   background: -o-linear-gradient(135deg, #19262E, #abdada);
   background: -moz-linear-gradient(135deg, #19262E, #abdada);
-  background: linear-gradient(135deg, #19262E, #abdada); 
+  background: linear-gradient(135deg, #19262E, #abdada);
 }
 
 #weekSubsEntry {
@@ -3563,8 +3563,8 @@ footer img {
   display: none;
 }
 
-/*.day {
-  background-image: url(../img/january_tiles/depositphotos_26348373-stock-photo-seamless-ice-texture.jpg);
+.day {
+  background-image: url(../img/april_tiles/banner-2143726_1920.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
-}*/
+  background-size: 400%;
+}
