@@ -1304,6 +1304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 66,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/self-portrait.jpg',
+          title: 'Self-Portrait',
+          artist: 'Otto Dix',
+          year: '1914',
+          rule: {
+            "monday": [ 7, 11, 19, 4 ],
+            "tuesday": [ 13, 17, 25, 10 ],
+            "wednesday": [ 12, 15, 24, 9 ],
+            "thursday": [ 11, 15, 23, 8 ],
+            "friday": [ 10, 14, 22, 7 ],
+            "saturday": [ 9, 13, 21, 6 ],
+            "sunday": [ 8, 11, 20, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 67,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/haystacks-pankiewitcz.jpg',
+          title: '73.5 Cm (28.94 In.). Painting - Oil on Canvas',
+          artist: 'Józef Pankiewicz',
+          year: '1912',
+          rule: {
+            "monday": [ 8, 11, 20, 5 ],
+            "tuesday": [ 7, 11, 19, 4 ],
+            "wednesday": [ 13, 17, 25, 10 ],
+            "thursday": [ 12, 15, 24, 9 ],
+            "friday": [ 11, 15, 23, 8 ],
+            "saturday": [ 10, 14, 22, 7 ],
+            "sunday": [ 9, 13, 21, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 68,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/sister-of-mercy.jpg',
+          title: 'Sister of mercy',
+          artist: 'Ivan Vladimirov',
+          year: '?',
+          rule: {
+            "monday": [ 9, 13, 21, 6 ],
+            "tuesday": [ 8, 11, 20, 5 ],
+            "wednesday": [ 7, 11, 19, 4 ],
+            "thursday": [ 13, 17, 25, 10 ],
+            "friday": [ 12, 15, 24, 9 ],
+            "saturday": [ 11, 15, 23, 8 ],
+            "sunday": [ 10, 14, 22, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 69,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/cochet-rie.jpg',
+          title: 'Cochetărie',
+          artist: 'Ipolit Strambu',
+          year: '?',
+          rule: {
+            "monday": [ 10, 14, 22, 7 ],
+            "tuesday": [ 9, 13, 21, 6 ],
+            "wednesday": [ 8, 11, 20, 5 ],
+            "thursday": [ 7, 11, 19, 4 ],
+            "friday": [ 13, 17, 25, 10 ],
+            "saturday": [ 12, 15, 24, 9 ],
+            "sunday": [ 11, 15, 23, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 70,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/p-235-o-2-k-8-2-1.jpg',
+          title: 'Unknown',
+          artist: 'Boris Schatz',
+          year: '?',
+          rule: {
+            "monday": [ 12, 16, 24, 9 ],
+            "tuesday": [ 11, 15, 23, 8 ],
+            "wednesday": [ 10, 14, 22, 7 ],
+            "thursday": [ 9, 12, 21, 6 ],
+            "friday": [ 8, 12, 20, 5 ],
+            "saturday": [ 14, 18, 26, 11 ],
+            "sunday": [ 13, 16, 25, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
