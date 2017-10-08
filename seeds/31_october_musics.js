@@ -436,6 +436,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 25,
+          user_id: 1,
+          theme: 'hardcore punk, metal and nurse with wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1752700917/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://comacozer.bandcamp.com/album/kalos-eidos-skopeo',
+          a_string: 'KALOS EIDOS SKOPEO by COMACOZER',
+          rule: {
+            "monday": [ 10, 20, 30, 2 ],
+            "tuesday": [ 9, 19, 29, 1 ],
+            "wednesday": [ 8, 18, 28, 31 ],
+            "thursday": [ 12, 22, 1, 4 ],
+            "saturday": [ 11, 21, 31, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 26,
+          user_id: 1,
+          theme: 'hardcore punk, metal and nurse with wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3101404654/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://theblackheartdeathcult.bandcamp.com/album/black-rainbow-ep',
+          a_string: 'Black Rainbow - EP by The Black Heart Death Cult',
+          rule: {
+            "monday": [ 11, 21, 31, 3 ],
+            "tuesday": [ 10, 20, 30, 2 ],
+            "wednesday": [ 9, 19, 29, 1 ],
+            "thursday": [ 8, 18, 28, 31 ],
+            "saturday": [ 12, 22, 1, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 27,
+          user_id: 1,
+          theme: 'hardcore punk, metal and nurse with wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=749486697/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://mtmountain.bandcamp.com/album/cosmos-terros',
+          a_string: 'Cosmos Terros by Mt. Mountain',
+          rule: {
+            "monday": [ 12, 22, 1, 4 ],
+            "tuesday": [ 11, 21, 31, 3 ],
+            "wednesday": [ 10, 20, 30, 2 ],
+            "thursday": [ 9, 19, 29, 1 ],
+            "saturday": [ 8, 18, 28, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
