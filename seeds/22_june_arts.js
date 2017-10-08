@@ -1678,7 +1678,7 @@ exports.seed = function(knex, Promise) {
             "tuesday": [ 10, 20, 30, 8 ],
             "wednesday": [ 9, 19, 29, 7 ],
             "thursday": [ 8, 18, 28, 6 ],
-            "friday": [ 7, 17, 7, 5 ],
+            "friday": [ 7, 17, 27, 5 ],
             "saturday": [ 13, 23, 3, 10 ],
             "sunday": [ 12, 22, 2, 10 ]
           },
@@ -1699,8 +1699,108 @@ exports.seed = function(knex, Promise) {
             "wednesday": [ 10, 20, 30, 8 ],
             "thursday": [ 9, 19, 29, 7 ],
             "friday": [ 8, 18, 28, 6 ],
-            "saturday": [ 7, 17, 7, 5 ],
+            "saturday": [ 7, 17, 27, 5 ],
             "sunday": [ 13, 23, 3, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 86,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/teatro-de-sombras-as-cinco-esta-es-still-1976-1.jpg',
+          title: 'Teatro de Sombras, As Cinco Estações (still)',
+          artist: 'Lourdes Castro',
+          year: '1976',
+          rule: {
+            "monday": [ 13, 23, 3, 10 ],
+            "tuesday": [ 12, 22, 2, 10 ],
+            "wednesday": [ 11, 21, 1, 9 ],
+            "thursday": [ 10, 20, 30, 8 ],
+            "friday": [ 9, 19, 29, 7 ],
+            "saturday": [ 8, 18, 28, 6 ],
+            "sunday": [ 7, 17, 27, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 87,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/the-quai-st-bernard-near-the-gare-d-austerlitz-paris-1932.jpg',
+          title: 'The Quai St Bernard, near the Gare d\'Austerlitz, Paris',
+          artist: 'Henri Cartier-Bresson',
+          year: '1932',
+          rule: {
+            "monday": [ 7, 17, 27, 5 ],
+            "tuesday": [ 13, 23, 3, 10 ],
+            "wednesday": [ 12, 22, 2, 10 ],
+            "thursday": [ 11, 21, 1, 9 ],
+            "friday": [ 10, 20, 30, 8 ],
+            "saturday": [ 9, 19, 29, 7 ],
+            "sunday": [ 8, 18, 28, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 88,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/self-portrait-1855.jpg',
+          title: 'Self Portrait',
+          artist: 'Lewis Carroll',
+          year: '1855',
+          rule: {
+            "monday": [ 8, 18, 28, 6 ],
+            "tuesday": [ 7, 17, 27, 5 ],
+            "wednesday": [ 13, 23, 3, 10 ],
+            "thursday": [ 12, 22, 2, 10 ],
+            "friday": [ 11, 21, 1, 9 ],
+            "saturday": [ 10, 20, 30, 8 ],
+            "sunday": [ 9, 19, 29, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 89,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/the-second-step-2005.jpg',
+          title: 'The Second Step',
+          artist: 'Mircea Cantor',
+          year: '2005',
+          rule: {
+            "monday": [ 9, 19, 29, 7 ],
+            "tuesday": [ 8, 18, 28, 6 ],
+            "wednesday": [ 7, 17, 27, 5 ],
+            "thursday": [ 13, 23, 3, 10 ],
+            "friday": [ 12, 22, 2, 10 ],
+            "saturday": [ 11, 21, 1, 9 ],
+            "sunday": [ 10, 20, 30, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 90,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/the-discovery-of-geometry-1978.jpg',
+          title: 'The Discovery of Geometry',
+          artist: 'Luis Camnitzer',
+          year: '1978',
+          rule: {
+            "monday": [ 10, 20, 30, 8 ],
+            "tuesday": [ 9, 19, 29, 7 ],
+            "wednesday": [ 8, 18, 28, 6 ],
+            "thursday": [ 7, 17, 27, 5 ],
+            "friday": [ 13, 23, 3, 10 ],
+            "saturday": [ 12, 22, 2, 10 ],
+            "sunday": [ 11, 21, 1, 9 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
