@@ -220,6 +220,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 13,
+          user_id: 1,
+          theme: 'brazil and pan-south american',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2962010502/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tomze.bandcamp.com/album/grande-liquida-o',
+          a_string: 'Grande Liquidação by Tom Ze',
+          rule: {
+            "monday": [ 4, 10, 16, 22 ],
+            "tuesday": [ 8, 14, 20, 26 ],
+            "wednesday": [ 7, 13, 19, 25 ],
+            "thursday": [ 6, 12, 18, 24 ],
+            "saturday": [ 5, 11, 17, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 14,
+          user_id: 1,
+          theme: 'brazil and pan-south american',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3738045895/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://vvaaschemarecords.bandcamp.com/album/freedom-jazz-dance',
+          a_string: 'Freedom Jazz Dance by VVAA',
+          rule: {
+            "monday": [ 6, 12, 18, 24 ],
+            "tuesday": [ 5, 11, 17, 23 ],
+            "wednesday": [ 9, 15, 21, 27 ],
+            "thursday": [ 8, 14, 20, 26 ],
+            "saturday": [ 7, 13, 19, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 15,
+          user_id: 1,
+          theme: 'brazil and pan-south american',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1526212277/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://djcaptainplanet.bandcamp.com/album/esperanto-slang',
+          a_string: 'Esperanto Slang by Captain Planet',
+          rule: {
+            "monday": [ 7, 13, 19, 25 ],
+            "tuesday": [ 6, 12, 18, 24 ],
+            "wednesday": [ 5, 11, 17, 23 ],
+            "thursday": [ 9, 15, 21, 27 ],
+            "saturday": [ 8, 14, 20, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
