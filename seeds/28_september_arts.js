@@ -1104,6 +1104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 56,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/interno-con-piano-forte-1968.jpg',
+          title: 'Interno con piano forte',
+          artist: 'Valerio Adami',
+          year: '1968',
+          rule: {
+            "monday": [ 9, 15, 3, 11 ],
+            "tuesday": [ 8, 14, 2, 10 ],
+            "wednesday": [ 7, 13, 1, 9 ],
+            "thursday": [ 6, 12, 30, 8 ],
+            "friday": [ 5, 11, 29, 7 ],
+            "saturday": [ 11, 17, 5, 13 ],
+            "sunday": [ 10, 16, 4, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 57,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/serigrafia.jpg',
+          title: 'Serigrafia',
+          artist: 'Ramirez Villamizar',
+          year: '?',
+          rule: {
+            "monday": [ 10, 16, 4, 12 ],
+            "tuesday": [ 9, 15, 3, 11 ],
+            "wednesday": [ 8, 14, 2, 10 ],
+            "thursday": [ 7, 13, 1, 9 ],
+            "friday": [ 6, 12, 30, 8 ],
+            "saturday": [ 5, 11, 29, 7 ],
+            "sunday": [ 11, 17, 5, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 58,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/exist-ncia-1985.jpg',
+          title: 'Existência',
+          artist: 'Manabu Mabe',
+          year: '1985',
+          rule: {
+            "monday": [ 11, 17, 5, 13 ],
+            "tuesday": [ 10, 16, 4, 12 ],
+            "wednesday": [ 9, 15, 3, 11 ],
+            "thursday": [ 8, 14, 2, 10 ],
+            "friday": [ 7, 13, 1, 9 ],
+            "saturday": [ 6, 12, 30, 8 ],
+            "sunday": [ 5, 11, 29, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 59,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/fish.jpg',
+          title: 'Fish',
+          artist: 'Aldemir Martins',
+          year: '?',
+          rule: {
+            "monday": [ 5, 11, 29, 7 ],
+            "tuesday": [ 11, 17, 5, 13 ],
+            "wednesday": [ 10, 16, 4, 12 ],
+            "thursday": [ 9, 15, 3, 11 ],
+            "friday": [ 8, 14, 2, 10 ],
+            "saturday": [ 7, 13, 1, 9 ],
+            "sunday": [ 6, 12, 30, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 60,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/accomplishments-1964.jpg',
+          title: 'Accomplishments',
+          artist: 'James Lee Byars',
+          year: '1964',
+          rule: {
+            "monday": [ 6, 12, 30, 8 ],
+            "tuesday": [ 5, 11, 29, 7 ],
+            "wednesday": [ 11, 17, 5, 13 ],
+            "thursday": [ 10, 16, 4, 12 ],
+            "friday": [ 9, 15, 3, 11 ],
+            "saturday": [ 8, 14, 2, 10 ],
+            "sunday": [ 7, 13, 1, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
