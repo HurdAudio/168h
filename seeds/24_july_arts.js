@@ -1504,6 +1504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 76,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/nude-with-a-newspaper-1921.jpg',
+          title: 'Nude with a Newspaper',
+          artist: 'Andre Dunoyer de Segonzac',
+          year: '1921',
+          rule: {
+            "monday": [ 10, 21, 1, 12 ],
+            "tuesday": [ 9, 20, 30, 11 ],
+            "wednesday": [ 8, 19, 30, 10 ],
+            "thursday": [ 7, 18, 29, 9 ],
+            "friday": [ 13, 24, 4, 15 ],
+            "saturday": [ 12, 23, 3, 14 ],
+            "sunday": [ 11, 21, 2, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 77,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/nu-nude-1906.jpg',
+          title: 'Nu (Nude)',
+          artist: 'Jean Metzinger',
+          year: '1906',
+          rule: {
+            "monday": [ 12, 22, 3, 14 ],
+            "tuesday": [ 11, 22, 2, 13 ],
+            "wednesday": [ 10, 21, 31, 12 ],
+            "thursday": [ 9, 20, 31, 11 ],
+            "friday": [ 8, 19, 30, 10 ],
+            "saturday": [ 14, 25, 5, 16 ],
+            "sunday": [ 13, 24, 4, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 78,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/figure-double-with-marine-background-1942.jpg',
+          title: 'Figure double with marine background',
+          artist: 'Georges Braque',
+          year: '1942',
+          rule: {
+            "monday": [ 13, 24, 4, 15 ],
+            "tuesday": [ 12, 22, 3, 14 ],
+            "wednesday": [ 11, 22, 2, 13 ],
+            "thursday": [ 10, 21, 31, 12 ],
+            "friday": [ 9, 20, 31, 11 ],
+            "saturday": [ 8, 19, 30, 10 ],
+            "sunday": [ 14, 25, 5, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 79,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/la-danse-study-1920.jpg',
+          title: 'La Danse (Study)',
+          artist: 'Jean Dupas',
+          year: '1920',
+          rule: {
+            "monday": [ 14, 25, 5, 16 ],
+            "tuesday": [ 13, 24, 4, 15 ],
+            "wednesday": [ 12, 22, 3, 14 ],
+            "thursday": [ 11, 22, 2, 13 ],
+            "friday": [ 10, 21, 31, 12 ],
+            "saturday": [ 9, 20, 31, 11 ],
+            "sunday": [ 8, 19, 30, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 80,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/woman-with-a-cat-1921.jpg',
+          title: 'Woman with a Cat',
+          artist: 'Fernand Leger',
+          year: '1921',
+          rule: {
+            "monday": [ 8, 19, 30, 10 ],
+            "tuesday": [ 14, 25, 5, 16 ],
+            "wednesday": [ 13, 24, 4, 15 ],
+            "thursday": [ 12, 22, 3, 14 ],
+            "friday": [ 11, 22, 2, 13 ],
+            "saturday": [ 10, 21, 31, 12 ],
+            "sunday": [ 9, 20, 31, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
