@@ -704,6 +704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 36,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/untitled-1974.jpg',
+          title: 'Untitled',
+          artist: 'Robert Grosvenor',
+          year: '1974',
+          rule: {
+            "monday": [ 12, 17, 23, 28 ],
+            "tuesday": [ 11, 16, 22, 27 ],
+            "wednesday": [ 10, 15, 21, 26 ],
+            "thursday": [ 9, 14, 20, 25 ],
+            "friday": [ 8, 13, 19, 24 ],
+            "saturday": [ 7, 12, 18, 25 ],
+            "sunday": [ 13, 18, 24, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 37,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/island-no-1p-1967.jpg',
+          title: 'Island No. 1p',
+          artist: 'Frank Stella',
+          year: '1967',
+          rule: {
+            "monday": [ 13, 18, 24, 29 ],
+            "tuesday": [ 12, 17, 23, 28 ],
+            "wednesday": [ 11, 16, 22, 27 ],
+            "thursday": [ 10, 15, 21, 26 ],
+            "friday": [ 9, 14, 20, 25 ],
+            "saturday": [ 8, 13, 19, 24 ],
+            "sunday": [ 7, 12, 18, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 38,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/w-ix-2006.jpg',
+          title: 'W IX',
+          artist: 'Joachim Bandau',
+          year: '2006',
+          rule: {
+            "monday": [ 7, 12, 18, 25 ],
+            "tuesday": [ 13, 18, 24, 29 ],
+            "wednesday": [ 12, 17, 23, 28 ],
+            "thursday": [ 11, 16, 22, 27 ],
+            "friday": [ 10, 15, 21, 26 ],
+            "saturday": [ 9, 14, 20, 25 ],
+            "sunday": [ 8, 13, 19, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 39,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/sun-island-1985.jpg',
+          title: 'Sun & Island',
+          artist: 'Nanda Vigo',
+          year: '1985',
+          rule: {
+            "monday": [ 8, 13, 19, 24 ],
+            "tuesday": [ 7, 12, 18, 25 ],
+            "wednesday": [ 13, 18, 24, 29 ],
+            "thursday": [ 12, 17, 23, 28 ],
+            "friday": [ 11, 16, 22, 27 ],
+            "saturday": [ 10, 15, 21, 26 ],
+            "sunday": [ 9, 14, 20, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 40,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/last-tangle-1976.jpg',
+          title: 'Last Tangle',
+          artist: 'Leo Valledor',
+          year: '1976',
+          rule: {
+            "monday": [ 9, 14, 20, 25 ],
+            "tuesday": [ 8, 13, 19, 24 ],
+            "wednesday": [ 7, 12, 18, 25 ],
+            "thursday": [ 13, 18, 24, 29 ],
+            "friday": [ 12, 17, 23, 28 ],
+            "saturday": [ 11, 16, 22, 27 ],
+            "sunday": [ 10, 15, 21, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
