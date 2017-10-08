@@ -652,6 +652,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 37,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=687005163/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://newcandys.bandcamp.com/album/bleeding-magenta',
+          a_string: 'Bleeding Magenta by New Candys',
+          rule: {
+            "monday": [ 13, 21, 6, 7 ],
+            "tuesday": [ 12, 20, 5, 6 ],
+            "wednesday": [ 9, 17, 2, 1 ],
+            "thursday": [ 10, 18, 3, 2 ],
+            "saturday": [ 14, 22, 4, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 38,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3538895410/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://damosuzukinetwork.bandcamp.com/album/the-swiftsure-session',
+          a_string: 'The Swiftsure Session by Damo Suzuki&#39;s Network',
+          rule: {
+            "monday": [ 14, 22, 4, 3 ],
+            "tuesday": [ 13, 21, 6, 7 ],
+            "wednesday": [ 12, 20, 5, 6 ],
+            "thursday": [ 9, 17, 2, 1 ],
+            "saturday": [ 10, 18, 3, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 39,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2065289295/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://arrington.bandcamp.com/album/ten-thousand-tigers',
+          a_string: 'Ten Thousand Tigers by Arrington de Dionyso and Thollem McDonas',
+          rule: {
+            "monday": [ 10, 18, 3, 2 ],
+            "tuesday": [ 14, 22, 4, 3 ],
+            "wednesday": [ 13, 21, 6, 7 ],
+            "thursday": [ 12, 20, 5, 6 ],
+            "saturday": [ 9, 17, 2, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
