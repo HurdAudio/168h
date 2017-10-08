@@ -504,6 +504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 26,
+          user_id: 1,
+          theme: 'pulp',
+          img_path: './img/december/35-05,AllStarFcton.jpg',
+          title: 'All Star Fiction',
+          artist: 'Lorence Bjorklund',
+          year: '1935',
+          rule: {
+            "monday": [ 3, 16, 24, 30 ],
+            "tuesday": [ 2, 15, 23, 29 ],
+            "wednesday": [ 1, 14, 22, 28 ],
+            "thursday": [ 7, 20, 28, 3 ],
+            "friday": [ 6, 19, 27, 2 ],
+            "saturday": [ 5, 18, 26, 1 ],
+            "sunday": [ 4, 17, 25, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 27,
+          user_id: 1,
+          theme: 'pulp',
+          img_path: './img/december/1929-08,MM1.jpg',
+          title: 'Modern Mechanics',
+          artist: '(Blaine) Normand Saunders',
+          year: '1929',
+          rule: {
+            "monday": [ 4, 17, 25, 31 ],
+            "tuesday": [ 3, 16, 24, 30 ],
+            "wednesday": [ 2, 15, 23, 29 ],
+            "thursday": [ 1, 14, 22, 28 ],
+            "friday": [ 7, 20, 28, 3 ],
+            "saturday": [ 6, 19, 27, 2 ],
+            "sunday": [ 5, 18, 26, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 28,
+          user_id: 1,
+          theme: 'pulp',
+          img_path: './img/december/28-00,Kiss.jpg',
+          title: 'Kiss The Crocodile',
+          artist: 'Frederick Blakeslee',
+          year: '1928',
+          rule: {
+            "monday": [ 6, 19, 27, 2 ],
+            "tuesday": [ 5, 18, 26, 1 ],
+            "wednesday": [ 4, 17, 25, 31 ],
+            "thursday": [ 3, 16, 24, 30 ],
+            "friday": [ 2, 15, 23, 29 ],
+            "saturday": [ 8, 21, 29, 4 ],
+            "sunday": [ 7, 20, 28, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 29,
+          user_id: 1,
+          theme: 'pulp',
+          img_path: './img/december/36-06,Yearbook.jpg',
+          title: 'School Yearbook',
+          artist: 'Chester Bloom',
+          year: '1936',
+          rule: {
+            "monday": [ 7, 20, 28, 3 ],
+            "tuesday": [ 6, 19, 27, 2 ],
+            "wednesday": [ 5, 18, 26, 1 ],
+            "thursday": [ 4, 17, 25, 31 ],
+            "friday": [ 3, 16, 24, 30 ],
+            "saturday": [ 2, 15, 23, 29 ],
+            "sunday": [ 8, 21, 29, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 30,
+          user_id: 1,
+          theme: 'pulp',
+          img_path: './img/december/34-01,WRom-1.jpg',
+          title: 'Western Romances',
+          artist: 'Jon L. Blummer',
+          year: '1934',
+          rule: {
+            "monday": [ 8, 21, 29, 4 ],
+            "tuesday": [ 7, 20, 28, 3 ],
+            "wednesday": [ 6, 19, 27, 2 ],
+            "thursday": [ 5, 18, 26, 1 ],
+            "friday": [ 4, 17, 25, 31 ],
+            "saturday": [ 3, 16, 24, 30 ],
+            "sunday": [ 2, 15, 23, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
