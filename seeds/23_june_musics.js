@@ -868,6 +868,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 49,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2253300390/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://oceanographicrecords.bandcamp.com/album/modular',
+          a_string: 'MODULAR by Matt Chamberlain, Viktor Krauss, and Dan Phelps',
+          rule: {
+            "monday": [ 5, 9, 15, 26 ],
+            "tuesday": [ 4, 12, 14, 25 ],
+            "wednesday": [ 8, 12, 18, 29 ],
+            "thursday": [ 7, 11, 17, 27 ],
+            "saturday": [ 6, 10, 15, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 50,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1073464636/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://mysterybear.bandcamp.com/album/complex-silence-4',
+          a_string: 'Complex Silence 4 by Dave Seidel',
+          rule: {
+            "monday": [ 6, 10, 15, 27 ],
+            "tuesday": [ 5, 9, 15, 26 ],
+            "wednesday": [ 4, 12, 14, 25 ],
+            "thursday": [ 8, 12, 18, 29 ],
+            "saturday": [ 7, 11, 17, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 51,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'http://bandcamp.com/EmbeddedPlayer/album=64449763/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://recordings.irritablehedgehog.com/album/dave-seidel-60-hz',
+          a_string: 'Dave Seidel: ~60 Hz by Dave Seidel',
+          rule: {
+            "monday": [ 7, 11, 17, 27 ],
+            "tuesday": [ 6, 10, 15, 27 ],
+            "wednesday": [ 5, 9, 15, 26 ],
+            "thursday": [ 4, 12, 14, 25 ],
+            "saturday": [ 8, 12, 18, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
