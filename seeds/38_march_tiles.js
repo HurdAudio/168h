@@ -32,6 +32,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#8CBCD2',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 3,
+          user_id: 1,
+          theme: 'glass',
+          type: 'mtwt',
+          src_string: '../img/march_tiles/14SPL.png',
+          repeat_value: 'no-repeat',
+          size_value: '100%',
+          color_dark: '#AFCEEA',
+          color_medium: '#CEE5C9',
+          color_light: '#D6F9FF',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
