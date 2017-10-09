@@ -1005,7 +1005,7 @@ exports.seed = function(knex, Promise) {
           a_string: 'Convallaria by Thumbscrew: Mary Halvorson, Michael Formanek, Tomas Fujiwara',
           rule: {
             "monday": [ 11, 19, 1, 6 ],
-            "tuesday": [ 10, 86, 30, 5 ],
+            "tuesday": [ 10, 18, 30, 5 ],
             "wednesday": [ 9, 17, 29, 4 ],
             "thursday": [ 8, 16, 28, 3 ],
             "saturday": [ 12, 20, 2, 7 ]
@@ -1024,7 +1024,7 @@ exports.seed = function(knex, Promise) {
           rule: {
             "monday": [ 12, 20, 2, 7 ],
             "tuesday": [ 11, 19, 1, 6 ],
-            "wednesday": [ 10, 86, 30, 5 ],
+            "wednesday": [ 10, 18, 30, 5 ],
             "thursday": [ 9, 17, 29, 4 ],
             "saturday": [ 8, 16, 28, 3 ]
           },
@@ -1043,7 +1043,7 @@ exports.seed = function(knex, Promise) {
             "monday": [ 8, 16, 28, 3 ],
             "tuesday": [ 12, 20, 2, 7 ],
             "wednesday": [ 11, 19, 1, 6 ],
-            "thursday": [ 10, 86, 30, 5 ],
+            "thursday": [ 10, 18, 30, 5 ],
             "saturday": [ 9, 17, 29, 4 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
@@ -1062,7 +1062,7 @@ exports.seed = function(knex, Promise) {
             "tuesday": [ 8, 16, 28, 3 ],
             "wednesday": [ 12, 20, 2, 7 ],
             "thursday": [ 11, 19, 1, 6 ],
-            "saturday": [ 10, 86, 30, 5 ]
+            "saturday": [ 10, 18, 30, 5 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -1076,11 +1076,65 @@ exports.seed = function(knex, Promise) {
           href_string: 'http://grahamcostello.bandcamp.com/album/s-t-r-a-t-a',
           a_string: 'S T R A T A by Graham Costello&#39;s STRATA',
           rule: {
-            "monday": [ 10, 86, 30, 5 ],
+            "monday": [ 10, 18, 30, 5 ],
             "tuesday": [ 9, 17, 29, 4 ],
             "wednesday": [ 8, 16, 28, 3 ],
             "thursday": [ 12, 20, 2, 7 ],
             "saturday": [ 11, 19, 1, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 61,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=695837592/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://aumfidelity.bandcamp.com/album/black-cherry-piercing-the-veil-in-dub',
+          a_string: 'Black Cherry (Piercing The Veil in Dub) by Organic Grooves / William Parker &amp; Hamid Drake',
+          rule: {
+            "monday": [ 11, 19, 1, 6 ],
+            "tuesday": [ 10, 18, 30, 5 ],
+            "wednesday": [ 9, 17, 29, 4 ],
+            "thursday": [ 8, 16, 28, 3 ],
+            "saturday": [ 12, 20, 2, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 62,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=639555287/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://p-mm.bandcamp.com/album/pmm-sun-city-grils-pelican92',
+          a_string: 'PMM# Sun City Grils - Pelican&#39;92 by Sun City Girls',
+          rule: {
+            "monday": [ 12, 20, 2, 7 ],
+            "tuesday": [ 11, 19, 1, 6 ],
+            "wednesday": [ 10, 18, 30, 5 ],
+            "thursday": [ 9, 17, 29, 4 ],
+            "saturday": [ 8, 16, 28, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 63,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2374411763/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://nakatanikawabatachou.bandcamp.com/album/perigee',
+          a_string: 'Perigee by Nakatani / Kawabata / Chou',
+          rule: {
+            "monday": [ 9, 17, 29, 4 ],
+            "tuesday": [ 13, 21, 3, 8 ],
+            "wednesday": [ 12, 20, 2, 7 ],
+            "thursday": [ 11, 17, 29, 4 ],
+            "saturday": [ 10, 18, 30, 5 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
