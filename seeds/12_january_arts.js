@@ -2704,6 +2704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 136,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/faixas-ritmadas-1958.jpg',
+          title: 'Faixas Ritmadas',
+          artist: 'Ivan Serpa',
+          year: '1958',
+          rule: {
+            "monday": [ 20, 21, 1, 24 ],
+            "tuesday": [ 23, 25, 17, 6 ],
+            "wednesday": [ 25, 26, 18, 21 ],
+            "thursday": [ 28, 29, 20, 24 ],
+            "friday": [ 31, 2, 3, 5 ],
+            "saturday": [ 2, 4, 8, 11 ],
+            "sunday": [ 4, 6, 7, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 137,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/nega-maluca-2006.jpg',
+          title: 'Nega Maluca',
+          artist: 'Beatriz Milhazes',
+          year: '2006',
+          rule: {
+            "monday": [ 4, 6, 7, 10 ],
+            "tuesday": [ 20, 21, 1, 24 ],
+            "wednesday": [ 23, 25, 17, 6 ],
+            "thursday": [ 25, 26, 18, 21 ],
+            "friday": [ 28, 29, 20, 24 ],
+            "saturday": [ 31, 2, 3, 5 ],
+            "sunday": [ 2, 4, 8, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 138,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/contra-relevo-objeto-n-7-1959.jpg',
+          title: 'Contra Relevo (Objeto N. 7)',
+          artist: 'Lygia Clark',
+          year: '1959',
+          rule: {
+            "monday": [ 2, 4, 8, 11 ],
+            "tuesday": [ 4, 6, 7, 10 ],
+            "wednesday": [ 20, 21, 1, 24 ],
+            "thursday": [ 23, 25, 17, 6 ],
+            "friday": [ 25, 26, 18, 21 ],
+            "saturday": [ 28, 29, 20, 24 ],
+            "sunday": [ 31, 2, 3, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 139,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/alba-1987.jpg',
+          title: 'Alba',
+          artist: 'Albert Irvin',
+          year: '1987',
+          rule: {
+            "monday": [ 31, 2, 3, 5 ],
+            "tuesday": [ 2, 4, 8, 11 ],
+            "wednesday": [ 4, 6, 7, 10 ],
+            "thursday": [ 20, 21, 1, 24 ],
+            "friday": [ 23, 25, 17, 6 ],
+            "saturday": [ 25, 26, 18, 21 ],
+            "sunday": [ 28, 29, 20, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 140,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/configuration-1988.jpg',
+          title: 'Configuration',
+          artist: 'Romul Nutiu',
+          year: '1988',
+          rule: {
+            "monday": [ 29, 30, 21, 25 ],
+            "tuesday": [ 1, 3, 4, 6 ],
+            "wednesday": [ 3, 5, 9, 12 ],
+            "thursday": [ 5, 7, 8, 11 ],
+            "friday": [ 21, 22, 2, 25 ],
+            "saturday": [ 24, 26, 18, 7 ],
+            "sunday": [ 26, 27, 19, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
