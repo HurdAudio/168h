@@ -64,6 +64,8 @@ const july_musics = require('./routes/july_musics.js');
 const july_musicsbyuser = require('./routes/july_musicsbyuser.js');
 const august_arts = require('./routes/august_arts.js');
 const august_artsbyuser = require('./routes/august_artsbyuser.js');
+const august_musics = require('./routes/august_musics.js');
+const august_musicsbyuser = require('./routes/august_musicsbyuser.js');
 
 const port = process.env.PORT || 3007;
 
@@ -128,6 +130,8 @@ app.use(fileUpload());
  app.use('/july_musicsbyuser', july_musicsbyuser);
  app.use('/august_arts', august_arts);
  app.use('/august_artsbyuser', august_artsbyuser);
+ app.use('/august_musics', august_musics);
+ app.use('/august_musicsbyuser', august_musicsbyuser);
 
 app.get('/onthisdayinhistory/:date', (req, res, next) =>{
   let newUrl = 'http://history.muffinlabs.com/date/';
