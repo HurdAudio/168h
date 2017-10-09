@@ -2961,6 +2961,38 @@ footer img {
   padding-top: 0.4em;
 }
 
+#blocktypeReportBar {
+  font-family: 'Asul', serif;
+  font-size: 18px
+  background: #19262E;
+  background-color: -webkit-linear-gradient(-135deg, #19262E, #abdada);
+  background: -o-linear-gradient(-135deg, #19262E, #abdada);
+  background: -moz-linear-gradient(-135deg, #19262E, #abdada);
+  background: linear-gradient(-135deg, #19262E, #abdada);
+  border-radius: 5px;
+  margin: 0;
+  padding:0;
+  height: 3.8em;
+  top: 0%;
+  opacity: 1;
+}
+
+#blocktypeReportBar h1 {
+  margin-left: 2em;
+  padding-top: 0.4em;
+}
+
+#blocktypeReportBar h1 {
+  margin-left: 2em;
+  padding-top: 0.4em;
+}
+
+#blocktypeReportBar a {
+  float:right;
+  margin-right: 1.1em;
+  margin-top: 0.2em;
+}
+
 #userEditBar a {
   float:right;
   margin-right: 1.1em;
@@ -3561,6 +3593,28 @@ footer img {
 
 #userExistingBlockEditorDiv {
   display: none;
+}
+
+#reportForBlocktypes {
+  display: none;
+}
+
+.reporter h2 {
+  font-family: 'Neuton', serif;
+  font-size: 36px;
+  margin-left: 2em;
+}
+
+.reporter p {
+  font-family: 'Neuton', serif;
+  font-size: 24px;
+  margin-left: 1em;
+}
+
+.reporter {
+  background-image: url(../img/background-2030242.jpg);
+  background-repeat: repeat;
+  background-size: 75%;
 }
 
 /*.day {

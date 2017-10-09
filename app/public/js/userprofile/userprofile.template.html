@@ -112,7 +112,7 @@
         <fieldset>
           <div id="existingBlocks">
             <a href="" class="btn" id="addBlocktype" ng-click="$ctrl.createNewBlocktype()">new block</a>
-            <a href="" class="btn" id="blockReporter">report</a>
+            <a href="" class="btn" id="blockReporter" ng-click="$ctrl.blocktypeReport()">report</a>
             <main ng-repeat="block in $ctrl.userblocktypes | orderBy : $ctrl.sortBy">
               <p>{{block.type}}</p><br>
               <div class="indiBlockEdit">
@@ -208,6 +208,32 @@
         </fieldset>
 
       </form>
+
+    </div>
+    <div id="reportForBlocktypes">
+      <div id="blocktypeReportBar">
+        <a href="" class="btn" id="blocktypeReportDone" ng-click="$ctrl.blocktypeReportDone()">done</a>
+        <h1>Blocktype Report</h1>
+      </div>
+      <div id="blocktypeReportBody">
+        <main ng-repeat="report in $ctrl.blockreporter | orderBy : $ctrl.sortBy">
+          <div class="reporter">
+            <h2>Block: {{report.type}}</h2>
+            <p>Timeblocks: {{report.totalTimeblocks}}</p>
+            <p>Past Blocks: {{report.pastBlockTotal}}</p>
+            <p>Today: {{report.todayBlockTotal}}</p>
+            <p>Future Blocks: {{report.futureBlockTotal}}</p>
+            <p>Total Hours: {{report.blocktypeHours}}</p>
+            <p>Past Hours: {{report.blocktypePastHours}}</p>
+            <p>Hours Today: {{report.blocktypeTodayHours}}</p>
+            <p>Future Hours: {{report.blocktypeFutureHours}}</p>
+            <p>Projected Hours for current Calendar week: {{report.blocktypeProjectedCalendarWeekHours}}</p>
+            <p>Projected Hours for Next Seven Days: {{report.blocktypeProjectedWeekHours}}</p>
+          </div>
+
+        </main>
+
+      </div>
 
     </div>
   </div>

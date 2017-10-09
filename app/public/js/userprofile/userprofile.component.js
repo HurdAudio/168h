@@ -71,6 +71,244 @@
       vm.editBlock = editBlock;
       vm.userExistingBlocksEditorDone = userExistingBlocksEditorDone;
       vm.createNewBlocktype = createNewBlocktype;
+      vm.blocktypeReport = blocktypeReport;
+      vm.blocktypeReportDone = blocktypeReportDone;
+
+      function getTense(block) {
+        let tense = '';
+        let today = new Date();
+        let start = new Date(block.start_time.slice(0, 16));
+        let end = new Date(block.end_time.slice(0, 16));
+        let checkDate;
+        if ((start.getFullYear() !== end.getFullYear()) || (start.getMonth() !== end.getMonth()) || (start.getDate() !== end.getDate())) {
+          checkDate = new Date(end);
+        } else {
+          checkDate = new Date(start);
+        }
+
+        if (checkDate.getFullYear() < today.getFullYear()) {
+          tense = 'past';
+        } else if (checkDate.getFullYear() > today.getFullYear()) {
+          tense = 'future';
+        } else {
+          if (checkDate.getMonth() < today.getMonth()) {
+            tense = 'past';
+          } else if (checkDate.getMonth() > today.getMonth()) {
+            tense = 'future';
+          } else {
+            if (checkDate.getDate() < today.getDate()) {
+              tense = 'past';
+            } else if (checkDate.getDate() > today.getDate()) {
+              tense = 'future';
+            } else {
+              tense = 'present';
+            }
+          }
+        }
+
+        return(tense);
+      }
+
+      function getHourTotal(timeblock) {
+
+        let start = new Date(timeblock.start_time.slice(0, 16));
+        let end = new Date(timeblock.end_time.slice(0, 16));
+        let hours = 0;
+
+        if ((end.getFullYear() > start.getFullYear()) || (end.getMonth() > start.getMonth()) || (end.getDate() > start.getDate())) {
+          hours = 24 - start.getHours();
+          if (start.getMinutes() === 30) {
+            hours -= 0.5;
+          }
+        } else if ((end.getFullYear() < start.getFullYear()) || (end.getMonth() < start.getMonth()) || (end.getDate() < start.getDate())) {
+          hours = end.getHours();
+          if (end.getMinutes() === 30) {
+            hours += 0.5;
+          }
+        } else {
+          hours = (end.getHours() - start.getHours());
+
+
+          if (end.getMinutes() === 30) {
+            hours += 0.5;
+          }
+          if (start.getMinutes() === 30) {
+            hours -= 0.5;
+          }
+        }
+
+
+
+
+        return(hours);
+      }
+
+      function sevenDayBlocks(blocks) {
+        let calendarBlocks = [];
+        let navDate = new Date();
+        let startTime;
+        let endTime;
+        let checkDate;
+
+        for (let i = 0; i < 7; i++) {
+          for (let index = 0; index < blocks.length; index++) {
+            startTime = new Date(blocks[index].start_time.slice(0, 16));
+            endTime = new Date(blocks[index].end_time.slice(0, 16));
+            if ((startTime.getFullYear() !== endTime.getFullYear()) || (startTime.getMonth() !== endTime.getMonth()) || (startTime.getDate() !== endTime.getDate())) {
+              checkDate = new Date(endTime);
+            } else {
+              checkDate = new Date(startTime);
+            }
+            if ((navDate.getFullYear() === checkDate.getFullYear()) && (navDate.getMonth() === checkDate.getMonth()) && (navDate.getDate() === checkDate.getDate())) {
+              calendarBlocks.push(blocks[index]);
+            }
+          }
+          navDate.setDate(navDate.getDate()+1);
+        }
+
+        return(calendarBlocks);
+      }
+
+      function calendarWeekBlocks(blocks) {
+        let calendarBlocks = [];
+        let navDate = new Date();
+        let startTime;
+        let endTime;
+        let checkDate;
+        if (navDate.getDay() !== 1) {
+          while (navDate.getDay() !== 1) {
+            navDate.setDate(navDate.getDate()-1);
+          }
+        }
+        for (let i = 0; i < 7; i++) {
+          for (let index = 0; index < blocks.length; index++) {
+            startTime = new Date(blocks[index].start_time.slice(0, 16));
+            endTime = new Date(blocks[index].end_time.slice(0, 16));
+            if ((startTime.getFullYear() !== endTime.getFullYear()) || (startTime.getMonth() !== endTime.getMonth()) || (startTime.getDate() !== endTime.getDate())) {
+              checkDate = new Date(endTime);
+            } else {
+              checkDate = new Date(startTime);
+            }
+            if ((navDate.getFullYear() === checkDate.getFullYear()) && (navDate.getMonth() === checkDate.getMonth()) && (navDate.getDate() === checkDate.getDate())) {
+              calendarBlocks.push(blocks[index]);
+            }
+          }
+          navDate.setDate(navDate.getDate()+1);
+        }
+
+        return(calendarBlocks);
+      }
+
+      function tallyBlocktypehours(index, timeblocks) {
+        let totalHours = 0;
+        let pastHours = 0;
+        let presentHours = 0;
+        let futureHours = 0;
+        let calendarHours = 0;
+        let sevenDayHours = 0;
+        let total = timeblocks.filter(block=>{
+          return(block.block_type === vm.blockreporter[index].id);
+        });
+        vm.blockreporter[index].totalTimeblocks = total.length;
+        let past = total.filter(block=>{
+          return(getTense(block) === 'past');
+        });
+        let present = total.filter(block=>{
+          return(getTense(block) === 'present');
+        });
+        let future = total.filter(block=>{
+          return(getTense(block) === 'future');
+        });
+        let calendarWeek = calendarWeekBlocks(total);
+        let week = sevenDayBlocks(total);
+        vm.blockreporter[index].pastBlockTotal = past.length;
+        vm.blockreporter[index].todayBlockTotal = present.length;
+        vm.blockreporter[index].futureBlockTotal = future.length;
+
+        if (total.length > 0) {
+          for (let totalIndex = 0; totalIndex < total.length; totalIndex++) {
+            totalHours += getHourTotal(total[totalIndex]);
+          }
+        }
+        if (past.length > 0) {
+          for (let pastIndex = 0; pastIndex < past.length; pastIndex++) {
+            pastHours += getHourTotal(past[pastIndex]);
+          }
+        }
+        if (present.length > 0) {
+          for (let presentIndex = 0; presentIndex < present.length; presentIndex++) {
+            presentHours += getHourTotal(present[presentIndex]);
+          }
+        }
+        if (future.length > 0) {
+          for (let futureIndex = 0; futureIndex < future.length; futureIndex++) {
+            futureHours += getHourTotal(future[futureIndex]);
+          }
+        }
+        if (calendarWeek.length > 0) {
+          for (let calendarWeekIndex = 0; calendarWeekIndex < calendarWeek.length; calendarWeekIndex++) {
+            calendarHours += getHourTotal(calendarWeek[calendarWeekIndex]);
+          }
+        }
+        if (week.length > 0) {
+          for (let weekIndex = 0; weekIndex < week.length; weekIndex++) {
+            sevenDayHours += getHourTotal(week[weekIndex]);
+          }
+        }
+        vm.blockreporter[index].blocktypeHours = totalHours;
+        vm.blockreporter[index].blocktypePastHours = pastHours;
+        vm.blockreporter[index].blocktypeTodayHours = presentHours;
+        vm.blockreporter[index].blocktypeFutureHours = futureHours;
+        vm.blockreporter[index].blocktypeProjectedCalendarWeekHours = calendarHours;
+        vm.blockreporter[index].blocktypeProjectedWeekHours = sevenDayHours;
+      }
+
+      function blockReportCollectData() {
+        $http.get(`/timeblocksbyuser/${currentUserId}`)
+        .then(timeblocksData=>{
+          let timeblocks = timeblocksData.data;
+          if (vm.blockreporter.length > 0) {
+            for (let i = 0; i < vm.blockreporter.length; i++) {
+              tallyBlocktypehours(i, timeblocks);
+            }
+          }
+        });
+      }
+
+      function blocktypeReport() {
+        let reportForBlocktypes = document.getElementById('reportForBlocktypes');
+        let userExistingBlockEditorDiv = document.getElementById('userExistingBlockEditorDiv');
+        let blockEditDone = document.getElementById('blockEditDone');
+
+        $http.get(`/blocktypesbyuser/${currentUserId}`)
+        .then(blocksData=>{
+          let blocks = blocksData.data;
+          vm.blockreporter = blocks.sort((a, b)=>{
+            if (a.type.toLowerCase() < b.type.toLowerCase()) {
+              return -1;
+            } else if (a.type.toLowerCase() > b.type.toLowerCase()) {
+              return 1;
+            } else {
+              return 0;
+            }
+          });
+          blockReportCollectData();
+        });
+
+
+        reportForBlocktypes.setAttribute("style", "display: initial;");
+        userExistingBlockEditorDiv.setAttribute("style", "display: none;");
+        blockEditDone.setAttribute("style", "visibility: hidden;");
+      }
+
+      function blocktypeReportDone() {
+        let reportForBlocktypes = document.getElementById('reportForBlocktypes');
+        let blockEditDone = document.getElementById('blockEditDone');
+
+
+        reportForBlocktypes.setAttribute("style", "display: none;");
+        blockEditDone.setAttribute("style", "visibility: visible;");
+      }
 
       function createNewBlocktype() {
         let subObj = {
@@ -248,6 +486,7 @@
       }
 
       function editBlock(blockId) {
+        let reportForBlocktypes = document.getElementById('reportForBlocktypes');
         let userExistingBlockEditorDiv = document.getElementById('userExistingBlockEditorDiv');
         let blockEditDone = document.getElementById('blockEditDone');
         let existingBlockEditorTitle = document.getElementById('existingBlockEditorTitle');
@@ -467,6 +706,7 @@
         });
 
         userExistingBlockEditorDiv.setAttribute("style", "display: initial;");
+        reportForBlocktypes.setAttribute("style", "display: none;");
         blockEditDone.setAttribute("style", "visibility: hidden;");
       }
 
