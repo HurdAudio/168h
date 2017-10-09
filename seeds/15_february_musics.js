@@ -1300,6 +1300,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 73,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3110169150/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://charlesgayle.bandcamp.com/album/streets-2',
+          a_string: 'Streets by Charles Gayle',
+          rule: {
+            "monday": [ 28, 22, 24, 30 ],
+            "tuesday": [ 11, 16, 18, 30 ],
+            "wednesday": [ 12, 16, 18, 22 ],
+            "thursday": [ 14, 18, 20, 24 ],
+            "saturday": [ 16, 20, 22, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 74,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1647596655/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://christianscott.bandcamp.com/album/the-emancipation-procrastination',
+          a_string: 'The Emancipation Procrastination by Christian Scott aTunde Adjuah',
+          rule: {
+            "monday": [ 16, 20, 22, 24  ],
+            "tuesday": [ 28, 22, 24, 30 ],
+            "wednesday": [ 11, 16, 18, 30 ],
+            "thursday": [ 12, 16, 18, 22 ],
+            "saturday": [ 14, 18, 20, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 75,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2371693952/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://mulatuastatke.bandcamp.com/album/mulatu-of-ethiopia',
+          a_string: 'Mulatu Of Ethiopia by Mulatu Astatke',
+          rule: {
+            "monday": [ 14, 18, 20, 24 ],
+            "tuesday": [ 16, 20, 22, 24 ],
+            "wednesday": [ 28, 22, 24, 30 ],
+            "thursday": [ 11, 16, 18, 30 ],
+            "saturday": [ 12, 16, 18, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
