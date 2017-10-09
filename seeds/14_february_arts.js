@@ -2504,6 +2504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 126,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/edhamilton-8.jpg',
+          title: 'The Unfinished March',
+          artist: 'Ed Hamilton',
+          year: '2014',
+          rule: {
+            "monday": [ 25, 1, 7, 17 ],
+            "tuesday": [ 24, 3, 11, 19 ],
+            "wednesday": [ 26, 7, 13, 21 ],
+            "thursday": [ 28, 7, 15, 25 ],
+            "friday": [ 1, 9, 5, 24 ],
+            "saturday": [ 18, 26, 5, 13 ],
+            "sunday": [ 20, 28, 7, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 127,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/download.jpeg',
+          title: 'Nadir',
+          artist: 'Patrick Earl Hammie',
+          year: '2012',
+          rule: {
+            "monday": [ 20, 28, 7, 15 ],
+            "tuesday": [ 25, 1, 7, 17 ],
+            "wednesday": [ 24, 3, 11, 19 ],
+            "thursday": [ 26, 7, 13, 21 ],
+            "friday": [ 28, 7, 15, 25 ],
+            "saturday": [ 1, 9, 5, 24 ],
+            "sunday": [ 18, 26, 5, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 128,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Trenton-Doyle-Hancock-I-Know-Just-How-You-Feel-2015.jpg',
+          title: 'I Know Just How You Feel',
+          artist: 'Trenton Doyle Hancock',
+          year: '2015',
+          rule: {
+            "monday": [ 18, 26, 5, 13 ],
+            "tuesday": [ 20, 28, 7, 15 ],
+            "wednesday": [ 25, 1, 7, 17 ],
+            "thursday": [ 24, 3, 11, 19 ],
+            "friday": [ 26, 7, 13, 21 ],
+            "saturday": [ 28, 7, 15, 25 ],
+            "sunday": [ 1, 9, 5, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 129,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Edwin_A._Harleston_-_Portrait_of_a_Woman_-_Google_Art_Project.jpg',
+          title: 'Portrait of a Woman',
+          artist: 'Edwin Harleston',
+          year: '1920',
+          rule: {
+            "monday": [ 1, 9, 5, 24 ],
+            "tuesday": [ 18, 26, 5, 13 ],
+            "wednesday": [ 20, 28, 7, 15 ],
+            "thursday": [ 25, 1, 7, 17 ],
+            "friday": [ 24, 3, 11, 19 ],
+            "saturday": [ 26, 7, 13, 21 ],
+            "sunday": [ 28, 7, 15, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 130,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/5dd417f42367bdb5ba3694e21269489d--the-block-pastel.jpg',
+          title: 'The Block',
+          artist: 'Kira Lynn Harris',
+          year: '2011',
+          rule: {
+            "monday": [ 28, 7, 15, 25 ],
+            "tuesday": [ 1, 9, 5, 24 ],
+            "wednesday": [ 18, 26, 5, 13 ],
+            "thursday": [ 20, 28, 7, 15 ],
+            "friday": [ 25, 1, 7, 17 ],
+            "saturday": [ 24, 3, 11, 19 ],
+            "sunday": [ 26, 7, 13, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
