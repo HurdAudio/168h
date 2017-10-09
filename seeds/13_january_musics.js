@@ -1408,6 +1408,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 79,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3587405953/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jaceclayton.bandcamp.com/album/the-julius-eastman-memory-depot',
+          a_string: 'The Julius Eastman Memory Depot by Jace Clayton',
+          rule: {
+            "monday": [ 18, 25, 27, 26 ],
+            "tuesday": [ 16, 20, 22, 26 ],
+            "wednesday": [ 18, 25, 27, 26 ],
+            "thursday": [ 26, 20, 22, 27 ],
+            "saturday": [ 22, 16, 18, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 80,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3445780043/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://katrinaballads.bandcamp.com/album/katrina-ballads',
+          a_string: 'Katrina Ballads by Ted Hearne',
+          rule: {
+            "monday": [ 22, 16, 18, 6 ],
+            "tuesday": [ 18, 25, 27, 26 ],
+            "wednesday": [ 16, 20, 22, 26 ],
+            "thursday": [ 18, 25, 27, 26 ],
+            "saturday": [ 26, 20, 22, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 81,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3685033168/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://danielwohl.bandcamp.com/album/corps-exquis',
+          a_string: 'Corps Exquis by Daniel Wohl &amp; TRANSIT',
+          rule: {
+            "monday": [ 26, 20, 22, 27 ],
+            "tuesday": [ 22, 16, 18, 6 ],
+            "wednesday": [ 18, 25, 27, 26 ],
+            "thursday": [ 16, 20, 22, 26 ],
+            "saturday": [ 18, 25, 27, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
