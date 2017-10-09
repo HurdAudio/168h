@@ -117,7 +117,7 @@
               <p>{{block.type}}</p><br>
               <div class="indiBlockEdit">
                 <a href="" class="btn" ng-click="$ctrl.editBlock(block.id)">edit</a>
-              <a href="" class="btn" ng-cick="$ctrl.deleteBlock(block.id)">delete</a>
+              <a href="" class="btn" ng-click="$ctrl.deleteBlock(block.id)">delete</a>
             </div>
             </main>
 
@@ -208,6 +208,27 @@
         </fieldset>
 
       </form>
+
+    </div>
+    <div id="deleteBlocktypeConfirm">
+      <div id="deleteBlocktypeConfirmBar">
+        <h1 id="deleteBlocktypeTitle">Delete?</h1>
+
+      </div>
+      <div id="deleteBlocktypeConfirmField">
+        <p id="deleteBlocktypeQuery"></p>
+        <p id="deleteBlocktypeTotalBlocks"></p>
+        <p id="deleteBlocktypePastBlocks"></p>
+        <p id="deleteBlocktypeTodayBlocks"></p>
+        <p id="deleteBlocktypeFutureBlocks"></p>
+        <div id="deleteBlocktypeButtons">
+          <a href="" class="btn" id="deleteBlocktypeCancelConfirm">confirm</a>
+          <a href="" class="btn" id="deleteBlocktypeCancelButton">cancel</a>
+        </div>
+        <br><br><br>
+        <p></p>
+
+      </div>
 
     </div>
     <div id="reportForBlocktypes">

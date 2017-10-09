@@ -2993,6 +2993,34 @@ footer img {
   margin-top: 0.2em;
 }
 
+#deleteBlocktypeConfirmBar {
+  font-family: 'Asul', serif;
+  font-size: 18px
+  background: #19262E;
+  background-color: -webkit-linear-gradient(-135deg, #19262E, #abdada);
+  background: -o-linear-gradient(-135deg, #19262E, #abdada);
+  background: -moz-linear-gradient(-135deg, #19262E, #abdada);
+  background: linear-gradient(-135deg, #19262E, #abdada);
+  border-radius: 5px;
+  margin: 0;
+  padding:0;
+  height: 3.8em;
+  top: 0%;
+  opacity: 1;
+}
+
+#deleteBlocktypeConfirmBar h1 {
+  margin-left: 2em;
+  padding-top: 0.4em;
+}
+
+
+#deleteBlocktypeConfirmBar a {
+  float:right;
+  margin-right: 1.1em;
+  margin-top: 0.2em;
+}
+
 #userEditBar a {
   float:right;
   margin-right: 1.1em;
@@ -3146,6 +3174,7 @@ footer img {
   margin-left: 2em;
 }
 
+
 .removal {
   float: left;
   margin: 1em 0 0.2em 0;
@@ -3154,6 +3183,48 @@ footer img {
   background: -o-linear-gradient(135deg, #19262E, #abdada);
   background: -moz-linear-gradient(135deg, #19262E, #abdada);
   background: linear-gradient(135deg, #19262E, #abdada);
+}
+
+#deleteBlocktypeConfirm {
+  display: none;
+}
+
+#deleteBlocktypeConfirmField {
+  font-family: 'Alike Angular', serif;
+  font-size: 24px;
+  background: #22ac44;
+  background-color: -webkit-linear-gradient(135deg, #22ac44, #abdada);
+  background: -o-linear-gradient(135deg, #22ac44, #abdada);
+  background: -moz-linear-gradient(135deg, #22ac44, #abdada);
+  background: linear-gradient(135deg, #22ac44, #abdada);
+  border-radius: 5px;
+  opacity: 1;
+}
+
+#deleteBlocktypeConfirmField a {
+  float: left;
+  margin-left: 3.2em;
+}
+
+#deleteBlocktypeConfirmField p {
+  margin-left: 2em;
+}
+
+#deleteBlocktypeConfirmField input[type=text] {
+  margin-left: 3em;
+  margin-right: 0;
+}
+
+#deleteBlocktypeConfirmField input[type=checkbox] {
+  -ms-transform: scale(3); /* IE */
+  -moz-transform: scale(3); /* FF */
+  -webkit-transform: scale(3); /* Safari and Chrome */
+  -o-transform: scale(3); /* Opera */
+  margin-bottom: 0.5em;
+}
+
+#deleteBlocktypeConfirmField button {
+  margin-left: 2em;
 }
 
 #weekSubsEntry {

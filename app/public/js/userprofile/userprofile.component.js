@@ -73,6 +73,106 @@
       vm.createNewBlocktype = createNewBlocktype;
       vm.blocktypeReport = blocktypeReport;
       vm.blocktypeReportDone = blocktypeReportDone;
+      vm.deleteBlock = deleteBlock;
+
+      function deleteBlock(blockId) {
+        console.log(blockId);
+        let deleteBlocktypeConfirm = document.getElementById('deleteBlocktypeConfirm');
+        let reportForBlocktypes = document.getElementById('reportForBlocktypes');
+        let blocktypeEditDiv = document.getElementById('blocktypeEditDiv');
+        let deleteBlocktypeConfirmField = document.getElementById('deleteBlocktypeConfirmField');
+        let deleteBlocktypeConfirmBar = document.getElementById('deleteBlocktypeConfirmBar');
+        let deleteBlocktypeTitle = document.getElementById('deleteBlocktypeTitle');
+        let deleteBlocktypeQuery = document.getElementById('deleteBlocktypeQuery');
+        let deleteBlocktypeTotalBlocks = document.getElementById('deleteBlocktypeTotalBlocks');
+        let deleteBlocktypePastBlocks = document.getElementById('deleteBlocktypePastBlocks');
+        let deleteBlocktypeTodayBlocks = document.getElementById('deleteBlocktypeTodayBlocks');
+        let deleteBlocktypeFutureBlocks = document.getElementById('deleteBlocktypeFutureBlocks');
+        let deleteBlocktypeButtons = document.getElementById('deleteBlocktypeButtons');
+        let deleteBlocktypeCancelConfirm = document.getElementById('deleteBlocktypeCancelConfirm');
+        if (deleteBlocktypeCancelConfirm) {
+          deleteBlocktypeCancelConfirm.parentNode.removeChild(deleteBlocktypeCancelConfirm);
+          deleteBlocktypeCancelConfirm = document.createElement('a');
+          deleteBlocktypeButtons.appendChild(deleteBlocktypeCancelConfirm);
+          deleteBlocktypeCancelConfirm.id = 'deleteBlocktypeCancelConfirm';
+          deleteBlocktypeCancelConfirm.className = 'btn';
+          deleteBlocktypeCancelConfirm.innerHTML = 'confirm';
+          deleteBlocktypeCancelConfirm.setAttribute("style", "cursor: pointer;");
+        }
+        let deleteBlocktypeCancelButton = document.getElementById('deleteBlocktypeCancelButton');
+        if (deleteBlocktypeCancelButton) {
+          deleteBlocktypeCancelButton.parentNode.removeChild(deleteBlocktypeCancelButton);
+          deleteBlocktypeCancelButton = document.createElement('a');
+          deleteBlocktypeButtons.appendChild(deleteBlocktypeCancelButton);
+          deleteBlocktypeCancelButton.id = 'deleteBlocktypeCancelButton';
+          deleteBlocktypeCancelButton.className = 'btn';
+          deleteBlocktypeCancelButton.innerHTML = 'cancel';
+          deleteBlocktypeCancelButton.setAttribute("style", "cursor: pointer;");
+        }
+
+        deleteBlocktypeConfirm.setAttribute("style", "display: initial;");
+        reportForBlocktypes.setAttribute("style", "display: none;");
+        blocktypeEditDiv.setAttribute("style", "display: none;");
+
+
+        $http.get(`/blocktypes/${blockId}`)
+        .then(blockData=>{
+          let block = blockData.data;
+          deleteBlocktypeConfirmField.setAttribute("style", "background: " + block.color + "; background-color: -webkit-linear-gradient(135deg, " + block.color + ", #abdada); background: -o-linear-gradient(135deg, " + block.color + ", #abdada); background: -moz-linear-gradient(135deg, " + block.color + ", #abdada); background: linear-gradient(135deg, " + block.color + ", #abdada);");
+          deleteBlocktypeConfirmBar.setAttribute("style", "background: " + block.color + "; background-color: -webkit-linear-gradient(-135deg, " + block.color + ", #abdada); background: -o-linear-gradient(-135deg, " + block.color + ", #abdada); background: -moz-linear-gradient(-135deg, " + block.color + ", #abdada); background: linear-gradient(-135deg, " + block.color + ", #abdada);");
+          deleteBlocktypeTitle.innerHTML = 'Delete ' + block.type + '?';
+          deleteBlocktypeQuery.innerHTML = 'Delete ' + block.type + '?';
+          $http.get(`/timeblocksbyuser/${currentUserId}`)
+          .then(timeblocksData=>{
+            let timeblocks = timeblocksData.data;
+            let total = timeblocks.filter(tblock=>{
+              return(tblock.block_type === block.id);
+            });
+            if (total.length > 0) {
+              if (total.length === 1) {
+                deleteBlocktypeTotalBlocks.innerHTML = 'Currently referenced in ' + total.length + ' timeblock.';
+              } else {
+                deleteBlocktypeTotalBlocks.innerHTML = 'Currently referenced in ' + total.length + ' timeblocks.';
+              }
+              let past = total.filter(block=>{
+                return(getTense(block) === 'past');
+              });
+              let present = total.filter(block=>{
+                return(getTense(block) === 'present');
+              });
+              let future = total.filter(block=>{
+                return(getTense(block) === 'future');
+              });
+              if (past.length > 0) {
+                deleteBlocktypePastBlocks.innerHTML = 'Referenced in ' + past.length + " prior to today.";
+              }
+              if (present.length > 0) {
+                deleteBlocktypeTodayBlocks.innerHTML = 'Referenced in ' + present.length + ' today.';
+              }
+              if (future.length > 0) {
+                deleteBlocktypeFutureBlocks.innerHTML = 'Referenced in ' + future.length + ' after today.';
+              }
+            }
+
+            deleteBlocktypeCancelConfirm.addEventListener('click', ()=>{
+              $http.delete(`/blocktypes/${blockId}`)
+              .then(()=>{
+                deleteBlocktypeConfirm.setAttribute("style", "display: none;");
+                blocktypeEditor();
+                setUserBlockTypes();
+              });
+            });
+
+            deleteBlocktypeCancelButton.addEventListener('click', ()=>{
+              deleteBlocktypeConfirm.setAttribute("style", "display: none;");
+              blocktypeEditDiv.setAttribute("style", "display: initial;");
+            });
+
+          });
+        });
+
+
+      }
 
       function getTense(block) {
         let tense = '';
