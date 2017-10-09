@@ -604,6 +604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 31,
+          user_id: 1,
+          theme: 'pulp',
+          img_path: './img/december/1941-05,Cosmic.jpg',
+          title: 'Cosmic',
+          artist: 'Hannes Bok',
+          year: '1941',
+          rule: {
+            "monday": [ 2, 15, 23, 29 ],
+            "tuesday": [ 8, 21, 29, 4 ],
+            "wednesday": [ 7, 20, 28, 3 ],
+            "thursday": [ 6, 19, 27, 2 ],
+            "friday": [ 5, 18, 26, 1 ],
+            "saturday": [ 4, 17, 25, 31 ],
+            "sunday": [ 3, 16, 24, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 32,
+          user_id: 1,
+          theme: 'pulp',
+          img_path: './img/december/23-04-21,Judge.jpg',
+          title: 'Judge',
+          artist: 'Enoch Bolles',
+          year: '1923',
+          rule: {
+            "monday": [ 3, 16, 24, 30 ],
+            "tuesday": [ 2, 15, 23, 29 ],
+            "wednesday": [ 8, 21, 29, 4 ],
+            "thursday": [ 7, 20, 28, 3 ],
+            "friday": [ 6, 19, 27, 2 ],
+            "saturday": [ 5, 18, 26, 1 ],
+            "sunday": [ 4, 17, 25, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 33,
+          user_id: 1,
+          theme: 'pulp',
+          img_path: './img/december/52-00,MysteryRanch.jpg',
+          title: 'Pocket Book #895',
+          artist: 'Stanley Borack',
+          year: '1952',
+          rule: {
+            "monday": [ 4, 17, 25, 31 ],
+            "tuesday": [ 3, 16, 24, 30 ],
+            "wednesday": [ 2, 15, 23, 29 ],
+            "thursday": [ 8, 21, 29, 4 ],
+            "friday": [ 7, 20, 28, 3 ],
+            "saturday": [ 6, 19, 27, 2 ],
+            "sunday": [ 5, 18, 26, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 34,
+          user_id: 1,
+          theme: 'pulp',
+          img_path: './img/december/02-00,TheFrenchReople.jpg',
+          title: 'The French People',
+          artist: 'Arthur R. Bowker',
+          year: '1902',
+          rule: {
+            "monday": [ 5, 18, 26, 1 ],
+            "tuesday": [ 4, 17, 25, 31 ],
+            "wednesday": [ 3, 16, 24, 30 ],
+            "thursday": [ 2, 15, 23, 29 ],
+            "friday": [ 8, 21, 29, 4 ],
+            "saturday": [ 7, 20, 28, 3 ],
+            "sunday": [ 6, 19, 27, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 35,
+          user_id: 1,
+          theme: 'pulp',
+          img_path: './img/december/42-08,FantAdv1.jpg',
+          title: 'Fantastic Adv.',
+          artist: 'William J. Brady',
+          year: '1942',
+          rule: {
+            "monday": [ 7, 20, 28, 3 ],
+            "tuesday": [ 6, 19, 27, 2 ],
+            "wednesday": [ 5, 18, 26, 1 ],
+            "thursday": [ 4, 17, 25, 31 ],
+            "friday": [ 3, 16, 24, 30 ],
+            "saturday": [ 9, 22, 30, 5 ],
+            "sunday": [ 8, 21, 29, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
