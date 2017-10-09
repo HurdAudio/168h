@@ -2104,6 +2104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 106,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/Nationals Park-sm crop-001_0_0.jpg',
+          title: 'Nationals Park, Washington D.C.',
+          artist: 'Anonymous',
+          year: '2010 - 2011',
+          rule: {
+            "monday": [ 29, 19, 25, 2 ],
+            "tuesday": [ 14, 19, 25, 1 ],
+            "wednesday": [ 13, 17, 2, 30 ],
+            "thursday": [ 12, 17, 22, 29 ],
+            "friday": [ 11, 16, 22, 28 ],
+            "saturday": [ 10, 15, 21, 27 ],
+            "sunday": [ 15, 21, 26, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 107,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/2015-05-05-nationals-park-large.jpg',
+          title: 'Nationals Park',
+          artist: 'Joel Winstead',
+          year: '2015',
+          rule: {
+            "monday": [ 15, 21, 26, 3 ],
+            "tuesday": [ 29, 19, 25, 2 ],
+            "wednesday": [ 14, 19, 25, 1 ],
+            "thursday": [ 13, 17, 2, 30 ],
+            "friday": [ 12, 17, 22, 29 ],
+            "saturday": [ 11, 16, 22, 28 ],
+            "sunday": [ 10, 15, 21, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 108,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/Stephen-Strasburg-Washington-Nationals-MLB-Fine-Art-Prints.jpg',
+          title: 'Stephen Strasburg Washington Nationals',
+          artist: 'VIP Sports Photos',
+          year: 'XXI cent.',
+          rule: {
+            "monday": [ 10, 15, 21, 27 ],
+            "tuesday": [ 15, 21, 26, 3 ],
+            "wednesday": [ 29, 19, 25, 2 ],
+            "thursday": [ 14, 19, 25, 1 ],
+            "friday": [ 13, 17, 2, 30 ],
+            "saturday": [ 12, 17, 22, 29 ],
+            "sunday": [ 11, 16, 22, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 109,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/d8aa8bc7c76d0017f2fb0b34fc88896e--baseball-teams-baseball-season.jpg',
+          title: 'BRYCE HARPER Washington Nationals Baseball',
+          artist: 'IslandCustomDesigns',
+          year: 'XXI cent.',
+          rule: {
+            "monday": [ 11, 16, 22, 28 ],
+            "tuesday": [ 10, 15, 21, 27 ],
+            "wednesday": [ 15, 21, 26, 3 ],
+            "thursday": [ 29, 19, 25, 2 ],
+            "friday": [ 14, 19, 25, 1 ],
+            "saturday": [ 13, 17, 2, 30 ],
+            "sunday": [ 12, 17, 22, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 110,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/washington_nationals_2012_uniforms_by_jayjaxon-d4uia95.png',
+          title: 'Washington Nationals 2012 Uniforms',
+          artist: 'Jason Jaxon',
+          year: '2012',
+          rule: {
+            "monday": [ 12, 17, 22, 29 ],
+            "tuesday": [ 11, 16, 22, 28 ],
+            "wednesday": [ 10, 15, 21, 27 ],
+            "thursday": [ 15, 21, 26, 3 ],
+            "friday": [ 29, 19, 25, 2 ],
+            "saturday": [ 14, 19, 25, 1 ],
+            "sunday": [ 13, 17, 2, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
