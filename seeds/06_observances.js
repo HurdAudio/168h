@@ -8371,6 +8371,39 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 534,
+          user_id: 1,
+          name: 'Janel Leppin (cello/voice), born 1981',
+          color: '#782E0E',
+          picture: './img/musicians/janelleppin.jpg',
+          day_of: new Date ('1981-02-13T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: true,
+          override_content: {
+            "sources": [ 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp' ],
+            "src_strings": [ 'https://bandcamp.com/EmbeddedPlayer/album=64459792/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=243232998/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=4034378625/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=1370596060/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/' ],
+            "href_strings": [ 'http://janelleppin.bandcamp.com/album/american-god', 'http://janelleppin.bandcamp.com/album/mellow-diamond', 'http://janelleppin.bandcamp.com/album/songs-for-voice-and-mellotron', 'http://cuneiformrecords.bandcamp.com/album/where-is-home-2' ],
+            "a_strings": [ 'American God by Mellow Diamond', 'Mellow Diamond by Janel Leppin', 'Songs for Voice and Mellotron by Janel Leppin', 'Where Is Home by Janel and Anthony' ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 535,
+          user_id: 1,
+          name: 'The world ended on this day in 2017 due to the Nibiru Cataclysm when the invisible planet Nibiru collided with the Earth and triggered the rapture according to David Meade',
+          color: '#1F141A',
+          picture: './img/doomsday/nibirucataclysm.jpg',
+          day_of: new Date ('2017-09-23T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
