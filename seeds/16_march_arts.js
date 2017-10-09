@@ -2304,6 +2304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 116,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/untitled-blue-octagon-1964.jpg',
+          title: 'Untitled (Blue Octagon)',
+          artist: 'Mary Corse',
+          year: '1964',
+          rule: {
+            "monday": [ 11, 21, 29, 8 ],
+            "tuesday": [ 10, 20, 29, 7 ],
+            "wednesday": [ 16, 25, 3, 12 ],
+            "thursday": [ 15, 25, 4, 12 ],
+            "friday": [ 14, 24, 1, 11 ],
+            "saturday": [ 13, 23, 31, 10 ],
+            "sunday": [ 12, 22, 30, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 117,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/arm-extensions-1968.jpg',
+          title: 'Arm Extensions',
+          artist: 'Rebecca Horn',
+          year: '1968',
+          rule: {
+            "monday": [ 12, 22, 30, 9 ],
+            "tuesday": [ 11, 21, 29, 8 ],
+            "wednesday": [ 10, 20, 29, 7 ],
+            "thursday": [ 16, 25, 3, 12 ],
+            "friday": [ 15, 25, 4, 12 ],
+            "saturday": [ 14, 24, 1, 11 ],
+            "sunday": [ 13, 23, 31, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 118,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/ladder-1981.jpg',
+          title: 'Ladder',
+          artist: 'Harmony Hammond',
+          year: '1981',
+          rule: {
+            "monday": [ 13, 23, 31, 10 ],
+            "tuesday": [ 12, 22, 30, 9 ],
+            "wednesday": [ 11, 21, 29, 8 ],
+            "thursday": [ 10, 20, 29, 7 ],
+            "friday": [ 16, 25, 3, 12 ],
+            "saturday": [ 15, 25, 4, 12 ],
+            "sunday": [ 14, 24, 1, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 119,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/mad-russian-blanket-1977.jpg',
+          title: 'Mad Russian Blanket',
+          artist: 'Joyce Kozloff',
+          year: '1977',
+          rule: {
+            "monday": [ 15, 25, 2, 12 ],
+            "tuesday": [ 14, 24, 1, 11 ],
+            "wednesday": [ 13, 23, 31, 10 ],
+            "thursday": [ 12, 22, 30, 9 ],
+            "friday": [ 11, 21, 30, 8 ],
+            "saturday": [ 17, 26, 4, 13 ],
+            "sunday": [ 16, 26, 5, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 120,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/the-dancer-1938.jpg',
+          title: 'The Dancer',
+          artist: 'Greta Freist',
+          year: '1938',
+          rule: {
+            "monday": [ 16, 26, 5, 13 ],
+            "tuesday": [ 15, 25, 2, 12 ],
+            "wednesday": [ 14, 24, 1, 11 ],
+            "thursday": [ 13, 23, 31, 10 ],
+            "friday": [ 12, 22, 30, 9 ],
+            "saturday": [ 11, 21, 30, 8 ],
+            "sunday": [ 17, 26, 4, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
