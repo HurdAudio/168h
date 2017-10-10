@@ -1404,6 +1404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 71,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/j-zef-pankiewicz-jasie-ski-przy-fortepianie-1908.jpg',
+          title: 'Feliks Jasieński Przy Fortepianie',
+          artist: 'Józef Pankiewicz',
+          year: '1908',
+          rule: {
+            "monday": [ 13, 16, 25, 10 ],
+            "tuesday": [ 12, 16, 24, 9 ],
+            "wednesday": [ 11, 15, 23, 8 ],
+            "thursday": [ 10, 14, 22, 7 ],
+            "friday": [ 9, 12, 21, 6 ],
+            "saturday": [ 8, 12, 20, 5 ],
+            "sunday": [ 14, 18, 26, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 72,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/lunes-et-petites-lunes-tournez.jpg',
+          title: 'Lunes et petites lunes tournez',
+          artist: 'Louis Soutter',
+          year: '?',
+          rule: {
+            "monday": [ 14, 18, 26, 11 ],
+            "tuesday": [ 13, 16, 25, 10 ],
+            "wednesday": [ 12, 16, 24, 9 ],
+            "thursday": [ 11, 15, 23, 8 ],
+            "friday": [ 10, 14, 22, 7 ],
+            "saturday": [ 9, 12, 21, 6 ],
+            "sunday": [ 8, 12, 20, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 73,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/japonese-props-1930.jpg',
+          title: 'Japonese Props',
+          artist: 'Theodor Pallady',
+          year: '1930',
+          rule: {
+            "monday": [ 8, 12, 20, 5 ],
+            "tuesday": [ 14, 18, 26, 11 ],
+            "wednesday": [ 13, 16, 25, 10 ],
+            "thursday": [ 12, 16, 24, 9 ],
+            "friday": [ 11, 15, 23, 8 ],
+            "saturday": [ 10, 14, 22, 7 ],
+            "sunday": [ 9, 12, 21, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 74,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/notable-day-in-the-mountains-1926.jpg',
+          title: 'Notable day in the mountains',
+          artist: 'Martiros Sarian',
+          year: '1926',
+          rule: {
+            "monday": [ 9, 12, 21, 6 ],
+            "tuesday": [ 8, 12, 20, 5 ],
+            "wednesday": [ 14, 18, 26, 11 ],
+            "thursday": [ 13, 16, 25, 10 ],
+            "friday": [ 12, 16, 24, 9 ],
+            "saturday": [ 11, 15, 23, 8 ],
+            "sunday": [ 10, 14, 22, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 75,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/the-kiss-1904.jpg',
+          title: 'The Kiss',
+          artist: 'Clarence White',
+          year: '1904',
+          rule: {
+            "monday": [ 10, 14, 22, 7 ],
+            "tuesday": [ 9, 12, 21, 6 ],
+            "wednesday": [ 8, 12, 20, 5 ],
+            "thursday": [ 14, 18, 26, 11 ],
+            "friday": [ 13, 16, 25, 10 ],
+            "saturday": [ 12, 16, 24, 9 ],
+            "sunday": [ 11, 15, 23, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
