@@ -804,6 +804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 41,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/mile-long-drawing.jpg',
+          title: 'Mile Long Drawing',
+          artist: 'Walter De Maria',
+          year: '?',
+          rule: {
+            "monday": [ 10, 15, 21, 26 ],
+            "tuesday": [ 9, 14, 20, 25 ],
+            "wednesday": [ 8, 13, 19, 24 ],
+            "thursday": [ 7, 12, 18, 25 ],
+            "friday": [ 13, 18, 24, 29 ],
+            "saturday": [ 12, 17, 23, 28 ],
+            "sunday": [ 11, 16, 22, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 42,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/unknown-title.jpg',
+          title: 'unknown title',
+          artist: 'Roman Cotosman',
+          year: '?',
+          rule: {
+            "monday": [ 12, 17, 23, 28 ],
+            "tuesday": [ 11, 16, 22, 27 ],
+            "wednesday": [ 10, 15, 21, 26 ],
+            "thursday": [ 9, 14, 20, 25 ],
+            "friday": [ 8, 13, 19, 26 ],
+            "saturday": [ 14, 19, 25, 30 ],
+            "sunday": [ 13, 18, 24, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 43,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/leeward-traffic-1966.jpg',
+          title: 'Leeward Traffic',
+          artist: 'Robert Huot',
+          year: '1966',
+          rule: {
+            "monday": [ 13, 18, 24, 29 ],
+            "tuesday": [ 12, 17, 23, 28 ],
+            "wednesday": [ 11, 16, 22, 27 ],
+            "thursday": [ 10, 15, 21, 26 ],
+            "friday": [ 9, 14, 20, 25 ],
+            "saturday": [ 8, 13, 19, 26 ],
+            "sunday": [ 14, 19, 25, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 44,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/interval-2004.jpg',
+          title: 'Interval',
+          artist: 'John McCracken',
+          year: '2004',
+          rule: {
+            "monday": [ 14, 19, 25, 30 ],
+            "tuesday": [ 13, 18, 24, 29 ],
+            "wednesday": [ 12, 17, 23, 28 ],
+            "thursday": [ 11, 16, 22, 27 ],
+            "friday": [ 10, 15, 21, 26 ],
+            "saturday": [ 9, 14, 20, 25 ],
+            "sunday": [ 8, 13, 19, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 45,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/aqua-same-1962.jpg',
+          title: 'Aqua Same',
+          artist: 'Walter Darby Bannard',
+          year: '1960',
+          rule: {
+            "monday": [ 8, 13, 19, 26 ],
+            "tuesday": [ 14, 19, 25, 30 ],
+            "wednesday": [ 13, 18, 24, 29 ],
+            "thursday": [ 12, 17, 23, 28 ],
+            "friday": [ 11, 16, 22, 27 ],
+            "saturday": [ 10, 15, 21, 26 ],
+            "sunday": [ 9, 14, 20, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
