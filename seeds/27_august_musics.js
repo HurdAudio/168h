@@ -706,6 +706,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 40,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=222549677/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://wolf-eyes.bandcamp.com/album/always-wrong',
+          a_string: 'Always Wrong by Wolf Eyes',
+          rule: {
+            "monday": [ 9, 17, 2, 1 ],
+            "tuesday": [ 10, 18, 3, 2 ],
+            "wednesday": [ 14, 22, 4, 3 ],
+            "thursday": [ 13, 21, 6, 7 ],
+            "saturday": [ 12, 20, 5, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 41,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3735682806/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://wolf-eyes.bandcamp.com/album/live-frying-chicago-may-28-2004',
+          a_string: 'Live Frying: Chicago May 28 2004 by Wolf Eyes',
+          rule: {
+            "monday": [ 12, 20, 5, 6 ],
+            "tuesday": [ 9, 17, 2, 1 ],
+            "wednesday": [ 10, 18, 3, 2 ],
+            "thursday": [ 14, 22, 4, 3 ],
+            "saturday": [ 13, 21, 6, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 42,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=673550151/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://fiffdimension.bandcamp.com/album/in-the-non-idiomatic-idiom-in-norway',
+          a_string: 'in the non-idiomatic idiom in Norway by fiffdimension',
+          rule: {
+            "monday": [ 14, 22, 7, 8 ],
+            "tuesday": [ 13, 21, 6, 7 ],
+            "wednesday": [ 10, 18, 3, 2 ],
+            "thursday": [ 11, 19, 4, 3 ],
+            "saturday": [ 15, 23, 5, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
