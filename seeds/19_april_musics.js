@@ -1138,6 +1138,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 64,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2169293333/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://colinwebster.bandcamp.com/album/most-of-what-follows-is-true',
+          a_string: 'Most Of What Follows Is True by Graham Dunning / Colin Webster',
+          rule: {
+            "monday": [ 10, 18, 30, 5 ],
+            "tuesday": [ 9, 17, 29, 4 ],
+            "wednesday": [ 13, 21, 3, 8 ],
+            "thursday": [ 12, 20, 2, 7 ],
+            "saturday": [ 11, 17, 29, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 65,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3637057682/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://porticoquartet.bandcamp.com/album/art-in-the-age-of-automation',
+          a_string: 'Art in the Age of Automation by Portico Quartet',
+          rule: {
+            "monday": [ 11, 17, 29, 4 ],
+            "tuesday": [ 10, 18, 30, 5 ],
+            "wednesday": [ 9, 17, 29, 4 ],
+            "thursday": [ 13, 21, 3, 8 ],
+            "saturday": [ 12, 20, 2, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 66,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3638337658/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://matthewhalsall.bandcamp.com/album/into-forever',
+          a_string: 'Into Forever by Matthew Halsall &amp; The Gondwana Orchestra',
+          rule: {
+            "monday": [ 12, 20, 2, 7 ],
+            "tuesday": [ 11, 17, 29, 4 ],
+            "wednesday": [ 10, 18, 30, 5 ],
+            "thursday": [ 9, 17, 29, 4 ],
+            "saturday": [ 13, 21, 3, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
