@@ -2204,6 +2204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 111,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/minutemaidpark.jpg',
+          title: 'Rebirth in Houston',
+          artist: 'Bill Purdom',
+          year: 'xxi Cent.',
+          rule: {
+            "monday": [ 13, 17, 2, 30 ],
+            "tuesday": [ 12, 17, 22, 29 ],
+            "wednesday": [ 11, 16, 22, 28 ],
+            "thursday": [ 10, 15, 21, 27 ],
+            "friday": [ 15, 21, 26, 3 ],
+            "saturday": [ 29, 19, 25, 2 ],
+            "sunday": [ 14, 19, 25, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 112,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/Press_Release_Photo_Astros.jpg',
+          title: 'Press Release Stock Photo Houston Astros',
+          artist: '?',
+          year: 'xxi Cent.',
+          rule: {
+            "monday": [ 15, 20, 26, 2 ],
+            "tuesday": [ 14, 18, 3, 1 ],
+            "wednesday": [ 13, 18, 23, 30 ],
+            "thursday": [ 12, 17, 23, 29 ],
+            "friday": [ 11, 16, 22, 28 ],
+            "saturday": [ 16, 22, 27, 4 ],
+            "sunday": [ 30, 20, 26, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 113,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/Bags.jpg',
+          title: 'Jeff Bagwell',
+          artist: 'DH Sports Art',
+          year: 'xxi Cent.',
+          rule: {
+            "monday": [ 30, 20, 26, 3 ],
+            "tuesday": [ 15, 20, 26, 2 ],
+            "wednesday": [ 14, 18, 3, 1 ],
+            "thursday": [ 13, 18, 23, 30 ],
+            "friday": [ 12, 17, 23, 29 ],
+            "saturday": [ 11, 16, 22, 28 ],
+            "sunday": [ 16, 22, 27, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 114,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/RandyJohnsonAstro.jpg',
+          title: 'Randy Johnson',
+          artist: 'David J. Phillip',
+          year: '1998',
+          rule: {
+            "monday": [ 16, 22, 27, 4 ],
+            "tuesday": [ 30, 20, 26, 3 ],
+            "wednesday": [ 15, 20, 26, 2 ],
+            "thursday": [ 14, 18, 3, 1 ],
+            "friday": [ 13, 18, 23, 30 ],
+            "saturday": [ 12, 17, 23, 29 ],
+            "sunday": [ 11, 16, 22, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 115,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/Dallas.jpg',
+          title: 'Multiple Exposures of Dallas Keuchel',
+          artist: 'Karen Warren',
+          year: '2017',
+          rule: {
+            "monday": [ 11, 16, 22, 28 ],
+            "tuesday": [ 16, 22, 27, 4 ],
+            "wednesday": [ 30, 20, 26, 3 ],
+            "thursday": [ 15, 20, 26, 2 ],
+            "friday": [ 14, 18, 3, 1 ],
+            "saturday": [ 13, 18, 23, 30 ],
+            "sunday": [ 12, 17, 23, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
