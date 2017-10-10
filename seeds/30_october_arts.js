@@ -1004,6 +1004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 51,
+          user_id: 1,
+          theme: 'russian revolution',
+          img_path: './img/october/popup_sovpolpost_00033.jpg',
+          title: 'Proletarian host...',
+          artist: '?',
+          year: '1926',
+          rule: {
+            "monday": [ 13, 24, 4, 8 ],
+            "tuesday": [ 12, 23, 3, 7 ],
+            "wednesday": [ 11, 22, 2, 6 ],
+            "thursday": [ 10, 21, 1, 5 ],
+            "friday": [ 9, 20, 31, 4 ],
+            "saturday": [ 8, 19, 30, 3 ],
+            "sunday": [ 17, 18, 29, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 52,
+          user_id: 1,
+          theme: 'russian revolution',
+          img_path: './img/october/popup_sovpolpost_00032.jpg',
+          title: 'In case of full cooperation...',
+          artist: '?',
+          year: '1927',
+          rule: {
+            "monday": [ 17, 18, 29, 2 ],
+            "tuesday": [ 13, 24, 4, 8 ],
+            "wednesday": [ 12, 23, 3, 7 ],
+            "thursday": [ 11, 22, 2, 6 ],
+            "friday": [ 10, 21, 1, 5 ],
+            "saturday": [ 9, 20, 31, 4 ],
+            "sunday": [ 8, 19, 30, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 53,
+          user_id: 1,
+          theme: 'russian revolution',
+          img_path: './img/october/popup_sovpolpost_00031.jpg',
+          title: 'V. Ulianov (Lenin) 1870-1924',
+          artist: 'A. Strakhov-Braslavsky',
+          year: '1924',
+          rule: {
+            "monday": [ 8, 19, 30, 3 ],
+            "tuesday": [ 17, 18, 29, 2 ],
+            "wednesday": [ 13, 24, 4, 8 ],
+            "thursday": [ 12, 23, 3, 7 ],
+            "friday": [ 11, 22, 2, 6 ],
+            "saturday": [ 10, 21, 1, 5 ],
+            "sunday": [ 9, 20, 31, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 54,
+          user_id: 1,
+          theme: 'russian revolution',
+          img_path: './img/october/popup_sovpolpost_00028.jpg',
+          title: 'A ghost wanders around Europe, a ghost of communism.',
+          artist: 'V. Sherbakov',
+          year: '1920',
+          rule: {
+            "monday": [ 9, 20, 31, 4 ],
+            "tuesday": [ 8, 19, 30, 3 ],
+            "wednesday": [ 17, 18, 29, 2 ],
+            "thursday": [ 13, 24, 4, 8 ],
+            "friday": [ 12, 23, 3, 7 ],
+            "saturday": [ 11, 22, 2, 6 ],
+            "sunday": [ 10, 21, 1, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 55,
+          user_id: 1,
+          theme: 'russian revolution',
+          img_path: './img/october/popup_sovpolpost_00027.jpg',
+          title: 'March 8th',
+          artist: '?',
+          year: '1926',
+          rule: {
+            "monday": [ 10, 21, 1, 5 ],
+            "tuesday": [ 9, 20, 31, 4 ],
+            "wednesday": [ 8, 19, 30, 3 ],
+            "thursday": [ 17, 18, 29, 2 ],
+            "friday": [ 13, 24, 4, 8 ],
+            "saturday": [ 12, 23, 3, 7 ],
+            "sunday": [ 11, 22, 2, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
