@@ -490,6 +490,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 28,
+          user_id: 1,
+          theme: 'hardcore punk, metal and nurse with wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3966029014/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://nursewithwound1.bandcamp.com/album/bar-maldoror',
+          a_string: 'Bar Maldoror by Nurse With Wound',
+          rule: {
+            "monday": [ 9, 19, 29, 1 ],
+            "tuesday": [ 13, 23, 2, 5 ],
+            "wednesday": [ 12, 22, 1, 4 ],
+            "thursday": [ 11, 21, 31, 3 ],
+            "saturday": [ 10, 20, 30, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 29,
+          user_id: 1,
+          theme: 'hardcore punk, metal and nurse with wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=343477112/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bellwitch.bandcamp.com/album/four-phantoms',
+          a_string: 'Four Phantoms by BELL WITCH',
+          rule: {
+            "monday": [ 10, 20, 30, 2 ],
+            "tuesday": [ 9, 19, 29, 1 ],
+            "wednesday": [ 13, 23, 2, 5 ],
+            "thursday": [ 12, 22, 1, 4 ],
+            "saturday": [ 11, 21, 31, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 30,
+          user_id: 1,
+          theme: 'hardcore punk, metal and nurse with wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=302569069/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://no-solace.bandcamp.com/album/exercises-in-futility-lp-2015',
+          a_string: 'Exercises in futility LP 2015 by Mgła',
+          rule: {
+            "monday": [ 11, 21, 31, 3 ],
+            "tuesday": [ 10, 20, 30, 2 ],
+            "wednesday": [ 9, 19, 29, 1 ],
+            "thursday": [ 13, 23, 2, 5 ],
+            "saturday": [ 12, 22, 1, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
