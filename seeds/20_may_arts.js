@@ -2004,6 +2004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 101,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/reaper-1929.jpg',
+          title: 'Reaper',
+          artist: 'Kazimir Malevich',
+          year: '1929',
+          rule: {
+            "monday": [ 3, 13, 23, 2 ],
+            "tuesday": [ 15, 25, 4, 14 ],
+            "wednesday": [ 13, 23, 2, 12 ],
+            "thursday": [ 11, 21, 31, 10 ],
+            "friday": [ 8, 19, 29, 18 ],
+            "saturday": [ 7, 17, 27, 6 ],
+            "sunday": [ 5, 15, 25, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 102,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/reapers-1929.jpg',
+          title: 'Reapers',
+          artist: 'Kazimir Malevich',
+          year: '1929',
+          rule: {
+            "monday": [ 5, 15, 25, 4 ],
+            "tuesday": [ 3, 13, 23, 2 ],
+            "wednesday": [ 15, 25, 4, 14 ],
+            "thursday": [ 13, 23, 2, 12 ],
+            "friday": [ 11, 21, 31, 10 ],
+            "saturday": [ 8, 19, 29, 18 ],
+            "sunday": [ 7, 17, 27, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 103,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/harvesting.jpg',
+          title: 'Harvesting',
+          artist: 'Kazimir Malevich',
+          year: '1929',
+          rule: {
+            "monday": [ 7, 17, 27, 6 ],
+            "tuesday": [ 5, 15, 25, 4 ],
+            "wednesday": [ 3, 13, 23, 2 ],
+            "thursday": [ 15, 25, 4, 14 ],
+            "friday": [ 13, 23, 2, 12 ],
+            "saturday": [ 11, 21, 31, 10 ],
+            "sunday": [ 8, 19, 29, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 104,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/13450813-1195165473851370-1630332832750609931-n.jpg',
+          title: 'Union',
+          artist: 'Kazimir Malevich',
+          year: '1930',
+          rule: {
+            "monday": [ 8, 19, 29, 18 ],
+            "tuesday": [ 7, 17, 27, 6 ],
+            "wednesday": [ 5, 15, 25, 4 ],
+            "thursday": [ 3, 13, 23, 2 ],
+            "friday": [ 15, 25, 4, 14 ],
+            "saturday": [ 13, 23, 2, 12 ],
+            "sunday": [ 11, 21, 31, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 105,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/reaper.jpg',
+          title: 'Reaper',
+          artist: 'Kazimir Malevich',
+          year: 'c.1932',
+          rule: {
+            "monday": [ 12, 22, 1, 11 ],
+            "tuesday": [ 9, 20, 30, 19 ],
+            "wednesday": [ 8, 18, 28, 7 ],
+            "thursday": [ 6, 16, 26, 5 ],
+            "friday": [ 4, 14, 24, 3 ],
+            "saturday": [ 16, 26, 5, 13 ],
+            "sunday": [ 14, 24, 3, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
