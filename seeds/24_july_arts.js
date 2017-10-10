@@ -1604,6 +1604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 81,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/untitled.jpg',
+          title: 'Untitled',
+          artist: 'Leopold Survage',
+          year: '?',
+          rule: {
+            "monday": [ 9, 20, 31, 11 ],
+            "tuesday": [ 8, 19, 30, 10 ],
+            "wednesday": [ 14, 25, 5, 16 ],
+            "thursday": [ 13, 24, 4, 15 ],
+            "friday": [ 12, 22, 3, 14 ],
+            "saturday": [ 11, 22, 2, 13 ],
+            "sunday": [ 10, 21, 31, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 82,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/the-window-overlooking-the-eiffel-tower-1920.jpg',
+          title: 'The Window overlooking the Eiffel Tower',
+          artist: 'Louis Marcoussis',
+          year: '1920',
+          rule: {
+            "monday": [ 10, 21, 31, 12 ],
+            "tuesday": [ 9, 20, 31, 11 ],
+            "wednesday": [ 8, 19, 30, 10 ],
+            "thursday": [ 14, 25, 5, 16 ],
+            "friday": [ 13, 24, 4, 15 ],
+            "saturday": [ 12, 22, 3, 14 ],
+            "sunday": [ 11, 22, 2, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 83,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/visage-criant-a-la-grande-main-1941.jpg',
+          title: 'Visage criant a la grande main',
+          artist: 'Julio Gonzalez',
+          year: '1941',
+          rule: {
+            "monday": [ 11, 22, 2, 13 ],
+            "tuesday": [ 10, 21, 31, 12 ],
+            "wednesday": [ 9, 20, 31, 11 ],
+            "thursday": [ 8, 19, 30, 10 ],
+            "friday": [ 14, 25, 5, 16 ],
+            "saturday": [ 13, 24, 4, 15 ],
+            "sunday": [ 12, 22, 3, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 84,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/the-kiss-1912.jpg',
+          title: 'The Kiss',
+          artist: 'Constantin Brancusi',
+          year: '1912',
+          rule: {
+            "monday": [ 13, 23, 4, 15 ],
+            "tuesday": [ 12, 23, 3, 14 ],
+            "wednesday": [ 11, 22, 2, 13 ],
+            "thursday": [ 10, 21, 1, 12 ],
+            "friday": [ 9, 20, 31, 11 ],
+            "saturday": [ 15, 26, 6, 17 ],
+            "sunday": [ 14, 25, 5, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 85,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/41inbvimavl-sy450.jpg',
+          title: 'Bitter Campari',
+          artist: 'Leonetto Cappiello',
+          year: '?',
+          rule: {
+            "monday": [ 14, 25, 5, 16 ],
+            "tuesday": [ 13, 23, 4, 15 ],
+            "wednesday": [ 12, 23, 3, 14 ],
+            "thursday": [ 11, 22, 2, 13 ],
+            "friday": [ 10, 21, 1, 12 ],
+            "saturday": [ 9, 20, 31, 11 ],
+            "sunday": [ 15, 26, 6, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
