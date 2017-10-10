@@ -922,6 +922,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 52,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2847866671/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://archivesdubmusic.bandcamp.com/album/the-grey-ghost-of-morning',
+          a_string: 'The Grey Ghost Of Morning by Chris Weeks',
+          rule: {
+            "monday": [ 8, 12, 18, 29 ],
+            "tuesday": [ 7, 11, 17, 27 ],
+            "wednesday": [ 6, 10, 15, 27 ],
+            "thursday": [ 5, 9, 15, 26 ],
+            "saturday": [ 4, 12, 14, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 53,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4102448981/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://n5md.bandcamp.com/album/heartless',
+          a_string: 'Heartless by bvdub',
+          rule: {
+            "monday": [ 4, 12, 14, 25 ],
+            "tuesday": [ 8, 12, 18, 29 ],
+            "wednesday": [ 7, 11, 17, 27 ],
+            "thursday": [ 6, 10, 15, 27 ],
+            "saturday": [ 5, 9, 15, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 54,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2777478826/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://oyukiconjugate.bandcamp.com/album/the-euphoria-of-disobedience',
+          a_string: 'The Euphoria of Disobedience by O Yuki Conjugate',
+          rule: {
+            "monday": [ 5, 9, 15, 26 ],
+            "tuesday": [ 4, 12, 14, 25 ],
+            "wednesday": [ 8, 12, 18, 29 ],
+            "thursday": [ 7, 11, 17, 27 ],
+            "saturday": [ 6, 10, 15, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
