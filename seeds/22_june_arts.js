@@ -1804,6 +1804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 91,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/materializa-o-de-um-quadro-imagin-rio-1975.jpg',
+          title: 'Materialização de um quadro imaginário',
+          artist: 'Fernando Calhau',
+          year: '1975',
+          rule: {
+            "monday": [ 12, 22, 2, 10 ],
+            "tuesday": [ 11, 21, 1, 9 ],
+            "wednesday": [ 10, 20, 30, 8 ],
+            "thursday": [ 9, 19, 29, 7 ],
+            "friday": [ 8, 18, 28, 6 ],
+            "saturday": [ 14, 24, 4, 11 ],
+            "sunday": [ 13, 23, 3, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 92,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/drift-10-grand-beach-manitoba-2005.jpg',
+          title: 'Drift #10: Grand Beach, Manitoba',
+          artist: 'David Burdeny',
+          year: '2005',
+          rule: {
+            "monday": [ 13, 23, 3, 11 ],
+            "tuesday": [ 12, 22, 2, 10 ],
+            "wednesday": [ 11, 21, 1, 9 ],
+            "thursday": [ 10, 20, 30, 8 ],
+            "friday": [ 9, 19, 29, 7 ],
+            "saturday": [ 8, 18, 28, 6 ],
+            "sunday": [ 14, 24, 4, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 93,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/figuras-en-el-castillo-1920.jpg',
+          title: 'Figuras en el Castillo',
+          artist: 'Manuel Alvarez Bravo',
+          year: '1920',
+          rule: {
+            "monday": [ 14, 24, 4, 11 ],
+            "tuesday": [ 13, 23, 3, 11 ],
+            "wednesday": [ 12, 22, 2, 10 ],
+            "thursday": [ 11, 21, 1, 9 ],
+            "friday": [ 10, 20, 30, 8 ],
+            "saturday": [ 9, 19, 29, 7 ],
+            "sunday": [ 8, 18, 28, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 94,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/towards-white-1976.jpg',
+          title: 'Towards White',
+          artist: 'Geta Bratescu',
+          year: '1976',
+          rule: {
+            "monday": [ 8, 18, 28, 6 ],
+            "tuesday": [ 14, 24, 4, 11 ],
+            "wednesday": [ 13, 23, 3, 11 ],
+            "thursday": [ 12, 22, 2, 10 ],
+            "friday": [ 11, 21, 1, 9 ],
+            "saturday": [ 10, 20, 30, 8 ],
+            "sunday": [ 9, 19, 29, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 95,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/bassin-du-luxembourg-1930.jpg',
+          title: 'Bassin du Luxembourg',
+          artist: 'Brassai',
+          year: '1930',
+          rule: {
+            "monday": [ 9, 19, 29, 7 ],
+            "tuesday": [ 8, 18, 28, 6 ],
+            "wednesday": [ 14, 24, 4, 11 ],
+            "thursday": [ 13, 23, 3, 11 ],
+            "friday": [ 12, 22, 2, 10 ],
+            "saturday": [ 11, 21, 1, 9 ],
+            "sunday": [ 10, 20, 30, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
