@@ -1258,8 +1258,8 @@ exports.seed = function(knex, Promise) {
           rule: {
             "monday": [ 14, 18, 20, 24 ],
             "tuesday": [ 16, 20, 22, 24 ],
-            "wednesday": [ 28, 22, 24, 30 ],
-            "thursday": [ 11, 16, 18, 30 ],
+            "wednesday": [ 28, 22, 24, 1 ],
+            "thursday": [ 11, 16, 18, 1 ],
             "saturday": [ 12, 16, 18, 22 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
@@ -1277,8 +1277,8 @@ exports.seed = function(knex, Promise) {
             "monday": [ 12, 16, 18, 22 ],
             "tuesday": [ 14, 18, 20, 24 ],
             "wednesday": [ 16, 20, 22, 24 ],
-            "thursday": [ 28, 22, 24, 30 ],
-            "saturday": [ 11, 16, 18, 30 ]
+            "thursday": [ 28, 22, 24, 1 ],
+            "saturday": [ 11, 16, 18, 1 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -1292,11 +1292,11 @@ exports.seed = function(knex, Promise) {
           href_string: 'http://africaseven.bandcamp.com/album/du-mali-1',
           a_string: 'Du Mali by Sorry Bamba',
           rule: {
-            "monday": [ 11, 16, 18, 30 ],
+            "monday": [ 11, 16, 18, 1 ],
             "tuesday": [ 12, 16, 18, 22 ],
             "wednesday": [ 14, 18, 20, 24 ],
             "thursday": [ 16, 20, 22, 24 ],
-            "saturday": [ 28, 22, 24, 30 ]
+            "saturday": [ 28, 22, 24, 1 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -1310,8 +1310,8 @@ exports.seed = function(knex, Promise) {
           href_string: 'http://charlesgayle.bandcamp.com/album/streets-2',
           a_string: 'Streets by Charles Gayle',
           rule: {
-            "monday": [ 28, 22, 24, 30 ],
-            "tuesday": [ 11, 16, 18, 30 ],
+            "monday": [ 28, 22, 24, 1 ],
+            "tuesday": [ 11, 16, 18, 1 ],
             "wednesday": [ 12, 16, 18, 22 ],
             "thursday": [ 14, 18, 20, 24 ],
             "saturday": [ 16, 20, 22, 24 ]
@@ -1329,8 +1329,8 @@ exports.seed = function(knex, Promise) {
           a_string: 'The Emancipation Procrastination by Christian Scott aTunde Adjuah',
           rule: {
             "monday": [ 16, 20, 22, 24  ],
-            "tuesday": [ 28, 22, 24, 30 ],
-            "wednesday": [ 11, 16, 18, 30 ],
+            "tuesday": [ 28, 22, 24, 1 ],
+            "wednesday": [ 11, 16, 18, 1 ],
             "thursday": [ 12, 16, 18, 22 ],
             "saturday": [ 14, 18, 20, 24 ]
           },
@@ -1348,9 +1348,63 @@ exports.seed = function(knex, Promise) {
           rule: {
             "monday": [ 14, 18, 20, 24 ],
             "tuesday": [ 16, 20, 22, 24 ],
-            "wednesday": [ 28, 22, 24, 30 ],
-            "thursday": [ 11, 16, 18, 30 ],
+            "wednesday": [ 28, 22, 24, 1 ],
+            "thursday": [ 11, 16, 18, 1 ],
             "saturday": [ 12, 16, 18, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 76,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2238702751/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://aumfidelity.bandcamp.com/album/meditation-resurrection',
+          a_string: 'Meditation / Resurrection by William Parker Quartets',
+          rule: {
+            "monday": [ 12, 16, 18, 22 ],
+            "tuesday": [ 14, 18, 20, 24 ],
+            "wednesday": [ 16, 20, 22, 24 ],
+            "thursday": [ 28, 22, 24, 1 ],
+            "saturday": [ 11, 16, 18, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 77,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3289661233/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jasonmoran.bandcamp.com/album/bangs',
+          a_string: 'BANGS by Jason Moran',
+          rule: {
+            "monday": [ 12, 17, 19, 2 ],
+            "tuesday": [ 13, 17, 19, 23 ],
+            "wednesday": [ 15, 19, 21, 25 ],
+            "thursday": [ 17, 21, 23, 25 ],
+            "saturday": [ 29, 23, 25, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 78,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=569598526/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://dwighttrible.bandcamp.com/album/inspirations',
+          a_string: 'Inspirations by Dwight Trible',
+          rule: {
+            "monday": [ 29, 23, 25, 2 ],
+            "tuesday": [ 12, 17, 19, 2 ],
+            "wednesday": [ 13, 17, 19, 23 ],
+            "thursday": [ 15, 19, 21, 25 ],
+            "saturday": [ 17, 21, 23, 25 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
