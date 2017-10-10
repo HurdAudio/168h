@@ -2604,6 +2604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 131,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/0_full.jpg',
+          title: 'Little Brown Girl',
+          artist: 'John Wesley Hardrick',
+          year: '1927',
+          rule: {
+            "monday": [ 26, 7, 13, 21 ],
+            "tuesday": [ 28, 7, 15, 25 ],
+            "wednesday": [ 1, 9, 5, 24 ],
+            "thursday": [ 18, 26, 5, 13 ],
+            "friday": [ 20, 28, 7, 15 ],
+            "saturday": [ 25, 1, 7, 17 ],
+            "sunday": [ 24, 3, 11, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 132,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Jerry_Harris.sculpture.jpg',
+          title: 'Dogon mother and child',
+          artist: 'Jerry Harris',
+          year: '2007',
+          rule: {
+            "monday": [ 24, 3, 11, 19 ],
+            "tuesday": [ 26, 7, 13, 21 ],
+            "wednesday": [ 28, 7, 15, 25 ],
+            "thursday": [ 1, 9, 5, 24 ],
+            "friday": [ 18, 26, 5, 13 ],
+            "saturday": [ 20, 28, 7, 15 ],
+            "sunday": [ 25, 1, 7, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 133,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Lawrence_Harris_-_Abandoned_Ship.jpg',
+          title: 'Abandoned Ship',
+          artist: 'Lawrence Harris',
+          year: '?',
+          rule: {
+            "monday": [ 26, 2, 8, 18 ],
+            "tuesday": [ 25, 4, 12, 20 ],
+            "wednesday": [ 27, 8, 14, 22 ],
+            "thursday": [ 29, 8, 16, 26 ],
+            "friday": [ 2, 10, 6, 25 ],
+            "saturday": [ 19, 27, 6, 14 ],
+            "sunday": [ 21, 29, 8, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 134,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Walking_1978.jpg',
+          title: 'Walking',
+          artist: 'Maren Hassinger',
+          year: '1978',
+          rule: {
+            "monday": [ 21, 29, 8, 16 ],
+            "tuesday": [ 26, 2, 8, 18 ],
+            "wednesday": [ 25, 4, 12, 20 ],
+            "thursday": [ 27, 8, 14, 22 ],
+            "friday": [ 29, 8, 16, 26 ],
+            "saturday": [ 2, 10, 6, 25 ],
+            "sunday": [ 19, 27, 6, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 135,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/ahynhmv3lir9jbomhiym5aa7o1_500.jpg',
+          title: 'Midsummer Night in Harlem',
+          artist: 'Palmer Hayden',
+          year: 'xx Cent.',
+          rule: {
+            "monday": [ 19, 27, 6, 14 ],
+            "tuesday": [ 21, 29, 8, 16 ],
+            "wednesday": [ 26, 2, 8, 18 ],
+            "thursday": [ 25, 4, 12, 20 ],
+            "friday": [ 27, 8, 14, 22 ],
+            "saturday": [ 29, 8, 16, 26 ],
+            "sunday": [ 2, 10, 6, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
