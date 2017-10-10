@@ -2804,6 +2804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 141,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/lepanto-panel-12.jpg',
+          title: 'Lepanto, panel 12',
+          artist: 'Cy Twombly',
+          year: 'XX-XXI cent.',
+          rule: {
+            "monday": [ 26, 27, 19, 22 ],
+            "tuesday": [ 29, 30, 21, 25 ],
+            "wednesday": [ 1, 3, 4, 6 ],
+            "thursday": [ 3, 5, 9, 12 ],
+            "friday": [ 5, 7, 8, 11 ],
+            "saturday": [ 21, 22, 2, 25 ],
+            "sunday": [ 24, 26, 18, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 142,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/atmospheric-effects-i-1970.jpg',
+          title: 'Atmospheric Effects I',
+          artist: 'Alma Woodsey Thomas',
+          year: '1970',
+          rule: {
+            "monday": [ 24, 26, 18, 7 ],
+            "tuesday": [ 26, 27, 19, 22 ],
+            "wednesday": [ 29, 30, 21, 25 ],
+            "thursday": [ 1, 3, 4, 6 ],
+            "friday": [ 3, 5, 9, 12 ],
+            "saturday": [ 5, 7, 8, 11 ],
+            "sunday": [ 21, 22, 2, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 143,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/ominenda-1963.jpg',
+          title: 'Ominenda',
+          artist: 'Richard Mortensen',
+          year: '1963',
+          rule: {
+            "monday": [ 21, 22, 2, 25 ],
+            "tuesday": [ 24, 26, 18, 7 ],
+            "wednesday": [ 26, 27, 19, 22 ],
+            "thursday": [ 29, 30, 21, 25 ],
+            "friday": [ 1, 3, 4, 6 ],
+            "saturday": [ 3, 5, 9, 12 ],
+            "sunday": [ 5, 7, 8, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 144,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/non-objective-composition-suprematism.jpg',
+          title: 'Non-Objective Composition (Suprematism)',
+          artist: 'Olga Rozanova',
+          year: '1916',
+          rule: {
+            "monday": [ 5, 7, 8, 11 ],
+            "tuesday": [ 21, 22, 2, 25 ],
+            "wednesday": [ 24, 26, 18, 7 ],
+            "thursday": [ 26, 27, 19, 22 ],
+            "friday": [ 29, 30, 21, 25 ],
+            "saturday": [ 1, 3, 4, 6 ],
+            "sunday": [ 3, 5, 9, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 145,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/die-fahne-hoch-1959.jpg',
+          title: 'Die Fahne Hoch!',
+          artist: 'Frank Stella',
+          year: '1959',
+          rule: {
+            "monday": [ 3, 5, 9, 12 ],
+            "tuesday": [ 5, 7, 8, 11 ],
+            "wednesday": [ 21, 22, 2, 25 ],
+            "thursday": [ 24, 26, 18, 7 ],
+            "friday": [ 26, 27, 19, 22 ],
+            "saturday": [ 29, 30, 21, 25 ],
+            "sunday": [ 1, 3, 4, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
