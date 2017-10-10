@@ -1462,6 +1462,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 82,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4020678438/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://zstheband.bandcamp.com/album/xe',
+          a_string: 'Xe by Zs',
+          rule: {
+            "monday": [ 18, 25, 27, 26 ],
+            "tuesday": [ 26, 20, 22, 27 ],
+            "wednesday": [ 22, 16, 18, 6 ],
+            "thursday": [ 18, 25, 27, 26 ],
+            "saturday": [ 16, 20, 22, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 83,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1462164011/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://gregfox.bandcamp.com/album/the-gradual-progression',
+          a_string: 'The Gradual Progression by Greg Fox',
+          rule: {
+            "monday": [ 16, 20, 22, 26 ],
+            "tuesday": [ 18, 25, 27, 26 ],
+            "wednesday": [ 26, 20, 22, 27 ],
+            "thursday": [ 22, 16, 18, 6 ],
+            "saturday": [ 18, 25, 27, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 84,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=838601098/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bannedproduction.bandcamp.com/album/two-pieces-two-decades-apart',
+          a_string: 'Two Pieces, Two Decades Apart by Gino Robair',
+          rule: {
+            "monday": [ 19, 26, 27, 27 ],
+            "tuesday": [ 17, 21, 23, 27 ],
+            "wednesday": [ 19, 26, 28, 27 ],
+            "thursday": [ 27, 21, 23, 28 ],
+            "saturday": [ 23, 17, 19, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
