@@ -1204,6 +1204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 61,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/untitled-one-hundred-spaces-1997.jpg',
+          title: 'Untitled (One Hundred Spaces)',
+          artist: 'Rachel Whiteread',
+          year: '1997',
+          rule: {
+            "monday": [ 7, 13, 1, 9 ],
+            "tuesday": [ 6, 12, 30, 8 ],
+            "wednesday": [ 5, 11, 29, 7 ],
+            "thursday": [ 11, 17, 5, 13 ],
+            "friday": [ 10, 16, 4, 12 ],
+            "saturday": [ 9, 15, 3, 11 ],
+            "sunday": [ 8, 14, 2, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 62,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/composition-2010.jpg',
+          title: 'Composition',
+          artist: 'JonOne',
+          year: '2010',
+          rule: {
+            "monday": [ 8, 14, 2, 10 ],
+            "tuesday": [ 7, 13, 1, 9 ],
+            "wednesday": [ 6, 12, 30, 8 ],
+            "thursday": [ 5, 11, 29, 7 ],
+            "friday": [ 11, 17, 5, 13 ],
+            "saturday": [ 10, 16, 4, 12 ],
+            "sunday": [ 9, 15, 3, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 63,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/time-to-dance-2012.jpg',
+          title: 'Time to Dance',
+          artist: 'John C. Kuchera',
+          year: '2012',
+          rule: {
+            "monday": [ 10, 16, 4, 12 ],
+            "tuesday": [ 9, 15, 3, 11 ],
+            "wednesday": [ 8, 14, 2, 10 ],
+            "thursday": [ 7, 13, 1, 9 ],
+            "friday": [ 6, 12, 30, 8 ],
+            "saturday": [ 12, 18, 6, 14 ],
+            "sunday": [ 11, 17, 5, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 64,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/flat-1000x1000-075-f-u1-1-2.jpg',
+          title: 'Unspiral',
+          artist: 'Gianni Sarcone',
+          year: '2013',
+          rule: {
+            "monday": [ 11, 17, 5, 13 ],
+            "tuesday": [ 10, 16, 4, 12 ],
+            "wednesday": [ 9, 15, 3, 11 ],
+            "thursday": [ 8, 14, 2, 10 ],
+            "friday": [ 7, 13, 1, 9 ],
+            "saturday": [ 6, 12, 30, 8 ],
+            "sunday": [ 12, 18, 6, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 65,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/karma-2003.jpg',
+          title: 'Karma',
+          artist: 'Do-ho Suh',
+          year: '2003',
+          rule: {
+            "monday": [ 12, 18, 6, 14 ],
+            "tuesday": [ 11, 17, 5, 13 ],
+            "wednesday": [ 10, 16, 4, 12 ],
+            "thursday": [ 9, 15, 3, 11 ],
+            "friday": [ 8, 14, 2, 10 ],
+            "saturday": [ 7, 13, 1, 9 ],
+            "sunday": [ 6, 12, 30, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
