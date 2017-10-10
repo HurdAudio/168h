@@ -2404,6 +2404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 121,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/3human-theatre-100by100cm-2016.jpg',
+          title: 'Human Theatre',
+          artist: 'Li CHEVALIER',
+          year: '2016',
+          rule: {
+            "monday": [ 17, 26, 4, 13 ],
+            "tuesday": [ 16, 26, 5, 13 ],
+            "wednesday": [ 15, 25, 2, 12 ],
+            "thursday": [ 14, 24, 1, 11 ],
+            "friday": [ 13, 23, 31, 10 ],
+            "saturday": [ 12, 22, 30, 9 ],
+            "sunday": [ 11, 21, 30, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 122,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/touch-me-2011.jpg',
+          title: 'Touch Me',
+          artist: 'Regine Schumann',
+          year: '2011',
+          rule: {
+            "monday": [ 11, 21, 30, 8 ],
+            "tuesday": [ 17, 26, 4, 13 ],
+            "wednesday": [ 16, 26, 5, 13 ],
+            "thursday": [ 15, 25, 2, 12 ],
+            "friday": [ 14, 24, 1, 11 ],
+            "saturday": [ 13, 23, 31, 10 ],
+            "sunday": [ 12, 22, 30, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 123,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/old-vw-with-shadow.jpg',
+          title: 'Old VW with Shadow',
+          artist: 'L Yaffe',
+          year: '?',
+          rule: {
+            "monday": [ 12, 22, 30, 9 ],
+            "tuesday": [ 11, 21, 30, 8 ],
+            "wednesday": [ 17, 26, 4, 13 ],
+            "thursday": [ 16, 26, 5, 13 ],
+            "friday": [ 15, 25, 2, 12 ],
+            "saturday": [ 14, 24, 1, 11 ],
+            "sunday": [ 13, 23, 31, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 124,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/imgp-rosa-rot-malwerk-silvia-l-lueftenegger-contemporary-art-design-performance-theater-shoe-6880p.jpg',
+          title: 'IMGP Rosa Rot Malwerk Silvia L Lueftenegger Contemporary Art Design Performance Theater Shoe 6880P',
+          artist: 'Silvia L. Lueftenegger RosaRot',
+          year: '?',
+          rule: {
+            "monday": [ 13, 23, 31, 10 ],
+            "tuesday": [ 12, 22, 30, 9 ],
+            "wednesday": [ 11, 21, 30, 8 ],
+            "thursday": [ 17, 26, 4, 13 ],
+            "friday": [ 16, 26, 5, 13 ],
+            "saturday": [ 15, 25, 2, 12 ],
+            "sunday": [ 14, 24, 1, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 125,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/abstract.jpg',
+          title: 'Abstract',
+          artist: 'Gillian Ayres',
+          year: '?',
+          rule: {
+            "monday": [ 14, 24, 1, 11 ],
+            "tuesday": [ 13, 23, 31, 10 ],
+            "wednesday": [ 12, 22, 30, 9 ],
+            "thursday": [ 11, 21, 30, 8 ],
+            "friday": [ 17, 26, 4, 13 ],
+            "saturday": [ 16, 26, 5, 13 ],
+            "sunday": [ 15, 25, 2, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
