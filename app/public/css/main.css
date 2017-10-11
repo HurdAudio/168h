@@ -3801,8 +3801,8 @@ footer img {
   display: none;
 }
 
-/*.day {
-  background-image: url(../img/january_tiles/ChiseledIce.jpg);
+.day {
+  background-image: url(../img/june_tiles/black-and-white-lights-sun-ray-of-sunshine.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
-}*/
+  background-size: 160%;
+}
