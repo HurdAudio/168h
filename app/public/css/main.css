@@ -3372,7 +3372,32 @@ footer img {
   border: 2px solid #0000cc;
 }
 
+#billZone {
+  background: #9B5C71;
+  background-color: -webkit-linear-gradient(135deg, #9B5C71, #EDEEF0);
+  background: -o-linear-gradient(135deg, #9B5C71, #EDEEF0);
+  background: -moz-linear-gradient(135deg, #9B5C71, #EDEEF0);
+  background: linear-gradient(135deg, #9B5C71, #EDEEF0);
+  border-radius: 5px;
+  padding-bottom: 1.1em;
+  opacity: 1;
+}
+
+#billZone img {
+  height: 7em;
+  width: 7em;
+  margin-left: 1.6em;
+  margin-top: 1.2em;
+  border: 2px solid #0000cc;
+}
+
 #occasionManager {
+  float: right;
+  margin: 2em;
+  margin-right: 4.8em;
+}
+
+#billsManager {
   float: right;
   margin: 2em;
   margin-right: 4.8em;
