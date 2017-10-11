@@ -8404,6 +8404,39 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 536,
+          user_id: 1,
+          name: 'Nels Cline (guitar), born 1956',
+          color: '#D2311D',
+          picture: './img/musicians/nelscline.jpg',
+          day_of: new Date ('1956-01-04T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: true,
+          override_content: {
+            "sources": [ 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp' ],
+            "src_strings": [ 'https://bandcamp.com/EmbeddedPlayer/album=2832417878/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=974011440/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=1587334512/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=4291311661/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=3279910918/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/' ],
+            "href_strings": [ 'http://whiteoutnelscline.bandcamp.com/album/accidental-sky', 'http://devin-sarno.bandcamp.com/album/buried-on-bunker-hill', 'http://devin-sarno.bandcamp.com/album/rise-pumpkin-rise', 'http://mciaa.bandcamp.com/album/the-ocean-above-your-heads', 'http://scottamendolamusic.bandcamp.com/album/fade-to-orange-feat-nels-cline-trevor-dunn' ],
+            "a_strings": [ 'Accidental Sky by White Out with Nels Cline', 'Buried on Bunker Hill by Nels Cline + Devin Sarno', 'Rise Pumpkin Rise by Nels Cline + Devin Sarno', 'The Ocean Above Your Heads by My Cat Is An Alien with Nels Cline', 'Fade to Orange (feat. Nels Cline &amp; Trevor Dunn) by Scott Amendola' ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 537,
+          user_id: 1,
+          name: 'The world ended in a firey storm on this day in 2013 according to Grigori Rasputin.',
+          color: '#181818',
+          picture: './img/doomsday/grigorirasputin.jpg',
+          day_of: new Date ('2013-08-23T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
