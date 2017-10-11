@@ -66,7 +66,14 @@
     <div id="holidayZone">
       <div>
         <img src="../img/lights-1088141_1920.jpg">
-        <a href="" id="holidayManager" class="btn">holidays</a>
+        <a href="" id="holidayManager" class="btn" ng-click="$ctrl.holidayManage()">holidays</a>
+      </div>
+
+    </div>
+    <div id="occasionZone">
+      <div>
+        <img src="../img/eve-1071355_1920.jpg">
+        <a href="" id="occasionManager" class="btn">occasions</a>
       </div>
 
     </div>
@@ -126,6 +133,37 @@
 
 
 
+
+
+      </form>
+
+    </div>
+    <div id="holidayManagementDiv">
+      <div id="holidayManagerBar">
+        <a href="" class="btn" id="holidayManagerDone" ng-click="$ctrl.closeHolidayManager()">done</a>
+        <h1>Holiday Manager</h1>
+
+      </div>
+      <form id="holidayManagerForm" class="pure-form pure-form-stacked">
+        <fieldset>
+          <div id="holidayManagement">
+            <a href="" class="btn" id="addHoliday" ng-click="$ctrl.addNewHoliday()">new</a>
+            <a href="" class="btn" id="holidayReporter" ng-click="$ctrl.holidayReport()">report</a>
+            <main ng-repeat="holiday in $ctrl.userholidays | orderBy : $ctrl.sortBy">
+              <img src="{{holiday.picture}}">
+              <p>{{holiday.name}}</p>
+              <p>{{holiday.day}}</p>
+              <br>
+              <div class="holidayEdit">
+                <a href="" class="btn" ng-click="$ctrl.editBlock(holiday.id)">edit</a>
+              <a href="" class="btn" ng-click="$ctrl.deleteBlock(holiday.id)">delete</a>
+
+              </div>
+
+            </main>
+          </div>
+
+        </fieldset>
 
 
       </form>

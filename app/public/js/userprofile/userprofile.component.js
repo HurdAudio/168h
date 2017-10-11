@@ -74,9 +74,80 @@
       vm.blocktypeReport = blocktypeReport;
       vm.blocktypeReportDone = blocktypeReportDone;
       vm.deleteBlock = deleteBlock;
+      vm.holidayManage = holidayManage;
+      vm.closeHolidayManager = closeHolidayManager;
+
+      function cleanDate(dayOf) {
+        let months = [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ];
+        let check = new Date(dayOf.slice(0,16));
+        let dateString = check.getDate() + ' ' + months[check.getMonth()];
+
+        return(dateString);
+      }
+
+      function populateHolidayManager() {
+        $http.get(`/holidaysbyuser/${currentUserId}`)
+        .then(userHolidaysData=>{
+          let userHolidays = userHolidaysData.data;
+          let prunedHolidays = [];
+          let isDupe = false;
+          if (userHolidays.length > 0) {
+            for (let i = 0; i < userHolidays.length; i++) {
+              if (userHolidays[i].is_annual) {
+                userHolidays[i].day = cleanDate(userHolidays[i].day_of);
+                prunedHolidays.push(userHolidays[i]);
+              } else {
+                isDupe = false;
+                userHolidays[i].day = 'float';
+                if (prunedHolidays.length > 0) {
+                  for (let j = 0; j < prunedHolidays.length; j++) {
+                    if (prunedHolidays[j].name === userHolidays[i].name) {
+                      isDupe = true;
+                    }
+                  }
+                }
+                if (!isDupe) {
+                  prunedHolidays.push(userHolidays[i]);
+                }
+              }
+            }
+            vm.userholidays = prunedHolidays.sort((a,b)=>{
+              if (a.name.toLowerCase() < b.name.toLowerCase()) {
+                return -1;
+              } else if (a.name.toLowerCase() > b.name.toLowerCase()) {
+                return 1;
+              } else {
+                return 0;
+              }
+            });
+          }
+        });
+      }
+
+      function closeHolidayManager() {
+        let holidayManager = document.getElementById('holidayManager');
+        let holidayManagementDiv = document.getElementById('holidayManagementDiv');
+        let holidayZone = document.getElementById('holidayZone');
+
+
+        holidayManager.setAttribute("style", "visibility: visible;");
+        holidayManagementDiv.setAttribute("style", "display: none;");
+        holidayZone.setAttribute("style", "opacity: 1;");
+      }
+
+      function holidayManage() {
+        let holidayManager = document.getElementById('holidayManager');
+        let holidayManagementDiv = document.getElementById('holidayManagementDiv');
+        let holidayZone = document.getElementById('holidayZone');
+
+
+        holidayManager.setAttribute("style", "visibility: hidden;");
+        holidayManagementDiv.setAttribute("style", "display: initial;");
+        holidayZone.setAttribute("style", "opacity: 0.4;");
+        populateHolidayManager();
+      }
 
       function deleteBlock(blockId) {
-        console.log(blockId);
         let deleteBlocktypeConfirm = document.getElementById('deleteBlocktypeConfirm');
         let reportForBlocktypes = document.getElementById('reportForBlocktypes');
         let blocktypeEditDiv = document.getElementById('blocktypeEditDiv');

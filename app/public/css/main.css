@@ -3353,6 +3353,31 @@ footer img {
   margin-right: 4.8em;
 }
 
+#occasionZone {
+  background: #16171B;
+  background-color: -webkit-linear-gradient(135deg, #16171B, #A3A3AD);
+  background: -o-linear-gradient(135deg, #16171B, #A3A3AD);
+  background: -moz-linear-gradient(135deg, #16171B, #A3A3AD);
+  background: linear-gradient(135deg, #16171B, #A3A3AD);
+  border-radius: 5px;
+  padding-bottom: 1.1em;
+  opacity: 1;
+}
+
+#occasionZone img {
+  height: 7em;
+  width: 7em;
+  margin-left: 1.6em;
+  margin-top: 1.2em;
+  border: 2px solid #0000cc;
+}
+
+#occasionManager {
+  float: right;
+  margin: 2em;
+  margin-right: 4.8em;
+}
+
 #userProfilePhotoDiv {
   display: none;
 }
@@ -3686,6 +3711,69 @@ footer img {
   background-image: url(../img/background-2030242.jpg);
   background-repeat: repeat;
   background-size: 75%;
+}
+
+#holidayManagerBar {
+  font-family: 'Asul', serif;
+  font-size: 18px
+  background: #110514;
+  background-color: -webkit-linear-gradient(-135deg, #110514, #FBFBF3);
+  background: -o-linear-gradient(-135deg, #110514, #FBFBF3);
+  background: -moz-linear-gradient(-135deg, #110514, #FBFBF3);
+  background: linear-gradient(-135deg, #110514, #FBFBF3);
+  border-radius: 5px;
+  margin: 0;
+  padding:0;
+  height: 3.8em;
+  top: 0%;
+  opacity: 1;
+}
+
+#holidayManagerBar h1 {
+  margin-left: 2em;
+  padding-top: 0.4em;
+}
+
+#holidayManagerBar a {
+  float:right;
+  margin-right: 1.1em;
+  margin-top: 0.2em;
+}
+
+#holidayManagerForm {
+  font-family: 'Alike Angular', serif;
+  font-size: 24px;
+  background: #110514;
+  background-color: -webkit-linear-gradient(135deg, #110514, #FBFBF3);
+  background: -o-linear-gradient(135deg, #110514, #FBFBF3);
+  background: -moz-linear-gradient(135deg, #110514, #FBFBF3);
+  background: linear-gradient(135deg, #110514, #FBFBF3);
+  border-radius: 5px;
+  opacity: 1;
+}
+
+#holidayManagerForm p {
+  margin-left: 2em;
+  font-weight: bold;
+  text-shadow: -1px 1px 1px #ffffff;
+  margin-bottom: 0;
+}
+
+#holidayManagerForm img {
+  height: 10em;
+  width: 10em;
+  margin-left: 5.6em;
+  margin-top: 0.2em;
+  border: 2px solid #0000cc;
+}
+
+#holidayManagerForm a {
+  float: left;
+  margin-left: 1.5em;
+}
+
+#holidayManagementDiv {
+  display: none;
 }
 
 /*.day {
