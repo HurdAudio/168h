@@ -74,6 +74,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#CEE2FA',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 6,
+          user_id: 1,
+          theme: 'ice',
+          type: 'saturday',
+          src_string: '../img/january_tiles/ChiseledIce.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '100%',
+          color_dark: '#647D9C',
+          color_medium: '#91AED7',
+          color_light: '#CEE2FA',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {

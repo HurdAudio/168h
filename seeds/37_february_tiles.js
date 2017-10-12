@@ -60,6 +60,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#F97060',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 5,
+          user_id: 1,
+          theme: 'silk',
+          type: 'saturday',
+          src_string: '../img/february_tiles/elegant-red-silk-background-20.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '190%',
+          color_dark: '#040404',
+          color_medium: '#53040A',
+          color_light: '#FC4541',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
