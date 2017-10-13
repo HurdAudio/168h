@@ -1504,6 +1504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 76,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/new-clouds-1937.jpg',
+          title: 'New Clouds',
+          artist: 'Nandalal Bose',
+          year: '1937',
+          rule: {
+            "monday": [ 11, 15, 23, 8 ],
+            "tuesday": [ 10, 14, 22, 7 ],
+            "wednesday": [ 9, 12, 21, 6 ],
+            "thursday": [ 8, 12, 20, 5 ],
+            "friday": [ 14, 18, 26, 11 ],
+            "saturday": [ 13, 16, 25, 10 ],
+            "sunday": [ 12, 16, 24, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 77,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/landscape-with-a-pond-and-water-lilies-1915.jpg',
+          title: 'Landscape with a Pond and Water Lilies',
+          artist: 'Vanessa Bell',
+          year: '1915',
+          rule: {
+            "monday": [ 13, 17, 25, 10 ],
+            "tuesday": [ 12, 16, 24, 9 ],
+            "wednesday": [ 11, 15, 23, 8 ],
+            "thursday": [ 10, 13, 22, 7 ],
+            "friday": [ 9, 13, 21, 6 ],
+            "saturday": [ 15, 19, 27, 12 ],
+            "sunday": [ 14, 17, 26, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 78,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/nude-with-red-turban-1926.jpg',
+          title: 'Nude with Red Turban',
+          artist: 'Bela Czobel',
+          year: '1926',
+          rule: {
+            "monday": [ 14, 17, 26, 11 ],
+            "tuesday": [ 13, 17, 25, 10 ],
+            "wednesday": [ 12, 16, 24, 9 ],
+            "thursday": [ 11, 15, 23, 8 ],
+            "friday": [ 10, 13, 22, 7 ],
+            "saturday": [ 9, 13, 21, 6 ],
+            "sunday": [ 15, 19, 27, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 79,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/pieta.jpg',
+          title: 'Pieta',
+          artist: 'Oskar Kokoschka',
+          year: '1909',
+          rule: {
+            "monday": [ 15, 19, 27, 12 ],
+            "tuesday": [ 14, 17, 26, 11 ],
+            "wednesday": [ 13, 17, 25, 10 ],
+            "thursday": [ 12, 16, 24, 9 ],
+            "friday": [ 11, 15, 23, 8 ],
+            "saturday": [ 10, 13, 22, 7 ],
+            "sunday": [ 9, 13, 21, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 80,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/goldfish-1902.jpg',
+          title: 'Goldfish',
+          artist: 'Gustav Klimt',
+          year: '1901 - 1902',
+          rule: {
+            "monday": [ 9, 13, 21, 6 ],
+            "tuesday": [ 15, 19, 27, 12 ],
+            "wednesday": [ 14, 17, 26, 11 ],
+            "thursday": [ 13, 17, 25, 10 ],
+            "friday": [ 12, 16, 24, 9 ],
+            "saturday": [ 11, 15, 23, 8 ],
+            "sunday": [ 10, 13, 22, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
