@@ -1104,6 +1104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 56,
+          user_id: 1,
+          theme: 'russian revolution',
+          img_path: './img/october/popup_sovpolpost_00026.jpg',
+          title: 'Each cook must learn...',
+          artist: 'Makarychev, Raev',
+          year: '1925',
+          rule: {
+            "monday": [ 12, 23, 3, 7 ],
+            "tuesday": [ 11, 22, 2, 6 ],
+            "wednesday": [ 10, 21, 1, 5 ],
+            "thursday": [ 9, 20, 21, 4 ],
+            "friday": [ 18, 19, 30, 3 ],
+            "saturday": [ 14, 25, 5, 9 ],
+            "sunday": [ 13, 24, 4, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 57,
+          user_id: 1,
+          theme: 'russian revolution',
+          img_path: './img/october/popup_sovpolpost_00025.jpg',
+          title: 'Knowledge will break the chains of slavery',
+          artist: 'A. Rudakov',
+          year: '1920',
+          rule: {
+            "monday": [ 13, 24, 4, 8 ],
+            "tuesday": [ 12, 23, 3, 7 ],
+            "wednesday": [ 11, 22, 2, 6 ],
+            "thursday": [ 10, 21, 1, 5 ],
+            "friday": [ 9, 20, 21, 4 ],
+            "saturday": [ 18, 19, 30, 3 ],
+            "sunday": [ 14, 25, 5, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 58,
+          user_id: 1,
+          theme: 'russian revolution',
+          img_path: './img/october/popup_sovpolpost_00024.jpg',
+          title: 'What October Revolution gave to a worker and peasant',
+          artist: '?',
+          year: '1920',
+          rule: {
+            "monday": [ 14, 25, 5, 9 ],
+            "tuesday": [ 13, 24, 4, 8 ],
+            "wednesday": [ 12, 23, 3, 7 ],
+            "thursday": [ 11, 22, 2, 6 ],
+            "friday": [ 10, 21, 1, 5 ],
+            "saturday": [ 9, 20, 21, 4 ],
+            "sunday": [ 18, 19, 30, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 59,
+          user_id: 1,
+          theme: 'russian revolution',
+          img_path: './img/october/popup_sovpolpost_00022.jpg',
+          title: 'The one is an offender,..',
+          artist: '?',
+          year: '1920',
+          rule: {
+            "monday": [ 18, 19, 30, 3 ],
+            "tuesday": [ 14, 25, 5, 9 ],
+            "wednesday": [ 13, 24, 4, 8 ],
+            "thursday": [ 12, 23, 3, 7 ],
+            "friday": [ 11, 22, 2, 6 ],
+            "saturday": [ 10, 21, 1, 5 ],
+            "sunday": [ 9, 20, 21, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 60,
+          user_id: 1,
+          theme: 'russian revolution',
+          img_path: './img/october/popup_sovpolpost_00021.jpg',
+          title: 'Woman! Learn how to read and write!',
+          artist: 'E. Kruglikova',
+          year: '1923',
+          rule: {
+            "monday": [ 9, 20, 21, 4 ],
+            "tuesday": [ 18, 19, 30, 3 ],
+            "wednesday": [ 14, 25, 5, 9 ],
+            "thursday": [ 13, 24, 4, 8 ],
+            "friday": [ 12, 23, 3, 7 ],
+            "saturday": [ 11, 22, 2, 6 ],
+            "sunday": [ 10, 21, 1, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
