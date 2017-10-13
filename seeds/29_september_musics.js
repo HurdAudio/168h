@@ -652,6 +652,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 37,
+          user_id: 1,
+          theme: 'math rock/progressive rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3191779155/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://plini.bandcamp.com/album/sweet-nothings',
+          a_string: 'Sweet Nothings by Plini',
+          rule: {
+            "monday": [ 10, 30, 8, 2 ],
+            "tuesday": [ 9, 29, 7, 1 ],
+            "wednesday": [ 8, 28, 6, 30 ],
+            "thursday": [ 7, 27, 5, 29 ],
+            "saturday": [ 6, 26, 4, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 38,
+          user_id: 1,
+          theme: 'math rock/progressive rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4132332380/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://intervalsmusic.bandcamp.com/album/the-shape-of-colour',
+          a_string: 'The Shape of Colour by Intervals',
+          rule: {
+            "monday": [ 6, 26, 4, 28 ],
+            "tuesday": [ 10, 30, 8, 2 ],
+            "wednesday": [ 9, 29, 7, 1 ],
+            "thursday": [ 8, 28, 6, 30 ],
+            "saturday": [ 7, 27, 5, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 39,
+          user_id: 1,
+          theme: 'math rock/progressive rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2544212106/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://plini.bandcamp.com/album/handmade-cities',
+          a_string: 'Handmade Cities by Plini',
+          rule: {
+            "monday": [ 7, 27, 5, 29 ],
+            "tuesday": [ 6, 26, 4, 28 ],
+            "wednesday": [ 10, 30, 8, 2 ],
+            "thursday": [ 9, 29, 7, 1 ],
+            "saturday": [ 8, 28, 6, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
