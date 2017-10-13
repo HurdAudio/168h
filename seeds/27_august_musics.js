@@ -760,6 +760,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 43,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3081573552/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ligeiamare.bandcamp.com/album/trident',
+          a_string: 'TriDenT by Farrell Lowe',
+          rule: {
+            "monday": [ 15, 23, 5, 4 ],
+            "tuesday": [ 14, 22, 7, 8 ],
+            "wednesday": [ 13, 21, 6, 7 ],
+            "thursday": [ 10, 18, 3, 2 ],
+            "saturday": [ 11, 19, 4, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 44,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=638723614/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ligeiamare.bandcamp.com/album/8-9',
+          a_string: '8/9 by Ligeia Mare',
+          rule: {
+            "monday": [ 11, 19, 4, 3 ],
+            "tuesday": [ 15, 23, 5, 4 ],
+            "wednesday": [ 14, 22, 7, 8 ],
+            "thursday": [ 13, 21, 6, 7 ],
+            "saturday": [ 10, 18, 3, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 45,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3448762687/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ligeiamare.bandcamp.com/album/quill',
+          a_string: 'Quill by BackChannel/Group',
+          rule: {
+            "monday": [ 10, 18, 3, 2 ],
+            "tuesday": [ 11, 19, 4, 3 ],
+            "wednesday": [ 15, 23, 5, 4 ],
+            "thursday": [ 14, 22, 7, 8 ],
+            "saturday": [ 13, 21, 6, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
