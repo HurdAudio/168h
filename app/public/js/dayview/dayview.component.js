@@ -924,9 +924,17 @@
       function getCurrentTimePosition() {
         let position = 0;
         let timer = new Date();
-        let nowHour = timer.getHours();
-        let nowMinute = timer.getMinutes();
+        //timer = new Date(timer.getTime() + timer.getTimeZoneOffset() * 60 * 1000);
+        let offset = (timer.getTimezoneOffset() / 60) - 6;
+        console.log(timer);
+        console.log(offset);
 
+        //timer = timer.getTimezoneOffset()/60;
+        let nowHour = timer.getHours() + offset;
+        if (nowHour < 0) {
+          nowHour = 24 - nowHour;
+        }
+        let nowMinute = timer.getMinutes();
 
 
         if (nowMinute < 30) {

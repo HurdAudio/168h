@@ -1304,6 +1304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 66,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/islam-1965.jpg',
+          title: 'Islam',
+          artist: 'Carla Accardi',
+          year: '1965',
+          rule: {
+            "monday": [ 6, 12, 30, 8 ],
+            "tuesday": [ 12, 18, 6, 14 ],
+            "wednesday": [ 11, 17, 5, 13 ],
+            "thursday": [ 10, 16, 4, 12 ],
+            "friday": [ 9, 15, 3, 11 ],
+            "saturday": [ 8, 14, 2, 10 ],
+            "sunday": [ 7, 13, 1, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 67,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/light-1961.jpg',
+          title: 'Light',
+          artist: 'Petre Abrudan',
+          year: '1961',
+          rule: {
+            "monday": [ 7, 13, 1, 9 ],
+            "tuesday": [ 6, 12, 30, 8 ],
+            "wednesday": [ 12, 18, 6, 14 ],
+            "thursday": [ 11, 17, 5, 13 ],
+            "friday": [ 10, 16, 4, 12 ],
+            "saturday": [ 9, 15, 3, 11 ],
+            "sunday": [ 8, 14, 2, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 68,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/eve-1963.jpg',
+          title: 'Eve',
+          artist: 'Mordecai Ardon',
+          year: '1963',
+          rule: {
+            "monday": [ 8, 14, 2, 10 ],
+            "tuesday": [ 7, 13, 1, 9 ],
+            "wednesday": [ 6, 12, 30, 8 ],
+            "thursday": [ 12, 18, 6, 14 ],
+            "friday": [ 11, 17, 5, 13 ],
+            "saturday": [ 10, 16, 4, 12 ],
+            "sunday": [ 9, 15, 3, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 69,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/four-darks-in-red-1958.jpg',
+          title: 'Four Darks in Red',
+          artist: 'Mark Rothko',
+          year: '1958',
+          rule: {
+            "monday": [ 9, 15, 3, 11 ],
+            "tuesday": [ 8, 14, 2, 10 ],
+            "wednesday": [ 7, 13, 1, 9 ],
+            "thursday": [ 6, 12, 30, 8 ],
+            "friday": [ 12, 18, 6, 14 ],
+            "saturday": [ 11, 17, 5, 13 ],
+            "sunday": [ 10, 16, 4, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 70,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/corona-i-1995.jpg',
+          title: 'Corona I',
+          artist: 'Paul Brach',
+          year: '1995',
+          rule: {
+            "monday": [ 11, 17, 5, 13 ],
+            "tuesday": [ 10, 16, 4, 12 ],
+            "wednesday": [ 9, 15, 3, 11 ],
+            "thursday": [ 8, 14, 2, 10 ],
+            "friday": [ 7, 13, 1, 8 ],
+            "saturday": [ 13, 19, 7, 15 ],
+            "sunday": [ 12, 18, 6, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
