@@ -904,6 +904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 46,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/castle-cccxxxiii-15-7-01-2001.jpg',
+          title: 'Castle CCCXXXIII 15.7.01',
+          artist: 'Bob Law',
+          year: '2001',
+          rule: {
+            "monday": [ 9, 14, 20, 25 ],
+            "tuesday": [ 8, 13, 19, 26 ],
+            "wednesday": [ 14, 19, 25, 30 ],
+            "thursday": [ 13, 18, 24, 29 ],
+            "friday": [ 12, 17, 23, 28 ],
+            "saturday": [ 11, 16, 22, 27 ],
+            "sunday": [ 10, 15, 21, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 47,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/rouge-ocre-bleu-vert-1978.jpg',
+          title: 'Rouge, Ocre, Bleu, Vert',
+          artist: 'Yves Gaucher',
+          year: '1978',
+          rule: {
+            "monday": [ 10, 15, 21, 26 ],
+            "tuesday": [ 9, 14, 20, 25 ],
+            "wednesday": [ 8, 13, 19, 26 ],
+            "thursday": [ 14, 19, 25, 30 ],
+            "friday": [ 13, 18, 24, 29 ],
+            "saturday": [ 12, 17, 23, 28 ],
+            "sunday": [ 11, 16, 22, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 48,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/serielles-1970.jpg',
+          title: 'Serielles',
+          artist: 'Victor Bonato',
+          year: '1970',
+          rule: {
+            "monday": [ 11, 16, 22, 27 ],
+            "tuesday": [ 10, 15, 21, 26 ],
+            "wednesday": [ 9, 14, 20, 25 ],
+            "thursday": [ 8, 13, 19, 26 ],
+            "friday": [ 14, 19, 25, 30 ],
+            "saturday": [ 13, 18, 24, 29 ],
+            "sunday": [ 12, 17, 23, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 49,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/diagonal-of-personal-ecstasy-the-diagonal-of-may-25-1963-to-constantin-brancusi-1963.jpg',
+          title: 'Diagonal of Personal Ecstasy (the Diagonal of May 25, 1963, to Constantin Brancusi)',
+          artist: 'Dan Flavin',
+          year: '1963',
+          rule: {
+            "monday": [ 13, 18, 24, 29 ],
+            "tuesday": [ 12, 17, 23, 28 ],
+            "wednesday": [ 11, 16, 22, 27 ],
+            "thursday": [ 10, 15, 21, 26 ],
+            "friday": [ 9, 14, 20, 27 ],
+            "saturday": [ 15, 20, 26, 1 ],
+            "sunday": [ 14, 19, 25, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 50,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/print-4-1967.jpg',
+          title: 'Print 4',
+          artist: 'Bernard Cohen',
+          year: '1967',
+          rule: {
+            "monday": [ 14, 19, 25, 30 ],
+            "tuesday": [ 13, 18, 24, 29 ],
+            "wednesday": [ 12, 17, 23, 28 ],
+            "thursday": [ 11, 16, 22, 27 ],
+            "friday": [ 10, 15, 21, 26 ],
+            "saturday": [ 9, 14, 20, 27 ],
+            "sunday": [ 15, 20, 26, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
