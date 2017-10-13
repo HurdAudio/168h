@@ -1704,6 +1704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 86,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/dada-portrait-of-berenice-abbott-1926.jpg',
+          title: 'Dada Portrait of Berenice Abbott',
+          artist: 'Elsa von Freytag-Loringhoven',
+          year: '1926',
+          rule: {
+            "monday": [ 15, 26, 6, 17 ],
+            "tuesday": [ 14, 25, 5, 16 ],
+            "wednesday": [ 13, 23, 4, 15 ],
+            "thursday": [ 12, 23, 3, 14 ],
+            "friday": [ 11, 22, 2, 13 ],
+            "saturday": [ 10, 21, 1, 12 ],
+            "sunday": [ 9, 20, 31, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 87,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/triste-os-from-cirque-de-l-etoile-filante-1934.jpg',
+          title: 'Triste Os from Cirque de l\'Etoile Filante',
+          artist: 'Georges Rouault',
+          year: '1934',
+          rule: {
+            "monday": [ 9, 20, 31, 11 ],
+            "tuesday": [ 15, 26, 6, 17 ],
+            "wednesday": [ 14, 25, 5, 16 ],
+            "thursday": [ 13, 23, 4, 15 ],
+            "friday": [ 12, 23, 3, 14 ],
+            "saturday": [ 11, 22, 2, 13 ],
+            "sunday": [ 10, 21, 1, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 88,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/nude-study-1908.jpg',
+          title: 'Nude, Study',
+          artist: 'Henri Matisse',
+          year: '1908',
+          rule: {
+            "monday": [ 10, 21, 1, 12 ],
+            "tuesday": [ 9, 20, 31, 11 ],
+            "wednesday": [ 15, 26, 6, 17 ],
+            "thursday": [ 14, 25, 5, 16 ],
+            "friday": [ 13, 23, 4, 15 ],
+            "saturday": [ 12, 23, 3, 14 ],
+            "sunday": [ 11, 22, 2, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 89,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/the-reader.jpg',
+          title: 'The Reader',
+          artist: 'Edouard Vuillard',
+          year: '1890',
+          rule: {
+            "monday": [ 11, 22, 2, 13 ],
+            "tuesday": [ 10, 21, 1, 12 ],
+            "wednesday": [ 9, 20, 31, 11 ],
+            "thursday": [ 15, 26, 6, 17 ],
+            "friday": [ 14, 25, 5, 16 ],
+            "saturday": [ 13, 23, 4, 15 ],
+            "sunday": [ 12, 23, 3, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 90,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/bathers-with-red-cow-1887.jpg',
+          title: 'Bathers with Red Cow',
+          artist: 'Emile Bernard',
+          year: '1887',
+          rule: {
+            "monday": [ 12, 23, 3, 14 ],
+            "tuesday": [ 11, 22, 2, 13 ],
+            "wednesday": [ 10, 21, 1, 12 ],
+            "thursday": [ 9, 20, 31, 11 ],
+            "friday": [ 15, 26, 6, 17 ],
+            "saturday": [ 14, 25, 5, 16 ],
+            "sunday": [ 13, 23, 4, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
