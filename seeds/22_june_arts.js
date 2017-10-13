@@ -1904,6 +1904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 96,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/picnic-in-the-mountains.jpg',
+          title: 'Picnic in the Mountains',
+          artist: 'Fernando Botero',
+          year: '1966',
+          rule: {
+            "monday": [ 10, 20, 30, 8 ],
+            "tuesday": [ 9, 19, 29, 7 ],
+            "wednesday": [ 8, 18, 28, 6 ],
+            "thursday": [ 14, 24, 4, 11 ],
+            "friday": [ 13, 23, 3, 11 ],
+            "saturday": [ 12, 22, 2, 10 ],
+            "sunday": [ 11, 21, 1, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 97,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/comic-vignettes-parents-wedding-1974.jpg',
+          title: 'Comic Vignettes, Parents’ wedding',
+          artist: 'Christian Boltanski',
+          year: '1974',
+          rule: {
+            "monday": [ 11, 21, 1, 9 ],
+            "tuesday": [ 10, 20, 30, 8 ],
+            "wednesday": [ 9, 19, 29, 7 ],
+            "thursday": [ 8, 18, 28, 6 ],
+            "friday": [ 14, 24, 4, 11 ],
+            "saturday": [ 13, 23, 3, 11 ],
+            "sunday": [ 12, 22, 2, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 98,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/four-blind-men-bhavnagar-gujarat-1968.jpg',
+          title: 'Four blind men, Bhavnagar, Gujarat',
+          artist: 'Jyoti Bhatt',
+          year: '1968',
+          rule: {
+            "monday": [ 13, 23, 3, 11 ],
+            "tuesday": [ 12, 22, 2, 10 ],
+            "wednesday": [ 11, 21, 1, 9 ],
+            "thursday": [ 10, 20, 30, 8 ],
+            "friday": [ 9, 19, 29, 7 ],
+            "saturday": [ 15, 25, 5, 12 ],
+            "sunday": [ 14, 24, 4, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 99,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/art-is-ego-1971.jpg',
+          title: 'Art Is Ego',
+          artist: 'Ben',
+          year: '1971',
+          rule: {
+            "monday": [ 14, 24, 4, 12 ],
+            "tuesday": [ 13, 23, 3, 11 ],
+            "wednesday": [ 12, 22, 2, 10 ],
+            "thursday": [ 11, 21, 1, 9 ],
+            "friday": [ 10, 20, 30, 8 ],
+            "saturday": [ 9, 19, 29, 7 ],
+            "sunday": [ 15, 25, 5, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 100,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/the-doll-1934.jpg',
+          title: 'The Doll',
+          artist: 'Hans Bellmer',
+          year: '1934',
+          rule: {
+            "monday": [ 15, 25, 5, 12 ],
+            "tuesday": [ 14, 24, 4, 12 ],
+            "wednesday": [ 13, 23, 3, 11 ],
+            "thursday": [ 12, 22, 2, 10 ],
+            "friday": [ 11, 21, 1, 9 ],
+            "saturday": [ 10, 20, 30, 8 ],
+            "sunday": [ 9, 19, 29, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
