@@ -2104,6 +2104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 106,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/laundress-1.jpg',
+          title: 'Laundress',
+          artist: 'Kazimir Malevich',
+          year: '?',
+          rule: {
+            "monday": [ 14, 24, 3, 13 ],
+            "tuesday": [ 12, 22, 1, 11 ],
+            "wednesday": [ 9, 20, 30, 19 ],
+            "thursday": [ 8, 18, 28, 7 ],
+            "friday": [ 6, 16, 26, 5 ],
+            "saturday": [ 4, 14, 24, 3 ],
+            "sunday": [ 16, 26, 5, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 107,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/the-plowman.jpg',
+          title: 'The Plowman',
+          artist: 'Hans Holbein the Younger',
+          year: 'c.1525',
+          rule: {
+            "monday": [ 16, 26, 5, 13 ],
+            "tuesday": [ 14, 24, 3, 13 ],
+            "wednesday": [ 12, 22, 1, 11 ],
+            "thursday": [ 9, 20, 30, 19 ],
+            "friday": [ 8, 18, 28, 7 ],
+            "saturday": [ 6, 16, 26, 5 ],
+            "sunday": [ 4, 14, 24, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 108,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/women-plucking-geese-1871.jpg',
+          title: 'Women plucking geese',
+          artist: 'Max Liebermann',
+          year: '1871',
+          rule: {
+            "monday": [ 4, 14, 24, 3 ],
+            "tuesday": [ 16, 26, 5, 13 ],
+            "wednesday": [ 14, 24, 3, 13 ],
+            "thursday": [ 12, 22, 1, 11 ],
+            "friday": [ 9, 20, 30, 19 ],
+            "saturday": [ 8, 18, 28, 7 ],
+            "sunday": [ 6, 16, 26, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 109,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/shoemaker-1881.jpg',
+          title: 'Shoemaker',
+          artist: 'Max Liebermann',
+          year: '1881',
+          rule: {
+            "monday": [ 6, 16, 26, 5 ],
+            "tuesday": [ 4, 14, 24, 3 ],
+            "wednesday": [ 16, 26, 5, 13 ],
+            "thursday": [ 14, 24, 3, 13 ],
+            "friday": [ 12, 22, 1, 11 ],
+            "saturday": [ 9, 20, 30, 19 ],
+            "sunday": [ 8, 18, 28, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 110,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/spinning-workshop-in-laren-1889.jpg',
+          title: 'Spinning Workshop in Laren',
+          artist: 'Max Liebermann',
+          year: '1889',
+          rule: {
+            "monday": [ 8, 18, 28, 7 ],
+            "tuesday": [ 6, 16, 26, 5 ],
+            "wednesday": [ 4, 14, 24, 3 ],
+            "thursday": [ 16, 26, 5, 13 ],
+            "friday": [ 14, 24, 3, 13 ],
+            "saturday": [ 12, 22, 1, 11 ],
+            "sunday": [ 9, 20, 30, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
