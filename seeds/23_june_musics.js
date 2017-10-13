@@ -976,6 +976,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 55,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3868833881/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://orphax1.bandcamp.com/album/warschauer-stra-e',
+          a_string: 'Warschauer Straße by Orphax',
+          rule: {
+            "monday": [ 6, 10, 15, 27 ],
+            "tuesday": [ 5, 9, 15, 26 ],
+            "wednesday": [ 4, 12, 14, 25 ],
+            "thursday": [ 8, 12, 18, 29 ],
+            "saturday": [ 7, 11, 17, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 56,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2514789193/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://astralandshit.bandcamp.com/album/--99',
+          a_string: 'состояния - тление цвета by Astral &amp; Shit',
+          rule: {
+            "monday": [ 8, 12, 18, 28 ],
+            "tuesday": [ 7, 11, 16, 28 ],
+            "wednesday": [ 7, 10, 16, 27 ],
+            "thursday": [ 5, 13, 15, 26 ],
+            "saturday": [ 9, 13, 19, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 57,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4011494198/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://paulminesweeper.bandcamp.com/album/northreach',
+          a_string: 'Northreach by Paul Minesweeper',
+          rule: {
+            "monday": [ 9, 13, 19, 30 ],
+            "tuesday": [ 8, 12, 18, 28 ],
+            "wednesday": [ 7, 11, 16, 28 ],
+            "thursday": [ 7, 10, 16, 27 ],
+            "saturday": [ 5, 13, 15, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
