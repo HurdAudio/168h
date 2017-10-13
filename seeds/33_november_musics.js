@@ -436,6 +436,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 25,
+          user_id: 1,
+          theme: 'ethiopia and pan-african',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3198595199/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tramprecords.bandcamp.com/album/the-best-of-tramp-45s-vol-1',
+          a_string: 'The Best of Tramp 45s - Vol.1 by Tramp Rec.',
+          rule: {
+            "monday": [ 2, 13, 24, 26 ],
+            "tuesday": [ 1, 12, 23, 25 ],
+            "wednesday": [ 30, 11, 22, 24 ],
+            "thursday": [ 4, 15, 26, 28 ],
+            "saturday": [ 3, 14, 25, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 26,
+          user_id: 1,
+          theme: 'ethiopia and pan-african',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1114446073/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://hotcasarecords.bandcamp.com/album/itadi-k-bonney',
+          a_string: 'ITADI K.BONNEY by Itadi  K.Bonney',
+          rule: {
+            "monday": [ 3, 14, 25, 27 ],
+            "tuesday": [ 2, 13, 24, 26 ],
+            "wednesday": [ 1, 12, 23, 25 ],
+            "thursday": [ 30, 11, 22, 24 ],
+            "saturday": [ 4, 15, 26, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 27,
+          user_id: 1,
+          theme: 'ethiopia and pan-african',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4239780782/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://hotcasarecords.bandcamp.com/album/love-peace-happiness',
+          a_string: 'Love Peace &amp; Happiness by Orlando Julius &amp; Ashiko',
+          rule: {
+            "monday": [ 4, 15, 26, 28 ],
+            "tuesday": [ 3, 14, 25, 27 ],
+            "wednesday": [ 2, 13, 24, 26 ],
+            "thursday": [ 1, 12, 23, 25 ],
+            "saturday": [ 30, 11, 22, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
