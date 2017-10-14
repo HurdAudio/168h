@@ -889,7 +889,7 @@
         } else {
           dateParamInput = dateParamInput + day;
         }
-        displayDate = new Date(dateParamInput);
+        displayDate = new Date(dateParamInput + 'T13:44:00.000Z');
         //displayDate.setDate(displayDate.getDate() + 1);
         return(displayDate);
       }

@@ -8437,6 +8437,39 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 538,
+          user_id: 1,
+          name: 'Cyro Baptista (percussion), born 1950',
+          color: '#A282C1',
+          picture: './img/musicians/cyrobaptista.jpg',
+          day_of: new Date ('1950-12-23T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: true,
+          override_content: {
+            "sources": [ 'bandcamp' ],
+            "src_strings": [ 'https://bandcamp.com/EmbeddedPlayer/album=352328916/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/' ],
+            "href_strings": [ 'http://cyrobaptista.bandcamp.com/album/bluefly-2' ],
+            "a_strings": [ 'BlueFly by Cyro Baptista' ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 539,
+          user_id: 1,
+          name: 'In the last of a string of apocalyptic predictions by Harold Camping, the world ended on this day in 2011 with a spiritual judgement and a physical rapture',
+          color: '#848B91',
+          picture: './img/doomsday/haroldcamping.jpg',
+          day_of: new Date ('2011-10-21T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
