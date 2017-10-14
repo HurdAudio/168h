@@ -2504,6 +2504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 126,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/ninth-vision-personification-of-god-s-power.jpg',
+          title: 'Ninth Vision. Personification of God\'s power',
+          artist: 'Hildegard of Bingen',
+          year: '?',
+          rule: {
+            "monday": [ 16, 26, 3, 13 ],
+            "tuesday": [ 15, 25, 2, 12 ],
+            "wednesday": [ 14, 24, 1, 11 ],
+            "thursday": [ 13, 23, 31, 10 ],
+            "friday": [ 12, 22, 31, 9 ],
+            "saturday": [ 18, 27, 5, 14 ],
+            "sunday": [ 17, 27, 6, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 127,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/ink-bamboo.jpg',
+          title: 'Ink Bamboo',
+          artist: 'Guan Daosheng',
+          year: '?',
+          rule: {
+            "monday": [ 17, 27, 6, 14 ],
+            "tuesday": [ 16, 26, 3, 13 ],
+            "wednesday": [ 15, 25, 2, 12 ],
+            "thursday": [ 14, 24, 1, 11 ],
+            "friday": [ 13, 23, 31, 10 ],
+            "saturday": [ 12, 22, 31, 9 ],
+            "sunday": [ 18, 27, 5, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 128,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/portrait-of-five-women-with-a-dog-and-a-parrot.jpg',
+          title: 'Portrait of Five Women with a Dog and a Parrot',
+          artist: 'Lavinia Fontana',
+          year: '?',
+          rule: {
+            "monday": [ 18, 27, 5, 14 ],
+            "tuesday": [ 17, 27, 6, 14 ],
+            "wednesday": [ 16, 26, 3, 13 ],
+            "thursday": [ 15, 25, 2, 12 ],
+            "friday": [ 14, 24, 1, 11 ],
+            "saturday": [ 13, 23, 31, 10 ],
+            "sunday": [ 12, 22, 31, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 129,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/judith-with-the-head-of-holofernes-1596.jpg',
+          title: 'Judith with the Head of Holofernes',
+          artist: 'Fede Galizia',
+          year: '1596',
+          rule: {
+            "monday": [ 12, 22, 31, 9 ],
+            "tuesday": [ 18, 27, 5, 14 ],
+            "wednesday": [ 17, 27, 6, 14 ],
+            "thursday": [ 16, 26, 3, 13 ],
+            "friday": [ 15, 25, 2, 12 ],
+            "saturday": [ 14, 24, 1, 11 ],
+            "sunday": [ 13, 23, 31, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 130,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/display-image-2.jpg',
+          title: 'At the Market Stall',
+          artist: 'Louise Moillon',
+          year: '?',
+          rule: {
+            "monday": [ 13, 23, 31, 10 ],
+            "tuesday": [ 12, 22, 31, 9 ],
+            "wednesday": [ 18, 27, 5, 14 ],
+            "thursday": [ 17, 27, 6, 14 ],
+            "friday": [ 16, 26, 3, 13 ],
+            "saturday": [ 15, 25, 2, 12 ],
+            "sunday": [ 14, 24, 1, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
