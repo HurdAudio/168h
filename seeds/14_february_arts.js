@@ -2704,6 +2704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 136,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/lead_960.jpg',
+          title: 'What\'s Going On',
+          artist: 'Barkley L. Hendricks',
+          year: '1974',
+          rule: {
+            "monday": [ 2, 10, 6, 25 ],
+            "tuesday": [ 19, 27, 6, 14 ],
+            "wednesday": [ 21, 29, 8, 16 ],
+            "thursday": [ 26, 2, 8, 18 ],
+            "friday": [ 25, 4, 12, 20 ],
+            "saturday": [ 27, 8, 14, 22 ],
+            "sunday": [ 29, 8, 16, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 137,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/1937_1107_kkat_brick_500.jpg',
+          title: 'Krazy Kat',
+          artist: 'George Herriman',
+          year: '1935',
+          rule: {
+            "monday": [ 29, 8, 16, 26 ],
+            "tuesday": [ 2, 10, 6, 25 ],
+            "wednesday": [ 19, 27, 6, 14 ],
+            "thursday": [ 21, 29, 8, 16 ],
+            "friday": [ 26, 2, 8, 18 ],
+            "saturday": [ 25, 4, 12, 20 ],
+            "sunday": [ 27, 8, 14, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 138,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/large.jpg',
+          title: 'Strange Fruit,',
+          artist: 'Alvin Hollingsworth',
+          year: '1975',
+          rule: {
+            "monday": [ 27, 8, 14, 22 ],
+            "tuesday": [ 29, 8, 16, 26 ],
+            "wednesday": [ 2, 10, 6, 25 ],
+            "thursday": [ 19, 27, 6, 14 ],
+            "friday": [ 21, 29, 8, 16 ],
+            "saturday": [ 26, 2, 8, 18 ],
+            "sunday": [ 25, 4, 12, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 139,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/3958%2F2D324A0E-70BD-38A1-1514-111F73A40512.jpg',
+          title: 'Rhythm Reunion',
+          artist: 'Joseph Holston',
+          year: 'XX cent.',
+          rule: {
+            "monday": [ 25, 4, 12, 20 ],
+            "tuesday": [ 27, 8, 14, 22 ],
+            "wednesday": [ 29, 8, 16, 26 ],
+            "thursday": [ 2, 10, 6, 25 ],
+            "friday": [ 19, 27, 6, 14 ],
+            "saturday": [ 21, 29, 8, 16 ],
+            "sunday": [ 26, 2, 8, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 140,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/v0_master.jpg',
+          title: 'Funky, Black and Catch Me',
+          artist: 'Bill Henderson',
+          year: '1978',
+          rule: {
+            "monday": [ 27, 3, 9, 19 ],
+            "tuesday": [ 26, 5, 13, 21 ],
+            "wednesday": [ 28, 9, 15, 23 ],
+            "thursday": [ 1, 9, 17, 27 ],
+            "friday": [ 3, 11, 7, 26 ],
+            "saturday": [ 20, 28, 7, 15 ],
+            "sunday": [ 22, 1, 9, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
