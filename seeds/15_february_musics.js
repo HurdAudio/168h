@@ -1408,6 +1408,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 79,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2880737996/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://krsone.bandcamp.com/album/the-world-is-mind',
+          a_string: 'The World Is MIND by KRS-One',
+          rule: {
+            "monday": [ 17, 21, 23, 25 ],
+            "tuesday": [ 29, 23, 25, 2 ],
+            "wednesday": [ 12, 17, 19, 2 ],
+            "thursday": [ 13, 17, 19, 23 ],
+            "saturday": [ 15, 19, 21, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 80,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4014717387/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://openmikeeagle360.bandcamp.com/album/brick-body-kids-still-daydream',
+          a_string: 'Brick Body Kids Still Daydream by Open Mike Eagle',
+          rule: {
+            "monday": [ 15, 19, 21, 25 ],
+            "tuesday": [ 17, 21, 23, 25 ],
+            "wednesday": [ 29, 23, 25, 2 ],
+            "thursday": [ 12, 17, 19, 2 ],
+            "saturday": [ 13, 17, 19, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 81,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3725306141/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://rockyriverabeatrock.bandcamp.com/album/gangster-of-love',
+          a_string: 'Gangster of Love by Rocky Rivera',
+          rule: {
+            "monday": [ 13, 17, 19, 23 ],
+            "tuesday": [ 15, 19, 21, 25 ],
+            "wednesday": [ 17, 21, 23, 25 ],
+            "thursday": [ 29, 23, 25, 2 ],
+            "saturday": [ 12, 17, 19, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
