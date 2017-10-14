@@ -2904,6 +2904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 146,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/untitled-graphic-composition-1951-4(1).jpg',
+          title: 'Untitled (Graphic Composition)',
+          artist: 'Bruno Munari',
+          year: '1951',
+          rule: {
+            "monday": [ 1, 3, 4, 6 ],
+            "tuesday": [ 3, 5, 9, 12 ],
+            "wednesday": [ 5, 7, 8, 11 ],
+            "thursday": [ 21, 22, 2, 25 ],
+            "friday": [ 24, 26, 18, 7 ],
+            "saturday": [ 26, 27, 19, 22 ],
+            "sunday": [ 29, 30, 21, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 147,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/modality-series-spring-awakening-854a-1937.jpg',
+          title: 'Modality Series, Spring Awakening 854A',
+          artist: 'Jock Macdonald',
+          year: '1937',
+          rule: {
+            "monday": [ 30, 31, 22, 26 ],
+            "tuesday": [ 2, 4, 5, 7 ],
+            "wednesday": [ 4, 6, 10, 13 ],
+            "thursday": [ 6, 8, 9, 12 ],
+            "friday": [ 22, 23, 3, 26 ],
+            "saturday": [ 25, 27, 19, 8 ],
+            "sunday": [ 27, 28, 20, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 148,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/sun-1943.jpg',
+          title: 'Sun',
+          artist: 'Arthur Dove',
+          year: '1943',
+          rule: {
+            "monday": [ 27, 28, 20, 23 ],
+            "tuesday": [ 30, 31, 22, 26 ],
+            "wednesday": [ 2, 4, 5, 7 ],
+            "thursday": [ 4, 6, 10, 13 ],
+            "friday": [ 6, 8, 9, 12 ],
+            "saturday": [ 22, 23, 3, 26 ],
+            "sunday": [ 25, 27, 19, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 149,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/night-creatures-1965.jpg',
+          title: 'Night Creatures',
+          artist: 'Lee Krasner',
+          year: '1965',
+          rule: {
+            "monday": [ 25, 27, 19, 8 ],
+            "tuesday": [ 27, 28, 20, 23 ],
+            "wednesday": [ 30, 31, 22, 26 ],
+            "thursday": [ 2, 4, 5, 7 ],
+            "friday": [ 4, 6, 10, 13 ],
+            "saturday": [ 6, 8, 9, 12 ],
+            "sunday": [ 22, 23, 3, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 150,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/cinetic-composition-1968.jpg',
+          title: 'Cinetic Composition',
+          artist: 'Almir Mavignier',
+          year: '1968',
+          rule: {
+            "monday": [ 22, 23, 3, 26 ],
+            "tuesday": [ 25, 27, 19, 8 ],
+            "wednesday": [ 27, 28, 20, 23 ],
+            "thursday": [ 30, 31, 22, 26 ],
+            "friday": [ 2, 4, 5, 7 ],
+            "saturday": [ 4, 6, 10, 13 ],
+            "sunday": [ 6, 8, 9, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
