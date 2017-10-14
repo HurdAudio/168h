@@ -73,7 +73,7 @@
     <div id="occasionZone">
       <div>
         <img src="../img/eve-1071355_1920.jpg">
-        <a href="" id="occasionManager" class="btn">occasions</a>
+        <a href="" id="occasionManager" class="btn" ng-click="$ctrl.occasionManage()">occasions</a>
       </div>
 
     </div>
@@ -162,8 +162,39 @@
               <p>{{holiday.day}}</p>
               <br>
               <div class="holidayEdit">
-                <a href="" class="btn" ng-click="$ctrl.editBlock(holiday.id)">edit</a>
-              <a href="" class="btn" ng-click="$ctrl.deleteBlock(holiday.id)">delete</a>
+                <a href="" class="btn" ng-click="$ctrl.editHoliday(holiday.id)">edit</a>
+              <a href="" class="btn" ng-click="$ctrl.deleteHoliday(holiday.id)">delete</a>
+
+              </div>
+
+            </main>
+          </div>
+
+        </fieldset>
+
+
+      </form>
+
+    </div>
+    <div id="occasionsManagementDiv">
+      <div id="occasionsManagerBar">
+        <a href="" class="btn" id="occasionsManagerDone" ng-click="$ctrl.closeOccasionsManager()">done</a>
+        <h1>Occasions Manager</h1>
+
+      </div>
+      <form id="occasionsManagerForm" class="pure-form pure-form-stacked">
+        <fieldset>
+          <div id="occasionsManagement">
+            <a href="" class="btn" id="addOccasion" ng-click="$ctrl.addNewOccasion()">new</a>
+            <a href="" class="btn" id="occasionReporter" ng-click="$ctrl.occasionReport()">report</a>
+            <main ng-repeat="occasion in $ctrl.userOccasions | orderBy : $ctrl.sortBy">
+              <p>{{occasion.name}}</p>
+              <p>{{occasion.dayOf}}</p>
+              <p>Occurs Annually: {{occasion.annualState}}</p>
+              <br>
+              <div class="occasionEdit">
+                <a href="" class="btn" ng-click="$ctrl.editOccaision(occasion.id)">edit</a>
+              <a href="" class="btn" ng-click="$ctrl.deleteOccasion(occasion.id)">delete</a>
 
               </div>
 

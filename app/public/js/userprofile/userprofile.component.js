@@ -76,6 +76,8 @@
       vm.deleteBlock = deleteBlock;
       vm.holidayManage = holidayManage;
       vm.closeHolidayManager = closeHolidayManager;
+      vm.occasionManage = occasionManage;
+      vm.closeOccasionsManager = closeOccasionsManager;
 
       function cleanDate(dayOf) {
         let months = [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ];
@@ -124,6 +126,17 @@
         });
       }
 
+      function closeOccasionsManager() {
+        let occasionManager = document.getElementById('occasionManager');
+        let occasionsManagementDiv = document.getElementById('occasionsManagementDiv');
+        let occasionZone = document.getElementById('occasionZone');
+
+
+        occasionManager.setAttribute("style", "visibility: visible;");
+        occasionsManagementDiv.setAttribute("style", "display: none;");
+        occasionZone.setAttribute("style", "opacity: 1;");
+      }
+
       function closeHolidayManager() {
         let holidayManager = document.getElementById('holidayManager');
         let holidayManagementDiv = document.getElementById('holidayManagementDiv');
@@ -133,6 +146,43 @@
         holidayManager.setAttribute("style", "visibility: visible;");
         holidayManagementDiv.setAttribute("style", "display: none;");
         holidayZone.setAttribute("style", "opacity: 1;");
+      }
+
+      function populateOccasionManager() {
+        $http.get(`/occasionsbyuser/${currentUserId}`)
+        .then(userOccasionsData=>{
+          let userOccasions = userOccasionsData.data;
+          for (let i = 0; i < userOccasions.length; i++) {
+            userOccasions[i].dayOf = cleanDate(userOccasions[i].day_of);
+            if (userOccasions[i].is_annual) {
+              userOccasions[i].annualState = 'yes';
+            } else {
+              userOccasions[i].annualState = 'no';
+            }
+          }
+          vm.userOccasions = userOccasions.sort((a, b)=>{
+            if (a.name.toLowerCase() < b.name.toLowerCase()) {
+              return -1;
+            } else if (a.name.toLowerCase() > b.name.toLowerCase()) {
+              return 1;
+            } else {
+              return 0;
+            }
+          });
+          
+        });
+      }
+
+      function occasionManage() {
+        let occasionManager = document.getElementById('occasionManager');
+        let occasionsManagementDiv = document.getElementById('occasionsManagementDiv');
+        let occasionZone = document.getElementById('occasionZone');
+
+
+        occasionManager.setAttribute("style", "visibility: hidden;");
+        occasionsManagementDiv.setAttribute("style", "display: initial;");
+        occasionZone.setAttribute("style", "opacity: 0.4;");
+        populateOccasionManager();
       }
 
       function holidayManage() {
