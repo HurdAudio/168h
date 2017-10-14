@@ -1192,6 +1192,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 67,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'http://bandcamp.com/EmbeddedPlayer/album=1000438910/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://music.microkingdom.com/album/return-to-the-valley-of-the-jeep-beats',
+          a_string: 'Return to the Valley of the Jeep Beats by Microkingdom',
+          rule: {
+            "monday": [ 13, 21, 3, 8 ],
+            "tuesday": [ 12, 20, 2, 7 ],
+            "wednesday": [ 11, 17, 29, 4 ],
+            "thursday": [ 10, 18, 30, 5 ],
+            "saturday": [ 9, 17, 29, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 68,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1928719438/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://pnlrecords.bandcamp.com/album/fluku',
+          a_string: 'Fluku by Large Unit',
+          rule: {
+            "monday": [ 9, 17, 29, 4 ],
+            "tuesday": [ 13, 21, 3, 8 ],
+            "wednesday": [ 12, 20, 2, 7 ],
+            "thursday": [ 11, 17, 29, 4 ],
+            "saturday": [ 10, 18, 30, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 69,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=893355010/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://aerophonicrecords.bandcamp.com/album/wistfully',
+          a_string: 'Wistfully by Rempis/Harnik/Zerang',
+          rule: {
+            "monday": [ 10, 18, 30, 5 ],
+            "tuesday": [ 9, 17, 29, 4 ],
+            "wednesday": [ 13, 21, 3, 8 ],
+            "thursday": [ 12, 20, 2, 7 ],
+            "saturday": [ 11, 17, 29, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
