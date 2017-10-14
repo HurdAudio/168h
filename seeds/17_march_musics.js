@@ -1300,6 +1300,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 73,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2763598205/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://melaniedebiasio.bandcamp.com/album/lilies',
+          a_string: 'Lilies by Melanie De Biasio',
+          rule: {
+            "monday": [ 11, 17, 23, 31 ],
+            "tuesday": [ 15, 21, 27, 4 ],
+            "wednesday": [ 14, 20, 26, 3 ],
+            "thursday": [ 13, 19, 25, 3 ],
+            "saturday": [ 12, 18, 24, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 74,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2670324524/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://zara-mcfarlane.bandcamp.com/album/if-you-knew-her-2',
+          a_string: 'If You Knew Her by Zara Mcfarlane',
+          rule: {
+            "monday": [ 12, 18, 24, 1 ],
+            "tuesday": [ 11, 17, 23, 31 ],
+            "wednesday": [ 15, 21, 27, 4 ],
+            "thursday": [ 14, 20, 26, 3 ],
+            "saturday": [ 13, 19, 25, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 75,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1336511343/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://racheltherrien.bandcamp.com/album/why-dont-you-try-wdyt',
+          a_string: 'Why Don&#39;t You Try (WDYT) by Rachel Therrien Quintet',
+          rule: {
+            "monday": [ 13, 19, 25, 3 ],
+            "tuesday": [ 12, 18, 24, 1 ],
+            "wednesday": [ 11, 17, 23, 31 ],
+            "thursday": [ 15, 21, 27, 4 ],
+            "saturday": [ 14, 20, 26, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
