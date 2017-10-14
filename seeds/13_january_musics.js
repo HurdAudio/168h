@@ -1516,6 +1516,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 85,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2327158320/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://pauldresher.bandcamp.com/album/casa-vecchia',
+          a_string: 'Casa Vecchia by Paul Dresher',
+          rule: {
+            "monday": [ 23, 17, 19, 7 ],
+            "tuesday": [ 19, 26, 27, 27 ],
+            "wednesday": [ 17, 21, 23, 27 ],
+            "thursday": [ 19, 26, 28, 27 ],
+            "saturday": [ 27, 21, 23, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 86,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=305668920/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://meerenai.bandcamp.com/album/the-art-of-noise',
+          a_string: 'The Art of Noise by Meerenai Shim',
+          rule: {
+            "monday": [ 27, 21, 23, 28 ],
+            "tuesday": [ 23, 17, 19, 7 ],
+            "wednesday": [ 19, 26, 27, 27 ],
+            "thursday": [ 17, 21, 23, 27 ],
+            "saturday": [ 19, 26, 28, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 87,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2632839892/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://meerenai.bandcamp.com/album/pheromone',
+          a_string: 'Pheromone by Meerenai Shim',
+          rule: {
+            "monday": [ 19, 26, 28, 27 ],
+            "tuesday": [ 27, 21, 23, 28 ],
+            "wednesday": [ 23, 17, 19, 7 ],
+            "thursday": [ 19, 26, 27, 27 ],
+            "saturday": [ 17, 21, 23, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
