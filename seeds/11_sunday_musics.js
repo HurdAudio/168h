@@ -904,6 +904,36 @@ exports.seed = function(knex, Promise) {
           a_string: 'A Fireside Chat with Lucifer by Sun Ra &amp; His Arkestra',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 91,
+          user_id: 1,
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1998133748/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sunramusic.bandcamp.com/album/sunrise-in-different-dimensions',
+          a_string: 'Sunrise in Different Dimensions by Sun Ra &amp; His Arkestra',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 92,
+          user_id: 1,
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1334536868/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sunramusic.bandcamp.com/album/art-forms-of-dimensions-tomorrow',
+          a_string: 'Art Forms of Dimensions Tomorrow by Sun Ra &amp; His Arkestra',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 93,
+          user_id: 1,
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3124006692/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sunramusic.bandcamp.com/album/continuation-vol-1',
+          a_string: 'Continuation, Vol. 1 by Sun Ra &amp; His Arkestra',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
