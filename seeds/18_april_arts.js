@@ -2304,6 +2304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 116,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/1-cincinnati-reds-great-american-ball-park-david-long.jpg',
+          title: 'Cincinnati Reds Great American Ball Park',
+          artist: 'David Long',
+          year: '2014',
+          rule: {
+            "monday": [ 12, 17, 23, 29 ],
+            "tuesday": [ 11, 16, 22, 28 ],
+            "wednesday": [ 16, 22, 27, 4 ],
+            "thursday": [ 30, 20, 26, 3 ],
+            "friday": [ 15, 20, 26, 2 ],
+            "saturday": [ 14, 18, 3, 1 ],
+            "sunday": [ 13, 18, 23, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 117,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/cincinnati-reds-great-american-ballpark-creative-6-black-white-david-haskett.jpg',
+          title: 'Cincinnati Reds Great American Ballpark',
+          artist: 'David Haskett',
+          year: '2015',
+          rule: {
+            "monday": [ 13, 18, 23, 30 ],
+            "tuesday": [ 12, 17, 23, 29 ],
+            "wednesday": [ 11, 16, 22, 28 ],
+            "thursday": [ 16, 22, 27, 4 ],
+            "friday": [ 30, 20, 26, 3 ],
+            "saturday": [ 15, 20, 26, 2 ],
+            "sunday": [ 14, 18, 3, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 118,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/2.5.reds69-mosaic.jpg',
+          title: '1975 Big Red Machine',
+          artist: 'Mark Riedy',
+          year: '?',
+          rule: {
+            "monday": [ 14, 18, 3, 1 ],
+            "tuesday": [ 13, 18, 23, 30 ],
+            "wednesday": [ 12, 17, 23, 29 ],
+            "thursday": [ 11, 16, 22, 28 ],
+            "friday": [ 16, 22, 27, 4 ],
+            "saturday": [ 30, 20, 26, 3 ],
+            "sunday": [ 15, 20, 26, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 119,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/3c1b208ffec3efc28bbfd0ed820a4432--baseball-art-sports-art.jpg',
+          title: 'Eric Davis',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 16, 21, 27, 3 ],
+            "tuesday": [ 15, 19, 4, 2 ],
+            "wednesday": [ 14, 19, 24, 1 ],
+            "thursday": [ 13, 18, 24, 30 ],
+            "friday": [ 12, 17, 23, 29 ],
+            "saturday": [ 17, 23, 28, 5 ],
+            "sunday": [ 1, 21, 27, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 120,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/Art Jacobs 1939 4x6 300-228x228.jpg',
+          title: 'Art Jacobs - 1939 Cincinnati Reds',
+          artist: '?',
+          year: 'xxi Cent.',
+          rule: {
+            "monday": [ 1, 21, 27, 4 ],
+            "tuesday": [ 16, 21, 27, 3 ],
+            "wednesday": [ 15, 19, 4, 2 ],
+            "thursday": [ 14, 19, 24, 1 ],
+            "friday": [ 13, 18, 24, 30 ],
+            "saturday": [ 12, 17, 23, 29 ],
+            "sunday": [ 17, 23, 28, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
