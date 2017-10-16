@@ -1246,6 +1246,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 70,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3969055914/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://trostrecords.bandcamp.com/album/schraubenlieder',
+          a_string: 'Schraubenlieder by SVEN-AKE JOHANSSON / ALEXANDER VON SCHLIPPENBACH',
+          rule: {
+            "monday": [ 12, 18, 30, 5 ],
+            "tuesday": [ 11, 19, 1, 6 ],
+            "wednesday": [ 10, 18, 30, 5 ],
+            "thursday": [ 14, 22, 4, 9 ],
+            "saturday": [ 13, 21, 3, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 71,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=315101896/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://f-a-t-a-k-a.bandcamp.com/album/muddy-ditch',
+          a_string: 'Muddy Ditch by Sebastian Lexer &amp; Steve Noble',
+          rule: {
+            "monday": [ 13, 21, 3, 8 ],
+            "tuesday": [ 12, 18, 30, 5 ],
+            "wednesday": [ 11, 19, 1, 6 ],
+            "thursday": [ 10, 18, 30, 5 ],
+            "saturday": [ 14, 22, 4, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 72,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4206341431/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://trostrecords.bandcamp.com/album/falling-and-5-other-failings',
+          a_string: 'Falling and 5 other failings by MATS GUSTAFSSON / CHRISTOF KURZMANN',
+          rule: {
+            "monday": [ 14, 22, 4, 9 ],
+            "tuesday": [ 13, 21, 3, 8 ],
+            "wednesday": [ 12, 18, 30, 5 ],
+            "thursday": [ 11, 19, 1, 6 ],
+            "saturday": [ 10, 18, 30, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
