@@ -804,6 +804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 41,
+          user_id: 1,
+          theme: 'pulp',
+          img_path: './img/december/18-00,KrushingKaiser.jpg',
+          title: 'Krushing Kaiserism',
+          artist: 'Ken Browne',
+          year: '1918',
+          rule: {
+            "monday": [ 6, 19, 27, 2 ],
+            "tuesday": [ 5, 18, 26, 1 ],
+            "wednesday": [ 4, 17, 25, 31 ],
+            "thursday": [ 3, 16, 24, 30 ],
+            "friday": [ 9, 22, 30, 5 ],
+            "saturday": [ 8, 21, 29, 4 ],
+            "sunday": [ 7 , 20, 28, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 42,
+          user_id: 1,
+          theme: 'pulp',
+          img_path: './img/december/32-06,Oriental.jpg',
+          title: 'Oriental Stories',
+          artist: 'Margaret Brundage',
+          year: '1932',
+          rule: {
+            "monday": [ 8, 21, 29, 4 ],
+            "tuesday": [ 7, 20, 28, 3 ],
+            "wednesday": [ 6, 19, 27, 2 ],
+            "thursday": [ 5, 18, 26, 1 ],
+            "friday": [ 4, 17, 25, 31 ],
+            "saturday": [ 10, 23, 31, 6 ],
+            "sunday": [ 9, 22, 30, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 43,
+          user_id: 1,
+          theme: 'pulp',
+          img_path: './img/december/02-06-29,NYHerald.jpg',
+          title: 'N Y Herald',
+          artist: 'Leighton Budd',
+          year: '1902',
+          rule: {
+            "monday": [ 9, 22, 30, 5 ],
+            "tuesday": [ 8, 21, 29, 4 ],
+            "wednesday": [ 7, 20, 28, 3 ],
+            "thursday": [ 6, 19, 27, 2 ],
+            "friday": [ 5, 18, 26, 1 ],
+            "saturday": [ 4, 17, 25, 31 ],
+            "sunday": [ 10, 23, 31, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 44,
+          user_id: 1,
+          theme: 'pulp',
+          img_path: './img/december/1928-11,WzBng1.jpg',
+          title: 'Whiz Bang',
+          artist: 'Carl Buettner',
+          year: '1928',
+          rule: {
+            "monday": [ 10, 23, 31, 6 ],
+            "tuesday": [ 9, 22, 30, 5 ],
+            "wednesday": [ 8, 21, 29, 4 ],
+            "thursday": [ 7, 20, 28, 3 ],
+            "friday": [ 6, 19, 27, 2 ],
+            "saturday": [ 5, 18, 26, 1 ],
+            "sunday": [ 4, 17, 25, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 45,
+          user_id: 1,
+          theme: 'pulp',
+          img_path: './img/december/35-07-1st,RnchRom2.jpg',
+          title: 'Ranch Romances',
+          artist: 'H. D. Bugbee',
+          year: '1935',
+          rule: {
+            "monday": [ 4, 17, 25, 31 ],
+            "tuesday": [ 10, 23, 31, 6 ],
+            "wednesday": [ 9, 22, 30, 5 ],
+            "thursday": [ 8, 21, 29, 4 ],
+            "friday": [ 7, 20, 28, 3 ],
+            "saturday": [ 6, 19, 27, 2 ],
+            "sunday": [ 5, 18, 26, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
