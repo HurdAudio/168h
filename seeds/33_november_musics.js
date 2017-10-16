@@ -490,6 +490,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 28,
+          user_id: 1,
+          theme: 'ethiopia and pan-african',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3075585632/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://blackflower1.bandcamp.com/album/artifacts',
+          a_string: 'Artifacts by Black Flower',
+          rule: {
+            "monday": [ 1, 12, 23, 25 ],
+            "tuesday": [ 5, 16, 27, 29 ],
+            "wednesday": [ 4, 15, 26, 28 ],
+            "thursday": [ 3, 14, 25, 27 ],
+            "saturday": [ 2, 13, 24, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 29,
+          user_id: 1,
+          theme: 'ethiopia and pan-african',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2800805288/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://andrewkleinmusic.bandcamp.com/album/new-dirty',
+          a_string: 'New Dirty by Dirty Money Music',
+          rule: {
+            "monday": [ 2, 13, 24, 26 ],
+            "tuesday": [ 1, 12, 23, 25 ],
+            "wednesday": [ 5, 16, 27, 29 ],
+            "thursday": [ 4, 15, 26, 28 ],
+            "saturday": [ 3, 14, 25, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 30,
+          user_id: 1,
+          theme: 'ethiopia and pan-african',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3061013425/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://analogafrica.bandcamp.com/album/best-woman-limited-edition',
+          a_string: 'Best Woman (Limited Edition) by Vincent Ahehehinnou',
+          rule: {
+            "monday": [ 3, 14, 25, 27 ],
+            "tuesday": [ 2, 13, 24, 26 ],
+            "wednesday": [ 1, 12, 23, 25 ],
+            "thursday": [ 5, 16, 27, 29 ],
+            "saturday": [ 4, 15, 26, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
