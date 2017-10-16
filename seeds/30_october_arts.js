@@ -1204,6 +1204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 61,
+          user_id: 1,
+          theme: 'russian revolution',
+          img_path: './img/october/popup_sovpolpost_00018.jpg',
+          title: 'To get more - (we) have to produce more, to produce more - (we) have to know (learn) more.',
+          artist: 'A. Zelensky',
+          year: '1920',
+          rule: {
+            "monday": [ 10, 21, 1, 5 ],
+            "tuesday": [ 9, 20, 21, 4 ],
+            "wednesday": [ 18, 19, 30, 3 ],
+            "thursday": [ 14, 25, 5, 9 ],
+            "friday": [ 13, 24, 4, 8 ],
+            "saturday": [ 12, 23, 3, 7 ],
+            "sunday": [ 11, 22, 2, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 62,
+          user_id: 1,
+          theme: 'russian revolution',
+          img_path: './img/october/popup_sovpolpost_00017.jpg',
+          title: 'Beware of mensheviks and SRs',
+          artist: '?',
+          year: '1920',
+          rule: {
+            "monday": [ 11, 22, 2, 6 ],
+            "tuesday": [ 10, 21, 1, 5 ],
+            "wednesday": [ 9, 20, 21, 4 ],
+            "thursday": [ 18, 19, 30, 3 ],
+            "friday": [ 14, 25, 5, 9 ],
+            "saturday": [ 13, 24, 4, 8 ],
+            "sunday": [ 12, 23, 3, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 63,
+          user_id: 1,
+          theme: 'russian revolution',
+          img_path: './img/october/popup_sovpolpost_00012.jpg',
+          title: 'Red gift to a white pan',
+          artist: 'Dmitry Moor',
+          year: '1920',
+          rule: {
+            "monday": [ 13, 24, 4, 8 ],
+            "tuesday": [ 12, 23, 3, 7 ],
+            "wednesday": [ 11, 22, 2, 6 ],
+            "thursday": [ 10, 21, 22, 5 ],
+            "friday": [ 19, 20, 31, 4 ],
+            "saturday": [ 15, 26, 6, 10 ],
+            "sunday": [ 14, 25, 5, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 64,
+          user_id: 1,
+          theme: 'russian revolution',
+          img_path: './img/october/popup_sovpolpost_00009.jpg',
+          title: 'Ukrainians and Russians have the same slogan..',
+          artist: '?',
+          year: '1920',
+          rule: {
+            "monday": [ 14, 25, 5, 9 ],
+            "tuesday": [ 13, 24, 4, 8 ],
+            "wednesday": [ 12, 23, 3, 7 ],
+            "thursday": [ 11, 22, 2, 6 ],
+            "friday": [ 10, 21, 22, 5 ],
+            "saturday": [ 19, 20, 31, 4 ],
+            "sunday": [ 15, 26, 6, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 65,
+          user_id: 1,
+          theme: 'russian revolution',
+          img_path: './img/october/popup_sovpolpost_00003.jpg',
+          title: 'Who is against Soviet',
+          artist: 'Dmitry Moor',
+          year: '1919',
+          rule: {
+            "monday": [ 15, 26, 6, 10 ],
+            "tuesday": [ 14, 25, 5, 9 ],
+            "wednesday": [ 13, 24, 4, 8 ],
+            "thursday": [ 12, 23, 3, 7 ],
+            "friday": [ 11, 22, 2, 6 ],
+            "saturday": [ 10, 21, 22, 5 ],
+            "sunday": [ 19, 20, 31, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
