@@ -814,6 +814,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 46,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=997678320/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://killick.bandcamp.com/album/fac-a-d-e',
+          a_string: 'fac(a/d)e by Thunder O(h)m!',
+          rule: {
+            "monday": [ 13, 21, 6, 7 ],
+            "tuesday": [ 10, 18, 3, 2 ],
+            "wednesday": [ 11, 19, 4, 3 ],
+            "thursday": [ 15, 23, 5, 4 ],
+            "saturday": [ 14, 22, 7, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 47,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1492914464/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://missincinatti.bandcamp.com/album/remove-not-the-ancient-landmarks',
+          a_string: 'remove not the ancient landmarks by Missincinatti',
+          rule: {
+            "monday": [ 14, 22, 7, 8 ],
+            "tuesday": [ 13, 21, 6, 7 ],
+            "wednesday": [ 10, 18, 3, 2 ],
+            "thursday": [ 11, 19, 4, 3 ],
+            "saturday": [ 15, 23, 5, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 48,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2808496546/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jeffmcleod.bandcamp.com/album/under-dim-self',
+          a_string: 'Under Dim Self by Jeff McLeod',
+          rule: {
+            "monday": [ 15, 23, 5, 4 ],
+            "tuesday": [ 14, 22, 7, 8 ],
+            "wednesday": [ 13, 21, 6, 7 ],
+            "thursday": [ 10, 18, 3, 2 ],
+            "saturday": [ 11, 19, 4, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
