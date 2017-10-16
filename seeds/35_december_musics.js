@@ -382,6 +382,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 22,
+          user_id: 1,
+          theme: 'brazil and pan-south american',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1478386499/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://godsandpunks.bandcamp.com/album/into-the-dunes-of-doom',
+          a_string: 'Into the Dunes of Doom by Gods &amp; Punks',
+          rule: {
+            "monday": [ 10, 16, 22, 28 ],
+            "tuesday": [ 9, 15, 21, 27 ],
+            "wednesday": [ 8, 14, 20, 26 ],
+            "thursday": [ 6, 13, 19, 25 ],
+            "saturday": [ 6, 12, 18, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 23,
+          user_id: 1,
+          theme: 'brazil and pan-south american',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3177769465/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://voodoohop.bandcamp.com/album/voodoohop-entropia-coletiva-i',
+          a_string: 'Voodoohop: Entropia Coletiva I by voodoohop',
+          rule: {
+            "monday": [ 6, 12, 18, 24 ],
+            "tuesday": [ 10, 16, 22, 28 ],
+            "wednesday": [ 9, 15, 21, 27 ],
+            "thursday": [ 8, 14, 20, 26 ],
+            "saturday": [ 6, 13, 19, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 24,
+          user_id: 1,
+          theme: 'brazil and pan-south american',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3859908011/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://theblogthatcelebratesitself.bandcamp.com/album/highwire-days-the-psychedelic-furs-reverence',
+          a_string: 'Highwire Days, The Psychedelic Furs´ Reverence by TBTCI',
+          rule: {
+            "monday": [ 6, 13, 19, 25 ],
+            "tuesday": [ 6, 12, 18, 24 ],
+            "wednesday": [ 10, 16, 22, 28 ],
+            "thursday": [ 9, 15, 21, 27 ],
+            "saturday": [ 8, 14, 20, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
