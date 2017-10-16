@@ -2982,15 +2982,45 @@ footer img {
   padding-top: 0.4em;
 }
 
-#blocktypeReportBar h1 {
-  margin-left: 2em;
-  padding-top: 0.4em;
-}
 
 #blocktypeReportBar a {
   float:right;
   margin-right: 1.1em;
   margin-top: 0.2em;
+}
+
+#userHolidayEditorBar {
+  font-family: 'Asul', serif;
+  font-size: 18px
+  background: #110514;
+  background-color: -webkit-linear-gradient(-135deg, #110514, #FBFBF3);
+  background: -o-linear-gradient(-135deg, #110514, #FBFBF3);
+  background: -moz-linear-gradient(-135deg, #110514, #FBFBF3);
+  background: linear-gradient(-135deg, #110514, #FBFBF3);
+  border-radius: 5px;
+  margin: 0;
+  padding:0;
+  height: 7.6em;
+  top: 0%;
+  opacity: 1;
+}
+
+#userHolidayEditorBar h1 {
+  margin-left: 2em;
+  padding-top: 0.4em;
+}
+
+
+#userHolidayEditorBar a {
+  float:right;
+  margin-right: 1.1em;
+  margin-top: 0.2em;
+}
+
+#userHolidayImageEditorField img {
+  margin-left: 4em;
+  width: 36vmin;
+  height: 36vmin;
 }
 
 #deleteBlocktypeConfirmBar {
@@ -3164,15 +3194,59 @@ footer img {
   margin-bottom: 0.5em;
 }
 
+
+#existingBlocksEditorForm button {
+  margin-left: 2em;
+}
+
+#userHolidayEditorForm {
+  font-family: 'Alike Angular', serif;
+  font-size: 24px;
+  background: #110514;
+  background-color: -webkit-linear-gradient(135deg, #110514, #FBFBF3);
+  background: -o-linear-gradient(135deg, #110514, #FBFBF3);
+  background: -moz-linear-gradient(135deg, #110514, #FBFBF3);
+  background: linear-gradient(135deg, #110514, #FBFBF3);
+  border-radius: 5px;
+  opacity: 1;
+}
+
+#userHolidayEditorForm p {
+  margin-left: 2em;
+}
+
+#userHolidayEditorForm input[type=text] {
+  margin-left: 3em;
+  margin-right: 0;
+  width: 70%;
+}
+
+#userHolidayEditorForm input[type=checkbox] {
+  margin-left: 11em;
+  -ms-transform: scale(3); /* IE */
+  -moz-transform: scale(3); /* FF */
+  -webkit-transform: scale(3); /* Safari and Chrome */
+  -o-transform: scale(3); /* Opera */
+  margin-bottom: 0.5em;
+}
+
+
+#userHolidayEditorForm button {
+  margin-left: 2em;
+}
+
 #existingBlocktypeEditorColor {
   margin-left: 5em;
   height: 2em;
   width: 3em;
 }
 
-#existingBlocksEditorForm button {
-  margin-left: 2em;
+#userHolidayColorSelector {
+  margin-left: 5em;
+  height: 2em;
+  width: 3em;
 }
+
 
 
 .removal {
@@ -3862,6 +3936,69 @@ footer img {
 
 #occasionsManagementDiv {
   display: none;
+}
+
+#userHolidayEditorDiv {
+  display: none;
+}
+
+#userHolidayImageUploadCentre {
+  visibility: hidden;
+  margin: 1em;
+  padding-left: 2.1em;
+  border-radius: 12px;
+  border: solid 2px #000000;
+  height: 6em;
+  background: #22bc44;
+}
+
+#userHolidayImageUploadCentre a {
+  float: left;
+  margin-left: 0.8em;
+}
+
+#holidayArtImageUploaderDiv {
+  margin: 1em;
+  padding-left: 2.1em;
+  height: 5em;
+
+}
+
+#holidayArtImageUploaderDiv a {
+  float: left;
+  margin-left: 1.8em;
+}
+
+#userHolidayMusicAddingForm {
+  visibility: hidden;
+
+}
+
+#userHolidayMusicAddingForm a {
+  float: left;
+  margin-left: 3.2em;
+}
+
+#userSelectHolidayDate {
+  height: 8em;
+}
+
+#userHolidayDaySelect {
+  float: left;
+  margin-left: 3em;
+  width: 3em;
+}
+
+#userHolidayMonthSelect {
+  float: left;
+  margin-left: 0.5em;
+  width: 10em;
+}
+
+#userHolidayArtsEditor img {
+  width: 90%;
+  margin: 0.5em 0em 0.5em 1em;
+
 }
 
 /*.day {

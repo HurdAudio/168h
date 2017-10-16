@@ -43,6 +43,59 @@
     return(security);
   }
 
+  function checkValidBancampEmbed(embedString) {
+    let valid = true;
+
+    if (embedString.indexOf('src="') === -1) {
+      valid = false;
+    }
+    if (embedString.indexOf('href="') === -1) {
+      valid = false;
+    }
+    if (embedString.indexOf('</a>') === -1) {
+      valid = false;
+    }
+    return(valid);
+  }
+
+  function extractSrcStringFromBandcampEmbed(embedString) {
+    let srcString = '';
+    let startIndex = embedString.indexOf('src="') + 5;
+    let endIndex = startIndex;
+
+    while ((embedString[endIndex] !== '"') && (endIndex < embedString.length)) {
+      ++endIndex;
+    }
+    srcString = embedString.slice(startIndex, endIndex);
+
+    return(srcString);
+  }
+
+  function extractHrefStringFromBandcampEmbed(embedString) {
+    let hrefString = '';
+    let startIndex = embedString.indexOf('href="') + 6;
+    let endIndex = startIndex;
+
+    while ((embedString[endIndex] !== '"') && (endIndex < embedString.length)) {
+      ++endIndex;
+    }
+    hrefString = embedString.slice(startIndex, endIndex);
+
+    return(hrefString);
+  }
+
+  function extractATagFromBandcampEmbed(embedString) {
+    let aTag = '';
+    let endIndex = embedString.indexOf('</a>');
+    let startIndex = endIndex;
+
+    while ((embedString[startIndex] !== '>') && (startIndex > 0)) {
+      --startIndex;
+    }
+    aTag = embedString.slice((startIndex + 1), endIndex);
+
+    return(aTag);
+  }
 
 
   angular.module('app')
@@ -78,6 +131,819 @@
       vm.closeHolidayManager = closeHolidayManager;
       vm.occasionManage = occasionManage;
       vm.closeOccasionsManager = closeOccasionsManager;
+      vm.editHoliday = editHoliday;
+      vm.userHolidayEditorDone = userHolidayEditorDone;
+
+      function userHolidayEditorDone() {
+        let holidayManagerDone = document.getElementById('holidayManagerDone');
+        let userHolidayEditorDiv = document.getElementById('userHolidayEditorDiv');
+
+        holidayManagerDone.setAttribute("style", "visibility: visible;");
+        userHolidayEditorDiv.setAttribute("style", "display: none;");
+        holidayManage();
+      }
+
+      function holidayArtDeleteListen(delElement, holiday, index, div) {
+        let subObj = {
+          override_content: holiday.override_content
+        };
+        delElement.addEventListener('click', ()=>{
+          subObj.override_content.img_paths.splice(index, 1);
+          subObj.override_content.titles.splice(index, 1);
+          subObj.override_content.artists.splice(index, 1);
+          subObj.override_content.years.splice(index, 1);
+          $http.patch(`/holidays/${holiday.id}`, subObj)
+          .then(()=>{
+            populateHolidayArtEditor(div, holiday);
+          });
+        });
+      }
+
+      function holidayArtistListen(artistName, holiday, index) {
+        let subObj = {
+          override_content: holiday.override_content
+        };
+        artistName.addEventListener('focusout', ()=>{
+          if ((artistName.value !== '') && (artistName.value !== subObj.override_content.artists[index])) {
+            subObj.override_content.artists[index] = artistName.value;
+            $http.patch(`/holidays/${holiday.id}`, subObj)
+            .then(()=>{
+              holiday.override_content = subObj.override_content;
+              console.log('success');
+            });
+          }
+        });
+      }
+
+      function holidayTitleListen(workTitle, holiday, index) {
+        let subObj = {
+          override_content: holiday.override_content
+        };
+        workTitle.addEventListener('focusout', ()=>{
+          if ((workTitle.value !== '') && (workTitle.value !== subObj.override_content.titles[index])) {
+            subObj.override_content.titles[index] = workTitle.value;
+            $http.patch(`/holidays/${holiday.id}`, subObj)
+            .then(()=>{
+              holiday.override_content = subObj.override_content;
+              console.log('success');
+            });
+          }
+        });
+      }
+
+      function holidayYearListen(theYear, holiday, index) {
+        let subObj = {
+          override_content: holiday.override_content
+        };
+        theYear.addEventListener('focusout', ()=>{
+          if ((theYear.value !== '') && (theYear.value !== subObj.override_content.years[index])) {
+            subObj.override_content.years[index] = theYear.value;
+            $http.patch(`/holidays/${holiday.id}`, subObj)
+            .then(()=>{
+              holiday.override_content = subObj.override_content;
+              console.log('success');
+            });
+          }
+        });
+      }
+
+      function holidayMusicDeleteListen(button, holiday, index, musicEditor) {
+        let subObj = {
+          override_content: holiday.override_content
+        };
+        button.addEventListener('click', ()=>{
+          subObj.override_content.sources.splice(index, 1);
+          subObj.override_content.src_strings.splice(index, 1);
+          subObj.override_content.href_strings.splice(index, 1);
+          subObj.override_content.a_strings.splice(index, 1);
+          $http.patch(`/holidays/${holiday.id}`, subObj)
+          .then(()=>{
+            holiday.override_content = subObj.override_content;
+            populateHolidayMusicEditor(musicEditor, holiday);
+          });
+        });
+      }
+
+      function populateHolidayMusicEditor(musicEditor, holiday) {
+        let deleteButton;
+        let musicPlayer;
+        let musicATag;
+
+        while (musicEditor.firstChild) {
+          musicEditor.removeChild(musicEditor.firstChild);
+        }
+        if ((holiday.override_content === null) || (holiday.override_content === undefined)) {
+          holiday.override_content = {};
+          holiday.override_content.img_paths = [];
+          holiday.override_content.artists = [];
+          holiday.override_content.titles = [];
+          holiday.override_content.years = [];
+          holiday.override_content.sources = [];
+          holiday.override_content.src_strings = [];
+          holiday.override_content.href_strings = [];
+          holiday.override_content.a_strings = [];
+        }
+        if (holiday.override_content.sources === undefined) {
+          holiday.override_content.sources = [];
+          holiday.override_content.src_strings = [];
+          holiday.override_content.href_strings = [];
+          holiday.override_content.a_strings = [];
+        }
+        if (holiday.override_content.sources.length > 0) {
+          for (let i = 0; i < holiday.override_content.sources.length; i++) {
+            if (holiday.override_content.sources[i] === 'bandcamp') {
+              musicPlayer = document.createElement('iframe');
+              musicEditor.appendChild(musicPlayer);
+              musicPlayer.setAttribute("style", "border: 0; width: 100%; height: 650px;");
+              musicPlayer.seamless = true;
+              musicPlayer.src = holiday.override_content.src_strings[i];
+              musicATag = document.createElement('a');
+              musicPlayer.appendChild(musicATag);
+              musicATag.href = holiday.override_content.href_strings[i];
+              musicATag.innerHTML = holiday.override_content.a_strings[i];
+              deleteButton = document.createElement('a');
+              musicEditor.appendChild(deleteButton);
+              deleteButton.className = 'btn';
+              deleteButton.innerHTML = 'delete';
+              deleteButton.setAttribute("style", "cursor: pointer; margin-bottom: 1em; margin-top: 0;");
+              holidayMusicDeleteListen(deleteButton, holiday, i, musicEditor);
+            }
+          }
+        }
+      }
+
+      function populateHolidayArtEditor(holidayArtsDiv, holiday) {
+
+        let deleteButton;
+        let picture;
+        let artist;
+        let title;
+        let year;
+
+        while (holidayArtsDiv.firstChild) {
+          holidayArtsDiv.removeChild(holidayArtsDiv.firstChild);
+        }
+        if ((holiday.override_content === null) || (holiday.override_content === undefined)) {
+          holiday.override_content = {};
+          holiday.override_content.img_paths = [];
+          holiday.override_content.artists = [];
+          holiday.override_content.titles = [];
+          holiday.override_content.years = [];
+          holiday.override_content.sources = [];
+          holiday.override_content.src_strings = [];
+          holiday.override_content.href_strings = [];
+          holiday.override_content.a_strings = [];
+        }
+        if (holiday.override_content.img_paths.length > 0) {
+          for (let i = 0; i < holiday.override_content.img_paths.length; i++) {
+            picture = document.createElement('img');
+            holidayArtsDiv.appendChild(picture);
+            picture.src = holiday.override_content.img_paths[i];
+            deleteButton = document.createElement('a');
+            holidayArtsDiv.appendChild(deleteButton);
+            deleteButton.className = 'btn';
+            deleteButton.innerHTML = 'delete';
+            deleteButton.setAttribute("style", "cursor: pointer;");
+            holidayArtDeleteListen(deleteButton, holiday, i, holidayArtsDiv);
+            artist = document.createElement('input');
+            holidayArtsDiv.appendChild(artist);
+            artist.type = 'text';
+            artist.className = "pure-input-1";
+            artist.value = holiday.override_content.artists[i];
+            holidayArtistListen(artist, holiday, i);
+            title = document.createElement('input');
+            holidayArtsDiv.appendChild(title);
+            title.type = 'text';
+            title.className = 'pure-input-1';
+            title.value = holiday.override_content.titles[i];
+            holidayTitleListen(title, holiday, i);
+            year = document.createElement('input');
+            holidayArtsDiv.appendChild(year);
+            year.type = 'text';
+            year.className = 'pure-input-1';
+            year.value = holiday.override_content.years[i];
+            holidayYearListen(year, holiday, i);
+          }
+        }
+
+
+
+
+      }
+
+      function userHolidayArtAdder(adderDiv, holiday) {
+        let index = holiday.override_content.img_paths.length;
+        let userHolidayArtsEditor = document.getElementById('userHolidayArtsEditor');
+        let userAddHolidayArt = document.getElementById('userAddHolidayArt');
+        let userHolidayEditorDoneButton = document.getElementById('userHolidayEditorDoneButton');
+        let doneButton = document.createElement('a');
+        adderDiv.appendChild(doneButton);
+        doneButton.id = 'doneButton';
+        doneButton.className = 'btn';
+        doneButton.innerHTML = 'done';
+        doneButton.setAttribute("style", "cursor: pointer; margin-left: 16em;");
+        let image = document.createElement('img');
+        adderDiv.appendChild(image);
+        image.id = 'image';
+        image.setAttribute("style", "width: 90%; margin: 0.5em 0em 0.5em 1em;");
+        let imageURL = document.createElement('input');
+        adderDiv.appendChild(imageURL);
+        imageURL.id = 'imageURL';
+        imageURL.type = 'text';
+        imageURL.className = 'pure-input-1';
+        imageURL.placeholder = 'image URL';
+        let imageUploadButton = document.createElement('a');
+        adderDiv.appendChild(imageUploadButton);
+        imageUploadButton.className = 'btn';
+        imageUploadButton.innerHTML = 'upload';
+        imageUploadButton.setAttribute("style", "cursor: pointer;");
+        let holidayArtImageUploaderDiv = document.createElement('div');
+        adderDiv.appendChild(holidayArtImageUploaderDiv);
+        holidayArtImageUploaderDiv.id = 'holidayArtImageUploaderDiv';
+        let artist = document.createElement('input');
+        adderDiv.appendChild(artist);
+        artist.type = 'text';
+        artist.className = 'pure-input-1';
+        artist.setAttribute("style", "visibility: hidden;");
+        let title = document.createElement('input');
+        adderDiv.appendChild(title);
+        title.type = 'text';
+        title.className = 'pure-input-1';
+        title.setAttribute("style", "visibility: hidden;");
+        let year = document.createElement('input');
+        adderDiv.appendChild(year);
+        year.type = 'text';
+        year.className = 'pure-input-1';
+        year.setAttribute("style", "visibility: hidden;");
+
+
+
+        doneButton.addEventListener('click', ()=>{
+          userAddHolidayArt.setAttribute("style", "visibility: visible; background: " + holiday.color + "; background-color: -webkit-linear-gradient(135deg, " + holiday.color + ", #FBFBF3); background: -o-linear-gradient(135deg, " + holiday.color + ", #FBFBF3); background: -moz-linear-gradient(135deg, " + holiday.color + ", #FBFBF3); background: linear-gradient(135deg, " + holiday.color + ", #FBFBF3);");
+          userHolidayEditorDoneButton.setAttribute("style", "visibility: visible;");
+          while (adderDiv.firstChild) {
+            adderDiv.removeChild(adderDiv.firstChild);
+          }
+          populateHolidayArtEditor(userHolidayArtsEditor, holiday);
+        });
+        imageURL.addEventListener('focusout', ()=>{
+          let subObj = {
+            override_content: holiday.override_content,
+            art_override: true
+          };
+          if (imageURL.value !== '') {
+            subObj.override_content.img_paths[index] = imageURL.value;
+            image.src = imageURL.value;
+            if (subObj.override_content.artists[index] === undefined) {
+              subObj.override_content.artists[index] = '';
+              artist.placeholder = 'artist';
+              artist.setAttribute("style", "visibility: visible;");
+            }
+            if (subObj.override_content.titles[index] === undefined) {
+              subObj.override_content.titles[index] = '';
+              title.placeholder = 'title';
+              title.setAttribute("style", "visibility: visible;");
+            }
+            if (subObj.override_content.years[index] === undefined) {
+              subObj.override_content.years[index] = '';
+              year.placeholder = 'year';
+              year.setAttribute("style", "visibility: visible;");
+            }
+            $http.patch(`/holidays/${holiday.id}`, subObj)
+            .then(()=>{
+              holiday.override_content = subObj.override_content;
+            });
+          }
+        });
+        imageUploadButton.addEventListener('click', ()=>{
+          let fileUploader = document.createElement('input');
+          holidayArtImageUploaderDiv.appendChild(fileUploader);
+          fileUploader.type = 'file';
+          let submitButton = document.createElement('a');
+          holidayArtImageUploaderDiv.appendChild(submitButton);
+          submitButton.className = 'btn';
+          submitButton.innerHTML = 'submit';
+          submitButton.setAttribute("style", "cursor: pointer;");
+          let cancelButton = document.createElement('a');
+          holidayArtImageUploaderDiv.appendChild(cancelButton);
+          cancelButton.className = 'btn';
+          cancelButton.innerHTML = 'cancel';
+          cancelButton.setAttribute("style", "cursor: pointer;");
+          imageUploadButton.setAttribute("style", "visibility: hidden;");
+
+          cancelButton.addEventListener('click', ()=>{
+            while (holidayArtImageUploaderDiv.firstChild) {
+              holidayArtImageUploaderDiv.removeChild(holidayArtImageUploaderDiv.firstChild);
+            }
+            imageUploadButton.setAttribute("style", "visibility: visible;");
+          });
+        });
+        artist.addEventListener('focusout', ()=>{
+          let subObj = {
+            override_content: holiday.override_content
+          };
+          if ((artist.value !== '') && (artist.value !== subObj.override_content.artists[index])) {
+            subObj.override_content.artists[index] = artist.value;
+            $http.patch(`/holidays/${holiday.id}`, subObj)
+            .then(()=>{
+              holiday.override_content = subObj.override_content;
+            });
+          }
+        });
+        title.addEventListener('focusout', ()=>{
+          let subObj = {
+            override_content: holiday.override_content
+          };
+          if ((title.value !== '') && (title.value !== subObj.override_content.titles[index])) {
+            subObj.override_content.titles[index] = title.value;
+            $http.patch(`/holidays/${holiday.id}`, subObj)
+            .then(()=>{
+              holiday.override_content = subObj.override_content;
+            });
+          }
+        });
+        year.addEventListener('focusout', ()=>{
+          let subObj = {
+            override_content: holiday.override_content
+          };
+          if ((year.value !== '') && (year.value !== subObj.override_content.years[index])) {
+            subObj.override_content.years[index] = year.value;
+            $http.patch(`/holidays/${holiday.id}`, subObj)
+            .then(()=>{
+              holiday.override_content = subObj.override_content;
+            });
+          }
+        });
+      }
+
+      function editHoliday(holidayId) {
+        let element;
+        let months = [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+        let days = [ 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 ];
+        let userHolidayEditorDoneButton = document.getElementById('userHolidayEditorDoneButton');
+        let holidayManagerDone = document.getElementById('holidayManagerDone');
+        let userHolidayEditorDiv = document.getElementById('userHolidayEditorDiv');
+        let holidayEditorTitle = document.getElementById('holidayEditorTitle');
+        let userHolidayNameField = document.getElementById('userHolidayNameField');
+        let userHolidayName = document.getElementById('userHolidayName');
+        if (userHolidayName) {
+          userHolidayName.parentNode.removeChild(userHolidayName);
+          userHolidayName = document.createElement('input');
+          userHolidayNameField.appendChild(userHolidayName);
+          userHolidayName.id = 'userHolidayName';
+          userHolidayName.type = 'text';
+          userHolidayName.className = 'pure-input-1';
+        }
+        let userHolidayEditorBar = document.getElementById('userHolidayEditorBar');
+        let userHolidayEditorForm = document.getElementById('userHolidayEditorForm');
+        let userHolidayEditorPhoto = document.getElementById('userHolidayEditorPhoto');
+        let userHolidayImageEditorField = document.getElementById('userHolidayImageEditorField');
+        let holidayImageURL = document.getElementById('holidayImageURL');
+        if (holidayImageURL) {
+          holidayImageURL.parentNode.removeChild(holidayImageURL);
+          holidayImageURL = document.createElement('input');
+          userHolidayImageEditorField.appendChild(holidayImageURL);
+          holidayImageURL.id = 'holidayImageURL';
+          holidayImageURL.type = 'text';
+          holidayImageURL.className = 'pure-input-1';
+        }
+        let holidayImageLinkUpload = document.getElementById('holidayImageLinkUpload');
+        if (holidayImageLinkUpload) {
+          holidayImageLinkUpload.parentNode.removeChild(holidayImageLinkUpload);
+          holidayImageLinkUpload = document.createElement('a');
+          userHolidayImageEditorField.appendChild(holidayImageLinkUpload);
+          holidayImageLinkUpload.id = 'holidayImageLinkUpload';
+          holidayImageLinkUpload.className = 'btn';
+          holidayImageLinkUpload.innerHTML = 'upload';
+          holidayImageLinkUpload.setAttribute("style", "cursor: pointer;");
+        }
+        let userHolidayImageUploadCentre = document.getElementById('userHolidayImageUploadCentre');
+        let userHolidayPhotoFile = document.getElementById('userHolidayPhotoFile');
+        if (userHolidayPhotoFile) {
+          userHolidayPhotoFile.parentNode.removeChild(userHolidayPhotoFile);
+          userHolidayPhotoFile = document.createElement('input');
+          userHolidayImageUploadCentre.appendChild(userHolidayPhotoFile);
+          userHolidayPhotoFile.id = 'userHolidayPhotoFile';
+          userHolidayPhotoFile.type = 'file';
+          userHolidayPhotoFile.className = 'pure-input-1';
+          userHolidayPhotoFile.name = 'userHolidayPhotoFile';
+        }
+        let userUploadHolidayPhotoConfirm = document.getElementById('userUploadHolidayPhotoConfirm');
+        if (userUploadHolidayPhotoConfirm) {
+          userUploadHolidayPhotoConfirm.parentNode.removeChild(userUploadHolidayPhotoConfirm);
+          userUploadHolidayPhotoConfirm = document.createElement('a');
+          userHolidayImageUploadCentre.appendChild(userUploadHolidayPhotoConfirm);
+          userUploadHolidayPhotoConfirm.id = 'userUploadHolidayPhotoConfirm';
+          userUploadHolidayPhotoConfirm.className = 'btn';
+          userUploadHolidayPhotoConfirm.innerHTML = 'confirm';
+          userUploadHolidayPhotoConfirm.setAttribute("style", "cursor: pointer;");
+        }
+        let userUploadHolidayPhotoCancel = document.getElementById('userUploadHolidayPhotoCancel');
+        if (userUploadHolidayPhotoCancel) {
+          userUploadHolidayPhotoCancel.parentNode.removeChild(userUploadHolidayPhotoCancel);
+          userUploadHolidayPhotoCancel = document.createElement('a');
+          userHolidayImageUploadCentre.appendChild(userUploadHolidayPhotoCancel);
+          userUploadHolidayPhotoCancel.id = 'userUploadHolidayPhotoCancel';
+          userUploadHolidayPhotoCancel.className = 'btn';
+          userUploadHolidayPhotoCancel.innerHTML = 'cancel';
+          userUploadHolidayPhotoCancel.setAttribute("style", "cursor: pointer;");
+        }
+        let userHolidayColorPicker = document.getElementById('userHolidayColorPicker');
+        let userHolidayColorSelector = document.getElementById('userHolidayColorSelector');
+        if (userHolidayColorSelector) {
+          userHolidayColorSelector.parentNode.removeChild(userHolidayColorSelector);
+          userHolidayColorSelector = document.createElement('input');
+          userHolidayColorPicker.appendChild(userHolidayColorSelector);
+          userHolidayColorSelector.id = 'userHolidayColorSelector';
+          userHolidayColorSelector.type = 'color';
+          userHolidayColorSelector.className = 'pure-input-1';
+        }
+        let userHolidayAnnualCheckboxDiv = document.getElementById('userHolidayAnnualCheckboxDiv');
+        let userHolidayAnnuality = document.getElementById('userHolidayAnnuality');
+        if (userHolidayAnnuality) {
+          userHolidayAnnuality.parentNode.removeChild(userHolidayAnnuality);
+          userHolidayAnnuality = document.createElement('input');
+          userHolidayAnnualCheckboxDiv.appendChild(userHolidayAnnuality);
+          userHolidayAnnuality.id = 'userHolidayAnnuality';
+          userHolidayAnnuality.type = 'checkbox';
+        }
+        let isFloat = document.getElementById('isFloat');
+        let userSelectHolidayDate = document.getElementById('userSelectHolidayDate');
+        let userHolidayDaySelect = document.getElementById('userHolidayDaySelect');
+        if (userHolidayDaySelect) {
+          userHolidayDaySelect.parentNode.removeChild(userHolidayDaySelect);
+          userHolidayDaySelect = document.createElement('select');
+          userSelectHolidayDate.appendChild(userHolidayDaySelect);
+          userHolidayDaySelect.id = 'userHolidayDaySelect';
+          userHolidayDaySelect.className = 'pure-input-1';
+        }
+        let userHolidayMonthSelect = document.getElementById('userHolidayMonthSelect');
+        if (userHolidayMonthSelect) {
+          userHolidayMonthSelect.parentNode.removeChild(userHolidayMonthSelect);
+          userHolidayMonthSelect = document.createElement('select');
+          userSelectHolidayDate.appendChild(userHolidayMonthSelect);
+          userHolidayMonthSelect.id = 'userHolidayMonthSelect';
+          userHolidayMonthSelect.className = 'pure-input-1';
+        }
+        let holidayOverrideCheckbox = document.getElementById('holidayOverrideCheckbox');
+        let userHolidayHasArtContent = document.getElementById('userHolidayHasArtContent');
+        if (userHolidayHasArtContent) {
+          userHolidayHasArtContent.parentNode.removeChild(userHolidayHasArtContent);
+          userHolidayHasArtContent = document.createElement('input');
+          holidayOverrideCheckbox.appendChild(userHolidayHasArtContent);
+          userHolidayHasArtContent.id = 'userHolidayHasArtContent';
+          userHolidayHasArtContent.type = 'checkbox';
+        }
+        let userHolidayArtContent = document.getElementById('userHolidayArtContent');
+        let userHolidayArtsEditor = document.getElementById('userHolidayArtsEditor');
+        while (userHolidayArtsEditor.firstChild) {
+          userHolidayArtsEditor.removeChild(userHolidayArtsEditor.firstChild);
+        }
+        let userHolidayDivHolderForAddButton = document.getElementById('userHolidayDivHolderForAddButton');
+        let userAddHolidayArt = document.getElementById('userAddHolidayArt');
+        if (userAddHolidayArt) {
+          userAddHolidayArt.parentNode.removeChild(userAddHolidayArt);
+          userAddHolidayArt = document.createElement('button');
+          userHolidayDivHolderForAddButton.appendChild(userAddHolidayArt);
+          userAddHolidayArt.id = 'userAddHolidayArt';
+          userAddHolidayArt.innerHTML = 'add new';
+        }
+        let userHolidayArtAdditionDiv = document.getElementById('userHolidayArtAdditionDiv');
+        while (userHolidayArtAdditionDiv.firstChild) {
+          userHolidayArtAdditionDiv.removeChild(userHolidayArtAdditionDiv.firstChild);
+        }
+        let userHolidayMusicOverrideCheckDiv = document.getElementById('userHolidayMusicOverrideCheckDiv');
+        let userHolidayHasMusicContent = document.getElementById('userHolidayHasMusicContent');
+        if (userHolidayHasMusicContent) {
+          userHolidayHasMusicContent.parentNode.removeChild(userHolidayHasMusicContent);
+          userHolidayHasMusicContent = document.createElement('input');
+          userHolidayMusicOverrideCheckDiv.appendChild(userHolidayHasMusicContent);
+          userHolidayHasMusicContent.id = 'userHolidayHasMusicContent';
+          userHolidayHasMusicContent.type = 'checkbox';
+        }
+        let userHolidayMusicContent = document.getElementById('userHolidayMusicContent');
+        let userHolidayMusicsEditor = document.getElementById('userHolidayMusicsEditor');
+        let userHolidayMusicAddButtonDiv = document.getElementById('userHolidayMusicAddButtonDiv');
+        let userAddHolidayMusic = document.getElementById('userAddHolidayMusic');
+        if (userAddHolidayMusic) {
+          userAddHolidayMusic.parentNode.removeChild(userAddHolidayMusic);
+          userAddHolidayMusic = document.createElement('button');
+          userHolidayMusicAddButtonDiv.appendChild(userAddHolidayMusic);
+          userAddHolidayMusic.id = 'userAddHolidayMusic';
+          userAddHolidayMusic.innerHTML = 'add new';
+          //userHolidayMusicAddButtonDiv.setAttribute("style", "visibility: visible;");
+        }
+        let userHolidayMusicAddingForm = document.getElementById('userHolidayMusicAddingForm');
+        userHolidayMusicAddingForm.setAttribute("style", "visibility: hidden;");
+        let userHolidayMusicAddSubmit = document.getElementById('userHolidayMusicAddSubmit');
+        if (userHolidayMusicAddSubmit) {
+          userHolidayMusicAddSubmit.parentNode.removeChild(userHolidayMusicAddSubmit);
+          userHolidayMusicAddSubmit = document.createElement('a');
+          userHolidayMusicAddingForm.appendChild(userHolidayMusicAddSubmit);
+          userHolidayMusicAddSubmit.id = 'userHolidayMusicAddSubmit';
+          userHolidayMusicAddSubmit.className = 'btn';
+          userHolidayMusicAddSubmit.setAttribute("style", "cursor: pointer;");
+          userHolidayMusicAddSubmit.innerHTML = 'submit';
+        }
+        let userHolidayMusicAddCancel = document.getElementById('userHolidayMusicAddCancel');
+        if (userHolidayMusicAddCancel) {
+          userHolidayMusicAddCancel.parentNode.removeChild(userHolidayMusicAddCancel);
+          userHolidayMusicAddCancel = document.createElement('a');
+          userHolidayMusicAddingForm.appendChild(userHolidayMusicAddCancel);
+          userHolidayMusicAddCancel.id = 'userHolidayMusicAddCancel';
+          userHolidayMusicAddCancel.className = 'btn';
+          userHolidayMusicAddCancel.setAttribute("style", "cursor: pointer;");
+          userHolidayMusicAddCancel.innerHTML = 'cancel';
+        }
+        let userHolidayBandcampSubmissionString = document.getElementById('userHolidayBandcampSubmissionString');
+        let userHolidayMusicAddErrorMessage = document.getElementById('userHolidayMusicAddErrorMessage');
+
+
+        holidayManagerDone.setAttribute("style", "visibility: hidden;");
+        userHolidayEditorDiv.setAttribute("style", "display: initial;");
+
+        $http.get(`/holidays/${holidayId}`)
+        .then(userHolidayData=>{
+          let userHoliday = userHolidayData.data;
+          let holiDate = new Date(userHoliday.day_of);
+          holidayEditorTitle.innerHTML = userHoliday.name;
+          userHolidayName.value = userHoliday.name;
+          userHolidayEditorBar.setAttribute("style", "background: " + userHoliday.color + "; background-color: -webkit-linear-gradient(-135deg, " + userHoliday.color + ", #FBFBF3); background: -o-linear-gradient(-135deg, " + userHoliday.color + ", #FBFBF3); background: -moz-linear-gradient(-135deg, " + userHoliday.color + ", #FBFBF3); background: linear-gradient(-135deg, " + userHoliday.color + ", #FBFBF3);");
+          userHolidayEditorForm.setAttribute("style", "background: " + userHoliday.color + "; background-color: -webkit-linear-gradient(135deg, " + userHoliday.color + ", #FBFBF3); background: -o-linear-gradient(135deg, " + userHoliday.color + ", #FBFBF3); background: -moz-linear-gradient(135deg, " + userHoliday.color + ", #FBFBF3); background: linear-gradient(135deg, " + userHoliday.color + ", #FBFBF3);");
+          userAddHolidayArt.setAttribute("style", "background: " + userHoliday.color + "; background-color: -webkit-linear-gradient(135deg, " + userHoliday.color + ", #FBFBF3); background: -o-linear-gradient(135deg, " + userHoliday.color + ", #FBFBF3); background: -moz-linear-gradient(135deg, " + userHoliday.color + ", #FBFBF3); background: linear-gradient(135deg, " + userHoliday.color + ", #FBFBF3);");
+          userAddHolidayMusic.setAttribute("style", "background: " + userHoliday.color + "; background-color: -webkit-linear-gradient(135deg, " + userHoliday.color + ", #FBFBF3); background: -o-linear-gradient(135deg, " + userHoliday.color + ", #FBFBF3); background: -moz-linear-gradient(135deg, " + userHoliday.color + ", #FBFBF3); background: linear-gradient(135deg, " + userHoliday.color + ", #FBFBF3);");
+          userHolidayEditorPhoto.src = userHoliday.picture;
+          holidayImageURL.value = userHoliday.picture;
+          userHolidayColorSelector.value = userHoliday.color;
+          if (userHoliday.is_annual) {
+            userHolidayAnnuality.checked = true;
+            isFloat.setAttribute("style", "visibility: hidden;");
+            userSelectHolidayDate.setAttribute("style", "visibility: visible;");
+          } else {
+            userHolidayAnnuality.checked = false;
+            isFloat.setAttribute("style", "visibility: visible;");
+            userSelectHolidayDate.setAttribute("style", "visibility: hidden;");
+          }
+          while (userHolidayDaySelect.firstChild) {
+            userHolidayDaySelect.removeChild(userHolidayDaySelect.firstChild);
+          }
+          for (let i = 0; i < days[holiDate.getMonth()]; i++) {
+            element = document.createElement('option');
+            userHolidayDaySelect.appendChild(element);
+
+            element.innerHTML = (i + 1).toString();
+          }
+          userHolidayDaySelect.value = holiDate.getDate().toString();
+          while (userHolidayMonthSelect.firstChild) {
+            userHolidayMonthSelect.removeChild(userHolidayMonthSelect.firstChild);
+          }
+          for (let j = 0; j < months.length; j++) {
+            element = document.createElement('option');
+            userHolidayMonthSelect.appendChild(element);
+            element.innerHTML = months[j];
+          }
+          userHolidayMonthSelect.value = months[holiDate.getMonth()];
+          if (userHoliday.art_override) {
+            userHolidayHasArtContent.checked = true;
+            userHolidayArtContent.setAttribute("style", "visibility: visible;");
+            populateHolidayArtEditor(userHolidayArtsEditor, userHoliday);
+          } else {
+            userHolidayHasArtContent.checked = false;
+            userHolidayArtContent.setAttribute("style", "visibility: hidden;");
+          }
+          if (userHoliday.music_override) {
+            userHolidayHasMusicContent.checked = true;
+            userHolidayMusicContent.setAttribute("style", "visibility: visible;");
+            populateHolidayMusicEditor(userHolidayMusicsEditor, userHoliday);
+          } else {
+            userHolidayHasMusicContent.checked = false;
+            userHolidayMusicContent.setAttribute("style", "visibility: hidden;");
+          }
+
+
+
+
+          userHolidayName.addEventListener('focusout', ()=>{
+            if ((userHolidayName.value !== '') && (userHolidayName.value !== userHoliday.name)) {
+              let subObj = {
+                name: userHolidayName.value
+              };
+              $http.patch(`/holidays/${holidayId}`, subObj)
+              .then(()=>{
+                userHoliday.name = userHolidayName.value;
+                holidayEditorTitle.innerHTML = userHolidayName.value;
+              });
+            }
+          });
+          holidayImageURL.addEventListener('focusout', ()=>{
+            if ((holidayImageURL.value !== '') && (holidayImageURL.value !== userHoliday.picture)) {
+              let subObj = {
+                picture: holidayImageURL.value
+              };
+              $http.patch(`/holidays/${holidayId}`, subObj)
+              .then(()=>{
+                userHoliday.picture = holidayImageURL.value;
+                userHolidayEditorPhoto.src = holidayImageURL.value;
+              });
+            }
+          });
+          holidayImageLinkUpload.addEventListener('click', ()=>{
+            holidayImageLinkUpload.setAttribute("style", "visibility: hidden;");
+            userHolidayImageUploadCentre.setAttribute("style", "visibility: visible;");
+          });
+          userUploadHolidayPhotoCancel.addEventListener('click', ()=>{
+            holidayImageLinkUpload.setAttribute("style", "visibility: visible; cursor: pointer;");
+
+            userHolidayImageUploadCentre.setAttribute("style", "visibility: hidden;");
+          });
+          userHolidayColorSelector.addEventListener('change', ()=>{
+            let subObj = {
+              color: userHolidayColorSelector.value
+            };
+            $http.patch(`/holidays/${holidayId}`, subObj)
+            .then(()=>{
+              userHoliday.color = userHolidayColorSelector.value;
+              userHolidayEditorBar.setAttribute("style", "background: " + userHoliday.color + "; background-color: -webkit-linear-gradient(-135deg, " + userHoliday.color + ", #FBFBF3); background: -o-linear-gradient(-135deg, " + userHoliday.color + ", #FBFBF3); background: -moz-linear-gradient(-135deg, " + userHoliday.color + ", #FBFBF3); background: linear-gradient(-135deg, " + userHoliday.color + ", #FBFBF3);");
+              userHolidayEditorForm.setAttribute("style", "background: " + userHoliday.color + "; background-color: -webkit-linear-gradient(135deg, " + userHoliday.color + ", #FBFBF3); background: -o-linear-gradient(135deg, " + userHoliday.color + ", #FBFBF3); background: -moz-linear-gradient(135deg, " + userHoliday.color + ", #FBFBF3); background: linear-gradient(135deg, " + userHoliday.color + ", #FBFBF3);");
+              userAddHolidayArt.setAttribute("style", "background: " + userHoliday.color + "; background-color: -webkit-linear-gradient(135deg, " + userHoliday.color + ", #FBFBF3); background: -o-linear-gradient(135deg, " + userHoliday.color + ", #FBFBF3); background: -moz-linear-gradient(135deg, " + userHoliday.color + ", #FBFBF3); background: linear-gradient(135deg, " + userHoliday.color + ", #FBFBF3);");
+              userAddHolidayMusic.setAttribute("style", "background: " + userHoliday.color + "; background-color: -webkit-linear-gradient(135deg, " + userHoliday.color + ", #FBFBF3); background: -o-linear-gradient(135deg, " + userHoliday.color + ", #FBFBF3); background: -moz-linear-gradient(135deg, " + userHoliday.color + ", #FBFBF3); background: linear-gradient(135deg, " + userHoliday.color + ", #FBFBF3);");
+            });
+          });
+          userHolidayAnnuality.addEventListener('click', ()=>{
+            let subObj = {
+              is_annual: userHolidayAnnuality.checked
+            };
+            $http.patch(`/holidays/${holidayId}`, subObj)
+            .then(()=>{
+              userHoliday.is_annual = userHolidayAnnuality.checked;
+              if (userHolidayAnnuality.checked) {
+                isFloat.setAttribute("style", "visibility: hidden;");
+                userSelectHolidayDate.setAttribute("style", "visibility: visible;");
+              } else {
+                isFloat.setAttribute("style", "visibility: visible;");
+                userSelectHolidayDate.setAttribute("style", "visibility: hidden;");
+              }
+            });
+          });
+          userHolidayDaySelect.addEventListener('change', ()=>{
+            let subObj = {};
+            let originalDate = new Date(userHoliday.day_of);
+            let updateDateString = originalDate.getFullYear().toString() + '-';
+            if (originalDate.getMonth() < 9) {
+              updateDateString += '0' + (originalDate.getMonth() + 1).toString() + '-';
+            } else {
+              updateDateString += (originalDate.getMonth() + 1).toString() + '-';
+            }
+            if (parseInt(userHolidayDaySelect.value) < 10) {
+              updateDateString += '0' + userHolidayDaySelect.value + 'T07:00:00.000Z';
+            } else {
+              updateDateString += userHolidayDaySelect.value + 'T07:00:00.000Z';
+            }
+            subObj.day_of = new Date(updateDateString);
+            $http.patch(`/holidays/${holidayId}`, subObj)
+            .then(()=>{
+              userHoliday.day_of = subObj.day_of;
+            });
+          });
+          userHolidayMonthSelect.addEventListener('change', ()=>{
+            let subObj = {};
+            let originalDate = new Date(userHoliday.day_of);
+            let originalDay = originalDate.getDate();
+            let updateDateString = originalDate.getFullYear().toString() + '-';
+            let updateMonth = months.indexOf(userHolidayMonthSelect.value) + 1;
+            if (updateMonth < 10) {
+              updateDateString += '0' + updateMonth.toString() + '-';
+            } else {
+              updateDateString += updateMonth.toString() + '-';
+            }
+            if (originalDay > days[updateMonth - 1]) {
+              userHolidayDaySelect.value = days[updateMonth - 1];
+            } else {
+              userHolidayDaySelect.value = originalDay.toString();
+            }
+            if (parseInt(userHolidayDaySelect.value) < 10) {
+              updateDateString += '0' + userHolidayDaySelect.value + 'T07:00:00.000Z';
+            } else {
+              updateDateString += userHolidayDaySelect.value + 'T07:00:00.000Z';
+            }
+            subObj.day_of = new Date(updateDateString);
+            while (userHolidayDaySelect.firstChild) {
+              userHolidayDaySelect.removeChild(userHolidayDaySelect.firstChild);
+            }
+            for (let i = 0; i < days[updateMonth - 1]; i++) {
+              element = document.createElement('option');
+              userHolidayDaySelect.appendChild(element);
+              element.innerHTML = (i + 1).toString();
+            }
+            userHolidayDaySelect.value = subObj.day_of.getDate().toString();
+
+            $http.patch(`/holidays/${holidayId}`, subObj)
+            .then(()=>{
+              userHoliday.day_of = subObj.day_of;
+            });
+          });
+          userHolidayHasArtContent.addEventListener('click', ()=>{
+            let subObj = {
+              art_override: userHoliday.art_override
+            };
+            if (userHolidayHasArtContent.checked) {
+              subObj.art_override = true;
+              $http.patch(`/holidays/${userHoliday.id}`, subObj)
+              .then(()=>{
+                userHoliday.art_override = true;
+                userHolidayArtContent.setAttribute("style", "visibility: visible; display: initial;");
+                populateHolidayArtEditor(userHolidayArtsEditor, userHoliday);
+                userAddHolidayArt.innerHTML = 'add new';
+              });
+
+            } else {
+              subObj.art_override = false;
+              $http.patch(`/holidays/${userHoliday.id}`, subObj)
+              .then(()=>{
+                userHoliday.art_override = false;
+                while (userAddHolidayArt.firstChild) {
+                  userAddHolidayArt.removeChild(userAddHolidayArt.firstChild);
+                }
+                userHolidayArtContent.setAttribute("style", "display: none;");
+                userAddHolidayArt.innerHTML = 'add new';
+              });
+            }
+          });
+          userAddHolidayArt.addEventListener('click', ()=>{
+            userAddHolidayArt.setAttribute("style", "visibility: hidden;");
+            userHolidayEditorDoneButton.setAttribute("style", "visibility: hidden;");
+            while (userHolidayArtAdditionDiv.firstChild) {
+              userHolidayArtAdditionDiv.removeChild(userHolidayArtAdditionDiv.firstChild);
+            }
+            userHolidayArtAdder(userHolidayArtAdditionDiv, userHoliday);
+          });
+          userHolidayHasMusicContent.addEventListener('click', ()=>{
+            let subObj = {
+              music_override: userHoliday.music_override
+            };
+            if (userHolidayHasMusicContent.checked) {
+              subObj.music_override = true;
+              $http.patch(`/holidays/${userHoliday.id}`, subObj)
+              .then(()=>{
+                userHoliday.music_override = true;
+                userHolidayMusicContent.setAttribute("style", "visibility: visible; display: initial;");
+                populateHolidayMusicEditor(userHolidayMusicsEditor, userHoliday);
+                //userAddHolidayArt.innerHTML = 'add new';
+              });
+
+            } else {
+              subObj.music_override = false;
+              $http.patch(`/holidays/${userHoliday.id}`, subObj)
+              .then(()=>{
+                userHoliday.music_override = false;
+                while (userHolidayMusicsEditor.firstChild) {
+                  userHolidayMusicsEditor.removeChild(userHolidayMusicsEditor.firstChild);
+                }
+                userHolidayMusicContent.setAttribute("style", "display: none;");
+                //userAddHolidayArt.innerHTML = 'add new';
+              });
+            }
+          });
+          userAddHolidayMusic.addEventListener('click', ()=>{
+            userHolidayMusicAddButtonDiv.setAttribute("style", "visibility: hidden;");
+            userHolidayMusicAddingForm.setAttribute("style", "visibility: visible;");
+          });
+          userHolidayMusicAddSubmit.addEventListener('click', ()=>{
+            // Check validity of user input
+            if (checkValidBancampEmbed(userHolidayBandcampSubmissionString.value)) {
+              let subObj = {
+                override_content: userHoliday.override_content
+              };
+              let index = subObj.override_content.sources.length;
+              subObj.override_content.sources[index] = 'bandcamp';
+              subObj.override_content.src_strings[index] = extractSrcStringFromBandcampEmbed(userHolidayBandcampSubmissionString.value);
+              subObj.override_content.href_strings[index] = extractHrefStringFromBandcampEmbed(userHolidayBandcampSubmissionString.value);
+              subObj.override_content.a_strings[index] = extractATagFromBandcampEmbed(userHolidayBandcampSubmissionString.value);
+              $http.patch(`/holidays/${userHoliday.id}`, subObj)
+              .then(()=>{
+                userHoliday.override_content = subObj.override_content;
+                populateHolidayMusicEditor(userHolidayMusicsEditor, userHoliday);
+                userHolidayMusicAddButtonDiv.setAttribute("style", "visibility: visible;");
+                userHolidayMusicAddingForm.setAttribute("style", "visibility: hidden;");
+                userHolidayBandcampSubmissionString.value = '';
+                userHolidayMusicAddErrorMessage.innerHTML = '';
+              });
+            } else {
+              userHolidayMusicAddErrorMessage.setAttribute("style", "color: #ff0000;");
+              userHolidayMusicAddErrorMessage.innerHTML = "ERROR: Invalid embed link - please try again";
+            }
+            // If valid, build submission object and patch
+            // Repopulate music
+            // Clear out form and hide
+          });
+          userHolidayMusicAddCancel.addEventListener('click', ()=>{
+            userHolidayMusicAddButtonDiv.setAttribute("style", "visibility: visible;");
+            userHolidayMusicAddingForm.setAttribute("style", "visibility: hidden;");
+            userHolidayBandcampSubmissionString.value = '';
+            userHolidayMusicAddErrorMessage.innerHTML = '';
+          });
+        });
+      }
 
       function cleanDate(dayOf) {
         let months = [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ];
@@ -169,7 +1035,7 @@
               return 0;
             }
           });
-          
+
         });
       }
 

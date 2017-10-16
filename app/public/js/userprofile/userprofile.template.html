@@ -164,6 +164,7 @@
               <div class="holidayEdit">
                 <a href="" class="btn" ng-click="$ctrl.editHoliday(holiday.id)">edit</a>
               <a href="" class="btn" ng-click="$ctrl.deleteHoliday(holiday.id)">delete</a>
+              <br><br><br>
 
               </div>
 
@@ -332,6 +333,99 @@
 
       </div>
 
+    </div>
+    <div id="userHolidayEditorDiv">
+      <div id="userHolidayEditorBar">
+        <a href="" class="btn" id="userHolidayEditorDoneButton" ng-click="$ctrl.userHolidayEditorDone()">done</a>
+        <h1 id="holidayEditorTitle"></h1>
+      </div>
+      <form id="userHolidayEditorForm" class="pure-form pure-form-stacked">
+        <fieldset>
+          <div id="userHolidayNameField">
+            <input type="text" class="pure-input-1" id="userHolidayName">
+          </div>
+          <div id="userHolidayImageEditorField">
+            <img id="userHolidayEditorPhoto">
+            <p>Image URL:</p>
+            <input type="text" class="pure-input-1" id="holidayImageURL">
+            <a href="" class="btn" id="holidayImageLinkUpload">upload</a>
+          </div>
+          <div id="userHolidayImageUploadCentre">
+            <input type="file" name="userHolidayPhotoFile" id="userHolidayPhotoFile" class="pure-input-1">
+            <a href="" class="btn" id="userUploadHolidayPhotoConfirm">confirm</a>
+            <a href="" class="btn" id="userUploadHolidayPhotoCancel">cancel</a>
+
+          </div>
+          <p>Color: </p>
+          <div id="userHolidayColorPicker">
+            <input type="color" class="pure-input-1" id="userHolidayColorSelector">
+
+          </div>
+
+          <p>Occurs annually:</p>
+          <div id="userHolidayDateDiv">
+            <div id="userHolidayAnnualCheckboxDiv">
+              <input type="checkbox" id="userHolidayAnnuality" checked>
+
+            </div>
+
+            <p id="isFloat">Floating Holiday</p>
+            <div id="userSelectHolidayDate">
+              <select id="userHolidayDaySelect" class="pure-input-1"></select>
+              <select id="userHolidayMonthSelect" class="pure-input-1"></select>
+
+            </div>
+
+          </div>
+          <p>Holiday Related Art:</p>
+          <div id="holidayOverrideCheckbox">
+            <input type="checkbox" id="userHolidayHasArtContent">
+          </div>
+          <div id="userHolidayArtContent">
+            <div id="userHolidayArtsEditor"></div>
+            <div id="userHolidayDivHolderForAddButton">
+              <button id="userAddHolidayArt">add new</button>
+            </div>
+            <div id="userHolidayArtAdditionDiv">
+              <a href="" class="btn">done</a>
+              <img>
+              <input type="text" placeholder="imageURL">
+              <a href="" class="btn">upload</a>
+              <div id="holidayArtImageUploaderDiv">
+                <input type="file">
+                <a href="" class="btn">submit</a>
+                <a href="" class="btn">cancel</a>
+              </div>
+              <input type="text" placeholder="artist">
+              <input type="text" placeholder="title">
+              <input type="text" placeholder="year">
+
+
+            </div>
+
+
+          </div>
+          <p>Holiday Related Music:</p>
+          <div id="userHolidayMusicOverrideCheckDiv">
+            <input type="checkbox" id="userHolidayHasMusicContent">
+          </div>
+          <div id="userHolidayMusicContent">
+
+            <div id="userHolidayMusicsEditor"></div>
+            <div id="userHolidayMusicAddButtonDiv">
+              <button id="userAddHolidayMusic">add new</button>
+            </div>
+            <div id="userHolidayMusicAddingForm">
+              <p>Please paste bandcamp embed link here:</p>
+              <input type="text" id="userHolidayBandcampSubmissionString">
+              <p id="userHolidayMusicAddErrorMessage"></p>
+              <a href="" class="btn" id="userHolidayMusicAddSubmit">submit</a>
+              <a href="" class="btn" id="userHolidayMusicAddCancel">cancel</a>
+            </div>
+          </div>
+
+        </fieldset>
+      </form>
     </div>
   </div>
 
