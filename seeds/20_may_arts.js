@@ -2204,6 +2204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 111,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/flight-of-the-bourgeoisie-from-novorossiysk-in-1920.jpg',
+          title: 'Flight of the bourgeoisie from Novorossiysk in 1920',
+          artist: 'Ivan Vladimirov',
+          year: '1920',
+          rule: {
+            "monday": [ 9, 20, 30, 19 ],
+            "tuesday": [ 8, 18, 28, 7 ],
+            "wednesday": [ 6, 16, 26, 5 ],
+            "thursday": [ 4, 14, 24, 3 ],
+            "friday": [ 16, 26, 5, 13 ],
+            "saturday": [ 14, 24, 3, 13 ],
+            "sunday": [ 12, 22, 1, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 112,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/the-defeat-of-the-strikers.jpg',
+          title: 'The defeat of the strikers',
+          artist: 'Ivan Vladimirov',
+          year: '?',
+          rule: {
+            "monday": [ 13, 23, 2, 12 ],
+            "tuesday": [ 10, 21, 31, 20 ],
+            "wednesday": [ 9, 19, 29, 8 ],
+            "thursday": [ 7, 17, 27, 6 ],
+            "friday": [ 5, 15, 25, 4 ],
+            "saturday": [ 17, 27, 6, 14 ],
+            "sunday": [ 15, 25, 4, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 113,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/woman-ironing.jpg',
+          title: 'Woman Ironing',
+          artist: 'Corneliu Baba',
+          year: '?',
+          rule: {
+            "monday": [ 15, 25, 4, 14 ],
+            "tuesday": [ 13, 23, 2, 12 ],
+            "wednesday": [ 10, 21, 31, 20 ],
+            "thursday": [ 9, 19, 29, 8 ],
+            "friday": [ 7, 17, 27, 6 ],
+            "saturday": [ 5, 15, 25, 4 ],
+            "sunday": [ 17, 27, 6, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 114,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/a-plowman.jpg',
+          title: 'A plowman',
+          artist: 'David Burliuk',
+          year: 'c.1910',
+          rule: {
+            "monday": [ 17, 27, 6, 14 ],
+            "tuesday": [ 15, 25, 4, 14 ],
+            "wednesday": [ 13, 23, 2, 12 ],
+            "thursday": [ 10, 21, 31, 20 ],
+            "friday": [ 9, 19, 29, 8 ],
+            "saturday": [ 7, 17, 27, 6 ],
+            "sunday": [ 5, 15, 25, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 115,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/stonemason-1910.jpg',
+          title: 'Stonemason',
+          artist: 'David Burliuk',
+          year: '1910',
+          rule: {
+            "monday": [ 5, 15, 25, 4 ],
+            "tuesday": [ 17, 27, 6, 14 ],
+            "wednesday": [ 15, 25, 4, 14 ],
+            "thursday": [ 13, 23, 2, 12 ],
+            "friday": [ 10, 21, 31, 20 ],
+            "saturday": [ 9, 19, 29, 8 ],
+            "sunday": [ 7, 17, 27, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
