@@ -1004,6 +1004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 51,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/wake-1965.jpg',
+          title: 'Wake',
+          artist: 'Marc Vaux',
+          year: '1965',
+          rule: {
+            "monday": [ 15, 20, 26, 1 ],
+            "tuesday": [ 14, 19, 25, 30 ],
+            "wednesday": [ 13, 18, 24, 29 ],
+            "thursday": [ 12, 17, 23, 28 ],
+            "friday": [ 11, 16, 22, 27 ],
+            "saturday": [ 10, 15, 21, 26 ],
+            "sunday": [ 9, 14, 20, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 52,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/laser-1974.jpg',
+          title: 'Laser',
+          artist: 'Jef Verheyen',
+          year: '1974',
+          rule: {
+            "monday": [ 9, 14, 20, 27 ],
+            "tuesday": [ 15, 20, 26, 1 ],
+            "wednesday": [ 14, 19, 25, 30 ],
+            "thursday": [ 13, 18, 24, 29 ],
+            "friday": [ 12, 17, 23, 28 ],
+            "saturday": [ 11, 16, 22, 27 ],
+            "sunday": [ 10, 15, 21, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 53,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/black-painting-indigo-violet-vi-1969.jpg',
+          title: 'Black Painting, Indigo Violet VI',
+          artist: 'Ralph Hotere',
+          year: '1969',
+          rule: {
+            "monday": [ 10, 15, 21, 26 ],
+            "tuesday": [ 9, 14, 20, 27 ],
+            "wednesday": [ 15, 20, 26, 1 ],
+            "thursday": [ 14, 19, 25, 30 ],
+            "friday": [ 13, 18, 24, 29 ],
+            "saturday": [ 12, 17, 23, 28 ],
+            "sunday": [ 11, 16, 22, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 54,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/untitled-ring-with-light-1966.jpg',
+          title: 'Untitled (Ring with Light)',
+          artist: 'Robert Morris',
+          year: '1969',
+          rule: {
+            "monday": [ 11, 16, 22, 27 ],
+            "tuesday": [ 10, 15, 21, 26 ],
+            "wednesday": [ 9, 14, 20, 27 ],
+            "thursday": [ 15, 20, 26, 1 ],
+            "friday": [ 14, 19, 25, 30 ],
+            "saturday": [ 13, 18, 24, 29 ],
+            "sunday": [ 12, 17, 23, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 55,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/folquer-1972.jpg',
+          title: 'Folquer',
+          artist: 'Joan Hernandez Pijuan',
+          year: '1972',
+          rule: {
+            "monday": [ 12, 17, 23, 28 ],
+            "tuesday": [ 11, 16, 22, 27 ],
+            "wednesday": [ 10, 15, 21, 26 ],
+            "thursday": [ 9, 14, 20, 27 ],
+            "friday": [ 15, 20, 26, 1 ],
+            "saturday": [ 14, 19, 25, 30 ],
+            "sunday": [ 13, 18, 24, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
