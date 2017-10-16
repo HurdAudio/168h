@@ -1604,6 +1604,86 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 81,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/meditation-1917(1).jpg',
+          title: 'Meditation',
+          artist: 'Gabriele Munter',
+          year: '1917',
+          rule: {
+            "monday": [ 10, 13, 22, 7 ],
+            "tuesday": [ 9, 13, 21, 6 ],
+            "wednesday": [ 15, 19, 27, 12 ],
+            "thursday": [ 14, 17, 26, 11 ],
+            "friday": [ 13, 17, 25, 10 ],
+            "saturday": [ 12, 16, 24, 9 ],
+            "sunday": [ 11, 15, 23, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 82,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/holiday-mission-beach-1938.jpg',
+          title: 'Holiday, Mission Beach',
+          artist: 'Charles Reiffel',
+          year: '1938',
+          rule: {
+            "monday": [ 11, 15, 23, 8 ],
+            "tuesday": [ 10, 13, 22, 7 ],
+            "wednesday": [ 9, 13, 21, 6 ],
+            "thursday": [ 15, 19, 27, 12 ],
+            "friday": [ 14, 17, 26, 11 ],
+            "saturday": [ 13, 17, 25, 10 ],
+            "sunday": [ 12, 16, 24, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 84,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/la-table-1927.jpg',
+          title: 'La Table',
+          artist: 'Louis Marcoussis',
+          year: '1927',
+          rule: {
+            "monday": [ 13, 17, 25, 10 ],
+            "tuesday": [ 12, 16, 24, 9 ],
+            "wednesday": [ 11, 14, 23, 8 ],
+            "thursday": [ 10, 14, 22, 7 ],
+            "friday": [ 16, 20, 28, 13 ],
+            "saturday": [ 15, 18, 27, 12 ],
+            "sunday": [ 14, 18, 26, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 85,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/cityscape-kiev.jpg',
+          title: 'Cityscape. Kiev.',
+          artist: 'Oleksandr Bogomazov',
+          year: 'c.1913',
+          rule: {
+            "monday": [ 14, 18, 26, 11 ],
+            "tuesday": [ 13, 17, 25, 10 ],
+            "wednesday": [ 12, 16, 24, 9 ],
+            "thursday": [ 11, 14, 23, 8 ],
+            "friday": [ 10, 14, 22, 7 ],
+            "saturday": [ 16, 20, 28, 13 ],
+            "sunday": [ 15, 18, 27, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
