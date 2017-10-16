@@ -5728,7 +5728,7 @@ exports.seed = function(knex, Promise) {
           id: 362,
           user_id: 1,
           name: 'Edgard Varese (composer), born 1883',
-          color: '7C7C7C',
+          color: '#7C7C7C',
           picture: './img/musicians/edgardvarese.jpg',
           day_of: new Date ('1883-12-22T13:44:00.000Z'),
           is_annual: true,
