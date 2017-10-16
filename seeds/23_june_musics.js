@@ -1030,6 +1030,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 58,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3957509238/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://genot.bandcamp.com/album/paralysis-live-at-silent-night-8',
+          a_string: 'Paralysis: Live at Silent Night #8 by The House in the Woods',
+          rule: {
+            "monday": [ 5, 13, 15, 26 ],
+            "tuesday": [ 9, 13, 19, 30 ],
+            "wednesday": [ 8, 12, 18, 28 ],
+            "thursday": [ 7, 11, 16, 28 ],
+            "saturday": [ 7, 10, 16, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 59,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3271790009/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://themyrrorsbbib.bandcamp.com/album/hasta-la-victoria',
+          a_string: 'Hasta La Victoria by The Myrrors',
+          rule: {
+            "monday": [ 7, 10, 16, 27 ],
+            "tuesday": [ 5, 13, 15, 26 ],
+            "wednesday": [ 9, 13, 19, 30 ],
+            "thursday": [ 8, 12, 18, 28 ],
+            "saturday": [ 7, 11, 16, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 60,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1709653459/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://mathiasgrassow.bandcamp.com/album/2017-divinations',
+          a_string: '(2017) Divinations by Mathias Grassow',
+          rule: {
+            "monday": [ 7, 11, 16, 28 ],
+            "tuesday": [ 7, 10, 16, 27 ],
+            "wednesday": [ 5, 13, 15, 26 ],
+            "thursday": [ 9, 13, 19, 30 ],
+            "saturday": [ 8, 12, 18, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
