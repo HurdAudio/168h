@@ -706,6 +706,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 40,
+          user_id: 1,
+          theme: 'math rock/progressive rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1540001085/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://vasudeva.bandcamp.com/album/no-clearance',
+          a_string: 'No Clearance by Vasudeva',
+          rule: {
+            "monday": [ 8, 28, 6, 30 ],
+            "tuesday": [ 7, 27, 5, 29 ],
+            "wednesday": [ 6, 26, 4, 28 ],
+            "thursday": [ 10, 30, 8, 2 ],
+            "saturday": [ 9, 29, 7, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 41,
+          user_id: 1,
+          theme: 'math rock/progressive rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2333766195/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tideedit.bandcamp.com/album/foreign-languages',
+          a_string: 'Foreign Languages by tide/edit',
+          rule: {
+            "monday": [ 9, 29, 7, 1 ],
+            "tuesday": [ 8, 28, 6, 30 ],
+            "wednesday": [ 7, 27, 5, 29 ],
+            "thursday": [ 6, 26, 4, 28 ],
+            "saturday": [ 10, 30, 8, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 42,
+          user_id: 1,
+          theme: 'math rock/progressive rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2432964530/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tomsstory.bandcamp.com/album/toms-story',
+          a_string: 'Tom&#39;s Story by Tom&#39;s Story',
+          rule: {
+            "monday": [ 11, 1, 9, 3 ],
+            "tuesday": [ 10, 30, 8, 2 ],
+            "wednesday": [ 9, 29, 7, 1 ],
+            "thursday": [ 8, 28, 6, 30 ],
+            "saturday": [ 7, 27, 5, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
