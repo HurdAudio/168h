@@ -922,6 +922,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 52,
+          user_id: 1,
+          theme: 'commercially viable genre',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3956752732/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cuneiformrecords.bandcamp.com/album/ghost-surveillance',
+          a_string: 'Ghost Surveillance by Algernon',
+          rule: {
+            "monday": [ 8, 10, 14, 22 ],
+            "tuesday": [ 7, 9, 13, 21 ],
+            "wednesday": [ 6, 7, 12, 20 ],
+            "thursday": [ 5, 7, 11, 19 ],
+            "saturday": [  ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 53,
+          user_id: 1,
+          theme: 'commercially viable genre',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1327765972/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://helloskinny.bandcamp.com/album/revolutions',
+          a_string: 'Revolutions by Hello Skinny',
+          rule: {
+            "monday": [ 9, 11, 15, 23 ],
+            "tuesday": [ 8, 10, 14, 22 ],
+            "wednesday": [ 7, 9, 13, 21 ],
+            "thursday": [ 6, 7, 12, 20 ],
+            "saturday": [ 5, 7, 11, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 54,
+          user_id: 1,
+          theme: 'commercially viable genre',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2898603439/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://meltyourselfdown.bandcamp.com/album/melt-yourself-down',
+          a_string: 'Melt Yourself Down by Melt Yourself Down',
+          rule: {
+            "monday": [ 5, 7, 11, 19 ],
+            "tuesday": [ 9, 11, 15, 23 ],
+            "wednesday": [ 8, 10, 14, 22 ],
+            "thursday": [ 7, 9, 13, 21 ],
+            "saturday": [ 6, 7, 12, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
