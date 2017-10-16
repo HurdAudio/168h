@@ -2004,6 +2004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 101,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/human-being.jpg',
+          title: 'Human Being',
+          artist: 'Achraf Baznani',
+          year: 'XX cent.',
+          rule: {
+            "monday": [ 9, 19, 29, 7 ],
+            "tuesday": [ 15, 25, 5, 12 ],
+            "wednesday": [ 14, 24, 4, 12 ],
+            "thursday": [ 13, 23, 3, 11 ],
+            "friday": [ 12, 22, 2, 10 ],
+            "saturday": [ 11, 21, 1, 9 ],
+            "sunday": [ 10, 20, 30, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 102,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/liquid-detergent-vancouver-british-columbia-1965.jpg',
+          title: 'Liquid Detergent, Vancouver, British Columbia',
+          artist: 'Iain Baxter&',
+          year: '1965',
+          rule: {
+            "monday": [ 10, 20, 30, 8 ],
+            "tuesday": [ 9, 19, 29, 7 ],
+            "wednesday": [ 15, 25, 5, 12 ],
+            "thursday": [ 14, 24, 4, 12 ],
+            "friday": [ 13, 23, 3, 11 ],
+            "saturday": [ 12, 22, 2, 10 ],
+            "sunday": [ 11, 21, 1, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 103,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/land-of-the-spotted-eagle-1983.jpg',
+          title: 'Land of the Spotted Eagle',
+          artist: 'Lothar Baumgarten',
+          year: '1983',
+          rule: {
+            "monday": [ 11, 21, 1, 9 ],
+            "tuesday": [ 10, 20, 30, 8 ],
+            "wednesday": [ 9, 19, 29, 7 ],
+            "thursday": [ 15, 25, 5, 12 ],
+            "friday": [ 14, 24, 4, 12 ],
+            "saturday": [ 13, 23, 3, 11 ],
+            "sunday": [ 12, 22, 2, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 104,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/wrong-1967.jpg',
+          title: 'Wrong',
+          artist: 'John Baldessari',
+          year: '1967',
+          rule: {
+            "monday": [ 12, 22, 2, 10 ],
+            "tuesday": [ 11, 21, 1, 9 ],
+            "wednesday": [ 10, 20, 30, 8 ],
+            "thursday": [ 9, 19, 29, 7 ],
+            "friday": [ 15, 25, 5, 12 ],
+            "saturday": [ 14, 24, 4, 12 ],
+            "sunday": [ 13, 23, 3, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 105,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/art-declared-found-activity-lathering-alicante-spain-april-1960-1-1960.jpg',
+          title: 'Art Declared Found Activity (Lathering, Alicante Spain, April 1960) 1',
+          artist: 'Billy Apple',
+          year: '1960',
+          rule: {
+            "monday": [ 14, 24, 4, 12 ],
+            "tuesday": [ 13, 23, 3, 11 ],
+            "wednesday": [ 12, 22, 2, 10 ],
+            "thursday": [ 11, 21, 1, 9 ],
+            "friday": [ 10, 20, 30, 8 ],
+            "saturday": [ 16, 26, 6, 13 ],
+            "sunday": [ 15, 25, 5, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
