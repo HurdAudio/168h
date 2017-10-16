@@ -60,6 +60,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#B7D6F4',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 5,
+          user_id: 1,
+          theme: 'glass',
+          type: 'saturday',
+          src_string: '../img/march_tiles/beverages-2763025_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '180%',
+          color_dark: '#010116',
+          color_medium: '#00ADEE',
+          color_light: '#FFFCFB',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
