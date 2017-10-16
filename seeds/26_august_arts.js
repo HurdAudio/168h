@@ -1646,7 +1646,7 @@ exports.seed = function(knex, Promise) {
           updated_at: new Date('2017-07-20T13:44:00.000Z')
         },
         {
-          id: 84,
+          id: 83,
           user_id: 1,
           theme: 'pre-WWII modern',
           img_path: './img/august/la-table-1927.jpg',
@@ -1666,7 +1666,7 @@ exports.seed = function(knex, Promise) {
           updated_at: new Date('2017-07-20T13:44:00.000Z')
         },
         {
-          id: 85,
+          id: 84,
           user_id: 1,
           theme: 'pre-WWII modern',
           img_path: './img/august/cityscape-kiev.jpg',
@@ -1681,6 +1681,26 @@ exports.seed = function(knex, Promise) {
             "friday": [ 10, 14, 22, 7 ],
             "saturday": [ 16, 20, 28, 13 ],
             "sunday": [ 15, 18, 27, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 85,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/portrait-of-elena-annenkova-1917.jpg',
+          title: 'Portrait of Elena Annenkova',
+          artist: 'Jury Annenkov',
+          year: '1917',
+          rule: {
+            "monday": [ 15, 18, 27, 12 ],
+            "tuesday": [ 14, 18, 26, 11 ],
+            "wednesday": [ 13, 17, 25, 10 ],
+            "thursday": [ 12, 16, 24, 9 ],
+            "friday": [ 11, 14, 23, 8 ],
+            "saturday": [ 10, 14, 22, 7 ],
+            "sunday": [ 16, 20, 28, 13 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
