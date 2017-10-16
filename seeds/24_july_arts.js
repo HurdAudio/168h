@@ -1804,6 +1804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 91,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/nude-woman-with-drapery-1919.jpg',
+          title: 'Nude Woman with Drapery',
+          artist: 'Suzanne Valadon',
+          year: '1919',
+          rule: {
+            "monday": [ 14, 24, 5, 16 ],
+            "tuesday": [ 13, 24, 4, 15 ],
+            "wednesday": [ 12, 23, 3, 14 ],
+            "thursday": [ 11, 22, 2, 13 ],
+            "friday": [ 10, 21, 1, 12 ],
+            "saturday": [ 16, 27, 7, 18 ],
+            "sunday": [ 15, 26, 6, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 92,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/le-bouquet-de-feuilles.jpg',
+          title: 'Le Bouquet de Feuilles',
+          artist: 'Seraphine Louis',
+          year: '?',
+          rule: {
+            "monday": [ 15, 26, 6, 17 ],
+            "tuesday": [ 14, 24, 5, 16 ],
+            "wednesday": [ 13, 24, 4, 15 ],
+            "thursday": [ 12, 23, 3, 14 ],
+            "friday": [ 11, 22, 2, 13 ],
+            "saturday": [ 10, 21, 1, 12 ],
+            "sunday": [ 16, 27, 7, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 93,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/femmes-de-plougastel-au-pardon-de-sainte-anne-la-palud-1903.jpg',
+          title: 'Femmes de Plougastel au Pardon de Sainte-Anne-La-Palud',
+          artist: 'Charles Cottet',
+          year: '1903',
+          rule: {
+            "monday": [ 16, 27, 7, 18 ],
+            "tuesday": [ 15, 26, 6, 17 ],
+            "wednesday": [ 14, 24, 5, 16 ],
+            "thursday": [ 13, 24, 4, 15 ],
+            "friday": [ 12, 23, 3, 14 ],
+            "saturday": [ 11, 22, 2, 13 ],
+            "sunday": [ 10, 21, 1, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 94,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/the-transatlantic-leaving-port-1905.jpg',
+          title: 'The Transatlantic leaving Port',
+          artist: 'Maxime Maufra',
+          year: '1905',
+          rule: {
+            "monday": [ 10, 21, 1, 12 ],
+            "tuesday": [ 16, 27, 7, 18 ],
+            "wednesday": [ 15, 26, 6, 17 ],
+            "thursday": [ 14, 24, 5, 16 ],
+            "friday": [ 13, 24, 4, 15 ],
+            "saturday": [ 12, 23, 3, 14 ],
+            "sunday": [ 11, 22, 2, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 95,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/gaudeamus-1890.jpg',
+          title: 'Gaudeamus',
+          artist: 'Theophile Steinlen',
+          year: '1890',
+          rule: {
+            "monday": [ 11, 22, 2, 13 ],
+            "tuesday": [ 10, 21, 1, 12 ],
+            "wednesday": [ 16, 27, 7, 18 ],
+            "thursday": [ 15, 26, 6, 17 ],
+            "friday": [ 14, 24, 5, 16 ],
+            "saturday": [ 13, 24, 4, 15 ],
+            "sunday": [ 12, 23, 3, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
