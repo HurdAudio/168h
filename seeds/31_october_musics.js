@@ -598,6 +598,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 34,
+          user_id: 1,
+          theme: 'hardcore punk, metal and nurse with wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3339473640/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://nursewithwound1.bandcamp.com/album/the-surveillance-lounge',
+          a_string: 'The Surveillance Lounge by Nurse With Wound',
+          rule: {
+            "monday": [ 10, 20, 30, 2 ],
+            "tuesday": [ 9, 19, 29, 1 ],
+            "wednesday": [ 13, 23, 2, 5 ],
+            "thursday": [ 12, 22, 1, 4 ],
+            "saturday": [ 11, 21, 31, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 35,
+          user_id: 1,
+          theme: 'hardcore punk, metal and nurse with wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3300944452/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://melkbelly.bandcamp.com/album/nothing-valley',
+          a_string: 'Nothing Valley by Melkbelly',
+          rule: {
+            "monday": [ 12, 22, 1, 4 ],
+            "tuesday": [ 11, 21, 31, 3 ],
+            "wednesday": [ 10, 20, 30, 2 ],
+            "thursday": [ 14, 24, 3, 6 ],
+            "saturday": [ 13, 23, 2, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 36,
+          user_id: 1,
+          theme: 'hardcore punk, metal and nurse with wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1914812463/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ghostkillerentertainment.bandcamp.com/album/disney-goes-hardcore',
+          a_string: 'Disney Goes Hardcore by Ghost Killer Entertainment',
+          rule: {
+            "monday": [ 13, 23, 2, 5 ],
+            "tuesday": [ 12, 22, 1, 4 ],
+            "wednesday": [ 11, 21, 31, 3 ],
+            "thursday": [ 10, 20, 30, 2 ],
+            "saturday": [ 14, 24, 3, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
