@@ -1570,6 +1570,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 88,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3942372913/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://michaelgordonmusic.bandcamp.com/album/trance',
+          a_string: 'Trance by Michael Gordon',
+          rule: {
+            "monday": [ 17, 21, 23, 27 ],
+            "tuesday": [ 19, 26, 28, 27 ],
+            "wednesday": [ 27, 21, 23, 28 ],
+            "thursday": [ 23, 17, 19, 7 ],
+            "saturday": [ 19, 26, 27, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 89,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2344800006/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://alarmwillsound.bandcamp.com/album/canzonas-americanas',
+          a_string: 'Canzonas Americanas by Alarm Will Sound',
+          rule: {
+            "monday": [ 19, 26, 27, 27 ],
+            "tuesday": [ 17, 21, 23, 27 ],
+            "wednesday": [ 19, 26, 28, 27 ],
+            "thursday": [ 27, 21, 23, 28 ],
+            "saturday": [ 23, 17, 19, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 90,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=248286087/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://wordsplusdreams.bandcamp.com/album/stereo',
+          a_string: 'STEREO by Patrick Higgins',
+          rule: {
+            "monday": [ 23, 17, 19, 7 ],
+            "tuesday": [ 19, 26, 27, 27 ],
+            "wednesday": [ 17, 21, 23, 27 ],
+            "thursday": [ 19, 26, 28, 27 ],
+            "saturday": [ 27, 21, 23, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
