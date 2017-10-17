@@ -2404,6 +2404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 121,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/yankee_stadium_night_painting.jpg',
+          title: 'Yankee Stadium',
+          artist: 'Dave Choate',
+          year: 'xxi Cent.',
+          rule: {
+            "monday": [ 17, 23, 28, 5 ],
+            "tuesday": [ 1, 21, 27, 4 ],
+            "wednesday": [ 16, 21, 27, 3 ],
+            "thursday": [ 15, 19, 4, 2 ],
+            "friday": [ 14, 19, 24, 1 ],
+            "saturday": [ 13, 18, 24, 30 ],
+            "sunday": [ 12, 17, 23, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 122,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/malcolm-farley-limited-edition-giclee-hand-embellished-yankee-stadium-commemorative-edition-4.jpg',
+          title: 'Yankee Stadium Commemorative Edition',
+          artist: 'Malcolm Farley',
+          year: 'xxi Cent.',
+          rule: {
+            "monday": [ 12, 17, 23, 29 ],
+            "tuesday": [ 17, 23, 28, 5 ],
+            "wednesday": [ 1, 21, 27, 4 ],
+            "thursday": [ 16, 21, 27, 3 ],
+            "friday": [ 15, 19, 4, 2 ],
+            "saturday": [ 14, 19, 24, 1 ],
+            "sunday": [ 13, 18, 24, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 123,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/mickey-mantle-new-york-yankees-legend.jpg',
+          title: 'Mickey Mantle Poster',
+          artist: 'Gianfranco Weiss',
+          year: 'xx Cent.',
+          rule: {
+            "monday": [ 13, 18, 24, 30 ],
+            "tuesday": [ 12, 17, 23, 29 ],
+            "wednesday": [ 17, 23, 28, 5 ],
+            "thursday": [ 1, 21, 27, 4 ],
+            "friday": [ 16, 21, 27, 3 ],
+            "saturday": [ 15, 19, 4, 2 ],
+            "sunday": [ 14, 19, 24, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 124,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/2806dd_066022461ee1466e93d53daa7ebbc9d4.jpg',
+          title: 'Derek Jeter "Leading the Way"',
+          artist: 'David Courson',
+          year: '2010',
+          rule: {
+            "monday": [ 14, 19, 24, 1 ],
+            "tuesday": [ 13, 18, 24, 30 ],
+            "wednesday": [ 12, 17, 23, 29 ],
+            "thursday": [ 17, 23, 28, 5 ],
+            "friday": [ 1, 21, 27, 4 ],
+            "saturday": [ 16, 21, 27, 3 ],
+            "sunday": [ 15, 19, 4, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 125,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/2885114106_c6fa1af460_o.jpg',
+          title: 'Mariano Rivera',
+          artist: 'BernBabyBern',
+          year: '2008',
+          rule: {
+            "monday": [ 15, 19, 4, 2 ],
+            "tuesday": [ 14, 19, 24, 1 ],
+            "wednesday": [ 13, 18, 24, 30 ],
+            "thursday": [ 12, 17, 23, 29 ],
+            "friday": [ 17, 23, 28, 5 ],
+            "saturday": [ 1, 21, 27, 4 ],
+            "sunday": [ 16, 21, 27, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
