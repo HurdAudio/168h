@@ -2604,6 +2604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 131,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/mary-beale-self-portrait.JPG',
+          title: 'Self-portrait',
+          artist: 'Mary Beale',
+          year: '1680',
+          rule: {
+            "monday": [ 14, 24, 1, 11 ],
+            "tuesday": [ 13, 23, 31, 10 ],
+            "wednesday": [ 12, 22, 31, 9 ],
+            "thursday": [ 18, 27, 5, 14 ],
+            "friday": [ 17, 27, 6, 14 ],
+            "saturday": [ 16, 26, 3, 13 ],
+            "sunday": [ 15, 25, 2, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 132,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/allegory-of-music-1712.jpg',
+          title: 'Allegory of Music',
+          artist: 'Rosalba Carriera',
+          year: '1712',
+          rule: {
+            "monday": [ 15, 25, 2, 12 ],
+            "tuesday": [ 14, 24, 1, 11 ],
+            "wednesday": [ 13, 23, 31, 10 ],
+            "thursday": [ 12, 22, 31, 9 ],
+            "friday": [ 18, 27, 5, 14 ],
+            "saturday": [ 17, 27, 6, 14 ],
+            "sunday": [ 16, 26, 3, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 133,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/still-life-with-tuft-of-marine-plants-shells-and-corals-1769.jpg',
+          title: 'Still-Life with Tuft of Marine Plants, Shells and Corals',
+          artist: 'Anne Vallayer-Coster',
+          year: '1769',
+          rule: {
+            "monday": [ 17, 27, 4, 14 ],
+            "tuesday": [ 16, 26, 3, 13 ],
+            "wednesday": [ 15, 25, 2, 12 ],
+            "thursday": [ 14, 24, 1, 11 ],
+            "friday": [ 13, 23, 1, 10 ],
+            "saturday": [ 19, 28, 6, 15 ],
+            "sunday": [ 18, 28, 7, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 134,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/une-tude-de-femme-d-apr-s-nature-portrait-de-madame-soustras.jpg',
+          title: 'Une étude de femme d\'après nature (Portrait de Madame Soustras)',
+          artist: 'Marie-Denise Villers',
+          year: '?',
+          rule: {
+            "monday": [ 18, 28, 7, 15 ],
+            "tuesday": [ 17, 27, 4, 14 ],
+            "wednesday": [ 16, 26, 3, 13 ],
+            "thursday": [ 15, 25, 2, 12 ],
+            "friday": [ 14, 24, 1, 11 ],
+            "saturday": [ 13, 23, 1, 10 ],
+            "sunday": [ 19, 28, 6, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 135,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/oxen-pulling-a-cart.jpg',
+          title: 'Oxen Pulling a Cart',
+          artist: 'Rosa Bonheur',
+          year: '?',
+          rule: {
+            "monday": [ 19, 28, 6, 15 ],
+            "tuesday": [ 18, 28, 7, 15 ],
+            "wednesday": [ 17, 27, 4, 14 ],
+            "thursday": [ 16, 26, 3, 13 ],
+            "friday": [ 15, 25, 2, 12 ],
+            "saturday": [ 14, 24, 1, 11 ],
+            "sunday": [ 13, 23, 1, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
