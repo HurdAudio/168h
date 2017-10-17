@@ -1462,6 +1462,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 82,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=480704933/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://spellling.bandcamp.com/album/pantheon-of-me-2',
+          a_string: 'Pantheon Of Me by SPELLLING',
+          rule: {
+            "monday": [ 12, 17, 19, 2 ],
+            "tuesday": [ 13, 17, 19, 23 ],
+            "wednesday": [ 15, 19, 21, 25 ],
+            "thursday": [ 17, 21, 23, 25 ],
+            "saturday": [ 29, 23, 25, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 83,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4118357594/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://mosessumney.bandcamp.com/album/aromanticism',
+          a_string: 'Aromanticism by Moses Sumney',
+          rule: {
+            "monday": [ 29, 23, 25, 2 ],
+            "tuesday": [ 12, 17, 19, 2 ],
+            "wednesday": [ 13, 17, 19, 23 ],
+            "thursday": [ 15, 19, 21, 25 ],
+            "saturday": [ 17, 21, 23, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 84,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1894361972/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sudanarchives.bandcamp.com/album/sudan-archives',
+          a_string: 'Sudan Archives by Sudan Archives',
+          rule: {
+            "monday": [ 18, 22, 24, 26 ],
+            "tuesday": [ 1, 24, 26, 3 ],
+            "wednesday": [ 13, 18, 20, 3 ],
+            "thursday": [ 14, 18, 20, 24 ],
+            "saturday": [ 16, 20, 22, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
