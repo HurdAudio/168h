@@ -133,6 +133,67 @@
       vm.closeOccasionsManager = closeOccasionsManager;
       vm.editHoliday = editHoliday;
       vm.userHolidayEditorDone = userHolidayEditorDone;
+      vm.billsManager = billsManager;
+      vm.closeBillsManager = closeBillsManager;
+
+      function closeBillsManager() {
+        let billsManagerButton = document.getElementById('billsManagerButton');
+        let billZone = document.getElementById('billZone');
+        let billsManagementDiv = document.getElementById('billsManagementDiv');
+
+        billsManagerButton.setAttribute("style", "visibility: visible;");
+        billZone.setAttribute("style", "opacity: 1;");
+        billsManagementDiv.setAttribute("style", "display: none;");
+      }
+
+      function billsManager() {
+        let billsManagerButton = document.getElementById('billsManagerButton');
+        let billZone = document.getElementById('billZone');
+        let billsManagementDiv = document.getElementById('billsManagementDiv');
+
+        $http.get(`/billsbyuser/${currentUserId}`)
+        .then(allUserBillsData=>{
+          let allUserBills = allUserBillsData.data;
+          let userUnpaidBills = allUserBills.filter(bill=>{
+            return(!bill.is_paid);
+          });
+          let userPaidBills = allUserBills.filter(bill=>{
+            return(bill.is_paid);
+          });
+          vm.userUnpaidBills = userUnpaidBills.sort((a,b)=>{
+            if (a.name.toLowerCase() < b.name.toLowerCase()) {
+              return -1;
+            } else if (a.name.toLowerCase() > b.name.toLowerCase()) {
+              return 1;
+            } else {
+              return 0;
+            }
+          });
+          vm.userPaidBills = userPaidBills.sort((a,b)=>{
+            if (a.name.toLowerCase() < b.name.toLowerCase()) {
+              return -1;
+            } else if (a.name.toLowerCase() > b.name.toLowerCase()) {
+              return 1;
+            } else {
+              return 0;
+            }
+          });
+          if (vm.userUnpaidBills.length > 0) {
+            for (let i = 0; i < vm.userUnpaidBills.length; i++) {
+              vm.userUnpaidBills[i].cleanDue = cleanDate(vm.userUnpaidBills[i].due_date);
+            }
+          }
+          if (vm.userPaidBills.length > 0) {
+            for (let j = 0; j < vm.userPaidBills.length; j++) {
+              vm.userPaidBills[j].cleanPaid = cleanDate(vm.userPaidBills[j].date_paid);
+            }
+          }
+        });
+
+        billsManagerButton.setAttribute("style", "visibility: hidden;");
+        billZone.setAttribute("style", "opacity: 0.4;");
+        billsManagementDiv.setAttribute("style", "display: initial;");
+      }
 
       function userHolidayEditorDone() {
         let holidayManagerDone = document.getElementById('holidayManagerDone');

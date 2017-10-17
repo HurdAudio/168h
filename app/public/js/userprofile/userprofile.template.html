@@ -80,7 +80,7 @@
     <div id="billZone">
       <div>
         <img src="../img/pay-off-bills.jpg">
-        <a href="" id="billsManager" class="btn">bills</a>
+        <a href="" id="billsManagerButton" class="btn" ng-click="$ctrl.billsManager()">bills</a>
       </div>
 
     </div>
@@ -207,6 +207,51 @@
               </div>
 
             </main>
+          </div>
+
+        </fieldset>
+
+
+      </form>
+
+    </div>
+    <div id="billsManagementDiv">
+      <div id="billsManagerBar">
+        <a href="" class="btn" id="billsManagerDone" ng-click="$ctrl.closeBillsManager()">done</a>
+        <h1>Bills Manager</h1>
+
+      </div>
+      <form id="billsManagerForm" class="pure-form pure-form-stacked">
+        <fieldset>
+          <div id="billsManagement">
+            <a href="" class="btn" id="addBill" ng-click="$ctrl.addNewBill()">new</a>
+            <a href="" class="btn" id="billsReporter" ng-click="$ctrl.billsReport()">report</a>
+            <div id="unpaidBillsDiv">
+              <p>Unpaid Bills:</p>
+              <main ng-repeat="unpaid in $ctrl.userUnpaidBills | orderBy : $ctrl.sortBy">
+                <p>{{unpaid.name}}</p>
+                <p>Amount: ${{unpaid.amount_due}}</p>
+                <p>Date due: {{unpaid.cleanDue}}</p>
+                <br>
+                <div class="occasionEdit">
+                  <a href="" class="btn" ng-click="$ctrl.editBill(unpaid.id)">edit</a>
+                  <a href="" class="btn" ng-click="$ctrl.deleteBill(unpaid.id)">delete</a>
+                </div>
+              </main>
+            </div>
+            <div id="paidBillsDiv">
+              <p>Paid Bills:</p>
+              <main ng-repeat="paid in $ctrl.userPaidBills | orderBy : $ctrl.sortBy">
+                <p>{{paid.name}}</p>
+                <p>Amount: ${{paid.amount_due}}</p>
+                <p>Date paid: {{paid.cleanPaid}}</p>
+                <br>
+                <div class="occasionEdit">
+                  <a href="" class="btn" ng-click="$ctrl.editBill(paid.id)">edit</a>
+                  <a href="" class="btn" ng-click="$ctrl.deleteBill(paid.id)">delete</a>
+                </div>
+              </main>
+            </div>
           </div>
 
         </fieldset>
