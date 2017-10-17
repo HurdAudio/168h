@@ -3004,6 +3004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 151,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/relief-painting-19x-1960-61.jpg',
+          title: 'Relief painting #19x',
+          artist: 'Adolf Fleischmann',
+          year: '1961',
+          rule: {
+            "monday": [ 6, 8, 9, 12 ],
+            "tuesday": [ 22, 23, 3, 26 ],
+            "wednesday": [ 25, 27, 19, 8 ],
+            "thursday": [ 27, 28, 20, 23 ],
+            "friday": [ 30, 31, 22, 26 ],
+            "saturday": [ 2, 4, 5, 7 ],
+            "sunday": [ 4, 6, 10, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 152,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/easy-dark-2007.jpg',
+          title: 'Easy Dark',
+          artist: 'Julie Mehretu',
+          year: '2007',
+          rule: {
+            "monday": [ 4, 6, 10, 13 ],
+            "tuesday": [ 6, 8, 9, 12 ],
+            "wednesday": [ 22, 23, 3, 26 ],
+            "thursday": [ 25, 27, 19, 8 ],
+            "friday": [ 27, 28, 20, 23 ],
+            "saturday": [ 30, 31, 22, 26 ],
+            "sunday": [ 2, 4, 5, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 153,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/untitled-1982.jpg',
+          title: 'Untitled',
+          artist: 'Gunther Gerzso',
+          year: '1982',
+          rule: {
+            "monday": [ 2, 4, 5, 7 ],
+            "tuesday": [ 4, 6, 10, 13 ],
+            "wednesday": [ 6, 8, 9, 12 ],
+            "thursday": [ 22, 23, 3, 26 ],
+            "friday": [ 25, 27, 19, 8 ],
+            "saturday": [ 27, 28, 20, 23 ],
+            "sunday": [ 30, 31, 22, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 154,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/galaxy-1990.jpg',
+          title: 'Galaxy',
+          artist: 'Tihamer Gyarmathy',
+          year: '1990',
+          rule: {
+            "monday": [ 31, 1, 23, 27 ],
+            "tuesday": [ 3, 5, 6, 8 ],
+            "wednesday": [ 5, 7, 11, 14 ],
+            "thursday": [ 7, 9, 10, 13 ],
+            "friday": [ 23, 24, 4, 27 ],
+            "saturday": [ 26, 28, 20, 9 ],
+            "sunday": [ 28, 29, 21, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 155,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/astre-bleu-1991.jpg',
+          title: 'Astre-bleu',
+          artist: 'Jean-Paul Jerome',
+          year: '1991',
+          rule: {
+            "monday": [ 28, 29, 21, 24 ],
+            "tuesday": [ 31, 1, 23, 27 ],
+            "wednesday": [ 3, 5, 6, 8 ],
+            "thursday": [ 5, 7, 11, 14 ],
+            "friday": [ 7, 9, 10, 13 ],
+            "saturday": [ 23, 24, 4, 27 ],
+            "sunday": [ 26, 28, 20, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
