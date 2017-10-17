@@ -1354,6 +1354,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 76,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3559103663/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://kaitlynaureliasmith.bandcamp.com/album/the-kid',
+          a_string: 'The Kid by Kaitlyn Aurelia Smith',
+          rule: {
+            "monday": [ 14, 20, 26, 3 ],
+            "tuesday": [ 13, 19, 25, 3 ],
+            "wednesday": [ 12, 18, 24, 1 ],
+            "thursday": [ 11, 17, 23, 31 ],
+            "saturday": [ 15, 21, 27, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 77,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3987451963/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://linguaignota.bandcamp.com/album/all-bitches-die',
+          a_string: 'ALL BITCHES DIE by LINGUA IGNOTA',
+          rule: {
+            "monday": [ 16, 22, 28, 5 ],
+            "tuesday": [ 15, 21, 27, 4 ],
+            "wednesday": [ 14, 20, 26, 4 ],
+            "thursday": [ 13, 19, 25, 2 ],
+            "saturday": [ 12, 18, 24, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 78,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3891158978/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://chelseawolfe.bandcamp.com/album/hiss-spun',
+          a_string: 'Hiss Spun by CHELSEA WOLFE',
+          rule: {
+            "monday": [ 12, 18, 24, 1 ],
+            "tuesday": [ 16, 22, 28, 5 ],
+            "wednesday": [ 15, 21, 27, 4 ],
+            "thursday": [ 14, 20, 26, 4 ],
+            "saturday": [ 13, 19, 25, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
