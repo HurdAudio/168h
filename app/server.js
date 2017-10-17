@@ -70,6 +70,8 @@ const september_arts = require('./routes/september_arts.js');
 const september_artsbyuser = require('./routes/september_artsbyuser.js');
 const september_musics = require('./routes/september_musics.js');
 const september_musicsbyuser = require('./routes/september_musicsbyuser.js');
+const october_arts = require('./routes/october_arts.js');
+const october_artsbyuser = require('./routes/october_artsbyuser.js');
 
 const port = process.env.PORT || 3007;
 
@@ -140,6 +142,8 @@ app.use(fileUpload());
  app.use('/september_artsbyuser', september_artsbyuser);
  app.use('/september_musics', september_musics);
  app.use('/september_musicsbyuser', september_musicsbyuser);
+ app.use('/october_arts', october_arts);
+ app.use('/october_artsbyuser', october_artsbyuser);
 
 app.get('/onthisdayinhistory/:date', (req, res, next) =>{
   let newUrl = 'http://history.muffinlabs.com/date/';
