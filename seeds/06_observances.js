@@ -8470,6 +8470,34 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 540,
+          user_id: 1,
+          name: 'Samm Bennett (drums/songwriter), born 1957',
+          color: '#50A6A7',
+          picture: './img/musicians/sammbennett.jpg',
+          day_of: new Date ('1957-05-25T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 541,
+          user_id: 1,
+          name: 'The world ended on this day in 2011 with the return of Jesus according to Ronald Weinland',
+          color: '#514C45',
+          picture: './img/doomsday/ronaldprophet.jpg',
+          day_of: new Date ('2011-09-29T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
