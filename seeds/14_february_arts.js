@@ -2804,6 +2804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 141,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Geometric-Abstract-Painting-Composition-43-Bryce-Hudson-30x40-2014.jpg',
+          title: 'Composition 43',
+          artist: 'Bryce Hudson',
+          year: '2014',
+          rule: {
+            "monday": [ 22, 1, 9, 17 ],
+            "tuesday": [ 27, 3, 9, 19 ],
+            "wednesday": [ 26, 5, 13, 21 ],
+            "thursday": [ 28, 9, 15, 23 ],
+            "friday": [ 1, 9, 17, 27 ],
+            "saturday": [ 3, 11, 7, 26 ],
+            "sunday": [ 20, 28, 7, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 142,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Julien_Hudson_-_Portrait_of_a_Creole_Gentleman.jpg',
+          title: 'Portrait of a Creole Gentleman',
+          artist: 'Julien Hudson',
+          year: '1835 - 1387',
+          rule: {
+            "monday": [ 20, 28, 7, 15 ],
+            "tuesday": [ 22, 1, 9, 17 ],
+            "wednesday": [ 27, 3, 9, 19 ],
+            "thursday": [ 26, 5, 13, 21 ],
+            "friday": [ 28, 9, 15, 23 ],
+            "saturday": [ 1, 9, 17, 27 ],
+            "sunday": [ 3, 11, 7, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 143,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/huffman_2.jpg',
+          title: 'Justice',
+          artist: 'David Huffman',
+          year: '2008',
+          rule: {
+            "monday": [ 3, 11, 7, 26 ],
+            "tuesday": [ 20, 28, 7, 15 ],
+            "wednesday": [ 22, 1, 9, 17 ],
+            "thursday": [ 27, 3, 9, 19 ],
+            "friday": [ 26, 5, 13, 21 ],
+            "saturday": [ 28, 9, 15, 23 ],
+            "sunday": [ 1, 9, 17, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 144,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Hunt-Sea-HorseTH.jpg',
+          title: 'Seahorse',
+          artist: 'Richard Hunt',
+          year: 'xx Cent.',
+          rule: {
+            "monday": [ 1, 9, 17, 27 ],
+            "tuesday": [ 3, 11, 7, 26 ],
+            "wednesday": [ 20, 28, 7, 15 ],
+            "thursday": [ 22, 1, 9, 17 ],
+            "friday": [ 27, 3, 9, 19 ],
+            "saturday": [ 26, 5, 13, 21 ],
+            "sunday": [ 28, 9, 15, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 145,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Clementine_Hunter_-_Funeral_Procession_-_Google_Art_Project.jpg',
+          title: 'Funeral Procession',
+          artist: 'Clementine Hunter',
+          year: '1950',
+          rule: {
+            "monday": [ 28, 9, 15, 23 ],
+            "tuesday": [ 1, 9, 17, 27 ],
+            "wednesday": [ 3, 11, 7, 26 ],
+            "thursday": [ 20, 28, 7, 15 ],
+            "friday": [ 22, 1, 9, 17 ],
+            "saturday": [ 27, 3, 9, 19 ],
+            "sunday": [ 26, 5, 13, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
