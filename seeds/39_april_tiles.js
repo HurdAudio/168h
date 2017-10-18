@@ -60,6 +60,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#CDDCFF',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 5,
+          user_id: 1,
+          theme: 'water',
+          type: 'saturday',
+          src_string: '../img/april_tiles/waves-circles-285359_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '155%',
+          color_dark: '#120E1F',
+          color_medium: '#2450E4',
+          color_light: '#F9FAEC',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
