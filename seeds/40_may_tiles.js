@@ -46,6 +46,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#E0FFD8',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 4,
+          user_id: 1,
+          theme: 'greenery',
+          type: 'friday',
+          src_string: '../img/may_tiles/stevia-74187_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '160%',
+          color_dark: '#17630B',
+          color_medium: '#65BF3F',
+          color_light: '#8BD95F',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
