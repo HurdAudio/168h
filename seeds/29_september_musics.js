@@ -760,6 +760,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 43,
+          user_id: 1,
+          theme: 'math rock/progressive rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2801189383/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://lasersedge.bandcamp.com/album/agusa',
+          a_string: 'Agusa by Agusa',
+          rule: {
+            "monday": [ 7, 27, 5, 29 ],
+            "tuesday": [ 11, 1, 9, 3 ],
+            "wednesday": [ 10, 30, 8, 2 ],
+            "thursday": [ 9, 29, 7, 1 ],
+            "saturday": [ 8, 28, 6, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 44,
+          user_id: 1,
+          theme: 'math rock/progressive rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3884739943/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://hooffoot.bandcamp.com/album/hooffoot',
+          a_string: 'Hooffoot by Hooffoot',
+          rule: {
+            "monday": [ 8, 28, 6, 30 ],
+            "tuesday": [ 7, 27, 5, 29 ],
+            "wednesday": [ 11, 1, 9, 3 ],
+            "thursday": [ 10, 30, 8, 2 ],
+            "saturday": [ 9, 29, 7, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 45,
+          user_id: 1,
+          theme: 'math rock/progressive rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3774446051/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://amplifier.bandcamp.com/album/trippin-with-dr-faustus',
+          a_string: 'Trippin&#39; With Dr. Faustus by Amplifier',
+          rule: {
+            "monday": [ 9, 29, 7, 1 ],
+            "tuesday": [ 8, 28, 6, 30 ],
+            "wednesday": [ 7, 27, 5, 29 ],
+            "thursday": [ 11, 1, 9, 3 ],
+            "saturday": [ 10, 30, 8, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
