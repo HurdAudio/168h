@@ -102,6 +102,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#F1F4F9',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 8,
+          user_id: 1,
+          theme: 'ice',
+          type: 'week',
+          src_string: '../img/january_tiles/ice-melting6a.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '140%',
+          color_dark: '#1B4C48',
+          color_medium: '#7FFBED',
+          color_light: '#B0EEED',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
