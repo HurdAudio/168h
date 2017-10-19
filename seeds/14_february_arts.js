@@ -2904,6 +2904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 146,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/downloadStJam.jpg',
+          title: 'Steffani Jemison at Jacob Lawrence Gallery',
+          artist: 'Steffani Jemison',
+          year: '2016',
+          rule: {
+            "monday": [ 26, 5, 13, 21 ],
+            "tuesday": [ 28, 9, 15, 23 ],
+            "wednesday": [ 1, 9, 17, 27 ],
+            "thursday": [ 3, 11, 7, 26 ],
+            "friday": [ 20, 28, 7, 15 ],
+            "saturday": [ 22, 1, 9, 17 ],
+            "sunday": [ 27, 3, 9, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 147,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Jazz_Giants.jpg',
+          title: 'Jazz Giants',
+          artist: 'Wadsworth Jarrell',
+          year: '1987',
+          rule: {
+            "monday": [ 28, 4, 10, 20 ],
+            "tuesday": [ 27, 6, 14, 22 ],
+            "wednesday": [ 29, 10, 16, 24 ],
+            "thursday": [ 2, 10, 18, 28 ],
+            "friday": [ 4, 12, 8, 27 ],
+            "saturday": [ 21, 29, 8, 16 ],
+            "sunday": [ 23, 2, 10, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 148,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Trademarkeyes.jpg',
+          title: 'Trademarkeyes',
+          artist: 'Annette Jimerson',
+          year: '?',
+          rule: {
+            "monday": [ 23, 2, 10, 18 ],
+            "tuesday": [ 28, 4, 10, 20 ],
+            "wednesday": [ 27, 6, 14, 22 ],
+            "thursday": [ 29, 10, 16, 24 ],
+            "friday": [ 2, 10, 18, 28 ],
+            "saturday": [ 4, 12, 8, 27 ],
+            "sunday": [ 21, 29, 8, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 149,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Brooklyn_Museum_-_John_Jacob_Anderson_and_Sons,_John_and_Edward_-_Joshua_Johnson_-_overall.jpg',
+          title: 'John Jacob Anderson and Sons, John and Edward',
+          artist: 'Joshua Johnson',
+          year: 'ca.1812',
+          rule: {
+            "monday": [ 21, 29, 8, 16 ],
+            "tuesday": [ 23, 2, 10, 18 ],
+            "wednesday": [ 28, 4, 10, 20 ],
+            "thursday": [ 27, 6, 14, 22 ],
+            "friday": [ 29, 10, 16, 24 ],
+            "saturday": [ 2, 10, 18, 28 ],
+            "sunday": [ 4, 12, 8, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 150,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/7b1a81a4ffa4a2a59b09a72cff71d3f6--gray-johnson-african-american-art.jpg',
+          title: 'Arrangement ',
+          artist: 'Malvin Gray Johnson',
+          year: '1933',
+          rule: {
+            "monday": [ 4, 12, 8, 27 ],
+            "tuesday": [ 21, 29, 8, 16 ],
+            "wednesday": [ 23, 2, 10, 18 ],
+            "thursday": [ 28, 4, 10, 20 ],
+            "friday": [ 27, 6, 14, 22 ],
+            "saturday": [ 29, 10, 16, 24 ],
+            "sunday": [ 2, 10, 18, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
