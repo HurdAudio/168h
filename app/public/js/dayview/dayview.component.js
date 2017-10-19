@@ -1808,6 +1808,9 @@
             case(8):
               theMonthString = 'september_musicsbyuser';
               break;
+            case(9):
+              theMonthString = 'october_musicsbyuser';
+              break;
             default:
               console.log('month not yet supported');
           }
