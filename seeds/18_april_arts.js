@@ -2504,6 +2504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 126,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/unnamed-3.jpg',
+          title: 'PETCO Park',
+          artist: 'Jason Edrys',
+          year: '?',
+          rule: {
+            "monday": [ 17, 22, 28, 4 ],
+            "tuesday": [ 16, 20, 5, 3 ],
+            "wednesday": [ 15, 20, 25, 2 ],
+            "thursday": [ 14, 19, 25, 1 ],
+            "friday": [ 13, 18, 24, 30 ],
+            "saturday": [ 18, 24, 29, 6 ],
+            "sunday": [ 2, 22, 28, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 127,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/petco-park-opening-day-shawn-everhart.jpg',
+          title: 'Petoco Park Opening Day',
+          artist: 'Shawn Everhart',
+          year: '2012',
+          rule: {
+            "monday": [ 2, 22, 28, 5 ],
+            "tuesday": [ 17, 22, 28, 4 ],
+            "wednesday": [ 16, 20, 5, 3 ],
+            "thursday": [ 15, 20, 25, 2 ],
+            "friday": [ 14, 19, 25, 1 ],
+            "saturday": [ 13, 18, 24, 30 ],
+            "sunday": [ 18, 24, 29, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 128,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/fbd6883d905cf00846010a5ffcc952ea--san-diego-padres-sports-logos.jpg',
+          title: 'San Diego Padres Logo',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 18, 24, 29, 6 ],
+            "tuesday": [ 2, 22, 28, 5 ],
+            "wednesday": [ 17, 22, 28, 4 ],
+            "thursday": [ 16, 20, 5, 3 ],
+            "friday": [ 15, 20, 25, 2 ],
+            "saturday": [ 14, 19, 25, 1 ],
+            "sunday": [ 13, 18, 24, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 129,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/23949964b6447179cbcf52b212a75a12--baseball-art-san-diego-padres.jpg',
+          title: 'Tony Gwynn',
+          artist: 'Stephen Fishwick',
+          year: 'xxi Cent.',
+          rule: {
+            "monday": [ 13, 18, 24, 30 ],
+            "tuesday": [ 18, 24, 29, 6 ],
+            "wednesday": [ 2, 22, 28, 5 ],
+            "thursday": [ 17, 22, 28, 4 ],
+            "friday": [ 16, 20, 5, 3 ],
+            "saturday": [ 15, 20, 25, 2 ],
+            "sunday": [ 14, 19, 25, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 130,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/dc05d1f915d2c591947cb143f40633b7.jpg',
+          title: 'Dave Winfield, San Diego Padres',
+          artist: 'Kadir Nelson',
+          year: '?',
+          rule: {
+            "monday": [ 14, 19, 25, 1 ],
+            "tuesday": [ 13, 18, 24, 30 ],
+            "wednesday": [ 18, 24, 29, 6 ],
+            "thursday": [ 2, 22, 28, 5 ],
+            "friday": [ 17, 22, 28, 4 ],
+            "saturday": [ 16, 20, 5, 3 ],
+            "sunday": [ 15, 20, 25, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
