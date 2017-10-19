@@ -1104,6 +1104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 56,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/fold-1966-2(1).jpg',
+          title: 'Fold',
+          artist: 'Charlotte Posenenske',
+          year: '1966',
+          rule: {
+            "monday": [ 14, 19, 25, 30 ],
+            "tuesday": [ 13, 18, 24, 29 ],
+            "wednesday": [ 12, 17, 23, 28 ],
+            "thursday": [ 11, 16, 22, 27 ],
+            "friday": [ 10, 15, 21, 28 ],
+            "saturday": [ 16, 21, 27, 2 ],
+            "sunday": [ 15, 20, 26, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 57,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/superficie-argento-1973.jpg',
+          title: 'Superficie Argento',
+          artist: 'Enrico Castellani',
+          year: '1973',
+          rule: {
+            "monday": [ 15, 20, 26, 1 ],
+            "tuesday": [ 14, 19, 25, 30 ],
+            "wednesday": [ 13, 18, 24, 29 ],
+            "thursday": [ 12, 17, 23, 28 ],
+            "friday": [ 11, 16, 22, 27 ],
+            "saturday": [ 10, 15, 21, 28 ],
+            "sunday": [ 16, 21, 27, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 58,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/prism-1984.jpg',
+          title: 'Prism',
+          artist: 'Frederic Matys Thursz',
+          year: '1984',
+          rule: {
+            "monday": [ 16, 21, 27, 2 ],
+            "tuesday": [ 15, 20, 26, 1 ],
+            "wednesday": [ 14, 19, 25, 30 ],
+            "thursday": [ 13, 18, 24, 29 ],
+            "friday": [ 12, 17, 23, 28 ],
+            "saturday": [ 11, 16, 22, 27 ],
+            "sunday": [ 10, 15, 21, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 59,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/untitled-1959.jpg',
+          title: 'Untitled',
+          artist: 'Robert Ryman',
+          year: '1959',
+          rule: {
+            "monday": [ 10, 15, 21, 28 ],
+            "tuesday": [ 16, 21, 27, 2 ],
+            "wednesday": [ 15, 20, 26, 1 ],
+            "thursday": [ 14, 19, 25, 30 ],
+            "friday": [ 13, 18, 24, 29 ],
+            "saturday": [ 12, 17, 23, 28 ],
+            "sunday": [ 11, 16, 22, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 60,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/anomalia-1969.jpg',
+          title: 'Anomalia',
+          artist: 'Rodolfo Arico',
+          year: '1969',
+          rule: {
+            "monday": [ 11, 16, 22, 27 ],
+            "tuesday": [ 10, 15, 21, 28 ],
+            "wednesday": [ 16, 21, 27, 2 ],
+            "thursday": [ 15, 20, 26, 1 ],
+            "friday": [ 14, 19, 25, 30 ],
+            "saturday": [ 13, 18, 24, 29 ],
+            "sunday": [ 12, 17, 23, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
