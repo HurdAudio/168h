@@ -976,6 +976,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 55,
+          user_id: 1,
+          theme: 'commercially viable genre',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1326694238/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://durant.bandcamp.com/album/dimensi-n-d',
+          a_string: 'Dimensión_D by Durant',
+          rule: {
+            "monday": [ 6, 7, 12, 20 ],
+            "tuesday": [ 5, 7, 11, 19 ],
+            "wednesday": [ 9, 11, 15, 23 ],
+            "thursday": [ 8, 10, 14, 22 ],
+            "saturday": [ 7, 9, 13, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 56,
+          user_id: 1,
+          theme: 'commercially viable genre',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3672765699/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://r-ch-v.bandcamp.com/album/hypnosys',
+          a_string: 'HYPNOSYS by Upgrayedd Smurphy',
+          rule: {
+            "monday": [ 8, 10, 14, 22 ],
+            "tuesday": [ 7, 8, 13, 21 ],
+            "wednesday": [ 6, 8, 12, 20 ],
+            "thursday": [ 10, 12, 16, 24 ],
+            "saturday": [ 9, 11, 15, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 57,
+          user_id: 1,
+          theme: 'commercially viable genre',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=22561417/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://orangemilkrecords.bandcamp.com/album/soft-channel',
+          a_string: 'Soft Channel by Giant Claw',
+          rule: {
+            "monday": [ 9, 11, 15, 23 ],
+            "tuesday": [ 8, 10, 14, 22 ],
+            "wednesday": [ 7, 8, 13, 21 ],
+            "thursday": [ 6, 8, 12, 20 ],
+            "saturday": [ 10, 12, 16, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
