@@ -436,6 +436,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 25,
+          user_id: 1,
+          theme: 'brazil and pan-south american',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3292168400/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://frentebolivarista.bandcamp.com/album/yeahman-transborda',
+          a_string: 'YEAHMAN - Transborda by YEAHMAN',
+          rule: {
+            "monday": [ 8, 14, 20, 26 ],
+            "tuesday": [ 6, 13, 19, 25 ],
+            "wednesday": [ 6, 12, 18, 24 ],
+            "thursday": [ 10, 16, 22, 28 ],
+            "saturday": [ 9, 15, 21, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 26,
+          user_id: 1,
+          theme: 'brazil and pan-south american',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3395021422/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://chicodub.bandcamp.com/album/hy-brazil-vol-10-new-music-from-brazil-2016',
+          a_string: 'Hy Brazil Vol 10: New Music From Brazil 2016 by Chico Dub',
+          rule: {
+            "monday": [ 9, 15, 21, 27 ],
+            "tuesday": [ 8, 14, 20, 26 ],
+            "wednesday": [ 6, 13, 19, 25 ],
+            "thursday": [ 6, 12, 18, 24 ],
+            "saturday": [ 10, 16, 22, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 27,
+          user_id: 1,
+          theme: 'brazil and pan-south american',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=305968330/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://lealmeida.bandcamp.com/album/paraleloplasmos',
+          a_string: 'Paraleloplasmos by Lê Almeida',
+          rule: {
+            "monday": [ 10, 16, 22, 28 ],
+            "tuesday": [ 9, 15, 21, 27 ],
+            "wednesday": [ 8, 14, 20, 26 ],
+            "thursday": [ 6, 13, 19, 25 ],
+            "saturday": [ 6, 12, 18, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
