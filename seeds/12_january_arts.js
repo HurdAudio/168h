@@ -3104,6 +3104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 156,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/hereditarius-no-1-68-a-1968.jpg',
+          title: 'Hereditarius No.1-68-A',
+          artist: 'Park Seo-Bo',
+          year: '1968',
+          rule: {
+            "monday": [ 26, 28, 20, 9 ],
+            "tuesday": [ 28, 29, 21, 24 ],
+            "wednesday": [ 31, 1, 23, 27 ],
+            "thursday": [ 3, 5, 6, 8 ],
+            "friday": [ 5, 7, 11, 14 ],
+            "saturday": [ 7, 9, 10, 13 ],
+            "sunday": [ 23, 24, 4, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 157,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/untitled-1963.jpg',
+          title: 'Untitled',
+          artist: 'David Smith',
+          year: '1963',
+          rule: {
+            "monday": [ 23, 24, 4, 27 ],
+            "tuesday": [ 26, 28, 20, 9 ],
+            "wednesday": [ 28, 29, 21, 24 ],
+            "thursday": [ 31, 1, 23, 27 ],
+            "friday": [ 3, 5, 6, 8 ],
+            "saturday": [ 5, 7, 11, 14 ],
+            "sunday": [ 7, 9, 10, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 158,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/africa-i-1942.jpg',
+          title: 'Africa I',
+          artist: 'Willi Baumeister',
+          year: '1942',
+          rule: {
+            "monday": [ 7, 9, 10, 13 ],
+            "tuesday": [ 23, 24, 4, 27 ],
+            "wednesday": [ 26, 28, 20, 9 ],
+            "thursday": [ 28, 29, 21, 24 ],
+            "friday": [ 31, 1, 23, 27 ],
+            "saturday": [ 3, 5, 6, 8 ],
+            "sunday": [ 5, 7, 11, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 159,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/epitalamio-1968.jpg',
+          title: 'Epitalamio',
+          artist: 'Carlos Merida',
+          year: '1968',
+          rule: {
+            "monday": [ 5, 7, 11, 14 ],
+            "tuesday": [ 7, 9, 10, 13 ],
+            "wednesday": [ 23, 24, 4, 27 ],
+            "thursday": [ 26, 28, 20, 9 ],
+            "friday": [ 28, 29, 21, 24 ],
+            "saturday": [ 31, 1, 23, 27 ],
+            "sunday": [ 3, 5, 6, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 160,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/where-1960.jpg',
+          title: 'Where',
+          artist: 'Morris Louis',
+          year: '1960',
+          rule: {
+            "monday": [ 3, 5, 6, 8 ],
+            "tuesday": [ 5, 7, 11, 14 ],
+            "wednesday": [ 7, 9, 10, 13 ],
+            "thursday": [ 23, 24, 4, 27 ],
+            "friday": [ 26, 28, 20, 9 ],
+            "saturday": [ 28, 29, 21, 24 ],
+            "sunday": [ 31, 1, 23, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
