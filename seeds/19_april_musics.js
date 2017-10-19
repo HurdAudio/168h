@@ -1300,6 +1300,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 73,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2273704258/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://peira.bandcamp.com/album/pm21-bascule',
+          a_string: 'PM21 - Bascule by Tim Daisy, Jason Stein',
+          rule: {
+            "monday": [ 10, 18, 30, 5 ],
+            "tuesday": [ 14, 22, 4, 9 ],
+            "wednesday": [ 13, 21, 3, 8 ],
+            "thursday": [ 12, 18, 30, 5 ],
+            "saturday": [ 11, 19, 1, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 74,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1851477979/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://peira.bandcamp.com/album/pm20-sack-of-rice',
+          a_string: 'PM20 - Sack of Rice by Michael Thieke, Guillermo Gregorio, Jim Baker, Michael Zerang',
+          rule: {
+            "monday": [ 11, 19, 1, 6 ],
+            "tuesday": [ 10, 18, 30, 5 ],
+            "wednesday": [ 14, 22, 4, 9 ],
+            "thursday": [ 13, 21, 3, 8 ],
+            "saturday": [ 12, 18, 30, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 75,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2784287621/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://peira.bandcamp.com/album/pm19-three-babies',
+          a_string: 'PM19 - Three Babies by Steve Beresford, Martin Küchen, Ståle Liavik Solberg',
+          rule: {
+            "monday": [ 12, 18, 30, 5 ],
+            "tuesday": [ 11, 19, 1, 6 ],
+            "wednesday": [ 10, 18, 30, 5 ],
+            "thursday": [ 14, 22, 4, 9 ],
+            "saturday": [ 13, 21, 3, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
