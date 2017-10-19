@@ -2304,6 +2304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 116,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/harvesting-1915.jpg',
+          title: 'Harvesting',
+          artist: 'David Burliuk',
+          year: '1915',
+          rule: {
+            "monday": [ 7, 17, 27, 6 ],
+            "tuesday": [ 5, 15, 25, 4 ],
+            "wednesday": [ 17, 27, 6, 14 ],
+            "thursday": [ 15, 25, 4, 14 ],
+            "friday": [ 13, 23, 2, 12 ],
+            "saturday": [ 10, 21, 31, 20 ],
+            "sunday": [ 9, 19, 29, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 117,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/barbershop-1946.jpg',
+          title: 'Barbershop',
+          artist: 'David Burliuk',
+          year: '1946',
+          rule: {
+            "monday": [ 9, 19, 29, 8 ],
+            "tuesday": [ 7, 17, 27, 6 ],
+            "wednesday": [ 5, 15, 25, 4 ],
+            "thursday": [ 17, 27, 6, 14 ],
+            "friday": [ 15, 25, 4, 14 ],
+            "saturday": [ 13, 23, 2, 12 ],
+            "sunday": [ 10, 21, 31, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 118,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/a-milkmade.jpg',
+          title: 'A milkmade',
+          artist: 'David Burliuk',
+          year: '?',
+          rule: {
+            "monday": [ 10, 21, 31, 20 ],
+            "tuesday": [ 9, 19, 29, 8 ],
+            "wednesday": [ 7, 17, 27, 6 ],
+            "thursday": [ 5, 15, 25, 4 ],
+            "friday": [ 17, 27, 6, 14 ],
+            "saturday": [ 15, 25, 4, 14 ],
+            "sunday": [ 13, 23, 2, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 119,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/fishermen.jpg',
+          title: 'Fishermen',
+          artist: 'David Burliuk',
+          year: '?',
+          rule: {
+            "monday": [ 14, 24, 3, 13 ],
+            "tuesday": [ 11, 22, 1, 21 ],
+            "wednesday": [ 10, 20, 30, 9 ],
+            "thursday": [ 8, 18, 28, 7 ],
+            "friday": [ 6, 16, 26, 5 ],
+            "saturday": [ 18, 28, 7, 15 ],
+            "sunday": [ 16, 26, 5, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 120,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/ploughing-the-field(1).jpg',
+          title: 'Happily ploughing',
+          artist: 'David Burliuk',
+          year: '?',
+          rule: {
+            "monday": [ 16, 26, 5, 15 ],
+            "tuesday": [ 14, 24, 3, 13 ],
+            "wednesday": [ 11, 22, 1, 21 ],
+            "thursday": [ 10, 20, 30, 9 ],
+            "friday": [ 8, 18, 28, 7 ],
+            "saturday": [ 6, 16, 26, 5 ],
+            "sunday": [ 18, 28, 7, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
