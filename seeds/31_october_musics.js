@@ -652,6 +652,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 37,
+          user_id: 1,
+          theme: 'hardcore punk, metal and nurse with wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2006216280/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://pyrrhonband.bandcamp.com/album/what-passes-for-survival',
+          a_string: 'What Passes For Survival by Pyrrhon',
+          rule: {
+            "monday": [ 14, 24, 3, 6 ],
+            "tuesday": [ 13, 23, 2, 5 ],
+            "wednesday": [ 12, 22, 1, 4 ],
+            "thursday": [ 11, 21, 31, 3 ],
+            "saturday": [ 10, 20, 30, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 38,
+          user_id: 1,
+          theme: 'hardcore punk, metal and nurse with wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1182895266/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://profoundlorerecords.bandcamp.com/album/infrared-horizon',
+          a_string: 'Infrared Horizon by ARTIFICIAL BRAIN',
+          rule: {
+            "monday": [ 10, 20, 30, 2 ],
+            "tuesday": [ 14, 24, 3, 6 ],
+            "wednesday": [ 13, 23, 2, 5 ],
+            "thursday": [ 12, 22, 1, 4 ],
+            "saturday": [ 11, 21, 31, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 39,
+          user_id: 1,
+          theme: 'hardcore punk, metal and nurse with wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3897774988/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://deathspellomega.bandcamp.com/album/the-synarchy-of-molten-bones',
+          a_string: 'The Synarchy of Molten Bones by Deathspell Omega',
+          rule: {
+            "monday": [ 11, 21, 31, 3 ],
+            "tuesday": [ 10, 20, 30, 2 ],
+            "wednesday": [ 14, 24, 3, 6 ],
+            "thursday": [ 13, 23, 2, 5 ],
+            "saturday": [ 12, 22, 1, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
