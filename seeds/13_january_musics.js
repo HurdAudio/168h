@@ -1508,7 +1508,7 @@ exports.seed = function(knex, Promise) {
           href_string: 'http://bannedproduction.bandcamp.com/album/two-pieces-two-decades-apart',
           a_string: 'Two Pieces, Two Decades Apart by Gino Robair',
           rule: {
-            "monday": [ 19, 26, 27, 27 ],
+            "monday": [ 19, 26, 27, 28 ],
             "tuesday": [ 17, 21, 23, 27 ],
             "wednesday": [ 19, 26, 28, 27 ],
             "thursday": [ 27, 21, 23, 28 ],
@@ -1527,7 +1527,7 @@ exports.seed = function(knex, Promise) {
           a_string: 'Casa Vecchia by Paul Dresher',
           rule: {
             "monday": [ 23, 17, 19, 7 ],
-            "tuesday": [ 19, 26, 27, 27 ],
+            "tuesday": [ 19, 26, 27, 28 ],
             "wednesday": [ 17, 21, 23, 27 ],
             "thursday": [ 19, 26, 28, 27 ],
             "saturday": [ 27, 21, 23, 28 ]
@@ -1546,7 +1546,7 @@ exports.seed = function(knex, Promise) {
           rule: {
             "monday": [ 27, 21, 23, 28 ],
             "tuesday": [ 23, 17, 19, 7 ],
-            "wednesday": [ 19, 26, 27, 27 ],
+            "wednesday": [ 19, 26, 27, 28 ],
             "thursday": [ 17, 21, 23, 27 ],
             "saturday": [ 19, 26, 28, 27 ]
           },
@@ -1565,7 +1565,7 @@ exports.seed = function(knex, Promise) {
             "monday": [ 19, 26, 28, 27 ],
             "tuesday": [ 27, 21, 23, 28 ],
             "wednesday": [ 23, 17, 19, 7 ],
-            "thursday": [ 19, 26, 27, 27 ],
+            "thursday": [ 19, 26, 27, 28 ],
             "saturday": [ 17, 21, 23, 27 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
@@ -1584,7 +1584,7 @@ exports.seed = function(knex, Promise) {
             "tuesday": [ 19, 26, 28, 27 ],
             "wednesday": [ 27, 21, 23, 28 ],
             "thursday": [ 23, 17, 19, 7 ],
-            "saturday": [ 19, 26, 27, 27 ]
+            "saturday": [ 19, 26, 27, 28 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -1598,7 +1598,7 @@ exports.seed = function(knex, Promise) {
           href_string: 'http://alarmwillsound.bandcamp.com/album/canzonas-americanas',
           a_string: 'Canzonas Americanas by Alarm Will Sound',
           rule: {
-            "monday": [ 19, 26, 27, 27 ],
+            "monday": [ 19, 26, 27, 28 ],
             "tuesday": [ 17, 21, 23, 27 ],
             "wednesday": [ 19, 26, 28, 27 ],
             "thursday": [ 27, 21, 23, 28 ],
@@ -1617,10 +1617,64 @@ exports.seed = function(knex, Promise) {
           a_string: 'STEREO by Patrick Higgins',
           rule: {
             "monday": [ 23, 17, 19, 7 ],
-            "tuesday": [ 19, 26, 27, 27 ],
+            "tuesday": [ 19, 26, 27, 28 ],
             "wednesday": [ 17, 21, 23, 27 ],
             "thursday": [ 19, 26, 28, 27 ],
             "saturday": [ 27, 21, 23, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 91,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1142483214/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://infraction.bandcamp.com/album/echo-park',
+          a_string: 'Echo Park by Willamette',
+          rule: {
+            "monday": [ 28, 22, 24, 29 ],
+            "tuesday": [ 19, 26, 27, 28 ],
+            "wednesday": [ 20, 27, 28, 29 ],
+            "thursday": [ 18, 22, 24, 28 ],
+            "saturday": [ 20, 27, 29, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 92,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2027508874/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://scissortail.bandcamp.com/album/ozark-dream',
+          a_string: 'Ozark Dream by The New Honey Shade',
+          rule: {
+            "monday": [ 20, 27, 29, 28 ],
+            "tuesday": [ 28, 22, 24, 29 ],
+            "wednesday": [ 19, 26, 27, 28 ],
+            "thursday": [ 20, 27, 28, 29 ],
+            "saturday": [ 18, 22, 24, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 93,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2375111690/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://greggskloff.bandcamp.com/album/the-eye-is-the-egg',
+          a_string: 'The eye is the egg by Gregg Skloff',
+          rule: {
+            "monday": [ 18, 22, 24, 28 ],
+            "tuesday": [ 20, 27, 29, 28 ],
+            "wednesday": [ 28, 22, 24, 29 ],
+            "thursday": [ 19, 26, 27, 28 ],
+            "saturday": [ 20, 27, 28, 29 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
