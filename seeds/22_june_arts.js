@@ -2104,6 +2104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 106,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/voar-2001.jpg',
+          title: 'Voar',
+          artist: 'Helena Almeida',
+          year: '2001',
+          rule: {
+            "monday": [ 15, 25, 5, 13 ],
+            "tuesday": [ 14, 24, 4, 12 ],
+            "wednesday": [ 13, 23, 3, 11 ],
+            "thursday": [ 12, 22, 2, 10 ],
+            "friday": [ 11, 21, 1, 9 ],
+            "saturday": [ 10, 20, 30, 8 ],
+            "sunday": [ 16, 26, 6, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 107,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/bum-thumb-rock-ploumanach-brittany-1936.jpg',
+          title: 'Bum-Thumb Rock, Ploumanach, Brittany',
+          artist: 'Eileen Agar',
+          year: '1936',
+          rule: {
+            "monday": [ 16, 26, 6, 13 ],
+            "tuesday": [ 15, 25, 5, 13 ],
+            "wednesday": [ 14, 24, 4, 12 ],
+            "thursday": [ 13, 23, 3, 11 ],
+            "friday": [ 12, 22, 2, 10 ],
+            "saturday": [ 11, 21, 1, 9 ],
+            "sunday": [ 10, 20, 30, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 108,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/all-my-clothes-1970.jpg',
+          title: 'All my clothes',
+          artist: 'Bas Jan Ader',
+          year: '1970',
+          rule: {
+            "monday": [ 10, 20, 30, 8 ],
+            "tuesday": [ 16, 26, 6, 13 ],
+            "wednesday": [ 15, 25, 5, 13 ],
+            "thursday": [ 14, 24, 4, 12 ],
+            "friday": [ 13, 23, 3, 11 ],
+            "saturday": [ 12, 22, 2, 10 ],
+            "sunday": [ 11, 21, 1, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 109,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/mirror-lake-morning-yosemite-national-park.jpg',
+          title: 'Mirror Lake, Morning, Yosemite National Park',
+          artist: 'Ansel Adams',
+          year: '1928',
+          rule: {
+            "monday": [ 11, 21, 1, 9 ],
+            "tuesday": [ 10, 20, 30, 8 ],
+            "wednesday": [ 16, 26, 6, 13 ],
+            "thursday": [ 15, 25, 5, 13 ],
+            "friday": [ 14, 24, 4, 12 ],
+            "saturday": [ 13, 23, 3, 11 ],
+            "sunday": [ 12, 22, 2, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 110,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/theme-song-1973.jpg',
+          title: 'Theme Song',
+          artist: 'Vito Acconci',
+          year: '1973',
+          rule: {
+            "monday": [ 12, 22, 2, 10 ],
+            "tuesday": [ 11, 21, 1, 9 ],
+            "wednesday": [ 10, 20, 30, 8 ],
+            "thursday": [ 16, 26, 6, 13 ],
+            "friday": [ 15, 25, 5, 13 ],
+            "saturday": [ 14, 24, 4, 12 ],
+            "sunday": [ 13, 23, 3, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
