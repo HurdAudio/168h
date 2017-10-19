@@ -1084,6 +1084,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 61,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1359018864/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://darrenmcclure.bandcamp.com/album/nature-mirror',
+          a_string: 'Nature Mirror by Darren McClure',
+          rule: {
+            "monday": [ 8, 12, 18, 28 ],
+            "tuesday": [ 7, 11, 16, 28 ],
+            "wednesday": [ 7, 10, 16, 27 ],
+            "thursday": [ 5, 13, 15, 26 ],
+            "saturday": [ 9, 13, 19, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 62,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2286899085/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://davidnewlyn.bandcamp.com/album/transparencies',
+          a_string: 'Transparencies by David Newlyn',
+          rule: {
+            "monday": [ 9, 13, 19, 30 ],
+            "tuesday": [ 8, 12, 18, 28 ],
+            "wednesday": [ 7, 11, 16, 28 ],
+            "thursday": [ 7, 10, 16, 27 ],
+            "saturday": [ 5, 13, 15, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 63,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2361958115/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://antonymes.bandcamp.com/album/for-now-we-see-through-a-glass-dimly',
+          a_string: '(For Now We See) Through A Glass Dimly by Antonymes',
+          rule: {
+            "monday": [ 6, 14, 16, 27 ],
+            "tuesday": [ 10, 14, 20, 1 ],
+            "wednesday": [ 9, 13, 19, 29 ],
+            "thursday": [ 8, 12, 17, 29 ],
+            "saturday": [ 8, 11, 17, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
