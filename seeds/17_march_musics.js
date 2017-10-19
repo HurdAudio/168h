@@ -1408,6 +1408,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 79,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2510087450/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tiftmerritt.bandcamp.com/album/stitch-of-the-world-deluxe-edition',
+          a_string: 'Stitch of the World (Deluxe Edition) by Tift Merritt',
+          rule: {
+            "monday": [ 13, 19, 25, 2 ],
+            "tuesday": [ 12, 18, 24, 1 ],
+            "wednesday": [ 16, 22, 28, 5 ],
+            "thursday": [ 15, 21, 27, 4 ],
+            "saturday": [ 14, 20, 26, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 80,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=217442972/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://greyegg.bandcamp.com/album/albumen',
+          a_string: 'Albumen by Grey Egg',
+          rule: {
+            "monday": [ 14, 20, 26, 4 ],
+            "tuesday": [ 13, 19, 25, 2 ],
+            "wednesday": [ 12, 18, 24, 1 ],
+            "thursday": [ 16, 22, 28, 5 ],
+            "saturday": [ 15, 21, 27, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 81,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1633715698/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://greyegg.bandcamp.com/album/indoor-ski',
+          a_string: 'Indoor Ski by Grey Egg',
+          rule: {
+            "monday": [15, 21, 27, 4  ],
+            "tuesday": [ 14, 20, 26, 4 ],
+            "wednesday": [ 13, 19, 25, 2 ],
+            "thursday": [ 12, 18, 24, 1 ],
+            "saturday": [ 16, 22, 28, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
