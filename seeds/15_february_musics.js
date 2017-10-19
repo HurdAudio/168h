@@ -1516,6 +1516,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 85,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2070045191/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://aumfidelity.bandcamp.com/album/long-hidden-the-olmec-series',
+          a_string: 'Long Hidden: The Olmec Series by William Parker',
+          rule: {
+            "monday": [ 16, 20, 22, 26 ],
+            "tuesday": [ 18, 22, 24, 26 ],
+            "wednesday": [ 1, 24, 26, 3 ],
+            "thursday": [ 13, 18, 20, 3 ],
+            "saturday": [ 14, 18, 20, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 86,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1400041100/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://hot8brassband.bandcamp.com/album/rock-with-the-hot-8',
+          a_string: 'Rock With The Hot 8 by Hot 8 Brass Band',
+          rule: {
+            "monday": [ 14, 18, 20, 24 ],
+            "tuesday": [ 16, 20, 22, 26 ],
+            "wednesday": [ 18, 22, 24, 26 ],
+            "thursday": [ 1, 24, 26, 3 ],
+            "saturday": [ 13, 18, 20, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 87,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=591803237/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://oddiseemmg.bandcamp.com/album/the-good-fight',
+          a_string: 'The Good Fight by Oddisee',
+          rule: {
+            "monday": [ 13, 18, 20, 3 ],
+            "tuesday": [ 14, 18, 20, 24 ],
+            "wednesday": [ 16, 20, 22, 26 ],
+            "thursday": [ 18, 22, 24, 26 ],
+            "saturday": [ 1, 24, 26, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
