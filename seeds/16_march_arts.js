@@ -2704,6 +2704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 136,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/before-the-theatre.jpg',
+          title: 'Before the Theatre',
+          artist: 'Berthe Morisot',
+          year: 'c.1875',
+          rule: {
+            "monday": [ 13, 23, 1, 10 ],
+            "tuesday": [ 19, 28, 6, 15 ],
+            "wednesday": [ 18, 28, 7, 15 ],
+            "thursday": [ 17, 27, 4, 14 ],
+            "friday": [ 16, 26, 3, 13 ],
+            "saturday": [ 15, 25, 2, 12 ],
+            "sunday": [ 14, 24, 1, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 137,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/child-in-a-gerden-giverny-1909.jpg',
+          title: 'Child in a Gerden, Giverny',
+          artist: 'Lilla Cabot Perry',
+          year: '1909',
+          rule: {
+            "monday": [ 14, 24, 1, 11 ],
+            "tuesday": [ 13, 23, 1, 10 ],
+            "wednesday": [ 19, 28, 6, 15 ],
+            "thursday": [ 18, 28, 7, 15 ],
+            "friday": [ 17, 27, 4, 14 ],
+            "saturday": [ 16, 26, 3, 13 ],
+            "sunday": [ 15, 25, 2, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 138,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/display-image-15.jpg',
+          title: 'In the Flowers',
+          artist: 'Louise Abbéma',
+          year: '1892',
+          rule: {
+            "monday": [ 15, 25, 2, 12 ],
+            "tuesday": [ 14, 24, 1, 11 ],
+            "wednesday": [ 13, 23, 1, 10 ],
+            "thursday": [ 19, 28, 6, 15 ],
+            "friday": [ 18, 28, 7, 15 ],
+            "saturday": [ 17, 27, 4, 14 ],
+            "sunday": [ 16, 26, 3, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 139,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/anna-ancher-sunlight-in-the-blue-room-google-art-project.jpg',
+          title: 'Sunlight in the Blue Room',
+          artist: 'Anna Ancher',
+          year: '1891',
+          rule: {
+            "monday": [ 16, 26, 3, 13 ],
+            "tuesday": [ 15, 25, 2, 12 ],
+            "wednesday": [ 14, 24, 1, 11 ],
+            "thursday": [ 13, 23, 1, 10 ],
+            "friday": [ 19, 28, 6, 15 ],
+            "saturday": [ 18, 28, 7, 15 ],
+            "sunday": [ 17, 27, 4, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 140,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/the-swan-no-17-1915(1).jpg',
+          title: 'The Swan (No. 17)',
+          artist: 'Hilma af Klint',
+          year: '1914 - 1915',
+          rule: {
+            "monday": [ 18, 28, 5, 15 ],
+            "tuesday": [ 17, 27, 4, 14 ],
+            "wednesday": [ 16, 26, 3, 13 ],
+            "thursday": [ 15, 25, 2, 12 ],
+            "friday": [ 14, 24, 2, 11 ],
+            "saturday": [ 20, 29, 7, 16 ],
+            "sunday": [ 19, 29, 8, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
