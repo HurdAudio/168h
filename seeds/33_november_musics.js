@@ -544,6 +544,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 31,
+          user_id: 1,
+          theme: 'ethiopia and pan-african',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2967572183/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jahbarimiller.bandcamp.com/album/black-empire-state-of-mind',
+          a_string: 'Black Empire State of Mind by Jabari Miller',
+          rule: {
+            "monday": [ 4, 15, 26, 28 ],
+            "tuesday": [ 3, 14, 25, 27 ],
+            "wednesday": [ 2, 13, 24, 26 ],
+            "thursday": [ 1, 12, 23, 25 ],
+            "saturday": [ 5, 16, 27, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 32,
+          user_id: 1,
+          theme: 'ethiopia and pan-african',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3695819054/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://builtforslow.bandcamp.com/album/daegu-to-addis',
+          a_string: 'Daegu to Addis by Built For Slow',
+          rule: {
+            "monday": [ 5, 16, 27, 29 ],
+            "tuesday": [ 4, 15, 26, 28 ],
+            "wednesday": [ 3, 14, 25, 27 ],
+            "thursday": [ 2, 13, 24, 26 ],
+            "saturday": [ 1, 12, 23, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 33,
+          user_id: 1,
+          theme: 'ethiopia and pan-african',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1655954080/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://petitesplanetes.bandcamp.com/album/gamo-gamo-tribal-songs-from-the-south-now-ethiopia-series',
+          a_string: 'GAMO GAMO - tribal songs from the south (Now Ethiopia series) by Collection Petites Planètes',
+          rule: {
+            "monday": [ 1, 12, 23, 25 ],
+            "tuesday": [ 5, 16, 27, 29 ],
+            "wednesday": [ 4, 15, 26, 28 ],
+            "thursday": [ 3, 14, 25, 27 ],
+            "saturday": [ 2, 13, 24, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
