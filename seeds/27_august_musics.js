@@ -868,6 +868,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 49,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2674951238/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://hansonrecords.bandcamp.com/album/slicer',
+          a_string: 'Slicer by Wolf Eyes',
+          rule: {
+            "monday": [ 12, 20, 5, 4 ],
+            "tuesday": [ 16, 24, 6, 5 ],
+            "wednesday": [ 15, 23, 8, 9 ],
+            "thursday": [ 14, 22, 7, 8 ],
+            "saturday": [ 11, 19, 4, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 50,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1356612729/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://glisteningexamples.bandcamp.com/album/this-is-what-i-do-volume-one',
+          a_string: 'THIS IS WHAT I DO - VOLUME ONE by Jason Lescalleet',
+          rule: {
+            "monday": [ 11, 19, 4, 3 ],
+            "tuesday": [ 12, 20, 5, 4 ],
+            "wednesday": [ 16, 24, 6, 5 ],
+            "thursday": [ 15, 23, 8, 9 ],
+            "saturday": [ 14, 22, 7, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 51,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=774652819/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://hansonrecords.bandcamp.com/album/songs-about-jason',
+          a_string: 'Songs About Jason by Aaron Dilloway',
+          rule: {
+            "monday": [ 14, 22, 7, 8 ],
+            "tuesday": [ 11, 19, 4, 3 ],
+            "wednesday": [ 12, 20, 5, 4 ],
+            "thursday": [ 16, 24, 6, 5 ],
+            "saturday": [ 15, 23, 8, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
