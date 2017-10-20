@@ -8498,6 +8498,39 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 542,
+          user_id: 1,
+          name: 'Gerry Hemingway (drums), born 1955',
+          color: '#6F1F7E',
+          picture: './img/musicians/gerryhemingway.jpg',
+          day_of: new Date ('1955-03-23T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: true,
+          override_content: {
+            "sources": [ 'bandcamp', 'bandcamp', 'bandcamp' ],
+            "src_strings": [ 'https://bandcamp.com/EmbeddedPlayer/album=500599445/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=3011883875/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=3250405659/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/' ],
+            "href_strings": [ 'http://outnowrecordings.bandcamp.com/album/theres-nothing-better-to-do', 'http://intaktrec.bandcamp.com/album/table-of-changes', 'http://intaktrec.bandcamp.com/album/affinities' ],
+            "a_strings": [ 'There&#39;s Nothing Better To Do by Albert Beger and Gerry Hemingway', 'Table of Changes by Marilyn Crispell – Gerry Hemingway', 'Affinities by Marilyn Crispell and Gerry Hemingway' ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 543,
+          user_id: 1,
+          name: 'The rapture occured after a devestating earthquake on this day in 2011 according to the prolific doomsday seer Harold Camping.',
+          color: '#8A4E4D',
+          picture: './img/doomsday/wewasraptured.jpg',
+          day_of: new Date ('2011-05-21T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
