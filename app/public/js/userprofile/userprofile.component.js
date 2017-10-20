@@ -137,6 +137,90 @@
       vm.closeBillsManager = closeBillsManager;
       vm.editOccaision = editOccaision;
       vm.userOccasionsEditorDone = userOccasionsEditorDone;
+      vm.deleteHoliday = deleteHoliday;
+
+      function cleanOutFloatingHolidayRecords(holidayId) {
+        $http.delete(`/holidays/${holidayId}`)
+        .then(()=>{
+          populateHolidayManager();
+        });
+      }
+
+      function deleteUserFloatingUserHoliday(holidayName, userHolidayDeleteConfirmDiv, holidayManagementDiv) {
+        $http.get(`/holidaysbyuser/${currentUserId}`)
+        .then(userHolidayData=>{
+          let floatingHoliday = userHolidayData.data.filter(holiday=>{
+            return(holiday.name === holidayName);
+          });
+          for (let i = 0; i <floatingHoliday.length; i++) {
+            cleanOutFloatingHolidayRecords(floatingHoliday[i].id);
+          }
+          userHolidayDeleteConfirmDiv.setAttribute("style", "display: none;");
+          holidayManagementDiv.setAttribute("style", "display: initial;");
+
+        });
+      }
+
+      function deleteHoliday(holidayId) {
+        let userHolidayDeleteConfirmDiv = document.getElementById('userHolidayDeleteConfirmDiv');
+        let holidayManagementDiv = document.getElementById('holidayManagementDiv');
+        let userHolidayDeleteBar = document.getElementById('userHolidayDeleteBar');
+        let userHolidayDeleteConfirmForm = document.getElementById('userHolidayDeleteConfirmForm');
+        let userHolidayDeleteQuery = document.getElementById('userHolidayDeleteQuery');
+        let userHolidayDeleteImage = document.getElementById('userHolidayDeleteImage');
+        let userHolidayDeleteConfirmButtons = document.getElementById('userHolidayDeleteConfirmButtons');
+        let userHolidayConfirmYes = document.getElementById('userHolidayConfirmYes');
+        if (userHolidayConfirmYes) {
+          userHolidayConfirmYes.parentNode.removeChild(userHolidayConfirmYes);
+          userHolidayConfirmYes = document.createElement('a');
+          userHolidayDeleteConfirmButtons.appendChild(userHolidayConfirmYes);
+          userHolidayConfirmYes.id = 'userHolidayConfirmYes';
+          userHolidayConfirmYes.className = 'btn';
+          userHolidayConfirmYes.setAttribute("style", "cursor: pointer;");
+          userHolidayConfirmYes.innerHTML = 'yes';
+        }
+        let userHolidayConfirmNo = document.getElementById('userHolidayConfirmNo');
+        if (userHolidayConfirmNo) {
+          userHolidayConfirmNo.parentNode.removeChild(userHolidayConfirmNo);
+          userHolidayConfirmNo = document.createElement('a');
+          userHolidayDeleteConfirmButtons.appendChild(userHolidayConfirmNo);
+          userHolidayConfirmNo.id = 'userHolidayConfirmNo';
+          userHolidayConfirmNo.className = 'btn';
+          userHolidayConfirmNo.setAttribute("style", "cursor:pointer;");
+          userHolidayConfirmNo.innerHTML = 'no';
+        }
+
+
+        $http.get(`/holidays/${holidayId}`)
+        .then((userDeleteHolidayData=>{
+          let userDeleteHoliday = userDeleteHolidayData.data;
+          userHolidayDeleteImage.src = userDeleteHoliday.picture;
+          userHolidayDeleteBar.setAttribute("style", "background: " + userDeleteHoliday.color + "; background-color: -webkit-linear-gradient(-135deg, " + userDeleteHoliday.color + ", #ffffff); background: -o-linear-gradient(-135deg, " + userDeleteHoliday.color + ", #ffffff); background: -moz-linear-gradient(-135deg, " + userDeleteHoliday.color + ", #ffffff); background: linear-gradient(-135deg, " + userDeleteHoliday.color + ", #ffffff);");
+          userHolidayDeleteConfirmForm.setAttribute("style", "background: " + userDeleteHoliday.color + "; background-color: -webkit-linear-gradient(135deg, " + userDeleteHoliday.color + ", #ffffff); background: -o-linear-gradient(135deg, " + userDeleteHoliday.color + ", #ffffff); background: -moz-linear-gradient(135deg, " + userDeleteHoliday.color + ", #ffffff); background: linear-gradient(135deg, " + userDeleteHoliday.color + ", #ffffff);");
+          userHolidayDeleteQuery.innerHTML = "Delete " + userDeleteHoliday.name + "?";
+
+          userHolidayConfirmYes.addEventListener('click', ()=>{
+
+            if (userDeleteHoliday.is_annual) {
+              $http.delete(`/holidays/${holidayId}`)
+              .then(()=>{
+                userHolidayDeleteConfirmDiv.setAttribute("style", "display: none;");
+                holidayManagementDiv.setAttribute("style", "display: initial;");
+                populateHolidayManager();
+              });
+            } else {
+              deleteUserFloatingUserHoliday(userDeleteHoliday.name, userHolidayDeleteConfirmDiv, holidayManagementDiv);
+            }
+          });
+          userHolidayConfirmNo.addEventListener('click', ()=>{
+            userHolidayDeleteConfirmDiv.setAttribute("style", "display: none;");
+            holidayManagementDiv.setAttribute("style", "display: initial;");
+          });
+        }));
+
+        userHolidayDeleteConfirmDiv.setAttribute("style", "display: initial;");
+        holidayManagementDiv.setAttribute("style", "display: none;");
+      }
 
       function userOccasionsEditorDone() {
         let occasionsManagerDone = document.getElementById('occasionsManagerDone');

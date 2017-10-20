@@ -4166,6 +4166,60 @@ footer img {
   display: none;
 }
 
+#userHolidayDeleteConfirmDiv {
+  display: none;
+
+
+}
+
+#userHolidayDeleteBar {
+  font-family: 'Asul', serif;
+  font-size: 18px;
+  border-radius: 5px;
+  margin: 0;
+  padding:0 0 0 3vmin;
+  height: 3.3em;
+  top: 0%;
+  opacity: 1;
+  background: #22bc44;
+  background-color: -webkit-linear-gradient(-135deg, #22dc44, #ffffff);
+  background: -o-linear-gradient(-135deg, #22dc44, #ffffff);
+  background: -moz-linear-gradient(-135deg, #22dc44, #ffffff);
+  background: linear-gradient(-135deg, #22dc44, #ffffff);
+}
+
+#userHolidayDeleteConfirmForm {
+  font-family: 'Alike Angular', serif;
+  font-size: 24px;
+  margin: 0 0 0 0;
+  background: #22bc44;
+  background-color: -webkit-linear-gradient(135deg, #22dc44, #ffffff);
+  background: -o-linear-gradient(135deg, #22dc44, #ffffff);
+  background: -moz-linear-gradient(135deg, #22dc44, #ffffff);
+  background: linear-gradient(135deg, #22dc44, #ffffff);
+  border-radius: 5px;
+  opacity: 1;
+  height: 67vmin;
+}
+
+#userHolidayDeleteConfirmForm p {
+  margin-left: 4em;
+  padding: 1vmin 0 1vmin 0;
+  font-weight: bold;
+  text-shadow: -1px 1px 1px #ffffff;
+  margin-bottom: 0;
+}
+
+#userHolidayDeleteConfirmForm a {
+  float: left;
+  margin-left: 3.1em;
+}
+
+#userHolidayDeleteConfirmForm img {
+  width: 90%;
+  margin: 0.5em 0em 0 1em;
+}
+
 /*.day {
   background-image: url(../img/january_tiles/ice-melting6a.jpg);
   background-repeat: no-repeat;
