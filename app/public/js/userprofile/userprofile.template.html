@@ -479,6 +479,27 @@
         </fieldset>
       </form>
     </div>
+    <div id="userOccasionsEditingDiv">
+      <div id="userOccasionsEditorBar">
+        <a href="" class="btn" id="userOccasionsEditorDoneButton" ng-click="$ctrl.userOccasionsEditorDone()">done</a>
+        <h1 id="occasionEditorTitle">Occasion</h1>
+      </div>
+      <form id="userOccasionsEditorForm" class="pure-form pure-form-stacked">
+        <p>Occasion name:</p>
+        <div id="userOccasionNameDiv">
+          <input type="text" id="userOccasionsEditName" class="pure-input-1">
+        </div>
+        <p>Day of: </p>
+        <div id="userOccasionDateDiv">
+          <input type="date" id="userOccasionsDate" class="pure-input-1">
+        </div>
+        <p>Occurs Annually:</p>
+        <div id="userOccasionAnnualCheckboxDiv">
+          <input type="checkbox" id="userOccasionsAnnualState">
+        </div>
+      </form>
+
+    </div>
   </div>
 
 </div>

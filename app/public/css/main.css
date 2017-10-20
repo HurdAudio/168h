@@ -3017,6 +3017,34 @@ footer img {
   margin-top: 0.2em;
 }
 
+#userOccasionsEditorBar {
+  font-family: 'Asul', serif;
+  font-size: 18px
+  background: #16171B;
+  background-color: -webkit-linear-gradient(-135deg, #16171B, #A3A3AD);
+  background: -o-linear-gradient(-135deg, #16171B, #A3A3AD);
+  background: -moz-linear-gradient(-135deg, #16171B, #A3A3AD);
+  background: linear-gradient(-135deg, #16171B, #A3A3AD);
+  border-radius: 5px;
+  margin: 0;
+  padding:0;
+  height: 3.8em;
+  top: 0%;
+  opacity: 1;
+}
+
+#userOccasionsEditorBar h1 {
+  margin-left: 2em;
+  padding-top: 0.4em;
+}
+
+
+#userOccasionsEditorBar a {
+  float:right;
+  margin-right: 1.1em;
+  margin-top: 0.2em;
+}
+
 #userHolidayImageEditorField img {
   margin-left: 4em;
   width: 36vmin;
@@ -3232,6 +3260,51 @@ footer img {
 
 
 #userHolidayEditorForm button {
+  margin-left: 2em;
+}
+
+#userOccasionsEditorForm {
+  font-family: 'Alike Angular', serif;
+  font-size: 24px;
+  background: #16171B;
+  background-color: -webkit-linear-gradient(135deg, #16171B, #A3A3AD);
+  background: -o-linear-gradient(135deg, #16171B, #A3A3AD);
+  background: -moz-linear-gradient(135deg, #16171B, #A3A3AD);
+  background: linear-gradient(135deg, #16171B, #A3A3AD);
+  border-radius: 5px;
+  opacity: 1;
+  margin-top: 0;
+  padding-bottom: 4vmin;
+  padding-top: 4vmin;
+}
+
+#userOccasionsEditorForm p {
+  margin-left: 2em;
+}
+
+#userOccasionsEditorForm input[type=text] {
+  margin-left: 3em;
+  margin-right: 0;
+  width: 70%;
+}
+
+#userOccasionsEditorForm input[type=date] {
+  margin-left: 3em;
+  margin-right: 0;
+  width: 70%;
+}
+
+#userOccasionsEditorForm input[type=checkbox] {
+  margin-left: 11em;
+  -ms-transform: scale(3); /* IE */
+  -moz-transform: scale(3); /* FF */
+  -webkit-transform: scale(3); /* Safari and Chrome */
+  -o-transform: scale(3); /* Opera */
+  margin-bottom: 0.5em;
+}
+
+
+#userOccasionsEditorForm button {
   margin-left: 2em;
 }
 
@@ -4086,6 +4159,10 @@ footer img {
 }
 
 #billsManagementDiv {
+  display: none;
+}
+
+#userOccasionsEditingDiv {
   display: none;
 }
 

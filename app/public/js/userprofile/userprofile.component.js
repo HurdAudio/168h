@@ -135,6 +135,96 @@
       vm.userHolidayEditorDone = userHolidayEditorDone;
       vm.billsManager = billsManager;
       vm.closeBillsManager = closeBillsManager;
+      vm.editOccaision = editOccaision;
+      vm.userOccasionsEditorDone = userOccasionsEditorDone;
+
+      function userOccasionsEditorDone() {
+        let occasionsManagerDone = document.getElementById('occasionsManagerDone');
+        let userOccasionsEditingDiv = document.getElementById('userOccasionsEditingDiv');
+
+        occasionsManagerDone.setAttribute("style", "visibility: visible;");
+        userOccasionsEditingDiv.setAttribute("style", "display: none;");
+        populateOccasionManager();
+      }
+
+      function editOccaision(occasionId) {
+        let occasionsManagerDone = document.getElementById('occasionsManagerDone');
+        let userOccasionsEditingDiv = document.getElementById('userOccasionsEditingDiv');
+        let userOccasionNameDiv = document.getElementById('userOccasionNameDiv');
+        let userOccasionsEditName = document.getElementById('userOccasionsEditName');
+        if (userOccasionsEditName) {
+          userOccasionsEditName.parentNode.removeChild(userOccasionsEditName);
+          userOccasionsEditName = document.createElement('input');
+          userOccasionNameDiv.appendChild(userOccasionsEditName);
+          userOccasionsEditName.id = 'userOccasionsEditName';
+          userOccasionsEditName.type = 'text';
+          userOccasionsEditName.className = 'pure-input-1';
+        }
+        let userOccasionDateDiv = document.getElementById('userOccasionDateDiv');
+        let userOccasionsDate = document.getElementById('userOccasionsDate');
+        if (userOccasionsDate) {
+          userOccasionsDate.parentNode.removeChild(userOccasionsDate);
+          userOccasionsDate = document.createElement('input');
+          userOccasionDateDiv.appendChild(userOccasionsDate);
+          userOccasionsDate.id = 'userOccasionsDate';
+          userOccasionsDate.className = 'pure-input-1';
+          userOccasionsDate.type = 'date';
+        }
+        let userOccasionAnnualCheckboxDiv = document.getElementById('userOccasionAnnualCheckboxDiv');
+        let userOccasionsAnnualState = document.getElementById('userOccasionsAnnualState');
+        if (userOccasionsAnnualState) {
+          userOccasionsAnnualState.parentNode.removeChild(userOccasionsAnnualState);
+          userOccasionsAnnualState = document.createElement('input');
+          userOccasionAnnualCheckboxDiv.appendChild(userOccasionsAnnualState);
+          userOccasionsAnnualState.id = userOccasionsAnnualState;
+          userOccasionsAnnualState.type = 'checkbox';
+        }
+
+        $http.get(`/occasions/${occasionId}`)
+        .then(occasionData=>{
+          let occasion = occasionData.data;
+          userOccasionsEditName.value = occasion.name;
+          userOccasionsDate.value = occasion.day_of.slice(0,10);
+          if (occasion.is_annual) {
+            userOccasionsAnnualState.checked = true;
+          } else {
+            userOccasionsAnnualState.checked = false;
+          }
+
+          userOccasionsEditName.addEventListener('focusout', ()=>{
+            let subObj = {
+              name: userOccasionsEditName.value
+            };
+            if ((userOccasionsEditName.value !== '') && (userOccasionsEditName.value !== occasion.name)) {
+              $http.patch(`/occasions/${occasionId}`, subObj)
+              .then(()=>{
+                occasion.name = subObj.name;
+              });
+            }
+          });
+          userOccasionsDate.addEventListener('change', ()=>{
+            let subObj = {
+              day_of: new Date(userOccasionsDate.value)
+            };
+            $http.patch(`/occasions/${occasionId}`, subObj)
+            .then(()=>{
+              occasion.day_of = new Date(subObj.day_of);
+            });
+          });
+          userOccasionsAnnualState.addEventListener('click', ()=>{
+            let subObj = {
+              is_annual: userOccasionsAnnualState.checked
+            };
+            $http.patch(`/occasions/${occasionId}`, subObj)
+            .then(()=>{
+              occasion.is_annual = userOccasionsAnnualState.checked;
+            });
+          });
+        });
+
+        userOccasionsEditingDiv.setAttribute("style", "display: initial;");
+        occasionsManagerDone.setAttribute("style", "visibility: hidden;");
+      }
 
       function closeBillsManager() {
         let billsManagerButton = document.getElementById('billsManagerButton');
