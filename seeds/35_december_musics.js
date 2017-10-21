@@ -490,6 +490,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 28,
+          user_id: 1,
+          theme: 'brazil and pan-south american',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3665504977/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ayarecords.bandcamp.com/album/el-viejo-hombre-de-los-andes',
+          a_string: 'El Viejo Hombre de los Andes by EVHA',
+          rule: {
+            "monday": [ 7, 13, 19, 25 ],
+            "tuesday": [ 11, 17, 23, 29 ],
+            "wednesday": [ 10, 16, 22, 28 ],
+            "thursday": [ 9, 15, 21, 27 ],
+            "saturday": [ 7, 14, 20, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 29,
+          user_id: 1,
+          theme: 'brazil and pan-south american',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=324600694/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://frentebolivarista.bandcamp.com/album/el-b-ho-cumbias-de-oro',
+          a_string: 'El Búho - Cumbias de Oro by Frente Edits III',
+          rule: {
+            "monday": [ 7, 14, 20, 26 ],
+            "tuesday": [ 7, 13, 19, 25 ],
+            "wednesday": [ 11, 17, 23, 29 ],
+            "thursday": [ 10, 16, 22, 28 ],
+            "saturday": [ 9, 15, 21, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 30,
+          user_id: 1,
+          theme: 'brazil and pan-south american',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1918340155/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ayarecords.bandcamp.com/album/marimba-del-pacifico',
+          a_string: 'Marimba Del Pacifico by Rio Mira',
+          rule: {
+            "monday": [ 9, 15, 21, 27 ],
+            "tuesday": [ 7, 14, 20, 26 ],
+            "wednesday": [ 7, 13, 19, 25 ],
+            "thursday": [ 11, 17, 23, 29 ],
+            "saturday": [ 10, 16, 22, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
