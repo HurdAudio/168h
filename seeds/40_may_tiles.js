@@ -60,6 +60,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#8BD95F',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 5,
+          user_id: 1,
+          theme: 'greenery',
+          type: 'saturday',
+          src_string: '../img/may_tiles/39974347-green-grass-texture-you-can-use-for-your-projects.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '155%',
+          color_dark: '#132C0A',
+          color_medium: '#65843F',
+          color_light: '#DFF4B4',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
