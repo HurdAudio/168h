@@ -922,6 +922,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 52,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2639669908/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://arrington.bandcamp.com/album/songs-of-psychic-fire-vol-i',
+          a_string: 'Songs of Psychic Fire vol. I by Arrington de Dionyso and Thollem McDonas',
+          rule: {
+            "monday": [ 15, 23, 8, 9 ],
+            "tuesday": [ 14, 22, 7, 8 ],
+            "wednesday": [ 11, 19, 4, 3 ],
+            "thursday": [ 12, 20, 5, 4 ],
+            "saturday": [ 16, 24, 6, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 53,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3551969832/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tourdebras.bandcamp.com/album/chants-et-danses-vol-iii-with-strings',
+          a_string: 'Chants et danses (Vol. III) ...with strings by René Lussier, Robert Marcel Lepage...et Quatuor Bozzini',
+          rule: {
+            "monday": [ 16, 24, 6, 5 ],
+            "tuesday": [ 15, 23, 8, 9 ],
+            "wednesday": [ 14, 22, 7, 8 ],
+            "thursday": [ 11, 19, 4, 3 ],
+            "saturday": [ 12, 20, 5, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 54,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3836116562/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tourdebras.bandcamp.com/album/malcolm-goldstein-thomas-lehn-web',
+          a_string: 'Malcolm Goldstein  / Thomas Lehn (web) by Tour de Bras (records)',
+          rule: {
+            "monday": [ 12, 20, 5, 4 ],
+            "tuesday": [ 16, 24, 6, 5 ],
+            "wednesday": [ 15, 23, 8, 9 ],
+            "thursday": [ 14, 22, 7, 8 ],
+            "saturday": [ 11, 19, 4, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
