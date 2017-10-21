@@ -1204,6 +1204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 61,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/egg-on-plate-with-knife-fork-and-spoon-1964.jpg',
+          title: 'Egg on Plate with Knife, Fork, and Spoon',
+          artist: 'Alex Hay',
+          year: '1964',
+          rule: {
+            "monday": [ 12, 17, 23, 28 ],
+            "tuesday": [ 11, 16, 22, 27 ],
+            "wednesday": [ 10, 15, 21, 28 ],
+            "thursday": [ 16, 21, 27, 2 ],
+            "friday": [ 15, 20, 26, 1 ],
+            "saturday": [ 14, 19, 25, 30 ],
+            "sunday": [ 13, 18, 24, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 62,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/sex-symbol-1961.jpg',
+          title: 'Sex Symbol',
+          artist: 'Jo Baer',
+          year: '1961',
+          rule: {
+            "monday": [ 13, 18, 24, 29 ],
+            "tuesday": [ 12, 17, 23, 28 ],
+            "wednesday": [ 11, 16, 22, 27 ],
+            "thursday": [ 10, 15, 21, 28 ],
+            "friday": [ 16, 21, 27, 2 ],
+            "saturday": [ 15, 20, 26, 1 ],
+            "sunday": [ 14, 19, 25, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 63,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/bet-you.jpg',
+          title: 'Bet You',
+          artist: 'Lyman Kipp',
+          year: '?',
+          rule: {
+            "monday": [ 15, 20, 26, 1 ],
+            "tuesday": [ 14, 19, 25, 30 ],
+            "wednesday": [ 13, 17, 24, 29 ],
+            "thursday": [ 12, 17, 23, 28 ],
+            "friday": [ 11, 16, 22, 29 ],
+            "saturday": [ 17, 22, 28, 3 ],
+            "sunday": [ 16, 21, 27, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 64,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/light-orange-with-light-green-august-1989-1989.jpg',
+          title: 'Light Orange with Light Green, August 1989',
+          artist: 'Peter Joseph',
+          year: '1989',
+          rule: {
+            "monday": [ 16, 21, 27, 2 ],
+            "tuesday": [ 15, 20, 26, 1 ],
+            "wednesday": [ 14, 19, 25, 30 ],
+            "thursday": [ 13, 17, 24, 29 ],
+            "friday": [ 12, 17, 23, 28 ],
+            "saturday": [ 11, 16, 22, 29 ],
+            "sunday": [ 17, 22, 28, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 65,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/viridian-1974.jpg',
+          title: 'Viridian',
+          artist: 'Marcia Hafif',
+          year: '1974',
+          rule: {
+            "monday": [ 17, 22, 28, 3 ],
+            "tuesday": [ 16, 21, 27, 2 ],
+            "wednesday": [ 15, 20, 26, 1 ],
+            "thursday": [ 14, 19, 25, 30 ],
+            "friday": [ 13, 17, 24, 29 ],
+            "saturday": [ 12, 17, 23, 28 ],
+            "sunday": [ 11, 16, 22, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
