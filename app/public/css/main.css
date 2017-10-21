@@ -4220,8 +4220,8 @@ footer img {
   margin: 0.5em 0em 0 1em;
 }
 
-/*.day {
-  background-image: url(../img/january_tiles/ice-melting6a.jpg);
+.day {
+  background-image: url(../img/september_tiles/leatherDefault.jpg);
   background-repeat: no-repeat;
-  background-size: 140%;
-}*/
+  background-size: 165%;
+}
