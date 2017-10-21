@@ -1804,6 +1804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 91,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/the-sleeping-gypsy-1897.jpg',
+          title: 'The Sleeping Gypsy',
+          artist: 'Henri Rousseau',
+          year: '1897',
+          rule: {
+            "monday": [ 15, 19, 27, 12 ],
+            "tuesday": [ 14, 18, 26, 11 ],
+            "wednesday": [ 13, 17, 25, 10 ],
+            "thursday": [ 12, 15, 24, 9 ],
+            "friday": [ 11, 15, 23, 8 ],
+            "saturday": [ 17, 21, 29, 14 ],
+            "sunday": [ 16, 19, 28, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 92,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/fire-swept-algoma-1920.jpg',
+          title: 'Fire Swept Algoma',
+          artist: 'Frank Johnston',
+          year: '1920',
+          rule: {
+            "monday": [ 16, 19, 28, 13 ],
+            "tuesday": [ 15, 19, 27, 12 ],
+            "wednesday": [ 14, 18, 26, 11 ],
+            "thursday": [ 13, 17, 25, 10 ],
+            "friday": [ 12, 15, 24, 9 ],
+            "saturday": [ 11, 15, 23, 8 ],
+            "sunday": [ 17, 21, 29, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 93,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/castle-and-sun-1928.jpg',
+          title: 'Castle and Sun',
+          artist: 'Paul Klee',
+          year: '1928',
+          rule: {
+            "monday": [ 17, 21, 29, 14 ],
+            "tuesday": [ 16, 19, 28, 13 ],
+            "wednesday": [ 15, 19, 27, 12 ],
+            "thursday": [ 14, 18, 26, 11 ],
+            "friday": [ 13, 17, 25, 10 ],
+            "saturday": [ 12, 15, 24, 9 ],
+            "sunday": [ 11, 15, 23, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 94,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/the-dancer-1938.jpg',
+          title: 'he Dancer',
+          artist: 'Greta Freist',
+          year: '1938',
+          rule: {
+            "monday": [ 11, 15, 23, 8 ],
+            "tuesday": [ 17, 21, 29, 14 ],
+            "wednesday": [ 16, 19, 28, 13 ],
+            "thursday": [ 15, 19, 27, 12 ],
+            "friday": [ 14, 18, 26, 11 ],
+            "saturday": [ 13, 17, 25, 10 ],
+            "sunday": [ 12, 15, 24, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 95,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/la-rentr-e-1927.jpg',
+          title: 'La rentrée',
+          artist: 'Anita Malfatti',
+          year: '1927',
+          rule: {
+            "monday": [ 12, 15, 24, 9 ],
+            "tuesday": [ 11, 15, 23, 8 ],
+            "wednesday": [ 17, 21, 29, 14 ],
+            "thursday": [ 16, 19, 28, 13 ],
+            "friday": [ 15, 19, 27, 12 ],
+            "saturday": [ 14, 18, 26, 11 ],
+            "sunday": [ 13, 17, 25, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
