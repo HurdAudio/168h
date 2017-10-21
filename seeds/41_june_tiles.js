@@ -46,6 +46,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#F6EAD2',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 4,
+          user_id: 1,
+          theme: 'light',
+          type: 'friday',
+          src_string: '../img/june_tiles/LGTFX.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '110%',
+          color_dark: '#0B0B0D',
+          color_medium: '#10A650',
+          color_light: '#FDEC7C',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
