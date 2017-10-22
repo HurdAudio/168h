@@ -2804,6 +2804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 141,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/frontispiece-the-tailor-mouse.jpg',
+          title: 'Frontispiece. The Tailor Mouse',
+          artist: 'Beatrix Potter',
+          year: '1902',
+          rule: {
+            "monday": [ 19, 29, 8, 16 ],
+            "tuesday": [ 18, 28, 5, 15 ],
+            "wednesday": [ 17, 27, 4, 14 ],
+            "thursday": [ 16, 26, 3, 13 ],
+            "friday": [ 15, 25, 2, 12 ],
+            "saturday": [ 14, 24, 2, 11 ],
+            "sunday": [ 20, 29, 7, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 142,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/petersburg-the-summer-garden-in-winter-1902.jpg',
+          title: 'Petersburg. The Summer Garden in winter.',
+          artist: 'Anna Ostroumova-Lebedeva',
+          year: '1902',
+          rule: {
+            "monday": [ 20, 29, 7, 16 ],
+            "tuesday": [ 19, 29, 8, 16 ],
+            "wednesday": [ 18, 28, 5, 15 ],
+            "thursday": [ 17, 27, 4, 14 ],
+            "friday": [ 16, 26, 3, 13 ],
+            "saturday": [ 15, 25, 2, 12 ],
+            "sunday": [ 14, 24, 2, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 143,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/children-and-nurses-1910.jpg',
+          title: 'Children and Nurses',
+          artist: 'Ethel Carrick',
+          year: '1910',
+          rule: {
+            "monday": [ 14, 24, 2, 11 ],
+            "tuesday": [ 20, 29, 7, 16 ],
+            "wednesday": [ 19, 29, 8, 16 ],
+            "thursday": [ 18, 28, 5, 15 ],
+            "friday": [ 17, 27, 4, 14 ],
+            "saturday": [ 16, 26, 3, 13 ],
+            "sunday": [ 15, 25, 2, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 144,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/yang-gui-fei-1922.jpg',
+          title: 'Yang gui fei',
+          artist: 'Uemura Shoen',
+          year: '1922',
+          rule: {
+            "monday": [ 15, 25, 2, 12 ],
+            "tuesday": [ 14, 24, 2, 11 ],
+            "wednesday": [ 20, 29, 7, 16 ],
+            "thursday": [ 19, 29, 8, 16 ],
+            "friday": [ 18, 28, 5, 15 ],
+            "saturday": [ 17, 27, 4, 14 ],
+            "sunday": [ 16, 26, 3, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 145,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/little-girl-wearing-large-hat.jpg',
+          title: 'Little girl wearing large hat',
+          artist: 'Gwen John',
+          year: '?',
+          rule: {
+            "monday": [ 16, 26, 3, 13 ],
+            "tuesday": [ 15, 25, 2, 12 ],
+            "wednesday": [ 14, 24, 2, 11 ],
+            "thursday": [ 20, 29, 7, 16 ],
+            "friday": [ 19, 29, 8, 16 ],
+            "saturday": [ 18, 28, 5, 15 ],
+            "sunday": [ 17, 27, 4, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
