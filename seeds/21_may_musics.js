@@ -1246,6 +1246,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 70,
+          user_id: 1,
+          theme: 'avant garde/new music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=140233520/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://stefanwesolowski.bandcamp.com/album/rite-of-the-end',
+          a_string: 'Rite Of The End by Stefan Wesołowski',
+          rule: {
+            "monday": [ 13, 19, 26, 8 ],
+            "tuesday": [ 12, 18, 25, 7 ],
+            "wednesday": [ 11, 17, 24, 6 ],
+            "thursday": [ 15, 21, 28, 10 ],
+            "saturday": [ 14, 20, 27, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 71,
+          user_id: 1,
+          theme: 'avant garde/new music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2529425976/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://alexmincek.bandcamp.com/album/torrent',
+          a_string: 'Torrent by Alex Mincek',
+          rule: {
+            "monday": [ 14, 20, 27, 9 ],
+            "tuesday": [ 13, 19, 26, 8 ],
+            "wednesday": [ 12, 18, 25, 7 ],
+            "thursday": [ 11, 17, 24, 6 ],
+            "saturday": [ 15, 21, 28, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 72,
+          user_id: 1,
+          theme: 'avant garde/new music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=681093799/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://newfocusrecordings.bandcamp.com/album/cartography',
+          a_string: 'Cartography by Mariel Roberts',
+          rule: {
+            "monday": [ 15, 21, 28, 10 ],
+            "tuesday": [ 14, 20, 27, 9 ],
+            "wednesday": [ 13, 19, 26, 8 ],
+            "thursday": [ 12, 18, 25, 7 ],
+            "saturday": [ 11, 17, 24, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
