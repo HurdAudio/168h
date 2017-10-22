@@ -1570,6 +1570,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 88,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=996132433/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://rodneyp.bandcamp.com/album/gangster-chronicles-the-definitive-collection',
+          a_string: 'Gangster Chronicles: The Definitive Collection by London Posse',
+          rule: {
+            "monday": [ 1, 24, 26, 3 ],
+            "tuesday": [ 13, 18, 20, 3 ],
+            "wednesday": [ 14, 18, 20, 24 ],
+            "thursday": [ 16, 20, 22, 26 ],
+            "saturday": [ 18, 22, 24, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 89,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3126264147/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://mcmello.bandcamp.com/album/thoughts-released',
+          a_string: 'Thoughts Released by M.C. Mell&#39;o',
+          rule: {
+            "monday": [ 18, 22, 24, 26 ],
+            "tuesday": [ 1, 24, 26, 3 ],
+            "wednesday": [ 13, 18, 20, 3 ],
+            "thursday": [ 14, 18, 20, 24 ],
+            "saturday": [ 16, 20, 22, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 90,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=818947843/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://odweeyne.bandcamp.com/album/kicks-in-the-crates-vol-1-1990-1991-supa-phat-side',
+          a_string: 'Kicks in the Crates Vol.1 - 1990/1991 - SUPA &amp; PHAT Side by Odweeyne of So Cracked Lab',
+          rule: {
+            "monday": [ 16, 20, 22, 26 ],
+            "tuesday": [ 18, 22, 24, 26 ],
+            "wednesday": [ 1, 24, 26, 3 ],
+            "thursday": [ 13, 18, 20, 3 ],
+            "saturday": [ 14, 18, 20, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
