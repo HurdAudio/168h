@@ -1924,6 +1924,9 @@
           case(9):
             monthTable = 'october_artsbyuser';
             break;
+          case(10):
+            monthTable = 'november_artsbyuser';
+            break;
           default:
             console.log('month art not yet supported');
         }
