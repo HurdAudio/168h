@@ -1678,6 +1678,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 94,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1835738773/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://xirecords.bandcamp.com/album/unforeseen-events',
+          a_string: 'Unforeseen Events by David Behrman',
+          rule: {
+            "monday": [ 20, 27, 28, 29 ],
+            "tuesday": [ 18, 22, 24, 28 ],
+            "wednesday": [ 20, 27, 29, 28 ],
+            "thursday": [ 28, 22, 24, 29 ],
+            "saturday": [ 19, 26, 27, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 95,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4102516921/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://xirecords.bandcamp.com/album/fingering-an-idea',
+          a_string: 'Fingering An Idea by David Watson',
+          rule: {
+            "monday": [ 19, 26, 27, 28 ],
+            "tuesday": [ 20, 27, 28, 29 ],
+            "wednesday": [ 18, 22, 24, 28 ],
+            "thursday": [ 20, 27, 29, 28 ],
+            "saturday": [ 28, 22, 24, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 96,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3087503069/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://xirecords.bandcamp.com/album/logos-works',
+          a_string: 'Logos Works by Logos Duo (Moniek Darge / Godfried-Willem Raes )',
+          rule: {
+            "monday": [ 28, 22, 24, 29 ],
+            "tuesday": [ 19, 26, 27, 28 ],
+            "wednesday": [ 20, 27, 28, 29 ],
+            "thursday": [ 18, 22, 24, 28 ],
+            "saturday": [ 20, 27, 29, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
