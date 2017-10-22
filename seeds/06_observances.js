@@ -8531,6 +8531,39 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 544,
+          user_id: 1,
+          name: 'Mark Helias (bass), born 1950',
+          color: '#285858',
+          picture: './img/musicians/markhelias.jpg',
+          day_of: new Date ('1950-10-01T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: true,
+          override_content: {
+            "sources": [ 'bandcamp' ],
+            "src_strings": [ 'https://bandcamp.com/EmbeddedPlayer/album=2114334385/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/' ],
+            "href_strings": [ 'http://intaktrec.bandcamp.com/album/the-signal-maker' ],
+            "a_strings": [ 'The Signal Maker by Mark Helias Open Loose' ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 545,
+          user_id: 1,
+          name: 'The world ended on this day in 2007 according to professional worthless human Pat Robertson',
+          color: '#4EA0CC',
+          picture: './img/doomsday/patrobertsonuseless.jpg',
+          day_of: new Date ('2007-04-29T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {

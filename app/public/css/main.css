@@ -4016,6 +4016,33 @@ footer img {
   margin-top: 0.2em;
 }
 
+#tasksManagerBar {
+  font-family: 'Asul', serif;
+  font-size: 18px
+  background: #7A6747;
+  background-color: -webkit-linear-gradient(-135deg, #7A6747, #F3F1F4);
+  background: -o-linear-gradient(-135deg, #7A6747, #F3F1F4);
+  background: -moz-linear-gradient(-135deg, #7A6747, #F3F1F4);
+  background: linear-gradient(-135deg, #7A6747, #F3F1F4);
+  border-radius: 5px;
+  margin: 0;
+  padding:0;
+  height: 3.8em;
+  top: 0%;
+  opacity: 1;
+}
+
+#tasksManagerBar h1 {
+  margin-left: 2em;
+  padding-top: 0.4em;
+}
+
+#tasksManagerBar a {
+  float:right;
+  margin-right: 1.1em;
+  margin-top: 0.2em;
+}
+
 #holidayManagerForm {
   font-family: 'Alike Angular', serif;
   font-size: 24px;
@@ -4108,6 +4135,45 @@ footer img {
 }
 
 #billsManagerForm a {
+  float: left;
+  margin-left: 1.5em;
+}
+
+#tasksManagerForm {
+  font-family: 'Alike Angular', serif;
+  font-size: 24px;
+  background: #7A6747;
+  background-color: -webkit-linear-gradient(135deg, #7A6747, #F3F1F4);
+  background: -o-linear-gradient(135deg, #7A6747, #F3F1F4);
+  background: -moz-linear-gradient(135deg, #7A6747, #F3F1F4);
+  background: linear-gradient(135deg, #7A6747, #F3F1F4);
+  border-radius: 5px;
+  opacity: 1;
+}
+
+#tasksManagerForm h2 {
+  font-size: 36px;
+  font-weight: bold;
+  text-shadow: -1px 1px 1px #ffffff;
+  margin-bottom: 0;
+}
+
+#tasksManagerForm p {
+  margin-left: 2em;
+  font-weight: bold;
+  text-shadow: -1px 1px 1px #ffffff;
+  margin-bottom: 0;
+}
+
+#tasksManagerForm img {
+  height: 10em;
+  width: 10em;
+  margin-left: 5.6em;
+  margin-top: 0.2em;
+  border: 2px solid #0000cc;
+}
+
+#tasksManagerForm a {
   float: left;
   margin-left: 1.5em;
 }
@@ -4243,6 +4309,10 @@ footer img {
 #userHolidayDeleteConfirmForm img {
   width: 90%;
   margin: 0.5em 0em 0 1em;
+}
+
+#tasksManagementDiv {
+  display: none;
 }
 
 /*.day {

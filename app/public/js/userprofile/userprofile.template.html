@@ -87,7 +87,7 @@
     <div id="taskZone">
       <div>
         <img src="../img/List-Notebook_.jpg">
-        <a href="" id="tasksManager" class="btn">tasks</a>
+        <a href="" id="tasksManager" class="btn" ng-click="$ctrl.taskManager()">tasks</a>
       </div>
 
     </div>
@@ -270,6 +270,51 @@
                 <div class="occasionEdit">
                   <a href="" class="btn" ng-click="$ctrl.editBill(paid.id)">edit</a>
                   <a href="" class="btn" ng-click="$ctrl.deleteBill(paid.id)">delete</a>
+                </div>
+              </main>
+            </div>
+          </div>
+
+        </fieldset>
+
+
+      </form>
+
+    </div>
+    <div id="tasksManagementDiv">
+      <div id="tasksManagerBar">
+        <a href="" class="btn" id="tasksManagerDone" ng-click="$ctrl.closeTasksManager()">done</a>
+        <h1>Tasks Manager</h1>
+
+      </div>
+      <form id="tasksManagerForm" class="pure-form pure-form-stacked">
+        <fieldset>
+          <div id="tasksManagement">
+            <a href="" class="btn" id="addTask" ng-click="$ctrl.addNewTask()">new</a>
+            <a href="" class="btn" id="tasksReporter" ng-click="$ctrl.tasksReport()">report</a>
+            <div id="uncompleteTasksDiv">
+              <h2>Pending Tasks:</h2>
+              <main ng-repeat="task in $ctrl.userTasksPending | orderBy : $ctrl.sortBy">
+                <p>{{task.name}}</p>
+                <p>Notes: {{task.user_notes}}</p>
+                <p>Complete by: {{task.cleanDue}}</p>
+                <br>
+                <div class="occasionEdit">
+                  <a href="" class="btn" ng-click="$ctrl.editTask(task.id)">edit</a>
+                  <a href="" class="btn" ng-click="$ctrl.deleteTask(task.id)">delete</a>
+                </div>
+              </main>
+            </div>
+            <div id="completedTasksDiv">
+              <h2>Accomplished Tasks:</h2>
+              <main ng-repeat="done in $ctrl.userTasksCompleted | orderBy : $ctrl.sortBy">
+                <p>{{done.name}}</p>
+                <p>Notes: {{done.user_notes}}</p>
+                <p>Completed: {{done.cleanCompletionDate}}</p>
+                <br>
+                <div class="occasionEdit">
+                  <a href="" class="btn" ng-click="$ctrl.editTask(done.id)">edit</a>
+                  <a href="" class="btn" ng-click="$ctrl.deleteTask(done.id)">delete</a>
                 </div>
               </main>
             </div>

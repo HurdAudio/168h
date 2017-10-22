@@ -138,6 +138,71 @@
       vm.editOccaision = editOccaision;
       vm.userOccasionsEditorDone = userOccasionsEditorDone;
       vm.deleteHoliday = deleteHoliday;
+      vm.taskManager = taskManager;
+      vm.closeTasksManager = closeTasksManager;
+
+      function populateTasksManager() {
+        $http.get(`/tasksbyuser/${currentUserId}`)
+        .then(userTasksData=>{
+          let userTasks = userTasksData.data;
+          let userPendingTasks = userTasks.filter(task=>{
+            return(!task.is_completed);
+          });
+          let userCompletedTasks = userTasks.filter(task=>{
+            return(task.is_completed);
+          });
+          vm.userTasksPending = userPendingTasks.sort((a, b)=>{
+            if (a.due_date < b.due_date) {
+              return -1;
+            } else if (a.due_date > b.due_date) {
+              return 1;
+            } else {
+              return 0;
+            }
+          });
+          vm.userTasksCompleted = userCompletedTasks.sort((a, b)=>{
+            if (a.completed_date < b.completed_date) {
+              return -1;
+            } else if (a.completed_date > b.completed_date) {
+              return 1;
+            } else {
+              return 0;
+            }
+          });
+          if (vm.userTasksPending.length > 0) {
+            for (let i = 0; i < vm.userTasksPending.length; i++) {
+              vm.userTasksPending[i].cleanDue = cleanDate(vm.userTasksPending[i].due_date);
+            }
+          }
+          if (vm.userTasksCompleted.length > 0) {
+            for (let j = 0; j < vm.userTasksCompleted.length; j++) {
+              vm.userTasksCompleted[j].cleanCompletionDate = cleanDate(vm.userTasksCompleted[j].completed_date);
+            }
+          }
+        });
+      }
+
+      function closeTasksManager() {
+        let tasksManagementDiv = document.getElementById('tasksManagementDiv');
+        let tasksManager = document.getElementById('tasksManager');
+        let taskZone = document.getElementById('taskZone');
+
+        tasksManagementDiv.setAttribute("style", "display: none;");
+        tasksManager.setAttribute("style", "visibility: visible;");
+        taskZone.setAttribute("style", "opacity: 1;");
+      }
+
+      function taskManager() {
+        let tasksManagementDiv = document.getElementById('tasksManagementDiv');
+        let tasksManager = document.getElementById('tasksManager');
+        let taskZone = document.getElementById('taskZone');
+
+        populateTasksManager();
+
+        tasksManagementDiv.setAttribute("style", "display: initial;");
+        tasksManager.setAttribute("style", "visibility: hidden;");
+        taskZone.setAttribute("style", "opacity: 0.3;");
+      }
 
       function cleanOutFloatingHolidayRecords(holidayId) {
         $http.delete(`/holidays/${holidayId}`)
