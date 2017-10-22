@@ -1354,6 +1354,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 76,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=177034270/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://glacialerratic.bandcamp.com/album/nominedomine-joe-morris-jamie-saft',
+          a_string: 'Nominedomine /Joe Morris-Jamie Saft by Joe Morris and Jamie Saft',
+          rule: {
+            "monday": [ 13, 21, 3, 8 ],
+            "tuesday": [ 12, 18, 30, 5 ],
+            "wednesday": [ 11, 19, 1, 6 ],
+            "thursday": [ 10, 18, 30, 5 ],
+            "saturday": [ 14, 22, 4, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 77,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=867978653/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sluchaj.bandcamp.com/album/live-in-warsaw',
+          a_string: 'Live in Warsaw by Aurora Trio',
+          rule: {
+            "monday": [ 15, 23, 5, 10 ],
+            "tuesday": [ 14, 22, 4, 9 ],
+            "wednesday": [ 13, 21, 3, 8 ],
+            "thursday": [ 12, 20, 2, 7 ],
+            "saturday": [ 11, 19, 1, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 78,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2070208487/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sluchaj.bandcamp.com/album/celebration-ensemble',
+          a_string: 'Celebration Ensemble by Agusti Fernandez',
+          rule: {
+            "monday": [ 11, 19, 1, 6 ],
+            "tuesday": [ 15, 23, 5, 10 ],
+            "wednesday": [ 14, 22, 4, 9 ],
+            "thursday": [ 13, 21, 3, 8 ],
+            "saturday": [ 12, 20, 2, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
