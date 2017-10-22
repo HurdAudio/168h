@@ -2990,7 +2990,7 @@ exports.seed = function(knex, Promise) {
           user_id: 1,
           theme: 'black history',
           img_path: './img/february/7b1a81a4ffa4a2a59b09a72cff71d3f6--gray-johnson-african-american-art.jpg',
-          title: 'Arrangement ',
+          title: 'Arrangement',
           artist: 'Malvin Gray Johnson',
           year: '1933',
           rule: {
@@ -3001,6 +3001,106 @@ exports.seed = function(knex, Promise) {
             "friday": [ 27, 6, 14, 22 ],
             "saturday": [ 29, 10, 16, 24 ],
             "sunday": [ 2, 10, 18, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 151,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/RJ-15-0221-1024x745.jpg',
+          title: 'Untitled Anxious Men',
+          artist: 'Rashid Johnson',
+          year: '2015',
+          rule: {
+            "monday": [ 2, 10, 18, 28 ],
+            "tuesday": [ 4, 12, 8, 27 ],
+            "wednesday": [ 21, 29, 8, 16 ],
+            "thursday": [ 23, 2, 10, 18 ],
+            "friday": [ 28, 4, 10, 20 ],
+            "saturday": [ 27, 6, 14, 22 ],
+            "sunday": [ 29, 10, 16, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 152,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/-Chester-_-_NARA_-_559078.jpg',
+          title: 'Cheste',
+          artist: 'Sargent Claude Johnson',
+          year: '1931',
+          rule: {
+            "monday": [ 29, 10, 16, 24 ],
+            "tuesday": [ 2, 10, 18, 28 ],
+            "wednesday": [ 4, 12, 8, 27 ],
+            "thursday": [ 21, 29, 8, 16 ],
+            "friday": [ 23, 2, 10, 18 ],
+            "saturday": [ 28, 4, 10, 20 ],
+            "sunday": [ 27, 6, 14, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 153,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Street_Musicians,_by_William_H._Johnson.jpg',
+          title: 'Street Musicians',
+          artist: 'William H. Johnson',
+          year: '1939 - 1940',
+          rule: {
+            "monday": [ 27, 6, 14, 22 ],
+            "tuesday": [ 29, 10, 16, 24 ],
+            "wednesday": [ 2, 10, 18, 28 ],
+            "thursday": [ 4, 12, 8, 27 ],
+            "friday": [ 21, 29, 8, 16 ],
+            "saturday": [ 23, 2, 10, 18 ],
+            "sunday": [ 28, 4, 10, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 154,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Calvin-B.-Jones-1.jpg',
+          title: 'Mural',
+          artist: 'Calvin B. Jones',
+          year: 'xx Cent.',
+          rule: {
+            "monday": [ 29, 5, 11, 21 ],
+            "tuesday": [ 28, 7, 15, 23 ],
+            "wednesday": [ 1, 11, 17, 25 ],
+            "thursday": [ 3, 11, 19, 29 ],
+            "friday": [ 5, 13, 9, 28 ],
+            "saturday": [ 22, 1, 9, 17 ],
+            "sunday": [ 24, 3, 11, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 155,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Jennie-C-Jones-462x569.jpg',
+          title: 'Bold, Double, Barline (variation #1)',
+          artist: 'Jennie C. Jones',
+          year: '2013',
+          rule: {
+            "monday": [ 24, 3, 11, 19 ],
+            "tuesday": [ 29, 5, 11, 21 ],
+            "wednesday": [ 28, 7, 15, 23 ],
+            "thursday": [ 1, 11, 17, 25 ],
+            "friday": [ 3, 11, 19, 29 ],
+            "saturday": [ 5, 13, 9, 28 ],
+            "sunday": [ 22, 1, 9, 17 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
