@@ -1134,7 +1134,61 @@ exports.seed = function(knex, Promise) {
             "tuesday": [ 10, 14, 20, 1 ],
             "wednesday": [ 9, 13, 19, 29 ],
             "thursday": [ 8, 12, 17, 29 ],
-            "saturday": [ 8, 11, 17, 28 ]
+            "saturday": [  ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 64,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1698224919/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://xirecords.bandcamp.com/album/music-by-phill-niblock',
+          a_string: 'Music by Phill Niblock by Phill Niblock',
+          rule: {
+            "monday": [ 8, 11, 17, 28 ],
+            "tuesday": [ 6, 14, 16, 27 ],
+            "wednesday": [ 10, 14, 20, 1 ],
+            "thursday": [ 9, 13, 19, 29 ],
+            "saturday": [ 8, 12, 17, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 65,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1857300793/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://xirecords.bandcamp.com/album/body-music',
+          a_string: 'Body Music by Ellen Fullman',
+          rule: {
+            "monday": [ 8, 12, 17, 29 ],
+            "tuesday": [ 8, 11, 17, 28 ],
+            "wednesday": [ 6, 14, 16, 27 ],
+            "thursday": [ 10, 14, 20, 1 ],
+            "saturday": [ 9, 13, 19, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 66,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3087503069/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://xirecords.bandcamp.com/album/logos-works',
+          a_string: 'Logos Works by Logos Duo (Moniek Darge / Godfried-Willem Raes )',
+          rule: {
+            "monday": [ 9, 13, 19, 29 ],
+            "tuesday": [ 8, 12, 17, 29 ],
+            "wednesday": [ 8, 11, 17, 28 ],
+            "thursday": [ 6, 14, 16, 27 ],
+            "saturday": [ 10, 14, 20, 1 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
