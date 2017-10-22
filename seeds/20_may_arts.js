@@ -2404,6 +2404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 121,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/laundress-on-the-banks-of-the-river.jpg',
+          title: 'Laundress on the Banks of the River',
+          artist: 'Camille Pissarro',
+          year: 'c.1855',
+          rule: {
+            "monday": [ 18, 28, 7, 15 ],
+            "tuesday": [ 16, 26, 5, 15 ],
+            "wednesday": [ 14, 24, 3, 13 ],
+            "thursday": [ 11, 22, 1, 21 ],
+            "friday": [ 10, 20, 30, 9 ],
+            "saturday": [ 8, 18, 28, 7 ],
+            "sunday": [ 6, 16, 26, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 122,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/the-harvest.jpg',
+          title: 'The Harvest',
+          artist: 'Camille Pissarro',
+          year: 'c.1857',
+          rule: {
+            "monday": [ 6, 16, 26, 5 ],
+            "tuesday": [ 18, 28, 7, 15 ],
+            "wednesday": [ 16, 26, 5, 15 ],
+            "thursday": [ 14, 24, 3, 13 ],
+            "friday": [ 11, 22, 1, 21 ],
+            "saturday": [ 10, 20, 30, 9 ],
+            "sunday": [ 8, 18, 28, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 123,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/the-maidservant-1867.jpg',
+          title: 'The Maidservant',
+          artist: 'Camille Pissarro',
+          year: '1867',
+          rule: {
+            "monday": [ 8, 18, 28, 7 ],
+            "tuesday": [ 6, 16, 26, 5 ],
+            "wednesday": [ 18, 28, 7, 15 ],
+            "thursday": [ 16, 26, 5, 15 ],
+            "friday": [ 14, 24, 3, 13 ],
+            "saturday": [ 11, 22, 1, 21 ],
+            "sunday": [ 10, 20, 30, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 124,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/the-factory-1873.jpg',
+          title: 'The Factory',
+          artist: 'Camille Pissarro',
+          year: '1873',
+          rule: {
+            "monday": [ 10, 20, 30, 9 ],
+            "tuesday": [ 8, 18, 28, 7 ],
+            "wednesday": [ 6, 16, 26, 5 ],
+            "thursday": [ 18, 28, 7, 15 ],
+            "friday": [ 16, 26, 5, 15 ],
+            "saturday": [ 14, 24, 3, 13 ],
+            "sunday": [ 11, 22, 1, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 125,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/resting-harvesters-montfoucault-1875.jpg',
+          title: 'Resting Harvesters, Montfoucault',
+          artist: 'Camille Pissarro',
+          year: '1875',
+          rule: {
+            "monday": [ 11, 22, 1, 21 ],
+            "tuesday": [ 10, 20, 30, 9 ],
+            "wednesday": [ 8, 18, 28, 7 ],
+            "thursday": [ 6, 16, 26, 5 ],
+            "friday": [ 18, 28, 7, 15 ],
+            "saturday": [ 16, 26, 5, 15 ],
+            "sunday": [ 14, 24, 3, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
