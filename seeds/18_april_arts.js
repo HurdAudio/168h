@@ -2604,6 +2604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 131,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/twins_e9dc84d0-26f2-402c-9e4e-cb13f374f6ba.jpg',
+          title: 'Target Field - Home of the Twins',
+          artist: 'Michael Birawer',
+          year: 'xxi Cent.',
+          rule: {
+            "monday": [ 15, 20, 25, 2 ],
+            "tuesday": [ 14, 19, 25, 1 ],
+            "wednesday": [ 13, 18, 24, 30 ],
+            "thursday": [ 18, 24, 29, 6 ],
+            "friday": [ 2, 22, 28, 5 ],
+            "saturday": [ 17, 22, 28, 4 ],
+            "sunday": [ 16, 20, 5, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 132,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/target-field-nick-peters.jpg',
+          title: 'Target Field',
+          artist: 'Nick Peters',
+          year: 'xxi Cent.',
+          rule: {
+            "monday": [ 16, 20, 5, 3 ],
+            "tuesday": [ 15, 20, 25, 2 ],
+            "wednesday": [ 14, 19, 25, 1 ],
+            "thursday": [ 13, 18, 24, 30 ],
+            "friday": [ 18, 24, 29, 6 ],
+            "saturday": [ 2, 22, 28, 5 ],
+            "sunday": [ 17, 22, 28, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 133,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/ee0a1153d5125cf73f25cbc60ae3aa48--baseball-posters-baseball-art.jpg',
+          title: 'Minnesota Twins Harmon Killebrew "Killer"',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 18, 23, 29, 5 ],
+            "tuesday": [ 17, 21, 6, 4 ],
+            "wednesday": [ 16, 21, 26, 3 ],
+            "thursday": [ 15, 20, 26, 2 ],
+            "friday": [ 14, 19, 25, 1 ],
+            "saturday": [ 19, 25, 30, 7 ],
+            "sunday": [ 3, 23, 29, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 134,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/2806dd_6a34d18660b14e19852ab5bc96ff657d-mv2.jpg_srz_981_380_85_2 (1).jpg',
+          title: 'Minnesota Twins Byron Buxton',
+          artist: 'David Courson',
+          year: 'xxi Cent.',
+          rule: {
+            "monday": [ 3, 23, 29, 6 ],
+            "tuesday": [ 18, 23, 29, 5 ],
+            "wednesday": [ 17, 21, 6, 4 ],
+            "thursday": [ 16, 21, 26, 3 ],
+            "friday": [ 15, 20, 26, 2 ],
+            "saturday": [ 14, 19, 25, 1 ],
+            "sunday": [ 19, 25, 30, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 135,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/Minnesota-Twins_01.jpg',
+          title: 'Minnesota Twins',
+          artist: 'Dowdle Folk Art',
+          year: 'xxi Cent.',
+          rule: {
+            "monday": [ 19, 25, 30, 7 ],
+            "tuesday": [ 3, 23, 29, 6 ],
+            "wednesday": [ 18, 23, 29, 5 ],
+            "thursday": [ 17, 21, 6, 4 ],
+            "friday": [ 16, 21, 26, 3 ],
+            "saturday": [ 15, 20, 26, 2 ],
+            "sunday": [ 14, 19, 25, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
