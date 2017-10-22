@@ -1454,11 +1454,65 @@ exports.seed = function(knex, Promise) {
           href_string: 'http://greyegg.bandcamp.com/album/indoor-ski',
           a_string: 'Indoor Ski by Grey Egg',
           rule: {
-            "monday": [15, 21, 27, 4  ],
+            "monday": [ 15, 21, 27, 4  ],
             "tuesday": [ 14, 20, 26, 4 ],
             "wednesday": [ 13, 19, 25, 2 ],
             "thursday": [ 12, 18, 24, 1 ],
             "saturday": [ 16, 22, 28, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 82,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=581844588/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://lawitches.bandcamp.com/album/l-a-witch-2',
+          a_string: 'L.A. WITCH by L.A. WITCH',
+          rule: {
+            "monday": [ 16, 22, 28, 5 ],
+            "tuesday": [ 15, 21, 27, 4 ],
+            "wednesday": [ 14, 20, 26, 4 ],
+            "thursday": [ 13, 19, 25, 2 ],
+            "saturday": [ 12, 18, 24, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 83,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3414326465/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://thecoathangers.bandcamp.com/album/parasite',
+          a_string: 'Parasite by The Coathangers',
+          rule: {
+            "monday": [ 12, 18, 24, 1 ],
+            "tuesday": [ 16, 22, 28, 5 ],
+            "wednesday": [ 15, 21, 27, 4 ],
+            "thursday": [ 14, 20, 26, 4 ],
+            "saturday": [ 13, 19, 25, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 84,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1857300793/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://xirecords.bandcamp.com/album/body-music',
+          a_string: 'Body Music by Ellen Fullman',
+          rule: {
+            "monday": [ 14, 20, 26, 3 ],
+            "tuesday": [ 13, 19, 25, 2 ],
+            "wednesday": [ 17, 23, 29, 6 ],
+            "thursday": [ 16, 22, 28, 5 ],
+            "saturday": [ 15, 21, 27, 5 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
