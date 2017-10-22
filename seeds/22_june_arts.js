@@ -2204,6 +2204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 111,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/charles-hay-cameron-1864.jpg',
+          title: 'Charles Hay Cameron',
+          artist: 'Julia Margaret Cameron',
+          year: '1864',
+          rule: {
+            "monday": [ 13, 23, 3, 11 ],
+            "tuesday": [ 12, 22, 2, 10 ],
+            "wednesday": [ 11, 21, 1, 9 ],
+            "thursday": [ 10, 20, 30, 8 ],
+            "friday": [ 16, 26, 6, 13 ],
+            "saturday": [ 15, 25, 5, 13 ],
+            "sunday": [ 14, 24, 4, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 112,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/hunting-by-steam-in-melville-bay-1869.jpg',
+          title: 'Hunting by Steam in Melville Bay',
+          artist: 'William Bradford',
+          year: '1869',
+          rule: {
+            "monday": [ 15, 25, 5, 13 ],
+            "tuesday": [ 14, 24, 4, 12 ],
+            "wednesday": [ 13, 23, 3, 11 ],
+            "thursday": [ 12, 22, 2, 10 ],
+            "friday": [ 11, 21, 1, 9 ],
+            "saturday": [ 17, 27, 7, 14 ],
+            "sunday": [ 16, 26, 6, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 113,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/chateau-wood-1917.jpg',
+          title: 'Chateau Wood',
+          artist: 'Frank Hurley',
+          year: '1917',
+          rule: {
+            "monday": [ 16, 26, 6, 14 ],
+            "tuesday": [ 15, 25, 5, 13 ],
+            "wednesday": [ 14, 24, 4, 12 ],
+            "thursday": [ 13, 23, 3, 11 ],
+            "friday": [ 12, 22, 2, 10 ],
+            "saturday": [ 11, 21, 1, 9 ],
+            "sunday": [ 17, 27, 7, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 114,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/3e7c1dcd49363410cbf16f56884b6cd0.jpg',
+          title: 'Child with a toy hand grenade in Central Park',
+          artist: 'Diane Arbus',
+          year: '1962',
+          rule: {
+            "monday": [ 17, 27, 7, 14 ],
+            "tuesday": [ 16, 26, 6, 14 ],
+            "wednesday": [ 15, 25, 5, 13 ],
+            "thursday": [ 14, 24, 4, 12 ],
+            "friday": [ 13, 23, 3, 11 ],
+            "saturday": [ 12, 22, 2, 10 ],
+            "sunday": [ 11, 21, 1, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 115,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/tillmans-web6.jpg',
+          title: 'Open Heart Bypass',
+          artist: 'Wolfgang Tillmans',
+          year: '2015',
+          rule: {
+            "monday": [ 11, 21, 1, 9 ],
+            "tuesday": [ 17, 27, 7, 14 ],
+            "wednesday": [ 16, 26, 6, 14 ],
+            "thursday": [ 15, 25, 5, 13 ],
+            "friday": [ 14, 24, 4, 12 ],
+            "saturday": [ 13, 23, 3, 11 ],
+            "sunday": [ 12, 22, 2, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
