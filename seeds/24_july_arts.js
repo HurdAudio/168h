@@ -2004,6 +2004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 101,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/vue-de-paris-1885.jpg',
+          title: 'Vue de Paris',
+          artist: 'Albert Dubois-Pillet',
+          year: '1885',
+          rule: {
+            "monday": [ 11, 22, 2, 13 ],
+            "tuesday": [ 17, 28, 8, 19 ],
+            "wednesday": [ 16, 27, 7, 18 ],
+            "thursday": [ 15, 26, 6, 17 ],
+            "friday": [ 14, 25, 5, 16 ],
+            "saturday": [ 13, 24, 4, 15 ],
+            "sunday": [ 12, 23, 3, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 102,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/centennial-of-independence-1892.jpg',
+          title: 'Centennial of Independence',
+          artist: 'Henri Rousseau',
+          year: '1892',
+          rule: {
+            "monday": [ 12, 23, 3, 14 ],
+            "tuesday": [ 11, 22, 2, 13 ],
+            "wednesday": [ 17, 28, 8, 19 ],
+            "thursday": [ 16, 27, 7, 18 ],
+            "friday": [ 15, 26, 6, 17 ],
+            "saturday": [ 14, 25, 5, 16 ],
+            "sunday": [ 13, 24, 4, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 103,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/flag-decorated-street-1906.jpg',
+          title: 'Flag Decorated Street',
+          artist: 'Pierre-Auguste Renoir',
+          year: '1906',
+          rule: {
+            "monday": [ 13, 24, 4, 15 ],
+            "tuesday": [ 12, 23, 3, 14 ],
+            "wednesday": [ 11, 22, 2, 13 ],
+            "thursday": [ 17, 28, 8, 19 ],
+            "friday": [ 16, 27, 7, 18 ],
+            "saturday": [ 15, 26, 6, 17 ],
+            "sunday": [ 14, 25, 5, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 104,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/woman-with-an-umbrella-1880.jpg',
+          title: 'Woman with an Umbrella',
+          artist: 'Marie Bracquemond',
+          year: '1880',
+          rule: {
+            "monday": [ 14, 25, 5, 16 ],
+            "tuesday": [ 13, 24, 4, 15 ],
+            "wednesday": [ 12, 23, 3, 14 ],
+            "thursday": [ 11, 22, 2, 13 ],
+            "friday": [ 17, 28, 8, 19 ],
+            "saturday": [ 16, 27, 7, 18 ],
+            "sunday": [ 15, 26, 6, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 105,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/the-duet-1897.jpg',
+          title: 'The Duet',
+          artist: 'Jehan Georges Vibert',
+          year: '1897',
+          rule: {
+            "monday": [ 16, 27, 7, 18 ],
+            "tuesday": [ 15, 26, 6, 17 ],
+            "wednesday": [ 14, 25, 5, 16 ],
+            "thursday": [ 13, 24, 4, 15 ],
+            "friday": [ 12, 23, 3, 14 ],
+            "saturday": [ 18, 29, 9, 20 ],
+            "sunday": [ 17, 28, 8, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
