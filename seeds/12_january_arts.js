@@ -3204,6 +3204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 161,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/unknown-title-6.jpg',
+          title: 'unknown title',
+          artist: 'Michel Carrade',
+          year: 'xx Cent.',
+          rule: {
+            "monday": [ 1, 2, 24, 28 ],
+            "tuesday": [ 4, 6, 7, 9 ],
+            "wednesday": [ 6, 8, 12, 15 ],
+            "thursday": [ 8, 10, 11, 14 ],
+            "friday": [ 24, 25, 5, 28 ],
+            "saturday": [ 27, 29, 21, 10 ],
+            "sunday": [ 29, 30, 22, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 162,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/halo-1-1992.jpg',
+          title: 'Halo-1',
+          artist: 'Maki Haku',
+          year: '1992',
+          rule: {
+            "monday": [ 29, 30, 22, 25 ],
+            "tuesday": [ 1, 2, 24, 28 ],
+            "wednesday": [ 4, 6, 7, 9 ],
+            "thursday": [ 6, 8, 12, 15 ],
+            "friday": [ 8, 10, 11, 14 ],
+            "saturday": [ 24, 25, 5, 28 ],
+            "sunday": [ 27, 29, 21, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 163,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/untitled-7.jpg',
+          title: 'Untitled',
+          artist: 'Antonio Sanfilippo',
+          year: 'xx Cent.',
+          rule: {
+            "monday": [ 27, 29, 21, 10 ],
+            "tuesday": [ 29, 30, 22, 25 ],
+            "wednesday": [ 1, 2, 24, 28 ],
+            "thursday": [ 4, 6, 7, 9 ],
+            "friday": [ 6, 8, 12, 15 ],
+            "saturday": [ 8, 10, 11, 14 ],
+            "sunday": [ 24, 25, 5, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 164,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/untitled-1959.jpg',
+          title: 'Untitled',
+          artist: 'Jean Bertholle',
+          year: '1959',
+          rule: {
+            "monday": [ 24, 25, 5, 28 ],
+            "tuesday": [ 27, 29, 21, 10 ],
+            "wednesday": [ 29, 30, 22, 25 ],
+            "thursday": [ 1, 2, 24, 28 ],
+            "friday": [ 4, 6, 7, 9 ],
+            "saturday": [ 6, 8, 12, 15 ],
+            "sunday": [ 8, 10, 11, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 165,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/dreiformvariation-1928.jpg',
+          title: 'Dreiformvariation',
+          artist: 'Carl Buchheister',
+          year: '1928',
+          rule: {
+            "monday": [ 8, 10, 11, 14 ],
+            "tuesday": [ 24, 25, 5, 28 ],
+            "wednesday": [ 27, 29, 21, 10 ],
+            "thursday": [ 29, 30, 22, 25 ],
+            "friday": [ 1, 2, 24, 28 ],
+            "saturday": [ 4, 6, 7, 9 ],
+            "sunday": [ 6, 8, 12, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
