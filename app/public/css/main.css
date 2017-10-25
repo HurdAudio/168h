@@ -4315,8 +4315,8 @@ footer img {
   display: none;
 }
 
-/*.day {
-  background-image: url(../img/january_tiles/53e761b2082a7.jpg);
+.day {
+  background-image: url(../img/october_tiles/autumnalDefault.jpg);
   background-repeat: no-repeat;
-  background-size: 135%;
-}*/
+  background-size: 140%;
+}

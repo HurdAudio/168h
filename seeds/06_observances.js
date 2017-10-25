@@ -5252,7 +5252,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 332,
           user_id: 1,
-          name: 'Funmilayo Randome-Kuti (activist), born 1900',
+          name: 'Funmilayo Ransome-Kuti (activist), born 1900',
           color: '#B08E68',
           picture: './img/feminist/funmilayoransomekuti.jpg',
           day_of: new Date ('1900-10-25T13:44:00.000Z'),
