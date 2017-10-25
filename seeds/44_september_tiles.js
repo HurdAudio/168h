@@ -18,6 +18,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#8A5B4B',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 2,
+          user_id: 1,
+          theme: 'leather',
+          type: 'week',
+          src_string: '../img/september_tiles/leatherWeek1.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '200%',
+          color_dark: '#492A2E',
+          color_medium: '#661723',
+          color_light: '#A0717B',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
