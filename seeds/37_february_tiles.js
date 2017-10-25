@@ -116,6 +116,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#F48687',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 9,
+          user_id: 1,
+          theme: 'silk',
+          type: 'friday',
+          src_string: '../img/february_tiles/Satin-silk-fabric.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '100%',
+          color_dark: '#4F0713',
+          color_medium: '#B71B26',
+          color_light: '#FA5C64',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
