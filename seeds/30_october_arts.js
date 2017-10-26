@@ -1504,6 +1504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 76,
+          user_id: 1,
+          theme: 'russian revolution',
+          img_path: './img/october/popup_Le_085.jpg',
+          title: 'Long live KOMSOMOL',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 13, 24, 4, 8 ],
+            "tuesday": [ 12, 23, 3, 7 ],
+            "wednesday": [ 11, 22, 23, 6 ],
+            "thursday": [ 20, 21, 1, 5 ],
+            "friday": [ 16, 27, 7, 11 ],
+            "saturday": [ 15, 26, 6, 10 ],
+            "sunday": [ 14, 25, 5, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 77,
+          user_id: 1,
+          theme: 'russian revolution',
+          img_path: './img/october/popup_sovpolpost_00020.jpg',
+          title: 'HELP',
+          artist: 'Dmitry Moor',
+          year: '1921',
+          rule: {
+            "monday": [ 15, 26, 6, 10 ],
+            "tuesday": [ 14, 25, 5, 9 ],
+            "wednesday": [ 13, 24, 4, 8 ],
+            "thursday": [ 12, 23, 24, 7 ],
+            "friday": [ 21, 22, 2, 6 ],
+            "saturday": [ 17, 28, 8, 12 ],
+            "sunday": [ 16, 27, 7, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 78,
+          user_id: 1,
+          theme: 'russian revolution',
+          img_path: './img/october/popup_Le_083.jpg',
+          title: 'Think about those who are starving',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 16, 27, 7, 11 ],
+            "tuesday": [ 15, 26, 6, 10 ],
+            "wednesday": [ 14, 25, 5, 9 ],
+            "thursday": [ 13, 24, 4, 8 ],
+            "friday": [ 12, 23, 24, 7 ],
+            "saturday": [ 21, 22, 2, 6 ],
+            "sunday": [ 17, 28, 8, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 79,
+          user_id: 1,
+          theme: 'russian revolution',
+          img_path: './img/october/popup_Le_082.jpg',
+          title: 'The victory of the Revolution is in cooperation of workers and peasants.',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 17, 28, 8, 12 ],
+            "tuesday": [ 16, 27, 7, 11 ],
+            "wednesday": [ 15, 26, 6, 10 ],
+            "thursday": [ 14, 25, 5, 9 ],
+            "friday": [ 13, 24, 4, 8 ],
+            "saturday": [ 12, 23, 24, 7 ],
+            "sunday": [ 21, 22, 2, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 80,
+          user_id: 1,
+          theme: 'russian revolution',
+          img_path: './img/october/popup_Le_081.jpg',
+          title: 'Workers',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 21, 22, 2, 6 ],
+            "tuesday": [ 17, 28, 8, 12 ],
+            "wednesday": [ 16, 27, 7, 11 ],
+            "thursday": [ 15, 26, 6, 10 ],
+            "friday": [ 14, 25, 5, 9 ],
+            "saturday": [ 13, 24, 4, 8 ],
+            "sunday": [ 12, 23, 24, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
