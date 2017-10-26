@@ -1304,6 +1304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 66,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/arc-bands-1990.jpg',
+          title: 'Arc Bands',
+          artist: 'Sol LeWitt',
+          year: '1990',
+          rule: {
+            "monday": [ 11, 16, 22, 29 ],
+            "tuesday": [ 17, 22, 28, 3 ],
+            "wednesday": [ 16, 21, 27, 2 ],
+            "thursday": [ 15, 20, 26, 1 ],
+            "friday": [ 14, 19, 25, 30 ],
+            "saturday": [ 13, 17, 24, 29 ],
+            "sunday": [ 12, 17, 23, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 67,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/early-1967.jpg',
+          title: 'Early',
+          artist: 'James Bishop',
+          year: '1967',
+          rule: {
+            "monday": [ 12, 17, 23, 28 ],
+            "tuesday": [ 11, 16, 22, 29 ],
+            "wednesday": [ 17, 22, 28, 3 ],
+            "thursday": [ 16, 21, 27, 2 ],
+            "friday": [ 15, 20, 26, 1 ],
+            "saturday": [ 14, 19, 25, 30 ],
+            "sunday": [ 13, 17, 24, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 68,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/settlement-magenta-1980.jpg',
+          title: 'Settlement Magenta',
+          artist: 'Warren Rohrer',
+          year: '1980',
+          rule: {
+            "monday": [ 13, 17, 24, 29 ],
+            "tuesday": [ 12, 17, 23, 28 ],
+            "wednesday": [ 11, 16, 22, 29 ],
+            "thursday": [ 17, 22, 28, 3 ],
+            "friday": [ 16, 21, 27, 2 ],
+            "saturday": [ 15, 20, 26, 1 ],
+            "sunday": [ 14, 19, 25, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 69,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/untitled-1998.jpg',
+          title: 'Untitled',
+          artist: 'Moshe Kupferman',
+          year: '1998',
+          rule: {
+            "monday": [ 14, 19, 25, 30 ],
+            "tuesday": [ 13, 17, 24, 29 ],
+            "wednesday": [ 12, 17, 23, 28 ],
+            "thursday": [ 11, 16, 22, 29 ],
+            "friday": [ 17, 22, 28, 3 ],
+            "saturday": [ 16, 21, 27, 2 ],
+            "sunday": [ 15, 20, 26, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 70,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/3-sheets-from-9-x-5-konkret-1973.jpg',
+          title: '3 sheets from "9 x 5 konkret"',
+          artist: 'Francois Morellet',
+          year: '1973',
+          rule: {
+            "monday": [ 16, 21, 27, 2 ],
+            "tuesday": [ 15, 20, 26, 1 ],
+            "wednesday": [ 14, 18, 25, 30 ],
+            "thursday": [ 13, 18, 24, 29 ],
+            "friday": [ 12, 17, 23, 30 ],
+            "saturday": [ 18, 23, 29, 4 ],
+            "sunday": [ 17, 22, 28, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
