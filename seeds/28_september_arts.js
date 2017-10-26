@@ -1704,6 +1704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 86,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/eclipse-1962.jpg',
+          title: 'Eclipse',
+          artist: 'Jeremy Moon',
+          year: '1962',
+          rule: {
+            "monday": [ 15, 21, 9, 17 ],
+            "tuesday": [ 14, 20, 8, 16 ],
+            "wednesday": [ 13, 19, 7, 15 ],
+            "thursday": [ 12, 18, 6, 14 ],
+            "friday": [ 11, 17, 5, 13 ],
+            "saturday": [ 10, 16, 4, 12 ],
+            "sunday": [ 9, 15, 3, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 87,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/polyptych-m-1968.jpg',
+          title: 'Polyptych M',
+          artist: 'Alberto Biasi',
+          year: '1968',
+          rule: {
+            "monday": [ 9, 15, 3, 10 ],
+            "tuesday": [ 15, 21, 9, 17 ],
+            "wednesday": [ 14, 20, 8, 16 ],
+            "thursday": [ 13, 19, 7, 15 ],
+            "friday": [ 12, 18, 6, 14 ],
+            "saturday": [ 11, 17, 5, 13 ],
+            "sunday": [ 10, 16, 4, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 88,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/stone-bird-1952.jpg',
+          title: 'Stone Bird',
+          artist: 'Endre Balint',
+          year: '1952',
+          rule: {
+            "monday": [ 10, 16, 4, 12 ],
+            "tuesday": [ 9, 15, 3, 10 ],
+            "wednesday": [ 15, 21, 9, 17 ],
+            "thursday": [ 14, 20, 8, 16 ],
+            "friday": [ 13, 19, 7, 15 ],
+            "saturday": [ 12, 18, 6, 14 ],
+            "sunday": [ 11, 17, 5, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 89,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/black-flowers-september-26-1999-1999.jpg',
+          title: 'Black Flowers, September 26, 1999',
+          artist: 'Donald Sultan',
+          year: '1999',
+          rule: {
+            "monday": [ 11, 17, 5, 13 ],
+            "tuesday": [ 10, 16, 4, 12 ],
+            "wednesday": [ 9, 15, 3, 10 ],
+            "thursday": [ 15, 21, 9, 17 ],
+            "friday": [ 14, 20, 8, 16 ],
+            "saturday": [ 13, 19, 7, 15 ],
+            "sunday": [ 12, 18, 6, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 90,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/still-life-autumn-fashion-1978.jpg',
+          title: 'Still Life: Autumn Fashion',
+          artist: 'Patrick Caulfield',
+          year: '1978',
+          rule: {
+            "monday": [ 12, 18, 6, 14 ],
+            "tuesday": [ 11, 17, 5, 13 ],
+            "wednesday": [ 10, 16, 4, 12 ],
+            "thursday": [ 9, 15, 3, 10 ],
+            "friday": [ 15, 21, 9, 17 ],
+            "saturday": [ 14, 20, 8, 16 ],
+            "sunday": [ 13, 19, 7, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
