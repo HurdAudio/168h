@@ -868,6 +868,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 49,
+          user_id: 1,
+          theme: 'math rock/progressive rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2383623109/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://mathcoreindex.bandcamp.com/album/volume-4',
+          a_string: 'Volume 4 by Mathcore Index',
+          rule: {
+            "monday": [ 9, 29, 7, 1 ],
+            "tuesday": [ 8, 28, 6, 30 ],
+            "wednesday": [ 12, 2, 10, 4 ],
+            "thursday": [ 11, 1, 9, 3 ],
+            "saturday": [ 10, 30, 8, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 50,
+          user_id: 1,
+          theme: 'math rock/progressive rock',
+          source: 'bandcamp',
+          src_string: 'http://bandcamp.com/EmbeddedPlayer/album=1485278688/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://flatearthsocietyuk.com/album/sleep-less',
+          a_string: 'Sleep Less by FES // Exploder',
+          rule: {
+            "monday": [ 10, 30, 8, 2 ],
+            "tuesday": [ 9, 29, 7, 1 ],
+            "wednesday": [ 8, 28, 6, 30 ],
+            "thursday": [ 12, 2, 10, 4 ],
+            "saturday": [ 11, 1, 9, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 51,
+          user_id: 1,
+          theme: 'math rock/progressive rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=265922236/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://thespeedofsoundinseawater.bandcamp.com/album/first-contact',
+          a_string: 'First Contact by The Speed of Sound in Seawater',
+          rule: {
+            "monday": [ 11, 1, 9, 3 ],
+            "tuesday": [ 10, 30, 8, 2 ],
+            "wednesday": [ 9, 29, 7, 1 ],
+            "thursday": [ 8, 28, 6, 30 ],
+            "saturday": [ 12, 2, 10, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
