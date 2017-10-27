@@ -1813,6 +1813,7 @@
               break;
             case(10):
               theMonthString = 'november_musicsbyuser';
+              break;
             default:
               console.log('month not yet supported');
           }
