@@ -2504,6 +2504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 126,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/the-harvest-at-montfoucault-2-1876.jpg',
+          title: 'The Harvest at Montfoucault 2',
+          artist: 'Camille Pissarro',
+          year: '1876',
+          rule: {
+            "monday": [ 15, 25, 4, 14 ],
+            "tuesday": [ 12, 23, 2, 22 ],
+            "wednesday": [ 11, 21, 31, 10 ],
+            "thursday": [ 9, 19, 29, 8 ],
+            "friday": [ 7, 17, 27, 6 ],
+            "saturday": [ 19, 29, 8, 16 ],
+            "sunday": [ 17, 27, 6, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 127,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/eugene-murer-at-his-pastry-oven-1877.jpg',
+          title: 'Eugene Murer at His Pastry Oven',
+          artist: 'Camille Pissarro',
+          year: '1877',
+          rule: {
+            "monday": [ 17, 27, 6, 16 ],
+            "tuesday": [ 15, 25, 4, 14 ],
+            "wednesday": [ 12, 23, 2, 22 ],
+            "thursday": [ 11, 21, 31, 10 ],
+            "friday": [ 9, 19, 29, 8 ],
+            "saturday": [ 7, 17, 27, 6 ],
+            "sunday": [ 19, 29, 8, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 128,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/shoemakers.jpg',
+          title: 'Shoemakers',
+          artist: 'Camille Pissarro',
+          year: 'c.1878',
+          rule: {
+            "monday": [ 19, 29, 8, 16 ],
+            "tuesday": [ 17, 27, 6, 16 ],
+            "wednesday": [ 15, 25, 4, 14 ],
+            "thursday": [ 12, 23, 2, 22 ],
+            "friday": [ 11, 21, 31, 10 ],
+            "saturday": [ 9, 19, 29, 8 ],
+            "sunday": [ 7, 17, 27, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 129,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/the-laundry-woman-1879.jpg',
+          title: 'The Laundry Woman',
+          artist: 'Camille Pissarro',
+          year: '1879',
+          rule: {
+            "monday": [ 7, 17, 27, 6 ],
+            "tuesday": [ 19, 29, 8, 16 ],
+            "wednesday": [ 17, 27, 6, 16 ],
+            "thursday": [ 15, 25, 4, 14 ],
+            "friday": [ 12, 23, 2, 22 ],
+            "saturday": [ 11, 21, 31, 10 ],
+            "sunday": [ 9, 19, 29, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 130,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/peasants-harvesting-potatoes-1882.jpg',
+          title: 'Peasants Harvesting Potatoes',
+          artist: 'Camille Pissarro',
+          year: '1882',
+          rule: {
+            "monday": [ 9, 19, 29, 8 ],
+            "tuesday": [ 7, 17, 27, 6 ],
+            "wednesday": [ 19, 29, 8, 16 ],
+            "thursday": [ 17, 27, 6, 16 ],
+            "friday": [ 15, 25, 4, 14 ],
+            "saturday": [ 12, 23, 2, 22 ],
+            "sunday": [ 11, 21, 31, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
