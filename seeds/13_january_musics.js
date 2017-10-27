@@ -1732,6 +1732,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 97,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=801757654/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tedhearne.bandcamp.com/album/the-law-of-mosaics',
+          a_string: 'The Law of Mosaics by A Far Cry',
+          rule: {
+            "monday": [ 20, 27, 29, 28 ],
+            "tuesday": [ 28, 22, 24, 29 ],
+            "wednesday": [ 19, 26, 27, 28 ],
+            "thursday": [ 20, 27, 28, 29 ],
+            "saturday": [ 18, 22, 24, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 98,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1978442588/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://philipwhite.bandcamp.com/album/the-way-the-rocks-hold-the-current-iii',
+          a_string: 'The Way the Rocks Hold the Current (III) by Philip White',
+          rule: {
+            "monday": [ 19, 23, 25, 29 ],
+            "tuesday": [ 21, 28, 30, 29 ],
+            "wednesday": [ 29, 23, 25, 30 ],
+            "thursday": [ 20, 27, 28, 29 ],
+            "saturday": [ 21, 28, 29, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 99,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2299067940/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://populistrecords.bandcamp.com/album/daniel-corral-refractions',
+          a_string: 'Daniel Corral // Refractions by Daniel Corral, Jeremy Kerner, Isaura String Quartet',
+          rule: {
+            "monday": [ 19, 23, 25, 29 ],
+            "tuesday": [ 21, 28, 30, 29 ],
+            "wednesday": [ 29, 23, 25, 30 ],
+            "thursday": [ 20, 27, 28, 29 ],
+            "saturday": [ 21, 28, 29, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
