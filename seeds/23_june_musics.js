@@ -1192,6 +1192,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 67,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2971626337/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://noght.bandcamp.com/album/a-letter',
+          a_string: 'A Letter by NoGht',
+          rule: {
+            "monday": [ 10, 14, 20, 1 ],
+            "tuesday": [ 9, 13, 19, 29 ],
+            "wednesday": [ 8, 12, 17, 29 ],
+            "thursday": [ 8, 11, 17, 28 ],
+            "saturday": [ 6, 14, 16, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 68,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3748396525/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://oejerum.bandcamp.com/album/tr-erne-intetheden',
+          a_string: 'Træerne &amp; Intetheden by øjeRum',
+          rule: {
+            "monday": [ 6, 14, 16, 27 ],
+            "tuesday": [ 10, 14, 20, 1 ],
+            "wednesday": [ 9, 13, 19, 29 ],
+            "thursday": [ 8, 12, 17, 29 ],
+            "saturday": [ 8, 11, 17, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 69,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3484145994/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://offland.bandcamp.com/album/pathways',
+          a_string: 'Pathways by Off Land',
+          rule: {
+            "monday": [ 8, 11, 17, 28 ],
+            "tuesday": [ 6, 14, 16, 27 ],
+            "wednesday": [ 10, 14, 20, 1 ],
+            "thursday": [ 9, 13, 19, 29 ],
+            "saturday": [ 8, 12, 17, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
