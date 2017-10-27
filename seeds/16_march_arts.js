@@ -2904,6 +2904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 146,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/untitledDahm.jpg',
+          title: 'Untitled',
+          artist: 'Helen Dahm',
+          year: '?',
+          rule: {
+            "monday": [ 17, 27, 4, 14 ],
+            "tuesday": [ 16, 26, 3, 13 ],
+            "wednesday": [ 15, 25, 2, 12 ],
+            "thursday": [ 14, 24, 2, 11 ],
+            "friday": [ 20, 29, 7, 16 ],
+            "saturday": [ 19, 29, 8, 16 ],
+            "sunday": [ 18, 28, 5, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 147,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/orange-vendor-spain.jpg',
+          title: 'Orange Vendor, Spain',
+          artist: 'Natalia Goncharova',
+          year: '1916',
+          rule: {
+            "monday": [ 19, 29, 6, 16 ],
+            "tuesday": [ 18, 28, 5, 15 ],
+            "wednesday": [ 17, 27, 4, 14 ],
+            "thursday": [ 16, 26, 3, 13 ],
+            "friday": [ 15, 25, 3, 12 ],
+            "saturday": [ 21, 30, 8, 17 ],
+            "sunday": [ 20, 30, 9, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 148,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/artemis.jpg',
+          title: 'Artemis',
+          artist: 'Marie Laurencin',
+          year: '?',
+          rule: {
+            "monday": [ 20, 30, 9, 17 ],
+            "tuesday": [ 19, 29, 6, 16 ],
+            "wednesday": [ 18, 28, 5, 15 ],
+            "thursday": [ 17, 27, 4, 14 ],
+            "friday": [ 16, 26, 3, 13 ],
+            "saturday": [ 15, 25, 3, 12 ],
+            "sunday": [ 21, 30, 8, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 149,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/three-women-dressed-simultaneously.jpg',
+          title: 'Three Women dressed simultaneously',
+          artist: 'Sonia Delaunay',
+          year: '?',
+          rule: {
+            "monday": [ 21, 30, 8, 17 ],
+            "tuesday": [ 20, 30, 9, 17 ],
+            "wednesday": [ 19, 29, 6, 16 ],
+            "thursday": [ 18, 28, 5, 15 ],
+            "friday": [ 17, 27, 4, 14 ],
+            "saturday": [ 16, 26, 3, 13 ],
+            "sunday": [ 15, 25, 3, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 150,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/nude-series-viii.jpg',
+          title: 'Nude Series VIII',
+          artist: 'Georgia O\'Keeffe',
+          year: '1917',
+          rule: {
+            "monday": [ 15, 25, 3, 12 ],
+            "tuesday": [ 21, 30, 8, 17 ],
+            "wednesday": [ 20, 30, 9, 17 ],
+            "thursday": [ 19, 29, 6, 16 ],
+            "friday": [ 18, 28, 5, 15 ],
+            "saturday": [ 17, 27, 4, 14 ],
+            "sunday": [ 16, 26, 3, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
