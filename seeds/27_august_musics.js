@@ -976,6 +976,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 55,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=487324111/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://wolf-eyes.bandcamp.com/album/burnt-out-vol-1',
+          a_string: 'Burnt-Out Vol 1 by Wolf Eyes',
+          rule: {
+            "monday": [ 11, 19, 4, 3 ],
+            "tuesday": [ 12, 20, 5, 4 ],
+            "wednesday": [ 16, 24, 6, 5 ],
+            "thursday": [ 15, 23, 8, 9 ],
+            "saturday": [ 14, 22, 7, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 56,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2933784511/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://glisteningexamples.bandcamp.com/album/the-invisible-curse',
+          a_string: 'The Invisible Curse by Kevin Drumm and Jason Lescalleet',
+          rule: {
+            "monday": [ 15, 23, 8, 9 ],
+            "tuesday": [ 12, 20, 5, 4 ],
+            "wednesday": [ 13, 21, 6, 5 ],
+            "thursday": [ 17, 25, 7, 6 ],
+            "saturday": [ 16, 24, 9, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 57,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=149762818/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://nmperign.bandcamp.com/album/love-me-two-times',
+          a_string: 'Love Me Two Times by Nmperign/Jason Lescalleet',
+          rule: {
+            "monday": [ 16, 24, 9, 10 ],
+            "tuesday": [ 15, 23, 8, 9 ],
+            "wednesday": [ 12, 20, 5, 4 ],
+            "thursday": [ 13, 21, 6, 5 ],
+            "saturday": [ 17, 25, 7, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
