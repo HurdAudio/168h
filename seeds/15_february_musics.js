@@ -1624,6 +1624,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 91,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1011432069/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://joemcphee.bandcamp.com/album/the-sugar-hill-suite',
+          a_string: 'The Sugar Hill Suite by Trio X',
+          rule: {
+            "monday": [ 15, 19, 21, 25 ],
+            "tuesday": [ 17, 21, 23, 27 ],
+            "wednesday": [ 19, 23, 25, 27 ],
+            "thursday": [ 2, 25, 27, 4 ],
+            "saturday": [ 14, 19, 21, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 92,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2092770861/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://marcuslewisband.bandcamp.com/album/facing-east',
+          a_string: 'Facing East by Marcus Lewis',
+          rule: {
+            "monday": [ 14, 19, 21, 4 ],
+            "tuesday": [ 15, 19, 21, 25 ],
+            "wednesday": [ 17, 21, 23, 27 ],
+            "thursday": [ 19, 23, 25, 27 ],
+            "saturday": [ 2, 25, 27, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 93,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1019294942/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://joemcphee.bandcamp.com/album/angels-devils-and-haints',
+          a_string: 'Angels, Devils and Haints by Joe McPhee',
+          rule: {
+            "monday": [ 2, 25, 27, 4 ],
+            "tuesday": [ 14, 19, 21, 4 ],
+            "wednesday": [ 15, 19, 21, 25 ],
+            "thursday": [ 17, 21, 23, 27 ],
+            "saturday": [ 19, 23, 25, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
