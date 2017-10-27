@@ -1516,6 +1516,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 85,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/track=1509868074/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://zamilskaofficial.bandcamp.com/track/closer',
+          a_string: 'Closer by ZAMILSKA',
+          rule: {
+            "monday": [ 15, 21, 27, 5 ],
+            "tuesday": [ 14, 20, 26, 3 ],
+            "wednesday": [ 13, 19, 25, 2 ],
+            "thursday": [ 17, 23, 29, 6 ],
+            "saturday": [ 16, 22, 28, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 86,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2641447131/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://blackesteverblack.bandcamp.com/album/you-know-what-its-like',
+          a_string: 'You Know What It&#39;s Like by CARLA DAL FORNO',
+          rule: {
+            "monday": [ 16, 22, 28, 5 ],
+            "tuesday": [ 15, 21, 27, 5 ],
+            "wednesday": [ 14, 20, 26, 3 ],
+            "thursday": [ 13, 19, 25, 2 ],
+            "saturday": [ 17, 23, 29, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 87,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3814644699/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jennyhval.bandcamp.com/album/blood-bitch',
+          a_string: 'Blood Bitch by Jenny Hval',
+          rule: {
+            "monday": [ 17, 23, 29, 6 ],
+            "tuesday": [ 16, 22, 28, 5 ],
+            "wednesday": [ 15, 21, 27, 5 ],
+            "thursday": [ 14, 20, 26, 3 ],
+            "saturday": [ 13, 19, 25, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
