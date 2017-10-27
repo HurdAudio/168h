@@ -2704,6 +2704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 136,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/Screen-Shot-2015.png',
+          title: 'Sun Trust Park',
+          artist: '?',
+          year: '2015',
+          rule: {
+            "monday": [ 14, 19, 25, 1 ],
+            "tuesday": [ 19, 25, 30, 7 ],
+            "wednesday": [ 3, 23, 29, 6 ],
+            "thursday": [ 18, 23, 29, 5 ],
+            "friday": [ 17, 21, 6, 4 ],
+            "saturday": [ 16, 21, 26, 3 ],
+            "sunday": [ 15, 20, 26, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 137,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/suntrust.park_.jpg',
+          title: 'Sun Trust Park',
+          artist: 'David Goldman',
+          year: '2017',
+          rule: {
+            "monday": [ 15, 20, 26, 2 ],
+            "tuesday": [ 14, 19, 25, 1 ],
+            "wednesday": [ 19, 25, 30, 7 ],
+            "thursday": [ 3, 23, 29, 6 ],
+            "friday": [ 18, 23, 29, 5 ],
+            "saturday": [ 17, 21, 6, 4 ],
+            "sunday": [ 16, 21, 26, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 138,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/atlanta_braves_uniform_display_by_jayjaxon.png',
+          title: 'Atlanta Braves Uniform Display',
+          artist: 'JayJaxon',
+          year: '2010 - 2017',
+          rule: {
+            "monday": [ 16, 21, 26, 3 ],
+            "tuesday": [ 15, 20, 26, 2 ],
+            "wednesday": [ 14, 19, 25, 1 ],
+            "thursday": [ 19, 25, 30, 7 ],
+            "friday": [ 3, 23, 29, 6 ],
+            "saturday": [ 18, 23, 29, 5 ],
+            "sunday": [ 17, 21, 6, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 139,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/2229519.jpg',
+          title: 'Freddie Freeman',
+          artist: 'Michael Lee',
+          year: 'xxi Cent.',
+          rule: {
+            "monday": [ 17, 21, 6, 4 ],
+            "tuesday": [ 16, 21, 26, 3 ],
+            "wednesday": [ 15, 20, 26, 2 ],
+            "thursday": [ 14, 19, 25, 1 ],
+            "friday": [ 19, 25, 30, 7 ],
+            "saturday": [ 3, 23, 29, 6 ],
+            "sunday": [ 18, 23, 29, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 140,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/mlbf_1859795883_th_45.jpg',
+          title: 'Atlanta Braves',
+          artist: 'MLB Braves Official Site',
+          year: '2017',
+          rule: {
+            "monday": [ 19, 24, 30, 6 ],
+            "tuesday": [ 18, 22, 7, 5 ],
+            "wednesday": [ 17, 22, 27, 4 ],
+            "thursday": [ 16, 21, 27, 3 ],
+            "friday": [ 15, 20, 26, 2 ],
+            "saturday": [ 20, 26, 1, 8 ],
+            "sunday": [ 4, 24, 30, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
