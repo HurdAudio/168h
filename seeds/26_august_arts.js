@@ -1904,6 +1904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 96,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/workshop-1915.jpg',
+          title: 'Workshop',
+          artist: 'Wyndham Lewis',
+          year: '1915',
+          rule: {
+            "monday": [ 13, 17, 25, 10 ],
+            "tuesday": [ 12, 15, 24, 9 ],
+            "wednesday": [ 11, 15, 23, 8 ],
+            "thursday": [ 17, 21, 29, 14 ],
+            "friday": [ 16, 19, 28, 13 ],
+            "saturday": [ 15, 19, 27, 12 ],
+            "sunday": [ 14, 18, 26, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 97,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/automat-1927.jpg',
+          title: 'Automat',
+          artist: 'Edward Hopper',
+          year: '1927',
+          rule: {
+            "monday": [ 14, 18, 26, 11 ],
+            "tuesday": [ 13, 17, 25, 10 ],
+            "wednesday": [ 12, 15, 24, 9 ],
+            "thursday": [ 11, 15, 23, 8 ],
+            "friday": [ 17, 21, 29, 14 ],
+            "saturday": [ 16, 19, 28, 13 ],
+            "sunday": [ 15, 19, 27, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 98,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/balchik-beach-1926.jpg',
+          title: 'Balchik Beach',
+          artist: 'Stefan Dimitrescu',
+          year: '1926',
+          rule: {
+            "monday": [ 16, 20, 28, 13 ],
+            "tuesday": [ 15, 19, 27, 12 ],
+            "wednesday": [ 14, 18, 26, 11 ],
+            "thursday": [ 13, 16, 25, 10 ],
+            "friday": [ 12, 15, 24, 9 ],
+            "saturday": [ 18, 22, 30, 15 ],
+            "sunday": [ 17, 20, 29, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 99,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/composition-avec-7-tubes-1925.jpg',
+          title: 'Composition avec 7 tubes',
+          artist: 'Gustave Buchet',
+          year: '1925',
+          rule: {
+            "monday": [ 17, 20, 29, 14 ],
+            "tuesday": [ 16, 20, 28, 13 ],
+            "wednesday": [ 15, 19, 27, 12 ],
+            "thursday": [ 14, 18, 26, 11 ],
+            "friday": [ 13, 16, 25, 10 ],
+            "saturday": [ 12, 15, 24, 9 ],
+            "sunday": [ 18, 22, 30, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 100,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/futuristic-woman-1911.jpg',
+          title: 'Futuristic woman',
+          artist: 'David Burliuk',
+          year: '1911',
+          rule: {
+            "monday": [ 18, 22, 30, 15 ],
+            "tuesday": [ 17, 20, 29, 14 ],
+            "wednesday": [ 16, 20, 28, 13 ],
+            "thursday": [ 15, 19, 27, 12 ],
+            "friday": [ 14, 18, 26, 11 ],
+            "saturday": [ 13, 16, 25, 10 ],
+            "sunday": [ 12, 15, 24, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
