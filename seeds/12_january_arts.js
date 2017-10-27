@@ -3304,6 +3304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 166,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/pintura-153-1948.jpg',
+          title: 'Pintura 153',
+          artist: 'Raul Lozza',
+          year: '1948',
+          rule: {
+            "monday": [ 6, 8, 12, 15 ],
+            "tuesday": [ 8, 10, 11, 14 ],
+            "wednesday": [ 24, 25, 5, 28 ],
+            "thursday": [ 27, 29, 21, 10 ],
+            "friday": [ 29, 30, 22, 25 ],
+            "saturday": [ 1, 2, 24, 28 ],
+            "sunday": [ 4, 6, 7, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 167,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/the-great-wall-i-1986.jpg',
+          title: 'The Great Wall (I)',
+          artist: 'Wu Guanzhong',
+          year: '1986',
+          rule: {
+            "monday": [ 4, 6, 7, 9 ],
+            "tuesday": [ 6, 8, 12, 15 ],
+            "wednesday": [ 8, 10, 11, 14 ],
+            "thursday": [ 24, 25, 5, 28 ],
+            "friday": [ 27, 29, 21, 10 ],
+            "saturday": [ 29, 30, 22, 25 ],
+            "sunday": [ 1, 2, 24, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 168,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/opposing-15-1959.jpg',
+          title: 'Opposing (#15)',
+          artist: 'Frederick Hammersley',
+          year: '1959',
+          rule: {
+            "monday": [ 2, 3, 25, 29 ],
+            "tuesday": [ 5, 7, 8, 10 ],
+            "wednesday": [ 7, 9, 13, 16 ],
+            "thursday": [ 9, 11, 12, 15 ],
+            "friday": [ 25, 26, 6, 29 ],
+            "saturday": [ 28, 30, 22, 11 ],
+            "sunday": [ 30, 31, 23, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 169,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/hillside-1954.jpg',
+          title: 'Hillside',
+          artist: 'Kazuo Nakamura',
+          year: '1954',
+          rule: {
+            "monday": [ 30, 31, 23, 26 ],
+            "tuesday": [ 2, 3, 25, 29 ],
+            "wednesday": [ 5, 7, 8, 10 ],
+            "thursday": [ 7, 9, 13, 16 ],
+            "friday": [ 9, 11, 12, 15 ],
+            "saturday": [ 25, 26, 6, 29 ],
+            "sunday": [ 28, 30, 22, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 170,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/1944-n-no-1-1944.jpg',
+          title: '1944-N No. 1',
+          artist: 'Clyfford Still',
+          year: '1944',
+          rule: {
+            "monday": [ 28, 30, 22, 11 ],
+            "tuesday": [ 30, 31, 23, 26 ],
+            "wednesday": [ 2, 3, 25, 29 ],
+            "thursday": [ 5, 7, 8, 10 ],
+            "friday": [ 7, 9, 13, 16 ],
+            "saturday": [ 9, 11, 12, 15 ],
+            "sunday": [ 25, 26, 6, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
