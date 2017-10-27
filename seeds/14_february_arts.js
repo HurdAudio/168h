@@ -3104,6 +3104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 156,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/lois-mailou-jones-initiation-liberia-1983-acrylic-on-canvas_jpg.jpg',
+          title: 'Initiation, Liberia',
+          artist: 'Loïs Mailou Jones',
+          year: '1983',
+          rule: {
+            "monday": [ 22, 1, 9, 17 ],
+            "tuesday": [ 24, 3, 11, 19 ],
+            "wednesday": [ 29, 5, 11, 21 ],
+            "thursday": [ 28, 7, 15, 23 ],
+            "friday": [ 1, 11, 17, 25 ],
+            "saturday": [ 3, 11, 19, 29 ],
+            "sunday": [ 5, 13, 9, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 157,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/conversation-between-paint.jpg',
+          title: 'Descending from a Cross to be Nourished at the Breast of Our Mother',
+          artist: 'Titus Kaphar',
+          year: 'xxi Cent.',
+          rule: {
+            "monday": [ 5, 13, 9, 28 ],
+            "tuesday": [ 22, 1, 9, 17 ],
+            "wednesday": [ 24, 3, 11, 19 ],
+            "thursday": [ 29, 5, 11, 21 ],
+            "friday": [ 28, 7, 15, 23 ],
+            "saturday": [ 1, 11, 17, 25 ],
+            "sunday": [ 3, 11, 19, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 158,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/360_fs.jpg',
+          title: 'In the North the Negro had Better Education Facilities',
+          artist: 'Gwendolyn Knight',
+          year: '1941',
+          rule: {
+            "monday": [ 3, 11, 19, 29 ],
+            "tuesday": [ 5, 13, 9, 28 ],
+            "wednesday": [ 22, 1, 9, 17 ],
+            "thursday": [ 24, 3, 11, 19 ],
+            "friday": [ 29, 5, 11, 21 ],
+            "saturday": [ 28, 7, 15, 23 ],
+            "sunday": [ 1, 11, 17, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 159,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Lawrence_Jacob_Self-Portrait_1977.jpg',
+          title: 'Self Portrait',
+          artist: 'Jacob Lawrence',
+          year: '1977',
+          rule: {
+            "monday": [ 1, 11, 17, 25 ],
+            "tuesday": [ 3, 11, 19, 29 ],
+            "wednesday": [ 5, 13, 9, 28 ],
+            "thursday": [ 22, 1, 9, 17 ],
+            "friday": [ 24, 3, 11, 19 ],
+            "saturday": [ 29, 5, 11, 21 ],
+            "sunday": [ 28, 7, 15, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 160,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/large_Lawson.D_03_forweb.jpg',
+          title: 'Ring Bearer',
+          artist: 'Deana Lawson',
+          year: '2016',
+          rule: {
+            "monday": [ 28, 7, 15, 23 ],
+            "tuesday": [ 1, 11, 17, 25 ],
+            "wednesday": [ 3, 11, 19, 29 ],
+            "thursday": [ 5, 13, 9, 28 ],
+            "friday": [ 22, 1, 9, 17 ],
+            "saturday": [ 24, 3, 11, 19 ],
+            "sunday": [ 29, 5, 11, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
