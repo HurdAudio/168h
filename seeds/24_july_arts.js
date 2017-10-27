@@ -2104,6 +2104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 106,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/the-feast-the-banquet-of-nebuchadnezzar.jpg',
+          title: 'The Feast. The Banquet of Nebuchadnezzar',
+          artist: 'Paul Cezanne',
+          year: 'c.1870',
+          rule: {
+            "monday": [ 17, 28, 8, 19 ],
+            "tuesday": [ 16, 27, 7, 18 ],
+            "wednesday": [ 15, 26, 6, 17 ],
+            "thursday": [ 14, 25, 5, 16 ],
+            "friday": [ 13, 24, 4, 15 ],
+            "saturday": [ 12, 23, 3, 14 ],
+            "sunday": [ 18, 29, 9, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 107,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/the-ball.jpg',
+          title: 'The Ball',
+          artist: 'James Tissot',
+          year: '1880',
+          rule: {
+            "monday": [ 18, 29, 9, 20 ],
+            "tuesday": [ 17, 28, 8, 19 ],
+            "wednesday": [ 16, 27, 7, 18 ],
+            "thursday": [ 15, 26, 6, 17 ],
+            "friday": [ 14, 25, 5, 16 ],
+            "saturday": [ 13, 24, 4, 15 ],
+            "sunday": [ 12, 23, 3, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 108,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/undine.jpg',
+          title: 'Undine',
+          artist: 'Henri Fantin-Latour',
+          year: 'c.1896',
+          rule: {
+            "monday": [ 12, 23, 3, 14 ],
+            "tuesday": [ 18, 29, 9, 20 ],
+            "wednesday": [ 17, 28, 8, 19 ],
+            "thursday": [ 16, 27, 7, 18 ],
+            "friday": [ 15, 26, 6, 17 ],
+            "saturday": [ 14, 25, 5, 16 ],
+            "sunday": [ 13, 24, 4, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 109,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/paolo-and-francesca-da-rimini.jpg',
+          title: 'Paolo and Francesca da Rimini',
+          artist: 'Gustave Dore',
+          year: '?',
+          rule: {
+            "monday": [ 13, 24, 4, 15 ],
+            "tuesday": [ 12, 23, 3, 14 ],
+            "wednesday": [ 18, 29, 9, 20 ],
+            "thursday": [ 17, 28, 8, 19 ],
+            "friday": [ 16, 27, 7, 18 ],
+            "saturday": [ 15, 26, 6, 17 ],
+            "sunday": [ 14, 25, 5, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 110,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/innenansicht-der-b-rse-handelsbeurs-von-antwerpen.jpg',
+          title: 'Innenansicht der Börse (Handelsbeurs) von Antwerpen',
+          artist: 'Maxime Lalanne',
+          year: '?',
+          rule: {
+            "monday": [ 14, 25, 5, 16 ],
+            "tuesday": [ 13, 24, 4, 15 ],
+            "wednesday": [ 12, 23, 3, 14 ],
+            "thursday": [ 18, 29, 9, 20 ],
+            "friday": [ 17, 28, 8, 19 ],
+            "saturday": [ 16, 27, 7, 18 ],
+            "sunday": [ 15, 26, 6, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
