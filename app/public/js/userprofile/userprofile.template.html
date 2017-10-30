@@ -567,6 +567,70 @@
       </form>
 
     </div>
+    <div id="userBillsEditingDiv">
+      <div id="userBillsEditorBar">
+        <a href="" class="btn" id="userBillsEditorDoneButton" ng-click="$ctrl.userBillsEditorDone()">done</a>
+        <h1 id="billsEditorTitle">Bill</h1>
+      </div>
+      <form id="userBillsEditorForm" class="pure-form pure-form-stacked">
+        <p id="userBillName">Bill name:</p>
+        <div id="billsOccasionNameDiv">
+          <p>Pay To:</p>
+          <div id="userPayToDiv">
+            <input type="text" id="userBillsPayTo" class="pure-input-1">
+          </div>
+          <p>Address line 1:</p>
+          <div id="userAddressLine1Div">
+            <input type="text" id="userBillsAddressLine1" class="pure-input-1">
+          </div>
+          <p>Address line 2:</p>
+          <div id="userAddressLine2Div">
+            <input type="text" id="userBillsAddressLine2" class="pure-input-1">
+          </div>
+          <p>City:</p>
+          <div id="userCityLineDiv">
+            <input type="text" id="userBillsAddressCity" class="pure-input-1">
+          </div>
+          <p>State:</p>
+          <div id="userStateLineDiv">
+            <input type="text" id="userBillsAddressState" class="pure-input-1">
+          </div>
+          <p>Zip/Postal Code:</p>
+          <div id="userZipLine">
+            <input type="text" id="userBillsAddressZip" class="pure-input-1">
+          </div>
+          <p>Balance:</p>
+          <div id="userBalanceLine">
+            <input type="number" id="userBillsBalance" class="pure-input-1">
+          </div>
+          <p>Amount Due:</p>
+          <div id="userAmountDueLine">
+            <input type="number" id="userBillsAmountDue" class="pure-input-1">
+          </div>
+          <p>Date Due:</p>
+          <div id="userBillDueDatDiv">
+            <input type="date" id="userBillsDateDue" class="pure-input-1">
+          </div>
+          <p>Is Paid:</p>
+          <div id="idPaidCheckboxDiv">
+            <input type="checkbox" id="userBillIsPaid">
+          </div>
+          <div id="userPaymentInfosDiv">
+            <p>Amount Paid:</p>
+            <div id="userBillsPaidAmountDiv">
+              <input type="number" id="userBillsAmountPaid" class="pure-input-1">
+            </div>
+            <p>Date Paid:</p>
+            <div id="datePaidDiv">
+              <input type="date" id="userBillsDatePaid" class="pure-input-1">
+            </div>
+          </div>
+        </div>
+
+
+      </form>
+
+    </div>
   </div>
 
 </div>

@@ -9,7 +9,7 @@ exports.up = function(knex, Promise) {
     table.string('address_line2').notNullable().defaultTo('');
     table.string('city').notNullable().defaultTo('');
     table.string('state').notNullable().defaultTo('');
-    table.integer('zip').defaultTo(null);
+    table.string('zip').defaultTo('');
     table.decimal('balance').defaultTo(null);
     table.decimal('amount_due').defaultTo(null);
     table.decimal('amount_paid').defaultTo(0.00);

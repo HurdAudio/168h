@@ -14,7 +14,7 @@ exports.seed = function(knex, Promise) {
           address_line2: '#4',
           city: 'Springfield',
           state: 'Oklahoma',
-          zip: 44044,
+          zip: '44044',
           balance: 29600.00,
           amount_due: 587.42,
           amount_paid: 0.00,

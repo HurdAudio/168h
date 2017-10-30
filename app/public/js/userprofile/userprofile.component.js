@@ -140,6 +140,317 @@
       vm.deleteHoliday = deleteHoliday;
       vm.taskManager = taskManager;
       vm.closeTasksManager = closeTasksManager;
+      vm.editBill = editBill;
+      vm.userBillsEditorDone = userBillsEditorDone;
+
+      function userBillsEditorDone() {
+        let billsManagerDone = document.getElementById('billsManagerDone');
+        let userBillsEditingDiv = document.getElementById('userBillsEditingDiv');
+
+        billsManagerDone.setAttribute("style", "visibility: visible;");
+        userBillsEditingDiv.setAttribute("style", "display: none;");
+        billsManager();
+      }
+
+      function editBill(billId) {
+        let billsManagerDone = document.getElementById('billsManagerDone');
+        let userBillsEditingDiv = document.getElementById('userBillsEditingDiv');
+        let userBillName = document.getElementById('userBillName');
+        let userPayToDiv = document.getElementById('userPayToDiv');
+        let userBillsPayTo = document.getElementById('userBillsPayTo');
+        if (userBillsPayTo) {
+          userBillsPayTo.parentNode.removeChild(userBillsPayTo);
+          userBillsPayTo = document.createElement('input');
+          userPayToDiv.appendChild(userBillsPayTo);
+          userBillsPayTo.id = 'userBillsPayTo';
+          userBillsPayTo.type = 'text';
+          userBillsPayTo.className = 'pure-input-1';
+        }
+        let userAddressLine1Div = document.getElementById('userAddressLine1Div');
+        let userBillsAddressLine1 = document.getElementById('userBillsAddressLine1');
+        if (userBillsAddressLine1) {
+          userBillsAddressLine1.parentNode.removeChild(userBillsAddressLine1);
+          userBillsAddressLine1 = document.createElement('input');
+          userAddressLine1Div.appendChild(userBillsAddressLine1);
+          userBillsAddressLine1.id = 'userBillsAddressLine1';
+          userBillsAddressLine1.type = 'text';
+          userBillsAddressLine1.className = 'pure-input-1';
+        }
+        let userAddressLine2Div = document.getElementById('userAddressLine2Div');
+        let userBillsAddressLine2 = document.getElementById('userBillsAddressLine2');
+        if (userBillsAddressLine2) {
+          userBillsAddressLine2.parentNode.removeChild(userBillsAddressLine2);
+          userBillsAddressLine2 = document.createElement('input');
+          userAddressLine2Div.appendChild(userBillsAddressLine2);
+          userBillsAddressLine2.id = 'userBillsAddressLine2';
+          userBillsAddressLine2.type = 'text';
+          userBillsAddressLine2.className = 'pure-input-1';
+        }
+        let userCityLineDiv = document.getElementById('userCityLineDiv');
+        let userBillsAddressCity = document.getElementById('userBillsAddressCity');
+        if (userBillsAddressCity) {
+          userBillsAddressCity.parentNode.removeChild(userBillsAddressCity);
+          userBillsAddressCity = document.createElement('input');
+          userCityLineDiv.appendChild(userBillsAddressCity);
+          userBillsAddressCity.id = 'userBillsAddressCity';
+          userBillsAddressCity.type = 'text';
+          userBillsAddressCity.className = 'pure-input-1';
+        }
+        let userStateLineDiv = document.getElementById('userStateLineDiv');
+        let userBillsAddressState = document.getElementById('userBillsAddressState');
+        if (userBillsAddressState) {
+          userBillsAddressState.parentNode.removeChild(userBillsAddressState);
+          userBillsAddressState = document.createElement('input');
+          userStateLineDiv.appendChild(userBillsAddressState);
+          userBillsAddressState.id = 'userBillsAddressState';
+          userBillsAddressState.type = 'text';
+          userBillsAddressState.className = 'pure-input-1';
+        }
+        let userZipLine = document.getElementById('userZipLine');
+        let userBillsAddressZip = document.getElementById('userBillsAddressZip');
+        if (userBillsAddressZip) {
+          userBillsAddressZip.parentNode.removeChild(userBillsAddressZip);
+          userBillsAddressZip = document.createElement('input');
+          userZipLine.appendChild(userBillsAddressZip);
+          userBillsAddressZip.id = 'userBillsAddressZip';
+          userBillsAddressZip.type = 'text';
+          userBillsAddressZip.className = 'pure-input-1';
+        }
+        let userBalanceLine = document.getElementById('userBalanceLine');
+        let userBillsBalance = document.getElementById('userBillsBalance');
+        if (userBillsBalance) {
+          userBillsBalance.parentNode.removeChild(userBillsBalance);
+          userBillsBalance = document.createElement('input');
+          userBalanceLine.appendChild(userBillsBalance);
+          userBillsBalance.id = 'userBillsBalance';
+          userBillsBalance.type = 'number';
+          userBillsBalance.className = 'pure-input-1';
+        }
+        let userAmountDueLine = document.getElementById('userAmountDueLine');
+        let userBillsAmountDue = document.getElementById('userBillsAmountDue');
+        if (userBillsAmountDue) {
+          userBillsAmountDue.parentNode.removeChild(userBillsAmountDue);
+          userBillsAmountDue = document.createElement('input');
+          userAmountDueLine.appendChild(userBillsAmountDue);
+          userBillsAmountDue.id = 'userBillsAmountDue';
+          userBillsAmountDue.type = 'number';
+          userBillsAmountDue.className = 'pure-input-1';
+        }
+        let userBillDueDatDiv = document.getElementById('userBillDueDatDiv');
+        let userBillsDateDue = document.getElementById('userBillsDateDue');
+        if (userBillsDateDue) {
+          userBillsDateDue.parentNode.removeChild(userBillsDateDue);
+          userBillsDateDue = document.createElement('input');
+          userBillDueDatDiv.appendChild(userBillsDateDue);
+          userBillsDateDue.id = 'userBillsDateDue';
+          userBillsDateDue.type = 'date';
+          userBillsDateDue.className = 'pure-input-1';
+        }
+        let idPaidCheckboxDiv = document.getElementById('idPaidCheckboxDiv');
+        let userBillIsPaid = document.getElementById('userBillIsPaid');
+        if (userBillIsPaid) {
+          userBillIsPaid.parentNode.removeChild(userBillIsPaid);
+          idPaidCheckboxDiv.appendChild(userBillIsPaid);
+          userBillIsPaid.id = 'userBillIsPaid';
+          userBillIsPaid.type = 'checkbox';
+        }
+        let userPaymentInfosDiv = document.getElementById('userPaymentInfosDiv');
+        let userBillsPaidAmountDiv = document.getElementById('userBillsPaidAmountDiv');
+        let userBillsAmountPaid = document.getElementById('userBillsAmountPaid');
+        if (userBillsAmountPaid) {
+          userBillsAmountPaid.parentNode.removeChild(userBillsAmountPaid);
+          userBillsAmountPaid = document.createElement('input');
+          userBillsPaidAmountDiv.appendChild(userBillsAmountPaid);
+          userBillsAmountPaid.id = 'userBillsAmountPaid';
+          userBillsAmountPaid.type = 'number';
+          userBillsAmountPaid.className = 'pure-input-1';
+        }
+        let datePaidDiv = document.getElementById('datePaidDiv');
+        let userBillsDatePaid = document.getElementById('userBillsDatePaid');
+        if (userBillsDatePaid) {
+          userBillsDatePaid.parentNode.removeChild(userBillsDatePaid);
+          userBillsDatePaid = document.createElement('input');
+          datePaidDiv.appendChild(userBillsDatePaid);
+          userBillsDatePaid.id = 'userBillsDatePaid';
+          userBillsDatePaid.type = 'date';
+          userBillsDatePaid.className = 'pure-input-1';
+        }
+
+        $http.get(`/bills/${billId}`)
+        .then(userBillData=>{
+          let userBill = userBillData.data;
+          userBillName.innerHTML = userBill.name;
+          userBillsPayTo.value = userBill.pay_to;
+          userBillsAddressLine1.value = userBill.address_line1;
+          userBillsAddressLine2.value = userBill.address_line2;
+          userBillsAddressCity.value = userBill.city;
+          userBillsAddressState.value = userBill.state;
+          userBillsAddressZip.value = userBill.zip;
+          userBillsBalance.value = userBill.balance;
+          userBillsAmountDue.value = userBill.amount_due;
+          userBillsDateDue.value = userBill.due_date.slice(0,10);
+          if (userBill.is_paid) {
+            userBillIsPaid.checked = true;
+            userPaymentInfosDiv.setAttribute("style", "display: initial;");
+          } else {
+            userBillIsPaid.checked = false;
+            userPaymentInfosDiv.setAttribute("style", "display: none;");
+          }
+          userBillsAmountPaid.value = userBill.amount_paid;
+          if (userBill.date_paid !== null) {
+            userBillsDatePaid.value = userBill.date_paid.slice(0, 10);
+          }
+
+          userBillsPayTo.addEventListener('focusout', ()=>{
+            if ((userBillsPayTo.value !== userBill.pay_to) && (userBillsPayTo.value !== '')) {
+              let subObj = {
+                pay_to: userBillsPayTo.value
+              };
+              $http.patch(`/bills/${billId}`, subObj)
+              .then(()=>{
+                userBill.pay_to = userBillsPayTo.value;
+              });
+            }
+          });
+          userBillsAddressLine1.addEventListener('focusout', ()=>{
+            if ((userBillsAddressLine1.value !== userBill.address_line1) && (userBillsAddressLine1.value !== '')) {
+              let subObj = {
+                address_line1: userBillsAddressLine1.value
+              };
+              $http.patch(`/bills/${billId}`, subObj)
+              .then(()=>{
+                userBill.address_line1 = userBillsAddressLine1.value;
+              });
+            }
+          });
+          userBillsAddressLine2.addEventListener('focusout', ()=>{
+            if ((userBillsAddressLine2.value !== userBill.address_line2) && (userBillsAddressLine2.value !== '')) {
+              let subObj = {
+                address_line2: userBillsAddressLine2.value
+              };
+              $http.patch(`/bills/${billId}`, subObj)
+              .then(()=>{
+                userBill.address_line2 = userBillsAddressLine2.value;
+              });
+            }
+          });
+          userBillsAddressCity.addEventListener('focusout', ()=>{
+            if ((userBillsAddressCity.value !== userBill.city) && (userBillsAddressCity.value !== '')) {
+              let subObj = {
+                city: userBillsAddressCity.value
+              };
+              $http.patch(`/bills/${billId}`, subObj)
+              .then(()=>{
+                userBill.city = userBillsAddressCity.value;
+              });
+            }
+          });
+          userBillsAddressState.addEventListener('focusout', ()=>{
+            if ((userBillsAddressState.value !== userBill.state) && (userBillsAddressState.value !== '')) {
+              let subObj = {
+                state: userBillsAddressState.value
+              };
+              $http.patch(`/bills/${billId}`, subObj)
+              .then(()=>{
+                userBill.state = userBillsAddressState.value;
+              });
+            }
+          });
+          userBillsAddressZip.addEventListener('focusout', ()=>{
+            if ((userBillsAddressZip.value !== userBill.zip) && (userBillsAddressZip.value !== '')) {
+              let subObj = {
+                zip: userBillsAddressZip.value
+              };
+              $http.patch(`/bills/${billId}`, subObj)
+              .then(()=>{
+                userBill.zip = userBillsAddressZip.value;
+              });
+            }
+          });
+          userBillsBalance.addEventListener('focusout', ()=>{
+            if (userBillsBalance.value !== userBill.balance) {
+              let subObj = {
+                balance: userBillsBalance.value
+              };
+              $http.patch(`/bills/${billId}`, subObj)
+              .then(()=>{
+                userBill.balance = userBillsBalance.value;
+              });
+            }
+          });
+          userBillsAmountDue.addEventListener('focusout', ()=>{
+            if (userBillsAmountDue.value !== userBill.amount_due) {
+              let subObj = {
+                amount_due: userBillsAmountDue.value
+              };
+              $http.patch(`/bills/${billId}`, subObj)
+              .then(()=>{
+                userBill.amount_due = userBillsAmountDue.value;
+              });
+            }
+          });
+          userBillsDateDue.addEventListener('change', ()=>{
+            let upDate = new Date(userBillsDateDue.value);
+            let subObj = {
+              due_date: upDate
+            };
+            $http.patch(`/bills/${billId}`, subObj)
+            .then(()=>{
+              userBill.due_date = upDate;
+            });
+          });
+          userBillIsPaid.addEventListener('click', ()=>{
+            let subObj = {
+              is_paid: userBillIsPaid.checked
+            };
+            if (userBillIsPaid.checked) {
+              if (userBill.date_paid === null) {
+                subObj.date_paid = new Date();
+              }
+              if (userBill.amount_paid < 0.01) {
+                subObj.amount_paid = userBill.amount_due;
+                userBillsAmountPaid.value = subObj.amount_paid;
+              }
+              userPaymentInfosDiv.setAttribute("style", "display: initial;");
+              $http.patch(`/bills/${billId}`, subObj)
+              .then(()=>{
+                userBill.is_paid = true;
+              });
+            } else {
+              userPaymentInfosDiv.setAttribute("style", "display: none;");
+              $http.patch(`/bills/${billId}`, subObj)
+              .then(()=>{
+                userBill.is_paid = false;
+              });
+            }
+          });
+          userBillsAmountPaid.addEventListener('focusout', ()=>{
+            if (userBillsAmountPaid.value !== userBill.amount_paid) {
+              let subObj = {
+                amount_paid: userBillsAmountPaid.value
+              };
+              $http.patch(`/bills/${billId}`, subObj)
+              .then(()=>{
+                userBill.amount_paid = userBillsAmountPaid.value;
+              });
+            }
+          });
+          userBillsDatePaid.addEventListener('change', ()=>{
+            let subObj = {
+              date_paid: new Date(userBillsDatePaid.value)
+            };
+            $http.patch(`/bills/${billId}`, subObj)
+            .then(()=>{
+              userBill.date_paid = new Date(userBillsDatePaid.value);
+            });
+          });
+        });
+
+
+        billsManagerDone.setAttribute("style", "visibility: hidden;");
+        userBillsEditingDiv.setAttribute("style", "display: initial;");
+
+      }
 
       function populateTasksManager() {
         $http.get(`/tasksbyuser/${currentUserId}`)
