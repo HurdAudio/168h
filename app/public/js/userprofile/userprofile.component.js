@@ -142,6 +142,74 @@
       vm.closeTasksManager = closeTasksManager;
       vm.editBill = editBill;
       vm.userBillsEditorDone = userBillsEditorDone;
+      vm.deleteOccasion = deleteOccasion;
+
+      function deleteOccasion(occasionId) {
+        let userOccasionDeleteConfirmDiv = document.getElementById('userOccasionDeleteConfirmDiv');
+        let occasionsManagementDiv = document.getElementById('occasionsManagementDiv');
+        let userOccasionDeleteName = document.getElementById('userOccasionDeleteName');
+        let userOccasionDeleteDate = document.getElementById('userOccasionDeleteDate');
+        let userOccasionDeleteAnnuality = document.getElementById('userOccasionDeleteAnnuality');
+        let userOccasionDeleteConfirmButtons = document.getElementById('userOccasionDeleteConfirmButtons');
+        let userOccasionConfirmYes = document.getElementById('userOccasionConfirmYes');
+        if (userOccasionConfirmYes) {
+          userOccasionConfirmYes.parentNode.removeChild(userOccasionConfirmYes);
+          userOccasionConfirmYes = document.createElement('a');
+          userOccasionDeleteConfirmButtons.appendChild(userOccasionConfirmYes);
+          userOccasionConfirmYes.id = 'userOccasionConfirmYes';
+          userOccasionConfirmYes.className = 'btn';
+          userOccasionConfirmYes.innerHTML = 'yes';
+          userOccasionConfirmYes.setAttribute("style", "cursor: pointer;");
+        }
+        let occasionsManagerDone = document.getElementById('occasionsManagerDone');
+        let userOccasionsEditingDiv = document.getElementById('userOccasionsEditingDiv');
+        let userOccasionConfirmNo = document.getElementById('userOccasionConfirmNo');
+        if (userOccasionConfirmNo) {
+          userOccasionConfirmNo.parentNode.removeChild(userOccasionConfirmNo);
+          userOccasionConfirmNo = document.createElement('a');
+          userOccasionDeleteConfirmButtons.appendChild(userOccasionConfirmNo);
+          userOccasionConfirmNo.id = 'userOccasionConfirmNo';
+          userOccasionConfirmNo.className = 'btn';
+          userOccasionConfirmNo.innerHTML = 'no';
+          userOccasionConfirmNo.setAttribute("style", "cursor: pointer;");
+        }
+
+
+        $http.get(`/occasions/${occasionId}`)
+        .then(userOccasionData=>{
+          let userOccasion = userOccasionData.data;
+          userOccasionDeleteName.innerHTML = userOccasion.name;
+          userOccasionDeleteDate.innerHTML = cleanDate(userOccasion.day_of);
+          if (userOccasion.is_annual) {
+            userOccasionDeleteAnnuality.innerHTML = 'occurs annually';
+          }
+
+          userOccasionConfirmYes.addEventListener('click', ()=>{
+            $http.delete(`/occasions/${occasionId}`)
+            .then(()=>{
+              userOccasionDeleteConfirmDiv.setAttribute("style", "display: none;");
+              occasionsManagementDiv.setAttribute("style", "display: initial;");
+              userOccasionDeleteName.innerHTML = '';
+              userOccasionDeleteDate.innerHTML = '';
+              userOccasionDeleteAnnuality.innerHTML = '';
+              occasionManage();
+            });
+          });
+          userOccasionConfirmNo.addEventListener('click', ()=>{
+            userOccasionDeleteConfirmDiv.setAttribute("style", "display: none;");
+            occasionsManagementDiv.setAttribute("style", "display: initial;");
+            userOccasionDeleteName.innerHTML = '';
+            userOccasionDeleteDate.innerHTML = '';
+            userOccasionDeleteAnnuality.innerHTML = '';
+            occasionManage();
+          });
+        });
+
+        userOccasionDeleteConfirmDiv.setAttribute("style", "display: initial;");
+        occasionsManagementDiv.setAttribute("style", "display: none;");
+        occasionsManagerDone.setAttribute("style", "visibility: visible;");
+        userOccasionsEditingDiv.setAttribute("style", "display: none;");
+      }
 
       function userBillsEditorDone() {
         let billsManagerDone = document.getElementById('billsManagerDone');
