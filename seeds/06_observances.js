@@ -8564,6 +8564,39 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 546,
+          user_id: 1,
+          name: 'Denman Maroney (pianist), born 1949',
+          color: '#5FA49A',
+          picture: './img/musicians/denmanmaroney.jpg',
+          day_of: new Date ('1949-07-25T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: true,
+          override_content: {
+            "sources": [ 'bandcamp', 'bandcamp', 'bandcamp' ],
+            "src_strings": [ 'https://bandcamp.com/EmbeddedPlayer/album=3198865063/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=4021141104/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=8059155/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/' ],
+            "href_strings": [ 'http://denmanmaroney.bandcamp.com/album/alt-timers-crispr', 'http://outnowrecordings.bandcamp.com/album/arson', 'http://joshsinton.bandcamp.com/album/anomonous' ],
+            "a_strings": [ 'alt.timers&#39; CRISPR by Denman Maroney', 'Arson by Hans Tammen &amp; Denman Maroney', 'anomonous by Josh Sinton, Denman Maroney &amp; Ben Miller' ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 547,
+          user_id: 1,
+          name: 'Nuclear war broke out on this day in 2006 and ended the world according the prophecy of Yisrayl Hawkins of the House of Yaweh',
+          color: '#506070',
+          picture: './img/doomsday/yahwehorthehaweh.jpg',
+          day_of: new Date ('2006-09-12T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
