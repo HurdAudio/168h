@@ -706,6 +706,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 40,
+          user_id: 1,
+          theme: 'ethiopia and pan-african',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=176442819/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://hailumergia.bandcamp.com/album/hailu-mergia-his-classical-instrument-shemonmuanaye',
+          a_string: 'Hailu Mergia &amp; His Classical Instrument: Shemonmuanaye by Hailu Mergia',
+          rule: {
+            "monday": [ 4, 15, 26, 28 ],
+            "tuesday": [ 3, 14, 25, 27 ],
+            "wednesday": [ 2, 13, 24, 26 ],
+            "thursday": [ 6, 17, 28, 30 ],
+            "saturday": [ 5, 16, 27, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 41,
+          user_id: 1,
+          theme: 'ethiopia and pan-african',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4183200316/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://dur-durband.bandcamp.com/album/volume-5',
+          a_string: 'Volume 5 by Dur-Dur Band',
+          rule: {
+            "monday": [ 5, 16, 27, 29 ],
+            "tuesday": [ 4, 15, 26, 28 ],
+            "wednesday": [ 3, 14, 25, 27 ],
+            "thursday": [ 2, 13, 24, 26 ],
+            "saturday": [ 6, 17, 28, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 42,
+          user_id: 1,
+          theme: 'ethiopia and pan-african',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=352960671/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://atakak.bandcamp.com/album/obaa-sima',
+          a_string: 'Obaa Sima by Ata Kak',
+          rule: {
+            "monday": [ 7, 18, 29, 1 ],
+            "tuesday": [ 6, 17, 28, 30 ],
+            "wednesday": [ 5, 16, 27, 29 ],
+            "thursday": [ 4, 15, 26, 28 ],
+            "saturday": [ 3, 14, 25, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
