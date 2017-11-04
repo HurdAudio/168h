@@ -3404,6 +3404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 171,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/green-sound-1964.jpg',
+          title: 'Green Sound',
+          artist: 'Jeremy Moon',
+          year: '1964',
+          rule: {
+            "monday": [ 25, 26, 6, 29 ],
+            "tuesday": [ 28, 30, 22, 11 ],
+            "wednesday": [ 30, 31, 23, 26 ],
+            "thursday": [ 2, 3, 25, 29 ],
+            "friday": [ 5, 7, 8, 10 ],
+            "saturday": [ 7, 9, 13, 16 ],
+            "sunday": [ 9, 11, 12, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 172,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/heroic-roses-1938(1).jpg',
+          title: 'Heroic Roses',
+          artist: 'Paul Klee',
+          year: '1938',
+          rule: {
+            "monday": [ 9, 11, 12, 15 ],
+            "tuesday": [ 25, 26, 6, 29 ],
+            "wednesday": [ 28, 30, 22, 11 ],
+            "thursday": [ 30, 31, 23, 26 ],
+            "friday": [ 2, 3, 25, 29 ],
+            "saturday": [ 5, 7, 8, 10 ],
+            "sunday": [ 7, 9, 13, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 173,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/work-2009.jpg',
+          title: 'Work',
+          artist: 'Tsuruko Yamazaki',
+          year: '2009',
+          rule: {
+            "monday": [ 7, 9, 13, 16 ],
+            "tuesday": [ 9, 11, 12, 15 ],
+            "wednesday": [ 25, 26, 6, 29 ],
+            "thursday": [ 28, 30, 22, 11 ],
+            "friday": [ 30, 31, 23, 26 ],
+            "saturday": [ 2, 3, 25, 29 ],
+            "sunday": [ 5, 7, 8, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 174,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/anima-mundi-10-ed-2011.jpg',
+          title: 'Anima Mundi 10 Ed',
+          artist: 'Imi Knoebel',
+          year: '2011',
+          rule: {
+            "monday": [ 5, 7, 8, 10 ],
+            "tuesday": [ 7, 9, 13, 16 ],
+            "wednesday": [ 9, 11, 12, 15 ],
+            "thursday": [ 25, 26, 6, 29 ],
+            "friday": [ 28, 30, 22, 11 ],
+            "saturday": [ 30, 31, 23, 26 ],
+            "sunday": [ 2, 3, 25, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 175,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/red-heart-1980.jpg',
+          title: 'Red Heart',
+          artist: 'Friedel Dzubas',
+          year: '1980',
+          rule: {
+            "monday": [ 2, 3, 25, 29 ],
+            "tuesday": [ 5, 7, 8, 10 ],
+            "wednesday": [ 7, 9, 13, 16 ],
+            "thursday": [ 9, 11, 12, 15 ],
+            "friday": [ 25, 26, 6, 29 ],
+            "saturday": [ 28, 30, 22, 11 ],
+            "sunday": [ 30, 31, 23, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
