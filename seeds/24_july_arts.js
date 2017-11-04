@@ -2204,6 +2204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 111,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/the-heart-s-awakening-1892.jpg',
+          title: 'he Heart\'s Awakening',
+          artist: 'William-Adolphe Bouguereau',
+          year: '1892',
+          rule: {
+            "monday": [ 15, 26, 6, 17 ],
+            "tuesday": [ 14, 25, 5, 16 ],
+            "wednesday": [ 13, 24, 4, 15 ],
+            "thursday": [ 12, 23, 3, 14 ],
+            "friday": [ 18, 29, 9, 20 ],
+            "saturday": [ 17, 28, 8, 19 ],
+            "sunday": [ 16, 27, 7, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 112,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/princess-pauline-metternich-on-the-beach.jpg',
+          title: 'Princess Pauline Metternich on the Beach',
+          artist: 'Eugene Boudin',
+          year: 'c.1865',
+          rule: {
+            "monday": [ 17, 28, 8, 19 ],
+            "tuesday": [ 16, 27, 7, 18 ],
+            "wednesday": [ 15, 26, 6, 17 ],
+            "thursday": [ 14, 25, 5, 16 ],
+            "friday": [ 13, 24, 4, 15 ],
+            "saturday": [ 19, 30, 10, 21 ],
+            "sunday": [ 18, 29, 9, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 113,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/samson-and-delilah.jpg',
+          title: 'Samson and Delilah',
+          artist: 'Alexandre Cabanel',
+          year: '1878',
+          rule: {
+            "monday": [ 18, 29, 9, 20 ],
+            "tuesday": [ 17, 28, 8, 19 ],
+            "wednesday": [ 16, 27, 7, 18 ],
+            "thursday": [ 15, 26, 6, 17 ],
+            "friday": [ 14, 25, 5, 16 ],
+            "saturday": [ 13, 24, 4, 15 ],
+            "sunday": [ 19, 30, 10, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 114,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/charles-meryon-archway-pont-n-tre-dame-1853.jpg',
+          title: 'Archway, Pont Nôtre-dame, Paris',
+          artist: 'Charles Meryon',
+          year: '1853',
+          rule: {
+            "monday": [ 19, 30, 10, 21 ],
+            "tuesday": [ 18, 29, 9, 20 ],
+            "wednesday": [ 17, 28, 8, 19 ],
+            "thursday": [ 16, 27, 7, 18 ],
+            "friday": [ 15, 26, 6, 17 ],
+            "saturday": [ 14, 25, 5, 16 ],
+            "sunday": [ 13, 24, 4, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 115,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/apple-trees-in-blossom-1862.jpg',
+          title: 'Apple Trees in Blossom',
+          artist: 'Charles-Francois Daubigny',
+          year: '1860 - 1862',
+          rule: {
+            "monday": [ 13, 24, 4, 15 ],
+            "tuesday": [ 19, 30, 10, 21 ],
+            "wednesday": [ 18, 29, 9, 20 ],
+            "thursday": [ 17, 28, 8, 19 ],
+            "friday": [ 16, 27, 7, 18 ],
+            "saturday": [ 15, 26, 6, 17 ],
+            "sunday": [ 14, 25, 5, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
