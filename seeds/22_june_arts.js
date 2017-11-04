@@ -2404,6 +2404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 121,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/medallion-1948.jpg',
+          title: 'Medallion',
+          artist: 'Frederick Sommer',
+          year: '1948',
+          rule: {
+            "monday": [ 18, 28, 8, 15 ],
+            "tuesday": [ 17, 27, 7, 15 ],
+            "wednesday": [ 16, 26, 6, 14 ],
+            "thursday": [ 15, 25, 5, 13 ],
+            "friday": [ 14, 24, 4, 12 ],
+            "saturday": [ 13, 23, 3, 11 ],
+            "sunday": [ 12, 22, 2, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 122,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/siesta-1926.jpg',
+          title: 'Siesta',
+          artist: 'Laszlo Moholy-Nagy',
+          year: '1926',
+          rule: {
+            "monday": [ 12, 22, 2, 10 ],
+            "tuesday": [ 18, 28, 8, 15 ],
+            "wednesday": [ 17, 27, 7, 15 ],
+            "thursday": [ 16, 26, 6, 14 ],
+            "friday": [ 15, 25, 5, 13 ],
+            "saturday": [ 14, 24, 4, 12 ],
+            "sunday": [ 13, 23, 3, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 123,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/radio-tower-berlin-1928.jpg',
+          title: 'Radio Tower Berlin',
+          artist: 'Laszlo Moholy-Nagy',
+          year: '1928',
+          rule: {
+            "monday": [ 13, 23, 3, 11 ],
+            "tuesday": [ 12, 22, 2, 10 ],
+            "wednesday": [ 18, 28, 8, 15 ],
+            "thursday": [ 17, 27, 7, 15 ],
+            "friday": [ 16, 26, 6, 14 ],
+            "saturday": [ 15, 25, 5, 13 ],
+            "sunday": [ 14, 24, 4, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 124,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/gala-as-madonna-of-port-lligat.jpg',
+          title: 'Gala as Madonna of Port Lligat',
+          artist: 'Salvador Dali',
+          year: '1950',
+          rule: {
+            "monday": [ 14, 24, 4, 12 ],
+            "tuesday": [ 13, 23, 3, 11 ],
+            "wednesday": [ 12, 22, 2, 10 ],
+            "thursday": [ 18, 28, 8, 15 ],
+            "friday": [ 17, 27, 7, 15 ],
+            "saturday": [ 16, 26, 6, 14 ],
+            "sunday": [ 15, 25, 5, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 125,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/untitled-1962.jpg',
+          title: 'Untitled',
+          artist: 'Frederick Sommer',
+          year: '1962',
+          rule: {
+            "monday": [ 15, 25, 5, 13 ],
+            "tuesday": [ 14, 24, 4, 12 ],
+            "wednesday": [ 13, 23, 3, 11 ],
+            "thursday": [ 12, 22, 2, 10 ],
+            "friday": [ 18, 28, 8, 15 ],
+            "saturday": [ 17, 27, 7, 15 ],
+            "sunday": [ 16, 26, 6, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
