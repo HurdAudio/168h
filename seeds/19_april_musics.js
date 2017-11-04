@@ -1462,6 +1462,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 82,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1269458615/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://wildflowermusic.bandcamp.com/album/wildflower',
+          a_string: 'WILDFLOWER by Idris Rahman, Leon Brichard, Tom Skinner',
+          rule: {
+            "monday": [ 15, 23, 5, 10 ],
+            "tuesday": [ 14, 22, 4, 9 ],
+            "wednesday": [ 13, 21, 3, 8 ],
+            "thursday": [ 12, 20, 2, 7 ],
+            "saturday": [ 11, 19, 1, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 83,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2178562759/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tonyburkill.bandcamp.com/album/work-money-death',
+          a_string: 'Work Money Death by Tony Burkill',
+          rule: {
+            "monday": [ 11, 19, 1, 6 ],
+            "tuesday": [ 15, 23, 5, 10 ],
+            "wednesday": [ 14, 22, 4, 9 ],
+            "thursday": [ 13, 21, 3, 8 ],
+            "saturday": [ 12, 20, 2, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 84,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2301339764/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bjornmeyer.bandcamp.com/album/provenance-2',
+          a_string: 'Provenance by Björn Meyer',
+          rule: {
+            "monday": [ 13, 21, 3, 8 ],
+            "tuesday": [ 12, 20, 2, 7 ],
+            "wednesday": [ 16, 24, 6, 11 ],
+            "thursday": [ 15, 23, 5, 10 ],
+            "saturday": [ 14, 22, 4, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
