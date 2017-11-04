@@ -2004,6 +2004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 101,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/tuning-saws-1927.jpg',
+          title: 'Tuning saws',
+          artist: 'Oleksandr Bogomazov',
+          year: '1927',
+          rule: {
+            "monday": [ 12, 15, 24, 9 ],
+            "tuesday": [ 18, 22, 30, 15 ],
+            "wednesday": [ 17, 20, 29, 14 ],
+            "thursday": [ 16, 20, 28, 13 ],
+            "friday": [ 15, 19, 27, 12 ],
+            "saturday": [ 14, 18, 26, 11 ],
+            "sunday": [ 13, 16, 25, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 102,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/sunrise-1924.jpg',
+          title: 'Sunrise',
+          artist: 'Arthur Dove',
+          year: '1924',
+          rule: {
+            "monday": [ 13, 16, 25, 10 ],
+            "tuesday": [ 12, 15, 24, 9 ],
+            "wednesday": [ 18, 22, 30, 15 ],
+            "thursday": [ 17, 20, 29, 14 ],
+            "friday": [ 16, 20, 28, 13 ],
+            "saturday": [ 15, 19, 27, 12 ],
+            "sunday": [ 14, 18, 26, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 103,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/bullfighting-amateur-1910.jpg',
+          title: 'Bullfighting amateur',
+          artist: 'Pyotr Konchalovsky',
+          year: '1910',
+          rule: {
+            "monday": [ 14, 18, 26, 11 ],
+            "tuesday": [ 13, 16, 25, 10 ],
+            "wednesday": [ 12, 15, 24, 9 ],
+            "thursday": [ 18, 22, 30, 15 ],
+            "friday": [ 17, 20, 29, 14 ],
+            "saturday": [ 16, 20, 28, 13 ],
+            "sunday": [ 15, 19, 27, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 104,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/radha-s-vihara-1936.jpg',
+          title: 'Radha\'s Vihara',
+          artist: 'Nandalal Bose',
+          year: '1936',
+          rule: {
+            "monday": [ 15, 19, 27, 12 ],
+            "tuesday": [ 14, 18, 26, 11 ],
+            "wednesday": [ 13, 16, 25, 10 ],
+            "thursday": [ 12, 15, 24, 9 ],
+            "friday": [ 18, 22, 30, 15 ],
+            "saturday": [ 17, 20, 29, 14 ],
+            "sunday": [ 16, 20, 28, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 105,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/grand-musicien-1920.jpg',
+          title: 'Grand musicien',
+          artist: 'Georges Ribemont-Dessaignes',
+          year: '1920',
+          rule: {
+            "monday": [ 17, 21, 29, 14 ],
+            "tuesday": [ 16, 20, 28, 13 ],
+            "wednesday": [ 15, 19, 27, 12 ],
+            "thursday": [ 14, 17, 26, 11 ],
+            "friday": [ 13, 16, 25, 10 ],
+            "saturday": [ 19, 23, 31, 16 ],
+            "sunday": [ 18, 21, 30, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
