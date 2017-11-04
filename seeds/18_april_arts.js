@@ -2804,6 +2804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 141,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/32ef9741e664c2704202bb21e0bc0f69.jpg',
+          title: 'Angel Stadium in Anaheim',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 4, 24, 30, 7 ],
+            "tuesday": [ 19, 24, 30, 6 ],
+            "wednesday": [ 18, 22, 7, 5 ],
+            "thursday": [ 17, 22, 27, 4 ],
+            "friday": [ 16, 21, 27, 3 ],
+            "saturday": [ 15, 20, 26, 2 ],
+            "sunday": [ 20, 26, 1, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 142,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/kT85BXLpc.jpg',
+          title: 'On Deck Circle',
+          artist: 'The Halo Way',
+          year: 'XXI cent.',
+          rule: {
+            "monday": [ 20, 26, 1, 8 ],
+            "tuesday": [ 4, 24, 30, 7 ],
+            "wednesday": [ 19, 24, 30, 6 ],
+            "thursday": [ 18, 22, 7, 5 ],
+            "friday": [ 17, 22, 27, 4 ],
+            "saturday": [ 16, 21, 27, 3 ],
+            "sunday": [ 15, 20, 26, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 143,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/IMG_420022.jpg',
+          title: 'Los Angeles Angels Baseball',
+          artist: '?',
+          year: 'XXI cent.',
+          rule: {
+            "monday": [ 15, 20, 26, 2 ],
+            "tuesday": [ 20, 26, 1, 8 ],
+            "wednesday": [ 4, 24, 30, 7 ],
+            "thursday": [ 19, 24, 30, 6 ],
+            "friday": [ 18, 22, 7, 5 ],
+            "saturday": [ 17, 22, 27, 4 ],
+            "sunday": [ 16, 21, 27, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 144,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/US_baseball_blog_960x480_brick.jpg',
+          title: 'Uber and the Los Angeles Angels of Anaheim',
+          artist: '?',
+          year: 'xxi Cent.',
+          rule: {
+            "monday": [ 16, 21, 27, 3 ],
+            "tuesday": [ 15, 20, 26, 2 ],
+            "wednesday": [ 20, 26, 1, 8 ],
+            "thursday": [ 4, 24, 30, 7 ],
+            "friday": [ 19, 24, 30, 6 ],
+            "saturday": [ 18, 22, 7, 5 ],
+            "sunday": [ 17, 22, 27, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 145,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/jEXwIYE.jpg',
+          title: 'Earl Weaver Teaches the Art of Umpire Arguing',
+          artist: '?',
+          year: 'xx Cent.',
+          rule: {
+            "monday": [ 17, 22, 27, 4 ],
+            "tuesday": [ 16, 21, 27, 3 ],
+            "wednesday": [ 15, 20, 26, 2 ],
+            "thursday": [ 20, 26, 1, 8 ],
+            "friday": [ 4, 24, 30, 7 ],
+            "saturday": [ 19, 24, 30, 6 ],
+            "sunday": [ 18, 22, 7, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
