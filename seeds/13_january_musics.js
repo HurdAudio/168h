@@ -1786,6 +1786,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 100,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1469135419/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://paulineoliveros1.bandcamp.com/album/tosca-salad',
+          a_string: 'Tosca Salad by Deep Listening Band',
+          rule: {
+            "monday": [ 21, 28, 29, 30 ],
+            "tuesday": [ 19, 23, 25, 29 ],
+            "wednesday": [ 21, 28, 30, 29 ],
+            "thursday": [ 29, 23, 25, 30 ],
+            "saturday": [ 20, 27, 28, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 101,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=791025018/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://paulineoliveros1.bandcamp.com/album/springs',
+          a_string: 'Springs by Pauline Oliveros/Andrew Deutsch',
+          rule: {
+            "monday": [ 20, 27, 28, 29 ],
+            "tuesday": [ 21, 28, 29, 30 ],
+            "wednesday": [ 19, 23, 25, 29 ],
+            "thursday": [ 21, 28, 30, 29 ],
+            "saturday": [ 29, 23, 25, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 102,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3967941489/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://shinkoyo.bandcamp.com/album/music-of-shinkoyo',
+          a_string: 'Music of Shinkoyo by SHINKOYO',
+          rule: {
+            "monday": [ 29, 23, 25, 30 ],
+            "tuesday": [ 20, 27, 28, 29 ],
+            "wednesday": [ 21, 28, 29, 30 ],
+            "thursday": [ 19, 23, 25, 29 ],
+            "saturday": [ 21, 28, 30, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
