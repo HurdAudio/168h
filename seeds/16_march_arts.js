@@ -3004,6 +3004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 151,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/composition-dans-un-cercle-1937.jpg',
+          title: 'Composition dans un cercle',
+          artist: 'Sophie Taeuber-Arp',
+          year: '1937',
+          rule: {
+            "monday": [ 17, 27, 4, 14 ],
+            "tuesday": [ 16, 26, 4, 13 ],
+            "wednesday": [ 22, 31, 9, 18 ],
+            "thursday": [ 21, 31, 10, 18 ],
+            "friday": [ 20, 30, 7, 17 ],
+            "saturday": [ 19, 29, 6, 16 ],
+            "sunday": [ 18, 28, 5, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 152,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/untitled-from-an-ethnographic-museum-1930.jpg',
+          title: 'Untitled (From an Ethnographic Museum)',
+          artist: 'Hannah Hoch',
+          year: '1930',
+          rule: {
+            "monday": [ 18, 28, 5, 15 ],
+            "tuesday": [ 17, 27, 4, 14 ],
+            "wednesday": [ 16, 26, 4, 13 ],
+            "thursday": [ 22, 31, 9, 18 ],
+            "friday": [ 21, 31, 10, 18 ],
+            "saturday": [ 20, 30, 7, 17 ],
+            "sunday": [ 19, 29, 6, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 153,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/a-little-boy-lost-1920-11.jpg',
+          title: 'A Little Boy Lost',
+          artist: 'Dorothy Lathrop',
+          year: '1920',
+          rule: {
+            "monday": [ 19, 29, 6, 16 ],
+            "tuesday": [ 18, 28, 5, 15 ],
+            "wednesday": [ 17, 27, 4, 14 ],
+            "thursday": [ 16, 26, 4, 13 ],
+            "friday": [ 22, 31, 9, 18 ],
+            "saturday": [ 21, 31, 10, 18 ],
+            "sunday": [ 20, 30, 7, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 154,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/sea-treasures-1952.jpg',
+          title: 'Sea Treasures',
+          artist: 'Winifred Nicholson',
+          year: '1952',
+          rule: {
+            "monday": [ 20, 30, 7, 17 ],
+            "tuesday": [ 19, 29, 6, 16 ],
+            "wednesday": [ 18, 28, 5, 15 ],
+            "thursday": [ 17, 27, 4, 14 ],
+            "friday": [ 16, 26, 4, 13 ],
+            "saturday": [ 22, 31, 9, 18 ],
+            "sunday": [ 21, 31, 10, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 155,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/unknown-title-44.jpg',
+          title: 'unknown title',
+          artist: 'Antonietta Raphael',
+          year: '?',
+          rule: {
+            "monday": [ 21, 31, 10, 18 ],
+            "tuesday": [ 20, 30, 7, 17 ],
+            "wednesday": [ 19, 29, 6, 16 ],
+            "thursday": [ 18, 28, 5, 15 ],
+            "friday": [ 17, 27, 4, 14 ],
+            "saturday": [ 16, 26, 4, 13 ],
+            "sunday": [ 22, 31, 9, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
