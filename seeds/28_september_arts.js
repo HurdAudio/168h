@@ -1804,6 +1804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 91,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/number-20-1949.jpg',
+          title: 'Number 20',
+          artist: 'Bradley Walker Tomlin',
+          year: '1949',
+          rule: {
+            "monday": [ 14, 20, 8, 16 ],
+            "tuesday": [ 13, 19, 7, 15 ],
+            "wednesday": [ 12, 18, 6, 14 ],
+            "thursday": [ 11, 17, 5, 13 ],
+            "friday": [ 10, 16, 4, 11 ],
+            "saturday": [ 16, 22, 10, 18 ],
+            "sunday": [ 15, 21, 9, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 92,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/untitled-1947.jpg',
+          title: 'Untitled',
+          artist: 'Forrest Bess',
+          year: '1947',
+          rule: {
+            "monday": [ 15, 21, 9, 17 ],
+            "tuesday": [ 14, 20, 8, 16 ],
+            "wednesday": [ 13, 19, 7, 15 ],
+            "thursday": [ 12, 18, 6, 14 ],
+            "friday": [ 11, 17, 5, 13 ],
+            "saturday": [ 10, 16, 4, 11 ],
+            "sunday": [ 16, 22, 10, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 93,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/460-hommage-au-tachisme-1961(1).jpg',
+          title: '460 Hommage au Tachisme',
+          artist: 'Friedensreich Hundertwasser',
+          year: '1961',
+          rule: {
+            "monday": [ 16, 22, 10, 18 ],
+            "tuesday": [ 15, 21, 9, 17 ],
+            "wednesday": [ 14, 20, 8, 16 ],
+            "thursday": [ 13, 19, 7, 15 ],
+            "friday": [ 12, 18, 6, 14 ],
+            "saturday": [ 11, 17, 5, 13 ],
+            "sunday": [ 10, 16, 4, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 94,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/ideal-life-1950.jpg',
+          title: 'Ideal Life',
+          artist: 'Leonor Fini',
+          year: '1950',
+          rule: {
+            "monday": [ 10, 16, 4, 11 ],
+            "tuesday": [ 16, 22, 10, 18 ],
+            "wednesday": [ 15, 21, 9, 17 ],
+            "thursday": [ 14, 20, 8, 16 ],
+            "friday": [ 13, 19, 7, 15 ],
+            "saturday": [ 12, 18, 6, 14 ],
+            "sunday": [ 11, 17, 5, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 95,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/piron-piron-1975.jpg',
+          title: 'Piron Piron',
+          artist: 'Sadamasa Motonaga',
+          year: '1975',
+          rule: {
+            "monday": [ 11, 17, 5, 13 ],
+            "tuesday": [ 10, 16, 4, 11 ],
+            "wednesday": [ 16, 22, 10, 18 ],
+            "thursday": [ 15, 21, 9, 17 ],
+            "friday": [ 14, 20, 8, 16 ],
+            "saturday": [ 13, 19, 7, 15 ],
+            "sunday": [ 12, 18, 6, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
