@@ -144,6 +144,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#CDDCF1',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 11,
+          user_id: 1,
+          theme: 'ice',
+          type: 'sunday',
+          src_string: '../img/january_tiles/.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '%',
+          color_dark: '#',
+          color_medium: '#',
+          color_light: '#',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {

@@ -130,6 +130,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FA5C64',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 10,
+          user_id: 1,
+          theme: 'silk',
+          type: 'saturday',
+          src_string: '../img/february_tiles/roter-samt_2160x1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '120%',
+          color_dark: '#290B0B',
+          color_medium: '#4C1616',
+          color_light: '#611B1D',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
