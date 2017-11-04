@@ -1246,6 +1246,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 70,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3252752347/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://xirecords.bandcamp.com/album/security-vehicles-only',
+          a_string: 'Security Vehicles Only by Amnon Wolman',
+          rule: {
+            "monday": [ 9, 13, 18, 30 ],
+            "tuesday": [ 9, 12, 18, 29 ],
+            "wednesday": [ 7, 15, 17, 28 ],
+            "thursday": [ 11, 15, 21, 2 ],
+            "saturday": [ 10, 14, 20, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 71,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1046372200/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://gurugurubrain.bandcamp.com/album/sua-hiam-zun',
+          a_string: '山險峻/Sua-Hiam-Zun by 破地獄/Scattered Purgatory',
+          rule: {
+            "monday": [ 10, 14, 20, 30 ],
+            "tuesday": [ 9, 13, 18, 30 ],
+            "wednesday": [ 9, 12, 18, 29 ],
+            "thursday": [ 7, 15, 17, 28 ],
+            "saturday": [ 11, 15, 21, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 72,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1439306838/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tinyleaves.bandcamp.com/album/notes-on-belonging-2',
+          a_string: 'Notes On Belonging by Tiny Leaves',
+          rule: {
+            "monday": [ 11, 15, 21, 2 ],
+            "tuesday": [ 10, 14, 20, 30 ],
+            "wednesday": [ 9, 13, 18, 30 ],
+            "thursday": [ 9, 12, 18, 29 ],
+            "saturday": [ 7, 15, 17, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
