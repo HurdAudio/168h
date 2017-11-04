@@ -1678,6 +1678,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 94,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1111516104/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jonbap.bandcamp.com/album/yesterdays-homily',
+          a_string: 'Yesterday&#39;s Homily by Jon Bap',
+          rule: {
+            "monday": [ 19, 23, 25, 27 ],
+            "tuesday": [ 2, 25, 27, 4 ],
+            "wednesday": [ 14, 19, 21, 4 ],
+            "thursday": [ 15, 19, 21, 25 ],
+            "saturday": [ 17, 21, 23, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 95,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=461963248/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://analogafrica.bandcamp.com/album/hamad-kalkaba-and-the-golden-sounds-1974-1975',
+          a_string: 'Hamad Kalkaba and The Golden Sounds 1974-1975 by Hamad Kalkaba',
+          rule: {
+            "monday": [ 17, 21, 23, 27 ],
+            "tuesday": [ 19, 23, 25, 27 ],
+            "wednesday": [ 2, 25, 27, 4 ],
+            "thursday": [ 14, 19, 21, 4 ],
+            "saturday": [ 15, 19, 21, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 96,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1458926099/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://analogafrica.bandcamp.com/album/pop-makossa-the-invasive-dance-beat-of-cameroon-1976-1984',
+          a_string: 'Pop Makossa - The Invasive Dance Beat of Cameroon 1976-1984 by Various',
+          rule: {
+            "monday": [ 15, 19, 21, 25 ],
+            "tuesday": [ 17, 21, 23, 27 ],
+            "wednesday": [ 19, 23, 25, 27 ],
+            "thursday": [ 2, 25, 27, 4 ],
+            "saturday": [ 14, 19, 21, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
