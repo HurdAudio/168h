@@ -1138,6 +1138,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 64,
+          user_id: 1,
+          theme: 'commercially viable genre',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2586212974/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://fineforest.bandcamp.com/album/wannabewithu',
+          a_string: 'wannabewithu by Cuco',
+          rule: {
+            "monday": [ 7, 9, 13, 21 ],
+            "tuesday": [ 11, 13, 17, 25 ],
+            "wednesday": [ 10, 12, 16, 24 ],
+            "thursday": [ 9, 11, 15, 23 ],
+            "saturday": [ 8, 9, 14, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 65,
+          user_id: 1,
+          theme: 'commercially viable genre',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1062515144/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://thezephyrbones.bandcamp.com/album/secret-place',
+          a_string: 'Secret Place by The Zephyr Bones',
+          rule: {
+            "monday": [ 8, 9, 14, 22 ],
+            "tuesday": [ 7, 9, 13, 21 ],
+            "wednesday": [ 11, 13, 17, 25 ],
+            "thursday": [ 10, 12, 16, 24 ],
+            "saturday": [ 9, 11, 15, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 66,
+          user_id: 1,
+          theme: 'commercially viable genre',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2138740185/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://fantasticabastidas.bandcamp.com/album/time-portal',
+          a_string: 'Time Portal by Bastidas!',
+          rule: {
+            "monday": [ 9, 11, 15, 23 ],
+            "tuesday": [ 8, 9, 14, 22 ],
+            "wednesday": [ 7, 9, 13, 21 ],
+            "thursday": [ 11, 13, 17, 25 ],
+            "saturday": [ 10, 12, 16, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
