@@ -3204,6 +3204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 161,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Reflection_1957.jpg',
+          title: 'Reflection',
+          artist: 'Hughie Lee-Smith',
+          year: '1957',
+          rule: {
+            "monday": [ 1, 6, 12, 22 ],
+            "tuesday": [ 29, 8, 16, 24 ],
+            "wednesday": [ 2, 12, 18, 26 ],
+            "thursday": [ 4, 12, 20, 1 ],
+            "friday": [ 6, 14, 10, 29 ],
+            "saturday": [ 23, 2, 10, 18 ],
+            "sunday": [ 25, 4, 12, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 162,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Hiawatha_MET_DP371840.jpg',
+          title: 'Hiawatha',
+          artist: 'Edmonia Lewis',
+          year: '1868',
+          rule: {
+            "monday": [ 25, 4, 12, 20 ],
+            "tuesday": [ 1, 6, 12, 22 ],
+            "wednesday": [ 29, 8, 16, 24 ],
+            "thursday": [ 2, 12, 18, 26 ],
+            "friday": [ 4, 12, 20, 1 ],
+            "saturday": [ 6, 14, 10, 29 ],
+            "sunday": [ 23, 2, 10, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 163,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Jazz_Band_by_Norman_Lewis,_1948.jpg',
+          title: 'Jazz Band',
+          artist: 'Norman Lewis',
+          year: '1948',
+          rule: {
+            "monday": [ 23, 2, 10, 18 ],
+            "tuesday": [ 25, 4, 12, 20 ],
+            "wednesday": [ 1, 6, 12, 22 ],
+            "thursday": [ 29, 8, 16, 24 ],
+            "friday": [ 2, 12, 18, 26 ],
+            "saturday": [ 4, 12, 20, 1 ],
+            "sunday": [ 6, 14, 10, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 164,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/glenn-ligon-web.jpg',
+          title: 'Warm Broad Glow',
+          artist: 'Glenn Ligon',
+          year: '2005',
+          rule: {
+            "monday": [ 6, 14, 10, 29 ],
+            "tuesday": [ 23, 2, 10, 18 ],
+            "wednesday": [ 25, 4, 12, 20 ],
+            "thursday": [ 1, 6, 12, 22 ],
+            "friday": [ 29, 8, 16, 24 ],
+            "saturday": [ 2, 12, 18, 26 ],
+            "sunday": [ 4, 12, 20, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 165,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/llana5.jpg',
+          title: 'Llana5',
+          artist: 'Llanakila',
+          year: '2014',
+          rule: {
+            "monday": [ 4, 12, 20, 1 ],
+            "tuesday": [ 6, 14, 10, 29 ],
+            "wednesday": [ 23, 2, 10, 18 ],
+            "thursday": [ 25, 4, 12, 20 ],
+            "friday": [ 1, 6, 12, 22 ],
+            "saturday": [ 29, 8, 16, 24 ],
+            "sunday": [ 2, 12, 18, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
