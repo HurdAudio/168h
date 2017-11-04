@@ -32,6 +32,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#A0717B',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 3,
+          user_id: 1,
+          theme: 'leather',
+          type: 'mtwt',
+          src_string: '../img/september_tiles/mtwtLeather.jpeg',
+          repeat_value: 'no-repeat',
+          size_value: '100%',
+          color_dark: '#512C1A',
+          color_medium: '#66402D',
+          color_light: '#6A3C26',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
