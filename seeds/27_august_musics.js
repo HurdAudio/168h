@@ -1030,6 +1030,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 58,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1739250324/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://endofthealphabetrecords.bandcamp.com/album/there-is-no-music-from-china',
+          a_string: 'There Is No Music From China by Various (CHN)',
+          rule: {
+            "monday": [ 17, 25, 7, 6 ],
+            "tuesday": [ 16, 24, 9, 10 ],
+            "wednesday": [ 15, 23, 8, 9 ],
+            "thursday": [ 12, 20, 5, 4 ],
+            "saturday": [ 13, 21, 6, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 59,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1151820027/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://gbjd.bandcamp.com/album/black-sheep',
+          a_string: 'Black Sheep by Xiao Hong &amp; Xiao Xiao Hong',
+          rule: {
+            "monday": [ 13, 21, 6, 5 ],
+            "tuesday": [ 17, 25, 7, 6 ],
+            "wednesday": [ 16, 24, 9, 10 ],
+            "thursday": [ 15, 23, 8, 9 ],
+            "saturday": [ 12, 20, 5, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 60,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=955976567/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://notincatalog.bandcamp.com/album/not-in-catalog-debut-album',
+          a_string: 'not in catalog debut album by 不在话下',
+          rule: {
+            "monday": [ 12, 20, 5, 4 ],
+            "tuesday": [ 13, 21, 6, 5 ],
+            "wednesday": [ 17, 25, 7, 6 ],
+            "thursday": [ 16, 24, 9, 10 ],
+            "saturday": [ 15, 23, 8, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
