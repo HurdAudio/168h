@@ -2604,6 +2604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 131,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/picking-apples.jpg',
+          title: 'Picking Apples',
+          artist: 'Camille Pissarro',
+          year: 'c.1888',
+          rule: {
+            "monday": [ 11, 21, 31, 10 ],
+            "tuesday": [ 9, 19, 29, 8 ],
+            "wednesday": [ 7, 17, 27, 6 ],
+            "thursday": [ 19, 29, 8, 16 ],
+            "friday": [ 17, 27, 6, 16 ],
+            "saturday": [ 15, 25, 4, 14 ],
+            "sunday": [ 12, 23, 2, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 132,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/the-gleaners-1889.jpg',
+          title: 'The Gleaners',
+          artist: 'Camille Pissarro',
+          year: '1889',
+          rule: {
+            "monday": [ 12, 23, 2, 22 ],
+            "tuesday": [ 11, 21, 31, 10 ],
+            "wednesday": [ 9, 19, 29, 8 ],
+            "thursday": [ 7, 17, 27, 6 ],
+            "friday": [ 19, 29, 8, 16 ],
+            "saturday": [ 17, 27, 6, 16 ],
+            "sunday": [ 15, 25, 4, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 133,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/peasant-women-planting-stakes-1891.jpg',
+          title: 'Peasant Women Planting Stakes',
+          artist: 'Camille Pissarro',
+          year: '1891',
+          rule: {
+            "monday": [ 16, 26, 5, 15 ],
+            "tuesday": [ 13, 24, 3, 23 ],
+            "wednesday": [ 12, 22, 1, 11 ],
+            "thursday": [ 10, 20, 30, 9 ],
+            "friday": [ 8, 18, 28, 7 ],
+            "saturday": [ 20, 30, 9, 17 ],
+            "sunday": [ 18, 28, 7, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 134,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/laundring-women-eragny-sur-eptes-1895.jpg',
+          title: 'Laundring Women. Eragny sur Eptes',
+          artist: 'Camille Pissarro',
+          year: '1895',
+          rule: {
+            "monday": [ 18, 28, 7, 17 ],
+            "tuesday": [ 16, 26, 5, 15 ],
+            "wednesday": [ 13, 24, 3, 23 ],
+            "thursday": [ 12, 22, 1, 11 ],
+            "friday": [ 10, 20, 30, 9 ],
+            "saturday": [ 8, 18, 28, 7 ],
+            "sunday": [ 20, 30, 9, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 135,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/unloading-wood-at-rouen-1896.jpg',
+          title: 'Unloading Wood at Rouen',
+          artist: 'Camille Pissarro',
+          year: '1896',
+          rule: {
+            "monday": [ 20, 30, 9, 17 ],
+            "tuesday": [ 18, 28, 7, 17 ],
+            "wednesday": [ 16, 26, 5, 15 ],
+            "thursday": [ 13, 24, 3, 23 ],
+            "friday": [ 12, 22, 1, 11 ],
+            "saturday": [ 10, 20, 30, 9 ],
+            "sunday": [ 8, 18, 28, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
