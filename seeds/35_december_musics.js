@@ -598,6 +598,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 34,
+          user_id: 1,
+          theme: 'brazil and pan-south american',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1050637797/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://artolindsay.bandcamp.com/album/encyclopedia-of-arto-2',
+          a_string: 'Encyclopedia Of Arto by Arto lindsay',
+          rule: {
+            "monday": [ 7, 14, 20, 26 ],
+            "tuesday": [ 7, 13, 19, 25 ],
+            "wednesday": [ 11, 17, 23, 29 ],
+            "thursday": [ 10, 16, 22, 28 ],
+            "saturday": [ 9, 15, 21, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 35,
+          user_id: 1,
+          theme: 'brazil and pan-south american',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=974602156/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://fusca.bandcamp.com/album/fusca',
+          a_string: 'Fusca by Fusca',
+          rule: {
+            "monday": [ 10, 16, 22, 28 ],
+            "tuesday": [ 8, 15, 21, 27 ],
+            "wednesday": [ 8, 14, 20, 26 ],
+            "thursday": [ 12, 18, 24, 30 ],
+            "saturday": [ 11, 17, 23, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 36,
+          user_id: 1,
+          theme: 'brazil and pan-south american',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=964486644/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tomn.bandcamp.com/album/t-mn',
+          a_string: 'TŌMN by Tōmn',
+          rule: {
+            "monday": [ 11, 17, 23, 29 ],
+            "tuesday": [ 10, 16, 22, 28 ],
+            "wednesday": [ 8, 15, 21, 27 ],
+            "thursday": [ 8, 14, 20, 26 ],
+            "saturday": [ 12, 18, 24, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
