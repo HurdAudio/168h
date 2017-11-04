@@ -150,12 +150,12 @@ exports.seed = function(knex, Promise) {
           user_id: 1,
           theme: 'ice',
           type: 'sunday',
-          src_string: '../img/january_tiles/.jpg',
+          src_string: '../img/january_tiles/19-cool-blue-ice-texture-free-hi-res.jpg',
           repeat_value: 'no-repeat',
-          size_value: '%',
-          color_dark: '#',
-          color_medium: '#',
-          color_light: '#',
+          size_value: '200%',
+          color_dark: '#131A25',
+          color_medium: '#5891E5',
+          color_light: '#73B2F9',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
