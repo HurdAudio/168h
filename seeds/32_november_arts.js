@@ -1404,6 +1404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 71,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/object-1960.jpg',
+          title: 'Object',
+          artist: 'Edward Krasinski',
+          year: '1960',
+          rule: {
+            "monday": [ 17, 22, 28, 3 ],
+            "tuesday": [ 16, 21, 27, 2 ],
+            "wednesday": [ 15, 20, 26, 1 ],
+            "thursday": [ 14, 18, 25, 30 ],
+            "friday": [ 13, 18, 24, 29 ],
+            "saturday": [ 12, 17, 23, 30 ],
+            "sunday": [ 18, 23, 29, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 72,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/swirling-retina-1967.jpg',
+          title: 'Swirling Retina',
+          artist: 'Marcel Barbeau',
+          year: '1967',
+          rule: {
+            "monday": [ 18, 23, 29, 4 ],
+            "tuesday": [ 17, 22, 28, 3 ],
+            "wednesday": [ 16, 21, 27, 2 ],
+            "thursday": [ 15, 20, 26, 1 ],
+            "friday": [ 14, 18, 25, 30 ],
+            "saturday": [ 13, 18, 24, 29 ],
+            "sunday": [ 12, 17, 23, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 73,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/unknown-title-1.jpg',
+          title: 'unknown title',
+          artist: 'Martin Barre',
+          year: '?',
+          rule: {
+            "monday": [ 12, 17, 23, 30 ],
+            "tuesday": [ 18, 23, 29, 4 ],
+            "wednesday": [ 17, 22, 28, 3 ],
+            "thursday": [ 16, 21, 27, 2 ],
+            "friday": [ 15, 20, 26, 1 ],
+            "saturday": [ 14, 18, 25, 30 ],
+            "sunday": [ 13, 18, 24, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 74,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/untitled-1953.jpg',
+          title: 'Untitled',
+          artist: 'Herbert Zangs',
+          year: '1953',
+          rule: {
+            "monday": [ 13, 18, 24, 29 ],
+            "tuesday": [ 12, 17, 23, 30 ],
+            "wednesday": [ 18, 23, 29, 4 ],
+            "thursday": [ 17, 22, 28, 3 ],
+            "friday": [ 16, 21, 27, 2 ],
+            "saturday": [ 15, 20, 26, 1 ],
+            "sunday": [ 14, 18, 25, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 75,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/corona-i-1995.jpg',
+          title: 'Corona I',
+          artist: 'Paul Brach',
+          year: '1995',
+          rule: {
+            "monday": [ 14, 18, 25, 30 ],
+            "tuesday": [ 13, 18, 24, 29 ],
+            "wednesday": [ 12, 17, 23, 30 ],
+            "thursday": [ 18, 23, 29, 4 ],
+            "friday": [ 17, 22, 28, 3 ],
+            "saturday": [ 16, 21, 27, 2 ],
+            "sunday": [ 15, 20, 26, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
