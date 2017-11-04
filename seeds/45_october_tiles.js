@@ -10,12 +10,26 @@ exports.seed = function(knex, Promise) {
           user_id: 1,
           theme: 'autumnal',
           type: 'default',
-          src_string: '../img/october_tiles/autumnalDefault.jpg.jpg',
+          src_string: '../img/october_tiles/autumnalDefault.jpg',
           repeat_value: 'no-repeat',
           size_value: '140%',
           color_dark: '#926A50',
           color_medium: '#CA993C',
           color_light: '#E0BC5E',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 2,
+          user_id: 1,
+          theme: 'autumnal',
+          type: 'week',
+          src_string: '../img/october_tiles/autumnal_glass_bump_abstract_by_don64738-d5lemnq.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '200%',
+          color_dark: '#846353',
+          color_medium: '#E54237',
+          color_light: '#F3E82D',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
