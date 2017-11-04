@@ -922,6 +922,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 52,
+          user_id: 1,
+          theme: 'math rock/progressive rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3972089070/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://seriousbeak.bandcamp.com/album/ankaa',
+          a_string: 'Ankaa by Serious Beak',
+          rule: {
+            "monday": [ 12, 2, 10, 4 ],
+            "tuesday": [ 11, 1, 9, 3 ],
+            "wednesday": [ 10, 30, 8, 2 ],
+            "thursday": [ 9, 29, 7, 1 ],
+            "saturday": [ 8, 28, 6, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 53,
+          user_id: 1,
+          theme: 'math rock/progressive rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=483534004/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://hashshashin.bandcamp.com/album/nihsahshsah',
+          a_string: 'nihsahshsaH by Hashshashin',
+          rule: {
+            "monday": [ 8, 28, 6, 30 ],
+            "tuesday": [ 12, 2, 10, 4 ],
+            "wednesday": [ 11, 1, 9, 3 ],
+            "thursday": [ 10, 30, 8, 2 ],
+            "saturday": [ 9, 29, 7, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 54,
+          user_id: 1,
+          theme: 'math rock/progressive rock',
+          source: 'bandcamp',
+          src_string: 'http://bandcamp.com/EmbeddedPlayer/album=2860962436/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://downloads.webofmimicry.com/album/the-system-of-antichrist-bereshith',
+          a_string: 'THE SYSTEM OF ANTICHRIST / Bereshith by Secret Chiefs 3',
+          rule: {
+            "monday": [ 9, 29, 7, 1 ],
+            "tuesday": [ 8, 28, 6, 30 ],
+            "wednesday": [ 12, 2, 10, 4 ],
+            "thursday": [ 11, 1, 9, 3 ],
+            "saturday": [ 10, 30, 8, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
