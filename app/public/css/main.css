@@ -3655,6 +3655,25 @@ footer img {
   border: 2px solid #0000cc;
 }
 
+#observancesZone {
+  background: #BC3608;
+  background-color: -webkit-linear-gradient(135deg, #BC3608, #F0F1F6);
+  background: -o-linear-gradient(135deg, #BC3608, #F0F1F6);
+  background: -moz-linear-gradient(135deg, #BC3608, #F0F1F6);
+  background: linear-gradient(135deg, #BC3608, #F0F1F6);
+  border-radius: 5px;
+  padding-bottom: 1.1em;
+  opacity: 1;
+}
+
+#observancesZone img {
+  height: 7em;
+  width: 7em;
+  margin-left: 1.6em;
+  margin-top: 1.2em;
+  border: 2px solid #0000cc;
+}
+
 #occasionManager {
   float: right;
   margin: 2em;
@@ -3674,6 +3693,12 @@ footer img {
 }
 
 #goalsManager {
+  float: right;
+  margin: 2em;
+  margin-right: 4.8em;
+}
+
+#observancesManager {
   float: right;
   margin: 2em;
   margin-right: 4.8em;
