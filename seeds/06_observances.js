@@ -8597,6 +8597,34 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 548,
+          user_id: 1,
+          name: 'Mary Harris (Mother) Jones (activist/community organizer) born in 1837',
+          color: '#6E6E6E',
+          picture: './img/dissent/motherjones.png',
+          day_of: new Date ('1837-05-01T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 549,
+          user_id: 1,
+          name: 'The second coming of Jesus Christ occured on this day in 2000 according to James Harmston of the True and Living Church of Jesus Christ of Saints of the Last Days',
+          color: '#598C75',
+          picture: './img/doomsday/trueandlivingblahblahblah.jpg',
+          day_of: new Date ('2000-04-06T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
