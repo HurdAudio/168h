@@ -143,6 +143,29 @@
       vm.editBill = editBill;
       vm.userBillsEditorDone = userBillsEditorDone;
       vm.deleteOccasion = deleteOccasion;
+      vm.addNewHoliday = addNewHoliday;
+
+      function addNewHoliday() {
+        let today = new Date();
+        let holidaySub = {
+          user_id: currentUserId,
+          name: '',
+          color: '#ffffff',
+          picture: '',
+          day_of: today,
+          is_annual: true,
+          rule: null,
+          art_override: false,
+          music_override: false,
+          override_content: null
+        };
+        $http.post(`/holidays`, holidaySub)
+        .then(newUserHolidayData=>{
+          let newUserHoliday = newUserHolidayData.data[0];
+          console.log(newUserHoliday);
+          editHoliday(newUserHoliday.id);
+        });
+      }
 
       function deleteOccasion(occasionId) {
         let userOccasionDeleteConfirmDiv = document.getElementById('userOccasionDeleteConfirmDiv');
