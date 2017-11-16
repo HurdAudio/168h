@@ -1504,6 +1504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 76,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/table-piece-xxviii-1967.jpg',
+          title: 'Table Piece XXVIII',
+          artist: 'Anthony Caro',
+          year: '1967',
+          rule: {
+            "monday": [ 15, 20, 26, 1 ],
+            "tuesday": [ 14, 18, 25, 30 ],
+            "wednesday": [ 13, 18, 24, 29 ],
+            "thursday": [ 12, 17, 23, 30 ],
+            "friday": [ 18, 23, 29, 4 ],
+            "saturday": [ 17, 22, 28, 3 ],
+            "sunday": [ 16, 21, 27, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 77,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/organ-of-cause-and-effect-iii-1986.jpg',
+          title: 'Organ of Cause and Effect III',
+          artist: 'Richard Artschwager',
+          year: '1986',
+          rule: {
+            "monday": [ 17, 22, 28, 3 ],
+            "tuesday": [ 16, 21, 27, 2 ],
+            "wednesday": [ 15, 19, 26, 1 ],
+            "thursday": [ 14, 19, 25, 30 ],
+            "friday": [ 13, 18, 24, 1 ],
+            "saturday": [ 19, 24, 30, 5 ],
+            "sunday": [ 18, 23, 29, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 78,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/colors-for-a-large-wall-1951.jpg',
+          title: 'Colors for a Large Wall',
+          artist: 'Ellsworth Kelly',
+          year: '1951',
+          rule: {
+            "monday": [ 18, 23, 29, 4 ],
+            "tuesday": [ 17, 22, 28, 3 ],
+            "wednesday": [ 16, 21, 27, 2 ],
+            "thursday": [ 15, 19, 26, 1 ],
+            "friday": [ 14, 19, 25, 30 ],
+            "saturday": [ 13, 18, 24, 1 ],
+            "sunday": [ 19, 24, 30, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 79,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/atlantique-ii-1991.jpg',
+          title: 'Atlantique II',
+          artist: 'Genevieve Asse',
+          year: '1991',
+          rule: {
+            "monday": [ 19, 24, 30, 5 ],
+            "tuesday": [ 18, 23, 29, 4 ],
+            "wednesday": [ 17, 22, 28, 3 ],
+            "thursday": [ 16, 21, 27, 2 ],
+            "friday": [ 15, 19, 26, 1 ],
+            "saturday": [ 14, 19, 25, 30 ],
+            "sunday": [ 13, 18, 24, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 80,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/18-1963-1963.jpg',
+          title: '18-1963',
+          artist: 'William Turnbull',
+          year: '1963',
+          rule: {
+            "monday": [ 13, 18, 24, 1 ],
+            "tuesday": [ 19, 24, 30, 5 ],
+            "wednesday": [ 18, 23, 29, 4 ],
+            "thursday": [ 17, 22, 28, 3 ],
+            "friday": [ 16, 21, 27, 2 ],
+            "saturday": [ 15, 19, 26, 1 ],
+            "sunday": [ 14, 19, 25, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
