@@ -88,6 +88,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FFFFFF',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 7,
+          user_id: 1,
+          theme: 'light',
+          type: 'holiday',
+          src_string: '../img/june_tiles/fireworks___texture_by_b3hindhersmil3.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '135%',
+          color_dark: '#1C0903',
+          color_medium: '#F77A42',
+          color_light: '#F9FFF8',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
