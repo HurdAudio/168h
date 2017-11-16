@@ -8,7 +8,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 1,
           user_id: 1,
-          theme: 'autumnal',
+          theme: 'monochromatic',
           type: 'default',
           src_string: '../img/november_tiles/black-and-white-images-of-birds-3-widescreen-wallpaper.jpg',
           repeat_value: 'no-repeat',
