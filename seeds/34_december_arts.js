@@ -1291,7 +1291,7 @@ exports.seed = function(knex, Promise) {
           theme: 'pulp',
           img_path: './img/december/17-04-08,Newspaper.jpg',
           title: 'Newspaper',
-          artist: 'Charles Cole',
+          artist: 'Charles Coll',
           year: '1917',
           rule: {
             "monday": [ 13, 26, 3, 9 ],
@@ -1301,6 +1301,106 @@ exports.seed = function(knex, Promise) {
             "friday": [ 9, 22, 30, 5 ],
             "saturday": [ 8, 21, 29, 4 ],
             "sunday": [ 7, 20, 8, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 66,
+          user_id: 1,
+          theme: 'pulp',
+          img_path: './img/december/41-Fal,FamousW.jpg',
+          title: 'Fall Famous Western',
+          artist: 'Sam Cooper',
+          year: '1941',
+          rule: {
+            "monday": [ 7, 20, 8, 3 ],
+            "tuesday": [ 13, 26, 3, 9 ],
+            "wednesday": [ 12, 25, 2, 8 ],
+            "thursday": [ 11, 24, 1, 7 ],
+            "friday": [ 10, 23, 31, 6 ],
+            "saturday": [ 9, 22, 30, 5 ],
+            "sunday": [ 8, 21, 29, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 67,
+          user_id: 1,
+          theme: 'pulp',
+          img_path: './img/december/24-00,FarmHouse.jpg',
+          title: 'Farm House',
+          artist: 'Thomas Cooper',
+          year: '1924',
+          rule: {
+            "monday": [ 8, 21, 29, 4 ],
+            "tuesday": [ 7, 20, 8, 3 ],
+            "wednesday": [ 13, 26, 3, 9 ],
+            "thursday": [ 12, 25, 2, 8 ],
+            "friday": [ 11, 24, 1, 7 ],
+            "saturday": [ 10, 23, 31, 6 ],
+            "sunday": [ 9, 22, 30, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 68,
+          user_id: 1,
+          theme: 'pulp',
+          img_path: './img/december/14-00,Chicago.jpg',
+          title: 'Chicago Tribune',
+          artist: 'Dean Cornwell',
+          year: '1914',
+          rule: {
+            "monday": [ 9, 22, 30, 5 ],
+            "tuesday": [ 8, 21, 29, 4 ],
+            "wednesday": [ 7, 20, 8, 3 ],
+            "thursday": [ 13, 26, 3, 9 ],
+            "friday": [ 12, 25, 2, 8 ],
+            "saturday": [ 11, 24, 1, 7 ],
+            "sunday": [ 10, 23, 31, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 69,
+          user_id: 1,
+          theme: 'pulp',
+          img_path: './img/december/37-01,ThrllW.jpg',
+          title: 'Thrilling Western',
+          artist: 'Peter Costanza',
+          year: '1937',
+          rule: {
+            "monday": [ 10, 23, 31, 6 ],
+            "tuesday": [ 9, 22, 30, 5 ],
+            "wednesday": [ 8, 21, 29, 4 ],
+            "thursday": [ 7, 20, 8, 3 ],
+            "friday": [ 13, 26, 3, 9 ],
+            "saturday": [ 12, 25, 2, 8 ],
+            "sunday": [ 11, 24, 1, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 70,
+          user_id: 1,
+          theme: 'pulp',
+          img_path: './img/december/13-11-15,Pop.jpg',
+          title: 'The Popular',
+          artist: 'John A. Coughlin',
+          year: '1913',
+          rule: {
+            "monday": [ 12, 25, 2, 8 ],
+            "tuesday": [ 11, 24, 1, 7 ],
+            "wednesday": [ 10, 23, 31, 6 ],
+            "thursday": [ 9, 22, 30, 5 ],
+            "friday": [ 8, 21, 9, 4 ],
+            "saturday": [ 14, 27, 4, 10 ],
+            "sunday": [ 13, 26, 3, 9 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
