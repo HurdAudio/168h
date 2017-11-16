@@ -102,6 +102,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#D4EB2F',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 8,
+          user_id: 1,
+          theme: 'greenery',
+          type: 'week',
+          src_string: '../img/may_tiles/plant-texture-leaf-flower-green-botany-495915-pxhere.com.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '140%',
+          color_dark: '#1E4907',
+          color_medium: '#438010',
+          color_light: '#F5F4A7',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
