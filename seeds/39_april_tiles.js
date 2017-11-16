@@ -116,6 +116,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#71B9F9',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 9,
+          user_id: 1,
+          theme: 'water',
+          type: 'friday',
+          src_string: '../img/april_tiles/e-golden-water-6.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '140%',
+          color_dark: '#568787',
+          color_medium: '#8A988B',
+          color_light: '#EDEAC0',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
