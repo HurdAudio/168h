@@ -1192,6 +1192,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 67,
+          user_id: 1,
+          theme: 'commercially viable genre',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1622777037/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://acid-mess.bandcamp.com/album/ii',
+          a_string: 'II by Acid Mess',
+          rule: {
+            "monday": [ 10, 12, 16, 24 ],
+            "tuesday": [ 9, 11, 15, 23 ],
+            "wednesday": [ 8, 9, 14, 22 ],
+            "thursday": [ 7, 9, 13, 21 ],
+            "saturday": [ 11, 13, 17, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 68,
+          user_id: 1,
+          theme: 'commercially viable genre',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=558676569/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sergeantthunderhoof.bandcamp.com/album/ride-of-the-hoof',
+          a_string: 'Ride Of The Hoof by Sergeant Thunderhoof',
+          rule: {
+            "monday": [ 11, 13, 17, 25 ],
+            "tuesday": [ 10, 12, 16, 24 ],
+            "wednesday": [ 9, 11, 15, 23 ],
+            "thursday": [ 8, 9, 14, 22 ],
+            "saturday": [ 7, 9, 13, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 69,
+          user_id: 1,
+          theme: 'commercially viable genre',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4154098583/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://elephanttreeband.bandcamp.com/album/elephant-tree',
+          a_string: 'Elephant Tree by Elephant Tree',
+          rule: {
+            "monday": [ 7, 9, 13, 21 ],
+            "tuesday": [ 11, 13, 17, 25 ],
+            "wednesday": [ 10, 12, 16, 24 ],
+            "thursday": [ 9, 11, 15, 23 ],
+            "saturday": [ 8, 9, 14, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
