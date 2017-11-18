@@ -1084,6 +1084,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 61,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2277502811/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://killick.bandcamp.com/album/never-stop-lovin',
+          a_string: 'never stop lovin by Killick',
+          rule: {
+            "monday": [ 15, 23, 8, 9 ],
+            "tuesday": [ 12, 20, 5, 4 ],
+            "wednesday": [ 13, 21, 6, 5 ],
+            "thursday": [ 17, 25, 7, 6 ],
+            "saturday": [ 16, 24, 9, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 62,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=495289191/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://kyledawkins.bandcamp.com/album/conasauga',
+          a_string: 'Conasauga by Kyle Dawkins',
+          rule: {
+            "monday": [ 16, 24, 9, 10 ],
+            "tuesday": [ 15, 23, 8, 9 ],
+            "wednesday": [ 12, 20, 5, 4 ],
+            "thursday": [ 13, 21, 6, 5 ],
+            "saturday": [ 17, 25, 7, 6]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 63,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1013983222/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://nostalgiedelaboue.bandcamp.com/album/rien-ni-personne-volume-ii-iii',
+          a_string: 'Rien Ni Personne ~volume II &amp; III by Various Artists',
+          rule: {
+            "monday": [ 18, 26, 8, 7 ],
+            "tuesday": [ 17, 25, 10, 11 ],
+            "wednesday": [ 16, 24, 9, 10 ],
+            "thursday": [ 13, 21, 6, 5 ],
+            "saturday": [ 14, 22, 7, 6]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
