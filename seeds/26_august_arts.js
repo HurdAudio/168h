@@ -2104,6 +2104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 106,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/cinco-mo-as-de-guaratinguet-1930.jpg',
+          title: 'Cinco Moças de Guaratinguetá',
+          artist: 'Emiliano Di Cavalcanti',
+          year: '1930',
+          rule: {
+            "monday": [ 18, 21, 30, 15 ],
+            "tuesday": [ 17, 21, 29, 14 ],
+            "wednesday": [ 16, 20, 28, 13 ],
+            "thursday": [ 15, 19, 27, 12 ],
+            "friday": [ 14, 17, 26, 11 ],
+            "saturday": [ 13, 16, 25, 10 ],
+            "sunday": [ 19, 23, 31, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 107,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/lumberjack.jpg',
+          title: 'Lumberjack',
+          artist: 'Oleksandr Bogomazov',
+          year: 'c.1913',
+          rule: {
+            "monday": [ 19, 23, 31, 16 ],
+            "tuesday": [ 18, 21, 30, 15 ],
+            "wednesday": [ 17, 21, 29, 14 ],
+            "thursday": [ 16, 20, 28, 13 ],
+            "friday": [ 15, 19, 27, 12 ],
+            "saturday": [ 14, 17, 26, 11 ],
+            "sunday": [ 13, 16, 25, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 108,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/adam-and-eve-1938.jpg',
+          title: 'Adam and Eve',
+          artist: 'Andre Bauchant',
+          year: '1938',
+          rule: {
+            "monday": [ 13, 16, 25, 10 ],
+            "tuesday": [ 19, 23, 31, 16 ],
+            "wednesday": [ 18, 21, 30, 15 ],
+            "thursday": [ 17, 21, 29, 14 ],
+            "friday": [ 16, 20, 28, 13 ],
+            "saturday": [ 15, 19, 27, 12 ],
+            "sunday": [ 14, 17, 26, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 109,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/the-mermaid-1910.jpg',
+          title: 'The Mermaid',
+          artist: 'Howard Pyle',
+          year: '1910',
+          rule: {
+            "monday": [ 14, 17, 26, 11 ],
+            "tuesday": [ 13, 16, 25, 10 ],
+            "wednesday": [ 19, 23, 31, 16 ],
+            "thursday": [ 18, 21, 30, 15 ],
+            "friday": [ 17, 21, 29, 14 ],
+            "saturday": [ 16, 20, 28, 13 ],
+            "sunday": [ 15, 19, 27, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 110,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/they-tens-mainstay-iv-1907.jpg',
+          title: 'They tens mainstay IV',
+          artist: 'Hilma af Klint',
+          year: '1907',
+          rule: {
+            "monday": [ 15, 19, 27, 12 ],
+            "tuesday": [ 14, 17, 26, 11 ],
+            "wednesday": [ 13, 16, 25, 10 ],
+            "thursday": [ 19, 23, 31, 16 ],
+            "friday": [ 18, 21, 30, 15 ],
+            "saturday": [ 17, 21, 29, 14 ],
+            "sunday": [ 16, 20, 28, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
