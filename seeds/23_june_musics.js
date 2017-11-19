@@ -1300,6 +1300,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 73,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'http://bandcamp.com/EmbeddedPlayer/album=1650358930/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://music.lowercasenoises.com/album/passage',
+          a_string: 'Passage by Lowercase Noises',
+          rule: {
+            "monday": [ 7, 15, 17, 28 ],
+            "tuesday": [ 11, 15, 21, 2 ],
+            "wednesday": [ 10, 14, 20, 30 ],
+            "thursday": [ 9, 13, 18, 30 ],
+            "saturday": [ 9, 12, 18, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 74,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'http://bandcamp.com/EmbeddedPlayer/album=400208076/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://music.lowercasenoises.com/album/the-swiss-illness',
+          a_string: 'The Swiss Illness by Lowercase Noises',
+          rule: {
+            "monday": [ 9, 12, 18, 29 ],
+            "tuesday": [ 7, 15, 17, 28 ],
+            "wednesday": [ 11, 15, 21, 2 ],
+            "thursday": [ 10, 14, 20, 30 ],
+            "saturday": [ 9, 13, 18, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 75,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'http://bandcamp.com/EmbeddedPlayer/album=650819023/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://music.lowercasenoises.com/album/james',
+          a_string: 'James by Lowercase Noises',
+          rule: {
+            "monday": [ 9, 13, 18, 30 ],
+            "tuesday": [ 9, 12, 18, 29 ],
+            "wednesday": [ 7, 15, 17, 28 ],
+            "thursday": [ 11, 15, 21, 2 ],
+            "saturday": [ 10, 14, 20, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
