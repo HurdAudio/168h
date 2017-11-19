@@ -2704,6 +2704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 136,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/the-laundry-woman.jpg',
+          title: 'The Laundry Woman',
+          artist: 'Camille Pissarro',
+          year: 'c.1898',
+          rule: {
+            "monday": [ 8, 18, 28, 7 ],
+            "tuesday": [ 20, 30, 9, 17 ],
+            "wednesday": [ 18, 28, 7, 17 ],
+            "thursday": [ 16, 26, 5, 15 ],
+            "friday": [ 13, 24, 3, 23 ],
+            "saturday": [ 12, 22, 1, 11 ],
+            "sunday": [ 10, 20, 30, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 137,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/haymaking-in-eragny-1901.jpg',
+          title: 'Haymaking in Eragny',
+          artist: 'Camille Pissarro',
+          year: '1901',
+          rule: {
+            "monday": [ 10, 20, 30, 9 ],
+            "tuesday": [ 8, 18, 28, 7 ],
+            "wednesday": [ 20, 30, 9, 17 ],
+            "thursday": [ 18, 28, 7, 17 ],
+            "friday": [ 16, 26, 5, 15 ],
+            "saturday": [ 13, 24, 3, 23 ],
+            "sunday": [ 12, 22, 1, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 138,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/the-sugar-mill-1923.jpg',
+          title: 'The Sugar Mill',
+          artist: 'Diego Rivera',
+          year: '1923',
+          rule: {
+            "monday": [ 12, 22, 1, 11 ],
+            "tuesday": [ 10, 20, 30, 9 ],
+            "wednesday": [ 8, 18, 28, 7 ],
+            "thursday": [ 20, 30, 9, 17 ],
+            "friday": [ 18, 28, 7, 17 ],
+            "saturday": [ 16, 26, 5, 15 ],
+            "sunday": [ 13, 24, 3, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 139,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/la-era-the-threshing-floor-1904-oil-on-canvas-1904.jpg',
+          title: 'La Era (The Threshing Floor) 1904 (oil on canvas)',
+          artist: 'Diego Rivera',
+          year: '1904',
+          rule: {
+            "monday": [ 13, 24, 3, 23 ],
+            "tuesday": [ 12, 22, 1, 11 ],
+            "wednesday": [ 10, 20, 30, 9 ],
+            "thursday": [ 8, 18, 28, 7 ],
+            "friday": [ 20, 30, 9, 17 ],
+            "saturday": [ 18, 28, 7, 17 ],
+            "sunday": [ 16, 26, 5, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 140,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/entry-into-the-mine-1923.jpg',
+          title: 'Entry into the Mine',
+          artist: 'Diego Rivera',
+          year: '1923',
+          rule: {
+            "monday": [ 17, 27, 6, 16 ],
+            "tuesday": [ 14, 25, 4, 24 ],
+            "wednesday": [ 13, 23, 2, 12 ],
+            "thursday": [ 11, 21, 31, 10 ],
+            "friday": [ 9, 19, 29, 8 ],
+            "saturday": [ 21, 31, 10, 18 ],
+            "sunday": [ 19, 29, 8, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
