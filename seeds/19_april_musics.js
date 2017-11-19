@@ -1516,6 +1516,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 85,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1201496113/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bocian.bandcamp.com/album/you-can-be-mine',
+          a_string: 'You Can Be Mine by Fred Lonberg-Holm &amp; Paal Nilssen-Love',
+          rule: {
+            "monday": [ 14, 22, 4, 9 ],
+            "tuesday": [ 13, 21, 3, 8 ],
+            "wednesday": [ 12, 20, 2, 7 ],
+            "thursday": [ 16, 24, 6, 11 ],
+            "saturday": [ 15, 23, 5, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 86,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1733766922/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bocian.bandcamp.com/album/duft',
+          a_string: 'Duft by Zeitkratzer',
+          rule: {
+            "monday": [ 15, 23, 5, 10 ],
+            "tuesday": [ 14, 22, 4, 9 ],
+            "wednesday": [ 13, 21, 3, 8 ],
+            "thursday": [ 12, 20, 2, 7 ],
+            "saturday": [ 16, 24, 6, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 87,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2257017568/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bocian.bandcamp.com/album/gtr-synth-2000',
+          a_string: 'Gtr/Synth 2000 by Kevin Drumm',
+          rule: {
+            "monday": [ 16, 24, 6, 11 ],
+            "tuesday": [ 15, 23, 5, 10 ],
+            "wednesday": [ 14, 22, 4, 9 ],
+            "thursday": [ 13, 21, 3, 8 ],
+            "saturday": [ 12, 20, 2, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
