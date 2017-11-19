@@ -2304,6 +2304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 116,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/the-knitting-shepherdess-1857.jpg',
+          title: 'The Knitting Shepherdess',
+          artist: 'Jean-Francois Millet',
+          year: 'c.1856 - 1857',
+          rule: {
+            "monday": [ 14, 25, 5, 16 ],
+            "tuesday": [ 13, 24, 4, 15 ],
+            "wednesday": [ 19, 30, 10, 21 ],
+            "thursday": [ 18, 29, 9, 20 ],
+            "friday": [ 17, 28, 8, 19 ],
+            "saturday": [ 16, 27, 7, 18 ],
+            "sunday": [ 15, 26, 6, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 117,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/market-in-the-normandy.jpg',
+          title: 'Market in the Normandy',
+          artist: 'Theodore Rousseau',
+          year: 'c.1845 - c.1848',
+          rule: {
+            "monday": [ 15, 26, 6, 17 ],
+            "tuesday": [ 14, 25, 5, 16 ],
+            "wednesday": [ 13, 24, 4, 15 ],
+            "thursday": [ 19, 30, 10, 21 ],
+            "friday": [ 18, 29, 9, 20 ],
+            "saturday": [ 17, 28, 8, 19 ],
+            "sunday": [ 16, 27, 7, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 118,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/two-nymphs-pursued-by-satyrs.jpg',
+          title: 'Two Nymphs Pursued by Satyrs',
+          artist: 'Honore Daumier',
+          year: '1850',
+          rule: {
+            "monday": [ 16, 27, 7, 18 ],
+            "tuesday": [ 15, 26, 6, 17 ],
+            "wednesday": [ 14, 25, 5, 16 ],
+            "thursday": [ 13, 24, 4, 15 ],
+            "friday": [ 19, 30, 10, 21 ],
+            "saturday": [ 18, 29, 9, 20 ],
+            "sunday": [ 17, 28, 8, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 119,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/dandy-in-paris.jpg',
+          title: 'Dandy in Paris',
+          artist: 'Paul Gavarni',
+          year: '?',
+          rule: {
+            "monday": [ 18, 29, 9, 20 ],
+            "tuesday": [ 17, 28, 8, 19 ],
+            "wednesday": [ 16, 27, 7, 18 ],
+            "thursday": [ 15, 26, 6, 17 ],
+            "friday": [ 14, 25, 5, 16 ],
+            "saturday": [ 20, 31, 11, 22 ],
+            "sunday": [ 19, 30, 10, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 120,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/attila-the-hun(1).jpg',
+          title: 'Attila the Hun',
+          artist: 'Eugene Delacroix',
+          year: '1847',
+          rule: {
+            "monday": [ 19, 30, 10, 21 ],
+            "tuesday": [ 18, 29, 9, 20 ],
+            "wednesday": [ 17, 28, 8, 19 ],
+            "thursday": [ 16, 27, 7, 18 ],
+            "friday": [ 15, 26, 6, 17 ],
+            "saturday": [ 14, 25, 5, 16 ],
+            "sunday": [ 20, 31, 11, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
