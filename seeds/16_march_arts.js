@@ -3104,6 +3104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 156,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/rollande-1929.jpg',
+          title: 'Rollande',
+          artist: 'Prudence Heward',
+          year: '1929',
+          rule: {
+            "monday": [ 22, 31, 9, 18 ],
+            "tuesday": [ 21, 31, 10, 18 ],
+            "wednesday": [ 20, 30, 7, 17 ],
+            "thursday": [ 19, 29, 6, 16 ],
+            "friday": [ 18, 28, 5, 15 ],
+            "saturday": [ 17, 27, 4, 14 ],
+            "sunday": [ 16, 26, 4, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 157,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/jeanne-he-buterne-autoportrait.jpg',
+          title: 'Self portrait',
+          artist: 'Jeanne Hébuterne',
+          year: '1916',
+          rule: {
+            "monday": [ 16, 26, 4, 13 ],
+            "tuesday": [ 22, 31, 9, 18 ],
+            "wednesday": [ 21, 31, 10, 18 ],
+            "thursday": [ 20, 30, 7, 17 ],
+            "friday": [ 19, 29, 6, 16 ],
+            "saturday": [ 18, 28, 5, 15 ],
+            "sunday": [ 17, 27, 4, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 158,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/santissima-trinita-1928.jpg',
+          title: 'Santissima Trinita',
+          artist: 'Winifred Knights',
+          year: '1928',
+          rule: {
+            "monday": [ 17, 27, 4, 14 ],
+            "tuesday": [ 16, 26, 4, 13 ],
+            "wednesday": [ 22, 31, 9, 18 ],
+            "thursday": [ 21, 31, 10, 18 ],
+            "friday": [ 20, 30, 7, 17 ],
+            "saturday": [ 19, 29, 6, 16 ],
+            "sunday": [ 18, 28, 5, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 159,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/still-life-1.jpg',
+          title: 'Still Life',
+          artist: 'Gohar Fermanyan',
+          year: '?',
+          rule: {
+            "monday": [ 18, 28, 5, 15 ],
+            "tuesday": [ 17, 27, 4, 14 ],
+            "wednesday": [ 16, 26, 4, 13 ],
+            "thursday": [ 22, 31, 9, 18 ],
+            "friday": [ 21, 31, 10, 18 ],
+            "saturday": [ 20, 30, 7, 17 ],
+            "sunday": [ 19, 29, 6, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 160,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/totem-materia.jpg',
+          title: 'Totem Materia',
+          artist: 'Betty Parsons',
+          year: '?',
+          rule: {
+            "monday": [ 19, 29, 6, 16 ],
+            "tuesday": [ 18, 28, 5, 15 ],
+            "wednesday": [ 17, 27, 4, 14 ],
+            "thursday": [ 16, 26, 4, 13 ],
+            "friday": [ 22, 31, 9, 18 ],
+            "saturday": [ 21, 31, 10, 18 ],
+            "sunday": [ 20, 30, 7, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
