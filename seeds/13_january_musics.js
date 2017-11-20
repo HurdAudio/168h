@@ -1840,6 +1840,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 103,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2227378303/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://xirecords.bandcamp.com/album/toot',
+          a_string: 'TOOT! by Charlie Morrow',
+          rule: {
+            "monday": [ 21, 28, 30, 29 ],
+            "tuesday": [ 29, 23, 25, 30 ],
+            "wednesday": [ 20, 27, 28, 29 ],
+            "thursday": [ 21, 28, 29, 30 ],
+            "saturday": [ 19, 23, 25, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 104,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2696170312/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://benfrost.bandcamp.com/album/the-centre-cannot-hold',
+          a_string: 'The Centre Cannot Hold by Ben Frost',
+          rule: {
+            "monday": [ 19, 23, 25, 29 ],
+            "tuesday": [ 21, 28, 30, 29 ],
+            "wednesday": [ 29, 23, 25, 30 ],
+            "thursday": [ 20, 27, 28, 29 ],
+            "saturday": [ 21, 28, 29, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 105,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2887721505/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://valgeir.bandcamp.com/album/draumalandi',
+          a_string: 'Draumalandið by Valgeir Sigurðsson',
+          rule: {
+            "monday": [ 22, 29, 30, 31 ],
+            "tuesday": [ 20, 24, 26, 30 ],
+            "wednesday": [ 22, 29, 31, 30 ],
+            "thursday": [ 30, 24, 26, 31 ],
+            "saturday": [ 21, 28, 29, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
