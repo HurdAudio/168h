@@ -1732,6 +1732,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 97,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3250456230/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://dubstorerecords.bandcamp.com/album/redman-international-digital-roots-dancehall-1985-to-1990-10-rare-singles-set',
+          a_string: 'Redman International: Digital Roots Dancehall 1985 to 1990 - 10 Rare Singles Set by Dub Store Records',
+          rule: {
+            "monday": [ 14, 19, 21, 4 ],
+            "tuesday": [ 15, 19, 21, 25 ],
+            "wednesday": [ 17, 21, 23, 27 ],
+            "thursday": [ 19, 23, 25, 27 ],
+            "saturday": [ 2, 25, 27, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 98,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=906862647/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://pressuresounds.bandcamp.com/album/meet-the-people',
+          a_string: 'Meet the People by Lloyd Parks &amp; We The People',
+          rule: {
+            "monday": [ 3, 26, 28, 5 ],
+            "tuesday": [ 15, 20, 22, 5 ],
+            "wednesday": [ 16, 20, 22, 26 ],
+            "thursday": [ 18, 22, 24, 28 ],
+            "saturday": [ 20, 24, 26, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 99,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1674138456/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://dubsyndicate.bandcamp.com/album/displaced-masters',
+          a_string: 'Displaced Masters by Dub Syndicate',
+          rule: {
+            "monday": [ 20, 24, 26, 28 ],
+            "tuesday": [ 3, 26, 28, 5 ],
+            "wednesday": [ 15, 20, 22, 5 ],
+            "thursday": [ 16, 20, 22, 26 ],
+            "saturday": [ 18, 22, 24, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
