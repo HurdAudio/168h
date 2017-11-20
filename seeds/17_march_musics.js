@@ -1624,6 +1624,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 91,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2305625765/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://xirecords.bandcamp.com/album/celestial-fires',
+          a_string: 'Celestial Fires by Mary Jane Leach',
+          rule: {
+            "monday": [ 17, 23, 29, 6 ],
+            "tuesday": [ 16, 22, 28, 6 ],
+            "wednesday": [ 15, 21, 27, 4 ],
+            "thursday": [ 14, 20, 26, 3 ],
+            "saturday": [ 18, 24, 30, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 92,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=896547347/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://xirecords.bandcamp.com/album/simoom',
+          a_string: 'Simoom by Lois V Vierk',
+          rule: {
+            "monday": [ 18, 24, 30, 7 ],
+            "tuesday": [ 17, 23, 29, 6 ],
+            "wednesday": [ 16, 22, 28, 6 ],
+            "thursday": [ 15, 21, 27, 4 ],
+            "saturday": [ 14, 20, 26, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 93,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2444727940/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sarah-elizabeth-charles.bandcamp.com/album/free-of-form',
+          a_string: 'Free Of Form by Sarah Elizabeth Charles',
+          rule: {
+            "monday": [ 14, 20, 26, 3 ],
+            "tuesday": [ 18, 24, 30, 7 ],
+            "wednesday": [ 17, 23, 29, 6 ],
+            "thursday": [ 16, 22, 28, 6 ],
+            "saturday": [ 15, 21, 27, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
