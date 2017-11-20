@@ -3304,6 +3304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 166,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Edward_Loper_34_St_Pierre_1980.jpg',
+          title: '34 St. Pierre, Quebec',
+          artist: 'Edward L. Loper Sr.',
+          year: '1978',
+          rule: {
+            "monday": [ 2, 12, 18, 26 ],
+            "tuesday": [ 4, 12, 20, 1 ],
+            "wednesday": [ 6, 14, 10, 29 ],
+            "thursday": [ 23, 2, 10, 18 ],
+            "friday": [ 25, 4, 12, 20 ],
+            "saturday": [ 1, 6, 12, 22 ],
+            "sunday": [ 29, 8, 16, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 167,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Lovell_28M.jpg',
+          title: '2 8 M',
+          artist: 'Whitfield Lovell',
+          year: '2008',
+          rule: {
+            "monday": [ 29, 8, 16, 24 ],
+            "tuesday": [ 2, 12, 18, 26 ],
+            "wednesday": [ 4, 12, 20, 1 ],
+            "thursday": [ 6, 14, 10, 29 ],
+            "friday": [ 23, 2, 10, 18 ],
+            "saturday": [ 25, 4, 12, 20 ],
+            "sunday": [ 1, 6, 12, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 168,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/2c2f2f35fd81b404fa6df8af92123d3d.png',
+          title: 'Hard Labor',
+          artist: 'Gwendolyn Ann Magee',
+          year: '2001',
+          rule: {
+            "monday": [ 2, 7, 13, 23 ],
+            "tuesday": [ 1, 9, 17, 25 ],
+            "wednesday": [ 3, 13, 19, 27 ],
+            "thursday": [ 5, 13, 21, 2 ],
+            "friday": [ 7, 15, 11, 1 ],
+            "saturday": [ 24, 3, 11, 19 ],
+            "sunday": [ 26, 5, 13, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 169,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/892537-7.jpg',
+          title: 'Merinita',
+          artist: 'Clarence Major',
+          year: '?',
+          rule: {
+            "monday": [ 26, 5, 13, 21 ],
+            "tuesday": [ 2, 7, 13, 23 ],
+            "wednesday": [ 1, 9, 17, 25 ],
+            "thursday": [ 3, 13, 19, 27 ],
+            "friday": [ 5, 13, 21, 2 ],
+            "saturday": [ 7, 15, 11, 1 ],
+            "sunday": [ 24, 3, 11, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 170,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Vignette_-2,_2008,_Kerry_James_Marshall.jpeg',
+          title: 'Vignette #2',
+          artist: 'Kerry James Marshall',
+          year: '2008',
+          rule: {
+            "monday": [ 24, 3, 11, 19 ],
+            "tuesday": [ 26, 5, 13, 21 ],
+            "wednesday": [ 2, 7, 13, 23 ],
+            "thursday": [ 1, 9, 17, 25 ],
+            "friday": [ 3, 13, 19, 27 ],
+            "saturday": [ 5, 13, 21, 2 ],
+            "sunday": [ 7, 15, 11, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
