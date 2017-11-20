@@ -2904,6 +2904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 146,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/Miller-Park-FB2.jpg',
+          title: 'Miller Park',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 18, 22, 7, 5 ],
+            "tuesday": [ 17, 22, 27, 4 ],
+            "wednesday": [ 16, 21, 27, 3 ],
+            "thursday": [ 15, 20, 26, 2 ],
+            "friday": [ 20, 26, 1, 8 ],
+            "saturday": [ 4, 24, 30, 7 ],
+            "sunday": [ 19, 24, 30, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 147,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/miller-park-milwaukee-wisconsin-mountain-dreams.jpg',
+          title: 'Miller Park',
+          artist: 'Mountain Dreams',
+          year: '2016',
+          rule: {
+            "monday": [ 20, 25, 1, 7 ],
+            "tuesday": [ 19, 23, 8, 6 ],
+            "wednesday": [ 18, 23, 28, 5 ],
+            "thursday": [ 17, 22, 28, 4 ],
+            "friday": [ 16, 21, 27, 3 ],
+            "saturday": [ 21, 27, 2, 9 ],
+            "sunday": [ 5, 25, 1, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 148,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/Brewers.jpg',
+          title: 'Milwaukee Brewers',
+          artist: 'Lindsay Frost',
+          year: 'xxi Cent.',
+          rule: {
+            "monday": [ 5, 25, 1, 8 ],
+            "tuesday": [ 20, 25, 1, 7 ],
+            "wednesday": [ 19, 23, 8, 6 ],
+            "thursday": [ 18, 23, 28, 5 ],
+            "friday": [ 17, 22, 28, 4 ],
+            "saturday": [ 16, 21, 27, 3 ],
+            "sunday": [ 21, 27, 2, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 149,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/milwaukee-brewers-miller-field.jpg',
+          title: 'Miller Park and the Brewers',
+          artist: 'Meg Taylor',
+          year: '2017',
+          rule: {
+            "monday": [ 21, 27, 2, 9 ],
+            "tuesday": [ 5, 25, 1, 8 ],
+            "wednesday": [ 20, 25, 1, 7 ],
+            "thursday": [ 19, 23, 8, 6 ],
+            "friday": [ 18, 23, 28, 5 ],
+            "saturday": [ 17, 22, 28, 4 ],
+            "sunday": [ 16, 21, 27, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 150,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/3671386509cf48d849f8c53f5ff174ad--milwaukee-brewers-top-photo.jpg',
+          title: 'Davis\' 2 HRs send Brewers over Reds',
+          artist: '?',
+          year: 'xxi Cent.',
+          rule: {
+            "monday": [ 16, 21, 27, 3 ],
+            "tuesday": [ 21, 27, 2, 9 ],
+            "wednesday": [ 5, 25, 1, 8 ],
+            "thursday": [ 20, 25, 1, 7 ],
+            "friday": [ 19, 23, 8, 6 ],
+            "saturday": [ 18, 23, 28, 5 ],
+            "sunday": [ 17, 22, 28, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
