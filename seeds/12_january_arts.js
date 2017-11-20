@@ -3504,6 +3504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 176,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/88-va-17-1988.jpg',
+          title: '88. VA 17',
+          artist: 'Jurgen Partenheimer',
+          year: '1988',
+          rule: {
+            "monday": [ 30, 31, 23, 26 ],
+            "tuesday": [ 2, 3, 25, 29 ],
+            "wednesday": [ 5, 7, 8, 10 ],
+            "thursday": [ 7, 9, 13, 16 ],
+            "friday": [ 9, 11, 12, 15 ],
+            "saturday": [ 25, 26, 6, 29 ],
+            "sunday": [ 28, 30, 22, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 177,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/gdwf-2004.jpg',
+          title: 'GDWF',
+          artist: 'Paul Reed',
+          year: '2004',
+          rule: {
+            "monday": [ 28, 30, 22, 11 ],
+            "tuesday": [ 30, 31, 23, 26 ],
+            "wednesday": [ 2, 3, 25, 29 ],
+            "thursday": [ 5, 7, 8, 10 ],
+            "friday": [ 7, 9, 13, 16 ],
+            "saturday": [ 9, 11, 12, 15 ],
+            "sunday": [ 25, 26, 6, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 178,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/work-1956.jpg',
+          title: 'Work',
+          artist: 'Sadamasa Motonaga',
+          year: '1956',
+          rule: {
+            "monday": [ 25, 26, 6, 29 ],
+            "tuesday": [ 28, 30, 22, 11 ],
+            "wednesday": [ 30, 31, 23, 26 ],
+            "thursday": [ 2, 3, 25, 29 ],
+            "friday": [ 5, 7, 8, 10 ],
+            "saturday": [ 7, 9, 13, 16 ],
+            "sunday": [ 9, 11, 12, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 179,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/iras-1959.jpg',
+          title: 'Iras',
+          artist: 'Olle Baertling',
+          year: '1959',
+          rule: {
+            "monday": [ 9, 11, 12, 15 ],
+            "tuesday": [ 25, 26, 6, 29 ],
+            "wednesday": [ 28, 30, 22, 11 ],
+            "thursday": [ 30, 31, 23, 26 ],
+            "friday": [ 2, 3, 25, 29 ],
+            "saturday": [ 5, 7, 8, 10 ],
+            "sunday": [ 7, 9, 13, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 180,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/composition-no-212-1960.jpg',
+          title: 'Composition No. 212',
+          artist: 'Friedrich Vordemberge-Gildewart',
+          year: '1960',
+          rule: {
+            "monday": [ 7, 9, 13, 16 ],
+            "tuesday": [ 9, 11, 12, 15 ],
+            "wednesday": [ 25, 26, 6, 29 ],
+            "thursday": [ 28, 30, 22, 11 ],
+            "friday": [ 30, 31, 23, 26 ],
+            "saturday": [ 2, 3, 25, 29 ],
+            "sunday": [ 5, 7, 8, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
