@@ -146,6 +146,171 @@
       vm.addNewHoliday = addNewHoliday;
       vm.goalManager = goalManager;
       vm.closeGoalsManager = closeGoalsManager;
+      vm.editTask = editTask;
+      vm.userTasksEditorDone = userTasksEditorDone;
+
+      function userTasksEditorDone () {
+        let userTasksEditingDiv = document.getElementById('userTasksEditingDiv');
+        let tasksManagerDone = document.getElementById('tasksManagerDone');
+
+
+        userTasksEditingDiv.setAttribute("style", "display: none;");
+        tasksManagerDone.setAttribute("style", "visibility: visible;");
+        taskManager();
+      }
+
+      function editTask(taskId) {
+        let userTasksEditingDiv = document.getElementById('userTasksEditingDiv');
+        let tasksManagerDone = document.getElementById('tasksManagerDone');
+        let userTaskNameDiv = document.getElementById('userTaskNameDiv');
+        let userTasknameInput = document.getElementById('userTasknameInput');
+        if (userTasknameInput) {
+          userTasknameInput.parentNode.removeChild(userTasknameInput);
+          userTasknameInput = document.createElement('input');
+          userTaskNameDiv.appendChild(userTasknameInput);
+          userTasknameInput.id = 'userTasknameInput';
+          userTasknameInput.type = 'text';
+          userTasknameInput.className = 'pure-input-1';
+        }
+        let userTaskNotesDiv = document.getElementById('userTaskNotesDiv');
+        let userTasknotesInput = document.getElementById('userTasknotesInput');
+        if (userTasknotesInput) {
+          userTasknotesInput.parentNode.removeChild(userTasknotesInput);
+          userTasknotesInput = document.createElement('textarea');
+          userTaskNotesDiv.appendChild(userTasknotesInput);
+          userTasknotesInput.id = 'userTasknotesInput';
+          // userTasknotesInput.type = 'textarea';
+          userTasknotesInput.rows = '5';
+          userTasknotesInput.className = 'pure-input-1';
+        }
+        let userTaskDueDateDiv = document.getElementById('userTaskDueDateDiv');
+        let userTaskDueDateInput = document.getElementById('userTaskDueDateInput');
+        if (userTaskDueDateInput) {
+          userTaskDueDateInput.parentNode.removeChild(userTaskDueDateInput);
+          userTaskDueDateInput = document.createElement('input');
+          userTaskDueDateDiv.appendChild(userTaskDueDateInput);
+          userTaskDueDateInput.id = 'userTaskDueDateInput';
+          userTaskDueDateInput.type = 'date';
+          userTaskDueDateInput.className = 'pure-input-1';
+        }
+        let userTaskCompletedDiv = document.getElementById('userTaskCompletedDiv');
+        let userTaskCompleted = document.getElementById('userTaskCompleted');
+        if (userTaskCompleted) {
+          userTaskCompleted.parentNode.removeChild(userTaskCompleted);
+          userTaskCompleted = document.createElement('input');
+          userTaskCompletedDiv.appendChild(userTaskCompleted);
+          userTaskCompleted.id = 'userTaskCompleted';
+          userTaskCompleted.type = 'checkbox';
+        }
+        let userTaskCompletedDateDiv = document.getElementById('userTaskCompletedDateDiv');
+        let dateTaskCompletedDiv = document.getElementById('dateTaskCompletedDiv');
+        let userTaskCompletedDate = document.getElementById('userTaskCompletedDate');
+        if (userTaskCompletedDate) {
+          userTaskCompletedDate.parentNode.removeChild(userTaskCompletedDate);
+          userTaskCompletedDate = document.createElement('input');
+          dateTaskCompletedDiv.appendChild(userTaskCompletedDate);
+          userTaskCompletedDate.id = 'userTaskCompletedDate';
+          userTaskCompletedDate.type = 'date';
+          userTaskCompletedDate.className = 'pure-input-1';
+        }
+
+        $http.get(`/tasks/${taskId}`)
+        .then(taskData=>{
+          let task = taskData.data;
+          //let dueDate = task.due_date;
+          userTasknameInput.value = task.name;
+          userTasknotesInput.value = task.user_notes;
+          userTaskDueDateInput.value = task.due_date.slice(0, 10);
+          if (task.is_completed) {
+            userTaskCompleted.checked = true;
+            userTaskCompletedDateDiv.setAttribute("style", "visibility: visible;");
+          } else {
+            userTaskCompleted.checked = false;
+            userTaskCompletedDateDiv.setAttribute("style", "visibility: hidden;");
+          }
+          if (task.completed_date !== null) {
+            userTaskCompletedDate.value = task.completed_date.slice(0, 10);
+          }
+
+
+          userTasknameInput.addEventListener('focusout', ()=>{
+            if ((userTasknameInput.value !== '') && (userTasknameInput.value !== task.name)) {
+              let subObj = {
+                name: userTasknameInput.value
+              };
+              $http.patch(`/tasks/${taskId}`, subObj)
+              .then(()=>{
+                task.name = userTasknameInput.value;
+              });
+            }
+          });
+          userTasknotesInput.addEventListener('focusout', ()=>{
+            if ((userTasknotesInput.value !== '') && (userTasknotesInput.value !== task.user_notes)) {
+              let subObj = {
+                user_notes: userTasknotesInput.value
+              };
+              $http.patch(`/tasks/${taskId}`, subObj)
+              .then(()=>{
+                task.user_notes = userTasknotesInput.value;
+              });
+            }
+          });
+          userTaskDueDateInput.addEventListener('change', ()=>{
+            let subObj = {
+              due_date: new Date(userTaskDueDateInput.value)
+            };
+            $http.patch(`/tasks/${taskId}`, subObj)
+            .then(()=>{
+              task.due_date = subObj.due_date;
+            });
+          });
+          userTaskCompletedDate.addEventListener('change', ()=>{
+            let subObj = {
+              completed_date: new Date(userTaskCompletedDate.value)
+            };
+            $http.patch(`/tasks/${taskId}`, subObj)
+            .then(()=>{
+              task.completed_date = subObj.completed_date;
+            });
+          });
+          userTaskCompleted.addEventListener('click', ()=>{
+            let subObj = {
+              is_completed: userTaskCompleted.checked
+            };
+            let completedDate = new Date();
+            let completionString = completedDate.getFullYear() + '-';
+            let month = completedDate.getMonth() + 1;
+            let day = completedDate.getDate();
+            if (month < 10) {
+              completionString += '0' + month +'-';
+            } else {
+              completionString += month + '-';
+            }
+            if (day < 10) {
+              completionString += '0' + day;
+            } else {
+              completionString += day;
+            }
+            if (userTaskCompleted.checked) {
+              userTaskCompletedDateDiv.setAttribute("style", "visibility: visible;");
+              userTaskCompletedDate.value = completionString;
+              subObj.completed_date = new Date(completionString + 'T13:44:00.000Z');
+            } else {
+              userTaskCompletedDateDiv.setAttribute("style", "visibility: hidden;");
+              userTaskCompletedDate.value = null;
+              subObj.completed_date = null;
+            }
+
+            $http.patch(`/tasks/${taskId}`, subObj)
+            .then(()=>{
+              task.is_completed = userTaskCompleted.checked;
+            });
+          });
+        });
+
+        userTasksEditingDiv.setAttribute("style", "display: initial;");
+        tasksManagerDone.setAttribute("style", "visibility: hidden;");
+      }
 
       function closeGoalsManager() {
         let goalsManager = document.getElementById('goalsManager');

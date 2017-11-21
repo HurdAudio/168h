@@ -684,6 +684,44 @@
       </form>
 
     </div>
+    <div id="userTasksEditingDiv">
+      <div id="userTasksEditorBar">
+        <a href="" class="btn" id="userTasksEditorDoneButton" ng-click="$ctrl.userTasksEditorDone()">done</a>
+        <h1 id="tasksEditorTitle">Task</h1>
+      </div>
+      <form id="userTasksEditorForm" class="pure-form pure-form-stacked">
+        <div>
+          <p>Task:</p>
+          <div id="userTaskNameDiv">
+            <input type="text" id="userTasknameInput" class="pure-input-1">
+          </div>
+          <p>Notes:</p>
+          <div id="userTaskNotesDiv">
+            <textarea type="textarea" rows="5" id="userTasknotesInput" class="pure-input-1"></textarea>
+          </div>
+          <p>Due:</p>
+          <div id="userTaskDueDateDiv">
+            <input type="date" id="userTaskDueDateInput" class="pure-input-1">
+          </div>
+
+          <p>Completed:</p>
+          <div id="userTaskCompletedDiv">
+            <input type="checkbox" id="userTaskCompleted">
+          </div>
+          <div id="userTaskCompletionDataDiv">
+            <div id="userTaskCompletedDateDiv">
+              <p>Completed On:</p>
+              <div id="dateTaskCompletedDiv">
+                <input type="date" id="userTaskCompletedDate" class="pure-input-1">
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </form>
+
+    </div>
   </div>
 
 </div>

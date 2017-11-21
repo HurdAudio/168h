@@ -3073,6 +3073,34 @@ footer img {
   margin-top: 0.2em;
 }
 
+#userTasksEditorBar {
+  font-family: 'Asul', serif;
+  font-size: 18px
+  background: #7A6747;
+  background-color: -webkit-linear-gradient(-135deg, #7A6747, #F3F1F4);
+  background: -o-linear-gradient(-135deg, #7A6747, #F3F1F4);
+  background: -moz-linear-gradient(-135deg, #7A6747, #F3F1F4);
+  background: linear-gradient(-135deg, #7A6747, #F3F1F4);
+  border-radius: 5px;
+  margin: 0;
+  padding:0;
+  height: 3.8em;
+  top: 0%;
+  opacity: 1;
+}
+
+#userTasksEditorBar h1 {
+  margin-left: 2em;
+  padding-top: 0.4em;
+}
+
+
+#userTasksEditorBar a {
+  float:right;
+  margin-right: 1.1em;
+  margin-top: 0.2em;
+}
+
 #userHolidayImageEditorField img {
   margin-left: 4em;
   width: 36vmin;
@@ -3384,6 +3412,64 @@ footer img {
 
 
 #userBillsEditorForm button {
+  margin-left: 2em;
+}
+
+#userTasksEditorForm {
+  font-family: 'Alike Angular', serif;
+  font-size: 24px;
+  background: #7A6747;
+  background-color: -webkit-linear-gradient(135deg, #7A6747, #F3F1F4);
+  background: -o-linear-gradient(135deg, #7A6747, #F3F1F4);
+  background: -moz-linear-gradient(135deg, #7A6747, #F3F1F4);
+  background: linear-gradient(135deg, #7A6747, #F3F1F4);
+  border-radius: 5px;
+  opacity: 1;
+  margin-top: 0;
+  padding-bottom: 4vmin;
+  padding-top: 4vmin;
+}
+
+#userTasksEditorForm p {
+  margin-left: 2em;
+}
+
+#userTasksEditorForm input[type=text] {
+  margin-left: 3em;
+  margin-right: 0;
+  width: 70%;
+}
+
+#userTasksEditorForm textarea {
+  margin-left: 3em;
+  margin-right: 0;
+  width: 70%;
+  align-self: center;
+}
+
+#userTasksEditorForm input[type=number] {
+  margin-left: 3em;
+  margin-right: 0;
+  width: 70%;
+}
+
+#userTasksEditorForm input[type=date] {
+  margin-left: 3em;
+  margin-right: 0;
+  width: 70%;
+}
+
+#userTasksEditorForm input[type=checkbox] {
+  margin-left: 11em;
+  -ms-transform: scale(3); /* IE */
+  -moz-transform: scale(3); /* FF */
+  -webkit-transform: scale(3); /* Safari and Chrome */
+  -o-transform: scale(3); /* Opera */
+  margin-bottom: 0.5em;
+}
+
+
+#userTasksEditorForm button {
   margin-left: 2em;
 }
 
@@ -4542,6 +4628,10 @@ footer img {
 }
 
 #goalsManagementDiv {
+  display: none;
+}
+
+#userTasksEditingDiv {
   display: none;
 }
 
