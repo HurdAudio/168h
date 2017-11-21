@@ -8625,6 +8625,34 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 550,
+          user_id: 1,
+          name: 'Lisle Ellis (bass) born in 1951',
+          color: '#3C130F',
+          picture: './img/musicians/lisleellis.jpg',
+          day_of: new Date ('1951-11-17T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 551,
+          user_id: 1,
+          name: 'The world ended on this day in 1999 according to The Amazing Criswell',
+          color: '#A2C9CB',
+          picture: './img/doomsday/theamazingcriswell.jpg',
+          day_of: new Date ('1999-08-18T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
