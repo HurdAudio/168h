@@ -94,7 +94,8 @@
     <div id="goalsZone">
       <div>
         <img src="../img/football-2101738_1920.jpg">
-        <a href="" id="goalsManager" class="btn">goals</a>
+        <a href="" id="goalsManager" class="btn"
+        ng-click="$ctrl.goalManager()">goals</a>
       </div>
 
     </div>
@@ -340,6 +341,36 @@
                 </div>
               </main>
             </div>
+          </div>
+
+        </fieldset>
+
+
+      </form>
+
+    </div>
+    <div id="goalsManagementDiv">
+      <div id="goalsManagerBar">
+        <a href="" class="btn" id="goalsManagerDone" ng-click="$ctrl.closeGoalsManager()">done</a>
+        <h1>Goals Manager</h1>
+
+      </div>
+      <form id="goalsManagerForm" class="pure-form pure-form-stacked">
+        <fieldset>
+          <div id="goalsManagement">
+            <a href="" class="btn" id="addGoal" ng-click="$ctrl.addNewGoal()">new</a>
+            <a href="" class="btn" id="goalsReporter" ng-click="$ctrl.goalsReport()">report</a>
+            <h2>Goals:</h2>
+            <main ng-repeat="goal in $ctrl.userGoals | orderBy : $ctrl.sortBy">
+              <p>{{goal.blocktype}}:</p>
+              <p>Weekly Goal (in hours): {{goal.weekly_goal}}</p>
+              <br>
+              <div class="goalEdit">
+                <a href="" class="btn" ng-click="$ctrl.editGoal(goal.id)">edit</a>
+                <a href="" class="btn" ng-click="$ctrl.deleteGoal(goal.id)">delete</a>
+              </div>
+            </main>
+
           </div>
 
         </fieldset>

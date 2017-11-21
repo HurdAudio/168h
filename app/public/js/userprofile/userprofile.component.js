@@ -144,6 +144,50 @@
       vm.userBillsEditorDone = userBillsEditorDone;
       vm.deleteOccasion = deleteOccasion;
       vm.addNewHoliday = addNewHoliday;
+      vm.goalManager = goalManager;
+      vm.closeGoalsManager = closeGoalsManager;
+
+      function closeGoalsManager() {
+        let goalsManager = document.getElementById('goalsManager');
+        let goalsZone = document.getElementById('goalsZone');
+        let goalsManagementDiv = document.getElementById('goalsManagementDiv');
+
+        goalsManager.setAttribute("style", "visibility: visible;");
+        goalsZone.setAttribute("style", "opacity: 1.0;");
+        goalsManagementDiv.setAttribute("style", "display: none;");
+      }
+
+      function getGoalBlocktypeName (index, blockId) {
+        $http.get(`/blocktypes/${blockId}`)
+        .then(blockData=>{
+          let block = blockData.data;
+          vm.userGoals[index].blocktype = block.type;
+        });
+      }
+
+      function goalManager() {
+        let goalsManager = document.getElementById('goalsManager');
+        let goalsZone = document.getElementById('goalsZone');
+        let goalsManagementDiv = document.getElementById('goalsManagementDiv');
+
+        $http.get(`/goalsbyuser/${currentUserId}`)
+        .then(userGoalsData=>{
+          let goals = userGoalsData.data;
+          console.log(goals);
+          vm.userGoals = [];
+          if (goals.length > 0) {
+            for (let i = 0; i < goals.length; i++) {
+              vm.userGoals[i] = {};
+              vm.userGoals[i].weekly_goal = goals[i].weekly_goal;
+              getGoalBlocktypeName(i, goals[i].block_type);
+            }
+          }
+        });
+
+        goalsManager.setAttribute("style", "visibility: hidden;");
+        goalsZone.setAttribute("style", "opacity: 0.3;");
+        goalsManagementDiv.setAttribute("style", "display: initial;");
+      }
 
       function addNewHoliday() {
         let today = new Date();
