@@ -88,6 +88,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#E1E1D9',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 7,
+          user_id: 1,
+          theme: 'steam',
+          type: 'holiday',
+          src_string: '../img/july_tiles/steamHoliday.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '210%',
+          color_dark: '#070200',
+          color_medium: '#781E28',
+          color_light: '#F1E7E5',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
