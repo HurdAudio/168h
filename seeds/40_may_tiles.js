@@ -116,6 +116,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#F5F4A7',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 9,
+          user_id: 1,
+          theme: 'greenery',
+          type: 'friday',
+          src_string: '../img/may_tiles/Rice_fields_-_panoramio.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '200%',
+          color_dark: '#1E4607',
+          color_medium: '#6EB232',
+          color_light: '#88CD32',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
