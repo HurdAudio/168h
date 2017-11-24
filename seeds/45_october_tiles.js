@@ -46,6 +46,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#E3A140',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 4,
+          user_id: 1,
+          theme: 'autumnal',
+          type: 'friday',
+          src_string: '../img/october_tiles/sycamore_leaf_tree_nature_color_fall_maple_season-863153.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '135%',
+          color_dark: '#F32D04',
+          color_medium: '#83880D',
+          color_light: '#FDD61E',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
