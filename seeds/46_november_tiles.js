@@ -32,6 +32,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#F7F7F7',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 3,
+          user_id: 1,
+          theme: 'monochromatic',
+          type: 'mtwt',
+          src_string: '../img/november_tiles/floor-tile-pattern-floor-tile-pattern.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '105%',
+          color_dark: '#171717',
+          color_medium: '#BCBCBC',
+          color_light: '#CFCFCF',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
