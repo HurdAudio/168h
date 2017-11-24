@@ -4635,8 +4635,8 @@ footer img {
   display: none;
 }
 
-/*.day {
-  background-image: url(../img/january_tiles/eis-texture.jpg);
+.day {
+  background-image: url(../img/december_tiles/snow-texture--14.jpg);
   background-repeat: no-repeat;
-  background-size: 143%;
-}*/
+  background-size: 190%;
+}
