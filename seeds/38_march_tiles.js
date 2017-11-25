@@ -144,6 +144,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#CEE1DF',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 11,
+          user_id: 1,
+          theme: 'glass',
+          type: 'sunday',
+          src_string: '../img/march_tiles/Stained_Glass_Ship.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '100%',
+          color_dark: '#03242F',
+          color_medium: '#50B5DB',
+          color_light: '#E1EAED',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
