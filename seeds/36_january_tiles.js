@@ -172,6 +172,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#BFB9C3',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 13,
+          user_id: 1,
+          theme: 'ice',
+          type: 'week',
+          src_string: '../img/january_tiles/17-dark-ice-texture-free-hi-res.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '200%',
+          color_dark: '#878CA2',
+          color_medium: '#C0CDDD',
+          color_light: '#F9FAFC',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
