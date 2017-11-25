@@ -158,6 +158,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#F57E5A',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 12,
+          user_id: 1,
+          theme: 'silk',
+          type: 'holiday',
+          src_string: '../img/february_tiles/oriental-toile-venetian-pink-by-beacon-hill-701229.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '100%',
+          color_dark: '#7B1C20',
+          color_medium: '#895636',
+          color_light: '#B08C62',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
