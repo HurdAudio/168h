@@ -1134,7 +1134,61 @@ exports.seed = function(knex, Promise) {
             "tuesday": [ 17, 25, 10, 11 ],
             "wednesday": [ 16, 24, 9, 10 ],
             "thursday": [ 13, 21, 6, 5 ],
-            "saturday": [ 14, 22, 7, 6]
+            "saturday": [ 14, 22, 7, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 64,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2810799458/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ligeiamare.bandcamp.com/album/penumbra',
+          a_string: 'Penumbra by J.A. Deane and Farrell Lowe',
+          rule: {
+            "monday": [ 14, 22, 7, 6 ],
+            "tuesday": [ 18, 26, 8, 7 ],
+            "wednesday": [ 17, 25, 10, 11 ],
+            "thursday": [ 16, 24, 9, 10 ],
+            "saturday": [ 13, 21, 6, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 65,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1046147047/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ligeiamare.bandcamp.com/album/mirages',
+          a_string: 'Mirages by J.A. Deane and Farrell Lowe',
+          rule: {
+            "monday": [ 13, 21, 6, 5 ],
+            "tuesday": [ 14, 22, 7, 6 ],
+            "wednesday": [ 18, 26, 8, 7 ],
+            "thursday": [ 17, 25, 10, 11 ],
+            "saturday": [ 16, 24, 9, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 66,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3302633823/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://killick.bandcamp.com/album/broadcast-no-1',
+          a_string: 'Broadcast No. 1 by Killick Hinds &amp; Scott Baxendale',
+          rule: {
+            "monday": [ 16, 24, 9, 10 ],
+            "tuesday": [ 13, 21, 6, 5 ],
+            "wednesday": [ 14, 22, 7, 6 ],
+            "thursday": [ 18, 26, 8, 7 ],
+            "saturday": [ 17, 25, 10, 11 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
