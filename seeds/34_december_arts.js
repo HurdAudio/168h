@@ -1404,6 +1404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 71,
+          user_id: 1,
+          theme: 'pulp',
+          img_path: './img/december/44-00,Illus2.jpg',
+          title: 'illustration',
+          artist: 'Lee Brown Coye',
+          year: '1944',
+          rule: {
+            "monday": [ 13, 26, 3, 9 ],
+            "tuesday": [ 12, 25, 2, 8 ],
+            "wednesday": [ 11, 24, 1, 7 ],
+            "thursday": [ 10, 23, 31, 6 ],
+            "friday": [ 9, 22, 30, 5 ],
+            "saturday": [ 8, 21, 9, 4 ],
+            "sunday": [ 14, 27, 4, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 72,
+          user_id: 1,
+          theme: 'pulp',
+          img_path: './img/december/23-00,Ad.jpg',
+          title: 'Advertisement',
+          artist: 'Fred Craft',
+          year: '1914',
+          rule: {
+            "monday": [ 14, 27, 4, 10 ],
+            "tuesday": [ 13, 26, 3, 9 ],
+            "wednesday": [ 12, 25, 2, 8 ],
+            "thursday": [ 11, 24, 1, 7 ],
+            "friday": [ 10, 23, 31, 6 ],
+            "saturday": [ 9, 22, 30, 5 ],
+            "sunday": [ 8, 21, 9, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 73,
+          user_id: 1,
+          theme: 'pulp',
+          img_path: './img/december/52-12,GiantW.jpg',
+          title: 'Giant Western',
+          artist: 'Mel Crair',
+          year: '1952',
+          rule: {
+            "monday": [ 8, 21, 9, 4 ],
+            "tuesday": [ 14, 27, 4, 10 ],
+            "wednesday": [ 13, 26, 3, 9 ],
+            "thursday": [ 12, 25, 2, 8 ],
+            "friday": [ 11, 24, 1, 7 ],
+            "saturday": [ 10, 23, 31, 6 ],
+            "sunday": [ 9, 22, 30, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 74,
+          user_id: 1,
+          theme: 'pulp',
+          img_path: './img/december/40-00,ComeColorsCome.jpg',
+          title: 'Come Colors Come',
+          artist: 'Reed Crandall',
+          year: '1940',
+          rule: {
+            "monday": [ 9, 22, 30, 5 ],
+            "tuesday": [ 8, 21, 9, 4 ],
+            "wednesday": [ 14, 27, 4, 10 ],
+            "thursday": [ 13, 26, 3, 9 ],
+            "friday": [ 12, 25, 2, 8 ],
+            "saturday": [ 11, 24, 1, 7 ],
+            "sunday": [ 10, 23, 31, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 75,
+          user_id: 1,
+          theme: 'pulp',
+          img_path: './img/december/10-00,UMYrbk1.jpg',
+          title: 'Univ of MO Year Book',
+          artist: 'Monte Crews',
+          year: '1910',
+          rule: {
+            "monday": [ 10, 23, 31, 6 ],
+            "tuesday": [ 9, 22, 30, 5 ],
+            "wednesday": [ 8, 21, 9, 4 ],
+            "thursday": [ 14, 27, 4, 10 ],
+            "friday": [ 13, 26, 3, 9 ],
+            "saturday": [ 12, 25, 2, 8 ],
+            "sunday": [ 11, 24, 1, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
