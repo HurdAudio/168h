@@ -1804,6 +1804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 91,
+          user_id: 1,
+          theme: 'russian revolution',
+          img_path: './img/october/u-g-PU2WY80.jpg',
+          title: 'Long Live the Soviet People - the Space Pioneers!',
+          artist: 'Vadim Petrovich Volikov',
+          year: '?',
+          rule: {
+            "monday": [ 17, 28, 8, 12 ],
+            "tuesday": [ 16, 27, 7, 11 ],
+            "wednesday": [ 15, 26, 6, 10 ],
+            "thursday": [ 14, 25, 26, 9 ],
+            "friday": [ 23, 24, 4, 8 ],
+            "saturday": [ 19, 30, 10, 14 ],
+            "sunday": [ 18, 29, 9, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 92,
+          user_id: 1,
+          theme: 'russian revolution',
+          img_path: './img/october/u-g-PU2OR80.jpg',
+          title: 'Have You Volunteered for the Red Army?',
+          artist: 'Dmitri Stachievich Moor',
+          year: '?',
+          rule: {
+            "monday": [ 18, 29, 9, 13 ],
+            "tuesday": [ 17, 28, 8, 12 ],
+            "wednesday": [ 16, 27, 7, 11 ],
+            "thursday": [ 15, 26, 6, 10 ],
+            "friday": [ 14, 25, 26, 9 ],
+            "saturday": [ 23, 24, 4, 8 ],
+            "sunday": [ 19, 30, 10, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 93,
+          user_id: 1,
+          theme: 'russian revolution',
+          img_path: './img/october/u-g-PI4H4N0.jpg',
+          title: 'Forwards, Let Us Destroy the German Occupiers and Drive Them Beyond the...',
+          artist: 'V.A. Nikolaev',
+          year: '1944',
+          rule: {
+            "monday": [ 19, 30, 10, 14 ],
+            "tuesday": [ 18, 29, 9, 13 ],
+            "wednesday": [ 17, 28, 8, 12 ],
+            "thursday": [ 16, 27, 7, 11 ],
+            "friday": [ 15, 26, 6, 10 ],
+            "saturday": [ 14, 25, 26, 9 ],
+            "sunday": [ 23, 24, 4, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 94,
+          user_id: 1,
+          theme: 'russian revolution',
+          img_path: './img/october/u-g-F17NTP0.jpg',
+          title: 'Workers Transportation',
+          artist: 'D. Bulanov',
+          year: '?',
+          rule: {
+            "monday": [ 23, 24, 4, 8 ],
+            "tuesday": [ 19, 30, 10, 14 ],
+            "wednesday": [ 18, 29, 9, 13 ],
+            "thursday": [ 17, 28, 8, 12 ],
+            "friday": [ 16, 27, 7, 11 ],
+            "saturday": [ 15, 26, 6, 10 ],
+            "sunday": [ 14, 25, 26, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 95,
+          user_id: 1,
+          theme: 'russian revolution',
+          img_path: './img/october/u-g-P27CI80.jpg',
+          title: 'Let\'s Storm the Production Target',
+          artist: 'Gustav Klutsis',
+          year: '?',
+          rule: {
+            "monday": [ 14, 25, 26, 9 ],
+            "tuesday": [ 23, 24, 4, 8 ],
+            "wednesday": [ 19, 30, 10, 14 ],
+            "thursday": [ 18, 29, 9, 13 ],
+            "friday": [ 17, 28, 8, 12 ],
+            "saturday": [ 16, 27, 7, 11 ],
+            "sunday": [ 15, 26, 6, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
