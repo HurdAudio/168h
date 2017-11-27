@@ -2204,6 +2204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 111,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/girl-on-a-hill-1928.jpg',
+          title: 'Girl on a Hill',
+          artist: 'Prudence Heward',
+          year: '1928',
+          rule: {
+            "monday": [ 16, 20, 28, 13 ],
+            "tuesday": [ 15, 19, 27, 12 ],
+            "wednesday": [ 14, 17, 26, 11 ],
+            "thursday": [ 13, 16, 25, 10 ],
+            "friday": [ 19, 23, 31, 16 ],
+            "saturday": [ 18, 21, 30, 15 ],
+            "sunday": [ 17, 21, 29, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 112,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/into-the-world-there-came-a-soul-called-ida-1930.jpg',
+          title: 'Into the World There Came a Soul Called Ida',
+          artist: 'Ivan Albright',
+          year: '1929 - 1930',
+          rule: {
+            "monday": [ 18, 22, 30, 15 ],
+            "tuesday": [ 17, 21, 29, 14 ],
+            "wednesday": [ 16, 20, 28, 13 ],
+            "thursday": [ 15, 18, 27, 12 ],
+            "friday": [ 14, 17, 26, 11 ],
+            "saturday": [ 20, 24, 1, 17 ],
+            "sunday": [ 19, 22, 31, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 113,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/early-spring-illustration-to-a-poem-by-rainer-maria-rilke-1901-1.jpg',
+          title: 'Early spring. Illustration to a poem by Rainer Maria Rilke.',
+          artist: 'Koloman Moser',
+          year: '1901',
+          rule: {
+            "monday": [ 19, 22, 31, 16 ],
+            "tuesday": [ 18, 22, 30, 15 ],
+            "wednesday": [ 17, 21, 29, 14 ],
+            "thursday": [ 16, 20, 28, 13 ],
+            "friday": [ 15, 18, 27, 12 ],
+            "saturday": [ 14, 17, 26, 11 ],
+            "sunday": [ 20, 24, 1, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 114,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/three-girls-1935.jpg',
+          title: 'Three Girls',
+          artist: 'Amrita Sher-Gil',
+          year: '1935',
+          rule: {
+            "monday": [ 20, 24, 1, 17 ],
+            "tuesday": [ 19, 22, 31, 16 ],
+            "wednesday": [ 18, 22, 30, 15 ],
+            "thursday": [ 17, 21, 29, 14 ],
+            "friday": [ 16, 20, 28, 13 ],
+            "saturday": [ 15, 18, 27, 12 ],
+            "sunday": [ 14, 17, 26, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 115,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/composition-1922-2.jpg',
+          title: 'Composition',
+          artist: 'Janos Mattis-Teutsch',
+          year: '1922',
+          rule: {
+            "monday": [ 14, 17, 26, 11 ],
+            "tuesday": [ 20, 24, 1, 17 ],
+            "wednesday": [ 19, 22, 31, 16 ],
+            "thursday": [ 18, 22, 30, 15 ],
+            "friday": [ 17, 21, 29, 14 ],
+            "saturday": [ 16, 20, 28, 13 ],
+            "sunday": [ 15, 18, 27, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
