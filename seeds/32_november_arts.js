@@ -1604,6 +1604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 81,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/parva-xxix-1993.jpg',
+          title: 'Parva XXIX',
+          artist: 'Anne Truitt',
+          year: '1993',
+          rule: {
+            "monday": [ 14, 19, 25, 30 ],
+            "tuesday": [ 13, 18, 24, 1 ],
+            "wednesday": [ 19, 24, 30, 5 ],
+            "thursday": [ 18, 23, 29, 4 ],
+            "friday": [ 17, 22, 28, 3 ],
+            "saturday": [ 16, 21, 27, 2 ],
+            "sunday": [ 15, 19, 26, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 82,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/coltrane-1970.jpg',
+          title: 'Coltrane',
+          artist: 'Ronald Bladen',
+          year: '1970',
+          rule: {
+            "monday": [ 15, 19, 26, 1 ],
+            "tuesday": [ 14, 19, 25, 30 ],
+            "wednesday": [ 13, 18, 24, 1 ],
+            "thursday": [ 19, 24, 30, 5 ],
+            "friday": [ 18, 23, 29, 4 ],
+            "saturday": [ 17, 22, 28, 3 ],
+            "sunday": [ 16, 21, 27, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 83,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/untitled-1.jpg',
+          title: 'Untitled',
+          artist: 'Mathias Goeritz',
+          year: '?',
+          rule: {
+            "monday": [ 16, 21, 27, 2 ],
+            "tuesday": [ 15, 19, 26, 1 ],
+            "wednesday": [ 14, 19, 25, 30 ],
+            "thursday": [ 13, 18, 24, 1 ],
+            "friday": [ 19, 24, 30, 5 ],
+            "saturday": [ 18, 23, 29, 4 ],
+            "sunday": [ 17, 22, 28, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 84,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/untitled-1973.jpg',
+          title: 'Untitled',
+          artist: 'Johannes Jan Schoonhoven',
+          year: '1973',
+          rule: {
+            "monday": [ 18, 23, 29, 4 ],
+            "tuesday": [ 17, 22, 28, 3 ],
+            "wednesday": [ 16, 20, 27, 2 ],
+            "thursday": [ 15, 20, 26, 1 ],
+            "friday": [ 14, 19, 25, 2 ],
+            "saturday": [ 20, 25, 1, 6 ],
+            "sunday": [ 19, 24, 30, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 85,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/source-1967.jpg',
+          title: 'Source',
+          artist: 'Tony Smith',
+          year: '1967',
+          rule: {
+            "monday": [ 19, 24, 30, 5 ],
+            "tuesday": [ 18, 23, 29, 4 ],
+            "wednesday": [ 17, 22, 28, 3 ],
+            "thursday": [ 16, 20, 27, 2 ],
+            "friday": [ 15, 20, 26, 1 ],
+            "saturday": [ 14, 19, 25, 2 ],
+            "sunday": [ 20, 25, 1, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
