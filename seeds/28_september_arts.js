@@ -2004,6 +2004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 101,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/f-los-ouvir-a-tua-corneta-negro-1974.jpg',
+          title: 'Fá-los ouvir a tua corneta negro',
+          artist: 'Sa Nogueira',
+          year: '1974',
+          rule: {
+            "monday": [ 11, 17, 5, 12 ],
+            "tuesday": [ 17, 23, 11, 19 ],
+            "wednesday": [ 16, 22, 10, 18 ],
+            "thursday": [ 15, 21, 9, 17 ],
+            "friday": [ 14, 20, 8, 16 ],
+            "saturday": [ 13, 19, 7, 15 ],
+            "sunday": [ 12, 18, 6, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 102,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/bloodline-big-family-1995.jpg',
+          title: 'Bloodline - Big Family',
+          artist: 'Zhang Xiaogang',
+          year: '1995',
+          rule: {
+            "monday": [ 12, 18, 6, 14 ],
+            "tuesday": [ 11, 17, 5, 12 ],
+            "wednesday": [ 17, 23, 11, 19 ],
+            "thursday": [ 16, 22, 10, 18 ],
+            "friday": [ 15, 21, 9, 17 ],
+            "saturday": [ 14, 20, 8, 16 ],
+            "sunday": [ 13, 19, 7, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 103,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/tang-2007.jpg',
+          title: 'Tang',
+          artist: 'Kenny Scharf',
+          year: '2007',
+          rule: {
+            "monday": [ 13, 19, 7, 15 ],
+            "tuesday": [ 12, 18, 6, 14 ],
+            "wednesday": [ 11, 17, 5, 12 ],
+            "thursday": [ 17, 23, 11, 19 ],
+            "friday": [ 16, 22, 10, 18 ],
+            "saturday": [ 15, 21, 9, 17 ],
+            "sunday": [ 14, 20, 8, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 104,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/lippy-1968.jpg',
+          title: 'Lippy',
+          artist: 'Jim Nutt',
+          year: '1968',
+          rule: {
+            "monday": [ 14, 20, 8, 16 ],
+            "tuesday": [ 13, 19, 7, 15 ],
+            "wednesday": [ 12, 18, 6, 14 ],
+            "thursday": [ 11, 17, 5, 12 ],
+            "friday": [ 17, 23, 11, 19 ],
+            "saturday": [ 16, 22, 10, 18 ],
+            "sunday": [ 15, 21, 9, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 105,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/untitled-1968.jpg',
+          title: 'Untitled',
+          artist: 'Dan Christensen',
+          year: '1968',
+          rule: {
+            "monday": [ 16, 22, 10, 18 ],
+            "tuesday": [ 15, 21, 9, 17 ],
+            "wednesday": [ 14, 20, 8, 16 ],
+            "thursday": [ 13, 19, 7, 15 ],
+            "friday": [ 12, 18, 6, 13 ],
+            "saturday": [ 18, 24, 12, 20 ],
+            "sunday": [ 17, 23, 11, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
