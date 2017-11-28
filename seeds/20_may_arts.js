@@ -2804,6 +2804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 141,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/exit-from-the-mine-1923.jpg',
+          title: 'Exit from the Mine',
+          artist: 'Diego Rivera',
+          year: '1923',
+          rule: {
+            "monday": [ 19, 29, 8, 18 ],
+            "tuesday": [ 17, 27, 6, 16 ],
+            "wednesday": [ 14, 25, 4, 24 ],
+            "thursday": [ 13, 23, 2, 12 ],
+            "friday": [ 11, 21, 31, 10 ],
+            "saturday": [ 9, 19, 29, 8 ],
+            "sunday": [ 21, 31, 10, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 142,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/may-day-procession-in-moscow-1956.jpg',
+          title: 'May Day Procession in Moscow',
+          artist: 'Diego Rivera',
+          year: '1956',
+          rule: {
+            "monday": [ 21, 31, 10, 18 ],
+            "tuesday": [ 19, 29, 8, 18 ],
+            "wednesday": [ 17, 27, 6, 16 ],
+            "thursday": [ 14, 25, 4, 24 ],
+            "friday": [ 13, 23, 2, 12 ],
+            "saturday": [ 11, 21, 31, 10 ],
+            "sunday": [ 9, 19, 29, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 143,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/the-flower-seller.jpg',
+          title: 'The Flower Seller',
+          artist: 'Diego Rivera',
+          year: 'XIX-XX cent.',
+          rule: {
+            "monday": [ 9, 19, 29, 8 ],
+            "tuesday": [ 21, 31, 10, 18 ],
+            "wednesday": [ 19, 29, 8, 18 ],
+            "thursday": [ 17, 27, 6, 16 ],
+            "friday": [ 14, 25, 4, 24 ],
+            "saturday": [ 13, 23, 2, 12 ],
+            "sunday": [ 11, 21, 31, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 144,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/the-pinole-seller-1936.jpg',
+          title: 'The Pinole Seller',
+          artist: 'Diego Rivera',
+          year: '1936',
+          rule: {
+            "monday": [ 11, 21, 31, 10 ],
+            "tuesday": [ 9, 19, 29, 8 ],
+            "wednesday": [ 21, 31, 10, 18 ],
+            "thursday": [ 19, 29, 8, 18 ],
+            "friday": [ 17, 27, 6, 16 ],
+            "saturday": [ 14, 25, 4, 24 ],
+            "sunday": [ 13, 23, 2, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 145,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/flower-carrier-1935.jpg',
+          title: 'Flower Carrier',
+          artist: 'Diego Rivera',
+          year: '1935',
+          rule: {
+            "monday": [ 13, 23, 2, 12 ],
+            "tuesday": [ 11, 21, 31, 10 ],
+            "wednesday": [ 9, 19, 29, 8 ],
+            "thursday": [ 21, 31, 10, 18 ],
+            "friday": [ 19, 29, 8, 18 ],
+            "saturday": [ 17, 27, 6, 16 ],
+            "sunday": [ 14, 25, 4, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
