@@ -3004,6 +3004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 151,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/stadium650.jpg',
+          title: 'Jim Thome at Tampa Bay’s Tropicana Field',
+          artist: 'Doug Benc',
+          year: '2008',
+          rule: {
+            "monday": [ 17, 22, 28, 4 ],
+            "tuesday": [ 16, 21, 27, 3 ],
+            "wednesday": [ 21, 27, 2, 9 ],
+            "thursday": [ 5, 25, 1, 8 ],
+            "friday": [ 20, 25, 1, 7 ],
+            "saturday": [ 19, 23, 8, 6 ],
+            "sunday": [ 18, 23, 28, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 152,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/f23c08835a02370e814cda365bb9b625.jpg',
+          title: 'Tropicana Field - Home of the Tampa Bay Rays',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 18, 23, 28, 5 ],
+            "tuesday": [ 17, 22, 28, 4 ],
+            "wednesday": [ 16, 21, 27, 3 ],
+            "thursday": [ 21, 27, 2, 9 ],
+            "friday": [ 5, 25, 1, 8 ],
+            "saturday": [ 20, 25, 1, 7 ],
+            "sunday": [ 19, 23, 8, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 153,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/Rays.jpg',
+          title: 'Tampa Bay Rays',
+          artist: 'Lindsay Frost',
+          year: '?',
+          rule: {
+            "monday": [ 19, 23, 8, 6 ],
+            "tuesday": [ 18, 23, 28, 5 ],
+            "wednesday": [ 17, 22, 28, 4 ],
+            "thursday": [ 16, 21, 27, 3 ],
+            "friday": [ 21, 27, 2, 9 ],
+            "saturday": [ 5, 25, 1, 8 ],
+            "sunday": [ 20, 25, 1, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 154,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/Brent-Honeywell-Scouting-Report.jpg',
+          title: 'Brent Honeywell',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 21, 26, 2, 8 ],
+            "tuesday": [ 20, 24, 9, 7 ],
+            "wednesday": [ 19, 24, 29, 6 ],
+            "thursday": [ 18, 23, 29, 5 ],
+            "friday": [ 17, 22, 28, 4 ],
+            "saturday": [ 22, 28, 3, 10 ],
+            "sunday": [ 6, 26, 2, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 155,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/AR-304029659.jpg',
+          title: 'Tampa Bay Rays starting pitcher Chris Archer',
+          artist: 'Will Vragovic',
+          year: '2017',
+          rule: {
+            "monday": [ 6, 26, 2, 9 ],
+            "tuesday": [ 21, 26, 2, 8 ],
+            "wednesday": [ 20, 24, 9, 7 ],
+            "thursday": [ 19, 24, 29, 6 ],
+            "friday": [ 18, 23, 29, 5 ],
+            "saturday": [ 17, 22, 28, 4 ],
+            "sunday": [ 22, 28, 3, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
