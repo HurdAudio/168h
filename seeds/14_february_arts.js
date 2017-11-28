@@ -3404,6 +3404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 171,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/EugeneJ.Martin_Janus.jpg',
+          title: 'Janus',
+          artist: 'Eugene J. Martin',
+          year: '1995',
+          rule: {
+            "monday": [ 7, 15, 11, 1 ],
+            "tuesday": [ 24, 3, 11, 19 ],
+            "wednesday": [ 26, 5, 13, 21 ],
+            "thursday": [ 2, 7, 13, 23 ],
+            "friday": [ 1, 9, 17, 25 ],
+            "saturday": [ 3, 13, 19, 27 ],
+            "sunday": [ 5, 13, 21, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 172,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Maynard2b.jpg',
+          title: 'Polyrhythmics of Consciousness and Light',
+          artist: 'Valerie Maynard',
+          year: '2003',
+          rule: {
+            "monday": [ 5, 13, 21, 2 ],
+            "tuesday": [ 7, 15, 11, 1 ],
+            "wednesday": [ 24, 3, 11, 19 ],
+            "thursday": [ 26, 5, 13, 21 ],
+            "friday": [ 2, 7, 13, 23 ],
+            "saturday": [ 1, 9, 17, 25 ],
+            "sunday": [ 3, 13, 19, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 173,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/The_Dead_Dance.jpg',
+          title: 'The Dead Dance',
+          artist: 'Ealy Mays',
+          year: '2012',
+          rule: {
+            "monday": [ 3, 13, 19, 27 ],
+            "tuesday": [ 5, 13, 21, 2 ],
+            "wednesday": [ 7, 15, 11, 1 ],
+            "thursday": [ 24, 3, 11, 19 ],
+            "friday": [ 26, 5, 13, 21 ],
+            "saturday": [ 2, 7, 13, 23 ],
+            "sunday": [ 1, 9, 17, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 174,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Butterfly_(Red)_Standing_.jpg',
+          title: 'Butterfly',
+          artist: 'Howard McCalebb',
+          year: '2008',
+          rule: {
+            "monday": [ 1, 9, 17, 25 ],
+            "tuesday": [ 3, 13, 19, 27 ],
+            "wednesday": [ 5, 13, 21, 2 ],
+            "thursday": [ 7, 15, 11, 1 ],
+            "friday": [ 24, 3, 11, 19 ],
+            "saturday": [ 26, 5, 13, 21 ],
+            "sunday": [ 2, 7, 13, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 175,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/lp1.jpg',
+          title: 'Big Fun (Album Cover)',
+          artist: 'Corky McCoy',
+          year: '1974',
+          rule: {
+            "monday": [ 2, 7, 13, 23 ],
+            "tuesday": [ 1, 9, 17, 25 ],
+            "wednesday": [ 3, 13, 19, 27 ],
+            "thursday": [ 5, 13, 21, 2 ],
+            "friday": [ 7, 15, 11, 1 ],
+            "saturday": [ 24, 3, 11, 19 ],
+            "sunday": [ 26, 5, 13, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
