@@ -2604,6 +2604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 131,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/1997.jpg',
+          title: 'Donbass Chocolate',
+          artist: 'Arsen Savadov',
+          year: '1997',
+          rule: {
+            "monday": [ 15, 25, 5, 13 ],
+            "tuesday": [ 14, 24, 4, 12 ],
+            "wednesday": [ 13, 23, 3, 11 ],
+            "thursday": [ 19, 29, 9, 16 ],
+            "friday": [ 18, 28, 8, 16 ],
+            "saturday": [ 17, 27, 7, 15 ],
+            "sunday": [ 16, 26, 6, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 132,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/3-1.jpg',
+          title: 'untitled',
+          artist: 'daisuke yokota',
+          year: '2015',
+          rule: {
+            "monday": [ 16, 26, 6, 14 ],
+            "tuesday": [ 15, 25, 5, 13 ],
+            "wednesday": [ 14, 24, 4, 12 ],
+            "thursday": [ 13, 23, 3, 11 ],
+            "friday": [ 19, 29, 9, 16 ],
+            "saturday": [ 18, 28, 8, 16 ],
+            "sunday": [ 17, 27, 7, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 133,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/nude-c-1900.jpg',
+          title: 'Nude',
+          artist: 'Clarence White',
+          year: '1900',
+          rule: {
+            "monday": [ 18, 28, 8, 16 ],
+            "tuesday": [ 17, 27, 7, 15 ],
+            "wednesday": [ 16, 26, 6, 14 ],
+            "thursday": [ 15, 25, 5, 13 ],
+            "friday": [ 14, 24, 4, 12 ],
+            "saturday": [ 20, 30, 10, 17 ],
+            "sunday": [ 19, 29, 9, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 134,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/broadway-at-night-1905.jpg',
+          title: 'Broadway at Night',
+          artist: 'Alvin Langdon Coburn',
+          year: '1905',
+          rule: {
+            "monday": [ 19, 29, 9, 17 ],
+            "tuesday": [ 18, 28, 8, 16 ],
+            "wednesday": [ 17, 27, 7, 15 ],
+            "thursday": [ 16, 26, 6, 14 ],
+            "friday": [ 15, 25, 5, 13 ],
+            "saturday": [ 14, 24, 4, 12 ],
+            "sunday": [ 20, 30, 10, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 135,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/miss-mary-and-edeltrude-lying-in-the-grass-1910.jpg',
+          title: 'Miss Mary and Edeltrude Lying in the Grass',
+          artist: 'Heinrich Kuhn',
+          year: '1910',
+          rule: {
+            "monday": [ 20, 30, 10, 17 ],
+            "tuesday": [ 19, 29, 9, 17 ],
+            "wednesday": [ 18, 28, 8, 16 ],
+            "thursday": [ 17, 27, 7, 15 ],
+            "friday": [ 16, 26, 6, 14 ],
+            "saturday": [ 15, 25, 5, 13 ],
+            "sunday": [ 14, 24, 4, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
