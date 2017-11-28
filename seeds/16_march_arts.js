@@ -3204,6 +3204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 161,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/untitled-1975 (1).jpg',
+          title: 'Untitled',
+          artist: 'Bice Lazzari',
+          year: '1975',
+          rule: {
+            "monday": [ 21, 31, 8, 18 ],
+            "tuesday": [ 20, 30, 7, 17 ],
+            "wednesday": [ 19, 29, 6, 16 ],
+            "thursday": [ 18, 28, 5, 15 ],
+            "friday": [ 17, 27, 5, 14 ],
+            "saturday": [ 23, 1, 10, 19 ],
+            "sunday": [ 22, 1, 11, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 162,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/caracas-1957.jpg',
+          title: 'Caracas',
+          artist: 'Lolo Soldevilla',
+          year: '1957',
+          rule: {
+            "monday": [ 22, 1, 11, 19 ],
+            "tuesday": [ 21, 31, 8, 18 ],
+            "wednesday": [ 20, 30, 7, 17 ],
+            "thursday": [ 19, 29, 6, 16 ],
+            "friday": [ 18, 28, 5, 15 ],
+            "saturday": [ 17, 27, 5, 14 ],
+            "sunday": [ 23, 1, 10, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 163,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/steiner-surface-1973.jpg',
+          title: 'Steiner Surface',
+          artist: 'Ruth Vollmer',
+          year: '1973',
+          rule: {
+            "monday": [ 23, 1, 10, 19 ],
+            "tuesday": [ 22, 1, 11, 19 ],
+            "wednesday": [ 21, 31, 8, 18 ],
+            "thursday": [ 20, 30, 7, 17 ],
+            "friday": [ 19, 29, 6, 16 ],
+            "saturday": [ 18, 28, 5, 15 ],
+            "sunday": [ 17, 27, 5, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 164,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/the-love-embrace-of-the-universe-the-earth-mexico-myself-diego-and-señor-xólotl-1949.jpg',
+          title: 'The Love Embrace of the Universe, the Earth (Mexico), Myself, Diego and Señor Xólotl',
+          artist: 'Frida Kahlo',
+          year: '1949',
+          rule: {
+            "monday": [ 17, 27, 5, 14 ],
+            "tuesday": [ 23, 1, 10, 19 ],
+            "wednesday": [ 22, 1, 11, 19 ],
+            "thursday": [ 21, 31, 8, 18 ],
+            "friday": [ 20, 30, 7, 17 ],
+            "saturday": [ 19, 29, 6, 16 ],
+            "sunday": [ 18, 28, 5, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 165,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/candelabra-1935.jpg',
+          title: 'Candelabra',
+          artist: 'Dora Maar',
+          year: '1935',
+          rule: {
+            "monday": [ 18, 28, 5, 15 ],
+            "tuesday": [ 17, 27, 5, 14 ],
+            "wednesday": [ 23, 1, 10, 19 ],
+            "thursday": [ 22, 1, 11, 19 ],
+            "friday": [ 21, 31, 8, 18 ],
+            "saturday": [ 20, 30, 7, 17 ],
+            "sunday": [ 19, 29, 6, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
