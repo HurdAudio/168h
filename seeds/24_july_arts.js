@@ -2404,6 +2404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 121,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/the-vision-dante-and-beatrice-1846.jpg',
+          title: 'The Vision, Dante and Beatrice',
+          artist: 'Ary Scheffer',
+          year: '1846',
+          rule: {
+            "monday": [ 20, 31, 11, 22 ],
+            "tuesday": [ 19, 30, 10, 21 ],
+            "wednesday": [ 18, 29, 9, 20 ],
+            "thursday": [ 17, 28, 8, 19 ],
+            "friday": [ 16, 27, 7, 18 ],
+            "saturday": [ 15, 26, 6, 17 ],
+            "sunday": [ 14, 25, 5, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 122,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/lucinda-carpenter-tweeter-and-abigail-forrester-1841.jpg',
+          title: 'Lucinda Carpenter, Tweeter and Abigail Forrester',
+          artist: 'Auguste Edouart',
+          year: '1841',
+          rule: {
+            "monday": [ 14, 25, 5, 16 ],
+            "tuesday": [ 20, 31, 11, 22 ],
+            "wednesday": [ 19, 30, 10, 21 ],
+            "thursday": [ 18, 29, 9, 20 ],
+            "friday": [ 17, 28, 8, 19 ],
+            "saturday": [ 16, 27, 7, 18 ],
+            "sunday": [ 15, 26, 6, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 123,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/diana-and-endymion-1822.jpg',
+          title: 'Diana and Endymion',
+          artist: 'Jérôme-Martin Langlois',
+          year: '1822',
+          rule: {
+            "monday": [ 15, 26, 6, 17 ],
+            "tuesday": [ 14, 25, 5, 16 ],
+            "wednesday": [ 20, 31, 11, 22 ],
+            "thursday": [ 19, 30, 10, 21 ],
+            "friday": [ 18, 29, 9, 20 ],
+            "saturday": [ 17, 28, 8, 19 ],
+            "sunday": [ 16, 27, 7, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 124,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/sappho-at-leucate-1801.jpg',
+          title: 'Sappho at Leucate',
+          artist: 'Antoine-Jean Gros',
+          year: '1801',
+          rule: {
+            "monday": [ 16, 27, 7, 18 ],
+            "tuesday": [ 15, 26, 6, 17 ],
+            "wednesday": [ 14, 25, 5, 16 ],
+            "thursday": [ 20, 31, 11, 22 ],
+            "friday": [ 19, 30, 10, 21 ],
+            "saturday": [ 18, 29, 9, 20 ],
+            "sunday": [ 17, 28, 8, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 125,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/bathing-venus.jpg',
+          title: 'Bathing Venus',
+          artist: 'Pierre-Paul Prud\'hon',
+          year: '?',
+          rule: {
+            "monday": [ 17, 28, 8, 19 ],
+            "tuesday": [ 16, 27, 7, 18 ],
+            "wednesday": [ 15, 26, 6, 17 ],
+            "thursday": [ 14, 25, 5, 16 ],
+            "friday": [ 20, 31, 11, 22 ],
+            "saturday": [ 19, 30, 10, 21 ],
+            "sunday": [ 18, 29, 9, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
