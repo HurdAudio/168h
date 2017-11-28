@@ -1354,6 +1354,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 76,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3992946822/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://unknowntonerecords.bandcamp.com/album/wounded-knee',
+          a_string: 'Wounded Knee by Piotr Cisak',
+          rule: {
+            "monday": [ 10, 14, 20, 30 ],
+            "tuesday": [ 9, 13, 18, 30 ],
+            "wednesday": [ 9, 12, 18, 29 ],
+            "thursday": [ 7, 15, 17, 28 ],
+            "saturday": [ 11, 15, 21, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 77,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1907379065/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://handstitched.bandcamp.com/album/the-cloud-chorus',
+          a_string: 'The Cloud Chorus by Maps and Diagrams',
+          rule: {
+            "monday": [ 12, 16, 22, 3 ],
+            "tuesday": [ 11, 15, 21, 1 ],
+            "wednesday": [ 10, 14, 19, 1 ],
+            "thursday": [ 10, 13, 19, 30 ],
+            "saturday": [ 8, 16, 18, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 78,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=277244698/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://eileanrec.bandcamp.com/album/medicina',
+          a_string: 'Medicina by Sustainer',
+          rule: {
+            "monday": [ 8, 16, 18, 29 ],
+            "tuesday": [ 12, 16, 22, 3 ],
+            "wednesday": [ 11, 15, 21, 1 ],
+            "thursday": [ 10, 14, 19, 1 ],
+            "saturday": [ 10, 13, 19, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
