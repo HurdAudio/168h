@@ -1894,6 +1894,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 106,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2396290360/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://mexiqueen.bandcamp.com/album/singles',
+          a_string: 'singles by mexiqueen',
+          rule: {
+            "monday": [ 21, 28, 29, 30 ],
+            "tuesday": [ 22, 29, 30, 31 ],
+            "wednesday": [ 20, 24, 26, 30 ],
+            "thursday": [ 22, 29, 31, 30 ],
+            "saturday": [ 30, 24, 26, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 107,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1117739737/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://thomasburritt.bandcamp.com/album/groundlines',
+          a_string: 'Groundlines by Thomas Burritt',
+          rule: {
+            "monday": [ 30, 24, 26, 31 ],
+            "tuesday": [ 21, 28, 29, 30 ],
+            "wednesday": [ 22, 29, 30, 31 ],
+            "thursday": [ 20, 24, 26, 30 ],
+            "saturday": [ 22, 29, 31, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 108,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1696851893/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://unseenworlds.bandcamp.com/album/the-expanding-universe',
+          a_string: 'The Expanding Universe by Laurie Spiegel',
+          rule: {
+            "monday": [ 22, 29, 31, 30 ],
+            "tuesday": [ 30, 24, 26, 31 ],
+            "wednesday": [ 21, 28, 29, 30 ],
+            "thursday": [ 22, 29, 30, 31 ],
+            "saturday": [ 20, 24, 26, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
