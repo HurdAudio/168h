@@ -1786,6 +1786,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 100,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1255239549/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://willsessions.bandcamp.com/album/kindred-live',
+          a_string: 'Kindred Live by Will Sessions',
+          rule: {
+            "monday": [ 18, 22, 24, 28 ],
+            "tuesday": [ 20, 24, 26, 28 ],
+            "wednesday": [ 3, 26, 28, 5 ],
+            "thursday": [ 15, 20, 22, 5 ],
+            "saturday": [ 16, 20, 22, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 101,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1860158521/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://willsessions.bandcamp.com/album/deluxe',
+          a_string: 'Deluxe by Will Sessions',
+          rule: {
+            "monday": [ 16, 20, 22, 26 ],
+            "tuesday": [ 18, 22, 24, 28 ],
+            "wednesday": [ 20, 24, 26, 28 ],
+            "thursday": [ 3, 26, 28, 5 ],
+            "saturday": [ 15, 20, 22, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 102,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3266419411/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://kimtibbs.bandcamp.com/album/kim',
+          a_string: 'KIM by Kim Tibbs',
+          rule: {
+            "monday": [ 15, 20, 22, 5 ],
+            "tuesday": [ 16, 20, 22, 26 ],
+            "wednesday": [ 18, 22, 24, 28 ],
+            "thursday": [ 20, 24, 26, 28 ],
+            "saturday": [ 3, 26, 28, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
