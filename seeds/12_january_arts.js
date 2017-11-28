@@ -3604,6 +3604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 181,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/untitled-from-collection-resonance-2011-1.jpg',
+          title: 'Untitled (from Collection Resonance)',
+          artist: 'Monique Orsini',
+          year: '2011',
+          rule: {
+            "monday": [ 5, 7, 8, 10 ],
+            "tuesday": [ 7, 9, 13, 16 ],
+            "wednesday": [ 9, 11, 12, 15 ],
+            "thursday": [ 25, 26, 6, 29 ],
+            "friday": [ 28, 30, 22, 11 ],
+            "saturday": [ 30, 31, 23, 26 ],
+            "sunday": [ 2, 3, 25, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 182,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/grey-still-life-1969.jpg',
+          title: 'Grey Still Life',
+          artist: 'William Scott',
+          year: '1969',
+          rule: {
+            "monday": [ 3, 4, 26, 30 ],
+            "tuesday": [ 6, 8, 9, 11 ],
+            "wednesday": [ 8, 10, 14, 17 ],
+            "thursday": [ 10, 12, 13, 16 ],
+            "friday": [ 26, 27, 7, 30 ],
+            "saturday": [ 29, 31, 23, 12 ],
+            "sunday": [ 31, 1, 24, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 183,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/magical-space-forms-1948.jpg',
+          title: 'Magical Space Forms',
+          artist: 'Lorser Feitelson',
+          year: '1948',
+          rule: {
+            "monday": [ 31, 1, 24, 27 ],
+            "tuesday": [ 3, 4, 26, 30 ],
+            "wednesday": [ 6, 8, 9, 11 ],
+            "thursday": [ 8, 10, 14, 17 ],
+            "friday": [ 10, 12, 13, 16 ],
+            "saturday": [ 26, 27, 7, 30 ],
+            "sunday": [ 29, 31, 23, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 184,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/untitled-summer-1962.jpg',
+          title: 'Untitled (Summer)',
+          artist: 'Howard Mehring',
+          year: '1962',
+          rule: {
+            "monday": [ 29, 31, 23, 12 ],
+            "tuesday": [ 31, 1, 24, 27 ],
+            "wednesday": [ 3, 4, 26, 30 ],
+            "thursday": [ 6, 8, 9, 11 ],
+            "friday": [ 8, 10, 14, 17 ],
+            "saturday": [ 10, 12, 13, 16 ],
+            "sunday": [ 26, 27, 7, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 185,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/untitled-1956.jpg',
+          title: 'Untitled',
+          artist: 'Karl Benjamin',
+          year: '1956',
+          rule: {
+            "monday": [ 26, 27, 7, 30 ],
+            "tuesday": [ 29, 31, 23, 12 ],
+            "wednesday": [ 31, 1, 24, 27 ],
+            "thursday": [ 3, 4, 26, 30 ],
+            "friday": [ 6, 8, 9, 11 ],
+            "saturday": [ 8, 10, 14, 17 ],
+            "sunday": [ 10, 12, 13, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
