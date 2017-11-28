@@ -1678,6 +1678,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 94,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2196055513/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://racheltherrien.bandcamp.com/album/pensamiento-proyecto-colombia',
+          a_string: 'Pensamiento: Proyecto Colombia by Rachel Therrien',
+          rule: {
+            "monday": [ 15, 21, 27, 4 ],
+            "tuesday": [ 14, 20, 26, 3 ],
+            "wednesday": [ 18, 24, 30, 7 ],
+            "thursday": [ 17, 23, 29, 6 ],
+            "saturday": [ 16, 22, 28, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 95,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2412671703/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ayumiishito.bandcamp.com/album/view-from-a-little-cave',
+          a_string: 'View From A Little Cave by Ayumi Ishito',
+          rule: {
+            "monday": [ 16, 22, 28, 6 ],
+            "tuesday": [ 15, 21, 27, 4 ],
+            "wednesday": [ 14, 20, 26, 3 ],
+            "thursday": [ 18, 24, 30, 7 ],
+            "saturday": [ 17, 23, 29, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 96,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1824113199/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://laurenleejazzproject.bandcamp.com/album/the-consciousness-test-2',
+          a_string: 'The Consciousness Test by Lauren Lee &quot;Space Jazz&quot; Trio',
+          rule: {
+            "monday": [ 17, 23, 29, 6 ],
+            "tuesday": [ 16, 22, 28, 6 ],
+            "wednesday": [ 15, 21, 27, 4 ],
+            "thursday": [ 14, 20, 26, 3 ],
+            "saturday": [ 18, 24, 30, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
