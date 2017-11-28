@@ -1462,6 +1462,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 82,
+          user_id: 1,
+          theme: 'avant garde/new music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=493692770/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://benfrost.bandcamp.com/album/by-the-throat',
+          a_string: 'BY THE THROAT by Ben Frost',
+          rule: {
+            "monday": [ 16, 22, 29, 11 ],
+            "tuesday": [ 15, 21, 28, 10 ],
+            "wednesday": [ 14, 20, 27, 9 ],
+            "thursday": [ 13, 19, 26, 8 ],
+            "saturday": [ 12, 18, 25, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 83,
+          user_id: 1,
+          theme: 'avant garde/new music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1686158765/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://williambasinski.bandcamp.com/album/the-disintegration-loops',
+          a_string: 'The Disintegration Loops by William Basinski',
+          rule: {
+            "monday": [ 12, 18, 25, 7 ],
+            "tuesday": [ 16, 22, 29, 11 ],
+            "wednesday": [ 15, 21, 28, 10 ],
+            "thursday": [ 14, 20, 27, 9 ],
+            "saturday": [ 13, 19, 26, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 84,
+          user_id: 1,
+          theme: 'avant garde/new music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3745542189/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://soave.bandcamp.com/album/riccardo-sinigaglia-riflessi',
+          a_string: 'Riccardo Sinigaglia - Riflessi by soave',
+          rule: {
+            "monday": [ 14, 20, 27, 9 ],
+            "tuesday": [ 13, 19, 26, 8 ],
+            "wednesday": [ 17, 23, 30, 12 ],
+            "thursday": [ 16, 22, 29, 11 ],
+            "saturday": [ 15, 21, 28, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
