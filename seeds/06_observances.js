@@ -8653,6 +8653,34 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 552,
+          user_id: 1,
+          name: 'HP Lovecraft (author) born in 1890',
+          color: '#999999',
+          picture: './img/authors/hplovecraft.jpg',
+          day_of: new Date ('1890-08-20T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 553,
+          user_id: 1,
+          name: 'God arrived in a flying saucer on this day in 1998 according to Hon-Ming Chen of the Chen Tao based in Garland, Texas.',
+          color: '#84836F',
+          picture: './img/doomsday/97311924.jpg',
+          day_of: new Date ('1998-03-31T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
