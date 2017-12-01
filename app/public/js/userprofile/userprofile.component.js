@@ -148,6 +148,68 @@
       vm.closeGoalsManager = closeGoalsManager;
       vm.editTask = editTask;
       vm.userTasksEditorDone = userTasksEditorDone;
+      vm.deleteBill = deleteBill;
+
+      function deleteBill(billId) {
+        let billsManagementDiv = document.getElementById('billsManagementDiv');
+        let userBillDeleteConfirmDiv = document.getElementById('userBillDeleteConfirmDiv');
+        let userBillDeleteConfirmButtons = document.getElementById('userBillDeleteConfirmButtons');
+        let userBillConfirmYes = document.getElementById('userBillConfirmYes');
+        if (userBillConfirmYes) {
+          userBillConfirmYes.parentNode.removeChild(userBillConfirmYes);
+          userBillConfirmYes = document.createElement('a');
+          userBillDeleteConfirmButtons.appendChild(userBillConfirmYes);
+          userBillConfirmYes.id = 'userBillConfirmYes';
+          userBillConfirmYes.className = 'btn';
+          userBillConfirmYes.setAttribute("style", "cursor: pointer;");
+          userBillConfirmYes.innerHTML = 'yes';
+        }
+        let userBillConfirmNo = document.getElementById('userBillConfirmNo');
+        if (userBillConfirmNo) {
+          userBillConfirmNo.parentNode.removeChild(userBillConfirmNo);
+          userBillConfirmNo = document.createElement('a');
+          userBillDeleteConfirmButtons.appendChild(userBillConfirmNo);
+          userBillConfirmNo.id = 'userBillConfirmNo';
+          userBillConfirmNo.className = 'btn';
+          userBillConfirmNo.setAttribute("style", "cursor: pointer;");
+          userBillConfirmNo.innerHTML = 'no';
+        }
+        let userBillDeleteName = document.getElementById('userBillDeleteName');
+        let userBillDeletePayTo = document.getElementById('userBillDeletePayTo');
+        let userBillDeleteAmountDue = document.getElementById('userBillDeleteAmountDue');
+        let userBillDeletePaidBoolean = document.getElementById('userBillDeletePaidBoolean');
+
+        $http.get(`/bills/${billId}`)
+        .then(billForDeleteData=>{
+          let billForDelete = billForDeleteData.data;
+          userBillDeleteName.innerHTML = billForDelete.name;
+          userBillDeletePayTo.innerHTML = 'Pay to: ' + billForDelete.pay_to;
+          userBillDeleteAmountDue.innerHTML = 'Amount: ' + billForDelete.amount_due;
+          if (billForDelete.is_paid) {
+            userBillDeletePaidBoolean.innerHTML = 'paid';
+          } else {
+            userBillDeletePaidBoolean.innerHTML = 'unpaid';
+          }
+
+          userBillConfirmNo.addEventListener('click', ()=>{
+            billsManagementDiv.setAttribute("style", "display: initial;");
+            userBillDeleteConfirmDiv.setAttribute("style", "display: none;");
+          });
+
+          userBillConfirmYes.addEventListener('click', ()=>{
+            $http.delete(`/bills/${billId}`)
+            .then(()=>{
+              userBillDeleteConfirmDiv.setAttribute("style", "display: none;");
+              billsManager();
+            });
+          });
+
+        });
+
+
+        billsManagementDiv.setAttribute("style", "display: none;");
+        userBillDeleteConfirmDiv.setAttribute("style", "display: initial;");
+      }
 
       function userTasksEditorDone () {
         let userTasksEditingDiv = document.getElementById('userTasksEditingDiv');
