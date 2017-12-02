@@ -88,6 +88,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FEFDF9',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 7,
+          user_id: 1,
+          theme: 'primary colors',
+          type: 'holiday',
+          src_string: '../img/august_tiles/circles-27975_1280.png',
+          repeat_value: 'no-repeat',
+          size_value: '100%',
+          color_dark: '#0000FE',
+          color_medium: '#FE0000',
+          color_light: '#FFFF01',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
