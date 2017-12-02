@@ -102,6 +102,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#F1E7E5',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 8,
+          user_id: 1,
+          theme: 'steam',
+          type: 'week',
+          src_string: '../img/july_tiles/yellowstone-1711475_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '190%',
+          color_dark: '#100D06',
+          color_medium: '#9B6D22',
+          color_light: '#FFFFFC',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
