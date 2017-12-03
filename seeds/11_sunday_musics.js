@@ -1144,6 +1144,36 @@ exports.seed = function(knex, Promise) {
           a_string: 'New Steps by Sun Ra Quartet ft. John Gilmore',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 115,
+          user_id: 1,
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4211963194/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sunramusic.bandcamp.com/album/kosmos-in-blue-a-john-gilmore-anthology-vol-1',
+          a_string: 'Kosmos In Blue: A John Gilmore Anthology, Vol. 1 by The Sun Ra Arkestra ft. John Gilmore',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 116,
+          user_id: 1,
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1868051994/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sunramusic.bandcamp.com/album/blues-at-midnight-a-john-gilmore-anthology-vol-2',
+          a_string: 'Blues at Midnight: A John Gilmore Anthology, Vol. 2 by The Sun Ra Arkestra ft. John Gilmore',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 117,
+          user_id: 1,
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2226266054/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sunramusic.bandcamp.com/album/sun-ra-exotica',
+          a_string: 'Sun Ra Exotica by Sun Ra &amp; His Arkestra',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
