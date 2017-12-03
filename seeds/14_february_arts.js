@@ -3504,6 +3504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 176,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/BlackTondo.jpg',
+          title: 'Black Tondo',
+          artist: 'Charles McGill',
+          year: '2015',
+          rule: {
+            "monday": [ 26, 5, 13, 21 ],
+            "tuesday": [ 2, 7, 13, 23 ],
+            "wednesday": [ 1, 9, 17, 25 ],
+            "thursday": [ 3, 13, 19, 27 ],
+            "friday": [ 5, 13, 21, 2 ],
+            "saturday": [ 7, 15, 11, 1 ],
+            "sunday": [ 24, 3, 11, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 177,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/614532604_295x166.jpg',
+          title: 'Mural',
+          artist: 'Julie Mehretu',
+          year: '2002',
+          rule: {
+            "monday": [ 25, 4, 12, 20 ],
+            "tuesday": [ 27, 6, 14, 22 ],
+            "wednesday": [ 3, 8, 14, 24 ],
+            "thursday": [ 2, 10, 18, 26 ],
+            "friday": [ 4, 14, 20, 26 ],
+            "saturday": [ 6, 14, 22, 3 ],
+            "sunday": [ 8, 16, 12, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 178,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Dean+Mitchell+3.jpg',
+          title: 'Parking on the Reservation',
+          artist: 'Dean Mitchell',
+          year: '2014',
+          rule: {
+            "monday": [ 8, 16, 12, 2 ],
+            "tuesday": [ 25, 4, 12, 20 ],
+            "wednesday": [ 27, 6, 14, 22 ],
+            "thursday": [ 3, 8, 14, 24 ],
+            "friday": [ 2, 10, 18, 26 ],
+            "saturday": [ 4, 14, 20, 26 ],
+            "sunday": [ 6, 14, 22, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 179,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Phillis_Wheatley_frontispiece.jpg',
+          title: 'Phillis Wheatley',
+          artist: 'Scipio Moorhead',
+          year: '1773',
+          rule: {
+            "monday": [ 6, 14, 22, 3 ],
+            "tuesday": [ 8, 16, 12, 2 ],
+            "wednesday": [ 25, 4, 12, 20 ],
+            "thursday": [ 27, 6, 14, 22 ],
+            "friday": [ 3, 8, 14, 24 ],
+            "saturday": [ 2, 10, 18, 26 ],
+            "sunday": [ 4, 14, 20, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 180,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/tumblr_lhvr2bXwfD1qeq7tpo1_500.jpeg',
+          title: 'St. Mary\'s Riverside Parish',
+          artist: 'Archibald Motley',
+          year: '?',
+          rule: {
+            "monday": [ 4, 14, 20, 26 ],
+            "tuesday": [ 6, 14, 22, 3 ],
+            "wednesday": [ 8, 16, 12, 2 ],
+            "thursday": [ 25, 4, 12, 20 ],
+            "friday": [ 27, 6, 14, 22 ],
+            "saturday": [ 3, 8, 14, 24 ],
+            "sunday": [ 2, 10, 18, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
