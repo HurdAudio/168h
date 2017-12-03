@@ -2704,6 +2704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 136,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/rain-03.jpg',
+          title: 'Rain',
+          artist: 'Abbas Kiarostami',
+          year: '2006',
+          rule: {
+            "monday": [ 14, 24, 4, 12 ],
+            "tuesday": [ 20, 30, 10, 17 ],
+            "wednesday": [ 19, 29, 9, 17 ],
+            "thursday": [ 18, 28, 8, 16 ],
+            "friday": [ 17, 27, 7, 15 ],
+            "saturday": [ 16, 26, 6, 14 ],
+            "sunday": [ 15, 25, 5, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 137,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/new-york-two-hippos-1955.jpg',
+          title: 'New York (Two Hippos)',
+          artist: 'Vivian Maier',
+          year: '1955',
+          rule: {
+            "monday": [ 15, 25, 5, 13 ],
+            "tuesday": [ 14, 24, 4, 12 ],
+            "wednesday": [ 20, 30, 10, 17 ],
+            "thursday": [ 19, 29, 9, 17 ],
+            "friday": [ 18, 28, 8, 16 ],
+            "saturday": [ 17, 27, 7, 15 ],
+            "sunday": [ 16, 26, 6, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 138,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/hanna-ralph-c1918.jpg',
+          title: 'Hanna Ralph',
+          artist: 'Nicola Perscheid',
+          year: '1918',
+          rule: {
+            "monday": [ 16, 26, 6, 14 ],
+            "tuesday": [ 15, 25, 5, 13 ],
+            "wednesday": [ 14, 24, 4, 12 ],
+            "thursday": [ 20, 30, 10, 17 ],
+            "friday": [ 19, 29, 9, 17 ],
+            "saturday": [ 18, 28, 8, 16 ],
+            "sunday": [ 17, 27, 7, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 139,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/nude-on-back-1920.jpg',
+          title: 'Nude on Back',
+          artist: 'Heinrich Kuhn',
+          year: '1920',
+          rule: {
+            "monday": [ 17, 27, 7, 15 ],
+            "tuesday": [ 16, 26, 6, 14 ],
+            "wednesday": [ 15, 25, 5, 13 ],
+            "thursday": [ 14, 24, 4, 12 ],
+            "friday": [ 20, 30, 10, 17 ],
+            "saturday": [ 19, 29, 9, 17 ],
+            "sunday": [ 18, 28, 8, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 140,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/mass-psychosis-1927.jpg',
+          title: 'Mass Psychosis',
+          artist: 'Laszlo Moholy-Nagy',
+          year: '1927',
+          rule: {
+            "monday": [ 19, 29, 9, 17 ],
+            "tuesday": [ 18, 28, 8, 16 ],
+            "wednesday": [ 17, 27, 7, 15 ],
+            "thursday": [ 16, 26, 6, 14 ],
+            "friday": [ 15, 25, 5, 13 ],
+            "saturday": [ 21, 1, 11, 18 ],
+            "sunday": [ 20, 30, 10, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
