@@ -1408,6 +1408,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 79,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=9089074/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://timhecker.bandcamp.com/album/virgins-2',
+          a_string: 'Virgins by Tim Hecker',
+          rule: {
+            "monday": [ 10, 13, 19, 30 ],
+            "tuesday": [ 8, 16, 18, 29 ],
+            "wednesday": [ 12, 16, 22, 3 ],
+            "thursday": [ 11, 15, 21, 1 ],
+            "saturday": [ 10, 14, 19, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 80,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4022394178/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://deafheavens.bandcamp.com/album/sunbather',
+          a_string: 'Sunbather by deafheaven',
+          rule: {
+            "monday": [ 10, 14, 19, 1 ],
+            "tuesday": [ 10, 13, 19, 30 ],
+            "wednesday": [ 8, 16, 18, 29 ],
+            "thursday": [ 12, 16, 22, 3 ],
+            "saturday": [ 11, 15, 21, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 81,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3693191614/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://amulets.bandcamp.com/album/twin-symmetry',
+          a_string: 'TWIN SYMMETRY by AMULETS',
+          rule: {
+            "monday": [ 11, 15, 21, 1 ],
+            "tuesday": [ 10, 14, 19, 1 ],
+            "wednesday": [ 10, 13, 19, 30 ],
+            "thursday": [ 8, 16, 18, 29 ],
+            "saturday": [ 12, 16, 22, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
