@@ -1948,6 +1948,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 109,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2967383451/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://lesq.bandcamp.com/album/blunt-objects',
+          a_string: 'Blunt Objects by Low End String Quartet',
+          rule: {
+            "monday": [ 20, 24, 26, 30 ],
+            "tuesday": [ 22, 29, 31, 30 ],
+            "wednesday": [ 30, 24, 26, 31 ],
+            "thursday": [ 21, 28, 29, 30 ],
+            "saturday": [ 22, 29, 30, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 110,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4227688948/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jonathanmatis.bandcamp.com/album/on-the-inevitability-of-loss',
+          a_string: 'On the inevitability of loss by Jonathan Matis',
+          rule: {
+            "monday": [ 22, 29, 30, 31 ],
+            "tuesday": [ 20, 24, 26, 30 ],
+            "wednesday": [ 22, 29, 31, 30 ],
+            "thursday": [ 30, 24, 26, 31 ],
+            "saturday": [ 21, 28, 29, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 111,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3092382909/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://rodhamilton.bandcamp.com/album/atitl-n-2',
+          a_string: 'Atitlán by Rod Hamilton',
+          rule: {
+            "monday": [ 21, 28, 29, 30 ],
+            "tuesday": [ 22, 29, 30, 31 ],
+            "wednesday": [ 20, 24, 26, 30 ],
+            "thursday": [ 22, 29, 31, 30 ],
+            "saturday": [ 30, 24, 26, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
