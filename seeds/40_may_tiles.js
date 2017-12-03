@@ -130,6 +130,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#88CD32',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 10,
+          user_id: 1,
+          theme: 'greenery',
+          type: 'friday',
+          src_string: '../img/may_tiles/japanese-maple-2947680_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '155%',
+          color_dark: '#000105',
+          color_medium: '#457B01',
+          color_light: '#CCDE0E',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
