@@ -2304,6 +2304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 116,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/color-study-squares-with-concentric-circles-1913(1).jpg',
+          title: 'Color Study: Squares with Concentric Circles',
+          artist: 'Wassily Kandinsky',
+          year: 'c.1913',
+          rule: {
+            "monday": [ 15, 18, 27, 12 ],
+            "tuesday": [ 14, 17, 26, 11 ],
+            "wednesday": [ 20, 24, 1, 17 ],
+            "thursday": [ 19, 22, 31, 16 ],
+            "friday": [ 18, 22, 30, 15 ],
+            "saturday": [ 17, 21, 29, 14 ],
+            "sunday": [ 16, 20, 28, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 117,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/portrait-of-lajos-kass-k-1920.jpg',
+          title: 'Portrait of Lajos Kassák',
+          artist: 'Sandor Bortnyik',
+          year: '1920',
+          rule: {
+            "monday": [ 16, 20, 28, 13 ],
+            "tuesday": [ 15, 18, 27, 12 ],
+            "wednesday": [ 14, 17, 26, 11 ],
+            "thursday": [ 20, 24, 1, 17 ],
+            "friday": [ 19, 22, 31, 16 ],
+            "saturday": [ 18, 22, 30, 15 ],
+            "sunday": [ 17, 21, 29, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 118,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/cover-for-a-book-by-julian-przybo-z-ponad-1930.jpg',
+          title: 'Cover for a book by Julian Przyboś, Z ponad',
+          artist: 'Wladyslaw Strzeminski',
+          year: '1930',
+          rule: {
+            "monday": [ 17, 21, 29, 14 ],
+            "tuesday": [ 16, 20, 28, 13 ],
+            "wednesday": [ 15, 18, 27, 12 ],
+            "thursday": [ 14, 17, 26, 11 ],
+            "friday": [ 20, 24, 1, 17 ],
+            "saturday": [ 19, 22, 31, 16 ],
+            "sunday": [ 18, 22, 30, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 119,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/l-annonce-de-l-hiver-1935.jpg',
+          title: 'L\'annonce de l\'hiver',
+          artist: 'Francis Gruber',
+          year: '1935',
+          rule: {
+            "monday": [ 19, 23, 31, 16 ],
+            "tuesday": [ 18, 22, 30, 15 ],
+            "wednesday": [ 17, 21, 29, 14 ],
+            "thursday": [ 16, 19, 28, 13 ],
+            "friday": [ 15, 18, 27, 12 ],
+            "saturday": [ 21, 25, 2, 18 ],
+            "sunday": [ 20, 23, 1, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 120,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/telephone-1916.jpg',
+          title: 'Telephone',
+          artist: 'Morton Shamberg',
+          year: '1916',
+          rule: {
+            "monday": [ 20, 23, 1, 17 ],
+            "tuesday": [ 19, 23, 31, 16 ],
+            "wednesday": [ 18, 22, 30, 15 ],
+            "thursday": [ 17, 21, 29, 14 ],
+            "friday": [ 16, 19, 28, 13 ],
+            "saturday": [ 15, 18, 27, 12 ],
+            "sunday": [ 21, 25, 2, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
