@@ -135,7 +135,7 @@ exports.seed = function(knex, Promise) {
           id: 10,
           user_id: 1,
           theme: 'greenery',
-          type: 'friday',
+          type: 'saturday',
           src_string: '../img/may_tiles/japanese-maple-2947680_1920.jpg',
           repeat_value: 'no-repeat',
           size_value: '155%',
