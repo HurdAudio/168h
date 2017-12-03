@@ -2504,6 +2504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 126,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/the-attributes-of-music-1770.jpg',
+          title: 'The Attributes of Music',
+          artist: 'Anne Vallayer-Coster',
+          year: '1770',
+          rule: {
+            "monday": [ 19, 30, 10, 21 ],
+            "tuesday": [ 18, 29, 9, 20 ],
+            "wednesday": [ 17, 28, 8, 19 ],
+            "thursday": [ 16, 27, 7, 8 ],
+            "friday": [ 15, 26, 6, 17 ],
+            "saturday": [ 21, 1, 12, 23 ],
+            "sunday": [ 20, 31, 11, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 127,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/young-woman-playing-with-a-dog-1772.jpg',
+          title: 'Young Woman Playing with a Dog',
+          artist: 'Jean-Honore Fragonard',
+          year: '1765 - 1772',
+          rule: {
+            "monday": [ 20, 31, 11, 22 ],
+            "tuesday": [ 19, 30, 10, 21 ],
+            "wednesday": [ 18, 29, 9, 20 ],
+            "thursday": [ 17, 28, 8, 19 ],
+            "friday": [ 16, 27, 7, 8 ],
+            "saturday": [ 15, 26, 6, 17 ],
+            "sunday": [ 21, 1, 12, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 128,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/self-portrait-with-the-bull-s-eye-1737.jpg',
+          title: 'Self-Portrait with the bull\'s-eye',
+          artist: 'Maurice Quentin de La Tour',
+          year: '1737',
+          rule: {
+            "monday": [ 21, 1, 12, 23 ],
+            "tuesday": [ 20, 31, 11, 22 ],
+            "wednesday": [ 19, 30, 10, 21 ],
+            "thursday": [ 18, 29, 9, 20 ],
+            "friday": [ 17, 28, 8, 19 ],
+            "saturday": [ 16, 27, 7, 8 ],
+            "sunday": [ 15, 26, 6, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 129,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/girl-with-racket-and-shuttlecock.jpg',
+          title: 'Girl with Racket and Shuttlecock',
+          artist: 'Jean-Baptiste-Simeon Chardin',
+          year: 'c.1740',
+          rule: {
+            "monday": [ 15, 26, 6, 17 ],
+            "tuesday": [ 21, 1, 12, 23 ],
+            "wednesday": [ 20, 31, 11, 22 ],
+            "thursday": [ 19, 30, 10, 21 ],
+            "friday": [ 18, 29, 9, 20 ],
+            "saturday": [ 17, 28, 8, 19 ],
+            "sunday": [ 16, 27, 7, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 130,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/cupid-disarmed.jpg',
+          title: 'Cupid Disarmed',
+          artist: 'Antoine Watteau',
+          year: 'c.1715',
+          rule: {
+            "monday": [ 16, 27, 7, 8 ],
+            "tuesday": [ 15, 26, 6, 17 ],
+            "wednesday": [ 21, 1, 12, 23 ],
+            "thursday": [ 20, 31, 11, 22 ],
+            "friday": [ 19, 30, 10, 21 ],
+            "saturday": [ 18, 29, 9, 20 ],
+            "sunday": [ 17, 28, 8, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
