@@ -3704,6 +3704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 186,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/unknown-title-17.jpg',
+          title: 'unknown title',
+          artist: 'Constantin Blendea',
+          year: 'XX-XXI cent.',
+          rule: {
+            "monday": [ 10, 12, 13, 16 ],
+            "tuesday": [ 26, 27, 7, 30 ],
+            "wednesday": [ 29, 31, 23, 12 ],
+            "thursday": [ 31, 1, 24, 27 ],
+            "friday": [ 3, 4, 26, 30 ],
+            "saturday": [ 6, 8, 9, 11 ],
+            "sunday": [ 8, 10, 14, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 187,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/coloured-wall-2003.jpg',
+          title: 'Coloured Wall',
+          artist: 'Sean Scully',
+          year: '2003',
+          rule: {
+            "monday": [ 8, 10, 14, 17 ],
+            "tuesday": [ 10, 12, 13, 16 ],
+            "wednesday": [ 26, 27, 7, 30 ],
+            "thursday": [ 29, 31, 23, 12 ],
+            "friday": [ 31, 1, 24, 27 ],
+            "saturday": [ 3, 4, 26, 30 ],
+            "sunday": [ 6, 8, 9, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 188,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/mask-4-1936.jpg',
+          title: 'Mask 4',
+          artist: 'Willi Baumeister',
+          year: '1936',
+          rule: {
+            "monday": [ 6, 8, 9, 11 ],
+            "tuesday": [ 8, 10, 14, 17 ],
+            "wednesday": [ 10, 12, 13, 16 ],
+            "thursday": [ 26, 27, 7, 30 ],
+            "friday": [ 29, 31, 23, 12 ],
+            "saturday": [ 31, 1, 24, 27 ],
+            "sunday": [ 3, 4, 26, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 189,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/july-1954-1954.jpg',
+          title: 'July 1954',
+          artist: 'Frank Lobdell',
+          year: '1954',
+          rule: {
+            "monday": [ 4, 5, 27, 31 ],
+            "tuesday": [ 7, 9, 10, 12 ],
+            "wednesday": [ 9, 11, 15, 18 ],
+            "thursday": [ 11, 13, 14, 17 ],
+            "friday": [ 27, 28, 8, 31 ],
+            "saturday": [ 30, 1, 24, 13 ],
+            "sunday": [ 1, 2, 25, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 190,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/relational-painting-1951.jpg',
+          title: 'Relational Painting',
+          artist: 'Fritz Glarner',
+          year: '1951',
+          rule: {
+            "monday": [ 1, 2, 25, 28 ],
+            "tuesday": [ 4, 5, 27, 31 ],
+            "wednesday": [ 7, 9, 10, 12 ],
+            "thursday": [ 9, 11, 15, 18 ],
+            "friday": [ 11, 13, 14, 17 ],
+            "saturday": [ 27, 28, 8, 31 ],
+            "sunday": [ 30, 1, 24, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
