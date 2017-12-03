@@ -116,6 +116,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#F9D8DC',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 9,
+          user_id: 1,
+          theme: 'light',
+          type: 'friday',
+          src_string: '../img/june_tiles/concert-336695_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '170%',
+          color_dark: '#030303',
+          color_medium: '#B9C4AC',
+          color_light: '#E2E5E4',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
