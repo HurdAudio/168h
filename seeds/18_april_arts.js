@@ -3104,6 +3104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 156,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/4c07febe632350102ea63ba2f335716d.jpg',
+          title: '?',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 22, 28, 3, 10 ],
+            "tuesday": [ 6, 26, 2, 9 ],
+            "wednesday": [ 21, 26, 2, 8 ],
+            "thursday": [ 20, 24, 9, 7 ],
+            "friday": [ 19, 24, 29, 6 ],
+            "saturday": [ 18, 23, 29, 5 ],
+            "sunday": [ 17, 22, 28, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 157,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/att_park_by_ostrichzero-d2xl6p9.jpg',
+          title: 'ATT Park',
+          artist: 'OstrichZero',
+          year: '2010 - 2017',
+          rule: {
+            "monday": [ 17, 22, 28, 4 ],
+            "tuesday": [ 22, 28, 3, 10 ],
+            "wednesday": [ 6, 26, 2, 9 ],
+            "thursday": [ 21, 26, 2, 8 ],
+            "friday": [ 20, 24, 9, 7 ],
+            "saturday": [ 19, 24, 29, 6 ],
+            "sunday": [ 18, 23, 29, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 158,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/San-Francisco-Giants_01.jpg',
+          title: 'San Francisco Giants',
+          artist: 'Dowdle Folk Art',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 18, 23, 29, 5 ],
+            "tuesday": [ 17, 22, 28, 4 ],
+            "wednesday": [ 22, 28, 3, 10 ],
+            "thursday": [ 6, 26, 2, 9 ],
+            "friday": [ 21, 26, 2, 8 ],
+            "saturday": [ 20, 24, 9, 7 ],
+            "sunday": [ 19, 24, 29, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 159,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/1623917-7.jpg',
+          title: 'San Francisco Giants',
+          artist: 'Saatchi',
+          year: '?',
+          rule: {
+            "monday": [ 19, 24, 29, 6 ],
+            "tuesday": [ 18, 23, 29, 5 ],
+            "wednesday": [ 17, 22, 28, 4 ],
+            "thursday": [ 22, 28, 3, 10 ],
+            "friday": [ 6, 26, 2, 9 ],
+            "saturday": [ 21, 26, 2, 8 ],
+            "sunday": [ 20, 24, 9, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 160,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/.jpg',
+          title: 'Buster Posey4d7bbe1c48d5da8c763b4a4fd1ee4819--giants-sf-giants-baseball',
+          artist: '?',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 20, 24, 9, 7 ],
+            "tuesday": [ 19, 24, 29, 6 ],
+            "wednesday": [ 18, 23, 29, 5 ],
+            "thursday": [ 17, 22, 28, 4 ],
+            "friday": [ 22, 28, 3, 10 ],
+            "saturday": [ 6, 26, 2, 9 ],
+            "sunday": [ 21, 26, 2, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
