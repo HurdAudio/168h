@@ -3304,6 +3304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 166,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/k-k-1933.jpg',
+          title: 'Kô & Kô',
+          artist: 'Maria Helena Vieira da Silva',
+          year: '1933',
+          rule: {
+            "monday": [ 19, 29, 6, 16 ],
+            "tuesday": [ 18, 28, 5, 15 ],
+            "wednesday": [ 17, 27, 5, 14 ],
+            "thursday": [ 23, 1, 10, 19 ],
+            "friday": [ 22, 1, 11, 19 ],
+            "saturday": [ 21, 31, 8, 18 ],
+            "sunday": [ 20, 30, 7, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 167,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/lady-godiva-1959.jpg',
+          title: 'Lady Godiva',
+          artist: 'Remedios Varo',
+          year: '1959',
+          rule: {
+            "monday": [ 20, 30, 7, 17 ],
+            "tuesday": [ 19, 29, 6, 16 ],
+            "wednesday": [ 18, 28, 5, 15 ],
+            "thursday": [ 17, 27, 5, 14 ],
+            "friday": [ 23, 1, 10, 19 ],
+            "saturday": [ 22, 1, 11, 19 ],
+            "sunday": [ 21, 31, 8, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 168,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/feminine-character.jpg',
+          title: 'Feminine character',
+          artist: 'Hedda Sterne',
+          year: '?',
+          rule: {
+            "monday": [ 22, 1, 9, 19 ],
+            "tuesday": [ 21, 31, 8, 18 ],
+            "wednesday": [ 20, 30, 7, 17 ],
+            "thursday": [ 19, 29, 6, 16 ],
+            "friday": [ 18, 28, 6, 15 ],
+            "saturday": [ 24, 2, 11, 20 ],
+            "sunday": [ 23, 2, 12, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 169,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/cinda.jpg',
+          title: 'Cinderella',
+          artist: 'Mary Blair',
+          year: '?',
+          rule: {
+            "monday": [ 23, 2, 12, 20 ],
+            "tuesday": [ 22, 1, 9, 19 ],
+            "wednesday": [ 21, 31, 8, 18 ],
+            "thursday": [ 20, 30, 7, 17 ],
+            "friday": [ 19, 29, 6, 16 ],
+            "saturday": [ 18, 28, 6, 15 ],
+            "sunday": [ 24, 2, 11, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 170,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/witches-in-preparation-1981.jpg',
+          title: 'Witches in Preparation',
+          artist: 'Ilka Gedo',
+          year: '1981',
+          rule: {
+            "monday": [ 24, 2, 11, 20 ],
+            "tuesday": [ 23, 2, 12, 20 ],
+            "wednesday": [ 22, 1, 9, 19 ],
+            "thursday": [ 21, 31, 8, 18 ],
+            "friday": [ 20, 30, 7, 17 ],
+            "saturday": [ 19, 29, 6, 16 ],
+            "sunday": [ 18, 28, 6, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
