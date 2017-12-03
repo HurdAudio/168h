@@ -1840,6 +1840,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 103,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=191922726/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://africanheadcharge.bandcamp.com/album/my-life-in-a-hole-in-the-ground',
+          a_string: 'My Life In A Hole In The Ground by African Head Charge',
+          rule: {
+            "monday": [ 3, 26, 28, 5 ],
+            "tuesday": [ 15, 20, 22, 5 ],
+            "wednesday": [ 16, 20, 22, 26 ],
+            "thursday": [ 18, 22, 24, 28 ],
+            "saturday": [ 20, 24, 26, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 104,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2283578983/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://africanheadcharge.bandcamp.com/album/drastic-season',
+          a_string: 'Drastic Season by African Head Charge',
+          rule: {
+            "monday": [ 20, 24, 26, 28 ],
+            "tuesday": [ 3, 26, 28, 5 ],
+            "wednesday": [ 15, 20, 22, 5 ],
+            "thursday": [ 16, 20, 22, 26 ],
+            "saturday": [ 18, 22, 24, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 105,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=546702643/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://africanheadcharge.bandcamp.com/album/off-the-beaten-track',
+          a_string: 'Off The Beaten Track by African Head Charge',
+          rule: {
+            "monday": [ 19, 23, 25, 29 ],
+            "tuesday": [ 21, 25, 27, 29 ],
+            "wednesday": [ 4, 27, 29, 6 ],
+            "thursday": [ 16, 21, 23, 6 ],
+            "saturday": [ 17, 21, 23, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
