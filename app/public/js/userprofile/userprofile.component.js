@@ -149,6 +149,21 @@
       vm.editTask = editTask;
       vm.userTasksEditorDone = userTasksEditorDone;
       vm.deleteBill = deleteBill;
+      vm.addNewOccasion = addNewOccasion;
+
+      function addNewOccasion (){
+        let subObj = {
+          user_id: currentUserId,
+          name: '',
+          day_of: new Date(),
+          is_annual: true
+        };
+        $http.post('/occasions', subObj)
+        .then(resultingOccasionData=>{
+          let resultingOccasion = resultingOccasionData.data[0];
+          editOccaision(resultingOccasion.id);
+        });
+      }
 
       function deleteBill(billId) {
         let billsManagementDiv = document.getElementById('billsManagementDiv');
@@ -1965,6 +1980,28 @@
         });
       }
 
+      function removeOccasionEntry(occasionId) {
+        $http.delete(`/occasions/${occasionId}`)
+        .then(()=>{
+          console.log('pruned');
+        });
+      }
+
+      function pruneEmptyOccasions() {
+        $http.get(`/occasionsbyuser/${currentUserId}`)
+        .then(resultingData=>{
+          let userOccasions = resultingData.data;
+          let emptyOccasions = userOccasions.filter(entry=>{
+            return (entry.name === '');
+          });
+          if (emptyOccasions.length > 0) {
+            for (let i = 0; i < emptyOccasions.length; i++) {
+              removeOccasionEntry(emptyOccasions[i].id);
+            }
+          }
+        });
+      }
+
       function closeOccasionsManager() {
         let occasionManager = document.getElementById('occasionManager');
         let occasionsManagementDiv = document.getElementById('occasionsManagementDiv');
@@ -1974,6 +2011,7 @@
         occasionManager.setAttribute("style", "visibility: visible;");
         occasionsManagementDiv.setAttribute("style", "display: none;");
         occasionZone.setAttribute("style", "opacity: 1;");
+        pruneEmptyOccasions();
       }
 
       function closeHolidayManager() {
@@ -2008,6 +2046,9 @@
               return 0;
             }
           });
+          while (vm.userOccasions[0].name === '') {
+            vm.userOccasions.shift();
+          }
 
         });
       }
