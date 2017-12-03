@@ -1516,6 +1516,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 85,
+          user_id: 1,
+          theme: 'avant garde/new music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=985775283/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://nickvasallo.bandcamp.com/album/let-the-machines-do-it-for-us',
+          a_string: 'let the machines do it for us by Nick Vasallo',
+          rule: {
+            "monday": [ 15, 21, 28, 10 ],
+            "tuesday": [ 14, 20, 27, 9 ],
+            "wednesday": [ 13, 19, 26, 8 ],
+            "thursday": [ 17, 23, 30, 12 ],
+            "saturday": [ 16, 22, 29, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 86,
+          user_id: 1,
+          theme: 'avant garde/new music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1787015233/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://nnatapes.bandcamp.com/album/evrly-mvsic',
+          a_string: '&#39;EVRLY MVSIC&#39; by Patrick Higgins &amp; Josh Modney',
+          rule: {
+            "monday": [ 16, 22, 29, 11 ],
+            "tuesday": [ 15, 21, 28, 10 ],
+            "wednesday": [ 14, 20, 27, 9 ],
+            "thursday": [ 13, 19, 26, 8 ],
+            "saturday": [ 17, 23, 30, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 87,
+          user_id: 1,
+          theme: 'avant garde/new music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2930669060/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://leabertucci.bandcamp.com/album/all-that-is-solid-melts-into-air',
+          a_string: '&#39;All That Is Solid Melts Into Air&#39; by Lea Bertucci',
+          rule: {
+            "monday": [ 17, 23, 30, 12 ],
+            "tuesday": [ 16, 22, 29, 11 ],
+            "wednesday": [ 15, 21, 28, 10 ],
+            "thursday": [ 14, 20, 27, 9 ],
+            "saturday": [ 13, 19, 26, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
