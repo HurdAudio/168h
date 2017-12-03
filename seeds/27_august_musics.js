@@ -1192,6 +1192,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 67,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4088072951/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://mnoad.bandcamp.com/album/9-syllables',
+          a_string: '(9) Syllables by Nate Wooley',
+          rule: {
+            "monday": [ 17, 25, 10, 11 ],
+            "tuesday": [ 16, 24, 9, 10 ],
+            "wednesday": [ 13, 21, 6, 5 ],
+            "thursday": [ 14, 22, 7, 6 ],
+            "saturday": [ 18, 26, 8, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 68,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3601429188/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://mnoad.bandcamp.com/album/lyra',
+          a_string: 'Lyra by Jean D.L. &amp; Karen Willems',
+          rule: {
+            "monday": [ 18, 26, 8, 7 ],
+            "tuesday": [ 17, 25, 10, 11 ],
+            "wednesday": [ 16, 24, 9, 10 ],
+            "thursday": [ 13, 21, 6, 5 ],
+            "saturday": [ 14, 22, 7, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 69,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=314193732/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://mnoad.bandcamp.com/album/polychoral',
+          a_string: 'Polychoral by Nate Wooley',
+          rule: {
+            "monday": [ 14, 22, 7, 6 ],
+            "tuesday": [ 18, 26, 8, 7 ],
+            "wednesday": [ 17, 25, 10, 11 ],
+            "thursday": [ 16, 24, 9, 10 ],
+            "saturday": [ 13, 21, 6, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
