@@ -976,6 +976,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 55,
+          user_id: 1,
+          theme: 'hardcore punk, metal and nurse with wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2136943119/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://lumpythedumpers.bandcamp.com/album/those-pickled-fuckers"',
+          a_string: 'Those Pickled Fuckers by Lumpy &amp; The Dumpers',
+          rule: {
+            "monday": [ 14, 24, 3, 6 ],
+            "tuesday": [ 13, 23, 2, 5 ],
+            "wednesday": [ 12, 22, 2, 4 ],
+            "thursday": [ 16, 26, 5, 8 ],
+            "saturday": [ 15, 25, 4, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 56,
+          user_id: 1,
+          theme: 'hardcore punk, metal and nurse with wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2737163036/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://petitepdx.bandcamp.com/album/ii',
+          a_string: 'II by Petite',
+          rule: {
+            "monday": [ 16, 26, 5, 8 ],
+            "tuesday": [ 15, 25, 4, 7 ],
+            "wednesday": [ 14, 24, 3, 6 ],
+            "thursday": [ 13, 23, 3, 5 ],
+            "saturday": [ 17, 27, 6, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 57,
+          user_id: 1,
+          theme: 'hardcore punk, metal and nurse with wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2622430888/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://smokingroom-label.bandcamp.com/album/s-t-2',
+          a_string: 'S/T by Ecstasy',
+          rule: {
+            "monday": [ 17, 27, 6, 9 ],
+            "tuesday": [ 16, 26, 5, 8 ],
+            "wednesday": [ 15, 25, 4, 7 ],
+            "thursday": [ 14, 24, 3, 6 ],
+            "saturday": [ 13, 23, 3, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
