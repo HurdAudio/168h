@@ -2904,6 +2904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 146,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/autumn-the-fruit-pickers-1912.jpg',
+          title: 'Autumn: The Fruit Pickers',
+          artist: 'Pierre Bonnard',
+          year: '1912',
+          rule: {
+            "monday": [ 14, 25, 4, 24 ],
+            "tuesday": [ 13, 23, 2, 12 ],
+            "wednesday": [ 11, 21, 31, 10 ],
+            "thursday": [ 9, 19, 29, 8 ],
+            "friday": [ 21, 31, 10, 18 ],
+            "saturday": [ 19, 29, 8, 18 ],
+            "sunday": [ 17, 27, 6, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 147,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/rest-in-harvest.jpg',
+          title: 'Rest in Harvest',
+          artist: 'William-Adolphe Bouguereau',
+          year: 'c.1865',
+          rule: {
+            "monday": [ 18, 28, 7, 17 ],
+            "tuesday": [ 15, 26, 5, 25 ],
+            "wednesday": [ 14, 24, 3, 13 ],
+            "thursday": [ 12, 22, 1, 11 ],
+            "friday": [ 10, 20, 30, 9 ],
+            "saturday": [ 22, 1, 11, 19 ],
+            "sunday": [ 20, 30, 9, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 148,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/young-shepherdess-1868.jpg',
+          title: 'Young Shepherdess',
+          artist: 'William-Adolphe Bouguereau',
+          year: '1868',
+          rule: {
+            "monday": [ 20, 30, 9, 19 ],
+            "tuesday": [ 18, 28, 7, 17 ],
+            "wednesday": [ 15, 26, 5, 25 ],
+            "thursday": [ 14, 24, 3, 13 ],
+            "friday": [ 12, 22, 1, 11 ],
+            "saturday": [ 10, 20, 30, 9 ],
+            "sunday": [ 22, 1, 11, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 149,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/washerwomen-of-fouesnant-1869.jpg',
+          title: 'Washerwomen of Fouesnant',
+          artist: 'William-Adolphe Bouguereau',
+          year: '1869',
+          rule: {
+            "monday": [ 22, 1, 11, 19 ],
+            "tuesday": [ 20, 30, 9, 19 ],
+            "wednesday": [ 18, 28, 7, 17 ],
+            "thursday": [ 15, 26, 5, 25 ],
+            "friday": [ 14, 24, 3, 13 ],
+            "saturday": [ 12, 22, 1, 11 ],
+            "sunday": [ 10, 20, 30, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 150,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/shepherdess-1889.jpg',
+          title: 'Shepherdess',
+          artist: 'William-Adolphe Bouguereau',
+          year: '1889',
+          rule: {
+            "monday": [ 10, 20, 30, 9 ],
+            "tuesday": [ 22, 1, 11, 19 ],
+            "wednesday": [ 20, 30, 9, 19 ],
+            "thursday": [ 18, 28, 7, 17 ],
+            "friday": [ 15, 26, 5, 25 ],
+            "saturday": [ 14, 24, 3, 13 ],
+            "sunday": [ 12, 22, 1, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
