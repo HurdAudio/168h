@@ -868,6 +868,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 49,
+          user_id: 1,
+          theme: 'ethiopia and pan-african',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1850315784/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://trengarecords.bandcamp.com/album/survivor',
+          a_string: 'Survivor by KINSHASA',
+          rule: {
+            "monday": [ 5, 16, 27, 29 ],
+            "tuesday": [ 4, 15, 26, 28 ],
+            "wednesday": [ 8, 19, 30, 2 ],
+            "thursday": [ 7, 18, 29, 1 ],
+            "saturday": [ 6, 17, 28, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 50,
+          user_id: 1,
+          theme: 'ethiopia and pan-african',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3589615262/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://generalrestinpeace.bandcamp.com/album/general-rest-in-peace',
+          a_string: 'General Rest In Peace by General Rest In Peace',
+          rule: {
+            "monday": [ 6, 17, 28, 30 ],
+            "tuesday": [ 5, 16, 27, 29 ],
+            "wednesday": [ 4, 15, 26, 28 ],
+            "thursday": [ 8, 19, 30, 2 ],
+            "saturday": [ 7, 18, 29, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 51,
+          user_id: 1,
+          theme: 'ethiopia and pan-african',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2862333556/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://billlaswell.bandcamp.com/album/baptism-of-solitude',
+          a_string: 'Baptism of Solitude by Paul Bowles',
+          rule: {
+            "monday": [ 7, 18, 29, 1 ],
+            "tuesday": [ 6, 17, 28, 30 ],
+            "wednesday": [ 5, 16, 27, 29 ],
+            "thursday": [ 4, 15, 26, 28 ],
+            "saturday": [ 8, 19, 30, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
