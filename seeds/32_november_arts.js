@@ -1704,6 +1704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 86,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/untitled-1966-1.jpg',
+          title: 'Untitled',
+          artist: 'Gego',
+          year: '1966',
+          rule: {
+            "monday": [ 20, 25, 1, 6 ],
+            "tuesday": [ 19, 24, 30, 5 ],
+            "wednesday": [ 18, 23, 29, 4 ],
+            "thursday": [ 17, 22, 28, 3 ],
+            "friday": [ 16, 20, 27, 2 ],
+            "saturday": [ 15, 20, 26, 1 ],
+            "sunday": [ 14, 19, 25, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 87,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/the-tree-1964.jpg',
+          title: 'The Tree',
+          artist: 'Agnes Martin',
+          year: '1964',
+          rule: {
+            "monday": [ 14, 19, 25, 2 ],
+            "tuesday": [ 20, 25, 1, 6 ],
+            "wednesday": [ 19, 24, 30, 5 ],
+            "thursday": [ 18, 23, 29, 4 ],
+            "friday": [ 17, 22, 28, 3 ],
+            "saturday": [ 16, 20, 27, 2 ],
+            "sunday": [ 15, 20, 26, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 88,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/untitled-may-20-1950.jpg',
+          title: 'Untitled (May 20)',
+          artist: 'Myron Stout',
+          year: '1950',
+          rule: {
+            "monday": [ 15, 20, 26, 1 ],
+            "tuesday": [ 14, 19, 25, 2 ],
+            "wednesday": [ 20, 25, 1, 6 ],
+            "thursday": [ 19, 24, 30, 5 ],
+            "friday": [ 18, 23, 29, 4 ],
+            "saturday": [ 17, 22, 28, 3 ],
+            "sunday": [ 16, 20, 27, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 89,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/spazio-luce-1963.jpg',
+          title: 'Spazio Luce',
+          artist: 'Antonio Calderara',
+          year: '1963',
+          rule: {
+            "monday": [ 16, 20, 27, 2 ],
+            "tuesday": [ 15, 20, 26, 1 ],
+            "wednesday": [ 14, 19, 25, 2 ],
+            "thursday": [ 20, 25, 1, 6 ],
+            "friday": [ 19, 24, 30, 5 ],
+            "saturday": [ 18, 23, 29, 4 ],
+            "sunday": [ 17, 22, 28, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 90,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/untitled-1977.jpg',
+          title: 'Untitled',
+          artist: 'Ruth Vollmer',
+          year: '1977',
+          rule: {
+            "monday": [ 17, 22, 28, 3 ],
+            "tuesday": [ 16, 20, 27, 2 ],
+            "wednesday": [ 15, 20, 26, 1 ],
+            "thursday": [ 14, 19, 25, 2 ],
+            "friday": [ 20, 25, 1, 6 ],
+            "saturday": [ 19, 24, 30, 5 ],
+            "sunday": [ 18, 23, 29, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
