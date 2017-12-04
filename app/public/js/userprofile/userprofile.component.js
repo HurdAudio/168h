@@ -150,6 +150,721 @@
       vm.userTasksEditorDone = userTasksEditorDone;
       vm.deleteBill = deleteBill;
       vm.addNewOccasion = addNewOccasion;
+      vm.holidayReport = holidayReport;
+      vm.holidayReportDone = holidayReportDone;
+
+      function grabHolidays(allHollidays, day) {
+        let today = [];
+        let checkDate = new Date(day);
+        let holiDate;
+
+        for (let i = 0; i < allHollidays.length; i++) {
+          holiDate = new Date(allHollidays[i].day_of);
+          if ((checkDate.getFullYear() === holiDate.getFullYear()) && (checkDate.getMonth() === holiDate.getMonth()) && (checkDate.getDate() === holiDate.getDate())) {
+            today.push(allHollidays[i]);
+          } else if ((allHollidays[i].is_annual) && (checkDate.getMonth() === holiDate.getMonth()) && (checkDate.getDate() === holiDate.getDate())) {
+            today.push(allHollidays[i]);
+          } else {
+            switch (allHollidays[i].name) {
+              case ('Martin Luther King Day'):
+                if ((checkDate.getMonth() === 0) && (checkDate.getDay() === 1)) {
+                  if ((checkDate.getDate() > 14) && (checkDate.getDate() < 22)) {
+                    today.push(allHollidays[i]);
+                  }
+                }
+                break;
+              case ('Clean Out Your Computer Day'):
+                if ((checkDate.getMonth() === 1) && (checkDate.getDay() === 1)) {
+                  if ((checkDate.getDate() > 7) && (checkDate.getDate() < 15)) {
+                    today.push(allHollidays[i]);
+                  }
+                }
+                break;
+              case ('President\'s Day'):
+                if ((checkDate.getMonth() === 1) && (checkDate.getDay() === 1)) {
+                  if ((checkDate.getDate() > 14) && (checkDate.getDate() < 22)) {
+                    today.push(allHollidays[i]);
+                  }
+                }
+                break;
+              case ('Father\'s Day'):
+                if ((checkDate.getMonth() === 5) && (checkDate.getDay() === 0)) {
+                  if ((checkDate.getDate() > 14) && (checkDate.getDate() < 22)) {
+                    today.push(allHollidays[i]);
+                  }
+                }
+                break;
+              case ('Labour Day'):
+                if ((checkDate.getMonth() === 8) && (checkDate.getDay() === 1)) {
+                  if (checkDate.getDate() < 8) {
+                    today.push(allHollidays[i]);
+                  }
+                }
+                break;
+              case ('Mother\'s Day'):
+                if ((checkDate.getMonth() === 4) && (checkDate.getDay() === 0)) {
+                  if ((checkDate.getDate() > 7) && (checkDate.getDate() < 15)) {
+                    today.push(allHollidays[i]);
+                  }
+                }
+                break;
+              case ('Book Lover\'s Day'):
+                if ((checkDate.getMonth() === 9) && (checkDate.getDay === 7)) {
+                  if (checkDate.getDay() < 8) {
+                    today.push(allHollidays[i]);
+                  }
+                }
+                break;
+              case ('Thanksgiving Day'):
+                if ((checkDate.getMonth() === 10) && (checkDate.getDay() === 4)) {
+                  if ((checkDate.getDate() > 21) && (checkDate.getDate() < 29)) {
+                    today.push(allHollidays[i]);
+                  }
+                }
+                break;
+              case ('Black Friday'):
+                if ((checkDate.getMonth() === 10) && (checkDate.getDay() === 5)) {
+                  if (((checkDate.getDate() - 1) > 21) && ((checkDate.getDate() - 1) < 29)) {
+                    today.push(allHollidays[i]);
+                  }
+                }
+                break;
+              case ('Cyber Monday'):
+                if (((checkDate.getMonth() === 11) || (checkDate.getMonth() === 10)) && (checkDate.getDay() === 1)) {
+                  if (((checkDate.getMonth() === 10) && ((checkDate.getDate() - 4) > 21) && ((checkDate.getDate() - 4) < 29)) || (checkDate.getMonth() === 11) && ((checkDate.getDate() - 4) < -1 )) {
+                    today.push(allHollidays[i]);
+                  }
+                }
+                break;
+              case ('Advent'):
+                if (checkDate.getDay() === 6) {
+                  if ((checkDate.getMonth() === 10) || (checkDate.getMonth() === 11)) {
+                    let xmas = new Date(checkDate.getFullYear() + '-12-25T13:44:00.000Z');
+                    switch (xmas.getDay()) {
+                      case (0):
+                        if ((checkDate.getDate() === 3) || (checkDate.getDate() === 10) || (checkDate.getDate() === 17) || (checkDate.getDate() === 24)) {
+                          today.push(allHollidays[i]);
+                        }
+                        break;
+                      case (1):
+                        if ((checkDate.getDate() === 2) || (checkDate.getDate() === 9) || (checkDate.getDate() === 16) || (checkDate.getDate() === 23)) {
+                          today.push(allHollidays[i]);
+                        }
+                        break;
+                      case (2):
+                        if ((checkDate.getDate() === 1) ||   (checkDate.getDate() === 8) || (checkDate.getDate() === 15) || (checkDate.getDate() === 22)) {
+                        today.push(allHollidays[i]);
+                        }
+                        break;
+                      case (3):
+                        if ((checkDate.getDate() === 31) ||   (checkDate.getDate() === 7) || (checkDate.getDate() === 14) || (checkDate.getDate() === 21)) {
+                          today.push(allHollidays[i]);
+                        }
+                        break;
+                      case (4):
+                        if ((checkDate.getDate() === 30) ||   (checkDate.getDate() === 6) || (checkDate.getDate() === 13) || (checkDate.getDate() === 20)) {
+                          today.push(allHollidays[i]);
+                        }
+                        break;
+                      case (5):
+                        if ((checkDate.getDate() === 29) ||   (checkDate.getDate() === 5) || (checkDate.getDate() === 12) || (checkDate.getDate() === 19)) {
+                          today.push(allHollidays[i]);
+                        }
+                        break;
+                      case (6):
+                        if ((checkDate.getDate() === 28) ||   (checkDate.getDate() === 4) || (checkDate.getDate() === 11) || (checkDate.getDate() === 18)) {
+                          today.push(allHollidays[i]);
+                        }
+                        break;
+                      default:
+                      console.log('impossible situation for advent');
+                    }
+                  }
+                }
+                break;
+              case ('Victoria Day'):
+                if ((checkDate.getMonth() === 4) && (checkDate.getDay() === 1)) {
+                  if ((checkDate.getDate() > 17) && (checkDate.getDate() < 25)) {
+                    today.push(allHollidays[i]);
+                  }
+                }
+                break;
+              case ('Civic Holiday (Canada)'):
+                if ((checkDate.getMonth() === 7) && (checkDate.getDay() === 1)) {
+                  if (checkDate.getDate() < 8) {
+                    today.push(allHollidays[i]);
+                  }
+                }
+                break;
+              case ('Indigenous Peoples\' Day'):
+                if ((checkDate.getMonth() === 8) && (checkDate.getDay() === 5)) {
+                  if ((checkDate.getDate() > 21) && (checkDate.getDate() < 29)) {
+                    today.push(allHollidays[i]);
+                  }
+                }
+                break;
+              case ('Arbor Day'):
+                if ((checkDate.getMonth() === 3) &&(checkDate.getDay() === 5)) {
+                  if (checkDate.getDate() > 23) {
+                    today.push(allHollidays[i]);
+                  }
+                }
+                break;
+              case ('Canadian Thanksgiving'):
+                if ((checkDate.getMonth() === 9) && (checkDate.getDay() === 1)) {
+                  if ((checkDate.getDate() > 7) && (checkDate.getDate() < 15)) {
+                    today.push(allHollidays[i]);
+                  }
+                }
+                break;
+              case ('Memorial Day'):
+                if ((checkDate.getMonth() === 4) && (checkDate.getDay() === 1)) {
+                  if (checkDate.getDate() > 24) {
+                    today.push(allHollidays[i]);
+                  }
+                }
+                break;
+              default:
+                //console.log('non-float holiday');
+            }
+          }
+        }
+
+        return(today);
+      }
+
+      function holidayReportDone() {
+        let reportForHolidays = document.getElementById('reportForHolidays');
+        let holidayManagerDone = document.getElementById('holidayManagerDone');
+        let holidayReporter = document.getElementById('holidayReporter');
+
+        reportForHolidays.setAttribute("style", "display: none;");
+        holidayManagerDone.setAttribute("style", "visibility: visible;");
+        holidayReporter.setAttribute("style", "visibility: visible;");
+      }
+
+      function areSameDate(date1, date2) {
+        let first = new Date(date1);
+        let second = new Date(date2);
+        if (first.getFullYear() !== second.getFullYear()) {
+          return false;
+        } else if (first.getMonth() !== second.getMonth()) {
+          return false;
+        } else if (first.getDate() !== second.getDate()) {
+          return false;
+        }
+        return true;
+      }
+
+      function holidayReport(){
+        let reportForHolidays = document.getElementById('reportForHolidays');
+        let userHolidayEditorDiv = document.getElementById('userHolidayEditorDiv');
+        let holidayReporter = document.getElementById('holidayReporter');
+        let holidayManagerDone = document.getElementById('holidayManagerDone');
+        $http.get(`/holidaysbyuser/${currentUserId}`)
+        .then(userHolidaysData=>{
+          vm.holidayReporter = [];
+          vm.holidayReporter[0] = {};
+          let userHolidays = userHolidaysData.data;
+
+          let nextYearMonthString = '';
+          let nextYearDateString = ''
+          let yearDateStart = new Date();
+          let nextYear = yearDateStart.getFullYear() + 1;
+          let nextYearMonth = yearDateStart.getMonth() + 1;
+          if (nextYearMonth < 10) {
+            nextYearMonthString = '0' + nextYearMonth;
+          } else {
+            nextYearMonthString = nextYearMonth.toString();
+          }
+          if (yearDateStart.getDate() < 10) {
+            nextYearDateString = '0' + yearDateStart.getDate();
+          } else {
+            nextYearDateString = yearDateStart.getDate().toString();
+          }
+          let yearDateEnd = new Date(nextYear + '-' + nextYearMonthString + '-' + nextYearDateString + 'T13:44:00.000Z');
+          console.log(yearDateEnd);
+          console.log(yearDateStart.getDate());
+          let calendarStart = new Date(yearDateStart.getFullYear() + '-01-01T13:44:00.000Z');
+          let calendarEnd = new Date(nextYear + '-01-01T13:44:00.000Z');
+          let holidayArray = [];
+          vm.holidayReporter[0].calendarTotal = 0;
+          vm.holidayReporter[0].yearTotal = 0;
+          vm.holidayReporter[0].todayClean = cleanDateHoliday(yearDateStart);
+          vm.holidayReporter[0].oneYearClean = cleanDateHoliday(yearDateEnd);
+          vm.holidayReporter[0].calendarFloat = 0;
+          vm.holidayReporter[0].calendarFixed = 0;
+          vm.holidayReporter[0].yearFloat = 0;
+          vm.holidayReporter[0].yearFixed = 0;
+          vm.holidayReporter[0].calendarJan = 0;
+          vm.holidayReporter[0].yearJan = 0;
+          vm.holidayReporter[0].calendarJanHolidays = [];
+          vm.holidayReporter[0].yearJanHolidays = [];
+          vm.holidayReporter[0].yearJanOverlap = 0;
+          vm.holidayReporter[0].yearJanTotal = 0;
+          vm.holidayReporter[0].calendarJanOverlap = 0;
+          vm.holidayReporter[0].calendarJanTotal = 0;
+          vm.holidayReporter[0].calendarFebOverlap = 0;
+          vm.holidayReporter[0].calendarFebTotal = 0;
+          vm.holidayReporter[0].calendarFebHolidays = [];
+          vm.holidayReporter[0].yearFebHolidays = [];
+          vm.holidayReporter[0].yearFebOverlap = 0;
+          vm.holidayReporter[0].yearFebTotal = 0;
+          vm.holidayReporter[0].calendarMarOverlap = 0;
+          vm.holidayReporter[0].calendarMarTotal = 0;
+          vm.holidayReporter[0].calendarMarHolidays = [];
+          vm.holidayReporter[0].calendarAprHolidays = [];
+          vm.holidayReporter[0].calendarAprOverlap = 0;
+          vm.holidayReporter[0].calendarAprTotal = 0;
+          vm.holidayReporter[0].calendarMayHolidays = [];
+          vm.holidayReporter[0].calendarMayOverlap = 0;
+          vm.holidayReporter[0].calendarMayTotal = 0;
+          vm.holidayReporter[0].calendarJunHolidays = [];
+          vm.holidayReporter[0].calendarJunOverlap = 0;
+          vm.holidayReporter[0].calendarJunTotal = 0;
+          vm.holidayReporter[0].calendarJulHolidays = [];
+          vm.holidayReporter[0].calendarJulOverlap = 0;
+          vm.holidayReporter[0].calendarJulTotal = 0;
+          vm.holidayReporter[0].calendarAugHolidays = [];
+          vm.holidayReporter[0].calendarAugOverlap = 0;
+          vm.holidayReporter[0].calendarAugTotal = 0;
+          vm.holidayReporter[0].calendarSepHolidays = [];
+          vm.holidayReporter[0].calendarSepOverlap = 0;
+          vm.holidayReporter[0].calendarSepTotal = 0;
+          vm.holidayReporter[0].calendarOctHolidays = [];
+          vm.holidayReporter[0].calendarOctOverlap = 0;
+          vm.holidayReporter[0].calendarOctTotal = 0;
+          vm.holidayReporter[0].calendarNovHolidays = [];
+          vm.holidayReporter[0].calendarNovOverlap = 0;
+          vm.holidayReporter[0].calendarNovTotal = 0;
+          vm.holidayReporter[0].calendarDecHolidays = [];
+          vm.holidayReporter[0].calendarDecOverlap = 0;
+          vm.holidayReporter[0].calendarDecTotal = 0;
+          vm.holidayReporter[0].yearMarHolidays = [];
+          vm.holidayReporter[0].yearMarOverlap = 0;
+          vm.holidayReporter[0].yearMarTotal = 0;
+          vm.holidayReporter[0].yearAprHolidays = [];
+          vm.holidayReporter[0].yearAprOverlap = 0;
+          vm.holidayReporter[0].yearAprTotal = 0;
+          vm.holidayReporter[0].yearMayHolidays = [];
+          vm.holidayReporter[0].yearMayOverlap = 0;
+          vm.holidayReporter[0].yearMayTotal = 0;
+          vm.holidayReporter[0].yearJunHolidays = [];
+          vm.holidayReporter[0].yearJunOverlap = 0;
+          vm.holidayReporter[0].yearJunTotal = 0;
+          vm.holidayReporter[0].yearJulHolidays = [];
+          vm.holidayReporter[0].yearJulOverlap = 0;
+          vm.holidayReporter[0].yearJulTotal = 0;
+          vm.holidayReporter[0].yearAugHolidays = [];
+          vm.holidayReporter[0].yearAugOverlap = 0;
+          vm.holidayReporter[0].yearAugTotal = 0;
+          vm.holidayReporter[0].yearSepHolidays = [];
+          vm.holidayReporter[0].yearSepOverlap = 0;
+          vm.holidayReporter[0].yearSepTotal = 0;
+          vm.holidayReporter[0].yearOctHolidays = [];
+          vm.holidayReporter[0].yearOctOverlap = 0;
+          vm.holidayReporter[0].yearOctTotal = 0;
+          vm.holidayReporter[0].yearNovHolidays = [];
+          vm.holidayReporter[0].yearNovOverlap = 0;
+          vm.holidayReporter[0].yearNovTotal = 0;
+          vm.holidayReporter[0].yearDecHolidays = [];
+          vm.holidayReporter[0].yearDecOverlap = 0;
+          vm.holidayReporter[0].yearDecTotal = 0;
+
+          let checkDate = new Date(calendarStart);
+          console.log(areSameDate(yearDateStart, yearDateEnd));
+          do {
+            holidayArray = [];
+            holidayArray = grabHolidays(userHolidays, checkDate);
+            if (holidayArray.length > 0) {
+              if (checkDate.getMonth() === 0) {
+                vm.holidayReporter[0].calendarJanTotal++;
+              }
+              if (checkDate.getMonth() === 1) {
+                vm.holidayReporter[0].calendarFebTotal++;
+              }
+              if (checkDate.getMonth() === 2) {
+                vm.holidayReporter[0].calendarMarTotal++;
+              }
+              if (checkDate.getMonth() === 3) {
+                vm.holidayReporter[0].calendarAprTotal++;
+              }
+              if (checkDate.getMonth() === 4) {
+                vm.holidayReporter[0].calendarMayTotal++;
+              }
+              if (checkDate.getMonth() === 5) {
+                vm.holidayReporter[0].calendarJunTotal++;
+              }
+              if (checkDate.getMonth() === 6) {
+                vm.holidayReporter[0].calendarJulTotal++;
+              }
+              if (checkDate.getMonth() === 7) {
+                vm.holidayReporter[0].calendarAugTotal++;
+              }
+              if (checkDate.getMonth() === 8) {
+                vm.holidayReporter[0].calendarSepTotal++;
+              }
+              if (checkDate.getMonth() === 9) {
+                vm.holidayReporter[0].calendarOctTotal++;
+              }
+              if (checkDate.getMonth() === 10) {
+                vm.holidayReporter[0].calendarNovTotal++;
+              }
+              if (checkDate.getMonth() === 11) {
+                vm.holidayReporter[0].calendarDecTotal++;
+              }
+              vm.holidayReporter[0].calendarTotal++;
+              if (holidayArray.length > 1) {
+                if (checkDate.getMonth() === 0) {
+                  vm.holidayReporter[0].calendarJanOverlap += holidayArray.length;
+                }
+                if (checkDate.getMonth() === 1) {
+                  vm.holidayReporterl[0].calendarFebOverlap += holidayArray.length;
+                }
+                if (checkDate.getMonth() === 2) {
+                  vm.holidayReporter[0].calendarMarOverlap += holidayArray.length;
+                }
+                if (checkDate.getMonth() === 3) {
+                  vm.holidayReporter[0].calendarAprOverlap += holidayArray.length;
+                }
+                if (checkDate.getMonth() === 4) {
+                  vm.holidayReporter[0].calendarMayOverlap += holidayArray.length;
+                }
+                if (checkDate.getMonth() === 5) {
+                  vm.holidayReporter[0].calendarJunOverlap += holidayArray.length;
+                }
+                if (checkDate.getMonth() === 6) {
+                  vm.holidayReporter[0].calendarJulOverlap += holidayArray.length;
+                }
+                if (checkDate.getMonth() === 7) {
+                  vm.holidayReporter[0].calendarAugOverlap += holidayArray.length;
+                }
+                if (checkDate.getMonth() === 8) {
+                  vm.holidayReporter[0].calendarSepOverlap += holidayArray.length;
+                }
+                if (checkDate.getMonth() === 9) {
+                  vm.holidayReporter[0].calendarOctOverlap += holidayArray.length;
+                }
+                if (checkDate.getMonth() === 10) {
+                  vm.holidayReporter[0].calendarNovOverlap += holidayArray.length;
+                }
+                if (checkDate.getMonth() === 11) {
+                  vm.holidayReporter[0].calendarDecOverlap += holidayArray.length;
+                }
+                for (let i = 0; i < holidayArray.length; i++) {
+                  if (holidayArray[i].is_annual) {
+                    vm.holidayReporter[0].calendarFixed++;
+                  } else {
+                    vm.holidayReporter[0].calendarFloat++;
+                  }
+                  if (checkDate.getMonth() === 0) {
+                    vm.holidayReporter[0].calendarJanHolidays.push(holidayArray[i].name);
+                    vm.holidayReporter[0].calendarJan = vm.holidayReporter[0].calendarJanHolidays.length;
+                  }
+                  if (checkDate.getMonth() === 1) {
+                    vm.holidayReporter[0].calendarFebHolidays.push(holidayArray[i].name);
+                    vm.holidayReporter[0].calendarFeb = vm.holidayReporter[0].calendarFebHolidays.length;
+                  }
+                  if (checkDate.getMonth() === 2) {
+                    vm.holidayReporter[0].calendarMarHolidays.push(holidayArray[i].name);
+                    vm.holidayReporter[0].calendarMar = vm.holidayReporter[0].calendarMarHolidays.length;
+                  }
+                  if (checkDate.getMonth() === 3) {
+                    vm.holidayReporter[0].calendarAprHolidays.push(holidayArray[i].name);
+                    vm.holidayReporter[0].calendarApr = vm.holidayReporter[0].calendarAprHolidays.length;
+                  }
+                  if (checkDate.getMonth() === 4) {
+                    vm.holidayReporter[0].calendarMayHolidays.push(holidayArray[i].name);
+                    vm.holidayReporter[0].calendarMay = vm.holidayReporter[0].calendarMayHolidays.length;
+                  }
+                  if (checkDate.getMonth() === 5) {
+                    vm.holidayReporter[0].calendarJunHolidays.push(holidayArray[i].name);
+                    vm.holidayReporter[0].calendarJun = vm.holidayReporter[0].calendarJunHolidays.length;
+                  }
+                  if (checkDate.getMonth() === 6) {
+                    vm.holidayReporter[0].calendarJulHolidays.push(holidayArray[i].name);
+                    vm.holidayReporter[0].calendarJul = vm.holidayReporter[0].calendarJulHolidays.length;
+                  }
+                  if (checkDate.getMonth() === 7) {
+                    vm.holidayReporter[0].calendarAugHolidays.push(holidayArray[i].name);
+                    vm.holidayReporter[0].calendarAug = vm.holidayReporter[0].calendarAugHolidays.length;
+                  }
+                  if (checkDate.getMonth() === 8) {
+                    vm.holidayReporter[0].calendarSepHolidays.push(holidayArray[i].name);
+                    vm.holidayReporter[0].calendarSep = vm.holidayReporter[0].calendarSepHolidays.length;
+                  }
+                  if (checkDate.getMonth() === 9) {
+                    vm.holidayReporter[0].calendarOctHolidays.push(holidayArray[i].name);
+                    vm.holidayReporter[0].calendarOct = vm.holidayReporter[0].calendarOctHolidays.length;
+                  }
+                  if (checkDate.getMonth() === 10) {
+                    vm.holidayReporter[0].calendarNovHolidays.push(holidayArray[i].name);
+                    vm.holidayReporter[0].calendar = vm.holidayReporter[0].calendarNovHolidays.length;
+                  }
+                  if (checkDate.getMonth() === 11) {
+                    vm.holidayReporter[0].calendarDecHolidays.push(holidayArray[i].name);
+                    vm.holidayReporter[0].calendar = vm.holidayReporter[0].calendarDecHolidays.length;
+                  }
+                }
+              } else {
+                if (holidayArray[0].is_annual) {
+                  vm.holidayReporter[0].calendarFixed++;
+                } else {
+                  vm.holidayReporter[0].calendarFloat++;
+                }
+                if (checkDate.getMonth() === 0) {
+                  vm.holidayReporter[0].calendarJanHolidays.push(holidayArray[0].name);
+                  vm.holidayReporter[0].calendarJan = vm.holidayReporter[0].calendarJanHolidays.length;
+                }
+                if (checkDate.getMonth() === 1) {
+                  vm.holidayReporter[0].calendarFebHolidays.push(holidayArray[0].name);
+                  vm.holidayReporter[0].calendarFeb = vm.holidayReporter[0].calendarFebHolidays.length;
+                }
+                if (checkDate.getMonth() === 2) {
+                  vm.holidayReporter[0].calendarMarHolidays.push(holidayArray[0].name);
+                  vm.holidayReporter[0].calendarMar = vm.holidayReporter[0].calendarMarHolidays.length;
+                }
+                if (checkDate.getMonth() === 3) {
+                  vm.holidayReporter[0].calendarAprHolidays.push(holidayArray[0].name);
+                  vm.holidayReporter[0].calendarApr = vm.holidayReporter[0].calendarAprHolidays.length;
+                }
+                if (checkDate.getMonth() === 4) {
+                  vm.holidayReporter[0].calendarMayHolidays.push(holidayArray[0].name);
+                  vm.holidayReporter[0].calendarMay = vm.holidayReporter[0].calendarMayHolidays.length;
+                }
+                if (checkDate.getMonth() === 5) {
+                  vm.holidayReporter[0].calendarJunHolidays.push(holidayArray[0].name);
+                  vm.holidayReporter[0].calendarJun = vm.holidayReporter[0].calendarJunHolidays.length;
+                }
+                if (checkDate.getMonth() === 6) {
+                  vm.holidayReporter[0].calendarJulHolidays.push(holidayArray[0].name);
+                  vm.holidayReporter[0].calendarJul = vm.holidayReporter[0].calendarJulHolidays.length;
+                }
+                if (checkDate.getMonth() === 7) {
+                  vm.holidayReporter[0].calendarAugHolidays.push(holidayArray[0].name);
+                  vm.holidayReporter[0].calendarAug = vm.holidayReporter[0].calendarAugHolidays.length;
+                }
+                if (checkDate.getMonth() === 8) {
+                  vm.holidayReporter[0].calendarSepHolidays.push(holidayArray[0].name);
+                  vm.holidayReporter[0].calendarSep = vm.holidayReporter[0].calendarSepHolidays.length;
+                }
+                if (checkDate.getMonth() === 9) {
+                  vm.holidayReporter[0].calendarOctHolidays.push(holidayArray[0].name);
+                  vm.holidayReporter[0].calendarOct = vm.holidayReporter[0].calendarOctHolidays.length;
+                }
+                if (checkDate.getMonth() === 10) {
+                  vm.holidayReporter[0].calendarNovHolidays.push(holidayArray[0].name);
+                  vm.holidayReporter[0].calendarNov = vm.holidayReporter[0].calendarNovHolidays.length;
+                }
+                if (checkDate.getMonth() === 11) {
+                  vm.holidayReporter[0].calendarDecHolidays.push(holidayArray[0].name);
+                  vm.holidayReporter[0].calendarDec = vm.holidayReporter[0].calendarDecHolidays.length;
+                }
+              }
+
+            }
+            checkDate.setDate(checkDate.getDate() + 1);
+          } while (!areSameDate(checkDate, calendarEnd));
+          checkDate = new Date(yearDateStart);
+          do {
+            holidayArray = [];
+            holidayArray = grabHolidays(userHolidays, checkDate);
+            if (holidayArray.length > 0) {
+              vm.holidayReporter[0].yearTotal++;
+              if (checkDate.getMonth() === 0) {
+                vm.holidayReporter[0].yearJanTotal++;
+              }
+              if (checkDate.getMonth() === 1) {
+                vm.holidayReporter[0].yearFebTotal++;
+              }
+              if (checkDate.getMonth() === 2) {
+                vm.holidayReporter[0].yearMarTotal++;
+              }
+              if (checkDate.getMonth() === 3) {
+                vm.holidayReporter[0].yearAprTotal++;
+              }
+              if (checkDate.getMonth() === 4) {
+                vm.holidayReporter[0].yearMayTotal++;
+              }
+              if (checkDate.getMonth() === 5) {
+                vm.holidayReporter[0].yearJunTotal++;
+              }
+              if (checkDate.getMonth() === 6) {
+                vm.holidayReporter[0].yearJulTotal++;
+              }
+              if (checkDate.getMonth() === 7) {
+                vm.holidayReporter[0].yearAugTotal++;
+              }
+              if (checkDate.getMonth() === 8) {
+                vm.holidayReporter[0].yearSepTotal++;
+              }
+              if (checkDate.getMonth() === 9) {
+                vm.holidayReporter[0].yearOctTotal++;
+              }
+              if (checkDate.getMonth() === 10) {
+                vm.holidayReporter[0].yearNovTotal++;
+              }
+              if (checkDate.getMonth() === 11) {
+                vm.holidayReporter[0].yearDecTotal++;
+              }
+              if (holidayArray.length > 1) {
+                if (checkDate.getMonth() === 0) {
+                  vm.holidayReporter[0].yearJanOverlap += holidayArray.length;
+                }
+                if (checkDate.getMonth() === 1) {
+                  vm.holidayReporter[0].yearFebOverlap += holidayArray.length;
+                }
+                if (checkDate.getMonth() === 2) {
+                  vm.holidayReporter[0].yearMarOverlap += holidayArray.length;
+                }
+                if (checkDate.getMonth() === 3) {
+                  vm.holidayReporter[0].yearAprOverlap += holidayArray.length;
+                }
+                if (checkDate.getMonth() === 4) {
+                  vm.holidayReporter[0].yearMayOverlap += holidayArray.length;
+                }
+                if (checkDate.getMonth() === 5) {
+                  vm.holidayReporter[0].yearJunOverlap += holidayArray.length;
+                }
+                if (checkDate.getMonth() === 6) {
+                  vm.holidayReporter[0].yearJulOverlap += holidayArray.length;
+                }
+                if (checkDate.getMonth() === 7) {
+                  vm.holidayReporter[0].yearAugOverlap += holidayArray.length;
+                }
+                if (checkDate.getMonth() === 8) {
+                  vm.holidayReporter[0].yearSepOverlap += holidayArray.length;
+                }
+                if (checkDate.getMonth() === 9) {
+                  vm.holidayReporter[0].yearOctOverlap += holidayArray.length;
+                }
+                if (checkDate.getMonth() === 10) {
+                  vm.holidayReporter[0].yearNovOverlap += holidayArray.length;
+                }
+                if (checkDate.getMonth() === 11) {
+                  vm.holidayReporter[0].yearDecOverlap += holidayArray.length;
+                }
+                for (let i = 0; i < holidayArray.length; i++) {
+                  if (holidayArray[i].is_annual) {
+                    vm.holidayReporter[0].yearFixed++;
+                  } else {
+                    vm.holidayReporter[0].yearFloat++;
+                  }
+                  if (checkDate.getMonth() === 0) {
+                    vm.holidayReporter[0].yearJanHolidays.push(holidayArray[i].name);
+                    vm.holidayReporter[0].yearJan = vm.holidayReporter[0].yearJanHolidays.length;
+                  }
+                  if (checkDate.getMonth() === 1) {
+                    vm.holidayReporter[0].yearFebHolidays.push(holidayArray[i].name);
+                    vm.holidayReporter[0].yearFeb = vm.holidayReporter[0].yearFebHolidays.length;
+                  }
+                  if (checkDate.getMonth() === 2) {
+                    vm.holidayReporter[0].yearMarHolidays.push(holidayArray[i].name);
+                    vm.holidayReporter[0].yearMar = vm.holidayReporter[0].yearMarHolidays.length;
+                  }
+                  if (checkDate.getMonth() === 3) {
+                    vm.holidayReporter[0].yearAprHolidays.push(holidayArray[i].name);
+                    vm.holidayReporter[0].yearApr = vm.holidayReporter[0].yearAprHolidays.length;
+                  }
+                  if (checkDate.getMonth() === 4) {
+                    vm.holidayReporter[0].yearMayHolidays.push(holidayArray[i].name);
+                    vm.holidayReporter[0].yearMay = vm.holidayReporter[0].yearMayHolidays.length;
+                  }
+                  if (checkDate.getMonth() === 5) {
+                    vm.holidayReporter[0].yearJunHolidays.push(holidayArray[i].name);
+                    vm.holidayReporter[0].yearJun = vm.holidayReporter[0].yearJunHolidays.length;
+                  }
+                  if (checkDate.getMonth() === 6) {
+                    vm.holidayReporter[0].yearJulHolidays.push(holidayArray[i].name);
+                    vm.holidayReporter[0].yearJul = vm.holidayReporter[0].yearJulHolidays.length;
+                  }
+                  if (checkDate.getMonth() === 7) {
+                    vm.holidayReporter[0].yearAugHolidays.push(holidayArray[i].name);
+                    vm.holidayReporter[0].yearAug = vm.holidayReporter[0].yearAugHolidays.length;
+                  }
+                  if (checkDate.getMonth() === 8) {
+                    vm.holidayReporter[0].yearSepHolidays.push(holidayArray[i].name);
+                    vm.holidayReporter[0].yearSep = vm.holidayReporter[0].yearSepHolidays.length;
+                  }
+                  if (checkDate.getMonth() === 9) {
+                    vm.holidayReporter[0].yearOctHolidays.push(holidayArray[i].name);
+                    vm.holidayReporter[0].yearOct = vm.holidayReporter[0].yearOctHolidays.length;
+                  }
+                  if (checkDate.getMonth() === 10) {
+                    vm.holidayReporter[0].yearNovHolidays.push(holidayArray[i].name);
+                    vm.holidayReporter[0].yearNov = vm.holidayReporter[0].yearNovHolidays.length;
+                  }
+                  if (checkDate.getMonth() === 11) {
+                    vm.holidayReporter[0].yearDecHolidays.push(holidayArray[i].name);
+                    vm.holidayReporter[0].yearDec = vm.holidayReporter[0].yearDecHolidays.length;
+                  }
+                }
+              } else {
+                if (holidayArray[0].is_annual) {
+                  vm.holidayReporter[0].yearFixed++;
+                } else {
+                  vm.holidayReporter[0].yearFloat++;
+                }
+                if (checkDate.getMonth() === 0) {
+                  vm.holidayReporter[0].yearJanHolidays.push(holidayArray[0].name);
+                  vm.holidayReporter[0].yearJan = vm.holidayReporter[0].yearJanHolidays.length;
+                }
+                if (checkDate.getMonth() === 1) {
+                  vm.holidayReporter[0].yearFebHolidays.push(holidayArray[0].name);
+                  vm.holidayReporter[0].yearFeb = vm.holidayReporter[0].yearFebHolidays.length;
+                }
+                if (checkDate.getMonth() === 2) {
+                  vm.holidayReporter[0].yearMarHolidays.push(holidayArray[0].name);
+                  vm.holidayReporter[0].yearMar = vm.holidayReporter[0].yearMarHolidays.length;
+                }
+                if (checkDate.getMonth() === 3) {
+                  vm.holidayReporter[0].yearAprHolidays.push(holidayArray[0].name);
+                  vm.holidayReporter[0].yearApr = vm.holidayReporter[0].yearAprHolidays.length;
+                }
+                if (checkDate.getMonth() === 4) {
+                  vm.holidayReporter[0].yearMayHolidays.push(holidayArray[0].name);
+                  vm.holidayReporter[0].yearMay = vm.holidayReporter[0].yearMayHolidays.length;
+                }
+                if (checkDate.getMonth() === 5) {
+                  vm.holidayReporter[0].yearJunHolidays.push(holidayArray[0].name);
+                  vm.holidayReporter[0].yearJun = vm.holidayReporter[0].yearJunHolidays.length;
+                }
+                if (checkDate.getMonth() === 6) {
+                  vm.holidayReporter[0].yearJulHolidays.push(holidayArray[0].name);
+                  vm.holidayReporter[0].yearJul = vm.holidayReporter[0].yearJulHolidays.length;
+                }
+                if (checkDate.getMonth() === 7) {
+                  vm.holidayReporter[0].yearAugHolidays.push(holidayArray[0].name);
+                  vm.holidayReporter[0].yearAug = vm.holidayReporter[0].yearAugHolidays.length;
+                }
+                if (checkDate.getMonth() === 8) {
+                  vm.holidayReporter[0].yearSepHolidays.push(holidayArray[0].name);
+                  vm.holidayReporter[0].yearSep = vm.holidayReporter[0].yearSepHolidays.length;
+                }
+                if (checkDate.getMonth() === 9) {
+                  vm.holidayReporter[0].yearOctHolidays.push(holidayArray[0].name);
+                  vm.holidayReporter[0].yearOct = vm.holidayReporter[0].yearOctHolidays.length;
+                }
+                if (checkDate.getMonth() === 10) {
+                  vm.holidayReporter[0].yearNovHolidays.push(holidayArray[0].name);
+                  vm.holidayReporter[0].yearNov = vm.holidayReporter[0].yearNovHolidays.length;
+                }
+                if (checkDate.getMonth() === 11) {
+                  vm.holidayReporter[0].yearDecHolidays.push(holidayArray[0].name);
+                  vm.holidayReporter[0].yearDec = vm.holidayReporter[0].yearDecHolidays.length;
+                }
+              }
+
+            }
+            checkDate.setDate(checkDate.getDate() + 1);
+          } while (!areSameDate(checkDate, yearDateEnd));
+        });
+
+        reportForHolidays.setAttribute("style", "display: initial;");
+        userHolidayEditorDiv.setAttribute("style", "display: none;");
+        holidayManagerDone.setAttribute("style", "visibility: hidden;");
+        holidayReporter.setAttribute("style", "visibility: hidden;");
+      }
 
       function addNewOccasion (){
         let subObj = {
@@ -1125,8 +1840,10 @@
       function userHolidayEditorDone() {
         let holidayManagerDone = document.getElementById('holidayManagerDone');
         let userHolidayEditorDiv = document.getElementById('userHolidayEditorDiv');
+        let holidayReporter = document.getElementById('holidayReporter');
 
         holidayManagerDone.setAttribute("style", "visibility: visible;");
+        holidayReporter.setAttribute("style", "visibility: visible;");
         userHolidayEditorDiv.setAttribute("style", "display: none;");
         holidayManage();
       }
@@ -1465,6 +2182,7 @@
       }
 
       function editHoliday(holidayId) {
+        let reportForHolidays = document.getElementById('reportForHolidays');
         let element;
         let months = [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
         let days = [ 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 ];
@@ -1645,10 +2363,13 @@
         }
         let userHolidayBandcampSubmissionString = document.getElementById('userHolidayBandcampSubmissionString');
         let userHolidayMusicAddErrorMessage = document.getElementById('userHolidayMusicAddErrorMessage');
+        let holidayReporter = document.getElementById('holidayReporter');
 
 
         holidayManagerDone.setAttribute("style", "visibility: hidden;");
+        holidayReporter.setAttribute("style", "visibility: hidden;");
         userHolidayEditorDiv.setAttribute("style", "display: initial;");
+        reportForHolidays.setAttribute("style", "display: none;");
 
         $http.get(`/holidays/${holidayId}`)
         .then(userHolidayData=>{
@@ -1931,6 +2652,14 @@
             userHolidayMusicAddErrorMessage.innerHTML = '';
           });
         });
+      }
+
+      function cleanDateHoliday(day) {
+        let months = [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ];
+        let check = new Date(day);
+        let dateString = check.getDate() + ' ' + months[check.getMonth()] + ' ' + check.getFullYear();
+
+        return(dateString);
       }
 
       function cleanDate(dayOf) {

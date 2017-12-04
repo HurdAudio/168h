@@ -2989,6 +2989,34 @@ footer img {
   margin-top: 0.2em;
 }
 
+#holidayReportBar {
+  font-family: 'Asul', serif;
+  font-size: 18px
+  background: #110514;
+  background-color: -webkit-linear-gradient(-135deg, #110514, #FBFBF3);
+  background: -o-linear-gradient(-135deg, #110514, #FBFBF3);
+  background: -moz-linear-gradient(-135deg, #110514, #FBFBF3);
+  background: linear-gradient(-135deg, #110514, #FBFBF3);
+  border-radius: 5px;
+  margin: 0;
+  padding:0;
+  height: 3.8em;
+  top: 0%;
+  opacity: 1;
+}
+
+#holidayReportBar h1 {
+  margin-left: 2em;
+  padding-top: 0.4em;
+}
+
+
+#holidayReportBar a {
+  float:right;
+  margin-right: 1.1em;
+  margin-top: 0.2em;
+}
+
 #userHolidayEditorBar {
   font-family: 'Asul', serif;
   font-size: 18px
@@ -4104,6 +4132,10 @@ footer img {
 }
 
 #reportForBlocktypes {
+  display: none;
+}
+
+#reportForHolidays {
   display: none;
 }
 
