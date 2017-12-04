@@ -8681,6 +8681,34 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 554,
+          user_id: 1,
+          name: 'Kyle Gann (composer/columnist/musicologist) born in 1955',
+          color: '#0E041C',
+          picture: './img/musicians/kylegann.jpg',
+          day_of: new Date ('1955-11-21T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 555,
+          user_id: 1,
+          name: 'The world ended on this day in 1995 - as per Harold Camping\'s fourth predicted end of the world date.',
+          color: '#585244',
+          picture: './img/doomsday/camping.jpg',
+          day_of: new Date ('1995-03-31T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
