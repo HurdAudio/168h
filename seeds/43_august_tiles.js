@@ -102,6 +102,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FFFF01',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 8,
+          user_id: 1,
+          theme: 'primary colors',
+          type: 'week',
+          src_string: '../img/august_tiles/large-brolly_crop-c82a62fdbf221f1abe6a269945b62557.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '160%',
+          color_dark: '#01199E',
+          color_medium: '#00BD76',
+          color_light: '#F4C0C9',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
