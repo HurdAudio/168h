@@ -814,6 +814,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 46,
+          user_id: 1,
+          theme: 'brazil and pan-south american',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4027940168/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tigersmilkrecords.bandcamp.com/album/andina-huayno-carnaval-and-cumbia-the-sound-of-the-peruvian-andes-1968-1978-5',
+          a_string: 'ANDINA: Huayno, Carnaval and Cumbia - The Sound of the Peruvian Andes 1968​-​1978 by Tigers Milk Records',
+          rule: {
+            "monday": [ 12, 18, 24, 30 ],
+            "tuesday": [ 11, 17, 23, 29 ],
+            "wednesday": [ 9, 16, 22, 28 ],
+            "thursday": [ 9, 15, 21, 27 ],
+            "saturday": [ 13, 19, 25, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 47,
+          user_id: 1,
+          theme: 'brazil and pan-south american',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=518360247/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://gatitxdiscos.bandcamp.com/album/uno',
+          a_string: 'UNO by Varios',
+          rule: {
+            "monday": [ 13, 19, 25, 31 ],
+            "tuesday": [ 12, 18, 24, 30 ],
+            "wednesday": [ 11, 17, 23, 29 ],
+            "thursday": [ 9, 16, 22, 28 ],
+            "saturday": [ 9, 15, 21, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 48,
+          user_id: 1,
+          theme: 'brazil and pan-south american',
+          source: 'bandcamp',
+          src_string: 'http://bandcamp.com/EmbeddedPlayer/album=4248090408/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cuallimusic.com/album/birds-of-bliss',
+          a_string: 'Birds of Bliss by Cualli',
+          rule: {
+            "monday": [ 9, 15, 21, 27 ],
+            "tuesday": [ 13, 19, 25, 31 ],
+            "wednesday": [ 12, 18, 24, 30 ],
+            "thursday": [ 11, 17, 23, 29 ],
+            "saturday": [ 9, 16, 22, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
