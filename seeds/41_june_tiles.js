@@ -130,6 +130,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#E2E5E4',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 10,
+          user_id: 1,
+          theme: 'light',
+          type: 'saturday',
+          src_string: '../img/june_tiles/sunbeam-76825_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '160%',
+          color_dark: '#0C121E',
+          color_medium: '#303547',
+          color_light: '#EADFC9',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
