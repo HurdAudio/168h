@@ -158,6 +158,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FDD749',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 12,
+          user_id: 1,
+          theme: 'water',
+          type: 'sunday',
+          src_string: '../img/april_tiles/drop-of-water-166735_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '165%',
+          color_dark: '#261502',
+          color_medium: '#FFA890',
+          color_light: '#EAE5E7',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
