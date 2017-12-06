@@ -1804,6 +1804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 91,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/diario(2).jpg',
+          title: 'Diario',
+          artist: 'Bice Lazzari',
+          year: '?',
+          rule: {
+            "monday": [ 19, 24, 30, 4 ],
+            "tuesday": [ 18, 23, 29, 4 ],
+            "wednesday": [ 17, 21, 28, 3 ],
+            "thursday": [ 16, 21, 27, 2 ],
+            "friday": [ 15, 20, 26, 3 ],
+            "saturday": [ 21, 26, 2, 7 ],
+            "sunday": [ 20, 25, 1, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 92,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/number-15-1961.jpg',
+          title: 'Number 15',
+          artist: 'John McLaughlin',
+          year: '1961',
+          rule: {
+            "monday": [ 20, 25, 1, 6 ],
+            "tuesday": [ 19, 24, 30, 4 ],
+            "wednesday": [ 18, 23, 29, 4 ],
+            "thursday": [ 17, 21, 28, 3 ],
+            "friday": [ 16, 21, 27, 2 ],
+            "saturday": [ 15, 20, 26, 3 ],
+            "sunday": [ 21, 26, 2, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 93,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/untitled-2004.jpg',
+          title: 'Untitled',
+          artist: 'Tea Jorjadze',
+          year: '2004',
+          rule: {
+            "monday": [ 21, 26, 2, 7 ],
+            "tuesday": [ 20, 25, 1, 6 ],
+            "wednesday": [ 19, 24, 30, 4 ],
+            "thursday": [ 18, 23, 29, 4 ],
+            "friday": [ 17, 21, 28, 3 ],
+            "saturday": [ 16, 21, 27, 2 ],
+            "sunday": [ 15, 20, 26, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 94,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/doug-joe-and-genevieve-from-the-garden-of-delights-1998.jpg',
+          title: 'Doug, Joe and Genevieve (from The Garden of Delights)',
+          artist: 'Inigo Manglano-Ovalle',
+          year: '1998',
+          rule: {
+            "monday": [ 15, 20, 26, 3 ],
+            "tuesday": [ 21, 26, 2, 7 ],
+            "wednesday": [ 20, 25, 1, 6 ],
+            "thursday": [ 19, 24, 30, 4 ],
+            "friday": [ 18, 23, 29, 4 ],
+            "saturday": [ 17, 21, 28, 3 ],
+            "sunday": [ 16, 21, 27, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 95,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/eclipsed-time-1989-95.jpg',
+          title: 'Eclipsed Time',
+          artist: 'Maya Lin',
+          year: '1989 - 1995',
+          rule: {
+            "monday": [ 16, 21, 27, 2 ],
+            "tuesday": [ 15, 20, 26, 3 ],
+            "wednesday": [ 21, 26, 2, 7 ],
+            "thursday": [ 20, 25, 1, 6 ],
+            "friday": [ 19, 24, 30, 4 ],
+            "saturday": [ 18, 23, 29, 4 ],
+            "sunday": [ 17, 21, 28, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
