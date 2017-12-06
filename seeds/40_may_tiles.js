@@ -144,6 +144,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#CCDE0E',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 11,
+          user_id: 1,
+          theme: 'greenery',
+          type: 'sunday',
+          src_string: '../img/may_tiles/tea-plantation-2220475_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '153%',
+          color_dark: '#0E0613',
+          color_medium: '#6A9310',
+          color_light: '#FEFDF8',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
