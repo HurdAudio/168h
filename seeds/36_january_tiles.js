@@ -200,6 +200,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#DCDCDC',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 15,
+          user_id: 1,
+          theme: 'ice',
+          type: 'saturday',
+          src_string: '../img/january_tiles/18712675-Seamless-ice-texture-computer-graphic-big-collection-Stock-Photo.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '110%',
+          color_dark: '#1A6B86',
+          color_medium: '#76E6EC',
+          color_light: '#BFECF2',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
