@@ -922,6 +922,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 52,
+          user_id: 1,
+          theme: 'ethiopia and pan-african',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2785465227/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://blackjesusexperience.bandcamp.com/album/cradle-of-humanity',
+          a_string: 'Cradle Of Humanity by Mulatu Astatke and Black Jesus Experience',
+          rule: {
+            "monday": [ 8, 19, 30, 2 ],
+            "tuesday": [ 7, 18, 29, 1 ],
+            "wednesday": [ 6, 17, 28, 30 ],
+            "thursday": [ 5, 16, 27, 29 ],
+            "saturday": [ 4, 15, 26, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 53,
+          user_id: 1,
+          theme: 'ethiopia and pan-african',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2264294519/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://nyegenyegetapes.bandcamp.com/album/nihiloxica',
+          a_string: 'Nihiloxica by Nihiloxica',
+          rule: {
+            "monday": [ 4, 15, 26, 28 ],
+            "tuesday": [ 8, 19, 30, 2 ],
+            "wednesday": [ 7, 18, 29, 1 ],
+            "thursday": [ 6, 17, 28, 30 ],
+            "saturday": [ 5, 16, 27, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 54,
+          user_id: 1,
+          theme: 'ethiopia and pan-african',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3065842028/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://nyegenyegetapes.bandcamp.com/album/boutiq-electroniq',
+          a_string: 'Boutiq Electroniq by Disco Vumbi',
+          rule: {
+            "monday": [ 5, 16, 27, 29 ],
+            "tuesday": [ 4, 15, 26, 28 ],
+            "wednesday": [ 8, 19, 30, 2 ],
+            "thursday": [ 7, 18, 29, 1 ],
+            "saturday": [ 6, 17, 28, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
