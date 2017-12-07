@@ -2604,6 +2604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 131,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/caligula-depositing-the-ashes-of-his-mother-and-brother-in-the-tomb-of-his-ancestors.jpg',
+          title: 'Caligula Depositing the Ashes of his Mother and Brother in the Tomb of his Ancestors',
+          artist: 'Eustache Le Sueur',
+          year: '1647',
+          rule: {
+            "monday": [ 17, 28, 8, 19 ],
+            "tuesday": [ 16, 27, 7, 8 ],
+            "wednesday": [ 15, 26, 6, 17 ],
+            "thursday": [ 21, 1, 12, 23 ],
+            "friday": [ 20, 31, 11, 22 ],
+            "saturday": [ 19, 30, 10, 21 ],
+            "sunday": [ 18, 29, 9, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 132,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/marine-with-the-trojans-burning-their-boats-1642.jpg',
+          title: 'Marine with the Trojans Burning their Boats',
+          artist: 'Claude Lorrain',
+          year: '1642',
+          rule: {
+            "monday": [ 18, 29, 9, 20 ],
+            "tuesday": [ 17, 28, 8, 19 ],
+            "wednesday": [ 16, 27, 7, 8 ],
+            "thursday": [ 15, 26, 6, 17 ],
+            "friday": [ 21, 1, 12, 23 ],
+            "saturday": [ 20, 31, 11, 22 ],
+            "sunday": [ 19, 30, 10, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 133,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/bacchanal-before-a-statue-of-pan-1633.jpg',
+          title: 'Bacchanal before a Statue of Pan',
+          artist: 'Nicolas Poussin',
+          year: '1631 - 1633',
+          rule: {
+            "monday": [ 20, 31, 11, 22 ],
+            "tuesday": [ 19, 30, 10, 21 ],
+            "wednesday": [ 18, 29, 9, 20 ],
+            "thursday": [ 17, 28, 8, 9 ],
+            "friday": [ 16, 27, 7, 18 ],
+            "saturday": [ 22, 2, 13, 24 ],
+            "sunday": [ 21, 1, 12, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 134,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/portrait-of-a-lady-in-a-hat-1630.jpg',
+          title: 'Portrait of a Lady in a Hat',
+          artist: 'Claude Deruet',
+          year: '1630',
+          rule: {
+            "monday": [ 21, 1, 12, 23 ],
+            "tuesday": [ 20, 31, 11, 22 ],
+            "wednesday": [ 19, 30, 10, 21 ],
+            "thursday": [ 18, 29, 9, 20 ],
+            "friday": [ 17, 28, 8, 9 ],
+            "saturday": [ 16, 27, 7, 18 ],
+            "sunday": [ 22, 2, 13, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 135,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/the-emperor-charles-iv-and-the-dignitaries-of-paris-1460.jpg',
+          title: 'The Emperor Charles IV and the dignitaries of Paris',
+          artist: 'Jean Fouquet',
+          year: '1455 - 1460',
+          rule: {
+            "monday": [ 22, 2, 13, 24 ],
+            "tuesday": [ 21, 1, 12, 23 ],
+            "wednesday": [ 20, 31, 11, 22 ],
+            "thursday": [ 19, 30, 10, 21 ],
+            "friday": [ 18, 29, 9, 20 ],
+            "saturday": [ 17, 28, 8, 9 ],
+            "sunday": [ 16, 27, 7, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
