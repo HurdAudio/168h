@@ -1246,6 +1246,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 70,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=658114645/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://coldspring.bandcamp.com/album/the-black-post-society',
+          a_string: 'The Black Post Society by Prurient',
+          rule: {
+            "monday": [ 14, 22, 7, 6 ],
+            "tuesday": [ 15, 23, 8, 7 ],
+            "wednesday": [ 19, 27, 9, 8 ],
+            "thursday": [ 18, 26, 11, 12 ],
+            "saturday": [ 17, 25, 10, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 71,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=165420124/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bugscrawlingoutofpeople.bandcamp.com/album/computerus',
+          a_string: 'compUterus by compUterus',
+          rule: {
+            "monday": [ 17, 25, 10, 11 ],
+            "tuesday": [ 14, 22, 7, 6 ],
+            "wednesday": [ 15, 23, 8, 7 ],
+            "thursday": [ 19, 27, 9, 8 ],
+            "saturday": [ 18, 26, 11, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 72,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=383619065/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://looselips123.bandcamp.com/album/ll012-masaki-uchida-xenolinguistics',
+          a_string: 'LL012 - Masaki Uchida - Xenolinguistics by Masaki Uchida',
+          rule: {
+            "monday": [ 18, 26, 11, 12 ],
+            "tuesday": [ 17, 25, 10, 11 ],
+            "wednesday": [ 14, 22, 7, 6 ],
+            "thursday": [ 15, 23, 8, 7 ],
+            "saturday": [ 19, 27, 9, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
