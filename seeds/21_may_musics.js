@@ -1570,6 +1570,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 88,
+          user_id: 1,
+          theme: 'avant garde/new music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2628390025/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://hewaseatenbyowls.bandcamp.com/album/chorus-30-from-blues-for-the-hitchhiking-dead-2',
+          a_string: 'Chorus 30 From Blues For The Hitchhiking Dead by He Was Eaten By Owls',
+          rule: {
+            "monday": [ 13, 19, 26, 8 ],
+            "tuesday": [ 17, 23, 30, 12 ],
+            "wednesday": [ 16, 22, 29, 11 ],
+            "thursday": [ 15, 21, 28, 10 ],
+            "saturday": [ 14, 20, 27, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 89,
+          user_id: 1,
+          theme: 'avant garde/new music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=588602477/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://johnathanarce.bandcamp.com/album/sonic-landscapes-a-collection-of-improvisations',
+          a_string: 'Sonic Landscapes (A Collection of Improvisations) by Johnathan Arce',
+          rule: {
+            "monday": [ 14, 20, 27, 9 ],
+            "tuesday": [ 13, 19, 26, 8 ],
+            "wednesday": [ 17, 23, 30, 12 ],
+            "thursday": [ 16, 22, 29, 11 ],
+            "saturday": [ 15, 21, 28, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 90,
+          user_id: 1,
+          theme: 'avant garde/new music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3288210412/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://liammulligan.bandcamp.com/album/couldnt-sleep',
+          a_string: 'couldn&#39;t sleep. by Liam Mulligan',
+          rule: {
+            "monday": [ 15, 21, 28, 10 ],
+            "tuesday": [ 14, 20, 27, 9 ],
+            "wednesday": [ 13, 19, 26, 8 ],
+            "thursday": [ 17, 23, 30, 12 ],
+            "saturday": [ 16, 22, 29, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
