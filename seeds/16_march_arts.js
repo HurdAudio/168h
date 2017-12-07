@@ -3404,6 +3404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 171,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/sleeping-woman-1933.jpg',
+          title: 'Sleeping woman',
+          artist: 'Amrita Sher-Gil',
+          year: '1933',
+          rule: {
+            "monday": [ 18, 28, 6, 15 ],
+            "tuesday": [ 24, 2, 11, 20 ],
+            "wednesday": [ 23, 2, 12, 20 ],
+            "thursday": [ 22, 1, 9, 19 ],
+            "friday": [ 21, 31, 8, 18 ],
+            "saturday": [ 20, 30, 7, 17 ],
+            "sunday": [ 19, 29, 6, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 172,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/house-of-cards-1987.jpg',
+          title: 'House of Cards',
+          artist: 'Piroska Szanto',
+          year: '1987',
+          rule: {
+            "monday": [ 19, 29, 6, 16 ],
+            "tuesday": [ 18, 28, 6, 15 ],
+            "wednesday": [ 24, 2, 11, 20 ],
+            "thursday": [ 23, 2, 12, 20 ],
+            "friday": [ 22, 1, 9, 19 ],
+            "saturday": [ 21, 31, 8, 18 ],
+            "sunday": [ 20, 30, 7, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 173,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/two-women-on-the-shore-1977.jpg',
+          title: 'Two women on the shore',
+          artist: 'Mary Fedden',
+          year: '1977',
+          rule: {
+            "monday": [ 20, 30, 7, 17 ],
+            "tuesday": [ 19, 29, 6, 16 ],
+            "wednesday": [ 18, 28, 6, 15 ],
+            "thursday": [ 24, 2, 11, 20 ],
+            "friday": [ 23, 2, 12, 20 ],
+            "saturday": [ 22, 1, 9, 19 ],
+            "sunday": [ 21, 31, 8, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 174,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/finale-1979.jpg',
+          title: 'Finale',
+          artist: 'Edna Andrade',
+          year: '1979',
+          rule: {
+            "monday": [ 21, 31, 8, 18 ],
+            "tuesday": [ 20, 30, 7, 17 ],
+            "wednesday": [ 19, 29, 6, 16 ],
+            "thursday": [ 18, 28, 6, 15 ],
+            "friday": [ 24, 2, 11, 20 ],
+            "saturday": [ 23, 2, 12, 20 ],
+            "sunday": [ 22, 1, 9, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 175,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/bacchus-69-purple-and-green-1982.jpg',
+          title: 'Bacchus #69 (purple and green)',
+          artist: 'Elaine de Kooning',
+          year: '1982',
+          rule: {
+            "monday": [ 23, 2, 10, 20 ],
+            "tuesday": [ 22, 1, 9, 19 ],
+            "wednesday": [ 21, 31, 8, 18 ],
+            "thursday": [ 20, 30, 7, 17 ],
+            "friday": [ 19, 29, 7, 16 ],
+            "saturday": [ 25, 3, 12, 21 ],
+            "sunday": [ 24, 3, 13, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
