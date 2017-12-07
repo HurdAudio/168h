@@ -1894,6 +1894,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 106,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=241539319/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://woodworkcollective.bandcamp.com/album/iyapo',
+          a_string: 'IYAPO by WOOD // WORK',
+          rule: {
+            "monday": [ 17, 21, 23, 27 ],
+            "tuesday": [ 19, 23, 25, 29 ],
+            "wednesday": [ 21, 25, 27, 29 ],
+            "thursday": [ 4, 27, 29, 6 ],
+            "saturday": [ 16, 21, 23, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 107,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3597881602/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://matsulimusic.bandcamp.com/album/african-songbird',
+          a_string: 'African Songbird by Sathima Bea Benjamin',
+          rule: {
+            "monday": [ 16, 21, 23, 6 ],
+            "tuesday": [ 17, 21, 23, 27 ],
+            "wednesday": [ 19, 23, 25, 29 ],
+            "thursday": [ 21, 25, 27, 29 ],
+            "saturday": [ 4, 27, 29, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 108,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=533968175/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://matsulimusic.bandcamp.com/album/witchdoctors-son',
+          a_string: 'Witchdoctor&#39;s Son by Okay Temiz / Johnny Dyani',
+          rule: {
+            "monday": [ 4, 27, 29, 6 ],
+            "tuesday": [ 16, 21, 23, 6 ],
+            "wednesday": [ 17, 21, 23, 27 ],
+            "thursday": [ 19, 23, 25, 29 ],
+            "saturday": [ 21, 25, 27, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
