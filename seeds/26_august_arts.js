@@ -2404,6 +2404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 121,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/harvest-1933.jpg',
+          title: 'Harvest',
+          artist: 'Karl Knaths',
+          year: '1933',
+          rule: {
+            "monday": [ 21, 25, 2, 18 ],
+            "tuesday": [ 20, 23, 1, 17 ],
+            "wednesday": [ 19, 23, 31, 16 ],
+            "thursday": [ 18, 22, 30, 15 ],
+            "friday": [ 17, 21, 29, 14 ],
+            "saturday": [ 16, 19, 28, 13 ],
+            "sunday": [ 15, 18, 27, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 122,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/northern-lights-1917.jpg',
+          title: 'Northern Lights',
+          artist: 'Tom Thomson',
+          year: '1917',
+          rule: {
+            "monday": [ 15, 18, 27, 12 ],
+            "tuesday": [ 21, 25, 2, 18 ],
+            "wednesday": [ 20, 23, 1, 17 ],
+            "thursday": [ 19, 23, 31, 16 ],
+            "friday": [ 18, 22, 30, 15 ],
+            "saturday": [ 17, 21, 29, 14 ],
+            "sunday": [ 16, 19, 28, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 123,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/synchromy-1916.jpg',
+          title: 'Synchromy',
+          artist: 'Morgan Russell',
+          year: '1916',
+          rule: {
+            "monday": [ 16, 19, 28, 13 ],
+            "tuesday": [ 15, 18, 27, 12 ],
+            "wednesday": [ 21, 25, 2, 18 ],
+            "thursday": [ 20, 23, 1, 17 ],
+            "friday": [ 19, 23, 31, 16 ],
+            "saturday": [ 18, 22, 30, 15 ],
+            "sunday": [ 17, 21, 29, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 124,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/morning-after-snowstorm-1913.jpg',
+          title: 'Morning in the Village after Snowstorm',
+          artist: 'Kazimir Malevich',
+          year: '1913',
+          rule: {
+            "monday": [ 17, 21, 29, 14 ],
+            "tuesday": [ 16, 19, 28, 13 ],
+            "wednesday": [ 15, 18, 27, 12 ],
+            "thursday": [ 21, 25, 2, 18 ],
+            "friday": [ 20, 23, 1, 17 ],
+            "saturday": [ 19, 23, 31, 16 ],
+            "sunday": [ 18, 22, 30, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 125,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/red-muslin-1931.jpg',
+          title: 'Red Muslin',
+          artist: 'Ion Theodorescu-Sion',
+          year: '1931',
+          rule: {
+            "monday": [ 18, 22, 30, 15 ],
+            "tuesday": [ 17, 21, 29, 14 ],
+            "wednesday": [ 16, 19, 28, 13 ],
+            "thursday": [ 15, 18, 27, 12 ],
+            "friday": [ 21, 25, 2, 18 ],
+            "saturday": [ 20, 23, 1, 17 ],
+            "sunday": [ 19, 23, 31, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
