@@ -3189,8 +3189,8 @@ exports.seed = function(knex, Promise) {
           id: 160,
           user_id: 1,
           theme: 'baseball',
-          img_path: './img/april/.jpg',
-          title: 'Buster Posey4d7bbe1c48d5da8c763b4a4fd1ee4819--giants-sf-giants-baseball',
+          img_path: './img/april/4d7bbe1c48d5da8c763b4a4fd1ee4819--giants-sf-giants-baseball.jpg',
+          title: 'Buster Posey',
           artist: '?',
           year: 'xxi cent.',
           rule: {
@@ -3201,6 +3201,106 @@ exports.seed = function(knex, Promise) {
             "friday": [ 22, 28, 3, 10 ],
             "saturday": [ 6, 26, 2, 9 ],
             "sunday": [ 21, 26, 2, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 161,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/strike-1949.jpg',
+          title: 'Strike',
+          artist: 'Jacob Lawrence',
+          year: '1949',
+          rule: {
+            "monday": [ 22, 27, 3, 9 ],
+            "tuesday": [ 21, 25, 10, 8 ],
+            "wednesday": [ 20, 25, 30, 6 ],
+            "thursday": [ 19, 24, 30, 6 ],
+            "friday": [ 18, 23, 29, 5 ],
+            "saturday": [ 23, 29, 4, 11 ],
+            "sunday": [ 7, 27, 3, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 162,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/Kadir-Nelson-mighty-josh_1024x1024.jpeg',
+          title: 'Mighty Josh',
+          artist: 'Kadir Nelson',
+          year: 'xx cent.',
+          rule: {
+            "monday": [ 7, 27, 3, 10 ],
+            "tuesday": [ 22, 27, 3, 9 ],
+            "wednesday": [ 21, 25, 10, 8 ],
+            "thursday": [ 20, 25, 30, 6 ],
+            "friday": [ 19, 24, 30, 6 ],
+            "saturday": [ 18, 23, 29, 5 ],
+            "sunday": [ 23, 29, 4, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 163,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/WeOliveBaseball.jpg',
+          title: 'We Olive Baseball',
+          artist: 'Michael Godard',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 23, 29, 4, 11 ],
+            "tuesday": [ 7, 27, 3, 10 ],
+            "wednesday": [ 22, 27, 3, 9 ],
+            "thursday": [ 21, 25, 10, 8 ],
+            "friday": [ 20, 25, 30, 6 ],
+            "saturday": [ 19, 24, 30, 6 ],
+            "sunday": [ 18, 23, 29, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 164,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/cb607159dab941f5f2b3f0ee48751fe8--boston-sports-boston-baseball.jpg',
+          title: '?',
+          artist: '?',
+          year: 'xx cent.',
+          rule: {
+            "monday": [ 18, 23, 29, 5 ],
+            "tuesday": [ 23, 29, 4, 11 ],
+            "wednesday": [ 7, 27, 3, 10 ],
+            "thursday": [ 22, 27, 3, 9 ],
+            "friday": [ 21, 25, 10, 8 ],
+            "saturday": [ 20, 25, 30, 6 ],
+            "sunday": [ 19, 24, 30, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 165,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/baseball-paintings.jpg',
+          title: 'Abstract NY Baseball Outfielder',
+          artist: 'Tommervik',
+          year: '2010',
+          rule: {
+            "monday": [ 19, 24, 30, 6 ],
+            "tuesday": [ 18, 23, 29, 5 ],
+            "wednesday": [ 23, 29, 4, 11 ],
+            "thursday": [ 7, 27, 3, 10 ],
+            "friday": [ 22, 27, 3, 9 ],
+            "saturday": [ 21, 25, 10, 8 ],
+            "sunday": [ 20, 25, 30, 6 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
