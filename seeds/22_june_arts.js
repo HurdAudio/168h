@@ -2804,6 +2804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 141,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/versumpfung-einer-venus-5.jpg',
+          title: 'Versumpfung Einer Venus 5',
+          artist: 'Otto Muehl',
+          year: '1963',
+          rule: {
+            "monday": [ 20, 30, 10, 18 ],
+            "tuesday": [ 19, 29, 9, 17 ],
+            "wednesday": [ 18, 28, 8, 16 ],
+            "thursday": [ 17, 27, 7, 15 ],
+            "friday": [ 16, 26, 6, 14 ],
+            "saturday": [ 15, 25, 5, 13 ],
+            "sunday": [ 21, 1, 11, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 142,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/11-1.jpg',
+          title: 'Fashion at the Graveyard',
+          artist: 'Arsen Savadov',
+          year: '1997',
+          rule: {
+            "monday": [ 21, 1, 11, 18 ],
+            "tuesday": [ 20, 30, 10, 18 ],
+            "wednesday": [ 19, 29, 9, 17 ],
+            "thursday": [ 18, 28, 8, 16 ],
+            "friday": [ 17, 27, 7, 15 ],
+            "saturday": [ 16, 26, 6, 14 ],
+            "sunday": [ 15, 25, 5, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 143,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/3-2.jpg',
+          title: 'Untitled',
+          artist: 'Arsen Savadov',
+          year: '1997',
+          rule: {
+            "monday": [ 15, 25, 5, 13 ],
+            "tuesday": [ 21, 1, 11, 18 ],
+            "wednesday": [ 20, 30, 10, 18 ],
+            "thursday": [ 19, 29, 9, 17 ],
+            "friday": [ 18, 28, 8, 16 ],
+            "saturday": [ 17, 27, 7, 15 ],
+            "sunday": [ 16, 26, 6, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 144,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/3a-1.jpg',
+          title: 'Extension #1',
+          artist: 'Rodrigo Franzao',
+          year: '2016',
+          rule: {
+            "monday": [ 16, 26, 6, 14 ],
+            "tuesday": [ 15, 25, 5, 13 ],
+            "wednesday": [ 21, 1, 11, 18 ],
+            "thursday": [ 20, 30, 10, 18 ],
+            "friday": [ 19, 29, 9, 17 ],
+            "saturday": [ 18, 28, 8, 16 ],
+            "sunday": [ 17, 27, 7, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 145,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/robar-el-quedar-libre-2000.jpg',
+          title: 'Robar el quedar libre',
+          artist: 'Francis Naranjo',
+          year: '2000',
+          rule: {
+            "monday": [ 17, 27, 7, 15 ],
+            "tuesday": [ 16, 26, 6, 14 ],
+            "wednesday": [ 15, 25, 5, 13 ],
+            "thursday": [ 21, 1, 11, 18 ],
+            "friday": [ 20, 30, 10, 18 ],
+            "saturday": [ 19, 29, 9, 17 ],
+            "sunday": [ 18, 28, 8, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
