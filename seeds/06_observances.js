@@ -8709,6 +8709,34 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 556,
+          user_id: 1,
+          name: 'Carl Ruggles (composer) born in 1876',
+          color: '#292621',
+          picture: './img/musician/carlruggles.jpg',
+          day_of: new Date ('1876-03-11T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 557,
+          user_id: 1,
+          name: 'Proving that the third time is the charm, the world ended on this day in 1994 as per Harold Camping\'s third predicted end date.',
+          color: '#585244',
+          picture: './img/doomsday/camping.jpg',
+          day_of: new Date ('1994-10-02T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
