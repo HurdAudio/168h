@@ -3788,6 +3788,25 @@ footer img {
   border: 2px solid #0000cc;
 }
 
+#artsCurratorZone {
+  background: #3F2E15;
+  background-color: -webkit-linear-gradient(135deg, #3F2E15, #C2AF0A);
+  background: -o-linear-gradient(135deg, #3F2E15, #C2AF0A);
+  background: -moz-linear-gradient(135deg, #3F2E15, #C2AF0A);
+  background: linear-gradient(135deg, #3F2E15, #C2AF0A);
+  border-radius: 5px;
+  padding-bottom: 1.1em;
+  opacity: 1;
+}
+
+#artsCurratorZone img {
+  height: 7em;
+  width: 7em;
+  margin-left: 1.6em;
+  margin-top: 1.2em;
+  border: 2px solid #0000cc;
+}
+
 #occasionManager {
   float: right;
   margin: 2em;
@@ -3813,6 +3832,12 @@ footer img {
 }
 
 #observancesManager {
+  float: right;
+  margin: 2em;
+  margin-right: 4.8em;
+}
+
+#artsCuratorManager {
   float: right;
   margin: 2em;
   margin-right: 4.8em;
