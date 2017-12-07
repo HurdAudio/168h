@@ -2002,6 +2002,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 112,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3526851245/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://edmundwelles.bandcamp.com/album/tooth-claw',
+          a_string: 'Tooth &amp; Claw by Edmund Welles: the bass clarinet quartet',
+          rule: {
+            "monday": [ 31, 25, 27, 1 ],
+            "tuesday": [ 22, 29, 30, 31 ],
+            "wednesday": [ 23, 30, 31, 1 ],
+            "thursday": [ 21, 25, 27, 31 ],
+            "saturday": [ 23, 30, 32, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 113,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1090957847/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://nicomuhlyarchive.bandcamp.com/album/object-songs',
+          a_string: 'Object Songs by Nico Muhly &amp; Maira Kalman',
+          rule: {
+            "monday": [ 23, 30, 32, 31 ],
+            "tuesday": [ 31, 25, 27, 1 ],
+            "wednesday": [ 22, 29, 30, 31 ],
+            "thursday": [ 23, 30, 31, 1 ],
+            "saturday": [ 21, 25, 27, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 114,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3262368151/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://coreydargel.bandcamp.com/album/ok-its-not-ok',
+          a_string: 'OK It&#39;s Not OK by Corey Dargel',
+          rule: {
+            "monday": [ 21, 25, 27, 31 ],
+            "tuesday": [ 23, 30, 32, 31 ],
+            "wednesday": [ 31, 25, 27, 1 ],
+            "thursday": [ 22, 29, 30, 31 ],
+            "saturday": [ 23, 30, 31, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
