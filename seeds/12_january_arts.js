@@ -3804,6 +3804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 191,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/red-april-1970.jpg',
+          title: 'Red April',
+          artist: 'Sam Gilliam',
+          year: '1970',
+          rule: {
+            "monday": [ 30, 1, 24, 13 ],
+            "tuesday": [ 1, 2, 25, 28 ],
+            "wednesday": [ 4, 5, 27, 31 ],
+            "thursday": [ 7, 9, 10, 12 ],
+            "friday": [ 9, 11, 15, 18 ],
+            "saturday": [ 11, 13, 14, 17 ],
+            "sunday": [ 27, 28, 8, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 192,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/oe-280-komposition-in-rot-mit-wei-und-blau-1959.jpg',
+          title: 'OE 280 (Komposition in Rot mit Weiß und Blau)',
+          artist: 'Rupprecht Geiger',
+          year: '1959',
+          rule: {
+            "monday": [ 27, 28, 8, 31 ],
+            "tuesday": [ 30, 1, 24, 13 ],
+            "wednesday": [ 1, 2, 25, 28 ],
+            "thursday": [ 4, 5, 27, 31 ],
+            "friday": [ 7, 9, 10, 12 ],
+            "saturday": [ 9, 11, 15, 18 ],
+            "sunday": [ 11, 13, 14, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 193,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/diminishing-circles-2001.jpg',
+          title: 'Diminishing Circles',
+          artist: 'Jennifer Bartlett',
+          year: '2001',
+          rule: {
+            "monday": [ 11, 13, 14, 17 ],
+            "tuesday": [ 27, 28, 8, 31 ],
+            "wednesday": [ 30, 1, 24, 13 ],
+            "thursday": [ 1, 2, 25, 28 ],
+            "friday": [ 4, 5, 27, 31 ],
+            "saturday": [ 7, 9, 10, 12 ],
+            "sunday": [ 9, 11, 15, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 194,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/summer-1960.jpg',
+          title: 'Summer',
+          artist: 'Thomas Downing',
+          year: '1960',
+          rule: {
+            "monday": [ 9, 11, 15, 18 ],
+            "tuesday": [ 11, 13, 14, 17 ],
+            "wednesday": [ 27, 28, 8, 31 ],
+            "thursday": [ 30, 1, 24, 13 ],
+            "friday": [ 1, 2, 25, 28 ],
+            "saturday": [ 4, 5, 27, 31 ],
+            "sunday": [ 7, 9, 10, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 195,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/chant-2-1967.jpg',
+          title: 'Chant 2',
+          artist: 'Bridget Riley',
+          year: '1967',
+          rule: {
+            "monday": [ 7, 9, 10, 12 ],
+            "tuesday": [ 9, 11, 15, 18 ],
+            "wednesday": [ 11, 13, 14, 17 ],
+            "thursday": [ 27, 28, 8, 31 ],
+            "friday": [ 30, 1, 24, 13 ],
+            "saturday": [ 1, 2, 25, 28 ],
+            "sunday": [ 4, 5, 27, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
