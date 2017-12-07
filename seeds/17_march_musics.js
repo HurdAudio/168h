@@ -1786,6 +1786,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 100,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1784041014/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://lydialunch.bandcamp.com/album/brutal-measures',
+          a_string: 'Brutal Measures by Lydia Lunch and Weasel Walter',
+          rule: {
+            "monday": [ 17, 23, 29, 7 ],
+            "tuesday": [ 16, 22, 28, 5 ],
+            "wednesday": [ 15, 21, 37, 4 ],
+            "thursday": [ 19, 25, 31, 8 ],
+            "saturday": [ 18, 24, 30, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 101,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4250172799/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://emaband.bandcamp.com/album/exile-in-the-outer-ring',
+          a_string: 'Exile In The Outer Ring by EMA',
+          rule: {
+            "monday": [ 18, 24, 30, 7 ],
+            "tuesday": [ 17, 23, 29, 7 ],
+            "wednesday": [ 16, 22, 28, 5 ],
+            "thursday": [ 15, 21, 37, 4 ],
+            "saturday": [ 19, 25, 31, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 102,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1644131755/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://theseshen.bandcamp.com/album/the-seshen',
+          a_string: 'The Seshen by The Seshen',
+          rule: {
+            "monday": [ 19, 25, 31, 8 ],
+            "tuesday": [ 18, 24, 30, 7 ],
+            "wednesday": [ 17, 23, 29, 7 ],
+            "thursday": [ 16, 22, 28, 5 ],
+            "saturday": [ 15, 21, 37, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
