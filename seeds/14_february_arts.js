@@ -3604,6 +3604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 181,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Gus_Nall_Untitled_1950.jpg',
+          title: 'Untitled',
+          artist: 'Gus Nall',
+          year: '1950',
+          rule: {
+            "monday": [ 2, 10, 18, 26 ],
+            "tuesday": [ 4, 14, 20, 26 ],
+            "wednesday": [ 6, 14, 22, 3 ],
+            "thursday": [ 8, 16, 12, 2 ],
+            "friday": [ 25, 4, 12, 20 ],
+            "saturday": [ 27, 6, 14, 22 ],
+            "sunday": [ 3, 8, 14, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 182,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/AR-140619809.jpg',
+          title: '?',
+          artist: 'Harold Newton',
+          year: '2004',
+          rule: {
+            "monday": [ 4, 9, 15, 25 ],
+            "tuesday": [ 3, 11, 19, 27 ],
+            "wednesday": [ 5, 15, 21, 27 ],
+            "thursday": [ 7, 15, 23, 4 ],
+            "friday": [ 9, 17, 13, 3 ],
+            "saturday": [ 26, 5, 13, 21 ],
+            "sunday": [ 28, 7, 15, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 183,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/larger.jpg',
+          title: 'Sisters III (L: Nefertiti\'s daughter, Maketaten; R: Devonia\'s Daughter, Kimberley), from the "Miscegenated Family Album',
+          artist: 'Lorraine O\'Grady',
+          year: '1980',
+          rule: {
+            "monday": [ 28, 7, 15, 23 ],
+            "tuesday": [ 4, 9, 15, 25 ],
+            "wednesday": [ 3, 11, 19, 27 ],
+            "thursday": [ 5, 15, 21, 27 ],
+            "friday": [ 7, 15, 23, 4 ],
+            "saturday": [ 9, 17, 13, 3 ],
+            "sunday": [ 26, 5, 13, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 184,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/As-the-Sirens-Sweetly-Sang-300x230.jpg',
+          title: 'As the Sirens Sweetly Sang',
+          artist: 'Turtel Onli',
+          year: '2010',
+          rule: {
+            "monday": [ 26, 5, 13, 21 ],
+            "tuesday": [ 28, 7, 15, 23 ],
+            "wednesday": [ 4, 9, 15, 25 ],
+            "thursday": [ 3, 11, 19, 27 ],
+            "friday": [ 5, 15, 21, 27 ],
+            "saturday": [ 7, 15, 23, 4 ],
+            "sunday": [ 9, 17, 13, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 185,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/JackieOrmesTorchyinHearbeats.jpg',
+          title: 'Image of Torcy Brown comic strip',
+          artist: 'Jackie Ormes',
+          year: '1942',
+          rule: {
+            "monday": [ 9, 17, 13, 3 ],
+            "tuesday": [ 26, 5, 13, 21 ],
+            "wednesday": [ 28, 7, 15, 23 ],
+            "thursday": [ 4, 9, 15, 25 ],
+            "friday": [ 3, 11, 19, 27 ],
+            "saturday": [ 5, 15, 21, 27 ],
+            "sunday": [ 7, 15, 23, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
