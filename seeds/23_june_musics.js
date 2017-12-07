@@ -1462,6 +1462,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 82,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1445226504/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://firstterracerecords.bandcamp.com/album/fts001',
+          a_string: 'FTS001 by K. Leimer / Like A Villain',
+          rule: {
+            "monday": [ 12, 16, 22, 3 ],
+            "tuesday": [ 11, 15, 21, 1 ],
+            "wednesday": [ 10, 14, 19, 1 ],
+            "thursday": [ 10, 13, 19, 30 ],
+            "saturday": [ 8, 16, 18, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 83,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1069671556/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://soundinsilencerecords.bandcamp.com/album/yours-are-stories-of-sadness',
+          a_string: 'Yours Are Stories Of Sadness by bvdub',
+          rule: {
+            "monday": [ 8, 16, 18, 29 ],
+            "tuesday": [ 12, 16, 22, 3 ],
+            "wednesday": [ 11, 15, 21, 1 ],
+            "thursday": [ 10, 14, 19, 1 ],
+            "saturday": [ 10, 13, 19, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 84,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'http://bandcamp.com/EmbeddedPlayer/album=427507248/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://store.broken20.com/album/li-series-05-jack-on-piano',
+          a_string: 'li_series 05: Jack On Piano by TVO',
+          rule: {
+            "monday": [ 11, 14, 20, 1 ],
+            "tuesday": [ 9, 17, 19, 30 ],
+            "wednesday": [ 13, 17, 23, 4 ],
+            "thursday": [ 12, 16, 22, 2 ],
+            "saturday": [ 11, 15, 20, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
