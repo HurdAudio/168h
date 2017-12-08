@@ -116,6 +116,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#F4C0C9',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 9,
+          user_id: 1,
+          theme: 'primary colors',
+          type: 'friday',
+          src_string: '../img/august_tiles/sun-flower-2713120_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '155%',
+          color_dark: '#2A0704',
+          color_medium: '#AA9F3A',
+          color_light: '#FEFD63',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
