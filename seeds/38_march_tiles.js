@@ -186,6 +186,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#E3B76E',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 14,
+          user_id: 1,
+          theme: 'glass',
+          type: 'friday',
+          src_string: '../img/march_tiles/the-wait-2061662_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '200%',
+          color_dark: '#120608',
+          color_medium: '#054EFF',
+          color_light: '#F7FFFF',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
