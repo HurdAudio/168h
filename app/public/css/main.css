@@ -4864,8 +4864,8 @@ footer img {
   display: none;
 }
 
-/*.day {
-  background-image: url(../img/january_tiles/18712675-Seamless-ice-texture-computer-graphic-big-collection-Stock-Photo.jpg);
+.day {
+  background-image: url(../img/december_tiles/snow-651409_1920.jpg);
   background-repeat: no-repeat;
-  background-size: 110%;
-}*/
+  background-size: 156%;
+}
