@@ -102,7 +102,7 @@
     <div id="observancesZone">
       <div>
         <img src="../img/observation-tower-944589_1920.jpg">
-        <a href="" id="observancesManager" class="btn">observances</a>
+        <a href="" id="observancesManager" class="btn" ng-click="$ctrl.observanceManager()">observance</a>
       </div>
 
     </div>
@@ -372,7 +372,10 @@
 
       </form>
 
+
+
     </div>
+
     <div id="goalsManagementDiv">
       <div id="goalsManagerBar">
         <a href="" class="btn" id="goalsManagerDone" ng-click="$ctrl.closeGoalsManager()">done</a>
@@ -403,6 +406,220 @@
       </form>
 
     </div>
+
+    <div id="observancesManagementDiv">
+      <div id="observancesManagerBar">
+        <a href="" class="btn" id="observancesManagerDone" ng-click="$ctrl.closeObservancesManager()">done</a>
+        <h1>Observances</h1>
+
+      </div>
+      <form id="observancesManagerForm" class="pure-form pure-form-stacked">
+        <fieldset>
+          <div id="observancesManagement">
+            <a href="" class="btn" id="addObservance" ng-click="$ctrl.addNewObservance()">new</a>
+            <a href="" class="btn" id="observancesReporter" ng-click="$ctrl.observancesReport()">report</a>
+            <br><br><h2>January:</h2><br>
+            <div id="januaryObservanceToggleDiv">
+              <a href="" class="btn" id="januaryObservanceToggleButton" ng-click="$ctrl.toggleObservancMonth('January')">view</a>
+            </div><br>
+            <div id="januaryObservanceDiv">
+              <main ng-repeat="observe in $ctrl.janObservances | orderBy : $ctrl.sortBy">
+                <br><br><br><img src="{{observe.picture}}">
+                <p>{{observe.name}}:</p>
+                <p>{{observe.clean_date}}</p>
+                <br>
+                <div class="goalEdit">
+                  <a href="" class="btn" ng-click="$ctrl.editObservance(observe.id)">edit</a>
+                  <a href="" class="btn" ng-click="$ctrl.deleteObservance(observe.id)">delete</a>
+                </div><br><br><br>
+              </main>
+            </div><br>
+            <br><br><h2>February:</h2><br>
+            <div id="februaryObservanceToggleDiv">
+              <a href="" class="btn" id="februaryObservanceToggleButton" ng-click="$ctrl.toggleObservancMonth('February')">view</a>
+            </div><br>
+            <div id="februaryObservanceDiv">
+              <main ng-repeat="observe in $ctrl.febObservances | orderBy : $ctrl.sortBy">
+                <br><br><br><img src="{{observe.picture}}">
+                <p>{{observe.name}}:</p>
+                <p>{{observe.clean_date}}</p>
+                <br>
+                <div class="goalEdit">
+                  <a href="" class="btn" ng-click="$ctrl.editObservance(observe.id)">edit</a>
+                  <a href="" class="btn" ng-click="$ctrl.deleteObservance(observe.id)">delete</a>
+                </div><br><br><br>
+              </main>
+            </div><br>
+            <br><br><h2>March:</h2><br>
+            <div id="marchObservanceToggleDiv">
+              <a href="" class="btn" id="marchObservanceToggleButton" ng-click="$ctrl.toggleObservancMonth('March')">view</a>
+            </div><br>
+            <div id="marchObservanceDiv">
+              <main ng-repeat="observe in $ctrl.marObservances | orderBy : $ctrl.sortBy">
+                <br><br><br><img src="{{observe.picture}}">
+                <p>{{observe.name}}:</p>
+                <p>{{observe.clean_date}}</p>
+                <br>
+                <div class="goalEdit">
+                  <a href="" class="btn" ng-click="$ctrl.editObservance(observe.id)">edit</a>
+                  <a href="" class="btn" ng-click="$ctrl.deleteObservance(observe.id)">delete</a>
+                </div><br><br><br>
+              </main>
+            </div><br>
+            <br><br><h2>April:</h2><br>
+            <div id="aprilObservanceToggleDiv">
+              <a href="" class="btn" id="aprilObservanceToggleButton" ng-click="$ctrl.toggleObservancMonth('April')">view</a>
+            </div><br>
+            <div id="aprilObservanceDiv">
+              <main ng-repeat="observe in $ctrl.aprObservances | orderBy : $ctrl.sortBy">
+                <br><br><br><img src="{{observe.picture}}">
+                <p>{{observe.name}}:</p>
+                <p>{{observe.clean_date}}</p>
+                <br>
+                <div class="goalEdit">
+                  <a href="" class="btn" ng-click="$ctrl.editObservance(observe.id)">edit</a>
+                  <a href="" class="btn" ng-click="$ctrl.deleteObservance(observe.id)">delete</a>
+                </div><br><br><br>
+              </main>
+            </div><br>
+            <br><br><h2>May:</h2><br>
+            <div id="mayObservanceToggleDiv">
+              <a href="" class="btn" id="mayObservanceToggleButton" ng-click="$ctrl.toggleObservancMonth('May')">view</a>
+            </div><br>
+            <div id="mayObservanceDiv">
+              <main ng-repeat="observe in $ctrl.mayObservances | orderBy : $ctrl.sortBy">
+                <br><br><br><img src="{{observe.picture}}">
+                <p>{{observe.name}}:</p>
+                <p>{{observe.clean_date}}</p>
+                <br>
+                <div class="goalEdit">
+                  <a href="" class="btn" ng-click="$ctrl.editObservance(observe.id)">edit</a>
+                  <a href="" class="btn" ng-click="$ctrl.deleteObservance(observe.id)">delete</a>
+                </div><br><br><br>
+              </main>
+            </div><br>
+            <br><br><h2>June:</h2><br>
+            <div id="juneObservanceToggleDiv">
+              <a href="" class="btn" id="juneObservanceToggleButton" ng-click="$ctrl.toggleObservancMonth('June')">view</a>
+            </div><br>
+            <div id="juneObservanceDiv">
+              <main ng-repeat="observe in $ctrl.junObservances | orderBy : $ctrl.sortBy">
+                <br><br><br><img src="{{observe.picture}}">
+                <p>{{observe.name}}:</p>
+                <p>{{observe.clean_date}}</p>
+                <br>
+                <div class="goalEdit">
+                  <a href="" class="btn" ng-click="$ctrl.editObservance(observe.id)">edit</a>
+                  <a href="" class="btn" ng-click="$ctrl.deleteObservance(observe.id)">delete</a>
+                </div><br><br><br>
+              </main>
+            </div><br>
+            <br><br><h2>July:</h2><br>
+            <div id="julyObservanceToggleDiv">
+              <a href="" class="btn" id="julyObservanceToggleButton" ng-click="$ctrl.toggleObservancMonth('July')">view</a>
+            </div><br>
+            <div id="julyObservanceDiv">
+              <main ng-repeat="observe in $ctrl.julObservances | orderBy : $ctrl.sortBy">
+                <br><br><br><img src="{{observe.picture}}">
+                <p>{{observe.name}}:</p>
+                <p>{{observe.clean_date}}</p>
+                <br>
+                <div class="goalEdit">
+                  <a href="" class="btn" ng-click="$ctrl.editObservance(observe.id)">edit</a>
+                  <a href="" class="btn" ng-click="$ctrl.deleteObservance(observe.id)">delete</a>
+                </div><br><br><br>
+              </main>
+            </div><br>
+            <br><br><h2>August:</h2><br>
+            <div id="augustObservanceToggleDiv">
+              <a href="" class="btn" id="augustObservanceToggleButton" ng-click="$ctrl.toggleObservancMonth('August')">view</a>
+            </div><br>
+            <div id="augustObservanceDiv">
+              <main ng-repeat="observe in $ctrl.augObservances | orderBy : $ctrl.sortBy">
+                <br><br><br><img src="{{observe.picture}}">
+                <p>{{observe.name}}:</p>
+                <p>{{observe.clean_date}}</p>
+                <br>
+                <div class="goalEdit">
+                  <a href="" class="btn" ng-click="$ctrl.editObservance(observe.id)">edit</a>
+                  <a href="" class="btn" ng-click="$ctrl.deleteObservance(observe.id)">delete</a>
+                </div><br><br><br>
+              </main>
+            </div><br>
+            <br><br><h2>September:</h2><br>
+            <div id="septemberObservanceToggleDiv">
+              <a href="" class="btn" id="septemberObservanceToggleButton" ng-click="$ctrl.toggleObservancMonth('September')">view</a>
+            </div><br>
+            <div id="septemberObservanceDiv">
+              <main ng-repeat="observe in $ctrl.sepObservances | orderBy : $ctrl.sortBy">
+                <br><br><br><img src="{{observe.picture}}">
+                <p>{{observe.name}}:</p>
+                <p>{{observe.clean_date}}</p>
+                <br>
+                <div class="goalEdit">
+                  <a href="" class="btn" ng-click="$ctrl.editObservance(observe.id)">edit</a>
+                  <a href="" class="btn" ng-click="$ctrl.deleteObservance(observe.id)">delete</a>
+                </div><br><br><br>
+              </main>
+            </div><br>
+            <br><br><h2>October:</h2><br>
+            <div id="octoberObservanceToggleDiv">
+              <a href="" class="btn" id="octoberObservanceToggleButton" ng-click="$ctrl.toggleObservancMonth('October')">view</a>
+            </div><br>
+            <div id="octoberObservanceDiv">
+              <main ng-repeat="observe in $ctrl.octObservances | orderBy : $ctrl.sortBy">
+                <br><br><br><img src="{{observe.picture}}">
+                <p>{{observe.name}}:</p>
+                <p>{{observe.clean_date}}</p>
+                <br>
+                <div class="goalEdit">
+                  <a href="" class="btn" ng-click="$ctrl.editObservance(observe.id)">edit</a>
+                  <a href="" class="btn" ng-click="$ctrl.deleteObservance(observe.id)">delete</a>
+                </div><br><br><br>
+              </main>
+            </div><br>
+            <br><br><h2>November:</h2><br>
+            <div id="novemberObservanceToggleDiv">
+              <a href="" class="btn" id="novemberObservanceToggleButton" ng-click="$ctrl.toggleObservancMonth('November')">view</a>
+            </div><br>
+            <div id="novemberObservanceDiv">
+              <main ng-repeat="observe in $ctrl.novObservances | orderBy : $ctrl.sortBy">
+                <br><br><br><img src="{{observe.picture}}">
+                <p>{{observe.name}}:</p>
+                <p>{{observe.clean_date}}</p>
+                <br>
+                <div class="goalEdit">
+                  <a href="" class="btn" ng-click="$ctrl.editObservance(observe.id)">edit</a>
+                  <a href="" class="btn" ng-click="$ctrl.deleteObservance(observe.id)">delete</a>
+                </div><br><br><br>
+              </main>
+            </div><br>
+            <br><br><h2>December:</h2><br>
+            <div id="decemberObservanceToggleDiv">
+              <a href="" class="btn" id="decemberObservanceToggleButton" ng-click="$ctrl.toggleObservancMonth('December')">view</a>
+            </div><br>
+            <div id="decemberObservanceDiv">
+              <main ng-repeat="observe in $ctrl.decObservances | orderBy : $ctrl.sortBy">
+                <br><br><br><img src="{{observe.picture}}">
+                <p>{{observe.name}}:</p>
+                <p>{{observe.clean_date}}</p>
+                <br>
+                <div class="goalEdit">
+                  <a href="" class="btn" ng-click="$ctrl.editObservance(observe.id)">edit</a>
+                  <a href="" class="btn" ng-click="$ctrl.deleteObservance(observe.id)">delete</a>
+                </div><br><br><br>
+              </main>
+            </div><br>
+
+          </div>
+
+        </fieldset>
+
+
+      </form>
+
+    </div>
+
   </div>
   <div id="secondaryEditing" class="pure-u-1-3">
     <div id="userProfilePhotoDiv">

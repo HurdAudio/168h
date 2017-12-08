@@ -152,6 +152,570 @@
       vm.addNewOccasion = addNewOccasion;
       vm.holidayReport = holidayReport;
       vm.holidayReportDone = holidayReportDone;
+      vm.observanceManager = observanceManager;
+      vm.closeObservancesManager = closeObservancesManager;
+      vm.toggleObservancMonth = toggleObservancMonth;
+
+      function toggleObservancMonth(month) {
+        let januaryObservanceToggleDiv = document.getElementById('januaryObservanceToggleDiv');
+        let januaryObservanceDiv = document.getElementById('januaryObservanceDiv');
+        let februaryObservanceToggleDiv = document.getElementById('februaryObservanceToggleDiv');
+        let februaryObservanceDiv = document.getElementById('februaryObservanceDiv');
+        let marchObservanceToggleDiv = document.getElementById('marchObservanceToggleDiv');
+        let marchObservanceDiv = document.getElementById('marchObservanceDiv');
+        let aprilObservanceToggleDiv = document.getElementById('aprilObservanceToggleDiv');
+        let aprilObservanceDiv = document.getElementById('aprilObservanceDiv');
+        let mayObservanceToggleDiv = document.getElementById('mayObservanceToggleDiv');
+        let mayObservanceDiv = document.getElementById('mayObservanceDiv');
+        let juneObservanceToggleDiv = document.getElementById('juneObservanceToggleDiv');
+        let juneObservanceDiv = document.getElementById('juneObservanceDiv');
+        let julyObservanceToggleDiv = document.getElementById('julyObservanceToggleDiv');
+        let julyObservanceDiv = document.getElementById('julyObservanceDiv');
+        let augustObservanceToggleDiv = document.getElementById('augustObservanceToggleDiv');
+        let augustObservanceDiv = document.getElementById('augustObservanceDiv');
+        let septemberObservanceToggleDiv = document.getElementById('septemberObservanceToggleDiv');
+        let septemberObservanceDiv = document.getElementById('septemberObservanceDiv');
+        let octoberObservanceToggleDiv = document.getElementById('octoberObservanceToggleDiv');
+        let octoberObservanceDiv = document.getElementById('octoberObservanceDiv');
+        let novemberObservanceToggleDiv = document.getElementById('novemberObservanceToggleDiv');
+        let novemberObservanceDiv = document.getElementById('novemberObservanceDiv');
+        let decemberObservanceToggleDiv = document.getElementById('decemberObservanceToggleDiv');
+        let decemberObservanceDiv = document.getElementById('decemberObservanceDiv');
+
+        switch(month) {
+          case('January'):
+            januaryObservanceToggleDiv.setAttribute("style", "display: none");
+            januaryObservanceDiv.setAttribute("style", "display: initial;");
+            februaryObservanceToggleDiv.setAttribute("style", "display: initial;");
+            februaryObservanceDiv.setAttribute("style", "display: none;");
+            marchObservanceToggleDiv.setAttribute("style", "display: initial;");
+            marchObservanceDiv.setAttribute("style", "display: none;");
+            aprilObservanceToggleDiv.setAttribute("style", "display: initial;");
+            aprilObservanceDiv.setAttribute("style", "display: none;");
+            mayObservanceToggleDiv.setAttribute("style", "display: initial;");
+            mayObservanceDiv.setAttribute("style", "display: none;");
+            juneObservanceToggleDiv.setAttribute("style", "display: initial;");
+            juneObservanceDiv.setAttribute("style", "display: none;");
+            julyObservanceToggleDiv.setAttribute("style", "display: initial;");
+            julyObservanceDiv.setAttribute("style", "display: none;");
+            augustObservanceToggleDiv.setAttribute("style", "display: initial;");
+            augustObservanceDiv.setAttribute("style", "display: none;");
+            septemberObservanceToggleDiv.setAttribute("style", "display: initial;");
+            septemberObservanceDiv.setAttribute("style", "display: none;");
+            octoberObservanceToggleDiv.setAttribute("style", "display: initial;");
+            octoberObservanceDiv.setAttribute("style", "display: none;");
+            novemberObservanceToggleDiv.setAttribute("style", "display: initial;");
+            novemberObservanceDiv.setAttribute("style", "display: none;");
+            decemberObservanceToggleDiv.setAttribute("style", "display: initial;");
+            decemberObservanceDiv.setAttribute("style", "display: none;");
+            break;
+          case('February'):
+            januaryObservanceToggleDiv.setAttribute("style", "display: initial");
+            januaryObservanceDiv.setAttribute("style", "display: none;");
+            februaryObservanceToggleDiv.setAttribute("style", "display: none;");
+            februaryObservanceDiv.setAttribute("style", "display: initial;");
+            marchObservanceToggleDiv.setAttribute("style", "display: initial;");
+            marchObservanceDiv.setAttribute("style", "display: none;");
+            aprilObservanceToggleDiv.setAttribute("style", "display: initial;");
+            aprilObservanceDiv.setAttribute("style", "display: none;");
+            mayObservanceToggleDiv.setAttribute("style", "display: initial;");
+            mayObservanceDiv.setAttribute("style", "display: none;");
+            juneObservanceToggleDiv.setAttribute("style", "display: initial;");
+            juneObservanceDiv.setAttribute("style", "display: none;");
+            julyObservanceToggleDiv.setAttribute("style", "display: initial;");
+            julyObservanceDiv.setAttribute("style", "display: none;");
+            augustObservanceToggleDiv.setAttribute("style", "display: initial;");
+            augustObservanceDiv.setAttribute("style", "display: none;");
+            septemberObservanceToggleDiv.setAttribute("style", "display: initial;");
+            septemberObservanceDiv.setAttribute("style", "display: none;");
+            octoberObservanceToggleDiv.setAttribute("style", "display: initial;");
+            octoberObservanceDiv.setAttribute("style", "display: none;");
+            novemberObservanceToggleDiv.setAttribute("style", "display: initial;");
+            novemberObservanceDiv.setAttribute("style", "display: none;");
+            decemberObservanceToggleDiv.setAttribute("style", "display: initial;");
+            decemberObservanceDiv.setAttribute("style", "display: none;");
+            break;
+          case('March'):
+            januaryObservanceToggleDiv.setAttribute("style", "display: initial");
+            januaryObservanceDiv.setAttribute("style", "display: none;");
+            februaryObservanceToggleDiv.setAttribute("style", "display: initial;");
+            februaryObservanceDiv.setAttribute("style", "display: none;");
+            marchObservanceToggleDiv.setAttribute("style", "display: none;");
+            marchObservanceDiv.setAttribute("style", "display: initial;");
+            aprilObservanceToggleDiv.setAttribute("style", "display: initial;");
+            aprilObservanceDiv.setAttribute("style", "display: none;");
+            mayObservanceToggleDiv.setAttribute("style", "display: initial;");
+            mayObservanceDiv.setAttribute("style", "display: none;");
+            juneObservanceToggleDiv.setAttribute("style", "display: initial;");
+            juneObservanceDiv.setAttribute("style", "display: none;");
+            julyObservanceToggleDiv.setAttribute("style", "display: initial;");
+            julyObservanceDiv.setAttribute("style", "display: none;");
+            augustObservanceToggleDiv.setAttribute("style", "display: initial;");
+            augustObservanceDiv.setAttribute("style", "display: none;");
+            septemberObservanceToggleDiv.setAttribute("style", "display: initial;");
+            septemberObservanceDiv.setAttribute("style", "display: none;");
+            octoberObservanceToggleDiv.setAttribute("style", "display: initial;");
+            octoberObservanceDiv.setAttribute("style", "display: none;");
+            novemberObservanceToggleDiv.setAttribute("style", "display: initial;");
+            novemberObservanceDiv.setAttribute("style", "display: none;");
+            decemberObservanceToggleDiv.setAttribute("style", "display: initial;");
+            decemberObservanceDiv.setAttribute("style", "display: none;");
+            break;
+          case('April'):
+            januaryObservanceToggleDiv.setAttribute("style", "display: initial");
+            januaryObservanceDiv.setAttribute("style", "display: none;");
+            februaryObservanceToggleDiv.setAttribute("style", "display: initial;");
+            februaryObservanceDiv.setAttribute("style", "display: none;");
+            marchObservanceToggleDiv.setAttribute("style", "display: initial;");
+            marchObservanceDiv.setAttribute("style", "display: none;");
+            aprilObservanceToggleDiv.setAttribute("style", "display: none;");
+            aprilObservanceDiv.setAttribute("style", "display: initial;");
+            mayObservanceToggleDiv.setAttribute("style", "display: initial;");
+            mayObservanceDiv.setAttribute("style", "display: none;");
+            juneObservanceToggleDiv.setAttribute("style", "display: initial;");
+            juneObservanceDiv.setAttribute("style", "display: none;");
+            julyObservanceToggleDiv.setAttribute("style", "display: initial;");
+            julyObservanceDiv.setAttribute("style", "display: none;");
+            augustObservanceToggleDiv.setAttribute("style", "display: initial;");
+            augustObservanceDiv.setAttribute("style", "display: none;");
+            septemberObservanceToggleDiv.setAttribute("style", "display: initial;");
+            septemberObservanceDiv.setAttribute("style", "display: none;");
+            octoberObservanceToggleDiv.setAttribute("style", "display: initial;");
+            octoberObservanceDiv.setAttribute("style", "display: none;");
+            novemberObservanceToggleDiv.setAttribute("style", "display: initial;");
+            novemberObservanceDiv.setAttribute("style", "display: none;");
+            decemberObservanceToggleDiv.setAttribute("style", "display: initial;");
+            decemberObservanceDiv.setAttribute("style", "display: none;");
+            break;
+          case('May'):
+            januaryObservanceToggleDiv.setAttribute("style", "display: initial");
+            januaryObservanceDiv.setAttribute("style", "display: none;");
+            februaryObservanceToggleDiv.setAttribute("style", "display: initial;");
+            februaryObservanceDiv.setAttribute("style", "display: none;");
+            marchObservanceToggleDiv.setAttribute("style", "display: initial;");
+            marchObservanceDiv.setAttribute("style", "display: none;");
+            aprilObservanceToggleDiv.setAttribute("style", "display: initial;");
+            aprilObservanceDiv.setAttribute("style", "display: none;");
+            mayObservanceToggleDiv.setAttribute("style", "display: none;");
+            mayObservanceDiv.setAttribute("style", "display: initial;");
+            juneObservanceToggleDiv.setAttribute("style", "display: initial;");
+            juneObservanceDiv.setAttribute("style", "display: none;");
+            julyObservanceToggleDiv.setAttribute("style", "display: initial;");
+            julyObservanceDiv.setAttribute("style", "display: none;");
+            augustObservanceToggleDiv.setAttribute("style", "display: initial;");
+            augustObservanceDiv.setAttribute("style", "display: none;");
+            septemberObservanceToggleDiv.setAttribute("style", "display: initial;");
+            septemberObservanceDiv.setAttribute("style", "display: none;");
+            octoberObservanceToggleDiv.setAttribute("style", "display: initial;");
+            octoberObservanceDiv.setAttribute("style", "display: none;");
+            novemberObservanceToggleDiv.setAttribute("style", "display: initial;");
+            novemberObservanceDiv.setAttribute("style", "display: none;");
+            decemberObservanceToggleDiv.setAttribute("style", "display: initial;");
+            decemberObservanceDiv.setAttribute("style", "display: none;");
+            break;
+          case('June'):
+            januaryObservanceToggleDiv.setAttribute("style", "display: initial");
+            januaryObservanceDiv.setAttribute("style", "display: none;");
+            februaryObservanceToggleDiv.setAttribute("style", "display: initial;");
+            februaryObservanceDiv.setAttribute("style", "display: none;");
+            marchObservanceToggleDiv.setAttribute("style", "display: initial;");
+            marchObservanceDiv.setAttribute("style", "display: none;");
+            aprilObservanceToggleDiv.setAttribute("style", "display: initial;");
+            aprilObservanceDiv.setAttribute("style", "display: none;");
+            mayObservanceToggleDiv.setAttribute("style", "display: initial;");
+            mayObservanceDiv.setAttribute("style", "display: none;");
+            juneObservanceToggleDiv.setAttribute("style", "display: none;");
+            juneObservanceDiv.setAttribute("style", "display: initial;");
+            julyObservanceToggleDiv.setAttribute("style", "display: initial;");
+            julyObservanceDiv.setAttribute("style", "display: none;");
+            augustObservanceToggleDiv.setAttribute("style", "display: initial;");
+            augustObservanceDiv.setAttribute("style", "display: none;");
+            septemberObservanceToggleDiv.setAttribute("style", "display: initial;");
+            septemberObservanceDiv.setAttribute("style", "display: none;");
+            octoberObservanceToggleDiv.setAttribute("style", "display: initial;");
+            octoberObservanceDiv.setAttribute("style", "display: none;");
+            novemberObservanceToggleDiv.setAttribute("style", "display: initial;");
+            novemberObservanceDiv.setAttribute("style", "display: none;");
+            decemberObservanceToggleDiv.setAttribute("style", "display: initial;");
+            decemberObservanceDiv.setAttribute("style", "display: none;");
+            break;
+          case('July'):
+            januaryObservanceToggleDiv.setAttribute("style", "display: initial");
+            januaryObservanceDiv.setAttribute("style", "display: none;");
+            februaryObservanceToggleDiv.setAttribute("style", "display: initial;");
+            februaryObservanceDiv.setAttribute("style", "display: none;");
+            marchObservanceToggleDiv.setAttribute("style", "display: initial;");
+            marchObservanceDiv.setAttribute("style", "display: none;");
+            aprilObservanceToggleDiv.setAttribute("style", "display: initial;");
+            aprilObservanceDiv.setAttribute("style", "display: none;");
+            mayObservanceToggleDiv.setAttribute("style", "display: initial;");
+            mayObservanceDiv.setAttribute("style", "display: none;");
+            juneObservanceToggleDiv.setAttribute("style", "display: initial;");
+            juneObservanceDiv.setAttribute("style", "display: none;");
+            julyObservanceToggleDiv.setAttribute("style", "display: none;");
+            julyObservanceDiv.setAttribute("style", "display: initial;");
+            augustObservanceToggleDiv.setAttribute("style", "display: initial;");
+            augustObservanceDiv.setAttribute("style", "display: none;");
+            septemberObservanceToggleDiv.setAttribute("style", "display: initial;");
+            septemberObservanceDiv.setAttribute("style", "display: none;");
+            octoberObservanceToggleDiv.setAttribute("style", "display: initial;");
+            octoberObservanceDiv.setAttribute("style", "display: none;");
+            novemberObservanceToggleDiv.setAttribute("style", "display: initial;");
+            novemberObservanceDiv.setAttribute("style", "display: none;");
+            decemberObservanceToggleDiv.setAttribute("style", "display: initial;");
+            decemberObservanceDiv.setAttribute("style", "display: none;");
+            break;
+          case('August'):
+            januaryObservanceToggleDiv.setAttribute("style", "display: initial");
+            januaryObservanceDiv.setAttribute("style", "display: none;");
+            februaryObservanceToggleDiv.setAttribute("style", "display: initial;");
+            februaryObservanceDiv.setAttribute("style", "display: none;");
+            marchObservanceToggleDiv.setAttribute("style", "display: initial;");
+            marchObservanceDiv.setAttribute("style", "display: none;");
+            aprilObservanceToggleDiv.setAttribute("style", "display: initial;");
+            aprilObservanceDiv.setAttribute("style", "display: none;");
+            mayObservanceToggleDiv.setAttribute("style", "display: initial;");
+            mayObservanceDiv.setAttribute("style", "display: none;");
+            juneObservanceToggleDiv.setAttribute("style", "display: initial;");
+            juneObservanceDiv.setAttribute("style", "display: none;");
+            julyObservanceToggleDiv.setAttribute("style", "display: initial;");
+            julyObservanceDiv.setAttribute("style", "display: none;");
+            augustObservanceToggleDiv.setAttribute("style", "display: none;");
+            augustObservanceDiv.setAttribute("style", "display: initial;");
+            septemberObservanceToggleDiv.setAttribute("style", "display: initial;");
+            septemberObservanceDiv.setAttribute("style", "display: none;");
+            octoberObservanceToggleDiv.setAttribute("style", "display: initial;");
+            octoberObservanceDiv.setAttribute("style", "display: none;");
+            novemberObservanceToggleDiv.setAttribute("style", "display: initial;");
+            novemberObservanceDiv.setAttribute("style", "display: none;");
+            decemberObservanceToggleDiv.setAttribute("style", "display: initial;");
+            decemberObservanceDiv.setAttribute("style", "display: none;");
+            break;
+          case('September'):
+            januaryObservanceToggleDiv.setAttribute("style", "display: initial");
+            januaryObservanceDiv.setAttribute("style", "display: none;");
+            februaryObservanceToggleDiv.setAttribute("style", "display: initial;");
+            februaryObservanceDiv.setAttribute("style", "display: none;");
+            marchObservanceToggleDiv.setAttribute("style", "display: initial;");
+            marchObservanceDiv.setAttribute("style", "display: none;");
+            aprilObservanceToggleDiv.setAttribute("style", "display: initial;");
+            aprilObservanceDiv.setAttribute("style", "display: none;");
+            mayObservanceToggleDiv.setAttribute("style", "display: initial;");
+            mayObservanceDiv.setAttribute("style", "display: none;");
+            juneObservanceToggleDiv.setAttribute("style", "display: initial;");
+            juneObservanceDiv.setAttribute("style", "display: none;");
+            julyObservanceToggleDiv.setAttribute("style", "display: initial;");
+            julyObservanceDiv.setAttribute("style", "display: none;");
+            augustObservanceToggleDiv.setAttribute("style", "display: initial;");
+            augustObservanceDiv.setAttribute("style", "display: none;");
+            septemberObservanceToggleDiv.setAttribute("style", "display: none;");
+            septemberObservanceDiv.setAttribute("style", "display: initial;");
+            octoberObservanceToggleDiv.setAttribute("style", "display: initial;");
+            octoberObservanceDiv.setAttribute("style", "display: none;");
+            novemberObservanceToggleDiv.setAttribute("style", "display: initial;");
+            novemberObservanceDiv.setAttribute("style", "display: none;");
+            decemberObservanceToggleDiv.setAttribute("style", "display: initial;");
+            decemberObservanceDiv.setAttribute("style", "display: none;");
+            break;
+          case('October'):
+            januaryObservanceToggleDiv.setAttribute("style", "display: initial");
+            januaryObservanceDiv.setAttribute("style", "display: none;");
+            februaryObservanceToggleDiv.setAttribute("style", "display: initial;");
+            februaryObservanceDiv.setAttribute("style", "display: none;");
+            marchObservanceToggleDiv.setAttribute("style", "display: initial;");
+            marchObservanceDiv.setAttribute("style", "display: none;");
+            aprilObservanceToggleDiv.setAttribute("style", "display: initial;");
+            aprilObservanceDiv.setAttribute("style", "display: none;");
+            mayObservanceToggleDiv.setAttribute("style", "display: initial;");
+            mayObservanceDiv.setAttribute("style", "display: none;");
+            juneObservanceToggleDiv.setAttribute("style", "display: initial;");
+            juneObservanceDiv.setAttribute("style", "display: none;");
+            julyObservanceToggleDiv.setAttribute("style", "display: initial;");
+            julyObservanceDiv.setAttribute("style", "display: none;");
+            augustObservanceToggleDiv.setAttribute("style", "display: initial;");
+            augustObservanceDiv.setAttribute("style", "display: none;");
+            septemberObservanceToggleDiv.setAttribute("style", "display: initial;");
+            septemberObservanceDiv.setAttribute("style", "display: none;");
+            octoberObservanceToggleDiv.setAttribute("style", "display: none;");
+            octoberObservanceDiv.setAttribute("style", "display: initial;");
+            novemberObservanceToggleDiv.setAttribute("style", "display: initial;");
+            novemberObservanceDiv.setAttribute("style", "display: none;");
+            decemberObservanceToggleDiv.setAttribute("style", "display: initial;");
+            decemberObservanceDiv.setAttribute("style", "display: none;");
+            break;
+          case('November'):
+            januaryObservanceToggleDiv.setAttribute("style", "display: initial");
+            januaryObservanceDiv.setAttribute("style", "display: none;");
+            februaryObservanceToggleDiv.setAttribute("style", "display: initial;");
+            februaryObservanceDiv.setAttribute("style", "display: none;");
+            marchObservanceToggleDiv.setAttribute("style", "display: initial;");
+            marchObservanceDiv.setAttribute("style", "display: none;");
+            aprilObservanceToggleDiv.setAttribute("style", "display: initial;");
+            aprilObservanceDiv.setAttribute("style", "display: none;");
+            mayObservanceToggleDiv.setAttribute("style", "display: initial;");
+            mayObservanceDiv.setAttribute("style", "display: none;");
+            juneObservanceToggleDiv.setAttribute("style", "display: initial;");
+            juneObservanceDiv.setAttribute("style", "display: none;");
+            julyObservanceToggleDiv.setAttribute("style", "display: initial;");
+            julyObservanceDiv.setAttribute("style", "display: none;");
+            augustObservanceToggleDiv.setAttribute("style", "display: initial;");
+            augustObservanceDiv.setAttribute("style", "display: none;");
+            septemberObservanceToggleDiv.setAttribute("style", "display: initial;");
+            septemberObservanceDiv.setAttribute("style", "display: none;");
+            octoberObservanceToggleDiv.setAttribute("style", "display: initial;");
+            octoberObservanceDiv.setAttribute("style", "display: none;");
+            novemberObservanceToggleDiv.setAttribute("style", "display: none;");
+            novemberObservanceDiv.setAttribute("style", "display: initial;");
+            decemberObservanceToggleDiv.setAttribute("style", "display: initial;");
+            decemberObservanceDiv.setAttribute("style", "display: none;");
+            break;
+          case('December'):
+            januaryObservanceToggleDiv.setAttribute("style", "display: initial");
+            januaryObservanceDiv.setAttribute("style", "display: none;");
+            februaryObservanceToggleDiv.setAttribute("style", "display: initial;");
+            februaryObservanceDiv.setAttribute("style", "display: none;");
+            marchObservanceToggleDiv.setAttribute("style", "display: initial;");
+            marchObservanceDiv.setAttribute("style", "display: none;");
+            aprilObservanceToggleDiv.setAttribute("style", "display: initial;");
+            aprilObservanceDiv.setAttribute("style", "display: none;");
+            mayObservanceToggleDiv.setAttribute("style", "display: initial;");
+            mayObservanceDiv.setAttribute("style", "display: none;");
+            juneObservanceToggleDiv.setAttribute("style", "display: initial;");
+            juneObservanceDiv.setAttribute("style", "display: none;");
+            julyObservanceToggleDiv.setAttribute("style", "display: initial;");
+            julyObservanceDiv.setAttribute("style", "display: none;");
+            augustObservanceToggleDiv.setAttribute("style", "display: initial;");
+            augustObservanceDiv.setAttribute("style", "display: none;");
+            septemberObservanceToggleDiv.setAttribute("style", "display: initial;");
+            septemberObservanceDiv.setAttribute("style", "display: none;");
+            octoberObservanceToggleDiv.setAttribute("style", "display: initial;");
+            octoberObservanceDiv.setAttribute("style", "display: none;");
+            novemberObservanceToggleDiv.setAttribute("style", "display: initial;");
+            novemberObservanceDiv.setAttribute("style", "display: none;");
+            decemberObservanceToggleDiv.setAttribute("style", "display: none;");
+            decemberObservanceDiv.setAttribute("style", "display: initial;");
+            break;
+          default:
+            console.log('error state');
+
+        }
+
+
+      }
+
+      function closeObservancesManager() {
+        let observancesManagementDiv = document.getElementById('observancesManagementDiv');
+        let observancesManager = document.getElementById('observancesManager');
+        let observancesZone = document.getElementById('observancesZone');
+
+
+        observancesManagementDiv.setAttribute("style", "display: none;");
+        observancesManager.setAttribute("style", "visibility: visible;");
+        observancesZone.setAttribute("style", "opacity: 1.0;");
+      }
+
+      function observanceManager() {
+        let months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+        let checkDate;
+        let checkDate2;
+        let observancesManagementDiv = document.getElementById('observancesManagementDiv');
+        let observancesManager = document.getElementById('observancesManager');
+        let observancesZone = document.getElementById('observancesZone');
+
+        $http.get(`/observancesbyuser/${currentUserId}`)
+        .then(observancesData=>{
+          let observances = observancesData.data;
+          for (let i = 0; i < observances.length; i++) {
+            checkDate = new Date(observances[i].day_of);
+            observances[i].clean_date = checkDate.getDate().toString() + ' ' + months[checkDate.getMonth()] + ' ' + checkDate.getFullYear().toString();
+          }
+          vm.janObservances = observances.filter(entry=>{
+            checkDate = new Date(entry.day_of);
+            return (checkDate.getMonth() === 0);
+          });
+          vm.janObservances = vm.janObservances.sort((a, b)=>{
+            checkDate = new Date(a.day_of);
+            checkDate2 = new Date(b.day_of);
+            if (checkDate.getDate() < checkDate2.getDate()) {
+              return -1;
+            } else if (checkDate.getDate() > checkDate2.getDate()) {
+              return 1;
+            } else {
+              return 0;
+            }
+          });
+          vm.febObservances = observances.filter(entry=>{
+            checkDate = new Date(entry.day_of);
+            return (checkDate.getMonth() === 1);
+          });
+          vm.febObservances = vm.febObservances.sort((a, b)=>{
+            checkDate = new Date(a.day_of);
+            checkDate2 = new Date(b.day_of);
+            if (checkDate.getDate() < checkDate2.getDate()) {
+              return -1;
+            } else if (checkDate.getDate() > checkDate2.getDate()) {
+              return 1;
+            } else {
+              return 0;
+            }
+          });
+          vm.marObservances = observances.filter(entry=>{
+            checkDate = new Date(entry.day_of);
+            return(checkDate.getMonth() === 2);
+          });
+          vm.marObservances = vm.marObservances.sort((a, b)=>{
+            checkDate = new Date(a.day_of);
+            checkDate2 = new Date(b.day_of);
+            if (checkDate.getDate() < checkDate2.getDate()) {
+              return -1;
+            } else if (checkDate.getDate() > checkDate2.getDate()) {
+              return 1;
+            } else {
+              return 0;
+            }
+          });
+          vm.aprObservances = observances.filter(entry=>{
+            checkDate = new Date(entry.day_of);
+            return(checkDate.getMonth() === 3);
+          });
+          vm.aprObservances = vm.aprObservances.sort((a, b)=>{
+            checkDate = new Date(a.day_of);
+            checkDate2 = new Date(b.day_of);
+            if (checkDate.getDate() < checkDate2.getDate()) {
+              return -1;
+            } else if (checkDate.getDate() > checkDate2.getDate()) {
+              return 1;
+            } else {
+              return 0;
+            }
+          });
+          vm.mayObservances = observances.filter(entry=>{
+            checkDate = new Date(entry.day_of);
+            return(checkDate.getMonth() === 4);
+          });
+          vm.mayObservances = vm.mayObservances.sort((a, b)=>{
+            checkDate = new Date(a.day_of);
+            checkDate2 = new Date(b.day_of);
+            if (checkDate.getDate() < checkDate2.getDate()) {
+              return -1;
+            } else if (checkDate.getDate() > checkDate2.getDate()) {
+              return 1;
+            } else {
+              return 0;
+            }
+          });
+          vm.junObservances = observances.filter(entry=>{
+            checkDate = new Date(entry.day_of);
+            return(checkDate.getMonth() === 5);
+          });
+          vm.junObservances = vm.junObservances.sort((a, b)=>{
+            checkDate = new Date(a.day_of);
+            checkDate2 = new Date(b.day_of);
+            if (checkDate.getDate() < checkDate2.getDate()) {
+              return -1;
+            } else if (checkDate.getDate() > checkDate2.getDate()) {
+              return 1;
+            } else {
+              return 0;
+            }
+          });
+          vm.julObservances = observances.filter(entry=>{
+            checkDate = new Date(entry.day_of);
+            return(checkDate.getMonth() === 6);
+          });
+          vm.julObservances = vm.julObservances.sort((a, b)=>{
+            checkDate = new Date(a.day_of);
+            checkDate2 = new Date(b.day_of);
+            if (checkDate.getDate() < checkDate2.getDate()) {
+              return -1;
+            } else if (checkDate.getDate() > checkDate2.getDate()) {
+              return 1;
+            } else {
+              return 0;
+            }
+          });
+          vm.augObservances = observances.filter(entry=>{
+            checkDate = new Date(entry.day_of);
+            return(checkDate.getMonth() === 7);
+          });
+          vm.augObservances = vm.augObservances.sort((a, b)=>{
+            checkDate = new Date(a.day_of);
+            checkDate2 = new Date(b.day_of);
+            if (checkDate.getDate() < checkDate2.getDate()) {
+              return -1;
+            } else if (checkDate.getDate() > checkDate2.getDate()) {
+              return 1;
+            } else {
+              return 0;
+            }
+          });
+          vm.sepObservances = observances.filter(entry=>{
+            checkDate = new Date(entry.day_of);
+            return(checkDate.getMonth() === 8);
+          });
+          vm.sepObservances = vm.sepObservances.sort((a, b)=>{
+            checkDate = new Date(a.day_of);
+            checkDate2 = new Date(b.day_of);
+            if (checkDate.getDate() < checkDate2.getDate()) {
+              return -1;
+            } else if (checkDate.getDate() > checkDate2.getDate()) {
+              return 1;
+            } else {
+              return 0;
+            }
+          });
+          vm.octObservances = observances.filter(entry=>{
+            checkDate = new Date(entry.day_of);
+            return(checkDate.getMonth() === 9);
+          });
+          vm.octObservances = vm.octObservances.sort((a, b)=>{
+            checkDate = new Date(a.day_of);
+            checkDate2 = new Date(b.day_of);
+            if (checkDate.getDate() < checkDate2.getDate()) {
+              return -1;
+            } else if (checkDate.getDate() > checkDate2.getDate()) {
+              return 1;
+            } else {
+              return 0;
+            }
+          });
+          vm.novObservances = observances.filter(entry=>{
+            checkDate = new Date(entry.day_of);
+            return(checkDate.getMonth() === 10);
+          });
+          vm.novObservances = vm.novObservances.sort((a, b)=>{
+            checkDate = new Date(a.day_of);
+            checkDate2 = new Date(b.day_of);
+            if (checkDate.getDate() < checkDate2.getDate()) {
+              return -1;
+            } else if (checkDate.getDate() > checkDate2.getDate()) {
+              return 1;
+            } else {
+              return 0;
+            }
+          });
+          vm.decObservances = observances.filter(entry=>{
+            checkDate = new Date(entry.day_of);
+            return(checkDate.getMonth() === 11);
+          });
+          vm.decObservances = vm.decObservances.sort((a, b)=>{
+            checkDate = new Date(a.day_of);
+            checkDate2 = new Date(b.day_of);
+            if (checkDate.getDate() < checkDate2.getDate()) {
+              return -1;
+            } else if (checkDate.getDate() > checkDate2.getDate()) {
+              return 1;
+            } else {
+              return 0;
+            }
+          });
+
+        });
+
+        observancesManagementDiv.setAttribute("style", "display: initial;");
+        observancesManager.setAttribute("style", "visibility: hidden;");
+        observancesZone.setAttribute("style", "opacity: 0.3;");
+      }
 
       function grabHolidays(allHollidays, day) {
         let today = [];

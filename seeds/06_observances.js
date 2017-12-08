@@ -8715,7 +8715,7 @@ exports.seed = function(knex, Promise) {
           user_id: 1,
           name: 'Carl Ruggles (composer) born in 1876',
           color: '#292621',
-          picture: './img/musician/carlruggles.jpg',
+          picture: './img/musicians/carlruggles.jpg',
           day_of: new Date ('1876-03-11T13:44:00.000Z'),
           is_annual: true,
           art_override: false,

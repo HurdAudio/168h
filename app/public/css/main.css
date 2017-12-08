@@ -4317,6 +4317,33 @@ footer img {
   margin-top: 0.2em;
 }
 
+#observancesManagerBar {
+  font-family: 'Asul', serif;
+  font-size: 18px
+  background: #BC3608;
+  background-color: -webkit-linear-gradient(-135deg, #BC3608, #F0F1F6);
+  background: -o-linear-gradient(-135deg, #BC3608, #F0F1F6);
+  background: -moz-linear-gradient(-135deg, #BC3608, #F0F1F6);
+  background: linear-gradient(-135deg, #BC3608, #F0F1F6);
+  border-radius: 5px;
+  margin: 0;
+  padding:0;
+  height: 3.8em;
+  top: 0%;
+  opacity: 1;
+}
+
+#observancesManagerBar h1 {
+  margin-left: 2em;
+  padding-top: 0.4em;
+}
+
+#observancesManagerBar a {
+  float:right;
+  margin-right: 1.1em;
+  margin-top: 0.2em;
+}
+
 #holidayManagerForm {
   font-family: 'Alike Angular', serif;
   font-size: 24px;
@@ -4487,6 +4514,46 @@ footer img {
 }
 
 #goalsManagerForm a {
+  float: left;
+  margin-left: 1.5em;
+}
+
+#observancesManagerForm {
+  font-family: 'Alike Angular', serif;
+  font-size: 24px;
+  background: #BC3608;
+  background-color: -webkit-linear-gradient(135deg, #BC3608, #F0F1F6);
+  background: -o-linear-gradient(135deg, #BC3608, #F0F1F6);
+  background: -moz-linear-gradient(135deg, #BC3608, #F0F1F6);
+  background: linear-gradient(135deg, #BC3608, #F0F1F6);
+  border-radius: 5px;
+  opacity: 1;
+}
+
+#observancesManagerForm h2 {
+  font-size: 36px;
+  font-weight: bold;
+  text-shadow: -1px 1px 1px #ffffff;
+  margin-bottom: 0;
+  margin-left: 2vmin;
+}
+
+#observancesManagerForm p {
+  margin-left: 2em;
+  font-weight: bold;
+  text-shadow: -1px 1px 1px #ffffff;
+  margin-bottom: 0;
+}
+
+#observancesManagerForm img {
+  height: 10em;
+  width: 10em;
+  margin-left: 5.6em;
+  margin-top: 0.2em;
+  border: 2px solid #0000cc;
+}
+
+#observancesManagerForm a {
   float: left;
   margin-left: 1.5em;
 }
@@ -4736,11 +4803,64 @@ footer img {
   display: none;
 }
 
+#observancesManagementDiv {
+  display: none;
+}
+
 #userTasksEditingDiv {
   display: none;
 }
 
 #userBillDeleteConfirmDiv {
+  display: none;
+}
+
+#januaryObservanceDiv {
+  display: none;
+
+}
+
+#februaryObservanceDiv {
+  display: none;
+}
+
+#marchObservanceDiv {
+  display: none;
+}
+
+#aprilObservanceDiv {
+  display: none;
+}
+
+#mayObservanceDiv {
+  display: none;
+}
+
+#juneObservanceDiv {
+  display: none;
+}
+
+#julyObservanceDiv {
+  display: none;
+}
+
+#augustObservanceDiv {
+  display: none;
+}
+
+#septemberObservanceDiv {
+  display: none;
+}
+
+#octoberObservanceDiv {
+  display:none;
+}
+
+#novemberObservanceDiv {
+  display: none;
+}
+
+#decemberObservanceDiv {
   display: none;
 }
 
