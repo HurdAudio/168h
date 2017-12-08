@@ -94,12 +94,12 @@ exports.seed = function(knex, Promise) {
           user_id: 1,
           theme: 'autumnal',
           type: 'holiday',
-          src_string: '../img/october_tiles/.jpg',
+          src_string: '../img/october_tiles/pumpkins-457716_1920.jpg',
           repeat_value: 'no-repeat',
-          size_value: '%',
-          color_dark: '#',
-          color_medium: '#',
-          color_light: '#',
+          size_value: '150%',
+          color_dark: '#100F0B',
+          color_medium: '#802A06',
+          color_light: '#FDAC40',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
