@@ -976,6 +976,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 55,
+          user_id: 1,
+          theme: 'ethiopia and pan-african',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=561865359/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://thedwarfsofeastagouza.bandcamp.com/album/bes',
+          a_string: 'Bes by The Dwarfs of East Agouza',
+          rule: {
+            "monday": [ 6, 17, 28, 30 ],
+            "tuesday": [ 5, 16, 27, 29 ],
+            "wednesday": [ 4, 15, 26, 28 ],
+            "thursday": [ 8, 19, 30, 2 ],
+            "saturday": [ 7, 18, 29, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 56,
+          user_id: 1,
+          theme: 'ethiopia and pan-african',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2391212862/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://nadahelshazly.bandcamp.com/album/ahwar',
+          a_string: 'Ahwar by Nadah El Shazly',
+          rule: {
+            "monday": [ 6, 17, 28, 30 ],
+            "tuesday": [ 7, 18, 29, 1 ],
+            "wednesday": [ 6, 17, 28, 30 ],
+            "thursday": [ 5, 16, 27, 29 ],
+            "saturday": [ 9, 20, 1, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 57,
+          user_id: 1,
+          theme: 'ethiopia and pan-african',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=650672193/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://salahragab.bandcamp.com/album/egyptian-jazz',
+          a_string: 'Egyptian Jazz by Salah Ragab and The Cairo Jazz Band',
+          rule: {
+            "monday": [ 9, 20, 1, 3 ],
+            "tuesday": [ 6, 17, 28, 30 ],
+            "wednesday": [ 7, 18, 29, 1 ],
+            "thursday": [ 6, 17, 28, 30 ],
+            "saturday": [ 5, 16, 27, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
