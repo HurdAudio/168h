@@ -2056,6 +2056,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 115,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1759038092/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://xirecords.bandcamp.com/album/sinopah',
+          a_string: 'Sinopah by Annea Lockwood/Ruth Anderson',
+          rule: {
+            "monday": [ 23, 30, 31, 1 ],
+            "tuesday": [ 21, 25, 27, 31 ],
+            "wednesday": [ 23, 30, 32, 31 ],
+            "thursday": [ 31, 25, 27, 1 ],
+            "saturday": [ 22, 29, 30, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 116,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3618095188/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://xirecords.bandcamp.com/album/flying-vegetables-of-the-apocalypse',
+          a_string: 'Flying Vegetables of the Apocalypse by Guy Klucevsek',
+          rule: {
+            "monday": [ 22, 29, 30, 31 ],
+            "tuesday": [ 23, 30, 31, 1 ],
+            "wednesday": [ 21, 25, 27, 31 ],
+            "thursday": [ 23, 30, 32, 31 ],
+            "saturday": [ 31, 25, 27, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 117,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=938127030/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://xirecords.bandcamp.com/album/privacy-issues-droneworks-1996-2009',
+          a_string: 'Privacy Issues (droneworks 1996 - 2009) by David First',
+          rule: {
+            "monday": [ 31, 25, 27, 1 ],
+            "tuesday": [ 22, 29, 30, 31 ],
+            "wednesday": [ 23, 30, 31, 1 ],
+            "thursday": [ 21, 25, 27, 31 ],
+            "saturday": [ 23, 30, 32, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
