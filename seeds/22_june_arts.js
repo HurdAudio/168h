@@ -2904,6 +2904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 146,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/heimw-rts.jpg',
+          title: 'Heimwärts',
+          artist: 'Nicola Perscheid',
+          year: '1901',
+          rule: {
+            "monday": [ 18, 28, 8, 16 ],
+            "tuesday": [ 17, 27, 7, 15 ],
+            "wednesday": [ 16, 26, 6, 14 ],
+            "thursday": [ 15, 25, 5, 13 ],
+            "friday": [ 21, 1, 11, 18 ],
+            "saturday": [ 20, 30, 10, 18 ],
+            "sunday": [ 19, 29, 9, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 147,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/kiki-de-montparnasse.jpg',
+          title: 'Kiki de Montparnasse',
+          artist: 'Man Ray',
+          year: '1922',
+          rule: {
+            "monday": [ 20, 30, 10, 18 ],
+            "tuesday": [ 19, 29, 9, 17 ],
+            "wednesday": [ 18, 28, 8, 16 ],
+            "thursday": [ 17, 27, 7, 15 ],
+            "friday": [ 16, 26, 6, 14 ],
+            "saturday": [ 22, 2, 12, 19 ],
+            "sunday": [ 21, 1, 11, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 148,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/view-from-the-berlin-radio-tower-in-winter-1928.jpg',
+          title: 'View from the Berlin radio tower in Winter',
+          artist: 'Laszlo Moholy-Nagy',
+          year: '1928',
+          rule: {
+            "monday": [ 21, 1, 11, 19 ],
+            "tuesday": [ 20, 30, 10, 18 ],
+            "wednesday": [ 19, 29, 9, 17 ],
+            "thursday": [ 18, 28, 8, 16 ],
+            "friday": [ 17, 27, 7, 15 ],
+            "saturday": [ 16, 26, 6, 14 ],
+            "sunday": [ 22, 2, 12, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 149,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/lee-nevin-1963.jpg',
+          title: 'Lee Nevin',
+          artist: 'Frederick Sommer',
+          year: '1963',
+          rule: {
+            "monday": [ 22, 2, 12, 19 ],
+            "tuesday": [ 21, 1, 11, 19 ],
+            "wednesday": [ 20, 30, 10, 18 ],
+            "thursday": [ 19, 29, 9, 17 ],
+            "friday": [ 18, 28, 8, 16 ],
+            "saturday": [ 17, 27, 7, 15 ],
+            "sunday": [ 16, 26, 6, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 150,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/en-un-pa-s-lejano-utopos-1998.jpg',
+          title: 'En un país lejano, Utopos',
+          artist: 'Francis Naranjo',
+          year: '1998',
+          rule: {
+            "monday": [ 16, 26, 6, 14 ],
+            "tuesday": [ 22, 2, 12, 19 ],
+            "wednesday": [ 21, 1, 11, 19 ],
+            "thursday": [ 20, 30, 10, 18 ],
+            "friday": [ 19, 29, 9, 17 ],
+            "saturday": [ 18, 28, 8, 16 ],
+            "sunday": [ 17, 27, 7, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
