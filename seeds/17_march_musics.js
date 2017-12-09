@@ -1760,7 +1760,7 @@ exports.seed = function(knex, Promise) {
           href_string: 'http://fperecs.bandcamp.com/album/intergalactic-beings',
           a_string: 'Intergalactic Beings by Nicole Mitchell&#39;s Black Earth Ensemble',
           rule: {
-            "monday": [ 15, 21, 37, 4 ],
+            "monday": [ 15, 21, 27, 4 ],
             "tuesday": [ 19, 25, 31, 8 ],
             "wednesday": [ 18, 24, 30, 7 ],
             "thursday": [ 17, 23, 29, 7 ],
@@ -1779,7 +1779,7 @@ exports.seed = function(knex, Promise) {
           a_string: 'Xenogenesis Suite by Nicole Mitchell&#39;s Black Earth Ensemble',
           rule: {
             "monday": [ 16, 22, 28, 5 ],
-            "tuesday": [ 15, 21, 37, 4 ],
+            "tuesday": [ 15, 21, 27, 4 ],
             "wednesday": [ 19, 25, 31, 8 ],
             "thursday": [ 18, 24, 30, 7 ],
             "saturday": [ 17, 23, 29, 7 ]
@@ -1798,7 +1798,7 @@ exports.seed = function(knex, Promise) {
           rule: {
             "monday": [ 17, 23, 29, 7 ],
             "tuesday": [ 16, 22, 28, 5 ],
-            "wednesday": [ 15, 21, 37, 4 ],
+            "wednesday": [ 15, 21, 27, 4 ],
             "thursday": [ 19, 25, 31, 8 ],
             "saturday": [ 18, 24, 30, 7 ]
           },
@@ -1817,7 +1817,7 @@ exports.seed = function(knex, Promise) {
             "monday": [ 18, 24, 30, 7 ],
             "tuesday": [ 17, 23, 29, 7 ],
             "wednesday": [ 16, 22, 28, 5 ],
-            "thursday": [ 15, 21, 37, 4 ],
+            "thursday": [ 15, 21, 27, 4 ],
             "saturday": [ 19, 25, 31, 8 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
@@ -1836,7 +1836,61 @@ exports.seed = function(knex, Promise) {
             "tuesday": [ 18, 24, 30, 7 ],
             "wednesday": [ 17, 23, 29, 7 ],
             "thursday": [ 16, 22, 28, 5 ],
-            "saturday": [ 15, 21, 37, 4 ]
+            "saturday": [ 15, 21, 27, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 103,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=547011702/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://gommegomme.bandcamp.com/album/hiss',
+          a_string: 'Hiss by Gomme',
+          rule: {
+            "monday": [ 15, 21, 27, 4 ],
+            "tuesday": [ 19, 25, 31, 8 ],
+            "wednesday": [ 18, 24, 30, 7 ],
+            "thursday": [ 17, 23, 29, 7 ],
+            "saturday": [ 16, 22, 28, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 104,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3119809886/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://dangerrecords.bandcamp.com/album/dr-029-mary-bell-lp-sold-out',
+          a_string: 'DR-029 // Mary Bell (LP) // sold out by MARY BELL',
+          rule: {
+            "monday": [ 16, 22, 28, 5 ],
+            "tuesday": [ 15, 21, 27, 4 ],
+            "wednesday": [ 19, 25, 31, 8 ],
+            "thursday": [ 18, 24, 30, 7 ],
+            "saturday": [ 17, 23, 29, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 105,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3499262377/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://eeriewandabbib.bandcamp.com/album/hum',
+          a_string: 'Hum by Eerie Wanda',
+          rule: {
+            "monday": [ 18, 24, 30, 8 ],
+            "tuesday": [ 17, 23, 29, 6 ],
+            "wednesday": [ 16, 22, 28, 5 ],
+            "thursday": [ 20, 26, 1, 9 ],
+            "saturday": [ 19, 25, 31, 8 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
