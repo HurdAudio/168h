@@ -1516,6 +1516,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 85,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=283318884/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://adarcahianku.bandcamp.com/album/the-lost-beggars-of-sahara',
+          a_string: 'the lost beggars of sahara by adarkah ianqu',
+          rule: {
+            "monday": [ 11, 15, 20, 2 ],
+            "tuesday": [ 11, 14, 20, 1 ],
+            "wednesday": [ 9, 17, 19, 30 ],
+            "thursday": [ 13, 17, 23, 4 ],
+            "saturday": [ 12, 16, 22, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 86,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3144344340/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://blankembrace.bandcamp.com/album/pure',
+          a_string: 'Pure by Blank Embrace',
+          rule: {
+            "monday": [ 12, 16, 22, 2 ],
+            "tuesday": [ 11, 15, 20, 2 ],
+            "wednesday": [ 11, 14, 20, 1 ],
+            "thursday": [ 9, 17, 19, 30 ],
+            "saturday": [ 13, 17, 23, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 87,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1505950645/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://fabersan.bandcamp.com/album/selected-ambients-2017-collection',
+          a_string: 'Selected Ambients 2017 (Collection) by Fabersan',
+          rule: {
+            "monday": [ 13, 17, 23, 4 ],
+            "tuesday": [ 12, 16, 22, 2 ],
+            "wednesday": [ 11, 15, 20, 2 ],
+            "thursday": [ 11, 14, 20, 1 ],
+            "saturday": [ 9, 17, 19, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
