@@ -8737,6 +8737,39 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 558,
+          user_id: 1,
+          name: 'Sunny Murray (drums) born in 1936',
+          color: '#D2C081',
+          picture: './img/musicians/SunnyMurray-129619900.jpg',
+          day_of: new Date ('1936-09-21T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: true,
+          override_content: {
+            "sources": [ 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp' ],
+            "src_strings": [ 'https://bandcamp.com/EmbeddedPlayer/album=2277641234/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=474398440/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=3411340270/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=872217913/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=1558909120/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/' ],
+            "href_strings": [ 'http://sunnymurray.bandcamp.com/album/sunny-murray', 'http://futuramarge.bandcamp.com/album/aigu-grave', 'http://ayler-records.bandcamp.com/album/ode-to-albert-ayler', 'http://eremiterecords.bandcamp.com/album/we-are-not-at-the-opera', 'http://ayler-records.bandcamp.com/album/live-at-glenn-miller-caf-3' ],
+            "a_strings": [ 'Sunny Murray by Sunny Murray', 'Aigu-Grave by Sunny Murray Quintet', 'Ode to Albert Ayler by Mark O&#39;Leary &amp; Sunny Murray', 'We Are Not At The Opera by Sunny Murray &amp; Sabir Mateen', 'Live at Glenn Miller Café by Arthur Doyle &amp; Sunny Murray' ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 559,
+          user_id: 1,
+          name: 'The world ended on this day in 1994 according to Harold Camping\'s second attempt at apocalyptic prophecy.',
+          color: '#585244',
+          picture: './img/doomsday/camping.jpg',
+          day_of: new Date ('1994-09-29T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
