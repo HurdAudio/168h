@@ -1204,6 +1204,36 @@ exports.seed = function(knex, Promise) {
           a_string: 'Horizon - Live In Cairo Egypt by Sun Ra And His Intergalactic Myth Science Solar Arkestra',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 121,
+          user_id: 1,
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4011718519/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sunrastrut.bandcamp.com/album/nidhamu-dark-myth-equation-visitation-live-in-cairo-egypt',
+          a_string: 'Nidhamu &amp; Dark Myth Equation Visitation - Live in Cairo Egypt by Sun Ra And His Intergalactic Myth Science Solar Arkestra',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 122,
+          user_id: 1,
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=564815314/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sunrastrut.bandcamp.com/album/media-dreams-complete-concert-milan-1978',
+          a_string: 'Media Dreams Complete Concert  Milan 1978 by Sun Ra',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 123,
+          user_id: 1,
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1043906859/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sunrastrut.bandcamp.com/album/on-jupiter',
+          a_string: 'On Jupiter by Sun Ra And His Intergalactic Myth Science Solar Arkestra',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
