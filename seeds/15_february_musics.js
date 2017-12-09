@@ -1948,6 +1948,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 109,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4289860543/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://lesfillesdeillighadad.bandcamp.com/album/eghass-malan',
+          a_string: 'Eghass Malan by Les Filles de Illighadad',
+          rule: {
+            "monday": [ 21, 25, 27, 29 ],
+            "tuesday": [ 4, 27, 29, 6 ],
+            "wednesday": [ 16, 21, 23, 6 ],
+            "thursday": [ 17, 21, 23, 27 ],
+            "saturday": [ 19, 23, 25, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 110,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2223328995/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://fadimoutouwalletinamoud.bandcamp.com/album/isswat',
+          a_string: 'Isswat by Fadimoutou Wallet Inamoud',
+          rule: {
+            "monday": [ 19, 23, 25, 29 ],
+            "tuesday": [ 21, 25, 27, 29 ],
+            "wednesday": [ 4, 27, 29, 6 ],
+            "thursday": [ 16, 21, 23, 6 ],
+            "saturday": [ 17, 21, 23, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 111,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=639873524/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://mammansani.bandcamp.com/album/la-musique-electronique-du-niger',
+          a_string: 'La Musique Electronique du Niger by Mamman Sani',
+          rule: {
+            "monday": [ 17, 21, 23, 27 ],
+            "tuesday": [ 19, 23, 25, 29 ],
+            "wednesday": [ 21, 25, 27, 29 ],
+            "thursday": [ 4, 27, 29, 6 ],
+            "saturday": [ 16, 21, 23, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
