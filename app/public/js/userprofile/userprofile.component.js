@@ -157,6 +157,78 @@
       vm.toggleObservancMonth = toggleObservancMonth;
       vm.editGoal = editGoal;
       vm.userGoalsEditorDone = userGoalsEditorDone;
+      vm.deleteTask = deleteTask;
+
+      function deleteTask(taskId) {
+        let months = [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ];
+        let userTaskDeleteConfirmDiv = document.getElementById('userTaskDeleteConfirmDiv');
+        let tasksManagementDiv = document.getElementById('tasksManagementDiv');
+        let userTasksEditingDiv = document.getElementById('userTasksEditingDiv');
+        let tasksManagerDone = document.getElementById('tasksManagerDone');
+        let userTaskDeleteConfirmButtons = document.getElementById('userTaskDeleteConfirmButtons');
+        let userTaskConfirmYes = document.getElementById('userTaskConfirmYes');
+        if (userTaskConfirmYes) {
+          userTaskConfirmYes.parentNode.removeChild(userTaskConfirmYes);
+          userTaskConfirmYes = document.createElement('a');
+          userTaskDeleteConfirmButtons.appendChild(userTaskConfirmYes);
+          userTaskConfirmYes.id = 'userTaskConfirmYes';
+          userTaskConfirmYes.className = 'btn';
+          userTaskConfirmYes.innerHTML = 'yes';
+          userTaskConfirmYes.setAttribute("style", "cursor: pointer;");
+        }
+        let userTaskConfirmNo = document.getElementById('userTaskConfirmNo');
+        if (userTaskConfirmNo) {
+          userTaskConfirmNo.parentNode.removeChild(userTaskConfirmNo);
+          userTaskConfirmNo = document.createElement('a');
+          userTaskDeleteConfirmButtons.appendChild(userTaskConfirmNo);
+          userTaskConfirmNo.id = 'userTaskConfirmNo';
+          userTaskConfirmNo.className = 'btn';
+          userTaskConfirmNo.innerHTML = 'no';
+          userTaskConfirmNo.setAttribute("style", "cursor: pointer;");
+        }
+        let userTaskDeleteName = document.getElementById('userTaskDeleteName');
+        let userTaskDue = document.getElementById('userTaskDue');
+        let dueDate;
+        let userTaskCompleted = document.getElementById('userTaskCompleted');
+        let completedDate;
+
+        $http.get(`/tasks/${taskId}`)
+        .then(taskData=>{
+          let task = taskData.data;
+          userTaskDeleteName.innerHTML = task.name;
+          dueDate = new Date(task.due_date);
+          userTaskDue.innerHTML = 'Due: ' + dueDate.getDate().toString() + ' ' + months[dueDate.getMonth()] + ' ' + dueDate.getFullYear().toString();
+          if (task.is_completed) {
+            completedDate = new Date(task.completed_date);
+            userTaskCompleted.innerHTML = 'Completed on ' + completedDate.getDate().toString() + ' ' + months[completedDate.getMonth()] + ' ' + completedDate.getFullYear().toString();
+          } else {
+            userTaskCompleted.innerHTML = 'Not Completed';
+          }
+
+
+          userTaskConfirmYes.addEventListener('click', ()=>{
+            $http.delete(`/tasks/${taskId}`)
+            .then(()=>{
+              userTaskDeleteConfirmDiv.setAttribute("style", "display: none;");
+              tasksManagementDiv.setAttribute("style", "display: initial;");
+              taskManager();
+            });
+          });
+
+          userTaskConfirmNo.addEventListener('click', ()=>{
+            userTaskDeleteConfirmDiv.setAttribute("style", "display: none;");
+            tasksManagementDiv.setAttribute("style", "display: initial;");
+          });
+
+        });
+
+
+
+        userTaskDeleteConfirmDiv.setAttribute("style", "display: initial;");
+        tasksManagementDiv.setAttribute("style", "display: none;");
+        userTasksEditingDiv.setAttribute("style", "display: none;");
+        tasksManagerDone.setAttribute("style", "visibility: visible;");
+      }
 
       function userGoalsEditorDone() {
         let userGoalsEditingDiv = document.getElementById('userGoalsEditingDiv');
