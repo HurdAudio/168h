@@ -3304,6 +3304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 166,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/b104c30f94ce537003ab52a31d211eda-e1449271871848.jpg',
+          title: 'Topps 1955 Baseball Box',
+          artist: '?',
+          year: 'xx cent.',
+          rule: {
+            "monday": [ 20, 25, 30, 6 ],
+            "tuesday": [ 19, 24, 30, 6 ],
+            "wednesday": [ 18, 23, 29, 5 ],
+            "thursday": [ 23, 29, 4, 11 ],
+            "friday": [ 7, 27, 3, 10 ],
+            "saturday": [ 22, 27, 3, 9 ],
+            "sunday": [ 21, 25, 10, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 167,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/posed_slide.jpeg',
+          title: 'Posed Slide',
+          artist: '?',
+          year: 'xix - xx cent.',
+          rule: {
+            "monday": [ 21, 25, 10, 8 ],
+            "tuesday": [ 20, 25, 30, 6 ],
+            "wednesday": [ 19, 24, 30, 6 ],
+            "thursday": [ 18, 23, 29, 5 ],
+            "friday": [ 23, 29, 4, 11 ],
+            "saturday": [ 7, 27, 3, 10 ],
+            "sunday": [ 22, 27, 3, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 168,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/FreeVector-Baseball-Graphics.jpg',
+          title: 'Batter',
+          artist: 'ArtAmp.com',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 23, 28, 4, 10 ],
+            "tuesday": [ 22, 26, 11, 9 ],
+            "wednesday": [ 21, 26, 1, 7 ],
+            "thursday": [ 20, 25, 1, 7 ],
+            "friday": [ 19, 24, 30, 6 ],
+            "saturday": [ 24, 30, 5, 12 ],
+            "sunday": [ 8, 28, 4, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 169,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/Vintage-Baseball-Player-Illustration.png',
+          title: 'Vintage Baseball Player Illustration',
+          artist: 'GDJ',
+          year: '2015',
+          rule: {
+            "monday": [ 8, 28, 4, 11 ],
+            "tuesday": [ 23, 28, 4, 10 ],
+            "wednesday": [ 22, 26, 11, 9 ],
+            "thursday": [ 21, 26, 1, 7 ],
+            "friday": [ 20, 25, 1, 7 ],
+            "saturday": [ 19, 24, 30, 6 ],
+            "sunday": [ 24, 30, 5, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 170,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/13113230084_77bab2c4f7_o.jpg',
+          title: '1967 CHI',
+          artist: '?',
+          year: '1967',
+          rule: {
+            "monday": [ 24, 30, 5, 12 ],
+            "tuesday": [ 8, 28, 4, 11 ],
+            "wednesday": [ 23, 28, 4, 10 ],
+            "thursday": [ 22, 26, 11, 9 ],
+            "friday": [ 21, 26, 1, 7 ],
+            "saturday": [ 20, 25, 1, 7 ],
+            "sunday": [ 19, 24, 30, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
