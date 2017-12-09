@@ -2704,6 +2704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 136,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/sculptcure-par-jean-luc-blanc-2007.jpg',
+          title: 'Sculptcure (par Jean-Luc Blanc)',
+          artist: 'Michel Blazy',
+          year: '2007',
+          rule: {
+            "monday": [ 16, 27, 7, 18 ],
+            "tuesday": [ 22, 2, 13, 24 ],
+            "wednesday": [ 21, 1, 12, 23 ],
+            "thursday": [ 20, 31, 11, 22 ],
+            "friday": [ 19, 30, 10, 21 ],
+            "saturday": [ 18, 29, 9, 20 ],
+            "sunday": [ 17, 28, 8, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 137,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/cantona-s-rolls-royce.jpg',
+          title: 'Cantona\'s Rolls Royce',
+          artist: 'JonOne',
+          year: '?',
+          rule: {
+            "monday": [ 17, 28, 8, 9 ],
+            "tuesday": [ 16, 27, 7, 18 ],
+            "wednesday": [ 22, 2, 13, 24 ],
+            "thursday": [ 21, 1, 12, 23 ],
+            "friday": [ 20, 31, 11, 22 ],
+            "saturday": [ 19, 30, 10, 21 ],
+            "sunday": [ 18, 29, 9, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 138,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/pont-du-ciel-100by100cm-2016.jpg',
+          title: 'Pont Du Ciel',
+          artist: 'Li CHEVALIER',
+          year: '2016',
+          rule: {
+            "monday": [ 18, 29, 9, 20 ],
+            "tuesday": [ 17, 28, 8, 9 ],
+            "wednesday": [ 16, 27, 7, 18 ],
+            "thursday": [ 22, 2, 13, 24 ],
+            "friday": [ 21, 1, 12, 23 ],
+            "saturday": [ 20, 31, 11, 22 ],
+            "sunday": [ 19, 30, 10, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 139,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/le-cirque-1984-175x140.jpg',
+          title: 'Circuse',
+          artist: 'Eric Massholder',
+          year: '1984',
+          rule: {
+            "monday": [ 19, 30, 10, 21 ],
+            "tuesday": [ 18, 29, 9, 20 ],
+            "wednesday": [ 17, 28, 8, 9 ],
+            "thursday": [ 16, 27, 7, 18 ],
+            "friday": [ 22, 2, 13, 24 ],
+            "saturday": [ 21, 1, 12, 23 ],
+            "sunday": [ 20, 31, 11, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 140,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/l-abus-de-plaisir-2013.jpg',
+          title: 'L’abus de plaisir',
+          artist: 'Miss.Tic',
+          year: '2013',
+          rule: {
+            "monday": [ 21, 1, 12, 23 ],
+            "tuesday": [ 20, 31, 11, 22 ],
+            "wednesday": [ 19, 30, 10, 21 ],
+            "thursday": [ 18, 29, 9, 10 ],
+            "friday": [ 17, 28, 8, 19 ],
+            "saturday": [ 23, 3, 14, 24 ],
+            "sunday": [ 22, 2, 13, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
