@@ -2504,6 +2504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 126,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/archers-1937.jpg',
+          title: 'Archers',
+          artist: 'Ernst Ludwig Kirchner',
+          year: '1935 - 1937',
+          rule: {
+            "monday": [ 20, 24, 1, 17 ],
+            "tuesday": [ 19, 23, 31, 16 ],
+            "wednesday": [ 18, 20, 30, 15 ],
+            "thursday": [ 17, 20, 29, 14 ],
+            "friday": [ 16, 19, 28, 13 ],
+            "saturday": [ 22, 26, 3, 19 ],
+            "sunday": [ 21, 24, 2, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 127,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/1919-alarm-1934.jpg',
+          title: '1919. Alarm',
+          artist: 'Kuzma Petrov-Vodkin',
+          year: '1934',
+          rule: {
+            "monday": [ 21, 24, 2, 18 ],
+            "tuesday": [ 20, 24, 1, 17 ],
+            "wednesday": [ 19, 23, 31, 16 ],
+            "thursday": [ 18, 20, 30, 15 ],
+            "friday": [ 17, 20, 29, 14 ],
+            "saturday": [ 16, 19, 28, 13 ],
+            "sunday": [ 22, 26, 3, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 128,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/untitled-1930.jpg',
+          title: 'Untitled',
+          artist: 'William Baziotes',
+          year: '1930',
+          rule: {
+            "monday": [ 22, 26, 3, 19 ],
+            "tuesday": [ 21, 24, 2, 18 ],
+            "wednesday": [ 20, 24, 1, 17 ],
+            "thursday": [ 19, 23, 31, 16 ],
+            "friday": [ 18, 20, 30, 15 ],
+            "saturday": [ 17, 20, 29, 14 ],
+            "sunday": [ 16, 19, 28, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 129,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/dance-around-the-golden-calf-1910.jpg',
+          title: 'Dance Around the Golden Calf',
+          artist: 'Emil Nolde',
+          year: '1910',
+          rule: {
+            "monday": [ 16, 19, 28, 13 ],
+            "tuesday": [ 22, 26, 3, 19 ],
+            "wednesday": [ 21, 24, 2, 18 ],
+            "thursday": [ 20, 24, 1, 17 ],
+            "friday": [ 19, 23, 31, 16 ],
+            "saturday": [ 18, 20, 30, 15 ],
+            "sunday": [ 17, 20, 29, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 130,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/the-riding-crop-1928.jpg',
+          title: 'The Riding Crop',
+          artist: 'Jean Dupas',
+          year: '1928',
+          rule: {
+            "monday": [ 17, 20, 29, 14 ],
+            "tuesday": [ 16, 19, 28, 13 ],
+            "wednesday": [ 22, 26, 3, 19 ],
+            "thursday": [ 21, 24, 2, 18 ],
+            "friday": [ 20, 24, 1, 17 ],
+            "saturday": [ 19, 23, 31, 16 ],
+            "sunday": [ 18, 20, 30, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
