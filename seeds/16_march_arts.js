@@ -3504,6 +3504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 176,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/lafarina1952.jpg',
+          title: 'The flour',
+          artist: 'Maria Lai',
+          year: '1952',
+          rule: {
+            "monday": [ 24, 3, 13, 21 ],
+            "tuesday": [ 23, 2, 10, 20 ],
+            "wednesday": [ 22, 1, 9, 19 ],
+            "thursday": [ 21, 31, 8, 18 ],
+            "friday": [ 20, 30, 7, 17 ],
+            "saturday": [ 19, 29, 7, 16 ],
+            "sunday": [ 25, 3, 12, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 177,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/homenaje-a-max-bill-o-guatemala.jpg',
+          title: 'Homenaje a Max Bill o Guatemala',
+          artist: 'Lidy Prati',
+          year: '?',
+          rule: {
+            "monday": [ 25, 3, 12, 21 ],
+            "tuesday": [ 24, 3, 13, 21 ],
+            "wednesday": [ 23, 2, 10, 20 ],
+            "thursday": [ 22, 1, 9, 19 ],
+            "friday": [ 21, 31, 8, 18 ],
+            "saturday": [ 20, 30, 7, 17 ],
+            "sunday": [ 19, 29, 7, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 178,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/throughout-the-neighbourhood.jpg',
+          title: 'Throughout the Neighbourhood',
+          artist: 'Tia Peltz',
+          year: '?',
+          rule: {
+            "monday": [ 19, 29, 7, 16 ],
+            "tuesday": [ 25, 3, 12, 21 ],
+            "wednesday": [ 24, 3, 13, 21 ],
+            "thursday": [ 23, 2, 10, 20 ],
+            "friday": [ 22, 1, 9, 19 ],
+            "saturday": [ 21, 31, 8, 18 ],
+            "sunday": [ 20, 30, 7, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 179,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/digital-mudra-1989.jpg',
+          title: 'Digital Mudra',
+          artist: 'Sonya Rapoport',
+          year: '1989',
+          rule: {
+            "monday": [ 20, 30, 7, 17 ],
+            "tuesday": [ 19, 29, 7, 16 ],
+            "wednesday": [ 25, 3, 12, 21 ],
+            "thursday": [ 24, 3, 13, 21 ],
+            "friday": [ 23, 2, 10, 20 ],
+            "saturday": [ 22, 1, 9, 19 ],
+            "sunday": [ 21, 31, 8, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 180,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/eventide-2002.jpg',
+          title: 'Eventide',
+          artist: 'Jane Wilson',
+          year: '2002',
+          rule: {
+            "monday": [ 21, 31, 8, 18 ],
+            "tuesday": [ 20, 30, 7, 17 ],
+            "wednesday": [ 19, 29, 7, 16 ],
+            "thursday": [ 25, 3, 12, 21 ],
+            "friday": [ 24, 3, 13, 21 ],
+            "saturday": [ 23, 2, 10, 20 ],
+            "sunday": [ 22, 1, 9, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
