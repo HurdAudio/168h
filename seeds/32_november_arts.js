@@ -1904,6 +1904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 96,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/untitled-1994.jpg',
+          title: 'Untitled',
+          artist: 'Jessica Stockholder',
+          year: '1994',
+          rule: {
+            "monday": [ 17, 21, 28, 3 ],
+            "tuesday": [ 16, 21, 27, 2 ],
+            "wednesday": [ 15, 20, 26, 3 ],
+            "thursday": [ 21, 26, 2, 7 ],
+            "friday": [ 20, 25, 1, 6 ],
+            "saturday": [ 19, 24, 30, 4 ],
+            "sunday": [ 18, 23, 29, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 97,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/my-colorful-family-1998.jpg',
+          title: 'My Colorful Family',
+          artist: 'Charles Long',
+          year: '1998',
+          rule: {
+            "monday": [ 18, 23, 29, 4 ],
+            "tuesday": [ 17, 21, 28, 3 ],
+            "wednesday": [ 16, 21, 27, 2 ],
+            "thursday": [ 15, 20, 26, 3 ],
+            "friday": [ 21, 26, 2, 7 ],
+            "saturday": [ 20, 25, 1, 6 ],
+            "sunday": [ 19, 24, 30, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 98,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/untitled-warm-water-1988.jpg',
+          title: '"Untitled" (Warm Water)',
+          artist: 'Felix Gonzalez-Torres',
+          year: '1988',
+          rule: {
+            "monday": [ 20, 25, 1, 5 ],
+            "tuesday": [ 19, 24, 30, 5 ],
+            "wednesday": [ 18, 22, 29, 4 ],
+            "thursday": [ 17, 22, 28, 3 ],
+            "friday": [ 16, 21, 27, 4 ],
+            "saturday": [ 22, 27, 3, 8 ],
+            "sunday": [ 21, 26, 2, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 99,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/the-event-of-a-thread-2013.jpg',
+          title: 'the event of a thread',
+          artist: 'Ann Hamilton',
+          year: '2013',
+          rule: {
+            "monday": [ 21, 26, 2, 7 ],
+            "tuesday": [ 20, 25, 1, 5 ],
+            "wednesday": [ 19, 24, 30, 5 ],
+            "thursday": [ 18, 22, 29, 4 ],
+            "friday": [ 17, 22, 28, 3 ],
+            "saturday": [ 16, 21, 27, 4 ],
+            "sunday": [ 22, 27, 3, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 100,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/probably-best-seen-in-a-dark-room-with-the-t-v-on-1999.jpg',
+          title: 'Probably Best Seen in a Dark Room with the T.V. On',
+          artist: 'Tony Feher',
+          year: '1999',
+          rule: {
+            "monday": [ 22, 27, 3, 8 ],
+            "tuesday": [ 21, 26, 2, 7 ],
+            "wednesday": [ 20, 25, 1, 5 ],
+            "thursday": [ 19, 24, 30, 5 ],
+            "friday": [ 18, 22, 29, 4 ],
+            "saturday": [ 17, 22, 28, 3 ],
+            "sunday": [ 16, 21, 27, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
