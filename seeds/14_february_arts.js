@@ -3704,6 +3704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 186,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/john_outterbridge_no_time_for_jivingco_from_the_containment_series_1969_hammer_now_dig_this_for_pst_700.jpg',
+          title: 'No Time for Jivin\'',
+          artist: 'John Outterbridge',
+          year: '1969',
+          rule: {
+            "monday": [ 7, 15, 23, 4 ],
+            "tuesday": [ 9, 17, 13, 3 ],
+            "wednesday": [ 26, 5, 13, 21 ],
+            "thursday": [ 28, 7, 15, 23 ],
+            "friday": [ 4, 9, 15, 25 ],
+            "saturday": [ 3, 11, 19, 27 ],
+            "sunday": [ 5, 15, 21, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 187,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Eclipse_by_Joe_Overstreet,_2002.jpg',
+          title: 'Eclipse',
+          artist: 'Joe Overstreet',
+          year: '2002',
+          rule: {
+            "monday": [ 5, 15, 21, 27 ],
+            "tuesday": [ 7, 15, 23, 4 ],
+            "wednesday": [ 9, 17, 13, 3 ],
+            "thursday": [ 26, 5, 13, 21 ],
+            "friday": [ 28, 7, 15, 23 ],
+            "saturday": [ 4, 9, 15, 25 ],
+            "sunday": [ 3, 11, 19, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 188,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Gordon_Parks_-_American_Gothic.jpg',
+          title: 'American Gothic',
+          artist: 'Gordon Parks',
+          year: '1942',
+          rule: {
+            "monday": [ 3, 11, 19, 27 ],
+            "tuesday": [ 5, 15, 21, 27 ],
+            "wednesday": [ 7, 15, 23, 4 ],
+            "thursday": [ 9, 17, 13, 3 ],
+            "friday": [ 26, 5, 13, 21 ],
+            "saturday": [ 28, 7, 15, 23 ],
+            "sunday": [ 4, 9, 15, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 189,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/If_You_Want_To_See_Something_WEBSHARE.jpg',
+          title: 'Cecelia Pedescleaux',
+          artist: 'Quilt',
+          year: '?',
+          rule: {
+            "monday": [ 5, 10, 16, 26 ],
+            "tuesday": [ 4, 12, 20, 28 ],
+            "wednesday": [ 6, 16, 22, 28 ],
+            "thursday": [ 8, 16, 24, 5 ],
+            "friday": [ 10, 18, 14, 4 ],
+            "saturday": [ 27, 6, 14, 22 ],
+            "sunday": [ 29, 8, 16, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 190,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/cropped-screen-shot-2013-06-06-at-8-01-13-am1.png',
+          title: '?',
+          artist: 'Delilah Pierce',
+          year: '?',
+          rule: {
+            "monday": [ 29, 8, 16, 24 ],
+            "tuesday": [ 5, 10, 16, 26 ],
+            "wednesday": [ 4, 12, 20, 28 ],
+            "thursday": [ 6, 16, 22, 28 ],
+            "friday": [ 8, 16, 24, 5 ],
+            "saturday": [ 10, 18, 14, 4 ],
+            "sunday": [ 27, 6, 14, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
