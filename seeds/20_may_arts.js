@@ -3078,7 +3078,7 @@ exports.seed = function(knex, Promise) {
             "tuesday": [ 16, 27, 6, 26 ],
             "wednesday": [ 15, 25, 4, 14 ],
             "thursday": [ 13, 23, 2, 12 ],
-            "friday": [ 11, 11, 1, 10 ],
+            "friday": [ 11, 19, 1, 10 ],
             "saturday": [ 23, 2, 12, 20 ],
             "sunday": [ 21, 1, 10, 20 ]
           },
@@ -3099,8 +3099,108 @@ exports.seed = function(knex, Promise) {
             "wednesday": [ 16, 27, 6, 26 ],
             "thursday": [ 15, 25, 4, 14 ],
             "friday": [ 13, 23, 2, 12 ],
-            "saturday": [ 11, 11, 1, 10 ],
+            "saturday": [ 11, 19, 1, 10 ],
             "sunday": [ 23, 2, 12, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 156,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/bullygate.jpg',
+          title: 'Bullygate',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 23, 2, 12, 20 ],
+            "tuesday": [ 21, 1, 10, 20 ],
+            "wednesday": [ 19, 29, 6, 18 ],
+            "thursday": [ 16, 27, 6, 26 ],
+            "friday": [ 15, 25, 4, 14 ],
+            "saturday": [ 13, 23, 2, 12 ],
+            "sunday": [ 11, 19, 1, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 157,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/rush.jpg',
+          title: 'Rush',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 11, 19, 1, 10 ],
+            "tuesday": [ 23, 2, 12, 20 ],
+            "wednesday": [ 21, 1, 10, 20 ],
+            "thursday": [ 19, 29, 6, 18 ],
+            "friday": [ 16, 27, 6, 26 ],
+            "saturday": [ 15, 25, 4, 14 ],
+            "sunday": [ 13, 23, 2, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 158,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/rush-1.jpg',
+          title: 'Rush',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 13, 23, 2, 12 ],
+            "tuesday": [ 11, 19, 1, 10 ],
+            "wednesday": [ 23, 2, 12, 20 ],
+            "thursday": [ 21, 1, 10, 20 ],
+            "friday": [ 19, 29, 6, 18 ],
+            "saturday": [ 16, 27, 6, 26 ],
+            "sunday": [ 15, 25, 4, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 159,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/condi.jpg',
+          title: 'Condi',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 15, 25, 4, 14 ],
+            "tuesday": [ 13, 23, 2, 12 ],
+            "wednesday": [ 11, 19, 1, 10 ],
+            "thursday": [ 23, 2, 12, 20 ],
+            "friday": [ 21, 1, 10, 20 ],
+            "saturday": [ 19, 29, 6, 18 ],
+            "sunday": [ 16, 27, 6, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 160,
+          user_id: 1,
+          theme: 'socialism/worker\'s struggle',
+          img_path: './img/may/johnie.jpg',
+          title: 'Johnie',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 16, 27, 6, 26 ],
+            "tuesday": [ 15, 25, 4, 14 ],
+            "wednesday": [ 13, 23, 2, 12 ],
+            "thursday": [ 11, 19, 1, 10 ],
+            "friday": [ 23, 2, 12, 20 ],
+            "saturday": [ 21, 1, 10, 20 ],
+            "sunday": [ 19, 29, 6, 18 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
