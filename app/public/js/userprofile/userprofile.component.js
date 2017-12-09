@@ -155,6 +155,119 @@
       vm.observanceManager = observanceManager;
       vm.closeObservancesManager = closeObservancesManager;
       vm.toggleObservancMonth = toggleObservancMonth;
+      vm.editGoal = editGoal;
+      vm.userGoalsEditorDone = userGoalsEditorDone;
+
+      function userGoalsEditorDone() {
+        let userGoalsEditingDiv = document.getElementById('userGoalsEditingDiv');
+        let goalsManagerDone = document.getElementById('goalsManagerDone');
+
+
+        userGoalsEditingDiv.setAttribute("style", "display: none;");
+        goalsManagerDone.setAttribute("style", "visibility: visible;");
+        goalManager();
+      }
+
+      function editGoal(goalId) {
+        let pushIt = false;
+        let userGoalsEditingDiv = document.getElementById('userGoalsEditingDiv');
+        let goalsManagerDone = document.getElementById('goalsManagerDone');
+        let userGoalBlocktypeDiv = document.getElementById('userGoalBlocktypeDiv');
+        let userGoalBlocktypeSelect = document.getElementById('userGoalBlocktypeSelect');
+        if (userGoalBlocktypeSelect) {
+          userGoalBlocktypeSelect.parentNode.removeChild(userGoalBlocktypeSelect);
+          userGoalBlocktypeSelect = document.createElement('select');
+          userGoalBlocktypeDiv.appendChild(userGoalBlocktypeSelect);
+          userGoalBlocktypeSelect.id = 'userGoalBlocktypeSelect';
+          userGoalBlocktypeSelect.className = 'pure-input-1';
+        }
+        let element;
+        let userGoalsHoursDiv = document.getElementById('userGoalsHoursDiv');
+        let userGoalsHours = document.getElementById('userGoalsHours');
+        if (userGoalsHours) {
+          userGoalsHours.parentNode.removeChild(userGoalsHours);
+          userGoalsHours = document.createElement('input');
+          userGoalsHoursDiv.appendChild(userGoalsHours);
+          userGoalsHours.id = 'userGoalsHours';
+          userGoalsHours.type = 'number';
+          userGoalsHours.min = '0.0';
+          userGoalsHours.max = '168.0';
+          userGoalsHours.step = '0.5';
+          userGoalsHours.className = 'pure-input-1';
+        }
+
+
+        $http.get(`/blocktypesbyuser/${currentUserId}`)
+        .then(blocktypesData=>{
+          let blocks = blocktypesData.data;
+          $http.get(`/goalsbyuser/${currentUserId}`)
+          .then(goalsData=>{
+            let goals = goalsData.data;
+            $http.get(`/goals/${goalId}`)
+            .then(currentGoalData=>{
+              let currentGoal = currentGoalData.data;
+              let blocksList = [];
+              for (let i = 0; i < blocks.length; i++) {
+                if (currentGoal.block_type === blocks[i].id) {
+                  blocksList.push(blocks[i]);
+                } else {
+                  pushIt = true;
+                  for (let j = 0; j < goals.length; j++) {
+                    if (goals[j].block_type === blocks[i].id) {
+                      pushIt = false;
+                    }
+                  }
+                  if (pushIt) {
+                    blocksList.push(blocks[i]);
+                  }
+                }
+              }
+              let blockSelect = blocksList.sort((a, b)=>{
+                if (a.type.toLowerCase() < b.type.toLowerCase()) {
+                  return -1;
+                } else if (a.type.toLowerCase() > b.type.toLowerCase()) {
+                  return 1;
+                } else {
+                  return 0;
+                }
+              });
+              for (let k = 0; k < blockSelect.length; k++) {
+                element = document.createElement('option');
+                userGoalBlocktypeSelect.appendChild(element);
+                element.value = blockSelect[k].id;
+                element.innerHTML = blockSelect[k].type;
+              }
+              userGoalBlocktypeSelect.value = currentGoal.block_type;
+              userGoalsHours.value = currentGoal.weekly_goal;
+
+              userGoalBlocktypeSelect.addEventListener('change', ()=>{
+                let subObj = {
+                  block_type: parseInt(userGoalBlocktypeSelect.value)
+                };
+                $http.patch(`/goals/${goalId}`, subObj)
+                .then(()=>{
+                  currentGoal.block_type = parseInt(userGoalBlocktypeSelect.value);
+                });
+              });
+
+              userGoalsHours.addEventListener('focusout', ()=>{
+                let subObj = {
+                  weekly_goal: userGoalsHours.value
+                };
+                if (parseInt(currentGoal.weekly_goal) !== parseInt(userGoalsHours.value)) {
+                  $http.patch(`/goals/${goalId}`, subObj)
+                  .then(()=>{
+                    currentGoal.weekly_goal = userGoalsHours.value;
+                  });
+                }
+              });
+            });
+          });
+        });
+
+        userGoalsEditingDiv.setAttribute("style", "display: initial;");
+        goalsManagerDone.setAttribute("style", "visibility: hidden;");
+      }
 
       function toggleObservancMonth(month) {
         let januaryObservanceToggleDiv = document.getElementById('januaryObservanceToggleDiv');
@@ -1683,6 +1796,19 @@
         .then(blockData=>{
           let block = blockData.data;
           vm.userGoals[index].blocktype = block.type;
+          vm.userGoals = vm.userGoals.sort((a, b)=>{
+            if ((a.blocktype !== undefined) && (b.blocktype !== undefined)) {
+              if (a.blocktype.toLowerCase() < b.blocktype.toLowerCase()) {
+                return -1;
+              } else if (a.blocktype.toLowerCase() > b.blocktype.toLowerCase()) {
+                return 1;
+              } else {
+                return 0;
+              }
+            } else {
+              return 0;
+            }
+          });
         });
       }
 
@@ -1699,6 +1825,7 @@
           if (goals.length > 0) {
             for (let i = 0; i < goals.length; i++) {
               vm.userGoals[i] = {};
+              vm.userGoals[i].id = goals[i].id;
               vm.userGoals[i].weekly_goal = goals[i].weekly_goal;
               getGoalBlocktypeName(i, goals[i].block_type);
             }
