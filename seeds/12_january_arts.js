@@ -3904,6 +3904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 196,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/abstract-painting-780-1-1.jpg',
+          title: 'Abstract Painting 780-1',
+          artist: 'Gerhard Richter',
+          year: '1992',
+          rule: {
+            "monday": [ 5, 6, 28, 1 ],
+            "tuesday": [ 8, 10, 11, 13 ],
+            "wednesday": [ 10, 12, 16, 19 ],
+            "thursday": [ 12, 14, 15, 18 ],
+            "friday": [ 28, 29, 9, 1 ],
+            "saturday": [ 31, 2, 25, 14 ],
+            "sunday": [ 2, 3, 26, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 197,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/orlando-1980.jpg',
+          title: 'Orlando',
+          artist: 'Albert Irvin',
+          year: '1980',
+          rule: {
+            "monday": [ 2, 3, 26, 29 ],
+            "tuesday": [ 5, 6, 28, 1 ],
+            "wednesday": [ 8, 10, 11, 13 ],
+            "thursday": [ 10, 12, 16, 19 ],
+            "friday": [ 12, 14, 15, 18 ],
+            "saturday": [ 28, 29, 9, 1 ],
+            "sunday": [ 31, 2, 25, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 198,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/untitled-drawing-2006.jpg',
+          title: 'Untitled Drawing',
+          artist: 'David Batchelor',
+          year: '2006',
+          rule: {
+            "monday": [ 31, 2, 25, 14 ],
+            "tuesday": [ 2, 3, 26, 29 ],
+            "wednesday": [ 5, 6, 28, 1 ],
+            "thursday": [ 8, 10, 11, 13 ],
+            "friday": [ 10, 12, 16, 19 ],
+            "saturday": [ 12, 14, 15, 18 ],
+            "sunday": [ 28, 29, 9, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 199,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/-1994-2.jpg',
+          title: '人态二',
+          artist: 'Xu Hongming',
+          year: '1994',
+          rule: {
+            "monday": [ 28, 29, 9, 1 ],
+            "tuesday": [ 31, 2, 25, 14 ],
+            "wednesday": [ 2, 3, 26, 29 ],
+            "thursday": [ 5, 6, 28, 1 ],
+            "friday": [ 8, 10, 11, 13 ],
+            "saturday": [ 10, 12, 16, 19 ],
+            "sunday": [ 12, 14, 15, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 200,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/untitled-june-1999.jpg',
+          title: 'Untitled, June',
+          artist: 'Stanley Whitney',
+          year: '1999',
+          rule: {
+            "monday": [ 12, 14, 15, 18 ],
+            "tuesday": [ 28, 29, 9, 1 ],
+            "wednesday": [ 31, 2, 25, 14 ],
+            "thursday": [ 2, 3, 26, 29 ],
+            "friday": [ 5, 6, 28, 1 ],
+            "saturday": [ 8, 10, 11, 13 ],
+            "sunday": [ 10, 12, 16, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
