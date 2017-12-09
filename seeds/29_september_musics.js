@@ -1192,6 +1192,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 67,
+          user_id: 1,
+          theme: 'math rock/progressive rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1254800922/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://hella.bandcamp.com/album/church-gone-wild-chirpin-hard',
+          a_string: 'Church Gone Wild/Chirpin Hard by Hella',
+          rule: {
+            "monday": [ 14, 4, 12, 6 ],
+            "tuesday": [ 13, 3, 11, 5 ],
+            "wednesday": [ 12, 2, 10, 4 ],
+            "thursday": [ 11, 1, 9, 3 ],
+            "saturday": [ 10, 30, 8, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 68,
+          user_id: 1,
+          theme: 'math rock/progressive rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=594277877/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://zachhill.bandcamp.com/album/face-tat',
+          a_string: 'FACE TAT by Zach Hill',
+          rule: {
+            "monday": [ 10, 30, 8, 2 ],
+            "tuesday": [ 14, 4, 12, 6 ],
+            "wednesday": [ 13, 3, 11, 5 ],
+            "thursday": [ 12, 2, 10, 4 ],
+            "saturday": [ 11, 1, 9, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 69,
+          user_id: 1,
+          theme: 'math rock/progressive rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3472867358/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://teramelos.bandcamp.com/album/patagonian-rats',
+          a_string: 'Patagonian Rats by Tera Melos',
+          rule: {
+            "monday": [ 11, 1, 9, 3 ],
+            "tuesday": [ 10, 30, 8, 2 ],
+            "wednesday": [ 14, 4, 12, 6 ],
+            "thursday": [ 13, 3, 11, 5 ],
+            "saturday": [ 12, 2, 10, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
