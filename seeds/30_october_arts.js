@@ -2104,6 +2104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 106,
+          user_id: 1,
+          theme: 'russian revolution',
+          img_path: './img/october/popup_Le_055.jpg',
+          title: 'Long live communist International!',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 20, 31, 11, 15 ],
+            "tuesday": [ 19, 30, 10, 14 ],
+            "wednesday": [ 18, 29, 9, 13 ],
+            "thursday": [ 17, 28, 8, 12 ],
+            "friday": [ 16, 27, 28, 11 ],
+            "saturday": [ 25, 26, 6, 10 ],
+            "sunday": [ 21, 1, 12, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 107,
+          user_id: 1,
+          theme: 'russian revolution',
+          img_path: './img/october/popup_Le_054.jpg',
+          title: 'Welcome Comrades!',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 21, 1, 12, 16 ],
+            "tuesday": [ 20, 31, 11, 15 ],
+            "wednesday": [ 19, 30, 10, 14 ],
+            "thursday": [ 18, 29, 9, 13 ],
+            "friday": [ 17, 28, 8, 12 ],
+            "saturday": [ 16, 27, 28, 11 ],
+            "sunday": [ 25, 26, 6, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 108,
+          user_id: 1,
+          theme: 'russian revolution',
+          img_path: './img/october/popup_Le_052.jpg',
+          title: '(Get) Off the road',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 25, 26, 6, 10 ],
+            "tuesday": [ 21, 1, 12, 16 ],
+            "wednesday": [ 20, 31, 11, 15 ],
+            "thursday": [ 19, 30, 10, 14 ],
+            "friday": [ 18, 29, 9, 13 ],
+            "saturday": [ 17, 28, 8, 12 ],
+            "sunday": [ 16, 27, 28, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 109,
+          user_id: 1,
+          theme: 'russian revolution',
+          img_path: './img/october/popup_Le_051.jpg',
+          title: 'Damnation and death to the hired assassins!',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 16, 27, 28, 11 ],
+            "tuesday": [ 25, 26, 6, 10 ],
+            "wednesday": [ 21, 1, 12, 16 ],
+            "thursday": [ 20, 31, 11, 15 ],
+            "friday": [ 19, 30, 10, 14 ],
+            "saturday": [ 18, 29, 9, 13 ],
+            "sunday": [ 17, 28, 8, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 110,
+          user_id: 1,
+          theme: 'russian revolution',
+          img_path: './img/october/popup_Le_050.jpg',
+          title: 'The deserter\'s nightmare.',
+          artist: '',
+          year: '',
+          rule: {
+            "monday": [ 17, 28, 8, 12 ],
+            "tuesday": [ 16, 27, 28, 11 ],
+            "wednesday": [ 25, 26, 6, 10 ],
+            "thursday": [ 21, 1, 12, 16 ],
+            "friday": [ 20, 31, 11, 15 ],
+            "saturday": [ 19, 30, 10, 14 ],
+            "sunday": [ 18, 29, 9, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
