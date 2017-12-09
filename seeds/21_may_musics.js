@@ -1624,6 +1624,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 91,
+          user_id: 1,
+          theme: 'avant garde/new music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1269075320/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://castleintimeorchestra.bandcamp.com/album/castle-in-time-2',
+          a_string: 'Castle in time by Castle in Time Orchestra',
+          rule: {
+            "monday": [ 17, 23, 30, 12 ],
+            "tuesday": [ 16, 22, 29, 11 ],
+            "wednesday": [ 15, 21, 28, 10 ],
+            "thursday": [ 14, 20, 27, 9 ],
+            "saturday": [ 18, 24, 31, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 92,
+          user_id: 1,
+          theme: 'avant garde/new music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=436754044/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://fancymusic.bandcamp.com/album/present-continuous',
+          a_string: 'Present Continuous by Priot Ensemble',
+          rule: {
+            "monday": [ 18, 24, 31, 13 ],
+            "tuesday": [ 17, 23, 30, 12 ],
+            "wednesday": [ 16, 22, 29, 11 ],
+            "thursday": [ 15, 21, 28, 10 ],
+            "saturday": [ 14, 20, 27, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 93,
+          user_id: 1,
+          theme: 'avant garde/new music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2632839892/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://meerenai.bandcamp.com/album/pheromone',
+          a_string: 'Pheromone by Meerenai Shim',
+          rule: {
+            "monday": [ 14, 20, 27, 9 ],
+            "tuesday": [ 18, 24, 31, 13 ],
+            "wednesday": [ 17, 23, 30, 12 ],
+            "thursday": [ 16, 22, 29, 11 ],
+            "saturday": [ 15, 21, 28, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
