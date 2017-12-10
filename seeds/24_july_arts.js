@@ -2804,6 +2804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 141,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/ecoute-la-rue-detail.jpg',
+          title: 'Ecoute la Rue (detail)',
+          artist: 'Epsylon Point',
+          year: '?',
+          rule: {
+            "monday": [ 22, 2, 13, 24 ],
+            "tuesday": [ 21, 1, 12, 23 ],
+            "wednesday": [ 20, 31, 11, 22 ],
+            "thursday": [ 19, 30, 10, 21 ],
+            "friday": [ 18, 29, 9, 10 ],
+            "saturday": [ 17, 28, 8, 19 ],
+            "sunday": [ 23, 3, 14, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 142,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/papier-d-coup-1967-3.jpg',
+          title: 'Papier découpé',
+          artist: 'Louis Cane',
+          year: '1967',
+          rule: {
+            "monday": [ 23, 3, 14, 24 ],
+            "tuesday": [ 22, 2, 13, 24 ],
+            "wednesday": [ 21, 1, 12, 23 ],
+            "thursday": [ 20, 31, 11, 22 ],
+            "friday": [ 19, 30, 10, 21 ],
+            "saturday": [ 18, 29, 9, 10 ],
+            "sunday": [ 17, 28, 8, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 143,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/tiru-fragments-1984.jpg',
+          title: 'Tiru-Fragments',
+          artist: 'Francois Rouan',
+          year: '1984',
+          rule: {
+            "monday": [ 17, 28, 8, 19 ],
+            "tuesday": [ 23, 3, 14, 24 ],
+            "wednesday": [ 22, 2, 13, 24 ],
+            "thursday": [ 21, 1, 12, 23 ],
+            "friday": [ 20, 31, 11, 22 ],
+            "saturday": [ 19, 30, 10, 21 ],
+            "sunday": [ 18, 29, 9, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 144,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/d-finition-m-thode-506-la-photographie-n-est-que-l-ombre-de-la-peinture-2010.jpg',
+          title: 'dé-finition/méthode #506: la photographie n’est que l’ombre de la peinture',
+          artist: 'Claude Rutault',
+          year: '2010',
+          rule: {
+            "monday": [ 18, 29, 9, 10 ],
+            "tuesday": [ 17, 28, 8, 19 ],
+            "wednesday": [ 23, 3, 14, 24 ],
+            "thursday": [ 22, 2, 13, 24 ],
+            "friday": [ 21, 1, 12, 23 ],
+            "saturday": [ 20, 31, 11, 22 ],
+            "sunday": [ 19, 30, 10, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 145,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/container-z-ro-1988-1.jpg',
+          title: 'Container Zéro',
+          artist: 'Jean-Pierre Raynaud',
+          year: '1988',
+          rule: {
+            "monday": [ 19, 30, 10, 21 ],
+            "tuesday": [ 18, 29, 9, 10 ],
+            "wednesday": [ 17, 28, 8, 19 ],
+            "thursday": [ 23, 3, 14, 24 ],
+            "friday": [ 22, 2, 13, 24 ],
+            "saturday": [ 21, 1, 12, 23 ],
+            "sunday": [ 20, 31, 11, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
