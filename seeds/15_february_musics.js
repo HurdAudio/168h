@@ -2002,6 +2002,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 112,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1729573479/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://conditionwestrecordings.bandcamp.com/album/sam-rivers-quartet-live-in-vancouver',
+          a_string: 'Sam Rivers Quartet Live in Vancouver by Sam Rivers Quartet',
+          rule: {
+            "monday": [ 17, 22, 24, 7 ],
+            "tuesday": [ 18, 22, 24, 28 ],
+            "wednesday": [ 20, 24, 26, 1 ],
+            "thursday": [ 22, 26, 28, 1 ],
+            "saturday": [ 5, 28, 1, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 113,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1742132074/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://noahhowardaltsax.bandcamp.com/album/patterns-message-to-south-africa',
+          a_string: 'Patterns - Message to South Africa by Noah Howard',
+          rule: {
+            "monday": [ 5, 28, 1, 7 ],
+            "tuesday": [ 17, 22, 24, 7 ],
+            "wednesday": [ 18, 22, 24, 28 ],
+            "thursday": [ 20, 24, 26, 1 ],
+            "saturday": [ 22, 26, 28, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 114,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3673199928/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://littlesimz.bandcamp.com/album/stillness-in-wonderland-deluxe-edition',
+          a_string: 'Stillness In Wonderland (Deluxe Edition) by Little Simz',
+          rule: {
+            "monday": [ 22, 26, 28, 1 ],
+            "tuesday": [ 5, 28, 1, 7 ],
+            "wednesday": [ 17, 22, 24, 7 ],
+            "thursday": [ 18, 22, 24, 28 ],
+            "saturday": [ 20, 24, 26, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
