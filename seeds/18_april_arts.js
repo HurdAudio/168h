@@ -3404,6 +3404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 171,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/Sliding-Into-Third.jpg',
+          title: 'Sliding Into Third',
+          artist: 'C.F. Payne',
+          year: 'xx - xxi cent.',
+          rule: {
+            "monday": [ 19, 24, 30, 6 ],
+            "tuesday": [ 24, 30, 5, 12 ],
+            "wednesday": [ 8, 28, 4, 11 ],
+            "thursday": [ 23, 28, 4, 10 ],
+            "friday": [ 22, 26, 11, 9 ],
+            "saturday": [ 21, 26, 1, 7 ],
+            "sunday": [ 20, 25, 1, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 172,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/depositphotos_14134905-stock-illustration-baseball-sketch.jpg',
+          title: 'Baseball Sketch',
+          artist: 'Vector Illustration',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 20, 25, 1, 7 ],
+            "tuesday": [ 19, 24, 30, 6 ],
+            "wednesday": [ 24, 30, 5, 12 ],
+            "thursday": [ 8, 28, 4, 11 ],
+            "friday": [ 23, 28, 4, 10 ],
+            "saturday": [ 22, 26, 11, 9 ],
+            "sunday": [ 21, 26, 1, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 173,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/tumblr_orz9g30t661rsc228o1_500.jpg',
+          title: 'Casey at the Bat',
+          artist: 'Katie Kelsky',
+          year: '2017',
+          rule: {
+            "monday": [ 21, 26, 1, 7 ],
+            "tuesday": [ 20, 25, 1, 7 ],
+            "wednesday": [ 19, 24, 30, 6 ],
+            "thursday": [ 24, 30, 5, 12 ],
+            "friday": [ 8, 28, 4, 11 ],
+            "saturday": [ 23, 28, 4, 10 ],
+            "sunday": [ 22, 26, 11, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 174,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/sodkfjhsdkhf.gif',
+          title: '?',
+          artist: 'Greg Jezewski',
+          year: '?',
+          rule: {
+            "monday": [ 22, 26, 11, 9 ],
+            "tuesday": [ 21, 26, 1, 7 ],
+            "wednesday": [ 20, 25, 1, 7 ],
+            "thursday": [ 19, 24, 30, 6 ],
+            "friday": [ 24, 30, 5, 12 ],
+            "saturday": [ 8, 28, 4, 11 ],
+            "sunday": [ 23, 28, 4, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 175,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/0f787356ad9086ac02465e58bac69b50--baseball-art-sports-art.jpg',
+          title: '?',
+          artist: 'C.F. Payne',
+          year: '?',
+          rule: {
+            "monday": [ 24, 29, 5, 11 ],
+            "tuesday": [ 23, 27, 12, 10 ],
+            "wednesday": [ 22, 27, 2, 8 ],
+            "thursday": [ 21, 26, 2, 8 ],
+            "friday": [ 20, 25, 1, 7 ],
+            "saturday": [ 25, 1, 6, 13 ],
+            "sunday": [ 9, 29, 5, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
