@@ -2004,6 +2004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 101,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/hackney-road-drawing-2004.jpg',
+          title: 'Hackney Road Drawing',
+          artist: 'David Batchelor',
+          year: '2004',
+          rule: {
+            "monday": [ 16, 21, 27, 4 ],
+            "tuesday": [ 22, 27, 3, 8 ],
+            "wednesday": [ 21, 26, 2, 7 ],
+            "thursday": [ 20, 25, 1, 5 ],
+            "friday": [ 19, 24, 30, 5 ],
+            "saturday": [ 18, 22, 29, 4 ],
+            "sunday": [ 17, 22, 28, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 102,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/cloud-gate-2004.jpg',
+          title: 'Cloud Gate',
+          artist: 'Anish Kapoor',
+          year: '2004',
+          rule: {
+            "monday": [ 17, 22, 28, 3 ],
+            "tuesday": [ 16, 21, 27, 4 ],
+            "wednesday": [ 22, 27, 3, 8 ],
+            "thursday": [ 21, 26, 2, 7 ],
+            "friday": [ 20, 25, 1, 5 ],
+            "saturday": [ 19, 24, 30, 5 ],
+            "sunday": [ 18, 22, 29, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 103,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/field-1989.jpg',
+          title: 'Field',
+          artist: 'Antony Gormley',
+          year: '1989',
+          rule: {
+            "monday": [ 18, 22, 29, 4 ],
+            "tuesday": [ 17, 22, 28, 3 ],
+            "wednesday": [ 16, 21, 27, 4 ],
+            "thursday": [ 22, 27, 3, 8 ],
+            "friday": [ 21, 26, 2, 7 ],
+            "saturday": [ 20, 25, 1, 5 ],
+            "sunday": [ 19, 24, 30, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 104,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/if-the-shoe-fits-1981.jpg',
+          title: 'If The Shoe Fits',
+          artist: 'Richard Deacon',
+          year: '1981',
+          rule: {
+            "monday": [ 19, 24, 30, 5 ],
+            "tuesday": [ 18, 22, 29, 4 ],
+            "wednesday": [ 17, 22, 28, 3 ],
+            "thursday": [ 16, 21, 27, 4 ],
+            "friday": [ 22, 27, 3, 8 ],
+            "saturday": [ 21, 26, 2, 7 ],
+            "sunday": [ 20, 25, 1, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 105,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/untitled-1994-2.jpg',
+          title: 'Untitled',
+          artist: 'Alison Wilding',
+          year: '1994',
+          rule: {
+            "monday": [ 21, 26, 2, 6 ],
+            "tuesday": [ 20, 25, 1, 6 ],
+            "wednesday": [ 19, 23, 30, 5 ],
+            "thursday": [ 18, 23, 29, 4 ],
+            "friday": [ 17, 22, 28, 5 ],
+            "saturday": [ 23, 28, 4, 9 ],
+            "sunday": [ 22, 27, 3, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
