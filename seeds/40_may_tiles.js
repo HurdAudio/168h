@@ -172,6 +172,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FFC0FF',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 13,
+          user_id: 1,
+          theme: 'greenery',
+          type: 'week',
+          src_string: '../img/may_tiles/grass-1658749_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '140%',
+          color_dark: '#070C05',
+          color_medium: '#3D8218',
+          color_light: '#E0FDE3',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
