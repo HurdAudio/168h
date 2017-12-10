@@ -3604,6 +3604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 181,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/untitled-1963-1.jpg',
+          title: 'Untitled',
+          artist: 'Tsuruko Yamazaki',
+          year: '1963',
+          rule: {
+            "monday": [ 22, 1, 9, 19 ],
+            "tuesday": [ 21, 31, 8, 18 ],
+            "wednesday": [ 20, 30, 7, 17 ],
+            "thursday": [ 19, 29, 7, 16 ],
+            "friday": [ 25, 3, 12, 21 ],
+            "saturday": [ 24, 3, 13, 21 ],
+            "sunday": [ 23, 2, 10, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 182,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/plant.jpg',
+          title: 'Plant',
+          artist: 'Maria Stolarova',
+          year: '?',
+          rule: {
+            "monday": [ 24, 3, 11, 21 ],
+            "tuesday": [ 23, 2, 10, 20 ],
+            "wednesday": [ 22, 1, 9, 19 ],
+            "thursday": [ 21, 31, 8, 18 ],
+            "friday": [ 20, 30, 8, 17 ],
+            "saturday": [ 26, 4, 13, 22 ],
+            "sunday": [ 25, 4, 14, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 183,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/sem-t-tulo-1.jpg',
+          title: 'Sem título',
+          artist: 'Menez',
+          year: '?',
+          rule: {
+            "monday": [ 25, 4, 14, 22 ],
+            "tuesday": [ 24, 3, 11, 21 ],
+            "wednesday": [ 23, 2, 10, 20 ],
+            "thursday": [ 22, 1, 9, 19 ],
+            "friday": [ 21, 31, 8, 18 ],
+            "saturday": [ 20, 30, 8, 17 ],
+            "sunday": [ 26, 4, 13, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 184,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/untitled-1985.jpg',
+          title: 'Untitled',
+          artist: 'Hannelore Baron',
+          year: '1985',
+          rule: {
+            "monday": [ 26, 4, 13, 22 ],
+            "tuesday": [ 25, 4, 14, 22 ],
+            "wednesday": [ 24, 3, 11, 21 ],
+            "thursday": [ 23, 2, 10, 20 ],
+            "friday": [ 22, 1, 9, 19 ],
+            "saturday": [ 21, 31, 8, 18 ],
+            "sunday": [ 20, 30, 8, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 185,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/seeing-the-moon-on-a-hot-summer-day-1987.jpg',
+          title: 'Seeing the Moon on a Hot Summer Day',
+          artist: 'Helen Frankenthaler',
+          year: '1987',
+          rule: {
+            "monday": [ 20, 30, 8, 17 ],
+            "tuesday": [ 26, 4, 13, 22 ],
+            "wednesday": [ 25, 4, 14, 22 ],
+            "thursday": [ 24, 3, 11, 21 ],
+            "friday": [ 23, 2, 10, 20 ],
+            "saturday": [ 22, 1, 9, 19 ],
+            "sunday": [ 21, 31, 8, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
