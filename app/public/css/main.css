@@ -5006,8 +5006,8 @@ footer img {
   display: none;
 }
 
-/*.day {
-  background-image: url(../img/january_tiles/tyler-agte-tyleragte-icepattern.jpg);
+.day {
+  background-image: url(../img/december_tiles/snow-705109_1920.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
-}*/
+  background-size: 160%;
+}
