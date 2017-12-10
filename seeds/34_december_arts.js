@@ -1804,6 +1804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 91,
+          user_id: 1,
+          theme: 'pulp',
+          img_path: './img/december/47-00,Bantam107.jpg',
+          title: 'Bantam #107',
+          artist: 'Joseph Dreany',
+          year: '1947',
+          rule: {
+            "monday": [ 15, 28, 5, 11 ],
+            "tuesday": [ 14, 27, 4, 10 ],
+            "wednesday": [ 13, 26, 3, 9 ],
+            "thursday": [ 12, 25, 2, 8 ],
+            "friday": [ 11, 24, 12, 7 ],
+            "saturday": [ 17, 30, 7, 13 ],
+            "sunday": [ 16, 29, 6, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 92,
+          user_id: 1,
+          theme: 'pulp',
+          img_path: './img/december/25-00,Days49.jpg',
+          title: 'Book Jacket',
+          artist: 'John Drew',
+          year: '1925',
+          rule: {
+            "monday": [ 16, 29, 6, 12 ],
+            "tuesday": [ 15, 28, 5, 11 ],
+            "wednesday": [ 14, 27, 4, 10 ],
+            "thursday": [ 13, 26, 3, 9 ],
+            "friday": [ 12, 25, 2, 8 ],
+            "saturday": [ 11, 24, 12, 7 ],
+            "sunday": [ 17, 30, 7, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 93,
+          user_id: 1,
+          theme: 'pulp',
+          img_path: './img/december/38-06,SilkStks.jpg',
+          title: 'Silk Stockings',
+          artist: 'Peter Driben',
+          year: '1938',
+          rule: {
+            "monday": [ 17, 30, 7, 13 ],
+            "tuesday": [ 16, 29, 6, 12 ],
+            "wednesday": [ 15, 28, 5, 11 ],
+            "thursday": [ 14, 27, 4, 10 ],
+            "friday": [ 13, 26, 3, 9 ],
+            "saturday": [ 12, 25, 2, 8 ],
+            "sunday": [ 11, 24, 12, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 94,
+          user_id: 1,
+          theme: 'pulp',
+          img_path: './img/december/37-Win,Aces04.jpg',
+          title: 'Winter Aces',
+          artist: 'Roderick Duff',
+          year: '1937',
+          rule: {
+            "monday": [ 11, 24, 12, 7 ],
+            "tuesday": [ 17, 30, 7, 13 ],
+            "wednesday": [ 16, 29, 6, 12 ],
+            "thursday": [ 15, 28, 5, 11 ],
+            "friday": [ 14, 27, 4, 10 ],
+            "saturday": [ 13, 26, 3, 9 ],
+            "sunday": [ 12, 25, 2, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 95,
+          user_id: 1,
+          theme: 'pulp',
+          img_path: './img/december/07-00,Plowman.jpeg',
+          title: 'The Plowman',
+          artist: 'Harvey Dunn',
+          year: '1907',
+          rule: {
+            "monday": [ 12, 25, 2, 8 ],
+            "tuesday": [ 11, 24, 12, 7 ],
+            "wednesday": [ 17, 30, 7, 13 ],
+            "thursday": [ 16, 29, 6, 12 ],
+            "friday": [ 15, 28, 5, 11 ],
+            "saturday": [ 14, 27, 4, 10 ],
+            "sunday": [ 13, 26, 3, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
