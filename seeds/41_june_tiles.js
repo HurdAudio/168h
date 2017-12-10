@@ -158,6 +158,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#F9E7C3',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 12,
+          user_id: 1,
+          theme: 'light',
+          type: 'holiday',
+          src_string: '../img/june_tiles/lichtreflex-421101_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '140%',
+          color_dark: '#FE3D04',
+          color_medium: '#FD9D39',
+          color_light: '#FAFEFF',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
