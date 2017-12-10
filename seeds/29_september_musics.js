@@ -1246,6 +1246,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 70,
+          user_id: 1,
+          theme: 'math rock/progressive rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4211984975/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://mildhighclub.bandcamp.com/album/skiptracing',
+          a_string: 'Skiptracing by Mild High Club',
+          rule: {
+            "monday": [ 13, 3, 11, 5 ],
+            "tuesday": [ 12, 2, 10, 4 ],
+            "wednesday": [ 11, 1, 9, 3 ],
+            "thursday": [ 15, 5, 13, 7 ],
+            "saturday": [ 14, 4, 12, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 71,
+          user_id: 1,
+          theme: 'math rock/progressive rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1937278011/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://pontiak.bandcamp.com/album/living',
+          a_string: 'Living by Pontiak',
+          rule: {
+            "monday": [ 14, 4, 12, 6 ],
+            "tuesday": [ 13, 3, 11, 5 ],
+            "wednesday": [ 12, 2, 10, 4 ],
+            "thursday": [ 11, 1, 9, 3 ],
+            "saturday": [ 15, 5, 13, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 72,
+          user_id: 1,
+          theme: 'math rock/progressive rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=953164322/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://dustrider.bandcamp.com/album/event-horizon',
+          a_string: 'Event Horizon by Dustrider',
+          rule: {
+            "monday": [ 15, 5, 13, 7 ],
+            "tuesday": [ 14, 4, 12, 6 ],
+            "wednesday": [ 13, 3, 11, 5 ],
+            "thursday": [ 12, 2, 10, 4 ],
+            "saturday": [ 11, 1, 9, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
