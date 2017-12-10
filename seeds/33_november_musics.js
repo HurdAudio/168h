@@ -1030,6 +1030,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 58,
+          user_id: 1,
+          theme: 'ethiopia and pan-african',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4255676975/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://radats.bandcamp.com/album/are-you-fine',
+          a_string: 'Are You Fine? by The Radats',
+          rule: {
+            "monday": [ 5, 16, 27, 29 ],
+            "tuesday": [ 9, 20, 1, 3 ],
+            "wednesday": [ 6, 17, 28, 30 ],
+            "thursday": [ 7, 18, 29, 1 ],
+            "saturday": [ 6, 17, 28, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 59,
+          user_id: 1,
+          theme: 'ethiopia and pan-african',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2125753369/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sorcerers.bandcamp.com/album/the-sorcerers',
+          a_string: 'The Sorcerers by The Sorcerers',
+          rule: {
+            "monday": [ 6, 17, 28, 30 ],
+            "tuesday": [ 5, 16, 27, 29 ],
+            "wednesday": [ 9, 20, 1, 3 ],
+            "thursday": [ 6, 17, 28, 30 ],
+            "saturday": [ 7, 18, 29, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 60,
+          user_id: 1,
+          theme: 'ethiopia and pan-african',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=551674705/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://mulatuastatke.bandcamp.com/album/inspiration-information-3',
+          a_string: 'Inspiration Information 3 by Mulatu Astatke &amp; The Heliocentrics',
+          rule: {
+            "monday": [ 7, 18, 29, 1 ],
+            "tuesday": [ 6, 17, 28, 30 ],
+            "wednesday": [ 5, 16, 27, 29 ],
+            "thursday": [ 9, 20, 1, 3 ],
+            "saturday": [ 6, 17, 28, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
