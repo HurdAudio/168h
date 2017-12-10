@@ -1354,6 +1354,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 76,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2631446768/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://intonema.bandcamp.com/album/axon',
+          a_string: 'Axon by Myelin (Birgit Ulher &amp; Heddy Boubaker)',
+          rule: {
+            "monday": [ 17, 25, 10, 11 ],
+            "tuesday": [ 14, 22, 7, 6 ],
+            "wednesday": [ 15, 23, 8, 7 ],
+            "thursday": [ 19, 27, 9, 8 ],
+            "saturday": [ 18, 26, 11, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 77,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2235065992/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://intonema.bandcamp.com/album/edged-timbre',
+          a_string: 'Edged Timbre by Horst Quartet',
+          rule: {
+            "monday": [ 24, 1, 14, 13 ],
+            "tuesday": [ 23, 31, 13, 12 ],
+            "wednesday": [ 22, 30, 12, 11 ],
+            "thursday": [ 21, 29, 11, 10 ],
+            "saturday": [ 20, 28, 10, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 78,
+          user_id: 1,
+          theme: 'noise/non-idiomatic',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1650882623/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://intonema.bandcamp.com/album/there-back',
+          a_string: 'There &amp; Back by KickGuitarSinRun',
+          rule: {
+            "monday": [ 20, 28, 10, 9 ],
+            "tuesday": [ 24, 1, 14, 13 ],
+            "wednesday": [ 23, 31, 13, 12 ],
+            "thursday": [ 22, 30, 12, 11 ],
+            "saturday": [ 21, 29, 11, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
