@@ -1570,6 +1570,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 88,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3921803894/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://irrappext.bandcamp.com/album/celestial-laminate',
+          a_string: 'Celestial Laminate by irr. app. (ext.)',
+          rule: {
+            "monday": [ 9, 17, 19, 30 ],
+            "tuesday": [ 13, 17, 23, 4 ],
+            "wednesday": [ 12, 16, 22, 2 ],
+            "thursday": [ 11, 15, 20, 2 ],
+            "saturday": [ 11, 14, 20, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 89,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=149042100/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://whitelabrecs.bandcamp.com/album/purification-verses',
+          a_string: 'Purification Verses by Tsone',
+          rule: {
+            "monday": [ 11, 14, 20, 1 ],
+            "tuesday": [ 9, 17, 19, 30 ],
+            "wednesday": [ 13, 17, 23, 4 ],
+            "thursday": [ 12, 16, 22, 2 ],
+            "saturday": [ 11, 15, 20, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 90,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2105411563/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://whitelabrecs.bandcamp.com/album/eyes-down-slowdown',
+          a_string: 'eyes down slowdown by the prairie lines',
+          rule: {
+            "monday": [ 11, 15, 20, 2 ],
+            "tuesday": [ 11, 14, 20, 1 ],
+            "wednesday": [ 9, 17, 19, 30 ],
+            "thursday": [ 13, 17, 23, 4 ],
+            "saturday": [ 12, 16, 22, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
