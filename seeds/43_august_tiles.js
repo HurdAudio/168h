@@ -130,6 +130,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FEFD63',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 10,
+          user_id: 1,
+          theme: 'primary colors',
+          type: 'saturday',
+          src_string: '../img/august_tiles/course-695163_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '150%',
+          color_dark: '#010A4F',
+          color_medium: '#025093',
+          color_light: '#03BFFE',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
