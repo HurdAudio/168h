@@ -2110,6 +2110,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 118,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3726473539/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://edoryan.bandcamp.com/album/the-yoke-of-summer-fugues-for-string-trio',
+          a_string: 'The Yoke of Summer, fugues for String Trio by Edo Ryan',
+          rule: {
+            "monday": [ 23, 30, 32, 31 ],
+            "tuesday": [ 31, 25, 27, 1 ],
+            "wednesday": [ 22, 29, 30, 31 ],
+            "thursday": [ 23, 30, 31, 1 ],
+            "saturday": [ 21, 25, 27, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 119,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3002569069/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://saul-conrad.bandcamp.com/album/requiem',
+          a_string: 'Requiem by Saul Conrad',
+          rule: {
+            "monday": [ 28, 4, 5, 6 ],
+            "tuesday": [ 27, 3, 4, 5 ],
+            "wednesday": [ 26, 2, 3, 4 ],
+            "thursday": [ 25, 1, 2, 3 ],
+            "saturday": [ 24, 31, 1, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 120,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3512686422/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://williamjaysydeman.bandcamp.com/album/music-for-percussion',
+          a_string: 'Music for Percussion by William Jay Sydeman',
+          rule: {
+            "monday": [ 24, 31, 1, 2 ],
+            "tuesday": [ 28, 4, 5, 6 ],
+            "wednesday": [ 27, 3, 4, 5 ],
+            "thursday": [ 26, 2, 3, 4 ],
+            "saturday": [ 25, 1, 2, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
