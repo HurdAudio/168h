@@ -3804,6 +3804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 191,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Untitled_(Abstract_Figure_No._7).jpg',
+          title: 'Untitled (Abstract Figure No. 7)',
+          artist: 'Earle M. Pilgrim',
+          year: '1954',
+          rule: {
+            "monday": [ 27, 6, 14, 22 ],
+            "tuesday": [ 29, 8, 16, 24 ],
+            "wednesday": [ 5, 10, 16, 26 ],
+            "thursday": [ 4, 12, 20, 28 ],
+            "friday": [ 6, 16, 22, 28 ],
+            "saturday": [ 8, 16, 24, 5 ],
+            "sunday": [ 10, 18, 14, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 192,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Howardeena_Pindell_painting__Queens,_Festival_.jpg',
+          title: 'Queens, Festival',
+          artist: 'Howardena Pindell',
+          year: '1989',
+          rule: {
+            "monday": [ 10, 18, 14, 4 ],
+            "tuesday": [ 27, 6, 14, 22 ],
+            "wednesday": [ 29, 8, 16, 24 ],
+            "thursday": [ 5, 10, 16, 26 ],
+            "friday": [ 4, 12, 20, 28 ],
+            "saturday": [ 6, 16, 22, 28 ],
+            "sunday": [ 8, 16, 24, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 193,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Pinkney_Sweethearts_of_Rhythm_066.jpg',
+          title: 'Sweethearts of Rhythm',
+          artist: 'Jerry Pinkney',
+          year: '2009',
+          rule: {
+            "monday": [ 8, 16, 24, 5 ],
+            "tuesday": [ 10, 18, 14, 4 ],
+            "wednesday": [ 27, 6, 14, 22 ],
+            "thursday": [ 29, 8, 16, 24 ],
+            "friday": [ 5, 10, 16, 26 ],
+            "saturday": [ 4, 12, 20, 28 ],
+            "sunday": [ 6, 16, 22, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 194,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/AdrianPiper65AliceDownRbtHole.png',
+          title: 'Alice Down the Rabbit Hole',
+          artist: 'Adrian Piper',
+          year: '1965',
+          rule: {
+            "monday": [ 6, 16, 22, 28 ],
+            "tuesday": [ 8, 16, 24, 5 ],
+            "wednesday": [ 10, 18, 14, 4 ],
+            "thursday": [ 27, 6, 14, 22 ],
+            "friday": [ 29, 8, 16, 24 ],
+            "saturday": [ 5, 10, 16, 26 ],
+            "sunday": [ 4, 12, 20, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 195,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/The_Death_of_Bessie_Smith_by_Rose_Piper,_1947.jpg',
+          title: 'The Death of Bessie Smith',
+          artist: 'Rose Piper',
+          year: '1947',
+          rule: {
+            "monday": [ 4, 12, 20, 28 ],
+            "tuesday": [ 6, 16, 22, 28 ],
+            "wednesday": [ 8, 16, 24, 5 ],
+            "thursday": [ 10, 18, 14, 4 ],
+            "friday": [ 27, 6, 14, 22 ],
+            "saturday": [ 29, 8, 16, 24 ],
+            "sunday": [ 5, 10, 16, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
