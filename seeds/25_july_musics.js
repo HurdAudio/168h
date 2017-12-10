@@ -1462,6 +1462,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 82,
+          user_id: 1,
+          theme: 'commercially viable genre',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1714333262/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://deerhoof.bandcamp.com/album/the-man-the-king-the-girl',
+          a_string: 'The Man, The King, The Girl by Deerhoof',
+          rule: {
+            "monday": [ 12, 14, 18, 26 ],
+            "tuesday": [ 11, 13, 17, 25 ],
+            "wednesday": [ 10, 11, 16, 24 ],
+            "thursday": [ 9, 11, 15, 23 ],
+            "saturday": [ 13, 15, 19, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 83,
+          user_id: 1,
+          theme: 'commercially viable genre',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1516871805/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://romanticstates.bandcamp.com/album/corduroy-in-italy',
+          a_string: 'Corduroy In Italy by Romantic States',
+          rule: {
+            "monday": [ 13, 15, 19, 27 ],
+            "tuesday": [ 12, 14, 18, 26 ],
+            "wednesday": [ 11, 13, 17, 25 ],
+            "thursday": [ 10, 11, 16, 24 ],
+            "saturday": [ 9, 11, 15, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 84,
+          user_id: 1,
+          theme: 'commercially viable genre',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=996945265/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://umen.bandcamp.com/album/u-men',
+          a_string: 'U-Men by U-Men',
+          rule: {
+            "monday": [ 10, 12, 16, 24 ],
+            "tuesday": [ 14, 16, 20, 28 ],
+            "wednesday": [ 13, 15, 19, 27 ],
+            "thursday": [ 12, 14, 18, 26 ],
+            "saturday": [ 11, 12, 17, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
