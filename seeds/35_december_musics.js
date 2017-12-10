@@ -922,6 +922,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 52,
+          user_id: 1,
+          theme: 'brazil and pan-south american',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3539298468/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://novomundo-france.bandcamp.com/album/glue-trip-2',
+          a_string: 'Glue trip by NOVOMUNDO',
+          rule: {
+            "monday": [ 14, 20, 26, 1 ],
+            "tuesday": [ 13, 19, 25, 31 ],
+            "wednesday": [ 12, 18, 24, 30 ],
+            "thursday": [ 10, 17, 23, 29 ],
+            "saturday": [ 10, 16, 22, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 53,
+          user_id: 1,
+          theme: 'brazil and pan-south american',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1136062252/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://raphaelracor.bandcamp.com/album/raphael-racor-today',
+          a_string: 'Raphael Racor - Today by Raphael Racor',
+          rule: {
+            "monday": [ 10, 16, 22, 28 ],
+            "tuesday": [ 14, 20, 26, 1 ],
+            "wednesday": [ 13, 19, 25, 31 ],
+            "thursday": [ 12, 18, 24, 30 ],
+            "saturday": [ 10, 17, 23, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 54,
+          user_id: 1,
+          theme: 'brazil and pan-south american',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1671738285/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://radiojuicy.bandcamp.com/album/rio',
+          a_string: 'rio by wun two',
+          rule: {
+            "monday": [ 10, 17, 23, 29 ],
+            "tuesday": [ 10, 16, 22, 28 ],
+            "wednesday": [ 14, 20, 26, 1 ],
+            "thursday": [ 13, 19, 25, 31 ],
+            "saturday": [ 12, 18, 24, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
