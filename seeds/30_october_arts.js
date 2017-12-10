@@ -2191,8 +2191,8 @@ exports.seed = function(knex, Promise) {
           theme: 'russian revolution',
           img_path: './img/october/popup_Le_050.jpg',
           title: 'The deserter\'s nightmare.',
-          artist: '',
-          year: '',
+          artist: '?',
+          year: '?',
           rule: {
             "monday": [ 17, 28, 8, 12 ],
             "tuesday": [ 16, 27, 28, 11 ],
@@ -2201,6 +2201,106 @@ exports.seed = function(knex, Promise) {
             "friday": [ 20, 31, 11, 15 ],
             "saturday": [ 19, 30, 10, 14 ],
             "sunday": [ 18, 29, 9, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 111,
+          user_id: 1,
+          theme: 'russian revolution',
+          img_path: './img/october/popup_Le_049.jpg',
+          title: 'The lord of the world - Capital, gold idol.',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 18, 29, 9, 13 ],
+            "tuesday": [ 17, 28, 8, 12 ],
+            "wednesday": [ 16, 27, 28, 11 ],
+            "thursday": [ 25, 26, 6, 10 ],
+            "friday": [ 21, 1, 12, 16 ],
+            "saturday": [ 20, 31, 11, 15 ],
+            "sunday": [ 19, 30, 10, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 112,
+          user_id: 1,
+          theme: 'russian revolution',
+          img_path: './img/october/popup_Le_048.jpg',
+          title: 'Corpses of the Paris commune, revive under the Red Flag of Soviets!',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 20, 31, 11, 15 ],
+            "tuesday": [ 19, 30, 10, 14 ],
+            "wednesday": [ 18, 29, 9, 13 ],
+            "thursday": [ 17, 28, 29, 12 ],
+            "friday": [ 26, 27, 7, 11 ],
+            "saturday": [ 22, 2, 13, 17 ],
+            "sunday": [ 21, 1, 12, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 113,
+          user_id: 1,
+          theme: 'russian revolution',
+          img_path: './img/october/popup_sovpolpost_00010.jpg',
+          title: 'To work (we) have to, rifle is near',
+          artist: '?',
+          year: '1920',
+          rule: {
+            "monday": [ 21, 1, 12, 16 ],
+            "tuesday": [ 20, 31, 11, 15 ],
+            "wednesday": [ 19, 30, 10, 14 ],
+            "thursday": [ 18, 29, 9, 13 ],
+            "friday": [ 17, 28, 29, 12 ],
+            "saturday": [ 26, 27, 7, 11 ],
+            "sunday": [ 22, 2, 13, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 114,
+          user_id: 1,
+          theme: 'russian revolution',
+          img_path: './img/october/popup_Le_044.jpg',
+          title: 'To the polish front',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 22, 2, 13, 17 ],
+            "tuesday": [ 21, 1, 12, 16 ],
+            "wednesday": [ 20, 31, 11, 15 ],
+            "thursday": [ 19, 30, 10, 14 ],
+            "friday": [ 18, 29, 9, 13 ],
+            "saturday": [ 17, 28, 29, 12 ],
+            "sunday": [ 26, 27, 7, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 115,
+          user_id: 1,
+          theme: 'russian revolution',
+          img_path: './img/october/popup_Le_043.jpg',
+          title: 'Тhe League of Nations',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 26, 27, 7, 11 ],
+            "tuesday": [ 22, 2, 13, 17 ],
+            "wednesday": [ 21, 1, 12, 16 ],
+            "thursday": [ 20, 31, 11, 15 ],
+            "friday": [ 19, 30, 10, 14 ],
+            "saturday": [ 18, 29, 9, 13 ],
+            "sunday": [ 17, 28, 29, 12 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
