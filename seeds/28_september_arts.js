@@ -2404,6 +2404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 121,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/puissance-oc-anique-2004.jpg',
+          title: 'Puissance océanique',
+          artist: 'Chu Teh-Chun',
+          year: '2004',
+          rule: {
+            "monday": [ 20, 26, 14, 22 ],
+            "tuesday": [ 19, 25, 13, 21 ],
+            "wednesday": [ 18, 24, 12, 20 ],
+            "thursday": [ 17, 23, 11, 19 ],
+            "friday": [ 16, 22, 10, 18 ],
+            "saturday": [ 15, 21, 9, 17 ],
+            "sunday": [ 14, 20, 8, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 122,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/leopard.jpg',
+          title: 'Leopard',
+          artist: 'Antonio Ligabue',
+          year: '1955',
+          rule: {
+            "monday": [ 14, 20, 8, 15 ],
+            "tuesday": [ 20, 26, 14, 22 ],
+            "wednesday": [ 19, 25, 13, 21 ],
+            "thursday": [ 18, 24, 12, 20 ],
+            "friday": [ 17, 23, 11, 19 ],
+            "saturday": [ 16, 22, 10, 18 ],
+            "sunday": [ 15, 21, 9, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 123,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/dyptique-1987.jpg',
+          title: 'Dyptique',
+          artist: 'Luciano Bartolini',
+          year: '1987',
+          rule: {
+            "monday": [ 15, 21, 9, 17 ],
+            "tuesday": [ 14, 20, 8, 15 ],
+            "wednesday": [ 20, 26, 14, 22 ],
+            "thursday": [ 19, 25, 13, 21 ],
+            "friday": [ 18, 24, 12, 20 ],
+            "saturday": [ 17, 23, 11, 19 ],
+            "sunday": [ 16, 22, 10, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 124,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/the-dressmaker-1982.jpg',
+          title: 'The Dressmaker',
+          artist: 'Conrad Marca-Relli',
+          year: '1982',
+          rule: {
+            "monday": [ 16, 22, 10, 18 ],
+            "tuesday": [ 15, 21, 9, 17 ],
+            "wednesday": [ 14, 20, 8, 15 ],
+            "thursday": [ 20, 26, 14, 22 ],
+            "friday": [ 19, 25, 13, 21 ],
+            "saturday": [ 18, 24, 12, 20 ],
+            "sunday": [ 17, 23, 11, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 125,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/mlr-1992-1.jpg',
+          title: 'MLR',
+          artist: 'Isa Genzken',
+          year: '1992',
+          rule: {
+            "monday": [ 17, 23, 11, 19 ],
+            "tuesday": [ 16, 22, 10, 18 ],
+            "wednesday": [ 15, 21, 9, 17 ],
+            "thursday": [ 14, 20, 8, 15 ],
+            "friday": [ 20, 26, 14, 22 ],
+            "saturday": [ 19, 25, 13, 21 ],
+            "sunday": [ 18, 24, 12, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
