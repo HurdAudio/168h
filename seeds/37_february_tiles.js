@@ -12,7 +12,7 @@ exports.seed = function(knex, Promise) {
           type: 'default',
           src_string: '../img/february_tiles/Red-Silk-Fabric-Texture-1.jpg',
           repeat_value: 'no-repeat',
-          size_value: '200%',
+          size_value: '220%',
           color_dark: '#76081B',
           color_medium: '#CD2C3A',
           color_light: '#E8526B',
@@ -212,6 +212,20 @@ exports.seed = function(knex, Promise) {
           color_dark: '#251313',
           color_medium: '#422223',
           color_light: '#DA9499',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 16,
+          user_id: 1,
+          theme: 'silk',
+          type: 'sunday',
+          src_string: '../img/february_tiles/red-893318_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '140%',
+          color_dark: '#350B15',
+          color_medium: '#C6274C',
+          color_light: '#E0123F',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
