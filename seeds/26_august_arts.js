@@ -2604,6 +2604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 131,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/autumn-1913.jpg',
+          title: 'Autumn',
+          artist: 'Rik Wouters',
+          year: '1913',
+          rule: {
+            "monday": [ 18, 20, 30, 15 ],
+            "tuesday": [ 17, 20, 29, 14 ],
+            "wednesday": [ 16, 19, 28, 13 ],
+            "thursday": [ 22, 26, 3, 19 ],
+            "friday": [ 21, 24, 2, 18 ],
+            "saturday": [ 20, 24, 1, 17 ],
+            "sunday": [ 19, 23, 31, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 132,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/mystical-crucifixion-1928.jpg',
+          title: 'Mystical Crucifixion',
+          artist: 'Heinrich Campendonk',
+          year: '1928',
+          rule: {
+            "monday": [ 19, 23, 31, 16 ],
+            "tuesday": [ 18, 20, 30, 15 ],
+            "wednesday": [ 17, 20, 29, 14 ],
+            "thursday": [ 16, 19, 28, 13 ],
+            "friday": [ 22, 26, 3, 19 ],
+            "saturday": [ 21, 24, 2, 18 ],
+            "sunday": [ 20, 24, 1, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 133,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/portrait-of-a-chamorro-woman-yellow-1934.jpg',
+          title: 'Portrait of a Chamorro Woman - Yellow',
+          artist: 'Paul Jacoulet',
+          year: '1934',
+          rule: {
+            "monday": [ 21, 25, 2, 18 ],
+            "tuesday": [ 20, 24, 1, 17 ],
+            "wednesday": [ 19, 21, 31, 16 ],
+            "thursday": [ 18, 21, 30, 15 ],
+            "friday": [ 17, 20, 29, 14 ],
+            "saturday": [ 23, 27, 4, 20 ],
+            "sunday": [ 22, 25, 3, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 134,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/stilleben-med-fisk-1926.jpg',
+          title: 'Stilleben med fisk',
+          artist: 'Sven Jonson',
+          year: '1926',
+          rule: {
+            "monday": [ 22, 25, 3, 19 ],
+            "tuesday": [ 21, 25, 2, 18 ],
+            "wednesday": [ 20, 24, 1, 17 ],
+            "thursday": [ 19, 21, 31, 16 ],
+            "friday": [ 18, 21, 30, 15 ],
+            "saturday": [ 17, 20, 29, 14 ],
+            "sunday": [ 23, 27, 4, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 135,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/yawls-in-the-lagoon-1924.jpg',
+          title: 'Yawls in the Lagoon',
+          artist: 'Stefan Popescu',
+          year: '1924',
+          rule: {
+            "monday": [ 23, 27, 4, 20 ],
+            "tuesday": [ 22, 25, 3, 19 ],
+            "wednesday": [ 21, 25, 2, 18 ],
+            "thursday": [ 20, 24, 1, 17 ],
+            "friday": [ 19, 21, 31, 16 ],
+            "saturday": [ 18, 21, 30, 15 ],
+            "sunday": [ 17, 20, 29, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
