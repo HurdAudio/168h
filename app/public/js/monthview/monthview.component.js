@@ -671,6 +671,9 @@
           case('April'):
             monthTilesString = 'april_tilesbyuser';
             break;
+          case('May'):
+            monthTilesString = 'may_tilesbyuser';
+            break;
           default:
             console.log('Month Tiles not yet supported for this month');
         }
