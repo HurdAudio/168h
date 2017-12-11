@@ -1234,6 +1234,36 @@ exports.seed = function(knex, Promise) {
           a_string: 'On Jupiter by Sun Ra And His Intergalactic Myth Science Solar Arkestra',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 124,
+          user_id: 1,
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=253336704/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sunrastrut.bandcamp.com/album/sleeping-beauty',
+          a_string: 'Sleeping Beauty. by Sun Ra And His Intergalactic Myth Science Solar Arkestra',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 125,
+          user_id: 1,
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3149899187/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sunrastrut.bandcamp.com/album/space-aura',
+          a_string: 'Space Aura by Sun Ra and His Band from Outer Space',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 126,
+          user_id: 1,
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3477943547/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sunrastrut.bandcamp.com/album/the-paris-tapes-live-at-le-th-tre-du-ch-telet-1971',
+          a_string: 'The Paris Tapes - Live At Le Théâtre Du Châtelet 1971 by Sun Ra And His Mythic Science Arkestra',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
