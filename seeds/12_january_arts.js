@@ -4004,6 +4004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 201,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/composition-no-199.jpg',
+          title: 'Composition No. 199',
+          artist: 'Friedrich Vordemberge-Gildewart',
+          year: 'xx cent.',
+          rule: {
+            "monday": [ 10, 12, 16, 19 ],
+            "tuesday": [ 12, 14, 15, 18 ],
+            "wednesday": [ 28, 29, 9, 1 ],
+            "thursday": [ 31, 2, 25, 14 ],
+            "friday": [ 2, 3, 26, 29 ],
+            "saturday": [ 5, 6, 28, 1 ],
+            "sunday": [ 8, 10, 11, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 202,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/proun-19d-1922.jpg',
+          title: 'Proun 19D',
+          artist: 'El Lissitzky',
+          year: '1922',
+          rule: {
+            "monday": [ 8, 10, 11, 13 ],
+            "tuesday": [ 10, 12, 16, 19 ],
+            "wednesday": [ 12, 14, 15, 18 ],
+            "thursday": [ 28, 29, 9, 1 ],
+            "friday": [ 31, 2, 25, 14 ],
+            "saturday": [ 2, 3, 26, 29 ],
+            "sunday": [ 5, 6, 28, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 203,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/bluxao-1955.jpg',
+          title: 'Bluxao',
+          artist: 'Willi Baumeister',
+          year: '1955',
+          rule: {
+            "monday": [ 6, 7, 29, 2 ],
+            "tuesday": [ 9, 11, 12, 14 ],
+            "wednesday": [ 11, 13, 17, 20 ],
+            "thursday": [ 13, 15, 16, 19 ],
+            "friday": [ 29, 30, 10, 2 ],
+            "saturday": [ 1, 3, 26, 15 ],
+            "sunday": [ 3, 4, 27, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 204,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/appearance-of-crosses-in-six-parts-2005.jpg',
+          title: 'Appearance of Crosses (in six parts)',
+          artist: 'Ding Yi',
+          year: '2005',
+          rule: {
+            "monday": [ 3, 4, 27, 30 ],
+            "tuesday": [ 6, 7, 29, 2 ],
+            "wednesday": [ 9, 11, 12, 14 ],
+            "thursday": [ 11, 13, 17, 20 ],
+            "friday": [ 13, 15, 16, 19 ],
+            "saturday": [ 29, 30, 10, 2 ],
+            "sunday": [ 1, 3, 26, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 205,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/choir.jpg',
+          title: 'Choir',
+          artist: 'Jack Tworkov',
+          year: 'xx cent.',
+          rule: {
+            "monday": [ 1, 3, 26, 15 ],
+            "tuesday": [ 3, 4, 27, 30 ],
+            "wednesday": [ 6, 7, 29, 2 ],
+            "thursday": [ 9, 11, 12, 14 ],
+            "friday": [ 11, 13, 17, 20 ],
+            "saturday": [ 13, 15, 16, 19 ],
+            "sunday": [ 29, 30, 10, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
