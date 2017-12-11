@@ -158,6 +158,31 @@
       vm.editGoal = editGoal;
       vm.userGoalsEditorDone = userGoalsEditorDone;
       vm.deleteTask = deleteTask;
+      vm.addNewBill = addNewBill;
+
+      function addNewBill() {
+        let subObj = {
+          user_id: currentUserId,
+          name: '',
+          pay_to: '',
+          address_line1: '',
+          address_line2: '',
+          city: '',
+          state: '',
+          zip: '',
+          balance: 0.00,
+          amount_due: 0.00,
+          amount_paid: 0.00,
+          due_date: new Date(),
+          date_paid: null,
+          is_paid: false
+        };
+        $http.post('/bills', subObj)
+        .then(addedbillData=>{
+          let addedBill = addedbillData.data[0];
+          editBill(addedBill.id);
+        });
+      }
 
       function deleteTask(taskId) {
         let months = [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ];
@@ -1998,9 +2023,34 @@
         userOccasionsEditingDiv.setAttribute("style", "display: none;");
       }
 
+      function removeBlankBills(billId) {
+        $http.delete(`/bills/${billId}`)
+        .then(()=>{
+          billsManager();
+          console.log('blank bill deleted');
+        });
+      }
+
       function userBillsEditorDone() {
         let billsManagerDone = document.getElementById('billsManagerDone');
         let userBillsEditingDiv = document.getElementById('userBillsEditingDiv');
+        let userBillNameField = document.getElementById('userBillNameField');
+        let userBillsPayTo = document.getElementById('userBillsPayTo');
+        let userBillsAmountDue = document.getElementById('userBillsAmountDue');
+
+        if ((userBillNameField.value === '') && (userBillsPayTo.value === '') && (userBillsAmountDue.value < 0.01)) {
+          $http.get(`/billsbyuser/${currentUserId}`)
+          .then(userBillsData=>{
+            let userBills = userBillsData.data;
+            for (let i = 0; i < userBills.length; i++) {
+              if ((userBills[i].name === '') && (userBills[i].pay_to === '') && (userBills[i].amount_due < 0.01)) {
+                removeBlankBills(userBills[i].id);
+              }
+            }
+
+          });
+        }
+
 
         billsManagerDone.setAttribute("style", "visibility: visible;");
         userBillsEditingDiv.setAttribute("style", "display: none;");
@@ -2130,11 +2180,21 @@
           userBillsDatePaid.type = 'date';
           userBillsDatePaid.className = 'pure-input-1';
         }
+        let billNameDivDiv = document.getElementById('billNameDivDiv');
+        let userBillNameField = document.getElementById('userBillNameField');
+        if (userBillNameField) {
+          userBillNameField.parentNode.removeChild(userBillNameField);
+          userBillNameField = document.createElement('input');
+          billNameDivDiv.appendChild(userBillNameField);
+          userBillNameField.id = 'userBillNameField';
+          userBillNameField.type = 'text';
+          userBillNameField.className = 'pure-input-1';
+        }
 
         $http.get(`/bills/${billId}`)
         .then(userBillData=>{
           let userBill = userBillData.data;
-          userBillName.innerHTML = userBill.name;
+          userBillNameField.value = userBill.name;
           userBillsPayTo.value = userBill.pay_to;
           userBillsAddressLine1.value = userBill.address_line1;
           userBillsAddressLine2.value = userBill.address_line2;
@@ -2155,6 +2215,18 @@
           if (userBill.date_paid !== null) {
             userBillsDatePaid.value = userBill.date_paid.slice(0, 10);
           }
+
+          userBillNameField.addEventListener('focusout', ()=>{
+            if ((userBillNameField.value !== userBill.name) && (userBillNameField.value !== '')) {
+              let subObj = {
+                name: userBillNameField.value
+              };
+              $http.patch(`/bills/${billId}`, subObj)
+              .then(()=>{
+                userBill.name = userBillNameField.value;
+              });
+            }
+          });
 
           userBillsPayTo.addEventListener('focusout', ()=>{
             if ((userBillsPayTo.value !== userBill.pay_to) && (userBillsPayTo.value !== '')) {

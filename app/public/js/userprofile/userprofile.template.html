@@ -279,7 +279,7 @@
             <a href="" class="btn" id="addBill" ng-click="$ctrl.addNewBill()">new</a>
             <a href="" class="btn" id="billsReporter" ng-click="$ctrl.billsReport()">report</a>
             <div id="unpaidBillsDiv">
-              <p>Unpaid Bills:</p>
+              <br><br><p>Unpaid Bills:</p>
               <main ng-repeat="unpaid in $ctrl.userUnpaidBills | orderBy : $ctrl.sortBy">
                 <p>{{unpaid.name}}</p>
                 <p>Amount: ${{unpaid.amount_due}}</p>
@@ -288,20 +288,20 @@
                 <div class="occasionEdit">
                   <a href="" class="btn" ng-click="$ctrl.editBill(unpaid.id)">edit</a>
                   <a href="" class="btn" ng-click="$ctrl.deleteBill(unpaid.id)">delete</a>
-                </div>
-              </main>
+                </div><br><br>
+              </main><br><br>
             </div>
             <div id="paidBillsDiv">
               <p>Paid Bills:</p>
               <main ng-repeat="paid in $ctrl.userPaidBills | orderBy : $ctrl.sortBy">
-                <p>{{paid.name}}</p>
+                <br><br><p>{{paid.name}}</p>
                 <p>Amount: ${{paid.amount_due}}</p>
                 <p>Date paid: {{paid.cleanPaid}}</p>
                 <br>
                 <div class="occasionEdit">
                   <a href="" class="btn" ng-click="$ctrl.editBill(paid.id)">edit</a>
                   <a href="" class="btn" ng-click="$ctrl.deleteBill(paid.id)">delete</a>
-                </div>
+                </div><br><br>
               </main>
             </div>
           </div>
@@ -954,6 +954,10 @@
       </div>
       <form id="userBillsEditorForm" class="pure-form pure-form-stacked">
         <p id="userBillName">Bill name:</p>
+        <div id="billNameDivDiv">
+
+          <input type="text" id="userBillNameField" class="pure-input-1">
+        </div>
         <div id="billsOccasionNameDiv">
           <p>Pay To:</p>
           <div id="userPayToDiv">
