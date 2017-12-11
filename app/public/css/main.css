@@ -3017,6 +3017,34 @@ footer img {
   margin-top: 0.2em;
 }
 
+#occasionsReportBar {
+  font-family: 'Asul', serif;
+  font-size: 18px
+  background: #16171B;
+  background-color: -webkit-linear-gradient(-135deg, #16171B, #A3A3AD);
+  background: -o-linear-gradient(-135deg, #16171B, #A3A3AD);
+  background: -moz-linear-gradient(-135deg, #16171B, #A3A3AD);
+  background: linear-gradient(-135deg, #16171B, #A3A3AD);
+  border-radius: 5px;
+  margin: 0;
+  padding:0;
+  height: 3.8em;
+  top: 0%;
+  opacity: 1;
+}
+
+#occasionsReportBar h1 {
+  margin-left: 2em;
+  padding-top: 0.4em;
+}
+
+
+#occasionsReportBar a {
+  float:right;
+  margin-right: 1.1em;
+  margin-top: 0.2em;
+}
+
 #userHolidayEditorBar {
   font-family: 'Asul', serif;
   font-size: 18px
@@ -4247,6 +4275,10 @@ footer img {
 }
 
 #reportForHolidays {
+  display: none;
+}
+
+#reportForOccasions {
   display: none;
 }
 

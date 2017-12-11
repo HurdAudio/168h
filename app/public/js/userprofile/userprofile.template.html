@@ -926,6 +926,77 @@
       </form>
 
     </div>
+
+    <div id="reportForOccasions">
+      <div id="occasionsReportBar">
+        <a href="" class="btn" id="occasionsReportDone" ng-click="$ctrl.occasionsReportDone()">done</a>
+        <h1>Occasions Report</h1>
+      </div>
+      <div id="occasionReportBody">
+        <main ng-repeat="report in $ctrl.occasionReporter | orderBy : $ctrl.sortBy">
+          <div class="reporter">
+            <h2>Calendar Year: {{report.calendarTotal}} days</h2>
+            <h2>January:</h2> <p>{{report.calendarJan}} Occasions - {{report.calendarJanOccasions}}</p>
+            <p>{{report.calendarJanOverlap}} overlapping -  {{report.calendarJanTotal}} days total.</p>
+            <h2>February:</h2> <p>{{report.calendarFeb}} Occasions - {{report.calendarFebOccasions}}</p>
+            <p>{{report.calendarFebOverlap}} overlapping - {{report.calendarFebTotal}} days total</p>
+            <h2>March:</h2> <p>{{report.calendarMar}} Occasions - {{report.calendarMarOccasions}}</p>
+            <p>{{report.calendarMarOverlap}} overlapping - {{report.calendarMarTotal}} days total</p>
+            <h2>April:</h2> <p>{{report.calendarApr}} Occasions - {{report.calendarAprOccasions}}</p>
+            <p>{{report.calendarAprOverlap}} overlapping - {{report.calendarAprTotal}} days total</p>
+            <h2>May:</h2> <p>{{report.calendarMay}} Occasions - {{report.calendarMayOccasions}}</p>
+            <p>{{report.calendarMayOverlap}} overlapping - {{report.calendarMayTotal}} days total</p>
+            <h2>June:</h2> <p>{{report.calendarJun}} Occasions - {{report.calendarJunOccasions}}</p>
+            <p>{{report.calendarJunOverlap}} overlapping - {{report.calendarJunTotal}} days total</p>
+            <h2>July:</h2> <p>{{report.calendarJul}} Occasions - {{report.calendarJulOccasions}}</p>
+            <p>{{report.calendarJulOverlap}} overlapping - {{report.calendarJulTotal}} days total</p>
+            <h2>August:</h2> <p>{{report.calendarAug}} Occasions - {{report.calendarAugOccasions}}</p>
+            <p>{{report.calendarAugOverlap}} overlapping - {{report.calendarAugTotal}} days total</p>
+            <h2>September:</h2> <p>{{report.calendarSep}} Occasions - {{report.calendarSepOccasions}}</p>
+            <p>{{report.calendarSepOverlap}} overlapping - {{report.calendarSepTotal}} days total</p>
+            <h2>October:</h2> <p>{{report.calendarOct}} Occasions - {{report.calendarOctOccasions}}</p>
+            <p>{{report.calendarOctOverlap}} overlapping - {{report.calendarOctTotal}} days total</p>
+            <h2>November:</h2> <p>{{report.calendarNov}} Occasions - {{report.calendarNovOccasions}}</p>
+            <p>{{report.calendarNovOverlap}} overlapping - {{report.calendarNovTotal}} days total</p>
+            <h2>December:</h2> <p>{{report.calendarDec}} Occasions - {{report.calendarDecOccasions}}</p>
+            <p>{{report.calendarDecOverlap}} overlapping - {{report.calendarDecTotal}} days total</p>
+            <h2>Annual: {{report.calendarAnnual}}</h2>
+            <h2>One-off: {{report.calendarOneOff}}</h2><br>
+            <h2>From {{report.todayClean}} to {{report.oneYearClean}}: {{report.yearTotal}} days</h2>
+            <h2>January:</h2> <p>{{report.yearJan}} Occasions - {{report.yearJanOccasions}}</p>
+            <p>{{report.yearJanOverlap}} overlapping - {{report.yearJanTotal}} days total</p>
+            <h2>February:</h2> <p>{{report.yearFeb}} Occasions - {{report.yearFebOccasions}}</p>
+            <p>{{report.yearFebOverlap}} overlapping - {{report.yearFebTotal}} days total</p>
+            <h2>March:</h2> <p>{{report.yearMar}} Occasions - {{report.yearMarOccasions}}</p>
+            <p>{{report.yearMarOverlap}} overlapping - {{report.yearMarTotal}} days total</p>
+            <h2>April:</h2> <p>{{report.yearApr}} Occasions - {{report.yearAprOccasions}}</p>
+            <p>{{report.yearAprOverlap}} overlapping - {{report.yearAprTotal}} days total</p>
+            <h2>May:</h2> <p>{{report.yearMay}} Occasions - {{report.yearMayOccasions}}</p>
+            <p>{{report.yearMayOverlap}} overlapping - {{report.yearMayTotal}} days total</p>
+            <h2>June:</h2> <p>{{report.yearJun}} Occasions - {{report.yearJunOccasions}}</p>
+            <p>{{report.yearJunOverlap}} overlapping - {{report.yearJunTotal}} days total</p>
+            <h2>July:</h2> <p>{{report.yearJul}} Occasions - {{report.yearJulOccasions}}</p>
+            <p>{{report.yearJulOverlap}} overlapping - {{report.yearJulTotal}} days total</p>
+            <h2>August:</h2> <p>{{report.yearAug}} Occasions - {{report.yearAugOccasions}}</p>
+            <p>{{report.yearAugOverlap}} overlapping - {{report.yearAugTotal}} days total</p>
+            <h2>September:</h2> <p>{{report.yearSep}} Occasions - {{report.yearSepOccasions}}</p>
+            <p>{{report.yearSepOverlap}} overlapping - {{report.yearSepTotal}} days total</p>
+            <h2>October:</h2> <p>{{report.yearOct}} Occasions - {{report.yearOctOccasions}}</p>
+            <p>{{report.yearOctOverlap}} overlapping - {{report.yearOctTotal}} days total</p>
+            <h2>November:</h2> <p>{{report.yearNov}} Occasions - {{report.yearNovOccasions}}</p>
+            <p>{{report.yearNovOverlap}} overlapping - {{report.yearNovTotal}} days total</p>
+            <h2>December:</h2> <p>{{report.yearDec}} Occasions - {{report.yearDecOccasions}}</p>
+            <p>{{report.yearDecOverlap}} overlapping - {{report.yearDecTotal}} days total</p>
+            <h2>Annual: {{report.yearAnnual}}</h2>
+            <h2>One-off: {{report.yearOneOff}}</h2><br>
+
+          </div>
+
+        </main>
+
+      </div>
+
+    </div>
     <div id="userOccasionsEditingDiv">
       <div id="userOccasionsEditorBar">
         <a href="" class="btn" id="userOccasionsEditorDoneButton" ng-click="$ctrl.userOccasionsEditorDone()">done</a>

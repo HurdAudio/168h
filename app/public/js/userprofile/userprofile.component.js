@@ -159,6 +159,757 @@
       vm.userGoalsEditorDone = userGoalsEditorDone;
       vm.deleteTask = deleteTask;
       vm.addNewBill = addNewBill;
+      vm.occasionReport = occasionReport;
+      vm.occasionsReportDone = occasionsReportDone;
+
+      function occasionsReportDone() {
+        let reportForOccasions = document.getElementById('reportForOccasions');
+        let occasionReporter = document.getElementById('occasionReporter');
+        let occasionsManagerDone = document.getElementById('occasionsManagerDone');
+        let userOccasionsEditingDiv = document.getElementById('userOccasionsEditingDiv');
+
+        reportForOccasions.setAttribute("style", "display: none;");
+        occasionReporter.setAttribute("style", "visibility: visible;");
+        occasionsManagerDone.setAttribute("style", "visibility: visible;");
+        userOccasionsEditingDiv.setAttribute("style", "display: none;");
+      }
+
+      function occasionReport() {
+        let months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+        let reportForOccasions = document.getElementById('reportForOccasions');
+        let occasionReporter = document.getElementById('occasionReporter');
+        let occasionsManagerDone = document.getElementById('occasionsManagerDone');
+        let userOccasionsEditingDiv = document.getElementById('userOccasionsEditingDiv');
+        let yearStart = new Date();
+        let calendarStart = new Date(yearStart.getFullYear().toString() + '-01-01T13:44:00.000Z');
+        let endYear = (yearStart.getFullYear() + 1).toString();
+        let calendarEnd = new Date(endYear + '-01-01T13:44:00.000Z');
+        let endMonth = '';
+        if ((yearStart.getMonth() + 1) < 10) {
+          endMonth = '0' + (yearStart.getMonth() + 1).toString();
+        } else {
+          endMonth = (yearStart.getMonth() + 1).toString();
+        }
+        let endDay = '';
+        if (yearStart.getDate() < 10) {
+          endDay = '0' + yearStart.getDate().toString();
+        } else {
+          endDay = yearStart.getDate().toString();
+        }
+        let yearEnd = new Date(endYear + '-' + endMonth + '-' + endDay + 'T13:44:00.000Z');
+        let checkDate;
+        let occasionDate;
+
+        $http.get(`/occasionsbyuser/${currentUserId}`)
+        .then(fullOccasionsData=>{
+          let fullOccasions = fullOccasionsData.data;
+          vm.occasionReporter = [];
+          vm.occasionReporter[0] = {};
+          vm.occasionReporter[0].calendarTotal = 0;
+          vm.occasionReporter[0].calendarJan = 0;
+          vm.occasionReporter[0].calendarJanOccasions = [];
+          vm.occasionReporter[0].calendarJanuaryOverlap = {};
+          vm.occasionReporter[0].calendarJanOverlap = 0;
+          vm.occasionReporter[0].calendarJanTotal = 0;
+          vm.occasionReporter[0].calendarAnnual = 0;
+          vm.occasionReporter[0].calendarOneOff = 0;
+          vm.occasionReporter[0].calendarFeb = 0;
+          vm.occasionReporter[0].calendarFebOccasions = [];
+          vm.occasionReporter[0].calendarFebruaryOverlap = {};
+          vm.occasionReporter[0].calendarFebOverlap = 0;
+          vm.occasionReporter[0].calendarFebTotal = 0;
+          vm.occasionReporter[0].calendarMar = 0;
+          vm.occasionReporter[0].calendarMarOccasions = [];
+          vm.occasionReporter[0].calendarMarchOverlap = {};
+          vm.occasionReporter[0].calendarMarOverlap = 0;
+          vm.occasionReporter[0].calendarMarTotal = 0;
+          vm.occasionReporter[0].calendarApr = 0;
+          vm.occasionReporter[0].calendarAprOccasions = [];
+          vm.occasionReporter[0].calendarAprilOverlap = {};
+          vm.occasionReporter[0].calendarAprOverlap = 0;
+          vm.occasionReporter[0].calendarAprTotal = 0;
+          vm.occasionReporter[0].calendarMay = 0;
+          vm.occasionReporter[0].calendarMayOccasions = [];
+          vm.occasionReporter[0].calendarMayMonthOverlap = {};
+          vm.occasionReporter[0].calendarMayOverlap = 0;
+          vm.occasionReporter[0].calendarMayTotal = 0;
+          vm.occasionReporter[0].calendarJun = 0;
+          vm.occasionReporter[0].calendarJunOccasions = [];
+          vm.occasionReporter[0].calendarJuneOverlap = {};
+          vm.occasionReporter[0].calendarJunOverlap = 0;
+          vm.occasionReporter[0].calendarJunTotal = 0;
+          vm.occasionReporter[0].calendarJul = 0;
+          vm.occasionReporter[0].calendarJulOccasions = [];
+          vm.occasionReporter[0].calendarJulyOverlap = {};
+          vm.occasionReporter[0].calendarJulOverlap = 0;
+          vm.occasionReporter[0].calendarJulTotal = 0;
+          vm.occasionReporter[0].calendarAug = 0;
+          vm.occasionReporter[0].calendarAugOccasions = [];
+          vm.occasionReporter[0].calendarAugustOverlap = {};
+          vm.occasionReporter[0].calendarAugOverlap = 0;
+          vm.occasionReporter[0].calendarAugTotal = 0;
+          vm.occasionReporter[0].calendarSep = 0;
+          vm.occasionReporter[0].calendarSepOccasions = [];
+          vm.occasionReporter[0].calendarSeptemberOverlap = {};
+          vm.occasionReporter[0].calendarSepOverlap = 0;
+          vm.occasionReporter[0].calendarSepTotal = 0;
+          vm.occasionReporter[0].calendarOct = 0;
+          vm.occasionReporter[0].calendarOctOccasions = [];
+          vm.occasionReporter[0].calendarOctoberOverlap = {};
+          vm.occasionReporter[0].calendarOctOverlap = 0;
+          vm.occasionReporter[0].calendarOctTotal = 0;
+          vm.occasionReporter[0].calendarNov = 0;
+          vm.occasionReporter[0].calendarNovOccasions = [];
+          vm.occasionReporter[0].calendarNovemberOverlap = {};
+          vm.occasionReporter[0].calendarNovOverlap = 0;
+          vm.occasionReporter[0].calendarNovTotal = 0;
+          vm.occasionReporter[0].calendarDec = 0;
+          vm.occasionReporter[0].calendarDecOccasions = [];
+          vm.occasionReporter[0].calendarDecemberOverlap = {};
+          vm.occasionReporter[0].calendarDecOverlap = 0;
+          vm.occasionReporter[0].calendarDecTotal = 0;
+          vm.occasionReporter[0].todayClean = yearStart.getDate().toString() + ' ' + months[yearStart.getMonth()] + ' ' + yearStart.getFullYear().toString();
+          vm.occasionReporter[0].oneYearClean = yearEnd.getDate().toString() + ' ' + months[yearEnd.getMonth()] + ' ' + yearEnd.getFullYear().toString();
+          vm.occasionReporter[0].yearTotal = 0;
+          vm.occasionReporter[0].yearAnnual = 0;
+          vm.occasionReporter[0].yearOneOff = 0;
+          vm.occasionReporter[0].yearJan = 0;
+          vm.occasionReporter[0].yearJanOccasions = [];
+          vm.occasionReporter[0].yearJanuaryOverlap = {};
+          vm.occasionReporter[0].yearJanOverlap = 0;
+          vm.occasionReporter[0].yearJanTotal = 0;
+          vm.occasionReporter[0].yearFeb = 0;
+          vm.occasionReporter[0].yearFebOccasions = [];
+          vm.occasionReporter[0].yearFebruaryOverlap = {};
+          vm.occasionReporter[0].yearFebOverlap = 0;
+          vm.occasionReporter[0].yearFebTotal = 0;
+          vm.occasionReporter[0].yearMar = 0;
+          vm.occasionReporter[0].yearMarOccasions = [];
+          vm.occasionReporter[0].yearMarchOverlap = {};
+          vm.occasionReporter[0].yearMarOverlap = 0;
+          vm.occasionReporter[0].yearMarTotal = 0;
+          vm.occasionReporter[0].yearApr = 0;
+          vm.occasionReporter[0].yearAprOccasions = [];
+          vm.occasionReporter[0].yearAprilOverlap = {};
+          vm.occasionReporter[0].yearAprOverlap = 0;
+          vm.occasionReporter[0].yearAprTotal = 0;
+          vm.occasionReporter[0].yearMay = 0;
+          vm.occasionReporter[0].yearMayOccasions = [];
+          vm.occasionReporter[0].yearMayMonthOverlap = {};
+          vm.occasionReporter[0].yearMayOverlap = 0;
+          vm.occasionReporter[0].yearMayTotal = 0;
+          vm.occasionReporter[0].yearJun = 0;
+          vm.occasionReporter[0].yearJunOccasions = [];
+          vm.occasionReporter[0].yearJuneOverlap = {};
+          vm.occasionReporter[0].yearJunOverlap = 0;
+          vm.occasionReporter[0].yearJunTotal = 0;
+          vm.occasionReporter[0].yearJul = 0;
+          vm.occasionReporter[0].yearJulOccasions = [];
+          vm.occasionReporter[0].yearJulyOverlap = {};
+          vm.occasionReporter[0].yearJulOverlap = 0;
+          vm.occasionReporter[0].yearJulTotal = 0;
+          vm.occasionReporter[0].yearAug = 0;
+          vm.occasionReporter[0].yearAugOccasions = [];
+          vm.occasionReporter[0].yearAugustOverlap = {};
+          vm.occasionReporter[0].yearAugOverlap = 0;
+          vm.occasionReporter[0].yearAugTotal = 0;
+          vm.occasionReporter[0].yearSep = 0;
+          vm.occasionReporter[0].yearSepOccasions = [];
+          vm.occasionReporter[0].yearSeptemberOverlap = {};
+          vm.occasionReporter[0].yearSepOverlap = 0;
+          vm.occasionReporter[0].yearSepTotal = 0;
+          vm.occasionReporter[0].yearOct = 0;
+          vm.occasionReporter[0].yearOctOccasions = [];
+          vm.occasionReporter[0].yearOctoberOverlap = {};
+          vm.occasionReporter[0].yearOctOverlap = 0;
+          vm.occasionReporter[0].yearOctTotal = 0;
+          vm.occasionReporter[0].yearNov = 0;
+          vm.occasionReporter[0].yearNovOccasions = [];
+          vm.occasionReporter[0].yearNovemberOverlap = {};
+          vm.occasionReporter[0].yearNovOverlap = 0;
+          vm.occasionReporter[0].yearNovTotal = 0;
+          vm.occasionReporter[0].yearDec = 0;
+          vm.occasionReporter[0].yearDecOccasions = [];
+          vm.occasionReporter[0].yearDecemberOverlap = {};
+          vm.occasionReporter[0].yearDecOverlap = 0;
+          vm.occasionReporter[0].yearDecTotal = 0;
+
+          checkDate = new Date(calendarStart);
+          do {
+            for (let i = 0; i < fullOccasions.length; i++) {
+              occasionDate = new Date(fullOccasions[i].day_of);
+              if ((checkDate.getMonth() === occasionDate.getMonth()) && (checkDate.getDate() === occasionDate.getDate())) {
+                if (fullOccasions[i].is_annual) {
+                  vm.occasionReporter[0].calendarAnnual++;
+                  vm.occasionReporter[0].calendarTotal++;
+                  if (checkDate.getMonth() === 0) {
+
+                    vm.occasionReporter[0].calendarJanOccasions.push(fullOccasions[i].name);
+                    vm.occasionReporter[0].calendarJan = vm.occasionReporter[0].calendarJanOccasions.length;
+                    if (vm.occasionReporter[0].calendarJanuaryOverlap[checkDate.getDate().toString()] === undefined) {
+                      vm.occasionReporter[0].calendarJanuaryOverlap[checkDate.getDate().toString()] = true;
+                      vm.occasionReporter[0].calendarJanTotal++;
+                    } else {
+                      vm.occasionReporter[0].calendarJanOverlap++;
+                    }
+                  }
+                  if (checkDate.getMonth() === 1) {
+
+                    vm.occasionReporter[0].calendarFebOccasions.push(fullOccasions[i].name);
+                    vm.occasionReporter[0].calendarFeb = vm.occasionReporter[0].calendarFebOccasions.length;
+                    if (vm.occasionReporter[0].calendarFebruaryOverlap[checkDate.getDate().toString()] === undefined) {
+                      vm.occasionReporter[0].calendarFebruaryOverlap[checkDate.getDate().toString()] = true;
+                      vm.occasionReporter[0].calendarFebTotal++;
+                    } else {
+                      vm.occasionReporter[0].calendarFebOverlap++;
+                    }
+                  }
+                  if (checkDate.getMonth() === 2) {
+
+                    vm.occasionReporter[0].calendarMarOccasions.push(fullOccasions[i].name);
+                    vm.occasionReporter[0].calendarMar = vm.occasionReporter[0].calendarMarOccasions.length;
+                    if (vm.occasionReporter[0].calendarMarchOverlap[checkDate.getDate().toString()] === undefined) {
+                      vm.occasionReporter[0].calendarMarchOverlap[checkDate.getDate().toString()] = true;
+                      vm.occasionReporter[0].calendarMarTotal++;
+                    } else {
+                      vm.occasionReporter[0].calendarMarOverlap++;
+                    }
+                  }
+                  if (checkDate.getMonth() === 3) {
+
+                    vm.occasionReporter[0].calendarAprOccasions.push(fullOccasions[i].name);
+                    vm.occasionReporter[0].calendarApr = vm.occasionReporter[0].calendarAprOccasions.length;
+                    if (vm.occasionReporter[0].calendarAprilOverlap[checkDate.getDate().toString()] === undefined) {
+                      vm.occasionReporter[0].calendarAprilOverlap[checkDate.getDate().toString()] = true;
+                      vm.occasionReporter[0].calendarAprTotal++;
+                    } else {
+                      vm.occasionReporter[0].calendarAprOverlap++;
+                    }
+                  }
+                  if (checkDate.getMonth() === 4) {
+
+                    vm.occasionReporter[0].calendarMayOccasions.push(fullOccasions[i].name);
+                    vm.occasionReporter[0].calendarMay = vm.occasionReporter[0].calendarMayOccasions.length;
+                    if (vm.occasionReporter[0].calendarMayMonthOverlap[checkDate.getDate().toString()] === undefined) {
+                      vm.occasionReporter[0].calendarMayMonthOverlap[checkDate.getDate().toString()] = true;
+                      vm.occasionReporter[0].calendarMayTotal++;
+                    } else {
+                      vm.occasionReporter[0].calendarMayOverlap++;
+                    }
+                  }
+                  if (checkDate.getMonth() === 5) {
+
+                    vm.occasionReporter[0].calendarJunOccasions.push(fullOccasions[i].name);
+                    vm.occasionReporter[0].calendarJun = vm.occasionReporter[0].calendarJunOccasions.length;
+                    if (vm.occasionReporter[0].calendarJuneOverlap[checkDate.getDate().toString()] === undefined) {
+                      vm.occasionReporter[0].calendarJuneOverlap[checkDate.getDate().toString()] = true;
+                      vm.occasionReporter[0].calendarJunTotal++;
+                    } else {
+                      vm.occasionReporter[0].calendarJunOverlap++;
+                    }
+                  }
+                  if (checkDate.getMonth() === 6) {
+
+                    vm.occasionReporter[0].calendarJulOccasions.push(fullOccasions[i].name);
+                    vm.occasionReporter[0].calendarJul = vm.occasionReporter[0].calendarJulOccasions.length;
+                    if (vm.occasionReporter[0].calendarJulyOverlap[checkDate.getDate().toString()] === undefined) {
+                      vm.occasionReporter[0].calendarJulyOverlap[checkDate.getDate().toString()] = true;
+                      vm.occasionReporter[0].calendarJulTotal++;
+                    } else {
+                      vm.occasionReporter[0].calendarJulOverlap++;
+                    }
+                  }
+                  if (checkDate.getMonth() === 7) {
+
+                    vm.occasionReporter[0].calendarAugOccasions.push(fullOccasions[i].name);
+                    vm.occasionReporter[0].calendarAug = vm.occasionReporter[0].calendarAugOccasions.length;
+                    if (vm.occasionReporter[0].calendarAugustOverlap[checkDate.getDate().toString()] === undefined) {
+                      vm.occasionReporter[0].calendarAugustOverlap[checkDate.getDate().toString()] = true;
+                      vm.occasionReporter[0].calendarAugTotal++;
+                    } else {
+                      vm.occasionReporter[0].calendarAugOverlap++;
+                    }
+                  }
+                  if (checkDate.getMonth() === 8) {
+
+                    vm.occasionReporter[0].calendarSepOccasions.push(fullOccasions[i].name);
+                    vm.occasionReporter[0].calendarSep = vm.occasionReporter[0].calendarSepOccasions.length;
+                    if (vm.occasionReporter[0].calendarSeptemberOverlap[checkDate.getDate().toString()] === undefined) {
+                      vm.occasionReporter[0].calendarSeptemberOverlap[checkDate.getDate().toString()] = true;
+                      vm.occasionReporter[0].calendarSepTotal++;
+                    } else {
+                      vm.occasionReporter[0].calendarSepOverlap++;
+                    }
+                  }
+                  if (checkDate.getMonth() === 9) {
+
+                    vm.occasionReporter[0].calendarOctOccasions.push(fullOccasions[i].name);
+                    vm.occasionReporter[0].calendarOct = vm.occasionReporter[0].calendarOctOccasions.length;
+                    if (vm.occasionReporter[0].calendarOctoberOverlap[checkDate.getDate().toString()] === undefined) {
+                      vm.occasionReporter[0].calendarOctoberOverlap[checkDate.getDate().toString()] = true;
+                      vm.occasionReporter[0].calendarOctTotal++;
+                    } else {
+                      vm.occasionReporter[0].calendarOctOverlap++;
+                    }
+                  }
+                  if (checkDate.getMonth() === 10) {
+
+                    vm.occasionReporter[0].calendarNovOccasions.push(fullOccasions[i].name);
+                    vm.occasionReporter[0].calendarNov = vm.occasionReporter[0].calendarNovOccasions.length;
+                    if (vm.occasionReporter[0].calendarNovemberOverlap[checkDate.getDate().toString()] === undefined) {
+                      vm.occasionReporter[0].calendarNovemberOverlap[checkDate.getDate().toString()] = true;
+                      vm.occasionReporter[0].calendarNovTotal++;
+                    } else {
+                      vm.occasionReporter[0].calendarNovOverlap++;
+                    }
+                  }
+                  if (checkDate.getMonth() === 11) {
+
+                    vm.occasionReporter[0].calendarDecOccasions.push(fullOccasions[i].name);
+                    vm.occasionReporter[0].calendarDec = vm.occasionReporter[0].calendarDecOccasions.length;
+                    if (vm.occasionReporter[0].calendarDecemberOverlap[checkDate.getDate().toString()] === undefined) {
+                      vm.occasionReporter[0].calendarDecemberOverlap[checkDate.getDate().toString()] = true;
+                      vm.occasionReporter[0].calendarDecTotal++;
+                    } else {
+                      vm.occasionReporter[0].calendarDecOverlap++;
+                    }
+                  }
+                } else {
+                  if (checkDate.getFullYear() === occasionDate.getFullYear()) {
+                    vm.occasionReporter[0].calendarOneOff++;
+                    vm.occasionReporter[0].calendarTotal++;
+                    if (checkDate.getMonth() === 0) {
+
+                      vm.occasionReporter[0].calendarJanOccasions.push(fullOccasions[i].name);
+                      vm.occasionReporter[0].calendarJan = vm.occasionReporter[0].calendarJanOccasions.length;
+                      if (vm.occasionReporter[0].calendarJanuaryOverlap[checkDate.getDate().toString()] === undefined) {
+                        vm.occasionReporter[0].calendarJanuaryOverlap[checkDate.getDate().toString()] = true;
+                        vm.occasionReporter[0].calendarJanTotal++;
+                      } else {
+                        vm.occasionReporter[0].calendarJanOverlap++;
+                      }
+                    }
+                    if (checkDate.getMonth() === 1) {
+
+                      vm.occasionReporter[0].calendarFebOccasions.push(fullOccasions[i].name);
+                      vm.occasionReporter[0].calendarFeb = vm.occasionReporter[0].calendarFebOccasions.length;
+                      if (vm.occasionReporter[0].calendarFebruaryOverlap[checkDate.getDate().toString()] === undefined) {
+                        vm.occasionReporter[0].calendarFebruaryOverlap[checkDate.getDate().toString()] = true;
+                        vm.occasionReporter[0].calendarFebTotal++;
+                      } else {
+                        vm.occasionReporter[0].calendarFebOverlap++;
+                      }
+                    }
+                    if (checkDate.getMonth() === 2) {
+
+                      vm.occasionReporter[0].calendarMarOccasions.push(fullOccasions[i].name);
+                      vm.occasionReporter[0].calendarMar = vm.occasionReporter[0].calendarMarOccasions.length;
+                      if (vm.occasionReporter[0].calendarMarchOverlap[checkDate.getDate().toString()] === undefined) {
+                        vm.occasionReporter[0].calendarMarchOverlap[checkDate.getDate().toString()] = true;
+                        vm.occasionReporter[0].calendarMarTotal++;
+                      } else {
+                        vm.occasionReporter[0].calendarMarOverlap++;
+                      }
+                    }
+                    if (checkDate.getMonth() === 3) {
+
+                      vm.occasionReporter[0].calendarAprOccasions.push(fullOccasions[i].name);
+                      vm.occasionReporter[0].calendarApr = vm.occasionReporter[0].calendarAprOccasions.length;
+                      if (vm.occasionReporter[0].calendarAprilOverlap[checkDate.getDate().toString()] === undefined) {
+                        vm.occasionReporter[0].calendarAprilOverlap[checkDate.getDate().toString()] = true;
+                        vm.occasionReporter[0].calendarAprTotal++;
+                      } else {
+                        vm.occasionReporter[0].calendarAprOverlap++;
+                      }
+                    }
+                    if (checkDate.getMonth() === 4) {
+
+                      vm.occasionReporter[0].calendarMayOccasions.push(fullOccasions[i].name);
+                      vm.occasionReporter[0].calendarMay = vm.occasionReporter[0].calendarMayOccasions.length;
+                      if (vm.occasionReporter[0].calendarMayMonthOverlap[checkDate.getDate().toString()] === undefined) {
+                        vm.occasionReporter[0].calendarMayMonthOverlap[checkDate.getDate().toString()] = true;
+                        vm.occasionReporter[0].calendarMayTotal++;
+                      } else {
+                        vm.occasionReporter[0].calendarMayOverlap++;
+                      }
+                    }
+                    if (checkDate.getMonth() === 5) {
+
+                      vm.occasionReporter[0].calendarJunOccasions.push(fullOccasions[i].name);
+                      vm.occasionReporter[0].calendarJun = vm.occasionReporter[0].calendarJunOccasions.length;
+                      if (vm.occasionReporter[0].calendarJuneOverlap[checkDate.getDate().toString()] === undefined) {
+                        vm.occasionReporter[0].calendarJuneOverlap[checkDate.getDate().toString()] = true;
+                        vm.occasionReporter[0].calendarJunTotal++;
+                      } else {
+                        vm.occasionReporter[0].calendarJunOverlap++;
+                      }
+                    }
+                    if (checkDate.getMonth() === 6) {
+
+                      vm.occasionReporter[0].calendarJulOccasions.push(fullOccasions[i].name);
+                      vm.occasionReporter[0].calendarJul = vm.occasionReporter[0].calendarJulOccasions.length;
+                      if (vm.occasionReporter[0].calendarJulyOverlap[checkDate.getDate().toString()] === undefined) {
+                        vm.occasionReporter[0].calendarJulyOverlap[checkDate.getDate().toString()] = true;
+                        vm.occasionReporter[0].calendarJulTotal++;
+                      } else {
+                        vm.occasionReporter[0].calendarJulOverlap++;
+                      }
+                    }
+                    if (checkDate.getMonth() === 7) {
+
+                      vm.occasionReporter[0].calendarAugOccasions.push(fullOccasions[i].name);
+                      vm.occasionReporter[0].calendarAug = vm.occasionReporter[0].calendarAugOccasions.length;
+                      if (vm.occasionReporter[0].calendarAugustOverlap[checkDate.getDate().toString()] === undefined) {
+                        vm.occasionReporter[0].calendarAugustOverlap[checkDate.getDate().toString()] = true;
+                        vm.occasionReporter[0].calendarAugTotal++;
+                      } else {
+                        vm.occasionReporter[0].calendarAugOverlap++;
+                      }
+                    }
+                    if (checkDate.getMonth() === 8) {
+
+                      vm.occasionReporter[0].calendarSepOccasions.push(fullOccasions[i].name);
+                      vm.occasionReporter[0].calendarSep = vm.occasionReporter[0].calendarSepOccasions.length;
+                      if (vm.occasionReporter[0].calendarSeptemberOverlap[checkDate.getDate().toString()] === undefined) {
+                        vm.occasionReporter[0].calendarSeptemberOverlap[checkDate.getDate().toString()] = true;
+                        vm.occasionReporter[0].calendarSepTotal++;
+                      } else {
+                        vm.occasionReporter[0].calendarSepOverlap++;
+                      }
+                    }
+                    if (checkDate.getMonth() === 9) {
+
+                      vm.occasionReporter[0].calendarOctOccasions.push(fullOccasions[i].name);
+                      vm.occasionReporter[0].calendarOct = vm.occasionReporter[0].calendarOctOccasions.length;
+                      if (vm.occasionReporter[0].calendarOctoberOverlap[checkDate.getDate().toString()] === undefined) {
+                        vm.occasionReporter[0].calendarOctoberOverlap[checkDate.getDate().toString()] = true;
+                        vm.occasionReporter[0].calendarOctTotal++;
+                      } else {
+                        vm.occasionReporter[0].calendarOctOverlap++;
+                      }
+                    }
+                    if (checkDate.getMonth() === 10) {
+
+                      vm.occasionReporter[0].calendarNovOccasions.push(fullOccasions[i].name);
+                      vm.occasionReporter[0].calendarNov = vm.occasionReporter[0].calendarNovOccasions.length;
+                      if (vm.occasionReporter[0].calendarNovemberOverlap[checkDate.getDate().toString()] === undefined) {
+                        vm.occasionReporter[0].calendarNovemberOverlap[checkDate.getDate().toString()] = true;
+                        vm.occasionReporter[0].calendarNovTotal++;
+                      } else {
+                        vm.occasionReporter[0].calendarNovOverlap++;
+                      }
+                    }
+                    if (checkDate.getMonth() === 11) {
+
+                      vm.occasionReporter[0].calendarDecOccasions.push(fullOccasions[i].name);
+                      vm.occasionReporter[0].calendarDec = vm.occasionReporter[0].calendarDecOccasions.length;
+                      if (vm.occasionReporter[0].calendarDecemberOverlap[checkDate.getDate().toString()] === undefined) {
+                        vm.occasionReporter[0].calendarDecemberOverlap[checkDate.getDate().toString()] = true;
+                        vm.occasionReporter[0].calendarDecTotal++;
+                      } else {
+                        vm.occasionReporter[0].calendarDecOverlap++;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+
+
+            checkDate.setDate(checkDate.getDate() + 1);
+          } while(!areSameDate(checkDate, calendarEnd));
+
+          checkDate = new Date(yearStart);
+          do {
+            for (let j = 0; j < fullOccasions.length; j++) {
+              occasionDate = new Date(fullOccasions[j].day_of);
+              if ((checkDate.getDate() === occasionDate.getDate()) && (checkDate.getMonth() === occasionDate.getMonth())) {
+                if (fullOccasions[j].is_annual) {
+                  vm.occasionReporter[0].yearTotal++;
+                  vm.occasionReporter[0].yearAnnual++;
+                  if (checkDate.getMonth() === 0) {
+
+                    vm.occasionReporter[0].yearJanOccasions.push(fullOccasions[j].name);
+                    vm.occasionReporter[0].yearJan = vm.occasionReporter[0].yearJanOccasions.length;
+                    if (vm.occasionReporter[0].yearJanuaryOverlap[checkDate.getDate().toString()] === undefined) {
+                      vm.occasionReporter[0].yearJanuaryOverlap[checkDate.getDate().toString()] = true;
+                      vm.occasionReporter[0].yearJanTotal++;
+                    } else {
+                      vm.occasionReporter[0].yearJanOverlap++;
+                    }
+                  }
+                  if (checkDate.getMonth() === 1) {
+
+                    vm.occasionReporter[0].yearFebOccasions.push(fullOccasions[j].name);
+                    vm.occasionReporter[0].yearFeb = vm.occasionReporter[0].yearFebOccasions.length;
+                    if (vm.occasionReporter[0].yearFebruaryOverlap[checkDate.getDate().toString()] === undefined) {
+                      vm.occasionReporter[0].yearFebruaryOverlap[checkDate.getDate().toString()] = true;
+                      vm.occasionReporter[0].yearFebTotal++;
+                    } else {
+                      vm.occasionReporter[0].yearFebOverlap++;
+                    }
+                  }
+                  if (checkDate.getMonth() === 2) {
+
+                    vm.occasionReporter[0].yearMarOccasions.push(fullOccasions[j].name);
+                    vm.occasionReporter[0].yearMar = vm.occasionReporter[0].yearMarOccasions.length;
+                    if (vm.occasionReporter[0].yearMarchOverlap[checkDate.getDate().toString()] === undefined) {
+                      vm.occasionReporter[0].yearMarchOverlap[checkDate.getDate().toString()] = true;
+                      vm.occasionReporter[0].yearMarTotal++;
+                    } else {
+                      vm.occasionReporter[0].yearMarOverlap++;
+                    }
+                  }
+                  if (checkDate.getMonth() === 3) {
+
+                    vm.occasionReporter[0].yearAprOccasions.push(fullOccasions[j].name);
+                    vm.occasionReporter[0].yearApr = vm.occasionReporter[0].yearAprOccasions.length;
+                    if (vm.occasionReporter[0].yearAprilOverlap[checkDate.getDate().toString()] === undefined) {
+                      vm.occasionReporter[0].yearAprilOverlap[checkDate.getDate().toString()] = true;
+                      vm.occasionReporter[0].yearAprTotal++;
+                    } else {
+                      vm.occasionReporter[0].yearAprOverlap++;
+                    }
+                  }
+                  if (checkDate.getMonth() === 4) {
+
+                    vm.occasionReporter[0].yearMayOccasions.push(fullOccasions[j].name);
+                    vm.occasionReporter[0].yearMay = vm.occasionReporter[0].yearMayOccasions.length;
+                    if (vm.occasionReporter[0].yearMayMonthOverlap[checkDate.getDate().toString()] === undefined) {
+                      vm.occasionReporter[0].yearMayMonthOverlap[checkDate.getDate().toString()] = true;
+                      vm.occasionReporter[0].yearMayTotal++;
+                    } else {
+                      vm.occasionReporter[0].yearMayOverlap++;
+                    }
+                  }
+                  if (checkDate.getMonth() === 5) {
+
+                    vm.occasionReporter[0].yearJunOccasions.push(fullOccasions[j].name);
+                    vm.occasionReporter[0].yearJun = vm.occasionReporter[0].yearJunOccasions.length;
+                    if (vm.occasionReporter[0].yearJuneOverlap[checkDate.getDate().toString()] === undefined) {
+                      vm.occasionReporter[0].yearJuneOverlap[checkDate.getDate().toString()] = true;
+                      vm.occasionReporter[0].yearJunTotal++;
+                    } else {
+                      vm.occasionReporter[0].yearJunOverlap++;
+                    }
+                  }
+                  if (checkDate.getMonth() === 6) {
+
+                    vm.occasionReporter[0].yearJulOccasions.push(fullOccasions[j].name);
+                    vm.occasionReporter[0].yearJul = vm.occasionReporter[0].yearJulOccasions.length;
+                    if (vm.occasionReporter[0].yearJulyOverlap[checkDate.getDate().toString()] === undefined) {
+                      vm.occasionReporter[0].yearJulyOverlap[checkDate.getDate().toString()] = true;
+                      vm.occasionReporter[0].yearJulTotal++;
+                    } else {
+                      vm.occasionReporter[0].yearJulOverlap++;
+                    }
+                  }
+                  if (checkDate.getMonth() === 7) {
+
+                    vm.occasionReporter[0].yearAugOccasions.push(fullOccasions[j].name);
+                    vm.occasionReporter[0].yearAug = vm.occasionReporter[0].yearAugOccasions.length;
+                    if (vm.occasionReporter[0].yearAugustOverlap[checkDate.getDate().toString()] === undefined) {
+                      vm.occasionReporter[0].yearAugustOverlap[checkDate.getDate().toString()] = true;
+                      vm.occasionReporter[0].yearAugTotal++;
+                    } else {
+                      vm.occasionReporter[0].yearAugOverlap++;
+                    }
+                  }
+                  if (checkDate.getMonth() === 8) {
+
+                    vm.occasionReporter[0].yearSepOccasions.push(fullOccasions[j].name);
+                    vm.occasionReporter[0].yearSep = vm.occasionReporter[0].yearSepOccasions.length;
+                    if (vm.occasionReporter[0].yearSeptemberOverlap[checkDate.getDate().toString()] === undefined) {
+                      vm.occasionReporter[0].yearSeptemberOverlap[checkDate.getDate().toString()] = true;
+                      vm.occasionReporter[0].yearSepTotal++;
+                    } else {
+                      vm.occasionReporter[0].yearSepOverlap++;
+                    }
+                  }
+                  if (checkDate.getMonth() === 9) {
+
+                    vm.occasionReporter[0].yearOctOccasions.push(fullOccasions[j].name);
+                    vm.occasionReporter[0].yearOct = vm.occasionReporter[0].yearOctOccasions.length;
+                    if (vm.occasionReporter[0].yearOctoberOverlap[checkDate.getDate().toString()] === undefined) {
+                      vm.occasionReporter[0].yearOctoberOverlap[checkDate.getDate().toString()] = true;
+                      vm.occasionReporter[0].yearOctTotal++;
+                    } else {
+                      vm.occasionReporter[0].yearOctOverlap++;
+                    }
+                  }
+                  if (checkDate.getMonth() === 10) {
+
+                    vm.occasionReporter[0].yearNovOccasions.push(fullOccasions[j].name);
+                    vm.occasionReporter[0].yearNov = vm.occasionReporter[0].yearNovOccasions.length;
+                    if (vm.occasionReporter[0].yearNovemberOverlap[checkDate.getDate().toString()] === undefined) {
+                      vm.occasionReporter[0].yearNovemberOverlap[checkDate.getDate().toString()] = true;
+                      vm.occasionReporter[0].yearNovTotal++;
+                    } else {
+                      vm.occasionReporter[0].yearNovOverlap++;
+                    }
+                  }
+                  if (checkDate.getMonth() === 11) {
+
+                    vm.occasionReporter[0].yearDecOccasions.push(fullOccasions[j].name);
+                    vm.occasionReporter[0].yearDec = vm.occasionReporter[0].yearDecOccasions.length;
+                    if (vm.occasionReporter[0].yearDecemberOverlap[checkDate.getDate().toString()] === undefined) {
+                      vm.occasionReporter[0].yearDecemberOverlap[checkDate.getDate().toString()] = true;
+                      vm.occasionReporter[0].yearDecTotal++;
+                    } else {
+                      vm.occasionReporter[0].yearDecOverlap++;
+                    }
+                  }
+                } else {
+                  if (checkDate.getFullYear() === occasionDate.getFullYear()) {
+                    vm.occasionReporter[0].yearTotal++;
+                    vm.occasionReporter[0].yearOneOff++;
+                    if (checkDate.getMonth() === 0) {
+
+                      vm.occasionReporter[0].yearJanOccasions.push(fullOccasions[j].name);
+                      vm.occasionReporter[0].yearJan = vm.occasionReporter[0].yearJanOccasions.length;
+                      if (vm.occasionReporter[0].yearJanuaryOverlap[checkDate.getDate().toString()] === undefined) {
+                        vm.occasionReporter[0].yearJanuaryOverlap[checkDate.getDate().toString()] = true;
+                        vm.occasionReporter[0].yearJanTotal++;
+                      } else {
+                        vm.occasionReporter[0].yearJanOverlap++;
+                      }
+                    }
+                    if (checkDate.getMonth() === 1) {
+
+                      vm.occasionReporter[0].yearFebOccasions.push(fullOccasions[j].name);
+                      vm.occasionReporter[0].yearFeb = vm.occasionReporter[0].yearFebOccasions.length;
+                      if (vm.occasionReporter[0].yearFebruaryOverlap[checkDate.getDate().toString()] === undefined) {
+                        vm.occasionReporter[0].yearFebruaryOverlap[checkDate.getDate().toString()] = true;
+                        vm.occasionReporter[0].yearFebTotal++;
+                      } else {
+                        vm.occasionReporter[0].yearFebOverlap++;
+                      }
+                    }
+                    if (checkDate.getMonth() === 2) {
+
+                      vm.occasionReporter[0].yearMarOccasions.push(fullOccasions[j].name);
+                      vm.occasionReporter[0].yearMar = vm.occasionReporter[0].yearMarOccasions.length;
+                      if (vm.occasionReporter[0].yearMarchOverlap[checkDate.getDate().toString()] === undefined) {
+                        vm.occasionReporter[0].yearMarchOverlap[checkDate.getDate().toString()] = true;
+                        vm.occasionReporter[0].yearMarTotal++;
+                      } else {
+                        vm.occasionReporter[0].yearMarOverlap++;
+                      }
+                    }
+                    if (checkDate.getMonth() === 3) {
+
+                      vm.occasionReporter[0].yearAprOccasions.push(fullOccasions[j].name);
+                      vm.occasionReporter[0].yearApr = vm.occasionReporter[0].yearAprOccasions.length;
+                      if (vm.occasionReporter[0].yearAprilOverlap[checkDate.getDate().toString()] === undefined) {
+                        vm.occasionReporter[0].yearAprilOverlap[checkDate.getDate().toString()] = true;
+                        vm.occasionReporter[0].yearAprTotal++;
+                      } else {
+                        vm.occasionReporter[0].yearAprOverlap++;
+                      }
+                    }
+                    if (checkDate.getMonth() === 4) {
+
+                      vm.occasionReporter[0].yearMayOccasions.push(fullOccasions[j].name);
+                      vm.occasionReporter[0].yearMay = vm.occasionReporter[0].yearMayOccasions.length;
+                      if (vm.occasionReporter[0].yearMayMonthOverlap[checkDate.getDate().toString()] === undefined) {
+                        vm.occasionReporter[0].yearMayMonthOverlap[checkDate.getDate().toString()] = true;
+                        vm.occasionReporter[0].yearMayTotal++;
+                      } else {
+                        vm.occasionReporter[0].yearMayOverlap++;
+                      }
+                    }
+                    if (checkDate.getMonth() === 5) {
+
+                      vm.occasionReporter[0].yearJunOccasions.push(fullOccasions[j].name);
+                      vm.occasionReporter[0].yearJun = vm.occasionReporter[0].yearJunOccasions.length;
+                      if (vm.occasionReporter[0].yearJuneOverlap[checkDate.getDate().toString()] === undefined) {
+                        vm.occasionReporter[0].yearJuneOverlap[checkDate.getDate().toString()] = true;
+                        vm.occasionReporter[0].yearJunTotal++;
+                      } else {
+                        vm.occasionReporter[0].yearJunOverlap++;
+                      }
+                    }
+                    if (checkDate.getMonth() === 6) {
+
+                      vm.occasionReporter[0].yearJulOccasions.push(fullOccasions[j].name);
+                      vm.occasionReporter[0].yearJul = vm.occasionReporter[0].yearJulOccasions.length;
+                      if (vm.occasionReporter[0].yearJulyOverlap[checkDate.getDate().toString()] === undefined) {
+                        vm.occasionReporter[0].yearJulyOverlap[checkDate.getDate().toString()] = true;
+                        vm.occasionReporter[0].yearJulTotal++;
+                      } else {
+                        vm.occasionReporter[0].yearJulOverlap++;
+                      }
+                    }
+                    if (checkDate.getMonth() === 7) {
+
+                      vm.occasionReporter[0].yearAugOccasions.push(fullOccasions[j].name);
+                      vm.occasionReporter[0].yearAug = vm.occasionReporter[0].yearAugOccasions.length;
+                      if (vm.occasionReporter[0].yearAugustOverlap[checkDate.getDate().toString()] === undefined) {
+                        vm.occasionReporter[0].yearAugustOverlap[checkDate.getDate().toString()] = true;
+                        vm.occasionReporter[0].yearAugTotal++;
+                      } else {
+                        vm.occasionReporter[0].yearAugOverlap++;
+                      }
+                    }
+                    if (checkDate.getMonth() === 8) {
+
+                      vm.occasionReporter[0].yearSepOccasions.push(fullOccasions[j].name);
+                      vm.occasionReporter[0].yearSep = vm.occasionReporter[0].yearSepOccasions.length;
+                      if (vm.occasionReporter[0].yearSeptemberOverlap[checkDate.getDate().toString()] === undefined) {
+                        vm.occasionReporter[0].yearSeptemberOverlap[checkDate.getDate().toString()] = true;
+                        vm.occasionReporter[0].yearSepTotal++;
+                      } else {
+                        vm.occasionReporter[0].yearSepOverlap++;
+                      }
+                    }
+                    if (checkDate.getMonth() === 9) {
+
+                      vm.occasionReporter[0].yearOctOccasions.push(fullOccasions[j].name);
+                      vm.occasionReporter[0].yearOct = vm.occasionReporter[0].yearOctOccasions.length;
+                      if (vm.occasionReporter[0].yearOctoberOverlap[checkDate.getDate().toString()] === undefined) {
+                        vm.occasionReporter[0].yearOctoberOverlap[checkDate.getDate().toString()] = true;
+                        vm.occasionReporter[0].yearOctTotal++;
+                      } else {
+                        vm.occasionReporter[0].yearOctOverlap++;
+                      }
+                    }
+                    if (checkDate.getMonth() === 10) {
+
+                      vm.occasionReporter[0].yearNovOccasions.push(fullOccasions[j].name);
+                      vm.occasionReporter[0].yearNov = vm.occasionReporter[0].yearNovOccasions.length;
+                      if (vm.occasionReporter[0].yearNovemberOverlap[checkDate.getDate().toString()] === undefined) {
+                        vm.occasionReporter[0].yearNovemberOverlap[checkDate.getDate().toString()] = true;
+                        vm.occasionReporter[0].yearNovTotal++;
+                      } else {
+                        vm.occasionReporter[0].yearNovOverlap++;
+                      }
+                    }
+                    if (checkDate.getMonth() === 11) {
+
+                      vm.occasionReporter[0].yearDecOccasions.push(fullOccasions[j].name);
+                      vm.occasionReporter[0].yearDec = vm.occasionReporter[0].yearDecOccasions.length;
+                      if (vm.occasionReporter[0].yearDecemberOverlap[checkDate.getDate().toString()] === undefined) {
+                        vm.occasionReporter[0].yearDecemberOverlap[checkDate.getDate().toString()] = true;
+                        vm.occasionReporter[0].yearDecTotal++;
+                      } else {
+                        vm.occasionReporter[0].yearDecOverlap++;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+
+            checkDate.setDate(checkDate.getDate() + 1);
+          } while(!areSameDate(checkDate, yearEnd));
+
+        });
+
+        reportForOccasions.setAttribute("style", "display: initial;");
+        occasionReporter.setAttribute("style", "visibility: hidden;");
+        occasionsManagerDone.setAttribute("style", "visibility: hidden;");
+        userOccasionsEditingDiv.setAttribute("style", "display: none;");
+      }
 
       function addNewBill() {
         let subObj = {
@@ -1244,6 +1995,7 @@
           vm.holidayReporter[0].yearDecHolidays = [];
           vm.holidayReporter[0].yearDecOverlap = 0;
           vm.holidayReporter[0].yearDecTotal = 0;
+
 
           let checkDate = new Date(calendarStart);
           console.log(areSameDate(yearDateStart, yearDateEnd));
