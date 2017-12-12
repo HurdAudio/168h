@@ -214,6 +214,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FDFEFC',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 16,
+          user_id: 1,
+          theme: 'glass',
+          type: 'sunday',
+          src_string: '../img/march_tiles/chapel-1035049_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '135%',
+          color_dark: '#090806',
+          color_medium: '#AA050C',
+          color_light: '#FEFCC5',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
