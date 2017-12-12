@@ -116,6 +116,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#F3C94E',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 9,
+          user_id: 1,
+          theme: 'autumnal',
+          type: 'friday',
+          src_string: '../img/october_tiles/rhus-180922_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '135%',
+          color_dark: '#22241C',
+          color_medium: '#AD4704',
+          color_light: '#FCFDFF',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
