@@ -2504,6 +2504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 126,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/cosmic-donut-2008.jpg',
+          title: 'Cosmic Donut',
+          artist: 'Kenny Scharf',
+          year: '2008',
+          rule: {
+            "monday": [ 19, 25, 13, 21 ],
+            "tuesday": [ 18, 24, 12, 20 ],
+            "wednesday": [ 17, 23, 11, 19 ],
+            "thursday": [ 16, 22, 10, 18 ],
+            "friday": [ 15, 21, 9, 16 ],
+            "saturday": [ 21, 27, 15, 23 ],
+            "sunday": [ 20, 26, 14, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 127,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/green-triptych-1963.jpg',
+          title: 'Green Triptych',
+          artist: 'Marjorie Strider',
+          year: '1963',
+          rule: {
+            "monday": [ 20, 26, 14, 22 ],
+            "tuesday": [ 19, 25, 13, 21 ],
+            "wednesday": [ 18, 24, 12, 20 ],
+            "thursday": [ 17, 23, 11, 19 ],
+            "friday": [ 16, 22, 10, 18 ],
+            "saturday": [ 15, 21, 9, 16 ],
+            "sunday": [ 21, 27, 15, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 128,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/watching-the-sea-1989.jpg',
+          title: 'Watching the Sea',
+          artist: 'Yayoi Kusama',
+          year: '1989',
+          rule: {
+            "monday": [ 21, 27, 15, 23 ],
+            "tuesday": [ 20, 26, 14, 22 ],
+            "wednesday": [ 19, 25, 13, 21 ],
+            "thursday": [ 18, 24, 12, 20 ],
+            "friday": [ 17, 23, 11, 19 ],
+            "saturday": [ 16, 22, 10, 18 ],
+            "sunday": [ 15, 21, 9, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 129,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/the-death-of-james-lee-byars-1994.jpg',
+          title: 'The Death of James Lee Byars',
+          artist: 'James Lee Byars',
+          year: '1994',
+          rule: {
+            "monday": [ 15, 21, 9, 16 ],
+            "tuesday": [ 21, 27, 15, 23 ],
+            "wednesday": [ 20, 26, 14, 22 ],
+            "thursday": [ 19, 25, 13, 21 ],
+            "friday": [ 18, 24, 12, 20 ],
+            "saturday": [ 17, 23, 11, 19 ],
+            "sunday": [ 16, 22, 10, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 130,
+          user_id: 1,
+          theme: 'post-WWII modern',
+          img_path: './img/september/carnival-figures-1956.jpg',
+          title: 'Carnival Figures',
+          artist: 'Rene Portocarrero',
+          year: '1956',
+          rule: {
+            "monday": [ 16, 22, 10, 18 ],
+            "tuesday": [ 15, 21, 9, 16 ],
+            "wednesday": [ 21, 27, 15, 23 ],
+            "thursday": [ 20, 26, 14, 22 ],
+            "friday": [ 19, 25, 13, 21 ],
+            "saturday": [ 18, 24, 12, 20 ],
+            "sunday": [ 17, 23, 11, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
