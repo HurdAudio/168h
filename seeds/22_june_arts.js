@@ -3104,6 +3104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 156,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/coin.jpg',
+          title: 'Coin',
+          artist: 'Achraf Baznani',
+          year: '?',
+          rule: {
+            "monday": [ 23, 3, 13, 20 ],
+            "tuesday": [ 22, 2, 12, 20 ],
+            "wednesday": [ 21, 1, 11, 19 ],
+            "thursday": [ 20, 30, 10, 18 ],
+            "friday": [ 19, 29, 9, 17 ],
+            "saturday": [ 18, 28, 8, 16 ],
+            "sunday": [ 17, 27, 7, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 157,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/chicken-parts-1939.jpg',
+          title: 'Chicken Parts',
+          artist: 'Frederick Sommer',
+          year: '1939',
+          rule: {
+            "monday": [ 17, 27, 7, 15 ],
+            "tuesday": [ 23, 3, 13, 20 ],
+            "wednesday": [ 22, 2, 12, 20 ],
+            "thursday": [ 21, 1, 11, 19 ],
+            "friday": [ 20, 30, 10, 18 ],
+            "saturday": [ 19, 29, 9, 17 ],
+            "sunday": [ 18, 28, 8, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 158,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/modern-and-contemporary-photography-circle-of-life-water-reflection-wasser-spiegelung-manfred.jpg',
+          title: 'Modern and Contemporary Photography Circle of Life Water Reflection mirror Manfred Kielnhofer',
+          artist: 'Manfred Kielnhofer',
+          year: 'xx cent.',
+          rule: {
+            "monday": [ 18, 28, 8, 16 ],
+            "tuesday": [ 17, 27, 7, 15 ],
+            "wednesday": [ 23, 3, 13, 20 ],
+            "thursday": [ 22, 2, 12, 20 ],
+            "friday": [ 21, 1, 11, 19 ],
+            "saturday": [ 20, 30, 10, 18 ],
+            "sunday": [ 19, 29, 9, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 159,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/naturaleza-soportada-1997.jpg',
+          title: 'Naturaleza soportada',
+          artist: 'Francis Naranjo',
+          year: '1997',
+          rule: {
+            "monday": [ 19, 29, 9, 17 ],
+            "tuesday": [ 18, 28, 8, 16 ],
+            "wednesday": [ 17, 27, 7, 15 ],
+            "thursday": [ 23, 3, 13, 20 ],
+            "friday": [ 22, 2, 12, 20 ],
+            "saturday": [ 21, 1, 11, 19 ],
+            "sunday": [ 20, 30, 10, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 160,
+          user_id: 1,
+          theme: 'photography',
+          img_path: './img/june/2-3.jpg',
+          title: 'Fashion at the Graveyard',
+          artist: 'Arsen Savadov',
+          year: '1997',
+          rule: {
+            "monday": [ 20, 30, 10, 18 ],
+            "tuesday": [ 19, 29, 9, 17 ],
+            "wednesday": [ 18, 28, 8, 16 ],
+            "thursday": [ 17, 27, 7, 15 ],
+            "friday": [ 23, 3, 13, 20 ],
+            "saturday": [ 22, 2, 12, 20 ],
+            "sunday": [ 21, 1, 11, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
