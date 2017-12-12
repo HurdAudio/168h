@@ -2056,6 +2056,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 115,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2973853362/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://freshselects.bandcamp.com/album/cleo',
+          a_string: 'Cleo by Charlotte Dos Santos',
+          rule: {
+            "monday": [ 20, 24, 26, 1 ],
+            "tuesday": [ 22, 26, 28, 1 ],
+            "wednesday": [ 5, 28, 1, 7 ],
+            "thursday": [ 17, 22, 24, 7 ],
+            "saturday": [ 18, 22, 24, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 116,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2232967069/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://mybags.bandcamp.com/album/les-sourdes-oreilles',
+          a_string: 'Les Sourdes Oreilles by Cosmic Analog Ensemble',
+          rule: {
+            "monday": [ 18, 22, 24, 28 ],
+            "tuesday": [ 20, 24, 26, 1 ],
+            "wednesday": [ 22, 26, 28, 1 ],
+            "thursday": [ 5, 28, 1, 7 ],
+            "saturday": [ 17, 22, 24, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 117,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2288351853/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://burntsugar.bandcamp.com/album/mizik-pou-dwa-moun-a-burnt-sugar-collective-compilation-for-the-people-of-ayiti-disc-1',
+          a_string: 'Mizik Pou Dwa Moun: A Burnt Sugar Collective Compilation for the People of Ayiti. Disc 1 by The Burnt Sugar Collective',
+          rule: {
+            "monday": [ 17, 22, 24, 7 ],
+            "tuesday": [ 18, 22, 24, 28 ],
+            "wednesday": [ 20, 24, 26, 1 ],
+            "thursday": [ 22, 26, 28, 1 ],
+            "saturday": [ 5, 28, 1, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
