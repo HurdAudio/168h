@@ -172,6 +172,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FAFEFF',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 13,
+          user_id: 1,
+          theme: 'light',
+          type: 'friday',
+          src_string: '../img/june_tiles/sunsets-251381_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '150%',
+          color_dark: '#060506',
+          color_medium: '#8D2021',
+          color_light: '#F9FFFF',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
