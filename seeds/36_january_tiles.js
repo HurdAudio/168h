@@ -228,7 +228,8 @@ exports.seed = function(knex, Promise) {
           color_light: '#77DEE3',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
-        },{
+        },
+        {
           id: 17,
           user_id: 1,
           theme: 'ice',
@@ -239,6 +240,20 @@ exports.seed = function(knex, Promise) {
           color_dark: '#3D2A21',
           color_medium: '#A0A19A',
           color_light: '#C2C3C4',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 18,
+          user_id: 1,
+          theme: 'ice',
+          type: 'week',
+          src_string: '../img/january_tiles/depositphotos_36103545-stock-photo-ice-texture.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '155%',
+          color_dark: '#435388',
+          color_medium: '#B2BFEC',
+          color_light: '#DFEAFF',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
