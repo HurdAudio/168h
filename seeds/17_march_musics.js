@@ -1938,13 +1938,67 @@ exports.seed = function(knex, Promise) {
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3281387428/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://lunaabunassar.bandcamp.com/album/-',
-          a_string: '>אספר לך  أحكيلِك by Luna Abu Nassar',
+          a_string: 'אספר לך  أحكيلِك by Luna Abu Nassar',
           rule: {
             "monday": [ 16, 22, 28, 5 ],
             "tuesday": [ 20, 26, 1, 9 ],
             "wednesday": [ 19, 25, 31, 8 ],
             "thursday": [ 18, 24, 30, 8 ],
             "saturday": [ 17, 23, 29, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 109,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=737380834/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://zolajesus.bandcamp.com/album/okovi',
+          a_string: 'Okovi by Zola Jesus',
+          rule: {
+            "monday": [ 17, 23, 29, 6 ],
+            "tuesday": [ 16, 22, 28, 5 ],
+            "wednesday": [ 20, 26, 1, 9 ],
+            "thursday": [ 19, 25, 31, 8 ],
+            "saturday": [ 18, 24, 30, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 110,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3091200220/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://chelseawolfe.bandcamp.com/album/abyss',
+          a_string: 'Abyss by CHELSEA WOLFE',
+          rule: {
+            "monday": [ 18, 24, 30, 8 ],
+            "tuesday": [ 17, 23, 29, 6 ],
+            "wednesday": [ 16, 22, 28, 5 ],
+            "thursday": [ 20, 26, 1, 9 ],
+            "saturday": [ 19, 25, 31, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 111,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4122221096/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://emmaruthrundle.bandcamp.com/album/marked-for-death',
+          a_string: 'Marked For Death by Emma Ruth Rundle',
+          rule: {
+            "monday": [ 19, 25, 31, 8 ],
+            "tuesday": [ 18, 24, 30, 8 ],
+            "wednesday": [ 17, 23, 29, 6 ],
+            "thursday": [ 16, 22, 28, 5 ],
+            "saturday": [ 20, 26, 1, 9 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
