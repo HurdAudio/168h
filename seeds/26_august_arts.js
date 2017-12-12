@@ -2704,6 +2704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 136,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/schonberg-family(1).jpg',
+          title: 'Schonberg Family',
+          artist: 'Richard Gerstl',
+          year: '1908',
+          rule: {
+            "monday": [ 17, 20, 29, 14 ],
+            "tuesday": [ 23, 27, 4, 20 ],
+            "wednesday": [ 22, 25, 3, 19 ],
+            "thursday": [ 21, 25, 2, 18 ],
+            "friday": [ 20, 24, 1, 17 ],
+            "saturday": [ 19, 21, 31, 16 ],
+            "sunday": [ 18, 21, 30, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 137,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/harbor-night-1937.jpg',
+          title: 'Harbor Night',
+          artist: 'Charles Reiffel',
+          year: '1937',
+          rule: {
+            "monday": [ 18, 21, 30, 15 ],
+            "tuesday": [ 17, 20, 29, 14 ],
+            "wednesday": [ 23, 27, 4, 20 ],
+            "thursday": [ 22, 25, 3, 19 ],
+            "friday": [ 21, 25, 2, 18 ],
+            "saturday": [ 20, 24, 1, 17 ],
+            "sunday": [ 19, 21, 31, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 138,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/civiliza-o-no-2-1928.jpg',
+          title: 'Civilização, No. 2',
+          artist: 'Bernardo Marques',
+          year: '1928',
+          rule: {
+            "monday": [ 19, 21, 31, 16 ],
+            "tuesday": [ 18, 21, 30, 15 ],
+            "wednesday": [ 17, 20, 29, 14 ],
+            "thursday": [ 23, 27, 4, 20 ],
+            "friday": [ 22, 25, 3, 19 ],
+            "saturday": [ 21, 25, 2, 18 ],
+            "sunday": [ 20, 24, 1, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 139,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/untitled-blue-man-on-red-object-1939.jpg',
+          title: 'Untitled (Blue Man on Red Object)',
+          artist: 'Bill Traylor',
+          year: 'c.1939',
+          rule: {
+            "monday": [ 20, 24, 1, 17 ],
+            "tuesday": [ 19, 21, 31, 16 ],
+            "wednesday": [ 18, 21, 30, 15 ],
+            "thursday": [ 17, 20, 29, 14 ],
+            "friday": [ 23, 27, 4, 20 ],
+            "saturday": [ 22, 25, 3, 19 ],
+            "sunday": [ 21, 25, 2, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 140,
+          user_id: 1,
+          theme: 'pre-WWII modern',
+          img_path: './img/august/soria-moria-slott-1911.jpg',
+          title: 'Soria Moria Slott',
+          artist: 'Theodor Severin Kittelsen',
+          year: '1911',
+          rule: {
+            "monday": [ 22, 26, 3, 19 ],
+            "tuesday": [ 21, 25, 2, 18 ],
+            "wednesday": [ 20, 22, 1, 17 ],
+            "thursday": [ 19, 22, 31, 16 ],
+            "friday": [ 18, 21, 30, 15 ],
+            "saturday": [ 24, 28, 5, 21 ],
+            "sunday": [ 23, 26, 4, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
