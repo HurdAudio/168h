@@ -3504,6 +3504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 176,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/g33.jpg',
+          title: 'Baseball Dream VIII',
+          artist: 'pop art canvas',
+          year: '2013',
+          rule: {
+            "monday": [ 9, 29, 5, 12 ],
+            "tuesday": [ 24, 29, 5, 11 ],
+            "wednesday": [ 23, 27, 12, 10 ],
+            "thursday": [ 22, 27, 2, 8 ],
+            "friday": [ 21, 26, 2, 8 ],
+            "saturday": [ 20, 25, 1, 7 ],
+            "sunday": [ 25, 1, 6, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 177,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/main_1498256257-Yogi-Berra-Signed-Charles-Fazzino-Original-Hand-Painted-3D-Pop-Art-Baseball-with-Swarovski-Crystals-1-1-MLB-Hologram-Steiner-COA-PristineAuction.jpg',
+          title: 'Yogi Berra',
+          artist: 'Charles Fazzino',
+          year: '1972',
+          rule: {
+            "monday": [ 25, 1, 6, 13 ],
+            "tuesday": [ 9, 29, 5, 12 ],
+            "wednesday": [ 24, 29, 5, 11 ],
+            "thursday": [ 23, 27, 12, 10 ],
+            "friday": [ 22, 27, 2, 8 ],
+            "saturday": [ 21, 26, 2, 8 ],
+            "sunday": [ 20, 25, 1, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 178,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/Jackie-Robinson-vintage-canvas-leinwand-ausmalen-paintbynumbers-popart-walldeco-acrylic-ausmalbild-portrait-interior-individuell-persönlich-personalized-originell-geschenkidee-hochzeitsgeschenk-400x284.jpg',
+          title: 'Baseball player Jackie Robinson',
+          artist: 'Paint 2B',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 20, 25, 1, 7 ],
+            "tuesday": [ 25, 1, 6, 13 ],
+            "wednesday": [ 9, 29, 5, 12 ],
+            "thursday": [ 24, 29, 5, 11 ],
+            "friday": [ 23, 27, 12, 10 ],
+            "saturday": [ 22, 27, 2, 8 ],
+            "sunday": [ 21, 26, 2, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 179,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/ICA1211.jpg',
+          title: 'USAIllinois, Chicago, Cubs, baseball Color Pop',
+          artist: 'iCanvas',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 21, 26, 2, 8 ],
+            "tuesday": [ 20, 25, 1, 7 ],
+            "wednesday": [ 25, 1, 6, 13 ],
+            "thursday": [ 9, 29, 5, 12 ],
+            "friday": [ 24, 29, 5, 11 ],
+            "saturday": [ 23, 27, 12, 10 ],
+            "sunday": [ 22, 27, 2, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 180,
+          user_id: 1,
+          theme: 'baseball',
+          img_path: './img/april/Baseball-at-Night-Morris-Kantor-631.jpg',
+          title: 'Baseball at Night',
+          artist: 'Morris Kantor',
+          year: '1934',
+          rule: {
+            "monday": [ 22, 27, 2, 8 ],
+            "tuesday": [ 21, 26, 2, 8 ],
+            "wednesday": [ 20, 25, 1, 7 ],
+            "thursday": [ 25, 1, 6, 13 ],
+            "friday": [ 9, 29, 5, 12 ],
+            "saturday": [ 24, 29, 5, 11 ],
+            "sunday": [ 23, 27, 12, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
