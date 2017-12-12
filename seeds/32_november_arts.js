@@ -2104,6 +2104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 106,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/88-va-17-1988.jpg',
+          title: '88. VA 17',
+          artist: 'Jurgen Partenheimer',
+          year: '1988',
+          rule: {
+            "monday": [ 22, 27, 3, 8 ],
+            "tuesday": [ 21, 26, 2, 6 ],
+            "wednesday": [ 20, 25, 1, 6 ],
+            "thursday": [ 19, 23, 30, 5 ],
+            "friday": [ 18, 23, 29, 4 ],
+            "saturday": [ 17, 22, 28, 5 ],
+            "sunday": [ 23, 28, 4, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 107,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/a-little-cosmic-rhythm-2007.jpg',
+          title: 'A Little Cosmic Rhythm',
+          artist: 'Alice Aycock',
+          year: '2007',
+          rule: {
+            "monday": [ 23, 28, 4, 9 ],
+            "tuesday": [ 22, 27, 3, 8 ],
+            "wednesday": [ 21, 26, 2, 6 ],
+            "thursday": [ 20, 25, 1, 6 ],
+            "friday": [ 19, 23, 30, 5 ],
+            "saturday": [ 18, 23, 29, 4 ],
+            "sunday": [ 17, 22, 28, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 108,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/particle-memory-1995.jpg',
+          title: 'Particle Memory',
+          artist: 'Lita Albuquerque',
+          year: '1995',
+          rule: {
+            "monday": [ 17, 22, 28, 5 ],
+            "tuesday": [ 23, 28, 4, 9 ],
+            "wednesday": [ 22, 27, 3, 8 ],
+            "thursday": [ 21, 26, 2, 6 ],
+            "friday": [ 20, 25, 1, 6 ],
+            "saturday": [ 19, 23, 30, 5 ],
+            "sunday": [ 18, 23, 29, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 109,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/east-end-1980.jpg',
+          title: 'East End',
+          artist: 'Valerie Jaudon',
+          year: '1980',
+          rule: {
+            "monday": [ 18, 23, 29, 4 ],
+            "tuesday": [ 17, 22, 28, 5 ],
+            "wednesday": [ 23, 28, 4, 9 ],
+            "thursday": [ 22, 27, 3, 8 ],
+            "friday": [ 21, 26, 2, 6 ],
+            "saturday": [ 20, 25, 1, 6 ],
+            "sunday": [ 19, 23, 30, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 110,
+          user_id: 1,
+          theme: 'minimalism',
+          img_path: './img/november/tt-1994.jpg',
+          title: 'TT',
+          artist: 'Sean Scully',
+          year: '1994',
+          rule: {
+            "monday": [ 19, 23, 30, 5 ],
+            "tuesday": [ 18, 23, 29, 4 ],
+            "wednesday": [ 17, 22, 28, 5 ],
+            "thursday": [ 23, 28, 4, 9 ],
+            "friday": [ 22, 27, 3, 8 ],
+            "saturday": [ 21, 26, 2, 6 ],
+            "sunday": [ 20, 25, 1, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
