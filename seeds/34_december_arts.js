@@ -1904,6 +1904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 96,
+          user_id: 1,
+          theme: 'pulp',
+          img_path: './img/december/03-06,Pearsons.jpg',
+          title: 'Pearson\'s Magazine',
+          artist: 'W. Herbert Dunton',
+          year: '1903',
+          rule: {
+            "monday": [ 13, 26, 3, 9 ],
+            "tuesday": [ 12, 25, 2, 8 ],
+            "wednesday": [ 11, 24, 12, 7 ],
+            "thursday": [ 17, 30, 7, 13 ],
+            "friday": [ 16, 29, 6, 12 ],
+            "saturday": [ 15, 28, 5, 11 ],
+            "sunday": [ 14, 27, 4, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 97,
+          user_id: 1,
+          theme: 'pulp',
+          img_path: './img/december/41-08-30,SEP.jpg',
+          title: 'Sat Evening Post',
+          artist: 'Charles Dye',
+          year: '1941',
+          rule: {
+            "monday": [ 14, 27, 4, 10 ],
+            "tuesday": [ 13, 26, 3, 9 ],
+            "wednesday": [ 12, 25, 2, 8 ],
+            "thursday": [ 11, 24, 12, 7 ],
+            "friday": [ 17, 30, 7, 13 ],
+            "saturday": [ 16, 29, 6, 12 ],
+            "sunday": [ 15, 28, 5, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 98,
+          user_id: 1,
+          theme: 'pulp',
+          img_path: './img/december/22-04-13,PrintersIncAd.jpg',
+          title: 'Advertisement',
+          artist: 'Frank A. Eboli',
+          year: '1922',
+          rule: {
+            "monday": [ 16, 29, 6, 12 ],
+            "tuesday": [ 15, 28, 5, 11 ],
+            "wednesday": [ 14, 27, 4, 10 ],
+            "thursday": [ 13, 26, 3, 9 ],
+            "friday": [ 12, 25, 13, 8 ],
+            "saturday": [ 18, 31, 8, 14 ],
+            "sunday": [ 17, 30, 7, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 99,
+          user_id: 1,
+          theme: 'pulp',
+          img_path: './img/december/27-03-15,AceHi.jpg',
+          title: 'Ace-High',
+          artist: 'Nicholas Eggenhofer',
+          year: '1927',
+          rule: {
+            "monday": [ 17, 30, 7, 13 ],
+            "tuesday": [ 16, 29, 6, 12 ],
+            "wednesday": [ 15, 28, 5, 11 ],
+            "thursday": [ 14, 27, 4, 10 ],
+            "friday": [ 13, 26, 3, 9 ],
+            "saturday": [ 12, 25, 13, 8 ],
+            "sunday": [ 18, 31, 8, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 100,
+          user_id: 1,
+          theme: 'pulp',
+          img_path: './img/december/35-09,PrsnLf.jpg',
+          title: 'Prison Life',
+          artist: 'Monroe Eisenberg',
+          year: '1935',
+          rule: {
+            "monday": [ 18, 31, 8, 14 ],
+            "tuesday": [ 17, 30, 7, 13 ],
+            "wednesday": [ 16, 29, 6, 12 ],
+            "thursday": [ 15, 28, 5, 11 ],
+            "friday": [ 14, 27, 4, 10 ],
+            "saturday": [ 13, 26, 3, 9 ],
+            "sunday": [ 12, 25, 13, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
