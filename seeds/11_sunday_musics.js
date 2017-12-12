@@ -1264,6 +1264,35 @@ exports.seed = function(knex, Promise) {
           a_string: 'The Paris Tapes - Live At Le Théâtre Du Châtelet 1971 by Sun Ra And His Mythic Science Arkestra',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 127,
+          user_id: 1,
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=446461934/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sunrastrut.bandcamp.com/album/wake-up-angels',
+          a_string: 'Wake Up Angels by Sun Ra And His Solar Arkestra',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 128,
+          user_id: 1,
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2595493057/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sunrastrut.bandcamp.com/album/gilles-peterson-presents-sun-ra-and-his-arkestra-to-those-of-earth-and-other-worlds-2',
+          a_string: 'Gilles Peterson Presents Sun Ra And His Arkestra: To Those Of Earth... And Other Worlds by Sun Ra',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },{
+          id: 129,
+          user_id: 1,
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2583795695/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sunrastrut.bandcamp.com/album/planets-of-life-or-death-amiens-73',
+          a_string: 'Planets Of Life Or Death: Amiens &#39;73 by Sun Ra &amp; His Intergalactic Research Arkestra',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
