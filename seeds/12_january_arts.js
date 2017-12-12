@@ -4104,6 +4104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 206,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/cunard-l-8-62-1962.jpg',
+          title: 'Cunard L-8-62',
+          artist: 'Conrad Marca-Relli',
+          year: '1962',
+          rule: {
+            "monday": [ 29, 30, 10, 2 ],
+            "tuesday": [ 1, 3, 26, 15 ],
+            "wednesday": [ 3, 4, 27, 30 ],
+            "thursday": [ 6, 7, 29, 2 ],
+            "friday": [ 9, 11, 12, 14 ],
+            "saturday": [ 11, 13, 17, 20 ],
+            "sunday": [ 13, 15, 16, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 207,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/dalet-zayin-1959.jpg',
+          title: 'Dalet Zayin',
+          artist: 'Morris Louis',
+          year: '1959',
+          rule: {
+            "monday": [ 13, 15, 16, 19 ],
+            "tuesday": [ 29, 30, 10, 2 ],
+            "wednesday": [ 1, 3, 26, 15 ],
+            "thursday": [ 3, 4, 27, 30 ],
+            "friday": [ 6, 7, 29, 2 ],
+            "saturday": [ 9, 11, 12, 14 ],
+            "sunday": [ 11, 13, 17, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 208,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/an-accordment-73-1973.jpg',
+          title: 'An Accordment #73',
+          artist: 'Perle Fine',
+          year: '1973',
+          rule: {
+            "monday": [ 11, 13, 17, 20 ],
+            "tuesday": [ 13, 15, 16, 19 ],
+            "wednesday": [ 29, 30, 10, 2 ],
+            "thursday": [ 1, 3, 26, 15 ],
+            "friday": [ 3, 4, 27, 30 ],
+            "saturday": [ 6, 7, 29, 2 ],
+            "sunday": [ 9, 11, 12, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 209,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/from-a-riviera-window-1955.jpg',
+          title: 'From a Riviera Window',
+          artist: 'Jock Macdonald',
+          year: '1955',
+          rule: {
+            "monday": [ 9, 11, 12, 14 ],
+            "tuesday": [ 11, 13, 17, 20 ],
+            "wednesday": [ 13, 15, 16, 19 ],
+            "thursday": [ 29, 30, 10, 2 ],
+            "friday": [ 1, 3, 26, 15 ],
+            "saturday": [ 3, 4, 27, 30 ],
+            "sunday": [ 6, 7, 29, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 210,
+          user_id: 1,
+          theme: 'abstract',
+          img_path: './img/january/le-chevalier.jpg',
+          title: 'Le Chevalier',
+          artist: 'Paul Ackerman',
+          year: 'xx cent.',
+          rule: {
+            "monday": [ 7, 8, 30, 3 ],
+            "tuesday": [ 10, 12, 13, 15 ],
+            "wednesday": [ 12, 14, 18, 21 ],
+            "thursday": [ 14, 16, 17, 20 ],
+            "friday": [ 30, 31, 11, 3 ],
+            "saturday": [ 2, 4, 27, 16 ],
+            "sunday": [ 4, 5, 28, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
