@@ -102,6 +102,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FF97CA',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 8,
+          user_id: 1,
+          theme: 'monochromatic',
+          type: 'week',
+          src_string: '../img/november_tiles/yerevan-6.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '150%',
+          color_dark: '#141311',
+          color_medium: '#90918C',
+          color_light: '#C1C2C7',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
