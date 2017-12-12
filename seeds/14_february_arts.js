@@ -3904,6 +3904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 196,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Horace_Pippin,_John_Brown_Going_to_His_Hanging.jpg',
+          title: 'John Brown Going to His Hanging',
+          artist: 'Horace Pippin',
+          year: 'c.1940',
+          rule: {
+            "monday": [ 6, 11, 17, 27 ],
+            "tuesday": [ 5, 13, 21, 29 ],
+            "wednesday": [ 7, 17, 23, 29 ],
+            "thursday": [ 9, 17, 25, 6 ],
+            "friday": [ 11, 19, 15, 5 ],
+            "saturday": [ 28, 7, 15, 23 ],
+            "sunday": [ 1, 9, 17, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 197,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/12am69.jpg',
+          title: 'Catherine Moton Patterson',
+          artist: 'P.H. Polk',
+          year: '1982',
+          rule: {
+            "monday": [ 1, 9, 17, 25 ],
+            "tuesday": [ 6, 11, 17, 27 ],
+            "wednesday": [ 5, 13, 21, 29 ],
+            "thursday": [ 7, 17, 23, 29 ],
+            "friday": [ 9, 17, 25, 6 ],
+            "saturday": [ 11, 19, 15, 5 ],
+            "sunday": [ 28, 7, 15, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 198,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/206_1_prints_multiples_january_2016_carl_robert_pope_jr_is_it_da_crack_or_is_it_the_cracker_from_the_bad_air_smelled_of_roses_series__wright_auction.jpg',
+          title: 'Is it Da Crack or is it the Cracker from The Bad Air Smelled of Roses series',
+          artist: 'Carl Robert Pope',
+          year: '2005',
+          rule: {
+            "monday": [ 28, 7, 15, 23 ],
+            "tuesday": [ 1, 9, 17, 25 ],
+            "wednesday": [ 6, 11, 17, 27 ],
+            "thursday": [ 5, 13, 21, 29 ],
+            "friday": [ 7, 17, 23, 29 ],
+            "saturday": [ 9, 17, 25, 6 ],
+            "sunday": [ 11, 19, 15, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 199,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/Pope.L_Costume-at-CAMH_Performance_2-Photo-Max-Fields-1024x680.jpg',
+          title: 'Costume Made of Nothing',
+          artist: 'Pope L.',
+          year: '2012',
+          rule: {
+            "monday": [ 11, 19, 15, 5 ],
+            "tuesday": [ 28, 7, 15, 23 ],
+            "wednesday": [ 1, 9, 17, 25 ],
+            "thursday": [ 6, 11, 17, 27 ],
+            "friday": [ 5, 13, 21, 29 ],
+            "saturday": [ 7, 17, 23, 29 ],
+            "sunday": [ 9, 17, 25, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 200,
+          user_id: 1,
+          theme: 'black history',
+          img_path: './img/february/PowersBibleQuilt_1886.jpg',
+          title: 'Bible Quilt',
+          artist: 'Harriet Powers',
+          year: '1885 - 1886',
+          rule: {
+            "monday": [ 9, 17, 25, 6 ],
+            "tuesday": [ 11, 19, 15, 5 ],
+            "wednesday": [ 28, 7, 15, 23 ],
+            "thursday": [ 1, 9, 17, 25 ],
+            "friday": [ 6, 11, 17, 27 ],
+            "saturday": [ 5, 13, 21, 29 ],
+            "sunday": [ 7, 17, 23, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
