@@ -2904,6 +2904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 146,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/escale-1964.jpg',
+          title: 'Escale',
+          artist: 'Herve Telemaque',
+          year: '1964',
+          rule: {
+            "monday": [ 20, 31, 11, 22 ],
+            "tuesday": [ 19, 30, 10, 21 ],
+            "wednesday": [ 18, 29, 9, 10 ],
+            "thursday": [ 17, 28, 8, 19 ],
+            "friday": [ 23, 3, 14, 24 ],
+            "saturday": [ 22, 2, 13, 24 ],
+            "sunday": [ 21, 1, 12, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 147,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/untitled-no-56-1996.jpg',
+          title: 'Untitled No. 56',
+          artist: 'Claude Viallat',
+          year: '1996',
+          rule: {
+            "monday": [ 22, 2, 13, 24 ],
+            "tuesday": [ 21, 1, 12, 23 ],
+            "wednesday": [ 20, 31, 10, 22 ],
+            "thursday": [ 19, 30, 10, 11 ],
+            "friday": [ 18, 29, 9, 20 ],
+            "saturday": [ 24, 4, 15, 25 ],
+            "sunday": [ 23, 3, 14, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 148,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/n-6608-enseigne-peinte-les-sciences-exactes-1977.jpg',
+          title: 'N° 6608: Enseigne peinte - Les sciences exactes',
+          artist: 'Jean-Claude Silbermann',
+          year: '1977',
+          rule: {
+            "monday": [ 23, 3, 14, 25 ],
+            "tuesday": [ 22, 2, 13, 24 ],
+            "wednesday": [ 21, 1, 12, 23 ],
+            "thursday": [ 20, 31, 10, 22 ],
+            "friday": [ 19, 30, 10, 11 ],
+            "saturday": [ 18, 29, 9, 20 ],
+            "sunday": [ 24, 4, 15, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 149,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/fiborythm-2009.jpg',
+          title: 'Fiborythm',
+          artist: 'Charles Bezie',
+          year: '2009',
+          rule: {
+            "monday": [ 24, 4, 15, 25 ],
+            "tuesday": [ 23, 3, 14, 25 ],
+            "wednesday": [ 22, 2, 13, 24 ],
+            "thursday": [ 21, 1, 12, 23 ],
+            "friday": [ 20, 31, 10, 22 ],
+            "saturday": [ 19, 30, 10, 11 ],
+            "sunday": [ 18, 29, 9, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 150,
+          user_id: 1,
+          theme: 'french revolution',
+          img_path: './img/july/18th-montreux-jazz-festival-poster-1984.jpg',
+          title: '18th Montreux jazz festival (Poster)',
+          artist: 'Niki de Sainte Phalle',
+          year: '1984',
+          rule: {
+            "monday": [ 18, 29, 9, 20 ],
+            "tuesday": [ 24, 4, 15, 25 ],
+            "wednesday": [ 23, 3, 14, 25 ],
+            "thursday": [ 22, 2, 13, 24 ],
+            "friday": [ 21, 1, 12, 23 ],
+            "saturday": [ 20, 31, 10, 22 ],
+            "sunday": [ 19, 30, 10, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
