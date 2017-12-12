@@ -3704,6 +3704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 186,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/glass-slippers-1960.jpg',
+          title: 'Glass Slippers',
+          artist: 'Jo Baer',
+          year: '1960',
+          rule: {
+            "monday": [ 21, 31, 8, 18 ],
+            "tuesday": [ 20, 30, 8, 17 ],
+            "wednesday": [ 26, 4, 13, 22 ],
+            "thursday": [ 25, 4, 14, 22 ],
+            "friday": [ 24, 3, 11, 21 ],
+            "saturday": [ 23, 2, 10, 20 ],
+            "sunday": [ 22, 1, 9, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 187,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/cultural-head-1973.jpg',
+          title: 'Cultural Head',
+          artist: 'Marisol Escobar',
+          year: '1973',
+          rule: {
+            "monday": [ 22, 1, 9, 19 ],
+            "tuesday": [ 21, 31, 8, 18 ],
+            "wednesday": [ 20, 30, 8, 17 ],
+            "thursday": [ 26, 4, 13, 22 ],
+            "friday": [ 25, 4, 14, 22 ],
+            "saturday": [ 24, 3, 11, 21 ],
+            "sunday": [ 23, 2, 10, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 188,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/luna-de-silencio-1961.jpg',
+          title: 'Luna de silencio',
+          artist: 'Lilia Carrillo',
+          year: '1961',
+          rule: {
+            "monday": [ 23, 2, 10, 20 ],
+            "tuesday": [ 22, 1, 9, 19 ],
+            "wednesday": [ 21, 31, 8, 18 ],
+            "thursday": [ 20, 30, 8, 17 ],
+            "friday": [ 26, 4, 13, 22 ],
+            "saturday": [ 25, 4, 14, 22 ],
+            "sunday": [ 24, 3, 11, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 189,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/untitled-1985-.jpg',
+          title: 'Untitled',
+          artist: 'Lee Bontecou',
+          year: '1985',
+          rule: {
+            "monday": [ 25, 4, 12, 22 ],
+            "tuesday": [ 24, 3, 11, 21 ],
+            "wednesday": [ 23, 2, 10, 20 ],
+            "thursday": [ 22, 1, 9, 19 ],
+            "friday": [ 21, 31, 9, 18 ],
+            "saturday": [ 27, 5, 14, 23 ],
+            "sunday": [ 26, 5, 15, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 190,
+          user_id: 1,
+          theme: 'women\'s history',
+          img_path: './img/march/89m-1989.jpg',
+          title: '89m',
+          artist: 'Atsuko Tanaka',
+          year: '1989',
+          rule: {
+            "monday": [ 26, 5, 15, 23 ],
+            "tuesday": [ 25, 4, 12, 22 ],
+            "wednesday": [ 24, 3, 11, 21 ],
+            "thursday": [ 23, 2, 10, 20 ],
+            "friday": [ 22, 1, 9, 19 ],
+            "saturday": [ 21, 31, 9, 18 ],
+            "sunday": [ 27, 5, 14, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
