@@ -177,7 +177,7 @@ exports.seed = function(knex, Promise) {
           id: 13,
           user_id: 1,
           theme: 'light',
-          type: 'friday',
+          type: 'week',
           src_string: '../img/june_tiles/sunsets-251381_1920.jpg',
           repeat_value: 'no-repeat',
           size_value: '150%',
