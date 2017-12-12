@@ -1624,6 +1624,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 91,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=727838500/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://newatlantismusic.bandcamp.com/album/inner-work',
+          a_string: 'Inner Work by JV Lightbody',
+          rule: {
+            "monday": [ 13, 17, 23, 3 ],
+            "tuesday": [ 12, 16, 21, 3 ],
+            "wednesday": [ 12, 15, 21, 2 ],
+            "thursday": [ 10, 18, 20, 1 ],
+            "saturday": [ 14, 18, 24, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 92,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2425378851/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://thecaretaker.bandcamp.com/album/everywhere-at-the-end-of-time',
+          a_string: 'Everywhere at the end of time by The Caretaker',
+          rule: {
+            "monday": [ 14, 18, 24, 5 ],
+            "tuesday": [ 13, 17, 23, 3 ],
+            "wednesday": [ 12, 16, 21, 3 ],
+            "thursday": [ 12, 15, 21, 2 ],
+            "saturday": [ 10, 18, 20, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 93,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=794123225/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://loscil.bandcamp.com/album/monument-builders',
+          a_string: 'Monument Builders by loscil',
+          rule: {
+            "monday": [ 10, 18, 20, 1 ],
+            "tuesday": [ 14, 18, 24, 5 ],
+            "wednesday": [ 13, 17, 23, 3 ],
+            "thursday": [ 12, 16, 21, 3 ],
+            "saturday": [ 12, 15, 21, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
