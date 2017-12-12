@@ -130,6 +130,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#756B69',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 10,
+          user_id: 1,
+          theme: 'leather',
+          type: 'saturday',
+          src_string: '../img/september_tiles/chair-2822929_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '135%',
+          color_dark: '#1A1512',
+          color_medium: '#612A23',
+          color_light: '#C49672',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
