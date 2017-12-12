@@ -2164,6 +2164,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 121,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3840169248/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://theparlourtrick.bandcamp.com/album/a-blessed-unrest',
+          a_string: 'A Blessed Unrest by The Parlour Trick',
+          rule: {
+            "monday": [ 25, 1, 2, 3 ],
+            "tuesday": [ 24, 31, 1, 2 ],
+            "wednesday": [ 28, 4, 5, 6 ],
+            "thursday": [ 27, 3, 4, 5 ],
+            "saturday": [ 26, 2, 3, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 122,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1826682391/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jherekbischoff.bandcamp.com/album/cistern',
+          a_string: 'Cistern by Jherek Bischoff',
+          rule: {
+            "monday": [ 26, 2, 3, 4 ],
+            "tuesday": [ 25, 1, 2, 3 ],
+            "wednesday": [ 24, 31, 1, 2 ],
+            "thursday": [ 28, 4, 5, 6 ],
+            "saturday": [ 27, 3, 4, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 123,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4205936085/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://chrismoriarty.bandcamp.com/album/something-great',
+          a_string: 'Something Great by Chris Moriarty',
+          rule: {
+            "monday": [ 27, 3, 4, 5 ],
+            "tuesday": [ 26, 2, 3, 4 ],
+            "wednesday": [ 25, 1, 2, 3 ],
+            "thursday": [ 24, 31, 1, 2 ],
+            "saturday": [ 28, 4, 5, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
