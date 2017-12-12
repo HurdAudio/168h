@@ -5038,8 +5038,8 @@ footer img {
   display: none;
 }
 
-/*.day {
-  background-image: url(../img/january_tiles/winter-wonderland-1961970_1920.jpg);
+.day {
+  background-image: url(../img/december_tiles/night-1033150_1920.jpg);
   background-repeat: no-repeat;
-  background-size: 155%;
-}*/
+  background-size: 100%;
+}
