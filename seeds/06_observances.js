@@ -8803,6 +8803,39 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 562,
+          user_id: 1,
+          name: 'David Byrne (guitar/vocals/author/songwriter/artist) born in 1952',
+          color: '#E4DCC9',
+          picture: './img/musicians/davidbyrne.jpg',
+          day_of: new Date ('1952-05-14T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: true,
+          override_content: {
+            "sources": [ 'bandcamp', 'bandcamp', 'bandcamp' ],
+            "src_strings": [ 'https://bandcamp.com/EmbeddedPlayer/album=2519608421/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=3415627011/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=3077025907/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/' ],
+            "href_strings": [ 'http://davidbyrne.bandcamp.com/album/in-spite-of-wishing-and-wanting', 'http://davidbyrne.bandcamp.com/album/the-visible-man', 'http://davidbyrne.bandcamp.com/album/forestry' ],
+            "a_strings": [ 'In Spite of Wishing and Wanting by David Byrne', 'The Visible Man by David Byrne', 'Forestry by David Byrne' ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 563,
+          user_id: 1,
+          name: 'New York City was destroyed by a nuclear explosion on this day in 1994 according to Bahá\'í Sect leader Neal Chase. The Battle of Armageddon is scheduled for 40 years after this date.',
+          color: '#2C425B',
+          picture: './img/doomsday/nealchase.jpg',
+          day_of: new Date ('1994-05-02T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
