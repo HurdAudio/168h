@@ -144,6 +144,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#03BFFE',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 11,
+          user_id: 1,
+          theme: 'primary colors',
+          type: 'sunday',
+          src_string: '../img/august_tiles/currants-404686_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '155%',
+          color_dark: '#0C0002',
+          color_medium: '#640405',
+          color_light: '#BC7A7D',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
