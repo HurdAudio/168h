@@ -2769,7 +2769,7 @@ exports.seed = function(knex, Promise) {
           id: 139,
           user_id: 1,
           theme: 'Black History Month',
-          img_path: './img/february/3958%2F2D324A0E-70BD-38A1-1514-111F73A40512.jpg',
+          img_path: './img/february/rhythmReunion.jpg',
           title: 'Rhythm Reunion',
           artist: 'Joseph Holston',
           year: 'XX cent.',
