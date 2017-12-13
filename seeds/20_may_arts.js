@@ -8,7 +8,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 1,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/the-intelligent-woman-s-guide-to-socialism-and-capitalism-cover-1927.jpg',
           title: 'The Intelligent Woman\'s Guide to Socialism and Capitalism (cover)',
           artist: 'Eric Ravilious',
@@ -28,7 +28,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 2,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/cathedral-of-socialism-1919.jpg',
           title: 'Cathedral of Socialism',
           artist: 'Lyonel Feininger',
@@ -48,7 +48,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 3,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/an-eric-gill-woodcut-from-the-christian-social-book-the-devil-s-devices-by-h-d-c-pepler-showing-a.png',
           title: 'Woodcut from the Christian Social Book the Devil\'s Devices by H.d.c. Pepler, Showing a Bricklayer Overcoming the Devil Through Honest Work',
           artist: 'Eric Gill',
@@ -68,7 +68,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 4,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/worker-and-child-1908.jpg',
           title: 'Worker and Child',
           artist: 'Edvard Munch',
@@ -88,7 +88,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 5,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/the-worker-sitting.jpg',
           title: 'The worker sitting',
           artist: 'Fernand Leger',
@@ -108,7 +108,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 6,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/the-forestry-workers.jpg',
           title: 'The Forestry Workers',
           artist: 'Camille Corot',
@@ -128,7 +128,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 7,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/project-of-poster-the-center-of-textile-workers-in-belgium-celebration-on-18th-september-1938(1).jpg',
           title: 'Project of poster "The center of textile workers in Belgium (celebration on 18th september)"',
           artist: 'Rene Magritte',
@@ -148,7 +148,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 8,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/project-of-poster-the-center-of-textile-workers-in-belgium-1938-2(1).jpg',
           title: 'Project of poster "The center of textile workers in Belgium"',
           artist: 'Rene Magritte',
@@ -168,7 +168,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 9,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/mush-with-wineskins-1912(1).jpg',
           title: 'Workers with a barrel (diptych)',
           artist: 'Niko Pirosmani',
@@ -188,7 +188,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 10,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/udarnitzi-record-breaking-workers-at-the-factory-krasnaya-zaria-1931.jpg',
           title: 'Udarnitzi (Record Breaking Workers) at the Factory Krasnaya Zaria',
           artist: 'Pavel Filonov',
@@ -208,7 +208,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 11,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/workers-1916.jpg',
           title: 'Workers',
           artist: 'Pavel Filonov',
@@ -228,7 +228,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 12,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/worker-1933.jpg',
           title: 'Worker',
           artist: 'Kazimir Malevich',
@@ -248,7 +248,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 13,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/a-school-teacher-explaining-the-meaning-of-a-letter-to-illiterate-workers-1516.jpg',
           title: 'A School Teacher Explaining the Meaning of a Letter to Illiterate Workers',
           artist: 'Hans Holbein the Younger',
@@ -268,7 +268,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 14,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/workers-1927.jpg',
           title: 'Workers',
           artist: 'Martiros Sarian',
@@ -288,7 +288,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 15,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/workers-on-the-beet-field-1876.jpg',
           title: 'Workers on the beet field',
           artist: 'Max Liebermann',
@@ -308,7 +308,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 16,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/bloody-sunday-shooting-workers-near-the-winter-palace-january-9-1905-1.jpg',
           title: 'Bloody Sunday. Shooting workers near the Winter Palace January 9, 1905.',
           artist: 'Ivan Vladimirov',
@@ -328,7 +328,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 17,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/steel-workers.jpg',
           title: 'Steel Workers',
           artist: 'Corneliu Baba',
@@ -348,7 +348,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 18,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/house-workers-in-the-bronx.jpg',
           title: 'House Workers in the Bronx',
           artist: 'Abraham Manievich',
@@ -368,7 +368,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 19,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/farm-farm-workers-mt-williamson-in-background-manzanar-relocation-center-california-1943.jpg',
           title: 'Farm, farm workers, Mt. Williamson in background, Manzanar Relocation Center, California',
           artist: 'Ansel Adams',
@@ -388,7 +388,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 20,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/muncitor-agricultura-1931.jpg',
           title: 'Worker (Agriculture)',
           artist: 'Alexandru Phoebus',
@@ -408,7 +408,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 21,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/workers-in-the-snow-1913.jpg',
           title: 'Workers in the Snow',
           artist: 'Edvard Munch',
@@ -428,7 +428,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 22,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/american-workers-1922.jpg',
           title: 'American workers',
           artist: 'David Burliuk',
@@ -448,7 +448,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 23,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/workers-in-the-fields.jpg',
           title: 'Workers in the Fields',
           artist: 'Camille Pissarro',
@@ -468,7 +468,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 24,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/project-of-poster-the-center-of-textile-workers-in-belgium-to-reduce-working-hours-1938(1).jpg',
           title: 'Project of poster "The center of textile workers in Belgium (to reduce working hours)"',
           artist: 'Rene Magritte',
@@ -488,7 +488,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 25,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/alliance-of-the-peasant-and-the-industrial-worker-1924.jpg',
           title: 'Alliance of the Peasant and the Industrial Worker',
           artist: 'Diego Rivera',
@@ -508,7 +508,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 26,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/portrait-of-a-railway-worker-misha-meheteli(1).jpg',
           title: 'Portrait of a railway worker (Misha Meheteli)',
           artist: 'Niko Pirosmani',
@@ -528,7 +528,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 27,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/worker-in-a-cap.jpg',
           title: 'Worker in a Cap',
           artist: 'Pavel Filonov',
@@ -548,7 +548,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 28,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/workers-1920.jpg',
           title: 'Workers',
           artist: 'Pierre Bonnard',
@@ -568,7 +568,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 29,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/young-worker-1869.jpg',
           title: 'Young Worker',
           artist: 'William-Adolphe Bouguereau',
@@ -588,7 +588,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 30,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/a-worker-s-day-1904.jpg',
           title: 'A Worker\'s Day',
           artist: 'Giacomo Balla',
@@ -608,7 +608,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 31,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/at-the-workers-outskirts-in-the-days-of-overthrowing-the-autocracy.jpg',
           title: 'At the workers\' outskirts in the days of overthrowing the autocracy',
           artist: 'Ivan Vladimirov',
@@ -628,7 +628,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 32,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/garment-workers-exploited-by-fruit-of-the-loom.jpg',
           title: 'Garment Workers Exploited by Fruit of the Loom',
           artist: 'Sue Coe',
@@ -648,7 +648,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 33,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/workers-1935.jpg',
           title: 'Workers',
           artist: 'M. H. Maxy',
@@ -668,7 +668,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 34,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/italian-village-workers-making-hats-1880.jpg',
           title: 'Italian village workers making hats',
           artist: 'Peder Severin Kroyer',
@@ -688,7 +688,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 35,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/farm-workers-1880.jpg',
           title: 'Farm Workers',
           artist: 'Pierre Emmanuel Damoye',
@@ -708,7 +708,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 36,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/workers-on-their-way-home-1915.jpg',
           title: 'Workers on Their Way Home',
           artist: 'Edvard Munch',
@@ -728,7 +728,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 37,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/workers-1922.jpg',
           title: 'Workers',
           artist: 'David Burliuk',
@@ -748,7 +748,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 38,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/worker-and-peasant-1927.jpg',
           title: 'Worker and peasant',
           artist: 'Aleksandr Deyneka',
@@ -768,7 +768,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 39,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/project-of-poster-the-center-of-textile-workers-in-belgium-1938-1(1).jpg',
           title: 'Project of poster "The center of textile workers in Belgium"',
           artist: 'Rene Magritte',
@@ -788,7 +788,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 40,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/girl-in-red-scarf-worker-1925.jpg',
           title: 'Girl in red scarf (worker)',
           artist: 'Kuzma Petrov-Vodkin',
@@ -808,7 +808,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 41,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/the-workers-1916.jpg',
           title: 'The Workers',
           artist: 'Pavel Filonov',
@@ -828,7 +828,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 42,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/the-return-of-the-farm-workers-from-the-fields.jpg',
           title: 'The Return of the Farm Workers from the Fields',
           artist: 'Peter Paul Rubens',
@@ -848,7 +848,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 43,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/not_detected_219731.jpg',
           title: 'Workers of all countries unite!',
           artist: 'Kazimir Malevich',
@@ -868,7 +868,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 44,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/the-laundry-worker-1888.jpg',
           title: 'The Laundry Worker',
           artist: 'Henri de Toulouse-Lautrec',
@@ -888,7 +888,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 45,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/there-is-such-a-party-lenin-on-the-1-st-all-russian-congress-of-workers-and-soldiers-deputies-1934.jpg',
           title: 'There is such a party! (Lenin on the 1st All-Russian Congress of Workers\' and Soldiers\'Deputies in Petrograd)',
           artist: 'Konstantin Yuon',
@@ -908,7 +908,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 46,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/portrait-of-worker-yakobchenko-1938.jpg',
           title: 'Portrait of worker Yakobchenko',
           artist: 'Pyotr Konchalovsky',
@@ -928,7 +928,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 47,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/the-revolt-of-the-soldiers-and-workers-in-the-days-of-february-1917.jpg',
           title: 'The revolt of the soldiers and workers in the days of February 1917',
           artist: 'Ivan Vladimirov',
@@ -948,7 +948,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 48,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/woman-worker-1923.jpg',
           title: 'Woman Worker',
           artist: 'Victor Brauner',
@@ -968,7 +968,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 49,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/two-workers-on-strike.jpg',
           title: 'Two Workers on Strike',
           artist: 'Nicolae Vermont',
@@ -988,7 +988,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 50,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/field-workers-1961.jpg',
           title: 'Field Workers',
           artist: 'Josef Herman',
@@ -1008,7 +1008,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 51,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/hotel-worker-1952.jpg',
           title: 'Hotel Worker',
           artist: 'Varlin',
@@ -1028,7 +1028,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 52,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/workers-on-their-way-home-i-1920.jpg',
           title: 'Workers on their way home I',
           artist: 'Edvard Munch',
@@ -1048,7 +1048,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 53,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/a-worker-with-the-lamp-1951.jpg',
           title: 'A worker with the lamp',
           artist: 'Fernand Leger',
@@ -1068,7 +1068,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 54,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/workers-in-the-fields-1.jpg',
           title: 'Workers in the Fields',
           artist: 'Camille Pissarro',
@@ -1088,7 +1088,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 55,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/project-of-poster-the-center-of-textile-workers-in-belgium-1938(1).jpg',
           title: 'Project of poster "The center of textile workers in Belgium"',
           artist: 'Rene Magritte',
@@ -1108,7 +1108,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 56,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/workers-1926.jpg',
           title: 'Workers',
           artist: 'Kuzma Petrov-Vodkin',
@@ -1128,7 +1128,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 57,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/a-french-worker.jpg',
           title: 'A French Worker',
           artist: 'Pavel Filonov',
@@ -1148,7 +1148,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 58,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/attentive-worker-1913.jpg',
           title: 'Attentive Worker',
           artist: 'Kazimir Malevich',
@@ -1168,7 +1168,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 59,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/a-worker-at-celeyran-1882.jpg',
           title: 'A Worker at Celeyran',
           artist: 'Henri de Toulouse-Lautrec',
@@ -1188,7 +1188,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 60,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/seeing-the-unit-of-workers-to-the-front-1928.jpg',
           title: 'Seeing the unit of workers to the front',
           artist: 'Konstantin Yuon',
@@ -1208,7 +1208,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 61,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/worker-s-settlement-and-concrete-plant-davalu-ararat-region-1937.jpg',
           title: 'Worker\'s Settlement and Concrete Plant, Davalu, Ararat Region',
           artist: 'Martiros Sarian',
@@ -1228,7 +1228,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 62,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/venetian-glass-workers-1882.jpg',
           title: 'Venetian Glass Workers',
           artist: 'John Singer Sargent',
@@ -1248,7 +1248,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 63,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/at-the-workers-outskirts-of-the-days-of-the-overthrow-of-the-autocracy-february-1917.jpg',
           title: 'At the workers\' outskirts of the days of the overthrow of the autocracy. February 1917',
           artist: 'Ivan Vladimirov',
@@ -1268,7 +1268,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 64,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/the-manual-workers-and-the-intellectuals-1927.jpg',
           title: 'The Manual Workers and the Intellectuals',
           artist: 'Janos Mattis-Teutsch',
@@ -1288,7 +1288,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 65,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/woman-worker-1893.jpg',
           title: 'Woman Worker',
           artist: 'Stefan Luchian',
@@ -1308,7 +1308,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 66,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/construction-workers-ouvriers-du-ba-timent.jpg',
           title: 'Construction workers',
           artist: 'Theophile Steinlen',
@@ -1328,7 +1328,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 67,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/tavern-in-st-cloud-1890.jpg',
           title: 'Edvard Munch',
           artist: '1890',
@@ -1348,7 +1348,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 68,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/the-fisherman-1902.jpg',
           title: 'The Fisherman',
           artist: 'Edvard Munch',
@@ -1368,7 +1368,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 69,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/the-haymaker-1916.jpg',
           title: 'The Haymaker',
           artist: 'Edvard Munch',
@@ -1388,7 +1388,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 70,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/the-mechanic-1920.jpg',
           title: 'The Mechanic',
           artist: 'Fernand Leger',
@@ -1408,7 +1408,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 71,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/the-three-comrades-1920.jpg',
           title: 'The Three Comrades',
           artist: 'Fernand Leger',
@@ -1428,7 +1428,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 72,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/fishermen-1921.jpg',
           title: 'Fishermen',
           artist: 'Fernand Leger',
@@ -1448,7 +1448,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 73,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/the-butcher-shop-1921.jpg',
           title: 'The Butcher Shop',
           artist: 'Fernand Leger',
@@ -1468,7 +1468,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 74,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/the-man-in-the-blue-hat-1937.jpg',
           title: 'The man in the blue hat',
           artist: 'Fernand Leger',
@@ -1488,7 +1488,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 75,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/manufacturers-on-a-blue-background-1951.jpg',
           title: 'Manufacturers on a blue background',
           artist: 'Fernand Leger',
@@ -1508,7 +1508,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 76,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/manufacturers-with-aloe-1951.jpg',
           title: 'Manufacturers with Aloe',
           artist: 'Fernand Leger',
@@ -1528,7 +1528,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 77,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/builder-character-in-the-framework.jpg',
           title: 'Builder, character in the framework',
           artist: 'Fernand Leger',
@@ -1548,7 +1548,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 78,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/characters-in-the-truck.jpg',
           title: 'Characters in the truck',
           artist: 'Fernand Leger',
@@ -1568,7 +1568,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 79,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/threshing-the-floor-in-a-georgian-country-village-1915.jpg',
           title: 'Threshing the floor in a Georgian country village',
           artist: 'Niko Pirosmani',
@@ -1588,7 +1588,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 80,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/woman-inspector-of-market-hygiene-1916(1).jpg',
           title: 'Sanitary inspector woman of the market',
           artist: 'Niko Pirosmani',
@@ -1608,7 +1608,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 81,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/chariot-near-eatery(1).jpg',
           title: 'Phaeton by the canteen',
           artist: 'Niko Pirosmani',
@@ -1628,7 +1628,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 82,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/woman-milks-a-cow-1916(1).jpg',
           title: 'Woman milks a cow',
           artist: 'Niko Pirosmani',
@@ -1648,7 +1648,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 83,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/farmer-with-a-bull-1916.jpg',
           title: 'Farmer with a Bull',
           artist: 'Niko Pirosmani',
@@ -1668,7 +1668,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 84,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/bourgeois-in-a-carriage-1913.jpg',
           title: 'Bourgeois in a Carriage',
           artist: 'Pavel Filonov',
@@ -1688,7 +1688,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 85,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/those-who-have-nothing-to-lose-1912.jpg',
           title: 'Those Who Have Nothing to Lose',
           artist: 'Pavel Filonov',
@@ -1708,7 +1708,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 86,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/milkmaids-1914.jpg',
           title: 'Milkmaids',
           artist: 'Pavel Filonov',
@@ -1728,7 +1728,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 87,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/the-february-revolution-1926.jpg',
           title: 'The February Revolution',
           artist: 'Pavel Filonov',
@@ -1748,7 +1748,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 88,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/goelro-lenin-s-plan-for-the-electrification-of-russia-1931.jpg',
           title: 'GOELRO (Lenin s Plan for the Electrification of Russia)',
           artist: 'Pavel Filonov',
@@ -1768,7 +1768,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 89,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/the-kolkhoznik-member-of-a-collective-farm-1931.jpg',
           title: 'The Kolkhoznik (Member of a Collective Farm)',
           artist: 'Pavel Filonov',
@@ -1788,7 +1788,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 90,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/pedagogics.jpg',
           title: 'Pedagogics',
           artist: 'Pavel Filonov',
@@ -1808,7 +1808,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 91,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/carpenter-1911.jpg',
           title: 'Carpenter',
           artist: 'Kazimir Malevich',
@@ -1828,7 +1828,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 92,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/gardener-1911.jpg',
           title: 'Gardener',
           artist: 'Kazimir Malevich',
@@ -1848,7 +1848,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 93,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/plowman-1911.jpg',
           title: 'Plowman',
           artist: 'Kazimir Malevich',
@@ -1868,7 +1868,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 94,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/reaping-1911.jpg',
           title: 'Reaping',
           artist: 'Kazimir Malevich',
@@ -1888,7 +1888,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 95,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/two-and-a-pushcart-1911.jpg',
           title: 'Two and a pushcart',
           artist: 'Kazimir Malevich',
@@ -1908,7 +1908,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 96,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/the-knifegrinder-1912.jpg',
           title: 'The knifegrinder',
           artist: 'Kazimir Malevich',
@@ -1928,7 +1928,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 97,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/woodcutter.jpg',
           title: 'Woodcutter',
           artist: 'Kazimir Malevich',
@@ -1948,7 +1948,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 98,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/the-reaper-on-red-1913.jpg',
           title: 'The reaper on red',
           artist: 'Kazimir Malevich',
@@ -1968,7 +1968,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 99,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/carpenter.jpg',
           title: 'Carpenter',
           artist: 'Kazimir Malevich',
@@ -1988,7 +1988,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 100,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/haymaking-1929.jpg',
           title: 'Haymaking',
           artist: 'Kazimir Malevich',
@@ -2008,7 +2008,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 101,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/reaper-1929.jpg',
           title: 'Reaper',
           artist: 'Kazimir Malevich',
@@ -2028,7 +2028,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 102,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/reapers-1929.jpg',
           title: 'Reapers',
           artist: 'Kazimir Malevich',
@@ -2048,7 +2048,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 103,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/harvesting.jpg',
           title: 'Harvesting',
           artist: 'Kazimir Malevich',
@@ -2068,7 +2068,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 104,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/13450813-1195165473851370-1630332832750609931-n.jpg',
           title: 'Union',
           artist: 'Kazimir Malevich',
@@ -2088,7 +2088,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 105,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/reaper.jpg',
           title: 'Reaper',
           artist: 'Kazimir Malevich',
@@ -2108,7 +2108,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 106,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/laundress-1.jpg',
           title: 'Laundress',
           artist: 'Kazimir Malevich',
@@ -2128,7 +2128,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 107,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/the-plowman.jpg',
           title: 'The Plowman',
           artist: 'Hans Holbein the Younger',
@@ -2148,7 +2148,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 108,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/women-plucking-geese-1871.jpg',
           title: 'Women plucking geese',
           artist: 'Max Liebermann',
@@ -2168,7 +2168,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 109,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/shoemaker-1881.jpg',
           title: 'Shoemaker',
           artist: 'Max Liebermann',
@@ -2188,7 +2188,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 110,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/spinning-workshop-in-laren-1889.jpg',
           title: 'Spinning Workshop in Laren',
           artist: 'Max Liebermann',
@@ -2208,7 +2208,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 111,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/flight-of-the-bourgeoisie-from-novorossiysk-in-1920.jpg',
           title: 'Flight of the bourgeoisie from Novorossiysk in 1920',
           artist: 'Ivan Vladimirov',
@@ -2228,7 +2228,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 112,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/the-defeat-of-the-strikers.jpg',
           title: 'The defeat of the strikers',
           artist: 'Ivan Vladimirov',
@@ -2248,7 +2248,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 113,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/woman-ironing.jpg',
           title: 'Woman Ironing',
           artist: 'Corneliu Baba',
@@ -2268,7 +2268,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 114,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/a-plowman.jpg',
           title: 'A plowman',
           artist: 'David Burliuk',
@@ -2288,7 +2288,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 115,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/stonemason-1910.jpg',
           title: 'Stonemason',
           artist: 'David Burliuk',
@@ -2308,7 +2308,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 116,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/harvesting-1915.jpg',
           title: 'Harvesting',
           artist: 'David Burliuk',
@@ -2328,7 +2328,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 117,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/barbershop-1946.jpg',
           title: 'Barbershop',
           artist: 'David Burliuk',
@@ -2348,7 +2348,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 118,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/a-milkmade.jpg',
           title: 'A milkmade',
           artist: 'David Burliuk',
@@ -2368,7 +2368,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 119,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/fishermen.jpg',
           title: 'Fishermen',
           artist: 'David Burliuk',
@@ -2388,7 +2388,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 120,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/ploughing-the-field(1).jpg',
           title: 'Happily ploughing',
           artist: 'David Burliuk',
@@ -2408,7 +2408,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 121,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/laundress-on-the-banks-of-the-river.jpg',
           title: 'Laundress on the Banks of the River',
           artist: 'Camille Pissarro',
@@ -2428,7 +2428,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 122,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/the-harvest.jpg',
           title: 'The Harvest',
           artist: 'Camille Pissarro',
@@ -2448,7 +2448,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 123,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/the-maidservant-1867.jpg',
           title: 'The Maidservant',
           artist: 'Camille Pissarro',
@@ -2468,7 +2468,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 124,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/the-factory-1873.jpg',
           title: 'The Factory',
           artist: 'Camille Pissarro',
@@ -2488,7 +2488,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 125,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/resting-harvesters-montfoucault-1875.jpg',
           title: 'Resting Harvesters, Montfoucault',
           artist: 'Camille Pissarro',
@@ -2508,7 +2508,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 126,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/the-harvest-at-montfoucault-2-1876.jpg',
           title: 'The Harvest at Montfoucault 2',
           artist: 'Camille Pissarro',
@@ -2528,7 +2528,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 127,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/eugene-murer-at-his-pastry-oven-1877.jpg',
           title: 'Eugene Murer at His Pastry Oven',
           artist: 'Camille Pissarro',
@@ -2548,7 +2548,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 128,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/shoemakers.jpg',
           title: 'Shoemakers',
           artist: 'Camille Pissarro',
@@ -2568,7 +2568,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 129,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/the-laundry-woman-1879.jpg',
           title: 'The Laundry Woman',
           artist: 'Camille Pissarro',
@@ -2588,7 +2588,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 130,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/peasants-harvesting-potatoes-1882.jpg',
           title: 'Peasants Harvesting Potatoes',
           artist: 'Camille Pissarro',
@@ -2608,7 +2608,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 131,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/picking-apples.jpg',
           title: 'Picking Apples',
           artist: 'Camille Pissarro',
@@ -2628,7 +2628,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 132,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/the-gleaners-1889.jpg',
           title: 'The Gleaners',
           artist: 'Camille Pissarro',
@@ -2648,7 +2648,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 133,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/peasant-women-planting-stakes-1891.jpg',
           title: 'Peasant Women Planting Stakes',
           artist: 'Camille Pissarro',
@@ -2668,7 +2668,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 134,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/laundring-women-eragny-sur-eptes-1895.jpg',
           title: 'Laundring Women. Eragny sur Eptes',
           artist: 'Camille Pissarro',
@@ -2688,7 +2688,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 135,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/unloading-wood-at-rouen-1896.jpg',
           title: 'Unloading Wood at Rouen',
           artist: 'Camille Pissarro',
@@ -2708,7 +2708,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 136,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/the-laundry-woman.jpg',
           title: 'The Laundry Woman',
           artist: 'Camille Pissarro',
@@ -2728,7 +2728,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 137,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/haymaking-in-eragny-1901.jpg',
           title: 'Haymaking in Eragny',
           artist: 'Camille Pissarro',
@@ -2748,7 +2748,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 138,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/the-sugar-mill-1923.jpg',
           title: 'The Sugar Mill',
           artist: 'Diego Rivera',
@@ -2768,7 +2768,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 139,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/la-era-the-threshing-floor-1904-oil-on-canvas-1904.jpg',
           title: 'La Era (The Threshing Floor) 1904 (oil on canvas)',
           artist: 'Diego Rivera',
@@ -2788,7 +2788,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 140,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/entry-into-the-mine-1923.jpg',
           title: 'Entry into the Mine',
           artist: 'Diego Rivera',
@@ -2808,7 +2808,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 141,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/exit-from-the-mine-1923.jpg',
           title: 'Exit from the Mine',
           artist: 'Diego Rivera',
@@ -2828,7 +2828,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 142,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/may-day-procession-in-moscow-1956.jpg',
           title: 'May Day Procession in Moscow',
           artist: 'Diego Rivera',
@@ -2848,7 +2848,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 143,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/the-flower-seller.jpg',
           title: 'The Flower Seller',
           artist: 'Diego Rivera',
@@ -2868,7 +2868,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 144,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/the-pinole-seller-1936.jpg',
           title: 'The Pinole Seller',
           artist: 'Diego Rivera',
@@ -2888,7 +2888,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 145,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/flower-carrier-1935.jpg',
           title: 'Flower Carrier',
           artist: 'Diego Rivera',
@@ -2908,7 +2908,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 146,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/autumn-the-fruit-pickers-1912.jpg',
           title: 'Autumn: The Fruit Pickers',
           artist: 'Pierre Bonnard',
@@ -2928,7 +2928,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 147,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/rest-in-harvest.jpg',
           title: 'Rest in Harvest',
           artist: 'William-Adolphe Bouguereau',
@@ -2948,7 +2948,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 148,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/young-shepherdess-1868.jpg',
           title: 'Young Shepherdess',
           artist: 'William-Adolphe Bouguereau',
@@ -2968,7 +2968,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 149,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/washerwomen-of-fouesnant-1869.jpg',
           title: 'Washerwomen of Fouesnant',
           artist: 'William-Adolphe Bouguereau',
@@ -2988,7 +2988,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 150,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/shepherdess-1889.jpg',
           title: 'Shepherdess',
           artist: 'William-Adolphe Bouguereau',
@@ -3008,7 +3008,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 151,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/new-cover.jpg',
           title: 'New cover',
           artist: 'Sue Coe',
@@ -3028,7 +3028,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 152,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/map.jpg',
           title: 'Map',
           artist: 'Sue Coe',
@@ -3048,7 +3048,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 153,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/copyright.jpg',
           title: 'Copyright',
           artist: 'Sue Coe',
@@ -3068,7 +3068,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 154,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/thanks.jpg',
           title: 'Thanks',
           artist: 'Sue Coe',
@@ -3088,7 +3088,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 155,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/crow.jpg',
           title: 'Crow',
           artist: 'Sue Coe',
@@ -3108,7 +3108,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 156,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/bullygate.jpg',
           title: 'Bullygate',
           artist: 'Sue Coe',
@@ -3128,7 +3128,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 157,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/rush.jpg',
           title: 'Rush',
           artist: 'Sue Coe',
@@ -3148,7 +3148,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 158,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/rush-1.jpg',
           title: 'Rush',
           artist: 'Sue Coe',
@@ -3168,7 +3168,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 159,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/condi.jpg',
           title: 'Condi',
           artist: 'Sue Coe',
@@ -3188,7 +3188,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 160,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/johnie.jpg',
           title: 'Johnie',
           artist: 'Sue Coe',
@@ -3208,7 +3208,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 161,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/dickie.jpg',
           title: 'Dickie',
           artist: 'Sue Coe',
@@ -3228,7 +3228,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 162,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/donnie.jpg',
           title: 'Donnie',
           artist: 'Sue Coe',
@@ -3248,7 +3248,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 163,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/george.jpg',
           title: 'George',
           artist: 'Sue Coe',
@@ -3268,7 +3268,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 164,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/troubleride.jpg',
           title: 'Troubleride',
           artist: 'Sue Coe',
@@ -3288,7 +3288,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 165,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/tower.jpg',
           title: 'Tower',
           artist: 'Sue Coe',
@@ -3308,7 +3308,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 166,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/ship.jpg',
           title: 'Ship',
           artist: 'Sue Coe',
@@ -3328,7 +3328,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 167,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/blow.jpg',
           title: 'Blow',
           artist: 'Sue Coe',
@@ -3348,7 +3348,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 168,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/ghoster.jpg',
           title: 'Ghoster',
           artist: 'Sue Coe',
@@ -3368,7 +3368,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 169,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/deficit.jpg',
           title: 'Deficit',
           artist: 'Sue Coe',
@@ -3388,7 +3388,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 170,
           user_id: 1,
-          theme: 'socialism/worker\'s struggle',
+          theme: 'Socialism & Worker\'s Rights',
           img_path: './img/may/shoot.jpg',
           title: 'Shoot',
           artist: 'Sue Coe',

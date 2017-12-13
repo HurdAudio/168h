@@ -8,7 +8,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 1,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_cinsovpost_00006.jpg',
           title: 'Poster of the film "The Sixth of the World," directed by Dziga Vetrov',
           artist: 'V.Stenberg, G.Stenberg, A.Naumov',
@@ -28,7 +28,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 2,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_cinsovpost_00003.jpg',
           title: 'Poster of the film "Mother" directed by V. Pudovkin',
           artist: 'I.Bograd',
@@ -48,7 +48,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 3,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_cinsovpost_00002.jpg',
           title: 'Poster of the film "October" directed by S. Eisenstein',
           artist: 'V.Stenberg, G.Stenberg,Ya. Ruklevski',
@@ -68,7 +68,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 4,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_cultsovpost_00005.jpg',
           title: 'Gostsir. Durovskaya Railway...',
           artist: 'E.Holstein',
@@ -88,7 +88,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 5,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_cultsovpost_00004.jpg',
           title: 'All-Russian Agricultural Exhibition...',
           artist: 'I.Lebedev, A. Fidman',
@@ -108,7 +108,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 6,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_cultsovpost_00002.jpg',
           title: 'Flea',
           artist: 'B.Kustodiev',
@@ -128,7 +128,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 7,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_industrysovpost_00003.jpg',
           title: 'The development of transport',
           artist: 'G.Klutsis',
@@ -148,7 +148,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 8,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_ksssrpost_0039.jpg',
           title: 'Give support...',
           artist: 'A.Dejneka',
@@ -168,7 +168,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 9,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_ksssrpost_0038.jpg',
           title: 'All on muster',
           artist: 'Yuri Pimenov',
@@ -188,7 +188,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 10,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_ksssrpost_0037.jpg',
           title: 'All-Russian festival of physical culture',
           artist: 'V. Pshenichnikov',
@@ -208,7 +208,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 11,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_ksssrpost_0032.jpg',
           title: 'A ticket to the zoo cost 2 x 20 kopeek',
           artist: 'D.Bulanov',
@@ -228,7 +228,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 12,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_ksssrpost_0030.jpg',
           title: 'Advertisement inside trolley cars',
           artist: 'D.Bulanov',
@@ -248,7 +248,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 13,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_ksssrpost_0027.jpg',
           title: 'Second all-union lottery',
           artist: 'I.Dlugach,P.Karachentsov',
@@ -268,7 +268,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 14,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_ksssrpost_0026.jpg',
           title: 'Stocko shoe shine polish',
           artist: 'A.Zelensky',
@@ -288,7 +288,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 15,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_ksssrpost_0025.jpg',
           title: 'lottery Avtodor. The ticket price is 50 cents',
           artist: 'B. Titov, E. Pernikov',
@@ -308,7 +308,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 16,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_ksssrpost_0024.jpg',
           title: 'Pencils "Mospoligraf"',
           artist: '?',
@@ -328,7 +328,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 17,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_ksssrpost_0023.jpg',
           title: 'Movie poster "Communards\' Pipe"',
           artist: 'A.Bielski',
@@ -348,7 +348,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 18,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_ksssrpost_0022.jpg',
           title: 'Journey to Mars',
           artist: 'N.Prusakov, G.Borisov',
@@ -368,7 +368,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 19,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_ksssrpost_0019.jpg',
           title: 'Poster of the movie "1905 Bronenosits Potemkin"',
           artist: 'A.Lavinskii',
@@ -388,7 +388,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 20,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_ksssrpost_0018.jpg',
           title: 'Touring the poster of the Moscow Chamber Theatre (French language)',
           artist: 'V.Stenberg,G.Stenberg',
@@ -408,7 +408,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 21,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_ksssrpost_0021.jpg',
           title: 'Poster for the movie \'The Eleventh\' directed by Dziga Vertov',
           artist: 'V.Stenberg, G.Stenberg',
@@ -428,7 +428,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 22,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_ksssrpost_0016.jpg',
           title: 'À subscription to a Laborer Department at Home is open for new orders',
           artist: 'A.Lavinskii',
@@ -448,7 +448,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 23,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_ksssrpost_0015.jpg',
           title: 'The role of à premiere militant',
           artist: 'S.Senkin',
@@ -468,7 +468,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 24,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_ksssrpost_0013.jpg',
           title: 'Lenin and electrification',
           artist: 'Chass-Kobelev',
@@ -488,7 +488,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 25,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_ksssrpost_0011.jpg',
           title: 'Teacher Bubus Comedy',
           artist: 'I. Shlepanov',
@@ -508,7 +508,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 26,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_ksssrpost_0010.jpg',
           title: 'Kino glaz Dziga Vertov',
           artist: 'A.Rodchenko',
@@ -528,7 +528,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 27,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_ksssrpost_0009.jpg',
           title: 'Red Army Soldier',
           artist: 'A.Rodchenko',
@@ -548,7 +548,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 28,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_ksssrpost_0008.jpg',
           title: 'Lengiz Books for all sectors of knowledge',
           artist: 'A. Rodchenko',
@@ -568,7 +568,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 29,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_ksssrpost_0007.jpg',
           title: 'Dobrolet',
           artist: 'A. Rodchenko',
@@ -588,7 +588,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 30,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_ksssrpost_0006.jpg',
           title: 'Cheap bread',
           artist: 'A.Rodchenko, V. Mayakovsky',
@@ -608,7 +608,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 31,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_ksssrpost_0005.jpg',
           title: 'The most businesslike',
           artist: 'A.Rodchenko, V. Mayakovsky',
@@ -628,7 +628,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 32,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_ksssrpost_0004.jpg',
           title: 'Read Young Guard magazine',
           artist: 'A. Rodchenko, V. Mayakovsky',
@@ -648,7 +648,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 33,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_ksssrpost_0003.jpg',
           title: 'Best Pacifier',
           artist: 'A.Rodchenko,V.Mayakovsky',
@@ -668,7 +668,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 34,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_parenthoodsovpost_00009.jpg',
           title: 'Young Leninists....',
           artist: 'V.Izenberg',
@@ -688,7 +688,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 35,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_parenthoodsovpost_00006.jpg',
           title: 'Do not hit the child...',
           artist: 'A.Laptev',
@@ -708,7 +708,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 36,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_parenthoodsovpost_00005.jpg',
           title: 'Mothers...',
           artist: 'A.Soborova',
@@ -728,7 +728,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 37,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_parenthoodsovpost_00002.jpg',
           title: 'Meeting children!',
           artist: 'A.Komarov',
@@ -748,7 +748,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 38,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_socialsovpost_00007.jpg',
           title: 'Dad, do not drink...',
           artist: 'D.Bulanov',
@@ -768,7 +768,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 39,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_socialsovpost_00006.jpg',
           title: 'Stop...',
           artist: '?',
@@ -788,7 +788,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 40,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_sovmilpost18_50_0005.jpg',
           title: 'Red Army...',
           artist: 'A.Lavinskii',
@@ -808,7 +808,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 41,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/large_sportsovpost_00004.jpg',
           title: 'Spartakiada',
           artist: 'S. Vlasov',
@@ -828,7 +828,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 42,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/large_tradesovpost_00012.jpg',
           title: 'Rezinotrest',
           artist: 'D.Kravchenko',
@@ -848,7 +848,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 43,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/large_tradesovpost_00009.jpg',
           title: 'I drink beer and water...',
           artist: '?',
@@ -868,7 +868,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 44,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/large_tradesovpost_00007.jpg',
           title: 'Mosselprom. Tobacco products.',
           artist: 'M. Bulanov',
@@ -888,7 +888,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 45,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/large_tradesovpost_00005.jpg',
           title: 'Cigarettes "Pushkin"',
           artist: 'A. Zelensky',
@@ -908,7 +908,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 46,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_tradesovpost_00004.jpg',
           title: 'Best cigarettes...',
           artist: '?',
@@ -928,7 +928,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 47,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/large_tradesovpost_00002.jpg',
           title: 'Mosselprom...',
           artist: 'D. Tarhov',
@@ -948,7 +948,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 48,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/eafd2e2aa47b9841b8d3b4fd35d6be9b.jpg',
           title: 'Each absenteeism...',
           artist: 'V.Mayakovsky',
@@ -968,7 +968,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 49,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_sovpolpost_00036.jpg',
           title: 'Long live May 1st',
           artist: 'P. Sokolov-Skalya',
@@ -988,7 +988,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 50,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_sovpolpost_00034.jpg',
           title: 'If you will not read books...',
           artist: 'A. Mogilevsky',
@@ -1008,7 +1008,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 51,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_sovpolpost_00033.jpg',
           title: 'Proletarian host...',
           artist: '?',
@@ -1028,7 +1028,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 52,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_sovpolpost_00032.jpg',
           title: 'In case of full cooperation...',
           artist: '?',
@@ -1048,7 +1048,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 53,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_sovpolpost_00031.jpg',
           title: 'V. Ulianov (Lenin) 1870-1924',
           artist: 'A. Strakhov-Braslavsky',
@@ -1068,7 +1068,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 54,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_sovpolpost_00028.jpg',
           title: 'A ghost wanders around Europe, a ghost of communism.',
           artist: 'V. Sherbakov',
@@ -1088,7 +1088,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 55,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_sovpolpost_00027.jpg',
           title: 'March 8th',
           artist: '?',
@@ -1108,7 +1108,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 56,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_sovpolpost_00026.jpg',
           title: 'Each cook must learn...',
           artist: 'Makarychev, Raev',
@@ -1128,7 +1128,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 57,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_sovpolpost_00025.jpg',
           title: 'Knowledge will break the chains of slavery',
           artist: 'A. Rudakov',
@@ -1148,7 +1148,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 58,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_sovpolpost_00024.jpg',
           title: 'What October Revolution gave to a worker and peasant',
           artist: '?',
@@ -1168,7 +1168,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 59,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_sovpolpost_00022.jpg',
           title: 'The one is an offender,..',
           artist: '?',
@@ -1188,7 +1188,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 60,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_sovpolpost_00021.jpg',
           title: 'Woman! Learn how to read and write!',
           artist: 'E. Kruglikova',
@@ -1208,7 +1208,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 61,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_sovpolpost_00018.jpg',
           title: 'To get more - (we) have to produce more, to produce more - (we) have to know (learn) more.',
           artist: 'A. Zelensky',
@@ -1228,7 +1228,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 62,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_sovpolpost_00017.jpg',
           title: 'Beware of mensheviks and SRs',
           artist: '?',
@@ -1248,7 +1248,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 63,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_sovpolpost_00012.jpg',
           title: 'Red gift to a white pan',
           artist: 'Dmitry Moor',
@@ -1268,7 +1268,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 64,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_sovpolpost_00009.jpg',
           title: 'Ukrainians and Russians have the same slogan..',
           artist: '?',
@@ -1288,7 +1288,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 65,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_sovpolpost_00003.jpg',
           title: 'Who is against Soviet',
           artist: 'Dmitry Moor',
@@ -1308,7 +1308,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 66,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_sovpolpost_00002.jpg',
           title: 'Women come to (get into) cooperatives',
           artist: 'Ignaty Nivinsky',
@@ -1328,7 +1328,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 67,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_sovaviapost_0002.jpg',
           title: 'Build Air Fleet of the USSR',
           artist: 'I. Simakov',
@@ -1348,7 +1348,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 68,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/large_St_049.jpg',
           title: 'Each kolkhoznik, every brigade...',
           artist: '?',
@@ -1368,7 +1368,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 69,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/large_St_036.jpg',
           title: 'The stake of the interventionists is overbid!',
           artist: '?',
@@ -1388,7 +1388,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 70,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/large_St_035.jpg',
           title: '(We will) Destroy kulak as a class',
           artist: '?',
@@ -1408,7 +1408,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 71,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/large_St_032.jpg',
           title: 'All (come) to review!',
           artist: '?',
@@ -1428,7 +1428,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 72,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_sovpolpost_00035.jpg',
           title: 'Liberated woman - build up socialism!',
           artist: 'Strahov-Bratislavsky Adolf Iosifovich',
@@ -1448,7 +1448,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 73,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/large_St_023.jpg',
           title: 'Against kulak\'s howl - by a concerted, collective front to sow!',
           artist: '?',
@@ -1468,7 +1468,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 74,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/large_St_026.jpg',
           title: '10 years (anniversary) of the october (revolution)',
           artist: '?',
@@ -1488,7 +1488,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 75,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/large_Le_086.jpg',
           title: 'Long live the 5th anniversary of the Great October Proletarian Revolution!',
           artist: '?',
@@ -1508,7 +1508,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 76,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_Le_085.jpg',
           title: 'Long live KOMSOMOL',
           artist: '?',
@@ -1528,7 +1528,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 77,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_sovpolpost_00020.jpg',
           title: 'HELP',
           artist: 'Dmitry Moor',
@@ -1548,7 +1548,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 78,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_Le_083.jpg',
           title: 'Think about those who are starving',
           artist: '?',
@@ -1568,7 +1568,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 79,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_Le_082.jpg',
           title: 'The victory of the Revolution is in cooperation of workers and peasants.',
           artist: '?',
@@ -1588,7 +1588,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 80,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_Le_081.jpg',
           title: 'Workers',
           artist: '?',
@@ -1608,7 +1608,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 81,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_Le_080.jpg',
           title: '(I) Believe (we) will celebrate the hundredth anniversary',
           artist: '?',
@@ -1628,7 +1628,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 82,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_sovpolpost_00005.jpg',
           title: 'Citizens, save the historical monuments',
           artist: 'Nikolay Kupreyanov',
@@ -1648,7 +1648,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 83,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_Le_078.jpg',
           title: 'Long live the genius of the world-wide marvels - mighty creative labor.',
           artist: '?',
@@ -1668,7 +1668,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 84,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_Le_077.jpg',
           title: '1st of May. All-Russian subbotnik.',
           artist: '?',
@@ -1688,7 +1688,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 85,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_Le_076.jpg',
           title: 'By a powerful strike of labor, we will destroy the shackles of devastation.',
           artist: '?',
@@ -1708,7 +1708,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 86,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_Le_075.jpg',
           title: 'Bread spider',
           artist: '?',
@@ -1728,7 +1728,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 87,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_Le_074.jpg',
           title: '(That) What Bolshevism brings to nation',
           artist: '?',
@@ -1748,7 +1748,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 88,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_Le_073.jpg',
           title: 'Happy worker in Sovdepia',
           artist: '?',
@@ -1768,7 +1768,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 89,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_worksovpost_00007.jpg',
           title: 'Every hit of the hammer - is a hit on the enemy!',
           artist: '?',
@@ -1788,7 +1788,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 90,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_Le_068.jpg',
           title: 'Pyotr Nikolayevich Wrangel',
           artist: '?',
@@ -1808,7 +1808,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 91,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/u-g-PU2WY80.jpg',
           title: 'Long Live the Soviet People - the Space Pioneers!',
           artist: 'Vadim Petrovich Volikov',
@@ -1828,7 +1828,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 92,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/u-g-PU2OR80.jpg',
           title: 'Have You Volunteered for the Red Army?',
           artist: 'Dmitri Stachievich Moor',
@@ -1848,7 +1848,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 93,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/u-g-PI4H4N0.jpg',
           title: 'Forwards, Let Us Destroy the German Occupiers and Drive Them Beyond the...',
           artist: 'V.A. Nikolaev',
@@ -1868,7 +1868,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 94,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/u-g-F17NTP0.jpg',
           title: 'Workers Transportation',
           artist: 'D. Bulanov',
@@ -1888,7 +1888,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 95,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/u-g-P27CI80.jpg',
           title: 'Let\'s Storm the Production Target',
           artist: 'Gustav Klutsis',
@@ -1908,7 +1908,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 96,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_sovpolpost_00006.jpg',
           title: 'The enemy wants to take Moscow over...',
           artist: 'V. Fidman',
@@ -1928,7 +1928,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 97,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_Le_066.jpg',
           title: '(We) Will not give up Petrograd',
           artist: '?',
@@ -1948,7 +1948,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 98,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_Le_065.jpg',
           title: 'Staunchly (by chest) for the defense of petrograd!',
           artist: '?',
@@ -1968,7 +1968,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 99,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_Le_064.jpg',
           title: 'Worker!',
           artist: '?',
@@ -1988,7 +1988,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 100,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_Le_063.jpg',
           title: 'For the United Russia',
           artist: '?',
@@ -2008,7 +2008,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 101,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_Le_062.jpg',
           title: 'Sign up for the loan of Freedom',
           artist: '?',
@@ -2028,7 +2028,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 102,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_sovpolpost_00019.jpg',
           title: 'Illiterate is the same as blind',
           artist: '?',
@@ -2048,7 +2048,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 103,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_Le_058.jpg',
           title: 'A day of the Soviet Propaganda',
           artist: '?',
@@ -2068,7 +2068,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 104,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_sovpolpost_00015.jpg',
           title: '1st of May',
           artist: '?',
@@ -2088,7 +2088,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 105,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_sovpolpost_00023.jpg',
           title: 'Red Moscow',
           artist: '?',
@@ -2108,7 +2108,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 106,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_Le_055.jpg',
           title: 'Long live communist International!',
           artist: '?',
@@ -2128,7 +2128,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 107,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_Le_054.jpg',
           title: 'Welcome Comrades!',
           artist: '?',
@@ -2148,7 +2148,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 108,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_Le_052.jpg',
           title: '(Get) Off the road',
           artist: '?',
@@ -2168,7 +2168,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 109,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_Le_051.jpg',
           title: 'Damnation and death to the hired assassins!',
           artist: '?',
@@ -2188,7 +2188,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 110,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_Le_050.jpg',
           title: 'The deserter\'s nightmare.',
           artist: '?',
@@ -2208,7 +2208,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 111,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_Le_049.jpg',
           title: 'The lord of the world - Capital, gold idol.',
           artist: '?',
@@ -2228,7 +2228,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 112,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_Le_048.jpg',
           title: 'Corpses of the Paris commune, revive under the Red Flag of Soviets!',
           artist: '?',
@@ -2248,7 +2248,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 113,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_sovpolpost_00010.jpg',
           title: 'To work (we) have to, rifle is near',
           artist: '?',
@@ -2268,7 +2268,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 114,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_Le_044.jpg',
           title: 'To the polish front',
           artist: '?',
@@ -2288,7 +2288,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 115,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_Le_043.jpg',
           title: 'Тhe League of Nations',
           artist: '?',
@@ -2308,7 +2308,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 116,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_Le_040.jpg',
           title: 'R.S.F.S.R. Proletarians of all countries, unite!',
           artist: '?',
@@ -2328,7 +2328,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 117,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_Le_036.jpg',
           title: 'Enemy at the gates!',
           artist: '?',
@@ -2348,7 +2348,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 118,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_Le_034.jpg',
           title: 'lllrd International',
           artist: '?',
@@ -2368,7 +2368,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 119,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_sovpolpost_00016.jpg',
           title: 'Capital',
           artist: 'V. Deni',
@@ -2388,7 +2388,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 120,
           user_id: 1,
-          theme: 'russian revolution',
+          theme: 'Russian Revolution',
           img_path: './img/october/popup_Le_032.jpg',
           title: 'Тhe League of Nations',
           artist: '?',

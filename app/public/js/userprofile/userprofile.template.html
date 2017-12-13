@@ -109,7 +109,7 @@
     <div id="artsCurratorZone">
       <div>
         <img src="../img/paintbrush-2243561_1920.jpg">
-        <a href="" id="artsCuratorManager" class="btn">art</a>
+        <a href="" id="artsCuratorManager" class="btn" ng-click="$ctrl.artsCurationManagement()">art</a>
       </div>
 
     </div>
@@ -640,6 +640,945 @@
 
 
       </form>
+
+    </div>
+
+    <div id="artCurratorManagementDiv">
+      <div id="artCurratorManagerBar">
+        <a href="" class="btn" id="artCurratorManagerDone" ng-click="$ctrl.closeArtCurratorManager()">done</a>
+        <h1>Art Currator</h1>
+
+      </div>
+      <div id="artCurratorManagerForm">
+        <div id="januaryArtCurratorManagerForm">
+          <fieldset>
+            <div id="januaryArtCurratorManagement">
+              <br><br><h2>January:</h2><br>
+              <div id="januaryArtCurratorToggleDiv">
+                <a href="" class="btn" id="januaryArtCurratorToggleButton" ng-click="$ctrl.toggleArtCurratorMonth('January')">view</a>
+              </div><br><br>
+
+              <br><div id="januaryArtCurratorDisplay">
+                <h2 id="januaryTheme"></h2><br>
+                <a href="" class="btn" id="januaryAddArtCurration" ng-click="$ctrl.addNewArt('january_arts')">new</a>
+                <a href="" class="btn" id="januaryArtCurratorReporter" ng-click="$ctrl.artCurratorReport('january_arts')">report</a><br><br><br><br>
+
+                <br><div id="janArtCurratorDaysOfWeekDiv">
+                  <form class="daysOfWeek">
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="janArtDay" value="monday" id="janArtMonday"><label for="janArtMonday">Mon</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="janArtDay" value="tuesday" id="janArtTuesday"><label for="janArtTuesday">Tues</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="janArtDay" value="wednesday" id="janArtWednesday"><label for="janArtWednesday">Wed</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="janArtDay" value="thursday" id="janArtThursday"><label for="janArtThursday">Thur</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="janArtDay" value="friday" id="janArtFriday"><label for="janArtFriday">Fri</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="janArtDay" value="saturday" id="janArtSaturday"><label for="janArtSaturday">Sat</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="janArtDay" value="sunday" id="janArtSunday"><label for="janArtSunday">Sun</label></div>
+                  </form><br>
+                </div><br><br><br><br>
+                <br><br><br><br><div id="janArtCurratorDaysOfMonthDiv">
+                  <form class="daysOfMonth" id="janMonthArtDays">
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="janArtMonthDay" value="1" id="janArtDay1"><label for="janArtDay1">1</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="janArtMonthDay" value="2" id="janArtDay2"><label for="janArtDay2">2</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="janArtMonthDay" value="3" id="janArtDay3"><label for="janArtDay3">3</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="janArtMonthDay" value="4" id="janArtDay4"><label for="janArtDay4">4</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="janArtMonthDay" value="5" id="janArtDay5"><label for="janArtDay5">5</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="janArtMonthDay" value="6" id="janArtDay6"><label for="janArtDay6">6</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="janArtMonthDay" value="7" id="janArtDay7"><label for="janArtDay7">7</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="janArtMonthDay" value="8" id="janArtDay8"><label for="janArtDay8">8</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="janArtMonthDay" value="9" id="janArtDay9"><label for="janArtDay9">9</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="janArtMonthDay" value="10" id="janArtDay10"><label for="janArtDay10">10</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="janArtMonthDay" value="11" id="janArtDay11"><label for="janArtDay11">11</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="janArtMonthDay" value="12" id="janArtDay12"><label for="janArtDay12">12</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="janArtMonthDay" value="13" id="janArtDay13"><label for="janArtDay13">13</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="janArtMonthDay" value="14" id="janArtDay14"><label for="janArtDay14">14</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="janArtMonthDay" value="15" id="janArtDay15"><label for="janArtDay15">15</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="janArtMonthDay" value="16" id="janArtDay16"><label for="janArtDay16">16</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="janArtMonthDay" value="17" id="janArtDay17"><label for="janArtDay17">17</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="janArtMonthDay" value="18" id="janArtDay18"><label for="janArtDay18">18</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="janArtMonthDay" value="19" id="janArtDay19"><label for="janArtDay19">19</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="janArtMonthDay" value="20" id="janArtDay20"><label for="janArtDay20">20</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="janArtMonthDay" value="21" id="janArtDay21"><label for="janArtDay21">21</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="janArtMonthDay" value="22" id="janArtDay22"><label for="janArtDay22">22</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="janArtMonthDay" value="23" id="janArtDay23"><label for="janArtDay23">23</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="janArtMonthDay" value="24" id="janArtDay24"><label for="janArtDay24">24</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="janArtMonthDay" value="25" id="janArtDay25"><label for="janArtDay25">25</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="janArtMonthDay" value="26" id="janArtDay26"><label for="janArtDay26">26</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="janArtMonthDay" value="27" id="janArtDay27"><label for="janArtDay27">27</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="janArtMonthDay" value="28" id="janArtDay28"><label for="janArtDay28">28</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="janArtMonthDay" value="29" id="janArtDay29"><label for="janArtDay29">29</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="janArtMonthDay" value="30" id="janArtDay30"><label for="janArtDay30">30</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="janArtMonthDay" value="31" id="janArtDay31"><label for="janArtDay31">31</label></div>
+                    <a class="btn" id="janArtCuratorDisplayButton" ng-click="$ctrl.displayArts('january_artsbyuser')">display</a>
+                  </form>
+                </div><br><br><br>
+
+                <main ng-repeat="art in $ctrl.janArts | orderBy : $ctrl.sortBy">
+                  <div class="artOnDisplay">
+                    <br><br><img src="{{art.img_path}}">
+                    <p><em>{{art.title}}</em></p>
+                    <p>{{art.artist}}, {{art.year}}</p>
+                    <br>
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate(art.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate(art.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <div id="februaryArtCurratorManagement">
+              <br><br><h2>February:</h2><br>
+              <div id="februaryArtCurratorToggleDiv">
+                <a href="" class="btn" id="februaryArtCurratorToggleButton" ng-click="$ctrl.toggleArtCurratorMonth('February')">view</a>
+              </div><br><br>
+
+              <br><div id="februaryArtCurratorDisplay">
+                <h2 id="februaryTheme"></h2><br>
+                <a href="" class="btn" id="februaryAddArtCurration" ng-click="$ctrl.addNewArt('february_arts')">new</a>
+                <a href="" class="btn" id="februaryArtCurratorReporter" ng-click="$ctrl.artCurratorReport('february_arts')">report</a><br><br><br><br>
+
+                <br><br><div id="febArtCurratorDaysOfWeekDiv">
+                  <br><form class="daysOfWeek">
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="febArtDay" value="monday" id="febArtMonday"><label for="febArtMonday">Mon</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="febArtDay" value="tuesday" id="febArtTuesday"><label for="febArtTuesday">Tues</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="febArtDay" value="wednesday" id="febArtWednesday"><label for="febArtWednesday">Wed</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="febArtDay" value="thursday" id="febArtThursday"><label for="febArtThursday">Thur</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="febArtDay" value="friday" id="febArtFriday"><label for="febArtFriday">Fri</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="febArtDay" value="saturday" id="febArtSaturday"><label for="febArtSaturday">Sat</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="febArtDay" value="sunday" id="febArtSunday"><label for="febArtSunday">Sun</label></div>
+                  </form><br>
+                </div><br><br><br><br>
+                <br><br><br><br><div id="febArtCurratorDaysOfMonthDiv">
+                  <form class="daysOfMonth" id="febMonthArtDays">
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="febArtMonthDay" value="1" id="febArtDay1"><label for="febArtDay1">1</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="febArtMonthDay" value="2" id="febArtDay2"><label for="febArtDay2">2</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="febArtMonthDay" value="3" id="febArtDay3"><label for="febArtDay3">3</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="febArtMonthDay" value="4" id="febArtDay4"><label for="febArtDay4">4</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="febArtMonthDay" value="5" id="febArtDay5"><label for="febArtDay5">5</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="febArtMonthDay" value="6" id="febArtDay6"><label for="febArtDay6">6</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="febArtMonthDay" value="7" id="febArtDay7"><label for="febArtDay7">7</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="febArtMonthDay" value="8" id="febArtDay8"><label for="febArtDay8">8</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="febArtMonthDay" value="9" id="febArtDay9"><label for="febArtDay9">9</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="febArtMonthDay" value="10" id="febArtDay10"><label for="febArtDay10">10</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="febArtMonthDay" value="11" id="febArtDay11"><label for="febArtDay11">11</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="febArtMonthDay" value="12" id="febArtDay12"><label for="febArtDay12">12</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="febArtMonthDay" value="13" id="febArtDay13"><label for="febArtDay13">13</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="febArtMonthDay" value="14" id="febArtDay14"><label for="febArtDay14">14</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="febArtMonthDay" value="15" id="febArtDay15"><label for="febArtDay15">15</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="febArtMonthDay" value="16" id="febArtDay16"><label for="febArtDay16">16</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="febArtMonthDay" value="17" id="febArtDay17"><label for="febArtDay17">17</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="febArtMonthDay" value="18" id="febArtDay18"><label for="febArtDay18">18</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="febArtMonthDay" value="19" id="febArtDay19"><label for="febArtDay19">19</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="febArtMonthDay" value="20" id="febArtDay20"><label for="febArtDay20">20</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="febArtMonthDay" value="21" id="febArtDay21"><label for="febArtDay21">21</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="febArtMonthDay" value="22" id="febArtDay22"><label for="febArtDay22">22</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="febArtMonthDay" value="23" id="febArtDay23"><label for="febArtDay23">23</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="febArtMonthDay" value="24" id="febArtDay24"><label for="febArtDay24">24</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="febArtMonthDay" value="25" id="febArtDay25"><label for="febArtDay25">25</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="febArtMonthDay" value="26" id="febArtDay26"><label for="febArtDay26">26</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="febArtMonthDay" value="27" id="febArtDay27"><label for="febArtDay27">27</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="febArtMonthDay" value="28" id="febArtDay28"><label for="febArtDay28">28</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="febArtMonthDay" value="29" id="febArtDay29"><label for="febArtDay29">29</label></div>
+
+                    <a class="btn" id="febArtCuratorDisplayButton" ng-click="$ctrl.displayArts('february_artsbyuser')">display</a>
+                  </form>
+                </div><br><br><br>
+
+                <main ng-repeat="art in $ctrl.febArts | orderBy : $ctrl.sortBy">
+                  <div class="artOnDisplay">
+                    <br><br><img src="{{art.img_path}}">
+                    <p><em>{{art.title}}</em></p>
+                    <p>{{art.artist}}, {{art.year}}</p>
+                    <br>
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate(art.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate(art.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <div id="marchArtCurratorManagement">
+              <br><br><h2>March:</h2><br>
+              <div id="marchArtCurratorToggleDiv">
+                <a href="" class="btn" id="marchArtCurratorToggleButton" ng-click="$ctrl.toggleArtCurratorMonth('March')">view</a>
+              </div><br><br>
+
+              <br><div id="marchArtCurratorDisplay">
+                <h2 id="marchTheme"></h2><br>
+                <a href="" class="btn" id="marchAddArtCurration" ng-click="$ctrl.addNewArt('march_arts')">new</a>
+                <a href="" class="btn" id="marchArtCurratorReporter" ng-click="$ctrl.artCurratorReport('march_arts')">report</a><br><br><br><br>
+
+                <br><br><div id="marArtCurratorDaysOfWeekDiv">
+                  <br><form class="daysOfWeek">
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="marArtDay" value="monday" id="marArtMonday"><label for="marArtMonday">Mon</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="marArtDay" value="tuesday" id="marArtTuesday"><label for="marArtTuesday">Tues</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="marArtDay" value="wednesday" id="marArtWednesday"><label for="marArtWednesday">Wed</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="marArtDay" value="thursday" id="marArtThursday"><label for="marArtThursday">Thur</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="marArtDay" value="friday" id="marArtFriday"><label for="marArtFriday">Fri</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="marArtDay" value="saturday" id="marArtSaturday"><label for="marArtSaturday">Sat</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="marArtDay" value="sunday" id="marArtSunday"><label for="marArtSunday">Sun</label></div>
+                  </form><br>
+                </div><br><br><br><br>
+                <br><br><br><br><div id="marArtCurratorDaysOfMonthDiv">
+                  <form class="daysOfMonth" id="marMonthArtDays">
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="marArtMonthDay" value="1" id="marArtDay1"><label for="marArtDay1">1</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="marArtMonthDay" value="2" id="marArtDay2"><label for="marArtDay2">2</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="marArtMonthDay" value="3" id="marArtDay3"><label for="marArtDay3">3</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="marArtMonthDay" value="4" id="marArtDay4"><label for="marArtDay4">4</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="marArtMonthDay" value="5" id="marArtDay5"><label for="marArtDay5">5</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="marArtMonthDay" value="6" id="marArtDay6"><label for="marArtDay6">6</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="marArtMonthDay" value="7" id="marArtDay7"><label for="marArtDay7">7</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="marArtMonthDay" value="8" id="marArtDay8"><label for="marArtDay8">8</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="marArtMonthDay" value="9" id="marArtDay9"><label for="marArtDay9">9</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="marArtMonthDay" value="10" id="marArtDay10"><label for="marArtDay10">10</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="marArtMonthDay" value="11" id="marArtDay11"><label for="marArtDay11">11</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="marArtMonthDay" value="12" id="marArtDay12"><label for="marArtDay12">12</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="marArtMonthDay" value="13" id="marArtDay13"><label for="marArtDay13">13</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="marArtMonthDay" value="14" id="marArtDay14"><label for="marArtDay14">14</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="marArtMonthDay" value="15" id="marArtDay15"><label for="marArtDay15">15</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="marArtMonthDay" value="16" id="marArtDay16"><label for="marArtDay16">16</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="marArtMonthDay" value="17" id="marArtDay17"><label for="marArtDay17">17</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="marArtMonthDay" value="18" id="marArtDay18"><label for="marArtDay18">18</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="marArtMonthDay" value="19" id="marArtDay19"><label for="marArtDay19">19</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="marArtMonthDay" value="20" id="marArtDay20"><label for="marArtDay20">20</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="marArtMonthDay" value="21" id="marArtDay21"><label for="marArtDay21">21</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="marArtMonthDay" value="22" id="marArtDay22"><label for="marArtDay22">22</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="marArtMonthDay" value="23" id="marArtDay23"><label for="marArtDay23">23</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="marArtMonthDay" value="24" id="marArtDay24"><label for="marArtDay24">24</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="marArtMonthDay" value="25" id="marArtDay25"><label for="marArtDay25">25</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="marArtMonthDay" value="26" id="marArtDay26"><label for="marArtDay26">26</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="marArtMonthDay" value="27" id="marArtDay27"><label for="marArtDay27">27</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="marArtMonthDay" value="28" id="marArtDay28"><label for="marArtDay28">28</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="marArtMonthDay" value="29" id="marArtDay29"><label for="marArtDay29">29</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="marArtMonthDay" value="30" id="marArtDay30"><label for="marArtDay30">30</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="marArtMonthDay" value="31" id="marArtDay31"><label for="marArtDay31">31</label></div>
+
+                    <a class="btn" id="marArtCuratorDisplayButton" ng-click="$ctrl.displayArts('march_artsbyuser')">display</a>
+                  </form>
+                </div><br><br><br>
+
+                <main ng-repeat="art in $ctrl.marArts | orderBy : $ctrl.sortBy">
+                  <div class="artOnDisplay">
+                    <br><br><img src="{{art.img_path}}">
+                    <p><em>{{art.title}}</em></p>
+                    <p>{{art.artist}}, {{art.year}}</p>
+                    <br>
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate(art.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate(art.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <div id="aprilArtCurratorManagement">
+              <br><br><h2>April:</h2><br>
+              <div id="aprilArtCurratorToggleDiv">
+                <a href="" class="btn" id="aprilArtCurratorToggleButton" ng-click="$ctrl.toggleArtCurratorMonth('April')">view</a>
+              </div><br><br>
+
+              <br><div id="aprilArtCurratorDisplay">
+                <h2 id="aprilTheme"></h2><br>
+                <a href="" class="btn" id="aprilAddArtCurration" ng-click="$ctrl.addNewArt('april_arts')">new</a>
+                <a href="" class="btn" id="aprilArtCurratorReporter" ng-click="$ctrl.artCurratorReport('april_arts')">report</a><br><br><br><br>
+
+                <br><br><div id="aprArtCurratorDaysOfWeekDiv">
+                  <br><form class="daysOfWeek">
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="aprArtDay" value="monday" id="aprArtMonday"><label for="aprArtMonday">Mon</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="aprArtDay" value="tuesday" id="aprArtTuesday"><label for="aprArtTuesday">Tues</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="aprArtDay" value="wednesday" id="aprArtWednesday"><label for="aprArtWednesday">Wed</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="aprArtDay" value="thursday" id="aprArtThursday"><label for="aprArtThursday">Thur</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="aprArtDay" value="friday" id="aprArtFriday"><label for="aprArtFriday">Fri</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="aprArtDay" value="saturday" id="aprArtSaturday"><label for="aprArtSaturday">Sat</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="aprArtDay" value="sunday" id="aprArtSunday"><label for="aprArtSunday">Sun</label></div>
+                  </form><br>
+                </div><br><br><br><br>
+                <br><br><br><br><div id="aprArtCurratorDaysOfMonthDiv">
+                  <form class="daysOfMonth" id="aprMonthArtDays">
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="aprArtMonthDay" value="1" id="aprArtDay1"><label for="aprArtDay1">1</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="aprArtMonthDay" value="2" id="aprArtDay2"><label for="aprArtDay2">2</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="aprArtMonthDay" value="3" id="aprArtDay3"><label for="aprArtDay3">3</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="aprArtMonthDay" value="4" id="aprArtDay4"><label for="aprArtDay4">4</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="aprArtMonthDay" value="5" id="aprArtDay5"><label for="aprArtDay5">5</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="aprArtMonthDay" value="6" id="aprArtDay6"><label for="aprArtDay6">6</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="aprArtMonthDay" value="7" id="aprArtDay7"><label for="aprArtDay7">7</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="aprArtMonthDay" value="8" id="aprArtDay8"><label for="aprArtDay8">8</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="aprArtMonthDay" value="9" id="aprArtDay9"><label for="aprArtDay9">9</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="aprArtMonthDay" value="10" id="aprArtDay10"><label for="aprArtDay10">10</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="aprArtMonthDay" value="11" id="aprArtDay11"><label for="aprArtDay11">11</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="aprArtMonthDay" value="12" id="aprArtDay12"><label for="aprArtDay12">12</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="aprArtMonthDay" value="13" id="aprArtDay13"><label for="aprArtDay13">13</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="aprArtMonthDay" value="14" id="aprArtDay14"><label for="aprArtDay14">14</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="aprArtMonthDay" value="15" id="aprArtDay15"><label for="aprArtDay15">15</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="aprArtMonthDay" value="16" id="aprArtDay16"><label for="aprArtDay16">16</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="aprArtMonthDay" value="17" id="aprArtDay17"><label for="aprArtDay17">17</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="aprArtMonthDay" value="18" id="aprArtDay18"><label for="aprArtDay18">18</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="aprArtMonthDay" value="19" id="aprArtDay19"><label for="aprArtDay19">19</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="aprArtMonthDay" value="20" id="aprArtDay20"><label for="aprArtDay20">20</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="aprArtMonthDay" value="21" id="aprArtDay21"><label for="aprArtDay21">21</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="aprArtMonthDay" value="22" id="aprArtDay22"><label for="aprArtDay22">22</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="aprArtMonthDay" value="23" id="aprArtDay23"><label for="aprArtDay23">23</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="aprArtMonthDay" value="24" id="aprArtDay24"><label for="aprArtDay24">24</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="aprArtMonthDay" value="25" id="aprArtDay25"><label for="aprArtDay25">25</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="aprArtMonthDay" value="26" id="aprArtDay26"><label for="aprArtDay26">26</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="aprArtMonthDay" value="27" id="aprArtDay27"><label for="aprArtDay27">27</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="aprArtMonthDay" value="28" id="aprArtDay28"><label for="aprArtDay28">28</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="aprArtMonthDay" value="29" id="aprArtDay29"><label for="aprArtDay29">29</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="aprArtMonthDay" value="30" id="aprArtDay30"><label for="aprArtDay30">30</label></div>
+
+                    <a class="btn" id="aprArtCuratorDisplayButton" ng-click="$ctrl.displayArts('april_artsbyuser')">display</a>
+                  </form>
+                </div><br><br><br>
+
+                <main ng-repeat="art in $ctrl.aprArts | orderBy : $ctrl.sortBy">
+                  <div class="artOnDisplay">
+                    <br><br><img src="{{art.img_path}}">
+                    <p><em>{{art.title}}</em></p>
+                    <p>{{art.artist}}, {{art.year}}</p>
+                    <br>
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate(art.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate(art.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <div id="mayArtCurratorManagement">
+              <br><br><h2>May:</h2><br>
+              <div id="mayArtCurratorToggleDiv">
+                <a href="" class="btn" id="mayArtCurratorToggleButton" ng-click="$ctrl.toggleArtCurratorMonth('May')">view</a>
+              </div><br><br>
+
+              <br><div id="mayArtCurratorDisplay">
+                <h2 id="mayTheme"></h2><br>
+                <a href="" class="btn" id="mayAddArtCurration" ng-click="$ctrl.addNewArt('may_arts')">new</a>
+                <a href="" class="btn" id="mayArtCurratorReporter" ng-click="$ctrl.artCurratorReport('may_arts')">report</a><br><br><br><br>
+
+                <br><br><div id="mayArtCurratorDaysOfWeekDiv">
+                  <br><form class="daysOfWeek">
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="mayArtDay" value="monday" id="mayArtMonday"><label for="mayArtMonday">Mon</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="mayArtDay" value="tuesday" id="mayArtTuesday"><label for="mayArtTuesday">Tues</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="mayArtDay" value="wednesday" id="mayArtWednesday"><label for="mayArtWednesday">Wed</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="mayArtDay" value="thursday" id="mayArtThursday"><label for="mayArtThursday">Thur</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="mayArtDay" value="friday" id="mayArtFriday"><label for="mayArtFriday">Fri</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="mayArtDay" value="saturday" id="mayArtSaturday"><label for="mayArtSaturday">Sat</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="mayArtDay" value="sunday" id="mayArtSunday"><label for="mayArtSunday">Sun</label></div>
+                  </form><br>
+                </div><br><br><br><br>
+                <br><br><br><br><div id="mayArtCurratorDaysOfMonthDiv">
+                  <form class="daysOfMonth" id="mayMonthArtDays">
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="mayArtMonthDay" value="1" id="mayArtDay1"><label for="mayArtDay1">1</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="mayArtMonthDay" value="2" id="mayArtDay2"><label for="mayArtDay2">2</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="mayArtMonthDay" value="3" id="mayArtDay3"><label for="mayArtDay3">3</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="mayArtMonthDay" value="4" id="mayArtDay4"><label for="mayArtDay4">4</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="mayArtMonthDay" value="5" id="mayArtDay5"><label for="mayArtDay5">5</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="mayArtMonthDay" value="6" id="mayArtDay6"><label for="mayArtDay6">6</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="mayArtMonthDay" value="7" id="mayArtDay7"><label for="mayArtDay7">7</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="mayArtMonthDay" value="8" id="mayArtDay8"><label for="mayArtDay8">8</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="mayArtMonthDay" value="9" id="mayArtDay9"><label for="mayArtDay9">9</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="mayArtMonthDay" value="10" id="mayArtDay10"><label for="mayArtDay10">10</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="mayArtMonthDay" value="11" id="mayArtDay11"><label for="mayArtDay11">11</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="mayArtMonthDay" value="12" id="mayArtDay12"><label for="mayArtDay12">12</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="mayArtMonthDay" value="13" id="mayArtDay13"><label for="mayArtDay13">13</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="mayArtMonthDay" value="14" id="mayArtDay14"><label for="mayArtDay14">14</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="mayArtMonthDay" value="15" id="mayArtDay15"><label for="mayArtDay15">15</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="mayArtMonthDay" value="16" id="mayArtDay16"><label for="mayArtDay16">16</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="mayArtMonthDay" value="17" id="mayArtDay17"><label for="mayArtDay17">17</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="mayArtMonthDay" value="18" id="mayArtDay18"><label for="mayArtDay18">18</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="mayArtMonthDay" value="19" id="mayArtDay19"><label for="mayArtDay19">19</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="mayArtMonthDay" value="20" id="mayArtDay20"><label for="mayArtDay20">20</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="mayArtMonthDay" value="21" id="mayArtDay21"><label for="mayArtDay21">21</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="mayArtMonthDay" value="22" id="mayArtDay22"><label for="mayArtDay22">22</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="mayArtMonthDay" value="23" id="mayArtDay23"><label for="mayArtDay23">23</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="mayArtMonthDay" value="24" id="mayArtDay24"><label for="mayArtDay24">24</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="mayArtMonthDay" value="25" id="mayArtDay25"><label for="mayArtDay25">25</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="mayArtMonthDay" value="26" id="mayArtDay26"><label for="mayArtDay26">26</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="mayArtMonthDay" value="27" id="mayArtDay27"><label for="mayArtDay27">27</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="mayArtMonthDay" value="28" id="mayArtDay28"><label for="mayArtDay28">28</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="mayArtMonthDay" value="29" id="mayArtDay29"><label for="mayArtDay29">29</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="mayArtMonthDay" value="30" id="mayArtDay30"><label for="mayArtDay30">30</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="mayArtMonthDay" value="31" id="mayArtDay31"><label for="mayArtDay31">31</label></div>
+
+                    <a class="btn" id="mayArtCuratorDisplayButton" ng-click="$ctrl.displayArts('may_artsbyuser')">display</a>
+                  </form>
+                </div><br><br><br>
+
+                <main ng-repeat="art in $ctrl.mayArts | orderBy : $ctrl.sortBy">
+                  <div class="artOnDisplay">
+                    <br><br><img src="{{art.img_path}}">
+                    <p><em>{{art.title}}</em></p>
+                    <p>{{art.artist}}, {{art.year}}</p>
+                    <br>
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate(art.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate(art.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <div id="junArtCurratorManagement">
+              <br><br><h2>June:</h2><br>
+              <div id="junArtCurratorToggleDiv">
+                <a href="" class="btn" id="junArtCurratorToggleButton" ng-click="$ctrl.toggleArtCurratorMonth('June')">view</a>
+              </div><br><br>
+
+              <br><div id="junArtCurratorDisplay">
+                <h2 id="juneTheme"></h2><br>
+                <a href="" class="btn" id="junAddArtCurration" ng-click="$ctrl.addNewArt('june_arts')">new</a>
+                <a href="" class="btn" id="junArtCurratorReporter" ng-click="$ctrl.artCurratorReport('june_arts')">report</a><br><br><br><br>
+
+                <br><br><div id="junArtCurratorDaysOfWeekDiv">
+                  <br><form class="daysOfWeek">
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="junArtDay" value="monday" id="junArtMonday"><label for="junArtMonday">Mon</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="junArtDay" value="tuesday" id="junArtTuesday"><label for="junArtTuesday">Tues</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="junArtDay" value="wednesday" id="junArtWednesday"><label for="junArtWednesday">Wed</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="junArtDay" value="thursday" id="junArtThursday"><label for="junArtThursday">Thur</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="junArtDay" value="friday" id="junArtFriday"><label for="junArtFriday">Fri</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="junArtDay" value="saturday" id="junArtSaturday"><label for="junArtSaturday">Sat</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="junArtDay" value="sunday" id="junArtSunday"><label for="junArtSunday">Sun</label></div>
+                  </form><br>
+                </div><br><br><br><br>
+                <br><br><br><br><div id="junArtCurratorDaysOfMonthDiv">
+                  <form class="daysOfMonth" id="junMonthArtDays">
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="junArtMonthDay" value="1" id="junArtDay1"><label for="junArtDay1">1</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="junArtMonthDay" value="2" id="junArtDay2"><label for="junArtDay2">2</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="junArtMonthDay" value="3" id="junArtDay3"><label for="junArtDay3">3</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="junArtMonthDay" value="4" id="junArtDay4"><label for="junArtDay4">4</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="junArtMonthDay" value="5" id="junArtDay5"><label for="junArtDay5">5</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="junArtMonthDay" value="6" id="junArtDay6"><label for="junArtDay6">6</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="junArtMonthDay" value="7" id="junArtDay7"><label for="junArtDay7">7</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="junArtMonthDay" value="8" id="junArtDay8"><label for="junArtDay8">8</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="junArtMonthDay" value="9" id="junArtDay9"><label for="junArtDay9">9</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="junArtMonthDay" value="10" id="junArtDay10"><label for="junArtDay10">10</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="junArtMonthDay" value="11" id="junArtDay11"><label for="junArtDay11">11</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="junArtMonthDay" value="12" id="junArtDay12"><label for="junArtDay12">12</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="junArtMonthDay" value="13" id="junArtDay13"><label for="junArtDay13">13</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="junArtMonthDay" value="14" id="junArtDay14"><label for="junArtDay14">14</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="junArtMonthDay" value="15" id="junArtDay15"><label for="junArtDay15">15</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="junArtMonthDay" value="16" id="junArtDay16"><label for="junArtDay16">16</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="junArtMonthDay" value="17" id="junArtDay17"><label for="junArtDay17">17</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="junArtMonthDay" value="18" id="junArtDay18"><label for="junArtDay18">18</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="junArtMonthDay" value="19" id="junArtDay19"><label for="junArtDay19">19</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="junArtMonthDay" value="20" id="junArtDay20"><label for="junArtDay20">20</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="junArtMonthDay" value="21" id="junArtDay21"><label for="junArtDay21">21</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="junArtMonthDay" value="22" id="junArtDay22"><label for="junArtDay22">22</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="junArtMonthDay" value="23" id="junArtDay23"><label for="junArtDay23">23</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="junArtMonthDay" value="24" id="junArtDay24"><label for="junArtDay24">24</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="junArtMonthDay" value="25" id="junArtDay25"><label for="junArtDay25">25</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="junArtMonthDay" value="26" id="junArtDay26"><label for="junArtDay26">26</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="junArtMonthDay" value="27" id="junArtDay27"><label for="junArtDay27">27</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="junArtMonthDay" value="28" id="junArtDay28"><label for="junArtDay28">28</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="junArtMonthDay" value="29" id="junArtDay29"><label for="junArtDay29">29</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="junArtMonthDay" value="30" id="junArtDay30"><label for="junArtDay30">30</label></div>
+
+
+                    <a class="btn" id="junArtCuratorDisplayButton" ng-click="$ctrl.displayArts('june_artsbyuser')">display</a>
+                  </form>
+                </div><br><br><br>
+
+                <main ng-repeat="art in $ctrl.junArts | orderBy : $ctrl.sortBy">
+                  <div class="artOnDisplay">
+                    <br><br><img src="{{art.img_path}}">
+                    <p><em>{{art.title}}</em></p>
+                    <p>{{art.artist}}, {{art.year}}</p>
+                    <br>
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate(art.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate(art.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <div id="julArtCurratorManagement">
+              <br><br><h2>July:</h2><br>
+              <div id="julArtCurratorToggleDiv">
+                <a href="" class="btn" id="julArtCurratorToggleButton" ng-click="$ctrl.toggleArtCurratorMonth('July')">view</a>
+              </div><br><br>
+
+              <br><div id="julArtCurratorDisplay">
+                <h2 id="julyTheme"></h2><br>
+                <a href="" class="btn" id="julAddArtCurration" ng-click="$ctrl.addNewArt('july_arts')">new</a>
+                <a href="" class="btn" id="julArtCurratorReporter" ng-click="$ctrl.artCurratorReport('july_arts')">report</a><br><br><br><br>
+
+                <br><br><div id="julArtCurratorDaysOfWeekDiv">
+                  <br><form class="daysOfWeek">
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="julArtDay" value="monday" id="julArtMonday"><label for="julArtMonday">Mon</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="julArtDay" value="tuesday" id="julArtTuesday"><label for="julArtTuesday">Tues</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="julArtDay" value="wednesday" id="julArtWednesday"><label for="julArtWednesday">Wed</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="julArtDay" value="thursday" id="julArtThursday"><label for="julArtThursday">Thur</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="julArtDay" value="friday" id="julArtFriday"><label for="julArtFriday">Fri</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="julArtDay" value="saturday" id="julArtSaturday"><label for="julArtSaturday">Sat</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="julArtDay" value="sunday" id="julArtSunday"><label for="julArtSunday">Sun</label></div>
+                  </form><br>
+                </div><br><br><br><br>
+                <br><br><br><br><div id="julArtCurratorDaysOfMonthDiv">
+                  <form class="daysOfMonth" id="julMonthArtDays">
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="julArtMonthDay" value="1" id="julArtDay1"><label for="julArtDay1">1</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="julArtMonthDay" value="2" id="julArtDay2"><label for="julArtDay2">2</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="julArtMonthDay" value="3" id="julArtDay3"><label for="julArtDay3">3</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="julArtMonthDay" value="4" id="julArtDay4"><label for="julArtDay4">4</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="julArtMonthDay" value="5" id="julArtDay5"><label for="julArtDay5">5</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="julArtMonthDay" value="6" id="julArtDay6"><label for="julArtDay6">6</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="julArtMonthDay" value="7" id="julArtDay7"><label for="julArtDay7">7</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="julArtMonthDay" value="8" id="julArtDay8"><label for="julArtDay8">8</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="julArtMonthDay" value="9" id="julArtDay9"><label for="julArtDay9">9</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="julArtMonthDay" value="10" id="julArtDay10"><label for="julArtDay10">10</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="julArtMonthDay" value="11" id="julArtDay11"><label for="julArtDay11">11</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="julArtMonthDay" value="12" id="julArtDay12"><label for="julArtDay12">12</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="julArtMonthDay" value="13" id="julArtDay13"><label for="julArtDay13">13</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="julArtMonthDay" value="14" id="julArtDay14"><label for="julArtDay14">14</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="julArtMonthDay" value="15" id="julArtDay15"><label for="julArtDay15">15</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="julArtMonthDay" value="16" id="julArtDay16"><label for="julArtDay16">16</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="julArtMonthDay" value="17" id="julArtDay17"><label for="julArtDay17">17</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="julArtMonthDay" value="18" id="julArtDay18"><label for="julArtDay18">18</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="julArtMonthDay" value="19" id="julArtDay19"><label for="julArtDay19">19</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="julArtMonthDay" value="20" id="julArtDay20"><label for="julArtDay20">20</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="julArtMonthDay" value="21" id="julArtDay21"><label for="julArtDay21">21</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="julArtMonthDay" value="22" id="julArtDay22"><label for="julArtDay22">22</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="julArtMonthDay" value="23" id="julArtDay23"><label for="julArtDay23">23</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="julArtMonthDay" value="24" id="julArtDay24"><label for="julArtDay24">24</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="julArtMonthDay" value="25" id="julArtDay25"><label for="julArtDay25">25</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="julArtMonthDay" value="26" id="julArtDay26"><label for="julArtDay26">26</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="julArtMonthDay" value="27" id="julArtDay27"><label for="julArtDay27">27</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="julArtMonthDay" value="28" id="julArtDay28"><label for="julArtDay28">28</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="julArtMonthDay" value="29" id="julArtDay29"><label for="julArtDay29">29</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="julArtMonthDay" value="30" id="julArtDay30"><label for="julArtDay30">30</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="julArtMonthDay" value="31" id="julArtDay31"><label for="julArtDay31">31</label></div>
+
+
+                    <a class="btn" id="julArtCuratorDisplayButton" ng-click="$ctrl.displayArts('july_artsbyuser')">display</a>
+                  </form>
+                </div><br><br><br>
+
+                <main ng-repeat="art in $ctrl.julArts | orderBy : $ctrl.sortBy">
+                  <div class="artOnDisplay">
+                    <br><br><img src="{{art.img_path}}">
+                    <p><em>{{art.title}}</em></p>
+                    <p>{{art.artist}}, {{art.year}}</p>
+                    <br>
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate(art.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate(art.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <div id="augArtCurratorManagement">
+              <br><br><h2>August:</h2><br>
+              <div id="augArtCurratorToggleDiv">
+                <a href="" class="btn" id="augArtCurratorToggleButton" ng-click="$ctrl.toggleArtCurratorMonth('August')">view</a>
+              </div><br><br>
+
+              <br><div id="augArtCurratorDisplay">
+                <h2 id="augustTheme"></h2><br>
+                <a href="" class="btn" id="augAddArtCurration" ng-click="$ctrl.addNewArt('august_arts')">new</a>
+                <a href="" class="btn" id="augArtCurratorReporter" ng-click="$ctrl.artCurratorReport('august_arts')">report</a><br><br><br><br>
+
+                <br><br><div id="augArtCurratorDaysOfWeekDiv">
+                  <br><form class="daysOfWeek">
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="augArtDay" value="monday" id="augArtMonday"><label for="augArtMonday">Mon</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="augArtDay" value="tuesday" id="augArtTuesday"><label for="augArtTuesday">Tues</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="augArtDay" value="wednesday" id="augArtWednesday"><label for="augArtWednesday">Wed</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="augArtDay" value="thursday" id="augArtThursday"><label for="augArtThursday">Thur</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="augArtDay" value="friday" id="augArtFriday"><label for="augArtFriday">Fri</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="augArtDay" value="saturday" id="augArtSaturday"><label for="augArtSaturday">Sat</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="augArtDay" value="sunday" id="augArtSunday"><label for="augArtSunday">Sun</label></div>
+                  </form><br>
+                </div><br><br><br><br>
+                <br><br><br><br><div id="augArtCurratorDaysOfMonthDiv">
+                  <form class="daysOfMonth" id="augMonthArtDays">
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="augArtMonthDay" value="1" id="augArtDay1"><label for="augArtDay1">1</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="augArtMonthDay" value="2" id="augArtDay2"><label for="augArtDay2">2</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="augArtMonthDay" value="3" id="augArtDay3"><label for="augArtDay3">3</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="augArtMonthDay" value="4" id="augArtDay4"><label for="augArtDay4">4</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="augArtMonthDay" value="5" id="augArtDay5"><label for="augArtDay5">5</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="augArtMonthDay" value="6" id="augArtDay6"><label for="augArtDay6">6</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="augArtMonthDay" value="7" id="augArtDay7"><label for="augArtDay7">7</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="augArtMonthDay" value="8" id="augArtDay8"><label for="augArtDay8">8</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="augArtMonthDay" value="9" id="augArtDay9"><label for="augArtDay9">9</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="augArtMonthDay" value="10" id="augArtDay10"><label for="augArtDay10">10</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="augArtMonthDay" value="11" id="augArtDay11"><label for="augArtDay11">11</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="augArtMonthDay" value="12" id="augArtDay12"><label for="augArtDay12">12</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="augArtMonthDay" value="13" id="augArtDay13"><label for="augArtDay13">13</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="augArtMonthDay" value="14" id="augArtDay14"><label for="augArtDay14">14</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="augArtMonthDay" value="15" id="augArtDay15"><label for="augArtDay15">15</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="augArtMonthDay" value="16" id="augArtDay16"><label for="augArtDay16">16</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="augArtMonthDay" value="17" id="augArtDay17"><label for="augArtDay17">17</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="augArtMonthDay" value="18" id="augArtDay18"><label for="augArtDay18">18</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="augArtMonthDay" value="19" id="augArtDay19"><label for="augArtDay19">19</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="augArtMonthDay" value="20" id="augArtDay20"><label for="augArtDay20">20</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="augArtMonthDay" value="21" id="augArtDay21"><label for="augArtDay21">21</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="augArtMonthDay" value="22" id="augArtDay22"><label for="augArtDay22">22</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="augArtMonthDay" value="23" id="augArtDay23"><label for="augArtDay23">23</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="augArtMonthDay" value="24" id="augArtDay24"><label for="augArtDay24">24</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="augArtMonthDay" value="25" id="augArtDay25"><label for="augArtDay25">25</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="augArtMonthDay" value="26" id="augArtDay26"><label for="augArtDay26">26</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="augArtMonthDay" value="27" id="augArtDay27"><label for="augArtDay27">27</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="augArtMonthDay" value="28" id="augArtDay28"><label for="augArtDay28">28</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="augArtMonthDay" value="29" id="augArtDay29"><label for="augArtDay29">29</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="augArtMonthDay" value="30" id="augArtDay30"><label for="augArtDay30">30</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="augArtMonthDay" value="31" id="augArtDay31"><label for="augArtDay31">31</label></div>
+
+
+                    <a class="btn" id="augArtCuratorDisplayButton" ng-click="$ctrl.displayArts('august_artsbyuser')">display</a>
+                  </form>
+                </div><br><br><br>
+
+                <main ng-repeat="art in $ctrl.augArts | orderBy : $ctrl.sortBy">
+                  <div class="artOnDisplay">
+                    <br><br><img src="{{art.img_path}}">
+                    <p><em>{{art.title}}</em></p>
+                    <p>{{art.artist}}, {{art.year}}</p>
+                    <br>
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate(art.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate(art.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <div id="sepArtCurratorManagement">
+              <br><br><h2>September:</h2><br>
+              <div id="sepArtCurratorToggleDiv">
+                <a href="" class="btn" id="sepArtCurratorToggleButton" ng-click="$ctrl.toggleArtCurratorMonth('September')">view</a>
+              </div><br><br>
+
+              <br><div id="sepArtCurratorDisplay">
+                <h2 id="septemberTheme"></h2><br>
+                <a href="" class="btn" id="sepAddArtCurration" ng-click="$ctrl.addNewArt('september_arts')">new</a>
+                <a href="" class="btn" id="sepArtCurratorReporter" ng-click="$ctrl.artCurratorReport('september_arts')">report</a><br><br><br><br>
+
+                <br><br><div id="sepArtCurratorDaysOfWeekDiv">
+                  <br><form class="daysOfWeek">
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="sepArtDay" value="monday" id="sepArtMonday"><label for="sepArtMonday">Mon</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="sepArtDay" value="tuesday" id="sepArtTuesday"><label for="sepArtTuesday">Tues</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="sepArtDay" value="wednesday" id="sepArtWednesday"><label for="sepArtWednesday">Wed</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="sepArtDay" value="thursday" id="sepArtThursday"><label for="sepArtThursday">Thur</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="sepArtDay" value="friday" id="sepArtFriday"><label for="sepArtFriday">Fri</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="sepArtDay" value="saturday" id="sepArtSaturday"><label for="sepArtSaturday">Sat</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="sepArtDay" value="sunday" id="sepArtSunday"><label for="sepArtSunday">Sun</label></div>
+                  </form><br>
+                </div><br><br><br><br>
+                <br><br><br><br><div id="sepArtCurratorDaysOfMonthDiv">
+                  <form class="daysOfMonth" id="sepMonthArtDays">
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="sepArtMonthDay" value="1" id="sepArtDay1"><label for="sepArtDay1">1</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="sepArtMonthDay" value="2" id="sepArtDay2"><label for="sepArtDay2">2</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="sepArtMonthDay" value="3" id="sepArtDay3"><label for="sepArtDay3">3</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="sepArtMonthDay" value="4" id="sepArtDay4"><label for="sepArtDay4">4</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="sepArtMonthDay" value="5" id="sepArtDay5"><label for="sepArtDay5">5</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="sepArtMonthDay" value="6" id="sepArtDay6"><label for="sepArtDay6">6</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="sepArtMonthDay" value="7" id="sepArtDay7"><label for="sepArtDay7">7</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="sepArtMonthDay" value="8" id="sepArtDay8"><label for="sepArtDay8">8</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="sepArtMonthDay" value="9" id="sepArtDay9"><label for="sepArtDay9">9</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="sepArtMonthDay" value="10" id="sepArtDay10"><label for="sepArtDay10">10</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="sepArtMonthDay" value="11" id="sepArtDay11"><label for="sepArtDay11">11</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="sepArtMonthDay" value="12" id="sepArtDay12"><label for="sepArtDay12">12</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="sepArtMonthDay" value="13" id="sepArtDay13"><label for="sepArtDay13">13</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="sepArtMonthDay" value="14" id="sepArtDay14"><label for="sepArtDay14">14</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="sepArtMonthDay" value="15" id="sepArtDay15"><label for="sepArtDay15">15</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="sepArtMonthDay" value="16" id="sepArtDay16"><label for="sepArtDay16">16</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="sepArtMonthDay" value="17" id="sepArtDay17"><label for="sepArtDay17">17</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="sepArtMonthDay" value="18" id="sepArtDay18"><label for="sepArtDay18">18</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="sepArtMonthDay" value="19" id="sepArtDay19"><label for="sepArtDay19">19</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="sepArtMonthDay" value="20" id="sepArtDay20"><label for="sepArtDay20">20</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="sepArtMonthDay" value="21" id="sepArtDay21"><label for="sepArtDay21">21</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="sepArtMonthDay" value="22" id="sepArtDay22"><label for="sepArtDay22">22</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="sepArtMonthDay" value="23" id="sepArtDay23"><label for="sepArtDay23">23</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="sepArtMonthDay" value="24" id="sepArtDay24"><label for="sepArtDay24">24</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="sepArtMonthDay" value="25" id="sepArtDay25"><label for="sepArtDay25">25</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="sepArtMonthDay" value="26" id="sepArtDay26"><label for="sepArtDay26">26</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="sepArtMonthDay" value="27" id="sepArtDay27"><label for="sepArtDay27">27</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="sepArtMonthDay" value="28" id="sepArtDay28"><label for="sepArtDay28">28</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="sepArtMonthDay" value="29" id="sepArtDay29"><label for="sepArtDay29">29</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="sepArtMonthDay" value="30" id="sepArtDay30"><label for="sepArtDay30">30</label></div>
+
+
+
+                    <a class="btn" id="sepArtCuratorDisplayButton" ng-click="$ctrl.displayArts('september_artsbyuser')">display</a>
+                  </form>
+                </div><br><br><br>
+
+                <main ng-repeat="art in $ctrl.sepArts | orderBy : $ctrl.sortBy">
+                  <div class="artOnDisplay">
+                    <br><br><img src="{{art.img_path}}">
+                    <p><em>{{art.title}}</em></p>
+                    <p>{{art.artist}}, {{art.year}}</p>
+                    <br>
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate(art.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate(art.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <div id="octArtCurratorManagement">
+              <br><br><h2>October:</h2><br>
+              <div id="octArtCurratorToggleDiv">
+                <a href="" class="btn" id="octArtCurratorToggleButton" ng-click="$ctrl.toggleArtCurratorMonth('October')">view</a>
+              </div><br><br>
+
+              <br><div id="octArtCurratorDisplay">
+                <h2 id="octoberTheme"></h2><br>
+                <a href="" class="btn" id="octAddArtCurration" ng-click="$ctrl.addNewArt('october_arts')">new</a>
+                <a href="" class="btn" id="octArtCurratorReporter" ng-click="$ctrl.artCurratorReport('october_arts')">report</a><br><br><br><br>
+
+                <br><br><div id="octArtCurratorDaysOfWeekDiv">
+                  <br><form class="daysOfWeek">
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="octArtDay" value="monday" id="octArtMonday"><label for="octArtMonday">Mon</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="octArtDay" value="tuesday" id="octArtTuesday"><label for="octArtTuesday">Tues</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="octArtDay" value="wednesday" id="octArtWednesday"><label for="octArtWednesday">Wed</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="octArtDay" value="thursday" id="octArtThursday"><label for="octArtThursday">Thur</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="octArtDay" value="friday" id="octArtFriday"><label for="octArtFriday">Fri</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="octArtDay" value="saturday" id="octArtSaturday"><label for="octArtSaturday">Sat</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="octArtDay" value="sunday" id="octArtSunday"><label for="octArtSunday">Sun</label></div>
+                  </form><br>
+                </div><br><br><br><br>
+                <br><br><br><br><div id="octArtCurratorDaysOfMonthDiv">
+                  <form class="daysOfMonth" id="octMonthArtDays">
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="octArtMonthDay" value="1" id="octArtDay1"><label for="octArtDay1">1</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="octArtMonthDay" value="2" id="octArtDay2"><label for="octArtDay2">2</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="octArtMonthDay" value="3" id="octArtDay3"><label for="octArtDay3">3</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="octArtMonthDay" value="4" id="octArtDay4"><label for="octArtDay4">4</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="octArtMonthDay" value="5" id="octArtDay5"><label for="octArtDay5">5</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="octArtMonthDay" value="6" id="octArtDay6"><label for="octArtDay6">6</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="octArtMonthDay" value="7" id="octArtDay7"><label for="octArtDay7">7</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="octArtMonthDay" value="8" id="octArtDay8"><label for="octArtDay8">8</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="octArtMonthDay" value="9" id="octArtDay9"><label for="octArtDay9">9</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="octArtMonthDay" value="10" id="octArtDay10"><label for="octArtDay10">10</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="octArtMonthDay" value="11" id="octArtDay11"><label for="octArtDay11">11</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="octArtMonthDay" value="12" id="octArtDay12"><label for="octArtDay12">12</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="octArtMonthDay" value="13" id="octArtDay13"><label for="octArtDay13">13</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="octArtMonthDay" value="14" id="octArtDay14"><label for="octArtDay14">14</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="octArtMonthDay" value="15" id="octArtDay15"><label for="octArtDay15">15</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="octArtMonthDay" value="16" id="octArtDay16"><label for="octArtDay16">16</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="octArtMonthDay" value="17" id="octArtDay17"><label for="octArtDay17">17</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="octArtMonthDay" value="18" id="octArtDay18"><label for="octArtDay18">18</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="octArtMonthDay" value="19" id="octArtDay19"><label for="octArtDay19">19</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="octArtMonthDay" value="20" id="octArtDay20"><label for="octArtDay20">20</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="octArtMonthDay" value="21" id="octArtDay21"><label for="octArtDay21">21</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="octArtMonthDay" value="22" id="octArtDay22"><label for="octArtDay22">22</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="octArtMonthDay" value="23" id="octArtDay23"><label for="octArtDay23">23</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="octArtMonthDay" value="24" id="octArtDay24"><label for="octArtDay24">24</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="octArtMonthDay" value="25" id="octArtDay25"><label for="octArtDay25">25</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="octArtMonthDay" value="26" id="octArtDay26"><label for="octArtDay26">26</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="octArtMonthDay" value="27" id="octArtDay27"><label for="octArtDay27">27</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="octArtMonthDay" value="28" id="octArtDay28"><label for="octArtDay28">28</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="octArtMonthDay" value="29" id="octArtDay29"><label for="octArtDay29">29</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="octArtMonthDay" value="30" id="octArtDay30"><label for="octArtDay30">30</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="octArtMonthDay" value="31" id="octArtDay31"><label for="octArtDay31">31</label></div>
+
+
+                    <a class="btn" id="octArtCuratorDisplayButton" ng-click="$ctrl.displayArts('october_artsbyuser')">display</a>
+                  </form>
+                </div><br><br><br>
+
+                <main ng-repeat="art in $ctrl.octArts | orderBy : $ctrl.sortBy">
+                  <div class="artOnDisplay">
+                    <br><br><img src="{{art.img_path}}">
+                    <p><em>{{art.title}}</em></p>
+                    <p>{{art.artist}}, {{art.year}}</p>
+                    <br>
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate(art.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate(art.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <div id="novArtCurratorManagement">
+              <br><br><h2>November:</h2><br>
+              <div id="novArtCurratorToggleDiv">
+                <a href="" class="btn" id="novArtCurratorToggleButton" ng-click="$ctrl.toggleArtCurratorMonth('November')">view</a>
+              </div><br><br>
+
+              <br><div id="novArtCurratorDisplay">
+                <h2 id="novemberTheme"></h2><br>
+                <a href="" class="btn" id="novAddArtCurration" ng-click="$ctrl.addNewArt('november_arts')">new</a>
+                <a href="" class="btn" id="novArtCurratorReporter" ng-click="$ctrl.artCurratorReport('november_arts')">report</a><br><br><br><br>
+
+                <br><br><div id="novArtCurratorDaysOfWeekDiv">
+                  <br><form class="daysOfWeek">
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="novArtDay" value="monday" id="novArtMonday"><label for="novArtMonday">Mon</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="novArtDay" value="tuesday" id="novArtTuesday"><label for="novArtTuesday">Tues</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="novArtDay" value="wednesday" id="novArtWednesday"><label for="novArtWednesday">Wed</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="novArtDay" value="thursday" id="novArtThursday"><label for="novArtThursday">Thur</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="novArtDay" value="friday" id="novArtFriday"><label for="novArtFriday">Fri</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="novArtDay" value="saturday" id="novArtSaturday"><label for="novArtSaturday">Sat</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="novArtDay" value="sunday" id="novArtSunday"><label for="novArtSunday">Sun</label></div>
+                  </form><br>
+                </div><br><br><br><br>
+                <br><br><br><br><div id="novArtCurratorDaysOfMonthDiv">
+                  <form class="daysOfMonth" id="novMonthArtDays">
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="novArtMonthDay" value="1" id="novArtDay1"><label for="novArtDay1">1</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="novArtMonthDay" value="2" id="novArtDay2"><label for="novArtDay2">2</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="novArtMonthDay" value="3" id="novArtDay3"><label for="novArtDay3">3</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="novArtMonthDay" value="4" id="novArtDay4"><label for="novArtDay4">4</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="novArtMonthDay" value="5" id="novArtDay5"><label for="novArtDay5">5</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="novArtMonthDay" value="6" id="novArtDay6"><label for="novArtDay6">6</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="novArtMonthDay" value="7" id="novArtDay7"><label for="novArtDay7">7</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="novArtMonthDay" value="8" id="novArtDay8"><label for="novArtDay8">8</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="novArtMonthDay" value="9" id="novArtDay9"><label for="novArtDay9">9</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="novArtMonthDay" value="10" id="novArtDay10"><label for="novArtDay10">10</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="novArtMonthDay" value="11" id="novArtDay11"><label for="novArtDay11">11</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="novArtMonthDay" value="12" id="novArtDay12"><label for="novArtDay12">12</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="novArtMonthDay" value="13" id="novArtDay13"><label for="novArtDay13">13</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="novArtMonthDay" value="14" id="novArtDay14"><label for="novArtDay14">14</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="novArtMonthDay" value="15" id="novArtDay15"><label for="novArtDay15">15</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="novArtMonthDay" value="16" id="novArtDay16"><label for="novArtDay16">16</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="novArtMonthDay" value="17" id="novArtDay17"><label for="novArtDay17">17</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="novArtMonthDay" value="18" id="novArtDay18"><label for="novArtDay18">18</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="novArtMonthDay" value="19" id="novArtDay19"><label for="novArtDay19">19</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="novArtMonthDay" value="20" id="novArtDay20"><label for="novArtDay20">20</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="novArtMonthDay" value="21" id="novArtDay21"><label for="novArtDay21">21</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="novArtMonthDay" value="22" id="novArtDay22"><label for="novArtDay22">22</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="novArtMonthDay" value="23" id="novArtDay23"><label for="novArtDay23">23</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="novArtMonthDay" value="24" id="novArtDay24"><label for="novArtDay24">24</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="novArtMonthDay" value="25" id="novArtDay25"><label for="novArtDay25">25</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="novArtMonthDay" value="26" id="novArtDay26"><label for="novArtDay26">26</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="novArtMonthDay" value="27" id="novArtDay27"><label for="novArtDay27">27</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="novArtMonthDay" value="28" id="novArtDay28"><label for="novArtDay28">28</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="novArtMonthDay" value="29" id="novArtDay29"><label for="novArtDay29">29</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="novArtMonthDay" value="30" id="novArtDay30"><label for="novArtDay30">30</label></div>
+
+
+                    <a class="btn" id="novArtCuratorDisplayButton" ng-click="$ctrl.displayArts('november_artsbyuser')">display</a>
+                  </form>
+                </div><br><br><br>
+
+                <main ng-repeat="art in $ctrl.novArts | orderBy : $ctrl.sortBy">
+                  <div class="artOnDisplay">
+                    <br><br><img src="{{art.img_path}}">
+                    <p><em>{{art.title}}</em></p>
+                    <p>{{art.artist}}, {{art.year}}</p>
+                    <br>
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate(art.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate(art.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <div id="decArtCurratorManagement">
+              <br><br><h2>December:</h2><br>
+              <div id="decArtCurratorToggleDiv">
+                <a href="" class="btn" id="decArtCurratorToggleButton" ng-click="$ctrl.toggleArtCurratorMonth('December')">view</a>
+              </div><br><br>
+
+              <br><div id="decArtCurratorDisplay">
+                <h2 id="decemberTheme"></h2><br>
+                <a href="" class="btn" id="decAddArtCurration" ng-click="$ctrl.addNewArt('december_arts')">new</a>
+                <a href="" class="btn" id="decArtCurratorReporter" ng-click="$ctrl.artCurratorReport('december_arts')">report</a><br><br><br><br>
+
+                <br><br><div id="decArtCurratorDaysOfWeekDiv">
+                  <br><form class="daysOfWeek">
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="decArtDay" value="monday" id="decArtMonday"><label for="decArtMonday">Mon</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="decArtDay" value="tuesday" id="decArtTuesday"><label for="decArtTuesday">Tues</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="decArtDay" value="wednesday" id="decArtWednesday"><label for="decArtWednesday">Wed</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="decArtDay" value="thursday" id="decArtThursday"><label for="decArtThursday">Thur</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="decArtDay" value="friday" id="decArtFriday"><label for="decArtFriday">Fri</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="decArtDay" value="saturday" id="decArtSaturday"><label for="decArtSaturday">Sat</label></div>
+                    <div class="daysOfWeekClass"><input type="radio" class="weekDaySelect" name="decArtDay" value="sunday" id="decArtSunday"><label for="decArtSunday">Sun</label></div>
+                  </form><br>
+                </div><br><br><br><br>
+                <br><br><br><br><div id="decArtCurratorDaysOfMonthDiv">
+                  <form class="daysOfMonth" id="decMonthArtDays">
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="decArtMonthDay" value="1" id="decArtDay1"><label for="decArtDay1">1</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="decArtMonthDay" value="2" id="decArtDay2"><label for="decArtDay2">2</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="decArtMonthDay" value="3" id="decArtDay3"><label for="decArtDay3">3</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="decArtMonthDay" value="4" id="decArtDay4"><label for="decArtDay4">4</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="decArtMonthDay" value="5" id="decArtDay5"><label for="decArtDay5">5</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="decArtMonthDay" value="6" id="decArtDay6"><label for="decArtDay6">6</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="decArtMonthDay" value="7" id="decArtDay7"><label for="decArtDay7">7</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="decArtMonthDay" value="8" id="decArtDay8"><label for="decArtDay8">8</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="decArtMonthDay" value="9" id="decArtDay9"><label for="decArtDay9">9</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="decArtMonthDay" value="10" id="decArtDay10"><label for="decArtDay10">10</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="decArtMonthDay" value="11" id="decArtDay11"><label for="decArtDay11">11</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="decArtMonthDay" value="12" id="decArtDay12"><label for="decArtDay12">12</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="decArtMonthDay" value="13" id="decArtDay13"><label for="decArtDay13">13</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="decArtMonthDay" value="14" id="decArtDay14"><label for="decArtDay14">14</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="decArtMonthDay" value="15" id="decArtDay15"><label for="decArtDay15">15</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="decArtMonthDay" value="16" id="decArtDay16"><label for="decArtDay16">16</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="decArtMonthDay" value="17" id="decArtDay17"><label for="decArtDay17">17</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="decArtMonthDay" value="18" id="decArtDay18"><label for="decArtDay18">18</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="decArtMonthDay" value="19" id="decArtDay19"><label for="decArtDay19">19</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="decArtMonthDay" value="20" id="decArtDay20"><label for="decArtDay20">20</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="decArtMonthDay" value="21" id="decArtDay21"><label for="decArtDay21">21</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="decArtMonthDay" value="22" id="decArtDay22"><label for="decArtDay22">22</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="decArtMonthDay" value="23" id="decArtDay23"><label for="decArtDay23">23</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="decArtMonthDay" value="24" id="decArtDay24"><label for="decArtDay24">24</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="decArtMonthDay" value="25" id="decArtDay25"><label for="decArtDay25">25</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="decArtMonthDay" value="26" id="decArtDay26"><label for="decArtDay26">26</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="decArtMonthDay" value="27" id="decArtDay27"><label for="decArtDay27">27</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="decArtMonthDay" value="28" id="decArtDay28"><label for="decArtDay28">28</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="decArtMonthDay" value="29" id="decArtDay29"><label for="decArtDay29">29</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="decArtMonthDay" value="30" id="decArtDay30"><label for="decArtDay30">30</label></div>
+                    <div class="monthDayClass"><input type="radio" class="monthDaySelect" name="decArtMonthDay" value="31" id="decArtDay31"><label for="decArtDay31">31</label></div>
+
+
+                    <a class="btn" id="decArtCuratorDisplayButton" ng-click="$ctrl.displayArts('december_artsbyuser')">display</a>
+                  </form>
+                </div><br><br><br>
+
+                <main ng-repeat="art in $ctrl.decArts | orderBy : $ctrl.sortBy">
+                  <div class="artOnDisplay">
+                    <br><br><img src="{{art.img_path}}">
+                    <p><em>{{art.title}}</em></p>
+                    <p>{{art.artist}}, {{art.year}}</p>
+                    <br>
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate(art.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate(art.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+              </div>
+            </div>
+          </fieldset>
+
+
+        </div>
+      </div>
 
     </div>
 

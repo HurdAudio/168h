@@ -8,7 +8,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 1,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/the-liberty-leading-the-people-1830.jpg',
           title: 'The Liberty Leading the People',
           artist: 'Eugene Delacroix',
@@ -28,7 +28,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 2,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/marie-antoinette-on-a-visit-to-medellin.jpg',
           title: 'Marie Antoinette on a Visit to Medellin',
           artist: 'Fernando Botero',
@@ -48,7 +48,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 3,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/louis-xvi-on-a-visit-to-medellin.jpg',
           title: 'Louis XVI on a Visit to Medellin',
           artist: 'Fernando Botero',
@@ -68,7 +68,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 4,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/bastille-1928.jpg',
           title: 'Bastille',
           artist: 'Konstantin Korovin',
@@ -88,7 +88,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 5,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/place-de-la-bastille-1.jpg',
           title: 'Place de la Bastille',
           artist: 'Edouard Cortes',
@@ -108,7 +108,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 6,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/place-de-la-bastille.jpg',
           title: 'Place de la Bastille',
           artist: 'Gustave Loiseau',
@@ -128,7 +128,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 7,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/at-la-bastille-portrait-of-jeanne-wenz-1889.jpg',
           title: 'At La Bastille (Portrait of Jeanne Wenz)',
           artist: 'Henri de Toulouse-Lautrec',
@@ -148,7 +148,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 8,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/place-de-la-bastille-3.jpg',
           title: 'Place de la Bastille',
           artist: 'Edouard Cortes',
@@ -168,7 +168,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 9,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/bastille-flux-2007.jpg',
           title: 'Bastille Flux',
           artist: 'Gerard Fromanger',
@@ -188,7 +188,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 10,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/bastille-day-boulevard-rochechouart-paris.jpg',
           title: 'Bastille Day, Boulevard Rochechouart, Paris',
           artist: 'Childe Hassam',
@@ -208,7 +208,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 11,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/place-de-la-bastille-2.jpg',
           title: 'Place de la Bastille',
           artist: 'Edouard Cortes',
@@ -228,7 +228,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 12,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/place-de-la-bastille-6.jpg',
           title: 'Place de la Bastille',
           artist: 'Edouard Cortes',
@@ -248,7 +248,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 13,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/la-place-de-la-bastille-paris.jpg',
           title: 'La Place de la Bastille, Paris',
           artist: 'Edouard Cortes',
@@ -268,7 +268,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 14,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/place-de-la-bastille-33.jpg',
           title: 'Place de la Bastille',
           artist: 'Edouard Cortes',
@@ -288,7 +288,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 15,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/place-de-la-bastille-4.jpg',
           title: 'Place de la Bastille',
           artist: 'Edouard Cortes',
@@ -308,7 +308,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 16,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/la-derniere-bastille.jpg',
           title: 'La Derniere Bastille',
           artist: 'Theophile Steinlen',
@@ -328,7 +328,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 17,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/the-dreams-in-the-witch-house-h-p-lovecraft-2016-1.jpg',
           title: 'the Dreams in the Witch House (H P Lovecraft )',
           artist: 'Kim Prisu',
@@ -348,7 +348,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 18,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/luthier-1997.jpg',
           title: 'Luthier',
           artist: 'Jerome Mesnager',
@@ -368,7 +368,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 19,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/untitled-2002-1.jpg',
           title: 'Untitled',
           artist: 'Moon Pil Shim',
@@ -388,7 +388,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 20,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/les-baronnes-130-x-162-2007.jpg',
           title: 'Les Baronnes',
           artist: 'Pietropoli Patrick',
@@ -408,7 +408,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 21,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/eurydice-n-19-1996.jpg',
           title: 'Eurydice n. 19',
           artist: 'Bracha L. Ettinger',
@@ -428,7 +428,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 22,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/the-oval-room-1967.jpg',
           title: 'The Oval Room',
           artist: 'Christian Boltanski',
@@ -448,7 +448,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 23,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/le-cri-1974.jpg',
           title: 'Le cri',
           artist: 'Ivan Tovar',
@@ -468,7 +468,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 24,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/ficelage-2.jpg',
           title: 'Ficelage',
           artist: 'Andre-Pierre Arnal',
@@ -488,7 +488,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 25,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/peinture-acrylique-blanche-sur-tissu-ray-blanc-et-rouge-1970.jpg',
           title: 'Peinture acrylique blanche sur tissu rayé blanc et rouge',
           artist: 'Daniel Buren',
@@ -508,7 +508,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 26,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/imprints-of-a-no-50-paintbrush-repeated-at-regular-intervals-of-30-cm-1995.jpg',
           title: 'Imprints of a No. 50 Paintbrush Repeated at Regular Intervals of 30 cm.',
           artist: 'Niele Toroni',
@@ -528,7 +528,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 27,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/last-year-in-capri-exotic-title-1962.jpg',
           title: 'Last Year in Capri (exotic title)',
           artist: 'Martial Raysse',
@@ -548,7 +548,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 28,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/histoires-natturelles-1973.jpg',
           title: 'Histoires Natturelles',
           artist: 'Jorge Camacho',
@@ -568,7 +568,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 29,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/six-round-wooden-bars-1975.jpg',
           title: 'Six Round Wooden Bars',
           artist: 'Andre Cadere',
@@ -588,7 +588,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 30,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/1965-1-unknown-detail-of-detail-1.jpg',
           title: '1965 / 1 - ∞ / unknown detail of detail',
           artist: 'Roman Opalka',
@@ -608,7 +608,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 31,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/paris-review-1967.jpg',
           title: 'Paris Review',
           artist: 'Marisol Escobar',
@@ -628,7 +628,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 32,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/progression-1959.jpg',
           title: 'Progression',
           artist: 'Horacio Garcia-Rossi',
@@ -648,7 +648,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 33,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/don-quichotte-les-duegnes-1988.jpg',
           title: 'Don Quichotte: Les duegnes',
           artist: 'Bernard Buffet',
@@ -668,7 +668,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 34,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/unknown-title-1.jpg',
           title: 'unknown title',
           artist: 'Jacques Le Marechal',
@@ -688,7 +688,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 35,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/dock-1991.jpg',
           title: 'Dock',
           artist: 'Louis Pons',
@@ -708,7 +708,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 36,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/cosmique-1972.jpg',
           title: 'Cosmique',
           artist: 'Jean Miotte',
@@ -728,7 +728,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 37,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/signals-series-2-1968.jpg',
           title: 'Signals (Series 2)',
           artist: 'Takis',
@@ -748,7 +748,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 38,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/deux-noirs-sur-raies-vertes-1981.jpg',
           title: 'Deux noirs sur Raies Vertes',
           artist: 'Francois Arnal',
@@ -768,7 +768,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 39,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/notes-par-deux-2003.jpg',
           title: 'Notes par Deux',
           artist: 'Genevieve Asse',
@@ -788,7 +788,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 40,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/etude-pour-hommage-a-claude-nicolas-ledoux-1959.jpg',
           title: 'Etude pour Hommage a Claude Nicolas Ledoux',
           artist: 'Jacques Busse',
@@ -808,7 +808,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 41,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/palais-royal-fountain-paris-1996.jpg',
           title: 'Palais Royal Fountain, Paris',
           artist: 'Pol Bury',
@@ -828,7 +828,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 42,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/the-necrophile-dedicated-to-sergeant-bertrand-1965.jpg',
           title: 'The Necrophile (dedicated to Sergeant Bertrand)',
           artist: 'Jean Benoit',
@@ -848,7 +848,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 43,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/apocalypse-du-printemps.jpg',
           title: 'Apocalypse du printemps',
           artist: 'Jean Messagier',
@@ -868,7 +868,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 44,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/04-08-1993-1993.jpg',
           title: '04-08-1993',
           artist: 'Zao Wou-Ki',
@@ -888,7 +888,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 45,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/la-tour-eiffel-et-la-rue-de-la-manutention.jpg',
           title: 'La Tour Eiffel et la rue de la manutention',
           artist: 'Maurice Boitel',
@@ -908,7 +908,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 46,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/les-voiles-1984.jpg',
           title: 'Les Voiles',
           artist: 'Carlos Nadal',
@@ -928,7 +928,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 47,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/defil-des-soldats-de-plomb-1970.jpg',
           title: 'Defilé des Soldats de Plomb',
           artist: 'Natalia Dumitresco',
@@ -948,7 +948,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 48,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/personnages-1964.jpg',
           title: 'Personnages',
           artist: 'Aurel Cojan',
@@ -968,7 +968,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 49,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/untitled-3.jpg',
           title: 'Untitled',
           artist: 'Wols',
@@ -988,7 +988,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 50,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/fen-tre-toil-e-1962.jpg',
           title: 'Fenêtre étoilée',
           artist: 'Adrien Dax',
@@ -1008,7 +1008,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 51,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/echiquier-1971.jpg',
           title: 'Echiquier',
           artist: 'Aurelie Nemours',
@@ -1028,7 +1028,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 52,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/personnage-sur-fond-nocturne-toil.jpg',
           title: 'Personnage sur fond nocturne étoilé',
           artist: 'Gaston Chaissac',
@@ -1048,7 +1048,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 53,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/terrasse-la-nuit-1986.jpg',
           title: 'Terrasse la nuit',
           artist: 'Jean Bertholle',
@@ -1068,7 +1068,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 54,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/rue-mouffetard-paris-1954.jpg',
           title: 'Rue Mouffetard, Paris',
           artist: 'Henri Cartier-Bresson',
@@ -1088,7 +1088,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 55,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/eau.jpg',
           title: 'Eau',
           artist: 'Dora Maar',
@@ -1108,7 +1108,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 56,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/along-the-way-1969.jpg',
           title: 'Along the Way..',
           artist: 'Georges Hugnet',
@@ -1128,7 +1128,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 57,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/untitled(1).jpg',
           title: 'Untitled',
           artist: 'Pierre Tal-Coat',
@@ -1148,7 +1148,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 58,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/lutte-as-ciel-1937.jpg',
           title: 'Lutte as Ciel',
           artist: 'John Ferren',
@@ -1168,7 +1168,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 59,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/loxos.jpg',
           title: 'Loxos',
           artist: 'Maurice Esteve',
@@ -1188,7 +1188,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 60,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/beetles-1951.jpg',
           title: 'Beetles',
           artist: 'Germaine Richier',
@@ -1208,7 +1208,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 61,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/five-nudes-1950.jpg',
           title: 'Five Nudes',
           artist: 'Sanyu',
@@ -1228,7 +1228,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 62,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/hymne-1961.jpg',
           title: 'Hymne',
           artist: 'Michel Seuphor',
@@ -1248,7 +1248,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 63,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/the-kiss-1935.jpg',
           title: 'The Kiss',
           artist: 'Brassai',
@@ -1268,7 +1268,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 64,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/t-te-de-profil.jpg',
           title: 'Tête de profil',
           artist: 'Jean Fautrier',
@@ -1288,7 +1288,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 65,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/couple-in-the-night.jpg',
           title: 'Couple in the night',
           artist: 'Andre Masson',
@@ -1308,7 +1308,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 66,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/panneaux-de-signalisation-de-chemin-de-fer-1918.jpg',
           title: 'Panneaux de signalisation de chemin de fer',
           artist: 'Jean Hugo',
@@ -1328,7 +1328,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 67,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/adoration.jpg',
           title: 'Adoration',
           artist: 'Erte',
@@ -1348,7 +1348,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 68,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/the-guitar-player.jpg',
           title: 'The Guitar Player',
           artist: 'Ossip Zadkine',
@@ -1368,7 +1368,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 69,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/silence-ici-j-ordonne-nathalie-paley-en-sphinx-1932.jpg',
           title: 'Silence! Ici j’ordonne… (Nathalie Paley en sphinx)',
           artist: 'Jean Cocteau',
@@ -1388,7 +1388,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 70,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/still-life-1920.jpg',
           title: 'Still Life',
           artist: 'Le Corbusier',
@@ -1408,7 +1408,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 71,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/liberation-1944.jpg',
           title: 'Liberation',
           artist: 'Jules Lefranc',
@@ -1428,7 +1428,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 72,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/abstract-composition.jpg',
           title: 'Abstract Composition',
           artist: 'Jean Arp',
@@ -1448,7 +1448,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 73,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/chatting-1928.jpg',
           title: 'Chatting',
           artist: 'Lajos Tihanyi',
@@ -1468,7 +1468,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 74,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/eiffel-tower-1.jpg',
           title: 'Eiffel Tower',
           artist: 'Robert Delaunay',
@@ -1488,7 +1488,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 75,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/man-with-pipe-1919.jpg',
           title: 'Man with Pipe',
           artist: 'Henri Laurens',
@@ -1508,7 +1508,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 76,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/nude-with-a-newspaper-1921.jpg',
           title: 'Nude with a Newspaper',
           artist: 'Andre Dunoyer de Segonzac',
@@ -1528,7 +1528,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 77,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/nu-nude-1906.jpg',
           title: 'Nu (Nude)',
           artist: 'Jean Metzinger',
@@ -1548,7 +1548,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 78,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/figure-double-with-marine-background-1942.jpg',
           title: 'Figure double with marine background',
           artist: 'Georges Braque',
@@ -1568,7 +1568,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 79,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/la-danse-study-1920.jpg',
           title: 'La Danse (Study)',
           artist: 'Jean Dupas',
@@ -1588,7 +1588,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 80,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/woman-with-a-cat-1921.jpg',
           title: 'Woman with a Cat',
           artist: 'Fernand Leger',
@@ -1608,7 +1608,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 81,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/untitled.jpg',
           title: 'Untitled',
           artist: 'Leopold Survage',
@@ -1628,7 +1628,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 82,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/the-window-overlooking-the-eiffel-tower-1920.jpg',
           title: 'The Window overlooking the Eiffel Tower',
           artist: 'Louis Marcoussis',
@@ -1648,7 +1648,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 83,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/visage-criant-a-la-grande-main-1941.jpg',
           title: 'Visage criant a la grande main',
           artist: 'Julio Gonzalez',
@@ -1668,7 +1668,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 84,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/the-kiss-1912.jpg',
           title: 'The Kiss',
           artist: 'Constantin Brancusi',
@@ -1688,7 +1688,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 85,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/41inbvimavl-sy450.jpg',
           title: 'Bitter Campari',
           artist: 'Leonetto Cappiello',
@@ -1708,7 +1708,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 86,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/dada-portrait-of-berenice-abbott-1926.jpg',
           title: 'Dada Portrait of Berenice Abbott',
           artist: 'Elsa von Freytag-Loringhoven',
@@ -1728,7 +1728,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 87,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/triste-os-from-cirque-de-l-etoile-filante-1934.jpg',
           title: 'Triste Os from Cirque de l\'Etoile Filante',
           artist: 'Georges Rouault',
@@ -1748,7 +1748,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 88,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/nude-study-1908.jpg',
           title: 'Nude, Study',
           artist: 'Henri Matisse',
@@ -1768,7 +1768,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 89,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/the-reader.jpg',
           title: 'The Reader',
           artist: 'Edouard Vuillard',
@@ -1788,7 +1788,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 90,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/bathers-with-red-cow-1887.jpg',
           title: 'Bathers with Red Cow',
           artist: 'Emile Bernard',
@@ -1808,7 +1808,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 91,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/nude-woman-with-drapery-1919.jpg',
           title: 'Nude Woman with Drapery',
           artist: 'Suzanne Valadon',
@@ -1828,7 +1828,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 92,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/le-bouquet-de-feuilles.jpg',
           title: 'Le Bouquet de Feuilles',
           artist: 'Seraphine Louis',
@@ -1848,7 +1848,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 93,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/femmes-de-plougastel-au-pardon-de-sainte-anne-la-palud-1903.jpg',
           title: 'Femmes de Plougastel au Pardon de Sainte-Anne-La-Palud',
           artist: 'Charles Cottet',
@@ -1868,7 +1868,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 94,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/the-transatlantic-leaving-port-1905.jpg',
           title: 'The Transatlantic leaving Port',
           artist: 'Maxime Maufra',
@@ -1888,7 +1888,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 95,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/gaudeamus-1890.jpg',
           title: 'Gaudeamus',
           artist: 'Theophile Steinlen',
@@ -1908,7 +1908,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 96,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/female-nude-1893.jpg',
           title: 'Female Nude',
           artist: 'Charles Maurin',
@@ -1928,7 +1928,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 97,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/the-guardian-of-turkeys-1881.jpg',
           title: 'The Guardian of Turkeys',
           artist: 'Charles Angrand',
@@ -1948,7 +1948,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 98,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/the-front-port.jpg',
           title: 'The Front Port',
           artist: 'Eva Gonzales',
@@ -1968,7 +1968,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 99,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/regatta-at-argenteuil-1893.jpg',
           title: 'Regatta at Argenteuil',
           artist: 'Gustave Caillebotte',
@@ -1988,7 +1988,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 100,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/study-for-the-figure-of-the-source-at-the-paris-comic-opera-tude-pour-la-figure-de-la-source-l(1).jpg',
           title: 'Study for the figure of "Spring" at l\'Opéra-Comique, Paris',
           artist: 'Luc-Olivier Merson',
@@ -2008,7 +2008,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 101,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/vue-de-paris-1885.jpg',
           title: 'Vue de Paris',
           artist: 'Albert Dubois-Pillet',
@@ -2028,7 +2028,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 102,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/centennial-of-independence-1892.jpg',
           title: 'Centennial of Independence',
           artist: 'Henri Rousseau',
@@ -2048,7 +2048,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 103,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/flag-decorated-street-1906.jpg',
           title: 'Flag Decorated Street',
           artist: 'Pierre-Auguste Renoir',
@@ -2068,7 +2068,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 104,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/woman-with-an-umbrella-1880.jpg',
           title: 'Woman with an Umbrella',
           artist: 'Marie Bracquemond',
@@ -2088,7 +2088,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 105,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/the-duet-1897.jpg',
           title: 'The Duet',
           artist: 'Jehan Georges Vibert',
@@ -2108,7 +2108,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 106,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/the-feast-the-banquet-of-nebuchadnezzar.jpg',
           title: 'The Feast. The Banquet of Nebuchadnezzar',
           artist: 'Paul Cezanne',
@@ -2128,7 +2128,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 107,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/the-ball.jpg',
           title: 'The Ball',
           artist: 'James Tissot',
@@ -2148,7 +2148,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 108,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/undine.jpg',
           title: 'Undine',
           artist: 'Henri Fantin-Latour',
@@ -2168,7 +2168,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 109,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/paolo-and-francesca-da-rimini.jpg',
           title: 'Paolo and Francesca da Rimini',
           artist: 'Gustave Dore',
@@ -2188,7 +2188,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 110,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/innenansicht-der-b-rse-handelsbeurs-von-antwerpen.jpg',
           title: 'Innenansicht der Börse (Handelsbeurs) von Antwerpen',
           artist: 'Maxime Lalanne',
@@ -2208,7 +2208,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 111,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/the-heart-s-awakening-1892.jpg',
           title: 'he Heart\'s Awakening',
           artist: 'William-Adolphe Bouguereau',
@@ -2228,7 +2228,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 112,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/princess-pauline-metternich-on-the-beach.jpg',
           title: 'Princess Pauline Metternich on the Beach',
           artist: 'Eugene Boudin',
@@ -2248,7 +2248,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 113,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/samson-and-delilah.jpg',
           title: 'Samson and Delilah',
           artist: 'Alexandre Cabanel',
@@ -2268,7 +2268,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 114,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/charles-meryon-archway-pont-n-tre-dame-1853.jpg',
           title: 'Archway, Pont Nôtre-dame, Paris',
           artist: 'Charles Meryon',
@@ -2288,7 +2288,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 115,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/apple-trees-in-blossom-1862.jpg',
           title: 'Apple Trees in Blossom',
           artist: 'Charles-Francois Daubigny',
@@ -2308,7 +2308,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 116,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/the-knitting-shepherdess-1857.jpg',
           title: 'The Knitting Shepherdess',
           artist: 'Jean-Francois Millet',
@@ -2328,7 +2328,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 117,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/market-in-the-normandy.jpg',
           title: 'Market in the Normandy',
           artist: 'Theodore Rousseau',
@@ -2348,7 +2348,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 118,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/two-nymphs-pursued-by-satyrs.jpg',
           title: 'Two Nymphs Pursued by Satyrs',
           artist: 'Honore Daumier',
@@ -2368,7 +2368,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 119,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/dandy-in-paris.jpg',
           title: 'Dandy in Paris',
           artist: 'Paul Gavarni',
@@ -2388,7 +2388,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 120,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/attila-the-hun(1).jpg',
           title: 'Attila the Hun',
           artist: 'Eugene Delacroix',
@@ -2408,7 +2408,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 121,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/the-vision-dante-and-beatrice-1846.jpg',
           title: 'The Vision, Dante and Beatrice',
           artist: 'Ary Scheffer',
@@ -2428,7 +2428,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 122,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/lucinda-carpenter-tweeter-and-abigail-forrester-1841.jpg',
           title: 'Lucinda Carpenter, Tweeter and Abigail Forrester',
           artist: 'Auguste Edouart',
@@ -2448,7 +2448,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 123,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/diana-and-endymion-1822.jpg',
           title: 'Diana and Endymion',
           artist: 'Jérôme-Martin Langlois',
@@ -2468,7 +2468,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 124,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/sappho-at-leucate-1801.jpg',
           title: 'Sappho at Leucate',
           artist: 'Antoine-Jean Gros',
@@ -2488,7 +2488,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 125,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/bathing-venus.jpg',
           title: 'Bathing Venus',
           artist: 'Pierre-Paul Prud\'hon',
@@ -2508,7 +2508,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 126,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/the-attributes-of-music-1770.jpg',
           title: 'The Attributes of Music',
           artist: 'Anne Vallayer-Coster',
@@ -2528,7 +2528,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 127,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/young-woman-playing-with-a-dog-1772.jpg',
           title: 'Young Woman Playing with a Dog',
           artist: 'Jean-Honore Fragonard',
@@ -2548,7 +2548,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 128,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/self-portrait-with-the-bull-s-eye-1737.jpg',
           title: 'Self-Portrait with the bull\'s-eye',
           artist: 'Maurice Quentin de La Tour',
@@ -2568,7 +2568,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 129,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/girl-with-racket-and-shuttlecock.jpg',
           title: 'Girl with Racket and Shuttlecock',
           artist: 'Jean-Baptiste-Simeon Chardin',
@@ -2588,7 +2588,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 130,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/cupid-disarmed.jpg',
           title: 'Cupid Disarmed',
           artist: 'Antoine Watteau',
@@ -2608,7 +2608,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 131,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/caligula-depositing-the-ashes-of-his-mother-and-brother-in-the-tomb-of-his-ancestors.jpg',
           title: 'Caligula Depositing the Ashes of his Mother and Brother in the Tomb of his Ancestors',
           artist: 'Eustache Le Sueur',
@@ -2628,7 +2628,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 132,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/marine-with-the-trojans-burning-their-boats-1642.jpg',
           title: 'Marine with the Trojans Burning their Boats',
           artist: 'Claude Lorrain',
@@ -2648,7 +2648,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 133,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/bacchanal-before-a-statue-of-pan-1633.jpg',
           title: 'Bacchanal before a Statue of Pan',
           artist: 'Nicolas Poussin',
@@ -2668,7 +2668,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 134,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/portrait-of-a-lady-in-a-hat-1630.jpg',
           title: 'Portrait of a Lady in a Hat',
           artist: 'Claude Deruet',
@@ -2688,7 +2688,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 135,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/the-emperor-charles-iv-and-the-dignitaries-of-paris-1460.jpg',
           title: 'The Emperor Charles IV and the dignitaries of Paris',
           artist: 'Jean Fouquet',
@@ -2708,7 +2708,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 136,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/sculptcure-par-jean-luc-blanc-2007.jpg',
           title: 'Sculptcure (par Jean-Luc Blanc)',
           artist: 'Michel Blazy',
@@ -2728,7 +2728,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 137,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/cantona-s-rolls-royce.jpg',
           title: 'Cantona\'s Rolls Royce',
           artist: 'JonOne',
@@ -2748,7 +2748,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 138,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/pont-du-ciel-100by100cm-2016.jpg',
           title: 'Pont Du Ciel',
           artist: 'Li CHEVALIER',
@@ -2768,7 +2768,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 139,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/le-cirque-1984-175x140.jpg',
           title: 'Circuse',
           artist: 'Eric Massholder',
@@ -2788,7 +2788,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 140,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/l-abus-de-plaisir-2013.jpg',
           title: 'L’abus de plaisir',
           artist: 'Miss.Tic',
@@ -2808,7 +2808,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 141,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/ecoute-la-rue-detail.jpg',
           title: 'Ecoute la Rue (detail)',
           artist: 'Epsylon Point',
@@ -2828,7 +2828,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 142,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/papier-d-coup-1967-3.jpg',
           title: 'Papier découpé',
           artist: 'Louis Cane',
@@ -2848,7 +2848,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 143,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/tiru-fragments-1984.jpg',
           title: 'Tiru-Fragments',
           artist: 'Francois Rouan',
@@ -2868,7 +2868,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 144,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/d-finition-m-thode-506-la-photographie-n-est-que-l-ombre-de-la-peinture-2010.jpg',
           title: 'dé-finition/méthode #506: la photographie n’est que l’ombre de la peinture',
           artist: 'Claude Rutault',
@@ -2888,7 +2888,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 145,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/container-z-ro-1988-1.jpg',
           title: 'Container Zéro',
           artist: 'Jean-Pierre Raynaud',
@@ -2908,7 +2908,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 146,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/escale-1964.jpg',
           title: 'Escale',
           artist: 'Herve Telemaque',
@@ -2928,7 +2928,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 147,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/untitled-no-56-1996.jpg',
           title: 'Untitled No. 56',
           artist: 'Claude Viallat',
@@ -2948,7 +2948,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 148,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/n-6608-enseigne-peinte-les-sciences-exactes-1977.jpg',
           title: 'N° 6608: Enseigne peinte - Les sciences exactes',
           artist: 'Jean-Claude Silbermann',
@@ -2968,7 +2968,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 149,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/fiborythm-2009.jpg',
           title: 'Fiborythm',
           artist: 'Charles Bezie',
@@ -2988,7 +2988,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 150,
           user_id: 1,
-          theme: 'french revolution',
+          theme: 'French',
           img_path: './img/july/18th-montreux-jazz-festival-poster-1984.jpg',
           title: '18th Montreux jazz festival (Poster)',
           artist: 'Niki de Sainte Phalle',

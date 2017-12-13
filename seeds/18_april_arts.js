@@ -8,7 +8,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 1,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/america-baseball.jpg',
           title: 'America (Baseball)',
           artist: 'R. B. Kitaj',
@@ -28,7 +28,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 2,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/raggedy-ann-with-baseball-1971.jpg',
           title: 'Raggedy Ann with Baseball',
           artist: 'Charles Bell',
@@ -48,7 +48,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 3,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/baseball-vs-progress.jpg',
           title: 'Baseball vs Progress',
           artist: 'Norman Rockwell',
@@ -68,7 +68,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 4,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/manzanar-baseball-1943.jpg',
           title: 'Manzanar Baseball',
           artist: 'Ansel Adams',
@@ -88,7 +88,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 5,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/baseball.jpg',
           title: 'Baseball',
           artist: 'Hiro Yamagata',
@@ -108,7 +108,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 6,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/baseball-players-practicing-1875.jpg',
           title: 'Baseball Players Practicing',
           artist: 'Thomas Eakins',
@@ -128,7 +128,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 7,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/folk-art-american-flag-and-baseball-mitt-garry-gay.jpg',
           title: 'Folk Art American Flag And Baseball Mitt',
           artist: 'Garry Gay',
@@ -148,7 +148,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 8,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/holland-gallery-alex-rodriguez-steven-baseball-art.jpeg',
           title: 'Alex Rodriguez Baseball',
           artist: 'Stephen Holland',
@@ -168,7 +168,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 9,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/american-baseball-garry-gay.jpg',
           title: 'American Baseball',
           artist: 'Garry Gay',
@@ -188,7 +188,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 10,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/28f0098012fff59d1d91df64b6713aa1--dodgers-baseball-baseball-players.jpg',
           title: 'Jackie Robinson',
           artist: 'Graig Kreindler',
@@ -208,7 +208,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 11,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/sketch-CWS_9bfddcca-8e4d-4430-84d8-d93cfb43f4ec_grande.jpg',
           title: 'Guaranteed Rate Field',
           artist: 'S. Preston',
@@ -228,7 +228,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 12,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/crosley10951.jpg',
           title: 'Crosley Field, Cincinnati',
           artist: 'Historical Photograph',
@@ -248,7 +248,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 13,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/il_fullxfull.386018171_nznr_05d79c35-9ac2-4cb9-b5fe-4f346c852fec_grande.jpeg',
           title: 'Chicago White Sox Canvas',
           artist: 'Holy Cow Canvas Studios',
@@ -268,7 +268,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 14,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/pointillism_2005_chicago_white_sox_world_series_by_negativesanction-d4nthm5.png',
           title: 'Pointillism 2005 Chicago White Sox World Series',
           artist: 'NegativeSanction',
@@ -288,7 +288,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 15,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/chicago-white-sox-us-cellular-field-flag-digitally-painted-david-haskett.jpg',
           title: 'Chicago White Sox Us Cellular Field Flag',
           artist: 'David Haskett',
@@ -308,7 +308,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 16,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/pic_mia_marlins_park.jpg',
           title: 'Minimalist Marlins Park Poster Variant 1',
           artist: 'S. Preston',
@@ -328,7 +328,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 17,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/giancarlo-stanton-miami-marlins-pixel-art-3-joe-hamilton.jpg',
           title: 'Giancarlo Stanton Miami Marlins Pixel Art',
           artist: 'Joe Hamilton',
@@ -348,7 +348,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 18,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/7a119829143321.55e622eeb2d7f.png',
           title: 'Dee Gordon / Miami Marlins',
           artist: 'Jose Maria Ruiz',
@@ -368,7 +368,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 19,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/il_570xN.638270473_fxy9.jpg',
           title: 'Miami Marlins Sugar Skull',
           artist: 'MYantz',
@@ -388,7 +388,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 20,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/marlinshomerun.jpg',
           title: 'Marlins Home Run Sculpture',
           artist: 'Red Grooms',
@@ -408,7 +408,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 21,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/il_340x270.973649198_2b43.jpg',
           title: 'Oakland Colliseum',
           artist: 'ArchiGRAPH',
@@ -428,7 +428,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 22,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/Elephant Man-east oakland.jpg',
           title: 'A\'s Artist',
           artist: 'RMA',
@@ -448,7 +448,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 23,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/il_570xN.389675523_rdae.jpg',
           title: 'Oakland A\'s Painting',
           artist: 'Justin Patten',
@@ -468,7 +468,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 24,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/As+on+deck+circle.jpeg',
           title: 'A\'s On Deck Circle',
           artist: 'Muneesh Jain',
@@ -488,7 +488,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 25,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/Oakland-Athletics_01.jpg',
           title: 'Oakland Athletics Baseball',
           artist: 'Dowdle Folk Art',
@@ -508,7 +508,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 26,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/Truisilo_PNC_Park_p32_large.jpg',
           title: 'PNC Park',
           artist: 'Trusilo',
@@ -528,7 +528,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 27,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/spring-sunset-from-the-roberto-clemente-bridge-joseph-heh.jpg',
           title: 'PNC Park Sunset From The Roberto Clemente Bridge, Pittsburgh, Pennsylvania, USA',
           artist: 'Joseph Heh',
@@ -548,7 +548,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 28,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/Clemente.jpg',
           title: 'excerpted from: Clemente - Graphic Novel',
           artist: 'Wilfred Santiago',
@@ -568,7 +568,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 29,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/lsp-ppbm60dd.jpg',
           title: 'The Road to the 1960 World Series',
           artist: 'Daniel Duffy',
@@ -588,7 +588,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 30,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/Baseball painting Honus Wagner Pittsburgh Pirates.jpg',
           title: 'THE FLYING DUTCHMAN',
           artist: 'John Robertson',
@@ -608,7 +608,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 31,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/6732492143_b84b2b6617.jpg',
           title: 'The Audience',
           artist: 'Michael Snow',
@@ -628,7 +628,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 32,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/jays.jpg',
           title: 'My Love/Hate Relationship with the Blue Jays\' Success',
           artist: 'unknown',
@@ -648,7 +648,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 33,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/Kennth-Lochhead-Top-o-the-9th-e1444413105840-803x603.jpg',
           title: 'Top of the 9th',
           artist: 'Kenneth Lochhead',
@@ -668,7 +668,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 34,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/DavidPdone4.gif',
           title: 'David Price',
           artist: 'Chris Ripley',
@@ -688,7 +688,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 35,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/pillaraldsg5-300x236.gif',
           title: 'Jason Pillard',
           artist: 'Chris Ripley',
@@ -708,7 +708,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 36,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/chase-field-2015-line-drawing-c-h-apperson.jpg',
           title: 'Chase Field 2015 Line Drawing',
           artist: 'C H Apperson',
@@ -728,7 +728,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 37,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/13690449_G.jpg',
           title: 'Chase Field',
           artist: 'unknown',
@@ -748,7 +748,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 38,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/310e39a77c37e89a4adffec980080079--baseball-art-arizona-diamondbacks.jpg',
           title: 'Paul Goldschmidt',
           artist: 'Behance',
@@ -768,7 +768,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 39,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/671681606.jpg',
           title: 'Paul Goldschmidt #44 of the Arizona Diamondbacks bats against the Cleveland Indians',
           artist: 'Getty Images',
@@ -788,7 +788,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 40,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/Arizona-Diamondbacks_01.jpg',
           title: 'Arizona Diamondbacks',
           artist: 'Dowdle',
@@ -808,7 +808,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 41,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/hit-and-run-frozen-in-time-fine-art-photography.jpg',
           title: 'Hit And Run',
           artist: 'Frozen in Time Fine Art Photography',
@@ -828,7 +828,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 42,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/pic_cle_progressive_field.jpg',
           title: 'VARIANT 1: TOOTHBRUSH LIGHTS',
           artist: 'S. Preston',
@@ -848,7 +848,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 43,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/Cleveland_Indians_Grady_Sizemore_c409_large.jpg',
           title: 'Cleveland Indians Grady Sizemore',
           artist: 'Skyline Pictures',
@@ -868,7 +868,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 44,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/kluber-1-hitter-1-710x434.png',
           title: 'Corey Kluber 1-hitter Cleveland Indians',
           artist: 'unknown',
@@ -888,7 +888,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 45,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/2a205ca2-3b66-46de-90a3-b493f2b9bafc_lg.jpeg',
           title: '1937 Bob Feller Cleveland Indians',
           artist: 'Acme Newspictures',
@@ -908,7 +908,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 46,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/Citi Field Never Looked So Good  Mets Merized Online.jpg',
           title: 'Citi Field Never Looked So Good',
           artist: 'Mets Merized Online',
@@ -928,7 +928,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 47,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/CitiField-Panorama-from-the-Back-Row-in-Centerfiel_art.jpg',
           title: 'Citi Field Panorama from the Back Row in Centerfield',
           artist: 'Augies Panoramas Online',
@@ -948,7 +948,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 48,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/new-yorker-june-3rd-1991-jb-handelsma.jpg',
           title: 'New Yorker, June 3rd, 1991',
           artist: 'J.B. Handelsman',
@@ -968,7 +968,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 49,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/tumblr_ml0o1xXkix1rjm1abo1_1280.jpg',
           title: 'Tom Seaver New York Mets Watercolor',
           artist: 'Michael Pattison',
@@ -988,7 +988,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 50,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/366_allen18art3.jpg',
           title: 'Home of the first Mets game - the Polo Grounds',
           artist: '?',
@@ -1008,7 +1008,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 51,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/seattle-mariners.jpg',
           title: 'Safeco Field',
           artist: 'Kelly Walker',
@@ -1028,7 +1028,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 52,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/ph_niehaus_500x291.jpg',
           title: 'Dave Niehaus Statue',
           artist: 'Lou Cella',
@@ -1048,7 +1048,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 53,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/robinson-cano-seattle-mariners-art-joe-hamilton.jpg',
           title: 'Robinson Cano Seattle Mariners',
           artist: 'Joe Hamilton',
@@ -1068,7 +1068,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 54,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/ken-griffey-jr-michael-pattison.jpg',
           title: 'Ken Griffey Jr.',
           artist: 'Michael Pattison',
@@ -1088,7 +1088,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 55,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/f8350c241a16ef5ceb2744cea2d5d702--baseball-art-caricature.jpg',
           title: 'Randy Johnson',
           artist: 'S. Preston',
@@ -1108,7 +1108,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 56,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/busch-stadium-st-louis-cardinals-black-white-ballpark-village-david-haskett.jpg',
           title: 'Busch Stadium St. Louis Cardinals',
           artist: 'David Haskett',
@@ -1128,7 +1128,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 57,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/il_340x270.1007953515_nd6d.jpg',
           title: 'Busch Stadium',
           artist: '?',
@@ -1148,7 +1148,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 58,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/St-Louis-Cardinals_01.jpg',
           title: 'St. Louis Cardinals',
           artist: 'Dowdle',
@@ -1168,7 +1168,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 59,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/BASEBALL-molina-Steven-Walden--3.jpg',
           title: 'St Louis Cardinals Yadier Molina',
           artist: 'Steven Walden',
@@ -1188,7 +1188,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 60,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/go-cards-st-louis-cardinals-2011-world-series-champions-dan-haraga.jpg',
           title: 'Go Cards!',
           artist: 'Dan Haraga',
@@ -1208,7 +1208,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 61,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/Baltimore_Orioles_Cal_Ripken_Jr_ba39_large.jpg',
           title: 'Cal Ripken Jr.',
           artist: 'GL',
@@ -1228,7 +1228,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 62,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/117df1280e537c30ae0b66a145277619--baltimore-orioles-art-prints.jpg',
           title: 'BROOKS ROBINSON BALTIMORE ORIOLES',
           artist: '?',
@@ -1248,7 +1248,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 63,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/IMG_61998.jpg',
           title: 'Baltimore Orioles Stadium Oriole Park at Camden Yards Baltimore',
           artist: '?',
@@ -1268,7 +1268,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 64,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/behind-the-plate-paul-mangold.jpg',
           title: 'Behind The Plate',
           artist: 'Paul Mangold',
@@ -1288,7 +1288,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 65,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/OrioleParkatCamdenYards.jpg',
           title: 'Orioles Park at Camden Yards',
           artist: 'Max Mason',
@@ -1308,7 +1308,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 66,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/coors-field-mood-jessica-mcgraw.jpg',
           title: 'Coors Field Mood',
           artist: 'Jessica Brooks',
@@ -1328,7 +1328,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 67,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/Coors-Field--Colorado-Rockies_art.jpg',
           title: 'Coors Field - Colorado Rockies',
           artist: 'Ffooter',
@@ -1348,7 +1348,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 68,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/Colorado-Rockies_01.jpg',
           title: 'Colorado Rockies',
           artist: 'Dowdle',
@@ -1368,7 +1368,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 69,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/charlie-blackmon-colorado-rockies-pixel-art-5-joe-hamilton.jpg',
           title: 'Charlie Blackmon Colorado Rockies ',
           artist: 'Joe Hamilton',
@@ -1388,7 +1388,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 70,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/142612572_master_1428446281702_16333606_ver1.0_640_480.jpg',
           title: 'The Player',
           artist: 'George Lundeen',
@@ -1408,7 +1408,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 71,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/1-comerica-park-detroit-skyline-b-and-g-art.jpg',
           title: 'Comerica Park Detroit Skyline',
           artist: 'A And N Art',
@@ -1428,7 +1428,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 72,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/detroit001.jpg',
           title: 'Comerica Park Tiger',
           artist: 'Rukkus',
@@ -1448,7 +1448,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 73,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/triple-crown-winner-detroit-tigers-miguel-cabrera-b-and-g-art.jpg',
           title: 'Triple Crown Winner Detroit Tigers Miguel Cabrera',
           artist: ' A And N Art',
@@ -1468,7 +1468,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 74,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/il_340x270.637314895_9vaq.jpg',
           title: 'Detroit Tigers Justin Verlander',
           artist: 'Glicee Prints',
@@ -1488,7 +1488,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 75,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/art-houtteman-detrit-tigers-pitcher.jpg',
           title: 'Art Houtteman Detroit Tigers Pitcher',
           artist: '?',
@@ -1508,7 +1508,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 76,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/phillies_image.jpg',
           title: 'Citizens Bank Park',
           artist: 'Britt Miller',
@@ -1528,7 +1528,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 77,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/Double-Play-at-Citizens-Bank-Park_0.jpg',
           title: 'Double Play at Citizens Bank Park',
           artist: 'Max Mason',
@@ -1548,7 +1548,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 78,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/701064b6085b0ee9d52cc7b1a2cbc05d.jpg',
           title: 'Mike Schmidt',
           artist: '?',
@@ -1568,7 +1568,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 79,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/362f7aa3a6786fc85d6732c4adbee128.jpg',
           title: 'Phillies Vintage Player Art',
           artist: '?',
@@ -1588,7 +1588,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 80,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/1f89453b-01ac-4334-b701-fa4bf3e459bd_lg.jpeg',
           title: '1945 Jimmie Foxx Philadelphia Phillies',
           artist: 'WM. C Green',
@@ -1608,7 +1608,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 81,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/ballpark_480x225.jpg',
           title: 'Globe Life Park in Arlington',
           artist: '?',
@@ -1628,7 +1628,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 82,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/rangers_ballpark_in_arlington.jpg',
           title: 'Globe Life Park on Opening Day 2009',
           artist: 'Alan Garrison',
@@ -1648,7 +1648,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 83,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/b79ced3fe9d22a05cba2ed8fdad67aaf--sports-decor-sports-art.jpg',
           title: 'Texas Ranger catcher Pudge Rodriguez',
           artist: 'Robert Hurst',
@@ -1668,7 +1668,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 84,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/0811 Rangers art 2.jpeg',
           title: 'Texas Rangers: Joey Gallo',
           artist: 'Richard W. Rodriguez',
@@ -1688,7 +1688,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 85,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/Nolan-Ryan-Texas-Rangers-MLB-Art-by-E-L-Vela_art.jpg',
           title: 'Nolan Ryan, Texas Rangers',
           artist: 'E. L. Vela',
@@ -1708,7 +1708,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 86,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/wrigley_field_bricks___ivy_canvas_art.jpg',
           title: 'Wrigley Field Bricks & Ivy',
           artist: 'Holy Cow Canvas',
@@ -1728,7 +1728,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 87,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/wrigleygiclee.jpg',
           title: 'Wrigley Field',
           artist: 'Al Sorenson',
@@ -1748,7 +1748,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 88,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/5d54152dc404252300a2e4810c90abe0--cubs-win-cubs-baseball.jpg',
           title: 'Chicago Cubs Painting',
           artist: 'Justin Patten',
@@ -1768,7 +1768,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 89,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/Angell-At-Last.jpg',
           title: 'The Cubs Win the World Series',
           artist: 'unknown',
@@ -1788,7 +1788,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 90,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/jon-lester-chicago-cubs-dave-olsen.jpg',
           title: 'Jon Lester Chicago Cubs',
           artist: 'Dave Olsen',
@@ -1808,7 +1808,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 91,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/1946444l.jpg',
           title: 'Fenway Park Centerfield',
           artist: 'Loretta Feeney',
@@ -1828,7 +1828,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 92,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/boston-red-sox-and-new-york-yankees-at-fenway-park-art-donna-doherty.jpg',
           title: 'Boston Red Sox And New York Yankees At Fenway Park',
           artist: 'Donna Doherty',
@@ -1848,7 +1848,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 93,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/DO_3.jpg',
           title: 'David Ortiz',
           artist: '?',
@@ -1868,7 +1868,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 94,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/Dave_Roberts_The_Steal.jpg',
           title: 'Dave Roberts the Steal',
           artist: 'Kris Borzilleri',
@@ -1888,7 +1888,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 95,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/be7c7aaf9317726b4570ccdadffedc6c.jpg',
           title: 'Boston!',
           artist: 'Arabel',
@@ -1908,7 +1908,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 96,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/dodger-stadium-mural.jpg',
           title: 'Dodger Stadium Mural',
           artist: '?',
@@ -1928,7 +1928,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 97,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/il_340x270.1179884686_99qy.jpg',
           title: 'Dodger Stadium',
           artist: 'marzjr',
@@ -1948,7 +1948,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 98,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/KIRK-GIBSON_ART-2.jpg',
           title: 'Kirk Gibson Los Angeles Dodgers',
           artist: 'Canvas ART',
@@ -1968,7 +1968,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 99,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/la-dodgers-pitcher-sandy-koufax-1965-everett.jpg',
           title: 'L.A. Dodgers Pitcher Sandy Koufax',
           artist: 'Everett',
@@ -1988,7 +1988,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 100,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/cubism-la-dodgers-baserunner-painting-tommervik.jpg',
           title: 'Cubism LA Dodgers Baserunner Painting',
           artist: 'Tommervik',
@@ -2008,7 +2008,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 101,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/poi_gallery_image-image-f1c92a25-5f3c-4959-bf56-37cf3b350a95.jpg',
           title: 'Kauffman Stadium',
           artist: '?',
@@ -2028,7 +2028,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 102,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/stealth-bomber-over-kauffman-stadium-raye-pond.jpg',
           title: 'Stealth Bomber Over Kauffman Stadium',
           artist: 'Raye Pond',
@@ -2048,7 +2048,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 103,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/Royals-Mural-Complete-400x300.jpg',
           title: 'KC Royals World Series Mural',
           artist: 'William Rose',
@@ -2068,7 +2068,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 104,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/eric-hosmer-of-the-kansas-city-royals-dave-olsen.jpg',
           title: 'Eric Hosmer Of The Kansas City Royals',
           artist: 'Dave Olsen',
@@ -2088,7 +2088,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 105,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/e23c9f851f1c347a0f899d9235ef262d.jpg',
           title: 'Kansas City Municipal Stadium In The 1950\'s',
           artist: 'Dwight Goss',
@@ -2108,7 +2108,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 106,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/Nationals Park-sm crop-001_0_0.jpg',
           title: 'Nationals Park, Washington D.C.',
           artist: 'Anonymous',
@@ -2128,7 +2128,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 107,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/2015-05-05-nationals-park-large.jpg',
           title: 'Nationals Park',
           artist: 'Joel Winstead',
@@ -2148,7 +2148,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 108,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/Stephen-Strasburg-Washington-Nationals-MLB-Fine-Art-Prints.jpg',
           title: 'Stephen Strasburg Washington Nationals',
           artist: 'VIP Sports Photos',
@@ -2168,7 +2168,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 109,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/d8aa8bc7c76d0017f2fb0b34fc88896e--baseball-teams-baseball-season.jpg',
           title: 'BRYCE HARPER Washington Nationals Baseball',
           artist: 'IslandCustomDesigns',
@@ -2188,7 +2188,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 110,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/washington_nationals_2012_uniforms_by_jayjaxon-d4uia95.png',
           title: 'Washington Nationals 2012 Uniforms',
           artist: 'Jason Jaxon',
@@ -2208,7 +2208,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 111,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/minutemaidpark.jpg',
           title: 'Rebirth in Houston',
           artist: 'Bill Purdom',
@@ -2228,7 +2228,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 112,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/Press_Release_Photo_Astros.jpg',
           title: 'Press Release Stock Photo Houston Astros',
           artist: '?',
@@ -2248,7 +2248,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 113,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/Bags.jpg',
           title: 'Jeff Bagwell',
           artist: 'DH Sports Art',
@@ -2268,7 +2268,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 114,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/RandyJohnsonAstro.jpg',
           title: 'Randy Johnson',
           artist: 'David J. Phillip',
@@ -2288,7 +2288,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 115,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/Dallas.jpg',
           title: 'Multiple Exposures of Dallas Keuchel',
           artist: 'Karen Warren',
@@ -2308,7 +2308,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 116,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/1-cincinnati-reds-great-american-ball-park-david-long.jpg',
           title: 'Cincinnati Reds Great American Ball Park',
           artist: 'David Long',
@@ -2328,7 +2328,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 117,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/cincinnati-reds-great-american-ballpark-creative-6-black-white-david-haskett.jpg',
           title: 'Cincinnati Reds Great American Ballpark',
           artist: 'David Haskett',
@@ -2348,7 +2348,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 118,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/2.5.reds69-mosaic.jpg',
           title: '1975 Big Red Machine',
           artist: 'Mark Riedy',
@@ -2368,7 +2368,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 119,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/3c1b208ffec3efc28bbfd0ed820a4432--baseball-art-sports-art.jpg',
           title: 'Eric Davis',
           artist: '?',
@@ -2388,7 +2388,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 120,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/Art Jacobs 1939 4x6 300-228x228.jpg',
           title: 'Art Jacobs - 1939 Cincinnati Reds',
           artist: '?',
@@ -2408,7 +2408,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 121,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/yankee_stadium_night_painting.jpg',
           title: 'Yankee Stadium',
           artist: 'Dave Choate',
@@ -2428,7 +2428,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 122,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/malcolm-farley-limited-edition-giclee-hand-embellished-yankee-stadium-commemorative-edition-4.jpg',
           title: 'Yankee Stadium Commemorative Edition',
           artist: 'Malcolm Farley',
@@ -2448,7 +2448,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 123,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/mickey-mantle-new-york-yankees-legend.jpg',
           title: 'Mickey Mantle Poster',
           artist: 'Gianfranco Weiss',
@@ -2468,7 +2468,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 124,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/2806dd_066022461ee1466e93d53daa7ebbc9d4.jpg',
           title: 'Derek Jeter "Leading the Way"',
           artist: 'David Courson',
@@ -2488,7 +2488,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 125,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/2885114106_c6fa1af460_o.jpg',
           title: 'Mariano Rivera',
           artist: 'BernBabyBern',
@@ -2508,7 +2508,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 126,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/unnamed-3.jpg',
           title: 'PETCO Park',
           artist: 'Jason Edrys',
@@ -2528,7 +2528,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 127,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/petco-park-opening-day-shawn-everhart.jpg',
           title: 'Petoco Park Opening Day',
           artist: 'Shawn Everhart',
@@ -2548,7 +2548,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 128,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/fbd6883d905cf00846010a5ffcc952ea--san-diego-padres-sports-logos.jpg',
           title: 'San Diego Padres Logo',
           artist: '?',
@@ -2568,7 +2568,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 129,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/23949964b6447179cbcf52b212a75a12--baseball-art-san-diego-padres.jpg',
           title: 'Tony Gwynn',
           artist: 'Stephen Fishwick',
@@ -2588,7 +2588,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 130,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/dc05d1f915d2c591947cb143f40633b7.jpg',
           title: 'Dave Winfield, San Diego Padres',
           artist: 'Kadir Nelson',
@@ -2608,7 +2608,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 131,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/twins_e9dc84d0-26f2-402c-9e4e-cb13f374f6ba.jpg',
           title: 'Target Field - Home of the Twins',
           artist: 'Michael Birawer',
@@ -2628,7 +2628,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 132,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/target-field-nick-peters.jpg',
           title: 'Target Field',
           artist: 'Nick Peters',
@@ -2648,7 +2648,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 133,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/ee0a1153d5125cf73f25cbc60ae3aa48--baseball-posters-baseball-art.jpg',
           title: 'Minnesota Twins Harmon Killebrew "Killer"',
           artist: '?',
@@ -2668,7 +2668,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 134,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/2806dd_6a34d18660b14e19852ab5bc96ff657d-mv2.jpg_srz_981_380_85_2 (1).jpg',
           title: 'Minnesota Twins Byron Buxton',
           artist: 'David Courson',
@@ -2688,7 +2688,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 135,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/Minnesota-Twins_01.jpg',
           title: 'Minnesota Twins',
           artist: 'Dowdle Folk Art',
@@ -2708,7 +2708,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 136,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/Screen-Shot-2015.png',
           title: 'Sun Trust Park',
           artist: '?',
@@ -2728,7 +2728,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 137,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/suntrust.park_.jpg',
           title: 'Sun Trust Park',
           artist: 'David Goldman',
@@ -2748,7 +2748,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 138,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/atlanta_braves_uniform_display_by_jayjaxon.png',
           title: 'Atlanta Braves Uniform Display',
           artist: 'JayJaxon',
@@ -2768,7 +2768,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 139,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/2229519.jpg',
           title: 'Freddie Freeman',
           artist: 'Michael Lee',
@@ -2788,7 +2788,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 140,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/mlbf_1859795883_th_45.jpg',
           title: 'Atlanta Braves',
           artist: 'MLB Braves Official Site',
@@ -2808,7 +2808,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 141,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/32ef9741e664c2704202bb21e0bc0f69.jpg',
           title: 'Angel Stadium in Anaheim',
           artist: '?',
@@ -2828,7 +2828,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 142,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/kT85BXLpc.jpg',
           title: 'On Deck Circle',
           artist: 'The Halo Way',
@@ -2848,7 +2848,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 143,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/IMG_420022.jpg',
           title: 'Los Angeles Angels Baseball',
           artist: '?',
@@ -2868,7 +2868,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 144,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/US_baseball_blog_960x480_brick.jpg',
           title: 'Uber and the Los Angeles Angels of Anaheim',
           artist: '?',
@@ -2888,7 +2888,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 145,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/jEXwIYE.jpg',
           title: 'Earl Weaver Teaches the Art of Umpire Arguing',
           artist: '?',
@@ -2908,7 +2908,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 146,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/Miller-Park-FB2.jpg',
           title: 'Miller Park',
           artist: '?',
@@ -2928,7 +2928,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 147,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/miller-park-milwaukee-wisconsin-mountain-dreams.jpg',
           title: 'Miller Park',
           artist: 'Mountain Dreams',
@@ -2948,7 +2948,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 148,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/Brewers.jpg',
           title: 'Milwaukee Brewers',
           artist: 'Lindsay Frost',
@@ -2968,7 +2968,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 149,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/milwaukee-brewers-miller-field.jpg',
           title: 'Miller Park and the Brewers',
           artist: 'Meg Taylor',
@@ -2988,7 +2988,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 150,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/3671386509cf48d849f8c53f5ff174ad--milwaukee-brewers-top-photo.jpg',
           title: 'Davis\' 2 HRs send Brewers over Reds',
           artist: '?',
@@ -3008,7 +3008,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 151,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/stadium650.jpg',
           title: 'Jim Thome at Tampa Bay’s Tropicana Field',
           artist: 'Doug Benc',
@@ -3028,7 +3028,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 152,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/f23c08835a02370e814cda365bb9b625.jpg',
           title: 'Tropicana Field - Home of the Tampa Bay Rays',
           artist: '?',
@@ -3048,7 +3048,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 153,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/Rays.jpg',
           title: 'Tampa Bay Rays',
           artist: 'Lindsay Frost',
@@ -3068,7 +3068,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 154,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/Brent-Honeywell-Scouting-Report.jpg',
           title: 'Brent Honeywell',
           artist: '?',
@@ -3088,7 +3088,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 155,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/AR-304029659.jpg',
           title: 'Tampa Bay Rays starting pitcher Chris Archer',
           artist: 'Will Vragovic',
@@ -3108,7 +3108,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 156,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/4c07febe632350102ea63ba2f335716d.jpg',
           title: '?',
           artist: '?',
@@ -3128,7 +3128,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 157,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/att_park_by_ostrichzero-d2xl6p9.jpg',
           title: 'ATT Park',
           artist: 'OstrichZero',
@@ -3148,7 +3148,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 158,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/San-Francisco-Giants_01.jpg',
           title: 'San Francisco Giants',
           artist: 'Dowdle Folk Art',
@@ -3168,7 +3168,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 159,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/1623917-7.jpg',
           title: 'San Francisco Giants',
           artist: 'Saatchi',
@@ -3188,7 +3188,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 160,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/4d7bbe1c48d5da8c763b4a4fd1ee4819--giants-sf-giants-baseball.jpg',
           title: 'Buster Posey',
           artist: '?',
@@ -3208,7 +3208,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 161,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/strike-1949.jpg',
           title: 'Strike',
           artist: 'Jacob Lawrence',
@@ -3228,7 +3228,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 162,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/Kadir-Nelson-mighty-josh_1024x1024.jpeg',
           title: 'Mighty Josh',
           artist: 'Kadir Nelson',
@@ -3248,7 +3248,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 163,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/WeOliveBaseball.jpg',
           title: 'We Olive Baseball',
           artist: 'Michael Godard',
@@ -3268,7 +3268,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 164,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/cb607159dab941f5f2b3f0ee48751fe8--boston-sports-boston-baseball.jpg',
           title: '?',
           artist: '?',
@@ -3288,7 +3288,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 165,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/baseball-paintings.jpg',
           title: 'Abstract NY Baseball Outfielder',
           artist: 'Tommervik',
@@ -3308,7 +3308,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 166,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/b104c30f94ce537003ab52a31d211eda-e1449271871848.jpg',
           title: 'Topps 1955 Baseball Box',
           artist: '?',
@@ -3328,7 +3328,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 167,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/posed_slide.jpeg',
           title: 'Posed Slide',
           artist: '?',
@@ -3348,7 +3348,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 168,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/FreeVector-Baseball-Graphics.jpg',
           title: 'Batter',
           artist: 'ArtAmp.com',
@@ -3368,7 +3368,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 169,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/Vintage-Baseball-Player-Illustration.png',
           title: 'Vintage Baseball Player Illustration',
           artist: 'GDJ',
@@ -3388,7 +3388,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 170,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/13113230084_77bab2c4f7_o.jpg',
           title: '1967 CHI',
           artist: '?',
@@ -3408,7 +3408,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 171,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/Sliding-Into-Third.jpg',
           title: 'Sliding Into Third',
           artist: 'C.F. Payne',
@@ -3428,7 +3428,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 172,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/depositphotos_14134905-stock-illustration-baseball-sketch.jpg',
           title: 'Baseball Sketch',
           artist: 'Vector Illustration',
@@ -3448,7 +3448,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 173,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/tumblr_orz9g30t661rsc228o1_500.jpg',
           title: 'Casey at the Bat',
           artist: 'Katie Kelsky',
@@ -3468,7 +3468,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 174,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/sodkfjhsdkhf.gif',
           title: '?',
           artist: 'Greg Jezewski',
@@ -3488,7 +3488,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 175,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/0f787356ad9086ac02465e58bac69b50--baseball-art-sports-art.jpg',
           title: '?',
           artist: 'C.F. Payne',
@@ -3508,7 +3508,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 176,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/g33.jpg',
           title: 'Baseball Dream VIII',
           artist: 'pop art canvas',
@@ -3528,7 +3528,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 177,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/main_1498256257-Yogi-Berra-Signed-Charles-Fazzino-Original-Hand-Painted-3D-Pop-Art-Baseball-with-Swarovski-Crystals-1-1-MLB-Hologram-Steiner-COA-PristineAuction.jpg',
           title: 'Yogi Berra',
           artist: 'Charles Fazzino',
@@ -3548,7 +3548,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 178,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/Jackie-Robinson-vintage-canvas-leinwand-ausmalen-paintbynumbers-popart-walldeco-acrylic-ausmalbild-portrait-interior-individuell-persönlich-personalized-originell-geschenkidee-hochzeitsgeschenk-400x284.jpg',
           title: 'Baseball player Jackie Robinson',
           artist: 'Paint 2B',
@@ -3568,7 +3568,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 179,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/ICA1211.jpg',
           title: 'USAIllinois, Chicago, Cubs, baseball Color Pop',
           artist: 'iCanvas',
@@ -3588,7 +3588,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 180,
           user_id: 1,
-          theme: 'baseball',
+          theme: 'Baseball',
           img_path: './img/april/Baseball-at-Night-Morris-Kantor-631.jpg',
           title: 'Baseball at Night',
           artist: 'Morris Kantor',

@@ -8,7 +8,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 1,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/rosso-2000.jpg',
           title: 'Rosso',
           artist: 'Carla Accardi',
@@ -28,7 +28,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 2,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/golden-center-in-the-ladder-1970.jpg',
           title: 'Golden Center in the Ladder',
           artist: 'Alice Baber',
@@ -48,7 +48,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 3,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/rosa-viola-bianco-1968.jpg',
           title: 'Rosa-Viola-Bianco',
           artist: 'Carla Accardi',
@@ -68,7 +68,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 4,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/woman-with-a-cat-1901.jpg',
           title: 'Woman with a Cat',
           artist: 'Lilla Cabot Perry',
@@ -88,7 +88,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 5,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/red-yellow-and-blue-1960.jpg',
           title: 'Red, Yellow and Blue',
           artist: 'Alice Baber',
@@ -108,7 +108,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 6,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/blu-2000.jpg',
           title: 'Blu',
           artist: 'Carla Accardi',
@@ -128,7 +128,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 7,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/1.jpg',
           title: 'The baptism of Christ',
           artist: 'Ende',
@@ -148,7 +148,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 8,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/breastfeeding-mother-of-paula-modersohn-becker-1902.jpg',
           title: 'Breastfeeding mother of Paula Modersohn-Becker',
           artist: 'Paula Modersohn-Becker',
@@ -168,7 +168,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 9,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/espagnole.jpg',
           title: 'Espagnole',
           artist: 'Natalia Goncharova',
@@ -188,7 +188,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 10,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/blue-cats-with-butterflies.jpg',
           title: 'Blue Cats with Butterflies',
           artist: 'Laurel Burch',
@@ -208,7 +208,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 11,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/iracema.jpg',
           title: 'Iracema',
           artist: 'Lilian Greisse',
@@ -228,7 +228,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 12,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/untitled-swirls-1977.jpg',
           title: 'Untitled (Swirls)',
           artist: 'Ruth Vollmer',
@@ -248,7 +248,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 13,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/self-portrait-1906.jpg',
           title: 'Self portrait',
           artist: 'Paula Modersohn-Becker',
@@ -268,7 +268,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 14,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/blue.jpg',
           title: 'What\'s under beauty?',
           artist: 'Tamara',
@@ -288,7 +288,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 15,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/flames-1918.jpg',
           title: 'Flames',
           artist: 'Uemura Shoen',
@@ -308,7 +308,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 16,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/st-michael-and-the-dragon.jpg',
           title: 'St. Michael and the dragon',
           artist: 'Claricia',
@@ -328,7 +328,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 17,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/bild-no-84-1918.jpg',
           title: 'Bild no. 84',
           artist: 'Jacoba van Heemskerck',
@@ -348,7 +348,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 18,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/stil-life.jpg',
           title: 'Stil life',
           artist: 'Mariam Aslamazian',
@@ -368,7 +368,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 19,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/mr-bumps-and-his-monkey-by-walter-de-la-mare-1942.jpg',
           title: 'Mr. Bumps and His Monkey by Walter de la Mare',
           artist: 'Dorothy Lathrop',
@@ -388,7 +388,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 20,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/composition-19.jpg',
           title: 'Composition 19',
           artist: 'Sonia Delaunay',
@@ -408,7 +408,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 21,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/untitled-1951.jpg',
           title: 'Untitled',
           artist: 'Helen Frankenthaler',
@@ -428,7 +428,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 22,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/nude-girl-1910.jpg',
           title: 'Nude Girl',
           artist: 'Gwen John',
@@ -448,7 +448,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 23,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/the-broken-column-1944.jpg',
           title: 'The Broken Column',
           artist: 'Frida Kahlo',
@@ -468,7 +468,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 24,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/repulse-bay.jpg',
           title: 'Repulse Bay',
           artist: 'Dominique Gonzalez-Foerster',
@@ -488,7 +488,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 25,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/untitled-your-body-is-a-battleground-1989.jpg',
           title: 'Untitled (your body is a battleground)',
           artist: 'Barbara Kruger',
@@ -508,7 +508,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 26,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/saint-catherine-of-alexandria-presumed-self-portrait-1589.jpg',
           title: 'Saint Catherine of Alexandria (presumed self-portrait)',
           artist: 'Barbara Longhi',
@@ -528,7 +528,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 27,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/dada-portrait-of-berenice-abbott-1926.jpg',
           title: 'Dada Portrait of Berenice Abbott',
           artist: 'Elsa von Freytag-Loringhoven',
@@ -548,7 +548,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 28,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/pere-ubu-1936.jpg',
           title: 'Pere Ubu',
           artist: 'Dora Maar',
@@ -568,7 +568,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 29,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/woman-with-a-cat-c-1970-4.jpg',
           title: 'Woman with a Cat',
           artist: 'Margit Selska',
@@ -588,7 +588,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 30,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/figures-in-a-garden-1981.jpg',
           title: 'Figures in a Garden',
           artist: 'Eileen Agar',
@@ -608,7 +608,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 31,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/the-mahatmas-present-standing-point-series-ii-no-2a-1920.jpg',
           title: 'The Mahatmas Present Standing Point, Series II, No. 2a',
           artist: 'Hilma af Klint',
@@ -628,7 +628,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 32,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/stilhet-1907.jpg',
           title: 'Stilhet',
           artist: 'Helene Schjerfbeck',
@@ -648,7 +648,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 33,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/unknown-title-4.jpg',
           title: 'unknown title',
           artist: 'Seraphine Louis',
@@ -668,7 +668,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 34,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/display-image-3.jpg',
           title: 'The Dinner-Hour',
           artist: 'Anna Ancher',
@@ -688,7 +688,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 35,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/simpkin-at-the-tailor-s-bedside-1902.jpg',
           title: 'Simpkin at the Tailor\’s Bedside',
           artist: 'Beatrix Potter',
@@ -708,7 +708,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 36,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/going-up-1978.jpg',
           title: 'Going Up',
           artist: 'Betty Parsons',
@@ -728,7 +728,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 37,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/bog-ia-apelor.jpg',
           title: 'Richness of Waters',
           artist: 'Micaela Eleutheriade',
@@ -748,7 +748,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 38,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/windows-no-2-1965.jpg',
           title: 'Windows (no. 2)',
           artist: 'Alice Neel',
@@ -768,7 +768,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 39,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/diario(2).jpg',
           title: 'Diario',
           artist: 'Bice Lazzari',
@@ -788,7 +788,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 40,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/courtyard-in-nork.jpg',
           title: 'Courtyard in Nork',
           artist: 'Gohar Fermanyan',
@@ -808,7 +808,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 41,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/3-lemons-18x24in-2015-oil-svetlana-kanyo-2.jpg',
           title: 'Lemons',
           artist: 'Svetlana Kanyo',
@@ -828,7 +828,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 42,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/untitled-2005.jpg',
           title: 'Untitled',
           artist: 'Tea Jorjadze',
@@ -848,7 +848,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 43,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/monika-blatton-dzokejka.jpg',
           title: 'Lady Jockey',
           artist: 'Monica Blatton',
@@ -868,7 +868,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 44,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/heaven.jpg',
           title: 'Heaven',
           artist: 'Dana Levin',
@@ -888,7 +888,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 45,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/family-tree-2012.jpg',
           title: 'Family Tree',
           artist: 'Wangechi Mutu',
@@ -908,7 +908,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 46,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/hell.jpg',
           title: 'Hell',
           artist: 'Herrad of Landsberg',
@@ -928,7 +928,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 47,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/pained-madonna.jpg',
           title: 'Pained Madonna',
           artist: 'Plautilla Nelli',
@@ -948,7 +948,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 48,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/madonna-adoring-the-child-1605.jpg',
           title: 'Madonna Adoring the Child',
           artist: 'Barbara Longhi',
@@ -968,7 +968,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 49,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/sleeping-venus-1630.jpg',
           title: 'Sleeping Venus',
           artist: 'Artemisia Gentileschi',
@@ -988,7 +988,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 50,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/flowers-in-a-vase-1654.jpg',
           title: 'Flowers in a vase',
           artist: 'Judith Leyster',
@@ -1008,7 +1008,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 51,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/lady-in-an-interior.jpg',
           title: 'Lady in an interior',
           artist: 'Thalia Flora-Karavia',
@@ -1028,7 +1028,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 52,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/mother-marie-poussepin.jpg',
           title: 'Mother Marie Poussepin',
           artist: 'Gwen John',
@@ -1048,7 +1048,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 53,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/book-of-foot-1996.jpg',
           title: 'Book of Foot',
           artist: 'Lenore Tawney',
@@ -1068,7 +1068,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 54,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/untitled-celestial-realm-1956.jpg',
           title: 'Untitled, Celestial Realm',
           artist: 'Lolo Soldevilla',
@@ -1088,7 +1088,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 55,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/seascape-1970-2.jpg',
           title: 'Seascape',
           artist: 'Margit Selska',
@@ -1108,7 +1108,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 56,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/portrait-of-philomene.jpg',
           title: 'Portrait of Philomene',
           artist: 'Sonia Delaunay',
@@ -1128,7 +1128,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 57,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/full-moon-1980.jpg',
           title: 'Full Moon',
           artist: 'Louise Nevelson',
@@ -1148,7 +1148,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 58,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/nu.jpg',
           title: 'Nu',
           artist: 'Tarsila do Amaral',
@@ -1168,7 +1168,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 59,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/dawn-1933.jpg',
           title: 'Dawn',
           artist: 'Laura Knight',
@@ -1188,7 +1188,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 60,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/unknown-title-5.jpg',
           title: 'unknown title',
           artist: 'Lucia Demetriade Balacescu',
@@ -1208,7 +1208,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 61,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/asleep-1937.jpg',
           title: 'Asleep',
           artist: 'Toyen',
@@ -1228,7 +1228,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 62,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/1441500527473.jpg',
           title: 'Self Portrait',
           artist: 'Guan Zilan',
@@ -1248,7 +1248,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 63,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/longing-1977.jpg',
           title: 'Longing',
           artist: 'Joyce Kozloff',
@@ -1268,7 +1268,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 64,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/indian-church-1929.jpg',
           title: 'Indian Church',
           artist: 'Emily Carr',
@@ -1288,7 +1288,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 65,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/artwork-images-424175658-163937-diane-arbus.jpg',
           title: 'Girl in a Shiny Dress',
           artist: 'Diane Arbus',
@@ -1308,7 +1308,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 66,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/three-symbols-1930.jpg',
           title: 'Three Symbols',
           artist: 'Eileen Agar',
@@ -1328,7 +1328,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 67,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/plastic-sphere-cube-triangle-red-2010.jpg',
           title: 'Plastic Sphere Cube Triangle Red',
           artist: 'Angela Bulloch',
@@ -1348,7 +1348,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 68,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/woman-with-an-umbrella-1880.jpg',
           title: 'Woman with an Umbrella',
           artist: 'Marie Bracquemond',
@@ -1368,7 +1368,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 69,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/bild-no-15-berg-und-schiffe-1914.jpg',
           title: 'Bild no. 15, Berg und Schiffe',
           artist: 'Jacoba van Heemskerck',
@@ -1388,7 +1388,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 70,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/sans-titre-main-coquillage-1934.jpg',
           title: 'Sans Titre (Main-coquillage)',
           artist: 'Dora Maar',
@@ -1408,7 +1408,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 71,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/ridiculous-portrait-1969.jpg',
           title: 'Ridiculous Portrait',
           artist: 'May Wilson',
@@ -1428,7 +1428,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 72,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/a-little-boy-lost-1920-1.jpg',
           title: 'A Little Boy Lost',
           artist: 'Dorothy Lathrop',
@@ -1448,7 +1448,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 73,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/reinforcements-troops-marching-1917.jpg',
           title: 'Reinforcements: Troops Marching',
           artist: 'Grace Cossington Smith',
@@ -1468,7 +1468,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 74,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/self-portrait-with-violin-1928.jpg',
           title: 'Self-portrait with violin',
           artist: 'Antonietta Raphael',
@@ -1488,7 +1488,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 75,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/musical-chairs-1951.jpg',
           title: 'Musical Chairs',
           artist: 'Dorothea Tanning',
@@ -1508,7 +1508,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 76,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/upper-east-side.jpg',
           title: 'Upper East Side',
           artist: 'Hai-Hsin Huang',
@@ -1528,7 +1528,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 77,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/true-to-life-2005.jpg',
           title: 'True to Life',
           artist: 'Valerie Jaudon',
@@ -1548,7 +1548,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 78,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/cosmos-n-3-1977.jpg',
           title: 'Cosmos N°3',
           artist: 'Martha Boto',
@@ -1568,7 +1568,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 79,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/display-image-22.jpg',
           title: 'Cemetery',
           artist: 'Alice Bailly',
@@ -1588,7 +1588,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 80,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/the-quay-at-dinard-1911.jpg',
           title: 'The Quay at Dinard',
           artist: 'Ethel Carrick',
@@ -1608,7 +1608,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 81,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/flowers-on-the-blue-background-1943.jpg',
           title: 'Flowers on the blue background',
           artist: 'Kateryna Bilokur',
@@ -1628,7 +1628,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 82,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/indeed-1991.jpg',
           title: 'Indeed',
           artist: 'Valerie Jaudon',
@@ -1648,7 +1648,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 83,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/inhabited-painting-1976.jpg',
           title: 'Inhabited Painting',
           artist: 'Helena Almeida',
@@ -1668,7 +1668,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 84,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/smiling-girl-1921.jpg',
           title: 'Smiling Girl',
           artist: 'Helene Schjerfbeck',
@@ -1688,7 +1688,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 85,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/portrait-d-une-n-gresse-1800.jpg',
           title: 'Portrait d\'une négresse',
           artist: 'Marie-Guillemine Benoist',
@@ -1708,7 +1708,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 86,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/venetian-woman-attributed-1.jpg',
           title: 'Venetian Woman (attributed)',
           artist: 'Marietta Robusti',
@@ -1728,7 +1728,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 87,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/young-woman.jpg',
           title: 'Young Woman',
           artist: 'Berthe Morisot',
@@ -1748,7 +1748,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 88,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/blumenstilleben-1954.jpg',
           title: 'Blumenstilleben',
           artist: 'Helen Dahm',
@@ -1768,7 +1768,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 89,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/accordment-series-15-on-its-way-1977.jpg',
           title: 'Accordment Series #15: On Its Way',
           artist: 'Perle Fine',
@@ -1788,7 +1788,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 90,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/the-model-1925.jpg',
           title: 'The Model',
           artist: 'Tamara de Lempicka',
@@ -1808,7 +1808,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 91,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/a-young-woman-seated-by-a-window.jpg',
           title: 'A YOUNG WOMAN SEATED BY A WINDOW',
           artist: 'Marie-Denise Villers',
@@ -1828,7 +1828,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 92,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/mountain-landscape-switzerland-1914.jpg',
           title: 'Mountain landscape. Switzerland',
           artist: 'Zinaida Serebriakova',
@@ -1848,7 +1848,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 93,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/abstract-1954.jpg',
           title: 'Abstract',
           artist: 'Sonya Rapoport',
@@ -1868,7 +1868,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 94,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/the-deluge.jpg',
           title: 'The Deluge',
           artist: 'Winifred Knights',
@@ -1888,7 +1888,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 95,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/kusama-in-a-foreign-country.jpg',
           title: 'Kusama In A Foreign Country',
           artist: 'Yayoi Kusama',
@@ -1908,7 +1908,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 96,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/erin-hanson-crystal-light.jpg',
           title: 'Crystal Light',
           artist: 'Erin Hanson',
@@ -1928,7 +1928,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 97,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/face-eater-2004.jpg',
           title: 'Face Eater',
           artist: 'Dana Schutz',
@@ -1948,7 +1948,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 98,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/blue-sky-1932.jpg',
           title: 'Blue Sky',
           artist: 'Emily Carr',
@@ -1968,7 +1968,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 99,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/untitled(4).jpg',
           title: 'Untitled',
           artist: 'Hilma af Klint',
@@ -1988,7 +1988,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 100,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/will-eat-you-to-make-you-mine-2009.jpg',
           title: 'Will Eat You to Make You Mine',
           artist: 'Samira Eskandarfar',
@@ -2008,7 +2008,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 101,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/comforter-2007.jpg',
           title: 'Comforter',
           artist: 'Catherine Murphy',
@@ -2028,7 +2028,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 102,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/the-blue-room-wissett-lodge-1916.jpg',
           title: 'The Blue Room, Wissett Lodge',
           artist: 'Vanessa Bell',
@@ -2048,7 +2048,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 103,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/flower-markets-with-white-umbrella.jpg',
           title: 'Flower Markets with White Umbrella',
           artist: 'Ethel Carrick',
@@ -2068,7 +2068,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 104,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/the-last-act-1929.jpg',
           title: 'The Last Act',
           artist: 'Laura Knight',
@@ -2088,7 +2088,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 105,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/the-easy-isn-t-done-easy-2007.jpg',
           title: 'The easy isn\'t done easy',
           artist: 'Tea Jorjadze',
@@ -2108,7 +2108,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 106,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/arena-v-1978.jpg',
           title: 'Arena V',
           artist: 'Dorothea Rockburne',
@@ -2128,7 +2128,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 107,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/champs-de-petrol-2013.jpg',
           title: 'Oil Fields',
           artist: 'Etel Adnan',
@@ -2148,7 +2148,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 108,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/blumen.jpg',
           title: 'Blumen',
           artist: 'Helen Dahm',
@@ -2168,7 +2168,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 109,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/pillars-of-salt.jpg',
           title: 'Pillars of salt',
           artist: 'Natalia Goncharova',
@@ -2188,7 +2188,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 110,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/glimpse-upon-waking-1976.jpg',
           title: 'Glimpse Upon Waking',
           artist: 'Winifred Nicholson',
@@ -2208,7 +2208,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 111,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/stadia-ii-2004.jpg',
           title: 'Stadia II',
           artist: 'Julie Mehretu',
@@ -2228,7 +2228,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 112,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/flat-jumbo-clips-2009.jpg',
           title: 'Flat Jumbo [Clips]',
           artist: 'Sarah Morris',
@@ -2248,7 +2248,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 113,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/boy-with-rooster.jpg',
           title: 'Boy with rooster',
           artist: 'Natalia Goncharova',
@@ -2268,7 +2268,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 114,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/women-s-costume-1918.jpg',
           title: 'Women\'s costume',
           artist: 'Aleksandra Ekster',
@@ -2288,7 +2288,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 115,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/chamin-s-alentejanas.jpg',
           title: 'Chaminés alentejanas',
           artist: 'Mily Possoz',
@@ -2308,7 +2308,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 116,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/untitled-blue-octagon-1964.jpg',
           title: 'Untitled (Blue Octagon)',
           artist: 'Mary Corse',
@@ -2328,7 +2328,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 117,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/arm-extensions-1968.jpg',
           title: 'Arm Extensions',
           artist: 'Rebecca Horn',
@@ -2348,7 +2348,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 118,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/ladder-1981.jpg',
           title: 'Ladder',
           artist: 'Harmony Hammond',
@@ -2368,7 +2368,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 119,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/mad-russian-blanket-1977.jpg',
           title: 'Mad Russian Blanket',
           artist: 'Joyce Kozloff',
@@ -2388,7 +2388,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 120,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/the-dancer-1938.jpg',
           title: 'The Dancer',
           artist: 'Greta Freist',
@@ -2408,7 +2408,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 121,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/3human-theatre-100by100cm-2016.jpg',
           title: 'Human Theatre',
           artist: 'Li CHEVALIER',
@@ -2428,7 +2428,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 122,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/touch-me-2011.jpg',
           title: 'Touch Me',
           artist: 'Regine Schumann',
@@ -2448,7 +2448,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 123,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/old-vw-with-shadow.jpg',
           title: 'Old VW with Shadow',
           artist: 'L Yaffe',
@@ -2468,7 +2468,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 124,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/imgp-rosa-rot-malwerk-silvia-l-lueftenegger-contemporary-art-design-performance-theater-shoe-6880p.jpg',
           title: 'IMGP Rosa Rot Malwerk Silvia L Lueftenegger Contemporary Art Design Performance Theater Shoe 6880P',
           artist: 'Silvia L. Lueftenegger RosaRot',
@@ -2488,7 +2488,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 125,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/abstract.jpg',
           title: 'Abstract',
           artist: 'Gillian Ayres',
@@ -2508,7 +2508,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 126,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/ninth-vision-personification-of-god-s-power.jpg',
           title: 'Ninth Vision. Personification of God\'s power',
           artist: 'Hildegard of Bingen',
@@ -2528,7 +2528,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 127,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/ink-bamboo.jpg',
           title: 'Ink Bamboo',
           artist: 'Guan Daosheng',
@@ -2548,7 +2548,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 128,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/portrait-of-five-women-with-a-dog-and-a-parrot.jpg',
           title: 'Portrait of Five Women with a Dog and a Parrot',
           artist: 'Lavinia Fontana',
@@ -2568,7 +2568,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 129,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/judith-with-the-head-of-holofernes-1596.jpg',
           title: 'Judith with the Head of Holofernes',
           artist: 'Fede Galizia',
@@ -2588,7 +2588,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 130,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/display-image-2.jpg',
           title: 'At the Market Stall',
           artist: 'Louise Moillon',
@@ -2608,7 +2608,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 131,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/mary-beale-self-portrait.JPG',
           title: 'Self-portrait',
           artist: 'Mary Beale',
@@ -2628,7 +2628,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 132,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/allegory-of-music-1712.jpg',
           title: 'Allegory of Music',
           artist: 'Rosalba Carriera',
@@ -2648,7 +2648,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 133,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/still-life-with-tuft-of-marine-plants-shells-and-corals-1769.jpg',
           title: 'Still-Life with Tuft of Marine Plants, Shells and Corals',
           artist: 'Anne Vallayer-Coster',
@@ -2668,7 +2668,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 134,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/une-tude-de-femme-d-apr-s-nature-portrait-de-madame-soustras.jpg',
           title: 'Une étude de femme d\'après nature (Portrait de Madame Soustras)',
           artist: 'Marie-Denise Villers',
@@ -2688,7 +2688,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 135,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/oxen-pulling-a-cart.jpg',
           title: 'Oxen Pulling a Cart',
           artist: 'Rosa Bonheur',
@@ -2708,7 +2708,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 136,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/before-the-theatre.jpg',
           title: 'Before the Theatre',
           artist: 'Berthe Morisot',
@@ -2728,7 +2728,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 137,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/child-in-a-gerden-giverny-1909.jpg',
           title: 'Child in a Gerden, Giverny',
           artist: 'Lilla Cabot Perry',
@@ -2748,7 +2748,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 138,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/display-image-15.jpg',
           title: 'In the Flowers',
           artist: 'Louise Abbéma',
@@ -2768,7 +2768,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 139,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/anna-ancher-sunlight-in-the-blue-room-google-art-project.jpg',
           title: 'Sunlight in the Blue Room',
           artist: 'Anna Ancher',
@@ -2788,7 +2788,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 140,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/the-swan-no-17-1915(1).jpg',
           title: 'The Swan (No. 17)',
           artist: 'Hilma af Klint',
@@ -2808,7 +2808,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 141,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/frontispiece-the-tailor-mouse.jpg',
           title: 'Frontispiece. The Tailor Mouse',
           artist: 'Beatrix Potter',
@@ -2828,7 +2828,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 142,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/petersburg-the-summer-garden-in-winter-1902.jpg',
           title: 'Petersburg. The Summer Garden in winter.',
           artist: 'Anna Ostroumova-Lebedeva',
@@ -2848,7 +2848,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 143,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/children-and-nurses-1910.jpg',
           title: 'Children and Nurses',
           artist: 'Ethel Carrick',
@@ -2868,7 +2868,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 144,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/yang-gui-fei-1922.jpg',
           title: 'Yang gui fei',
           artist: 'Uemura Shoen',
@@ -2888,7 +2888,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 145,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/little-girl-wearing-large-hat.jpg',
           title: 'Little girl wearing large hat',
           artist: 'Gwen John',
@@ -2908,7 +2908,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 146,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/untitledDahm.jpg',
           title: 'Untitled',
           artist: 'Helen Dahm',
@@ -2928,7 +2928,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 147,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/orange-vendor-spain.jpg',
           title: 'Orange Vendor, Spain',
           artist: 'Natalia Goncharova',
@@ -2948,7 +2948,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 148,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/artemis.jpg',
           title: 'Artemis',
           artist: 'Marie Laurencin',
@@ -2968,7 +2968,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 149,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/three-women-dressed-simultaneously.jpg',
           title: 'Three Women dressed simultaneously',
           artist: 'Sonia Delaunay',
@@ -2988,7 +2988,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 150,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/nude-series-viii.jpg',
           title: 'Nude Series VIII',
           artist: 'Georgia O\'Keeffe',
@@ -3008,7 +3008,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 151,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/composition-dans-un-cercle-1937.jpg',
           title: 'Composition dans un cercle',
           artist: 'Sophie Taeuber-Arp',
@@ -3028,7 +3028,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 152,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/untitled-from-an-ethnographic-museum-1930.jpg',
           title: 'Untitled (From an Ethnographic Museum)',
           artist: 'Hannah Hoch',
@@ -3048,7 +3048,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 153,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/a-little-boy-lost-1920-11.jpg',
           title: 'A Little Boy Lost',
           artist: 'Dorothy Lathrop',
@@ -3068,7 +3068,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 154,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/sea-treasures-1952.jpg',
           title: 'Sea Treasures',
           artist: 'Winifred Nicholson',
@@ -3088,7 +3088,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 155,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/unknown-title-44.jpg',
           title: 'unknown title',
           artist: 'Antonietta Raphael',
@@ -3108,7 +3108,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 156,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/rollande-1929.jpg',
           title: 'Rollande',
           artist: 'Prudence Heward',
@@ -3128,7 +3128,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 157,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/jeanne-he-buterne-autoportrait.jpg',
           title: 'Self portrait',
           artist: 'Jeanne Hébuterne',
@@ -3148,7 +3148,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 158,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/santissima-trinita-1928.jpg',
           title: 'Santissima Trinita',
           artist: 'Winifred Knights',
@@ -3168,7 +3168,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 159,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/still-life-1.jpg',
           title: 'Still Life',
           artist: 'Gohar Fermanyan',
@@ -3188,7 +3188,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 160,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/totem-materia.jpg',
           title: 'Totem Materia',
           artist: 'Betty Parsons',
@@ -3208,7 +3208,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 161,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/untitled-1975 (1).jpg',
           title: 'Untitled',
           artist: 'Bice Lazzari',
@@ -3228,7 +3228,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 162,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/caracas-1957.jpg',
           title: 'Caracas',
           artist: 'Lolo Soldevilla',
@@ -3248,7 +3248,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 163,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/steiner-surface-1973.jpg',
           title: 'Steiner Surface',
           artist: 'Ruth Vollmer',
@@ -3268,7 +3268,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 164,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/the-love-embrace-of-the-universe-the-earth-mexico-myself-diego-and-señor-xólotl-1949.jpg',
           title: 'The Love Embrace of the Universe, the Earth (Mexico), Myself, Diego and Señor Xólotl',
           artist: 'Frida Kahlo',
@@ -3288,7 +3288,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 165,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/candelabra-1935.jpg',
           title: 'Candelabra',
           artist: 'Dora Maar',
@@ -3308,7 +3308,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 166,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/k-k-1933.jpg',
           title: 'Kô & Kô',
           artist: 'Maria Helena Vieira da Silva',
@@ -3328,7 +3328,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 167,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/lady-godiva-1959.jpg',
           title: 'Lady Godiva',
           artist: 'Remedios Varo',
@@ -3348,7 +3348,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 168,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/feminine-character.jpg',
           title: 'Feminine character',
           artist: 'Hedda Sterne',
@@ -3368,7 +3368,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 169,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/cinda.jpg',
           title: 'Cinderella',
           artist: 'Mary Blair',
@@ -3388,7 +3388,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 170,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/witches-in-preparation-1981.jpg',
           title: 'Witches in Preparation',
           artist: 'Ilka Gedo',
@@ -3408,7 +3408,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 171,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/sleeping-woman-1933.jpg',
           title: 'Sleeping woman',
           artist: 'Amrita Sher-Gil',
@@ -3428,7 +3428,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 172,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/house-of-cards-1987.jpg',
           title: 'House of Cards',
           artist: 'Piroska Szanto',
@@ -3448,7 +3448,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 173,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/two-women-on-the-shore-1977.jpg',
           title: 'Two women on the shore',
           artist: 'Mary Fedden',
@@ -3468,7 +3468,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 174,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/finale-1979.jpg',
           title: 'Finale',
           artist: 'Edna Andrade',
@@ -3488,7 +3488,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 175,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/bacchus-69-purple-and-green-1982.jpg',
           title: 'Bacchus #69 (purple and green)',
           artist: 'Elaine de Kooning',
@@ -3508,7 +3508,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 176,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/lafarina1952.jpg',
           title: 'The flour',
           artist: 'Maria Lai',
@@ -3528,7 +3528,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 177,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/homenaje-a-max-bill-o-guatemala.jpg',
           title: 'Homenaje a Max Bill o Guatemala',
           artist: 'Lidy Prati',
@@ -3548,7 +3548,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 178,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/throughout-the-neighbourhood.jpg',
           title: 'Throughout the Neighbourhood',
           artist: 'Tia Peltz',
@@ -3568,7 +3568,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 179,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/digital-mudra-1989.jpg',
           title: 'Digital Mudra',
           artist: 'Sonya Rapoport',
@@ -3588,7 +3588,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 180,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/eventide-2002.jpg',
           title: 'Eventide',
           artist: 'Jane Wilson',
@@ -3608,7 +3608,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 181,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/untitled-1963-1.jpg',
           title: 'Untitled',
           artist: 'Tsuruko Yamazaki',
@@ -3628,7 +3628,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 182,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/plant.jpg',
           title: 'Plant',
           artist: 'Maria Stolarova',
@@ -3648,7 +3648,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 183,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/sem-t-tulo-1.jpg',
           title: 'Sem título',
           artist: 'Menez',
@@ -3668,7 +3668,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 184,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/untitled-1985.jpg',
           title: 'Untitled',
           artist: 'Hannelore Baron',
@@ -3688,7 +3688,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 185,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/seeing-the-moon-on-a-hot-summer-day-1987.jpg',
           title: 'Seeing the Moon on a Hot Summer Day',
           artist: 'Helen Frankenthaler',
@@ -3708,7 +3708,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 186,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/glass-slippers-1960.jpg',
           title: 'Glass Slippers',
           artist: 'Jo Baer',
@@ -3728,7 +3728,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 187,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/cultural-head-1973.jpg',
           title: 'Cultural Head',
           artist: 'Marisol Escobar',
@@ -3748,7 +3748,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 188,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/luna-de-silencio-1961.jpg',
           title: 'Luna de silencio',
           artist: 'Lilia Carrillo',
@@ -3768,7 +3768,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 189,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/untitled-1985-.jpg',
           title: 'Untitled',
           artist: 'Lee Bontecou',
@@ -3788,7 +3788,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 190,
           user_id: 1,
-          theme: 'women\'s history',
+          theme: 'Women\'s History Month',
           img_path: './img/march/89m-1989.jpg',
           title: '89m',
           artist: 'Atsuko Tanaka',

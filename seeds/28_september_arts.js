@@ -8,7 +8,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 1,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/the-bird-lover-1952.jpg',
           title: 'The Bird Lover',
           artist: 'Adja Yunkers',
@@ -28,7 +28,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 2,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/composition-1974.jpg',
           title: 'Composition',
           artist: 'Cesar Domela',
@@ -48,7 +48,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 3,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/verdi-requiem-pg-201-05-fragm-1958.jpg',
           title: 'Verdi Requiem, pg. 201-05 (Fragm.)',
           artist: 'Robert Strubin',
@@ -68,7 +68,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 4,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/les-ongles-noirs-1981.jpg',
           title: 'Les ongles noirs',
           artist: 'Aurelie Nemours',
@@ -88,7 +88,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 5,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/venus-of-szentendre-1968.jpg',
           title: 'Venus of Szentendre',
           artist: 'Bela Czobel',
@@ -108,7 +108,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 6,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/garden-in-saint-denis-1980.jpg',
           title: 'Garden in Saint Denis',
           artist: 'Betty Parsons',
@@ -128,7 +128,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 7,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/mankind-s-struggle-for-lasting-peace-detail-1953-1.jpg',
           title: 'Mankind\'s Struggle for Lasting Peace (detail)',
           artist: 'Vela Zanetti',
@@ -148,7 +148,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 8,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/jaune-1962.jpg',
           title: 'Jaune',
           artist: 'Fernand Leduc',
@@ -168,7 +168,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 9,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/man-in-silver-suit.jpg',
           title: 'Man in Silver Suit',
           artist: 'Lucian Freud',
@@ -188,7 +188,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 10,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/infra-black-drawing-1963.jpg',
           title: 'Infra-Black Drawing',
           artist: 'Paul Paun',
@@ -208,7 +208,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 11,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/wait-untitled-xix-1968.jpg',
           title: 'Wait - Untitled XIX',
           artist: 'Piero Dorazio',
@@ -228,7 +228,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 12,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/untitled-12-part-circle-8ft-6in-diameter-1970.jpg',
           title: 'Untitled,12 part Circle, 8ft 6in Diameter',
           artist: 'Robert Swain',
@@ -248,7 +248,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 13,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/les-indes-sur-la-rivi-re-1967.jpg',
           title: 'Les Indes sur la rivière',
           artist: 'Jean Messagier',
@@ -268,7 +268,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 14,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/wachstum-ii-1950.jpg',
           title: 'Wachstum II',
           artist: 'Leo Leuppi',
@@ -288,7 +288,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 15,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/abduction-a-1961.jpg',
           title: 'Abduction A',
           artist: 'Robert Goodnough',
@@ -308,7 +308,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 16,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/multiplicatiion-of-the-arcs-1954.jpg',
           title: 'Multiplicatiion of the Arcs',
           artist: 'Yves Tanguy',
@@ -328,7 +328,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 17,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/illustration-for-v-voiculescu-s-last-shakespearean-sonnets-1982(3).jpg',
           title: 'Illustration for V. Voiculescu\'s "Last Shakespearean Sonnets"',
           artist: 'Margareta Sterian',
@@ -348,7 +348,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 18,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/my-oneness-a-universe-of-colours-1957.jpg',
           title: 'My Oneness, A Universe of Colours',
           artist: 'Alfred Jensen',
@@ -368,7 +368,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 19,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/two-bathers-1960.jpg',
           title: 'Two Bathers',
           artist: 'Elmer Bischoff',
@@ -388,7 +388,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 20,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/collins-st-5p-m-1955.jpg',
           title: 'Collins St. 5p.m.',
           artist: 'John Brack',
@@ -408,7 +408,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 21,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/improvisation-modern-city-cacophonic-1956.jpg',
           title: 'Improvisation (Modern City): Cacophonic!',
           artist: 'Robert Strubin',
@@ -428,7 +428,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 22,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/the-acrobatic-rectangle-per-eleven-1967.jpg',
           title: 'The Acrobatic Rectangle, Per Eleven',
           artist: 'Alfred Jensen',
@@ -448,7 +448,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 23,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/portrait-of-a-beauty-among-peonies-1958.jpg',
           title: 'Portrait of a Beauty Among Peonies',
           artist: 'Le Pho',
@@ -468,7 +468,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 24,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/untitled-1958.jpg',
           title: 'Untitled',
           artist: 'Gunther Gerzso',
@@ -488,7 +488,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 25,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/portrait-1970.jpg',
           title: 'Portrait',
           artist: 'Abidin Dino',
@@ -508,7 +508,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 26,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/zurich-1974.jpg',
           title: 'Zurich',
           artist: 'Raoul Ubac',
@@ -528,7 +528,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 27,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/moon-meditation-1960.jpg',
           title: 'Moon Meditation',
           artist: 'Richard Pousette-Dart',
@@ -548,7 +548,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 28,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/minoa-1962.jpg',
           title: 'Minoa',
           artist: 'Paul Feeley',
@@ -568,7 +568,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 29,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/digging-for-night-crawlers-1985.jpg',
           title: 'Digging for Night Crawlers',
           artist: 'Robert Qualters',
@@ -588,7 +588,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 30,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/untitled-1950-1.jpg',
           title: 'Untitled',
           artist: 'Julius Bissier',
@@ -608,7 +608,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 31,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/monadi-1949.jpg',
           title: 'Monadi',
           artist: 'Mario Ballocco',
@@ -628,7 +628,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 32,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/est-calor-em-evora-1983.jpg',
           title: 'Està Calor em Evora',
           artist: 'Antonio Dacosta',
@@ -648,7 +648,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 33,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/cronus-young-1968.jpg',
           title: 'Cronus Young',
           artist: 'David Hare',
@@ -668,7 +668,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 34,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/typographic-nude-1965.jpg',
           title: 'Typographic Nude',
           artist: 'Robert Heinecken',
@@ -688,7 +688,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 35,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/10th-sculpture-1963.jpg',
           title: '10th Sculpture',
           artist: 'Michael Bolus',
@@ -708,7 +708,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 36,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/fish-bowl.jpg',
           title: 'Fish Bowl',
           artist: 'Erte',
@@ -728,7 +728,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 37,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/three-trees-georgia-1969.jpg',
           title: 'Three Trees, Georgia',
           artist: 'Ivan Albright',
@@ -748,7 +748,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 38,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/tricomplex-1959.jpg',
           title: 'Tricomplex',
           artist: 'Leo Leuppi',
@@ -768,7 +768,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 39,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/cotyo-perfica-volupie-1963.jpg',
           title: 'Cotyo, Perfica, Volupie',
           artist: 'Felix Labisse',
@@ -788,7 +788,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 40,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/x-ray-of-m-o-s-skull-1964.jpg',
           title: 'X-Ray of M.O.\'s Skull',
           artist: 'Meret Oppenheim',
@@ -808,7 +808,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 41,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/madchen-am-meer.jpg',
           title: 'Madchen am Meer',
           artist: 'Dieter Asmus',
@@ -828,7 +828,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 42,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/sunrise-in-mallorca.jpg',
           title: 'Sunrise in Mallorca',
           artist: 'Jerry W. McDaniel',
@@ -848,7 +848,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 43,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/escale-1964.jpg',
           title: 'Escale',
           artist: 'Herve Telemaque',
@@ -868,7 +868,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 44,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/web910.jpg',
           title: 'Para Largo Tiempo',
           artist: 'Vlady Kibalchich Rusakov',
@@ -888,7 +888,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 45,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/untitled-death-mask-1978-1.jpg',
           title: 'Untitled (Death Mask)',
           artist: 'Arnulf Rainer',
@@ -908,7 +908,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 46,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/self-portrait-1955.jpg',
           title: 'Self-portrait',
           artist: 'John Brack',
@@ -928,7 +928,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 47,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/forme-1998.jpg',
           title: 'Forme',
           artist: 'Olivier Debre',
@@ -948,7 +948,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 48,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/untitled-1956-1.jpg',
           title: 'Untitled',
           artist: 'Zao Wou-Ki',
@@ -968,7 +968,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 49,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/composition-1954.jpg',
           title: 'Composition',
           artist: 'Huguette Arthur Bertrand',
@@ -988,7 +988,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 50,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/peinture-23-mai-1969-1969.jpg',
           title: 'Peinture 23 Mai 1969',
           artist: 'Pierre Soulages',
@@ -1008,7 +1008,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 51,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/naufragio-2003.jpg',
           title: 'Naufragio',
           artist: 'Carlo Maria Mariani',
@@ -1028,7 +1028,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 52,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/black-and-blue-3-2011.jpg',
           title: 'Black and Blue 3',
           artist: 'Cesar Paternosto',
@@ -1048,7 +1048,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 53,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/noir-jaune-et-bleu-1991.jpg',
           title: 'Noir, Jaune et bleu',
           artist: 'Albert Bitran',
@@ -1068,7 +1068,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 54,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/macarena-esperanza-1971.jpg',
           title: 'Macarena Esperanza',
           artist: 'Audrey Flack',
@@ -1088,7 +1088,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 55,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/ombre-port-e-de-maurice-henry-1968.jpg',
           title: 'Ombre portée de Maurice Henry',
           artist: 'Lourdes Castro',
@@ -1108,7 +1108,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 56,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/interno-con-piano-forte-1968.jpg',
           title: 'Interno con piano forte',
           artist: 'Valerio Adami',
@@ -1128,7 +1128,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 57,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/serigrafia.jpg',
           title: 'Serigrafia',
           artist: 'Ramirez Villamizar',
@@ -1148,7 +1148,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 58,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/exist-ncia-1985.jpg',
           title: 'Existência',
           artist: 'Manabu Mabe',
@@ -1168,7 +1168,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 59,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/fish.jpg',
           title: 'Fish',
           artist: 'Aldemir Martins',
@@ -1188,7 +1188,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 60,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/accomplishments-1964.jpg',
           title: 'Accomplishments',
           artist: 'James Lee Byars',
@@ -1208,7 +1208,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 61,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/untitled-one-hundred-spaces-1997.jpg',
           title: 'Untitled (One Hundred Spaces)',
           artist: 'Rachel Whiteread',
@@ -1228,7 +1228,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 62,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/composition-2010.jpg',
           title: 'Composition',
           artist: 'JonOne',
@@ -1248,7 +1248,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 63,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/time-to-dance-2012.jpg',
           title: 'Time to Dance',
           artist: 'John C. Kuchera',
@@ -1268,7 +1268,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 64,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/flat-1000x1000-075-f-u1-1-2.jpg',
           title: 'Unspiral',
           artist: 'Gianni Sarcone',
@@ -1288,7 +1288,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 65,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/karma-2003.jpg',
           title: 'Karma',
           artist: 'Do-ho Suh',
@@ -1308,7 +1308,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 66,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/islam-1965.jpg',
           title: 'Islam',
           artist: 'Carla Accardi',
@@ -1328,7 +1328,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 67,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/light-1961.jpg',
           title: 'Light',
           artist: 'Petre Abrudan',
@@ -1348,7 +1348,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 68,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/eve-1963.jpg',
           title: 'Eve',
           artist: 'Mordecai Ardon',
@@ -1368,7 +1368,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 69,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/four-darks-in-red-1958.jpg',
           title: 'Four Darks in Red',
           artist: 'Mark Rothko',
@@ -1388,7 +1388,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 70,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/corona-i-1995.jpg',
           title: 'Corona I',
           artist: 'Paul Brach',
@@ -1408,7 +1408,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 71,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/number-23-1960.jpg',
           title: 'Number 23',
           artist: 'John McLaughlin',
@@ -1428,7 +1428,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 72,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/the-cold-war-blonde-1959.jpg',
           title: 'The Cold-War Blonde',
           artist: 'Robert G. Harris',
@@ -1448,7 +1448,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 73,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/le-passage-1956.jpg',
           title: 'Le Passage',
           artist: 'Kay Sage',
@@ -1468,7 +1468,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 74,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/dried-flowers-1964.jpg',
           title: 'Dried Flowers',
           artist: 'Hiroyuki Tajima',
@@ -1488,7 +1488,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 75,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/dr-pepper-1948.jpg',
           title: 'Dr. Pepper',
           artist: 'Eduardo Paolozzi',
@@ -1508,7 +1508,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 76,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/desmaterializa-o-ascens-o-1990.jpg',
           title: 'Desmaterialização - Ascensão',
           artist: 'Eduardo Nery',
@@ -1528,7 +1528,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 77,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/may-that-nuclear-war-be-cursed-1978.jpg',
           title: 'May That Nuclear War Be Cursed!',
           artist: 'Maria Primachenko',
@@ -1548,7 +1548,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 78,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/pilar-1955.jpg',
           title: 'Pilar',
           artist: 'Jose Manuel Capuletti',
@@ -1568,7 +1568,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 79,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/nino-2000.jpg',
           title: 'Nino',
           artist: 'George Mavroides',
@@ -1588,7 +1588,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 80,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/sliced-tomatoes-1979.jpg',
           title: 'Sliced Tomatoes',
           artist: 'Marjorie Strider',
@@ -1608,7 +1608,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 81,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/over-ten-thousand-individual-works-1991.jpg',
           title: 'Over Ten Thousand Individual Works',
           artist: 'Allan McCollum',
@@ -1628,7 +1628,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 82,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/cambridge-green-1968.jpg',
           title: 'Cambridge Green',
           artist: 'Mark Lancaster',
@@ -1648,7 +1648,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 83,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/new-frontiers-slogan-von-j-f-kennedy-1964.jpg',
           title: 'New Frontiers (Slogan von J.F. Kennedy)',
           artist: 'Samuel Buri',
@@ -1668,7 +1668,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 84,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/untitled-1989(4).jpg',
           title: 'Untitled',
           artist: 'Mostafa Dashti',
@@ -1688,7 +1688,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 85,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/ang-magbabayo-pounding-rice-1979.jpg',
           title: 'Ang Magbabayo (Pounding Rice)',
           artist: 'Vicente Manansala',
@@ -1708,7 +1708,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 86,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/eclipse-1962.jpg',
           title: 'Eclipse',
           artist: 'Jeremy Moon',
@@ -1728,7 +1728,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 87,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/polyptych-m-1968.jpg',
           title: 'Polyptych M',
           artist: 'Alberto Biasi',
@@ -1748,7 +1748,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 88,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/stone-bird-1952.jpg',
           title: 'Stone Bird',
           artist: 'Endre Balint',
@@ -1768,7 +1768,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 89,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/black-flowers-september-26-1999-1999.jpg',
           title: 'Black Flowers, September 26, 1999',
           artist: 'Donald Sultan',
@@ -1788,7 +1788,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 90,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/still-life-autumn-fashion-1978.jpg',
           title: 'Still Life: Autumn Fashion',
           artist: 'Patrick Caulfield',
@@ -1808,7 +1808,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 91,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/number-20-1949.jpg',
           title: 'Number 20',
           artist: 'Bradley Walker Tomlin',
@@ -1828,7 +1828,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 92,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/untitled-1947.jpg',
           title: 'Untitled',
           artist: 'Forrest Bess',
@@ -1848,7 +1848,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 93,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/460-hommage-au-tachisme-1961(1).jpg',
           title: '460 Hommage au Tachisme',
           artist: 'Friedensreich Hundertwasser',
@@ -1868,7 +1868,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 94,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/ideal-life-1950.jpg',
           title: 'Ideal Life',
           artist: 'Leonor Fini',
@@ -1888,7 +1888,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 95,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/piron-piron-1975.jpg',
           title: 'Piron Piron',
           artist: 'Sadamasa Motonaga',
@@ -1908,7 +1908,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 96,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/john-coltrane-1961.jpg',
           title: 'John Coltrane',
           artist: 'Gandy Brodie',
@@ -1928,7 +1928,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 97,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/east-wind-moon-wind-1959.jpg',
           title: 'East Wind / Moon Wind',
           artist: 'Tadashi Nakayama',
@@ -1948,7 +1948,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 98,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/zone.jpg',
           title: 'Zone',
           artist: 'Philip Guston',
@@ -1968,7 +1968,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 99,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/freeway-exit-1995.jpg',
           title: 'Freeway (Exit)',
           artist: 'Howard Arkley',
@@ -1988,7 +1988,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 100,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/untitled-1946.jpg',
           title: 'Untitled',
           artist: 'Mario Prassinos',
@@ -2008,7 +2008,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 101,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/f-los-ouvir-a-tua-corneta-negro-1974.jpg',
           title: 'Fá-los ouvir a tua corneta negro',
           artist: 'Sa Nogueira',
@@ -2028,7 +2028,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 102,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/bloodline-big-family-1995.jpg',
           title: 'Bloodline - Big Family',
           artist: 'Zhang Xiaogang',
@@ -2048,7 +2048,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 103,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/tang-2007.jpg',
           title: 'Tang',
           artist: 'Kenny Scharf',
@@ -2068,7 +2068,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 104,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/lippy-1968.jpg',
           title: 'Lippy',
           artist: 'Jim Nutt',
@@ -2088,7 +2088,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 105,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/untitled-1968.jpg',
           title: 'Untitled',
           artist: 'Dan Christensen',
@@ -2108,7 +2108,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 106,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/still-life-with-bud-1992.jpg',
           title: 'Still Life with Bud',
           artist: 'Paul Wonner',
@@ -2128,7 +2128,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 107,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/women-and-dog-1964.jpg',
           title: 'Women and Dog',
           artist: 'Marisol Escobar',
@@ -2148,7 +2148,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 108,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/big-sur-and-branch-1974.jpg',
           title: 'Big Sur and Branch',
           artist: 'Eyvind Earle',
@@ -2168,7 +2168,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 109,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/wild-orange-story-1971.jpg',
           title: 'Wild Orange Story',
           artist: 'Johnny Warangkula Tjupurrula',
@@ -2188,7 +2188,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 110,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/green-fields-1994.jpg',
           title: 'Green Fields',
           artist: 'Eyvind Earle',
@@ -2208,7 +2208,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 111,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/custom-print-no-ii-1965.jpg',
           title: 'Custom Print No. II',
           artist: 'Peter Phillips',
@@ -2228,7 +2228,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 112,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/here-is-a-sign-1970.jpg',
           title: 'Here is a Sign',
           artist: 'Forrest Bess',
@@ -2248,7 +2248,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 113,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/neoconcret-ballet-ii-1959.jpg',
           title: 'Neoconcret Ballet #II',
           artist: 'Lygia Pape',
@@ -2268,7 +2268,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 114,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/blue-head-1961.jpg',
           title: 'Blue head',
           artist: 'Gerard Sekoto',
@@ -2288,7 +2288,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 115,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/think-tank-2003.jpg',
           title: 'Think Tank',
           artist: 'Banksy',
@@ -2308,7 +2308,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 116,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/fractal-flasher-1994.jpg',
           title: 'Fractal Flasher',
           artist: 'Nam June Paik',
@@ -2328,7 +2328,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 117,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/luna-de-silencio-1961.jpg',
           title: 'Luna de silencio',
           artist: 'Lilia Carrillo',
@@ -2348,7 +2348,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 118,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/bichos-1963(1).jpg',
           title: 'Bichos',
           artist: 'Ivan Serpa',
@@ -2368,7 +2368,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 119,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/delaumbre-bleue-1950.jpg',
           title: 'Delaumbre Bleue',
           artist: 'Olle Baertling',
@@ -2388,7 +2388,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 120,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/african-night-market-1965.jpg',
           title: 'African Night Market',
           artist: 'Walter Battiss',
@@ -2408,7 +2408,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 121,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/puissance-oc-anique-2004.jpg',
           title: 'Puissance océanique',
           artist: 'Chu Teh-Chun',
@@ -2428,7 +2428,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 122,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/leopard.jpg',
           title: 'Leopard',
           artist: 'Antonio Ligabue',
@@ -2448,7 +2448,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 123,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/dyptique-1987.jpg',
           title: 'Dyptique',
           artist: 'Luciano Bartolini',
@@ -2468,7 +2468,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 124,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/the-dressmaker-1982.jpg',
           title: 'The Dressmaker',
           artist: 'Conrad Marca-Relli',
@@ -2488,7 +2488,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 125,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/mlr-1992-1.jpg',
           title: 'MLR',
           artist: 'Isa Genzken',
@@ -2508,7 +2508,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 126,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/cosmic-donut-2008.jpg',
           title: 'Cosmic Donut',
           artist: 'Kenny Scharf',
@@ -2528,7 +2528,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 127,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/green-triptych-1963.jpg',
           title: 'Green Triptych',
           artist: 'Marjorie Strider',
@@ -2548,7 +2548,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 128,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/watching-the-sea-1989.jpg',
           title: 'Watching the Sea',
           artist: 'Yayoi Kusama',
@@ -2568,7 +2568,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 129,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/the-death-of-james-lee-byars-1994.jpg',
           title: 'The Death of James Lee Byars',
           artist: 'James Lee Byars',
@@ -2588,7 +2588,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 130,
           user_id: 1,
-          theme: 'post-WWII modern',
+          theme: 'Modern Art after World War II',
           img_path: './img/september/carnival-figures-1956.jpg',
           title: 'Carnival Figures',
           artist: 'Rene Portocarrero',

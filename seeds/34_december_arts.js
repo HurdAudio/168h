@@ -8,7 +8,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 1,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/44-04,Suspense.jpg',
           title: 'Suspense Comics',
           artist: 'Nina Albright',
@@ -28,7 +28,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 2,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/34-00,The NatlGrdsman.jpg',
           title: 'National Guardsman',
           artist: 'Newton H. Alfred',
@@ -48,7 +48,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 3,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/17-00,Maupassant.jpg',
           title: 'Book Illustration',
           artist: 'James E. Allen',
@@ -68,7 +68,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 4,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/06-06,MotorBoys.jpg',
           title: 'The Motor Boys',
           artist: 'W. M. Allison',
@@ -88,7 +88,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 5,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/1941-04,SpicyMystery.jpg',
           title: 'Spicy Mystery',
           artist: 'Allen Anderson',
@@ -108,7 +108,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 6,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/21-07,TheAmer1.jpg',
           title: 'The American',
           artist: 'Frederic A. Anderson',
@@ -128,7 +128,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 7,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/45-01,PlanetCmx.jpg',
           title: 'Planet Comics',
           artist: 'Murphy Anderson',
@@ -148,7 +148,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 8,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/30-00,Interior1.jpg',
           title: 'Clues illus.',
           artist: 'Lyman Anderson',
@@ -168,7 +168,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 9,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/25-01-24,Newspaper.jpg',
           title: 'Newspaper',
           artist: 'Joe Archibald',
@@ -188,7 +188,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 10,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/50-00,FantPubCo-17.jpg',
           title: 'book cover',
           artist: 'Jon Arfstrom',
@@ -208,7 +208,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 11,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/27-06,Yearbook.jpg',
           title: 'High School Yearbook',
           artist: 'Ed Ashe, Jr.',
@@ -228,7 +228,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 12,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/35-12,NewComics.jpg',
           title: 'New Comics',
           artist: 'Rafael Astarita',
@@ -248,7 +248,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 13,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/13-02,StNicholas.jpg',
           title: 'St. Nicholas',
           artist: 'George Avison',
@@ -268,7 +268,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 14,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/39-00,CliffCornwall1.jpg',
           title: 'Cliff Cornwall',
           artist: 'John E. Ayman',
@@ -288,7 +288,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 15,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/28-01-28,LoveS-2.jpg',
           title: 'Love Story',
           artist: 'Constance Benson Bailey',
@@ -308,7 +308,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 16,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/17-05,DeWittClinton.jpg',
           title: 'DeWitt Clinton',
           artist: 'Adolphe Barreaux',
@@ -328,7 +328,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 17,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/50-04,Argosy.jpg',
           title: 'Argosy',
           artist: 'Harry Barton',
@@ -348,7 +348,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 18,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/41-05,DocSavage.jpg',
           title: 'Doc Savage Comics',
           artist: 'Ken Battefield',
@@ -368,7 +368,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 19,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/1931-11,Gnglnd.jpg',
           title: 'Gangland Stories',
           artist: 'Walter Baumhofer',
@@ -388,7 +388,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 20,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/29-10,JuniorHome.JPG',
           title: 'Junior Home',
           artist: 'Robert Beebe',
@@ -408,7 +408,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 21,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/28-08-16,War.jpg',
           title: 'War Stories',
           artist: 'Rudolph Belarski',
@@ -428,7 +428,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 22,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/52-00,Illus2.jpg',
           title: 'illustration',
           artist: 'Jim Bentley',
@@ -448,7 +448,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 23,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/34-00,Dutton.jpg',
           title: 'Dutton Books',
           artist: 'David Berger',
@@ -468,7 +468,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 24,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/35-10,Bedtime.jpg',
           title: 'Bedtime Stories',
           artist: 'Earle Bergey ',
@@ -488,7 +488,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 25,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/36-08,ThrillWndr.jpg',
           title: 'Thrilling Wonder',
           artist: 'Jack Binder',
@@ -508,7 +508,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 26,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/35-05,AllStarFcton.jpg',
           title: 'All Star Fiction',
           artist: 'Lorence Bjorklund',
@@ -528,7 +528,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 27,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/1929-08,MM1.jpg',
           title: 'Modern Mechanics',
           artist: '(Blaine) Normand Saunders',
@@ -548,7 +548,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 28,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/28-00,Kiss.jpg',
           title: 'Kiss The Crocodile',
           artist: 'Frederick Blakeslee',
@@ -568,7 +568,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 29,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/36-06,Yearbook.jpg',
           title: 'School Yearbook',
           artist: 'Chester Bloom',
@@ -588,7 +588,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 30,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/34-01,WRom-1.jpg',
           title: 'Western Romances',
           artist: 'Jon L. Blummer',
@@ -608,7 +608,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 31,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/1941-05,Cosmic.jpg',
           title: 'Cosmic',
           artist: 'Hannes Bok',
@@ -628,7 +628,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 32,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/23-04-21,Judge.jpg',
           title: 'Judge',
           artist: 'Enoch Bolles',
@@ -648,7 +648,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 33,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/52-00,MysteryRanch.jpg',
           title: 'Pocket Book #895',
           artist: 'Stanley Borack',
@@ -668,7 +668,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 34,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/02-00,TheFrenchReople.jpg',
           title: 'The French People',
           artist: 'Arthur R. Bowker',
@@ -688,7 +688,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 35,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/42-08,FantAdv1.jpg',
           title: 'Fantastic Adv.',
           artist: 'William J. Brady',
@@ -708,7 +708,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 36,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/45-09,CaptFlight9.jpg',
           title: 'Capt. Flight',
           artist: 'Ann Brewster',
@@ -728,7 +728,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 37,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/29-12,AmazingS.JPG',
           title: 'Amazing Stories',
           artist: 'Austin Briggs',
@@ -748,7 +748,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 38,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/06-00,SchroeberWindow.jpg',
           title: 'Stained Glass',
           artist: 'W. C. Brigham',
@@ -768,7 +768,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 39,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/22-03-01,Mystery.jpg',
           title: 'Mystery',
           artist: 'W. C. Brigham, Jr.',
@@ -788,7 +788,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 40,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/23-10,Munseys.jpg',
           title: 'Munsey\'s Magazine',
           artist: 'Howard V. Brown',
@@ -808,7 +808,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 41,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/18-00,KrushingKaiser.jpg',
           title: 'Krushing Kaiserism',
           artist: 'Ken Browne',
@@ -828,7 +828,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 42,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/32-06,Oriental.jpg',
           title: 'Oriental Stories',
           artist: 'Margaret Brundage',
@@ -848,7 +848,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 43,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/02-06-29,NYHerald.jpg',
           title: 'N Y Herald',
           artist: 'Leighton Budd',
@@ -868,7 +868,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 44,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/1928-11,WzBng1.jpg',
           title: 'Whiz Bang',
           artist: 'Carl Buettner',
@@ -888,7 +888,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 45,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/35-07-1st,RnchRom2.jpg',
           title: 'Ranch Romances',
           artist: 'H. D. Bugbee',
@@ -908,7 +908,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 46,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/22-00,Ad.jpg',
           title: 'Advertisement',
           artist: 'R. A. Burley',
@@ -928,7 +928,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 47,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/10-00,JohnMrsch.jpg',
           title: 'John Marsh\'s Millions',
           artist: 'Samuel Cahan',
@@ -948,7 +948,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 48,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/19-11.BoysLife.jpg',
           title: 'Boy\'s Life',
           artist: 'Robert A. Cameron',
@@ -968,7 +968,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 49,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/21-09,BreezyS.jpg',
           title: 'Breezy Stories',
           artist: 'Jules Cannert',
@@ -988,7 +988,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 50,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/35-12,Prison-p21.jpg',
           title: 'Prison Life',
           artist: 'Ralph Carlson',
@@ -1008,7 +1008,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 51,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/25-Win,Follies.jpg',
           title: 'Win Follies',
           artist: 'Worth Carnahan',
@@ -1028,7 +1028,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 52,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/1893,WitchofSalem.jpg',
           title: 'Witch of Salem',
           artist: 'F. A. Carter',
@@ -1048,7 +1048,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 53,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/38-03-15,Shadow1.jpg',
           title: 'Shadow illus.',
           artist: 'Edd Cartier',
@@ -1068,7 +1068,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 54,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/37-06,WTls.jpg',
           title: 'Western Trails',
           artist: 'Richard Case',
@@ -1088,7 +1088,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 55,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/36-05,MystAdv3.jpg',
           title: 'Mystery Adventure',
           artist: 'Jim Chambers',
@@ -1108,7 +1108,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 56,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/25-00,ShirtAd.jpg',
           title: 'Advertisement',
           artist: 'Joseph Chenoweth',
@@ -1128,7 +1128,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 57,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/29-01,Mohawk.jpg',
           title: 'Mohawk Magazine',
           artist: 'Sam Cherry',
@@ -1148,7 +1148,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 58,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/41-11,ThllMyst.jpg',
           title: 'Thrilling Mystery',
           artist: 'Ernest Chiriacka',
@@ -1168,7 +1168,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 59,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/34-02,TDA.jpg',
           title: 'Ten Detective Aces',
           artist: 'Emery Clarke',
@@ -1188,7 +1188,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 60,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/19-04-26,Newspaper.jpg',
           title: 'Newspaper',
           artist: 'Henry Clive',
@@ -1208,7 +1208,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 61,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/37-08,Romance.jpg',
           title: 'Romance',
           artist: 'John Clymer',
@@ -1228,7 +1228,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 62,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/44-00,Sword2.jpg',
           title: 'The Sword is Drawn',
           artist: 'Dunc Coburn',
@@ -1248,7 +1248,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 63,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/29-03,AirStories.jpg',
           title: 'Air Stories',
           artist: 'C. B. Colby',
@@ -1268,7 +1268,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 64,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/43-00,PhoenixPress.jpg',
           title: 'Phoenix Press',
           artist: 'L. B. Cole',
@@ -1288,7 +1288,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 65,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/17-04-08,Newspaper.jpg',
           title: 'Newspaper',
           artist: 'Charles Coll',
@@ -1308,7 +1308,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 66,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/41-Fal,FamousW.jpg',
           title: 'Fall Famous Western',
           artist: 'Sam Cooper',
@@ -1328,7 +1328,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 67,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/24-00,FarmHouse.jpg',
           title: 'Farm House',
           artist: 'Thomas Cooper',
@@ -1348,7 +1348,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 68,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/14-00,Chicago.jpg',
           title: 'Chicago Tribune',
           artist: 'Dean Cornwell',
@@ -1368,7 +1368,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 69,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/37-01,ThrllW.jpg',
           title: 'Thrilling Western',
           artist: 'Peter Costanza',
@@ -1388,7 +1388,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 70,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/13-11-15,Pop.jpg',
           title: 'The Popular',
           artist: 'John A. Coughlin',
@@ -1408,7 +1408,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 71,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/44-00,Illus2.jpg',
           title: 'illustration',
           artist: 'Lee Brown Coye',
@@ -1428,7 +1428,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 72,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/23-00,Ad.jpg',
           title: 'Advertisement',
           artist: 'Fred Craft',
@@ -1448,7 +1448,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 73,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/52-12,GiantW.jpg',
           title: 'Giant Western',
           artist: 'Mel Crair',
@@ -1468,7 +1468,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 74,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/40-00,ComeColorsCome.jpg',
           title: 'Come Colors Come',
           artist: 'Reed Crandall',
@@ -1488,7 +1488,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 75,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/10-00,UMYrbk1.jpg',
           title: 'Univ of MO Year Book',
           artist: 'Monte Crews',
@@ -1508,7 +1508,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 76,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/23-02,Classic.jpg',
           title: 'Movie Classic',
           artist: 'Truda Dahl',
@@ -1528,7 +1528,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 77,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/06-12,NtlAccts2.jpg',
           title: 'Business Man\'s',
           artist: 'Walter Darr',
@@ -1548,7 +1548,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 78,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/25-00,ComicStrip.jpg',
           title: 'Percy Plantaganet',
           artist: 'Wynne W. Davies',
@@ -1568,7 +1568,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 79,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/33-12-16,Lbty1.jpg',
           title: 'Liberty',
           artist: 'Ray Dean',
@@ -1588,7 +1588,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 80,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/29-00,Illus.jpg',
           title: 'Magazine Illustration',
           artist: 'Charles DeFeo',
@@ -1608,7 +1608,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 81,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/27-05,Everybody\'s.jpg',
           title: 'Everybody\'s',
           artist: 'Gerard Delano',
@@ -1628,7 +1628,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 82,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/40-08-24,WS.jpg',
           title: 'Western Story',
           artist: 'Ed DeLavy',
@@ -1648,7 +1648,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 83,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/37-03,GayBook1.jpg',
           title: 'Gay Book',
           artist: 'R. C. Dell',
@@ -1668,7 +1668,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 84,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/08-11,Pearsons.jpg',
           title: 'Pearson\'s Magazine',
           artist: 'Walter De Maris',
@@ -1688,7 +1688,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 85,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/34-01,ThllDet.jpg',
           title: 'Thrilling Detective',
           artist: 'Rafael de Soto',
@@ -1708,7 +1708,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 86,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/22-05,Engraver.jpg',
           title: 'Engraver',
           artist: 'Harold C. Detje',
@@ -1728,7 +1728,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 87,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/12-06,YrBk-01.jpg',
           title: 'College Yearbook',
           artist: 'Elliott Dold',
@@ -1748,7 +1748,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 88,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/25-12,WeirdTales.jpg',
           title: 'Weird Tales',
           artist: 'Joseph Doolin',
@@ -1768,7 +1768,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 89,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/44-00,ClimLab.jpg',
           title: 'Army Climate Lab',
           artist: 'Clarence Doore',
@@ -1788,7 +1788,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 90,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/37-07,PrsnlAdvS.jpg',
           title: 'Personal Adventure',
           artist: 'Albert Drake',
@@ -1808,7 +1808,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 91,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/47-00,Bantam107.jpg',
           title: 'Bantam #107',
           artist: 'Joseph Dreany',
@@ -1828,7 +1828,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 92,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/25-00,Days49.jpg',
           title: 'Book Jacket',
           artist: 'John Drew',
@@ -1848,7 +1848,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 93,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/38-06,SilkStks.jpg',
           title: 'Silk Stockings',
           artist: 'Peter Driben',
@@ -1868,7 +1868,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 94,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/37-Win,Aces04.jpg',
           title: 'Winter Aces',
           artist: 'Roderick Duff',
@@ -1888,7 +1888,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 95,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/07-00,Plowman.jpeg',
           title: 'The Plowman',
           artist: 'Harvey Dunn',
@@ -1908,7 +1908,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 96,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/03-06,Pearsons.jpg',
           title: 'Pearson\'s Magazine',
           artist: 'W. Herbert Dunton',
@@ -1928,7 +1928,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 97,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/41-08-30,SEP.jpg',
           title: 'Sat Evening Post',
           artist: 'Charles Dye',
@@ -1948,7 +1948,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 98,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/22-04-13,PrintersIncAd.jpg',
           title: 'Advertisement',
           artist: 'Frank A. Eboli',
@@ -1968,7 +1968,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 99,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/27-03-15,AceHi.jpg',
           title: 'Ace-High',
           artist: 'Nicholas Eggenhofer',
@@ -1988,7 +1988,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 100,
           user_id: 1,
-          theme: 'pulp',
+          theme: 'Pulp Art',
           img_path: './img/december/35-09,PrsnLf.jpg',
           title: 'Prison Life',
           artist: 'Monroe Eisenberg',

@@ -8,7 +8,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 1,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/thicket-no-2-1990.jpg',
           title: 'Thicket No. 2',
           artist: 'Roni Horn',
@@ -28,7 +28,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 2,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/colour-as-a-shadow-2005.jpg',
           title: 'Colour as a Shadow',
           artist: 'Katsuhito Nishikawa',
@@ -48,7 +48,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 3,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/seascape-north-atlantic-ocean-cape-breton-1996.jpg',
           title: 'Seascape: North Atlantic Ocean, Cape Breton',
           artist: 'Hiroshi Sugimoto',
@@ -68,7 +68,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 4,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/painting-06-13-2006.jpg',
           title: 'Painting #06-13',
           artist: 'Rudolf de Crignis',
@@ -88,7 +88,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 5,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/12-part-line-painting-1984.jpg',
           title: '12 Part Line Painting',
           artist: 'Alan Charlton',
@@ -108,7 +108,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 6,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/pintura-1972.jpg',
           title: 'Pintura',
           artist: 'Fernando Calhau',
@@ -128,7 +128,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 7,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/bivest-1-1965.jpg',
           title: 'Bivest + 1',
           artist: 'Gianni Piacentino',
@@ -148,7 +148,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 8,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/untitled-no-5-1974.jpg',
           title: 'Untitled No. 5',
           artist: 'Michael Heizer',
@@ -168,7 +168,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 9,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/untitled-2001.jpg',
           title: 'Untitled',
           artist: 'Olivier Mosset',
@@ -188,7 +188,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 10,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/deep-rhythm-of-lights-1975.jpg',
           title: 'Deep Rhythm of Lights',
           artist: 'Kishio Suga',
@@ -208,7 +208,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 11,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/untitled-1986.jpg',
           title: 'Untitled',
           artist: 'Fred Sandback',
@@ -228,7 +228,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 12,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/the-whole-soul-summed-up-1979.jpg',
           title: 'The Whole Soul Summed Up',
           artist: 'Christopher Wilmarth',
@@ -248,7 +248,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 13,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/yellow-painting-14-1995.jpg',
           title: 'Yellow Painting #14',
           artist: 'Joseph Marioni',
@@ -268,7 +268,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 14,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/untitled-1993.jpg',
           title: 'Untitled',
           artist: 'Gunter Umberg',
@@ -288,7 +288,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 15,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/step-by-step-2002.jpg',
           title: 'Step by Step',
           artist: 'Richard Tuttle',
@@ -308,7 +308,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 16,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/vii-15-din-14-1989.jpg',
           title: 'VII 15 Din 14',
           artist: 'Hanne Darboven',
@@ -328,7 +328,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 17,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/d-finition-m-thode-505-lettre-au-docteur-barnes-2010.jpg',
           title: 'dé-finition/méthode #505: lettre au docteur barnes',
           artist: 'Claude Rutault',
@@ -348,7 +348,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 18,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/untitled-712-7ft-x-7ft-1978.jpg',
           title: 'Untitled, 712, 7ft x 7ft',
           artist: 'Robert Swain',
@@ -368,7 +368,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 19,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/green-portrait-9.jpg',
           title: 'Green Portrait #9',
           artist: 'Phil Sims',
@@ -388,7 +388,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 20,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/as-if-to-1992.jpg',
           title: 'As, If, To',
           artist: 'Peter Downsbrough',
@@ -408,7 +408,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 21,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/stanza-azzurra-2006.jpg',
           title: 'Stanza azzurra',
           artist: 'Ettore Spalletti',
@@ -428,7 +428,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 22,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/portrait-1993.jpg',
           title: 'Portrait',
           artist: 'Imi Knoebel',
@@ -448,7 +448,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 23,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/la-maison-de-la-celle-saint-cloud-1974.jpg',
           title: 'La Maison de La Celle-Saint-Cloud',
           artist: 'Jean-Pierre Raynaud',
@@ -468,7 +468,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 24,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/barcelona-7-1989.jpg',
           title: 'Barcelona 7',
           artist: 'Larry Bell',
@@ -488,7 +488,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 25,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/maleri-1964.jpg',
           title: 'Maleri',
           artist: 'Jan Groth',
@@ -508,7 +508,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 26,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/for-pearl-1970(1).jpg',
           title: 'For Pearl',
           artist: 'Brice Marden',
@@ -528,7 +528,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 27,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/photo-souvenir-1-carr-1-cercle-4-triangles-hauts-reliefs-situ-s-h-travail-situ-2010.jpg',
           title: 'Photo-souvenir: 1 carré = 1 cercle + 4 triangles, Hauts-reliefs situés H, travail situé',
           artist: 'Daniel Buren',
@@ -548,7 +548,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 28,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/sem-titulo-1983.jpg',
           title: 'Sem titulo',
           artist: 'Angelo de Sousa',
@@ -568,7 +568,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 29,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/28-septembre-1984-1992.jpg',
           title: '28 septembre 1984',
           artist: 'Michel Parmentier',
@@ -588,7 +588,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 30,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/always-now-1981.jpg',
           title: 'Always Now',
           artist: 'Tess Jaray',
@@ -608,7 +608,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 31,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/tudy-attic-series-xiv-1991.jpg',
           title: 'tudy Attic Series XIV',
           artist: 'Robert Mangold',
@@ -628,7 +628,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 32,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/schema-luminoso-variabile-rr66-1969.jpg',
           title: 'Schema luminoso variabile RR66',
           artist: 'Grazia Varisco',
@@ -648,7 +648,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 33,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/untitled-1995 (1).jpg',
           title: 'Untitled',
           artist: 'James Licini',
@@ -668,7 +668,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 34,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/imprints-of-a-no-50-paintbrush-repeated-at-regular-intervals-of-30-cm-1989.jpg',
           title: 'Imprints of a No. 50 Paintbrush Repeated at Regular Intervals of 30 cm.',
           artist: 'Niele Toroni',
@@ -688,7 +688,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 35,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/untitled-1970-9.jpg',
           title: 'Untitled',
           artist: 'Nasreen Mohamedi',
@@ -708,7 +708,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 36,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/untitled-1974.jpg',
           title: 'Untitled',
           artist: 'Robert Grosvenor',
@@ -728,7 +728,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 37,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/island-no-1p-1967.jpg',
           title: 'Island No. 1p',
           artist: 'Frank Stella',
@@ -748,7 +748,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 38,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/w-ix-2006.jpg',
           title: 'W IX',
           artist: 'Joachim Bandau',
@@ -768,7 +768,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 39,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/sun-island-1985.jpg',
           title: 'Sun & Island',
           artist: 'Nanda Vigo',
@@ -788,7 +788,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 40,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/last-tangle-1976.jpg',
           title: 'Last Tangle',
           artist: 'Leo Valledor',
@@ -808,7 +808,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 41,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/mile-long-drawing.jpg',
           title: 'Mile Long Drawing',
           artist: 'Walter De Maria',
@@ -828,7 +828,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 42,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/unknown-title.jpg',
           title: 'unknown title',
           artist: 'Roman Cotosman',
@@ -848,7 +848,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 43,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/leeward-traffic-1966.jpg',
           title: 'Leeward Traffic',
           artist: 'Robert Huot',
@@ -868,7 +868,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 44,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/interval-2004.jpg',
           title: 'Interval',
           artist: 'John McCracken',
@@ -888,7 +888,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 45,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/aqua-same-1962.jpg',
           title: 'Aqua Same',
           artist: 'Walter Darby Bannard',
@@ -908,7 +908,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 46,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/castle-cccxxxiii-15-7-01-2001.jpg',
           title: 'Castle CCCXXXIII 15.7.01',
           artist: 'Bob Law',
@@ -928,7 +928,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 47,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/rouge-ocre-bleu-vert-1978.jpg',
           title: 'Rouge, Ocre, Bleu, Vert',
           artist: 'Yves Gaucher',
@@ -948,7 +948,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 48,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/serielles-1970.jpg',
           title: 'Serielles',
           artist: 'Victor Bonato',
@@ -968,7 +968,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 49,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/diagonal-of-personal-ecstasy-the-diagonal-of-may-25-1963-to-constantin-brancusi-1963.jpg',
           title: 'Diagonal of Personal Ecstasy (the Diagonal of May 25, 1963, to Constantin Brancusi)',
           artist: 'Dan Flavin',
@@ -988,7 +988,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 50,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/print-4-1967.jpg',
           title: 'Print 4',
           artist: 'Bernard Cohen',
@@ -1008,7 +1008,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 51,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/wake-1965.jpg',
           title: 'Wake',
           artist: 'Marc Vaux',
@@ -1028,7 +1028,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 52,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/laser-1974.jpg',
           title: 'Laser',
           artist: 'Jef Verheyen',
@@ -1048,7 +1048,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 53,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/black-painting-indigo-violet-vi-1969.jpg',
           title: 'Black Painting, Indigo Violet VI',
           artist: 'Ralph Hotere',
@@ -1068,7 +1068,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 54,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/untitled-ring-with-light-1966.jpg',
           title: 'Untitled (Ring with Light)',
           artist: 'Robert Morris',
@@ -1088,7 +1088,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 55,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/folquer-1972.jpg',
           title: 'Folquer',
           artist: 'Joan Hernandez Pijuan',
@@ -1108,7 +1108,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 56,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/fold-1966-2(1).jpg',
           title: 'Fold',
           artist: 'Charlotte Posenenske',
@@ -1128,7 +1128,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 57,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/superficie-argento-1973.jpg',
           title: 'Superficie Argento',
           artist: 'Enrico Castellani',
@@ -1148,7 +1148,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 58,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/prism-1984.jpg',
           title: 'Prism',
           artist: 'Frederic Matys Thursz',
@@ -1168,7 +1168,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 59,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/untitled-1959.jpg',
           title: 'Untitled',
           artist: 'Robert Ryman',
@@ -1188,7 +1188,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 60,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/anomalia-1969.jpg',
           title: 'Anomalia',
           artist: 'Rodolfo Arico',
@@ -1208,7 +1208,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 61,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/egg-on-plate-with-knife-fork-and-spoon-1964.jpg',
           title: 'Egg on Plate with Knife, Fork, and Spoon',
           artist: 'Alex Hay',
@@ -1228,7 +1228,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 62,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/sex-symbol-1961.jpg',
           title: 'Sex Symbol',
           artist: 'Jo Baer',
@@ -1248,7 +1248,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 63,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/bet-you.jpg',
           title: 'Bet You',
           artist: 'Lyman Kipp',
@@ -1268,7 +1268,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 64,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/light-orange-with-light-green-august-1989-1989.jpg',
           title: 'Light Orange with Light Green, August 1989',
           artist: 'Peter Joseph',
@@ -1288,7 +1288,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 65,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/viridian-1974.jpg',
           title: 'Viridian',
           artist: 'Marcia Hafif',
@@ -1308,7 +1308,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 66,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/arc-bands-1990.jpg',
           title: 'Arc Bands',
           artist: 'Sol LeWitt',
@@ -1328,7 +1328,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 67,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/early-1967.jpg',
           title: 'Early',
           artist: 'James Bishop',
@@ -1348,7 +1348,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 68,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/settlement-magenta-1980.jpg',
           title: 'Settlement Magenta',
           artist: 'Warren Rohrer',
@@ -1368,7 +1368,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 69,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/untitled-1998.jpg',
           title: 'Untitled',
           artist: 'Moshe Kupferman',
@@ -1388,7 +1388,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 70,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/3-sheets-from-9-x-5-konkret-1973.jpg',
           title: '3 sheets from "9 x 5 konkret"',
           artist: 'Francois Morellet',
@@ -1408,7 +1408,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 71,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/object-1960.jpg',
           title: 'Object',
           artist: 'Edward Krasinski',
@@ -1428,7 +1428,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 72,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/swirling-retina-1967.jpg',
           title: 'Swirling Retina',
           artist: 'Marcel Barbeau',
@@ -1448,7 +1448,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 73,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/unknown-title-1.jpg',
           title: 'unknown title',
           artist: 'Martin Barre',
@@ -1468,7 +1468,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 74,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/untitled-1953.jpg',
           title: 'Untitled',
           artist: 'Herbert Zangs',
@@ -1488,7 +1488,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 75,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/corona-i-1995.jpg',
           title: 'Corona I',
           artist: 'Paul Brach',
@@ -1508,7 +1508,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 76,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/table-piece-xxviii-1967.jpg',
           title: 'Table Piece XXVIII',
           artist: 'Anthony Caro',
@@ -1528,7 +1528,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 77,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/organ-of-cause-and-effect-iii-1986.jpg',
           title: 'Organ of Cause and Effect III',
           artist: 'Richard Artschwager',
@@ -1548,7 +1548,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 78,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/colors-for-a-large-wall-1951.jpg',
           title: 'Colors for a Large Wall',
           artist: 'Ellsworth Kelly',
@@ -1568,7 +1568,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 79,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/atlantique-ii-1991.jpg',
           title: 'Atlantique II',
           artist: 'Genevieve Asse',
@@ -1588,7 +1588,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 80,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/18-1963-1963.jpg',
           title: '18-1963',
           artist: 'William Turnbull',
@@ -1608,7 +1608,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 81,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/parva-xxix-1993.jpg',
           title: 'Parva XXIX',
           artist: 'Anne Truitt',
@@ -1628,7 +1628,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 82,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/coltrane-1970.jpg',
           title: 'Coltrane',
           artist: 'Ronald Bladen',
@@ -1648,7 +1648,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 83,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/untitled-1.jpg',
           title: 'Untitled',
           artist: 'Mathias Goeritz',
@@ -1668,7 +1668,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 84,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/untitled-1973.jpg',
           title: 'Untitled',
           artist: 'Johannes Jan Schoonhoven',
@@ -1688,7 +1688,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 85,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/source-1967.jpg',
           title: 'Source',
           artist: 'Tony Smith',
@@ -1708,7 +1708,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 86,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/untitled-1966-1.jpg',
           title: 'Untitled',
           artist: 'Gego',
@@ -1728,7 +1728,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 87,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/the-tree-1964.jpg',
           title: 'The Tree',
           artist: 'Agnes Martin',
@@ -1748,7 +1748,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 88,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/untitled-may-20-1950.jpg',
           title: 'Untitled (May 20)',
           artist: 'Myron Stout',
@@ -1768,7 +1768,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 89,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/spazio-luce-1963.jpg',
           title: 'Spazio Luce',
           artist: 'Antonio Calderara',
@@ -1788,7 +1788,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 90,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/untitled-1977.jpg',
           title: 'Untitled',
           artist: 'Ruth Vollmer',
@@ -1808,7 +1808,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 91,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/diario(2).jpg',
           title: 'Diario',
           artist: 'Bice Lazzari',
@@ -1828,7 +1828,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 92,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/number-15-1961.jpg',
           title: 'Number 15',
           artist: 'John McLaughlin',
@@ -1848,7 +1848,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 93,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/untitled-2004.jpg',
           title: 'Untitled',
           artist: 'Tea Jorjadze',
@@ -1868,7 +1868,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 94,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/doug-joe-and-genevieve-from-the-garden-of-delights-1998.jpg',
           title: 'Doug, Joe and Genevieve (from The Garden of Delights)',
           artist: 'Inigo Manglano-Ovalle',
@@ -1888,7 +1888,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 95,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/eclipsed-time-1989-95.jpg',
           title: 'Eclipsed Time',
           artist: 'Maya Lin',
@@ -1908,7 +1908,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 96,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/untitled-1994.jpg',
           title: 'Untitled',
           artist: 'Jessica Stockholder',
@@ -1928,7 +1928,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 97,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/my-colorful-family-1998.jpg',
           title: 'My Colorful Family',
           artist: 'Charles Long',
@@ -1948,7 +1948,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 98,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/untitled-warm-water-1988.jpg',
           title: '"Untitled" (Warm Water)',
           artist: 'Felix Gonzalez-Torres',
@@ -1968,7 +1968,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 99,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/the-event-of-a-thread-2013.jpg',
           title: 'the event of a thread',
           artist: 'Ann Hamilton',
@@ -1988,7 +1988,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 100,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/probably-best-seen-in-a-dark-room-with-the-t-v-on-1999.jpg',
           title: 'Probably Best Seen in a Dark Room with the T.V. On',
           artist: 'Tony Feher',
@@ -2008,7 +2008,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 101,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/hackney-road-drawing-2004.jpg',
           title: 'Hackney Road Drawing',
           artist: 'David Batchelor',
@@ -2028,7 +2028,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 102,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/cloud-gate-2004.jpg',
           title: 'Cloud Gate',
           artist: 'Anish Kapoor',
@@ -2048,7 +2048,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 103,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/field-1989.jpg',
           title: 'Field',
           artist: 'Antony Gormley',
@@ -2068,7 +2068,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 104,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/if-the-shoe-fits-1981.jpg',
           title: 'If The Shoe Fits',
           artist: 'Richard Deacon',
@@ -2088,7 +2088,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 105,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/untitled-1994-2.jpg',
           title: 'Untitled',
           artist: 'Alison Wilding',
@@ -2108,7 +2108,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 106,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/88-va-17-1988.jpg',
           title: '88. VA 17',
           artist: 'Jurgen Partenheimer',
@@ -2128,7 +2128,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 107,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/a-little-cosmic-rhythm-2007.jpg',
           title: 'A Little Cosmic Rhythm',
           artist: 'Alice Aycock',
@@ -2148,7 +2148,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 108,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/particle-memory-1995.jpg',
           title: 'Particle Memory',
           artist: 'Lita Albuquerque',
@@ -2168,7 +2168,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 109,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/east-end-1980.jpg',
           title: 'East End',
           artist: 'Valerie Jaudon',
@@ -2188,7 +2188,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 110,
           user_id: 1,
-          theme: 'minimalism',
+          theme: 'Minimalism',
           img_path: './img/november/tt-1994.jpg',
           title: 'TT',
           artist: 'Sean Scully',

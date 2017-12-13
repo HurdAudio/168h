@@ -8,7 +8,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 1,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/chaos-nr-2-1906.jpg',
           title: 'Chaos, Nr. 2',
           artist: 'Hilma af Klint',
@@ -28,7 +28,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 2,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/improvisation-6-african-1909.jpg',
           title: 'Improvisation 6 (African)',
           artist: 'Wassily Kandinsky',
@@ -48,7 +48,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 3,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/de-tio-st-rsta-n-10-alderdomen-1907.jpg',
           title: 'De Tio Största, n°10 Alderdomen',
           artist: 'Hilma af Klint',
@@ -68,7 +68,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 4,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/schooner-yachts-deer-isle-maine-1928.jpg',
           title: 'Schooner Yachts, Deer Isle, Maine',
           artist: 'John Marin',
@@ -88,7 +88,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 5,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/improvisation-4-1909.jpg',
           title: 'Improvisation 4',
           artist: 'Wassily Kandinsky',
@@ -108,7 +108,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 6,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/the-dove-nr-12-1915.jpg',
           title: 'The Dove, Nr. 12',
           artist: 'Hilma af Klint',
@@ -128,7 +128,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 7,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/landscape-1910.jpg',
           title: 'Landscape',
           artist: 'Arthur Beecher Carles',
@@ -148,7 +148,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 8,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/untitled-1912.jpg',
           title: 'Untitled',
           artist: 'Gosta Adrian-Nilsson',
@@ -168,7 +168,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 9,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/fire-evening-1929.jpg',
           title: 'Fire evening',
           artist: 'Paul Klee',
@@ -188,7 +188,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 10,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/festival-in-spring-1962.jpg',
           title: 'Festival in Spring',
           artist: 'Toshi Yoshida',
@@ -208,7 +208,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 11,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/underground-metaphysical-landscape-c-1960-4.jpg',
           title: 'Underground. Metaphysical Landscape',
           artist: 'Margit Selska',
@@ -228,7 +228,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 12,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/harmony-in-blue-and-green-abstract-composition.jpg',
           title: 'Harmony in Blue and Green. Abstract Composition',
           artist: 'Natalia Goncharova',
@@ -248,7 +248,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 13,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/2005-60-80.jpg',
           title: 'Sorrow, Leaning Woman',
           artist: 'Volodymyr Loboda',
@@ -268,7 +268,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 14,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/untitled-1.jpg',
           title: 'Untitled',
           artist: 'Tiberiy Szilvashi',
@@ -288,7 +288,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 15,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/cote-de-provence(1).jpg',
           title: 'Cote de provence',
           artist: 'Paul Klee',
@@ -308,7 +308,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 16,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/still-life-1945.jpg',
           title: 'Still Life',
           artist: 'William Baziotes',
@@ -328,7 +328,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 17,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/asheville(1).jpg',
           title: 'Asheville',
           artist: 'Willem de Kooning',
@@ -348,7 +348,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 18,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/celeste-ii-acr-lico-sobre-tabla-2006-60x50.jpg',
           title: 'Celeste II',
           artist: 'Requena Nozal',
@@ -368,7 +368,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 19,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/taxi-cab-ii-1959.jpg',
           title: 'Taxi Cab II',
           artist: 'Al Held',
@@ -388,7 +388,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 20,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/abstract-composition.jpg',
           title: 'Abstract Composition',
           artist: 'Victor Hugo',
@@ -408,7 +408,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 21,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/moonlight-and-lamplight-1937.jpg',
           title: 'Moonlight and Lamplight',
           artist: 'Winifred Nicholson',
@@ -428,7 +428,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 22,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/powidok-s-o-ca-1949.jpg',
           title: 'Powidok słońca',
           artist: 'Wladyslaw Strzeminski',
@@ -448,7 +448,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 23,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/untitled-35.jpg',
           title: 'Untitled',
           artist: 'Tiberiy Szilvashi',
@@ -468,7 +468,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 24,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/portrait.jpg',
           title: 'Portrait',
           artist: 'Lyubov Popova',
@@ -488,7 +488,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 25,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/city-of-the-sun.jpg',
           title: 'City of the Sun',
           artist: 'Darren Waterston',
@@ -508,7 +508,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 26,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/untitled-1973-3.jpg',
           title: 'Untitled',
           artist: 'Luciano Bartolini',
@@ -528,7 +528,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 27,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/reminiscence-2005.jpg',
           title: 'Reminiscence',
           artist: 'Toko Shinoda',
@@ -548,7 +548,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 28,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/hv2-no-17b-1992(1).jpg',
           title: 'HV2, No 17b',
           artist: 'John Cage',
@@ -568,7 +568,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 29,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/bacchus-1983.jpg',
           title: 'Bacchus',
           artist: 'Elaine de Kooning',
@@ -588,7 +588,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 30,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/le-vent-du-soleil-1996.jpg',
           title: 'Le vent du soleil',
           artist: 'Gotthard Graubner',
@@ -608,7 +608,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 31,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/heliogravuren-zu-den-documenta-bildern-1993.jpg',
           title: 'Heliogravuren zu den Documenta Bildern',
           artist: 'Gunther Forg',
@@ -628,7 +628,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 32,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/the-air-1937.jpg',
           title: 'The Air',
           artist: 'Joan Miro',
@@ -648,7 +648,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 33,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/the-moon-woman-cuts-the-circle-1943.jpg',
           title: 'The Moon-Woman Cuts the Circle',
           artist: 'Jackson Pollock',
@@ -668,7 +668,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 34,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/tyranny-of-space-1946.jpg',
           title: 'Tyranny of Space',
           artist: 'Perle Fine',
@@ -688,7 +688,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 35,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/yellow-predominance-1949.jpg',
           title: 'Yellow Predominance',
           artist: 'Hans Hofmann',
@@ -708,7 +708,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 36,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/number-236.jpg',
           title: 'Number 236',
           artist: 'Anne Ryan',
@@ -728,7 +728,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 37,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/white-butterflies-sleep-on-a-violet-bed-1970.jpg',
           title: 'White Butterflies Sleep on a Violet Bed',
           artist: 'Walasse Ting',
@@ -748,7 +748,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 38,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/homenaje-a-diana-iii-acr-lico-sobre-tablex-2014-122x-100.jpg',
           title: 'Homenaje a Diana III',
           artist: 'Requena Nozal',
@@ -768,7 +768,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 39,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/untitled-1972.jpg',
           title: 'Untitled',
           artist: 'Rafa Nasiri',
@@ -788,7 +788,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 40,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/interior-temporary-factory-day.jpg',
           title: 'INTERIOR, TEMPORARY FACTORY - DAY',
           artist: 'Marc Horowitz',
@@ -808,7 +808,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 41,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/transparent-shadow.jpg',
           title: 'Transparent Shadow',
           artist: 'Toko Shinoda',
@@ -828,7 +828,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 42,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/the-parachutists-1944.jpg',
           title: 'The Parachutists',
           artist: 'William Baziotes',
@@ -848,7 +848,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 43,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/bird-of-the-spirit-1943.jpg',
           title: 'Bird of the Spirit',
           artist: 'Morris Graves',
@@ -868,7 +868,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 44,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/untitled-1947.jpg',
           title: 'Untitled',
           artist: 'Giorgio Cavallon',
@@ -888,7 +888,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 45,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/abstract-eye-1943.jpg',
           title: 'Abstract Eye',
           artist: 'Richard Pousette-Dart',
@@ -908,7 +908,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 46,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/no-61-rust-and-blue.jpg',
           title: 'No.61 (Rust and Blue)',
           artist: 'Mark Rothko',
@@ -928,7 +928,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 47,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/buchanan-1987.jpg',
           title: 'Buchanan',
           artist: 'Albert Irvin',
@@ -948,7 +948,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 48,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/bright-colors-on-pale-green-1976.jpg',
           title: 'Bright Colors on Pale Green',
           artist: 'Robert Goodnough',
@@ -968,7 +968,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 49,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/black-red-1962.jpg',
           title: 'Black/Red',
           artist: 'Jack Youngerman',
@@ -988,7 +988,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 50,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/hoop-la-1965.jpg',
           title: 'Hoop-La',
           artist: 'Jeremy Moon',
@@ -1008,7 +1008,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 51,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/aeroflower-1942.jpg',
           title: 'Aeroflower',
           artist: 'Jimmy Ernst',
@@ -1028,7 +1028,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 52,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/still-life-at-the-sea-1946.jpg',
           title: 'Still Life at the Sea',
           artist: 'Antonio Corpora',
@@ -1048,7 +1048,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 53,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/dwarf-1947.jpg',
           title: 'Dwarf',
           artist: 'William Baziotes',
@@ -1068,7 +1068,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 54,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/a-time-for-fear-1949.jpg',
           title: 'A Time for Fear',
           artist: 'Jimmy Ernst',
@@ -1088,7 +1088,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 55,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/chicago-1951.jpg',
           title: 'Chicago',
           artist: 'Aaron Siskind',
@@ -1108,7 +1108,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 56,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/it-was-yellow-and-pink-ii.jpg',
           title: 'It Was Yellow and Pink II',
           artist: 'Georgia O\'Keeffe',
@@ -1128,7 +1128,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 57,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/song-cycle-1988.jpg',
           title: 'Song Cycle',
           artist: 'Ralph Hotere',
@@ -1148,7 +1148,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 58,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/sunset.jpg',
           title: 'Sunset',
           artist: 'Cy Twombly',
@@ -1168,7 +1168,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 59,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/iridescent-interpenetration-no-4-study-of-light-1912.jpg',
           title: 'Iridescent Interpenetration No. 4 - Study of light',
           artist: 'Giacomo Balla',
@@ -1188,7 +1188,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 60,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/states-of-mind-iii-those-who-stay-1911-1.jpg',
           title: 'States of Mind III: Those Who Stay',
           artist: 'Umberto Boccioni',
@@ -1208,7 +1208,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 61,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/machine-5-1950.jpg',
           title: 'Machine 5',
           artist: 'Hedda Sterne',
@@ -1228,7 +1228,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 62,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/untitled-1945.jpg',
           title: 'Untitled',
           artist: 'Barnett Newman',
@@ -1248,7 +1248,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 63,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/transection-i-1971.jpg',
           title: 'Transection I',
           artist: 'Clarence Holbrook Carter',
@@ -1268,7 +1268,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 64,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/equinox-1958.jpg',
           title: 'Equinox',
           artist: 'Hans Hofmann',
@@ -1288,7 +1288,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 65,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/moroccan-door-1991.jpg',
           title: 'Moroccan Door',
           artist: 'Howard Hodgkin',
@@ -1308,7 +1308,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 66,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/modinha-2007.jpg',
           title: 'Modinha',
           artist: 'Beatriz Milhazes',
@@ -1328,7 +1328,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 67,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/after-monet-1878.jpg',
           title: 'After Monet',
           artist: 'Sherrie Levine',
@@ -1348,7 +1348,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 68,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/the-black-city-i-new-york-1949.jpg',
           title: 'The Black City I (New York)',
           artist: 'William Congdon',
@@ -1368,7 +1368,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 69,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/n-y-1-road-4-1956.jpg',
           title: 'N.Y. 1 (Road #4)',
           artist: 'Hedda Sterne',
@@ -1388,7 +1388,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 70,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/water-of-the-flowery-mill.jpg',
           title: 'Water of the Flowery Mill',
           artist: 'Arshile Gorky',
@@ -1408,7 +1408,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 71,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/macchie-1971.jpg',
           title: 'Macchie',
           artist: 'Giulio Turcato',
@@ -1428,7 +1428,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 72,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/ju-jitsu-1913.jpg',
           title: 'Ju-Jitsu',
           artist: 'David Bomberg',
@@ -1448,7 +1448,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 73,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/untitled-1912tyt.jpg',
           title: 'Untitled',
           artist: 'Jacques Villon',
@@ -1468,7 +1468,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 74,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/bomen-1915.jpg',
           title: 'Bomen',
           artist: 'Jacoba van Heemskerck',
@@ -1488,7 +1488,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 75,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/woman-verso-untitled.jpg',
           title: 'Woman/Verso: Untitled',
           artist: 'Willem de Kooning',
@@ -1508,7 +1508,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 76,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/bleu-vert-jaune-orange-1954.jpg',
           title: 'Bleu-Vert-Jaune-Orange',
           artist: 'Francois Morellet',
@@ -1528,7 +1528,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 77,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/floris-1964.jpg',
           title: 'Floris',
           artist: 'Bernard Cohen',
@@ -1548,7 +1548,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 78,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/moby-dick-1956.jpg',
           title: 'Moby Dick',
           artist: 'Marcelle Loubchansky',
@@ -1568,7 +1568,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 79,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/la-guitare-1944.jpg',
           title: 'La Guitare',
           artist: 'Gustave Singier',
@@ -1588,7 +1588,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 80,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/october-1955.jpg',
           title: 'October',
           artist: 'Roger Bissière',
@@ -1608,7 +1608,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 81,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/volume-1958-1.jpg',
           title: 'Volume',
           artist: 'Dadamaino',
@@ -1628,7 +1628,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 82,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/constructive-decorative-composition-1924-7.jpg',
           title: 'Constructive-decorative composition',
           artist: 'David Kakabadze',
@@ -1648,7 +1648,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 83,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/untitled-2002.jpg',
           title: 'Untitled',
           artist: 'Doreen Reid Nakamarra',
@@ -1668,7 +1668,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 84,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/mount-tamalpais.png',
           title: 'Mount Tamalpais',
           artist: 'Etel Adnan',
@@ -1688,7 +1688,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 85,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/untitled-1970-1.jpg',
           title: 'Untitled',
           artist: 'Nasreen Mohamedi',
@@ -1708,7 +1708,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 86,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/la-m-scara-m-gica-1969.jpg',
           title: 'La Máscara Mágica',
           artist: 'Carlos Merida',
@@ -1728,7 +1728,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 87,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/architectural-structures-1925.jpg',
           title: 'Architectural Structures',
           artist: 'Lajos Kassak',
@@ -1748,7 +1748,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 88,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/painting-918-1972.jpg',
           title: 'Painting 918',
           artist: 'Luis Feito',
@@ -1768,7 +1768,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 89,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/multichromic-i-1970.jpg',
           title: 'Multichromic I',
           artist: 'Wen-Ying Tsai',
@@ -1788,7 +1788,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 90,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/q1-75-s-2-1977.jpg',
           title: 'Q1 75 S#2',
           artist: 'Jack Tworkov',
@@ -1808,7 +1808,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 91,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/comp-100-1958.jpg',
           title: '#100',
           artist: 'Adolf Fleischmann',
@@ -1828,7 +1828,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 92,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/planos-y-color-liberados-1947.jpg',
           title: 'Planos y color liberados',
           artist: 'Gyula Kosice',
@@ -1848,7 +1848,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 93,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/untitled-2.jpg',
           title: 'Untitled',
           artist: 'Rubem Ludolf',
@@ -1868,7 +1868,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 94,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/santarossa-1974.jpg',
           title: 'Santarossa',
           artist: 'Afro',
@@ -1888,7 +1888,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 95,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/m-cano-fracture-construction.jpg',
           title: 'Mécano-Fracture Construction',
           artist: 'Henryk Berlewi',
@@ -1908,7 +1908,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 96,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/rudow-osa-1949.jpg',
           title: 'Rudowłosa',
           artist: 'Wladyslaw Strzeminski',
@@ -1928,7 +1928,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 97,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/untitled-1aa.jpg',
           title: 'Untitled',
           artist: 'Johannes Itten',
@@ -1948,7 +1948,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 98,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/me-and-the-moon-1937.jpg',
           title: 'Me and the Moon',
           artist: 'Arthur Dove',
@@ -1968,7 +1968,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 99,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/allah-2010.jpg',
           title: 'Allah',
           artist: 'M.F. Husain',
@@ -1988,7 +1988,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 100,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/senza-titolo-1939(1).jpg',
           title: 'Senza titolo',
           artist: 'Bice Lazzari',
@@ -2008,7 +2008,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 101,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/composition-35.jpg',
           title: 'Composition 35',
           artist: 'Sonia Delaunay',
@@ -2028,7 +2028,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 102,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/colored-composition-hommage-to-johann-sebastian-bachh.jpg',
           title: 'Colored composition (Hommage to Johann Sebastian Bachh)',
           artist: 'August Macke',
@@ -2048,7 +2048,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 103,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/colored-rhythm-study-for-the-film-1913(35).jpg',
           title: 'Colored Rhythm: Study for the Film',
           artist: 'Leopold Survage',
@@ -2068,7 +2068,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 104,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/diagonal-planes-1925.jpg',
           title: 'Diagonal Planes',
           artist: 'Frantisek Kupka',
@@ -2088,7 +2088,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 105,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/stained-glass-windows-for-the-university-of-caracas.jpg',
           title: 'Stained glass windows for the University of Caracas',
           artist: 'Fernand Leger',
@@ -2108,7 +2108,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 106,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/inganno-di-afrodite-1979.jpg',
           title: 'Inganno di Afrodite',
           artist: 'Alberto Biasi',
@@ -2128,7 +2128,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 107,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/five-o-clock-tea-1917.jpg',
           title: 'Five o\'clock tea',
           artist: 'Julius Evola',
@@ -2148,7 +2148,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 108,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/new-york-city-i-1942.jpg',
           title: 'New York City I',
           artist: 'Piet Mondrian',
@@ -2168,7 +2168,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 109,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/untitled-1945a.jpg',
           title: 'Untitled',
           artist: 'Lidy Prati',
@@ -2188,7 +2188,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 110,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/pintura-mad-1948.jpg',
           title: 'Pintura Madí',
           artist: 'Gyula Kosice',
@@ -2208,7 +2208,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 111,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/conjunto-dos-contr-rios-1989.jpg',
           title: 'Conjunto dos Contrários',
           artist: 'Eduardo Nery',
@@ -2228,7 +2228,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 112,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/untitled-1985.jpg',
           title: 'Untitled',
           artist: 'Alberto Biasi',
@@ -2248,7 +2248,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 113,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/print-1-from-paper-clip-suite-1974.jpg',
           title: 'Print 1 From Paper Clip Suite',
           artist: 'Richard Smith',
@@ -2268,7 +2268,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 114,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/after-malevich-02-2012.jpg',
           title: 'After Malevich 02',
           artist: 'Tess Jaray',
@@ -2288,7 +2288,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 115,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/4-trames-de-tirets-pivot-es-sur-un-c-t-1971.jpg',
           title: '4 trames de tirets pivotées sur un côté',
           artist: 'Francois Morellet',
@@ -2308,7 +2308,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 116,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/le-temps-1975.jpg',
           title: 'Le temps',
           artist: 'Aki Kuroda',
@@ -2328,7 +2328,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 117,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/18-l-1965.jpg',
           title: '#18 L',
           artist: 'Paul Reed',
@@ -2348,7 +2348,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 118,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/dialogue-i-1967.jpg',
           title: 'Dialogue I',
           artist: 'Constantin Flondor',
@@ -2368,7 +2368,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 119,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/relational-painting-64-1953.jpg',
           title: 'Relational Painting #64',
           artist: 'Fritz Glarner',
@@ -2388,7 +2388,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 120,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/four-blue-five-1962.jpg',
           title: 'Four Blue Five',
           artist: 'Thomas Downing',
@@ -2408,7 +2408,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 121,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/ohne-titel-in-der-erde-1987.jpg',
           title: 'Ohne Titel (In Der Erde)',
           artist: 'Jurgen Partenheimer',
@@ -2428,7 +2428,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 122,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/seated-figure-1954.jpg',
           title: 'Seated Figure',
           artist: 'Conrad Marca-Relli',
@@ -2448,7 +2448,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 123,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/statue-in-a-cemetery-1959.jpg',
           title: 'Statue in a Cemetery',
           artist: 'Endre Balint',
@@ -2468,7 +2468,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 124,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/reclining-nude-red-nude-1956.jpg',
           title: 'Reclining Nude (Red Nude)',
           artist: 'William Scott',
@@ -2488,7 +2488,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 125,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/tornado-1911.jpg',
           title: 'Tornado',
           artist: 'Joe Goode',
@@ -2508,7 +2508,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 126,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/fluctuating-planes-1952.jpg',
           title: 'Fluctuating Planes',
           artist: 'Jock Macdonald',
@@ -2528,7 +2528,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 127,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/astrazione-1921.jpg',
           title: 'Astrazione',
           artist: 'Julius Evola',
@@ -2548,7 +2548,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 128,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/bouquet-1928.jpg',
           title: 'Bouquet',
           artist: 'Jean Fautrier',
@@ -2568,7 +2568,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 129,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/lighthouse-1915.jpg',
           title: 'Lighthouse',
           artist: 'Marsden Hartley',
@@ -2588,7 +2588,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 130,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/sketch-painted-in-santa-fe-new-mexico-1944.jpg',
           title: 'Sketch Painted in Santa Fe, New Mexico',
           artist: 'Lawren Harris',
@@ -2608,7 +2608,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 131,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/grand-musicien-1920.jpg',
           title: 'Grand musicien',
           artist: 'Georges Ribemont-Dessaignes',
@@ -2628,7 +2628,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 132,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/composition-1937.jpg',
           title: 'Composition',
           artist: 'Sophie Taeuber-Arp',
@@ -2648,7 +2648,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 133,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/legendary-landscape-azul-y-naranja-1964.jpg',
           title: 'Legendary Landscape (Azul y Naranja)',
           artist: 'Gunther Gerzso',
@@ -2668,7 +2668,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 134,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/c-136-1965.jpg',
           title: 'C 136',
           artist: 'Tadasky',
@@ -2688,7 +2688,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 135,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/en-courbes-violontes-1947.jpg',
           title: 'En Courbes Violontes',
           artist: 'Marcelle Cahn',
@@ -2708,7 +2708,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 136,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/faixas-ritmadas-1958.jpg',
           title: 'Faixas Ritmadas',
           artist: 'Ivan Serpa',
@@ -2728,7 +2728,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 137,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/nega-maluca-2006.jpg',
           title: 'Nega Maluca',
           artist: 'Beatriz Milhazes',
@@ -2748,7 +2748,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 138,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/contra-relevo-objeto-n-7-1959.jpg',
           title: 'Contra Relevo (Objeto N. 7)',
           artist: 'Lygia Clark',
@@ -2768,7 +2768,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 139,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/alba-1987.jpg',
           title: 'Alba',
           artist: 'Albert Irvin',
@@ -2788,7 +2788,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 140,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/configuration-1988.jpg',
           title: 'Configuration',
           artist: 'Romul Nutiu',
@@ -2808,7 +2808,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 141,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/lepanto-panel-12.jpg',
           title: 'Lepanto, panel 12',
           artist: 'Cy Twombly',
@@ -2828,7 +2828,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 142,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/atmospheric-effects-i-1970.jpg',
           title: 'Atmospheric Effects I',
           artist: 'Alma Woodsey Thomas',
@@ -2848,7 +2848,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 143,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/ominenda-1963.jpg',
           title: 'Ominenda',
           artist: 'Richard Mortensen',
@@ -2868,7 +2868,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 144,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/non-objective-composition-suprematism.jpg',
           title: 'Non-Objective Composition (Suprematism)',
           artist: 'Olga Rozanova',
@@ -2888,7 +2888,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 145,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/die-fahne-hoch-1959.jpg',
           title: 'Die Fahne Hoch!',
           artist: 'Frank Stella',
@@ -2908,7 +2908,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 146,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/untitled-graphic-composition-1951-4(1).jpg',
           title: 'Untitled (Graphic Composition)',
           artist: 'Bruno Munari',
@@ -2928,7 +2928,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 147,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/modality-series-spring-awakening-854a-1937.jpg',
           title: 'Modality Series, Spring Awakening 854A',
           artist: 'Jock Macdonald',
@@ -2948,7 +2948,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 148,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/sun-1943.jpg',
           title: 'Sun',
           artist: 'Arthur Dove',
@@ -2968,7 +2968,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 149,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/night-creatures-1965.jpg',
           title: 'Night Creatures',
           artist: 'Lee Krasner',
@@ -2988,7 +2988,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 150,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/cinetic-composition-1968.jpg',
           title: 'Cinetic Composition',
           artist: 'Almir Mavignier',
@@ -3008,7 +3008,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 151,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/relief-painting-19x-1960-61.jpg',
           title: 'Relief painting #19x',
           artist: 'Adolf Fleischmann',
@@ -3028,7 +3028,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 152,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/easy-dark-2007.jpg',
           title: 'Easy Dark',
           artist: 'Julie Mehretu',
@@ -3048,7 +3048,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 153,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/untitled-1982.jpg',
           title: 'Untitled',
           artist: 'Gunther Gerzso',
@@ -3068,7 +3068,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 154,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/galaxy-1990.jpg',
           title: 'Galaxy',
           artist: 'Tihamer Gyarmathy',
@@ -3088,7 +3088,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 155,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/astre-bleu-1991.jpg',
           title: 'Astre-bleu',
           artist: 'Jean-Paul Jerome',
@@ -3108,7 +3108,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 156,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/hereditarius-no-1-68-a-1968.jpg',
           title: 'Hereditarius No.1-68-A',
           artist: 'Park Seo-Bo',
@@ -3128,7 +3128,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 157,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/untitled-1963.jpg',
           title: 'Untitled',
           artist: 'David Smith',
@@ -3148,7 +3148,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 158,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/africa-i-1942.jpg',
           title: 'Africa I',
           artist: 'Willi Baumeister',
@@ -3168,7 +3168,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 159,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/epitalamio-1968.jpg',
           title: 'Epitalamio',
           artist: 'Carlos Merida',
@@ -3188,7 +3188,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 160,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/where-1960.jpg',
           title: 'Where',
           artist: 'Morris Louis',
@@ -3208,7 +3208,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 161,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/unknown-title-6.jpg',
           title: 'unknown title',
           artist: 'Michel Carrade',
@@ -3228,7 +3228,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 162,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/halo-1-1992.jpg',
           title: 'Halo-1',
           artist: 'Maki Haku',
@@ -3248,7 +3248,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 163,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/untitled-7.jpg',
           title: 'Untitled',
           artist: 'Antonio Sanfilippo',
@@ -3268,7 +3268,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 164,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/untitled-1959.jpg',
           title: 'Untitled',
           artist: 'Jean Bertholle',
@@ -3288,7 +3288,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 165,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/dreiformvariation-1928.jpg',
           title: 'Dreiformvariation',
           artist: 'Carl Buchheister',
@@ -3308,7 +3308,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 166,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/pintura-153-1948.jpg',
           title: 'Pintura 153',
           artist: 'Raul Lozza',
@@ -3328,7 +3328,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 167,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/the-great-wall-i-1986.jpg',
           title: 'The Great Wall (I)',
           artist: 'Wu Guanzhong',
@@ -3348,7 +3348,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 168,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/opposing-15-1959.jpg',
           title: 'Opposing (#15)',
           artist: 'Frederick Hammersley',
@@ -3368,7 +3368,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 169,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/hillside-1954.jpg',
           title: 'Hillside',
           artist: 'Kazuo Nakamura',
@@ -3388,7 +3388,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 170,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/1944-n-no-1-1944.jpg',
           title: '1944-N No. 1',
           artist: 'Clyfford Still',
@@ -3408,7 +3408,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 171,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/green-sound-1964.jpg',
           title: 'Green Sound',
           artist: 'Jeremy Moon',
@@ -3428,7 +3428,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 172,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/heroic-roses-1938(1).jpg',
           title: 'Heroic Roses',
           artist: 'Paul Klee',
@@ -3448,7 +3448,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 173,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/work-2009.jpg',
           title: 'Work',
           artist: 'Tsuruko Yamazaki',
@@ -3468,7 +3468,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 174,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/anima-mundi-10-ed-2011.jpg',
           title: 'Anima Mundi 10 Ed',
           artist: 'Imi Knoebel',
@@ -3488,7 +3488,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 175,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/red-heart-1980.jpg',
           title: 'Red Heart',
           artist: 'Friedel Dzubas',
@@ -3508,7 +3508,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 176,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/88-va-17-1988.jpg',
           title: '88. VA 17',
           artist: 'Jurgen Partenheimer',
@@ -3528,7 +3528,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 177,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/gdwf-2004.jpg',
           title: 'GDWF',
           artist: 'Paul Reed',
@@ -3548,7 +3548,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 178,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/work-1956.jpg',
           title: 'Work',
           artist: 'Sadamasa Motonaga',
@@ -3568,7 +3568,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 179,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/iras-1959.jpg',
           title: 'Iras',
           artist: 'Olle Baertling',
@@ -3588,7 +3588,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 180,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/composition-no-212-1960.jpg',
           title: 'Composition No. 212',
           artist: 'Friedrich Vordemberge-Gildewart',
@@ -3608,7 +3608,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 181,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/untitled-from-collection-resonance-2011-1.jpg',
           title: 'Untitled (from Collection Resonance)',
           artist: 'Monique Orsini',
@@ -3628,7 +3628,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 182,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/grey-still-life-1969.jpg',
           title: 'Grey Still Life',
           artist: 'William Scott',
@@ -3648,7 +3648,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 183,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/magical-space-forms-1948.jpg',
           title: 'Magical Space Forms',
           artist: 'Lorser Feitelson',
@@ -3668,7 +3668,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 184,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/untitled-summer-1962.jpg',
           title: 'Untitled (Summer)',
           artist: 'Howard Mehring',
@@ -3688,7 +3688,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 185,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/untitled-1956.jpg',
           title: 'Untitled',
           artist: 'Karl Benjamin',
@@ -3708,7 +3708,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 186,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/unknown-title-17.jpg',
           title: 'unknown title',
           artist: 'Constantin Blendea',
@@ -3728,7 +3728,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 187,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/coloured-wall-2003.jpg',
           title: 'Coloured Wall',
           artist: 'Sean Scully',
@@ -3748,7 +3748,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 188,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/mask-4-1936.jpg',
           title: 'Mask 4',
           artist: 'Willi Baumeister',
@@ -3768,7 +3768,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 189,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/july-1954-1954.jpg',
           title: 'July 1954',
           artist: 'Frank Lobdell',
@@ -3788,7 +3788,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 190,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/relational-painting-1951.jpg',
           title: 'Relational Painting',
           artist: 'Fritz Glarner',
@@ -3808,7 +3808,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 191,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/red-april-1970.jpg',
           title: 'Red April',
           artist: 'Sam Gilliam',
@@ -3828,7 +3828,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 192,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/oe-280-komposition-in-rot-mit-wei-und-blau-1959.jpg',
           title: 'OE 280 (Komposition in Rot mit Weiß und Blau)',
           artist: 'Rupprecht Geiger',
@@ -3848,7 +3848,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 193,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/diminishing-circles-2001.jpg',
           title: 'Diminishing Circles',
           artist: 'Jennifer Bartlett',
@@ -3868,7 +3868,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 194,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/summer-1960.jpg',
           title: 'Summer',
           artist: 'Thomas Downing',
@@ -3888,7 +3888,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 195,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/chant-2-1967.jpg',
           title: 'Chant 2',
           artist: 'Bridget Riley',
@@ -3908,7 +3908,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 196,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/abstract-painting-780-1-1.jpg',
           title: 'Abstract Painting 780-1',
           artist: 'Gerhard Richter',
@@ -3928,7 +3928,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 197,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/orlando-1980.jpg',
           title: 'Orlando',
           artist: 'Albert Irvin',
@@ -3948,7 +3948,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 198,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/untitled-drawing-2006.jpg',
           title: 'Untitled Drawing',
           artist: 'David Batchelor',
@@ -3968,7 +3968,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 199,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/-1994-2.jpg',
           title: '人态二',
           artist: 'Xu Hongming',
@@ -3988,7 +3988,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 200,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/untitled-june-1999.jpg',
           title: 'Untitled, June',
           artist: 'Stanley Whitney',
@@ -4008,7 +4008,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 201,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/composition-no-199.jpg',
           title: 'Composition No. 199',
           artist: 'Friedrich Vordemberge-Gildewart',
@@ -4028,7 +4028,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 202,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/proun-19d-1922.jpg',
           title: 'Proun 19D',
           artist: 'El Lissitzky',
@@ -4048,7 +4048,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 203,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/bluxao-1955.jpg',
           title: 'Bluxao',
           artist: 'Willi Baumeister',
@@ -4068,7 +4068,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 204,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/appearance-of-crosses-in-six-parts-2005.jpg',
           title: 'Appearance of Crosses (in six parts)',
           artist: 'Ding Yi',
@@ -4088,7 +4088,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 205,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/choir.jpg',
           title: 'Choir',
           artist: 'Jack Tworkov',
@@ -4108,7 +4108,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 206,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/cunard-l-8-62-1962.jpg',
           title: 'Cunard L-8-62',
           artist: 'Conrad Marca-Relli',
@@ -4128,7 +4128,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 207,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/dalet-zayin-1959.jpg',
           title: 'Dalet Zayin',
           artist: 'Morris Louis',
@@ -4148,7 +4148,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 208,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/an-accordment-73-1973.jpg',
           title: 'An Accordment #73',
           artist: 'Perle Fine',
@@ -4168,7 +4168,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 209,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/from-a-riviera-window-1955.jpg',
           title: 'From a Riviera Window',
           artist: 'Jock Macdonald',
@@ -4188,7 +4188,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 210,
           user_id: 1,
-          theme: 'abstract',
+          theme: 'Abstract Art',
           img_path: './img/january/le-chevalier.jpg',
           title: 'Le Chevalier',
           artist: 'Paul Ackerman',

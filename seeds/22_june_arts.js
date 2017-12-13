@@ -8,7 +8,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 1,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/my-small-world.jpg',
           title: 'My Small World',
           artist: 'Achraf Baznani',
@@ -28,7 +28,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 2,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/tumblr-nvtla1gqan1qdsei8o1-1280.jpg',
           title: 'Chloë Sevigny',
           artist: 'Wolfgang Tillmans',
@@ -48,7 +48,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 3,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/eight-piles-2003.jpg',
           title: 'Eight Piles',
           artist: 'David Burdeny',
@@ -68,7 +68,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 4,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/gold-in-the-morning-series.jpg',
           title: 'Gold in the morning (A - J)',
           artist: 'Alfredo Jaar',
@@ -88,7 +88,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 5,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/ratingen-swimming-pool-1987.jpg',
           title: 'Ratingen Swimming Pool',
           artist: 'Andreas Gursky',
@@ -108,7 +108,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 6,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/untitled-cigarettes-1979.jpg',
           title: 'Untitled (Cigarettes)',
           artist: 'Richard Prince',
@@ -128,7 +128,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 7,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/untitled-35mm-transparency-1990.jpg',
           title: 'Untitled (35mm Transparency)',
           artist: 'Li Yuan-chia',
@@ -148,7 +148,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 8,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/untitled-1930.jpg',
           title: 'Untitled',
           artist: 'Kansuke Yamamoto',
@@ -168,7 +168,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 9,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/pavilion-de-l-elegance-madeleine-vionnet-1937.jpg',
           title: 'Pavilion de l\'elegance (Madeleine Vionnet)',
           artist: 'Wols',
@@ -188,7 +188,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 10,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/ridiculous-portrait-contact-sheet-1972.jpg',
           title: 'Ridiculous Portrait (Contact Sheet)',
           artist: 'May Wilson',
@@ -208,7 +208,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 11,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/blindman-s-buff-1898.jpg',
           title: 'Blindman\'s Buff',
           artist: 'Clarence White',
@@ -228,7 +228,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 12,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/nude-1925.jpg',
           title: 'Nude',
           artist: 'Edward Weston',
@@ -248,7 +248,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 13,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/1994-6-1994.jpg',
           title: '1994.6',
           artist: 'Ai Weiwei',
@@ -268,7 +268,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 14,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/arnold-schwarzenegger-1977.jpg',
           title: 'Arnold Schwarzenegger',
           artist: 'Andy Warhol',
@@ -288,7 +288,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 15,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/fotogramma-1997.jpg',
           title: 'Fotogramma',
           artist: 'Luigi Veronesi',
@@ -308,7 +308,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 16,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/surimpression-1934.jpg',
           title: 'Surimpression',
           artist: 'Raoul Ubac',
@@ -328,7 +328,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 17,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/atlas-i-1995.jpg',
           title: 'Atlas I',
           artist: 'Rirkrit Tiravanija',
@@ -348,7 +348,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 18,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/wolfgangtillmans-1992lutz-alex-sitting-in-the-trees-1.jpg',
           title: 'Lutz Alex Sitting in the Trees 1',
           artist: 'Wolfgang Tillmans',
@@ -368,7 +368,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 19,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/photograph-of-photograph-1973.jpg',
           title: 'Photograph of Photograph',
           artist: 'Takamatsu Jiro',
@@ -388,7 +388,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 20,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/self-portrait-with-dada-kopf-dada-head-1920.jpg',
           title: 'Self-portrait with Dada-Kopf (Dada Head)',
           artist: 'Sophie Taeuber-Arp',
@@ -408,7 +408,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 21,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/cabot-street-cinema-massachusetts-1978.jpg',
           title: 'Cabot Street Cinema, Massachusetts',
           artist: 'Hiroshi Sugimoto',
@@ -428,7 +428,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 22,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/self-portrait-1886.jpg',
           title: 'Self-portrait',
           artist: 'Alfred Stieglitz',
@@ -448,7 +448,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 23,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/prince-albert-1938.jpg',
           title: 'Prince Albert',
           artist: 'Frederick Sommer',
@@ -468,7 +468,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 24,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/las-animas-1997.jpg',
           title: 'Las Animas',
           artist: 'Kiki Smith',
@@ -488,7 +488,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 25,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/gloucester-16a-1944.jpg',
           title: 'Gloucester 16A',
           artist: 'Aaron Siskind',
@@ -508,7 +508,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 26,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/untitled-b-1975.jpg',
           title: 'Untitled B',
           artist: 'Cindy Sherman',
@@ -528,7 +528,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 27,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/doylestown-house-the-stove-1917.jpg',
           title: 'Doylestown House—The Stove',
           artist: 'Charles Sheeler',
@@ -548,7 +548,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 28,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/rooftops-1916.jpg',
           title: 'Rooftops',
           artist: 'Morton Shamberg',
@@ -568,7 +568,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 29,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/the-burning-of-rome-1907.jpg',
           title: 'The Burning of Rome',
           artist: 'George Seeley',
@@ -588,7 +588,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 30,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/amourette-schadography-1918.jpg',
           title: 'Amourette (Schadography)',
           artist: 'Christian Schad',
@@ -608,7 +608,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 31,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/conoco-shamrock-texas-from-five-views-from-the-panhandle-series.jpg',
           title: 'Conoco - Shamrock, Texas (from Five Views from the Panhandle Series)',
           artist: 'Edward Ruscha',
@@ -628,7 +628,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 32,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/postcard-1968.jpg',
           title: 'Postcard',
           artist: 'Dieter Roth',
@@ -648,7 +648,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 33,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/vormittagsspuk-1927.jpg',
           title: 'Vormittagsspuk',
           artist: 'Hans Richter',
@@ -668,7 +668,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 34,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/the-coat-stand-1920.jpg',
           title: 'The Coat Stand',
           artist: 'Man Ray',
@@ -688,7 +688,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 35,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/untitled-cowboys-1986.jpg',
           title: 'Untitled (Cowboys)',
           artist: 'Richard Prince',
@@ -708,7 +708,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 36,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/untitled-1959.jpg',
           title: 'Untitled',
           artist: 'Otto Piene',
@@ -728,7 +728,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 37,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/the-egg-1967.jpg',
           title: 'The Egg',
           artist: 'Lygia Pape',
@@ -748,7 +748,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 38,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/whirlpool-eye-of-the-storm-1973.jpg',
           title: 'Whirlpool (Eye of the Storm)',
           artist: 'Dennis Oppenheim',
@@ -768,7 +768,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 39,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/1965-1-d-tail-photo-1965.jpg',
           title: '1965 / 1 - ∞ /détail photo ?',
           artist: 'Roman Opalka',
@@ -788,7 +788,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 40,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/untitled-1980.jpg',
           title: 'Untitled',
           artist: 'Eduardo Nery',
@@ -808,7 +808,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 41,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/l-odalisque-turbulente-1967.jpg',
           title: 'L\'odalisque turbulente',
           artist: 'Pierre Molinier',
@@ -828,7 +828,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 42,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/double-portrait.jpg',
           title: 'Double Portrait',
           artist: 'Laszlo Moholy-Nagy',
@@ -848,7 +848,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 43,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/untitled-1970-3.jpg',
           title: 'Untitled',
           artist: 'Nasreen Mohamedi',
@@ -868,7 +868,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 44,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/le-pont-neuf-daguerreotype-1848.jpg',
           title: 'Le Pont Neuf (daguerreotype)',
           artist: 'Anton Melbye',
@@ -888,7 +888,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 45,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/painting-objects-1980.jpg',
           title: 'Painting-Objects',
           artist: 'Florin Maxa',
@@ -908,7 +908,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 46,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/eros-crom-tico-1964.jpg',
           title: 'Eros Cromático',
           artist: 'Jorge Martins',
@@ -928,7 +928,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 47,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/antiportrait-1984.jpg',
           title: 'Antiportrait',
           artist: 'Marcel Marien',
@@ -948,7 +948,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 48,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/new-york-boy-shining-shoes-july-1952-1952.jpg',
           title: 'New York (Boy Shining Shoes), July 1952',
           artist: 'Vivian Maier',
@@ -968,7 +968,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 49,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/double-portrait-1930.jpg',
           title: 'Double Portrait',
           artist: 'Dora Maar',
@@ -988,7 +988,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 50,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/buried-cube-containing-an-object-of-importance-but-little-value-1968.jpg',
           title: 'Buried Cube Containing an Object of Importance but Little Value',
           artist: 'Sol LeWitt',
@@ -1008,7 +1008,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 51,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/meine-diana-1896.jpg',
           title: 'Meine Diana',
           artist: 'Heinrich Kuhn',
@@ -1028,7 +1028,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 52,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/portrait.jpg',
           title: 'Portrait',
           artist: 'Alekos Kontopoulos',
@@ -1048,7 +1048,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 53,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/leap-into-the-void-1960.jpg',
           title: 'Leap into the Void',
           artist: 'Yves Klein',
@@ -1068,7 +1068,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 54,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/from-five-04-2.jpg',
           title: 'From Five',
           artist: 'Abbas Kiarostami',
@@ -1088,7 +1088,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 55,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/portrait-of-marguerite-khnopff-1890.jpg',
           title: 'Portrait of Marguerite Khnopff',
           artist: 'Fernand Khnopff',
@@ -1108,7 +1108,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 56,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/circus-budapest-19-may-1920-1920.jpg',
           title: 'Circus, Budapest, 19 May 1920',
           artist: 'Andre Kertesz',
@@ -1128,7 +1128,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 57,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/chief-flying-hawk-1898.jpg',
           title: 'Chief Flying Hawk',
           artist: 'Gertrude Kasebier',
@@ -1148,7 +1148,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 58,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/gipsy-camp-1910.jpg',
           title: 'Gipsy Camp',
           artist: 'David Kakabadze',
@@ -1168,7 +1168,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 59,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/girl-t-1996.jpg',
           title: 'Girl-T',
           artist: 'Leiko Ikemura',
@@ -1188,7 +1188,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 60,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/duration-piece-4-bradford-massachusetts-1968.jpg',
           title: 'Duration Piece #4 Bradford Massachusetts',
           artist: 'Douglas Huebler',
@@ -1208,7 +1208,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 61,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/untitled-from-the-series-still-water-the-river-thames-for-example-1999.jpg',
           title: 'Untitled (from the series Still Water (The River Thames, for Example))',
           artist: 'Roni Horn',
@@ -1228,7 +1228,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 62,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/sixty-seconds-of-light-1970.jpg',
           title: 'Sixty Seconds of Light',
           artist: 'John Hilliard',
@@ -1248,7 +1248,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 63,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/typographic-nude-1965.jpg',
           title: 'Typographic Nude',
           artist: 'Robert Heinecken',
@@ -1268,7 +1268,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 64,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/untitled-1942.jpg',
           title: 'Untitled',
           artist: 'David Hare',
@@ -1288,7 +1288,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 65,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/untitled-self-portrait-2000.jpg',
           title: 'Untitled (Self-Portrait)',
           artist: 'Ann Hamilton',
@@ -1308,7 +1308,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 66,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/garters-1939.jpg',
           title: 'Garters',
           artist: 'Philippe Halsman',
@@ -1328,7 +1328,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 67,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/shanghai-2000.jpg',
           title: 'Shanghai',
           artist: 'Andreas Gursky',
@@ -1348,7 +1348,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 68,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/untitled-diptych-1984.jpg',
           title: 'Untitled Diptych',
           artist: 'Gunther Forg',
@@ -1368,7 +1368,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 69,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/seascape-ibiza-1972.jpg',
           title: 'Seascape, Ibiza',
           artist: 'Franco Fontana',
@@ -1388,7 +1388,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 70,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/forty-eight-view-of-lochness-1997.jpg',
           title: 'Forty-Eight View of Lochness',
           artist: 'Spencer Finch',
@@ -1408,7 +1408,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 71,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/main-d-artiste-1967.jpg',
           title: 'Main d\'artiste',
           artist: 'Robert Filliou',
@@ -1428,7 +1428,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 72,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/male-nude-1897.jpg',
           title: 'Male Nude',
           artist: 'Frank Eugene',
@@ -1448,7 +1448,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 73,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/new-york-city-1953.jpg',
           title: 'New York City',
           artist: 'Elliott Erwitt',
@@ -1468,7 +1468,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 74,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/monument-valley-grand-scale-1997.jpg',
           title: 'Monument Valley (Grand Scale)',
           artist: 'Tracey Emin',
@@ -1488,7 +1488,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 75,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/the-island-series-1997.jpg',
           title: 'The island series',
           artist: 'Olafur Eliasson',
@@ -1508,7 +1508,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 76,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/downtown-morton-mississippi-1969.jpg',
           title: 'Downtown Morton, Mississippi',
           artist: 'William Eggleston',
@@ -1528,7 +1528,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 77,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/thomas-eakins-and-j-laurie-wallace-1883-1.jpg',
           title: 'Thomas Eakins and J. Laurie Wallace',
           artist: 'Thomas Eakins',
@@ -1548,7 +1548,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 78,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/behind-the-scenes-1902.jpg',
           title: 'Behind the Scenes',
           artist: 'Pierre Dubreuil',
@@ -1568,7 +1568,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 79,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/kiss-by-the-hotel-de-ville-1950.jpg',
           title: 'Kiss by the Hotel de Ville',
           artist: 'Robert Doisneau',
@@ -1588,7 +1588,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 80,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/behind-the-scenes-1904.jpg',
           title: 'Behind the Scenes',
           artist: 'Robert Demachy',
@@ -1608,7 +1608,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 81,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/un-cantique-1895.jpg',
           title: 'Un Cantique',
           artist: 'Adolph de Meyer',
@@ -1628,7 +1628,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 82,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/un-chien-andalou-film-still-1928.jpg',
           title: 'Un Chien Andalou (film still)',
           artist: 'Salvador Dali',
@@ -1648,7 +1648,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 83,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/2-1.jpg',
           title: 'untitled',
           artist: 'daisuke yokota',
@@ -1668,7 +1668,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 84,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/buckley.jpg',
           title: 'Buckley',
           artist: 'Ralston Crawford',
@@ -1688,7 +1688,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 85,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/st-paul-s-and-cogs-1904.jpg',
           title: 'St. Paul\'s and Cogs',
           artist: 'Alvin Langdon Coburn',
@@ -1708,7 +1708,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 86,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/teatro-de-sombras-as-cinco-esta-es-still-1976-1.jpg',
           title: 'Teatro de Sombras, As Cinco Estações (still)',
           artist: 'Lourdes Castro',
@@ -1728,7 +1728,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 87,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/the-quai-st-bernard-near-the-gare-d-austerlitz-paris-1932.jpg',
           title: 'The Quai St Bernard, near the Gare d\'Austerlitz, Paris',
           artist: 'Henri Cartier-Bresson',
@@ -1748,7 +1748,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 88,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/self-portrait-1855.jpg',
           title: 'Self Portrait',
           artist: 'Lewis Carroll',
@@ -1768,7 +1768,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 89,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/the-second-step-2005.jpg',
           title: 'The Second Step',
           artist: 'Mircea Cantor',
@@ -1788,7 +1788,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 90,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/the-discovery-of-geometry-1978.jpg',
           title: 'The Discovery of Geometry',
           artist: 'Luis Camnitzer',
@@ -1808,7 +1808,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 91,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/materializa-o-de-um-quadro-imagin-rio-1975.jpg',
           title: 'Materialização de um quadro imaginário',
           artist: 'Fernando Calhau',
@@ -1828,7 +1828,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 92,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/drift-10-grand-beach-manitoba-2005.jpg',
           title: 'Drift #10: Grand Beach, Manitoba',
           artist: 'David Burdeny',
@@ -1848,7 +1848,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 93,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/figuras-en-el-castillo-1920.jpg',
           title: 'Figuras en el Castillo',
           artist: 'Manuel Alvarez Bravo',
@@ -1868,7 +1868,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 94,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/towards-white-1976.jpg',
           title: 'Towards White',
           artist: 'Geta Bratescu',
@@ -1888,7 +1888,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 95,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/bassin-du-luxembourg-1930.jpg',
           title: 'Bassin du Luxembourg',
           artist: 'Brassai',
@@ -1908,7 +1908,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 96,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/picnic-in-the-mountains.jpg',
           title: 'Picnic in the Mountains',
           artist: 'Fernando Botero',
@@ -1928,7 +1928,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 97,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/comic-vignettes-parents-wedding-1974.jpg',
           title: 'Comic Vignettes, Parents’ wedding',
           artist: 'Christian Boltanski',
@@ -1948,7 +1948,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 98,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/four-blind-men-bhavnagar-gujarat-1968.jpg',
           title: 'Four blind men, Bhavnagar, Gujarat',
           artist: 'Jyoti Bhatt',
@@ -1968,7 +1968,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 99,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/art-is-ego-1971.jpg',
           title: 'Art Is Ego',
           artist: 'Ben',
@@ -1988,7 +1988,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 100,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/the-doll-1934.jpg',
           title: 'The Doll',
           artist: 'Hans Bellmer',
@@ -2008,7 +2008,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 101,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/human-being.jpg',
           title: 'Human Being',
           artist: 'Achraf Baznani',
@@ -2028,7 +2028,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 102,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/liquid-detergent-vancouver-british-columbia-1965.jpg',
           title: 'Liquid Detergent, Vancouver, British Columbia',
           artist: 'Iain Baxter&',
@@ -2048,7 +2048,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 103,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/land-of-the-spotted-eagle-1983.jpg',
           title: 'Land of the Spotted Eagle',
           artist: 'Lothar Baumgarten',
@@ -2068,7 +2068,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 104,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/wrong-1967.jpg',
           title: 'Wrong',
           artist: 'John Baldessari',
@@ -2088,7 +2088,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 105,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/art-declared-found-activity-lathering-alicante-spain-april-1960-1-1960.jpg',
           title: 'Art Declared Found Activity (Lathering, Alicante Spain, April 1960) 1',
           artist: 'Billy Apple',
@@ -2108,7 +2108,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 106,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/voar-2001.jpg',
           title: 'Voar',
           artist: 'Helena Almeida',
@@ -2128,7 +2128,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 107,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/bum-thumb-rock-ploumanach-brittany-1936.jpg',
           title: 'Bum-Thumb Rock, Ploumanach, Brittany',
           artist: 'Eileen Agar',
@@ -2148,7 +2148,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 108,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/all-my-clothes-1970.jpg',
           title: 'All my clothes',
           artist: 'Bas Jan Ader',
@@ -2168,7 +2168,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 109,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/mirror-lake-morning-yosemite-national-park.jpg',
           title: 'Mirror Lake, Morning, Yosemite National Park',
           artist: 'Ansel Adams',
@@ -2188,7 +2188,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 110,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/theme-song-1973.jpg',
           title: 'Theme Song',
           artist: 'Vito Acconci',
@@ -2208,7 +2208,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 111,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/charles-hay-cameron-1864.jpg',
           title: 'Charles Hay Cameron',
           artist: 'Julia Margaret Cameron',
@@ -2228,7 +2228,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 112,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/hunting-by-steam-in-melville-bay-1869.jpg',
           title: 'Hunting by Steam in Melville Bay',
           artist: 'William Bradford',
@@ -2248,7 +2248,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 113,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/chateau-wood-1917.jpg',
           title: 'Chateau Wood',
           artist: 'Frank Hurley',
@@ -2268,7 +2268,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 114,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/3e7c1dcd49363410cbf16f56884b6cd0.jpg',
           title: 'Child with a toy hand grenade in Central Park',
           artist: 'Diane Arbus',
@@ -2288,7 +2288,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 115,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/tillmans-web6.jpg',
           title: 'Open Heart Bypass',
           artist: 'Wolfgang Tillmans',
@@ -2308,7 +2308,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 116,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/max-ernst-1946.jpg',
           title: 'Frederick Sommer',
           artist: 'Max Ernst',
@@ -2328,7 +2328,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 117,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/study-of-king-david-1866.jpg',
           title: 'Study of King David',
           artist: 'Julia Margaret Cameron',
@@ -2348,7 +2348,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 118,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/times-square-new-york-1997.jpg',
           title: 'Times Square, New York',
           artist: 'Andreas Gursky',
@@ -2368,7 +2368,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 119,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/untitled-fashion-1984(1).jpg',
           title: 'Untitled (Fashion)',
           artist: 'Richard Prince',
@@ -2388,7 +2388,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 120,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/seascape-cascade-river-lake-superior-1995.jpg',
           title: 'Seascape: Cascade River, Lake Superior',
           artist: 'Hiroshi Sugimoto',
@@ -2408,7 +2408,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 121,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/medallion-1948.jpg',
           title: 'Medallion',
           artist: 'Frederick Sommer',
@@ -2428,7 +2428,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 122,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/siesta-1926.jpg',
           title: 'Siesta',
           artist: 'Laszlo Moholy-Nagy',
@@ -2448,7 +2448,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 123,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/radio-tower-berlin-1928.jpg',
           title: 'Radio Tower Berlin',
           artist: 'Laszlo Moholy-Nagy',
@@ -2468,7 +2468,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 124,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/gala-as-madonna-of-port-lligat.jpg',
           title: 'Gala as Madonna of Port Lligat',
           artist: 'Salvador Dali',
@@ -2488,7 +2488,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 125,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/untitled-1962.jpg',
           title: 'Untitled',
           artist: 'Frederick Sommer',
@@ -2508,7 +2508,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 126,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/anxious-corridor-1940.jpg',
           title: 'Anxious Corridor',
           artist: 'Kansuke Yamamoto',
@@ -2528,7 +2528,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 127,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/andy-warhol.jpg',
           title: 'Andy Warhol',
           artist: 'Philippe Halsman',
@@ -2548,7 +2548,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 128,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/untitled-425-2004.jpg',
           title: 'Untitled #425',
           artist: 'Cindy Sherman',
@@ -2568,7 +2568,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 129,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/hiroshima-1954.jpg',
           title: 'Hiroshima',
           artist: 'Kansuke Yamamoto',
@@ -2588,7 +2588,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 130,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/der-schnitter.jpg',
           title: 'The Reaper',
           artist: 'Nicola Perscheid',
@@ -2608,7 +2608,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 131,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/1997.jpg',
           title: 'Donbass Chocolate',
           artist: 'Arsen Savadov',
@@ -2628,7 +2628,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 132,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/3-1.jpg',
           title: 'untitled',
           artist: 'daisuke yokota',
@@ -2648,7 +2648,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 133,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/nude-c-1900.jpg',
           title: 'Nude',
           artist: 'Clarence White',
@@ -2668,7 +2668,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 134,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/broadway-at-night-1905.jpg',
           title: 'Broadway at Night',
           artist: 'Alvin Langdon Coburn',
@@ -2688,7 +2688,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 135,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/miss-mary-and-edeltrude-lying-in-the-grass-1910.jpg',
           title: 'Miss Mary and Edeltrude Lying in the Grass',
           artist: 'Heinrich Kuhn',
@@ -2708,7 +2708,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 136,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/rain-03.jpg',
           title: 'Rain',
           artist: 'Abbas Kiarostami',
@@ -2728,7 +2728,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 137,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/new-york-two-hippos-1955.jpg',
           title: 'New York (Two Hippos)',
           artist: 'Vivian Maier',
@@ -2748,7 +2748,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 138,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/hanna-ralph-c1918.jpg',
           title: 'Hanna Ralph',
           artist: 'Nicola Perscheid',
@@ -2768,7 +2768,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 139,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/nude-on-back-1920.jpg',
           title: 'Nude on Back',
           artist: 'Heinrich Kuhn',
@@ -2788,7 +2788,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 140,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/mass-psychosis-1927.jpg',
           title: 'Mass Psychosis',
           artist: 'Laszlo Moholy-Nagy',
@@ -2808,7 +2808,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 141,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/versumpfung-einer-venus-5.jpg',
           title: 'Versumpfung Einer Venus 5',
           artist: 'Otto Muehl',
@@ -2828,7 +2828,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 142,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/11-1.jpg',
           title: 'Fashion at the Graveyard',
           artist: 'Arsen Savadov',
@@ -2848,7 +2848,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 143,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/3-2.jpg',
           title: 'Untitled',
           artist: 'Arsen Savadov',
@@ -2868,7 +2868,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 144,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/3a-1.jpg',
           title: 'Extension #1',
           artist: 'Rodrigo Franzao',
@@ -2888,7 +2888,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 145,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/robar-el-quedar-libre-2000.jpg',
           title: 'Robar el quedar libre',
           artist: 'Francis Naranjo',
@@ -2908,7 +2908,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 146,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/heimw-rts.jpg',
           title: 'Heimwärts',
           artist: 'Nicola Perscheid',
@@ -2928,7 +2928,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 147,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/kiki-de-montparnasse.jpg',
           title: 'Kiki de Montparnasse',
           artist: 'Man Ray',
@@ -2948,7 +2948,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 148,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/view-from-the-berlin-radio-tower-in-winter-1928.jpg',
           title: 'View from the Berlin radio tower in Winter',
           artist: 'Laszlo Moholy-Nagy',
@@ -2968,7 +2968,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 149,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/lee-nevin-1963.jpg',
           title: 'Lee Nevin',
           artist: 'Frederick Sommer',
@@ -2988,7 +2988,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 150,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/en-un-pa-s-lejano-utopos-1998.jpg',
           title: 'En un país lejano, Utopos',
           artist: 'Francis Naranjo',
@@ -3008,7 +3008,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 151,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/000010050012_1000-512x773.jpg',
           title: 'Numero Homme',
           artist: 'Matt Lambert',
@@ -3028,7 +3028,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 152,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/o-SHEILA-PREE-BRIGHT-facebook.jpg',
           title: 'Plastic Bodies',
           artist: 'Sheila Pree Bright',
@@ -3048,7 +3048,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 153,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/PAR129495.jpg',
           title: 'The 69th Tactical Missile Squadron',
           artist: 'Cornell Capa',
@@ -3068,7 +3068,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 154,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/Abeles-M_Arm-Plant-Bottles-.jpg',
           title: 'Arm Plant Bottles 300',
           artist: 'Michele Abeles',
@@ -3088,7 +3088,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 155,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/Miki-invitation.jpg',
           title: 'Works',
           artist: 'Miki Kratsman',
@@ -3108,7 +3108,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 156,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/coin.jpg',
           title: 'Coin',
           artist: 'Achraf Baznani',
@@ -3128,7 +3128,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 157,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/chicken-parts-1939.jpg',
           title: 'Chicken Parts',
           artist: 'Frederick Sommer',
@@ -3148,7 +3148,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 158,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/modern-and-contemporary-photography-circle-of-life-water-reflection-wasser-spiegelung-manfred.jpg',
           title: 'Modern and Contemporary Photography Circle of Life Water Reflection mirror Manfred Kielnhofer',
           artist: 'Manfred Kielnhofer',
@@ -3168,7 +3168,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 159,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/naturaleza-soportada-1997.jpg',
           title: 'Naturaleza soportada',
           artist: 'Francis Naranjo',
@@ -3188,7 +3188,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 160,
           user_id: 1,
-          theme: 'photography',
+          theme: 'Photography',
           img_path: './img/june/2-3.jpg',
           title: 'Fashion at the Graveyard',
           artist: 'Arsen Savadov',

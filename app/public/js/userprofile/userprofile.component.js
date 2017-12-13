@@ -161,6 +161,886 @@
       vm.addNewBill = addNewBill;
       vm.occasionReport = occasionReport;
       vm.occasionsReportDone = occasionsReportDone;
+      vm.artsCurationManagement = artsCurationManagement;
+      vm.closeArtCurratorManager = closeArtCurratorManager;
+      vm.toggleArtCurratorMonth = toggleArtCurratorMonth;
+      vm.displayArts = displayArts;
+
+      function displayArts(artTable) {
+        let janWeekDays = [ 'janArtMonday', 'janArtTuesday', 'janArtWednesday', 'janArtThursday', 'janArtFriday', 'janArtSaturday', 'janArtSunday'];
+        let janDates = [ 'janArtDay1', 'janArtDay2', 'janArtDay3', 'janArtDay4', 'janArtDay5', 'janArtDay6', 'janArtDay7', 'janArtDay8', 'janArtDay9', 'janArtDay10', 'janArtDay11', 'janArtDay12', 'janArtDay13', 'janArtDay14', 'janArtDay15', 'janArtDay16', 'janArtDay17', 'janArtDay18', 'janArtDay19', 'janArtDay20', 'janArtDay21', 'janArtDay22', 'janArtDay23', 'janArtDay24', 'janArtDay25', 'janArtDay26', 'janArtDay27', 'janArtDay28', 'janArtDay29', 'janArtDay30', 'janArtDay31' ];
+        let febWeekDays = [ 'febArtMonday', 'febArtTuesday', 'febArtWednesday', 'febArtThursday', 'febArtFriday', 'febArtSaturday', 'febArtSunday' ];
+        let febDates = [ 'febArtDay1', 'febArtDay2', 'febArtDay3', 'febArtDay4', 'febArtDay5', 'febArtDay6', 'febArtDay7', 'febArtDay8', 'febArtDay9', 'febArtDay10', 'febArtDay11', 'febArtDay12', 'febArtDay13', 'febArtDay14', 'febArtDay15', 'febArtDay16', 'febArtDay17', 'febArtDay18', 'febArtDay19', 'febArtDay20', 'febArtDay21', 'febArtDay22', 'febArtDay23', 'febArtDay24', 'febArtDay25', 'febArtDay26', 'febArtDay27', 'febArtDay28', 'febArtDay29' ];
+        let marWeekDays = [ 'marArtMonday', 'marArtTuesday', 'marArtWednesday', 'marArtThursday', 'marArtFriday', 'marArtSaturday', 'marArtSunday'];
+        let marDates = [ 'marArtDay1', 'marArtDay2', 'marArtDay3', 'marArtDay4', 'marArtDay5', 'marArtDay6', 'marArtDay7', 'marArtDay8', 'marArtDay9', 'marArtDay10', 'marArtDay11', 'marArtDay12', 'marArtDay13', 'marArtDay14', 'marArtDay15', 'marArtDay16', 'marArtDay17', 'marArtDay18', 'marArtDay19', 'marArtDay20', 'marArtDay21', 'marArtDay22', 'marArtDay23', 'marArtDay24', 'marArtDay25', 'marArtDay26', 'marArtDay27', 'marArtDay28', 'marArtDay29', 'marArtDay30', 'marArtDay31'];
+        let aprWeekDays = [ 'aprArtMonday', 'aprArtTuesday', 'aprArtWednesday', 'aprArtThursday', 'aprArtFriday', 'aprArtSaturday', 'aprArtSunday'];
+        let aprDates = [ 'aprArtDay1', 'aprArtDay2', 'aprArtDay3', 'aprArtDay4', 'aprArtDay5', 'aprArtDay6', 'aprArtDay7', 'aprArtDay8', 'aprArtDay9', 'aprArtDay10', 'aprArtDay11', 'aprArtDay12', 'aprArtDay13', 'aprArtDay14', 'aprArtDay15', 'aprArtDay16', 'aprArtDay17', 'aprArtDay18', 'aprArtDay19', 'aprArtDay20', 'aprArtDay21', 'aprArtDay22', 'aprArtDay23', 'aprArtDay24', 'aprArtDay25', 'aprArtDay26', 'aprArtDay27', 'aprArtDay28', 'aprArtDay29', 'aprArtDay30'];
+        let mayWeekDays = [ 'mayArtMonday', 'mayArtTuesday', 'mayArtWednesday', 'mayArtThursday', 'mayArtFriday', 'mayArtSaturday', 'mayArtSunday'];
+        let mayDates = [ 'mayArtDay1', 'mayArtDay2', 'mayArtDay3', 'mayArtDay4', 'mayArtDay5', 'mayArtDay6', 'mayArtDay7', 'mayArtDay8', 'mayArtDay9', 'mayArtDay10', 'mayArtDay11', 'mayArtDay12', 'mayArtDay13', 'mayArtDay14', 'mayArtDay15', 'mayArtDay16', 'mayArtDay17', 'mayArtDay18', 'mayArtDay19', 'mayArtDay20', 'mayArtDay21', 'mayArtDay22', 'mayArtDay23', 'mayArtDay24', 'mayArtDay25', 'mayArtDay26', 'mayArtDay27', 'mayArtDay28', 'mayArtDay29', 'mayArtDay30', 'mayArtDay31'];
+        let junWeekDays = [ 'junArtMonday', 'junArtTuesday', 'junArtWednesday', 'junArtThursday', 'junArtFriday', 'junArtSaturday', 'junArtSunday' ];
+        let junDates = [ 'junArtDay1', 'junArtDay2', 'junArtDay3', 'junArtDay4', 'junArtDay5', 'junArtDay6', 'junArtDay7', 'junArtDay8', 'junArtDay9', 'junArtDay10', 'junArtDay11', 'junArtDay12', 'junArtDay13', 'junArtDay14', 'junArtDay15', 'junArtDay16', 'junArtDay17', 'junArtDay18', 'junArtDay19', 'junArtDay20', 'junArtDay21', 'junArtDay22', 'junArtDay23', 'junArtDay24', 'junArtDay25', 'junArtDay26', 'junArtDay27', 'junArtDay28', 'junArtDay29', 'junArtDay30'];
+        let julWeekDays = [ 'julArtMonday', 'julArtTuesday', 'julArtWednesday', 'julArtThursday', 'julArtFriday', 'julArtSaturday', 'julArtSunday' ];
+        let julDates = [ 'julArtDay1', 'julArtDay2', 'julArtDay3', 'julArtDay4', 'julArtDay5', 'julArtDay6', 'julArtDay7', 'julArtDay8', 'julArtDay9', 'julArtDay10', 'julArtDay11', 'julArtDay12', 'julArtDay13', 'julArtDay14', 'julArtDay15', 'julArtDay16', 'julArtDay17', 'julArtDay18', 'julArtDay19', 'julArtDay20', 'julArtDay21', 'julArtDay22', 'julArtDay23', 'julArtDay24', 'julArtDay25', 'julArtDay26', 'julArtDay27', 'julArtDay28', 'julArtDay29', 'julArtDay30', 'julArtDay31'];
+        let augWeekDays = [ 'augArtMonday', 'augArtTuesday', 'augArtWednesday', 'augArtThursday', 'augArtFriday', 'augArtSaturday', 'augArtSunday' ];
+        let augDates = [ 'augArtDay1', 'augArtDay2', 'augArtDay3', 'augArtDay4', 'augArtDay5', 'augArtDay6', 'augArtDay7', 'augArtDay8', 'augArtDay9', 'augArtDay10', 'augArtDay11', 'augArtDay12', 'augArtDay13', 'augArtDay14', 'augArtDay15', 'augArtDay16', 'augArtDay17', 'augArtDay18', 'augArtDay19', 'augArtDay20', 'augArtDay21', 'augArtDay22', 'augArtDay23', 'augArtDay24', 'augArtDay25', 'augArtDay26', 'augArtDay27', 'augArtDay28', 'augArtDay29', 'augArtDay30', 'augArtDay31'];
+        let sepWeekDays = [ 'sepArtMonday', 'sepArtTuesday', 'sepArtWednesday', 'sepArtThursday', 'sepArtFriday', 'sepArtSaturday', 'sepArtSunday' ];
+        let sepDates = [ 'sepArtDay1', 'sepArtDay2', 'sepArtDay3', 'sepArtDay4', 'sepArtDay5', 'sepArtDay6', 'sepArtDay7', 'sepArtDay8', 'sepArtDay9', 'sepArtDay10', 'sepArtDay11', 'sepArtDay12', 'sepArtDay13', 'sepArtDay14', 'sepArtDay15', 'sepArtDay16', 'sepArtDay17', 'sepArtDay18', 'sepArtDay19', 'sepArtDay20', 'sepArtDay21', 'sepArtDay22', 'sepArtDay23', 'sepArtDay24', 'sepArtDay25', 'sepArtDay26', 'sepArtDay27', 'sepArtDay28', 'sepArtDay29', 'sepArtDay30' ];
+        let octWeekDays = [ 'octArtMonday', 'octArtTuesday', 'octArtWednesday', 'octArtThursday', 'octArtFriday', 'octArtSaturday', 'octArtSunday' ];
+        let octDates = [ 'octArtDay1', 'octArtDay2', 'octArtDay3', 'octArtDay4', 'octArtDay5', 'octArtDay6', 'octArtDay7', 'octArtDay8', 'octArtDay9', 'octArtDay10', 'octArtDay11', 'octArtDay12', 'octArtDay13', 'octArtDay14', 'octArtDay15', 'octArtDay16', 'octArtDay17', 'octArtDay18', 'octArtDay19', 'octArtDay20', 'octArtDay21', 'octArtDay22', 'octArtDay23', 'octArtDay24', 'octArtDay25', 'octArtDay26', 'octArtDay27', 'octArtDay28', 'octArtDay29', 'octArtDay30', 'octArtDay31' ];
+        let novWeekDays = [ 'novArtMonday', 'novArtTuesday', 'novArtWednesday', 'novArtThursday', 'novArtFriday', 'novArtSaturday', 'novArtSunday' ];
+        let novDates = [ 'novArtDay1', 'novArtDay2', 'novArtDay3', 'novArtDay4', 'novArtDay5', 'novArtDay6', 'novArtDay7', 'novArtDay8', 'novArtDay9', 'novArtDay10', 'novArtDay11', 'novArtDay12', 'novArtDay13', 'novArtDay14', 'novArtDay15', 'novArtDay16', 'novArtDay17', 'novArtDay18', 'novArtDay19', 'novArtDay20', 'novArtDay21', 'novArtDay22', 'novArtDay23', 'novArtDay24', 'novArtDay25', 'novArtDay26', 'novArtDay27', 'novArtDay28', 'novArtDay29', 'novArtDay30' ];
+        let decWeekDays = [ 'decArtMonday', 'decArtTuesday', 'decArtWednesday', 'decArtThursday', 'decArtFriday', 'decArtSaturday', 'decArtSunday' ];
+        let decDates = [ 'decArtDay1', 'decArtDay2', 'decArtDay3', 'decArtDay4', 'decArtDay5', 'decArtDay6', 'decArtDay7', 'decArtDay8', 'decArtDay9', 'decArtDay10', 'decArtDay11', 'decArtDay12', 'decArtDay13', 'decArtDay14', 'decArtDay15', 'decArtDay16', 'decArtDay17', 'decArtDay18', 'decArtDay19', 'decArtDay20', 'decArtDay21', 'decArtDay22', 'decArtDay23', 'decArtDay24', 'decArtDay25', 'decArtDay26', 'decArtDay27', 'decArtDay28', 'decArtDay29', 'decArtDay30', 'decArtDay31' ];
+        let element;
+        let weekday = '';
+        let monthDate = 0;
+        let selectedArts;
+
+        if (vm.janArts === undefined) {
+          vm.janArts = [];
+        }
+
+        $http.get(`/${artTable}/${currentUserId}`)
+        .then(monthArtData=>{
+          let monthArt = monthArtData.data;
+          switch(artTable) {
+            case('january_artsbyuser'):
+              for(let im = 0; im < janWeekDays.length; im++) {
+                element = document.getElementById(janWeekDays[im]);
+                if (element.checked) {
+                  weekday = element.value;
+                }
+              }
+              for(let id = 0; id < janDates.length; id++) {
+                element = document.getElementById(janDates[id]);
+                if (element.checked) {
+                  monthDate = parseInt(element.value);
+                }
+              }
+              if (monthDate === 0) {
+                vm.janArts = [];
+                document.getElementById('januaryTheme').setAttribute("style", "display: none;");
+              } else {
+                selectedArts = monthArt.filter(art=>{
+                  console.log(art.rule[weekday].indexOf(monthDate) !== -1);
+                  return(art.rule[weekday].indexOf(monthDate) !== -1);
+                });
+
+                vm.janArts = selectedArts.sort((a, b)=>{
+                  if (a.title.toLowerCase() < b.title.toLowerCase()) {
+                    return -1;
+                  } else if (a.title.toLowerCase() > b.title.toLowerCase()) {
+                    return 1;
+                  } else {
+                    return 0;
+                  }
+                });
+                document.getElementById('januaryTheme').innerHTML = 'Theme: ' + vm.janArts[0].theme;
+                document.getElementById('januaryTheme').setAttribute("style", "display: initial;");
+              }
+              break;
+            case('february_artsbyuser'):
+              for(let im = 0; im < febWeekDays.length; im++) {
+                element = document.getElementById(febWeekDays[im]);
+                if (element.checked) {
+                  weekday = element.value;
+                }
+              }
+              for(let id = 0; id < febDates.length; id++) {
+                element = document.getElementById(febDates[id]);
+                if (element.checked) {
+                  monthDate = parseInt(element.value);
+                }
+              }
+              if (monthDate === 0) {
+                vm.febArts = [];
+                document.getElementById('februaryTheme').setAttribute("style", "display: none;");
+              } else {
+                selectedArts = monthArt.filter(art=>{
+                  console.log(art.rule[weekday].indexOf(monthDate) !== -1);
+                  return(art.rule[weekday].indexOf(monthDate) !== -1);
+                });
+
+                vm.febArts = selectedArts.sort((a, b)=>{
+                  if (a.title.toLowerCase() < b.title.toLowerCase()) {
+                    return -1;
+                  } else if (a.title.toLowerCase() > b.title.toLowerCase()) {
+                    return 1;
+                  } else {
+                    return 0;
+                  }
+                });
+                document.getElementById('februaryTheme').innerHTML = 'Theme: ' + vm.febArts[0].theme;
+                document.getElementById('februaryTheme').setAttribute("style", "display: initial;");
+              }
+              break;
+            case('march_artsbyuser'):
+              for(let im = 0; im < marWeekDays.length; im++) {
+                element = document.getElementById(marWeekDays[im]);
+                if (element.checked) {
+                  weekday = element.value;
+                }
+              }
+              for(let id = 0; id < marDates.length; id++) {
+                element = document.getElementById(marDates[id]);
+                if (element.checked) {
+                  monthDate = parseInt(element.value);
+                }
+              }
+              if (monthDate === 0) {
+                vm.marArts = [];
+                document.getElementById('marchTheme').setAttribute("style", "display: none;");
+              } else {
+                selectedArts = monthArt.filter(art=>{
+                  console.log(art.rule[weekday].indexOf(monthDate) !== -1);
+                  return(art.rule[weekday].indexOf(monthDate) !== -1);
+                });
+
+                vm.marArts = selectedArts.sort((a, b)=>{
+                  if (a.title.toLowerCase() < b.title.toLowerCase()) {
+                    return -1;
+                  } else if (a.title.toLowerCase() > b.title.toLowerCase()) {
+                    return 1;
+                  } else {
+                    return 0;
+                  }
+                });
+                document.getElementById('marchTheme').innerHTML = 'Theme: ' + vm.marArts[0].theme;
+                document.getElementById('marchTheme').setAttribute("style", "display: initial;");
+              }
+              break;
+              case('may_artsbyuser'):
+                for(let im = 0; im < mayWeekDays.length; im++) {
+                  element = document.getElementById(mayWeekDays[im]);
+                  if (element.checked) {
+                    weekday = element.value;
+                  }
+                }
+                for(let id = 0; id < mayDates.length; id++) {
+                  element = document.getElementById(mayDates[id]);
+                  if (element.checked) {
+                    monthDate = parseInt(element.value);
+                  }
+                }
+                if (monthDate === 0) {
+                  vm.mayArts = [];
+                  document.getElementById('mayTheme').setAttribute("style", "display: none;");
+                } else {
+                  selectedArts = monthArt.filter(art=>{
+                    console.log(art.rule[weekday].indexOf(monthDate) !== -1);
+                    return(art.rule[weekday].indexOf(monthDate) !== -1);
+                  });
+
+                  vm.mayArts = selectedArts.sort((a, b)=>{
+                    if (a.title.toLowerCase() < b.title.toLowerCase()) {
+                      return -1;
+                    } else if (a.title.toLowerCase() > b.title.toLowerCase()) {
+                      return 1;
+                    } else {
+                      return 0;
+                    }
+                  });
+                  document.getElementById('mayTheme').innerHTML = 'Theme: ' + vm.mayArts[0].theme;
+                  document.getElementById('mayTheme').setAttribute("style", "display: initial;");
+                }
+                break;
+              case('april_artsbyuser'):
+                for(let im = 0; im < aprWeekDays.length; im++) {
+                  element = document.getElementById(aprWeekDays[im]);
+                  if (element.checked) {
+                    weekday = element.value;
+                  }
+                }
+                for(let id = 0; id < aprDates.length; id++) {
+                  element = document.getElementById(aprDates[id]);
+                  if (element.checked) {
+                    monthDate = parseInt(element.value);
+                  }
+                }
+                if (monthDate === 0) {
+                  vm.aprArts = [];
+                  document.getElementById('aprilTheme').setAttribute("style", "display: none;");
+                } else {
+                  selectedArts = monthArt.filter(art=>{
+                    console.log(art.rule[weekday].indexOf(monthDate) !== -1);
+                    return(art.rule[weekday].indexOf(monthDate) !== -1);
+                  });
+
+                  vm.aprArts = selectedArts.sort((a, b)=>{
+                    if (a.title.toLowerCase() < b.title.toLowerCase()) {
+                      return -1;
+                    } else if (a.title.toLowerCase() > b.title.toLowerCase()) {
+                      return 1;
+                    } else {
+                      return 0;
+                    }
+                  });
+                  document.getElementById('aprilTheme').innerHTML = 'Theme: ' + vm.aprArts[0].theme;
+                  document.getElementById('aprilTheme').setAttribute("style", "display: initial;");
+                }
+                break;
+              case('june_artsbyuser'):
+                for(let im = 0; im < junWeekDays.length; im++) {
+                  element = document.getElementById(junWeekDays[im]);
+                  if (element.checked) {
+                    weekday = element.value;
+                  }
+                }
+                for(let id = 0; id < junDates.length; id++) {
+                  element = document.getElementById(junDates[id]);
+                  if (element.checked) {
+                    monthDate = parseInt(element.value);
+                  }
+                }
+                if (monthDate === 0) {
+                  vm.junArts = [];
+                  document.getElementById('juneTheme').setAttribute("style", "display: none;");
+                } else {
+                  selectedArts = monthArt.filter(art=>{
+                    console.log(art.rule[weekday].indexOf(monthDate) !== -1);
+                    return(art.rule[weekday].indexOf(monthDate) !== -1);
+                  });
+
+                  vm.junArts = selectedArts.sort((a, b)=>{
+                    if (a.title.toLowerCase() < b.title.toLowerCase()) {
+                      return -1;
+                    } else if (a.title.toLowerCase() > b.title.toLowerCase()) {
+                      return 1;
+                    } else {
+                      return 0;
+                    }
+                  });
+                  document.getElementById('juneTheme').innerHTML = 'Theme: ' + vm.junArts[0].theme;
+                  document.getElementById('juneTheme').setAttribute("style", "display: initial;");
+                }
+                break;
+              case('july_artsbyuser'):
+                for(let im = 0; im < julWeekDays.length; im++) {
+                  element = document.getElementById(julWeekDays[im]);
+                  if (element.checked) {
+                    weekday = element.value;
+                  }
+                }
+                for(let id = 0; id < julDates.length; id++) {
+                  element = document.getElementById(julDates[id]);
+                  if (element.checked) {
+                    monthDate = parseInt(element.value);
+                  }
+                }
+                if (monthDate === 0) {
+                  vm.julArts = [];
+                  document.getElementById('julyTheme').setAttribute("style", "display: none;");
+                } else {
+                  selectedArts = monthArt.filter(art=>{
+                    console.log(art.rule[weekday].indexOf(monthDate) !== -1);
+                    return(art.rule[weekday].indexOf(monthDate) !== -1);
+                  });
+
+                  vm.julArts = selectedArts.sort((a, b)=>{
+                    if (a.title.toLowerCase() < b.title.toLowerCase()) {
+                      return -1;
+                    } else if (a.title.toLowerCase() > b.title.toLowerCase()) {
+                      return 1;
+                    } else {
+                      return 0;
+                    }
+                  });
+                  document.getElementById('julyTheme').innerHTML = 'Theme: ' + vm.julArts[0].theme;
+                  document.getElementById('julyTheme').setAttribute("style", "display: initial;");
+                }
+                break;
+              case('august_artsbyuser'):
+                for(let im = 0; im < augWeekDays.length; im++) {
+                  element = document.getElementById(augWeekDays[im]);
+                  if (element.checked) {
+                    weekday = element.value;
+                  }
+                }
+                for(let id = 0; id < augDates.length; id++) {
+                  element = document.getElementById(augDates[id]);
+                  if (element.checked) {
+                    monthDate = parseInt(element.value);
+                  }
+                }
+                if (monthDate === 0) {
+                  vm.augArts = [];
+                  document.getElementById('augustTheme').setAttribute("style", "display: none;");
+                } else {
+                  selectedArts = monthArt.filter(art=>{
+                    console.log(art.rule[weekday].indexOf(monthDate) !== -1);
+                    return(art.rule[weekday].indexOf(monthDate) !== -1);
+                  });
+
+                  vm.augArts = selectedArts.sort((a, b)=>{
+                    if (a.title.toLowerCase() < b.title.toLowerCase()) {
+                      return -1;
+                    } else if (a.title.toLowerCase() > b.title.toLowerCase()) {
+                      return 1;
+                    } else {
+                      return 0;
+                    }
+                  });
+                  document.getElementById('augustTheme').innerHTML = 'Theme: ' + vm.augArts[0].theme;
+                  document.getElementById('augustTheme').setAttribute("style", "display: initial;");
+                }
+                break;
+              case('september_artsbyuser'):
+                for(let im = 0; im < sepWeekDays.length; im++) {
+                  element = document.getElementById(sepWeekDays[im]);
+                  if (element.checked) {
+                    weekday = element.value;
+                  }
+                }
+                for(let id = 0; id < sepDates.length; id++) {
+                  element = document.getElementById(sepDates[id]);
+                  if (element.checked) {
+                    monthDate = parseInt(element.value);
+                  }
+                }
+                if (monthDate === 0) {
+                  vm.sepArts = [];
+                  document.getElementById('septemberTheme').setAttribute("style", "display: none;");
+                } else {
+                  selectedArts = monthArt.filter(art=>{
+                    console.log(art.rule[weekday].indexOf(monthDate) !== -1);
+                    return(art.rule[weekday].indexOf(monthDate) !== -1);
+                  });
+
+                  vm.sepArts = selectedArts.sort((a, b)=>{
+                    if (a.title.toLowerCase() < b.title.toLowerCase()) {
+                      return -1;
+                    } else if (a.title.toLowerCase() > b.title.toLowerCase()) {
+                      return 1;
+                    } else {
+                      return 0;
+                    }
+                  });
+                  document.getElementById('septemberTheme').innerHTML = 'Theme: ' + vm.sepArts[0].theme;
+                  document.getElementById('septemberTheme').setAttribute("style", "display: initial;");
+                }
+                break;
+              case('october_artsbyuser'):
+                for(let im = 0; im < octWeekDays.length; im++) {
+                  element = document.getElementById(octWeekDays[im]);
+                  if (element.checked) {
+                    weekday = element.value;
+                  }
+                }
+                for(let id = 0; id < octDates.length; id++) {
+                  element = document.getElementById(octDates[id]);
+                  if (element.checked) {
+                    monthDate = parseInt(element.value);
+                  }
+                }
+                if (monthDate === 0) {
+                  vm.octArts = [];
+                  document.getElementById('octoberTheme').setAttribute("style", "display: none;");
+                } else {
+                  selectedArts = monthArt.filter(art=>{
+                    console.log(art.rule[weekday].indexOf(monthDate) !== -1);
+                    return(art.rule[weekday].indexOf(monthDate) !== -1);
+                  });
+
+                  vm.octArts = selectedArts.sort((a, b)=>{
+                    if (a.title.toLowerCase() < b.title.toLowerCase()) {
+                      return -1;
+                    } else if (a.title.toLowerCase() > b.title.toLowerCase()) {
+                      return 1;
+                    } else {
+                      return 0;
+                    }
+                  });
+                  document.getElementById('octoberTheme').innerHTML = 'Theme: ' + vm.octArts[0].theme;
+                  document.getElementById('octoberTheme').setAttribute("style", "display: initial;");
+                }
+                break;
+              case('november_artsbyuser'):
+                for(let im = 0; im < novWeekDays.length; im++) {
+                  element = document.getElementById(novWeekDays[im]);
+                  if (element.checked) {
+                    weekday = element.value;
+                  }
+                }
+                for(let id = 0; id < novDates.length; id++) {
+                  element = document.getElementById(novDates[id]);
+                  if (element.checked) {
+                    monthDate = parseInt(element.value);
+                  }
+                }
+                if (monthDate === 0) {
+                  vm.novArts = [];
+                  document.getElementById('novemberTheme').setAttribute("style", "display: none;");
+                } else {
+                  selectedArts = monthArt.filter(art=>{
+                    console.log(art.rule[weekday].indexOf(monthDate) !== -1);
+                    return(art.rule[weekday].indexOf(monthDate) !== -1);
+                  });
+
+                  vm.novArts = selectedArts.sort((a, b)=>{
+                    if (a.title.toLowerCase() < b.title.toLowerCase()) {
+                      return -1;
+                    } else if (a.title.toLowerCase() > b.title.toLowerCase()) {
+                      return 1;
+                    } else {
+                      return 0;
+                    }
+                  });
+                  document.getElementById('novemberTheme').innerHTML = 'Theme: ' + vm.novArts[0].theme;
+                  document.getElementById('novemberTheme').setAttribute("style", "display: initial;");
+                }
+                break;
+              case('december_artsbyuser'):
+                for(let im = 0; im < decWeekDays.length; im++) {
+                  element = document.getElementById(decWeekDays[im]);
+                  if (element.checked) {
+                    weekday = element.value;
+                  }
+                }
+                for(let id = 0; id < decDates.length; id++) {
+                  element = document.getElementById(decDates[id]);
+                  if (element.checked) {
+                    monthDate = parseInt(element.value);
+                  }
+                }
+                if (monthDate === 0) {
+                  vm.decArts = [];
+                  document.getElementById('decemberTheme').setAttribute("style", "display: none;");
+                } else {
+                  selectedArts = monthArt.filter(art=>{
+                    console.log(art.rule[weekday].indexOf(monthDate) !== -1);
+                    return(art.rule[weekday].indexOf(monthDate) !== -1);
+                  });
+
+                  vm.decArts = selectedArts.sort((a, b)=>{
+                    if (a.title.toLowerCase() < b.title.toLowerCase()) {
+                      return -1;
+                    } else if (a.title.toLowerCase() > b.title.toLowerCase()) {
+                      return 1;
+                    } else {
+                      return 0;
+                    }
+                  });
+                  document.getElementById('decemberTheme').innerHTML = 'Theme: ' + vm.decArts[0].theme;
+                  document.getElementById('decemberTheme').setAttribute("style", "display: initial;");
+                }
+                break;
+              default:
+              console.log('month not supported');
+          }
+        });
+      }
+
+      function toggleArtCurratorMonth(month) {
+        let januaryArtCurratorToggleDiv = document.getElementById('januaryArtCurratorToggleDiv');
+        let januaryArtCurratorDisplay = document.getElementById('januaryArtCurratorDisplay');
+        let februaryArtCurratorToggleDiv = document.getElementById('februaryArtCurratorToggleDiv');
+        let februaryArtCurratorDisplay = document.getElementById('februaryArtCurratorDisplay');
+        let marchArtCurratorToggleDiv = document.getElementById('marchArtCurratorToggleDiv');
+        let marchArtCurratorDisplay = document.getElementById('marchArtCurratorDisplay');
+        let aprilArtCurratorToggleDiv = document.getElementById('aprilArtCurratorToggleDiv');
+        let aprilArtCurratorDisplay = document.getElementById('aprilArtCurratorDisplay');
+        let mayArtCurratorToggleDiv = document.getElementById('mayArtCurratorToggleDiv');
+        let mayArtCurratorDisplay = document.getElementById('mayArtCurratorDisplay');
+        let junArtCurratorToggleDiv = document.getElementById('junArtCurratorToggleDiv');
+        let junArtCurratorDisplay = document.getElementById('junArtCurratorDisplay');
+        let julArtCurratorToggleDiv = document.getElementById('julArtCurratorToggleDiv');
+        let julArtCurratorDisplay = document.getElementById('julArtCurratorDisplay');
+        let augArtCurratorToggleDiv = document.getElementById('augArtCurratorToggleDiv');
+        let augArtCurratorDisplay = document.getElementById('augArtCurratorDisplay');
+        let sepArtCurratorToggleDiv = document.getElementById('sepArtCurratorToggleDiv');
+        let sepArtCurratorDisplay = document.getElementById('sepArtCurratorDisplay');
+        let octArtCurratorToggleDiv = document.getElementById('octArtCurratorToggleDiv');
+        let octArtCurratorDisplay = document.getElementById('octArtCurratorDisplay');
+        let novArtCurratorToggleDiv = document.getElementById('novArtCurratorToggleDiv');
+        let novArtCurratorDisplay = document.getElementById('novArtCurratorDisplay');
+        let decArtCurratorToggleDiv = document.getElementById('decArtCurratorToggleDiv');
+        let decArtCurratorDisplay = document.getElementById('decArtCurratorDisplay');
+
+        switch(month) {
+          case('January'):
+            januaryArtCurratorToggleDiv.setAttribute("style", "display: none;");
+            januaryArtCurratorDisplay.setAttribute("style", "display: initial;");
+            februaryArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            februaryArtCurratorDisplay.setAttribute("style", "display: none;");
+            marchArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            marchArtCurratorDisplay.setAttribute("style", "display: none;");
+            aprilArtCurratorToggleDiv.setAttribute("style", "display:initial;");
+            aprilArtCurratorDisplay.setAttribute("style", "display: none;");
+            mayArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            mayArtCurratorDisplay.setAttribute("style", "display: none;");
+            junArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            junArtCurratorDisplay.setAttribute("style", "display: none;");
+            julArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            julArtCurratorDisplay.setAttribute("style", "display: none;");
+            augArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            augArtCurratorDisplay.setAttribute("style", "display: none;");
+            sepArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            sepArtCurratorDisplay.setAttribute("style", "display: none;");
+            octArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            octArtCurratorDisplay.setAttribute("style", "display: none;");
+            novArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            novArtCurratorDisplay.setAttribute("style", "display: none;");
+            decArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            decArtCurratorDisplay.setAttribute("style", "display: none;");
+            break;
+          case('February'):
+            januaryArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            januaryArtCurratorDisplay.setAttribute("style", "display: none;");
+            februaryArtCurratorToggleDiv.setAttribute("style", "display: none;");
+            februaryArtCurratorDisplay.setAttribute("style", "display: initial;");
+            marchArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            marchArtCurratorDisplay.setAttribute("style", "display: none;");
+            aprilArtCurratorToggleDiv.setAttribute("style", "display:initial;");
+            aprilArtCurratorDisplay.setAttribute("style", "display: none;");
+            mayArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            mayArtCurratorDisplay.setAttribute("style", "display: none;");
+            junArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            junArtCurratorDisplay.setAttribute("style", "display: none;");
+            julArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            julArtCurratorDisplay.setAttribute("style", "display: none;");
+            augArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            augArtCurratorDisplay.setAttribute("style", "display: none;");
+            sepArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            sepArtCurratorDisplay.setAttribute("style", "display: none;");
+            octArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            octArtCurratorDisplay.setAttribute("style", "display: none;");
+            novArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            novArtCurratorDisplay.setAttribute("style", "display: none;");
+            decArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            decArtCurratorDisplay.setAttribute("style", "display: none;");
+            break;
+          case('March'):
+            januaryArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            januaryArtCurratorDisplay.setAttribute("style", "display: none;");
+            februaryArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            februaryArtCurratorDisplay.setAttribute("style", "display: none;");
+            marchArtCurratorToggleDiv.setAttribute("style", "display: none;");
+            marchArtCurratorDisplay.setAttribute("style", "display: initial;");
+            aprilArtCurratorToggleDiv.setAttribute("style", "display:initial;");
+            aprilArtCurratorDisplay.setAttribute("style", "display: none;");
+            mayArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            mayArtCurratorDisplay.setAttribute("style", "display: none;");
+            junArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            junArtCurratorDisplay.setAttribute("style", "display: none;");
+            julArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            julArtCurratorDisplay.setAttribute("style", "display: none;");
+            augArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            augArtCurratorDisplay.setAttribute("style", "display: none;");
+            sepArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            sepArtCurratorDisplay.setAttribute("style", "display: none;");
+            octArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            octArtCurratorDisplay.setAttribute("style", "display: none;");
+            novArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            novArtCurratorDisplay.setAttribute("style", "display: none;");
+            decArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            decArtCurratorDisplay.setAttribute("style", "display: none;");
+            break;
+          case('April'):
+            januaryArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            januaryArtCurratorDisplay.setAttribute("style", "display: none;");
+            februaryArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            februaryArtCurratorDisplay.setAttribute("style", "display: none;");
+            marchArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            marchArtCurratorDisplay.setAttribute("style", "display: none;");
+            aprilArtCurratorToggleDiv.setAttribute("style", "display:none;");
+            aprilArtCurratorDisplay.setAttribute("style", "display: initial;");
+            mayArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            mayArtCurratorDisplay.setAttribute("style", "display: none;");
+            junArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            junArtCurratorDisplay.setAttribute("style", "display: none;");
+            julArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            julArtCurratorDisplay.setAttribute("style", "display: none;");
+            augArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            augArtCurratorDisplay.setAttribute("style", "display: none;");
+            sepArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            sepArtCurratorDisplay.setAttribute("style", "display: none;");
+            octArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            octArtCurratorDisplay.setAttribute("style", "display: none;");
+            novArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            novArtCurratorDisplay.setAttribute("style", "display: none;");
+            decArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            decArtCurratorDisplay.setAttribute("style", "display: none;");
+            break;
+          case('May'):
+            januaryArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            januaryArtCurratorDisplay.setAttribute("style", "display: none;");
+            februaryArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            februaryArtCurratorDisplay.setAttribute("style", "display: none;");
+            marchArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            marchArtCurratorDisplay.setAttribute("style", "display: none;");
+            aprilArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            aprilArtCurratorDisplay.setAttribute("style", "display: none;");
+            mayArtCurratorToggleDiv.setAttribute("style", "display: none;");
+            mayArtCurratorDisplay.setAttribute("style", "display: initial;");
+            junArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            junArtCurratorDisplay.setAttribute("style", "display: none;");
+            julArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            julArtCurratorDisplay.setAttribute("style", "display: none;");
+            augArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            augArtCurratorDisplay.setAttribute("style", "display: none;");
+            sepArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            sepArtCurratorDisplay.setAttribute("style", "display: none;");
+            octArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            octArtCurratorDisplay.setAttribute("style", "display: none;");
+            novArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            novArtCurratorDisplay.setAttribute("style", "display: none;");
+            decArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            decArtCurratorDisplay.setAttribute("style", "display: none;");
+            break;
+          case('June'):
+            januaryArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            januaryArtCurratorDisplay.setAttribute("style", "display: none;");
+            februaryArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            februaryArtCurratorDisplay.setAttribute("style", "display: none;");
+            marchArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            marchArtCurratorDisplay.setAttribute("style", "display: none;");
+            aprilArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            aprilArtCurratorDisplay.setAttribute("style", "display: none;");
+            mayArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            mayArtCurratorDisplay.setAttribute("style", "display: none;");
+            junArtCurratorToggleDiv.setAttribute("style", "display: none;");
+            junArtCurratorDisplay.setAttribute("style", "display: initial;");
+            julArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            julArtCurratorDisplay.setAttribute("style", "display: none;");
+            augArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            augArtCurratorDisplay.setAttribute("style", "display: none;");
+            sepArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            sepArtCurratorDisplay.setAttribute("style", "display: none;");
+            octArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            octArtCurratorDisplay.setAttribute("style", "display: none;");
+            novArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            novArtCurratorDisplay.setAttribute("style", "display: none;");
+            decArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            decArtCurratorDisplay.setAttribute("style", "display: none;");
+            break;
+          case('July'):
+            januaryArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            januaryArtCurratorDisplay.setAttribute("style", "display: none;");
+            februaryArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            februaryArtCurratorDisplay.setAttribute("style", "display: none;");
+            marchArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            marchArtCurratorDisplay.setAttribute("style", "display: none;");
+            aprilArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            aprilArtCurratorDisplay.setAttribute("style", "display: none;");
+            mayArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            mayArtCurratorDisplay.setAttribute("style", "display: none;");
+            junArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            junArtCurratorDisplay.setAttribute("style", "display: none;");
+            julArtCurratorToggleDiv.setAttribute("style", "display: none;");
+            julArtCurratorDisplay.setAttribute("style", "display: initial;");
+            augArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            augArtCurratorDisplay.setAttribute("style", "display: none;");
+            sepArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            sepArtCurratorDisplay.setAttribute("style", "display: none;");
+            octArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            octArtCurratorDisplay.setAttribute("style", "display: none;");
+            novArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            novArtCurratorDisplay.setAttribute("style", "display: none;");
+            decArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            decArtCurratorDisplay.setAttribute("style", "display: none;");
+            break;
+          case('August'):
+            januaryArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            januaryArtCurratorDisplay.setAttribute("style", "display: none;");
+            februaryArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            februaryArtCurratorDisplay.setAttribute("style", "display: none;");
+            marchArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            marchArtCurratorDisplay.setAttribute("style", "display: none;");
+            aprilArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            aprilArtCurratorDisplay.setAttribute("style", "display: none;");
+            mayArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            mayArtCurratorDisplay.setAttribute("style", "display: none;");
+            junArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            junArtCurratorDisplay.setAttribute("style", "display: none;");
+            julArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            julArtCurratorDisplay.setAttribute("style", "display: none;");
+            augArtCurratorToggleDiv.setAttribute("style", "display: none;");
+            augArtCurratorDisplay.setAttribute("style", "display: initial;");
+            sepArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            sepArtCurratorDisplay.setAttribute("style", "display: none;");
+            octArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            octArtCurratorDisplay.setAttribute("style", "display: none;");
+            novArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            novArtCurratorDisplay.setAttribute("style", "display: none;");
+            decArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            decArtCurratorDisplay.setAttribute("style", "display: none;");
+            break;
+          case('September'):
+            januaryArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            januaryArtCurratorDisplay.setAttribute("style", "display: none;");
+            februaryArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            februaryArtCurratorDisplay.setAttribute("style", "display: none;");
+            marchArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            marchArtCurratorDisplay.setAttribute("style", "display: none;");
+            aprilArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            aprilArtCurratorDisplay.setAttribute("style", "display: none;");
+            mayArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            mayArtCurratorDisplay.setAttribute("style", "display: none;");
+            junArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            junArtCurratorDisplay.setAttribute("style", "display: none;");
+            julArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            julArtCurratorDisplay.setAttribute("style", "display: none;");
+            augArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            augArtCurratorDisplay.setAttribute("style", "display: none;");
+            sepArtCurratorToggleDiv.setAttribute("style", "display: none;");
+            sepArtCurratorDisplay.setAttribute("style", "display: initial;");
+            octArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            octArtCurratorDisplay.setAttribute("style", "display: none;");
+            novArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            novArtCurratorDisplay.setAttribute("style", "display: none;");
+            decArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            decArtCurratorDisplay.setAttribute("style", "display: none;");
+            break;
+          case('October'):
+            januaryArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            januaryArtCurratorDisplay.setAttribute("style", "display: none;");
+            februaryArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            februaryArtCurratorDisplay.setAttribute("style", "display: none;");
+            marchArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            marchArtCurratorDisplay.setAttribute("style", "display: none;");
+            aprilArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            aprilArtCurratorDisplay.setAttribute("style", "display: none;");
+            mayArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            mayArtCurratorDisplay.setAttribute("style", "display: none;");
+            junArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            junArtCurratorDisplay.setAttribute("style", "display: none;");
+            julArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            julArtCurratorDisplay.setAttribute("style", "display: none;");
+            augArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            augArtCurratorDisplay.setAttribute("style", "display: none;");
+            sepArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            sepArtCurratorDisplay.setAttribute("style", "display: none;");
+            octArtCurratorToggleDiv.setAttribute("style", "display: none;");
+            octArtCurratorDisplay.setAttribute("style", "display: initial;");
+            novArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            novArtCurratorDisplay.setAttribute("style", "display: none;");
+            decArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            decArtCurratorDisplay.setAttribute("style", "display: none;");
+            break;
+          case('November'):
+            januaryArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            januaryArtCurratorDisplay.setAttribute("style", "display: none;");
+            februaryArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            februaryArtCurratorDisplay.setAttribute("style", "display: none;");
+            marchArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            marchArtCurratorDisplay.setAttribute("style", "display: none;");
+            aprilArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            aprilArtCurratorDisplay.setAttribute("style", "display: none;");
+            mayArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            mayArtCurratorDisplay.setAttribute("style", "display: none;");
+            junArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            junArtCurratorDisplay.setAttribute("style", "display: none;");
+            julArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            julArtCurratorDisplay.setAttribute("style", "display: none;");
+            augArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            augArtCurratorDisplay.setAttribute("style", "display: none;");
+            sepArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            sepArtCurratorDisplay.setAttribute("style", "display: none;");
+            octArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            octArtCurratorDisplay.setAttribute("style", "display: none;");
+            novArtCurratorToggleDiv.setAttribute("style", "display: none;");
+            novArtCurratorDisplay.setAttribute("style", "display: initial;");
+            decArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            decArtCurratorDisplay.setAttribute("style", "display: none;");
+            break;
+          case('December'):
+            januaryArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            januaryArtCurratorDisplay.setAttribute("style", "display: none;");
+            februaryArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            februaryArtCurratorDisplay.setAttribute("style", "display: none;");
+            marchArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            marchArtCurratorDisplay.setAttribute("style", "display: none;");
+            aprilArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            aprilArtCurratorDisplay.setAttribute("style", "display: none;");
+            mayArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            mayArtCurratorDisplay.setAttribute("style", "display: none;");
+            junArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            junArtCurratorDisplay.setAttribute("style", "display: none;");
+            julArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            julArtCurratorDisplay.setAttribute("style", "display: none;");
+            augArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            augArtCurratorDisplay.setAttribute("style", "display: none;");
+            sepArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            sepArtCurratorDisplay.setAttribute("style", "display: none;");
+            octArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            octArtCurratorDisplay.setAttribute("style", "display: none;");
+            novArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+            novArtCurratorDisplay.setAttribute("style", "display: none;");
+            decArtCurratorToggleDiv.setAttribute("style", "display: none;");
+            decArtCurratorDisplay.setAttribute("style", "display: initial;");
+            break;
+          default:
+            console.log('month not supported');
+        }
+      }
+
+      function closeArtCurratorManager() {
+        let artCurratorManagementDiv = document.getElementById('artCurratorManagementDiv');
+        let artsCurratorZone = document.getElementById('artsCurratorZone');
+        let artsCuratorManager = document.getElementById('artsCuratorManager');
+        let januaryArtCurratorToggleDiv = document.getElementById('januaryArtCurratorToggleDiv');
+        let januaryArtCurratorDisplay = document.getElementById('januaryArtCurratorDisplay');
+        let februaryArtCurratorToggleDiv = document.getElementById('februaryArtCurratorToggleDiv');
+        let februaryArtCurratorDisplay = document.getElementById('februaryArtCurratorDisplay');
+        let marchArtCurratorToggleDiv = document.getElementById('marchArtCurratorToggleDiv');
+        let marchArtCurratorDisplay = document.getElementById('marchArtCurratorDisplay');
+        let aprilArtCurratorToggleDiv = document.getElementById('aprilArtCurratorToggleDiv');
+        let aprilArtCurratorDisplay = document.getElementById('aprilArtCurratorDisplay');
+        let mayArtCurratorToggleDiv = document.getElementById('mayArtCurratorToggleDiv');
+        let mayArtCurratorDisplay = document.getElementById('mayArtCurratorDisplay');
+        let junArtCurratorToggleDiv = document.getElementById('junArtCurratorToggleDiv');
+        let junArtCurratorDisplay = document.getElementById('junArtCurratorDisplay');
+        let julArtCurratorToggleDiv = document.getElementById('julArtCurratorToggleDiv');
+        let julArtCurratorDisplay = document.getElementById('julArtCurratorDisplay');
+        let augArtCurratorToggleDiv = document.getElementById('augArtCurratorToggleDiv');
+        let augArtCurratorDisplay = document.getElementById('augArtCurratorDisplay');
+        let sepArtCurratorToggleDiv = document.getElementById('sepArtCurratorToggleDiv');
+        let sepArtCurratorDisplay = document.getElementById('sepArtCurratorDisplay');
+        let octArtCurratorToggleDiv = document.getElementById('octArtCurratorToggleDiv');
+        let octArtCurratorDisplay = document.getElementById('octArtCurratorDisplay');
+        let novArtCurratorToggleDiv = document.getElementById('novArtCurratorToggleDiv');
+        let novArtCurratorDisplay = document.getElementById('novArtCurratorDisplay');
+        let decArtCurratorToggleDiv = document.getElementById('decArtCurratorToggleDiv');
+        let decArtCurratorDisplay = document.getElementById('decArtCurratorDisplay');
+
+        artCurratorManagementDiv.setAttribute("style", "display: none;");
+        artsCurratorZone.setAttribute("style", "opacity: 1.0;");
+        artsCuratorManager.setAttribute("style", "visibility: visible;");
+        januaryArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+        januaryArtCurratorDisplay.setAttribute("style", "display: none;");
+        februaryArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+        februaryArtCurratorDisplay.setAttribute("style", "display: none;");
+        marchArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+        marchArtCurratorDisplay.setAttribute("style", "display: none;");
+        aprilArtCurratorToggleDiv.setAttribute("style", "display:initial;");
+        aprilArtCurratorDisplay.setAttribute("style", "display: none;");
+        mayArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+        mayArtCurratorDisplay.setAttribute("style", "display: none;");
+        junArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+        junArtCurratorDisplay.setAttribute("style", "display: none;");
+        julArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+        julArtCurratorDisplay.setAttribute("style", "display: none;");
+        augArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+        augArtCurratorDisplay.setAttribute("style", "display: none;");
+        sepArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+        sepArtCurratorDisplay.setAttribute("style", "display: none;");
+        octArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+        octArtCurratorDisplay.setAttribute("style", "display: none;");
+        novArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+        novArtCurratorDisplay.setAttribute("style", "display: none;");
+        decArtCurratorToggleDiv.setAttribute("style", "display: initial;");
+        decArtCurratorDisplay.setAttribute("style", "display: none;");
+      }
+
+      function artsCurationManagement() {
+        let artCurratorManagementDiv = document.getElementById('artCurratorManagementDiv');
+        let artsCurratorZone = document.getElementById('artsCurratorZone');
+        let artsCuratorManager = document.getElementById('artsCuratorManager');
+
+        artCurratorManagementDiv.setAttribute("style", "display: initial;");
+        artsCurratorZone.setAttribute("style", "opacity: 0.3;");
+        artsCuratorManager.setAttribute("style", "visibility: hidden;");
+      }
 
       function occasionsReportDone() {
         let reportForOccasions = document.getElementById('reportForOccasions');

@@ -8,7 +8,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 1,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/company-visit.jpg',
           title: 'Company visit',
           artist: 'Niko Pirosmani',
@@ -28,7 +28,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 2,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/the-good-samaritan-1907.jpg',
           title: 'The Good Samaritan',
           artist: 'Paula Modersohn-Becker',
@@ -48,7 +48,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 3,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/gasometer-in-vorortbahn-1920.jpg',
           title: 'Gasometer in Vorortbahn',
           artist: 'Ernst Ludwig Kirchner',
@@ -68,7 +68,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 4,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/firefly-1907.jpg',
           title: 'Firefly',
           artist: 'George Seeley',
@@ -88,7 +88,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 5,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/soapdish-1929.jpg',
           title: 'Soapdish',
           artist: 'Luigi Russolo',
@@ -108,7 +108,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 6,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/vertigo-1908.jpg',
           title: 'Vertigo',
           artist: 'Leon Spilliaert',
@@ -128,7 +128,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 7,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/capelli-rossi-red-hair.jpg',
           title: 'Capelli Rossi (Red Hair)',
           artist: 'Ernst Ludwig Kirchner',
@@ -148,7 +148,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 8,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/jack-of-clubs-1916.jpg',
           title: 'Jack of Clubs',
           artist: 'Olga Rozanova',
@@ -168,7 +168,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 9,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/a-victim-of-society.jpg',
           title: 'A Victim of Society',
           artist: 'George Grosz',
@@ -188,7 +188,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 10,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/flamboyant-landscape-1933.jpg',
           title: 'Flamboyant landscape',
           artist: 'Martiros Sarian',
@@ -208,7 +208,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 11,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/entrance-hall-moffatt-ladd-house-1923.jpg',
           title: 'Entrance Hall, Moffatt-Ladd House',
           artist: 'Walter Gay',
@@ -228,7 +228,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 12,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/the-blue-ship-1934.jpg',
           title: 'The Blue Ship',
           artist: 'Alfred Wallis',
@@ -248,7 +248,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 13,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/moonlight-waning-winter-1924.jpg',
           title: 'Moonlight, Waning Winter',
           artist: 'Homer Watson',
@@ -268,7 +268,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 14,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/the-chess-players-1929.jpg',
           title: 'The Chess Players',
           artist: 'John Lavery',
@@ -288,7 +288,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 15,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/contrasting-sounds-1924.jpg',
           title: 'Contrasting sounds',
           artist: 'Wassily Kandinsky',
@@ -308,7 +308,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 16,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/boy-with-the-birdie-1924.jpg',
           title: 'Boy with the Birdie',
           artist: 'Fedir Krychevsky',
@@ -328,7 +328,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 17,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/gr-relief-ii-1932.jpg',
           title: 'Grå relief II',
           artist: 'Gosta Adrian-Nilsson',
@@ -348,7 +348,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 18,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/l-glise-st-desir.jpg',
           title: 'L\'église St. Desir',
           artist: 'Louis Vivin',
@@ -368,7 +368,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 19,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/r-ckenakt-1920.jpg',
           title: 'Rückenakt',
           artist: 'Heinrich Kuhn',
@@ -388,7 +388,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 20,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/clifton-grove-clifton-hall-nottingham-1.jpg',
           title: 'Clifton Grove, Clifton Hall, Nottingham',
           artist: 'Arthur Lowe',
@@ -408,7 +408,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 21,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/odalisque-1931.jpg',
           title: 'Odalisque',
           artist: 'Francisc Sirato',
@@ -428,7 +428,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 22,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/nude-sitting-1902.jpg',
           title: 'Nude sitting',
           artist: 'Nicolae Vermont',
@@ -448,7 +448,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 23,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/j-zef-pankiewicz-fili-anka-herbaty-wizyta.jpg',
           title: 'Filiżanka Herbaty (wizyta)',
           artist: 'Józef Pankiewicz',
@@ -468,7 +468,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 24,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/bittersweet-1935.jpg',
           title: 'Bittersweet',
           artist: 'Georges Rouault',
@@ -488,7 +488,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 25,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/asakusa-kannon-tokyo-1926.jpg',
           title: 'Asakusa Kannon, Tokyo',
           artist: 'Shotei Takahashi',
@@ -508,7 +508,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 26,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/fanny-machine-the-machinery-1928.jpg',
           title: 'Fanny Machine - The machinery',
           artist: 'Frantisek Kupka',
@@ -528,7 +528,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 27,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/october-idyll-1905.jpg',
           title: 'October Idyll',
           artist: 'Mstislav Dobuzhinsky',
@@ -548,7 +548,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 28,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/psyche-discovers-that-her-secret-lover-is-cupid.jpg',
           title: 'Psyche Discovers That Her Secret Lover Is Cupid',
           artist: 'Maurice Denis',
@@ -568,7 +568,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 29,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/planos-de-color-con-dos-maderas-superpuestas-1928.jpg',
           title: 'Planos de color con dos maderas superpuestas',
           artist: 'Joaquin Torres Garcia',
@@ -588,7 +588,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 30,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/mottled-landscape-1924.jpg',
           title: 'Mottled landscape',
           artist: 'Martiros Sarian',
@@ -608,7 +608,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 31,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/the-blonde-woman.jpg',
           title: 'The Blonde Woman',
           artist: 'Albert Marquet',
@@ -628,7 +628,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 32,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/wines-liquors-1910.jpg',
           title: 'Wines, Liquors',
           artist: 'Maurice de Vlaminck',
@@ -648,7 +648,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 33,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/le-maquereau-1935.jpg',
           title: 'Le Maquereau',
           artist: 'Camille Bombois',
@@ -668,7 +668,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 34,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/the-tribute-money-1915.jpg',
           title: 'The tribute money',
           artist: 'Emil Nolde',
@@ -688,7 +688,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 35,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/the-demonstration.jpg',
           title: 'The Demonstration',
           artist: 'Emmanuel Zairis',
@@ -708,7 +708,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 36,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/proue-de-naivre-et-papillons-1925.jpg',
           title: 'Proue de naivre et papillons',
           artist: 'Pierre Roy',
@@ -728,7 +728,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 37,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/die-k-nigin-von-saba-1918.jpg',
           title: 'Die Königin von Saba',
           artist: 'Arthur Segal',
@@ -748,7 +748,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 38,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/fishing-boats-at-collioure.jpg',
           title: 'Fishing boats at Collioure',
           artist: 'Henri Martin',
@@ -768,7 +768,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 39,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/mih-ly-k-rolyi-1930.jpg',
           title: 'Mihály Károlyi',
           artist: 'Bertalan Por',
@@ -788,7 +788,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 40,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/the-accordion-player-1919.jpg',
           title: 'The Accordion Player',
           artist: 'Gino Severini',
@@ -808,7 +808,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 41,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/la-femme-l-ventail-woman-with-fan-1913.jpg',
           title: 'La Femme à l\'Éventail (Woman with Fan)',
           artist: 'Jean Metzinger',
@@ -828,7 +828,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 42,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/still-life-with-t-ang-horse-1921.jpg',
           title: 'Still Life with T\'ang Horse',
           artist: 'Roger Fry',
@@ -848,7 +848,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 43,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/picture-xvi-the-great-gate-of-kiev-stage-set-for-mussorgsky-s-pictures-at-an-exhibition-in-1928(1).jpg',
           title: 'Picture XVI, The Great Gate of Kiev. Stage set for Mussorgsky\'s Pictures at an Exhibition in Friedrich Theater, Dessau.',
           artist: 'Wassily Kandinsky',
@@ -868,7 +868,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 44,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/eiffel-tower.jpg',
           title: 'Eiffel Tower',
           artist: 'Robert Delaunay',
@@ -888,7 +888,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 45,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/visitation-in-blue.jpg',
           title: 'Visitation in Blue',
           artist: 'Maurice Denis',
@@ -908,7 +908,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 46,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/musicians-1927.jpg',
           title: 'Musicians',
           artist: 'Carlos Merida',
@@ -928,7 +928,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 47,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/hommage-delaunay-et-gleizes-1938.jpg',
           title: 'Hommage à Delaunay et Gleizes',
           artist: 'Adolf Fleischmann',
@@ -948,7 +948,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 48,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/from-thorheiten-1901-3.jpg',
           title: 'from Thorheiten',
           artist: 'Thomas Theodor Heine',
@@ -968,7 +968,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 49,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/not_detected_235984.jpg',
           title: 'The Widow I',
           artist: 'Kathe Kollwitz',
@@ -988,7 +988,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 50,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/ashbury-park-south-1920.jpg',
           title: 'Ashbury Park South',
           artist: 'Florine Stettheimer',
@@ -1008,7 +1008,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 51,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/petrograd-red-columns-1922.jpg',
           title: 'Petrograd. Red columns.',
           artist: 'Anna Ostroumova-Lebedeva',
@@ -1028,7 +1028,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 52,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/homme-cactus-dansant-1939.jpg',
           title: 'Homme cactus dansant',
           artist: 'Julio Gonzalez',
@@ -1048,7 +1048,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 53,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/portrait-of-natalia-petrovna-konchalovsky-the-artist-s-daughter-in-pink-dress-1925.jpg',
           title: 'Portrait of Natalia Petrovna Konchalovsky, the artist\'s daughter (in pink dress)',
           artist: 'Pyotr Konchalovsky',
@@ -1068,7 +1068,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 54,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/hauptstrasse-mit-mann-1934(1).jpg',
           title: 'Hauptstrasse (Mit Mann)',
           artist: 'Gabriele Munter',
@@ -1088,7 +1088,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 55,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/not_detected_235938.jpg',
           title: 'Female nude seated on the ground',
           artist: 'Oskar Kokoschka',
@@ -1108,7 +1108,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 56,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/nude-on-sand-oceano-1935.jpg',
           title: 'Nude on Sand, Oceano',
           artist: 'Edward Weston',
@@ -1128,7 +1128,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 57,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/portrait-of-b-khmelnitsky.jpg',
           title: 'Portrait of B. Khmelnitsky',
           artist: 'Heorhiy Narbut',
@@ -1148,7 +1148,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 58,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/gypsies-from-dobruja.jpg',
           title: 'Gypsies from Dobruja',
           artist: 'Stefan Dimitrescu',
@@ -1168,7 +1168,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 59,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/model-1913.jpg',
           title: 'Model',
           artist: 'Vladimir Tatlin',
@@ -1188,7 +1188,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 60,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/abstract-no-7-1939.jpg',
           title: 'Abstract No. 7',
           artist: 'Lawren Harris',
@@ -1208,7 +1208,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 61,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/highway-and-byways-1929(1).jpg',
           title: 'Highway and byways',
           artist: 'Paul Klee',
@@ -1228,7 +1228,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 62,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/the-white-man-1907.jpg',
           title: 'The White Man',
           artist: 'Lyonel Feininger',
@@ -1248,7 +1248,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 63,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/chashma-shahi.jpg',
           title: 'Chashma Shahi',
           artist: 'Abanindranath Tagore',
@@ -1268,7 +1268,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 64,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/baigneuse.jpg',
           title: 'Baigneuse',
           artist: 'Nicolae Vermont',
@@ -1288,7 +1288,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 65,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/21439.jpg',
           title: 'Departure of Empress Elizabeth Petrovna',
           artist: 'Eugene Lanceray',
@@ -1308,7 +1308,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 66,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/self-portrait.jpg',
           title: 'Self-Portrait',
           artist: 'Otto Dix',
@@ -1328,7 +1328,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 67,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/haystacks-pankiewitcz.jpg',
           title: '73.5 Cm (28.94 In.). Painting - Oil on Canvas',
           artist: 'Józef Pankiewicz',
@@ -1348,7 +1348,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 68,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/sister-of-mercy.jpg',
           title: 'Sister of mercy',
           artist: 'Ivan Vladimirov',
@@ -1368,7 +1368,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 69,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/cochet-rie.jpg',
           title: 'Cochetărie',
           artist: 'Ipolit Strambu',
@@ -1388,7 +1388,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 70,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/p-235-o-2-k-8-2-1.jpg',
           title: 'Unknown',
           artist: 'Boris Schatz',
@@ -1408,7 +1408,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 71,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/j-zef-pankiewicz-jasie-ski-przy-fortepianie-1908.jpg',
           title: 'Feliks Jasieński Przy Fortepianie',
           artist: 'Józef Pankiewicz',
@@ -1428,7 +1428,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 72,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/lunes-et-petites-lunes-tournez.jpg',
           title: 'Lunes et petites lunes tournez',
           artist: 'Louis Soutter',
@@ -1448,7 +1448,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 73,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/japonese-props-1930.jpg',
           title: 'Japonese Props',
           artist: 'Theodor Pallady',
@@ -1468,7 +1468,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 74,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/notable-day-in-the-mountains-1926.jpg',
           title: 'Notable day in the mountains',
           artist: 'Martiros Sarian',
@@ -1488,7 +1488,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 75,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/the-kiss-1904.jpg',
           title: 'The Kiss',
           artist: 'Clarence White',
@@ -1508,7 +1508,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 76,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/new-clouds-1937.jpg',
           title: 'New Clouds',
           artist: 'Nandalal Bose',
@@ -1528,7 +1528,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 77,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/landscape-with-a-pond-and-water-lilies-1915.jpg',
           title: 'Landscape with a Pond and Water Lilies',
           artist: 'Vanessa Bell',
@@ -1548,7 +1548,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 78,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/nude-with-red-turban-1926.jpg',
           title: 'Nude with Red Turban',
           artist: 'Bela Czobel',
@@ -1568,7 +1568,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 79,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/pieta.jpg',
           title: 'Pieta',
           artist: 'Oskar Kokoschka',
@@ -1588,7 +1588,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 80,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/goldfish-1902.jpg',
           title: 'Goldfish',
           artist: 'Gustav Klimt',
@@ -1608,7 +1608,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 81,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/meditation-1917(1).jpg',
           title: 'Meditation',
           artist: 'Gabriele Munter',
@@ -1628,7 +1628,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 82,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/holiday-mission-beach-1938.jpg',
           title: 'Holiday, Mission Beach',
           artist: 'Charles Reiffel',
@@ -1648,7 +1648,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 83,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/la-table-1927.jpg',
           title: 'La Table',
           artist: 'Louis Marcoussis',
@@ -1668,7 +1668,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 84,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/cityscape-kiev.jpg',
           title: 'Cityscape. Kiev.',
           artist: 'Oleksandr Bogomazov',
@@ -1688,7 +1688,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 85,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/portrait-of-elena-annenkova-1917.jpg',
           title: 'Portrait of Elena Annenkova',
           artist: 'Jury Annenkov',
@@ -1708,7 +1708,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 86,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/the-sailor-self-portrait-1912.jpg',
           title: 'The Sailor (Self Portrait)',
           artist: 'Vladimir Tatlin',
@@ -1728,7 +1728,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 87,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/sailor-and-his-girl-1920.jpg',
           title: 'Sailor and His Girl',
           artist: 'Boris Kustodiev',
@@ -1748,7 +1748,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 88,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/orbits-of-the-planets-1921.jpg',
           title: 'Orbits of the Planets',
           artist: 'Erich Buchholz',
@@ -1768,7 +1768,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 89,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/apollo-1923.jpg',
           title: 'Apollo',
           artist: 'Willi Baumeister',
@@ -1788,7 +1788,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 90,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/composition-1936.jpg',
           title: 'Composition',
           artist: 'Karl Knaths',
@@ -1808,7 +1808,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 91,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/the-sleeping-gypsy-1897.jpg',
           title: 'The Sleeping Gypsy',
           artist: 'Henri Rousseau',
@@ -1828,7 +1828,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 92,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/fire-swept-algoma-1920.jpg',
           title: 'Fire Swept Algoma',
           artist: 'Frank Johnston',
@@ -1848,7 +1848,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 93,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/castle-and-sun-1928.jpg',
           title: 'Castle and Sun',
           artist: 'Paul Klee',
@@ -1868,7 +1868,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 94,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/the-dancer-1938.jpg',
           title: 'he Dancer',
           artist: 'Greta Freist',
@@ -1888,7 +1888,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 95,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/la-rentr-e-1927.jpg',
           title: 'La rentrée',
           artist: 'Anita Malfatti',
@@ -1908,7 +1908,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 96,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/workshop-1915.jpg',
           title: 'Workshop',
           artist: 'Wyndham Lewis',
@@ -1928,7 +1928,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 97,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/automat-1927.jpg',
           title: 'Automat',
           artist: 'Edward Hopper',
@@ -1948,7 +1948,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 98,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/balchik-beach-1926.jpg',
           title: 'Balchik Beach',
           artist: 'Stefan Dimitrescu',
@@ -1968,7 +1968,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 99,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/composition-avec-7-tubes-1925.jpg',
           title: 'Composition avec 7 tubes',
           artist: 'Gustave Buchet',
@@ -1988,7 +1988,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 100,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/futuristic-woman-1911.jpg',
           title: 'Futuristic woman',
           artist: 'David Burliuk',
@@ -2008,7 +2008,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 101,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/tuning-saws-1927.jpg',
           title: 'Tuning saws',
           artist: 'Oleksandr Bogomazov',
@@ -2028,7 +2028,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 102,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/sunrise-1924.jpg',
           title: 'Sunrise',
           artist: 'Arthur Dove',
@@ -2048,7 +2048,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 103,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/bullfighting-amateur-1910.jpg',
           title: 'Bullfighting amateur',
           artist: 'Pyotr Konchalovsky',
@@ -2068,7 +2068,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 104,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/radha-s-vihara-1936.jpg',
           title: 'Radha\'s Vihara',
           artist: 'Nandalal Bose',
@@ -2088,7 +2088,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 105,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/grand-musicien-1920.jpg',
           title: 'Grand musicien',
           artist: 'Georges Ribemont-Dessaignes',
@@ -2108,7 +2108,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 106,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/cinco-mo-as-de-guaratinguet-1930.jpg',
           title: 'Cinco Moças de Guaratinguetá',
           artist: 'Emiliano Di Cavalcanti',
@@ -2128,7 +2128,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 107,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/lumberjack.jpg',
           title: 'Lumberjack',
           artist: 'Oleksandr Bogomazov',
@@ -2148,7 +2148,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 108,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/adam-and-eve-1938.jpg',
           title: 'Adam and Eve',
           artist: 'Andre Bauchant',
@@ -2168,7 +2168,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 109,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/the-mermaid-1910.jpg',
           title: 'The Mermaid',
           artist: 'Howard Pyle',
@@ -2188,7 +2188,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 110,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/they-tens-mainstay-iv-1907.jpg',
           title: 'They tens mainstay IV',
           artist: 'Hilma af Klint',
@@ -2208,7 +2208,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 111,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/girl-on-a-hill-1928.jpg',
           title: 'Girl on a Hill',
           artist: 'Prudence Heward',
@@ -2228,7 +2228,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 112,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/into-the-world-there-came-a-soul-called-ida-1930.jpg',
           title: 'Into the World There Came a Soul Called Ida',
           artist: 'Ivan Albright',
@@ -2248,7 +2248,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 113,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/early-spring-illustration-to-a-poem-by-rainer-maria-rilke-1901-1.jpg',
           title: 'Early spring. Illustration to a poem by Rainer Maria Rilke.',
           artist: 'Koloman Moser',
@@ -2268,7 +2268,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 114,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/three-girls-1935.jpg',
           title: 'Three Girls',
           artist: 'Amrita Sher-Gil',
@@ -2288,7 +2288,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 115,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/composition-1922-2.jpg',
           title: 'Composition',
           artist: 'Janos Mattis-Teutsch',
@@ -2308,7 +2308,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 116,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/color-study-squares-with-concentric-circles-1913(1).jpg',
           title: 'Color Study: Squares with Concentric Circles',
           artist: 'Wassily Kandinsky',
@@ -2328,7 +2328,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 117,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/portrait-of-lajos-kass-k-1920.jpg',
           title: 'Portrait of Lajos Kassák',
           artist: 'Sandor Bortnyik',
@@ -2348,7 +2348,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 118,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/cover-for-a-book-by-julian-przybo-z-ponad-1930.jpg',
           title: 'Cover for a book by Julian Przyboś, Z ponad',
           artist: 'Wladyslaw Strzeminski',
@@ -2368,7 +2368,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 119,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/l-annonce-de-l-hiver-1935.jpg',
           title: 'L\'annonce de l\'hiver',
           artist: 'Francis Gruber',
@@ -2388,7 +2388,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 120,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/telephone-1916.jpg',
           title: 'Telephone',
           artist: 'Morton Shamberg',
@@ -2408,7 +2408,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 121,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/harvest-1933.jpg',
           title: 'Harvest',
           artist: 'Karl Knaths',
@@ -2428,7 +2428,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 122,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/northern-lights-1917.jpg',
           title: 'Northern Lights',
           artist: 'Tom Thomson',
@@ -2448,7 +2448,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 123,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/synchromy-1916.jpg',
           title: 'Synchromy',
           artist: 'Morgan Russell',
@@ -2468,7 +2468,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 124,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/morning-after-snowstorm-1913.jpg',
           title: 'Morning in the Village after Snowstorm',
           artist: 'Kazimir Malevich',
@@ -2488,7 +2488,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 125,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/red-muslin-1931.jpg',
           title: 'Red Muslin',
           artist: 'Ion Theodorescu-Sion',
@@ -2508,7 +2508,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 126,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/archers-1937.jpg',
           title: 'Archers',
           artist: 'Ernst Ludwig Kirchner',
@@ -2528,7 +2528,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 127,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/1919-alarm-1934.jpg',
           title: '1919. Alarm',
           artist: 'Kuzma Petrov-Vodkin',
@@ -2548,7 +2548,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 128,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/untitled-1930.jpg',
           title: 'Untitled',
           artist: 'William Baziotes',
@@ -2568,7 +2568,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 129,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/dance-around-the-golden-calf-1910.jpg',
           title: 'Dance Around the Golden Calf',
           artist: 'Emil Nolde',
@@ -2588,7 +2588,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 130,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/the-riding-crop-1928.jpg',
           title: 'The Riding Crop',
           artist: 'Jean Dupas',
@@ -2608,7 +2608,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 131,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/autumn-1913.jpg',
           title: 'Autumn',
           artist: 'Rik Wouters',
@@ -2628,7 +2628,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 132,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/mystical-crucifixion-1928.jpg',
           title: 'Mystical Crucifixion',
           artist: 'Heinrich Campendonk',
@@ -2648,7 +2648,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 133,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/portrait-of-a-chamorro-woman-yellow-1934.jpg',
           title: 'Portrait of a Chamorro Woman - Yellow',
           artist: 'Paul Jacoulet',
@@ -2668,7 +2668,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 134,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/stilleben-med-fisk-1926.jpg',
           title: 'Stilleben med fisk',
           artist: 'Sven Jonson',
@@ -2688,7 +2688,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 135,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/yawls-in-the-lagoon-1924.jpg',
           title: 'Yawls in the Lagoon',
           artist: 'Stefan Popescu',
@@ -2708,7 +2708,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 136,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/schonberg-family(1).jpg',
           title: 'Schonberg Family',
           artist: 'Richard Gerstl',
@@ -2728,7 +2728,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 137,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/harbor-night-1937.jpg',
           title: 'Harbor Night',
           artist: 'Charles Reiffel',
@@ -2748,7 +2748,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 138,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/civiliza-o-no-2-1928.jpg',
           title: 'Civilização, No. 2',
           artist: 'Bernardo Marques',
@@ -2768,7 +2768,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 139,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/untitled-blue-man-on-red-object-1939.jpg',
           title: 'Untitled (Blue Man on Red Object)',
           artist: 'Bill Traylor',
@@ -2788,7 +2788,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 140,
           user_id: 1,
-          theme: 'pre-WWII modern',
+          theme: 'Modern Art before World War II',
           img_path: './img/august/soria-moria-slott-1911.jpg',
           title: 'Soria Moria Slott',
           artist: 'Theodor Severin Kittelsen',

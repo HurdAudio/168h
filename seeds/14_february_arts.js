@@ -8,7 +8,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 1,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/ironew-york-of-the-negro-policeman.jpg',
           title: 'Irony of the Negro Policeman',
           artist: 'Jean-Michel Basquiat',
@@ -28,7 +28,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 2,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/african-american-flag-1990.jpg',
           title: 'African-American Flag',
           artist: 'David Hammons',
@@ -48,7 +48,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 3,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/obnoxious-liberals.jpg',
           title: 'Obnoxious Liberals',
           artist: 'Jean-Michel Basquiat',
@@ -68,7 +68,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 4,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/return-of-god-to-africa-1984.jpg',
           title: 'Return Of God to Africa',
           artist: 'Fab 5 Freddy',
@@ -88,7 +88,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 5,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/untitled-green-power-1975.jpg',
           title: 'Untitled/Green Power',
           artist: 'David Hammons',
@@ -108,7 +108,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 6,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/max-roach.jpg',
           title: 'Max Roach',
           artist: 'Jean-Michel Basquiat',
@@ -128,7 +128,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 7,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/harriet-tubman-series-panel-4-1940(1).jpg',
           title: 'Harriet Tubman Series (Panel #4)',
           artist: 'Jacob Lawrence',
@@ -148,7 +148,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 8,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/cabeza.jpg',
           title: 'Cabeza',
           artist: 'Jean-Michel Basquiat',
@@ -168,7 +168,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 9,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/untitled-2000.jpg',
           title: 'Untitled',
           artist: 'David Hammons',
@@ -188,7 +188,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 10,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/untitled-1986.jpg',
           title: 'Untitled',
           artist: 'Fab 5 Freddy',
@@ -208,7 +208,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 11,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/starry-night-and-the-astronauts-1972.jpg',
           title: 'Starry Night and the Astronauts',
           artist: 'Alma Woodsey Thomas',
@@ -228,7 +228,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 12,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/untitled-1986-3.jpg',
           title: 'Untitled',
           artist: 'Fab 5 Freddy',
@@ -248,7 +248,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 13,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/untitled-1989.jpg',
           title: 'Untitled',
           artist: 'David Hammons',
@@ -268,7 +268,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 14,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/flexible.jpg',
           title: 'Flexible',
           artist: 'Jean-Michel Basquiat',
@@ -288,7 +288,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 15,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/strike-1949.jpg',
           title: 'Strike',
           artist: 'Jacob Lawrence',
@@ -308,7 +308,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 16,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/the-return-of-odysseus-homage-to-pintoricchio-and-benin-1977.jpg',
           title: 'The Return of Odysseus (Homage to Pintoricchio and Benin)',
           artist: 'Romare Bearden',
@@ -328,7 +328,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 17,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/salome-1900.jpg',
           title: 'Salome',
           artist: 'Henry Ossawa Tanner',
@@ -348,7 +348,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 18,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/time-before-history-1994.jpg',
           title: 'Time Before History',
           artist: 'Sam Gilliam',
@@ -368,7 +368,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 19,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/self-portrait-1941.jpg',
           title: 'Self-Portrait',
           artist: 'Horace Pippin',
@@ -388,7 +388,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 20,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/white-roses-sing-and-sing-1976.jpg',
           title: 'White Roses Sing and Sing',
           artist: 'Alma Woodsey Thomas',
@@ -408,7 +408,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 21,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/anna-mae-1944.jpg',
           title: 'Anna Mae',
           artist: 'William H. Johnson',
@@ -428,7 +428,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 22,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/portrait-of-an-african-american-man-1820.jpg',
           title: 'Portrait of an African American Man',
           artist: 'Joshua Johnson',
@@ -448,7 +448,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 23,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/newspaper-boy-1869.jpg',
           title: 'Newspaper Boy',
           artist: 'Edward Mitchell Bannister',
@@ -468,7 +468,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 24,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/sojourner-truth-et-al.jpg',
           title: 'Sojourner Truth, Et. Al',
           artist: 'Charles Wilbert White',
@@ -488,7 +488,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 25,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/254613800-03182015-terry_adkins_16_bomb_oral_history.jpg',
           title: 'Fire\'s Either',
           artist: 'Terry Adkins',
@@ -508,7 +508,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 26,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/dsc-0046-copy_orig.jpg',
           title: 'Border Distilled',
           artist: 'Mequitta Ahuja',
@@ -528,7 +528,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 27,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/The_Artwork_of_Larry_D._Alexander_013.jpg',
           title: 'Princess of the Blue',
           artist: 'Larry D. Alexander',
@@ -548,7 +548,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 28,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/303gallery-LaylahAli_h.jpg',
           title: 'Untitled',
           artist: 'Laylah Ali',
@@ -568,7 +568,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 29,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/JulesAllenPhotography-Rhythmology3.jpg',
           title: 'Rhythmology Series',
           artist: 'Jules Allen',
@@ -588,7 +588,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 30,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/110106carverfallcolor1a.jpg',
           title: 'Statue of George Washington Carver',
           artist: 'Tina Allen',
@@ -608,7 +608,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 31,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/symbolAllston.jpg',
           title: 'Symbol',
           artist: 'Charles Alston',
@@ -628,7 +628,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 32,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/IdRatherTwoStepThanWaltz.jpg',
           title: 'I\'d Rather Two-Step Than Waltz',
           artist: 'Amalia Amaki',
@@ -648,7 +648,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 33,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/932_my_mother_was_the_greatest_dancer1.90b7m3itx6w4wsg88wkg84wgw.6ylu316ao144c8c4woosog48w.th.jpeg',
           title: 'My Mother Was the Greatest Dancer',
           artist: 'Emma Amos',
@@ -668,7 +668,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 34,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/7795.jpg',
           title: 'Corner Pocket',
           artist: 'Benny Andrews',
@@ -688,7 +688,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 35,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/hqdefault.jpg',
           title: 'Walking on Thin Ice',
           artist: 'Edgar Arceneaux',
@@ -708,7 +708,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 36,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/a88554e480b8305523f99878b1823408.jpg',
           title: 'For God\'s Sake, Look at that Art!',
           artist: 'Kyle Baker',
@@ -728,7 +728,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 37,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/baker,m_crown46nov.jpg',
           title: 'Western Bandit Trails No. 7',
           artist: 'Matt Baker',
@@ -748,7 +748,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 38,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/seattle-pic-470.jpg',
           title: 'Image of two women taken in Seattle',
           artist: 'James Presley Ball',
@@ -768,7 +768,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 39,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/7dc4b_july10_camh_img.jpg',
           title: 'Three Navy Sailors',
           artist: 'Alvin Baltrop',
@@ -788,7 +788,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 40,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/H0045-L24499585.jpg',
           title: 'Untitled',
           artist: 'Henry Wilmer Bannarn',
@@ -808,7 +808,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 41,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Edward_Mitchell_Bannisters_painting_Driving_Home_the_Cows.jpg',
           title: 'Driving Home the Cows',
           artist: 'Edward Mitchell Bannister',
@@ -828,7 +828,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 42,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/arniebarnes.jpg',
           title: 'Fastbreak',
           artist: 'Ernie Barnes',
@@ -848,7 +848,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 43,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Richmond-Barthe-The-Singing-Slave-1940.jpg',
           title: 'The Singing Slave',
           artist: 'Richmond Barthé',
@@ -868,7 +868,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 44,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/800px-WEB_DuBois_1918.jpg',
           title: 'W.E.B. Du Bois, photographed in 1918',
           artist: 'C.M. Battey',
@@ -888,7 +888,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 45,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Romare_Bearden_-_The_Calabash,_1970,_Library_of_Congress.jpg',
           title: 'The Calabash',
           artist: 'Romare Bearden',
@@ -908,7 +908,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 46,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/990705.jpg',
           title: 'Country Morning',
           artist: 'Arthello Beck, Jr.',
@@ -928,7 +928,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 47,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Booker_T_Washington_New_Orleans_1915.jpg',
           title: 'Booker T. Washington, New Orleans',
           artist: 'Arthur P. Bedou',
@@ -948,7 +948,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 48,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/2013-12-09-mandela.jpg',
           title: 'Nelson Mandela, Father of a Rainbow Nation, Goes Home',
           artist: 'Darrin Bell',
@@ -968,7 +968,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 49,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/1013542.jpg',
           title: 'Intimate Circles',
           artist: 'Mary Bell',
@@ -988,7 +988,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 50,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/20120729-BEY-slide-R3DW-articleLarge.jpg',
           title: '1970s Harlem',
           artist: 'Dawoud Bey',
@@ -1008,7 +1008,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 51,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/13nubia.jpg',
           title: 'House of the Turtle',
           artist: 'John T. Biggers',
@@ -1028,7 +1028,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 52,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/2011_Sanford_Biggers_CHESHIRE_428H.jpg',
           title: 'Cheshire',
           artist: 'Sanford Biggers',
@@ -1048,7 +1048,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 53,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Co4SwDqXEAAoHvT.jpg',
           title: 'Fantastique',
           artist: 'Gene Bilbrew',
@@ -1068,7 +1068,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 54,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Mcarthur-binion-self-portrait.jpg',
           title: 'Self Portrait: XVI',
           artist: 'McArthur Binion',
@@ -1088,7 +1088,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 55,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/129291288091107104_984d57ff-cd88-4daf-963d-b64ca1ffc6e7_180908_570.jpeg',
           title: 'Youth',
           artist: 'Robert Blackburn',
@@ -1108,7 +1108,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 56,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/preparing-to-sound-the-alarm-thomas-blackshear.jpg',
           title: 'Preparing to Sound the Alarm',
           artist: 'Thomas Blackshear',
@@ -1128,7 +1128,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 57,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/20161004_134100292_B Blayton Spirits In Space 1971.jpg',
           title: 'Spirits in Space',
           artist: 'Betty Blayton-Taylor',
@@ -1148,7 +1148,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 58,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/p1010558.jpg',
           title: 'The Conversationalist',
           artist: 'Chakaia Booker',
@@ -1168,7 +1168,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 59,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Mural-_Those_We_Remember_by_Edythe_Boone_located_in_Balmy_Alley,_San_Francisco,_California_LCCN2013630325.tif.jpg',
           title: 'Those We Remember',
           artist: 'Edythe Boone',
@@ -1188,7 +1188,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 60,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/5fb19a8e2e14c1e5fb1b6658e7f5fbdc.jpg',
           title: 'Compu-toon',
           artist: 'Charles Boyce',
@@ -1208,7 +1208,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 61,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/BREWER-Unity-COURIER-SERIES_web-600.jpg',
           title: 'Unity',
           artist: 'Tina Williams Brewer',
@@ -1228,7 +1228,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 62,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/25426_h550w916gt.3.jpg',
           title: 'Strange Fruit (Urban Suite)',
           artist: 'Michael Bramwell',
@@ -1248,7 +1248,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 63,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/bradford1_1.jpg',
           title: 'No Time to Expand the Sea',
           artist: 'Mark Bradford',
@@ -1268,7 +1268,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 64,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/1item0527.jpg',
           title: 'A Community Within reach',
           artist: 'Frank J. Brown',
@@ -1288,7 +1288,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 65,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Anthony_Braxton.jpg',
           title: 'Anthony Braxton, 1970',
           artist: 'Frederick J. Brown',
@@ -1308,7 +1308,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 66,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/DSC0097online.jpg',
           title: 'Les Croisses',
           artist: 'Manuelita Brown',
@@ -1328,7 +1328,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 67,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Granny_Buck_Brown_Cartoon.JPG',
           title: 'A Playboy Buck Brown cartoon used on a subscription form for the magazine in 1972',
           artist: 'Robert Brown',
@@ -1348,7 +1348,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 68,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Pb233585-1024x773.jpg',
           title: 'Three Shacks',
           artist: 'Beverly Buchanan',
@@ -1368,7 +1368,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 69,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Booker_T._Washington,_portrait_bust_in_patined_plaster.jpg',
           title: 'Booker T. Washington',
           artist: 'Selma Burke',
@@ -1388,7 +1388,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 70,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/calvinburnett_561_0.jpg',
           title: '?',
           artist: 'Calvin Burnett',
@@ -1408,7 +1408,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 71,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/684431.jpg',
           title: 'Violets',
           artist: 'Pauline Powell Burns',
@@ -1428,7 +1428,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 72,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Event_horizon-1091793626.jpg',
           title: 'Event Horizon',
           artist: 'Robert Butler Jr',
@@ -1448,7 +1448,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 73,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/frank__calloway_untitled_detail_802_118.jpg',
           title: 'Untitled',
           artist: 'Frank Calloway',
@@ -1468,7 +1468,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 74,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/ESimmsCampbell.png',
           title: 'Cuties',
           artist: 'E. Simms Campbell',
@@ -1488,7 +1488,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 75,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/casey-vision.jpg',
           title: 'Vision',
           artist: 'Bernie Casey',
@@ -1508,7 +1508,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 76,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Mother_and_Child.gif',
           title: 'Mother and Child',
           artist: 'Elizabeth Catlett',
@@ -1528,7 +1528,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 77,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/2e739b173b8654380f211f2f2dc957bd.jpg',
           title: 'Soundsuit',
           artist: 'Nick Cave',
@@ -1548,7 +1548,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 78,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Michael_Ray_Charles_-(Forever_Free)_‘Servin_with_a_smile’,-_1994.gif',
           title: '(Forever Free) ‘Servin with a smile’',
           artist: 'Michael Ray Charles',
@@ -1568,7 +1568,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 79,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/2adcd_sept7_pma_img.jpg',
           title: 'Malcolm X #3',
           artist: 'Barbara Chase-Riboud',
@@ -1588,7 +1588,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 80,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/2550028-DVKSMXZY-7.jpg',
           title: 'Parisian Rose for Her',
           artist: 'Jamour Chames',
@@ -1608,7 +1608,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 81,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/ClaudeClark_FreedomMorning.jpg',
           title: 'Freedom Morning',
           artist: 'Claude Clark',
@@ -1628,7 +1628,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 82,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/1120652a.jpg',
           title: 'Untitled',
           artist: 'Edward Clark',
@@ -1648,7 +1648,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 83,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/0a463f06bc738536f4f56a1c08003233.jpg',
           title: 'Afro Abe',
           artist: 'Sonya Clark',
@@ -1668,7 +1668,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 84,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/WillieCole05.jpg',
           title: 'Wind Mask',
           artist: 'Willie Cole',
@@ -1688,7 +1688,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 85,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/RobertCHeartbreak.jpg',
           title: 'Heartbreak Hotel',
           artist: 'Robert Colescott',
@@ -1708,7 +1708,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 86,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/cortor-woman-in-an-interior.jpg',
           title: 'Woman in an Interior',
           artist: 'Eldzier Cortor',
@@ -1728,7 +1728,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 87,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/rr.jpg',
           title: 'Shoe Shine',
           artist: 'Ernest Crichlow',
@@ -1748,7 +1748,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 88,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/800px-American-cities-145.jpg',
           title: 'Douglass Square, Boston',
           artist: 'Allan Crite',
@@ -1768,7 +1768,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 89,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/2e5e366f865231cbd11b4b783ccf659b.jpg',
           title: 'Figurative Composition #7',
           artist: 'Emilio Cruz',
@@ -1788,7 +1788,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 90,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/splendid.jpg',
           title: 'Splendid',
           artist: 'Frank E. Cummings III',
@@ -1808,7 +1808,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 91,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/image11.jpg',
           title: 'American Jazz Series #11',
           artist: 'Michael A. Cumings',
@@ -1828,7 +1828,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 92,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/folk_5146_image.jpg',
           title: 'M.L. King',
           artist: 'Ulysses Davis',
@@ -1848,7 +1848,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 93,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/501450dc3006ca275de386e59b39e852.jpg',
           title: 'Diversity',
           artist: 'Bing Davis',
@@ -1868,7 +1868,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 94,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/roy-decarava-pickets.jpg',
           title: 'Pickets',
           artist: 'Roy DeCarava ',
@@ -1888,7 +1888,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 95,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Jazz Quartet 1946.jpg',
           title: 'Jazz Quartet',
           artist: 'Beauford Delaney',
@@ -1908,7 +1908,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 96,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/joseph-delaney.png',
           title: 'Woman in Striped Dress',
           artist: 'Joseph Delaney',
@@ -1928,7 +1928,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 97,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/ExhibitImgs-RomancingTheEye2.jpg',
           title: 'Adam and Eve',
           artist: 'Louis Delsarte',
@@ -1948,7 +1948,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 98,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Dont-Matter-How-Raggly-The-Flag-It-Still-Got-To-Tie-Us-Together.jpg',
           title: 'Don’t Matter How Raggly The Flag, It Still Got To Tie Us Together',
           artist: 'Thornton Dial',
@@ -1968,7 +1968,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 99,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/788355-6.jpg',
           title: 'Sharecroppers',
           artist: 'Terry Dixon',
@@ -1988,7 +1988,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 100,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/AfriCOBRA.jpg',
           title: 'Majority',
           artist: 'Jeff Donaldson',
@@ -2008,7 +2008,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 101,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Aspiration,_Aaron_Douglas,_1936,_DeYoung_Museum_of_Fine_Arts.jpg',
           title: 'Aspiration',
           artist: 'Aaron Douglas',
@@ -2028,7 +2028,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 102,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/EMORY-DOUGLASforbobbyseale.jpg',
           title: 'for Bobby Seale',
           artist: 'Emory Douglas',
@@ -2048,7 +2048,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 103,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/jd-white-paintings-4.jpg',
           title: 'White Painting',
           artist: 'John E. Dowell Jr.',
@@ -2068,7 +2068,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 104,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Driskell_Woman_with_Flowers.jpg',
           title: 'Woman with Flowers',
           artist: 'David Driskell',
@@ -2088,7 +2088,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 105,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Robert-Duncanson-Land-of-the-Lotos-Eaters-631.jpg',
           title: 'Land of the Lotus Eaters',
           artist: 'Robert S. Duncanson',
@@ -2108,7 +2108,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 106,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/william-edmondson-noahs-ark.jpg',
           title: 'Noah\'s Ark',
           artist: 'William Edmondson',
@@ -2128,7 +2128,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 107,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/melvin-edwards-steel-life-1985-1991.jpg',
           title: 'Steel Life',
           artist: 'Melvin Edwards',
@@ -2148,7 +2148,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 108,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Ellison_Walter_Old_Policy_Wheel_resize.jpg',
           title: 'Old Policy Wheel',
           artist: 'Walter Ellison',
@@ -2168,7 +2168,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 109,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/MinnieEvans-visionary-artist.jpeg',
           title: 'Wrightsville Beach',
           artist: 'Minnie Evans',
@@ -2188,7 +2188,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 110,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Meta_Vaux_Warrick_Fuller,_Ethiopia_Awakening.jpg',
           title: 'Meta Vaux Warrick Fuller',
           artist: 'Ethiopia Awakening',
@@ -2208,7 +2208,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 111,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Gallagher,_Wiglette_from,_DeLuxe.jpeg',
           title: ' Wiglette from "DeLuxe"',
           artist: 'Ellen Gallagher',
@@ -2228,7 +2228,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 112,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/20110521013911-Gallery000832.jpg',
           title: 'Shoe Shine Stands',
           artist: 'Theaster Gates',
@@ -2248,7 +2248,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 113,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/reginald-k-gee-two-normal-people.jpg',
           title: 'Two Normal People',
           artist: 'Reginald K Gee',
@@ -2268,7 +2268,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 114,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/dance.jpg',
           title: 'Dance Turquoise',
           artist: 'Herbert Gentry',
@@ -2288,7 +2288,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 115,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Squires-WG-02.jpg',
           title: 'Abstract I',
           artist: 'Wilda Gerideau-Squires',
@@ -2308,7 +2308,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 116,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/sam-gilliam-as-kids-go!.jpg',
           title: 'As Kids Go!',
           artist: 'Sam Gilliam',
@@ -2328,7 +2328,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 117,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/1974.118.12_1a.jpg',
           title: 'Hot Dog Bridge',
           artist: 'Russell T. Gordon',
@@ -2348,7 +2348,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 118,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/HeroForHire15.jpg',
           title: 'Luke Cage, Hero for Hire #15',
           artist: 'Billy Graham',
@@ -2368,7 +2368,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 119,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/LonnieGraham_AIR_03.jpg',
           title: 'Young Man with Sunday Dinner, Muguga, Kenya',
           artist: 'Lonnie Graham',
@@ -2388,7 +2388,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 120,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/pntg-gra.005126c-cropped.jpg',
           title: 'The Birth of a Genius in the Midnight Sun',
           artist: 'Deborah Grant',
@@ -2408,7 +2408,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 121,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/todd-gray-wumbus-l-CR.jpg',
           title: 'Wumbus',
           artist: 'Todd Gray',
@@ -2428,7 +2428,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 122,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/What She Said Study (Yellow).jpg',
           title: 'What She Said (Yellow)',
           artist: 'Leamon Green',
@@ -2448,7 +2448,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 123,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/ee1468c39055d6eb8f2017ee1b47151d.jpg',
           title: 'Partially Buried in Three Parts',
           artist: 'Renée Green',
@@ -2468,7 +2468,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 124,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/mario-4.jpg',
           title: 'The Ant No. 4',
           artist: 'Mario Gully',
@@ -2488,7 +2488,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 125,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/detroit_vacuum_streetart_374475_o.jpg',
           title: 'The Heidelberg Project',
           artist: 'Tyree Guyton',
@@ -2508,7 +2508,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 126,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/edhamilton-8.jpg',
           title: 'The Unfinished March',
           artist: 'Ed Hamilton',
@@ -2528,7 +2528,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 127,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/download.jpeg',
           title: 'Nadir',
           artist: 'Patrick Earl Hammie',
@@ -2548,7 +2548,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 128,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Trenton-Doyle-Hancock-I-Know-Just-How-You-Feel-2015.jpg',
           title: 'I Know Just How You Feel',
           artist: 'Trenton Doyle Hancock',
@@ -2568,7 +2568,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 129,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Edwin_A._Harleston_-_Portrait_of_a_Woman_-_Google_Art_Project.jpg',
           title: 'Portrait of a Woman',
           artist: 'Edwin Harleston',
@@ -2588,7 +2588,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 130,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/5dd417f42367bdb5ba3694e21269489d--the-block-pastel.jpg',
           title: 'The Block',
           artist: 'Kira Lynn Harris',
@@ -2608,7 +2608,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 131,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/0_full.jpg',
           title: 'Little Brown Girl',
           artist: 'John Wesley Hardrick',
@@ -2628,7 +2628,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 132,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Jerry_Harris.sculpture.jpg',
           title: 'Dogon mother and child',
           artist: 'Jerry Harris',
@@ -2648,7 +2648,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 133,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Lawrence_Harris_-_Abandoned_Ship.jpg',
           title: 'Abandoned Ship',
           artist: 'Lawrence Harris',
@@ -2668,7 +2668,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 134,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Walking_1978.jpg',
           title: 'Walking',
           artist: 'Maren Hassinger',
@@ -2688,7 +2688,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 135,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/ahynhmv3lir9jbomhiym5aa7o1_500.jpg',
           title: 'Midsummer Night in Harlem',
           artist: 'Palmer Hayden',
@@ -2708,7 +2708,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 136,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/lead_960.jpg',
           title: 'What\'s Going On',
           artist: 'Barkley L. Hendricks',
@@ -2728,7 +2728,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 137,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/1937_1107_kkat_brick_500.jpg',
           title: 'Krazy Kat',
           artist: 'George Herriman',
@@ -2748,7 +2748,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 138,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/large.jpg',
           title: 'Strange Fruit,',
           artist: 'Alvin Hollingsworth',
@@ -2768,7 +2768,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 139,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/3958%2F2D324A0E-70BD-38A1-1514-111F73A40512.jpg',
           title: 'Rhythm Reunion',
           artist: 'Joseph Holston',
@@ -2788,7 +2788,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 140,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/v0_master.jpg',
           title: 'Funky, Black and Catch Me',
           artist: 'Bill Henderson',
@@ -2808,7 +2808,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 141,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Geometric-Abstract-Painting-Composition-43-Bryce-Hudson-30x40-2014.jpg',
           title: 'Composition 43',
           artist: 'Bryce Hudson',
@@ -2828,7 +2828,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 142,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Julien_Hudson_-_Portrait_of_a_Creole_Gentleman.jpg',
           title: 'Portrait of a Creole Gentleman',
           artist: 'Julien Hudson',
@@ -2848,7 +2848,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 143,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/huffman_2.jpg',
           title: 'Justice',
           artist: 'David Huffman',
@@ -2868,7 +2868,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 144,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Hunt-Sea-HorseTH.jpg',
           title: 'Seahorse',
           artist: 'Richard Hunt',
@@ -2888,7 +2888,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 145,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Clementine_Hunter_-_Funeral_Procession_-_Google_Art_Project.jpg',
           title: 'Funeral Procession',
           artist: 'Clementine Hunter',
@@ -2908,8 +2908,8 @@ exports.seed = function(knex, Promise) {
         {
           id: 146,
           user_id: 1,
-          theme: 'black history',
-          img_path: './img/february/downloadStJam.jpg',
+          theme: 'Black History Month',
+          img_path: './img/february/downloadStJam.jpeg',
           title: 'Steffani Jemison at Jacob Lawrence Gallery',
           artist: 'Steffani Jemison',
           year: '2016',
@@ -2928,7 +2928,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 147,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Jazz_Giants.jpg',
           title: 'Jazz Giants',
           artist: 'Wadsworth Jarrell',
@@ -2948,7 +2948,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 148,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Trademarkeyes.jpg',
           title: 'Trademarkeyes',
           artist: 'Annette Jimerson',
@@ -2968,7 +2968,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 149,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Brooklyn_Museum_-_John_Jacob_Anderson_and_Sons,_John_and_Edward_-_Joshua_Johnson_-_overall.jpg',
           title: 'John Jacob Anderson and Sons, John and Edward',
           artist: 'Joshua Johnson',
@@ -2988,7 +2988,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 150,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/7b1a81a4ffa4a2a59b09a72cff71d3f6--gray-johnson-african-american-art.jpg',
           title: 'Arrangement',
           artist: 'Malvin Gray Johnson',
@@ -3008,7 +3008,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 151,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/RJ-15-0221-1024x745.jpg',
           title: 'Untitled Anxious Men',
           artist: 'Rashid Johnson',
@@ -3028,7 +3028,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 152,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/-Chester-_-_NARA_-_559078.jpg',
           title: 'Cheste',
           artist: 'Sargent Claude Johnson',
@@ -3048,7 +3048,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 153,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Street_Musicians,_by_William_H._Johnson.jpg',
           title: 'Street Musicians',
           artist: 'William H. Johnson',
@@ -3068,7 +3068,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 154,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Calvin-B.-Jones-1.jpg',
           title: 'Mural',
           artist: 'Calvin B. Jones',
@@ -3088,7 +3088,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 155,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Jennie-C-Jones-462x569.jpg',
           title: 'Bold, Double, Barline (variation #1)',
           artist: 'Jennie C. Jones',
@@ -3108,7 +3108,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 156,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/lois-mailou-jones-initiation-liberia-1983-acrylic-on-canvas_jpg.jpg',
           title: 'Initiation, Liberia',
           artist: 'Loïs Mailou Jones',
@@ -3128,7 +3128,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 157,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/conversation-between-paint.jpg',
           title: 'Descending from a Cross to be Nourished at the Breast of Our Mother',
           artist: 'Titus Kaphar',
@@ -3148,7 +3148,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 158,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/360_fs.jpg',
           title: 'In the North the Negro had Better Education Facilities',
           artist: 'Gwendolyn Knight',
@@ -3168,7 +3168,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 159,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Lawrence_Jacob_Self-Portrait_1977.jpg',
           title: 'Self Portrait',
           artist: 'Jacob Lawrence',
@@ -3188,7 +3188,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 160,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/large_Lawson.D_03_forweb.jpg',
           title: 'Ring Bearer',
           artist: 'Deana Lawson',
@@ -3208,7 +3208,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 161,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Reflection_1957.jpg',
           title: 'Reflection',
           artist: 'Hughie Lee-Smith',
@@ -3228,7 +3228,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 162,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Hiawatha_MET_DP371840.jpg',
           title: 'Hiawatha',
           artist: 'Edmonia Lewis',
@@ -3248,7 +3248,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 163,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Jazz_Band_by_Norman_Lewis,_1948.jpg',
           title: 'Jazz Band',
           artist: 'Norman Lewis',
@@ -3268,7 +3268,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 164,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/glenn-ligon-web.jpg',
           title: 'Warm Broad Glow',
           artist: 'Glenn Ligon',
@@ -3288,7 +3288,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 165,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/llana5.jpg',
           title: 'Llana5',
           artist: 'Llanakila',
@@ -3308,7 +3308,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 166,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Edward_Loper_34_St_Pierre_1980.jpg',
           title: '34 St. Pierre, Quebec',
           artist: 'Edward L. Loper Sr.',
@@ -3328,7 +3328,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 167,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Lovell_28M.jpg',
           title: '2 8 M',
           artist: 'Whitfield Lovell',
@@ -3348,7 +3348,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 168,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/2c2f2f35fd81b404fa6df8af92123d3d.png',
           title: 'Hard Labor',
           artist: 'Gwendolyn Ann Magee',
@@ -3368,7 +3368,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 169,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/892537-7.jpg',
           title: 'Merinita',
           artist: 'Clarence Major',
@@ -3388,7 +3388,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 170,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Vignette_-2,_2008,_Kerry_James_Marshall.jpeg',
           title: 'Vignette #2',
           artist: 'Kerry James Marshall',
@@ -3408,7 +3408,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 171,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/EugeneJ.Martin_Janus.jpg',
           title: 'Janus',
           artist: 'Eugene J. Martin',
@@ -3428,7 +3428,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 172,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Maynard2b.jpg',
           title: 'Polyrhythmics of Consciousness and Light',
           artist: 'Valerie Maynard',
@@ -3448,7 +3448,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 173,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/The_Dead_Dance.jpg',
           title: 'The Dead Dance',
           artist: 'Ealy Mays',
@@ -3468,7 +3468,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 174,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Butterfly_(Red)_Standing_.jpg',
           title: 'Butterfly',
           artist: 'Howard McCalebb',
@@ -3488,7 +3488,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 175,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/lp1.jpg',
           title: 'Big Fun (Album Cover)',
           artist: 'Corky McCoy',
@@ -3508,7 +3508,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 176,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/BlackTondo.jpg',
           title: 'Black Tondo',
           artist: 'Charles McGill',
@@ -3528,7 +3528,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 177,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/614532604_295x166.jpg',
           title: 'Mural',
           artist: 'Julie Mehretu',
@@ -3548,7 +3548,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 178,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Dean+Mitchell+3.jpg',
           title: 'Parking on the Reservation',
           artist: 'Dean Mitchell',
@@ -3568,7 +3568,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 179,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Phillis_Wheatley_frontispiece.jpg',
           title: 'Phillis Wheatley',
           artist: 'Scipio Moorhead',
@@ -3588,7 +3588,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 180,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/tumblr_lhvr2bXwfD1qeq7tpo1_500.jpeg',
           title: 'St. Mary\'s Riverside Parish',
           artist: 'Archibald Motley',
@@ -3608,7 +3608,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 181,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Gus_Nall_Untitled_1950.jpg',
           title: 'Untitled',
           artist: 'Gus Nall',
@@ -3628,7 +3628,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 182,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/AR-140619809.jpg',
           title: '?',
           artist: 'Harold Newton',
@@ -3648,7 +3648,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 183,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/larger.jpg',
           title: 'Sisters III (L: Nefertiti\'s daughter, Maketaten; R: Devonia\'s Daughter, Kimberley), from the "Miscegenated Family Album',
           artist: 'Lorraine O\'Grady',
@@ -3668,7 +3668,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 184,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/As-the-Sirens-Sweetly-Sang-300x230.jpg',
           title: 'As the Sirens Sweetly Sang',
           artist: 'Turtel Onli',
@@ -3688,7 +3688,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 185,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/JackieOrmesTorchyinHearbeats.jpg',
           title: 'Image of Torcy Brown comic strip',
           artist: 'Jackie Ormes',
@@ -3708,7 +3708,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 186,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/john_outterbridge_no_time_for_jivingco_from_the_containment_series_1969_hammer_now_dig_this_for_pst_700.jpg',
           title: 'No Time for Jivin\'',
           artist: 'John Outterbridge',
@@ -3728,7 +3728,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 187,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Eclipse_by_Joe_Overstreet,_2002.jpg',
           title: 'Eclipse',
           artist: 'Joe Overstreet',
@@ -3748,7 +3748,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 188,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Gordon_Parks_-_American_Gothic.jpg',
           title: 'American Gothic',
           artist: 'Gordon Parks',
@@ -3768,7 +3768,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 189,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/If_You_Want_To_See_Something_WEBSHARE.jpg',
           title: 'Cecelia Pedescleaux',
           artist: 'Quilt',
@@ -3788,7 +3788,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 190,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/cropped-screen-shot-2013-06-06-at-8-01-13-am1.png',
           title: '?',
           artist: 'Delilah Pierce',
@@ -3808,7 +3808,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 191,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Untitled_(Abstract_Figure_No._7).jpg',
           title: 'Untitled (Abstract Figure No. 7)',
           artist: 'Earle M. Pilgrim',
@@ -3828,7 +3828,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 192,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Howardeena_Pindell_painting__Queens,_Festival_.jpg',
           title: 'Queens, Festival',
           artist: 'Howardena Pindell',
@@ -3848,7 +3848,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 193,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Pinkney_Sweethearts_of_Rhythm_066.jpg',
           title: 'Sweethearts of Rhythm',
           artist: 'Jerry Pinkney',
@@ -3868,7 +3868,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 194,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/AdrianPiper65AliceDownRbtHole.png',
           title: 'Alice Down the Rabbit Hole',
           artist: 'Adrian Piper',
@@ -3888,7 +3888,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 195,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/The_Death_of_Bessie_Smith_by_Rose_Piper,_1947.jpg',
           title: 'The Death of Bessie Smith',
           artist: 'Rose Piper',
@@ -3908,7 +3908,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 196,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Horace_Pippin,_John_Brown_Going_to_His_Hanging.jpg',
           title: 'John Brown Going to His Hanging',
           artist: 'Horace Pippin',
@@ -3928,7 +3928,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 197,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/12am69.jpg',
           title: 'Catherine Moton Patterson',
           artist: 'P.H. Polk',
@@ -3948,7 +3948,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 198,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/206_1_prints_multiples_january_2016_carl_robert_pope_jr_is_it_da_crack_or_is_it_the_cracker_from_the_bad_air_smelled_of_roses_series__wright_auction.jpg',
           title: 'Is it Da Crack or is it the Cracker from The Bad Air Smelled of Roses series',
           artist: 'Carl Robert Pope',
@@ -3968,7 +3968,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 199,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/Pope.L_Costume-at-CAMH_Performance_2-Photo-Max-Fields-1024x680.jpg',
           title: 'Costume Made of Nothing',
           artist: 'Pope L.',
@@ -3988,7 +3988,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 200,
           user_id: 1,
-          theme: 'black history',
+          theme: 'Black History Month',
           img_path: './img/february/PowersBibleQuilt_1886.jpg',
           title: 'Bible Quilt',
           artist: 'Harriet Powers',
