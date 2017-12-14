@@ -214,6 +214,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#B5B7B6',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 16,
+          user_id: 1,
+          theme: 'water',
+          type: 'sunday',
+          src_string: '../img/april_tiles/kodaikanal-1292131_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '140%',
+          color_dark: '#162022',
+          color_medium: '#3B698A',
+          color_light: '#699DC5',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
