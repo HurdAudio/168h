@@ -158,6 +158,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#BC7A7D',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 12,
+          user_id: 1,
+          theme: 'primary colors',
+          type: 'holiday',
+          src_string: '../img/august_tiles/rTesselating_Fish_Fractal_Primary_Colors_shop_preview.png',
+          repeat_value: 'no-repeat',
+          size_value: '100%',
+          color_dark: '#0D117F',
+          color_medium: '#FCFE16',
+          color_light: '#E5DEE5',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
