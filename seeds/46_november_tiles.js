@@ -116,6 +116,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#C1C2C7',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 9,
+          user_id: 1,
+          theme: 'monochromatic',
+          type: 'friday',
+          src_string: '../img/november_tiles/3d-stone-wall-cladding-idea-boxy-natural-stone-mosaic-wall-tiles-creative-wall-cladding-installation-for-3d-effect-result-3d-feature-wall-3d-stone-tiles-natural-stone-wall-cladding-stone-mosaic-til-940x705.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '135%',
+          color_dark: '#0C0A0C',
+          color_medium: '#A4875D',
+          color_light: '#EFD5AD',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
