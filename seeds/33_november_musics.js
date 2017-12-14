@@ -1138,6 +1138,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 64,
+          user_id: 1,
+          theme: 'ethiopia and pan-african',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2588959421/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://demonspawnblackcauldron.bandcamp.com/album/deep-cave',
+          a_string: 'Deep Cave by DemonSpawnBlackCauldron',
+          rule: {
+            "monday": [ 7, 18, 29, 1 ],
+            "tuesday": [ 11, 22, 3, 7 ],
+            "wednesday": [ 10, 21, 2, 6 ],
+            "thursday": [ 9, 20, 1, 5 ],
+            "saturday": [ 8, 19, 30, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 65,
+          user_id: 1,
+          theme: 'ethiopia and pan-african',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1978678839/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://demonspawnblackcauldron.bandcamp.com/album/ancient-spell',
+          a_string: 'Ancient Spell by DemonSpawnBlackCauldron',
+          rule: {
+            "monday": [ 8, 19, 30, 2 ],
+            "tuesday": [ 7, 18, 29, 1 ],
+            "wednesday": [ 11, 22, 3, 7 ],
+            "thursday": [ 10, 21, 2, 6 ],
+            "saturday": [ 9, 20, 1, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 66,
+          user_id: 1,
+          theme: 'ethiopia and pan-african',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=116760391/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://shellachead.bandcamp.com/album/the-lost-45s-of-sudan-shellachead-annual-2015',
+          a_string: 'The Lost 45s of Sudan (ShellacHead Annual 2015) by ShellacHead',
+          rule: {
+            "monday": [ 9, 20, 1, 5 ],
+            "tuesday": [ 8, 19, 30, 2 ],
+            "wednesday": [ 7, 18, 29, 1 ],
+            "thursday": [ 11, 22, 3, 7 ],
+            "saturday": [ 10, 21, 2, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
