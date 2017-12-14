@@ -5471,8 +5471,8 @@ footer img {
   margin-top: 1vmin;
 }
 
-/*.day {
-  background-image: url(../img/january_tiles/depositphotos_36103545-stock-photo-ice-texture.jpg);
+.day {
+  background-image: url(../img/december_tiles/austria-88739_1920.jpg);
   background-repeat: no-repeat;
-  background-size: 155%;
-}*/
+  background-size: 150%;
+}
