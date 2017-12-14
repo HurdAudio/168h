@@ -1030,6 +1030,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 58,
+          user_id: 1,
+          theme: 'brazil and pan-south american',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3794687900/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://juanamolina.bandcamp.com/album/halo',
+          a_string: 'Halo by Juana Molina',
+          rule: {
+            "monday": [ 11, 17, 23, 29 ],
+            "tuesday": [ 15, 21, 27, 2 ],
+            "wednesday": [ 14, 20, 26, 1 ],
+            "thursday": [ 13, 19, 25, 31 ],
+            "saturday": [ 11, 18, 24, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 59,
+          user_id: 1,
+          theme: 'brazil and pan-south american',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2992457317/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://edmoonrec.bandcamp.com/album/latin-american-tech',
+          a_string: 'Latin American Tech by Lascive Dopamine',
+          rule: {
+            "monday": [ 11, 18, 24, 30 ],
+            "tuesday": [ 11, 17, 23, 29 ],
+            "wednesday": [ 15, 21, 27, 2 ],
+            "thursday": [ 14, 20, 26, 1 ],
+            "saturday": [ 13, 19, 25, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 60,
+          user_id: 1,
+          theme: 'brazil and pan-south american',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=329788858/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://quixosis.bandcamp.com/album/de-fi-cher',
+          a_string: 'De Fiúcher by Quixosis',
+          rule: {
+            "monday": [ 13, 19, 25, 31 ],
+            "tuesday": [ 11, 18, 24, 30 ],
+            "wednesday": [ 11, 17, 23, 29 ],
+            "thursday": [ 15, 21, 27, 2 ],
+            "saturday": [ 14, 20, 26, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
