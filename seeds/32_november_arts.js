@@ -2204,6 +2204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 111,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/pom-pom-2006.jpg',
+          title: 'Pom Pom',
+          artist: 'Phyllida Barlow',
+          year: '2006',
+          rule: {
+            "monday": [ 20, 25, 1, 6 ],
+            "tuesday": [ 19, 23, 30, 5 ],
+            "wednesday": [ 18, 23, 29, 4 ],
+            "thursday": [ 17, 22, 28, 5 ],
+            "friday": [ 23, 28, 4, 9 ],
+            "saturday": [ 22, 27, 3, 8 ],
+            "sunday": [ 21, 26, 2, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 112,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/ladder-1981.jpg',
+          title: 'Ladder',
+          artist: 'Harmony Hammond',
+          year: '1981',
+          rule: {
+            "monday": [ 22, 27, 3, 7 ],
+            "tuesday": [ 21, 26, 2, 7 ],
+            "wednesday": [ 20, 24, 1, 6 ],
+            "thursday": [ 19, 24, 30, 5 ],
+            "friday": [ 18, 23, 29, 6 ],
+            "saturday": [ 24, 29, 5, 10 ],
+            "sunday": [ 23, 28, 4, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 113,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/ink-splash-2010.jpg',
+          title: 'Ink Splash',
+          artist: 'El Anatsui',
+          year: '2010',
+          rule: {
+            "monday": [ 23, 28, 4, 9 ],
+            "tuesday": [ 22, 27, 3, 7 ],
+            "wednesday": [ 21, 26, 2, 7 ],
+            "thursday": [ 20, 24, 1, 6 ],
+            "friday": [ 19, 24, 30, 5 ],
+            "saturday": [ 18, 23, 29, 6 ],
+            "sunday": [ 24, 29, 5, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 114,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/wrapped-and-differed-space-1975.jpg',
+          title: 'Wrapped and Differed Space',
+          artist: 'Kishio Suga',
+          year: '1975',
+          rule: {
+            "monday": [ 24, 29, 5, 10 ],
+            "tuesday": [ 23, 28, 4, 9 ],
+            "wednesday": [ 22, 27, 3, 7 ],
+            "thursday": [ 21, 26, 2, 7 ],
+            "friday": [ 20, 24, 1, 6 ],
+            "saturday": [ 19, 24, 30, 5 ],
+            "sunday": [ 18, 23, 29, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 115,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/combinatory-system-1973-1.jpg',
+          title: 'Combinatory system',
+          artist: 'Florin Maxa',
+          year: '1973',
+          rule: {
+            "monday": [ 18, 23, 29, 6 ],
+            "tuesday": [ 24, 29, 5, 10 ],
+            "wednesday": [ 23, 28, 4, 9 ],
+            "thursday": [ 22, 27, 3, 7 ],
+            "friday": [ 21, 26, 2, 7 ],
+            "saturday": [ 20, 24, 1, 6 ],
+            "sunday": [ 19, 24, 30, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
