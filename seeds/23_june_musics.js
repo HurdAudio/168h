@@ -1678,6 +1678,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 94,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3777901001/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://whitelabrecs.bandcamp.com/album/of-light-and-shade',
+          a_string: 'Of Light and Shade by Overshift',
+          rule: {
+            "monday": [ 12, 15, 21, 2 ],
+            "tuesday": [ 10, 18, 20, 1 ],
+            "wednesday": [ 14, 18, 24, 5 ],
+            "thursday": [ 13, 17, 23, 3 ],
+            "saturday": [ 12, 16, 21, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 95,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2146271663/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://whitelabrecs.bandcamp.com/album/unsung-memories',
+          a_string: 'Unsung Memories by Polaroid Notes',
+          rule: {
+            "monday": [ 12, 16, 21, 3 ],
+            "tuesday": [ 12, 15, 21, 2 ],
+            "wednesday": [ 10, 18, 20, 1 ],
+            "thursday": [ 14, 18, 24, 5 ],
+            "saturday": [ 13, 17, 23, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 96,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1325522365/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://whitelabrecs.bandcamp.com/album/sixteen-frames',
+          a_string: 'sixteen frames by teleferick',
+          rule: {
+            "monday": [ 13, 17, 23, 3 ],
+            "tuesday": [ 12, 16, 21, 3 ],
+            "wednesday": [ 12, 15, 21, 2 ],
+            "thursday": [ 10, 18, 20, 1 ],
+            "saturday": [ 14, 18, 24, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
