@@ -1894,6 +1894,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 106,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1217978298/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://aumfidelity.bandcamp.com/album/planetary-unknown-2',
+          a_string: 'Planetary Unknown by David S. Ware / Cooper-Moore / William Parker / Muhammad Ali',
+          rule: {
+            "monday": [ 18, 26, 8, 13 ],
+            "tuesday": [ 17, 25, 7, 12 ],
+            "wednesday": [ 16, 24, 6, 11 ],
+            "thursday": [ 15, 23, 5, 10 ],
+            "saturday": [ 19, 27, 9, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 107,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1564452652/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://paalnilssen-love.bandcamp.com/album/paal-nilssen-love-large-unit-erta-ale',
+          a_string: 'Paal Nilssen-Love Large Unit : Erta Ale by Paal Nilssen-Love',
+          rule: {
+            "monday": [ 19, 27, 9, 14 ],
+            "tuesday": [ 18, 26, 8, 13 ],
+            "wednesday": [ 17, 25, 7, 12 ],
+            "thursday": [ 16, 24, 6, 11 ],
+            "saturday": [ 15, 23, 5, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 108,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2670047260/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sunntrio-slr.bandcamp.com/album/sunn-trio',
+          a_string: 'Sunn Trio by Sunn Trio',
+          rule: {
+            "monday": [ 15, 23, 5, 10 ],
+            "tuesday": [ 19, 27, 9, 14 ],
+            "wednesday": [ 18, 26, 8, 13 ],
+            "thursday": [ 17, 25, 7, 12 ],
+            "saturday": [ 16, 24, 6, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
