@@ -2604,6 +2604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 131,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/untitled-1975--.jpg',
+          title: 'Untitled',
+          artist: 'Terry Frost',
+          year: '1975',
+          rule: {
+            "monday": [ 17, 23, 11, 19 ],
+            "tuesday": [ 16, 22, 10, 18 ],
+            "wednesday": [ 15, 21, 9, 16 ],
+            "thursday": [ 21, 27, 15, 23 ],
+            "friday": [ 20, 26, 14, 22 ],
+            "saturday": [ 19, 25, 13, 21 ],
+            "sunday": [ 18, 24, 12, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 132,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/cadavre-exquis-surrealist-group-collective-work-1948.jpg',
+          title: 'Cadavre Exquis (Surrealist Group Collective Work)',
+          artist: 'Marcelino Vespeira',
+          year: '1948',
+          rule: {
+            "monday": [ 18, 24, 12, 20 ],
+            "tuesday": [ 17, 23, 11, 19 ],
+            "wednesday": [ 16, 22, 10, 18 ],
+            "thursday": [ 15, 21, 9, 16 ],
+            "friday": [ 21, 27, 15, 23 ],
+            "saturday": [ 20, 26, 14, 22 ],
+            "sunday": [ 19, 25, 13, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 133,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/blue-on-white-1961.jpg',
+          title: 'Blue on White',
+          artist: 'Ellsworth Kelly',
+          year: '1961',
+          rule: {
+            "monday": [ 20, 26, 14, 22 ],
+            "tuesday": [ 19, 25, 13, 21 ],
+            "wednesday": [ 18, 24, 12, 20 ],
+            "thursday": [ 17, 23, 11, 19 ],
+            "friday": [ 16, 22, 10, 17 ],
+            "saturday": [ 22, 28, 16, 24 ],
+            "sunday": [ 21, 27, 15, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 134,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/the-olgas-for-ernest-giles-1985.jpg',
+          title: 'The Olgas for Ernest Giles',
+          artist: 'Brett Whiteley',
+          year: '1985',
+          rule: {
+            "monday": [ 21, 27, 15, 23 ],
+            "tuesday": [ 20, 26, 14, 22 ],
+            "wednesday": [ 19, 25, 13, 21 ],
+            "thursday": [ 18, 24, 12, 20 ],
+            "friday": [ 17, 23, 11, 19 ],
+            "saturday": [ 16, 22, 10, 17 ],
+            "sunday": [ 22, 28, 16, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 135,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/the-trial-1947.jpg',
+          title: 'The Trial',
+          artist: 'Sidney Nolan',
+          year: '1947',
+          rule: {
+            "monday": [ 22, 28, 16, 24 ],
+            "tuesday": [ 21, 27, 15, 23 ],
+            "wednesday": [ 20, 26, 14, 22 ],
+            "thursday": [ 19, 25, 13, 21 ],
+            "friday": [ 18, 24, 12, 20 ],
+            "saturday": [ 17, 23, 11, 19 ],
+            "sunday": [ 16, 22, 10, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
