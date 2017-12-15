@@ -1570,6 +1570,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 88,
+          user_id: 1,
+          theme: 'commercially viable genre',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2179974400/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://agentbla.bandcamp.com/album/agent-bl',
+          a_string: 'Agent blå by Agent Blå',
+          rule: {
+            "monday": [ 14, 16, 20, 28 ],
+            "tuesday": [ 13, 15, 19, 27 ],
+            "wednesday": [ 12, 14, 18, 26 ],
+            "thursday": [ 11, 12, 17, 25 ],
+            "saturday": [ 10, 12, 16, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 89,
+          user_id: 1,
+          theme: 'commercially viable genre',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=664087412/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://fatherdaughterrecords.bandcamp.com/album/uncontrollable-salvation',
+          a_string: 'Uncontrollable Salvation by Pardoner',
+          rule: {
+            "monday": [ 10, 12, 16, 24 ],
+            "tuesday": [ 14, 16, 20, 28 ],
+            "wednesday": [ 13, 15, 19, 27 ],
+            "thursday": [ 12, 14, 18, 26 ],
+            "saturday": [ 11, 12, 17, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 90,
+          user_id: 1,
+          theme: 'commercially viable genre',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1747651969/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://laetitiasadier.bandcamp.com/album/find-me-finding-you',
+          a_string: 'Find Me Finding You by Laetitia Sadier',
+          rule: {
+            "monday": [ 11, 12, 17, 25 ],
+            "tuesday": [ 10, 12, 16, 24 ],
+            "wednesday": [ 14, 16, 20, 28 ],
+            "thursday": [ 13, 15, 19, 27 ],
+            "saturday": [ 12, 14, 18, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
