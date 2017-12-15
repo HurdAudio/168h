@@ -3004,6 +3004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 151,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/independence-war-1948.jpg',
+          title: 'Independence war',
+          artist: 'Avigdor Arikha',
+          year: '1948',
+          rule: {
+            "monday": [ 19, 30, 10, 11 ],
+            "tuesday": [ 18, 29, 9, 20 ],
+            "wednesday": [ 24, 4, 15, 25 ],
+            "thursday": [ 23, 3, 14, 25 ],
+            "friday": [ 22, 2, 13, 24 ],
+            "saturday": [ 21, 1, 12, 23 ],
+            "sunday": [ 20, 31, 10, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 152,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/valdes-peninsula-argentina-2001.jpg',
+          title: 'Valdes Peninsula, Argentina',
+          artist: 'Elliott Erwitt',
+          year: '2001',
+          rule: {
+            "monday": [ 20, 31, 10, 22 ],
+            "tuesday": [ 19, 30, 10, 11 ],
+            "wednesday": [ 18, 29, 9, 20 ],
+            "thursday": [ 24, 4, 15, 25 ],
+            "friday": [ 23, 3, 14, 25 ],
+            "saturday": [ 22, 2, 13, 24 ],
+            "sunday": [ 21, 1, 12, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 153,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/untitled-cosmogony-1960.jpg',
+          title: 'Untitled Cosmogony',
+          artist: 'Yves Klein',
+          year: '1960',
+          rule: {
+            "monday": [ 21, 1, 12, 23 ],
+            "tuesday": [ 20, 31, 10, 22 ],
+            "wednesday": [ 19, 30, 10, 11 ],
+            "thursday": [ 18, 29, 9, 20 ],
+            "friday": [ 24, 4, 15, 25 ],
+            "saturday": [ 23, 3, 14, 25 ],
+            "sunday": [ 22, 2, 13, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 154,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/avant-le-jour-1986.jpg',
+          title: 'Avant le Jour',
+          artist: 'James Bishop',
+          year: '1986',
+          rule: {
+            "monday": [ 23, 3, 14, 25 ],
+            "tuesday": [ 22, 2, 13, 24 ],
+            "wednesday": [ 21, 1, 11, 13 ],
+            "thursday": [ 20, 31, 11, 12 ],
+            "friday": [ 19, 30, 10, 21 ],
+            "saturday": [ 25, 5, 16, 26 ],
+            "sunday": [ 24, 4, 15, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 155,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/reflections-in-water-deformed-by-the-spectator-1964.jpg',
+          title: 'Reflections in water deformed by the spectator',
+          artist: 'Francois Morellet',
+          year: '1964',
+          rule: {
+            "monday": [ 24, 4, 15, 26 ],
+            "tuesday": [ 23, 3, 14, 25 ],
+            "wednesday": [ 22, 2, 13, 24 ],
+            "thursday": [ 21, 1, 11, 13 ],
+            "friday": [ 20, 31, 11, 12 ],
+            "saturday": [ 19, 30, 10, 21 ],
+            "sunday": [ 25, 5, 16, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
