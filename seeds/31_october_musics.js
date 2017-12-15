@@ -1246,6 +1246,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 70,
+          user_id: 1,
+          theme: 'hardcore punk, metal and nurse with wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2556597098/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://limpwrist.bandcamp.com/album/facades',
+          a_string: 'Facades by Limp Wrist',
+          rule: {
+            "monday": [ 16, 26, 5, 8 ],
+            "tuesday": [ 15, 25, 4, 7 ],
+            "wednesday": [ 14, 24, 4, 6 ],
+            "thursday": [ 18, 28, 7, 10 ],
+            "saturday": [ 17, 27, 6, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 71,
+          user_id: 1,
+          theme: 'hardcore punk, metal and nurse with wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4037673616/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://haramharam.bandcamp.com/album/when-you-have-won-you-have-lost',
+          a_string: '>بس ربحت, خسرت &quot;When You Have Won, You Have Lost&quot; by HARAM',
+          rule: {
+            "monday": [ 17, 27, 6, 9 ],
+            "tuesday": [ 16, 26, 5, 8 ],
+            "wednesday": [ 15, 25, 4, 7 ],
+            "thursday": [ 14, 24, 4, 6 ],
+            "saturday": [ 18, 28, 7, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 72,
+          user_id: 1,
+          theme: 'hardcore punk, metal and nurse with wound',
+          source: 'bandcamp',
+          src_string: 'http://bandcamp.com/EmbeddedPlayer/album=919329377/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://listen.20buckspin.com/album/curse-of-conception',
+          a_string: 'Curse Of Conception by Spirit Adrift',
+          rule: {
+            "monday": [ 18, 28, 7, 10 ],
+            "tuesday": [ 17, 27, 6, 9 ],
+            "wednesday": [ 16, 26, 5, 8 ],
+            "thursday": [ 15, 25, 4, 7 ],
+            "saturday": [ 14, 24, 4, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
