@@ -2804,6 +2804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 141,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/komposition-1917.jpg',
+          title: 'Komposition',
+          artist: 'Gosta Adrian-Nilsson',
+          year: '1917',
+          rule: {
+            "monday": [ 23, 26, 4, 20 ],
+            "tuesday": [ 22, 26, 3, 19 ],
+            "wednesday": [ 21, 25, 2, 18 ],
+            "thursday": [ 20, 22, 1, 17 ],
+            "friday": [ 19, 22, 31, 16 ],
+            "saturday": [ 18, 21, 30, 15 ],
+            "sunday": [ 24, 28, 5, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 142,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/kopf-1919.jpg',
+          title: 'Kopf',
+          artist: 'Oskar Schlemmer',
+          year: '1919',
+          rule: {
+            "monday": [ 24, 28, 5, 21 ],
+            "tuesday": [ 23, 26, 4, 20 ],
+            "wednesday": [ 22, 26, 3, 19 ],
+            "thursday": [ 21, 25, 2, 18 ],
+            "friday": [ 20, 22, 1, 17 ],
+            "saturday": [ 19, 22, 31, 16 ],
+            "sunday": [ 18, 21, 30, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 143,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/to-the-parnassus-1932(2).jpg',
+          title: 'Ad Parnassum',
+          artist: 'Paul Klee',
+          year: '1932',
+          rule: {
+            "monday": [ 18, 21, 30, 15 ],
+            "tuesday": [ 24, 28, 5, 21 ],
+            "wednesday": [ 23, 26, 4, 20 ],
+            "thursday": [ 22, 26, 3, 19 ],
+            "friday": [ 21, 25, 2, 18 ],
+            "saturday": [ 20, 22, 1, 17 ],
+            "sunday": [ 19, 22, 31, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 144,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/the-sea-1937.jpg',
+          title: 'The Sea',
+          artist: 'Koshiro Onchi',
+          year: '1937',
+          rule: {
+            "monday": [ 19, 22, 31, 16 ],
+            "tuesday": [ 18, 21, 30, 15 ],
+            "wednesday": [ 24, 28, 5, 21 ],
+            "thursday": [ 23, 26, 4, 20 ],
+            "friday": [ 22, 26, 3, 19 ],
+            "saturday": [ 21, 25, 2, 18 ],
+            "sunday": [ 20, 22, 1, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 145,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/a-townscene-with-children-at-play-haarlem-1930.jpg',
+          title: 'A Townscene With Children At Play, Haarlem',
+          artist: 'Cornelis Vreedenburgh',
+          year: '1930',
+          rule: {
+            "monday": [ 20, 22, 1, 17 ],
+            "tuesday": [ 19, 22, 31, 16 ],
+            "wednesday": [ 18, 21, 30, 15 ],
+            "thursday": [ 24, 28, 5, 21 ],
+            "friday": [ 23, 26, 4, 20 ],
+            "saturday": [ 22, 26, 3, 19 ],
+            "sunday": [ 21, 25, 2, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
