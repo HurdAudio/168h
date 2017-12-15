@@ -3604,6 +3604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 181,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/clipart30.jpg',
+          title: 'Baseball Clip Art',
+          artist: '?',
+          year: 'xx cent.',
+          rule: {
+            "monday": [ 23, 27, 12, 10 ],
+            "tuesday": [ 22, 27, 2, 8 ],
+            "wednesday": [ 21, 26, 2, 8 ],
+            "thursday": [ 20, 25, 1, 7 ],
+            "friday": [ 25, 1, 6, 13 ],
+            "saturday": [ 9, 29, 5, 12 ],
+            "sunday": [ 24, 29, 5, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 182,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/10944181-standard.jpg',
+          title: 'CC Sabathia',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 25, 30, 6, 12 ],
+            "tuesday": [ 24, 28, 13, 11 ],
+            "wednesday": [ 23, 28, 3, 9 ],
+            "thursday": [ 22, 27, 3, 9 ],
+            "friday": [ 21, 26, 2, 8 ],
+            "saturday": [ 26, 2, 7, 14 ],
+            "sunday": [ 10, 30, 6, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 183,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/Kadir-Nelson-low-and-away_1024x1024.jpg',
+          title: 'Low and Away',
+          artist: 'Kadir Nelson',
+          year: '?',
+          rule: {
+            "monday": [ 10, 30, 6, 13 ],
+            "tuesday": [ 25, 30, 6, 12 ],
+            "wednesday": [ 24, 28, 13, 11 ],
+            "thursday": [ 23, 28, 3, 9 ],
+            "friday": [ 22, 27, 3, 9 ],
+            "saturday": [ 21, 26, 2, 8 ],
+            "sunday": [ 26, 2, 7, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 184,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/Generic-Baseball-Art-KL-01.jpg',
+          title: 'Generic Baseball Art',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 26, 2, 7, 14 ],
+            "tuesday": [ 10, 30, 6, 13 ],
+            "wednesday": [ 25, 30, 6, 12 ],
+            "thursday": [ 24, 28, 13, 11 ],
+            "friday": [ 23, 28, 3, 9 ],
+            "saturday": [ 22, 27, 3, 9 ],
+            "sunday": [ 21, 26, 2, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 185,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/the-legacy-of-moonlight-graham-mark-a-brown.jpg',
+          title: 'The Legacy of Moonlight',
+          artist: 'Mark A. Brown',
+          year: '?',
+          rule: {
+            "monday": [ 21, 26, 2, 8 ],
+            "tuesday": [ 26, 2, 7, 14 ],
+            "wednesday": [ 10, 30, 6, 13 ],
+            "thursday": [ 25, 30, 6, 12 ],
+            "friday": [ 24, 28, 13, 11 ],
+            "saturday": [ 23, 28, 3, 9 ],
+            "sunday": [ 22, 27, 3, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
