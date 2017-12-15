@@ -2218,6 +2218,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 124,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2619942067/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://yarnwire.bandcamp.com/album/yarn-wire-currents-vol-3',
+          a_string: 'Yarn/Wire/Currents Vol. 3 by Yarn/Wire',
+          rule: {
+            "monday": [ 28, 4, 5, 6 ],
+            "tuesday": [ 27, 3, 4, 5 ],
+            "wednesday": [ 26, 2, 3, 4 ],
+            "thursday": [ 25, 1, 2, 3 ],
+            "saturday": [ 24, 31, 1, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 125,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1830995350/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://yarnwire.bandcamp.com/album/yarn-wire-currents-vol-0',
+          a_string: 'Yarn/Wire/Currents Vol. 0 by Yarn/Wire',
+          rule: {
+            "monday": [ 24, 31, 1, 2 ],
+            "tuesday": [ 28, 4, 5, 6 ],
+            "wednesday": [ 27, 3, 4, 5 ],
+            "thursday": [ 26, 2, 3, 4 ],
+            "saturday": [ 25, 1, 2, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 126,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1017533349/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://yarnwire.bandcamp.com/album/yarn-wire-currents-vol-4',
+          a_string: 'Yarn/Wire/Currents Vol. 4 by Yarn/Wire',
+          rule: {
+            "monday": [ 26, 2, 3, 4 ],
+            "tuesday": [ 25, 1, 2, 3 ],
+            "wednesday": [ 29, 5, 6, 7 ],
+            "thursday": [ 28, 4, 5, 6 ],
+            "saturday": [ 27, 3, 4, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
