@@ -1284,13 +1284,24 @@ exports.seed = function(knex, Promise) {
           a_string: 'Gilles Peterson Presents Sun Ra And His Arkestra: To Those Of Earth... And Other Worlds by Sun Ra',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
-        },{
+        },
+        {
           id: 129,
           user_id: 1,
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2583795695/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://sunrastrut.bandcamp.com/album/planets-of-life-or-death-amiens-73',
           a_string: 'Planets Of Life Or Death: Amiens &#39;73 by Sun Ra &amp; His Intergalactic Research Arkestra',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 130,
+          user_id: 1,
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2663593403/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sunrastrut.bandcamp.com/album/marshall-allen-presents-sun-ra-and-his-arkestra-in-the-orbit-of-ra',
+          a_string: 'Marshall Allen presents Sun Ra And His Arkestra: In The Orbit Of Ra by Sun Ra',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
