@@ -4204,6 +4204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 211,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/looks-of-the-colors.jpg',
+          title: 'Looks of the Colors',
+          artist: 'Ion Tuculescu',
+          year: 'xx cent.',
+          rule: {
+            "monday": [ 4, 5, 28, 31 ],
+            "tuesday": [ 7, 8, 30, 3 ],
+            "wednesday": [ 10, 12, 13, 15 ],
+            "thursday": [ 12, 14, 18, 21 ],
+            "friday": [ 14, 16, 17, 20 ],
+            "saturday": [ 30, 31, 11, 3 ],
+            "sunday": [ 2, 4, 27, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 212,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/james-bond-meets-pussy-galore-1965.jpg',
+          title: 'James Bond Meets Pussy Galore',
+          artist: 'Nicholas Krushenick',
+          year: '1965',
+          rule: {
+            "monday": [ 2, 4, 27, 16 ],
+            "tuesday": [ 4, 5, 28, 31 ],
+            "wednesday": [ 7, 8, 30, 3 ],
+            "thursday": [ 10, 12, 13, 15 ],
+            "friday": [ 12, 14, 18, 21 ],
+            "saturday": [ 14, 16, 17, 20 ],
+            "sunday": [ 30, 31, 11, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 213,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/la-ronde-marine-1987.jpg',
+          title: 'La ronde marine',
+          artist: 'Jean-Paul Jerome',
+          year: '1987',
+          rule: {
+            "monday": [ 30, 31, 11, 3 ],
+            "tuesday": [ 2, 4, 27, 16 ],
+            "wednesday": [ 4, 5, 28, 31 ],
+            "thursday": [ 7, 8, 30, 3 ],
+            "friday": [ 10, 12, 13, 15 ],
+            "saturday": [ 12, 14, 18, 21 ],
+            "sunday": [ 14, 16, 17, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 214,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/early-morning-sky-1990.jpg',
+          title: 'Early Morning Sky',
+          artist: 'Tihamer Gyarmathy',
+          year: '1990',
+          rule: {
+            "monday": [ 14, 16, 17, 20 ],
+            "tuesday": [ 30, 31, 11, 3 ],
+            "wednesday": [ 2, 4, 27, 16 ],
+            "thursday": [ 4, 5, 28, 31 ],
+            "friday": [ 7, 8, 30, 3 ],
+            "saturday": [ 10, 12, 13, 15 ],
+            "sunday": [ 12, 14, 18, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 215,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/dusk-1958.jpg',
+          title: 'Dusk',
+          artist: 'William Baziotes',
+          year: '1958',
+          rule: {
+            "monday": [ 12, 14, 18, 21 ],
+            "tuesday": [ 14, 16, 17, 20 ],
+            "wednesday": [ 30, 31, 11, 3 ],
+            "thursday": [ 2, 4, 27, 16 ],
+            "friday": [ 4, 5, 28, 31 ],
+            "saturday": [ 7, 8, 30, 3 ],
+            "sunday": [ 10, 12, 13, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
