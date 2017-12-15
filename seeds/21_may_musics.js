@@ -1786,6 +1786,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 100,
+          user_id: 1,
+          theme: 'avant garde/new music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1513168489/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://gatesritual.bandcamp.com/album/deliverer-redeemer',
+          a_string: 'Deliverer / Redeemer by Gates',
+          rule: {
+            "monday": [ 17, 23, 30, 12 ],
+            "tuesday": [ 16, 22, 29, 11 ],
+            "wednesday": [ 15, 21, 28, 10 ],
+            "thursday": [ 19, 25, 1, 14 ],
+            "saturday": [ 18, 24, 31, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 101,
+          user_id: 1,
+          theme: 'avant garde/new music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1735658668/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://gatesritual.bandcamp.com/album/viscera',
+          a_string: 'Viscera by Gates',
+          rule: {
+            "monday": [ 18, 24, 31, 13 ],
+            "tuesday": [ 17, 23, 30, 12 ],
+            "wednesday": [ 16, 22, 29, 11 ],
+            "thursday": [ 15, 21, 28, 10 ],
+            "saturday": [ 19, 25, 1, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 102,
+          user_id: 1,
+          theme: 'avant garde/new music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1297023178/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://gatesritual.bandcamp.com/album/this-door-is-forbidden',
+          a_string: 'This Door Is Forbidden by Gates',
+          rule: {
+            "monday": [ 19, 25, 1, 14 ],
+            "tuesday": [ 18, 24, 31, 13 ],
+            "wednesday": [ 17, 23, 30, 12 ],
+            "thursday": [ 16, 22, 29, 11 ],
+            "saturday": [ 15, 21, 28, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
