@@ -3204,6 +3204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 161,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/untitled-35mm-transparency-1990-1.jpg',
+          title: 'Untitled (35mm Transparency)',
+          artist: 'Li Yuan-chia',
+          year: '1990',
+          rule: {
+            "monday": [ 22, 2, 12, 20 ],
+            "tuesday": [ 21, 1, 11, 19 ],
+            "wednesday": [ 20, 30, 10, 18 ],
+            "thursday": [ 19, 29, 9, 17 ],
+            "friday": [ 18, 28, 8, 16 ],
+            "saturday": [ 24, 4, 14, 21 ],
+            "sunday": [ 23, 3, 13, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 162,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/the-distance-between-the-landscape-and-dusk-1956.jpg',
+          title: 'The Distance Between the Landscape and Dusk',
+          artist: 'Kansuke Yamamoto',
+          year: '1956',
+          rule: {
+            "monday": [ 23, 3, 13, 21 ],
+            "tuesday": [ 22, 2, 12, 20 ],
+            "wednesday": [ 21, 1, 11, 19 ],
+            "thursday": [ 20, 30, 10, 18 ],
+            "friday": [ 19, 29, 9, 17 ],
+            "saturday": [ 18, 28, 8, 16 ],
+            "sunday": [ 24, 4, 14, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 163,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/untitled-8.jpg',
+          title: 'Untitled 8',
+          artist: 'Wols',
+          year: 'xx cent.',
+          rule: {
+            "monday": [ 24, 4, 14, 21 ],
+            "tuesday": [ 23, 3, 13, 21 ],
+            "wednesday": [ 22, 2, 12, 20 ],
+            "thursday": [ 21, 1, 11, 19 ],
+            "friday": [ 20, 30, 10, 18 ],
+            "saturday": [ 19, 29, 9, 17 ],
+            "sunday": [ 18, 28, 8, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 164,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/clouds-maine-1921.jpg',
+          title: 'Clouds, Maine',
+          artist: 'Clarence White',
+          year: '1921',
+          rule: {
+            "monday": [ 18, 28, 8, 16 ],
+            "tuesday": [ 24, 4, 14, 21 ],
+            "wednesday": [ 23, 3, 13, 21 ],
+            "thursday": [ 22, 2, 12, 20 ],
+            "friday": [ 21, 1, 11, 19 ],
+            "saturday": [ 20, 30, 10, 18 ],
+            "sunday": [ 19, 29, 9, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 165,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/civilian-defence-1942.jpg',
+          title: 'Civilian Defence',
+          artist: 'Edward Weston',
+          year: '1942',
+          rule: {
+            "monday": [ 19, 29, 9, 17 ],
+            "tuesday": [ 18, 28, 8, 16 ],
+            "wednesday": [ 24, 4, 14, 21 ],
+            "thursday": [ 23, 3, 13, 21 ],
+            "friday": [ 22, 2, 12, 20 ],
+            "saturday": [ 21, 1, 11, 19 ],
+            "sunday": [ 20, 30, 10, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
