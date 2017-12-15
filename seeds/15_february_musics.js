@@ -2110,6 +2110,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 118,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3084023840/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'https://bandcamp.com/EmbeddedPlayer/album=3084023840/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          a_string: 'Death To The Planet by The Comet Is Coming',
+          rule: {
+            "monday": [ 5, 28, 1, 7 ],
+            "tuesday": [ 17, 22, 24, 7 ],
+            "wednesday": [ 18, 22, 24, 28 ],
+            "thursday": [ 20, 24, 26, 1 ],
+            "saturday": [ 22, 26, 28, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 119,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1737997555/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://chinoamobi.bandcamp.com/album/paradiso',
+          a_string: 'PARADISO by Chino Amobi',
+          rule: {
+            "monday": [ 23, 27, 29, 2 ],
+            "tuesday": [ 6, 29, 2, 8 ],
+            "wednesday": [ 18, 23, 25, 8 ],
+            "thursday": [ 19, 23, 25, 29 ],
+            "saturday": [ 22, 25, 27, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 120,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=964522209/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://fatherdaughterrecords.bandcamp.com/album/drool',
+          a_string: 'DROOL by Nnamdi Ogbonnaya',
+          rule: {
+            "monday": [ 22, 25, 27, 2 ],
+            "tuesday": [ 23, 27, 29, 2 ],
+            "wednesday": [ 6, 29, 2, 8 ],
+            "thursday": [ 18, 23, 25, 8 ],
+            "saturday": [ 19, 23, 25, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
