@@ -4004,6 +4004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 201,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/39117_PRELIMINARY_17.jpg',
+          title: 'Faux Vitrine',
+          artist: 'Martin Puryear',
+          year: '2014',
+          rule: {
+            "monday": [ 7, 17, 23, 29 ],
+            "tuesday": [ 9, 17, 25, 6 ],
+            "wednesday": [ 11, 19, 15, 5 ],
+            "thursday": [ 28, 7, 15, 23 ],
+            "friday": [ 1, 9, 17, 25 ],
+            "saturday": [ 6, 11, 17, 27 ],
+            "sunday": [ 5, 13, 21, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 202,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/Patrick_Reason_engraving.jpg',
+          title: 'a kneeling slave',
+          artist: 'Patrick H. Reason',
+          year: '1835',
+          rule: {
+            "monday": [ 5, 13, 21, 29 ],
+            "tuesday": [ 7, 17, 23, 29 ],
+            "wednesday": [ 9, 17, 25, 6 ],
+            "thursday": [ 11, 19, 15, 5 ],
+            "friday": [ 28, 7, 15, 23 ],
+            "saturday": [ 1, 9, 17, 25 ],
+            "sunday": [ 6, 11, 17, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 203,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/US-Cotton-Industry_Thomas-Hart-Benton__01.jpg',
+          title: 'Cotton Pickers',
+          artist: 'Earle Wilton Richardson',
+          year: '1945',
+          rule: {
+            "monday": [ 7, 12, 18, 28 ],
+            "tuesday": [ 6, 14, 22, 1 ],
+            "wednesday": [ 8, 18, 24, 1 ],
+            "thursday": [ 10, 18, 26, 7 ],
+            "friday": [ 12, 20, 16, 6 ],
+            "saturday": [ 29, 8, 16, 24 ],
+            "sunday": [ 2, 10, 18, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 204,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/TarBeach2.jpg',
+          title: 'Tar Beach 2',
+          artist: 'Faith Ringgold',
+          year: '1990',
+          rule: {
+            "monday": [ 2, 10, 18, 26 ],
+            "tuesday": [ 7, 12, 18, 28 ],
+            "wednesday": [ 6, 14, 22, 1 ],
+            "thursday": [ 8, 18, 24, 1 ],
+            "friday": [ 10, 18, 26, 7 ],
+            "saturday": [ 12, 20, 16, 6 ],
+            "sunday": [ 29, 8, 16, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 205,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/H0132-L83954836.jpg',
+          title: 'Still Life',
+          artist: 'Haywood Rivers',
+          year: 'xx cent.',
+          rule: {
+            "monday": [ 29, 8, 16, 24 ],
+            "tuesday": [ 2, 10, 18, 26 ],
+            "wednesday": [ 7, 12, 18, 28 ],
+            "thursday": [ 6, 14, 22, 1 ],
+            "friday": [ 8, 18, 24, 1 ],
+            "saturday": [ 10, 18, 26, 7 ],
+            "sunday": [ 12, 20, 16, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
