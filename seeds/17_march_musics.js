@@ -2002,6 +2002,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 112,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1894361972/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sudanarchives.bandcamp.com/album/sudan-archives',
+          a_string: 'Sudan Archives by Sudan Archives',
+          rule: {
+            "monday": [ 21, 27, 2, 10 ],
+            "tuesday": [ 20, 26, 1, 9 ],
+            "wednesday": [ 19, 25, 31, 9 ],
+            "thursday": [ 18, 24, 30, 7 ],
+            "saturday": [ 17, 23, 29, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 113,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2820382927/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://waxahatchee.bandcamp.com/album/out-in-the-storm',
+          a_string: 'Out in the Storm by Waxahatchee',
+          rule: {
+            "monday": [ 17, 23, 29, 6 ],
+            "tuesday": [ 21, 27, 2, 10 ],
+            "wednesday": [ 20, 26, 1, 9 ],
+            "thursday": [ 19, 25, 31, 9 ],
+            "saturday": [ 18, 24, 30, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 114,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4186464351/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://caseydienel.bandcamp.com/album/imitation-of-a-woman-to-love',
+          a_string: 'Imitation Of A Woman To Love by Casey Dienel',
+          rule: {
+            "monday": [ 18, 24, 30, 7 ],
+            "tuesday": [ 17, 23, 29, 6 ],
+            "wednesday": [ 21, 27, 2, 10 ],
+            "thursday": [ 20, 26, 1, 9 ],
+            "saturday": [ 19, 25, 31, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
