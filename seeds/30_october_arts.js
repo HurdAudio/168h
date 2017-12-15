@@ -2404,6 +2404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 121,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_Le_031.jpg',
+          title: 'This will not happen!',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 23, 3, 14, 18 ],
+            "tuesday": [ 22, 2, 13, 17 ],
+            "wednesday": [ 21, 1, 12, 16 ],
+            "thursday": [ 20, 31, 11, 15 ],
+            "friday": [ 19, 30, 10, 14 ],
+            "saturday": [ 18, 29, 30, 13 ],
+            "sunday": [ 27, 28, 8, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 122,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_Le_030.jpg',
+          title: 'A pig, trained in Paris.',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 27, 28, 8, 12 ],
+            "tuesday": [ 23, 3, 14, 18 ],
+            "wednesday": [ 22, 2, 13, 17 ],
+            "thursday": [ 21, 1, 12, 16 ],
+            "friday": [ 20, 31, 11, 15 ],
+            "saturday": [ 19, 30, 10, 14 ],
+            "sunday": [ 18, 29, 30, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 123,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_Le_029.jpg',
+          title: 'Manifest',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 18, 29, 30, 13 ],
+            "tuesday": [ 27, 28, 8, 12 ],
+            "wednesday": [ 23, 3, 14, 18 ],
+            "thursday": [ 22, 2, 13, 17 ],
+            "friday": [ 21, 1, 12, 16 ],
+            "saturday": [ 20, 31, 11, 15 ],
+            "sunday": [ 19, 30, 10, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 124,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_Le_028.jpg',
+          title: 'Liberators',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 19, 30, 10, 14 ],
+            "tuesday": [ 18, 29, 30, 13 ],
+            "wednesday": [ 27, 28, 8, 12 ],
+            "thursday": [ 23, 3, 14, 18 ],
+            "friday": [ 22, 2, 13, 17 ],
+            "saturday": [ 21, 1, 12, 16 ],
+            "sunday": [ 20, 31, 11, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 125,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_Le_027.jpg',
+          title: '1st of May is a holiday of labor.',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 20, 31, 11, 15 ],
+            "tuesday": [ 19, 30, 10, 14 ],
+            "wednesday": [ 18, 29, 30, 13 ],
+            "thursday": [ 27, 28, 8, 12 ],
+            "friday": [ 23, 3, 14, 18 ],
+            "saturday": [ 22, 2, 13, 17 ],
+            "sunday": [ 21, 1, 12, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
