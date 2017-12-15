@@ -3804,6 +3804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 191,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/descending-2010.jpg',
+          title: 'Descending',
+          artist: 'Marjorie Strider',
+          year: '2010',
+          rule: {
+            "monday": [ 27, 5, 14, 23 ],
+            "tuesday": [ 26, 5, 15, 23 ],
+            "wednesday": [ 25, 4, 12, 22 ],
+            "thursday": [ 24, 3, 11, 21 ],
+            "friday": [ 23, 2, 10, 20 ],
+            "saturday": [ 22, 1, 9, 19 ],
+            "sunday": [ 21, 31, 9, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 192,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/colored-alphabet-1982.jpg',
+          title: 'Colored Alphabet',
+          artist: 'Sheila Hicks',
+          year: '1982',
+          rule: {
+            "monday": [ 21, 31, 9, 18 ],
+            "tuesday": [ 27, 5, 14, 23 ],
+            "wednesday": [ 26, 5, 15, 23 ],
+            "thursday": [ 25, 4, 12, 22 ],
+            "friday": [ 24, 3, 11, 21 ],
+            "saturday": [ 23, 2, 10, 20 ],
+            "sunday": [ 22, 1, 9, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 193,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/ice-cream-1964.jpg',
+          title: 'Ice Cream',
+          artist: 'Evelyne Axell',
+          year: '1964',
+          rule: {
+            "monday": [ 22, 1, 9, 19 ],
+            "tuesday": [ 21, 31, 9, 18 ],
+            "wednesday": [ 27, 5, 14, 23 ],
+            "thursday": [ 26, 5, 15, 23 ],
+            "friday": [ 25, 4, 12, 22 ],
+            "saturday": [ 24, 3, 11, 21 ],
+            "sunday": [ 23, 2, 10, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 194,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/untitled-1965-2.jpg',
+          title: 'Untitled',
+          artist: 'Eva Hesse',
+          year: '1965',
+          rule: {
+            "monday": [ 23, 2, 10, 20 ],
+            "tuesday": [ 22, 1, 9, 19 ],
+            "wednesday": [ 21, 31, 9, 18 ],
+            "thursday": [ 27, 5, 14, 23 ],
+            "friday": [ 26, 5, 15, 23 ],
+            "saturday": [ 25, 4, 12, 22 ],
+            "sunday": [ 24, 3, 11, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 195,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/untitled-1960.jpg',
+          title: 'Untitled',
+          artist: 'Nasreen Mohamedi',
+          year: '1960',
+          rule: {
+            "monday": [ 24, 3, 11, 21 ],
+            "tuesday": [ 23, 2, 10, 20 ],
+            "wednesday": [ 22, 1, 9, 19 ],
+            "thursday": [ 21, 31, 9, 18 ],
+            "friday": [ 27, 5, 14, 23 ],
+            "saturday": [ 26, 5, 15, 23 ],
+            "sunday": [ 25, 4, 12, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
