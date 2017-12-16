@@ -186,6 +186,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FFF7E1',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 14,
+          user_id: 1,
+          theme: 'steam',
+          type: 'friday',
+          src_string: '../img/july_tiles/namafjall-1803628_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '150%',
+          color_dark: '#111111',
+          color_medium: '#684F3B',
+          color_light: '#D5D5D7',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
