@@ -167,6 +167,64 @@
       vm.displayArts = displayArts;
       vm.editObservance = editObservance;
       vm.userObservancesEditorDone = userObservancesEditorDone;
+      vm.deleteGoal = deleteGoal;
+
+      function deleteGoal(goalId) {
+        let userGoalsDeleteConfirmDiv = document.getElementById('userGoalsDeleteConfirmDiv');
+        let goalsManagementDiv = document.getElementById('goalsManagementDiv');
+        let userGoalDeleteName = document.getElementById('userGoalDeleteName');
+        let userGoalDeleteHours = document.getElementById('userGoalDeleteHours');
+        let userGoalDeleteConfirmButtons = document.getElementById('userGoalDeleteConfirmButtons');
+        let userGoalConfirmYes = document.getElementById('userGoalConfirmYes');
+        if (userGoalConfirmYes) {
+          userGoalConfirmYes.parentNode.removeChild(userGoalConfirmYes);
+          userGoalConfirmYes = document.createElement('a');
+          userGoalDeleteConfirmButtons.appendChild(userGoalConfirmYes);
+          userGoalConfirmYes.id = 'userGoalConfirmYes';
+          userGoalConfirmYes.className = 'btn';
+          userGoalConfirmYes.innerHTML = 'yes';
+          userGoalConfirmYes.setAttribute("style", "cursor: pointer;");
+        }
+        let userGoalConfirmNo = document.getElementById('userGoalConfirmNo');
+        if (userGoalConfirmNo) {
+          userGoalConfirmNo.parentNode.removeChild(userGoalConfirmNo);
+          userGoalConfirmNo = document.createElement('a');
+          userGoalDeleteConfirmButtons.appendChild(userGoalConfirmNo);
+          userGoalConfirmNo.id = 'userGoalConfirmNo';
+          userGoalConfirmNo.className = 'btn';
+          userGoalConfirmNo.innerHTML = 'no';
+          userGoalConfirmNo.setAttribute("style", "cursor: pointer;");
+        }
+
+        $http.get(`/goals/${goalId}`)
+        .then(goalData=>{
+          let goal = goalData.data;
+          $http.get(`/blocktypes/${goal.block_type}`)
+          .then(blocktypeData=>{
+            let blocktype = blocktypeData.data;
+            userGoalDeleteName.innerHTML = blocktype.type;
+            userGoalDeleteHours.innerHTML = goal.weekly_goal + ' hours per week.';
+
+            userGoalConfirmYes.addEventListener('click', ()=>{
+              $http.delete(`/goals/${goalId}`)
+              .then(()=>{
+                userGoalsDeleteConfirmDiv.setAttribute("style", "display: none;");
+                goalsManagementDiv.setAttribute("style", "display: initial;");
+                goalManager();
+              });
+            });
+
+            userGoalConfirmNo.addEventListener('click', ()=>{
+              userGoalsDeleteConfirmDiv.setAttribute("style", "display: none;");
+              goalsManagementDiv.setAttribute("style", "display: initial;");
+              goalManager();
+            });
+          });
+        });
+
+        userGoalsDeleteConfirmDiv.setAttribute("style", "display: initial;");
+        goalsManagementDiv.setAttribute("style", "display: none;");
+      }
 
       function userObservancesEditorDone() {
         let userObservancesEditorDiv = document.getElementById('userObservancesEditorDiv');let observancesManagerDone = document.getElementById('observancesManagerDone');
@@ -2684,7 +2742,7 @@
         let userTaskDeleteName = document.getElementById('userTaskDeleteName');
         let userTaskDue = document.getElementById('userTaskDue');
         let dueDate;
-        let userTaskCompleted = document.getElementById('userTaskCompleted');
+        let userTaskCompleted = document.getElementById('userTaskCompletedP');
         let completedDate;
 
         $http.get(`/tasks/${taskId}`)
