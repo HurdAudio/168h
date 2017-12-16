@@ -2093,6 +2093,107 @@
       </form>
 
     </div>
+
+    <div id="userObservancesEditorDiv">
+      <div id="userObservancesEditorBar">
+        <a href="" class="btn" id="userObservancesEditorDoneButton" ng-click="$ctrl.userObservancesEditorDone()">done</a>
+        <h1 id="observancesEditorTitle">Observance</h1>
+      </div>
+      <form id="userObservancesEditorForm" class="pure-form pure-form-stacked">
+        <fieldset>
+          <p>Observance name:</p>
+          <div id="userObservancesNameField">
+            <textarea type="text" class="pure-input-1" id="userObservancesName"></textarea>
+          </div>
+          <div id="userObservancesImageEditorField">
+            <img id="userObservancesEditorPhoto">
+            <p>Image URL:</p>
+            <input type="text" class="pure-input-1" id="observancesImageURL">
+            <a href="" class="btn" id="observancesImageLinkUpload">upload</a>
+          </div>
+          <div id="userObservancesImageUploadCentre">
+            <input type="file" name="userObservancesPhotoFile" id="userObservancesPhotoFile" class="pure-input-1">
+            <a href="" class="btn" id="userUploadObservancesPhotoConfirm">confirm</a>
+            <a href="" class="btn" id="userUploadObservancesPhotoCancel">cancel</a>
+
+          </div>
+          <p>Color: </p>
+          <div id="userObservancesColorPicker">
+            <input type="color" class="pure-input-1" id="userObservancesColorSelector">
+
+          </div>
+
+
+          <p>Occurs annually:</p>
+          <div id="userObservancesAnnualCheckboxDiv">
+            <input type="checkbox" id="userObservancesAnnuality" checked>
+
+          </div>
+          <div id="userObservancesDateDiv">
+            <div id="userObservancesDateField">
+              <input type="date" id="userObservancesDate" class="pure-intput-1">
+            </div>
+
+
+
+          </div>
+
+
+          <p>Observance Related Art:</p>
+          <div id="observancesOverrideCheckbox">
+            <input type="checkbox" id="userObservancesHasArtContent">
+          </div>
+          <div id="userObservancesArtContent">
+            <div id="userObservancesArtsEditor"></div>
+            <div id="userObservancesDivHolderForAddButton">
+              <button id="userAddObservancesArt">add new</button>
+            </div>
+            <div id="observancesArtAdder">
+              <div id="userObservancesArtAdditionDiv">
+                <a href="" id="userObservanceArtAddDone" class="btn">done</a>
+                <img id="userObservancesArtAddImagePane">
+                <input type="text" placeholder="imageURL" id="userObservanceArtAddImageURL">
+                <a href="" class="btn" id="userObservanceArtAddUploaderButton">upload</a>
+              </div>
+              <div id="observancesArtImageUploaderDiv">
+                <input type="file" id="observancesArtFileUpload">
+                <a href="" class="btn" id="observancesArtUploaderSubmit">submit</a>
+                <a href="" class="btn" id="observancesArtUploaderCancel">cancel</a>
+              </div>
+              <div id="observancesArtNewTextFieldsDiv">
+                <input type="text" id="observanceArtAddArtist" placeholder="artist">
+                <input type="text" id="observancesArtAddTitle" placeholder="title">
+                <input type="text" id="observancesArtAdderYear" placeholder="year">
+
+
+              </div>
+            </div>
+
+
+          </div>
+          <p>Observance Related Music:</p>
+          <div id="userObservancesMusicOverrideCheckDiv">
+            <input type="checkbox" id="userObservancesHasMusicContent">
+          </div>
+          <div id="userObservancesMusicContent">
+
+            <div id="userObservancesMusicsEditor"></div>
+            <div id="userObservancesMusicAddButtonDiv">
+              <button id="userAddObservancesMusic">add new</button>
+            </div>
+            <div id="userObservancesMusicAddingForm">
+              <p>Please paste bandcamp embed link here:</p>
+              <input type="text" id="userObservancesBandcampSubmissionString">
+              <p id="userObservancesMusicAddErrorMessage"></p>
+              <a href="" class="btn" id="userObservancesMusicAddSubmit">submit</a>
+              <a href="" class="btn" id="userObservancesMusicAddCancel">cancel</a>
+            </div>
+          </div>
+
+        </fieldset>
+      </form>
+
+    </div>
   </div>
 
 </div>

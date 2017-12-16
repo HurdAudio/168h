@@ -165,6 +165,845 @@
       vm.closeArtCurratorManager = closeArtCurratorManager;
       vm.toggleArtCurratorMonth = toggleArtCurratorMonth;
       vm.displayArts = displayArts;
+      vm.editObservance = editObservance;
+      vm.userObservancesEditorDone = userObservancesEditorDone;
+
+      function userObservancesEditorDone() {
+        let userObservancesEditorDiv = document.getElementById('userObservancesEditorDiv');let observancesManagerDone = document.getElementById('observancesManagerDone');
+
+        userObservancesEditorDiv.setAttribute("style", "display: none;");
+        observancesManagerDone.setAttribute("style", "visibility: visible;");
+        observanceManager();
+      }
+
+      function observeArtDeleteListen(button, observe, index, editorDiv) {
+        console.log(observe);
+        button.addEventListener('click', ()=>{
+          let subObj = {
+            override_content: observe.override_content
+          };
+          console.log(subObj);
+          subObj.override_content.img_paths.splice(index, 1);
+          subObj.override_content.titles.splice(index, 1);
+          subObj.override_content.artists.splice(index, 1);
+          subObj.override_content.years.splice(index, 1);
+
+          $http.patch(`/observances/${observe.id}`, subObj)
+          .then(()=>{
+            observe.override_content = subObj.override_content;
+            //editObservances(observe.id);
+            let userObservancesArtsEditor = document.getElementById('userObservancesArtsEditor');
+            let picture;
+            let artist;
+            let title;
+            let year;
+            let deleteButton;
+            if (observe.override_content !== null) {
+              while(userObservancesArtsEditor.firstChild) {
+                userObservancesArtsEditor.removeChild(userObservancesArtsEditor.firstChild);
+              }
+              if (observe.override_content.img_paths !== null) {
+                if (observe.override_content.img_paths.length > 0) {
+                  while(userObservancesArtsEditor.firstChild) {
+                    userObservancesArtsEditor.removeChild(userObservancesArtsEditor.firstChild);
+                  }
+                  for (let i = 0; i < observe.override_content.img_paths.length; i++) {
+                    picture = document.createElement('img');
+                    userObservancesArtsEditor.appendChild(picture);
+                    picture.src = observe.override_content.img_paths[i];
+                    deleteButton = document.createElement('a');
+                    userObservancesArtsEditor.appendChild(deleteButton);
+                    deleteButton.className = 'btn';
+                    deleteButton.innerHTML = 'delete';
+                    deleteButton.setAttribute("style", "cursor: pointer;");
+                    observeArtDeleteListen(deleteButton, observe, i, userObservancesArtsEditor);
+                    artist = document.createElement('input');
+                    userObservancesArtsEditor.appendChild(artist);
+                    artist.type = 'text';
+                    artist.className = "pure-input-1";
+                    artist.value = observe.override_content.artists[i];
+                    observeArtistListen(artist, observe, i);
+                    title = document.createElement('input');
+                    userObservancesArtsEditor.appendChild(title);
+                    title.type = 'text';
+                    title.className = 'pure-input-1';
+                    title.value = observe.override_content.titles[i];
+                    observeTitleListen(title, observe, i);
+                    year = document.createElement('input');
+                    userObservancesArtsEditor.appendChild(year);
+                    year.type = 'text';
+                    year.className = 'pure-input-1';
+                    year.value = observe.override_content.years[i];
+                    observeYearListen(year, observe, i);
+                  }
+
+                }
+              }
+            }
+          });
+        });
+      }
+
+      function observeArtistListen(artist, observe, index) {
+        artist.addEventListener('focusout', ()=>{
+          if (artist.value !== observe.override_content.artists[index]) {
+            let subObj = {
+              override_content: observe.override_content
+            };
+            subObj.override_content.artists[index] = artist.value;
+            $http.patch(`/observances/${observe.id}`, subObj)
+            .then(()=>{
+              observe.override_content = subObj.override_content;
+              console.log('patched');
+            });
+          }
+        });
+      }
+
+      function observeTitleListen(title, observe, index) {
+        title.addEventListener('focusout', ()=>{
+          if (title.value !== observe.override_content.titles[index]) {
+            let subObj = {
+              override_content: observe.override_content
+            };
+            subObj.override_content.titles[index] = title.value;
+            $http.patch(`/observances/${observe.id}`, subObj)
+            .then(()=>{
+              observe.override_content = subObj.override_content;
+            });
+          }
+        });
+      }
+
+      function observeYearListen(year, observe, index) {
+        year.addEventListener('focusout', ()=>{
+          if (year.value !== observe.override_content.years[index]) {
+            let subObj = {
+              override_content: observe.override_content
+            };
+            subObj.override_content.years[index] = year.value;
+            $http.patch(`/observances/${observe.id}`, subObj)
+            .then(()=>{
+              observe.override_content = subObj.override_content;
+            });
+          }
+        });
+      }
+
+      function observeMusicDeleteListen(button, observe, index, userObservancesMusicsEditor) {
+        button.addEventListener('click', ()=>{
+          let subObj = {
+            override_content: observe.override_content
+          };
+          subObj.override_content.sources.splice(index, 1);
+          subObj.override_content.src_strings.splice(index, 1);
+          subObj.override_content.href_strings.splice(index, 1);
+          subObj.override_content.a_strings.splice(index, 1);
+          $http.patch(`/observances/${observe.id}`, subObj)
+          .then(()=>{
+            let musicPlayer;
+            let musicATag;
+            let deleteButton;
+            observe.override_content = subObj.override_content;
+            while (userObservancesMusicsEditor.firstChild) {
+              userObservancesMusicsEditor.removeChild(userObservancesMusicsEditor.firstChild);
+            }
+            if (observe.override_content !== null) {
+              if (observe.override_content.sources !== undefined) {
+                for (let i = 0; i < observe.override_content.sources.length; i++) {
+                  if (observe.override_content.sources[i] === 'bandcamp') {
+                    musicPlayer = document.createElement('iframe');
+                    userObservancesMusicsEditor.appendChild(musicPlayer);
+                    musicPlayer.setAttribute("style", "border: 0; width: 100%; height: 650px;");
+                    musicPlayer.seamless = true;
+                    musicPlayer.src = observe.override_content.src_strings[i];
+                    musicATag = document.createElement('a');
+                    musicPlayer.appendChild(musicATag);
+                    musicATag.href = observe.override_content.href_strings[i];
+                    musicATag.innerHTML = observe.override_content.a_strings[i];
+                    deleteButton = document.createElement('a');
+                    userObservancesMusicsEditor.appendChild(deleteButton);
+                    deleteButton.className = 'btn';
+                    deleteButton.innerHTML = 'delete';
+                    deleteButton.setAttribute("style", "cursor: pointer; margin-bottom: 1em; margin-top: 0;");
+                    observeMusicDeleteListen(deleteButton, observe, i, userObservancesMusicsEditor);
+                  }
+                }
+              }
+            }
+          });
+        });
+      }
+
+      function editObservance(observeId) {
+        let userObservancesEditorDiv = document.getElementById('userObservancesEditorDiv');
+        let observancesManagerDone = document.getElementById('observancesManagerDone');
+        let userObservancesNameField = document.getElementById('userObservancesNameField');
+        let userObservancesName = document.getElementById('userObservancesName');
+        if (userObservancesName) {
+          userObservancesName.parentNode.removeChild(userObservancesName);
+          userObservancesName = document.createElement('textarea');
+          userObservancesNameField.appendChild(userObservancesName);
+          userObservancesName.id = 'userObservancesName';
+          userObservancesName.className = 'pure-input-1';
+          userObservancesName.rows = '5';
+        }
+        let userObservancesEditorPhoto = document.getElementById('userObservancesEditorPhoto');
+        let userObservancesImageEditorField = document.getElementById('userObservancesImageEditorField');
+        let observancesImageURL = document.getElementById('observancesImageURL');
+        if (observancesImageURL) {
+          observancesImageURL.parentNode.removeChild(observancesImageURL);
+          observancesImageURL = document.createElement('input');
+          userObservancesImageEditorField.appendChild(observancesImageURL);
+          observancesImageURL.id = 'observancesImageURL';
+          observancesImageURL.type = 'text';
+          observancesImageURL.className = 'pure-input-1';
+        }
+        let observancesImageLinkUpload = document.getElementById('observancesImageLinkUpload');
+        if (observancesImageLinkUpload) {
+          observancesImageLinkUpload.parentNode.removeChild(observancesImageLinkUpload);
+          observancesImageLinkUpload = document.createElement('a');
+          userObservancesImageEditorField.appendChild(observancesImageLinkUpload);
+          observancesImageLinkUpload.id = 'observancesImageLinkUpload';
+          observancesImageLinkUpload.className = 'btn';
+          observancesImageLinkUpload.innerHTML = 'upload';
+          observancesImageLinkUpload.setAttribute("style", "cursor: pointer;");
+        }
+        let userObservancesImageUploadCentre = document.getElementById('userObservancesImageUploadCentre');
+        userObservancesImageUploadCentre.setAttribute("style", "visibility: hidden;");
+        let userUploadObservancesPhotoConfirm = document.getElementById('userUploadObservancesPhotoConfirm');
+        if (userUploadObservancesPhotoConfirm) {
+          userUploadObservancesPhotoConfirm.parentNode.removeChild(userUploadObservancesPhotoConfirm);
+          userUploadObservancesPhotoConfirm = document.createElement('a');
+          userObservancesImageUploadCentre.appendChild(userUploadObservancesPhotoConfirm);
+          userUploadObservancesPhotoConfirm.id = 'userUploadObservancesPhotoConfirm';
+          userUploadObservancesPhotoConfirm.className = 'btn';
+          userUploadObservancesPhotoConfirm.innerHTML = 'confirm';
+          userUploadObservancesPhotoConfirm.setAttribute("style", "cursor: pointer;");
+        }
+        let userUploadObservancesPhotoCancel = document.getElementById('userUploadObservancesPhotoCancel');
+        if (userUploadObservancesPhotoCancel) {
+          userUploadObservancesPhotoCancel.parentNode.removeChild(userUploadObservancesPhotoCancel);
+          userUploadObservancesPhotoCancel = document.createElement('a');
+          userObservancesImageUploadCentre.appendChild(userUploadObservancesPhotoCancel);
+          userUploadObservancesPhotoCancel.id = 'userUploadObservancesPhotoCancel';
+          userUploadObservancesPhotoCancel.className = 'btn';
+          userUploadObservancesPhotoCancel.innerHTML = 'cancel';
+          userUploadObservancesPhotoCancel.setAttribute("style", "cursor: pointer;");
+        }
+        let userObservancesColorPicker = document.getElementById('userObservancesColorPicker');
+        let userObservancesColorSelector = document.getElementById('userObservancesColorSelector');
+        if (userObservancesColorSelector) {
+          userObservancesColorSelector.parentNode.removeChild(userObservancesColorSelector);
+          userObservancesColorSelector = document.createElement('input');
+          userObservancesColorPicker.appendChild(userObservancesColorSelector);
+          userObservancesColorSelector.id = 'userObservancesColorSelector';
+          userObservancesColorSelector.type = 'color';
+          userObservancesColorSelector.className = 'pure-input-1';
+          // userObservancesColorSelector.setAttribute("style", "margin-left: 5em; height: 2em; width: 3em; cursor: pointer;");
+        }
+        let userObservancesEditorBar = document.getElementById('userObservancesEditorBar');
+        let userObservancesEditorForm = document.getElementById('userObservancesEditorForm');
+        let userObservancesAnnualCheckboxDiv = document.getElementById('userObservancesAnnualCheckboxDiv');
+        let userObservancesAnnuality = document.getElementById('userObservancesAnnuality');
+        if (userObservancesAnnuality) {
+          userObservancesAnnuality.parentNode.removeChild(userObservancesAnnuality);
+          userObservancesAnnuality = document.createElement('input');
+          userObservancesAnnualCheckboxDiv.appendChild(userObservancesAnnuality);
+          userObservancesAnnuality.id = 'userObservancesAnnuality';
+          userObservancesAnnuality.type = 'checkbox';
+        }
+        let userObservancesDateField = document.getElementById('userObservancesDateField');
+        let userObservancesDate = document.getElementById('userObservancesDate');
+        if (userObservancesDate) {
+          userObservancesDate.parentNode.removeChild(userObservancesDate);
+          userObservancesDate = document.createElement('input');
+          userObservancesDateField.appendChild(userObservancesDate);
+          userObservancesDate.id = 'userObservancesDate';
+          userObservancesDate.type = 'date';
+          userObservancesDate.className = 'pure-input-1';
+        }
+        let observancesOverrideCheckbox = document.getElementById('observancesOverrideCheckbox');
+        let userObservancesHasArtContent = document.getElementById('userObservancesHasArtContent');
+        if (userObservancesHasArtContent) {
+          userObservancesHasArtContent.parentNode.removeChild(userObservancesHasArtContent);
+          userObservancesHasArtContent = document.createElement('input');
+          observancesOverrideCheckbox.appendChild(userObservancesHasArtContent);
+          userObservancesHasArtContent.id = 'userObservancesHasArtContent';
+          userObservancesHasArtContent.type = 'checkbox';
+        }
+        let userObservancesArtContent = document.getElementById('userObservancesArtContent');
+        let picture;
+        let userObservancesArtsEditor = document.getElementById('userObservancesArtsEditor');
+        let deleteButton;
+        let artist;
+        let title;
+        let year;
+        let userObservancesDivHolderForAddButton = document.getElementById('userObservancesDivHolderForAddButton');
+        let userAddObservancesArt = document.getElementById('userAddObservancesArt');
+        if (userAddObservancesArt) {
+          userAddObservancesArt.parentNode.removeChild(userAddObservancesArt);
+          userAddObservancesArt = document.createElement('button');
+          userObservancesDivHolderForAddButton.appendChild(userAddObservancesArt);
+          userAddObservancesArt.id = 'userAddObservancesArt';
+          userAddObservancesArt.innerHTML = 'add new';
+        }
+        let observancesArtAdder = document.getElementById('observancesArtAdder');
+        observancesArtAdder.setAttribute("style", "display: none;");
+        let userObservancesArtAdditionDiv = document.getElementById('userObservancesArtAdditionDiv');
+        let userObservanceArtAddDone = document.getElementById('userObservanceArtAddDone');
+        if (userObservanceArtAddDone) {
+          userObservanceArtAddDone.parentNode.removeChild(userObservanceArtAddDone);
+          userObservanceArtAddDone = document.createElement('a');
+          userObservancesArtAdditionDiv.appendChild(userObservanceArtAddDone);
+          userObservanceArtAddDone.id = 'userObservanceArtAddDone';
+          userObservanceArtAddDone.className = 'btn';
+          userObservanceArtAddDone.innerHTML = 'done';
+          userObservanceArtAddDone.setAttribute("style", "cursor: pointer;");
+        }
+        let userObservancesArtAddImagePane = document.getElementById('userObservancesArtAddImagePane');
+        if (userObservancesArtAddImagePane) {
+          userObservancesArtAddImagePane.parentNode.removeChild(userObservancesArtAddImagePane);
+          userObservancesArtAddImagePane = document.createElement('img');
+          userObservancesArtAdditionDiv.appendChild(userObservancesArtAddImagePane);
+          userObservancesArtAddImagePane.id = 'userObservancesArtAddImagePane';
+        }
+        let userObservanceArtAddImageURL = document.getElementById('userObservanceArtAddImageURL');
+        if (userObservanceArtAddImageURL) {
+          userObservanceArtAddImageURL.parentNode.removeChild(userObservanceArtAddImageURL);
+          userObservanceArtAddImageURL = document.createElement('input');
+          userObservancesArtAdditionDiv.appendChild(userObservanceArtAddImageURL);
+          userObservanceArtAddImageURL.id = 'userObservanceArtAddImageURL';
+          userObservanceArtAddImageURL.type = 'text';
+          userObservanceArtAddImageURL.className = 'pure-input-1';
+        }
+        let userObservanceArtAddUploaderButton = document.getElementById('userObservanceArtAddUploaderButton');
+        if (userObservanceArtAddUploaderButton) {
+          userObservanceArtAddUploaderButton.parentNode.removeChild(userObservanceArtAddUploaderButton);
+          userObservanceArtAddUploaderButton = document.createElement('a');
+          userObservancesArtAdditionDiv.appendChild(userObservanceArtAddUploaderButton);
+          userObservanceArtAddUploaderButton.id = 'userObservanceArtAddUploaderButton';
+          userObservanceArtAddUploaderButton.className = 'btn';
+          userObservanceArtAddUploaderButton.innerHTML = 'upload';
+          userObservanceArtAddUploaderButton.setAttribute("style", "cursor: pointer;");
+        }
+        let observancesArtImageUploaderDiv = document.getElementById('observancesArtImageUploaderDiv');
+        observancesArtImageUploaderDiv.setAttribute("style", "visibility: hidden;");
+        let observancesArtFileUpload = document.getElementById('observancesArtFileUpload');
+        if (observancesArtFileUpload) {
+          observancesArtFileUpload.parentNode.removeChild(observancesArtFileUpload);
+          observancesArtFileUpload = document.createElement('input');
+          observancesArtImageUploaderDiv.appendChild(observancesArtFileUpload);
+          observancesArtFileUpload.type = 'file';
+          observancesArtFileUpload.id = 'observancesArtFileUpload';
+          observancesArtFileUpload.setAttribute("style", "margin-left: 3em;");
+        }
+        let observancesArtUploaderSubmit = document.getElementById('observancesArtUploaderSubmit');
+        if (observancesArtUploaderSubmit) {
+          observancesArtUploaderSubmit.parentNode.removeChild(observancesArtUploaderSubmit);
+          observancesArtUploaderSubmit = document.createElement('a');
+          observancesArtImageUploaderDiv.appendChild(observancesArtUploaderSubmit);
+          observancesArtUploaderSubmit.id = 'observancesArtUploaderSubmit';
+          observancesArtUploaderSubmit.className = 'btn';
+          observancesArtUploaderSubmit.setAttribute("style", "cursor: pointer;");
+          observancesArtUploaderSubmit.innerHTML = 'submit';
+        }
+        let observancesArtUploaderCancel = document.getElementById('observancesArtUploaderCancel');
+        if (observancesArtUploaderCancel) {
+          observancesArtUploaderCancel.parentNode.removeChild(observancesArtUploaderCancel);
+          observancesArtUploaderCancel = document.createElement('a');
+          observancesArtImageUploaderDiv.appendChild(observancesArtUploaderCancel);
+          observancesArtUploaderCancel.id = 'observancesArtUploaderCancel';
+          observancesArtUploaderCancel.className = 'btn';
+          observancesArtUploaderCancel.setAttribute("style", "cursor: pointer;");
+          observancesArtUploaderCancel.innerHTML = 'cancel';
+        }
+        let observanceArtAddArtist = document.getElementById('observanceArtAddArtist');
+        let observancesArtAddTitle = document.getElementById('observancesArtAddTitle');
+        let observancesArtAdderYear = document.getElementById('observancesArtAdderYear');
+        let userObservancesMusicOverrideCheckDiv = document.getElementById('userObservancesMusicOverrideCheckDiv');
+        let userObservancesHasMusicContent = document.getElementById('userObservancesHasMusicContent');
+        if (userObservancesHasMusicContent) {
+          userObservancesHasMusicContent.parentNode.removeChild(userObservancesHasMusicContent);
+          userObservancesHasMusicContent = document.createElement('input');
+          userObservancesMusicOverrideCheckDiv.appendChild(userObservancesHasMusicContent);
+          userObservancesHasMusicContent.id = 'userObservancesHasMusicContent';
+          userObservancesHasMusicContent.type = 'checkbox';
+
+        }
+        let userObservancesMusicContent = document.getElementById('userObservancesMusicContent');
+        let userObservancesMusicsEditor = document.getElementById('userObservancesMusicsEditor');
+        let musicPlayer;
+        let musicATag;
+        let userObservancesMusicAddButtonDiv = document.getElementById('userObservancesMusicAddButtonDiv');
+        let userAddObservancesMusic = document.getElementById('userAddObservancesMusic');
+        if (userAddObservancesMusic) {
+          userAddObservancesMusic.parentNode.removeChild(userAddObservancesMusic);
+          userAddObservancesMusic = document.createElement('button');
+          userObservancesMusicAddButtonDiv.appendChild(userAddObservancesMusic);
+          userAddObservancesMusic.id = 'userAddObservancesMusic';
+          userAddObservancesMusic.innerHTML = 'add new';
+        }
+        let userObservancesMusicAddingForm = document.getElementById('userObservancesMusicAddingForm');
+        userObservancesMusicAddingForm.setAttribute("style", "visibility: hidden;");
+        let userObservancesMusicAddSubmit = document.getElementById('userObservancesMusicAddSubmit');
+        if (userObservancesMusicAddSubmit) {
+          userObservancesMusicAddSubmit.parentNode.removeChild(userObservancesMusicAddSubmit);
+          userObservancesMusicAddSubmit = document.createElement('a');
+          userObservancesMusicAddingForm.appendChild(userObservancesMusicAddSubmit);
+          userObservancesMusicAddSubmit.id = 'userObservancesMusicAddSubmit';
+          userObservancesMusicAddSubmit.className = 'btn';
+          userObservancesMusicAddSubmit.setAttribute("style", "cursor: pointer;");
+          userObservancesMusicAddSubmit.innerHTML = 'submit';
+        }
+        let userObservancesMusicAddCancel = document.getElementById('userObservancesMusicAddCancel');
+        if (userObservancesMusicAddCancel) {
+          userObservancesMusicAddCancel.parentNode.removeChild(userObservancesMusicAddCancel);
+          userObservancesMusicAddCancel = document.createElement('a');
+          userObservancesMusicAddingForm.appendChild(userObservancesMusicAddCancel);
+          userObservancesMusicAddCancel.id = 'userObservancesMusicAddCancel';
+          userObservancesMusicAddCancel.className = 'btn';
+          userObservancesMusicAddCancel.setAttribute("style", "cursor: pointer;");
+          userObservancesMusicAddCancel.innerHTML = 'cancel';
+        }
+        let userObservancesBandcampSubmissionString = document.getElementById('userObservancesBandcampSubmissionString');
+        let userObservancesMusicAddErrorMessage = document.getElementById('userObservancesMusicAddErrorMessage');
+
+
+        $http.get(`/observances/${observeId}`)
+        .then(observeData=>{
+          let observe = observeData.data;
+          userObservancesName.value = observe.name;
+          userObservancesEditorPhoto.src = observe.picture;
+          observancesImageURL.value = observe.picture;
+          userObservancesColorSelector.value = observe.color;
+          userObservancesEditorBar.setAttribute("style", "background: " + observe.color + "; background-color: -webkit-linear-gradient(-135deg, " + observe.color + ", #FBFBF3); background: -o-linear-gradient(-135deg," + observe.color + ", #FBFBF3); background: -moz-linear-gradient(-135deg, " + observe.color + ", #FBFBF3); background: linear-gradient(-135deg, " + observe.color + ", #FBFBF3);");
+          userObservancesEditorForm.setAttribute("style", "background: " + observe.color + "; background-color: -webkit-linear-gradient(135deg, " + observe.color + ", #FBFBF3); background: -o-linear-gradient(135deg," + observe.color + ", #FBFBF3); background: -moz-linear-gradient(135deg, " + observe.color + ", #FBFBF3); background: linear-gradient(135deg, " + observe.color + ", #FBFBF3);");
+          userAddObservancesArt.setAttribute("style", "background: " + observe.color + "; background-color: -webkit-linear-gradient(135deg, " + observe.color + ", #FBFBF3); background: -o-linear-gradient(135deg," + observe.color + ", #FBFBF3); background: -moz-linear-gradient(135deg, " + observe.color + ", #FBFBF3); background: linear-gradient(135deg, " + observe.color + ", #FBFBF3);");
+          userAddObservancesMusic.setAttribute("style", "background: " + observe.color + "; background-color: -webkit-linear-gradient(135deg, " + observe.color + ", #FBFBF3); background: -o-linear-gradient(135deg," + observe.color + ", #FBFBF3); background: -moz-linear-gradient(135deg, " + observe.color + ", #FBFBF3); background: linear-gradient(135deg, " + observe.color + ", #FBFBF3);");
+          userObservancesAnnuality.checked = observe.is_annual;
+          userObservancesDate.value = observe.day_of.slice(0, 10);
+          userObservancesHasArtContent.checked = observe.art_override;
+          if (userObservancesHasArtContent.checked) {
+            userObservancesArtContent.setAttribute("style", "display: inital;");
+          } else {
+            userObservancesArtContent.setAttribute("style", "display: none;");
+          }
+          while(userObservancesArtsEditor.firstChild) {
+            userObservancesArtsEditor.removeChild(userObservancesArtsEditor.firstChild);
+          }
+          if (observe.override_content !== null) {
+            if (observe.override_content.img_paths !== undefined) {
+              if (observe.override_content.img_paths.length > 0) {
+                while(userObservancesArtsEditor.firstChild) {
+                  userObservancesArtsEditor.removeChild(userObservancesArtsEditor.firstChild);
+                }
+                for (let i = 0; i < observe.override_content.img_paths.length; i++) {
+                  picture = document.createElement('img');
+                  userObservancesArtsEditor.appendChild(picture);
+                  picture.src = observe.override_content.img_paths[i];
+                  deleteButton = document.createElement('a');
+                  userObservancesArtsEditor.appendChild(deleteButton);
+                  deleteButton.className = 'btn';
+                  deleteButton.innerHTML = 'delete';
+                  deleteButton.setAttribute("style", "cursor: pointer;");
+                  observeArtDeleteListen(deleteButton, observe, i, userObservancesArtsEditor);
+                  artist = document.createElement('input');
+                  userObservancesArtsEditor.appendChild(artist);
+                  artist.type = 'text';
+                  artist.className = "pure-input-1";
+                  artist.value = observe.override_content.artists[i];
+                  observeArtistListen(artist, observe, i);
+                  title = document.createElement('input');
+                  userObservancesArtsEditor.appendChild(title);
+                  title.type = 'text';
+                  title.className = 'pure-input-1';
+                  title.value = observe.override_content.titles[i];
+                  observeTitleListen(title, observe, i);
+                  year = document.createElement('input');
+                  userObservancesArtsEditor.appendChild(year);
+                  year.type = 'text';
+                  year.className = 'pure-input-1';
+                  year.value = observe.override_content.years[i];
+                  observeYearListen(year, observe, i);
+                }
+              }
+            }
+          }
+          userObservancesHasMusicContent.checked = observe.music_override;
+          if (userObservancesHasMusicContent.checked) {
+            userObservancesMusicContent.setAttribute("style", "display: initial;");
+          } else {
+            userObservancesMusicContent.setAttribute("style", "display: none;");
+          }
+          while (userObservancesMusicsEditor.firstChild) {
+            userObservancesMusicsEditor.removeChild(userObservancesMusicsEditor.firstChild);
+          }
+          if (observe.override_content !== null) {
+            if (observe.override_content.sources !== undefined) {
+              for (let i = 0; i < observe.override_content.sources.length; i++) {
+                if (observe.override_content.sources[i] === 'bandcamp') {
+                  musicPlayer = document.createElement('iframe');
+                  userObservancesMusicsEditor.appendChild(musicPlayer);
+                  musicPlayer.setAttribute("style", "border: 0; width: 100%; height: 650px;");
+                  musicPlayer.seamless = true;
+                  musicPlayer.src = observe.override_content.src_strings[i];
+                  musicATag = document.createElement('a');
+                  musicPlayer.appendChild(musicATag);
+                  musicATag.href = observe.override_content.href_strings[i];
+                  musicATag.innerHTML = observe.override_content.a_strings[i];
+                  deleteButton = document.createElement('a');
+                  userObservancesMusicsEditor.appendChild(deleteButton);
+                  deleteButton.className = 'btn';
+                  deleteButton.innerHTML = 'delete';
+                  deleteButton.setAttribute("style", "cursor: pointer; margin-bottom: 1em; margin-top: 0;");
+                  observeMusicDeleteListen(deleteButton, observe, i, userObservancesMusicsEditor);
+                }
+              }
+            }
+          }
+
+
+          userObservancesName.addEventListener('focusout', ()=>{
+            if ((userObservancesName.value !== observe.name) && (userObservancesName.value !== '')) {
+              let subObj = {
+                name: userObservancesName.value
+              };
+              $http.patch(`/observances/${observeId}`, subObj)
+              .then(()=>{
+                observe.name = userObservancesName.value;
+              });
+            }
+
+          });
+          observancesImageURL.addEventListener('focusout', ()=>{
+            if ((observancesImageURL.value !== observe.picture) && (observancesImageURL.value !== '')) {
+              userObservancesEditorPhoto.src = observancesImageURL.value;
+              let subObj = {
+                picture: observancesImageURL.value
+              };
+              $http.patch(`/observances/${observeId}`, subObj)
+              .then(()=>{
+                observe.picture = observancesImageURL.value;
+              });
+            }
+          });
+          observancesImageLinkUpload.addEventListener('click', ()=>{
+            userObservancesImageUploadCentre.setAttribute("style", "visibility: visible;");
+            observancesImageLinkUpload.setAttribute("style", "visibility: hidden;");
+          });
+          userUploadObservancesPhotoConfirm.addEventListener('click', ()=>{
+            userObservancesImageUploadCentre.setAttribute("style", "visibility: hidden;");
+            observancesImageLinkUpload.setAttribute("style", "visibility: visible;");
+          });
+          userUploadObservancesPhotoCancel.addEventListener('click', ()=>{
+            userObservancesImageUploadCentre.setAttribute("style", "visibility: hidden;");
+            observancesImageLinkUpload.setAttribute("style", "visibility: visible;");
+          });
+          userObservancesColorSelector.addEventListener('change', ()=>{
+            if (userObservancesColorSelector.value !== observe.color) {
+              let subObj = {
+                color: userObservancesColorSelector.value
+              };
+              $http.patch(`/observances/${observeId}`, subObj)
+              .then(()=>{
+                observe.color = userObservancesColorSelector.value;
+                userObservancesEditorBar.setAttribute("style", "background: " + observe.color + "; background-color: -webkit-linear-gradient(-135deg, " + observe.color + ", #FBFBF3); background: -o-linear-gradient(-135deg," + observe.color + ", #FBFBF3); background: -moz-linear-gradient(-135deg, " + observe.color + ", #FBFBF3); background: linear-gradient(-135deg, " + observe.color + ", #FBFBF3);");
+                userObservancesEditorForm.setAttribute("style", "background: " + observe.color + "; background-color: -webkit-linear-gradient(135deg, " + observe.color + ", #FBFBF3); background: -o-linear-gradient(135deg," + observe.color + ", #FBFBF3); background: -moz-linear-gradient(135deg, " + observe.color + ", #FBFBF3); background: linear-gradient(135deg, " + observe.color + ", #FBFBF3);");
+                userAddObservancesArt.setAttribute("style", "background: " + observe.color + "; background-color: -webkit-linear-gradient(135deg, " + observe.color + ", #FBFBF3); background: -o-linear-gradient(135deg," + observe.color + ", #FBFBF3); background: -moz-linear-gradient(135deg, " + observe.color + ", #FBFBF3); background: linear-gradient(135deg, " + observe.color + ", #FBFBF3);");
+                userAddObservancesMusic.setAttribute("style", "background: " + observe.color + "; background-color: -webkit-linear-gradient(135deg, " + observe.color + ", #FBFBF3); background: -o-linear-gradient(135deg," + observe.color + ", #FBFBF3); background: -moz-linear-gradient(135deg, " + observe.color + ", #FBFBF3); background: linear-gradient(135deg, " + observe.color + ", #FBFBF3);");
+              });
+            }
+          });
+          userObservancesAnnuality.addEventListener('click', ()=>{
+            if (userObservancesAnnuality.checked !== observe.is_annual) {
+              let subObj = {
+                is_annual: userObservancesAnnuality.checked
+              };
+              $http.patch(`/observances/${observeId}`, subObj)
+              .then(()=>{
+                observe.is_annual = userObservancesAnnuality.checked;
+              });
+            }
+          });
+          userObservancesDate.addEventListener('change', ()=>{
+            let subObj = {
+              day_of: new Date(userObservancesDate.value)
+            };
+            $http.patch(`/observances/${observeId}`, subObj)
+            .then(()=>{
+              observe.day_of = new Date(userObservancesDate.value);
+            });
+          });
+          userObservancesHasArtContent.addEventListener('click', ()=>{
+            if (userObservancesHasArtContent.checked) {
+              userObservancesArtContent.setAttribute("style", "display: inital;");
+              if (observe.override_content !== null) {
+                if (observe.override_content.img_paths !== null) {
+                  if (observe.override_content.img_paths.length > 0) {
+                    while(userObservancesArtsEditor.firstChild) {
+                      userObservancesArtsEditor.removeChild(userObservancesArtsEditor.firstChild);
+                    }
+                    for (let i = 0; i < observe.override_content.img_paths.length; i++) {
+                      picture = document.createElement('img');
+                      userObservancesArtsEditor.appendChild(picture);
+                      picture.src = observe.override_content.img_paths[i];
+                      deleteButton = document.createElement('a');
+                      userObservancesArtsEditor.appendChild(deleteButton);
+                      deleteButton.className = 'btn';
+                      deleteButton.innerHTML = 'delete';
+                      deleteButton.setAttribute("style", "cursor: pointer;");
+                      observeArtDeleteListen(deleteButton, observe, i, userObservancesArtsEditor);
+                      artist = document.createElement('input');
+                      userObservancesArtsEditor.appendChild(artist);
+                      artist.type = 'text';
+                      artist.className = "pure-input-1";
+                      artist.value = observe.override_content.artists[i];
+                      observeArtistListen(artist, observe, i);
+                      title = document.createElement('input');
+                      userObservancesArtsEditor.appendChild(title);
+                      title.type = 'text';
+                      title.className = 'pure-input-1';
+                      title.value = observe.override_content.titles[i];
+                      observeTitleListen(title, observe, i);
+                      year = document.createElement('input');
+                      userObservancesArtsEditor.appendChild(year);
+                      year.type = 'text';
+                      year.className = 'pure-input-1';
+                      year.value = observe.override_content.years[i];
+                      //TODO write observeYearListen function
+                      observeYearListen(year, observe, i);
+                    }
+                  }
+                }
+              }
+            } else {
+              userObservancesArtContent.setAttribute("style", "display: none;");
+            }
+            let subObj = {
+              art_override: userObservancesHasArtContent.checked
+            };
+            $http.patch(`/observances/${observeId}`, subObj)
+            .then(()=>{
+              observe.art_override = subObj.art_override;
+            });
+          });
+          userAddObservancesArt.addEventListener('click', ()=>{
+            userAddObservancesArt.setAttribute("style", "visibility: hidden;");
+            observancesArtAdder.setAttribute("style", "visibility: visible;");
+          });
+          userObservanceArtAddDone.addEventListener('click', ()=>{
+            if (userObservanceArtAddImageURL.value !== '') {
+              if (observe.override_content === null) {
+                observe.override_content = {};
+                observe.override_content.img_paths = [];
+                observe.override_content.artists = [];
+                observe.override_content.titles = [];
+                observe.override_content.years = [];
+              }
+              let subObj = {
+                override_content: observe.override_content
+              };
+              if (subObj.override_content.img_paths === undefined) {
+                subObj.override_content.img_paths = [];
+              }
+              subObj.override_content.img_paths.push(userObservanceArtAddImageURL.value);
+              if (subObj.override_content.artists === undefined) {
+                subObj.override_content.artists = [];
+              }
+              subObj.override_content.artists.push(observanceArtAddArtist.value);
+              if (subObj.override_content.titles === undefined) {
+                subObj.override_content.titles = [];
+              }
+              subObj.override_content.titles.push(observancesArtAddTitle.value);
+              if (subObj.override_content.years === undefined) {
+                subObj.override_content.years = [];
+              }
+              subObj.override_content.years.push(observancesArtAdderYear.value);
+              $http.patch(`/observances/${observeId}`, subObj)
+              .then(()=>{
+                observe.override_content = subObj.override_content;
+                userObservanceArtAddImageURL.value = '';
+                observanceArtAddArtist.value = '';
+                observancesArtAddTitle.value = '';
+                observancesArtAdderYear.value = '';
+                if (observe.override_content.img_paths.length > 0) {
+                  while(userObservancesArtsEditor.firstChild) {
+                    userObservancesArtsEditor.removeChild(userObservancesArtsEditor.firstChild);
+                  }
+                  for (let i = 0; i < observe.override_content.img_paths.length; i++) {
+                    picture = document.createElement('img');
+                    userObservancesArtsEditor.appendChild(picture);
+                    picture.src = observe.override_content.img_paths[i];
+                    deleteButton = document.createElement('a');
+                    userObservancesArtsEditor.appendChild(deleteButton);
+                    deleteButton.className = 'btn';
+                    deleteButton.innerHTML = 'delete';
+                    deleteButton.setAttribute("style", "cursor: pointer;");
+                    observeArtDeleteListen(deleteButton, observe, i, userObservancesArtsEditor);
+                    artist = document.createElement('input');
+                    userObservancesArtsEditor.appendChild(artist);
+                    artist.type = 'text';
+                    artist.className = "pure-input-1";
+                    artist.value = observe.override_content.artists[i];
+                    observeArtistListen(artist, observe, i);
+                    title = document.createElement('input');
+                    userObservancesArtsEditor.appendChild(title);
+                    title.type = 'text';
+                    title.className = 'pure-input-1';
+                    title.value = observe.override_content.titles[i];
+                    observeTitleListen(title, observe, i);
+                    year = document.createElement('input');
+                    userObservancesArtsEditor.appendChild(year);
+                    year.type = 'text';
+                    year.className = 'pure-input-1';
+                    year.value = observe.override_content.years[i];
+                    observeYearListen(year, observe, i);
+                  }
+                }
+              });
+            } else {
+              userObservanceArtAddImageURL.value = '';
+              observanceArtAddArtist.value = '';
+              observancesArtAddTitle.value = '';
+              observancesArtAdderYear.value = '';
+            }
+            userAddObservancesArt.setAttribute("style", "visibility: visible;");
+            observancesArtAdder.setAttribute("style", "visibility: hidden;");
+
+          });
+          userObservanceArtAddImageURL.addEventListener('focusout', ()=>{
+            if (userObservanceArtAddImageURL.value !== '') {
+              userObservancesArtAddImagePane.src = userObservanceArtAddImageURL.value;
+            }
+          });
+          userObservanceArtAddUploaderButton.addEventListener('click', ()=>{
+            userObservanceArtAddUploaderButton.setAttribute("style", "visibility: hidden;");
+            observancesArtImageUploaderDiv.setAttribute("style", "visibility: visible;");
+          });
+          observancesArtUploaderSubmit.addEventListener('click', ()=>{
+            observancesArtImageUploaderDiv.setAttribute("style", "visibility: hidden;");
+            userObservanceArtAddUploaderButton.setAttribute("style", "visibility: visible;");
+          });
+          observancesArtUploaderCancel.addEventListener('click', ()=>{
+            observancesArtImageUploaderDiv.setAttribute("style", "visibility: hidden;");
+            userObservanceArtAddUploaderButton.setAttribute("style", "visibility: visible;");
+          });
+          userObservancesHasMusicContent.addEventListener('click', ()=>{
+            if (userObservancesHasMusicContent.checked) {
+              userObservancesMusicContent.setAttribute("style", "display: initial;");
+              while (userObservancesMusicsEditor.firstChild) {
+                userObservancesMusicsEditor.removeChild(userObservancesMusicsEditor.firstChild);
+              }
+              if (observe.override_content !== null) {
+                if (observe.override_content.sources !== undefined) {
+                  for (let i = 0; i < observe.override_content.sources.length; i++) {
+                    if (observe.override_content.sources[i] === 'bandcamp') {
+                      musicPlayer = document.createElement('iframe');
+                      userObservancesMusicsEditor.appendChild(musicPlayer);
+                      musicPlayer.setAttribute("style", "border: 0; width: 100%; height: 650px;");
+                      musicPlayer.seamless = true;
+                      musicPlayer.src = observe.override_content.src_strings[i];
+                      musicATag = document.createElement('a');
+                      musicPlayer.appendChild(musicATag);
+                      musicATag.href = observe.override_content.href_strings[i];
+                      musicATag.innerHTML = observe.override_content.a_strings[i];
+                      deleteButton = document.createElement('a');
+                      userObservancesMusicsEditor.appendChild(deleteButton);
+                      deleteButton.className = 'btn';
+                      deleteButton.innerHTML = 'delete';
+                      deleteButton.setAttribute("style", "cursor: pointer; margin-bottom: 1em; margin-top: 0;");
+                      observeMusicDeleteListen(deleteButton, observe, i, userObservancesMusicsEditor);
+                    }
+                  }
+                }
+              }
+            } else {
+              userObservancesMusicContent.setAttribute("style", "display: none;");
+            }
+            let subObj = {
+              music_override: userObservancesHasMusicContent.checked
+            }
+            $http.patch(`/observances/${observeId}`, subObj)
+            .then(()=>{
+              observe.music_override = subObj.music_override;
+            });
+          });
+          userAddObservancesMusic.addEventListener('click', ()=>{
+            userAddObservancesMusic.setAttribute("style", "visibility: hidden;");
+            userObservancesMusicAddingForm.setAttribute("style", "visibility: visible;");
+          });
+          userObservancesMusicAddSubmit.addEventListener('click', ()=>{
+            if (checkValidBancampEmbed(userObservancesBandcampSubmissionString.value)) {
+              let subObj = {
+                override_content: observe.override_content
+              };
+              if (subObj.override_content === null) {
+                subObj.override_content = {};
+              }
+              if (subObj.override_content.sources === undefined) {
+                subObj.override_content.sources = [];
+                subObj.override_content.src_strings = [];
+                subObj.override_content.href_strings = [];
+                subObj.override_content.a_strings = [];
+              }
+              let index = subObj.override_content.sources.length;
+              subObj.override_content.sources[index] = 'bandcamp';
+              subObj.override_content.src_strings[index] = extractSrcStringFromBandcampEmbed(userObservancesBandcampSubmissionString.value);
+              subObj.override_content.href_strings[index] = extractHrefStringFromBandcampEmbed(userObservancesBandcampSubmissionString.value);
+              subObj.override_content.a_strings[index] = extractATagFromBandcampEmbed(userObservancesBandcampSubmissionString.value);
+              $http.patch(`/observances/${observeId}`, subObj)
+              .then(()=>{
+                observe.override_content = subObj.override_content;
+                //populateHolidayMusicEditor(userHolidayMusicsEditor, userHoliday);
+                while (userObservancesMusicsEditor.firstChild) {
+                  userObservancesMusicsEditor.removeChild(userObservancesMusicsEditor.firstChild);
+                }
+                if (observe.override_content !== null) {
+                  if (observe.override_content.sources !== undefined) {
+                    for (let i = 0; i < observe.override_content.sources.length; i++) {
+                      if (observe.override_content.sources[i] === 'bandcamp') {
+                        musicPlayer = document.createElement('iframe');
+                        userObservancesMusicsEditor.appendChild(musicPlayer);
+                        musicPlayer.setAttribute("style", "border: 0; width: 100%; height: 650px;");
+                        musicPlayer.seamless = true;
+                        musicPlayer.src = observe.override_content.src_strings[i];
+                        musicATag = document.createElement('a');
+                        musicPlayer.appendChild(musicATag);
+                        musicATag.href = observe.override_content.href_strings[i];
+                        musicATag.innerHTML = observe.override_content.a_strings[i];
+                        deleteButton = document.createElement('a');
+                        userObservancesMusicsEditor.appendChild(deleteButton);
+                        deleteButton.className = 'btn';
+                        deleteButton.innerHTML = 'delete';
+                        deleteButton.setAttribute("style", "cursor: pointer; margin-bottom: 1em; margin-top: 0;");
+                        observeMusicDeleteListen(deleteButton, observe, i, userObservancesMusicsEditor);
+                      }
+                    }
+                  }
+                }
+                userObservancesMusicAddingForm.setAttribute("style", "visibility: hidden;");
+                userAddObservancesMusic.setAttribute("style", "visibility: visible;");
+                userObservancesBandcampSubmissionString.value = '';
+                userObservancesMusicAddErrorMessage.innerHTML = '';
+              });
+            } else {
+              userObservancesMusicAddErrorMessage.setAttribute("style", "color: #ff0000;");
+              userObservancesMusicAddErrorMessage.innerHTML = "ERROR: Invalid embed link - please try again";
+            }
+
+
+          });
+          userObservancesMusicAddCancel.addEventListener('click', ()=>{
+            userObservancesMusicAddingForm.setAttribute("style", "visibility: hidden;");
+            userAddObservancesMusic.setAttribute("style", "visibility: visible;");
+            userObservancesBandcampSubmissionString.value = '';
+          });
+        });
+
+        userObservancesEditorDiv.setAttribute("style", "display: initial;");
+        observancesManagerDone.setAttribute("style", "visibility: hidden;");
+      }
 
       function displayArts(artTable) {
         let janWeekDays = [ 'janArtMonday', 'janArtTuesday', 'janArtWednesday', 'janArtThursday', 'janArtFriday', 'janArtSaturday', 'janArtSunday'];
