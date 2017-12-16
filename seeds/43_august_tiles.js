@@ -172,6 +172,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#E5DEE5',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 13,
+          user_id: 1,
+          theme: 'primary colors',
+          type: 'week',
+          src_string: '../img/august_tiles/b100704f75ff4c23b79c01bcc56077a9--brugge-primary-colors.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '115%',
+          color_dark: '#051506',
+          color_medium: '#FF304B',
+          color_light: '#CAAB8F',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
