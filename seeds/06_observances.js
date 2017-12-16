@@ -8836,6 +8836,34 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 564,
+          user_id: 1,
+          name: 'Joe Henderson (saxophone), born in 1937',
+          color: '#A97F2B',
+          picture: './img/musicians/joehenderson.jpg',
+          day_of: new Date ('1937-04-24T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 565,
+          user_id: 1,
+          name: 'The rapture occured on this day in 1992 according to Lee Jang Rim (이장림 or 李長林) of the Dami Mission church.',
+          color: '#B8988A',
+          picture: './img/doomsday/damimission.jpg',
+          day_of: new Date ('1992-10-28T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
