@@ -1192,6 +1192,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 67,
+          user_id: 1,
+          theme: 'ethiopia and pan-african',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4244495855/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://lukaproductions.bandcamp.com/album/fasokan',
+          a_string: 'Fasokan by Luka Productions',
+          rule: {
+            "monday": [ 10, 21, 2, 6 ],
+            "tuesday": [ 9, 20, 1, 5 ],
+            "wednesday": [ 8, 19, 30, 2 ],
+            "thursday": [ 7, 18, 29, 1 ],
+            "saturday": [ 11, 22, 3, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 68,
+          user_id: 1,
+          theme: 'ethiopia and pan-african',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3800859858/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sahelsounds.bandcamp.com/album/music-from-saharan-cellphones',
+          a_string: 'Music from Saharan Cellphones by sahelsounds',
+          rule: {
+            "monday": [ 11, 22, 3, 7 ],
+            "tuesday": [ 10, 21, 2, 6 ],
+            "wednesday": [ 9, 20, 1, 5 ],
+            "thursday": [ 8, 19, 30, 2 ],
+            "saturday": [ 7, 18, 29, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 69,
+          user_id: 1,
+          theme: 'ethiopia and pan-african',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1860561171/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://matasunarecords.bandcamp.com/album/liberated-thoughts',
+          a_string: 'Liberated Thoughts by Dem Juju Poets',
+          rule: {
+            "monday": [ 7, 18, 29, 1 ],
+            "tuesday": [ 11, 22, 3, 7 ],
+            "wednesday": [ 10, 21, 2, 6 ],
+            "thursday": [ 9, 20, 1, 5 ],
+            "saturday": [ 8, 19, 30, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
