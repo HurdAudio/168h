@@ -2056,6 +2056,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 115,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2276699715/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://yazzahmed.bandcamp.com/album/la-saboteuse-2',
+          a_string: 'La Saboteuse by Yazz Ahmed',
+          rule: {
+            "monday": [ 19, 25, 31, 9 ],
+            "tuesday": [ 18, 24, 30, 7 ],
+            "wednesday": [ 17, 23, 29, 6 ],
+            "thursday": [ 21, 27, 2, 10 ],
+            "saturday": [ 20, 26, 1, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 116,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1235529255/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tica-douglas-tl.bandcamp.com/album/our-lady-star-of-the-sea-help-and-protect-us',
+          a_string: 'Our Lady Star of the Sea, Help and Protect Us by Tica Douglas',
+          rule: {
+            "monday": [ 20, 26, 1, 9 ],
+            "tuesday": [ 19, 25, 31, 9 ],
+            "wednesday": [ 18, 24, 30, 7 ],
+            "thursday": [ 17, 23, 29, 6 ],
+            "saturday": [ 21, 27, 2, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 117,
+          user_id: 1,
+          theme: 'women\'s history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2967472899/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://kaitlynaureliasmith.bandcamp.com/album/frkwys-vol-13-sunergy',
+          a_string: 'FRKWYS Vol. 13: Sunergy by Kaitlyn Aurelia Smith &amp; Suzanne Ciani',
+          rule: {
+            "monday": [ 21, 27, 2, 10 ],
+            "tuesday": [ 20, 26, 1, 9 ],
+            "wednesday": [ 19, 25, 31, 9 ],
+            "thursday": [ 18, 24, 30, 7 ],
+            "saturday": [ 17, 23, 29, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
