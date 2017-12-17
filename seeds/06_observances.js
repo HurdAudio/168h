@@ -8864,6 +8864,39 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 566,
+          user_id: 1,
+          name: 'David Borden (composer) born in 1938',
+          color: '#1F1924',
+          picture: './img/musicians/davidborden.jpg',
+          day_of: new Date ('1938-12-25T13:44:00.000Z'),
+          is_annual: true,
+          art_override: true,
+          music_override: false,
+          override_content: {
+            "sources": [ 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp' ],
+            "src_strings": [ 'https://bandcamp.com/EmbeddedPlayer/album=3033999816/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=2843949395/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=2785955380/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=1818635318/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/' ],
+            "href_strings": [ 'http://cuneiformrecords.bandcamp.com/album/places-times-people', 'http://cuneiformrecords.bandcamp.com/album/the-continuing-story-of-counterpoint-parts-1-4-8-complete', 'http://cuneiformrecords.bandcamp.com/album/the-continuing-story-of-counterpoint-part-5-8', 'http://cuneiformrecords.bandcamp.com/album/the-continuing-story-of-counterpoint-parts-9-12' ],
+            "a_strings": [ 'Places, Times &amp; People by David Borden', 'The Continuing Story of Counterpoint Parts 1-4+8 (Complete) by David Borden / Mother Mallard', 'The Continuing Story of Counterpoint, Part 5-8 by David Borden / Mother Mallard', 'The Continuing Story of Counterpoint Parts 9-12 by David Borden / Mother Mallard' ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 567,
+          user_id: 1,
+          name: 'The messiah appeared on this day in 1991, ushering in the end of the world according to Russian-born rabbi Menachem Mendel Schneerson.',
+          color: '#13628D',
+          picture: './img/doomsday/Rabbi_Menachem_Mendel_Schneerson2_crop.jpg',
+          day_of: new Date ('1991-09-09T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
