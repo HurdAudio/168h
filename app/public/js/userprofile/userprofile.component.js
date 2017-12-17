@@ -168,6 +168,25 @@
       vm.editObservance = editObservance;
       vm.userObservancesEditorDone = userObservancesEditorDone;
       vm.deleteGoal = deleteGoal;
+      vm.addNewTask = addNewTask;
+
+      function addNewTask() {
+        let checkDate = new Date();
+        let subObj = {
+          user_id: currentUserId,
+          name: '',
+          user_notes: '',
+          due_date: checkDate,
+          completed_date: null,
+          is_completed: false
+        }
+        $http.post('/tasks', subObj)
+        .then(createdTaskData=>{
+          let createdTask = createdTaskData.data[0];
+          
+          editTask(createdTask.id);
+        });
+      }
 
       function deleteGoal(goalId) {
         let userGoalsDeleteConfirmDiv = document.getElementById('userGoalsDeleteConfirmDiv');
@@ -4244,9 +4263,26 @@
         userBillDeleteConfirmDiv.setAttribute("style", "display: initial;");
       }
 
+      function removeEmptyTask(taskId) {
+        $http.delete(`/tasks/${taskId}`)
+        .then(()=>{
+          taskManager();
+        });
+      }
+
       function userTasksEditorDone () {
         let userTasksEditingDiv = document.getElementById('userTasksEditingDiv');
         let tasksManagerDone = document.getElementById('tasksManagerDone');
+
+        $http.get(`/tasksbyuser/${currentUserId}`)
+        .then(userTasksData=>{
+          let userTasks = userTasksData.data;
+          for (let i = 0; i < userTasks.length; i++) {
+            if ((userTasks[i].name === '') && (userTasks[i].user_notes === '')) {
+              removeEmptyTask(userTasks[i].id);
+            }
+          }
+        });
 
 
         userTasksEditingDiv.setAttribute("style", "display: none;");
