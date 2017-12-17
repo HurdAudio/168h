@@ -1408,6 +1408,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 79,
+          user_id: 1,
+          theme: 'math rock/progressive rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2773548801/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://direwolves-slr.bandcamp.com/album/earthquake-country',
+          a_string: 'Earthquake Country by Dire Wolves (Just Exactly Perfect Sisters Band)',
+          rule: {
+            "monday": [ 13, 3, 11, 5 ],
+            "tuesday": [ 12, 2, 10, 4 ],
+            "wednesday": [ 16, 6, 14, 8 ],
+            "thursday": [ 15, 5, 13, 7 ],
+            "saturday": [ 14, 4, 12, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 80,
+          user_id: 1,
+          theme: 'math rock/progressive rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1515583213/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://planktonwat-slr.bandcamp.com/album/hidden-path',
+          a_string: 'Hidden Path by Plankton Wat',
+          rule: {
+            "monday": [ 14, 4, 12, 6 ],
+            "tuesday": [ 13, 3, 11, 5 ],
+            "wednesday": [ 12, 2, 10, 4 ],
+            "thursday": [ 16, 6, 14, 8 ],
+            "saturday": [ 15, 5, 13, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 81,
+          user_id: 1,
+          theme: 'math rock/progressive rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=920816937/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://thehatchet.bandcamp.com/album/planetary-space-child',
+          a_string: 'PLANETARY SPACE CHILD by RUBY THE HATCHET',
+          rule: {
+            "monday": [ 15, 5, 13, 7 ],
+            "tuesday": [ 14, 4, 12, 6 ],
+            "wednesday": [ 13, 3, 11, 5 ],
+            "thursday": [ 12, 2, 10, 4 ],
+            "saturday": [ 16, 6, 14, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
