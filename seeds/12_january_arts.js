@@ -4304,6 +4304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 216,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/238-combinazioni-cromatiche-con-16-colori-moltiplicati-fra-loro-1969.jpg',
+          title: '238 combinazioni cromatiche con 16 colori moltiplicati fra loro',
+          artist: 'Dadamaino',
+          year: '1969',
+          rule: {
+            "monday": [ 10, 12, 13, 15 ],
+            "tuesday": [ 12, 14, 18, 21 ],
+            "wednesday": [ 14, 16, 17, 20 ],
+            "thursday": [ 30, 31, 11, 3 ],
+            "friday": [ 2, 4, 27, 16 ],
+            "saturday": [ 4, 5, 28, 31 ],
+            "sunday": [ 7, 8, 30, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 217,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/il-vicino-pianeta-1972.jpg',
+          title: 'Il Vicino Pianeta',
+          artist: 'Antonio Corpora',
+          year: '1972',
+          rule: {
+            "monday": [ 8, 9, 31, 4 ],
+            "tuesday": [ 11, 13, 14, 16 ],
+            "wednesday": [ 13, 15, 19, 22 ],
+            "thursday": [ 15, 17, 18, 21 ],
+            "friday": [ 31, 1, 12, 4 ],
+            "saturday": [ 3, 5, 28, 17 ],
+            "sunday": [ 5, 6, 29, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 218,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/source-7-1976.jpg',
+          title: 'Source #7',
+          artist: 'Leon Berkowitz',
+          year: '1976',
+          rule: {
+            "monday": [ 5, 6, 29, 1 ],
+            "tuesday": [ 8, 9, 31, 4 ],
+            "wednesday": [ 11, 13, 14, 16 ],
+            "thursday": [ 13, 15, 19, 22 ],
+            "friday": [ 15, 17, 18, 21 ],
+            "saturday": [ 31, 1, 12, 4 ],
+            "sunday": [ 3, 5, 28, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 219,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/work-no-384-a-sheet-of-paper-folded-up-and-unfolded-2004.jpg',
+          title: 'Work No. 384 (A sheet of paper folded up and unfolded)',
+          artist: 'Martin Creed',
+          year: '2004',
+          rule: {
+            "monday": [ 3, 5, 28, 17 ],
+            "tuesday": [ 5, 6, 29, 1 ],
+            "wednesday": [ 8, 9, 31, 4 ],
+            "thursday": [ 11, 13, 14, 16 ],
+            "friday": [ 13, 15, 19, 22 ],
+            "saturday": [ 15, 17, 18, 21 ],
+            "sunday": [ 31, 1, 12, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 220,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/untitled-1965.jpg',
+          title: 'Untitled',
+          artist: 'Shozo Shimamoto',
+          year: '1965',
+          rule: {
+            "monday": [ 31, 1, 12, 4 ],
+            "tuesday": [ 3, 5, 28, 17 ],
+            "wednesday": [ 5, 6, 29, 1 ],
+            "thursday": [ 8, 9, 31, 4 ],
+            "friday": [ 11, 13, 14, 16 ],
+            "saturday": [ 13, 15, 19, 22 ],
+            "sunday": [ 15, 17, 18, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
