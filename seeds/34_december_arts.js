@@ -2104,6 +2104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 106,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/09-01,Hamptons.jpg',
+          title: 'The Hamptons',
+          artist: 'C. Emerson',
+          year: '1909',
+          rule: {
+            "monday": [ 18, 31, 8, 14 ],
+            "tuesday": [ 17, 30, 7, 13 ],
+            "wednesday": [ 16, 29, 6, 12 ],
+            "thursday": [ 15, 28, 5, 11 ],
+            "friday": [ 14, 27, 4, 10 ],
+            "saturday": [ 13, 26, 14, 9 ],
+            "sunday": [ 19, 1, 9, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 107,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/52-08,ThrlWdr.jpg',
+          title: 'Thrilling Wonder',
+          artist: 'Ed Emshwiller',
+          year: '1952',
+          rule: {
+            "monday": [ 19, 1, 9, 15 ],
+            "tuesday": [ 18, 31, 8, 14 ],
+            "wednesday": [ 17, 30, 7, 13 ],
+            "thursday": [ 16, 29, 6, 12 ],
+            "friday": [ 15, 28, 5, 11 ],
+            "saturday": [ 14, 27, 4, 10 ],
+            "sunday": [ 13, 26, 14, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 108,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/42-11,RngldRom.jpg',
+          title: 'Rangeland Romances',
+          artist: 'Irene Endris',
+          year: '1942',
+          rule: {
+            "monday": [ 13, 26, 14, 9 ],
+            "tuesday": [ 19, 1, 9, 15 ],
+            "wednesday": [ 18, 31, 8, 14 ],
+            "thursday": [ 17, 30, 7, 13 ],
+            "friday": [ 16, 29, 6, 12 ],
+            "saturday": [ 15, 28, 5, 11 ],
+            "sunday": [ 14, 27, 4, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 109,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/41-00,MobyDick.jpg',
+          title: 'Moby Dick',
+          artist: 'Fred C. Eng',
+          year: '?',
+          rule: {
+            "monday": [ 14, 27, 4, 10 ],
+            "tuesday": [ 13, 26, 14, 9 ],
+            "wednesday": [ 19, 1, 9, 15 ],
+            "thursday": [ 18, 31, 8, 14 ],
+            "friday": [ 17, 30, 7, 13 ],
+            "saturday": [ 16, 29, 6, 12 ],
+            "sunday": [ 15, 28, 5, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 110,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/50-08-12,Colliers.jpg',
+          title: 'Collier\'s',
+          artist: 'Frederick R. Eng',
+          year: '1950',
+          rule: {
+            "monday": [ 15, 28, 5, 11 ],
+            "tuesday": [ 14, 27, 4, 10 ],
+            "wednesday": [ 13, 26, 14, 9 ],
+            "thursday": [ 19, 1, 9, 15 ],
+            "friday": [ 18, 31, 8, 14 ],
+            "saturday": [ 17, 30, 7, 13 ],
+            "sunday": [ 16, 29, 6, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
