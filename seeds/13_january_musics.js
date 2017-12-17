@@ -2272,6 +2272,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 127,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=538474728/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://yarnwire.bandcamp.com/album/yarn-wire-currents-vol-2',
+          a_string: 'Yarn/Wire/Currents Vol. 2 by Yarn/Wire',
+          rule: {
+            "monday": [ 27, 3, 4, 5 ],
+            "tuesday": [ 26, 2, 3, 4 ],
+            "wednesday": [ 25, 1, 2, 3 ],
+            "thursday": [ 29, 5, 6, 7 ],
+            "saturday": [ 28, 4, 5, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 128,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1803781875/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://yarnwire.bandcamp.com/album/yarn-wire-currents-vol-1',
+          a_string: 'Yarn/Wire/Currents Vol. 1 by Yarn/Wire',
+          rule: {
+            "monday": [ 28, 4, 5, 6 ],
+            "tuesday": [ 27, 3, 4, 5 ],
+            "wednesday": [ 26, 2, 3, 4 ],
+            "thursday": [ 25, 1, 2, 3 ],
+            "saturday": [ 29, 5, 6, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 129,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3727720017/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://xirecords.bandcamp.com/album/music-for-88',
+          a_string: 'Music for 88 by Tom Johnson',
+          rule: {
+            "monday": [ 29, 5, 6, 7 ],
+            "tuesday": [ 28, 4, 5, 6 ],
+            "wednesday": [ 27, 3, 4, 5 ],
+            "thursday": [ 26, 2, 3, 4 ],
+            "saturday": [ 25, 1, 2, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
