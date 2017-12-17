@@ -2164,6 +2164,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 121,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=860883616/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://mikelikesrap.bandcamp.com/album/may-god-bless-your-hustle',
+          a_string: 'MAY GOD BLESS YOUR HUSTLE by MIKE',
+          rule: {
+            "monday": [ 19, 23, 25, 29 ],
+            "tuesday": [ 22, 25, 27, 2 ],
+            "wednesday": [ 23, 27, 29, 2 ],
+            "thursday": [ 6, 29, 2, 8 ],
+            "saturday": [ 18, 23, 25, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 122,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=979604399/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://alicecoltrane.bandcamp.com/album/world-sprituality-classics-1-the-ecstatic-music-of-alice-coltrane-turiyasangitananda',
+          a_string: 'World Sprituality Classics 1: The Ecstatic Music of Alice Coltrane Turiyasangitananda by Alice Coltrane',
+          rule: {
+            "monday": [ 18, 23, 25, 8 ],
+            "tuesday": [ 19, 23, 25, 29 ],
+            "wednesday": [ 22, 25, 27, 2 ],
+            "thursday": [ 23, 27, 29, 2 ],
+            "saturday": [ 6, 29, 2, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 123,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4118357594/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://mosessumney.bandcamp.com/album/aromanticism',
+          a_string: 'Aromanticism by Moses Sumney',
+          rule: {
+            "monday": [ 6, 29, 2, 8 ],
+            "tuesday": [ 18, 23, 25, 8 ],
+            "wednesday": [ 19, 23, 25, 29 ],
+            "thursday": [ 22, 25, 27, 2 ],
+            "saturday": [ 23, 27, 29, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
