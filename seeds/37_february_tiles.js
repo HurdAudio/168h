@@ -256,6 +256,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#B00203',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 19,
+          user_id: 1,
+          theme: 'silk',
+          type: 'friday',
+          src_string: '../img/february_tiles/red-velvet-wallpaper-22072-22628-hd-wallpapers.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '150%',
+          color_dark: '#000000',
+          color_medium: '#3F0102',
+          color_light: '#910806',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
