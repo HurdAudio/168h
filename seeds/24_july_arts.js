@@ -3104,6 +3104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 156,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/eclipse-chromatique-no-1-1973.jpg',
+          title: 'Eclipse chromatique No. 1',
+          artist: 'Martha Boto',
+          year: '1973',
+          rule: {
+            "monday": [ 25, 5, 16, 26 ],
+            "tuesday": [ 24, 4, 15, 26 ],
+            "wednesday": [ 23, 3, 14, 25 ],
+            "thursday": [ 22, 2, 13, 24 ],
+            "friday": [ 21, 1, 11, 13 ],
+            "saturday": [ 20, 31, 11, 12 ],
+            "sunday": [ 19, 30, 10, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 157,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/la-t-l-vision-dechiquet-e-ou-l-anti-cr-tinisation-jagged-television-or-anti-cretinization-1989.jpg',
+          title: 'La télévision dechiquetée ou l’anti-crétinisation (Jagged Television or Anti-Cretinization)',
+          artist: 'Isidore Isou',
+          year: '1989',
+          rule: {
+            "monday": [ 19, 30, 10, 21 ],
+            "tuesday": [ 25, 5, 16, 26 ],
+            "wednesday": [ 24, 4, 15, 26 ],
+            "thursday": [ 23, 3, 14, 25 ],
+            "friday": [ 22, 2, 13, 24 ],
+            "saturday": [ 21, 1, 11, 13 ],
+            "sunday": [ 20, 31, 11, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 158,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/adieu-vieux-monde-1991.jpg',
+          title: 'Adieu vieux monde',
+          artist: 'Mimi Parent',
+          year: '1991',
+          rule: {
+            "monday": [ 20, 31, 11, 12 ],
+            "tuesday": [ 19, 30, 10, 21 ],
+            "wednesday": [ 25, 5, 16, 26 ],
+            "thursday": [ 24, 4, 15, 26 ],
+            "friday": [ 23, 3, 14, 25 ],
+            "saturday": [ 22, 2, 13, 24 ],
+            "sunday": [ 21, 1, 11, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 159,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/chromographie-x6-graphisme-chromatique-sur-carr-s-1975.jpg',
+          title: 'Chromographie x6: Graphisme chromatique sur carrés',
+          artist: 'Gregorio Vardanega',
+          year: '1975',
+          rule: {
+            "monday": [ 21, 1, 11, 13 ],
+            "tuesday": [ 20, 31, 11, 12 ],
+            "wednesday": [ 19, 30, 10, 21 ],
+            "thursday": [ 25, 5, 16, 26 ],
+            "friday": [ 24, 4, 15, 26 ],
+            "saturday": [ 23, 3, 14, 25 ],
+            "sunday": [ 22, 2, 13, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 160,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/hant-e-par-une-aurore-fragile-1947.jpg',
+          title: 'Hantée par une aurore fragile',
+          artist: 'Jaroslav Serpan',
+          year: '1947',
+          rule: {
+            "monday": [ 22, 2, 13, 24 ],
+            "tuesday": [ 21, 1, 11, 13 ],
+            "wednesday": [ 20, 31, 11, 12 ],
+            "thursday": [ 19, 30, 10, 21 ],
+            "friday": [ 25, 5, 16, 26 ],
+            "saturday": [ 24, 4, 15, 26 ],
+            "sunday": [ 23, 3, 14, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
