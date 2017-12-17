@@ -2704,6 +2704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 136,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/the-cardgame-1950.jpg',
+          title: 'The cardgame',
+          artist: 'Balthus',
+          year: '1950',
+          rule: {
+            "monday": [ 16, 22, 10, 17 ],
+            "tuesday": [ 22, 28, 16, 24 ],
+            "wednesday": [ 21, 27, 15, 23 ],
+            "thursday": [ 20, 26, 14, 22 ],
+            "friday": [ 19, 25, 13, 21 ],
+            "saturday": [ 18, 24, 12, 20 ],
+            "sunday": [ 17, 23, 11, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 137,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/white-provincetown-1959.jpg',
+          title: 'White Provincetown',
+          artist: 'Edward Corbett',
+          year: '1959',
+          rule: {
+            "monday": [ 17, 23, 11, 19 ],
+            "tuesday": [ 16, 22, 10, 17 ],
+            "wednesday": [ 22, 28, 16, 24 ],
+            "thursday": [ 21, 27, 15, 23 ],
+            "friday": [ 20, 26, 14, 22 ],
+            "saturday": [ 19, 25, 13, 21 ],
+            "sunday": [ 18, 24, 12, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 138,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/la-strada-1956(1).jpg',
+          title: 'La Strada',
+          artist: 'Renato Guttuso',
+          year: '1956',
+          rule: {
+            "monday": [ 18, 24, 12, 20 ],
+            "tuesday": [ 17, 23, 11, 19 ],
+            "wednesday": [ 16, 22, 10, 17 ],
+            "thursday": [ 22, 28, 16, 24 ],
+            "friday": [ 21, 27, 15, 23 ],
+            "saturday": [ 20, 26, 14, 22 ],
+            "sunday": [ 19, 25, 13, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 139,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/apple-half-peeled-on-a-black-plate-1976.jpg',
+          title: 'Apple, Half-Peeled on a Black Plate',
+          artist: 'Avigdor Arikha',
+          year: '1976',
+          rule: {
+            "monday": [ 19, 25, 13, 21 ],
+            "tuesday": [ 18, 24, 12, 20 ],
+            "wednesday": [ 17, 23, 11, 19 ],
+            "thursday": [ 16, 22, 10, 17 ],
+            "friday": [ 22, 28, 16, 24 ],
+            "saturday": [ 21, 27, 15, 23 ],
+            "sunday": [ 20, 26, 14, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 140,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/brick-lane-remix-i-2003.jpg',
+          title: 'Brick Lane Remix I',
+          artist: 'David Batchelor',
+          year: '2003',
+          rule: {
+            "monday": [ 21, 27, 15, 23 ],
+            "tuesday": [ 20, 26, 14, 22 ],
+            "wednesday": [ 19, 25, 13, 21 ],
+            "thursday": [ 18, 24, 12, 20 ],
+            "friday": [ 17, 23, 11, 18 ],
+            "saturday": [ 23, 29, 17, 25 ],
+            "sunday": [ 22, 28, 16, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
