@@ -1300,6 +1300,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 73,
+          user_id: 1,
+          theme: 'hardcore punk, metal and nurse with wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4268244820/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://profoundlorerecords.bandcamp.com/album/heartless',
+          a_string: 'Heartless by PALLBEARER',
+          rule: {
+            "monday": [ 14, 24, 4, 6 ],
+            "tuesday": [ 18, 28, 7, 10 ],
+            "wednesday": [ 17, 27, 6, 9 ],
+            "thursday": [ 16, 26, 5, 8 ],
+            "saturday": [ 15, 25, 4, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 74,
+          user_id: 1,
+          theme: 'hardcore punk, metal and nurse with wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1791932081/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://i-voidhangerrecords.bandcamp.com/album/a-subtler-kind-of-light',
+          a_string: 'A Subtler Kind Of Light by LOCUST LEAVES',
+          rule: {
+            "monday": [ 15, 25, 4, 7 ],
+            "tuesday": [ 14, 24, 4, 6 ],
+            "wednesday": [ 18, 28, 7, 10 ],
+            "thursday": [ 17, 27, 6, 9 ],
+            "saturday": [ 16, 26, 5, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 75,
+          user_id: 1,
+          theme: 'hardcore punk, metal and nurse with wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4120711825/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://wildwing.bandcamp.com/album/doomed-ii-repeat',
+          a_string: 'Doomed II Repeat by Wild Wing',
+          rule: {
+            "monday": [ 16, 26, 5, 8 ],
+            "tuesday": [ 15, 25, 4, 7 ],
+            "wednesday": [ 14, 24, 4, 6 ],
+            "thursday": [ 18, 28, 7, 10 ],
+            "saturday": [ 17, 27, 6, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
