@@ -3704,6 +3704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 186,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/baseball-wallpaper-16.jpg',
+          title: 'Baseball Wallpaper',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 22, 27, 3, 9 ],
+            "tuesday": [ 21, 26, 2, 8 ],
+            "wednesday": [ 26, 2, 7, 14 ],
+            "thursday": [ 10, 30, 6, 13 ],
+            "friday": [ 25, 30, 6, 12 ],
+            "saturday": [ 24, 28, 13, 11 ],
+            "sunday": [ 23, 28, 3, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 187,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/0020416d07f0b9477e932e48abfd36f6.jpg',
+          title: 'Baseball Wallpaper',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 23, 28, 3, 9 ],
+            "tuesday": [ 22, 27, 3, 9 ],
+            "wednesday": [ 21, 26, 2, 8 ],
+            "thursday": [ 26, 2, 7, 14 ],
+            "friday": [ 10, 30, 6, 13 ],
+            "saturday": [ 25, 30, 6, 12 ],
+            "sunday": [ 24, 28, 13, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 188,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/b43f7d9959062c8144773dfff0922961.jpg',
+          title: 'Baseball Wallpaper',
+          artist: 'Wallpaper Cave',
+          year: '?',
+          rule: {
+            "monday": [ 24, 28, 13, 11 ],
+            "tuesday": [ 23, 28, 3, 9 ],
+            "wednesday": [ 22, 27, 3, 9 ],
+            "thursday": [ 21, 26, 2, 8 ],
+            "friday": [ 26, 2, 7, 14 ],
+            "saturday": [ 10, 30, 6, 13 ],
+            "sunday": [ 25, 30, 6, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 189,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/baseball-wallpaper-15.jpg',
+          title: 'Baseball Wallpaper',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 26, 1, 7, 13 ],
+            "tuesday": [ 25, 29, 14, 12 ],
+            "wednesday": [ 24, 29, 4, 10 ],
+            "thursday": [ 23, 28, 4, 10 ],
+            "friday": [ 22, 27, 3, 9 ],
+            "saturday": [ 27, 3, 8, 15 ],
+            "sunday": [ 11, 1, 7, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 190,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/1987354a269fabe8a2731f2afad39fa9--baseball-art-baseball-batter.jpg',
+          title: 'Baseball',
+          artist: 'Ken Dubrowski',
+          year: '?',
+          rule: {
+            "monday": [ 11, 1, 7, 14 ],
+            "tuesday": [ 26, 1, 7, 13 ],
+            "wednesday": [ 25, 29, 14, 12 ],
+            "thursday": [ 24, 29, 4, 10 ],
+            "friday": [ 23, 28, 4, 10 ],
+            "saturday": [ 22, 27, 3, 9 ],
+            "sunday": [ 27, 3, 8, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
