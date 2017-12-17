@@ -1732,6 +1732,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 97,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=228542707/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://dragonseyerecordings.bandcamp.com/album/steel-dragons-eye-twelfth-anniversary',
+          a_string: 'Steel: Dragon&#39;s Eye Twelfth Anniversary by Various Artists',
+          rule: {
+            "monday": [ 14, 18, 24, 5 ],
+            "tuesday": [ 13, 17, 23, 3 ],
+            "wednesday": [ 12, 16, 21, 3 ],
+            "thursday": [ 12, 15, 21, 2 ],
+            "saturday": [ 10, 18, 20, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 98,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2089019764/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://dragonseyerecordings.bandcamp.com/album/as-if-we-were-never-here',
+          a_string: 'As If We Were Never Here by Marc Kate',
+          rule: {
+            "monday": [ 11, 19, 21, 2 ],
+            "tuesday": [ 15, 19, 25, 6 ],
+            "wednesday": [ 14, 17, 24, 4 ],
+            "thursday": [ 13, 17, 22, 4 ],
+            "saturday": [ 13, 16, 22, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 99,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=982255756/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://dragonseyerecordings.bandcamp.com/album/acclimation',
+          a_string: 'Acclimation by Jake Muir',
+          rule: {
+            "monday": [ 13, 16, 22, 3 ],
+            "tuesday": [ 11, 19, 21, 2 ],
+            "wednesday": [ 15, 19, 25, 6 ],
+            "thursday": [ 14, 17, 24, 4 ],
+            "saturday": [ 13, 17, 22, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
