@@ -2304,6 +2304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 116,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/untitled-green-power-1975.jpg',
+          title: 'Untitled/Green Power',
+          artist: 'David Hammons',
+          year: '1975',
+          rule: {
+            "monday": [ 19, 24, 30, 5 ],
+            "tuesday": [ 18, 23, 29, 6 ],
+            "wednesday": [ 24, 29, 5, 10 ],
+            "thursday": [ 23, 28, 4, 9 ],
+            "friday": [ 22, 27, 3, 7 ],
+            "saturday": [ 21, 26, 2, 7 ],
+            "sunday": [ 20, 24, 1, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 117,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/phase-drawing-1-topology-14-1968.jpg',
+          title: 'Phase - Drawing 1 (Topology 14)',
+          artist: 'Nobuo Sekine',
+          year: '1968',
+          rule: {
+            "monday": [ 20, 24, 1, 6 ],
+            "tuesday": [ 19, 24, 30, 5 ],
+            "wednesday": [ 18, 23, 29, 6 ],
+            "thursday": [ 24, 29, 5, 10 ],
+            "friday": [ 23, 28, 4, 9 ],
+            "saturday": [ 22, 27, 3, 7 ],
+            "sunday": [ 21, 26, 2, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 118,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/five-marching-men-1985.jpg',
+          title: 'Five Marching Men',
+          artist: 'Bruce Nauman',
+          year: '1985',
+          rule: {
+            "monday": [ 21, 26, 2, 7 ],
+            "tuesday": [ 20, 24, 1, 6 ],
+            "wednesday": [ 19, 24, 30, 5 ],
+            "thursday": [ 18, 23, 29, 6 ],
+            "friday": [ 24, 29, 5, 10 ],
+            "saturday": [ 23, 28, 4, 9 ],
+            "sunday": [ 22, 27, 3, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 119,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/contraband-1969.jpg',
+          title: 'Contraband',
+          artist: 'Lynda Benglis',
+          year: '1969',
+          rule: {
+            "monday": [ 23, 28, 4, 8 ],
+            "tuesday": [ 22, 27, 3, 8 ],
+            "wednesday": [ 21, 25, 2, 7 ],
+            "thursday": [ 20, 25, 1, 6 ],
+            "friday": [ 19, 24, 30, 7 ],
+            "saturday": [ 25, 30, 6, 11 ],
+            "sunday": [ 24, 29, 4, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 120,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/interior-sphere-piece-1985.jpg',
+          title: 'Interior Sphere Piece',
+          artist: 'Jacqueline Winsor',
+          year: '1985',
+          rule: {
+            "monday": [ 24, 29, 4, 10 ],
+            "tuesday": [ 23, 28, 4, 8 ],
+            "wednesday": [ 22, 27, 3, 8 ],
+            "thursday": [ 21, 25, 2, 7 ],
+            "friday": [ 20, 25, 1, 6 ],
+            "saturday": [ 19, 24, 30, 7 ],
+            "sunday": [ 25, 30, 6, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
