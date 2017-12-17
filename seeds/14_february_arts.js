@@ -4104,6 +4104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 206,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/Rose_RegThumb.jpg',
+          title: 'Facts of Life',
+          artist: 'Arthur Rose Sr.',
+          year: 'xx cent.',
+          rule: {
+            "monday": [ 12, 20, 16, 6 ],
+            "tuesday": [ 29, 8, 16, 24 ],
+            "wednesday": [ 2, 10, 18, 26 ],
+            "thursday": [ 7, 12, 18, 28 ],
+            "friday": [ 6, 14, 22, 1 ],
+            "saturday": [ 8, 18, 24, 1 ],
+            "sunday": [ 10, 18, 26, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 207,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/nomadic_rahn.jpg',
+          title: 'Nomadic Rahn(from Mirrors series)',
+          artist: 'Bayeté Ross Smith',
+          year: '2010',
+          rule: {
+            "monday": [ 10, 18, 26, 7 ],
+            "tuesday": [ 12, 20, 16, 6 ],
+            "wednesday": [ 29, 8, 16, 24 ],
+            "thursday": [ 2, 10, 18, 26 ],
+            "friday": [ 7, 12, 18, 28 ],
+            "saturday": [ 6, 14, 22, 1 ],
+            "sunday": [ 8, 18, 24, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 208,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/Snake_Man,_color_woodcut_and_lithograph_by_--Allison_Saar--,_1994,_--The_Contemporary_Museum,_Honolulu--.jpg',
+          title: 'Snake Man',
+          artist: 'Allison Saar',
+          year: '1994',
+          rule: {
+            "monday": [ 8, 18, 24, 1 ],
+            "tuesday": [ 10, 18, 26, 7 ],
+            "wednesday": [ 12, 20, 16, 6 ],
+            "thursday": [ 29, 8, 16, 24 ],
+            "friday": [ 2, 10, 18, 26 ],
+            "saturday": [ 7, 12, 18, 28 ],
+            "sunday": [ 6, 14, 22, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 209,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/tumblr_lj5g5dz9s51qb5i2v.jpg',
+          title: 'Pour Vous Madame',
+          artist: 'Betye Saar',
+          year: '1999',
+          rule: {
+            "monday": [ 6, 14, 22, 1 ],
+            "tuesday": [ 8, 18, 24, 1 ],
+            "wednesday": [ 10, 18, 26, 7 ],
+            "thursday": [ 12, 20, 16, 6 ],
+            "friday": [ 29, 8, 16, 24 ],
+            "saturday": [ 2, 10, 18, 26 ],
+            "sunday": [ 7, 12, 18, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 210,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/salleejpg-0ddfd54bceee4fb3.jpg',
+          title: 'Jitterbug Dancer',
+          artist: 'Charles L. Sallee Jr',
+          year: '?',
+          rule: {
+            "monday": [ 8, 13, 19, 29 ],
+            "tuesday": [ 7, 15, 23, 2 ],
+            "wednesday": [ 9, 19, 25, 2 ],
+            "thursday": [ 11, 19, 27, 8 ],
+            "friday": [ 13, 21, 17, 7 ],
+            "saturday": [ 30, 9, 17, 25 ],
+            "sunday": [ 3, 11, 19, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
