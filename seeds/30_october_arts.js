@@ -2504,6 +2504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 126,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_Le_026.jpg',
+          title: 'Soviet Russia. Sieged camp. All to defense!',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 22, 2, 13, 17 ],
+            "tuesday": [ 21, 1, 12, 16 ],
+            "wednesday": [ 20, 31, 11, 15 ],
+            "thursday": [ 19, 30, 31, 14 ],
+            "friday": [ 28, 29, 9, 13 ],
+            "saturday": [ 24, 4, 15, 19 ],
+            "sunday": [ 23, 3, 14, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 127,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_Le_025.jpg',
+          title: 'October 1917 October 1920',
+          artist: '?',
+          year: '1920',
+          rule: {
+            "monday": [ 23, 3, 14, 18 ],
+            "tuesday": [ 22, 2, 13, 17 ],
+            "wednesday": [ 21, 1, 12, 16 ],
+            "thursday": [ 20, 31, 11, 15 ],
+            "friday": [ 19, 30, 31, 14 ],
+            "saturday": [ 28, 29, 9, 13 ],
+            "sunday": [ 24, 4, 15, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 128,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_Le_023.jpg',
+          title: 'Priests help capital(ism) and disturb worker. Get out of the way!',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 24, 4, 15, 19 ],
+            "tuesday": [ 23, 3, 14, 18 ],
+            "wednesday": [ 22, 2, 13, 17 ],
+            "thursday": [ 21, 1, 12, 16 ],
+            "friday": [ 20, 31, 11, 15 ],
+            "saturday": [ 19, 30, 31, 14 ],
+            "sunday": [ 28, 29, 9, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 129,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_Le_022.jpg',
+          title: 'To the nations of the Caucasus',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 28, 29, 9, 13 ],
+            "tuesday": [ 24, 4, 15, 19 ],
+            "wednesday": [ 23, 3, 14, 18 ],
+            "thursday": [ 22, 2, 13, 17 ],
+            "friday": [ 21, 1, 12, 16 ],
+            "saturday": [ 20, 31, 11, 15 ],
+            "sunday": [ 19, 30, 31, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 130,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_sovpolpost_00001.jpg',
+          title: 'Have you signed up as a volunteer?',
+          artist: 'Dmitry Moor',
+          year: '1920',
+          rule: {
+            "monday": [ 19, 30, 31, 14 ],
+            "tuesday": [ 28, 29, 9, 13 ],
+            "wednesday": [ 24, 4, 15, 19 ],
+            "thursday": [ 23, 3, 14, 18 ],
+            "friday": [ 22, 2, 13, 17 ],
+            "saturday": [ 21, 1, 12, 16 ],
+            "sunday": [ 20, 31, 11, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
