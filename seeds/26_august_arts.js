@@ -2904,6 +2904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 146,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/bathers-1928.jpg',
+          title: 'Bathers',
+          artist: 'Koshiro Onchi',
+          year: '1928',
+          rule: {
+            "monday": [ 21, 25, 2, 18 ],
+            "tuesday": [ 20, 22, 1, 17 ],
+            "wednesday": [ 19, 22, 31, 16 ],
+            "thursday": [ 18, 21, 30, 15 ],
+            "friday": [ 24, 28, 5, 21 ],
+            "saturday": [ 23, 26, 4, 20 ],
+            "sunday": [ 22, 26, 3, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 147,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/barges-1919.jpg',
+          title: 'Barges',
+          artist: 'David Bomberg',
+          year: '1919',
+          rule: {
+            "monday": [ 23, 27, 4, 20 ],
+            "tuesday": [ 22, 26, 3, 19 ],
+            "wednesday": [ 21, 23, 2, 18 ],
+            "thursday": [ 20, 23, 1, 17 ],
+            "friday": [ 19, 22, 31, 16 ],
+            "saturday": [ 25, 29, 6, 22 ],
+            "sunday": [ 24, 27, 5, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 148,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/la-libra-s-infiamma-e-le-piramidi-1921.jpg',
+          title: 'La libra s\'infiamma e le piramidi',
+          artist: 'Julius Evola',
+          year: '1921',
+          rule: {
+            "monday": [ 24, 27, 5, 21 ],
+            "tuesday": [ 23, 27, 4, 20 ],
+            "wednesday": [ 22, 26, 3, 19 ],
+            "thursday": [ 21, 23, 2, 18 ],
+            "friday": [ 20, 23, 1, 17 ],
+            "saturday": [ 19, 22, 31, 16 ],
+            "sunday": [ 25, 29, 6, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 149,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/asoka-s-queen-1910.jpg',
+          title: 'Asoka\'s Queen',
+          artist: 'Abanindranath Tagore',
+          year: '1910',
+          rule: {
+            "monday": [ 25, 29, 6, 22 ],
+            "tuesday": [ 24, 27, 5, 21 ],
+            "wednesday": [ 23, 27, 4, 20 ],
+            "thursday": [ 22, 26, 3, 19 ],
+            "friday": [ 21, 23, 2, 18 ],
+            "saturday": [ 20, 23, 1, 17 ],
+            "sunday": [ 19, 22, 31, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 150,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/girl-with-a-milk-can-1917.jpg',
+          title: 'Girl with a Milk Can',
+          artist: 'Boris Grigoriev',
+          year: '1917',
+          rule: {
+            "monday": [ 19, 22, 31, 16 ],
+            "tuesday": [ 25, 29, 6, 22 ],
+            "wednesday": [ 24, 27, 5, 21 ],
+            "thursday": [ 23, 27, 4, 20 ],
+            "friday": [ 22, 26, 3, 19 ],
+            "saturday": [ 21, 23, 2, 18 ],
+            "sunday": [ 20, 23, 1, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
