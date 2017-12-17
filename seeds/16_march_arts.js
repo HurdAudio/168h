@@ -3904,6 +3904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 196,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/july-waterfall-1991.jpg',
+          title: 'July Waterfall',
+          artist: 'Pat Steir',
+          year: '1991',
+          rule: {
+            "monday": [ 27, 5, 13, 23 ],
+            "tuesday": [ 25, 4, 12, 22 ],
+            "wednesday": [ 24, 3, 11, 21 ],
+            "thursday": [ 23, 2, 10, 20 ],
+            "friday": [ 22, 1, 10, 19 ],
+            "saturday": [ 28, 6, 15, 24 ],
+            "sunday": [ 27, 6, 16, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 197,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/bum-1966.jpg',
+          title: 'Bum',
+          artist: 'Pauline Boty',
+          year: '1966',
+          rule: {
+            "monday": [ 27, 6, 16, 24 ],
+            "tuesday": [ 27, 5, 13, 23 ],
+            "wednesday": [ 25, 4, 12, 22 ],
+            "thursday": [ 24, 3, 11, 21 ],
+            "friday": [ 23, 2, 10, 20 ],
+            "saturday": [ 22, 1, 10, 19 ],
+            "sunday": [ 28, 6, 15, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 198,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/drypoint-ocean-surface-1983.jpg',
+          title: 'Drypoint - Ocean Surface',
+          artist: 'Vija Celmins',
+          year: '1983',
+          rule: {
+            "monday": [ 28, 6, 15, 24 ],
+            "tuesday": [ 27, 6, 16, 24 ],
+            "wednesday": [ 27, 5, 13, 23 ],
+            "thursday": [ 25, 4, 12, 22 ],
+            "friday": [ 24, 3, 11, 21 ],
+            "saturday": [ 23, 2, 10, 20 ],
+            "sunday": [ 22, 1, 10, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 199,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/glowing-1970.jpg',
+          title: 'Glowing',
+          artist: 'Pat Lipsky',
+          year: '1970',
+          rule: {
+            "monday": [ 22, 1, 10, 19 ],
+            "tuesday": [ 28, 6, 15, 24 ],
+            "wednesday": [ 27, 6, 16, 24 ],
+            "thursday": [ 27, 5, 13, 23 ],
+            "friday": [ 25, 4, 12, 22 ],
+            "saturday": [ 24, 3, 11, 21 ],
+            "sunday": [ 23, 2, 10, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 200,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/burnt-piece-1978.jpg',
+          title: 'Burnt Piece',
+          artist: 'Jacqueline Winsor',
+          year: '1978',
+          rule: {
+            "monday": [ 23, 2, 10, 20 ],
+            "tuesday": [ 22, 1, 10, 19 ],
+            "wednesday": [ 28, 6, 15, 24 ],
+            "thursday": [ 27, 6, 16, 24 ],
+            "friday": [ 27, 5, 13, 23 ],
+            "saturday": [ 25, 4, 12, 22 ],
+            "sunday": [ 24, 3, 11, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
