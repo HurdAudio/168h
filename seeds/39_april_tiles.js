@@ -242,6 +242,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#CDD2D2',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 18,
+          user_id: 1,
+          theme: 'water',
+          type: 'week',
+          src_string: '../img/april_tiles/water-975974_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '150%',
+          color_dark: '#12130E',
+          color_medium: '#6D6D6D',
+          color_light: '#A0A0A2',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
