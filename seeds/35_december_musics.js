@@ -1138,6 +1138,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 64,
+          user_id: 1,
+          theme: 'brazil and pan-south american',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2684299125/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://supressor666.bandcamp.com/album/supressor',
+          a_string: 'Supressor by Supressor',
+          rule: {
+            "monday": [ 12, 19, 25, 31 ],
+            "tuesday": [ 12, 18, 24, 30 ],
+            "wednesday": [ 16, 22, 28, 3 ],
+            "thursday": [ 15, 21, 27, 2 ],
+            "saturday": [ 14, 20, 26, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 65,
+          user_id: 1,
+          theme: 'brazil and pan-south american',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3585167401/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://andeantriberecords.bandcamp.com/album/v-a-andean-spirits-cd-1',
+          a_string: 'V.A. ANDEAN SPIRITS - cd 1 by ANDEAN TRIBE RECORDS',
+          rule: {
+            "monday": [ 14, 20, 26, 1 ],
+            "tuesday": [ 12, 19, 25, 31 ],
+            "wednesday": [ 12, 18, 24, 30 ],
+            "thursday": [ 16, 22, 28, 3 ],
+            "saturday": [ 15, 21, 27, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 66,
+          user_id: 1,
+          theme: 'brazil and pan-south american',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=190178628/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://snumusic.bandcamp.com/album/post-vida',
+          a_string: 'Post-Vida by snu',
+          rule: {
+            "monday": [ 15, 21, 27, 2 ],
+            "tuesday": [ 14, 20, 26, 1 ],
+            "wednesday": [ 12, 19, 25, 31 ],
+            "thursday": [ 12, 18, 24, 30 ],
+            "saturday": [ 16, 22, 28, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
