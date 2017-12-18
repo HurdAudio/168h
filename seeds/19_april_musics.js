@@ -2002,6 +2002,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 112,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'http://bandcamp.com/EmbeddedPlayer/album=978800525/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://thomaszaruba.fr/album/slow-down',
+          a_string: 'SLOW DOWN by THOMAS ZARUBA',
+          rule: {
+            "monday": [ 20, 28, 10, 15 ],
+            "tuesday": [ 19, 27, 9, 14 ],
+            "wednesday": [ 18, 26, 8, 13 ],
+            "thursday": [ 17, 25, 7, 12 ],
+            "saturday": [ 16, 24, 6, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 113,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2277641234/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sunnymurray.bandcamp.com/album/sunny-murray',
+          a_string: 'Sunny Murray by Sunny Murray',
+          rule: {
+            "monday": [ 16, 24, 6, 11 ],
+            "tuesday": [ 20, 28, 10, 15 ],
+            "wednesday": [ 19, 27, 9, 14 ],
+            "thursday": [ 18, 26, 8, 13 ],
+            "saturday": [ 17, 25, 7, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 114,
+          user_id: 1,
+          theme: 'free jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=940056246/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://kylemotl.bandcamp.com/album/katabasis',
+          a_string: 'Katabasis by Kyle Motl / Drew Ceccato',
+          rule: {
+            "monday": [ 17, 25, 7, 12 ],
+            "tuesday": [ 16, 24, 6, 11 ],
+            "wednesday": [ 20, 28, 10, 15 ],
+            "thursday": [ 19, 27, 9, 14 ],
+            "saturday": [ 18, 26, 8, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
