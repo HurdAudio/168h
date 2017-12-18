@@ -4004,6 +4004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 201,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/art-historian-s-joke-renaissance-woman-1986.jpg',
+          title: 'Art Historian’s Joke: Renaissance Woman',
+          artist: 'Joyce Kozloff',
+          year: '1986',
+          rule: {
+            "monday": [ 24, 3, 11, 21 ],
+            "tuesday": [ 23, 2, 10, 20 ],
+            "wednesday": [ 22, 1, 10, 19 ],
+            "thursday": [ 28, 6, 15, 24 ],
+            "friday": [ 27, 6, 16, 24 ],
+            "saturday": [ 27, 5, 13, 23 ],
+            "sunday": [ 25, 4, 12, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 202,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/double-elegy-2007.jpg',
+          title: 'Double Elegy',
+          artist: 'Harmony Hammond',
+          year: '2007',
+          rule: {
+            "monday": [ 25, 4, 12, 22 ],
+            "tuesday": [ 24, 3, 11, 21 ],
+            "wednesday": [ 23, 2, 10, 20 ],
+            "thursday": [ 22, 1, 10, 19 ],
+            "friday": [ 28, 6, 15, 24 ],
+            "saturday": [ 27, 6, 16, 24 ],
+            "sunday": [ 27, 5, 13, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 203,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/night-dreamers.jpg',
+          title: 'Night Dreamers',
+          artist: 'Guity Novin',
+          year: '2005',
+          rule: {
+            "monday": [ 28, 6, 14, 24 ],
+            "tuesday": [ 26, 5, 13, 23 ],
+            "wednesday": [ 25, 4, 12, 22 ],
+            "thursday": [ 24, 3, 11, 21 ],
+            "friday": [ 23, 2, 11, 20 ],
+            "saturday": [ 29, 7, 16, 25 ],
+            "sunday": [ 28, 7, 17, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 204,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/untitled-money-can-buy-you-love-1985.jpg',
+          title: 'Untitled (Money can buy you love)',
+          artist: 'Barbara Kruger',
+          year: '1985',
+          rule: {
+            "monday": [ 28, 7, 17, 25 ],
+            "tuesday": [ 28, 6, 14, 24 ],
+            "wednesday": [ 26, 5, 13, 23 ],
+            "thursday": [ 25, 4, 12, 22 ],
+            "friday": [ 24, 3, 11, 21 ],
+            "saturday": [ 23, 2, 11, 20 ],
+            "sunday": [ 29, 7, 16, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 205,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/blu-lascaux-1999.jpg',
+          title: 'Blu Lascaux',
+          artist: 'Denise Green',
+          year: '1999',
+          rule: {
+            "monday": [ 29, 7, 16, 25 ],
+            "tuesday": [ 28, 7, 17, 25 ],
+            "wednesday": [ 28, 6, 14, 24 ],
+            "thursday": [ 26, 5, 13, 23 ],
+            "friday": [ 25, 4, 12, 22 ],
+            "saturday": [ 24, 3, 11, 21 ],
+            "sunday": [ 23, 2, 11, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
