@@ -4204,6 +4204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 211,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/9769.jpg',
+          title: 'A Smooth One',
+          artist: 'Reginald Sanders',
+          year: '1993',
+          rule: {
+            "monday": [ 3, 11, 19, 27 ],
+            "tuesday": [ 8, 13, 19, 29 ],
+            "wednesday": [ 7, 15, 23, 2 ],
+            "thursday": [ 9, 19, 25, 2 ],
+            "friday": [ 11, 19, 27, 8 ],
+            "saturday": [ 13, 21, 17, 7 ],
+            "sunday": [ 30, 9, 17, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 212,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/rs15.jpg',
+          title: 'Drawing',
+          artist: 'Raymond Saunders',
+          year: '2000',
+          rule: {
+            "monday": [ 30, 9, 17, 25 ],
+            "tuesday": [ 3, 11, 19, 27 ],
+            "wednesday": [ 8, 13, 19, 29 ],
+            "thursday": [ 7, 15, 23, 2 ],
+            "friday": [ 9, 19, 25, 2 ],
+            "saturday": [ 11, 19, 27, 8 ],
+            "sunday": [ 13, 21, 17, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 213,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/The-Harp-1.jpg',
+          title: 'The Harp',
+          artist: 'Augusta Savage',
+          year: '1939',
+          rule: {
+            "monday": [ 13, 21, 17, 7 ],
+            "tuesday": [ 30, 9, 17, 25 ],
+            "wednesday": [ 3, 11, 19, 27 ],
+            "thursday": [ 8, 13, 19, 29 ],
+            "friday": [ 7, 15, 23, 2 ],
+            "saturday": [ 9, 19, 25, 2 ],
+            "sunday": [ 11, 19, 27, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 214,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/_Ancestral_Legacy__1.jpg',
+          title: 'Ancestral Legacy',
+          artist: 'John T. Scott',
+          year: '2012',
+          rule: {
+            "monday": [ 11, 19, 27, 8 ],
+            "tuesday": [ 13, 21, 17, 7 ],
+            "wednesday": [ 30, 9, 17, 25 ],
+            "thursday": [ 3, 11, 19, 27 ],
+            "friday": [ 8, 13, 19, 29 ],
+            "saturday": [ 7, 15, 23, 2 ],
+            "sunday": [ 9, 19, 25, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 215,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/Scott_Joyce-1024x777.jpg',
+          title: 'Man Eating Watermelon',
+          artist: 'Joyce J. Scott',
+          year: '1986',
+          rule: {
+            "monday": [ 9, 19, 25, 2 ],
+            "tuesday": [ 11, 19, 27, 8 ],
+            "wednesday": [ 13, 21, 17, 7 ],
+            "thursday": [ 30, 9, 17, 25 ],
+            "friday": [ 3, 11, 19, 27 ],
+            "saturday": [ 8, 13, 19, 29 ],
+            "sunday": [ 7, 15, 23, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
