@@ -3404,6 +3404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 171,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/self-portrait-2013(1).jpg',
+          title: 'Self Portrait',
+          artist: 'Richard Prince',
+          year: '1973 - 2013',
+          rule: {
+            "monday": [ 19, 29, 9, 17 ],
+            "tuesday": [ 25, 5, 15, 22 ],
+            "wednesday": [ 24, 4, 14, 22 ],
+            "thursday": [ 23, 3, 13, 21 ],
+            "friday": [ 22, 2, 12, 20 ],
+            "saturday": [ 21, 1, 11, 19 ],
+            "sunday": [ 20, 30, 10, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 172,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/seascape-aegean-sea-pillon-1990.jpg',
+          title: 'Seascape: Aegean Sea, Pillon',
+          artist: 'Hiroshi Sugimoto',
+          year: '1990',
+          rule: {
+            "monday": [ 20, 30, 10, 18 ],
+            "tuesday": [ 19, 29, 9, 17 ],
+            "wednesday": [ 25, 5, 15, 22 ],
+            "thursday": [ 24, 4, 14, 22 ],
+            "friday": [ 23, 3, 13, 21 ],
+            "saturday": [ 22, 2, 12, 20 ],
+            "sunday": [ 21, 1, 11, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 173,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/distorted-vision-a-1991.jpg',
+          title: 'Distorted Vision (A)',
+          artist: 'John Hilliard',
+          year: '1991',
+          rule: {
+            "monday": [ 21, 1, 11, 19 ],
+            "tuesday": [ 20, 30, 10, 18 ],
+            "wednesday": [ 19, 29, 9, 17 ],
+            "thursday": [ 25, 5, 15, 22 ],
+            "friday": [ 24, 4, 14, 22 ],
+            "saturday": [ 23, 3, 13, 21 ],
+            "sunday": [ 22, 2, 12, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 174,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/dialogue-with-ceausescu-1978.jpg',
+          title: 'Dialogue with Ceausescu',
+          artist: 'Ion Grigorescu',
+          year: '1978',
+          rule: {
+            "monday": [ 22, 2, 12, 20 ],
+            "tuesday": [ 21, 1, 11, 19 ],
+            "wednesday": [ 20, 30, 10, 18 ],
+            "thursday": [ 19, 29, 9, 17 ],
+            "friday": [ 25, 5, 15, 22 ],
+            "saturday": [ 24, 4, 14, 22 ],
+            "sunday": [ 23, 3, 13, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 175,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/sea-land-hb1-2007.jpg',
+          title: 'Sea-Land HB1',
+          artist: 'Jan Dibbets',
+          year: '2007',
+          rule: {
+            "monday": [ 23, 3, 13, 21 ],
+            "tuesday": [ 22, 2, 12, 20 ],
+            "wednesday": [ 21, 1, 11, 19 ],
+            "thursday": [ 20, 30, 10, 18 ],
+            "friday": [19, 29, 9, 17  ],
+            "saturday": [ 25, 5, 15, 22 ],
+            "sunday": [ 24, 4, 14, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
