@@ -2404,6 +2404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 121,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/waferboard-4-1996.jpg',
+          title: 'Waferboard 4',
+          artist: 'Richard Tuttle',
+          year: '1996',
+          rule: {
+            "monday": [ 25, 30, 6, 11 ],
+            "tuesday": [ 24, 29, 4, 10 ],
+            "wednesday": [ 23, 28, 4, 8 ],
+            "thursday": [ 22, 27, 3, 8 ],
+            "friday": [ 21, 25, 2, 7 ],
+            "saturday": [ 20, 25, 1, 6 ],
+            "sunday": [ 19, 24, 30, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 122,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/cutglass-7-1975.jpg',
+          title: 'Cutglass 7',
+          artist: 'Keith Sonnier',
+          year: '1975',
+          rule: {
+            "monday": [ 19, 24, 30, 7 ],
+            "tuesday": [ 25, 30, 6, 11 ],
+            "wednesday": [ 24, 29, 4, 10 ],
+            "thursday": [ 23, 28, 4, 8 ],
+            "friday": [ 22, 27, 3, 8 ],
+            "saturday": [ 21, 25, 2, 7 ],
+            "sunday": [ 20, 25, 1, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 123,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/i-part-of-sabine-d-region-southwest-mare-tranquilitatis-from-lithographs-based-on-geologic-maps-1972.jpg',
+          title: 'I Part of Sabine D Region, Southwest Mare Tranquilitatis from Lithographs Based on Geologic Maps of Lunar Orbiter and Apollo Landing Sites',
+          artist: 'Nancy Graves',
+          year: '1972',
+          rule: {
+            "monday": [ 20, 25, 1, 6 ],
+            "tuesday": [ 19, 24, 30, 7 ],
+            "wednesday": [ 25, 30, 6, 11 ],
+            "thursday": [ 24, 29, 4, 10 ],
+            "friday": [ 23, 28, 4, 8 ],
+            "saturday": [ 22, 27, 3, 8 ],
+            "sunday": [ 21, 25, 2, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 124,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/pittsburgh-1985.jpg',
+          title: 'Pittsburgh',
+          artist: 'Richard Serra',
+          year: '1985',
+          rule: {
+            "monday": [ 21, 25, 2, 7 ],
+            "tuesday": [ 20, 25, 1, 6 ],
+            "wednesday": [ 19, 24, 30, 7 ],
+            "thursday": [ 25, 30, 6, 11 ],
+            "friday": [ 24, 29, 4, 10 ],
+            "saturday": [ 23, 28, 4, 8 ],
+            "sunday": [ 22, 27, 3, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 125,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/24-yellow-columns-1982.jpg',
+          title: '24 Yellow Columns',
+          artist: 'Franz Erhard Walther',
+          year: '1982',
+          rule: {
+            "monday": [ 22, 27, 3, 8 ],
+            "tuesday": [ 21, 25, 2, 7 ],
+            "wednesday": [ 20, 25, 1, 6 ],
+            "thursday": [ 19, 24, 30, 7 ],
+            "friday": [ 25, 30, 6, 11 ],
+            "saturday": [ 24, 29, 4, 10 ],
+            "sunday": [ 23, 28, 4, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
