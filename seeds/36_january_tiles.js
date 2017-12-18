@@ -284,6 +284,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#CFF2F7',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 21,
+          user_id: 1,
+          theme: 'ice',
+          type: 'sunday',
+          src_string: '../img/january_tiles/cuevas-de-hielo-alasca.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '200%',
+          color_dark: '#010302',
+          color_medium: '#004A71',
+          color_light: '#3CC8DC',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
