@@ -276,12 +276,12 @@ exports.seed = function(knex, Promise) {
           user_id: 1,
           theme: 'silk',
           type: 'saturday',
-          src_string: '../img/february_tiles/.jpg',
+          src_string: '../img/february_tiles/orangesilk.jpg',
           repeat_value: 'no-repeat',
-          size_value: '%',
-          color_dark: '#',
-          color_medium: '#',
-          color_light: '#',
+          size_value: '160%',
+          color_dark: '#140610',
+          color_medium: '#92320E',
+          color_light: '#F1D433',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
