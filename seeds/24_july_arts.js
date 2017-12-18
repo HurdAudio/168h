@@ -3204,6 +3204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 161,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/vall-e-de-gorbio.jpg',
+          title: 'Vallée de Gorbio',
+          artist: 'S. H. Raza',
+          year: '?',
+          rule: {
+            "monday": [ 24, 4, 15, 26 ],
+            "tuesday": [ 23, 3, 14, 25 ],
+            "wednesday": [ 22, 2, 12, 14 ],
+            "thursday": [ 21, 1, 12, 13 ],
+            "friday": [ 20, 31, 11, 22 ],
+            "saturday": [ 26, 6, 17, 27 ],
+            "sunday": [ 25, 5, 16, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 162,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/clair-d-obscurite-1988.jpg',
+          title: 'Éclair d\'obscurite',
+          artist: 'Chu Teh-Chun',
+          year: '1988',
+          rule: {
+            "monday": [ 25, 5, 16, 27 ],
+            "tuesday": [ 24, 4, 15, 26 ],
+            "wednesday": [ 23, 3, 14, 25 ],
+            "thursday": [ 22, 2, 12, 14 ],
+            "friday": [ 21, 1, 12, 13 ],
+            "saturday": [ 20, 31, 11, 22 ],
+            "sunday": [ 26, 6, 17, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 163,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/ossiach-1996.jpg',
+          title: 'Ossiach',
+          artist: 'Olivier Debre',
+          year: '1996',
+          rule: {
+            "monday": [ 26, 6, 17, 27 ],
+            "tuesday": [ 25, 5, 16, 27 ],
+            "wednesday": [ 24, 4, 15, 26 ],
+            "thursday": [ 23, 3, 14, 25 ],
+            "friday": [ 22, 2, 12, 14 ],
+            "saturday": [ 21, 1, 12, 13 ],
+            "sunday": [ 20, 31, 11, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 164,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/peinture-11-juillet-1987-1987.jpg',
+          title: 'Peinture 11 Juillet 1987',
+          artist: 'Pierre Soulages',
+          year: '1987',
+          rule: {
+            "monday": [ 20, 31, 11, 22 ],
+            "tuesday": [ 26, 6, 17, 27 ],
+            "wednesday": [ 25, 5, 16, 27 ],
+            "thursday": [ 24, 4, 15, 26 ],
+            "friday": [ 23, 3, 14, 25 ],
+            "saturday": [ 22, 2, 12, 14 ],
+            "sunday": [ 21, 1, 12, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 165,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/criture-10-2-63-1963.jpg',
+          title: 'Écriture 10.2.63',
+          artist: 'Jean Degottex',
+          year: '1963',
+          rule: {
+            "monday": [ 21, 1, 12, 13 ],
+            "tuesday": [ 20, 31, 11, 22 ],
+            "wednesday": [ 26, 6, 17, 27 ],
+            "thursday": [ 25, 5, 16, 27 ],
+            "friday": [ 24, 4, 15, 26 ],
+            "saturday": [ 23, 3, 14, 25 ],
+            "sunday": [ 22, 2, 12, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
