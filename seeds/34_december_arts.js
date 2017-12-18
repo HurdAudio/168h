@@ -2204,6 +2204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 111,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/24-00,Directory.jpg',
+          title: 'Artist Directory',
+          artist: 'Renaldo C. Epworth',
+          year: '1924',
+          rule: {
+            "monday": [ 16, 29, 6, 12 ],
+            "tuesday": [ 15, 28, 5, 11 ],
+            "wednesday": [ 14, 27, 4, 10 ],
+            "thursday": [ 13, 26, 14, 9 ],
+            "friday": [ 19, 1, 9, 15 ],
+            "saturday": [ 18, 31, 8, 14 ],
+            "sunday": [ 17, 30, 7, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 112,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/19-00,WarPoster.jpg',
+          title: 'Red Army Poster',
+          artist: 'Julius Erbit',
+          year: '1919',
+          rule: {
+            "monday": [ 18, 31, 8, 14 ],
+            "tuesday": [ 17, 30, 7, 13 ],
+            "wednesday": [ 16, 29, 6, 12 ],
+            "thursday": [ 15, 28, 5, 11 ],
+            "friday": [ 14, 27, 15, 10 ],
+            "saturday": [ 20, 2, 10, 16 ],
+            "sunday": [ 19, 1, 9, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 113,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/38-06,MysteryTls.jpg',
+          title: 'Mystery Tales',
+          artist: 'James A. Ernst',
+          year: '1938',
+          rule: {
+            "monday": [ 19, 1, 9, 15 ],
+            "tuesday": [ 18, 31, 8, 14 ],
+            "wednesday": [ 17, 30, 7, 13 ],
+            "thursday": [ 16, 29, 6, 12 ],
+            "friday": [ 15, 28, 5, 11 ],
+            "saturday": [ 14, 27, 15, 10 ],
+            "sunday": [ 20, 2, 10, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 114,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/27-04,Mystery.jpg',
+          title: 'Mystery Magazine',
+          artist: 'Frederick T. Everett',
+          year: '1927',
+          rule: {
+            "monday": [ 20, 2, 10, 16 ],
+            "tuesday": [ 19, 1, 9, 15 ],
+            "wednesday": [ 18, 31, 8, 14 ],
+            "thursday": [ 17, 30, 7, 13 ],
+            "friday": [ 16, 29, 6, 12 ],
+            "saturday": [ 15, 28, 5, 11 ],
+            "sunday": [ 14, 27, 15, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 115,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/32-08,ActNvls.jpg',
+          title: 'Action Novels',
+          artist: 'John Falter',
+          year: '1932',
+          rule: {
+            "monday": [ 14, 27, 15, 10 ],
+            "tuesday": [ 20, 2, 10, 16 ],
+            "wednesday": [ 19, 1, 9, 15 ],
+            "thursday": [ 18, 31, 8, 14 ],
+            "friday": [ 17, 30, 7, 13 ],
+            "saturday": [ 16, 29, 6, 12 ],
+            "sunday": [ 15, 28, 5, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
