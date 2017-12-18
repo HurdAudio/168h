@@ -1979,6 +1979,47 @@
       </form>
 
     </div>
+
+    <div id="reportForBills">
+      <div id="billsReportBar">
+        <a href="" class="btn" id="billsReportDone" ng-click="$ctrl.billsReportDone()">done</a>
+        <h1>Bills Report</h1>
+      </div>
+      <div id="billsReportBody">
+        <main ng-repeat="report in $ctrl.billReporter | orderBy : $ctrl.sortBy">
+          <div class="reporter">
+            <h2>Totals: </h2>
+            <h2>Total Bills:</h2> <p>{{report.totalBills}} bills in database</p>
+            <h2>Total Amount:</h2><p>${{report.totalAmount}}</p>
+            <h2>Total Amount Paid:</h2><p>${{report.totalPaid}}</p>
+            <h2>Total Outstanding:</h2> <p>${{report.totalDue}}</p>
+            <h2>Overdue Bills:</h2><p>{{report.overdue}}</p>
+          </div>
+        </main>
+        <main ng-repeat="vendor in $ctrl.billVendors | orderBy : $ctr.sortBy">
+          <div class="reporter">
+            <h2>Creditor:</h2><p>{{vendor.name}}</p>
+            <h2>Total Paid:</h2><p>${{vendor.totalPaid}}</p>
+            <h2>Total Due:</h2><p>${{vendor.totalDue}}</p>
+            <h2>Most Recent Balance (where applicable):</h2> <p>{{vendor.recentBalance}}</p>
+            <h2>Next Due Date:</h2><p>{{vendor.nextDueDate}}</p>
+          </div>
+        </main>
+        <main ng-repeat="month in $ctrl.billMonths | orderBy : $ctr.sortBy">
+          <div class="reporter">
+            <h2>Month: {{month.billMonthString}}</h2>
+            <p>Total Bills: {{month.billsTotal}}</p>
+            <p>Total Amount: ${{month.billsTotalAmount}}</p>
+            <p>Paid: {{month.numberOfPaidBills}} bills totaling ${{month.billsPaidTotal}}</p>
+            <p>Due: {{month.numberOfUnpaidBills}} bills totaling ${{month.dueTotal}}</p>
+          </div>
+        </main>
+
+
+      </div>
+
+    </div>
+
     <div id="userBillsEditingDiv">
       <div id="userBillsEditorBar">
         <a href="" class="btn" id="userBillsEditorDoneButton" ng-click="$ctrl.userBillsEditorDone()">done</a>

@@ -3045,6 +3045,34 @@ footer img {
   margin-top: 0.2em;
 }
 
+#billsReportBar {
+  font-family: 'Asul', serif;
+  font-size: 18px
+  background: #9B5C71;
+  background-color: -webkit-linear-gradient(-135deg, #9B5C71, #EDEEF0);
+  background: -o-linear-gradient(-135deg, #9B5C71, #EDEEF0);
+  background: -moz-linear-gradient(-135deg, #9B5C71, #EDEEF0);
+  background: linear-gradient(-135deg, #9B5C71, #EDEEF0);
+  border-radius: 5px;
+  margin: 0;
+  padding:0;
+  height: 3.8em;
+  top: 0%;
+  opacity: 1;
+}
+
+#billsReportBar h1 {
+  margin-left: 2em;
+  padding-top: 0.4em;
+}
+
+
+#billsReportBar a {
+  float:right;
+  margin-right: 1.1em;
+  margin-top: 0.2em;
+}
+
 #userHolidayEditorBar {
   font-family: 'Asul', serif;
   font-size: 18px
@@ -4395,6 +4423,10 @@ footer img {
 }
 
 #reportForOccasions {
+  display: none;
+}
+
+#reportForBills {
   display: none;
 }
 

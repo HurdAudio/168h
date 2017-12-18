@@ -169,6 +169,242 @@
       vm.userObservancesEditorDone = userObservancesEditorDone;
       vm.deleteGoal = deleteGoal;
       vm.addNewTask = addNewTask;
+      vm.billsReport = billsReport;
+      vm.billsReportDone = billsReportDone;
+
+      function billsReportDone() {
+        let reportForBills = document.getElementById('reportForBills');
+        let billsManagerDone = document.getElementById('billsManagerDone');
+        let userBillsEditingDiv = document.getElementById('userBillsEditingDiv');
+        let billsReporter = document.getElementById('billsReporter');
+
+        reportForBills.setAttribute("style", "display: none;");
+        billsManagerDone.setAttribute("style", "visibility: visible;");
+        userBillsEditingDiv.setAttribute("style", "display: none;");
+        billsReporter.setAttribute("style", "visibility: visible;");
+      }
+
+      function billOverdue(bill) {
+        let today = new Date();
+        let billDate = new Date(bill.due_date.slice(0,10));
+
+        if (today.getFullYear() > billDate.getFullYear()) {
+          return true;
+        } else if (today.getFullYear() < billDate.getFullYear()) {
+          return false;
+        } else if (today.getMonth() > billDate.getMonth()) {
+          return true;
+        } else if (today.getMonth() < billDate.getMonth()) {
+          return false;
+        } else if (today.getDate() >= billDate.getDate()) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+
+      function getMoreCurrent(bill1, bill2) {
+        let dueDate1 = new Date(bill1.due_date.slice(0,10));
+        let dueDate2 = new Date(bill2.due_date.slice(0,10));
+
+        if (dueDate1.getFullYear() < dueDate2.getFullYear()) {
+          return(bill2);
+        } else if (dueDat1.getFullYear() > dueDate2.getFullYear()) {
+          return(bill1);
+        } else if (dueDate1.getMonth() < dueDate2.getMonth()) {
+          return(bill2);
+        } else if (dueDate1.getMonth() > dueDate2.getMonth()) {
+          return(bill1);
+        } else if (dueDate1.getDate() < dueDate2.getDate()) {
+          return(bill2);
+        } else if (dueDate1.getDate() > dueDate2.getDate()) {
+          return(bill1);
+        } else {
+          return(bill1);
+        }
+      }
+
+      function getNextDueBill(bill1, bill2) {
+        let dueDate1 = new Date(bill1.due_date.slice(0,10));
+        let dueDate2 = new Date(bill2.due_date.slice(0,10));
+
+        if (dueDate1.getFullYear() < dueDate2.getFullYear()) {
+          return(bill1);
+        } else if (dueDate1.getFullYear() > dueDate2.getFullYear()) {
+          return(bill2);
+        } else if (dueDate1.getMonth() < dueDate2.getMonth()) {
+          return(bill1);
+        } else if (dueDate1.getMonth() > dueDate2.getMonth()) {
+          return(bill2);
+        } else if (dueDate1.getDate() < dueDate2.getDate()) {
+          return(bill1);
+        } else if (dueDate1.getDate() > dueDate2.getDate()) {
+          return(bill2);
+        } else {
+          return(bill1);
+        }
+      }
+
+      function getBillMonthString(yearDate) {
+        let months = [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+        let month = months[parseInt(yearDate.slice(5))] + ' ';
+        let year = yearDate.slice(0,4);
+
+        return(month + year);
+
+      }
+
+      function billsReport() {
+        let reportForBills = document.getElementById('reportForBills');
+        let billsManagerDone = document.getElementById('billsManagerDone');
+        let userBillsEditingDiv = document.getElementById('userBillsEditingDiv');
+        let billsReporter = document.getElementById('billsReporter');
+        let arrayOfVendors = [];
+        let objectOfVendors = {};
+        let mostCurrent;
+        let nextDue;
+        let months = [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+        let arrayOfYearDate = [];
+        let objectOfYearDate = {};
+        let yearDate;
+        let checkYearDate;
+
+        $http.get(`/billsbyuser/${currentUserId}`)
+        .then(userBillsData=>{
+          let userBills = userBillsData.data;
+          vm.billReporter = [];
+          vm.billVendors = [];
+          vm.billReporter[0] = {};
+          vm.billReporter[0].totalBills = userBills.length;
+          vm.billReporter[0].totalAmount = 0;
+          vm.billReporter[0].totalPaid = 0;
+          vm.billReporter[0].totalDue = 0;
+          vm.billReporter[0].overdue = 0;
+          vm.billMonths = [];
+          if (userBills.length > 0) {
+            for (let i = 0; i < userBills.length; i++) {
+              checkYearDate = new Date(userBills[i].due_date.slice(0,10));
+              yearDate = checkYearDate.getFullYear().toString() + '-' + checkYearDate.getMonth().toString();
+              vm.billReporter[0].totalAmount += parseFloat(userBills[i].amount_due);
+              if (userBills[i].is_paid) {
+                vm.billReporter[0].totalPaid += parseFloat(userBills[i].amount_paid);
+              } else {
+                vm.billReporter[0].totalDue += parseFloat(userBills[i].amount_due);
+                if (billOverdue(userBills[i])) {
+                  vm.billReporter[0].overdue += 1;
+                }
+              }
+              if (arrayOfVendors.indexOf(userBills[i].pay_to) === -1) {
+                arrayOfVendors.push(userBills[i].pay_to);
+                objectOfVendors[userBills[i].pay_to] = [];
+                objectOfVendors[userBills[i].pay_to].push(userBills[i]);
+              } else {
+                objectOfVendors[userBills[i].pay_to].push(userBills[i]);
+              }
+              if (arrayOfYearDate.indexOf(yearDate) === -1) {
+                arrayOfYearDate.push(yearDate);
+                objectOfYearDate[yearDate] = [];
+                objectOfYearDate[yearDate].push(userBills[i]);
+              } else {
+                objectOfYearDate[yearDate].push(userBills[i]);
+              }
+            }
+            arrayOfVendors = arrayOfVendors.sort((a, b)=>{
+              if (a.toLowerCase() < b.toLowerCase()) {
+                return -1;
+              } else if (a.toLowerCase() > b.toLowerCase()) {
+                return 1;
+              } else {
+                return 0;
+              }
+            });
+            arrayOfYearDate = arrayOfYearDate.sort((a, b)=>{
+              if (a < b) {
+                return -1;
+              } else if (a > b) {
+                return 1;
+              } else {
+                return 0;
+              }
+            });
+            for (let j = 0; j < arrayOfVendors.length; j++) {
+              vm.billVendors[j] = {};
+              vm.billVendors[j].name = arrayOfVendors[j];
+              vm.billVendors[j].totalPaid = parseFloat(0.00);
+              vm.billVendors[j].totalDue = 0;
+              vm.billVendors[j].recentBalance = 'not applicable';
+              vm.billVendors[j].nextDueDate = 'no unpaid bill(s) with this creditor';
+              mostCurrent = null;
+              nextDue = null;
+              for (let k = 0; k < objectOfVendors[arrayOfVendors[j]].length; k++) {
+                if (objectOfVendors[arrayOfVendors[j]][k].is_paid) {
+                  vm.billVendors[j].totalPaid += parseFloat(objectOfVendors[arrayOfVendors[j]][k].amount_paid);
+                } else {
+                  vm.billVendors[j].totalDue += parseFloat(objectOfVendors[arrayOfVendors[j]][k].amount_due);
+                }
+                if (mostCurrent === null) {
+                  mostCurrent = objectOfVendors[arrayOfVendors[j]][k];
+                } else {
+                  mostCurrent = getMoreCurrent(mostCurrent, objectOfVendors[arrayOfVendors[j]][k]);
+                }
+                if (nextDue === null) {
+                  nextDue = objectOfVendors[arrayOfVendors[j]][k];
+                } else {
+                  if (nextDue.is_paid) {
+                    if (objectOfVendors[arrayOfVendros[j]][k].is_paid) {
+                      nextDue = nextDue;
+                    } else {
+                      nextDue = objetOfVendors[arrayOfVendors[k]];
+                    }
+                  } else {
+                    if (objectOfVendors[arrayOfVendros[j]][k].is_paid) {
+                      nextDue = nextDue;
+                    } else {
+                      nextDue = getNextDueBill(nextDue, objectOfVendors[arrayOfVendros[j]][k]);
+                    }
+                  }
+                }
+              }
+              if (mostCurrent.balance !== null) {
+                if (mostCurrent.balance > 0) {
+                  vm.billVendors[j].recentBalance = '$' + mostCurrent.balance.toString();
+                }
+              }
+              if (!nextDue.is_paid) {
+                let theDate = new Date(nextDue.due_date.slice(0,10));
+                vm.billVendors[j].nextDueDate = theDate.getDate().toString() + ' ' + months[theDate.getMonth()] + ' ' + theDate.getFullYear().toString();
+              }
+            }
+            for (let l = 0; l < arrayOfYearDate.length; j++) {
+              vm.billMonths[l] = {};
+              vm.billMonths[l].billMonthString = getBillMonthString(arrayOfYearDate[l]);
+              vm.billMonths[l].billsTotal = 0;
+              vm.billMonths[l].billsTotalAmount = 0;
+              vm.billMonths[l].numberOfPaidBills = 0;
+              vm.billMonths[l].billsPaidTotal = 0;
+              vm.billMonths[l].numberOfUnpaidBills = 0;
+              vm.billMonths[l].dueTotal = 0;
+              for (let m = 0; m < objectOfYearDate[arrayOfYearDate[l]].length; m++) {
+                ++vm.billMonths[l].billsTotal;
+                vm.billMonths[l].billsTotalAmount += parseFloat(objectOfYearDate[arrayOfYearDate[l]][m].amount_due);
+                if (objectOfYearDate[arrayOfYearDate[l]][m].is_paid) {
+                  ++vm.billMonths[l].numberOfPaidBills;
+                  vm.billMonths[l].billsPaidTotal += parseFloat(objectOfYearDate[arrayOfYearDate[l]][m].amount_paid);
+                } else {
+                  ++vm.billMonths[l].numberOfUnpaidBills;
+                  vm.billMonths[l].dueTotal += parseFloat(objectOfYearDate[arrayOfYearDate[l]][m].amount_due);
+                }
+              }
+            }
+
+          }
+        });
+
+        reportForBills.setAttribute("style", "display: initial;");
+        billsManagerDone.setAttribute("style", "visibility: hidden;");
+        userBillsEditingDiv.setAttribute("style", "display: none;");
+        billsReporter.setAttribute("style", "visibility: hidden;");
+      }
 
       function addNewTask() {
         let checkDate = new Date();
@@ -183,7 +419,7 @@
         $http.post('/tasks', subObj)
         .then(createdTaskData=>{
           let createdTask = createdTaskData.data[0];
-          
+
           editTask(createdTask.id);
         });
       }
