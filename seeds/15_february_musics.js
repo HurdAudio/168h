@@ -2218,6 +2218,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 124,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2817867693/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ostinatorecords.bandcamp.com/album/synthesize-the-soul-astro-atlantic-hypnotica-from-the-cape-verde-islands-1973-1988',
+          a_string: 'Synthesize the Soul: Astro-Atlantic Hypnotica from the Cape Verde Islands 1973-1988 by Various Artists',
+          rule: {
+            "monday": [ 23, 27, 29, 2 ],
+            "tuesday": [ 6, 29, 2, 8 ],
+            "wednesday": [ 18, 23, 25, 8 ],
+            "thursday": [ 19, 23, 25, 29 ],
+            "saturday": [ 22, 25, 27, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 125,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1458926099/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://analogafrica.bandcamp.com/album/pop-makossa-the-invasive-dance-beat-of-cameroon-1976-1984',
+          a_string: 'Pop Makossa - The Invasive Dance Beat of Cameroon 1976-1984 by Various',
+          rule: {
+            "monday": [ 22, 25, 27, 2 ],
+            "tuesday": [ 23, 27, 29, 2 ],
+            "wednesday": [ 6, 29, 2, 8 ],
+            "thursday": [ 18, 23, 25, 8 ],
+            "saturday": [ 19, 23, 25, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 126,
+          user_id: 1,
+          theme: 'black history month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2830434610/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://therealpierrekwenders.bandcamp.com/album/makanda-at-the-end-of-space-the-beginning-of-time',
+          a_string: 'MAKANDA at the End of Space, the Beginning of Time by Pierre Kwenders',
+          rule: {
+            "monday": [ 20, 24, 26, 1 ],
+            "tuesday": [ 23, 26, 28, 3 ],
+            "wednesday": [ 24, 28, 1, 3 ],
+            "thursday": [ 7, 1, 3, 9 ],
+            "saturday": [ 19, 24, 26, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
