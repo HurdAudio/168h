@@ -1786,6 +1786,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 100,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3451854041/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://kylebobbydunn.bandcamp.com/album/music-for-medication',
+          a_string: 'Music for Medication by Kyle Bobby Dunn',
+          rule: {
+            "monday": [ 13, 17, 22, 4 ],
+            "tuesday": [ 13, 16, 22, 3 ],
+            "wednesday": [ 11, 19, 21, 2 ],
+            "thursday": [ 15, 19, 25, 6 ],
+            "saturday": [ 14, 17, 24, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 101,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2831529311/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://kylebobbydunn.bandcamp.com/album/six-cognitive-works',
+          a_string: 'Six Cognitive Works by Kyle Bobby Dunn',
+          rule: {
+            "monday": [ 14, 17, 24, 4 ],
+            "tuesday": [ 13, 17, 22, 4 ],
+            "wednesday": [ 13, 16, 22, 3 ],
+            "thursday": [ 11, 19, 21, 2 ],
+            "saturday": [ 15, 19, 25, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 102,
+          user_id: 1,
+          theme: 'drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1536680056/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://greggkowalsky.bandcamp.com/album/lorange-lorange',
+          a_string: 'L&#39;Orange, L&#39;Orange by Gregg Kowalsky',
+          rule: {
+            "monday": [ 15, 19, 25, 6 ],
+            "tuesday": [ 14, 17, 24, 4 ],
+            "wednesday": [ 13, 17, 22, 4 ],
+            "thursday": [ 13, 16, 22, 3 ],
+            "saturday": [ 11, 19, 21, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
