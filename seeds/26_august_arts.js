@@ -3004,6 +3004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 151,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/blue-red-composition-1919.jpg',
+          title: 'Blue-Red Composition',
+          artist: 'Sandor Bortnyik',
+          year: '1919',
+          rule: {
+            "monday": [ 20, 23, 1, 17 ],
+            "tuesday": [ 19, 22, 31, 16 ],
+            "wednesday": [ 25, 29, 6, 22 ],
+            "thursday": [ 24, 27, 5, 21 ],
+            "friday": [ 23, 27, 4, 20 ],
+            "saturday": [ 22, 26, 3, 19 ],
+            "sunday": [ 21, 23, 2, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 152,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/composition-1938.jpg',
+          title: 'Composition',
+          artist: 'Otto Freundlich',
+          year: '1938',
+          rule: {
+            "monday": [ 21, 23, 2, 18 ],
+            "tuesday": [ 20, 23, 1, 17 ],
+            "wednesday": [ 19, 22, 31, 16 ],
+            "thursday": [ 25, 29, 6, 22 ],
+            "friday": [ 24, 27, 5, 21 ],
+            "saturday": [ 23, 27, 4, 20 ],
+            "sunday": [ 22, 26, 3, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 153,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/hygeia-detail-of-medicine-1907.jpg',
+          title: 'University of Vienna Ceiling Paintings (Medicine), detail showing Hygieia',
+          artist: 'Gustav Klimt',
+          year: '1900 - 1907',
+          rule: {
+            "monday": [ 22, 26, 3, 19 ],
+            "tuesday": [ 21, 23, 2, 18 ],
+            "wednesday": [ 20, 23, 1, 17 ],
+            "thursday": [ 19, 22, 31, 16 ],
+            "friday": [ 25, 29, 6, 22 ],
+            "saturday": [ 24, 27, 5, 21 ],
+            "sunday": [ 23, 27, 4, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 154,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/composition-abstraite-1926.jpg',
+          title: 'Composition abstraite',
+          artist: 'Marcelle Cahn',
+          year: '1926',
+          rule: {
+            "monday": [ 24, 28, 5, 21 ],
+            "tuesday": [ 23, 27, 4, 20 ],
+            "wednesday": [ 22, 24, 3, 19 ],
+            "thursday": [ 21, 24, 2, 18 ],
+            "friday": [ 20, 23, 1, 17 ],
+            "saturday": [ 26, 30, 7, 23 ],
+            "sunday": [ 25, 28, 6, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 155,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/water-lily-pond-1.jpg',
+          title: 'Water Lily Pond',
+          artist: 'Claude Monet',
+          year: '1917',
+          rule: {
+            "monday": [ 25, 28, 6, 22 ],
+            "tuesday": [ 24, 28, 5, 21 ],
+            "wednesday": [ 23, 27, 4, 20 ],
+            "thursday": [ 22, 24, 3, 19 ],
+            "friday": [ 21, 24, 2, 18 ],
+            "saturday": [ 20, 23, 1, 17 ],
+            "sunday": [ 26, 30, 7, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
