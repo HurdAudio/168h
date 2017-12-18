@@ -3804,6 +3804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 191,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/sanpancho1.jpg',
+          title: 'Giants mural at Bar San Pancho',
+          artist: 'Sam Flores and Ronnie Buders',
+          year: '2017',
+          rule: {
+            "monday": [ 27, 3, 8, 15 ],
+            "tuesday": [ 11, 1, 7, 14 ],
+            "wednesday": [ 26, 1, 7, 13 ],
+            "thursday": [ 25, 29, 14, 12 ],
+            "friday": [ 24, 29, 4, 10 ],
+            "saturday": [ 23, 28, 4, 10 ],
+            "sunday": [ 22, 27, 3, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 192,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/2eb87eb315ca6b93aab65cb75cd1388b.jpg',
+          title: 'Hand painted mural of Dodger Stadium on a 1940\'s era Baseball Glove ',
+          artist: 'George Lopez',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 22, 27, 3, 9 ],
+            "tuesday": [ 27, 3, 8, 15 ],
+            "wednesday": [ 11, 1, 7, 14 ],
+            "thursday": [ 26, 1, 7, 13 ],
+            "friday": [ 25, 29, 14, 12 ],
+            "saturday": [ 24, 29, 4, 10 ],
+            "sunday": [ 23, 28, 4, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 193,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/9786e5848eda6f14f335a056e955c663.jpg',
+          title: 'Big Red Machine',
+          artist: 'Mark Riedy',
+          year: '1975',
+          rule: {
+            "monday": [ 23, 28, 4, 10 ],
+            "tuesday": [ 22, 27, 3, 9 ],
+            "wednesday": [ 27, 3, 8, 15 ],
+            "thursday": [ 11, 1, 7, 14 ],
+            "friday": [ 26, 1, 7, 13 ],
+            "saturday": [ 25, 29, 14, 12 ],
+            "sunday": [ 24, 29, 4, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 194,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/e792499fe8a6327f17700a8174ef4de9--baseball-posters-baseball-art.jpg',
+          title: 'Big Papi David Ortiz in Yankee Stadium',
+          artist: 'Dave Olsen',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 24, 29, 4, 10 ],
+            "tuesday": [ 23, 28, 4, 10 ],
+            "wednesday": [ 22, 27, 3, 9 ],
+            "thursday": [ 27, 3, 8, 15 ],
+            "friday": [ 11, 1, 7, 14 ],
+            "saturday": [ 26, 1, 7, 13 ],
+            "sunday": [ 25, 29, 14, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 195,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/a97505ab779fae6f637415ae0c87b69e--baseball-field-baseball-art.jpg',
+          title: '?',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 25, 29, 14, 12 ],
+            "tuesday": [ 24, 29, 4, 10 ],
+            "wednesday": [ 23, 28, 4, 10 ],
+            "thursday": [ 22, 27, 3, 9 ],
+            "friday": [ 27, 3, 8, 15 ],
+            "saturday": [ 11, 1, 7, 14 ],
+            "sunday": [ 26, 1, 7, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
