@@ -8873,8 +8873,8 @@ exports.seed = function(knex, Promise) {
           picture: './img/musicians/davidborden.jpg',
           day_of: new Date ('1938-12-25T13:44:00.000Z'),
           is_annual: true,
-          art_override: true,
-          music_override: false,
+          art_override: false,
+          music_override: true,
           override_content: {
             "sources": [ 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp' ],
             "src_strings": [ 'https://bandcamp.com/EmbeddedPlayer/album=3033999816/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=2843949395/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=2785955380/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=1818635318/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/' ],

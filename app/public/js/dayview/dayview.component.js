@@ -1640,9 +1640,12 @@
                   ++indexMusic;
                 }
               }
+
             }
+            console.log(vm.arts);
           }
           //art override content
+
           monthArt();
           //music override content
           monthMusic();
@@ -1824,7 +1827,7 @@
             $http.get(`/${theMonthString}/${currentUserId}`)
             .then(monthMusicData=>{
               let monthMusic = monthMusicData.data;
-              console.log(monthMusic);
+              //console.log(monthMusic);
               for (let pp = 0; pp < monthMusic.length; pp++) {
                 if (monthMusic[pp].rule[dayOfWeek].indexOf(theDate.getDate()) !== -1) {
                   vm.musics[indexMusic] = {};
@@ -1980,6 +1983,7 @@
                 ++indexArt;
               }
             }
+            console.log(vm.arts);
             if (vm.arts.length > 1) {
               let indice = 0;
 
