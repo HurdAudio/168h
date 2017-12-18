@@ -2326,6 +2326,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 130,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=483535213/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://xirecords.bandcamp.com/album/same-same',
+          a_string: 'Same Same by Fast Forward',
+          rule: {
+            "monday": [ 25, 1, 2, 3 ],
+            "tuesday": [ 29, 5, 6, 7 ],
+            "wednesday": [ 28, 4, 5, 6 ],
+            "thursday": [ 27, 3, 4, 5 ],
+            "saturday": [ 26, 2, 3, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 131,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3658349218/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://worstward.bandcamp.com/album/the-landscape-of-memory',
+          a_string: 'The Landscape of Memory by Ulaan Passerine',
+          rule: {
+            "monday": [ 26, 2, 3, 4 ],
+            "tuesday": [ 25, 1, 2, 3 ],
+            "wednesday": [ 29, 5, 6, 7 ],
+            "thursday": [ 28, 4, 5, 6 ],
+            "saturday": [ 27, 3, 4, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 132,
+          user_id: 1,
+          theme: 'american mavericks',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3041243412/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jeremiahcymerman.bandcamp.com/album/chaos-of-memory',
+          a_string: 'Chaos of Memory by Bloodmist',
+          rule: {
+            "monday": [ 27, 3, 4, 5 ],
+            "tuesday": [ 26, 2, 3, 4 ],
+            "wednesday": [ 25, 1, 2, 3 ],
+            "thursday": [ 29, 5, 6, 7 ],
+            "saturday": [ 28, 4, 5, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
