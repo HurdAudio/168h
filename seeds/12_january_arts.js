@@ -4404,6 +4404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 221,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/lotus-1962.jpg',
+          title: 'Lotus',
+          artist: 'Friedel Dzubas',
+          year: '1962',
+          rule: {
+            "monday": [ 15, 17, 18, 21 ],
+            "tuesday": [ 31, 1, 12, 4 ],
+            "wednesday": [ 3, 5, 28, 17 ],
+            "thursday": [ 5, 6, 29, 1 ],
+            "friday": [ 8, 9, 31, 4 ],
+            "saturday": [ 11, 13, 14, 16 ],
+            "sunday": [ 13, 15, 19, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 222,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/abstraction-1964.jpg',
+          title: 'Abstraction',
+          artist: 'Lawren Harris',
+          year: '1964',
+          rule: {
+            "monday": [ 13, 15, 19, 22 ],
+            "tuesday": [ 15, 17, 18, 21 ],
+            "wednesday": [ 31, 1, 12, 4 ],
+            "thursday": [ 3, 5, 28, 17 ],
+            "friday": [ 5, 6, 29, 1 ],
+            "saturday": [ 8, 9, 31, 4 ],
+            "sunday": [ 11, 13, 14, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 223,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/the-time-machine-2002.jpg',
+          title: 'The Time Machine',
+          artist: 'Peter Halley',
+          year: '2002',
+          rule: {
+            "monday": [ 11, 13, 14, 16 ],
+            "tuesday": [ 13, 15, 19, 22 ],
+            "wednesday": [ 15, 17, 18, 21 ],
+            "thursday": [ 31, 1, 12, 4 ],
+            "friday": [ 3, 5, 28, 17 ],
+            "saturday": [ 5, 6, 29, 1 ],
+            "sunday": [ 8, 9, 31, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 224,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/untitled-1968.jpg',
+          title: 'Untitled',
+          artist: 'Ron Gorchov',
+          year: '1968',
+          rule: {
+            "monday": [ 9, 10, 1, 5 ],
+            "tuesday": [ 12, 14, 15, 17 ],
+            "wednesday": [ 14, 16, 20, 23 ],
+            "thursday": [ 16, 18, 19, 22 ],
+            "friday": [ 1, 2, 13, 5 ],
+            "saturday": [ 4, 6, 29, 18 ],
+            "sunday": [ 6, 7, 30, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 225,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/intersuperficie-curva-dall-azzurro-1967.jpg',
+          title: 'Intersuperficie curva dall\'azzurro',
+          artist: 'Paolo Scheggi',
+          year: '1967',
+          rule: {
+            "monday": [ 6, 7, 30, 2 ],
+            "tuesday": [ 9, 10, 1, 5 ],
+            "wednesday": [ 12, 14, 15, 17 ],
+            "thursday": [ 14, 16, 20, 23 ],
+            "friday": [ 16, 18, 19, 22 ],
+            "saturday": [ 1, 2, 13, 5 ],
+            "sunday": [ 4, 6, 29, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
