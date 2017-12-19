@@ -8897,6 +8897,34 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 568,
+          user_id: 1,
+          name: 'Elizabeth Cady Stanton (suffragist, social activist, abolitionist) born in 1815',
+          color: '#599BBA',
+          picture: './img/feminist/elizabethcadystanton.JPG',
+          day_of: new Date ('1815-11-12T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 569,
+          user_id: 1,
+          name: 'The world ended on this day in 1989 exactly as fortold by Edgar C. Whisenant\'s second apocalyptic prediction.',
+          color: '#CB695D',
+          picture: './img/doomsday/edgarcwhisenant.jpg',
+          day_of: new Date ('1989-09-30T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
