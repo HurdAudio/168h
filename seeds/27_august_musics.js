@@ -8,7 +8,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 1,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3891162338/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://wolf-eyes.bandcamp.com/album/no-hate',
@@ -26,7 +26,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 2,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=970917910/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://elevatorbath.bandcamp.com/album/soundtrack-for-dislocation',
@@ -44,7 +44,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 3,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1170682572/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://elevatorbath.bandcamp.com/album/flammable-materials-from-foreign-lands',
@@ -62,7 +62,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 4,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=309991513/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://chondriticsound.bandcamp.com/album/trojan-self-image',
@@ -80,7 +80,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 5,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2992995276/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://redvenicerecords.bandcamp.com/album/rvr0156-torturing-nurse-live-dvd',
@@ -98,7 +98,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 6,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1422793729/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://clppng.bandcamp.com/album/splendor-misery',
@@ -116,7 +116,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 7,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2308093458/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://killick.bandcamp.com/album/lave-worriers-intuitive-intonation-unquantifiable-rhythms-shamanistic-roygbiv',
@@ -134,7 +134,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 8,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1253735900/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://idmtheftable.bandcamp.com/album/if-im-too-fat-for-you-why-dont-you-come-over-here-and-suck-out-all-the-fat',
@@ -152,7 +152,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 9,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=648627486/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://djll.bandcamp.com/album/skin-tightener',
@@ -170,7 +170,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 10,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3137693925/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://wolf-eyes.bandcamp.com/album/burned-mind',
@@ -188,7 +188,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 11,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=341125608/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://samrog.bandcamp.com/album/neon-amazon',
@@ -206,7 +206,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 12,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3298020341/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://trippyabacus.bandcamp.com/album/t-ra-p',
@@ -224,7 +224,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 13,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=482187387/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://black-dice.bandcamp.com/album/creature-comforts',
@@ -242,7 +242,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 14,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=669718914/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://merzbow.bandcamp.com/album/dharma',
@@ -260,7 +260,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 15,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2432690131/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://cuneiformrecords.bandcamp.com/album/chronolyse',
@@ -278,7 +278,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 16,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=824963388/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://arrington.bandcamp.com/album/saturn-returns-2004',
@@ -296,7 +296,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 17,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1112452603/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://instinctorecords.bandcamp.com/album/lumbobas-tube',
@@ -314,7 +314,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 18,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2169340236/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://coldcave.bandcamp.com/album/cremations',
@@ -332,7 +332,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 19,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2286701044/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://wolf-eyes.bandcamp.com/album/wolf-eyes-burning-log-session-july-20th-2016',
@@ -350,7 +350,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 20,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=783684778/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://kevindrumm.bandcamp.com/album/artificial-organ',
@@ -368,7 +368,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 21,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=72989750/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://glisteningexamples.bandcamp.com/album/dissolution',
@@ -386,7 +386,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 22,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=920537162/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://idmtheftable.bandcamp.com/album/hangin-flaccid-like-a-wet-lilac',
@@ -404,7 +404,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 23,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=946995988/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://sipulijaska.bandcamp.com/album/algoritmi',
@@ -422,7 +422,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 24,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=563982890/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://ambifunk.bandcamp.com/album/live-at-akusmata-helsinki-02112016',
@@ -440,7 +440,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 25,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3025660758/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://arrington.bandcamp.com/album/unheard-indonesia-vol-7-pancak-silat-situbondo',
@@ -458,7 +458,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 26,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3318145375/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://jaccrecords.bandcamp.com/album/timeless',
@@ -476,7 +476,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 27,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3146416018/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://joemorrisritiglacialeratic.bandcamp.com/album/likewise',
@@ -494,7 +494,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 28,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3173709007/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://caminanterecordings.bandcamp.com/album/merzdub',
@@ -512,7 +512,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 29,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=585814970/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://bleibmodern.bandcamp.com/album/antagonism-lp',
@@ -530,7 +530,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 30,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4233208522/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://redvenicerecords.bandcamp.com/album/torturing-nurse-slave',
@@ -548,7 +548,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 31,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=430240605/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://wolf-eyes.bandcamp.com/album/time-of-clearing',
@@ -566,7 +566,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 32,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1937172481/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://kevindrumm.bandcamp.com/album/triangles',
@@ -584,7 +584,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 33,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1265430461/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://frozenreeds.bandcamp.com/album/joy-boy',
@@ -602,7 +602,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 34,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=154027505/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://djll.bandcamp.com/album/from-outhouse-to-icehouse',
@@ -620,7 +620,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 35,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2131501157/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://timperkis.bandcamp.com/album/kinda-green',
@@ -638,7 +638,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 36,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2498444657/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://timperkis.bandcamp.com/album/applied-cryptography',
@@ -656,7 +656,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 37,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=687005163/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://newcandys.bandcamp.com/album/bleeding-magenta',
@@ -674,7 +674,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 38,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3538895410/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://damosuzukinetwork.bandcamp.com/album/the-swiftsure-session',
@@ -692,7 +692,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 39,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2065289295/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://arrington.bandcamp.com/album/ten-thousand-tigers',
@@ -710,7 +710,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 40,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=222549677/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://wolf-eyes.bandcamp.com/album/always-wrong',
@@ -728,7 +728,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 41,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3735682806/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://wolf-eyes.bandcamp.com/album/live-frying-chicago-may-28-2004',
@@ -746,7 +746,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 42,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=673550151/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://fiffdimension.bandcamp.com/album/in-the-non-idiomatic-idiom-in-norway',
@@ -764,7 +764,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 43,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3081573552/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://ligeiamare.bandcamp.com/album/trident',
@@ -782,7 +782,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 44,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=638723614/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://ligeiamare.bandcamp.com/album/8-9',
@@ -800,7 +800,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 45,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3448762687/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://ligeiamare.bandcamp.com/album/quill',
@@ -818,7 +818,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 46,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=997678320/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://killick.bandcamp.com/album/fac-a-d-e',
@@ -836,7 +836,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 47,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1492914464/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://missincinatti.bandcamp.com/album/remove-not-the-ancient-landmarks',
@@ -854,7 +854,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 48,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2808496546/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://jeffmcleod.bandcamp.com/album/under-dim-self',
@@ -872,7 +872,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 49,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2674951238/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://hansonrecords.bandcamp.com/album/slicer',
@@ -890,7 +890,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 50,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1356612729/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://glisteningexamples.bandcamp.com/album/this-is-what-i-do-volume-one',
@@ -908,7 +908,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 51,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=774652819/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://hansonrecords.bandcamp.com/album/songs-about-jason',
@@ -926,7 +926,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 52,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2639669908/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://arrington.bandcamp.com/album/songs-of-psychic-fire-vol-i',
@@ -944,7 +944,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 53,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3551969832/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://tourdebras.bandcamp.com/album/chants-et-danses-vol-iii-with-strings',
@@ -962,7 +962,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 54,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3836116562/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://tourdebras.bandcamp.com/album/malcolm-goldstein-thomas-lehn-web',
@@ -980,7 +980,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 55,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=487324111/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://wolf-eyes.bandcamp.com/album/burnt-out-vol-1',
@@ -998,7 +998,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 56,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2933784511/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://glisteningexamples.bandcamp.com/album/the-invisible-curse',
@@ -1016,7 +1016,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 57,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=149762818/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://nmperign.bandcamp.com/album/love-me-two-times',
@@ -1034,7 +1034,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 58,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1739250324/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://endofthealphabetrecords.bandcamp.com/album/there-is-no-music-from-china',
@@ -1052,7 +1052,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 59,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1151820027/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://gbjd.bandcamp.com/album/black-sheep',
@@ -1070,7 +1070,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 60,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=955976567/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://notincatalog.bandcamp.com/album/not-in-catalog-debut-album',
@@ -1088,7 +1088,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 61,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2277502811/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://killick.bandcamp.com/album/never-stop-lovin',
@@ -1106,7 +1106,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 62,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=495289191/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://kyledawkins.bandcamp.com/album/conasauga',
@@ -1124,7 +1124,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 63,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1013983222/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://nostalgiedelaboue.bandcamp.com/album/rien-ni-personne-volume-ii-iii',
@@ -1142,7 +1142,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 64,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2810799458/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://ligeiamare.bandcamp.com/album/penumbra',
@@ -1160,7 +1160,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 65,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1046147047/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://ligeiamare.bandcamp.com/album/mirages',
@@ -1178,7 +1178,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 66,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3302633823/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://killick.bandcamp.com/album/broadcast-no-1',
@@ -1196,7 +1196,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 67,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4088072951/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://mnoad.bandcamp.com/album/9-syllables',
@@ -1214,7 +1214,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 68,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3601429188/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://mnoad.bandcamp.com/album/lyra',
@@ -1232,7 +1232,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 69,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=314193732/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://mnoad.bandcamp.com/album/polychoral',
@@ -1250,7 +1250,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 70,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=658114645/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://coldspring.bandcamp.com/album/the-black-post-society',
@@ -1268,7 +1268,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 71,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=165420124/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://bugscrawlingoutofpeople.bandcamp.com/album/computerus',
@@ -1286,7 +1286,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 72,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=383619065/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://looselips123.bandcamp.com/album/ll012-masaki-uchida-xenolinguistics',
@@ -1304,7 +1304,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 73,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3633008751/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://killick.bandcamp.com/album/rust-svelte',
@@ -1322,7 +1322,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 74,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=570722790/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://killick.bandcamp.com/album/forte-over-forte',
@@ -1340,7 +1340,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 75,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=275469629/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://killick.bandcamp.com/album/sunrise-over-africa',
@@ -1358,7 +1358,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 76,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2631446768/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://intonema.bandcamp.com/album/axon',
@@ -1376,7 +1376,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 77,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2235065992/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://intonema.bandcamp.com/album/edged-timbre',
@@ -1394,7 +1394,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 78,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1650882623/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://intonema.bandcamp.com/album/there-back',
@@ -1412,7 +1412,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 79,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=396492404/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://erstwhilerecords.bandcamp.com/album/l-me-est-sans-retenue-i',
@@ -1430,7 +1430,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 80,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3058210/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://erstwhilerecords.bandcamp.com/album/13-thirteen',
@@ -1448,7 +1448,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 81,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=840883265/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://erstwhilerecords.bandcamp.com/album/the-whistler',
@@ -1466,7 +1466,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 82,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=639555287/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://p-mm.bandcamp.com/album/pmm-sun-city-grils-pelican92',
@@ -1484,7 +1484,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 83,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3341535147/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://tashidorji-slr.bandcamp.com/album/fixed-entrance-derivatives',
@@ -1502,7 +1502,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 84,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2627096366/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://oralrecords.bandcamp.com/album/ma-ta-ta-bi',
@@ -1520,7 +1520,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 85,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4145342150/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://ligeiamare.bandcamp.com/album/farewell-cassini',
@@ -1538,7 +1538,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 86,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=750261788/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://ligeiamare.bandcamp.com/album/the-green-fire-bull',
@@ -1556,7 +1556,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 87,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1412147972/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://ligeiamare.bandcamp.com/album/the-low-mids',
@@ -1574,7 +1574,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 88,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=514392964/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://natewooley.bandcamp.com/album/argonautica',
@@ -1592,7 +1592,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 89,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2770575154/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://idmtheftable.bandcamp.com/album/errored-jellies-jellied-errors',
@@ -1610,7 +1610,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 90,
           user_id: 1,
-          theme: 'noise/non-idiomatic',
+          theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3581082979/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://jaapblonk.bandcamp.com/album/asemic-dialogues',

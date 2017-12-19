@@ -8,7 +8,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 1,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=467347803/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://vandermark1.bandcamp.com/album/momentum-1-stone',
@@ -26,7 +26,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 2,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2777684326/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://sonorus-records.bandcamp.com/album/autotelic',
@@ -44,7 +44,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 3,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=909149659/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://joemcphee.bandcamp.com/album/the-brass-city',
@@ -62,7 +62,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 4,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3580399100/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://aerophonicrecords.bandcamp.com/album/hit-the-ground-running-all-proceeds-to-benefit-refugee-one',
@@ -80,7 +80,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 5,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1243137714/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://joemcphee.bandcamp.com/album/the-dream-book',
@@ -98,7 +98,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 6,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3668515304/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://mattpiet.bandcamp.com/album/live-at-constellation',
@@ -116,7 +116,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 7,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1857682343/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://mattpiet.bandcamp.com/album/out-of-step-live-in-amsterdam',
@@ -134,7 +134,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 8,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=682776265/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://intlanthem.bandcamp.com/album/ultraviolet',
@@ -152,7 +152,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 9,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3498965030/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://intlanthem.bandcamp.com/album/bottle-tree',
@@ -170,7 +170,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 10,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1028063960/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://johnbutcher.bandcamp.com/album/bell-trove-spools-2',
@@ -188,7 +188,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 11,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2362157429/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://jasonkaohwang.bandcamp.com/album/jason-kao-hwang-edge-2006',
@@ -206,7 +206,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 12,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3016926047/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://joemcphee.bandcamp.com/album/journey',
@@ -224,7 +224,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 13,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=612056518/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://jebbishop.bandcamp.com/album/2009-middle-west',
@@ -242,7 +242,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 14,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4107847956/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://vandermark1.bandcamp.com/album/escalator',
@@ -260,7 +260,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 15,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3393583437/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://blackzonemythchant.bandcamp.com/album/mane-thecel-phares',
@@ -278,7 +278,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 16,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1328109578/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://chrisspeed.bandcamp.com/album/ruins',
@@ -296,7 +296,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 17,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3923641399/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://aerophonicrecords.bandcamp.com/album/lattice',
@@ -314,7 +314,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 18,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3596587766/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://hernanifaustino.bandcamp.com/album/lisbon-connection',
@@ -332,7 +332,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 19,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=205068890/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://cuneiformrecords.bandcamp.com/album/bremen-to-bridgwater',
@@ -350,7 +350,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 20,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=905997959/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://cuneiformrecords.bandcamp.com/album/beating-the-teens-songs-of-steve-lacy',
@@ -368,7 +368,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 21,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3156874954/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://cuneiformrecords.bandcamp.com/album/a-night-walking-through-mirrors',
@@ -386,7 +386,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 22,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3037455370/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://ingebrigtflaten.bandcamp.com/album/meet-the-locals',
@@ -404,7 +404,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 23,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=321746804/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://ingebrigtflaten.bandcamp.com/album/theater-tilters-vol-ii',
@@ -422,7 +422,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 24,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=504011275/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://ingebrigtflaten.bandcamp.com/album/its-a-delicate-thing',
@@ -440,7 +440,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 25,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3223398011/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://cuneiformrecords.bandcamp.com/album/somnambulist',
@@ -458,7 +458,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 26,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4106340234/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://sketchbookquartett.bandcamp.com/album/ottos-mops',
@@ -476,7 +476,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 27,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=852414889/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://leapoffaith1.bandcamp.com/album/zenos-paradox',
@@ -494,7 +494,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 28,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1026454116/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://timdaisyrelayrecords.bandcamp.com/album/darren-johnston-tim-daisy-crossing-belmont-relay-digital-006',
@@ -512,7 +512,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 29,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1146678931/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://jasonstein.bandcamp.com/album/lucille',
@@ -530,7 +530,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 30,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=21123771/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://intlanthem.bandcamp.com/album/fly-or-die',
@@ -548,7 +548,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 31,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3136913313/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://peterbrtzmann.bandcamp.com/album/chicago-tentet-1-3-nights-in-oslo',
@@ -566,7 +566,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 32,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2047090175/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://briggankrauss.bandcamp.com/album/the-art-of-the-saxophone-live-at-the-saalfelden-jazz-festival-2017',
@@ -584,7 +584,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 33,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3853683360/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://vandermark1.bandcamp.com/album/rara-avis-2',
@@ -602,7 +602,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 34,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4002071568/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://marswilliams.bandcamp.com/album/unusual-words',
@@ -620,7 +620,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 35,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1307492242/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://intlanthem.bandcamp.com/album/the-new-breed',
@@ -638,7 +638,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 36,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3496899550/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://thebridgesessions.bandcamp.com/album/twins',
@@ -656,7 +656,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 37,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2391481248/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://rodrigopinheiro.bandcamp.com/album/summer-skyshift',
@@ -674,7 +674,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 38,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1927433318/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://rodrigopinheiro.bandcamp.com/album/clocks-clouds',
@@ -692,7 +692,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 39,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2107741802/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://thenecksau.bandcamp.com/album/vertigo',
@@ -710,7 +710,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 40,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=682733157/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://taylorhobynum.bandcamp.com/album/enter-the-plustet',
@@ -728,7 +728,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 41,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'http://bandcamp.com/EmbeddedPlayer/album=2637307575/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://firehouse12records.com/album/ubatuba',
@@ -746,7 +746,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 42,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3505407304/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://aerophonicrecords.bandcamp.com/album/green-knights',
@@ -764,7 +764,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 43,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=514392964/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://natewooley.bandcamp.com/album/argonautica',
@@ -782,7 +782,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 44,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2827536636/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://peterevansmusic.bandcamp.com/album/genesis',
@@ -800,7 +800,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 45,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1107896037/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://rossmchenry.bandcamp.com/album/child-of-somebody',
@@ -818,7 +818,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 46,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1498188536/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://aramshelton.bandcamp.com/album/octet',
@@ -836,7 +836,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 47,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2521744569/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://aramshelton.bandcamp.com/album/bygning-g',
@@ -854,7 +854,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 48,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3183556239/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://aramshelton.bandcamp.com/album/sticks-and-reed',
@@ -872,7 +872,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 49,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3246836406/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://ingebrigtflaten.bandcamp.com/album/moments-form',
@@ -890,7 +890,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 50,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1005341702/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://cuneiformrecords.bandcamp.com/album/the-songs-of-albert-ayler',
@@ -908,7 +908,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 51,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2950135151/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://paraphrasetimberne.bandcamp.com/album/pre-emptive-denial',
@@ -926,7 +926,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 52,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2107185416/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://driffrecords.bandcamp.com/album/1000-words',
@@ -944,7 +944,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 53,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2607175037/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://driffrecords.bandcamp.com/album/circuitous',
@@ -962,7 +962,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 54,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1098182953/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://driffrecords.bandcamp.com/album/bathysphere',
@@ -980,7 +980,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 55,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3667949691/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://mikereed1.bandcamp.com/album/flesh-bone',
@@ -998,7 +998,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 56,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=710407335/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://cuneiformrecords.bandcamp.com/album/convallaria',
@@ -1016,7 +1016,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 57,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=536503710/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://balancepointacoustics.bandcamp.com/album/bpa-017-the-catastrophe-of-minimalism',
@@ -1034,7 +1034,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 58,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3873763248/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://johnbutcher1.bandcamp.com/album/nigemizu',
@@ -1052,7 +1052,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 59,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2991576717/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://danblacksberg.bandcamp.com/album/radiant-others',
@@ -1070,7 +1070,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 60,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=434562700/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://grahamcostello.bandcamp.com/album/s-t-r-a-t-a',
@@ -1088,7 +1088,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 61,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=695837592/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://aumfidelity.bandcamp.com/album/black-cherry-piercing-the-veil-in-dub',
@@ -1106,7 +1106,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 62,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=639555287/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://p-mm.bandcamp.com/album/pmm-sun-city-grils-pelican92',
@@ -1124,7 +1124,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 63,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2374411763/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://nakatanikawabatachou.bandcamp.com/album/perigee',
@@ -1142,7 +1142,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 64,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2169293333/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://colinwebster.bandcamp.com/album/most-of-what-follows-is-true',
@@ -1160,7 +1160,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 65,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3637057682/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://porticoquartet.bandcamp.com/album/art-in-the-age-of-automation',
@@ -1178,7 +1178,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 66,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3638337658/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://matthewhalsall.bandcamp.com/album/into-forever',
@@ -1196,7 +1196,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 67,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'http://bandcamp.com/EmbeddedPlayer/album=1000438910/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://music.microkingdom.com/album/return-to-the-valley-of-the-jeep-beats',
@@ -1214,7 +1214,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 68,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1928719438/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://pnlrecords.bandcamp.com/album/fluku',
@@ -1232,7 +1232,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 69,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=893355010/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://aerophonicrecords.bandcamp.com/album/wistfully',
@@ -1250,7 +1250,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 70,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3969055914/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://trostrecords.bandcamp.com/album/schraubenlieder',
@@ -1268,7 +1268,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 71,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=315101896/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://f-a-t-a-k-a.bandcamp.com/album/muddy-ditch',
@@ -1286,7 +1286,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 72,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4206341431/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://trostrecords.bandcamp.com/album/falling-and-5-other-failings',
@@ -1304,7 +1304,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 73,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2273704258/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://peira.bandcamp.com/album/pm21-bascule',
@@ -1322,7 +1322,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 74,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1851477979/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://peira.bandcamp.com/album/pm20-sack-of-rice',
@@ -1340,7 +1340,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 75,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2784287621/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://peira.bandcamp.com/album/pm19-three-babies',
@@ -1358,7 +1358,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 76,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=177034270/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://glacialerratic.bandcamp.com/album/nominedomine-joe-morris-jamie-saft',
@@ -1376,7 +1376,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 77,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=867978653/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://sluchaj.bandcamp.com/album/live-in-warsaw',
@@ -1394,7 +1394,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 78,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2070208487/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://sluchaj.bandcamp.com/album/celebration-ensemble',
@@ -1412,7 +1412,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 79,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1866111260/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://keithtippett.bandcamp.com/album/live-at-le-mans',
@@ -1430,7 +1430,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 80,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1947944204/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://linaallemano.bandcamp.com/album/squish-it',
@@ -1448,7 +1448,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 81,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3693948926/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://glamournails.bandcamp.com/album/glamour-nails',
@@ -1466,7 +1466,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 82,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1269458615/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://wildflowermusic.bandcamp.com/album/wildflower',
@@ -1484,7 +1484,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 83,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2178562759/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://tonyburkill.bandcamp.com/album/work-money-death',
@@ -1502,7 +1502,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 84,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2301339764/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://bjornmeyer.bandcamp.com/album/provenance-2',
@@ -1520,7 +1520,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 85,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1201496113/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://bocian.bandcamp.com/album/you-can-be-mine',
@@ -1538,7 +1538,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 86,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1733766922/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://bocian.bandcamp.com/album/duft',
@@ -1556,7 +1556,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 87,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2257017568/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://bocian.bandcamp.com/album/gtr-synth-2000',
@@ -1574,7 +1574,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 88,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=674664531/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://badbadnotgood.bandcamp.com/album/bbng2',
@@ -1592,7 +1592,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 89,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2504387784/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://illconsidered.bandcamp.com/album/ill-considered',
@@ -1610,7 +1610,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 90,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3747342065/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://hysm.bandcamp.com/album/standing-on-the-verge-of-ascension-hysm-136',
@@ -1628,7 +1628,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 91,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1035468813/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://otra.bandcamp.com/album/otra',
@@ -1646,7 +1646,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 92,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2766612070/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://aumfidelity.bandcamp.com/album/uncle-joes-spirit-house',
@@ -1664,7 +1664,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 93,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=814386422/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://aumfidelity.bandcamp.com/album/cosmic-lieder',
@@ -1682,7 +1682,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 94,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3501715583/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://kylemotl.bandcamp.com/album/panjandrums',
@@ -1700,7 +1700,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 95,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3732899736/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://lawfulcitizen.bandcamp.com/album/lawful-citizen',
@@ -1718,7 +1718,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 96,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3258117317/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://aumfidelity.bandcamp.com/album/akhenaten-suite',
@@ -1736,7 +1736,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 97,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2382532351/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://fonterossa.bandcamp.com/album/desmadre',
@@ -1754,7 +1754,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 98,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2977130084/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://mayarecordings.bandcamp.com/album/a-moment-s-liberty',
@@ -1772,7 +1772,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 99,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2563716858/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://mayarecordings.bandcamp.com/album/time-passing',
@@ -1790,7 +1790,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 100,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2933784511/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://glisteningexamples.bandcamp.com/album/the-invisible-curse',
@@ -1808,7 +1808,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 101,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=407294319/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://trostrecords.bandcamp.com/album/konzert-f-r-12-traktoren',
@@ -1826,7 +1826,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 102,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=315101896/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://f-a-t-a-k-a.bandcamp.com/album/muddy-ditch',
@@ -1844,7 +1844,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 103,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3067283074/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://kenvandermark.bandcamp.com/album/momentum-2-3',
@@ -1862,7 +1862,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 104,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1263157526/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://vandermark1.bandcamp.com/album/live-in-sant-anna-arresi',
@@ -1880,7 +1880,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 105,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4212385504/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://intlanthem.bandcamp.com/album/irreversible-entanglements',
@@ -1898,7 +1898,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 106,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1217978298/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://aumfidelity.bandcamp.com/album/planetary-unknown-2',
@@ -1916,7 +1916,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 107,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1564452652/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://paalnilssen-love.bandcamp.com/album/paal-nilssen-love-large-unit-erta-ale',
@@ -1934,7 +1934,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 108,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2670047260/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://sunntrio-slr.bandcamp.com/album/sunn-trio',
@@ -1952,7 +1952,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 109,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2470241019/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://juliankirshnerjakirecords.bandcamp.com/album/five-percent-tint',
@@ -1970,7 +1970,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 110,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1254713292/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://juliankirshnerjakirecords.bandcamp.com/album/whip-the-apron',
@@ -1988,7 +1988,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 111,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1157475184/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://singlespeedmusic.bandcamp.com/album/uncovered',
@@ -2006,7 +2006,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 112,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'http://bandcamp.com/EmbeddedPlayer/album=978800525/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://thomaszaruba.fr/album/slow-down',
@@ -2024,7 +2024,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 113,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2277641234/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://sunnymurray.bandcamp.com/album/sunny-murray',
@@ -2042,7 +2042,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 114,
           user_id: 1,
-          theme: 'free jazz',
+          theme: 'Free Jazz',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=940056246/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://kylemotl.bandcamp.com/album/katabasis',

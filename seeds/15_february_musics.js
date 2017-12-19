@@ -8,7 +8,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 1,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=942444799/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://albertayler.bandcamp.com/album/albert-ayler-bells-prophecy-expanded-edition-2-disc',
@@ -26,7 +26,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 2,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2711475853/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://caligolarecords.bandcamp.com/album/quartet-mestre-2008',
@@ -44,7 +44,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 3,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3933485247/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://henrygrimes.bandcamp.com/album/the-call',
@@ -62,7 +62,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 4,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'http://bandcamp.com/EmbeddedPlayer/album=1930485249/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://firehouse12records.com/album/9-compositions-iridium-2006',
@@ -80,7 +80,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 5,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'http://bandcamp.com/EmbeddedPlayer/album=3415041672/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://firehouse12records.com/album/that-not',
@@ -98,7 +98,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 6,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=872497733/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://bangonacan.bandcamp.com/album/a-ballad-for-many',
@@ -116,7 +116,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 7,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2602402062/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://ornettecoleman.bandcamp.com/album/town-hall-1962',
@@ -134,7 +134,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 8,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=211079057/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://williamhookerheartofthesun.bandcamp.com/album/heart-of-the-sun',
@@ -152,7 +152,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 9,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2654159831/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://eremiterecords.bandcamp.com/album/blue-winter',
@@ -170,7 +170,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 10,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'http://bandcamp.com/EmbeddedPlayer/album=3807849704/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://sunnysidezone.com/album/proximity',
@@ -188,7 +188,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 11,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3122607953/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://tanksounds.bandcamp.com/album/bardo-tank',
@@ -206,7 +206,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 12,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1859384950/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://cuneiformrecords.bandcamp.com/album/ten-freedom-summers-2',
@@ -224,7 +224,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 13,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3006941689/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://destination-out.bandcamp.com/album/the-complete-in-berlin-88-box-set',
@@ -242,7 +242,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 14,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=836618089/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://oliverlake.bandcamp.com/album/lake-tchicai-osgood-westergaard',
@@ -260,7 +260,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 15,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1318856636/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://caribouband.bandcamp.com/album/caribou-vibration-ensemble-featuring-marshall-allen',
@@ -278,7 +278,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 16,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2383996781/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://noahhoward.bandcamp.com/album/noah-howard-quartet',
@@ -296,7 +296,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 17,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=362621699/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://ronnieboykins.bandcamp.com/album/the-will-come-is-now',
@@ -314,7 +314,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 18,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=840979423/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://franklowe.bandcamp.com/album/the-loweski',
@@ -332,7 +332,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 19,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3516001583/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://destination-out.bandcamp.com/album/berlin-skyscraper',
@@ -350,7 +350,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 20,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=771456059/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://destination-out.bandcamp.com/album/portrait',
@@ -368,7 +368,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 21,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1717215428/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://destination-out.bandcamp.com/album/nailed',
@@ -386,7 +386,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 22,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=541207510/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://eremiterecords.bandcamp.com/album/spirit-house',
@@ -404,7 +404,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 23,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1011163605/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://eremiterecords.bandcamp.com/album/captain-of-the-deep',
@@ -422,7 +422,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 24,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1823302346/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://eremiterecords.bandcamp.com/album/new-world-pygmies',
@@ -440,7 +440,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 25,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1659727331/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://f-a-t-a-k-a.bandcamp.com/album/tangle',
@@ -458,7 +458,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 26,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4181318941/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://tourdebras.bandcamp.com/album/matana-roberts-sam-shalabi-nicolas-caloia-feldspar',
@@ -476,7 +476,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 27,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2169487895/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://destination-out.bandcamp.com/album/fractured-dimensions',
@@ -494,7 +494,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 28,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2692661850/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://marionbrown.bandcamp.com/album/why-not',
@@ -512,7 +512,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 29,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=194836613/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://pharoahsanders.bandcamp.com/album/pharoah-sanders-quintet',
@@ -530,7 +530,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 30,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2978623574/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://marzettewatts.bandcamp.com/album/and-company',
@@ -548,7 +548,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 31,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=624313275/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://eremiterecords.bandcamp.com/album/the-all-star-game',
@@ -566,7 +566,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 32,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4092995023/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://eremiterecords.bandcamp.com/album/bobs-pink-cadillac',
@@ -584,7 +584,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 33,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=740688057/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://eremiterecords.bandcamp.com/album/new-world-pygmies-ii',
@@ -602,7 +602,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 34,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3411340270/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://ayler-records.bandcamp.com/album/ode-to-albert-ayler',
@@ -620,7 +620,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 35,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=872217913/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://eremiterecords.bandcamp.com/album/we-are-not-at-the-opera',
@@ -638,7 +638,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 36,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2696818120/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://eremiterecords.bandcamp.com/album/drum-dance-to-the-motherland',
@@ -656,7 +656,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 37,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3436708453/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://franklowe.bandcamp.com/album/black-beings',
@@ -674,7 +674,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 38,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3182862440/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://aumfidelity.bandcamp.com/album/live-in-santanna-arresi-2004',
@@ -692,7 +692,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 39,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1768578986/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://aumfidelity.bandcamp.com/album/live-in-new-york-2010',
@@ -710,7 +710,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 40,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1211209639/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://mellowyellowlive.bandcamp.com/album/dollar-brand-abdullah-ibrahim-with-don-cherry-carlos-ward-in-berlin-1972',
@@ -728,7 +728,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 41,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1160806144/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://safarrepublique.bandcamp.com/album/safar-republique',
@@ -746,7 +746,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 42,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1173944759/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://hotcasarecords.bandcamp.com/album/african-woman',
@@ -764,7 +764,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 43,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=619498598/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://artensembleofchicago.bandcamp.com/album/non-cognitive-aspects-of-the-city-live-at-iridium',
@@ -782,7 +782,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 44,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=267460253/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://caligolarecords.bandcamp.com/album/jazz-r-evolution',
@@ -800,7 +800,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 45,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1952058313/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://tyshawn-sorey.bandcamp.com/album/verisimilitude',
@@ -818,7 +818,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 46,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2325637060/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://futuramarge.bandcamp.com/album/live-at-the-riverbop',
@@ -836,7 +836,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 47,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3667949691/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://mikereed1.bandcamp.com/album/flesh-bone',
@@ -854,7 +854,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 48,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1165914647/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://joemcphee.bandcamp.com/album/the-watermelon-suite',
@@ -872,7 +872,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 49,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2037657663/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://henrythreadgill.bandcamp.com/album/up-popped-the-two-lips',
@@ -890,7 +890,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 50,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1393903022/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://stevecoleman.bandcamp.com/album/harvesting-semblances-and-affinities',
@@ -908,7 +908,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 51,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2071939863/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://pheeroanaklaff.bandcamp.com/album/live-at-the-fez',
@@ -926,7 +926,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 52,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1181445539/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'https://bandcamp.com/EmbeddedPlayer/album=1181445539/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
@@ -944,7 +944,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 53,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2300004674/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://wadadaleosmith.bandcamp.com/album/saturn-conjunct-the-grand-canyon-in-a-sweet-embrace',
@@ -962,7 +962,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 54,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'http://bandcamp.com/EmbeddedPlayer/album=1781387528/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://tuffcity.com/album/psychelphia',
@@ -980,7 +980,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 55,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=186878699/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://intaktrec.bandcamp.com/album/sequel-for-lester-bowie',
@@ -998,7 +998,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 56,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2809226534/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://ghostnoterecords.bandcamp.com/album/def-trance-beat-modalities-of-rhythm',
@@ -1016,7 +1016,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 57,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'http://bandcamp.com/EmbeddedPlayer/album=3134492544/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://bandcamp.for-tune.pl/album/quartet-warsaw-2012',
@@ -1034,7 +1034,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 58,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=274380109/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://destination-out.bandcamp.com/album/burning-cloud-2',
@@ -1052,7 +1052,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 59,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4169089856/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://jotongo.bandcamp.com/album/african-funk-experimentals-1968-1982-2017',
@@ -1070,7 +1070,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 60,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3765249079/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://maalemmahmoudgania.bandcamp.com/album/colours-of-the-night',
@@ -1088,7 +1088,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 61,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2454365750/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://essoafrojamfunkbeat.bandcamp.com/album/juntos',
@@ -1106,7 +1106,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 62,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=925922551/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://pasteurlappe.bandcamp.com/album/na-man-pass-man',
@@ -1124,7 +1124,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 63,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3912228382/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://sookie1.bandcamp.com/album/sookie',
@@ -1142,7 +1142,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 64,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2051639327/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://jazzheadrecords.bandcamp.com/album/hexis',
@@ -1160,7 +1160,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 65,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=701651663/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://billdixon.bandcamp.com/album/tapestries-for-small-orchestra',
@@ -1178,7 +1178,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 66,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1644073358/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://culturepower45.bandcamp.com/album/cp4507-fruition',
@@ -1196,7 +1196,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 67,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3567174391/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://charlesbradley.bandcamp.com/album/changes',
@@ -1214,7 +1214,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 68,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1828909607/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://sugarayrayford.bandcamp.com/album/the-world-that-we-live-in',
@@ -1232,7 +1232,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 69,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1402368525/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'https://bandcamp.com/EmbeddedPlayer/album=1402368525/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
@@ -1250,7 +1250,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 70,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4279583872/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://parisdjs.bandcamp.com/album/africa-is-the-future',
@@ -1268,7 +1268,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 71,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2874278163/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://muyiwakunnuji-osemako.bandcamp.com/album/mo-juba-o',
@@ -1286,7 +1286,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 72,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1159025980/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://africaseven.bandcamp.com/album/du-mali-1',
@@ -1304,7 +1304,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 73,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3110169150/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://charlesgayle.bandcamp.com/album/streets-2',
@@ -1322,7 +1322,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 74,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1647596655/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://christianscott.bandcamp.com/album/the-emancipation-procrastination',
@@ -1340,7 +1340,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 75,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2371693952/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://mulatuastatke.bandcamp.com/album/mulatu-of-ethiopia',
@@ -1358,7 +1358,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 76,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2238702751/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://aumfidelity.bandcamp.com/album/meditation-resurrection',
@@ -1376,7 +1376,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 77,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3289661233/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://jasonmoran.bandcamp.com/album/bangs',
@@ -1394,7 +1394,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 78,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=569598526/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://dwighttrible.bandcamp.com/album/inspirations',
@@ -1412,7 +1412,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 79,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2880737996/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://krsone.bandcamp.com/album/the-world-is-mind',
@@ -1430,7 +1430,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 80,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4014717387/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://openmikeeagle360.bandcamp.com/album/brick-body-kids-still-daydream',
@@ -1448,7 +1448,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 81,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3725306141/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://rockyriverabeatrock.bandcamp.com/album/gangster-of-love',
@@ -1466,7 +1466,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 82,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=480704933/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://spellling.bandcamp.com/album/pantheon-of-me-2',
@@ -1484,7 +1484,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 83,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4118357594/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://mosessumney.bandcamp.com/album/aromanticism',
@@ -1502,7 +1502,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 84,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1894361972/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://sudanarchives.bandcamp.com/album/sudan-archives',
@@ -1520,7 +1520,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 85,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2070045191/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://aumfidelity.bandcamp.com/album/long-hidden-the-olmec-series',
@@ -1538,7 +1538,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 86,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1400041100/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://hot8brassband.bandcamp.com/album/rock-with-the-hot-8',
@@ -1556,7 +1556,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 87,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=591803237/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://oddiseemmg.bandcamp.com/album/the-good-fight',
@@ -1574,7 +1574,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 88,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=996132433/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://rodneyp.bandcamp.com/album/gangster-chronicles-the-definitive-collection',
@@ -1592,7 +1592,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 89,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3126264147/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://mcmello.bandcamp.com/album/thoughts-released',
@@ -1610,7 +1610,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 90,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=818947843/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://odweeyne.bandcamp.com/album/kicks-in-the-crates-vol-1-1990-1991-supa-phat-side',
@@ -1628,7 +1628,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 91,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1011432069/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://joemcphee.bandcamp.com/album/the-sugar-hill-suite',
@@ -1646,7 +1646,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 92,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2092770861/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://marcuslewisband.bandcamp.com/album/facing-east',
@@ -1664,7 +1664,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 93,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1019294942/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://joemcphee.bandcamp.com/album/angels-devils-and-haints',
@@ -1682,7 +1682,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 94,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1111516104/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://jonbap.bandcamp.com/album/yesterdays-homily',
@@ -1700,7 +1700,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 95,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=461963248/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://analogafrica.bandcamp.com/album/hamad-kalkaba-and-the-golden-sounds-1974-1975',
@@ -1718,7 +1718,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 96,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1458926099/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://analogafrica.bandcamp.com/album/pop-makossa-the-invasive-dance-beat-of-cameroon-1976-1984',
@@ -1736,7 +1736,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 97,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3250456230/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://dubstorerecords.bandcamp.com/album/redman-international-digital-roots-dancehall-1985-to-1990-10-rare-singles-set',
@@ -1754,7 +1754,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 98,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=906862647/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://pressuresounds.bandcamp.com/album/meet-the-people',
@@ -1772,7 +1772,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 99,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1674138456/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://dubsyndicate.bandcamp.com/album/displaced-masters',
@@ -1790,7 +1790,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 100,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1255239549/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://willsessions.bandcamp.com/album/kindred-live',
@@ -1808,7 +1808,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 101,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1860158521/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://willsessions.bandcamp.com/album/deluxe',
@@ -1826,7 +1826,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 102,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3266419411/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://kimtibbs.bandcamp.com/album/kim',
@@ -1844,7 +1844,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 103,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=191922726/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://africanheadcharge.bandcamp.com/album/my-life-in-a-hole-in-the-ground',
@@ -1862,7 +1862,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 104,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2283578983/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://africanheadcharge.bandcamp.com/album/drastic-season',
@@ -1880,7 +1880,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 105,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=546702643/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://africanheadcharge.bandcamp.com/album/off-the-beaten-track',
@@ -1898,7 +1898,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 106,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=241539319/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://woodworkcollective.bandcamp.com/album/iyapo',
@@ -1916,7 +1916,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 107,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3597881602/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://matsulimusic.bandcamp.com/album/african-songbird',
@@ -1934,7 +1934,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 108,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=533968175/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://matsulimusic.bandcamp.com/album/witchdoctors-son',
@@ -1952,7 +1952,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 109,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4289860543/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://lesfillesdeillighadad.bandcamp.com/album/eghass-malan',
@@ -1970,7 +1970,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 110,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2223328995/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://fadimoutouwalletinamoud.bandcamp.com/album/isswat',
@@ -1988,7 +1988,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 111,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=639873524/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://mammansani.bandcamp.com/album/la-musique-electronique-du-niger',
@@ -2006,7 +2006,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 112,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1729573479/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://conditionwestrecordings.bandcamp.com/album/sam-rivers-quartet-live-in-vancouver',
@@ -2024,7 +2024,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 113,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1742132074/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://noahhowardaltsax.bandcamp.com/album/patterns-message-to-south-africa',
@@ -2042,7 +2042,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 114,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3673199928/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://littlesimz.bandcamp.com/album/stillness-in-wonderland-deluxe-edition',
@@ -2060,7 +2060,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 115,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2973853362/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://freshselects.bandcamp.com/album/cleo',
@@ -2078,7 +2078,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 116,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2232967069/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://mybags.bandcamp.com/album/les-sourdes-oreilles',
@@ -2096,7 +2096,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 117,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2288351853/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://burntsugar.bandcamp.com/album/mizik-pou-dwa-moun-a-burnt-sugar-collective-compilation-for-the-people-of-ayiti-disc-1',
@@ -2114,7 +2114,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 118,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3084023840/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'https://bandcamp.com/EmbeddedPlayer/album=3084023840/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
@@ -2132,7 +2132,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 119,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1737997555/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://chinoamobi.bandcamp.com/album/paradiso',
@@ -2150,7 +2150,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 120,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=964522209/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://fatherdaughterrecords.bandcamp.com/album/drool',
@@ -2168,7 +2168,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 121,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=860883616/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://mikelikesrap.bandcamp.com/album/may-god-bless-your-hustle',
@@ -2186,7 +2186,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 122,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=979604399/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://alicecoltrane.bandcamp.com/album/world-sprituality-classics-1-the-ecstatic-music-of-alice-coltrane-turiyasangitananda',
@@ -2204,7 +2204,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 123,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4118357594/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://mosessumney.bandcamp.com/album/aromanticism',
@@ -2222,7 +2222,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 124,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2817867693/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://ostinatorecords.bandcamp.com/album/synthesize-the-soul-astro-atlantic-hypnotica-from-the-cape-verde-islands-1973-1988',
@@ -2240,7 +2240,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 125,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1458926099/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://analogafrica.bandcamp.com/album/pop-makossa-the-invasive-dance-beat-of-cameroon-1976-1984',
@@ -2258,7 +2258,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 126,
           user_id: 1,
-          theme: 'black history month',
+          theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2830434610/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://therealpierrekwenders.bandcamp.com/album/makanda-at-the-end-of-space-the-beginning-of-time',

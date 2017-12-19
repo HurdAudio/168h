@@ -171,6 +171,988 @@
       vm.addNewTask = addNewTask;
       vm.billsReport = billsReport;
       vm.billsReportDone = billsReportDone;
+      vm.musicsCurationManagement = musicsCurationManagement;
+      vm.closeMusicCurratorManager = closeMusicCurratorManager;
+      vm.toggleMusicCurratorMonth = toggleMusicCurratorMonth;
+      vm.displayMusics = displayMusics;
+
+      function displayMusics(monthTable) {
+        let weekdayString = '';
+        let monthDate = 0;
+        let filteredMusics;
+        let janWeekDays = [ 'janMusicMonday', 'janMusicTuesday', 'janMusicWednesday', 'janMusicThursday', 'janMusicSaturday' ];
+        let janDays = [ 'janMusicDay1', 'janMusicDay2', 'janMusicDay3', 'janMusicDay4', 'janMusicDay5', 'janMusicDay6', 'janMusicDay7', 'janMusicDay8', 'janMusicDay9', 'janMusicDay10', 'janMusicDay11', 'janMusicDay12', 'janMusicDay13', 'janMusicDay14', 'janMusicDay15', 'janMusicDay16', 'janMusicDay17', 'janMusicDay18', 'janMusicDay19', 'janMusicDay20', 'janMusicDay21', 'janMusicDay22', 'janMusicDay23', 'janMusicDay24', 'janMusicDay25', 'janMusicDay26', 'janMusicDay27', 'janMusicDay28', 'janMusicDay29', 'janMusicDay30', 'janMusicDay31' ];
+        let febWeekDays = [ 'febMusicMonday', 'febMusicTuesday', 'febMusicWednesday', 'febMusicThursday', 'febMusicSaturday' ];
+        let febDays = [ 'febMusicDay1', 'febMusicDay2', 'febMusicDay3', 'febMusicDay4', 'febMusicDay5', 'febMusicDay6', 'febMusicDay7', 'febMusicDay8', 'febMusicDay9', 'febMusicDay10', 'febMusicDay11', 'febMusicDay12', 'febMusicDay13', 'febMusicDay14', 'febMusicDay15', 'febMusicDay16', 'febMusicDay17', 'febMusicDay18', 'febMusicDay19', 'febMusicDay20', 'febMusicDay21', 'febMusicDay22', 'febMusicDay23', 'febMusicDay24', 'febMusicDay25', 'febMusicDay26', 'febMusicDay27', 'febMusicDay28', 'febMusicDay29' ];
+        let marWeekDays = [ 'marMusicMonday', 'marMusicTuesday', 'marMusicWednesday', 'marMusicThursday', 'marMusicSaturday' ];
+        let marDays = [ 'marMusicDay1', 'marMusicDay2', 'marMusicDay3', 'marMusicDay4', 'marMusicDay5', 'marMusicDay6', 'marMusicDay7', 'marMusicDay8', 'marMusicDay9', 'marMusicDay10', 'marMusicDay11', 'marMusicDay12', 'marMusicDay13', 'marMusicDay14', 'marMusicDay15', 'marMusicDay16', 'marMusicDay17', 'marMusicDay18', 'marMusicDay19', 'marMusicDay20', 'marMusicDay21', 'marMusicDay22', 'marMusicDay23', 'marMusicDay24', 'marMusicDay25', 'marMusicDay26', 'marMusicDay27', 'marMusicDay28', 'marMusicDay29', 'marMusicDay30', 'marMusicDay31'];
+        let aprWeekDays = [ 'aprMusicMonday', 'aprMusicTuesday', 'aprMusicWednesday', 'aprMusicThursday', 'aprMusicSaturday' ];
+        let aprDays = [ 'aprMusicDay1', 'aprMusicDay2', 'aprMusicDay3', 'aprMusicDay4', 'aprMusicDay5', 'aprMusicDay6', 'aprMusicDay7', 'aprMusicDay8', 'aprMusicDay9', 'aprMusicDay10', 'aprMusicDay11', 'aprMusicDay12', 'aprMusicDay13', 'aprMusicDay14', 'aprMusicDay15', 'aprMusicDay16', 'aprMusicDay17', 'aprMusicDay18', 'aprMusicDay19', 'aprMusicDay20', 'aprMusicDay21', 'aprMusicDay22', 'aprMusicDay23', 'aprMusicDay24', 'aprMusicDay25', 'aprMusicDay26', 'aprMusicDay27', 'aprMusicDay28', 'aprMusicDay29', 'aprMusicDay30' ];
+        let mayWeekDays = [ 'mayMusicMonday', 'mayMusicTuesday', 'mayMusicWednesday', 'mayMusicThursday', 'mayMusicSaturday' ];
+        let mayDays = [ 'mayMusicDay1', 'mayMusicDay2', 'mayMusicDay3', 'mayMusicDay4', 'mayMusicDay5', 'mayMusicDay6', 'mayMusicDay7', 'mayMusicDay8', 'mayMusicDay9', 'mayMusicDay10', 'mayMusicDay11', 'mayMusicDay12', 'mayMusicDay13', 'mayMusicDay14', 'mayMusicDay15', 'mayMusicDay16', 'mayMusicDay17', 'mayMusicDay18', 'mayMusicDay19', 'mayMusicDay20', 'mayMusicDay21', 'mayMusicDay22', 'mayMusicDay23', 'mayMusicDay24', 'mayMusicDay25', 'mayMusicDay26', 'mayMusicDay27', 'mayMusicDay28', 'mayMusicDay29', 'mayMusicDay30', 'mayMusicDay31' ];
+        let junWeekDays = [ 'junMusicMonday', 'junMusicTuesday', 'junMusicWednesday', 'junMusicThursday', 'junMusicSaturday' ];
+        let junDays = [ 'junMusicDay1', 'junMusicDay2', 'junMusicDay3', 'junMusicDay4', 'junMusicDay5', 'junMusicDay6', 'junMusicDay7', 'junMusicDay8', 'junMusicDay9', 'junMusicDay10', 'junMusicDay11', 'junMusicDay12', 'junMusicDay13', 'junMusicDay14', 'junMusicDay15', 'junMusicDay16', 'junMusicDay17', 'junMusicDay18', 'junMusicDay19', 'junMusicDay20', 'junMusicDay21', 'junMusicDay22', 'junMusicDay23', 'junMusicDay24', 'junMusicDay25', 'junMusicDay26', 'junMusicDay27', 'junMusicDay28', 'junMusicDay29', 'junMusicDay30' ];
+        let julWeekDays = [ 'julMusicMonday', 'julMusicTuesday', 'julMusicWednesday', 'julMusicThursday', 'julMusicSaturday' ];
+        let julDays = [ 'julMusicDay1', 'julMusicDay2', 'julMusicDay3', 'julMusicDay4', 'julMusicDay5', 'julMusicDay6', 'julMusicDay7', 'julMusicDay8', 'julMusicDay9', 'julMusicDay10', 'julMusicDay11', 'julMusicDay12', 'julMusicDay13', 'julMusicDay14', 'julMusicDay15', 'julMusicDay16', 'julMusicDay17', 'julMusicDay18', 'julMusicDay19', 'julMusicDay20', 'julMusicDay21', 'julMusicDay22', 'julMusicDay23', 'julMusicDay24', 'julMusicDay25', 'julMusicDay26', 'julMusicDay27', 'julMusicDay28', 'julMusicDay29', 'julMusicDay30', 'julMusicDay31' ];
+        let augWeekDays = [ 'augMusicMonday', 'augMusicTuesday', 'augMusicWednesday', 'augMusicThursday', 'augMusicSaturday' ];
+        let augDays = [ 'augMusicDay1', 'augMusicDay2', 'augMusicDay3', 'augMusicDay4', 'augMusicDay5', 'augMusicDay6', 'augMusicDay7', 'augMusicDay8', 'augMusicDay9', 'augMusicDay10', 'augMusicDay11', 'augMusicDay12', 'augMusicDay13', 'augMusicDay14', 'augMusicDay15', 'augMusicDay16', 'augMusicDay17', 'augMusicDay18', 'augMusicDay19', 'augMusicDay20', 'augMusicDay21', 'augMusicDay22', 'augMusicDay23', 'augMusicDay24', 'augMusicDay25', 'augMusicDay26', 'augMusicDay27', 'augMusicDay28', 'augMusicDay29', 'augMusicDay30', 'augMusicDay31' ];
+        let sepWeekDays = [ 'sepMusicMonday', 'sepMusicTuesday', 'sepMusicWednesday', 'sepMusicThursday', 'sepMusicSaturday' ];
+        let sepDays = [ 'sepMusicDay1', 'sepMusicDay2', 'sepMusicDay3', 'sepMusicDay4', 'sepMusicDay5', 'sepMusicDay6', 'sepMusicDay7', 'sepMusicDay8', 'sepMusicDay9', 'sepMusicDay10', 'sepMusicDay11', 'sepMusicDay12', 'sepMusicDay13', 'sepMusicDay14', 'sepMusicDay15', 'sepMusicDay16', 'sepMusicDay17', 'sepMusicDay18', 'sepMusicDay19', 'sepMusicDay20', 'sepMusicDay21', 'sepMusicDay22', 'sepMusicDay23', 'sepMusicDay24', 'sepMusicDay25', 'sepMusicDay26', 'sepMusicDay27', 'sepMusicDay28', 'sepMusicDay29', 'sepMusicDay30' ];
+        let octWeekDays = [ 'octMusicMonday', 'octMusicTuesday', 'octMusicWednesday', 'octMusicThursday', 'octMusicSaturday' ];
+        let octDays = [ 'octMusicDay1', 'octMusicDay2', 'octMusicDay3', 'octMusicDay4', 'octMusicDay5', 'octMusicDay6', 'octMusicDay7', 'octMusicDay8', 'octMusicDay9', 'octMusicDay10', 'octMusicDay11', 'octMusicDay12', 'octMusicDay13', 'octMusicDay14', 'octMusicDay15', 'octMusicDay16', 'octMusicDay17', 'octMusicDay18', 'octMusicDay19', 'octMusicDay20', 'octMusicDay21', 'octMusicDay22', 'octMusicDay23', 'octMusicDay24', 'octMusicDay25', 'octMusicDay26', 'octMusicDay27', 'octMusicDay28', 'octMusicDay29', 'octMusicDay30', 'octMusicDay31' ];
+        let novWeekDays = [ 'novMusicMonday', 'novMusicTuesday', 'novMusicWednesday', 'novMusicThursday', 'novMusicSaturday' ];
+        let novDays = [ 'novMusicDay1', 'novMusicDay2', 'novMusicDay3', 'novMusicDay4', 'novMusicDay5', 'novMusicDay6', 'novMusicDay7', 'novMusicDay8', 'novMusicDay9', 'novMusicDay10', 'novMusicDay11', 'novMusicDay12', 'novMusicDay13', 'novMusicDay14', 'novMusicDay15', 'novMusicDay16', 'novMusicDay17', 'novMusicDay18', 'novMusicDay19', 'novMusicDay20', 'novMusicDay21', 'novMusicDay22', 'novMusicDay23', 'novMusicDay24', 'novMusicDay25', 'novMusicDay26', 'novMusicDay27', 'novMusicDay28', 'novMusicDay29', 'novMusicDay30' ];
+        let decWeekDays = [ 'decMusicMonday', 'decMusicTuesday', 'decMusicWednesday', 'decMusicThursday', 'decMusicSaturday' ];
+        let decDays = [ 'decMusicDay1', 'decMusicDay2', 'decMusicDay3', 'decMusicDay4', 'decMusicDay5', 'decMusicDay6', 'decMusicDay7', 'decMusicDay8', 'decMusicDay9', 'decMusicDay10', 'decMusicDay11', 'decMusicDay12', 'decMusicDay13', 'decMusicDay14', 'decMusicDay15', 'decMusicDay16', 'decMusicDay17', 'decMusicDay18', 'decMusicDay19', 'decMusicDay20', 'decMusicDay21', 'decMusicDay22', 'decMusicDay23', 'decMusicDay24', 'decMusicDay25', 'decMusicDay26', 'decMusicDay27', 'decMusicDay28', 'decMusicDay29', 'decMusicDay30', 'decMusicDay31' ];
+
+        $http.get(`/${monthTable}/${currentUserId}`)
+        .then(fullMonthMusicsData=>{
+          let fullMonthMusics = fullMonthMusicsData.data;
+          switch(monthTable) {
+            case('january_musicsbyuser'):
+              vm.janMusics = [];
+              for (let i = 0; i < janWeekDays.length; i++) {
+                if (document.getElementById(janWeekDays[i]).checked) {
+                  weekdayString = document.getElementById(janWeekDays[i]).value;
+                }
+              }
+              console.log(weekdayString);
+              for (let j = 0; j < janDays.length; j++) {
+                if (document.getElementById(janDays[j]).checked) {
+                  monthDate = parseInt(document.getElementById(janDays[j]).value);
+                }
+              }
+              console.log(monthDate);
+              if ((weekdayString !== '') && (monthDate !== 0)) {
+                filteredMusics = fullMonthMusics.filter(selection=>{
+                  return(selection.rule[weekdayString].indexOf(monthDate) !== -1);
+                });
+                vm.janMusics = filteredMusics.sort((a, b)=>{
+                  if (a.a_string.toLowerCase() < b.a_string.toLowerCase()) {
+                    return -1;
+                  } else if (a.a_string.toLowerCase() > b.a_string.toLowerCase()) {
+                    return 1;
+                  } else {
+                    return 0;
+                  }
+                });
+                document.getElementById('januaryMusicTheme').innerHTML = vm.janMusics[0].theme;
+                document.getElementById('januaryMusicTheme').setAttribute("style", "display: initial;");
+              } else {
+                document.getElementById('januaryMusicTheme').setAttribute("style", "display: none;");
+              }
+              break;
+            case('february_musicsbyuser'):
+              vm.febMusics = [];
+              for (let i = 0; i < febWeekDays.length; i++) {
+                if (document.getElementById(febWeekDays[i]).checked) {
+                  weekdayString = document.getElementById(febWeekDays[i]).value;
+                }
+              }
+              console.log(weekdayString);
+              for (let j = 0; j < febDays.length; j++) {
+                if (document.getElementById(febDays[j]).checked) {
+                  monthDate = parseInt(document.getElementById(febDays[j]).value);
+                }
+              }
+              console.log(monthDate);
+              if ((weekdayString !== '') && (monthDate !== 0)) {
+                filteredMusics = fullMonthMusics.filter(selection=>{
+                  return(selection.rule[weekdayString].indexOf(monthDate) !== -1);
+                });
+                vm.febMusics = filteredMusics.sort((a, b)=>{
+                  if (a.a_string.toLowerCase() < b.a_string.toLowerCase()) {
+                    return -1;
+                  } else if (a.a_string.toLowerCase() > b.a_string.toLowerCase()) {
+                    return 1;
+                  } else {
+                    return 0;
+                  }
+                });
+                document.getElementById('februaryMusicTheme').innerHTML = vm.febMusics[0].theme;
+                document.getElementById('februaryMusicTheme').setAttribute("style", "display: initial;");
+              } else {
+                document.getElementById('februaryMusicTheme').setAttribute("style", "display: none;");
+              }
+              break;
+            case('march_musicsbyuser'):
+              vm.marMusics = [];
+              for (let i = 0; i < marWeekDays.length; i++) {
+                if (document.getElementById(marWeekDays[i]).checked) {
+                  weekdayString = document.getElementById(marWeekDays[i]).value;
+                }
+              }
+              for (let j = 0; j < marDays.length; j++) {
+                if (document.getElementById(marDays[j]).checked) {
+                  monthDate = parseInt(document.getElementById(marDays[j]).value);
+                }
+              }
+              if ((weekdayString !== '') && (monthDate !== 0)) {
+                filteredMusics = fullMonthMusics.filter(selection=>{
+                  return(selection.rule[weekdayString].indexOf(monthDate) !== -1);
+                });
+                vm.marMusics = filteredMusics.sort((a, b)=>{
+                  if (a.a_string.toLowerCase() < b.a_string.toLowerCase()) {
+                    return -1;
+                  } else if (a.a_string.toLowerCase() > b.a_string.toLowerCase()) {
+                    return 1;
+                  } else {
+                    return 0;
+                  }
+                });
+                document.getElementById('marchMusicTheme').innerHTML = vm.marMusics[0].theme;
+                document.getElementById('marchMusicTheme').setAttribute("style", "display: initial;");
+              } else {
+                document.getElementById('marchMusicTheme').setAttribute("style", "display: none;");
+              }
+              break;
+            case('april_musicsbyuser'):
+              vm.aprMusics = [];
+              for (let i = 0; i < aprWeekDays.length; i++) {
+                if (document.getElementById(aprWeekDays[i]).checked) {
+                  weekdayString = document.getElementById(aprWeekDays[i]).value;
+                }
+              }
+              for (let j = 0; j < aprDays.length; j++) {
+                if (document.getElementById(aprDays[j]).checked) {
+                  monthDate = parseInt(document.getElementById(aprDays[j]).value);
+                }
+              }
+              if ((weekdayString !== '') && (monthDate !== 0)) {
+                filteredMusics = fullMonthMusics.filter(selection=>{
+                  return(selection.rule[weekdayString].indexOf(monthDate) !== -1);
+                });
+                vm.aprMusics = filteredMusics.sort((a, b)=>{
+                  if (a.a_string.toLowerCase() < b.a_string.toLowerCase()) {
+                    return -1;
+                  } else if (a.a_string.toLowerCase() > b.a_string.toLowerCase()) {
+                    return 1;
+                  } else {
+                    return 0;
+                  }
+                });
+                document.getElementById('aprilMusicTheme').innerHTML = vm.aprMusics[0].theme;
+                document.getElementById('aprilMusicTheme').setAttribute("style", "display: initial;");
+              } else {
+                document.getElementById('aprilMusicTheme').setAttribute("style", "display: none;");
+              }
+              break;
+            case('may_musicsbyuser'):
+              vm.aprMusics = [];
+              for (let i = 0; i < mayWeekDays.length; i++) {
+                if (document.getElementById(mayWeekDays[i]).checked) {
+                  weekdayString = document.getElementById(mayWeekDays[i]).value;
+                }
+              }
+              for (let j = 0; j < mayDays.length; j++) {
+                if (document.getElementById(mayDays[j]).checked) {
+                  monthDate = parseInt(document.getElementById(mayDays[j]).value);
+                }
+              }
+              if ((weekdayString !== '') && (monthDate !== 0)) {
+                filteredMusics = fullMonthMusics.filter(selection=>{
+                  return(selection.rule[weekdayString].indexOf(monthDate) !== -1);
+                });
+                vm.mayMusics = filteredMusics.sort((a, b)=>{
+                  if (a.a_string.toLowerCase() < b.a_string.toLowerCase()) {
+                    return -1;
+                  } else if (a.a_string.toLowerCase() > b.a_string.toLowerCase()) {
+                    return 1;
+                  } else {
+                    return 0;
+                  }
+                });
+                document.getElementById('mayMusicTheme').innerHTML = vm.mayMusics[0].theme;
+                document.getElementById('mayMusicTheme').setAttribute("style", "display: initial;");
+              } else {
+                document.getElementById('mayMusicTheme').setAttribute("style", "display: none;");
+              }
+              break;
+            case('june_musicsbyuser'):
+              vm.junMusics = [];
+              for (let i = 0; i < junWeekDays.length; i++) {
+                if (document.getElementById(junWeekDays[i]).checked) {
+                  weekdayString = document.getElementById(junWeekDays[i]).value;
+                }
+              }
+              for (let j = 0; j < junDays.length; j++) {
+                if (document.getElementById(junDays[j]).checked) {
+                  monthDate = parseInt(document.getElementById(junDays[j]).value);
+                }
+              }
+              if ((weekdayString !== '') && (monthDate !== 0)) {
+                filteredMusics = fullMonthMusics.filter(selection=>{
+                  return(selection.rule[weekdayString].indexOf(monthDate) !== -1);
+                });
+                vm.junMusics = filteredMusics.sort((a, b)=>{
+                  if (a.a_string.toLowerCase() < b.a_string.toLowerCase()) {
+                    return -1;
+                  } else if (a.a_string.toLowerCase() > b.a_string.toLowerCase()) {
+                    return 1;
+                  } else {
+                    return 0;
+                  }
+                });
+                document.getElementById('juneMusicTheme').innerHTML = vm.junMusics[0].theme;
+                document.getElementById('juneMusicTheme').setAttribute("style", "display: initial;");
+              } else {
+                document.getElementById('juneMusicTheme').setAttribute("style", "display: none;");
+              }
+              break;
+            case('july_musicsbyuser'):
+              vm.julMusics = [];
+              for (let i = 0; i < julWeekDays.length; i++) {
+                if (document.getElementById(julWeekDays[i]).checked) {
+                  weekdayString = document.getElementById(julWeekDays[i]).value;
+                }
+              }
+              for (let j = 0; j < julDays.length; j++) {
+                if (document.getElementById(julDays[j]).checked) {
+                  monthDate = parseInt(document.getElementById(julDays[j]).value);
+                }
+              }
+              if ((weekdayString !== '') && (monthDate !== 0)) {
+                filteredMusics = fullMonthMusics.filter(selection=>{
+                  return(selection.rule[weekdayString].indexOf(monthDate) !== -1);
+                });
+                vm.julMusics = filteredMusics.sort((a, b)=>{
+                  if (a.a_string.toLowerCase() < b.a_string.toLowerCase()) {
+                    return -1;
+                  } else if (a.a_string.toLowerCase() > b.a_string.toLowerCase()) {
+                    return 1;
+                  } else {
+                    return 0;
+                  }
+                });
+                document.getElementById('julyMusicTheme').innerHTML = vm.julMusics[0].theme;
+                document.getElementById('julyMusicTheme').setAttribute("style", "display: initial;");
+              } else {
+                document.getElementById('julyMusicTheme').setAttribute("style", "display: none;");
+              }
+              break;
+            case('august_musicsbyuser'):
+              vm.augMusics = [];
+              for (let i = 0; i < augWeekDays.length; i++) {
+                if (document.getElementById(augWeekDays[i]).checked) {
+                  weekdayString = document.getElementById(augWeekDays[i]).value;
+                }
+              }
+              for (let j = 0; j < augDays.length; j++) {
+                if (document.getElementById(augDays[j]).checked) {
+                  monthDate = parseInt(document.getElementById(augDays[j]).value);
+                }
+              }
+              if ((weekdayString !== '') && (monthDate !== 0)) {
+                filteredMusics = fullMonthMusics.filter(selection=>{
+                  return(selection.rule[weekdayString].indexOf(monthDate) !== -1);
+                });
+                vm.augMusics = filteredMusics.sort((a, b)=>{
+                  if (a.a_string.toLowerCase() < b.a_string.toLowerCase()) {
+                    return -1;
+                  } else if (a.a_string.toLowerCase() > b.a_string.toLowerCase()) {
+                    return 1;
+                  } else {
+                    return 0;
+                  }
+                });
+                document.getElementById('augustMusicTheme').innerHTML = vm.augMusics[0].theme;
+                document.getElementById('augustMusicTheme').setAttribute("style", "display: initial;");
+              } else {
+                document.getElementById('augustMusicTheme').setAttribute("style", "display: none;");
+              }
+              break;
+            case('september_musicsbyuser'):
+              vm.sepMusics = [];
+              for (let i = 0; i < sepWeekDays.length; i++) {
+                if (document.getElementById(sepWeekDays[i]).checked) {
+                  weekdayString = document.getElementById(sepWeekDays[i]).value;
+                }
+              }
+              for (let j = 0; j < sepDays.length; j++) {
+                if (document.getElementById(sepDays[j]).checked) {
+                  monthDate = parseInt(document.getElementById(sepDays[j]).value);
+                }
+              }
+              if ((weekdayString !== '') && (monthDate !== 0)) {
+                filteredMusics = fullMonthMusics.filter(selection=>{
+                  return(selection.rule[weekdayString].indexOf(monthDate) !== -1);
+                });
+                vm.sepMusics = filteredMusics.sort((a, b)=>{
+                  if (a.a_string.toLowerCase() < b.a_string.toLowerCase()) {
+                    return -1;
+                  } else if (a.a_string.toLowerCase() > b.a_string.toLowerCase()) {
+                    return 1;
+                  } else {
+                    return 0;
+                  }
+                });
+                document.getElementById('septemberMusicTheme').innerHTML = vm.sepMusics[0].theme;
+                document.getElementById('septemberMusicTheme').setAttribute("style", "display: initial;");
+              } else {
+                document.getElementById('septemberMusicTheme').setAttribute("style", "display: none;");
+              }
+              break;
+            case('october_musicsbyuser'):
+              vm.octMusics = [];
+              for (let i = 0; i < octWeekDays.length; i++) {
+                if (document.getElementById(octWeekDays[i]).checked) {
+                  weekdayString = document.getElementById(octWeekDays[i]).value;
+                }
+              }
+              for (let j = 0; j < octDays.length; j++) {
+                if (document.getElementById(octDays[j]).checked) {
+                  monthDate = parseInt(document.getElementById(octDays[j]).value);
+                }
+              }
+              if ((weekdayString !== '') && (monthDate !== 0)) {
+                filteredMusics = fullMonthMusics.filter(selection=>{
+                  return(selection.rule[weekdayString].indexOf(monthDate) !== -1);
+                });
+                vm.octMusics = filteredMusics.sort((a, b)=>{
+                  if (a.a_string.toLowerCase() < b.a_string.toLowerCase()) {
+                    return -1;
+                  } else if (a.a_string.toLowerCase() > b.a_string.toLowerCase()) {
+                    return 1;
+                  } else {
+                    return 0;
+                  }
+                });
+                document.getElementById('octoberMusicTheme').innerHTML = vm.octMusics[0].theme;
+                document.getElementById('octoberMusicTheme').setAttribute("style", "display: initial;");
+              } else {
+                document.getElementById('octoberMusicTheme').setAttribute("style", "display: none;");
+              }
+              break;
+            case('november_musicsbyuser'):
+              vm.novMusics = [];
+              for (let i = 0; i < novWeekDays.length; i++) {
+                if (document.getElementById(novWeekDays[i]).checked) {
+                  weekdayString = document.getElementById(novWeekDays[i]).value;
+                }
+              }
+              for (let j = 0; j < novDays.length; j++) {
+                if (document.getElementById(novDays[j]).checked) {
+                  monthDate = parseInt(document.getElementById(novDays[j]).value);
+                }
+              }
+              if ((weekdayString !== '') && (monthDate !== 0)) {
+                filteredMusics = fullMonthMusics.filter(selection=>{
+                  return(selection.rule[weekdayString].indexOf(monthDate) !== -1);
+                });
+                vm.novMusics = filteredMusics.sort((a, b)=>{
+                  if (a.a_string.toLowerCase() < b.a_string.toLowerCase()) {
+                    return -1;
+                  } else if (a.a_string.toLowerCase() > b.a_string.toLowerCase()) {
+                    return 1;
+                  } else {
+                    return 0;
+                  }
+                });
+                document.getElementById('novemberMusicTheme').innerHTML = vm.novMusics[0].theme;
+                document.getElementById('novemberMusicTheme').setAttribute("style", "display: initial;");
+              } else {
+                document.getElementById('novemberMusicTheme').setAttribute("style", "display: none;");
+              }
+              break;
+            case('december_musicsbyuser'):
+              vm.decMusics = [];
+              for (let i = 0; i < decWeekDays.length; i++) {
+                if (document.getElementById(decWeekDays[i]).checked) {
+                  weekdayString = document.getElementById(decWeekDays[i]).value;
+                }
+              }
+              for (let j = 0; j < decDays.length; j++) {
+                if (document.getElementById(decDays[j]).checked) {
+                  monthDate = parseInt(document.getElementById(decDays[j]).value);
+                }
+              }
+              if ((weekdayString !== '') && (monthDate !== 0)) {
+                filteredMusics = fullMonthMusics.filter(selection=>{
+                  return(selection.rule[weekdayString].indexOf(monthDate) !== -1);
+                });
+                vm.decMusics = filteredMusics.sort((a, b)=>{
+                  if (a.a_string.toLowerCase() < b.a_string.toLowerCase()) {
+                    return -1;
+                  } else if (a.a_string.toLowerCase() > b.a_string.toLowerCase()) {
+                    return 1;
+                  } else {
+                    return 0;
+                  }
+                });
+                document.getElementById('decemberMusicTheme').innerHTML = vm.decMusics[0].theme;
+                document.getElementById('decemberMusicTheme').setAttribute("style", "display: initial;");
+              } else {
+                document.getElementById('decemberMusicTheme').setAttribute("style", "display: none;");
+              }
+              break;
+            default:
+              console.log('month not supported');
+          }
+        });
+      }
+
+      function displayWeekMusics(table) {
+
+        $http.get(`/${table}/${currentUserId}`)
+        .then(dayMusicData=>{
+          let dayMusic = dayMusicData.data;
+          if (table === 'friday_musicsbyuser') {
+            vm.friMusics = dayMusic.sort((a, b)=>{
+              if (a.a_string.toLowerCase() < b.a_string.toLowerCase()) {
+                return -1;
+              } else if (a.a_string.toLowerCase() > b.a_string.toLowerCase()) {
+                return 1;
+              } else {
+                return 0;
+              }
+            });
+          } else {
+            vm.sunMusics = dayMusic.sort((a, b)=>{
+              if (a.a_string.toLowerCase() < b.a_string.toLowerCase()) {
+                return -1;
+              } else if (a.a_string.toLowerCase() > b.a_string.toLowerCase()) {
+                return 1;
+              } else {
+                return 0;
+              }
+            });
+          }
+        });
+      }
+
+      function toggleMusicCurratorMonth(musicMonth) {
+        let fridayMusicCurratorToggleDiv = document.getElementById('fridayMusicCurratorToggleDiv');
+        let fridayMusicCurratorDisplay = document.getElementById('fridayMusicCurratorDisplay');
+        let sundayMusicCurratorToggleDiv = document.getElementById('sundayMusicCurratorToggleDiv');
+        let sundayMusicCurratorDisplay = document.getElementById('sundayMusicCurratorDisplay');
+        let januaryMusicCurratorToggleDiv = document.getElementById('januaryMusicCurratorToggleDiv');
+        let januaryMusicCurratorDisplay = document.getElementById('januaryMusicCurratorDisplay');
+        let februaryMusicCurratorToggleDiv = document.getElementById('februaryMusicCurratorToggleDiv');
+        let februaryMusicCurratorDisplay = document.getElementById('februaryMusicCurratorDisplay');
+        let marchMusicCurratorToggleDiv = document.getElementById('marchMusicCurratorToggleDiv');
+        let marchMusicCurratorDisplay = document.getElementById('marchMusicCurratorDisplay');
+        let aprilMusicCurratorToggleDiv = document.getElementById('aprilMusicCurratorToggleDiv');
+        let aprilMusicCurratorDisplay = document.getElementById('aprilMusicCurratorDisplay');
+        let mayMusicCurratorToggleDiv = document.getElementById('mayMusicCurratorToggleDiv');
+        let mayMusicCurratorDisplay = document.getElementById('mayMusicCurratorDisplay');
+        let juneMusicCurratorToggleDiv = document.getElementById('juneMusicCurratorToggleDiv');
+        let juneMusicCurratorDisplay = document.getElementById('juneMusicCurratorDisplay');
+        let julyMusicCurratorToggleDiv = document.getElementById('julyMusicCurratorToggleDiv');
+        let julyMusicCurratorDisplay = document.getElementById('julyMusicCurratorDisplay');
+        let augustMusicCurratorToggleDiv = document.getElementById('augustMusicCurratorToggleDiv');
+        let augustMusicCurratorDisplay = document.getElementById('augustMusicCurratorDisplay');
+        let septemberMusicCurratorToggleDiv = document.getElementById('septemberMusicCurratorToggleDiv');
+        let septemberMusicCurratorDisplay = document.getElementById('septemberMusicCurratorDisplay');
+        let octoberMusicCurratorToggleDiv = document.getElementById('octoberMusicCurratorToggleDiv');
+        let octoberMusicCurratorDisplay = document.getElementById('octoberMusicCurratorDisplay');
+        let novemberMusicCurratorToggleDiv = document.getElementById('novemberMusicCurratorToggleDiv');
+        let novemberMusicCurratorDisplay = document.getElementById('novemberMusicCurratorDisplay');
+        let decemberMusicCurratorToggleDiv = document.getElementById('decemberMusicCurratorToggleDiv');
+        let decemberMusicCurratorDisplay = document.getElementById('decemberMusicCurratorDisplay');
+
+        switch(musicMonth) {
+          case('Friday'):
+            fridayMusicCurratorToggleDiv.setAttribute("style", "display: none;");
+            fridayMusicCurratorDisplay.setAttribute("style", "display: initial;");
+            sundayMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            sundayMusicCurratorDisplay.setAttribute("style", "display: none;");
+            januaryMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            januaryMusicCurratorDisplay.setAttribute("style", "display: none;");
+            februaryMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            februaryMusicCurratorDisplay.setAttribute("style", "display: none;");
+            marchMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            marchMusicCurratorDisplay.setAttribute("style", "display: none;");
+            aprilMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            aprilMusicCurratorDisplay.setAttribute("style", "display: none;");
+            mayMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            mayMusicCurratorDisplay.setAttribute("style", "display: none;");
+            juneMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            juneMusicCurratorDisplay.setAttribute("style", "display: none;");
+            julyMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            julyMusicCurratorDisplay.setAttribute("style", "display: none;");
+            augustMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            augustMusicCurratorDisplay.setAttribute("style", "display: none;");
+            septemberMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            septemberMusicCurratorDisplay.setAttribute("style", "display: none;");
+            octoberMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            octoberMusicCurratorDisplay.setAttribute("style", "display: none;");
+            novemberMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            novemberMusicCurratorDisplay.setAttribute("style", "display: none;");
+            decemberMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            decemberMusicCurratorDisplay.setAttribute("style", "display: none;");
+            displayWeekMusics('friday_musicsbyuser');
+            break;
+          case('Sunday'):
+            fridayMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            fridayMusicCurratorDisplay.setAttribute("style", "display: none;");
+            sundayMusicCurratorToggleDiv.setAttribute("style", "display: none;");
+            sundayMusicCurratorDisplay.setAttribute("style", "display: initial;");
+            januaryMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            januaryMusicCurratorDisplay.setAttribute("style", "display: none;");
+            februaryMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            februaryMusicCurratorDisplay.setAttribute("style", "display: none;");
+            marchMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            marchMusicCurratorDisplay.setAttribute("style", "display: none;");
+            aprilMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            aprilMusicCurratorDisplay.setAttribute("style", "display: none;");
+            mayMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            mayMusicCurratorDisplay.setAttribute("style", "display: none;");
+            juneMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            juneMusicCurratorDisplay.setAttribute("style", "display: none;");
+            julyMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            julyMusicCurratorDisplay.setAttribute("style", "display: none;");
+            augustMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            augustMusicCurratorDisplay.setAttribute("style", "display: none;");
+            septemberMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            septemberMusicCurratorDisplay.setAttribute("style", "display: none;");
+            octoberMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            octoberMusicCurratorDisplay.setAttribute("style", "display: none;");
+            novemberMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            novemberMusicCurratorDisplay.setAttribute("style", "display: none;");
+            decemberMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            decemberMusicCurratorDisplay.setAttribute("style", "display: none;");
+            displayWeekMusics('sunday_musicsbyuser');
+            break;
+          case('January'):
+            fridayMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            fridayMusicCurratorDisplay.setAttribute("style", "display: none;");
+            sundayMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            sundayMusicCurratorDisplay.setAttribute("style", "display: none;");
+            januaryMusicCurratorToggleDiv.setAttribute("style", "display: none;");
+            januaryMusicCurratorDisplay.setAttribute("style", "display: initial;");
+            februaryMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            februaryMusicCurratorDisplay.setAttribute("style", "display: none;");
+            marchMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            marchMusicCurratorDisplay.setAttribute("style", "display: none;");
+            aprilMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            aprilMusicCurratorDisplay.setAttribute("style", "display: none;");
+            mayMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            mayMusicCurratorDisplay.setAttribute("style", "display: none;");
+            juneMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            juneMusicCurratorDisplay.setAttribute("style", "display: none;");
+            julyMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            julyMusicCurratorDisplay.setAttribute("style", "display: none;");
+            augustMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            augustMusicCurratorDisplay.setAttribute("style", "display: none;");
+            septemberMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            septemberMusicCurratorDisplay.setAttribute("style", "display: none;");
+            octoberMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            octoberMusicCurratorDisplay.setAttribute("style", "display: none;");
+            novemberMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            novemberMusicCurratorDisplay.setAttribute("style", "display: none;");
+            decemberMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            decemberMusicCurratorDisplay.setAttribute("style", "display: none;");
+            break;
+          case('February'):
+            fridayMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            fridayMusicCurratorDisplay.setAttribute("style", "display: none;");
+            sundayMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            sundayMusicCurratorDisplay.setAttribute("style", "display: none;");
+            januaryMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            januaryMusicCurratorDisplay.setAttribute("style", "display: none;");
+            februaryMusicCurratorToggleDiv.setAttribute("style", "display: none;");
+            februaryMusicCurratorDisplay.setAttribute("style", "display: initial;");
+            marchMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            marchMusicCurratorDisplay.setAttribute("style", "display: none;");
+            aprilMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            aprilMusicCurratorDisplay.setAttribute("style", "display: none;");
+            mayMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            mayMusicCurratorDisplay.setAttribute("style", "display: none;");
+            juneMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            juneMusicCurratorDisplay.setAttribute("style", "display: none;");
+            julyMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            julyMusicCurratorDisplay.setAttribute("style", "display: none;");
+            augustMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            augustMusicCurratorDisplay.setAttribute("style", "display: none;");
+            septemberMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            septemberMusicCurratorDisplay.setAttribute("style", "display: none;");
+            octoberMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            octoberMusicCurratorDisplay.setAttribute("style", "display: none;");
+            novemberMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            novemberMusicCurratorDisplay.setAttribute("style", "display: none;");
+            decemberMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            decemberMusicCurratorDisplay.setAttribute("style", "display: none;");
+            break;
+          case('March'):
+            fridayMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            fridayMusicCurratorDisplay.setAttribute("style", "display: none;");
+            sundayMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            sundayMusicCurratorDisplay.setAttribute("style", "display: none;");
+            januaryMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            januaryMusicCurratorDisplay.setAttribute("style", "display: none;");
+            februaryMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            februaryMusicCurratorDisplay.setAttribute("style", "display: none;");
+            marchMusicCurratorToggleDiv.setAttribute("style", "display: none;");
+            marchMusicCurratorDisplay.setAttribute("style", "display: initial;");
+            aprilMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            aprilMusicCurratorDisplay.setAttribute("style", "display: none;");
+            mayMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            mayMusicCurratorDisplay.setAttribute("style", "display: none;");
+            juneMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            juneMusicCurratorDisplay.setAttribute("style", "display: none;");
+            julyMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            julyMusicCurratorDisplay.setAttribute("style", "display: none;");
+            augustMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            augustMusicCurratorDisplay.setAttribute("style", "display: none;");
+            septemberMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            septemberMusicCurratorDisplay.setAttribute("style", "display: none;");
+            octoberMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            octoberMusicCurratorDisplay.setAttribute("style", "display: none;");
+            novemberMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            novemberMusicCurratorDisplay.setAttribute("style", "display: none;");
+            decemberMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            decemberMusicCurratorDisplay.setAttribute("style", "display: none;");
+            break;
+          case('April'):
+            fridayMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            fridayMusicCurratorDisplay.setAttribute("style", "display: none;");
+            sundayMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            sundayMusicCurratorDisplay.setAttribute("style", "display: none;");
+            januaryMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            januaryMusicCurratorDisplay.setAttribute("style", "display: none;");
+            februaryMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            februaryMusicCurratorDisplay.setAttribute("style", "display: none;");
+            marchMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            marchMusicCurratorDisplay.setAttribute("style", "display: none;");
+            aprilMusicCurratorToggleDiv.setAttribute("style", "display: none;");
+            aprilMusicCurratorDisplay.setAttribute("style", "display: initial;");
+            mayMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            mayMusicCurratorDisplay.setAttribute("style", "display: none;");
+            juneMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            juneMusicCurratorDisplay.setAttribute("style", "display: none;");
+            julyMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            julyMusicCurratorDisplay.setAttribute("style", "display: none;");
+            augustMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            augustMusicCurratorDisplay.setAttribute("style", "display: none;");
+            septemberMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            septemberMusicCurratorDisplay.setAttribute("style", "display: none;");
+            octoberMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            octoberMusicCurratorDisplay.setAttribute("style", "display: none;");
+            novemberMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            novemberMusicCurratorDisplay.setAttribute("style", "display: none;");
+            decemberMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            decemberMusicCurratorDisplay.setAttribute("style", "display: none;");
+            break;
+          case('May'):
+            fridayMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            fridayMusicCurratorDisplay.setAttribute("style", "display: none;");
+            sundayMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            sundayMusicCurratorDisplay.setAttribute("style", "display: none;");
+            januaryMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            januaryMusicCurratorDisplay.setAttribute("style", "display: none;");
+            februaryMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            februaryMusicCurratorDisplay.setAttribute("style", "display: none;");
+            marchMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            marchMusicCurratorDisplay.setAttribute("style", "display: none;");
+            aprilMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            aprilMusicCurratorDisplay.setAttribute("style", "display: none;");
+            mayMusicCurratorToggleDiv.setAttribute("style", "display: none;");
+            mayMusicCurratorDisplay.setAttribute("style", "display: initial;");
+            juneMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            juneMusicCurratorDisplay.setAttribute("style", "display: none;");
+            julyMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            julyMusicCurratorDisplay.setAttribute("style", "display: none;");
+            augustMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            augustMusicCurratorDisplay.setAttribute("style", "display: none;");
+            septemberMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            septemberMusicCurratorDisplay.setAttribute("style", "display: none;");
+            octoberMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            octoberMusicCurratorDisplay.setAttribute("style", "display: none;");
+            novemberMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            novemberMusicCurratorDisplay.setAttribute("style", "display: none;");
+            decemberMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            decemberMusicCurratorDisplay.setAttribute("style", "display: none;");
+            break;
+          case('June'):
+            fridayMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            fridayMusicCurratorDisplay.setAttribute("style", "display: none;");
+            sundayMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            sundayMusicCurratorDisplay.setAttribute("style", "display: none;");
+            januaryMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            januaryMusicCurratorDisplay.setAttribute("style", "display: none;");
+            februaryMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            februaryMusicCurratorDisplay.setAttribute("style", "display: none;");
+            marchMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            marchMusicCurratorDisplay.setAttribute("style", "display: none;");
+            aprilMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            aprilMusicCurratorDisplay.setAttribute("style", "display: none;");
+            mayMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            mayMusicCurratorDisplay.setAttribute("style", "display: none;");
+            juneMusicCurratorToggleDiv.setAttribute("style", "display: none;");
+            juneMusicCurratorDisplay.setAttribute("style", "display: initial;");
+            julyMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            julyMusicCurratorDisplay.setAttribute("style", "display: none;");
+            augustMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            augustMusicCurratorDisplay.setAttribute("style", "display: none;");
+            septemberMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            septemberMusicCurratorDisplay.setAttribute("style", "display: none;");
+            octoberMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            octoberMusicCurratorDisplay.setAttribute("style", "display: none;");
+            novemberMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            novemberMusicCurratorDisplay.setAttribute("style", "display: none;");
+            decemberMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            decemberMusicCurratorDisplay.setAttribute("style", "display: none;");
+            break;
+          case('July'):
+            fridayMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            fridayMusicCurratorDisplay.setAttribute("style", "display: none;");
+            sundayMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            sundayMusicCurratorDisplay.setAttribute("style", "display: none;");
+            januaryMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            januaryMusicCurratorDisplay.setAttribute("style", "display: none;");
+            februaryMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            februaryMusicCurratorDisplay.setAttribute("style", "display: none;");
+            marchMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            marchMusicCurratorDisplay.setAttribute("style", "display: none;");
+            aprilMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            aprilMusicCurratorDisplay.setAttribute("style", "display: none;");
+            mayMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            mayMusicCurratorDisplay.setAttribute("style", "display: none;");
+            juneMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            juneMusicCurratorDisplay.setAttribute("style", "display: none;");
+            julyMusicCurratorToggleDiv.setAttribute("style", "display: none;");
+            julyMusicCurratorDisplay.setAttribute("style", "display: initial;");
+            augustMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            augustMusicCurratorDisplay.setAttribute("style", "display: none;");
+            septemberMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            septemberMusicCurratorDisplay.setAttribute("style", "display: none;");
+            octoberMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            octoberMusicCurratorDisplay.setAttribute("style", "display: none;");
+            novemberMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            novemberMusicCurratorDisplay.setAttribute("style", "display: none;");
+            decemberMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            decemberMusicCurratorDisplay.setAttribute("style", "display: none;");
+            break;
+          case('August'):
+            fridayMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            fridayMusicCurratorDisplay.setAttribute("style", "display: none;");
+            sundayMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            sundayMusicCurratorDisplay.setAttribute("style", "display: none;");
+            januaryMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            januaryMusicCurratorDisplay.setAttribute("style", "display: none;");
+            februaryMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            februaryMusicCurratorDisplay.setAttribute("style", "display: none;");
+            marchMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            marchMusicCurratorDisplay.setAttribute("style", "display: none;");
+            aprilMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            aprilMusicCurratorDisplay.setAttribute("style", "display: none;");
+            mayMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            mayMusicCurratorDisplay.setAttribute("style", "display: none;");
+            juneMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            juneMusicCurratorDisplay.setAttribute("style", "display: none;");
+            julyMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            julyMusicCurratorDisplay.setAttribute("style", "display: none;");
+            augustMusicCurratorToggleDiv.setAttribute("style", "display: none;");
+            augustMusicCurratorDisplay.setAttribute("style", "display: initial;");
+            septemberMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            septemberMusicCurratorDisplay.setAttribute("style", "display: none;");
+            octoberMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            octoberMusicCurratorDisplay.setAttribute("style", "display: none;");
+            novemberMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            novemberMusicCurratorDisplay.setAttribute("style", "display: none;");
+            decemberMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            decemberMusicCurratorDisplay.setAttribute("style", "display: none;");
+            break;
+          case('September'):
+            fridayMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            fridayMusicCurratorDisplay.setAttribute("style", "display: none;");
+            sundayMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            sundayMusicCurratorDisplay.setAttribute("style", "display: none;");
+            januaryMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            januaryMusicCurratorDisplay.setAttribute("style", "display: none;");
+            februaryMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            februaryMusicCurratorDisplay.setAttribute("style", "display: none;");
+            marchMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            marchMusicCurratorDisplay.setAttribute("style", "display: none;");
+            aprilMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            aprilMusicCurratorDisplay.setAttribute("style", "display: none;");
+            mayMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            mayMusicCurratorDisplay.setAttribute("style", "display: none;");
+            juneMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            juneMusicCurratorDisplay.setAttribute("style", "display: none;");
+            julyMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            julyMusicCurratorDisplay.setAttribute("style", "display: none;");
+            augustMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            augustMusicCurratorDisplay.setAttribute("style", "display: none;");
+            septemberMusicCurratorToggleDiv.setAttribute("style", "display: none;");
+            septemberMusicCurratorDisplay.setAttribute("style", "display: initial;");
+            octoberMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            octoberMusicCurratorDisplay.setAttribute("style", "display: none;");
+            novemberMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            novemberMusicCurratorDisplay.setAttribute("style", "display: none;");
+            decemberMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            decemberMusicCurratorDisplay.setAttribute("style", "display: none;");
+            break;
+          case('October'):
+            fridayMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            fridayMusicCurratorDisplay.setAttribute("style", "display: none;");
+            sundayMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            sundayMusicCurratorDisplay.setAttribute("style", "display: none;");
+            januaryMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            januaryMusicCurratorDisplay.setAttribute("style", "display: none;");
+            februaryMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            februaryMusicCurratorDisplay.setAttribute("style", "display: none;");
+            marchMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            marchMusicCurratorDisplay.setAttribute("style", "display: none;");
+            aprilMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            aprilMusicCurratorDisplay.setAttribute("style", "display: none;");
+            mayMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            mayMusicCurratorDisplay.setAttribute("style", "display: none;");
+            juneMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            juneMusicCurratorDisplay.setAttribute("style", "display: none;");
+            julyMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            julyMusicCurratorDisplay.setAttribute("style", "display: none;");
+            augustMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            augustMusicCurratorDisplay.setAttribute("style", "display: none;");
+            septemberMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            septemberMusicCurratorDisplay.setAttribute("style", "display: none;");
+            octoberMusicCurratorToggleDiv.setAttribute("style", "display: none;");
+            octoberMusicCurratorDisplay.setAttribute("style", "display: initial;");
+            novemberMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            novemberMusicCurratorDisplay.setAttribute("style", "display: none;");
+            decemberMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            decemberMusicCurratorDisplay.setAttribute("style", "display: none;");
+            break;
+          case('November'):
+            fridayMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            fridayMusicCurratorDisplay.setAttribute("style", "display: none;");
+            sundayMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            sundayMusicCurratorDisplay.setAttribute("style", "display: none;");
+            januaryMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            januaryMusicCurratorDisplay.setAttribute("style", "display: none;");
+            februaryMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            februaryMusicCurratorDisplay.setAttribute("style", "display: none;");
+            marchMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            marchMusicCurratorDisplay.setAttribute("style", "display: none;");
+            aprilMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            aprilMusicCurratorDisplay.setAttribute("style", "display: none;");
+            mayMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            mayMusicCurratorDisplay.setAttribute("style", "display: none;");
+            juneMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            juneMusicCurratorDisplay.setAttribute("style", "display: none;");
+            julyMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            julyMusicCurratorDisplay.setAttribute("style", "display: none;");
+            augustMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            augustMusicCurratorDisplay.setAttribute("style", "display: none;");
+            septemberMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            septemberMusicCurratorDisplay.setAttribute("style", "display: none;");
+            octoberMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            octoberMusicCurratorDisplay.setAttribute("style", "display: none;");
+            novemberMusicCurratorToggleDiv.setAttribute("style", "display: none;");
+            novemberMusicCurratorDisplay.setAttribute("style", "display: initial;");
+            decemberMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            decemberMusicCurratorDisplay.setAttribute("style", "display: none;");
+            break;
+          case('December'):
+            fridayMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            fridayMusicCurratorDisplay.setAttribute("style", "display: none;");
+            sundayMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            sundayMusicCurratorDisplay.setAttribute("style", "display: none;");
+            januaryMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            januaryMusicCurratorDisplay.setAttribute("style", "display: none;");
+            februaryMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            februaryMusicCurratorDisplay.setAttribute("style", "display: none;");
+            marchMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            marchMusicCurratorDisplay.setAttribute("style", "display: none;");
+            aprilMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            aprilMusicCurratorDisplay.setAttribute("style", "display: none;");
+            mayMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            mayMusicCurratorDisplay.setAttribute("style", "display: none;");
+            juneMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            juneMusicCurratorDisplay.setAttribute("style", "display: none;");
+            julyMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            julyMusicCurratorDisplay.setAttribute("style", "display: none;");
+            augustMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            augustMusicCurratorDisplay.setAttribute("style", "display: none;");
+            septemberMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            septemberMusicCurratorDisplay.setAttribute("style", "display: none;");
+            octoberMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            octoberMusicCurratorDisplay.setAttribute("style", "display: none;");
+            novemberMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+            novemberMusicCurratorDisplay.setAttribute("style", "display: none;");
+            decemberMusicCurratorToggleDiv.setAttribute("style", "display: none;");
+            decemberMusicCurratorDisplay.setAttribute("style", "display: initial;");
+            break;
+          default:
+            console.log('unsupported music month');
+        }
+      }
+
+      function closeMusicCurratorManager() {
+        let musicCurratorManagementDiv = document.getElementById('musicCurratorManagementDiv');
+        let musicCurratorZone = document.getElementById('musicCurratorZone');
+        let musicCuratorManager = document.getElementById('musicCuratorManager');
+        let fridayMusicCurratorToggleDiv = document.getElementById('fridayMusicCurratorToggleDiv');
+        let fridayMusicCurratorDisplay = document.getElementById('fridayMusicCurratorDisplay');
+        let sundayMusicCurratorToggleDiv = document.getElementById('sundayMusicCurratorToggleDiv');
+        let sundayMusicCurratorDisplay = document.getElementById('sundayMusicCurratorDisplay');
+        let januaryMusicCurratorToggleDiv = document.getElementById('januaryMusicCurratorToggleDiv');
+        let januaryMusicCurratorDisplay = document.getElementById('januaryMusicCurratorDisplay');
+        let februaryMusicCurratorToggleDiv = document.getElementById('februaryMusicCurratorToggleDiv');
+        let februaryMusicCurratorDisplay = document.getElementById('februaryMusicCurratorDisplay');
+        let marchMusicCurratorToggleDiv = document.getElementById('marchMusicCurratorToggleDiv');
+        let marchMusicCurratorDisplay = document.getElementById('marchMusicCurratorDisplay');
+        let aprilMusicCurratorToggleDiv = document.getElementById('aprilMusicCurratorToggleDiv');
+        let aprilMusicCurratorDisplay = document.getElementById('aprilMusicCurratorDisplay');
+        let mayMusicCurratorToggleDiv = document.getElementById('mayMusicCurratorToggleDiv');
+        let mayMusicCurratorDisplay = document.getElementById('mayMusicCurratorDisplay');
+        let juneMusicCurratorToggleDiv = document.getElementById('juneMusicCurratorToggleDiv');
+        let juneMusicCurratorDisplay = document.getElementById('juneMusicCurratorDisplay');
+        let julyMusicCurratorToggleDiv = document.getElementById('julyMusicCurratorToggleDiv');
+        let julyMusicCurratorDisplay = document.getElementById('julyMusicCurratorDisplay');
+        let augustMusicCurratorToggleDiv = document.getElementById('augustMusicCurratorToggleDiv');
+        let augustMusicCurratorDisplay = document.getElementById('augustMusicCurratorDisplay');
+        let septemberMusicCurratorToggleDiv = document.getElementById('septemberMusicCurratorToggleDiv');
+        let septemberMusicCurratorDisplay = document.getElementById('septemberMusicCurratorDisplay');
+        let octoberMusicCurratorToggleDiv = document.getElementById('octoberMusicCurratorToggleDiv');
+        let octoberMusicCurratorDisplay = document.getElementById('octoberMusicCurratorDisplay');
+        let novemberMusicCurratorToggleDiv = document.getElementById('novemberMusicCurratorToggleDiv');
+        let novemberMusicCurratorDisplay = document.getElementById('novemberMusicCurratorDisplay');
+        let decemberMusicCurratorToggleDiv = document.getElementById('decemberMusicCurratorToggleDiv');
+        let decemberMusicCurratorDisplay = document.getElementById('decemberMusicCurratorDisplay');
+
+        musicCurratorManagementDiv.setAttribute("style", "display: none;");
+        musicCurratorZone.setAttribute("style", "opacity: 1.0;");
+        musicCuratorManager.setAttribute("style", "visibility: visible;");
+        fridayMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+        fridayMusicCurratorDisplay.setAttribute("style", "display: none;");
+        sundayMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+        sundayMusicCurratorDisplay.setAttribute("style", "display: none;");
+        januaryMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+        januaryMusicCurratorDisplay.setAttribute("style", "display: none;");
+        februaryMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+        februaryMusicCurratorDisplay.setAttribute("style", "display: none;");
+        marchMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+        marchMusicCurratorDisplay.setAttribute("style", "display: none;");
+        aprilMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+        aprilMusicCurratorDisplay.setAttribute("style", "display: none;");
+        mayMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+        mayMusicCurratorDisplay.setAttribute("style", "display: none;");
+        juneMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+        juneMusicCurratorDisplay.setAttribute("style", "display: none;");
+        julyMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+        julyMusicCurratorDisplay.setAttribute("style", "display: none;");
+        augustMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+        augustMusicCurratorDisplay.setAttribute("style", "display: none;");
+        septemberMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+        septemberMusicCurratorDisplay.setAttribute("style", "display: none;");
+        octoberMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+        octoberMusicCurratorDisplay.setAttribute("style", "display: none;");
+        novemberMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+        novemberMusicCurratorDisplay.setAttribute("style", "display: none;");
+        decemberMusicCurratorToggleDiv.setAttribute("style", "display: initial;");
+        decemberMusicCurratorDisplay.setAttribute("style", "display: none;");
+      }
+
+      function musicsCurationManagement() {
+        let musicCurratorManagementDiv = document.getElementById('musicCurratorManagementDiv');
+        let musicCurratorZone = document.getElementById('musicCurratorZone');
+        let musicCuratorManager = document.getElementById('musicCuratorManager');
+
+        musicCurratorManagementDiv.setAttribute("style", "display: initial;");
+        musicCurratorZone.setAttribute("style", "opacity: 0.3;");
+        musicCuratorManager.setAttribute("style", "visibility: hidden;");
+      }
 
       function billsReportDone() {
         let reportForBills = document.getElementById('reportForBills');

@@ -8,7 +8,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 1,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=395425664/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://nursewithwound1.bandcamp.com/album/thunder-perfect-mind-deluxe',
@@ -26,7 +26,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 2,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1384487254/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://carbomb.bandcamp.com/album/meta',
@@ -44,7 +44,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 3,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3706973039/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://nomeansnomusic.bandcamp.com/album/the-worldhood-of-the-world-as-such',
@@ -62,7 +62,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 4,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1215305700/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://nursewithwound1.bandcamp.com/album/lofoten-deadhead',
@@ -80,7 +80,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 5,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3708541054/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://locrian.bandcamp.com/album/infinite-dissolution',
@@ -98,7 +98,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 6,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3338179255/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://mamiffer.bandcamp.com/album/statu-nascendi-japanese-bonus-disc',
@@ -116,7 +116,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 7,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3899828666/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://nursewithwound1.bandcamp.com/album/dark-fat',
@@ -134,7 +134,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 8,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1395969956/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://expander.bandcamp.com/album/laws-of-power',
@@ -152,7 +152,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 9,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1680348550/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://cavemancult.bandcamp.com/album/rituals-of-savagery',
@@ -170,7 +170,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 10,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=423189070/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://nursewithwound1.bandcamp.com/album/automating-volume-one',
@@ -188,7 +188,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 11,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4251755056/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://candlelightrecordsuk.bandcamp.com/album/reverence',
@@ -206,7 +206,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 12,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2218492553/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://i-voidhangerrecords.bandcamp.com/album/infamata',
@@ -224,7 +224,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 13,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1384948701/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://nursewithwound1.bandcamp.com/album/a-sucked-orange',
@@ -242,7 +242,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 14,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2561425467/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://seriousbeak.bandcamp.com/album/huxwhukw-2',
@@ -260,7 +260,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 15,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=506985205/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://viakurushimi.bandcamp.com/album/kurushimi',
@@ -278,7 +278,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 16,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1252178260/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://nursewithwound1.bandcamp.com/album/simple-headphone-mind',
@@ -296,7 +296,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 17,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=221334160/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://howlinggiant.bandcamp.com/album/black-hole-space-wizard-part-2',
@@ -314,7 +314,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 18,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1330913740/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://spaceslug.bandcamp.com/album/time-travel-dilemma',
@@ -332,7 +332,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 19,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=120112218/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://thrillingliving.bandcamp.com/album/12',
@@ -350,7 +350,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 20,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3894989615/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://massmediarecords.bandcamp.com/album/collection',
@@ -368,7 +368,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 21,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2251088645/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://internalautonomy.bandcamp.com/album/ferox',
@@ -386,7 +386,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 22,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1209444808/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://relapsealumni.bandcamp.com/album/a-deleted-symphony-for-the-beaten-down',
@@ -404,7 +404,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 23,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4008720429/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://cloakroom.bandcamp.com/album/time-well',
@@ -422,7 +422,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 24,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=795143880/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://nothing.bandcamp.com/album/tired-of-tomorrow-deluxe-version',
@@ -440,7 +440,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 25,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1752700917/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://comacozer.bandcamp.com/album/kalos-eidos-skopeo',
@@ -458,7 +458,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 26,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3101404654/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://theblackheartdeathcult.bandcamp.com/album/black-rainbow-ep',
@@ -476,7 +476,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 27,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=749486697/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://mtmountain.bandcamp.com/album/cosmos-terros',
@@ -494,7 +494,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 28,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3966029014/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://nursewithwound1.bandcamp.com/album/bar-maldoror',
@@ -512,7 +512,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 29,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=343477112/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://bellwitch.bandcamp.com/album/four-phantoms',
@@ -530,7 +530,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 30,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=302569069/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://no-solace.bandcamp.com/album/exercises-in-futility-lp-2015',
@@ -548,7 +548,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 31,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=989167209/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://wrmlst.bandcamp.com/album/the-feral-wisdom',
@@ -566,7 +566,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 32,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4280095474/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://amputatedveinrecords.bandcamp.com/album/propagation-of-the-foul',
@@ -584,7 +584,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 33,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=644408023/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://theanaesthete.bandcamp.com/album/utopioid',
@@ -602,7 +602,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 34,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3339473640/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://nursewithwound1.bandcamp.com/album/the-surveillance-lounge',
@@ -620,7 +620,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 35,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3300944452/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://melkbelly.bandcamp.com/album/nothing-valley',
@@ -638,7 +638,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 36,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1914812463/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://ghostkillerentertainment.bandcamp.com/album/disney-goes-hardcore',
@@ -656,7 +656,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 37,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2006216280/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://pyrrhonband.bandcamp.com/album/what-passes-for-survival',
@@ -674,7 +674,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 38,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1182895266/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://profoundlorerecords.bandcamp.com/album/infrared-horizon',
@@ -692,7 +692,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 39,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3897774988/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://deathspellomega.bandcamp.com/album/the-synarchy-of-molten-bones',
@@ -710,7 +710,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 40,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1712544940/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://employedtoserve.bandcamp.com/album/the-warmth-of-a-dying-sun-2',
@@ -728,7 +728,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 41,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2104766731/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://ohhms.bandcamp.com/album/cold-2',
@@ -746,7 +746,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 42,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1634325352/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://holyroarrecords.bandcamp.com/album/the-truth-in-our-bodies',
@@ -764,7 +764,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 43,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3929061907/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://darkdescentrecords.bandcamp.com/album/eroded-corridors-of-unbeing',
@@ -782,7 +782,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 44,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2158092846/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://misthyrming.bandcamp.com/album/s-ngvar-elds-og-rei-u',
@@ -800,7 +800,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 45,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4165913683/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://bellwitch.bandcamp.com/album/mirror-reaper',
@@ -818,7 +818,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 46,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2418348675/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://nursewithwound1.bandcamp.com/album/shipwreck-radio-final-broadcasts',
@@ -836,7 +836,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 47,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2660635769/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://gaywitchabortion.bandcamp.com/album/halo-of-flies-sessions',
@@ -854,7 +854,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 48,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1351521571/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://krallice.bandcamp.com/album/lo-m',
@@ -872,7 +872,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 49,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2258812329/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://nursewithwound1.bandcamp.com/album/creakiness',
@@ -890,7 +890,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 50,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2562196777/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://ctts.bandcamp.com/album/as-the-roots-undo',
@@ -908,7 +908,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 51,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2298164209/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://thickpisss.bandcamp.com/album/demo',
@@ -926,7 +926,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 52,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=765292961/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://modernbaseballpa.bandcamp.com/album/sports-2',
@@ -944,7 +944,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 53,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=845311748/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://lame-orecords.bandcamp.com/album/lowercase-roses-ep',
@@ -962,7 +962,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 54,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1663129501/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://whereismarietta.bandcamp.com/album/as-it-were',
@@ -980,7 +980,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 55,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2136943119/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://lumpythedumpers.bandcamp.com/album/those-pickled-fuckers"',
@@ -998,7 +998,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 56,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2737163036/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://petitepdx.bandcamp.com/album/ii',
@@ -1016,7 +1016,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 57,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2622430888/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://smokingroom-label.bandcamp.com/album/s-t-2',
@@ -1034,7 +1034,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 58,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1351946248/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://cannibalcorpse.bandcamp.com/album/red-before-black',
@@ -1052,7 +1052,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 59,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=482198708/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://legendry.bandcamp.com/album/dungeon-crawler',
@@ -1070,7 +1070,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 60,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3204709921/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://i-voidhangerrecords.bandcamp.com/album/the-crowning-quietus',
@@ -1088,7 +1088,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 61,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3792658459/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://abysmalsounds.bandcamp.com/album/crone',
@@ -1106,7 +1106,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 62,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2518658681/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://ritualmist.bandcamp.com/album/demo-2017',
@@ -1124,7 +1124,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 63,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2990469977/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://ancientdoommetal.bandcamp.com/album/abraxas',
@@ -1142,7 +1142,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 64,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1603210969/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://nursewithwound1.bandcamp.com/album/a-handjob-from-the-laughing-policeman',
@@ -1160,7 +1160,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 65,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2893280889/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://nursewithwound1.bandcamp.com/album/who-can-i-turn-to-stereo',
@@ -1178,7 +1178,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 66,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2244444763/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://nursewithwound1.bandcamp.com/album/stereo-wastelands',
@@ -1196,7 +1196,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 67,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=586986555/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://omniatl.bandcamp.com/album/multi-task',
@@ -1214,7 +1214,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 68,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2240770784/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://protomartyr.bandcamp.com/album/relatives-in-descent',
@@ -1232,7 +1232,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 69,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2909394141/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://carseatheadrest.bandcamp.com/album/starving-while-living',
@@ -1250,7 +1250,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 70,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2556597098/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://limpwrist.bandcamp.com/album/facades',
@@ -1268,7 +1268,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 71,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4037673616/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://haramharam.bandcamp.com/album/when-you-have-won-you-have-lost',
@@ -1286,7 +1286,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 72,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'http://bandcamp.com/EmbeddedPlayer/album=919329377/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://listen.20buckspin.com/album/curse-of-conception',
@@ -1304,7 +1304,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 73,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4268244820/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://profoundlorerecords.bandcamp.com/album/heartless',
@@ -1322,7 +1322,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 74,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1791932081/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://i-voidhangerrecords.bandcamp.com/album/a-subtler-kind-of-light',
@@ -1340,7 +1340,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 75,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4120711825/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://wildwing.bandcamp.com/album/doomed-ii-repeat',
@@ -1358,7 +1358,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 76,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1434612023/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://squalus.bandcamp.com/album/the-great-fish',
@@ -1376,7 +1376,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 77,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2290990145/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://walpyrgus.bandcamp.com/album/walpyrgus-nights',
@@ -1394,7 +1394,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 78,
           user_id: 1,
-          theme: 'hardcore punk, metal and nurse with wound',
+          theme: 'Punk, Metal & Nurse with Wound',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3798671361/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://incantation666.bandcamp.com/album/profane-nexus',

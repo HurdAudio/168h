@@ -8,7 +8,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 1,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2576718619/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://lowpoint.bandcamp.com/album/bring-me-the-head-of-kyle-bobby-dunn',
@@ -26,7 +26,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 2,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=399680356/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://ruralcolours.bandcamp.com/album/peace',
@@ -44,7 +44,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 3,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=782987008/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://bingsatellites.bandcamp.com/album/song-of-the-hummingbird',
@@ -62,7 +62,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 4,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3514634362/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://timhecker.bandcamp.com/album/love-streams',
@@ -80,7 +80,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 5,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1112581834/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://sonicmeditations.bandcamp.com/album/exquisite-lust',
@@ -98,7 +98,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 6,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3966425461/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://omahara.bandcamp.com/album/omahara-3',
@@ -116,7 +116,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 7,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1246693833/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://phillniblock.bandcamp.com/album/touch-five',
@@ -134,7 +134,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 8,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3218298308/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://helenscarsdale.bandcamp.com/album/spots-in-the-sun',
@@ -152,7 +152,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 9,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=475957477/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://helenscarsdale.bandcamp.com/album/surrender-render-end',
@@ -170,7 +170,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 10,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1254767643/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://kylebobbydunn.bandcamp.com/album/in-miserum-stercus',
@@ -188,7 +188,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 11,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2347154279/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://eileanrec.bandcamp.com/album/stay-sea',
@@ -206,7 +206,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 12,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2922557334/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://lowpoint.bandcamp.com/album/glisten',
@@ -224,7 +224,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 13,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=315244532/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://itsnotyouitsme.bandcamp.com/album/this-i-featuring-theo-bleckmann-sk-li-sverrisson',
@@ -242,7 +242,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 14,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2093749474/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://timhecker.bandcamp.com/album/virgins-paper-bag-edition',
@@ -260,7 +260,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 15,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3270291878/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://dronarivm.bandcamp.com/album/open-to-the-sea',
@@ -278,7 +278,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 16,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1040093344/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://phillniblock.bandcamp.com/album/touch-works-for-hurdy-gurdy-and-voice',
@@ -296,7 +296,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 17,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2056492879/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://orphax.bandcamp.com/album/dream-sequence-4',
@@ -314,7 +314,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 18,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1381228377/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://assemblyfield.bandcamp.com/album/solarism',
@@ -332,7 +332,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 19,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1094705682/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://touch333.bandcamp.com/album/figueroa-terrace',
@@ -350,7 +350,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 20,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=644271494/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://orenambarchi.bandcamp.com/album/live-knots',
@@ -368,7 +368,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 21,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3406973740/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://emmanuelholterbach.bandcamp.com/album/trois-disques-p-les-pour-eliane-radigue',
@@ -386,7 +386,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 22,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1703488108/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://pioulard.bandcamp.com/album/lignin-poise',
@@ -404,7 +404,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 23,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=605498052/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://starsofthelid.bandcamp.com/album/and-their-refinement-of-the-decline',
@@ -422,7 +422,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 24,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2983148247/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://irisarri.bandcamp.com/album/seventeen-words',
@@ -440,7 +440,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 25,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1545097450/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://oneohtrixpointnever1.bandcamp.com/album/rifts',
@@ -458,7 +458,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 26,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=941299459/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://benfrost.bandcamp.com/album/black-marrow',
@@ -476,7 +476,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 27,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=547528775/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://fennesz.bandcamp.com/album/mahler-remixed',
@@ -494,7 +494,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 28,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1616218889/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://kylebobbydunn.bandcamp.com/album/a-young-persons-guide-to-kyle-bobby-dunn',
@@ -512,7 +512,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 29,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3922067933/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://airtexture.bandcamp.com/album/air-texture-volume-i',
@@ -530,7 +530,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 30,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1748224388/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://adambryanbaumwiltzie.bandcamp.com/album/travels-in-constants-vol-24',
@@ -548,7 +548,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 31,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2315096369/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://xirecords.bandcamp.com/album/four-full-flutes',
@@ -566,7 +566,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 32,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1138670248/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://slaapwel.bandcamp.com/album/silenne',
@@ -584,7 +584,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 33,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3024537233/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://sonmi451.bandcamp.com/album/alice',
@@ -602,7 +602,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 34,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1904128458/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://brianconniffe.bandcamp.com/album/bornless-ep',
@@ -620,7 +620,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 35,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=911509297/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://timhecker.bandcamp.com/album/harmony-in-ultraviolet',
@@ -638,7 +638,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 36,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2967472899/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://kaitlynaureliasmith.bandcamp.com/album/frkwys-vol-13-sunergy',
@@ -656,7 +656,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 37,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=185406926/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://loscil.bandcamp.com/album/suns',
@@ -674,7 +674,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 38,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2018875982/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://huron.bandcamp.com/album/the-red-tape',
@@ -692,7 +692,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 39,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2502611751/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://xxchamxx.bandcamp.com/album/land-1',
@@ -710,7 +710,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 40,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4286426371/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://eileanrec.bandcamp.com/album/excavation',
@@ -728,7 +728,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 41,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=873660777/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://dronarivm.bandcamp.com/album/branches',
@@ -746,7 +746,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 42,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=382220642/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://dronarivm.bandcamp.com/album/sinfonietta',
@@ -764,7 +764,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 43,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1445261392/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://forestswords.bandcamp.com/album/compassion',
@@ -782,7 +782,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 44,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=565792550/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://dreamcatalogue.bandcamp.com/album/--18',
@@ -800,7 +800,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 45,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1719169483/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://telepathtelepath.bandcamp.com/album/--42',
@@ -818,7 +818,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 46,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=867883367/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://timhecker.bandcamp.com/album/ravedeath-1972',
@@ -836,7 +836,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 47,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1248245268/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://necrodeathmort.bandcamp.com/album/overland',
@@ -854,7 +854,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 48,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3828099932/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://orphax.bandcamp.com/album/studies-in-dissonance',
@@ -872,7 +872,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 49,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2253300390/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://oceanographicrecords.bandcamp.com/album/modular',
@@ -890,7 +890,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 50,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1073464636/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://mysterybear.bandcamp.com/album/complex-silence-4',
@@ -908,7 +908,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 51,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'http://bandcamp.com/EmbeddedPlayer/album=64449763/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://recordings.irritablehedgehog.com/album/dave-seidel-60-hz',
@@ -926,7 +926,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 52,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2847866671/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://archivesdubmusic.bandcamp.com/album/the-grey-ghost-of-morning',
@@ -944,7 +944,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 53,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4102448981/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://n5md.bandcamp.com/album/heartless',
@@ -962,7 +962,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 54,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2777478826/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://oyukiconjugate.bandcamp.com/album/the-euphoria-of-disobedience',
@@ -980,7 +980,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 55,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3868833881/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://orphax1.bandcamp.com/album/warschauer-stra-e',
@@ -998,7 +998,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 56,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2514789193/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://astralandshit.bandcamp.com/album/--99',
@@ -1016,7 +1016,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 57,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4011494198/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://paulminesweeper.bandcamp.com/album/northreach',
@@ -1034,7 +1034,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 58,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3957509238/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://genot.bandcamp.com/album/paralysis-live-at-silent-night-8',
@@ -1052,7 +1052,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 59,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3271790009/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://themyrrorsbbib.bandcamp.com/album/hasta-la-victoria',
@@ -1070,7 +1070,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 60,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1709653459/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://mathiasgrassow.bandcamp.com/album/2017-divinations',
@@ -1088,7 +1088,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 61,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1359018864/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://darrenmcclure.bandcamp.com/album/nature-mirror',
@@ -1106,7 +1106,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 62,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2286899085/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://davidnewlyn.bandcamp.com/album/transparencies',
@@ -1124,7 +1124,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 63,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2361958115/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://antonymes.bandcamp.com/album/for-now-we-see-through-a-glass-dimly',
@@ -1142,7 +1142,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 64,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1698224919/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://xirecords.bandcamp.com/album/music-by-phill-niblock',
@@ -1160,7 +1160,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 65,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1857300793/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://xirecords.bandcamp.com/album/body-music',
@@ -1178,7 +1178,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 66,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3087503069/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://xirecords.bandcamp.com/album/logos-works',
@@ -1196,7 +1196,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 67,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2971626337/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://noght.bandcamp.com/album/a-letter',
@@ -1214,7 +1214,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 68,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3748396525/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://oejerum.bandcamp.com/album/tr-erne-intetheden',
@@ -1232,7 +1232,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 69,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3484145994/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://offland.bandcamp.com/album/pathways',
@@ -1250,7 +1250,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 70,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3252752347/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://xirecords.bandcamp.com/album/security-vehicles-only',
@@ -1268,7 +1268,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 71,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1046372200/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://gurugurubrain.bandcamp.com/album/sua-hiam-zun',
@@ -1286,7 +1286,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 72,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1439306838/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://tinyleaves.bandcamp.com/album/notes-on-belonging-2',
@@ -1304,7 +1304,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 73,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'http://bandcamp.com/EmbeddedPlayer/album=1650358930/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://music.lowercasenoises.com/album/passage',
@@ -1322,7 +1322,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 74,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'http://bandcamp.com/EmbeddedPlayer/album=400208076/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://music.lowercasenoises.com/album/the-swiss-illness',
@@ -1340,7 +1340,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 75,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'http://bandcamp.com/EmbeddedPlayer/album=650819023/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://music.lowercasenoises.com/album/james',
@@ -1358,7 +1358,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 76,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3992946822/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://unknowntonerecords.bandcamp.com/album/wounded-knee',
@@ -1376,7 +1376,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 77,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1907379065/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://handstitched.bandcamp.com/album/the-cloud-chorus',
@@ -1394,7 +1394,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 78,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=277244698/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://eileanrec.bandcamp.com/album/medicina',
@@ -1412,7 +1412,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 79,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=9089074/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://timhecker.bandcamp.com/album/virgins-2',
@@ -1430,7 +1430,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 80,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4022394178/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://deafheavens.bandcamp.com/album/sunbather',
@@ -1448,7 +1448,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 81,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3693191614/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://amulets.bandcamp.com/album/twin-symmetry',
@@ -1466,7 +1466,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 82,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1445226504/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://firstterracerecords.bandcamp.com/album/fts001',
@@ -1484,7 +1484,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 83,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1069671556/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://soundinsilencerecords.bandcamp.com/album/yours-are-stories-of-sadness',
@@ -1502,7 +1502,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 84,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'http://bandcamp.com/EmbeddedPlayer/album=427507248/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://store.broken20.com/album/li-series-05-jack-on-piano',
@@ -1520,7 +1520,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 85,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=283318884/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://adarcahianku.bandcamp.com/album/the-lost-beggars-of-sahara',
@@ -1538,7 +1538,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 86,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3144344340/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://blankembrace.bandcamp.com/album/pure',
@@ -1556,7 +1556,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 87,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1505950645/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://fabersan.bandcamp.com/album/selected-ambients-2017-collection',
@@ -1574,7 +1574,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 88,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3921803894/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://irrappext.bandcamp.com/album/celestial-laminate',
@@ -1592,7 +1592,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 89,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=149042100/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://whitelabrecs.bandcamp.com/album/purification-verses',
@@ -1610,7 +1610,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 90,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2105411563/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://whitelabrecs.bandcamp.com/album/eyes-down-slowdown',
@@ -1628,7 +1628,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 91,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=727838500/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://newatlantismusic.bandcamp.com/album/inner-work',
@@ -1646,7 +1646,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 92,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2425378851/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://thecaretaker.bandcamp.com/album/everywhere-at-the-end-of-time',
@@ -1664,7 +1664,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 93,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=794123225/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://loscil.bandcamp.com/album/monument-builders',
@@ -1682,7 +1682,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 94,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3777901001/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://whitelabrecs.bandcamp.com/album/of-light-and-shade',
@@ -1700,7 +1700,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 95,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2146271663/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://whitelabrecs.bandcamp.com/album/unsung-memories',
@@ -1718,7 +1718,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 96,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1325522365/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://whitelabrecs.bandcamp.com/album/sixteen-frames',
@@ -1736,7 +1736,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 97,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=228542707/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://dragonseyerecordings.bandcamp.com/album/steel-dragons-eye-twelfth-anniversary',
@@ -1754,7 +1754,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 98,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2089019764/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://dragonseyerecordings.bandcamp.com/album/as-if-we-were-never-here',
@@ -1772,7 +1772,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 99,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=982255756/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://dragonseyerecordings.bandcamp.com/album/acclimation',
@@ -1790,7 +1790,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 100,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3451854041/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://kylebobbydunn.bandcamp.com/album/music-for-medication',
@@ -1808,7 +1808,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 101,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2831529311/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://kylebobbydunn.bandcamp.com/album/six-cognitive-works',
@@ -1826,7 +1826,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 102,
           user_id: 1,
-          theme: 'drone',
+          theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1536680056/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://greggkowalsky.bandcamp.com/album/lorange-lorange',

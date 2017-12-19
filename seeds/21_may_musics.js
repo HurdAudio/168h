@@ -8,7 +8,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 1,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2926666832/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://newfocusrecordings.bandcamp.com/album/hushers',
@@ -26,7 +26,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 2,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4179012292/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://karlrecords.bandcamp.com/album/la-l-gende-deer',
@@ -44,7 +44,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 3,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=45299544/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://karlrecords.bandcamp.com/album/complete-song-books',
@@ -62,7 +62,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 4,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2824493515/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://zeitkratzer.bandcamp.com/album/karlheinz-stockhausen-old-school',
@@ -80,7 +80,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 5,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1635773245/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://idmtheftable.bandcamp.com/album/leaving-the-keyboard-that-plays-itself-down-by-the-river-between-2-30-and-3-30-am-august-3rd-2017',
@@ -98,7 +98,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 6,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1468997469/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://babel-label.bandcamp.com/album/karlheinz-stockhausen-tierkreis',
@@ -116,7 +116,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 7,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2631696285/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://joseperez.bandcamp.com/album/el-piano-del-siglo-xx',
@@ -134,7 +134,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 8,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=518491629/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://streifenjunko.bandcamp.com/album/sval-torv',
@@ -152,7 +152,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 9,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2224588625/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://nilsfrahm.bandcamp.com/album/music-for-the-motion-picture-victoria-bonus-track-version',
@@ -170,7 +170,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 10,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4206764672/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://eljardindeorlando.bandcamp.com/album/festival-de-m-sica-del-siglo-xx',
@@ -188,7 +188,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 11,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=981965785/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://alarmwillsound.bandcamp.com/album/alarm-will-sound-presents-modernists',
@@ -206,7 +206,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 12,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2373284975/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://alarmwillsound.bandcamp.com/album/a-rhythmia',
@@ -224,7 +224,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 13,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=588183065/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://finderskeepersrecords.bandcamp.com/album/mal-fices',
@@ -242,7 +242,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 14,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1435388351/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://forcednostalgia.bandcamp.com/album/submerged-vessels-and-other-stories',
@@ -260,7 +260,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 15,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=13695074/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://forcednostalgia.bandcamp.com/album/sombrero-fallout-2',
@@ -278,7 +278,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 16,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3033247197/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://bangonacan.bandcamp.com/album/bang-on-a-can-meets-kyaw-kyaw-naing',
@@ -296,7 +296,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 17,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1935970520/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://hakanai.bandcamp.com/album/hakanai',
@@ -314,7 +314,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 18,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1808973990/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://gizehrecords.bandcamp.com/album/through-the-sparkle',
@@ -332,7 +332,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 19,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2430724552/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://ronminis.bandcamp.com/album/-',
@@ -350,7 +350,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 20,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2033214861/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://highmoss.bandcamp.com/album/north-towards-ever',
@@ -368,7 +368,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 21,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1899744312/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://discusmusic.bandcamp.com/album/theta-two-47cd',
@@ -386,7 +386,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 22,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2853205985/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://ilusorecords.bandcamp.com/album/extremophile',
@@ -404,7 +404,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 23,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=639343003/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://donnachacostello.bandcamp.com/album/mouvements',
@@ -422,7 +422,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 24,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1753601677/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://natevans.bandcamp.com/album/coyoteways',
@@ -440,7 +440,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 25,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=412747050/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://newfocusrecordings.bandcamp.com/album/marcos-balter-aesopica',
@@ -458,7 +458,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 26,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2007713521/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://newfocusrecordings.bandcamp.com/album/r-we-who-r-we',
@@ -476,7 +476,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 27,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=314662615/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://newfocusrecordings.bandcamp.com/album/nicholas-dieugenio-and-mimi-solomon-into-the-silence',
@@ -494,7 +494,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 28,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3096869906/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://garethdavisfrances-marieuitti.bandcamp.com/album/gramercy',
@@ -512,7 +512,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 29,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3273592205/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://sluchaj.bandcamp.com/album/thunder',
@@ -530,7 +530,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 30,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2041730779/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://aishaorazbayeva.bandcamp.com/album/the-hand-gallery',
@@ -548,7 +548,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 31,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1931904327/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://leboeufbrothers.bandcamp.com/album/imaginist',
@@ -566,7 +566,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 32,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=503991784/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://nilsfrahm.bandcamp.com/album/wintermusik',
@@ -584,7 +584,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 33,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3802551089/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://christinesouthworth.bandcamp.com/album/christine-southworth-string-quartets',
@@ -602,7 +602,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 34,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3947190276/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://soave.bandcamp.com/album/arturo-st-lteri-e-il-pavone-parl-alla-luna',
@@ -620,7 +620,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 35,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=95732423/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://clarkerobinson.bandcamp.com/album/49th-birthday-album',
@@ -638,7 +638,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 36,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2848499200/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://weirdearrecords.bandcamp.com/album/oh-baby-my-acoustica',
@@ -656,7 +656,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 37,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=331011142/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://sentieriselvaggi.bandcamp.com/album/ac-dc',
@@ -674,7 +674,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 38,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1072730020/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://homenormal.bandcamp.com/album/dietro-a-un-vetro',
@@ -692,7 +692,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 39,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1876175985/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://zeitkratzer.bandcamp.com/album/serbian-war-songs',
@@ -710,7 +710,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 40,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=867626409/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://adriankingwell.bandcamp.com/album/babylon',
@@ -728,7 +728,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 41,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'http://bandcamp.com/EmbeddedPlayer/album=1724237696/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://shop.diatribe.ie/album/for-violin-and-electronics',
@@ -746,7 +746,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 42,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'http://bandcamp.com/EmbeddedPlayer/album=644646204/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://shop.diatribe.ie/album/stargazer',
@@ -764,7 +764,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 43,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2823942019/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://subjamlabel.bandcamp.com/album/infinite-loop',
@@ -782,7 +782,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 44,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=286075715/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://subjamlabel.bandcamp.com/album/tropoi',
@@ -800,7 +800,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 45,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2199662800/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://subjamlabel.bandcamp.com/album/bottom',
@@ -818,7 +818,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 46,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2060426740/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://erratum.bandcamp.com/album/cathedrale-de-strasbourg',
@@ -836,7 +836,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 47,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3821231848/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://erratum.bandcamp.com/album/fill-my-body-with-flowers-and-rice',
@@ -854,7 +854,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 48,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=174824813/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://erratum.bandcamp.com/album/the-last-man-in-europe',
@@ -872,7 +872,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 49,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4363051/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://rainbowbridge.bandcamp.com/album/international-exports-and-the-reasons',
@@ -890,7 +890,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 50,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2060810605/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://accidentdutravail.bandcamp.com/album/boucles',
@@ -908,7 +908,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 51,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1136447753/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://1631recordings.bandcamp.com/album/disarm',
@@ -926,7 +926,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 52,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=416228483/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://hospitalhill.bandcamp.com/album/prayer-for-nil',
@@ -944,7 +944,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 53,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1513204624/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://kcinsound.bandcamp.com/album/onset',
@@ -962,7 +962,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 54,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=938441147/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://machinefabriek.bandcamp.com/album/fight-score',
@@ -980,7 +980,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 55,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2161332920/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://jakeschepps.bandcamp.com/album/an-evening-in-the-village-the-music-of-b-la-bart-k',
@@ -998,7 +998,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 56,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1822899403/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://thomasandrewdoyle.bandcamp.com/album/incineration-ceremony',
@@ -1016,7 +1016,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 57,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1302408382/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://modernarecords.bandcamp.com/album/chapitre-ii',
@@ -1034,7 +1034,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 58,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2299067940/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://populistrecords.bandcamp.com/album/daniel-corral-refractions',
@@ -1052,7 +1052,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 59,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2469736947/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://ellenarkbro.bandcamp.com/album/for-organ-and-brass',
@@ -1070,7 +1070,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 60,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2425378851/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://thecaretaker.bandcamp.com/album/everywhere-at-the-end-of-time',
@@ -1088,7 +1088,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 61,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'http://bandcamp.com/EmbeddedPlayer/album=260794481/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://fabriziopaterlinirecords.com/album/secret-book-2',
@@ -1106,7 +1106,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 62,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1144294824/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://newamsterdamrecords.bandcamp.com/album/petits-art-facts',
@@ -1124,7 +1124,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 63,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3930220839/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://modernarecords.bandcamp.com/album/festen',
@@ -1142,7 +1142,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 64,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1682739570/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://kara-liscoverdale.bandcamp.com/album/a-480',
@@ -1160,7 +1160,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 65,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1766634517/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://tonelist.bandcamp.com/album/small-worlds',
@@ -1178,7 +1178,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 66,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4150244094/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://party-dozen.bandcamp.com/album/the-living-man-2',
@@ -1196,7 +1196,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 67,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1364428371/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://leerosevere.bandcamp.com/album/all-these-simple-things',
@@ -1214,7 +1214,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 68,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=111574093/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://feederrecordings.bandcamp.com/album/somewhere-far-away',
@@ -1232,7 +1232,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 69,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3217615456/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://eileanrec.bandcamp.com/album/erasures-and-displacements',
@@ -1250,7 +1250,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 70,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=140233520/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://stefanwesolowski.bandcamp.com/album/rite-of-the-end',
@@ -1268,7 +1268,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 71,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2529425976/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://alexmincek.bandcamp.com/album/torrent',
@@ -1286,7 +1286,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 72,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=681093799/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://newfocusrecordings.bandcamp.com/album/cartography',
@@ -1304,7 +1304,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 73,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4083577322/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://rqtn.bandcamp.com/album/passenger',
@@ -1322,7 +1322,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 74,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=244004016/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://tilmanrobinson.bandcamp.com/album/deer-heart',
@@ -1340,7 +1340,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 75,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1790746888/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://brunosanfilippo.bandcamp.com/album/inside-life',
@@ -1358,7 +1358,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 76,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=260637206/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://brunosanfilippo.bandcamp.com/album/claroscuro-2',
@@ -1376,7 +1376,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 77,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1144787081/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://dmitry-evgrafov.bandcamp.com/album/comprehension-of-light',
@@ -1394,7 +1394,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 78,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2761995487/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://1631recordings.bandcamp.com/album/escapism',
@@ -1412,7 +1412,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 79,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4115508360/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://lindenkillam.bandcamp.com/album/5-dollar-medicine',
@@ -1430,7 +1430,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 80,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'http://bandcamp.com/EmbeddedPlayer/album=2290658552/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://shop.diatribe.ie/album/all-soundings-are-true',
@@ -1448,7 +1448,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 81,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'http://bandcamp.com/EmbeddedPlayer/album=644646204/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://shop.diatribe.ie/album/stargazer',
@@ -1466,7 +1466,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 82,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=493692770/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://benfrost.bandcamp.com/album/by-the-throat',
@@ -1484,7 +1484,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 83,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1686158765/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://williambasinski.bandcamp.com/album/the-disintegration-loops',
@@ -1502,7 +1502,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 84,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3745542189/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://soave.bandcamp.com/album/riccardo-sinigaglia-riflessi',
@@ -1520,7 +1520,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 85,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=985775283/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://nickvasallo.bandcamp.com/album/let-the-machines-do-it-for-us',
@@ -1538,7 +1538,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 86,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1787015233/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://nnatapes.bandcamp.com/album/evrly-mvsic',
@@ -1556,7 +1556,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 87,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2930669060/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://leabertucci.bandcamp.com/album/all-that-is-solid-melts-into-air',
@@ -1574,7 +1574,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 88,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2628390025/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://hewaseatenbyowls.bandcamp.com/album/chorus-30-from-blues-for-the-hitchhiking-dead-2',
@@ -1592,7 +1592,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 89,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=588602477/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://johnathanarce.bandcamp.com/album/sonic-landscapes-a-collection-of-improvisations',
@@ -1610,7 +1610,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 90,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3288210412/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://liammulligan.bandcamp.com/album/couldnt-sleep',
@@ -1628,7 +1628,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 91,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1269075320/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://castleintimeorchestra.bandcamp.com/album/castle-in-time-2',
@@ -1646,7 +1646,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 92,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=436754044/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://fancymusic.bandcamp.com/album/present-continuous',
@@ -1664,7 +1664,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 93,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2632839892/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://meerenai.bandcamp.com/album/pheromone',
@@ -1682,7 +1682,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 94,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=55331850/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://dockstader.bandcamp.com/album/apocalypse',
@@ -1700,7 +1700,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 95,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=682090054/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://modernarecords.bandcamp.com/album/piano-quartet-1',
@@ -1718,7 +1718,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 96,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/track=2568384470/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://modernarecords.bandcamp.com/track/homeless',
@@ -1736,7 +1736,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 97,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2057178573/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://williamrobin.bandcamp.com/album/between-dawn-and-the-day',
@@ -1754,7 +1754,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 98,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1329552134/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://joshuamastel.bandcamp.com/album/codextempore',
@@ -1772,7 +1772,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 99,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2472194527/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://julianbroadhurstmetalpm.bandcamp.com/album/4523-metal-percussion-solo-in-eleven-parts',
@@ -1790,7 +1790,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 100,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1513168489/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://gatesritual.bandcamp.com/album/deliverer-redeemer',
@@ -1808,7 +1808,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 101,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1735658668/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://gatesritual.bandcamp.com/album/viscera',
@@ -1826,7 +1826,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 102,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1297023178/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://gatesritual.bandcamp.com/album/this-door-is-forbidden',
@@ -1844,7 +1844,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 103,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2961934392/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://cejero.bandcamp.com/album/switches',
@@ -1862,7 +1862,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 104,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1747961455/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://cejero.bandcamp.com/album/br-nsh-j-puncak',
@@ -1880,7 +1880,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 105,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3648618995/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://cejero.bandcamp.com/album/on-small-differences-in-sensation',
@@ -1898,7 +1898,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 106,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4112588236/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://soave.bandcamp.com/album/giusto-pio-motore-immobile',
@@ -1916,7 +1916,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 107,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1013983222/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://nostalgiedelaboue.bandcamp.com/album/rien-ni-personne-volume-ii-iii',
@@ -1934,7 +1934,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 108,
           user_id: 1,
-          theme: 'avant garde/new music',
+          theme: 'Avant Garde/New Music',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2537286394/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://nostalgiedelaboue.bandcamp.com/album/dossier-bordeaux-2017',

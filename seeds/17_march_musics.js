@@ -8,7 +8,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 1,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4119708928/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://newamsterdamrecords.bandcamp.com/album/krai',
@@ -26,7 +26,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 2,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=51640814/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://missymazzoli.bandcamp.com/album/vespers-for-a-new-dark-age',
@@ -44,7 +44,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 3,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3714052139/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://jodyredhage.bandcamp.com/album/of-minutiae-and-memory',
@@ -62,7 +62,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 4,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1439897988/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://intaktrec.bandcamp.com/album/lonelyville',
@@ -80,7 +80,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 5,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=784569706/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://intaktrec.bandcamp.com/album/passagio',
@@ -98,7 +98,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 6,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'http://bandcamp.com/EmbeddedPlayer/album=513818594/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://firehouse12records.com/album/life-carries-me-this-way',
@@ -116,7 +116,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 7,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1989500445/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://ditzner.bandcamp.com/album/free-flight',
@@ -134,7 +134,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 8,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1807806451/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://ayler-records.bandcamp.com/album/can-you-hear-me',
@@ -152,7 +152,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 9,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2104549245/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://bocian.bandcamp.com/album/scrumptious-sabotage',
@@ -170,7 +170,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 10,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1527382468/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://lindaoh.bandcamp.com/album/sun-pictures',
@@ -188,7 +188,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 11,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3065200155/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://aphoniarecordings.bandcamp.com/album/sub-rosa',
@@ -206,7 +206,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 12,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1571887307/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://amydenio.bandcamp.com/album/make-it-funky-god-2',
@@ -224,7 +224,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 13,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3001875899/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://infrequentseams.bandcamp.com/album/mzm',
@@ -242,7 +242,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 14,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=769961488/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://conniecrothersvirgdzurinkotwo-pianoquintet.bandcamp.com/album/connie-crothers-virg-dzurinko-two-piano-quintet',
@@ -260,7 +260,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 15,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1288456079/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://lydialunch.bandcamp.com/album/retrovirus',
@@ -278,7 +278,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 16,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1981644578/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://zeenaparkins.bandcamp.com/album/three-harps-tuning-forks-electronics-2',
@@ -296,7 +296,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 17,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3762222841/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://leonelkaplan.bandcamp.com/album/silo',
@@ -314,7 +314,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 18,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=414719190/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://inexhaustibleeditions.bandcamp.com/album/scoriacon',
@@ -332,7 +332,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 19,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2553087840/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://amydenio.bandcamp.com/album/birthing-chair-blues',
@@ -350,7 +350,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 20,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1251608128/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://missymazzoli.bandcamp.com/album/song-from-the-uproar',
@@ -368,7 +368,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 21,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3264313737/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://avamendozamusic.bandcamp.com/album/quit-your-unnatural-ways',
@@ -386,7 +386,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 22,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1924932317/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://rectangle-records.bandcamp.com/album/dire-du-dire',
@@ -404,7 +404,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 23,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'http://bandcamp.com/EmbeddedPlayer/album=2248117061/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://firehouse12records.com/album/the-whole-tree-gone',
@@ -422,7 +422,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 24,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3990709858/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://maryhalvorson.bandcamp.com/album/away-with-you',
@@ -440,7 +440,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 25,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3449127882/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://longsongrecords.bandcamp.com/album/duet',
@@ -458,7 +458,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 26,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3989473477/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://rovasaxophonequartet.bandcamp.com/album/an-alligator-in-your-wallet',
@@ -476,7 +476,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 27,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2665408563/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://amydenio.bandcamp.com/album/tone-dogs-ankety-low-day',
@@ -494,7 +494,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 28,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=379150300/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://finderskeepersrecords.bandcamp.com/album/buchla-concerts-1975',
@@ -512,7 +512,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 29,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2173569023/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://franreed.bandcamp.com/album/soop-kitchen',
@@ -530,7 +530,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 30,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2960999910/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://senufoeditions.bandcamp.com/album/geelriandre-arthesis',
@@ -548,7 +548,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 31,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=64459792/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://janelleppin.bandcamp.com/album/american-god',
@@ -566,7 +566,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 32,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3182866185/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://darktree.bandcamp.com/album/en-corps',
@@ -584,7 +584,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 33,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2614010070/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://soundanatomy.bandcamp.com/album/hiss-and-viscera',
@@ -602,7 +602,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 34,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1696851893/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://unseenworlds.bandcamp.com/album/the-expanding-universe',
@@ -620,7 +620,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 35,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3639273125/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://unseenworlds.bandcamp.com/album/the-death-of-don-juan',
@@ -638,7 +638,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 36,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1241345468/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://biancaaviaz.bandcamp.com/album/arco-iris',
@@ -656,7 +656,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 37,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2532295302/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://konvojrecords.bandcamp.com/album/squid-police',
@@ -674,7 +674,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 38,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1707925128/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://ideologicorgan.bandcamp.com/album/ghil',
@@ -692,7 +692,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 39,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2569024353/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://intlanthem.bandcamp.com/album/not-living-in-fear',
@@ -710,7 +710,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 40,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=243232998/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://janelleppin.bandcamp.com/album/mellow-diamond',
@@ -728,7 +728,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 41,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3942018341/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://liminalsoundseries.bandcamp.com/album/susan-alcorn-21415',
@@ -746,7 +746,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 42,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2550162340/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://marissanadler.bandcamp.com/album/marissa-nadler',
@@ -764,7 +764,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 43,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4221021472/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://hollyherndon.bandcamp.com/album/platform',
@@ -782,7 +782,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 44,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2090833281/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://laurelhalo.bandcamp.com/album/laurel-halo-dust-hdblp036',
@@ -800,7 +800,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 45,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2765736108/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://jlin.bandcamp.com/album/black-origami',
@@ -818,7 +818,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 46,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2412125441/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://laubrock-intakt.bandcamp.com/album/serpentines',
@@ -836,7 +836,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 47,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4017614520/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://jessicapavone.bandcamp.com/album/walking-sleeping-breathing',
@@ -854,7 +854,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 48,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1050554170/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://krisdavis.bandcamp.com/album/duopoly',
@@ -872,7 +872,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 49,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=787965443/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://parishurley.bandcamp.com/album/the-sketch-series-1',
@@ -890,7 +890,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 50,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2252879736/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://amydenio.bandcamp.com/album/tiptons-sax-quartet-cookbook',
@@ -908,7 +908,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 51,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2034543457/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://triodakali-kronosquartet.bandcamp.com/album/ladilikan',
@@ -926,7 +926,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 52,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=24344286/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://kalmanovitch.bandcamp.com/album/heart-mountain-myra-melford-tanya-kalmanovitch',
@@ -944,7 +944,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 53,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1145363017/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://zara-mcfarlane.bandcamp.com/album/arise',
@@ -962,7 +962,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 54,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4034378625/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://janelleppin.bandcamp.com/album/songs-for-voice-and-mellotron',
@@ -980,7 +980,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 55,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1625068785/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://lydialunch.bandcamp.com/album/hangover-hotel',
@@ -998,7 +998,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 56,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3060445668/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://sephinello.bandcamp.com/album/flame',
@@ -1016,7 +1016,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 57,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4016065555/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://aphoniarecordings.bandcamp.com/album/natricinae',
@@ -1034,7 +1034,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 58,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1386012059/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://victoire.bandcamp.com/album/cathedral-city',
@@ -1052,7 +1052,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 59,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=827414202/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://anasilvera.bandcamp.com/album/the-aviary',
@@ -1070,7 +1070,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 60,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'http://bandcamp.com/EmbeddedPlayer/album=1485264710/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://music.sofiatalvik.com/album/the-owls-are-not-what-they-seem',
@@ -1088,7 +1088,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 61,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=749764053/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://torihandsleytrio.bandcamp.com/album/tori-handsley-trio',
@@ -1106,7 +1106,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 62,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=806085606/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://nerijamusic.bandcamp.com/album/n-rija-ep',
@@ -1124,7 +1124,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 63,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2712715838/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://xeniarubinos.bandcamp.com/album/black-terry-cat',
@@ -1142,7 +1142,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 64,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3555060177/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://yullippe.bandcamp.com/album/lys',
@@ -1160,7 +1160,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 65,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=37961648/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://mapledeathrecords.bandcamp.com/album/contravveleno',
@@ -1178,7 +1178,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 66,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3641669032/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://chaptermusic.bandcamp.com/album/second-of-spring',
@@ -1196,7 +1196,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 67,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'http://bandcamp.com/EmbeddedPlayer/album=1901731418/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://music.zoekeating.com/album/into-the-trees',
@@ -1214,7 +1214,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 68,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'http://bandcamp.com/EmbeddedPlayer/album=3432380151/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://music.zoekeating.com/album/one-cello-x-16-natoma',
@@ -1232,7 +1232,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 69,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2635428819/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://waitingroomrecords.bandcamp.com/album/subnormal-girls-diy-post-punk-1979-1983-volume-1',
@@ -1250,7 +1250,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 70,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3571627808/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://commonholly.bandcamp.com/album/playing-house-2',
@@ -1268,7 +1268,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 71,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1020001840/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://julienbaker.bandcamp.com/album/sprained-ankle-3',
@@ -1286,7 +1286,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 72,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2791496554/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://paulineoliveros1.bandcamp.com/album/dunrobin-sonic-gems',
@@ -1304,7 +1304,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 73,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2763598205/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://melaniedebiasio.bandcamp.com/album/lilies',
@@ -1322,7 +1322,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 74,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2670324524/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://zara-mcfarlane.bandcamp.com/album/if-you-knew-her-2',
@@ -1340,7 +1340,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 75,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1336511343/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://racheltherrien.bandcamp.com/album/why-dont-you-try-wdyt',
@@ -1358,7 +1358,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 76,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3559103663/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://kaitlynaureliasmith.bandcamp.com/album/the-kid',
@@ -1376,7 +1376,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 77,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3987451963/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://linguaignota.bandcamp.com/album/all-bitches-die',
@@ -1394,7 +1394,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 78,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3891158978/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://chelseawolfe.bandcamp.com/album/hiss-spun',
@@ -1412,7 +1412,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 79,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2510087450/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://tiftmerritt.bandcamp.com/album/stitch-of-the-world-deluxe-edition',
@@ -1430,7 +1430,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 80,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=217442972/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://greyegg.bandcamp.com/album/albumen',
@@ -1448,7 +1448,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 81,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1633715698/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://greyegg.bandcamp.com/album/indoor-ski',
@@ -1466,7 +1466,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 82,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=581844588/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://lawitches.bandcamp.com/album/l-a-witch-2',
@@ -1484,7 +1484,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 83,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3414326465/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://thecoathangers.bandcamp.com/album/parasite',
@@ -1502,7 +1502,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 84,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1857300793/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://xirecords.bandcamp.com/album/body-music',
@@ -1520,7 +1520,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 85,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/track=1509868074/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://zamilskaofficial.bandcamp.com/track/closer',
@@ -1538,7 +1538,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 86,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2641447131/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://blackesteverblack.bandcamp.com/album/you-know-what-its-like',
@@ -1556,7 +1556,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 87,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3814644699/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://jennyhval.bandcamp.com/album/blood-bitch',
@@ -1574,7 +1574,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 88,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2391212862/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://nadahelshazly.bandcamp.com/album/ahwar',
@@ -1592,7 +1592,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 89,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2708727396/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://bullythemusic.bandcamp.com/album/losing',
@@ -1610,7 +1610,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 90,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3308242175/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://courtneybarnett.bandcamp.com/album/sometimes-i-sit-and-think-and-sometimes-i-just-sit',
@@ -1628,7 +1628,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 91,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2305625765/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://xirecords.bandcamp.com/album/celestial-fires',
@@ -1646,7 +1646,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 92,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=896547347/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://xirecords.bandcamp.com/album/simoom',
@@ -1664,7 +1664,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 93,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2444727940/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://sarah-elizabeth-charles.bandcamp.com/album/free-of-form',
@@ -1682,7 +1682,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 94,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2196055513/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://racheltherrien.bandcamp.com/album/pensamiento-proyecto-colombia',
@@ -1700,7 +1700,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 95,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2412671703/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://ayumiishito.bandcamp.com/album/view-from-a-little-cave',
@@ -1718,7 +1718,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 96,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1824113199/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://laurenleejazzproject.bandcamp.com/album/the-consciousness-test-2',
@@ -1736,7 +1736,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 97,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1898158998/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://fperecs.bandcamp.com/album/mandorla-awakening-ii-emerging-worlds',
@@ -1754,7 +1754,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 98,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1009721373/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://fperecs.bandcamp.com/album/intergalactic-beings',
@@ -1772,7 +1772,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 99,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'http://bandcamp.com/EmbeddedPlayer/album=3367325553/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://firehouse12records.com/album/xenogenesis-suite',
@@ -1790,7 +1790,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 100,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1784041014/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://lydialunch.bandcamp.com/album/brutal-measures',
@@ -1808,7 +1808,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 101,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4250172799/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://emaband.bandcamp.com/album/exile-in-the-outer-ring',
@@ -1826,7 +1826,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 102,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1644131755/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://theseshen.bandcamp.com/album/the-seshen',
@@ -1844,7 +1844,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 103,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=547011702/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://gommegomme.bandcamp.com/album/hiss',
@@ -1862,7 +1862,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 104,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3119809886/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://dangerrecords.bandcamp.com/album/dr-029-mary-bell-lp-sold-out',
@@ -1880,7 +1880,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 105,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3499262377/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://eeriewandabbib.bandcamp.com/album/hum',
@@ -1898,7 +1898,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 106,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2102278697/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://carolinemckenzie.bandcamp.com/album/the-drowning-of-ophelia',
@@ -1916,7 +1916,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 107,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=480935350/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://kellymoran.bandcamp.com/album/optimist',
@@ -1934,7 +1934,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 108,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3281387428/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://lunaabunassar.bandcamp.com/album/-',
@@ -1952,7 +1952,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 109,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=737380834/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://zolajesus.bandcamp.com/album/okovi',
@@ -1970,7 +1970,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 110,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3091200220/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://chelseawolfe.bandcamp.com/album/abyss',
@@ -1988,7 +1988,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 111,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4122221096/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://emmaruthrundle.bandcamp.com/album/marked-for-death',
@@ -2006,7 +2006,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 112,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1894361972/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://sudanarchives.bandcamp.com/album/sudan-archives',
@@ -2024,7 +2024,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 113,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2820382927/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://waxahatchee.bandcamp.com/album/out-in-the-storm',
@@ -2042,7 +2042,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 114,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4186464351/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://caseydienel.bandcamp.com/album/imitation-of-a-woman-to-love',
@@ -2060,7 +2060,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 115,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2276699715/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://yazzahmed.bandcamp.com/album/la-saboteuse-2',
@@ -2078,7 +2078,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 116,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1235529255/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://tica-douglas-tl.bandcamp.com/album/our-lady-star-of-the-sea-help-and-protect-us',
@@ -2096,7 +2096,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 117,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2967472899/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://kaitlynaureliasmith.bandcamp.com/album/frkwys-vol-13-sunergy',
@@ -2114,7 +2114,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 118,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1996930221/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://juliawolfemusic.bandcamp.com/album/anthracite-fields',
@@ -2132,7 +2132,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 119,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2053619610/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://kellymoran.bandcamp.com/album/bloodroot',
@@ -2150,7 +2150,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 120,
           user_id: 1,
-          theme: 'women\'s history month',
+          theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2278856669/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://deliagonzalez.bandcamp.com/album/horse-follows-darkness',

@@ -8,7 +8,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 1,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4061994166/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://icebreakermusic.bandcamp.com/album/cranial-pavement',
@@ -26,7 +26,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 2,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3225313691/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://johnlutheradams.bandcamp.com/album/become-ocean',
@@ -44,7 +44,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 3,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3309731678/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://michaelgordonmusic.bandcamp.com/album/dystopia',
@@ -62,7 +62,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 4,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'http://bandcamp.com/EmbeddedPlayer/album=1694219055/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://shop.avantmedia.org/album/cage-unlocked',
@@ -80,7 +80,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 5,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'http://bandcamp.com/EmbeddedPlayer/album=4102887759/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://shop.avantmedia.org/album/voices-sine-waves',
@@ -98,7 +98,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 6,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1493146789/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://juliawolfemusic.bandcamp.com/album/the-string-quartets',
@@ -116,7 +116,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 7,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2996579334/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://prawnshocker.bandcamp.com/album/charles-ives-orchestral-set-no-2',
@@ -134,7 +134,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 8,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2951262651/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://johnlutheradams.bandcamp.com/album/canticles-of-the-holy-wind',
@@ -152,7 +152,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 9,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4151449444/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://bangonacan.bandcamp.com/album/in-c',
@@ -170,7 +170,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 10,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2877878179/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://idischidiangelica.bandcamp.com/album/angelica-music',
@@ -188,7 +188,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 11,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=952221414/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://pauline-oliveros.bandcamp.com/album/water-above-sky-below-now',
@@ -206,7 +206,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 12,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3243291892/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://quatuorbozzini-actuellecd.bandcamp.com/album/john-cage-four',
@@ -224,7 +224,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 13,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4131036755/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://davidlangmusic.bandcamp.com/album/the-national-anthems',
@@ -242,7 +242,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 14,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3676445445/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://foommusic.bandcamp.com/album/pythagorean-dream',
@@ -260,7 +260,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 15,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1904975454/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://unseenworlds.bandcamp.com/album/daytime-viewing',
@@ -278,7 +278,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 16,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1247105358/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://johnlutheradams.bandcamp.com/album/the-mathematics-of-resonant-bodies',
@@ -296,7 +296,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 17,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3228057692/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://bangonacan.bandcamp.com/album/music-in-5ths-two-pages',
@@ -314,7 +314,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 18,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3376465769/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://sopercussion.bandcamp.com/album/steve-reich-drumming',
@@ -332,7 +332,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 19,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3901965012/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://karlrecords.bandcamp.com/album/silver-apples-of-the-moon',
@@ -350,7 +350,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 20,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=566335179/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://calderquartet.bandcamp.com/album/terry-riley-two-early-works',
@@ -368,7 +368,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 21,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2440156746/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://opengraveswithstuartdempster.bandcamp.com/album/flightpatterns-2',
@@ -386,7 +386,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 22,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2278108239/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://johnlutheradams.bandcamp.com/album/ilimaq',
@@ -404,7 +404,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 23,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3693055811/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://zeitkratzer.bandcamp.com/album/james-tenney-old-school',
@@ -422,7 +422,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 24,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4040307402/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://sarahhennies.bandcamp.com/album/still-and-moving-lines-of-silence-in-families-of-hyperbolas',
@@ -440,7 +440,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 25,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1856637749/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://parlourtapes.bandcamp.com/album/diligence-is-to-magic-as-progress-is-to-flight',
@@ -458,7 +458,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 26,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3535429355/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://michaelvincentwaller.bandcamp.com/album/the-south-shore-4',
@@ -476,7 +476,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 27,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2971922029/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://starkland.bandcamp.com/album/from-a-to-z',
@@ -494,7 +494,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 28,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2801425194/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://tobytwining.bandcamp.com/album/eurydice',
@@ -512,7 +512,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 29,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4040906099/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://brycedessner.bandcamp.com/album/music-for-wood-and-strings-performed-by-so-percussion',
@@ -530,7 +530,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 30,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2107418158/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://newfocusrecordings.bandcamp.com/album/transient-canvas',
@@ -548,7 +548,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 31,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2070829749/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://idischidiangelica.bandcamp.com/album/lazy-afternoon-among-the-crocodiles',
@@ -566,7 +566,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 32,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3505415038/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://bethtuba.bandcamp.com/album/still',
@@ -584,7 +584,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 33,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1134084309/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://jasperstringquartet.bandcamp.com/album/unbound',
@@ -602,7 +602,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 34,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2594763072/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://johnlutheradams.bandcamp.com/album/inuksuit',
@@ -620,7 +620,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 35,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=674817097/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://newamsterdamrecords.bandcamp.com/album/not-two',
@@ -638,7 +638,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 36,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2077421539/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://nostalgicsynchronic.bandcamp.com/album/nostalgic-synchronic-etudes-for-prepared-digital-piano',
@@ -656,7 +656,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 37,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2687508128/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://michaelgordonmusic.bandcamp.com/album/timber',
@@ -674,7 +674,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 38,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2115639627/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://dalnientedeerhoof.bandcamp.com/album/balter-saunier',
@@ -692,7 +692,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 39,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=314662615/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://newfocusrecordings.bandcamp.com/album/nicholas-dieugenio-and-mimi-solomon-into-the-silence',
@@ -710,7 +710,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 40,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=137747104/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://mattsmiley.bandcamp.com/album/2012-open-space-festival-of-new-music-john-cage',
@@ -728,7 +728,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 41,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4208840544/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://karlrecords.bandcamp.com/album/the-wild-bull',
@@ -746,7 +746,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 42,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1011216190/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://cantaloupemusic.bandcamp.com/album/revelation',
@@ -764,7 +764,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 43,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=136079918/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://juliawolfemusic.bandcamp.com/album/steel-hammer',
@@ -782,7 +782,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 44,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1728663263/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://bunitamarcus.bandcamp.com/album/favorite-works-from-the-1980s',
@@ -800,7 +800,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 45,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3851191522/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://randallholt.bandcamp.com/album/inside-the-kingdom-of-splendor-and-madness',
@@ -818,7 +818,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 46,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2393287899/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://rhyschatham.bandcamp.com/album/outdoor-spell-2',
@@ -836,7 +836,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 47,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=405648307/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://anechoicmedia.bandcamp.com/album/bluecube',
@@ -854,7 +854,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 48,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2312517878/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://thessalonians.bandcamp.com/album/solaristics',
@@ -872,7 +872,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 49,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'http://bandcamp.com/EmbeddedPlayer/album=3597114623/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://eaux.ro/album/omert',
@@ -890,7 +890,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 50,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2929129774/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://unseenworlds.bandcamp.com/album/satie-slowly',
@@ -908,7 +908,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 51,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1021630657/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://unseenworlds.bandcamp.com/album/electronic-music-from-the-seventies-and-eighties',
@@ -926,7 +926,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 52,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2542953025/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://trystero.bandcamp.com/album/perfect-lives-the-park',
@@ -944,7 +944,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 53,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1796086025/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://trystero.bandcamp.com/album/living-room',
@@ -962,7 +962,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 54,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1975731649/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://bazantar.bandcamp.com/album/blood-and-holywater-2',
@@ -980,7 +980,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 55,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/track=3442178856/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://lisamoore.bandcamp.com/track/sonatra-by-michael-gordon',
@@ -998,7 +998,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 56,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3809571461/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://cantaloupemusic.bandcamp.com/album/time-loops',
@@ -1016,7 +1016,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 57,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4060482110/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://ensembleetal.bandcamp.com/album/the-slow-reveal',
@@ -1034,7 +1034,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 58,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3625848699/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://lisamoore.bandcamp.com/album/piano-etudes-and-a-dream-by-hannah-lash',
@@ -1052,7 +1052,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 59,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2097578068/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://n5md.bandcamp.com/album/seafaring',
@@ -1070,7 +1070,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 60,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3488538009/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://benbabbitt.bandcamp.com/album/kentucky-route-zero-act-ii',
@@ -1088,7 +1088,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 61,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3489930462/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://tobytwining.bandcamp.com/album/chrysalid-requiem-2',
@@ -1106,7 +1106,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 62,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4022937516/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://tedhearne.bandcamp.com/album/sound-from-the-bench-2',
@@ -1124,7 +1124,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 63,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=988142525/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://cantaloupemusic.bandcamp.com/album/threads',
@@ -1142,7 +1142,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 64,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2425687750/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://brooklynyouthchorus.bandcamp.com/album/black-mountain-songs',
@@ -1160,7 +1160,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 65,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3361243335/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://nowensemble.bandcamp.com/album/awake-2',
@@ -1178,7 +1178,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 66,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2321323404/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://alarmwillsound.bandcamp.com/album/steve-reich-tehillim-the-desert-music',
@@ -1196,7 +1196,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 67,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2843949395/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://cuneiformrecords.bandcamp.com/album/the-continuing-story-of-counterpoint-parts-1-4-8-complete',
@@ -1214,7 +1214,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 68,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1975746660/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://cuneiformrecords.bandcamp.com/album/for',
@@ -1232,7 +1232,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 69,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3640489591/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://cuneiformrecords.bandcamp.com/album/1970-1973',
@@ -1250,7 +1250,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 70,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3169532022/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://alvinlucier.bandcamp.com/album/still-and-moving-lines',
@@ -1268,7 +1268,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 71,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=699195872/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://chriswelcome.bandcamp.com/album/selected-chamber-works-2011-2015',
@@ -1286,7 +1286,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 72,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3581604249/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://jonathanzorn.bandcamp.com/album/and-perforation',
@@ -1304,7 +1304,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 73,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3475745204/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://cantaloupemusic.bandcamp.com/album/zippo-songs',
@@ -1322,7 +1322,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 74,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4115830382/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://lisamoore.bandcamp.com/album/lightning-slingers-and-dead-ringers',
@@ -1340,7 +1340,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 75,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=953844037/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://jonathanzorn.bandcamp.com/album/language-as-dust',
@@ -1358,7 +1358,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 76,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2085894503/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://nicomuhly.bandcamp.com/album/drones',
@@ -1376,7 +1376,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 77,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2667946205/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://valgeir.bandcamp.com/album/architecture-of-loss',
@@ -1394,7 +1394,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 78,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2799098735/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://zeitkratzer.bandcamp.com/album/alvin-lucier-old-school',
@@ -1412,7 +1412,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 79,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3587405953/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://jaceclayton.bandcamp.com/album/the-julius-eastman-memory-depot',
@@ -1430,7 +1430,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 80,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3445780043/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://katrinaballads.bandcamp.com/album/katrina-ballads',
@@ -1448,7 +1448,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 81,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3685033168/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://danielwohl.bandcamp.com/album/corps-exquis',
@@ -1466,7 +1466,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 82,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4020678438/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://zstheband.bandcamp.com/album/xe',
@@ -1484,7 +1484,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 83,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1462164011/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://gregfox.bandcamp.com/album/the-gradual-progression',
@@ -1502,7 +1502,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 84,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=838601098/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://bannedproduction.bandcamp.com/album/two-pieces-two-decades-apart',
@@ -1520,7 +1520,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 85,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2327158320/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://pauldresher.bandcamp.com/album/casa-vecchia',
@@ -1538,7 +1538,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 86,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=305668920/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://meerenai.bandcamp.com/album/the-art-of-noise',
@@ -1556,7 +1556,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 87,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2632839892/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://meerenai.bandcamp.com/album/pheromone',
@@ -1574,7 +1574,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 88,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3942372913/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://michaelgordonmusic.bandcamp.com/album/trance',
@@ -1592,7 +1592,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 89,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2344800006/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://alarmwillsound.bandcamp.com/album/canzonas-americanas',
@@ -1610,7 +1610,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 90,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=248286087/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://wordsplusdreams.bandcamp.com/album/stereo',
@@ -1628,7 +1628,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 91,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1142483214/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://infraction.bandcamp.com/album/echo-park',
@@ -1646,7 +1646,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 92,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2027508874/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://scissortail.bandcamp.com/album/ozark-dream',
@@ -1664,7 +1664,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 93,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2375111690/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://greggskloff.bandcamp.com/album/the-eye-is-the-egg',
@@ -1682,7 +1682,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 94,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1835738773/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://xirecords.bandcamp.com/album/unforeseen-events',
@@ -1700,7 +1700,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 95,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4102516921/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://xirecords.bandcamp.com/album/fingering-an-idea',
@@ -1718,7 +1718,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 96,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3087503069/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://xirecords.bandcamp.com/album/logos-works',
@@ -1736,7 +1736,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 97,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=801757654/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://tedhearne.bandcamp.com/album/the-law-of-mosaics',
@@ -1754,7 +1754,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 98,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1978442588/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://philipwhite.bandcamp.com/album/the-way-the-rocks-hold-the-current-iii',
@@ -1772,7 +1772,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 99,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2299067940/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://populistrecords.bandcamp.com/album/daniel-corral-refractions',
@@ -1790,7 +1790,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 100,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1469135419/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://paulineoliveros1.bandcamp.com/album/tosca-salad',
@@ -1808,7 +1808,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 101,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=791025018/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://paulineoliveros1.bandcamp.com/album/springs',
@@ -1826,7 +1826,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 102,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3967941489/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://shinkoyo.bandcamp.com/album/music-of-shinkoyo',
@@ -1844,7 +1844,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 103,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2227378303/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://xirecords.bandcamp.com/album/toot',
@@ -1862,7 +1862,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 104,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2696170312/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://benfrost.bandcamp.com/album/the-centre-cannot-hold',
@@ -1880,7 +1880,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 105,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2887721505/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://valgeir.bandcamp.com/album/draumalandi',
@@ -1898,7 +1898,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 106,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2396290360/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://mexiqueen.bandcamp.com/album/singles',
@@ -1916,7 +1916,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 107,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1117739737/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://thomasburritt.bandcamp.com/album/groundlines',
@@ -1934,7 +1934,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 108,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1696851893/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://unseenworlds.bandcamp.com/album/the-expanding-universe',
@@ -1952,7 +1952,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 109,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2967383451/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://lesq.bandcamp.com/album/blunt-objects',
@@ -1970,7 +1970,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 110,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4227688948/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://jonathanmatis.bandcamp.com/album/on-the-inevitability-of-loss',
@@ -1988,7 +1988,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 111,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3092382909/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://rodhamilton.bandcamp.com/album/atitl-n-2',
@@ -2006,7 +2006,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 112,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3526851245/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://edmundwelles.bandcamp.com/album/tooth-claw',
@@ -2024,7 +2024,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 113,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1090957847/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://nicomuhlyarchive.bandcamp.com/album/object-songs',
@@ -2042,7 +2042,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 114,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3262368151/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://coreydargel.bandcamp.com/album/ok-its-not-ok',
@@ -2060,7 +2060,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 115,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1759038092/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://xirecords.bandcamp.com/album/sinopah',
@@ -2078,7 +2078,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 116,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3618095188/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://xirecords.bandcamp.com/album/flying-vegetables-of-the-apocalypse',
@@ -2096,7 +2096,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 117,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=938127030/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://xirecords.bandcamp.com/album/privacy-issues-droneworks-1996-2009',
@@ -2114,7 +2114,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 118,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3726473539/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://edoryan.bandcamp.com/album/the-yoke-of-summer-fugues-for-string-trio',
@@ -2132,7 +2132,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 119,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3002569069/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://saul-conrad.bandcamp.com/album/requiem',
@@ -2150,7 +2150,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 120,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3512686422/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://williamjaysydeman.bandcamp.com/album/music-for-percussion',
@@ -2168,7 +2168,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 121,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3840169248/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://theparlourtrick.bandcamp.com/album/a-blessed-unrest',
@@ -2186,7 +2186,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 122,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1826682391/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://jherekbischoff.bandcamp.com/album/cistern',
@@ -2204,7 +2204,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 123,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4205936085/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://chrismoriarty.bandcamp.com/album/something-great',
@@ -2222,7 +2222,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 124,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2619942067/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://yarnwire.bandcamp.com/album/yarn-wire-currents-vol-3',
@@ -2240,7 +2240,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 125,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1830995350/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://yarnwire.bandcamp.com/album/yarn-wire-currents-vol-0',
@@ -2258,7 +2258,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 126,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1017533349/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://yarnwire.bandcamp.com/album/yarn-wire-currents-vol-4',
@@ -2276,7 +2276,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 127,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=538474728/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://yarnwire.bandcamp.com/album/yarn-wire-currents-vol-2',
@@ -2294,7 +2294,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 128,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1803781875/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://yarnwire.bandcamp.com/album/yarn-wire-currents-vol-1',
@@ -2312,7 +2312,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 129,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3727720017/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://xirecords.bandcamp.com/album/music-for-88',
@@ -2330,7 +2330,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 130,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=483535213/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://xirecords.bandcamp.com/album/same-same',
@@ -2348,7 +2348,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 131,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3658349218/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://worstward.bandcamp.com/album/the-landscape-of-memory',
@@ -2366,7 +2366,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 132,
           user_id: 1,
-          theme: 'american mavericks',
+          theme: 'American Maverick Tradition',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3041243412/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://jeremiahcymerman.bandcamp.com/album/chaos-of-memory',
