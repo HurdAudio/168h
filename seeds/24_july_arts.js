@@ -3304,6 +3304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 166,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/untitled-1946.jpg',
+          title: 'Untitled',
+          artist: 'Mario Prassinos',
+          year: '1946',
+          rule: {
+            "monday": [ 22, 2, 12, 14 ],
+            "tuesday": [ 21, 1, 12, 13 ],
+            "wednesday": [ 20, 31, 11, 22 ],
+            "thursday": [ 26, 6, 17, 27 ],
+            "friday": [ 25, 5, 16, 27 ],
+            "saturday": [ 24, 4, 15, 26 ],
+            "sunday": [ 23, 3, 14, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 167,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/creatures-1979.jpg',
+          title: 'Creatures',
+          artist: 'Jules Perahim',
+          year: '1979',
+          rule: {
+            "monday": [ 23, 3, 14, 25 ],
+            "tuesday": [ 22, 2, 12, 14 ],
+            "wednesday": [ 21, 1, 12, 13 ],
+            "thursday": [ 20, 31, 11, 22 ],
+            "friday": [ 26, 6, 17, 27 ],
+            "saturday": [ 25, 5, 16, 27 ],
+            "sunday": [ 24, 4, 15, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 168,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/collage(1).jpg',
+          title: 'Collage',
+          artist: 'Gherasim Luca',
+          year: '?',
+          rule: {
+            "monday": [ 25, 5, 16, 27 ],
+            "tuesday": [ 24, 4, 15, 26 ],
+            "wednesday": [ 23, 3, 13, 15 ],
+            "thursday": [ 22, 2, 13, 14 ],
+            "friday": [ 21, 1, 12, 23 ],
+            "saturday": [ 27, 7, 18, 28 ],
+            "sunday": [ 26, 6, 17, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 169,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/untitled-1.jpg',
+          title: 'Untitled',
+          artist: 'Jean-Michel Atlan',
+          year: '?',
+          rule: {
+            "monday": [ 26, 6, 17, 28 ],
+            "tuesday": [ 25, 5, 16, 27 ],
+            "wednesday": [ 24, 4, 15, 26 ],
+            "thursday": [ 23, 3, 13, 15 ],
+            "friday": [ 22, 2, 13, 14 ],
+            "saturday": [ 21, 1, 12, 23 ],
+            "sunday": [ 27, 7, 18, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 170,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/le-printemps-1937.jpg',
+          title: 'Le printemps',
+          artist: 'Francis Gruber',
+          year: '1937',
+          rule: {
+            "monday": [ 27, 7, 18, 28 ],
+            "tuesday": [ 26, 6, 17, 28 ],
+            "wednesday": [ 25, 5, 16, 27 ],
+            "thursday": [ 24, 4, 15, 26 ],
+            "friday": [ 23, 3, 13, 15 ],
+            "saturday": [ 22, 2, 13, 14 ],
+            "sunday": [ 21, 1, 12, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
