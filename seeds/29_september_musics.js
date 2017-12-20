@@ -1516,6 +1516,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 85,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1594680436/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://wildthrone.bandcamp.com/album/blood-maker',
+          a_string: 'Blood Maker by Wild Throne',
+          rule: {
+            "monday": [ 15, 5, 13, 8 ],
+            "tuesday": [ 14, 4, 12, 6 ],
+            "wednesday": [ 13, 3, 11, 5 ],
+            "thursday": [ 17, 7, 15, 9 ],
+            "saturday": [ 16, 6, 14, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 86,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2469060273/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://mmim.bandcamp.com/album/dork-soul',
+          a_string: 'Dork Soul by meet me in montauk',
+          rule: {
+            "monday": [ 16, 6, 14, 8 ],
+            "tuesday": [ 15, 5, 13, 8 ],
+            "wednesday": [ 14, 4, 12, 6 ],
+            "thursday": [ 13, 3, 11, 5 ],
+            "saturday": [ 17, 7, 15, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 87,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2893156702/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://realsportsboys.bandcamp.com/album/demon-daze',
+          a_string: 'demon daze by sports.',
+          rule: {
+            "monday": [ 17, 7, 15, 9 ],
+            "tuesday": [ 16, 6, 14, 8 ],
+            "wednesday": [ 15, 5, 13, 8 ],
+            "thursday": [ 14, 4, 12, 6 ],
+            "saturday": [ 13, 3, 11, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
