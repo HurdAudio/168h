@@ -1192,6 +1192,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 67,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3955389533/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://selomundomelhor.bandcamp.com/album/percuss-o-experimental-brasileira',
+          a_string: 'Percussão Experimental Brasileira by Batucajé',
+          rule: {
+            "monday": [ 16, 22, 28, 3 ],
+            "tuesday": [ 15, 21, 27, 2 ],
+            "wednesday": [ 14, 20, 26, 1 ],
+            "thursday": [ 12, 19, 25, 31 ],
+            "saturday": [ 12, 18, 24, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 68,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1692594616/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://selomundomelhor.bandcamp.com/album/nos-quintais-do-mundo-2010',
+          a_string: 'Nos quintais do Mundo - 2010 by DJ Tudo e  sua gente de todo lugar',
+          rule: {
+            "monday": [ 12, 18, 24, 30 ],
+            "tuesday": [ 16, 22, 28, 3 ],
+            "wednesday": [ 15, 21, 27, 2 ],
+            "thursday": [ 14, 20, 26, 1 ],
+            "saturday": [ 12, 19, 25, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 69,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2263023513/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://selomundomelhor.bandcamp.com/album/pra-iemanj',
+          a_string: 'Pra Iemanjá by DJ Tudo e sua gente de todo lugar',
+          rule: {
+            "monday": [ 12, 19, 25, 31 ],
+            "tuesday": [ 12, 18, 24, 30 ],
+            "wednesday": [ 16, 22, 28, 3 ],
+            "thursday": [ 15, 21, 27, 2 ],
+            "saturday": [ 14, 20, 26, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
