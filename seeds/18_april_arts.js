@@ -3904,6 +3904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 196,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/716N09142_7BFCQ.jpg',
+          title: 'No Title(While He Lives...)',
+          artist: 'Raymond Pettibon',
+          year: '2006',
+          rule: {
+            "monday": [ 27, 2, 8, 14 ],
+            "tuesday": [ 26, 30, 15, 13 ],
+            "wednesday": [ 25, 30, 5, 11 ],
+            "thursday": [ 24, 29, 5, 11 ],
+            "friday": [ 23, 28, 4, 10 ],
+            "saturday": [ 28, 4, 9, 16 ],
+            "sunday": [ 12, 2, 8, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 197,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/1916-08-05-Saturday-Evening-Post-Norman-Rockwell-cover-Gramps-At-The-Plate-no-logo-400-Digimarc.jpg',
+          title: 'Saturday Evening Post: Gramps at the Plate',
+          artist: 'Norman Rockwell',
+          year: '1916',
+          rule: {
+            "monday": [ 12, 2, 8, 15 ],
+            "tuesday": [ 27, 2, 8, 14 ],
+            "wednesday": [ 26, 30, 15, 13 ],
+            "thursday": [ 25, 30, 5, 11 ],
+            "friday": [ 24, 29, 5, 11 ],
+            "saturday": [ 23, 28, 4, 10 ],
+            "sunday": [ 28, 4, 9, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 198,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/baseball-glove-tommervik.jpg',
+          title: 'Baseball Mitt Painting',
+          artist: 'Tommervik',
+          year: '2012',
+          rule: {
+            "monday": [ 28, 4, 9, 16 ],
+            "tuesday": [ 12, 2, 8, 15 ],
+            "wednesday": [ 27, 2, 8, 14 ],
+            "thursday": [ 26, 30, 15, 13 ],
+            "friday": [ 25, 30, 5, 11 ],
+            "saturday": [ 24, 29, 5, 11 ],
+            "sunday": [ 23, 28, 4, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 199,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/99d51ed976a08760423bcf71f84cea85.jpg',
+          title: 'Satchel Paige',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 23, 28, 4, 10 ],
+            "tuesday": [ 28, 4, 9, 16 ],
+            "wednesday": [ 12, 2, 8, 15 ],
+            "thursday": [ 27, 2, 8, 14 ],
+            "friday": [ 26, 30, 15, 13 ],
+            "saturday": [ 25, 30, 5, 11 ],
+            "sunday": [ 24, 29, 5, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 200,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/sosa5x.jpg',
+          title: 'Sammy Sosa',
+          artist: 'PaulB',
+          year: '1998',
+          rule: {
+            "monday": [ 24, 29, 5, 11 ],
+            "tuesday": [ 23, 28, 4, 10 ],
+            "wednesday": [ 28, 4, 9, 16 ],
+            "thursday": [ 12, 2, 8, 15 ],
+            "friday": [ 27, 2, 8, 14 ],
+            "saturday": [ 26, 30, 15, 13 ],
+            "sunday": [ 25, 30, 5, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
