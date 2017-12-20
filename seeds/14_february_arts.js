@@ -4199,7 +4199,7 @@ exports.seed = function(knex, Promise) {
             "wednesday": [ 9, 19, 25, 2 ],
             "thursday": [ 11, 19, 27, 8 ],
             "friday": [ 13, 21, 17, 7 ],
-            "saturday": [ 30, 9, 17, 25 ],
+            "saturday": [ 1, 9, 17, 25 ],
             "sunday": [ 3, 11, 19, 27 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
@@ -4220,7 +4220,7 @@ exports.seed = function(knex, Promise) {
             "thursday": [ 9, 19, 25, 2 ],
             "friday": [ 11, 19, 27, 8 ],
             "saturday": [ 13, 21, 17, 7 ],
-            "sunday": [ 30, 9, 17, 25 ]
+            "sunday": [ 1, 9, 17, 25 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -4234,7 +4234,7 @@ exports.seed = function(knex, Promise) {
           artist: 'Raymond Saunders',
           year: '2000',
           rule: {
-            "monday": [ 30, 9, 17, 25 ],
+            "monday": [ 1, 9, 17, 25 ],
             "tuesday": [ 3, 11, 19, 27 ],
             "wednesday": [ 8, 13, 19, 29 ],
             "thursday": [ 7, 15, 23, 2 ],
@@ -4255,7 +4255,7 @@ exports.seed = function(knex, Promise) {
           year: '1939',
           rule: {
             "monday": [ 13, 21, 17, 7 ],
-            "tuesday": [ 30, 9, 17, 25 ],
+            "tuesday": [ 1, 9, 17, 25 ],
             "wednesday": [ 3, 11, 19, 27 ],
             "thursday": [ 8, 13, 19, 29 ],
             "friday": [ 7, 15, 23, 2 ],
@@ -4276,7 +4276,7 @@ exports.seed = function(knex, Promise) {
           rule: {
             "monday": [ 11, 19, 27, 8 ],
             "tuesday": [ 13, 21, 17, 7 ],
-            "wednesday": [ 30, 9, 17, 25 ],
+            "wednesday": [ 1, 9, 17, 25 ],
             "thursday": [ 3, 11, 19, 27 ],
             "friday": [ 8, 13, 19, 29 ],
             "saturday": [ 7, 15, 23, 2 ],
@@ -4297,10 +4297,110 @@ exports.seed = function(knex, Promise) {
             "monday": [ 9, 19, 25, 2 ],
             "tuesday": [ 11, 19, 27, 8 ],
             "wednesday": [ 13, 21, 17, 7 ],
-            "thursday": [ 30, 9, 17, 25 ],
+            "thursday": [ 1, 9, 17, 25 ],
             "friday": [ 3, 11, 19, 27 ],
             "saturday": [ 8, 13, 19, 29 ],
             "sunday": [ 7, 15, 23, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 216,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/H2361-L16742765.jpg',
+          title: 'Sitting On Mama\'s Lap',
+          artist: 'Lorenzo Scott',
+          year: '2010',
+          rule: {
+            "monday": [ 7, 15, 23, 2 ],
+            "tuesday": [ 9, 19, 25, 2 ],
+            "wednesday": [ 11, 19, 27, 8 ],
+            "thursday": [ 13, 21, 17, 7 ],
+            "friday": [ 1, 9, 17, 25 ],
+            "saturday": [ 3, 11, 19, 27 ],
+            "sunday": [ 8, 13, 19, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 217,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/Scott-Rainy_Night.jpg',
+          title: 'Rainy Night',
+          artist: 'William Edouard Scott',
+          year: '1912',
+          rule: {
+            "monday": [ 9, 14, 20, 1 ],
+            "tuesday": [ 8, 16, 24, 3 ],
+            "wednesday": [ 10, 20, 26, 3 ],
+            "thursday": [ 12, 20, 28, 9 ],
+            "friday": [ 14, 22, 18, 8 ],
+            "saturday": [ 2, 10, 18, 26 ],
+            "sunday": [ 4, 12, 20, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 218,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/fjpasodjfpoidj.jpeg',
+          title: 'Deep Dream',
+          artist: 'Charles Sebree',
+          year: '1947',
+          rule: {
+            "monday": [ 4, 12, 20, 28 ],
+            "tuesday": [ 9, 14, 20, 1 ],
+            "wednesday": [ 8, 16, 24, 3 ],
+            "thursday": [ 10, 20, 26, 3 ],
+            "friday": [ 12, 20, 28, 9 ],
+            "saturday": [ 14, 22, 18, 8 ],
+            "sunday": [ 2, 10, 18, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 219,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/ts3.jpg',
+          title: '?',
+          artist: 'Thomas Sills',
+          year: '?',
+          rule: {
+            "monday": [ 2, 10, 18, 26 ],
+            "tuesday": [ 4, 12, 20, 28 ],
+            "wednesday": [ 9, 14, 20, 1 ],
+            "thursday": [ 8, 16, 24, 3 ],
+            "friday": [ 10, 20, 26, 3 ],
+            "saturday": [ 12, 20, 28, 9 ],
+            "sunday": [ 14, 22, 18, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 220,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/IMG_5778.jpg',
+          title: 'Here\'s... Honey',
+          artist: 'Gary Simmons',
+          year: '1992',
+          rule: {
+            "monday": [ 14, 22, 18, 8 ],
+            "tuesday": [ 2, 10, 18, 26 ],
+            "wednesday": [ 4, 12, 20, 28 ],
+            "thursday": [ 9, 14, 20, 1 ],
+            "friday": [ 8, 16, 24, 3 ],
+            "saturday": [ 10, 20, 26, 3 ],
+            "sunday": [ 12, 20, 28, 9 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
