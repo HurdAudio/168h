@@ -3104,6 +3104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 156,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/zebra-and-parachute-1930.jpg',
+          title: 'Zebra and Parachute',
+          artist: 'Christopher Wood',
+          year: '1930',
+          rule: {
+            "monday": [ 26, 30, 7, 23 ],
+            "tuesday": [ 25, 28, 6, 22 ],
+            "wednesday": [ 24, 28, 5, 21 ],
+            "thursday": [ 23, 27, 4, 20 ],
+            "friday": [ 22, 24, 3, 19 ],
+            "saturday": [ 21, 24, 2, 18 ],
+            "sunday": [ 20, 23, 1, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 157,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/fakiristes-1937.jpg',
+          title: 'Fakiristes',
+          artist: 'Louis Soutter',
+          year: '1937',
+          rule: {
+            "monday": [ 20, 23, 1, 17 ],
+            "tuesday": [ 26, 30, 7, 23 ],
+            "wednesday": [ 25, 28, 6, 22 ],
+            "thursday": [ 24, 28, 5, 21 ],
+            "friday": [ 23, 27, 4, 20 ],
+            "saturday": [ 22, 24, 3, 19 ],
+            "sunday": [ 21, 24, 2, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 158,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/self-portrait-in-a-letter-to-paul-val-ry-1924.jpg',
+          title: 'Self-Portrait in a letter to Paul Valéry',
+          artist: 'Jean Cocteau',
+          year: '1924',
+          rule: {
+            "monday": [ 21, 24, 2, 18 ],
+            "tuesday": [ 20, 23, 1, 17 ],
+            "wednesday": [ 26, 30, 7, 23 ],
+            "thursday": [ 25, 28, 6, 22 ],
+            "friday": [ 24, 28, 5, 21 ],
+            "saturday": [ 23, 27, 4, 20 ],
+            "sunday": [ 22, 24, 3, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 159,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/study-for-a-portrait-of-jean-dupr-1913.jpg',
+          title: 'Study for a portrait of Jean Dupré',
+          artist: 'Félix Del Marle',
+          year: '1913',
+          rule: {
+            "monday": [ 22, 24, 3, 19 ],
+            "tuesday": [ 21, 24, 2, 18 ],
+            "wednesday": [ 20, 23, 1, 17 ],
+            "thursday": [ 26, 30, 7, 23 ],
+            "friday": [ 25, 28, 6, 22 ],
+            "saturday": [ 24, 28, 5, 21 ],
+            "sunday": [ 23, 27, 4, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 160,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/old-woman-in-the-garden-1906.jpg',
+          title: 'Old Woman in the Garden',
+          artist: 'Paula Modersohn-Becker',
+          year: '1906',
+          rule: {
+            "monday": [ 23, 27, 4, 20 ],
+            "tuesday": [ 22, 24, 3, 19 ],
+            "wednesday": [ 21, 24, 2, 18 ],
+            "thursday": [ 20, 23, 1, 17 ],
+            "friday": [ 26, 30, 7, 23 ],
+            "saturday": [ 25, 28, 6, 22 ],
+            "sunday": [ 24, 28, 5, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
