@@ -2904,6 +2904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 146,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/goodbye-have-a-nice-journey-1973.jpg',
+          title: 'Goodbye, Have a Nice Journey!!',
+          artist: 'Jim Nutt',
+          year: '1973',
+          rule: {
+            "monday": [ 20, 26, 14, 22 ],
+            "tuesday": [ 19, 25, 13, 21 ],
+            "wednesday": [ 18, 24, 12, 20 ],
+            "thursday": [ 17, 23, 11, 18 ],
+            "friday": [ 23, 29, 17, 25 ],
+            "saturday": [ 22, 28, 16, 24 ],
+            "sunday": [ 21, 27, 15, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 147,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/mermaid-in-lotus-pond-iii-2008.jpg',
+          title: 'Mermaid in Lotus Pond III',
+          artist: 'Jahar Dasgupta',
+          year: '2008',
+          rule: {
+            "monday": [ 22, 28, 16, 24 ],
+            "tuesday": [ 21, 27, 15, 23 ],
+            "wednesday": [ 20, 26, 14, 22 ],
+            "thursday": [ 19, 25, 13, 21 ],
+            "friday": [ 18, 24, 12, 19 ],
+            "saturday": [ 24, 30, 18, 26 ],
+            "sunday": [ 23, 29, 17, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 148,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/mulata-e-p-ssaros-1967.jpg',
+          title: 'Mulata e Pássaros',
+          artist: 'Emiliano Di Cavalcanti',
+          year: '1967',
+          rule: {
+            "monday": [ 23, 29, 17, 25 ],
+            "tuesday": [ 22, 28, 16, 24 ],
+            "wednesday": [ 21, 27, 15, 23 ],
+            "thursday": [ 20, 26, 14, 22 ],
+            "friday": [ 19, 25, 13, 21 ],
+            "saturday": [ 18, 24, 12, 19 ],
+            "sunday": [ 24, 30, 18, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 149,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/daisy-lolita-pog-1994.jpg',
+          title: 'Daisy Lolita Pog',
+          artist: 'Ashley Bickerton',
+          year: '1994',
+          rule: {
+            "monday": [ 24, 30, 18, 26 ],
+            "tuesday": [ 23, 29, 17, 25 ],
+            "wednesday": [ 22, 28, 16, 24 ],
+            "thursday": [ 21, 27, 15, 23 ],
+            "friday": [ 20, 26, 14, 22 ],
+            "saturday": [ 19, 25, 13, 21 ],
+            "sunday": [ 18, 24, 12, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 150,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/havskrumelur-2005.jpg',
+          title: 'Havskrumelur',
+          artist: 'Rune Jansson',
+          year: '2005',
+          rule: {
+            "monday": [ 18, 24, 12, 19 ],
+            "tuesday": [ 24, 30, 18, 26 ],
+            "wednesday": [ 23, 29, 17, 25 ],
+            "thursday": [ 22, 28, 16, 24 ],
+            "friday": [ 21, 27, 15, 23 ],
+            "saturday": [ 20, 26, 14, 22 ],
+            "sunday": [ 19, 25, 13, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
