@@ -2504,6 +2504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 126,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/untitled-1969.jpg',
+          title: 'Untitled',
+          artist: 'Bill Bollinger',
+          year: '1969',
+          rule: {
+            "monday": [ 24, 29, 5, 9 ],
+            "tuesday": [ 23, 28, 4, 9 ],
+            "wednesday": [ 22, 26, 3, 8 ],
+            "thursday": [ 21, 26, 2, 7 ],
+            "friday": [ 20, 25, 1, 8 ],
+            "saturday": [ 26, 1, 7, 12 ],
+            "sunday": [ 25, 30, 5, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 127,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/black-painting-1972.jpg',
+          title: 'Black Painting',
+          artist: 'Gary Kuehn',
+          year: '1972',
+          rule: {
+            "monday": [ 25, 30, 5, 11 ],
+            "tuesday": [ 24, 29, 5, 9 ],
+            "wednesday": [ 23, 28, 4, 9 ],
+            "thursday": [ 22, 26, 3, 8 ],
+            "friday": [ 21, 26, 2, 7 ],
+            "saturday": [ 20, 25, 1, 8 ],
+            "sunday": [ 26, 1, 7, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 128,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/device-to-root-out-evil-1997.jpg',
+          title: 'Device to Root Out Evil',
+          artist: 'Dennis Oppenheim',
+          year: '1997',
+          rule: {
+            "monday": [ 26, 1, 7, 12 ],
+            "tuesday": [ 25, 30, 5, 11 ],
+            "wednesday": [ 24, 29, 5, 9 ],
+            "thursday": [ 23, 28, 4, 9 ],
+            "friday": [ 22, 26, 3, 8 ],
+            "saturday": [ 21, 26, 2, 7 ],
+            "sunday": [ 20, 25, 1, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 129,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/dance-of-the-crows-2012.jpg',
+          title: 'Dance of the Crows',
+          artist: 'Fusun Onur',
+          year: '2012',
+          rule: {
+            "monday": [ 20, 25, 1, 8 ],
+            "tuesday": [ 26, 1, 7, 12 ],
+            "wednesday": [ 25, 30, 5, 11 ],
+            "thursday": [ 24, 29, 5, 9 ],
+            "friday": [ 23, 28, 4, 9 ],
+            "saturday": [ 22, 26, 3, 8 ],
+            "sunday": [ 21, 26, 2, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 130,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/pittura-n-4-1994.jpg',
+          title: 'Pittura n° 4',
+          artist: 'Pino Pinelli',
+          year: '1994',
+          rule: {
+            "monday": [ 21, 26, 2, 7 ],
+            "tuesday": [ 20, 25, 1, 8 ],
+            "wednesday": [ 26, 1, 7, 12 ],
+            "thursday": [ 25, 30, 5, 11 ],
+            "friday": [ 24, 29, 5, 9 ],
+            "saturday": [ 23, 28, 4, 9 ],
+            "sunday": [ 22, 26, 3, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
