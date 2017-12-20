@@ -4504,6 +4504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 226,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/vessel-in-a-drift-of-diamond-light-in-the-sky-of-the-mind-1944.jpg',
+          title: 'Vessel in a Drift of Diamond Light in the Sky of the Mind',
+          artist: 'Morris Graves',
+          year: '1944',
+          rule: {
+            "monday": [ 4, 6, 29, 18 ],
+            "tuesday": [ 6, 7, 30, 2 ],
+            "wednesday": [ 9, 10, 1, 5 ],
+            "thursday": [ 12, 14, 15, 17 ],
+            "friday": [ 14, 16, 20, 23 ],
+            "saturday": [ 16, 18, 19, 22 ],
+            "sunday": [ 1, 2, 13, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 227,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/converge-2011.jpg',
+          title: 'Converge',
+          artist: 'Harriet Korman',
+          year: '2011',
+          rule: {
+            "monday": [ 1, 2, 13, 5 ],
+            "tuesday": [ 4, 6, 29, 18 ],
+            "wednesday": [ 6, 7, 30, 2 ],
+            "thursday": [ 9, 10, 1, 5 ],
+            "friday": [ 12, 14, 15, 17 ],
+            "saturday": [ 14, 16, 20, 23 ],
+            "sunday": [ 16, 18, 19, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 228,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/composition-with-evanescent-butterfly.jpg',
+          title: 'Composition with Evanescent Butterfly',
+          artist: 'Ion Pacea',
+          year: 'xx cent.',
+          rule: {
+            "monday": [ 16, 18, 19, 22 ],
+            "tuesday": [ 1, 2, 13, 5 ],
+            "wednesday": [ 4, 6, 29, 18 ],
+            "thursday": [ 6, 7, 30, 2 ],
+            "friday": [ 9, 10, 1, 5 ],
+            "saturday": [ 12, 14, 15, 17 ],
+            "sunday": [ 14, 16, 20, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 229,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/komposition-1950.jpg',
+          title: 'Komposition',
+          artist: 'Gosta Adrian-Nilsson',
+          year: '1950',
+          rule: {
+            "monday": [ 14, 16, 20, 23 ],
+            "tuesday": [ 16, 18, 19, 22 ],
+            "wednesday": [ 1, 2, 13, 5 ],
+            "thursday": [ 4, 6, 29, 18 ],
+            "friday": [ 6, 7, 30, 2 ],
+            "saturday": [ 9, 10, 1, 5 ],
+            "sunday": [ 12, 14, 15, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 230,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/clair-d-obscurite-1988.jpg',
+          title: 'Éclair d\'obscurite',
+          artist: 'Chu Teh-Chun',
+          year: '1988',
+          rule: {
+            "monday": [ 12, 14, 15, 17 ],
+            "tuesday": [ 14, 16, 20, 23 ],
+            "wednesday": [ 16, 18, 19, 22 ],
+            "thursday": [ 1, 2, 13, 5 ],
+            "friday": [ 4, 6, 29, 18 ],
+            "saturday": [ 6, 7, 30, 2 ],
+            "sunday": [ 9, 10, 1, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
