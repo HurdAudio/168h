@@ -1836,7 +1836,61 @@ exports.seed = function(knex, Promise) {
             "tuesday": [ 14, 17, 24, 4 ],
             "wednesday": [ 13, 17, 22, 4 ],
             "thursday": [ 13, 16, 22, 3 ],
-            "saturday": [ 11, 19, 21, 2 ]
+            "saturday": [  ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 103,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3300788636/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://rhucle.bandcamp.com/album/flavor-of-water',
+          a_string: 'Flavor Of Water by Rhucle / Mike Nigro',
+          rule: {
+            "monday": [ 11, 19, 21, 2 ],
+            "tuesday": [ 15, 19, 25, 6 ],
+            "wednesday": [ 14, 17, 24, 4 ],
+            "thursday": [ 13, 17, 22, 4 ],
+            "saturday": [ 13, 16, 22, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 104,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2915664514/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://heart.bandcamp.com/album/new-tab',
+          a_string: 'New Tab by Khotin',
+          rule: {
+            "monday": [ 13, 16, 22, 3 ],
+            "tuesday": [ 11, 19, 21, 2 ],
+            "wednesday": [ 15, 19, 25, 6 ],
+            "thursday": [ 14, 17, 24, 4 ],
+            "saturday": [ 13, 17, 22, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 105,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2479038235/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://newatlantismusic.bandcamp.com/album/new-atlantis-volume-1',
+          a_string: 'New Atlantis Volume 1 by New Atlantis',
+          rule: {
+            "monday": [ 14, 18, 23, 5 ],
+            "tuesday": [ 14, 17, 23, 4 ],
+            "wednesday": [ 12, 20, 22, 3 ],
+            "thursday": [ 16, 20, 26, 7 ],
+            "saturday": [ 15, 18, 25, 5 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
