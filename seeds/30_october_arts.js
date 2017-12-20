@@ -2704,6 +2704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 136,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_Le_012.jpg',
+          title: 'Long live the sun, let the darkness disappear.',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 29, 30, 10, 14 ],
+            "tuesday": [ 25, 5, 16, 20 ],
+            "wednesday": [ 24, 4, 15, 19 ],
+            "thursday": [ 23, 3, 14, 18 ],
+            "friday": [ 22, 2, 13, 17 ],
+            "saturday": [ 21, 1, 12, 16 ],
+            "sunday": [ 20, 31, 1, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 137,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_sovpolpost_00014.jpg',
+          title: '1st of May.',
+          artist: 'Alexander Apsit',
+          year: '1919',
+          rule: {
+            "monday": [ 20, 31, 1, 15 ],
+            "tuesday": [ 29, 30, 10, 14 ],
+            "wednesday": [ 25, 5, 16, 20 ],
+            "thursday": [ 24, 4, 15, 19 ],
+            "friday": [ 23, 3, 14, 18 ],
+            "saturday": [ 22, 2, 13, 17 ],
+            "sunday": [ 21, 1, 12, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 138,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_Le_010.jpg',
+          title: 'Onto a horse, proletarian!',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 21, 1, 12, 16 ],
+            "tuesday": [ 20, 31, 1, 15 ],
+            "wednesday": [ 29, 30, 10, 14 ],
+            "thursday": [ 25, 5, 16, 20 ],
+            "friday": [ 24, 4, 15, 19 ],
+            "saturday": [ 23, 3, 14, 18 ],
+            "sunday": [ 22, 2, 13, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 139,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_Le_009.jpg',
+          title: 'A day of a wounded Red Army man.',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 22, 2, 13, 17 ],
+            "tuesday": [ 21, 1, 12, 16 ],
+            "wednesday": [ 20, 31, 1, 15 ],
+            "thursday": [ 29, 30, 10, 14 ],
+            "friday": [ 25, 5, 16, 20 ],
+            "saturday": [ 24, 4, 15, 19 ],
+            "sunday": [ 23, 3, 14, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 140,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_sovpolpost_00004.jpg',
+          title: 'A year (anniversary) to the dictatorship of the proletariat.',
+          artist: 'Alexander Apsit',
+          year: '1918',
+          rule: {
+            "monday": [ 24, 4, 15, 19 ],
+            "tuesday": [ 23, 3, 14, 18 ],
+            "wednesday": [ 22, 2, 13, 17 ],
+            "thursday": [ 21, 1, 2, 16 ],
+            "friday": [ 30, 31, 11, 15 ],
+            "saturday": [ 26, 6, 17, 21 ],
+            "sunday": [ 25, 5, 16, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
