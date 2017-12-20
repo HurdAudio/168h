@@ -1408,6 +1408,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 79,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=279769716/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://yelloweyes.bandcamp.com/album/immersion-trench-reverie',
+          a_string: 'Immersion Trench Reverie by Yellow Eyes',
+          rule: {
+            "monday": [ 16, 26, 5, 8 ],
+            "tuesday": [ 15, 25, 5, 7 ],
+            "wednesday": [ 19, 29, 8, 11 ],
+            "thursday": [ 18, 28, 7, 10 ],
+            "saturday": [ 17, 27, 6, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 80,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1774896739/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://attic-vanrecords.bandcamp.com/album/sanctimonious',
+          a_string: 'Sanctimonious by Attic',
+          rule: {
+            "monday": [ 17, 27, 6, 9 ],
+            "tuesday": [ 16, 26, 5, 8 ],
+            "wednesday": [ 15, 25, 5, 7 ],
+            "thursday": [ 19, 29, 8, 11 ],
+            "saturday": [ 18, 28, 7, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 81,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1464044653/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://powertripsl.bandcamp.com/album/nightmare-logic',
+          a_string: 'Nightmare Logic by Power Trip',
+          rule: {
+            "monday": [ 18, 28, 7, 10 ],
+            "tuesday": [ 17, 27, 6, 9 ],
+            "wednesday": [ 16, 26, 5, 8 ],
+            "thursday": [ 15, 25, 5, 7 ],
+            "saturday": [ 19, 29, 8, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
