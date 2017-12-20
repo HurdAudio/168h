@@ -298,6 +298,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#3CC8DC',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 22,
+          user_id: 1,
+          theme: 'ice',
+          type: 'holiday',
+          src_string: '../img/january_tiles/50879485-transparent-texture-of-natural-ice-of-blue-color-for-an-abstract-background.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '151%',
+          color_dark: '#0E396F',
+          color_medium: '#0C69C1',
+          color_light: '#EEF7FF',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
