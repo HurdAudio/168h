@@ -1732,6 +1732,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 97,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=881160943/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://yellowmaskcxllective.bandcamp.com/album/when-daffi-attacks',
+          a_string: 'When Daffi Attacks by Jeremiah Jae',
+          rule: {
+            "monday": [ 14, 16, 20, 28 ],
+            "tuesday": [ 13, 15, 19, 27 ],
+            "wednesday": [ 12, 13, 18, 26 ],
+            "thursday": [ 11, 13, 17, 25 ],
+            "saturday": [ 15, 17, 21, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 98,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2893042838/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://charlybliss.bandcamp.com/album/guppy',
+          a_string: 'Guppy by Charly Bliss',
+          rule: {
+            "monday": [ 16, 18, 22, 30 ],
+            "tuesday": [ 15, 17, 21, 29 ],
+            "wednesday": [ 14, 16, 20, 28 ],
+            "thursday": [ 13, 14, 19, 27 ],
+            "saturday": [ 12, 14, 18, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 99,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1235529255/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tica-douglas-tl.bandcamp.com/album/our-lady-star-of-the-sea-help-and-protect-us',
+          a_string: 'Our Lady Star of the Sea, Help and Protect Us by Tica Douglas',
+          rule: {
+            "monday": [ 12, 14, 18, 26 ],
+            "tuesday": [ 16, 18, 22, 30 ],
+            "wednesday": [ 15, 17, 21, 29 ],
+            "thursday": [ 14, 16, 20, 28 ],
+            "saturday": [ 13, 14, 19, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
