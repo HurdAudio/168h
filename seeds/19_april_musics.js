@@ -2056,6 +2056,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 115,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1632580698/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://amirthakidambi.bandcamp.com/album/holy-science',
+          a_string: 'Holy Science by Elder Ones',
+          rule: {
+            "monday": [ 18, 26, 8, 13 ],
+            "tuesday": [ 17, 25, 7, 12 ],
+            "wednesday": [ 16, 24, 6, 11 ],
+            "thursday": [ 20, 28, 10, 15 ],
+            "saturday": [ 19, 27, 9, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 116,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1368121686/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://iordache.bandcamp.com/album/one-life-left',
+          a_string: 'One Life Left by Iordache',
+          rule: {
+            "monday": [ 19, 27, 9, 14 ],
+            "tuesday": [ 18, 26, 8, 13 ],
+            "wednesday": [ 17, 25, 7, 12 ],
+            "thursday": [ 16, 24, 6, 11 ],
+            "saturday": [ 20, 28, 10, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 117,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2781980594/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bobbykappmatthewshipp.bandcamp.com/album/cactus',
+          a_string: 'Cactus by Bobby Kapp &amp; Matthew Shipp',
+          rule: {
+            "monday": [ 20, 28, 10, 15 ],
+            "tuesday": [ 19, 27, 9, 14 ],
+            "wednesday": [ 18, 26, 8, 13 ],
+            "thursday": [ 17, 25, 7, 12 ],
+            "saturday": [ 16, 24, 6, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
