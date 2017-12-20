@@ -2272,6 +2272,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 127,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=320406411/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://armandhammer.bandcamp.com/album/rome',
+          a_string: 'ROME by Armand Hammer',
+          rule: {
+            "monday": [ 19, 24, 26, 9 ],
+            "tuesday": [ 20, 24, 26, 1 ],
+            "wednesday": [ 23, 26, 28, 3 ],
+            "thursday": [ 24, 28, 1, 3 ],
+            "saturday": [ 7, 1, 3, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 128,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=807309436/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://fattonyrap.bandcamp.com/album/macgregor-park',
+          a_string: 'MacGregor Park by Fat Tony',
+          rule: {
+            "monday": [ 7, 1, 3, 9 ],
+            "tuesday": [ 19, 24, 26, 9 ],
+            "wednesday": [ 20, 24, 26, 1 ],
+            "thursday": [ 23, 26, 28, 3 ],
+            "saturday": [ 24, 28, 1, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 129,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1427812870/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://homeboysandman.bandcamp.com/album/veins',
+          a_string: 'Veins by Homeboy Sandman',
+          rule: {
+            "monday": [ 24, 28, 1, 3 ],
+            "tuesday": [ 7, 1, 3, 9 ],
+            "wednesday": [ 19, 24, 26, 9 ],
+            "thursday": [ 20, 24, 26, 1 ],
+            "saturday": [ 23, 26, 28, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
