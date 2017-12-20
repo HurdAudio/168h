@@ -2380,6 +2380,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 133,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=739310458/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sopercussion.bandcamp.com/album/amid-the-noise',
+          a_string: 'Amid The Noise by So Percussion',
+          rule: {
+            "monday": [ 29, 5, 6, 7 ],
+            "tuesday": [ 28, 4, 5, 6 ],
+            "wednesday": [ 27, 3, 4, 5 ],
+            "thursday": [ 26, 2, 3, 4 ],
+            "saturday": [ 30, 6, 7, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 134,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=421524315/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sopercussion.bandcamp.com/album/treasure-state',
+          a_string: 'Treasure State by So Percussion &amp; Matmos',
+          rule: {
+            "monday": [ 30, 6, 7, 8 ],
+            "tuesday": [ 29, 5, 6, 7 ],
+            "wednesday": [ 28, 4, 5, 6 ],
+            "thursday": [ 27, 3, 4, 5 ],
+            "saturday": [ 26, 2, 3, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 135,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=211854370/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://asphaltorchestra.bandcamp.com/album/asphalt-orchestra',
+          a_string: 'Asphalt Orchestra by Asphalt Orchestra',
+          rule: {
+            "monday": [ 26, 2, 3, 4 ],
+            "tuesday": [ 30, 6, 7, 8 ],
+            "wednesday": [ 29, 5, 6, 7 ],
+            "thursday": [ 28, 4, 5, 6 ],
+            "saturday": [ 27, 3, 4, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
