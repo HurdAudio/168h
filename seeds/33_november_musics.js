@@ -1300,6 +1300,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 73,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=663657428/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://anbessaorchestra.bandcamp.com/album/ep',
+          a_string: 'EP by Anbessa Orchestra',
+          rule: {
+            "monday": [ 12, 23, 4, 8 ],
+            "tuesday": [ 11, 22, 3, 7 ],
+            "wednesday": [ 10, 21, 2, 6 ],
+            "thursday": [ 9, 20, 1, 3 ],
+            "saturday": [ 8, 19, 30, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 74,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1734701675/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://blackjesusexperience.bandcamp.com/album/migration',
+          a_string: 'Migration by Black Jesus Experience',
+          rule: {
+            "monday": [ 8, 19, 30, 2 ],
+            "tuesday": [ 12, 23, 4, 8 ],
+            "wednesday": [ 11, 22, 3, 7 ],
+            "thursday": [ 10, 21, 2, 6 ],
+            "saturday": [ 9, 20, 1, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 75,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4001451639/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://terriehesselsterprecords.bandcamp.com/album/birabiro',
+          a_string: 'Birabiro by Fendika',
+          rule: {
+            "monday": [ 9, 20, 1, 3 ],
+            "tuesday": [ 8, 19, 30, 2 ],
+            "wednesday": [ 12, 23, 4, 8 ],
+            "thursday": [ 11, 22, 3, 7 ],
+            "saturday": [ 10, 21, 2, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
