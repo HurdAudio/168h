@@ -2164,6 +2164,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 121,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4268123099/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://blush.bandcamp.com/album/blush',
+          a_string: 'Blush by Blush',
+          rule: {
+            "monday": [ 21, 27, 2, 10 ],
+            "tuesday": [ 20, 26, 1, 10 ],
+            "wednesday": [ 19, 25, 31, 8 ],
+            "thursday": [ 18, 24, 30, 7 ],
+            "saturday": [ 22, 28, 3, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 122,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=956878438/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://krisdelmhorst.bandcamp.com/album/the-wild',
+          a_string: 'The Wild by Kris Delmhorst',
+          rule: {
+            "monday": [ 22, 28, 3, 11 ],
+            "tuesday": [ 21, 27, 2, 10 ],
+            "wednesday": [ 20, 26, 1, 10 ],
+            "thursday": [ 19, 25, 31, 8 ],
+            "saturday": [ 18, 24, 30, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 123,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=414875454/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://adriannelenker.bandcamp.com/album/hours-were-the-birds',
+          a_string: 'Hours Were The Birds by Adrianne Lenker',
+          rule: {
+            "monday": [ 18, 24, 30, 7 ],
+            "tuesday": [ 22, 28, 3, 11 ],
+            "wednesday": [ 21, 27, 2, 10 ],
+            "thursday": [ 20, 26, 1, 10 ],
+            "saturday": [ 19, 25, 31, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
