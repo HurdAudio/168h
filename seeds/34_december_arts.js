@@ -2304,6 +2304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 116,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/04-00,Newspaper',
+          title: 'Newspaper Ad',
+          artist: 'J. W. Farrah',
+          year: '1904',
+          rule: {
+            "monday": [ 15, 28, 5, 11 ],
+            "tuesday": [ 14, 27, 15, 10 ],
+            "wednesday": [ 20, 2, 10, 16 ],
+            "thursday": [ 19, 1, 9, 15 ],
+            "friday": [ 18, 31, 8, 14 ],
+            "saturday": [ 17, 30, 7, 13 ],
+            "sunday": [ 16, 29, 6, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 117,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/13-02-15,Hank',
+          title: 'Hank & Knobbs',
+          artist: 'Joseph A. Farren',
+          year: '1913',
+          rule: {
+            "monday": [ 16, 29, 6, 12 ],
+            "tuesday": [ 15, 28, 5, 11 ],
+            "wednesday": [ 14, 27, 15, 10 ],
+            "thursday": [ 20, 2, 10, 16 ],
+            "friday": [ 19, 1, 9, 15 ],
+            "saturday": [ 18, 31, 8, 14 ],
+            "sunday": [ 17, 30, 7, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 118,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/45-00,Susabelle',
+          title: 'Susabelle Comic Strip',
+          artist: 'Elton Fax',
+          year: '1943',
+          rule: {
+            "monday": [ 17, 30, 7, 13 ],
+            "tuesday": [ 16, 29, 6, 12 ],
+            "wednesday": [ 15, 28, 5, 11 ],
+            "thursday": [ 14, 27, 15, 10 ],
+            "friday": [ 20, 2, 10, 16 ],
+            "saturday": [ 19, 1, 9, 15 ],
+            "sunday": [ 18, 31, 8, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 119,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/40-01,WT',
+          title: 'Weird Tales',
+          artist: 'Virgil Finlay',
+          year: '1940',
+          rule: {
+            "monday": [ 19, 1, 9, 15 ],
+            "tuesday": [ 18, 31, 8, 14 ],
+            "wednesday": [ 17, 30, 7, 13 ],
+            "thursday": [ 16, 29, 6, 12 ],
+            "friday": [ 15, 28, 16, 11 ],
+            "saturday": [ 21, 3, 11, 17 ],
+            "sunday": [ 20, 2, 10, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 120,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/11-02-11,SEP',
+          title: 'Sat. Even. Post',
+          artist: 'Anton Otto Fischer',
+          year: '1911',
+          rule: {
+            "monday": [ 20, 2, 10, 16 ],
+            "tuesday": [ 19, 1, 9, 15 ],
+            "wednesday": [ 18, 31, 8, 14 ],
+            "thursday": [ 17, 30, 7, 13 ],
+            "friday": [ 16, 29, 6, 12 ],
+            "saturday": [ 15, 28, 16, 11 ],
+            "sunday": [ 21, 3, 11, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
