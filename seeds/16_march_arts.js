@@ -4104,6 +4104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 206,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/three-fold-manifestation-ii-1987.jpg',
+          title: 'Three-fold Manifestation II',
+          artist: 'Alice Aycock',
+          year: '1987',
+          rule: {
+            "monday": [ 23, 2, 11, 20 ],
+            "tuesday": [ 29, 7, 16, 25 ],
+            "wednesday": [ 28, 7, 17, 25 ],
+            "thursday": [ 28, 6, 14, 24 ],
+            "friday": [ 26, 5, 13, 23 ],
+            "saturday": [ 25, 4, 12, 22 ],
+            "sunday": [ 24, 3, 11, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 207,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/eurydice-n-27-1998.jpg',
+          title: 'Eurydice n. 27',
+          artist: 'Bracha L. Ettinger',
+          year: '1998',
+          rule: {
+            "monday": [ 24, 3, 11, 21 ],
+            "tuesday": [ 23, 2, 11, 20 ],
+            "wednesday": [ 29, 7, 16, 25 ],
+            "thursday": [ 28, 7, 17, 25 ],
+            "friday": [ 28, 6, 14, 24 ],
+            "saturday": [ 26, 5, 13, 23 ],
+            "sunday": [ 25, 4, 12, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 208,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/electrolux.jpg',
+          title: 'Electrolux',
+          artist: 'Edith Vonnegut',
+          year: '?',
+          rule: {
+            "monday": [ 25, 4, 12, 22 ],
+            "tuesday": [ 24, 3, 11, 21 ],
+            "wednesday": [ 23, 2, 11, 20 ],
+            "thursday": [ 29, 7, 16, 25 ],
+            "friday": [ 28, 7, 17, 25 ],
+            "saturday": [ 28, 6, 14, 24 ],
+            "sunday": [ 26, 5, 13, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 209,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/baum-wesen-2007.jpg',
+          title: 'Baum-Wesen',
+          artist: 'Leiko Ikemura',
+          year: '2007',
+          rule: {
+            "monday": [ 26, 5, 13, 23 ],
+            "tuesday": [ 25, 4, 12, 22 ],
+            "wednesday": [ 24, 3, 11, 21 ],
+            "thursday": [ 23, 2, 11, 20 ],
+            "friday": [ 29, 7, 16, 25 ],
+            "saturday": [ 28, 7, 17, 25 ],
+            "sunday": [ 28, 6, 14, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 210,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/susquehanna-2007.jpg',
+          title: 'Susquehanna',
+          artist: 'Anne Appleby',
+          year: '2007',
+          rule: {
+            "monday": [ 29, 7, 15, 25 ],
+            "tuesday": [ 27, 6, 14, 24 ],
+            "wednesday": [ 26, 5, 13, 23 ],
+            "thursday": [ 25, 4, 12, 22 ],
+            "friday": [ 24, 3, 12, 21 ],
+            "saturday": [ 30, 8, 17, 26 ],
+            "sunday": [ 29, 8, 18, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
