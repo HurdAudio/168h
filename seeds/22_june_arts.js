@@ -3498,9 +3498,109 @@ exports.seed = function(knex, Promise) {
             "tuesday": [ 22, 2, 12, 20 ],
             "wednesday": [ 21, 1, 11, 19 ],
             "thursday": [ 20, 30, 10, 18 ],
-            "friday": [19, 29, 9, 17  ],
+            "friday": [ 19, 29, 9, 17 ],
             "saturday": [ 25, 5, 15, 22 ],
             "sunday": [ 24, 4, 14, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 176,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/trees-and-crows-02.jpg',
+          title: 'Trees and Crows',
+          artist: 'Abbas Kiarostami',
+          year: '2006',
+          rule: {
+            "monday": [ 24, 4, 14, 22 ],
+            "tuesday": [ 23, 3, 13, 21 ],
+            "wednesday": [ 22, 2, 12, 20 ],
+            "thursday": [ 21, 1, 11, 19 ],
+            "friday": [ 20, 30, 10, 18 ],
+            "saturday": [ 19, 29, 9, 17 ],
+            "sunday": [ 25, 5, 15, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 177,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/jackson-mississippi-1970.jpg',
+          title: 'Jackson, Mississippi',
+          artist: 'William Eggleston',
+          year: '1970',
+          rule: {
+            "monday": [ 25, 5, 15, 22 ],
+            "tuesday": [ 24, 4, 14, 22 ],
+            "wednesday": [ 23, 3, 13, 21 ],
+            "thursday": [ 22, 2, 12, 20 ],
+            "friday": [ 21, 1, 11, 19 ],
+            "saturday": [ 20, 30, 10, 18 ],
+            "sunday": [ 19, 29, 9, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 178,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/landscape-as-an-attitude-1979.jpg',
+          title: 'Landscape as an Attitude',
+          artist: 'Luis Camnitzer',
+          year: '1979',
+          rule: {
+            "monday": [ 19, 29, 9, 17 ],
+            "tuesday": [ 25, 5, 15, 22 ],
+            "wednesday": [ 24, 4, 14, 22 ],
+            "thursday": [ 23, 3, 13, 21 ],
+            "friday": [ 22, 2, 12, 20 ],
+            "saturday": [ 21, 1, 11, 19 ],
+            "sunday": [ 20, 30, 10, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 179,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/urban-landscape-los-angeles-1991.jpg',
+          title: 'Urban Landscape, Los Angeles',
+          artist: 'Franco Fontana',
+          year: '1991',
+          rule: {
+            "monday": [ 20, 30, 10, 18 ],
+            "tuesday": [ 19, 29, 9, 17 ],
+            "wednesday": [ 25, 5, 15, 22 ],
+            "thursday": [ 24, 4, 14, 22 ],
+            "friday": [ 23, 3, 13, 21 ],
+            "saturday": [ 22, 2, 12, 20 ],
+            "sunday": [ 21, 1, 11, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 180,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/meadowland.jpg',
+          title: 'Meadowland',
+          artist: 'Gerhard Richter',
+          year: '1985',
+          rule: {
+            "monday": [ 21, 1, 11, 19 ],
+            "tuesday": [ 20, 30, 10, 18 ],
+            "wednesday": [ 19, 29, 9, 17 ],
+            "thursday": [ 25, 5, 15, 22 ],
+            "friday": [ 24, 4, 14, 22 ],
+            "saturday": [ 23, 3, 13, 21 ],
+            "sunday": [ 22, 2, 12, 20 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
