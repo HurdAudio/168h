@@ -175,6 +175,411 @@
       vm.closeMusicCurratorManager = closeMusicCurratorManager;
       vm.toggleMusicCurratorMonth = toggleMusicCurratorMonth;
       vm.displayMusics = displayMusics;
+      vm.editArtCurrate = editArtCurrate;
+      vm.userArtCurratorEditorDone = userArtCurratorEditorDone;
+
+      function userArtCurratorEditorDone() {
+        let userArtCurratorEditorDiv = document.getElementById('userArtCurratorEditorDiv');
+        let artCurratorManagerDone = document.getElementById('artCurratorManagerDone');
+
+        userArtCurratorEditorDiv.setAttribute("style", "display: none;");
+        artCurratorManagerDone.setAttribute("style", "visibility: visible;");
+      }
+
+      function handleArtFilterListener(eleCheck, value, artPiece, artMonth, weekday) {
+        eleCheck.addEventListener('click', ()=>{
+          let subObj = {
+            rule: artPiece.rule
+          };
+          if (eleCheck.checked) {
+            subObj.rule[weekday].push(value);
+          } else {
+            subObj.rule[weekday].splice((subObj.rule[weekday].indexOf(value)), 1);
+          }
+          $http.patch(`/${artMonth}/${artPiece.id}`, subObj)
+          .then(()=>{
+            artPiece.rule = subObj.rule;
+            displayArts(artMonth + 'byuser');
+          });
+        });
+      }
+
+      function artArrayRandomizer(maxValue, minimumTotal, maximumTotal) {
+
+        let endResult = [];
+        let total = Math.floor(Math.random() * (maximumTotal - minimumTotal)) + minimumTotal;
+        let randomVal = Math.floor(Math.random() * maxValue) + 1;
+
+        for (let i = 0; i < total; i++) {
+          while (endResult.indexOf(randomVal) !== -1) {
+            randomVal = Math.floor(Math.random() * maxValue) + 1;
+          }
+          endResult.push(randomVal);
+        }
+        return(endResult);
+      }
+
+      function displayDaysArray(element, numberDays, rulesArray, artPiece, artMonth, weekday) {
+        let eleDiv;
+        let eleCheck;
+        let eleLabel;
+
+        for (let i = 0; i < numberDays; i++) {
+          eleDiv = document.createElement('div');
+          element.appendChild(eleDiv);
+          eleDiv.className = 'arrayMonthClass';
+          eleCheck = document.createElement('input');
+          eleDiv.appendChild(eleCheck);
+          eleCheck.type = 'checkbox';
+          if (rulesArray.indexOf(i + 1) === -1) {
+            eleCheck.checked = false;
+          } else {
+            eleCheck.checked = true;
+          }
+          eleLabel = document.createElement('p');
+          eleDiv.appendChild(eleLabel);
+          eleLabel.innerHTML = (i + 1).toString();
+          handleArtFilterListener(eleCheck, (i + 1), artPiece, artMonth, weekday);
+        }
+      }
+
+      function editArtCurrate(artMonth, artId) {
+        let userArtCurratorEditorDiv = document.getElementById('userArtCurratorEditorDiv');
+        let artCurratorManagerDone = document.getElementById('artCurratorManagerDone');
+        let artCurratorEditorTitle = document.getElementById('artCurratorEditorTitle');
+        let userArtCuratorEditMonth = document.getElementById('userArtCuratorEditMonth');
+        let userArtCuratorFirstEntryTheme = document.getElementById('userArtCuratorFirstEntryTheme');
+        let userArtCuratorMonthThemeEntry = document.getElementById('userArtCuratorMonthThemeEntry');
+        if (userArtCuratorMonthThemeEntry) {
+          userArtCuratorMonthThemeEntry.parentNode.removeChild(userArtCuratorMonthThemeEntry);
+          userArtCuratorMonthThemeEntry = document.createElement('input');
+          userArtCuratorFirstEntryTheme.appendChild(userArtCuratorMonthThemeEntry);
+          userArtCuratorMonthThemeEntry.id = 'userArtCuratorMonthThemeEntry';
+          userArtCuratorMonthThemeEntry.type = 'text';
+          userArtCuratorMonthThemeEntry.className = 'pure-input-1';
+          userArtCuratorMonthThemeEntry.placeholder = 'month art theme';
+        }
+        let userArtCuratorEditImage = document.getElementById('userArtCuratorEditImage');
+        let userArtCurratorImgPathField = document.getElementById('userArtCurratorImgPathField');
+        let userArtCurratorURL = document.getElementById('userArtCurratorURL');
+        if (userArtCurratorURL) {
+          userArtCurratorURL.parentNode.removeChild(userArtCurratorURL);
+          userArtCurratorURL = document.createElement('input');
+          userArtCurratorImgPathField.appendChild(userArtCurratorURL);
+          userArtCurratorURL.id = 'userArtCurratorURL';
+          userArtCurratorURL.type = 'text';
+          userArtCurratorURL.className = 'pure-input-1';
+          userArtCurratorURL.placeholder = 'imageURL';
+        }
+        let userArtCurratorUploaderButton = document.getElementById('userArtCurratorUploaderButton');
+        if (userArtCurratorUploaderButton) {
+          userArtCurratorUploaderButton.parentNode.removeChild(userArtCurratorUploaderButton);
+          userArtCurratorUploaderButton = document.createElement('a');
+          userArtCurratorImgPathField.appendChild(userArtCurratorUploaderButton);
+          userArtCurratorUploaderButton.id = 'userArtCurratorUploaderButton';
+          userArtCurratorUploaderButton.className = 'btn';
+          userArtCurratorUploaderButton.innerHTML = 'upload';
+          userArtCurratorUploaderButton.setAttribute("style", "cursor: pointer;");
+        }
+        let userArtCurratorImageUploaderDiv = document.getElementById('userArtCurratorImageUploaderDiv');
+        userArtCurratorImageUploaderDiv.setAttribute("style", "visibility: hidden;");
+        let userArtCurratorUploaderSubmit = document.getElementById('userArtCurratorUploaderSubmit');
+        if (userArtCurratorUploaderSubmit) {
+          userArtCurratorUploaderSubmit.parentNode.removeChild(userArtCurratorUploaderSubmit);
+          userArtCurratorUploaderSubmit = document.createElement('a');
+          userArtCurratorImageUploaderDiv.appendChild(userArtCurratorUploaderSubmit);
+          userArtCurratorUploaderSubmit.id = 'userArtCurratorUploaderSubmit';
+          userArtCurratorUploaderSubmit.className = 'btn';
+          userArtCurratorUploaderSubmit.innerHTML = 'submit';
+          userArtCurratorUploaderSubmit.setAttribute("style", "cursor: pointer;");
+        }
+        let userArtCurratorUploaderCancel = document.getElementById('userArtCurratorUploaderCancel');
+        if (userArtCurratorUploaderCancel) {
+          userArtCurratorUploaderCancel.parentNode.removeChild(userArtCurratorUploaderCancel);
+          userArtCurratorUploaderCancel = document.createElement('a');
+          userArtCurratorImageUploaderDiv.appendChild(userArtCurratorUploaderCancel);
+          userArtCurratorUploaderCancel.id = 'userArtCurratorUploaderCancel';
+          userArtCurratorUploaderCancel.className = 'btn';
+          userArtCurratorUploaderCancel.innerHTML = 'cancel';
+          userArtCurratorUploaderCancel.setAttribute("style", "cursor: pointer;");
+        }
+        let userArtCurratorNewTextFieldsDiv = document.getElementById('userArtCurratorNewTextFieldsDiv');
+        let userArtCurratorAddArtist = document.getElementById('userArtCurratorAddArtist');
+        if (userArtCurratorAddArtist) {
+          userArtCurratorAddArtist.parentNode.removeChild(userArtCurratorAddArtist);
+          userArtCurratorAddArtist = document.createElement('input');
+          userArtCurratorNewTextFieldsDiv.appendChild(userArtCurratorAddArtist);
+          userArtCurratorAddArtist.id = 'userArtCurratorAddArtist';
+          userArtCurratorAddArtist.type = 'text';
+          userArtCurratorAddArtist.className = 'pure-input-1';
+          userArtCurratorAddArtist.placeholder = 'artist';
+        }
+        let userArtCurratorAddTitle = document.getElementById('userArtCurratorAddTitle');
+        if (userArtCurratorAddTitle) {
+          userArtCurratorAddTitle.parentNode.removeChild(userArtCurratorAddTitle);
+          userArtCurratorAddTitle = document.createElement('input');
+          userArtCurratorNewTextFieldsDiv.appendChild(userArtCurratorAddTitle);
+          userArtCurratorAddTitle.id = 'userArtCurratorAddTitle';
+          userArtCurratorAddTitle.type = 'text';
+          userArtCurratorAddTitle.className = 'pure-input-1';
+          userArtCurratorAddTitle.placeholder = 'title';
+        }
+        let userArtCurratorAdderYear = document.getElementById('userArtCurratorAdderYear');
+        if (userArtCurratorAdderYear) {
+          userArtCurratorAdderYear.parentNode.removeChild(userArtCurratorAdderYear);
+          userArtCurratorAdderYear = document.createElement('input');
+          userArtCurratorNewTextFieldsDiv.appendChild(userArtCurratorAdderYear);
+          userArtCurratorAdderYear.id = 'userArtCurratorAdderYear';
+          userArtCurratorAdderYear.type = 'text';
+          userArtCurratorAdderYear.className = 'pure-input-1';
+          userArtCurratorAdderYear.placeholder = 'year';
+        }
+        let userArtCurratorRandomButtonDiv = document.getElementById('userArtCurratorRandomButtonDiv');
+        let userArtCurratorRandomizeFilterButton = document.getElementById('userArtCurratorRandomizeFilterButton');
+        if (userArtCurratorRandomizeFilterButton) {
+          userArtCurratorRandomizeFilterButton.parentNode.removeChild(userArtCurratorRandomizeFilterButton);
+          userArtCurratorRandomizeFilterButton = document.createElement('button');
+          userArtCurratorRandomButtonDiv.appendChild(userArtCurratorRandomizeFilterButton);
+          userArtCurratorRandomizeFilterButton.id = 'userArtCurratorRandomizeFilterButton';
+          userArtCurratorRandomizeFilterButton.innerHTML = 'Randomize Values';
+          userArtCurratorRandomizeFilterButton.setAttribute("style", "background: #3F2E15; background-color: -webkit-linear-gradient(135deg, #3F2E15, #C2AF0A); background: -o-linear-gradient(135deg, #3F2E15, #C2AF0A); background: -moz-linear-gradient(135deg, #3F2E15, #C2AF0A); background: linear-gradient(135deg, #3F2E15, #C2AF0A); margin-left: 16vmin;");
+        }
+        let numberDays = 0;
+        let dayname;
+        let userArtCurratorMondayArray = document.getElementById('userArtCurratorMondayArray');
+        while(userArtCurratorMondayArray.firstChild) {
+          userArtCurratorMondayArray.removeChild(userArtCurratorMondayArray.firstChild);
+        }
+        dayname = document.createElement('p');
+        dayname.innerHTML = 'Mon';
+        userArtCurratorMondayArray.appendChild(dayname);
+        let userArtCurratorTuesdayArray = document.getElementById('userArtCurratorTuesdayArray');
+        while (userArtCurratorTuesdayArray.firstChild) {
+          userArtCurratorTuesdayArray.removeChild(userArtCurratorTuesdayArray.firstChild);
+        }
+        dayname = document.createElement('p');
+        dayname.innerHTML = 'Tue';
+        userArtCurratorTuesdayArray.appendChild(dayname);
+        let userArtCurratorWednesdayArray = document.getElementById('userArtCurratorWednesdayArray');
+        while(userArtCurratorWednesdayArray.firstChild) {
+          userArtCurratorWednesdayArray.removeChild(userArtCurratorWednesdayArray.firstChild);
+        }
+        dayname = document.createElement('p');
+        dayname.innerHTML = 'Wed';
+        userArtCurratorWednesdayArray.appendChild(dayname);
+        let userArtCurratorThursdayArray = document.getElementById('userArtCurratorThursdayArray');
+        while (userArtCurratorThursdayArray.firstChild) {
+          userArtCurratorThursdayArray.removeChild(userArtCurratorThursdayArray.firstChild);
+        }
+        dayname = document.createElement('p');
+        dayname.innerHTML = 'Thu';
+        userArtCurratorThursdayArray.appendChild(dayname);
+        let userArtCurratorFridayArray = document.getElementById('userArtCurratorFridayArray');
+        while (userArtCurratorFridayArray.firstChild) {
+          userArtCurratorFridayArray.removeChild(userArtCurratorFridayArray.firstChild);
+        }
+        dayname = document.createElement('p');
+        dayname.innerHTML = 'Fri';
+        userArtCurratorFridayArray.appendChild(dayname);
+        let userArtCurratorSaturdayArray = document.getElementById('userArtCurratorSaturdayArray');
+        while (userArtCurratorSaturdayArray.firstChild) {
+          userArtCurratorSaturdayArray.removeChild(userArtCurratorSaturdayArray.firstChild);
+        }
+        dayname = document.createElement('p');
+        dayname.innerHTML = 'Sat';
+        userArtCurratorSaturdayArray.appendChild(dayname);
+        let userArtCurratorSundayArray = document.getElementById('userArtCurratorSundayArray');
+        while (userArtCurratorSundayArray.firstChild) {
+          userArtCurratorSundayArray.removeChild(userArtCurratorSundayArray.firstChild);
+        }
+        dayname = document.createElement('p');
+        dayname.innerHTML = 'Sun';
+        userArtCurratorSundayArray.appendChild(dayname);
+
+
+
+        switch(artMonth) {
+          case('january_arts'):
+            artCurratorEditorTitle.innerHTML = 'Art: January';
+            numberDays = 31;
+            break;
+          case('february_arts'):
+            artCurratorEditorTitle.innerHTML = 'Art: February';
+            numberDays = 29;
+            break;
+          case('march_arts'):
+            artCurratorEditorTitle.innerHTML = 'Art: March';
+            numberDays = 31;
+            break;
+          case('april_arts'):
+            artCurratorEditorTitle.innerHTML = 'Art: April';
+            numberDays = 30;
+            break;
+          case('may_arts'):
+            artCurratorEditorTitle.innerHTML = 'Art: May';
+            numberDays = 31;
+            break;
+          case('june_arts'):
+            artCurratorEditorTitle.innerHTML = 'Art: June';
+            numberDays = 30;
+            break;
+          case('july_arts'):
+            artCurratorEditorTitle.innerHTML = 'Art: July';
+            numberDays = 31;
+            break;
+          case('august_arts'):
+            artCurratorEditorTitle.innerHTML = 'Art: August';
+            numberDays = 31;
+            break;
+          case('september_arts'):
+            artCurratorEditorTitle.innerHTML = 'Art: September';
+            numberDays = 30;
+            break;
+          case('october_arts'):
+            artCurratorEditorTitle.innerHTML = 'Art: October';
+            numberDays = 31;
+            break;
+          case('november_arts'):
+            artCurratorEditorTitle.innerHTML = 'Art: November';
+            numberDays = 30;
+            break;
+          case('december_arts'):
+            artCurratorEditorTitle.innerHTML = 'Art: December';
+            numberDays = 31;
+            break;
+          default:
+            console.log('month not supported');
+        }
+
+        $http.get(`/${artMonth}/${artId}`)
+        .then(artPieceData=>{
+          let artPiece = artPieceData.data;
+          if (artPiece.theme === '') {
+            userArtCuratorEditMonth.setAttribute("style", "display: none;");
+            userArtCuratorEditMonth.innerHTML = '';
+            userArtCuratorFirstEntryTheme.setAttribute("style", "display: initial;");
+            userArtCuratorMonthThemeEntry.addEventListener('focusout', ()=>{
+              if (userArtCuratorMonthThemeEntry.value !== '') {
+                subObj = {
+                  theme: userArtCuratorMonthThemeEntry.value
+                };
+                $http.patch(`/${artMonth}/${artId}`, subObj)
+                .then(()=>{
+                  artPiece.theme = userArtCuratorMonthThemeEntry.value;
+                });
+              }
+            });
+          } else {
+            userArtCuratorEditMonth.setAttribute("style", "display: initial; margin: 3vmin 8vmin 3vmin 8vmin; padding: 1vmin; background-color: #dddddd;");
+            userArtCuratorEditMonth.innerHTML = artPiece.theme;
+            userArtCuratorFirstEntryTheme.setAttribute("style", "display: none;");
+          }
+          userArtCuratorEditImage.src = artPiece.img_path;
+          userArtCurratorURL.value = artPiece.img_path;
+          userArtCurratorAddArtist.value = artPiece.artist;
+          userArtCurratorAddTitle.value = artPiece.title;
+          userArtCurratorAdderYear.value = artPiece.year;
+          displayDaysArray(userArtCurratorMondayArray, numberDays, artPiece.rule.monday, artPiece, artMonth, 'monday');
+          displayDaysArray(userArtCurratorTuesdayArray, numberDays, artPiece.rule.tuesday, artPiece, artMonth, 'tuesday');
+          displayDaysArray(userArtCurratorWednesdayArray, numberDays, artPiece.rule.wednesday, artPiece, artMonth, 'wednesday');
+          displayDaysArray(userArtCurratorThursdayArray, numberDays, artPiece.rule.thursday, artPiece, artMonth, 'thursday');
+          displayDaysArray(userArtCurratorFridayArray, numberDays, artPiece.rule.friday, artPiece, artMonth, 'friday');
+          displayDaysArray(userArtCurratorSaturdayArray, numberDays, artPiece.rule.saturday, artPiece, artMonth, 'saturday');
+          displayDaysArray(userArtCurratorSundayArray, numberDays, artPiece.rule.sunday, artPiece, artMonth, 'sunday');
+
+
+
+          userArtCurratorURL.addEventListener('focusout', ()=>{
+            if (userArtCurratorURL.value !== artPiece.img_path) {
+              let subObj = {
+                img_path: userArtCurratorURL.value
+              };
+              userArtCuratorEditImage.src = userArtCurratorURL.value;
+              $http.patch(`/${artMonth}/${artId}`, subObj)
+              .then(()=>{
+                artPiece.img_path = subObj.img_path;
+              });
+            }
+          });
+          userArtCurratorUploaderButton.addEventListener('click', ()=>{
+            userArtCurratorUploaderButton.setAttribute("style", "visibility: hidden;");
+            userArtCurratorImageUploaderDiv.setAttribute("style", "visibility: visible;");
+          });
+          userArtCurratorUploaderSubmit.addEventListener('click', ()=>{
+            userArtCurratorUploaderButton.setAttribute("style", "visibility: visible; cursor: pointer;");
+            userArtCurratorImageUploaderDiv.setAttribute("style", "visibility: hidden;");
+          });
+          userArtCurratorUploaderCancel.addEventListener('click', ()=>{
+            userArtCurratorUploaderButton.setAttribute("style", "visibility: visible; cursor: pointer;");
+            userArtCurratorImageUploaderDiv.setAttribute("style", "visibility: hidden;");
+          });
+          userArtCurratorAddArtist.addEventListener('focusout', ()=>{
+            if (userArtCurratorAddArtist.value !== artPiece.artist) {
+              let subObj = {
+                artist: userArtCurratorAddArtist.value
+              };
+              $http.patch(`/${artMonth}/${artId}`, subObj)
+              .then(()=>{
+                artPiece.artist = userArtCurratorAddArtist.value;
+                displayArts(artMonth + 'byuser');
+              });
+            }
+          });
+          userArtCurratorAddTitle.addEventListener('focusout', ()=>{
+            if (userArtCurratorAddTitle.value !== artPiece.title) {
+              let subObj = {
+                title: userArtCurratorAddTitle.value
+              };
+              $http.patch(`/${artMonth}/${artId}`, subObj)
+              .then(()=>{
+                artPiece.title = userArtCurratorAddTitle.value;
+                displayArts(artMonth + 'byuser');
+              });
+            }
+          });
+          userArtCurratorAdderYear.addEventListener('focusout', ()=>{
+            if (userArtCurratorAdderYear.value !== artPiece.year) {
+              let subObj = {
+                year: userArtCurratorAdderYear.value
+              };
+              $http.patch(`/${artMonth}/${artId}`, subObj)
+              .then(()=>{
+                artPiece.year = userArtCurratorAdderYear.value;
+                displayArts(artMonth + 'byuser');
+              });
+            }
+          });
+          userArtCurratorRandomizeFilterButton.addEventListener('click', ()=>{
+            let subObj = {
+              rule: {
+                monday: [],
+                tuesday: [],
+                wednesday: [],
+                thursday: [],
+                friday: [],
+                saturday: [],
+                sunday: []
+              }
+            };
+            subObj.rule.monday = artArrayRandomizer(numberDays, 1, 6);
+            subObj.rule.tuesday = artArrayRandomizer(numberDays, 1, 6);
+            subObj.rule.wednesday = artArrayRandomizer(numberDays, 1, 6);
+            subObj.rule.thursday = artArrayRandomizer(numberDays, 1, 6);
+            subObj.rule.friday = artArrayRandomizer(numberDays, 1, 6);
+            subObj.rule.saturday = artArrayRandomizer(numberDays, 1, 6);
+            subObj.rule.sunday = artArrayRandomizer(numberDays, 1, 6);
+            $http.patch(`/${artMonth}/${artId}`, subObj)
+            .then(()=>{
+              editArtCurrate(artMonth, artId);
+              displayArts(artMonth + 'byuser');
+            });
+          });
+        });
+
+        userArtCurratorEditorDiv.setAttribute("style", "display: initial;");
+        artCurratorManagerDone.setAttribute("style", "visibility: hidden;");
+
+      }
 
       function displayMusics(monthTable) {
         let weekdayString = '';
