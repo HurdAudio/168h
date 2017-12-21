@@ -177,6 +177,69 @@
       vm.displayMusics = displayMusics;
       vm.editArtCurrate = editArtCurrate;
       vm.userArtCurratorEditorDone = userArtCurratorEditorDone;
+      vm.deleteObservance = deleteObservance;
+
+      function deleteObservance(observanceId) {
+        let observancesManagementDiv = document.getElementById('observancesManagementDiv');
+        let userObservancesEditorDiv = document.getElementById('userObservancesEditorDiv');
+        let userObservancesDeleteConfirmDiv = document.getElementById('userObservancesDeleteConfirmDiv');
+        let observancesManagerDone = document.getElementById('observancesManagerDone');
+        let userObservanceDeleteConfirmButtons = document.getElementById('userObservanceDeleteConfirmButtons');
+        let userObservanceConfirmYes = document.getElementById('userObservanceConfirmYes');
+        if (userObservanceConfirmYes) {
+          userObservanceConfirmYes.parentNode.removeChild(userObservanceConfirmYes);
+          userObservanceConfirmYes = document.createElement('a');
+          userObservanceDeleteConfirmButtons.appendChild(userObservanceConfirmYes);
+          userObservanceConfirmYes.id = 'userObservanceConfirmYes';
+          userObservanceConfirmYes.className = 'btn';
+          userObservanceConfirmYes.innerHTML = 'yes';
+          userObservanceConfirmYes.setAttribute("style", "cursor: pointer;");
+        }
+        let userObservanceConfirmNo = document.getElementById('userObservanceConfirmNo');
+        if (userObservanceConfirmNo) {
+          userObservanceConfirmNo.parentNode.removeChild(userObservanceConfirmNo);
+          userObservanceConfirmNo = document.createElement('a');
+          userObservanceDeleteConfirmButtons.appendChild(userObservanceConfirmNo);
+          userObservanceConfirmNo.id = 'userObservanceConfirmNo';
+          userObservanceConfirmNo.className = 'btn';
+          userObservanceConfirmNo.innerHTML = 'no';
+          userObservanceConfirmNo.setAttribute("style", "cursor: pointer;");
+        }
+        let userObservanceDeleteImage = document.getElementById('userObservanceDeleteImage');
+        let userObservanceDeleteName = document.getElementById('userObservanceDeleteName');
+        let months = [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ];
+        let userObservanceDeleteDate = document.getElementById('userObservanceDeleteDate');
+
+        $http.get(`/observances/${observanceId}`)
+        .then(observeData=>{
+          let observe = observeData.data;
+          let checkDate = new Date(observe.day_of);
+
+          userObservanceDeleteImage.src = observe.picture;
+          userObservanceDeleteName.innerHTML = observe.name;
+          userObservanceDeleteDate.innerHTML = checkDate.getDate().toString() + ' ' + months[checkDate.getMonth()];
+
+          userObservanceConfirmYes.addEventListener('click',()=>{
+            $http.delete(`/observances/${observanceId}`)
+            .then(()=>{
+              observancesManagementDiv.setAttribute("style", "display: initial;");
+              userObservancesDeleteConfirmDiv.setAttribute("style", "display: none;");
+              observanceManager();
+            });
+
+          });
+          userObservanceConfirmNo.addEventListener('click', ()=>{
+            observancesManagementDiv.setAttribute("style", "display: initial;");
+            userObservancesDeleteConfirmDiv.setAttribute("style", "display: none;");
+            observanceManager();
+          });
+        });
+
+        observancesManagementDiv.setAttribute("style", "display: none;");
+        userObservancesEditorDiv.setAttribute("style", "display: none;");
+        userObservancesDeleteConfirmDiv.setAttribute("style", "display: initial;");
+        observancesManagerDone.setAttribute("style", "visibility: visible;");
+      }
 
       function userArtCurratorEditorDone() {
         let userArtCurratorEditorDiv = document.getElementById('userArtCurratorEditorDiv');
