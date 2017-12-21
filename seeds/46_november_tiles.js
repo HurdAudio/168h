@@ -172,6 +172,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FDFFF9',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 13,
+          user_id: 1,
+          theme: 'monochromatic',
+          type: 'week',
+          src_string: '../img/november_tiles/01_torre-velasca-1956-58-bbpr-partnership-milano-early-september-2016_05.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '150%',
+          color_dark: '#090909',
+          color_medium: '#5E5C5D',
+          color_light: '#C1C0BE',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
