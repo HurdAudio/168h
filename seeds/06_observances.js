@@ -8925,6 +8925,34 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 570,
+          user_id: 1,
+          name: 'Tony Conrad (composer, video artist, filmmaker, writer) born in 1940',
+          color: '#A43C21',
+          picture: './img/musicians/tonyconrad.jpg',
+          day_of: new Date ('1940-03-07T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 571,
+          user_id: 1,
+          name: 'The rapture occured on this date in 1988 as promised by Edgar C. Whisenant - author of 88 Reasons Why the Rapture Will Be in 1988. He settled on this date when the rapture failed to materialize between September 11-13.',
+          color: '#E2C17C',
+          picture: './img/doomsday/88reasons.jpg',
+          day_of: new Date ('1988-10-03T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
