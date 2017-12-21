@@ -214,6 +214,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#CBC1B3',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 16,
+          user_id: 1,
+          theme: 'primary colors',
+          type: 'sunday',
+          src_string: '../img/august_tiles/meterstab-2243316_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '100%',
+          color_dark: '#392C20',
+          color_medium: '#B59F10',
+          color_light: '#BBA988',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
