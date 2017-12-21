@@ -186,6 +186,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#F9F9F9',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 14,
+          user_id: 1,
+          theme: 'autumnal',
+          type: 'friday',
+          src_string: '../img/october_tiles/burning-bush-2638896_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '150%',
+          color_dark: '#2E0807',
+          color_medium: '#6E914F',
+          color_light: '#DCC6A1',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
