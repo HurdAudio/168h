@@ -1246,6 +1246,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 70,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=969446742/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ceumusic.bandcamp.com/album/tropix',
+          a_string: 'Tropix by Céu',
+          rule: {
+            "monday": [ 15, 21, 27, 2 ],
+            "tuesday": [ 13, 20, 26, 1 ],
+            "wednesday": [ 13, 19, 25, 31 ],
+            "thursday": [ 17, 23, 29, 4 ],
+            "saturday": [ 16, 22, 28, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 71,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3301125778/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://victoire-oberkampf.bandcamp.com/album/spiritual',
+          a_string: 'Spiritual by Victoire Oberkampf',
+          rule: {
+            "monday": [ 16, 22, 28, 2 ],
+            "tuesday": [ 15, 21, 27, 2 ],
+            "wednesday": [ 13, 20, 26, 1 ],
+            "thursday": [ 13, 19, 25, 31 ],
+            "saturday": [ 17, 23, 29, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 72,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2253018215/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://blasthrash.bandcamp.com/album/violence-just-for-fun',
+          a_string: 'Violence Just For Fun by Blasthrash',
+          rule: {
+            "monday": [ 17, 23, 29, 4 ],
+            "tuesday": [ 16, 22, 28, 2 ],
+            "wednesday": [ 15, 21, 27, 2 ],
+            "thursday": [ 13, 20, 26, 1 ],
+            "saturday": [ 13, 19, 25, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
