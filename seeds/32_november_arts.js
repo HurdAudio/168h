@@ -2704,6 +2704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 136,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/convergence-i-2001.jpg',
+          title: 'Convergence I',
+          artist: 'Sheila Hicks',
+          year: '2001',
+          rule: {
+            "monday": [ 21, 26, 2, 9 ],
+            "tuesday": [ 27, 2, 8, 13 ],
+            "wednesday": [ 26, 1, 6, 12 ],
+            "thursday": [ 25, 30, 6, 10 ],
+            "friday": [ 24, 29, 5, 10 ],
+            "saturday": [ 23, 27, 4, 9 ],
+            "sunday": [ 22, 27, 3, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 137,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/round-wooden-bar.jpg',
+          title: 'Round Wooden Bar',
+          artist: 'Andre Cadere',
+          year: '?',
+          rule: {
+            "monday": [ 22, 27, 3, 8 ],
+            "tuesday": [ 21, 26, 2, 9 ],
+            "wednesday": [ 27, 2, 8, 13 ],
+            "thursday": [ 26, 1, 6, 12 ],
+            "friday": [ 25, 30, 6, 10 ],
+            "saturday": [ 24, 29, 5, 10 ],
+            "sunday": [ 23, 27, 4, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 138,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/accomplishments-1964.jpg',
+          title: 'Accomplishments',
+          artist: 'James Lee Byars',
+          year: '1964',
+          rule: {
+            "monday": [ 23, 27, 4, 9 ],
+            "tuesday": [ 22, 27, 3, 8 ],
+            "wednesday": [ 21, 26, 2, 9 ],
+            "thursday": [ 27, 2, 8, 13 ],
+            "friday": [ 26, 1, 6, 12 ],
+            "saturday": [ 25, 30, 6, 10 ],
+            "sunday": [ 24, 29, 5, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 139,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/arena-v-1978.jpg',
+          title: 'Arena V',
+          artist: 'Dorothea Rockburne',
+          year: '1978',
+          rule: {
+            "monday": [ 24, 29, 5, 10 ],
+            "tuesday": [ 23, 27, 4, 9 ],
+            "wednesday": [ 22, 27, 3, 8 ],
+            "thursday": [ 21, 26, 2, 9 ],
+            "friday": [ 27, 2, 8, 13 ],
+            "saturday": [ 26, 1, 6, 12 ],
+            "sunday": [ 25, 30, 6, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 140,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/untitled-2010.jpg',
+          title: 'Untitled',
+          artist: 'Robert Morris',
+          year: '2010',
+          rule: {
+            "monday": [ 26, 1, 7, 11 ],
+            "tuesday": [ 25, 30, 6, 11 ],
+            "wednesday": [ 24, 28, 5, 10 ],
+            "thursday": [ 23, 28, 4, 9 ],
+            "friday": [ 22, 27, 3, 10 ],
+            "saturday": [ 28, 3, 9, 14 ],
+            "sunday": [ 27, 2, 7, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
