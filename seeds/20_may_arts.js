@@ -3794,13 +3794,113 @@ exports.seed = function(knex, Promise) {
           artist: 'Sue Coe',
           year: '?',
           rule: {
-            "monday": [25, 5, 14, 24  ],
+            "monday": [ 25, 5, 14, 24 ],
             "tuesday": [ 23, 2, 10, 22 ],
             "wednesday": [ 20, 31, 10, 30 ],
             "thursday": [ 19, 29, 8, 18 ],
             "friday": [ 17, 27, 6, 14 ],
             "saturday": [ 15, 23, 5, 14 ],
             "sunday": [ 27, 6, 16, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 191,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/trouble-war.jpg',
+          title: 'Trouble war',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 28, 7, 17, 25 ],
+            "tuesday": [ 26, 6, 15, 25 ],
+            "wednesday": [ 24, 3, 11, 23 ],
+            "thursday": [ 21, 1, 11, 31 ],
+            "friday": [ 20, 30, 9, 19 ],
+            "saturday": [ 18, 28, 7, 15 ],
+            "sunday": [ 16, 24, 6, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 192,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/gulf-war.jpg',
+          title: 'Gulf war',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 16, 24, 6, 15 ],
+            "tuesday": [ 28, 7, 17, 25 ],
+            "wednesday": [ 26, 6, 15, 25 ],
+            "thursday": [ 24, 3, 11, 23 ],
+            "friday": [ 21, 1, 11, 31 ],
+            "saturday": [ 20, 30, 9, 19 ],
+            "sunday": [ 18, 28, 7, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 193,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/party-animals.jpg',
+          title: 'Party animals',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 18, 28, 7, 15 ],
+            "tuesday": [ 16, 24, 6, 15 ],
+            "wednesday": [ 28, 7, 17, 25 ],
+            "thursday": [ 26, 6, 15, 25 ],
+            "friday": [ 24, 3, 11, 23 ],
+            "saturday": [ 21, 1, 11, 31 ],
+            "sunday": [ 20, 30, 9, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 194,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/wheel.jpg',
+          title: 'Wheel',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 20, 30, 9, 19 ],
+            "tuesday": [ 18, 28, 7, 15 ],
+            "wednesday": [ 16, 24, 6, 15 ],
+            "thursday": [ 28, 7, 17, 25 ],
+            "friday": [ 26, 6, 15, 25 ],
+            "saturday": [ 24, 3, 11, 23 ],
+            "sunday": [ 21, 1, 11, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 195,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/transport.jpg',
+          title: 'Transport',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 21, 1, 11, 31 ],
+            "tuesday": [ 20, 30, 9, 19 ],
+            "wednesday": [ 18, 28, 7, 15 ],
+            "thursday": [ 16, 24, 6, 15 ],
+            "friday": [ 28, 7, 17, 25 ],
+            "saturday": [ 26, 6, 15, 25 ],
+            "sunday": [ 24, 3, 11, 23 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
