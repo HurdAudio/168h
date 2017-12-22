@@ -270,6 +270,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#E0FD9D',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 20,
+          user_id: 1,
+          theme: 'water',
+          type: 'saturday',
+          src_string: '../img/april_tiles/air-bubbles-167821_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '135%',
+          color_dark: '#1C2416',
+          color_medium: '#425343',
+          color_light: '#A5C0C9',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
