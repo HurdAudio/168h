@@ -2604,6 +2604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 131,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/untitled-1972-2.jpg',
+          title: 'Untitled',
+          artist: 'Richard Van Buren',
+          year: '1972',
+          rule: {
+            "monday": [ 22, 26, 3, 8 ],
+            "tuesday": [ 21, 26, 2, 7 ],
+            "wednesday": [ 20, 25, 1, 8 ],
+            "thursday": [ 26, 1, 7, 12 ],
+            "friday": [ 25, 30, 5, 11 ],
+            "saturday": [ 24, 29, 5, 9 ],
+            "sunday": [ 23, 28, 4, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 132,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/shadow-double-shadow-of-a-woman-1997.jpg',
+          title: 'Shadow (Double Shadow of a Woman)',
+          artist: 'Takamatsu Jiro',
+          year: '1979',
+          rule: {
+            "monday": [ 23, 28, 4, 9 ],
+            "tuesday": [ 22, 26, 3, 8 ],
+            "wednesday": [ 21, 26, 2, 7 ],
+            "thursday": [ 20, 25, 1, 8 ],
+            "friday": [ 26, 1, 7, 12 ],
+            "saturday": [ 25, 30, 5, 11 ],
+            "sunday": [ 24, 29, 5, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 133,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/untitled-1966.jpg',
+          title: 'Untitled',
+          artist: 'Eva Hesse',
+          year: '1966',
+          rule: {
+            "monday": [ 25, 30, 6, 10 ],
+            "tuesday": [ 24, 29, 5, 10 ],
+            "wednesday": [ 23, 27, 4, 9 ],
+            "thursday": [ 22, 27, 3, 8 ],
+            "friday": [ 21, 26, 2, 9 ],
+            "saturday": [ 27, 2, 8, 13 ],
+            "sunday": [ 26, 1, 6, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 134,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/japanese-tree-frog-cup-1968.jpg',
+          title: 'Japanese Tree Frog Cup',
+          artist: 'Kenneth Price',
+          year: '1968',
+          rule: {
+            "monday": [ 26, 1, 6, 12 ],
+            "tuesday": [ 25, 30, 6, 10 ],
+            "wednesday": [ 24, 29, 5, 10 ],
+            "thursday": [ 23, 27, 4, 9 ],
+            "friday": [ 22, 27, 3, 8 ],
+            "saturday": [ 21, 26, 2, 9 ],
+            "sunday": [ 27, 2, 8, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 135,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/lost-space-1964.jpg',
+          title: 'Lost space',
+          artist: 'Guy Mees',
+          year: '1964',
+          rule: {
+            "monday": [ 27, 2, 8, 13 ],
+            "tuesday": [ 26, 1, 6, 12 ],
+            "wednesday": [ 25, 30, 6, 10 ],
+            "thursday": [ 24, 29, 5, 10 ],
+            "friday": [ 23, 27, 4, 9 ],
+            "saturday": [ 22, 27, 3, 8 ],
+            "sunday": [ 21, 26, 2, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
