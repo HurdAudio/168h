@@ -4004,6 +4004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 201,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/ALC-Uniform-CWS.png',
+          title: 'Chicago White Sox Uniforms',
+          artist: '?',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 25, 30, 5, 11 ],
+            "tuesday": [ 24, 29, 5, 11 ],
+            "wednesday": [ 23, 28, 4, 10 ],
+            "thursday": [ 28, 4, 9, 16 ],
+            "friday": [ 12, 2, 8, 15 ],
+            "saturday": [ 27, 2, 8, 14 ],
+            "sunday": [ 26, 30, 15, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 202,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/joseAbreu.jpeg',
+          title: 'Jose Abreu',
+          artist: '?',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 26, 30, 15, 13 ],
+            "tuesday": [ 25, 30, 5, 11 ],
+            "wednesday": [ 24, 29, 5, 11 ],
+            "thursday": [ 23, 28, 4, 10 ],
+            "friday": [ 28, 4, 9, 16 ],
+            "saturday": [ 12, 2, 8, 15 ],
+            "sunday": [ 27, 2, 8, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 203,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/rangers-white-sox-baseball.jpg',
+          title: 'Former Negro Leaguer and White Sox player Minnie Minoso stands during the national anthem',
+          artist: '?',
+          year: '2013',
+          rule: {
+            "monday": [ 28, 3, 9, 15 ],
+            "tuesday": [ 27, 1, 16, 14 ],
+            "wednesday": [ 26, 1, 6, 12 ],
+            "thursday": [ 25, 30, 6, 12 ],
+            "friday": [ 24, 29, 5, 11 ],
+            "saturday": [ 29, 5, 10, 17 ],
+            "sunday": [ 13, 3, 9, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 204,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/26-Y-RIGHTS-master768.jpg',
+          title: 'Guaranteed Rate Field',
+          artist: '?',
+          year: '2016',
+          rule: {
+            "monday": [ 13, 3, 9, 16 ],
+            "tuesday": [ 28, 3, 9, 15 ],
+            "wednesday": [ 27, 1, 16, 14 ],
+            "thursday": [ 26, 1, 6, 12 ],
+            "friday": [ 25, 30, 6, 12 ],
+            "saturday": [ 24, 29, 5, 11 ],
+            "sunday": [ 29, 5, 10, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 205,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/chicago-white-sox-ball.jpg',
+          title: 'Chicago White Sox Ball',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 29, 5, 10, 17 ],
+            "tuesday": [ 13, 3, 9, 16 ],
+            "wednesday": [ 28, 3, 9, 15 ],
+            "thursday": [ 27, 1, 16, 14 ],
+            "friday": [ 26, 1, 6, 12 ],
+            "saturday": [ 25, 30, 6, 12 ],
+            "sunday": [ 24, 29, 5, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
