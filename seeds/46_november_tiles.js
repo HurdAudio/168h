@@ -186,6 +186,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#C1C0BE',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 14,
+          user_id: 1,
+          theme: 'monochromatic',
+          type: 'friday',
+          src_string: '../img/november_tiles/Gurkanwar-Singh-Bedi.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '155%',
+          color_dark: '#292929',
+          color_medium: '#474747',
+          color_light: '#E4E4E4',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {

@@ -172,6 +172,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#DDDDDD',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 13,
+          user_id: 1,
+          theme: 'snow',
+          type: 'week',
+          src_string: '../img/december_tiles/trail-586804_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '150%',
+          color_dark: '#012862',
+          color_medium: '#556888',
+          color_light: '#DCE5E8',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
