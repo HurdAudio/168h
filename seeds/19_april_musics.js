@@ -2110,6 +2110,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 118,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3498965030/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://intlanthem.bandcamp.com/album/bottle-tree',
+          a_string: 'Bottle Tree by Bottle Tree',
+          rule: {
+            "monday": [ 16, 24, 6, 11 ],
+            "tuesday": [ 20, 28, 10, 15 ],
+            "wednesday": [ 19, 27, 9, 14 ],
+            "thursday": [ 18, 26, 8, 13 ],
+            "saturday": [ 17, 25, 7, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 119,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=388286133/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://intlanthem.bandcamp.com/album/international-anthem-flips',
+          a_string: 'International Anthem Flips by krushLove',
+          rule: {
+            "monday": [ 18, 26, 8, 13 ],
+            "tuesday": [ 17, 25, 7, 12 ],
+            "wednesday": [ 21, 29, 11, 16 ],
+            "thursday": [ 20, 28, 10, 15 ],
+            "saturday": [ 19, 27, 9, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 120,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4151798314/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://intlanthem.bandcamp.com/album/solo-contra',
+          a_string: 'Solo Contra by John McCowen',
+          rule: {
+            "monday": [ 19, 27, 9, 14 ],
+            "tuesday": [ 18, 26, 8, 13 ],
+            "wednesday": [ 17, 25, 7, 12 ],
+            "thursday": [ 21, 29, 11, 16 ],
+            "saturday": [ 20, 28, 10, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
