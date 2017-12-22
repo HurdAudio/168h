@@ -2804,6 +2804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 141,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_Le_007.jpg',
+          title: 'Antanta. Under the mask of piece.',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 25, 5, 16, 20 ],
+            "tuesday": [ 24, 4, 15, 19 ],
+            "wednesday": [ 23, 3, 14, 18 ],
+            "thursday": [ 22, 2, 13, 17 ],
+            "friday": [ 21, 1, 2, 16 ],
+            "saturday": [ 30, 31, 11, 15 ],
+            "sunday": [ 26, 6, 17, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 142,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_Le_004.jpg',
+          title: 'The Spider and the Flies.',
+          artist: 'Viktor Deni',
+          year: '1919',
+          rule: {
+            "monday": [ 26, 6, 17, 21 ],
+            "tuesday": [ 25, 5, 16, 20 ],
+            "wednesday": [ 24, 4, 15, 19 ],
+            "thursday": [ 23, 3, 14, 18 ],
+            "friday": [ 22, 2, 13, 17 ],
+            "saturday": [ 21, 1, 2, 16 ],
+            "sunday": [ 30, 31, 11, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 143,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_Le_002.jpg',
+          title: 'Death to capital(ism), or death under the heel of Capital(ism)!',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 30, 31, 11, 15 ],
+            "tuesday": [ 26, 6, 17, 21 ],
+            "wednesday": [ 25, 5, 16, 20 ],
+            "thursday": [ 24, 4, 15, 19 ],
+            "friday": [ 23, 3, 14, 18 ],
+            "saturday": [ 22, 2, 13, 17 ],
+            "sunday": [ 21, 1, 2, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 144,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_Br_011.jpg',
+          title: 'Peace to Nations!',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 21, 1, 2, 16 ],
+            "tuesday": [ 30, 31, 11, 15 ],
+            "wednesday": [ 26, 6, 17, 21 ],
+            "thursday": [ 25, 5, 16, 20 ],
+            "friday": [ 24, 4, 15, 19 ],
+            "saturday": [ 23, 3, 14, 18 ],
+            "sunday": [ 22, 2, 13, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 145,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_breadsovpost_00010.jpg',
+          title: 'Women of collective farms- is a big power',
+          artist: '?',
+          year: '1933',
+          rule: {
+            "monday": [ 22, 2, 13, 17 ],
+            "tuesday": [ 21, 1, 2, 16 ],
+            "wednesday": [ 30, 31, 11, 15 ],
+            "thursday": [ 26, 6, 17, 21 ],
+            "friday": [ 25, 5, 16, 20 ],
+            "saturday": [ 24, 4, 15, 19 ],
+            "sunday": [ 23, 3, 14, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
