@@ -236,7 +236,7 @@ exports.seed = function(knex, Promise) {
           type: 'holiday',
           src_string: '../img/april_tiles/duck-2396740_1920.jpg',
           repeat_value: 'no-repeat',
-          size_value: '150%',
+          size_value: '155%',
           color_dark: '#2D3D50',
           color_medium: '#9EA4A0',
           color_light: '#CDD2D2',
@@ -282,6 +282,20 @@ exports.seed = function(knex, Promise) {
           color_dark: '#1C2416',
           color_medium: '#425343',
           color_light: '#A5C0C9',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 21,
+          user_id: 1,
+          theme: 'water',
+          type: 'sunday',
+          src_string: '../img/april_tiles/waters-616023_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '135%',
+          color_dark: '#202520',
+          color_medium: '#77B98B',
+          color_light: '#E6FDE9',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
