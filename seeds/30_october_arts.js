@@ -2904,6 +2904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 146,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_breadsovpost_00004.jpg',
+          title: 'Will complete fully and on time the schedule of the grain reserves',
+          artist: 'A.Lobanov',
+          year: '1930',
+          rule: {
+            "monday": [ 23, 3, 14, 18 ],
+            "tuesday": [ 22, 2, 13, 17 ],
+            "wednesday": [ 21, 1, 2, 16 ],
+            "thursday": [ 30, 31, 11, 15 ],
+            "friday": [ 26, 6, 17, 21 ],
+            "saturday": [ 25, 5, 16, 20 ],
+            "sunday": [ 24, 4, 15, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 147,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_breadsovpost_00003.jpg',
+          title: 'Watchfully protect socialist harvest',
+          artist: 'V. Govorkov',
+          year: '1936',
+          rule: {
+            "monday": [ 25, 5, 16, 20 ],
+            "tuesday": [ 24, 4, 15, 19 ],
+            "wednesday": [ 23, 3, 14, 18 ],
+            "thursday": [ 22, 2, 3, 17 ],
+            "friday": [ 31, 1, 12, 16 ],
+            "saturday": [ 27, 7, 18, 22 ],
+            "sunday": [ 26, 6, 17, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 148,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_breadsovpost_00008.jpg',
+          title: 'Women in collective farms',
+          artist: 'V. Svarog',
+          year: '1935',
+          rule: {
+            "monday": [ 26, 6, 17, 21 ],
+            "tuesday": [ 25, 5, 16, 20 ],
+            "wednesday": [ 24, 4, 15, 19 ],
+            "thursday": [ 23, 3, 14, 18 ],
+            "friday": [ 22, 2, 3, 17 ],
+            "saturday": [ 31, 1, 12, 16 ],
+            "sunday": [ 27, 7, 18, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 149,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_breadsovpost_00007.jpg',
+          title: 'Komsomol...',
+          artist: '?',
+          year: '1931',
+          rule: {
+            "monday": [ 27, 7, 18, 22 ],
+            "tuesday": [ 26, 6, 17, 21 ],
+            "wednesday": [ 25, 5, 16, 20 ],
+            "thursday": [ 24, 4, 15, 19 ],
+            "friday": [ 23, 3, 14, 18 ],
+            "saturday": [ 22, 2, 3, 17 ],
+            "sunday": [ 31, 1, 12, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 150,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_breadsovpost_00006.jpg',
+          title: 'Collective farmers and individual farmers',
+          artist: 'V.Govorkov',
+          year: '1933',
+          rule: {
+            "monday": [ 31, 1, 12, 16 ],
+            "tuesday": [ 27, 7, 18, 22 ],
+            "wednesday": [ 26, 6, 17, 21 ],
+            "thursday": [ 25, 5, 16, 20 ],
+            "friday": [ 24, 4, 15, 19 ],
+            "saturday": [ 23, 3, 14, 18 ],
+            "sunday": [ 22, 2, 3, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
