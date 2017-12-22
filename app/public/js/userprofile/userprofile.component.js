@@ -178,6 +178,29 @@
       vm.editArtCurrate = editArtCurrate;
       vm.userArtCurratorEditorDone = userArtCurratorEditorDone;
       vm.deleteObservance = deleteObservance;
+      vm.editObservance = editObservance;
+      vm.addNewGoal = addNewGoal;
+
+      function addNewGoal() {
+
+        $http.get(`/blocktypesbyuser/${currentUserId}`)
+        .then(blocksData=>{
+          let blocks = blocksData.data;
+
+          let subObj = {
+            user_id: currentUserId,
+            block_type: blocks[0].id,
+            weekly_goal: 0.0
+          };
+
+          $http.post('/goals', subObj)
+          .then(goalData=>{
+            let goal = goalData.data[0];
+            editGoal(goal.id);
+          });
+        });
+
+      }
 
       function deleteObservance(observanceId) {
         let observancesManagementDiv = document.getElementById('observancesManagementDiv');
@@ -4488,6 +4511,27 @@
         tasksManagerDone.setAttribute("style", "visibility: visible;");
       }
 
+      function deleteThisGoal(goalId) {
+        $http.delete(`/goals/${goalId}`)
+        .then(()=>{
+          goalManager();
+        });
+      }
+
+      function pruneEmptyGoals() {
+        $http.get(`/goalsbyuser/${currentUserId}`)
+        .then(goalsData=>{
+          let goals = goalsData.data;
+          if (goals.length > 0) {
+            for (let i = 0; i < goals.length; i++) {
+              if (goals[i].weekly_goal < 0.5) {
+                deleteThisGoal(goals[i].id);
+              }
+            }
+          }
+        });
+      }
+
       function userGoalsEditorDone() {
         let userGoalsEditingDiv = document.getElementById('userGoalsEditingDiv');
         let goalsManagerDone = document.getElementById('goalsManagerDone');
@@ -4495,6 +4539,7 @@
 
         userGoalsEditingDiv.setAttribute("style", "display: none;");
         goalsManagerDone.setAttribute("style", "visibility: visible;");
+        pruneEmptyGoals();
         goalManager();
       }
 
