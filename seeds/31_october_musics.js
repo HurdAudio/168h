@@ -1516,6 +1516,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 85,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2730560919/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://thrillingliving.bandcamp.com/album/is-toxic-to-pigs-ep',
+          a_string: '&quot;...Is Toxic to Pigs??&quot; EP by Xylitol',
+          rule: {
+            "monday": [ 18, 28, 7, 10 ],
+            "tuesday": [ 17, 27, 6, 9 ],
+            "wednesday": [ 16, 26, 6, 8 ],
+            "thursday": [ 20, 30, 9, 12 ],
+            "saturday": [ 19, 29, 8, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 86,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3145862487/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://haramharam.bandcamp.com/album/what-do-you-see',
+          a_string: 'شو بتشوف؟ &quot;What Do You See?&quot; by HARAM',
+          rule: {
+            "monday": [ 19, 29, 8, 11 ],
+            "tuesday": [ 18, 28, 7, 10 ],
+            "wednesday": [ 17, 27, 6, 9 ],
+            "thursday": [ 16, 26, 6, 8 ],
+            "saturday": [ 20, 30, 9, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 87,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1082864402/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://rankxerox.bandcamp.com/album/m-y-t-h-ep',
+          a_string: 'M.Y.T.H. EP by Rank/Xerox',
+          rule: {
+            "monday": [ 20, 30, 9, 12 ],
+            "tuesday": [ 19, 29, 8, 11 ],
+            "wednesday": [ 18, 28, 7, 10 ],
+            "thursday": [ 17, 27, 6, 9 ],
+            "saturday": [ 16, 26, 6, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
