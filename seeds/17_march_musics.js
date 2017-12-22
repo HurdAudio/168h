@@ -2218,6 +2218,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 124,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3542745491/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://amydenio.bandcamp.com/album/the-big-embrace-2',
+          a_string: 'The Big Embrace by Amy Denio / Spoot Music',
+          rule: {
+            "monday": [ 19, 25, 31, 8 ],
+            "tuesday": [ 18, 24, 30, 7 ],
+            "wednesday": [ 22, 28, 3, 11 ],
+            "thursday": [ 21, 27, 2, 10 ],
+            "saturday": [ 20, 26, 1, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 125,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2027131940/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://amydenio.bandcamp.com/album/tone-dogs-live-in-haarlem-nl-1988',
+          a_string: 'Tone Dogs live in Haarlem, NL 1988 by Tone Dogs',
+          rule: {
+            "monday": [ 20, 26, 1, 10 ],
+            "tuesday": [ 19, 25, 31, 8 ],
+            "wednesday": [ 18, 24, 30, 7 ],
+            "thursday": [ 22, 28, 3, 11 ],
+            "saturday": [ 21, 27, 2, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 126,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2939560090/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://lakuta.bandcamp.com/album/brothers-sisters',
+          a_string: 'Brothers &amp; Sisters by Lakuta',
+          rule: {
+            "monday": [ 22, 28, 3, 11 ],
+            "tuesday": [ 21, 27, 2, 11 ],
+            "wednesday": [ 19, 26, 1, 9 ],
+            "thursday": [ 19, 25, 31, 8 ],
+            "saturday": [ 23, 29, 4, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
