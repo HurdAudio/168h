@@ -1300,6 +1300,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 73,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1381661475/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://pakapirecords.bandcamp.com/album/la-psicotropia',
+          a_string: 'La Psicotropia by Various Artists',
+          rule: {
+            "monday": [ 13, 19, 25, 31 ],
+            "tuesday": [ 17, 23, 29, 4 ],
+            "wednesday": [ 16, 22, 28, 2 ],
+            "thursday": [ 15, 21, 27, 2 ],
+            "saturday": [ 13, 20, 26, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 74,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2208855485/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://pakapirecords.bandcamp.com/album/german-army-bloque-del-sur',
+          a_string: 'German Army &amp; Bloque del Sur by Pakapi Records',
+          rule: {
+            "monday": [ 13, 20, 26, 1 ],
+            "tuesday": [ 13, 19, 25, 31 ],
+            "wednesday": [ 17, 23, 29, 4 ],
+            "thursday": [ 16, 22, 28, 2 ],
+            "saturday": [ 15, 21, 27, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 75,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2153211590/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://pakapirecords.bandcamp.com/album/popolus-ajeno-yn-gmc',
+          a_string: 'Popolus Ajeno (Ø+yn &amp; GMC) by Ø+yn &amp; GMC',
+          rule: {
+            "monday": [ 15, 21, 27, 2 ],
+            "tuesday": [ 13, 20, 26, 1 ],
+            "wednesday": [ 13, 19, 25, 31 ],
+            "thursday": [ 17, 23, 29, 4 ],
+            "saturday": [ 16, 22, 28, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
