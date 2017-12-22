@@ -312,6 +312,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#EEF7FF',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 23,
+          user_id: 1,
+          theme: 'ice',
+          type: 'week',
+          src_string: '../img/january_tiles/white_marble_texture_01_by_goodtextures.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '155%',
+          color_dark: '#9CA0AE',
+          color_medium: '#DCDFE7',
+          color_light: '#DEE0EC',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
