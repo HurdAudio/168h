@@ -3004,6 +3004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 151,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/chi-chi-meets-the-death-of-painting-1985.jpg',
+          title: 'Chi-Chi Meets the Death of Painting',
+          artist: 'Philip Taaffe',
+          year: '1985',
+          rule: {
+            "monday": [ 19, 25, 13, 21 ],
+            "tuesday": [ 18, 24, 12, 19 ],
+            "wednesday": [ 24, 30, 18, 26 ],
+            "thursday": [ 23, 29, 17, 25 ],
+            "friday": [ 22, 28, 16, 24 ],
+            "saturday": [ 21, 27, 15, 23 ],
+            "sunday": [ 20, 26, 14, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 152,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/stardust-1993.jpg',
+          title: 'Stardust',
+          artist: 'Peter Alexander',
+          year: '1993',
+          rule: {
+            "monday": [ 20, 26, 14, 22 ],
+            "tuesday": [ 19, 25, 13, 21 ],
+            "wednesday": [ 18, 24, 12, 19 ],
+            "thursday": [ 24, 30, 18, 26 ],
+            "friday": [ 23, 29, 17, 25 ],
+            "saturday": [ 22, 28, 16, 24 ],
+            "sunday": [ 21, 27, 15, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 153,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/square-motif-blue-and-gold-the-eclipse-1950.jpg',
+          title: 'Square Motif, Blue and Gold: The Eclipse',
+          artist: 'Victor Pasmore',
+          year: '1950',
+          rule: {
+            "monday": [ 21, 27, 15, 23 ],
+            "tuesday": [ 20, 26, 14, 22 ],
+            "wednesday": [ 19, 25, 13, 21 ],
+            "thursday": [ 18, 24, 12, 19 ],
+            "friday": [ 24, 30, 18, 26 ],
+            "saturday": [ 23, 29, 17, 25 ],
+            "sunday": [ 22, 28, 16, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 154,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/over-and-above-13-1964.jpg',
+          title: 'Over and Above #13',
+          artist: 'Clarence Holbrook Carter',
+          year: '1964',
+          rule: {
+            "monday": [ 23, 29, 17, 25 ],
+            "tuesday": [ 22, 28, 16, 24 ],
+            "wednesday": [ 21, 27, 15, 23 ],
+            "thursday": [ 20, 26, 14, 22 ],
+            "friday": [ 19, 25, 13, 20 ],
+            "saturday": [ 25, 1, 19, 27 ],
+            "sunday": [ 24, 30, 18, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 155,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/happy-family-1982.jpg',
+          title: 'Happy family',
+          artist: 'Roger Raveel',
+          year: '1982',
+          rule: {
+            "monday": [ 24, 30, 18, 26 ],
+            "tuesday": [ 23, 29, 17, 25 ],
+            "wednesday": [ 22, 28, 16, 24 ],
+            "thursday": [ 21, 27, 15, 23 ],
+            "friday": [ 20, 26, 14, 22 ],
+            "saturday": [ 19, 25, 13, 20 ],
+            "sunday": [ 25, 1, 19, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
