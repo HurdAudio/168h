@@ -3204,6 +3204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 161,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/ahinora-1925.jpg',
+          title: 'Ahinora',
+          artist: 'Ivan Milev',
+          year: '1925',
+          rule: {
+            "monday": [ 25, 29, 6, 22 ],
+            "tuesday": [ 24, 28, 5, 21 ],
+            "wednesday": [ 23, 25, 4, 20 ],
+            "thursday": [ 22, 25, 3, 19 ],
+            "friday": [ 21, 24, 2, 18 ],
+            "saturday": [ 27, 31, 8, 24 ],
+            "sunday": [ 26, 29, 7, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 162,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/still-life-with-lobster-and-radishes-1938.jpg',
+          title: 'Still-life with Lobster and Radishes',
+          artist: 'Cagnaccio di San Pietro',
+          year: '1938',
+          rule: {
+            "monday": [ 26, 29, 7, 23 ],
+            "tuesday": [ 25, 29, 6, 22 ],
+            "wednesday": [ 24, 28, 5, 21 ],
+            "thursday": [ 23, 25, 4, 20 ],
+            "friday": [ 22, 25, 3, 19 ],
+            "saturday": [ 21, 24, 2, 18 ],
+            "sunday": [ 27, 31, 8, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 163,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/berlin-street-scene-1914.jpg',
+          title: 'Berlin Street Scene',
+          artist: 'Ernst Ludwig Kirchner',
+          year: '1913 - 1914',
+          rule: {
+            "monday": [ 27, 31, 8, 24 ],
+            "tuesday": [ 26, 29, 7, 23 ],
+            "wednesday": [ 25, 29, 6, 22 ],
+            "thursday": [ 24, 28, 5, 21 ],
+            "friday": [ 23, 25, 4, 20 ],
+            "saturday": [ 22, 25, 3, 19 ],
+            "sunday": [ 21, 24, 2, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 164,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/dream-1922.jpg',
+          title: 'Dream',
+          artist: 'Yasuo Kuniyoshi',
+          year: '1922',
+          rule: {
+            "monday": [ 21, 24, 2, 18 ],
+            "tuesday": [ 27, 31, 8, 24 ],
+            "wednesday": [ 26, 29, 7, 23 ],
+            "thursday": [ 25, 29, 6, 22 ],
+            "friday": [ 24, 28, 5, 21 ],
+            "saturday": [ 23, 25, 4, 20 ],
+            "sunday": [ 22, 25, 3, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 165,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/blue-rider-1903.jpg',
+          title: 'Blue rider',
+          artist: 'Wassily Kandinsky',
+          year: '1903',
+          rule: {
+            "monday": [ 22, 25, 3, 19 ],
+            "tuesday": [ 21, 24, 2, 18 ],
+            "wednesday": [ 27, 31, 8, 24 ],
+            "thursday": [ 26, 29, 7, 23 ],
+            "friday": [ 25, 29, 6, 22 ],
+            "saturday": [ 24, 28, 5, 21 ],
+            "sunday": [ 23, 25, 4, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
