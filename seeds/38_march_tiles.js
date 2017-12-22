@@ -284,6 +284,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#E1EFE2',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 21,
+          user_id: 1,
+          theme: 'glass',
+          type: 'sunday',
+          src_string: '../img/march_tiles/stained-glass-1181864_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '155%',
+          color_dark: '#150B0A',
+          color_medium: '#0C3982',
+          color_light: '#E7F1E8',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
