@@ -4604,6 +4604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 231,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/battal-ebru-1.jpg',
+          title: 'Battal Ebru',
+          artist: 'Mustafa Duzgunman',
+          year: 'xx cent.',
+          rule: {
+            "monday": [ 10, 11, 2, 6 ],
+            "tuesday": [ 13, 15, 16, 18 ],
+            "wednesday": [ 15, 17, 21, 24 ],
+            "thursday": [ 17, 19, 20, 23 ],
+            "friday": [ 2, 3, 14, 6 ],
+            "saturday": [ 5, 7, 30, 19 ],
+            "sunday": [ 7, 8, 31, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 232,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/untitled-1975 (1).jpg',
+          title: 'Untitled',
+          artist: 'Terry Frost',
+          year: '1975',
+          rule: {
+            "monday": [ 7, 8, 31, 3 ],
+            "tuesday": [ 10, 11, 2, 6 ],
+            "wednesday": [ 13, 15, 16, 18 ],
+            "thursday": [ 15, 17, 21, 24 ],
+            "friday": [ 17, 19, 20, 23 ],
+            "saturday": [ 2, 3, 14, 6 ],
+            "sunday": [ 5, 7, 30, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 233,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/colonial-cubism-1954.jpg',
+          title: 'Colonial Cubism',
+          artist: 'Stuart Davis',
+          year: '1954',
+          rule: {
+            "monday": [ 5, 7, 30, 19 ],
+            "tuesday": [ 7, 8, 31, 3 ],
+            "wednesday": [ 10, 11, 2, 6 ],
+            "thursday": [ 13, 15, 16, 18 ],
+            "friday": [ 15, 17, 21, 24 ],
+            "saturday": [ 17, 19, 20, 23 ],
+            "sunday": [ 2, 3, 14, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 234,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/wings-1.jpg',
+          title: 'Wings',
+          artist: 'Constantin Blendea',
+          year: 'xx - xxi cent.',
+          rule: {
+            "monday": [ 2, 3, 14, 6 ],
+            "tuesday": [ 5, 7, 30, 19 ],
+            "wednesday": [ 7, 8, 31, 3 ],
+            "thursday": [ 10, 11, 2, 6 ],
+            "friday": [ 13, 15, 16, 18 ],
+            "saturday": [ 15, 17, 21, 24 ],
+            "sunday": [ 17, 19, 20, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 235,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/untitled-pattern.jpg',
+          title: 'Untitled Pattern',
+          artist: 'Peter Busa',
+          year: '?',
+          rule: {
+            "monday": [ 17, 19, 20, 23 ],
+            "tuesday": [ 2, 3, 14, 6 ],
+            "wednesday": [ 5, 7, 30, 19 ],
+            "thursday": [ 7, 8, 31, 3 ],
+            "friday": [ 10, 11, 2, 6 ],
+            "saturday": [ 13, 15, 16, 18 ],
+            "sunday": [ 15, 17, 21, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
