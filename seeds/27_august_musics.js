@@ -1678,6 +1678,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 94,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1121842553/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://von-neumann.bandcamp.com/album/norn',
+          a_string: 'NorN by vonneumann',
+          rule: {
+            "monday": [ 23, 31, 13, 12 ],
+            "tuesday": [ 22, 30, 12, 11 ],
+            "wednesday": [ 26, 3, 16, 15 ],
+            "thursday": [ 25, 2, 15, 14 ],
+            "saturday": [ 24, 1, 14, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 95,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=287029275/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://dathon.bandcamp.com/album/vacua',
+          a_string: 'Vacua by Dathon',
+          rule: {
+            "monday": [ 24, 1, 14, 13 ],
+            "tuesday": [ 23, 31, 13, 12 ],
+            "wednesday": [ 22, 30, 12, 11 ],
+            "thursday": [ 26, 3, 16, 15 ],
+            "saturday": [ 25, 2, 15, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 96,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3156874954/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cuneiformrecords.bandcamp.com/album/a-night-walking-through-mirrors',
+          a_string: 'A Night Walking Through Mirrors by Chicago / London Underground',
+          rule: {
+            "monday": [ 25, 2, 15, 14 ],
+            "tuesday": [ 24, 1, 14, 13 ],
+            "wednesday": [23, 31, 13, 12  ],
+            "thursday": [ 22, 30, 12, 11 ],
+            "saturday": [ 26, 3, 16, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
