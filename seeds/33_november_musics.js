@@ -1408,6 +1408,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 79,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2495786626/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jonovancooper.bandcamp.com/album/suite-abyssinia',
+          a_string: 'Suite Abyssinia by Jonovan Cooper',
+          rule: {
+            "monday": [ 9, 20, 1, 3 ],
+            "tuesday": [ 13, 24, 5, 9 ],
+            "wednesday": [ 12, 23, 4, 8 ],
+            "thursday": [ 11, 22, 3, 7 ],
+            "saturday": [ 10, 21, 2, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 80,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=207919215/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://hailumergia.bandcamp.com/album/lala-belu',
+          a_string: 'Lala Belu by Hailu Mergia',
+          rule: {
+            "monday": [ 10, 21, 2, 4 ],
+            "tuesday": [ 9, 20, 1, 3 ],
+            "wednesday": [ 13, 24, 5, 9 ],
+            "thursday": [ 12, 23, 4, 8 ],
+            "saturday": [ 11, 22, 3, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 81,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=492184070/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ethiocali.bandcamp.com/album/ethio-cali-live-at-the-blue-whale',
+          a_string: 'ETHIO CALI - LIVE AT THE BLUE WHALE by ETHIO CALI',
+          rule: {
+            "monday": [ 11, 22, 3, 7 ],
+            "tuesday": [ 10, 21, 2, 4 ],
+            "wednesday": [ 9, 20, 1, 3 ],
+            "thursday": [ 13, 24, 5, 9 ],
+            "saturday": [ 12, 23, 4, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
