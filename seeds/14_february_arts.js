@@ -4404,6 +4404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 221,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/Simpson_necklines.jpg',
+          title: 'Untitled (2 Necklines)',
+          artist: 'Lorna Simpson',
+          year: '1989',
+          rule: {
+            "monday": [ 12, 20, 28, 9 ],
+            "tuesday": [ 14, 22, 18, 8 ],
+            "wednesday": [ 2, 10, 18, 26 ],
+            "thursday": [ 4, 12, 20, 28 ],
+            "friday": [ 9, 14, 20, 1 ],
+            "saturday": [ 8, 16, 24, 3 ],
+            "sunday": [ 10, 20, 26, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 222,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/Merton_Simpson_Orangeburg_Massacre_c_1968.jpg',
+          title: 'Orangeburg Massacre',
+          artist: 'Merton Simpson',
+          year: 'c.1968',
+          rule: {
+            "monday": [ 10, 20, 26, 3 ],
+            "tuesday": [ 12, 20, 28, 9 ],
+            "wednesday": [ 14, 22, 18, 8 ],
+            "thursday": [ 2, 10, 18, 26 ],
+            "friday": [ 4, 12, 20, 28 ],
+            "saturday": [ 9, 14, 20, 1 ],
+            "sunday": [ 8, 16, 24, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 223,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/smith-11.jpg',
+          title: 'Drawing',
+          artist: 'Cauleen Smith',
+          year: '?',
+          rule: {
+            "monday": [ 8, 16, 24, 3 ],
+            "tuesday": [ 10, 20, 26, 3 ],
+            "wednesday": [ 12, 20, 28, 9 ],
+            "thursday": [ 14, 22, 18, 8 ],
+            "friday": [ 2, 10, 18, 26 ],
+            "saturday": [ 4, 12, 20, 28 ],
+            "sunday": [ 9, 14, 20, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 224,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/Smith-You_First_LR.jpg',
+          title: 'You First',
+          artist: 'Leslie Smith III',
+          year: '2012',
+          rule: {
+            "monday": [ 10, 15, 21, 2 ],
+            "tuesday": [ 9, 17, 25, 4 ],
+            "wednesday": [ 11, 21, 27, 4 ],
+            "thursday": [ 13, 21, 29, 10 ],
+            "friday": [ 15, 23, 19, 9 ],
+            "saturday": [ 3, 11, 19, 27 ],
+            "sunday": [ 5, 13, 21, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 225,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/VS16_TheSoulBrothers_medium.jpg',
+          title: 'The Soul Brothers',
+          artist: 'Vincent Smith',
+          year: 'c.1969',
+          rule: {
+            "monday": [ 5, 13, 21, 29 ],
+            "tuesday": [ 10, 15, 21, 2 ],
+            "wednesday": [ 9, 17, 25, 4 ],
+            "thursday": [ 11, 21, 27, 4 ],
+            "friday": [ 13, 21, 29, 10 ],
+            "saturday": [ 15, 23, 19, 9 ],
+            "sunday": [ 3, 11, 19, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
