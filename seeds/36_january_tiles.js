@@ -326,6 +326,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#DEE0EC',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 24,
+          user_id: 1,
+          theme: 'ice',
+          type: 'friday',
+          src_string: '../img/january_tiles/Ice-cube-dreamstime_xxl_3038365.png',
+          repeat_value: 'no-repeat',
+          size_value: '120%',
+          color_dark: '#061F3B',
+          color_medium: '#42BBF0',
+          color_light: '#F2EBEC',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
