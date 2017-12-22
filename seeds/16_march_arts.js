@@ -4204,6 +4204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 211,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/born-2002.jpg',
+          title: 'Born',
+          artist: 'Kiki Smith',
+          year: '2002',
+          rule: {
+            "monday": [ 29, 8, 18, 26 ],
+            "tuesday": [ 29, 7, 15, 25 ],
+            "wednesday": [ 27, 6, 14, 24 ],
+            "thursday": [ 26, 5, 13, 23 ],
+            "friday": [ 25, 4, 12, 22 ],
+            "saturday": [ 24, 3, 12, 21 ],
+            "sunday": [ 30, 8, 17, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 212,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/untitled-rockhole-site-of-marrapinti-2006.jpg',
+          title: 'Untitled (Rockhole Site of Marrapinti)',
+          artist: 'Doreen Reid Nakamarra',
+          year: '2005',
+          rule: {
+            "monday": [ 30, 8, 17, 26 ],
+            "tuesday": [ 29, 8, 18, 26 ],
+            "wednesday": [ 29, 7, 15, 25 ],
+            "thursday": [ 27, 6, 14, 24 ],
+            "friday": [ 26, 5, 13, 23 ],
+            "saturday": [ 25, 4, 12, 22 ],
+            "sunday": [ 24, 3, 12, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 213,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/mon-corps.jpg',
+          title: 'Mon corps',
+          artist: 'Miss.Tic',
+          year: '?',
+          rule: {
+            "monday": [ 24, 3, 12, 21 ],
+            "tuesday": [ 30, 8, 17, 26 ],
+            "wednesday": [ 29, 8, 18, 26 ],
+            "thursday": [ 29, 7, 15, 25 ],
+            "friday": [ 27, 6, 14, 24 ],
+            "saturday": [ 26, 5, 13, 23 ],
+            "sunday": [ 25, 4, 12, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 214,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/eye-upon-gate-photocollage-2000.jpg',
+          title: 'Eye upon Gate - photo-collage by graphic artist Hilly van Eerten',
+          artist: 'Hilly van Eerten',
+          year: '2000',
+          rule: {
+            "monday": [ 25, 4, 12, 22 ],
+            "tuesday": [ 24, 3, 12, 21 ],
+            "wednesday": [ 30, 8, 17, 26 ],
+            "thursday": [ 29, 8, 18, 26 ],
+            "friday": [ 29, 7, 15, 25 ],
+            "saturday": [ 27, 6, 14, 24 ],
+            "sunday": [ 26, 5, 13, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 215,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/291-1997.jpg',
+          title: '#291',
+          artist: 'Jessica Stockholder',
+          year: '1997',
+          rule: {
+            "monday": [ 26, 5, 13, 23 ],
+            "tuesday": [ 25, 4, 12, 22 ],
+            "wednesday": [ 24, 3, 12, 21 ],
+            "thursday": [ 30, 8, 17, 26 ],
+            "friday": [ 29, 8, 18, 26 ],
+            "saturday": [ 29, 7, 15, 25 ],
+            "sunday": [ 27, 6, 14, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
