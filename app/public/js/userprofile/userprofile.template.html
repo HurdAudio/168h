@@ -3055,6 +3055,43 @@
       </form>
 
     </div>
+
+    <div id="reportForTasks">
+      <div id="tasksReportBar">
+        <a href="" class="btn" id="tasksReportDone" ng-click="$ctrl.tasksReportDone()">done</a>
+        <h1>Tasks Report</h1>
+      </div>
+      <div id="tasksReportBody">
+        <main ng-repeat="report in $ctrl.taskReporter | orderBy : $ctrl.sortBy">
+          <div class="reporter">
+            <h2>Totals: </h2>
+            <h2>Total Tasks:</h2> <p>{{report.totalTasks}} tasks in database</p>
+            <h2>Total Amount Completed:</h2><p>{{report.totalComplete}}</p>
+            <h2>Total Pending:</h2> <p>{{report.totalPending}}</p>
+            <h2>Overdue Tasks:</h2><p>{{report.overdue}}</p>
+          </div>
+        </main>
+        <h2>Pending Tasks:</h2>
+        <main ng-repeat="pending in $ctrl.pendingTasks | orderBy : $ctr.sortBy">
+          <div class="reporter">
+            <h2>Task:</h2><p>{{pending.name}}</p>
+            <p>{{pending.user_notes}}</p>
+            <h2>Due Date:</h2><p>{{pending.cleanDueDate}}</p>
+          </div>
+        </main>
+        <h2>Completed Tasks:</h2>
+        <main ng-repeat="completed in $ctrl.completedTasks | orderBy : $ctr.sortBy">
+          <div class="reporter">
+            <h2>Task: {{completed.name}}</h2>
+            <p>T{{completed.user_notes}}</p>
+            <p>Completed On: {{completed.cleanCompletedDate}}</p>
+          </div>
+        </main>
+
+
+      </div>
+
+    </div>
     <div id="userTasksEditingDiv">
       <div id="userTasksEditorBar">
         <a href="" class="btn" id="userTasksEditorDoneButton" ng-click="$ctrl.userTasksEditorDone()">done</a>

@@ -180,6 +180,104 @@
       vm.deleteObservance = deleteObservance;
       vm.editObservance = editObservance;
       vm.addNewGoal = addNewGoal;
+      vm.tasksReport = tasksReport;
+      vm.tasksReportDone = tasksReportDone;
+
+      function tasksReportDone() {
+        let reportForTasks = document.getElementById('reportForTasks');
+        let userTasksEditingDiv = document.getElementById('userTasksEditingDiv');
+        let tasksManagerDone = document.getElementById("tasksManagerDone");
+
+        reportForTasks.setAttribute("style", "display: none;");
+        userTasksEditingDiv.setAttribute("style", "display: none;");
+        tasksManagerDone.setAttribute("style", "visibility: visible;");
+      }
+
+      function overdueTaskCheck(task) {
+        let checkDate = new Date();
+        let taskDate = new Date(task.due_date);
+
+        if (checkDate.getFullYear() < taskDate.getFullYear()) {
+          return false;
+        } else if (checkDate.getFullYear() > taskDate.getFullYear()) {
+          return true;
+        } else if (checkDate.getMonth() < taskDate.getMonth()) {
+          return false;
+        } else if (checkDate.getMonth() > taskDate.getMonth()) {
+          return true;
+        } else if (checkDate.getDate() < taskDate.getDate()) {
+          return false;
+        } else if (checkDate.getDate() > taskDate.getDate()) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+
+      function whichDate(d1Date, d2Date) {
+        let d1 = new Date(d1Date);
+        let d2 = new Date(d2Date);
+
+        if (d1.getFullYear() < d2.getFullYear()) {
+          return -1;
+        } else if (d1.getFullYear() > d2.getFullYear()) {
+          return 1;
+        } else if (d1.getMonth() < d2.getMonth()) {
+          return -1;
+        } else if (d1.getMonth() > d2.getMonth()) {
+          return 1;
+        } else if (d1.getDate() < d2.getDate()) {
+          return -1;
+        } else if (d1.getDate() > d2.getDate()) {
+          return 1;
+        } else {
+          return 0;
+        }
+      }
+
+      function tasksReport() {
+        let reportForTasks = document.getElementById('reportForTasks');
+        let userTasksEditingDiv = document.getElementById('userTasksEditingDiv');
+        let tasksManagerDone = document.getElementById("tasksManagerDone");
+
+        $http.get(`/tasksbyuser/${currentUserId}`)
+        .then(tasksListData=>{
+          let tasksList = tasksListData.data;
+          for (let i = 0; i < tasksList.length; i++) {
+            tasksList[i].cleanDueDate = cleanDateHoliday(tasksList[i].due_date);
+            if (tasksList[i].is_completed) {
+              tasksList[i].cleanCompletedDate = cleanDateHoliday(tasksList[i].completed_date);
+            }
+          }
+          let pending = tasksList.filter(task=>{
+            return(!task.is_completed);
+          });
+          pending = pending.sort((a, b)=>{
+            return(whichDate(a.due_date, b.due_date));
+          });
+          let complete = tasksList.filter(task=>{
+            return(task.is_completed);
+          });
+          complete = complete.sort((a, b)=>{
+            return(whichDate(a.completed_date, b.completed_date));
+          });
+          let overdue = pending.filter(task=>{
+            return(overdueTaskCheck(task));
+          });
+          vm.taskReporter = [];
+          vm.taskReporter[0] = {};
+          vm.taskReporter[0].totalTasks = tasksList.length;
+          vm.taskReporter[0].totalComplete = complete.length;
+          vm.taskReporter[0].totalPending = pending.length;
+          vm.taskReporter[0].overdue = overdue.length;
+          vm.pendingTasks = pending;
+          vm.completedTasks = complete;
+        });
+
+        reportForTasks.setAttribute("style", "display: initial;");
+        userTasksEditingDiv.setAttribute("style", "display: none;");
+        tasksManagerDone.setAttribute("style", "visibility: hidden;");
+      }
 
       function addNewGoal() {
 

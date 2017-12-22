@@ -3073,6 +3073,34 @@ footer img {
   margin-top: 0.2em;
 }
 
+#tasksReportBar {
+  font-family: 'Asul', serif;
+  font-size: 18px
+  background: #7A6747;
+  background-color: -webkit-linear-gradient(-135deg, #7A6747, #F3F1F4);
+  background: -o-linear-gradient(-135deg, #7A6747, #F3F1F4);
+  background: -moz-linear-gradient(-135deg, #7A6747, #F3F1F4);
+  background: linear-gradient(-135deg, #7A6747, #F3F1F4);
+  border-radius: 5px;
+  margin: 0;
+  padding:0;
+  height: 3.8em;
+  top: 0%;
+  opacity: 1;
+}
+
+#tasksReportBar h1 {
+  margin-left: 2em;
+  padding-top: 0.4em;
+}
+
+
+#tasksReportBar a {
+  float:right;
+  margin-right: 1.1em;
+  margin-top: 0.2em;
+}
+
 #userHolidayEditorBar {
   font-family: 'Asul', serif;
   font-size: 18px
@@ -3239,6 +3267,13 @@ footer img {
   float:right;
   margin-right: 1.1em;
   margin-top: 0.2em;
+}
+
+#tasksReportBody h2 {
+  font-family: 'Asul', serif;
+  font-size: 18px
+  margin-left: 2vmin;
+  padding-top: 0.4em;
 }
 
 #userGoalsEditorBar {
@@ -4549,6 +4584,10 @@ footer img {
 }
 
 #reportForBills {
+  display: none;
+}
+
+#reportForTasks {
   display: none;
 }
 
