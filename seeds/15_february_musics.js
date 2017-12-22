@@ -2326,6 +2326,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 130,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2008117058/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://donbryant.bandcamp.com/album/dont-give-up-on-love',
+          a_string: 'Don&#39;t Give Up On Love by Don Bryant',
+          rule: {
+            "monday": [ 23, 26, 28, 3 ],
+            "tuesday": [ 24, 28, 1, 3 ],
+            "wednesday": [ 7, 1, 3, 9 ],
+            "thursday": [ 19, 24, 26, 9 ],
+            "saturday": [ 20, 24, 26, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 131,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=317272902/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jackieshane.bandcamp.com/album/jackie-shane-any-other-way',
+          a_string: 'Jackie Shane: Any Other Way by Jackie Shane',
+          rule: {
+            "monday": [ 20, 24, 26, 1 ],
+            "tuesday": [ 23, 26, 28, 3 ],
+            "wednesday": [ 24, 28, 1, 3 ],
+            "thursday": [ 7, 1, 3, 9 ],
+            "saturday": [ 19, 24, 26, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 132,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1804568301/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://daptonerecords.bandcamp.com/album/if-this-world-were-mine',
+          a_string: 'If This World Were Mine... by Daptone Records',
+          rule: {
+            "monday": [ 19, 24, 26, 9 ],
+            "tuesday": [ 20, 24, 26, 1 ],
+            "wednesday": [ 23, 26, 28, 3 ],
+            "thursday": [ 24, 28, 1, 3 ],
+            "saturday": [ 7, 1, 3, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
