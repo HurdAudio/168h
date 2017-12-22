@@ -1462,6 +1462,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 82,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1139063092/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://palbertapalberta.bandcamp.com/album/bye-bye-berta',
+          a_string: 'Bye Bye Berta by Palberta',
+          rule: {
+            "monday": [ 19, 29, 8, 11 ],
+            "tuesday": [ 18, 28, 7, 10 ],
+            "wednesday": [ 17, 27, 6, 9 ],
+            "thursday": [ 16, 26, 5, 8 ],
+            "saturday": [ 15, 25, 5, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 83,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2391212504/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ironlungpv.bandcamp.com/album/bitter-bitter-lp-lungs-093',
+          a_string: 'Bitter Bitter LP (LUNGS-093) by BEHAVIOR',
+          rule: {
+            "monday": [ 15, 25, 5, 7 ],
+            "tuesday": [ 19, 29, 8, 11 ],
+            "wednesday": [ 18, 28, 7, 10 ],
+            "thursday": [ 17, 27, 6, 9 ],
+            "saturday": [ 16, 26, 5, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 84,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2730123572/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://peterperrett.bandcamp.com/album/how-the-west-was-won',
+          a_string: 'How The West Was Won by Peter Perrett',
+          rule: {
+            "monday": [ 17, 27, 6, 9 ],
+            "tuesday": [ 16, 26, 6, 8 ],
+            "wednesday": [ 20, 30, 9, 12 ],
+            "thursday": [ 19, 29, 8, 11 ],
+            "saturday": [ 18, 28, 7, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
