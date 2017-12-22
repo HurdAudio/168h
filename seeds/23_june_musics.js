@@ -1894,6 +1894,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 106,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3335578837/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://chiheihatakeyama.bandcamp.com/album/sora',
+          a_string: 'Sora by Chihei Hatakeyama + Federico Durand',
+          rule: {
+            "monday": [ 15, 18, 25, 5 ],
+            "tuesday": [ 14, 18, 23, 5 ],
+            "wednesday": [ 14, 17, 23, 4 ],
+            "thursday": [ 12, 20, 22, 3 ],
+            "saturday": [ 16, 20, 26, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 107,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2550586637/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://chiheihatakeyama.bandcamp.com/album/heavy-snow',
+          a_string: 'Heavy Snow by Chihei Hatakeyama',
+          rule: {
+            "monday": [ 16, 20, 26, 7 ],
+            "tuesday": [ 15, 18, 25, 5 ],
+            "wednesday": [ 14, 18, 23, 5 ],
+            "thursday": [ 14, 17, 23, 4 ],
+            "saturday": [ 12, 20, 22, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 108,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1537311490/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://chiheihatakeyama.bandcamp.com/album/fluorescent-monochrome',
+          a_string: 'Fluorescent Monochrome by Straytone',
+          rule: {
+            "monday": [ 12, 20, 22, 3 ],
+            "tuesday": [ 16, 20, 26, 7 ],
+            "wednesday": [ 15, 18, 25, 5 ],
+            "thursday": [ 14, 18, 23, 5 ],
+            "saturday": [ 14, 17, 23, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
