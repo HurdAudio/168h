@@ -3404,6 +3404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 171,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/arc-de-triomphe-2.jpg',
+          title: 'Arc de Triomphe',
+          artist: 'Antoine Blanchard',
+          year: '?',
+          rule: {
+            "monday": [ 21, 1, 12, 23 ],
+            "tuesday": [ 27, 7, 18, 28 ],
+            "wednesday": [ 26, 6, 17, 28 ],
+            "thursday": [ 25, 5, 16, 27 ],
+            "friday": [ 24, 4, 15, 26 ],
+            "saturday": [ 23, 3, 13, 15 ],
+            "sunday": [ 22, 2, 13, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 172,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/le-bout-du-champ-1972.jpg',
+          title: 'Le Bout du champ',
+          artist: 'Raoul Ubac',
+          year: '1972',
+          rule: {
+            "monday": [ 22, 2, 13, 14 ],
+            "tuesday": [ 21, 1, 12, 23 ],
+            "wednesday": [ 27, 7, 18, 28 ],
+            "thursday": [ 26, 6, 17, 28 ],
+            "friday": [ 25, 5, 16, 27 ],
+            "saturday": [ 24, 4, 15, 26 ],
+            "sunday": [ 23, 3, 13, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 173,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/bretagne-1956.jpg',
+          title: 'Bretagne',
+          artist: 'Jean Le Moal',
+          year: '1956',
+          rule: {
+            "monday": [ 23, 3, 13, 15 ],
+            "tuesday": [ 22, 2, 13, 14 ],
+            "wednesday": [ 21, 1, 12, 23 ],
+            "thursday": [ 27, 7, 18, 28 ],
+            "friday": [ 26, 6, 17, 28 ],
+            "saturday": [ 25, 5, 16, 27 ],
+            "sunday": [ 24, 4, 15, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 174,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/personnages-cubistes-1950.jpg',
+          title: 'Personnages Cubistes',
+          artist: 'Paul Ackerman',
+          year: '1949 - 1950',
+          rule: {
+            "monday": [ 24, 4, 15, 26 ],
+            "tuesday": [ 23, 3, 13, 15 ],
+            "wednesday": [ 22, 2, 13, 14 ],
+            "thursday": [ 21, 1, 12, 23 ],
+            "friday": [ 27, 7, 18, 28 ],
+            "saturday": [ 26, 6, 17, 28 ],
+            "sunday": [ 25, 5, 16, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 175,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/girl-on-a-bed.jpg',
+          title: 'Girl on a Bed',
+          artist: 'Balthus',
+          year: 'c.1950',
+          rule: {
+            "monday": [ 26, 6, 17, 28 ],
+            "tuesday": [ 25, 5, 16, 17 ],
+            "wednesday": [ 24, 4, 14, 16 ],
+            "thursday": [ 23, 3, 14, 15 ],
+            "friday": [ 22, 2, 13, 24 ],
+            "saturday": [ 28, 8, 19, 29 ],
+            "sunday": [ 27, 7, 18, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
