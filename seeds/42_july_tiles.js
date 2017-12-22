@@ -234,7 +234,7 @@ exports.seed = function(knex, Promise) {
           user_id: 1,
           theme: 'steam',
           type: 'holiday',
-          src_string: '../img/july_tiles/rainbow_cloud_texture_by_kmiloneko.jpg',
+          src_string: '../img/july_tiles/rainbow_cloud_texture_by_kmiloneko.png',
           repeat_value: 'no-repeat',
           size_value: '135%',
           color_dark: '#8759FC',
