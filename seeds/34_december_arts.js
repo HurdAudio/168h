@@ -2504,6 +2504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 126,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/17-07,Portrait.jpg',
+          title: 'Oil Portrait',
+          artist: 'Eugene M. Frandzen',
+          year: '1917',
+          rule: {
+            "monday": [ 20, 2, 10, 16 ],
+            "tuesday": [ 19, 1, 9, 15 ],
+            "wednesday": [ 18, 31, 8, 14 ],
+            "thursday": [ 17, 30, 7, 13 ],
+            "friday": [ 16, 29, 17, 12 ],
+            "saturday": [ 22, 4, 12, 18 ],
+            "sunday": [ 21, 3, 11, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 127,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/20-00,LOncleSam2.jpg',
+          title: 'L\'Oncle Sam en France',
+          artist: 'Joseph Franke',
+          year: '1920',
+          rule: {
+            "monday": [ 21, 3, 11, 17 ],
+            "tuesday": [ 20, 2, 10, 16 ],
+            "wednesday": [ 19, 1, 9, 15 ],
+            "thursday": [ 18, 31, 8, 14 ],
+            "friday": [ 17, 30, 7, 13 ],
+            "saturday": [ 16, 29, 17, 12 ],
+            "sunday": [ 22, 4, 12, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 128,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/21-07,Munseys.jpg',
+          title: 'Munsey\'s Magazine',
+          artist: 'Marshall Frantz',
+          year: '1921',
+          rule: {
+            "monday": [ 22, 4, 12, 18 ],
+            "tuesday": [ 21, 3, 11, 17 ],
+            "wednesday": [ 20, 2, 10, 16 ],
+            "thursday": [ 19, 1, 9, 15 ],
+            "friday": [ 18, 31, 8, 14 ],
+            "saturday": [ 17, 30, 7, 13 ],
+            "sunday": [ 16, 29, 17, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 129,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/50-11,WeirdTls.jpg',
+          title: 'Weird Tales',
+          artist: 'Frank Kelly Freas',
+          year: '1950',
+          rule: {
+            "monday": [ 16, 29, 17, 12 ],
+            "tuesday": [ 22, 4, 12, 18 ],
+            "wednesday": [ 21, 3, 11, 17 ],
+            "thursday": [ 20, 2, 10, 16 ],
+            "friday": [ 19, 1, 9, 15 ],
+            "saturday": [ 18, 31, 8, 14 ],
+            "sunday": [ 17, 30, 7, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 130,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/36-00,comic.jpg',
+          title: 'A.I.C. Yearbook',
+          artist: 'Robert Fuqua',
+          year: '1925',
+          rule: {
+            "monday": [ 17, 30, 7, 13 ],
+            "tuesday": [ 16, 29, 17, 12 ],
+            "wednesday": [ 22, 4, 12, 18 ],
+            "thursday": [ 21, 3, 11, 17 ],
+            "friday": [ 20, 2, 10, 16 ],
+            "saturday": [ 19, 1, 9, 15 ],
+            "sunday": [ 18, 31, 8, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
