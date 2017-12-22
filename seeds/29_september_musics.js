@@ -1624,6 +1624,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 91,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=288637167/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://psychiclemon.bandcamp.com/album/frequency-rhythm-distortion-delay',
+          a_string: 'Frequency Rhythm Distortion Delay by Psychic Lemon',
+          rule: {
+            "monday": [ 17, 7, 15, 9 ],
+            "tuesday": [ 16, 6, 14, 9 ],
+            "wednesday": [ 15, 5, 13, 7 ],
+            "thursday": [ 14, 4, 12, 6 ],
+            "saturday": [ 18, 8, 16, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 92,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1732794380/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://psychiclemon.bandcamp.com/album/psychic-lemon',
+          a_string: 'Psychic Lemon by Psychic Lemon',
+          rule: {
+            "monday": [ 18, 8, 16, 10 ],
+            "tuesday": [ 17, 7, 15, 9 ],
+            "wednesday": [ 16, 6, 14, 9 ],
+            "thursday": [ 15, 5, 13, 7 ],
+            "saturday": [ 14, 4, 12, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 93,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3900460578/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sleepingpeople.bandcamp.com/album/sleeping-people',
+          a_string: 'Sleeping People by Sleeping People',
+          rule: {
+            "monday": [ 14, 4, 12, 6 ],
+            "tuesday": [ 18, 8, 16, 10 ],
+            "wednesday": [ 17, 7, 15, 9 ],
+            "thursday": [ 16, 6, 14, 9 ],
+            "saturday": [ 15, 5, 13, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
