@@ -8953,6 +8953,39 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 572,
+          user_id: 1,
+          name: 'Louis Moholo-Moholo (drums) born in 1940',
+          color: '#55C4E8',
+          picture: './img/musicians/luoismoholomoholo.jpg',
+          day_of: new Date ('1940-03-10T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: true,
+          override_content: {
+            "sources": [ 'bandcamp', 'bandcamp', 'bandcamp' ],
+            "src_strings": [ 'https://bandcamp.com/EmbeddedPlayer/album=2261214908/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=3559820998/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=2709635805/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/' ],
+            "href_strings": [ 'http://intaktrec.bandcamp.com/album/ir-ne-schweizer-louis-moholo', 'http://intaktrec.bandcamp.com/album/sibanye-we-are-one', 'http://ayler-records.bandcamp.com/album/cape-of-storms' ],
+            "a_strings": [ 'Irène Schweizer - Louis Moholo by Irène Schweizer, Louis Moholo', 'Sibanye (We Are One) by Louis Moholo-Moholo, Marilyn Crispell', 'Cape of Storms by Dennis González Yells At Eels + Louis Moholo-Moholo' ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 573,
+          user_id: 1,
+          name: 'The world ended on this day in 1987 when 144,000 people failed to resonate in harmony to stave off armageddon as per José Argüelles\' prediction.',
+          color: '#43402D',
+          picture: './img/doomsday/Jose-Arguelles-Jan2010.jpg',
+          day_of: new Date ('1987-08-17T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
