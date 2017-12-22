@@ -3604,6 +3604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 181,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/new-jersey-1966.jpg',
+          title: 'New Jersey',
+          artist: 'Elliott Erwitt',
+          year: '1966',
+          rule: {
+            "monday": [ 22, 2, 12, 20 ],
+            "tuesday": [ 21, 1, 11, 19 ],
+            "wednesday": [ 20, 30, 10, 18 ],
+            "thursday": [ 19, 29, 9, 17 ],
+            "friday": [ 25, 5, 15, 22 ],
+            "saturday": [ 24, 4, 14, 22 ],
+            "sunday": [ 23, 3, 13, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 182,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/new-york-woman-leaning-on-storefront-window-1960.jpg',
+          title: 'New York (Woman Leaning on Storefront Window)',
+          artist: 'Vivian Maier',
+          year: '1960',
+          rule: {
+            "monday": [ 24, 4, 14, 22 ],
+            "tuesday": [ 23, 3, 13, 21 ],
+            "wednesday": [ 22, 2, 12, 20 ],
+            "thursday": [ 21, 1, 11, 19 ],
+            "friday": [ 20, 30, 10, 18 ],
+            "saturday": [ 26, 6, 16, 23 ],
+            "sunday": [ 25, 5, 15, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 183,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/cosinus-alpha-2.jpg',
+          title: 'Cosinus Alpha 2',
+          artist: 'Otto Muehl',
+          year: '1964',
+          rule: {
+            "monday": [ 25, 5, 15, 23 ],
+            "tuesday": [ 24, 4, 14, 22 ],
+            "wednesday": [ 23, 3, 13, 21 ],
+            "thursday": [ 22, 2, 12, 20 ],
+            "friday": [ 21, 1, 11, 19 ],
+            "saturday": [ 20, 30, 10, 18 ],
+            "sunday": [ 26, 6, 16, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 184,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/85a9973f82bf880b1a9c978669bc0316.jpg',
+          title: 'Bishop at the altar',
+          artist: 'Diane Arbus',
+          year: '1964',
+          rule: {
+            "monday": [ 26, 6, 16, 23 ],
+            "tuesday": [ 25, 5, 15, 23 ],
+            "wednesday": [ 24, 4, 14, 22 ],
+            "thursday": [ 23, 3, 13, 21 ],
+            "friday": [ 22, 2, 12, 20 ],
+            "saturday": [ 21, 1, 11, 19 ],
+            "sunday": [ 20, 30, 10, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 185,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/untitled-1930-8.jpg',
+          title: 'Untitled',
+          artist: 'Kansuke Yamamoto',
+          year: '1930',
+          rule: {
+            "monday": [ 20, 30, 10, 18 ],
+            "tuesday": [ 26, 6, 16, 23 ],
+            "wednesday": [ 25, 5, 15, 23 ],
+            "thursday": [ 24, 4, 14, 22 ],
+            "friday": [ 23, 3, 13, 21 ],
+            "saturday": [ 22, 2, 12, 20 ],
+            "sunday": [ 21, 1, 11, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
