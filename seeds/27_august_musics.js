@@ -1726,9 +1726,63 @@ exports.seed = function(knex, Promise) {
           rule: {
             "monday": [ 25, 2, 15, 14 ],
             "tuesday": [ 24, 1, 14, 13 ],
-            "wednesday": [23, 31, 13, 12  ],
+            "wednesday": [ 23, 31, 13, 12 ],
             "thursday": [ 22, 30, 12, 11 ],
             "saturday": [ 26, 3, 16, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 97,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3821356595/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jaapblonk.bandcamp.com/album/blonk-gustafsson-zerang',
+          a_string: 'Blonk, Gustafsson &amp; Zerang by Jaap Blonk, Mats Gustafsson, Michael Zerang',
+          rule: {
+            "monday": [ 26, 3, 16, 15 ],
+            "tuesday": [ 25, 2, 15, 14 ],
+            "wednesday": [ 24, 1, 14, 13 ],
+            "thursday": [ 23, 31, 13, 12 ],
+            "saturday": [ 22, 30, 12, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 98,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2174936724/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://backwardmusic.bandcamp.com/album/wayward-sonology',
+          a_string: 'Wayward Sonology by Isador',
+          rule: {
+            "monday": [ 23, 31, 13, 12 ],
+            "tuesday": [ 27, 4, 17, 16 ],
+            "wednesday": [ 26, 3, 16, 15 ],
+            "thursday": [ 25, 2, 15, 14 ],
+            "saturday": [ 24, 1, 14, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 99,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2176871443/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://badbadnotgoodil.bandcamp.com/album/iv',
+          a_string: 'IV by BADBADNOTGOOD',
+          rule: {
+            "monday": [ 24, 1, 14, 13 ],
+            "tuesday": [ 23, 31, 13, 12 ],
+            "wednesday": [ 27, 4, 17, 16 ],
+            "thursday": [ 26, 3, 16, 15 ],
+            "saturday": [ 25, 2, 15, 14 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
