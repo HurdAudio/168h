@@ -3304,6 +3304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 166,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/accordionist-1931.jpg',
+          title: 'Accordionist',
+          artist: 'Arturo Souto',
+          year: '1931',
+          rule: {
+            "monday": [ 23, 25, 4, 20 ],
+            "tuesday": [ 22, 25, 3, 19 ],
+            "wednesday": [ 21, 24, 2, 18 ],
+            "thursday": [ 27, 31, 8, 24 ],
+            "friday": [ 26, 29, 7, 23 ],
+            "saturday": [ 25, 29, 6, 22 ],
+            "sunday": [ 24, 28, 5, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 167,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/lugano-1939.jpg',
+          title: 'Lugano',
+          artist: 'Francis Bott',
+          year: '1939',
+          rule: {
+            "monday": [ 24, 28, 5, 21 ],
+            "tuesday": [ 23, 25, 4, 20 ],
+            "wednesday": [ 22, 25, 3, 19 ],
+            "thursday": [ 21, 24, 2, 18 ],
+            "friday": [ 27, 31, 8, 24 ],
+            "saturday": [ 26, 29, 7, 23 ],
+            "sunday": [ 25, 29, 6, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 168,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/foghorns-1929.jpg',
+          title: 'Foghorns',
+          artist: 'Arthur Dove',
+          year: '1929',
+          rule: {
+            "monday": [ 26, 30, 7, 23 ],
+            "tuesday": [ 25, 29, 6, 22 ],
+            "wednesday": [ 24, 26, 5, 21 ],
+            "thursday": [ 23, 26, 4, 20 ],
+            "friday": [ 22, 25, 3, 19 ],
+            "saturday": [ 28, 1, 9, 25 ],
+            "sunday": [ 27, 30, 8, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 169,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/twittering-machine-1922.jpg',
+          title: 'Twittering Machine',
+          artist: 'Paul Klee',
+          year: '',
+          rule: {
+            "monday": [ 27, 30, 8, 24 ],
+            "tuesday": [ 26, 30, 7, 23 ],
+            "wednesday": [ 25, 29, 6, 22 ],
+            "thursday": [ 24, 26, 5, 21 ],
+            "friday": [ 23, 26, 4, 20 ],
+            "saturday": [ 22, 25, 3, 19 ],
+            "sunday": [ 28, 1, 9, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 170,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/variation-field-of-tulips-1916.jpg',
+          title: 'Variation: Field of Tulips',
+          artist: 'Alexej von Jawlensky',
+          year: '1916',
+          rule: {
+            "monday": [ 28, 1, 9, 25 ],
+            "tuesday": [ 27, 30, 8, 24 ],
+            "wednesday": [ 26, 30, 7, 23 ],
+            "thursday": [ 25, 29, 6, 22 ],
+            "friday": [ 24, 26, 5, 21 ],
+            "saturday": [ 23, 26, 4, 20 ],
+            "sunday": [ 22, 25, 3, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
