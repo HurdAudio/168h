@@ -4704,6 +4704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 236,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/collage-1973.jpg',
+          title: 'Collage',
+          artist: 'Jan Dibbets',
+          year: '1973',
+          rule: {
+            "monday": [ 15, 17, 21, 24 ],
+            "tuesday": [ 17, 19, 20, 23 ],
+            "wednesday": [ 2, 3, 14, 6 ],
+            "thursday": [ 5, 7, 30, 19 ],
+            "friday": [ 7, 8, 31, 3 ],
+            "saturday": [ 10, 11, 2, 6 ],
+            "sunday": [ 13, 15, 16, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 237,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/sequenze-quadrangolari-concetto-di-distorsione-1964.jpg',
+          title: 'Sequenze quadrangolari - concetto di distorsione',
+          artist: 'Mario Ballocco',
+          year: '1964',
+          rule: {
+            "monday": [ 13, 15, 16, 18 ],
+            "tuesday": [ 15, 17, 21, 24 ],
+            "wednesday": [ 17, 19, 20, 23 ],
+            "thursday": [ 2, 3, 14, 6 ],
+            "friday": [ 5, 7, 30, 19 ],
+            "saturday": [ 7, 8, 31, 3 ],
+            "sunday": [ 10, 11, 2, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 238,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/kilroy-was-here.jpg',
+          title: 'Kilroy Was Here',
+          artist: 'Robert Goodnough',
+          year: 'xx - xxi cent.',
+          rule: {
+            "monday": [ 11, 12, 3, 7 ],
+            "tuesday": [ 14, 16, 17, 19 ],
+            "wednesday": [ 16, 18, 22, 25 ],
+            "thursday": [ 18, 20, 21, 24 ],
+            "friday": [ 3, 4, 15, 7 ],
+            "saturday": [ 6, 8, 31, 20 ],
+            "sunday": [ 8, 9, 1, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 239,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/composi-o-1975(1).jpg',
+          title: 'Composição',
+          artist: 'Lothar Charoux',
+          year: '1975',
+          rule: {
+            "monday": [ 8, 9, 1, 4 ],
+            "tuesday": [ 11, 12, 3, 7 ],
+            "wednesday": [ 14, 16, 17, 19 ],
+            "thursday": [ 16, 18, 22, 25 ],
+            "friday": [ 18, 20, 21, 24 ],
+            "saturday": [ 3, 4, 15, 7 ],
+            "sunday": [ 6, 8, 31, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 240,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/anoz-amazona-1984.jpg',
+          title: 'Anoz Amazona',
+          artist: 'Omar Rayo',
+          year: '1984',
+          rule: {
+            "monday": [ 6, 8, 31, 20 ],
+            "tuesday": [ 8, 9, 1, 4 ],
+            "wednesday": [ 11, 12, 3, 7 ],
+            "thursday": [ 14, 16, 17, 19 ],
+            "friday": [ 16, 18, 22, 25 ],
+            "saturday": [ 18, 20, 21, 24 ],
+            "sunday": [ 3, 4, 15, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
