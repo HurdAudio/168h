@@ -3504,6 +3504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 176,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/girl-with-green-scarf-1982.jpg',
+          title: 'Girl with green scarf',
+          artist: 'Le Pho',
+          year: '1982',
+          rule: {
+            "monday": [ 27, 7, 18, 29 ],
+            "tuesday": [ 26, 6, 17, 28 ],
+            "wednesday": [ 25, 5, 16, 17 ],
+            "thursday": [ 24, 4, 14, 16 ],
+            "friday": [ 23, 3, 14, 15 ],
+            "saturday": [ 22, 2, 13, 24 ],
+            "sunday": [ 28, 8, 19, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 177,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/composition-brune-et-rouge-1964.jpg',
+          title: 'Composition brune et rouge',
+          artist: 'Serge Poliakoff',
+          year: '1964',
+          rule: {
+            "monday": [ 28, 8, 19, 29 ],
+            "tuesday": [ 27, 7, 18, 29 ],
+            "wednesday": [ 26, 6, 17, 28 ],
+            "thursday": [ 25, 5, 16, 17 ],
+            "friday": [ 24, 4, 14, 16 ],
+            "saturday": [ 23, 3, 14, 15 ],
+            "sunday": [ 22, 2, 13, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 178,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/d-jeuner-de-fruits.jpg',
+          title: 'Déjeuner de fruits',
+          artist: 'Leon Arthur Tutundjian',
+          year: '?',
+          rule: {
+            "monday": [ 22, 2, 13, 24 ],
+            "tuesday": [ 28, 8, 19, 29 ],
+            "wednesday": [ 27, 7, 18, 29 ],
+            "thursday": [ 26, 6, 17, 28 ],
+            "friday": [ 25, 5, 16, 17 ],
+            "saturday": [ 24, 4, 14, 16 ],
+            "sunday": [ 23, 3, 14, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 179,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/untitled-1973(1).jpg',
+          title: 'Untitled',
+          artist: 'Hans Hartung',
+          year: '1973',
+          rule: {
+            "monday": [ 23, 3, 14, 15 ],
+            "tuesday": [ 22, 2, 13, 24 ],
+            "wednesday": [ 28, 8, 19, 29 ],
+            "thursday": [ 27, 7, 18, 29 ],
+            "friday": [ 26, 6, 17, 28 ],
+            "saturday": [ 25, 5, 16, 17 ],
+            "sunday": [ 24, 4, 14, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 180,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/cannes.jpg',
+          title: 'Cannes',
+          artist: 'Fikret Mualla Saygi',
+          year: '?',
+          rule: {
+            "monday": [ 24, 4, 14, 16 ],
+            "tuesday": [ 23, 3, 14, 15 ],
+            "wednesday": [ 22, 2, 13, 24 ],
+            "thursday": [ 28, 8, 19, 29 ],
+            "friday": [ 27, 7, 18, 29 ],
+            "saturday": [ 26, 6, 17, 28 ],
+            "sunday": [ 25, 5, 16, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
