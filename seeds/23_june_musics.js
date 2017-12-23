@@ -1948,6 +1948,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 109,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2596997395/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://huron.bandcamp.com/album/infinity-plus-forever',
+          a_string: 'Infinity Plus Forever by Huron',
+          rule: {
+            "monday": [ 14, 17, 23, 4 ],
+            "tuesday": [ 12, 20, 22, 3 ],
+            "wednesday": [ 16, 20, 26, 7 ],
+            "thursday": [ 15, 18, 25, 5 ],
+            "saturday": [ 14, 18, 23, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 110,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=676881688/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://oyukiconjugate.bandcamp.com/album/tropic',
+          a_string: 'TROPIC by O Yuki Conjugate',
+          rule: {
+            "monday": [ 14, 18, 23, 5 ],
+            "tuesday": [ 14, 17, 23, 4 ],
+            "wednesday": [ 12, 20, 22, 3 ],
+            "thursday": [ 16, 20, 26, 7 ],
+            "saturday": [ 15, 18, 25, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 111,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3201498376/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://murkok.bandcamp.com/album/coast',
+          a_string: 'coast by murkok',
+          rule: {
+            "monday": [ 15, 18, 25, 5 ],
+            "tuesday": [ 14, 18, 23, 5 ],
+            "wednesday": [ 14, 17, 23, 4 ],
+            "thursday": [ 12, 20, 22, 3 ],
+            "saturday": [ 16, 20, 26, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
