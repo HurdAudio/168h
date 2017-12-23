@@ -4304,6 +4304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 216,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/imgp-rosa-rot-malwerk-silvia-l-lueftenegger-contemporary-art-design-performance-theater-shoe-7486p.jpg',
+          title: 'IMGP Rosa Rot Malwerk Silvia L Lueftenegger Contemporary Art Design Performance Theater Shoe 7486P',
+          artist: 'Silvia L. Lueftenegger RosaRot',
+          year: '2007',
+          rule: {
+            "monday": [ 27, 6, 14, 24 ],
+            "tuesday": [ 26, 5, 13, 23 ],
+            "wednesday": [ 25, 4, 12, 22 ],
+            "thursday": [ 24, 3, 12, 21 ],
+            "friday": [ 30, 8, 17, 26 ],
+            "saturday": [ 29, 8, 18, 26 ],
+            "sunday": [ 29, 7, 15, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 217,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/pont-du-ciel-100by100cm-2016.jpg',
+          title: 'Pont Du Ciel',
+          artist: 'Li CHEVALIER',
+          year: '2016',
+          rule: {
+            "monday": [ 30, 8, 16, 26 ],
+            "tuesday": [ 28, 7, 15, 25 ],
+            "wednesday": [ 27, 6, 14, 24 ],
+            "thursday": [ 26, 5, 13, 23 ],
+            "friday": [ 25, 4, 13, 22 ],
+            "saturday": [ 31, 9, 18, 27 ],
+            "sunday": [ 30, 9, 19, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 218,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/everyone-i-have-ever-slept-with-1963-1995-1995.jpg',
+          title: 'Everyone I Have Ever Slept With 1963–1995',
+          artist: 'Tracey Emin',
+          year: '1995',
+          rule: {
+            "monday": [ 30, 9, 19, 27 ],
+            "tuesday": [ 30, 8, 16, 26 ],
+            "wednesday": [ 28, 7, 15, 25 ],
+            "thursday": [ 27, 6, 14, 24 ],
+            "friday": [ 26, 5, 13, 23 ],
+            "saturday": [ 25, 4, 13, 22 ],
+            "sunday": [ 31, 9, 18, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 219,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/rectangle-torque-glo-pod-iridescent-hot-red-pink-2013.jpg',
+          title: 'Rectangle Torque Glo-Pod (Iridescent Hot Red/Pink)',
+          artist: 'Gisela Colon',
+          year: '2013',
+          rule: {
+            "monday": [ 31, 9, 18, 27 ],
+            "tuesday": [ 30, 9, 19, 27 ],
+            "wednesday": [ 30, 8, 16, 26 ],
+            "thursday": [ 28, 7, 15, 25 ],
+            "friday": [ 27, 6, 14, 24 ],
+            "saturday": [ 26, 5, 13, 23 ],
+            "sunday": [ 25, 4, 13, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 220,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/untitled-1995-40-x-45-cm.png',
+          title: 'Untitled',
+          artist: 'Ilse D\'Hollander',
+          year: '1995',
+          rule: {
+            "monday": [ 25, 4, 13, 22 ],
+            "tuesday": [ 31, 9, 18, 27 ],
+            "wednesday": [ 30, 9, 19, 27 ],
+            "thursday": [ 30, 8, 16, 26 ],
+            "friday": [ 28, 7, 15, 25 ],
+            "saturday": [ 27, 6, 14, 24 ],
+            "sunday": [ 26, 5, 13, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
