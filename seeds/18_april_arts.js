@@ -4104,6 +4104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 206,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/sfl-miami-marlins-giancarlo-stanton-mvp-favorite-blog-20150319.jpg',
+          title: 'Miami Marlins: Giancarlo Stanton favored to win 2015 National League Most Valuable Player award',
+          artist: 'Justin Edmonds',
+          year: '2017',
+          rule: {
+            "monday": [ 24, 29, 5, 11 ],
+            "tuesday": [ 29, 5, 10, 17 ],
+            "wednesday": [ 13, 3, 9, 16 ],
+            "thursday": [ 28, 3, 9, 15 ],
+            "friday": [ 27, 1, 16, 14 ],
+            "saturday": [ 26, 1, 6, 12 ],
+            "sunday": [ 25, 30, 6, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 207,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/miami_marlins_2012_uniforms_by_jayjaxon-d4ui8sm.jpg',
+          title: 'Miami Marlins 2012 Uniforms',
+          artist: '?',
+          year: '2012',
+          rule: {
+            "monday": [ 25, 30, 6, 12 ],
+            "tuesday": [ 24, 29, 5, 11 ],
+            "wednesday": [ 29, 5, 10, 17 ],
+            "thursday": [ 13, 3, 9, 16 ],
+            "friday": [ 28, 3, 9, 15 ],
+            "saturday": [ 27, 1, 16, 14 ],
+            "sunday": [ 26, 1, 6, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 208,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/wbc_1_ky7pnjyl_fwq9ondd.jpg',
+          title: 'World Baseball Classic at Marlins Park',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 26, 1, 6, 12 ],
+            "tuesday": [ 25, 30, 6, 12 ],
+            "wednesday": [ 24, 29, 5, 11 ],
+            "thursday": [ 29, 5, 10, 17 ],
+            "friday": [ 13, 3, 9, 16 ],
+            "saturday": [ 28, 3, 9, 15 ],
+            "sunday": [ 27, 1, 16, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 209,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/cheap-miami-marlins-tickets.jpg',
+          title: 'Giancarlo Stanton',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 27, 1, 16, 14 ],
+            "tuesday": [ 26, 1, 6, 12 ],
+            "wednesday": [ 25, 30, 6, 12 ],
+            "thursday": [ 24, 29, 5, 11 ],
+            "friday": [ 29, 5, 10, 17 ],
+            "saturday": [ 13, 3, 9, 16 ],
+            "sunday": [ 28, 3, 9, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 210,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/livan7-feature.jpg',
+          title: 'Livan Hernandez',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 29, 4, 10, 16 ],
+            "tuesday": [ 28, 2, 17, 15 ],
+            "wednesday": [ 27, 2, 7, 13 ],
+            "thursday": [ 26, 1, 7, 13 ],
+            "friday": [ 25, 30, 6, 12 ],
+            "saturday": [ 30, 6, 11, 18 ],
+            "sunday": [ 14, 4, 10, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
