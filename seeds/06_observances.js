@@ -8986,6 +8986,34 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 574,
+          user_id: 1,
+          name: 'Paul Lafargue (French revolutionary/writer/activist) born in 1842',
+          color: '#25200D',
+          picture: './img/dissent/paullafargue.jpg',
+          day_of: new Date ('1842-01-15T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 575,
+          user_id: 1,
+          name: 'The world ended on this day in 1986 when Haley\'s Comet was pulled into the Earth\'s orbit - causing massive destruction according to Leland Jensen.',
+          color: '#284B88',
+          picture: './img/doomsday/lelandjensen.JPG',
+          day_of: new Date ('1986-04-29T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
