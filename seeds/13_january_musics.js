@@ -2488,6 +2488,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 139,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3264936666/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://catchwaveltd.bandcamp.com/album/heights-in-depths',
+          a_string: 'Heights in Depths by Leo Svirsky',
+          rule: {
+            "monday": [ 30, 6, 7, 8 ],
+            "tuesday": [ 29, 5, 6, 7 ],
+            "wednesday": [ 28, 4, 5, 6 ],
+            "thursday": [ 27, 3, 4, 5 ],
+            "saturday": [ 26, 2, 3, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 140,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=681093799/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://newfocusrecordings.bandcamp.com/album/cartography',
+          a_string: 'Cartography by Mariel Roberts',
+          rule: {
+            "monday": [ 27, 3, 4, 5 ],
+            "tuesday": [ 31, 7, 8, 9 ],
+            "wednesday": [ 30, 6, 7, 8 ],
+            "thursday": [ 29, 5, 6, 7 ],
+            "saturday": [ 28, 4, 5, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 141,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1265381457/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://newfocusrecordings.bandcamp.com/album/metafagote',
+          a_string: 'Metafagote by Rebekah Heller',
+          rule: {
+            "monday": [ 28, 4, 5, 6 ],
+            "tuesday": [ 27, 3, 4, 5 ],
+            "wednesday": [ 31, 7, 8, 9 ],
+            "thursday": [ 30, 6, 7, 8 ],
+            "saturday": [ 29, 5, 6, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
