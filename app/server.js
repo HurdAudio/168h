@@ -104,6 +104,8 @@ const october_tiles = require('./routes/october_tiles.js');
 const october_tilesbyuser = require('./routes/october_tilesbyuser.js');
 const november_tiles = require('./routes/november_tiles.js');
 const november_tilesbyuser = require('./routes/november_tilesbyuser.js');
+const december_tiles = require('./routes/december_tiles.js');
+const december_tilesbyuser = require('./routes/december_tilesbyuser.js');
 
 const port = process.env.PORT || 3007;
 
@@ -208,6 +210,8 @@ app.use(fileUpload());
  app.use('/october_tilesbyuser', october_tilesbyuser);
  app.use('/november_tiles', november_tiles);
  app.use('/november_tilesbyuser', november_tilesbyuser);
+ app.use('/december_tiles', december_tiles);
+ app.use('/december_tilesbyuser', december_tilesbyuser);
 
 app.get('/onthisdayinhistory/:date', (req, res, next) =>{
   let newUrl = 'http://history.muffinlabs.com/date/';
