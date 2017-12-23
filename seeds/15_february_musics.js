@@ -2380,6 +2380,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 133,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3739022193/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ampfiddler.bandcamp.com/album/amp-dog-knights-m-m-41',
+          a_string: 'AMP DOG KNIGHTS | M.M-41 by Amp Fiddler',
+          rule: {
+            "monday": [ 8, 2, 4, 10 ],
+            "tuesday": [ 20, 25, 27, 10 ],
+            "wednesday": [ 21, 25, 27, 2 ],
+            "thursday": [ 24, 27, 29, 4 ],
+            "saturday": [ 25, 29, 2, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 134,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4272282715/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://steeltippeddove.bandcamp.com/album/to-name-it',
+          a_string: 'to name it by Steel Tipped Dove',
+          rule: {
+            "monday": [ 25, 29, 2, 4 ],
+            "tuesday": [ 8, 2, 4, 10 ],
+            "wednesday": [ 20, 25, 27, 10 ],
+            "thursday": [ 21, 25, 27, 2 ],
+            "saturday": [ 24, 27, 29, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 135,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2988248604/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://quellechris360.bandcamp.com/album/being-you-is-great-i-wish-i-could-be-you-more-often',
+          a_string: 'Being You Is Great, I Wish I Could Be You More Often by Quelle Chris',
+          rule: {
+            "monday": [ 24, 27, 29, 4 ],
+            "tuesday": [ 25, 29, 2, 4 ],
+            "wednesday": [ 8, 2, 4, 10 ],
+            "thursday": [ 20, 25, 27, 10 ],
+            "saturday": [ 21, 25, 27, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
