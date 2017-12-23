@@ -4210,6 +4210,25 @@ footer img {
   border: 2px solid #0000cc;
 }
 
+#modulesZone {
+  background: #441E38;
+  background-color: -webkit-linear-gradient(135deg, #5A7AD1, #857D7A);
+  background: -o-linear-gradient(135deg, #5A7AD1, #857D7A);
+  background: -moz-linear-gradient(135deg, #5A7AD1, #857D7A);
+  background: linear-gradient(135deg, #5A7AD1, #857D7A);
+  border-radius: 5px;
+  padding-bottom: 1.1em;
+  opacity: 1;
+}
+
+#modulesZone img {
+  height: 7em;
+  width: 7em;
+  margin-left: 1.6em;
+  margin-top: 1.2em;
+  border: 2px solid #0000cc;
+}
+
 #occasionManager {
   float: right;
   margin: 2em;
@@ -4253,6 +4272,12 @@ footer img {
 }
 
 #tilesCuratorManager {
+  float: right;
+  margin: 2em;
+  margin-right: 4.8em;
+}
+
+#modulesManager {
   float: right;
   margin: 2em;
   margin-right: 4.8em;
