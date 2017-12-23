@@ -4504,6 +4504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 226,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/SNOWDEN_brightstarsRED_w450.jpg',
+          title: 'Bright Stars of Night RED',
+          artist: 'Gilda Snowden',
+          year: '2007',
+          rule: {
+            "monday": [ 3, 11, 19, 27 ],
+            "tuesday": [ 5, 13, 21, 29 ],
+            "wednesday": [ 10, 15, 21, 2 ],
+            "thursday": [ 9, 17, 25, 4 ],
+            "friday": [ 11, 21, 27, 4 ],
+            "saturday": [ 13, 21, 29, 10 ],
+            "sunday": [ 15, 23, 19, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 227,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/23398-1383072326-Mitchell Squire.jpg',
+          title: 'Always the Same (Yet Never Alike) no. 1',
+          artist: 'Mitchell Squire',
+          year: '2010',
+          rule: {
+            "monday": [ 15, 23, 19, 9 ],
+            "tuesday": [ 3, 11, 19, 27 ],
+            "wednesday": [ 5, 13, 21, 29 ],
+            "thursday": [ 10, 15, 21, 2 ],
+            "friday": [ 9, 17, 25, 4 ],
+            "saturday": [ 11, 21, 27, 4 ],
+            "sunday": [ 13, 21, 29, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 228,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/2945055592_67354f9d2c.jpg',
+          title: 'Institution Series #1',
+          artist: 'Raymond Steth',
+          year: '1980',
+          rule: {
+            "monday": [ 13, 21, 29, 10 ],
+            "tuesday": [ 15, 23, 19, 9 ],
+            "wednesday": [ 3, 11, 19, 27 ],
+            "thursday": [ 5, 13, 21, 29 ],
+            "friday": [ 10, 15, 21, 2 ],
+            "saturday": [ 9, 17, 25, 4 ],
+            "sunday": [ 11, 21, 27, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 229,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/22ec06594687b23a134cb5954c3400e3.jpg',
+          title: 'The Scream at 42',
+          artist: 'Renee Stout',
+          year: '2001',
+          rule: {
+            "monday": [ 11, 21, 27, 4 ],
+            "tuesday": [ 13, 21, 29, 10 ],
+            "wednesday": [ 15, 23, 19, 9 ],
+            "thursday": [ 3, 11, 19, 27 ],
+            "friday": [ 5, 13, 21, 29 ],
+            "saturday": [ 10, 15, 21, 2 ],
+            "sunday": [ 9, 17, 25, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 230,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/Karma-MartineSyms-900x600.jpg',
+          title: 'at Karma International',
+          artist: 'Martine Syms',
+          year: '2016',
+          rule: {
+            "monday": [ 9, 17, 25, 4 ],
+            "tuesday": [ 11, 21, 27, 4 ],
+            "wednesday": [ 13, 21, 29, 10 ],
+            "thursday": [ 15, 23, 19, 9 ],
+            "friday": [ 3, 11, 19, 27 ],
+            "saturday": [ 5, 13, 21, 29 ],
+            "sunday": [ 10, 15, 21, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
