@@ -8,7 +8,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 1,
           user_id: 1,
-          theme: 'greenery',
+          theme: 'Greenery',
           type: 'default',
           src_string: '../img/may_tiles/abstract-21918_1920.jpg',
           repeat_value: 'no-repeat',
@@ -22,7 +22,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 2,
           user_id: 1,
-          theme: 'greenery',
+          theme: 'Greenery',
           type: 'week',
           src_string: '../img/may_tiles/leaf-2545169_1920.jpg',
           repeat_value: 'no-repeat',
@@ -36,7 +36,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 3,
           user_id: 1,
-          theme: 'greenery',
+          theme: 'Greenery',
           type: 'mtwt',
           src_string: '../img/may_tiles/bud-2541947_1920.jpg',
           repeat_value: 'no-repeat',
@@ -50,7 +50,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 4,
           user_id: 1,
-          theme: 'greenery',
+          theme: 'Greenery',
           type: 'friday',
           src_string: '../img/may_tiles/stevia-74187_1920.jpg',
           repeat_value: 'no-repeat',
@@ -64,7 +64,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 5,
           user_id: 1,
-          theme: 'greenery',
+          theme: 'Greenery',
           type: 'saturday',
           src_string: '../img/may_tiles/39974347-green-grass-texture-you-can-use-for-your-projects.jpg',
           repeat_value: 'no-repeat',
@@ -78,7 +78,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 6,
           user_id: 1,
-          theme: 'greenery',
+          theme: 'Greenery',
           type: 'sunday',
           src_string: '../img/may_tiles/194-1258059592-d4c2bac619a7f3771177e71974077cc5.jpg',
           repeat_value: 'no-repeat',
@@ -92,7 +92,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 7,
           user_id: 1,
-          theme: 'greenery',
+          theme: 'Greenery',
           type: 'holiday',
           src_string: '../img/may_tiles/Tl6aff5.jpg',
           repeat_value: 'no-repeat',
@@ -106,7 +106,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 8,
           user_id: 1,
-          theme: 'greenery',
+          theme: 'Greenery',
           type: 'week',
           src_string: '../img/may_tiles/plant-texture-leaf-flower-green-botany-495915-pxhere.com.jpg',
           repeat_value: 'no-repeat',
@@ -120,7 +120,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 9,
           user_id: 1,
-          theme: 'greenery',
+          theme: 'Greenery',
           type: 'friday',
           src_string: '../img/may_tiles/Rice_fields_-_panoramio.jpg',
           repeat_value: 'no-repeat',
@@ -134,7 +134,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 10,
           user_id: 1,
-          theme: 'greenery',
+          theme: 'Greenery',
           type: 'saturday',
           src_string: '../img/may_tiles/japanese-maple-2947680_1920.jpg',
           repeat_value: 'no-repeat',
@@ -148,7 +148,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 11,
           user_id: 1,
-          theme: 'greenery',
+          theme: 'Greenery',
           type: 'sunday',
           src_string: '../img/may_tiles/tea-plantation-2220475_1920.jpg',
           repeat_value: 'no-repeat',
@@ -162,7 +162,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 12,
           user_id: 1,
-          theme: 'greenery',
+          theme: 'Greenery',
           type: 'holiday',
           src_string: '../img/may_tiles/dahlia-2552891_1920.jpg',
           repeat_value: 'no-repeat',
@@ -176,7 +176,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 13,
           user_id: 1,
-          theme: 'greenery',
+          theme: 'Greenery',
           type: 'week',
           src_string: '../img/may_tiles/grass-1658749_1920.jpg',
           repeat_value: 'no-repeat',
@@ -190,7 +190,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 14,
           user_id: 1,
-          theme: 'greenery',
+          theme: 'Greenery',
           type: 'friday',
           src_string: '../img/may_tiles/trees-408512_1920.jpg',
           repeat_value: 'no-repeat',
@@ -204,7 +204,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 15,
           user_id: 1,
-          theme: 'greenery',
+          theme: 'Greenery',
           type: 'saturday',
           src_string: '../img/may_tiles/green-2892638_1920.jpg',
           repeat_value: 'no-repeat',
@@ -218,7 +218,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 16,
           user_id: 1,
-          theme: 'greenery',
+          theme: 'Greenery',
           type: 'sunday',
           src_string: '../img/may_tiles/rice-194768_1920.jpg',
           repeat_value: 'no-repeat',
@@ -232,7 +232,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 17,
           user_id: 1,
-          theme: 'greenery',
+          theme: 'Greenery',
           type: 'holiday',
           src_string: '../img/may_tiles/daisy-70910_1280.jpg',
           repeat_value: 'no-repeat',
@@ -246,7 +246,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 18,
           user_id: 1,
-          theme: 'greenery',
+          theme: 'Greenery',
           type: 'week',
           src_string: '../img/may_tiles/fresh-839260_1920.jpg',
           repeat_value: 'no-repeat',
@@ -260,7 +260,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 19,
           user_id: 1,
-          theme: 'greenery',
+          theme: 'Greenery',
           type: 'friday',
           src_string: '../img/may_tiles/grass-1551128_1920.jpg',
           repeat_value: 'no-repeat',
@@ -274,7 +274,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 20,
           user_id: 1,
-          theme: 'greenery',
+          theme: 'Greenery',
           type: 'saturday',
           src_string: '../img/may_tiles/nature-2513138_1920.jpg',
           repeat_value: 'no-repeat',

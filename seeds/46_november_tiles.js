@@ -8,7 +8,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 1,
           user_id: 1,
-          theme: 'monochromatic',
+          theme: 'Monochromatic',
           type: 'default',
           src_string: '../img/november_tiles/black-and-white-images-of-birds-3-widescreen-wallpaper.jpg',
           repeat_value: 'no-repeat',
@@ -22,7 +22,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 2,
           user_id: 1,
-          theme: 'monochromatic',
+          theme: 'Monochromatic',
           type: 'week',
           src_string: '../img/november_tiles/wave-2822857_1920.jpg',
           repeat_value: 'no-repeat',
@@ -36,7 +36,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 3,
           user_id: 1,
-          theme: 'monochromatic',
+          theme: 'Monochromatic',
           type: 'mtwt',
           src_string: '../img/november_tiles/floor-tile-pattern-floor-tile-pattern.jpg',
           repeat_value: 'no-repeat',
@@ -50,7 +50,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 4,
           user_id: 1,
-          theme: 'monochromatic',
+          theme: 'Monochromatic',
           type: 'friday',
           src_string: '../img/november_tiles/stark-1891510_1280.jpg',
           repeat_value: 'no-repeat',
@@ -64,7 +64,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 5,
           user_id: 1,
-          theme: 'monochromatic',
+          theme: 'Monochromatic',
           type: 'saturday',
           src_string: '../img/november_tiles/black-and-white-2703890_1920.jpg',
           repeat_value: 'no-repeat',
@@ -78,7 +78,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 6,
           user_id: 1,
-          theme: 'monochromatic',
+          theme: 'Monochromatic',
           type: 'sunday',
           src_string: '../img/november_tiles/blue-1317256_1920.jpg',
           repeat_value: 'no-repeat',
@@ -92,7 +92,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 7,
           user_id: 1,
-          theme: 'monochromatic',
+          theme: 'Monochromatic',
           type: 'holiday',
           src_string: '../img/november_tiles/geometric-1562524_1920.jpg',
           repeat_value: 'no-repeat',
@@ -106,7 +106,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 8,
           user_id: 1,
-          theme: 'monochromatic',
+          theme: 'Monochromatic',
           type: 'week',
           src_string: '../img/november_tiles/yerevan-6.jpg',
           repeat_value: 'no-repeat',
@@ -120,7 +120,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 9,
           user_id: 1,
-          theme: 'monochromatic',
+          theme: 'Monochromatic',
           type: 'friday',
           src_string: '../img/november_tiles/3d-stone-wall-cladding-idea-boxy-natural-stone-mosaic-wall-tiles-creative-wall-cladding-installation-for-3d-effect-result-3d-feature-wall-3d-stone-tiles-natural-stone-wall-cladding-stone-mosaic-til-940x705.jpg',
           repeat_value: 'no-repeat',
@@ -134,7 +134,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 10,
           user_id: 1,
-          theme: 'monochromatic',
+          theme: 'Monochromatic',
           type: 'saturday',
           src_string: '../img/november_tiles/Pyramid_700x465._V352857426_.gif',
           repeat_value: 'no-repeat',
@@ -148,7 +148,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 11,
           user_id: 1,
-          theme: 'monochromatic',
+          theme: 'Monochromatic',
           type: 'sunday',
           src_string: '../img/november_tiles/073b9b755dec5be95788cc46edb48950.jpg',
           repeat_value: 'no-repeat',
@@ -162,7 +162,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 12,
           user_id: 1,
-          theme: 'monochromatic',
+          theme: 'Monochromatic',
           type: 'holiday',
           src_string: '../img/november_tiles/monochromatic1.jpg',
           repeat_value: 'no-repeat',
@@ -176,7 +176,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 13,
           user_id: 1,
-          theme: 'monochromatic',
+          theme: 'Monochromatic',
           type: 'week',
           src_string: '../img/november_tiles/01_torre-velasca-1956-58-bbpr-partnership-milano-early-september-2016_05.jpg',
           repeat_value: 'no-repeat',
@@ -190,7 +190,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 14,
           user_id: 1,
-          theme: 'monochromatic',
+          theme: 'Monochromatic',
           type: 'friday',
           src_string: '../img/november_tiles/Gurkanwar-Singh-Bedi.jpg',
           repeat_value: 'no-repeat',

@@ -8,7 +8,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 1,
           user_id: 1,
-          theme: 'silk',
+          theme: 'Silk/Velvet',
           type: 'default',
           src_string: '../img/february_tiles/Red-Silk-Fabric-Texture-1.jpg',
           repeat_value: 'no-repeat',
@@ -22,7 +22,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 2,
           user_id: 1,
-          theme: 'silk',
+          theme: 'Silk/Velvet',
           type: 'week',
           src_string: '../img/february_tiles/red_chenille_fabric_texture_by_beckas.jpg',
           repeat_value: 'no-repeat',
@@ -36,7 +36,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 3,
           user_id: 1,
-          theme: 'silk',
+          theme: 'Silk/Velvet',
           type: 'mtwt',
           src_string: '../img/february_tiles/silk-326018_1920.jpg',
           repeat_value: 'no-repeat',
@@ -50,7 +50,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 4,
           user_id: 1,
-          theme: 'silk',
+          theme: 'Silk/Velvet',
           type: 'friday',
           src_string: '../img/february_tiles/il_340x270.1100550400_1zqt.jpg',
           repeat_value: 'no-repeat',
@@ -64,7 +64,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 5,
           user_id: 1,
-          theme: 'silk',
+          theme: 'Silk/Velvet',
           type: 'saturday',
           src_string: '../img/february_tiles/elegant-red-silk-background-20.jpg',
           repeat_value: 'no-repeat',
@@ -78,7 +78,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 6,
           user_id: 1,
-          theme: 'silk',
+          theme: 'Silk/Velvet',
           type: 'sunday',
           src_string: '../img/february_tiles/rose-2819660_1920.jpg',
           repeat_value: 'no-repeat',
@@ -92,7 +92,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 7,
           user_id: 1,
-          theme: 'silk',
+          theme: 'Silk/Velvet',
           type: 'holiday',
           src_string: '../img/february_tiles/silk-fabric-texture-5-1024x682.jpg',
           repeat_value: 'no-repeat',
@@ -106,7 +106,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 8,
           user_id: 1,
-          theme: 'silk',
+          theme: 'Silk/Velvet',
           type: 'week',
           src_string: '../img/february_tiles/TE123424759.jpeg',
           repeat_value: 'no-repeat',
@@ -120,7 +120,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 9,
           user_id: 1,
-          theme: 'silk',
+          theme: 'Silk/Velvet',
           type: 'friday',
           src_string: '../img/february_tiles/Satin-silk-fabric.jpg',
           repeat_value: 'no-repeat',
@@ -134,7 +134,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 10,
           user_id: 1,
-          theme: 'silk',
+          theme: 'Silk/Velvet',
           type: 'saturday',
           src_string: '../img/february_tiles/roter-samt_2160x1920.jpg',
           repeat_value: 'no-repeat',
@@ -148,7 +148,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 11,
           user_id: 1,
-          theme: 'silk',
+          theme: 'Silk/Velvet',
           type: 'sunday',
           src_string: '../img/february_tiles/25-dark-red-silk.jpg',
           repeat_value: 'no-repeat',
@@ -162,7 +162,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 12,
           user_id: 1,
-          theme: 'silk',
+          theme: 'Silk/Velvet',
           type: 'holiday',
           src_string: '../img/february_tiles/oriental-toile-venetian-pink-by-beacon-hill-701229.jpg',
           repeat_value: 'no-repeat',
@@ -176,7 +176,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 13,
           user_id: 1,
-          theme: 'silk',
+          theme: 'Silk/Velvet',
           type: 'week',
           src_string: '../img/february_tiles/background-1241207_1920.jpg',
           repeat_value: 'no-repeat',
@@ -190,7 +190,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 14,
           user_id: 1,
-          theme: 'silk',
+          theme: 'Silk/Velvet',
           type: 'friday',
           src_string: '../img/february_tiles/texture-1262571_1920.jpg',
           repeat_value: 'no-repeat',
@@ -204,7 +204,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 15,
           user_id: 1,
-          theme: 'silk',
+          theme: 'Silk/Velvet',
           type: 'saturday',
           src_string: '../img/february_tiles/background-2168549_1920.jpg',
           repeat_value: 'no-repeat',
@@ -218,7 +218,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 16,
           user_id: 1,
-          theme: 'silk',
+          theme: 'Silk/Velvet',
           type: 'sunday',
           src_string: '../img/february_tiles/red-893318_1920.jpg',
           repeat_value: 'no-repeat',
@@ -232,7 +232,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 17,
           user_id: 1,
-          theme: 'silk',
+          theme: 'Silk/Velvet',
           type: 'holiday',
           src_string: '../img/february_tiles/carpet-100084_1920.jpg',
           repeat_value: 'no-repeat',
@@ -246,7 +246,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 18,
           user_id: 1,
-          theme: 'silk',
+          theme: 'Silk/Velvet',
           type: 'week',
           src_string: '../img/february_tiles/240_F_104948324_Dxb9kAsz3vHr6DxdCbMZMCZ3FAvCYUpc.jpg',
           repeat_value: 'no-repeat',
@@ -260,7 +260,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 19,
           user_id: 1,
-          theme: 'silk',
+          theme: 'Silk/Velvet',
           type: 'friday',
           src_string: '../img/february_tiles/red-velvet-wallpaper-22072-22628-hd-wallpapers.jpg',
           repeat_value: 'no-repeat',
@@ -274,7 +274,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 20,
           user_id: 1,
-          theme: 'silk',
+          theme: 'Silk/Velvet',
           type: 'saturday',
           src_string: '../img/february_tiles/orangesilk.jpg',
           repeat_value: 'no-repeat',
@@ -288,7 +288,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 21,
           user_id: 1,
-          theme: 'silk',
+          theme: 'Silk/Velvet',
           type: 'sunday',
           src_string: '../img/february_tiles/41D56ja12LL.jpg',
           repeat_value: 'no-repeat',
@@ -302,7 +302,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 22,
           user_id: 1,
-          theme: 'silk',
+          theme: 'Silk/Velvet',
           type: 'holiday',
           src_string: '../img/february_tiles/silk_material_soft_light_50576_1920x1080.jpg',
           repeat_value: 'no-repeat',
@@ -316,7 +316,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 23,
           user_id: 1,
-          theme: 'silk',
+          theme: 'Silk/Velvet',
           type: 'week',
           src_string: '../img/february_tiles/fabric-2313919_1920.jpg',
           repeat_value: 'no-repeat',

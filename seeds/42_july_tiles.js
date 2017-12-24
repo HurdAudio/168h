@@ -8,7 +8,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 1,
           user_id: 1,
-          theme: 'steam',
+          theme: 'Steam',
           type: 'default',
           src_string: '../img/july_tiles/Mammatus-storm-clouds_San-Antonio.jpg',
           repeat_value: 'no-repeat',
@@ -22,7 +22,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 2,
           user_id: 1,
-          theme: 'steam',
+          theme: 'Steam',
           type: 'week',
           src_string: '../img/july_tiles/clouds-2239564_1920.jpg',
           repeat_value: 'no-repeat',
@@ -36,7 +36,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 3,
           user_id: 1,
-          theme: 'steam',
+          theme: 'Steam',
           type: 'mtwt',
           src_string: '../img/july_tiles/steamdays.jpg',
           repeat_value: 'no-repeat',
@@ -50,7 +50,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 4,
           user_id: 1,
-          theme: 'steam',
+          theme: 'Steam',
           type: 'friday',
           src_string: '../img/july_tiles/fridaySteam.jpg',
           repeat_value: 'no-repeat',
@@ -64,7 +64,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 5,
           user_id: 1,
-          theme: 'steam',
+          theme: 'Steam',
           type: 'saturday',
           src_string: '../img/july_tiles/saturdaySteam.jpg',
           repeat_value: 'no-repeat',
@@ -78,7 +78,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 6,
           user_id: 1,
-          theme: 'steam',
+          theme: 'Steam',
           type: 'sunday',
           src_string: '../img/july_tiles/sundaySteam.jpg',
           repeat_value: 'no-repeat',
@@ -92,7 +92,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 7,
           user_id: 1,
-          theme: 'steam',
+          theme: 'Steam',
           type: 'holiday',
           src_string: '../img/july_tiles/steamHoliday.jpg',
           repeat_value: 'no-repeat',
@@ -106,7 +106,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 8,
           user_id: 1,
-          theme: 'steam',
+          theme: 'Steam',
           type: 'week',
           src_string: '../img/july_tiles/yellowstone-1711475_1920.jpg',
           repeat_value: 'no-repeat',
@@ -120,7 +120,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 9,
           user_id: 1,
-          theme: 'steam',
+          theme: 'Steam',
           type: 'friday',
           src_string: '../img/july_tiles/cloud-2238140_1920.jpg',
           repeat_value: 'no-repeat',
@@ -134,7 +134,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 10,
           user_id: 1,
-          theme: 'steam',
+          theme: 'Steam',
           type: 'saturday',
           src_string: '../img/july_tiles/cloud-2680190_1920.jpg',
           repeat_value: 'no-repeat',
@@ -148,7 +148,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 11,
           user_id: 1,
-          theme: 'steam',
+          theme: 'Steam',
           type: 'sunday',
           src_string: '../img/july_tiles/smoke-758274_1920.jpg',
           repeat_value: 'no-repeat',
@@ -162,7 +162,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 12,
           user_id: 1,
-          theme: 'steam',
+          theme: 'Steam',
           type: 'holiday',
           src_string: '../img/july_tiles/sky-1066427_1920.jpg',
           repeat_value: 'no-repeat',
@@ -176,7 +176,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 13,
           user_id: 1,
-          theme: 'steam',
+          theme: 'Steam',
           type: 'week',
           src_string: '../img/july_tiles/industry-611668_1920.jpg',
           repeat_value: 'no-repeat',
@@ -190,7 +190,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 14,
           user_id: 1,
-          theme: 'steam',
+          theme: 'Steam',
           type: 'friday',
           src_string: '../img/july_tiles/namafjall-1803628_1920.jpg',
           repeat_value: 'no-repeat',
@@ -204,7 +204,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 15,
           user_id: 1,
-          theme: 'steam',
+          theme: 'Steam',
           type: 'saturday',
           src_string: '../img/july_tiles/texture-699697_1920.jpg',
           repeat_value: 'no-repeat',
@@ -218,7 +218,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 16,
           user_id: 1,
-          theme: 'steam',
+          theme: 'Steam',
           type: 'sunday',
           src_string: '../img/july_tiles/clouds-1408073_1920.jpg',
           repeat_value: 'no-repeat',
@@ -232,7 +232,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 17,
           user_id: 1,
-          theme: 'steam',
+          theme: 'Steam',
           type: 'holiday',
           src_string: '../img/july_tiles/rainbow_cloud_texture_by_kmiloneko.png',
           repeat_value: 'no-repeat',
@@ -246,7 +246,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 18,
           user_id: 1,
-          theme: 'steam',
+          theme: 'Steam',
           type: 'week',
           src_string: '../img/july_tiles/GettyImages-172148977-56a504c75f9b58b7d0da9223.jpg',
           repeat_value: 'no-repeat',

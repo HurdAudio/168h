@@ -8,7 +8,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 1,
           user_id: 1,
-          theme: 'ice',
+          theme: 'Ice',
           type: 'default',
           src_string: '../img/january_tiles/pattern-2054291_1920.jpg',
           repeat_value: 'no-repeat',
@@ -22,7 +22,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 2,
           user_id: 1,
-          theme: 'ice',
+          theme: 'Ice',
           type: 'week',
           src_string: '../img/january_tiles/ice_texture_by_kikariz_stock.jpg',
           repeat_value: 'no-repeat',
@@ -36,7 +36,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 3,
           user_id: 1,
-          theme: 'ice',
+          theme: 'Ice',
           type: 'mtwt',
           src_string: '../img/january_tiles/depositphotos_26348373-stock-photo-seamless-ice-texture.jpg',
           repeat_value: 'no-repeat',
@@ -50,7 +50,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 4,
           user_id: 1,
-          theme: 'ice',
+          theme: 'Ice',
           type: 'friday',
           src_string: '../img/january_tiles/ice-709307_1920.jpg',
           repeat_value: 'no-repeat',
@@ -64,7 +64,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 5,
           user_id: 1,
-          theme: 'ice',
+          theme: 'Ice',
           type: 'saturday',
           src_string: '../img/january_tiles/ChiseledIce.jpg',
           repeat_value: 'no-repeat',
@@ -78,7 +78,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 6,
           user_id: 1,
-          theme: 'ice',
+          theme: 'Ice',
           type: 'sunday',
           src_string: '../img/january_tiles/7581993-Rime-texture-Stock-Photo-ice-texture-snow.jpg',
           repeat_value: 'no-repeat',
@@ -92,7 +92,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 7,
           user_id: 1,
-          theme: 'ice',
+          theme: 'Ice',
           type: 'holiday',
           src_string: '../img/january_tiles/ice-2381291_1920.jpg',
           repeat_value: 'no-repeat',
@@ -106,7 +106,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 8,
           user_id: 1,
-          theme: 'ice',
+          theme: 'Ice',
           type: 'week',
           src_string: '../img/january_tiles/ice-melting6a.jpg',
           repeat_value: 'no-repeat',
@@ -120,7 +120,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 9,
           user_id: 1,
-          theme: 'ice',
+          theme: 'Ice',
           type: 'friday',
           src_string: '../img/january_tiles/53e761b2082a7.jpg',
           repeat_value: 'no-repeat',
@@ -134,7 +134,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 10,
           user_id: 1,
-          theme: 'ice',
+          theme: 'Ice',
           type: 'saturday',
           src_string: '../img/january_tiles/ice-wallpapers-002.jpg',
           repeat_value: 'no-repeat',
@@ -148,7 +148,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 11,
           user_id: 1,
-          theme: 'ice',
+          theme: 'Ice',
           type: 'sunday',
           src_string: '../img/january_tiles/19-cool-blue-ice-texture-free-hi-res.jpg',
           repeat_value: 'no-repeat',
@@ -162,7 +162,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 12,
           user_id: 1,
-          theme: 'ice',
+          theme: 'Ice',
           type: 'holiday',
           src_string: '../img/january_tiles/eis-texture.jpg',
           repeat_value: 'no-repeat',
@@ -176,7 +176,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 13,
           user_id: 1,
-          theme: 'ice',
+          theme: 'Ice',
           type: 'week',
           src_string: '../img/january_tiles/17-dark-ice-texture-free-hi-res.jpg',
           repeat_value: 'no-repeat',
@@ -190,7 +190,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 14,
           user_id: 1,
-          theme: 'ice',
+          theme: 'Ice',
           type: 'friday',
           src_string: '../img/january_tiles/ice-1998082_1920.jpg',
           repeat_value: 'no-repeat',
@@ -204,7 +204,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 15,
           user_id: 1,
-          theme: 'ice',
+          theme: 'Ice',
           type: 'saturday',
           src_string: '../img/january_tiles/18712675-Seamless-ice-texture-computer-graphic-big-collection-Stock-Photo.jpg',
           repeat_value: 'no-repeat',
@@ -218,7 +218,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 16,
           user_id: 1,
-          theme: 'ice',
+          theme: 'Ice',
           type: 'sunday',
           src_string: '../img/january_tiles/tyler-agte-tyleragte-icepattern.jpg',
           repeat_value: 'no-repeat',
@@ -232,7 +232,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 17,
           user_id: 1,
-          theme: 'ice',
+          theme: 'Ice',
           type: 'holiday',
           src_string: '../img/january_tiles/winter-wonderland-1961970_1920.jpg',
           repeat_value: 'no-repeat',
@@ -246,7 +246,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 18,
           user_id: 1,
-          theme: 'ice',
+          theme: 'Ice',
           type: 'week',
           src_string: '../img/january_tiles/depositphotos_36103545-stock-photo-ice-texture.jpg',
           repeat_value: 'no-repeat',
@@ -260,7 +260,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 19,
           user_id: 1,
-          theme: 'ice',
+          theme: 'Ice',
           type: 'friday',
           src_string: '../img/january_tiles/two-1231475_1920.jpg',
           repeat_value: 'no-repeat',
@@ -274,7 +274,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 20,
           user_id: 1,
-          theme: 'ice',
+          theme: 'Ice',
           type: 'saturday',
           src_string: '../img/january_tiles/depositphotos_63077593-stock-photo-frozen-ice-seamless-and-tileable.jpg',
           repeat_value: 'no-repeat',
@@ -288,7 +288,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 21,
           user_id: 1,
-          theme: 'ice',
+          theme: 'Ice',
           type: 'sunday',
           src_string: '../img/january_tiles/cuevas-de-hielo-alasca.jpg',
           repeat_value: 'no-repeat',
@@ -302,7 +302,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 22,
           user_id: 1,
-          theme: 'ice',
+          theme: 'Ice',
           type: 'holiday',
           src_string: '../img/january_tiles/50879485-transparent-texture-of-natural-ice-of-blue-color-for-an-abstract-background.jpg',
           repeat_value: 'no-repeat',
@@ -316,7 +316,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 23,
           user_id: 1,
-          theme: 'ice',
+          theme: 'Ice',
           type: 'week',
           src_string: '../img/january_tiles/white_marble_texture_01_by_goodtextures.jpg',
           repeat_value: 'no-repeat',
@@ -330,7 +330,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 24,
           user_id: 1,
-          theme: 'ice',
+          theme: 'Ice',
           type: 'friday',
           src_string: '../img/january_tiles/Ice-cube-dreamstime_xxl_3038365.png',
           repeat_value: 'no-repeat',

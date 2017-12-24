@@ -8,7 +8,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 1,
           user_id: 1,
-          theme: 'snow',
+          theme: 'Snow',
           type: 'default',
           src_string: '../img/december_tiles/5342733777_083fee0263_b.jpg',
           repeat_value: 'no-repeat',
@@ -22,7 +22,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 2,
           user_id: 1,
-          theme: 'snow',
+          theme: 'Snow',
           type: 'week',
           src_string: '../img/december_tiles/snow-texture--14.jpg',
           repeat_value: 'no-repeat',
@@ -36,7 +36,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 3,
           user_id: 1,
-          theme: 'snow',
+          theme: 'Snow',
           type: 'mtwt',
           src_string: '../img/december_tiles/9479e7d7b1fa6fe9beea06fabf05cd9f.jpg',
           repeat_value: 'no-repeat',
@@ -50,7 +50,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 4,
           user_id: 1,
-          theme: 'snow',
+          theme: 'Snow',
           type: 'friday',
           src_string: '../img/december_tiles/snow_texture_2_by_arctic_stock.jpg',
           repeat_value: 'no-repeat',
@@ -64,7 +64,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 5,
           user_id: 1,
-          theme: 'snow',
+          theme: 'Snow',
           type: 'saturday',
           src_string: '../img/december_tiles/snow-651409_1920.jpg',
           repeat_value: 'no-repeat',
@@ -78,7 +78,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 6,
           user_id: 1,
-          theme: 'snow',
+          theme: 'Snow',
           type: 'sunday',
           src_string: '../img/december_tiles/snow-705109_1920.jpg',
           repeat_value: 'no-repeat',
@@ -92,7 +92,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 7,
           user_id: 1,
-          theme: 'snow',
+          theme: 'Snow',
           type: 'holiday',
           src_string: '../img/december_tiles/night-1033150_1920.jpg',
           repeat_value: 'no-repeat',
@@ -106,7 +106,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 8,
           user_id: 1,
-          theme: 'snow',
+          theme: 'Snow',
           type: 'week',
           src_string: '../img/december_tiles/austria-88739_1920.jpg',
           repeat_value: 'no-repeat',
@@ -120,7 +120,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 9,
           user_id: 1,
-          theme: 'snow',
+          theme: 'Snow',
           type: 'friday',
           src_string: '../img/december_tiles/snow-landscape-986916_1920.jpg',
           repeat_value: 'no-repeat',
@@ -134,7 +134,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 10,
           user_id: 1,
-          theme: 'snow',
+          theme: 'Snow',
           type: 'saturday',
           src_string: '../img/december_tiles/sedrun-2356548_1920.jpg',
           repeat_value: 'no-repeat',
@@ -148,7 +148,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 11,
           user_id: 1,
-          theme: 'snow',
+          theme: 'Snow',
           type: 'sunday',
           src_string: '../img/december_tiles/foot-16491_1920.jpg',
           repeat_value: 'no-repeat',
@@ -162,7 +162,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 12,
           user_id: 1,
-          theme: 'snow',
+          theme: 'Snow',
           type: 'holiday',
           src_string: '../img/december_tiles/snowflake-1596983_1920.jpg',
           repeat_value: 'no-repeat',
@@ -176,7 +176,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 13,
           user_id: 1,
-          theme: 'snow',
+          theme: 'Snow',
           type: 'week',
           src_string: '../img/december_tiles/trail-586804_1920.jpg',
           repeat_value: 'no-repeat',

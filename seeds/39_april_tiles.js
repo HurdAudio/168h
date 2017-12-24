@@ -8,7 +8,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 1,
           user_id: 1,
-          theme: 'water',
+          theme: 'Water',
           type: 'default',
           src_string: '../img/april_tiles/banner-2143726_1920.jpg',
           repeat_value: 'no-repeat',
@@ -22,7 +22,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 2,
           user_id: 1,
-          theme: 'water',
+          theme: 'Water',
           type: 'week',
           src_string: '../img/april_tiles/waterweek3.jpg',
           repeat_value: 'no-repeat',
@@ -36,7 +36,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 3,
           user_id: 1,
-          theme: 'water',
+          theme: 'Water',
           type: 'mtwt',
           src_string: '../img/april_tiles/sea-2055969_1920.jpg',
           repeat_value: 'no-repeat',
@@ -50,7 +50,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 4,
           user_id: 1,
-          theme: 'water',
+          theme: 'Water',
           type: 'friday',
           src_string: '../img/april_tiles/water-1579915_1920.jpg',
           repeat_value: 'no-repeat',
@@ -64,7 +64,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 5,
           user_id: 1,
-          theme: 'water',
+          theme: 'Water',
           type: 'saturday',
           src_string: '../img/april_tiles/waves-circles-285359_1920.jpg',
           repeat_value: 'no-repeat',
@@ -78,7 +78,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 6,
           user_id: 1,
-          theme: 'water',
+          theme: 'Water',
           type: 'sunday',
           src_string: '../img/april_tiles/ripples-in-water.jpg',
           repeat_value: 'no-repeat',
@@ -92,7 +92,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 7,
           user_id: 1,
-          theme: 'water',
+          theme: 'Water',
           type: 'holiday',
           src_string: '../img/april_tiles/1813624294001_5488970555001_cq5-9044923698769408782preview-thumbnail.jpg',
           repeat_value: 'no-repeat',
@@ -106,7 +106,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 8,
           user_id: 1,
-          theme: 'water',
+          theme: 'Water',
           type: 'week',
           src_string: '../img/april_tiles/waterweek.jpg',
           repeat_value: 'no-repeat',
@@ -120,7 +120,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 9,
           user_id: 1,
-          theme: 'water',
+          theme: 'Water',
           type: 'friday',
           src_string: '../img/april_tiles/e-golden-water-6.jpg',
           repeat_value: 'no-repeat',
@@ -134,7 +134,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 10,
           user_id: 1,
-          theme: 'water',
+          theme: 'Water',
           type: 'saturday',
           src_string: '../img/april_tiles/wg037_water_patterns_1.jpg',
           repeat_value: 'no-repeat',
@@ -148,7 +148,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 11,
           user_id: 1,
-          theme: 'water',
+          theme: 'Water',
           type: 'sunday',
           src_string: '../img/april_tiles/abstract-1283722_1920.jpg',
           repeat_value: 'no-repeat',
@@ -162,7 +162,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 12,
           user_id: 1,
-          theme: 'water',
+          theme: 'Water',
           type: 'sunday',
           src_string: '../img/april_tiles/drop-of-water-166735_1920.jpg',
           repeat_value: 'no-repeat',
@@ -176,7 +176,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 13,
           user_id: 1,
-          theme: 'water',
+          theme: 'Water',
           type: 'week',
           src_string: '../img/april_tiles/waterweek2.jpg',
           repeat_value: 'no-repeat',
@@ -190,7 +190,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 14,
           user_id: 1,
-          theme: 'water',
+          theme: 'Water',
           type: 'friday',
           src_string: '../img/april_tiles/water-1281109_1920.jpg',
           repeat_value: 'no-repeat',
@@ -204,7 +204,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 15,
           user_id: 1,
-          theme: 'water',
+          theme: 'Water',
           type: 'saturday',
           src_string: '../img/april_tiles/water-6300_1920.jpg',
           repeat_value: 'no-repeat',
@@ -218,7 +218,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 16,
           user_id: 1,
-          theme: 'water',
+          theme: 'Water',
           type: 'sunday',
           src_string: '../img/april_tiles/kodaikanal-1292131_1920.jpg',
           repeat_value: 'no-repeat',
@@ -232,7 +232,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 17,
           user_id: 1,
-          theme: 'water',
+          theme: 'Water',
           type: 'holiday',
           src_string: '../img/april_tiles/duck-2396740_1920.jpg',
           repeat_value: 'no-repeat',
@@ -246,7 +246,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 18,
           user_id: 1,
-          theme: 'water',
+          theme: 'Water',
           type: 'week',
           src_string: '../img/april_tiles/water-975974_1920.jpg',
           repeat_value: 'no-repeat',
@@ -260,7 +260,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 19,
           user_id: 1,
-          theme: 'water',
+          theme: 'Water',
           type: 'friday',
           src_string: '../img/april_tiles/drip-101052_1920.jpg',
           repeat_value: 'no-repeat',
@@ -274,7 +274,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 20,
           user_id: 1,
-          theme: 'water',
+          theme: 'Water',
           type: 'saturday',
           src_string: '../img/april_tiles/air-bubbles-167821_1920.jpg',
           repeat_value: 'no-repeat',
@@ -288,7 +288,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 21,
           user_id: 1,
-          theme: 'water',
+          theme: 'Water',
           type: 'sunday',
           src_string: '../img/april_tiles/waters-616023_1920.jpg',
           repeat_value: 'no-repeat',

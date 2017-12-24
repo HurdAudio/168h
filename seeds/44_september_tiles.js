@@ -8,7 +8,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 1,
           user_id: 1,
-          theme: 'leather',
+          theme: 'Leather',
           type: 'default',
           src_string: '../img/september_tiles/leatherDefault.jpg',
           repeat_value: 'no-repeat',
@@ -22,7 +22,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 2,
           user_id: 1,
-          theme: 'leather',
+          theme: 'Leather',
           type: 'week',
           src_string: '../img/september_tiles/leatherWeek1.jpg',
           repeat_value: 'no-repeat',
@@ -36,7 +36,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 3,
           user_id: 1,
-          theme: 'leather',
+          theme: 'Leather',
           type: 'mtwt',
           src_string: '../img/september_tiles/mtwtLeather.jpeg',
           repeat_value: 'no-repeat',
@@ -50,7 +50,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 4,
           user_id: 1,
-          theme: 'leather',
+          theme: 'Leather',
           type: 'friday',
           src_string: '../img/september_tiles/leather-texture.jpg',
           repeat_value: 'no-repeat',
@@ -64,7 +64,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 5,
           user_id: 1,
-          theme: 'leather',
+          theme: 'Leather',
           type: 'saturday',
           src_string: '../img/september_tiles/0058-leather-texture-seamless.jpg',
           repeat_value: 'no-repeat',
@@ -78,7 +78,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 6,
           user_id: 1,
-          theme: 'leather',
+          theme: 'Leather',
           type: 'sunday',
           src_string: '../img/september_tiles/baseball-2472519_1920.jpg',
           repeat_value: 'no-repeat',
@@ -92,7 +92,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 7,
           user_id: 1,
-          theme: 'leather',
+          theme: 'Leather',
           type: 'holiday',
           src_string: '../img/september_tiles/art-leather-529602_1920.jpg',
           repeat_value: 'no-repeat',
@@ -106,7 +106,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 8,
           user_id: 1,
-          theme: 'leather',
+          theme: 'Leather',
           type: 'week',
           src_string: '../img/september_tiles/art-leather-579789_1920.jpg',
           repeat_value: 'no-repeat',
@@ -120,7 +120,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 9,
           user_id: 1,
-          theme: 'leather',
+          theme: 'Leather',
           type: 'friday',
           src_string: '../img/september_tiles/leather-532734_1920.jpg',
           repeat_value: 'no-repeat',
@@ -134,7 +134,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 10,
           user_id: 1,
-          theme: 'leather',
+          theme: 'Leather',
           type: 'saturday',
           src_string: '../img/september_tiles/chair-2822929_1920.jpg',
           repeat_value: 'no-repeat',
@@ -148,7 +148,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 11,
           user_id: 1,
-          theme: 'leather',
+          theme: 'Leather',
           type: 'sunday',
           src_string: '../img/september_tiles/books-584999_1920.jpg',
           repeat_value: 'no-repeat',
@@ -162,7 +162,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 12,
           user_id: 1,
-          theme: 'leather',
+          theme: 'Leather',
           type: 'holiday',
           src_string: '../img/september_tiles/shoes-597396_1920.jpg',
           repeat_value: 'no-repeat',
@@ -176,7 +176,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 13,
           user_id: 1,
-          theme: 'leather',
+          theme: 'Leather',
           type: 'week',
           src_string: '../img/september_tiles/zip-1509757_1920.jpg',
           repeat_value: 'no-repeat',
@@ -190,7 +190,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 14,
           user_id: 1,
-          theme: 'leather',
+          theme: 'Leather',
           type: 'friday',
           src_string: '../img/september_tiles/leather-1331954_1920.jpg',
           repeat_value: 'no-repeat',
@@ -204,7 +204,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 15,
           user_id: 1,
-          theme: 'leather',
+          theme: 'Leather',
           type: 'saturday',
           src_string: '../img/september_tiles/handle-2474417_1920.jpg',
           repeat_value: 'no-repeat',
@@ -218,7 +218,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 16,
           user_id: 1,
-          theme: 'leather',
+          theme: 'Leather',
           type: 'sunday',
           src_string: '../img/september_tiles/baseball-336631_1920.jpg',
           repeat_value: 'no-repeat',

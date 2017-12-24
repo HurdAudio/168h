@@ -5,6 +5,7 @@
   var monthClock = false;
   var profileClock = true;
   var currentUserId;
+  var toggle = {};
 
 
   function setClock(){
@@ -182,6 +183,849 @@
       vm.addNewGoal = addNewGoal;
       vm.tasksReport = tasksReport;
       vm.tasksReportDone = tasksReportDone;
+      vm.tilesCurratorManagement = tilesCurratorManagement;
+      vm.closeTilesCurratorManager = closeTilesCurratorManager;
+      vm.toggleTilesCurratorMonth = toggleTilesCurratorMonth;
+      vm.tileHoverColor = tileHoverColor;
+      vm.tileClick = tileClick;
+
+      function tileClick(tileId, color, src, repeatVal, sizeVal) {
+        if (toggle[tileId]) {
+          document.getElementById(tileId).parentNode.setAttribute("style", "border: solid 1px transparent; background-image: url(" + src + "); background-repeat: " + repeatVal + "; background-size: " + sizeVal + ";");
+          toggle[tileId] = false;
+        } else {
+          document.getElementById(tileId).parentNode.setAttribute("style", "border: solid 10px " + color + "; background-image: url(" + src + "); background-repeat: " + repeatVal + "; background-size: " + sizeVal + ";");
+          toggle[tileId] = true;
+        }
+      }
+
+
+      function tileHoverColor(element, color) {
+        document.getElementById(element).setAttribute("style", "color:" + color + ";");
+      }
+
+      function displayTiles(tileMonth) {
+        let januaryTilesTheme = document.getElementById('januaryTilesTheme');
+        let februaryTilesTheme = document.getElementById('februaryTilesTheme');
+        let marchTilesTheme = document.getElementById('marchTilesTheme');
+        let aprilTilesTheme = document.getElementById('aprilTilesTheme');
+        let mayTilesTheme = document.getElementById('mayTilesTheme');
+        let juneTilesTheme = document.getElementById('juneTilesTheme');
+        let julyTilesTheme = document.getElementById('julyTilesTheme');
+        let augustTilesTheme = document.getElementById('augustTilesTheme');
+        let septemberTilesTheme = document.getElementById('septemberTilesTheme');
+        let octoberTilesTheme = document.getElementById('octoberTilesTheme');
+        let novemberTilesTheme = document.getElementById('novemberTilesTheme');
+        let decemberTilesTheme = document.getElementById('decemberTilesTheme');
+
+        $http.get(`/${tileMonth}/${currentUserId}`)
+        .then(tilesData=>{
+          let tiles = tilesData.data;
+          if (tiles.length > 0) {
+
+            switch(tileMonth) {
+              case('january_tilesbyuser'):
+                for (let i = 0; i < tiles.length; i++) {
+                  tiles[i].randomDate = Math.floor(Math.random() * 31) + 1;
+                  toggle[tiles[i].id] = false;
+                }
+                if (tiles[0].theme !== '') {
+                  januaryTilesTheme.innerHTML = 'Theme: ' + tiles[0].theme;
+                  januaryTilesTheme.setAttribute("style", "display: initial;");
+                }
+                vm.janDefaultTiles = tiles.filter(square=>{
+                  return(square.type === 'default');
+                });
+                vm.janWeekTiles = tiles.filter(square=>{
+                  return(square.type === 'week');
+                });
+                vm.janMTWTTiles = tiles.filter(square=>{
+                  return(square.type === 'mtwt');
+                });
+                vm.janFridayTiles = tiles.filter(square=>{
+                  return(square.type === 'friday');
+                });
+                vm.janSaturdayTiles = tiles.filter(square=>{
+                  return(square.type === 'saturday');
+                });
+                vm.janSundayTiles = tiles.filter(square=>{
+                  return(square.type === 'sunday');
+                });
+                vm.janHolidayTiles = tiles.filter(square=>{
+                  return(square.type === 'holiday');
+                });
+                break;
+              case('february_tilesbyuser'):
+                for (let i = 0; i < tiles.length; i++) {
+                  tiles[i].randomDate = Math.floor(Math.random() * 29) + 1;
+                  toggle[tiles[i].id] = false;
+                }
+                if (tiles[0].theme !== '') {
+                  februaryTilesTheme.innerHTML = 'Theme: ' + tiles[0].theme;
+                  februaryTilesTheme.setAttribute("style", "display: initial;");
+                }
+                vm.febDefaultTiles = tiles.filter(square=>{
+                  return(square.type === 'default');
+                });
+                vm.febWeekTiles = tiles.filter(square=>{
+                  return(square.type === 'week');
+                });
+                vm.febMTWTTiles = tiles.filter(square=>{
+                  return(square.type === 'mtwt');
+                });
+                vm.febFridayTiles = tiles.filter(square=>{
+                  return(square.type === 'friday');
+                });
+                vm.febSaturdayTiles = tiles.filter(square=>{
+                  return(square.type === 'saturday');
+                });
+                vm.febSundayTiles = tiles.filter(square=>{
+                  return(square.type === 'sunday');
+                });
+                vm.febHolidayTiles = tiles.filter(square=>{
+                  return(square.type === 'holiday');
+                });
+                break;
+              case('march_tilesbyuser'):
+                for (let i = 0; i < tiles.length; i++) {
+                  tiles[i].randomDate = Math.floor(Math.random() * 31) + 1;
+                  toggle[tiles[i].id] = false;
+                }
+                if (tiles[0].theme !== '') {
+                  marchTilesTheme.innerHTML = 'Theme: ' + tiles[0].theme;
+                  marchTilesTheme.setAttribute("style", "display: initial;");
+                }
+                vm.marDefaultTiles = tiles.filter(square=>{
+                  return(square.type === 'default');
+                });
+                vm.marWeekTiles = tiles.filter(square=>{
+                  return(square.type === 'week');
+                });
+                vm.marMTWTTiles = tiles.filter(square=>{
+                  return(square.type === 'mtwt');
+                });
+                vm.marFridayTiles = tiles.filter(square=>{
+                  return(square.type === 'friday');
+                });
+                vm.marSaturdayTiles = tiles.filter(square=>{
+                  return(square.type === 'saturday');
+                });
+                vm.marSundayTiles = tiles.filter(square=>{
+                  return(square.type === 'sunday');
+                });
+                vm.marHolidayTiles = tiles.filter(square=>{
+                  return(square.type === 'holiday');
+                });
+                break;
+              case('april_tilesbyuser'):
+                for (let i = 0; i < tiles.length; i++) {
+                  tiles[i].randomDate = Math.floor(Math.random() * 30) + 1;
+                  toggle[tiles[i].id] = false;
+                }
+                if (tiles[0].theme !== '') {
+                  aprilTilesTheme.innerHTML = 'Theme: ' + tiles[0].theme;
+                  aprilTilesTheme.setAttribute("style", "display: initial;");
+                }
+                vm.aprDefaultTiles = tiles.filter(square=>{
+                  return(square.type === 'default');
+                });
+                vm.aprWeekTiles = tiles.filter(square=>{
+                  return(square.type === 'week');
+                });
+                vm.aprMTWTTiles = tiles.filter(square=>{
+                  return(square.type === 'mtwt');
+                });
+                vm.aprFridayTiles = tiles.filter(square=>{
+                  return(square.type === 'friday');
+                });
+                vm.aprSaturdayTiles = tiles.filter(square=>{
+                  return(square.type === 'saturday');
+                });
+                vm.aprSundayTiles = tiles.filter(square=>{
+                  return(square.type === 'sunday');
+                });
+                vm.aprHolidayTiles = tiles.filter(square=>{
+                  return(square.type === 'holiday');
+                });
+                break;
+              case('may_tilesbyuser'):
+                for (let i = 0; i < tiles.length; i++) {
+                  tiles[i].randomDate = Math.floor(Math.random() * 31) + 1;
+                  toggle[tiles[i].id] = false;
+                }
+                if (tiles[0].theme !== '') {
+                  mayTilesTheme.innerHTML = 'Theme: ' + tiles[0].theme;
+                  mayTilesTheme.setAttribute("style", "display: initial;");
+                }
+                vm.mayDefaultTiles = tiles.filter(square=>{
+                  return(square.type === 'default');
+                });
+                vm.mayWeekTiles = tiles.filter(square=>{
+                  return(square.type === 'week');
+                });
+                vm.mayMTWTTiles = tiles.filter(square=>{
+                  return(square.type === 'mtwt');
+                });
+                vm.mayFridayTiles = tiles.filter(square=>{
+                  return(square.type === 'friday');
+                });
+                vm.maySaturdayTiles = tiles.filter(square=>{
+                  return(square.type === 'saturday');
+                });
+                vm.maySundayTiles = tiles.filter(square=>{
+                  return(square.type === 'sunday');
+                });
+                vm.mayHolidayTiles = tiles.filter(square=>{
+                  return(square.type === 'holiday');
+                });
+                break;
+              case('june_tilesbyuser'):
+                for (let i = 0; i < tiles.length; i++) {
+                  tiles[i].randomDate = Math.floor(Math.random() * 30) + 1;
+                  toggle[tiles[i].id] = false;
+                }
+                if (tiles[0].theme !== '') {
+                  juneTilesTheme.innerHTML = 'Theme: ' + tiles[0].theme;
+                  juneTilesTheme.setAttribute("style", "display: initial;");
+                }
+                vm.junDefaultTiles = tiles.filter(square=>{
+                  return(square.type === 'default');
+                });
+                vm.junWeekTiles = tiles.filter(square=>{
+                  return(square.type === 'week');
+                });
+                vm.junMTWTTiles = tiles.filter(square=>{
+                  return(square.type === 'mtwt');
+                });
+                vm.junFridayTiles = tiles.filter(square=>{
+                  return(square.type === 'friday');
+                });
+                vm.junSaturdayTiles = tiles.filter(square=>{
+                  return(square.type === 'saturday');
+                });
+                vm.junSundayTiles = tiles.filter(square=>{
+                  return(square.type === 'sunday');
+                });
+                vm.junHolidayTiles = tiles.filter(square=>{
+                  return(square.type === 'holiday');
+                });
+                break;
+              case('july_tilesbyuser'):
+                for (let i = 0; i < tiles.length; i++) {
+                  tiles[i].randomDate = Math.floor(Math.random() * 31) + 1;
+                  toggle[tiles[i].id] = false;
+                }
+                if (tiles[0].theme !== '') {
+                  julyTilesTheme.innerHTML = 'Theme: ' + tiles[0].theme;
+                  julyTilesTheme.setAttribute("style", "display: initial;");
+                }
+                vm.julDefaultTiles = tiles.filter(square=>{
+                  return(square.type === 'default');
+                });
+                vm.julWeekTiles = tiles.filter(square=>{
+                  return(square.type === 'week');
+                });
+                vm.julMTWTTiles = tiles.filter(square=>{
+                  return(square.type === 'mtwt');
+                });
+                vm.julFridayTiles = tiles.filter(square=>{
+                  return(square.type === 'friday');
+                });
+                vm.julSaturdayTiles = tiles.filter(square=>{
+                  return(square.type === 'saturday');
+                });
+                vm.julSundayTiles = tiles.filter(square=>{
+                  return(square.type === 'sunday');
+                });
+                vm.julHolidayTiles = tiles.filter(square=>{
+                  return(square.type === 'holiday');
+                });
+                break;
+              case('august_tilesbyuser'):
+                for (let i = 0; i < tiles.length; i++) {
+                  tiles[i].randomDate = Math.floor(Math.random() * 31) + 1;
+                  toggle[tiles[i].id] = false;
+                }
+                if (tiles[0].theme !== '') {
+                  augustTilesTheme.innerHTML = 'Theme: ' + tiles[0].theme;
+                  augustTilesTheme.setAttribute("style", "display: initial;");
+                }
+                vm.augDefaultTiles = tiles.filter(square=>{
+                  return(square.type === 'default');
+                });
+                vm.augWeekTiles = tiles.filter(square=>{
+                  return(square.type === 'week');
+                });
+                vm.augMTWTTiles = tiles.filter(square=>{
+                  return(square.type === 'mtwt');
+                });
+                vm.augFridayTiles = tiles.filter(square=>{
+                  return(square.type === 'friday');
+                });
+                vm.augSaturdayTiles = tiles.filter(square=>{
+                  return(square.type === 'saturday');
+                });
+                vm.augSundayTiles = tiles.filter(square=>{
+                  return(square.type === 'sunday');
+                });
+                vm.augHolidayTiles = tiles.filter(square=>{
+                  return(square.type === 'holiday');
+                });
+                break;
+              case('september_tilesbyuser'):
+                for (let i = 0; i < tiles.length; i++) {
+                  tiles[i].randomDate = Math.floor(Math.random() * 30) + 1;
+                  toggle[tiles[i].id] = false;
+                }
+                if (tiles[0].theme !== '') {
+                  septemberTilesTheme.innerHTML = 'Theme: ' + tiles[0].theme;
+                  septemberTilesTheme.setAttribute("style", "display: initial;");
+                }
+                vm.sepDefaultTiles = tiles.filter(square=>{
+                  return(square.type === 'default');
+                });
+                vm.sepWeekTiles = tiles.filter(square=>{
+                  return(square.type === 'week');
+                });
+                vm.sepMTWTTiles = tiles.filter(square=>{
+                  return(square.type === 'mtwt');
+                });
+                vm.sepFridayTiles = tiles.filter(square=>{
+                  return(square.type === 'friday');
+                });
+                vm.sepSaturdayTiles = tiles.filter(square=>{
+                  return(square.type === 'saturday');
+                });
+                vm.sepSundayTiles = tiles.filter(square=>{
+                  return(square.type === 'sunday');
+                });
+                vm.sepHolidayTiles = tiles.filter(square=>{
+                  return(square.type === 'holiday');
+                });
+                break;
+              case('october_tilesbyuser'):
+                for (let i = 0; i < tiles.length; i++) {
+                  tiles[i].randomDate = Math.floor(Math.random() * 31) + 1;
+                  toggle[tiles[i].id] = false;
+                }
+                if (tiles[0].theme !== '') {
+                  octoberTilesTheme.innerHTML = 'Theme: ' + tiles[0].theme;
+                  octoberTilesTheme.setAttribute("style", "display: initial;");
+                }
+                vm.octDefaultTiles = tiles.filter(square=>{
+                  return(square.type === 'default');
+                });
+                vm.octWeekTiles = tiles.filter(square=>{
+                  return(square.type === 'week');
+                });
+                vm.octMTWTTiles = tiles.filter(square=>{
+                  return(square.type === 'mtwt');
+                });
+                vm.octFridayTiles = tiles.filter(square=>{
+                  return(square.type === 'friday');
+                });
+                vm.octSaturdayTiles = tiles.filter(square=>{
+                  return(square.type === 'saturday');
+                });
+                vm.octSundayTiles = tiles.filter(square=>{
+                  return(square.type === 'sunday');
+                });
+                vm.octHolidayTiles = tiles.filter(square=>{
+                  return(square.type === 'holiday');
+                });
+                break;
+              case('november_tilesbyuser'):
+                for (let i = 0; i < tiles.length; i++) {
+                  tiles[i].randomDate = Math.floor(Math.random() * 30) + 1;
+                  toggle[tiles[i].id] = false;
+                }
+                if (tiles[0].theme !== '') {
+                  novemberTilesTheme.innerHTML = 'Theme: ' + tiles[0].theme;
+                  novemberTilesTheme.setAttribute("style", "display: initial;");
+                }
+                vm.novDefaultTiles = tiles.filter(square=>{
+                  return(square.type === 'default');
+                });
+                vm.novWeekTiles = tiles.filter(square=>{
+                  return(square.type === 'week');
+                });
+                vm.novMTWTTiles = tiles.filter(square=>{
+                  return(square.type === 'mtwt');
+                });
+                vm.novFridayTiles = tiles.filter(square=>{
+                  return(square.type === 'friday');
+                });
+                vm.novSaturdayTiles = tiles.filter(square=>{
+                  return(square.type === 'saturday');
+                });
+                vm.novSundayTiles = tiles.filter(square=>{
+                  return(square.type === 'sunday');
+                });
+                vm.novHolidayTiles = tiles.filter(square=>{
+                  return(square.type === 'holiday');
+                });
+                break;
+              case('december_tilesbyuser'):
+                for (let i = 0; i < tiles.length; i++) {
+                  tiles[i].randomDate = Math.floor(Math.random() * 31) + 1;
+                  toggle[tiles[i].id] = false;
+                }
+                if (tiles[0].theme !== '') {
+                  decemberTilesTheme.innerHTML = 'Theme: ' + tiles[0].theme;
+                  decemberTilesTheme.setAttribute("style", "display: initial;");
+                }
+                vm.decDefaultTiles = tiles.filter(square=>{
+                  return(square.type === 'default');
+                });
+                vm.decWeekTiles = tiles.filter(square=>{
+                  return(square.type === 'week');
+                });
+                vm.decMTWTTiles = tiles.filter(square=>{
+                  return(square.type === 'mtwt');
+                });
+                vm.decFridayTiles = tiles.filter(square=>{
+                  return(square.type === 'friday');
+                });
+                vm.decSaturdayTiles = tiles.filter(square=>{
+                  return(square.type === 'saturday');
+                });
+                vm.decSundayTiles = tiles.filter(square=>{
+                  return(square.type === 'sunday');
+                });
+                vm.decHolidayTiles = tiles.filter(square=>{
+                  return(square.type === 'holiday');
+                });
+                break;
+              default:
+                console.log('month not supported');
+            }
+          }
+        });
+      }
+
+      function toggleTilesCurratorMonth(month) {
+        let januaryTilesCurratorToggleDiv = document.getElementById('januaryTilesCurratorToggleDiv');
+        let januaryTilesCurratorDisplay = document.getElementById('januaryTilesCurratorDisplay');
+        let februaryTilesCurratorToggleDiv = document.getElementById('februaryTilesCurratorToggleDiv');
+        let februaryTilesCurratorDisplay = document.getElementById('februaryTilesCurratorDisplay');
+        let marchTilesCurratorToggleDiv = document.getElementById('marchTilesCurratorToggleDiv');
+        let marchTilesCurratorDisplay = document.getElementById('marchTilesCurratorDisplay');
+        let aprilTilesCurratorToggleDiv = document.getElementById('aprilTilesCurratorToggleDiv');
+        let aprilTilesCurratorDisplay = document.getElementById('aprilTilesCurratorDisplay');
+        let mayTilesCurratorToggleDiv = document.getElementById('mayTilesCurratorToggleDiv');
+        let mayTilesCurratorDisplay = document.getElementById('mayTilesCurratorDisplay');
+        let juneTilesCurratorToggleDiv = document.getElementById('juneTilesCurratorToggleDiv');
+        let juneTilesCurratorDisplay = document.getElementById('juneTilesCurratorDisplay');
+        let julyTilesCurratorToggleDiv = document.getElementById('julyTilesCurratorToggleDiv');
+        let julyTilesCurratorDisplay = document.getElementById('julyTilesCurratorDisplay');
+        let augustTilesCurratorToggleDiv = document.getElementById('augustTilesCurratorToggleDiv');
+        let augustTilesCurratorDisplay = document.getElementById('augustTilesCurratorDisplay');
+        let septemberTilesCurratorToggleDiv = document.getElementById('septemberTilesCurratorToggleDiv');
+        let septemberTilesCurratorDisplay = document.getElementById('septemberTilesCurratorDisplay');
+        let octoberTilesCurratorToggleDiv = document.getElementById('octoberTilesCurratorToggleDiv');
+        let octoberTilesCurratorDisplay = document.getElementById('octoberTilesCurratorDisplay');
+        let novemberTilesCurratorToggleDiv = document.getElementById('novemberTilesCurratorToggleDiv');
+        let novemberTilesCurratorDisplay = document.getElementById('novemberTilesCurratorDisplay');
+        let decemberTilesCurratorToggleDiv = document.getElementById('decemberTilesCurratorToggleDiv');
+        let decemberTilesCurratorDisplay = document.getElementById('decemberTilesCurratorDisplay');
+
+        switch(month) {
+          case('January'):
+            januaryTilesCurratorToggleDiv.setAttribute("style", "display: none;");
+            januaryTilesCurratorDisplay.setAttribute("style", "display: initial;");
+            februaryTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            februaryTilesCurratorDisplay.setAttribute("style", "display: none;");
+            marchTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            marchTilesCurratorDisplay.setAttribute("style", "display: none;");
+            aprilTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            aprilTilesCurratorDisplay.setAttribute("style", "display: none;");
+            mayTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            mayTilesCurratorDisplay.setAttribute("style", "display: none;");
+            juneTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            juneTilesCurratorDisplay.setAttribute("style", "display: none;");
+            julyTilesCurratorToggleDiv.setAttribute("style", "display: intitial;");
+            julyTilesCurratorDisplay.setAttribute("style", "display: none;");
+            augustTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            augustTilesCurratorDisplay.setAttribute("style", "display: none;");
+            septemberTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            septemberTilesCurratorDisplay.setAttribute("style", "display: none;");
+            octoberTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            octoberTilesCurratorDisplay.setAttribute("style", "display: none;");
+            novemberTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            novemberTilesCurratorDisplay.setAttribute("style", "display: none;");
+            decemberTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            decemberTilesCurratorDisplay.setAttribute("style", "display: none;");
+            displayTiles('january_tilesbyuser');
+            break;
+          case('February'):
+            januaryTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            januaryTilesCurratorDisplay.setAttribute("style", "display: none;");
+            februaryTilesCurratorToggleDiv.setAttribute("style", "display: none;");
+            februaryTilesCurratorDisplay.setAttribute("style", "display: initial;");
+            marchTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            marchTilesCurratorDisplay.setAttribute("style", "display: none;");
+            aprilTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            aprilTilesCurratorDisplay.setAttribute("style", "display: none;");
+            mayTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            mayTilesCurratorDisplay.setAttribute("style", "display: none;");
+            juneTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            juneTilesCurratorDisplay.setAttribute("style", "display: none;");
+            julyTilesCurratorToggleDiv.setAttribute("style", "display: intitial;");
+            julyTilesCurratorDisplay.setAttribute("style", "display: none;");
+            augustTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            augustTilesCurratorDisplay.setAttribute("style", "display: none;");
+            septemberTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            septemberTilesCurratorDisplay.setAttribute("style", "display: none;");
+            octoberTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            octoberTilesCurratorDisplay.setAttribute("style", "display: none;");
+            novemberTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            novemberTilesCurratorDisplay.setAttribute("style", "display: none;");
+            decemberTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            decemberTilesCurratorDisplay.setAttribute("style", "display: none;");
+            displayTiles('february_tilesbyuser');
+            break;
+          case('March'):
+            januaryTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            januaryTilesCurratorDisplay.setAttribute("style", "display: none;");
+            februaryTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            februaryTilesCurratorDisplay.setAttribute("style", "display: none;");
+            marchTilesCurratorToggleDiv.setAttribute("style", "display: none;");
+            marchTilesCurratorDisplay.setAttribute("style", "display: initial;");
+            aprilTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            aprilTilesCurratorDisplay.setAttribute("style", "display: none;");
+            mayTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            mayTilesCurratorDisplay.setAttribute("style", "display: none;");
+            juneTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            juneTilesCurratorDisplay.setAttribute("style", "display: none;");
+            julyTilesCurratorToggleDiv.setAttribute("style", "display: intitial;");
+            julyTilesCurratorDisplay.setAttribute("style", "display: none;");
+            augustTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            augustTilesCurratorDisplay.setAttribute("style", "display: none;");
+            septemberTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            septemberTilesCurratorDisplay.setAttribute("style", "display: none;");
+            octoberTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            octoberTilesCurratorDisplay.setAttribute("style", "display: none;");
+            novemberTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            novemberTilesCurratorDisplay.setAttribute("style", "display: none;");
+            decemberTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            decemberTilesCurratorDisplay.setAttribute("style", "display: none;");
+            displayTiles('march_tilesbyuser');
+            break;
+          case('April'):
+            januaryTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            januaryTilesCurratorDisplay.setAttribute("style", "display: none;");
+            februaryTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            februaryTilesCurratorDisplay.setAttribute("style", "display: none;");
+            marchTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            marchTilesCurratorDisplay.setAttribute("style", "display: none;");
+            aprilTilesCurratorToggleDiv.setAttribute("style", "display: none;");
+            aprilTilesCurratorDisplay.setAttribute("style", "display: initial;");
+            mayTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            mayTilesCurratorDisplay.setAttribute("style", "display: none;");
+            juneTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            juneTilesCurratorDisplay.setAttribute("style", "display: none;");
+            julyTilesCurratorToggleDiv.setAttribute("style", "display: intitial;");
+            julyTilesCurratorDisplay.setAttribute("style", "display: none;");
+            augustTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            augustTilesCurratorDisplay.setAttribute("style", "display: none;");
+            septemberTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            septemberTilesCurratorDisplay.setAttribute("style", "display: none;");
+            octoberTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            octoberTilesCurratorDisplay.setAttribute("style", "display: none;");
+            novemberTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            novemberTilesCurratorDisplay.setAttribute("style", "display: none;");
+            decemberTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            decemberTilesCurratorDisplay.setAttribute("style", "display: none;");
+            displayTiles('april_tilesbyuser');
+            break;
+          case('May'):
+            januaryTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            januaryTilesCurratorDisplay.setAttribute("style", "display: none;");
+            februaryTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            februaryTilesCurratorDisplay.setAttribute("style", "display: none;");
+            marchTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            marchTilesCurratorDisplay.setAttribute("style", "display: none;");
+            aprilTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            aprilTilesCurratorDisplay.setAttribute("style", "display: none;");
+            mayTilesCurratorToggleDiv.setAttribute("style", "display: none;");
+            mayTilesCurratorDisplay.setAttribute("style", "display: initial;");
+            juneTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            juneTilesCurratorDisplay.setAttribute("style", "display: none;");
+            julyTilesCurratorToggleDiv.setAttribute("style", "display: intitial;");
+            julyTilesCurratorDisplay.setAttribute("style", "display: none;");
+            augustTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            augustTilesCurratorDisplay.setAttribute("style", "display: none;");
+            septemberTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            septemberTilesCurratorDisplay.setAttribute("style", "display: none;");
+            octoberTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            octoberTilesCurratorDisplay.setAttribute("style", "display: none;");
+            novemberTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            novemberTilesCurratorDisplay.setAttribute("style", "display: none;");
+            decemberTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            decemberTilesCurratorDisplay.setAttribute("style", "display: none;");
+            displayTiles('may_tilesbyuser');
+            break;
+          case('June'):
+            januaryTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            januaryTilesCurratorDisplay.setAttribute("style", "display: none;");
+            februaryTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            februaryTilesCurratorDisplay.setAttribute("style", "display: none;");
+            marchTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            marchTilesCurratorDisplay.setAttribute("style", "display: none;");
+            aprilTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            aprilTilesCurratorDisplay.setAttribute("style", "display: none;");
+            mayTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            mayTilesCurratorDisplay.setAttribute("style", "display: none;");
+            juneTilesCurratorToggleDiv.setAttribute("style", "display: none;");
+            juneTilesCurratorDisplay.setAttribute("style", "display: initial;");
+            julyTilesCurratorToggleDiv.setAttribute("style", "display: intitial;");
+            julyTilesCurratorDisplay.setAttribute("style", "display: none;");
+            augustTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            augustTilesCurratorDisplay.setAttribute("style", "display: none;");
+            septemberTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            septemberTilesCurratorDisplay.setAttribute("style", "display: none;");
+            octoberTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            octoberTilesCurratorDisplay.setAttribute("style", "display: none;");
+            novemberTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            novemberTilesCurratorDisplay.setAttribute("style", "display: none;");
+            decemberTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            decemberTilesCurratorDisplay.setAttribute("style", "display: none;");
+            displayTiles('june_tilesbyuser');
+            break;
+          case('July'):
+            januaryTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            januaryTilesCurratorDisplay.setAttribute("style", "display: none;");
+            februaryTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            februaryTilesCurratorDisplay.setAttribute("style", "display: none;");
+            marchTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            marchTilesCurratorDisplay.setAttribute("style", "display: none;");
+            aprilTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            aprilTilesCurratorDisplay.setAttribute("style", "display: none;");
+            mayTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            mayTilesCurratorDisplay.setAttribute("style", "display: none;");
+            juneTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            juneTilesCurratorDisplay.setAttribute("style", "display: none;");
+            julyTilesCurratorToggleDiv.setAttribute("style", "display: none;");
+            julyTilesCurratorDisplay.setAttribute("style", "display: initial;");
+            augustTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            augustTilesCurratorDisplay.setAttribute("style", "display: none;");
+            septemberTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            septemberTilesCurratorDisplay.setAttribute("style", "display: none;");
+            octoberTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            octoberTilesCurratorDisplay.setAttribute("style", "display: none;");
+            novemberTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            novemberTilesCurratorDisplay.setAttribute("style", "display: none;");
+            decemberTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            decemberTilesCurratorDisplay.setAttribute("style", "display: none;");
+            displayTiles('july_tilesbyuser');
+            break;
+          case('August'):
+            januaryTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            januaryTilesCurratorDisplay.setAttribute("style", "display: none;");
+            februaryTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            februaryTilesCurratorDisplay.setAttribute("style", "display: none;");
+            marchTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            marchTilesCurratorDisplay.setAttribute("style", "display: none;");
+            aprilTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            aprilTilesCurratorDisplay.setAttribute("style", "display: none;");
+            mayTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            mayTilesCurratorDisplay.setAttribute("style", "display: none;");
+            juneTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            juneTilesCurratorDisplay.setAttribute("style", "display: none;");
+            julyTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            julyTilesCurratorDisplay.setAttribute("style", "display: none;");
+            augustTilesCurratorToggleDiv.setAttribute("style", "display: none;");
+            augustTilesCurratorDisplay.setAttribute("style", "display: initial;");
+            septemberTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            septemberTilesCurratorDisplay.setAttribute("style", "display: none;");
+            octoberTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            octoberTilesCurratorDisplay.setAttribute("style", "display: none;");
+            novemberTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            novemberTilesCurratorDisplay.setAttribute("style", "display: none;");
+            decemberTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            decemberTilesCurratorDisplay.setAttribute("style", "display: none;");
+            displayTiles('august_tilesbyuser');
+            break;
+          case('September'):
+            januaryTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            januaryTilesCurratorDisplay.setAttribute("style", "display: none;");
+            februaryTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            februaryTilesCurratorDisplay.setAttribute("style", "display: none;");
+            marchTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            marchTilesCurratorDisplay.setAttribute("style", "display: none;");
+            aprilTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            aprilTilesCurratorDisplay.setAttribute("style", "display: none;");
+            mayTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            mayTilesCurratorDisplay.setAttribute("style", "display: none;");
+            juneTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            juneTilesCurratorDisplay.setAttribute("style", "display: none;");
+            julyTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            julyTilesCurratorDisplay.setAttribute("style", "display: none;");
+            augustTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            augustTilesCurratorDisplay.setAttribute("style", "display: none;");
+            septemberTilesCurratorToggleDiv.setAttribute("style", "display: none;");
+            septemberTilesCurratorDisplay.setAttribute("style", "display: initial;");
+            octoberTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            octoberTilesCurratorDisplay.setAttribute("style", "display: none;");
+            novemberTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            novemberTilesCurratorDisplay.setAttribute("style", "display: none;");
+            decemberTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            decemberTilesCurratorDisplay.setAttribute("style", "display: none;");
+            displayTiles('september_tilesbyuser');
+            break;
+          case('October'):
+            januaryTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            januaryTilesCurratorDisplay.setAttribute("style", "display: none;");
+            februaryTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            februaryTilesCurratorDisplay.setAttribute("style", "display: none;");
+            marchTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            marchTilesCurratorDisplay.setAttribute("style", "display: none;");
+            aprilTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            aprilTilesCurratorDisplay.setAttribute("style", "display: none;");
+            mayTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            mayTilesCurratorDisplay.setAttribute("style", "display: none;");
+            juneTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            juneTilesCurratorDisplay.setAttribute("style", "display: none;");
+            julyTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            julyTilesCurratorDisplay.setAttribute("style", "display: none;");
+            augustTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            augustTilesCurratorDisplay.setAttribute("style", "display: none;");
+            septemberTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            septemberTilesCurratorDisplay.setAttribute("style", "display: none;");
+            octoberTilesCurratorToggleDiv.setAttribute("style", "display: none;");
+            octoberTilesCurratorDisplay.setAttribute("style", "display: initial;");
+            novemberTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            novemberTilesCurratorDisplay.setAttribute("style", "display: none;");
+            decemberTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            decemberTilesCurratorDisplay.setAttribute("style", "display: none;");
+            displayTiles('october_tilesbyuser');
+            break;
+          case('November'):
+            januaryTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            januaryTilesCurratorDisplay.setAttribute("style", "display: none;");
+            februaryTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            februaryTilesCurratorDisplay.setAttribute("style", "display: none;");
+            marchTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            marchTilesCurratorDisplay.setAttribute("style", "display: none;");
+            aprilTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            aprilTilesCurratorDisplay.setAttribute("style", "display: none;");
+            mayTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            mayTilesCurratorDisplay.setAttribute("style", "display: none;");
+            juneTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            juneTilesCurratorDisplay.setAttribute("style", "display: none;");
+            julyTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            julyTilesCurratorDisplay.setAttribute("style", "display: none;");
+            augustTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            augustTilesCurratorDisplay.setAttribute("style", "display: none;");
+            septemberTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            septemberTilesCurratorDisplay.setAttribute("style", "display: none;");
+            octoberTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            octoberTilesCurratorDisplay.setAttribute("style", "display: none;");
+            novemberTilesCurratorToggleDiv.setAttribute("style", "display: none;");
+            novemberTilesCurratorDisplay.setAttribute("style", "display: initial;");
+            decemberTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            decemberTilesCurratorDisplay.setAttribute("style", "display: none;");
+            displayTiles('november_tilesbyuser');
+            break;
+          case('December'):
+            januaryTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            januaryTilesCurratorDisplay.setAttribute("style", "display: none;");
+            februaryTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            februaryTilesCurratorDisplay.setAttribute("style", "display: none;");
+            marchTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            marchTilesCurratorDisplay.setAttribute("style", "display: none;");
+            aprilTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            aprilTilesCurratorDisplay.setAttribute("style", "display: none;");
+            mayTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            mayTilesCurratorDisplay.setAttribute("style", "display: none;");
+            juneTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            juneTilesCurratorDisplay.setAttribute("style", "display: none;");
+            julyTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            julyTilesCurratorDisplay.setAttribute("style", "display: none;");
+            augustTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            augustTilesCurratorDisplay.setAttribute("style", "display: none;");
+            septemberTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            septemberTilesCurratorDisplay.setAttribute("style", "display: none;");
+            octoberTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            octoberTilesCurratorDisplay.setAttribute("style", "display: none;");
+            novemberTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+            novemberTilesCurratorDisplay.setAttribute("style", "display: none;");
+            decemberTilesCurratorToggleDiv.setAttribute("style", "display: none;");
+            decemberTilesCurratorDisplay.setAttribute("style", "display: initial;");
+            displayTiles('december_tilesbyuser');
+            break;
+          default:
+            console.log('month not supported');
+        }
+      }
+
+      function closeTilesCurratorManager() {
+        let tilesCuratorManager = document.getElementById('tilesCuratorManager');
+        let tilesCurratorManagerDiv = document.getElementById('tilesCurratorManagerDiv');
+        let tilesCurratorZone = document.getElementById('tilesCurratorZone');
+        let januaryTilesCurratorToggleDiv = document.getElementById('januaryTilesCurratorToggleDiv');
+        let januaryTilesCurratorDisplay = document.getElementById('januaryTilesCurratorDisplay');
+        let februaryTilesCurratorToggleDiv = document.getElementById('februaryTilesCurratorToggleDiv');
+        let februaryTilesCurratorDisplay = document.getElementById('februaryTilesCurratorDisplay');
+        let marchTilesCurratorToggleDiv = document.getElementById('marchTilesCurratorToggleDiv');
+        let marchTilesCurratorDisplay = document.getElementById('marchTilesCurratorDisplay');
+        let aprilTilesCurratorToggleDiv = document.getElementById('aprilTilesCurratorToggleDiv');
+        let aprilTilesCurratorDisplay = document.getElementById('aprilTilesCurratorDisplay');
+        let mayTilesCurratorToggleDiv = document.getElementById('mayTilesCurratorToggleDiv');
+        let mayTilesCurratorDisplay = document.getElementById('mayTilesCurratorDisplay');
+        let juneTilesCurratorToggleDiv = document.getElementById('juneTilesCurratorToggleDiv');
+        let juneTilesCurratorDisplay = document.getElementById('juneTilesCurratorDisplay');
+        let julyTilesCurratorToggleDiv = document.getElementById('julyTilesCurratorToggleDiv');
+        let julyTilesCurratorDisplay = document.getElementById('julyTilesCurratorDisplay');
+        let augustTilesCurratorToggleDiv = document.getElementById('augustTilesCurratorToggleDiv');
+        let augustTilesCurratorDisplay = document.getElementById('augustTilesCurratorDisplay');
+        let septemberTilesCurratorToggleDiv = document.getElementById('septemberTilesCurratorToggleDiv');
+        let septemberTilesCurratorDisplay = document.getElementById('septemberTilesCurratorDisplay');
+        let octoberTilesCurratorToggleDiv = document.getElementById('octoberTilesCurratorToggleDiv');
+        let octoberTilesCurratorDisplay = document.getElementById('octoberTilesCurratorDisplay');
+        let novemberTilesCurratorToggleDiv = document.getElementById('novemberTilesCurratorToggleDiv');
+        let novemberTilesCurratorDisplay = document.getElementById('novemberTilesCurratorDisplay');
+        let decemberTilesCurratorToggleDiv = document.getElementById('decemberTilesCurratorToggleDiv');
+        let decemberTilesCurratorDisplay = document.getElementById('decemberTilesCurratorDisplay');
+
+        tilesCuratorManager.setAttribute("style", "visibility: visible;");
+        tilesCurratorManagerDiv.setAttribute("style", "display: none;");
+        tilesCurratorZone.setAttribute("style", "opacity: 1.0;");
+        januaryTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+        januaryTilesCurratorDisplay.setAttribute("style", "display: none;");
+        februaryTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+        februaryTilesCurratorDisplay.setAttribute("style", "display: none;");
+        marchTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+        marchTilesCurratorDisplay.setAttribute("style", "display: none;");
+        aprilTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+        aprilTilesCurratorDisplay.setAttribute("style", "display: none;");
+        mayTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+        mayTilesCurratorDisplay.setAttribute("style", "display: none;");
+        juneTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+        juneTilesCurratorDisplay.setAttribute("style", "display: none;");
+        julyTilesCurratorToggleDiv.setAttribute("style", "display: intitial;");
+        julyTilesCurratorDisplay.setAttribute("style", "display: none;");
+        augustTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+        augustTilesCurratorDisplay.setAttribute("style", "display: none;");
+        septemberTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+        septemberTilesCurratorDisplay.setAttribute("style", "display: none;");
+        octoberTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+        octoberTilesCurratorDisplay.setAttribute("style", "display: none;");
+        novemberTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+        novemberTilesCurratorDisplay.setAttribute("style", "display: none;");
+        decemberTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
+        decemberTilesCurratorDisplay.setAttribute("style", "display: none;");
+      }
+
+      function tilesCurratorManagement() {
+        let tilesCuratorManager = document.getElementById('tilesCuratorManager');
+        let tilesCurratorManagerDiv = document.getElementById('tilesCurratorManagerDiv');
+        let tilesCurratorZone = document.getElementById('tilesCurratorZone');
+
+        tilesCuratorManager.setAttribute("style", "visibility: hidden;");
+        tilesCurratorManagerDiv.setAttribute("style", "display: initial;");
+        tilesCurratorZone.setAttribute("style", "opacity: 0.3;");
+      }
 
       function tasksReportDone() {
         let reportForTasks = document.getElementById('reportForTasks');

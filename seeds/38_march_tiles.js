@@ -8,7 +8,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 1,
           user_id: 1,
-          theme: 'glass',
+          theme: 'Glass',
           type: 'default',
           src_string: '../img/march_tiles/product_2737.jpg',
           repeat_value: 'no-repeat',
@@ -22,7 +22,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 2,
           user_id: 1,
-          theme: 'glass',
+          theme: 'Glass',
           type: 'week',
           src_string: '../img/march_tiles/HighRiseGlass0016_1_270.jpg',
           repeat_value: 'no-repeat',
@@ -36,7 +36,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 3,
           user_id: 1,
-          theme: 'glass',
+          theme: 'Glass',
           type: 'mtwt',
           src_string: '../img/march_tiles/14SPL.png',
           repeat_value: 'no-repeat',
@@ -50,7 +50,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 4,
           user_id: 1,
-          theme: 'glass',
+          theme: 'Glass',
           type: 'friday',
           src_string: '../img/march_tiles/glass_texture_by_yko_54-d46aqr3.jpg',
           repeat_value: 'no-repeat',
@@ -64,7 +64,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 5,
           user_id: 1,
-          theme: 'glass',
+          theme: 'Glass',
           type: 'saturday',
           src_string: '../img/march_tiles/beverages-2763025_1920.jpg',
           repeat_value: 'no-repeat',
@@ -78,7 +78,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 6,
           user_id: 1,
-          theme: 'glass',
+          theme: 'Glass',
           type: 'sunday',
           src_string: '../img/march_tiles/church-1935792_1920.jpg',
           repeat_value: 'no-repeat',
@@ -92,7 +92,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 7,
           user_id: 1,
-          theme: 'glass',
+          theme: 'Glass',
           type: 'holiday',
           src_string: '../img/march_tiles/mhYbZVw.jpg',
           repeat_value: 'no-repeat',
@@ -106,7 +106,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 8,
           user_id: 1,
-          theme: 'glass',
+          theme: 'Glass',
           type: 'week',
           src_string: '../img/march_tiles/glassWeek.jpg',
           repeat_value: 'no-repeat',
@@ -120,7 +120,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 9,
           user_id: 1,
-          theme: 'glass',
+          theme: 'Glass',
           type: 'friday',
           src_string: '../img/march_tiles/glass02.jpg',
           repeat_value: 'no-repeat',
@@ -134,7 +134,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 10,
           user_id: 1,
-          theme: 'glass',
+          theme: 'Glass',
           type: 'saturday',
           src_string: '../img/march_tiles/texture-1756173_1280.jpg',
           repeat_value: 'no-repeat',
@@ -148,7 +148,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 11,
           user_id: 1,
-          theme: 'glass',
+          theme: 'Glass',
           type: 'sunday',
           src_string: '../img/march_tiles/Stained_Glass_Ship.jpg',
           repeat_value: 'no-repeat',
@@ -162,7 +162,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 12,
           user_id: 1,
-          theme: 'glass',
+          theme: 'Glass',
           type: 'holiday',
           src_string: '../img/march_tiles/glass-1497227_1920.jpg',
           repeat_value: 'no-repeat',
@@ -176,7 +176,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 13,
           user_id: 1,
-          theme: 'glass',
+          theme: 'Glass',
           type: 'week',
           src_string: '../img/march_tiles/glass-200888_1920.jpg',
           repeat_value: 'no-repeat',
@@ -190,7 +190,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 14,
           user_id: 1,
-          theme: 'glass',
+          theme: 'Glass',
           type: 'friday',
           src_string: '../img/march_tiles/the-wait-2061662_1920.jpg',
           repeat_value: 'no-repeat',
@@ -204,7 +204,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 15,
           user_id: 1,
-          theme: 'glass',
+          theme: 'Glass',
           type: 'saturday',
           src_string: '../img/march_tiles/alcohol-21723_1920.jpg',
           repeat_value: 'no-repeat',
@@ -218,7 +218,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 16,
           user_id: 1,
-          theme: 'glass',
+          theme: 'Glass',
           type: 'sunday',
           src_string: '../img/march_tiles/chapel-1035049_1920.jpg',
           repeat_value: 'no-repeat',
@@ -232,7 +232,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 17,
           user_id: 1,
-          theme: 'glass',
+          theme: 'Glass',
           type: 'holiday',
           src_string: '../img/march_tiles/glass-89051_1280.jpg',
           repeat_value: 'no-repeat',
@@ -246,7 +246,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 18,
           user_id: 1,
-          theme: 'glass',
+          theme: 'Glass',
           type: 'week',
           src_string: '../img/march_tiles/building-2050865_1920.jpg',
           repeat_value: 'no-repeat',
@@ -260,7 +260,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 19,
           user_id: 1,
-          theme: 'glass',
+          theme: 'Glass',
           type: 'friday',
           src_string: '../img/march_tiles/background-2492687_1920.jpg',
           repeat_value: 'no-repeat',
@@ -274,7 +274,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 20,
           user_id: 1,
-          theme: 'glass',
+          theme: 'Glass',
           type: 'saturday',
           src_string: '../img/march_tiles/glass-595343_1920.jpg',
           repeat_value: 'no-repeat',
@@ -288,7 +288,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 21,
           user_id: 1,
-          theme: 'glass',
+          theme: 'Glass',
           type: 'sunday',
           src_string: '../img/march_tiles/stained-glass-1181864_1920.jpg',
           repeat_value: 'no-repeat',
@@ -302,7 +302,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 22,
           user_id: 1,
-          theme: 'glass',
+          theme: 'Glass',
           type: 'holiday',
           src_string: '../img/march_tiles/glass-1523567_1920.jpg',
           repeat_value: 'no-repeat',

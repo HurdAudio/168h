@@ -123,7 +123,7 @@
     <div id="tilesCurratorZone">
       <div>
         <img src="../img/floor-1735046_1920.jpg">
-        <a href="" id="tilesCuratorManager" class="btn">tiles</a>
+        <a href="" id="tilesCuratorManager" class="btn" ng-click="$ctrl.tilesCurratorManagement()">tiles</a>
       </div>
 
     </div>
@@ -2570,6 +2570,1256 @@
         </div>
       </div>
 
+    </div>
+
+    <div id="tilesCurratorManagerDiv">
+      <div id="tilesCurratorManagerBar">
+        <a href="" class="btn" id="tilesCurratorManagerDone" ng-click="$ctrl.closeTilesCurratorManager()">done</a>
+        <h1>Tiles Currator</h1>
+
+      </div>
+
+      <div id="tilesCurratorManagerForm">
+        <div id="januaryTilesCurratorManagerForm">
+          <fieldset>
+            <div id="januaryTilesCurratorManagement">
+
+              <br><br><h2>January:</h2><br>
+              <div id="januaryTilesCurratorToggleDiv">
+                <a href="" class="btn" id="januaryTilesCurratorToggleButton" ng-click="$ctrl.toggleTilesCurratorMonth('January')">view</a>
+              </div><br><br>
+
+
+              <br><div id="januaryTilesCurratorDisplay">
+                <h2 id="januaryTilesTheme"></h2><br><br>
+                <div id="tilesCreateReportButtons">
+                  <a href="" class="btn" id="userAddTilesCurrationJanuary" ng-click="$ctrl.addNewTiles('January')">new</a>
+                  <a href="" class="btn" id="userTilesCurratorReporterJanuary" ng-click="$ctrl.tilesCurratorReport('January')">report</a><br><br><br><br>
+                </div>
+                <p>Off-month Tiles:</p>
+                <main ng-repeat="tile in $ctrl.janDefaultTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('january_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('january_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Week Tiles:</p>
+                <main ng-repeat="tile in $ctrl.janWeekTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('january_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('january_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Monday-Tuesday-Wednesday-Thursday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.janMTWTTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('january_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('january_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Friday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.janFridayTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('january_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('january_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Saturday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.janSaturdayTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('january_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('january_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Sunday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.janSundayTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('january_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('january_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Holiday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.janHolidayTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('january_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('january_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <div id="februaryTilesCurratorManagement">
+
+              <br><br><h2>February:</h2><br>
+              <div id="februaryTilesCurratorToggleDiv">
+                <a href="" class="btn" id="februaryTilesCurratorToggleButton" ng-click="$ctrl.toggleTilesCurratorMonth('February')">view</a>
+              </div><br><br>
+
+
+              <br><div id="februaryTilesCurratorDisplay">
+                <h2 id="februaryTilesTheme"></h2><br><br>
+                <div id="tilesCreateReportButtonsFeb">
+                  <a href="" class="btn" id="userAddTilesCurrationFebruary" ng-click="$ctrl.addNewTiles('February')">new</a>
+                  <a href="" class="btn" id="userTilesCurratorReporterFebruary" ng-click="$ctrl.tilesCurratorReport('February')">report</a><br><br><br><br>
+                </div>
+                <p>Off-month Tiles:</p>
+                <main ng-repeat="tile in $ctrl.febDefaultTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('february_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('february_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Week Tiles:</p>
+                <main ng-repeat="tile in $ctrl.febWeekTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('february_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('february_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Monday-Tuesday-Wednesday-Thursday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.febMTWTTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('february_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('february_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Friday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.febFridayTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('february_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('february_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Saturday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.febSaturdayTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('february_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('february_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Sunday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.febSundayTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('february_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('february_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Holiday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.febHolidayTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('february_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('february_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <div id="marchTilesCurratorManagement">
+
+              <br><br><h2>March:</h2><br>
+              <div id="marchTilesCurratorToggleDiv">
+                <a href="" class="btn" id="marchTilesCurratorToggleButton" ng-click="$ctrl.toggleTilesCurratorMonth('March')">view</a>
+              </div><br><br>
+
+
+              <br><div id="marchTilesCurratorDisplay">
+                <h2 id="marchTilesTheme"></h2><br><br>
+                <div id="tilesCreateReportButtonsMar">
+                  <a href="" class="btn" id="userAddTilesCurrationMarch" ng-click="$ctrl.addNewTiles('March')">new</a>
+                  <a href="" class="btn" id="userTilesCurratorReporterMarch" ng-click="$ctrl.tilesCurratorReport('March')">report</a><br><br><br><br>
+                </div>
+                <p>Off-month Tiles:</p>
+                <main ng-repeat="tile in $ctrl.marDefaultTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('march_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('march_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Week Tiles:</p>
+                <main ng-repeat="tile in $ctrl.marWeekTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('march_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('march_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Monday-Tuesday-Wednesday-Thursday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.marMTWTTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('march_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('march_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Friday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.marFridayTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('march_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('march_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Saturday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.marSaturdayTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('march_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('march_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Sunday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.marSundayTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('march_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('march_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Holiday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.marHolidayTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('march_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('march_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <div id="aprilTilesCurratorManagement">
+
+              <br><br><h2>April:</h2><br>
+              <div id="aprilTilesCurratorToggleDiv">
+                <a href="" class="btn" id="aprilTilesCurratorToggleButton" ng-click="$ctrl.toggleTilesCurratorMonth('April')">view</a>
+              </div><br><br>
+
+
+              <br><div id="aprilTilesCurratorDisplay">
+                <h2 id="aprilTilesTheme"></h2><br><br>
+                <div id="tilesCreateReportButtonsApr">
+                  <a href="" class="btn" id="userAddTilesCurrationApril" ng-click="$ctrl.addNewTiles('April')">new</a>
+                  <a href="" class="btn" id="userTilesCurratorReporterApril" ng-click="$ctrl.tilesCurratorReport('April')">report</a><br><br><br><br>
+                </div>
+                <p>Off-month Tiles:</p>
+                <main ng-repeat="tile in $ctrl.aprDefaultTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('april_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('april_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Week Tiles:</p>
+                <main ng-repeat="tile in $ctrl.aprWeekTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('april_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('april_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Monday-Tuesday-Wednesday-Thursday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.aprMTWTTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('april_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('april_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Friday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.aprFridayTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('april_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('april_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Saturday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.aprSaturdayTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('april_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('april_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Sunday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.aprSundayTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('april_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('april_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Holiday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.aprHolidayTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('april_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('april_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <div id="mayTilesCurratorManagement">
+
+              <br><br><h2>May:</h2><br>
+              <div id="mayTilesCurratorToggleDiv">
+                <a href="" class="btn" id="mayTilesCurratorToggleButton" ng-click="$ctrl.toggleTilesCurratorMonth('May')">view</a>
+              </div><br><br>
+
+
+              <br><div id="mayTilesCurratorDisplay">
+                <h2 id="mayTilesTheme"></h2><br><br>
+                <div id="tilesCreateReportButtonsMay">
+                  <a href="" class="btn" id="userAddTilesCurrationMay" ng-click="$ctrl.addNewTiles('May')">new</a>
+                  <a href="" class="btn" id="userTilesCurratorReporterMay" ng-click="$ctrl.tilesCurratorReport('May')">report</a><br><br><br><br>
+                </div>
+                <p>Off-month Tiles:</p>
+                <main ng-repeat="tile in $ctrl.mayDefaultTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('may_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('may_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Week Tiles:</p>
+                <main ng-repeat="tile in $ctrl.mayWeekTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('may_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('may_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Monday-Tuesday-Wednesday-Thursday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.mayMTWTTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('may_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('may_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Friday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.mayFridayTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('may_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('may_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Saturday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.maySaturdayTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('may_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('may_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Sunday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.maySundayTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('may_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('may_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Holiday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.mayHolidayTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('may_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('may_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <div id="juneTilesCurratorManagement">
+
+              <br><br><h2>June:</h2><br>
+              <div id="juneTilesCurratorToggleDiv">
+                <a href="" class="btn" id="juneTilesCurratorToggleButton" ng-click="$ctrl.toggleTilesCurratorMonth('June')">view</a>
+              </div><br><br>
+
+
+              <br><div id="juneTilesCurratorDisplay">
+                <h2 id="juneTilesTheme"></h2><br><br>
+                <div id="tilesCreateReportButtonsJun">
+                  <a href="" class="btn" id="userAddTilesCurrationJune" ng-click="$ctrl.addNewTiles('June')">new</a>
+                  <a href="" class="btn" id="userTilesCurratorReporterJune" ng-click="$ctrl.tilesCurratorReport('June')">report</a><br><br><br><br>
+                </div>
+                <p>Off-month Tiles:</p>
+                <main ng-repeat="tile in $ctrl.junDefaultTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('june_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('june_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Week Tiles:</p>
+                <main ng-repeat="tile in $ctrl.junWeekTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('june_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('june_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Monday-Tuesday-Wednesday-Thursday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.junMTWTTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('june_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('june_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Friday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.junFridayTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('june_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('june_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Saturday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.junSaturdayTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('june_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('june_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Sunday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.junSundayTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('june_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('june_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Holiday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.junHolidayTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('june_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('june_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <div id="julyTilesCurratorManagement">
+
+              <br><br><h2>July:</h2><br>
+              <div id="julyTilesCurratorToggleDiv">
+                <a href="" class="btn" id="julyTilesCurratorToggleButton" ng-click="$ctrl.toggleTilesCurratorMonth('July')">view</a>
+              </div><br><br>
+
+
+              <br><div id="julyTilesCurratorDisplay">
+                <h2 id="julyTilesTheme"></h2><br><br>
+                <div id="tilesCreateReportButtonsJul">
+                  <a href="" class="btn" id="userAddTilesCurrationJuly" ng-click="$ctrl.addNewTiles('July')">new</a>
+                  <a href="" class="btn" id="userTilesCurratorReporterJuly" ng-click="$ctrl.tilesCurratorReport('July')">report</a><br><br><br><br>
+                </div>
+                <p>Off-month Tiles:</p>
+                <main ng-repeat="tile in $ctrl.julDefaultTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('july_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('july_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Week Tiles:</p>
+                <main ng-repeat="tile in $ctrl.julWeekTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('july_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('july_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Monday-Tuesday-Wednesday-Thursday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.julMTWTTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('july_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('july_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Friday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.julFridayTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('july_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('july_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Saturday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.julSaturdayTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('july_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('july_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Sunday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.julSundayTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('july_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('july_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Holiday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.julHolidayTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('july_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('july_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <div id="augustTilesCurratorManagement">
+
+              <br><br><h2>August:</h2><br>
+              <div id="augustTilesCurratorToggleDiv">
+                <a href="" class="btn" id="augustTilesCurratorToggleButton" ng-click="$ctrl.toggleTilesCurratorMonth('August')">view</a>
+              </div><br><br>
+
+
+              <br><div id="augustTilesCurratorDisplay">
+                <h2 id="augustTilesTheme"></h2><br><br>
+                <div id="tilesCreateReportButtonsAug">
+                  <a href="" class="btn" id="userAddTilesCurrationAugust" ng-click="$ctrl.addNewTiles('August')">new</a>
+                  <a href="" class="btn" id="userTilesCurratorReporterAugust" ng-click="$ctrl.tilesCurratorReport('August')">report</a><br><br><br><br>
+                </div>
+                <p>Off-month Tiles:</p>
+                <main ng-repeat="tile in $ctrl.augDefaultTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('august_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('august_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Week Tiles:</p>
+                <main ng-repeat="tile in $ctrl.augWeekTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('august_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('august_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Monday-Tuesday-Wednesday-Thursday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.augMTWTTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('august_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('august_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Friday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.augFridayTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('august_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('august_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Saturday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.augSaturdayTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('august_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('august_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Sunday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.augSundayTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('august_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('august_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Holiday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.augHolidayTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('august_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('august_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <div id="septemberTilesCurratorManagement">
+
+              <br><br><h2>September:</h2><br>
+              <div id="septemberTilesCurratorToggleDiv">
+                <a href="" class="btn" id="septemberTilesCurratorToggleButton" ng-click="$ctrl.toggleTilesCurratorMonth('September')">view</a>
+              </div><br><br>
+
+
+              <br><div id="septemberTilesCurratorDisplay">
+                <h2 id="septemberTilesTheme"></h2><br><br>
+                <div id="tilesCreateReportButtonsSep">
+                  <a href="" class="btn" id="userAddTilesCurrationSeptember" ng-click="$ctrl.addNewTiles('September')">new</a>
+                  <a href="" class="btn" id="userTilesCurratorReporterSeptember" ng-click="$ctrl.tilesCurratorReport('September')">report</a><br><br><br><br>
+                </div>
+                <p>Off-month Tiles:</p>
+                <main ng-repeat="tile in $ctrl.sepDefaultTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('september_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('september_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Week Tiles:</p>
+                <main ng-repeat="tile in $ctrl.sepWeekTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('september_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('september_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Monday-Tuesday-Wednesday-Thursday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.sepMTWTTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('september_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('september_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Friday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.sepFridayTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('september_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('september_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Saturday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.sepSaturdayTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('september_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('september_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Sunday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.sepSundayTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('september_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('september_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Holiday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.sepHolidayTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('september_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('september_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <div id="octoberTilesCurratorManagement">
+
+              <br><br><h2>October:</h2><br>
+              <div id="octoberTilesCurratorToggleDiv">
+                <a href="" class="btn" id="octoberTilesCurratorToggleButton" ng-click="$ctrl.toggleTilesCurratorMonth('October')">view</a>
+              </div><br><br>
+
+
+              <br><div id="octoberTilesCurratorDisplay">
+                <h2 id="octoberTilesTheme"></h2><br><br>
+                <div id="tilesCreateReportButtonsOct">
+                  <a href="" class="btn" id="userAddTilesCurrationOctober" ng-click="$ctrl.addNewTiles('October')">new</a>
+                  <a href="" class="btn" id="userTilesCurratorReporterOctober" ng-click="$ctrl.tilesCurratorReport('October')">report</a><br><br><br><br>
+                </div>
+                <p>Off-month Tiles:</p>
+                <main ng-repeat="tile in $ctrl.octDefaultTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('october_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('october_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Week Tiles:</p>
+                <main ng-repeat="tile in $ctrl.octWeekTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('october_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('october_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Monday-Tuesday-Wednesday-Thursday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.octMTWTTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('october_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('october_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Friday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.octFridayTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('october_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('october_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Saturday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.octSaturdayTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('october_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('october_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Sunday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.octSundayTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('october_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('october_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Holiday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.octHolidayTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('october_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('october_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <div id="novemberTilesCurratorManagement">
+
+              <br><br><h2>November:</h2><br>
+              <div id="novemberTilesCurratorToggleDiv">
+                <a href="" class="btn" id="novemberTilesCurratorToggleButton" ng-click="$ctrl.toggleTilesCurratorMonth('November')">view</a>
+              </div><br><br>
+
+
+              <br><div id="novemberTilesCurratorDisplay">
+                <h2 id="novemberTilesTheme"></h2><br><br>
+                <div id="tilesCreateReportButtonsNov">
+                  <a href="" class="btn" id="userAddTilesCurrationNovember" ng-click="$ctrl.addNewTiles('November')">new</a>
+                  <a href="" class="btn" id="userTilesCurratorReporterNovember" ng-click="$ctrl.tilesCurratorReport('November')">report</a><br><br><br><br>
+                </div>
+                <p>Off-month Tiles:</p>
+                <main ng-repeat="tile in $ctrl.novDefaultTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('november_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('november_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Week Tiles:</p>
+                <main ng-repeat="tile in $ctrl.novWeekTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('november_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('november_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Monday-Tuesday-Wednesday-Thursday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.novMTWTTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('november_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('november_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Friday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.novFridayTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('november_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('november_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Saturday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.novSaturdayTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('november_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('november_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Sunday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.novSundayTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('november_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('november_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Holiday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.novHolidayTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('november_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('november_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <div id="decemberTilesCurratorManagement">
+
+              <br><br><h2>December:</h2><br>
+              <div id="decemberTilesCurratorToggleDiv">
+                <a href="" class="btn" id="decemberTilesCurratorToggleButton" ng-click="$ctrl.toggleTilesCurratorMonth('December')">view</a>
+              </div><br><br>
+
+
+              <br><div id="decemberTilesCurratorDisplay">
+                <h2 id="decemberTilesTheme"></h2><br><br>
+                <div id="tilesCreateReportButtonsDec">
+                  <a href="" class="btn" id="userAddTilesCurrationDecember" ng-click="$ctrl.addNewTiles('December')">new</a>
+                  <a href="" class="btn" id="userTilesCurratorReporterDecember" ng-click="$ctrl.tilesCurratorReport('December')">report</a><br><br><br><br>
+                </div>
+                <p>Off-month Tiles:</p>
+                <main ng-repeat="tile in $ctrl.decDefaultTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('december_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('december_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Week Tiles:</p>
+                <main ng-repeat="tile in $ctrl.decWeekTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('december_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('december_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Monday-Tuesday-Wednesday-Thursday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.decMTWTTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('december_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('december_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Friday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.decFridayTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('december_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('december_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Saturday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.decSaturdayTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('december_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('december_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Sunday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.decSundayTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('december_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('december_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+                <p>Holiday Tiles:</p>
+                <main ng-repeat="tile in $ctrl.decHolidayTiles | orderBy : $ctrl.sortBy">
+                  <div class="tilesOnDisplay">
+                    <!-- <br><br><img src="{{tile.src_string}}"> -->
+                    <div class="displayDay" style="background-image: url({{tile.src_string}}); background-repeat: {{tile.repeat_value}}; background-size: {{tile.size_value}};"><h1 id="{{tile.id}}" style="color:{{tile.color_dark}}" ng-mouseover="$ctrl.tileHoverColor(tile.id, tile.color_light)" ng-mouseleave="$ctrl.tileHoverColor(tile.id, tile.color_dark)" ng-click="$ctrl.tileClick(tile.id, tile.color_medium, tile.src_string, tile.repeat_value, tile.size_value)">{{tile.randomDate}}</h1></div>
+
+                    <div class="goalEdit">
+                      <a href="" class="btn" ng-click="$ctrl.editArtCurrate('december_tiles', tile.id)">edit</a>
+                      <a href="" class="btn" ng-click="$ctrl.deleteArtCurrate('december_tiles', tile.id)">delete</a>
+                    </div><br><br><br>
+                  </div>
+                </main>
+              </div>
+            </div>
+          </fieldset>
+
+
+        </div>
+      </div>
     </div>
 
   </div>

@@ -8,7 +8,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 1,
           user_id: 1,
-          theme: 'light',
+          theme: 'Light',
           type: 'default',
           src_string: '../img/june_tiles/black-and-white-lights-sun-ray-of-sunshine.jpg',
           repeat_value: 'no-repeat',
@@ -22,7 +22,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 2,
           user_id: 1,
-          theme: 'light',
+          theme: 'Light',
           type: 'week',
           src_string: '../img/june_tiles/lights-932185_640.jpg',
           repeat_value: 'no-repeat',
@@ -36,7 +36,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 3,
           user_id: 1,
-          theme: 'light',
+          theme: 'Light',
           type: 'mtwt',
           src_string: '../img/june_tiles/lights-2618332_1920.jpg',
           repeat_value: 'no-repeat',
@@ -50,7 +50,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 4,
           user_id: 1,
-          theme: 'light',
+          theme: 'Light',
           type: 'friday',
           src_string: '../img/june_tiles/LGTFX.jpg',
           repeat_value: 'no-repeat',
@@ -64,7 +64,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 5,
           user_id: 1,
-          theme: 'light',
+          theme: 'Light',
           type: 'saturday',
           src_string: '../img/june_tiles/light2.jpg',
           repeat_value: 'no-repeat',
@@ -78,7 +78,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 6,
           user_id: 1,
-          theme: 'light',
+          theme: 'Light',
           type: 'sunday',
           src_string: '../img/june_tiles/sun-light.jpg',
           repeat_value: 'no-repeat',
@@ -92,7 +92,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 7,
           user_id: 1,
-          theme: 'light',
+          theme: 'Light',
           type: 'holiday',
           src_string: '../img/june_tiles/fireworks___texture_by_b3hindhersmil3.jpg',
           repeat_value: 'no-repeat',
@@ -106,7 +106,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 8,
           user_id: 1,
-          theme: 'light',
+          theme: 'Light',
           type: 'week',
           src_string: '../img/june_tiles/textures-106-l.jpg',
           repeat_value: 'no-repeat',
@@ -120,7 +120,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 9,
           user_id: 1,
-          theme: 'light',
+          theme: 'Light',
           type: 'friday',
           src_string: '../img/june_tiles/concert-336695_1920.jpg',
           repeat_value: 'no-repeat',
@@ -134,7 +134,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 10,
           user_id: 1,
-          theme: 'light',
+          theme: 'Light',
           type: 'saturday',
           src_string: '../img/june_tiles/sunbeam-76825_1920.jpg',
           repeat_value: 'no-repeat',
@@ -148,7 +148,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 11,
           user_id: 1,
-          theme: 'light',
+          theme: 'Light',
           type: 'sunday',
           src_string: '../img/june_tiles/light-2994535_1920.jpg',
           repeat_value: 'no-repeat',
@@ -162,7 +162,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 12,
           user_id: 1,
-          theme: 'light',
+          theme: 'Light',
           type: 'holiday',
           src_string: '../img/june_tiles/lichtreflex-421101_1920.jpg',
           repeat_value: 'no-repeat',
@@ -176,7 +176,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 13,
           user_id: 1,
-          theme: 'light',
+          theme: 'Light',
           type: 'week',
           src_string: '../img/june_tiles/sunsets-251381_1920.jpg',
           repeat_value: 'no-repeat',
@@ -190,7 +190,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 14,
           user_id: 1,
-          theme: 'light',
+          theme: 'Light',
           type: 'friday',
           src_string: '../img/june_tiles/sky-644552_1920.jpg',
           repeat_value: 'no-repeat',
@@ -204,7 +204,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 15,
           user_id: 1,
-          theme: 'light',
+          theme: 'Light',
           type: 'saturday',
           src_string: '../img/june_tiles/lamp-2336619_1920.jpg',
           repeat_value: 'no-repeat',
@@ -218,7 +218,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 16,
           user_id: 1,
-          theme: 'light',
+          theme: 'Light',
           type: 'sunday',
           src_string: '../img/june_tiles/sun-1545406_1920.jpg',
           repeat_value: 'no-repeat',
@@ -232,7 +232,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 17,
           user_id: 1,
-          theme: 'light',
+          theme: 'Light',
           type: 'holiday',
           src_string: '../img/june_tiles/background-1469937_1280.jpg',
           repeat_value: 'no-repeat',
@@ -246,7 +246,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 18,
           user_id: 1,
-          theme: 'light',
+          theme: 'Light',
           type: 'week',
           src_string: '../img/june_tiles/lamp-277504_1920.jpg',
           repeat_value: 'no-repeat',
@@ -260,7 +260,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 19,
           user_id: 1,
-          theme: 'light',
+          theme: 'Light',
           type: 'friday',
           src_string: '../img/june_tiles/dj-937260_1920.jpg',
           repeat_value: 'no-repeat',

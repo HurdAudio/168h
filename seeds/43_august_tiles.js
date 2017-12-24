@@ -8,7 +8,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 1,
           user_id: 1,
-          theme: 'primary colors',
+          theme: 'Primary Colors',
           type: 'default',
           src_string: '../img/august_tiles/oZCxYKC.jpg',
           repeat_value: 'no-repeat',
@@ -22,7 +22,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 2,
           user_id: 1,
-          theme: 'primary colors',
+          theme: 'Primary Colors',
           type: 'week',
           src_string: '../img/august_tiles/18FF5DCF-072D-4227-AD0B-12FFF1348E95.jpeg',
           repeat_value: 'no-repeat',
@@ -36,7 +36,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 3,
           user_id: 1,
-          theme: 'primary colors',
+          theme: 'Primary Colors',
           type: 'mtwt',
           src_string: '../img/august_tiles/primaries.png',
           repeat_value: 'no-repeat',
@@ -50,7 +50,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 4,
           user_id: 1,
-          theme: 'primary colors',
+          theme: 'Primary Colors',
           type: 'friday',
           src_string: '../img/august_tiles/redPrimary.jpg',
           repeat_value: 'no-repeat',
@@ -64,7 +64,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 5,
           user_id: 1,
-          theme: 'primary colors',
+          theme: 'Primary Colors',
           type: 'saturday',
           src_string: '../img/august_tiles/yellow-primary.jpg',
           repeat_value: 'no-repeat',
@@ -78,7 +78,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 6,
           user_id: 1,
-          theme: 'primary colors',
+          theme: 'Primary Colors',
           type: 'sunday',
           src_string: '../img/august_tiles/blue-plaid-fabric-texture.jpg',
           repeat_value: 'no-repeat',
@@ -92,7 +92,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 7,
           user_id: 1,
-          theme: 'primary colors',
+          theme: 'Primary Colors',
           type: 'holiday',
           src_string: '../img/august_tiles/circles-27975_1280.png',
           repeat_value: 'no-repeat',
@@ -106,7 +106,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 8,
           user_id: 1,
-          theme: 'primary colors',
+          theme: 'Primary Colors',
           type: 'week',
           src_string: '../img/august_tiles/large-brolly_crop-c82a62fdbf221f1abe6a269945b62557.jpg',
           repeat_value: 'no-repeat',
@@ -120,7 +120,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 9,
           user_id: 1,
-          theme: 'primary colors',
+          theme: 'Primary Colors',
           type: 'friday',
           src_string: '../img/august_tiles/sun-flower-2713120_1920.jpg',
           repeat_value: 'no-repeat',
@@ -134,7 +134,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 10,
           user_id: 1,
-          theme: 'primary colors',
+          theme: 'Primary Colors',
           type: 'saturday',
           src_string: '../img/august_tiles/course-695163_1920.jpg',
           repeat_value: 'no-repeat',
@@ -148,7 +148,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 11,
           user_id: 1,
-          theme: 'primary colors',
+          theme: 'Primary Colors',
           type: 'sunday',
           src_string: '../img/august_tiles/currants-404686_1920.jpg',
           repeat_value: 'no-repeat',
@@ -162,7 +162,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 12,
           user_id: 1,
-          theme: 'primary colors',
+          theme: 'Primary Colors',
           type: 'holiday',
           src_string: '../img/august_tiles/rTesselating_Fish_Fractal_Primary_Colors_shop_preview.png',
           repeat_value: 'no-repeat',
@@ -176,7 +176,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 13,
           user_id: 1,
-          theme: 'primary colors',
+          theme: 'Primary Colors',
           type: 'week',
           src_string: '../img/august_tiles/b100704f75ff4c23b79c01bcc56077a9--brugge-primary-colors.jpg',
           repeat_value: 'no-repeat',
@@ -190,7 +190,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 14,
           user_id: 1,
-          theme: 'primary colors',
+          theme: 'Primary Colors',
           type: 'friday',
           src_string: '../img/august_tiles/background-2499411_1920.jpg',
           repeat_value: 'no-repeat',
@@ -204,7 +204,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 15,
           user_id: 1,
-          theme: 'primary colors',
+          theme: 'Primary Colors',
           type: 'saturday',
           src_string: '../img/august_tiles/wall-628681_1920.jpg',
           repeat_value: 'no-repeat',
@@ -218,7 +218,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 16,
           user_id: 1,
-          theme: 'primary colors',
+          theme: 'Primary Colors',
           type: 'sunday',
           src_string: '../img/august_tiles/meterstab-2243316_1920.jpg',
           repeat_value: 'no-repeat',
@@ -232,7 +232,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 17,
           user_id: 1,
-          theme: 'primary colors',
+          theme: 'Primary Colors',
           type: 'holiday',
           src_string: '../img/august_tiles/cdd4016a363d1cc8fccc056011b7e653--color-mix-primary-colors.jpg',
           repeat_value: 'no-repeat',

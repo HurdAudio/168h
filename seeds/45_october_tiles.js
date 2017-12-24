@@ -8,7 +8,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 1,
           user_id: 1,
-          theme: 'autumnal',
+          theme: 'Autumnal',
           type: 'default',
           src_string: '../img/october_tiles/autumnalDefault.jpg',
           repeat_value: 'no-repeat',
@@ -22,7 +22,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 2,
           user_id: 1,
-          theme: 'autumnal',
+          theme: 'Autumnal',
           type: 'week',
           src_string: '../img/october_tiles/autumnal_glass_bump_abstract_by_don64738-d5lemnq.jpg',
           repeat_value: 'no-repeat',
@@ -36,7 +36,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 3,
           user_id: 1,
-          theme: 'autumnal',
+          theme: 'Autumnal',
           type: 'mtwt',
           src_string: '../img/october_tiles/leaves-1648179_1920.jpg',
           repeat_value: 'no-repeat',
@@ -50,7 +50,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 4,
           user_id: 1,
-          theme: 'autumnal',
+          theme: 'Autumnal',
           type: 'friday',
           src_string: '../img/october_tiles/sycamore_leaf_tree_nature_color_fall_maple_season-863153.jpg',
           repeat_value: 'no-repeat',
@@ -64,7 +64,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 5,
           user_id: 1,
-          theme: 'autumnal',
+          theme: 'Autumnal',
           type: 'saturday',
           src_string: '../img/october_tiles/trees-1789120_1920.jpg',
           repeat_value: 'no-repeat',
@@ -78,7 +78,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 6,
           user_id: 1,
-          theme: 'autumnal',
+          theme: 'Autumnal',
           type: 'sunday',
           src_string: '../img/october_tiles/yellow-2957044_1920.jpg',
           repeat_value: 'no-repeat',
@@ -92,7 +92,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 7,
           user_id: 1,
-          theme: 'autumnal',
+          theme: 'Autumnal',
           type: 'holiday',
           src_string: '../img/october_tiles/pumpkins-457716_1920.jpg',
           repeat_value: 'no-repeat',
@@ -106,7 +106,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 8,
           user_id: 1,
-          theme: 'autumnal',
+          theme: 'Autumnal',
           type: 'week',
           src_string: '../img/october_tiles/oak-2893996_1920.jpg',
           repeat_value: 'no-repeat',
@@ -120,7 +120,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 9,
           user_id: 1,
-          theme: 'autumnal',
+          theme: 'Autumnal',
           type: 'friday',
           src_string: '../img/october_tiles/rhus-180922_1920.jpg',
           repeat_value: 'no-repeat',
@@ -134,7 +134,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 10,
           user_id: 1,
-          theme: 'autumnal',
+          theme: 'Autumnal',
           type: 'saturday',
           src_string: '../img/october_tiles/pumpkin-1639298_1920.jpg',
           repeat_value: 'no-repeat',
@@ -148,7 +148,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 11,
           user_id: 1,
-          theme: 'autumnal',
+          theme: 'Autumnal',
           type: 'sunday',
           src_string: '../img/october_tiles/leaves-1539460_1920.jpg',
           repeat_value: 'no-repeat',
@@ -162,7 +162,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 12,
           user_id: 1,
-          theme: 'autumnal',
+          theme: 'Autumnal',
           type: 'holiday',
           src_string: '../img/october_tiles/pumpkin-448842_1920.jpg',
           repeat_value: 'no-repeat',
@@ -176,7 +176,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 13,
           user_id: 1,
-          theme: 'autumnal',
+          theme: 'Autumnal',
           type: 'week',
           src_string: '../img/october_tiles/autumn-72735_1280.jpg',
           repeat_value: 'no-repeat',
@@ -190,7 +190,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 14,
           user_id: 1,
-          theme: 'autumnal',
+          theme: 'Autumnal',
           type: 'friday',
           src_string: '../img/october_tiles/burning-bush-2638896_1920.jpg',
           repeat_value: 'no-repeat',
@@ -204,7 +204,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 15,
           user_id: 1,
-          theme: 'autumnal',
+          theme: 'Autumnal',
           type: 'saturday',
           src_string: '../img/october_tiles/leaf-2751553_1920.jpg',
           repeat_value: 'no-repeat',
