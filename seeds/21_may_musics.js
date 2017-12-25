@@ -2110,6 +2110,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 118,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1758863023/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://newfocusrecordings.bandcamp.com/album/aesthetic-apparatus-clarinet-chamber-music-of-helmut-lachenmann',
+          a_string: 'Aesthetic Apparatus: Clarinet Chamber Music of Helmut Lachenmann by Gregory Oakes',
+          rule: {
+            "monday": [ 17, 23, 30, 12 ],
+            "tuesday": [ 21, 27, 3, 16 ],
+            "wednesday": [ 20, 26, 2, 15 ],
+            "thursday": [ 19, 25, 1, 14 ],
+            "saturday": [ 18, 24, 31, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 119,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1563094077/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://newfocusrecordings.bandcamp.com/album/fcremap',
+          a_string: 'fcremap by Alexander Sigman, composer',
+          rule: {
+            "monday": [ 19, 25, 1, 14 ],
+            "tuesday": [ 18, 24, 31, 13 ],
+            "wednesday": [ 22, 28, 4, 17 ],
+            "thursday": [ 21, 27, 3, 16 ],
+            "saturday": [ 20, 26, 2, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 120,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3940801723/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://newfocusrecordings.bandcamp.com/album/garden-of-diverging-paths',
+          a_string: 'Garden of Diverging Paths by Mivos String Quartet',
+          rule: {
+            "monday": [ 20, 26, 2, 15 ],
+            "tuesday": [ 19, 25, 1, 14 ],
+            "wednesday": [ 18, 24, 31, 13 ],
+            "thursday": [ 22, 28, 4, 17 ],
+            "saturday": [ 21, 27, 3, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
