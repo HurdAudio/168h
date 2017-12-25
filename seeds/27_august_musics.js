@@ -1786,6 +1786,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 100,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1016358289/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://exeyeband.bandcamp.com/album/ex-eye',
+          a_string: 'Ex Eye by Ex Eye',
+          rule: {
+            "monday": [ 25, 2, 15, 14 ],
+            "tuesday": [ 24, 1, 14, 13 ],
+            "wednesday": [ 23, 31, 13, 12 ],
+            "thursday": [ 27, 4, 17, 16 ],
+            "saturday": [ 26, 3, 16, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 101,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3572077177/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tendonlevey.bandcamp.com/album/winter-owner',
+          a_string: 'Winter Owner by Tendon Levey',
+          rule: {
+            "monday": [ 26, 3, 16, 15 ],
+            "tuesday": [ 25, 2, 15, 14 ],
+            "wednesday": [ 24, 1, 14, 13 ],
+            "thursday": [ 23, 31, 13, 12 ],
+            "saturday": [ 27, 4, 17, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 102,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4103317405/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tendonlevey.bandcamp.com/album/countertorch',
+          a_string: 'Countertorch by Tendon Levey',
+          rule: {
+            "monday": [ 27, 4, 17, 16 ],
+            "tuesday": [ 26, 3, 16, 15 ],
+            "wednesday": [ 25, 2, 15, 14 ],
+            "thursday": [ 24, 1, 14, 13 ],
+            "saturday": [ 23, 31, 13, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
