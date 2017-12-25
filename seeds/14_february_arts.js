@@ -4604,6 +4604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 231,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/Henry_Ossawa_Tanner_-_The_Banjo_Lesson.jpg',
+          title: 'The Banjo Lesson',
+          artist: 'Henry Ossawa Tanner',
+          year: '1893',
+          rule: {
+            "monday": [ 11, 16, 22, 3 ],
+            "tuesday": [ 10, 18, 26, 5 ],
+            "wednesday": [ 12, 22, 28, 5 ],
+            "thursday": [ 14, 22, 1, 11 ],
+            "friday": [ 16, 24, 20, 10 ],
+            "saturday": [ 4, 12, 20, 28 ],
+            "sunday": [ 6, 14, 22, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 232,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/0767.jpg',
+          title: 'Peace',
+          artist: 'Margaret Taylor-Burroughs',
+          year: 'xx cent.',
+          rule: {
+            "monday": [ 6, 14, 22, 1 ],
+            "tuesday": [ 11, 16, 22, 3 ],
+            "wednesday": [ 10, 18, 26, 5 ],
+            "thursday": [ 12, 22, 28, 5 ],
+            "friday": [ 14, 22, 1, 11 ],
+            "saturday": [ 16, 24, 20, 10 ],
+            "sunday": [ 4, 12, 20, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 233,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/a-muse-me-phyllis-anne-taylor-pannet-art-studio.jpg',
+          title: 'A Muse Me',
+          artist: '"Plannet" Phyllis Anne Taylor',
+          year: '2017',
+          rule: {
+            "monday": [ 4, 12, 20, 28 ],
+            "tuesday": [ 6, 14, 22, 1 ],
+            "wednesday": [ 11, 16, 22, 3 ],
+            "thursday": [ 10, 18, 26, 5 ],
+            "friday": [ 12, 22, 28, 5 ],
+            "saturday": [ 14, 22, 1, 11 ],
+            "sunday": [ 16, 24, 20, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 234,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/thomas_apollo12-web.jpg',
+          title: 'Splash Down',
+          artist: 'Alma Thomas',
+          year: '1970',
+          rule: {
+            "monday": [ 16, 24, 20, 10 ],
+            "tuesday": [ 4, 12, 20, 28 ],
+            "wednesday": [ 6, 14, 22, 1 ],
+            "thursday": [ 11, 16, 22, 3 ],
+            "friday": [ 10, 18, 26, 5 ],
+            "saturday": [ 12, 22, 28, 5 ],
+            "sunday": [ 14, 22, 1, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 235,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/Left_Behind_2_Again_by_Mickalene_Thomas,_2012.jpg',
+          title: 'Left Behind 2 Again',
+          artist: 'Mickalene Thomas',
+          year: '2012',
+          rule: {
+            "monday": [ 14, 22, 1, 11 ],
+            "tuesday": [ 16, 24, 20, 10 ],
+            "wednesday": [ 4, 12, 20, 28 ],
+            "thursday": [ 6, 14, 22, 1 ],
+            "friday": [ 11, 16, 22, 3 ],
+            "saturday": [ 10, 18, 26, 5 ],
+            "sunday": [ 12, 22, 28, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
