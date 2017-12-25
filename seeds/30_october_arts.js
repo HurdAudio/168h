@@ -3004,6 +3004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 151,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_breadsovpost_00002.jpg',
+          title: 'Farmhands and Komsomol members - onto a tractor!',
+          artist: 'V.Svarog',
+          year: '1931',
+          rule: {
+            "monday": [ 22, 2, 3, 17 ],
+            "tuesday": [ 31, 1, 12, 16 ],
+            "wednesday": [ 27, 7, 18, 22 ],
+            "thursday": [ 26, 6, 17, 21 ],
+            "friday": [ 25, 5, 16, 20 ],
+            "saturday": [ 24, 4, 15, 19 ],
+            "sunday": [ 23, 3, 14, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 152,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_cinsovpost_00010.jpg',
+          title: 'Poster of the film "Doughnut" directed by M. Romm',
+          artist: 'Yuri Pimenov',
+          year: '1935',
+          rule: {
+            "monday": [ 23, 3, 14, 18 ],
+            "tuesday": [ 22, 2, 3, 17 ],
+            "wednesday": [ 31, 1, 12, 16 ],
+            "thursday": [ 27, 7, 18, 22 ],
+            "friday": [ 26, 6, 17, 21 ],
+            "saturday": [ 25, 5, 16, 20 ],
+            "sunday": [ 24, 4, 15, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 153,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_cinsovpost_00009.jpg',
+          title: 'L. Orlova in the film "Jolly Fellows" directed by Aleksandrov',
+          artist: 'I.Gerasimovich',
+          year: '1934',
+          rule: {
+            "monday": [ 24, 4, 15, 19 ],
+            "tuesday": [ 23, 3, 14, 18 ],
+            "wednesday": [ 22, 2, 3, 17 ],
+            "thursday": [ 31, 1, 12, 16 ],
+            "friday": [ 27, 7, 18, 22 ],
+            "saturday": [ 26, 6, 17, 21 ],
+            "sunday": [ 25, 5, 16, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 154,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_cinsovpost_00007.jpg',
+          title: 'Poster of the film "Alexander Nevsky" directed by S.Eisenstein',
+          artist: 'A. Belsky',
+          year: '1938',
+          rule: {
+            "monday": [ 26, 6, 17, 21 ],
+            "tuesday": [ 25, 5, 16, 20 ],
+            "wednesday": [ 24, 4, 15, 19 ],
+            "thursday": [ 23, 3, 4, 18 ],
+            "friday": [ 1, 2, 13, 17 ],
+            "saturday": [ 28, 8, 19, 23 ],
+            "sunday": [ 27, 7, 18, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 155,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_cinsovpost_00004.jpg',
+          title: 'Poster of the film "Chapaev" directed by brothers Vasilyev',
+          artist: 'A.Belsky',
+          year: '1935',
+          rule: {
+            "monday": [ 27, 7, 18, 22 ],
+            "tuesday": [ 26, 6, 17, 21 ],
+            "wednesday": [ 25, 5, 16, 20 ],
+            "thursday": [ 24, 4, 15, 19 ],
+            "friday": [ 23, 3, 4, 18 ],
+            "saturday": [ 1, 2, 13, 17 ],
+            "sunday": [ 28, 8, 19, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
