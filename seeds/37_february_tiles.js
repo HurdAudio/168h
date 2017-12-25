@@ -326,6 +326,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#6E7E8E',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 24,
+          user_id: 1,
+          theme: 'Silk/Velvet',
+          type: 'friday',
+          src_string: '../img/february_tiles/Red-Color-of-Romance-and-Love_Salon-Buzz-800x533.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '153%',
+          color_dark: '#1A0200',
+          color_medium: '#6B0510',
+          color_light: '#F12B42',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
