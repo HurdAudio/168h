@@ -2804,6 +2804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 141,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/berlin-star-2008.jpg',
+          title: 'Berlin Star',
+          artist: 'Otto Piene',
+          year: '2008',
+          rule: {
+            "monday": [ 27, 2, 7, 13 ],
+            "tuesday": [ 26, 1, 7, 11 ],
+            "wednesday": [ 25, 30, 6, 11 ],
+            "thursday": [ 24, 28, 5, 10 ],
+            "friday": [ 23, 28, 4, 9 ],
+            "saturday": [ 22, 27, 3, 10 ],
+            "sunday": [ 28, 3, 9, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 142,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/arrival-2008.jpg',
+          title: 'Arrival',
+          artist: 'Stephen Antonakos',
+          year: '2008',
+          rule: {
+            "monday": [ 28, 3, 9, 14 ],
+            "tuesday": [ 27, 2, 7, 13 ],
+            "wednesday": [ 26, 1, 7, 11 ],
+            "thursday": [ 25, 30, 6, 11 ],
+            "friday": [ 24, 28, 5, 10 ],
+            "saturday": [ 23, 28, 4, 9 ],
+            "sunday": [ 22, 27, 3, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 143,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/sterreich-tisch-1969.jpg',
+          title: 'Österreich - Tisch',
+          artist: 'Karl Prantl',
+          year: '1969',
+          rule: {
+            "monday": [ 22, 27, 3, 10 ],
+            "tuesday": [ 28, 3, 9, 14 ],
+            "wednesday": [ 27, 2, 7, 13 ],
+            "thursday": [ 26, 1, 7, 11 ],
+            "friday": [ 25, 30, 6, 11 ],
+            "saturday": [ 24, 28, 5, 10 ],
+            "sunday": [ 23, 28, 4, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 144,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/trenchant-sphere-1967.jpg',
+          title: 'Trenchant Sphere',
+          artist: 'Ruth Vollmer',
+          year: '1967',
+          rule: {
+            "monday": [ 23, 28, 4, 9 ],
+            "tuesday": [ 22, 27, 3, 10 ],
+            "wednesday": [ 28, 3, 9, 14 ],
+            "thursday": [ 27, 2, 7, 13 ],
+            "friday": [ 26, 1, 7, 11 ],
+            "saturday": [ 25, 30, 6, 11 ],
+            "sunday": [ 24, 28, 5, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 145,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/the-wild-1950.jpg',
+          title: 'The Wild',
+          artist: 'Barnett Newman',
+          year: '1950',
+          rule: {
+            "monday": [ 24, 28, 5, 10 ],
+            "tuesday": [ 23, 28, 4, 9 ],
+            "wednesday": [ 22, 27, 3, 10 ],
+            "thursday": [ 28, 3, 9, 14 ],
+            "friday": [ 27, 2, 7, 13 ],
+            "saturday": [ 26, 1, 7, 11 ],
+            "sunday": [ 25, 30, 6, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
