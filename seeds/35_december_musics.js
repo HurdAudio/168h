@@ -1354,6 +1354,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 76,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3201825692/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://domlanenamusic.bandcamp.com/album/cantando-ep',
+          a_string: 'Cantando EP by Dom La Nena',
+          rule: {
+            "monday": [ 16, 22, 28, 2 ],
+            "tuesday": [ 15, 21, 27, 2 ],
+            "wednesday": [ 13, 20, 26, 1 ],
+            "thursday": [ 13, 19, 25, 31 ],
+            "saturday": [ 17, 23, 29, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 77,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2057778744/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://kafundrecords.bandcamp.com/album/kafund-vol-5-afro-brazilian-roots-and-wires',
+          a_string: 'Kafundó Vol. 5;  Afro-Brazilian Roots and Wires by Kafundó Records',
+          rule: {
+            "monday": [ 18, 24, 30, 5 ],
+            "tuesday": [ 17, 23, 29, 3 ],
+            "wednesday": [ 16, 22, 28, 3 ],
+            "thursday": [ 13, 21, 27, 2 ],
+            "saturday": [ 14, 20, 26, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 78,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1774175615/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sibu.bandcamp.com/album/nosy-be',
+          a_string: 'Nosy Be by Sibu',
+          rule: {
+            "monday": [ 14, 20, 26, 1 ],
+            "tuesday": [ 18, 24, 30, 5 ],
+            "wednesday": [ 17, 23, 29, 3 ],
+            "thursday": [ 16, 22, 28, 3 ],
+            "saturday": [ 13, 21, 27, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
