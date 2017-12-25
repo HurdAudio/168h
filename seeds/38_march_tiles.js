@@ -312,6 +312,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#DBC687',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 23,
+          user_id: 1,
+          theme: 'Glass',
+          type: 'week',
+          src_string: '../img/march_tiles/architecture-2503141_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '150%',
+          color_dark: '#030305',
+          color_medium: '#728AA2',
+          color_light: '#FFFEFF',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
