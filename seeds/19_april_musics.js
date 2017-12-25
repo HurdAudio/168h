@@ -2218,6 +2218,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 124,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3543434231/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://maxjohnson.bandcamp.com/album/in-the-west',
+          a_string: 'In the West by Max Johnson',
+          rule: {
+            "monday": [ 18, 26, 8, 13 ],
+            "tuesday": [ 17, 25, 7, 12 ],
+            "wednesday": [ 21, 29, 11, 16 ],
+            "thursday": [ 20, 28, 10, 15 ],
+            "saturday": [ 19, 27, 9, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 125,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2947788769/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://maxjohnson.bandcamp.com/album/free-reservoir',
+          a_string: 'Free Reservoir by Simon Nabatov, Max Johnson &amp; Michael Sarin',
+          rule: {
+            "monday": [ 19, 27, 9, 14 ],
+            "tuesday": [ 18, 26, 8, 13 ],
+            "wednesday": [ 17, 25, 7, 12 ],
+            "thursday": [ 21, 29, 11, 16 ],
+            "saturday": [ 20, 28, 10, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 126,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3919563242/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://maxjohnson.bandcamp.com/album/something-familiar',
+          a_string: 'Something Familiar by Max Johnson Trio',
+          rule: {
+            "monday": [ 21, 29, 11, 16 ],
+            "tuesday": [ 20, 28, 10, 15 ],
+            "wednesday": [ 19, 27, 9, 14 ],
+            "thursday": [ 18, 26, 8, 13 ],
+            "saturday": [ 22, 30, 12, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
