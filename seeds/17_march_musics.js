@@ -2326,6 +2326,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 130,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=707583338/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://dangerrecords.bandcamp.com/album/upcoming-dr-033-p-m-s-7',
+          a_string: 'UPCOMING: DR-033 // P.M.S. (7&quot;) by P.M.S.',
+          rule: {
+            "monday": [ 21, 27, 2, 11 ],
+            "tuesday": [ 19, 26, 1, 9 ],
+            "wednesday": [ 19, 25, 31, 8 ],
+            "thursday": [ 23, 29, 4, 12 ],
+            "saturday": [ 22, 28, 3, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 131,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3202582703/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://lydialunch.bandcamp.com/album/honeymoon-in-red',
+          a_string: 'Honeymoon In Red by Lydia Lunch',
+          rule: {
+            "monday": [ 22, 28, 3, 11 ],
+            "tuesday": [ 21, 27, 2, 11 ],
+            "wednesday": [ 19, 26, 1, 9 ],
+            "thursday": [ 19, 25, 31, 8 ],
+            "saturday": [ 23, 29, 4, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 132,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4126138709/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ctatsu.bandcamp.com/album/fear-is-the-world',
+          a_string: 'Fear is the World by Atariame',
+          rule: {
+            "monday": [ 23, 29, 4, 12 ],
+            "tuesday": [ 22, 28, 3, 11 ],
+            "wednesday": [ 21, 27, 2, 11 ],
+            "thursday": [ 19, 26, 1, 9 ],
+            "saturday": [ 19, 25, 31, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
