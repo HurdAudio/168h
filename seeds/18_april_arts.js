@@ -4204,6 +4204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 211,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/eckersley_bobblehead_082617.png',
+          title: 'Dennis Eckersley Bobblehead',
+          artist: '?',
+          year: '2017',
+          rule: {
+            "monday": [ 14, 4, 10, 17 ],
+            "tuesday": [ 29, 4, 10, 16 ],
+            "wednesday": [ 28, 2, 17, 15 ],
+            "thursday": [ 27, 2, 7, 13 ],
+            "friday": [ 26, 1, 7, 13 ],
+            "saturday": [ 25, 30, 6, 12 ],
+            "sunday": [ 30, 6, 11, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 212,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/OAK - Sonny Gray_0.jpg',
+          title: 'Sonny Gray',
+          artist: '?',
+          year: '2016',
+          rule: {
+            "monday": [ 30, 6, 11, 18 ],
+            "tuesday": [ 14, 4, 10, 17 ],
+            "wednesday": [ 29, 4, 10, 16 ],
+            "thursday": [ 28, 2, 17, 15 ],
+            "friday": [ 27, 2, 7, 13 ],
+            "saturday": [ 26, 1, 7, 13 ],
+            "sunday": [ 25, 30, 6, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 213,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/Tunnel.jpg',
+          title: 'A\'s Wallpaper',
+          artist: '?',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 25, 30, 6, 12 ],
+            "tuesday": [ 30, 6, 11, 18 ],
+            "wednesday": [ 14, 4, 10, 17 ],
+            "thursday": [ 29, 4, 10, 16 ],
+            "friday": [ 28, 2, 17, 15 ],
+            "saturday": [ 27, 2, 7, 13 ],
+            "sunday": [ 26, 1, 7, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 214,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/Baseballs.jpg',
+          title: 'Baseballs',
+          artist: '?',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 26, 1, 7, 13 ],
+            "tuesday": [ 25, 30, 6, 12 ],
+            "wednesday": [ 30, 6, 11, 18 ],
+            "thursday": [ 14, 4, 10, 17 ],
+            "friday": [ 29, 4, 10, 16 ],
+            "saturday": [ 28, 2, 17, 15 ],
+            "sunday": [ 27, 2, 7, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 215,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/ColiseumAisle.jpg',
+          title: 'Coliseam Aisle',
+          artist: '?',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 27, 2, 7, 13 ],
+            "tuesday": [ 26, 1, 7, 13 ],
+            "wednesday": [ 25, 30, 6, 12 ],
+            "thursday": [ 30, 6, 11, 18 ],
+            "friday": [ 14, 4, 10, 17 ],
+            "saturday": [ 29, 4, 10, 16 ],
+            "sunday": [ 28, 2, 17, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
