@@ -2002,6 +2002,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 112,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=174233431/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://adarcahianku.bandcamp.com/album/badart',
+          a_string: 'badart by adarkahianqu',
+          rule: {
+            "monday": [ 17, 21, 27, 8 ],
+            "tuesday": [ 16, 19, 26, 6 ],
+            "wednesday": [ 15, 19, 24, 6 ],
+            "thursday": [ 15, 18, 24, 5 ],
+            "saturday": [ 13, 21, 23, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 113,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2754202102/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://blankembrace.bandcamp.com/album/promises',
+          a_string: 'Promises by Blank Embrace',
+          rule: {
+            "monday": [ 13, 21, 23, 4 ],
+            "tuesday": [ 17, 21, 27, 8 ],
+            "wednesday": [ 16, 19, 26, 6 ],
+            "thursday": [ 15, 19, 24, 6 ],
+            "saturday": [ 15, 18, 24, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 114,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=907489737/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://fabersan.bandcamp.com/album/sunday-afternoon-music-inspired-by-the-cosmology-of-alfred-north-whitehead',
+          a_string: 'Sunday Afternoon                                     [music inspired by the cosmology of Alfred North Whitehead.] by Fabersan',
+          rule: {
+            "monday": [ 15, 18, 24, 5 ],
+            "tuesday": [ 13, 21, 23, 4 ],
+            "wednesday": [ 17, 21, 27, 8 ],
+            "thursday": [ 16, 19, 26, 6 ],
+            "saturday": [ 15, 19, 24, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
