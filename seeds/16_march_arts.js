@@ -4404,6 +4404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 221,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/untitled-box-2008.jpg',
+          title: 'Untitled (Box)',
+          artist: 'Tea Jorjadze',
+          year: '2008',
+          rule: {
+            "monday": [ 26, 5, 13, 23 ],
+            "tuesday": [ 25, 4, 13, 22 ],
+            "wednesday": [ 31, 9, 18, 27 ],
+            "thursday": [ 30, 9, 19, 27 ],
+            "friday": [ 30, 8, 16, 26 ],
+            "saturday": [ 28, 7, 15, 25 ],
+            "sunday": [ 27, 6, 14, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 222,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/construction-rubble-of-tent-s-central-space-tent-rotterdam-2011.jpg',
+          title: 'Construction Rubble of TENT\'s Central Space, TENT Rotterdam',
+          artist: 'Lara Almarcegui',
+          year: '2011',
+          rule: {
+            "monday": [ 27, 6, 14, 24 ],
+            "tuesday": [ 26, 5, 13, 23 ],
+            "wednesday": [ 25, 4, 13, 22 ],
+            "thursday": [ 31, 9, 18, 27 ],
+            "friday": [ 30, 9, 19, 27 ],
+            "saturday": [ 30, 8, 16, 26 ],
+            "sunday": [ 28, 7, 15, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 223,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/lovers-2003.jpg',
+          title: 'Lovers',
+          artist: 'Dana Schutz',
+          year: '2003',
+          rule: {
+            "monday": [ 28, 7, 15, 25 ],
+            "tuesday": [ 27, 6, 14, 24 ],
+            "wednesday": [ 26, 5, 13, 23 ],
+            "thursday": [ 25, 4, 13, 22 ],
+            "friday": [ 31, 9, 18, 27 ],
+            "saturday": [ 30, 9, 19, 27 ],
+            "sunday": [ 30, 8, 16, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 224,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/cdl-hanuman-image03.jpg',
+          title: '26000 Bells of Hanuman Sculpture',
+          artist: 'Charuvi Agrawal',
+          year: '2014',
+          rule: {
+            "monday": [ 31, 9, 17, 27 ],
+            "tuesday": [ 29, 8, 16, 26 ],
+            "wednesday": [ 28, 7, 15, 25 ],
+            "thursday": [ 27, 6, 14, 24 ],
+            "friday": [ 26, 5, 14, 23 ],
+            "saturday": [ 1, 10, 19, 28 ],
+            "sunday": [ 31, 10, 20, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 225,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/rq5.jpg',
+          title: 'RQ5',
+          artist: 'Raquel Díaz',
+          year: '2016',
+          rule: {
+            "monday": [ 31, 10, 20, 28 ],
+            "tuesday": [ 31, 9, 17, 27 ],
+            "wednesday": [ 29, 8, 16, 26 ],
+            "thursday": [ 28, 7, 15, 25 ],
+            "friday": [ 27, 6, 14, 24 ],
+            "saturday": [ 26, 5, 14, 23 ],
+            "sunday": [ 1, 10, 19, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
