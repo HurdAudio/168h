@@ -2434,6 +2434,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 136,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=738432067/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://fuckupayus.bandcamp.com/album/fuck-u-pay-us-live-at-cielo-gallery-for-casa-solidaria-del-surs-melanin-unity-show',
+          a_string: 'Fuck U Pay Us Live at Cielo Gallery for Casa Solidaria del Sur&#39;s Melanin Unity Show by Fuck U Pay Us',
+          rule: {
+            "monday": [ 21, 25, 27, 2 ],
+            "tuesday": [ 24, 27, 29, 4 ],
+            "wednesday": [ 25, 29, 2, 4 ],
+            "thursday": [ 8, 2, 4, 10 ],
+            "saturday": [ 20, 25, 27, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 137,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2997763874/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://awapoulo.bandcamp.com/album/poulo-warali',
+          a_string: 'Poulo Warali by Awa Poulo',
+          rule: {
+            "monday": [ 20, 25, 27, 10 ],
+            "tuesday": [ 21, 25, 27, 2 ],
+            "wednesday": [ 24, 27, 29, 4 ],
+            "thursday": [ 25, 29, 2, 4 ],
+            "saturday": [ 8, 2, 4, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 138,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3276720701/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://skkakraba.bandcamp.com/album/songs-of-paapieye',
+          a_string: 'Songs of Paapieye by SK Kakraba',
+          rule: {
+            "monday": [ 8, 2, 4, 10 ],
+            "tuesday": [ 20, 25, 27, 10 ],
+            "wednesday": [ 21, 25, 27, 2 ],
+            "thursday": [ 24, 27, 29, 4 ],
+            "saturday": [ 25, 29, 2, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
