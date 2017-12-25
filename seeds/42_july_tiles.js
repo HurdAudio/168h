@@ -256,6 +256,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#E7E8ED',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 19,
+          user_id: 1,
+          theme: 'Steam',
+          type: 'friday',
+          src_string: '../img/july_tiles/Solar_coronae_created_by_the_steam_getting_out_hot_springs_1.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '140%',
+          color_dark: '#030303',
+          color_medium: '#373125',
+          color_light: '#EFEBEC',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
