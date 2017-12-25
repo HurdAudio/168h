@@ -2542,6 +2542,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 142,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2583644437/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://newfocusrecordings.bandcamp.com/album/kathleen-supove-the-debussy-effect-2',
+          a_string: 'Kathleen Supove: The Debussy Effect by Kathleen Supove',
+          rule: {
+            "monday": [ 29, 5, 6, 7 ],
+            "tuesday": [ 28, 4, 5, 6 ],
+            "wednesday": [ 27, 3, 4, 5 ],
+            "thursday": [ 31, 7, 8, 9 ],
+            "saturday": [ 30, 6, 7, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 143,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=348919945/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://newfocusrecordings.bandcamp.com/album/le-boeuf-brothers-jack-quartet',
+          a_string: 'Le Boeuf Brothers + JACK Quartet by Le Boeuf Brothers + JACK Quartet',
+          rule: {
+            "monday": [ 30, 6, 7, 8 ],
+            "tuesday": [ 29, 5, 6, 7 ],
+            "wednesday": [ 28, 4, 5, 6 ],
+            "thursday": [ 27, 3, 4, 5 ],
+            "saturday": [ 31, 7, 8, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 144,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2803474742/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://newfocusrecordings.bandcamp.com/album/nutshell-studies-of-unexplained-death',
+          a_string: 'Nutshell Studies of Unexplained Death by David Smooke',
+          rule: {
+            "monday": [ 31, 7, 8, 9 ],
+            "tuesday": [ 30, 6, 7, 8 ],
+            "wednesday": [ 29, 5, 6, 7 ],
+            "thursday": [ 28, 4, 5, 6 ],
+            "saturday": [ 27, 3, 4, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
