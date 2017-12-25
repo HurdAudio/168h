@@ -1678,6 +1678,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 94,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=145764687/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://hella.bandcamp.com/album/theres-no-666-in-outer-space',
+          a_string: 'There&#39;s No 666 In Outer Space by Hella',
+          rule: {
+            "monday": [ 15, 5, 13, 7 ],
+            "tuesday": [ 14, 4, 12, 6 ],
+            "wednesday": [ 18, 8, 16, 10 ],
+            "thursday": [ 17, 7, 15, 9 ],
+            "saturday": [ 16, 6, 14, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 95,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=399891782/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://nometal.bandcamp.com/album/ours',
+          a_string: 'ours by no metal in this battle',
+          rule: {
+            "monday": [ 16, 6, 14, 9 ],
+            "tuesday": [ 15, 5, 13, 7 ],
+            "wednesday": [ 14, 4, 12, 6 ],
+            "thursday": [ 18, 8, 16, 10 ],
+            "saturday": [ 17, 7, 15, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 96,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2355000521/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://perudo.bandcamp.com/album/2008-2012',
+          a_string: '#2008-2012# by perudo beats',
+          rule: {
+            "monday": [ 17, 7, 15, 9 ],
+            "tuesday": [ 16, 6, 14, 9 ],
+            "wednesday": [ 15, 5, 13, 7 ],
+            "thursday": [ 14, 4, 12, 6 ],
+            "saturday": [ 18, 8, 16, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
