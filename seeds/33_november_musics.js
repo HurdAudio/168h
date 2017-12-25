@@ -1462,6 +1462,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 82,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=187392738/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://pasteurlappe.bandcamp.com/album/we-the-people',
+          a_string: 'We, The People by Pasteur Lappe',
+          rule: {
+            "monday": [ 12, 23, 4, 8 ],
+            "tuesday": [ 11, 22, 3, 7 ],
+            "wednesday": [ 10, 21, 2, 4 ],
+            "thursday": [ 9, 20, 1, 3 ],
+            "saturday": [ 13, 24, 5, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 83,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3298491083/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://preschmedia.bandcamp.com/album/aktion-celebration-lp-cd-1977-2017',
+          a_string: 'AKTION - Celebration LP/CD (1977) 2017 by Aktion',
+          rule: {
+            "monday": [ 13, 24, 5, 9 ],
+            "tuesday": [ 12, 23, 4, 8 ],
+            "wednesday": [ 11, 22, 3, 7 ],
+            "thursday": [ 10, 21, 2, 4 ],
+            "saturday": [ 9, 20, 1, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 84,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2776328381/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://lesfillesdeillighadad.bandcamp.com/album/les-filles-de-illighadad',
+          a_string: 'Les Filles de Illighadad by Les Filles de Illighadad',
+          rule: {
+            "monday": [ 10, 21, 2, 4 ],
+            "tuesday": [ 14, 25, 6, 10 ],
+            "wednesday": [ 13, 24, 5, 9 ],
+            "thursday": [ 12, 23, 4, 8 ],
+            "saturday": [ 11, 22, 3, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
