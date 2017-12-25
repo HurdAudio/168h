@@ -4804,6 +4804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 241,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/panche-i-1970.jpg',
+          title: 'Panche I',
+          artist: 'Omar Rayo',
+          year: '1970',
+          rule: {
+            "monday": [ 3, 4, 15, 7 ],
+            "tuesday": [ 6, 8, 31, 20 ],
+            "wednesday": [ 8, 9, 1, 4 ],
+            "thursday": [ 11, 12, 3, 7 ],
+            "friday": [ 14, 16, 17, 19 ],
+            "saturday": [ 16, 18, 22, 25 ],
+            "sunday": [ 18, 20, 21, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 242,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/qvh1-le-courrier-de-l-est-n-243-13-10-2007-2007.jpg',
+          title: 'QVH1- Le courrier de l\'Est n° 243, 13.10.2007',
+          artist: 'Jean-Francois Dubreuil',
+          year: '2007',
+          rule: {
+            "monday": [ 18, 20, 21, 24 ],
+            "tuesday": [ 3, 4, 15, 7 ],
+            "wednesday": [ 6, 8, 31, 20 ],
+            "thursday": [ 8, 9, 1, 4 ],
+            "friday": [ 11, 12, 3, 7 ],
+            "saturday": [ 14, 16, 17, 19 ],
+            "sunday": [ 16, 18, 22, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 243,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/dark-bridge-2003.jpg',
+          title: 'Dark Bridge',
+          artist: 'Sean Scully',
+          year: '2003',
+          rule: {
+            "monday": [ 16, 18, 22, 25 ],
+            "tuesday": [ 18, 20, 21, 24 ],
+            "wednesday": [ 3, 4, 15, 7 ],
+            "thursday": [ 6, 8, 31, 20 ],
+            "friday": [ 8, 9, 1, 4 ],
+            "saturday": [ 11, 12, 3, 7 ],
+            "sunday": [ 14, 16, 17, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 244,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/untitled-1950.jpg',
+          title: 'Untitled',
+          artist: 'Sandu Darie',
+          year: '1950',
+          rule: {
+            "monday": [ 14, 16, 17, 19 ],
+            "tuesday": [ 16, 18, 22, 25 ],
+            "wednesday": [ 18, 20, 21, 24 ],
+            "thursday": [ 3, 4, 15, 7 ],
+            "friday": [ 6, 8, 31, 20 ],
+            "saturday": [ 8, 9, 1, 4 ],
+            "sunday": [ 11, 12, 3, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 245,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/composition-au-fond-cosmique-1996.jpg',
+          title: 'Composition au fond cosmique',
+          artist: 'Eugene Brands',
+          year: '1996',
+          rule: {
+            "monday": [ 12, 13, 4, 8 ],
+            "tuesday": [ 15, 17, 18, 20 ],
+            "wednesday": [ 17, 19, 23, 26 ],
+            "thursday": [ 19, 21, 22, 25 ],
+            "friday": [ 4, 5, 16, 8 ],
+            "saturday": [ 7, 9, 1, 21 ],
+            "sunday": [ 9, 10, 2, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
