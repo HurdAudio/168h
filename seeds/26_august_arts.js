@@ -3404,6 +3404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 171,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/landscape-new-mexico-1920-1.jpg',
+          title: 'Landscape, New Mexico',
+          artist: 'Marsden Hartley',
+          year: '1920',
+          rule: {
+            "monday": [ 22, 25, 3, 19 ],
+            "tuesday": [ 28, 1, 9, 25 ],
+            "wednesday": [ 27, 30, 8, 24 ],
+            "thursday": [ 26, 30, 7, 23 ],
+            "friday": [ 25, 29, 6, 22 ],
+            "saturday": [ 24, 26, 5, 21 ],
+            "sunday": [ 23, 26, 4, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 172,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/large-country-petrified-sand-hills-1932.jpg',
+          title: 'Large Country—Petrified Sand Hills',
+          artist: 'Marsden Hartley',
+          year: '1932',
+          rule: {
+            "monday": [ 23, 26, 4, 20 ],
+            "tuesday": [ 22, 25, 3, 19 ],
+            "wednesday": [ 28, 1, 9, 25 ],
+            "thursday": [ 27, 30, 8, 24 ],
+            "friday": [ 26, 30, 7, 23 ],
+            "saturday": [ 25, 29, 6, 22 ],
+            "sunday": [ 24, 26, 5, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 173,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/chaos-nr-2-1906.jpg',
+          title: 'Chaos, Nr. 2',
+          artist: 'Hilma af Klint',
+          year: '1906',
+          rule: {
+            "monday": [ 24, 26, 5, 21 ],
+            "tuesday": [ 23, 26, 4, 20 ],
+            "wednesday": [ 22, 25, 3, 19 ],
+            "thursday": [ 28, 1, 9, 25 ],
+            "friday": [ 27, 30, 8, 24 ],
+            "saturday": [ 26, 30, 7, 23 ],
+            "sunday": [ 25, 29, 6, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 174,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/the-kiss-1908(1).jpg',
+          title: 'The Kiss',
+          artist: 'Gustav Klimt',
+          year: '1907 - 1908',
+          rule: {
+            "monday": [ 25, 29, 6, 22 ],
+            "tuesday": [ 24, 26, 5, 21 ],
+            "wednesday": [ 23, 26, 4, 20 ],
+            "thursday": [ 22, 25, 3, 19 ],
+            "friday": [ 28, 1, 9, 25 ],
+            "saturday": [ 27, 30, 8, 24 ],
+            "sunday": [ 26, 30, 7, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 175,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/composition-no-15-1925.jpg',
+          title: 'Composition No. 15',
+          artist: 'Friedrich Vordemberge-Gildewart',
+          year: '1925',
+          rule: {
+            "monday": [ 27, 31, 8, 24 ],
+            "tuesday": [ 26, 30, 7, 23 ],
+            "wednesday": [ 25, 27, 6, 22 ],
+            "thursday": [ 24, 27, 5, 21 ],
+            "friday": [ 23, 26, 4, 20 ],
+            "saturday": [ 29, 2, 10, 26 ],
+            "sunday": [ 28, 31, 9, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
