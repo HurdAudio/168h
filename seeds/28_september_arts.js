@@ -3204,6 +3204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 161,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/army-of-mushrooms-2003.jpg',
+          title: 'Army of Mushrooms',
+          artist: 'Takashi Murakami',
+          year: '2003',
+          rule: {
+            "monday": [ 24, 30, 18, 26 ],
+            "tuesday": [ 23, 29, 17, 25 ],
+            "wednesday": [ 22, 28, 16, 24 ],
+            "thursday": [ 21, 27, 15, 23 ],
+            "friday": [ 20, 26, 14, 21 ],
+            "saturday": [ 26, 2, 20, 28 ],
+            "sunday": [ 25, 1, 19, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 162,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/magical-space-forms-1948.jpg',
+          title: 'Magical Space Forms',
+          artist: 'Lorser Feitelson',
+          year: '1948',
+          rule: {
+            "monday": [ 25, 1, 19, 27 ],
+            "tuesday": [ 24, 30, 18, 26 ],
+            "wednesday": [ 23, 29, 17, 25 ],
+            "thursday": [ 22, 28, 16, 24 ],
+            "friday": [ 21, 27, 15, 23 ],
+            "saturday": [ 20, 26, 14, 21 ],
+            "sunday": [ 26, 2, 20, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 163,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/hellblau-im-licht-1965.jpg',
+          title: 'Hellblau im Licht',
+          artist: 'Ernst Wilhelm Nay',
+          year: '1965',
+          rule: {
+            "monday": [ 26, 2, 20, 28 ],
+            "tuesday": [ 25, 1, 19, 27 ],
+            "wednesday": [ 24, 30, 18, 26 ],
+            "thursday": [ 23, 29, 17, 25 ],
+            "friday": [ 22, 28, 16, 24 ],
+            "saturday": [ 21, 27, 15, 23 ],
+            "sunday": [ 20, 26, 14, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 164,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/paisagem-com-a-filha-da-francesa-nesse-dia-1966.jpg',
+          title: 'paisagem com a filha da francesa, nesse dia',
+          artist: 'Antonio Areal',
+          year: '1966',
+          rule: {
+            "monday": [ 20, 26, 14, 21 ],
+            "tuesday": [ 26, 2, 20, 28 ],
+            "wednesday": [ 25, 1, 19, 27 ],
+            "thursday": [ 24, 30, 18, 26 ],
+            "friday": [ 23, 29, 17, 25 ],
+            "saturday": [ 22, 28, 16, 24 ],
+            "sunday": [ 21, 27, 15, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 165,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/self-portrait-in-studio-1976.jpg',
+          title: 'Self Portrait in Studio',
+          artist: 'Brett Whiteley',
+          year: '1976',
+          rule: {
+            "monday": [ 21, 27, 15, 23 ],
+            "tuesday": [ 20, 26, 14, 21 ],
+            "wednesday": [ 26, 2, 20, 28 ],
+            "thursday": [ 25, 1, 19, 27 ],
+            "friday": [ 24, 30, 18, 26 ],
+            "saturday": [ 23, 29, 17, 25 ],
+            "sunday": [ 22, 28, 16, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
