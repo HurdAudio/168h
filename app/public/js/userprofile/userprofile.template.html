@@ -4561,6 +4561,45 @@
 
     </div>
 
+    <div id="userMusicCurratorEditorDiv">
+      <div id="userMusicCurratorEditorBar">
+        <a href="" class="btn" id="userMusicCurratorEditorDoneButton" ng-click="$ctrl.userMusicCurratorEditorDone()">done</a>
+        <h1 id="musicCurratorEditorTitle">Music</h1>
+      </div>
+      <form id="userMusicCurratorEditorForm" class="pure-form pure-form-stacked">
+        <fieldset>
+          <p id="musicCurratorMonthLabel"></p>
+          <p id="musicCurratorThemeLabel"></p>
+          <div id="userMusicCurratorContent"></div>
+
+          <div id="musicCurratorForm">
+            <p>Please paste bandcamp embed link here:</p>
+            <div id="musicCurratorSubmitDiv">
+              <input type="text" id="musicCurratorBandcampSubmissionString">
+            </div>
+            <p id="musicCurratorBancampSubmissionErrorMessage"></p>
+
+          </div><br><br>
+          <div id="musicCurratorFilter">
+            <p>Weekday/Monthday Filter Values:</p>
+            <div id="userMusicCurratorRandomButtonDiv">
+              <button id="userMusicCurratorRandomizeFilterButton">Randomize Values</button>
+            </div>
+            <div id="userMusicCurratorWeekArrays" class="pure-g">
+              <div id="userMusicCurratorMondayArray" class="pure-u-1-3"><p>Mon</p></div>
+              <div id="userMusicCurratorTuesdayArray" class="pure-u-1-3"><p>Tue</p></div>
+              <div id="userMusicCurratorWednesdayArray" class="pure-u-1-3"><p>Wed</p></div>
+              <div id="userMusicCurratorThursdayArray" class="pure-u-1-2"><p>Thu</p></div>
+              <div id="userMusicCurratorSaturdayArray" class="pure-u-1-2"><p>Sat</p></div>
+
+            </div>
+          </div>
+
+        </fieldset>
+      </form>
+
+    </div>
+
 
   </div>
 

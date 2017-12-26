@@ -188,6 +188,297 @@
       vm.toggleTilesCurratorMonth = toggleTilesCurratorMonth;
       vm.tileHoverColor = tileHoverColor;
       vm.tileClick = tileClick;
+      vm.editMusicCurrate = editMusicCurrate;
+      vm.userMusicCurratorEditorDone = userMusicCurratorEditorDone;
+
+      function userMusicCurratorEditorDone() {
+        let userMusicCurratorEditorDiv = document.getElementById('userMusicCurratorEditorDiv');
+        let musicCurratorManagerDone = document.getElementById('musicCurratorManagerDone');
+
+        userMusicCurratorEditorDiv.setAttribute("style", "display: none;");
+        musicCurratorManagerDone.setAttribute("style", "visibility: visible;");
+      }
+
+      function handleMusicFilterListener(eleCheck, value, musicSelection, musicMonth, weekday) {
+        eleCheck.addEventListener('click', ()=>{
+          let subObj = {
+            rule: musicSelection.rule
+          };
+          if (eleCheck.checked) {
+            subObj.rule[weekday].push(value);
+          } else {
+            subObj.rule[weekday].splice((subObj.rule[weekday].indexOf(value)), 1);
+          }
+          $http.patch(`/${musicMonth}/${musicSelection.id}`, subObj)
+          .then(()=>{
+            musicSelection.rule = subObj.rule;
+            displayMusics(musicMonth + 'byuser');
+          });
+        });
+      }
+
+      function displayMusicDaysArray(element, numberDays, rulesArray, musicSelection, musicMonth, weekday) {
+        let eleDiv;
+        let eleCheck;
+        let eleLabel;
+
+        for (let i = 0; i < numberDays; i++) {
+          eleDiv = document.createElement('div');
+          element.appendChild(eleDiv);
+          eleDiv.className = 'arrayMonthClass';
+          eleCheck = document.createElement('input');
+          eleDiv.appendChild(eleCheck);
+          eleCheck.type = 'checkbox';
+          if (rulesArray.indexOf(i + 1) === -1) {
+            eleCheck.checked = false;
+          } else {
+            eleCheck.checked = true;
+          }
+          eleLabel = document.createElement('p');
+          eleDiv.appendChild(eleLabel);
+          eleLabel.innerHTML = (i + 1).toString();
+          handleMusicFilterListener(eleCheck, (i + 1), musicSelection, musicMonth, weekday);
+        }
+      }
+
+      function editMusicCurrate(monthTable, musicId) {
+        let numberDays = 0;
+        let userMusicCurratorEditorDiv = document.getElementById('userMusicCurratorEditorDiv');
+        let musicCurratorManagerDone = document.getElementById('musicCurratorManagerDone');
+        let musicCurratorFilter = document.getElementById('musicCurratorFilter');
+        let musicCurratorMonthLabel = document.getElementById('musicCurratorMonthLabel');
+        switch(monthTable) {
+          case('friday_musics'):
+            musicCurratorMonthLabel.innerHTML = 'Friday Music';
+            musicCurratorFilter.setAttribute("style", "display: none;");
+            break;
+          case('sunday_musics'):
+            musicCurratorMonthLabel.innerHTML = 'Sunday Music';
+            musicCurratorFilter.setAttribute("style", "display: none;");
+            break;
+          case('january_musics'):
+            musicCurratorMonthLabel.innerHTML = 'January Music';
+            musicCurratorFilter.setAttribute("style", "display: initial;");
+            numberDays = 31;
+            break;
+          case('february_musics'):
+            musicCurratorMonthLabel.innerHTML = 'February Music';
+            musicCurratorFilter.setAttribute("style", "display: initial;");
+            numberDays = 29;
+            break;
+          case('march_musics'):
+            musicCurratorMonthLabel.innerHTML = 'March Music';
+            musicCurratorFilter.setAttribute("style", "display: initial;");
+            numberDays = 31;
+            break;
+          case('april_musics') :
+            musicCurratorMonthLabel.innerHTML = 'April Music';
+            musicCurratorFilter.setAttribute("style", "display: initial;");
+            numberDays = 30;
+            break;
+          case('may_musics'):
+            musicCurratorMonthLabel.innerHTML = 'May Music';
+            musicCurratorFilter.setAttribute("style", "display: initial;");
+            numberDays = 31;
+            break;
+          case('june_musics'):
+            musicCurratorMonthLabel.innerHTML = 'June Music';
+            musicCurratorFilter.setAttribute("style", "display: initial;");
+            numberDays = 30;
+            break;
+          case('july_musics'):
+            musicCurratorMonthLabel.innerHTML = 'July Music';
+            musicCurratorFilter.setAttribute("style", "display: initial;");
+            numberDays = 31;
+            break;
+          case('august_musics'):
+            musicCurratorMonthLabel.innerHTML = 'August Music';
+            musicCurratorFilter.setAttribute("style", "display: initial;");
+            numberDays = 31;
+            break;
+          case('september_musics'):
+            musicCurratorMonthLabel.innerHTML = 'September Music';
+            musicCurratorFilter.setAttribute("style", "display: initial;");
+            numberDays = 30;
+            break;
+          case('october_musics'):
+            musicCurratorMonthLabel.innerHTML = 'October Music';
+            musicCurratorFilter.setAttribute("style", "display: initial;");
+            numberDays = 31;
+            break;
+          case('november_musics'):
+            musicCurratorMonthLabel.innerHTML = 'November Music';
+            musicCurratorFilter.setAttribute("style", "display: initial;");
+            numberDays = 30;
+            break;
+          case('december_musics'):
+            musicCurratorMonthLabel.innerHTML = 'December Music';
+            musicCurratorFilter.setAttribute("style", "display: initial;");
+            numberDays = 31;
+            break;
+          default:
+            console.log('month not supported');
+        }
+        let musicCurratorThemeLabel = document.getElementById('musicCurratorThemeLabel');
+        let userMusicCurratorContent = document.getElementById('userMusicCurratorContent');
+        while (userMusicCurratorContent.firstChild) {
+          userMusicCurratorContent.removeChild(userMusicCurratorContent.firstChild);
+        }
+        let musicPlayer;
+        let musicATag;
+        let musicCurratorSubmitDiv = document.getElementById('musicCurratorSubmitDiv');
+        let musicCurratorBandcampSubmissionString = document.getElementById('musicCurratorBandcampSubmissionString');
+        if (musicCurratorBandcampSubmissionString) {
+          musicCurratorBandcampSubmissionString.parentNode.removeChild(musicCurratorBandcampSubmissionString);
+          musicCurratorBandcampSubmissionString = document.createElement('input');
+          musicCurratorSubmitDiv.appendChild(musicCurratorBandcampSubmissionString);
+          musicCurratorBandcampSubmissionString.id = 'musicCurratorBandcampSubmissionString';
+          musicCurratorBandcampSubmissionString.type = 'text';
+          musicCurratorBandcampSubmissionString.className = 'pure-input-1';
+        }
+        let musicCurratorBancampSubmissionErrorMessage = document.getElementById('musicCurratorBancampSubmissionErrorMessage');
+        musicCurratorBancampSubmissionErrorMessage.innerHTML = '';
+        if ((monthTable !== 'friday_musics') && (monthTable !== 'sunday_musics')) {
+          let dayLabel;
+          let userMusicCurratorMondayArray = document.getElementById('userMusicCurratorMondayArray');
+          while (userMusicCurratorMondayArray.firstChild) {
+            userMusicCurratorMondayArray.removeChild(userMusicCurratorMondayArray.firstChild);
+          }
+          dayLabel = document.createElement('p');
+          userMusicCurratorMondayArray.appendChild(dayLabel);
+          dayLabel.innerHTML = "Mon";
+          let userMusicCurratorTuesdayArray = document.getElementById('userMusicCurratorTuesdayArray');
+          while (userMusicCurratorTuesdayArray.firstChild) {
+            userMusicCurratorTuesdayArray.removeChild(userMusicCurratorTuesdayArray.firstChild);
+          }
+          dayLabel = document.createElement('p');
+          userMusicCurratorTuesdayArray.appendChild(dayLabel);
+          dayLabel.innerHTML = 'Tue';
+          let userMusicCurratorWednesdayArray = document.getElementById('userMusicCurratorWednesdayArray');
+          while (userMusicCurratorWednesdayArray.firstChild) {
+            userMusicCurratorWednesdayArray.removeChild(userMusicCurratorWednesdayArray.firstChild);
+          }
+          dayLabel = document.createElement('p');
+          userMusicCurratorWednesdayArray.appendChild(dayLabel);
+          dayLabel.innerHTML = 'Wed';
+          let userMusicCurratorThursdayArray = document.getElementById('userMusicCurratorThursdayArray');
+          while (userMusicCurratorThursdayArray.firstChild) {
+            userMusicCurratorThursdayArray.removeChild(userMusicCurratorThursdayArray.firstChild);
+          }
+          dayLabel = document.createElement('p');
+          userMusicCurratorThursdayArray.appendChild(dayLabel);
+          dayLabel.innerHTML = 'Thu';
+          let userMusicCurratorSaturdayArray = document.getElementById('userMusicCurratorSaturdayArray');
+          while (userMusicCurratorSaturdayArray.firstChild) {
+            userMusicCurratorSaturdayArray.removeChild(userMusicCurratorSaturdayArray.firstChild);
+          }
+          dayLabel = document.createElement('p');
+          userMusicCurratorSaturdayArray.appendChild(dayLabel);
+          dayLabel.innerHTML = 'Sat';
+        }
+        let userMusicCurratorRandomButtonDiv = document.getElementById('userMusicCurratorRandomButtonDiv');
+        let userMusicCurratorRandomizeFilterButton = document.getElementById('userMusicCurratorRandomizeFilterButton');
+        if (userMusicCurratorRandomizeFilterButton) {
+          userMusicCurratorRandomizeFilterButton.parentNode.removeChild(userMusicCurratorRandomizeFilterButton);
+          userMusicCurratorRandomizeFilterButton = document.createElement('button');
+          userMusicCurratorRandomButtonDiv.appendChild(userMusicCurratorRandomizeFilterButton);
+          userMusicCurratorRandomizeFilterButton.id = 'userMusicCurratorRandomizeFilterButton';
+          userMusicCurratorRandomizeFilterButton.innerHTML = 'Randomize Values';
+          userMusicCurratorRandomizeFilterButton.setAttribute("style", "background: #441E38; background-color: -webkit-linear-gradient(135deg, #441E38, #3E9B8C); background: -o-linear-gradient(135deg, #441E38, #3E9B8C); background: -moz-linear-gradient(135deg, #441E38, #3E9B8C); background: linear-gradient(135deg, #441E38, #3E9B8C); margin-left: 12vmin;");
+        }
+
+        $http.get(`/${monthTable}/${musicId}`)
+        .then(musicSelectionData=>{
+          let musicSelection = musicSelectionData.data;
+          if ((monthTable !== 'friday_musics') && (monthTable !== 'sunday_musics')) {
+            if (musicSelection.theme !== '') {
+              musicCurratorThemeLabel.innerHTML = musicSelection.theme;
+              musicCurratorThemeLabel.setAttribute("style", "visibility: visible;");
+            } else {
+              musicCurratorThemeLabel.setAttribute("style", "visibility: hidden;");
+            }
+            displayMusicDaysArray(userMusicCurratorMondayArray, numberDays, musicSelection.rule.monday, musicSelection, monthTable, 'monday');
+            displayMusicDaysArray(userMusicCurratorTuesdayArray, numberDays, musicSelection.rule.tuesday, musicSelection, monthTable, 'tuesday');
+            displayMusicDaysArray(userMusicCurratorWednesdayArray, numberDays, musicSelection.rule.wednesday, musicSelection, monthTable, 'wednesday');
+            displayMusicDaysArray(userMusicCurratorThursdayArray, numberDays, musicSelection.rule.thursday, musicSelection, monthTable, 'thursday');
+            displayMusicDaysArray(userMusicCurratorSaturdayArray, numberDays, musicSelection.rule.saturday, musicSelection, monthTable, 'saturday');
+            userMusicCurratorRandomizeFilterButton.addEventListener('click', ()=>{
+              let subObj = {
+                rule: {
+                  monday: [],
+                  tuesday: [],
+                  wednesday: [],
+                  thursday: [],
+                  saturday: []
+                }
+              };
+              subObj.rule.monday = artArrayRandomizer(numberDays, 1, 6);
+              subObj.rule.tuesday = artArrayRandomizer(numberDays, 1, 6);
+              subObj.rule.wednesday = artArrayRandomizer(numberDays, 1, 6);
+              subObj.rule.thursday = artArrayRandomizer(numberDays, 1, 6);
+              subObj.rule.saturday = artArrayRandomizer(numberDays, 1, 6);
+              $http.patch(`/${monthTable}/${musicId}`, subObj)
+              .then(()=>{
+                editMusicCurrate(monthTable, musicId);
+                displayMusics(monthTable + 'byuser');
+              });
+            });
+          } else {
+            musicCurratorThemeLabel.setAttribute("style", "visibility: hidden;");
+          }
+          if (musicSelection.source === 'bandcamp') {
+            musicPlayer = document.createElement('iframe');
+            userMusicCurratorContent.appendChild(musicPlayer);
+            musicPlayer.setAttribute("style", "border: 0; width: 100%; height: 650px;");
+            musicPlayer.seamless = true;
+            musicPlayer.src = musicSelection.src_string;
+            musicATag = document.createElement('a');
+            musicPlayer.appendChild(musicATag);
+            musicATag.href = musicSelection.href_string;
+            musicATag.innerHTML = musicSelection.a_string;
+          } else {
+            musicPlayer = document.createElement('iframe');
+            userMusicCurratorContent.appendChild(musicPlayer);
+            musicPlayer.setAttribute("style", "border: 0; width: 100%; height: 650px;");
+            musicPlayer.seamless = true;
+            musicATag = document.createElement('a');
+            musicPlayer.appendChild(musicATag);
+          }
+
+
+          musicCurratorBandcampSubmissionString.addEventListener('focusout', ()=>{
+            if (musicCurratorBandcampSubmissionString.value !== '') {
+              if (checkValidBancampEmbed(musicCurratorBandcampSubmissionString.value)) {
+                let subObj = {
+                  source: 'bandcamp',
+                  src_string: extractSrcStringFromBandcampEmbed(musicCurratorBandcampSubmissionString.value),
+                  href_string: extractHrefStringFromBandcampEmbed(musicCurratorBandcampSubmissionString.value),
+                  a_string: extractATagFromBandcampEmbed(musicCurratorBandcampSubmissionString.value)
+                }
+                musicPlayer.src = subObj.src_string;
+                musicATag.href = subObj.href_string;
+                musicATag.innerHTML = subObj.a_string;
+                $http.patch(`/${monthTable}/${musicId}`, subObj)
+                .then(()=>{
+                  musicSelection.source = subObj.source;
+                  musicSelection.src_string = subObj.src_string;
+                  musicSelection.href_string = subObj.href_string;
+                  musicSelection.a_string = subObj.a_string;
+                });
+              } else {
+                musicCurratorBancampSubmissionErrorMessage.innerHTML = 'ERROR - not valid bandcamp embed string';
+                musicCurratorBancampSubmissionErrorMessage.setAttribute("style", "color: #ff0000;");
+              }
+            } else {
+              musicCurratorBancampSubmissionErrorMessage.innerHTML = '';
+            }
+          });
+
+        });
+
+        userMusicCurratorEditorDiv.setAttribute("style", "display: initial;");
+        musicCurratorManagerDone.setAttribute("style", "visibility: hidden;");
+      }
 
       function tileClick(tileId, color, src, repeatVal, sizeVal) {
         if (toggle[tileId]) {
