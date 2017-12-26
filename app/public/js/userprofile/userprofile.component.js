@@ -190,6 +190,69 @@
       vm.tileClick = tileClick;
       vm.editMusicCurrate = editMusicCurrate;
       vm.userMusicCurratorEditorDone = userMusicCurratorEditorDone;
+      vm.deleteArtCurrate = deleteArtCurrate;
+
+      function deleteArtCurrate(artMonth, artId) {
+        let userArtCurratorEditorDoneButton = document.getElementById('userArtCurratorEditorDoneButton');
+        let userArtCurratorDeleteConfirmDiv = document.getElementById('userArtCurratorDeleteConfirmDiv');
+        let artCurratorManagementDiv = document.getElementById('artCurratorManagementDiv');
+        let userArtCurratorEditorDiv = document.getElementById('userArtCurratorEditorDiv');
+        let userArtCurratorDeleteImage = document.getElementById('userArtCurratorDeleteImage');
+        let userArtCurratorTitleDelete = document.getElementById('userArtCurratorTitleDelete');
+        let userArtCurratorArtistDelete = document.getElementById('userArtCurratorArtistDelete');
+        let userArtCurratorYearDelete = document.getElementById('userArtCurratorYearDelete');
+        let userArtCurratorDeleteConfirmButtons = document.getElementById('userArtCurratorDeleteConfirmButtons');
+        let userArtCurratorConfirmYes = document.getElementById('userArtCurratorConfirmYes');
+        if (userArtCurratorConfirmYes) {
+          userArtCurratorConfirmYes.parentNode.removeChild(userArtCurratorConfirmYes);
+          userArtCurratorConfirmYes = document.createElement('a');
+          userArtCurratorDeleteConfirmButtons.appendChild(userArtCurratorConfirmYes);
+          userArtCurratorConfirmYes.id = 'userArtCurratorConfirmYes';
+          userArtCurratorConfirmYes.className = 'btn';
+          userArtCurratorConfirmYes.innerHTML = 'yes';
+          userArtCurratorConfirmYes.setAttribute("style", "cursor: pointer;");
+        }
+        let userArtCurratorConfirmNo = document.getElementById('userArtCurratorConfirmNo');
+        if (userArtCurratorConfirmNo) {
+          userArtCurratorConfirmNo.parentNode.removeChild(userArtCurratorConfirmNo);
+          userArtCurratorConfirmNo = document.createElement('a');
+          userArtCurratorDeleteConfirmButtons.appendChild(userArtCurratorConfirmNo);
+          userArtCurratorConfirmNo.id = 'userArtCurratorConfirmNo';
+          userArtCurratorConfirmNo.className = 'btn';
+          userArtCurratorConfirmNo.innerHTML = 'no';
+          userArtCurratorConfirmNo.setAttribute("style", "cursor: pointer;");
+        }
+
+
+        $http.get(`/${artMonth}/${artId}`)
+        .then(artPieceData=>{
+          let artPiece = artPieceData.data;
+          userArtCurratorDeleteImage.src = artPiece.img_path;
+          userArtCurratorTitleDelete.innerHTML = artPiece.title;
+          userArtCurratorArtistDelete.innerHTML = artPiece.artist;
+          userArtCurratorYearDelete.innerHTML = artPiece.year;
+
+          userArtCurratorConfirmYes.addEventListener('click', ()=>{
+            $http.delete(`/${artMonth}/${artId}`)
+            .then(()=>{
+              userArtCurratorDeleteConfirmDiv.setAttribute("style", "display: none;");
+              artCurratorManagementDiv.setAttribute("style", "display: initial;");
+              displayArts(artMonth + 'byuser');
+            });
+            userArtCurratorDeleteConfirmDiv.setAttribute("style", "display: none;");
+            artCurratorManagementDiv.setAttribute("style", "display: initial;");
+          });
+          userArtCurratorConfirmNo.addEventListener('click', ()=>{
+            userArtCurratorDeleteConfirmDiv.setAttribute("style", "display: none;");
+            artCurratorManagementDiv.setAttribute("style", "display: initial;");
+          });
+        });
+
+        userArtCurratorDeleteConfirmDiv.setAttribute("style", "display: initial;");
+        artCurratorManagementDiv.setAttribute("style", "display: none;");
+        userArtCurratorEditorDiv.setAttribute("style", "display: none;");
+        userArtCurratorEditorDoneButton.setAttribute("style", "visibility: visible;");
+      }
 
       function userMusicCurratorEditorDone() {
         let userMusicCurratorEditorDiv = document.getElementById('userMusicCurratorEditorDiv');
