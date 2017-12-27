@@ -2488,6 +2488,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 139,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=832740114/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://homeboysandman.bandcamp.com/album/kindness-for-weakness',
+          a_string: 'Kindness for Weakness by Homeboy Sandman',
+          rule: {
+            "monday": [ 25, 29, 2, 4 ],
+            "tuesday": [ 8, 2, 4, 10 ],
+            "wednesday": [ 20, 25, 27, 10 ],
+            "thursday": [ 21, 25, 27, 2 ],
+            "saturday": [ 24, 27, 29, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 140,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1329261667/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://quellechris360.bandcamp.com/album/lullabies-for-the-broken-brain',
+          a_string: 'Lullabies for the Broken Brain by Quelle Chris',
+          rule: {
+            "monday": [ 25, 28, 1, 5 ],
+            "tuesday": [ 26, 1, 3, 5 ],
+            "wednesday": [ 9, 3, 5, 11 ],
+            "thursday": [ 21, 26, 28, 11 ],
+            "saturday": [ 22, 26, 28, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 141,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3347424820/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://billywoods.bandcamp.com/album/known-unknowns',
+          a_string: 'Known Unknowns by billy woods',
+          rule: {
+            "monday": [ 22, 26, 28, 3 ],
+            "tuesday": [ 25, 28, 1, 5 ],
+            "wednesday": [ 26, 1, 3, 5 ],
+            "thursday": [ 9, 3, 5, 11 ],
+            "saturday": [ 21, 26, 28, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
