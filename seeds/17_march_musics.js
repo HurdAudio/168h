@@ -2380,6 +2380,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 133,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=358818633/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://newfocusrecordings.bandcamp.com/album/dalia-raudonikyt-with-solitarius',
+          a_string: 'Dalia Raudonikytė With: Solitarius by Dalia Raudonikytė With',
+          rule: {
+            "monday": [ 20, 26, 1, 9 ],
+            "tuesday": [ 24, 30, 5, 13 ],
+            "wednesday": [ 23, 29, 4, 12 ],
+            "thursday": [ 22, 28, 3, 12 ],
+            "saturday": [ 20, 27, 2, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 134,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2742156133/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://musicinspireschange.bandcamp.com/album/who-me',
+          a_string: 'Who Me? by LAPS',
+          rule: {
+            "monday": [ 20, 27, 2, 10 ],
+            "tuesday": [ 20, 26, 1, 9 ],
+            "wednesday": [ 24, 30, 5, 13 ],
+            "thursday": [ 23, 29, 4, 12 ],
+            "saturday": [ 22, 28, 3, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 135,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4045754053/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://night-school.bandcamp.com/album/if-i-cant-handle-me-at-my-best-you-dont-deserve-you-at-your-worst-2',
+          a_string: 'If I Can&#39;t Handle Me At My Best, You Don&#39;t Deserve You At Your Worst by Helena Celle',
+          rule: {
+            "monday": [ 22, 28, 3, 12 ],
+            "tuesday": [ 20, 27, 2, 10 ],
+            "wednesday": [ 20, 26, 1, 9 ],
+            "thursday": [ 24, 30, 5, 13 ],
+            "saturday": [ 23, 29, 4, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
