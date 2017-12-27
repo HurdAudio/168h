@@ -276,12 +276,12 @@ exports.seed = function(knex, Promise) {
           user_id: 1,
           theme: 'Steam',
           type: 'saturday',
-          src_string: '../img/july_tiles/electricity-1854093_1920.jpg',
+          src_string: '../img/july_tiles/Why-Ice-Dam-Steaming-Is-Safe.jpg',
           repeat_value: 'no-repeat',
-          size_value: '180%',
-          color_dark: '#10181B',
-          color_medium: '#FDC94E',
-          color_light: '#FBFBFB',
+          size_value: '150%',
+          color_dark: '#5F4F4B',
+          color_medium: '#8D7F7E',
+          color_light: '#BBB8BF',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
