@@ -3304,6 +3304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 166,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/corncob-horse-in-outer-space-1978.jpg',
+          title: 'Corncob Horse in Outer Space',
+          artist: 'Maria Primachenko',
+          year: '1978',
+          rule: {
+            "monday": [ 22, 28, 16, 24 ],
+            "tuesday": [ 21, 27, 15, 23 ],
+            "wednesday": [ 20, 26, 14, 21 ],
+            "thursday": [ 26, 2, 20, 28 ],
+            "friday": [ 25, 1, 19, 27 ],
+            "saturday": [ 24, 30, 18, 26 ],
+            "sunday": [ 23, 29, 17, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 167,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/writing-2005.jpg',
+          title: 'Writing',
+          artist: 'Zhang Xiaogang',
+          year: '2005',
+          rule: {
+            "monday": [ 23, 29, 17, 25 ],
+            "tuesday": [ 22, 28, 16, 24 ],
+            "wednesday": [ 21, 27, 15, 23 ],
+            "thursday": [ 20, 26, 14, 21 ],
+            "friday": [ 26, 2, 20, 28 ],
+            "saturday": [ 25, 1, 19, 27 ],
+            "sunday": [ 24, 30, 18, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 168,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/at-the-clinic-1979.jpg',
+          title: 'At the clinic',
+          artist: 'George Pemba',
+          year: '1979',
+          rule: {
+            "monday": [ 25, 31, 19, 27 ],
+            "tuesday": [ 24, 30, 18, 26 ],
+            "wednesday": [ 23, 29, 17, 25 ],
+            "thursday": [ 22, 28, 16, 24 ],
+            "friday": [ 21, 27, 15, 22 ],
+            "saturday": [ 27, 3, 21, 29 ],
+            "sunday": [ 26, 2, 20, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 169,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/studio-1958.jpg',
+          title: 'Studio',
+          artist: 'Craig Kauffman',
+          year: '1958',
+          rule: {
+            "monday": [ 26, 2, 20, 28 ],
+            "tuesday": [ 25, 31, 19, 27 ],
+            "wednesday": [ 24, 30, 18, 26 ],
+            "thursday": [ 23, 29, 17, 25 ],
+            "friday": [ 22, 28, 16, 24 ],
+            "saturday": [ 21, 27, 15, 22 ],
+            "sunday": [ 27, 3, 21, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 170,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/andy-warhol-1970.jpg',
+          title: 'Andy Warhol',
+          artist: 'Alice Neel',
+          year: '1970',
+          rule: {
+            "monday": [ 27, 3, 21, 29 ],
+            "tuesday": [ 26, 2, 20, 28 ],
+            "wednesday": [ 25, 31, 19, 27 ],
+            "thursday": [24, 30, 18, 26  ],
+            "friday": [ 23, 29, 17, 25 ],
+            "saturday": [ 22, 28, 16, 24 ],
+            "sunday": [ 21, 27, 15, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
