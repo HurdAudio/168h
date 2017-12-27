@@ -1408,6 +1408,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 79,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1379604130/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tomze.bandcamp.com/album/com-defeito-de-fabrica-o-fabrication-defect',
+          a_string: 'Com Defeito de Fabricação: Fabrication Defect by Tom Ze',
+          rule: {
+            "monday": [ 13, 21, 27, 2 ],
+            "tuesday": [ 14, 20, 26, 1 ],
+            "wednesday": [ 18, 24, 30, 5 ],
+            "thursday": [ 17, 23, 29, 3 ],
+            "saturday": [ 16, 22, 28, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 80,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=51595156/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://luakabop.bandcamp.com/album/brazil-classics-7-what-s-happening-in-pernambuco-new-sounds-of-the-brazilian-northeast',
+          a_string: 'Brazil Classics 7: What’s Happening In Pernambuco: New Sounds of the Brazilian Northeast by Luaka Bop',
+          rule: {
+            "monday": [ 16, 22, 28, 3 ],
+            "tuesday": [ 13, 21, 27, 2 ],
+            "wednesday": [ 14, 20, 26, 1 ],
+            "thursday": [ 18, 24, 30, 5 ],
+            "saturday": [ 17, 23, 29, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 81,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3614230905/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://luakabop.bandcamp.com/album/brazil-classics-1-beleza-tropical',
+          a_string: 'Brazil Classics 1: Beleza Tropical by Luaka Bop',
+          rule: {
+            "monday": [ 17, 23, 29, 3 ],
+            "tuesday": [ 16, 22, 28, 3 ],
+            "wednesday": [ 13, 21, 27, 2 ],
+            "thursday": [ 14, 20, 26, 1 ],
+            "saturday": [ 18, 24, 30, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
