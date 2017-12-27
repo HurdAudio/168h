@@ -1516,6 +1516,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 85,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2034543457/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://triodakali-kronosquartet.bandcamp.com/album/ladilikan',
+          a_string: 'Ladilikan by Trio Da Kali and Kronos Quartet',
+          rule: {
+            "monday": [ 11, 22, 3, 5 ],
+            "tuesday": [ 10, 21, 2, 4 ],
+            "wednesday": [ 14, 25, 6, 10 ],
+            "thursday": [ 13, 24, 5, 9 ],
+            "saturday": [ 12, 23, 4, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 86,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2571275524/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://africaseven.bandcamp.com/album/africa-airways-four-disco-funk-touchdown-1976-1983',
+          a_string: 'Africa Airways Four (Disco Funk Touchdown 1976 - 1983) by Various Artists',
+          rule: {
+            "monday": [ 12, 23, 4, 8 ],
+            "tuesday": [ 11, 22, 3, 5 ],
+            "wednesday": [ 10, 21, 2, 4 ],
+            "thursday": [ 14, 25, 6, 10 ],
+            "saturday": [ 13, 24, 5, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 87,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1625314783/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ekambibrillant.bandcamp.com/album/african-funk-experimentals-1975-1982',
+          a_string: 'African Funk Experimentals (1975-1982) by Ekambi Brillant',
+          rule: {
+            "monday": [ 13, 24, 5, 9 ],
+            "tuesday": [ 12, 23, 4, 8 ],
+            "wednesday": [ 11, 22, 3, 5 ],
+            "thursday": [ 10, 21, 2, 4 ],
+            "saturday": [ 14, 25, 6, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
