@@ -3904,6 +3904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 196,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/beetle_at_the_gallery_by_cazzaritch.jpg',
+          title: 'Beetle at the Gallery',
+          artist: 'Carol Ritchie',
+          year: '2010',
+          rule: {
+            "monday": [ 26, 6, 16, 24 ],
+            "tuesday": [ 25, 5, 15, 23 ],
+            "wednesday": [ 24, 4, 14, 22 ],
+            "thursday": [ 23, 3, 13, 21 ],
+            "friday": [ 22, 2, 12, 20 ],
+            "saturday": [ 28, 8, 18, 24 ],
+            "sunday": [ 27, 7, 17, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 197,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/28b9bc438311b011f7d62e80dd817bc6-dnm7rd.jpg',
+          title: 'Paris Merry-Go-Round',
+          artist: 'Martin Stavars',
+          year: '2006',
+          rule: {
+            "monday": [ 27, 7, 17, 25 ],
+            "tuesday": [ 26, 6, 16, 24 ],
+            "wednesday": [ 25, 5, 15, 23 ],
+            "thursday": [ 24, 4, 14, 22 ],
+            "friday": [ 23, 3, 13, 21 ],
+            "saturday": [ 22, 2, 12, 20 ],
+            "sunday": [ 28, 8, 18, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 198,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/the_communist_spirit_by_matthias_haker-d5zklk5.jpg',
+          title: 'The Communist Spirit',
+          artist: 'Matthias Haker',
+          year: '2013',
+          rule: {
+            "monday": [ 28, 8, 18, 24 ],
+            "tuesday": [ 27, 7, 17, 25 ],
+            "wednesday": [ 26, 6, 16, 24 ],
+            "thursday": [ 25, 5, 15, 23 ],
+            "friday": [ 24, 4, 14, 22 ],
+            "saturday": [ 23, 3, 13, 21 ],
+            "sunday": [ 22, 2, 12, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 199,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/vertical_horizon__photo_book___page_027_by_romainjl-d61xi1o.jpg',
+          title: 'Vertical Horizon #44',
+          artist: 'Romain JL',
+          year: '2012',
+          rule: {
+            "monday": [ 22, 2, 12, 20 ],
+            "tuesday": [ 28, 8, 18, 24 ],
+            "wednesday": [ 27, 7, 17, 25 ],
+            "thursday": [ 26, 6, 16, 24 ],
+            "friday": [ 25, 5, 15, 23 ],
+            "saturday": [ 24, 4, 14, 22 ],
+            "sunday": [ 23, 3, 13, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 200,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/blue_tiles_by_zerberuz-d4mree7.jpg',
+          title: 'Blue tiles',
+          artist: 'ZerberuZ',
+          year: '2012',
+          rule: {
+            "monday": [ 23, 3, 13, 21 ],
+            "tuesday": [ 22, 2, 12, 20 ],
+            "wednesday": [ 28, 8, 18, 24 ],
+            "thursday": [ 27, 7, 17, 25 ],
+            "friday": [ 26, 6, 16, 24 ],
+            "saturday": [ 25, 5, 15, 23 ],
+            "sunday": [ 24, 4, 14, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
