@@ -2904,6 +2904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 146,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/idol-4-1956.jpg',
+          title: 'Idol 4',
+          artist: 'William Turnbull',
+          year: '1956',
+          rule: {
+            "monday": [ 25, 30, 6, 11 ],
+            "tuesday": [ 24, 28, 5, 10 ],
+            "wednesday": [ 23, 28, 4, 9 ],
+            "thursday": [ 22, 27, 3, 10 ],
+            "friday": [ 28, 3, 9, 14 ],
+            "saturday": [ 27, 2, 7, 13 ],
+            "sunday": [ 26, 1, 7, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 147,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/untitled-after-nature-tree-trunks-1959.jpg',
+          title: 'Untitled (After Nature: Tree Trunks)',
+          artist: 'Charlotte Posenenske',
+          year: '1959',
+          rule: {
+            "monday": [ 27, 2, 8, 12 ],
+            "tuesday": [ 26, 1, 7, 12 ],
+            "wednesday": [ 25, 29, 6, 11 ],
+            "thursday": [ 24, 29, 5, 10 ],
+            "friday": [ 23, 28, 4, 11 ],
+            "saturday": [ 29, 4, 10, 15 ],
+            "sunday": [ 28, 3, 8, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 148,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/untitled-1959vv.jpg',
+          title: 'Untitled',
+          artist: 'Ruth Vollmer',
+          year: '1959',
+          rule: {
+            "monday": [ 28, 3, 8, 14 ],
+            "tuesday": [ 27, 2, 8, 12 ],
+            "wednesday": [ 26, 1, 7, 12 ],
+            "thursday": [ 25, 29, 6, 11 ],
+            "friday": [ 24, 29, 5, 10 ],
+            "saturday": [ 23, 28, 4, 11 ],
+            "sunday": [ 29, 4, 10, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 149,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/die-fahne-hoch-1959.jpg',
+          title: 'Die Fahne Hoch!',
+          artist: 'Frank Stella',
+          year: '1959',
+          rule: {
+            "monday": [ 29, 4, 10, 15 ],
+            "tuesday": [ 28, 3, 8, 14 ],
+            "wednesday": [ 27, 2, 8, 12 ],
+            "thursday": [ 26, 1, 7, 12 ],
+            "friday": [ 25, 29, 6, 11 ],
+            "saturday": [ 24, 29, 5, 10 ],
+            "sunday": [ 23, 28, 4, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 150,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/disegno-geometrico-1960.jpg',
+          title: 'Disegno geometrico',
+          artist: 'Giulio Paolini',
+          year: '1960',
+          rule: {
+            "monday": [ 23, 28, 4, 11 ],
+            "tuesday": [ 29, 4, 10, 15 ],
+            "wednesday": [ 28, 3, 8, 14 ],
+            "thursday": [ 27, 2, 8, 12 ],
+            "friday": [ 26, 1, 7, 12 ],
+            "saturday": [ 25, 29, 6, 11 ],
+            "sunday": [ 24, 29, 5, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
