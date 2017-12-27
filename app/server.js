@@ -108,6 +108,8 @@ const december_tiles = require('./routes/december_tiles.js');
 const december_tilesbyuser = require('./routes/december_tilesbyuser.js');
 const messages = require('./routes/messages.js');
 const messagesbyuser = require('./routes/messagesbyuser.js');
+const comments = require('./routes/comments.js');
+const commentsbyuser = require('./routes/commentsbyuser.js');
 
 const port = process.env.PORT || 3007;
 
@@ -216,6 +218,8 @@ app.use(fileUpload());
  app.use('/december_tilesbyuser', december_tilesbyuser);
  app.use('/messages', messages);
  app.use('/messagesbyuser', messagesbyuser);
+ app.use('/comments', comments);
+ app.use('/commentsbyuser', commentsbyuser);
 
 app.get('/onthisdayinhistory/:date', (req, res, next) =>{
   let newUrl = 'http://history.muffinlabs.com/date/';
