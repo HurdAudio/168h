@@ -2704,6 +2704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 136,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/28-00,Landscape.jpg',
+          title: 'Landscape Painting',
+          artist: 'Bertram Glover',
+          year: '1928',
+          rule: {
+            "monday": [ 17, 30, 18, 13 ],
+            "tuesday": [ 23, 5, 13, 19 ],
+            "wednesday": [ 22, 4, 12, 18 ],
+            "thursday": [ 21, 3, 11, 17 ],
+            "friday": [ 20, 2, 10, 16 ],
+            "saturday": [ 19, 1, 9, 15 ],
+            "sunday": [ 18, 31, 8, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 137,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/19-00,PeterMoore.jpg',
+          title: 'Book Illustration',
+          artist: 'Thelma Gooch',
+          year: '1919',
+          rule: {
+            "monday": [ 18, 31, 8, 14 ],
+            "tuesday": [ 17, 30, 18, 13 ],
+            "wednesday": [ 23, 5, 13, 19 ],
+            "thursday": [ 22, 4, 12, 18 ],
+            "friday": [ 21, 3, 11, 17 ],
+            "saturday": [ 20, 2, 10, 16 ],
+            "sunday": [ 19, 1, 9, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 138,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/38-04,DmDet1.jpg',
+          title: 'Dime Detective',
+          artist: 'John Fleming Gould',
+          year: '1938',
+          rule: {
+            "monday": [ 19, 1, 9, 15 ],
+            "tuesday": [ 18, 31, 8, 14 ],
+            "wednesday": [ 17, 30, 18, 13 ],
+            "thursday": [ 23, 5, 13, 19 ],
+            "friday": [ 22, 4, 12, 18 ],
+            "saturday": [ 21, 3, 11, 17 ],
+            "sunday": [ 20, 2, 10, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 139,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/05-03-12,NYHerald.jpg',
+          title: 'Newspaper',
+          artist: 'Robert A. Graef',
+          year: '1905',
+          rule: {
+            "monday": [ 20, 2, 10, 16 ],
+            "tuesday": [ 19, 1, 9, 15 ],
+            "wednesday": [ 18, 31, 8, 14 ],
+            "thursday": [ 17, 30, 18, 13 ],
+            "friday": [ 23, 5, 13, 19 ],
+            "saturday": [ 22, 4, 12, 18 ],
+            "sunday": [ 21, 3, 11, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 140,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/1892,LizzieBorden.jpg',
+          title: 'Lizzie Borden',
+          artist: 'Louis F. Grant',
+          year: '1892',
+          rule: {
+            "monday": [ 22, 4, 12, 18 ],
+            "tuesday": [ 21, 3, 11, 17 ],
+            "wednesday": [ 20, 2, 10, 16 ],
+            "thursday": [ 19, 31, 9, 15 ],
+            "friday": [ 18, 31, 19, 14 ],
+            "saturday": [ 24, 6, 14, 20 ],
+            "sunday": [ 23, 5, 13, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
