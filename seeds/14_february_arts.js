@@ -4704,6 +4704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 236,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/garden-of-music-bob-thompsonOrnetteColemanDonCherryJohnColtraneSonnyRollinsEdBlackwellCharlieHadenBobThomsponWadworthAtheneumHartfordCT.jpg',
+          title: 'In the Garden Of Music',
+          artist: 'Bob Thompson',
+          year: '1960',
+          rule: {
+            "monday": [ 12, 22, 28, 5 ],
+            "tuesday": [ 14, 22, 1, 11 ],
+            "wednesday": [ 16, 24, 20, 10 ],
+            "thursday": [ 4, 12, 20, 28 ],
+            "friday": [ 6, 14, 22, 1 ],
+            "saturday": [ 11, 16, 22, 3 ],
+            "sunday": [ 10, 18, 26, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 237,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/StringTheoryVI.jpg',
+          title: 'Magnetic Fields',
+          artist: 'Mildred Thompson',
+          year: '1991',
+          rule: {
+            "monday": [ 10, 18, 26, 5 ],
+            "tuesday": [ 12, 22, 28, 5 ],
+            "wednesday": [ 14, 22, 1, 11 ],
+            "thursday": [ 16, 24, 20, 10 ],
+            "friday": [ 4, 12, 20, 28 ],
+            "saturday": [ 6, 14, 22, 1 ],
+            "sunday": [ 11, 16, 22, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 238,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/thrash-defense-worker-575x683-575x683.jpg',
+          title: 'Defense Worker',
+          artist: 'Dox Thrash',
+          year: '1941',
+          rule: {
+            "monday": [ 12, 17, 23, 4 ],
+            "tuesday": [ 11, 19, 27, 6 ],
+            "wednesday": [ 13, 23, 29, 6 ],
+            "thursday": [ 15, 23, 2, 12 ],
+            "friday": [ 17, 25, 21, 11 ],
+            "saturday": [ 5, 13, 21, 29 ],
+            "sunday": [ 7, 15, 23, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 239,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/Bill-Traylor-4-700x450.jpg',
+          title: 'Untitled (Man, Woman)',
+          artist: 'Bill Traylor',
+          year: 'c.1940 - 1942',
+          rule: {
+            "monday": [ 7, 15, 23, 2 ],
+            "tuesday": [ 12, 17, 23, 4 ],
+            "wednesday": [ 11, 19, 27, 6 ],
+            "thursday": [ 13, 23, 29, 6 ],
+            "friday": [ 15, 23, 2, 12 ],
+            "saturday": [ 17, 25, 21, 11 ],
+            "sunday": [ 5, 13, 21, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 240,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/henry_taylor_im_yours_-_2015.jpg',
+          title: 'i’m yours,',
+          artist: 'Henry Taylor',
+          year: '2015',
+          rule: {
+            "monday": [ 5, 13, 21, 29 ],
+            "tuesday": [ 7, 15, 23, 2 ],
+            "wednesday": [ 12, 17, 23, 4 ],
+            "thursday": [ 11, 19, 27, 6 ],
+            "friday": [ 13, 23, 29, 6 ],
+            "saturday": [ 15, 23, 2, 12 ],
+            "sunday": [ 17, 25, 21, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
