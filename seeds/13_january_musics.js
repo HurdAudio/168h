@@ -2596,6 +2596,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 145,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=390371094/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://lenanatalia.bandcamp.com/album/almost-home-2',
+          a_string: 'Almost Home by Lena Natalia',
+          rule: {
+            "monday": [ 27, 3, 4, 5 ],
+            "tuesday": [ 31, 7, 8, 9 ],
+            "wednesday": [ 30, 6, 7, 8 ],
+            "thursday": [ 29, 5, 6, 7 ],
+            "saturday": [ 28, 4, 5, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 146,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=8053383/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://paulmercer.bandcamp.com/album/psychopathia-sexualis-original-motion-picture-soundtrack',
+          a_string: 'Psychopathia Sexualis- Original Motion Picture Soundtrack by Paul Mercer',
+          rule: {
+            "monday": [ 28, 4, 5, 6 ],
+            "tuesday": [ 27, 3, 4, 5 ],
+            "wednesday": [ 31, 7, 8, 9 ],
+            "thursday": [ 30, 6, 7, 8 ],
+            "saturday": [ 29, 5, 6, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 147,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3047513311/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://fororchestra.bandcamp.com/album/brodyquest-for-orchesta',
+          a_string: 'Brodyquest For Orchesta by Walt Ribeiro',
+          rule: {
+            "monday": [ 30, 6, 7, 8 ],
+            "tuesday": [ 29, 5, 6, 7 ],
+            "wednesday": [ 28, 4, 5, 6 ],
+            "thursday": [ 1, 8, 9, 10 ],
+            "saturday": [ 31, 7, 8, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
