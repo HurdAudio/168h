@@ -242,6 +242,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FCFBF9',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 18,
+          user_id: 1,
+          theme: 'Leather',
+          type: 'week',
+          src_string: '../img/september_tiles/leather-carving---running-horsesl.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '183%',
+          color_dark: '#5C5D57',
+          color_medium: '#6E4432',
+          color_light: '#A05337',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
