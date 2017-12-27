@@ -191,6 +191,27 @@
       vm.editMusicCurrate = editMusicCurrate;
       vm.userMusicCurratorEditorDone = userMusicCurratorEditorDone;
       vm.deleteArtCurrate = deleteArtCurrate;
+      vm.addNewObservance = addNewObservance;
+
+      function addNewObservance() {
+        let fakeDate = new Date();
+        let subObj = {
+          user_id: currentUserId,
+          name: '',
+          color: '#ffffff',
+          picture: '',
+          day_of: fakeDate,
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null
+        };
+        $http.post('/observances', subObj)
+        .then(addedObservanceData=>{
+          let addedObservance = addedObservanceData.data[0];
+          editObservance(addedObservance.id);
+        });
+      }
 
       function deleteArtCurrate(artMonth, artId) {
         let userArtCurratorEditorDoneButton = document.getElementById('userArtCurratorEditorDoneButton');
@@ -4963,11 +4984,30 @@
         artsCuratorManager.setAttribute("style", "visibility: hidden;");
       }
 
+      function pruneEmptyObservance(obId) {
+        $http.delete(`/observances/${obId}`)
+        .then(()=>{
+          observanceManager();
+        });
+      }
+
       function occasionsReportDone() {
         let reportForOccasions = document.getElementById('reportForOccasions');
         let occasionReporter = document.getElementById('occasionReporter');
         let occasionsManagerDone = document.getElementById('occasionsManagerDone');
         let userOccasionsEditingDiv = document.getElementById('userOccasionsEditingDiv');
+
+        $http.get(`/observancesbyuser/${currentUserId}`)
+        .then(observancesListData=>{
+          let observancesList = observancesListData.data;
+          if (observancesList.length > 0) {
+            for (let i = 0; i < observancesList.length; i++) {
+              if (observancesList[i].name === '') {
+                pruneEmptyObservance(observancesList[i].id);
+              }
+            }
+          }
+        });
 
         reportForOccasions.setAttribute("style", "display: none;");
         occasionReporter.setAttribute("style", "visibility: visible;");
