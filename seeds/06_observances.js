@@ -9047,6 +9047,34 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 578,
+          user_id: 1,
+          name: 'Karl Kautsky (philosopher/journalist/Marxist theoretician) born 1864',
+          color: '636363',
+          picture: './img/dissent/54e7cf953d358_karl_kautsky.jpg',
+          day_of: new Date ('1864-10-16T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 579,
+          user_id: 1,
+          name: 'The second coming of Christ occurred on this day in 1969 according to George Williams of the Church of the Firstborn.',
+          color: '#B1ACA8',
+          picture: './img/doomsday/Joseph_Morris_(Latter_Day_Saints).jpg',
+          day_of: new Date ('1969-08-09T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
