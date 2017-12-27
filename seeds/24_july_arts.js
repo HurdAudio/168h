@@ -3704,6 +3704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 186,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/composition(1).jpg',
+          title: 'Composition',
+          artist: 'Marcelle Cahn',
+          year: '?',
+          rule: {
+            "monday": [ 24, 4, 15, 16 ],
+            "tuesday": [ 23, 3, 14, 25 ],
+            "wednesday": [ 29, 9, 20, 30 ],
+            "thursday": [ 28, 8, 19, 30 ],
+            "friday": [ 27, 7, 18, 29 ],
+            "saturday": [ 26, 6, 17, 18 ],
+            "sunday": [ 25, 5, 15, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 187,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/composition-1929.jpg',
+          title: 'Composition',
+          artist: 'Georges Papazoff',
+          year: '1929',
+          rule: {
+            "monday": [ 25, 5, 15, 17 ],
+            "tuesday": [ 24, 4, 15, 16 ],
+            "wednesday": [ 23, 3, 14, 25 ],
+            "thursday": [ 29, 9, 20, 30 ],
+            "friday": [ 28, 8, 19, 30 ],
+            "saturday": [ 27, 7, 18, 29 ],
+            "sunday": [ 26, 6, 17, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 188,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/kiki-de-montparnasse.jpg',
+          title: 'Kiki de Montparnasse',
+          artist: 'Moise Kisling',
+          year: '?',
+          rule: {
+            "monday": [ 26, 6, 17, 18 ],
+            "tuesday": [ 25, 5, 15, 17 ],
+            "wednesday": [ 24, 4, 15, 16 ],
+            "thursday": [ 23, 3, 14, 25 ],
+            "friday": [ 29, 9, 20, 30 ],
+            "saturday": [ 28, 8, 19, 30 ],
+            "sunday": [ 27, 7, 18, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 189,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/the-small-black-holes-1927.jpg',
+          title: 'The Small Black Holes',
+          artist: 'Serge Charchoune',
+          year: '1927',
+          rule: {
+            "monday": [ 28, 8, 19, 30 ],
+            "tuesday": [ 27, 7, 18, 19 ],
+            "wednesday": [ 26, 6, 16, 18 ],
+            "thursday": [ 25, 5, 16, 17 ],
+            "friday": [ 24, 4, 15, 26 ],
+            "saturday": [ 30, 10, 21, 31 ],
+            "sunday": [ 29, 9, 20, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 190,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/femme-la-blouse-jaune-1916.jpg',
+          title: 'Femme à la blouse jaune',
+          artist: 'Alberto Magnelli',
+          year: '1916',
+          rule: {
+            "monday": [ 29, 9, 20, 31 ],
+            "tuesday": [ 28, 8, 19, 30 ],
+            "wednesday": [ 27, 7, 18, 19 ],
+            "thursday": [ 26, 6, 16, 18 ],
+            "friday": [ 25, 5, 16, 17 ],
+            "saturday": [ 24, 4, 15, 26 ],
+            "sunday": [ 30, 10, 21, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
