@@ -4904,6 +4904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 246,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/composition-schwendi-1961.jpg',
+          title: 'Composition Schwendi',
+          artist: 'Samuel Buri',
+          year: '1961',
+          rule: {
+            "monday": [ 9, 10, 2, 5 ],
+            "tuesday": [ 12, 13, 4, 8 ],
+            "wednesday": [ 15, 17, 18, 20 ],
+            "thursday": [ 17, 19, 23, 26 ],
+            "friday": [ 19, 21, 22, 25 ],
+            "saturday": [ 4, 5, 16, 8 ],
+            "sunday": [ 7, 9, 1, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 247,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/number-288-2014.jpg',
+          title: 'Number 288',
+          artist: 'Roger Weik',
+          year: '2014',
+          rule: {
+            "monday": [ 7, 9, 1, 21 ],
+            "tuesday": [ 9, 10, 2, 5 ],
+            "wednesday": [ 12, 13, 4, 8 ],
+            "thursday": [ 15, 17, 18, 20 ],
+            "friday": [ 17, 19, 23, 26 ],
+            "saturday": [ 19, 21, 22, 25 ],
+            "sunday": [ 4, 5, 16, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 248,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/phi-1961.jpg',
+          title: 'Phi',
+          artist: 'Morris Louis',
+          year: '1960 - 1961',
+          rule: {
+            "monday": [ 4, 5, 16, 8 ],
+            "tuesday": [ 7, 9, 1, 21 ],
+            "wednesday": [ 9, 10, 2, 5 ],
+            "thursday": [ 12, 13, 4, 8 ],
+            "friday": [ 15, 17, 18, 20 ],
+            "saturday": [ 17, 19, 23, 26 ],
+            "sunday": [ 19, 21, 22, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 249,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/lsh-134-1950.jpg',
+          title: 'LSH 134',
+          artist: 'Lawren Harris',
+          year: '1950',
+          rule: {
+            "monday": [ 19, 21, 22, 25 ],
+            "tuesday": [ 4, 5, 16, 8 ],
+            "wednesday": [ 7, 9, 1, 21 ],
+            "thursday": [ 9, 10, 2, 5 ],
+            "friday": [ 12, 13, 4, 8 ],
+            "saturday": [ 15, 17, 18, 20 ],
+            "sunday": [ 17, 19, 23, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 250,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/hanging-garden-10.jpg',
+          title: 'Hanging Garden',
+          artist: 'Ion Alin Gheorghiu',
+          year: 'XX-XXI cent.',
+          rule: {
+            "monday": [ 17, 19, 23, 26 ],
+            "tuesday": [ 19, 21, 22, 25 ],
+            "wednesday": [ 4, 5, 16, 8 ],
+            "thursday": [ 7, 9, 1, 21 ],
+            "friday": [ 9, 10, 2, 5 ],
+            "saturday": [ 12, 13, 4, 8 ],
+            "sunday": [ 15, 17, 18, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
