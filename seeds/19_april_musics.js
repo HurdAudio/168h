@@ -2272,6 +2272,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 127,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1461683551/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://helengillet.bandcamp.com/album/horizon',
+          a_string: 'Horizon by Tephra Sound',
+          rule: {
+            "monday": [ 22, 30, 12, 17 ],
+            "tuesday": [ 21, 29, 11, 16 ],
+            "wednesday": [ 20, 28, 10, 15 ],
+            "thursday": [ 19, 27, 9, 14 ],
+            "saturday": [ 18, 26, 8, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 128,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3366347658/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://collectifspatule.bandcamp.com/album/le-vanneau-hupp',
+          a_string: 'Le Vanneau Huppé by Collectif SPATULE',
+          rule: {
+            "monday": [ 18, 26, 8, 13 ],
+            "tuesday": [ 22, 30, 12, 17 ],
+            "wednesday": [ 21, 29, 11, 16 ],
+            "thursday": [ 20, 28, 10, 15 ],
+            "saturday": [ 19, 27, 9, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 129,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2071770399/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://shiftingparadigmrecords.bandcamp.com/album/red-planet-with-bill-carrothers',
+          a_string: 'Red Planet with Bill Carrothers by Red Planet with Bill Carrothers',
+          rule: {
+            "monday": [ 19, 27, 9, 14 ],
+            "tuesday": [ 18, 26, 8, 13 ],
+            "wednesday": [ 22, 30, 12, 17 ],
+            "thursday": [ 21, 29, 11, 16 ],
+            "saturday": [ 20, 28, 10, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
