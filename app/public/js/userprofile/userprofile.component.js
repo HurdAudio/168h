@@ -192,6 +192,38 @@
       vm.userMusicCurratorEditorDone = userMusicCurratorEditorDone;
       vm.deleteArtCurrate = deleteArtCurrate;
       vm.addNewObservance = addNewObservance;
+      vm.goalsReport = goalsReport;
+      vm.goalsReportDone = goalsReportDone;
+
+      function goalsReportDone() {
+        let reportForGoals = document.getElementById('reportForGoals');
+        let goalsManagerDone = document.getElementById('goalsManagerDone');
+
+        reportForGoals.setAttribute("style", "display: none;");
+        goalsManagerDone.setAttribute("style", "visibility: visible;");
+      }
+
+      function goalsReport() {
+        let goalsManagerDone = document.getElementById('goalsManagerDone');
+        let reportForGoals = document.getElementById('reportForGoals');
+        let userGoalsEditingDiv = document.getElementById('userGoalsEditingDiv');
+
+        $http.get(`/goalsbyuser/${currentUserId}`)
+        .then(goalsData=>{
+          let goals = goalsData.data;
+          vm.goalReporter = [];
+          vm.goalReporter[0] = {};
+          vm.goalReporter[0].total = goals.length;
+          vm.goalReporter[0].hours = 0;
+          for (let i = 0; i < goals.length; i++) {
+            vm.goalReporter[0].hours += parseFloat(goals[i].weekly_goal);
+          }
+        });
+
+        reportForGoals.setAttribute("style", "display: initial;");
+        userGoalsEditingDiv.setAttribute("style", "display: none;");
+        goalsManagerDone.setAttribute("style", "visibility: hidden;");
+      }
 
       function addNewObservance() {
         let fakeDate = new Date();

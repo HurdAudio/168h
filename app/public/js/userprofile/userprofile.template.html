@@ -4406,6 +4406,28 @@
 
     </div>
 
+    <div id="reportForGoals">
+      <div id="goalsReportBar">
+        <a href="" class="btn" id="goalsReportDone" ng-click="$ctrl.goalsReportDone()">done</a>
+        <h1>Goals Report</h1>
+      </div>
+      <div id="goalsReportBody">
+        <main ng-repeat="goal in $ctrl.goalReporter | orderBy : $ctrl.sortBy">
+          <div class="reporter">
+            <h2>Total number of goals: </h2>
+            <h2>{{goal.total}}</h2>
+            <h2>Total hours per week:</h2>
+            <h2>{{goal.hours}}</h2>
+
+
+          </div>
+
+        </main>
+
+      </div>
+
+    </div>
+
     <div id="userGoalsEditingDiv">
       <div id="userGoalsEditorBar">
         <a href="" class="btn" id="userGoalsEditorDoneButton" ng-click="$ctrl.userGoalsEditorDone()">done</a>

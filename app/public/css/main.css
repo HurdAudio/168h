@@ -3062,6 +3062,34 @@ footer img {
   margin-top: 0.2em;
 }
 
+#goalsReportBar {
+  font-family: 'Asul', serif;
+  font-size: 18px
+  background: #7A590B;
+  background-color: -webkit-linear-gradient(-135deg, #7A590B, #DAC2A7);
+  background: -o-linear-gradient(-135deg, #7A590B, #DAC2A7);
+  background: -moz-linear-gradient(-135deg, #7A590B, #DAC2A7);
+  background: linear-gradient(-135deg, #7A590B, #DAC2A7);
+  border-radius: 5px;
+  margin: 0;
+  padding:0;
+  height: 3.8em;
+  top: 0%;
+  opacity: 1;
+}
+
+#goalsReportBar h1 {
+  margin-left: 2em;
+  padding-top: 0.4em;
+}
+
+
+#goalsReportBar a {
+  float:right;
+  margin-right: 1.1em;
+  margin-top: 0.2em;
+}
+
 #billsReportBar {
   font-family: 'Asul', serif;
   font-size: 18px
@@ -4711,6 +4739,10 @@ footer img {
 }
 
 #reportForOccasions {
+  display: none;
+}
+
+#reportForGoals {
   display: none;
 }
 
