@@ -4304,6 +4304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 216,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/9572234-mlb-chicago-cubs-at-pittsburgh-pirates.jpeg',
+          title: 'John Jaso Hits for the Cycle',
+          artist: 'Charles LeClaire',
+          year: '2016',
+          rule: {
+            "monday": [ 28, 2, 17, 15 ],
+            "tuesday": [ 27, 2, 7, 13 ],
+            "wednesday": [ 26, 1, 7, 13 ],
+            "thursday": [ 25, 30, 6, 12 ],
+            "friday": [ 30, 6, 11, 18 ],
+            "saturday": [ 14, 4, 10, 17 ],
+            "sunday": [ 29, 4, 10, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 217,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/Pittsburgh-Pirates-Russell-Martin-Home-Plate-Cubs.jpg',
+          title: 'Russell Martin at Home Plate',
+          artist: 'Charles Rex Arbogast',
+          year: '2013',
+          rule: {
+            "monday": [ 30, 5, 11, 17 ],
+            "tuesday": [ 29, 3, 18, 16 ],
+            "wednesday": [ 28, 3, 8, 14 ],
+            "thursday": [ 27, 2, 8, 14 ],
+            "friday": [ 26, 1, 7, 13 ],
+            "saturday": [ 1, 7, 12, 19 ],
+            "sunday": [ 15, 5, 11, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 218,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/GettyImages-5322387461988602722.jpg',
+          title: 'Andrew McCutchen',
+          artist: '?',
+          year: '2016',
+          rule: {
+            "monday": [ 15, 5, 11, 18 ],
+            "tuesday": [ 30, 5, 11, 17 ],
+            "wednesday": [ 29, 3, 18, 16 ],
+            "thursday": [ 28, 3, 8, 14 ],
+            "friday": [ 27, 2, 8, 14 ],
+            "saturday": [ 26, 1, 7, 13 ],
+            "sunday": [ 1, 7, 12, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 219,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/130729stlpitrt_1130-edit.jpg',
+          title: 'Pirates Wallpaper',
+          artist: '?',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 1, 7, 12, 19 ],
+            "tuesday": [ 15, 5, 11, 18 ],
+            "wednesday": [ 30, 5, 11, 17 ],
+            "thursday": [ 29, 3, 18, 16 ],
+            "friday": [ 28, 3, 8, 14 ],
+            "saturday": [ 27, 2, 8, 14 ],
+            "sunday": [ 26, 1, 7, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 220,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/Pittsburgh-Pirates-Image.jpg',
+          title: 'Pittsburgh Pirates Image',
+          artist: 'Billion Photos',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 26, 1, 7, 13 ],
+            "tuesday": [ 1, 7, 12, 19 ],
+            "wednesday": [ 15, 5, 11, 18 ],
+            "thursday": [ 30, 5, 11, 17 ],
+            "friday": [ 29, 3, 18, 16 ],
+            "saturday": [ 28, 3, 8, 14 ],
+            "sunday": [ 27, 2, 8, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
