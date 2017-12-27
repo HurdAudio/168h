@@ -4504,6 +4504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 226,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/dsc-0279.jpg',
+          title: 'Not ur babe embroidery hoop',
+          artist: 'Samantha Troulis',
+          year: '2017',
+          rule: {
+            "monday": [ 1, 10, 19, 28 ],
+            "tuesday": [ 31, 10, 20, 28 ],
+            "wednesday": [ 31, 9, 17, 27 ],
+            "thursday": [ 29, 8, 16, 26 ],
+            "friday": [ 28, 7, 15, 25 ],
+            "saturday": [ 27, 6, 14, 24 ],
+            "sunday": [ 26, 5, 14, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 227,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/prologue-on-the-synagogue-the-woman-seated-upon-the-beast.jpg',
+          title: 'Prologue. On the Synagogue: the woman seated upon the beast',
+          artist: 'Ende',
+          year: 'c.975',
+          rule: {
+            "monday": [ 26, 5, 14, 23 ],
+            "tuesday": [ 1, 10, 19, 28 ],
+            "wednesday": [ 31, 10, 20, 28 ],
+            "thursday": [ 31, 9, 17, 27 ],
+            "friday": [ 29, 8, 16, 26 ],
+            "saturday": [ 28, 7, 15, 25 ],
+            "sunday": [ 27, 6, 14, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 228,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/john-baptizing-christ.jpg',
+          title: 'John baptizing Christ',
+          artist: 'Claricia',
+          year: '?',
+          rule: {
+            "monday": [ 27, 6, 14, 24 ],
+            "tuesday": [ 26, 5, 14, 23 ],
+            "wednesday": [ 1, 10, 19, 28 ],
+            "thursday": [ 31, 10, 20, 28 ],
+            "friday": [ 31, 9, 17, 27 ],
+            "saturday": [ 29, 8, 16, 26 ],
+            "sunday": [ 28, 7, 15, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 229,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/three-children-with-dog-1590.jpg',
+          title: 'Three children with dog',
+          artist: 'Sofonisba Anguissola',
+          year: '1590',
+          rule: {
+            "monday": [ 28, 7, 15, 25 ],
+            "tuesday": [ 27, 6, 14, 24 ],
+            "wednesday": [ 26, 5, 14, 23 ],
+            "thursday": [ 1, 10, 19, 28 ],
+            "friday": [ 31, 10, 20, 28 ],
+            "saturday": [ 31, 9, 17, 27 ],
+            "sunday": [ 29, 8, 16, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 230,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/self-portrait-or-venetian-woman-attributed.jpg',
+          title: 'Self-portrait (or Venetian Woman; attributed)',
+          artist: 'Marietta Robusti',
+          year: '?',
+          rule: {
+            "monday": [ 29, 8, 16, 26 ],
+            "tuesday": [ 28, 7, 15, 25 ],
+            "wednesday": [ 27, 6, 14, 24 ],
+            "thursday": [ 26, 5, 14, 23 ],
+            "friday": [ 1, 10, 19, 28 ],
+            "saturday": [ 31, 10, 20, 28 ],
+            "sunday": [ 31, 9, 17, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
