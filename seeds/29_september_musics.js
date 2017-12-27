@@ -1732,6 +1732,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 97,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2784776990/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://galahad1.bandcamp.com/album/seas-of-change',
+          a_string: 'Seas of Change by GALAHAD',
+          rule: {
+            "monday": [ 18, 8, 16, 10 ],
+            "tuesday": [ 17, 7, 15, 9 ],
+            "wednesday": [ 16, 6, 14, 9 ],
+            "thursday": [ 15, 5, 13, 7 ],
+            "saturday": [ 14, 4, 12, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 98,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3741607037/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://silentisland.bandcamp.com/album/equator',
+          a_string: 'Equator by Silent Island',
+          rule: {
+            "monday": [ 15, 5, 13, 7 ],
+            "tuesday": [ 19, 9, 17, 11 ],
+            "wednesday": [ 18, 8, 16, 10 ],
+            "thursday": [ 17, 7, 15, 10 ],
+            "saturday": [ 16, 6, 14, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 99,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2271191775/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://silentisland.bandcamp.com/album/fall-of-oceans',
+          a_string: 'Fall of Oceans by Silent Island',
+          rule: {
+            "monday": [ 16, 6, 14, 8 ],
+            "tuesday": [ 15, 5, 13, 7 ],
+            "wednesday": [ 19, 9, 17, 11 ],
+            "thursday": [ 18, 8, 16, 10 ],
+            "saturday": [ 17, 7, 15, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
