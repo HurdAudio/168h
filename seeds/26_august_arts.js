@@ -3504,6 +3504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 176,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/sem-t-tulo-1922.jpg',
+          title: 'Sem título',
+          artist: 'Bernardo Marques',
+          year: '1922',
+          rule: {
+            "monday": [ 28, 31, 9, 25 ],
+            "tuesday": [ 27, 31, 8, 24 ],
+            "wednesday": [ 26, 30, 7, 23 ],
+            "thursday": [ 25, 27, 6, 22 ],
+            "friday": [ 24, 27, 5, 21 ],
+            "saturday": [ 23, 26, 4, 20 ],
+            "sunday": [ 29, 2, 10, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 177,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/untitled-milking-1939.jpg',
+          title: 'Untitled (Milking)',
+          artist: 'Bill Traylor',
+          year: 'c.1939',
+          rule: {
+            "monday": [ 29, 2, 10, 26 ],
+            "tuesday": [ 28, 31, 9, 25 ],
+            "wednesday": [ 27, 31, 8, 24 ],
+            "thursday": [ 26, 30, 7, 23 ],
+            "friday": [ 25, 27, 6, 22 ],
+            "saturday": [ 24, 27, 5, 21 ],
+            "sunday": [ 23, 26, 4, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 178,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/dynamism-of-a-cyclist-1913.jpg',
+          title: 'Dynamism of a Cyclist',
+          artist: 'Umberto Boccioni',
+          year: '1913',
+          rule: {
+            "monday": [ 23, 26, 4, 20 ],
+            "tuesday": [ 29, 2, 10, 26 ],
+            "wednesday": [ 28, 31, 9, 25 ],
+            "thursday": [ 27, 31, 8, 24 ],
+            "friday": [ 26, 30, 7, 23 ],
+            "saturday": [ 25, 27, 6, 22 ],
+            "sunday": [ 24, 27, 5, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 179,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/title-unknown-coty-1917.jpg',
+          title: 'Coty',
+          artist: 'Amadeo de Souza-Cardoso',
+          year: '1917',
+          rule: {
+            "monday": [ 24, 27, 5, 21 ],
+            "tuesday": [ 23, 26, 4, 20 ],
+            "wednesday": [ 29, 2, 10, 26 ],
+            "thursday": [ 28, 31, 9, 25 ],
+            "friday": [ 27, 31, 8, 24 ],
+            "saturday": [ 26, 30, 7, 23 ],
+            "sunday": [ 25, 27, 6, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 180,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/portrait-of-a-young-woman-in-a-hat-jadwiga-zak-1913.jpg',
+          title: 'Portrait of a Young Woman in a Hat (Jadwiga Zak)',
+          artist: 'Eugeniusz Żak',
+          year: '1913',
+          rule: {
+            "monday": [ 25, 27, 6, 22 ],
+            "tuesday": [ 24, 27, 5, 21 ],
+            "wednesday": [ 23, 26, 4, 20 ],
+            "thursday": [ 29, 2, 10, 26 ],
+            "friday": [ 28, 31, 9, 25 ],
+            "saturday": [ 27, 31, 8, 24 ],
+            "sunday": [ 26, 30, 7, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
