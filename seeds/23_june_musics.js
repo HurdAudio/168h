@@ -2056,6 +2056,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 115,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2720701071/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://soundinsilencerecords.bandcamp.com/album/faded-photographs',
+          a_string: 'Faded Photographs by Absent Without Leave',
+          rule: {
+            "monday": [ 15, 19, 24, 6 ],
+            "tuesday": [ 15, 18, 24, 5 ],
+            "wednesday": [ 13, 21, 23, 4 ],
+            "thursday": [ 17, 21, 27, 8 ],
+            "saturday": [ 16, 19, 26, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 116,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'http://bandcamp.com/EmbeddedPlayer/album=2905790012/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://store.broken20.com/album/li-series-09-materia-prima-lapidis-philosophorum',
+          a_string: 'li_series 09: Materia Prima Lapidis Philosophorum by Valanx',
+          rule: {
+            "monday": [ 16, 19, 26, 6 ],
+            "tuesday": [ 15, 19, 24, 6 ],
+            "wednesday": [ 15, 18, 24, 5 ],
+            "thursday": [ 13, 21, 23, 4 ],
+            "saturday": [ 17, 21, 27, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 117,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2264359719/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://stevehauschildt.bandcamp.com/album/strands',
+          a_string: 'Strands by Steve Hauschildt',
+          rule: {
+            "monday": [ 17, 21, 27, 8 ],
+            "tuesday": [ 16, 19, 26, 6 ],
+            "wednesday": [ 15, 19, 24, 6 ],
+            "thursday": [ 15, 18, 24, 5 ],
+            "saturday": [ 13, 21, 23, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
