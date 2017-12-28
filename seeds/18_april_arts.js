@@ -3649,7 +3649,7 @@ exports.seed = function(knex, Promise) {
           id: 183,
           user_id: 1,
           theme: 'Baseball',
-          img_path: './img/april/Kadir-Nelson-low-and-away_1024x1024.jpg',
+          img_path: './img/april/Kadir-Nelson-low-and-away_1024x1024.jpeg',
           title: 'Low and Away',
           artist: 'Kadir Nelson',
           year: '?',
