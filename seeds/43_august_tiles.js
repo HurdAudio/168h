@@ -270,6 +270,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FEF6AC',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 20,
+          user_id: 1,
+          theme: 'Primary Colors',
+          type: 'saturday',
+          src_string: '../img/august_tiles/background-1591227_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '185%',
+          color_dark: '#3B2807',
+          color_medium: '#FF9501',
+          color_light: '#FEFD02',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
