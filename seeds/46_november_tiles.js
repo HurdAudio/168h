@@ -228,6 +228,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#DAD5AE',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 17,
+          user_id: 1,
+          theme: 'Monochromatic',
+          type: 'holiday',
+          src_string: '../img/november_tiles/monochromatic-color-photography-victorian-expansive.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '153%',
+          color_dark: '#010123',
+          color_medium: '#4672B3',
+          color_light: '#CDD1DD',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
