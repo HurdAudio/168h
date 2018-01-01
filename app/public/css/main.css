@@ -6729,8 +6729,8 @@ footer img {
   cursor: pointer;
 }
 
-/* .day {
-  background-image: url(../img/january_tiles/185753.jpg);
+.day {
+  background-image: url(../img/december_tiles/winter-2085829_1280.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
-} */
+  background-size: 180%;
+}
