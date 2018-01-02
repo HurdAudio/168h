@@ -4604,6 +4604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 231,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/vanitas-1613.jpg',
+          title: 'Vanitas',
+          artist: 'Clara Peeters',
+          year: '1613',
+          rule: {
+            "monday": [ 1, 10, 18, 28 ],
+            "tuesday": [ 30, 9, 17, 27 ],
+            "wednesday": [ 29, 8, 16, 26 ],
+            "thursday": [ 28, 7, 15, 25 ],
+            "friday": [ 27, 6, 15, 24 ],
+            "saturday": [ 2, 11, 20, 29 ],
+            "sunday": [ 1, 11, 21, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 232,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/st-mary-magdalene-1650.jpg',
+          title: 'St. Mary Magdalene',
+          artist: 'Josefa de Obidos',
+          year: '1650',
+          rule: {
+            "monday": [ 1, 11, 21, 29 ],
+            "tuesday": [ 1, 10, 18, 28 ],
+            "wednesday": [ 30, 9, 17, 27 ],
+            "thursday": [ 29, 8, 16, 26 ],
+            "friday": [ 28, 7, 15, 25 ],
+            "saturday": [ 27, 6, 15, 24 ],
+            "sunday": [ 2, 11, 20, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 233,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/spray-of-flowers-with-a-beetle-on-a-stone-balustrade-1741.jpg',
+          title: 'Spray of Flowers, with a Beetle on a Stone Balustrade',
+          artist: 'Rachel Ruysch',
+          year: '1741',
+          rule: {
+            "monday": [ 2, 11, 20, 29 ],
+            "tuesday": [ 1, 11, 21, 29 ],
+            "wednesday": [ 1, 10, 18, 28 ],
+            "thursday": [ 30, 9, 17, 27 ],
+            "friday": [ 29, 8, 16, 26 ],
+            "saturday": [ 28, 7, 15, 25 ],
+            "sunday": [ 27, 6, 15, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 234,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/self-portrait-the-artist-hesitating-between-the-arts-of-music-and-painting-1791.jpg',
+          title: 'Self Portrait, the Artist Hesitating Between the Arts of Music and Painting',
+          artist: 'Angelica Kauffman',
+          year: '1791',
+          rule: {
+            "monday": [ 27, 6, 15, 24 ],
+            "tuesday": [ 2, 11, 20, 29 ],
+            "wednesday": [ 1, 11, 21, 29 ],
+            "thursday": [ 1, 10, 18, 28 ],
+            "friday": [ 30, 9, 17, 27 ],
+            "saturday": [ 29, 8, 16, 26 ],
+            "sunday": [ 28, 7, 15, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 235,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/madame-jeanne-desbassayns-de-richemont-and-her-son-eug-ne.jpg',
+          title: 'Madame Jeanne Desbassayns de Richemont And Her Son, Eugène',
+          artist: 'Marie-Guillemine Benoist',
+          year: '?',
+          rule: {
+            "monday": [ 28, 7, 15, 25 ],
+            "tuesday": [ 27, 6, 15, 24 ],
+            "wednesday": [ 2, 11, 20, 29 ],
+            "thursday": [ 1, 11, 21, 29 ],
+            "friday": [ 1, 10, 18, 28 ],
+            "saturday": [ 30, 9, 17, 27 ],
+            "sunday": [ 29, 8, 16, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
