@@ -4804,6 +4804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 241,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/b2f4db70a01f3adc6f9c0a1222259709.jpg',
+          title: 'Wee Pals',
+          artist: 'Morrie Turner',
+          year: '2009',
+          rule: {
+            "monday": [ 17, 25, 21, 11 ],
+            "tuesday": [ 5, 13, 21, 29 ],
+            "wednesday": [ 7, 15, 23, 2 ],
+            "thursday": [ 12, 17, 23, 4 ],
+            "friday": [ 11, 19, 27, 6 ],
+            "saturday": [ 13, 23, 29, 6 ],
+            "sunday": [ 15, 23, 2, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 242,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/Evening_Attire.jpg',
+          title: 'Evening Attire',
+          artist: 'James Van Der Zee',
+          year: '1922',
+          rule: {
+            "monday": [ 15, 23, 2, 12 ],
+            "tuesday": [ 17, 25, 21, 11 ],
+            "wednesday": [ 5, 13, 21, 29 ],
+            "thursday": [ 7, 15, 23, 2 ],
+            "friday": [ 12, 17, 23, 4 ],
+            "saturday": [ 11, 19, 27, 6 ],
+            "sunday": [ 13, 23, 29, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 243,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/igugiuy.jpeg',
+          title: 'The Means to an End: A Shadow Drama in Five Acts',
+          artist: 'Kara Walker',
+          year: '1995',
+          rule: {
+            "monday": [ 13, 23, 29, 6 ],
+            "tuesday": [ 15, 23, 2, 12 ],
+            "wednesday": [ 17, 25, 21, 11 ],
+            "thursday": [ 5, 13, 21, 29 ],
+            "friday": [ 7, 15, 23, 2 ],
+            "saturday": [ 12, 17, 23, 4 ],
+            "sunday": [ 11, 19, 27, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 244,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/drescher_10311269413.jpg',
+          title: 'Wall of Truth',
+          artist: 'William Walker',
+          year: '1968',
+          rule: {
+            "monday": [ 11, 19, 27, 6 ],
+            "tuesday": [ 13, 23, 29, 6 ],
+            "wednesday": [ 15, 23, 2, 12 ],
+            "thursday": [ 17, 25, 21, 11 ],
+            "friday": [ 5, 13, 21, 29 ],
+            "saturday": [ 7, 15, 23, 2 ],
+            "sunday": [ 12, 17, 23, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 245,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/Heirlooms_by_Laura_Wheeler_1916_New_York_Watercolor_Club_Exhibition_catalog.png',
+          title: 'Black and white reproduction of Heirlooms',
+          artist: 'Laura Wheeler Waring',
+          year: '1916',
+          rule: {
+            "monday": [ 13, 18, 24, 5 ],
+            "tuesday": [ 12, 20, 28, 7 ],
+            "wednesday": [ 14, 24, 1, 7 ],
+            "thursday": [ 16, 24, 3, 13 ],
+            "friday": [ 18, 26, 22, 12 ],
+            "saturday": [ 6, 14, 22, 1 ],
+            "sunday": [ 8, 16, 24, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
