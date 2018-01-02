@@ -3504,6 +3504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 176,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/self-portrait-in-fur-hat-1972.jpg',
+          title: 'Self-Portrait in Fur Hat',
+          artist: 'Joan Brown',
+          year: '1972',
+          rule: {
+            "monday": [ 26, 2, 20, 28 ],
+            "tuesday": [ 25, 31, 19, 27 ],
+            "wednesday": [ 24, 30, 18, 26 ],
+            "thursday": [ 23, 29, 17, 25 ],
+            "friday": [ 22, 28, 16, 24 ],
+            "saturday": [ 21, 27, 15, 22 ],
+            "sunday": [ 27, 3, 21, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 177,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/frog-test-1983.jpg',
+          title: 'Frog Test',
+          artist: 'Dieter Asmus',
+          year: '1983',
+          rule: {
+            "monday": [ 27, 3, 21, 29 ],
+            "tuesday": [ 26, 2, 20, 28 ],
+            "wednesday": [ 25, 31, 19, 27 ],
+            "thursday": [ 24, 30, 18, 26 ],
+            "friday": [ 23, 29, 17, 25 ],
+            "saturday": [ 22, 28, 16, 24 ],
+            "sunday": [ 21, 27, 15, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 178,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/dama-en-la-playa-1953.jpg',
+          title: 'Dama en la playa',
+          artist: 'Jose Manuel Capuletti',
+          year: '1953',
+          rule: {
+            "monday": [ 21, 27, 15, 22 ],
+            "tuesday": [ 27, 3, 21, 29 ],
+            "wednesday": [ 26, 2, 20, 28 ],
+            "thursday": [ 25, 31, 19, 27 ],
+            "friday": [ 24, 30, 18, 26 ],
+            "saturday": [ 23, 29, 17, 25 ],
+            "sunday": [ 22, 28, 16, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 179,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/elements-for-meatball-curtain-1970.jpg',
+          title: 'Elements for Meatball Curtain',
+          artist: 'Oyvind Fahlstrom',
+          year: '1970',
+          rule: {
+            "monday": [ 22, 28, 16, 24 ],
+            "tuesday": [ 21, 27, 15, 22 ],
+            "wednesday": [ 27, 3, 21, 29 ],
+            "thursday": [ 26, 2, 20, 28 ],
+            "friday": [ 25, 31, 19, 27 ],
+            "saturday": [ 24, 30, 18, 26 ],
+            "sunday": [ 23, 29, 17, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 180,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/cavaliere-che-cade-1982.jpg',
+          title: 'Cavaliere che cade',
+          artist: 'Gustavo Foppiani',
+          year: '1982',
+          rule: {
+            "monday": [ 23, 29, 17, 25 ],
+            "tuesday": [ 22, 28, 16, 24 ],
+            "wednesday": [ 21, 27, 15, 22 ],
+            "thursday": [ 27, 3, 21, 29 ],
+            "friday": [ 26, 2, 20, 28 ],
+            "saturday": [ 25, 31, 19, 27 ],
+            "sunday": [ 24, 30, 18, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
