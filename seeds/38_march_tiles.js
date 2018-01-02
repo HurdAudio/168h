@@ -354,6 +354,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#9FA1BF',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 26,
+          user_id: 1,
+          theme: 'Glass',
+          type: 'sunday',
+          src_string: '../img/march_tiles/TexturesCom_WindowStainedGlass0158_1_M.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '200%',
+          color_dark: '#313431',
+          color_medium: '#9AE3D5',
+          color_light: '#E9EBEA',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
