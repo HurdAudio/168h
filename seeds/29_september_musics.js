@@ -154,9 +154,9 @@ exports.seed = function(knex, Promise) {
           user_id: 1,
           theme: 'Math Rock & Progressive Rock',
           source: 'bandcamp',
-          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4141035187/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
-          href_string: 'http://teramelos.bandcamp.com/album/trash-generator',
-          a_string: 'Trash Generator by Tera Melos',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3585669366/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://teramelos.bandcamp.com/album/drugs-complex',
+          a_string: 'Drugs / Complex by Tera Melos',
           rule: {
             "monday": [ 3, 23, 1, 25 ],
             "tuesday": [ 2, 22, 30, 24 ],
@@ -1783,6 +1783,60 @@ exports.seed = function(knex, Promise) {
             "wednesday": [ 19, 9, 17, 11 ],
             "thursday": [ 18, 8, 16, 10 ],
             "saturday": [ 17, 7, 15, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 100,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3922154208/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://diostrio.bandcamp.com/album/ii',
+          a_string: 'II by dios trio',
+          rule: {
+            "monday": [ 17, 7, 15, 10 ],
+            "tuesday": [ 16, 6, 14, 8 ],
+            "wednesday": [ 15, 5, 13, 7 ],
+            "thursday": [ 19, 9, 17, 11 ],
+            "saturday": [ 18, 8, 16, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 101,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1579938297/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://teramelos.bandcamp.com/album/untitled-album',
+          a_string: '(untitled album) by Tera Melos',
+          rule: {
+            "monday": [ 18, 8, 16, 10 ],
+            "tuesday": [ 17, 7, 15, 10 ],
+            "wednesday": [ 16, 6, 14, 8 ],
+            "thursday": [ 15, 5, 13, 7 ],
+            "saturday": [ 19, 9, 17, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 102,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'http://bandcamp.com/EmbeddedPlayer/album=1372923139/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://superstardestroyer.co.uk/album/zero-worship',
+          a_string: 'Zero Worship by Young Legionnaire',
+          rule: {
+            "monday": [ 19, 9, 17, 11 ],
+            "tuesday": [ 18, 8, 16, 10 ],
+            "wednesday": [ 17, 7, 15, 10 ],
+            "thursday": [ 16, 6, 14, 8 ],
+            "saturday": [ 15, 5, 13, 7 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
