@@ -284,6 +284,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FEFD02',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 21,
+          user_id: 1,
+          theme: 'Primary Colors',
+          type: 'sunday',
+          src_string: '../img/august_tiles/deep-blue-wood-texture-wallpaper.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '140%',
+          color_dark: '#012093',
+          color_medium: '#0275E1',
+          color_light: '#0579ED',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
