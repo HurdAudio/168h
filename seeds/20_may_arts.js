@@ -4204,6 +4204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 211,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/homeland.jpg',
+          title: 'Homeland',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 29, 9, 18, 28 ],
+            "tuesday": [ 27, 6, 14, 26 ],
+            "wednesday": [ 24, 4, 14, 3 ],
+            "thursday": [ 23, 3, 2, 22 ],
+            "friday": [ 21, 31, 10, 18 ],
+            "saturday": [ 19, 27, 9, 18 ],
+            "sunday": [ 31, 10, 20, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 212,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/voter.jpg',
+          title: 'Voter',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 31, 10, 20, 28 ],
+            "tuesday": [ 29, 9, 18, 28 ],
+            "wednesday": [ 27, 6, 14, 26 ],
+            "thursday": [ 24, 4, 14, 3 ],
+            "friday": [ 23, 3, 2, 22 ],
+            "saturday": [ 21, 31, 10, 18 ],
+            "sunday": [ 19, 27, 9, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 213,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/alien.jpg',
+          title: 'Alien',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 19, 27, 9, 18 ],
+            "tuesday": [ 31, 10, 20, 28 ],
+            "wednesday": [ 29, 9, 18, 28 ],
+            "thursday": [ 27, 6, 14, 26 ],
+            "friday": [ 24, 4, 14, 3 ],
+            "saturday": [ 23, 3, 2, 22 ],
+            "sunday": [ 21, 31, 10, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 214,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/alien-1.jpg',
+          title: 'Alien',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 21, 31, 10, 18 ],
+            "tuesday": [ 19, 27, 9, 18 ],
+            "wednesday": [ 31, 10, 20, 28 ],
+            "thursday": [ 29, 9, 18, 28 ],
+            "friday": [ 27, 6, 14, 26 ],
+            "saturday": [ 24, 4, 14, 3 ],
+            "sunday": [ 23, 3, 2, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 215,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/liberty.jpg',
+          title: 'Liberty',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 23, 3, 2, 22 ],
+            "tuesday": [ 21, 31, 10, 18 ],
+            "wednesday": [ 19, 27, 9, 18 ],
+            "thursday": [ 31, 10, 20, 28 ],
+            "friday": [ 29, 9, 18, 28 ],
+            "saturday": [ 27, 6, 14, 26 ],
+            "sunday": [ 24, 4, 14, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
