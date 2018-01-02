@@ -194,6 +194,28 @@
       vm.addNewObservance = addNewObservance;
       vm.goalsReport = goalsReport;
       vm.goalsReportDone = goalsReportDone;
+      vm.modulesManager = modulesManager;
+      vm.closeModulesManager = closeModulesManager;
+
+      function closeModulesManager() {
+        let modulesManagerButton = document.getElementById('modulesManagerButton');
+        let modulesZone = document.getElementById('modulesZone');
+        let modulesManagementDiv = document.getElementById('modulesManagementDiv');
+
+        modulesManagerButton.setAttribute("style", "visibility: visible;");
+        modulesZone.setAttribute("style", "opacity: 1.0;");
+        modulesManagementDiv.setAttribute("style", "display: none;");
+      }
+
+      function modulesManager() {
+        let modulesManagerButton = document.getElementById('modulesManagerButton');
+        let modulesZone = document.getElementById('modulesZone');
+        let modulesManagementDiv = document.getElementById('modulesManagementDiv');
+
+        modulesManagerButton.setAttribute("style", "visibility: hidden;");
+        modulesZone.setAttribute("style", "opacity: 0.3;");
+        modulesManagementDiv.setAttribute("style", "display: initial;");
+      }
 
       function goalsReportDone() {
         let reportForGoals = document.getElementById('reportForGoals');

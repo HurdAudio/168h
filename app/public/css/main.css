@@ -4411,7 +4411,7 @@ footer img {
   margin-right: 4.8em;
 }
 
-#modulesManager {
+#modulesManagerButton {
   float: right;
   margin: 2em;
   margin-right: 4.8em;
@@ -4907,6 +4907,33 @@ footer img {
   margin-top: 0.2em;
 }
 
+#modulesManagerBar {
+  font-family: 'Asul', serif;
+  font-size: 18px
+  background: #441E38;
+  background-color: -webkit-linear-gradient(-135deg, #5A7AD1, #857D7A);
+  background: -o-linear-gradient(-135deg, #5A7AD1, #857D7A);
+  background: -moz-linear-gradient(-135deg, #5A7AD1, #857D7A);
+  background: linear-gradient(-135deg, #5A7AD1, #857D7A);
+  border-radius: 5px;
+  margin: 0;
+  padding:0;
+  height: 3.8em;
+  top: 0%;
+  opacity: 1;
+}
+
+#modulesManagerBar h1 {
+  margin-left: 2em;
+  padding-top: 0.4em;
+}
+
+#modulesManagerBar a {
+  float:right;
+  margin-right: 1.1em;
+  margin-top: 0.2em;
+}
+
 #observancesManagerBar {
   font-family: 'Asul', serif;
   font-size: 18px
@@ -5045,6 +5072,40 @@ footer img {
 
 
 #holidayManagerForm a {
+  float: left;
+  margin-left: 1.5em;
+}
+
+#modulesManagerForm {
+  font-family: 'Alike Angular', serif;
+  font-size: 24px;
+  background: #441E38;
+  background-color: -webkit-linear-gradient(135deg, #5A7AD1, #857D7A);
+  background: -o-linear-gradient(135deg, #5A7AD1, #857D7A);
+  background: -moz-linear-gradient(135deg, #5A7AD1, #857D7A);
+  background: linear-gradient(135deg, #5A7AD1, #857D7A);
+  border-radius: 5px;
+  opacity: 1;
+}
+
+#modulesManagerForm p {
+  margin-left: 2em;
+  font-weight: bold;
+  text-shadow: -1px 1px 1px #ffffff;
+  margin-bottom: 0;
+}
+
+#modulesManagerForm img {
+  height: 10em;
+  width: 10em;
+  margin-left: 5.6em;
+  margin-top: 0.2em;
+  border: 2px solid #0000cc;
+}
+
+
+
+#modulesManagerForm a {
   float: left;
   margin-left: 1.5em;
 }
@@ -5388,6 +5449,10 @@ footer img {
 #musicCurratorManagerForm a {
   float: left;
   margin-left: 1.5em;
+}
+
+#modulesManagementDiv {
+  display: none;
 }
 
 #holidayManagementDiv {
