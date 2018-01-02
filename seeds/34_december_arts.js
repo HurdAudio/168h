@@ -2804,6 +2804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 141,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/35-05,StarW1.jpg',
+          title: 'Star Western',
+          artist: 'Hamilton Greene',
+          year: '1935',
+          rule: {
+            "monday": [ 23, 5, 13, 19 ],
+            "tuesday": [ 22, 4, 12, 18 ],
+            "wednesday": [ 21, 3, 11, 17 ],
+            "thursday": [ 20, 2, 10, 16 ],
+            "friday": [ 19, 31, 9, 15 ],
+            "saturday": [ 18, 31, 19, 14 ],
+            "sunday": [ 24, 6, 14, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 142,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/32-01-30,LoveStory.jpg',
+          title: 'Love Story',
+          artist: 'Reginald Greenwood',
+          year: '1932',
+          rule: {
+            "monday": [ 24, 6, 14, 20 ],
+            "tuesday": [ 23, 5, 13, 19 ],
+            "wednesday": [ 22, 4, 12, 18 ],
+            "thursday": [ 21, 3, 11, 17 ],
+            "friday": [ 20, 2, 10, 16 ],
+            "saturday": [ 19, 31, 9, 15 ],
+            "sunday": [ 18, 31, 19, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 143,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/23-04,MotPic.jpg',
+          title: 'Motion Picture',
+          artist: 'O. Greiner',
+          year: '1923',
+          rule: {
+            "monday": [ 18, 31, 19, 14 ],
+            "tuesday": [ 24, 6, 14, 20 ],
+            "wednesday": [ 23, 5, 13, 19 ],
+            "thursday": [ 22, 4, 12, 18 ],
+            "friday": [ 21, 3, 11, 17 ],
+            "saturday": [ 20, 2, 10, 16 ],
+            "sunday": [ 19, 31, 9, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 144,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/28-12,Motorist.jpg',
+          title: 'Maryland Motorist',
+          artist: 'Clem Gretta',
+          year: '1928',
+          rule: {
+            "monday": [ 19, 31, 9, 15 ],
+            "tuesday": [ 18, 31, 19, 14 ],
+            "wednesday": [ 24, 6, 14, 20 ],
+            "thursday": [ 23, 5, 13, 19 ],
+            "friday": [ 22, 4, 12, 18 ],
+            "saturday": [ 21, 3, 11, 17 ],
+            "sunday": [ 20, 2, 10, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 145,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/38-Fall,BullsEye.jpg',
+          title: 'Bulls Eye Detective',
+          artist: 'George Gross',
+          year: '1938',
+          rule: {
+            "monday": [ 20, 2, 10, 16 ],
+            "tuesday": [ 19, 31, 9, 15 ],
+            "wednesday": [ 18, 31, 19, 14 ],
+            "thursday": [ 24, 6, 14, 20 ],
+            "friday": [ 23, 5, 13, 19 ],
+            "saturday": [ 22, 4, 12, 18 ],
+            "sunday": [ 21, 3, 11, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
