@@ -2434,6 +2434,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 136,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4164804002/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://yazzahmed.bandcamp.com/album/finding-my-way-home',
+          a_string: 'Finding My Way Home by Yazz Ahmed',
+          rule: {
+            "monday": [ 23, 29, 4, 12 ],
+            "tuesday": [ 22, 28, 3, 12 ],
+            "wednesday": [ 20, 27, 2, 10 ],
+            "thursday": [ 20, 26, 1, 9 ],
+            "saturday": [ 24, 30, 5, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 137,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3764976327/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://diamandagalas.bandcamp.com/album/all-the-way-2',
+          a_string: 'All the Way by Diamanda Galás',
+          rule: {
+            "monday": [ 24, 30, 5, 13 ],
+            "tuesday": [ 23, 29, 4, 12 ],
+            "wednesday": [ 22, 28, 3, 12 ],
+            "thursday": [ 20, 27, 2, 10 ],
+            "saturday": [ 20, 26, 1, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 138,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3970618485/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://annabelleeband.bandcamp.com/album/wallflowers',
+          a_string: 'Wallflowers by Annabel Lee',
+          rule: {
+            "monday": [ 20, 26, 1, 9 ],
+            "tuesday": [ 24, 30, 5, 13 ],
+            "wednesday": [ 23, 29, 4, 12 ],
+            "thursday": [ 22, 28, 3, 12 ],
+            "saturday": [ 20, 27, 2, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
