@@ -1516,6 +1516,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 85,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2737887252/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://music-from-memory.bandcamp.com/album/outro-tempo-electronic-and-contemporary-music-from-brazil-1978-1992',
+          a_string: 'Outro Tempo: Electronic And Contemporary Music From Brazil 1978-1992 by Music From Memory',
+          rule: {
+            "monday": [ 17, 23, 29, 4 ],
+            "tuesday": [ 14, 22, 28, 3 ],
+            "wednesday": [ 15, 21, 27, 2 ],
+            "thursday": [ 19, 25, 31, 6 ],
+            "saturday": [ 18, 24, 30, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 86,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1856667815/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://joycemoreno.bandcamp.com/album/tardes-cariocas',
+          a_string: 'Tardes Cariocas by Joyce Moreno',
+          rule: {
+            "monday": [ 18, 24, 30, 4 ],
+            "tuesday": [ 17, 23, 29, 4 ],
+            "wednesday": [ 14, 22, 28, 3 ],
+            "thursday": [ 15, 21, 27, 2 ],
+            "saturday": [ 19, 25, 31, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 87,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2512859284/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://joycemoreno.bandcamp.com/album/cool',
+          a_string: 'Cool by Joyce Moreno',
+          rule: {
+            "monday": [ 19, 25, 31, 6 ],
+            "tuesday": [ 18, 24, 30, 4 ],
+            "wednesday": [ 17, 23, 29, 4 ],
+            "thursday": [ 14, 22, 28, 3 ],
+            "saturday": [ 15, 21, 27, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
