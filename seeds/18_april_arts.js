@@ -4404,6 +4404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 221,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/donaldson1280-1040x572.jpg',
+          title: 'Toronto Blue Jays slugger Josh Donaldson follows through on a home run ball.',
+          artist: 'Mark Blinch',
+          year: '2017',
+          rule: {
+            "monday": [ 27, 2, 8, 14 ],
+            "tuesday": [ 26, 1, 7, 13 ],
+            "wednesday": [ 1, 7, 12, 19 ],
+            "thursday": [ 15, 5, 11, 18 ],
+            "friday": [ 30, 5, 11, 17 ],
+            "saturday": [ 29, 3, 18, 16 ],
+            "sunday": [ 28, 3, 8, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 222,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/a66320d3035fc80974ca13aaa4ebca8a.jpg',
+          title: 'Blue Jays Logo on the Field',
+          artist: 'Brand Thunder',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 28, 3, 8, 14 ],
+            "tuesday": [ 27, 2, 8, 14 ],
+            "wednesday": [ 26, 1, 7, 13 ],
+            "thursday": [ 1, 7, 12, 19 ],
+            "friday": [ 15, 5, 11, 18 ],
+            "saturday": [ 30, 5, 11, 17 ],
+            "sunday": [ 29, 3, 18, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 223,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/mlb-toronto-blue-jays-new-era-vintage-fitted-hat-cap-size-7-3-8-6a4fb0ed4d97d4938fff08fd9dc018fe.jpg',
+          title: 'Blue Jays Vintage Fitted Hat',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 29, 3, 18, 16 ],
+            "tuesday": [ 28, 3, 8, 14 ],
+            "wednesday": [ 27, 2, 8, 14 ],
+            "thursday": [ 26, 1, 7, 13 ],
+            "friday": [ 1, 7, 12, 19 ],
+            "saturday": [ 15, 5, 11, 18 ],
+            "sunday": [ 30, 5, 11, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 224,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/joeybats.jpg',
+          title: 'Joey Bats',
+          artist: '?',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 1, 6, 12, 18 ],
+            "tuesday": [ 30, 4, 19, 17 ],
+            "wednesday": [ 29, 4, 9, 15 ],
+            "thursday": [ 28, 3, 9, 15 ],
+            "friday": [ 27, 2, 8, 14 ],
+            "saturday": [ 2, 8, 13, 20 ],
+            "sunday": [ 16, 6, 12, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 225,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/Toronto_Blue_Jays_Fitted_Custom_Exclusive_Black_White_and_Red_C_grande.png',
+          title: 'Toronto Blue Jays Fitted Custom Exclusive Black White and Red',
+          artist: '?',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 16, 6, 12, 19 ],
+            "tuesday": [ 1, 6, 12, 18 ],
+            "wednesday": [ 30, 4, 19, 17 ],
+            "thursday": [ 29, 4, 9, 15 ],
+            "friday": [ 28, 3, 9, 15 ],
+            "saturday": [ 27, 2, 8, 14 ],
+            "sunday": [ 2, 8, 13, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
