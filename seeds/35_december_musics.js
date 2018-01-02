@@ -1462,6 +1462,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 82,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3585145624/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://theevildm.bandcamp.com/album/the-evil',
+          a_string: 'THE EVIL by The Evil',
+          rule: {
+            "monday": [ 18, 24, 30, 5 ],
+            "tuesday": [ 17, 23, 29, 3 ],
+            "wednesday": [ 16, 22, 28, 3 ],
+            "thursday": [ 13, 21, 27, 2 ],
+            "saturday": [ 14, 20, 26, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 83,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4234132083/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://analogafrica.bandcamp.com/album/siria',
+          a_string: 'Siriá by Mestre Cupijó e Seu Ritmo (The mythical sound of northern Brasil)',
+          rule: {
+            "monday": [ 14, 20, 26, 1 ],
+            "tuesday": [ 18, 24, 30, 5 ],
+            "wednesday": [ 17, 23, 29, 3 ],
+            "thursday": [ 16, 22, 28, 3 ],
+            "saturday": [ 13, 21, 27, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 84,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=461963248/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://analogafrica.bandcamp.com/album/hamad-kalkaba-and-the-golden-sounds-1974-1975',
+          a_string: 'Hamad Kalkaba and The Golden Sounds 1974-1975 by Hamad Kalkaba',
+          rule: {
+            "monday": [ 14, 22, 28, 3 ],
+            "tuesday": [ 15, 21, 27, 2 ],
+            "wednesday": [ 19, 25, 31, 6 ],
+            "thursday": [ 18, 24, 30, 4 ],
+            "saturday": [ 17, 23, 29, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
