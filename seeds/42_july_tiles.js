@@ -298,6 +298,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#DBD9E7',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 22,
+          user_id: 1,
+          theme: 'Steam',
+          type: 'holiday',
+          src_string: '../img/july_tiles/TexturesCom_Skies0188_M.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '135%',
+          color_dark: '#796F91',
+          color_medium: '#A17180',
+          color_light: '#FFB48D',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
