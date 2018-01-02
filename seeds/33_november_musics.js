@@ -1570,6 +1570,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 88,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=865898643/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://kinnara-desila--afrovisionary-creations.bandcamp.com/album/afronoise',
+          a_string: 'AFRONOISE by 緊那羅：DESI LA     (formerly la  bruha desi la)',
+          rule: {
+            "monday": [ 14, 25, 6, 10 ],
+            "tuesday": [ 13, 24, 5, 9 ],
+            "wednesday": [ 12, 23, 4, 8 ],
+            "thursday": [ 11, 22, 3, 5 ],
+            "saturday": [ 10, 21, 2, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 89,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4253929906/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://markbarrott.bandcamp.com/album/ifeel-060-mark-barrott-music-for-presence',
+          a_string: 'IFEEL 060: Mark Barrott - Music For Presence by Mark Barrott',
+          rule: {
+            "monday": [ 10, 21, 2, 4 ],
+            "tuesday": [ 14, 25, 6, 10 ],
+            "wednesday": [ 13, 24, 5, 9 ],
+            "thursday": [ 12, 23, 4, 8 ],
+            "saturday": [ 11, 22, 3, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 90,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3804425697/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://hobotruffles.bandcamp.com/album/ode-to-ghana-2',
+          a_string: 'Ode To Ghana by Various Artists',
+          rule: {
+            "monday": [ 11, 22, 3, 5 ],
+            "tuesday": [ 10, 21, 2, 4 ],
+            "wednesday": [ 14, 25, 6, 10 ],
+            "thursday": [ 13, 24, 5, 9 ],
+            "saturday": [ 12, 23, 4, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
