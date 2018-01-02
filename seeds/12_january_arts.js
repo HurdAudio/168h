@@ -5004,6 +5004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 251,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/opus-4-1949.jpg',
+          title: 'Opus 4',
+          artist: 'Victor Servranckx',
+          year: '1949',
+          rule: {
+            "monday": [ 15, 17, 18, 20 ],
+            "tuesday": [ 17, 19, 23, 26 ],
+            "wednesday": [ 19, 21, 22, 25 ],
+            "thursday": [ 4, 5, 16, 8 ],
+            "friday": [ 7, 9, 1, 21 ],
+            "saturday": [ 9, 10, 2, 5 ],
+            "sunday": [ 12, 13, 4, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 252,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/1952-a-1952.jpg',
+          title: '1952-A',
+          artist: 'Clyfford Still',
+          year: '1952',
+          rule: {
+            "monday": [ 13, 14, 5, 9 ],
+            "tuesday": [ 16, 18, 19, 21 ],
+            "wednesday": [ 18, 20, 24, 27 ],
+            "thursday": [ 20, 22, 23, 26 ],
+            "friday": [ 5, 6, 17, 9 ],
+            "saturday": [ 10, 10, 2, 22 ],
+            "sunday": [ 10, 11, 3, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 253,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/unknown-title-5.jpg',
+          title: 'unknown title',
+          artist: 'Michel Carrade',
+          year: '?',
+          rule: {
+            "monday": [ 10, 11, 3, 6 ],
+            "tuesday": [ 13, 14, 5, 9 ],
+            "wednesday": [ 16, 18, 19, 21 ],
+            "thursday": [ 18, 20, 24, 27 ],
+            "friday": [ 20, 22, 23, 26 ],
+            "saturday": [ 5, 6, 17, 9 ],
+            "sunday": [ 10, 10, 2, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 254,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/spiral-2011.jpg',
+          title: 'Spiral',
+          artist: 'Romul Nutiu',
+          year: '2011',
+          rule: {
+            "monday": [ 10, 10, 2, 22 ],
+            "tuesday": [ 10, 11, 3, 6 ],
+            "wednesday": [ 13, 14, 5, 9 ],
+            "thursday": [ 16, 18, 19, 21 ],
+            "friday": [ 18, 20, 24, 27 ],
+            "saturday": [ 20, 22, 23, 26 ],
+            "sunday": [ 5, 6, 17, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 255,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/regularity-irregularity-v-1960.jpg',
+          title: 'Regularity - Irregularity V',
+          artist: 'Gerhard von Graevenitz',
+          year: '1960',
+          rule: {
+            "monday": [ 5, 6, 17, 9 ],
+            "tuesday": [ 10, 10, 2, 22 ],
+            "wednesday": [ 10, 11, 3, 6 ],
+            "thursday": [ 13, 14, 5, 9 ],
+            "friday": [ 16, 18, 19, 21 ],
+            "saturday": [ 18, 20, 24, 27 ],
+            "sunday": [ 20, 22, 23, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
