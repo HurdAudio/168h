@@ -9075,6 +9075,34 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 580,
+          user_id: 1,
+          name: 'Daniel De Leon (newspaper editor/trade union organizer) born in 1852',
+          color: '#6C584A',
+          picture: './img/dissent/quote-capitalism-attacks-and-destroys-all-the-finer-sentiments-of-the-human-heart-it-ruthlessly-daniel-de-leon-17-28-82.jpg',
+          day_of: new Date ('1852-12-14T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 581,
+          user_id: 1,
+          name: 'The world ended on this day in 1959 as fortold by Florence Houteff - second prophet of the Branch Davidians.',
+          color: '#363535',
+          picture: './img/doomsday/Florence_Houteff.png',
+          day_of: new Date ('1959-04-02T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
