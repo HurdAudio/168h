@@ -326,6 +326,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#AB980C',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 24,
+          user_id: 1,
+          theme: 'Greenery',
+          type: 'friday',
+          src_string: '../img/may_tiles/TexturesCom_TropicalFoliage0011_2_M.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '140%',
+          color_dark: '#060E03',
+          color_medium: '#577F08',
+          color_light: '#DEDFBE',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
