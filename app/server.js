@@ -110,6 +110,8 @@ const messages = require('./routes/messages.js');
 const messagesbyuser = require('./routes/messagesbyuser.js');
 const comments = require('./routes/comments.js');
 const commentsbyuser = require('./routes/commentsbyuser.js');
+const timeblock_shares = require('./routes/timeblock_shares.js');
+const timeblock_sharesbyuser = require('./routes/timeblock_sharesbyuser.js');
 
 const port = process.env.PORT || 3007;
 
@@ -220,6 +222,8 @@ app.use(fileUpload());
  app.use('/messagesbyuser', messagesbyuser);
  app.use('/comments', comments);
  app.use('/commentsbyuser', commentsbyuser);
+ app.use('/timeblock_shares', timeblock_shares);
+ app.use('/timeblock_sharesbyuser', timeblock_sharesbyuser);
 
 app.get('/onthisdayinhistory/:date', (req, res, next) =>{
   let newUrl = 'http://history.muffinlabs.com/date/';
