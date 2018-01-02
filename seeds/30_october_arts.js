@@ -3204,6 +3204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 161,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_industrysovpost_00005.jpg',
+          title: 'The train station is "socialism" to "communism"',
+          artist: 'P.Sokolov-Scalia',
+          year: '1931',
+          rule: {
+            "monday": [ 27, 7, 18, 22 ],
+            "tuesday": [ 26, 6, 17, 21 ],
+            "wednesday": [ 25, 5, 16, 20 ],
+            "thursday": [ 24, 4, 5, 19 ],
+            "friday": [ 2, 3, 14, 18 ],
+            "saturday": [ 29, 9, 20, 24 ],
+            "sunday": [ 28, 8, 19, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 162,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_industrysovpost_00004.jpg',
+          title: 'Sleeping at work',
+          artist: 'I.Chashnikov, B.Ioganson',
+          year: '1931',
+          rule: {
+            "monday": [ 28, 8, 19, 23 ],
+            "tuesday": [ 27, 7, 18, 22 ],
+            "wednesday": [ 26, 6, 17, 21 ],
+            "thursday": [ 25, 5, 16, 20 ],
+            "friday": [ 24, 4, 5, 19 ],
+            "saturday": [ 2, 3, 14, 18 ],
+            "sunday": [ 29, 9, 20, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 163,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_ksssrpost_0059.jpg',
+          title: 'Long Live our Happy Socialist Motherland',
+          artist: 'G.Klutsis',
+          year: '1935',
+          rule: {
+            "monday": [ 29, 9, 20, 24 ],
+            "tuesday": [ 28, 8, 19, 23 ],
+            "wednesday": [ 27, 7, 18, 22 ],
+            "thursday": [ 26, 6, 17, 21 ],
+            "friday": [ 25, 5, 16, 20 ],
+            "saturday": [ 24, 4, 5, 19 ],
+            "sunday": [ 2, 3, 14, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 164,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_ksssrpost_0058.jpg',
+          title: 'USSR - the country\'s largest',
+          artist: 'D.Moor, S.Senkin',
+          year: '1936',
+          rule: {
+            "monday": [ 2, 3, 14, 18 ],
+            "tuesday": [ 29, 9, 20, 24 ],
+            "wednesday": [ 28, 8, 19, 23 ],
+            "thursday": [ 27, 7, 18, 22 ],
+            "friday": [ 26, 6, 17, 21 ],
+            "saturday": [ 25, 5, 16, 20 ],
+            "sunday": [ 24, 4, 5, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 165,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_ksssrpost_0057.jpg',
+          title: 'Comrade believe ...',
+          artist: 'B.Knoblock',
+          year: '1936',
+          rule: {
+            "monday": [ 24, 4, 5, 19 ],
+            "tuesday": [ 2, 3, 14, 18 ],
+            "wednesday": [ 29, 9, 20, 24 ],
+            "thursday": [ 28, 8, 19, 23 ],
+            "friday": [ 27, 7, 18, 22 ],
+            "saturday": [ 26, 6, 17, 21 ],
+            "sunday": [ 25, 5, 16, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
