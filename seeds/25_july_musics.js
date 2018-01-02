@@ -2002,6 +2002,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 112,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3770315567/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://deerhoof.bandcamp.com/album/deerhoof-vs-evil',
+          a_string: 'Deerhoof vs. Evil by Deerhoof',
+          rule: {
+            "monday": [ 17, 19, 23, 31 ],
+            "tuesday": [ 16, 18, 22, 30 ],
+            "wednesday": [ 15, 16, 21, 29 ],
+            "thursday": [ 14, 16, 20, 28 ],
+            "saturday": [ 18, 20, 24, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 113,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3268928749/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://laluz.bandcamp.com/album/weirdo-shrine',
+          a_string: 'Weirdo Shrine by La Luz',
+          rule: {
+            "monday": [ 18, 20, 24, 1 ],
+            "tuesday": [ 17, 19, 23, 31 ],
+            "wednesday": [ 16, 18, 22, 30 ],
+            "thursday": [ 15, 16, 21, 29 ],
+            "saturday": [ 14, 16, 20, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 114,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=100373839/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://outsideworld.bandcamp.com/album/war-war',
+          a_string: 'War &amp; War by Outside World',
+          rule: {
+            "monday": [ 14, 16, 20, 28 ],
+            "tuesday": [ 18, 20, 24, 1 ],
+            "wednesday": [ 17, 19, 23, 31 ],
+            "thursday": [ 16, 18, 22, 30 ],
+            "saturday": [ 15, 16, 21, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
