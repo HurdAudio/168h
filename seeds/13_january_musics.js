@@ -2650,6 +2650,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 148,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'http://bandcamp.com/EmbeddedPlayer/album=3432380151/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://music.zoekeating.com/album/one-cello-x-16-natoma',
+          a_string: 'One Cello x 16: Natoma by Zoe Keating',
+          rule: {
+            "monday": [ 31, 7, 8, 9 ],
+            "tuesday": [ 30, 6, 7, 8 ],
+            "wednesday": [ 29, 5, 6, 7 ],
+            "thursday": [ 28, 4, 5, 6 ],
+            "saturday": [ 1, 8, 9, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 149,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3576293769/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://davidbaronmusic.bandcamp.com/album/cycles',
+          a_string: 'Cycles by David Baron',
+          rule: {
+            "monday": [ 1, 8, 9, 10 ],
+            "tuesday": [ 31, 7, 8, 9 ],
+            "wednesday": [ 30, 6, 7, 8 ],
+            "thursday": [ 29, 5, 6, 7 ],
+            "saturday": [ 28, 4, 5, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 150,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2769184702/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bruce-brubaker.bandcamp.com/album/glass-piano',
+          a_string: 'Glass Piano by Bruce Brubaker',
+          rule: {
+            "monday": [ 28, 4, 5, 6 ],
+            "tuesday": [ 1, 8, 9, 10 ],
+            "wednesday": [ 31, 7, 8, 9 ],
+            "thursday": [ 30, 6, 7, 8 ],
+            "saturday": [ 29, 5, 6, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
