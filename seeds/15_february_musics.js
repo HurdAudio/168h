@@ -2542,6 +2542,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 142,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3061013425/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://analogafrica.bandcamp.com/album/best-woman-limited-edition',
+          a_string: 'Best Woman (Limited Edition) by Vincent Ahehehinnou',
+          rule: {
+            "monday": [ 21, 26, 28, 11 ],
+            "tuesday": [ 22, 26, 28, 3 ],
+            "wednesday": [ 25, 28, 1, 5 ],
+            "thursday": [ 26, 1, 3, 5 ],
+            "saturday": [ 9, 3, 5, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 143,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2094661225/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://22amusic.bandcamp.com/album/mo-kolours-axum-ep',
+          a_string: 'Mo Kolours - Axum EP by Mo Kolours',
+          rule: {
+            "monday": [ 9, 3, 5, 11 ],
+            "tuesday": [ 21, 26, 28, 11 ],
+            "wednesday": [ 22, 26, 28, 3 ],
+            "thursday": [ 25, 28, 1, 5 ],
+            "saturday": [ 26, 1, 3, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 144,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1545317416/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://chinoamobi.bandcamp.com/album/anyas-garden',
+          a_string: 'Anya&#39;s Garden by Chino Amobi',
+          rule: {
+            "monday": [ 26, 1, 3, 5 ],
+            "tuesday": [ 9, 3, 5, 11 ],
+            "wednesday": [ 21, 26, 28, 11 ],
+            "thursday": [ 22, 26, 28, 3 ],
+            "saturday": [ 25, 28, 1, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
