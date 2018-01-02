@@ -2110,6 +2110,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 118,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=560207272/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://polarseasrecordings.bandcamp.com/album/lowered-expectations',
+          a_string: 'Lowered Expectations by Bradley Sean Alexander',
+          rule: {
+            "monday": [ 13, 21, 23, 4 ],
+            "tuesday": [ 17, 21, 27, 8 ],
+            "wednesday": [ 16, 19, 26, 6 ],
+            "thursday": [ 15, 19, 24, 6 ],
+            "saturday": [ 15, 18, 24, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 119,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3320035111/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://archivesdubmusic.bandcamp.com/album/home',
+          a_string: 'Home by Warmth',
+          rule: {
+            "monday": [ 16, 19, 25, 6 ],
+            "tuesday": [ 14, 22, 24, 5 ],
+            "wednesday": [ 18, 22, 28, 9 ],
+            "thursday": [ 17, 20, 27, 7 ],
+            "saturday": [ 16, 20, 25, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 120,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1355051069/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://theattemptedtheftofmillions.bandcamp.com/album/loam',
+          a_string: 'Loam by Trevor Vincent Edmonds &amp; Sean Curtis Patrick',
+          rule: {
+            "monday": [ 16, 20, 25, 7 ],
+            "tuesday": [ 16, 19, 25, 6 ],
+            "wednesday": [ 14, 22, 24, 5 ],
+            "thursday": [ 18, 22, 28, 9 ],
+            "saturday": [ 17, 20, 27, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
