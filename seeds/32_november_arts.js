@@ -3104,6 +3104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 156,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/night-sea-1963.jpg',
+          title: 'Night Sea',
+          artist: 'Agnes Martin',
+          year: '1963',
+          rule: {
+            "monday": [ 30, 5, 11, 16 ],
+            "tuesday": [ 29, 4, 9, 15 ],
+            "wednesday": [ 28, 3, 9, 13 ],
+            "thursday": [ 27, 2, 8, 13 ],
+            "friday": [ 26, 30, 7, 12 ],
+            "saturday": [ 25, 30, 6, 11 ],
+            "sunday": [ 24, 29, 5, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 157,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/untitled-1963.jpg',
+          title: 'Untitled',
+          artist: 'John McLaughlin',
+          year: '1963',
+          rule: {
+            "monday": [ 24, 29, 5, 12 ],
+            "tuesday": [ 30, 5, 11, 16 ],
+            "wednesday": [ 29, 4, 9, 15 ],
+            "thursday": [ 28, 3, 9, 13 ],
+            "friday": [ 27, 2, 8, 13 ],
+            "saturday": [ 26, 30, 7, 12 ],
+            "sunday": [ 25, 30, 6, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 158,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/no-2-1964.jpg',
+          title: 'No. 2',
+          artist: 'Mark Rothko',
+          year: '1964',
+          rule: {
+            "monday": [ 25, 30, 6, 11 ],
+            "tuesday": [ 24, 29, 5, 12 ],
+            "wednesday": [ 30, 5, 11, 16 ],
+            "thursday": [ 29, 4, 9, 15 ],
+            "friday": [ 28, 3, 9, 13 ],
+            "saturday": [ 27, 2, 8, 13 ],
+            "sunday": [ 26, 30, 7, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 159,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/number-27-1964.jpg',
+          title: 'Number 27',
+          artist: 'John McLaughlin',
+          year: '1964',
+          rule: {
+            "monday": [ 26, 30, 7, 12 ],
+            "tuesday": [ 25, 30, 6, 11 ],
+            "wednesday": [ 24, 29, 5, 12 ],
+            "thursday": [ 30, 5, 11, 16 ],
+            "friday": [ 29, 4, 9, 15 ],
+            "saturday": [ 28, 3, 9, 13 ],
+            "sunday": [ 27, 2, 8, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 160,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/cluster-about-hemisphere-1964.jpg',
+          title: 'Cluster About Hemisphere',
+          artist: 'Ruth Vollmer',
+          year: '1964',
+          rule: {
+            "monday": [ 27, 2, 8, 13 ],
+            "tuesday": [ 26, 30, 7, 12 ],
+            "wednesday": [ 25, 30, 6, 11 ],
+            "thursday": [ 24, 29, 5, 12 ],
+            "friday": [ 30, 5, 11, 16 ],
+            "saturday": [ 29, 4, 9, 15 ],
+            "sunday": [ 28, 3, 9, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
