@@ -3604,6 +3604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 181,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/hills-with-blue-shades-1932.jpg',
+          title: 'Hills with blue shades',
+          artist: 'Istvan Nagy',
+          year: '1932',
+          rule: {
+            "monday": [ 26, 30, 7, 23 ],
+            "tuesday": [ 25, 27, 6, 22 ],
+            "wednesday": [ 24, 27, 5, 21 ],
+            "thursday": [ 23, 26, 4, 20 ],
+            "friday": [ 29, 2, 10, 26 ],
+            "saturday": [ 28, 31, 9, 25 ],
+            "sunday": [ 27, 31, 8, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 182,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/illustration-to-nightingale-by-hans-christian-andersen-1912.jpg',
+          title: 'Illustration to \'Nightingale\' by Hans Christian Andersen',
+          artist: 'Heorhiy Narbut',
+          year: '1912',
+          rule: {
+            "monday": [ 28, 1, 9, 25 ],
+            "tuesday": [ 27, 31, 8, 24 ],
+            "wednesday": [ 26, 28, 7, 23 ],
+            "thursday": [ 25, 28, 6, 22 ],
+            "friday": [ 24, 27, 5, 21 ],
+            "saturday": [ 30, 3, 11, 27 ],
+            "sunday": [ 29, 1, 10, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 183,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/flight-of-an-aeroplane-1916.jpg',
+          title: 'Flight of an Aeroplane',
+          artist: 'Olga Rozanova',
+          year: '1916',
+          rule: {
+            "monday": [ 29, 1, 10, 26 ],
+            "tuesday": [ 28, 1, 9, 25 ],
+            "wednesday": [ 27, 31, 8, 24 ],
+            "thursday": [ 26, 28, 7, 23 ],
+            "friday": [ 25, 28, 6, 22 ],
+            "saturday": [ 24, 27, 5, 21 ],
+            "sunday": [ 30, 3, 11, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 184,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/room.jpg',
+          title: 'Room',
+          artist: 'Olga Rozanova',
+          year: '1915',
+          rule: {
+            "monday": [ 30, 3, 11, 27 ],
+            "tuesday": [ 29, 1, 10, 26 ],
+            "wednesday": [ 28, 1, 9, 25 ],
+            "thursday": [ 27, 31, 8, 24 ],
+            "friday": [ 26, 28, 7, 23 ],
+            "saturday": [ 25, 28, 6, 22 ],
+            "sunday": [ 24, 27, 5, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 185,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/puppet-theater-1923.jpg',
+          title: 'Puppet theater',
+          artist: 'Paul Klee',
+          year: '1923',
+          rule: {
+            "monday": [ 24, 27, 5, 21 ],
+            "tuesday": [ 30, 3, 11, 27 ],
+            "wednesday": [ 29, 1, 10, 26 ],
+            "thursday": [ 28, 1, 9, 25 ],
+            "friday": [ 27, 31, 8, 24 ],
+            "saturday": [ 26, 28, 7, 23 ],
+            "sunday": [ 25, 28, 6, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {

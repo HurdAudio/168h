@@ -3804,6 +3804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 191,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/.jpg',
+          title: '',
+          artist: '',
+          year: '',
+          rule: {
+            "monday": [ 30, 10, 21, 31 ],
+            "tuesday": [ 29, 9, 20, 31 ],
+            "wednesday": [ 28, 8, 19, 30 ],
+            "thursday": [ 27, 7, 18, 19 ],
+            "friday": [ 26, 6, 16, 18 ],
+            "saturday": [ 25, 5, 16, 17 ],
+            "sunday": [ 24, 4, 15, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 192,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/.jpg',
+          title: '',
+          artist: '',
+          year: '',
+          rule: {
+            "monday": [ 24, 4, 15, 26 ],
+            "tuesday": [ 30, 10, 21, 31 ],
+            "wednesday": [ 29, 9, 20, 31 ],
+            "thursday": [ 28, 8, 19, 30 ],
+            "friday": [ 27, 7, 18, 19 ],
+            "saturday": [ 26, 6, 16, 18 ],
+            "sunday": [ 25, 5, 16, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 193,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/.jpg',
+          title: '',
+          artist: '',
+          year: '',
+          rule: {
+            "monday": [ 25, 5, 16, 17 ],
+            "tuesday": [ 24, 4, 15, 26 ],
+            "wednesday": [ 30, 10, 21, 31 ],
+            "thursday": [ 29, 9, 20, 31 ],
+            "friday": [ 28, 8, 19, 30 ],
+            "saturday": [ 27, 7, 18, 19 ],
+            "sunday": [ 26, 6, 16, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 194,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/.jpg',
+          title: '',
+          artist: '',
+          year: '',
+          rule: {
+            "monday": [ 26, 6, 16, 18 ],
+            "tuesday": [ 25, 5, 16, 17 ],
+            "wednesday": [ 24, 4, 15, 26 ],
+            "thursday": [ 30, 10, 21, 31 ],
+            "friday": [ 29, 9, 20, 31 ],
+            "saturday": [ 28, 8, 19, 30 ],
+            "sunday": [ 27, 7, 18, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 195,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/.jpg',
+          title: '',
+          artist: '',
+          year: '',
+          rule: {
+            "monday": [ 27, 7, 18, 19 ],
+            "tuesday": [ 26, 6, 16, 18 ],
+            "wednesday": [ 25, 5, 16, 17 ],
+            "thursday": [ 24, 4, 15, 26 ],
+            "friday": [ 30, 10, 21, 31 ],
+            "saturday": [ 29, 9, 20, 31 ],
+            "sunday": [ 28, 8, 19, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
