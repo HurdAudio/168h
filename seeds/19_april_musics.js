@@ -2326,6 +2326,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 130,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1846715301/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://kenvandermark.bandcamp.com/album/momentum-1-stone',
+          a_string: 'Momentum 1 : Stone by Ken Vandermark',
+          rule: {
+            "monday": [ 20, 28, 10, 15 ],
+            "tuesday": [ 19, 27, 9, 14 ],
+            "wednesday": [ 18, 26, 8, 13 ],
+            "thursday": [ 22, 30, 12, 17 ],
+            "saturday": [ 21, 29, 11, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 131,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3251343418/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://billlaswell.bandcamp.com/album/seize-the-rainbow',
+          a_string: 'Seize The Rainbow by Sonny Sharrock Band',
+          rule: {
+            "monday": [ 21, 29, 11, 16 ],
+            "tuesday": [ 20, 28, 10, 15 ],
+            "wednesday": [ 19, 27, 9, 14 ],
+            "thursday": [ 18, 26, 8, 13 ],
+            "saturday": [ 22, 30, 12, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 132,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3299414741/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://billlaswell.bandcamp.com/album/tennessee-2004',
+          a_string: 'Tennessee 2004 by Praxis',
+          rule: {
+            "monday": [ 22, 30, 12, 17 ],
+            "tuesday": [ 21, 29, 11, 16 ],
+            "wednesday": [ 20, 28, 10, 15 ],
+            "thursday": [ 19, 27, 9, 14 ],
+            "saturday": [ 18, 26, 8, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
