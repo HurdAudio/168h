@@ -2218,6 +2218,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 124,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2792560355/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://gfguitar.bandcamp.com/album/iv-american-electric-guitars',
+          a_string: 'iv: american electric guitars by Giacomo Fiore',
+          rule: {
+            "monday": [ 19, 25, 1, 14 ],
+            "tuesday": [ 18, 24, 31, 13 ],
+            "wednesday": [ 22, 28, 4, 17 ],
+            "thursday": [ 21, 27, 3, 16 ],
+            "saturday": [ 20, 26, 2, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 125,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1583679919/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://noahcreshevsky.bandcamp.com/album/rounded-with-a-sleep',
+          a_string: 'Rounded With A Sleep by Noah Creshevsky',
+          rule: {
+            "monday": [ 20, 26, 2, 15 ],
+            "tuesday": [ 19, 25, 1, 14 ],
+            "wednesday": [ 18, 24, 31, 13 ],
+            "thursday": [ 22, 28, 4, 17 ],
+            "saturday": [ 21, 27, 3, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 126,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=401484961/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://arnolddreyblatt.bandcamp.com/album/nodal-excitation',
+          a_string: 'Nodal Excitation by Arnold Dreyblatt',
+          rule: {
+            "monday": [ 22, 28, 4, 17 ],
+            "tuesday": [ 21, 27, 3, 16 ],
+            "wednesday": [ 20, 26, 2, 15 ],
+            "thursday": [ 19, 25, 1, 14 ],
+            "saturday": [ 23, 29, 5, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {

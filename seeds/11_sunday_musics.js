@@ -1304,6 +1304,16 @@ exports.seed = function(knex, Promise) {
           a_string: 'Marshall Allen presents Sun Ra And His Arkestra: In The Orbit Of Ra by Sun Ra',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 131,
+          user_id: 1,
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3630776180/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sunaraw.bandcamp.com/album/hot-tub-in-tallinn',
+          a_string: 'HOT TUB IN TALLINN! by S. ARAW TRIO XV',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
