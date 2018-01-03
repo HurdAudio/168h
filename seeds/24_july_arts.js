@@ -3890,7 +3890,7 @@ exports.seed = function(knex, Promise) {
           user_id: 1,
           theme: 'French',
           img_path: './img/july/in-the-hotel-room-1908.jpg',
-          title: 'n the Hotel Room',
+          title: 'In the Hotel Room',
           artist: 'Jules Pascin',
           year: '1908',
           rule: {
@@ -3901,6 +3901,106 @@ exports.seed = function(knex, Promise) {
             "friday": [ 30, 10, 21, 31 ],
             "saturday": [ 29, 9, 20, 31 ],
             "sunday": [ 28, 8, 19, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 196,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/shepherd-1910.jpg',
+          title: 'Shepherd',
+          artist: 'Eugeniusz Żak',
+          year: '1910',
+          rule: {
+            "monday": [ 29, 9, 20, 31 ],
+            "tuesday": [ 28, 8, 19, 20 ],
+            "wednesday": [ 27, 7, 17, 19 ],
+            "thursday": [ 26, 6, 17, 18 ],
+            "friday": [ 25, 5, 16, 27 ],
+            "saturday": [ 31, 11, 22, 1 ],
+            "sunday": [ 30, 10, 21, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 197,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/church-sacre-couer.jpg',
+          title: 'Church Sacre-Couer',
+          artist: 'Maurice Utrillo',
+          year: '?',
+          rule: {
+            "monday": [ 30, 10, 21, 1 ],
+            "tuesday": [ 29, 9, 20, 31 ],
+            "wednesday": [ 28, 8, 19, 20 ],
+            "thursday": [ 27, 7, 17, 19 ],
+            "friday": [ 26, 6, 17, 18 ],
+            "saturday": [ 25, 5, 16, 27 ],
+            "sunday": [ 31, 11, 22, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 198,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/asenath-from-the-picture-book-for-the-red-cross.jpg',
+          title: 'Asenath - from the Picture Book for the Red Cross',
+          artist: 'Edmund Dulac',
+          year: '?',
+          rule: {
+            "monday": [ 31, 11, 22, 1 ],
+            "tuesday": [ 30, 10, 21, 1 ],
+            "wednesday": [ 29, 9, 20, 31 ],
+            "thursday": [ 28, 8, 19, 20 ],
+            "friday": [ 27, 7, 17, 19 ],
+            "saturday": [ 26, 6, 17, 18 ],
+            "sunday": [ 25, 5, 16, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 199,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/booksellers-of-notre-dame.jpg',
+          title: 'Booksellers of Notre-Dame',
+          artist: 'Edouard Cortes',
+          year: '?',
+          rule: {
+            "monday": [ 25, 5, 16, 27 ],
+            "tuesday": [ 31, 11, 22, 1 ],
+            "wednesday": [ 30, 10, 21, 1 ],
+            "thursday": [ 29, 9, 20, 31 ],
+            "friday": [ 28, 8, 19, 20 ],
+            "saturday": [ 27, 7, 17, 19 ],
+            "sunday": [ 26, 6, 17, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 200,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/zealand-farmer-s-wives-1914.jpg',
+          title: 'Zealand Farmer\'s Wives',
+          artist: 'Henri Le Fauconnier',
+          year: '1914',
+          rule: {
+            "monday": [ 26, 6, 17, 18 ],
+            "tuesday": [ 25, 5, 16, 27 ],
+            "wednesday": [ 31, 11, 22, 1 ],
+            "thursday": [ 30, 10, 21, 1 ],
+            "friday": [ 29, 9, 20, 31 ],
+            "saturday": [ 28, 8, 19, 20 ],
+            "sunday": [ 27, 7, 17, 19 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
