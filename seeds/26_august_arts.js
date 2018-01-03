@@ -3704,6 +3704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 186,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/332-r-1932.jpg',
+          title: '332 r',
+          artist: 'Carl Buchheister',
+          year: '1932',
+          rule: {
+            "monday": [ 25, 28, 6, 22 ],
+            "tuesday": [ 24, 27, 5, 21 ],
+            "wednesday": [ 30, 3, 11, 27 ],
+            "thursday": [ 29, 1, 10, 26 ],
+            "friday": [ 28, 1, 9, 25 ],
+            "saturday": [ 27, 31, 8, 24 ],
+            "sunday": [ 26, 28, 7, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 187,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/on-the-hillside.jpg',
+          title: 'On the Hillside',
+          artist: 'Leon Dabo',
+          year: '1916',
+          rule: {
+            "monday": [ 26, 28, 7, 23 ],
+            "tuesday": [ 25, 28, 6, 22 ],
+            "wednesday": [ 24, 27, 5, 21 ],
+            "thursday": [ 30, 3, 11, 27 ],
+            "friday": [ 29, 1, 10, 26 ],
+            "saturday": [ 28, 1, 9, 25 ],
+            "sunday": [ 27, 31, 8, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 188,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/portrait-of-maude-abrantes-1907(1).jpg',
+          title: 'Portrait of Maude Abrantes',
+          artist: 'Amedeo Modigliani',
+          year: '1907',
+          rule: {
+            "monday": [ 27, 31, 8, 24 ],
+            "tuesday": [ 26, 28, 7, 23 ],
+            "wednesday": [ 25, 28, 6, 22 ],
+            "thursday": [ 24, 27, 5, 21 ],
+            "friday": [ 30, 3, 11, 27 ],
+            "saturday": [ 29, 1, 10, 26 ],
+            "sunday": [ 28, 1, 9, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 189,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/fr-hling-in-worpswede-1900.jpg',
+          title: 'Frühling in Worpswede',
+          artist: 'Hans am Ende',
+          year: '1900',
+          rule: {
+            "monday": [ 29, 2, 10, 26 ],
+            "tuesday": [ 28, 1, 9, 25 ],
+            "wednesday": [ 27, 29, 8, 24 ],
+            "thursday": [ 26, 29, 7, 23 ],
+            "friday": [ 25, 28, 6, 22 ],
+            "saturday": [ 31, 4, 12, 28 ],
+            "sunday": [ 30, 2, 11, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 190,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/kachalov-vasily-ivanovich-in-the-role-of-tsar-fedor-ivanovich-1923.jpg',
+          title: 'Kachalov Vasily Ivanovich in the Role of Tsar Fedor Ivanovich',
+          artist: 'Boris Grigoriev',
+          year: '1923',
+          rule: {
+            "monday": [ 30, 2, 11, 27 ],
+            "tuesday": [ 29, 2, 10, 26 ],
+            "wednesday": [ 28, 1, 9, 25 ],
+            "thursday": [ 27, 29, 8, 24 ],
+            "friday": [ 26, 29, 7, 23 ],
+            "saturday": [ 25, 28, 6, 22 ],
+            "sunday": [ 31, 4, 12, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
