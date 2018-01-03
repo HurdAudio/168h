@@ -2056,6 +2056,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 115,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2695348918/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://comacinema.bandcamp.com/album/loss-memory-2',
+          a_string: 'Loss Memory by Coma Cinema',
+          rule: {
+            "monday": [ 15, 16, 21, 29 ],
+            "tuesday": [ 14, 16, 20, 28 ],
+            "wednesday": [ 18, 20, 24, 1 ],
+            "thursday": [ 17, 19, 23, 31 ],
+            "saturday": [ 16, 18, 22, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 116,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2088398940/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://erototox.bandcamp.com/album/barricades',
+          a_string: 'Barricades by Franck Vigroux',
+          rule: {
+            "monday": [ 16, 18, 22, 30 ],
+            "tuesday": [ 15, 16, 21, 29 ],
+            "wednesday": [ 14, 16, 20, 28 ],
+            "thursday": [ 18, 20, 24, 1 ],
+            "saturday": [ 17, 19, 23, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 117,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=591683757/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://hahafits.bandcamp.com/album/all-belief-is-paradise',
+          a_string: 'All Belief is Paradise by Fits',
+          rule: {
+            "monday": [ 17, 19, 23, 31 ],
+            "tuesday": [ 16, 18, 22, 30 ],
+            "wednesday": [ 15, 16, 21, 29 ],
+            "thursday": [ 14, 16, 20, 28 ],
+            "saturday": [ 18, 20, 24, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
