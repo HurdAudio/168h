@@ -1724,6 +1724,14 @@ a.btn:hover {
   cursor: pointer;
 }
 
+#userTilesCurratorImageDiv {
+  margin-left: 18vmin;
+}
+
+#userTilesCurratorImageUploaderDiv {
+  visibility: hidden;
+}
+
 .displayDay h1 {
   font-family: 'Asul', sans-serif;
   margin: 0;
@@ -3230,6 +3238,34 @@ footer img {
   margin-top: 0.2em;
 }
 
+#userTilesCurratorEditorBar {
+  font-family: 'Asul', serif;
+  font-size: 18px
+  background: #441E38;
+  background-color: -webkit-linear-gradient(-135deg, #16232C, #EFF9FB);
+  background: -o-linear-gradient(-135deg, #16232C, #EFF9FB);
+  background: -moz-linear-gradient(-135deg, #16232C, #EFF9FB);
+  background: linear-gradient(-135deg, #16232C, #EFF9FB);
+  border-radius: 5px;
+  margin: 0;
+  padding:0;
+  height: 3.8em;
+  top: 0%;
+  opacity: 1;
+}
+
+#userTilesCurratorEditorBar h1 {
+  margin-left: 2em;
+  padding-top: 0.4em;
+}
+
+
+#userTilesCurratorEditorBar a {
+  float:right;
+  margin-right: 1.1em;
+  margin-top: 0.2em;
+}
+
 #userMusicCurratorEditorBar {
   font-family: 'Asul', serif;
   font-size: 18px
@@ -3719,6 +3755,63 @@ footer img {
   margin-left: 2em;
 }
 
+#userTilesCurratorEditorForm {
+  font-family: 'Alike Angular', serif;
+  font-size: 24px;
+  background: #441E38;
+  background-color: -webkit-linear-gradient(135deg, #16232C, #EFF9FB);
+  background: -o-linear-gradient(135deg, #16232C, #EFF9FB);
+  background: -moz-linear-gradient(135deg, #16232C, #EFF9FB);
+  background: linear-gradient(135deg, #16232C, #EFF9FB);
+  border-radius: 5px;
+  opacity: 1;
+}
+
+
+
+
+
+
+
+#userTilesCurratorEditorForm p {
+  font-family: 'Alike Angular', serif;
+  font-size: 24px;
+  margin-left: 2em;
+}
+
+#userTilesCurratorEditorForm input[type=text] {
+  margin-left: 3em;
+  margin-right: 0;
+  width: 70%;
+}
+
+#userTilesCurratorEditorForm input[type=file] {
+  margin-left: 3em;
+  margin-right: 0;
+  width: 70%;
+}
+
+#userTilesCurratorEditorForm input[type=number] {
+  margin-left: 3em;
+  margin-right: 0;
+  width: 70%;
+  align-self: center;
+}
+
+#userTilesCurratorEditorForm input[type=checkbox] {
+  margin-left: 11em;
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  margin-bottom: 0.5em;
+}
+
+
+#userTilesCurratorEditorForm button {
+  margin-left: 2em;
+}
+
 
 #userMusicCurratorEditorForm {
   font-family: 'Alike Angular', serif;
@@ -4012,6 +4105,26 @@ footer img {
   cursor: pointer;
 }
 
+#userTilesCurratorColorDark {
+  margin-left: 5em;
+  height: 2em;
+  width: 3em;
+  cursor: pointer;
+}
+
+#userTilesCurratorColorLight {
+  margin-left: 5em;
+  height: 2em;
+  width: 3em;
+  cursor: pointer;
+}
+
+#userTilesCurratorColorMedium {
+  margin-left: 5em;
+  height: 2em;
+  width: 3em;
+  cursor: pointer;
+}
 
 
 .removal {
@@ -5475,6 +5588,10 @@ footer img {
   display: none;
 }
 
+#userTilesCurratorEditorDiv {
+  display: none;
+}
+
 #userMusicCurratorEditorDiv {
   display: none;
 }
@@ -6831,6 +6948,8 @@ footer img {
   border-radius: 5px;
   padding: 1vmin;
 }
+
+
 
 /* .day {
   background-image: url(../img/january_tiles/ice-texture-13517276.jpg);

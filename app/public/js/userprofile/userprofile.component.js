@@ -196,6 +196,403 @@
       vm.goalsReportDone = goalsReportDone;
       vm.modulesManager = modulesManager;
       vm.closeModulesManager = closeModulesManager;
+      vm.editTilesCurrate = editTilesCurrate;
+      vm.userTilesCurratorEditorDone = userTilesCurratorEditorDone;
+
+      function userTilesCurratorEditorDone() {
+        let userTilesCurratorEditorDiv = document.getElementById('userTilesCurratorEditorDiv');
+        let tilesCurratorManagerDone = document.getElementById('tilesCurratorManagerDone');
+
+        userTilesCurratorEditorDiv.setAttribute("style", "display: none;");
+        tilesCurratorManagerDone.setAttribute("style", "visibility: visible;");
+      }
+
+
+
+      function editTilesCurrate(monthPath, tileId) {
+        let randomMonthDay = 0;
+        let monthDays = 0;
+        let userTilesCurratorEditorDiv = document.getElementById('userTilesCurratorEditorDiv');
+        let tilesCurratorManagerDone = document.getElementById('tilesCurratorManagerDone');
+        let userTilesCuratorEditMonth = document.getElementById('userTilesCuratorEditMonth');
+        let userTilesCuratorMonthTheme = document.getElementById('userTilesCuratorMonthTheme');
+        let userTilesCuratorFirstEntryTheme = document.getElementById('userTilesCuratorFirstEntryTheme');
+        let userTilesCuratorMonthThemeEntry = document.getElementById('userTilesCuratorMonthThemeEntry');
+        if (userTilesCuratorMonthThemeEntry) {
+          userTilesCuratorMonthThemeEntry.parentNode.removeChild(userTilesCuratorMonthThemeEntry);
+          userTilesCuratorMonthThemeEntry = document.createElement('input');
+          userTilesCuratorFirstEntryTheme.appendChild(userTilesCuratorMonthThemeEntry);
+          userTilesCuratorMonthThemeEntry.id = 'userTilesCuratorMonthThemeEntry';
+          userTilesCuratorMonthThemeEntry.type = 'text';
+          userTilesCuratorMonthThemeEntry.className = 'pure-input-1';
+          userTilesCuratorMonthThemeEntry.placeholder = "Month Theme";
+        }
+        let userTilesCurratorImageDiv = document.getElementById('userTilesCurratorImageDiv');
+        let tilesCurratorDate = document.getElementById('tilesCurratorDate');
+        if (tilesCurratorDate) {
+          tilesCurratorDate.parentNode.removeChild(tilesCurratorDate);
+          tilesCurratorDate = document.createElement('h1');
+          userTilesCurratorImageDiv.appendChild(tilesCurratorDate);
+          tilesCurratorDate.id = 'tilesCurratorDate';
+
+        }
+        let userTilesCurratorImgPathField = document.getElementById('userTilesCurratorImgPathField');
+        let usertilesCurratorURL = document.getElementById('usertilesCurratorURL');
+        if (usertilesCurratorURL) {
+          usertilesCurratorURL.parentNode.removeChild(usertilesCurratorURL);
+          usertilesCurratorURL = document.createElement('input');
+          userTilesCurratorImgPathField.appendChild(usertilesCurratorURL);
+          usertilesCurratorURL.id = 'usertilesCurratorURL';
+          usertilesCurratorURL.type = 'text';
+          usertilesCurratorURL.placeholder = 'imageURL';
+        }
+        let usertilesCurratorUploaderButton = document.getElementById('usertilesCurratorUploaderButton');
+        if (usertilesCurratorUploaderButton) {
+          usertilesCurratorUploaderButton.parentNode.removeChild(usertilesCurratorUploaderButton);
+          usertilesCurratorUploaderButton = document.createElement('a');
+          userTilesCurratorImgPathField.appendChild(usertilesCurratorUploaderButton);
+          usertilesCurratorUploaderButton.id = 'usertilesCurratorUploaderButton';
+          usertilesCurratorUploaderButton.className = 'btn';
+          usertilesCurratorUploaderButton.innerHTML = 'upload';
+          usertilesCurratorUploaderButton.setAttribute("style", "cursor: pointer;");
+        }
+        let userTilesCurratorImageUploaderDiv = document.getElementById('userTilesCurratorImageUploaderDiv');
+        let userTilesCurratorFileUpload = document.getElementById('userTilesCurratorFileUpload');
+        if (userTilesCurratorFileUpload) {
+          userTilesCurratorFileUpload.parentNode.removeChild(userTilesCurratorFileUpload);
+          userTilesCurratorFileUpload = document.createElement('input');
+          userTilesCurratorImageUploaderDiv.appendChild(userTilesCurratorFileUpload);
+          userTilesCurratorFileUpload.id = 'userTilesCurratorFileUpload';
+          userTilesCurratorFileUpload.type = 'file';
+        }
+        let userTilesCurratorUploaderSubmit = document.getElementById('userTilesCurratorUploaderSubmit');
+        if (userTilesCurratorUploaderSubmit) {
+          userTilesCurratorUploaderSubmit.parentNode.removeChild(userTilesCurratorUploaderSubmit);
+          userTilesCurratorUploaderSubmit = document.createElement('a');
+          userTilesCurratorImageUploaderDiv.appendChild(userTilesCurratorUploaderSubmit);
+          userTilesCurratorUploaderSubmit.id = 'userTilesCurratorUploaderSubmit';
+          userTilesCurratorUploaderSubmit.className = 'btn';
+          userTilesCurratorUploaderSubmit.innerHTML = 'upload';
+          userTilesCurratorUploaderSubmit.setAttribute("style", "cursor: pointer;");
+        }
+        let userTilesCurratorUploaderCancel = document.getElementById('userTilesCurratorUploaderCancel');
+        if (userTilesCurratorUploaderCancel) {
+          userTilesCurratorUploaderCancel.parentNode.removeChild(userTilesCurratorUploaderCancel);
+          userTilesCurratorUploaderCancel = document.createElement('a');
+          userTilesCurratorImageUploaderDiv.appendChild(userTilesCurratorUploaderCancel);
+          userTilesCurratorUploaderCancel.id = 'userTilesCurratorUploaderCancel';
+          userTilesCurratorUploaderCancel.className = 'btn';
+          userTilesCurratorUploaderCancel.innerHTML = 'cancel';
+          userTilesCurratorUploaderCancel.setAttribute("style", "cursor: pointer;");
+        }
+        let tileTypes = [ 'off month tiles', 'week', 'monday, tuesday, wednesday, thursday', 'friday', 'saturday', 'sunday', 'holiday' ];
+        let element;
+        let userTilesCuratorTypeDiv = document.getElementById('userTilesCuratorTypeDiv');
+        let userTilesCuratorSelect = document.getElementById('userTilesCuratorSelect');
+        if (userTilesCuratorSelect) {
+          userTilesCuratorSelect.parentNode.removeChild(userTilesCuratorSelect);
+          userTilesCuratorSelect = document.createElement('select');
+          userTilesCuratorTypeDiv.appendChild(userTilesCuratorSelect);
+          userTilesCuratorSelect.id = 'userTilesCuratorSelect';
+          userTilesCuratorSelect.className = "pure-input-1";
+          for (let i = 0; i < tileTypes.length; i++) {
+            element = document.createElement('option');
+            userTilesCuratorSelect.appendChild(element);
+            element.value = tileTypes[i];
+            element.innerHTML = tileTypes[i];
+          }
+        }
+        let tileRepeaterDiv = document.getElementById('tileRepeaterDiv');
+        let userTilesCurratorRepeatValue = document.getElementById('userTilesCurratorRepeatValue');
+        if (userTilesCurratorRepeatValue) {
+          userTilesCurratorRepeatValue.parentNode.removeChild(userTilesCurratorRepeatValue);
+          userTilesCurratorRepeatValue = document.createElement('input');
+          tileRepeaterDiv.appendChild(userTilesCurratorRepeatValue);
+          userTilesCurratorRepeatValue.id = 'userTilesCurratorRepeatValue';
+          userTilesCurratorRepeatValue.type = 'checkbox';
+          // userTilesCurratorRepeatValue.className = 'pure-input-1';
+        }
+        let tileSizerDiv = document.getElementById('tileSizerDiv');
+        let userTilesCurratorSizeValue = document.getElementById('userTilesCurratorSizeValue');
+        if (userTilesCurratorSizeValue) {
+          userTilesCurratorSizeValue.parentNode.removeChild(userTilesCurratorSizeValue);
+          userTilesCurratorSizeValue = document.createElement('input');
+          tileSizerDiv.appendChild(userTilesCurratorSizeValue);
+          userTilesCurratorSizeValue.id = 'userTilesCurratorSizeValue';
+          userTilesCurratorSizeValue.type = 'number';
+        }
+        let tileColorDarkDiv = document.getElementById('tileColorDarkDiv');
+        let userTilesCurratorColorDark = document.getElementById('userTilesCurratorColorDark');
+        if (userTilesCurratorColorDark) {
+          userTilesCurratorColorDark.parentNode.removeChild(userTilesCurratorColorDark);
+          userTilesCurratorColorDark = document.createElement('input');
+          tileColorDarkDiv.appendChild(userTilesCurratorColorDark);
+          userTilesCurratorColorDark.id = 'userTilesCurratorColorDark';
+          userTilesCurratorColorDark.type = 'color';
+        }
+        let tileColorLightDiv = document.getElementById('tileColorLightDiv');
+        let userTilesCurratorColorLight = document.getElementById('userTilesCurratorColorLight');
+        if (userTilesCurratorColorLight) {
+          userTilesCurratorColorLight.parentNode.removeChild(userTilesCurratorColorLight);
+          userTilesCurratorColorLight = document.createElement('input');
+          tileColorLightDiv.appendChild(userTilesCurratorColorLight);
+          userTilesCurratorColorLight.id = 'userTilesCurratorColorLight';
+          userTilesCurratorColorLight.type = 'color';
+        }
+        let tileColorMediumDiv = document.getElementById('tileColorMediumDiv');
+        let userTilesCurratorColorMedium = document.getElementById('userTilesCurratorColorMedium');
+        if (userTilesCurratorColorMedium) {
+          userTilesCurratorColorMedium.parentNode.removeChild(userTilesCurratorColorMedium);
+          tileColorMediumDiv.appendChild(userTilesCurratorColorMedium);
+          userTilesCurratorColorMedium.id = 'userTilesCurratorColorMedium';
+          userTilesCurratorColorMedium.type = 'color';
+        }
+
+
+
+        switch(monthPath) {
+          case('january_tiles'):
+            monthDays = 31;
+            userTilesCuratorMonthTheme.innerHTML = 'January Tile';
+            break;
+          case('february_tiles'):
+            monthDays = 29;
+            userTilesCuratorMonthTheme.innerHTML = 'February Tile';
+            break;
+          case('march_tiles'):
+            monthDays = 31;
+            userTilesCuratorMonthTheme.innerHTML = 'March Tile';
+            break;
+          case('april_tiles'):
+            monthDays = 30;
+            userTilesCuratorMonthTheme.innerHTML = 'April Tile';
+            break;
+          case('may_tiles'):
+            monthDays = 31;
+            userTilesCuratorMonthTheme.innerHTML = 'May Tile';
+            break;
+          case('june_tiles'):
+            monthDays = 30;
+            userTilesCuratorMonthTheme.innerHTML = 'June Tile';
+            break;
+          case('july_tiles'):
+            monthDays = 31;
+            userTilesCuratorMonthTheme.innerHTML = 'July Tile';
+            break;
+          case('August_tiles'):
+            monthDays = 31;
+            userTilesCuratorMonthTheme.innerHTML = 'August Tile';
+            break;
+          case('september_tiles'):
+            monthDays = 30;
+            userTilesCuratorMonthTheme.innerHTML = 'September Tile';
+            break;
+          case('October_tiles'):
+            monthDays = 31;
+            userTilesCuratorMonthTheme.innerHTML = 'October Tile';
+            break;
+          case('November_tiles'):
+            monthDays = 30;
+            userTilesCuratorMonthTheme.innerHTML = 'November Tile';
+            break;
+          case('december_tiles'):
+            monthDays = 31;
+            userTilesCuratorMonthTheme.innerHTML = 'December Tile';
+            break;
+          default:
+            console.log('unsupported month');
+        }
+        randomMonthDay = Math.floor(Math.random() * monthDays) + 1;
+        tilesCurratorDate.innerHTML = randomMonthDay;
+
+
+        $http.get(`/${monthPath}/${tileId}`)
+        .then(tileData=>{
+          let tile = tileData.data;
+          if (tile.theme === '') {
+            userTilesCuratorMonthTheme.innerHTML = '';
+            userTilesCuratorMonthThemeEntry.setAttribute("style", "display: initial;");
+            userTilesCuratorMonthThemeEntry.addEventListener('change', ()=>{
+              userTilesCuratorMonthTheme.innerHTML = userTilesCuratorMonthThemeEntry.value;
+            });
+            userTilesCuratorMonthThemeEntry.addEventListener('focusout', ()=>{
+              if (userTilesCuratorMonthThemeEntry.value !== '') {
+                let subObj = {
+                  theme: userTilesCuratorMonthThemeEntry.value
+                };
+                $http.patch(`/${monthPath}/${tileId}`, subObj)
+                .then(()=>{
+                  tile.theme = subObj.theme;
+                });
+              }
+            });
+          } else {
+            userTilesCuratorFirstEntryTheme.setAttribute("style", "display: none;");
+            userTilesCuratorMonthTheme.innerHTML = "Theme: " + tile.theme;
+          }
+          userTilesCurratorImageDiv.setAttribute("style", "background-image: url(" + tile.src_string + "); background-repeat: " + tile.repeat_value + "; background-size: " + tile.size_value + "; border: solid 10px " + tile.color_medium + ";");
+          tilesCurratorDate.setAttribute("style", "color: " + tile.color_dark + ";)");
+          switch(tile.type) {
+            case('default'):
+              userTilesCuratorSelect.value = 'off month tiles';
+              break;
+            case('week'):
+            userTilesCuratorSelect.value = 'week';
+              break;
+            case('mtwt'):
+              userTilesCuratorSelect.value = 'week', 'monday, tuesday, wednesday, thursday';
+              break;
+            case('friday'):
+              userTilesCuratorSelect.value = 'friday';
+              break;
+            case('saturday'):
+              userTilesCuratorSelect.value = 'saturday';
+              break;
+            case('sunday'):
+              userTilesCuratorSelect.value = 'sunday';
+              break;
+            case('holiday'):
+              userTilesCuratorSelect.value = 'holiday';
+              break;
+            default:
+              console.log('unsupported state');
+          }
+          if (tile.repeat_value === 'no-repeat') {
+            userTilesCurratorRepeatValue.checked = false;
+          } else {
+            userTilesCurratorRepeatValue.checked = true;
+          }
+          userTilesCurratorSizeValue.value = parseInt(tile.size_value);
+          userTilesCurratorColorDark.value = tile.color_dark;
+          userTilesCurratorColorLight.value = tile.color_light;
+          userTilesCurratorColorMedium.value = tile.color_medium;
+
+          tilesCurratorDate.addEventListener('mouseover', ()=>{
+            tilesCurratorDate.setAttribute("style", "color: " + tile.color_light + ";)");
+          });
+          tilesCurratorDate.addEventListener('mouseleave', ()=>{
+            tilesCurratorDate.setAttribute("style", "color: " + tile.color_dark + ";)");
+          });
+          usertilesCurratorURL.addEventListener('focusout', ()=>{
+            if (usertilesCurratorURL.value !== '') {
+              userTilesCurratorImageDiv.setAttribute("style", "background-image: url(" + usertilesCurratorURL.value + "); background-repeat: " + tile.repeat_value + "; background-size: " + tile.size_value + "; border: solid 10px " + tile.color_medium + ";");
+              let subObj = {
+                src_string: usertilesCurratorURL.value
+              };
+              $http.patch(`/${monthPath}/${tileId}`, subObj)
+              .then(()=>{
+                tile.src_string = subObj.src_string;
+              });
+            }
+          });
+          usertilesCurratorUploaderButton.addEventListener('click', ()=>{
+            usertilesCurratorUploaderButton.setAttribute("style", "visibility: hidden;");
+            userTilesCurratorImageUploaderDiv.setAttribute("style", "visibility: visible;");
+          });
+          userTilesCurratorUploaderSubmit.addEventListener('click', ()=>{
+            usertilesCurratorUploaderButton.setAttribute("style", "visibility: visible;");
+            userTilesCurratorImageUploaderDiv.setAttribute("style", "visibility: hidden;");
+            usertilesCurratorUploaderButton.setAttribute("style", "cursor: pointer;");
+          });
+          userTilesCurratorUploaderCancel.addEventListener('click', ()=>{
+            usertilesCurratorUploaderButton.setAttribute("style", "visibility: visible;");
+            userTilesCurratorImageUploaderDiv.setAttribute("style", "visibility: hidden;");
+            usertilesCurratorUploaderButton.setAttribute("style", "cursor: pointer;");
+          });
+          userTilesCurratorColorDark.addEventListener('change', ()=>{
+            let subObj = {
+              color_dark: userTilesCurratorColorDark.value
+            };
+            tilesCurratorDate.setAttribute("style", "color: " + tile.color_dark + ";)");
+            $http.patch(`/${monthPath}/${tileId}`, subObj)
+            .then(()=>{
+              tile.color_dark = subObj.color_dark;
+            });
+          });
+          userTilesCurratorColorMedium.addEventListener('change', ()=>{
+            let subObj = {
+              color_medium: userTilesCurratorColorMedium.value
+            };
+            userTilesCurratorImageDiv.setAttribute("style", "background-image: url(" + tile.src_string + "); background-repeat: " + tile.repeat_value + "; background-size: " + tile.size_value + "; border: solid 10px " + subObj.color_medium + ";");
+            $http.patch(`/${monthPath}/${tileId}`, subObj)
+            .then(()=>{
+              tile.color_medium = subObj.color_medium;
+            });
+          });
+          userTilesCurratorColorLight.addEventListener('change', ()=>{
+            let subObj = {
+              color_light: userTilesCurratorColorLight.value
+            };
+            $http.patch(`/${monthPath}.${tileId}`, subObj)
+            .then(()=>{
+              tile.color_light = subObj.color_light;
+            });
+          });
+          userTilesCuratorSelect.addEventListener('change', ()=>{
+            let subObj = {};
+            switch(userTilesCuratorSelect.value) {
+              case('off month tiles'):
+                subObj.type = 'default';
+                break;
+              case('week'):
+                subObj.type = 'week';
+                break;
+              case('monday, tuesday, wednesday, thursday'):
+                subObj.type = 'mtwt';
+                break;
+              case('friday'):
+                subObj.type = 'friday';
+                break;
+              case('saturday'):
+                subObj.type = 'saturday';
+                break;
+              case('sunday'):
+                subObj.type = 'sunday';
+                break;
+              case('holiday'):
+                subObj.type = 'holiday';
+                break;
+              default:
+                console.log('unsupported state');
+            }
+            $http.patch(`/${monthPath}/${tileId}`, subObj)
+            .then(()=>{
+              tile.type = subObj.type;
+            });
+          });
+          userTilesCurratorRepeatValue.addEventListener('click', ()=>{
+            let subObj = {};
+            if (userTilesCurratorRepeatValue.checked) {
+              subObj.repeat_value = 'repeat';
+            } else {
+              subObj.repeat_value = 'no-repeat';
+            }
+            userTilesCurratorImageDiv.setAttribute("style", "background-image: url(" + tile.src_string + "); background-repeat: " + subObj.repeat_value + "; background-size: " + tile.size_value + "; border: solid 10px " + tile.color_medium + ";");
+            $http.patch(`/${monthPath}/${tileId}`, subObj)
+            .then(()=>{
+              tile.repeat_value = subObj.repeat_value;
+            });
+          });
+          userTilesCurratorSizeValue.addEventListener('change', ()=>{
+            if (userTilesCurratorRepeatValue.checked) {
+              tile.repeat_value = 'repeat';
+            } else {
+              tile.repeat_value = 'no-repeat';
+            }
+            let subObj = {
+              size_value: userTilesCurratorSizeValue.value.toString() + '%'
+            };
+            userTilesCurratorImageDiv.setAttribute("style", "background-image: url(" + tile.src_string + "); background-repeat: " + tile.repeat_value + "; background-size: " + subObj.size_value + "; border: solid 10px " + tile.color_medium + ";");
+          });
+          $http.patch(`/${monthPath}/${tileId}`, subObj)
+          .then(()=>{
+            tile.size_value = subObj.size_value;
+          });
+        });
+
+        userTilesCurratorEditorDiv.setAttribute("style", "display: initial;");
+        tilesCurratorManagerDone.setAttribute("style", "visibility: hidden;");
+      }
 
       function closeModulesManager() {
         let modulesManagerButton = document.getElementById('modulesManagerButton');
