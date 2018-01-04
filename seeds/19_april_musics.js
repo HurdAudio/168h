@@ -2380,6 +2380,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 133,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4098047639/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://chrispitsiokos.bandcamp.com/album/before-the-heat-death-2',
+          a_string: 'Before the Heat Death by CP Unit',
+          rule: {
+            "monday": [ 19, 27, 9, 14 ],
+            "tuesday": [ 23, 1, 13, 18 ],
+            "wednesday": [ 22, 30, 12, 17 ],
+            "thursday": [ 21, 29, 11, 16 ],
+            "saturday": [ 20, 28, 10, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 134,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3344859504/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ugexploderecords.bandcamp.com/album/unplanned-obsolescence',
+          a_string: 'Unplanned Obsolescence by Chris Pitsiokos / Weasel Walter',
+          rule: {
+            "monday": [ 20, 28, 10, 15 ],
+            "tuesday": [ 19, 27, 9, 14 ],
+            "wednesday": [ 23, 1, 13, 18 ],
+            "thursday": [ 22, 30, 12, 17 ],
+            "saturday": [ 21, 29, 11, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 135,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2328614651/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://chrispitsiokos.bandcamp.com/album/one-eye-with-a-microscope-attached',
+          a_string: 'One Eye with a Microscope Attached by Chris Pitsiokos Quartet',
+          rule: {
+            "monday": [ 21, 29, 11, 16 ],
+            "tuesday": [ 20, 28, 10, 15 ],
+            "wednesday": [ 19, 27, 9, 14 ],
+            "thursday": [ 23, 1, 13, 18 ],
+            "saturday": [ 22, 30, 12, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
