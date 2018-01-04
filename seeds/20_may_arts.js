@@ -4304,6 +4304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 216,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/triumph.jpg',
+          title: 'Triumph',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 24, 4, 14, 3 ],
+            "tuesday": [ 23, 3, 2, 22 ],
+            "wednesday": [ 21, 31, 10, 18 ],
+            "thursday": [ 19, 27, 9, 18 ],
+            "friday": [ 31, 10, 20, 28 ],
+            "saturday": [ 29, 9, 18, 28 ],
+            "sunday": [ 27, 6, 14, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 217,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/mill-fragment.jpg',
+          title: 'Mill(fragment)',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 28, 7, 15, 27 ],
+            "tuesday": [ 25, 5, 15, 4 ],
+            "wednesday": [ 24, 4, 3, 23 ],
+            "thursday": [ 22, 1, 11, 19 ],
+            "friday": [ 20, 28, 10, 19 ],
+            "saturday": [ 1, 11, 21, 29 ],
+            "sunday": [ 30, 10, 19, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 218,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/mill-fragment-1.jpg',
+          title: 'Mill(fragment)',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 30, 10, 19, 29 ],
+            "tuesday": [ 28, 7, 15, 27 ],
+            "wednesday": [ 25, 5, 15, 4 ],
+            "thursday": [ 24, 4, 3, 23 ],
+            "friday": [ 22, 1, 11, 19 ],
+            "saturday": [ 20, 28, 10, 19 ],
+            "sunday": [ 1, 11, 21, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 219,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/mill-fragment-2.jpg',
+          title: 'Mill(fragment)',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 1, 11, 21, 29 ],
+            "tuesday": [ 30, 10, 19, 29 ],
+            "wednesday": [ 28, 7, 15, 27 ],
+            "thursday": [ 25, 5, 15, 4 ],
+            "friday": [ 24, 4, 3, 23 ],
+            "saturday": [ 22, 1, 11, 19 ],
+            "sunday": [ 20, 28, 10, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 220,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/mill.jpg',
+          title: 'Mill',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 20, 28, 10, 19 ],
+            "tuesday": [ 1, 11, 21, 29 ],
+            "wednesday": [ 30, 10, 19, 29 ],
+            "thursday": [ 28, 7, 15, 27 ],
+            "friday": [ 25, 5, 15, 4 ],
+            "saturday": [ 24, 4, 3, 23 ],
+            "sunday": [ 22, 1, 11, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
