@@ -5039,7 +5039,7 @@ exports.seed = function(knex, Promise) {
             "wednesday": [ 18, 20, 24, 27 ],
             "thursday": [ 20, 22, 23, 26 ],
             "friday": [ 5, 6, 17, 9 ],
-            "saturday": [ 10, 10, 2, 22 ],
+            "saturday": [ 8, 10, 2, 22 ],
             "sunday": [ 10, 11, 3, 6 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
@@ -5060,7 +5060,7 @@ exports.seed = function(knex, Promise) {
             "thursday": [ 18, 20, 24, 27 ],
             "friday": [ 20, 22, 23, 26 ],
             "saturday": [ 5, 6, 17, 9 ],
-            "sunday": [ 10, 10, 2, 22 ]
+            "sunday": [ 8, 10, 2, 22 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -5074,7 +5074,7 @@ exports.seed = function(knex, Promise) {
           artist: 'Romul Nutiu',
           year: '2011',
           rule: {
-            "monday": [ 10, 10, 2, 22 ],
+            "monday": [ 8, 10, 2, 22 ],
             "tuesday": [ 10, 11, 3, 6 ],
             "wednesday": [ 13, 14, 5, 9 ],
             "thursday": [ 16, 18, 19, 21 ],
@@ -5095,12 +5095,112 @@ exports.seed = function(knex, Promise) {
           year: '1960',
           rule: {
             "monday": [ 5, 6, 17, 9 ],
-            "tuesday": [ 10, 10, 2, 22 ],
+            "tuesday": [ 8, 10, 2, 22 ],
             "wednesday": [ 10, 11, 3, 6 ],
             "thursday": [ 13, 14, 5, 9 ],
             "friday": [ 16, 18, 19, 21 ],
             "saturday": [ 18, 20, 24, 27 ],
             "sunday": [ 20, 22, 23, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 256,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/concreto-1945.jpg',
+          title: 'Concreto',
+          artist: 'Lidy Prati',
+          year: '1945',
+          rule: {
+            "monday": [ 20, 22, 23, 26 ],
+            "tuesday": [ 5, 6, 17, 9 ],
+            "wednesday": [ 8, 10, 2, 22 ],
+            "thursday": [ 10, 11, 3, 6 ],
+            "friday": [ 13, 14, 5, 9 ],
+            "saturday": [ 16, 18, 19, 21 ],
+            "sunday": [ 18, 20, 24, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 257,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/cosmic-map-1930(1).jpg',
+          title: 'Cosmic Map',
+          artist: 'Bruno Munari',
+          year: '1930',
+          rule: {
+            "monday": [ 18, 20, 24, 27 ],
+            "tuesday": [ 20, 22, 23, 26 ],
+            "wednesday": [ 5, 6, 17, 9 ],
+            "thursday": [ 8, 10, 2, 22 ],
+            "friday": [ 10, 11, 3, 6 ],
+            "saturday": [ 13, 14, 5, 9 ],
+            "sunday": [ 16, 18, 19, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 258,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/corridor-1960.jpg',
+          title: 'Corridor',
+          artist: 'Karl Benjamin',
+          year: '1960',
+          rule: {
+            "monday": [ 16, 18, 19, 21 ],
+            "tuesday": [ 18, 20, 24, 27 ],
+            "wednesday": [ 20, 22, 23, 26 ],
+            "thursday": [ 5, 6, 17, 9 ],
+            "friday": [ 8, 10, 2, 22 ],
+            "saturday": [ 10, 11, 3, 6 ],
+            "sunday": [ 13, 14, 5, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 259,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/lemon-cards-1-1963.jpg',
+          title: 'Lemon Cards #1',
+          artist: 'Walter Darby Bannard',
+          year: '1963',
+          rule: {
+            "monday": [ 14, 15, 6, 10 ],
+            "tuesday": [ 17, 19, 20, 22 ],
+            "wednesday": [ 19, 21, 25, 28 ],
+            "thursday": [ 21, 23, 24, 27 ],
+            "friday": [ 6, 7, 18, 10 ],
+            "saturday": [ 9, 11, 3, 23 ],
+            "sunday": [ 11, 12, 4, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 260,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/infinity-field-lefkada-series-1980-1(1).jpg',
+          title: 'Infinity Field, Lefkada Series',
+          artist: 'Theodoros Stamos',
+          year: '1980',
+          rule: {
+            "monday": [ 11, 12, 4, 7 ],
+            "tuesday": [ 14, 15, 6, 10 ],
+            "wednesday": [ 17, 19, 20, 22 ],
+            "thursday": [ 19, 21, 25, 28 ],
+            "friday": [ 21, 23, 24, 27 ],
+            "saturday": [ 6, 7, 18, 10 ],
+            "sunday": [ 9, 11, 3, 23 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
