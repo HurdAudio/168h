@@ -2164,6 +2164,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 121,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3629491121/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://eleh.bandcamp.com/album/circle-three-full-moon-at-35hz',
+          a_string: 'Circle Three: Full Moon At 35Hz by eleh',
+          rule: {
+            "monday": [ 17, 20, 27, 7 ],
+            "tuesday": [ 16, 20, 25, 7 ],
+            "wednesday": [ 16, 19, 25, 6 ],
+            "thursday": [ 14, 22, 24, 5 ],
+            "saturday": [ 18, 22, 28, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 122,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3505795299/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://eleh.bandcamp.com/album/home-age-i',
+          a_string: 'Home Age I by eleh',
+          rule: {
+            "monday": [ 18, 22, 28, 9 ],
+            "tuesday": [ 17, 20, 27, 7 ],
+            "wednesday": [ 16, 20, 25, 7 ],
+            "thursday": [ 16, 19, 25, 6 ],
+            "saturday": [ 14, 22, 24, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 123,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3542683785/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://eleh.bandcamp.com/album/ohmage-resistor',
+          a_string: 'Ohmage/Resistor by eleh',
+          rule: {
+            "monday": [ 14, 22, 24, 5 ],
+            "tuesday": [ 18, 22, 28, 9 ],
+            "wednesday": [ 17, 20, 27, 7 ],
+            "thursday": [ 16, 20, 25, 7 ],
+            "saturday": [ 16, 19, 25, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
