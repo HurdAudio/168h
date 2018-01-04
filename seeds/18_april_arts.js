@@ -4504,6 +4504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 226,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/maricopa-county-files-dismiss-arizona-diamondbacks-lawsuit-chase-field.jpg',
+          title: 'Chase Field',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 2, 8, 13, 20 ],
+            "tuesday": [ 16, 6, 12, 19 ],
+            "wednesday": [ 1, 6, 12, 18 ],
+            "thursday": [ 30, 4, 19, 17 ],
+            "friday": [ 29, 4, 9, 15 ],
+            "saturday": [ 28, 3, 9, 15 ],
+            "sunday": [ 27, 2, 8, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 227,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/1461608009-mlb-diamondback-artist-tickets1.jpg',
+          title: 'Arizona Diamondbacks Tickets and Upcoming Events',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 27, 2, 8, 14 ],
+            "tuesday": [ 2, 8, 13, 20 ],
+            "wednesday": [ 16, 6, 12, 19 ],
+            "thursday": [ 1, 6, 12, 18 ],
+            "friday": [ 30, 4, 19, 17 ],
+            "saturday": [ 29, 4, 9, 15 ],
+            "sunday": [ 28, 3, 9, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 228,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/arizona-diamondbacks-v-kansas-city-royals-db984f5f89aebf07.jpg',
+          title: 'Zack Greinke of the Diamondbacks',
+          artist: 'Brian Davidson',
+          year: '2017',
+          rule: {
+            "monday": [ 28, 3, 9, 15 ],
+            "tuesday": [ 27, 2, 8, 14 ],
+            "wednesday": [ 2, 8, 13, 20 ],
+            "thursday": [ 16, 6, 12, 19 ],
+            "friday": [ 1, 6, 12, 18 ],
+            "saturday": [ 30, 4, 19, 17 ],
+            "sunday": [ 29, 4, 9, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 229,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/randy-johnson.jpg',
+          title: 'Randy Johnson',
+          artist: '?',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 29, 4, 9, 15 ],
+            "tuesday": [ 28, 3, 9, 15 ],
+            "wednesday": [ 27, 2, 8, 14 ],
+            "thursday": [ 2, 8, 13, 20 ],
+            "friday": [ 16, 6, 12, 19 ],
+            "saturday": [ 1, 6, 12, 18 ],
+            "sunday": [ 30, 4, 19, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 230,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/8526_arizona_diamondbacks-batting_practice-2016.png',
+          title: 'Arizona Diamondbacks Logo',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 30, 4, 19, 17 ],
+            "tuesday": [ 29, 4, 9, 15 ],
+            "wednesday": [ 28, 3, 9, 15 ],
+            "thursday": [ 27, 2, 8, 14 ],
+            "friday": [ 2, 8, 13, 20 ],
+            "saturday": [ 16, 6, 12, 19 ],
+            "sunday": [ 1, 6, 12, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
