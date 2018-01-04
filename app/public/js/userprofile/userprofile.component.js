@@ -205,6 +205,7 @@
 
         userTilesCurratorEditorDiv.setAttribute("style", "display: none;");
         tilesCurratorManagerDone.setAttribute("style", "visibility: visible;");
+        tilesCurratorManagement();
       }
 
 
