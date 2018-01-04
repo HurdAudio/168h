@@ -2488,6 +2488,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 139,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2930669060/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://leabertucci.bandcamp.com/album/all-that-is-solid-melts-into-air',
+          a_string: '&#39;All That Is Solid Melts Into Air&#39; by Lea Bertucci',
+          rule: {
+            "monday": [ 20, 27, 2, 10 ],
+            "tuesday": [ 20, 26, 1, 9 ],
+            "wednesday": [ 24, 30, 5, 13 ],
+            "thursday": [ 23, 29, 4, 12 ],
+            "saturday": [ 22, 28, 3, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 140,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=319984039/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://noumenalloom.bandcamp.com/album/333-drill',
+          a_string: '$3.33 - DRILL by $3.33',
+          rule: {
+            "monday": [ 23, 29, 4, 13 ],
+            "tuesday": [ 21, 28, 3, 11 ],
+            "wednesday": [ 21, 27, 2, 10 ],
+            "thursday": [ 25, 31, 6, 14 ],
+            "saturday": [ 24, 30, 5, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 141,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2690413612/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://fortevilfruit.bandcamp.com/album/oreing',
+          a_string: 'Oreing by Ailbhe Nic Oireachtaigh',
+          rule: {
+            "monday": [ 24, 30, 5, 13 ],
+            "tuesday": [ 23, 29, 4, 13 ],
+            "wednesday": [ 21, 28, 3, 11 ],
+            "thursday": [ 21, 27, 2, 10 ],
+            "saturday": [ 25, 31, 6, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
