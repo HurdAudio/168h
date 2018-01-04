@@ -4104,6 +4104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 206,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/music_above_by_cmtallman-dbyqddm.jpg',
+          title: 'Music Above',
+          artist: 'CM Tallman',
+          year: '2018',
+          rule: {
+            "monday": [ 23, 3, 13, 21 ],
+            "tuesday": [ 29, 9, 19, 25 ],
+            "wednesday": [ 28, 8, 18, 26 ],
+            "thursday": [ 27, 7, 17, 25 ],
+            "friday": [ 26, 6, 16, 24 ],
+            "saturday": [ 25, 5, 15, 23 ],
+            "sunday": [ 24, 4, 14, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 207,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/thinking_of_you__wherever_you_are_by_screamingcolorart-dbytqwl.png',
+          title: 'Thinking of You, Wherever You Are',
+          artist: 'Christopher Davis',
+          year: '2018',
+          rule: {
+            "monday": [ 24, 4, 14, 22 ],
+            "tuesday": [ 23, 3, 13, 21 ],
+            "wednesday": [ 29, 9, 19, 25 ],
+            "thursday": [ 28, 8, 18, 26 ],
+            "friday": [ 27, 7, 17, 25 ],
+            "saturday": [ 26, 6, 16, 24 ],
+            "sunday": [ 25, 5, 15, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 208,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/cooking_stuff___by_xninabravexx-dbyo3cz.jpg',
+          title: 'Cooking stuff..',
+          artist: 'xNinabravexx',
+          year: '2018',
+          rule: {
+            "monday": [ 25, 5, 15, 23 ],
+            "tuesday": [ 24, 4, 14, 22 ],
+            "wednesday": [ 23, 3, 13, 21 ],
+            "thursday": [ 29, 9, 19, 25 ],
+            "friday": [ 28, 8, 18, 26 ],
+            "saturday": [ 27, 7, 17, 25 ],
+            "sunday": [ 26, 6, 16, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 209,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/piano_skycraper_by_marikaiti-dbyjwrn.png',
+          title: 'Piano Skycraper',
+          artist: 'Marikaiti Nikolakaki',
+          year: '2018',
+          rule: {
+            "monday": [ 26, 6, 16, 24 ],
+            "tuesday": [ 25, 5, 15, 23 ],
+            "wednesday": [ 24, 4, 14, 22 ],
+            "thursday": [ 23, 3, 13, 21 ],
+            "friday": [ 29, 9, 19, 25 ],
+            "saturday": [ 28, 8, 18, 26 ],
+            "sunday": [ 27, 7, 17, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 210,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/bike_by_khrispandora-dbys8jo.jpg',
+          title: 'Bike',
+          artist: 'Kika Fonte',
+          year: '2018',
+          rule: {
+            "monday": [ 28, 8, 18, 26 ],
+            "tuesday": [ 27, 7, 17, 25 ],
+            "wednesday": [ 26, 6, 16, 24 ],
+            "thursday": [ 25, 5, 15, 23 ],
+            "friday": [ 24, 4, 14, 22 ],
+            "saturday": [ 30, 10, 20, 26 ],
+            "sunday": [ 29, 9, 19, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
