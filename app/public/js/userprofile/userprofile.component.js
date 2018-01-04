@@ -198,6 +198,66 @@
       vm.closeModulesManager = closeModulesManager;
       vm.editTilesCurrate = editTilesCurrate;
       vm.userTilesCurratorEditorDone = userTilesCurratorEditorDone;
+      vm.deleteMusicCurrate = deleteMusicCurrate;
+
+      function deleteMusicCurrate(monthPath, musicId) {
+        let userMusicCurratorEditorDiv = document.getElementById('userMusicCurratorEditorDiv');
+        let musicCurratorManagementDiv = document.getElementById('musicCurratorManagementDiv');
+        let musicCurratorManagerDone = document.getElementById('musicCurratorManagerDone');
+        let userMusicCurratorDeleteConfirmDiv = document.getElementById('userMusicCurratorDeleteConfirmDiv');
+        let userMusicCurratorATagDelete = document.getElementById('userMusicCurratorATagDelete');
+        let userMusicCurratorDeleteConfirmButtons = document.getElementById('userMusicCurratorDeleteConfirmButtons');
+        let userMusicCurratorConfirmYes = document.getElementById('userMusicCurratorConfirmYes');
+        if (userMusicCurratorConfirmYes) {
+          userMusicCurratorConfirmYes.parentNode.removeChild(userMusicCurratorConfirmYes);
+          userMusicCurratorConfirmYes = document.createElement('a');
+          userMusicCurratorDeleteConfirmButtons.appendChild(userMusicCurratorConfirmYes);
+          userMusicCurratorConfirmYes.id = 'userMusicCurratorConfirmYes';
+          userMusicCurratorConfirmYes.className = 'btn';
+          userMusicCurratorConfirmYes.innerHTML = 'yes';
+          userMusicCurratorConfirmYes.setAttribute("style", "cursor: pointer;");
+        }
+        let userMusicCurratorConfirmNo = document.getElementById('userMusicCurratorConfirmNo');
+        if (userMusicCurratorConfirmNo) {
+          userMusicCurratorConfirmNo.parentNode.removeChild(userMusicCurratorConfirmNo);
+          userMusicCurratorConfirmNo = document.createElement('a');
+          userMusicCurratorDeleteConfirmButtons.appendChild(userMusicCurratorConfirmNo);
+          userMusicCurratorConfirmNo.id = 'userMusicCurratorConfirmNo';
+          userMusicCurratorConfirmNo.className = 'btn';
+          userMusicCurratorConfirmNo.innerHTML = 'no';
+          userMusicCurratorConfirmNo.setAttribute("style", "cursor: pointer;");
+        }
+
+        $http.get(`/${monthPath}/${musicId}`)
+        .then(musicSelectionData=>{
+          let musicSelection = musicSelectionData.data;
+          userMusicCurratorATagDelete.innerHTML = musicSelection.a_string;
+
+          userMusicCurratorConfirmNo.addEventListener('click', ()=>{
+            musicCurratorManagementDiv.setAttribute("style", "display: initial;");
+            userMusicCurratorDeleteConfirmDiv.setAttribute("style", "display: none;");
+          });
+          userMusicCurratorConfirmYes.addEventListener('click', ()=>{
+            $http.delete(`/${monthPath}/${musicId}`)
+            .then(()=>{
+              musicCurratorManagementDiv.setAttribute("style", "display: initial;");
+              userMusicCurratorDeleteConfirmDiv.setAttribute("style", "display: none;");
+              musicsCurationManagement();
+              if ((monthPath === 'friday_musics') || (monthPath === 'sunday_musics')) {
+                displayWeekMusics(monthPath +'byuser');
+              } else {
+                displayMusics(monthPath + 'byuser');
+              }
+            });
+
+          });
+        });
+
+        musicCurratorManagementDiv.setAttribute("style", "display: none;");
+        musicCurratorManagerDone.setAttribute("style", "visibility: visible;");
+        userMusicCurratorDeleteConfirmDiv.setAttribute("style", "display: initial;");
+        userMusicCurratorEditorDiv.setAttribute("style", "display: none;");
+      }
 
       function userTilesCurratorEditorDone() {
         let userTilesCurratorEditorDiv = document.getElementById('userTilesCurratorEditorDiv');
