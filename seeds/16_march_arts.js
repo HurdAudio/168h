@@ -4704,6 +4704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 236,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/saint-cecilia-after-the-manner-of-raphael-1865.jpg',
+          title: 'Saint Cecilia, After the Manner of Raphael',
+          artist: 'Julia Margaret Cameron',
+          year: '1865',
+          rule: {
+            "monday": [ 29, 8, 16, 26 ],
+            "tuesday": [ 28, 7, 15, 25 ],
+            "wednesday": [ 27, 6, 15, 24 ],
+            "thursday": [ 2, 11, 20, 29 ],
+            "friday": [ 1, 11, 21, 29 ],
+            "saturday": [ 1, 10, 18, 28 ],
+            "sunday": [ 30, 9, 17, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 237,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/forest-interior-mary-josephine-walters-uhd.jpg',
+          title: 'Forest Interior',
+          artist: 'Mary Josephine Walters',
+          year: '?',
+          rule: {
+            "monday": [ 30, 9, 17, 27 ],
+            "tuesday": [ 29, 8, 16, 26 ],
+            "wednesday": [ 28, 7, 15, 25 ],
+            "thursday": [ 27, 6, 15, 24 ],
+            "friday": [ 2, 11, 20, 29 ],
+            "saturday": [ 1, 11, 21, 29 ],
+            "sunday": [ 1, 10, 18, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 238,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/the-sisters.jpg',
+          title: 'The Sisters',
+          artist: 'Mary Cassatt',
+          year: 'c.1885',
+          rule: {
+            "monday": [ 2, 11, 19, 29 ],
+            "tuesday": [ 31, 10, 18, 28 ],
+            "wednesday": [ 30, 9, 17, 27 ],
+            "thursday": [ 29, 8, 16, 26 ],
+            "friday": [ 28, 7, 16, 25 ],
+            "saturday": [ 3, 12, 22, 30 ],
+            "sunday": [ 2, 12, 22, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 239,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/woman-awakening-1876.jpg',
+          title: 'Woman Awakening',
+          artist: 'Eva Gonzales',
+          year: '1876',
+          rule: {
+            "monday": [ 2, 12, 22, 30 ],
+            "tuesday": [ 2, 11, 19, 29 ],
+            "wednesday": [ 31, 10, 18, 28 ],
+            "thursday": [ 30, 9, 17, 27 ],
+            "friday": [ 29, 8, 16, 26 ],
+            "saturday": [ 28, 7, 16, 25 ],
+            "sunday": [ 3, 12, 22, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 240,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/a-murder-of-crows.png',
+          title: 'A Murder of Crows',
+          artist: 'Mildred Anne Butler',
+          year: '?',
+          rule: {
+            "monday": [ 3, 12, 22, 30 ],
+            "tuesday": [ 2, 12, 22, 30 ],
+            "wednesday": [ 2, 11, 19, 29 ],
+            "thursday": [ 31, 10, 18, 28 ],
+            "friday": [ 30, 9, 17, 27 ],
+            "saturday": [ 29, 8, 16, 26 ],
+            "sunday": [ 28, 7, 16, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
