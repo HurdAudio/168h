@@ -4904,6 +4904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 246,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/e-m-washington-wood-block-print-pencil-signed-1927-black-americana-rowing-boat-7b34e597488f3d63799d252bee5c873e.jpg',
+          title: 'Black Americana Rowing Boat',
+          artist: 'E.M. Washington',
+          year: '1927',
+          rule: {
+            "monday": [ 8, 16, 24, 3 ],
+            "tuesday": [ 13, 18, 24, 5 ],
+            "wednesday": [ 12, 20, 28, 7 ],
+            "thursday": [ 14, 24, 1, 7 ],
+            "friday": [ 16, 24, 3, 13 ],
+            "saturday": [ 18, 26, 22, 12 ],
+            "sunday": [ 6, 14, 22, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 247,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/jww_hungry_gull.jpg',
+          title: 'Hungry Gull',
+          artist: 'James W. Washington, Jr.',
+          year: '1977',
+          rule: {
+            "monday": [ 6, 14, 22, 1 ],
+            "tuesday": [ 8, 16, 24, 3 ],
+            "wednesday": [ 13, 18, 24, 5 ],
+            "thursday": [ 12, 20, 28, 7 ],
+            "friday": [ 14, 24, 1, 7 ],
+            "saturday": [ 16, 24, 3, 13 ],
+            "sunday": [ 18, 26, 22, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 248,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/H0027-L19578499.jpg',
+          title: 'Kitchen Table Series',
+          artist: 'Carrie Mae Weems',
+          year: '?',
+          rule: {
+            "monday": [ 18, 26, 22, 12 ],
+            "tuesday": [ 6, 14, 22, 1 ],
+            "wednesday": [ 8, 16, 24, 3 ],
+            "thursday": [ 13, 18, 24, 5 ],
+            "friday": [ 12, 20, 28, 7 ],
+            "saturday": [ 14, 24, 1, 7 ],
+            "sunday": [ 16, 24, 3, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 249,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/female-christ.jpg',
+          title: 'female Christ',
+          artist: 'Pheoris West',
+          year: '?',
+          rule: {
+            "monday": [ 16, 24, 3, 13 ],
+            "tuesday": [ 18, 26, 22, 12 ],
+            "wednesday": [ 6, 14, 22, 1 ],
+            "thursday": [ 8, 16, 24, 3 ],
+            "friday": [ 13, 18, 24, 5 ],
+            "saturday": [ 12, 20, 28, 7 ],
+            "sunday": [ 14, 24, 1, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 250,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/Charles-White-Songs-of-Life-144k.jpg',
+          title: 'Songs of Life',
+          artist: 'Charles Wilbert White',
+          year: '1953 - 1954',
+          rule: {
+            "monday": [ 14, 24, 1, 7 ],
+            "tuesday": [ 16, 24, 3, 13 ],
+            "wednesday": [ 18, 26, 22, 12 ],
+            "thursday": [ 6, 14, 22, 1 ],
+            "friday": [ 8, 16, 24, 3 ],
+            "saturday": [ 13, 18, 24, 5 ],
+            "sunday": [ 12, 20, 28, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
