@@ -2596,6 +2596,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 145,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=822939299/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://pete-rock.bandcamp.com/album/lost-sessions',
+          a_string: 'Lost Sessions by Pete Rock',
+          rule: {
+            "monday": [ 25, 28, 1, 5 ],
+            "tuesday": [ 26, 1, 3, 5 ],
+            "wednesday": [ 9, 3, 5, 11 ],
+            "thursday": [ 21, 26, 28, 11 ],
+            "saturday": [ 22, 26, 28, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 146,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=941152654/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://safarial.bandcamp.com/album/little-man-youve-had-a-busy-day',
+          a_string: 'Little Man, You&#39;ve Had a Busy Day by s.al',
+          rule: {
+            "monday": [ 22, 26, 28, 3 ],
+            "tuesday": [ 25, 28, 1, 5 ],
+            "wednesday": [ 26, 1, 3, 5 ],
+            "thursday": [ 9, 3, 5, 11 ],
+            "saturday": [ 21, 26, 28, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 147,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2673778277/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tironandayomari.bandcamp.com/album/wet-the-wonderful-ego-trip',
+          a_string: 'WET: The Wonderful Ego Trip by TiRon &amp; Ayomari',
+          rule: {
+            "monday": [ 22, 27, 29, 12 ],
+            "tuesday": [ 23, 27, 29, 4 ],
+            "wednesday": [ 26, 29, 2, 6 ],
+            "thursday": [ 27, 2, 4, 6 ],
+            "saturday": [ 10, 4, 6, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
