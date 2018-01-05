@@ -3354,7 +3354,7 @@ exports.seed = function(knex, Promise) {
           artist: 'George Pemba',
           year: '1979',
           rule: {
-            "monday": [ 25, 31, 19, 27 ],
+            "monday": [ 25, 1, 19, 27 ],
             "tuesday": [ 24, 30, 18, 26 ],
             "wednesday": [ 23, 29, 17, 25 ],
             "thursday": [ 22, 28, 16, 24 ],
@@ -3375,7 +3375,7 @@ exports.seed = function(knex, Promise) {
           year: '1958',
           rule: {
             "monday": [ 26, 2, 20, 28 ],
-            "tuesday": [ 25, 31, 19, 27 ],
+            "tuesday": [ 25, 1, 19, 27 ],
             "wednesday": [ 24, 30, 18, 26 ],
             "thursday": [ 23, 29, 17, 25 ],
             "friday": [ 22, 28, 16, 24 ],
@@ -3396,7 +3396,7 @@ exports.seed = function(knex, Promise) {
           rule: {
             "monday": [ 27, 3, 21, 29 ],
             "tuesday": [ 26, 2, 20, 28 ],
-            "wednesday": [ 25, 31, 19, 27 ],
+            "wednesday": [ 25, 1, 19, 27 ],
             "thursday": [24, 30, 18, 26  ],
             "friday": [ 23, 29, 17, 25 ],
             "saturday": [ 22, 28, 16, 24 ],
@@ -3417,7 +3417,7 @@ exports.seed = function(knex, Promise) {
             "monday": [ 21, 27, 15, 22 ],
             "tuesday": [ 27, 3, 21, 29 ],
             "wednesday": [ 26, 2, 20, 28 ],
-            "thursday": [ 25, 31, 19, 27 ],
+            "thursday": [ 25, 1, 19, 27 ],
             "friday": [ 24, 30, 18, 26 ],
             "saturday": [ 23, 29, 17, 25 ],
             "sunday": [ 22, 28, 16, 24 ]
@@ -3438,7 +3438,7 @@ exports.seed = function(knex, Promise) {
             "tuesday": [ 21, 27, 15, 22 ],
             "wednesday": [ 27, 3, 21, 29 ],
             "thursday": [ 26, 2, 20, 28 ],
-            "friday": [ 25, 31, 19, 27 ],
+            "friday": [ 25, 1, 19, 27 ],
             "saturday": [ 24, 30, 18, 26 ],
             "sunday": [ 23, 29, 17, 25 ]
           },
@@ -3459,7 +3459,7 @@ exports.seed = function(knex, Promise) {
             "wednesday": [ 21, 27, 15, 22 ],
             "thursday": [ 27, 3, 21, 29 ],
             "friday": [ 26, 2, 20, 28 ],
-            "saturday": [ 25, 31, 19, 27 ],
+            "saturday": [ 25, 1, 19, 27 ],
             "sunday": [ 24, 30, 18, 26 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
@@ -3480,7 +3480,7 @@ exports.seed = function(knex, Promise) {
             "thursday": [ 21, 27, 15, 22 ],
             "friday": [ 27, 3, 21, 29 ],
             "saturday": [ 26, 2, 20, 28 ],
-            "sunday": [ 25, 31, 19, 27 ]
+            "sunday": [ 25, 1, 19, 27 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -3494,7 +3494,7 @@ exports.seed = function(knex, Promise) {
           artist: 'Moshe Kupferman',
           year: '1974',
           rule: {
-            "monday": [ 25, 31, 19, 27 ],
+            "monday": [ 25, 1, 19, 27 ],
             "tuesday": [ 24, 30, 18, 26 ],
             "wednesday": [ 23, 29, 17, 25 ],
             "thursday": [ 22, 28, 16, 24 ],
@@ -3515,7 +3515,7 @@ exports.seed = function(knex, Promise) {
           year: '1972',
           rule: {
             "monday": [ 26, 2, 20, 28 ],
-            "tuesday": [ 25, 31, 19, 27 ],
+            "tuesday": [ 25, 1, 19, 27 ],
             "wednesday": [ 24, 30, 18, 26 ],
             "thursday": [ 23, 29, 17, 25 ],
             "friday": [ 22, 28, 16, 24 ],
@@ -3536,7 +3536,7 @@ exports.seed = function(knex, Promise) {
           rule: {
             "monday": [ 27, 3, 21, 29 ],
             "tuesday": [ 26, 2, 20, 28 ],
-            "wednesday": [ 25, 31, 19, 27 ],
+            "wednesday": [ 25, 1, 19, 27 ],
             "thursday": [ 24, 30, 18, 26 ],
             "friday": [ 23, 29, 17, 25 ],
             "saturday": [ 22, 28, 16, 24 ],
@@ -3557,7 +3557,7 @@ exports.seed = function(knex, Promise) {
             "monday": [ 21, 27, 15, 22 ],
             "tuesday": [ 27, 3, 21, 29 ],
             "wednesday": [ 26, 2, 20, 28 ],
-            "thursday": [ 25, 31, 19, 27 ],
+            "thursday": [ 25, 1, 19, 27 ],
             "friday": [ 24, 30, 18, 26 ],
             "saturday": [ 23, 29, 17, 25 ],
             "sunday": [ 22, 28, 16, 24 ]
@@ -3578,7 +3578,7 @@ exports.seed = function(knex, Promise) {
             "tuesday": [ 21, 27, 15, 22 ],
             "wednesday": [ 27, 3, 21, 29 ],
             "thursday": [ 26, 2, 20, 28 ],
-            "friday": [ 25, 31, 19, 27 ],
+            "friday": [ 25, 1, 19, 27 ],
             "saturday": [ 24, 30, 18, 26 ],
             "sunday": [ 23, 29, 17, 25 ]
           },
@@ -3599,8 +3599,108 @@ exports.seed = function(knex, Promise) {
             "wednesday": [ 21, 27, 15, 22 ],
             "thursday": [ 27, 3, 21, 29 ],
             "friday": [ 26, 2, 20, 28 ],
-            "saturday": [ 25, 31, 19, 27 ],
+            "saturday": [ 25, 1, 19, 27 ],
             "sunday": [ 24, 30, 18, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 181,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/anti-corpi-cilindrici-2006.jpg',
+          title: 'Anti-corpi cilindrici',
+          artist: 'Tomas Maldonado',
+          year: '2006',
+          rule: {
+            "monday": [ 24, 30, 18, 26 ],
+            "tuesday": [ 23, 29, 17, 25 ],
+            "wednesday": [ 22, 28, 16, 24 ],
+            "thursday": [ 21, 27, 15, 22 ],
+            "friday": [ 27, 3, 21, 29 ],
+            "saturday": [ 26, 2, 20, 28 ],
+            "sunday": [ 25, 1, 19, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 182,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/yellow-mandala-1970.jpg',
+          title: 'Yellow Mandala',
+          artist: 'Clarence Holbrook Carter',
+          year: '1970',
+          rule: {
+            "monday": [ 26, 2, 20, 28 ],
+            "tuesday": [ 25, 1, 19, 27 ],
+            "wednesday": [ 24, 30, 18, 26 ],
+            "thursday": [ 23, 29, 17, 25 ],
+            "friday": [ 22, 28, 16, 23 ],
+            "saturday": [ 28, 4, 22, 30 ],
+            "sunday": [ 27, 3, 21, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 183,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/with-love-to-jean-paul-belmondo-1962.jpg',
+          title: 'With Love to Jean-Paul Belmondo',
+          artist: 'Pauline Boty',
+          year: '1962',
+          rule: {
+            "monday": [ 27, 3, 21, 29 ],
+            "tuesday": [ 26, 2, 20, 28 ],
+            "wednesday": [ 25, 1, 19, 27 ],
+            "thursday": [ 24, 30, 18, 26 ],
+            "friday": [ 23, 29, 17, 25 ],
+            "saturday": [ 22, 28, 16, 23 ],
+            "sunday": [ 28, 4, 22, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 184,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/wave-93-1-1993.jpg',
+          title: 'Wave 93-1',
+          artist: 'Matsutani',
+          year: '1993',
+          rule: {
+            "monday": [ 28, 4, 22, 30 ],
+            "tuesday": [ 27, 3, 21, 29 ],
+            "wednesday": [ 26, 2, 20, 28 ],
+            "thursday": [ 25, 1, 19, 27 ],
+            "friday": [ 24, 30, 18, 26 ],
+            "saturday": [ 23, 29, 17, 25 ],
+            "sunday": [ 22, 28, 16, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 185,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/untitled1963.jpg',
+          title: 'Untitled',
+          artist: 'Adolf Fleischmann',
+          year: '1963',
+          rule: {
+            "monday": [ 22, 28, 16, 23 ],
+            "tuesday": [ 28, 4, 22, 30 ],
+            "wednesday": [ 27, 3, 21, 29 ],
+            "thursday": [ 26, 2, 20, 28 ],
+            "friday": [ 25, 1, 19, 27 ],
+            "saturday": [ 24, 30, 18, 26 ],
+            "sunday": [ 23, 29, 17, 25 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
