@@ -3804,6 +3804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 191,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/gypsy-with-a-guitar-1921.jpg',
+          title: 'Gypsy with a Guitar',
+          artist: 'Eugeniusz Żak',
+          year: '1921',
+          rule: {
+            "monday": [ 31, 4, 12, 28 ],
+            "tuesday": [ 30, 2, 11, 27 ],
+            "wednesday": [ 29, 2, 10, 26 ],
+            "thursday": [ 28, 1, 9, 25 ],
+            "friday": [ 27, 29, 8, 24 ],
+            "saturday": [ 26, 29, 7, 23 ],
+            "sunday": [ 25, 28, 6, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 192,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/dreiformvariation-1928.jpg',
+          title: 'Dreiformvariation',
+          artist: 'Carl Buchheister',
+          year: '1928',
+          rule: {
+            "monday": [ 25, 28, 6, 22 ],
+            "tuesday": [ 31, 4, 12, 28 ],
+            "wednesday": [ 30, 2, 11, 27 ],
+            "thursday": [ 29, 2, 10, 26 ],
+            "friday": [ 28, 1, 9, 25 ],
+            "saturday": [ 27, 29, 8, 24 ],
+            "sunday": [ 26, 29, 7, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 193,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/watched-1925.jpg',
+          title: 'Watched',
+          artist: 'Hannah Hoch',
+          year: '1925',
+          rule: {
+            "monday": [ 26, 29, 7, 23 ],
+            "tuesday": [ 25, 28, 6, 22 ],
+            "wednesday": [ 31, 4, 12, 28 ],
+            "thursday": [ 30, 2, 11, 27 ],
+            "friday": [ 29, 2, 10, 26 ],
+            "saturday": [ 28, 1, 9, 25 ],
+            "sunday": [ 27, 29, 8, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 194,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/anne-estelle-rice-in-paris-closerie-des-lilas-1907.jpg',
+          title: 'Anne Estelle Rice in Paris (Closerie des lilas)',
+          artist: 'John Duncan Fergusson',
+          year: '1907',
+          rule: {
+            "monday": [ 27, 29, 8, 24 ],
+            "tuesday": [ 26, 29, 7, 23 ],
+            "wednesday": [ 25, 28, 6, 22 ],
+            "thursday": [ 31, 4, 12, 28 ],
+            "friday": [ 30, 2, 11, 27 ],
+            "saturday": [ 29, 2, 10, 26 ],
+            "sunday": [ 28, 1, 9, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 195,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/ahinora-1925.jpg',
+          title: 'Ahinora',
+          artist: 'Ivan Milev',
+          year: '1925',
+          rule: {
+            "monday": [ 28, 1, 9, 25 ],
+            "tuesday": [ 27, 29, 8, 24 ],
+            "wednesday": [ 26, 29, 7, 23 ],
+            "thursday": [ 25, 28, 6, 22 ],
+            "friday": [ 31, 4, 12, 28 ],
+            "saturday": [ 30, 2, 11, 27 ],
+            "sunday": [ 29, 2, 10, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
