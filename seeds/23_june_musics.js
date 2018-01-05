@@ -2218,6 +2218,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 124,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3552224053/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://phillniblock.bandcamp.com/album/touch-strings',
+          a_string: 'Touch Strings by Phill Niblock',
+          rule: {
+            "monday": [ 16, 19, 25, 6 ],
+            "tuesday": [ 14, 22, 24, 5 ],
+            "wednesday": [ 18, 22, 28, 9 ],
+            "thursday": [ 17, 20, 27, 7 ],
+            "saturday": [ 16, 20, 25, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 125,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4258213455/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://phillniblock.bandcamp.com/album/touch-three',
+          a_string: 'Touch Three by Phill Niblock',
+          rule: {
+            "monday": [ 16, 20, 25, 7 ],
+            "tuesday": [ 16, 19, 25, 6 ],
+            "wednesday": [ 14, 22, 24, 5 ],
+            "thursday": [ 18, 22, 28, 9 ],
+            "saturday": [ 17, 20, 27, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 126,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2701969926/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://phillniblock.bandcamp.com/album/touch-food',
+          a_string: 'Touch Food by Phill Niblock',
+          rule: {
+            "monday": [ 18, 21, 26, 8 ],
+            "tuesday": [ 17, 21, 26, 8 ],
+            "wednesday": [ 17, 20, 26, 7 ],
+            "thursday": [ 15, 23, 25, 6 ],
+            "saturday": [ 19, 23, 29, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
