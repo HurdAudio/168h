@@ -4004,6 +4004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 201,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/the-dancer.jpg',
+          title: 'The Dancer',
+          artist: 'Andre Derain',
+          year: 'c.1910',
+          rule: {
+            "monday": [ 27, 7, 17, 19 ],
+            "tuesday": [ 26, 6, 17, 18 ],
+            "wednesday": [ 25, 5, 16, 27 ],
+            "thursday": [ 31, 11, 22, 1 ],
+            "friday": [ 30, 10, 21, 1 ],
+            "saturday": [ 29, 9, 20, 31 ],
+            "sunday": [ 28, 8, 19, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 202,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/not_detected_236819.jpg',
+          title: 'Optophone I',
+          artist: 'Francis Picabia',
+          year: '1922',
+          rule: {
+            "monday": [ 28, 8, 19, 20 ],
+            "tuesday": [ 27, 7, 17, 19 ],
+            "wednesday": [ 26, 6, 17, 18 ],
+            "thursday": [ 25, 5, 16, 27 ],
+            "friday": [ 31, 11, 22, 1 ],
+            "saturday": [ 30, 10, 21, 1 ],
+            "sunday": [ 29, 9, 20, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 203,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/woman-with-blue-eyes-1908.jpg',
+          title: 'Woman with Blue Eyes',
+          artist: 'Kees van Dongen',
+          year: '1908',
+          rule: {
+            "monday": [ 30, 10, 21, 1 ],
+            "tuesday": [ 29, 9, 20, 21 ],
+            "wednesday": [ 28, 8, 18, 20 ],
+            "thursday": [ 27, 7, 18, 19 ],
+            "friday": [ 26, 6, 17, 28 ],
+            "saturday": [ 1, 12, 23, 2 ],
+            "sunday": [ 31, 11, 22, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 204,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/at-the-bar.jpg',
+          title: 'The Bar Counter',
+          artist: 'Maurice de Vlaminck',
+          year: '1900',
+          rule: {
+            "monday": [ 31, 11, 22, 2 ],
+            "tuesday": [ 30, 10, 21, 1 ],
+            "wednesday": [ 29, 9, 20, 21 ],
+            "thursday": [ 28, 8, 18, 20 ],
+            "friday": [ 27, 7, 18, 19 ],
+            "saturday": [ 26, 6, 17, 28 ],
+            "sunday": [ 1, 12, 23, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 205,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/self-portrait-10.jpg',
+          title: 'Self-portrait',
+          artist: 'Armand Henrion',
+          year: '?',
+          rule: {
+            "monday": [ 1, 12, 23, 2 ],
+            "tuesday": [ 31, 11, 22, 2 ],
+            "wednesday": [ 30, 10, 21, 1 ],
+            "thursday": [ 29, 9, 20, 21 ],
+            "friday": [ 28, 8, 18, 20 ],
+            "saturday": [ 27, 7, 18, 19 ],
+            "sunday": [ 26, 6, 17, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
