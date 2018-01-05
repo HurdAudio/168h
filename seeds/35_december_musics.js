@@ -1570,6 +1570,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 88,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=877748168/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cuneiformrecords.bandcamp.com/album/cantos-invisiveis',
+          a_string: 'Cantos Invisiveis by Sao Paulo Underground',
+          rule: {
+            "monday": [ 15, 21, 27, 2 ],
+            "tuesday": [ 19, 25, 31, 6 ],
+            "wednesday": [ 18, 24, 30, 4 ],
+            "thursday": [ 17, 23, 29, 4 ],
+            "saturday": [ 14, 22, 28, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 89,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1033402898/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://babeterror.bandcamp.com/album/ancient-mocean-2017',
+          a_string: 'Ancient M&#39;ocean (2017) by Babe, Terror',
+          rule: {
+            "monday": [ 14, 22, 28, 3 ],
+            "tuesday": [ 15, 21, 27, 2 ],
+            "wednesday": [ 19, 25, 31, 6 ],
+            "thursday": [ 18, 24, 30, 4 ],
+            "saturday": [ 17, 23, 29, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 90,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2844917765/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ironlungpv.bandcamp.com/album/iii-lp-lungs-086',
+          a_string: 'III LP (LUNGS-086) by RAKTA',
+          rule: {
+            "monday": [ 17, 23, 29, 4 ],
+            "tuesday": [ 14, 22, 28, 3 ],
+            "wednesday": [ 15, 21, 27, 2 ],
+            "thursday": [ 19, 25, 31, 6 ],
+            "saturday": [ 18, 24, 30, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
