@@ -2110,6 +2110,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 118,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'http://bandcamp.com/EmbeddedPlayer/album=3333685211/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bandcamp.for-tune.pl/album/mazurki',
+          a_string: 'Mazurki by Marcin Masecki',
+          rule: {
+            "monday": [ 18, 20, 24, 1 ],
+            "tuesday": [ 17, 19, 23, 31 ],
+            "wednesday": [ 16, 18, 22, 30 ],
+            "thursday": [ 15, 16, 21, 29 ],
+            "saturday": [ 14, 16, 20, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 119,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1835923031/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://busdriver-thumbs.bandcamp.com/album/thumbs-2',
+          a_string: 'Thumbs by Busdriver',
+          rule: {
+            "monday": [ 15, 17, 21, 29 ],
+            "tuesday": [ 19, 21, 25, 2 ],
+            "wednesday": [ 18, 20, 24, 1 ],
+            "thursday": [ 17, 19, 23, 31 ],
+            "saturday": [ 16, 17, 22, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 120,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1117381002/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://blankspell.bandcamp.com/album/4-track-demo',
+          a_string: '4-track demo by BLANK SPELL',
+          rule: {
+            "monday": [ 16, 17, 22, 30 ],
+            "tuesday": [ 15, 17, 21, 29 ],
+            "wednesday": [ 19, 21, 25, 2 ],
+            "thursday": [ 18, 20, 24, 1 ],
+            "saturday": [ 17, 19, 23, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
