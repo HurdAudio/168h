@@ -396,6 +396,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#A8FEFC',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 29,
+          user_id: 1,
+          theme: 'Ice',
+          type: 'friday',
+          src_string: '../img/january_tiles/12-cubes-ice-texture-free-hi-res.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '180%',
+          color_dark: '#354751',
+          color_medium: '#56605F',
+          color_light: '#FCFBEA',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
