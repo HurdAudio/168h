@@ -2002,6 +2002,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 112,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=890713925/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://thevitaminb12.bandcamp.com/album/4-lp-box-set-extended-play',
+          a_string: '4 LP Box Set Extended Play (上) by The Vitamin B12',
+          rule: {
+            "monday": [ 29, 6, 19, 18 ],
+            "tuesday": [ 28, 5, 18, 17 ],
+            "wednesday": [ 27, 4, 17, 16 ],
+            "thursday": [ 26, 3, 16, 15 ],
+            "saturday": [ 25, 2, 15, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 113,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1390840159/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://thevitaminb12.bandcamp.com/album/heads-volume-one-blue-bag',
+          a_string: 'Heads (Volume One) - Blue Bag by The Vitamin B12',
+          rule: {
+            "monday": [ 25, 2, 15, 14 ],
+            "tuesday": [ 29, 6, 19, 18 ],
+            "wednesday": [ 28, 5, 18, 17 ],
+            "thursday": [ 27, 4, 17, 16 ],
+            "saturday": [ 26, 3, 16, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 114,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3915313766/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://thevitaminb12.bandcamp.com/album/nedits-1',
+          a_string: 'nedits 1 by The Vitamin B12',
+          rule: {
+            "monday": [ 26, 3, 16, 15 ],
+            "tuesday": [ 25, 2, 15, 14 ],
+            "wednesday": [ 29, 6, 19, 18 ],
+            "thursday": [ 28, 5, 18, 17 ],
+            "saturday": [ 27, 4, 17, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
