@@ -256,6 +256,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FFFFFB',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 19,
+          user_id: 1,
+          theme: 'Monochromatic',
+          type: 'friday',
+          src_string: '../img/november_tiles/lion_snake_sand_Chimera-313.png',
+          repeat_value: 'no-repeat',
+          size_value: '180%',
+          color_dark: '#190914',
+          color_medium: '#2E2C31',
+          color_light: '#B9C0B9',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
