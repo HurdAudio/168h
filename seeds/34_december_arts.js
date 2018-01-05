@@ -3004,6 +3004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 151,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/22-03,BriefS.jpg',
+          title: 'Brief Stories',
+          artist: 'Charles Hargens',
+          year: '1922',
+          rule: {
+            "monday": [ 20, 1, 10, 16 ],
+            "tuesday": [ 19, 1, 20, 15 ],
+            "wednesday": [ 25, 7, 15, 21 ],
+            "thursday": [ 24, 6, 14, 20 ],
+            "friday": [ 23, 5, 13, 19 ],
+            "saturday": [ 22, 4, 12, 18 ],
+            "sunday": [ 21, 3, 11, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 152,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/41-01,PopW.jpg',
+          title: 'Popular Western',
+          artist: 'Grant Hargis',
+          year: '1941',
+          rule: {
+            "monday": [ 21, 3, 11, 17 ],
+            "tuesday": [ 20, 1, 10, 16 ],
+            "wednesday": [ 19, 1, 20, 15 ],
+            "thursday": [ 25, 7, 15, 21 ],
+            "friday": [ 24, 6, 14, 20 ],
+            "saturday": [ 23, 5, 13, 19 ],
+            "sunday": [ 22, 4, 12, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 153,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/34-08,WRoundUp.jpg',
+          title: 'Western Round-Up',
+          artist: 'R. G. Harris',
+          year: '1934',
+          rule: {
+            "monday": [ 22, 4, 12, 18 ],
+            "tuesday": [ 21, 3, 11, 17 ],
+            "wednesday": [ 20, 1, 10, 16 ],
+            "thursday": [ 19, 1, 20, 15 ],
+            "friday": [ 25, 7, 15, 21 ],
+            "saturday": [ 24, 6, 14, 20 ],
+            "sunday": [ 23, 5, 13, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 154,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/37-11,WAces.jpg',
+          title: 'Western Aces',
+          artist: 'Roy Harrison',
+          year: '1937',
+          rule: {
+            "monday": [ 24, 6, 14, 20 ],
+            "tuesday": [ 23, 5, 13, 19 ],
+            "wednesday": [ 22, 4, 12, 18 ],
+            "thursday": [ 21, 2, 11, 17 ],
+            "friday": [ 20, 2, 21, 16 ],
+            "saturday": [ 26, 8, 16, 22 ],
+            "sunday": [ 25, 7, 15, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 155,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/15-10,Recreation.jpg',
+          title: 'Recreation',
+          artist: 'Howard L. Hastings',
+          year: '1915',
+          rule: {
+            "monday": [ 25, 7, 15, 21 ],
+            "tuesday": [ 24, 6, 14, 20 ],
+            "wednesday": [ 23, 5, 13, 19 ],
+            "thursday": [ 22, 4, 12, 18 ],
+            "friday": [ 21, 2, 11, 17 ],
+            "saturday": [ 20, 2, 21, 16 ],
+            "sunday": [ 26, 8, 16, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
