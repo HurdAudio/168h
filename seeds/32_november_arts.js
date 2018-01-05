@@ -3204,6 +3204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 161,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/the-negative-way-10-1964.jpg',
+          title: 'The Negative Way #10',
+          artist: 'Paul Brach',
+          year: '1964',
+          rule: {
+            "monday": [ 29, 4, 10, 14 ],
+            "tuesday": [ 28, 3, 9, 14 ],
+            "wednesday": [ 27, 1, 8, 13 ],
+            "thursday": [ 26, 1, 7, 12 ],
+            "friday": [ 25, 30, 6, 13 ],
+            "saturday": [ 1, 6, 12, 17 ],
+            "sunday": [ 30, 5, 10, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 162,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/mirror-mirror-table-table-1964.jpg',
+          title: 'Mirror/Mirror - Table/Table',
+          artist: 'Richard Artschwager',
+          year: '1964',
+          rule: {
+            "monday": [ 30, 5, 10, 16 ],
+            "tuesday": [ 29, 4, 10, 14 ],
+            "wednesday": [ 28, 3, 9, 14 ],
+            "thursday": [ 27, 1, 8, 13 ],
+            "friday": [ 26, 1, 7, 12 ],
+            "saturday": [ 25, 30, 6, 13 ],
+            "sunday": [ 1, 6, 12, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 163,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/b11-box-b-lide-09-1964.jpg',
+          title: 'B11 Box Bólide 09',
+          artist: 'Helio Oiticica',
+          year: '1964',
+          rule: {
+            "monday": [ 1, 6, 12, 17 ],
+            "tuesday": [ 30, 5, 10, 16 ],
+            "wednesday": [ 29, 4, 10, 14 ],
+            "thursday": [ 28, 3, 9, 14 ],
+            "friday": [ 27, 1, 8, 13 ],
+            "saturday": [ 26, 1, 7, 12 ],
+            "sunday": [ 25, 30, 6, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 164,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/untitled-1965.jpg',
+          title: 'Untitled',
+          artist: 'Robert Ryman',
+          year: '1965',
+          rule: {
+            "monday": [ 25, 30, 6, 13 ],
+            "tuesday": [ 1, 6, 12, 17 ],
+            "wednesday": [ 30, 5, 10, 16 ],
+            "thursday": [ 29, 4, 10, 14 ],
+            "friday": [ 28, 3, 9, 14 ],
+            "saturday": [ 27, 1, 8, 13 ],
+            "sunday": [ 26, 1, 7, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 165,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/fountain-1965.jpg',
+          title: 'Fountain',
+          artist: 'Richard Tuttle',
+          year: '1965',
+          rule: {
+            "monday": [ 26, 1, 7, 12 ],
+            "tuesday": [ 25, 30, 6, 13 ],
+            "wednesday": [ 1, 6, 12, 17 ],
+            "thursday": [ 30, 5, 10, 16 ],
+            "friday": [ 29, 4, 10, 14 ],
+            "saturday": [ 28, 3, 9, 14 ],
+            "sunday": [ 27, 1, 8, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
