@@ -368,6 +368,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#E9EBEA',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 27,
+          user_id: 1,
+          theme: 'Glass',
+          type: 'holiday',
+          src_string: '../img/march_tiles/free-broken-glass-wallpaper-1.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '140%',
+          color_dark: '#000000',
+          color_medium: '#1C5A5E',
+          color_light: '#F7FFF8',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
