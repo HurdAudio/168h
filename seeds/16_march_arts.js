@@ -4804,6 +4804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 241,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/plow_boy_251609.jpg',
+          title: 'Plow Boy',
+          artist: 'Grandma Moses',
+          year: '1950',
+          rule: {
+            "monday": [ 28, 7, 16, 25 ],
+            "tuesday": [ 3, 12, 22, 30 ],
+            "wednesday": [ 2, 12, 22, 30 ],
+            "thursday": [ 2, 11, 19, 29 ],
+            "friday": [ 31, 10, 18, 28 ],
+            "saturday": [ 30, 9, 17, 27 ],
+            "sunday": [ 29, 8, 16, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 242,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/tree-1930.jpg',
+          title: 'Tree',
+          artist: 'Seraphine Louis',
+          year: '1930',
+          rule: {
+            "monday": [ 29, 8, 16, 26 ],
+            "tuesday": [ 28, 7, 16, 25 ],
+            "wednesday": [ 3, 12, 22, 30 ],
+            "thursday": [ 2, 12, 22, 30 ],
+            "friday": [ 2, 11, 19, 29 ],
+            "saturday": [ 31, 10, 18, 28 ],
+            "sunday": [ 30, 9, 17, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 243,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/dawn-ca-1909.jpg',
+          title: 'Dawn',
+          artist: 'Alice Boughton',
+          year: '1909',
+          rule: {
+            "monday": [ 30, 9, 17, 27 ],
+            "tuesday": [ 29, 8, 16, 26 ],
+            "wednesday": [ 28, 7, 16, 25 ],
+            "thursday": [ 3, 12, 22, 30 ],
+            "friday": [ 2, 12, 22, 30 ],
+            "saturday": [ 2, 11, 19, 29 ],
+            "sunday": [ 31, 10, 18, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 244,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/portrait-of-a-woman.jpg',
+          title: 'Portrait of a woman',
+          artist: 'Thalia Flora-Karavia',
+          year: '?',
+          rule: {
+            "monday": [ 31, 10, 18, 28 ],
+            "tuesday": [ 30, 9, 17, 27 ],
+            "wednesday": [ 29, 8, 16, 26 ],
+            "thursday": [ 28, 7, 16, 25 ],
+            "friday": [ 3, 12, 22, 30 ],
+            "saturday": [ 2, 12, 22, 30 ],
+            "sunday": [ 2, 11, 19, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 245,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/blunden-harbour-1930(1).jpg',
+          title: 'Blunden Harbour',
+          artist: 'Emily Carr',
+          year: '1930',
+          rule: {
+            "monday": [ 3, 12, 20, 30 ],
+            "tuesday": [ 1, 11, 19, 29 ],
+            "wednesday": [ 31, 10, 18, 28 ],
+            "thursday": [ 30, 9, 17, 27 ],
+            "friday": [ 29, 8, 17, 26 ],
+            "saturday": [ 4, 13, 23, 31 ],
+            "sunday": [ 3, 13, 23, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
