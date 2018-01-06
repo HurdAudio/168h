@@ -5004,6 +5004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 251,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/DSCN0669.jpg',
+          title: '9.11.01',
+          artist: 'Jack Whitten',
+          year: '2001',
+          rule: {
+            "monday": [ 12, 20, 28, 7 ],
+            "tuesday": [ 14, 24, 1, 7 ],
+            "wednesday": [ 16, 24, 3, 13 ],
+            "thursday": [ 18, 26, 22, 12 ],
+            "friday": [ 6, 14, 22, 1 ],
+            "saturday": [ 8, 16, 24, 3 ],
+            "sunday": [ 13, 18, 24, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 252,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/kehinde-wiley-st-john-630px.jpg',
+          title: 'St. John the Baptist in the Wilderness',
+          artist: 'Kehinde Wiley',
+          year: '2013',
+          rule: {
+            "monday": [ 14, 19, 25, 6 ],
+            "tuesday": [ 13, 21, 29, 8 ],
+            "wednesday": [ 15, 25, 2, 8 ],
+            "thursday": [ 17, 25, 4, 14 ],
+            "friday": [ 19, 27, 23, 13 ],
+            "saturday": [ 7, 15, 23, 2 ],
+            "sunday": [ 9, 17, 25, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 253,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/William_t_williams_trane.jpg',
+          title: 'Trane',
+          artist: 'William T. Williams',
+          year: '1969',
+          rule: {
+            "monday": [ 9, 17, 25, 4 ],
+            "tuesday": [ 14, 19, 25, 6 ],
+            "wednesday": [ 13, 21, 29, 8 ],
+            "thursday": [ 15, 25, 2, 8 ],
+            "friday": [ 17, 25, 4, 14 ],
+            "saturday": [ 19, 27, 23, 13 ],
+            "sunday": [ 7, 15, 23, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 254,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/395826f3ce5a7a15d55bdd899c3b689f.jpg',
+          title: 'Posing Beauty',
+          artist: 'Deborah Willis',
+          year: '?',
+          rule: {
+            "monday": [ 7, 15, 23, 2 ],
+            "tuesday": [ 9, 17, 25, 4 ],
+            "wednesday": [ 14, 19, 25, 6 ],
+            "thursday": [ 13, 21, 29, 8 ],
+            "friday": [ 15, 25, 2, 8 ],
+            "saturday": [ 17, 25, 4, 14 ],
+            "sunday": [ 19, 27, 23, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 255,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/To-Market.jpg',
+          title: 'To Market',
+          artist: 'Ellis Wilson',
+          year: '?',
+          rule: {
+            "monday": [ 19, 27, 23, 13 ],
+            "tuesday": [ 7, 15, 23, 2 ],
+            "wednesday": [ 9, 17, 25, 4 ],
+            "thursday": [ 14, 19, 25, 6 ],
+            "friday": [ 13, 21, 29, 8 ],
+            "saturday": [ 15, 25, 2, 8 ],
+            "sunday": [ 17, 25, 4, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
