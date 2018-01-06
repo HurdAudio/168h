@@ -9131,6 +9131,34 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 584,
+          user_id: 1,
+          name: 'Matt Wilson (drums) born 1964',
+          color: '#C9B6A8',
+          picture: './img/musicians/matt_cymbal_hat.jpg',
+          day_of: new Date ('1964-09-27T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 585,
+          user_id: 1,
+          name: 'The second coming of Jesus Christ occured on this day in 1844, as oppowed to William Miller\'s original prediction of March 21 that same year',
+          color: '#5C5C5C',
+          picture: './img/doomsday/William_Miller.jpg',
+          day_of: new Date ('1844-10-22T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
