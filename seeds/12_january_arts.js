@@ -5200,7 +5200,107 @@ exports.seed = function(knex, Promise) {
             "thursday": [ 19, 21, 25, 28 ],
             "friday": [ 21, 23, 24, 27 ],
             "saturday": [ 6, 7, 18, 10 ],
-            "sunday": [ 9, 11, 3, 23 ]
+            "sunday": [  ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 261,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/composition-25.jpg',
+          title: 'Composition 25',
+          artist: 'Stefan Sevastre',
+          year: 'xx cent.',
+          rule: {
+            "monday": [ 9, 11, 3, 23 ],
+            "tuesday": [ 11, 12, 4, 7 ],
+            "wednesday": [ 14, 15, 6, 10 ],
+            "thursday": [ 17, 19, 20, 22 ],
+            "friday": [ 19, 21, 25, 28 ],
+            "saturday": [ 21, 23, 24, 27 ],
+            "sunday": [ 6, 7, 18, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 262,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/untitled-1971-1.jpg',
+          title: 'Untitled',
+          artist: 'Moshe Kupferman',
+          year: '1971',
+          rule: {
+            "monday": [ 6, 7, 18, 10 ],
+            "tuesday": [ 9, 11, 3, 23 ],
+            "wednesday": [ 11, 12, 4, 7 ],
+            "thursday": [ 14, 15, 6, 10 ],
+            "friday": [ 17, 19, 20, 22 ],
+            "saturday": [ 19, 21, 25, 28 ],
+            "sunday": [ 21, 23, 24, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 263,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/untitled-2001.jpg',
+          title: 'Untitled',
+          artist: 'Moon Pil Shim',
+          year: '2001',
+          rule: {
+            "monday": [ 21, 23, 24, 27 ],
+            "tuesday": [ 6, 7, 18, 10 ],
+            "wednesday": [ 9, 11, 3, 23 ],
+            "thursday": [ 11, 12, 4, 7 ],
+            "friday": [ 14, 15, 6, 10 ],
+            "saturday": [ 17, 19, 20, 22 ],
+            "sunday": [ 19, 21, 25, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 264,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/greenwood-1979.jpg',
+          title: 'Greenwood',
+          artist: 'Nicholas Krushenick',
+          year: '1979',
+          rule: {
+            "monday": [ 19, 21, 25, 28 ],
+            "tuesday": [ 21, 23, 24, 27 ],
+            "wednesday": [ 6, 7, 18, 10 ],
+            "thursday": [ 9, 11, 3, 23 ],
+            "friday": [ 11, 12, 4, 7 ],
+            "saturday": [ 14, 15, 6, 10 ],
+            "sunday": [ 17, 19, 20, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 265,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/all-over-pour-painting-1969.jpg',
+          title: 'All Over Pour Painting',
+          artist: 'Ronnie Landfield',
+          year: '1969',
+          rule: {
+            "monday": [ 17, 19, 20, 22 ],
+            "tuesday": [ 19, 21, 25, 28 ],
+            "wednesday": [ 21, 23, 24, 27 ],
+            "thursday": [ 6, 7, 18, 10 ],
+            "friday": [ 9, 11, 3, 23 ],
+            "saturday": [ 11, 12, 4, 7 ],
+            "sunday": [ 14, 15, 6, 10 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
