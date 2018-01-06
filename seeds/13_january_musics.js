@@ -2758,6 +2758,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 154,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3890496986/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://xirecords.bandcamp.com/album/raw-sangudo',
+          a_string: 'Raw Sangudo by Allison Cameron',
+          rule: {
+            "monday": [ 2, 9, 10, 11 ],
+            "tuesday": [ 1, 8, 9, 10 ],
+            "wednesday": [ 31, 7, 8, 9 ],
+            "thursday": [ 30, 6, 7, 8 ],
+            "saturday": [ 29, 5, 6, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 155,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=468897966/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://gvsunme.bandcamp.com/album/return',
+          a_string: 'RETURN by GVSU New Music Ensemble',
+          rule: {
+            "monday": [ 29, 5, 6, 7 ],
+            "tuesday": [ 2, 9, 10, 11 ],
+            "wednesday": [ 1, 8, 9, 10 ],
+            "thursday": [ 31, 7, 8, 9 ],
+            "saturday": [ 30, 5, 6, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 156,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1098259600/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://battletrance.bandcamp.com/album/blade-of-love',
+          a_string: 'Blade of Love by Battle Trance',
+          rule: {
+            "monday": [ 30, 5, 6, 7 ],
+            "tuesday": [ 29, 5, 6, 7 ],
+            "wednesday": [ 2, 9, 10, 11 ],
+            "thursday": [ 1, 8, 9, 10 ],
+            "saturday": [ 31, 7, 8, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
