@@ -199,6 +199,86 @@
       vm.editTilesCurrate = editTilesCurrate;
       vm.userTilesCurratorEditorDone = userTilesCurratorEditorDone;
       vm.deleteMusicCurrate = deleteMusicCurrate;
+      vm.addNewArt = addNewArt;
+
+      function addNewArt(monthPath) {
+        let getPath = monthPath + 'byuser';
+        let monthDays = 0;
+        let min = 1;
+        let max = 6;
+        switch(monthPath) {
+          case('january_arts'):
+            monthDays = 31;
+            console.log(monthDays);
+            break;
+          case('february_arts'):
+            monthDays = 29;
+            break;
+          case('march_arts'):
+            monthDays = 31;
+            break;
+          case('april_arts'):
+            monthDays = 30;
+            break;
+          case('may_arts'):
+            monthDays = 31;
+            break;
+          case('june_arts'):
+            monthDays = 30;
+            break;
+          case('july_arts'):
+            monthDays = 31;
+            break;
+          case('august_arts'):
+            monthDays = 31;
+            break;
+          case('september_arts'):
+            monthDays = 30;
+            break;
+          case('october_arts'):
+            monthDays = 31;
+            break;
+          case('november_arts'):
+            monthDays = 30;
+            break;
+          case('december_arts'):
+            monthDays = 31;
+            break;
+          default:
+            monthDays = 30;
+        }
+        let postObj = {
+          user_id: currentUserId,
+          img_path: '',
+          title: '',
+          artist: '',
+          year: '',
+          rule: {
+            monday: artArrayRandomizer(monthDays, min, max),
+            tuesday: artArrayRandomizer(monthDays, min, max),
+            wednesday: artArrayRandomizer(monthDays, min, max),
+            thursday: artArrayRandomizer(monthDays, min, max),
+            friday: artArrayRandomizer(monthDays, min, max),
+            saturday: artArrayRandomizer(monthDays, min, max),
+            sunday: artArrayRandomizer(monthDays, min, max)
+          }
+        };
+
+        $http.get(`/${getPath}/${currentUserId}`)
+        .then(userArtsData=>{
+          let userArts = userArtsData.data;
+          if (userArts.length > 0) {
+            postObj.theme = userArts[0].theme;
+          } else {
+            postObj.theme = '';
+          }
+          $http.post(`/${monthPath}`, postObj)
+          .then(postedArtData=>{
+            let postedArt = postedArtData.data[0];
+            editArtCurrate(monthPath, postedArt.id);
+          });
+        });
+      }
 
       function deleteMusicCurrate(monthPath, musicId) {
         let userMusicCurratorEditorDiv = document.getElementById('userMusicCurratorEditorDiv');
@@ -2093,9 +2173,50 @@
         observancesManagerDone.setAttribute("style", "visibility: visible;");
       }
 
+      function purgeArtEntry(monthPath, artId) {
+        $http.delete(`/${monthPath}/${artId}`)
+        .then(()=>{
+          console.log('deleted art');
+        });
+      }
+
+      function scourTheArtsTablesForEmtpies(monthPath) {
+        let getPath = monthPath + 'byuser';
+        $http.get(`/${getPath}/${currentUserId}`)
+        .then(artTableData=>{
+          if (artTableData.data.length > 0) {
+            let empties = artTableData.data.filter(art=>{
+              return(art.img_path === '');
+            });
+            if (empties.length >0) {
+              for (let i = 0; i < empties.length; i++) {
+                purgeArtEntry(monthPath, empties[i].id);
+              }
+            }
+          }
+        });
+      }
+
+      function purgeEmptyUserArts() {
+        scourTheArtsTablesForEmtpies('january_arts');
+        scourTheArtsTablesForEmtpies('february_arts');
+        scourTheArtsTablesForEmtpies('march_arts');
+        scourTheArtsTablesForEmtpies('april_arts');
+        scourTheArtsTablesForEmtpies('may_arts');
+        scourTheArtsTablesForEmtpies('june_arts');
+        scourTheArtsTablesForEmtpies('july_arts');
+        scourTheArtsTablesForEmtpies('august_arts');
+        scourTheArtsTablesForEmtpies('september_arts');
+        scourTheArtsTablesForEmtpies('october_arts');
+        scourTheArtsTablesForEmtpies('november_arts');
+        scourTheArtsTablesForEmtpies('december_arts');
+
+      }
+
       function userArtCurratorEditorDone() {
         let userArtCurratorEditorDiv = document.getElementById('userArtCurratorEditorDiv');
         let artCurratorManagerDone = document.getElementById('artCurratorManagerDone');
+        purgeEmptyUserArts();
 
         userArtCurratorEditorDiv.setAttribute("style", "display: none;");
         artCurratorManagerDone.setAttribute("style", "visibility: visible;");
