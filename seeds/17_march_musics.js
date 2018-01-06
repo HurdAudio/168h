@@ -2542,6 +2542,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 142,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=790891236/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://volarrecords.bandcamp.com/album/susan-tv-girls-7-ep-limited-red-vinyl',
+          a_string: 'Susan - TV Girls 7&quot; EP LIMITED RED VINYL by susan',
+          rule: {
+            "monday": [ 25, 31, 6, 14 ],
+            "tuesday": [ 24, 30, 5, 13 ],
+            "wednesday": [ 23, 29, 4, 13 ],
+            "thursday": [ 21, 28, 3, 11 ],
+            "saturday": [ 21, 27, 2, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 143,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2368719112/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://retrosynthrecords.bandcamp.com/album/ladies-of-synth-volume-2',
+          a_string: 'Ladies of Synth - Volume 2 by 48 Track VA Compilation',
+          rule: {
+            "monday": [ 21, 27, 2, 10 ],
+            "tuesday": [ 25, 31, 6, 14 ],
+            "wednesday": [ 24, 30, 5, 13 ],
+            "thursday": [ 23, 29, 4, 13 ],
+            "saturday": [ 21, 28, 3, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 144,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1281820826/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://volarrecords.bandcamp.com/album/susan-never-enough-limited-blue-lp',
+          a_string: 'Susan - Never Enough LIMITED BLUE LP by Susan',
+          rule: {
+            "monday": [ 21, 28, 3, 11 ],
+            "tuesday": [ 21, 27, 2, 10 ],
+            "wednesday": [ 25, 31, 6, 14 ],
+            "thursday": [ 24, 30, 5, 13 ],
+            "saturday": [ 23, 29, 4, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
