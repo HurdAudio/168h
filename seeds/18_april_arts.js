@@ -4604,6 +4604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 231,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/lindor.jpg',
+          title: 'Francisco Lindor #12 of the Cleveland Indians',
+          artist: 'Jason Miller',
+          year: '2017',
+          rule: {
+            "monday": [ 2, 7, 13, 19 ],
+            "tuesday": [ 1, 5, 20, 18 ],
+            "wednesday": [ 30, 5, 10, 16 ],
+            "thursday": [ 29, 4, 10, 16 ],
+            "friday": [ 28, 3, 9, 15 ],
+            "saturday": [ 3, 9, 14, 21 ],
+            "sunday": [ 17, 7, 13, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 232,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/Screen-Shot-2017-03-05-at-9.31.30-PM.png',
+          title: 'Cleveland 2017 Hype Video Screenshot',
+          artist: '?',
+          year: '2017',
+          rule: {
+            "monday": [ 17, 7, 13, 20 ],
+            "tuesday": [ 2, 7, 13, 19 ],
+            "wednesday": [ 1, 5, 20, 18 ],
+            "thursday": [ 30, 5, 10, 16 ],
+            "friday": [ 29, 4, 10, 16 ],
+            "saturday": [ 28, 3, 9, 15 ],
+            "sunday": [ 3, 9, 14, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 233,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/Cleveland-Indians-Block-C-Video-Still-850x500.jpg',
+          title: 'We\'re Under Way',
+          artist: '?',
+          year: '2016',
+          rule: {
+            "monday": [ 3, 9, 14, 21 ],
+            "tuesday": [ 17, 7, 13, 20 ],
+            "wednesday": [ 2, 7, 13, 19 ],
+            "thursday": [ 1, 5, 20, 18 ],
+            "friday": [ 30, 5, 10, 16 ],
+            "saturday": [ 29, 4, 10, 16 ],
+            "sunday": [ 28, 3, 9, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 234,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/tmg-article_default_mobile.jpg',
+          title: 'Cleveland Against the World',
+          artist: 'Erik Drost',
+          year: '2016',
+          rule: {
+            "monday": [ 28, 3, 9, 15 ],
+            "tuesday": [ 3, 9, 14, 21 ],
+            "wednesday": [ 17, 7, 13, 20 ],
+            "thursday": [ 2, 7, 13, 19 ],
+            "friday": [ 1, 5, 20, 18 ],
+            "saturday": [ 30, 5, 10, 16 ],
+            "sunday": [ 29, 4, 10, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 235,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/640X400-iNDIANS-1.png',
+          title: 'Cleveland Indains',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 29, 4, 10, 16 ],
+            "tuesday": [ 28, 3, 9, 15 ],
+            "wednesday": [ 3, 9, 14, 21 ],
+            "thursday": [ 17, 7, 13, 20 ],
+            "friday": [ 2, 7, 13, 19 ],
+            "saturday": [ 1, 5, 20, 18 ],
+            "sunday": [ 30, 5, 10, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
