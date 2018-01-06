@@ -2650,6 +2650,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 148,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=699849048/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://horez.bandcamp.com/album/kurost-blqlordtesla',
+          a_string: 'KuroST.BLQlordTESLA by zeroh',
+          rule: {
+            "monday": [ 10, 4, 6, 12 ],
+            "tuesday": [ 22, 27, 29, 12 ],
+            "wednesday": [ 23, 27, 29, 4 ],
+            "thursday": [ 26, 29, 2, 6 ],
+            "saturday": [ 27, 2, 4, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 149,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'http://bandcamp.com/EmbeddedPlayer/album=244821325/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://music.thisisversis.com/album/cope-sthetic',
+          a_string: 'copeæsthetic by Versis',
+          rule: {
+            "monday": [ 27, 2, 4, 6 ],
+            "tuesday": [ 10, 4, 6, 12 ],
+            "wednesday": [ 22, 27, 29, 12 ],
+            "thursday": [ 23, 27, 29, 4 ],
+            "saturday": [ 26, 29, 2, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 150,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4184396297/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://fakefour.bandcamp.com/album/dennehy-w-beautyman-ep',
+          a_string: 'Dennehy (w/ Beautyman EP) by Serengeti',
+          rule: {
+            "monday": [ 26, 29, 2, 6 ],
+            "tuesday": [ 27, 2, 4, 6 ],
+            "wednesday": [ 10, 4, 6, 12 ],
+            "thursday": [ 22, 27, 29, 12 ],
+            "saturday": [ 23, 27, 29, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
