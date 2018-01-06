@@ -4204,6 +4204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 211,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/sawssong.jpg',
+          title: 'Saw\'s Song',
+          artist: 'Max Sauco',
+          year: '2014',
+          rule: {
+            "monday": [ 29, 9, 19, 27 ],
+            "tuesday": [ 28, 8, 18, 26 ],
+            "wednesday": [ 27, 7, 17, 25 ],
+            "thursday": [ 26, 6, 16, 24 ],
+            "friday": [ 25, 5, 15, 23 ],
+            "saturday": [ 24, 4, 14, 22 ],
+            "sunday": [ 30, 10, 20, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 212,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/8d689bb6-2898-4cf1-ae81-8e930b1ea936.jpg',
+          title: 'Out of Breath',
+          artist: 'Hakan Simsek',
+          year: '2017',
+          rule: {
+            "monday": [ 30, 10, 20, 26 ],
+            "tuesday": [ 29, 9, 19, 27 ],
+            "wednesday": [ 28, 8, 18, 26 ],
+            "thursday": [ 27, 7, 17, 25 ],
+            "friday": [ 26, 6, 16, 24 ],
+            "saturday": [ 25, 5, 15, 23 ],
+            "sunday": [ 24, 4, 14, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 213,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/a5aaea79-50c0-4665-a790-5954142a2a65.jpg',
+          title: 'Catania, Sicily, Italy',
+          artist: 'Daniel Castro Garcia',
+          year: '2017',
+          rule: {
+            "monday": [ 24, 4, 14, 22 ],
+            "tuesday": [ 30, 10, 20, 26 ],
+            "wednesday": [ 29, 9, 19, 27 ],
+            "thursday": [ 28, 8, 18, 26 ],
+            "friday": [ 27, 7, 17, 25 ],
+            "saturday": [ 26, 6, 16, 24 ],
+            "sunday": [ 25, 5, 15, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 214,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/e4f8a496-ef06-48d4-bd2f-88e8dc7c7e4b.jpg',
+          title: 'Skopje, Macedonia',
+          artist: 'Dragana Jurisic',
+          year: '?',
+          rule: {
+            "monday": [ 25, 5, 15, 23 ],
+            "tuesday": [ 24, 4, 14, 22 ],
+            "wednesday": [ 30, 10, 20, 26 ],
+            "thursday": [ 29, 9, 19, 27 ],
+            "friday": [ 28, 8, 18, 26 ],
+            "saturday": [ 27, 7, 17, 25 ],
+            "sunday": [ 26, 6, 16, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 215,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/dd8005cb-d112-41aa-b758-d9b52e8abfdc.jpg',
+          title: 'Simferopol, Crimea',
+          artist: 'Justyna Mielnikiewicz',
+          year: '2008',
+          rule: {
+            "monday": [ 26, 6, 16, 24 ],
+            "tuesday": [ 25, 5, 15, 23 ],
+            "wednesday": [ 24, 4, 14, 22 ],
+            "thursday": [ 30, 10, 20, 26 ],
+            "friday": [ 29, 9, 19, 27 ],
+            "saturday": [ 28, 8, 18, 26 ],
+            "sunday": [ 27, 7, 17, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
