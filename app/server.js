@@ -114,6 +114,8 @@ const timeblock_shares = require('./routes/timeblock_shares.js');
 const timeblock_sharesbyuser = require('./routes/timeblock_sharesbyuser.js');
 const holiday_shares = require('./routes/holiday_shares.js');
 const holiday_sharesbyuser = require('./routes/holiday_sharesbyuser.js');
+const occasions_shares = require('./routes/occasions_shares.js');
+const occasions_sharesbyuser = require('./routes/occasions_sharesbyuser.js');
 
 const port = process.env.PORT || 3007;
 
@@ -228,6 +230,8 @@ app.use(fileUpload());
  app.use('/timeblock_sharesbyuser', timeblock_sharesbyuser);
  app.use('/holiday_shares', holiday_shares);
  app.use('/holiday_sharesbyuser', holiday_sharesbyuser);
+ app.use('/occasions_shares', occasions_shares);
+ app.use('/occasions_sharesbyuser', occasions_sharesbyuser);
 
 app.get('/onthisdayinhistory/:date', (req, res, next) =>{
   let newUrl = 'http://history.muffinlabs.com/date/';
