@@ -1732,6 +1732,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 97,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3174009808/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://joekingkologbo.bandcamp.com/album/sugar-daddy',
+          a_string: 'Sugar Daddy by Joe King Kologbo &amp; The High Grace',
+          rule: {
+            "monday": [ 14, 25, 6, 10 ],
+            "tuesday": [ 13, 24, 5, 9 ],
+            "wednesday": [ 12, 23, 4, 6 ],
+            "thursday": [ 11, 22, 3, 5 ],
+            "saturday": [ 15, 26, 7, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 98,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1426588846/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://soundwayrecords.bandcamp.com/album/nigeria-rock-special-psychedelic-afro-rock-jazz-funk-in-1970s-nigeria',
+          a_string: 'Nigeria Rock Special: Psychedelic Afro-Rock &amp; Jazz Funk in 1970s Nigeria by Various Artists',
+          rule: {
+            "monday": [ 16, 27, 8, 12 ],
+            "tuesday": [ 15, 26, 7, 11 ],
+            "wednesday": [ 14, 25, 6, 10 ],
+            "thursday": [ 13, 24, 5, 7 ],
+            "saturday": [ 12, 23, 4, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 99,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=642050011/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://antibalas.bandcamp.com/album/where-the-gods-are-in-peace',
+          a_string: 'Where the Gods are in Peace by Antibalas',
+          rule: {
+            "monday": [ 12, 23, 4, 6 ],
+            "tuesday": [ 16, 27, 8, 12 ],
+            "wednesday": [ 15, 26, 7, 11 ],
+            "thursday": [ 14, 25, 6, 10 ],
+            "saturday": [ 13, 24, 5, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
