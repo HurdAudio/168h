@@ -3304,6 +3304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 166,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/sprayed-picture-1965-1(1).jpg',
+          title: 'Sprayed Picture',
+          artist: 'Charlotte Posenenske',
+          year: '1965',
+          rule: {
+            "monday": [ 27, 1, 8, 13 ],
+            "tuesday": [ 26, 1, 7, 12 ],
+            "wednesday": [ 25, 30, 6, 13 ],
+            "thursday": [ 1, 6, 12, 17 ],
+            "friday": [ 30, 5, 10, 16 ],
+            "saturday": [ 29, 4, 10, 14 ],
+            "sunday": [ 28, 3, 9, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 167,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/spazio-luce-1965.jpg',
+          title: 'Spazio Luce',
+          artist: 'Antonio Calderara',
+          year: '1965',
+          rule: {
+            "monday": [ 28, 3, 9, 14 ],
+            "tuesday": [ 27, 1, 8, 13 ],
+            "wednesday": [ 26, 1, 7, 12 ],
+            "thursday": [ 25, 30, 6, 13 ],
+            "friday": [ 1, 6, 12, 17 ],
+            "saturday": [ 30, 5, 10, 16 ],
+            "sunday": [ 29, 4, 10, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 168,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/primary-light-group-red-green-blue-1965.jpg',
+          title: 'Primary Light Group: Red, Green, Blue',
+          artist: 'Jo Baer',
+          year: '1964 - 1965',
+          rule: {
+            "monday": [ 30, 5, 11, 15 ],
+            "tuesday": [ 29, 2, 10, 15 ],
+            "wednesday": [ 28, 2, 9, 14 ],
+            "thursday": [ 27, 2, 8, 13 ],
+            "friday": [ 26, 1, 7, 14 ],
+            "saturday": [ 2, 7, 13, 18 ],
+            "sunday": [ 1, 6, 11, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 169,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/turquoise-gray-upside-down-t-1966.jpg',
+          title: 'Turquoise-Gray Upside Down T',
+          artist: 'Gianni Piacentino',
+          year: '1966',
+          rule: {
+            "monday": [ 1, 6, 11, 17 ],
+            "tuesday": [ 30, 5, 11, 15 ],
+            "wednesday": [ 29, 2, 10, 15 ],
+            "thursday": [ 28, 2, 9, 14 ],
+            "friday": [ 27, 2, 8, 13 ],
+            "saturday": [ 26, 1, 7, 14 ],
+            "sunday": [ 2, 7, 13, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 170,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/tango-tangles-1966.jpg',
+          title: 'Tango Tangles',
+          artist: 'Tony DeLap',
+          year: '1966',
+          rule: {
+            "monday": [ 2, 7, 13, 18 ],
+            "tuesday": [ 1, 6, 11, 17 ],
+            "wednesday": [ 30, 5, 11, 15 ],
+            "thursday": [ 29, 2, 10, 15 ],
+            "friday": [ 28, 2, 9, 14 ],
+            "saturday": [ 27, 2, 8, 13 ],
+            "sunday": [ 26, 1, 7, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
