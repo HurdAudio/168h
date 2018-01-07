@@ -3104,6 +3104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 156,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/Drawing.jpg',
+          title: 'Drawing',
+          artist: 'Eunice Hatfiel',
+          year: '1938',
+          rule: {
+            "monday": [ 26, 8, 16, 22 ],
+            "tuesday": [ 25, 7, 15, 21 ],
+            "wednesday": [ 24, 6, 14, 20 ],
+            "thursday": [ 23, 5, 13, 19 ],
+            "friday": [ 22, 4, 12, 18 ],
+            "saturday": [ 21, 2, 11, 17 ],
+            "sunday": [ 20, 2, 21, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 157,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/94-06,Yearbok.jpg',
+          title: 'M.I.T. Yearbook',
+          artist: 'I. B. Hazelton',
+          year: '1894',
+          rule: {
+            "monday": [ 20, 2, 21, 16 ],
+            "tuesday": [ 26, 8, 16, 22 ],
+            "wednesday": [ 25, 7, 15, 21 ],
+            "thursday": [ 24, 6, 14, 20 ],
+            "friday": [ 23, 5, 13, 19 ],
+            "saturday": [ 22, 4, 12, 18 ],
+            "sunday": [ 21, 2, 11, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 158,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/32-00,SEP.jpg',
+          title: 'Saturday Evening',
+          artist: 'Albin Henning',
+          year: '1932',
+          rule: {
+            "monday": [ 21, 2, 11, 17 ],
+            "tuesday": [ 20, 2, 21, 16 ],
+            "wednesday": [ 26, 8, 16, 22 ],
+            "thursday": [ 25, 7, 15, 21 ],
+            "friday": [ 24, 6, 14, 20 ],
+            "saturday": [ 23, 5, 13, 19 ],
+            "sunday": [ 22, 4, 12, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 159,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/29-10,OverTop.jpg',
+          title: 'Over The Top',
+          artist: 'Lawrence Herndon',
+          year: '1929',
+          rule: {
+            "monday": [ 22, 4, 12, 18 ],
+            "tuesday": [ 21, 2, 11, 17 ],
+            "wednesday": [ 20, 2, 21, 16 ],
+            "thursday": [ 26, 8, 16, 22 ],
+            "friday": [ 25, 7, 15, 21 ],
+            "saturday": [ 24, 6, 14, 20 ],
+            "sunday": [ 23, 5, 13, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 160,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/22-03-10.Adv.jpg',
+          title: 'Adventure',
+          artist: 'Colcord Heurlin',
+          year: '1922',
+          rule: {
+            "monday": [ 23, 5, 13, 19 ],
+            "tuesday": [ 22, 4, 12, 18 ],
+            "wednesday": [ 21, 2, 11, 17 ],
+            "thursday": [ 20, 2, 21, 16 ],
+            "friday": [ 26, 8, 16, 22 ],
+            "saturday": [ 25, 7, 15, 21 ],
+            "sunday": [ 24, 6, 14, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
