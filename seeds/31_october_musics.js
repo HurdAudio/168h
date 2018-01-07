@@ -1840,6 +1840,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 103,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4216975482/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://lavidaesunmus.bandcamp.com/album/un-ltimo-ultrasonido-naci-y-muri-en-barcelona-mlp',
+          a_string: 'Un Último Ultrasonido Nació Y Murió En Barcelona MLP by Barcelona',
+          rule: {
+            "monday": [ 18, 28, 8, 10 ],
+            "tuesday": [ 22, 1, 11, 14 ],
+            "wednesday": [ 21, 31, 10, 13 ],
+            "thursday": [ 20, 30, 9, 12 ],
+            "saturday": [ 19, 29, 8, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 104,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3620062917/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://heterofobiamx.bandcamp.com/album/eres-tan-guapo-3',
+          a_string: 'Eres Tan Guapo by Heterofobia',
+          rule: {
+            "monday": [ 19, 29, 8, 11 ],
+            "tuesday": [ 18, 28, 8, 10 ],
+            "wednesday": [ 22, 1, 11, 14 ],
+            "thursday": [ 21, 31, 10, 13 ],
+            "saturday": [ 20, 30, 9, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 105,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1459946767/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://erstetheketontraeger.bandcamp.com/album/ett-039-dau-yflin-drepa-drepa-ep',
+          a_string: 'ETT - 039 - DAUÐYFLIN - DREPA DREPA EP by DAUÐYFLIN',
+          rule: {
+            "monday": [ 21, 31, 10, 13 ],
+            "tuesday": [ 20, 30, 9, 12 ],
+            "wednesday": [ 19, 29, 9, 11 ],
+            "thursday": [ 23, 2, 12, 15 ],
+            "saturday": [ 22, 1, 11, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
