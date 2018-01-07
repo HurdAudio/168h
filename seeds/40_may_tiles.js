@@ -354,6 +354,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#B2CEA8',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 26,
+          user_id: 1,
+          theme: 'Greenery',
+          type: 'sunday',
+          src_string: '../img/may_tiles/Sunshine-greenery-tea-farm-good-morning.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '165%',
+          color_dark: '#001304',
+          color_medium: '#74C401',
+          color_light: '#FFFFD9',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
