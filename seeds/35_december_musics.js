@@ -1624,6 +1624,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 91,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3496206896/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://vagosagrado.bandcamp.com/album/vol-ii',
+          a_string: 'Vol. II by Vago Sagrado',
+          rule: {
+            "monday": [ 19, 25, 31, 5 ],
+            "tuesday": [ 18, 24, 30, 5 ],
+            "wednesday": [ 15, 23, 29, 4 ],
+            "thursday": [ 16, 22, 28, 3 ],
+            "saturday": [ 20, 26, 1, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 92,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2079704059/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://vagosagrado.bandcamp.com/album/alea-iacta-est',
+          a_string: 'Alea Iacta Est by Vago Sagrado',
+          rule: {
+            "monday": [ 20, 26, 1, 7 ],
+            "tuesday": [ 19, 25, 31, 5 ],
+            "wednesday": [ 18, 24, 30, 5 ],
+            "thursday": [ 15, 23, 29, 4 ],
+            "saturday": [ 16, 22, 28, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 93,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1183433253/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://vagosagrado.bandcamp.com/album/vago-sagrado',
+          a_string: 'Vago Sagrado by Vago Sagrado',
+          rule: {
+            "monday": [ 16, 22, 28, 3 ],
+            "tuesday": [ 20, 26, 1, 7 ],
+            "wednesday": [ 19, 25, 31, 5 ],
+            "thursday": [ 18, 24, 30, 5 ],
+            "saturday": [ 15, 23, 29, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
