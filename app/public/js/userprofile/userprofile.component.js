@@ -200,6 +200,496 @@
       vm.userTilesCurratorEditorDone = userTilesCurratorEditorDone;
       vm.deleteMusicCurrate = deleteMusicCurrate;
       vm.addNewArt = addNewArt;
+      vm.observancesReport = observancesReport;
+      vm.observanceReportDone = observanceReportDone;
+
+      function observanceReportDone() {
+        let reportForObservances = document.getElementById('reportForObservances');
+        let observancesManagerDone = document.getElementById('observancesManagerDone');
+
+        reportForObservances.setAttribute("style", "display: none;");
+        observancesManagerDone.setAttribute("style", "visibility: visible;");
+      }
+
+      function observancesReport() {
+        let checkDate;
+        let currentDate = new Date();
+        let reportForObservances = document.getElementById('reportForObservances');
+        let observancesManagerDone = document.getElementById('observancesManagerDone');
+        let userObservancesEditorDiv = document.getElementById('userObservancesEditorDiv');
+
+        $http.get(`/observancesbyuser/${currentUserId}`)
+        .then(observancesData=>{
+          let observances = observancesData.data;
+          if (observances.length > 0) {
+            vm.observanceReporter = [];
+            vm.observanceReporter[0] = {};
+            vm.observanceReporter[0].calendarTotal = observances.length;
+            vm.observanceReporter[0].calendarJanObservances = [];
+            vm.observanceReporter[0].calendarJanTotal = 0;
+            vm.observanceReporter[0].calendarJanOverlap = 0;
+            vm.observanceReporter[0].januaryOverlap = {};
+            vm.observanceReporter[0].calendarJanObservances = [];
+            let calendarJanObservances = observances.filter(obs=>{
+              checkDate = new Date(obs.day_of.slice(0, 10));
+              if ((!obs.is_annual) && (currentDate.getFullYear() !== checkDate.getFullYear())) {
+                if (checkDate.getMonth() === 0) {
+                  return (current.getFullYear() === checkDate.getFullYear());
+                } else {
+                  return false;
+                }
+              } else {
+                return(checkDate.getMonth() === 0);
+              }
+            });
+            vm.observanceReporter[0].calendarJan = calendarJanObservances.length;
+            for (let i = 0; i < calendarJanObservances.length; i++) {
+              checkDate = new Date(calendarJanObservances[i].day_of.slice(0, 10));
+              vm.observanceReporter[0].calendarJanObservances[i] = (calendarJanObservances[i].name);
+              if (vm.observanceReporter[0].januaryOverlap[checkDate.getDate().toString()] === undefined) {
+                vm.observanceReporter[0].januaryOverlap[checkDate.getDate().toString()] = 1;
+                ++vm.observanceReporter[0].calendarJanTotal;
+              } else {
+                ++vm.observanceReporter[0].januaryOverlap[checkDate.getDate().toString()];
+                ++vm.observanceReporter[0].calendarJanOverlap;
+              }
+            }
+            vm.observanceReporter[0].calendarJanObservances = vm.observanceReporter[0].calendarJanObservances.sort((a, b)=>{
+              if (a.toLowerCase() < b.toLowerCase()) {
+                return -1;
+              } else if (a.toLowerCase() > b.toLowerCase()) {
+                return 1;
+              } else {
+                return 0;
+              }
+            });
+            vm.observanceReporter[0].calendarFebObservances = [];
+            vm.observanceReporter[0].calendarFebTotal = 0;
+            vm.observanceReporter[0].calendarFebOverlap = 0;
+            vm.observanceReporter[0].februaryOverlap = {};
+            vm.observanceReporter[0].calendarFebObservances = [];
+            let calendarFebObservances = observances.filter(obs=>{
+              checkDate = new Date(obs.day_of.slice(0, 10));
+              if ((!obs.is_annual) && (currentDate.getFullYear() !== checkDate.getFullYear())) {
+                if (checkDate.getMonth() === 1) {
+                  return (current.getFullYear() === checkDate.getFullYear());
+                } else {
+                  return false;
+                }
+              } else {
+                return(checkDate.getMonth() === 1);
+              }
+            });
+            vm.observanceReporter[0].calendarFeb = calendarFebObservances.length;
+            for (let i = 0; i < calendarFebObservances.length; i++) {
+              checkDate = new Date(calendarFebObservances[i].day_of.slice(0, 10));
+              vm.observanceReporter[0].calendarFebObservances[i] = (calendarFebObservances[i].name);
+              if (vm.observanceReporter[0].februaryOverlap[checkDate.getDate().toString()] === undefined) {
+                vm.observanceReporter[0].februaryOverlap[checkDate.getDate().toString()] = 1;
+                ++vm.observanceReporter[0].calendarFebTotal;
+              } else {
+                ++vm.observanceReporter[0].februaryOverlap[checkDate.getDate().toString()];
+                ++vm.observanceReporter[0].calendarFebOverlap;
+              }
+            }
+            vm.observanceReporter[0].calendarFebObservances = vm.observanceReporter[0].calendarFebObservances.sort((a, b)=>{
+              if (a.toLowerCase() < b.toLowerCase()) {
+                return -1;
+              } else if (a.toLowerCase() > b.toLowerCase()) {
+                return 1;
+              } else {
+                return 0;
+              }
+            });
+            vm.observanceReporter[0].calendarMarObservances = [];
+            vm.observanceReporter[0].calendarMarTotal = 0;
+            vm.observanceReporter[0].calendarMarOverlap = 0;
+            vm.observanceReporter[0].marchOverlap = {};
+            vm.observanceReporter[0].calendarMarObservances = [];
+            let calendarMarObservances = observances.filter(obs=>{
+              checkDate = new Date(obs.day_of.slice(0, 10));
+              if ((!obs.is_annual) && (currentDate.getFullYear() !== checkDate.getFullYear())) {
+                if (checkDate.getMonth() === 2) {
+                  return (current.getFullYear() === checkDate.getFullYear());
+                } else {
+                  return false;
+                }
+              } else {
+                return(checkDate.getMonth() === 2);
+              }
+            });
+            vm.observanceReporter[0].calendarMar = calendarMarObservances.length;
+            for (let i = 0; i < calendarMarObservances.length; i++) {
+              checkDate = new Date(calendarMarObservances[i].day_of.slice(0, 10));
+              vm.observanceReporter[0].calendarMarObservances[i] = (calendarMarObservances[i].name);
+              if (vm.observanceReporter[0].marchOverlap[checkDate.getDate().toString()] === undefined) {
+                vm.observanceReporter[0].marchOverlap[checkDate.getDate().toString()] = 1;
+                ++vm.observanceReporter[0].calendarMarTotal;
+              } else {
+                ++vm.observanceReporter[0].marchOverlap[checkDate.getDate().toString()];
+                ++vm.observanceReporter[0].calendarMarOverlap;
+              }
+            }
+            vm.observanceReporter[0].calendarMarObservances = vm.observanceReporter[0].calendarMarObservances.sort((a, b)=>{
+              if (a.toLowerCase() < b.toLowerCase()) {
+                return -1;
+              } else if (a.toLowerCase() > b.toLowerCase()) {
+                return 1;
+              } else {
+                return 0;
+              }
+            });
+            vm.observanceReporter[0].calendarAprObservances = [];
+            vm.observanceReporter[0].calendarAprTotal = 0;
+            vm.observanceReporter[0].calendarAprOverlap = 0;
+            vm.observanceReporter[0].aprilOverlap = {};
+            vm.observanceReporter[0].calendarAprObservances = [];
+            let calendarAprObservances = observances.filter(obs=>{
+              checkDate = new Date(obs.day_of.slice(0, 10));
+              if ((!obs.is_annual) && (currentDate.getFullYear() !== checkDate.getFullYear())) {
+                if (checkDate.getMonth() === 3) {
+                  return (current.getFullYear() === checkDate.getFullYear());
+                } else {
+                  return false;
+                }
+              } else {
+                return(checkDate.getMonth() === 3);
+              }
+            });
+            vm.observanceReporter[0].calendarApr = calendarAprObservances.length;
+            for (let i = 0; i < calendarAprObservances.length; i++) {
+              checkDate = new Date(calendarAprObservances[i].day_of.slice(0, 10));
+              vm.observanceReporter[0].calendarAprObservances[i] = (calendarAprObservances[i].name);
+              if (vm.observanceReporter[0].aprilOverlap[checkDate.getDate().toString()] === undefined) {
+                vm.observanceReporter[0].aprilOverlap[checkDate.getDate().toString()] = 1;
+                ++vm.observanceReporter[0].calendarAprTotal;
+              } else {
+                ++vm.observanceReporter[0].aprilOverlap[checkDate.getDate().toString()];
+                ++vm.observanceReporter[0].calendarAprOverlap;
+              }
+            }
+            vm.observanceReporter[0].calendarAprObservances = vm.observanceReporter[0].calendarAprObservances.sort((a, b)=>{
+              if (a.toLowerCase() < b.toLowerCase()) {
+                return -1;
+              } else if (a.toLowerCase() > b.toLowerCase()) {
+                return 1;
+              } else {
+                return 0;
+              }
+            });
+            vm.observanceReporter[0].calendarMayObservances = [];
+            vm.observanceReporter[0].calendarMayTotal = 0;
+            vm.observanceReporter[0].calendarMayOverlap = 0;
+            vm.observanceReporter[0].mayOverlap = {};
+            vm.observanceReporter[0].calendarMayObservances = [];
+            let calendarMayObservances = observances.filter(obs=>{
+              checkDate = new Date(obs.day_of.slice(0, 10));
+              if ((!obs.is_annual) && (currentDate.getFullYear() !== checkDate.getFullYear())) {
+                if (checkDate.getMonth() === 4) {
+                  return (current.getFullYear() === checkDate.getFullYear());
+                } else {
+                  return false;
+                }
+              } else {
+                return(checkDate.getMonth() === 4);
+              }
+            });
+            vm.observanceReporter[0].calendarMay = calendarMayObservances.length;
+            for (let i = 0; i < calendarMayObservances.length; i++) {
+              checkDate = new Date(calendarMayObservances[i].day_of.slice(0, 10));
+              vm.observanceReporter[0].calendarMayObservances[i] = (calendarMayObservances[i].name);
+              if (vm.observanceReporter[0].mayOverlap[checkDate.getDate().toString()] === undefined) {
+                vm.observanceReporter[0].mayOverlap[checkDate.getDate().toString()] = 1;
+                ++vm.observanceReporter[0].calendarMayTotal;
+              } else {
+                ++vm.observanceReporter[0].mayOverlap[checkDate.getDate().toString()];
+                ++vm.observanceReporter[0].calendarMayOverlap;
+              }
+            }
+            vm.observanceReporter[0].calendarMayObservances = vm.observanceReporter[0].calendarMayObservances.sort((a, b)=>{
+              if (a.toLowerCase() < b.toLowerCase()) {
+                return -1;
+              } else if (a.toLowerCase() > b.toLowerCase()) {
+                return 1;
+              } else {
+                return 0;
+              }
+            });
+            vm.observanceReporter[0].calendarJunObservances = [];
+            vm.observanceReporter[0].calendarJunTotal = 0;
+            vm.observanceReporter[0].calendarJunOverlap = 0;
+            vm.observanceReporter[0].juneOverlap = {};
+            vm.observanceReporter[0].calendarJunObservances = [];
+            let calendarJunObservances = observances.filter(obs=>{
+              checkDate = new Date(obs.day_of.slice(0, 10));
+              if ((!obs.is_annual) && (currentDate.getFullYear() !== checkDate.getFullYear())) {
+                if (checkDate.getMonth() === 5) {
+                  return (current.getFullYear() === checkDate.getFullYear());
+                } else {
+                  return false;
+                }
+              } else {
+                return(checkDate.getMonth() === 5);
+              }
+            });
+            vm.observanceReporter[0].calendarJun = calendarJunObservances.length;
+            for (let i = 0; i < calendarJunObservances.length; i++) {
+              checkDate = new Date(calendarJunObservances[i].day_of.slice(0, 10));
+              vm.observanceReporter[0].calendarJunObservances[i] = (calendarJunObservances[i].name);
+              if (vm.observanceReporter[0].juneOverlap[checkDate.getDate().toString()] === undefined) {
+                vm.observanceReporter[0].juneOverlap[checkDate.getDate().toString()] = 1;
+                ++vm.observanceReporter[0].calendarJunTotal;
+              } else {
+                ++vm.observanceReporter[0].juneOverlap[checkDate.getDate().toString()];
+                ++vm.observanceReporter[0].calendarJunOverlap;
+              }
+            }
+            vm.observanceReporter[0].calendarJunObservances = vm.observanceReporter[0].calendarJunObservances.sort((a, b)=>{
+              if (a.toLowerCase() < b.toLowerCase()) {
+                return -1;
+              } else if (a.toLowerCase() > b.toLowerCase()) {
+                return 1;
+              } else {
+                return 0;
+              }
+            });
+            vm.observanceReporter[0].calendarJulObservances = [];
+            vm.observanceReporter[0].calendarJulTotal = 0;
+            vm.observanceReporter[0].calendarJulOverlap = 0;
+            vm.observanceReporter[0].julyOverlap = {};
+            vm.observanceReporter[0].calendarJulObservances = [];
+            let calendarJulObservances = observances.filter(obs=>{
+              checkDate = new Date(obs.day_of.slice(0, 10));
+              if ((!obs.is_annual) && (currentDate.getFullYear() !== checkDate.getFullYear())) {
+                if (checkDate.getMonth() === 6) {
+                  return (current.getFullYear() === checkDate.getFullYear());
+                } else {
+                  return false;
+                }
+              } else {
+                return(checkDate.getMonth() === 6);
+              }
+            });
+            vm.observanceReporter[0].calendarJul = calendarJulObservances.length;
+            for (let i = 0; i < calendarJulObservances.length; i++) {
+              checkDate = new Date(calendarJulObservances[i].day_of.slice(0, 10));
+              vm.observanceReporter[0].calendarJulObservances[i] = (calendarJulObservances[i].name);
+              if (vm.observanceReporter[0].julyOverlap[checkDate.getDate().toString()] === undefined) {
+                vm.observanceReporter[0].julyOverlap[checkDate.getDate().toString()] = 1;
+                ++vm.observanceReporter[0].calendarJulTotal;
+              } else {
+                ++vm.observanceReporter[0].julyOverlap[checkDate.getDate().toString()];
+                ++vm.observanceReporter[0].calendarJulOverlap;
+              }
+            }
+            vm.observanceReporter[0].calendarJulObservances = vm.observanceReporter[0].calendarJulObservances.sort((a, b)=>{
+              if (a.toLowerCase() < b.toLowerCase()) {
+                return -1;
+              } else if (a.toLowerCase() > b.toLowerCase()) {
+                return 1;
+              } else {
+                return 0;
+              }
+            });
+            vm.observanceReporter[0].calendarAugObservances = [];
+            vm.observanceReporter[0].calendarAugTotal = 0;
+            vm.observanceReporter[0].calendarAugOverlap = 0;
+            vm.observanceReporter[0].augustOverlap = {};
+            vm.observanceReporter[0].calendarAugObservances = [];
+            let calendarAugObservances = observances.filter(obs=>{
+              checkDate = new Date(obs.day_of.slice(0, 10));
+              if ((!obs.is_annual) && (currentDate.getFullYear() !== checkDate.getFullYear())) {
+                if (checkDate.getMonth() === 7) {
+                  return (current.getFullYear() === checkDate.getFullYear());
+                } else {
+                  return false;
+                }
+              } else {
+                return(checkDate.getMonth() === 7);
+              }
+            });
+            vm.observanceReporter[0].calendarAug = calendarAugObservances.length;
+            for (let i = 0; i < calendarAugObservances.length; i++) {
+              checkDate = new Date(calendarAugObservances[i].day_of.slice(0, 10));
+              vm.observanceReporter[0].calendarAugObservances[i] = (calendarAugObservances[i].name);
+              if (vm.observanceReporter[0].augustOverlap[checkDate.getDate().toString()] === undefined) {
+                vm.observanceReporter[0].augustOverlap[checkDate.getDate().toString()] = 1;
+                ++vm.observanceReporter[0].calendarAugTotal;
+              } else {
+                ++vm.observanceReporter[0].augustOverlap[checkDate.getDate().toString()];
+                ++vm.observanceReporter[0].calendarAugOverlap;
+              }
+            }
+            vm.observanceReporter[0].calendarAugObservances = vm.observanceReporter[0].calendarAugObservances.sort((a, b)=>{
+              if (a.toLowerCase() < b.toLowerCase()) {
+                return -1;
+              } else if (a.toLowerCase() > b.toLowerCase()) {
+                return 1;
+              } else {
+                return 0;
+              }
+            });
+            vm.observanceReporter[0].calendarSepObservances = [];
+            vm.observanceReporter[0].calendarSepTotal = 0;
+            vm.observanceReporter[0].calendarSepOverlap = 0;
+            vm.observanceReporter[0].septemberOverlap = {};
+            vm.observanceReporter[0].calendarSepObservances = [];
+            let calendarSepObservances = observances.filter(obs=>{
+              checkDate = new Date(obs.day_of.slice(0, 10));
+              if ((!obs.is_annual) && (currentDate.getFullYear() !== checkDate.getFullYear())) {
+                if (checkDate.getMonth() === 8) {
+                  return (current.getFullYear() === checkDate.getFullYear());
+                } else {
+                  return false;
+                }
+              } else {
+                return(checkDate.getMonth() === 8);
+              }
+            });
+            vm.observanceReporter[0].calendarSep = calendarSepObservances.length;
+            for (let i = 0; i < calendarSepObservances.length; i++) {
+              checkDate = new Date(calendarSepObservances[i].day_of.slice(0, 10));
+              vm.observanceReporter[0].calendarSepObservances[i] = (calendarSepObservances[i].name);
+              if (vm.observanceReporter[0].septemberOverlap[checkDate.getDate().toString()] === undefined) {
+                vm.observanceReporter[0].septemberOverlap[checkDate.getDate().toString()] = 1;
+                ++vm.observanceReporter[0].calendarSepTotal;
+              } else {
+                ++vm.observanceReporter[0].septemberOverlap[checkDate.getDate().toString()];
+                ++vm.observanceReporter[0].calendarSepOverlap;
+              }
+            }
+            vm.observanceReporter[0].calendarSepObservances = vm.observanceReporter[0].calendarSepObservances.sort((a, b)=>{
+              if (a.toLowerCase() < b.toLowerCase()) {
+                return -1;
+              } else if (a.toLowerCase() > b.toLowerCase()) {
+                return 1;
+              } else {
+                return 0;
+              }
+            });
+            vm.observanceReporter[0].calendarOctObservances = [];
+            vm.observanceReporter[0].calendarOctTotal = 0;
+            vm.observanceReporter[0].calendarOctOverlap = 0;
+            vm.observanceReporter[0].octoberOverlap = {};
+            vm.observanceReporter[0].calendarOctObservances = [];
+            let calendarOctObservances = observances.filter(obs=>{
+              checkDate = new Date(obs.day_of.slice(0, 10));
+              if ((!obs.is_annual) && (currentDate.getFullYear() !== checkDate.getFullYear())) {
+                if (checkDate.getMonth() === 9) {
+                  return (current.getFullYear() === checkDate.getFullYear());
+                } else {
+                  return false;
+                }
+              } else {
+                return(checkDate.getMonth() === 9);
+              }
+            });
+            vm.observanceReporter[0].calendarOct = calendarOctObservances.length;
+            for (let i = 0; i < calendarOctObservances.length; i++) {
+              checkDate = new Date(calendarOctObservances[i].day_of.slice(0, 10));
+              vm.observanceReporter[0].calendarOctObservances[i] = (calendarOctObservances[i].name);
+              if (vm.observanceReporter[0].octoberOverlap[checkDate.getDate().toString()] === undefined) {
+                vm.observanceReporter[0].octoberOverlap[checkDate.getDate().toString()] = 1;
+                ++vm.observanceReporter[0].calendarOctTotal;
+              } else {
+                ++vm.observanceReporter[0].octoberOverlap[checkDate.getDate().toString()];
+                ++vm.observanceReporter[0].calendarOctOverlap;
+              }
+            }
+            vm.observanceReporter[0].calendarOctObservances = vm.observanceReporter[0].calendarOctObservances.sort((a, b)=>{
+              if (a.toLowerCase() < b.toLowerCase()) {
+                return -1;
+              } else if (a.toLowerCase() > b.toLowerCase()) {
+                return 1;
+              } else {
+                return 0;
+              }
+            });
+            vm.observanceReporter[0].calendarNovObservances = [];
+            vm.observanceReporter[0].calendarNovTotal = 0;
+            vm.observanceReporter[0].calendarNovOverlap = 0;
+            vm.observanceReporter[0].novemberOverlap = {};
+            vm.observanceReporter[0].calendarNovObservances = [];
+            let calendarNovObservances = observances.filter(obs=>{
+              checkDate = new Date(obs.day_of.slice(0, 10));
+              if ((!obs.is_annual) && (currentDate.getFullYear() !== checkDate.getFullYear())) {
+                if (checkDate.getMonth() === 10) {
+                  return (current.getFullYear() === checkDate.getFullYear());
+                } else {
+                  return false;
+                }
+              } else {
+                return(checkDate.getMonth() === 10);
+              }
+            });
+            vm.observanceReporter[0].calendarNov = calendarNovObservances.length;
+            for (let i = 0; i < calendarNovObservances.length; i++) {
+              checkDate = new Date(calendarNovObservances[i].day_of.slice(0, 10));
+              vm.observanceReporter[0].calendarNovObservances[i] = (calendarNovObservances[i].name);
+              if (vm.observanceReporter[0].novemberOverlap[checkDate.getDate().toString()] === undefined) {
+                vm.observanceReporter[0].novemberOverlap[checkDate.getDate().toString()] = 1;
+                ++vm.observanceReporter[0].calendarNovTotal;
+              } else {
+                ++vm.observanceReporter[0].novemberOverlap[checkDate.getDate().toString()];
+                ++vm.observanceReporter[0].calendarNovOverlap;
+              }
+            }
+            vm.observanceReporter[0].calendarNovObservances = vm.observanceReporter[0].calendarNovObservances.sort((a, b)=>{
+              if (a.toLowerCase() < b.toLowerCase()) {
+                return -1;
+              } else if (a.toLowerCase() > b.toLowerCase()) {
+                return 1;
+              } else {
+                return 0;
+              }
+            });
+            vm.observanceReporter[0].calendarDecObservances = [];
+            vm.observanceReporter[0].calendarDecTotal = 0;
+            vm.observanceReporter[0].calendarDecOverlap = 0;
+            vm.observanceReporter[0].decemberOverlap = {};
+            vm.observanceReporter[0].calendarDecObservances = [];
+            let calendarDecObservances = observances.filter(obs=>{
+              checkDate = new Date(obs.day_of.slice(0, 10));
+              if ((!obs.is_annual) && (currentDate.getFullYear() !== checkDate.getFullYear())) {
+                if (checkDate.getMonth() === 11) {
+                  return (current.getFullYear() === checkDate.getFullYear());
+                } else {
+                  return false;
+                }
+              } else {
+                return(checkDate.getMonth() === 11);
+              }
+            });
+            vm.observanceReporter[0].calendarDec = calendarDecObservances.length;
+            for (let i = 0; i < calendarDecObservances.length; i++) {
+              checkDate = new Date(calendarDecObservances[i].day_of.slice(0, 10));
+              vm.observanceReporter[0].calendarDecObservances[i] = (calendarDecObservances[i].name);
+              if (vm.observanceReporter[0].decemberOverlap[checkDate.getDate().toString()] === undefined) {
+                vm.observanceReporter[0].decemberOverlap[checkDate.getDate().toString()] = 1;
+                ++vm.observanceReporter[0].calendarDecTotal;
+              } else {
+                ++vm.observanceReporter[0].decemberOverlap[checkDate.getDate().toString()];
+                ++vm.observanceReporter[0].calendarDecOverlap;
+              }
+            }
+            vm.observanceReporter[0].calendarDecObservances = vm.observanceReporter[0].calendarDecObservances.sort((a, b)=>{
+              if (a.toLowerCase() < b.toLowerCase()) {
+                return -1;
+              } else if (a.toLowerCase() > b.toLowerCase()) {
+                return 1;
+              } else {
+                return 0;
+              }
+            });
+          } else {
+            observanceReportDone();
+          }
+        });
+
+        reportForObservances.setAttribute("style", "display: initial;");
+        observancesManagerDone.setAttribute("style", "visibility: hidden;");
+        userObservancesEditorDiv.setAttribute("style", "display: none;");
+      }
 
       function addNewArt(monthPath) {
         let getPath = monthPath + 'byuser';

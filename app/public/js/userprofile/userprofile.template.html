@@ -4499,6 +4499,49 @@
 
     </div>
 
+    <div id="reportForObservances">
+      <div id="observanceReportBar">
+        <a href="" class="btn" id="observancesReportDone" ng-click="$ctrl.observanceReportDone()">done</a>
+        <h1>Observances Report</h1>
+      </div>
+      <div id="observancesReportBody">
+        <main ng-repeat="observe in $ctrl.observanceReporter | orderBy : $ctrl.sortBy">
+          <div class="reporter">
+            <h2>Calendar Year: {{observe.calendarTotal}} total observances</h2>
+            <h2>January:</h2> <p>{{observe.calendarJan}} Observances - {{observe.calendarJanObservances}}</p>
+            <p>{{observe.calendarJanOverlap}} overlapping -  {{observe.calendarJanTotal}} days total.</p>
+            <h2>February:</h2> <p>{{observe.calendarFeb}} Observances - {{observe.calendarFebObservances}}</p>
+            <p>{{observe.calendarFebOverlap}} overlapping - {{observe.calendarFebTotal}} days total</p>
+            <h2>March:</h2> <p>{{observe.calendarMar}} Observances - {{observe.calendarMarObservances}}</p>
+            <p>{{observe.calendarMarOverlap}} overlapping - {{observe.calendarMarTotal}} days total</p>
+            <h2>April:</h2> <p>{{observe.calendarApr}} Observances - {{observe.calendarAprObservances}}</p>
+            <p>{{observe.calendarAprOverlap}} overlapping - {{observe.calendarAprTotal}} days total</p>
+            <h2>May:</h2> <p>{{observe.calendarMay}} Observances - {{observe.calendarMayObservances}}</p>
+            <p>{{observe.calendarMayOverlap}} overlapping - {{observe.calendarMayTotal}} days total</p>
+            <h2>June:</h2> <p>{{observe.calendarJun}} Observances - {{observe.calendarJunObservances}}</p>
+            <p>{{observe.calendarJunOverlap}} overlapping - {{observe.calendarJunTotal}} days total</p>
+            <h2>July:</h2> <p>{{observe.calendarJul}} Observances - {{observe.calendarJulObservances}}</p>
+            <p>{{observe.calendarJulOverlap}} overlapping - {{observe.calendarJulTotal}} days total</p>
+            <h2>August:</h2> <p>{{observe.calendarAug}} Observances - {{observe.calendarAugObservances}}</p>
+            <p>{{observe.calendarAugOverlap}} overlapping - {{observe.calendarAugTotal}} days total</p>
+            <h2>September:</h2> <p>{{observe.calendarSep}} Observances - {{observe.calendarSepObservances}}</p>
+            <p>{{observe.calendarSepOverlap}} overlapping - {{observe.calendarSepTotal}} days total</p>
+            <h2>October:</h2> <p>{{observe.calendarOct}} Observances - {{observe.calendarOctObservances}}</p>
+            <p>{{observe.calendarOctOverlap}} overlapping - {{observe.calendarOctTotal}} days total</p>
+            <h2>November:</h2> <p>{{observe.calendarNov}} Observances - {{observe.calendarNovObservances}}</p>
+            <p>{{observe.calendarNovOverlap}} overlapping - {{observe.calendarNovTotal}} days total</p>
+            <h2>December:</h2> <p>{{observe.calendarDec}} Observances - {{observe.calendarDecObservances}}</p>
+            <p>{{observe.calendarDecOverlap}} overlapping - {{observe.calendarDecTotal}} days total</p>
+
+
+          </div>
+
+        </main>
+
+      </div>
+
+    </div>
+
     <div id="userObservancesEditorDiv">
       <div id="userObservancesEditorBar">
         <a href="" class="btn" id="userObservancesEditorDoneButton" ng-click="$ctrl.userObservancesEditorDone()">done</a>

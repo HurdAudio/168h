@@ -3042,6 +3042,34 @@ footer img {
   margin-top: 0.2em;
 }
 
+#observanceReportBar {
+  font-family: 'Asul', serif;
+  font-size: 18px
+  background: #BC3608;
+  background-color: -webkit-linear-gradient(-135deg, #BC3608, #F0F1F6);
+  background: -o-linear-gradient(-135deg, #BC3608, #F0F1F6);
+  background: -moz-linear-gradient(-135deg, #BC3608, #F0F1F6);
+  background: linear-gradient(-135deg, #BC3608, #F0F1F6);
+  border-radius: 5px;
+  margin: 0;
+  padding:0;
+  height: 3.8em;
+  top: 0%;
+  opacity: 1;
+}
+
+#observanceReportBar h1 {
+  margin-left: 2em;
+  padding-top: 0.4em;
+}
+
+
+#observanceReportBar a {
+  float:right;
+  margin-right: 1.1em;
+  margin-top: 0.2em;
+}
+
 #occasionsReportBar {
   font-family: 'Asul', serif;
   font-size: 18px
@@ -3185,11 +3213,11 @@ footer img {
 #userObservancesEditorBar {
   font-family: 'Asul', serif;
   font-size: 18px
-  background: #110514;
-  background-color: -webkit-linear-gradient(-135deg, #110514, #FBFBF3);
-  background: -o-linear-gradient(-135deg, #110514, #FBFBF3);
-  background: -moz-linear-gradient(-135deg, #110514, #FBFBF3);
-  background: linear-gradient(-135deg, #110514, #FBFBF3);
+  background: #BC3608;
+  background-color: -webkit-linear-gradient(-135deg, #BC3608, #F0F1F6);
+  background: -o-linear-gradient(-135deg, #BC3608, #F0F1F6);
+  background: -moz-linear-gradient(-135deg, #BC3608, #F0F1F6);
+  background: linear-gradient(-135deg, #BC3608, #F0F1F6);
   border-radius: 5px;
   margin: 0;
   padding:0;
@@ -4844,6 +4872,10 @@ footer img {
 }
 
 #reportForBlocktypes {
+  display: none;
+}
+
+#reportForObservances {
   display: none;
 }
 
