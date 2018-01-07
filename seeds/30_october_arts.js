@@ -3504,6 +3504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 176,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_ksssrpost_0036.jpg',
+          title: 'Exhibition of works by Vladimir Mayakovsky',
+          artist: 'A.Gan',
+          year: '1931',
+          rule: {
+            "monday": [ 30, 10, 21, 25 ],
+            "tuesday": [ 29, 9, 20, 24 ],
+            "wednesday": [ 28, 8, 19, 23 ],
+            "thursday": [ 27, 7, 18, 22 ],
+            "friday": [ 26, 6, 7, 21 ],
+            "saturday": [ 4, 5, 16, 20 ],
+            "sunday": [ 31, 11, 22, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 177,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_ksssrpost_0034.jpg',
+          title: 'Hit! the enemy by a cultural revolution',
+          artist: '?',
+          year: '1930',
+          rule: {
+            "monday": [ 31, 11, 22, 26 ],
+            "tuesday": [ 30, 10, 21, 25 ],
+            "wednesday": [ 29, 9, 20, 24 ],
+            "thursday": [ 28, 8, 19, 23 ],
+            "friday": [ 27, 7, 18, 22 ],
+            "saturday": [ 26, 6, 7, 21 ],
+            "sunday": [ 4, 5, 16, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 178,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_parenthoodsovpost_00020.jpg',
+          title: 'Thank you beloved Stalin for the joyful childhood',
+          artist: 'V. Govorkov',
+          year: '1936',
+          rule: {
+            "monday": [ 4, 5, 16, 20 ],
+            "tuesday": [ 31, 11, 22, 26 ],
+            "wednesday": [ 30, 10, 21, 25 ],
+            "thursday": [ 29, 9, 20, 24 ],
+            "friday": [ 28, 8, 19, 23 ],
+            "saturday": [ 27, 7, 18, 22 ],
+            "sunday": [ 26, 6, 7, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 179,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_parenthoodsovpost_00014.jpg',
+          title: 'A.S. Pushkin 100 years since the death 1837-1937',
+          artist: 'I.Buev, B.Iordanskyi',
+          year: '1936',
+          rule: {
+            "monday": [ 26, 6, 7, 21 ],
+            "tuesday": [ 4, 5, 16, 20 ],
+            "wednesday": [ 31, 11, 22, 26 ],
+            "thursday": [ 30, 10, 21, 25 ],
+            "friday": [ 29, 9, 20, 24 ],
+            "saturday": [ 28, 8, 19, 23 ],
+            "sunday": [ 27, 7, 18, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 180,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_parenthoodsovpost_00012.jpg',
+          title: 'An illiterate child is a shame of a mother',
+          artist: 'I.Gromitsky',
+          year: '1930',
+          rule: {
+            "monday": [ 27, 7, 18, 22 ],
+            "tuesday": [ 26, 6, 7, 21 ],
+            "wednesday": [ 4, 5, 16, 20 ],
+            "thursday": [ 31, 11, 22, 26 ],
+            "friday": [ 30, 10, 21, 25 ],
+            "saturday": [ 29, 9, 20, 24 ],
+            "sunday": [ 28, 8, 19, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
