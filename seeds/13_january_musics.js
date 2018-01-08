@@ -2812,6 +2812,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 157,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2567506056/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://subrosalabel.bandcamp.com/album/last-pieces',
+          a_string: 'Last Pieces by Morton Feldman',
+          rule: {
+            "monday": [ 31, 7, 8, 9 ],
+            "tuesday": [ 30, 5, 6, 7 ],
+            "wednesday": [ 29, 5, 6, 7 ],
+            "thursday": [ 2, 9, 10, 11 ],
+            "saturday": [ 1, 8, 9, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 158,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=545554295/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://subrosalabel.bandcamp.com/album/triadic-memories',
+          a_string: 'Triadic Memories by Morton Feldman',
+          rule: {
+            "monday": [ 1, 8, 9, 10 ],
+            "tuesday": [ 31, 7, 8, 9 ],
+            "wednesday": [ 30, 5, 6, 7 ],
+            "thursday": [ 29, 5, 6, 7 ],
+            "saturday": [ 2, 9, 10, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 159,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4063326569/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://saltern.bandcamp.com/album/clarinet-and-string-quartet',
+          a_string: 'Clarinet and String Quartet by Morton Feldman',
+          rule: {
+            "monday": [ 2, 9, 10, 11 ],
+            "tuesday": [ 1, 8, 9, 10 ],
+            "wednesday": [ 31, 7, 8, 9 ],
+            "thursday": [ 30, 5, 6, 7 ],
+            "saturday": [ 29, 5, 6, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
