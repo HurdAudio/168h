@@ -4104,6 +4104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 206,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/assia-1937.jpg',
+          title: 'Assia',
+          artist: 'Charles Despiau',
+          year: '1937',
+          rule: {
+            "monday": [ 26, 6, 17, 28 ],
+            "tuesday": [ 1, 12, 23, 2 ],
+            "wednesday": [ 31, 11, 22, 2 ],
+            "thursday": [ 30, 10, 21, 1 ],
+            "friday": [ 29, 9, 20, 21 ],
+            "saturday": [ 28, 8, 18, 20 ],
+            "sunday": [ 27, 7, 18, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 207,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/lines-meeting-1932.jpg',
+          title: 'Lines Meeting',
+          artist: 'Pierre Dubreuil',
+          year: '1932',
+          rule: {
+            "monday": [ 27, 7, 18, 19 ],
+            "tuesday": [ 26, 6, 17, 28 ],
+            "wednesday": [ 1, 12, 23, 2 ],
+            "thursday": [ 31, 11, 22, 2 ],
+            "friday": [ 30, 10, 21, 1 ],
+            "saturday": [ 29, 9, 20, 21 ],
+            "sunday": [ 28, 8, 18, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 208,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/bust-de-jeune-fille-1925.jpg',
+          title: 'Bust de jeune fille',
+          artist: 'Michel Simonidy',
+          year: '1925',
+          rule: {
+            "monday": [ 28, 8, 18, 20 ],
+            "tuesday": [ 27, 7, 18, 19 ],
+            "wednesday": [ 26, 6, 17, 28 ],
+            "thursday": [ 1, 12, 23, 2 ],
+            "friday": [ 31, 11, 22, 2 ],
+            "saturday": [ 30, 10, 21, 1 ],
+            "sunday": [ 29, 9, 20, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 209,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/chambas-bruma-matinale.jpg',
+          title: 'Brume Matinale',
+          artist: 'Paul Émile Chabas',
+          year: '?',
+          rule: {
+            "monday": [ 29, 9, 20, 21 ],
+            "tuesday": [ 28, 8, 18, 20 ],
+            "wednesday": [ 27, 7, 18, 19 ],
+            "thursday": [ 26, 6, 17, 28 ],
+            "friday": [ 1, 12, 23, 2 ],
+            "saturday": [ 31, 11, 22, 2 ],
+            "sunday": [ 30, 10, 21, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 210,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/harvesting-of-buckwheat-in-britain.jpg',
+          title: 'Harvesting of buckwheat in Britain',
+          artist: 'Georges Lacombe ',
+          year: '1895',
+          rule: {
+            "monday": [ 31, 11, 22, 2 ],
+            "tuesday": [ 30, 10, 21, 22 ],
+            "wednesday": [ 29, 9, 19, 21 ],
+            "thursday": [ 28, 8, 19, 20 ],
+            "friday": [ 27, 7, 18, 29 ],
+            "saturday": [ 2, 13, 24, 3 ],
+            "sunday": [ 1, 12, 23, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
