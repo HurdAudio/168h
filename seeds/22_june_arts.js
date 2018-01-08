@@ -4304,6 +4304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 216,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/Torbjørn-Rødland-Apple-2006-Collection-FRAC-Nord-Pas-de-Calais-France-1024x818.jpg',
+          title: 'Apple',
+          artist: 'Torbjørn Rødland',
+          year: '2006',
+          rule: {
+            "monday": [ 27, 7, 17, 25 ],
+            "tuesday": [ 26, 6, 16, 24 ],
+            "wednesday": [ 25, 5, 15, 23 ],
+            "thursday": [ 24, 4, 14, 22 ],
+            "friday": [ 30, 10, 20, 26 ],
+            "saturday": [ 29, 9, 19, 27 ],
+            "sunday": [ 28, 8, 18, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 217,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/Milky-Way-Photo-Vincent-Ferrane-031A4809F.jpg',
+          title: 'Milky Way',
+          artist: 'Vincent Ferrané',
+          year: '?',
+          rule: {
+            "monday": [ 29, 9, 19, 27 ],
+            "tuesday": [ 28, 8, 18, 26 ],
+            "wednesday": [ 27, 7, 17, 25 ],
+            "thursday": [ 26, 6, 16, 24 ],
+            "friday": [ 25, 5, 15, 23 ],
+            "saturday": [ 1, 11, 21, 27 ],
+            "sunday": [ 30, 10, 20, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 218,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/beth-back_crop.jpg',
+          title: 'Inside the Spider',
+          artist: 'Suzie Howell',
+          year: '?',
+          rule: {
+            "monday": [ 30, 10, 20, 28 ],
+            "tuesday": [ 29, 9, 19, 27 ],
+            "wednesday": [ 28, 8, 18, 26 ],
+            "thursday": [ 27, 7, 17, 25 ],
+            "friday": [ 26, 6, 16, 24 ],
+            "saturday": [ 25, 5, 15, 23 ],
+            "sunday": [ 1, 11, 21, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 219,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/Press-VivianeSassen-Roxane-II-2-copy.jpg',
+          title: 'Roxane II',
+          artist: 'Viviane Sassen',
+          year: '?',
+          rule: {
+            "monday": [ 1, 11, 21, 27 ],
+            "tuesday": [ 30, 10, 20, 28 ],
+            "wednesday": [ 29, 9, 19, 27 ],
+            "thursday": [ 28, 8, 18, 26 ],
+            "friday": [ 27, 7, 17, 25 ],
+            "saturday": [ 26, 6, 16, 24 ],
+            "sunday": [ 25, 5, 15, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 220,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/10_Shur_cmyk-1024x807.jpg',
+          title: 'Super Extra Natural!',
+          artist: 'Emily Shur',
+          year: '?',
+          rule: {
+            "monday": [ 25, 5, 15, 23 ],
+            "tuesday": [ 1, 11, 21, 27 ],
+            "wednesday": [ 30, 10, 20, 28 ],
+            "thursday": [ 29, 9, 19, 27 ],
+            "friday": [ 28, 8, 18, 26 ],
+            "saturday": [ 27, 7, 17, 25 ],
+            "sunday": [ 26, 6, 16, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
