@@ -5304,6 +5304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 266,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/field-of-crosses-red-black-1996.jpg',
+          title: 'Field of Crosses (Red & Black)',
+          artist: 'Silviu Oravitzan',
+          year: '1986',
+          rule: {
+            "monday": [ 15, 16, 7, 11 ],
+            "tuesday": [ 18, 20, 21, 23 ],
+            "wednesday": [ 20, 22, 26, 29 ],
+            "thursday": [ 22, 24, 25, 28 ],
+            "friday": [ 7, 8, 19, 11 ],
+            "saturday": [ 10, 12, 4, 24 ],
+            "sunday": [ 12, 13, 5, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 267,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/spreadout-ron-kitaj-1986.jpg',
+          title: 'Spreadout Ron Kitaj',
+          artist: 'Frank Bowling',
+          year: '1984 - 1986',
+          rule: {
+            "monday": [ 12, 13, 5, 8 ],
+            "tuesday": [ 15, 16, 7, 11 ],
+            "wednesday": [ 18, 20, 21, 23 ],
+            "thursday": [ 20, 22, 26, 29 ],
+            "friday": [ 22, 24, 25, 28 ],
+            "saturday": [ 7, 8, 19, 11 ],
+            "sunday": [ 10, 12, 4, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 268,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/the-passing-through-ii-1980.jpg',
+          title: 'The Passing Through II',
+          artist: 'Eduardo Nery',
+          year: '1980',
+          rule: {
+            "monday": [ 10, 12, 4, 24 ],
+            "tuesday": [ 12, 13, 5, 8 ],
+            "wednesday": [ 15, 16, 7, 11 ],
+            "thursday": [ 18, 20, 21, 23 ],
+            "friday": [ 20, 22, 26, 29 ],
+            "saturday": [ 22, 24, 25, 28 ],
+            "sunday": [ 7, 8, 19, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 269,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/arianna-pitagora-1987.jpg',
+          title: 'Arianna & Pitagora',
+          artist: 'Luciano Bartolini',
+          year: '1987',
+          rule: {
+            "monday": [ 7, 8, 19, 11 ],
+            "tuesday": [ 10, 12, 4, 24 ],
+            "wednesday": [ 12, 13, 5, 8 ],
+            "thursday": [ 15, 16, 7, 11 ],
+            "friday": [ 18, 20, 21, 23 ],
+            "saturday": [ 20, 22, 26, 29 ],
+            "sunday": [ 22, 24, 25, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 270,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/landscape-at-eforie-1971.jpg',
+          title: 'Landscape at Eforie',
+          artist: 'Vasile Dobrian',
+          year: '1971',
+          rule: {
+            "monday": [ 22, 24, 25, 28 ],
+            "tuesday": [ 7, 8, 19, 11 ],
+            "wednesday": [ 10, 12, 4, 24 ],
+            "thursday": [ 12, 13, 5, 8 ],
+            "friday": [ 15, 16, 7, 11 ],
+            "saturday": [ 18, 20, 21, 23 ],
+            "sunday": [ 20, 22, 26, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
