@@ -2164,6 +2164,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 121,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1101430676/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://larkingrimm.bandcamp.com/album/chasing-an-illusion-2',
+          a_string: 'Chasing an Illusion by Larkin Grimm',
+          rule: {
+            "monday": [ 17, 19, 23, 31 ],
+            "tuesday": [ 16, 17, 22, 30 ],
+            "wednesday": [ 15, 17, 21, 29 ],
+            "thursday": [ 19, 21, 25, 2 ],
+            "saturday": [ 18, 20, 24, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 122,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1876571167/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cuddlemagic.bandcamp.com/album/ashes-axis',
+          a_string: 'Ashes/Axis by Cuddle Magic',
+          rule: {
+            "monday": [ 18, 20, 24, 1 ],
+            "tuesday": [ 17, 19, 23, 31 ],
+            "wednesday": [ 16, 17, 22, 30 ],
+            "thursday": [ 15, 17, 21, 29 ],
+            "saturday": [ 19, 21, 25, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 123,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1698642337/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://pcworship.bandcamp.com/album/buried-wish',
+          a_string: 'Buried Wish by PC Worship',
+          rule: {
+            "monday": [ 19, 21, 25, 2 ],
+            "tuesday": [ 18, 20, 24, 1 ],
+            "wednesday": [ 17, 19, 23, 31 ],
+            "thursday": [ 16, 17, 22, 30 ],
+            "saturday": [ 15, 17, 21, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
