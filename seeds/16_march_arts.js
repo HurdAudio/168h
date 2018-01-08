@@ -4904,6 +4904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 246,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/bailly-self-portrait-1.jpg',
+          title: 'Self-portrait',
+          artist: 'Alice Bailly',
+          year: '1917',
+          rule: {
+            "monday": [ 3, 13, 23, 31 ],
+            "tuesday": [ 3, 12, 20, 30 ],
+            "wednesday": [ 1, 11, 19, 29 ],
+            "thursday": [ 31, 10, 18, 28 ],
+            "friday": [ 30, 9, 17, 27 ],
+            "saturday": [ 29, 8, 17, 26 ],
+            "sunday": [ 4, 13, 23, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 247,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/twee-bomen-olieverf-op-doek-1910.jpg',
+          title: 'Twee bomen, olieverf op doek',
+          artist: 'Jacoba van Heemskerck',
+          year: '1910',
+          rule: {
+            "monday": [ 4, 13, 23, 31 ],
+            "tuesday": [ 3, 13, 23, 31 ],
+            "wednesday": [ 3, 12, 20, 30 ],
+            "thursday": [ 1, 11, 19, 29 ],
+            "friday": [ 31, 10, 18, 28 ],
+            "saturday": [ 30, 9, 17, 27 ],
+            "sunday": [ 29, 8, 17, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 248,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/jawlensky-and-werefkin-1908(1).jpg',
+          title: 'Jawlensky and Werefkin',
+          artist: 'Gabriele Munter',
+          year: '1908',
+          rule: {
+            "monday": [ 29, 8, 17, 26 ],
+            "tuesday": [ 4, 13, 23, 31 ],
+            "wednesday": [ 3, 13, 23, 31 ],
+            "thursday": [ 3, 12, 20, 30 ],
+            "friday": [ 1, 11, 19, 29 ],
+            "saturday": [ 31, 10, 18, 28 ],
+            "sunday": [ 30, 9, 17, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 249,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/abstract-painting-1914.jpg',
+          title: 'Abstract Painting',
+          artist: 'Vanessa Bell',
+          year: '1914',
+          rule: {
+            "monday": [ 30, 9, 17, 27 ],
+            "tuesday": [ 29, 8, 17, 26 ],
+            "wednesday": [ 4, 13, 23, 31 ],
+            "thursday": [ 3, 13, 23, 31 ],
+            "friday": [ 3, 12, 20, 30 ],
+            "saturday": [ 1, 11, 19, 29 ],
+            "sunday": [ 31, 10, 18, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 250,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/three-female-figures-1910.jpg',
+          title: 'Three Female Figures',
+          artist: 'Aleksandra Ekster',
+          year: '1910',
+          rule: {
+            "monday": [ 31, 10, 18, 28 ],
+            "tuesday": [ 30, 9, 17, 27 ],
+            "wednesday": [ 29, 8, 17, 26 ],
+            "thursday": [ 4, 13, 23, 31 ],
+            "friday": [ 3, 13, 23, 31 ],
+            "saturday": [ 3, 12, 20, 30 ],
+            "sunday": [ 1, 11, 19, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
