@@ -3904,6 +3904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 196,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/composition-i-still-life-1916.jpg',
+          title: 'Composition I (Still life)',
+          artist: 'Theo van Doesburg',
+          year: '1916',
+          rule: {
+            "monday": [ 30, 3, 11, 27 ],
+            "tuesday": [ 29, 2, 10, 26 ],
+            "wednesday": [ 28, 30, 9, 25 ],
+            "thursday": [ 27, 30, 8, 24 ],
+            "friday": [ 26, 29, 7, 23 ],
+            "saturday": [ 1, 5, 13, 29 ],
+            "sunday": [ 31, 3, 12, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 197,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/grasshopper-in-front-a-house-of-cards-1913.jpg',
+          title: 'Grasshopper in front a House of Cards',
+          artist: 'Heorhiy Narbut',
+          year: '1913',
+          rule: {
+            "monday": [ 31, 3, 12, 28 ],
+            "tuesday": [ 30, 3, 11, 27 ],
+            "wednesday": [ 29, 2, 10, 26 ],
+            "thursday": [ 28, 30, 9, 25 ],
+            "friday": [ 27, 30, 8, 24 ],
+            "saturday": [ 26, 29, 7, 23 ],
+            "sunday": [ 1, 5, 13, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 198,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/still-life-with-checked-tablecloth-1915.jpg',
+          title: 'Still Life with Checked Tablecloth',
+          artist: 'Juan Gris',
+          year: '1915',
+          rule: {
+            "monday": [ 1, 5, 13, 29 ],
+            "tuesday": [ 31, 3, 12, 28 ],
+            "wednesday": [ 30, 3, 11, 27 ],
+            "thursday": [ 29, 2, 10, 26 ],
+            "friday": [ 28, 30, 9, 25 ],
+            "saturday": [ 27, 30, 8, 24 ],
+            "sunday": [ 26, 29, 7, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 199,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/rendezvous-1939.jpg',
+          title: 'Rendezvous',
+          artist: 'Conroy Maddox',
+          year: '1939',
+          rule: {
+            "monday": [ 26, 29, 7, 23 ],
+            "tuesday": [ 1, 5, 13, 29 ],
+            "wednesday": [ 31, 3, 12, 28 ],
+            "thursday": [ 30, 3, 11, 27 ],
+            "friday": [ 29, 2, 10, 26 ],
+            "saturday": [ 28, 30, 9, 25 ],
+            "sunday": [ 27, 30, 8, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 200,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/figures-in-a-landscape.jpg',
+          title: 'Figures in a Landscape',
+          artist: 'Max Weber',
+          year: '1911',
+          rule: {
+            "monday": [ 27, 30, 8, 24 ],
+            "tuesday": [ 26, 29, 7, 23 ],
+            "wednesday": [ 1, 5, 13, 29 ],
+            "thursday": [ 31, 3, 12, 28 ],
+            "friday": [ 30, 3, 11, 27 ],
+            "saturday": [ 29, 2, 10, 26 ],
+            "sunday": [ 28, 30, 9, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
