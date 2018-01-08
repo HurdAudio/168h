@@ -3704,6 +3704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 186,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/double-captain-shit-and-the-legend-of-the-black-stars-1997.jpg',
+          title: 'Double Captain Shit and the Legend of the Black Stars',
+          artist: 'Chris Ofili',
+          year: '1997',
+          rule: {
+            "monday": [ 23, 29, 17, 25 ],
+            "tuesday": [ 22, 28, 16, 23 ],
+            "wednesday": [ 28, 4, 22, 30 ],
+            "thursday": [ 27, 3, 21, 29 ],
+            "friday": [ 26, 2, 20, 28 ],
+            "saturday": [ 25, 1, 19, 27 ],
+            "sunday": [ 24, 30, 18, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 187,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/inner-structure-no-5-1955.jpg',
+          title: 'Inner Structure no. 5',
+          artist: 'Kazuo Nakamura',
+          year: '1955',
+          rule: {
+            "monday": [ 24, 30, 18, 26 ],
+            "tuesday": [ 23, 29, 17, 25 ],
+            "wednesday": [ 22, 28, 16, 23 ],
+            "thursday": [ 28, 4, 22, 30 ],
+            "friday": [ 27, 3, 21, 29 ],
+            "saturday": [ 26, 2, 20, 28 ],
+            "sunday": [ 25, 1, 19, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 188,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/untitled-1980.jpg',
+          title: 'Untitled',
+          artist: 'Giuseppe Santomaso',
+          year: '1980',
+          rule: {
+            "monday": [ 25, 1, 19, 27 ],
+            "tuesday": [ 24, 30, 18, 26 ],
+            "wednesday": [ 23, 29, 17, 25 ],
+            "thursday": [ 22, 28, 16, 23 ],
+            "friday": [ 28, 4, 22, 30 ],
+            "saturday": [ 27, 3, 21, 29 ],
+            "sunday": [ 26, 2, 20, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 189,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/lebanon-2007.jpg',
+          title: 'Lebanon',
+          artist: 'John Hoyland',
+          year: '2007',
+          rule: {
+            "monday": [ 27, 3, 21, 29 ],
+            "tuesday": [ 26, 2, 20, 28 ],
+            "wednesday": [ 25, 1, 19, 27 ],
+            "thursday": [ 24, 30, 18, 26 ],
+            "friday": [ 23, 29, 17, 24 ],
+            "saturday": [ 29, 5, 23, 1 ],
+            "sunday": [ 28, 4, 22, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 190,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/carne-vegetal-1948.jpg',
+          title: 'Carne vegetal',
+          artist: 'Marcelino Vespeira',
+          year: '1948',
+          rule: {
+            "monday": [ 28, 4, 22, 30 ],
+            "tuesday": [ 27, 3, 21, 29 ],
+            "wednesday": [ 26, 2, 20, 28 ],
+            "thursday": [ 25, 1, 19, 27 ],
+            "friday": [ 24, 30, 18, 26 ],
+            "saturday": [ 23, 29, 17, 24 ],
+            "sunday": [ 29, 5, 23, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
