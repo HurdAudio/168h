@@ -2272,6 +2272,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 127,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1997461071/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://quietestrecords.bandcamp.com/album/the-tape-works-pt1',
+          a_string: 'The Tape Works Pt1 by Red on maroon',
+          rule: {
+            "monday": [ 19, 23, 29, 10 ],
+            "tuesday": [ 18, 21, 26, 8 ],
+            "wednesday": [ 17, 21, 26, 8 ],
+            "thursday": [ 17, 20, 26, 7 ],
+            "saturday": [ 15, 23, 25, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 128,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3030048139/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://quietestrecords.bandcamp.com/album/the-keeper-of-lost-souls',
+          a_string: 'The keeper of lost souls. by Quietest Records',
+          rule: {
+            "monday": [ 15, 23, 25, 6 ],
+            "tuesday": [ 19, 23, 29, 10 ],
+            "wednesday": [ 18, 21, 26, 8 ],
+            "thursday": [ 17, 21, 26, 8 ],
+            "saturday": [ 17, 20, 26, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 129,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3424011459/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://quietestrecords.bandcamp.com/album/a-life-reinvented',
+          a_string: 'A life reinvented by Quietest Records',
+          rule: {
+            "monday": [ 17, 20, 26, 7 ],
+            "tuesday": [ 15, 23, 25, 6 ],
+            "wednesday": [ 19, 23, 29, 10 ],
+            "thursday": [ 18, 21, 26, 8 ],
+            "saturday": [ 17, 21, 26, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
