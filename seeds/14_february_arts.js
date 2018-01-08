@@ -5104,6 +5104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 256,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/6a00d83451b2c969e20167666c5209970b.jpg',
+          title: 'Guarded View',
+          artist: 'Fred Wilson',
+          year: '1991',
+          rule: {
+            "monday": [ 17, 25, 4, 14 ],
+            "tuesday": [ 19, 27, 23, 13 ],
+            "wednesday": [ 7, 15, 23, 2 ],
+            "thursday": [ 9, 17, 25, 4 ],
+            "friday": [ 14, 19, 25, 6 ],
+            "saturday": [ 13, 21, 29, 8 ],
+            "sunday": [ 15, 25, 2, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 257,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/artstuff.jpg',
+          title: 'Lynching',
+          artist: 'John Woodrow Wilson',
+          year: '1952',
+          rule: {
+            "monday": [ 15, 25, 2, 8 ],
+            "tuesday": [ 17, 25, 4, 14 ],
+            "wednesday": [ 19, 27, 23, 13 ],
+            "thursday": [ 7, 15, 23, 2 ],
+            "friday": [ 9, 17, 25, 4 ],
+            "saturday": [ 14, 19, 25, 6 ],
+            "sunday": [ 13, 21, 29, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 258,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/593502.jpg',
+          title: 'African Woman',
+          artist: 'Beulah Woodard',
+          year: '?',
+          rule: {
+            "monday": [ 13, 21, 29, 8 ],
+            "tuesday": [ 15, 25, 2, 8 ],
+            "wednesday": [ 17, 25, 4, 14 ],
+            "thursday": [ 19, 27, 23, 13 ],
+            "friday": [ 7, 15, 23, 2 ],
+            "saturday": [ 9, 17, 25, 4 ],
+            "sunday": [ 14, 19, 25, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 259,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/001_hw_dig_cropped_custom-9a6c4fd44ddc27ed6a1f9d9c3f5db64ae51b697f-s900-c85.jpg',
+          title: 'Amistad',
+          artist: 'Hale Woodruff',
+          year: '1938',
+          rule: {
+            "monday": [ 15, 20, 26, 7 ],
+            "tuesday": [ 14, 22, 1, 9 ],
+            "wednesday": [ 16, 26, 3, 9 ],
+            "thursday": [ 18, 26, 5, 15 ],
+            "friday": [ 20, 28, 24, 14 ],
+            "saturday": [ 8, 16, 24, 3 ],
+            "sunday": [ 10, 18, 26, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 260,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/H0132-L17286915.jpg',
+          title: 'Teddy Edwards',
+          artist: 'Richard Wyatt Jr.',
+          year: '1991',
+          rule: {
+            "monday": [ 10, 18, 26, 5 ],
+            "tuesday": [ 15, 20, 26, 7 ],
+            "wednesday": [ 14, 22, 1, 9 ],
+            "thursday": [ 16, 26, 3, 9 ],
+            "friday": [ 18, 26, 5, 15 ],
+            "saturday": [ 20, 28, 24, 14 ],
+            "sunday": [ 8, 16, 24, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
