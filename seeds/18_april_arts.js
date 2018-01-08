@@ -4704,6 +4704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 236,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/USATSI_8518249-1021x580.jpg',
+          title: 'New York Mets',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 30, 5, 10, 16 ],
+            "tuesday": [ 29, 4, 10, 16 ],
+            "wednesday": [ 28, 3, 9, 15 ],
+            "thursday": [ 3, 9, 14, 21 ],
+            "friday": [ 17, 7, 13, 20 ],
+            "saturday": [ 2, 7, 13, 19 ],
+            "sunday": [ 1, 5, 20, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 237,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/GettyImages-142807062.jpg',
+          title: 'Citi Field in New York City',
+          artist: 'Nick Laham',
+          year: '2017',
+          rule: {
+            "monday": [ 1, 5, 20, 18 ],
+            "tuesday": [ 30, 5, 10, 16 ],
+            "wednesday": [ 29, 4, 10, 16 ],
+            "thursday": [ 28, 3, 9, 15 ],
+            "friday": [ 3, 9, 14, 21 ],
+            "saturday": [ 17, 7, 13, 20 ],
+            "sunday": [ 2, 7, 13, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 238,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/848091742-new-york-mets-v-atlanta-braves.jpg.jpg',
+          title: 'New York Mets rebuild must wait until the pitching depth is gone',
+          artist: '?',
+          year: '2017',
+          rule: {
+            "monday": [ 3, 8, 14, 20 ],
+            "tuesday": [ 2, 6, 21, 19 ],
+            "wednesday": [ 1, 6, 11, 17 ],
+            "thursday": [ 30, 5, 11, 17 ],
+            "friday": [ 29, 4, 10, 16 ],
+            "saturday": [ 4, 10, 15, 22 ],
+            "sunday": [ 18, 8, 14, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 239,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/mets-balloons-new-york-mets-balloons-2__24933.1477753603.386.513.gif',
+          title: 'New York Mets Balloon',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 18, 8, 14, 21 ],
+            "tuesday": [ 3, 8, 14, 20 ],
+            "wednesday": [ 2, 6, 21, 19 ],
+            "thursday": [ 1, 6, 11, 17 ],
+            "friday": [ 30, 5, 11, 17 ],
+            "saturday": [ 29, 4, 10, 16 ],
+            "sunday": [ 4, 10, 15, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 240,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/gettyimages-609579824-1.jpg',
+          title: 'Jose Reyes #7 of the New York Mets jogs to the dugout before the game against the Atlanta Braves at Citi Field on September 21, 2016 in New York City',
+          artist: 'Al Bello',
+          year: '2016',
+          rule: {
+            "monday": [ 4, 10, 15, 22 ],
+            "tuesday": [ 18, 8, 14, 21 ],
+            "wednesday": [ 3, 8, 14, 20 ],
+            "thursday": [ 2, 6, 21, 19 ],
+            "friday": [ 1, 6, 11, 17 ],
+            "saturday": [ 30, 5, 11, 17 ],
+            "sunday": [ 29, 4, 10, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
