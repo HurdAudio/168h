@@ -2704,6 +2704,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 151,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=375699269/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://albertayler.bandcamp.com/album/spiritual-unity-and-new-spiritual-unity-50th-anniversary-expanded-edition',
+          a_string: 'Spiritual Unity AND NEW Spiritual Unity 50th Anniversary Expanded Edition by Albert Ayler',
+          rule: {
+            "monday": [ 23, 27, 29, 4 ],
+            "tuesday": [ 26, 29, 2, 6 ],
+            "wednesday": [ 27, 2, 4, 6 ],
+            "thursday": [ 10, 4, 6, 12 ],
+            "saturday": [ 22, 27, 29, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 152,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3527524853/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://trostrecords.bandcamp.com/album/baby-talk',
+          a_string: 'Baby Talk by James Blood Ulmer &amp; The Thing',
+          rule: {
+            "monday": [ 22, 27, 29, 12 ],
+            "tuesday": [ 23, 27, 29, 4 ],
+            "wednesday": [ 26, 29, 2, 6 ],
+            "thursday": [ 27, 2, 4, 6 ],
+            "saturday": [ 10, 4, 6, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 153,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2101907054/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jisarecords.bandcamp.com/album/black-heroes',
+          a_string: 'Black Heroes by Tete Mbambisa',
+          rule: {
+            "monday": [ 10, 4, 6, 12 ],
+            "tuesday": [ 22, 27, 29, 12 ],
+            "wednesday": [ 23, 27, 29, 4 ],
+            "thursday": [ 26, 29, 2, 6 ],
+            "saturday": [ 27, 2, 4, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
