@@ -9159,6 +9159,34 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 586,
+          user_id: 1,
+          name: 'Georgi Plekhanov (founder of the social-democratic movement in Russia) born in 1856',
+          color: '#363636',
+          picture: './img/dissent/georgiplekhanov.jpeg',
+          day_of: new Date ('1856-11-29T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 587,
+          user_id: 1,
+          name: 'The second coming of Jesus happened on this day in 1844 according to the never-wrong prophecy of William Miller',
+          color: '#434343',
+          picture: './img/doomsday/WilliamMiller.jpg',
+          day_of: new Date ('1844-03-21T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {

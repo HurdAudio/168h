@@ -7031,7 +7031,21 @@ footer img {
   background: -moz-linear-gradient(-135deg, #22ac44, #abdada);
   background: linear-gradient(-135deg, #22ac44, #abdada);
   border-radius: 5px;
-  padding: 1vmin;
+  padding: 0.5vmin;
+  padding-left: 1.5vmin;
+}
+
+#commentsBar {
+  font-family: 'Asul', serif;
+  font-size: 18px
+  background: #22ac44;
+  background-color: -webkit-linear-gradient(135deg, #22ac44, #abdada);
+  background: -o-linear-gradient(135deg, #22ac44, #abdada);
+  background: -moz-linear-gradient(135deg, #22ac44, #abdada);
+  background: linear-gradient(135deg, #22ac44, #abdada);
+  border-radius: 5px;
+  height: 3em;
+  padding-left: 2vmin;
 }
 
 
