@@ -12,7 +12,9 @@ exports.seed = function(knex, Promise) {
           hashed_password: '$2a$12$zlJZuGFGcqgLQyy/nVtoQeafv47g8dNTGTJL/x7EmSbPSiFLi.aMS',
           is_admin: true,
           user_avatar_url: 'https://media.licdn.com/media/AAEAAQAAAAAAAAf8AAAAJGMwZDYyMzc2LTAzOGEtNGYwOS1iMDViLTFlYjAyYjYzODIyMQ.jpg',
-          associates: {},
+          associates: {
+            "friends": []
+          },
           security: {
             "key": "nYeYs~_OHOXrL_XZ8IK3i8",
             "value": "PFIQefgqVYZPdaJcy09nVT"

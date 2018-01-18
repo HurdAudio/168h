@@ -7014,12 +7014,12 @@ footer img {
 }
 
 #messagesSpace h3 {
-  float: right;
-  margin-right: 22vmin;
+  margin: 1vmin 1vmin 1vmin 4vmin;
 }
 
 #messagesSpace p {
-  margin: 0 2vmin 0 3vmin;
+  margin: 4vmin 8vmin 0 2vmin;
+  float: right;
 }
 
 #messageBar {

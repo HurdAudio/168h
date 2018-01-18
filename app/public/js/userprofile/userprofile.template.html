@@ -3880,18 +3880,21 @@
       <div id="messageBar">
         <h1>Messages:</h1>
       </div>
-      <img src="./img/march/st-mary-magdalene-1650.jpg">
-      <h3>From: Devin</h3>
-      <p>You forgot to order the milk crate magazine racks for the half bathroom garage again.</p>
-      <a href=""><p>comment</p></a>
-      <div id="commentsBar">
+      <main ng-repeat="message in $ctrl.userMessages | orderBy : $ctrl.sortBy">
+        <img src="{{message.senderImg}}">
+        <p>From: {{message.senderName}} on {{message.cleanDate}}</p>
+        <h3>{{message.message}}</h3>
+        <a href=""><h3>comment</h3></a>
+        <div id="commentsBar">
 
-        <h1>Comments:</h1>
-      </div>
-      <img src="./img/january/landscape-at-eforie-1971.jpg"><h3>From: Admins</h3>
-      <p>Too lactose intolerant to call it a "milk" crate</p><br>
+          <h1>Comments:</h1>
+        </div>
+        <img src="./img/january/landscape-at-eforie-1971.jpg"><h3>From: Admins</h3>
+        <p>Too lactose intolerant to call it a "milk" crate</p><br>
+      </main>
 
     </div>
+
 
   </div>
   <div id="secondaryEditing" class="pure-u-1-3">

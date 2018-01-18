@@ -8,7 +8,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 1,
           user_id: 1,
-          to_user_id: null,
+          to_user_id: 1,
           message: '168h - We are all time travellers at present.',
           public: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),

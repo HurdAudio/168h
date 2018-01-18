@@ -11449,6 +11449,52 @@
 
       }
 
+      function getProfileImageAndName(userMessage, index) {
+        $http.get(`/users/${userMessage.user_id}`)
+        .then(messageUserData=>{
+          let messageUser = messageUserData.data;
+          console.log(messageUser);
+          vm.userMessages[index].senderImg = messageUser.user_avatar_url;
+          vm.userMessages[index].senderName = messageUser.name;
+        });
+      }
+
+      function retrieveUserMessages() {
+        $http.get(`/users/${currentUserId}`)
+        .then(userData=>{
+          let user = userData.data;
+          $http.get('/messages')
+          .then(allMessagesData=>{
+            let allMessages = allMessagesData.data;
+            let directMessages = allMessages.filter(note=>{
+              return(parseInt(note.to_user_id) === parseInt(currentUserId));
+            });
+            let friendMessages = allMessages.filter(note=>{
+              return(note.public && (user.associates.friends.indexOf(parseInt(note.user_id)) !== -1));
+            });
+            if (directMessages.length > 0) {
+              directMessages = directMessages.sort((a, b)=>{
+                return((new Date(a.created_at)) - (new Date(b.created_at)));
+              });
+            }
+            if (friendMessages.length > 0) {
+              friendMessages = friendMessages.sort((a, b)=>{
+                return((new Date(a.created_at)) - (new Date(b.created_at)));
+              });
+            }
+            vm.userMessages = [];
+            vm.userMessages = directMessages.concat(friendMessages);
+            if (vm.userMessages.length > 0) {
+              for (let i = 0; i < vm.userMessages.length; i++) {
+                getProfileImageAndName(vm.userMessages[i], i);
+                vm.userMessages[i].cleanDate = cleanDateHoliday(vm.userMessages[i].created_at);
+              }
+            }
+          });
+        });
+
+      }
+
 
 
 
@@ -11490,6 +11536,7 @@
             }
             profilePhoto.setAttribute("style", "height: 7em; width: 7em; margin-left: 1.6em; margin-top: 1.2em; border: 2px solid #0000cc;");
             photoReference.setAttribute("style", "height: 10em; width: 10em; margin-left: 4.6em; margin-top: 1.2em; border: 2px solid #0000cc;");
+            retrieveUserMessages();
           });
         }
 
