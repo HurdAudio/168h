@@ -7048,6 +7048,10 @@ footer img {
   padding-left: 2vmin;
 }
 
+#availableArtModules {
+  display: none;
+}
+
 
 
 /* .day {

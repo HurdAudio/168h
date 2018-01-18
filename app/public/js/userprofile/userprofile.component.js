@@ -202,6 +202,15 @@
       vm.addNewArt = addNewArt;
       vm.observancesReport = observancesReport;
       vm.observanceReportDone = observanceReportDone;
+      vm.artModuleDisplay = artModuleDisplay;
+
+      function artModuleDisplay() {
+        let availableArtModules = document.getElementById('availableArtModules');
+        let artModuleDisplayButton = document.getElementById('artModuleDisplayButton');
+
+        availableArtModules.setAttribute("style", "display: initial;");
+        artModuleDisplayButton.setAttribute("style", "visibility: hidden;");
+      }
 
       function observanceReportDone() {
         let reportForObservances = document.getElementById('reportForObservances');
@@ -1226,6 +1235,8 @@
       }
 
       function closeModulesManager() {
+        let artModuleDisplayButton = document.getElementById('artModuleDisplayButton');
+        let availableArtModules = document.getElementById('availableArtModules');
         let modulesManagerButton = document.getElementById('modulesManagerButton');
         let modulesZone = document.getElementById('modulesZone');
         let modulesManagementDiv = document.getElementById('modulesManagementDiv');
@@ -1233,6 +1244,8 @@
         modulesManagerButton.setAttribute("style", "visibility: visible;");
         modulesZone.setAttribute("style", "opacity: 1.0;");
         modulesManagementDiv.setAttribute("style", "display: none;");
+        artModuleDisplayButton.setAttribute("style", "visibility: visible;");
+        availableArtModules.setAttribute("style", "display: none;");
       }
 
       function modulesManager() {
