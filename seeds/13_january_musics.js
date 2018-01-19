@@ -2866,6 +2866,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 160,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1403203464/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://xirecords.bandcamp.com/album/clarinet-songs',
+          a_string: 'Clarinet Songs by Daniel Goode',
+          rule: {
+            "monday": [ 29, 5, 6, 7 ],
+            "tuesday": [ 2, 9, 10, 11 ],
+            "wednesday": [ 1, 8, 9, 10 ],
+            "thursday": [ 31, 7, 8, 9 ],
+            "saturday": [ 30, 5, 6, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 161,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3252752347/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://xirecords.bandcamp.com/album/security-vehicles-only',
+          a_string: 'Security Vehicles Only by Amnon Wolman',
+          rule: {
+            "monday": [ 31, 6, 7, 8 ],
+            "tuesday": [ 30, 6, 7, 8 ],
+            "wednesday": [ 3, 10, 11, 12 ],
+            "thursday": [ 2, 9, 10, 11 ],
+            "saturday": [ 1, 8, 9, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 162,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1938967320/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://xirecords.bandcamp.com/album/kilter',
+          a_string: 'Kilter by Mary Ellen Childs',
+          rule: {
+            "monday": [ 1, 8, 9, 10 ],
+            "tuesday": [ 31, 6, 7, 8 ],
+            "wednesday": [ 30, 6, 7, 8 ],
+            "thursday": [ 3, 10, 11, 12 ],
+            "saturday": [ 2, 9, 10, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
