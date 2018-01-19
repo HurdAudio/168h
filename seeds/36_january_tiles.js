@@ -424,6 +424,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FBFCFE',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 31,
+          user_id: 1,
+          theme: 'Ice',
+          type: 'sunday',
+          src_string: '../img/january_tiles/e181386486f1cd3f13c75dd6828cdb12.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '163%',
+          color_dark: '#01416B',
+          color_medium: '#6CA6D6',
+          color_light: '#D6E7F6',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
