@@ -1894,6 +1894,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 106,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2796432822/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://hamferd.bandcamp.com/album/t-msins-likam',
+          a_string: 'Támsins Likam by Hamferð',
+          rule: {
+            "monday": [ 22, 1, 11, 14 ],
+            "tuesday": [ 21, 31, 10, 13 ],
+            "wednesday": [ 20, 30, 9, 12 ],
+            "thursday": [ 19, 29, 9, 11 ],
+            "saturday": [ 23, 2, 12, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 107,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=682659331/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://shoppingfc.bandcamp.com/album/the-official-body',
+          a_string: 'The Official Body by Shopping',
+          rule: {
+            "monday": [ 23, 2, 12, 15 ],
+            "tuesday": [ 22, 1, 11, 14 ],
+            "wednesday": [ 21, 31, 10, 13 ],
+            "thursday": [ 20, 30, 9, 12 ],
+            "saturday": [ 19, 29, 9, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 108,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1036201888/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://comus.bandcamp.com/album/out-of-the-coma',
+          a_string: 'Out Of The Coma by Comus',
+          rule: {
+            "monday": [ 19, 29, 9, 11 ],
+            "tuesday": [ 23, 2, 12, 15 ],
+            "wednesday": [ 22, 1, 11, 14 ],
+            "thursday": [ 21, 31, 10, 13 ],
+            "saturday": [ 20, 30, 9, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
