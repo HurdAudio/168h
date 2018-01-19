@@ -4004,6 +4004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 201,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/a-lady-in-black-1917.jpg',
+          title: 'A Lady in Black',
+          artist: 'Boris Grigoriev',
+          year: '1917',
+          rule: {
+            "monday": [ 28, 30, 9, 25 ],
+            "tuesday": [ 27, 30, 8, 24 ],
+            "wednesday": [ 26, 29, 7, 23 ],
+            "thursday": [ 1, 5, 13, 29 ],
+            "friday": [ 31, 3, 12, 28 ],
+            "saturday": [ 30, 3, 11, 27 ],
+            "sunday": [ 29, 2, 10, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 202,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/snowy-landscape-deep-winter-1904.jpg',
+          title: 'Snowy Landscape (Deep Winter)',
+          artist: 'Cuno Amiet',
+          year: '1904',
+          rule: {
+            "monday": [ 29, 2, 10, 26 ],
+            "tuesday": [ 28, 30, 9, 25 ],
+            "wednesday": [ 27, 30, 8, 24 ],
+            "thursday": [ 26, 29, 7, 23 ],
+            "friday": [ 1, 5, 13, 29 ],
+            "saturday": [ 31, 3, 12, 28 ],
+            "sunday": [ 30, 3, 11, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 203,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/development-ii.jpg',
+          title: 'Development II',
+          artist: 'M.C. Escher',
+          year: '1939',
+          rule: {
+            "monday": [ 31, 4, 12, 28 ],
+            "tuesday": [ 30, 3, 11, 27 ],
+            "wednesday": [ 29, 31, 10, 26 ],
+            "thursday": [ 28, 31, 9, 25 ],
+            "friday": [ 27, 30, 8, 24 ],
+            "saturday": [ 2, 6, 14, 30 ],
+            "sunday": [ 1, 4, 13, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 204,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/dynamism-of-a-car-1913.jpg',
+          title: 'Dynamism of a Car',
+          artist: 'Luigi Russolo',
+          year: '1913',
+          rule: {
+            "monday": [ 1, 4, 13, 29 ],
+            "tuesday": [ 31, 4, 12, 28 ],
+            "wednesday": [ 30, 3, 11, 27 ],
+            "thursday": [ 29, 31, 10, 26 ],
+            "friday": [ 28, 31, 9, 25 ],
+            "saturday": [ 27, 30, 8, 24 ],
+            "sunday": [ 2, 6, 14, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 205,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/dark-self-portrait-1935.jpg',
+          title: 'Dark Self-Portrait',
+          artist: 'Vajda Lajos',
+          year: '1935',
+          rule: {
+            "monday": [ 2, 6, 14, 30 ],
+            "tuesday": [ 1, 4, 13, 29 ],
+            "wednesday": [ 31, 4, 12, 28 ],
+            "thursday": [ 30, 3, 11, 27 ],
+            "friday": [ 29, 31, 10, 26 ],
+            "saturday": [ 28, 31, 9, 25 ],
+            "sunday": [ 27, 30, 8, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
