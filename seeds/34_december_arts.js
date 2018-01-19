@@ -3204,6 +3204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 161,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/30-04,DetDrgnt.jpg',
+          title: 'Detective Dragnet',
+          artist: 'Don Hewitt',
+          year: '1930',
+          rule: {
+            "monday": [ 25, 7, 15, 21 ],
+            "tuesday": [ 24, 6, 14, 20 ],
+            "wednesday": [ 23, 5, 13, 19 ],
+            "thursday": [ 22, 3, 12, 18 ],
+            "friday": [ 21, 3, 22, 17 ],
+            "saturday": [ 27, 9, 17, 23 ],
+            "sunday": [ 26, 8, 16, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 162,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/36-10,AceSports1.jpg',
+          title: 'Ace Sports',
+          artist: 'Tom Hickey',
+          year: '1936',
+          rule: {
+            "monday": [ 26, 8, 16, 22 ],
+            "tuesday": [ 25, 7, 15, 21 ],
+            "wednesday": [ 24, 6, 14, 20 ],
+            "thursday": [ 23, 5, 13, 19 ],
+            "friday": [ 22, 3, 12, 18 ],
+            "saturday": [ 21, 3, 22, 17 ],
+            "sunday": [ 27, 9, 17, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 163,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/25-01,RadiatorAd.jpg',
+          title: 'Advertisement',
+          artist: 'Arnold Lorne Hicks',
+          year: '1925',
+          rule: {
+            "monday": [ 27, 9, 17, 23 ],
+            "tuesday": [ 26, 8, 16, 22 ],
+            "wednesday": [ 25, 7, 15, 21 ],
+            "thursday": [ 24, 6, 14, 20 ],
+            "friday": [ 23, 5, 13, 19 ],
+            "saturday": [ 22, 3, 12, 18 ],
+            "sunday": [ 21, 3, 22, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 164,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/09-09-30,Life.jpg',
+          title: 'Life',
+          artist: 'Lejaren Hiller',
+          year: '1909',
+          rule: {
+            "monday": [ 21, 3, 22, 17 ],
+            "tuesday": [ 27, 9, 17, 23 ],
+            "wednesday": [ 26, 8, 16, 22 ],
+            "thursday": [ 25, 7, 15, 21 ],
+            "friday": [ 24, 6, 14, 20 ],
+            "saturday": [ 23, 5, 13, 19 ],
+            "sunday": [ 22, 3, 12, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 165,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/14-12,UC-Yrbook.jpg',
+          title: 'Univ. Cal. Yearbook',
+          artist: 'Douglas Hilliker',
+          year: '1914',
+          rule: {
+            "monday": [ 22, 3, 12, 18 ],
+            "tuesday": [ 21, 3, 22, 17 ],
+            "wednesday": [ 27, 9, 17, 23 ],
+            "thursday": [ 26, 8, 16, 22 ],
+            "friday": [ 25, 7, 15, 21 ],
+            "saturday": [ 24, 6, 14, 20 ],
+            "sunday": [ 23, 5, 13, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
