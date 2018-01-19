@@ -3404,6 +3404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 171,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/tegn-iii-1966.jpg',
+          title: 'Tegn III',
+          artist: 'Jan Groth',
+          year: '1966',
+          rule: {
+            "monday": [ 26, 1, 7, 14 ],
+            "tuesday": [ 2, 7, 13, 18 ],
+            "wednesday": [ 1, 6, 11, 17 ],
+            "thursday": [ 30, 5, 11, 15 ],
+            "friday": [ 29, 2, 10, 15 ],
+            "saturday": [ 28, 2, 9, 14 ],
+            "sunday": [ 27, 2, 8, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 172,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/untitled-1967.jpg',
+          title: 'Untitled',
+          artist: 'Eva Hesse',
+          year: '1967',
+          rule: {
+            "monday": [ 27, 2, 8, 13 ],
+            "tuesday": [ 26, 1, 7, 14 ],
+            "wednesday": [ 2, 7, 13, 18 ],
+            "thursday": [ 1, 6, 11, 17 ],
+            "friday": [ 30, 5, 11, 15 ],
+            "saturday": [ 29, 2, 10, 15 ],
+            "sunday": [ 28, 2, 9, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 173,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/rothko-chapel-1967.jpg',
+          title: 'Rothko Chapel',
+          artist: 'Mark Rothko',
+          year: '1964 - 1967',
+          rule: {
+            "monday": [ 28, 2, 9, 14 ],
+            "tuesday": [ 27, 2, 8, 13 ],
+            "wednesday": [ 26, 1, 7, 14 ],
+            "thursday": [ 2, 7, 13, 18 ],
+            "friday": [ 1, 6, 11, 17 ],
+            "saturday": [ 30, 5, 11, 15 ],
+            "sunday": [ 29, 2, 10, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 174,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/relief-series-b-1967-2(1).jpg',
+          title: 'Relief, Series B',
+          artist: 'Charlotte Posenenske',
+          year: '1967',
+          rule: {
+            "monday": [ 29, 2, 10, 15 ],
+            "tuesday": [ 28, 2, 9, 14 ],
+            "wednesday": [ 27, 2, 8, 13 ],
+            "thursday": [ 26, 1, 7, 14 ],
+            "friday": [ 2, 7, 13, 18 ],
+            "saturday": [ 1, 6, 11, 17 ],
+            "sunday": [ 30, 5, 11, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 175,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/untitled-1967-.jpg',
+          title: 'Untitled',
+          artist: 'Michel Parmentier',
+          year: '1967',
+          rule: {
+            "monday": [ 1, 6, 12, 16 ],
+            "tuesday": [ 30, 3, 11, 16 ],
+            "wednesday": [ 29, 3, 10, 15 ],
+            "thursday": [ 28, 3, 9, 14 ],
+            "friday": [ 27, 2, 8, 15 ],
+            "saturday": [ 3, 8, 14, 19 ],
+            "sunday": [ 2, 7, 12, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
