@@ -4191,7 +4191,7 @@ exports.seed = function(knex, Promise) {
           theme: 'French',
           img_path: './img/july/harvesting-of-buckwheat-in-britain.jpg',
           title: 'Harvesting of buckwheat in Britain',
-          artist: 'Georges Lacombe ',
+          artist: 'Georges Lacombe',
           year: '1895',
           rule: {
             "monday": [ 31, 11, 22, 2 ],
@@ -4201,6 +4201,106 @@ exports.seed = function(knex, Promise) {
             "friday": [ 27, 7, 18, 29 ],
             "saturday": [ 2, 13, 24, 3 ],
             "sunday": [ 1, 12, 23, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 211,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/church-at-notre-dame-at-vaudreuil-1900.jpg',
+          title: 'Church at Notre Dame at Vaudreuil',
+          artist: 'Gustave Loiseau',
+          year: '1900',
+          rule: {
+            "monday": [ 1, 12, 23, 3 ],
+            "tuesday": [ 31, 11, 22, 2 ],
+            "wednesday": [ 30, 10, 21, 22 ],
+            "thursday": [ 29, 9, 19, 21 ],
+            "friday": [ 28, 8, 19, 20 ],
+            "saturday": [ 27, 7, 18, 29 ],
+            "sunday": [ 2, 13, 24, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 212,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/two-breton-women-under-a-flowering-apple-tree-1890.jpg',
+          title: 'Two Breton Women under a Flowering Apple Tree',
+          artist: 'Paul Serusier',
+          year: '1890',
+          rule: {
+            "monday": [ 2, 13, 24, 3 ],
+            "tuesday": [ 1, 12, 23, 3 ],
+            "wednesday": [ 31, 11, 22, 2 ],
+            "thursday": [ 30, 10, 21, 22 ],
+            "friday": [ 29, 9, 19, 21 ],
+            "saturday": [ 28, 8, 19, 20 ],
+            "sunday": [ 27, 7, 18, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 213,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/the-milliner-1885.jpg',
+          title: 'The Milliner',
+          artist: 'Paul Signac',
+          year: '1885',
+          rule: {
+            "monday": [ 27, 7, 18, 29 ],
+            "tuesday": [ 2, 13, 24, 3 ],
+            "wednesday": [ 1, 12, 23, 3 ],
+            "thursday": [ 31, 11, 22, 2 ],
+            "friday": [ 30, 10, 21, 22 ],
+            "saturday": [ 29, 9, 19, 21 ],
+            "sunday": [ 28, 8, 19, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 214,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/la-main-chaude.jpg',
+          title: 'La main chaude',
+          artist: 'Louis Vivin',
+          year: '?',
+          rule: {
+            "monday": [ 28, 8, 19, 20 ],
+            "tuesday": [ 27, 7, 18, 29 ],
+            "wednesday": [ 2, 13, 24, 3 ],
+            "thursday": [ 1, 12, 23, 3 ],
+            "friday": [ 31, 11, 22, 2 ],
+            "saturday": [ 30, 10, 21, 22 ],
+            "sunday": [ 29, 9, 19, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 215,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/angelica-at-the-rock-after-ingres-1878.jpg',
+          title: 'Angelica at the rock (After ingres)',
+          artist: 'Georges Seurat',
+          year: '1878',
+          rule: {
+            "monday": [ 29, 9, 19, 21 ],
+            "tuesday": [ 28, 8, 19, 20 ],
+            "wednesday": [ 27, 7, 18, 29 ],
+            "thursday": [ 2, 13, 24, 3 ],
+            "friday": [ 1, 12, 23, 3 ],
+            "saturday": [ 31, 11, 22, 2 ],
+            "sunday": [ 30, 10, 21, 22 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
