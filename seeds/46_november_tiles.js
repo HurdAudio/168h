@@ -284,6 +284,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#E2E2E2',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 21,
+          user_id: 1,
+          theme: 'Monochromatic',
+          type: 'sunday',
+          src_string: '../img/november_tiles/1974_PCG_155_GroupShow_Paintings_GClements_002.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '135%',
+          color_dark: '#1A1A1A',
+          color_medium: '#565656',
+          color_light: '#E1E1E1',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
