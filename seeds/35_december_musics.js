@@ -1678,6 +1678,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 94,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1977208599/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://crookedtreerecords.bandcamp.com/album/softspoken',
+          a_string: 'Softspoken by The Sorry Shop',
+          rule: {
+            "monday": [ 15, 23, 29, 4 ],
+            "tuesday": [ 16, 22, 28, 3 ],
+            "wednesday": [ 20, 26, 1, 7 ],
+            "thursday": [ 19, 25, 31, 5 ],
+            "saturday": [ 18, 24, 30, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 95,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1496544705/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://deathraybam.bandcamp.com/album/blackk-mirror',
+          a_string: 'Blackk Mirror by Deathray Bam!',
+          rule: {
+            "monday": [ 18, 24, 30, 5 ],
+            "tuesday": [ 15, 23, 29, 4 ],
+            "wednesday": [ 16, 22, 28, 3 ],
+            "thursday": [ 20, 26, 1, 7 ],
+            "saturday": [ 19, 25, 31, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 96,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1470380704/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://wanderwildner.bandcamp.com/album/wanclub-3',
+          a_string: 'Wanclub by Wander Wildner y sus Comancheros',
+          rule: {
+            "monday": [ 19, 25, 31, 5 ],
+            "tuesday": [ 18, 24, 30, 5 ],
+            "wednesday": [ 15, 23, 29, 4 ],
+            "thursday": [ 16, 22, 28, 3 ],
+            "saturday": [ 20, 26, 1, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
