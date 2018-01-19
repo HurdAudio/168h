@@ -312,6 +312,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#6F4950',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 23,
+          user_id: 1,
+          theme: 'Leather',
+          type: 'week',
+          src_string: '../img/september_tiles/leather-jacket.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '180%',
+          color_dark: '#020206',
+          color_medium: '#522515',
+          color_light: '#A78583',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
