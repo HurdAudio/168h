@@ -5404,6 +5404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 271,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/southern-tunisian-gardens-1919(1).jpg',
+          title: 'Southern (Tunisian) gardens',
+          artist: 'Paul Klee',
+          year: '1919',
+          rule: {
+            "monday": [ 20, 22, 26, 29 ],
+            "tuesday": [ 22, 24, 25, 28 ],
+            "wednesday": [ 7, 8, 19, 11 ],
+            "thursday": [ 10, 12, 4, 24 ],
+            "friday": [ 12, 13, 5, 8 ],
+            "saturday": [ 15, 16, 7, 11 ],
+            "sunday": [ 18, 20, 21, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 272,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/ryoan-ji-kyoto-b.jpg',
+          title: 'Ryoan-ji Kyoto (B)',
+          artist: 'Kiyoshi Saito',
+          year: 'xx cent.',
+          rule: {
+            "monday": [ 18, 20, 21, 23 ],
+            "tuesday": [ 20, 22, 26, 29 ],
+            "wednesday": [ 22, 24, 25, 28 ],
+            "thursday": [ 7, 8, 19, 11 ],
+            "friday": [ 10, 12, 4, 24 ],
+            "saturday": [ 12, 13, 5, 8 ],
+            "sunday": [ 15, 16, 7, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 273,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/south-seas-2001.jpg',
+          title: 'South Seas',
+          artist: 'Beatriz Milhazes',
+          year: '2001',
+          rule: {
+            "monday": [ 16, 17, 8, 12 ],
+            "tuesday": [ 19, 21, 22, 24 ],
+            "wednesday": [ 21, 23, 27, 30 ],
+            "thursday": [ 23, 25, 26, 29 ],
+            "friday": [ 8, 9, 20, 12 ],
+            "saturday": [ 11, 13, 5, 25 ],
+            "sunday": [ 13, 14, 6, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 274,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/oe-260-1957.jpg',
+          title: 'OE 260',
+          artist: 'Rupprecht Geiger',
+          year: '1957',
+          rule: {
+            "monday": [ 13, 14, 6, 9 ],
+            "tuesday": [ 16, 17, 8, 12 ],
+            "wednesday": [ 19, 21, 22, 24 ],
+            "thursday": [ 21, 23, 27, 30 ],
+            "friday": [ 23, 25, 26, 29 ],
+            "saturday": [ 8, 9, 20, 12 ],
+            "sunday": [ 11, 13, 5, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 275,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/untitled-2006.jpg',
+          title: 'Untitled',
+          artist: 'Mostafa Dashti',
+          year: '2006',
+          rule: {
+            "monday": [ 11, 13, 5, 25 ],
+            "tuesday": [ 13, 14, 6, 9 ],
+            "wednesday": [ 16, 17, 8, 12 ],
+            "thursday": [ 19, 21, 22, 24 ],
+            "friday": [ 21, 23, 27, 30 ],
+            "saturday": [ 23, 25, 26, 29 ],
+            "sunday": [ 8, 9, 20, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
