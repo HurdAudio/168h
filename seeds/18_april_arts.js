@@ -4804,6 +4804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 241,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/cheap-seattle-mariners-tickets.jpg',
+          title: 'Nelson Cruz',
+          artist: '?',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 29, 4, 10, 16 ],
+            "tuesday": [ 4, 10, 15, 22 ],
+            "wednesday": [ 18, 8, 14, 21 ],
+            "thursday": [ 3, 8, 14, 20 ],
+            "friday": [ 2, 6, 21, 19 ],
+            "saturday": [ 1, 6, 11, 17 ],
+            "sunday": [ 30, 5, 11, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 242,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/bannerx.jpg',
+          title: 'Safeco Field',
+          artist: '?',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 30, 5, 11, 17 ],
+            "tuesday": [ 29, 4, 10, 16 ],
+            "wednesday": [ 4, 10, 15, 22 ],
+            "thursday": [ 18, 8, 14, 21 ],
+            "friday": [ 3, 8, 14, 20 ],
+            "saturday": [ 2, 6, 21, 19 ],
+            "sunday": [ 1, 6, 11, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 243,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/FelixHernandez.jpeg',
+          title: 'Felix Hernandez',
+          artist: '?',
+          year: '2017',
+          rule: {
+            "monday": [ 1, 6, 11, 17 ],
+            "tuesday": [ 30, 5, 11, 17 ],
+            "wednesday": [ 29, 4, 10, 16 ],
+            "thursday": [ 4, 10, 15, 22 ],
+            "friday": [ 18, 8, 14, 21 ],
+            "saturday": [ 3, 8, 14, 20 ],
+            "sunday": [ 2, 6, 21, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 244,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/hwl.jpeg',
+          title: 'Seattle Mariners New Era 2017 MLB Diamond Era Spring Training 59FIFTY Cap',
+          artist: '?',
+          year: '2017',
+          rule: {
+            "monday": [ 2, 6, 21, 19 ],
+            "tuesday": [ 1, 6, 11, 17 ],
+            "wednesday": [ 30, 5, 11, 17 ],
+            "thursday": [ 29, 4, 10, 16 ],
+            "friday": [ 4, 10, 15, 22 ],
+            "saturday": [ 18, 8, 14, 21 ],
+            "sunday": [ 3, 8, 14, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 245,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/seattle-mariners-safeco-field.jpg',
+          title: 'Seattle Mariners Safeco Field',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 4, 9, 15, 21 ],
+            "tuesday": [ 3, 7, 22, 20 ],
+            "wednesday": [ 2, 7, 12, 18 ],
+            "thursday": [ 1, 6, 12, 18 ],
+            "friday": [ 30, 5, 11, 17 ],
+            "saturday": [ 5, 11, 16, 23 ],
+            "sunday": [ 19, 9, 15, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
