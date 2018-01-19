@@ -2650,6 +2650,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 148,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2680258136/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://funknacaixa.bandcamp.com/album/bad-ista-ep',
+          a_string: 'Bad$ista EP by Bad$ista',
+          rule: {
+            "monday": [ 22, 28, 3, 11 ],
+            "tuesday": [ 26, 1, 7, 15 ],
+            "wednesday": [ 25, 31, 6, 14 ],
+            "thursday": [ 24, 30, 5, 14 ],
+            "saturday": [ 22, 29, 4, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 149,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1189907578/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://panalrecords.bandcamp.com/album/kamila-govorcin-el-mundo-pnl16',
+          a_string: 'Kamila Govorcin - El Mundo [#PNL16] by Panal Records',
+          rule: {
+            "monday": [ 22, 29, 4, 12 ],
+            "tuesday": [ 22, 28, 3, 11 ],
+            "wednesday": [ 26, 1, 7, 15 ],
+            "thursday": [ 25, 31, 6, 14 ],
+            "saturday": [ 24, 30, 5, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 150,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/track=3720774709/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://catnapp.bandcamp.com/track/flame-bitch-prod-x-dabow',
+          a_string: 'Flame Bitch prod x Dabow by CATNAPP',
+          rule: {
+            "monday": [ 24, 30, 5, 14 ],
+            "tuesday": [ 22, 29, 4, 12 ],
+            "wednesday": [ 22, 28, 3, 11 ],
+            "thursday": [ 26, 1, 7, 15 ],
+            "saturday": [ 25, 31, 6, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
