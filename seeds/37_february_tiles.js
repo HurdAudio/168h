@@ -410,6 +410,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#DF0000',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 30,
+          user_id: 1,
+          theme: 'Silk/Velvet',
+          type: 'saturday',
+          src_string: '../img/february_tiles/Traditions-Linens-vintage-velvet-crimson.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '100%',
+          color_dark: '#310502',
+          color_medium: '#591007',
+          color_light: '#87372C',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
