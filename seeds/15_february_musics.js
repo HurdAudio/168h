@@ -2758,6 +2758,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 154,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2020537830/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://crypticone.bandcamp.com/album/the-anti-mobius-strip-theory',
+          a_string: 'The Anti-Mobius Strip Theory by Cryptic One',
+          rule: {
+            "monday": [ 28, 3, 5, 7 ],
+            "tuesday": [ 11, 5, 7, 13 ],
+            "wednesday": [ 23, 28, 1, 13 ],
+            "thursday": [ 24, 28, 1, 5 ],
+            "saturday": [ 27, 1, 3, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 155,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=837213719/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://dynamicsplus.bandcamp.com/album/rock-it-science-rocket-science-remix-album',
+          a_string: 'Rock It Science (Rocket Science Remix Album) by Dynamics Plus',
+          rule: {
+            "monday": [ 27, 1, 3, 7 ],
+            "tuesday": [ 28, 3, 5, 7 ],
+            "wednesday": [ 11, 5, 7, 13 ],
+            "thursday": [ 23, 28, 1, 13 ],
+            "saturday": [ 24, 28, 1, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 156,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=559264456/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://centaofdaweb.bandcamp.com/album/beyond-human-comprehension-ep',
+          a_string: 'Beyond Human Comprehension EP by Centa of da Web',
+          rule: {
+            "monday": [ 24, 28, 1, 5 ],
+            "tuesday": [ 27, 1, 3, 7 ],
+            "wednesday": [ 28, 3, 5, 7 ],
+            "thursday": [ 11, 5, 7, 13 ],
+            "saturday": [ 23, 28, 1, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
