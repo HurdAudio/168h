@@ -5004,6 +5004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 251,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/bather-1911.jpg',
+          title: 'Bather',
+          artist: 'Zinaida Serebriakova',
+          year: '1911',
+          rule: {
+            "monday": [ 1, 11, 19, 29 ],
+            "tuesday": [ 31, 10, 18, 28 ],
+            "wednesday": [ 30, 9, 17, 27 ],
+            "thursday": [ 29, 8, 17, 26 ],
+            "friday": [ 4, 13, 23, 31 ],
+            "saturday": [ 3, 13, 23, 31 ],
+            "sunday": [ 3, 12, 20, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 252,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/ressam-musfik-hanim-07.jpg',
+          title: 'Untitled Portrait',
+          artist: 'Mihri Musfik',
+          year: '?',
+          rule: {
+            "monday": [ 4, 13, 21, 31 ],
+            "tuesday": [ 2, 12, 20, 30 ],
+            "wednesday": [ 1, 11, 19, 29 ],
+            "thursday": [ 31, 10, 18, 28 ],
+            "friday": [ 30, 9, 18, 27 ],
+            "saturday": [ 5, 14, 24, 1 ],
+            "sunday": [ 4, 14, 24, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 253,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/blue-line.jpg',
+          title: 'Blue Line',
+          artist: 'Georgia O\'Keeffe',
+          year: '1919',
+          rule: {
+            "monday": [ 4, 14, 24, 1 ],
+            "tuesday": [ 4, 13, 21, 31 ],
+            "wednesday": [ 2, 12, 20, 30 ],
+            "thursday": [ 1, 11, 19, 29 ],
+            "friday": [ 31, 10, 18, 28 ],
+            "saturday": [ 30, 9, 18, 27 ],
+            "sunday": [ 5, 14, 24, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 254,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/composition-1937.jpg',
+          title: 'Composition',
+          artist: 'Sophie Taeuber-Arp',
+          year: '1937',
+          rule: {
+            "monday": [ 5, 14, 24, 1 ],
+            "tuesday": [ 4, 14, 24, 1 ],
+            "wednesday": [ 4, 13, 21, 31 ],
+            "thursday": [ 2, 12, 20, 30 ],
+            "friday": [ 1, 11, 19, 29 ],
+            "saturday": [ 31, 10, 18, 28 ],
+            "sunday": [ 30, 9, 18, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 255,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/study-for-man-and-machine-1921.jpg',
+          title: 'tudy for Man and Machine',
+          artist: 'Hannah Hoch',
+          year: '1921',
+          rule: {
+            "monday": [ 30, 9, 18, 27 ],
+            "tuesday": [ 5, 14, 24, 1 ],
+            "wednesday": [ 4, 14, 24, 1 ],
+            "thursday": [ 4, 13, 21, 31 ],
+            "friday": [ 2, 12, 20, 30 ],
+            "saturday": [ 1, 11, 19, 29 ],
+            "sunday": [ 31, 10, 18, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
