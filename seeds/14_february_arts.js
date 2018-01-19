@@ -5204,6 +5204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 261,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/69107_1.jpg',
+          title: 'Dancing at the Savoy',
+          artist: 'Richard Yarde',
+          year: 'xx cent.',
+          rule: {
+            "monday": [ 8, 16, 24, 3 ],
+            "tuesday": [ 10, 18, 26, 5 ],
+            "wednesday": [ 15, 20, 26, 7 ],
+            "thursday": [ 14, 22, 1, 9 ],
+            "friday": [ 16, 26, 3, 9 ],
+            "saturday": [ 18, 26, 5, 15 ],
+            "sunday": [ 20, 28, 24, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 262,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/joseph-yoakum.jpg',
+          title: 'Brazus Valley near Amarillo, Texas',
+          artist: 'Joseph Yoakum',
+          year: 'xx cent.',
+          rule: {
+            "monday": [ 20, 28, 24, 14 ],
+            "tuesday": [ 8, 16, 24, 3 ],
+            "wednesday": [ 10, 18, 26, 5 ],
+            "thursday": [ 15, 20, 26, 7 ],
+            "friday": [ 14, 22, 1, 9 ],
+            "saturday": [ 16, 26, 3, 9 ],
+            "sunday": [ 18, 26, 5, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 263,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/Purvis_Young_Untitled_ca._1988.jpg',
+          title: 'Untitled',
+          artist: 'Purvis Young',
+          year: 'c. 1988',
+          rule: {
+            "monday": [ 18, 26, 5, 15 ],
+            "tuesday": [ 20, 28, 24, 14 ],
+            "wednesday": [ 8, 16, 24, 3 ],
+            "thursday": [ 10, 18, 26, 5 ],
+            "friday": [ 15, 20, 26, 7 ],
+            "saturday": [ 14, 22, 1, 9 ],
+            "sunday": [ 16, 26, 3, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 264,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/alfred-hair-10.jpg',
+          title: 'Royal Poinsettia',
+          artist: 'Alfred Hair',
+          year: 'xx cent.',
+          rule: {
+            "monday": [ 16, 26, 3, 9 ],
+            "tuesday": [ 18, 26, 5, 15 ],
+            "wednesday": [ 20, 28, 24, 14 ],
+            "thursday": [ 8, 16, 24, 3 ],
+            "friday": [ 10, 18, 26, 5 ],
+            "saturday": [ 15, 20, 26, 7 ],
+            "sunday": [ 14, 22, 1, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 265,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/Arnett-7.jpg',
+          title: 'Untitled',
+          artist: 'Curtis Arnett',
+          year: 'xx cent.',
+          rule: {
+            "monday": [ 14, 22, 1, 9 ],
+            "tuesday": [ 16, 26, 3, 9 ],
+            "wednesday": [ 18, 26, 5, 15 ],
+            "thursday": [ 20, 28, 24, 14 ],
+            "friday": [ 8, 16, 24, 3 ],
+            "saturday": [ 10, 18, 26, 5 ],
+            "sunday": [ 15, 20, 26, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
