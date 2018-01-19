@@ -2326,6 +2326,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 130,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2097781097/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://juliannabarwick.bandcamp.com/album/nepenthe',
+          a_string: 'Nepenthe by Julianna Barwick',
+          rule: {
+            "monday": [ 17, 21, 26, 8 ],
+            "tuesday": [ 17, 20, 26, 7 ],
+            "wednesday": [ 15, 23, 25, 6 ],
+            "thursday": [ 19, 23, 29, 10 ],
+            "saturday": [ 18, 21, 26, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 131,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2238000015/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://juliannabarwick.bandcamp.com/album/will',
+          a_string: 'Will by Julianna Barwick',
+          rule: {
+            "monday": [ 18, 21, 26, 8 ],
+            "tuesday": [ 17, 21, 26, 8 ],
+            "wednesday": [ 17, 20, 26, 7 ],
+            "thursday": [ 15, 23, 25, 6 ],
+            "saturday": [ 19, 23, 29, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 132,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4097428080/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://juliannabarwick.bandcamp.com/album/rosabi-ep',
+          a_string: 'Rosabi EP by Julianna Barwick',
+          rule: {
+            "monday": [ 19, 23, 29, 10 ],
+            "tuesday": [ 18, 21, 26, 8 ],
+            "wednesday": [ 17, 21, 26, 8 ],
+            "thursday": [ 17, 20, 26, 7 ],
+            "saturday": [ 15, 23, 25, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
