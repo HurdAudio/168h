@@ -203,6 +203,103 @@
       vm.observancesReport = observancesReport;
       vm.observanceReportDone = observanceReportDone;
       vm.artModuleDisplay = artModuleDisplay;
+      vm.deleteTilesCurrate = deleteTilesCurrate;
+
+      function deleteTilesCurrate(filepath, tileId) {
+        let userTilesCurratorDeleteConfirmDiv = document.getElementById('userTilesCurratorDeleteConfirmDiv');
+        let tilesCurratorManagerDiv = document.getElementById('tilesCurratorManagerDiv');
+        let userTilesCurratorEditorDiv = document.getElementById('userTilesCurratorEditorDiv');
+        let userTilesCurratorDeleteTileImage = document.getElementById('userTilesCurratorDeleteTileImage');
+        let userTilesCurratorInfos = document.getElementById('userTilesCurratorInfos');
+        let userTilesCurratorDeleteConfirmButtons = document.getElementById('userTilesCurratorDeleteConfirmButtons');
+        let userTilesCurratorConfirmYes = document.getElementById('userTilesCurratorConfirmYes');
+        if (userTilesCurratorConfirmYes) {
+          userTilesCurratorConfirmYes.parentNode.removeChild(userTilesCurratorConfirmYes);
+          userTilesCurratorConfirmYes = document.createElement('a');
+          userTilesCurratorDeleteConfirmButtons.appendChild(userTilesCurratorConfirmYes);
+          userTilesCurratorConfirmYes.id = 'userTilesCurratorConfirmYes';
+          userTilesCurratorConfirmYes.className = 'btn';
+          userTilesCurratorConfirmYes.innerHTML = 'yes';
+          userTilesCurratorConfirmYes.setAttribute("style", "cursor: pointer;");
+        }
+        let userTilesCurratorConfirmNo = document.getElementById('userTilesCurratorConfirmNo');
+        if (userTilesCurratorConfirmNo) {
+          userTilesCurratorConfirmNo.parentNode.removeChild(userTilesCurratorConfirmNo);
+          userTilesCurratorConfirmNo = document.createElement('a');
+          userTilesCurratorDeleteConfirmButtons.appendChild(userTilesCurratorConfirmNo);
+          userTilesCurratorConfirmNo.id = 'userTilesCurratorConfirmNo';
+          userTilesCurratorConfirmNo.className = 'btn';
+          userTilesCurratorConfirmNo.innerHTML = 'no';
+          userTilesCurratorConfirmNo.setAttribute("style", "cursor: pointer;");
+        }
+
+        $http.get(`/${filepath}/${tileId}`)
+        .then(tileData=>{
+          let tile = tileData.data;
+          userTilesCurratorDeleteTileImage.setAttribute("style", "background-image: url(" + tile.src_string + "); background-repeat:" + tile.repeat_value + "; background-size: " + tile.size_value + ";");
+          userTilesCurratorInfos.innerHTML = filepath + ": " + tile.type + ' tile';
+
+          userTilesCurratorConfirmYes.addEventListener('click', ()=>{
+            $http.delete(`/${filepath}/${tileId}`)
+            .then(()=>{
+              let month = '';
+              userTilesCurratorDeleteConfirmDiv.setAttribute("style", "display: none;");
+              tilesCurratorManagerDiv.setAttribute("style", "display: initial;");
+              tilesCurratorManagement();
+              switch(filepath) {
+                case('january_tiles'):
+                  month = 'January'
+                  break;
+                case('february_tiles'):
+                  month = 'February';
+                  break;
+                case('march_tiles'):
+                  month = 'March';
+                  break;
+                case('april_tiles'):
+                  month = 'April';
+                  break;
+                case('may_tiles'):
+                  month = 'May';
+                  break;
+                case('june_tiles'):
+                  month = 'June';
+                  break;
+                case('july_tiles'):
+                  month = 'July';
+                  break;
+                case('august_tiles'):
+                  month = 'August';
+                  break;
+                case('september_tiles'):
+                  month = 'September';
+                  break;
+                case('october_tiles'):
+                  month = 'October';
+                  break;
+                case('november_tiles'):
+                  month = 'November';
+                  break;
+                case('december_tiles'):
+                  month = 'December';
+                  break;
+                default:
+                  console.log('no such month');
+              }
+              toggleTilesCurratorMonth(month);
+            });
+          });
+
+          userTilesCurratorConfirmNo.addEventListener('click', ()=>{
+            userTilesCurratorDeleteConfirmDiv.setAttribute("style", "display: none;");
+            tilesCurratorManagerDiv.setAttribute("style", "display: initial;");
+          });
+        });
+
+        userTilesCurratorDeleteConfirmDiv.setAttribute("style", "display: initial;");
+        tilesCurratorManagerDiv.setAttribute("style", "display: none;");
+        userTilesCurratorEditorDiv.setAttribute("style", "display: none;");
+      }
 
       function artModuleDisplay() {
         let availableArtModules = document.getElementById('availableArtModules');
