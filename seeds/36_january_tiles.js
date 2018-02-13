@@ -438,6 +438,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#D6E7F6',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 32,
+          user_id: 1,
+          theme: 'Ice',
+          type: 'holiday',
+          src_string: '../img/january_tiles/thawing-ice-and-water-bubbles-close-up-timelapse-4k-uhd-3840x2160_bqea6q1r_thumbnail-full01.png',
+          repeat_value: 'no-repeat',
+          size_value: '180%',
+          color_dark: '#2A4D89',
+          color_medium: '#80C2DC',
+          color_light: '#DEF7FC',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
