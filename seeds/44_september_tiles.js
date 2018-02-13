@@ -326,6 +326,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#A78583',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 24,
+          user_id: 1,
+          theme: 'Leather',
+          type: 'friday',
+          src_string: '../img/september_tiles/levis-lvc-1930-distressed-leather-jacket-5.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '145%',
+          color_dark: '#070705',
+          color_medium: '#564734',
+          color_light: '#B5ADA0',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
