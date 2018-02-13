@@ -64,6 +64,66 @@ exports.seed = function(knex, Promise) {
           public: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 6,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/27578350_187399011863664_1997306547377537024_n.jpg',
+          title: 'margoylemonday',
+          artist: 'Gary and supporting cast',
+          year: '2018',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 7,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/27893604_340165616484522_7717492061187866624_n.jpg',
+          title: 'Junior Miss Fun Police is here to protect, serve and stop you from fucking up the bathroom rug',
+          artist: 'Gary and supporting cast',
+          year: '2018',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 8,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/27577140_1773096326327941_8900686075844886528_n.jpg',
+          title: 'It was a perfect day to slobber all over yourself',
+          artist: 'Gary and supporting cast',
+          year: '2018',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 9,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/27573874_283145278883286_2726589352833449984_n.jpg',
+          title: 'When Hank is not strolling down the psycho path, he loves to be kissed and will lean into your face. Congrats to the 5% who guessed correctly.',
+          artist: 'Gary and supporting cast',
+          year: '2018',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 10,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/27574124_454217818358867_5470114251341299712_n.jpg',
+          title: 'Who is the only member of team Gary that actually likes to receive kisses from the parents?',
+          artist: 'Gary and supporting cast',
+          year: '2018',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
