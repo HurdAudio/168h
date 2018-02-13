@@ -354,6 +354,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#EDF7FA',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 26,
+          user_id: 1,
+          theme: 'Steam',
+          type: 'sunday',
+          src_string: '../img/july_tiles/wallpaper_hipster_blue__d_by_analaurasam-d6a2v4v.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '165%',
+          color_dark: '#1A1D22',
+          color_medium: '#41657D',
+          color_light: '#C4D5ED',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
