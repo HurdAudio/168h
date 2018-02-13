@@ -424,6 +424,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#87372C',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 31,
+          user_id: 1,
+          theme: 'Silk/Velvet',
+          type: 'sunday',
+          src_string: '../img/february_tiles/Silk-Brocade-Fabric-2201-color-420.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '120%',
+          color_dark: '#4E3D3A',
+          color_medium: '#891717',
+          color_light: '#D7B087',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
