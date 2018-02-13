@@ -396,6 +396,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#BDCAD0',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 29,
+          user_id: 1,
+          theme: 'Water',
+          type: 'friday',
+          src_string: '../img/april_tiles/swimming-pool-111708_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '145%',
+          color_dark: '#1C83B3',
+          color_medium: '#1C96D0',
+          color_light: '#FAFEF9',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
