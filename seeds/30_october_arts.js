@@ -3704,6 +3704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 186,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_tradesovpost_00020.jpg',
+          title: 'Pelmeni',
+          artist: 'I.Bograd',
+          year: '1936',
+          rule: {
+            "monday": [ 27, 7, 8, 22 ],
+            "tuesday": [ 5, 6, 17, 21 ],
+            "wednesday": [ 1, 12, 23, 27 ],
+            "thursday": [ 31, 11, 22, 26 ],
+            "friday": [ 30, 10, 21, 25 ],
+            "saturday": [ 29, 9, 20, 24 ],
+            "sunday": [ 28, 8, 19, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 187,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_tradesovpost_00018.jpg',
+          title: 'Smoke cigarettes captain ...',
+          artist: 'S.Sakharov',
+          year: '1939',
+          rule: {
+            "monday": [ 28, 8, 19, 23 ],
+            "tuesday": [ 27, 7, 8, 22 ],
+            "wednesday": [ 5, 6, 17, 21 ],
+            "thursday": [ 1, 12, 23, 27 ],
+            "friday": [ 31, 11, 22, 26 ],
+            "saturday": [ 30, 10, 21, 25 ],
+            "sunday": [ 29, 9, 20, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 188,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_tradesovpost_00014.jpg',
+          title: 'Smoke cigarettes "Derby"',
+          artist: 'I.Bograd',
+          year: '1936',
+          rule: {
+            "monday": [ 29, 9, 20, 24 ],
+            "tuesday": [ 28, 8, 19, 23 ],
+            "wednesday": [ 27, 7, 8, 22 ],
+            "thursday": [ 5, 6, 17, 21 ],
+            "friday": [ 1, 12, 23, 27 ],
+            "saturday": [ 31, 11, 22, 26 ],
+            "sunday": [ 30, 10, 21, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 189,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_tradesovpost_00013.jpg',
+          title: 'Conserves SOCRA',
+          artist: 'S.Igumnov',
+          year: '1932',
+          rule: {
+            "monday": [ 31, 11, 22, 26 ],
+            "tuesday": [ 30, 10, 21, 25 ],
+            "wednesday": [ 29, 9, 20, 24 ],
+            "thursday": [ 28, 8, 9, 23 ],
+            "friday": [ 6, 7, 18, 22 ],
+            "saturday": [ 2, 13, 24, 28 ],
+            "sunday": [ 1, 12, 23, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 190,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_tradesovpost_00011.jpg',
+          title: 'Iris-Prima.Mosselprom',
+          artist: 'A.Zelensky',
+          year: '1930',
+          rule: {
+            "monday": [ 1, 12, 23, 27 ],
+            "tuesday": [ 31, 11, 22, 26 ],
+            "wednesday": [ 30, 10, 21, 25 ],
+            "thursday": [ 29, 9, 20, 24 ],
+            "friday": [ 28, 8, 9, 23 ],
+            "saturday": [ 6, 7, 18, 22 ],
+            "sunday": [ 2, 13, 24, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
