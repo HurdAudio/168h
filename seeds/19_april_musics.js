@@ -2596,6 +2596,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 145,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1919415252/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://worldgalaxyrecords.bandcamp.com/album/thelonious-sphere-monk',
+          a_string: 'Thelonious Sphere Monk by Mast',
+          rule: {
+            "monday": [ 22, 30, 12, 17 ],
+            "tuesday": [ 21, 29, 11, 16 ],
+            "wednesday": [ 20, 28, 10, 15 ],
+            "thursday": [ 24, 2, 14, 19 ],
+            "saturday": [ 23, 1, 13, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 146,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2069771264/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://worldgalaxyrecords.bandcamp.com/album/light-magnet',
+          a_string: 'Light Magnet by Holophonor',
+          rule: {
+            "monday": [ 23, 1, 13, 18 ],
+            "tuesday": [ 22, 30, 12, 17 ],
+            "wednesday": [ 21, 29, 11, 16 ],
+            "thursday": [ 20, 28, 10, 15 ],
+            "saturday": [ 24, 2, 14, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 147,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2445484328/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://worldgalaxyrecords.bandcamp.com/album/the-heart-of-infinite-change',
+          a_string: 'The Heart of Infinite Change by Natasha Agrama',
+          rule: {
+            "monday": [ 25, 3, 15, 20 ],
+            "tuesday": [ 24, 2, 14, 19 ],
+            "wednesday": [ 23, 1, 13, 18 ],
+            "thursday": [ 22, 30, 12, 17 ],
+            "saturday": [ 21, 29, 11, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
