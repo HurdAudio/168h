@@ -3504,6 +3504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 176,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/novemberuntitled-1967--/.jpg',
+          title: 'Untitled',
+          artist: 'Robert Grosvenor',
+          year: '1967',
+          rule: {
+            "monday": [ 2, 7, 12, 18 ],
+            "tuesday": [ 1, 6, 12, 16 ],
+            "wednesday": [ 30, 3, 11, 16 ],
+            "thursday": [ 29, 3, 10, 15 ],
+            "friday": [ 28, 3, 9, 14 ],
+            "saturday": [ 27, 2, 8, 15 ],
+            "sunday": [ 3, 8, 14, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 177,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/nile-1967.jpg',
+          title: 'Nile',
+          artist: 'Phillip King',
+          year: '1967',
+          rule: {
+            "monday": [ 3, 8, 14, 19 ],
+            "tuesday": [ 2, 7, 12, 18 ],
+            "wednesday": [ 1, 6, 12, 16 ],
+            "thursday": [ 30, 3, 11, 16 ],
+            "friday": [ 29, 3, 10, 15 ],
+            "saturday": [ 28, 3, 9, 14 ],
+            "sunday": [ 27, 2, 8, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 178,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/the-absolutely-naked-fragrance-1967.jpg',
+          title: 'The Absolutely Naked Fragrance',
+          artist: 'John McCracken',
+          year: '1967',
+          rule: {
+            "monday": [ 27, 2, 8, 15 ],
+            "tuesday": [ 3, 8, 14, 19 ],
+            "wednesday": [ 2, 7, 12, 18 ],
+            "thursday": [ 1, 6, 12, 16 ],
+            "friday": [ 30, 3, 11, 16 ],
+            "saturday": [ 29, 3, 10, 15 ],
+            "sunday": [ 28, 3, 9, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 179,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/room-19-1968.jpg',
+          title: 'Room 19',
+          artist: 'Imi Knoebel',
+          year: '1968',
+          rule: {
+            "monday": [ 28, 3, 9, 14 ],
+            "tuesday": [ 27, 2, 8, 15 ],
+            "wednesday": [ 3, 8, 14, 19 ],
+            "thursday": [ 2, 7, 12, 18 ],
+            "friday": [ 1, 6, 12, 16 ],
+            "saturday": [ 30, 3, 11, 16 ],
+            "sunday": [ 29, 3, 10, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 180,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/3-inch-high-33-foot-long-epoxy-paint-band-1968.jpg',
+          title: '3 inch high 33 foot long Epoxy Paint Band',
+          artist: 'Robert Huot',
+          year: '1968',
+          rule: {
+            "monday": [ 29, 3, 10, 15 ],
+            "tuesday": [ 28, 3, 9, 14 ],
+            "wednesday": [ 27, 2, 8, 15 ],
+            "thursday": [ 3, 8, 14, 19 ],
+            "friday": [ 2, 7, 12, 18 ],
+            "saturday": [ 1, 6, 12, 16 ],
+            "sunday": [ 30, 3, 11, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
