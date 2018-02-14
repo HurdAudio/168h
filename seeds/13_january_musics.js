@@ -2920,6 +2920,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 163,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3245047794/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://xirecords.bandcamp.com/album/experimenting-with-household-chemicals',
+          a_string: 'Experimenting With Household Chemicals by Peter Zummo',
+          rule: {
+            "monday": [ 2, 9, 10, 11 ],
+            "tuesday": [ 1, 8, 9, 10 ],
+            "wednesday": [ 31, 6, 7, 8 ],
+            "thursday": [ 30, 6, 7, 8 ],
+            "saturday": [ 3, 10, 11, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 164,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3215739800/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tristaneckerson.bandcamp.com/album/pan-galactic-three-day-pass',
+          a_string: 'Pan Galactic Three Day Pass by Tristan Eckerson',
+          rule: {
+            "monday": [ 3, 10, 11, 12 ],
+            "tuesday": [ 2, 9, 10, 11 ],
+            "wednesday": [ 1, 8, 9, 10 ],
+            "thursday": [ 31, 6, 7, 8 ],
+            "saturday": [ 30, 6, 7, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 165,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1422587756/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sybarite5.bandcamp.com/album/outliers',
+          a_string: 'Outliers by Sybarite5',
+          rule: {
+            "monday": [ 30, 6, 7, 8 ],
+            "tuesday": [ 3, 10, 11, 12 ],
+            "wednesday": [ 2, 9, 10, 11 ],
+            "thursday": [ 1, 8, 9, 10 ],
+            "saturday": [ 31, 6, 7, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
