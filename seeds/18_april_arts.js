@@ -4904,6 +4904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 246,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/9575371-mlb-cincinnati-reds-at-st.-louis-cardinals.jpg',
+          title: 'St. Louis Cardinals starting pitcher Alex Reyes (61) celebrates with catcher Yadier Molina (4) after getting the final out of the sixth inning against the Cincinnati Reds during the sixth inning at Busch Stadium',
+          artist: 'Jeff Curry',
+          year: '2016',
+          rule: {
+            "monday": [ 19, 9, 15, 22 ],
+            "tuesday": [ 4, 9, 15, 21 ],
+            "wednesday": [ 3, 7, 22, 20 ],
+            "thursday": [ 2, 7, 12, 18 ],
+            "friday": [ 1, 6, 12, 18 ],
+            "saturday": [ 30, 5, 11, 17 ],
+            "sunday": [ 5, 11, 16, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 247,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/cardinals-astros-videoSmall.jpg',
+          title: 'Cardinals Astros',
+          artist: '?',
+          year: '2017',
+          rule: {
+            "monday": [ 5, 11, 16, 23 ],
+            "tuesday": [ 19, 9, 15, 22 ],
+            "wednesday": [ 4, 9, 15, 21 ],
+            "thursday": [ 3, 7, 22, 20 ],
+            "friday": [ 2, 7, 12, 18 ],
+            "saturday": [ 1, 6, 12, 18 ],
+            "sunday": [ 30, 5, 11, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 248,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/59df5070925e32f5ed6893f5.jpeg',
+          title: 'St. Louis Cardinals',
+          artist: 'Getty Images',
+          year: '2017',
+          rule: {
+            "monday": [ 30, 5, 11, 17 ],
+            "tuesday": [ 5, 11, 16, 23 ],
+            "wednesday": [ 19, 9, 15, 22 ],
+            "thursday": [ 4, 9, 15, 21 ],
+            "friday": [ 3, 7, 22, 20 ],
+            "saturday": [ 2, 7, 12, 18 ],
+            "sunday": [ 1, 6, 12, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 249,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/LWOOD_STLOUIS_CARDINALS_TICKETS.jpg',
+          title: '2017 St. Louis Cardinals Tickets',
+          artist: '?',
+          year: '2017',
+          rule: {
+            "monday": [ 1, 6, 12, 18 ],
+            "tuesday": [ 30, 5, 11, 17 ],
+            "wednesday": [ 5, 11, 16, 23 ],
+            "thursday": [ 19, 9, 15, 22 ],
+            "friday": [ 4, 9, 15, 21 ],
+            "saturday": [ 3, 7, 22, 20 ],
+            "sunday": [ 2, 7, 12, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 250,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/cheap-st-louis-cardinals-tickets.jpg',
+          title: 'Cheap St. Louis Cardinals Tickets',
+          artist: '?',
+          year: '2017',
+          rule: {
+            "monday": [ 2, 7, 12, 18 ],
+            "tuesday": [ 1, 6, 12, 18 ],
+            "wednesday": [ 30, 5, 11, 17 ],
+            "thursday": [ 5, 11, 16, 23 ],
+            "friday": [ 19, 9, 15, 22 ],
+            "saturday": [ 4, 9, 15, 21 ],
+            "sunday": [ 3, 7, 22, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
