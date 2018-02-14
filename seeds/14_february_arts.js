@@ -5304,6 +5304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 266,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/fob_agenda-africobra-olympicvictory-alonzoparham-teaser.jpg',
+          title: 'AfriCOBRA sketch',
+          artist: 'unknown',
+          year: '?',
+          rule: {
+            "monday": [ 16, 21, 27, 8 ],
+            "tuesday": [ 15, 23, 2, 10 ],
+            "wednesday": [ 17, 27, 4, 10 ],
+            "thursday": [ 19, 27, 6, 16 ],
+            "friday": [ 21, 29, 25, 15 ],
+            "saturday": [ 9, 17, 25, 4 ],
+            "sunday": [ 11, 19, 27, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 267,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/mt-whycantwejustsitdownandtalkitover-mickalenethomas.jpg',
+          title: 'Why Cant We Just Sit Down And Talk It Over',
+          artist: 'Mickalene Thoma',
+          year: '?',
+          rule: {
+            "monday": [ 11, 19, 27, 6 ],
+            "tuesday": [ 16, 21, 27, 8 ],
+            "wednesday": [ 15, 23, 2, 10 ],
+            "thursday": [ 17, 27, 4, 10 ],
+            "friday": [ 19, 27, 6, 16 ],
+            "saturday": [ 21, 29, 25, 15 ],
+            "sunday": [ 9, 17, 25, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 268,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/art-paintings-15.jpg',
+          title: 'Labour Painting',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 9, 17, 25, 4 ],
+            "tuesday": [ 11, 19, 27, 6 ],
+            "wednesday": [ 16, 21, 27, 8 ],
+            "thursday": [ 15, 23, 2, 10 ],
+            "friday": [ 17, 27, 4, 10 ],
+            "saturday": [ 19, 27, 6, 16 ],
+            "sunday": [ 21, 29, 25, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 269,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/confrontation.jpg',
+          title: 'Confrontation at the Bridge',
+          artist: 'Jacob Lawrence',
+          year: '1974',
+          rule: {
+            "monday": [ 21, 29, 25, 15 ],
+            "tuesday": [ 9, 17, 25, 4 ],
+            "wednesday": [ 11, 19, 27, 6 ],
+            "thursday": [ 16, 21, 27, 8 ],
+            "friday": [ 15, 23, 2, 10 ],
+            "saturday": [ 17, 27, 4, 10 ],
+            "sunday": [ 19, 27, 6, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 270,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/mask.jpg',
+          title: 'If I Were Jehovah',
+          artist: 'Jon Onye Lockard',
+          year: '1970',
+          rule: {
+            "monday": [ 19, 27, 6, 16 ],
+            "tuesday": [ 21, 29, 25, 15 ],
+            "wednesday": [ 9, 17, 25, 4 ],
+            "thursday": [ 11, 19, 27, 6 ],
+            "friday": [ 16, 21, 27, 8 ],
+            "saturday": [ 15, 23, 2, 10 ],
+            "sunday": [ 17, 27, 4, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
