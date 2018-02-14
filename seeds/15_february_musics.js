@@ -2812,6 +2812,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 157,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2784148788/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://basabasa.bandcamp.com/album/homowo',
+          a_string: 'Homowo by Basa Basa',
+          rule: {
+            "monday": [ 23, 28, 1, 13 ],
+            "tuesday": [ 24, 28, 1, 5 ],
+            "wednesday": [ 27, 1, 3, 7 ],
+            "thursday": [ 28, 3, 5, 7 ],
+            "saturday": [ 11, 5, 7, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 158,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/track=4098962869/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://suggsavage.bandcamp.com/track/party-dawg',
+          a_string: 'Party Dawg by Sugg Savage',
+          rule: {
+            "monday": [ 11, 5, 7, 13 ],
+            "tuesday": [ 23, 28, 1, 13 ],
+            "wednesday": [ 24, 28, 1, 5 ],
+            "thursday": [ 27, 1, 3, 7 ],
+            "saturday": [ 28, 3, 5, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 159,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1494648376/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://akoko.bandcamp.com/album/cataraps-3',
+          a_string: 'CATARAPS by AKOKO',
+          rule: {
+            "monday": [ 28, 3, 5, 7 ],
+            "tuesday": [ 11, 5, 7, 13 ],
+            "wednesday": [ 23, 28, 1, 13 ],
+            "thursday": [ 24, 28, 1, 5 ],
+            "saturday": [ 27, 1, 3, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
