@@ -2272,6 +2272,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 127,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3195185275/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://joan-as-policewoman.bandcamp.com/album/damned-devotion',
+          a_string: 'Damned Devotion by Joan As Policewoman',
+          rule: {
+            "monday": [ 19, 21, 25, 2 ],
+            "tuesday": [ 18, 20, 24, 1 ],
+            "wednesday": [ 17, 18, 23, 31 ],
+            "thursday": [ 16, 18, 22, 30 ],
+            "saturday": [ 20, 22, 26, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 128,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1503174799/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ought.bandcamp.com/album/room-inside-the-world',
+          a_string: 'Room Inside the World by Ought',
+          rule: {
+            "monday": [ 20, 22, 26, 3 ],
+            "tuesday": [ 19, 21, 25, 2 ],
+            "wednesday": [ 18, 20, 24, 1 ],
+            "thursday": [ 17, 18, 23, 31 ],
+            "saturday": [ 16, 18, 22, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 129,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=917780450/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://hominidsounds.bandcamp.com/album/shame-spiral',
+          a_string: 'Shame Spiral by USA Nails',
+          rule: {
+            "monday": [ 16, 18, 22, 30 ],
+            "tuesday": [ 20, 22, 26, 3 ],
+            "wednesday": [ 19, 21, 25, 2 ],
+            "thursday": [ 18, 20, 24, 1 ],
+            "saturday": [ 17, 18, 23, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
