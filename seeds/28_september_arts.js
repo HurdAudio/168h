@@ -3904,6 +3904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 196,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/minuet-1966.jpg',
+          title: 'Minuet',
+          artist: 'Tess Jaray',
+          year: '1966',
+          rule: {
+            "monday": [ 28, 4, 22, 30 ],
+            "tuesday": [ 27, 3, 21, 29 ],
+            "wednesday": [ 26, 2, 20, 28 ],
+            "thursday": [ 25, 1, 19, 27 ],
+            "friday": [ 24, 30, 18, 25 ],
+            "saturday": [ 30, 6, 24, 2 ],
+            "sunday": [ 29, 5, 23, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 197,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/the-rain-of-light-1994.jpg',
+          title: 'The Rain of Light',
+          artist: 'Silviu Oravitzan',
+          year: '1994',
+          rule: {
+            "monday": [ 29, 5, 23, 1 ],
+            "tuesday": [ 28, 4, 22, 30 ],
+            "wednesday": [ 27, 3, 21, 29 ],
+            "thursday": [ 26, 2, 20, 28 ],
+            "friday": [ 25, 1, 19, 27 ],
+            "saturday": [ 24, 30, 18, 25 ],
+            "sunday": [ 30, 6, 24, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 198,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/one-way-1984.jpg',
+          title: 'One Way',
+          artist: 'Robert Cottingham',
+          year: '1984',
+          rule: {
+            "monday": [ 30, 6, 24, 2 ],
+            "tuesday": [ 29, 5, 23, 1 ],
+            "wednesday": [ 28, 4, 22, 30 ],
+            "thursday": [ 27, 3, 21, 29 ],
+            "friday": [ 26, 2, 20, 28 ],
+            "saturday": [ 25, 1, 19, 27 ],
+            "sunday": [ 24, 30, 18, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 199,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/untitled-may-20-1950.jpg',
+          title: 'Untitled (May 20)',
+          artist: 'Myron Stout',
+          year: '1950',
+          rule: {
+            "monday": [ 24, 30, 18, 25 ],
+            "tuesday": [ 30, 6, 24, 2 ],
+            "wednesday": [ 29, 5, 23, 1 ],
+            "thursday": [ 28, 4, 22, 30 ],
+            "friday": [ 27, 3, 21, 29 ],
+            "saturday": [ 26, 2, 20, 28 ],
+            "sunday": [ 25, 1, 19, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 200,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/alta-pink-corner-projection-1968.jpg',
+          title: 'Alta Pink (Corner Projection)',
+          artist: 'James Turrell',
+          year: '1968',
+          rule: {
+            "monday": [ 25, 1, 19, 27 ],
+            "tuesday": [ 24, 30, 18, 25 ],
+            "wednesday": [ 30, 6, 24, 2 ],
+            "thursday": [ 29, 5, 23, 1 ],
+            "friday": [ 28, 4, 22, 30 ],
+            "saturday": [ 27, 3, 21, 29 ],
+            "sunday": [ 26, 2, 20, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
