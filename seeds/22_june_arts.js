@@ -4504,6 +4504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 226,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/Aktikompositsioon_19_(J._Künnap).jpg',
+          title: 'Aktikompositsioon 19',
+          artist: 'Jaan Künnap',
+          year: '1988',
+          rule: {
+            "monday": [ 2, 12, 22, 28 ],
+            "tuesday": [ 1, 11, 21, 29 ],
+            "wednesday": [ 30, 10, 20, 28 ],
+            "thursday": [ 29, 9, 19, 27 ],
+            "friday": [ 28, 8, 18, 26 ],
+            "saturday": [ 27, 7, 17, 25 ],
+            "sunday": [ 26, 6, 16, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 227,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/Alfred_Stieglitz_(American_-_The_Steerage_-_Google_Art_Project.jpg',
+          title: 'The Steerage',
+          artist: 'Alfred Stieglitz',
+          year: '1907',
+          rule: {
+            "monday": [ 26, 6, 16, 24 ],
+            "tuesday": [ 2, 12, 22, 28 ],
+            "wednesday": [ 1, 11, 21, 29 ],
+            "thursday": [ 30, 10, 20, 28 ],
+            "friday": [ 29, 9, 19, 27 ],
+            "saturday": [ 28, 8, 18, 26 ],
+            "sunday": [ 27, 7, 17, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 228,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/E.-E.-McCollum2.jpg',
+          title: 'Black and White Fine Photography',
+          artist: 'E. E. McCollum',
+          year: '?',
+          rule: {
+            "monday": [ 27, 7, 17, 25 ],
+            "tuesday": [ 26, 6, 16, 24 ],
+            "wednesday": [ 2, 12, 22, 28 ],
+            "thursday": [ 1, 11, 21, 29 ],
+            "friday": [ 30, 10, 20, 28 ],
+            "saturday": [ 29, 9, 19, 27 ],
+            "sunday": [ 28, 8, 18, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 229,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/02_11155991-lg.jpg',
+          title: 'Water on Model',
+          artist: 'Isak Sellanraa',
+          year: '2010',
+          rule: {
+            "monday": [ 28, 8, 18, 26 ],
+            "tuesday": [ 27, 7, 17, 25 ],
+            "wednesday": [ 26, 6, 16, 24 ],
+            "thursday": [ 2, 12, 22, 28 ],
+            "friday": [ 1, 11, 21, 29 ],
+            "saturday": [ 30, 10, 20, 28 ],
+            "sunday": [ 29, 9, 19, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 230,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/08_9235116-lg.jpg',
+          title: 'Menu in Crisis Time',
+          artist: 'Antonio Diaz',
+          year: '2009',
+          rule: {
+            "monday": [ 29, 9, 19, 27 ],
+            "tuesday": [ 28, 8, 18, 26 ],
+            "wednesday": [ 27, 7, 17, 25 ],
+            "thursday": [ 26, 6, 16, 24 ],
+            "friday": [ 2, 12, 22, 28 ],
+            "saturday": [ 1, 11, 21, 29 ],
+            "sunday": [ 30, 10, 20, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
