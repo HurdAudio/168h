@@ -1948,6 +1948,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 109,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=7518368/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ayearinthecountry.bandcamp.com/album/the-forest-the-wald-2',
+          a_string: 'The Forest / The Wald by A Year In The Country',
+          rule: {
+            "monday": [ 20, 30, 9, 12 ],
+            "tuesday": [ 19, 29, 9, 11 ],
+            "wednesday": [ 23, 2, 12, 15 ],
+            "thursday": [ 22, 1, 11, 14 ],
+            "saturday": [ 21, 31, 10, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 110,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3619179189/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://current931.bandcamp.com/album/all-the-pretty-little-horses',
+          a_string: 'All The Pretty Little Horses by Current 93',
+          rule: {
+            "monday": [ 21, 31, 10, 13 ],
+            "tuesday": [ 20, 30, 9, 12 ],
+            "wednesday": [ 19, 29, 9, 11 ],
+            "thursday": [ 23, 2, 12, 15 ],
+            "saturday": [ 22, 1, 11, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 111,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1506281696/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://theheartwoodinstitute.bandcamp.com/album/witchcraft-70',
+          a_string: 'Witchcraft &#39;70 by The Heartwood Institute',
+          rule: {
+            "monday": [ 22, 1, 11, 14 ],
+            "tuesday": [ 21, 31, 10, 13 ],
+            "wednesday": [ 20, 30, 9, 12 ],
+            "thursday": [ 19, 29, 9, 11 ],
+            "saturday": [ 23, 2, 12, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
