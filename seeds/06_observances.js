@@ -9215,6 +9215,39 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 590,
+          user_id: 1,
+          name: 'Marshall Allen (alto saxophone/flute/EVI) born in 1924',
+          color: '#A22D1C',
+          picture: './img/musicians/marshallallen.png',
+          day_of: new Date ('1924-05-25T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: true,
+          override_content: {
+            "sources": [ 'bandcamp', 'bandcamp', 'bandcamp' ],
+            "src_strings": [ 'https://bandcamp.com/EmbeddedPlayer/album=1318856636/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=2663593403/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=624313275/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/' ],
+            "href_strings": [ 'http://caribouband.bandcamp.com/album/caribou-vibration-ensemble-featuring-marshall-allen', 'http://sunrastrut.bandcamp.com/album/marshall-allen-presents-sun-ra-and-his-arkestra-in-the-orbit-of-ra', 'http://eremiterecords.bandcamp.com/album/the-all-star-game' ],
+            "a_strings": [ 'Caribou Vibration Ensemble Featuring Marshall Allen by Caribou Vibration Ensemble', 'Marshall Allen presents Sun Ra And His Arkestra: In The Orbit Of Ra by Sun Ra', 'The All Star Game by Marshall Allen, Hamid Drake, Kidd Jordan, William Parker, Alan Silva' ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 591,
+          user_id: 1,
+          name: 'The world ended on this day in the year 1000 as predicted by the most devout Pope Sylvester II.',
+          color: '#F0CB73',
+          picture: './img/doomsday/Silvester_II.jpeg',
+          day_of: new Date ('1000-01-01T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
