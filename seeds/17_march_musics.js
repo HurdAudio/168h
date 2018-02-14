@@ -2704,6 +2704,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 151,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3140356033/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://viviankrist.bandcamp.com/album/cold-sun',
+          a_string: 'Cold Sun by VIVIANKRIST',
+          rule: {
+            "monday": [ 25, 31, 6, 14 ],
+            "tuesday": [ 24, 30, 5, 14 ],
+            "wednesday": [ 22, 29, 4, 12 ],
+            "thursday": [ 22, 28, 3, 11 ],
+            "saturday": [ 26, 1, 7, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 152,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3767548441/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://risaripa.bandcamp.com/album/tokyo',
+          a_string: 'Tokyo by risaripa x viviankrist',
+          rule: {
+            "monday": [ 26, 1, 7, 15 ],
+            "tuesday": [ 25, 31, 6, 14 ],
+            "wednesday": [ 24, 30, 5, 14 ],
+            "thursday": [ 22, 29, 4, 12 ],
+            "saturday": [ 22, 28, 3, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 153,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3636947880/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://viviankrist.bandcamp.com/album/oslo-risaripa-x-viviankrist',
+          a_string: 'Oslo - risaripa x viviankrist by Viviankrist x risaripa',
+          rule: {
+            "monday": [ 22, 28, 3, 11 ],
+            "tuesday": [ 26, 1, 7, 15 ],
+            "wednesday": [ 25, 31, 6, 14 ],
+            "thursday": [ 24, 30, 5, 14 ],
+            "saturday": [ 22, 29, 4, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
