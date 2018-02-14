@@ -2380,6 +2380,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 133,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2327071401/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://celer.bandcamp.com/album/landmarks',
+          a_string: 'Landmarks by Celer + Forest Management',
+          rule: {
+            "monday": [ 16, 24, 26, 7 ],
+            "tuesday": [ 20, 24, 30, 11 ],
+            "wednesday": [ 19, 22, 27, 9 ],
+            "thursday": [ 18, 22, 27, 9 ],
+            "saturday": [ 18, 21, 27, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 134,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1348975170/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://celer.bandcamp.com/album/in-the-end-youll-just-disappear',
+          a_string: 'In the End You&#39;ll Just Disappear by Celer',
+          rule: {
+            "monday": [ 18, 21, 27, 8 ],
+            "tuesday": [ 16, 24, 26, 7 ],
+            "wednesday": [ 20, 24, 30, 11 ],
+            "thursday": [ 19, 22, 27, 9 ],
+            "saturday": [ 18, 22, 27, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 135,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=263019383/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://celer.bandcamp.com/album/alcoves',
+          a_string: 'Alcoves by Celer',
+          rule: {
+            "monday": [ 18, 22, 27, 9 ],
+            "tuesday": [ 18, 21, 27, 8 ],
+            "wednesday": [ 16, 24, 26, 7 ],
+            "thursday": [ 20, 24, 30, 11 ],
+            "saturday": [ 19, 22, 27, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
