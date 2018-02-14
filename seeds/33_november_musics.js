@@ -1840,6 +1840,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 103,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1504707769/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://djkatapila.bandcamp.com/album/aroo-ep',
+          a_string: 'Aroo EP by DJ Katapila',
+          rule: {
+            "monday": [ 16, 27, 8, 12 ],
+            "tuesday": [ 15, 26, 7, 11 ],
+            "wednesday": [ 14, 25, 6, 10 ],
+            "thursday": [ 13, 24, 5, 7 ],
+            "saturday": [ 12, 23, 4, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 104,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4095482276/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://djkatapila.bandcamp.com/album/trotro-12',
+          a_string: 'Trotro 12&quot; by DJ Katapila',
+          rule: {
+            "monday": [ 12, 23, 4, 6 ],
+            "tuesday": [ 16, 27, 8, 12 ],
+            "wednesday": [ 15, 26, 7, 11 ],
+            "thursday": [ 14, 25, 6, 10 ],
+            "saturday": [ 13, 24, 5, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 105,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1966281918/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://professorrhythm.bandcamp.com/album/bafana-bafana',
+          a_string: 'Bafana Bafana by Professor Rhythm',
+          rule: {
+            "monday": [ 14, 25, 6, 8 ],
+            "tuesday": [ 13, 24, 5, 7 ],
+            "wednesday": [ 17, 28, 9, 13 ],
+            "thursday": [ 16, 27, 8, 12 ],
+            "saturday": [ 15, 26, 7, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
