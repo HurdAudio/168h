@@ -5504,6 +5504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 276,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/twenty-1968.jpg',
+          title: 'Twenty',
+          artist: 'Thomas Downing',
+          year: '1968',
+          rule: {
+            "monday": [ 8, 9, 20, 12 ],
+            "tuesday": [ 11, 13, 5, 25 ],
+            "wednesday": [ 13, 14, 6, 9 ],
+            "thursday": [ 16, 17, 8, 12 ],
+            "friday": [ 19, 21, 22, 24 ],
+            "saturday": [ 21, 23, 27, 30 ],
+            "sunday": [ 23, 25, 26, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 277,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/paisaje-espejismo-2000.jpg',
+          title: 'Paisaje Espejismo',
+          artist: 'Gunther Gerzso',
+          year: '2000',
+          rule: {
+            "monday": [ 23, 25, 26, 29 ],
+            "tuesday": [ 8, 9, 20, 12 ],
+            "wednesday": [ 11, 13, 5, 25 ],
+            "thursday": [ 13, 14, 6, 9 ],
+            "friday": [ 16, 17, 8, 12 ],
+            "saturday": [ 19, 21, 22, 24 ],
+            "sunday": [ 21, 23, 27, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 278,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/people-1982.jpg',
+          title: 'People',
+          artist: 'Leon Ferrari',
+          year: '1982',
+          rule: {
+            "monday": [ 21, 23, 27, 30 ],
+            "tuesday": [ 23, 25, 26, 29 ],
+            "wednesday": [ 8, 9, 20, 12 ],
+            "thursday": [ 11, 13, 5, 25 ],
+            "friday": [ 13, 14, 6, 9 ],
+            "saturday": [ 16, 17, 8, 12 ],
+            "sunday": [ 19, 21, 22, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 279,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/farblitho-1968-2-nor-1968.jpg',
+          title: 'Farblitho 1968 - 2 (NOR)',
+          artist: 'Ernst Wilhelm Nay',
+          year: '1968',
+          rule: {
+            "monday": [ 19, 21, 22, 24 ],
+            "tuesday": [ 21, 23, 27, 30 ],
+            "wednesday": [ 23, 25, 26, 29 ],
+            "thursday": [ 8, 9, 20, 12 ],
+            "friday": [ 11, 13, 5, 25 ],
+            "saturday": [ 13, 14, 6, 9 ],
+            "sunday": [ 16, 17, 8, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 280,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/untitled-torn-sky-1970.jpg',
+          title: 'Untitled (Torn Sky)',
+          artist: 'Joe Goode',
+          year: '1970',
+          rule: {
+            "monday": [ 17, 18, 9, 13 ],
+            "tuesday": [ 20, 22, 23, 25 ],
+            "wednesday": [ 22, 24, 28, 31 ],
+            "thursday": [ 24, 26, 27, 30 ],
+            "friday": [ 9, 10, 21, 13 ],
+            "saturday": [ 12, 14, 6, 26 ],
+            "sunday": [ 14, 15, 7, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
