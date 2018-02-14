@@ -204,6 +204,89 @@
       vm.observanceReportDone = observanceReportDone;
       vm.artModuleDisplay = artModuleDisplay;
       vm.deleteTilesCurrate = deleteTilesCurrate;
+      vm.addNewMusic = addNewMusic;
+
+      function addNewMusic(currateMonth) {
+        let table = currateMonth + 'byuser';
+        let min = 1;
+        let max = 6;
+        let monthDays = 0;
+        switch(currateMonth) {
+          case('january_musics'):
+            monthDays = 31;
+            break;
+          case('february_musics'):
+            monthDays = 29;
+            break;
+          case('march_musics'):
+            monthDays = 31;
+            break;
+          case('april_musics'):
+            monthDays = 30;
+            break;
+          case('may_musics'):
+            monthDays = 31;
+            break;
+          case('june_musics'):
+            monthDays = 30;
+            break;
+          case('july_musics'):
+            monthDays = 31;
+            break;
+          case('august_musics'):
+            monthDays = 31;
+            break;
+          case('september_musics'):
+            monthDays = 30;
+            break;
+          case('october_musics'):
+            monthDays = 31;
+            break;
+          case('november_musics'):
+            monthDays = 30;
+            break;
+          case('december_musics'):
+            monthDays = 31;
+            break;
+          default:
+            console.log('unsupported month');
+        }
+        let subObj = {
+          user_id: currentUserId,
+          source: 'bandcamp',
+          src_string: '',
+          href_string: '',
+          a_string: '',
+
+        };
+        if ((currateMonth !== 'friday_musics') && (currateMonth !== 'sunday_musics')) {
+          subObj.rule = {
+            monday: artArrayRandomizer(monthDays, min, max),
+            tuesday: artArrayRandomizer(monthDays, min, max),
+            wednesday: artArrayRandomizer(monthDays, min, max),
+            thursday: artArrayRandomizer(monthDays, min, max),
+            saturday: artArrayRandomizer(monthDays, min, max)
+          };
+        }
+
+        $http.get(`/${table}/${currentUserId}`)
+        .then(userMusicsData=>{
+          let userMusics = userMusicsData.data;
+          if ((currateMonth !== 'friday_musics') && (currateMonth !== 'sunday_musics')) {
+            if (userMusics.length > 0) {
+              subObj.theme = userMusics[0].theme;
+            } else {
+              subObj.theme = '';
+            }
+          }
+          $http.post(`/${currateMonth}`, subObj)
+          .then(musicSlotData=>{
+            let musicSlot = musicSlotData.data[0];
+            console.log(musicSlot);
+            editMusicCurrate(currateMonth, musicSlot.id);
+          });
+        });
+      }
 
       function deleteTilesCurrate(filepath, tileId) {
         let userTilesCurratorDeleteConfirmDiv = document.getElementById('userTilesCurratorDeleteConfirmDiv');
@@ -1467,12 +1550,43 @@
         userArtCurratorEditorDoneButton.setAttribute("style", "visibility: visible;");
       }
 
+      function emptyMusicDelete(table, id) {
+        $http.delete(`/${table}/${id}`)
+        .then(()=>{
+          console.log('empty');
+        });
+      }
+
+      function jettisonEmptyMusics(table) {
+        let tableString = table + 'byuser'
+        $http.get(`/${tableString}/${currentUserId}`)
+        .then(userMusicsData=>{
+          let userMusics = userMusicsData.data;
+          if (userMusics.length > 0) {
+            for (let i = 0; i < userMusics.length; i++) {
+              if (userMusics[i].src_string === '') {
+                emptyMusicDelete(table, userMusics[i].id);
+              }
+            }
+          }
+        });
+      }
+
+      function cleanUpEmptyMusics() {
+        let musicTables = [ 'friday_musics', 'sunday_musics', 'january_musics', 'february_musics', 'march_musics', 'april_musics', 'may_musics', 'june_musics', 'july_musics', 'august_musics', 'september_musics', 'october_musics', 'november_musics', 'december_musics' ];
+
+        for (let i = 0; i < musicTables.length; i++) {
+          jettisonEmptyMusics(musicTables[i]);
+        }
+      }
+
       function userMusicCurratorEditorDone() {
         let userMusicCurratorEditorDiv = document.getElementById('userMusicCurratorEditorDiv');
         let musicCurratorManagerDone = document.getElementById('musicCurratorManagerDone');
 
         userMusicCurratorEditorDiv.setAttribute("style", "display: none;");
         musicCurratorManagerDone.setAttribute("style", "visibility: visible;");
+        cleanUpEmptyMusics();
       }
 
       function handleMusicFilterListener(eleCheck, value, musicSelection, musicMonth, weekday) {
