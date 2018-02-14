@@ -4304,6 +4304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 216,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/the-hair.jpg',
+          title: 'The Hair',
+          artist: 'Henri-Edmond Cross',
+          year: 'c.1892',
+          rule: {
+            "monday": [ 30, 10, 21, 22 ],
+            "tuesday": [ 29, 9, 19, 21 ],
+            "wednesday": [ 28, 8, 19, 20 ],
+            "thursday": [ 27, 7, 18, 29 ],
+            "friday": [ 2, 13, 24, 3 ],
+            "saturday": [ 1, 12, 23, 3 ],
+            "sunday": [ 31, 11, 22, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 217,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/jaundiced-cuckolds-handling-ochre.jpg',
+          title: 'Jaundiced Cuckolds Handling Ochre',
+          artist: 'Alphonse Allais',
+          year: '1884',
+          rule: {
+            "monday": [ 1, 12, 23, 3 ],
+            "tuesday": [ 31, 11, 22, 23 ],
+            "wednesday": [ 30, 10, 20, 22 ],
+            "thursday": [ 29, 9, 20, 21 ],
+            "friday": [ 28, 8, 19, 30 ],
+            "saturday": [ 3, 14, 25, 4 ],
+            "sunday": [ 2, 13, 24, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 218,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/unexpected-visit.jpg',
+          title: 'Unexpected Visit',
+          artist: 'Henri Gervex',
+          year: '?',
+          rule: {
+            "monday": [ 2, 13, 24, 4 ],
+            "tuesday": [ 1, 12, 23, 3 ],
+            "wednesday": [ 31, 11, 22, 23 ],
+            "thursday": [ 30, 10, 20, 22 ],
+            "friday": [ 29, 9, 20, 21 ],
+            "saturday": [ 28, 8, 19, 30 ],
+            "sunday": [ 3, 14, 25, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 219,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/joan-of-arc.jpg',
+          title: 'Joan Of Arc',
+          artist: 'Jules Bastien-Lepage',
+          year: '1879',
+          rule: {
+            "monday": [ 3, 14, 25, 4 ],
+            "tuesday": [ 2, 13, 24, 4 ],
+            "wednesday": [ 1, 12, 23, 3 ],
+            "thursday": [ 31, 11, 22, 23 ],
+            "friday": [ 30, 10, 20, 22 ],
+            "saturday": [ 29, 9, 20, 21 ],
+            "sunday": [ 28, 8, 19, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 220,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/gabriel-ferrier-l-auto-da-fe.jpg',
+          title: 'L’auto Da-fe',
+          artist: 'Gabriel Ferrier',
+          year: '?',
+          rule: {
+            "monday": [ 28, 8, 19, 30 ],
+            "tuesday": [ 3, 14, 25, 4 ],
+            "wednesday": [ 2, 13, 24, 4 ],
+            "thursday": [ 1, 12, 23, 3 ],
+            "friday": [ 31, 11, 22, 23 ],
+            "saturday": [ 30, 10, 20, 22 ],
+            "sunday": [ 29, 9, 20, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
