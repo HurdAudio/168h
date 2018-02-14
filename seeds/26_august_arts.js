@@ -4104,6 +4104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 206,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/cossack-mamai-1912.jpg',
+          title: 'Cossack Mamai',
+          artist: 'David Burliuk',
+          year: '1912',
+          rule: {
+            "monday": [ 27, 30, 8, 24 ],
+            "tuesday": [ 2, 6, 14, 30 ],
+            "wednesday": [ 1, 4, 13, 29 ],
+            "thursday": [ 31, 4, 12, 28 ],
+            "friday": [ 30, 3, 11, 27 ],
+            "saturday": [ 29, 31, 10, 26 ],
+            "sunday": [ 28, 31, 9, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 207,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/ruins-of-the-ancient-theatre-of-taormina-1905.jpg',
+          title: 'Ruins of the Ancient Theatre of Taormina',
+          artist: 'Tivadar Kosztka Csontvary',
+          year: '1905',
+          rule: {
+            "monday": [ 28, 31, 9, 25 ],
+            "tuesday": [ 27, 30, 8, 24 ],
+            "wednesday": [ 2, 6, 14, 30 ],
+            "thursday": [ 1, 4, 13, 29 ],
+            "friday": [ 31, 4, 12, 28 ],
+            "saturday": [ 30, 3, 11, 27 ],
+            "sunday": [ 29, 31, 10, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 208,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/red-christ-1922.jpg',
+          title: 'Red Christ',
+          artist: 'Lovis Corinth',
+          year: '1922',
+          rule: {
+            "monday": [ 29, 31, 10, 26 ],
+            "tuesday": [ 28, 31, 9, 25 ],
+            "wednesday": [ 27, 30, 8, 24 ],
+            "thursday": [ 2, 6, 14, 30 ],
+            "friday": [ 1, 4, 13, 29 ],
+            "saturday": [ 31, 4, 12, 28 ],
+            "sunday": [ 30, 3, 11, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 209,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/the-artist-s-sister-melanie-1908.jpg',
+          title: 'The Artist\'s Sister, Melanie',
+          artist: 'Egon Schiele',
+          year: '1908',
+          rule: {
+            "monday": [ 30, 3, 11, 27 ],
+            "tuesday": [ 29, 31, 10, 26 ],
+            "wednesday": [ 28, 31, 9, 25 ],
+            "thursday": [ 27, 30, 8, 24 ],
+            "friday": [ 2, 6, 14, 30 ],
+            "saturday": [ 1, 4, 13, 29 ],
+            "sunday": [ 31, 4, 12, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 210,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/untitled-boats-1913.jpg',
+          title: 'Untitled (boats)',
+          artist: 'Amadeo de Souza-Cardoso',
+          year: '1913',
+          rule: {
+            "monday": [ 1, 5, 13, 29 ],
+            "tuesday": [ 31, 4, 12, 28 ],
+            "wednesday": [ 30, 1, 11, 27 ],
+            "thursday": [ 29, 1, 10, 26 ],
+            "friday": [ 28, 31, 9, 25 ],
+            "saturday": [ 3, 7, 15, 31 ],
+            "sunday": [ 2, 5, 14, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
