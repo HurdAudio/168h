@@ -5090,7 +5090,7 @@ exports.seed = function(knex, Promise) {
           user_id: 1,
           theme: 'Women\'s History Month',
           img_path: './img/march/study-for-man-and-machine-1921.jpg',
-          title: 'tudy for Man and Machine',
+          title: 'Study for Man and Machine',
           artist: 'Hannah Hoch',
           year: '1921',
           rule: {
@@ -5101,6 +5101,106 @@ exports.seed = function(knex, Promise) {
             "friday": [ 2, 12, 20, 30 ],
             "saturday": [ 1, 11, 19, 29 ],
             "sunday": [ 31, 10, 18, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 256,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/a-little-boy-lost-1920-25.jpg',
+          title: 'A Little Boy Lost',
+          artist: 'Dorothy Lathrop',
+          year: '1920',
+          rule: {
+            "monday": [ 31, 10, 18, 28 ],
+            "tuesday": [ 30, 9, 18, 27 ],
+            "wednesday": [ 5, 14, 24, 1 ],
+            "thursday": [ 4, 14, 24, 1 ],
+            "friday": [ 4, 13, 21, 31 ],
+            "saturday": [ 2, 12, 20, 30 ],
+            "sunday": [ 1, 11, 19, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 257,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/the-hunter-s-moon-1955.jpg',
+          title: 'The Hunter’s Moon',
+          artist: 'Winifred Nicholson',
+          year: '1955',
+          rule: {
+            "monday": [ 1, 11, 19, 29 ],
+            "tuesday": [ 31, 10, 18, 28 ],
+            "wednesday": [ 30, 9, 18, 27 ],
+            "thursday": [ 5, 14, 24, 1 ],
+            "friday": [ 4, 14, 24, 1 ],
+            "saturday": [ 4, 13, 21, 31 ],
+            "sunday": [ 2, 12, 20, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 258,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/desnudo-femenino-ante-el-espejo.jpg',
+          title: 'Desnudo femenino ante el espejo',
+          artist: 'Antonietta Raphael',
+          year: '?',
+          rule: {
+            "monday": [ 2, 12, 20, 30 ],
+            "tuesday": [ 1, 11, 19, 29 ],
+            "wednesday": [ 31, 10, 18, 28 ],
+            "thursday": [ 30, 9, 18, 27 ],
+            "friday": [ 5, 14, 24, 1 ],
+            "saturday": [ 4, 14, 24, 1 ],
+            "sunday": [ 4, 13, 21, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 259,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/girl-in-yellow-sweater-1936.jpg',
+          title: 'Girl in Yellow Sweater',
+          artist: 'Prudence Heward',
+          year: '1936',
+          rule: {
+            "monday": [ 5, 14, 22, 1 ],
+            "tuesday": [ 3, 13, 21, 31 ],
+            "wednesday": [ 2, 12, 20, 30 ],
+            "thursday": [ 1, 11, 19, 29 ],
+            "friday": [ 31, 10, 19, 28 ],
+            "saturday": [ 6, 15, 25, 2 ],
+            "sunday": [ 5, 15, 25, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 260,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/406px-mortejeanne.jpg',
+          title: 'Death',
+          artist: 'Jeanne Hébuterne',
+          year: '1919',
+          rule: {
+            "monday": [ 5, 15, 25, 2 ],
+            "tuesday": [ 5, 14, 22, 1 ],
+            "wednesday": [ 3, 13, 21, 31 ],
+            "thursday": [ 2, 12, 20, 30 ],
+            "friday": [ 1, 11, 19, 29 ],
+            "saturday": [ 31, 10, 19, 28 ],
+            "sunday": [ 6, 15, 25, 2 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
