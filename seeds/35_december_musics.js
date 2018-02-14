@@ -1732,6 +1732,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 97,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=292221390/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://luakabop.bandcamp.com/album/brazil-classics-2-o-samba',
+          a_string: 'Brazil Classics 2: O Samba by Luaka Bop',
+          rule: {
+            "monday": [ 20, 26, 1, 7 ],
+            "tuesday": [ 19, 25, 31, 5 ],
+            "wednesday": [ 18, 24, 30, 5 ],
+            "thursday": [ 15, 23, 29, 4 ],
+            "saturday": [ 16, 22, 28, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 98,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4281459110/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://luakabop.bandcamp.com/album/brazil-classics-3-forr-etc-music-of-the-brazilian-northeast',
+          a_string: 'Brazil Classics 3: Forró etc.: Music of the Brazilian Northeast by Luaka Bop',
+          rule: {
+            "monday": [ 17, 23, 29, 4 ],
+            "tuesday": [ 21, 27, 2, 8 ],
+            "wednesday": [ 20, 26, 1, 6 ],
+            "thursday": [ 19, 25, 31, 6 ],
+            "saturday": [ 16, 24, 30, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 99,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=454619853/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tomze.bandcamp.com/album/brazil-classics-4-the-best-of-tom-z',
+          a_string: 'Brazil Classics 4: The Best of Tom Zé by Tom Ze',
+          rule: {
+            "monday": [ 16, 24, 30, 5 ],
+            "tuesday": [ 17, 23, 29, 4 ],
+            "wednesday": [ 21, 27, 2, 8 ],
+            "thursday": [ 20, 26, 1, 6 ],
+            "saturday": [ 19, 25, 31, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
