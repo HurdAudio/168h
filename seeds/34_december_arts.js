@@ -3304,6 +3304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 166,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/23-00,HosieryAd.jpg',
+          title: 'Sports Hosiery Ad',
+          artist: 'W. H. Hinton',
+          year: '1923',
+          rule: {
+            "monday": [ 23, 5, 13, 19 ],
+            "tuesday": [ 22, 3, 12, 18 ],
+            "wednesday": [ 21, 3, 22, 17 ],
+            "thursday": [ 27, 9, 17, 23 ],
+            "friday": [ 26, 8, 16, 22 ],
+            "saturday": [ 25, 7, 15, 21 ],
+            "sunday": [ 24, 6, 14, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 167,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/14-00,LostSister.jpg',
+          title: 'Little Lost Sister',
+          artist: 'Francis J. Hoban',
+          year: '1914',
+          rule: {
+            "monday": [ 24, 6, 14, 20 ],
+            "tuesday": [ 23, 5, 13, 19 ],
+            "wednesday": [ 22, 3, 12, 18 ],
+            "thursday": [ 21, 3, 22, 17 ],
+            "friday": [ 27, 9, 17, 23 ],
+            "saturday": [ 26, 8, 16, 22 ],
+            "sunday": [ 25, 7, 15, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 168,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/18-12,Scribners1.jpg',
+          title: 'Scribners',
+          artist: 'Edward Hopper',
+          year: '1918',
+          rule: {
+            "monday": [ 26, 8, 16, 22 ],
+            "tuesday": [ 25, 7, 15, 21 ],
+            "wednesday": [ 24, 6, 14, 20 ],
+            "thursday": [ 23, 4, 13, 19 ],
+            "friday": [ 22, 4, 23, 18 ],
+            "saturday": [ 28, 10, 18, 24 ],
+            "sunday": [ 27, 9, 17, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 169,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/18-11-04,LHomeJ.jpg',
+          title: 'Ladies Home',
+          artist: 'Gayle Hoskins',
+          year: '1918',
+          rule: {
+            "monday": [ 27, 9, 17, 23 ],
+            "tuesday": [ 26, 8, 16, 22 ],
+            "wednesday": [ 25, 7, 15, 21 ],
+            "thursday": [ 24, 6, 14, 20 ],
+            "friday": [ 23, 4, 13, 19 ],
+            "saturday": [ 22, 4, 23, 18 ],
+            "sunday": [ 28, 10, 18, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 170,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/09-00,CrmWht.jpg',
+          title: 'Advertisement',
+          artist: 'John Newton Howitt',
+          year: '1909',
+          rule: {
+            "monday": [ 28, 10, 18, 24 ],
+            "tuesday": [ 27, 9, 17, 23 ],
+            "wednesday": [ 26, 8, 16, 22 ],
+            "thursday": [ 25, 7, 15, 21 ],
+            "friday": [ 24, 6, 14, 20 ],
+            "saturday": [ 23, 4, 13, 19 ],
+            "sunday": [ 22, 4, 23, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
