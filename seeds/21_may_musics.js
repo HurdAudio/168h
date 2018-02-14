@@ -2488,6 +2488,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 139,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1844295587/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://injazerorecords.bandcamp.com/album/exit-ruminationExit Rumination by C. Diab',
+          a_string: '',
+          rule: {
+            "monday": [ 21, 27, 3, 16 ],
+            "tuesday": [ 20, 26, 2, 15 ],
+            "wednesday": [ 24, 30, 6, 19 ],
+            "thursday": [ 23, 29, 5, 18 ],
+            "saturday": [ 22, 28, 4, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 140,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3483655469/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://injazerorecords.bandcamp.com/album/injacomp001',
+          a_string: 'INJACOMP001 by Various Artists',
+          rule: {
+            "monday": [ 23, 29, 5, 18 ],
+            "tuesday": [ 22, 28, 4, 17 ],
+            "wednesday": [ 21, 27, 3, 16 ],
+            "thursday": [ 25, 1, 7, 20 ],
+            "saturday": [ 24, 30, 6, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 141,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=313673294/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://injazerorecords.bandcamp.com/album/adrift',
+          a_string: 'Adrift by Steve Gibbs',
+          rule: {
+            "monday": [ 24, 30, 6, 19 ],
+            "tuesday": [ 23, 29, 5, 18 ],
+            "wednesday": [ 22, 28, 4, 17 ],
+            "thursday": [ 21, 27, 3, 16 ],
+            "saturday": [ 25, 1, 7, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
