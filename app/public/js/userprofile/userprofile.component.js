@@ -205,6 +205,238 @@
       vm.artModuleDisplay = artModuleDisplay;
       vm.deleteTilesCurrate = deleteTilesCurrate;
       vm.addNewMusic = addNewMusic;
+      vm.artCurratorReport = artCurratorReport;
+      vm.artsCurratorReportDone = artsCurratorReportDone;
+
+      function artsCurratorReportDone() {
+
+        let reportForArtsCurrator = document.getElementById('reportForArtsCurrator');
+        let artCurratorManagerDone = document.getElementById('artCurratorManagerDone');
+
+        reportForArtsCurrator.setAttribute("style", "display: none;");
+        artCurratorManagerDone.setAttribute("style", "visibility: visible;");
+      }
+
+
+      function artCurratorReport(currateMonth) {
+        let today = new Date();
+        let year = parseInt(today.getFullYear());
+        // console.log(year + 1);
+        let userArtCurratorEditorDiv = document.getElementById('userArtCurratorEditorDiv');
+        let reportForArtsCurrator = document.getElementById('reportForArtsCurrator');
+        let artCurratorManagerDone = document.getElementById('artCurratorManagerDone');
+        let monthLength = 0;
+        let monthDaysTally = {};
+        let weekDays = [ 'sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday' ];
+        let checkDate;
+        let monthNum = '';
+        let dateNum = '';
+        let maxSelection = 0;
+
+        vm.artsCurratorReporting = [];
+        vm.artsCurratorReporting[0] = {};
+        let tableString = currateMonth + 'byuser';
+        let monthString = '';
+        switch(currateMonth) {
+          case('january_arts'):
+            monthString = 'January';
+            monthLength = 31;
+            monthNum = '01';
+            break;
+          case('february_arts'):
+            monthString = 'February';
+            monthLength = 29;
+            monthNum = '02';
+            break;
+          case('march_arts'):
+            monthString = 'March';
+            monthLength = 31;
+            monthNum = '03';
+            break;
+          case('april_arts'):
+            monthString = 'April';
+            monthLength = 30;
+            monthNum = '04';
+            break;
+          case('may_arts'):
+            monthString = 'May';
+            monthLength = 31;
+            monthNum = '05';
+            break;
+          case('june_arts'):
+            monthString = 'June';
+            monthLength = 30;
+            monthNum = '06';
+            break;
+          case('july_arts'):
+            monthString = 'July';
+            monthLength = 31;
+            monthNum = '07';
+            break;
+          case('august_arts'):
+            monthString = 'August';
+            monthLength = 31;
+            monthNum = '08';
+            break;
+          case('september_arts'):
+            monthString = 'September';
+            monthLength = 30;
+            monthNum = '09';
+            break;
+          case('october_arts'):
+            monthString = 'October';
+            monthLength = 31;
+            monthNum = '10';
+            break;
+          case('november_arts'):
+            monthString = 'November';
+            monthLength = 30;
+            monthNum = '11';
+            break;
+          case('december_arts'):
+            monthString = 'December';
+            monthLength = 31;
+            monthNum = '12';
+            break;
+          default:
+            console.log('unsupported month');
+        }
+        vm.artsCurratorReporting[0].month = monthString;
+
+        $http.get(`/${tableString}/${currentUserId}`)
+        .then(userArtData=>{
+          let userArt = userArtData.data;
+          let artsCurratorReportYearAdapter = document.getElementById('artsCurratorReportYearAdapter');
+          let artsCurratorReportYear = document.getElementById('artsCurratorReportYear');
+          if (artsCurratorReportYear) {
+            artsCurratorReportYear.parentNode.removeChild(artsCurratorReportYear);
+            artsCurratorReportYear = document.createElement('input');
+            artsCurratorReportYear.id = 'artsCurratorReportYear';
+            artsCurratorReportYearAdapter.appendChild(artsCurratorReportYear);
+            artsCurratorReportYear.type = 'number';
+            artsCurratorReportYear.className = 'pure-input-1';
+            artsCurratorReportYear.value = year;
+          }
+          vm.artsCurratorReporting[0].totalWorks = userArt.length;
+          if (userArt.length > 0) {
+            vm.artsCurratorReporting[0].theme = userArt[0].theme;
+            for (let i = 0; i < monthLength; i++) {
+              if (i < 9) {
+                dateNum = '0' + (i + 1).toString();
+              } else {
+                dateNum = (i + 1).toString();
+              }
+              checkDate = new Date(year + '-' + monthNum + '-' + dateNum + 'T13:44:00.000Z');
+              for (let j = 0; j < userArt.length; j++) {
+                if (userArt[j].rule[weekDays[checkDate.getDay()]].indexOf(checkDate.getDate()) !== -1) {
+                  if (monthDaysTally[checkDate.getDate().toString()] === undefined) {
+                    monthDaysTally[checkDate.getDate().toString()] = 1;
+                  } else {
+                    ++monthDaysTally[checkDate.getDate().toString()];
+                  }
+                  if (maxSelection < monthDaysTally[checkDate.getDate().toString()]) {
+                    maxSelection = monthDaysTally[checkDate.getDate().toString()];
+                  }
+                }
+              }
+            }
+            let artsCurratorReportGraphs = document.getElementById('artsCurratorReportGraphs');
+            console.log(artsCurratorReportGraphs);
+            while (artsCurratorReportGraphs.firstChild) {
+              artsCurratorReportGraphs.removeChild(artsCurratorReportGraphs.firstChild);
+            }
+            let dayElement;
+            let hostDiv;
+            let barDiv;
+            let pData;
+            for (let calDay = 1; calDay < (monthLength + 1); calDay++) {
+              dayElement = document.createElement('h2');
+              artsCurratorReportGraphs.appendChild(dayElement);
+              dayElement.innerHTML = calDay;
+              hostDiv = document.createElement('div');
+              dayElement.appendChild(hostDiv);
+              hostDiv.setAttribute("style", "width: 80%; height: 35px; border: solid 2px #000000;");
+              barDiv = document.createElement('div');
+              hostDiv.appendChild(barDiv);
+              barDiv.setAttribute("style", "height: 100%; background-image: url(" + userArt[Math.floor(Math.random() * userArt.length)].img_path + "); background-size: 150%; width: " + (Math.floor((monthDaysTally[calDay.toString()]/maxSelection) * 100)) + "%;");
+              pData = document.createElement('p');
+              dayElement.appendChild(pData);
+              pData.innerHTML = monthDaysTally[calDay.toString()] + ' available works';
+            }
+
+            artsCurratorReportYear.addEventListener('change', ()=>{
+              let changedYear = '';
+              if (artsCurratorReportYear.value < 1000) {
+                if (artsCurratorReportYear.value < 100) {
+                  if (artsCurratorReportYear.value < 10) {
+                    changedYear = '000' + artsCurratorReportYear.value.toString();
+                  } else {
+                    changedYear = '00' + artsCurratorReportYear.value.toString();
+                  }
+                } else {
+                  changedYear = '0' + artsCurratorReportYear.value.toString();
+                }
+              } else {
+                if (artsCurratorReportYear.value > 9999) {
+                  changedYear = year.toString();
+                  artsCurratorReportYear.value = year;
+                } else {
+                  changedYear = artsCurratorReportYear.value.toString();
+                }
+              }
+              if (userArt.length > 0) {
+                monthDaysTally = {};
+                for (let i = 0; i < monthLength; i++) {
+                  if (i < 9) {
+                    dateNum = '0' + (i + 1).toString();
+                  } else {
+                    dateNum = (i + 1).toString();
+                  }
+                  checkDate = new Date(changedYear + '-' + monthNum + '-' + dateNum + 'T13:44:00.000Z');
+                  for (let j = 0; j < userArt.length; j++) {
+                    if (userArt[j].rule[weekDays[checkDate.getDay()]].indexOf(checkDate.getDate()) !== -1) {
+                      if (monthDaysTally[checkDate.getDate().toString()] === undefined) {
+                        monthDaysTally[checkDate.getDate().toString()] = 1;
+                      } else {
+                        ++monthDaysTally[checkDate.getDate().toString()];
+                      }
+                      if (maxSelection < monthDaysTally[checkDate.getDate().toString()]) {
+                        maxSelection = monthDaysTally[checkDate.getDate().toString()];
+                      }
+                    }
+                  }
+                }
+
+                while (artsCurratorReportGraphs.firstChild) {
+                  artsCurratorReportGraphs.removeChild(artsCurratorReportGraphs.firstChild);
+                }
+
+                for (let calDay = 1; calDay < (monthLength + 1); calDay++) {
+                  dayElement = document.createElement('h2');
+                  artsCurratorReportGraphs.appendChild(dayElement);
+                  dayElement.innerHTML = calDay;
+                  hostDiv = document.createElement('div');
+                  dayElement.appendChild(hostDiv);
+                  hostDiv.setAttribute("style", "width: 80%; height: 35px; border: solid 2px #000000;");
+                  barDiv = document.createElement('div');
+                  hostDiv.appendChild(barDiv);
+                  barDiv.setAttribute("style", "height: 100%; background-image: url(" + userArt[Math.floor(Math.random() * userArt.length)].img_path + "); background-size: 150%; width: " + (Math.floor((monthDaysTally[calDay.toString()]/maxSelection) * 100)) + "%;");
+                  pData = document.createElement('p');
+                  dayElement.appendChild(pData);
+                  pData.innerHTML = monthDaysTally[calDay.toString()] + ' available works';
+                }
+              }
+            });
+          } else {
+            vm.artsCurratorReporting[0].theme = '';
+          }
+        });
+
+
+        userArtCurratorEditorDiv.setAttribute("style", "display: none;");
+        reportForArtsCurrator.setAttribute("style", "display: initial;");
+        artCurratorManagerDone.setAttribute("style", "visibility: hidden;");
+      }
 
       function addNewMusic(currateMonth) {
         let table = currateMonth + 'byuser';

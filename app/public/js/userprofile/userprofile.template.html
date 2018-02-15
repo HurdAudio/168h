@@ -4674,6 +4674,42 @@
 
     </div>
 
+    <div id="reportForArtsCurrator">
+      <div id="artsCurratorReportBar">
+        <a href="" class="btn" id="artsCurratorReportDone" ng-click="$ctrl.artsCurratorReportDone()">done</a>
+        <h1>Art Currator Report</h1>
+      </div>
+      <div id="artsCurratorReportBody">
+
+        <main ng-repeat="report in $ctrl.artsCurratorReporting | orderBy : $ctrl.sortBy">
+          <div class="reporter">
+            <h2 id="artsCurratorReportMonth">{{report.month}}
+              <div id="artsCurratorReportYearAdapter">
+                <input type="number" id="artsCurratorReportYear" class="pure-input-1">
+              </div>
+            </h2>
+            <h2>Theme: {{report.theme}}</h2>
+            <h2>Total Works: {{report.totalWorks}}</h2>
+            <br>
+            <h2>Coverage:</h2>
+            <div id="artsCurratorReportGraphs">
+              <h2 id="artsCurratorReportDay1">1<div id="artsCurratorReportDay1Div" class="barGraph"></div></h2>
+              <h2 id="artsCurratorReportDay2">2<div id="artsCurratorReportDay2Div" class="barGraph"></div></h2>
+              <h2 id="artsCurratorReportDay3">3<div id="artsCurratorReportDay3Div" class="barGraph"></div></h2>
+              <h2 id="artsCurratorReportDay4">4<div id="artsCurratorReportDay4Div" class="barGraph"></div></h2>
+            </div>
+
+
+
+
+          </div>
+
+        </main>
+
+      </div>
+
+    </div>
+
     <div id="userArtCurratorEditorDiv">
       <div id="userArtCurratorEditorBar">
         <a href="" class="btn" id="userArtCurratorEditorDoneButton" ng-click="$ctrl.userArtCurratorEditorDone()">done</a>
