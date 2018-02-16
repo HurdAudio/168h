@@ -410,6 +410,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FAFEF9',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 30,
+          user_id: 1,
+          theme: 'Water',
+          type: 'saturday',
+          src_string: '../img/april_tiles/beach-resort-390971_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '135%',
+          color_dark: '#0F1013',
+          color_medium: '#337583',
+          color_light: '#F3F2E5',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
