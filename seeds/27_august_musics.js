@@ -2218,6 +2218,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 124,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=446417117/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://united-bible-studies.bandcamp.com/album/rosary-bleeds',
+          a_string: 'Rosary Bleeds by United Bible Studies',
+          rule: {
+            "monday": [ 27, 4, 17, 16 ],
+            "tuesday": [ 26, 3, 16, 15 ],
+            "wednesday": [ 30, 7, 20, 19 ],
+            "thursday": [ 29, 6, 19, 18 ],
+            "saturday": [ 28, 5, 18, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 125,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1902478378/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://an-trinse.bandcamp.com/album/corpses-from-the-north',
+          a_string: 'Corpses From The North by An Trinse',
+          rule: {
+            "monday": [ 28, 5, 18, 17 ],
+            "tuesday": [ 27, 4, 17, 16 ],
+            "wednesday": [ 26, 3, 16, 15 ],
+            "thursday": [ 30, 7, 20, 19 ],
+            "saturday": [ 29, 6, 19, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 126,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1261669868/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://an-trinse.bandcamp.com/album/deeds-of-shame',
+          a_string: 'Deeds of Shame by An Trinse',
+          rule: {
+            "monday": [ 30, 7, 20, 19 ],
+            "tuesday": [ 29, 6, 19, 18 ],
+            "wednesday": [ 28, 5, 18, 17 ],
+            "thursday": [ 27, 4, 17, 16 ],
+            "saturday": [ 31, 8, 21, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
