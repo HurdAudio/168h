@@ -1894,6 +1894,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 106,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2784148788/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://basabasa.bandcamp.com/album/homowo',
+          a_string: 'Homowo by Basa Basa',
+          rule: {
+            "monday": [ 15, 26, 7, 11 ],
+            "tuesday": [ 14, 25, 6, 8 ],
+            "wednesday": [ 13, 24, 5, 7 ],
+            "thursday": [ 17, 28, 9, 13 ],
+            "saturday": [ 16, 27, 8, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 107,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=246458167/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sahelsounds.bandcamp.com/album/music-from-saharan-cellphones-volume-2',
+          a_string: 'Music from Saharan Cellphones: Volume 2 by sahelsounds',
+          rule: {
+            "monday": [ 16, 27, 8, 12 ],
+            "tuesday": [ 15, 26, 7, 11 ],
+            "wednesday": [ 14, 25, 6, 8 ],
+            "thursday": [ 13, 24, 5, 7 ],
+            "saturday": [ 17, 28, 9, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 108,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1882782082/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://mammansani.bandcamp.com/album/unreleased-tapes-1981-1984',
+          a_string: 'Unreleased Tapes 1981-1984 by Mamman Sani',
+          rule: {
+            "monday": [ 17, 28, 9, 13 ],
+            "tuesday": [ 16, 27, 8, 12 ],
+            "wednesday": [ 15, 26, 7, 11 ],
+            "thursday": [ 14, 25, 6, 8 ],
+            "saturday": [ 13, 24, 5, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
