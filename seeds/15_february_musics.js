@@ -2866,6 +2866,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 160,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1359469648/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jazzmanholygrailseries.bandcamp.com/album/two-sisters-from-bagdad',
+          a_string: 'Two Sisters From Bagdad by La Vice &amp; Co.',
+          rule: {
+            "monday": [ 27, 1, 3, 7 ],
+            "tuesday": [ 28, 3, 5, 7 ],
+            "wednesday": [ 11, 5, 7, 13 ],
+            "thursday": [ 23, 28, 1, 13 ],
+            "saturday": [ 24, 28, 1, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 161,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3684256625/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://miriammakeba.bandcamp.com/album/pata-pata',
+          a_string: 'Pata Pata by Miriam Makeba',
+          rule: {
+            "monday": [ 25, 29, 2, 6 ],
+            "tuesday": [ 28, 2, 4, 8 ],
+            "wednesday": [ 29, 4, 6, 8 ],
+            "thursday": [ 12, 6, 8, 14 ],
+            "saturday": [ 24, 29, 2, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 162,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'http://bandcamp.com/EmbeddedPlayer/album=895746506/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bandcamp.for-tune.pl/album/solar-system',
+          a_string: 'Solar System by Charles Gayle Trio',
+          rule: {
+            "monday": [ 24, 29, 2, 14 ],
+            "tuesday": [ 25, 29, 2, 6 ],
+            "wednesday": [ 28, 2, 4, 8 ],
+            "thursday": [ 29, 4, 6, 8 ],
+            "saturday": [ 12, 6, 8, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
