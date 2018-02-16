@@ -4204,6 +4204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 211,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/composition-i-1918.jpg',
+          title: 'Composition I',
+          artist: 'Vilhelm Lundstrom',
+          year: '1918',
+          rule: {
+            "monday": [ 2, 5, 14, 30 ],
+            "tuesday": [ 1, 5, 13, 29 ],
+            "wednesday": [ 31, 4, 12, 28 ],
+            "thursday": [ 30, 1, 11, 27 ],
+            "friday": [ 29, 1, 10, 26 ],
+            "saturday": [ 28, 31, 9, 25 ],
+            "sunday": [ 3, 7, 15, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 212,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/woman-in-blue-dress.jpg',
+          title: 'Woman in Blue Dress',
+          artist: 'Victor Borisov-Musatov',
+          year: 'c.1903',
+          rule: {
+            "monday": [ 3, 7, 15, 31 ],
+            "tuesday": [ 2, 5, 14, 30 ],
+            "wednesday": [ 1, 5, 13, 29 ],
+            "thursday": [ 31, 4, 12, 28 ],
+            "friday": [ 30, 1, 11, 27 ],
+            "saturday": [ 29, 1, 10, 26 ],
+            "sunday": [ 28, 31, 9, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 213,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/the-cushio-1903.jpg',
+          title: 'The Cushio',
+          artist: 'Max Kurzweil',
+          year: '1903',
+          rule: {
+            "monday": [ 28, 31, 9, 25 ],
+            "tuesday": [ 3, 7, 15, 31 ],
+            "wednesday": [ 2, 5, 14, 30 ],
+            "thursday": [ 1, 5, 13, 29 ],
+            "friday": [ 31, 4, 12, 28 ],
+            "saturday": [ 30, 1, 11, 27 ],
+            "sunday": [ 29, 1, 10, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 214,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/the-dream-1910.jpg',
+          title: 'The Dream',
+          artist: 'Kuzma Petrov-Vodkin',
+          year: '1910',
+          rule: {
+            "monday": [ 29, 1, 10, 26 ],
+            "tuesday": [ 28, 31, 9, 25 ],
+            "wednesday": [ 3, 7, 15, 31 ],
+            "thursday": [ 2, 5, 14, 30 ],
+            "friday": [ 1, 5, 13, 29 ],
+            "saturday": [ 31, 4, 12, 28 ],
+            "sunday": [ 30, 1, 11, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 215,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/the-gray-tree-1911.jpg',
+          title: 'The Gray Tree',
+          artist: 'Piet Mondrian',
+          year: '1911',
+          rule: {
+            "monday": [ 30, 1, 11, 27 ],
+            "tuesday": [ 29, 1, 10, 26 ],
+            "wednesday": [ 28, 31, 9, 25 ],
+            "thursday": [ 3, 7, 15, 31 ],
+            "friday": [ 2, 5, 14, 30 ],
+            "saturday": [ 1, 5, 13, 29 ],
+            "sunday": [ 31, 4, 12, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
