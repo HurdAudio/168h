@@ -4404,6 +4404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 221,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/a-landscape-1902.jpg',
+          title: 'A Landscape',
+          artist: 'Pierre Emmanuel Damoye',
+          year: '1902',
+          rule: {
+            "monday": [ 29, 9, 20, 21 ],
+            "tuesday": [ 28, 8, 19, 30 ],
+            "wednesday": [ 3, 14, 25, 4 ],
+            "thursday": [ 2, 13, 24, 4 ],
+            "friday": [ 1, 12, 23, 3 ],
+            "saturday": [ 31, 11, 22, 23 ],
+            "sunday": [ 30, 10, 20, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 222,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/suzy-deguez.jpg',
+          title: 'Suzy Deguez',
+          artist: 'Eugène Grasset',
+          year: '?',
+          rule: {
+            "monday": [ 30, 10, 20, 22 ],
+            "tuesday": [ 29, 9, 20, 21 ],
+            "wednesday": [ 28, 8, 19, 30 ],
+            "thursday": [ 3, 14, 25, 4 ],
+            "friday": [ 2, 13, 24, 4 ],
+            "saturday": [ 1, 12, 23, 3 ],
+            "sunday": [ 31, 11, 22, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 223,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/the-pink-dress.jpg',
+          title: 'The Pink Dress',
+          artist: 'Frederic Bazille',
+          year: 'c.1864',
+          rule: {
+            "monday": [ 31, 11, 22, 23 ],
+            "tuesday": [ 30, 10, 20, 22 ],
+            "wednesday": [ 29, 9, 20, 21 ],
+            "thursday": [ 28, 8, 19, 30 ],
+            "friday": [ 3, 14, 25, 4 ],
+            "saturday": [ 2, 13, 24, 4 ],
+            "sunday": [ 1, 12, 23, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 224,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/before-the-theatre.jpg',
+          title: 'Before the Theatre',
+          artist: 'Berthe Morisot',
+          year: 'c.1875',
+          rule: {
+            "monday": [ 2, 13, 24, 4 ],
+            "tuesday": [ 1, 12, 23, 24 ],
+            "wednesday": [ 31, 11, 21, 23 ],
+            "thursday": [ 30, 10, 21, 22 ],
+            "friday": [ 29, 9, 20, 31 ],
+            "saturday": [ 4, 15, 26, 5 ],
+            "sunday": [ 3, 14, 25, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 225,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/danaid.jpg',
+          title: 'Danaid',
+          artist: 'Auguste Rodin',
+          year: '1889',
+          rule: {
+            "monday": [ 3, 14, 25, 5 ],
+            "tuesday": [ 2, 13, 24, 4 ],
+            "wednesday": [ 1, 12, 23, 24 ],
+            "thursday": [ 31, 11, 21, 23 ],
+            "friday": [ 30, 10, 21, 22 ],
+            "saturday": [ 29, 9, 20, 31 ],
+            "sunday": [ 4, 15, 26, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
