@@ -368,6 +368,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#C4D5ED',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 27,
+          user_id: 1,
+          theme: 'Steam',
+          type: 'holiday',
+          src_string: '../img/july_tiles/sky-1.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '155%',
+          color_dark: '#262624',
+          color_medium: '#644F3D',
+          color_light: '#FEA354',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
