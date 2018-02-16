@@ -354,6 +354,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#356DF6',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 26,
+          user_id: 1,
+          theme: 'Primary Colors',
+          type: 'sunday',
+          src_string: '../img/august_tiles/Metallic-Grid-Texture-8.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '170%',
+          color_dark: '#000600',
+          color_medium: '#8F1400',
+          color_light: '#D19F80',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
