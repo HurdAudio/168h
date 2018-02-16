@@ -382,6 +382,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FEFFFA',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 28,
+          user_id: 1,
+          theme: 'Light',
+          type: 'week',
+          src_string: '../img/june_tiles/street-light-684585_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '154%',
+          color_dark: '#040404',
+          color_medium: '#712606',
+          color_light: '#FFFEEE',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
