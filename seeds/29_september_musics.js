@@ -2110,6 +2110,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 118,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3024617518/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://progshinerecords.bandcamp.com/album/dveri-dveri',
+          a_string: 'Dveri! Dveri! by Orgia Pravednikov',
+          rule: {
+            "monday": [ 17, 7, 15, 9 ],
+            "tuesday": [ 21, 11, 19, 13 ],
+            "wednesday": [ 20, 10, 18, 12 ],
+            "thursday": [ 19, 9, 17, 12 ],
+            "saturday": [ 18, 8, 16, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 119,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2087303390/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://progshinerecords.bandcamp.com/album/oglashennyye-izydite',
+          a_string: 'Oglashennyye Izydite by Orgia Pravednikov',
+          rule: {
+            "monday": [ 19, 9, 17, 11 ],
+            "tuesday": [ 18, 8, 16, 10 ],
+            "wednesday": [ 22, 12, 20, 14 ],
+            "thursday": [ 21, 11, 19, 13 ],
+            "saturday": [ 20, 10, 18, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 120,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4039095505/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://progshinerecords.bandcamp.com/album/nigredo',
+          a_string: 'Nigredo by Sergey Kalugin',
+          rule: {
+            "monday": [ 20, 10, 18, 13 ],
+            "tuesday": [ 19, 9, 17, 11 ],
+            "wednesday": [ 18, 8, 16, 10 ],
+            "thursday": [ 22, 12, 20, 14 ],
+            "saturday": [ 21, 11, 19, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
