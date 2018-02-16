@@ -5004,6 +5004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 251,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/1966-baltimore-orioles-mlb-world-series-champions-patch.jpg',
+          title: 'Baltimore Orioles MLB World Series Champions Patch',
+          artist: '?',
+          year: '1966',
+          rule: {
+            "monday": [ 3, 7, 22, 20 ],
+            "tuesday": [ 2, 7, 12, 18 ],
+            "wednesday": [ 1, 6, 12, 18 ],
+            "thursday": [ 30, 5, 11, 17 ],
+            "friday": [ 5, 11, 16, 23 ],
+            "saturday": [ 19, 9, 15, 22 ],
+            "sunday": [ 4, 9, 15, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 252,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/ap_rays_orioles_baseball_57878578.jpg',
+          title: 'Adam Jones',
+          artist: 'Gail Burton',
+          year: '2013',
+          rule: {
+            "monday": [ 5, 10, 16, 22 ],
+            "tuesday": [ 4, 8, 23, 21 ],
+            "wednesday": [ 3, 8, 13, 19 ],
+            "thursday": [ 2, 7, 13, 19 ],
+            "friday": [ 1, 6, 12, 18 ],
+            "saturday": [ 6, 12, 17, 24 ],
+            "sunday": [ 20, 10, 16, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 253,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/1-baltimore-3-camden-yards-1038x692.jpg',
+          title: 'Oriole Park at Camden Yards',
+          artist: '?',
+          year: 'xxi Cent.',
+          rule: {
+            "monday": [ 20, 10, 16, 23 ],
+            "tuesday": [ 5, 10, 16, 22 ],
+            "wednesday": [ 4, 8, 23, 21 ],
+            "thursday": [ 3, 8, 13, 19 ],
+            "friday": [ 2, 7, 13, 19 ],
+            "saturday": [ 1, 6, 12, 18 ],
+            "sunday": [ 6, 12, 17, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 254,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/USATSI_10008255.jpg',
+          title: 'Zach Britton',
+          artist: 'Patrick McDermott',
+          year: '2017',
+          rule: {
+            "monday": [ 6, 12, 17, 24 ],
+            "tuesday": [ 20, 10, 16, 23 ],
+            "wednesday": [ 5, 10, 16, 22 ],
+            "thursday": [ 4, 8, 23, 21 ],
+            "friday": [ 3, 8, 13, 19 ],
+            "saturday": [ 2, 7, 13, 19 ],
+            "sunday": [ 1, 6, 12, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 255,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/Former-MLB-great-Baltimore-Orioles-legend-Lee-May-dead-at-74.jpg',
+          title: 'Lee May',
+          artist: '?',
+          year: 'xx cent.',
+          rule: {
+            "monday": [ 1, 6, 12, 18 ],
+            "tuesday": [ 6, 12, 17, 24 ],
+            "wednesday": [ 20, 10, 16, 23 ],
+            "thursday": [ 5, 10, 16, 22 ],
+            "friday": [ 4, 8, 23, 21 ],
+            "saturday": [ 3, 8, 13, 19 ],
+            "sunday": [ 2, 7, 13, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
