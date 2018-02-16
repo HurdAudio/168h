@@ -2974,6 +2974,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 166,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1819061201/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://minmax.bandcamp.com/album/dark-blue-circumstance',
+          a_string: 'Dark Blue Circumstance by Paul Dresher Ensemble',
+          rule: {
+            "monday": [ 31, 6, 7, 8 ],
+            "tuesday": [ 30, 6, 7, 8 ],
+            "wednesday": [ 3, 10, 11, 12 ],
+            "thursday": [ 2, 9, 10, 11 ],
+            "saturday": [ 1, 8, 9, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 167,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3816035641/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://martinbresnick.bandcamp.com/album/every-thing-must-go',
+          a_string: 'Every Thing Must Go by Martin Bresnick w/Prism Sax 4tet, Lisa Moore, Ashley Bathgate, Yale Camerata, Abigail Nims',
+          rule: {
+            "monday": [ 1, 8, 9, 10 ],
+            "tuesday": [ 31, 6, 7, 8 ],
+            "wednesday": [ 30, 6, 7, 8 ],
+            "thursday": [ 3, 10, 11, 12 ],
+            "saturday": [ 2, 9, 10, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 168,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'http://bandcamp.com/EmbeddedPlayer/album=489059359/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://store.innig.net/album/the-broken-mirror-of-memory',
+          a_string: 'The Broken Mirror of Memory by Paul Cantrell (composition, piano) &amp; Pat O&#39;Keefe (bass clarinet)',
+          rule: {
+            "monday": [ 2, 9, 10, 11 ],
+            "tuesday": [ 1, 8, 9, 10 ],
+            "wednesday": [ 31, 6, 7, 8 ],
+            "thursday": [ 30, 6, 7, 8 ],
+            "saturday": [ 3, 10, 11, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
