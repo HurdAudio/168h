@@ -5204,6 +5204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 261,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/the-goose-girl-1918.jpg',
+          title: 'The Goose Girl',
+          artist: 'Winifred Knights',
+          year: '1918',
+          rule: {
+            "monday": [ 6, 15, 25, 2 ],
+            "tuesday": [ 5, 15, 25, 2 ],
+            "wednesday": [ 5, 14, 22, 1 ],
+            "thursday": [ 3, 13, 21, 31 ],
+            "friday": [ 2, 12, 20, 30 ],
+            "saturday": [ 1, 11, 19, 29 ],
+            "sunday": [ 31, 10, 19, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 262,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/still-life.jpg',
+          title: 'Still Life',
+          artist: 'Gohar Fermanyan',
+          year: '?',
+          rule: {
+            "monday": [ 31, 10, 19, 28 ],
+            "tuesday": [ 6, 15, 25, 2 ],
+            "wednesday": [ 5, 15, 25, 2 ],
+            "thursday": [ 5, 14, 22, 1 ],
+            "friday": [ 3, 13, 21, 31 ],
+            "saturday": [ 2, 12, 20, 30 ],
+            "sunday": [ 1, 11, 19, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 263,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/kitty-pearson-1973.jpg',
+          title: 'Kitty Pearson',
+          artist: 'Alice Neel',
+          year: '1973',
+          rule: {
+            "monday": [ 1, 11, 19, 29 ],
+            "tuesday": [ 31, 10, 19, 28 ],
+            "wednesday": [ 6, 15, 25, 2 ],
+            "thursday": [ 5, 15, 25, 2 ],
+            "friday": [ 5, 14, 22, 1 ],
+            "saturday": [ 3, 13, 21, 31 ],
+            "sunday": [ 2, 12, 20, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 264,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/at-the-mirror-1970-c-5.jpg',
+          title: 'At the Mirror',
+          artist: 'Margit Selska',
+          year: '1970',
+          rule: {
+            "monday": [ 2, 12, 20, 30 ],
+            "tuesday": [ 1, 11, 19, 29 ],
+            "wednesday": [ 31, 10, 19, 28 ],
+            "thursday": [ 6, 15, 25, 2 ],
+            "friday": [ 5, 15, 25, 2 ],
+            "saturday": [ 5, 14, 22, 1 ],
+            "sunday": [ 3, 13, 21, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 265,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/antique-portrait-1940.jpg',
+          title: 'Antique portrait',
+          artist: 'Princess Fahrelnissa Zeid',
+          year: '1940',
+          rule: {
+            "monday": [ 3, 13, 21, 31 ],
+            "tuesday": [ 2, 12, 20, 30 ],
+            "wednesday": [ 1, 11, 19, 29 ],
+            "thursday": [ 31, 10, 19, 28 ],
+            "friday": [ 6, 15, 25, 2 ],
+            "saturday": [ 5, 15, 25, 2 ],
+            "sunday": [ 5, 14, 22, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
