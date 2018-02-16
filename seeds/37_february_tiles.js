@@ -438,6 +438,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#D7B087',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 32,
+          user_id: 1,
+          theme: 'Silk/Velvet',
+          type: 'holiday',
+          src_string: '../img/february_tiles/016_Marbled-VelvetFABRIC_800px.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '100%',
+          color_dark: '#121423',
+          color_medium: '#B73E2A',
+          color_light: '#F0EFE8',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
