@@ -3604,6 +3604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 181,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/hereditarius-no-1-68-a-1968.jpg',
+          title: 'Hereditarius No.1-68-A',
+          artist: 'Park Seo-Bo',
+          year: '1968',
+          rule: {
+            "monday": [ 30, 3, 11, 16 ],
+            "tuesday": [ 29, 3, 10, 15 ],
+            "wednesday": [ 28, 3, 9, 14 ],
+            "thursday": [ 27, 2, 8, 15 ],
+            "friday": [ 3, 8, 14, 19 ],
+            "saturday": [ 2, 7, 12, 18 ],
+            "sunday": [ 1, 6, 12, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 182,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/blue-day-glo-corner-piece-1968.jpg',
+          title: 'Blue Day-glo Corner Piece',
+          artist: 'Fred Sandback',
+          year: '1968',
+          rule: {
+            "monday": [ 2, 7, 13, 17 ],
+            "tuesday": [ 1, 4, 12, 17 ],
+            "wednesday": [ 30, 4, 11, 16 ],
+            "thursday": [ 29, 4, 10, 15 ],
+            "friday": [ 28, 3, 9, 16 ],
+            "saturday": [ 4, 9, 15, 20 ],
+            "sunday": [ 3, 8, 13, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 183,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/untitled-1968.jpg',
+          title: 'Untitled',
+          artist: 'Robert Grosvenor',
+          year: '1968',
+          rule: {
+            "monday": [ 3, 8, 13, 19 ],
+            "tuesday": [ 2, 7, 13, 17 ],
+            "wednesday": [ 1, 4, 12, 17 ],
+            "thursday": [ 30, 4, 11, 16 ],
+            "friday": [ 29, 4, 10, 15 ],
+            "saturday": [ 28, 3, 9, 16 ],
+            "sunday": [ 4, 9, 15, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 184,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/rad-4-1968.jpg',
+          title: 'RAD 4',
+          artist: 'Johannes Jan Schoonhoven',
+          year: '1968',
+          rule: {
+            "monday": [ 4, 9, 15, 20 ],
+            "tuesday": [ 3, 8, 13, 19 ],
+            "wednesday": [ 2, 7, 13, 17 ],
+            "thursday": [ 1, 4, 12, 17 ],
+            "friday": [ 30, 4, 11, 16 ],
+            "saturday": [ 29, 4, 10, 15 ],
+            "sunday": [ 28, 3, 9, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 185,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/untitled-1969-Rothko.jpg',
+          title: 'Untitled',
+          artist: 'Mark Rothko',
+          year: '1969',
+          rule: {
+            "monday": [ 28, 3, 9, 16 ],
+            "tuesday": [ 4, 9, 15, 20 ],
+            "wednesday": [ 3, 8, 13, 19 ],
+            "thursday": [ 2, 7, 13, 17 ],
+            "friday": [ 1, 4, 12, 17 ],
+            "saturday": [ 30, 4, 11, 16 ],
+            "sunday": [ 29, 4, 10, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
