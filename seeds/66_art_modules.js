@@ -124,6 +124,66 @@ exports.seed = function(knex, Promise) {
           public: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 11,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/cute-kittens-11-57b30aa95f3c6__605.jpg',
+          title: 'Little Evil Kitty',
+          artist: 'unknown artist',
+          year: 'xxi cent.',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 12,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/cute-kittens-4-57b30a939dff5__605.jpg',
+          title: 'Sweet Dreams',
+          artist: 'unknown artist',
+          year: 'xxi  cent.',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 13,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/cute-kittens-10-57b30aa763583__605.jpg',
+          title: 'We Found Him Crying All Alone In The Grass. He Was Only Two Weeks Old And Malnourished. This Was Taken After We Removed All The Ticks And Fleas And Gave Him A Bath',
+          artist: 'Inga Ko',
+          year: 'xxi cent.',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 14,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/cute-kittens-31-57b30ad5ccbc8__605.jpg',
+          title: 'Whatcha Doin, Human?',
+          artist: 'unknown artist',
+          year: 'xxi cent.',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 15,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/cute-kittens-69-57b32c431e8a7__605.jpg',
+          title: 'Ball of Kitten',
+          artist: 'unknown artist',
+          year: 'xxi cent.',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
