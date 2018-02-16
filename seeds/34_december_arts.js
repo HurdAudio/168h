@@ -3404,6 +3404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 171,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/43-07,WeirdTls1.jpg',
+          title: 'Weird Tales',
+          artist: 'Fred Humiston',
+          year: '1943',
+          rule: {
+            "monday": [ 22, 4, 23, 18 ],
+            "tuesday": [ 28, 10, 18, 24 ],
+            "wednesday": [ 27, 9, 17, 23 ],
+            "thursday": [ 26, 8, 16, 22 ],
+            "friday": [ 25, 7, 15, 21 ],
+            "saturday": [ 24, 6, 14, 20 ],
+            "sunday": [ 23, 4, 13, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 172,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/13-03,TheOuting.jpg',
+          title: 'The Outing',
+          artist: 'David C. Hutchison',
+          year: '1913',
+          rule: {
+            "monday": [ 23, 4, 13, 19 ],
+            "tuesday": [ 22, 4, 23, 18 ],
+            "wednesday": [ 28, 10, 18, 24 ],
+            "thursday": [ 27, 9, 17, 23 ],
+            "friday": [ 26, 8, 16, 22 ],
+            "saturday": [ 25, 7, 15, 21 ],
+            "sunday": [ 24, 6, 14, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 173,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/39-10,Unknown.jpg',
+          title: 'Unknown',
+          artist: 'Pagsilang Rey Isip',
+          year: '1939',
+          rule: {
+            "monday": [ 24, 6, 14, 20 ],
+            "tuesday": [ 23, 4, 13, 19 ],
+            "wednesday": [ 22, 4, 23, 18 ],
+            "thursday": [ 28, 10, 18, 24 ],
+            "friday": [ 27, 9, 17, 23 ],
+            "saturday": [ 26, 8, 16, 22 ],
+            "sunday": [ 25, 7, 15, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 174,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/06-04,Outing.jpg',
+          title: 'The Outing',
+          artist: 'P. V. E. Ivory',
+          year: '1906',
+          rule: {
+            "monday": [ 25, 7, 15, 21 ],
+            "tuesday": [ 24, 6, 14, 20 ],
+            "wednesday": [ 23, 4, 13, 19 ],
+            "thursday": [ 22, 4, 23, 18 ],
+            "friday": [ 28, 10, 18, 24 ],
+            "saturday": [ 27, 9, 17, 23 ],
+            "sunday": [ 26, 8, 16, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 175,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/04-09,Munseys.jpg',
+          title: 'Munsey\'s Magazine',
+          artist: 'Arthur Jameson',
+          year: '1904',
+          rule: {
+            "monday": [ 27, 9, 17, 23 ],
+            "tuesday": [ 26, 8, 16, 22 ],
+            "wednesday": [ 25, 7, 15, 21 ],
+            "thursday": [ 24, 5, 14, 20 ],
+            "friday": [ 23, 5, 24, 19 ],
+            "saturday": [ 29, 11, 19, 25 ],
+            "sunday": [ 28, 10, 18, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
