@@ -396,6 +396,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FFFFFB',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 29,
+          user_id: 1,
+          theme: 'Greenery',
+          type: 'friday',
+          src_string: '../img/may_tiles/danielridge6_fresh_new_ferns.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '180%',
+          color_dark: '#081109',
+          color_medium: '#5BB50F',
+          color_light: '#B2CF7B',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
