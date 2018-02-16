@@ -1786,6 +1786,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 100,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2504248903/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://somosconvoy.bandcamp.com/album/convoy',
+          a_string: 'Convoy by Convoy',
+          rule: {
+            "monday": [ 19, 25, 31, 6 ],
+            "tuesday": [ 16, 24, 30, 5 ],
+            "wednesday": [ 17, 23, 29, 4 ],
+            "thursday": [ 21, 27, 2, 8 ],
+            "saturday": [ 20, 26, 1, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 101,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3349957760/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://maskedsynthwave.bandcamp.com/album/the-dying-cult',
+          a_string: 'The Dying Cult by Masked',
+          rule: {
+            "monday": [ 20, 26, 1, 6 ],
+            "tuesday": [ 19, 25, 31, 6 ],
+            "wednesday": [ 16, 24, 30, 5 ],
+            "thursday": [ 17, 23, 29, 4 ],
+            "saturday": [ 21, 27, 2, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 102,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2621167700/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://willowispmusic.bandcamp.com/album/puzzle-symphony',
+          a_string: 'Puzzle Symphony by Will O Wisp',
+          rule: {
+            "monday": [ 21, 27, 2, 8 ],
+            "tuesday": [ 20, 26, 1, 6 ],
+            "wednesday": [ 19, 25, 31, 6 ],
+            "thursday": [ 16, 24, 30, 5 ],
+            "saturday": [ 17, 23, 29, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
