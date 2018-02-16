@@ -2434,6 +2434,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 136,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3643562070/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://deanmcphee.bandcamp.com/album/four-stones',
+          a_string: 'Four Stones by Dean McPhee',
+          rule: {
+            "monday": [ 19, 22, 27, 9 ],
+            "tuesday": [ 18, 22, 27, 9 ],
+            "wednesday": [ 18, 21, 27, 8 ],
+            "thursday": [ 16, 24, 26, 7 ],
+            "saturday": [ 20, 24, 30, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 137,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3749575597/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://scottlawlor.bandcamp.com/album/the-year-of-the-snake-the-2013-compilation-set',
+          a_string: 'The Year of The Snake (The 2013 Compilation Set) by Scott Lawlor',
+          rule: {
+            "monday": [ 20, 24, 30, 11 ],
+            "tuesday": [ 19, 22, 27, 9 ],
+            "wednesday": [ 18, 22, 27, 9 ],
+            "thursday": [ 18, 21, 27, 8 ],
+            "saturday": [ 16, 24, 26, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 138,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=258041068/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://januszjurga.bandcamp.com/album/duchy-rogowca',
+          a_string: 'Duchy Rogowca by Janusz Jurga',
+          rule: {
+            "monday": [ 16, 24, 26, 7 ],
+            "tuesday": [ 20, 24, 30, 11 ],
+            "wednesday": [ 19, 22, 27, 9 ],
+            "thursday": [ 18, 22, 27, 9 ],
+            "saturday": [ 18, 21, 27, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
