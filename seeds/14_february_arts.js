@@ -5404,6 +5404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 271,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/Montreux_main.png',
+          title: 'Danseuses',
+          artist: 'Malika Favre',
+          year: '2017',
+          rule: {
+            "monday": [ 17, 27, 4, 10 ],
+            "tuesday": [ 19, 27, 6, 16 ],
+            "wednesday": [ 21, 29, 25, 15 ],
+            "thursday": [ 9, 17, 25, 4 ],
+            "friday": [ 11, 19, 27, 6 ],
+            "saturday": [ 16, 21, 27, 8 ],
+            "sunday": [ 15, 23, 2, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 272,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/04-001.jpg',
+          title: 'Shotgun, Third Ward #1',
+          artist: 'John Biggers',
+          year: '1966',
+          rule: {
+            "monday": [ 15, 23, 2, 10 ],
+            "tuesday": [ 17, 27, 4, 10 ],
+            "wednesday": [ 19, 27, 6, 16 ],
+            "thursday": [ 21, 29, 25, 15 ],
+            "friday": [ 9, 17, 25, 4 ],
+            "saturday": [ 11, 19, 27, 6 ],
+            "sunday": [ 16, 21, 27, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 273,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/18.jpg',
+          title: 'Red Stripe with Green Background',
+          artist: 'Felrath Hines',
+          year: '?',
+          rule: {
+            "monday": [ 17, 22, 28, 9 ],
+            "tuesday": [ 16, 24, 3, 11 ],
+            "wednesday": [ 18, 28, 5, 11 ],
+            "thursday": [ 20, 28, 7, 17 ],
+            "friday": [ 22, 1, 26, 16 ],
+            "saturday": [ 10, 18, 26, 5 ],
+            "sunday": [ 12, 20, 28, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 274,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/21.jpg',
+          title: 'self-portrait',
+          artist: 'Lois Mailou Jones',
+          year: '1940',
+          rule: {
+            "monday": [ 12, 20, 28, 7 ],
+            "tuesday": [ 17, 22, 28, 9 ],
+            "wednesday": [ 16, 24, 3, 11 ],
+            "thursday": [ 18, 28, 5, 11 ],
+            "friday": [ 20, 28, 7, 17 ],
+            "saturday": [ 22, 1, 26, 16 ],
+            "sunday": [ 10, 18, 26, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 275,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/20.jpg',
+          title: 'John Henry',
+          artist: 'Frederick Brown',
+          year: '?',
+          rule: {
+            "monday": [ 10, 18, 26, 5 ],
+            "tuesday": [ 12, 20, 28, 7 ],
+            "wednesday": [ 17, 22, 28, 9 ],
+            "thursday": [ 16, 24, 3, 11 ],
+            "friday": [ 18, 28, 5, 11 ],
+            "saturday": [ 20, 28, 7, 17 ],
+            "sunday": [ 22, 1, 26, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
