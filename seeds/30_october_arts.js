@@ -3804,6 +3804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 191,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_tradesovpost_00010.jpg',
+          title: 'Fruit-drink. Mosselprom.',
+          artist: 'A. Zelensky',
+          year: '1930',
+          rule: {
+            "monday": [ 2, 13, 24, 28 ],
+            "tuesday": [ 1, 12, 23, 27 ],
+            "wednesday": [ 31, 11, 22, 26 ],
+            "thursday": [ 30, 10, 21, 25 ],
+            "friday": [ 29, 9, 20, 24 ],
+            "saturday": [ 28, 8, 9, 23 ],
+            "sunday": [ 6, 7, 18, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 192,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_worksovpost_00008.jpg',
+          title: 'Working woman fight...',
+          artist: 'M. Bri-Bain',
+          year: '1931',
+          rule: {
+            "monday": [ 6, 7, 18, 22 ],
+            "tuesday": [ 2, 13, 24, 28 ],
+            "wednesday": [ 1, 12, 23, 27 ],
+            "thursday": [ 31, 11, 22, 26 ],
+            "friday": [ 30, 10, 21, 25 ],
+            "saturday": [ 29, 9, 20, 24 ],
+            "sunday": [ 28, 8, 9, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 193,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_worksovpost_00006.jpg',
+          title: 'Experienced workers....',
+          artist: 'I.Young,A.Chernomordik',
+          year: '1930',
+          rule: {
+            "monday": [ 28, 8, 9, 23 ],
+            "tuesday": [ 6, 7, 18, 22 ],
+            "wednesday": [ 2, 13, 24, 28 ],
+            "thursday": [ 1, 12, 23, 27 ],
+            "friday": [ 31, 11, 22, 26 ],
+            "saturday": [ 30, 10, 21, 25 ],
+            "sunday": [ 29, 9, 20, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 194,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_worksovpost_00005.jpg',
+          title: 'Give ( me) quality....',
+          artist: '?',
+          year: '1931',
+          rule: {
+            "monday": [ 29, 9, 20, 24 ],
+            "tuesday": [ 28, 8, 9, 23 ],
+            "wednesday": [ 6, 7, 18, 22 ],
+            "thursday": [ 2, 13, 24, 28 ],
+            "friday": [ 1, 12, 23, 27 ],
+            "saturday": [ 31, 11, 22, 26 ],
+            "sunday": [ 30, 10, 21, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 195,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_worksovpost_00004.jpg',
+          title: 'Your lamp....',
+          artist: 'V.Govorkov',
+          year: '1933',
+          rule: {
+            "monday": [ 30, 10, 21, 25 ],
+            "tuesday": [ 29, 9, 20, 24 ],
+            "wednesday": [ 28, 8, 9, 23 ],
+            "thursday": [ 6, 7, 18, 22 ],
+            "friday": [ 2, 13, 24, 28 ],
+            "saturday": [ 1, 12, 23, 27 ],
+            "sunday": [ 31, 11, 22, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
