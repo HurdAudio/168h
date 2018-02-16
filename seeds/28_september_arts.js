@@ -4004,6 +4004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 201,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/the-apotheosis-of-ramon-hoyos.jpg',
+          title: 'The Apotheosis of Ramon Hoyos',
+          artist: 'Fernando Botero',
+          year: '1959',
+          rule: {
+            "monday": [ 26, 2, 20, 28 ],
+            "tuesday": [ 25, 1, 19, 27 ],
+            "wednesday": [ 24, 30, 18, 25 ],
+            "thursday": [ 30, 6, 24, 2 ],
+            "friday": [ 29, 5, 23, 1 ],
+            "saturday": [ 28, 4, 22, 30 ],
+            "sunday": [ 27, 3, 21, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 202,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/peinture-n-10-1965.jpg',
+          title: 'Peinture n°10',
+          artist: 'Michel Parmentier',
+          year: '1965',
+          rule: {
+            "monday": [ 27, 3, 21, 29 ],
+            "tuesday": [ 26, 2, 20, 28 ],
+            "wednesday": [ 25, 1, 19, 27 ],
+            "thursday": [ 24, 30, 18, 25 ],
+            "friday": [ 30, 6, 24, 2 ],
+            "saturday": [ 29, 5, 23, 1 ],
+            "sunday": [ 28, 4, 22, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 203,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/light-tree-1983.jpg',
+          title: 'Light Tree',
+          artist: 'Nanda Vigo',
+          year: '1983',
+          rule: {
+            "monday": [ 29, 5, 23, 1 ],
+            "tuesday": [ 28, 4, 22, 30 ],
+            "wednesday": [ 27, 3, 21, 29 ],
+            "thursday": [ 26, 2, 20, 28 ],
+            "friday": [ 25, 1, 19, 26 ],
+            "saturday": [ 1, 7, 25, 3 ],
+            "sunday": [ 30, 6, 24, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 204,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/it-s-not-a-race-2008.jpg',
+          title: 'It\'s Not A Race',
+          artist: 'Banksy',
+          year: '2008',
+          rule: {
+            "monday": [ 30, 6, 24, 2 ],
+            "tuesday": [ 29, 5, 23, 1 ],
+            "wednesday": [ 28, 4, 22, 30 ],
+            "thursday": [ 27, 3, 21, 29 ],
+            "friday": [ 26, 2, 20, 28 ],
+            "saturday": [ 25, 1, 19, 26 ],
+            "sunday": [ 1, 7, 25, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 205,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/summon-up-11-1958.jpg',
+          title: 'Summon up, #11',
+          artist: 'Frederick Hammersley',
+          year: '1958',
+          rule: {
+            "monday": [ 1, 7, 25, 3 ],
+            "tuesday": [ 30, 6, 24, 2 ],
+            "wednesday": [ 29, 5, 23, 1 ],
+            "thursday": [ 28, 4, 22, 30 ],
+            "friday": [ 27, 3, 21, 29 ],
+            "saturday": [ 26, 2, 20, 28 ],
+            "sunday": [ 25, 1, 19, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
