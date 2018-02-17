@@ -9248,6 +9248,39 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 592,
+          user_id: 1,
+          name: 'Henry Threagdill (composer/reeds) born in 1944',
+          color: '#E3BEB5',
+          picture: './img/musicians/Henry-Threadgill-768x432.jpg',
+          day_of: new Date ('1944-02-15T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: true,
+          override_content: {
+            "sources": [ 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp' ],
+            "src_strings": [ 'https://bandcamp.com/EmbeddedPlayer/album=318468672/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=1794728930/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=548569385/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=1787118103/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=234035329/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=882771762/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'http://henrythreadgill.bandcamp.com/album/up-popped-the-two-lips', 'https://bandcamp.com/EmbeddedPlayer/album=3660983736/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/' ],
+            "href_strings": [ 'http://henrythreadgill.bandcamp.com/album/old-locks-and-irregular-verbs', 'http://henrythreadgill.bandcamp.com/album/this-brings-us-to-volume-i', 'http://henrythreadgill.bandcamp.com/album/in-for-a-penny-in-for-a-pound', 'http://henrythreadgill.bandcamp.com/album/tomorrow-sunny-the-revelry-spp', 'http://henrythreadgill.bandcamp.com/album/this-brings-us-to-volume-ii', 'http://henrythreadgill.bandcamp.com/album/everybodys-mouths-a-book', 'http://henrythreadgill.bandcamp.com/album/up-popped-the-two-lips', 'http://billlaswell.bandcamp.com/album/too-much-sugar-for-a-dime' ],
+            "a_strings": [ 'Old Locks and Irregular Verbs by Henry Threadgill&#39;s Ensemble Double Up', 'This Brings Us To, Volume I by Henry Threadgill', 'In for a Penny, In for a Pound by Henry Threadgill', 'Tomorrow Sunny / The Revelry, Spp by Henry Threadgill', 'This Brings Us To, Volume II by Henry Threadgill', 'Everybodys Mouth&#39;s A Book by Henry Threadgill &amp; Make A Move', 'Up Popped The Two Lips by Henry Threadgill&#39;s Zooid', 'Too Much Sugar for a Dime by Henry Threadgill' ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 593,
+          user_id: 1,
+          name: 'A group of astrologers in London predicted the world would end by a flood on this day in 1524 starting in London, based on calculations made the previous June. 20,000 Londoners left their homes and headed for higher ground in anticipation.',
+          color: '#D4D1BD',
+          picture: './img/doomsday/PrognosticatioCarion2.jpg',
+          day_of: new Date ('1524-02-21T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
