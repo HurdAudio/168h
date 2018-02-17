@@ -5604,6 +5604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 281,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/oak-rock-1980.jpg',
+          title: 'Oak Rock',
+          artist: 'Joe Goode',
+          year: '1980',
+          rule: {
+            "monday": [ 14, 15, 7, 10 ],
+            "tuesday": [ 17, 18, 9, 13 ],
+            "wednesday": [ 20, 22, 23, 25 ],
+            "thursday": [ 22, 24, 28, 31 ],
+            "friday": [ 24, 26, 27, 30 ],
+            "saturday": [ 9, 10, 21, 13 ],
+            "sunday": [ 12, 14, 6, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 282,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/north-sound-1979.jpg',
+          title: 'North Sound',
+          artist: 'John Hoyland',
+          year: '1979',
+          rule: {
+            "monday": [ 12, 14, 6, 26 ],
+            "tuesday": [ 14, 15, 7, 10 ],
+            "wednesday": [ 17, 18, 9, 13 ],
+            "thursday": [ 20, 22, 23, 25 ],
+            "friday": [ 22, 24, 28, 31 ],
+            "saturday": [ 24, 26, 27, 30 ],
+            "sunday": [ 9, 10, 21, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 283,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/kompozycja-architektoniczna-1929.jpg',
+          title: 'Kompozycja architektoniczna',
+          artist: 'Wladyslaw Strzeminski',
+          year: '1929',
+          rule: {
+            "monday": [ 10, 11, 22, 14 ],
+            "tuesday": [ 13, 15, 7, 27 ],
+            "wednesday": [ 15, 16, 8, 11 ],
+            "thursday": [ 18, 19, 10, 14 ],
+            "friday": [ 21, 23, 24, 26 ],
+            "saturday": [ 23, 25, 29, 1 ],
+            "sunday": [ 25, 27, 28, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 284,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/a-position-a-1972(1).jpg',
+          title: 'A Position-A',
+          artist: 'Matsutani',
+          year: '1972',
+          rule: {
+            "monday": [ 25, 27, 28, 31 ],
+            "tuesday": [ 10, 11, 22, 14 ],
+            "wednesday": [ 13, 15, 7, 27 ],
+            "thursday": [ 15, 16, 8, 11 ],
+            "friday": [ 18, 19, 10, 14 ],
+            "saturday": [ 21, 23, 24, 26 ],
+            "sunday": [ 23, 25, 29, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 285,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/waterfall-2008.jpg',
+          title: 'Waterfall',
+          artist: 'Romul Nutiu',
+          year: '2008',
+          rule: {
+            "monday": [ 23, 25, 29, 1 ],
+            "tuesday": [ 25, 27, 28, 31 ],
+            "wednesday": [ 10, 11, 22, 14 ],
+            "thursday": [ 13, 15, 7, 27 ],
+            "friday": [ 15, 16, 8, 11 ],
+            "saturday": [ 18, 19, 10, 14 ],
+            "sunday": [ 21, 23, 24, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
