@@ -11915,6 +11915,42 @@
         });
       }
 
+      function timeDate(timeDate) {
+        let check = new Date(timeDate);
+        return(check.toLocaleTimeString('en-GB'))
+      }
+
+      function pullCommenterUserData(comment, commentIndex, messageIndex) {
+        $http.get(`/users/${comment.user_id}`)
+        .then(commenterData=>{
+          let commenter = commenterData.data;
+          vm.userMessages[messageIndex].comments[commentIndex].commenterImg = commenter.user_avatar_url;
+          vm.userMessages[messageIndex].comments[commentIndex].commenterName = commenter.name;
+        });
+      }
+
+      function retrieveComments(message, index) {
+        $http.get('/comments')
+        .then(allCommentsData=>{
+          let allComments = allCommentsData.data;
+          let messageComments = allComments.filter(msg=>{
+            return(msg.message_id === message.id);
+          });
+          if (messageComments.length > 0) {
+            messageComments = messageComments.sort((a, b)=>{
+              return((new Date(a.created_at)) - (new Date(b.created_at)));
+            });
+            vm.userMessages[index].comments = [];
+            for (let i = 0; i < messageComments.length; i++) {
+              vm.userMessages[index].comments[i] = {};
+              vm.userMessages[index].comments[i].comment = messageComments[i].comment;
+              vm.userMessages[index].comments[i].cleanDate = cleanDateHoliday(messageComments[i].created_at) + ' - ' + timeDate(messageComments[i].updated_at);
+              pullCommenterUserData(messageComments[i], i, index);
+            }
+          }
+        });
+      }
+
       function retrieveUserMessages() {
         $http.get(`/users/${currentUserId}`)
         .then(userData=>{
@@ -11943,7 +11979,8 @@
             if (vm.userMessages.length > 0) {
               for (let i = 0; i < vm.userMessages.length; i++) {
                 getProfileImageAndName(vm.userMessages[i], i);
-                vm.userMessages[i].cleanDate = cleanDateHoliday(vm.userMessages[i].created_at);
+                vm.userMessages[i].cleanDate = cleanDateHoliday(vm.userMessages[i].created_at) + ' - ' + timeDate(vm.userMessages[i].updated_at);
+                retrieveComments(vm.userMessages[i], i);
               }
             }
           });

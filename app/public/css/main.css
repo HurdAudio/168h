@@ -7171,6 +7171,7 @@ footer img {
   margin-left: 1.6em;
   margin-top: 1.2em;
   border: 2px solid #0000cc;
+  float: left;
 }
 
 #messagesSpace h3 {
@@ -7179,7 +7180,7 @@ footer img {
 
 #messagesSpace p {
   margin: 4vmin 8vmin 0 2vmin;
-  float: right;
+  float: left;
 }
 
 #messageBar {
@@ -7195,7 +7196,7 @@ footer img {
   padding-left: 1.5vmin;
 }
 
-#commentsBar {
+.commentsBar {
   font-family: 'Asul', serif;
   font-size: 18px
   background: #22ac44;
