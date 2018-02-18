@@ -354,6 +354,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#BCABB1',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 26,
+          user_id: 1,
+          theme: 'Leather',
+          type: 'sunday',
+          src_string: '../img/september_tiles/6edbc0f1347016bebbae44433c3c68bd--vintage-gloves-baseball-gloves.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '100%',
+          color_dark: '#343237',
+          color_medium: '#867482',
+          color_light: '#DEEBF3',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
