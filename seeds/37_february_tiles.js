@@ -452,6 +452,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#F0EFE8',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 33,
+          user_id: 1,
+          theme: 'Silk/Velvet',
+          type: 'week',
+          src_string: '../img/february_tiles/sofas-edloe-finch-ef-z1-3s004v-tribeca-mid-century-modern-velvet-sofa-dark-green-630591784517_188.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '150%',
+          color_dark: '#070707',
+          color_medium: '#182D28',
+          color_light: '#EBF3F1',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
