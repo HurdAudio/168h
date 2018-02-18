@@ -438,6 +438,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FFE1E1',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 32,
+          user_id: 1,
+          theme: 'Glass',
+          type: 'holiday',
+          src_string: '../img/march_tiles/glass-breakage-286099_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '155%',
+          color_dark: '#272823',
+          color_medium: '#A18B64',
+          color_light: '#C3CAD0',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
