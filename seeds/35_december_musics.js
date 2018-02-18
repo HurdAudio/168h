@@ -1840,6 +1840,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 103,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=673453486/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://andeantriberecords.bandcamp.com/album/naga-baba-forbidden-fruit',
+          a_string: 'NAGA BABA - Forbidden Fruit by ANDEAN TRIBE RECORDS',
+          rule: {
+            "monday": [ 17, 23, 29, 4 ],
+            "tuesday": [ 21, 27, 2, 8 ],
+            "wednesday": [ 20, 26, 1, 6 ],
+            "thursday": [ 19, 25, 31, 6 ],
+            "saturday": [ 16, 24, 30, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 104,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=677932872/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://museumofpastartifacts.bandcamp.com/album/melancholy-city',
+          a_string: 'Melancholy City by Museum Of Past Artifacts',
+          rule: {
+            "monday": [ 16, 24, 30, 5 ],
+            "tuesday": [ 17, 23, 29, 4 ],
+            "wednesday": [ 21, 27, 2, 8 ],
+            "thursday": [ 20, 26, 1, 6 ],
+            "saturday": [ 19, 25, 31, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 105,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3550845600/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://laperseguidora.bandcamp.com/album/ponyfever',
+          a_string: 'PonyFever by LA PERSEGUIDORA',
+          rule: {
+            "monday": [ 20, 26, 1, 7 ],
+            "tuesday": [ 17, 25, 31, 6 ],
+            "wednesday": [ 18, 24, 30, 5 ],
+            "thursday": [ 22, 28, 3, 9 ],
+            "saturday": [ 21, 27, 2, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
