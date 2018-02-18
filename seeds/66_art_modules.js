@@ -184,6 +184,66 @@ exports.seed = function(knex, Promise) {
           public: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 16,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/cute-kittens-67-57b32a998544a__605.jpg',
+          title: 'Kiwi Kitten',
+          artist: 'unknown artist',
+          year: 'xxi cent.',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 17,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/cute-kittens-68-57b32ad504168__605.jpg',
+          title: 'Happy Sleeping Yoga Kitten',
+          artist: 'unknown artist',
+          year: 'xxi cent.',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 18,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/cute-kittens-63-57b326d0e181d__605.jpg',
+          title: 'Sleeping With A Friend',
+          artist: 'unknown artist',
+          year: 'xxi cent.',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 19,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/cute-kittens-8-57b30aa345790__605.jpg',
+          title: 'Daisy, Probably The World’s Cutest Kitten',
+          artist: 'unkown artist',
+          year: 'xxi cent.',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 20,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/cute-kittens-33-57b31e94e94e6__605.jpg',
+          title: 'Bat Cat',
+          artist: 'unknown artist',
+          year: 'xxi cent.',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
