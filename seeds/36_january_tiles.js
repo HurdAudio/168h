@@ -466,6 +466,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#CCD0DB',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 34,
+          user_id: 1,
+          theme: 'Ice',
+          type: 'friday',
+          src_string: '../img/january_tiles/icy-blue-abstract-patterns-1.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '100%',
+          color_dark: '#164AAF',
+          color_medium: '#2F93E8',
+          color_light: '#6EBFFE',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
