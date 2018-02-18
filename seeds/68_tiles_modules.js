@@ -8,7 +8,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 1,
           user_author_id: 1,
-          theme: 'Default January',
+          theme: 'Paper',
           type: 'default',
           src_string: '../img/tiles/159.jpg',
           repeat_value: 'no-repeat',
@@ -16,6 +16,19 @@ exports.seed = function(knex, Promise) {
           color_dark: '#000000',
           color_medium: '#D1D1D1',
           color_light: '#F2F2F2',
+          public: true
+        },
+        {
+          id: 2,
+          user_author_id: 1,
+          theme: 'Paper',
+          type: 'mtwt',
+          src_string: '../img/tiles/paper_texture_3.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '140%',
+          color_dark: '#000000',
+          color_medium: '#DBDBDB',
+          color_light: '#F4F4F4',
           public: true
         }
       ]);
