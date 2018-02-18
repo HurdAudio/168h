@@ -3504,6 +3504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 176,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/34-03,TenDA.jpg',
+          title: 'Ten Detective Aces',
+          artist: 'J. George Janes',
+          year: '1934',
+          rule: {
+            "monday": [ 28, 10, 18, 24 ],
+            "tuesday": [ 27, 9, 17, 23 ],
+            "wednesday": [ 26, 8, 16, 22 ],
+            "thursday": [ 25, 7, 15, 21 ],
+            "friday": [ 24, 5, 14, 20 ],
+            "saturday": [ 23, 5, 24, 19 ],
+            "sunday": [ 29, 11, 19, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 177,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/39-00,BLBook.jpg',
+          title: 'Better Little Book',
+          artist: 'Robert Jenney',
+          year: '1939',
+          rule: {
+            "monday": [ 29, 11, 19, 25 ],
+            "tuesday": [ 28, 10, 18, 24 ],
+            "wednesday": [ 27, 9, 17, 23 ],
+            "thursday": [ 26, 8, 16, 22 ],
+            "friday": [ 25, 7, 15, 21 ],
+            "saturday": [ 24, 5, 14, 20 ],
+            "sunday": [ 23, 5, 24, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 178,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/36-08,SaucyRomAdv-7.jpg',
+          title: 'Snappy Romances',
+          artist: 'Paul H. Jepsen',
+          year: '1935',
+          rule: {
+            "monday": [ 23, 5, 24, 19 ],
+            "tuesday": [ 29, 11, 19, 25 ],
+            "wednesday": [ 28, 10, 18, 24 ],
+            "thursday": [ 27, 9, 17, 23 ],
+            "friday": [ 26, 8, 16, 22 ],
+            "saturday": [ 25, 7, 15, 21 ],
+            "sunday": [ 24, 5, 14, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 179,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/48-09-24,TheNewAge.jpg',
+          title: 'The N.Y. Age',
+          artist: 'E. Harper Johnson',
+          year: '1948',
+          rule: {
+            "monday": [ 24, 5, 14, 20 ],
+            "tuesday": [ 23, 5, 24, 19 ],
+            "wednesday": [ 29, 11, 19, 25 ],
+            "thursday": [ 28, 10, 18, 24 ],
+            "friday": [ 27, 9, 17, 23 ],
+            "saturday": [ 26, 8, 16, 22 ],
+            "sunday": [ 25, 7, 15, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 180,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/26-05,Chrysler2.jpg',
+          title: 'Chrysler AD',
+          artist: 'Robert Gibson Jones',
+          year: '1926',
+          rule: {
+            "monday": [ 25, 7, 15, 21 ],
+            "tuesday": [ 24, 5, 14, 20 ],
+            "wednesday": [ 23, 5, 24, 19 ],
+            "thursday": [ 29, 11, 19, 25 ],
+            "friday": [ 28, 10, 18, 24 ],
+            "saturday": [ 27, 9, 17, 23 ],
+            "sunday": [ 26, 8, 16, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
