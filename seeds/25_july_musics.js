@@ -2380,6 +2380,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 133,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=367647830/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://miracle.bandcamp.com/album/the-strife-of-love-in-a-dream',
+          a_string: 'The Strife Of Love In A Dream by Miracle',
+          rule: {
+            "monday": [ 21, 23, 27, 4 ],
+            "tuesday": [ 20, 22, 26, 3 ],
+            "wednesday": [ 19, 21, 25, 2 ],
+            "thursday": [ 18, 19, 24, 1 ],
+            "saturday": [ 17, 19, 23, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 134,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2907730545/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://windatlas.bandcamp.com/album/an-edible-body',
+          a_string: 'An Edible Body by Wind Atlas',
+          rule: {
+            "monday": [ 17, 19, 23, 31 ],
+            "tuesday": [ 21, 23, 27, 4 ],
+            "wednesday": [ 20, 22, 26, 3 ],
+            "thursday": [ 19, 21, 25, 2 ],
+            "saturday": [ 18, 19, 24, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 135,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4035595196/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://erica.bandcamp.com/album/beautiful',
+          a_string: 'Beautiful by ÉRICA',
+          rule: {
+            "monday": [ 18, 19, 24, 1 ],
+            "tuesday": [ 17, 19, 23, 31 ],
+            "wednesday": [ 21, 23, 27, 4 ],
+            "thursday": [ 20, 22, 26, 3 ],
+            "saturday": [ 19, 21, 25, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
