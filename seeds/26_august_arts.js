@@ -4304,6 +4304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 216,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/the-rape-of-europa-1908.jpg',
+          title: 'The Rape of Europa',
+          artist: 'Felix Vallotton',
+          year: '1908',
+          rule: {
+            "monday": [ 31, 4, 12, 28 ],
+            "tuesday": [ 30, 1, 11, 27 ],
+            "wednesday": [ 29, 1, 10, 26 ],
+            "thursday": [ 28, 31, 9, 25 ],
+            "friday": [ 3, 7, 15, 31 ],
+            "saturday": [ 2, 5, 14, 30 ],
+            "sunday": [ 1, 5, 13, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 217,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/the-hunchback-1905.jpg',
+          title: 'The Hunchback',
+          artist: 'Alexej von Jawlensky',
+          year: '1905',
+          rule: {
+            "monday": [ 2, 6, 14, 30 ],
+            "tuesday": [ 1, 5, 13, 29 ],
+            "wednesday": [ 31, 2, 12, 28 ],
+            "thursday": [ 30, 2, 11, 27 ],
+            "friday": [ 29, 1, 10, 26 ],
+            "saturday": [ 4, 8, 16, 1 ],
+            "sunday": [ 3, 6, 15, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 218,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/n-chtliche-stra-enszene-berlin-1920.jpg',
+          title: 'Nächtliche Straßenszene, Berlin',
+          artist: 'Lesser Ury',
+          year: '1920',
+          rule: {
+            "monday": [ 3, 6, 15, 31 ],
+            "tuesday": [ 2, 6, 14, 30 ],
+            "wednesday": [ 1, 5, 13, 29 ],
+            "thursday": [ 31, 2, 12, 28 ],
+            "friday": [ 30, 2, 11, 27 ],
+            "saturday": [ 29, 1, 10, 26 ],
+            "sunday": [ 4, 8, 16, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 219,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/portrait-of-the-artist-a-milman-1917.jpg',
+          title: 'Portrait of the Artist A. Milman',
+          artist: 'Ilya Mashkov',
+          year: '1917',
+          rule: {
+            "monday": [ 4, 8, 16, 1 ],
+            "tuesday": [ 3, 6, 15, 31 ],
+            "wednesday": [ 2, 6, 14, 30 ],
+            "thursday": [ 1, 5, 13, 29 ],
+            "friday": [ 31, 2, 12, 28 ],
+            "saturday": [ 30, 2, 11, 27 ],
+            "sunday": [ 29, 1, 10, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 220,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/mountain-snowfall-lake-oesa-1932.jpg',
+          title: 'Mountain Snowfall, Lake Oesa',
+          artist: 'J. E. H. MacDonald',
+          year: '1932',
+          rule: {
+            "monday": [ 29, 1, 10, 26 ],
+            "tuesday": [ 4, 8, 16, 1 ],
+            "wednesday": [ 3, 6, 15, 31 ],
+            "thursday": [ 2, 6, 14, 30 ],
+            "friday": [ 1, 5, 13, 29 ],
+            "saturday": [ 31, 2, 12, 28 ],
+            "sunday": [ 30, 2, 11, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
