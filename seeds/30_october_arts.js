@@ -3904,6 +3904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 196,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_sovpolpost_00062.jpg',
+          title: 'Fascism - is an enemy of culture.',
+          artist: 'B.Prorokov',
+          year: '1939',
+          rule: {
+            "monday": [ 1, 12, 23, 27 ],
+            "tuesday": [ 31, 11, 22, 26 ],
+            "wednesday": [ 30, 10, 21, 25 ],
+            "thursday": [ 29, 9, 10, 24 ],
+            "friday": [ 7, 8, 19, 23 ],
+            "saturday": [ 3, 14, 25, 29 ],
+            "sunday": [ 2, 13, 24, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 197,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_sovpolpost_00061.jpg',
+          title: '(Let us) eradicate spies and saboteurs,..',
+          artist: 'S. Igumnov',
+          year: '1937',
+          rule: {
+            "monday": [ 2, 13, 24, 28 ],
+            "tuesday": [ 1, 12, 23, 27 ],
+            "wednesday": [ 31, 11, 22, 26 ],
+            "thursday": [ 30, 10, 21, 25 ],
+            "friday": [ 29, 9, 10, 24 ],
+            "saturday": [ 7, 8, 19, 23 ],
+            "sunday": [ 3, 14, 25, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 198,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_sovpolpost_00059.jpg',
+          title: 'If the war is tomorrow...',
+          artist: 'V. Koretsky',
+          year: '1938',
+          rule: {
+            "monday": [ 3, 14, 25, 29 ],
+            "tuesday": [ 2, 13, 24, 28 ],
+            "wednesday": [ 1, 12, 23, 27 ],
+            "thursday": [ 31, 11, 22, 26 ],
+            "friday": [ 30, 10, 21, 25 ],
+            "saturday": [ 29, 9, 10, 24 ],
+            "sunday": [ 7, 8, 19, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 199,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_sovpolpost_00058.jpg',
+          title: 'Greetings to great Stalin...',
+          artist: 'G.Kun, V.Elkin, K.Sobolevsky',
+          year: '1937',
+          rule: {
+            "monday": [ 7, 8, 19, 23 ],
+            "tuesday": [ 3, 14, 25, 29 ],
+            "wednesday": [ 2, 13, 24, 28 ],
+            "thursday": [ 1, 12, 23, 27 ],
+            "friday": [ 31, 11, 22, 26 ],
+            "saturday": [ 30, 10, 21, 25 ],
+            "sunday": [ 29, 9, 10, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 200,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_sovpolpost_00057.jpg',
+          title: 'Long live equal (in rights) woman of the USSR.',
+          artist: 'M.Volkova, N.Pinus',
+          year: '1938',
+          rule: {
+            "monday": [ 29, 9, 10, 24 ],
+            "tuesday": [ 7, 8, 19, 23 ],
+            "wednesday": [ 3, 14, 25, 29 ],
+            "thursday": [ 2, 13, 24, 28 ],
+            "friday": [ 1, 12, 23, 27 ],
+            "saturday": [ 31, 11, 22, 26 ],
+            "sunday": [ 30, 10, 21, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
