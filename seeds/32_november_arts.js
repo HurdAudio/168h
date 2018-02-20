@@ -3704,6 +3704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 186,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/broken-obelisk(1).jpg',
+          title: 'Broken Obelisk',
+          artist: 'Barnett Newman',
+          year: '1963 - 1969',
+          rule: {
+            "monday": [ 29, 4, 10, 15 ],
+            "tuesday": [ 28, 3, 9, 16 ],
+            "wednesday": [ 4, 9, 15, 20 ],
+            "thursday": [ 3, 8, 13, 19 ],
+            "friday": [ 2, 7, 13, 17 ],
+            "saturday": [ 1, 4, 12, 17 ],
+            "sunday": [ 30, 4, 11, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 187,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/r-m-i-1969.jpg',
+          title: 'R - M - I',
+          artist: 'Yves Gaucher',
+          year: '1969',
+          rule: {
+            "monday": [ 30, 4, 11, 16 ],
+            "tuesday": [ 29, 4, 10, 15 ],
+            "wednesday": [ 28, 3, 9, 16 ],
+            "thursday": [ 4, 9, 15, 20 ],
+            "friday": [ 3, 8, 13, 19 ],
+            "saturday": [ 2, 7, 13, 17 ],
+            "sunday": [ 1, 4, 12, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 188,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/yellow-painting-1969.jpg',
+          title: 'Yellow Painting',
+          artist: 'Peter Joseph',
+          year: '1969',
+          rule: {
+            "monday": [ 1, 4, 12, 17 ],
+            "tuesday": [ 30, 4, 11, 16 ],
+            "wednesday": [ 29, 4, 10, 15 ],
+            "thursday": [ 28, 3, 9, 16 ],
+            "friday": [ 4, 9, 15, 20 ],
+            "saturday": [ 3, 8, 13, 19 ],
+            "sunday": [ 2, 7, 13, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 189,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/586-69-gerundetes-rot-1969.jpg',
+          title: '586/69 (Gerundetes Rot)',
+          artist: 'Rupprecht Geiger',
+          year: '1969',
+          rule: {
+            "monday": [ 3, 8, 14, 18 ],
+            "tuesday": [ 2, 5, 13, 18 ],
+            "wednesday": [ 1, 5, 12, 17 ],
+            "thursday": [ 30, 5, 11, 16 ],
+            "friday": [ 29, 4, 10, 17 ],
+            "saturday": [ 5, 10, 16, 21 ],
+            "sunday": [ 4, 9, 14, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 190,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/reticul-rea-installation-view-1969.jpg',
+          title: 'Reticulárea (installation view)',
+          artist: 'Gego',
+          year: '1969',
+          rule: {
+            "monday": [ 4, 9, 14, 20 ],
+            "tuesday": [ 3, 8, 14, 18 ],
+            "wednesday": [ 2, 5, 13, 18 ],
+            "thursday": [ 1, 5, 12, 17 ],
+            "friday": [ 30, 5, 11, 16 ],
+            "saturday": [ 29, 4, 10, 17 ],
+            "sunday": [ 5, 10, 16, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
