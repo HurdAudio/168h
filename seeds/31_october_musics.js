@@ -2056,6 +2056,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 115,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2174839893/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://nursewithwound1.bandcamp.com/album/acts-of-senseless-beauty-santoor-lena-bicycle',
+          a_string: 'Acts Of Senseless Beauty / Santoor Lena Bicycle by Nurse With Wound',
+          rule: {
+            "monday": [ 22, 1, 11, 14 ],
+            "tuesday": [ 21, 31, 10, 13 ],
+            "wednesday": [ 20, 30, 10, 12 ],
+            "thursday": [ 24, 3, 13, 16 ],
+            "saturday": [ 23, 2, 12, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 116,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4070610304/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://nursewithwound1.bandcamp.com/album/alice-the-goon',
+          a_string: 'Alice The Goon by Nurse With Wound',
+          rule: {
+            "monday": [ 23, 2, 12, 15 ],
+            "tuesday": [ 22, 1, 11, 14 ],
+            "wednesday": [ 21, 31, 10, 13 ],
+            "thursday": [ 20, 30, 10, 12 ],
+            "saturday": [ 24, 3, 13, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 117,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=738927664/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://nursewithwound1.bandcamp.com/album/lumbs-sister',
+          a_string: 'Lumb&#39;s Sister by Nurse With Wound',
+          rule: {
+            "monday": [ 24, 3, 13, 16 ],
+            "tuesday": [ 23, 2, 12, 15 ],
+            "wednesday": [ 22, 1, 11, 14 ],
+            "thursday": [ 21, 31, 10, 13 ],
+            "saturday": [ 20, 30, 10, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
