@@ -4504,6 +4504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 226,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/not_detected_238362.jpg',
+          title: 'Village of Saint Mammès',
+          artist: 'Alfred Sisley',
+          year: 'c.1898',
+          rule: {
+            "monday": [ 4, 15, 26, 5 ],
+            "tuesday": [ 3, 14, 25, 5 ],
+            "wednesday": [ 2, 13, 24, 4 ],
+            "thursday": [ 1, 12, 23, 24 ],
+            "friday": [ 31, 11, 21, 23 ],
+            "saturday": [ 30, 10, 21, 22 ],
+            "sunday": [ 29, 9, 20, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 227,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/la-fille-de-l-emir-1883.jpg',
+          title: 'La Fille De L\'Emir',
+          artist: 'Carolus-Duran',
+          year: '1883',
+          rule: {
+            "monday": [ 29, 9, 20, 31 ],
+            "tuesday": [ 4, 15, 26, 5 ],
+            "wednesday": [ 3, 14, 25, 5 ],
+            "thursday": [ 2, 13, 24, 4 ],
+            "friday": [ 1, 12, 23, 24 ],
+            "saturday": [ 31, 11, 21, 23 ],
+            "sunday": [ 30, 10, 21, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 228,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/the-grasshopper-1872.jpg',
+          title: 'The Grasshopper',
+          artist: 'Jules Joseph Lefebvre',
+          year: '1872',
+          rule: {
+            "monday": [ 30, 10, 21, 22 ],
+            "tuesday": [ 29, 9, 20, 31 ],
+            "wednesday": [ 4, 15, 26, 5 ],
+            "thursday": [ 3, 14, 25, 5 ],
+            "friday": [ 2, 13, 24, 4 ],
+            "saturday": [ 1, 12, 23, 24 ],
+            "sunday": [ 31, 11, 21, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 229,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/le-barbier-negre-a-suez-1876.jpg',
+          title: 'Le Barbier negre a Suez',
+          artist: 'Leon Bonnat',
+          year: '1876',
+          rule: {
+            "monday": [ 31, 11, 21, 23 ],
+            "tuesday": [ 30, 10, 21, 22 ],
+            "wednesday": [ 29, 9, 20, 31 ],
+            "thursday": [ 4, 15, 26, 5 ],
+            "friday": [ 3, 14, 25, 5 ],
+            "saturday": [ 2, 13, 24, 4 ],
+            "sunday": [ 1, 12, 23, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 230,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/sweet-doing-nothing-1877.jpg',
+          title: 'Sweet Doing Nothing',
+          artist: 'Auguste Toulmouche',
+          year: '1877',
+          rule: {
+            "monday": [ 1, 12, 23, 24 ],
+            "tuesday": [ 31, 11, 21, 23 ],
+            "wednesday": [ 30, 10, 21, 22 ],
+            "thursday": [ 29, 9, 20, 31 ],
+            "friday": [ 4, 15, 26, 5 ],
+            "saturday": [ 3, 14, 25, 5 ],
+            "sunday": [ 2, 13, 24, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
