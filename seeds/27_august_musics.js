@@ -2272,6 +2272,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 127,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1381504171/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://khalil-poshisolation.bandcamp.com/album/the-water-we-drink',
+          a_string: 'The Water We Drink by Khalil',
+          rule: {
+            "monday": [ 31, 8, 21, 20 ],
+            "tuesday": [ 30, 7, 20, 19 ],
+            "wednesday": [ 29, 6, 19, 18 ],
+            "thursday": [ 28, 5, 18, 17 ],
+            "saturday": [ 27, 4, 17, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 128,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1862718433/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://damiendubrovnik-poshisolation.bandcamp.com/album/great-many-arrows',
+          a_string: 'Great Many Arrows by Damien Dubrovnik',
+          rule: {
+            "monday": [ 27, 4, 17, 16 ],
+            "tuesday": [ 31, 8, 21, 20 ],
+            "wednesday": [ 30, 7, 20, 19 ],
+            "thursday": [ 29, 6, 19, 18 ],
+            "saturday": [ 28, 5, 18, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 129,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=217546442/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://croatianamorlustforyouth-poshisolation.bandcamp.com/album/pomegranate',
+          a_string: 'Pomegranate by Croatian Amor &amp; Lust For Youth',
+          rule: {
+            "monday": [ 28, 5, 18, 17 ],
+            "tuesday": [ 27, 4, 17, 16 ],
+            "wednesday": [ 31, 8, 21, 20 ],
+            "thursday": [ 30, 7, 20, 19 ],
+            "saturday": [ 29, 6, 19, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
