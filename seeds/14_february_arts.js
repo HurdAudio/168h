@@ -5089,7 +5089,7 @@ exports.seed = function(knex, Promise) {
           id: 255,
           user_id: 1,
           theme: 'Black History Month',
-          img_path: './img/february/To-Market.jpg',
+          img_path: './img/february/ToMarket.jpg',
           title: 'To Market',
           artist: 'Ellis Wilson',
           year: '?',
