@@ -5504,6 +5504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 276,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/z198789.jpg',
+          title: '?',
+          artist: 'Joaquin Moragues',
+          year: '?',
+          rule: {
+            "monday": [ 22, 1, 26, 16 ],
+            "tuesday": [ 10, 18, 26, 5 ],
+            "wednesday": [ 12, 20, 28, 7 ],
+            "thursday": [ 17, 22, 28, 9 ],
+            "friday": [ 16, 24, 3, 11 ],
+            "saturday": [ 18, 28, 5, 11 ],
+            "sunday": [ 20, 28, 7, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 277,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/SAXOPHONIST-Ghana-African-Fine-Art-Painting-by-Novica.jpg',
+          title: 'Saxophonist',
+          artist: 'Novica',
+          year: '?',
+          rule: {
+            "monday": [ 20, 28, 7, 17 ],
+            "tuesday": [ 22, 1, 26, 16 ],
+            "wednesday": [ 10, 18, 26, 5 ],
+            "thursday": [ 12, 20, 28, 7 ],
+            "friday": [ 17, 22, 28, 9 ],
+            "saturday": [ 16, 24, 3, 11 ],
+            "sunday": [ 18, 28, 5, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 278,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/68.1210-935x709.jpg',
+          title: 'Untitled from "Color Me" series',
+          artist: 'Berni Searle',
+          year: '?',
+          rule: {
+            "monday": [ 18, 28, 5, 11 ],
+            "tuesday": [ 20, 28, 7, 17 ],
+            "wednesday": [ 22, 1, 26, 16 ],
+            "thursday": [ 10, 18, 26, 5 ],
+            "friday": [ 12, 20, 28, 7 ],
+            "saturday": [ 17, 22, 28, 9 ],
+            "sunday": [ 16, 24, 3, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 279,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/xroads-144C7A5C1011E9F3FAE-800x427.jpg',
+          title: 'X Roads',
+          artist: 'Willie Bester',
+          year: 'xx cent.',
+          rule: {
+            "monday": [ 16, 24, 3, 11 ],
+            "tuesday": [ 18, 28, 5, 11 ],
+            "wednesday": [ 20, 28, 7, 17 ],
+            "thursday": [ 22, 1, 26, 16 ],
+            "friday": [ 10, 18, 26, 5 ],
+            "saturday": [ 12, 20, 28, 7 ],
+            "sunday": [ 17, 22, 28, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 280,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/56-403781-naomi-1995-original.jpg',
+          title: 'Naomi’',
+          artist: 'Marlene Dumas',
+          year: '1995',
+          rule: {
+            "monday": [ 18, 23, 29, 10 ],
+            "tuesday": [ 17, 25, 4, 12 ],
+            "wednesday": [ 19, 29, 6, 12 ],
+            "thursday": [ 21, 29, 8, 18 ],
+            "friday": [ 21, 2, 27, 17 ],
+            "saturday": [ 11, 19, 27, 6 ],
+            "sunday": [ 13, 21, 29, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
