@@ -5304,6 +5304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 266,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/le-grand-homme-de-la-nuit-1955.jpg',
+          title: 'Le grand homme de la nuit',
+          artist: 'Germaine Richier',
+          year: '1955',
+          rule: {
+            "monday": [ 6, 15, 23, 2 ],
+            "tuesday": [ 4, 14, 22, 1 ],
+            "wednesday": [ 3, 13, 21, 31 ],
+            "thursday": [ 2, 12, 20, 30 ],
+            "friday": [ 1, 11, 20, 29 ],
+            "saturday": [ 7, 16, 26, 3 ],
+            "sunday": [ 6, 16, 26, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 267,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/60.jpg',
+          title: 'Streetview of Shanghai',
+          artist: 'Guan Zilan',
+          year: 'c.1960',
+          rule: {
+            "monday": [ 6, 16, 26, 3 ],
+            "tuesday": [ 6, 15, 23, 2 ],
+            "wednesday": [ 4, 14, 22, 1 ],
+            "thursday": [ 3, 13, 21, 31 ],
+            "friday": [ 2, 12, 20, 30 ],
+            "saturday": [ 1, 11, 20, 29 ],
+            "sunday": [ 7, 16, 26, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 268,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/girl-with-death-mask-she-plays-alone-1938.jpg',
+          title: 'Girl with Death Mask (She Plays Alone)',
+          artist: 'Frida Kahlo',
+          year: '1938',
+          rule: {
+            "monday": [ 7, 16, 26, 3 ],
+            "tuesday": [ 6, 16, 26, 3 ],
+            "wednesday": [ 6, 15, 23, 2 ],
+            "thursday": [ 4, 14, 22, 1 ],
+            "friday": [ 3, 13, 21, 31 ],
+            "saturday": [ 2, 12, 20, 30 ],
+            "sunday": [ 1, 11, 20, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 269,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/leonor-fini.jpg',
+          title: 'Leonor Fini',
+          artist: 'Dora Maar',
+          year: '?',
+          rule: {
+            "monday": [ 1, 11, 20, 29 ],
+            "tuesday": [ 7, 16, 26, 3 ],
+            "wednesday": [ 6, 16, 26, 3 ],
+            "thursday": [ 6, 15, 23, 2 ],
+            "friday": [ 4, 14, 22, 1 ],
+            "saturday": [ 3, 13, 21, 31 ],
+            "sunday": [ 2, 12, 20, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 270,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/night-and-day.jpg',
+          title: 'Night and Day',
+          artist: 'Medi Wechsler Dinu',
+          year: '?',
+          rule: {
+            "monday": [ 2, 12, 20, 30 ],
+            "tuesday": [ 1, 11, 20, 29 ],
+            "wednesday": [ 7, 16, 26, 3 ],
+            "thursday": [ 6, 16, 26, 3 ],
+            "friday": [ 6, 15, 23, 2 ],
+            "saturday": [ 4, 14, 22, 1 ],
+            "sunday": [ 3, 13, 21, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
