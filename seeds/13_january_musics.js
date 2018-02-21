@@ -3028,6 +3028,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 169,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3363621194/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://anamorphicorchestra.bandcamp.com/album/anamorphic-orchestra',
+          a_string: 'Anamorphic Orchestra by Anamorphic Orchestra',
+          rule: {
+            "monday": [ 3, 10, 11, 12 ],
+            "tuesday": [ 2, 9, 10, 11 ],
+            "wednesday": [ 1, 8, 9, 10 ],
+            "thursday": [ 31, 6, 7, 8 ],
+            "saturday": [ 30, 6, 7, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 170,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1652594741/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://semensemble.bandcamp.com/album/john-cage-atlas-eclipticalis-winter-music-103',
+          a_string: 'John Cage: Atlas Eclipticalis &amp; Winter Music, 103 by The Orchestra of the S.E.M. Ensemble (David Tudor, piano) / Janacek Philharmonic Orchestra',
+          rule: {
+            "monday": [ 30, 6, 7, 8 ],
+            "tuesday": [ 3, 10, 11, 12 ],
+            "wednesday": [ 2, 9, 10, 11 ],
+            "thursday": [ 1, 8, 9, 10 ],
+            "saturday": [ 31, 6, 7, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 171,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3975746092/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tomkerseycellistandcomposer.bandcamp.com/album/kelp-live-on-wmnf-885',
+          a_string: 'KELP, live on WMNF 88.5 by KELP',
+          rule: {
+            "monday": [ 31, 6, 7, 8 ],
+            "tuesday": [ 30, 6, 7, 8 ],
+            "wednesday": [ 3, 10, 11, 12 ],
+            "thursday": [ 2, 9, 10, 11 ],
+            "saturday": [ 1, 8, 9, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
