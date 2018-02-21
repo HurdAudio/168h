@@ -5104,6 +5104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 256,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/arenado.jpg',
+          title: 'Nolan Arenado',
+          artist: '?',
+          year: '2017',
+          rule: {
+            "monday": [ 2, 7, 13, 19 ],
+            "tuesday": [ 1, 6, 12, 18 ],
+            "wednesday": [ 6, 12, 17, 24 ],
+            "thursday": [ 20, 10, 16, 23 ],
+            "friday": [ 5, 10, 16, 22 ],
+            "saturday": [ 4, 8, 23, 21 ],
+            "sunday": [ 3, 8, 13, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 257,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/imagesRockies.jpeg',
+          title: 'Charlie Blackmon',
+          artist: '?',
+          year: '2017',
+          rule: {
+            "monday": [ 3, 8, 13, 19 ],
+            "tuesday": [ 2, 7, 13, 19 ],
+            "wednesday": [ 1, 6, 12, 18 ],
+            "thursday": [ 6, 12, 17, 24 ],
+            "friday": [ 20, 10, 16, 23 ],
+            "saturday": [ 5, 10, 16, 22 ],
+            "sunday": [ 4, 8, 23, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 258,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/arizona-diamondbacks-v-colorado-rockies-20150624-034348-954.jpg',
+          title: '?',
+          artist: '?',
+          year: '2016',
+          rule: {
+            "monday": [ 4, 8, 23, 21 ],
+            "tuesday": [ 3, 8, 13, 19 ],
+            "wednesday": [ 2, 7, 13, 19 ],
+            "thursday": [ 1, 6, 12, 18 ],
+            "friday": [ 6, 12, 17, 24 ],
+            "saturday": [ 20, 10, 16, 23 ],
+            "sunday": [ 5, 10, 16, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 259,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/Colorado-Rockies-CR-Logo-Neon-Sign-Custom-Neon-Signs-24-24.jpg',
+          title: 'Colorado Rockies Logo Neon Sign',
+          artist: '?',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 6, 11, 17, 23 ],
+            "tuesday": [ 5, 9, 24, 22 ],
+            "wednesday": [ 4, 9, 14, 20 ],
+            "thursday": [ 3, 8, 14, 20 ],
+            "friday": [ 2, 7, 13, 19 ],
+            "saturday": [ 7, 13, 18, 25 ],
+            "sunday": [ 21, 11, 17, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 260,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/Ian-Desmond-With-Colorado-Rockies-900x440.jpg',
+          title: 'Ian Desmond',
+          artist: '?',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 21, 11, 17, 24 ],
+            "tuesday": [ 6, 11, 17, 23 ],
+            "wednesday": [ 5, 9, 24, 22 ],
+            "thursday": [ 4, 9, 14, 20 ],
+            "friday": [ 3, 8, 14, 20 ],
+            "saturday": [ 2, 7, 13, 19 ],
+            "sunday": [ 7, 13, 18, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
