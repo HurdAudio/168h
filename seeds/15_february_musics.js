@@ -2920,6 +2920,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 163,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1049165896/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://blackmilk.bandcamp.com/album/fever',
+          a_string: 'FEVER by Black Milk',
+          rule: {
+            "monday": [ 12, 6, 8, 14 ],
+            "tuesday": [ 24, 29, 2, 14 ],
+            "wednesday": [ 25, 29, 2, 6 ],
+            "thursday": [ 28, 2, 4, 8 ],
+            "saturday": [ 29, 4, 6, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 164,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3673150408/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://daupe.bandcamp.com/album/spencer-for-higher',
+          a_string: 'Spencer For Higher by Vic Spencer &amp; SonnyJim',
+          rule: {
+            "monday": [ 29, 4, 6, 8 ],
+            "tuesday": [ 12, 6, 8, 14 ],
+            "wednesday": [ 24, 29, 2, 14 ],
+            "thursday": [ 25, 29, 2, 6 ],
+            "saturday": [ 28, 2, 4, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 165,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3387590721/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://rnglofi.bandcamp.com/album/heavy-coats',
+          a_string: 'HEAVY COATS by k N O E s',
+          rule: {
+            "monday": [ 28, 2, 4, 8 ],
+            "tuesday": [ 29, 4, 6, 8 ],
+            "wednesday": [ 12, 6, 8, 14 ],
+            "thursday": [ 24, 29, 2, 14 ],
+            "saturday": [ 25, 29, 2, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
