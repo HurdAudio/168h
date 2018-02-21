@@ -2488,6 +2488,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 139,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2672424612/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://messa666.bandcamp.com/album/belfry',
+          a_string: 'Belfry by Messa',
+          rule: {
+            "monday": [ 18, 21, 27, 8 ],
+            "tuesday": [ 16, 24, 26, 7 ],
+            "wednesday": [ 20, 24, 30, 11 ],
+            "thursday": [ 19, 22, 27, 9 ],
+            "saturday": [ 18, 22, 27, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 140,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=231620390/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://rbeny.bandcamp.com/album/cascade-symmetry',
+          a_string: 'cascade symmetry by r beny',
+          rule: {
+            "monday": [ 19, 23, 28, 10 ],
+            "tuesday": [ 19, 22, 28, 9 ],
+            "wednesday": [ 17, 25, 27, 8 ],
+            "thursday": [ 21, 25, 1, 12 ],
+            "saturday": [ 20, 23, 28, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 141,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3750285773/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cycliclaw.bandcamp.com/album/alchymeia',
+          a_string: 'Alchymeia by raison d&#39;être',
+          rule: {
+            "monday": [ 20, 23, 28, 10 ],
+            "tuesday": [ 19, 23, 28, 10 ],
+            "wednesday": [ 19, 22, 28, 9 ],
+            "thursday": [ 17, 25, 27, 8 ],
+            "saturday": [ 21, 25, 1, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
