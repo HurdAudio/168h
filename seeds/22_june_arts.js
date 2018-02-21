@@ -4704,6 +4704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 236,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/stock-photo-100276985.jpg',
+          title: 'Cloud Atlas',
+          artist: 'Meer Sadi',
+          year: '2015',
+          rule: {
+            "monday": [ 9, 19, 29, 27 ],
+            "tuesday": [ 28, 8, 18, 26 ],
+            "wednesday": [ 27, 7, 17, 25 ],
+            "thursday": [ 3, 13, 23, 29 ],
+            "friday": [ 2, 12, 22, 30 ],
+            "saturday": [ 1, 11, 21, 29 ],
+            "sunday": [ 30, 10, 20, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 237,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/stock-photo-113744211.jpg',
+          title: 'Raspberry Sorbet in A’dam',
+          artist: 'Anka Zhuravleva',
+          year: '2015',
+          rule: {
+            "monday": [ 30, 10, 20, 28 ],
+            "tuesday": [ 9, 19, 29, 27 ],
+            "wednesday": [ 28, 8, 18, 26 ],
+            "thursday": [ 27, 7, 17, 25 ],
+            "friday": [ 3, 13, 23, 29 ],
+            "saturday": [ 2, 12, 22, 30 ],
+            "sunday": [ 1, 11, 21, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 238,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/stock-photo-101913689.jpg',
+          title: 'The Modern Force',
+          artist: 'Toby Harriman',
+          year: '2015',
+          rule: {
+            "monday": [ 2, 12, 22, 30 ],
+            "tuesday": [ 1, 11, 21, 29 ],
+            "wednesday": [ 10, 20, 30, 28 ],
+            "thursday": [ 29, 9, 19, 27 ],
+            "friday": [ 28, 8, 18, 26 ],
+            "saturday": [ 4, 14, 24, 30 ],
+            "sunday": [ 3, 13, 23, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 239,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/stock-photo-100427655.jpg',
+          title: 'Muza',
+          artist: 'Dmitry Rogozhkin',
+          year: '2015',
+          rule: {
+            "monday": [ 3, 13, 23, 1 ],
+            "tuesday": [ 2, 12, 22, 30 ],
+            "wednesday": [ 1, 11, 21, 29 ],
+            "thursday": [ 10, 20, 30, 28 ],
+            "friday": [ 29, 9, 19, 27 ],
+            "saturday": [ 28, 8, 18, 26 ],
+            "sunday": [ 4, 14, 24, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 240,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/stock-photo-99976761.jpg',
+          title: 'Ballerina over NYC',
+          artist: 'shared Vik Tory, Captured by DBox',
+          year: '2015',
+          rule: {
+            "monday": [ 4, 14, 24, 30 ],
+            "tuesday": [ 3, 13, 23, 1 ],
+            "wednesday": [ 2, 12, 22, 30 ],
+            "thursday": [ 1, 11, 21, 29 ],
+            "friday": [ 10, 20, 30, 28 ],
+            "saturday": [ 29, 9, 19, 27 ],
+            "sunday": [ 28, 8, 18, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
