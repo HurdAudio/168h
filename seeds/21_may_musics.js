@@ -2596,6 +2596,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 145,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=223156081/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://opengrecords.bandcamp.com/album/a-function-of-memory',
+          a_string: 'A Function of Memory by Christopher Grymes, clarinet',
+          rule: {
+            "monday": [ 23, 29, 5, 18 ],
+            "tuesday": [ 22, 28, 4, 17 ],
+            "wednesday": [ 21, 27, 3, 16 ],
+            "thursday": [ 25, 1, 7, 20 ],
+            "saturday": [ 24, 30, 6, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 146,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3588138185/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://opengrecords.bandcamp.com/album/steven-stucky-chamber-music',
+          a_string: 'Steven Stucky: Chamber Music by Steven Stucky',
+          rule: {
+            "monday": [ 24, 30, 6, 19 ],
+            "tuesday": [ 23, 29, 5, 18 ],
+            "wednesday": [ 22, 28, 4, 17 ],
+            "thursday": [ 21, 27, 3, 16 ],
+            "saturday": [ 25, 1, 7, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 147,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1936427437/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://gudmundursteinn.bandcamp.com/album/selected-chamber-works-2008-2011',
+          a_string: 'Selected Chamber Works 2008-2011 by Guðmundur Steinn Gunnarsson',
+          rule: {
+            "monday": [ 26, 2, 8, 21 ],
+            "tuesday": [ 25, 31, 7, 20 ],
+            "wednesday": [ 24, 30, 6, 19 ],
+            "thursday": [ 23, 29, 5, 18 ],
+            "saturday": [ 22, 28, 4, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
