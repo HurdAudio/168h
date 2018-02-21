@@ -5704,6 +5704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 286,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/composition-1958.jpg',
+          title: 'Composition',
+          artist: 'Gunter Fruhtrunk',
+          year: '1958',
+          rule: {
+            "monday": [ 21, 23, 24, 26 ],
+            "tuesday": [ 23, 25, 29, 1 ],
+            "wednesday": [ 25, 27, 28, 31 ],
+            "thursday": [ 10, 11, 22, 14 ],
+            "friday": [ 13, 15, 7, 27 ],
+            "saturday": [ 15, 16, 8, 11 ],
+            "sunday": [ 18, 19, 10, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 287,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/early-mutation-green-no-ii-1960.jpg',
+          title: 'Early Mutation Green No. II',
+          artist: 'Bernard Cohen',
+          year: '1960',
+          rule: {
+            "monday": [ 19, 20, 11, 15 ],
+            "tuesday": [ 22, 24, 25, 27 ],
+            "wednesday": [ 24, 26, 30, 2 ],
+            "thursday": [ 26, 28, 29, 1 ],
+            "friday": [ 11, 12, 23, 15 ],
+            "saturday": [ 14, 16, 8, 28 ],
+            "sunday": [ 16, 17, 9, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 288,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/untitled-1969-1.jpg',
+          title: 'Untitled',
+          artist: 'Moshe Kupferman',
+          year: '1969',
+          rule: {
+            "monday": [ 16, 17, 9, 12 ],
+            "tuesday": [ 19, 20, 11, 15 ],
+            "wednesday": [ 22, 24, 25, 27 ],
+            "thursday": [ 24, 26, 30, 2 ],
+            "friday": [ 26, 28, 29, 1 ],
+            "saturday": [ 11, 12, 23, 15 ],
+            "sunday": [ 14, 16, 8, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 289,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/klang-sound-i-1995.jpg',
+          title: 'Klang-Sound I',
+          artist: 'Jurgen Partenheimer',
+          year: '1995',
+          rule: {
+            "monday": [ 14, 16, 8, 28 ],
+            "tuesday": [ 16, 17, 9, 12 ],
+            "wednesday": [ 19, 20, 11, 15 ],
+            "thursday": [ 22, 24, 25, 27 ],
+            "friday": [ 24, 26, 30, 2 ],
+            "saturday": [ 26, 28, 29, 1 ],
+            "sunday": [ 11, 12, 23, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 290,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/pumpkin-1998.jpg',
+          title: 'Pumpkin',
+          artist: 'Nicholas Krushenick',
+          year: '1998',
+          rule: {
+            "monday": [ 11, 12, 23, 15 ],
+            "tuesday": [ 14, 16, 8, 28 ],
+            "wednesday": [ 16, 17, 9, 12 ],
+            "thursday": [ 19, 20, 11, 15 ],
+            "friday": [ 22, 24, 25, 27 ],
+            "saturday": [ 24, 26, 30, 2 ],
+            "sunday": [ 26, 28, 29, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
