@@ -4904,6 +4904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 246,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/judas-hee.jpg',
+          title: 'Judas hee',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 3, 14, 23, 2 ],
+            "tuesday": [ 1, 11, 19, 31 ],
+            "wednesday": [ 29, 9, 19, 8 ],
+            "thursday": [ 28, 8, 7, 27 ],
+            "friday": [ 26, 5, 15, 23 ],
+            "saturday": [ 24, 2, 14, 23 ],
+            "sunday": [ 5, 15, 25, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 247,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/jumbo-fragment.jpg',
+          title: 'Jumbo(fragment)',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 5, 15, 25, 2 ],
+            "tuesday": [ 3, 14, 23, 2 ],
+            "wednesday": [ 1, 11, 19, 31 ],
+            "thursday": [ 29, 9, 19, 8 ],
+            "friday": [ 28, 8, 7, 27 ],
+            "saturday": [ 26, 5, 15, 23 ],
+            "sunday": [ 24, 2, 14, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 248,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/jumbo-fragment-1.jpg',
+          title: 'Jumbo(fragment)',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 24, 2, 14, 23 ],
+            "tuesday": [ 5, 15, 25, 2 ],
+            "wednesday": [ 3, 14, 23, 2 ],
+            "thursday": [ 1, 11, 19, 31 ],
+            "friday": [ 29, 9, 19, 8 ],
+            "saturday": [ 28, 8, 7, 27 ],
+            "sunday": [ 26, 5, 15, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 249,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/kat.jpg',
+          title: 'Kat',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 26, 5, 15, 23 ],
+            "tuesday": [ 24, 2, 14, 23 ],
+            "wednesday": [ 5, 15, 25, 2 ],
+            "thursday": [ 3, 14, 23, 2 ],
+            "friday": [ 1, 11, 19, 31 ],
+            "saturday": [ 29, 9, 19, 8 ],
+            "sunday": [ 28, 8, 7, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 250,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/kat-abandoned-flip.jpg',
+          title: 'Kat abandoned flip',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 28, 8, 7, 27 ],
+            "tuesday": [ 26, 5, 15, 23 ],
+            "wednesday": [ 24, 2, 14, 23 ],
+            "thursday": [ 5, 15, 25, 2 ],
+            "friday": [ 3, 14, 23, 2 ],
+            "saturday": [ 1, 11, 19, 31 ],
+            "sunday": [ 29, 9, 19, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
