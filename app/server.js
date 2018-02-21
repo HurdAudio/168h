@@ -124,6 +124,8 @@ const art_shares = require('./routes/art_shares.js');
 const art_sharesbyuser = require('./routes/art_sharesbyuser.js');
 const music_shares = require('./routes/music_shares.js');
 const music_sharesbyuser = require('./routes/music_sharesbyuser.js');
+const tile_shares = require('./routes/tile_shares.js');
+const tile_sharesbyuser = require('./routes/tile_sharesbyuser.js');
 
 const port = process.env.PORT || 3007;
 
@@ -248,6 +250,8 @@ app.use(fileUpload());
  app.use('/art_sharesbyuser', art_sharesbyuser);
  app.use('/music_shares', music_shares);
  app.use('/music_sharesbyuser', music_sharesbyuser);
+ app.use('/tile_shares', tile_shares);
+ app.use('/tile_sharesbyuser', tile_sharesbyuser);
 
 app.get('/onthisdayinhistory/:date', (req, res, next) =>{
   let newUrl = 'http://history.muffinlabs.com/date/';
