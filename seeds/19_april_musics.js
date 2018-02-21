@@ -2704,6 +2704,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 151,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4209517424/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://darktree.bandcamp.com/album/stomiidae',
+          a_string: 'Stomiidae by Stomiidae (Daniel Levin • Chris Pitsiokos • Brandon Seabrook)',
+          rule: {
+            "monday": [ 24, 2, 14, 19 ],
+            "tuesday": [ 23, 1, 13, 18 ],
+            "wednesday": [ 22, 30, 12, 17 ],
+            "thursday": [ 21, 29, 11, 16 ],
+            "saturday": [ 25, 3, 15, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 152,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2222414316/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://darktree.bandcamp.com/album/live-at-the-century-city-playhouse-los-angeles-1979',
+          a_string: 'Live at the Century City Playhouse - Los Angeles, 1979 by Vinny Golia Wind Quartet',
+          rule: {
+            "monday": [ 25, 3, 15, 20 ],
+            "tuesday": [ 24, 2, 14, 19 ],
+            "wednesday": [ 23, 1, 13, 18 ],
+            "thursday": [ 22, 30, 12, 17 ],
+            "saturday": [ 21, 29, 11, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 153,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1326538116/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://darktree.bandcamp.com/album/en-corps-generation',
+          a_string: 'En Corps - Generation by En Corps (Eve Risser • Benjamin Duboc • Edward Perraud)',
+          rule: {
+            "monday": [ 21, 29, 11, 16 ],
+            "tuesday": [ 25, 3, 15, 20 ],
+            "wednesday": [ 24, 2, 14, 19 ],
+            "thursday": [ 23, 1, 13, 18 ],
+            "saturday": [ 22, 30, 12, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
