@@ -2812,6 +2812,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 157,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=418983817/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://genot.bandcamp.com/album/feed-goals',
+          a_string: 'Feed Goals by Enchanted Lands',
+          rule: {
+            "monday": [ 27, 2, 8, 16 ],
+            "tuesday": [ 26, 1, 7, 15 ],
+            "wednesday": [ 25, 31, 6, 15 ],
+            "thursday": [ 23, 30, 5, 13 ],
+            "saturday": [ 23, 29, 4, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 158,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=863913310/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://genot.bandcamp.com/album/fugue-some-temporal-patterns-other-than-the-forward-march',
+          a_string: 'Fugue: Some Temporal Patterns Other Than the Forward March by Iku',
+          rule: {
+            "monday": [ 23, 29, 4, 12 ],
+            "tuesday": [ 27, 2, 8, 16 ],
+            "wednesday": [ 26, 1, 7, 15 ],
+            "thursday": [ 25, 31, 6, 15 ],
+            "saturday": [ 23, 30, 5, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 159,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1409178576/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://buhrecords.bandcamp.com/album/br67-fifteen-years-old-abecedario',
+          a_string: 'BR67 - Fifteen Years Old - Abecedario by buh records',
+          rule: {
+            "monday": [ 23, 30, 5, 13 ],
+            "tuesday": [ 23, 29, 4, 12 ],
+            "wednesday": [ 27, 2, 8, 16 ],
+            "thursday": [ 26, 1, 7, 15 ],
+            "saturday": [ 25, 31, 6, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
