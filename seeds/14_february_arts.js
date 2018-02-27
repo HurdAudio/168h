@@ -4790,7 +4790,7 @@ exports.seed = function(knex, Promise) {
           user_id: 1,
           theme: 'Black History Month',
           img_path: './img/february/henry_taylor_im_yours_-_2015.jpg',
-          title: 'i’m yours,',
+          title: 'i’m yours',
           artist: 'Henry Taylor',
           year: '2015',
           rule: {

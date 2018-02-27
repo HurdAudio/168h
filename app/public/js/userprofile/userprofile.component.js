@@ -207,6 +207,53 @@
       vm.addNewMusic = addNewMusic;
       vm.artCurratorReport = artCurratorReport;
       vm.artsCurratorReportDone = artsCurratorReportDone;
+      vm.userEditMessage = userEditMessage;
+      vm.userEditMessageCompleted = userEditMessageCompleted;
+
+      function userEditMessageCompleted(messageId) {
+        let thisIsTheMessageEditor = document.getElementById('thisIsTheMessageEditor' + messageId);
+        let subObj = {
+          message: thisIsTheMessageEditor.value
+        };
+        $http.patch(`/messages/${messageId}`, subObj)
+        .then(messageData=>{
+          let message = messageData.data;
+          let thisIsTheMessage = document.getElementById('thisIsTheMessage' + messageId);
+          let thisIsMessageEditDoneDiv = document.getElementById('thisIsMessageEditDoneDiv' + messageId);
+          let editDeleteDiv = document.getElementById('editDeleteDiv' + messageId);
+
+
+          for (let i = 0; i < vm.userMessages.length; i++) {
+            if (message.id === vm.userMessages[i].id) {
+              thisIsTheMessage.innerHTML = message.message;
+            }
+          }
+          thisIsTheMessage.setAttribute("style", "display: initial;");
+          thisIsTheMessageEditor.setAttribute("style", "display: none;");
+          thisIsMessageEditDoneDiv.setAttribute("style", "display: none;");
+          editDeleteDiv.setAttribute("style", "display: initial;");
+        });
+      }
+
+      function userEditMessage(messageId) {
+        $http.get(`/messages/${messageId}`)
+        .then(messageData=>{
+          let message = messageData.data;
+          let thisIsTheMessage = document.getElementById('thisIsTheMessage' + message.id);
+          let thisIsTheMessageEditor = document.getElementById('thisIsTheMessageEditor' + message.id);
+          let thisIsMessageEditDoneDiv = document.getElementById('thisIsMessageEditDoneDiv' + message.id);
+          let thisIsTheMessageEditorDoneButton = document.getElementById('thisIsTheMessageEditorDoneButton' + message.id);
+          let editDeleteDiv = document.getElementById('editDeleteDiv' + message.id);
+
+          thisIsTheMessage.setAttribute("style", "display: none;");
+          thisIsTheMessageEditor.value = message.message;
+          thisIsTheMessageEditor.setAttribute("style", "display: initial;");
+          thisIsMessageEditDoneDiv.setAttribute("style", "display: initial;");
+          thisIsTheMessageEditorDoneButton.setAttribute("style", "visibility: visible;");
+          editDeleteDiv.setAttribute("style", "display: none;");
+
+        });
+      }
 
       function artsCurratorReportDone() {
 
@@ -11951,6 +11998,18 @@
         });
       }
 
+      function setMessageCRUDStates() {
+        setTimeout(()=>{
+          let editDeleteDiv;
+          for (let i = 0; i < vm.userMessages.length; i++) {
+            if (parseInt(vm.userMessages[i].user_id) === parseInt(currentUserId)) {
+              editDeleteDiv = document.getElementById('editDeleteDiv' + vm.userMessages[i].id);
+              editDeleteDiv.setAttribute("style", "display: initial;");
+            }
+          }
+        }, 100);
+      }
+
       function retrieveUserMessages() {
         $http.get(`/users/${currentUserId}`)
         .then(userData=>{
@@ -11982,6 +12041,7 @@
                 vm.userMessages[i].cleanDate = cleanDateHoliday(vm.userMessages[i].created_at) + ' - ' + timeDate(vm.userMessages[i].updated_at);
                 retrieveComments(vm.userMessages[i], i);
               }
+              setMessageCRUDStates();
             }
           });
         });

@@ -7183,6 +7183,12 @@ footer img {
   float: left;
 }
 
+#messagesSpace textarea {
+  display: none;
+  margin: 1vmin 1vmin 1vmin 4vmin;
+  width: 80%;
+}
+
 #messageBar {
   font-family: 'Asul', serif;
   font-size: 18px
@@ -7210,6 +7216,19 @@ footer img {
 }
 
 #availableArtModules {
+  display: none;
+}
+
+.messageEditDelete {
+  display: none;
+}
+
+.messageEditDelete a {
+  float: left;
+  margin: 1vmin 1vmin 1vmin 8vmin;
+}
+
+.thisIsMessageEditDoneDiv {
   display: none;
 }
 

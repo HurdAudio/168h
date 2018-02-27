@@ -2242,9 +2242,9 @@ exports.seed = function(knex, Promise) {
           user_id: 1,
           theme: 'Black History Month',
           source: 'bandcamp',
-          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1458926099/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
-          href_string: 'http://analogafrica.bandcamp.com/album/pop-makossa-the-invasive-dance-beat-of-cameroon-1976-1984',
-          a_string: 'Pop Makossa - The Invasive Dance Beat of Cameroon 1976-1984 by Various',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1123281549/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://analogafrica.bandcamp.com/album/legend-of-funana-the-forbidden-music-of-the-cape-verde-islands',
+          a_string: 'Legend Of Funaná (The Forbidden Music of The Cape Verde Islands) by Bitori',
           rule: {
             "monday": [ 22, 25, 27, 2 ],
             "tuesday": [ 23, 27, 29, 2 ],

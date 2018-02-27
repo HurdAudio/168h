@@ -3906,7 +3906,13 @@
         <img src="{{message.senderImg}}">
         <p>From: {{message.senderName}}</p>
         <p>on {{message.cleanDate}}</p><br><br><br><br><br><br><br>
-        <h3>{{message.message}}</h3>
+        <h3 id="thisIsTheMessage{{message.id}}">{{message.message}}</h3>
+        <textarea id="thisIsTheMessageEditor{{message.id}}" class="pure-input-1" rows="5"></textarea>
+        <div class="thisIsMessageEditDoneDiv" id="thisIsMessageEditDoneDiv{{message.id}}"><a class="btn" id="thisIsTheMessageEditorDoneButton{{message.id}}" href="#" ng-click="$ctrl.userEditMessageCompleted(message.id)">done</a></div>
+        <div id="editDeleteDiv{{message.id}}" class="messageEditDelete">
+          <a class="btn" href="#" ng-click="$ctrl.userEditMessage(message.id)">edit</a>
+          <a class="btn" href="#" ng-click="$ctrl.userDeleteMessage(message.id)">delete</a>
+        </div>
         <a href=""><h3>comment</h3></a>
         <div class="commentsBar">
 
