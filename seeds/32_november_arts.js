@@ -3804,6 +3804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 191,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/dis-play-1970.jpg',
+          title: 'Dis-Play',
+          artist: 'Keith Sonnier',
+          year: '1970',
+          rule: {
+            "monday": [ 5, 10, 16, 21 ],
+            "tuesday": [ 4, 9, 14, 20 ],
+            "wednesday": [ 3, 8, 14, 18 ],
+            "thursday": [ 2, 5, 13, 18 ],
+            "friday": [ 1, 5, 12, 17 ],
+            "saturday": [ 30, 5, 11, 16 ],
+            "sunday": [ 29, 4, 10, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 192,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/b-w-vi-1970.jpg',
+          title: 'B.W. VI',
+          artist: 'Yves Gaucher',
+          year: '1970',
+          rule: {
+            "monday": [ 29, 4, 10, 17 ],
+            "tuesday": [ 5, 10, 16, 21 ],
+            "wednesday": [ 4, 9, 14, 20 ],
+            "thursday": [ 3, 8, 14, 18 ],
+            "friday": [ 2, 5, 13, 18 ],
+            "saturday": [ 1, 5, 12, 17 ],
+            "sunday": [ 30, 5, 11, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 193,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/Gaucher.jpg',
+          title: 'Tegn I',
+          artist: 'Jan Groth',
+          year: '1970',
+          rule: {
+            "monday": [ 30, 5, 11, 16 ],
+            "tuesday": [ 29, 4, 10, 17 ],
+            "wednesday": [ 5, 10, 16, 21 ],
+            "thursday": [ 4, 9, 14, 20 ],
+            "friday": [ 3, 8, 14, 18 ],
+            "saturday": [ 2, 5, 13, 18 ],
+            "sunday": [ 1, 5, 12, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 194,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/g-kx-69-1970.jpg',
+          title: 'G-KX-69',
+          artist: 'Victor Bonato',
+          year: '1970',
+          rule: {
+            "monday": [ 1, 5, 12, 17 ],
+            "tuesday": [ 30, 5, 11, 16 ],
+            "wednesday": [ 29, 4, 10, 17 ],
+            "thursday": [ 5, 10, 16, 21 ],
+            "friday": [ 4, 9, 14, 20 ],
+            "saturday": [ 3, 8, 14, 18 ],
+            "sunday": [ 2, 5, 13, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 195,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/untitled-1970-7.jpg',
+          title: 'Untitled',
+          artist: 'Nasreen Mohamedi',
+          year: '1970',
+          rule: {
+            "monday": [ 2, 5, 13, 18 ],
+            "tuesday": [ 1, 5, 12, 17 ],
+            "wednesday": [ 30, 5, 11, 16 ],
+            "thursday": [ 29, 4, 10, 17 ],
+            "friday": [ 5, 10, 16, 21 ],
+            "saturday": [ 4, 9, 14, 20 ],
+            "sunday": [ 3, 8, 14, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
