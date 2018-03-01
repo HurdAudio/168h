@@ -2110,6 +2110,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 118,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1860152868/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://keysoforthanc.bandcamp.com/album/dush-agh-golnauk',
+          a_string: 'Dush agh Golnauk by Keys of Orthanc',
+          rule: {
+            "monday": [ 20, 30, 10, 12 ],
+            "tuesday": [ 24, 3, 13, 16 ],
+            "wednesday": [ 23, 2, 12, 15 ],
+            "thursday": [ 22, 1, 11, 14 ],
+            "saturday": [ 21, 31, 10, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 119,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=38645880/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://darkdescentrecords.bandcamp.com/album/where-all-hope-fades',
+          a_string: 'Where All Hope Fades by Ataraxy',
+          rule: {
+            "monday": [ 22, 1, 11, 14 ],
+            "tuesday": [ 21, 31, 11, 13 ],
+            "wednesday": [ 25, 4, 14, 17 ],
+            "thursday": [ 24, 3, 13, 16 ],
+            "saturday": [ 23, 2, 12, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 120,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2094904391/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://visigothofficial.bandcamp.com/album/conquerors-oath',
+          a_string: 'Conqueror&#39;s Oath by Visigoth',
+          rule: {
+            "monday": [ 23, 2, 12, 15 ],
+            "tuesday": [ 22, 1, 11, 14 ],
+            "wednesday": [ 21, 31, 11, 13 ],
+            "thursday": [ 25, 4, 14, 17 ],
+            "saturday": [ 24, 3, 13, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
