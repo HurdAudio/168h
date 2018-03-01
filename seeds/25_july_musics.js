@@ -2434,6 +2434,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 136,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1771546549/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://witchesofthehex.bandcamp.com/album/the-hill-temple',
+          a_string: 'The Hill Temple by HEX',
+          rule: {
+            "monday": [ 19, 21, 25, 2 ],
+            "tuesday": [ 18, 19, 24, 1 ],
+            "wednesday": [ 17, 19, 23, 31 ],
+            "thursday": [ 21, 23, 27, 4 ],
+            "saturday": [ 20, 22, 26, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 137,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2742963020/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://monikerrecordsss.bandcamp.com/album/eyesore',
+          a_string: 'Eyesore by Royal Brat',
+          rule: {
+            "monday": [ 20, 22, 26, 3 ],
+            "tuesday": [ 19, 21, 25, 2 ],
+            "wednesday": [ 18, 19, 24, 1 ],
+            "thursday": [ 17, 19, 23, 31 ],
+            "saturday": [ 21, 23, 27, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 138,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1442671953/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://imarhan.bandcamp.com/album/temet',
+          a_string: 'Temet by Imarhan',
+          rule: {
+            "monday": [ 21, 23, 27, 4 ],
+            "tuesday": [ 20, 22, 26, 3 ],
+            "wednesday": [ 19, 21, 25, 2 ],
+            "thursday": [ 18, 19, 24, 1 ],
+            "saturday": [ 17, 19, 23, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
