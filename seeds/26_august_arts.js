@@ -4404,6 +4404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 221,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/interior-of-the-atelier-1928.jpg',
+          title: 'Interior of the Atelier',
+          artist: 'Corneliu Michailescu',
+          year: '1928',
+          rule: {
+            "monday": [ 30, 2, 11, 27 ],
+            "tuesday": [ 29, 1, 10, 26 ],
+            "wednesday": [ 4, 8, 16, 1 ],
+            "thursday": [ 3, 6, 15, 31 ],
+            "friday": [ 2, 6, 14, 30 ],
+            "saturday": [ 1, 5, 13, 29 ],
+            "sunday": [ 31, 2, 12, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 222,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/still-life-with-egg-1915.jpg',
+          title: 'Still life with egg',
+          artist: 'Aleksandra Ekster',
+          year: '1915',
+          rule: {
+            "monday": [ 31, 2, 12, 28 ],
+            "tuesday": [ 30, 2, 11, 27 ],
+            "wednesday": [ 29, 1, 10, 26 ],
+            "thursday": [ 4, 8, 16, 1 ],
+            "friday": [ 3, 6, 15, 31 ],
+            "saturday": [ 2, 6, 14, 30 ],
+            "sunday": [ 1, 5, 13, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 223,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/hevoshuijarit-1930.jpg',
+          title: 'Hevoshuijarit',
+          artist: 'Vilho Lampi',
+          year: '1930',
+          rule: {
+            "monday": [ 1, 5, 13, 29 ],
+            "tuesday": [ 31, 2, 12, 28 ],
+            "wednesday": [ 30, 2, 11, 27 ],
+            "thursday": [ 29, 1, 10, 26 ],
+            "friday": [ 4, 8, 16, 1 ],
+            "saturday": [ 3, 6, 15, 31 ],
+            "sunday": [ 2, 6, 14, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 224,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/animals-in-a-landscape-1914.jpg',
+          title: 'Animals in a Landscape',
+          artist: 'Franz Marc',
+          year: '1914',
+          rule: {
+            "monday": [ 3, 7, 15, 31 ],
+            "tuesday": [ 2, 6, 14, 30 ],
+            "wednesday": [ 1, 3, 13, 29 ],
+            "thursday": [ 31, 3, 12, 28 ],
+            "friday": [ 30, 2, 11, 27 ],
+            "saturday": [ 5, 9, 17, 2 ],
+            "sunday": [ 4, 7, 16, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 225,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/mountais-1923.jpg',
+          title: 'Mountains',
+          artist: 'Martiros Sarian',
+          year: '1923',
+          rule: {
+            "monday": [ 4, 7, 16, 1 ],
+            "tuesday": [ 3, 7, 15, 31 ],
+            "wednesday": [ 2, 6, 14, 30 ],
+            "thursday": [ 1, 3, 13, 29 ],
+            "friday": [ 31, 3, 12, 28 ],
+            "saturday": [ 30, 2, 11, 27 ],
+            "sunday": [ 5, 9, 17, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
