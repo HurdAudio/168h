@@ -244,6 +244,66 @@ exports.seed = function(knex, Promise) {
           public: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 21,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/catbuckets.jpg',
+          title: 'Try Not to Say Aww Challlenge 2016',
+          artist: '?',
+          year: '2016',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 22,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/Cm2okj0WcAE5tC9.jpg',
+          title: 'Awww, LOVE!',
+          artist: '?',
+          year: '2015',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 23,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/Cm2MMnBWgAEcPQN.jpg',
+          title: 'Look at that face. Crazy Cute!',
+          artist: '?',
+          year: '2016',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 24,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/Cm1v0z4WcAAwZLI.jpg',
+          title: 'cutest kitten EVER',
+          artist: '?',
+          year: '2016',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 25,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/Cmz1JmMWYAABeFW.jpg',
+          title: 'me while ur gone',
+          artist: '?',
+          year: '2016',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
