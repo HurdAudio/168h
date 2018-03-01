@@ -4804,6 +4804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 241,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/Jorge-Barreda-800x800.jpg',
+          title: 'unknown title',
+          artist: 'Jorge Barreda',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 28, 8, 18, 26 ],
+            "tuesday": [ 4, 14, 24, 30 ],
+            "wednesday": [ 3, 13, 23, 1 ],
+            "thursday": [ 2, 12, 22, 30 ],
+            "friday": [ 1, 11, 21, 29 ],
+            "saturday": [ 10, 20, 30, 28 ],
+            "sunday": [ 29, 9, 19, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 242,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/TJ_Drysdale_Fine_Art_Photography_Madeleine_Acton.jpg',
+          title: 'Madeleine Acton',
+          artist: 'TJ Drysdale',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 29, 9, 19, 27 ],
+            "tuesday": [ 28, 8, 18, 26 ],
+            "wednesday": [ 4, 14, 24, 30 ],
+            "thursday": [ 3, 13, 23, 1 ],
+            "friday": [ 2, 12, 22, 30 ],
+            "saturday": [ 1, 11, 21, 29 ],
+            "sunday": [ 10, 20, 30, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 243,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/fine-art-photography0005.jpg',
+          title: 'Home built in the 30s and then abandoned only a few years ago.',
+          artist: 'Leanne Cole',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 10, 20, 30, 28 ],
+            "tuesday": [ 29, 9, 19, 27 ],
+            "wednesday": [ 28, 8, 18, 26 ],
+            "thursday": [ 4, 14, 24, 30 ],
+            "friday": [ 3, 13, 23, 1 ],
+            "saturday": [ 2, 12, 22, 30 ],
+            "sunday": [ 1, 11, 21, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 244,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/3fc01a447a433f84df6191c6c9b16bc8--white-photography-fine-art-photography-ideas.jpg',
+          title: 'Woman Smoking Cigarette',
+          artist: 'Rolland András Flinta',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 1, 11, 21, 29 ],
+            "tuesday": [ 10, 20, 30, 28 ],
+            "wednesday": [ 29, 9, 19, 27 ],
+            "thursday": [ 28, 8, 18, 26 ],
+            "friday": [ 4, 14, 24, 30 ],
+            "saturday": [ 3, 13, 23, 1 ],
+            "sunday": [ 2, 12, 22, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 245,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/imagePhoto.jpeg',
+          title: 'unknown',
+          artist: 'unknown',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 3, 13, 23, 1 ],
+            "tuesday": [ 2, 12, 22, 30 ],
+            "wednesday": [ 11, 21, 1, 29 ],
+            "thursday": [ 30, 10, 20, 28 ],
+            "friday": [ 29, 9, 19, 27 ],
+            "saturday": [ 5, 15, 25, 1 ],
+            "sunday": [ 4, 14, 24, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
