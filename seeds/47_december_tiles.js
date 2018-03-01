@@ -326,6 +326,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#DED9C9',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 24,
+          user_id: 1,
+          theme: 'Snow',
+          type: 'friday',
+          src_string: '../img/december_tiles/roadway-1081719_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '145%',
+          color_dark: '#30323E',
+          color_medium: '#A3A8B7',
+          color_light: '#F1F2F6',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
