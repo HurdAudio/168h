@@ -382,6 +382,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#C1BEFF',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 28,
+          user_id: 1,
+          theme: 'Primary Colors',
+          type: 'week',
+          src_string: '../img/august_tiles/May16-1-SharpenV2.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '154%',
+          color_dark: '#020518',
+          color_medium: '#730B13',
+          color_light: '#D0E9BB',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
