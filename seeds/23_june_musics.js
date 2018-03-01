@@ -2542,6 +2542,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 142,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3956813243/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://aairria.bandcamp.com/album/automatic-listening-i',
+          a_string: 'Automatic Listening I by Aairria',
+          rule: {
+            "monday": [ 21, 25, 1, 12 ],
+            "tuesday": [ 20, 23, 28, 10 ],
+            "wednesday": [ 19, 23, 28, 10 ],
+            "thursday": [ 19, 22, 28, 9 ],
+            "saturday": [ 17, 25, 27, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 143,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3863520136/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ashotdanielyan.bandcamp.com/album/utopia-2304',
+          a_string: 'Utopia 2304 by Ashot Danielyan',
+          rule: {
+            "monday": [ 17, 25, 27, 8 ],
+            "tuesday": [ 21, 25, 1, 12 ],
+            "wednesday": [ 20, 23, 28, 10 ],
+            "thursday": [ 19, 23, 28, 10 ],
+            "saturday": [ 19, 22, 28, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 144,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3643612398/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://meitei.bandcamp.com/album/kwaidan',
+          a_string: 'Kwaidan / 怪談 by Meitei / 冥丁',
+          rule: {
+            "monday": [ 19, 22, 28, 9 ],
+            "tuesday": [ 17, 25, 27, 8 ],
+            "wednesday": [ 21, 25, 1, 12 ],
+            "thursday": [ 20, 23, 28, 10 ],
+            "saturday": [ 19, 23, 28, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
