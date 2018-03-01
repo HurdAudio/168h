@@ -34,6 +34,21 @@ exports.seed = function(knex, Promise) {
           public: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 3,
+          user_author_id: 1,
+          theme: 'Paper',
+          type: 'week',
+          src_string: '../img/tiles/Paper-texture-picture-material-2-40545.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '135%',
+          color_dark: '#9D7D4E',
+          color_medium: '#D2B082',
+          color_light: '#DCC599',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
