@@ -2002,6 +2002,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 112,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3519940361/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://livyekemezie.bandcamp.com/album/friday-night',
+          a_string: 'Friday Night by Livy Ekemezie',
+          rule: {
+            "monday": [ 17, 28, 9, 13 ],
+            "tuesday": [ 16, 27, 8, 12 ],
+            "wednesday": [ 15, 26, 7, 9 ],
+            "thursday": [ 14, 25, 6, 8 ],
+            "saturday": [ 18, 29, 10, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 113,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3176947686/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://odionlivingstone.bandcamp.com/album/at-last',
+          a_string: 'At Last by Grotto',
+          rule: {
+            "monday": [ 18, 29, 10, 14 ],
+            "tuesday": [ 17, 28, 9, 13 ],
+            "wednesday": [ 16, 27, 8, 12 ],
+            "thursday": [ 15, 26, 7, 9 ],
+            "saturday": [ 14, 25, 6, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 114,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2471447217/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://odionlivingstone.bandcamp.com/album/mind-twister',
+          a_string: 'Mind Twister by Apples',
+          rule: {
+            "monday": [ 14, 25, 6, 8 ],
+            "tuesday": [ 18, 29, 10, 14 ],
+            "wednesday": [ 17, 28, 9, 13 ],
+            "thursday": [ 16, 27, 8, 12 ],
+            "saturday": [ 15, 26, 7, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
