@@ -438,6 +438,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#D7D8DC',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 32,
+          user_id: 1,
+          theme: 'Water',
+          type: 'holiday',
+          src_string: '../img/april_tiles/sea-otter-1772039_1280.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '153%',
+          color_dark: '#110D13',
+          color_medium: '#3F5E72',
+          color_light: '#B4C7D8',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
