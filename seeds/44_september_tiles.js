@@ -368,6 +368,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#DEEBF3',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 27,
+          user_id: 1,
+          theme: 'Leather',
+          type: 'holiday',
+          src_string: '../img/september_tiles/41473660-leather-texture-vector-seamless-pattern.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '110%',
+          color_dark: '#802904',
+          color_medium: '#FF6715',
+          color_light: '#FDA720',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
