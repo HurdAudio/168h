@@ -16,7 +16,9 @@ exports.seed = function(knex, Promise) {
           color_dark: '#000000',
           color_medium: '#D1D1D1',
           color_light: '#F2F2F2',
-          public: true
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         },
         {
           id: 2,
@@ -29,7 +31,9 @@ exports.seed = function(knex, Promise) {
           color_dark: '#000000',
           color_medium: '#DBDBDB',
           color_light: '#F4F4F4',
-          public: true
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
