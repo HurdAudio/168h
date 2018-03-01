@@ -4604,6 +4604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 231,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/the-execution-of-messalina-1874.jpg',
+          title: 'The Execution of Messalina',
+          artist: 'Gustave Moreau',
+          year: '1874',
+          rule: {
+            "monday": [ 3, 14, 25, 5 ],
+            "tuesday": [ 2, 13, 24, 25 ],
+            "wednesday": [ 1, 12, 22, 24 ],
+            "thursday": [ 31, 11, 22, 23 ],
+            "friday": [ 30, 10, 21, 1 ],
+            "saturday": [ 5, 16, 27, 6 ],
+            "sunday": [ 4, 15, 26, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 232,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/the-meeting-of-the-elegant-ladies.jpg',
+          title: 'The Meeting of the Elegant Ladies',
+          artist: 'Adolphe Joseph Thomas Monticelli',
+          year: 'c.1876',
+          rule: {
+            "monday": [ 4, 15, 26, 6 ],
+            "tuesday": [ 3, 14, 25, 5 ],
+            "wednesday": [ 2, 13, 24, 25 ],
+            "thursday": [ 1, 12, 22, 24 ],
+            "friday": [ 31, 11, 22, 23 ],
+            "saturday": [ 30, 10, 21, 1 ],
+            "sunday": [ 5, 16, 27, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 233,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/phryne-1850.jpg',
+          title: 'Phryne',
+          artist: 'Gustave Boulanger',
+          year: '1850',
+          rule: {
+            "monday": [ 5, 16, 27, 6 ],
+            "tuesday": [ 4, 15, 26, 6 ],
+            "wednesday": [ 3, 14, 25, 5 ],
+            "thursday": [ 2, 13, 24, 25 ],
+            "friday": [ 1, 12, 22, 24 ],
+            "saturday": [ 31, 11, 22, 23 ],
+            "sunday": [ 30, 10, 21, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 234,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/wild-cat.jpg',
+          title: 'Wild Cat',
+          artist: 'Rosa Bonheur',
+          year: '?',
+          rule: {
+            "monday": [ 30, 10, 21, 1 ],
+            "tuesday": [ 5, 16, 27, 6 ],
+            "wednesday": [ 4, 15, 26, 6 ],
+            "thursday": [ 3, 14, 25, 5 ],
+            "friday": [ 2, 13, 24, 25 ],
+            "saturday": [ 1, 12, 22, 24 ],
+            "sunday": [ 31, 11, 22, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 235,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/la-bacchante.jpg',
+          title: 'La Bacchante',
+          artist: 'Gustave Courbet',
+          year: '?',
+          rule: {
+            "monday": [ 31, 11, 22, 23 ],
+            "tuesday": [ 30, 10, 21, 1 ],
+            "wednesday": [ 5, 16, 27, 6 ],
+            "thursday": [ 4, 15, 26, 6 ],
+            "friday": [ 3, 14, 25, 5 ],
+            "saturday": [ 2, 13, 24, 25 ],
+            "sunday": [ 1, 12, 22, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
