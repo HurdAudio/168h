@@ -424,6 +424,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#E7F7C7',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 31,
+          user_id: 1,
+          theme: 'Greenery',
+          type: 'sunday',
+          src_string: '../img/may_tiles/images-of-amazing-nature-greenery-4.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '164%',
+          color_dark: '#060013',
+          color_medium: '#459611',
+          color_light: '#FAFFF3',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
