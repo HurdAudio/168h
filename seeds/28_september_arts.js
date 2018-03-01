@@ -4204,6 +4204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 211,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/the-witch-doctor-1963.jpg',
+          title: 'The Witch Doctor',
+          artist: 'John Ferren',
+          year: '1963',
+          rule: {
+            "monday": [ 1, 7, 25, 3 ],
+            "tuesday": [ 30, 6, 24, 2 ],
+            "wednesday": [ 29, 5, 23, 1 ],
+            "thursday": [ 28, 4, 22, 30 ],
+            "friday": [ 27, 3, 21, 29 ],
+            "saturday": [ 26, 2, 20, 27 ],
+            "sunday": [ 2, 8, 26, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 212,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/michelangelo-s-david-1987.jpg',
+          title: 'Michelangelo\'s \'David\'',
+          artist: 'Eduardo Paolozzi',
+          year: '1987',
+          rule: {
+            "monday": [ 2, 8, 26, 4 ],
+            "tuesday": [ 1, 7, 25, 3 ],
+            "wednesday": [ 30, 6, 24, 2 ],
+            "thursday": [ 29, 5, 23, 1 ],
+            "friday": [ 28, 4, 22, 30 ],
+            "saturday": [ 27, 3, 21, 29 ],
+            "sunday": [ 26, 2, 20, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 213,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/ecstasy-b-1953.jpg',
+          title: 'Ecstasy (B)',
+          artist: 'Kiyoshi Saito',
+          year: '1953',
+          rule: {
+            "monday": [ 26, 2, 20, 27 ],
+            "tuesday": [ 2, 8, 26, 4 ],
+            "wednesday": [ 1, 7, 25, 3 ],
+            "thursday": [ 30, 6, 24, 2 ],
+            "friday": [ 29, 5, 23, 1 ],
+            "saturday": [ 28, 4, 22, 30 ],
+            "sunday": [ 27, 3, 21, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 214,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/glass-gold-fish-and-bird-1970.jpg',
+          title: 'Glass, Gold Fish and Bird',
+          artist: 'Ding Yanyong',
+          year: '1970',
+          rule: {
+            "monday": [ 27, 3, 21, 29 ],
+            "tuesday": [ 26, 2, 20, 27 ],
+            "wednesday": [ 2, 8, 26, 4 ],
+            "thursday": [ 1, 7, 25, 3 ],
+            "friday": [ 30, 6, 24, 2 ],
+            "saturday": [  29, 5, 23, 1 ],
+            "sunday": [ 28, 4, 22, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 215,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/adult-female-sexual-organs-2005.jpg',
+          title: 'Adult Female Sexual Organs',
+          artist: 'Wangechi Mutu',
+          year: '2005',
+          rule: {
+            "monday": [ 28, 4, 22, 30 ],
+            "tuesday": [ 27, 3, 21, 29 ],
+            "wednesday": [ 26, 2, 20, 27 ],
+            "thursday": [ 2, 8, 26, 4 ],
+            "friday": [ 1, 7, 25, 3 ],
+            "saturday": [ 30, 6, 24, 2 ],
+            "sunday": [ 29, 5, 23, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
