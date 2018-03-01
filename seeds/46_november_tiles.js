@@ -340,6 +340,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#E5CAAF',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 25,
+          user_id: 1,
+          theme: 'Monochromatic',
+          type: 'saturday',
+          src_string: '../img/november_tiles/cle_john_whitmarsh_endgrain_ceramic_white_300-1024x682.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '150%',
+          color_dark: '#39383A',
+          color_medium: '#939194',
+          color_light: '#E0DEE1',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
