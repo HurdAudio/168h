@@ -396,6 +396,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FAFAFA',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 29,
+          user_id: 1,
+          theme: 'Steam',
+          type: 'friday',
+          src_string: '../img/july_tiles/The-Dream-©-Judith-Brandon-1100x759.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '145%',
+          color_dark: '#1E1E23',
+          color_medium: '#8E6172',
+          color_light: '#9E9073',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
