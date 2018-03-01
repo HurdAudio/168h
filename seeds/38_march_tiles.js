@@ -452,6 +452,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#C3CAD0',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 33,
+          user_id: 1,
+          theme: 'Glass',
+          type: 'week',
+          src_string: '../img/march_tiles/reichstag-366199_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '155%',
+          color_dark: '#1A1B1E',
+          color_medium: '#725637',
+          color_light: '#CCC9D4',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
