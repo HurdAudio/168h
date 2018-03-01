@@ -4004,6 +4004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 201,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_sovpolpost_00055.jpg',
+          title: 'Greetings to a Congress of Soviet writers!',
+          artist: '?',
+          year: '1934',
+          rule: {
+            "monday": [ 30, 10, 21, 25 ],
+            "tuesday": [ 29, 9, 10, 24 ],
+            "wednesday": [ 7, 8, 19, 23 ],
+            "thursday": [ 3, 14, 25, 29 ],
+            "friday": [ 2, 13, 24, 28 ],
+            "saturday": [ 1, 12, 23, 27 ],
+            "sunday": [ 31, 11, 22, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 202,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_sovpolpost_00054.jpg',
+          title: 'To Chelyuskintsy and to the heroic pilots...',
+          artist: '?',
+          year: '1934',
+          rule: {
+            "monday": [ 31, 11, 22, 26 ],
+            "tuesday": [ 30, 10, 21, 25 ],
+            "wednesday": [ 29, 9, 10, 24 ],
+            "thursday": [ 7, 8, 19, 23 ],
+            "friday": [ 3, 14, 25, 29 ],
+            "saturday": [ 2, 13, 24, 28 ],
+            "sunday": [ 1, 12, 23, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 203,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_sovpolpost_00053.jpg',
+          title: 'Human resources solve everything',
+          artist: 'G. Klutsis',
+          year: '1935',
+          rule: {
+            "monday": [ 2, 13, 24, 28 ],
+            "tuesday": [ 1, 12, 23, 27 ],
+            "wednesday": [ 31, 11, 22, 26 ],
+            "thursday": [ 30, 10, 11, 25 ],
+            "friday": [ 8, 9, 20, 24 ],
+            "saturday": [ 4, 15, 26, 30 ],
+            "sunday": [ 3, 14, 25, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 204,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_sovpolpost_00052.jpg',
+          title: 'Kukryniksy. 15.',
+          artist: 'Kukryniksy',
+          year: '1932',
+          rule: {
+            "monday": [ 3, 14, 25, 29 ],
+            "tuesday": [ 2, 13, 24, 28 ],
+            "wednesday": [ 1, 12, 23, 27 ],
+            "thursday": [ 31, 11, 22, 26 ],
+            "friday": [ 30, 10, 11, 25 ],
+            "saturday": [ 8, 9, 20, 24 ],
+            "sunday": [ 4, 15, 26, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 205,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_sovpolpost_00051.jpg',
+          title: 'Life has become better, life has become merrier!',
+          artist: 'B. Efimov and M. Ioffe',
+          year: '1936',
+          rule: {
+            "monday": [ 4, 15, 26, 30 ],
+            "tuesday": [ 3, 14, 25, 29 ],
+            "wednesday": [ 2, 13, 24, 28 ],
+            "thursday": [ 1, 12, 23, 27 ],
+            "friday": [ 31, 11, 22, 26 ],
+            "saturday": [ 30, 10, 11, 25 ],
+            "sunday": [ 8, 9, 20, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
