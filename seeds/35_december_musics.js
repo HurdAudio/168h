@@ -1894,6 +1894,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 106,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1774588430/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://redsuncult.bandcamp.com/album/red-sun-cult',
+          a_string: 'Red Sun Cult by Red Sun Cult',
+          rule: {
+            "monday": [ 21, 27, 2, 7 ],
+            "tuesday": [ 20, 26, 1, 7 ],
+            "wednesday": [ 17, 25, 31, 6 ],
+            "thursday": [ 18, 24, 30, 5 ],
+            "saturday": [ 22, 28, 3, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 107,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3689425113/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://redsuncult.bandcamp.com/album/void-traveler',
+          a_string: 'Void Traveler by Red Sun Cult',
+          rule: {
+            "monday": [ 22, 28, 3, 9 ],
+            "tuesday": [ 21, 27, 2, 7 ],
+            "wednesday": [ 20, 26, 1, 7 ],
+            "thursday": [ 17, 25, 31, 6 ],
+            "saturday": [ 18, 24, 30, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 108,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4132066929/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://necronomicon.bandcamp.com/album/adiante',
+          a_string: 'Adiante by Necro',
+          rule: {
+            "monday": [ 18, 24, 30, 5 ],
+            "tuesday": [ 22, 28, 3, 9 ],
+            "wednesday": [ 21, 27, 2, 7 ],
+            "thursday": [ 20, 26, 1, 7 ],
+            "saturday": [ 17, 25, 31, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
