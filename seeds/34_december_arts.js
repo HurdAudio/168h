@@ -3604,6 +3604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 181,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/41-09-25,SS.jpg',
+          title: 'Short Stories',
+          artist: 'Mat Kauten',
+          year: '1941',
+          rule: {
+            "monday": [ 26, 8, 16, 22 ],
+            "tuesday": [ 25, 7, 15, 21 ],
+            "wednesday": [ 24, 5, 14, 20 ],
+            "thursday": [ 23, 5, 24, 19 ],
+            "friday": [ 29, 11, 19, 25 ],
+            "saturday": [ 28, 10, 18, 24 ],
+            "sunday": [ 27, 9, 17, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 182,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/06-00,GoldenGoblin1.jpg',
+          title: 'The Golden Goblin',
+          artist: 'George F. Kerr',
+          year: '1906',
+          rule: {
+            "monday": [ 28, 10, 18, 24 ],
+            "tuesday": [ 27, 9, 17, 23 ],
+            "wednesday": [ 26, 8, 16, 22 ],
+            "thursday": [ 25, 6, 15, 21 ],
+            "friday": [ 24, 6, 25, 20 ],
+            "saturday": [ 30, 12, 20, 26 ],
+            "sunday": [ 29, 11, 19, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 183,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/36-03,ScyMT2.jpg',
+          title: 'Saucy Movie Tales',
+          artist: 'H. C. Kiefer',
+          year: '1936',
+          rule: {
+            "monday": [ 29, 11, 19, 25 ],
+            "tuesday": [ 28, 10, 18, 24 ],
+            "wednesday": [ 27, 9, 17, 23 ],
+            "thursday": [ 26, 8, 16, 22 ],
+            "friday": [ 25, 6, 15, 21 ],
+            "saturday": [ 24, 6, 25, 20 ],
+            "sunday": [ 30, 12, 20, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 184,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/27-06,FrontierS.jpg',
+          title: 'Frontier Stories',
+          artist: 'W. Ralph Kiefer',
+          year: '1927',
+          rule: {
+            "monday": [ 30, 12, 20, 26 ],
+            "tuesday": [ 29, 11, 19, 25 ],
+            "wednesday": [ 28, 10, 18, 24 ],
+            "thursday": [ 27, 9, 17, 23 ],
+            "friday": [ 26, 8, 16, 22 ],
+            "saturday": [ 25, 6, 15, 21 ],
+            "sunday": [ 24, 6, 25, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 185,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/30-06,AceHi.jpg',
+          title: 'Ace-High',
+          artist: 'H. W. Kiemle',
+          year: '1930',
+          rule: {
+            "monday": [ 24, 6, 25, 20 ],
+            "tuesday": [ 30, 12, 20, 26 ],
+            "wednesday": [ 29, 11, 19, 25 ],
+            "thursday": [ 28, 10, 18, 24 ],
+            "friday": [ 27, 9, 17, 23 ],
+            "saturday": [ 26, 8, 16, 22 ],
+            "sunday": [ 25, 6, 15, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
