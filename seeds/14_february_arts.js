@@ -5604,6 +5604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 281,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/007_hw_dig_cropped_wide-802a323fccf69015db5d930a62b719553acacb4a.jpg',
+          title: 'Amistad Murals',
+          artist: 'Hale Woodruff',
+          year: '1938',
+          rule: {
+            "monday": [ 13, 21, 29, 8 ],
+            "tuesday": [ 18, 23, 29, 10 ],
+            "wednesday": [ 17, 25, 4, 12 ],
+            "thursday": [ 19, 29, 6, 12 ],
+            "friday": [ 21, 29, 8, 18 ],
+            "saturday": [ 21, 2, 27, 17 ],
+            "sunday": [ 11, 19, 27, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 282,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/41WAnYnVuOL.jpg',
+          title: 'Window Wishing',
+          artist: 'Ernie Barnes',
+          year: '?',
+          rule: {
+            "monday": [ 11, 19, 27, 6 ],
+            "tuesday": [ 13, 21, 29, 8 ],
+            "wednesday": [ 18, 23, 29, 10 ],
+            "thursday": [ 17, 25, 4, 12 ],
+            "friday": [ 19, 29, 6, 12 ],
+            "saturday": [ 21, 29, 8, 18 ],
+            "sunday": [ 21, 2, 27, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 283,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/monica-stewart-enchanting-keys_u-l-e7g2h0.jpg',
+          title: 'Enchanting Keys',
+          artist: 'Monica Stewart',
+          year: '?',
+          rule: {
+            "monday": [ 21, 2, 27, 17 ],
+            "tuesday": [ 11, 19, 27, 6 ],
+            "wednesday": [ 13, 21, 29, 8 ],
+            "thursday": [ 18, 23, 29, 10 ],
+            "friday": [ 17, 25, 4, 12 ],
+            "saturday": [ 19, 29, 6, 12 ],
+            "sunday": [ 21, 29, 8, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 284,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/100_1477-copy.jpg',
+          title: 'unknown',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 21, 29, 8, 18 ],
+            "tuesday": [ 21, 2, 27, 17 ],
+            "wednesday": [ 11, 19, 27, 6 ],
+            "thursday": [ 13, 21, 29, 8 ],
+            "friday": [ 18, 23, 29, 10 ],
+            "saturday": [ 17, 25, 4, 12 ],
+            "sunday": [ 19, 29, 6, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 285,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/africanamericanart1.jpg',
+          title: 'Sharecropper',
+          artist: 'Elizabeth Catlett',
+          year: '1970',
+          rule: {
+            "monday": [ 19, 29, 6, 12 ],
+            "tuesday": [ 21, 29, 8, 18 ],
+            "wednesday": [ 21, 2, 27, 17 ],
+            "thursday": [ 11, 19, 27, 6 ],
+            "friday": [ 13, 21, 29, 8 ],
+            "saturday": [ 18, 23, 29, 10 ],
+            "sunday": [ 17, 25, 4, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
