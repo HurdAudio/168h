@@ -5204,6 +5204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 261,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/7958_detroit_tigers-partial-1994.png',
+          title: 'Detroit Tigers Logo',
+          artist: '?',
+          year: 'xx cent.',
+          rule: {
+            "monday": [ 7, 13, 18, 25 ],
+            "tuesday": [ 21, 11, 17, 24 ],
+            "wednesday": [ 6, 11, 17, 23 ],
+            "thursday": [ 5, 9, 24, 22 ],
+            "friday": [ 4, 9, 14, 20 ],
+            "saturday": [ 3, 8, 14, 20 ],
+            "sunday": [ 2, 7, 13, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 262,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/tigersDownload.jpeg',
+          title: 'A general view of Tiger Stadium prior to the final baseball game played at the 87 year old Tiger Stadium ',
+          artist: 'Andy Patton',
+          year: '1999',
+          rule: {
+            "monday": [ 2, 7, 13, 19 ],
+            "tuesday": [ 7, 13, 18, 25 ],
+            "wednesday": [ 21, 11, 17, 24 ],
+            "thursday": [ 6, 11, 17, 23 ],
+            "friday": [ 5, 9, 24, 22 ],
+            "saturday": [ 4, 9, 14, 20 ],
+            "sunday": [ 3, 8, 14, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 263,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/636204332289688144-AP-Twins-Tigers-Baseball-MIP.jpg',
+          title: 'Detroit Tigers Ian Kinsler, left, and J.D. Martinez celebrate a home run against the Minnesota Twins',
+          artist: 'Paul Sancya',
+          year: '2016',
+          rule: {
+            "monday": [ 3, 8, 14, 20 ],
+            "tuesday": [ 2, 7, 13, 19 ],
+            "wednesday": [ 7, 13, 18, 25 ],
+            "thursday": [ 21, 11, 17, 24 ],
+            "friday": [ 6, 11, 17, 23 ],
+            "saturday": [ 5, 9, 24, 22 ],
+            "sunday": [ 4, 9, 14, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 264,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/9168774-mlb-spring-training-tampa-bay-rays-at-detroit-tigers.jpeg',
+          title: 'Umpires meet with managers before the game between the Detroit Tigers and the Tampa Bay Rays at Joker Marchant Stadium',
+          artist: 'Butch Dill',
+          year: '2016',
+          rule: {
+            "monday": [ 4, 9, 14, 20 ],
+            "tuesday": [ 3, 8, 14, 20 ],
+            "wednesday": [ 2, 7, 13, 19 ],
+            "thursday": [ 7, 13, 18, 25 ],
+            "friday": [ 21, 11, 17, 24 ],
+            "saturday": [ 6, 11, 17, 23 ],
+            "sunday": [ 5, 9, 24, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 265,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/636549192341708572-TIGERS-022218-KD-18.jpg',
+          title: 'Detroit Tigers catcher James McCann bats against Florida Southern',
+          artist: 'Kirthmon F. Dozier',
+          year: '2018',
+          rule: {
+            "monday": [ 5, 9, 24, 22 ],
+            "tuesday": [ 4, 9, 14, 20 ],
+            "wednesday": [ 3, 8, 14, 20 ],
+            "thursday": [ 2, 7, 13, 19 ],
+            "friday": [ 7, 13, 18, 25 ],
+            "saturday": [ 21, 11, 17, 24 ],
+            "sunday": [ 6, 11, 17, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
