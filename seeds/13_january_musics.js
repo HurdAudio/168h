@@ -3082,6 +3082,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 172,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4129256275/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://vickychow.bandcamp.com/album/michael-gordon-sonatra',
+          a_string: 'Michael Gordon: Sonatra by Vicky Chow',
+          rule: {
+            "monday": [ 1, 8, 9, 10 ],
+            "tuesday": [ 31, 6, 7, 8 ],
+            "wednesday": [ 30, 6, 7, 8 ],
+            "thursday": [ 3, 10, 11, 12 ],
+            "saturday": [ 2, 9, 10, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 173,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2861305388/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ericwubbels.bandcamp.com/album/being-time',
+          a_string: 'being-time by Eric Wubbels (w/ Mivos Quartet / Bryan Jacobs)',
+          rule: {
+            "monday": [ 2, 9, 10, 11 ],
+            "tuesday": [ 1, 8, 9, 10 ],
+            "wednesday": [ 31, 6, 7, 8 ],
+            "thursday": [ 30, 6, 7, 8 ],
+            "saturday": [ 3, 10, 11, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 174,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=859588695/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ericwubbels.bandcamp.com/album/duos-with-piano',
+          a_string: 'Duos With Piano by Eric Wubbels',
+          rule: {
+            "monday": [ 3, 10, 11, 12 ],
+            "tuesday": [ 2, 9, 10, 11 ],
+            "wednesday": [ 1, 8, 9, 10 ],
+            "thursday": [ 31, 6, 7, 8 ],
+            "saturday": [ 30, 6, 7, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
