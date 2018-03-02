@@ -5404,6 +5404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 271,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/voltagem-1942.jpg',
+          title: 'Voltagem',
+          artist: 'Dorothea Tanning',
+          year: '1942',
+          rule: {
+            "monday": [ 3, 13, 21, 31 ],
+            "tuesday": [ 2, 12, 20, 30 ],
+            "wednesday": [ 1, 11, 20, 29 ],
+            "thursday": [ 7, 16, 26, 3 ],
+            "friday": [ 6, 16, 26, 3 ],
+            "saturday": [ 6, 15, 23, 2 ],
+            "sunday": [ 4, 14, 22, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 272,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/untitled-1971-3.jpg',
+          title: 'Untitled',
+          artist: 'Verena Loewensberg',
+          year: '1971',
+          rule: {
+            "monday": [ 4, 14, 22, 1 ],
+            "tuesday": [ 3, 13, 21, 31 ],
+            "wednesday": [ 2, 12, 20, 30 ],
+            "thursday": [ 1, 11, 20, 29 ],
+            "friday": [ 7, 16, 26, 3 ],
+            "saturday": [ 6, 16, 26, 3 ],
+            "sunday": [ 6, 15, 23, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 273,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/rivage.jpg',
+          title: 'Rivage',
+          artist: 'Toko Shinoda',
+          year: '?',
+          rule: {
+            "monday": [ 7, 16, 24, 3 ],
+            "tuesday": [ 5, 15, 23, 2 ],
+            "wednesday": [ 4, 14, 22, 1 ],
+            "thursday": [ 3, 13, 21, 31 ],
+            "friday": [ 2, 12, 21, 30 ],
+            "saturday": [ 8, 17, 27, 4 ],
+            "sunday": [ 7, 17, 27, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 274,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/fleurs-1971.jpg',
+          title: 'Fleurs',
+          artist: 'Natalia Dumitresco',
+          year: '1971',
+          rule: {
+            "monday": [ 7, 17, 27, 4 ],
+            "tuesday": [ 7, 16, 24, 3 ],
+            "wednesday": [ 5, 15, 23, 2 ],
+            "thursday": [ 4, 14, 22, 1 ],
+            "friday": [ 3, 13, 21, 31 ],
+            "saturday": [ 2, 12, 21, 30 ],
+            "sunday": [ 8, 17, 27, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 275,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/unknown-title-13.jpg',
+          title: 'unknown title',
+          artist: 'Ligia Macovei',
+          year: '?',
+          rule: {
+            "monday": [ 8, 17, 27, 4 ],
+            "tuesday": [ 7, 17, 27, 4 ],
+            "wednesday": [ 7, 16, 24, 3 ],
+            "thursday": [ 5, 15, 23, 2 ],
+            "friday": [ 4, 14, 22, 1 ],
+            "saturday": [ 3, 13, 21, 31 ],
+            "sunday": [ 2, 12, 21, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
