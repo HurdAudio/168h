@@ -210,6 +210,37 @@
       vm.userEditMessage = userEditMessage;
       vm.userEditMessageCompleted = userEditMessageCompleted;
       vm.musicModuleDisplay = musicModuleDisplay;
+      vm.addNewTiles = addNewTiles;
+
+      function addNewTiles(month) {
+        let monthTable = month.toLowerCase() + "_tiles";
+        let monthGet = monthTable + "byuser";
+        let subObj = {
+          user_id: currentUserId,
+          type: "default",
+          src_string: '',
+          repeat_value: "no-repeat",
+          size_value: "100%",
+          color_dark: "#000000",
+          color_medium: "#888888",
+          color_light: "#ffffff"
+        };
+        $http.get(`/${monthGet}/${currentUserId}`)
+        .then(userMonthTilesData=>{
+          let userMonthTiles = userMonthTilesData.data;
+          if (userMonthTiles.length > 0) {
+            subObj.theme = userMonthTiles[0].theme;
+          } else {
+            subObj.theme = '';
+          }
+          $http.post(`/${monthTable}`, subObj)
+          .then(addedTileData=>{
+            let addedTile = addedTileData.data[0];
+            console.log(addedTile.id);
+            editTilesCurrate(monthTable, addedTile.id);
+          });
+        });
+      }
 
       function userEditMessageCompleted(messageId) {
         let thisIsTheMessageEditor = document.getElementById('thisIsTheMessageEditor' + messageId);
@@ -1315,6 +1346,7 @@
       }
 
       function userTilesCurratorEditorDone() {
+        cleanUpBlankTiles();
         let userTilesCurratorEditorDiv = document.getElementById('userTilesCurratorEditorDiv');
         let tilesCurratorManagerDone = document.getElementById('tilesCurratorManagerDone');
 
@@ -1495,7 +1527,7 @@
             monthDays = 31;
             userTilesCuratorMonthTheme.innerHTML = 'July Tile';
             break;
-          case('August_tiles'):
+          case('august_tiles'):
             monthDays = 31;
             userTilesCuratorMonthTheme.innerHTML = 'August Tile';
             break;
@@ -1503,11 +1535,11 @@
             monthDays = 30;
             userTilesCuratorMonthTheme.innerHTML = 'September Tile';
             break;
-          case('October_tiles'):
+          case('october_tiles'):
             monthDays = 31;
             userTilesCuratorMonthTheme.innerHTML = 'October Tile';
             break;
-          case('November_tiles'):
+          case('november_tiles'):
             monthDays = 30;
             userTilesCuratorMonthTheme.innerHTML = 'November Tile';
             break;
@@ -1524,6 +1556,7 @@
 
         $http.get(`/${monthPath}/${tileId}`)
         .then(tileData=>{
+
           let tile = tileData.data;
           if (tile.theme === '') {
             userTilesCuratorMonthTheme.innerHTML = '';
@@ -1546,7 +1579,9 @@
             userTilesCuratorFirstEntryTheme.setAttribute("style", "display: none;");
             userTilesCuratorMonthTheme.innerHTML = "Theme: " + tile.theme;
           }
-          userTilesCurratorImageDiv.setAttribute("style", "background-image: url(" + tile.src_string + "); background-repeat: " + tile.repeat_value + "; background-size: " + tile.size_value + "; border: solid 10px " + tile.color_medium + ";");
+          if (tile.src_string !== '') {
+            userTilesCurratorImageDiv.setAttribute("style", "background-image: url(" + tile.src_string + "); background-repeat: " + tile.repeat_value + "; background-size: " + tile.size_value + "; border: solid 10px " + tile.color_medium + ";");
+          }
           tilesCurratorDate.setAttribute("style", "color: " + tile.color_dark + ";)");
           switch(tile.type) {
             case('default'):
@@ -1699,13 +1734,13 @@
               size_value: userTilesCurratorSizeValue.value.toString() + '%'
             };
             userTilesCurratorImageDiv.setAttribute("style", "background-image: url(" + tile.src_string + "); background-repeat: " + tile.repeat_value + "; background-size: " + subObj.size_value + "; border: solid 10px " + tile.color_medium + ";");
+            $http.patch(`/${monthPath}/${tileId}`, subObj)
+            .then(()=>{
+              tile.size_value = subObj.size_value;
+            });
           });
-          $http.patch(`/${monthPath}/${tileId}`, subObj)
-          .then(()=>{
-            tile.size_value = subObj.size_value;
-          });
-        });
 
+        });
         userTilesCurratorEditorDiv.setAttribute("style", "display: initial;");
         tilesCurratorManagerDone.setAttribute("style", "visibility: hidden;");
       }
@@ -2940,6 +2975,36 @@
         }
       }
 
+      function removeBlankTile(tablePath, tileId) {
+        let path = tablePath.slice(0, tablePath.indexOf('byuser'));
+        $http.delete(`/${path}/${tileId}`)
+        .then(()=>{
+          console.log('tile removed');
+        });
+
+      }
+
+      function scourForBlankTiles(tablePath) {
+        $http.get(`/${tablePath}/${currentUserId}`)
+        .then(userTilesData=>{
+          let userTiles = userTilesData.data;
+          if (userTiles.length > 0) {
+            for (let i = 0; i < userTiles.length; i++) {
+              if (userTiles[i].src_string === '') {
+                removeBlankTile(tablePath, userTiles[i].id);
+              }
+            }
+          }
+        });
+      }
+
+      function cleanUpBlankTiles() {
+        let tilesTables = [ 'january_tilesbyuser', 'february_tilesbyuser', 'march_tilesbyuser', 'april_tilesbyuser', 'may_tilesbyuser', 'june_tilesbyuser', 'july_tilesbyuser', 'august_tilesbyuser', 'september_tilesbyuser', 'october_tilesbyuser', 'november_tilesbyuser', 'december_tilesbyuser' ];
+        for (let i = 0; i < tilesTables.length; i++) {
+          scourForBlankTiles(tilesTables[i]);
+        }
+      }
+
       function closeTilesCurratorManager() {
         let tilesCuratorManager = document.getElementById('tilesCuratorManager');
         let tilesCurratorManagerDiv = document.getElementById('tilesCurratorManagerDiv');
@@ -2996,6 +3061,7 @@
         novemberTilesCurratorDisplay.setAttribute("style", "display: none;");
         decemberTilesCurratorToggleDiv.setAttribute("style", "display: initial;");
         decemberTilesCurratorDisplay.setAttribute("style", "display: none;");
+
       }
 
       function tilesCurratorManagement() {
