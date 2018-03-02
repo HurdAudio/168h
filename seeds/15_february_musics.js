@@ -2974,6 +2974,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 166,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3500443540/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://newbraxtonhouse.bandcamp.com/album/sextet-parker-1993',
+          a_string: 'Sextet (Parker) 1993 by Anthony Braxton',
+          rule: {
+            "monday": [ 25, 29, 2, 6 ],
+            "tuesday": [ 28, 2, 4, 8 ],
+            "wednesday": [ 29, 4, 6, 8 ],
+            "thursday": [ 12, 6, 8, 14 ],
+            "saturday": [ 24, 29, 2, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 167,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2393296536/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://newbraxtonhouse.bandcamp.com/album/trillium-j',
+          a_string: 'Trillium J by Anthony Braxton',
+          rule: {
+            "monday": [ 24, 29, 2, 14 ],
+            "tuesday": [ 25, 29, 2, 6 ],
+            "wednesday": [ 28, 2, 4, 8 ],
+            "thursday": [ 29, 4, 6, 8 ],
+            "saturday": [ 12, 6, 8, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 168,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=568811227/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://newbraxtonhouse.bandcamp.com/album/quintet-tristano-2014',
+          a_string: 'Quintet (Tristano) 2014 by Anthony Braxton',
+          rule: {
+            "monday": [ 13, 7, 9, 15 ],
+            "tuesday": [ 25, 1, 3, 15 ],
+            "wednesday": [ 26, 1, 3, 7 ],
+            "thursday": [ 29, 3, 5, 9 ],
+            "saturday": [ 1, 5, 7, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
