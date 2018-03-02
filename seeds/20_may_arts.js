@@ -5004,6 +5004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 251,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/katbush-shits.jpg',
+          title: 'Katbush-shits',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 29, 9, 19, 8 ],
+            "tuesday": [ 28, 8, 7, 27 ],
+            "wednesday": [ 26, 5, 15, 23 ],
+            "thursday": [ 24, 2, 14, 23 ],
+            "friday": [ 5, 15, 25, 2 ],
+            "saturday": [ 3, 14, 23, 2 ],
+            "sunday": [ 1, 11, 19, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 252,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/kathelp-us.jpg',
+          title: 'Kathelp-us',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 2, 12, 20, 1 ],
+            "tuesday": [ 30, 10, 20, 9 ],
+            "wednesday": [ 29, 9, 8, 28 ],
+            "thursday": [ 27, 6, 16, 24 ],
+            "friday": [ 25, 3, 15, 24 ],
+            "saturday": [ 6, 16, 26, 3 ],
+            "sunday": [ 4, 15, 24, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 253,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/last-bit.jpg',
+          title: 'Last bit',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 4, 15, 24, 3 ],
+            "tuesday": [ 2, 12, 20, 1 ],
+            "wednesday": [ 30, 10, 20, 9 ],
+            "thursday": [ 29, 9, 8, 28 ],
+            "friday": [ 27, 6, 16, 24 ],
+            "saturday": [ 25, 3, 15, 24 ],
+            "sunday": [ 6, 16, 26, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 254,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/leg-hold.jpg',
+          title: 'Leg hold',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 6, 16, 26, 3 ],
+            "tuesday": [ 4, 15, 24, 3 ],
+            "wednesday": [ 2, 12, 20, 1 ],
+            "thursday": [ 30, 10, 20, 9 ],
+            "friday": [ 29, 9, 8, 28 ],
+            "saturday": [ 27, 6, 16, 24 ],
+            "sunday": [ 25, 3, 15, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 255,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/loading-sheep.jpg',
+          title: 'Loading sheep',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 25, 3, 15, 24 ],
+            "tuesday": [ 6, 16, 26, 3 ],
+            "wednesday": [ 4, 15, 24, 3 ],
+            "thursday": [ 2, 12, 20, 1 ],
+            "friday": [ 30, 10, 20, 9 ],
+            "saturday": [ 29, 9, 8, 28 ],
+            "sunday": [ 27, 6, 16, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
