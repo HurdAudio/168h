@@ -5804,6 +5804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 291,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/9-soles-1967.jpg',
+          title: '9-Soles',
+          artist: 'Omar Rayo',
+          year: '1967',
+          rule: {
+            "monday": [ 26, 28, 29, 1 ],
+            "tuesday": [ 11, 12, 23, 15 ],
+            "wednesday": [ 14, 16, 8, 28 ],
+            "thursday": [ 16, 17, 9, 12 ],
+            "friday": [ 19, 20, 11, 15 ],
+            "saturday": [ 22, 24, 25, 27 ],
+            "sunday": [ 24, 26, 30, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 292,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/composition-no-212-1960 (1).jpg',
+          title: 'Composition No. 212',
+          artist: 'Friedrich Vordemberge-Gildewart',
+          year: '1960',
+          rule: {
+            "monday": [ 24, 26, 30, 2 ],
+            "tuesday": [ 26, 28, 29, 1 ],
+            "wednesday": [ 11, 12, 23, 15 ],
+            "thursday": [ 14, 16, 8, 28 ],
+            "friday": [ 16, 17, 9, 12 ],
+            "saturday": [ 19, 20, 11, 15 ],
+            "sunday": [ 22, 24, 25, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 293,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/spectrocoupling-1972.jpg',
+          title: 'Spectrocoupling',
+          artist: 'Peter Phillips',
+          year: '1972',
+          rule: {
+            "monday": [ 22, 24, 25, 27 ],
+            "tuesday": [ 24, 26, 30, 2 ],
+            "wednesday": [ 26, 28, 29, 1 ],
+            "thursday": [ 11, 12, 23, 15 ],
+            "friday": [ 14, 16, 8, 28 ],
+            "saturday": [ 16, 17, 9, 12 ],
+            "sunday": [ 19, 20, 11, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 294,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/untitled-1964.jpg',
+          title: 'Untitled',
+          artist: 'Ray Parker',
+          year: '1964',
+          rule: {
+            "monday": [ 20, 21, 12, 16 ],
+            "tuesday": [ 23, 25, 26, 28 ],
+            "wednesday": [ 25, 27, 31, 3 ],
+            "thursday": [ 27, 29, 30, 2 ],
+            "friday": [ 12, 13, 24, 16 ],
+            "saturday": [ 15, 17, 9, 29 ],
+            "sunday": [ 17, 18, 10, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 295,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/number-20-1949.jpg',
+          title: 'Number 20',
+          artist: 'Bradley Walker Tomlin',
+          year: '1949',
+          rule: {
+            "monday": [ 17, 18, 10, 13 ],
+            "tuesday": [ 20, 21, 12, 16 ],
+            "wednesday": [ 23, 25, 26, 28 ],
+            "thursday": [ 25, 27, 31, 3 ],
+            "friday": [ 27, 29, 30, 2 ],
+            "saturday": [ 12, 13, 24, 16 ],
+            "sunday": [ 15, 17, 9, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
