@@ -2650,6 +2650,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 148,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4078020219/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sampluta.bandcamp.com/album/broken-symmetries',
+          a_string: 'Broken Symmetries by Sam Pluta',
+          rule: {
+            "monday": [ 22, 28, 4, 17 ],
+            "tuesday": [ 26, 2, 8, 21 ],
+            "wednesday": [ 25, 31, 7, 20 ],
+            "thursday": [ 24, 30, 6, 19 ],
+            "saturday": [ 23, 29, 5, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 149,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=539989805/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://awavepress.bandcamp.com/album/t-z-a-t-z-i',
+          a_string: 'T Z A T Z I by Carmina Escobar',
+          rule: {
+            "monday": [ 23, 29, 5, 18 ],
+            "tuesday": [ 22, 28, 4, 17 ],
+            "wednesday": [ 26, 2, 8, 21 ],
+            "thursday": [ 25, 31, 7, 20 ],
+            "saturday": [ 24, 30, 6, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 150,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=396492404/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://erstwhilerecords.bandcamp.com/album/l-me-est-sans-retenue-i',
+          a_string: 'l’âme est sans retenue I by Jürg Frey',
+          rule: {
+            "monday": [ 24, 30, 6, 19 ],
+            "tuesday": [ 23, 29, 5, 18 ],
+            "wednesday": [ 22, 28, 4, 17 ],
+            "thursday": [ 26, 2, 8, 21 ],
+            "saturday": [ 25, 31, 7, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
