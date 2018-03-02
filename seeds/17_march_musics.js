@@ -2866,6 +2866,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 160,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'http://bandcamp.com/EmbeddedPlayer/album=967384525/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tunes.mamabirdrecordingco.com/album/i-need-to-start-a-garden',
+          a_string: 'I Need to Start a Garden by HALEY HEYNDERICKX',
+          rule: {
+            "monday": [ 25, 31, 6, 15 ],
+            "tuesday": [ 23, 30, 5, 13 ],
+            "wednesday": [ 23, 29, 4, 12 ],
+            "thursday": [ 27, 2, 8, 16 ],
+            "saturday": [ 26, 1, 7, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 161,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1990466637/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://soaplibrary.bandcamp.com/album/here-appear',
+          a_string: 'Here Appear by Eve Essex',
+          rule: {
+            "monday": [ 27, 2, 8, 16 ],
+            "tuesday": [ 26, 1, 7, 16 ],
+            "wednesday": [ 24, 31, 6, 14 ],
+            "thursday": [ 24, 30, 5, 13 ],
+            "saturday": [ 28, 3, 9, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 162,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=943117711/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://norentrecords.bandcamp.com/album/houston-nrr67',
+          a_string: '&quot;houston&quot; (NRR67) by apologist',
+          rule: {
+            "monday": [ 28, 3, 9, 17 ],
+            "tuesday": [ 27, 2, 8, 16 ],
+            "wednesday": [ 26, 1, 7, 16 ],
+            "thursday": [ 24, 31, 6, 14 ],
+            "saturday": [ 24, 30, 5, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
