@@ -9309,6 +9309,39 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 596,
+          user_id: 1,
+          name: 'Tyshawn Sorey (drums) born in 1980',
+          color: '#252727',
+          picture: './img/musicians/686b62114470cfc7bdf4302d6f59eb7872057681.jpg',
+          day_of: new Date ('1980-07-08T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: true,
+          override_content: {
+            "sources": [ 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp' ],
+            "src_strings": [ 'https://bandcamp.com/EmbeddedPlayer/album=1952058313/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=1930164709/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=1941475536/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=1521980909/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'http://bandcamp.com/EmbeddedPlayer/album=3415041672/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=1088645121/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/' ],
+            "href_strings": [ 'http://tyshawn-sorey.bandcamp.com/album/verisimilitude', 'http://tyshawn-sorey.bandcamp.com/album/the-inner-spectrum-of-variables', 'http://tyshawn-sorey.bandcamp.com/album/alloy', 'http://tyshawn-sorey.bandcamp.com/album/oblique-i', 'http://firehouse12records.com/album/that-not', 'http://samosalamon.bandcamp.com/album/keis-secret' ],
+            "a_strings": [ 'Verisimilitude by Tyshawn Sorey', 'The Inner Spectrum of Variables by Tyshawn Sorey', 'Alloy by Tyshawn Sorey', 'Oblique-I by Tyshawn Sorey', 'that / not by Tyshawn Sorey', 'Kei&#39;s Secret by Samo Salamon Quartet feat. Tyshawn Sorey, Achille Succi &amp; Carlo De Rosa' ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 597,
+          user_id: 1,
+          name: 'The world ended on this day in 1528 according to German Anabaptist Hans Hut.',
+          color: '#444444',
+          picture: './img/doomsday/Hans_Hut.jpg',
+          day_of: new Date ('1528-05-27T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {

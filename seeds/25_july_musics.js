@@ -66,7 +66,7 @@ exports.seed = function(knex, Promise) {
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2161883254/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
           href_string: 'http://dva2.bandcamp.com/album/nipomo',
-          a_string: 'http://dva2.bandcamp.com/album/nipomo',
+          a_string: 'NIPOMO by Dva',
           rule: {
             "monday": [ 30, 1, 5, 13 ],
             "tuesday": [ 29, 31, 4, 12 ],
