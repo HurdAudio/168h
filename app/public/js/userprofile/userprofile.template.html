@@ -4778,6 +4778,42 @@
 
     </div>
 
+    <div id="reportForMusicsCurrator">
+      <div id="musicsCurratorReportBar">
+        <a href="" class="btn" id="musicsCurratorReportDone" ng-click="$ctrl.musicCurratorReportDone()">done</a>
+        <h1>Music Report</h1>
+      </div>
+      <div id="musicsCurratorReportBody">
+
+        <main ng-repeat="report in $ctrl.musicsCurratorReporting | orderBy : $ctrl.sortBy">
+          <div class="reporter">
+            <h2 id="musicsCurratorReportMonth">{{report.month}}
+              <div id="musicsCurratorReportYearAdapter">
+                <input type="number" id="musicsCurratorReportYear" class="pure-input-1">
+              </div>
+            </h2>
+            <h2>Theme: {{report.theme}}</h2>
+            <h2>Total Streams: {{report.totalWorks}}</h2>
+            <br>
+            <h2 id="musicsCoverageLabel">Coverage:</h2>
+            <div id="musicsCurratorReportGraphs">
+              <h2 id="musicsCurratorReportDay1">1<div id="musicsCurratorReportDay1Div" class="barGraph"></div></h2>
+              <h2 id="musicsCurratorReportDay2">2<div id="musicsCurratorReportDay2Div" class="barGraph"></div></h2>
+              <h2 id="musicsCurratorReportDay3">3<div id="musicsCurratorReportDay3Div" class="barGraph"></div></h2>
+              <h2 id="musicsCurratorReportDay4">4<div id="musicsCurratorReportDay4Div" class="barGraph"></div></h2>
+            </div>
+
+
+
+
+          </div>
+
+        </main>
+
+      </div>
+
+    </div>
+
     <div id="userMusicCurratorEditorDiv">
       <div id="userMusicCurratorEditorBar">
         <a href="" class="btn" id="userMusicCurratorEditorDoneButton" ng-click="$ctrl.userMusicCurratorEditorDone()">done</a>

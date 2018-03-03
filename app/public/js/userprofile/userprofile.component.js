@@ -211,6 +211,292 @@
       vm.userEditMessageCompleted = userEditMessageCompleted;
       vm.musicModuleDisplay = musicModuleDisplay;
       vm.addNewTiles = addNewTiles;
+      vm.musicCurratorReport = musicCurratorReport;
+      vm.musicCurratorReportDone = musicCurratorReportDone;
+
+      function musicCurratorReportDone() {
+        let reportForMusicsCurrator = document.getElementById('reportForMusicsCurrator');
+        let musicCurratorManagerDone = document.getElementById('musicCurratorManagerDone');
+
+        reportForMusicsCurrator.setAttribute("style", "display: none;");
+        musicCurratorManagerDone.setAttribute("style", "visibility: visible;");
+      }
+
+      function musicCurratorReport(musicPath) {
+        let userPath = musicPath + 'byuser';
+        let today = new Date();
+        let reportForMusicsCurrator = document.getElementById('reportForMusicsCurrator');
+        let userMusicCurratorEditorDiv = document.getElementById('userMusicCurratorEditorDiv');
+        let musicCurratorManagerDone = document.getElementById('musicCurratorManagerDone');
+        let monthDays = 0;
+        vm.musicsCurratorReporting = [];
+        vm.musicsCurratorReporting[0] = {};
+        let monthString = '';
+        $http.get(`/${userPath}/${currentUserId}`)
+        .then(userMusicsData=>{
+          let userMusics = userMusicsData.data;
+          vm.musicsCurratorReporting[0].totalWorks = userMusics.length;
+          switch(musicPath) {
+            case('friday_musics'):
+              vm.musicsCurratorReporting[0].month = 'Friday Musics';
+              vm.musicsCurratorReporting[0].theme = 'Friday Musics';
+              break;
+            case('sunday_musics'):
+              vm.musicsCurratorReporting[0].month = 'Sunday Musics';
+              vm.musicsCurratorReporting[0].theme = 'Sunday Musics';
+              break;
+            case('january_musics'):
+              monthDays = 31;
+              monthString = '01';
+              vm.musicsCurratorReporting[0].month = 'January';
+              break;
+            case('february_musics'):
+              monthDays = 29;
+              monthString = '02';
+              vm.musicsCurratorReporting[0].month = 'February';
+              break;
+            case('march_musics'):
+              monthDays = 31;
+              monthString = '03';
+              vm.musicsCurratorReporting[0].month = 'March';
+              break;
+            case('april_musics'):
+              monthDays = 30;
+              monthString = '04';
+              vm.musicsCurratorReporting[0].month = 'April';
+              break;
+            case('may_musics'):
+              monthDays = 31;
+              monthString = '05';
+              vm.musicsCurratorReporting[0].month = 'May';
+              break;
+            case('june_musics'):
+              monthDays = 30;
+              monthString = '06';
+              vm.musicsCurratorReporting[0].month = 'June';
+              break;
+            case('july_musics'):
+              monthDays = 31;
+              monthString = '07';
+              vm.musicsCurratorReporting[0].month = 'July';
+              break;
+            case('august_musics'):
+              monthDays = 31;
+              monthString = '08';
+              vm.musicsCurratorReporting[0].month = 'August';
+              break;
+            case('september_musics'):
+              monthDays = 30;
+              monthString = '09';
+              vm.musicsCurratorReporting[0].month = 'September';
+              break;
+            case('october_musics'):
+              monthDays = 31;
+              monthString = '10';
+              vm.musicsCurratorReporting[0].month = 'October';
+              break;
+            case('november_musics'):
+              monthDays = 30;
+              monthString = '11';
+              vm.musicsCurratorReporting[0].month = 'November';
+              break;
+            case('december_musics'):
+              monthDays = 31;
+              monthString = '12';
+              vm.musicsCurratorReporting[0].month = 'December';
+              break;
+            default:
+              console.log('unsupported music path');
+          }
+          let musicsCurratorReportYearAdapter = document.getElementById('musicsCurratorReportYearAdapter');
+          console.log(musicsCurratorReportYearAdapter);
+          let musicsCurratorReportYear = document.getElementById('musicsCurratorReportYear');
+          if (musicsCurratorReportYear) {
+            musicsCurratorReportYear.parentNode.removeChild(musicsCurratorReportYear);
+            musicsCurratorReportYear = document.createElement('input');
+            musicsCurratorReportYearAdapter.appendChild(musicsCurratorReportYear);
+            musicsCurratorReportYear.id = 'musicsCurratorReportYear';
+            musicsCurratorReportYear.type = 'number';
+            musicsCurratorReportYear.className = 'pure-input-1';
+            musicsCurratorReportYear.min = 0;
+            musicsCurratorReportYear.max = 9999;
+            musicsCurratorReportYear.value = parseInt(today.getFullYear());
+          }
+          let musicsCoverageLabel = document.getElementById('musicsCoverageLabel');
+          let musicsCurratorReportGraphs = document.getElementById('musicsCurratorReportGraphs');
+          while (musicsCurratorReportGraphs.firstChild) {
+            musicsCurratorReportGraphs.removeChild(musicsCurratorReportGraphs.firstChild);
+          }
+          let yearString = musicsCurratorReportYear.value.toString();
+          let weekDays = [ 'sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday' ];
+
+
+          if ((musicPath === 'friday_musics') || (musicPath === 'sunday_musics')) {
+            musicsCurratorReportYearAdapter.setAttribute("style", "display: none;");
+            musicsCoverageLabel.setAttribute("style", "display: none;");
+            musicsCurratorReportGraphs.setAttribute("style", "display: none;");
+          } else {
+            musicsCurratorReportYearAdapter.setAttribute("style", "display: initial;");
+            musicsCoverageLabel.setAttribute("style", "display: initial;");
+            musicsCurratorReportGraphs.setAttribute("style", "display: initial;");
+            let musicMonthStreams = {};
+            let dayString = '';
+            let checkDate;
+            let element;
+            let dayGraphLabel;
+            let subElement;
+            let dataStream;
+            yearString = musicsCurratorReportYear.value.toString();
+            musicMonthStreams.mostStreams = 0;
+            for (let i = 0; i < monthDays; i++) {
+              if ((i + 1) < 10) {
+                dayString = '0' + (i + 1).toString();
+              } else {
+                dayString = (i + 1).toString();
+              }
+              checkDate = new Date(yearString + '-' + monthString + '-' + dayString + 'T13:44:00.000Z');
+              if (weekDays[checkDate.getDay()] === 'friday') {
+                musicMonthStreams[(i+1).toString()] = 'Friday';
+              } else if (weekDays[checkDate.getDay()] === 'sunday') {
+                musicMonthStreams[(i+1).toString()] = 'Sunday';
+              } else {
+                for (let j = 0; j < userMusics.length; j++) {
+                  if (userMusics[j].rule[weekDays[checkDate.getDay()]].indexOf(i+1) !== -1) {
+                    if (musicMonthStreams[(i+1).toString()] === undefined) {
+                      musicMonthStreams[(i+1).toString()] = 1;
+                    } else {
+                      ++musicMonthStreams[(i+1).toString()];
+                    }
+                    if (musicMonthStreams[(i+1).toString()] > musicMonthStreams.mostStreams) {
+                      musicMonthStreams.mostStreams = musicMonthStreams[(i+1).toString()];
+                    }
+                  }
+                }
+              }
+            }
+            for (let days = 0; days < monthDays; days++) {
+              dayGraphLabel = document.createElement('h2');
+              musicsCurratorReportGraphs.appendChild(dayGraphLabel);
+              dayGraphLabel.innerHTML = (days+1).toString();
+              dayGraphLabel.setAttribute("style", "margin-top: 4vmin; margin-bottom: 0");
+              element = document.createElement('div');
+              musicsCurratorReportGraphs.appendChild(element);
+              if (musicMonthStreams[(days+1).toString()] === 'Friday') {
+                subElement = document.createElement('h2');
+                element.appendChild(subElement);
+                subElement.innerHTML = 'Friday';
+                subElement.setAttribute("style", "margin: 0 0 0 8vmin;");
+              } else if (musicMonthStreams[(days+1).toString()] === 'Sunday') {
+                subElement = document.createElement('h2');
+                element.appendChild(subElement);
+                subElement.innerHTML = 'Sunday';
+                subElement.setAttribute("style", "margin: 0 0 0 8vmin;");
+              } else {
+                element.setAttribute("style", "width: 80%; height: 50px; border: solid 2px #000000; margin: 0 0 1vmin 8vmin; background-color: #bbbbbb;");
+                subElement = document.createElement('div');
+                element.appendChild(subElement);
+                subElement.setAttribute("style", "background: #441E38; background-color: -webkit-linear-gradient(135deg, #441E38, #3E9B8C); background: -o-linear-gradient(135deg, #441E38, #3E9B8C); background: -moz-linear-gradient(135deg, #441E38, #3E9B8C); background: linear-gradient(135deg, #441E38, #3E9B8C); height: 100%; width: " + Math.floor(400 * (musicMonthStreams[(days+1).toString()]/userMusics.length)) + "%;");
+                dataStream = document.createElement('p');
+                element.appendChild(dataStream);
+                dataStream.innerHTML = musicMonthStreams[(days+1).toString()].toString() + ' available streams';
+                dataStream.setAttribute("style", "margin: 1vmin 0 2vmin 1vmin;");
+              }
+            }
+            element = document.createElement('h2');
+            musicsCurratorReportGraphs.appendChild(element);
+            element.innerHTML = ' __  ';
+            element.setAttribute("syle", "color: transparent;");
+            musicsCurratorReportYear.addEventListener('change', ()=>{
+              if (parseInt(musicsCurratorReportYear.value) < 1000) {
+                if (parseInt(musicsCurratorReportYear.value) < 100) {
+                  if (parseInt(musicsCurratorReportYear.value) < 10) {
+                    yearString = '000' + musicsCurratorReportYear.value.toString();
+                  } else {
+                    yearString = '00' + musicsCurratorReportYear.value.toString();
+                  }
+                } else {
+                  yearString = '0' + musicsCurratorReportYear.value.toString();
+                }
+              } else {
+                yearString = musicsCurratorReportYear.value.toString();
+              }
+              while(musicsCurratorReportGraphs.firstChild) {
+                musicsCurratorReportGraphs.removeChild(musicsCurratorReportGraphs.firstChild);
+              }
+              musicMonthStreams = {};
+              musicMonthStreams.mostStreams = 0;
+              for (let i = 0; i < monthDays; i++) {
+                if ((i + 1) < 10) {
+                  dayString = '0' + (i + 1).toString();
+                } else {
+                  dayString = (i + 1).toString();
+                }
+                checkDate = new Date(yearString + '-' + monthString + '-' + dayString + 'T13:44:00.000Z');
+                if (weekDays[checkDate.getDay()] === 'friday') {
+                  musicMonthStreams[(i+1).toString()] = 'Friday';
+                } else if (weekDays[checkDate.getDay()] === 'sunday') {
+                  musicMonthStreams[(i+1).toString()] = 'Sunday';
+                } else {
+                  for (let j = 0; j < userMusics.length; j++) {
+                    if (userMusics[j].rule[weekDays[checkDate.getDay()]].indexOf(i+1) !== -1) {
+                      if (musicMonthStreams[(i+1).toString()] === undefined) {
+                        musicMonthStreams[(i+1).toString()] = 1;
+                      } else {
+                        ++musicMonthStreams[(i+1).toString()];
+                      }
+                      if (musicMonthStreams[(i+1).toString()] > musicMonthStreams.mostStreams) {
+                        musicMonthStreams.mostStreams = musicMonthStreams[(i+1).toString()];
+                      }
+                    }
+                  }
+                }
+              }
+              for (let days = 0; days < monthDays; days++) {
+                dayGraphLabel = document.createElement('h2');
+                musicsCurratorReportGraphs.appendChild(dayGraphLabel);
+                dayGraphLabel.innerHTML = (days+1).toString();
+                dayGraphLabel.setAttribute("style", "margin-top: 4vmin; margin-bottom: 0");
+                element = document.createElement('div');
+                musicsCurratorReportGraphs.appendChild(element);
+                if (musicMonthStreams[(days+1).toString()] === 'Friday') {
+                  subElement = document.createElement('h2');
+                  element.appendChild(subElement);
+                  subElement.innerHTML = 'Friday';
+                  subElement.setAttribute("style", "margin: 0 0 0 8vmin;");
+                } else if (musicMonthStreams[(days+1).toString()] === 'Sunday') {
+                  subElement = document.createElement('h2');
+                  element.appendChild(subElement);
+                  subElement.innerHTML = 'Sunday';
+                  subElement.setAttribute("style", "margin: 0 0 0 8vmin;");
+                } else {
+                  element.setAttribute("style", "width: 80%; height: 50px; border: solid 2px #000000; margin: 0 0 1vmin 8vmin; background-color: #bbbbbb;");
+                  subElement = document.createElement('div');
+                  element.appendChild(subElement);
+                  subElement.setAttribute("style", "background: #441E38; background-color: -webkit-linear-gradient(135deg, #441E38, #3E9B8C); background: -o-linear-gradient(135deg, #441E38, #3E9B8C); background: -moz-linear-gradient(135deg, #441E38, #3E9B8C); background: linear-gradient(135deg, #441E38, #3E9B8C); height: 100%; width: " + Math.floor(400 * (musicMonthStreams[(days+1).toString()]/userMusics.length)) + "%;");
+                  dataStream = document.createElement('p');
+                  element.appendChild(dataStream);
+                  dataStream.innerHTML = musicMonthStreams[(days+1).toString()].toString() + ' available streams';
+                  dataStream.setAttribute("style", "margin: 1vmin 0 2vmin 1vmin;");
+                }
+              }
+              element = document.createElement('h2');
+              musicsCurratorReportGraphs.appendChild(element);
+              element.innerHTML = ' __  ';
+              element.setAttribute("syle", "color: transparent;");
+            });
+          }
+        });
+
+
+
+
+
+
+
+        reportForMusicsCurrator.setAttribute("style", "display: initial;");
+        userMusicCurratorEditorDiv.setAttribute("style", "display: none;");
+        musicCurratorManagerDone.setAttribute("style", "visibility: hidden;");
+      }
 
       function addNewTiles(month) {
         let monthTable = month.toLowerCase() + "_tiles";

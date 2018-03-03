@@ -3171,6 +3171,34 @@ footer img {
   margin-top: 0.2em;
 }
 
+#musicsCurratorReportBar {
+  font-family: 'Asul', serif;
+  font-size: 18px
+  background: #441E38;
+  background-color: -webkit-linear-gradient(-135deg, #441E38, #3E9B8C);
+  background: -o-linear-gradient(-135deg, #441E38, #3E9B8C);
+  background: -moz-linear-gradient(-135deg, #441E38, #3E9B8C);
+  background: linear-gradient(-135deg, #441E38, #3E9B8C);
+  border-radius: 5px;
+  margin: 0;
+  padding:0;
+  height: 3.8em;
+  top: 0%;
+  opacity: 1;
+}
+
+#musicsCurratorReportBar h1 {
+  margin-left: 2em;
+  padding-top: 0.4em;
+}
+
+
+#musicsCurratorReportBar a {
+  float:right;
+  margin-right: 1.1em;
+  margin-top: 0.2em;
+}
+
 #occasionsReportBar {
   font-family: 'Asul', serif;
   font-size: 18px
@@ -4981,6 +5009,10 @@ footer img {
 }
 
 #reportForArtsCurrator {
+  display: none;
+}
+
+#reportForMusicsCurrator {
   display: none;
 }
 
