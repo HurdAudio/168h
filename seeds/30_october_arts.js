@@ -4104,6 +4104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 206,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_sovpolpost_00050.jpg',
+          title: 'Long live Lenin Komsomol',
+          artist: 'G. Klutsis',
+          year: '1932',
+          rule: {
+            "monday": [ 8, 9, 20, 24 ],
+            "tuesday": [ 4, 15, 26, 30 ],
+            "wednesday": [ 3, 14, 25, 29 ],
+            "thursday": [ 2, 13, 24, 28 ],
+            "friday": [ 1, 12, 23, 27 ],
+            "saturday": [ 31, 11, 22, 26 ],
+            "sunday": [ 30, 10, 11, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 207,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_sovpolpost_00049.jpg',
+          title: 'March 8th - day of uprising of working women against kitchen slavery',
+          artist: 'B. Deykin',
+          year: '1932',
+          rule: {
+            "monday": [ 30, 10, 11, 25 ],
+            "tuesday": [ 8, 9, 20, 24 ],
+            "wednesday": [ 4, 15, 26, 30 ],
+            "thursday": [ 3, 14, 25, 29 ],
+            "friday": [ 2, 13, 24, 28 ],
+            "saturday": [ 1, 12, 23, 27 ],
+            "sunday": [ 31, 11, 22, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 208,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_sovpolpost_00048.jpg',
+          title: 'Rotfront',
+          artist: 'V. Deni',
+          year: '1932',
+          rule: {
+            "monday": [ 31, 11, 22, 26 ],
+            "tuesday": [ 30, 10, 11, 25 ],
+            "wednesday": [ 8, 9, 20, 24 ],
+            "thursday": [ 4, 15, 26, 30 ],
+            "friday": [ 3, 14, 25, 29 ],
+            "saturday": [ 2, 13, 24, 28 ],
+            "sunday": [ 1, 12, 23, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 209,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_sovpolpost_00047.jpg',
+          title: 'Black crows are setting up a bandit raid on the U.S.S.R.',
+          artist: 'Dmitry Moor',
+          year: '1930',
+          rule: {
+            "monday": [ 1, 12, 23, 27 ],
+            "tuesday": [ 31, 11, 22, 26 ],
+            "wednesday": [ 30, 10, 11, 25 ],
+            "thursday": [ 8, 9, 20, 24 ],
+            "friday": [ 4, 15, 26, 30 ],
+            "saturday": [ 3, 14, 25, 29 ],
+            "sunday": [ 2, 13, 24, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 210,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_sovpolpost_00046.jpg',
+          title: 'China is on the way to become free from imperialism.',
+          artist: 'A. Deineka',
+          year: '1932',
+          rule: {
+            "monday": [ 3, 14, 25, 29 ],
+            "tuesday": [ 2, 13, 24, 28 ],
+            "wednesday": [ 1, 12, 23, 27 ],
+            "thursday": [ 31, 11, 12, 26 ],
+            "friday": [ 9, 10, 21, 25 ],
+            "saturday": [ 5, 16, 27, 31 ],
+            "sunday": [ 4, 15, 26, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
