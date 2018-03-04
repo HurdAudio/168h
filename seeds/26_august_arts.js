@@ -4504,6 +4504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 226,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/woman-in-yellow-chair-1933.jpg',
+          title: 'Woman in Yellow Chair',
+          artist: 'Iosif Iser',
+          year: '1933',
+          rule: {
+            "monday": [ 5, 9, 17, 2 ],
+            "tuesday": [ 4, 7, 16, 1 ],
+            "wednesday": [ 3, 7, 15, 31 ],
+            "thursday": [ 2, 6, 14, 30 ],
+            "friday": [ 1, 3, 13, 29 ],
+            "saturday": [ 31, 3, 12, 28 ],
+            "sunday": [ 30, 2, 11, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 227,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/still-life-bowl-with-apples-1921.jpg',
+          title: 'Still life (Bowl with apples)',
+          artist: 'Bart van der Leck',
+          year: '1921',
+          rule: {
+            "monday": [ 30, 2, 11, 27 ],
+            "tuesday": [ 5, 9, 17, 2 ],
+            "wednesday": [ 4, 7, 16, 1 ],
+            "thursday": [ 3, 7, 15, 31 ],
+            "friday": [ 2, 6, 14, 30 ],
+            "saturday": [ 1, 3, 13, 29 ],
+            "sunday": [ 31, 3, 12, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 228,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/contra-composition-of-dissonances-xvi-1925.jpg',
+          title: 'Contra-Composition of Dissonances, XVI',
+          artist: 'Theo van Doesburg',
+          year: '1925',
+          rule: {
+            "monday": [ 31, 3, 12, 28 ],
+            "tuesday": [ 30, 2, 11, 27 ],
+            "wednesday": [ 5, 9, 17, 2 ],
+            "thursday": [ 4, 7, 16, 1 ],
+            "friday": [ 3, 7, 15, 31 ],
+            "saturday": [ 2, 6, 14, 30 ],
+            "sunday": [ 1, 3, 13, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 229,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/samba-1925.jpg',
+          title: 'Samba',
+          artist: 'Emiliano Di Cavalcanti',
+          year: '1925',
+          rule: {
+            "monday": [ 1, 3, 13, 29 ],
+            "tuesday": [ 31, 3, 12, 28 ],
+            "wednesday": [ 30, 2, 11, 27 ],
+            "thursday": [ 5, 9, 17, 2 ],
+            "friday": [ 4, 7, 16, 1 ],
+            "saturday": [ 3, 7, 15, 31 ],
+            "sunday": [ 2, 6, 14, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 230,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/meisje-1938(1).jpg',
+          title: 'Meisje',
+          artist: 'Constant Permeke',
+          year: '1938',
+          rule: {
+            "monday": [ 2, 6, 14, 30 ],
+            "tuesday": [ 1, 3, 13, 29 ],
+            "wednesday": [ 31, 3, 12, 28 ],
+            "thursday": [ 30, 2, 11, 27 ],
+            "friday": [ 5, 9, 17, 2 ],
+            "saturday": [ 4, 7, 16, 1 ],
+            "sunday": [ 3, 7, 15, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
