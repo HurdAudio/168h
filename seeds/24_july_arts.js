@@ -4704,6 +4704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 236,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/on-a-terrace-1867.jpg',
+          title: 'On a Terrace',
+          artist: 'Ernest Meissonier',
+          year: '1867',
+          rule: {
+            "monday": [ 1, 12, 22, 24 ],
+            "tuesday": [ 31, 11, 22, 23 ],
+            "wednesday": [ 30, 10, 21, 1 ],
+            "thursday": [ 5, 16, 27, 6 ],
+            "friday": [ 4, 15, 26, 6 ],
+            "saturday": [ 3, 14, 25, 5 ],
+            "sunday": [ 2, 13, 24, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 237,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/leaving-the-sheep-pen-1889.jpg',
+          title: 'Leaving the Sheep Pen',
+          artist: 'Charles Jacque',
+          year: '1889',
+          rule: {
+            "monday": [ 2, 13, 24, 25 ],
+            "tuesday": [ 1, 12, 22, 24 ],
+            "wednesday": [ 31, 11, 22, 23 ],
+            "thursday": [ 30, 10, 21, 1 ],
+            "friday": [ 5, 16, 27, 6 ],
+            "saturday": [ 4, 15, 26, 6 ],
+            "sunday": [ 3, 14, 25, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 238,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/the-fisherman.jpg',
+          title: 'The Fisherman',
+          artist: 'Constant Troyon',
+          year: '?',
+          rule: {
+            "monday": [ 4, 15, 26, 6 ],
+            "tuesday": [ 3, 14, 25, 26 ],
+            "wednesday": [ 2, 13, 23, 25 ],
+            "thursday": [ 1, 12, 23, 24 ],
+            "friday": [ 31, 11, 22, 2 ],
+            "saturday": [ 6, 17, 28, 7 ],
+            "sunday": [ 5, 16, 27, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 239,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/sappho-1867.jpg',
+          title: 'Sappho',
+          artist: 'Charles Gleyre',
+          year: '1867',
+          rule: {
+            "monday": [ 5, 16, 27, 7 ],
+            "tuesday": [ 4, 15, 26, 6 ],
+            "wednesday": [ 3, 14, 25, 26 ],
+            "thursday": [ 2, 13, 23, 25 ],
+            "friday": [ 1, 12, 23, 24 ],
+            "saturday": [ 31, 11, 22, 2 ],
+            "sunday": [ 6, 17, 28, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 240,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/heraldic-eagle-185.jpg',
+          title: 'Heraldic eagle',
+          artist: 'Victor Hugo',
+          year: '1855',
+          rule: {
+            "monday": [ 6, 17, 28, 7 ],
+            "tuesday": [ 5, 16, 27, 7 ],
+            "wednesday": [ 4, 15, 26, 6 ],
+            "thursday": [ 3, 14, 25, 26 ],
+            "friday": [ 2, 13, 23, 25 ],
+            "saturday": [ 1, 12, 23, 24 ],
+            "sunday": [ 31, 11, 22, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
