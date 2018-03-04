@@ -3704,6 +3704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 186,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/40-06,AmazingMystery.jpg',
+          title: 'Amazing Mystery',
+          artist: 'Malcolm Kildale',
+          year: '1940',
+          rule: {
+            "monday": [ 25, 6, 15, 21 ],
+            "tuesday": [ 24, 6, 25, 20 ],
+            "wednesday": [ 30, 12, 20, 26 ],
+            "thursday": [ 29, 11, 19, 25 ],
+            "friday": [ 28, 10, 18, 24 ],
+            "saturday": [ 27, 9, 17, 23 ],
+            "sunday": [ 26, 8, 16, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 187,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/41-07,TopNotch.jpg',
+          title: 'Top Notch Comics',
+          artist: 'Warren King',
+          year: '1941',
+          rule: {
+            "monday": [ 26, 8, 16, 22 ],
+            "tuesday": [ 25, 6, 15, 21 ],
+            "wednesday": [ 24, 6, 25, 20 ],
+            "thursday": [ 30, 12, 20, 26 ],
+            "friday": [ 29, 11, 19, 25 ],
+            "saturday": [ 28, 10, 18, 24 ],
+            "sunday": [ 27, 9, 17, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 188,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/49-00,Avon,Y-127.jpg',
+          title: 'Avon Paperback Cover',
+          artist: 'Everett Raymond Kinstler',
+          year: '1949',
+          rule: {
+            "monday": [ 27, 9, 17, 23 ],
+            "tuesday": [ 26, 8, 16, 22 ],
+            "wednesday": [ 25, 6, 15, 21 ],
+            "thursday": [ 24, 6, 25, 20 ],
+            "friday": [ 30, 12, 20, 26 ],
+            "saturday": [ 29, 11, 19, 25 ],
+            "sunday": [ 28, 10, 18, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 189,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/34-00,Illus.jpg',
+          title: 'pulp illustration',
+          artist: 'Harry Kirchner',
+          year: '1934',
+          rule: {
+            "monday": [ 29, 11, 19, 25 ],
+            "tuesday": [ 28, 10, 18, 24 ],
+            "wednesday": [ 27, 9, 17, 23 ],
+            "thursday": [ 26, 7, 16, 22 ],
+            "friday": [ 25, 7, 26, 21 ],
+            "saturday": [ 31, 13, 21, 27 ],
+            "sunday": [ 30, 12, 20, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 190,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/37-10,LvFctMtly1.jpg',
+          title: 'Love Fiction',
+          artist: 'Alice Kirkpatrick',
+          year: '1937',
+          rule: {
+            "monday": [ 30, 12, 20, 26 ],
+            "tuesday": [ 29, 11, 19, 25 ],
+            "wednesday": [ 28, 10, 18, 24 ],
+            "thursday": [ 27, 9, 17, 23 ],
+            "friday": [ 26, 7, 16, 22 ],
+            "saturday": [ 25, 7, 26, 21 ],
+            "sunday": [ 31, 13, 21, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
