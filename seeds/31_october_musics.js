@@ -2164,6 +2164,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 121,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1243795483/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://agoniarecords.bandcamp.com/album/interregnum',
+          a_string: 'Interregnum by Usurpress',
+          rule: {
+            "monday": [ 24, 3, 13, 16 ],
+            "tuesday": [ 23, 2, 12, 15 ],
+            "wednesday": [ 22, 1, 11, 14 ],
+            "thursday": [ 21, 31, 11, 13 ],
+            "saturday": [ 25, 4, 14, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 122,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=952348529/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://divideanddissolve.bandcamp.com/album/abomination',
+          a_string: 'ABOMINATION by Divide and Dissolve',
+          rule: {
+            "monday": [ 25, 4, 14, 17 ],
+            "tuesday": [ 24, 3, 13, 16 ],
+            "wednesday": [ 23, 2, 12, 15 ],
+            "thursday": [ 22, 1, 11, 14 ],
+            "saturday": [ 21, 31, 11, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 123,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1519543028/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://keijihaino.bandcamp.com/album/watashi-dake',
+          a_string: 'Watashi Dake? by Keiji Haino',
+          rule: {
+            "monday": [ 21, 31, 11, 13 ],
+            "tuesday": [ 25, 4, 14, 17 ],
+            "wednesday": [ 24, 3, 13, 16 ],
+            "thursday": [ 23, 2, 12, 15 ],
+            "saturday": [ 22, 1, 11, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
