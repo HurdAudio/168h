@@ -2596,6 +2596,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 145,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1818678450/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://leebannon.bandcamp.com/album/tahoe',
+          a_string: 'Tahoe by Dedekind Cut',
+          rule: {
+            "monday": [ 19, 23, 28, 10 ],
+            "tuesday": [ 19, 22, 28, 9 ],
+            "wednesday": [ 17, 25, 27, 8 ],
+            "thursday": [ 21, 25, 1, 12 ],
+            "saturday": [ 20, 23, 28, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 146,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1544015561/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://12kmusic.bandcamp.com/album/field',
+          a_string: 'Field by SHUTTLE358',
+          rule: {
+            "monday": [ 20, 23, 28, 10 ],
+            "tuesday": [ 19, 23, 28, 10 ],
+            "wednesday": [ 19, 22, 28, 9 ],
+            "thursday": [ 17, 25, 27, 8 ],
+            "saturday": [ 21, 25, 1, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 147,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1955768260/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://archivesdubmusic.bandcamp.com/album/snow-light',
+          a_string: 'Snow Light by Gallery Six',
+          rule: {
+            "monday": [ 22, 26, 2, 13 ],
+            "tuesday": [ 21, 24, 29, 11 ],
+            "wednesday": [ 20, 24, 29, 11 ],
+            "thursday": [ 20, 23, 29, 10 ],
+            "saturday": [ 18, 26, 28, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
