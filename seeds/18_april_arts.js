@@ -5304,6 +5304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 266,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/9991015-mlb-philadelphia-phillies-at-cincinnati-reds.jpeg',
+          title: 'Philadelphia Phillies third baseman Maikel Franco (7) slides in safe under the tag of Cincinnati Reds catcher Tucker Barnhart (16) during the first inning at Great American Ball Park',
+          artist: 'Frank Victores',
+          year: '2017',
+          rule: {
+            "monday": [ 7, 12, 18, 24 ],
+            "tuesday": [ 6, 10, 25, 23 ],
+            "wednesday": [ 5, 10, 15, 21 ],
+            "thursday": [ 4, 9, 15, 21 ],
+            "friday": [ 3, 8, 14, 20 ],
+            "saturday": [ 8, 14, 19, 26 ],
+            "sunday": [ 22, 12, 18, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 267,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/50781261-expos-v-phillies.jpg',
+          title: 'Phillies',
+          artist: 'Jamie Squire',
+          year: '?',
+          rule: {
+            "monday": [ 22, 12, 18, 25 ],
+            "tuesday": [ 7, 12, 18, 24 ],
+            "wednesday": [ 6, 10, 25, 23 ],
+            "thursday": [ 5, 10, 15, 21 ],
+            "friday": [ 4, 9, 15, 21 ],
+            "saturday": [ 3, 8, 14, 20 ],
+            "sunday": [ 8, 14, 19, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 268,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/1890Phillies.jpg',
+          title: '1890 Phillies',
+          artist: '?',
+          year: '1890',
+          rule: {
+            "monday": [ 8, 14, 19, 26 ],
+            "tuesday": [ 22, 12, 18, 25 ],
+            "wednesday": [ 7, 12, 18, 24 ],
+            "thursday": [ 6, 10, 25, 23 ],
+            "friday": [ 5, 10, 15, 21 ],
+            "saturday": [ 4, 9, 15, 21 ],
+            "sunday": [ 3, 8, 14, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 269,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/phillywordart-philadelphiaphillies-chaseutley-poster.jpg',
+          title: 'Chase Utley',
+          artist: 'Daniel Duffy',
+          year: '2008',
+          rule: {
+            "monday": [ 3, 8, 14, 20 ],
+            "tuesday": [ 8, 14, 19, 26 ],
+            "wednesday": [ 22, 12, 18, 25 ],
+            "thursday": [ 7, 12, 18, 24 ],
+            "friday": [ 6, 10, 25, 23 ],
+            "saturday": [ 5, 10, 15, 21 ],
+            "sunday": [ 4, 9, 15, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 270,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/phillimg.jpeg',
+          title: 'Hector Neris',
+          artist: '?',
+          year: '2017',
+          rule: {
+            "monday": [ 4, 9, 15, 21 ],
+            "tuesday": [ 3, 8, 14, 20 ],
+            "wednesday": [ 8, 14, 19, 26 ],
+            "thursday": [ 22, 12, 18, 25 ],
+            "friday": [ 7, 12, 18, 24 ],
+            "saturday": [ 6, 10, 25, 23 ],
+            "sunday": [ 5, 10, 15, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
