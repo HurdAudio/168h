@@ -2380,6 +2380,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 133,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2233459716/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ligeiamare.bandcamp.com/album/karl-und-karl',
+          a_string: 'Karl Und Karl by J.A. Deane and Farrell Lowe',
+          rule: {
+            "monday": [ 28, 5, 18, 17 ],
+            "tuesday": [ 1, 9, 22, 21 ],
+            "wednesday": [ 31, 8, 21, 20 ],
+            "thursday": [ 30, 7, 20, 19 ],
+            "saturday": [ 29, 6, 19, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 134,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1313710677/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bashan.bandcamp.com/album/bashan-ep1',
+          a_string: 'Bashan - EP1 by Bashan',
+          rule: {
+            "monday": [ 29, 6, 19, 18 ],
+            "tuesday": [ 28, 5, 18, 17 ],
+            "wednesday": [ 1, 9, 22, 21 ],
+            "thursday": [ 31, 8, 21, 20 ],
+            "saturday": [ 30, 7, 20, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 135,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=39900070/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://phinery.bandcamp.com/album/voices',
+          a_string: 'Voices by Lief Hall',
+          rule: {
+            "monday": [ 30, 7, 20, 19 ],
+            "tuesday": [ 29, 6, 19, 18 ],
+            "wednesday": [ 28, 5, 18, 17 ],
+            "thursday": [ 1, 9, 22, 21 ],
+            "saturday":  [ 31, 8, 21, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
