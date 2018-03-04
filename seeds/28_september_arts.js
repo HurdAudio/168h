@@ -4304,6 +4304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 216,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/return-of-the-prodigal-1997.jpg',
+          title: 'Return of the Prodigal',
+          artist: 'Godfrey Blow',
+          year: '1997',
+          rule: {
+            "monday": [ 29, 5, 23, 1 ],
+            "tuesday": [ 28, 4, 22, 30 ],
+            "wednesday": [ 27, 3, 21, 29 ],
+            "thursday": [ 26, 2, 20, 27 ],
+            "friday":  [ 2, 8, 26, 4 ],
+            "saturday": [ 1, 7, 25, 3 ],
+            "sunday": [ 30, 6, 24, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 217,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/f-r-joseph-beuys-1987.jpg',
+          title: 'Für Joseph Beuys',
+          artist: 'Juliao Sarmento',
+          year: '1987',
+          rule: {
+            "monday": [ 1, 7, 25, 3 ],
+            "tuesday": [ 30, 6, 24, 2 ],
+            "wednesday": [ 29, 5, 23, 1 ],
+            "thursday": [ 28, 4, 22, 30 ],
+            "friday":  [ 27, 3, 21, 28 ],
+            "saturday": [ 3, 9, 27, 5 ],
+            "sunday": [ 2, 8, 26, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 218,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/mona-lisa-at-the-age-of-twelve-years.jpg',
+          title: 'Mona Lisa at the Age of Twelve Years',
+          artist: 'Fernando Botero',
+          year: '1959',
+          rule: {
+            "monday": [ 2, 8, 26, 4 ],
+            "tuesday": [ 1, 7, 25, 3 ],
+            "wednesday": [ 30, 6, 24, 2 ],
+            "thursday": [ 29, 5, 23, 1 ],
+            "friday":  [ 28, 4, 22, 30 ],
+            "saturday": [ 27, 3, 21, 28 ],
+            "sunday": [ 3, 9, 27, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 219,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/desta-vez-eu-consigo-fugir-1967.jpg',
+          title: 'Desta vez eu consigo fugir',
+          artist: 'Claudio Tozzi',
+          year: '1967',
+          rule: {
+            "monday": [ 3, 9, 27, 5 ],
+            "tuesday": [ 2, 8, 26, 4 ],
+            "wednesday": [ 1, 7, 25, 3 ],
+            "thursday": [ 30, 6, 24, 2 ],
+            "friday":  [ 29, 5, 23, 1 ],
+            "saturday": [ 28, 4, 22, 30 ],
+            "sunday": [ 27, 3, 21, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 220,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/the-satyr-1958.jpg',
+          title: 'The Satyr',
+          artist: 'Rafael Zabaleta',
+          year: '1958',
+          rule: {
+            "monday": [ 27, 3, 21, 28 ],
+            "tuesday": [ 3, 9, 27, 5 ],
+            "wednesday": [ 2, 8, 26, 4 ],
+            "thursday": [ 1, 7, 25, 3 ],
+            "friday":  [ 30, 6, 24, 2 ],
+            "saturday": [ 29, 5, 23, 1 ],
+            "sunday": [ 28, 4, 22, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
