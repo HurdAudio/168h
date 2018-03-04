@@ -3904,6 +3904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 196,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/sur-les-murs-1971.jpg',
+          title: 'Sur les Murs',
+          artist: 'Daniel Buren',
+          year: '1971',
+          rule: {
+            "monday": [ 4, 9, 15, 19 ],
+            "tuesday": [ 3, 6, 14, 19 ],
+            "wednesday": [ 2, 6, 13, 18 ],
+            "thursday": [ 1, 6, 12, 17 ],
+            "friday": [ 30, 5, 11, 18 ],
+            "saturday": [ 6, 11, 17, 22 ],
+            "sunday": [ 5, 10, 15, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 197,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/sun-flower-1971.jpg',
+          title: 'Sun Flower',
+          artist: 'Anne Truitt',
+          year: '1971',
+          rule: {
+            "monday": [ 5, 10, 15, 21 ],
+            "tuesday": [ 4, 9, 15, 19 ],
+            "wednesday": [ 3, 6, 14, 19 ],
+            "thursday": [ 2, 6, 13, 18 ],
+            "friday": [ 1, 6, 12, 17 ],
+            "saturday": [ 30, 5, 11, 18 ],
+            "sunday": [ 6, 11, 17, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 198,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/no-3-1971.jpg',
+          title: 'No. 3',
+          artist: 'Bernard Cohen',
+          year: '1971',
+          rule: {
+            "monday": [ 6, 11, 17, 22 ],
+            "tuesday": [ 5, 10, 15, 21 ],
+            "wednesday": [ 4, 9, 15, 19 ],
+            "thursday": [ 3, 6, 14, 19 ],
+            "friday": [ 2, 6, 13, 18 ],
+            "saturday": [ 1, 6, 12, 17 ],
+            "sunday": [ 30, 5, 11, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 199,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/blok-1971.jpg',
+          title: 'Blok',
+          artist: 'Nanda Vigo',
+          year: '1971',
+          rule: {
+            "monday": [ 30, 5, 11, 18 ],
+            "tuesday": [ 6, 11, 17, 22 ],
+            "wednesday": [ 5, 10, 15, 21 ],
+            "thursday": [ 4, 9, 15, 19 ],
+            "friday": [ 3, 6, 14, 19 ],
+            "saturday": [ 2, 6, 13, 18 ],
+            "sunday": [ 1, 6, 12, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 200,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/reticul-rea-cuadrada-horizontal-71-10-1971.jpg',
+          title: 'Reticulárea cuadrada horizontal 71/10',
+          artist: 'Gego',
+          year: '1971',
+          rule: {
+            "monday": [ 1, 6, 12, 17 ],
+            "tuesday": [ 30, 5, 11, 18 ],
+            "wednesday": [ 6, 11, 17, 22 ],
+            "thursday": [ 5, 10, 15, 21 ],
+            "friday": [ 4, 9, 15, 19 ],
+            "saturday": [ 3, 6, 14, 19 ],
+            "sunday": [ 2, 6, 13, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
