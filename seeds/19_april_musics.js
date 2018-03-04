@@ -2812,6 +2812,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 157,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4157557513/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tonunaissootrio.bandcamp.com/album/tonu-naissoo-trio-1970',
+          a_string: 'Tonu Naissoo Trio (1970) by Tonu Naissoo Trio',
+          rule: {
+            "monday": [ 26, 4, 16, 21 ],
+            "tuesday": [ 25, 3, 15, 20 ],
+            "wednesday": [ 24, 2, 14, 19 ],
+            "thursday": [ 23, 1, 13, 18 ],
+            "saturday": [ 22, 30, 12, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 158,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=866568059/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://kaze2.bandcamp.com/album/atody-man',
+          a_string: 'Atody Man by Kaze',
+          rule: {
+            "monday": [ 22, 30, 12, 17 ],
+            "tuesday": [ 26, 4, 16, 21 ],
+            "wednesday": [ 25, 3, 15, 20 ],
+            "thursday": [ 24, 2, 14, 19 ],
+            "saturday": [ 23, 1, 13, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 159,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1828543043/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jazebaqti.bandcamp.com/album/stories',
+          a_string: 'Stories by Jaze Baqti',
+          rule: {
+            "monday": [ 23, 1, 13, 18 ],
+            "tuesday": [ 22, 30, 12, 17 ],
+            "wednesday": [ 26, 4, 16, 21 ],
+            "thursday": [ 25, 3, 15, 20 ],
+            "saturday": [ 24, 2, 14, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
