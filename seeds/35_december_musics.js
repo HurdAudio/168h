@@ -1948,6 +1948,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 109,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=518899257/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://zzkrecords.bandcamp.com/album/selva',
+          a_string: 'Selva by El Remolon',
+          rule: {
+            "monday": [ 17, 25, 31, 6 ],
+            "tuesday": [ 18, 24, 30, 5 ],
+            "wednesday": [ 22, 28, 3, 9 ],
+            "thursday": [ 21, 27, 2, 7 ],
+            "saturday": [ 20, 26, 1, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 110,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=874343302/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://zzkrecords.bandcamp.com/album/en-son-de-paz',
+          a_string: 'En Son de Paz by Frikstailers',
+          rule: {
+            "monday": [ 20, 26, 1, 7 ],
+            "tuesday": [ 17, 25, 31, 6 ],
+            "wednesday": [ 18, 24, 30, 5 ],
+            "thursday": [ 22, 28, 3, 9 ],
+            "saturday": [ 21, 27, 2, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 111,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=381872142/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://zzkrecords.bandcamp.com/album/cosmus',
+          a_string: 'Cosmus by MITÚ',
+          rule: {
+            "monday": [ 21, 27, 2, 7 ],
+            "tuesday": [ 20, 26, 1, 7 ],
+            "wednesday": [ 17, 25, 31, 6 ],
+            "thursday": [ 18, 24, 30, 5 ],
+            "saturday": [ 22, 28, 3, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
