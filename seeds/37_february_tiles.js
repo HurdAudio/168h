@@ -480,6 +480,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#CBA16A',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 35,
+          user_id: 1,
+          theme: 'Silk/Velvet',
+          type: 'saturday',
+          src_string: '../img/february_tiles/silky-velvet-422-fabric.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '120%',
+          color_dark: '#0A0000',
+          color_medium: '#3E0D10',
+          color_light: '#CC6C7A',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
