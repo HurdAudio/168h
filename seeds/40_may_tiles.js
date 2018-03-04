@@ -438,6 +438,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FAFFF3',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 32,
+          user_id: 1,
+          theme: 'Greenery',
+          type: 'holiday',
+          src_string: '../img/may_tiles/xalpine-flowers-in-austria-b.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '140%',
+          color_dark: '#0C1606',
+          color_medium: '#215505',
+          color_light: '#F9FBF6',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
