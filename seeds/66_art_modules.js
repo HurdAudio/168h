@@ -304,6 +304,66 @@ exports.seed = function(knex, Promise) {
           public: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 26,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/IMG_0742.jpg',
+          title: 'Maya in Bed',
+          artist: 'Ginger DeRusha',
+          year: '2018',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 27,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/IMG_0315.jpg',
+          title: 'Little Cat in the Bath',
+          artist: 'Ginger DeRusha',
+          year: '2017',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 28,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/IMG_0007.jpg',
+          title: 'Nellie Wants to Play',
+          artist: 'Ginger DeRusha',
+          year: '2016',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 29,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/FullSizeR.jpg',
+          title: 'The Purrfect Aesthetic',
+          artist: '?',
+          year: '2018',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 30,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/IMG_0959.jpg',
+          title: 'Happy Happy Meal',
+          artist: 'Ginger DeRusha',
+          year: '2017',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
