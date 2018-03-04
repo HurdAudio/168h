@@ -2704,6 +2704,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 151,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3538167430/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://newfocusrecordings.bandcamp.com/album/streya',
+          a_string: 'Streya by Olivia De Prato',
+          rule: {
+            "monday": [ 25, 31, 7, 20 ],
+            "tuesday": [ 24, 30, 6, 19 ],
+            "wednesday": [ 23, 29, 5, 18 ],
+            "thursday": [ 22, 28, 4, 17 ],
+            "saturday": [ 26, 2, 8, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 152,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2468676498/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://newfocusrecordings.bandcamp.com/album/michael-hersch-images-from-a-closed-ward',
+          a_string: 'Michael Hersch: Images from a Closed Ward by Michael Hersch',
+          rule: {
+            "monday": [ 26, 2, 8, 21 ],
+            "tuesday": [ 25, 31, 7, 20 ],
+            "wednesday": [ 24, 30, 6, 19 ],
+            "thursday": [ 23, 29, 5, 18 ],
+            "saturday": [ 22, 28, 4, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 153,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1973794575/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://erikcarlson.bandcamp.com/album/milton-babbitt-string-quartets',
+          a_string: 'Milton Babbitt String Quartets by The Ars Combinatoria String Quartet',
+          rule: {
+            "monday": [ 22, 28, 4, 17 ],
+            "tuesday": [ 26, 2, 8, 21 ],
+            "wednesday": [ 25, 31, 7, 20 ],
+            "thursday": [ 24, 30, 6, 19 ],
+            "saturday": [ 23, 29, 5, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
