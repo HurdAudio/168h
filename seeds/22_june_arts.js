@@ -4904,6 +4904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 246,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/stock-photo-136664977.jpg',
+          title: 'The Good Weather Umbrella',
+          artist: 'John Wilhelm',
+          year: '2016',
+          rule: {
+            "monday": [ 4, 14, 24, 2 ],
+            "tuesday": [ 3, 13, 23, 1 ],
+            "wednesday": [ 2, 12, 22, 30 ],
+            "thursday": [ 11, 21, 1, 29 ],
+            "friday": [ 30, 10, 20, 28 ],
+            "saturday": [ 29, 9, 19, 27 ],
+            "sunday": [ 5, 15, 25, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 247,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/DQ2wyjKW4AE5qDF.jpg',
+          title: 'The Road To Spring',
+          artist: 'Nikos Bantouvakis',
+          year: '2016',
+          rule: {
+            "monday": [ 5, 15, 25, 1 ],
+            "tuesday": [ 4, 14, 24, 2 ],
+            "wednesday": [ 3, 13, 23, 1 ],
+            "thursday": [ 2, 12, 22, 30 ],
+            "friday": [ 11, 21, 1, 29 ],
+            "saturday": [ 30, 10, 20, 28 ],
+            "sunday": [ 29, 9, 19, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 248,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/1459963600174895885.jpg',
+          title: 'A Cloudy Day in Canal Park',
+          artist: 'Like_He',
+          year: '2016',
+          rule: {
+            "monday": [ 29, 9, 19, 27 ],
+            "tuesday": [ 5, 15, 25, 1 ],
+            "wednesday": [ 4, 14, 24, 2 ],
+            "thursday": [ 3, 13, 23, 1 ],
+            "friday": [ 2, 12, 22, 30 ],
+            "saturday": [ 11, 21, 1, 29 ],
+            "sunday": [ 30, 10, 20, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 249,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/flamingodown.jpeg',
+          title: 'Siesta',
+          artist: 'Adrian Borda',
+          year: '2016',
+          rule: {
+            "monday": [ 30, 10, 20, 28 ],
+            "tuesday": [ 29, 9, 19, 27 ],
+            "wednesday": [ 5, 15, 25, 1 ],
+            "thursday": [ 4, 14, 24, 2 ],
+            "friday": [ 3, 13, 23, 1 ],
+            "saturday": [ 2, 12, 22, 30 ],
+            "sunday": [ 11, 21, 1, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 250,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/Denise-Kwong-700x700.jpg',
+          title: 'Trigger',
+          artist: 'Denise Kwong',
+          year: '2016',
+          rule: {
+            "monday": [ 11, 21, 1, 29 ],
+            "tuesday": [ 30, 10, 20, 28 ],
+            "wednesday": [ 29, 9, 19, 27 ],
+            "thursday": [ 5, 15, 25, 1 ],
+            "friday": [ 4, 14, 24, 2 ],
+            "saturday": [ 3, 13, 23, 1 ],
+            "sunday": [ 2, 12, 22, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
