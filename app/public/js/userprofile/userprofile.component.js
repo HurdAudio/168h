@@ -12383,6 +12383,210 @@
         }, 100);
       }
 
+      function timeblockInviteUserData(appointment, index) {
+        console.log(appointment);
+        $http.get(`/users/${appointment.user_id}`)
+        .then(inviterData=>{
+          let inviter = inviterData.data;
+          $http.get(`/users/${appointment.share_associate_id}`)
+          .then(inviteeData=>{
+            let invitee = inviteeData.data;
+            console.log(inviter);
+            console.log(invitee);
+            if (inviter.id === parseInt(currentUserId)) {
+              vm.activeTimeblockShares[index].inviterImg = invitee.user_avatar_url;
+            } else {
+              vm.activeTimeblockShares[index].inviterImg = inviter.user_avatar_url;
+            }
+            vm.activeTimeblockShares[index].inviterName = inviter.name;
+            vm.activeTimeblockShares[index].inviteeName = invitee.name;
+          })
+        });
+      }
+
+      function inviteOrInvitee(appointment, index) {
+        setTimeout(()=>{
+          if (appointment.share_associate_id === parseInt(currentUserId)) {
+            document.getElementById('timeblockInviter' + appointment.id.toString()).setAttribute("style", "display: initial;");
+            document.getElementById('timeblockInvitee' + appointment.id.toString()).setAttribute("style", "display: none;");
+          } else {
+            document.getElementById('timeblockInvitee' + appointment.id.toString()).setAttribute("style", "display: initial;");
+            document.getElementById('timeblockInviter' + appointment.id.toString()).setAttribute("style", "display: none;");
+          }
+          if (appointment.accepted) {
+            document.getElementById('acceptDecline' + appointment.id.toString()).setAttribute("style", "display: none;");
+            document.getElementById('acceptedAppointment' + appointment.id.toString()).setAttribute("style", "display: initial;");
+          } else {
+            // document.getElementById('acceptDecline' + appointment.id.toString()).setAttribute("style", "display: initial;");
+            // document.getElementById('acceptDecline' + appointment.id.toString()).className = 'timeBlockAcceptDenyButtons';
+            document.getElementById('acceptedAppointment' + appointment.id.toString()).setAttribute("style", "display: none;");
+          }
+        }, 50);
+      }
+
+      function overlapExist (block1, block2) {
+        let overlap = false;
+        let block1Start = new Date(block1.start_time);
+        let block1End = new Date(block1.end_time);
+        let block2Start = new Date(block2.start_time);
+        let block2End = new Date(block2.end_time);
+
+        if (block1Start.getHours() < block2Start.getHours()) {
+          if (block1End.getHours() < block2Start.getHours()) {
+            overlap = false;
+          } else if (block1End.getHours() === block2Start.getHours()) {
+            if (block1End.getMinutes() < block2Start.getMinutes()) {
+              overlap = false;
+            } else if (block1End.getMinutes() === block2Start.getMinutes()) {
+              overlap = false;
+            } else if (block1End.getMinutes() > block2Start.getMinutes()) {
+              overlap = true;
+            }
+          } else if (block1End.getHours() > block2Start.getHours()) {
+            overlap = true;
+          }
+
+        } else if (block1Start.getHours() === block2Start.getHours()) {
+          if (block1Start.getMinutes() < block2Start.getMinutes()) {
+            if ((block2End.getHours() === block2Start.getHours()) && (block2.end.getMinutes() === block2Start.getMinutes())) {
+              overlap = false;
+            } else {
+              overlap = true;
+            }
+          } else if (block1Start.getMinutes() === block2Start.getMinutes()) {
+            overlap = true;
+          } else if (block1Start.getMinutes() > block2Start.getMinutes()) {
+            overlap = true;
+          }
+
+        } else if (block1Start.getHours() > block2Start.getHours()) {
+          if (block1Start.getHours() < block2End.getHours()) {
+            overlap = true;
+          } else if (block1Start.getHours() === block2End.getHours()) {
+            if (block1Start.getMinutes() < block2End.getMinutes()) {
+              overlap = true;
+            } else if (block1Start.getMinutes() === block2End.getMinutes()) {
+              overlap = false;
+            } else if (block1Start.getMinutes() > block2End.getMinutes()) {
+              overlap = false;
+            }
+          } else if (block1Start.getHours() > block2Start.getHours()) {
+            if (block1End.getHours() > block2Start.getHours()) {
+              overlap = true;
+            } else if (block1End.getHours() === block2Start.getHours()) {
+              if (block1End.getMinutes() < block2Start.getMinutes()) {
+                overlap = false;
+              } else if (block1End.getMinutes() === block2Start.getMinutes()) {
+                overlap = false;
+              } else if (block1End.getMinutes() > block2Start.getMinutes()) {
+                overlap = true;
+              }
+            } else if (block1End.getHours() > block2Start.getHours()) {
+              overlap = true;
+            }
+
+          }
+        }
+
+        return(overlap);
+      }
+
+      function determinConflictStatus(appointment, index, timeblock) {
+        let checkStart = new Date(timeblock.start_time);
+        let checkEnd = new Date(timeblock.end_time);
+        let checkDate;
+        let conflict = false;
+        $http.get(`/timeblocksbyuser/${currentUserId}`)
+        .then(allUserBlocksData=>{
+          let allUserBlocks = allUserBlocksData.data;
+          let dayOfUserBlocks = allUserBlocks.filter(entry=>{
+            checkDate = new Date(entry.start_time);
+            return((checkDate.getFullYear() === checkStart.getFullYear()) && (checkDate.getMonth() === checkStart.getMonth()) && (checkDate.getDate() == checkStart.getDate()));
+          });
+          console.log(dayOfUserBlocks);
+          if (dayOfUserBlocks.length < 1) {
+            vm.activeTimeblockShares[index].conflictStatus = 'No conflicts with your current schedule.';
+          } else {
+            for (let i = 0; i < dayOfUserBlocks.length; i++) {
+              if (overlapExist(timeblock, dayOfUserBlocks[i])) {
+                conflict = true;
+              }
+            }
+            if (conflict) {
+              vm.activeTimeblockShares[index].conflictStatus = 'Currently conflicts with appointment(s) in your schedule.';
+            } else {
+              vm.activeTimeblockShares[index].conflictStatus = 'No conflicts with your current schedule.';
+            }
+          }
+        });
+      }
+
+      function timeblockShareAppointmentData (appointment, index) {
+        $http.get(`/timeblocks/${appointment.timeblock_id}`)
+        .then(timeblockData=>{
+          let userTimeblock = timeblockData.data;
+          let start = new Date(userTimeblock.start_time);
+          let end = new Date(userTimeblock.end_time);
+          $http.get(`/blocktypes/${userTimeblock.block_type}`)
+          .then(blocktypeData=>{
+            let blocktype = blocktypeData.data;
+            vm.activeTimeblockShares[index].typeName = blocktype.type;
+            vm.activeTimeblockShares[index].startTime = start.toLocaleTimeString('en-GB') + ' - ' + cleanDateHoliday(userTimeblock.start_time);
+            vm.activeTimeblockShares[index].endTime = end.toLocaleTimeString('en-GB') + ' - ' + cleanDateHoliday(userTimeblock.end_time);
+            if (userTimeblock.location !== '') {
+              vm.activeTimeblockShares[index].location = 'Location: ' + userTimeblock.location;
+            }
+            if (userTimeblock.user_notes !== '') {
+              vm.activeTimeblockShares[index].blockNotes = 'Notes: ' +  userTimeblock.user_notes;
+            }
+            if (userTimeblock.block_data !== null) {
+              vm.activeTimeblockShares[index].blockType = [];
+              vm.activeTimeblockShares[index].blockType[0] = {};
+              vm.activeTimeblockShares[index].blockType[0].key = blocktype.type + ' type:';
+              vm.activeTimeblockShares[index].blockType[0].val = blocktype.keys.meetingTypeValues[userTimeblock.block_data[blocktype.keys.keys[0]]]
+              if (blocktype.keys.keys.length > 1) {
+                for (let i = 1; i < blocktype.keys.keys.length; i++) {
+                  vm.activeTimeblockShares[index].blockType[i] = {};
+                  vm.activeTimeblockShares[index].blockType[i].key = blocktype.keys.keys[i];
+                  vm.activeTimeblockShares[index].blockType[i].val = '';
+                  for (let j = 0; j < userTimeblock.block_data[blocktype.keys.keys[i]].length; j++) {
+                    if (j > 0) {
+                      vm.activeTimeblockShares[index].blockType[i].val += ',';
+                    }
+                    vm.activeTimeblockShares[index].blockType[i].val += ' ' +  userTimeblock.block_data[blocktype.keys.keys[i]][j]
+                  }
+                }
+              }
+            }
+            determinConflictStatus(appointment, index, userTimeblock);
+          });
+        });
+      }
+
+      function retrieveUserAppointments() {
+        let check;
+        $http.get('/timeblock_shares')
+        .then(allTimeblockSharesData=>{
+          let allTimeblockShares = allTimeblockSharesData.data;
+          let userAppointments = allTimeblockShares.filter(apt=>{
+            return((apt.user_id === parseInt(currentUserId)) || (apt.share_associate_id === parseInt(currentUserId)));
+          });
+          if (userAppointments.length > 0) {
+            vm.activeTimeblockShares = [];
+            for (let i = 0; i < userAppointments.length; i++) {
+              check = new Date(userAppointments[i].updated_at);
+              vm.activeTimeblockShares[i] = {};
+              vm.activeTimeblockShares[i].id = userAppointments[i].id;
+              timeblockInviteUserData(userAppointments[i], i);
+              vm.activeTimeblockShares[i].cleanDate = cleanDateHoliday(userAppointments[i].updated_at) + ' at ' +  check.toLocaleTimeString('en-GB');
+              inviteOrInvitee(userAppointments[i], i);
+              timeblockShareAppointmentData(userAppointments[i], i);
+            }
+
+          }
+        });
+      }
+
       function retrieveUserMessages() {
         $http.get(`/users/${currentUserId}`)
         .then(userData=>{
@@ -12463,6 +12667,7 @@
             profilePhoto.setAttribute("style", "height: 7em; width: 7em; margin-left: 1.6em; margin-top: 1.2em; border: 2px solid #0000cc;");
             photoReference.setAttribute("style", "height: 10em; width: 10em; margin-left: 4.6em; margin-top: 1.2em; border: 2px solid #0000cc;");
             retrieveUserMessages();
+            retrieveUserAppointments();
           });
         }
 

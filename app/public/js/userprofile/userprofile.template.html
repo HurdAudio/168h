@@ -4925,22 +4925,36 @@
 
       </div>
       <div id="timeblockSharesNotifier">
-        <div class="whoScheduledMe">
+        <main ng-repeat="block in $ctrl.activeTimeblockShares | orderBy : $ctrl.sortBy">
+          <div class="whoScheduledMe">
 
-          <img src="https://media.licdn.com/media/AAEAAQAAAAAAAAf8AAAAJGMwZDYyMzc2LTAzOGEtNGYwOS1iMDViLTFlYjAyYjYzODIyMQ.jpg"><br>
-          <p id="timeblockShareFrom">Devin Hurd has shared the following appointment with you on 17 July 2017:</p>
-        </div><br><br><br><br><br><br>
-        <h3>Sleep</h3>
-        <h3>Start: Monday 17 July 2017 @ 6:00</h3>
-        <h3>End: Monday 17 July 2017 @ 12:00</h3>
-        <h3>No conflicts with your current schedule.</h3>
 
-        <div id="timeBlockAcceptDenyButtons">
+            <img src="{{block.inviterImg}}"><br>
+            <p id="timeblockInviter{{block.id}}">{{block.inviterName}} has shared the following appointment with you on {{block.cleanDate}}</p>
+            <p id="timeblockInvitee{{block.id}}">You invited {{block.inviteeName}} to the following appointment on {{block.cleanDate}}</p>
+          </div><br><br><br><br><br><br>
+          <h3>{{block.typeName}}</h3>
+          <h3>Start Time: {{block.startTime}}</h3>
+          <h3>End Time: {{block.endTime}}</h3>
+          <h3>{{block.location}}</h3>
+          <main ng-repeat="type in block.blockType">
+            <br>
+            <h3>{{type.key}}</h3>
+            <h3>{{type.val}}</h3>
+            <br>
+          </main>
+          <h3>{{block.blockNotes}}</h3>
+          <h3>{{block.conflictStatus}}</h3>
 
-          <a class="btn">Decline</a>
-          <a class="btn">Accept</a>
+          <div class="timeBlockAcceptDenyButtons" id="acceptDecline{{block.id}}">
+
+            <a class="btn">Decline</a>
+            <a class="btn">Accept</a>
+          </div>
+          <div id="acceptedAppointment{{block.id}}"><h3>Appointment invitation has been accepted</h3></div>
           <a href=""><h3>comment</h3></a>
-        </div><br><br><br><br><br><br><br>
+
+        </main>
         <div class="timeblockShareCommentsBar">
 
           <h1>Comments:</h1>

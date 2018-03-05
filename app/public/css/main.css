@@ -3066,11 +3066,11 @@ footer img {
   margin-top: 0.2em;
 }
 
-#timeBlockAcceptDenyButtons {
+.timeBlockAcceptDenyButtons {
   margin-left: 15vmin;
 }
 
-#timeBlockAcceptDenyButtons a {
+.timeBlockAcceptDenyButtons a {
   float:left;
   margin-right: 1.1em;
   margin-top: 0.2em;
