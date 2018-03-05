@@ -128,6 +128,8 @@ const tile_shares = require('./routes/tile_shares.js');
 const tile_sharesbyuser = require('./routes/tile_sharesbyuser.js');
 const timeblock_share_comments = require('./routes/timeblock_share_comments.js');
 const timeblock_share_commentsbyuser = require('./routes/timeblock_share_commentsbyuser.js');
+const holiday_share_comments = require('./routes/holiday_share_comments.js');
+const holiday_share_commentsbyuser = require('./routes/holiday_share_commentsbyuser.js');
 
 const port = process.env.PORT || 3007;
 
@@ -256,6 +258,8 @@ app.use(fileUpload());
  app.use('/tile_sharesbyuser', tile_sharesbyuser);
  app.use('/timeblock_share_comments', timeblock_share_comments);
  app.use('/timeblock_share_commentsbyuser', timeblock_share_commentsbyuser);
+ app.use('/holiday_share_comments', holiday_share_comments);
+ app.use('/holiday_share_commentsbyuser', holiday_share_commentsbyuser);
 
 app.get('/onthisdayinhistory/:date', (req, res, next) =>{
   let newUrl = 'http://history.muffinlabs.com/date/';
