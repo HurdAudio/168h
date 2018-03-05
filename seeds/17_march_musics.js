@@ -2920,6 +2920,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 163,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3697318837/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://negativegemini.bandcamp.com/album/body-work',
+          a_string: 'Body Work by Negative Gemini',
+          rule: {
+            "monday": [ 24, 30, 5, 13 ],
+            "tuesday": [ 28, 3, 9, 17 ],
+            "wednesday": [ 27, 2, 8, 16 ],
+            "thursday": [ 26, 1, 7, 16 ],
+            "saturday": [ 24, 31, 6, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 164,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2460167822/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://shitkid.bandcamp.com/album/this-is-it-ep',
+          a_string: 'This Is It [EP] by ShitKid',
+          rule: {
+            "monday": [ 24, 31, 6, 14 ],
+            "tuesday": [ 24, 30, 5, 13 ],
+            "wednesday": [ 28, 3, 9, 17 ],
+            "thursday": [ 27, 2, 8, 16 ],
+            "saturday": [ 26, 1, 7, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 165,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4065780068/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://shitkid.bandcamp.com/album/fish-lp',
+          a_string: 'Fish [LP] by ShitKid',
+          rule: {
+            "monday": [ 26, 1, 7, 16 ],
+            "tuesday": [ 24, 31, 6, 14 ],
+            "wednesday": [ 24, 30, 5, 13 ],
+            "thursday": [ 28, 3, 9, 17 ],
+            "saturday": [ 27, 2, 8, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
