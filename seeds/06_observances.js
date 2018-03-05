@@ -9342,6 +9342,39 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 598,
+          user_id: 1,
+          name: 'Wadada Leo Smith (trumpet) born in 1941',
+          color: '#C85802',
+          picture: './img/musicians/wadadaleosmith.jpeg',
+          day_of: new Date ('1941-12-18T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: true,
+          override_content: {
+            "sources": [ 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp' ],
+            "src_strings": [ 'https://bandcamp.com/EmbeddedPlayer/album=3239611030/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=1859384950/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=2300004674/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=2345215874/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=616088078/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=843646583/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=3578034252/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=2190264452/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=949273501/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/' ],
+            "href_strings": [ 'http://cuneiformrecords.bandcamp.com/album/americas-national-parks', 'http://cuneiformrecords.bandcamp.com/album/ten-freedom-summers-2', 'http://wadadaleosmith.bandcamp.com/album/saturn-conjunct-the-grand-canyon-in-a-sweet-embrace', 'http://wadadaleosmith.bandcamp.com/album/organic-resonance', 'http://wadadaleosmith.bandcamp.com/album/the-year-of-the-elephant', 'http://billlaswell.bandcamp.com/album/the-stone-april-22-2014-2', 'http://adamrudolph.bandcamp.com/album/compassion', 'http://intaktrec.bandcamp.com/album/wisdom-in-time', 'http://idischidiangelica.bandcamp.com/album/nessuno' ],
+            "a_strings": [ 'America&#39;s National Parks by Wadada Leo Smith', 'Ten Freedom Summers by Wadada Leo Smith', 'Saturn, Conjunct the Grand Canyon in a Sweet Embrace by Wadada Leo Smith &amp; Anthony Braxton', 'Organic Resonance by Wadada Leo Smith &amp; Anthony Braxton', 'The Year of The Elephant by Wadada Leo Smith&#39;s Golden Quartet', 'The Stone - April 22, 2014 by Wadada Leo Smith/Bill Laswell', 'Compassion by Adam Rudolph / Wadada Leo Smith', 'Wisdom in Time by Wadada Leo Smith – Günter Baby Sommer', 'Nessuno by Pauline Oliveros + Roscoe Mitchell + John Tilbury + Wadada Leo Smith' ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 599,
+          user_id: 1,
+          name: 'The world ended at 8:00am on this day in 1533 exactly as mathematician Michael Stifel predicted it would.',
+          color: '#717171',
+          picture: './img/doomsday/Michael_Stifel.jpeg',
+          day_of: new Date ('1533-10-19T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
