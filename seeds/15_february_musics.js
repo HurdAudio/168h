@@ -3028,6 +3028,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 169,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1922525339/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sunnywar.bandcamp.com/album/with-the-sun-2',
+          a_string: 'With The Sun by Sunny War',
+          rule: {
+            "monday": [ 1, 5, 7, 9 ],
+            "tuesday": [ 13, 7, 9, 15 ],
+            "wednesday": [ 25, 1, 3, 15 ],
+            "thursday": [ 26, 1, 3, 7 ],
+            "saturday": [ 29, 3, 5, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 170,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3348942646/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://solpatches.bandcamp.com/album/garden-city',
+          a_string: 'Garden City by Sol Patches',
+          rule: {
+            "monday": [ 29, 3, 5, 9 ],
+            "tuesday": [ 1, 5, 7, 9 ],
+            "wednesday": [ 13, 7, 9, 15 ],
+            "thursday": [ 25, 1, 3, 15 ],
+            "saturday": [ 26, 1, 3, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 171,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4195136961/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://miloraps.bandcamp.com/album/sovereign-nose-of-y-our-arrogant-face',
+          a_string: 'sovereign nose of (y)our arrogant face by scallops hotel',
+          rule: {
+            "monday": [ 26, 1, 3, 7 ],
+            "tuesday": [ 29, 3, 5, 9 ],
+            "wednesday": [ 1, 5, 7, 9 ],
+            "thursday": [ 13, 7, 9, 15 ],
+            "saturday": [ 25, 1, 3, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
