@@ -5904,6 +5904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 296,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/message-mensaje-1967.jpg',
+          title: 'Message (Mensaje)',
+          artist: 'Mathias Goeritz',
+          year: '1967',
+          rule: {
+            "monday": [ 15, 17, 9, 29 ],
+            "tuesday": [ 17, 18, 10, 13 ],
+            "wednesday": [ 20, 21, 12, 16 ],
+            "thursday": [ 23, 25, 26, 28 ],
+            "friday": [ 25, 27, 31, 3 ],
+            "saturday": [ 27, 29, 30, 2 ],
+            "sunday": [ 12, 13, 24, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 297,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/l-homme-1966.jpg',
+          title: 'L\'homme',
+          artist: 'Marcelle Cahn',
+          year: '1966',
+          rule: {
+            "monday": [ 12, 13, 24, 16 ],
+            "tuesday": [ 15, 17, 9, 29 ],
+            "wednesday": [ 17, 18, 10, 13 ],
+            "thursday": [ 20, 21, 12, 16 ],
+            "friday": [ 23, 25, 26, 28 ],
+            "saturday": [ 25, 27, 31, 3 ],
+            "sunday": [ 27, 29, 30, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 298,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/untitled-no-11a-1958.jpg',
+          title: 'Untitled, No. 11a',
+          artist: 'Forrest Bess',
+          year: '1958',
+          rule: {
+            "monday": [ 27, 29, 30, 2 ],
+            "tuesday": [ 12, 13, 24, 16 ],
+            "wednesday": [ 15, 17, 9, 29 ],
+            "thursday": [ 17, 18, 10, 13 ],
+            "friday": [ 20, 21, 12, 16 ],
+            "saturday": [ 23, 25, 26, 28 ],
+            "sunday": [ 25, 27, 31, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 299,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/kasseler-serie-2000.jpg',
+          title: 'Kasseler Serie',
+          artist: 'Gunther Forg',
+          year: '2000',
+          rule: {
+            "monday": [ 25, 27, 31, 3 ],
+            "tuesday": [ 27, 29, 30, 2 ],
+            "wednesday": [ 12, 13, 24, 16 ],
+            "thursday": [ 15, 17, 9, 29 ],
+            "friday": [ 17, 18, 10, 13 ],
+            "saturday": [ 20, 21, 12, 16 ],
+            "sunday": [ 23, 25, 26, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 300,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/ecriture-no-051128-2005.jpg',
+          title: 'Ecriture No. 051128',
+          artist: 'Park Seo-Bo',
+          year: '2005',
+          rule: {
+            "monday": [ 23, 25, 26, 28 ],
+            "tuesday": [ 25, 27, 31, 3 ],
+            "wednesday": [ 27, 29, 30, 2 ],
+            "thursday": [ 12, 13, 24, 16 ],
+            "friday": [ 15, 17, 9, 29 ],
+            "saturday": [ 17, 18, 10, 13 ],
+            "sunday": [ 20, 21, 12, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
