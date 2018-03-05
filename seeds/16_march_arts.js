@@ -5504,6 +5504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 276,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/may-1965.jpg',
+          title: 'May',
+          artist: 'Tetyana Yablonska',
+          year: '1965',
+          rule: {
+            "monday": [ 2, 12, 21, 30 ],
+            "tuesday": [ 8, 17, 27, 4 ],
+            "wednesday": [ 7, 17, 27, 4 ],
+            "thursday": [ 7, 16, 24, 3 ],
+            "friday": [ 5, 15, 23, 2 ],
+            "saturday": [ 4, 14, 22, 1 ],
+            "sunday": [ 3, 13, 21, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 277,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/night-landings-sambura-1970.jpg',
+          title: 'Night Landings: Sambura',
+          artist: 'Jane Frank',
+          year: '1970',
+          rule: {
+            "monday": [ 3, 13, 21, 31 ],
+            "tuesday": [ 2, 12, 21, 30 ],
+            "wednesday": [ 8, 17, 27, 4 ],
+            "thursday": [ 7, 17, 27, 4 ],
+            "friday": [ 7, 16, 24, 3 ],
+            "saturday": [ 5, 15, 23, 2 ],
+            "sunday": [ 4, 14, 22, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 278,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/composition-ii-1955.jpg',
+          title: 'Composition II',
+          artist: 'Huguette Arthur Bertrand',
+          year: '1955',
+          rule: {
+            "monday": [ 4, 14, 22, 1 ],
+            "tuesday": [ 3, 13, 21, 31 ],
+            "wednesday": [ 2, 12, 21, 30 ],
+            "thursday": [ 8, 17, 27, 4 ],
+            "friday": [ 7, 17, 27, 4 ],
+            "saturday": [ 7, 16, 24, 3 ],
+            "sunday": [ 5, 15, 23, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 279,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/remember-no-5-1999.jpg',
+          title: 'Remember No. 5',
+          artist: 'Anne Truitt',
+          year: '1999',
+          rule: {
+            "monday": [ 5, 15, 23, 2 ],
+            "tuesday": [ 4, 14, 22, 1 ],
+            "wednesday": [ 3, 13, 21, 31 ],
+            "thursday": [ 2, 12, 21, 30 ],
+            "friday": [ 8, 17, 27, 4 ],
+            "saturday": [ 7, 17, 27, 4 ],
+            "sunday": [ 7, 16, 24, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 280,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/nudist-lady-with-swan-sunglasses-pa-1965-diane-arbus-courtesy-of-peder-lund.jpg',
+          title: 'Nudist Lady with Swan Sunglasses',
+          artist: 'Diane Arbus',
+          year: '1965',
+          rule: {
+            "monday": [ 8, 17, 25, 4 ],
+            "tuesday": [ 6, 16, 24, 3 ],
+            "wednesday": [ 5, 15, 23, 2 ],
+            "thursday": [ 4, 14, 22, 1 ],
+            "friday": [ 3, 13, 22, 31 ],
+            "saturday": [ 9, 18, 28, 5 ],
+            "sunday": [ 8, 18, 28, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
