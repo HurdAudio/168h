@@ -2969,10 +2969,10 @@ footer img {
   font-size: 18px;
 }
 
-#whoScheduledMe p {
+.whoScheduledMe p {
   margin-left: 22vmin;
   margin-top: -11vmin;
-  float: right;
+  float: left;
 }
 
 
@@ -7242,6 +7242,19 @@ footer img {
   background: -o-linear-gradient(135deg, #22ac44, #abdada);
   background: -moz-linear-gradient(135deg, #22ac44, #abdada);
   background: linear-gradient(135deg, #22ac44, #abdada);
+  border-radius: 5px;
+  height: 3em;
+  padding-left: 2vmin;
+}
+
+.timeblockShareCommentsBar {
+  font-family: 'Asul', serif;
+  font-size: 18px
+  background: #19262E;
+  background-color: -webkit-linear-gradient(135deg, #19262E, #abdada);
+  background: -o-linear-gradient(135deg, #19262E, #abdada);
+  background: -moz-linear-gradient(135deg, #19262E, #abdada);
+  background: linear-gradient(135deg, #19262E, #abdada);
   border-radius: 5px;
   height: 3em;
   padding-left: 2vmin;
