@@ -3136,6 +3136,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 175,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'http://bandcamp.com/EmbeddedPlayer/album=2951496190/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://recordings.irritablehedgehog.com/album/inner-monologues-venn-diagram-of-six-pitches',
+          a_string: 'Inner Monologues (Venn Diagram of Six Pitches) by R. Andrew Lee',
+          rule: {
+            "monday": [ 31, 7, 8, 9 ],
+            "tuesday": [ 4, 11, 12, 13 ],
+            "wednesday": [ 3, 10, 11, 12 ],
+            "thursday": [ 2, 9, 10, 11 ],
+            "saturday": [ 1, 7, 8, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 176,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'http://bandcamp.com/EmbeddedPlayer/album=3581088232/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://recordings.irritablehedgehog.com/album/buch-der-r-ume-und-zeiten',
+          a_string: 'Buch der Räume und Zeiten by Jürg Frey',
+          rule: {
+            "monday": [ 1, 7, 8, 9 ],
+            "tuesday": [ 31, 7, 8, 9 ],
+            "wednesday": [ 4, 11, 12, 13 ],
+            "thursday": [ 3, 10, 11, 12 ],
+            "saturday": [ 2, 9, 10, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 177,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'http://bandcamp.com/EmbeddedPlayer/album=1993253100/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://recordings.irritablehedgehog.com/album/eighty-trips-around-the-sun-music-by-and-for-terry-riley',
+          a_string: 'Eighty Trips Around the Sun: Music by and for Terry Riley by Sarah Cahill',
+          rule: {
+            "monday": [ 2, 9, 10, 11 ],
+            "tuesday": [ 1, 7, 8, 9 ],
+            "wednesday": [ 31, 7, 8, 9 ],
+            "thursday": [ 4, 11, 12, 13 ],
+            "saturday": [ 3, 10, 11, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
