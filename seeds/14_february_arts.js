@@ -5704,6 +5704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 286,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/180212113917-special-cut-michelle-obama-portrait-exlarge-169.jpg',
+          title: 'Michelle Obama Official Portrait',
+          artist: 'Kehinde Wiley',
+          year: '2018',
+          rule: {
+            "monday": [ 17, 25, 4, 12 ],
+            "tuesday": [ 19, 29, 6, 12 ],
+            "wednesday": [ 21, 29, 8, 18 ],
+            "thursday": [ 21, 2, 27, 17 ],
+            "friday": [ 11, 19, 27, 6 ],
+            "saturday": [ 13, 21, 29, 8 ],
+            "sunday": [ 18, 23, 29, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 287,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/180212113953-special-cut-barack-obama-portrait-exlarge-169.jpg',
+          title: 'Barack Obama Official Portrait',
+          artist: 'Kehinde Wiley',
+          year: '2018',
+          rule: {
+            "monday": [ 19, 24, 1, 11 ],
+            "tuesday": [ 18, 26, 5, 13 ],
+            "wednesday": [ 20, 1, 7, 13 ],
+            "thursday": [ 22, 1, 9, 19 ],
+            "friday": [ 22, 3, 28, 18 ],
+            "saturday": [ 12, 20, 28, 7 ],
+            "sunday": [ 14, 22, 1, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 288,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/41e62569d2e7536f410602b4d6834d97--strong-female-strong-black-woman.jpg',
+          title: 'Strong Black Woman',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 14, 22, 1, 9 ],
+            "tuesday": [ 19, 24, 1, 11 ],
+            "wednesday": [ 18, 26, 5, 13 ],
+            "thursday": [ 20, 1, 7, 13 ],
+            "friday": [ 22, 1, 9, 19 ],
+            "saturday": [ 22, 3, 28, 18 ],
+            "sunday": [ 12, 20, 28, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 289,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/fa8 William H. Johnson (American artist, 1901-1970) Sowing 1940-42.jpg',
+          title: 'Sowing',
+          artist: 'William H. Johnson',
+          year: '1940 - 1942',
+          rule: {
+            "monday": [ 12, 20, 28, 7 ],
+            "tuesday": [ 14, 22, 1, 9 ],
+            "wednesday": [ 19, 24, 1, 11 ],
+            "thursday": [ 18, 26, 5, 13 ],
+            "friday": [ 20, 1, 7, 13 ],
+            "saturday": [ 22, 1, 9, 19 ],
+            "sunday": [ 22, 3, 28, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 290,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/beardon3.jpg',
+          title: 'Collage Art',
+          artist: 'Romare Bearden',
+          year: '?',
+          rule: {
+            "monday": [ 22, 3, 28, 18 ],
+            "tuesday": [ 12, 20, 28, 7 ],
+            "wednesday":  [ 14, 22, 1, 9 ],
+            "thursday": [ 19, 24, 1, 11 ],
+            "friday": [ 18, 26, 5, 13 ],
+            "saturday": [ 20, 1, 7, 13 ],
+            "sunday": [ 22, 1, 9, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
