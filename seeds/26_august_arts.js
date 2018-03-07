@@ -4604,6 +4604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 231,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/hyacinth-1927.jpg',
+          title: 'Hyacinth',
+          artist: 'Koshiro Onchi',
+          year: '1927',
+          rule: {
+            "monday": [ 4, 8, 16, 1 ],
+            "tuesday": [ 3, 7, 15, 31 ],
+            "wednesday": [ 2, 4, 14, 30 ],
+            "thursday": [ 1, 4, 13, 29 ],
+            "friday": [ 31, 3, 12, 28 ],
+            "saturday": [ 6, 10, 18, 3 ],
+            "sunday": [ 5, 8, 17, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 232,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/claudia-girls.jpg',
+          title: 'Claudia Girls',
+          artist: 'Jose Gutierrez Solana',
+          year: '1929',
+          rule: {
+            "monday": [ 5, 8, 17, 2 ],
+            "tuesday": [ 4, 8, 16, 1 ],
+            "wednesday": [ 3, 7, 15, 31 ],
+            "thursday": [ 2, 4, 14, 30 ],
+            "friday": [ 1, 4, 13, 29 ],
+            "saturday": [ 31, 3, 12, 28 ],
+            "sunday": [ 6, 10, 18, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 233,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/landscape-1912.jpg',
+          title: 'Landscape',
+          artist: 'Amadeo de Souza-Cardoso',
+          year: '1912',
+          rule: {
+            "monday": [ 6, 10, 18, 3 ],
+            "tuesday": [ 5, 8, 17, 2 ],
+            "wednesday": [ 4, 8, 16, 1 ],
+            "thursday": [ 3, 7, 15, 31 ],
+            "friday": [ 2, 4, 14, 30 ],
+            "saturday": [ 1, 4, 13, 29 ],
+            "sunday": [ 31, 3, 12, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 234,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/in-powder-and-crinoline-1912.jpg',
+          title: 'In Powder and Crinoline',
+          artist: 'Kay Nielsen',
+          year: '1912',
+          rule: {
+            "monday": [ 31, 3, 12, 28 ],
+            "tuesday": [ 6, 10, 18, 3 ],
+            "wednesday": [ 5, 8, 17, 2 ],
+            "thursday": [ 4, 8, 16, 1 ],
+            "friday": [ 3, 7, 15, 31 ],
+            "saturday": [ 2, 4, 14, 30 ],
+            "sunday": [ 1, 4, 13, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 235,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/the-surrender-of-barcelona-1937.jpg',
+          title: 'The Surrender of Barcelona',
+          artist: 'Wyndham Lewis',
+          year: '1937',
+          rule: {
+            "monday": [ 1, 4, 13, 29 ],
+            "tuesday": [ 31, 3, 12, 28 ],
+            "wednesday": [ 6, 10, 18, 3 ],
+            "thursday": [ 5, 8, 17, 2 ],
+            "friday": [ 4, 8, 16, 1 ],
+            "saturday": [ 3, 7, 15, 31 ],
+            "sunday": [ 2, 4, 14, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
