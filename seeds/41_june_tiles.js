@@ -438,6 +438,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#F0E8DD',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 32,
+          user_id: 1,
+          theme: 'Light',
+          type: 'holiday',
+          src_string: '../img/june_tiles/fractal-1782165_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '130%',
+          color_dark: '#050912',
+          color_medium: '#809111',
+          color_light: '#FFEE67',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
