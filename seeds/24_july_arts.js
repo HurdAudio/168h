@@ -4804,6 +4804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 241,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/woman-with-mandolin-1828.jpg',
+          title: 'Woman with Mandolin',
+          artist: 'Camille Corot',
+          year: '1826 - 1828',
+          rule: {
+            "monday": [ 31, 11, 22, 2 ],
+            "tuesday": [ 6, 17, 28, 7 ],
+            "wednesday": [ 5, 16, 27, 7 ],
+            "thursday": [ 4, 15, 26, 6 ],
+            "friday": [ 3, 14, 25, 26 ],
+            "saturday": [ 2, 13, 23, 25 ],
+            "sunday": [ 1, 12, 23, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 242,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/a-row-of-calvarymen-on-horseback(1).jpg',
+          title: 'A Row of Calvarymen on Horseback',
+          artist: 'Horace Vernet',
+          year: '?',
+          rule: {
+            "monday": [ 1, 12, 23, 24 ],
+            "tuesday": [ 31, 11, 22, 2 ],
+            "wednesday": [ 6, 17, 28, 7 ],
+            "thursday": [ 5, 16, 27, 7 ],
+            "friday": [ 4, 15, 26, 6 ],
+            "saturday": [ 3, 14, 25, 26 ],
+            "sunday": [ 2, 13, 23, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 243,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/joan-of-arc-on-corronation-of-charles-vii-in-the-cathedral-of-reims.jpg',
+          title: 'Joan of Arc on Corronation of Charles VII in the Cathedral of Reims',
+          artist: 'Jean Auguste Dominique Ingres',
+          year: '1854',
+          rule: {
+            "monday": [ 2, 13, 23, 25 ],
+            "tuesday": [ 1, 12, 23, 24 ],
+            "wednesday": [ 31, 11, 22, 2 ],
+            "thursday": [ 6, 17, 28, 7 ],
+            "friday": [ 5, 16, 27, 7 ],
+            "saturday": [ 4, 15, 26, 6 ],
+            "sunday": [ 3, 14, 25, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 244,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/une-tude-de-femme-d-apr-s-nature-portrait-de-madame-soustras.jpg',
+          title: 'Une étude de femme d\'après nature (Portrait de Madame Soustras)',
+          artist: 'Marie-Denise Villers',
+          year: '?',
+          rule: {
+            "monday": [ 3, 14, 25, 26 ],
+            "tuesday": [ 2, 13, 23, 25 ],
+            "wednesday": [ 1, 12, 23, 24 ],
+            "thursday": [ 31, 11, 22, 2 ],
+            "friday": [ 6, 17, 28, 7 ],
+            "saturday": [ 5, 16, 27, 7 ],
+            "sunday": [ 4, 15, 26, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 245,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/mademoiselle-lange-as-venus-1798(1).jpg',
+          title: 'Mademoiselle Lange as Venus',
+          artist: 'Anne-Louis Girodet',
+          year: '1798',
+          rule: {
+            "monday": [ 5, 16, 27, 7 ],
+            "tuesday": [ 4, 15, 26, 27 ],
+            "wednesday": [ 3, 14, 24, 26 ],
+            "thursday": [ 2, 13, 24, 25 ],
+            "friday": [ 1, 12, 23, 3 ],
+            "saturday": [ 7, 18, 29, 8 ],
+            "sunday": [ 6, 17, 28, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
