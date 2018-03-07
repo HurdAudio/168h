@@ -2542,6 +2542,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 142,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=422466136/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://dabrye.bandcamp.com/album/instrmntl',
+          a_string: 'Instrmntl by Dabrye',
+          rule: {
+            "monday": [ 21, 23, 27, 4 ],
+            "tuesday": [ 20, 22, 26, 3 ],
+            "wednesday": [ 19, 20, 25, 2 ],
+            "thursday": [ 18, 20, 24, 1 ],
+            "saturday": [ 22, 24, 28, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 143,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=166268310/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://shigeto.bandcamp.com/album/the-new-monday',
+          a_string: 'The New Monday by SHIGETO',
+          rule: {
+            "monday": [ 22, 24, 28, 5 ],
+            "tuesday": [ 21, 23, 27, 4 ],
+            "wednesday": [ 20, 22, 26, 3 ],
+            "thursday": [ 19, 20, 25, 2 ],
+            "saturday": [ 18, 20, 24, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 144,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3434285227/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://blackmarble.bandcamp.com/album/its-immaterial',
+          a_string: 'It&#39;s Immaterial by Black Marble',
+          rule: {
+            "monday": [ 18, 20, 24, 1 ],
+            "tuesday": [ 22, 24, 28, 5 ],
+            "wednesday": [ 21, 23, 27, 4 ],
+            "thursday": [ 20, 22, 26, 3 ],
+            "saturday": [ 19, 20, 25, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
