@@ -5604,6 +5604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 281,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/master-of-ceremonies-1985.jpg',
+          title: 'Master of Ceremonies',
+          artist: 'Miriam Schapiro',
+          year: '1985',
+          rule: {
+            "monday": [ 8, 18, 28, 5 ],
+            "tuesday": [ 8, 17, 25, 4 ],
+            "wednesday": [ 6, 16, 24, 3 ],
+            "thursday": [ 5, 15, 23, 2 ],
+            "friday": [ 4, 14, 22, 1 ],
+            "saturday": [ 3, 13, 22, 31 ],
+            "sunday": [ 9, 18, 28, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 282,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/untitled-1953.jpg',
+          title: 'Untitled',
+          artist: 'Mimi Parent',
+          year: '1953',
+          rule: {
+            "monday": [ 9, 18, 28, 5 ],
+            "tuesday": [ 8, 18, 28, 5 ],
+            "wednesday": [ 8, 17, 25, 4 ],
+            "thursday": [ 6, 16, 24, 3 ],
+            "friday": [ 5, 15, 23, 2 ],
+            "saturday": [ 4, 14, 22, 1 ],
+            "sunday": [ 3, 13, 22, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 283,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/ladybug-1957.jpg',
+          title: 'Ladybug',
+          artist: 'Joan Mitchell',
+          year: '1957',
+          rule: {
+            "monday": [ 3, 13, 22, 31 ],
+            "tuesday": [ 9, 18, 28, 5 ],
+            "wednesday": [ 8, 18, 28, 5 ],
+            "thursday": [ 8, 17, 25, 4 ],
+            "friday": [ 6, 16, 24, 3 ],
+            "saturday": [ 5, 15, 23, 2 ],
+            "sunday": [ 4, 14, 22, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 284,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/tension-1956.jpg',
+          title: 'Tension',
+          artist: 'Martha Boto',
+          year: '1956',
+          rule: {
+            "monday": [ 4, 14, 22, 1 ],
+            "tuesday": [ 3, 13, 22, 31 ],
+            "wednesday": [ 9, 18, 28, 5 ],
+            "thursday": [ 8, 18, 28, 5 ],
+            "friday": [ 8, 17, 25, 4 ],
+            "saturday": [ 6, 16, 24, 3 ],
+            "sunday": [ 5, 15, 23, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 285,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/los-angeles-man-with-hat-from-behind-1955.jpg',
+          title: 'Los Angeles (Man with Hat from Behind)',
+          artist: 'Vivian Maier',
+          year: '1955',
+          rule: {
+            "monday": [ 5, 15, 23, 2 ],
+            "tuesday": [ 4, 14, 22, 1 ],
+            "wednesday": [ 3, 13, 22, 31 ],
+            "thursday": [ 9, 18, 28, 5 ],
+            "friday": [ 8, 18, 28, 5 ],
+            "saturday": [ 8, 17, 25, 4 ],
+            "sunday": [ 6, 16, 24, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
