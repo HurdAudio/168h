@@ -2650,6 +2650,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 148,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=857075846/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://carolinemckenzie.bandcamp.com/album/interior-exterior',
+          a_string: 'interior/exterior by Caroline McKenzie',
+          rule: {
+            "monday": [ 18, 26, 28, 9 ],
+            "tuesday": [ 22, 26, 2, 13 ],
+            "wednesday": [ 21, 24, 29, 11 ],
+            "thursday": [ 20, 24, 29, 11 ],
+            "saturday": [ 20, 23, 29, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 149,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2102278697/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://carolinemckenzie.bandcamp.com/album/the-drowning-of-ophelia',
+          a_string: 'the drowning of ophelia by Caroline McKenzie',
+          rule: {
+            "monday": [ 20, 23, 29, 10 ],
+            "tuesday": [ 18, 26, 28, 9 ],
+            "wednesday": [ 22, 26, 2, 13 ],
+            "thursday": [ 21, 24, 29, 11 ],
+            "saturday": [ 20, 24, 29, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 150,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3267038252/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://carolinemckenzie.bandcamp.com/album/red-snow',
+          a_string: 'red snow by Caroline McKenzie',
+          rule: {
+            "monday": [ 20, 24, 29, 11 ],
+            "tuesday": [ 20, 23, 29, 10 ],
+            "wednesday": [ 18, 26, 28, 9 ],
+            "thursday": [ 22, 26, 2, 13 ],
+            "saturday": [ 21, 24, 29, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
