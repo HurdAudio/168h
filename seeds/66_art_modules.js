@@ -364,6 +364,66 @@ exports.seed = function(knex, Promise) {
           public: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 31,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/To-infinity-and-beyond.jpeg',
+          title: 'To Infinity and Beyond',
+          artist: '?',
+          year: '2011',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 32,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/A-Cats-Life.jpeg',
+          title: 'A Cat\'s Life',
+          artist: '?',
+          year: '2011',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 33,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/Simon-av-Flamingo.jpg',
+          title: 'Simon av Flamingo',
+          artist: '?',
+          year: '2011',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 34,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/Guggugg.jpg',
+          title: 'CutestPaw Editorial:',
+          artist: '?',
+          year: '2011',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 35,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/Kitty-Coat.jpg',
+          title: 'Kitty Coat',
+          artist: '?',
+          year: '2011',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
