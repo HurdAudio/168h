@@ -6004,6 +6004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 301,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/untitled-1964-1.jpg',
+          title: 'Untitled',
+          artist: 'Gotthard Graubner',
+          year: '1964',
+          rule: {
+            "monday": [ 21, 22, 13, 17 ],
+            "tuesday": [ 24, 26, 27, 29 ],
+            "wednesday": [ 26, 28, 1, 4 ],
+            "thursday": [ 28, 30, 31, 3 ],
+            "friday": [ 13, 14, 25, 17 ],
+            "saturday": [ 16, 18, 10, 30 ],
+            "sunday": [ 18, 19, 11, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 302,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/river-avon-mud-drawing-1983.jpg',
+          title: 'River Avon mud drawing',
+          artist: 'Richard Long',
+          year: '1983',
+          rule: {
+            "monday": [ 18, 19, 11, 14 ],
+            "tuesday": [ 21, 22, 13, 17 ],
+            "wednesday": [ 24, 26, 27, 29 ],
+            "thursday": [ 26, 28, 1, 4 ],
+            "friday": [ 28, 30, 31, 3 ],
+            "saturday": [ 13, 14, 25, 17 ],
+            "sunday": [ 16, 18, 10, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 303,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/unknown-title-1.jpg',
+          title: 'unknown title',
+          artist: 'Constantin Blendea',
+          year: 'XX - XXI cent.',
+          rule: {
+            "monday": [ 16, 18, 10, 30 ],
+            "tuesday": [ 18, 19, 11, 14 ],
+            "wednesday": [ 21, 22, 13, 17 ],
+            "thursday": [ 24, 26, 27, 29 ],
+            "friday": [ 26, 28, 1, 4 ],
+            "saturday": [ 28, 30, 31, 3 ],
+            "sunday": [ 13, 14, 25, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 304,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/imagen-obsesiva-1962.jpg',
+          title: 'Imagen Obsesiva',
+          artist: 'Gunther Gerzso',
+          year: '1962',
+          rule: {
+            "monday": [ 13, 14, 25, 17 ],
+            "tuesday": [ 16, 18, 10, 30 ],
+            "wednesday": [ 18, 19, 11, 14 ],
+            "thursday": [ 21, 22, 13, 17 ],
+            "friday": [ 24, 26, 27, 29 ],
+            "saturday": [ 26, 28, 1, 4 ],
+            "sunday": [ 28, 30, 31, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 305,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/garland-1962.jpg',
+          title: 'Garland',
+          artist: 'Jeremy Moon',
+          year: '1962',
+          rule: {
+            "monday": [ 28, 30, 31, 3 ],
+            "tuesday": [ 13, 14, 25, 17 ],
+            "wednesday": [ 16, 18, 10, 30 ],
+            "thursday": [ 18, 19, 11, 14 ],
+            "friday": [ 21, 22, 13, 17 ],
+            "saturday": [ 24, 26, 27, 29 ],
+            "sunday": [ 26, 28, 1, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
