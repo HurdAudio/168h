@@ -3082,6 +3082,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 172,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=553053425/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://genesiselijah.bandcamp.com/album/how-to-lose-fans-and-alienate-listeners',
+          a_string: 'How To Lose Fans And Alienate Listeners by Genesis Elijah',
+          rule: {
+            "monday": [ 25, 1, 3, 15 ],
+            "tuesday": [ 26, 1, 3, 7 ],
+            "wednesday": [ 29, 3, 5, 9 ],
+            "thursday": [ 1, 5, 7, 9 ],
+            "saturday": [ 13, 7, 9, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 173,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2817252890/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://belowsystem.bandcamp.com/album/passover',
+          a_string: 'PassOver by Chuuwee &amp; Khalisol',
+          rule: {
+            "monday": [ 13, 7, 9, 15 ],
+            "tuesday": [ 25, 1, 3, 15 ],
+            "wednesday": [ 26, 1, 3, 7 ],
+            "thursday": [ 29, 3, 5, 9 ],
+            "saturday": [ 1, 5, 7, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 174,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=365667133/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://omarcredle.bandcamp.com/album/a-new-dawn-2nd-phase',
+          a_string: 'A New Dawn: 2nd Phase by O.C.',
+          rule: {
+            "monday": [ 1, 5, 7, 9 ],
+            "tuesday": [ 13, 7, 9, 15 ],
+            "wednesday": [ 25, 1, 3, 15 ],
+            "thursday": [ 26, 1, 3, 7 ],
+            "saturday": [ 29, 3, 5, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
