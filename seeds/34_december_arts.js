@@ -3804,6 +3804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 191,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/39-12,NationalSportsman.jpg',
+          title: 'Nat\'l Sportsman',
+          artist: 'George Klein',
+          year: '1939',
+          rule: {
+            "monday": [ 31, 13, 21, 27 ],
+            "tuesday": [ 30, 12, 20, 26 ],
+            "wednesday": [ 29, 11, 19, 25 ],
+            "thursday": [ 28, 10, 18, 24 ],
+            "friday": [ 27, 9, 17, 23 ],
+            "saturday": [ 26, 7, 16, 22 ],
+            "sunday": [ 25, 7, 26, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 192,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/38-06,Yearbook.jpg',
+          title: 'High School Yearbook',
+          artist: 'Arnold Kohn',
+          year: '1938',
+          rule: {
+            "monday": [ 25, 7, 26, 21 ],
+            "tuesday": [ 31, 13, 21, 27 ],
+            "wednesday": [ 30, 12, 20, 26 ],
+            "thursday": [ 29, 11, 19, 25 ],
+            "friday": [ 28, 10, 18, 24 ],
+            "saturday": [ 27, 9, 17, 23 ],
+            "sunday": [ 26, 7, 16, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 193,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/39-07,Secrets.jpg',
+          title: 'Secrets',
+          artist: 'Ilo Kopland',
+          year: '1939',
+          rule: {
+            "monday": [ 26, 7, 16, 22 ],
+            "tuesday": [ 25, 7, 26, 21 ],
+            "wednesday": [ 31, 13, 21, 27 ],
+            "thursday": [ 30, 12, 20, 26 ],
+            "friday": [ 29, 11, 19, 25 ],
+            "saturday": [ 28, 10, 18, 24 ],
+            "sunday": [ 27, 9, 17, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 194,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/36-12-15,SptS1.jpg',
+          title: 'Sports Story',
+          artist: 'Frank Kramer',
+          year: '1936',
+          rule: {
+            "monday": [ 27, 9, 17, 23 ],
+            "tuesday": [ 26, 7, 16, 22 ],
+            "wednesday": [ 25, 7, 26, 21 ],
+            "thursday": [ 31, 13, 21, 27 ],
+            "friday": [ 30, 12, 20, 26 ],
+            "saturday": [ 29, 11, 19, 25 ],
+            "sunday": [ 28, 10, 18, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 195,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/40-02,StrangeS2.jpg',
+          title: 'Strange Stories',
+          artist: 'Warren Kremer',
+          year: '1940',
+          rule: {
+            "monday": [ 28, 10, 18, 24 ],
+            "tuesday": [ 27, 9, 17, 23 ],
+            "wednesday": [ 26, 7, 16, 22 ],
+            "thursday": [ 25, 7, 26, 21 ],
+            "friday": [ 31, 13, 21, 27 ],
+            "saturday": [ 30, 12, 20, 26 ],
+            "sunday": [ 29, 11, 19, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
