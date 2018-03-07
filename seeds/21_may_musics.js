@@ -2758,6 +2758,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 154,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2780305891/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://recollectiongrm.bandcamp.com/album/s-t',
+          a_string: 's/t by Jaap Vink',
+          rule: {
+            "monday": [ 24, 30, 6, 19 ],
+            "tuesday": [ 23, 29, 5, 18 ],
+            "wednesday": [ 27, 3, 9, 22 ],
+            "thursday": [ 26, 1, 8, 21 ],
+            "saturday": [ 25, 31, 7, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 155,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3563570953/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://catchwaveltd.bandcamp.com/album/first-meeting',
+          a_string: 'First Meeting by Dominique Lawalree',
+          rule: {
+            "monday": [ 25, 31, 7, 20 ],
+            "tuesday": [ 24, 30, 6, 19 ],
+            "wednesday": [ 23, 29, 5, 18 ],
+            "thursday": [ 27, 3, 9, 22 ],
+            "saturday": [ 26, 1, 8, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 156,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1025449413/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://quatuorbozzini-actuellecd.bandcamp.com/album/christopher-butterfield-trip',
+          a_string: 'Christopher Butterfield: Trip by Quatuor Bozzini',
+          rule: {
+            "monday": [ 26, 1, 8, 21 ],
+            "tuesday": [ 25, 31, 7, 20 ],
+            "wednesday": [ 24, 30, 6, 19 ],
+            "thursday": [ 23, 29, 5, 18 ],
+            "saturday": [ 27, 3, 9, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
