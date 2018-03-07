@@ -2326,6 +2326,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 130,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1913451900/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://moebius-official.bandcamp.com/album/blotch-remastered',
+          a_string: 'Blotch (Remastered) by Moebius',
+          rule: {
+            "monday": [ 21, 11, 19, 14 ],
+            "tuesday": [ 20, 10, 18, 12 ],
+            "wednesday": [ 19, 9, 17, 11 ],
+            "thursday": [ 23, 13, 21, 15 ],
+            "saturday": [ 22, 12, 20, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 131,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3813390335/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://moebius-official.bandcamp.com/album/ding',
+          a_string: 'Ding by Moebius',
+          rule: {
+            "monday": [ 22, 12, 20, 14 ],
+            "tuesday": [ 21, 11, 19, 14 ],
+            "wednesday": [ 20, 10, 18, 12 ],
+            "thursday": [ 19, 9, 17, 11 ],
+            "saturday": [ 23, 13, 21, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 132,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3015400796/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://moebius-official.bandcamp.com/album/kram',
+          a_string: 'Kram by Moebius',
+          rule: {
+            "monday": [ 23, 13, 21, 15 ],
+            "tuesday": [ 22, 12, 20, 14 ],
+            "wednesday": [ 21, 11, 19, 14 ],
+            "thursday": [ 20, 10, 18, 12 ],
+            "saturday": [ 19, 9, 17, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
