@@ -213,6 +213,45 @@
       vm.addNewTiles = addNewTiles;
       vm.musicCurratorReport = musicCurratorReport;
       vm.musicCurratorReportDone = musicCurratorReportDone;
+      vm.userEditComment = userEditComment;
+      vm.userEditCommentCompleted = userEditCommentCompleted;
+
+      function userEditCommentCompleted(commentId) {
+        console.log(commentId);
+        let thisIsTheCommentEditor = document.getElementById('thisIsTheCommentEditor' + commentId);
+        let thisIsTheComment = document.getElementById('thisIsTheComment' + commentId);
+        let thisIsCommentEditDoneDiv = document.getElementById('thisIsCommentEditDoneDiv' + commentId);
+        let editDeleteUserComments = document.getElementById('editDeleteUserComments' + commentId);
+        let subObj = {
+          comment: thisIsTheCommentEditor.value
+        };
+        $http.patch(`/comments/${commentId}`, subObj)
+        .then(commentData=>{
+          let comment = commentData.data;
+          console.log(comment);
+          thisIsTheComment.innerHTML = comment.comment;
+          thisIsTheComment.setAttribute("style", "visibility: visible;");
+          thisIsTheCommentEditor.setAttribute("style", "display: none;");
+          thisIsCommentEditDoneDiv.setAttribute("style", "display: none;");
+          editDeleteUserComments.setAttribute("style", "display: initial;");
+        });
+
+
+
+      }
+
+      function userEditComment(commentId) {
+        let thisIsTheCommentEditor = document.getElementById('thisIsTheCommentEditor' + commentId);
+        let thisIsTheComment = document.getElementById('thisIsTheComment' + commentId);
+        let thisIsCommentEditDoneDiv = document.getElementById('thisIsCommentEditDoneDiv' + commentId);
+        let editDeleteUserComments = document.getElementById('editDeleteUserComments' + commentId);
+
+        thisIsTheCommentEditor.value = thisIsTheComment.innerHTML;
+        thisIsTheCommentEditor.setAttribute("style", "display: initial;");
+        thisIsTheComment.setAttribute("style", "visibility: hidden;");
+        thisIsCommentEditDoneDiv.setAttribute("style", "display: initial;");
+        editDeleteUserComments.setAttribute("style", "display: none;");
+      }
 
       function musicCurratorReportDone() {
         let reportForMusicsCurrator = document.getElementById('reportForMusicsCurrator');
@@ -12349,6 +12388,25 @@
         });
       }
 
+      function manageCommentEditButtons(comment, i, index) {
+        setTimeout(()=>{
+          let editDeleteDiv = document.getElementById('editDeleteUserComments' + comment.id.toString());
+          let editButton = document.getElementById('commentEditButton' + comment.id.toString());
+          let deleteButton = document.getElementById('commendDeleteButton' + comment.id.toString());
+
+          if ((parseInt(comment.user_id) === parseInt(currentUserId)) || (parseInt(vm.userMessages[index].user_id) === parseInt(currentUserId))) {
+            editDeleteDiv.setAttribute("style", "display: initial;");
+            if (parseInt(comment.user_id) === parseInt(currentUserId)) {
+              editButton.setAttribute("style", "visibility: visible;");
+            } else {
+              editButton.setAttribute("style", "visibility: hidden;");
+            }
+          } else {
+            editDeleteDiv.setAttribute("style", "display: none;");
+          }
+        }, 50);
+      }
+
       function retrieveComments(message, index) {
         $http.get('/comments')
         .then(allCommentsData=>{
@@ -12363,9 +12421,11 @@
             vm.userMessages[index].comments = [];
             for (let i = 0; i < messageComments.length; i++) {
               vm.userMessages[index].comments[i] = {};
+              vm.userMessages[index].comments[i].id = messageComments[i].id;
               vm.userMessages[index].comments[i].comment = messageComments[i].comment;
               vm.userMessages[index].comments[i].cleanDate = cleanDateHoliday(messageComments[i].created_at) + ' - ' + timeDate(messageComments[i].updated_at);
               pullCommenterUserData(messageComments[i], i, index);
+              manageCommentEditButtons(messageComments[i], i, index);
             }
           }
         });

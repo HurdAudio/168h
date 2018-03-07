@@ -7188,6 +7188,13 @@ footer img {
   cursor: pointer;
 }
 
+#commentSpace {
+  background-image: url(../img/background-2030242.jpg);
+  background-repeat: repeat;
+  background-size: 75%;
+  padding-bottom: 5em;
+}
+
 #messagesSpace {
   background-image: url(../img/background-2030242.jpg);
   background-repeat: repeat;
