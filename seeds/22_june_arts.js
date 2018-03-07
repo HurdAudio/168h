@@ -5004,6 +5004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 251,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/best-bw-photos-awarded-in-fine-art-photography-awards-2015-28.jpg',
+          title: 'Fluid Time',
+          artist: 'Julia Anna Gospodarou',
+          year: '2015',
+          rule: {
+            "monday": [ 2, 12, 22, 30 ],
+            "tuesday": [ 11, 21, 1, 29 ],
+            "wednesday": [ 30, 10, 20, 28 ],
+            "thursday": [ 29, 9, 19, 27 ],
+            "friday": [ 5, 15, 25, 1 ],
+            "saturday": [ 4, 14, 24, 2 ],
+            "sunday": [ 3, 13, 23, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 252,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/best-bw-photos-awarded-in-fine-art-photography-awards-2015-04.jpg',
+          title: 'Renaissance',
+          artist: 'Richard Bachellier',
+          year: '2015',
+          rule: {
+            "monday": [ 4, 14, 24, 2 ],
+            "tuesday": [ 3, 13, 23, 1 ],
+            "wednesday": [ 12, 22, 2, 30 ],
+            "thursday": [ 1, 11, 21, 29 ],
+            "friday": [ 30, 10, 20, 28 ],
+            "saturday": [ 6, 16, 26, 2 ],
+            "sunday": [ 5, 15, 25, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 253,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/best-bw-photos-awarded-in-fine-art-photography-awards-2015-07.jpg',
+          title: 'multiexpo100',
+          artist: 'Frank Machalowski',
+          year: '2015',
+          rule: {
+            "monday": [ 5, 15, 25, 3 ],
+            "tuesday": [ 4, 14, 24, 2 ],
+            "wednesday": [ 3, 13, 23, 1 ],
+            "thursday": [ 12, 22, 2, 30 ],
+            "friday": [ 1, 11, 21, 29 ],
+            "saturday": [ 30, 10, 20, 28 ],
+            "sunday": [ 6, 16, 26, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 254,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/best-bw-photos-awarded-in-fine-art-photography-awards-2015-17.jpg',
+          title: 'City Puddles',
+          artist: 'Steve Geer',
+          year: '2015',
+          rule: {
+            "monday": [ 6, 16, 26, 2 ],
+            "tuesday": [ 5, 15, 25, 3 ],
+            "wednesday": [ 4, 14, 24, 2 ],
+            "thursday":[ 3, 13, 23, 1 ],
+            "friday":  [ 12, 22, 2, 30 ],
+            "saturday": [ 1, 11, 21, 29 ],
+            "sunday": [ 30, 10, 20, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 255,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/best-bw-photos-awarded-in-fine-art-photography-awards-2015-25.jpg',
+          title: 'Project Totem',
+          artist: 'Jason McGroarty',
+          year: '2015',
+          rule: {
+            "monday": [ 30, 10, 20, 28 ],
+            "tuesday": [ 6, 16, 26, 2 ],
+            "wednesday": [ 5, 15, 25, 3 ],
+            "thursday": [ 4, 14, 24, 2 ],
+            "friday": [ 3, 13, 23, 1 ],
+            "saturday": [ 12, 22, 2, 30 ],
+            "sunday": [ 1, 11, 21, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
