@@ -2110,6 +2110,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 118,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2830434610/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://therealpierrekwenders.bandcamp.com/album/makanda-at-the-end-of-space-the-beginning-of-time',
+          a_string: 'MAKANDA at the End of Space, the Beginning of Time by Pierre Kwenders',
+          rule: {
+            "monday": [ 18, 29, 10, 14 ],
+            "tuesday": [ 17, 28, 9, 13 ],
+            "wednesday": [ 16, 27, 8, 12 ],
+            "thursday": [ 15, 26, 7, 9 ],
+            "saturday": [ 14, 25, 6, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 119,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3128963681/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://therealpierrekwenders.bandcamp.com/album/le-dernier-empereur-bantou',
+          a_string: 'Le Dernier Empereur Bantou by Pierre Kwenders',
+          rule: {
+            "monday": [ 15, 26, 7, 9 ],
+            "tuesday": [ 19, 30, 11, 15 ],
+            "wednesday": [ 18, 29, 10, 14 ],
+            "thursday": [ 17, 28, 9, 13 ],
+            "saturday": [ 16, 27, 8, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 120,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1946257271/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://therealpierrekwenders.bandcamp.com/album/african-dream',
+          a_string: 'African Dream by Pierre Kwenders',
+          rule: {
+            "monday": [ 16, 27, 8, 10 ],
+            "tuesday": [ 15, 26, 7, 9 ],
+            "wednesday": [ 19, 30, 11, 15 ],
+            "thursday": [ 18, 29, 10, 14 ],
+            "saturday": [ 17, 28, 9, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
