@@ -2002,6 +2002,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 112,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=899788126/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tropicaltwistarecords.bandcamp.com/album/v-a-mvndivagante-vol-1-ttr035',
+          a_string: 'V/A - MVNDIVAGANTE Vol.1 (TTR035) by Tropical Twista Records',
+          rule: {
+            "monday": [ 23, 29, 4, 10 ],
+            "tuesday": [ 22, 28, 3, 8 ],
+            "wednesday": [ 21, 27, 2, 8 ],
+            "thursday": [ 18, 26, 1, 7 ],
+            "saturday": [ 19, 25, 31, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 113,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3723800367/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://testgrind.bandcamp.com/album/arabe-macabre',
+          a_string: 'Arabe Macabre by Test',
+          rule: {
+            "monday": [ 19, 25, 31, 6 ],
+            "tuesday": [ 23, 29, 4, 10 ],
+            "wednesday": [ 22, 28, 3, 8 ],
+            "thursday": [ 21, 27, 2, 8 ],
+            "saturday": [ 18, 26, 1, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 114,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4220303382/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://dillonzky.bandcamp.com/album/kind',
+          a_string: 'Kind by Dillon',
+          rule: {
+            "monday": [ 18, 26, 1, 7 ],
+            "tuesday": [ 19, 25, 31, 6 ],
+            "wednesday": [ 23, 29, 4, 10 ],
+            "thursday": [ 22, 28, 3, 8 ],
+            "saturday": [ 21, 27, 2, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
