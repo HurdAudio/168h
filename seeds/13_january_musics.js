@@ -3190,6 +3190,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 178,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'http://bandcamp.com/EmbeddedPlayer/album=3405436270/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://recordings.irritablehedgehog.com/album/randy-gibson-the-four-pillars-appearing-from-the-equal-d-under-resonating-apparitions-of-the-eternal-process-in-the-midwinter-starfield-16-viii-10-kansas-city',
+          a_string: 'Randy Gibson: The Four Pillars Appearing from The Equal D under Resonating  Apparitions of The Eternal Process in The Midwinter Starfield 16 VIII 10 (Kansas City) by R. Andrew Lee',
+          rule: {
+            "monday": [ 3, 10, 11, 12 ],
+            "tuesday": [ 2, 9, 10, 11 ],
+            "wednesday": [ 1, 7, 8, 9 ],
+            "thursday": [ 31, 7, 8, 9 ],
+            "saturday": [ 4, 11, 12, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 179,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'http://bandcamp.com/EmbeddedPlayer/album=41065711/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://recordings.irritablehedgehog.com/album/silo-city-20-september-2016',
+          a_string: 'Silo City: 20 September 2016 by Ensemble of Irreproducible Outcomes',
+          rule: {
+            "monday": [ 4, 11, 12, 13 ],
+            "tuesday": [ 3, 10, 11, 12 ],
+            "wednesday": [ 2, 9, 10, 11 ],
+            "thursday": [ 1, 7, 8, 9 ],
+            "saturday": [ 31, 7, 8, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 180,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'http://bandcamp.com/EmbeddedPlayer/album=2406841034/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://recordings.irritablehedgehog.com/album/adrian-knight-obsessions',
+          a_string: 'Adrian Knight: Obsessions by R. Andrew Lee',
+          rule: {
+            "monday": [ 31, 7, 8, 9 ],
+            "tuesday": [ 4, 11, 12, 13 ],
+            "wednesday": [ 3, 10, 11, 12 ],
+            "thursday": [ 2, 9, 10, 11 ],
+            "saturday": [ 1, 7, 8, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
