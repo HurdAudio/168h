@@ -4004,6 +4004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 201,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/cubic-bar-of-wood-1971.jpg',
+          title: 'Cubic Bar of Wood',
+          artist: 'Andre Cadere',
+          year: '1971',
+          rule: {
+            "monday": [ 2, 6, 13, 18 ],
+            "tuesday": [ 1, 6, 12, 17 ],
+            "wednesday": [ 30, 5, 11, 18 ],
+            "thursday": [ 6, 11, 17, 22 ],
+            "friday": [ 5, 10, 15, 21 ],
+            "saturday": [ 4, 9, 15, 19 ],
+            "sunday": [ 3, 6, 14, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 202,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/untitled-1972.jpg',
+          title: 'Untitled',
+          artist: 'Jean Degottex',
+          year: '1972',
+          rule: {
+            "monday":[ 3, 6, 14, 19 ],
+            "tuesday": [ 2, 6, 13, 18 ],
+            "wednesday": [ 1, 6, 12, 17 ],
+            "thursday": [ 30, 5, 11, 18 ],
+            "friday": [ 6, 11, 17, 22 ],
+            "saturday": [ 5, 10, 15, 21 ],
+            "sunday": [ 4, 9, 15, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 203,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/triangle-circle-square-1972.jpg',
+          title: 'Triangle, Circle, Square',
+          artist: 'Walter De Maria',
+          year: '1972',
+          rule: {
+            "monday":[ 5, 10, 16, 20 ],
+            "tuesday": [ 4, 7, 15, 20 ],
+            "wednesday": [ 3, 7, 14, 19 ],
+            "thursday": [ 2, 7, 13, 18 ],
+            "friday": [ 1, 6, 12, 19 ],
+            "saturday": [ 7, 12, 18, 23 ],
+            "sunday": [ 6, 11, 16, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 204,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/ripe-wheat-1972.jpg',
+          title: 'Ripe Wheat',
+          artist: 'Warren Rohrer',
+          year: '1972',
+          rule: {
+            "monday":[ 6, 11, 16, 22 ],
+            "tuesday": [ 5, 10, 16, 20 ],
+            "wednesday": [ 4, 7, 15, 20 ],
+            "thursday": [ 3, 7, 14, 19 ],
+            "friday": [ 2, 7, 13, 18 ],
+            "saturday": [ 1, 6, 12, 19 ],
+            "sunday": [ 7, 12, 18, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 205,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/pearl-frame-vehicle-with-violet-blue-triangle-tank-1973.jpg',
+          title: 'Pearl Frame Vehicle with Violet-Blue Triangle Tank',
+          artist: 'Gianni Piacentino',
+          year: '1973',
+          rule: {
+            "monday": [ 7, 12, 18, 23 ],
+            "tuesday": [ 6, 11, 16, 22 ],
+            "wednesday": [ 5, 10, 16, 20 ],
+            "thursday": [ 4, 7, 15, 20 ],
+            "friday": [ 3, 7, 14, 19 ],
+            "saturday": [ 2, 7, 13, 18 ],
+            "sunday": [ 1, 6, 12, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
