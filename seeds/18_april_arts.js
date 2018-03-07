@@ -5404,6 +5404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 271,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/Will+Middlebrooks+Texas+Rangers+v+Los+Angeles+Lr2RVXe6pUIl.jpg',
+          title: 'Will Middlebrooks #15 of the Texas Rangers',
+          artist: 'Jayne Kamin-Oncea',
+          year: '2017',
+          rule: {
+            "monday": [ 5, 10, 15, 21 ],
+            "tuesday": [ 4, 9, 15, 21 ],
+            "wednesday": [ 3, 8, 14, 20 ],
+            "thursday": [ 8, 14, 19, 26 ],
+            "friday": [ 22, 12, 18, 25 ],
+            "saturday": [ 7, 12, 18, 24 ],
+            "sunday": [ 6, 10, 25, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 272,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/russell-wilson-spring-training-15.jpg',
+          title: 'Russell Wilson flashes some leather for the Rangers during drills',
+          artist: '?',
+          year: '2014',
+          rule: {
+            "monday": [ 6, 10, 25, 23 ],
+            "tuesday": [ 5, 10, 15, 21 ],
+            "wednesday": [ 4, 9, 15, 21 ],
+            "thursday": [ 3, 8, 14, 20 ],
+            "friday": [ 8, 14, 19, 26 ],
+            "saturday": [ 22, 12, 18, 25 ],
+            "sunday": [ 7, 12, 18, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 273,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/ArlingtonFlags.jpeg',
+          title: 'Texas Rangers Pre-game',
+          artist: '?',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 8, 13, 19, 25 ],
+            "tuesday": [ 7, 11, 26, 24 ],
+            "wednesday": [ 6, 11, 16, 22 ],
+            "thursday": [ 5, 10, 16, 22 ],
+            "friday": [ 4, 9, 15, 21 ],
+            "saturday": [ 9, 15, 20, 27 ],
+            "sunday": [ 23, 13, 19, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 274,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/rangersstorms01.jpg',
+          title: 'Texas Storms',
+          artist: '?',
+          year: '2016',
+          rule: {
+            "monday": [ 23, 13, 19, 26 ],
+            "tuesday": [ 8, 13, 19, 25 ],
+            "wednesday": [ 7, 11, 26, 24 ],
+            "thursday": [ 6, 11, 16, 22 ],
+            "friday": [ 5, 10, 16, 22 ],
+            "saturday": [ 4, 9, 15, 21 ],
+            "sunday": [ 9, 15, 20, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 275,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/TRANGE.jpg',
+          title: 'Pudge and Juan',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 9, 15, 20, 27 ],
+            "tuesday": [ 23, 13, 19, 26 ],
+            "wednesday": [ 8, 13, 19, 25 ],
+            "thursday": [ 7, 11, 26, 24 ],
+            "friday": [ 6, 11, 16, 22 ],
+            "saturday": [ 5, 10, 16, 22 ],
+            "sunday": [ 4, 9, 15, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
