@@ -63,7 +63,7 @@ exports.seed = function(knex, Promise) {
           id: 7,
           user_id: 1,
           name: 'Day of unbearable loss',
-          day_of: new Date('2018-06-03T13:44:00.000Z'),
+          day_of: new Date('2006-06-03T13:44:00.000Z'),
           is_annual: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -72,7 +72,7 @@ exports.seed = function(knex, Promise) {
           id: 8,
           user_id: 1,
           name: 'Jon & Jerrie Anniversary',
-          day_of: new Date('2018-06-30T13:44:00.000Z'),
+          day_of: new Date('1967-06-30T13:44:00.000Z'),
           is_annual: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -107,8 +107,8 @@ exports.seed = function(knex, Promise) {
         {
           id: 12,
           user_id: 1,
-          name: 'Nancy\'s Birthday',
-          day_of: new Date('2017-10-18T13:44:00.000Z'),
+          name: 'Rene\'s Birthday',
+          day_of: new Date('2017-08-21T13:44:00.000Z'),
           is_annual: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')

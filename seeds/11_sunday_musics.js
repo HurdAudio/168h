@@ -979,9 +979,9 @@ exports.seed = function(knex, Promise) {
           id: 98,
           user_id: 1,
           source: 'bandcamp',
-          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=808941928/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
-          href_string: 'http://sunramusic.bandcamp.com/album/monorails-and-satellites-vol-1',
-          a_string: 'Monorails and Satellites, Vol. 1 by Sun Ra',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2237449915/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sunramusic.bandcamp.com/album/monorails-and-satellites-vol-1-2',
+          a_string: 'Monorails and Satellites, Vol. 1 by Sun Ra (solo piano)',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
         },
