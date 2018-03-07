@@ -424,6 +424,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#6A8BB9',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 31,
+          user_id: 1,
+          theme: 'Steam',
+          type: 'sunday',
+          src_string: '../img/july_tiles/new-zealand-3018634_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '155%',
+          color_dark: '#000706',
+          color_medium: '#034484',
+          color_light: '#F5F1E8',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
