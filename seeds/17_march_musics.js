@@ -2974,6 +2974,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 166,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2343553919/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tropicaltwistarecords.bandcamp.com/album/kaleema-n-mada-ttr029',
+          a_string: 'Kaleema - Nómada (TTR029) by Tropical Twista Records',
+          rule: {
+            "monday": [ 27, 2, 8, 16 ],
+            "tuesday": [ 26, 1, 7, 16 ],
+            "wednesday": [ 24, 31, 6, 14 ],
+            "thursday": [ 24, 30, 5, 13 ],
+            "saturday": [ 28, 3, 9, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 167,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2841244084/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sotomayor.bandcamp.com/album/conquistador',
+          a_string: 'Conquistador by Sotomayor',
+          rule: {
+            "monday": [ 28, 3, 9, 17 ],
+            "tuesday": [ 27, 2, 8, 16 ],
+            "wednesday": [ 26, 1, 7, 16 ],
+            "thursday": [ 24, 31, 6, 14 ],
+            "saturday": [ 24, 30, 5, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 168,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3940816177/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ela-minus.bandcamp.com/album/adapt',
+          a_string: 'Adapt. by ela minus',
+          rule: {
+            "monday": [ 25, 31, 6, 14 ],
+            "tuesday": [ 29, 4, 10, 18 ],
+            "wednesday": [ 28, 3, 9, 17 ],
+            "thursday": [ 27, 2, 8, 17 ],
+            "saturday": [ 25, 1, 7, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
