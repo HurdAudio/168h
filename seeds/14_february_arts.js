@@ -5804,6 +5804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 291,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/african-american-fine-art_.jpg',
+          title: 'unknown title',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 22, 1, 9, 19 ],
+            "tuesday": [ 22, 3, 28, 18 ],
+            "wednesday":  [ 12, 20, 28, 7 ],
+            "thursday": [ 14, 22, 1, 9 ],
+            "friday": [ 19, 24, 1, 11 ],
+            "saturday": [ 18, 26, 5, 13 ],
+            "sunday": [ 20, 1, 7, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 292,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/posing-beauty-in-african-american-culture2.jpg',
+          title: 'Harlem Fashion Show',
+          artist: 'Leonard Freed',
+          year: '1963',
+          rule: {
+            "monday": [ 20, 1, 7, 13 ],
+            "tuesday": [ 22, 1, 9, 19 ],
+            "wednesday":  [ 22, 3, 28, 18 ],
+            "thursday": [ 12, 20, 28, 7 ],
+            "friday": [ 14, 22, 1, 9 ],
+            "saturday": [ 19, 24, 1, 11 ],
+            "sunday": [ 18, 26, 5, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 293,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/GordonParks_signature_SC305438_4x3.jpg',
+          title: 'Husband and Wife, Sunday Morning, Detroit, Michigan',
+          artist: 'Gordon Parks',
+          year: '1950',
+          rule: {
+            "monday": [ 18, 26, 5, 13 ],
+            "tuesday": [ 20, 1, 7, 13 ],
+            "wednesday":  [ 22, 1, 9, 19 ],
+            "thursday": [ 22, 3, 28, 18 ],
+            "friday": [ 12, 20, 28, 7 ],
+            "saturday": [ 14, 22, 1, 9 ],
+            "sunday": [ 19, 24, 1, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 294,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/blue-dress-ikahl-beckford.jpg',
+          title: 'Blue Dress',
+          artist: 'Ikahl Beckford',
+          year: '?',
+          rule: {
+            "monday": [ 20, 25, 2, 12 ],
+            "tuesday": [ 19, 27, 6, 14 ],
+            "wednesday":  [ 21, 2, 8, 14 ],
+            "thursday": [ 23, 2, 10, 20 ],
+            "friday": [ 23, 4, 29, 19 ],
+            "saturday": [ 13, 21, 29, 8 ],
+            "sunday": [ 15, 23, 2, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 295,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/picJonesUbi-Girl-from-Tai-Regionw540.jpg',
+          title: 'Ubi Girl from Tai Region',
+          artist: 'Loïs Mailou Jones',
+          year: '1972',
+          rule: {
+            "monday": [ 15, 23, 2, 10 ],
+            "tuesday": [ 20, 25, 2, 12 ],
+            "wednesday": [ 19, 27, 6, 14 ],
+            "thursday":  [ 21, 2, 8, 14 ],
+            "friday": [ 23, 2, 10, 20 ],
+            "saturday": [ 23, 4, 29, 19 ],
+            "sunday": [ 13, 21, 29, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
