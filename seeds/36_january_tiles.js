@@ -508,6 +508,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FBFBFB',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 37,
+          user_id: 1,
+          theme: 'Ice',
+          type: 'holiday',
+          src_string: '../img/january_tiles/red-rose-on-ice-3193996_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '150%',
+          color_dark: '#0E0100',
+          color_medium: '#FC6067',
+          color_light: '#F3F3F3',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
