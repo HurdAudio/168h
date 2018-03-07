@@ -2434,6 +2434,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 136,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2900186348/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://davidgarland.bandcamp.com/album/verdancy',
+          a_string: 'Verdancy by David Garland',
+          rule: {
+            "monday": [ 31, 8, 21, 20 ],
+            "tuesday": [ 30, 7, 20, 19 ],
+            "wednesday": [ 29, 6, 19, 18 ],
+            "thursday": [ 28, 5, 18, 17 ],
+            "saturday": [ 1, 9, 22, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 137,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3456861688/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'Time Out of Joint by David Garland',
+          a_string: 'Time Out of Joint by David Garland',
+          rule: {
+            "monday": [ 1, 9, 22, 21 ],
+            "tuesday": [ 31, 8, 21, 20 ],
+            "wednesday": [ 30, 7, 20, 19 ],
+            "thursday": [ 29, 6, 19, 18 ],
+            "saturday": [ 28, 5, 18, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 138,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=206558673/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://davidgarland.bandcamp.com/album/conversations-with-the-cinnamon-skeleton',
+          a_string: 'Conversations with the Cinnamon Skeleton by David Garland',
+          rule: {
+            "monday": [ 28, 5, 18, 17 ],
+            "tuesday": [ 1, 9, 22, 21 ],
+            "wednesday": [ 31, 8, 21, 20 ],
+            "thursday": [ 30, 7, 20, 19 ],
+            "saturday": [ 29, 6, 19, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
