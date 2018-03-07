@@ -4204,6 +4204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 211,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_sovpolpost_00044.jpg',
+          title: 'Long live the World\'s October',
+          artist: 'G. Klutsis',
+          year: '1933',
+          rule: {
+            "monday": [ 4, 15, 26, 30 ],
+            "tuesday": [ 3, 14, 25, 29 ],
+            "wednesday": [ 2, 13, 24, 28 ],
+            "thursday": [ 1, 12, 23, 27 ],
+            "friday": [ 31, 11, 12, 26 ],
+            "saturday": [ 9, 10, 21, 25 ],
+            "sunday": [ 5, 16, 27, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 212,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_sovpolpost_00043.jpg',
+          title: 'Mechanize Donbas',
+          artist: 'A. Deineka',
+          year: '1930',
+          rule: {
+            "monday": [ 5, 16, 27, 31 ],
+            "tuesday": [ 4, 15, 26, 30 ],
+            "wednesday": [ 3, 14, 25, 29 ],
+            "thursday": [ 2, 13, 24, 28 ],
+            "friday": [ 1, 12, 23, 27 ],
+            "saturday": [ 31, 11, 12, 26 ],
+            "sunday": [ 9, 10, 21, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 213,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_sovpolpost_00042.jpg',
+          title: 'No to kolkhoz! We - in favor of collective farms!',
+          artist: 'B. Efimov',
+          year: '1933',
+          rule: {
+            "monday": [ 9, 10, 21, 25 ],
+            "tuesday": [ 5, 16, 27, 31 ],
+            "wednesday": [ 4, 15, 26, 30 ],
+            "thursday": [ 3, 14, 25, 29 ],
+            "friday": [ 2, 13, 24, 28 ],
+            "saturday": [ 1, 12, 23, 27 ],
+            "sunday": [ 31, 11, 12, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 214,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_sovpolpost_00041.jpg',
+          title: '(tobacco) Pipe of Stalin',
+          artist: 'V. Deni',
+          year: '1930',
+          rule: {
+            "monday": [ 31, 11, 12, 26 ],
+            "tuesday": [ 9, 10, 21, 25 ],
+            "wednesday": [ 5, 16, 27, 31 ],
+            "thursday": [ 4, 15, 26, 30 ],
+            "friday": [ 3, 14, 25, 29 ],
+            "saturday": [ 2, 13, 24, 28 ],
+            "sunday": [ 1, 12, 23, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 215,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_sovpolpost_00040.jpg',
+          title: 'Stop kitchen slavery!..',
+          artist: 'Gregory Shegal',
+          year: '1931',
+          rule: {
+            "monday": [ 1, 12, 23, 27 ],
+            "tuesday": [ 31, 11, 12, 26 ],
+            "wednesday": [ 9, 10, 21, 25 ],
+            "thursday": [ 5, 16, 27, 31 ],
+            "friday": [ 4, 15, 26, 30 ],
+            "saturday": [ 3, 14, 25, 29 ],
+            "sunday": [ 2, 13, 24, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
