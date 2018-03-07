@@ -7286,9 +7286,8 @@ footer img {
 }
 
 
-
-/* .day {
-  background-image: url(../img/january_tiles/ice-3194663_1920.jpg);
+.day {
+  background-image: url(../img/tiles/scrapbook-696235_1920.png);
   background-repeat: no-repeat;
-  background-size: 150%;
-} */
+  background-size: 100%;
+}
