@@ -9375,6 +9375,39 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 600,
+          user_id: 1,
+          name: 'Laurie Spiegel (composer) born 1945',
+          color: '#ABB0B4',
+          picture: './img/musicians/laurie-spiegel-soul-jazz-compilation.jpg',
+          day_of: new Date ('1945-09-20T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: true,
+          override_content: {
+            "sources": [ 'bandcamp' ],
+            "src_strings": [ 'https://bandcamp.com/EmbeddedPlayer/album=1696851893/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/' ],
+            "href_strings": [ 'http://unseenworlds.bandcamp.com/album/the-expanding-universe' ],
+            "a_strings": [ 'The Expanding Universe by Laurie Spiegel' ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 601,
+          user_id: 1,
+          name: 'The world ended on this day in 1534 with only the German city of Münster being spared exactly as the Anabaptist leader Jan Matthys predicted it would.',
+          color: '#5B5B5B',
+          picture: './img/doomsday/Matthys.jpg',
+          day_of: new Date ('1534-04-05T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
