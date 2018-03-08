@@ -215,6 +215,38 @@
       vm.musicCurratorReportDone = musicCurratorReportDone;
       vm.userEditComment = userEditComment;
       vm.userEditCommentCompleted = userEditCommentCompleted;
+      vm.userDeleteMessage = userDeleteMessage;
+      vm.userMessageDeleteCancel = userMessageDeleteCancel;
+      vm.userMessageDeleteConfirmClick = userMessageDeleteConfirmClick;
+
+      function userMessageDeleteConfirmClick(messageId) {
+        let index = 0;
+        $http.delete(`/messages/${messageId}`)
+        .then(()=>{
+          for (let i = 0; i < vm.userMessages.length; i++) {
+            if (vm.userMessages[i].id === messageId) {
+              index = i;
+            }
+          }
+          vm.userMessages.splice(index, 1);
+        });
+      }
+
+      function userMessageDeleteCancel(messageId) {
+        let editDeleteDiv = document.getElementById('editDeleteDiv' + messageId);
+        let deleteMessageConfirm = document.getElementById('deleteMessageConfirm' + messageId);
+
+        editDeleteDiv.setAttribute("style", "display: initial;");
+        deleteMessageConfirm.setAttribute("style", "display: none;");
+      }
+
+      function userDeleteMessage(messageId) {
+        let editDeleteDiv = document.getElementById('editDeleteDiv' + messageId);
+        let deleteMessageConfirm = document.getElementById('deleteMessageConfirm' + messageId);
+
+        editDeleteDiv.setAttribute("style", "display: none;");
+        deleteMessageConfirm.setAttribute("style", "display: initial;");
+      }
 
       function userEditCommentCompleted(commentId) {
         console.log(commentId);

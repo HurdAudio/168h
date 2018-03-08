@@ -3923,6 +3923,12 @@
           <a class="btn" href="#" ng-click="$ctrl.userEditMessage(message.id)">edit</a>
           <a class="btn" href="#" ng-click="$ctrl.userDeleteMessage(message.id)">delete</a>
         </div>
+        <div id="deleteMessageConfirm{{message.id}}" class="messageEditDelete">
+
+          <h3>Delete message forever?</h3>
+          <a class="btn" href="#" ng-click="$ctrl.userMessageDeleteCancel(message.id)">no</a>
+          <a class="btn" href="#" ng-click="$ctrl.userMessageDeleteConfirmClick(message.id)">yes</a>
+        </div>
         <a href=""><h3>comment</h3></a>
         <div class="commentsBar">
 
