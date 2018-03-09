@@ -508,6 +508,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FAE0D3',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 37,
+          user_id: 1,
+          theme: 'Silk/Velvet',
+          type: 'holiday',
+          src_string: '../img/february_tiles/kimono-637942_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '120%',
+          color_dark: '#972802',
+          color_medium: '#1267E9',
+          color_light: '#F3FEFE',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
