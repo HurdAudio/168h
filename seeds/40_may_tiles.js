@@ -466,6 +466,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#909284',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 34,
+          user_id: 1,
+          theme: 'Greenery',
+          type: 'friday',
+          src_string: '../img/may_tiles/leaves_plants_greenery_background_50118_2560x1600.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '163%',
+          color_dark: '#284002',
+          color_medium: '#588C04',
+          color_light: '#DCFBE9',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
