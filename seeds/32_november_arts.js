@@ -4104,6 +4104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 206,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/soft-neon-1973.jpg',
+          title: 'Soft Neon',
+          artist: 'Perle Fine',
+          year: '1973',
+          rule: {
+            "monday": [ 1, 6, 12, 19 ],
+            "tuesday": [ 7, 12, 18, 23 ],
+            "wednesday": [ 6, 11, 16, 22 ],
+            "thursday": [ 5, 10, 16, 20 ],
+            "friday": [ 4, 7, 15, 20 ],
+            "saturday": [ 3, 7, 14, 19 ],
+            "sunday": [ 2, 7, 13, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 207,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/untitled-14-part-roller-drawing-1973.jpg',
+          title: 'Untitled (14-part roller drawing)',
+          artist: 'Richard Serra',
+          year: '1973',
+          rule: {
+            "monday": [ 2, 7, 13, 18 ],
+            "tuesday": [ 1, 6, 12, 19 ],
+            "wednesday": [ 7, 12, 18, 23 ],
+            "thursday": [ 6, 11, 16, 22 ],
+            "friday": [ 5, 10, 16, 20 ],
+            "saturday": [ 4, 7, 15, 20 ],
+            "sunday": [ 3, 7, 14, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 208,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/untitled-1973__.jpg',
+          title: 'Untitled',
+          artist: 'Sean Scully',
+          year: '1973',
+          rule: {
+            "monday": [ 3, 7, 14, 19 ],
+            "tuesday": [ 2, 7, 13, 18 ],
+            "wednesday": [ 1, 6, 12, 19 ],
+            "thursday": [ 7, 12, 18, 23 ],
+            "friday": [ 6, 11, 16, 22 ],
+            "saturday": [ 5, 10, 16, 20 ],
+            "sunday": [ 4, 7, 15, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 209,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/white-wheat-1973.jpg',
+          title: 'White Wheat',
+          artist: 'Warren Rohrer',
+          year: '1973',
+          rule: {
+            "monday": [ 4, 7, 15, 20 ],
+            "tuesday": [ 3, 7, 14, 19 ],
+            "wednesday": [ 2, 7, 13, 18 ],
+            "thursday": [ 1, 6, 12, 19 ],
+            "friday": [ 7, 12, 18, 23 ],
+            "saturday": [ 6, 11, 16, 22 ],
+            "sunday": [ 5, 10, 16, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 210,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/untitled-1974__.jpg',
+          title: 'Untitled',
+          artist: 'John McLaughlin',
+          year: '1974',
+          rule: {
+            "monday": [ 6, 11, 17, 21 ],
+            "tuesday": [ 5, 8, 16, 21 ],
+            "wednesday": [ 4, 8, 15, 20 ],
+            "thursday": [ 3, 8, 14, 19 ],
+            "friday": [ 2, 7, 13, 20 ],
+            "saturday": [ 8, 13, 19, 24 ],
+            "sunday": [ 7, 12, 17, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
