@@ -2380,6 +2380,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 133,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1760340805/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://skingraftrecords.bandcamp.com/album/synchromysticism',
+          a_string: 'Synchromysticism by Yowie',
+          rule: {
+            "monday": [ 20, 10, 18, 12 ],
+            "tuesday": [ 24, 14, 22, 16 ],
+            "wednesday": [ 23, 13, 21, 15 ],
+            "thursday": [ 22, 12, 20, 15 ],
+            "saturday": [ 21, 11, 19, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 134,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=890153798/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://skingraftrecords.bandcamp.com/album/face-of-collapse-special-edition',
+          a_string: 'Face of Collapse: Special Edition by Dazzling Killmen',
+          rule: {
+            "monday": [ 21, 11, 19, 13 ],
+            "tuesday": [ 20, 10, 18, 12 ],
+            "wednesday": [ 24, 14, 22, 16 ],
+            "thursday": [ 23, 13, 21, 15 ],
+            "saturday": [ 22, 12, 20, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 135,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4130527482/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://skingraftrecords.bandcamp.com/album/when-in-vanitas',
+          a_string: 'When In Vanitas... by Brise-Glace',
+          rule: {
+            "monday": [ 22, 12, 20, 15 ] ,
+            "tuesday": [ 21, 11, 19, 13 ],
+            "wednesday": [ 20, 10, 18, 12 ],
+            "thursday": [ 24, 14, 22, 16 ],
+            "saturday": [ 23, 13, 21, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
