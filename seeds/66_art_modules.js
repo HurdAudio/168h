@@ -424,6 +424,66 @@ exports.seed = function(knex, Promise) {
           public: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 36,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/iber_76493_web.900x600.jpg',
+          title: 'Santiago, Chile Balancer',
+          artist: '?',
+          year: '2015',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 37,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/spl_z934629-domestic_media.900x600.jpg',
+          title: 'Superstitious?',
+          artist: '?',
+          year: '2015',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 38,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/min_00900040.900x600.jpg',
+          title: 'Snow Cat',
+          artist: '?',
+          year: '2015',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 39,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/tip_381bio1590_web.900x600.jpg',
+          title: 'Day of the Black Cat',
+          artist: 'Klein J. - L. & Hubert',
+          year: '2015',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 40,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/20045518202_8.900x600.jpg',
+          title: 'Tapetum Lucidum',
+          artist: '?',
+          year: '2015',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
