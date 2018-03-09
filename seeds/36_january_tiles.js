@@ -522,6 +522,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#F3F3F3',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 38,
+          user_id: 1,
+          theme: 'Ice',
+          type: 'week',
+          src_string: '../img/january_tiles/frozen-583241_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '140%',
+          color_dark: '#454747',
+          color_medium: '#868686',
+          color_light: '#CFD5D3',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
