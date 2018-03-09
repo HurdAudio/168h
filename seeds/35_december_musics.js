@@ -2056,6 +2056,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 115,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1596054815/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://suertecampeon.bandcamp.com/album/este-es-el-comienzo-de-todo-lo-que-no-quieres-ep',
+          a_string: 'Este es el comienzo de todo lo que no quieres (EP) by Suerte Campeón',
+          rule: {
+            "monday": [ 21, 27, 2, 8 ],
+            "tuesday": [ 18, 26, 1, 7 ],
+            "wednesday": [ 19, 25, 31, 6 ],
+            "thursday": [ 23, 29, 4, 10 ],
+            "saturday": [ 22, 28, 3, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 116,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4043186328/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://maneeshdemoor.bandcamp.com/album/songs-from-the-tree-of-light',
+          a_string: 'SONGS FROM THE TREE OF LIGHT by Maneesh de Moor',
+          rule: {
+            "monday": [ 22, 28, 3, 8 ],
+            "tuesday": [ 21, 27, 2, 8 ],
+            "wednesday": [ 18, 26, 1, 7 ],
+            "thursday": [ 19, 25, 31, 6 ],
+            "saturday": [ 23, 29, 4, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 117,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2088685879/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://comitepokoflo.bandcamp.com/album/dedos-estamos-hartos',
+          a_string: 'Dedos - Estamos Hartos by Comité Pokofló',
+          rule: {
+            "monday": [ 23, 29, 4, 10 ],
+            "tuesday": [ 22, 28, 3, 8 ],
+            "wednesday": [ 21, 27, 2, 8 ],
+            "thursday": [ 18, 26, 1, 7 ],
+            "saturday": [ 19, 25, 31, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
