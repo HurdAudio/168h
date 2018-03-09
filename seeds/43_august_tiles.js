@@ -424,6 +424,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#8CCEDE',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 31,
+          user_id: 1,
+          theme: 'Primary Colors',
+          type: 'sunday',
+          src_string: '../img/august_tiles/ford-2705402_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '155%',
+          color_dark: '#061E36',
+          color_medium: '#82020F',
+          color_light: '#D0D9C6',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
