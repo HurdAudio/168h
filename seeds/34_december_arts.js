@@ -3904,6 +3904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 196,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/52-05,MrvlSciFi.jpg',
+          title: 'Marvel Science',
+          artist: 'Roy G. Krenkel',
+          year: '1952',
+          rule: {
+            "monday": [ 30, 12, 20, 26 ],
+            "tuesday": [ 29, 11, 19, 25 ],
+            "wednesday": [ 28, 10, 18, 24 ],
+            "thursday": [ 27, 8, 17, 23 ],
+            "friday": [ 26, 8, 27, 23 ],
+            "saturday": [ 1, 14, 22, 28 ],
+            "sunday": [ 31, 13, 21, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 197,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/34-09-10,SS.jpg',
+          title: 'Short Stories',
+          artist: 'Pete Kuhlhoff',
+          year: '1934',
+          rule: {
+            "monday": [ 31, 13, 21, 27 ],
+            "tuesday": [ 30, 12, 20, 26 ],
+            "wednesday": [ 29, 11, 19, 25 ],
+            "thursday": [ 28, 10, 18, 24 ],
+            "friday": [ 27, 8, 17, 23 ],
+            "saturday": [ 26, 8, 27, 23 ],
+            "sunday": [ 1, 14, 22, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 198,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/35-06,MotnPx.jpg',
+          title: 'Motion Picture',
+          artist: 'Morr Kusnet',
+          year: '1935',
+          rule: {
+            "monday": [ 1, 14, 22, 28 ],
+            "tuesday": [ 31, 13, 21, 27 ],
+            "wednesday": [ 30, 12, 20, 26 ],
+            "thursday": [ 29, 11, 19, 25 ],
+            "friday": [ 28, 10, 18, 24 ],
+            "saturday": [ 27, 8, 17, 23 ],
+            "sunday": [ 26, 8, 27, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 199,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/.jpg',
+          title: 'Western Story',
+          artist: 'Charles Laselle',
+          year: '1925',
+          rule: {
+            "monday": [ 26, 8, 27, 23 ],
+            "tuesday": [ 1, 14, 22, 28 ],
+            "wednesday": [ 31, 13, 21, 27 ],
+            "thursday": [ 30, 12, 20, 26 ],
+            "friday": [ 29, 11, 19, 25 ],
+            "saturday": [ 28, 10, 18, 24 ],
+            "sunday": [ 27, 8, 17, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 200,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/.jpg',
+          title: 'Famous Fantastic Mysteries',
+          artist: 'Lawrence (Sterne Stevens)',
+          year: '1943',
+          rule: {
+            "monday": [ 27, 8, 17, 23 ],
+            "tuesday": [ 26, 8, 27, 23 ],
+            "wednesday": [ 1, 14, 22, 28 ],
+            "thursday": [ 31, 13, 21, 27 ],
+            "friday": [ 30, 12, 20, 26 ],
+            "saturday": [ 29, 11, 19, 25 ],
+            "sunday": [ 28, 10, 18, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
