@@ -4704,6 +4704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 236,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/august-strindberg-1915.jpg',
+          title: 'August Strindberg',
+          artist: 'Gosta Adrian-Nilsson',
+          year: '1915',
+          rule: {
+            "monday": [ 2, 4, 14, 30 ],
+            "tuesday": [ 1, 4, 13, 29 ],
+            "wednesday": [ 31, 3, 12, 28 ],
+            "thursday": [ 6, 10, 18, 3 ],
+            "friday": [ 5, 8, 17, 2 ],
+            "saturday": [ 4, 8, 16, 1 ],
+            "sunday": [ 3, 7, 15, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 237,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/dolor-de-mediod-a-1932(1).jpg',
+          title: 'Dolor de mediodía',
+          artist: 'Angel Planells',
+          year: '1932',
+          rule: {
+            "monday": [ 3, 7, 15, 31 ],
+            "tuesday": [ 2, 4, 14, 30 ],
+            "wednesday": [ 1, 4, 13, 29 ],
+            "thursday": [ 31, 3, 12, 28 ],
+            "friday": [ 6, 10, 18, 3 ],
+            "saturday": [ 5, 8, 17, 2 ],
+            "sunday": [ 4, 8, 16, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 238,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/cat-and-bird(1).jpg',
+          title: 'Cat and Bird',
+          artist: 'Paul Klee',
+          year: '1928',
+          rule: {
+            "monday": [ 5, 9, 17, 2 ],
+            "tuesday": [ 4, 8, 16, 1 ],
+            "wednesday": [ 3, 5, 15, 31 ],
+            "thursday": [ 2, 5, 14, 30 ],
+            "friday": [ 1, 4, 13, 29 ],
+            "saturday": [ 7, 11, 19, 4 ],
+            "sunday": [ 6, 9, 18, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 239,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/tornado-over-kansas-1929.jpg',
+          title: 'Tornado Over Kansas',
+          artist: 'John Steuart Curry',
+          year: '1929',
+          rule: {
+            "monday": [ 6, 9, 18, 3 ],
+            "tuesday": [ 5, 9, 17, 2 ],
+            "wednesday": [ 4, 8, 16, 1 ],
+            "thursday": [ 3, 5, 15, 31 ],
+            "friday": [ 2, 5, 14, 30 ],
+            "saturday": [ 1, 4, 13, 29 ],
+            "sunday": [ 7, 11, 19, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 240,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/bathing-boxes-and-tents-at-st-palais-1910.jpg',
+          title: 'Bathing Boxes and Tents at St Palais',
+          artist: 'John Duncan Fergusson',
+          year: '1910',
+          rule: {
+            "monday": [ 7, 11, 19, 4 ],
+            "tuesday": [ 6, 9, 18, 3 ],
+            "wednesday": [ 5, 9, 17, 2 ],
+            "thursday": [ 4, 8, 16, 1 ],
+            "friday": [ 3, 5, 15, 31 ],
+            "saturday": [ 2, 5, 14, 30 ],
+            "sunday": [ 1, 4, 13, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
