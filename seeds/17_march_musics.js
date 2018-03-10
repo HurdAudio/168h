@@ -3028,6 +3028,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 169,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4114896578/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://feliciaatkinson.bandcamp.com/album/a-readymade-ceremony',
+          a_string: 'A Readymade Ceremony by FELICIA ATKINSON',
+          rule: {
+            "monday": [ 25, 1, 7, 15 ],
+            "tuesday": [ 25, 31, 6, 14 ],
+            "wednesday": [ 29, 4, 10, 18 ],
+            "thursday": [ 28, 3, 9, 17 ],
+            "saturday": [ 27, 2, 8, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 170,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3534329540/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sarahhennies.bandcamp.com/album/live-fleas',
+          a_string: 'Live Fleas by Sarah Hennies',
+          rule: {
+            "monday": [ 27, 2, 8, 17 ],
+            "tuesday": [ 25, 1, 7, 15 ],
+            "wednesday": [ 25, 31, 6, 14 ],
+            "thursday": [ 29, 4, 10, 18 ],
+            "saturday": [ 28, 3, 9, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 171,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=909143123/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cucinapoveraglasgow.bandcamp.com/album/hilja',
+          a_string: 'Hilja by Cucina Povera',
+          rule: {
+            "monday": [ 28, 3, 9, 17 ],
+            "tuesday": [ 27, 2, 8, 17 ],
+            "wednesday": [ 25, 1, 7, 15 ],
+            "thursday": [ 25, 31, 6, 14 ],
+            "saturday": [ 29, 4, 10, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
