@@ -2704,6 +2704,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 151,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3111895252/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://karlrecords.bandcamp.com/album/organism',
+          a_string: 'Organism by AROVANE &amp; PORYA HATAMI',
+          rule: {
+            "monday": [ 22, 25, 30, 12 ],
+            "tuesday": [ 21, 25, 30, 12 ],
+            "wednesday": [ 21, 24, 30, 11 ],
+            "thursday": [ 19, 27, 29, 10 ],
+            "saturday": [ 23, 27, 3, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 152,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2065394610/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://karlrecords.bandcamp.com/album/creta',
+          a_string: 'Creta by CRETA (LAMANNA / PUPILLO / ZANISI)',
+          rule: {
+            "monday": [ 23, 27, 3, 14 ],
+            "tuesday": [ 22, 25, 30, 12 ],
+            "wednesday": [ 21, 25, 30, 12 ],
+            "thursday": [ 21, 24, 30, 11 ],
+            "saturday": [ 19, 27, 29, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 153,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2303698957/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://karlrecords.bandcamp.com/album/persepolis',
+          a_string: 'Persepolis by Iannis Xenakis',
+          rule: {
+            "monday": [ 19, 27, 29, 10 ],
+            "tuesday": [ 23, 27, 3, 14 ],
+            "wednesday": [ 22, 25, 30, 12 ],
+            "thursday": [ 21, 25, 30, 12 ],
+            "saturday": [ 21, 24, 30, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
