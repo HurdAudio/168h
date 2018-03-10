@@ -3136,6 +3136,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 175,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1604938215/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://iapetusrecords.bandcamp.com/album/yugen-blakrok-return-of-the-astro-goth',
+          a_string: 'Yugen Blakrok - Return of the Astro-Goth by Yugen Blakrok',
+          rule: {
+            "monday": [ 30, 4, 6, 10 ],
+            "tuesday": [ 2, 6, 8, 10 ],
+            "wednesday": [ 14, 8, 10, 16 ],
+            "thursday": [ 26, 2, 4, 16 ],
+            "saturday": [ 27, 2, 4, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 176,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=662830265/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://iapetusrecords.bandcamp.com/album/rndu-scrolls-of-knowing-instrumentals',
+          a_string: 'Rndu - Scrolls of Knowing - Instrumentals by Kanif the Jhatmaster',
+          rule: {
+            "monday": [ 27, 2, 4, 8 ],
+            "tuesday": [ 30, 4, 6, 10 ],
+            "wednesday": [ 2, 6, 8, 10 ],
+            "thursday": [ 14, 8, 10, 16 ],
+            "saturday": [ 26, 2, 4, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 177,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1689699608/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://iapetusrecords.bandcamp.com/album/rndu-scroll-of-knowing',
+          a_string: 'Rndu - Scroll of Knowing by Rndu',
+          rule: {
+            "monday": [ 26, 2, 4, 16 ],
+            "tuesday": [ 27, 2, 4, 8 ],
+            "wednesday": [ 30, 4, 6, 10 ],
+            "thursday": [ 2, 6, 8, 10 ],
+            "saturday": [ 14, 8, 10, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
