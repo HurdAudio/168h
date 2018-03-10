@@ -3244,6 +3244,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 181,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1919258521/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://unseenworlds.bandcamp.com/album/j-jasmine-my-new-music',
+          a_string: 'J. Jasmine: My New Music by Jacqueline Humbert &amp; David Rosenboom',
+          rule: {
+            "monday": [ 1, 7, 8, 9 ],
+            "tuesday": [ 31, 7, 8, 9 ],
+            "wednesday": [ 4, 11, 12, 13 ],
+            "thursday": [ 3, 10, 11, 12 ],
+            "saturday": [ 2, 9, 10, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 182,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2144748738/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://unseenworlds.bandcamp.com/album/detours',
+          a_string: 'Detours by &quot;Blue&quot; Gene Tyranny',
+          rule: {
+            "monday": [ 3, 10, 11, 12 ],
+            "tuesday": [ 2, 8, 9, 10 ],
+            "wednesday": [ 1, 8, 9, 10 ],
+            "thursday": [ 5, 12, 13, 14 ],
+            "saturday": [ 4, 10, 12, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 183,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1421068817/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://unseenworlds.bandcamp.com/album/woo-lae-oak',
+          a_string: 'Woo Lae Oak by Carl Stone',
+          rule: {
+            "monday": [ 4, 10, 12, 13 ],
+            "tuesday": [ 3, 10, 11, 12 ],
+            "wednesday": [ 2, 8, 9, 10 ],
+            "thursday": [ 1, 8, 9, 10 ],
+            "saturday": [ 5, 12, 13, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
