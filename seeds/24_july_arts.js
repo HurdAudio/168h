@@ -4904,6 +4904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 246,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/portrait-of-madame-charles-louis-trudaine-1792.jpg',
+          title: 'Portrait of Madame Charles-Louis Trudaine',
+          artist: 'Jacques-Louis David',
+          year: 'c.1791 - 1792',
+          rule: {
+            "monday": [ 6, 17, 28, 8 ],
+            "tuesday": [ 5, 16, 27, 7 ],
+            "wednesday": [ 4, 15, 26, 27 ],
+            "thursday": [ 3, 14, 24, 26 ],
+            "friday": [ 2, 13, 24, 25 ],
+            "saturday": [ 1, 12, 23, 3 ],
+            "sunday": [ 7, 18, 29, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 247,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/the-fire-of-rome-18-july-64-ad.jpg',
+          title: 'The Fire of Rome, 18 July 64 AD',
+          artist: 'Hubert Robert',
+          year: '1785',
+          rule: {
+            "monday":[ 7, 18, 29, 8 ],
+            "tuesday": [ 6, 17, 28, 8 ],
+            "wednesday": [ 5, 16, 27, 7 ],
+            "thursday": [ 4, 15, 26, 27 ],
+            "friday": [ 3, 14, 24, 26 ],
+            "saturday": [ 2, 13, 24, 25 ],
+            "sunday": [ 1, 12, 23, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 248,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/vsoldiers-in-a-mountain-gorge-with-a-storm.jpg',
+          title: 'Vsoldiers in a Mountain Gorge, with a Storm',
+          artist: 'Claude-Joseph Vernet',
+          year: '1789',
+          rule: {
+            "monday":[ 1, 12, 23, 3 ],
+            "tuesday": [ 7, 18, 29, 8 ],
+            "wednesday": [ 6, 17, 28, 8 ],
+            "thursday": [ 5, 16, 27, 7 ],
+            "friday": [ 4, 15, 26, 27 ],
+            "saturday": [ 3, 14, 24, 26 ],
+            "sunday": [ 2, 13, 24, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 249,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/fall-of-the-giants.jpg',
+          title: 'Fall of the Giants',
+          artist: 'Pietro Longhi',
+          year: '1734',
+          rule: {
+            "monday": [ 2, 13, 24, 25 ],
+            "tuesday": [ 1, 12, 23, 3 ],
+            "wednesday": [ 7, 18, 29, 8 ],
+            "thursday": [ 6, 17, 28, 8 ],
+            "friday": [ 5, 16, 27, 7 ],
+            "saturday": [ 4, 15, 26, 27 ],
+            "sunday": [ 3, 14, 24, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 250,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/terpsichore-muse-of-dance-1739.jpg',
+          title: 'Terpsichore, Muse of Dance',
+          artist: 'Jean-Marc Nattier',
+          year: '1739',
+          rule: {
+            "monday": [ 3, 14, 24, 26 ],
+            "tuesday": [ 2, 13, 24, 25 ],
+            "wednesday": [ 1, 12, 23, 3 ],
+            "thursday": [ 7, 18, 29, 8 ],
+            "friday": [ 6, 17, 28, 8 ],
+            "saturday": [ 5, 16, 27, 7 ],
+            "sunday": [ 4, 15, 26, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
