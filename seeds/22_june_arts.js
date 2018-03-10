@@ -5104,6 +5104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 256,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/umbrellas.jpeg',
+          title: 'Skyline',
+          artist: 'Rodney Smith',
+          year: '1995',
+          rule: {
+            "monday": [ 1, 11, 21, 29 ],
+            "tuesday": [ 30, 10, 20, 28 ],
+            "wednesday": [ 6, 16, 26, 2 ],
+            "thursday": [ 5, 15, 25, 3 ],
+            "friday": [ 4, 14, 24, 2 ],
+            "saturday": [ 3, 13, 23, 1 ],
+            "sunday": [ 12, 22, 2, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 257,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/nude-pixel-study-1.jpg',
+          title: 'Nude Study with Pixels',
+          artist: 'Justin Blayney',
+          year: '2015',
+          rule: {
+            "monday": [ 12, 22, 2, 30 ],
+            "tuesday": [ 1, 11, 21, 29 ],
+            "wednesday": [ 30, 10, 20, 28 ],
+            "thursday": [ 6, 16, 26, 2 ],
+            "friday": [ 5, 15, 25, 3 ],
+            "saturday": [ 4, 14, 24, 2 ],
+            "sunday": [ 3, 13, 23, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 258,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/Image-from-a-shooting-with-Heta-Inari.jpg',
+          title: 'image from a shooting with Heta Inari',
+          artist: 'Susanna Majuri',
+          year: '?',
+          rule: {
+            "monday": [ 3, 13, 23, 1 ],
+            "tuesday": [ 12, 22, 2, 30 ],
+            "wednesday": [ 1, 11, 21, 29 ],
+            "thursday": [ 30, 10, 20, 28 ],
+            "friday": [ 6, 16, 26, 2 ],
+            "saturday": [ 5, 15, 25, 3 ],
+            "sunday": [ 4, 14, 24, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 259,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/sica_maciek.jpg',
+          title: 'Maciek Jasik',
+          artist: 'Sica',
+          year: '2012',
+          rule: {
+            "monday": [ 5, 15, 25, 3 ],
+            "tuesday": [ 4, 14, 24, 2 ],
+            "wednesday": [ 13, 23, 3, 1 ],
+            "thursday": [ 2, 12, 22, 30 ],
+            "friday": [ 1, 11, 21, 29 ],
+            "saturday": [ 7, 17, 27, 3 ],
+            "sunday": [ 6, 16, 26, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 260,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/5848001_orig.jpg',
+          title: 'Mariette',
+          artist: 'Marie-Christine Leroux',
+          year: '1860 - 1861',
+          rule: {
+            "monday": [ 6, 16, 26, 4 ],
+            "tuesday": [ 5, 15, 25, 3 ],
+            "wednesday": [ 4, 14, 24, 2 ],
+            "thursday": [ 13, 23, 3, 1 ],
+            "friday": [ 2, 12, 22, 30 ],
+            "saturday": [ 1, 11, 21, 29 ],
+            "sunday": [ 7, 17, 27, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
