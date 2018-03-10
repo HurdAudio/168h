@@ -5504,6 +5504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 276,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/chicago-cubs-world-series-win-game-7-theo-epstein.jpg',
+          title: 'Members of the Chicago Cubs celebrate defeating the Cleveland Indians in Game 7 of the 2016 World Series at Progressive Field on Wednesday, November 2, 2016 in Cleveland, Ohio.',
+          artist: 'Ron Vesely',
+          year: '2016',
+          rule: {
+            "monday": [ 4, 9, 15, 21 ],
+            "tuesday": [ 9, 15, 20, 27 ],
+            "wednesday": [ 23, 13, 19, 26 ],
+            "thursday": [ 8, 13, 19, 25 ],
+            "friday": [ 7, 11, 26, 24 ],
+            "saturday": [ 6, 11, 16, 22 ],
+            "sunday": [ 5, 10, 16, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 277,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/rs-chicago-cubs-246b3da2-d822-453a-9a68-f6beea6d1a29.jpg',
+          title: 'Chicago Cubs third baseman Kris Bryant',
+          artist: 'Jonathan Daniel',
+          year: '2016',
+          rule: {
+            "monday": [ 5, 10, 16, 22 ],
+            "tuesday": [ 4, 9, 15, 21 ],
+            "wednesday": [ 9, 15, 20, 27 ],
+            "thursday": [ 23, 13, 19, 26 ],
+            "friday": [ 8, 13, 19, 25 ],
+            "saturday": [ 7, 11, 26, 24 ],
+            "sunday": [ 6, 11, 16, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 278,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/usa_today_10154900.jpg',
+          title: 'Chicago Cubs Celebrate Victory',
+          artist: 'Mark J. Rebilas',
+          year: '2017',
+          rule: {
+            "monday": [ 6, 11, 16, 22 ],
+            "tuesday": [ 5, 10, 16, 22 ],
+            "wednesday": [ 4, 9, 15, 21 ],
+            "thursday": [ 9, 15, 20, 27 ],
+            "friday": [ 23, 13, 19, 26 ],
+            "saturday": [ 8, 13, 19, 25 ],
+            "sunday": [ 7, 11, 26, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 279,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/MW-EZ251_Cubs_I_ZG_20161102061036.jpg',
+          title: 'Chicago Cubs outfielder Ben Zobrist scores a run after colliding with Cleveland Indians catcher Roberto Perez in Game 6 of the 2016 World Series.',
+          artist: '?',
+          year: '2016',
+          rule: {
+            "monday": [ 7, 11, 26, 24 ],
+            "tuesday": [ 6, 11, 16, 22 ],
+            "wednesday": [ 5, 10, 16, 22 ],
+            "thursday": [ 4, 9, 15, 21 ],
+            "friday": [ 9, 15, 20, 27 ],
+            "saturday": [ 23, 13, 19, 26 ],
+            "sunday": [ 8, 13, 19, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 280,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/cubsfield.jpeg',
+          title: 'Wrigley Field',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 9, 14, 20, 26 ],
+            "tuesday": [ 8, 12, 27, 25 ],
+            "wednesday": [ 7, 12, 17, 23 ],
+            "thursday": [ 6, 11, 17, 23 ],
+            "friday": [ 5, 10, 16, 22 ],
+            "saturday": [ 10, 16, 21, 28 ],
+            "sunday": [ 24, 14, 20, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
