@@ -6104,6 +6104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 306,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/paris-1968.jpg',
+          title: 'Paris',
+          artist: 'Princess Fahrelnissa Zeid',
+          year: '1968',
+          rule: {
+            "monday": [ 26, 28, 1, 4 ],
+            "tuesday": [ 28, 30, 31, 3 ],
+            "wednesday": [ 13, 14, 25, 17 ],
+            "thursday": [ 16, 18, 10, 30 ],
+            "friday": [ 18, 19, 11, 14 ],
+            "saturday": [ 21, 22, 13, 17 ],
+            "sunday": [ 24, 26, 27, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 307,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/head-blue-yellow-1956.jpg',
+          title: 'Head Blue/Yellow',
+          artist: 'William Turnbull',
+          year: '1956',
+          rule: {
+            "monday": [ 24, 26, 27, 29 ],
+            "tuesday": [ 26, 28, 1, 4 ],
+            "wednesday": [ 28, 30, 31, 3 ],
+            "thursday": [ 13, 14, 25, 17 ],
+            "friday": [ 16, 18, 10, 30 ],
+            "saturday": [ 18, 19, 11, 14 ],
+            "sunday": [ 21, 22, 13, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 308,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/fifty-days-at-iliam-ilians-in-battle.jpg',
+          title: 'Fifty Days at Iliam. Ilians in Battle',
+          artist: 'Cy Twombly',
+          year: '1978',
+          rule: {
+            "monday": [ 22, 23, 14, 18 ],
+            "tuesday": [ 25, 27, 28, 30 ],
+            "wednesday": [ 27, 29, 2, 5 ],
+            "thursday": [ 29, 31, 1, 4 ],
+            "friday": [ 14, 15, 26, 18 ],
+            "saturday": [ 17, 19, 11, 31 ],
+            "sunday": [ 19, 20, 12, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 309,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/work-no-3-yellow-painting-1986.jpg',
+          title: 'Work No. 3 (Yellow Painting)',
+          artist: 'Martin Creed',
+          year: '1986',
+          rule: {
+            "monday": [ 19, 20, 12, 15 ],
+            "tuesday": [ 22, 23, 14, 18 ],
+            "wednesday": [ 25, 27, 28, 30 ],
+            "thursday": [ 27, 29, 2, 5 ],
+            "friday": [ 29, 31, 1, 4 ],
+            "saturday": [ 14, 15, 26, 18 ],
+            "sunday": [ 17, 19, 11, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 310,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/goulimine-1964.jpg',
+          title: 'Goulimine',
+          artist: 'Rupprecht Geiger',
+          year: '1964',
+          rule: {
+            "monday": [ 17, 19, 11, 31 ],
+            "tuesday": [ 19, 20, 12, 15 ],
+            "wednesday": [ 22, 23, 14, 18 ],
+            "thursday": [ 25, 27, 28, 30 ],
+            "friday": [ 27, 29, 2, 5 ],
+            "saturday": [ 29, 31, 1, 4 ],
+            "sunday": [ 14, 15, 26, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
