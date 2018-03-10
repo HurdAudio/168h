@@ -5704,6 +5704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 286,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/amazonino-1-1989.jpg',
+          title: 'Amazonino #1',
+          artist: 'Lygia Pape',
+          year: '1989',
+          rule: {
+            "monday": [ 6, 16, 24, 3 ],
+            "tuesday": [ 5, 15, 23, 2 ],
+            "wednesday": [ 4, 14, 22, 1 ],
+            "thursday": [ 3, 13, 22, 31 ],
+            "friday": [ 9, 18, 28, 5 ],
+            "saturday": [ 8, 18, 28, 5 ],
+            "sunday": [ 8, 17, 25, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 287,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/pale-painting-6-ny-07-2007.jpg',
+          title: 'Pale Painting: 6 NY 07',
+          artist: 'Marcia Hafif',
+          year: '2007',
+          rule: {
+            "monday": [ 9, 18, 26, 5 ],
+            "tuesday": [ 7, 17, 25, 4 ],
+            "wednesday": [ 6, 16, 24, 3 ],
+            "thursday": [ 5, 15, 23, 2 ],
+            "friday": [ 4, 14, 23, 1 ],
+            "saturday": [ 10, 19, 29, 6 ],
+            "sunday": [ 9, 19, 29, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 288,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/cossak-mamay-1960c.jpg',
+          title: 'Cossak Mamay',
+          artist: 'Alla Horska',
+          year: 'c.1960',
+          rule: {
+            "monday": [ 9, 19, 29, 6 ],
+            "tuesday": [ 9, 18, 26, 5 ],
+            "wednesday": [ 7, 17, 25, 4 ],
+            "thursday": [ 6, 16, 24, 3 ],
+            "friday": [ 5, 15, 23, 2 ],
+            "saturday": [ 4, 14, 23, 1 ],
+            "sunday": [ 10, 19, 29, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 289,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/sprayed-picture-1964(1).jpg',
+          title: 'Sprayed Picture',
+          artist: 'Charlotte Posenenske',
+          year: '1964',
+          rule: {
+            "monday": [ 10, 19, 29, 6 ],
+            "tuesday": [ 9, 19, 29, 6 ],
+            "wednesday": [ 9, 18, 26, 5 ],
+            "thursday": [ 7, 17, 25, 4 ],
+            "friday": [ 6, 16, 24, 3 ],
+            "saturday": [ 5, 15, 23, 2 ],
+            "sunday": [ 4, 14, 23, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 290,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/teatro-de-sombras-as-cinco-esta-es-still-1976-2.jpg',
+          title: 'Teatro de Sombras, As Cinco Estações (still)',
+          artist: 'Lourdes Castro',
+          year: '1976',
+          rule: {
+            "monday": [ 4, 14, 23, 1 ],
+            "tuesday": [ 10, 19, 29, 6 ],
+            "wednesday": [ 9, 19, 29, 6 ],
+            "thursday": [ 9, 18, 26, 5 ],
+            "friday": [ 7, 17, 25, 4 ],
+            "saturday": [ 6, 16, 24, 3 ],
+            "sunday": [ 5, 15, 23, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
