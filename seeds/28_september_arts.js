@@ -4504,6 +4504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 226,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/two-squares-1967.jpg',
+          title: 'Two Squares',
+          artist: 'Almir Mavignier',
+          year: '1967',
+          rule: {
+            "monday": [ 4, 10, 28, 6 ],
+            "tuesday": [ 3, 9, 27, 5 ],
+            "wednesday":  [ 2, 8, 26, 4 ],
+            "thursday": [ 1, 7, 25, 3 ],
+            "friday": [ 30, 6, 24, 2 ],
+            "saturday": [ 29, 5, 23, 1 ],
+            "sunday": [ 28, 4, 22, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 227,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/green-frost-1957.jpg',
+          title: 'Green Frost',
+          artist: 'Norman Bluhm',
+          year: '1957',
+          rule: {
+            "monday": [ 28, 4, 22, 29 ],
+            "tuesday": [ 4, 10, 28, 6 ],
+            "wednesday": [ 3, 9, 27, 5 ],
+            "thursday": [ 2, 8, 26, 4 ],
+            "friday": [ 1, 7, 25, 3 ],
+            "saturday": [ 30, 6, 24, 2 ],
+            "sunday": [ 29, 5, 23, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 228,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/tennis-1983.jpg',
+          title: 'Tennis',
+          artist: 'Howard Arkley',
+          year: '1983',
+          rule: {
+            "monday": [ 29, 5, 23, 1 ],
+            "tuesday": [ 28, 4, 22, 29 ],
+            "wednesday": [ 4, 10, 28, 6 ],
+            "thursday": [ 3, 9, 27, 5 ],
+            "friday": [ 2, 8, 26, 4 ],
+            "saturday": [ 1, 7, 25, 3 ],
+            "sunday": [ 30, 6, 24, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 229,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/tux-2003.jpg',
+          title: 'Tux',
+          artist: 'Ralph Goings',
+          year: '2003',
+          rule: {
+            "monday": [ 30, 6, 24, 2 ],
+            "tuesday": [ 29, 5, 23, 1 ],
+            "wednesday": [ 28, 4, 22, 29 ],
+            "thursday": [ 4, 10, 28, 6 ],
+            "friday": [ 3, 9, 27, 5 ],
+            "saturday": [ 2, 8, 26, 4 ],
+            "sunday": [ 1, 7, 25, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 230,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/little-joe-picking-his-nose-1975.jpg',
+          title: 'Little Joe Picking His Nose',
+          artist: 'Steve Wheeler',
+          year: '1975',
+          rule: {
+            "monday": [ 1, 7, 25, 3 ],
+            "tuesday": [ 30, 6, 24, 2 ],
+            "wednesday": [ 29, 5, 23, 1 ],
+            "thursday": [ 28, 4, 22, 29 ],
+            "friday": [ 4, 10, 28, 6 ],
+            "saturday": [ 3, 9, 27, 5 ],
+            "sunday": [ 2, 8, 26, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
