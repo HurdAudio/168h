@@ -2920,6 +2920,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 163,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1995703143/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://nubyagarcia.bandcamp.com/album/when-we-are',
+          a_string: 'When We Are by Nubya Garcia',
+          rule: {
+            "monday": [ 23, 1, 13, 18 ],
+            "tuesday": [ 27, 5, 17, 22 ],
+            "wednesday": [ 26, 4, 16, 21 ],
+            "thursday": [ 25, 3, 15, 20 ],
+            "saturday": [ 24, 2, 14, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 164,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4138331469/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ryankeberle.bandcamp.com/album/reverso-suite-ravel',
+          a_string: 'Reverso - Suite Ravel by Reverso',
+          rule: {
+            "monday": [ 24, 2, 14, 19 ],
+            "tuesday": [ 23, 1, 13, 18 ],
+            "wednesday": [ 27, 5, 17, 22 ],
+            "thursday": [ 26, 4, 16, 21 ],
+            "saturday": [ 25, 3, 15, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 165,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3532235805/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://elnegocito.bandcamp.com/album/mephiti',
+          a_string: 'Mephiti by Mephiti',
+          rule: {
+            "monday": [ 25, 3, 15, 20 ],
+            "tuesday": [ 24, 2, 14, 19 ],
+            "wednesday": [ 23, 1, 13, 18 ],
+            "thursday": [ 27, 5, 17, 22 ],
+            "saturday": [ 26, 4, 16, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
