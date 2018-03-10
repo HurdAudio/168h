@@ -2812,6 +2812,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 157,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'ttps://bandcamp.com/EmbeddedPlayer/album=452161510/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bedroomcommunity.bandcamp.com/album/dissonance',
+          a_string: 'Dissonance by Valgeir Sigurðsson',
+          rule: {
+            "monday": [ 27, 3, 9, 22 ],
+            "tuesday": [ 26, 1, 8, 21 ],
+            "wednesday": [ 25, 31, 7, 20 ],
+            "thursday": [ 24, 30, 6, 19 ],
+            "saturday": [ 23, 29, 5, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 158,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3712031308/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bedroomcommunity.bandcamp.com/album/the-centre-cannot-hold',
+          a_string: 'The Centre Cannot Hold by Ben Frost',
+          rule: {
+            "monday": [ 23, 29, 5, 18 ],
+            "tuesday": [ 27, 3, 9, 22 ],
+            "wednesday": [ 26, 1, 8, 21 ],
+            "thursday": [ 25, 31, 7, 20 ],
+            "saturday": [ 24, 30, 6, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 159,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2925816922/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bedroomcommunity.bandcamp.com/album/tessellatum',
+          a_string: 'Tessellatum by Nadia Sirota | Liam Byrne | Composed by Donnacha Dennehy',
+          rule: {
+            "monday": [ 24, 30, 6, 19 ],
+            "tuesday": [ 23, 29, 5, 18 ],
+            "wednesday": [ 27, 3, 9, 22 ],
+            "thursday": [ 26, 1, 8, 21 ],
+            "saturday": [ 25, 31, 7, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
