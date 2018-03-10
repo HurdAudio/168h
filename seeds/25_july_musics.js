@@ -2596,6 +2596,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 145,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2820021326/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://candaceisaband.bandcamp.com/album/new-ruins-2',
+          a_string: 'New Ruins by Candace',
+          rule: {
+            "monday": [ 19, 20, 25, 2 ],
+            "tuesday": [ 18, 20, 24, 1 ],
+            "wednesday": [ 22, 24, 28, 5 ],
+            "thursday": [ 21, 23, 27, 4 ],
+            "saturday": [ 20, 22, 26, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 146,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1003729605/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://dickstusso.bandcamp.com/album/in-heaven',
+          a_string: 'In Heaven by Dick Stusso',
+          rule: {
+            "monday": [ 20, 22, 26, 3 ],
+            "tuesday": [ 19, 20, 25, 2 ],
+            "wednesday": [ 18, 20, 24, 1 ],
+            "thursday": [ 22, 24, 28, 5 ],
+            "saturday": [ 21, 23, 27, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 147,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2302440866/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://youngfathersofficial.bandcamp.com/album/cocoa-sugar',
+          a_string: 'Cocoa Sugar by Young Fathers',
+          rule: {
+            "monday": [ 22, 24, 28, 5 ],
+            "tuesday": [ 21, 23, 27, 4 ],
+            "wednesday": [ 20, 21, 26, 3 ],
+            "thursday": [ 19, 21, 25, 2 ],
+            "saturday": [ 23, 25, 29, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
