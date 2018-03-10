@@ -2488,6 +2488,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 139,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2608437776/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://balancepointacoustics.bandcamp.com/album/bpa-4-hugo-ball-sechs-laut-und-klanggedichte-1916-six-sound-poems-1916',
+          a_string: 'BPA -4 Hugo Ball: Sechs Laut-und Klanggedichte 1916 (Six Sound Poems, 1916) by Jaap Blonk / Damon Smith',
+          rule: {
+            "monday": [ 29, 6, 19, 18 ],
+            "tuesday": [ 28, 5, 18, 17 ],
+            "wednesday": [ 1, 9, 22, 21 ],
+            "thursday": [ 31, 8, 21, 20 ],
+            "saturday": [ 30, 7, 20, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 140,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3888126553/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ugexploderecords.bandcamp.com/album/untitled-2',
+          a_string: 'untitled by Sandy Ewen / Damon Smith / Weasel Walter',
+          rule: {
+            "monday": [ 31, 8, 21, 20 ],
+            "tuesday": [ 30, 7, 20, 19 ],
+            "wednesday": [ 29, 6, 19, 18 ],
+            "thursday": [ 2, 10, 23, 22 ],
+            "saturday": [ 1, 9, 22, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 141,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2578160966/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://balancepointacoustics.bandcamp.com/album/bpaltd-808-live-in-texas',
+          a_string: 'BPALTD 808 Live in Texas by Ewen/Smith/Walter',
+          rule: {
+            "monday": [ 1, 9, 22, 21 ],
+            "tuesday": [ 31, 8, 21, 20 ],
+            "wednesday": [ 30, 7, 20, 19 ],
+            "thursday": [ 29, 6, 19, 18 ],
+            "saturday": [ 2, 10, 23, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
