@@ -9408,6 +9408,39 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 602,
+          user_id: 1,
+          name: 'Craig Taborn (piano) born in 1970',
+          color: '#5C6E7A',
+          picture: './img/musicians/craig_nc.jpg',
+          day_of: new Date ('1970-02-20T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: true,
+          override_content: {
+            "sources": [ 'bandcamp', 'bandcamp', 'bandcamp' ],
+            "src_strings": [ 'https://bandcamp.com/EmbeddedPlayer/album=1171801864/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=1181445539/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=2286142146/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/' ],
+            "href_strings": [ 'http://krisdavis.bandcamp.com/album/octopus', 'http://aumfidelity.bandcamp.com/album/love-and-ghosts', 'http://aumfidelity.bandcamp.com/album/out-of-this-worlds-distortions' ],
+            "a_strings": [ 'Octopus by Kris Davis, Craig Taborn', 'Love and Ghosts by Farmers By Nature : Gerald Cleaver / William Parker / Craig Taborn', 'Out Of This World&#39;s Distortions by Farmers By Nature : Gerald Cleaver / William Parker / Craig Taborn' ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 603,
+          user_id: 1,
+          name: 'The world ended on this day in 1624 - the revised date - after the London astrologers who predicted doom added 100 years to their original prediction.',
+          color: '#BABA7A',
+          picture: './img/doomsday/london_1572-1624_sanderusmaps.jpg',
+          day_of: new Date ('1624-02-01T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
