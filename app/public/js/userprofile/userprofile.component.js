@@ -219,6 +219,71 @@
       vm.userMessageDeleteCancel = userMessageDeleteCancel;
       vm.userMessageDeleteConfirmClick = userMessageDeleteConfirmClick;
       vm.tileModuleDisplay = tileModuleDisplay;
+      vm.tilesCurratorReport = tilesCurratorReport;
+      vm.tileCurratorReportDone = tileCurratorReportDone;
+
+      function tileCurratorReportDone() {
+        let reportForTilesCurrator = document.getElementById('reportForTilesCurrator');
+        let tilesCurratorManagerDone = document.getElementById('tilesCurratorManagerDone');
+        let userTilesCurratorEditorDiv = document.getElementById('userTilesCurratorEditorDiv');
+
+        reportForTilesCurrator.setAttribute("style", "display: none;");
+        tilesCurratorManagerDone.setAttribute("style", "visibility: visible;");
+        userTilesCurratorEditorDiv.setAttribute("style", "display: none;");
+      }
+
+      function tilesCurratorReport(month) {
+        let reportForTilesCurrator = document.getElementById('reportForTilesCurrator');
+        let tilesCurratorManagerDone = document.getElementById('tilesCurratorManagerDone');
+        let userTilesCurratorEditorDiv = document.getElementById('userTilesCurratorEditorDiv');
+        let userTilesString = month.toLowerCase() + '_tilesbyuser';
+
+        $http.get(`/${userTilesString}/${currentUserId}`)
+        .then(userTilesData=>{
+          let userTiles = userTilesData.data;
+          if (userTiles.length > 1) {
+            let defaultTiles = userTiles.filter(tile=>{
+              return(tile.type === 'default');
+            });
+            let mtwtTiles = userTiles.filter(tile=>{
+              return(tile.type === 'mtwt');
+            });
+            let fridayTiles = userTiles.filter(tile=>{
+              return(tile.type === 'friday');
+            });
+            let saturdayTiles = userTiles.filter(tile=>{
+              return(tile.type === 'saturday');
+            });
+            let sundayTiles = userTiles.filter(tile=>{
+              return(tile.type === 'sunday');
+            });
+            let holidayTiles = userTiles.filter(tile=>{
+              return(tile.type === 'holiday');
+            });
+            let weekTiles = userTiles.filter(tile=>{
+              return(tile.type === 'week');
+            });
+            vm.tilesCurratorReporting = [];
+            vm.tilesCurratorReporting[0] = {};
+            vm.tilesCurratorReporting[0].month = month;
+            vm.tilesCurratorReporting[0].theme = userTiles[0].theme;
+            vm.tilesCurratorReporting[0].totalWorks = userTiles.length;
+            vm.tilesCurratorReporting[0].defaultTiles = defaultTiles.length;
+            vm.tilesCurratorReporting[0].mtwtTiles = mtwtTiles.length;
+            vm.tilesCurratorReporting[0].fridayTiles = fridayTiles.length;
+            vm.tilesCurratorReporting[0].saturdayTiles = saturdayTiles.length;
+            vm.tilesCurratorReporting[0].sundayTiles = sundayTiles.length;
+            vm.tilesCurratorReporting[0].holidayTiles = holidayTiles.length;
+            vm.tilesCurratorReporting[0].weekTiles = weekTiles.length;
+          }
+        });
+
+
+        reportForTilesCurrator.setAttribute("style", "display: initial;");
+        tilesCurratorManagerDone.setAttribute("style", "visibility: hidden;");
+        userTilesCurratorEditorDiv.setAttribute("style", "display: none;");
+
+      }
 
       function userMessageDeleteConfirmClick(messageId) {
         let index = 0;

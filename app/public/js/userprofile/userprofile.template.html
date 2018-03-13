@@ -4875,6 +4875,35 @@
 
     </div>
 
+    <div id="reportForTilesCurrator">
+      <div id="tilesCurratorReportBar">
+        <a href="" class="btn" id="tilesCurratorReportDone" ng-click="$ctrl.tileCurratorReportDone()">done</a>
+        <h1>Tiles Report</h1>
+      </div>
+      <div id="tilesCurratorReportBody">
+
+        <main ng-repeat="report in $ctrl.tilesCurratorReporting | orderBy : $ctrl.sortBy">
+          <div class="reporter">
+            <h2 id="tilesCurratorReportMonth">{{report.month}}</h2>
+            <h2>Theme: {{report.theme}}</h2>
+            <h2>Total Tiles: {{report.totalWorks}}</h2>
+            <br>
+            <p>Default Tiles: {{report.defaultTiles}}</p>
+            <p>Monday-Tuesday-Wednesday-Thursday Tiles: {{report.mtwtTiles}}</p>
+            <p>Friday Tiles: {{report.fridayTiles}}</p>
+            <p>Saturday Tiles: {{report.saturdayTiles}}</p>
+            <p>Sunday Tiles: {{report.sundayTiles}}</p>
+            <p>Holiday Tiles: {{report.holidayTiles}}</p>
+            <p>Week Tiles: {{report.weekTiles}}</p>
+  
+          </div>
+
+        </main>
+
+      </div>
+
+    </div>
+
     <div id="userTilesCurratorEditorDiv">
       <div id="userTilesCurratorEditorBar">
         <a href="" class="btn" id="userTilesCurratorEditorDoneButton" ng-click="$ctrl.userTilesCurratorEditorDone()">done</a>
