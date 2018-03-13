@@ -218,6 +218,7 @@
       vm.userDeleteMessage = userDeleteMessage;
       vm.userMessageDeleteCancel = userMessageDeleteCancel;
       vm.userMessageDeleteConfirmClick = userMessageDeleteConfirmClick;
+      vm.tileModuleDisplay = tileModuleDisplay;
 
       function userMessageDeleteConfirmClick(messageId) {
         let index = 0;
@@ -1052,28 +1053,52 @@
         userTilesCurratorEditorDiv.setAttribute("style", "display: none;");
       }
 
-      function musicModuleDisplay() {
+      function tileModuleDisplay() {
+        let tileModuleDisplayButton = document.getElementById('tileModuleDisplayButton');
         let availableArtModules = document.getElementById('availableArtModules');
         let artModuleDisplayButton = document.getElementById('artModuleDisplayButton');
         let availableMusicModules = document.getElementById('availableMusicModules');
         let musicModuleDisplayButton = document.getElementById('musicModuleDisplayButton');
+        let availableTilesModules = document.getElementById('availableTilesModules');
+
+        availableArtModules.setAttribute("style", "display: none;");
+        artModuleDisplayButton.setAttribute("style", "visibility: visible;");
+        availableMusicModules.setAttribute("style", "display: none;");
+        musicModuleDisplayButton.setAttribute("style", "visibility: visible;");
+        availableTilesModules.setAttribute("style", "display: initial;");
+        tileModuleDisplayButton.setAttribute("style", "visibility: hidden;");
+      }
+
+      function musicModuleDisplay() {
+        let tileModuleDisplayButton = document.getElementById('tileModuleDisplayButton');
+        let availableArtModules = document.getElementById('availableArtModules');
+        let artModuleDisplayButton = document.getElementById('artModuleDisplayButton');
+        let availableMusicModules = document.getElementById('availableMusicModules');
+        let musicModuleDisplayButton = document.getElementById('musicModuleDisplayButton');
+        let availableTilesModules = document.getElementById('availableTilesModules');
 
         availableArtModules.setAttribute("style", "display: none;");
         artModuleDisplayButton.setAttribute("style", "visibility: visible;");
         availableMusicModules.setAttribute("style", "display: initial;");
         musicModuleDisplayButton.setAttribute("style", "visibility: hidden;");
+        availableTilesModules.setAttribute("style", "display: none;");
+        tileModuleDisplayButton.setAttribute("style", "visibility: visible;");
       }
 
       function artModuleDisplay() {
+        let tileModuleDisplayButton = document.getElementById('tileModuleDisplayButton');
         let availableArtModules = document.getElementById('availableArtModules');
         let artModuleDisplayButton = document.getElementById('artModuleDisplayButton');
         let availableMusicModules = document.getElementById('availableMusicModules');
         let musicModuleDisplayButton = document.getElementById('musicModuleDisplayButton');
+        let availableTilesModules = document.getElementById('availableTilesModules');
 
         availableArtModules.setAttribute("style", "display: initial;");
         artModuleDisplayButton.setAttribute("style", "visibility: hidden;");
         availableMusicModules.setAttribute("style", "display: none;");
         musicModuleDisplayButton.setAttribute("style", "visibility: visible;");
+        availableTilesModules.setAttribute("style", "display: none;");
+        tileModuleDisplayButton.setAttribute("style", "visibility: visible;");
       }
 
       function observanceReportDone() {
@@ -2110,6 +2135,8 @@
         let modulesManagementDiv = document.getElementById('modulesManagementDiv');
         let availableMusicModules = document.getElementById('availableMusicModules');
         let musicModuleDisplayButton = document.getElementById('musicModuleDisplayButton');
+        let tileModuleDisplayButton = document.getElementById('tileModuleDisplayButton');
+        let availableTilesModules = document.getElementById('availableTilesModules');
 
         modulesManagerButton.setAttribute("style", "visibility: visible;");
         modulesZone.setAttribute("style", "opacity: 1.0;");
@@ -2118,6 +2145,8 @@
         availableArtModules.setAttribute("style", "display: none;");
         availableMusicModules.setAttribute("style", "display: none;");
         musicModuleDisplayButton.setAttribute("style", "visibility: visible;");
+        tileModuleDisplayButton.setAttribute("style", "visibility: visible;");
+        availableTilesModules.setAttribute("style", "display: none;");
       }
 
       function modulesManager() {

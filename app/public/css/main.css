@@ -7267,6 +7267,10 @@ footer img {
   padding-left: 2vmin;
 }
 
+#availableTilesModules {
+  display: none;
+}
+
 #availableArtModules {
   display: none;
 }
