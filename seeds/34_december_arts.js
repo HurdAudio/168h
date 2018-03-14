@@ -3969,7 +3969,7 @@ exports.seed = function(knex, Promise) {
           id: 199,
           user_id: 1,
           theme: 'Pulp Art',
-          img_path: './img/december/.jpg',
+          img_path: './img/december/25-05-16,WS.jpg',
           title: 'Western Story',
           artist: 'Charles Laselle',
           year: '1925',
@@ -3989,7 +3989,7 @@ exports.seed = function(knex, Promise) {
           id: 200,
           user_id: 1,
           theme: 'Pulp Art',
-          img_path: './img/december/.jpg',
+          img_path: './img/december/43-12,FFM.jpg',
           title: 'Famous Fantastic Mysteries',
           artist: 'Lawrence (Sterne Stevens)',
           year: '1943',
@@ -4001,6 +4001,106 @@ exports.seed = function(knex, Promise) {
             "friday": [ 30, 12, 20, 26 ],
             "saturday": [ 29, 11, 19, 25 ],
             "sunday": [ 28, 10, 18, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 201,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/30-10,StNicholas.jpg',
+          title: 'St Nicholas',
+          artist: 'Manning de V. Lee',
+          year: '1930',
+          rule: {
+            "monday": [ 28, 10, 18, 24 ],
+            "tuesday": [ 27, 8, 17, 23 ],
+            "wednesday": [ 26, 8, 27, 23 ],
+            "thursday": [ 1, 14, 22, 28 ],
+            "friday": [ 31, 13, 21, 27 ],
+            "saturday": [ 30, 12, 20, 26 ],
+            "sunday": [ 29, 11, 19, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 202,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/40-04,FiveNovels.jpg',
+          title: 'Five Novels',
+          artist: 'M. Lincoln Lee',
+          year: '1940',
+          rule: {
+            "monday": [ 29, 11, 19, 25 ],
+            "tuesday": [ 28, 10, 18, 24 ],
+            "wednesday": [ 27, 8, 17, 23 ],
+            "thursday": [ 26, 8, 27, 23 ],
+            "friday": [ 1, 14, 22, 28 ],
+            "saturday": [ 31, 13, 21, 27 ],
+            "sunday": [ 30, 12, 20, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 203,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/41-Spr,WolrdsBestComics.jpg',
+          title: 'Spr World\'s Best Comics',
+          artist: 'John "Jack" Lehti',
+          year: '1941',
+          rule: {
+            "monday": [ 31, 13, 21, 27 ],
+            "tuesday": [ 30, 12, 20, 26 ],
+            "wednesday": [ 29, 11, 19, 25 ],
+            "thursday": [ 28, 9, 18, 24 ],
+            "friday": [ 27, 9, 28, 24 ],
+            "saturday": [ 2, 15, 23, 29 ],
+            "sunday": [ 1, 14, 22, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 204,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/02-00,TheBookman.jpg',
+          title: 'The Bookman',
+          artist: 'Franz Leyendecker',
+          year: '1902',
+          rule: {
+            "monday": [ 1, 14, 22, 28 ],
+            "tuesday": [ 31, 13, 21, 27 ],
+            "wednesday": [ 30, 12, 20, 26 ],
+            "thursday": [ 29, 11, 19, 25 ],
+            "friday": [ 28, 9, 18, 24 ],
+            "saturday": [ 27, 9, 28, 24 ],
+            "sunday": [ 2, 15, 23, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 205,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/32-12,AceHigh.jpg',
+          title: 'Ace-High Magazine',
+          artist: 'Richard Lillis',
+          year: '1932',
+          rule: {
+            "monday": [ 2, 15, 23, 29 ],
+            "tuesday": [ 1, 14, 22, 28 ],
+            "wednesday": [ 31, 13, 21, 27 ],
+            "thursday": [ 30, 12, 20, 26 ],
+            "friday": [ 29, 11, 19, 25 ],
+            "saturday": [ 28, 9, 18, 24 ],
+            "sunday": [ 27, 9, 28, 24 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
