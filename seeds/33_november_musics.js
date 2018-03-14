@@ -2218,6 +2218,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 124,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2971762109/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://rushhourmusic.bandcamp.com/album/pantsula-the-rise-of-electronic-dance-music-in-south-africa-1988-90',
+          a_string: 'Pantsula! - The Rise Of Electronic Dance Music In South Africa, 1988-90 by Various Artists',
+          rule: {
+            "monday": [ 15, 26, 7, 9 ],
+            "tuesday": [ 19, 30, 11, 15 ],
+            "wednesday": [ 18, 29, 10, 14 ],
+            "thursday": [ 17, 28, 9, 13 ],
+            "saturday": [ 16, 27, 8, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 125,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2741123866/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://onthecornerrecords.bandcamp.com/album/zaire-e-p',
+          a_string: 'Zaire E.P. by DJ Khalab',
+          rule: {
+            "monday": [ 16, 27, 8, 10 ],
+            "tuesday": [ 15, 26, 7, 9 ],
+            "wednesday": [ 19, 30, 11, 15 ],
+            "thursday": [ 18, 29, 10, 14 ],
+            "saturday": [ 17, 28, 9, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 126,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1016409469/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://onthecornerrecords.bandcamp.com/album/collocutor-black-satin',
+          a_string: 'Collocutor - Black Satin by Collocutor',
+          rule: {
+            "monday": [ 18, 29, 10, 14 ],
+            "tuesday": [ 17, 28, 9, 11 ],
+            "wednesday": [ 16, 27, 8, 10 ],
+            "thursday": [ 20, 1, 12, 16 ],
+            "saturday": [ 19, 30, 11, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
