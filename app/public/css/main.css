@@ -7329,8 +7329,8 @@ footer img {
 }
 
 
-/* .day {
-  background-image: url(../img/january_tiles/frozen-583241_1920.jpg);
+.day {
+  background-image: url(../img/tiles/background-1972355_1920.jpg);
   background-repeat: no-repeat;
-  background-size: 140%;
-} */
+  background-size: 100%;
+}
