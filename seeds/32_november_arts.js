@@ -4204,6 +4204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 211,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/spears-1974.jpg',
+          title: 'Spears',
+          artist: 'Moshe Kupferman',
+          year: '1974',
+          rule: {
+            "monday": [ 7, 12, 17, 23 ],
+            "tuesday": [ 6, 11, 17, 21 ],
+            "wednesday": [ 5, 8, 16, 21 ],
+            "thursday": [ 4, 8, 15, 20 ],
+            "friday": [ 3, 8, 14, 19 ],
+            "saturday": [ 2, 7, 13, 20 ],
+            "sunday": [ 8, 13, 19, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 212,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/a-pair-of-unbeyond-1974.jpg',
+          title: 'A pair of unbeyond',
+          artist: 'Kishio Suga',
+          year: '1974',
+          rule: {
+            "monday": [ 8, 13, 19, 24 ],
+            "tuesday": [ 7, 12, 17, 23 ],
+            "wednesday": [ 6, 11, 17, 21 ],
+            "thursday": [ 5, 8, 16, 21 ],
+            "friday": [ 4, 8, 15, 20 ],
+            "saturday": [ 3, 8, 14, 19 ],
+            "sunday": [ 2, 7, 13, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 213,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/round-wooden-bar-in-red-blue-orange-green-yellow-and-violet-1975.jpg',
+          title: 'Round Wooden Bar in Red, Blue, Orange, Green, Yellow and Violet',
+          artist: 'Andre Cadere',
+          year: '1975',
+          rule: {
+            "monday": [ 2, 7, 13, 20 ],
+            "tuesday": [ 8, 13, 19, 24 ],
+            "wednesday": [ 7, 12, 17, 23 ],
+            "thursday": [ 6, 11, 17, 21 ],
+            "friday": [ 5, 8, 16, 21 ],
+            "saturday": [ 4, 8, 15, 20 ],
+            "sunday": [ 3, 8, 14, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 214,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/indian-yellow-1975.jpg',
+          title: 'Indian Yellow',
+          artist: 'Marcia Hafif',
+          year: '1975',
+          rule: {
+            "monday": [ 3, 8, 14, 19 ],
+            "tuesday": [ 2, 7, 13, 20 ],
+            "wednesday": [ 8, 13, 19, 24 ],
+            "thursday": [ 7, 12, 17, 23 ],
+            "friday": [ 6, 11, 17, 21 ],
+            "saturday": [ 5, 8, 16, 21 ],
+            "sunday": [ 4, 8, 15, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 215,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/espai-horizontal-amb-nou-horizontal-1976.jpg',
+          title: 'Espai horizontal amb nou horizontal',
+          artist: 'Joan Hernandez Pijuan',
+          year: '1976',
+          rule: {
+            "monday": [ 4, 8, 15, 20 ],
+            "tuesday": [ 3, 8, 14, 19 ],
+            "wednesday": [ 2, 7, 13, 20 ],
+            "thursday": [ 8, 13, 19, 24 ],
+            "friday": [ 7, 12, 17, 23 ],
+            "saturday": [ 6, 11, 17, 21 ],
+            "sunday": [ 5, 8, 16, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
