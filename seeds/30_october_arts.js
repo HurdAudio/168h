@@ -4404,6 +4404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 221,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_sovaviapost_0006.jpg',
+          title: 'Honor to the falcons of Stalin...',
+          artist: 'V. Deni and Nikolay Dolgorukov',
+          year: '1937',
+          rule: {
+            "monday": [ 1, 12, 13, 27 ],
+            "tuesday": [ 10, 11, 22, 26 ],
+            "wednesday": [ 6, 17, 28, 1 ],
+            "thursday": [ 5, 16, 27, 31 ],
+            "friday": [ 4, 15, 26, 30 ],
+            "saturday": [ 3, 14, 25, 29 ],
+            "sunday": [ 2, 13, 24, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 222,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_sovaviapost_0005.jpg',
+          title: 'Every kolhoz, each plant...',
+          artist: 'Karachentsov Petr Yakovlevich',
+          year: '1936',
+          rule: {
+            "monday": [ 2, 13, 24, 28 ],
+            "tuesday": [ 1, 12, 13, 27 ],
+            "wednesday": [ 10, 11, 22, 26 ],
+            "thursday": [ 6, 17, 28, 1 ],
+            "friday": [ 5, 16, 27, 31 ],
+            "saturday": [ 4, 15, 26, 30 ],
+            "sunday": [ 3, 14, 25, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 223,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_sovaviapost_0004.jpg',
+          title: 'Komsomolets, young worker, pioneer!..',
+          artist: 'I. Buev and Iordansky Boris Vyacheslavovich',
+          year: '1934',
+          rule: {
+            "monday": [ 3, 14, 25, 29 ],
+            "tuesday": [ 2, 13, 24, 28 ],
+            "wednesday": [ 1, 12, 13, 27 ],
+            "thursday": [ 10, 11, 22, 26 ],
+            "friday": [ 6, 17, 28, 1 ],
+            "saturday": [ 5, 16, 27, 31 ],
+            "sunday": [ 4, 15, 26, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 224,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_sovaviapost_0003.jpg',
+          title: 'Youth, - to airplanes',
+          artist: 'Gustav Klutsis',
+          year: '1934',
+          rule: {
+            "monday": [ 5, 16, 27, 31 ],
+            "tuesday": [ 4, 15, 26, 30 ],
+            "wednesday": [ 3, 14, 25, 29 ],
+            "thursday": [ 2, 13, 14, 28 ],
+            "friday": [ 11, 12, 23, 27 ],
+            "saturday": [ 7, 18, 29, 2 ],
+            "sunday": [ 6, 17, 28, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 225,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_sovaviapost_0007.jpg',
+          title: 'Glory to the mighty aviation of the country of the Socialism! 1939',
+          artist: '?',
+          year: '1939',
+          rule: {
+            "monday": [ 6, 17, 28, 1 ],
+            "tuesday": [ 5, 16, 27, 31 ],
+            "wednesday": [ 4, 15, 26, 30 ],
+            "thursday": [ 3, 14, 25, 29 ],
+            "friday": [ 2, 13, 14, 28 ],
+            "saturday": [ 11, 12, 23, 27 ],
+            "sunday": [ 7, 18, 29, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
