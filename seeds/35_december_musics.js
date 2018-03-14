@@ -2110,6 +2110,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 118,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1126519492/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://arthuri.bandcamp.com/album/coelho-branco',
+          a_string: 'Coelho Branco by Arthuri',
+          rule: {
+            "monday": [ 19, 25, 31, 6 ],
+            "tuesday": [ 23, 29, 4, 10 ],
+            "wednesday": [ 22, 28, 3, 8 ],
+            "thursday": [ 21, 27, 2, 8 ],
+            "saturday": [ 18, 26, 1, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 119,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3077687890/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://arthuri.bandcamp.com/album/coelho-branco-vol-2',
+          a_string: 'Coelho Branco Vol 2 by Arthuri',
+          rule: {
+            "monday": [ 19, 27, 2, 8 ],
+            "tuesday": [ 20, 26, 1, 7 ],
+            "wednesday": [ 24, 30, 5, 11 ],
+            "thursday": [ 23, 29, 4, 9 ],
+            "saturday": [ 22, 28, 3, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 120,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2497221679/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://camaronesorquestraguitarristica.bandcamp.com/album/feeexta',
+          a_string: 'Feeexta by Camarones Orquestra Guitarrística',
+          rule: {
+            "monday": [ 22, 28, 3, 9 ],
+            "tuesday": [ 19, 27, 2, 8 ],
+            "wednesday": [ 20, 26, 1, 7 ],
+            "thursday": [ 24, 30, 5, 11 ],
+            "saturday": [ 23, 29, 4, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
