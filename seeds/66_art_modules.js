@@ -484,6 +484,66 @@ exports.seed = function(knex, Promise) {
           public: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 41,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/294106-cute-cat.jpg',
+          title: 'Cute Cat',
+          artist: '?',
+          year: '2016',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 42,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/294089-cute-cat.jpg',
+          title: 'Cute Cat',
+          artist: 'Kyle Rooney ',
+          year: '2016',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 43,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/269732-cat-wallpapers.jpg',
+          title: 'Cat Wallpaper',
+          artist: 'Sarah Michelle',
+          year: '2016',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 44,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/269629-cat-image.jpg',
+          title: 'Cat',
+          artist: 'Zalman Lent',
+          year: '2016',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 45,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/269734-cat-wallpapers.jpg',
+          title: 'Cat Wallpaper',
+          artist: 'Colin Fichtner',
+          year: '2016',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
