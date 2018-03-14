@@ -522,6 +522,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#F3FEFE',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 38,
+          user_id: 1,
+          theme: 'Silk/Velvet',
+          type: 'week',
+          src_string: '../img/february_tiles/8-red-fold.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '170%',
+          color_dark: '#7C0000',
+          color_medium: '#F4092B',
+          color_light: '#FAB3E1',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
