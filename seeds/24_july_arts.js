@@ -5004,6 +5004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 251,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/hyacinthe-rigaud-louis-xiv-roi-de-france-1638-1715-google-art-project.jpg',
+          title: 'Louis XIV, Roi De France',
+          artist: 'Hyacinthe Rigaud',
+          year: '?',
+          rule: {
+            "monday": [ 4, 15, 26, 27 ],
+            "tuesday": [ 3, 14, 24, 26 ],
+            "wednesday": [ 2, 13, 24, 25 ],
+            "thursday": [ 1, 12, 23, 3 ],
+            "friday": [ 7, 18, 29, 8 ],
+            "saturday": [ 6, 17, 28, 8 ],
+            "sunday": [ 5, 16, 27, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 252,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/display-image-11.jpg',
+          title: 'Market Scene with a Pick-pocket',
+          artist: 'Louise Moillon',
+          year: '?',
+          rule: {
+            "monday": [ 6, 17, 28, 8 ],
+            "tuesday": [ 5, 16, 27, 28 ],
+            "wednesday": [ 4, 15, 25, 27 ],
+            "thursday": [ 3, 14, 25, 26 ],
+            "friday": [ 2, 13, 24, 4 ],
+            "saturday": [ 8, 19, 30, 9 ],
+            "sunday": [ 7, 18, 29, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 253,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/the-triumph-of-galatea.jpg',
+          title: 'The Triumph of Galatea',
+          artist: 'Jacques Stella',
+          year: '?',
+          rule: {
+            "monday": [ 7, 18, 29, 9 ],
+            "tuesday": [ 6, 17, 28, 8 ],
+            "wednesday": [ 5, 16, 27, 28 ],
+            "thursday": [ 4, 15, 25, 27 ],
+            "friday": [ 3, 14, 25, 26 ],
+            "saturday": [ 2, 13, 24, 4 ],
+            "sunday": [ 8, 19, 30, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 254,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/lute-player.jpg',
+          title: 'Lute Player',
+          artist: 'Nicolas Tournier',
+          year: '?',
+          rule: {
+            "monday": [ 8, 19, 30, 9 ],
+            "tuesday": [ 7, 18, 29, 9 ],
+            "wednesday": [ 6, 17, 28, 8 ],
+            "thursday": [ 5, 16, 27, 28 ],
+            "friday": [ 4, 15, 25, 27 ],
+            "saturday": [ 3, 14, 25, 26 ],
+            "sunday": [ 2, 13, 24, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 255,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/the-annunciation-1500.jpg',
+          title: 'The Annunciation',
+          artist: 'Jean Hey',
+          year: '1500',
+          rule: {
+            "monday": [ 2, 13, 24, 4 ],
+            "tuesday": [ 8, 19, 30, 9 ],
+            "wednesday": [ 7, 18, 29, 9 ],
+            "thursday": [ 6, 17, 28, 8 ],
+            "friday": [ 5, 16, 27, 28 ],
+            "saturday": [ 4, 15, 25, 27 ],
+            "sunday": [ 3, 14, 25, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
