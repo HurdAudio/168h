@@ -2650,6 +2650,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 148,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2386713785/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://thesewimps.bandcamp.com/album/super-me',
+          a_string: 'Super Me by wimps',
+          rule: {
+            "monday": [ 23, 25, 29, 6 ],
+            "tuesday": [ 22, 24, 28, 5 ],
+            "wednesday": [ 21, 23, 27, 4 ],
+            "thursday": [ 20, 21, 26, 3 ],
+            "saturday": [ 19, 21, 25, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 149,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1386862041/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://wharfcatrecords.bandcamp.com/album/800',
+          a_string: '800 by Bichkraft',
+          rule: {
+            "monday": [ 19, 21, 25, 2 ],
+            "tuesday": [ 23, 25, 29, 6 ],
+            "wednesday": [ 22, 24, 28, 5 ],
+            "thursday": [ 21, 23, 27, 4 ],
+            "saturday": [ 20, 21, 26, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 150,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1943120878/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://craterbabes.bandcamp.com/album/unearth',
+          a_string: 'Unearth by Crater',
+          rule: {
+            "monday": [ 20, 21, 26, 3 ],
+            "tuesday": [ 19, 21, 25, 2 ],
+            "wednesday": [ 23, 25, 29, 6 ],
+            "thursday": [ 22, 24, 28, 5 ],
+            "saturday": [ 21, 23, 27, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
