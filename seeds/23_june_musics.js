@@ -2758,6 +2758,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 154,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2476434641/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://kammarheit.bandcamp.com/album/the-starwheel',
+          a_string: 'The Starwheel by Kammarheit',
+          rule: {
+            "monday": [ 22, 25, 1, 12 ],
+            "tuesday": [ 20, 28, 30, 11 ],
+            "wednesday": [ 24, 28, 4, 15 ],
+            "thursday": [ 23, 26, 1, 13 ],
+            "saturday": [ 22, 26, 1, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 155,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3086856873/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://kammarheit.bandcamp.com/album/kollektionen',
+          a_string: 'Kollektionen by Kammarheit',
+          rule: {
+            "monday": [ 22, 26, 1, 13 ],
+            "tuesday": [ 22, 25, 1, 12 ],
+            "wednesday": [ 20, 28, 30, 11 ],
+            "thursday": [ 24, 28, 4, 15 ],
+            "saturday": [ 23, 26, 1, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 156,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2291309435/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://kammarheit.bandcamp.com/album/the-nest',
+          a_string: 'The Nest by Kammarheit',
+          rule: {
+            "monday": [ 23, 26, 1, 13 ],
+            "tuesday": [ 22, 26, 1, 13 ],
+            "wednesday": [ 22, 25, 1, 12 ],
+            "thursday": [ 20, 28, 30, 11 ],
+            "saturday": [ 24, 28, 4, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
