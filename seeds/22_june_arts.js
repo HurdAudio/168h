@@ -5204,6 +5204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 261,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/8739335751_bbe0ed0c12_b.jpg',
+          title: 'The Lives We Lead Will Leave On Their Own',
+          artist: 'Austin Tott',
+          year: '2013',
+          rule: {
+            "monday": [ 7, 17, 27, 3 ],
+            "tuesday": [ 6, 16, 26, 4 ],
+            "wednesday": [ 5, 15, 25, 3 ],
+            "thursday": [ 4, 14, 24, 2 ],
+            "friday": [ 13, 23, 3, 1 ],
+            "saturday": [ 2, 12, 22, 30 ],
+            "sunday": [ 1, 11, 21, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 262,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/il_570xN.1312040886_efh8.jpg',
+          title: 'Trophy II',
+          artist: 'Vanessa Paxton',
+          year: '2017',
+          rule: {
+            "monday": [ 1, 11, 21, 29 ],
+            "tuesday": [ 7, 17, 27, 3 ],
+            "wednesday": [ 6, 16, 26, 4 ],
+            "thursday": [ 5, 15, 25, 3 ],
+            "friday": [ 4, 14, 24, 2 ],
+            "saturday": [ 13, 23, 3, 1 ],
+            "sunday": [ 2, 12, 22, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 263,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/Copyright-Kristi-Sutton-Elias.jpg',
+          title: 'Fine Art Luxury Glamour',
+          artist: 'Kristi Sutton Elias',
+          year: '2013',
+          rule: {
+            "monday": [ 2, 12, 22, 30 ],
+            "tuesday": [ 1, 11, 21, 29 ],
+            "wednesday": [ 7, 17, 27, 3 ],
+            "thursday": [ 6, 16, 26, 4 ],
+            "friday": [ 5, 15, 25, 3 ],
+            "saturday": [ 4, 14, 24, 2 ],
+            "sunday": [ 13, 23, 3, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 264,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/Window-to-the-Sea-resize.jpg',
+          title: 'Window to the Sea',
+          artist: 'Ed King',
+          year: '2013',
+          rule: {
+            "monday": [ 13, 23, 3, 1 ],
+            "tuesday": [ 2, 12, 22, 30 ],
+            "wednesday": [ 1, 11, 21, 29 ],
+            "thursday": [ 7, 17, 27, 3 ],
+            "friday": [ 6, 16, 26, 4 ],
+            "saturday": [ 5, 15, 25, 3 ],
+            "sunday": [ 4, 14, 24, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 265,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/craigroyal-1.jpg',
+          title: 'Graphic Design',
+          artist: 'Craig Royal',
+          year: '?',
+          rule: {
+            "monday": [ 4, 14, 24, 2 ],
+            "tuesday": [ 13, 23, 3, 1 ],
+            "wednesday": [ 2, 12, 22, 30 ],
+            "thursday": [ 1, 11, 21, 29 ],
+            "friday": [ 7, 17, 27, 3 ],
+            "saturday": [ 6, 16, 26, 4 ],
+            "sunday": [ 5, 15, 25, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
