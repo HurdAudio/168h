@@ -4804,6 +4804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 241,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/blue-bird.jpg',
+          title: 'Blue Bird',
+          artist: 'Konstantin Somov',
+          year: '1918',
+          rule: {
+            "monday": [ 1, 4, 13, 29 ],
+            "tuesday": [ 7, 11, 19, 4 ],
+            "wednesday": [ 6, 9, 18, 3 ],
+            "thursday": [ 5, 9, 17, 2 ],
+            "friday": [ 4, 8, 16, 1 ],
+            "saturday": [ 3, 5, 15, 31 ],
+            "sunday": [ 2, 5, 14, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 242,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/ichikawa-sansh-as-a-moxa-peddler-1926.jpg',
+          title: 'Ichikawa Sansho as a Sweetmeat Peddler',
+          artist: 'Natori Shunsen',
+          year: '1926',
+          rule: {
+            "monday": [ 2, 5, 14, 30 ],
+            "tuesday": [ 1, 4, 13, 29 ],
+            "wednesday": [ 7, 11, 19, 4 ],
+            "thursday": [ 6, 9, 18, 3 ],
+            "friday": [ 5, 9, 17, 2 ],
+            "saturday": [ 4, 8, 16, 1 ],
+            "sunday": [ 3, 5, 15, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 243,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/wheel-well.jpg',
+          title: 'The Old Well',
+          artist: 'Konstantinos Maleas',
+          year: '1923',
+          rule: {
+            "monday": [ 3, 5, 15, 31 ],
+            "tuesday": [ 2, 5, 14, 30 ],
+            "wednesday": [ 1, 4, 13, 29 ],
+            "thursday": [ 7, 11, 19, 4 ],
+            "friday": [ 6, 9, 18, 3 ],
+            "saturday": [ 5, 9, 17, 2 ],
+            "sunday": [ 4, 8, 16, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 244,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/breakfast-of-the-birds-1934(1).jpg',
+          title: 'Breakfast of the Birds',
+          artist: 'Gabriele Munter',
+          year: '1934',
+          rule: {
+            "monday": [ 4, 8, 16, 1 ],
+            "tuesday": [ 3, 5, 15, 31 ],
+            "wednesday": [ 2, 5, 14, 30 ],
+            "thursday": [ 1, 4, 13, 29 ],
+            "friday": [ 7, 11, 19, 4 ],
+            "saturday": [ 6, 9, 18, 3 ],
+            "sunday": [ 5, 9, 17, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 245,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/a-clown-1929.jpg',
+          title: 'A Clown',
+          artist: 'George Luks',
+          year: '1929',
+          rule: {
+            "monday": [ 6, 10, 18, 3 ],
+            "tuesday": [ 5, 9, 17, 2 ],
+            "wednesday": [ 4, 6, 16, 1 ],
+            "thursday": [ 3, 6, 15, 31 ],
+            "friday": [ 2, 5, 14, 30 ],
+            "saturday": [ 8, 12, 20, 5 ],
+            "sunday": [ 7, 10, 19, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
