@@ -6204,6 +6204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 311,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/grille-en-quatre-1968.jpg',
+          title: 'Grille en quatre',
+          artist: 'Samuel Buri',
+          year: '1968',
+          rule: {
+            "monday": [ 14, 15, 26, 18 ],
+            "tuesday": [ 17, 19, 11, 31 ],
+            "wednesday": [ 19, 20, 12, 15 ],
+            "thursday": [ 22, 23, 14, 18 ],
+            "friday": [ 25, 27, 28, 30 ],
+            "saturday": [ 27, 29, 2, 5 ],
+            "sunday": [ 29, 31, 1, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 312,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/ice-blue-1972.jpg',
+          title: 'Ice Blue',
+          artist: 'Terry Frost',
+          year: '1972',
+          rule: {
+            "monday": [ 29, 31, 1, 4 ],
+            "tuesday": [ 14, 15, 26, 18 ],
+            "wednesday": [ 17, 19, 11, 31 ],
+            "thursday": [ 19, 20, 12, 15 ],
+            "friday": [ 22, 23, 14, 18 ],
+            "saturday": [ 25, 27, 28, 30 ],
+            "sunday": [ 27, 29, 2, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 313,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/contemplations-on-geraniums-1952.jpg',
+          title: 'Contemplations on Geraniums',
+          artist: 'John Ferren',
+          year: '1952',
+          rule: {
+            "monday": [ 27, 29, 2, 5 ],
+            "tuesday": [ 29, 31, 1, 4 ],
+            "wednesday": [ 14, 15, 26, 18 ],
+            "thursday": [ 17, 19, 11, 31 ],
+            "friday": [ 19, 20, 12, 15 ],
+            "saturday": [ 22, 23, 14, 18 ],
+            "sunday": [ 25, 27, 28, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 314,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/white-on-white-malevich-1918.png',
+          title: 'Suprematist Composition: White on White',
+          artist: 'Kazimir Malevich',
+          year: '1917 - 1918',
+          rule: {
+            "monday": [ 25, 27, 28, 30 ],
+            "tuesday": [ 27, 29, 2, 5 ],
+            "wednesday": [ 29, 31, 1, 4 ],
+            "thursday": [ 14, 15, 26, 18 ],
+            "friday": [ 17, 19, 11, 31 ],
+            "saturday": [ 19, 20, 12, 15 ],
+            "sunday": [ 22, 23, 14, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 315,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/amorphic-forms-1944.jpg',
+          title: 'Amorphic Forms',
+          artist: 'William Baziotes',
+          year: '1944',
+          rule: {
+            "monday": [ 22, 23, 14, 18 ],
+            "tuesday": [ 25, 27, 28, 30 ],
+            "wednesday": [ 27, 29, 2, 5 ],
+            "thursday": [ 29, 31, 1, 4 ],
+            "friday": [ 14, 15, 26, 18 ],
+            "saturday": [ 17, 19, 11, 31 ],
+            "sunday": [ 19, 20, 12, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
