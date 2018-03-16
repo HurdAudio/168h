@@ -544,6 +544,66 @@ exports.seed = function(knex, Promise) {
           public: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 46,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/cute_kitten_1.jpg',
+          title: 'Cute Kitten',
+          artist: 'Ivan Nava',
+          year: '2009',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 47,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/cute_kitten_2.jpg',
+          title: 'Blue Gaze',
+          artist: 'Douzy',
+          year: '2009',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 48,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/cute_kitten_3.jpg',
+          title: 'title unknown',
+          artist: '?',
+          year: '?',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 49,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/cute_kitten_4.jpg',
+          title: 'title unknown',
+          artist: '?',
+          year: '?',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 50,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/cute_kitten_5.jpg',
+          title: 'title unknown',
+          artist: '?',
+          year: '?',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
