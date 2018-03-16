@@ -2866,6 +2866,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 160,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=87259311/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://marcolucchi.bandcamp.com/album/louange-leternel',
+          a_string: 'Louange à l&#39;Eternel by Marco Lucchi, Mean Flow, Glenn Sogge &amp; Simon McCorry',
+          rule: {
+            "monday": [ 25, 31, 7, 20 ],
+            "tuesday": [ 24, 30, 6, 19 ],
+            "wednesday": [ 23, 29, 5, 18 ],
+            "thursday": [ 27, 3, 9, 22 ],
+            "saturday": [ 26, 1, 8, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 161,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=463622247/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://rhizomes.bandcamp.com/album/d-sseldorf-recital-2',
+          a_string: 'Düsseldorf recital by Dante Boon',
+          rule: {
+            "monday": [ 27, 2, 9, 22 ],
+            "tuesday": [ 26, 1, 8, 21 ],
+            "wednesday": [ 25, 31, 7, 20 ],
+            "thursday": [ 24, 30, 6, 19 ],
+            "saturday": [ 28, 4, 10, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 162,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2384785088/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://eileanrec.bandcamp.com/album/scale-of-blindness',
+          a_string: 'Scale of Blindness by Benjamin Finger',
+          rule: {
+            "monday": [ 28, 4, 10, 23 ],
+            "tuesday": [ 27, 2, 9, 22 ],
+            "wednesday": [ 26, 1, 8, 21 ],
+            "thursday": [ 25, 31, 7, 20 ],
+            "saturday": [ 24, 30, 6, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
