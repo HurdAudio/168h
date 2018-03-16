@@ -494,6 +494,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FFFFF7',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 36,
+          user_id: 1,
+          theme: 'Greenery',
+          type: 'sunday',
+          src_string: '../img/may_tiles/apricots-214970_1280.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '135%',
+          color_dark: '#3A3230',
+          color_medium: '#74831C',
+          color_light: '#FDFEFF',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
