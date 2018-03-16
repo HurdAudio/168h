@@ -12570,7 +12570,6 @@
       }
 
       function timeblockInviteUserData(appointment, index) {
-        console.log(appointment);
         $http.get(`/users/${appointment.user_id}`)
         .then(inviterData=>{
           let inviter = inviterData.data;
@@ -12749,6 +12748,44 @@
         });
       }
 
+      function getUserInfosForAppointmentComment(appointment, index, comment, commentIndex) {
+        $http.get(`/users/${comment.user_id}`)
+        .then(commenterData=>{
+          let commenter = commenterData.data;
+          vm.activeTimeblockShares[index].comments[commentIndex].commenterImg = commenter.user_avatar_url;
+          vm.activeTimeblockShares[index].comments[commentIndex].commenterName = commenter.name;
+        });
+      }
+
+      function grabTimeblockShareComments(appointment, index) {
+
+        $http.get('timeblock_share_comments')
+        .then(sharesData=>{
+          let shares = sharesData.data;
+          let appointmentComments = shares.filter(share=>{
+            return(share.timeblock_share === appointment.id);
+          });
+          if (appointmentComments.length > 0) {
+            vm.activeTimeblockShares[index].comments = [];
+            let aDate;
+            let bDate;
+            let check;
+            appointmentComments = appointmentComments.sort((a, b)=>{
+              aDate = new Date(a.updated_at);
+              bDate = new Date(b.updated_at);
+              return(aDate - bDate);
+            });
+            for (let i = 0; i < appointmentComments.length; i++) {
+              check = new Date(appointmentComments[i].updated_at);
+              vm.activeTimeblockShares[index].comments[i] = {};
+              vm.activeTimeblockShares[index].comments[i].comment = appointmentComments[i].comment;
+              getUserInfosForAppointmentComment(appointment, index, appointmentComments[i], i);
+              vm.activeTimeblockShares[index].comments[i].cleanDate = cleanDateHoliday(appointmentComments[i].updated_at) + ' at ' +  check.toLocaleTimeString('en-GB');
+            }
+          }
+        });
+      }
+
       function retrieveUserAppointments() {
         let check;
         $http.get('/timeblock_shares')
@@ -12767,6 +12804,7 @@
               vm.activeTimeblockShares[i].cleanDate = cleanDateHoliday(userAppointments[i].updated_at) + ' at ' +  check.toLocaleTimeString('en-GB');
               inviteOrInvitee(userAppointments[i], i);
               timeblockShareAppointmentData(userAppointments[i], i);
+              grabTimeblockShareComments(userAppointments[i], i);
             }
 
           }

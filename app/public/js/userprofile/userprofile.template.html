@@ -5005,17 +5005,21 @@
           <div id="acceptedAppointment{{block.id}}"><h3>Appointment invitation has been accepted</h3></div>
           <a href=""><h3>comment</h3></a>
 
-        </main>
+
         <div class="timeblockShareCommentsBar">
 
           <h1>Comments:</h1>
         </div>
-        <div class="whoScheduledMe">
-          <img src="https://media.licdn.com/media/AAEAAQAAAAAAAAf8AAAAJGMwZDYyMzc2LTAzOGEtNGYwOS1iMDViLTFlYjAyYjYzODIyMQ.jpg"><br>
-          <p>From: Devin Hurd
-          on 18 July 2017</p><br><br><br><br><br><br><br>
+        <div id="timeblockComments">
+          <main ng-repeat="comment in block.comments | orderBy : $ctrl.sortBy">
+            <img src="{{comment.commenterImg}}"><br>
+            <p>From: {{comment.commenterName}}
+            on {{comment.cleanDate}}</p><br><br>
+            <h3>{{comment.comment}}</h3><br>
+          </main>
         </div>
-          <h3>These are so not the droids you are looking for.</h3><br>
+
+      </main>
 
 
 

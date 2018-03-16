@@ -3000,6 +3000,11 @@ footer img {
   float: left;
 }
 
+#timeblockComments img {
+  margin-right: 4vmin;
+  margin-bottom: 0;
+}
+
 
 
 #timeblockSharesNotifier h3 {
