@@ -6004,6 +6004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 301,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/Jules_Allen_Photograph_Marching_Band01.jpg',
+          title: 'Marching Bands',
+          artist: 'Jules T. Allen',
+          year: '2006',
+          rule: {
+            "monday": [ 21, 26, 3, 13 ],
+            "tuesday": [ 20, 28, 7, 15 ],
+            "wednesday": [ 22, 3, 9, 15 ],
+            "thursday": [ 24, 3, 11, 21 ],
+            "friday": [ 24, 5, 1, 20 ],
+            "saturday": [ 14, 22, 1, 9 ],
+            "sunday": [ 16, 24, 3, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 302,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/MVC-008F_edited.jpg',
+          title: 'unknown title',
+          artist: 'Tina Allen',
+          year: '?',
+          rule: {
+            "monday": [ 16, 24, 3, 11 ],
+            "tuesday": [ 21, 26, 3, 13 ],
+            "wednesday":[ 20, 28, 7, 15 ],
+            "thursday":  [ 22, 3, 9, 15 ],
+            "friday": [ 24, 3, 11, 21 ],
+            "saturday": [ 24, 5, 1, 20 ],
+            "sunday": [ 14, 22, 1, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 303,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/H0132-L58186162_mid.jpg',
+          title: 'Untitled (Figure Composition)',
+          artist: 'Charles Alston',
+          year: '?',
+          rule: {
+            "monday": [ 14, 22, 1, 9 ],
+            "tuesday": [ 16, 24, 3, 11 ],
+            "wednesday":[ 21, 26, 3, 13 ],
+            "thursday": [ 20, 28, 7, 15 ],
+            "friday":  [ 22, 3, 9, 15 ],
+            "saturday": [ 24, 3, 11, 21 ],
+            "sunday": [ 24, 5, 1, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 304,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/H0132-L46505022.jpg',
+          title: 'Harlem Dancers',
+          artist: 'Amalia Amaki',
+          year: '2013',
+          rule: {
+            "monday": [ 24, 5, 1, 20 ],
+            "tuesday": [ 14, 22, 1, 9 ],
+            "wednesday":[ 16, 24, 3, 11 ],
+            "thursday": [ 21, 26, 3, 13 ],
+            "friday":  [ 20, 28, 7, 15 ],
+            "saturday": [ 22, 3, 9, 15 ],
+            "sunday": [ 24, 3, 11, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 305,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/warm_up_1.9vv2b73g66g44wwggkg8ko4wo.6ylu316ao144c8c4woosog48w.th.jpeg',
+          title: 'Warm Up 1',
+          artist: 'Emma Amos',
+          year: '2009',
+          rule: {
+            "monday": [ 24, 3, 11, 21 ],
+            "tuesday": [ 24, 5, 1, 20 ],
+            "wednesday":[ 14, 22, 1, 9 ],
+            "thursday": [ 16, 24, 3, 11 ],
+            "friday":  [ 21, 26, 3, 13 ],
+            "saturday": [ 20, 28, 7, 15 ],
+            "sunday": [ 22, 3, 9, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
