@@ -5404,6 +5404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 271,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/pork-4.jpg',
+          title: 'Pork 4',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 31, 11, 10, 30 ],
+            "tuesday": [ 29, 8, 18, 26 ],
+            "wednesday": [ 27, 5, 17, 26 ],
+            "thursday": [ 8, 18, 28, 5 ],
+            "friday": [ 6, 17, 26, 5 ],
+            "saturday": [ 4, 14, 22, 3 ],
+            "sunday": [ 1, 12, 22, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 272,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/pork-5.jpg',
+          title: 'Pork 5',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 1, 12, 22, 11 ],
+            "tuesday": [ 31, 11, 10, 30 ],
+            "wednesday": [ 29, 8, 18, 26 ],
+            "thursday": [ 27, 5, 17, 26 ],
+            "friday": [ 8, 18, 28, 5 ],
+            "saturday": [ 6, 17, 26, 5 ],
+            "sunday": [ 4, 14, 22, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 273,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/pork-6.jpg',
+          title: 'Pork 6',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 5, 15, 23, 4 ],
+            "tuesday": [ 2, 13, 23, 12 ],
+            "wednesday": [ 1, 12, 11, 31 ],
+            "thursday": [ 30, 9, 19, 27 ],
+            "friday": [ 28, 6, 18, 27 ],
+            "saturday": [ 9, 19, 29, 6 ],
+            "sunday": [ 7, 18, 27, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 274,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/pork-7.jpg',
+          title: 'Pork 7',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 7, 18, 27, 6 ],
+            "tuesday": [ 5, 15, 23, 4 ],
+            "wednesday": [ 2, 13, 23, 12 ],
+            "thursday": [ 1, 12, 11, 31 ],
+            "friday": [ 30, 9, 19, 27 ],
+            "saturday": [ 28, 6, 18, 27 ],
+            "sunday": [ 9, 19, 29, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 275,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/pork-8.jpg',
+          title: 'Pork 8',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 9, 19, 29, 6 ],
+            "tuesday": [ 7, 18, 27, 6 ],
+            "wednesday": [ 5, 15, 23, 4 ],
+            "thursday": [ 2, 13, 23, 12 ],
+            "friday": [ 1, 12, 11, 31 ],
+            "saturday": [ 30, 9, 19, 27 ],
+            "sunday": [ 28, 6, 18, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
