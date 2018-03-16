@@ -5604,6 +5604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 281,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/redsox1.jpg',
+          title: 'Friday Night Out, Boston Red Sox Theme',
+          artist: '?',
+          year: '2018',
+          rule: {
+            "monday": [ 24, 14, 20, 27 ],
+            "tuesday": [ 9, 14, 20, 26 ],
+            "wednesday": [ 8, 12, 27, 25 ],
+            "thursday": [ 7, 12, 17, 23 ],
+            "friday": [ 6, 11, 17, 23 ],
+            "saturday": [ 5, 10, 16, 22 ],
+            "sunday": [ 10, 16, 21, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 282,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/ortiz-goat.jpg',
+          title: '34 Reasons David Ortiz Is the Greatest Red Sox Player Ever',
+          artist: 'Getty Images',
+          year: '2016',
+          rule: {
+            "monday": [ 10, 16, 21, 28 ],
+            "tuesday": [ 24, 14, 20, 27 ],
+            "wednesday": [ 9, 14, 20, 26 ],
+            "thursday": [ 8, 12, 27, 25 ],
+            "friday": [ 7, 12, 17, 23 ],
+            "saturday": [ 6, 11, 17, 23 ],
+            "sunday": [ 5, 10, 16, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 283,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/usa_today_9913780.0.jpg',
+          title: 'Tzu-Wei Lin, INF, Boston Red Sox',
+          artist: 'Reinhold Matay',
+          year: '2016',
+          rule: {
+            "monday": [ 5, 10, 16, 22 ],
+            "tuesday": [ 10, 16, 21, 28 ],
+            "wednesday": [ 24, 14, 20, 27 ],
+            "thursday": [ 9, 14, 20, 26 ],
+            "friday": [ 8, 12, 27, 25 ],
+            "saturday": [ 7, 12, 17, 23 ],
+            "sunday": [ 6, 11, 17, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 284,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/david-price-96043e1f2c9ddd8d.jpg',
+          title: 'Boston Red Sox\'s David Price reacts after striking out Houston Astros\' George Springer to retire the side with the bases loaded in the seventh inning Saturday',
+          artist: 'Michael Dwyer',
+          year: '2017',
+          rule: {
+            "monday": [ 6, 11, 17, 23 ],
+            "tuesday": [ 5, 10, 16, 22 ],
+            "wednesday": [ 10, 16, 21, 28 ],
+            "thursday": [ 24, 14, 20, 27 ],
+            "friday": [ 9, 14, 20, 26 ],
+            "saturday": [ 8, 12, 27, 25 ],
+            "sunday": [ 7, 12, 17, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 285,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/bostonDugout.jpeg',
+          title: 'Rain drops are seen on the Boston Red Sox dugout before game four of the American League Division Series between the Houston Astros and the Boston Red Sox at Fenway Park',
+          artist: 'Tim Bradbury',
+          year: '2017',
+          rule: {
+            "monday": [ 7, 12, 17, 23 ],
+            "tuesday": [ 6, 11, 17, 23 ],
+            "wednesday": [ 5, 10, 16, 22 ],
+            "thursday": [ 10, 16, 21, 28 ],
+            "friday": [ 24, 14, 20, 27 ],
+            "saturday": [ 9, 14, 20, 26 ],
+            "sunday": [ 8, 12, 27, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
