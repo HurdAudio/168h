@@ -3298,6 +3298,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 184,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3143762263/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://davidrosenboom.bandcamp.com/album/zones-of-influence',
+          a_string: 'Zones of Influence by David Rosenboom',
+          rule: {
+            "monday": [ 5, 12, 13, 14 ],
+            "tuesday": [ 4, 10, 12, 13 ],
+            "wednesday": [ 3, 10, 11, 12 ],
+            "thursday": [ 2, 8, 9, 10 ],
+            "saturday": [ 1, 8, 9, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 185,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2504135585/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://davidrosenboom.bandcamp.com/album/invisible-gold',
+          a_string: 'Invisible Gold by David Rosenboom',
+          rule: {
+            "monday": [ 1, 8, 9, 10 ],
+            "tuesday": [ 5, 12, 13, 14 ],
+            "wednesday": [ 4, 10, 12, 13 ],
+            "thursday": [ 3, 10, 11, 12 ],
+            "saturday": [ 2, 8, 9, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 186,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1403207045/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://xirecords.bandcamp.com/album/the-seasons-vermont',
+          a_string: 'The Seasons: Vermont by Malcom Goldstein',
+          rule: {
+            "monday": [ 2, 8, 9, 10 ],
+            "tuesday": [ 1, 8, 9, 10 ],
+            "wednesday": [ 5, 12, 13, 14 ],
+            "thursday": [ 4, 10, 12, 13 ],
+            "saturday": [ 3, 10, 11, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
