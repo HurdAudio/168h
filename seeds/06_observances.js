@@ -9441,6 +9441,34 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 604,
+          user_id: 1,
+          name: 'Francisco "Pancho" Villa (Mexican Revolutionary general) born 1878',
+          color: '#201E1F',
+          picture: './img/dissent/pancho-villa-9518733-2-402.jpg',
+          day_of: new Date ('1878-06-05T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 605,
+          user_id: 1,
+          name: 'A comet destroyed the Earth on this day in 1719 just as mathematician Jacob Bernoulli predicted it would.',
+          color: '#C28A3E',
+          picture: './img/doomsday/Jakob_Bernoulli.jpg',
+          day_of: new Date ('1719-04-05T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
