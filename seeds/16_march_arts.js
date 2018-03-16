@@ -5804,6 +5804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 291,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/white-disks-1.jpg',
+          title: 'White Disks 1',
+          artist: 'Bridget Riley',
+          year: '?',
+          rule: {
+            "monday": [ 5, 15, 23, 2 ],
+            "tuesday": [ 4, 14, 23, 1 ],
+            "wednesday": [ 10, 19, 29, 6 ],
+            "thursday": [ 9, 19, 29, 6 ],
+            "friday": [ 9, 18, 26, 5 ],
+            "saturday": [ 7, 17, 25, 4 ],
+            "sunday": [ 6, 16, 24, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 292,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/bean-rolls-1964.jpg',
+          title: 'Bean Rolls',
+          artist: 'Alison Knowles',
+          year: '1964',
+          rule: {
+            "monday": [ 6, 16, 24, 3 ],
+            "tuesday": [ 5, 15, 23, 2 ],
+            "wednesday": [ 4, 14, 23, 1 ],
+            "thursday": [ 10, 19, 29, 6 ],
+            "friday": [ 9, 19, 29, 6 ],
+            "saturday": [ 9, 18, 26, 5 ],
+            "sunday": [ 7, 17, 25, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 293,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/seduzir-2002-1.jpg',
+          title: 'Seduzir',
+          artist: 'Helena Almeida',
+          year: '2002',
+          rule: {
+            "monday": [ 6, 16, 24, 3 ],
+            "tuesday": [ 5, 15, 23, 2 ],
+            "wednesday": [ 4, 14, 23, 1 ],
+            "thursday": [ 10, 19, 29, 6 ],
+            "friday": [ 9, 19, 29, 6 ],
+            "saturday": [ 9, 18, 26, 5 ],
+            "sunday": [ 7, 17, 25, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 294,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/the-policeman-s-daughter-1987.jpg',
+          title: 'The Policeman\'s Daughter',
+          artist: 'Paula Rego',
+          year: '1987',
+          rule: {
+            "monday": [ 8, 18, 26, 5 ],
+            "tuesday": [ 7, 17, 25, 4 ],
+            "wednesday": [ 6, 16, 24, 3 ],
+            "thursday": [ 5, 15, 24, 2 ],
+            "friday": [ 11, 20, 30, 7 ],
+            "saturday": [ 10, 20, 30, 7 ],
+            "sunday": [ 10, 19, 27, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 295,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/duepi-1971.jpg',
+          title: 'Duepiù',
+          artist: 'Nanda Vigo',
+          year: '1971',
+          rule: {
+            "monday": [ 10, 19, 27, 6 ],
+            "tuesday": [ 8, 18, 26, 5 ],
+            "wednesday": [ 7, 17, 25, 4 ],
+            "thursday": [ 6, 16, 24, 3 ],
+            "friday": [ 5, 15, 24, 2 ],
+            "saturday": [ 11, 20, 30, 7 ],
+            "sunday": [ 10, 20, 30, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
