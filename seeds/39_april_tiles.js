@@ -508,6 +508,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#F4FFE3',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 37,
+          user_id: 1,
+          theme: 'Water',
+          type: 'holiday',
+          src_string: '../img/april_tiles/duck-123835_1280.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '153%',
+          color_dark: '#101012',
+          color_medium: '#D3666A',
+          color_light: '#D9DBDF',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
