@@ -3082,6 +3082,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 172,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2329745255/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://monkoora.bandcamp.com/album/sky-fi',
+          a_string: 'Sky-Fi by MONKOORA',
+          rule: {
+            "monday": [ 29, 4, 10, 18 ],
+            "tuesday": [ 28, 3, 9, 17 ],
+            "wednesday": [ 27, 2, 8, 17 ],
+            "thursday": [ 25, 1, 7, 15 ],
+            "saturday": [ 25, 31, 6, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 173,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4190186020/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://pascalpinonmorr.bandcamp.com/album/sundur',
+          a_string: 'Sundur by Pascal Pinon',
+          rule: {
+            "monday": [ 25, 31, 6, 14 ],
+            "tuesday": [ 29, 4, 10, 18 ],
+            "wednesday": [ 28, 3, 9, 17 ],
+            "thursday": [ 27, 2, 8, 17 ],
+            "saturday": [ 25, 1, 7, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 174,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=372459707/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://dkarecords.bandcamp.com/album/holding-on',
+          a_string: 'Holding On by Sally Dige',
+          rule: {
+            "monday": [ 25, 1, 7, 15 ],
+            "tuesday": [ 25, 31, 6, 14 ],
+            "wednesday": [ 29, 4, 10, 18 ],
+            "thursday": [ 28, 3, 9, 17 ],
+            "saturday": [ 27, 2, 8, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
