@@ -452,6 +452,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#978D91',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 33,
+          user_id: 1,
+          theme: 'Primary Colors',
+          type: 'week',
+          src_string: '../img/august_tiles/primary-colors-2-donna-corless.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '150%',
+          color_dark: '#030914',
+          color_medium: '#F03F03',
+          color_light: '#ECF42D',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
