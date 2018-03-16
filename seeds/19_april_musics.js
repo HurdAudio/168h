@@ -2974,6 +2974,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 166,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1816086165/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://steuartliebig.bandcamp.com/album/snake-or-man-gold-lion-fest-july-2016',
+          a_string: 'snake or man/gold lion fest, july 2016 by steuart liebig',
+          rule: {
+            "monday": [ 26, 4, 16, 21 ],
+            "tuesday": [ 25, 3, 15, 20 ],
+            "wednesday": [ 24, 2, 14, 19 ],
+            "thursday": [ 23, 1, 13, 18 ],
+            "saturday": [ 27, 5, 17, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 167,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3288174927/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tonyfalco.bandcamp.com/album/songs-for-sal',
+          a_string: 'Songs For Sal by Tony Falco',
+          rule: {
+            "monday": [ 27, 5, 17, 22 ],
+            "tuesday": [ 26, 4, 16, 21 ],
+            "wednesday": [ 25, 3, 15, 20 ],
+            "thursday": [ 24, 2, 14, 19 ],
+            "saturday": [ 23, 1, 13, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 168,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=746254404/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://milmin.bandcamp.com/album/durian-brow',
+          a_string: 'Durian Brow by Durian Brow',
+          rule: {
+            "monday": [ 24, 2, 14, 19 ],
+            "tuesday": [ 28, 6, 18, 23 ],
+            "wednesday": [ 27, 5, 17, 22 ],
+            "thursday": [ 26, 4, 16, 21 ],
+            "saturday": [ 25, 3, 15, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
