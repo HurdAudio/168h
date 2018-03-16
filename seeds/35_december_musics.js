@@ -2164,6 +2164,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 121,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=196147334/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://orangemilkrecords.bandcamp.com/album/breakeadito',
+          a_string: 'Breakeadito by El Murki',
+          rule: {
+            "monday": [ 23, 29, 4, 9 ],
+            "tuesday": [ 22, 28, 3, 9 ],
+            "wednesday": [ 19, 27, 2, 8 ],
+            "thursday": [ 20, 26, 1, 7 ],
+            "saturday": [ 24, 30, 5, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 122,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3964698224/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jvlian.bandcamp.com/album/crisis',
+          a_string: 'CRISIS by JVLIAN',
+          rule: {
+            "monday": [ 24, 30, 5, 11 ],
+            "tuesday": [ 23, 29, 4, 9 ],
+            "wednesday": [ 22, 28, 3, 9 ],
+            "thursday": [ 19, 27, 2, 8 ],
+            "saturday": [ 20, 26, 1, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 123,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=59501599/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://juanamolina.bandcamp.com/album/wed-21',
+          a_string: 'Wed 21 by Juana Molina',
+          rule: {
+            "monday": [ 20, 26, 1, 7 ],
+            "tuesday": [ 24, 30, 5, 11 ],
+            "wednesday": [ 23, 29, 4, 9 ],
+            "thursday": [ 22, 28, 3, 9 ],
+            "saturday": [ 19, 27, 2, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
