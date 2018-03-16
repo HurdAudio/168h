@@ -3190,6 +3190,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 178,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3829814826/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://djtaye.bandcamp.com/album/still-trippin',
+          a_string: 'Still Trippin&#39; by DJ Taye',
+          rule: {
+            "monday": [ 14, 8, 10, 16 ],
+            "tuesday": [ 26, 2, 4, 16 ],
+            "wednesday": [ 27, 2, 4, 8 ],
+            "thursday": [ 30, 4, 6, 10 ],
+            "saturday": [ 2, 6, 8, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 179,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=832815232/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://anthonyjosephofficial.bandcamp.com/album/caribbean-roots',
+          a_string: 'Caribbean Roots by Anthony Joseph',
+          rule: {
+            "monday": [ 2, 6, 8, 10 ],
+            "tuesday": [ 14, 8, 10, 16 ],
+            "wednesday": [ 26, 2, 4, 16 ],
+            "thursday": [ 27, 2, 4, 8 ],
+            "saturday": [ 30, 4, 6, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 180,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3258303943/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://blundettoofficial.bandcamp.com/album/world-of-2',
+          a_string: 'WORLD OF by BLUNDETTO (Official)',
+          rule: {
+            "monday": [ 30, 4, 6, 10 ],
+            "tuesday": [ 2, 6, 8, 10 ],
+            "wednesday": [ 14, 8, 10, 16 ],
+            "thursday": [ 26, 2, 4, 16 ],
+            "saturday": [ 27, 2, 4, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
