@@ -2380,6 +2380,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 133,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3476971655/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://selfmadegod.bandcamp.com/album/depressant',
+          a_string: 'Depressant by ANTIGAMA',
+          rule: {
+            "monday": [ 23, 2, 13, 15 ],
+            "tuesday": [ 27, 6, 16, 19 ],
+            "wednesday": [ 26, 5, 15, 18 ],
+            "thursday": [ 25, 4, 14, 17 ],
+            "saturday": [ 24, 3, 13, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 134,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3073472727/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://fullofhell.bandcamp.com/album/trumpeting-ecstasy',
+          a_string: 'Trumpeting Ecstasy by Full of Hell',
+          rule: {
+            "monday": [ 24, 3, 13, 16 ],
+            "tuesday": [ 23, 2, 13, 15 ],
+            "wednesday": [ 27, 6, 16, 19 ],
+            "thursday": [ 26, 5, 15, 18 ],
+            "saturday": [ 25, 4, 14, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 135,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4143330164/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ironlungpv.bandcamp.com/album/life-iron-lung-death-lp-cd-lungs-069',
+          a_string: 'Life. Iron Lung. Death. LP/CD (LUNGS-069) by IRON LUNG',
+          rule: {
+            "monday": [ 25, 4, 14, 17 ],
+            "tuesday": [ 24, 3, 13, 16 ],
+            "wednesday": [ 23, 2, 13, 15 ],
+            "thursday": [ 27, 6, 16, 19 ],
+            "saturday": [ 26, 5, 15, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
