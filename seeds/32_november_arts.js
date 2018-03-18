@@ -4304,6 +4304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 216,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/the-hill-1976.jpg',
+          title: 'The Hill',
+          artist: 'Horia Damian',
+          year: '1976',
+          rule: {
+            "monday": [ 5, 8, 16, 21 ],
+            "tuesday": [ 4, 8, 15, 20 ],
+            "wednesday": [ 3, 8, 14, 19 ],
+            "thursday": [ 2, 7, 13, 20 ],
+            "friday": [ 8, 13, 19, 24 ],
+            "saturday": [ 7, 12, 17, 23 ],
+            "sunday": [ 6, 11, 17, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 217,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/untitled-1976.jpg',
+          title: 'Untitled',
+          artist: 'Robert Ryman',
+          year: '1976',
+          rule: {
+            "monday": [ 7, 12, 18, 22 ],
+            "tuesday": [ 6, 9, 17, 22 ],
+            "wednesday": [ 5, 9, 16, 21 ],
+            "thursday": [ 4, 9, 15, 20 ],
+            "friday": [ 3, 8, 14, 21 ],
+            "saturday": [ 9, 14, 20, 25 ],
+            "sunday": [ 8, 13, 18, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 218,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/untitled-sculptural-study-six-part-construction-detail-1977.jpg',
+          title: 'Untitled (Sculptural Study, Six-part Construction) (detail)',
+          artist: 'Fred Sandback',
+          year: '1977',
+          rule: {
+            "monday": [ 8, 13, 18, 24 ],
+            "tuesday": [ 7, 12, 18, 22 ],
+            "wednesday": [ 6, 9, 17, 22 ],
+            "thursday": [ 5, 9, 16, 21 ],
+            "friday": [ 4, 9, 15, 20 ],
+            "saturday": [ 3, 8, 14, 21 ],
+            "sunday": [ 9, 14, 20, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 219,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/evers-1977.jpg',
+          title: 'Evers',
+          artist: 'Christopher Wilmarth',
+          year: '1977',
+          rule: {
+            "monday": [ 9, 14, 20, 25 ],
+            "tuesday": [ 8, 13, 18, 24 ],
+            "wednesday": [ 7, 12, 18, 22 ],
+            "thursday": [ 6, 9, 17, 22 ],
+            "friday": [ 5, 9, 16, 21 ],
+            "saturday": [ 4, 9, 15, 20 ],
+            "sunday": [ 3, 8, 14, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 220,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/blues-greens-1978.jpg',
+          title: 'Blues-Greens',
+          artist: 'Joan Hernandez Pijuan',
+          year: '1978',
+          rule: {
+            "monday": [ 3, 8, 14, 21 ],
+            "tuesday": [ 9, 14, 20, 25 ],
+            "wednesday": [ 8, 13, 18, 24 ],
+            "thursday": [ 7, 12, 18, 22 ],
+            "friday": [ 6, 9, 17, 22 ],
+            "saturday": [ 5, 9, 16, 21 ],
+            "sunday": [ 4, 9, 15, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
