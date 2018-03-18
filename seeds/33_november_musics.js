@@ -2272,6 +2272,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 127,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=339385865/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://helloworldchoir.bandcamp.com/album/shagara',
+          a_string: 'SHAGARA by Hello World Choir',
+          rule: {
+            "monday": [ 19, 30, 11, 15 ],
+            "tuesday": [ 18, 29, 10, 14 ],
+            "wednesday": [ 17, 28, 9, 11 ],
+            "thursday": [ 16, 27, 8, 10 ],
+            "saturday": [ 20, 1, 12, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 128,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3615705061/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://youssraelhawary.bandcamp.com/album/nooum-nasyeen',
+          a_string: 'No&#39;oum Nasyeen by Youssra El Hawary',
+          rule: {
+            "monday": [ 20, 1, 12, 16 ],
+            "tuesday": [ 19, 30, 11, 15 ],
+            "wednesday": [ 18, 29, 10, 14 ],
+            "thursday": [ 17, 28, 9, 11 ],
+            "saturday": [ 16, 27, 8, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 129,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4250522401/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://odiousband.bandcamp.com/album/skin-age',
+          a_string: 'SKIN AGE by ODIOUS',
+          rule: {
+            "monday": [ 16, 27, 8, 10 ],
+            "tuesday": [ 20, 1, 12, 16 ],
+            "wednesday": [ 19, 30, 11, 15 ],
+            "thursday": [ 18, 29, 10, 14 ],
+            "saturday": [ 17, 28, 9, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
