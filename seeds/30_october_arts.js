@@ -4504,6 +4504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 226,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_St_060.jpg',
+          title: 'Stalin and Klement Voroshilov',
+          artist: 'Gustav Klutsis',
+          year: '1935',
+          rule: {
+            "monday": [ 7, 18, 29, 2 ],
+            "tuesday": [ 6, 17, 28, 1 ],
+            "wednesday": [ 5, 16, 27, 31 ],
+            "thursday": [ 4, 15, 26, 30 ],
+            "friday": [ 3, 14, 25, 29 ],
+            "saturday": [ 2, 13, 14, 28 ],
+            "sunday": [ 11, 12, 23, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 227,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_St_059.jpg',
+          title: 'January 1st, 1939. Happy New Year!',
+          artist: '?',
+          year: '1939',
+          rule: {
+            "monday": [ 11, 12, 23, 27 ],
+            "tuesday": [ 7, 18, 29, 2 ],
+            "wednesday": [ 6, 17, 28, 1 ],
+            "thursday": [ 5, 16, 27, 31 ],
+            "friday": [ 4, 15, 26, 30 ],
+            "saturday": [ 3, 14, 25, 29 ],
+            "sunday": [ 2, 13, 14, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 228,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_St_058.jpg',
+          title: 'To work, to build and not to whine!',
+          artist: 'Dejneka Alexander Aleksandrovich',
+          year: '1933',
+          rule: {
+            "monday": [ 2, 13, 14, 28 ],
+            "tuesday": [ 11, 12, 23, 27 ],
+            "wednesday": [ 7, 18, 29, 2 ],
+            "thursday": [ 6, 17, 28, 1 ],
+            "friday": [ 5, 16, 27, 31 ],
+            "saturday": [ 4, 15, 26, 30 ],
+            "sunday": [ 3, 14, 25, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 229,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_St_056.jpg',
+          title: 'Long live Stalin\'s constitution!',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 3, 14, 25, 29 ],
+            "tuesday": [ 2, 13, 14, 28 ],
+            "wednesday": [ 11, 12, 23, 27 ],
+            "thursday": [ 7, 18, 29, 2 ],
+            "friday": [ 6, 17, 28, 1 ],
+            "saturday": [ 5, 16, 27, 31 ],
+            "sunday": [ 4, 15, 26, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 230,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_St_055.jpg',
+          title: 'The Soviet woman',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 4, 15, 26, 30 ],
+            "tuesday": [ 3, 14, 25, 29 ],
+            "wednesday": [ 2, 13, 14, 28 ],
+            "thursday": [ 11, 12, 23, 27 ],
+            "friday": [ 7, 18, 29, 2 ],
+            "saturday": [ 6, 17, 28, 1 ],
+            "sunday": [ 5, 16, 27, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
