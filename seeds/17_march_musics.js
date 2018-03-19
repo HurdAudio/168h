@@ -3136,6 +3136,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 175,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2918317502/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://queenbeerecords.bandcamp.com/album/x-marks-the-question',
+          a_string: 'X Marks the Question by Lisa Mezzacappa Trio',
+          rule: {
+            "monday": [ 28, 3, 9, 18 ],
+            "tuesday": [ 26, 2, 8, 16 ],
+            "wednesday": [ 26, 1, 7, 15 ],
+            "thursday": [ 30, 5, 11, 19 ],
+            "saturday": [ 29, 4, 10, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 176,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1452588632/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://queenbeerecords.bandcamp.com/album/no-ins-outs',
+          a_string: 'No Ins &amp; Outs by duo B.',
+          rule: {
+            "monday": [ 29, 4, 10, 18 ],
+            "tuesday": [ 28, 3, 9, 18 ],
+            "wednesday": [ 26, 2, 8, 16 ],
+            "thursday": [ 26, 1, 7, 15 ],
+            "saturday": [ 30, 5, 11, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 177,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2710063432/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bell.bandcamp.com/album/tempo',
+          a_string: 'Tempo by OLGA BELL',
+          rule: {
+            "monday": [ 30, 5, 11, 19 ],
+            "tuesday": [ 29, 4, 10, 18 ],
+            "wednesday": [ 28, 3, 9, 18 ],
+            "thursday": [ 26, 2, 8, 16 ],
+            "saturday": [ 26, 1, 7, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
