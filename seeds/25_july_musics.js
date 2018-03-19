@@ -2704,6 +2704,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 151,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=266859198/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://anatomy.bandcamp.com/album/s-t',
+          a_string: 'S/T by ANATOMY',
+          rule: {
+            "monday": [ 21, 23, 27, 4 ],
+            "tuesday": [ 20, 21, 26, 3 ],
+            "wednesday": [ 19, 21, 25, 2 ],
+            "thursday": [ 23, 25, 29, 6 ],
+            "saturday": [ 22, 24, 28, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 152,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=974853139/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://borusiade.bandcamp.com/album/a-body-lp',
+          a_string: 'A Body - LP by Borusiade ',
+          rule: {
+            "monday": [ 22, 24, 28, 5 ],
+            "tuesday": [ 21, 23, 27, 4 ],
+            "wednesday": [ 20, 21, 26, 3 ],
+            "thursday": [ 19, 21, 25, 2 ],
+            "saturday": [ 23, 25, 29, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 153,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3239344551/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://mapledeathrecords.bandcamp.com/album/act-of-tenderness',
+          a_string: 'Act Of Tenderness by Cindy Lee',
+          rule: {
+            "monday": [ 23, 25, 29, 6 ],
+            "tuesday": [ 22, 24, 28, 5 ],
+            "wednesday": [ 21, 23, 27, 4 ],
+            "thursday": [ 20, 21, 26, 3 ],
+            "saturday": [ 19, 21, 25, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
