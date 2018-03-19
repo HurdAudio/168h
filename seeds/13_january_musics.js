@@ -3352,6 +3352,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 187,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2775497516/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://xirecords.bandcamp.com/album/partitas-for-long-strings',
+          a_string: 'Partitas For Long Strings by Paul Panhuysen',
+          rule: {
+            "monday": [ 3, 10, 11, 12 ],
+            "tuesday": [ 2, 8, 9, 10 ],
+            "wednesday": [ 1, 8, 9, 10 ],
+            "thursday": [ 5, 12, 13, 14 ],
+            "saturday": [ 4, 10, 12, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 188,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3620085988/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://xirecords.bandcamp.com/album/open-secrets',
+          a_string: 'Open Secrets by Jackson Mac Low',
+          rule: {
+            "monday": [ 4, 10, 12, 13 ],
+            "tuesday": [ 3, 10, 11, 12 ],
+            "wednesday": [ 2, 8, 9, 10 ],
+            "thursday": [ 1, 8, 9, 10 ],
+            "saturday": [ 5, 12, 13, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 189,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=968518386/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://xirecords.bandcamp.com/album/ten-thousand-shades-of-blue',
+          a_string: 'Ten Thousand Shades of Blue by Richard Lainhart',
+          rule: {
+            "monday": [ 6, 13, 14, 15 ],
+            "tuesday": [ 5, 11, 13, 14 ],
+            "wednesday": [ 4, 11, 12, 13 ],
+            "thursday": [ 3, 9, 10, 11 ],
+            "saturday": [ 2, 9, 10, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
