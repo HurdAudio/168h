@@ -5704,6 +5704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 286,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/Royals_Dodgers_Baseball_69236-eb103.jpg',
+          title: 'layton Kershaw is a singular talent, the Dodgers have been powered by the back end of their roster.',
+          artist: 'Mark J. Terrill',
+          year: '2017',
+          rule: {
+            "monday": [ 8, 12, 27, 25 ],
+            "tuesday": [ 7, 12, 17, 23 ],
+            "wednesday": [ 6, 11, 17, 23 ],
+            "thursday": [ 5, 10, 16, 22 ],
+            "friday": [ 10, 16, 21, 28 ],
+            "saturday": [ 24, 14, 20, 27 ],
+            "sunday": [ 9, 14, 20, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 287,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/San+Francisco+Giants+v+Los+Angeles+Dodgers+LrTDcNFok7ml.jpg',
+          title: 'Yasiel Puig #66 of the Los Angeles Dodgers flips his bat in the air as he reacts to popping up to left field for the last out of the fourth inning against the San Francisco Giants at Dodger Stadium.',
+          artist: 'Stephen Dunn',
+          year: '2017',
+          rule: {
+            "monday": [ 10, 15, 21, 27 ],
+            "tuesday": [ 9, 13, 28, 26 ],
+            "wednesday": [ 8, 13, 18, 24 ],
+            "thursday": [ 7, 12, 18, 24 ],
+            "friday": [ 6, 11, 17, 23 ],
+            "saturday": [ 11, 17, 22, 29 ],
+            "sunday": [ 25, 15, 21, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 288,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/8521459-mlb-seattle-mariners-at-los-angeles-dodgers.jpeg',
+          title: 'Los Angeles, CA, USA; Los Angeles Dodgers line up for the National Anthem to commemorate Jackie Robinson Day before the game against the Seattle Mariners at Dodger Stadium. ',
+          artist: 'Jayne Kamin',
+          year: '2015',
+          rule: {
+            "monday": [ 25, 15, 21, 28 ],
+            "tuesday": [ 10, 15, 21, 27 ],
+            "wednesday": [ 9, 13, 28, 26 ],
+            "thursday": [ 8, 13, 18, 24 ],
+            "friday": [ 7, 12, 18, 24 ],
+            "saturday": [ 6, 11, 17, 23 ],
+            "sunday": [ 11, 17, 22, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 289,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/maxresdefault (1).jpg',
+          title: 'Exploring Los Angeles Dodgers Baseball Stadium',
+          artist: 'Adam the Woo',
+          year: '2016',
+          rule: {
+            "monday": [ 11, 17, 22, 29 ],
+            "tuesday": [ 25, 15, 21, 28 ],
+            "wednesday": [ 10, 15, 21, 27 ],
+            "thursday": [ 9, 13, 28, 26 ],
+            "friday": [ 8, 13, 18, 24 ],
+            "saturday": [ 7, 12, 18, 24 ],
+            "sunday": [ 6, 11, 17, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 290,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/Pee-Wee-Reese-Jackie-Robinson-LA-Dodgers-640x497.jpg',
+          title: 'Members of the 1954 Brooklyn Dodgers baseball team pose in the dugout.',
+          artist: 'Hulton Archive/Getty Images',
+          year: '1954',
+          rule: {
+            "monday": [ 6, 11, 17, 23 ],
+            "tuesday": [ 11, 17, 22, 29 ],
+            "wednesday": [ 25, 15, 21, 28 ],
+            "thursday": [ 10, 15, 21, 27 ],
+            "friday": [ 9, 13, 28, 26 ],
+            "saturday": [ 8, 13, 18, 24 ],
+            "sunday": [ 7, 12, 18, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
