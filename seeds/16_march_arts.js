@@ -5904,6 +5904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 296,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/pink-glasses.jpg',
+          title: 'Pink Glasses',
+          artist: 'Dora Boneva',
+          year: '?',
+          rule: {
+            "monday": [ 10, 20, 30, 7 ],
+            "tuesday": [ 10, 19, 27, 6 ],
+            "wednesday": [ 8, 18, 26, 5 ],
+            "thursday": [ 7, 17, 25, 4 ],
+            "friday": [ 6, 16, 24, 3 ],
+            "saturday": [ 5, 15, 24, 2 ],
+            "sunday": [ 11, 20, 30, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 297,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/untitled-4.jpg',
+          title: 'Untitled',
+          artist: 'Nasreen Mohamedi',
+          year: '?',
+          rule: {
+            "monday": [ 11, 20, 30, 7 ],
+            "tuesday": [ 10, 20, 30, 7 ],
+            "wednesday": [ 10, 19, 27, 6 ],
+            "thursday": [ 8, 18, 26, 5 ],
+            "friday": [ 7, 17, 25, 4 ],
+            "saturday": [ 6, 16, 24, 3 ],
+            "sunday": [ 5, 15, 24, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 298,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/summer-moon-2005.jpg',
+          title: 'Summer Moon',
+          artist: 'Pat Steir',
+          year: '2005',
+          rule: {
+            "monday": [ 5, 15, 24, 2 ],
+            "tuesday": [ 11, 20, 30, 7 ],
+            "wednesday": [ 10, 20, 30, 7 ],
+            "thursday": [ 10, 19, 27, 6 ],
+            "friday": [ 8, 18, 26, 5 ],
+            "saturday": [ 7, 17, 25, 4 ],
+            "sunday": [ 6, 16, 24, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 299,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/countdown-to-violence-1964.jpg',
+          title: 'Countdown to Violence',
+          artist: 'Pauline Boty',
+          year: '1964',
+          rule: {
+            "monday": [ 6, 16, 24, 3 ],
+            "tuesday": [ 5, 15, 24, 2 ],
+            "wednesday": [ 11, 20, 30, 7 ],
+            "thursday": [ 10, 20, 30, 7 ],
+            "friday": [ 10, 19, 27, 6 ],
+            "saturday": [ 8, 18, 26, 5 ],
+            "sunday": [ 7, 17, 25, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 300,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/untitled-spider-web-2000.jpg',
+          title: 'Untitled (Spider Web)',
+          artist: 'Vija Celmins',
+          year: '2000',
+          rule: {
+            "monday": [ 7, 17, 25, 4 ],
+            "tuesday": [ 6, 16, 24, 3 ],
+            "wednesday": [ 5, 15, 24, 2 ],
+            "thursday": [ 11, 20, 30, 7 ],
+            "friday": [ 10, 20, 30, 7 ],
+            "saturday": [ 10, 19, 27, 6 ],
+            "sunday": [ 8, 18, 26, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
