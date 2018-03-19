@@ -9469,6 +9469,34 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 606,
+          user_id: 1,
+          name: 'Che Guevara (revolutionary/author) born 1928',
+          color: '#F70400',
+          picture: './img/dissent/che-guevara_gEeM4.jpg',
+          day_of: new Date ('1928-06-14T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 607,
+          user_id: 1,
+          name: 'The world ended on this day in 1736 when a comet collided with the Earth exactly as predicted by theologian William Whiston.',
+          color: '#3F3220',
+          picture: './img/doomsday/William_Whiston.png',
+          day_of: new Date ('1736-10-16T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
