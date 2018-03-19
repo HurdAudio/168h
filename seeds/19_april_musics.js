@@ -3028,6 +3028,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 169,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2212167778/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://peterzummo.bandcamp.com/album/frame-loop',
+          a_string: 'Frame Loop by Peter Zummo',
+          rule: {
+            "monday": [ 25, 3, 15, 20 ],
+            "tuesday": [ 24, 2, 14, 19 ],
+            "wednesday": [ 28, 6, 18, 23 ],
+            "thursday": [ 27, 5, 17, 22 ],
+            "saturday": [ 26, 4, 16, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 170,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2944138936/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ayler-records.bandcamp.com/album/vernacular-avant-garde',
+          a_string: 'Vernacular Avant-garde by Peter Bruun&#39;s All Too Human',
+          rule: {
+            "monday": [ 26, 4, 16, 21 ],
+            "tuesday": [ 25, 3, 15, 20 ],
+            "wednesday": [ 24, 2, 14, 19 ],
+            "thursday": [ 28, 6, 18, 23 ],
+            "saturday": [ 27, 5, 17, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 171,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4235150817/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sameergupta.bandcamp.com/album/a-circle-has-no-beginning',
+          a_string: 'A Circle Has No Beginning by Sameer Gupta',
+          rule: {
+            "monday": [ 27, 5, 17, 22 ],
+            "tuesday": [ 26, 4, 16, 21 ],
+            "wednesday": [ 25, 3, 15, 20 ],
+            "thursday": [ 24, 2, 14, 19 ],
+            "saturday": [ 28, 6, 18, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
