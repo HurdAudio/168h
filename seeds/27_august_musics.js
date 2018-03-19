@@ -2596,6 +2596,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 145,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1229270166/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://gohleekwang.bandcamp.com/album/new-year-vol-14-dedicated-to-jason-kahn',
+          a_string: 'New Year Vol.14 Dedicated to Jason Kahn by Goh Lee Kwang',
+          rule: {
+            "monday": [ 31, 8, 21, 20 ],
+            "tuesday": [ 30, 7, 20, 19 ],
+            "wednesday": [ 29, 6, 19, 18 ],
+            "thursday": [ 2, 10, 23, 22 ],
+            "saturday": [ 1, 9, 22, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 146,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3318747678/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://yoshimiosusieibarrarobertaikiaubreylowe.bandcamp.com/album/flower-of-sulphur',
+          a_string: 'Flower of Sulphur by YoshimiO / Susie Ibarra / Robert Aiki Aubrey Lowe',
+          rule: {
+            "monday": [ 1, 9, 22, 21 ],
+            "tuesday": [ 31, 8, 21, 20 ],
+            "wednesday": [ 30, 7, 20, 19 ],
+            "thursday": [ 29, 6, 19, 18 ],
+            "saturday": [ 2, 10, 23, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 147,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1069134634/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://kknull1.bandcamp.com/album/colors-of-quantum-ghost',
+          a_string: 'Colors of Quantum Ghost by KK NULL',
+          rule: {
+            "monday": [ 3, 11, 24, 23 ],
+            "tuesday": [ 2, 10, 23, 22 ],
+            "wednesday": [ 1, 9, 22, 21 ],
+            "thursday": [ 31, 8, 21, 20 ],
+            "saturday": [ 30, 7, 20, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
