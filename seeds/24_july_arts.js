@@ -5104,6 +5104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 256,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/goliath-extract-from-the-combat-between-david-and-goliath.jpg',
+          title: 'Goliath, extract from the combat between David and Goliath',
+          artist: 'Herrad of Landsberg',
+          year: '?',
+          rule: {
+            "monday": [ 3, 14, 25, 26 ],
+            "tuesday": [ 2, 13, 24, 4 ],
+            "wednesday": [ 8, 19, 30, 9 ],
+            "thursday": [ 7, 18, 29, 9 ],
+            "friday": [ 6, 17, 28, 8 ],
+            "saturday": [ 5, 16, 27, 28 ],
+            "sunday": [ 4, 15, 25, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 257,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/untitled-2009.jpg',
+          title: 'Untitled',
+          artist: 'Dominique Gonzalez-Foerster',
+          year: '2009',
+          rule: {
+            "monday": [ 4, 15, 25, 27 ],
+            "tuesday": [ 3, 14, 25, 26 ],
+            "wednesday": [ 2, 13, 24, 4 ],
+            "thursday": [ 8, 19, 30, 9 ],
+            "friday": [ 7, 18, 29, 9 ],
+            "saturday": [ 6, 17, 28, 8 ],
+            "sunday": [ 5, 16, 27, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 258,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/vois-y-elles-voyelles-rimbaud-2016-1.jpg',
+          title: 'Vois Y Elles Voyelles (Rimbaud)',
+          artist: 'Kim Prisu',
+          year: '2016',
+          rule: {
+            "monday": [ 5, 16, 27, 28 ],
+            "tuesday": [ 4, 15, 25, 27 ],
+            "wednesday": [ 3, 14, 25, 26 ],
+            "thursday": [ 2, 13, 24, 4 ],
+            "friday": [ 8, 19, 30, 9 ],
+            "saturday": [ 7, 18, 29, 9 ],
+            "sunday": [ 6, 17, 28, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 259,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/berlin-liberty-1990.jpg',
+          title: 'Berlin Liberty',
+          artist: 'Jerome Mesnager',
+          year: '1990',
+          rule: {
+            "monday": [ 7, 18, 29, 9 ],
+            "tuesday": [ 6, 17, 28, 29 ],
+            "wednesday": [ 5, 16, 26, 28 ],
+            "thursday": [ 4, 15, 26, 27 ],
+            "friday": [ 3, 14, 25, 5 ],
+            "saturday": [ 9, 20, 31, 10 ],
+            "sunday": [ 8, 19, 30, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 260,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/untitled-2001-2.jpg',
+          title: 'Untitled',
+          artist: 'Moon Pil Shim',
+          year: '2001',
+          rule: {
+            "monday": [ 8, 19, 30, 10 ],
+            "tuesday": [ 7, 18, 29, 9 ],
+            "wednesday": [ 6, 17, 28, 29 ],
+            "thursday": [ 5, 16, 26, 28 ],
+            "friday": [ 4, 15, 26, 27 ],
+            "saturday": [ 3, 14, 25, 5 ],
+            "sunday": [ 9, 20, 31, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
