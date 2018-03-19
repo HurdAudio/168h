@@ -6104,6 +6104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 306,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/andrews-did-the-bear-sit-under-a-tree-image-only.jpg',
+          title: 'Did the Bear Sit Under a Tree?',
+          artist: 'Benny Andrews',
+          year: '1969',
+          rule: {
+            "monday": [ 22, 3, 9, 15 ],
+            "tuesday": [ 24, 3, 11, 21 ],
+            "wednesday":[ 24, 5, 1, 20 ],
+            "thursday": [ 14, 22, 1, 9 ],
+            "friday":  [ 16, 24, 3, 11 ],
+            "saturday": [ 21, 26, 3, 13 ],
+            "sunday": [ 20, 28, 7, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 307,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/20101023004547-Untitled1.jpg',
+          title: 'Edgar Arceneaux',
+          artist: 'Untitled',
+          year: '?',
+          rule: {
+            "monday": [ 20, 28, 7, 15 ],
+            "tuesday": [ 22, 3, 9, 15 ],
+            "wednesday": [ 24, 3, 11, 21 ],
+            "thursday": [ 24, 5, 1, 20 ],
+            "friday": [ 14, 22, 1, 9 ],
+            "saturday": [ 16, 24, 3, 11 ],
+            "sunday": [ 21, 26, 3, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 308,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/07.RadcliffeBailey.WindwardCoast-1050.jpg',
+          title: 'Windward Coast',
+          artist: 'Radcliffe Bailey',
+          year: '2009 - 2011',
+          rule: {
+            "monday": [ 22, 27, 4, 14 ],
+            "tuesday": [ 21, 29, 8, 16 ],
+            "wednesday": [ 23, 4, 10, 16 ],
+            "thursday": [ 25, 4, 12, 22 ],
+            "friday": [ 25, 6, 2, 21 ],
+            "saturday": [ 15, 23, 2, 10 ],
+            "sunday": [ 16, 25, 4, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 309,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/dilton.jpg',
+          title: 'Dilbert & Veronica',
+          artist: 'Kyle Baker',
+          year: '2014',
+          rule: {
+            "monday": [ 16, 25, 4, 12 ],
+            "tuesday": [ 22, 27, 4, 14 ],
+            "wednesday": [ 21, 29, 8, 16 ],
+            "thursday": [ 23, 4, 10, 16 ],
+            "friday": [ 25, 4, 12, 22 ],
+            "saturday": [ 25, 6, 2, 21 ],
+            "sunday": [ 15, 23, 2, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 310,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/b123d8d42805c1d036162fc3973af3f9.jpg',
+          title: 'Matt Baker',
+          artist: 'July Teenage Romances',
+          year: '?',
+          rule: {
+            "monday": [ 15, 23, 2, 10 ],
+            "tuesday": [ 16, 25, 4, 12 ],
+            "wednesday": [ 22, 27, 4, 14 ],
+            "thursday": [ 21, 29, 8, 16 ],
+            "friday": [ 23, 4, 10, 16 ],
+            "saturday": [ 25, 4, 12, 22 ],
+            "sunday": [ 25, 6, 2, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
