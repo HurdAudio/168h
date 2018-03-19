@@ -136,6 +136,8 @@ const task_share_comments = require('./routes/task_share_comments.js');
 const task_share_commentsbyuser = require('./routes/task_share_commentsbyuser.js');
 const observance_share_comments = require('./routes/observance_share_comments.js');
 const observance_share_commentsbyuser = require('./routes/observance_share_commentsbyuser.js');
+const art_share_comments = require('./routes/art_share_comments.js');
+const art_share_commentsbyuser = require('./routes/art_share_commentsbyuser.js');
 
 const port = process.env.PORT || 3007;
 
@@ -272,6 +274,8 @@ app.use(fileUpload());
  app.use('/task_share_commentsbyuser', task_share_commentsbyuser);
  app.use('/observance_share_comments', observance_share_comments);
  app.use('/observance_share_commentsbyuser', observance_share_commentsbyuser);
+ app.use('/art_share_comments', art_share_comments);
+ app.use('/art_share_commentsbyuser', art_share_commentsbyuser);
 
 app.get('/onthisdayinhistory/:date', (req, res, next) =>{
   let newUrl = 'http://history.muffinlabs.com/date/';
