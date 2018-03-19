@@ -2812,6 +2812,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 157,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3173291856/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://celer.bandcamp.com/album/youll-never-understand-me',
+          a_string: 'You&#39;ll Never Understand Me by Celer',
+          rule: {
+            "monday": [ 24, 28, 4, 15 ],
+            "tuesday": [ 23, 26, 1, 13 ],
+            "wednesday": [ 22, 26, 1, 13 ],
+            "thursday": [ 22, 25, 1, 12 ],
+            "saturday": [ 20, 28, 30, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 158,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3858240513/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://dronarivm.bandcamp.com/album/a-different-definition-of-love',
+          a_string: 'A Different Definition of Love by bvdub',
+          rule: {
+            "monday": [ 20, 28, 30, 11 ],
+            "tuesday": [ 24, 28, 4, 15 ],
+            "wednesday": [ 23, 26, 1, 13 ],
+            "thursday": [ 22, 26, 1, 13 ],
+            "saturday": [ 22, 25, 1, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 159,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2217972433/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://steveroach.bandcamp.com/album/possible-planet',
+          a_string: 'Possible Planet by Steve Roach',
+          rule: {
+            "monday": [ 22, 25, 1, 12 ],
+            "tuesday": [ 20, 28, 30, 11 ],
+            "wednesday": [ 24, 28, 4, 15 ],
+            "thursday": [ 23, 26, 1, 13 ],
+            "saturday": [ 22, 26, 1, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
