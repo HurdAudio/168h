@@ -3146,7 +3146,7 @@ exports.seed = function(knex, Promise) {
           href_string: 'http://iapetusrecords.bandcamp.com/album/yugen-blakrok-return-of-the-astro-goth',
           a_string: 'Yugen Blakrok - Return of the Astro-Goth by Yugen Blakrok',
           rule: {
-            "monday": [ 30, 4, 6, 10 ],
+            "monday": [ 1, 4, 6, 10 ],
             "tuesday": [ 2, 6, 8, 10 ],
             "wednesday": [ 14, 8, 10, 16 ],
             "thursday": [ 26, 2, 4, 16 ],
@@ -3165,7 +3165,7 @@ exports.seed = function(knex, Promise) {
           a_string: 'Rndu - Scrolls of Knowing - Instrumentals by Kanif the Jhatmaster',
           rule: {
             "monday": [ 27, 2, 4, 8 ],
-            "tuesday": [ 30, 4, 6, 10 ],
+            "tuesday": [ 1, 4, 6, 10 ],
             "wednesday": [ 2, 6, 8, 10 ],
             "thursday": [ 14, 8, 10, 16 ],
             "saturday": [ 26, 2, 4, 16 ]
@@ -3184,7 +3184,7 @@ exports.seed = function(knex, Promise) {
           rule: {
             "monday": [ 26, 2, 4, 16 ],
             "tuesday": [ 27, 2, 4, 8 ],
-            "wednesday": [ 30, 4, 6, 10 ],
+            "wednesday": [ 1, 4, 6, 10 ],
             "thursday": [ 2, 6, 8, 10 ],
             "saturday": [ 14, 8, 10, 16 ]
           },
@@ -3203,7 +3203,7 @@ exports.seed = function(knex, Promise) {
             "monday": [ 14, 8, 10, 16 ],
             "tuesday": [ 26, 2, 4, 16 ],
             "wednesday": [ 27, 2, 4, 8 ],
-            "thursday": [ 30, 4, 6, 10 ],
+            "thursday": [ 1, 4, 6, 10 ],
             "saturday": [ 2, 6, 8, 10 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
@@ -3222,7 +3222,7 @@ exports.seed = function(knex, Promise) {
             "tuesday": [ 14, 8, 10, 16 ],
             "wednesday": [ 26, 2, 4, 16 ],
             "thursday": [ 27, 2, 4, 8 ],
-            "saturday": [ 30, 4, 6, 10 ]
+            "saturday": [ 1, 4, 6, 10 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -3236,11 +3236,65 @@ exports.seed = function(knex, Promise) {
           href_string: 'http://blundettoofficial.bandcamp.com/album/world-of-2',
           a_string: 'WORLD OF by BLUNDETTO (Official)',
           rule: {
-            "monday": [ 30, 4, 6, 10 ],
+            "monday": [ 1, 4, 6, 10 ],
             "tuesday": [ 2, 6, 8, 10 ],
             "wednesday": [ 14, 8, 10, 16 ],
             "thursday": [ 26, 2, 4, 16 ],
             "saturday": [ 27, 2, 4, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 181,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=660749450/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://nounouhau.bandcamp.com/album/pandora',
+          a_string: 'Pandora by G.E.M',
+          rule: {
+            "monday": [ 27, 2, 4, 8 ],
+            "tuesday": [ 1, 4, 6, 10 ],
+            "wednesday": [ 2, 6, 8, 10 ],
+            "thursday": [ 14, 8, 10, 16 ],
+            "saturday": [ 26, 2, 4, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 182,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2782081461/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://daupe.bandcamp.com/album/hitler-wears-hermes-5',
+          a_string: 'Hitler Wears Hermes 5 by Westside Gunn',
+          rule: {
+            "monday": [ 27, 3, 4, 17 ],
+            "tuesday": [ 28, 3, 5, 9 ],
+            "wednesday": [ 2, 5, 7, 11 ],
+            "thursday": [ 3, 7, 9, 11 ],
+            "saturday": [ 15, 9, 11, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 183,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=127420755/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://rnglofi.bandcamp.com/album/vol-vox',
+          a_string: 'VOL.VOX by No-fvce x k N O E s',
+          rule: {
+            "monday": [ 15, 9, 11, 17 ],
+            "tuesday": [ 27, 3, 4, 17 ],
+            "wednesday": [ 28, 3, 5, 9 ],
+            "thursday": [ 2, 5, 7, 11 ],
+            "saturday": [ 3, 7, 9, 11 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
