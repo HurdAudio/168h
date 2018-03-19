@@ -2920,6 +2920,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 163,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=133115285/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cathedraltransmissions.bandcamp.com/album/sunshine-and-dust',
+          a_string: 'Sunshine and Dust by James A. McDermid',
+          rule: {
+            "monday": [ 24, 30, 6, 19 ],
+            "tuesday": [ 28, 4, 10, 23 ],
+            "wednesday": [ 27, 2, 9, 22 ],
+            "thursday": [ 26, 1, 8, 21 ],
+            "saturday": [ 25, 31, 7, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 164,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=600168489/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://subrosalabel.bandcamp.com/album/mani',
+          a_string: 'Mani by Pier Luigi Billone',
+          rule: {
+            "monday": [ 25, 31, 7, 20 ],
+            "tuesday": [ 24, 30, 6, 19 ],
+            "wednesday": [ 28, 4, 10, 23 ],
+            "thursday": [ 27, 2, 9, 22 ],
+            "saturday": [ 26, 1, 8, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 165,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1933404934/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://newfocusrecordings.bandcamp.com/album/wang-lu-urban-inventory',
+          a_string: 'Wang Lu: Urban Inventory by Wang Lu',
+          rule: {
+            "monday": [ 26, 1, 8, 21 ],
+            "tuesday": [ 25, 31, 7, 20 ],
+            "wednesday": [ 24, 30, 6, 19 ],
+            "thursday": [ 28, 4, 10, 23 ],
+            "saturday": [ 27, 2, 9, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
