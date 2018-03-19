@@ -221,6 +221,112 @@
       vm.tileModuleDisplay = tileModuleDisplay;
       vm.tilesCurratorReport = tilesCurratorReport;
       vm.tileCurratorReportDone = tileCurratorReportDone;
+      vm.appointmentYes = appointmentYes;
+      vm.appointmentNo = appointmentNo;
+
+      function appointmentNo(blockShare) {
+        let subObj = {
+          accepted: false,
+          responded: true
+        };
+        let declineAppointment = document.getElementById('declineAppointment' + blockShare.toString());
+        let acceptDecline = document.getElementById('acceptDecline' + blockShare.toString());
+        let element;
+        $http.patch(`/timeblock_shares/${blockShare}`, subObj)
+        .then(blockData=>{
+          let block = blockData.data;
+          declineAppointment.setAttribute("style", "display: initial;");
+          acceptDecline.setAttribute("style", "display: none;");
+          $http.get(`/users/${block.share_associate_id}`)
+          .then(inviteeData=>{
+            let invitee = inviteeData.data;
+            while (declineAppointment.firstChild) {
+              declineAppointment.removeChild(declineAppointment.firstChild);
+            }
+            declineAppointment.setAttribute("style", "padding: 2vmin; margin-right: 2vmin; float: left;");
+            element = document.createElement('img');
+            declineAppointment.appendChild(element);
+            element.src = invitee.user_avatar_url;
+            element = document.createElement('h3');
+            declineAppointment.appendChild(element);
+            element.setAttribute("style", "float: left; margin-left: 2vmin;");
+            element.innerHTML = invitee.name + ' has declined this invitation.';
+          });
+        });
+      }
+
+      function removeConflictingBlock(blockId) {
+        $http.delete(`/timeblocks/${blockId}`)
+        .then(removedData=>{
+          let removed = removedData.data;
+          console.log(removed);
+        });
+      }
+
+      function appointmentYes(blockShare) {
+        let subObj = {
+          accepted: true,
+          responded: true
+        };
+        let acceptedAppointment = document.getElementById('acceptedAppointment' + blockShare.toString());
+        let acceptDecline = document.getElementById('acceptDecline' + blockShare.toString());
+        let element;
+        $http.patch(`/timeblock_shares/${blockShare}`, subObj)
+        .then(blockData=>{
+          let block = blockData.data;
+          acceptedAppointment.setAttribute("style", "display: initial;");
+          acceptDecline.setAttribute("style", "display: none;");
+          $http.get(`/users/${block.share_associate_id}`)
+          .then(inviteeData=>{
+            let invitee = inviteeData.data;
+            while (acceptedAppointment.firstChild) {
+              acceptedAppointment.removeChild(acceptedAppointment.firstChild);
+            }
+            acceptedAppointment.setAttribute("style", "padding: 2vmin; margin-right: 2vmin; float: left;");
+            element = document.createElement('img');
+            acceptedAppointment.appendChild(element);
+            element.src = invitee.user_avatar_url;
+            element = document.createElement('h3');
+            acceptedAppointment.appendChild(element);
+            element.setAttribute("style", "float: left; margin-left: 2vmin;");
+            element.innerHTML = invitee.name + ' has accepted this invitation.';
+            $http.get(`/timeblocksbyuser/${currentUserId}`)
+            .then(userBlocksData=>{
+              let userBlocks = userBlocksData.data;
+              console.log(userBlocks);
+              $http.get(`/timeblocks/${block.timeblock_id}`)
+              .then(appointmentBlockData=>{
+                let appointmentBlock = appointmentBlockData.data;
+                console.log(appointmentBlock);
+                if (userBlocks.length > 0) {
+                  for (let i = 0; i < userBlocks.length; i++) {
+                    if (appointmentBlock.id !== userBlocks[i].id) {
+                      if (overlapExist(userBlocks[i], appointmentBlock)) {
+                        removeConflictingBlock(userBlocks[i].id);
+                      }
+                    }
+                  }
+                  let subObj = {
+                    user_id: currentUserId,
+                    block_type: appointmentBlock.block_type,
+                    start_time: appointmentBlock.start_time,
+                    end_time: appointmentBlock.end_time,
+                    user_notes: appointmentBlock.user_notes,
+                    location: appointmentBlock.location,
+                    block_data: appointmentBlock.block_data
+
+                  };
+                  $http.post(`/timeblocks`, subObj)
+                  .then(postedAppointmentData=>{
+                    let postedAppointment = postedAppointmentData.data;
+                    console.log(postedAppointment);
+                  });
+                }
+              });
+            });
+          });
+        });
+      }
 
       function tileCurratorReportDone() {
         let reportForTilesCurrator = document.getElementById('reportForTilesCurrator');
@@ -12594,17 +12700,60 @@
           if (appointment.share_associate_id === parseInt(currentUserId)) {
             document.getElementById('timeblockInviter' + appointment.id.toString()).setAttribute("style", "display: initial;");
             document.getElementById('timeblockInvitee' + appointment.id.toString()).setAttribute("style", "display: none;");
+            // document.getElementById('acceptDecline' + appointment.id.toString()).setAttribute("style", "display: initial; margin-left: 4vmin;");
           } else {
             document.getElementById('timeblockInvitee' + appointment.id.toString()).setAttribute("style", "display: initial;");
             document.getElementById('timeblockInviter' + appointment.id.toString()).setAttribute("style", "display: none;");
+            document.getElementById('acceptDecline' + appointment.id.toString()).setAttribute("style", "display: none;");
           }
           if (appointment.accepted) {
             document.getElementById('acceptDecline' + appointment.id.toString()).setAttribute("style", "display: none;");
-            document.getElementById('acceptedAppointment' + appointment.id.toString()).setAttribute("style", "display: initial;");
+            let element;
+            let acceptedAppointment = document.getElementById('acceptedAppointment' + appointment.id.toString());
+            acceptedAppointment.setAttribute("style", "display: initial;");
+            document.getElementById('declineAppointment' + appointment.id.toString()).setAttribute("style", "display: none;");
+            $http.get(`/users/${appointment.share_associate_id}`)
+            .then(inviteeData=>{
+              let invitee = inviteeData.data;
+              while (acceptedAppointment.firstChild) {
+                acceptedAppointment.removeChild(acceptedAppointment.firstChild);
+              }
+              acceptedAppointment.setAttribute("style", "padding: 2vmin; margin-right: 2vmin; float: left;");
+              element = document.createElement('img');
+              acceptedAppointment.appendChild(element);
+              element.src = invitee.user_avatar_url;
+              element = document.createElement('h3');
+              acceptedAppointment.appendChild(element);
+              element.innerHTML = invitee.name  + ' has accepted this invitation.';
+              element.setAttribute("style", "float: left; margin-left: 2vmin;");
+            });
           } else {
             // document.getElementById('acceptDecline' + appointment.id.toString()).setAttribute("style", "display: initial;");
             // document.getElementById('acceptDecline' + appointment.id.toString()).className = 'timeBlockAcceptDenyButtons';
             document.getElementById('acceptedAppointment' + appointment.id.toString()).setAttribute("style", "display: none;");
+            if (appointment.responded) {
+              let elements;
+              let declineAppointment = document.getElementById('declineAppointment' + appointment.id.toString());
+              declineAppointment.setAttribute("style", "display: initial;");
+              document.getElementById('acceptDecline' + appointment.id.toString()).setAttribute("style", "display: none;");
+              $http.get(`/users/${appointment.share_associate_id}`)
+              .then(inviteeData=>{
+                let invitee = inviteeData.data;
+                while (declineAppointment.firstChild) {
+                  declineAppointment.removeChild(declineAppointment.firstChild);
+                }
+                declineAppointment.setAttribute("style", "padding: 2vmin; margin-right: 2vmin; float: left;");
+                elements = document.createElement('img');
+                declineAppointment.appendChild(elements);
+                elements.src = invitee.user_avatar_url;
+                elements = document.createElement('h3');
+                declineAppointment.appendChild(elements);
+                elements.innerHTML = invitee.name  + ' has declined this invitation.';
+                elements.setAttribute("style", "float: left; margin-left: 2vmin;");
+              });
+            } else {
+              document.getElementById('declineAppointment' + appointment.id.toString()).setAttribute("style", "display: none;");
+            }
           }
         }, 50);
       }

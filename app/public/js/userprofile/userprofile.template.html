@@ -4999,10 +4999,11 @@
 
           <div class="timeBlockAcceptDenyButtons" id="acceptDecline{{block.id}}">
 
-            <a class="btn">Decline</a>
-            <a class="btn">Accept</a>
+            <a class="btn" ng-click="$ctrl.appointmentNo(block.id)">Decline</a>
+            <a class="btn" ng-click="$ctrl.appointmentYes(block.id)">Accept</a>
           </div>
           <div id="acceptedAppointment{{block.id}}"><h3>Appointment invitation has been accepted</h3></div>
+          <div id="declineAppointment{{block.id}}"><h3>Appointment invitation has been declined</h3></div>
           <a href=""><h3>comment</h3></a>
 
 
