@@ -5304,6 +5304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 266,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/jeremy_blincoe_tyson_ephemeral_memory_100_66-7.jpg',
+          title: 'Ephemeral Memory',
+          artist: 'Jeremy Blincoe Tyson',
+          year: '2010',
+          rule: {
+            "monday": [ 6, 16, 26, 4 ],
+            "tuesday": [ 5, 15, 25, 3 ],
+            "wednesday": [ 14, 24, 4, 2 ],
+            "thursday": [ 3, 13, 23, 1 ],
+            "friday": [ 2, 12, 22, 30 ],
+            "saturday": [ 8, 18, 28, 4 ],
+            "sunday": [ 7, 17, 27, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 267,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/blocksatsea.jpeg',
+          title: 'Low Tide,',
+          artist: 'ParkeHarrison',
+          year: '?',
+          rule: {
+            "monday": [ 7, 17, 27, 5 ],
+            "tuesday": [ 6, 16, 26, 4 ],
+            "wednesday": [ 5, 15, 25, 3 ],
+            "thursday": [ 14, 24, 4, 2 ],
+            "friday": [ 3, 13, 23, 1 ],
+            "saturday": [ 2, 12, 22, 30 ],
+            "sunday": [ 8, 18, 28, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 268,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/japan04.jpg',
+          title: 'Cylindrical Hood',
+          artist: 'Susan Fenton',
+          year: '1996',
+          rule: {
+            "monday": [ 8, 18, 28, 4 ],
+            "tuesday": [ 7, 17, 27, 5 ],
+            "wednesday": [ 6, 16, 26, 4 ],
+            "thursday": [ 5, 15, 25, 3 ],
+            "friday": [ 14, 24, 4, 2 ],
+            "saturday": [ 3, 13, 23, 1 ],
+            "sunday": [ 2, 12, 22, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 269,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/2e7b4279dc610c2c7bfd6f5f9d6434d6.jpg',
+          title: 'Barbie Suicide',
+          artist: 'Mariel Clayton',
+          year: '2012',
+          rule: {
+            "monday": [ 2, 12, 22, 30 ],
+            "tuesday": [ 8, 18, 28, 4 ],
+            "wednesday": [ 7, 17, 27, 5 ],
+            "thursday": [ 6, 16, 26, 4 ],
+            "friday": [ 5, 15, 25, 3 ],
+            "saturday": [ 14, 24, 4, 2 ],
+            "sunday": [ 3, 13, 23, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 270,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/contemporary-fine-art-prints.jpg',
+          title: 'Town Hall Train Station Sydney Australia',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 3, 13, 23, 1 ],
+            "tuesday": [ 2, 12, 22, 30 ],
+            "wednesday": [ 8, 18, 28, 4 ],
+            "thursday": [ 7, 17, 27, 5 ],
+            "friday": [ 6, 16, 26, 4 ],
+            "saturday": [ 5, 15, 25, 3 ],
+            "sunday": [ 14, 24, 4, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
