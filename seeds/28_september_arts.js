@@ -4704,6 +4704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 236,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/the-chickens-are-happy-sun-1949.jpg',
+          title: 'The chickens are happy sun',
+          artist: 'Qi Baishi',
+          year: '1949',
+          rule: {
+            "monday": [ 1, 7, 25, 3 ],
+            "tuesday": [ 30, 6, 24, 2 ],
+            "wednesday": [ 29, 5, 23, 30 ],
+            "thursday": [ 5, 11, 29, 7 ],
+            "friday": [ 4, 10, 28, 6 ],
+            "saturday": [ 3, 9, 27, 5 ],
+            "sunday": [ 2, 8, 26, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 237,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/le-chemin-de-croix-1973.jpg',
+          title: 'Le Chemin de Croix',
+          artist: 'Dado',
+          year: '1973',
+          rule: {
+            "monday": [ 2, 8, 26, 4 ],
+            "tuesday": [ 1, 7, 25, 3 ],
+            "wednesday": [ 30, 6, 24, 2 ],
+            "thursday": [ 29, 5, 23, 30 ],
+            "friday": [ 5, 11, 29, 7 ],
+            "saturday": [ 4, 10, 28, 6 ],
+            "sunday": [ 3, 9, 27, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 238,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/passage-de-l-op-ra-1971.jpg',
+          title: 'Passage de l\'Opéra',
+          artist: 'Conroy Maddox',
+          year: '1970 - 1971',
+          rule: {
+            "monday": [ 4, 10, 28, 6 ],
+            "tuesday": [ 3, 9, 27, 5 ],
+            "wednesday": [ 2, 8, 26, 5 ],
+            "thursday": [ 1, 7, 25, 3 ],
+            "friday": [ 30, 6, 24, 1 ],
+            "saturday": [ 6, 12, 30, 8 ],
+            "sunday": [ 5, 11, 29, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 239,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/southern-justice-murder-in-mississippi-1965.jpg',
+          title: 'Southern Justice (Murder in Mississippi)',
+          artist: 'Norman Rockwell',
+          year: '1965',
+          rule: {
+            "monday": [ 5, 11, 29, 7 ],
+            "tuesday": [ 4, 10, 28, 6 ],
+            "wednesday": [ 3, 9, 27, 5 ],
+            "thursday": [ 2, 8, 26, 5 ],
+            "friday": [ 1, 7, 25, 3 ],
+            "saturday": [ 30, 6, 24, 1 ],
+            "sunday": [ 6, 12, 30, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 240,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/owl-1977.jpg',
+          title: 'Owl',
+          artist: 'Huang Yongyu',
+          year: '1977',
+          rule: {
+            "monday": [ 6, 12, 30, 8 ],
+            "tuesday": [ 5, 11, 29, 7 ],
+            "wednesday": [ 4, 10, 28, 6 ],
+            "thursday": [ 3, 9, 27, 5 ],
+            "friday": [ 2, 8, 26, 5 ],
+            "saturday": [ 1, 7, 25, 3 ],
+            "sunday": [ 30, 6, 24, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
