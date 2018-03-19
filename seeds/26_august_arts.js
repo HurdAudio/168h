@@ -4904,6 +4904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 246,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/encontro-1924.jpg',
+          title: 'Encontro',
+          artist: 'Lasar Segall',
+          year: '1924',
+          rule: {
+            "monday": [ 7, 10, 19, 4 ],
+            "tuesday": [ 6, 10, 18, 3 ],
+            "wednesday": [ 5, 9, 17, 2 ],
+            "thursday": [ 4, 6, 16, 1 ],
+            "friday": [ 3, 6, 15, 31 ],
+            "saturday": [ 2, 5, 14, 30 ],
+            "sunday": [ 8, 12, 20, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 247,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/the-cyclist-1916.jpg',
+          title: 'The Cyclist',
+          artist: 'Mario Sironi',
+          year: '1916',
+          rule: {
+            "monday": [ 8, 12, 20, 5 ],
+            "tuesday": [ 7, 10, 19, 4 ],
+            "wednesday": [ 6, 10, 18, 3 ],
+            "thursday": [ 5, 9, 17, 2 ],
+            "friday": [ 4, 6, 16, 1 ],
+            "saturday": [ 3, 6, 15, 31 ],
+            "sunday": [ 2, 5, 14, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 248,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/mann-pferd-kuh-1918.jpg',
+          title: 'Mann, Pferd, Kuh',
+          artist: 'Heinrich Campendonk',
+          year: '1918',
+          rule: {
+            "monday": [ 2, 5, 14, 30 ],
+            "tuesday": [ 8, 12, 20, 5 ],
+            "wednesday": [ 7, 10, 19, 4 ],
+            "thursday": [ 6, 10, 18, 3 ],
+            "friday": [ 5, 9, 17, 2 ],
+            "saturday": [ 4, 6, 16, 1 ],
+            "sunday": [ 3, 6, 15, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 249,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/the-daughters-of-pelichtim-1908.jpg',
+          title: 'The Daughters of Pelichtim',
+          artist: 'Paul Serusier',
+          year: '1908',
+          rule: {
+            "monday": [ 3, 6, 15, 31 ],
+            "tuesday": [ 2, 5, 14, 30 ],
+            "wednesday": [ 8, 12, 20, 5 ],
+            "thursday": [ 7, 10, 19, 4 ],
+            "friday": [ 6, 10, 18, 3 ],
+            "saturday": [ 5, 9, 17, 2 ],
+            "sunday": [ 4, 6, 16, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 250,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/camp-borden-1919.jpg',
+          title: 'Camp Borden',
+          artist: 'Frank Johnston',
+          year: '1919',
+          rule: {
+            "monday": [ 4, 6, 16, 1 ],
+            "tuesday": [ 3, 6, 15, 31 ],
+            "wednesday": [ 2, 5, 14, 30 ],
+            "thursday": [ 8, 12, 20, 5 ],
+            "friday": [ 7, 10, 19, 4 ],
+            "saturday": [ 6, 10, 18, 3 ],
+            "sunday": [ 5, 9, 17, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
