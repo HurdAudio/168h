@@ -6304,6 +6304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 316,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/unknown-title.jpg',
+          title: 'unknown title',
+          artist: 'Michel Carrade',
+          year: '?',
+          rule: {
+            "monday": [ 19, 20, 12, 15 ],
+            "tuesday": [ 22, 23, 14, 18 ],
+            "wednesday": [ 25, 27, 28, 30 ],
+            "thursday": [ 27, 29, 2, 5 ],
+            "friday": [ 29, 31, 1, 4 ],
+            "saturday": [ 14, 15, 26, 18 ],
+            "sunday": [ 17, 19, 11, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 317,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/the-domes-1993.jpg',
+          title: 'The Domes',
+          artist: 'Adnan Coker',
+          year: '1993',
+          rule: {
+            "monday": [ 17, 19, 11, 31 ],
+            "tuesday": [ 19, 20, 12, 15 ],
+            "wednesday": [ 22, 23, 14, 18 ],
+            "thursday": [ 25, 27, 28, 30 ],
+            "friday": [ 27, 29, 2, 5 ],
+            "saturday": [ 29, 31, 1, 4 ],
+            "sunday": [ 14, 15, 26, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 318,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/untitled-1986.jpg',
+          title: 'Untitled',
+          artist: 'Fred Sandback',
+          year: '1986',
+          rule: {
+            "monday": [ 14, 15, 26, 18 ],
+            "tuesday": [ 17, 19, 11, 31 ],
+            "wednesday": [ 19, 20, 12, 15 ],
+            "thursday": [ 22, 23, 14, 18 ],
+            "friday": [ 25, 27, 28, 30 ],
+            "saturday": [ 27, 29, 2, 5 ],
+            "sunday": [ 29, 31, 1, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 319,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/opus-55-r-gne-de-l-acier-poli-heerschappij-van-gepolijst-staal-1923.jpg',
+          title: 'Opus 55. Règne de l’acier poli (Heerschappij van gepolijst staal)',
+          artist: 'Victor Servranckx',
+          year: '1923',
+          rule: {
+            "monday": [ 29, 31, 1, 4 ],
+            "tuesday": [ 14, 15, 26, 18 ],
+            "wednesday": [ 17, 19, 11, 31 ],
+            "thursday": [ 19, 20, 12, 15 ],
+            "friday": [ 22, 23, 14, 18 ],
+            "saturday": [ 25, 27, 28, 30 ],
+            "sunday": [ 27, 29, 2, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 320,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/composi-o-1964(1).jpg',
+          title: 'Composição',
+          artist: 'Lothar Charoux',
+          year: '1964',
+          rule: {
+            "monday": [ 27, 29, 2, 5 ],
+            "tuesday": [ 29, 31, 1, 4 ],
+            "wednesday": [ 14, 15, 26, 18 ],
+            "thursday": [ 17, 19, 11, 31 ],
+            "friday": [ 19, 20, 12, 15 ],
+            "saturday": [ 22, 23, 14, 18 ],
+            "sunday": [ 25, 27, 28, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
