@@ -3953,6 +3953,12 @@
             <a class="btn" href="#" id="commendDeleteButton{{comment.id}}" ng-click="$ctrl.userDeleteComment(comment.id)">delete</a>
 
           </div>
+          <div id="deleteCommentConfirm{{comment.id}}" class="messageEditDelete">
+
+            <h3>Delete comment forever?</h3>
+            <a class="btn" href="#" ng-click="$ctrl.userCommentDeleteCancel(comment.id)">no</a>
+            <a class="btn" href="#" ng-click="$ctrl.userCommentDeleteConfirmClick(comment.id)">yes</a>
+          </div>
         </main>
 
       </main>

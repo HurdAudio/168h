@@ -223,6 +223,45 @@
       vm.tileCurratorReportDone = tileCurratorReportDone;
       vm.appointmentYes = appointmentYes;
       vm.appointmentNo = appointmentNo;
+      vm.userDeleteComment = userDeleteComment;
+      vm.userCommentDeleteCancel = userCommentDeleteCancel;
+      vm.userCommentDeleteConfirmClick = userCommentDeleteConfirmClick;
+
+      function userCommentDeleteConfirmClick(commentId) {
+        let messageIndex = 0;
+        let index = 0;
+        $http.delete(`/comments/${commentId}`)
+        .then(deletedEntryData=>{
+          let deletedEntry = deletedEntryData.data;
+          for (let i = 0; i < vm.userMessages.length; i++) {
+            if ((vm.userMessages[i].comments !== undefined) &&  (vm.userMessages[i].comments.length > 0)) {
+              for (let j = 0; j < vm.userMessages[i].comments.length; j++) {
+                if (commentId === vm.userMessages[i].comments[j].id) {
+                  messageIndex = i;
+                  index = j;
+                }
+              }
+            }
+          }
+          vm.userMessages[messageIndex].comments.splice(index, 1);
+        });
+      }
+
+      function userCommentDeleteCancel(commentId) {
+        let editDeleteUserComments = document.getElementById('editDeleteUserComments' + commentId.toString());
+        let deleteCommentConfirm = document.getElementById('deleteCommentConfirm' + commentId.toString());
+
+        editDeleteUserComments.setAttribute("style", "display: initial;");
+        deleteCommentConfirm.setAttribute("style", "display: none;");
+      }
+
+      function userDeleteComment(commentId) {
+        let editDeleteUserComments = document.getElementById('editDeleteUserComments' + commentId.toString());
+        let deleteCommentConfirm = document.getElementById('deleteCommentConfirm' + commentId.toString());
+
+        editDeleteUserComments.setAttribute("style", "display: none;");
+        deleteCommentConfirm.setAttribute("style", "display: initial;");
+      }
 
       function appointmentNo(blockShare) {
         let subObj = {
