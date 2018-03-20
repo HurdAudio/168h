@@ -7384,8 +7384,8 @@ footer img {
 }
 
 
-/* .day {
-  background-image: url(../img/january_tiles/8856361c119cb72.jpg);
+.day {
+  background-image: url(../img/tiles/background-2109758_1920.jpg);
   background-repeat: no-repeat;
-  background-size: 225%;
-} */
+  background-size: 100%;
+}
