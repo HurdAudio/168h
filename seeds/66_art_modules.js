@@ -604,6 +604,66 @@ exports.seed = function(knex, Promise) {
           public: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 51,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/f60130d3-6d29-4a00-a07e-11ec943b0c62.jpg',
+          title: 'Smiling Cat',
+          artist: '?',
+          year: '?',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 52,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/993bb212-bae5-47f5-985b-7e8c1774195b.jpg',
+          title: 'Smiling Cat',
+          artist: '?',
+          year: '?',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 53,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/b156dc03-63c2-471f-b061-6d759a318da7.jpg',
+          title: 'Smiling Cat',
+          artist: '?',
+          year: '?',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 54,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/623243b4-6e86-4c45-9474-8b02f67143ed.jpg',
+          title: 'Smiling Kitten',
+          artist: '?',
+          year: '?',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 55,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/fe8841d5-bd9e-4d4f-86a2-f20bbb7b233b.jpg',
+          title: 'Smiling Cat',
+          artist: '?',
+          year: '?',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
