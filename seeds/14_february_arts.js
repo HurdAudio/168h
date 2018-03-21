@@ -6204,6 +6204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 311,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/tumblr_m3qn2oCH8N1rs7x5fo1_400.jpg',
+          title: 'Esther "Baby" Jones',
+          artist: 'James Presley Ball',
+          year: '?',
+          rule: {
+            "monday": [ 25, 6, 2, 21 ],
+            "tuesday": [ 15, 23, 2, 10 ],
+            "wednesday": [ 16, 25, 4, 12 ],
+            "thursday": [ 22, 27, 4, 14 ],
+            "friday": [ 21, 29, 8, 16 ],
+            "saturday": [ 23, 4, 10, 16 ],
+            "sunday": [ 25, 4, 12, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 312,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/images_file_79118-559x800.jpg',
+          title: 'Alvin Baltrop at Galerie Buchholz',
+          artist: 'Alvin Baltrop',
+          year: '?',
+          rule: {
+            "monday": [ 25, 4, 12, 22 ],
+            "tuesday": [ 25, 6, 2, 21 ],
+            "wednesday": [ 15, 23, 2, 10 ],
+            "thursday": [ 16, 25, 4, 12 ],
+            "friday": [ 22, 27, 4, 14 ],
+            "saturday": [ 21, 29, 8, 16 ],
+            "sunday": [ 23, 4, 10, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 313,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/Henry-Wilmer-Bannarn-Rowhouses-Charleston-South-Carolina-187235-313286.jpg',
+          title: 'Rowhouses: Charleston, South Carolina',
+          artist: 'Henry Bannarn',
+          year: '1943',
+          rule: {
+            "monday": [ 23, 4, 10, 16 ],
+            "tuesday": [ 25, 4, 12, 22 ],
+            "wednesday": [ 25, 6, 2, 21 ],
+            "thursday": [ 15, 23, 2, 10 ],
+            "friday": [ 16, 25, 4, 12 ],
+            "saturday": [ 22, 27, 4, 14 ],
+            "sunday": [ 21, 29, 8, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 314,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/Kids_Road_by_Edward_Mitchell_Bannister,_1880s.jpg',
+          title: 'Kid\'s Road',
+          artist: 'Edward Mitchell Bannister',
+          year: '1880s',
+          rule: {
+            "monday": [ 21, 29, 8, 16 ],
+            "tuesday": [ 23, 4, 10, 16 ],
+            "wednesday": [ 25, 4, 12, 22 ],
+            "thursday": [ 25, 6, 2, 21 ],
+            "friday": [ 15, 23, 2, 10 ],
+            "saturday": [ 16, 25, 4, 12 ],
+            "sunday": [ 22, 27, 4, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 315,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/ernie-barnes-sidewalk-scene-with-graduate.jpg',
+          title: 'Sidewalk Scene with Graduate',
+          artist: 'Ernie Barnes',
+          year: '?',
+          rule: {
+            "monday": [ 23, 28, 5, 15 ],
+            "tuesday": [ 22, 1, 9, 17 ],
+            "wednesday": [ 24, 5, 11, 17 ],
+            "thursday": [ 26, 5, 13, 23 ],
+            "friday": [ 26, 7, 3, 22 ],
+            "saturday": [ 16, 24, 3, 11 ],
+            "sunday": [ 17, 26, 5, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
