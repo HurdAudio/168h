@@ -5204,6 +5204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 261,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/new-yorkaise-i-huile-sur-toile-50x50cm-2013.jpg.jpg',
+          title: 'New Yorkaise I',
+          artist: 'Pietropoli Patrick',
+          year: '2013',
+          rule: {
+            "monday": [ 9, 20, 31, 10 ],
+            "tuesday":[ 8, 19, 30, 10 ],
+            "wednesday":  [ 7, 18, 29, 9 ],
+            "thursday": [ 6, 17, 28, 29 ],
+            "friday": [ 5, 16, 26, 28 ],
+            "saturday": [ 4, 15, 26, 27 ],
+            "sunday": [ 3, 14, 25, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 262,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/eurydice-n-37-2001.jpg',
+          title: 'Eurydice n.37',
+          artist: 'Bracha L. Ettinger',
+          year: '2001',
+          rule: {
+            "monday": [ 3, 14, 25, 5 ],
+            "tuesday":[ 9, 20, 31, 10 ],
+            "wednesday":  [ 8, 19, 30, 10 ],
+            "thursday": [ 7, 18, 29, 9 ],
+            "friday": [ 6, 17, 28, 29 ],
+            "saturday": [ 5, 16, 26, 28 ],
+            "sunday": [ 4, 15, 26, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 263,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/theatrical-composition-1981.jpg',
+          title: 'Theatrical Composition',
+          artist: 'Christian Boltanski',
+          year: '1981',
+          rule: {
+            "monday": [ 4, 15, 26, 27 ],
+            "tuesday":[ 3, 14, 25, 5 ],
+            "wednesday":  [ 9, 20, 31, 10 ],
+            "thursday": [ 8, 19, 30, 10 ],
+            "friday": [ 7, 18, 29, 9 ],
+            "saturday": [ 6, 17, 28, 29 ],
+            "sunday": [ 5, 16, 26, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 264,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/justine-2-1976.jpg',
+          title: 'Justine (2)',
+          artist: 'Ivan Tovar',
+          year: '1976',
+          rule: {
+            "monday": [ 5, 16, 26, 28 ],
+            "tuesday":[ 4, 15, 26, 27 ],
+            "wednesday":  [ 3, 14, 25, 5 ],
+            "thursday": [ 9, 20, 31, 10 ],
+            "friday": [ 8, 19, 30, 10 ],
+            "saturday": [ 7, 18, 29, 9 ],
+            "sunday": [ 6, 17, 28, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 265,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/arrachement-1990-3.jpg',
+          title: 'Arrachement',
+          artist: 'Andre-Pierre Arnal',
+          year: '1990',
+          rule: {
+            "monday": [ 6, 17, 28, 29 ],
+            "tuesday": [ 5, 16, 26, 28 ],
+            "wednesday": [ 4, 15, 26, 27 ],
+            "thursday": [ 3, 14, 25, 5 ],
+            "friday": [ 9, 20, 31, 10 ],
+            "saturday": [ 8, 19, 30, 10 ],
+            "sunday": [ 7, 18, 29, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
