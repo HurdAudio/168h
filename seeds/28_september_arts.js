@@ -4804,6 +4804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 241,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/arbres-1984.jpg',
+          title: 'Arbres',
+          artist: 'Mario Prassinos',
+          year: '1984',
+          rule: {
+            "monday": [ 30, 6, 24, 1 ],
+            "tuesday": [ 6, 12, 30, 8 ],
+            "wednesday": [ 5, 11, 29, 7 ],
+            "thursday": [ 4, 10, 28, 6 ],
+            "friday": [ 3, 9, 27, 5 ],
+            "saturday": [ 2, 8, 26, 5 ],
+            "sunday": [ 1, 7, 25, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 242,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/komposition-1984.jpg',
+          title: 'Komposition',
+          artist: 'Martin Disler',
+          year: '1984',
+          rule: {
+            "monday": [ 1, 7, 25, 3 ],
+            "tuesday": [ 30, 6, 24, 1 ],
+            "wednesday": [ 6, 12, 30, 8 ],
+            "thursday": [ 5, 11, 29, 7 ],
+            "friday": [ 4, 10, 28, 6 ],
+            "saturday": [ 3, 9, 27, 5 ],
+            "sunday": [ 2, 8, 26, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 243,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/zimmer-2004.jpg',
+          title: 'Zimmer',
+          artist: 'Matthias Weischer',
+          year: '2004',
+          rule: {
+            "monday": [ 2, 8, 26, 5 ],
+            "tuesday": [ 1, 7, 25, 3 ],
+            "wednesday": [ 30, 6, 24, 1 ],
+            "thursday": [ 6, 12, 30, 8 ],
+            "friday": [ 5, 11, 29, 7 ],
+            "saturday": [ 4, 10, 28, 6 ],
+            "sunday": [ 3, 9, 27, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 244,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/well-done-1987.jpg',
+          title: 'Well Done',
+          artist: 'Bill Woodrow',
+          year: '1987',
+          rule: {
+            "monday": [ 3, 9, 27, 5 ],
+            "tuesday": [ 2, 8, 26, 5 ],
+            "wednesday": [ 1, 7, 25, 3 ],
+            "thursday": [ 30, 6, 24, 1 ],
+            "friday": [ 6, 12, 30, 8 ],
+            "saturday": [ 5, 11, 29, 7 ],
+            "sunday": [ 4, 10, 28, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 245,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/five-pears-1976.jpg',
+          title: 'Five Pears',
+          artist: 'William Scott',
+          year: '1976',
+          rule: {
+            "monday": [ 5, 11, 29, 7 ],
+            "tuesday": [ 4, 10, 28, 6 ],
+            "wednesday": [ 3, 9, 27, 6 ],
+            "thursday": [ 2, 8, 26, 4 ],
+            "friday": [ 1, 7, 25, 2 ],
+            "saturday": [ 7, 13, 1, 9 ],
+            "sunday": [ 6, 12, 30, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
