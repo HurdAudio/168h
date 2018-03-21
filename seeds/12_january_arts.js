@@ -6404,6 +6404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 321,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/composition(1).jpg',
+          title: 'Composition',
+          artist: 'Marcelle Cahn',
+          year: 'xx Cent.',
+          rule: {
+            "monday": [ 25, 27, 28, 30 ],
+            "tuesday": [ 27, 29, 2, 5 ],
+            "wednesday": [ 29, 31, 1, 4 ],
+            "thursday": [ 14, 15, 26, 18 ],
+            "friday": [ 17, 19, 11, 31 ],
+            "saturday": [ 19, 20, 12, 15 ],
+            "sunday": [ 22, 23, 14, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 322,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/angle-1963.jpg',
+          title: 'Angle',
+          artist: 'William Scott',
+          year: '1963',
+          rule: {
+            "monday": [ 23, 24, 15, 19 ],
+            "tuesday": [ 26, 28, 29, 31 ],
+            "wednesday": [ 28, 30, 3, 6 ],
+            "thursday": [ 30, 1, 2, 5 ],
+            "friday": [ 15, 16, 27, 19 ],
+            "saturday": [ 18, 20, 12, 1 ],
+            "sunday": [ 20, 21, 13, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 323,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/untitled-abstract.jpg',
+          title: 'Untitled (Abstract)',
+          artist: 'Taro Yamamoto',
+          year: 'xx Cent.',
+          rule: {
+            "monday": [ 20, 21, 13, 16 ],
+            "tuesday": [ 23, 24, 15, 19 ],
+            "wednesday": [ 26, 28, 29, 31 ],
+            "thursday": [ 28, 30, 3, 6 ],
+            "friday": [ 30, 1, 2, 5 ],
+            "saturday": [ 15, 16, 27, 19 ],
+            "sunday": [ 18, 20, 12, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 324,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/28-ii-58-1958.jpg',
+          title: '28 II 58',
+          artist: 'Oskar Holweck',
+          year: '1958',
+          rule: {
+            "monday": [ 18, 20, 12, 1 ],
+            "tuesday": [ 20, 21, 13, 16 ],
+            "wednesday": [ 23, 24, 15, 19 ],
+            "thursday": [ 26, 28, 29, 31 ],
+            "friday": [ 28, 30, 3, 6 ],
+            "saturday": [ 30, 1, 2, 5 ],
+            "sunday": [ 15, 16, 27, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 325,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/nightfall-1994.jpg',
+          title: 'Nightfall',
+          artist: 'Ronnie Landfield',
+          year: '1994',
+          rule: {
+            "monday": [ 15, 16, 27, 19 ],
+            "tuesday": [ 18, 20, 12, 1 ],
+            "wednesday": [ 20, 21, 13, 16 ],
+            "thursday": [ 23, 24, 15, 19 ],
+            "friday": [ 26, 28, 29, 31 ],
+            "saturday": [ 28, 30, 3, 6 ],
+            "sunday": [ 30, 1, 2, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
