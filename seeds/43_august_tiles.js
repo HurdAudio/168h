@@ -466,6 +466,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#ECF42D',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 34,
+          user_id: 1,
+          theme: 'Primary Colors',
+          type: 'friday',
+          src_string: '../img/august_tiles/e46ae3d48f6ddefd39a87cfa8f941d45--background-images-wattpad-stories.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '135%',
+          color_dark: '#03030D',
+          color_medium: '#003C6C',
+          color_light: '#2FDEFD',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
