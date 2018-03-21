@@ -5804,6 +5804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 291,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/855351308-kansas-city-royals-v-new-york-yankeesjpg.jpg',
+          title: '20 Bold Predictions for the 2018 Royals',
+          artist: 'Jim McIsaac',
+          year: '2018',
+          rule: {
+            "monday": [ 7, 12, 18, 24 ],
+            "tuesday": [ 6, 11, 17, 23 ],
+            "wednesday": [ 11, 17, 22, 29 ],
+            "thursday": [ 25, 15, 21, 28 ],
+            "friday": [ 10, 15, 21, 27 ],
+            "saturday": [ 9, 13, 28, 26 ],
+            "sunday": [ 8, 13, 18, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 292,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/151102003254-20-ws-game-five-1101-exlarge-169.jpg',
+          title: 'World Series 2015: Royals vs. Mets',
+          artist: '?',
+          year: '2015',
+          rule: {
+            "monday": [ 8, 13, 18, 24 ],
+            "tuesday": [ 7, 12, 18, 24 ],
+            "wednesday": [ 6, 11, 17, 23 ],
+            "thursday": [ 11, 17, 22, 29 ],
+            "friday": [ 25, 15, 21, 28 ],
+            "saturday": [ 10, 15, 21, 27 ],
+            "sunday": [ 9, 13, 28, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 293,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/KYUB4LM6J5HWBI7GZLW3KHJ6WM.jpg',
+          title: 'Yordano Ventura of the Kansas City Royals',
+          artist: 'Allen J. Schaben',
+          year: '2016',
+          rule: {
+            "monday": [ 9, 13, 28, 26 ],
+            "tuesday": [ 8, 13, 18, 24 ],
+            "wednesday": [ 7, 12, 18, 24 ],
+            "thursday": [ 6, 11, 17, 23 ],
+            "friday": [ 11, 17, 22, 29 ],
+            "saturday": [ 25, 15, 21, 28 ],
+            "sunday": [ 10, 15, 21, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 294,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/tiSH4RB.jpg',
+          title: 'Kansas City Royals Concept Uniforms',
+          artist: '?',
+          year: '2014',
+          rule: {
+            "monday": [ 11, 16, 22, 28 ],
+            "tuesday": [ 10, 14, 29, 27 ],
+            "wednesday": [ 9, 14, 19, 25 ],
+            "thursday": [ 8, 13, 19, 25 ],
+            "friday": [ 7, 12, 18, 24 ],
+            "saturday": [ 12, 18, 23, 30 ],
+            "sunday": [ 26, 16, 22, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 295,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/1989_Kansas_City_Royals_away_uniform.jpg',
+          title: '1989 Kansas City Royals Away Uniform',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 26, 16, 22, 29 ],
+            "tuesday": [ 11, 16, 22, 28 ],
+            "wednesday": [ 10, 14, 29, 27 ],
+            "thursday": [ 9, 14, 19, 25 ],
+            "friday": [ 8, 13, 19, 25 ],
+            "saturday": [ 7, 12, 18, 24 ],
+            "sunday": [ 12, 18, 23, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
