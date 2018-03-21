@@ -3190,6 +3190,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 178,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1622864793/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bell.bandcamp.com/album/diamonite',
+          a_string: 'DIAMONITE by OLGA BELL',
+          rule: {
+            "monday": [ 26, 1, 7, 15 ],
+            "tuesday": [ 30, 5, 11, 19 ],
+            "wednesday": [ 29, 4, 10, 18 ],
+            "thursday": [ 28, 3, 9, 18 ],
+            "saturday": [ 26, 2, 8, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 179,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1170230570/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://queenbeerecords.bandcamp.com/album/future-s-now-s',
+          a_string: 'Future(s) Now(s) by Bristle',
+          rule: {
+            "monday": [ 26, 2, 8, 16 ],
+            "tuesday": [ 26, 1, 7, 15 ],
+            "wednesday": [ 30, 5, 11, 19 ],
+            "thursday": [ 29, 4, 10, 18 ],
+            "saturday": [ 28, 3, 9, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 180,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4265715197/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://peggygou.bandcamp.com/album/once',
+          a_string: 'Once by Peggy Gou',
+          rule: {
+            "monday": [ 28, 3, 9, 18 ],
+            "tuesday": [ 26, 2, 8, 16 ],
+            "wednesday": [ 26, 1, 7, 15 ],
+            "thursday": [ 30, 5, 11, 19 ],
+            "saturday": [ 29, 4, 10, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
