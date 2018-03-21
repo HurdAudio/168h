@@ -4204,6 +4204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 211,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/34-08,AstndngS.jpg',
+          title: 'Astounding Stories',
+          artist: 'Mark Marchioni',
+          year: '1934',
+          rule: {
+            "monday": [ 2, 15, 23, 29 ],
+            "tuesday": [ 1, 14, 22, 28 ],
+            "wednesday": [ 31, 13, 21, 27 ],
+            "thursday": [ 30, 12, 20, 26 ],
+            "friday": [ 29, 10, 19, 25 ],
+            "saturday": [ 28, 10, 29, 25 ],
+            "sunday": [ 3, 16, 24, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 212,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/46-07,PlanetCmx43.jpg',
+          title: 'Planet Comics #43',
+          artist: 'Chester Martin',
+          year: '1946',
+          rule: {
+            "monday": [ 3, 16, 24, 30 ],
+            "tuesday": [ 2, 15, 23, 29 ],
+            "wednesday": [ 1, 14, 22, 28 ],
+            "thursday": [ 31, 13, 21, 27 ],
+            "friday": [ 30, 12, 20, 26 ],
+            "saturday": [ 29, 10, 19, 25 ],
+            "sunday": [ 28, 10, 29, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 213,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/37-11,W_Aces.jpg',
+          title: 'Western Aces',
+          artist: 'Pete Martinez',
+          year: '1937',
+          rule: {
+            "monday": [ 28, 10, 29, 25 ],
+            "tuesday": [ 3, 16, 24, 30 ],
+            "wednesday": [ 2, 15, 23, 29 ],
+            "thursday": [ 1, 14, 22, 28 ],
+            "friday": [ 31, 13, 21, 27 ],
+            "saturday": [ 30, 12, 20, 26 ],
+            "sunday": [ 29, 10, 19, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 214,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/31-03-15,Tarzan.jpg',
+          title: 'Tarzan Comic',
+          artist: 'Rex Maxon',
+          year: '1931',
+          rule: {
+            "monday": [ 29, 10, 19, 25 ],
+            "tuesday": [ 28, 10, 29, 25 ],
+            "wednesday": [ 3, 16, 24, 30 ],
+            "thursday": [ 2, 15, 23, 29 ],
+            "friday": [ 1, 14, 22, 28 ],
+            "saturday": [ 31, 13, 21, 27 ],
+            "sunday": [ 30, 12, 20, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 215,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/37-06,KaZar2.jpg',
+          title: 'Ka-Zar illustration',
+          artist: 'Earl Mayan',
+          year: '1937',
+          rule: {
+            "monday": [ 30, 12, 20, 26 ],
+            "tuesday": [ 29, 10, 19, 25 ],
+            "wednesday": [ 28, 10, 29, 25 ],
+            "thursday": [ 3, 16, 24, 30 ],
+            "friday": [ 2, 15, 23, 29 ],
+            "saturday": [ 1, 14, 22, 28 ],
+            "sunday": [ 31, 13, 21, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
