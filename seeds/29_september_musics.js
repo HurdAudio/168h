@@ -2542,6 +2542,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 142,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1557122668/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://onlyloversrecords.bandcamp.com/album/polygondwanaland',
+          a_string: 'Polygondwanaland by King Gizzard and the Lizard Wizard',
+          rule: {
+            "monday": [ 25, 15, 23, 17 ],
+            "tuesday": [ 24, 14, 22, 16 ],
+            "wednesday": [ 23, 13, 21, 16 ],
+            "thursday": [ 22, 12, 20, 14 ],
+            "saturday": [ 21, 11, 19, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 143,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1037461562/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://thesunflowersmusic.bandcamp.com/album/castle-spell-2',
+          a_string: 'Castle Spell by SUNFLOWERS',
+          rule: {
+            "monday": [ 21, 11, 19, 13 ],
+            "tuesday": [ 25, 15, 23, 17 ],
+            "wednesday": [ 24, 14, 22, 16 ],
+            "thursday": [ 23, 13, 21, 16 ],
+            "saturday": [ 22, 12, 20, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 144,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1025488984/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://thesunflowersmusic.bandcamp.com/album/the-intergalactic-guide-to-find-the-red-cowboy',
+          a_string: 'The Intergalactic Guide To Find The Red Cowboy by SUNFLOWERS',
+          rule: {
+            "monday": [ 22, 12, 20, 14 ],
+            "tuesday": [ 21, 11, 19, 13 ],
+            "wednesday": [ 25, 15, 23, 17 ],
+            "thursday": [ 24, 14, 22, 16 ],
+            "saturday": [ 23, 13, 21, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
