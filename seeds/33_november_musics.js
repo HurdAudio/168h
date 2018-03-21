@@ -2326,6 +2326,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 130,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=699087070/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://onthecornerrecords.bandcamp.com/album/super-liminal',
+          a_string: 'Super Liminal by Penya',
+          rule: {
+            "monday": [ 17, 28, 9, 11 ],
+            "tuesday": [ 16, 27, 8, 10 ],
+            "wednesday": [ 20, 1, 12, 16 ],
+            "thursday": [ 19, 30, 11, 15 ],
+            "saturday": [ 18, 29, 10, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 131,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=38283473/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://onthecornerrecords.bandcamp.com/album/mugwisa-international-xylophone-group-ii-iganga-embaire-12',
+          a_string: 'Mugwisa International Xylophone Group II - Iganga Embaire 12 by On The Corner',
+          rule: {
+            "monday": [ 18, 29, 10, 14 ],
+            "tuesday": [ 17, 28, 9, 11 ],
+            "wednesday": [ 16, 27, 8, 10 ],
+            "thursday": [ 20, 1, 12, 16 ],
+            "saturday": [ 19, 30, 11, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 132,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4291739362/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://onthecornerrecords.bandcamp.com/album/versus-ii',
+          a_string: 'Versus II by Various',
+          rule: {
+            "monday": [ 19, 30, 11, 15 ],
+            "tuesday": [ 18, 29, 10, 14 ],
+            "wednesday": [ 17, 28, 9, 11 ],
+            "thursday": [ 16, 27, 8, 10 ],
+            "saturday": [ 20, 1, 12, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
