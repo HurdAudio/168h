@@ -508,6 +508,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FDFEFF',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 37,
+          user_id: 1,
+          theme: 'Greenery',
+          type: 'holiday',
+          src_string: '../img/may_tiles/jardim-com-flores-coloridas-17.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '140%',
+          color_dark: '#050200',
+          color_medium: '#CDAF01',
+          color_light: '#D0DECE',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
