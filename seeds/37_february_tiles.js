@@ -550,6 +550,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FFCDBC',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 40,
+          user_id: 1,
+          theme: 'Silk/Velvet',
+          type: 'saturday',
+          src_string: '../img/february_tiles/savannahbordeaux.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '130%',
+          color_dark: '#40280C',
+          color_medium: '#BD1829',
+          color_light: '#D2BB89',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
