@@ -494,6 +494,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FFFFFD',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 36,
+          user_id: 1,
+          theme: 'Light',
+          type: 'sunday',
+          src_string: '../img/june_tiles/redwoods-1455738_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '100%',
+          color_dark: '#1A100F',
+          color_medium: '#344124',
+          color_light: '#FFFFFF',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
