@@ -2218,6 +2218,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 124,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3660299472/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://juanamolina.bandcamp.com/album/un-d-a',
+          a_string: 'Un Día by Juana Molina',
+          rule: {
+            "monday": [ 19, 27, 2, 8 ],
+            "tuesday": [ 20, 26, 1, 7 ],
+            "wednesday": [ 24, 30, 5, 11 ],
+            "thursday": [ 23, 29, 4, 9 ],
+            "saturday": [ 22, 28, 3, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 125,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=534324451/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://juanamolina.bandcamp.com/album/son',
+          a_string: 'Son by Juana Molina',
+          rule: {
+            "monday": [ 22, 28, 3, 9 ],
+            "tuesday": [ 19, 27, 2, 8 ],
+            "wednesday": [ 20, 26, 1, 7 ],
+            "thursday": [ 24, 30, 5, 11 ],
+            "saturday": [ 23, 29, 4, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 126,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3007114881/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://juanamolina.bandcamp.com/album/tres-cosas',
+          a_string: 'Tres Cosas by Juana Molina',
+          rule: {
+            "monday": [ 24, 30, 5, 10 ],
+            "tuesday": [ 23, 29, 4, 10 ],
+            "wednesday": [ 20, 28, 3, 9 ],
+            "thursday": [ 21, 27, 2, 8 ],
+            "saturday": [ 25, 31, 6, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
