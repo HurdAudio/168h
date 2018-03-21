@@ -2434,6 +2434,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 136,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'http://bandcamp.com/EmbeddedPlayer/album=4226651012/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://listen.20buckspin.com/album/the-incubus-of-karma',
+          a_string: 'The Incubus Of Karma by Mournful Congregation',
+          rule: {
+            "monday": [ 26, 5, 15, 18 ],
+            "tuesday": [ 25, 4, 14, 17 ],
+            "wednesday": [ 24, 3, 13, 16 ],
+            "thursday": [ 23, 2, 13, 15 ],
+            "saturday": [ 27, 6, 16, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 137,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=55267270/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://unyielding-love.bandcamp.com/album/the-sweat-of-augury-2',
+          a_string: 'The Sweat of Augury by Unyielding Love',
+          rule: {
+            "monday": [ 27, 6, 16, 19 ],
+            "tuesday": [ 26, 5, 15, 18 ],
+            "wednesday": [ 25, 4, 14, 17 ],
+            "thursday": [ 24, 3, 13, 16 ],
+            "saturday": [ 23, 2, 13, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 138,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=63441355/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://endon.bandcamp.com/album/through-the-mirror',
+          a_string: 'Through the Mirror by Endon',
+          rule: {
+            "monday": [ 23, 2, 13, 15 ],
+            "tuesday": [ 27, 6, 16, 19 ],
+            "wednesday": [ 26, 5, 15, 18 ],
+            "thursday": [ 25, 4, 14, 17 ],
+            "saturday": [ 24, 3, 13, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
