@@ -6004,6 +6004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 301,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/red-river-valley-1-2003.jpg',
+          title: 'Red River Valley #1',
+          artist: 'Pat Lipsky',
+          year: '2003',
+          rule: {
+            "monday": [ 9, 19, 27, 6 ],
+            "tuesday": [ 8, 18, 26, 5 ],
+            "wednesday": [ 7, 17, 25, 4 ],
+            "thursday": [ 6, 16, 25, 3 ],
+            "friday": [ 12, 21, 31, 8 ],
+            "saturday": [ 11, 21, 31, 8 ],
+            "sunday": [ 11, 20, 28, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 302,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/2-copper-1976.jpg',
+          title: '#2 Copper',
+          artist: 'Jacqueline Winsor',
+          year: '1976',
+          rule: {
+            "monday": [ 11, 20, 28, 7 ],
+            "tuesday": [ 9, 19, 27, 6 ],
+            "wednesday": [ 8, 18, 26, 5 ],
+            "thursday": [ 7, 17, 25, 4 ],
+            "friday": [ 6, 16, 25, 3 ],
+            "saturday": [ 12, 21, 31, 8 ],
+            "sunday": [ 11, 21, 31, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 303,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/knowledge-66-western-europe-late-16th-cen-1998.jpg',
+          title: 'Knowledge #66: Western Europe, late 16th cen.',
+          artist: 'Joyce Kozloff',
+          year: '1998',
+          rule: {
+            "monday": [ 11, 21, 31, 8 ],
+            "tuesday": [ 11, 20, 28, 7 ],
+            "wednesday": [ 9, 19, 27, 6 ],
+            "thursday": [ 8, 18, 26, 5 ],
+            "friday": [ 7, 17, 25, 4 ],
+            "saturday": [ 6, 16, 25, 3 ],
+            "sunday": [ 12, 21, 31, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 304,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/waiting-for-the-rain-1991.jpg',
+          title: 'Waiting for the Rain',
+          artist: 'Harmony Hammond',
+          year: '1991',
+          rule: {
+            "monday": [ 12, 21, 31, 8 ],
+            "tuesday": [ 11, 21, 31, 8 ],
+            "wednesday": [ 11, 20, 28, 7 ],
+            "thursday": [ 9, 19, 27, 6 ],
+            "friday": [ 8, 18, 26, 5 ],
+            "saturday": [ 7, 17, 25, 4 ],
+            "sunday": [ 6, 16, 25, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 305,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/wonderful-world.jpg',
+          title: 'Wonderful World',
+          artist: 'Guity Novin',
+          year: '?',
+          rule: {
+            "monday": [ 6, 16, 25, 3 ],
+            "tuesday": [ 12, 21, 31, 8 ],
+            "wednesday": [ 11, 21, 31, 8 ],
+            "thursday": [ 11, 20, 28, 7 ],
+            "friday": [ 9, 19, 27, 6 ],
+            "saturday": [ 8, 18, 26, 5 ],
+            "sunday": [ 7, 17, 25, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
