@@ -564,6 +564,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#F9FFFE',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 41,
+          user_id: 1,
+          theme: 'Ice',
+          type: 'sunday',
+          src_string: '../img/january_tiles/ice-stalagmites-lake-baikal-siberia-russia-ICEFORMS1217.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '165%',
+          color_dark: '#18161B',
+          color_medium: '#94B0BE',
+          color_light: '#D1D7DD',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
