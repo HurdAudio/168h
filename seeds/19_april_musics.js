@@ -3082,6 +3082,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 172,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2125061923/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://mariagrand.bandcamp.com/album/magdalena',
+          a_string: 'Magdalena by María Grand',
+          rule: {
+            "monday": [ 28, 6, 18, 23 ],
+            "tuesday": [ 27, 5, 17, 22 ],
+            "wednesday": [ 26, 4, 16, 21 ],
+            "thursday": [ 25, 3, 15, 20 ],
+            "saturday": [ 24, 2, 14, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 173,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=541192747/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://mariagrand.bandcamp.com/album/tetrawind',
+          a_string: 'TetraWind by María Grand',
+          rule: {
+            "monday": [ 24, 2, 14, 19 ],
+            "tuesday": [ 28, 6, 18, 23 ],
+            "wednesday": [ 27, 5, 17, 22 ],
+            "thursday": [ 26, 4, 16, 21 ],
+            "saturday": [ 25, 3, 15, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 174,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'http://bandcamp.com/EmbeddedPlayer/album=358029223/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sunnysidezone.com/album/singular-awakening',
+          a_string: 'Singular Awakening by Mike McGinnis',
+          rule: {
+            "monday": [ 25, 3, 15, 20 ],
+            "tuesday": [ 24, 2, 14, 19 ],
+            "wednesday": [ 28, 6, 18, 23 ],
+            "thursday": [ 27, 5, 17, 22 ],
+            "saturday": [ 26, 4, 16, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
