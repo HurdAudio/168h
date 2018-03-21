@@ -5404,6 +5404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 271,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/5eb404c3b247db5b1240234ed15aa499.jpg',
+          title: 'Abstract Impressionism in Photrgraphy',
+          artist: 'Vicki Moritz',
+          year: 'xxi Cent.',
+          rule: {
+            "monday": [ 14, 24, 4, 2 ],
+            "tuesday": [ 3, 13, 23, 1 ],
+            "wednesday": [ 2, 12, 22, 30 ],
+            "thursday": [ 8, 18, 28, 4 ],
+            "friday": [ 7, 17, 27, 5 ],
+            "saturday": [ 6, 16, 26, 4 ],
+            "sunday": [ 5, 15, 25, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 272,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/288fba41b79b6a85d44844a089d5c076.jpg',
+          title: 'Woman in Red',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 5, 15, 25, 3 ],
+            "tuesday": [ 14, 24, 4, 2 ],
+            "wednesday": [ 3, 13, 23, 1 ],
+            "thursday": [ 2, 12, 22, 30 ],
+            "friday": [ 8, 18, 28, 4 ],
+            "saturday": [ 7, 17, 27, 5 ],
+            "sunday": [ 6, 16, 26, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 273,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/seascapeImage.jpeg',
+          title: 'Impressionist, panoramic study at Llandudno Beach, Western Cape',
+          artist: 'Diane Bester',
+          year: '?',
+          rule: {
+            "monday": [ 7, 17, 27, 5 ],
+            "tuesday": [ 6, 16, 26, 4 ],
+            "wednesday": [ 15, 25, 5, 3 ],
+            "thursday": [ 4, 14, 24, 2 ],
+            "friday": [ 3, 13, 23, 1 ],
+            "saturday": [ 9, 19, 29, 5 ],
+            "sunday": [ 8, 18, 28, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 274,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/d863f971e18292bb0715ed90b92973f9.jpg',
+          title: 'Photo',
+          artist: 'Hannes Kilian',
+          year: '?',
+          rule: {
+            "monday": [ 8, 18, 28, 6 ],
+            "tuesday": [ 7, 17, 27, 5 ],
+            "wednesday": [ 6, 16, 26, 4 ],
+            "thursday": [ 15, 25, 5, 3 ],
+            "friday": [ 4, 14, 24, 2 ],
+            "saturday": [ 3, 13, 23, 1 ],
+            "sunday": [ 9, 19, 29, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 275,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/MichaelNewler201122741635T.jpg',
+          title: 'Venice',
+          artist: 'Michael Newler',
+          year: '?',
+          rule: {
+            "monday": [ 9, 19, 29, 5 ],
+            "tuesday": [ 8, 18, 28, 6 ],
+            "wednesday": [ 7, 17, 27, 5 ],
+            "thursday": [ 6, 16, 26, 4 ],
+            "friday": [ 15, 25, 5, 3 ],
+            "saturday": [ 4, 14, 24, 2 ],
+            "sunday": [ 3, 13, 23, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
