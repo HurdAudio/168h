@@ -2758,6 +2758,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 154,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1426853841/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://themessthetics.bandcamp.com/album/the-messthetics',
+          a_string: 'The Messthetics by The Messthetics',
+          rule: {
+            "monday": [ 20, 22, 26, 3 ],
+            "tuesday": [ 24, 26, 30, 7 ],
+            "wednesday": [ 23, 25, 29, 6 ],
+            "thursday": [ 22, 24, 28, 5 ],
+            "saturday": [ 21, 22, 27, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 155,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2152159783/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cavernofanti-matter.bandcamp.com/album/hormone-lemonade',
+          a_string: 'Hormone Lemonade by Cavern of Anti-Matter',
+          rule: {
+            "monday": [ 21, 22, 27, 4 ],
+            "tuesday": [ 20, 22, 26, 3 ],
+            "wednesday": [ 24, 26, 30, 7 ],
+            "thursday": [ 23, 25, 29, 6 ],
+            "saturday": [ 22, 24, 28, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 156,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=309505546/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://kendonagasaki.bandcamp.com/album/live-pirate',
+          a_string: 'Live @ Pirate by Kendo Nagasaki',
+          rule: {
+            "monday": [ 22, 24, 28, 5 ],
+            "tuesday": [ 21, 22, 27, 4 ],
+            "wednesday": [ 20, 22, 26, 3 ],
+            "thursday": [ 24, 26, 30, 7 ],
+            "saturday": [ 23, 25, 29, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
