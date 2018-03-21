@@ -2866,6 +2866,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 160,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=851893713/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://lowpoint.bandcamp.com/album/summers-end',
+          a_string: 'Summer&#39;s End by Orphax',
+          rule: {
+            "monday": [ 22, 26, 1, 13 ],
+            "tuesday": [ 22, 25, 1, 12 ],
+            "wednesday": [ 20, 28, 30, 11 ],
+            "thursday": [ 24, 28, 4, 15 ],
+            "saturday": [ 23, 26, 1, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 161,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1664533383/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://lowpoint.bandcamp.com/album/experiment-3',
+          a_string: 'Experiment.3 by Gareth Hardwick',
+          rule: {
+            "monday": [ 24, 27, 2, 14 ],
+            "tuesday": [ 23, 27, 2, 14 ],
+            "wednesday": [ 23, 26, 2, 13 ],
+            "thursday": [ 21, 29, 1, 12 ],
+            "saturday": [ 25, 29, 5, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 162,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=529443982/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://lowpoint.bandcamp.com/album/a-late-spring-never-lies',
+          a_string: 'A Late Spring Never Lies by Stereocilia',
+          rule: {
+            "monday": [ 25, 29, 5, 16 ],
+            "tuesday": [ 24, 27, 2, 14 ],
+            "wednesday": [ 23, 27, 2, 14 ],
+            "thursday": [ 23, 26, 2, 13 ],
+            "saturday": [ 21, 29, 1, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
