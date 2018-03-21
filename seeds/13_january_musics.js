@@ -3406,6 +3406,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 190,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3455184217/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jasonmoran.bandcamp.com/album/music-for-joan-jonas',
+          a_string: 'Music for Joan Jonas by Jason Moran',
+          rule: {
+            "monday": [ 2, 9, 10, 11 ],
+            "tuesday": [ 6, 13, 14, 15 ],
+            "wednesday": [ 5, 11, 13, 14 ],
+            "thursday": [ 4, 11, 12, 13 ],
+            "saturday": [ 3, 9, 10, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 191,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=274365780/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://alexcobb.bandcamp.com/album/chantepleure',
+          a_string: 'Chantepleure by Alex Cobb',
+          rule: {
+            "monday": [ 3, 9, 10, 11 ],
+            "tuesday": [ 2, 9, 10, 11 ],
+            "wednesday": [ 6, 13, 14, 15 ],
+            "thursday": [ 5, 11, 13, 14 ],
+            "saturday": [ 4, 11, 12, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 192,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=373455315/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://alexcobb.bandcamp.com/album/works-for-cassette',
+          a_string: 'Works for Cassette by Taiga Remains',
+          rule: {
+            "monday": [ 4, 11, 12, 13 ],
+            "tuesday": [ 3, 9, 10, 11 ],
+            "wednesday": [ 2, 9, 10, 11 ],
+            "thursday": [ 6, 13, 14, 15 ],
+            "saturday": [ 5, 11, 13, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
