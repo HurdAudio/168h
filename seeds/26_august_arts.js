@@ -5004,6 +5004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 251,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/mont-sainte-victoire-1927.jpg',
+          title: 'Mont Sainte-Victoire',
+          artist: 'Marsden Hartley',
+          year: '1927',
+          rule: {
+            "monday": [ 5, 9, 17, 2 ],
+            "tuesday": [ 4, 6, 16, 1 ],
+            "wednesday": [ 3, 6, 15, 31 ],
+            "thursday": [ 2, 5, 14, 30 ],
+            "friday": [ 8, 12, 20, 5 ],
+            "saturday": [ 7, 10, 19, 4 ],
+            "sunday": [ 6, 10, 18, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 252,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/w-wiat-1901.jpg',
+          title: 'W świat',
+          artist: 'Ferdynand Ruszczyc',
+          year: '1901',
+          rule: {
+            "monday": [ 7, 11, 19, 4 ],
+            "tuesday": [ 6, 10, 18, 3 ],
+            "wednesday": [ 5, 7, 17, 2 ],
+            "thursday": [ 4, 7, 16, 1 ],
+            "friday": [ 3, 6, 15, 31 ],
+            "saturday": [ 9, 13, 21, 6 ],
+            "sunday": [ 8, 11, 20, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 253,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/man-and-woman-1913.jpg',
+          title: 'Man and Woman (Adam and Eve)',
+          artist: 'Pavel Filonov',
+          year: '1912 - 1913',
+          rule: {
+            "monday": [ 8, 11, 20, 5 ],
+            "tuesday": [ 7, 11, 19, 4 ],
+            "wednesday": [ 6, 10, 18, 3 ],
+            "thursday": [ 5, 7, 17, 2 ],
+            "friday": [ 4, 7, 16, 1 ],
+            "saturday": [ 3, 6, 15, 31 ],
+            "sunday": [ 9, 13, 21, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 254,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/untitled-34-8-1934.jpg',
+          title: 'Untitled (34-8)',
+          artist: 'Balcomb Greene',
+          year: '1934',
+          rule: {
+            "monday": [ 9, 13, 21, 6 ],
+            "tuesday": [ 8, 11, 20, 5 ],
+            "wednesday": [ 7, 11, 19, 4 ],
+            "thursday": [ 6, 10, 18, 3 ],
+            "friday": [ 5, 7, 17, 2 ],
+            "saturday": [ 4, 7, 16, 1 ],
+            "sunday": [ 3, 6, 15, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 255,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/the-lamp-1919.jpg',
+          title: 'The Lamp',
+          artist: 'Mario Sironi',
+          year: '1919',
+          rule: {
+            "monday": [ 3, 6, 15, 31 ],
+            "tuesday": [ 9, 13, 21, 6 ],
+            "wednesday": [ 8, 11, 20, 5 ],
+            "thursday": [ 7, 11, 19, 4 ],
+            "friday": [ 6, 10, 18, 3 ],
+            "saturday": [ 5, 7, 17, 2 ],
+            "sunday": [ 4, 7, 16, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
