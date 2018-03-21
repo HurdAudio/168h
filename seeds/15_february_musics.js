@@ -3298,6 +3298,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 184,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4128050939/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cavaliervmc.bandcamp.com/album/private-stock',
+          a_string: 'Private Stock by Cavalier',
+          rule: {
+            "monday": [ 3, 7, 9, 11 ],
+            "tuesday": [ 15, 9, 11, 17 ],
+            "wednesday": [ 27, 3, 4, 17 ],
+            "thursday": [ 28, 3, 5, 9 ],
+            "saturday": [ 2, 5, 7, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 185,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=629175254/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cavaliervmc.bandcamp.com/album/lemonade-ep',
+          a_string: 'Lemonade EP by Cavalier',
+          rule: {
+            "monday": [ 2, 5, 7, 11 ],
+            "tuesday": [ 3, 7, 9, 11 ],
+            "wednesday": [ 15, 9, 11, 17 ],
+            "thursday": [ 27, 3, 4, 17 ],
+            "saturday": [ 28, 3, 5, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 186,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=239721285/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://childrenofzeus.bandcamp.com/album/the-story-so-far',
+          a_string: 'The Story So Far... by Children Of Zeus',
+          rule: {
+            "monday": [ 28, 3, 5, 9 ],
+            "tuesday": [ 2, 5, 7, 11 ],
+            "wednesday": [ 3, 7, 9, 11 ],
+            "thursday": [ 15, 9, 11, 17 ],
+            "saturday": [ 27, 3, 4, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
