@@ -664,6 +664,66 @@ exports.seed = function(knex, Promise) {
           public: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 56,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/cute_cat_06_hd_pictures_168991.jpg',
+          title: 'Cute Cat',
+          artist: 'ZCool',
+          year: '?',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 57,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/cute_cat_514193.jpg',
+          title: 'Cute Cat',
+          artist: 'Helgi Halldórsson',
+          year: '?',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 58,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/cute_kitty_hd_picture_168921.jpg',
+          title: 'Cute Kitty',
+          artist: 'buou866',
+          year: '?',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 59,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/cat_cuteness_219859.jpg',
+          title: 'Cat Cuteness',
+          artist: 'ninihouse',
+          year: '?',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 60,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/two_young_cats_189918.jpg',
+          title: 'Two Young Cats',
+          artist: 'Petr Kratochvil',
+          year: '?',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
