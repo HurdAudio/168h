@@ -5303,6 +5303,35 @@ footer img {
   margin-top: 0.2em;
 }
 
+.artModuleCommentsBar {
+  font-family: 'Asul', serif;
+  font-size: 18px
+  background: #441E38;
+  background-color: -webkit-linear-gradient(-135deg, #5A7AD1, #857D7A);
+  background: -o-linear-gradient(-135deg, #5A7AD1, #857D7A);
+  background: -moz-linear-gradient(-135deg, #5A7AD1, #857D7A);
+  background: linear-gradient(-135deg, #5A7AD1, #857D7A);
+  border-radius: 5px;
+  margin: 0;
+  padding:0;
+  height: 3.8em;
+  top: 0%;
+  opacity: 1;
+}
+
+.artModuleCommentsBar h1 {
+  margin-left: 2em;
+  padding-top: 0.4em;
+}
+
+.artModuleCommentsBar a {
+  float:right;
+  margin-right: 1.1em;
+  margin-top: 0.2em;
+}
+
+
+
 #observancesManagerBar {
   font-family: 'Asul', serif;
   font-size: 18px
@@ -7432,6 +7461,22 @@ footer img {
 
 .iframeDiv {
   margin: 0.5vmin 7vmin 0.5vmin 7vmin;
+}
+
+#artModuleCommentSpace img {
+  float: left;
+  height: 3em;
+  width: 3em;
+  margin: 1vmin 2vmin 1vmin 4vmin;
+}
+
+#artModuleCommentSpace p {
+  float: left;
+  margin: 1vmin 2vmin 1vmin 2vmin;
+}
+
+#artModuleCommentSpace h3 {
+  margin: 1vmin 2vmin 1vmin 4vmin;
 }
 
 
