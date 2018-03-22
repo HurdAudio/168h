@@ -424,6 +424,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#E9E4EA',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 31,
+          user_id: 1,
+          theme: 'Snow',
+          type: 'sunday',
+          src_string: '../img/december_tiles/landscape-2905031_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '150%',
+          color_dark: '#1D2B3B',
+          color_medium: '#8DACC0',
+          color_light: '#F7EBD3',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
