@@ -3918,13 +3918,37 @@
 
     <div id="messagesSpace">
       <div id="messageBar">
+        <a class="btn" href="#" ng-click="$ctrl.postNewMessage()" id="postNewMessageButton">new</a>
         <h1>Messages:</h1>
+
+      </div>
+      <div id="authorNewMessageQuery">
+        <h3>New Message for:</h3><br>
+
+        <a class="btn" href="#" id="adminMessageAllButton" ng-click="$ctrl.messageForAllUsers()">all users</a>
+        <a class="btn" href="#" ng-click="$ctrl.messageForAllFriends()">all friends</a>
+        <a class="btn" href="#" ng-click="$ctrl.messageDirect()">direct</a>
+      </div>
+      <div id="directMessageList">
+        <h3>Select a recipient: </h3>
+        <div id="directMessageSearchDiv">
+          <input type="text" placeholder="search" id="directMessageTargetSearch" class="pure-input-1">
+        </div>
+        <div id="listOfFriendsDiv">
+
+          <br><div href="#" class="friendlyList">
+            <img>
+            <p>friend.name</p>
+          </div><br><br><br>
+        </div>
       </div>
       <main ng-repeat="message in $ctrl.userMessages | orderBy : $ctrl.sortBy">
+        <h3>Message:</h3>
         <img src="{{message.senderImg}}">
-        <p>From: {{message.senderName}}</p>
+        <p>From: {{message.senderName}}<br><br>
+        To: {{message.recipientName}}</p><br>
         <p>on {{message.cleanDate}}</p><br><br><br><br><br><br><br>
-        <h3 id="thisIsTheMessage{{message.id}}">{{message.message}}</h3>
+        <h3 id="thisIsTheMessage{{message.id}}">{{message.message}}</h3><br><br>
         <textarea id="thisIsTheMessageEditor{{message.id}}" class="pure-input-1" rows="5"></textarea>
         <div class="thisIsMessageEditDoneDiv" id="thisIsMessageEditDoneDiv{{message.id}}"><a class="btn" id="thisIsTheMessageEditorDoneButton{{message.id}}" href="#" ng-click="$ctrl.userEditMessageCompleted(message.id)">done</a></div>
         <div id="editDeleteDiv{{message.id}}" class="messageEditDelete">

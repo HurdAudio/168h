@@ -7328,6 +7328,57 @@ footer img {
   padding-left: 1.5vmin;
 }
 
+#authorNewMessageQuery {
+  display: none;
+
+}
+
+
+
+
+#directMessageList img {
+  margin: 0 0 1vmin 12vmin;
+  float: left;
+  height: 2em;
+  width: 2em;
+  cursor: pointer;
+}
+
+#directMessageList p {
+  margin: 0 0 1vmin 3vmin;
+  float: left;
+  cursor: pointer;
+  font-family: 'Asul', serif;
+  font-size: 24px;
+}
+
+#directMessageList {
+  display: none;
+  margin: 2vmin;
+}
+
+#directMessageList input[type=text] {
+  margin: 0.4em 0 0.4em 4.0em;
+  font-family: 'Asul', serif;
+  font-size: 24px
+}
+
+#adminMessageAllButton {
+  visibility: hidden;
+}
+
+#authorNewMessageQuery a {
+  float: left;
+  margin-left: 1em;
+  margin-top: 0.2em;
+}
+
+#messageBar a {
+  float:right;
+  margin-right: 1.1em;
+  margin-top: 0.2em;
+}
+
 .commentsBar {
   font-family: 'Asul', serif;
   font-size: 18px

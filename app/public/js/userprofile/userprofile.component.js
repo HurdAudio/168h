@@ -4,7 +4,7 @@
   var weekClock = false;
   var monthClock = false;
   var profileClock = true;
-  var currentUserId;
+  var currentUserId = 0;
   var toggle = {};
 
 
@@ -226,6 +226,241 @@
       vm.userDeleteComment = userDeleteComment;
       vm.userCommentDeleteCancel = userCommentDeleteCancel;
       vm.userCommentDeleteConfirmClick = userCommentDeleteConfirmClick;
+      vm.postNewMessage = postNewMessage;
+      vm.messageForAllUsers = messageForAllUsers;
+      vm.messageForAllFriends = messageForAllFriends;
+      vm.messageDirect = messageDirect;
+
+      function populateFriendsList(associatesList, userId) {
+        $http.get(`/users/${userId}`)
+        .then(friendData=>{
+          let friend = friendData.data;
+          associatesList.push(friend);
+        });
+      }
+
+      function handleFriendClick(entry, friendId) {
+        let directMessageList = document.getElementById('directMessageList');
+
+        entry.addEventListener('click', ()=>{
+          $http.get(`/users/${currentUserId}`)
+          .then(userData=>{
+            let user = userData.data;
+            let messageSubObj = {
+              user_id: parseInt(currentUserId),
+              to_user_id: parseInt(friendId),
+              message: '',
+              public: false
+            };
+            $http.get(`/users/${friendId}`)
+            .then(theFriendData=>{
+              let theFriend = theFriendData.data;
+              $http.post('/messages', messageSubObj)
+              .then(messageData=>{
+                let message = messageData.data[0];
+                let userMessage = {
+                  id: message.id,
+                  cleanDate: cleanDateHoliday(message.created_at) + ' - ' + timeDate(message.updated_at),
+                  message: message.message,
+                  senderImg: user.user_avatar_url,
+                  senderName: user.name,
+                  recipientName: theFriend.name
+                };
+                vm.userMessages.unshift(userMessage);
+                userEditMessage(message.id);
+              });
+            });
+
+          });
+          directMessageList.setAttribute("style", "display: none;");
+        });
+      }
+
+      function displayFriendsList(div, list) {
+        let element;
+        let entry;
+        while (div.firstChild) {
+          div.removeChild(div.firstChild);
+        }
+        for (let i = 0; i < list.length; i++) {
+          element = document.createElement('br');
+          div.appendChild(element);
+          entry = document.createElement('div');
+          div.appendChild(entry);
+          entry.setAttribute("style", "cursor: pointer;");
+          element = document.createElement('img');
+          entry.appendChild(element);
+          element.src = list[i].user_avatar_url;
+          element = document.createElement('p');
+          entry.appendChild(element);
+          element.innerHTML = list[i].name;
+          element = document.createElement('br');
+          div.appendChild(element);
+          element = document.createElement('br');
+          div.appendChild(element);
+          element = document.createElement('br');
+          div.appendChild(element);
+          handleFriendClick(entry, list[i].id);
+        }
+      }
+
+      function messageDirect() {
+        let authorNewMessageQuery = document.getElementById('authorNewMessageQuery');
+        let directMessageList = document.getElementById('directMessageList');
+        let directMessageSearchDiv = document.getElementById('directMessageSearchDiv');
+        let directMessageTargetSearch = document.getElementById('directMessageTargetSearch');
+        if (directMessageTargetSearch) {
+          directMessageTargetSearch.parentNode.removeChild(directMessageTargetSearch);
+          directMessageTargetSearch = document.createElement('input');
+          directMessageSearchDiv.appendChild(directMessageTargetSearch);
+          directMessageTargetSearch.id = 'directMessageTargetSearch';
+          directMessageTargetSearch.type = 'text';
+          directMessageTargetSearch.className = 'pure-input-1';
+          directMessageTargetSearch.placeholder = 'search';
+        }
+        let listOfFriendsDiv = document.getElementById('listOfFriendsDiv');
+        while (listOfFriendsDiv.firstChild) {
+          listOfFriendsDiv.removeChild(listOfFriendsDiv.firstChild);
+        }
+        let filteredList = [];
+        let associatesList = [];
+        $http.get(`/users/${currentUserId}`)
+        .then(userData=>{
+          let user = userData.data;
+          if (user.associates.friends.length > 0) {
+            for (let i = 0; i < user.associates.friends.length; i++) {
+              populateFriendsList(associatesList, user.associates.friends[i], listOfFriendsDiv);
+            }
+          }
+          setTimeout(()=>{
+            associatesList = associatesList.sort((a, b)=>{
+              if (a.name.toLowerCase() < b.name.toLowerCase()) {
+                return -1;
+              } else if (a.name.toLowerCase() > b.name.toLowerCase()) {
+                return 1;
+              } else {
+                return 0;
+              }
+            });
+            displayFriendsList(listOfFriendsDiv, associatesList);
+            directMessageTargetSearch.addEventListener('keyup', ()=>{
+              let nameString = '';
+              let subString = '';
+              if (directMessageTargetSearch.value === '') {
+                displayFriendsList(listOfFriendsDiv, associatesList);
+              } else {
+                filteredList = associatesList.filter(entity=>{
+                  nameString = entity.name.toLowerCase();
+                  subString = directMessageTargetSearch.value.toLowerCase();
+                  return(nameString.includes(subString));
+                });
+                displayFriendsList(listOfFriendsDiv, filteredList);
+              }
+            });
+          }, 250);
+        });
+
+        authorNewMessageQuery.setAttribute("style", "display: none;");
+        directMessageList.setAttribute("style", "display: initial;");
+      }
+
+      function messageForAllFriends() {
+        $http.get(`/users/${currentUserId}`)
+        .then(userData=>{
+          let user = userData.data;
+          let messageSubObj = {
+            user_id: parseInt(currentUserId),
+            to_user_id: parseInt(currentUserId),
+            message: '',
+            public: true
+          };
+          $http.post('/messages', messageSubObj)
+          .then(messageData=>{
+            let message = messageData.data[0];
+            let userMessage = {
+              id: message.id,
+              cleanDate: cleanDateHoliday(message.created_at) + ' - ' + timeDate(message.updated_at),
+              message: message.message,
+              senderImg: user.user_avatar_url,
+              senderName: user.name,
+              recipientName: 'All Friends'
+            };
+            vm.userMessages.unshift(userMessage);
+            userEditMessage(message.id);
+
+            document.getElementById('authorNewMessageQuery').setAttribute("style", "display: none;");
+          });
+        });
+      }
+
+      function messageForAllUsers() {
+        $http.get(`/users/${currentUserId}`)
+        .then(userData=>{
+          let user = userData.data;
+          $http.get('users')
+          .then(allUsersData=>{
+            let allUsers = allUsersData.data;
+            let friends = [];
+            if (allUsers.length > 0) {
+              for (let i = 0; i < allUsers.length; i++) {
+                if (parseInt(allUsers[i].id) !== parseInt(currentUserId)) {
+                  friends.push(parseInt(allUsers[i].id));
+                }
+              }
+            }
+            let userSubObj = {
+              associates: {
+                friends: friends
+              }
+            };
+            $http.patch(`/users/${currentUserId}`, userSubObj)
+            .then(updatedData=>{
+              let updated = updatedData.data;
+              console.log(updated);
+              let messageSub = {
+                user_id: parseInt(currentUserId),
+                to_user_id: parseInt(currentUserId),
+                message: '',
+                public: true
+              };
+
+              $http.post('/messages', messageSub)
+              .then(messageData=>{
+                let message = messageData.data[0];
+                let userMessage = {
+                  id: message.id,
+                  cleanDate: cleanDateHoliday(message.created_at) + ' - ' + timeDate(message.updated_at),
+                  message: message.message,
+                  senderImg: user.user_avatar_url,
+                  senderName: user.name,
+                  recipientName: 'All 168h Users'
+                };
+                vm.userMessages.unshift(userMessage);
+                userEditMessage(message.id);
+
+                document.getElementById('authorNewMessageQuery').setAttribute("style", "display: none;");
+              });
+            });
+          });
+        });
+      }
+
+      function postNewMessage() {
+        let postNewMessageButton = document.getElementById('postNewMessageButton');
+        let authorNewMessageQuery = document.getElementById('authorNewMessageQuery');
+        let adminMessageAllButton = document.getElementById('adminMessageAllButton');
+
+        $http.get(`/users/${currentUserId}`)
+        .then(userData=>{
+          let user = userData.data;
+          if (user.is_admin) {
+            adminMessageAllButton.setAttribute("style", "visibility: visible;");
+          }
+        });
+
+        postNewMessageButton.setAttribute("style", "visibility: hidden;");
+        authorNewMessageQuery.setAttribute("style", "display: initial;");
+      }
 
       function userCommentDeleteConfirmClick(commentId) {
         let messageIndex = 0;
@@ -810,6 +1045,33 @@
         });
       }
 
+      function removeEmptyMessage(messageId) {
+        $http.delete(`/messages/${messageId}`)
+        .then(()=>{
+          if (vm.userMessages.length > 0) {
+            for (let i = 0; i < vm.userMessages.length; i++) {
+              if (vm.userMessages[i].id === messageId) {
+                vm.userMessages.splice(i, 1);
+              }
+            }
+          }
+        });
+      }
+
+      function cleanBlankMessages() {
+        $http.get(`/messagesbyuser/${currentUserId}`)
+        .then(allMessagesData=>{
+          let allMessages = allMessagesData.data;
+          if (allMessages.length > 0) {
+            for (let i = 0; i < allMessages.length; i++) {
+              if (allMessages[i].message === '') {
+                removeEmptyMessage(allMessages[i].id);
+              }
+            }
+          }
+        });
+      }
+
       function userEditMessageCompleted(messageId) {
         let thisIsTheMessageEditor = document.getElementById('thisIsTheMessageEditor' + messageId);
         let subObj = {
@@ -828,10 +1090,12 @@
               thisIsTheMessage.innerHTML = message.message;
             }
           }
+          cleanBlankMessages();
           thisIsTheMessage.setAttribute("style", "display: initial;");
           thisIsTheMessageEditor.setAttribute("style", "display: none;");
           thisIsMessageEditDoneDiv.setAttribute("style", "display: none;");
           editDeleteDiv.setAttribute("style", "display: initial;");
+          document.getElementById('postNewMessageButton').setAttribute("style", "visibility: visible;");
         });
       }
 
@@ -851,7 +1115,7 @@
           thisIsMessageEditDoneDiv.setAttribute("style", "display: initial;");
           thisIsTheMessageEditorDoneButton.setAttribute("style", "visibility: visible;");
           editDeleteDiv.setAttribute("style", "display: none;");
-
+          thisIsTheMessageEditor.focus();
         });
       }
 
@@ -12639,9 +12903,17 @@
         $http.get(`/users/${userMessage.user_id}`)
         .then(messageUserData=>{
           let messageUser = messageUserData.data;
-          console.log(messageUser);
           vm.userMessages[index].senderImg = messageUser.user_avatar_url;
           vm.userMessages[index].senderName = messageUser.name;
+          if (userMessage.public) {
+            vm.userMessages[index].recipientName = "All Friends";
+          } else {
+            $http.get(`/users/${userMessage.to_user_id}`)
+            .then(friendData=>{
+              let friend = friendData.data;
+              vm.userMessages[index].recipientName = friend.name;
+            });
+          }
         });
       }
 
@@ -13007,11 +13279,15 @@
           .then(allMessagesData=>{
             let allMessages = allMessagesData.data;
             let directMessages = allMessages.filter(note=>{
-              return(parseInt(note.to_user_id) === parseInt(currentUserId));
+              return((!note.public) && ((parseInt(note.to_user_id) === parseInt(currentUserId)) || (parseInt(note.user_id) === parseInt(currentUserId))));
             });
+
+
             let friendMessages = allMessages.filter(note=>{
-              return(note.public && (user.associates.friends.indexOf(parseInt(note.user_id)) !== -1));
+
+              return((note.public) && ((user.associates.friends.indexOf(parseInt(note.user_id) !== -1)) || (parseInt(note.user_id) === parseInt(currentUserId))));
             });
+
             if (directMessages.length > 0) {
               directMessages = directMessages.sort((a, b)=>{
                 return((new Date(a.created_at)) - (new Date(b.created_at)));
@@ -13019,7 +13295,7 @@
             }
             if (friendMessages.length > 0) {
               friendMessages = friendMessages.sort((a, b)=>{
-                return((new Date(a.created_at)) - (new Date(b.created_at)));
+                return((new Date(b.created_at)) - (new Date(a.created_at)));
               });
             }
             vm.userMessages = [];
