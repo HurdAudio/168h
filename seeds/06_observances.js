@@ -9497,6 +9497,39 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 608,
+          user_id: 1,
+          name: 'Marc Ribot (guitar) born 1954',
+          color: '#817875',
+          picture: './img/musicians/gzTfsgn9rsuSYTsHLdEBCn-320-80.jpg',
+          day_of: new Date ('1954-05-21T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: true,
+          override_content: {
+            "sources": [ 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp' ],
+            "src_strings": [ 'https://bandcamp.com/EmbeddedPlayer/album=2720888422/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=2539287336/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=2371861336/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=1314867387/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=4244495580/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=1231621555/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=2337454017/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/' ],
+            "href_strings": [ 'http://marcribot.bandcamp.com/album/live-at-the-village-vanguard', 'http://marcribot.bandcamp.com/album/silent-movies', 'http://marcribot.bandcamp.com/album/party-intellectuals', 'http://marcribot.bandcamp.com/album/spiritual-unity', 'http://marcribotsceramicdog.bandcamp.com/album/your-turn-2', 'http://noelakchote.bandcamp.com/album/the-other-side-of-lust-corner-alternate-free-takes-1996-no-l-akchot-marc-ribot', 'http://intaktrec.bandcamp.com/album/err-guitar' ],
+            "a_strings": [ 'Live At The Village Vanguard by Marc Ribot Trio', 'Silent Movies by Marc Ribot', 'Party Intellectuals by Marc Ribot&#39;s Ceramic Dog', 'Spiritual Unity by Marc Ribot', 'Your Turn by Marc Ribot&#39;s Ceramic Dog', 'The Other Side Of Lust Corner (Alternate Free Takes, 1996) - Noël Akchoté &amp; Marc Ribot by Noël Akchoté &amp; Marc Ribot', 'Err Guitar by Elliott Sharp (with Mary Halvorson and Marc Ribot)' ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 609,
+          user_id: 1,
+          name: 'The world ended on this day in 1780 as smoke from forest fires blotted out the skies of New England and was interpreted by the Connecticut General Assembly as the end of days.',
+          color: '#525447',
+          picture: './img/doomsday/Dark-Day-Full-Image.jpg',
+          day_of: new Date ('1780-05-19T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
