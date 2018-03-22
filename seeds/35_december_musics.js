@@ -2272,6 +2272,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 127,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2454936573/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://desmonta.bandcamp.com/album/cogumelo-panda',
+          a_string: '&quot;cogumelo panda&quot; by COGUMELO PANDA',
+          rule: {
+            "monday": [ 25, 31, 6, 12 ],
+            "tuesday": [ 24, 30, 5, 10 ],
+            "wednesday": [ 23, 29, 4, 10 ],
+            "thursday": [ 20, 28, 3, 9 ],
+            "saturday": [ 21, 27, 2, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 128,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=595881051/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://desmonta.bandcamp.com/album/metal-metal',
+          a_string: '&quot;metal metal&quot; by METÁ METÁ',
+          rule: {
+            "monday": [ 21, 27, 2, 8 ],
+            "tuesday": [ 25, 31, 6, 12 ],
+            "wednesday": [ 24, 30, 5, 10 ],
+            "thursday": [ 23, 29, 4, 10 ],
+            "saturday": [ 20, 28, 3, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 129,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3609443598/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://responsepirituba.bandcamp.com/album/response-pirituba',
+          a_string: 'response pirituba by DESMONTA',
+          rule: {
+            "monday": [ 20, 28, 3, 9 ],
+            "tuesday": [ 21, 27, 2, 8 ],
+            "wednesday": [ 25, 31, 6, 12 ],
+            "thursday": [ 24, 30, 5, 10 ],
+            "saturday": [ 23, 29, 4, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
