@@ -480,6 +480,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#2FDEFD',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 35,
+          user_id: 1,
+          theme: 'Primary Colors',
+          type: 'saturday',
+          src_string: '../img/august_tiles/28793265-old-red-brick-wall-texture-background-high-resolution-high-quality-photo-.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '137%',
+          color_dark: '#4A262A',
+          color_medium: '#A35D3C',
+          color_light: '#D9C5BC',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
