@@ -578,6 +578,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#D1D7DD',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 42,
+          user_id: 1,
+          theme: 'Ice',
+          type: 'holiday',
+          src_string: '../img/january_tiles/frozen-ice-seamless-tileable-background-texture-high-definition-glacier-cracked-shiny-you-can-create-49305609.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '100%',
+          color_dark: '#3F636E',
+          color_medium: '#9CC3D2',
+          color_light: '#FFFEFD',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
