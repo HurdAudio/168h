@@ -522,6 +522,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#D0DECE',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 38,
+          user_id: 1,
+          theme: 'Greenery',
+          type: 'week',
+          src_string: '../img/may_tiles/beautiful-garden-pictures-amazing-lush-greenery-gardens-wonderwordz-best-the-most-home.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '165%',
+          color_dark: '#000100',
+          color_medium: '#D4980E',
+          color_light: '#FDFCF8',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
