@@ -6104,6 +6104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 306,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/untitled-questions-1991.jpg',
+          title: 'Untitled (Questions)',
+          artist: 'Barbara Kruger',
+          year: '1991',
+          rule: {
+            "monday": [ 8, 18, 26, 5 ],
+            "tuesday": [ 7, 17, 26, 4 ],
+            "wednesday": [ 13, 22, 1, 9 ],
+            "thursday": [ 12, 22, 1, 9 ],
+            "friday": [ 12, 21, 29, 8 ],
+            "saturday": [ 10, 20, 28, 7 ],
+            "sunday": [ 9, 19, 27, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 307,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/musical-chairs-2000.jpg',
+          title: 'Musical Chairs',
+          artist: 'Denise Green',
+          year: '2000',
+          rule: {
+            "monday": [ 9, 19, 27, 6 ],
+            "tuesday": [ 8, 18, 26, 5 ],
+            "wednesday": [ 7, 17, 26, 4 ],
+            "thursday": [ 13, 22, 1, 9 ],
+            "friday": [ 12, 22, 1, 9 ],
+            "saturday": [ 12, 21, 29, 8 ],
+            "sunday": [ 10, 20, 28, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 308,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/a-little-cosmic-rhythm-2007.jpg',
+          title: 'A Little Cosmic Rhythm',
+          artist: 'Alice Aycock',
+          year: '2007',
+          rule: {
+            "monday": [ 11, 21, 29, 8 ],
+            "tuesday": [ 10, 20, 28, 7 ],
+            "wednesday": [ 9, 19, 27, 6 ],
+            "thursday": [ 8, 18, 27, 5 ],
+            "friday": [ 14, 23, 2, 10 ],
+            "saturday": [ 13, 23, 2, 10 ],
+            "sunday": [ 13, 22, 30, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 309,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/mamalangue-n-5-2001.jpg',
+          title: 'Mamalangue n. 5',
+          artist: 'Bracha L. Ettinger',
+          year: '2001',
+          rule: {
+            "monday": [ 13, 22, 30, 9 ],
+            "tuesday": [ 11, 21, 29, 8 ],
+            "wednesday": [ 10, 20, 28, 7 ],
+            "thursday": [ 9, 19, 27, 6 ],
+            "friday": [ 8, 18, 27, 5 ],
+            "saturday": [ 14, 23, 2, 10 ],
+            "sunday": [ 13, 23, 2, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 310,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/goddess-in-the-freezer.jpg',
+          title: 'Goddess In The Freezer',
+          artist: 'Edith Vonnegut',
+          year: '?',
+          rule: {
+            "monday": [ 13, 23, 2, 10 ],
+            "tuesday": [ 13, 22, 30, 9 ],
+            "wednesday": [ 11, 21, 29, 8 ],
+            "thursday": [ 10, 20, 28, 7 ],
+            "friday": [ 9, 19, 27, 6 ],
+            "saturday": [ 8, 18, 27, 5 ],
+            "sunday": [ 14, 23, 2, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
