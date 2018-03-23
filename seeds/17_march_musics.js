@@ -3244,6 +3244,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 181,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1995703143/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://nubyagarcia.bandcamp.com/album/when-we-are',
+          a_string: 'When We Are by Nubya Garcia',
+          rule: {
+            "monday": [ 29, 4, 10, 18 ],
+            "tuesday": [ 28, 3, 9, 18 ],
+            "wednesday": [ 26, 2, 8, 16 ],
+            "thursday": [ 26, 1, 7, 15 ],
+            "saturday": [ 30, 5, 11, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 182,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=380172067/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://malariaband.bandcamp.com/album/compiled-1981-84',
+          a_string: 'Compiled 1981-84 by Malaria!',
+          rule: {
+            "monday": [ 31, 6, 12, 20 ],
+            "tuesday": [ 30, 5, 11, 19 ],
+            "wednesday": [ 29, 4, 10, 19 ],
+            "thursday": [ 27, 3, 9, 17 ],
+            "saturday": [ 27, 2, 8, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 183,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4261545991/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://malariaband.bandcamp.com/album/versus',
+          a_string: 'Versus by Malaria!',
+          rule: {
+            "monday": [ 27, 2, 8, 16 ],
+            "tuesday": [ 31, 6, 12, 20 ],
+            "wednesday": [ 30, 5, 11, 19 ],
+            "thursday": [ 29, 4, 10, 19 ],
+            "saturday": [ 27, 3, 9, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
