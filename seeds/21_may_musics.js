@@ -3028,6 +3028,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 169,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=658665830/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://modernarecords.bandcamp.com/album/intervals',
+          a_string: 'Intervals by Various Artists',
+          rule: {
+            "monday": [ 26, 1, 8, 21 ],
+            "tuesday": [ 25, 31, 7, 20 ],
+            "wednesday": [ 29, 5, 11, 24 ],
+            "thursday": [ 28, 3, 10, 23 ],
+            "saturday": [ 27, 2, 9, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 170,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=487377284/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://modernarecords.bandcamp.com/album/erlendis',
+          a_string: 'Erlendis by Veroníque Vaka',
+          rule: {
+            "monday": [ 27, 2, 9, 22 ],
+            "tuesday": [ 26, 1, 8, 21 ],
+            "wednesday": [ 25, 31, 7, 20 ],
+            "thursday": [ 29, 5, 11, 24 ],
+            "saturday": [ 28, 3, 10, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 171,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1126713443/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://modernarecords.bandcamp.com/album/algorithmics',
+          a_string: 'Algorithmics by Various Artists',
+          rule: {
+            "monday": [ 28, 3, 10, 23 ],
+            "tuesday": [ 27, 2, 9, 22 ],
+            "wednesday": [ 26, 1, 8, 21 ],
+            "thursday": [ 25, 31, 7, 20 ],
+            "saturday": [ 29, 5, 11, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
