@@ -2812,6 +2812,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 157,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4099941975/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://drunkensailorrecords.bandcamp.com/album/st-lp-2',
+          a_string: 'ST LP by The Fritz',
+          rule: {
+            "monday": [ 23, 25, 29, 6 ],
+            "tuesday": [ 22, 24, 28, 5 ],
+            "wednesday": [ 21, 22, 27, 4 ],
+            "thursday": [ 20, 22, 26, 3 ],
+            "saturday": [ 24, 26, 30, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 158,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=379379739/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://hausumountain.bandcamp.com/album/panic-cycle',
+          a_string: 'Panic Cycle by RXM Reality',
+          rule: {
+            "monday": [ 24, 26, 30, 7 ],
+            "tuesday": [ 23, 25, 29, 6 ],
+            "wednesday": [ 22, 24, 28, 5 ],
+            "thursday": [ 21, 22, 27, 4 ],
+            "saturday": [ 20, 22, 26, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 159,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3097078780/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://buhrecords.bandcamp.com/album/br93-sexores-east-west',
+          a_string: 'BR93 - Sexores - East / West by buh records',
+          rule: {
+            "monday": [ 20, 22, 26, 3 ],
+            "tuesday": [ 24, 26, 30, 7 ],
+            "wednesday": [ 23, 25, 29, 6 ],
+            "thursday": [ 22, 24, 28, 5 ],
+            "saturday": [ 21, 22, 27, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
