@@ -5904,6 +5904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 296,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/9969765-mlb-spring-training-washington-nationals-at-houston-astros.jpeg',
+          title: 'Washington Nationals',
+          artist: '?',
+          year: '2017',
+          rule: {
+            "monday": [ 12, 18, 23, 30 ],
+            "tuesday": [ 26, 16, 22, 29 ],
+            "wednesday": [ 11, 16, 22, 28 ],
+            "thursday": [ 10, 14, 29, 27 ],
+            "friday": [ 9, 14, 19, 25 ],
+            "saturday": [ 8, 13, 19, 25 ],
+            "sunday": [ 7, 12, 18, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 297,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/usa_today_9998409.0.jpg',
+          title: 'Old face Ryan Zimmerman could be new catalyst for Washington Nationals in 2017',
+          artist: 'Bill Streicher',
+          year: '2017',
+          rule: {
+            "monday": [ 7, 12, 18, 24 ],
+            "tuesday": [ 12, 18, 23, 30 ],
+            "wednesday": [ 26, 16, 22, 29 ],
+            "thursday": [ 11, 16, 22, 28 ],
+            "friday": [ 10, 14, 29, 27 ],
+            "saturday": [ 9, 14, 19, 25 ],
+            "sunday": [ 8, 13, 19, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 298,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/860269764-divisional-round-washington-nationals-v-chicago-cubs-game-four.jpg',
+          title: 'What went right, what went wrong, and what are the top priorities for the Washington Nationals this offseason?',
+          artist: '?',
+          year: '2017',
+          rule: {
+            "monday": [ 8, 13, 19, 25 ],
+            "tuesday": [ 7, 12, 18, 24 ],
+            "wednesday": [ 12, 18, 23, 30 ],
+            "thursday": [ 26, 16, 22, 29 ],
+            "friday": [ 11, 16, 22, 28 ],
+            "saturday": [ 10, 14, 29, 27 ],
+            "sunday": [ 9, 14, 19, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 299,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/Nationals_Bryce-Harper15733_0.jpg',
+          title: 'Nationals Bryce Harper',
+          artist: '?',
+          year: '2017',
+          rule: {
+            "monday": [ 9, 14, 19, 25 ],
+            "tuesday": [ 8, 13, 19, 25 ],
+            "wednesday": [ 7, 12, 18, 24 ],
+            "thursday": [ 12, 18, 23, 30 ],
+            "friday": [ 26, 16, 22, 29 ],
+            "saturday": [ 11, 16, 22, 28 ],
+            "sunday": [ 10, 14, 29, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 300,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/AR-171008987.jpg',
+          title: 'Washington Nationals\' Ryan Zimmerman spreads his arms after hitting a three-run home run off Chicago Cubs relief pitcher Mike Montgomery (38) during the eighth inning in Game 2 of baseball\'s National League division series, at Nationals Park',
+          artist: '?',
+          year: '2017',
+          rule: {
+            "monday": [ 10, 14, 29, 27 ],
+            "tuesday": [ 9, 14, 19, 25 ],
+            "wednesday": [ 8, 13, 19, 25 ],
+            "thursday": [ 7, 12, 18, 24 ],
+            "friday": [ 12, 18, 23, 30 ],
+            "saturday": [ 26, 16, 22, 29 ],
+            "sunday": [ 11, 16, 22, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
