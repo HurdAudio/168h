@@ -3352,6 +3352,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 187,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=118183462/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://arsonistsnyc.bandcamp.com/album/lost-in-the-fire',
+          a_string: 'Lost In The Fire by Arsonists',
+          rule: {
+            "monday": [ 27, 3, 4, 17 ],
+            "tuesday": [ 28, 3, 5, 9 ],
+            "wednesday": [ 2, 5, 7, 11 ],
+            "thursday": [ 3, 7, 9, 11 ],
+            "saturday": [ 15, 9, 11, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 188,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=122418823/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://themouseoutfit.bandcamp.com/album/step-steadier-2',
+          a_string: 'Step Steadier by The Mouse Outfit',
+          rule: {
+            "monday": [ 15, 9, 11, 17 ],
+            "tuesday": [ 27, 3, 4, 17 ],
+            "wednesday": [ 28, 3, 5, 9 ],
+            "thursday": [ 2, 5, 7, 11 ],
+            "saturday": [ 3, 7, 9, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 189,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'http://bandcamp.com/EmbeddedPlayer/album=700266926/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://soulr.com/album/soul-r-066-drs-mid-mic-crisis-full-album',
+          a_string: 'SOUL:R 066 - DRS - Mid Mic Crisis - FULL ALBUM by DRS',
+          rule: {
+            "monday": [ 4, 8, 10, 12 ],
+            "tuesday": [ 16, 10, 12, 18 ],
+            "wednesday": [ 28, 4, 5, 18 ],
+            "thursday": [ 29, 4, 6, 10 ],
+            "saturday": [ 3, 6, 8, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
