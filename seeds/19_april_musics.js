@@ -3136,6 +3136,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 175,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'http://bandcamp.com/EmbeddedPlayer/album=3386600203/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sunnysidezone.com/album/heart-tonic',
+          a_string: 'Heart Tonic by Caroline Davis',
+          rule: {
+            "monday": [ 27, 5, 17, 22 ],
+            "tuesday": [ 26, 4, 16, 21 ],
+            "wednesday": [ 25, 3, 15, 20 ],
+            "thursday": [ 29, 7, 19, 24 ],
+            "saturday": [ 28, 6, 18, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 176,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=128309419/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://kylemotl.bandcamp.com/album/augur',
+          a_string: 'AUGUR by Kyle Motl',
+          rule: {
+            "monday": [ 28, 6, 18, 23 ],
+            "tuesday": [ 27, 5, 17, 22 ],
+            "wednesday": [ 26, 4, 16, 21 ],
+            "thursday": [ 25, 3, 15, 20 ],
+            "saturday": [ 29, 7, 19, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 177,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2425289080/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://adamrudolph.bandcamp.com/album/y-y',
+          a_string: 'Yèyí by Adam Rudolph, Ralph Jones',
+          rule: {
+            "monday": [ 29, 7, 19, 24 ],
+            "tuesday": [ 28, 6, 18, 23 ],
+            "wednesday": [ 27, 5, 17, 22 ],
+            "thursday": [ 26, 4, 16, 21 ],
+            "saturday": [ 25, 3, 15, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
