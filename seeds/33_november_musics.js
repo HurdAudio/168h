@@ -2380,6 +2380,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 133,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4290707738/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://africaseven.bandcamp.com/album/african-funk-experimentals-1977-1979',
+          a_string: 'African Funk Experimentals (1977-1979) by J. M. Tim And Foty',
+          rule: {
+            "monday": [ 21, 2, 13, 17 ],
+            "tuesday": [ 20, 1, 12, 16 ],
+            "wednesday": [ 19, 30, 11, 15 ],
+            "thursday": [ 18, 29, 10, 12 ],
+            "saturday": [ 17, 28, 9, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 134,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1791534101/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://africaseven.bandcamp.com/album/mothers-garden-the-funky-sounds-of-female-africa-1975-1984',
+          a_string: 'Mothers Garden (The Funky Sounds Of Female Africa 1975 - 1984) by Various Artists',
+          rule: {
+            "monday": [ 17, 28, 9, 11 ],
+            "tuesday": [ 21, 2, 13, 17 ],
+            "wednesday": [ 20, 1, 12, 16 ],
+            "thursday": [ 19, 30, 11, 15 ],
+            "saturday": [ 18, 29, 10, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 135,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4145648681/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://africaseven.bandcamp.com/album/du-mali',
+          a_string: 'Du Mali by Sory Bamba',
+          rule: {
+            "monday": [ 18, 29, 10, 12 ],
+            "tuesday":  [ 17, 28, 9, 11 ],
+            "wednesday": [ 21, 2, 13, 17 ],
+            "thursday": [ 20, 1, 12, 16 ],
+            "saturday": [ 19, 30, 11, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
