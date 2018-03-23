@@ -5104,6 +5104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 256,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/the-beaver-dam-1919.jpg',
+          title: 'The Beaver Dam',
+          artist: 'J. E. H. MacDonald',
+          year: '1919',
+          rule: {
+            "monday": [ 4, 7, 16, 1 ],
+            "tuesday": [ 3, 6, 15, 31 ],
+            "wednesday": [ 9, 13, 21, 6 ],
+            "thursday": [ 8, 11, 20, 5 ],
+            "friday": [ 7, 11, 19, 4 ],
+            "saturday": [ 6, 10, 18, 3 ],
+            "sunday": [ 5, 7, 17, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 257,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/the-straw-hat.jpg',
+          title: 'The straw hat',
+          artist: 'Nikolaos Lytras',
+          year: '1925',
+          rule: {
+            "monday": [ 5, 7, 17, 2 ],
+            "tuesday": [ 4, 7, 16, 1 ],
+            "wednesday": [ 3, 6, 15, 31 ],
+            "thursday": [ 9, 13, 21, 6 ],
+            "friday": [ 8, 11, 20, 5 ],
+            "saturday": [ 7, 11, 19, 4 ],
+            "sunday": [ 6, 10, 18, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 258,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/petersburg-rostral-column-and-exchange-1908.jpg',
+          title: 'Petersburg. Rostral column and Exchange.',
+          artist: 'Anna Ostroumova-Lebedeva',
+          year: '1908',
+          rule: {
+            "monday": [ 6, 10, 18, 3 ],
+            "tuesday": [ 5, 7, 17, 2 ],
+            "wednesday": [ 4, 7, 16, 1 ],
+            "thursday": [ 3, 6, 15, 31 ],
+            "friday": [ 9, 13, 21, 6 ],
+            "saturday": [ 8, 11, 20, 5 ],
+            "sunday": [ 7, 11, 19, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 259,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/the-little-tea-party-nina-hamnett-and-roald-kristian-1916.jpg',
+          title: 'The Little Tea Party Nina Hamnett and Roald Kristian',
+          artist: 'Walter Sickert',
+          year: '1915 - 1916',
+          rule: {
+            "monday": [ 8, 12, 20, 5 ],
+            "tuesday": [ 7, 11, 19, 4 ],
+            "wednesday": [ 6, 8, 18, 3 ],
+            "thursday": [ 5, 8, 17, 2 ],
+            "friday": [ 4, 7, 16, 1 ],
+            "saturday": [ 10, 14, 22, 7 ],
+            "sunday": [ 9, 12, 21, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 260,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/la-cloche-panorama-1939.jpg',
+          title: 'La Cloche Panorama',
+          artist: 'Franklin Carmichael',
+          year: '1939',
+          rule: {
+            "monday": [ 9, 12, 21, 6 ],
+            "tuesday": [ 8, 12, 20, 5 ],
+            "wednesday": [ 7, 11, 19, 4 ],
+            "thursday": [ 6, 8, 18, 3 ],
+            "friday": [ 5, 8, 17, 2 ],
+            "saturday": [ 4, 7, 16, 1 ],
+            "sunday": [ 10, 14, 22, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
