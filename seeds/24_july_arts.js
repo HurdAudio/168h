@@ -5304,6 +5304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 266,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/shared-space-2004.jpg',
+          title: 'Shared Space',
+          artist: 'Genevieve Asse',
+          year: '2004',
+          rule: {
+            "monday": [ 8, 19, 30, 10 ],
+            "tuesday": [ 7, 18, 29, 30 ],
+            "wednesday": [ 6, 17, 27, 29 ],
+            "thursday": [ 5, 16, 27, 28 ],
+            "friday": [ 4, 15, 26, 6 ],
+            "saturday": [ 10, 21, 1, 11 ],
+            "sunday": [ 9, 20, 31, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 267,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/les-gardes-bard-s-d-acier-1968.jpg',
+          title: 'Les gardes bardés d\'acier',
+          artist: 'Jacques Busse',
+          year: '1968',
+          rule: {
+            "monday": [ 9, 20, 31, 11 ],
+            "tuesday": [ 8, 19, 30, 10 ],
+            "wednesday": [ 7, 18, 29, 30 ],
+            "thursday": [ 6, 17, 27, 29 ],
+            "friday": [ 5, 16, 27, 28 ],
+            "saturday": [ 4, 15, 26, 6 ],
+            "sunday": [ 10, 21, 1, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 268,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/oedipe-explique-l-nigme-du-sphinx-2002.jpg',
+          title: 'Oedipe explique l\'énigme du sphinx',
+          artist: 'Pol Bury',
+          year: '2002',
+          rule: {
+            "monday": [ 10, 21, 1, 11 ],
+            "tuesday": [ 9, 20, 31, 11 ],
+            "wednesday": [ 8, 19, 30, 10 ],
+            "thursday": [ 7, 18, 29, 30 ],
+            "friday": [ 6, 17, 27, 29 ],
+            "saturday": [ 5, 16, 27, 28 ],
+            "sunday": [ 4, 15, 26, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 269,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/the-same-way.jpg',
+          title: 'The same Way',
+          artist: 'Jean Benoit',
+          year: '?',
+          rule: {
+            "monday": [ 4, 15, 26, 6 ],
+            "tuesday": [ 10, 21, 1, 11 ],
+            "wednesday": [ 9, 20, 31, 11 ],
+            "thursday": [ 8, 19, 30, 10 ],
+            "friday": [ 7, 18, 29, 30 ],
+            "saturday": [ 6, 17, 27, 29 ],
+            "sunday": [ 5, 16, 27, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 270,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/vous-etes-vous-jamais-laisse-glisser-le-long-d-une-pente-1974.jpg',
+          title: 'Vous-etes vous jamais laisse glisser le long d\'une pente',
+          artist: 'Jean Messagier',
+          year: '1974',
+          rule: {
+            "monday": [ 5, 16, 27, 28 ],
+            "tuesday": [ 4, 15, 26, 6 ],
+            "wednesday": [ 10, 21, 1, 11 ],
+            "thursday": [ 9, 20, 31, 11 ],
+            "friday": [ 8, 19, 30, 10 ],
+            "saturday": [ 7, 18, 29, 30 ],
+            "sunday": [ 6, 17, 27, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
