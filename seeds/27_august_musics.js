@@ -2704,6 +2704,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 151,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1843271896/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://gerpfastkolektif.bandcamp.com/album/a-collaboration',
+          a_string: 'A Collaboration by Junko Hiroshige &amp; Pandu',
+          rule: {
+            "monday": [ 2, 10, 23, 22 ],
+            "tuesday": [ 1, 9, 22, 21 ],
+            "wednesday": [ 31, 8, 21, 20 ],
+            "thursday": [ 30, 7, 20, 19 ],
+            "saturday": [ 3, 11, 24, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 152,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1021388601/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://gerpfastkolektif.bandcamp.com/album/echo-round-the-intersection',
+          a_string: 'Echo Round The Intersection by Yuko Araki // Bergegas Mati',
+          rule: {
+            "monday": [ 3, 11, 24, 23 ],
+            "tuesday":[ 2, 10, 23, 22 ],
+            "wednesday": [ 1, 9, 22, 21 ],
+            "thursday": [ 31, 8, 21, 20 ],
+            "saturday": [ 30, 7, 20, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 153,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2304591117/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://gerpfastkolektif.bandcamp.com/album/j-u-n-k-o',
+          a_string: 'J U N K O))) by Junko Hiroshige',
+          rule: {
+            "monday": [ 30, 7, 20, 19 ],
+            "tuesday": [ 3, 11, 24, 23 ],
+            "wednesday": [ 2, 10, 23, 22 ],
+            "thursday": [ 1, 9, 22, 21 ],
+            "saturday": [ 31, 8, 21, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
