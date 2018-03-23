@@ -2920,6 +2920,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 163,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3153565274/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jacobnewman.bandcamp.com/album/transitions',
+          a_string: 'Transitions by Darwin Raymond and Jacob Newman',
+          rule: {
+            "monday": [ 21, 29, 1, 12 ],
+            "tuesday": [ 25, 29, 5, 16 ],
+            "wednesday": [ 24, 27, 2, 14 ],
+            "thursday": [ 23, 27, 2, 14 ],
+            "saturday": [ 23, 26, 2, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 164,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1148584713/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jacobnewman.bandcamp.com/album/biospherica',
+          a_string: 'Biospherica by Jacob Newman',
+          rule: {
+            "monday": [ 23, 26, 2, 13 ],
+            "tuesday": [ 21, 29, 1, 12 ],
+            "wednesday": [ 25, 29, 5, 16 ],
+            "thursday": [ 24, 27, 2, 14 ],
+            "saturday": [ 23, 27, 2, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 165,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3957777380/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jacobnewman.bandcamp.com/album/summer',
+          a_string: 'Summer by Jacob Newman',
+          rule: {
+            "monday": [ 23, 27, 2, 14 ],
+            "tuesday": [ 23, 26, 2, 13 ],
+            "wednesday": [ 21, 29, 1, 12 ],
+            "thursday": [ 25, 29, 5, 16 ],
+            "saturday": [ 24, 27, 2, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
