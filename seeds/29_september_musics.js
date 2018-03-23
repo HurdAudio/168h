@@ -2596,6 +2596,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 145,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=402701780/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tortoise.bandcamp.com/album/tortoise',
+          a_string: 'Tortoise by Tortoise',
+          rule: {
+            "monday": [ 23, 13, 21, 16 ],
+            "tuesday": [ 22, 12, 20, 14 ],
+            "wednesday": [ 21, 11, 19, 13 ],
+            "thursday": [ 25, 15, 23, 17 ],
+            "saturday": [ 24, 14, 22, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 146,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3704450036/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tortoise.bandcamp.com/album/millions-now-living-will-never-die',
+          a_string: 'Millions Now Living Will Never Die by Tortoise',
+          rule: {
+            "monday": [ 24, 14, 22, 16 ],
+            "tuesday": [ 23, 13, 21, 16 ],
+            "wednesday": [ 22, 12, 20, 14 ],
+            "thursday": [ 21, 11, 19, 13 ],
+            "saturday": [ 25, 15, 23, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 147,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3449614673/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tortoise.bandcamp.com/album/tnt',
+          a_string: 'TNT by Tortoise',
+          rule: {
+            "monday": [ 25, 15, 23, 17 ],
+            "tuesday": [ 24, 14, 22, 16 ],
+            "wednesday": [ 23, 13, 21, 16 ],
+            "thursday": [ 22, 12, 20, 14 ],
+            "saturday": [ 21, 11, 19, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
