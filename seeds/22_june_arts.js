@@ -5504,6 +5504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 276,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/5353334660_2df277e077_b.jpg',
+          title: 'unknown title',
+          artist: 'Maya Fiala Grau',
+          year: '2010',
+          rule: {
+            "monday": [ 3, 13, 23, 1 ],
+            "tuesday": [ 9, 19, 29, 5 ],
+            "wednesday": [ 8, 18, 28, 6 ],
+            "thursday": [ 7, 17, 27, 5 ],
+            "friday": [ 6, 16, 26, 4 ],
+            "saturday": [ 15, 25, 5, 3 ],
+            "sunday": [ 4, 14, 24, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 277,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/18147089744_69e06c068e_b.jpg',
+          title: 'unknown title',
+          artist: 'Maya Fiala Grau',
+          year: '2014',
+          rule: {
+            "monday": [ 4, 14, 24, 2 ],
+            "tuesday": [ 3, 13, 23, 1 ],
+            "wednesday": [ 9, 19, 29, 5 ],
+            "thursday": [ 8, 18, 28, 6 ],
+            "friday": [ 7, 17, 27, 5 ],
+            "saturday": [ 6, 16, 26, 4 ],
+            "sunday": [ 15, 25, 5, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 278,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/22642795729_a0aac82fbc_b.jpg',
+          title: 'Dream On',
+          artist: 'Maya Fiala Grau',
+          year: '2015',
+          rule: {
+            "monday": [ 15, 25, 5, 3 ],
+            "tuesday": [ 4, 14, 24, 2 ],
+            "wednesday": [ 3, 13, 23, 1 ],
+            "thursday": [ 9, 19, 29, 5 ],
+            "friday": [ 8, 18, 28, 6 ],
+            "saturday": [ 7, 17, 27, 5 ],
+            "sunday": [ 6, 16, 26, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 279,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/085ee372b3f611139fcfbfbca432cceb.jpg',
+          title: 'Eleanor, France',
+          artist: 'Harry Callahan ',
+          year: '1958',
+          rule: {
+            "monday": [ 6, 16, 26, 4 ],
+            "tuesday": [ 15, 25, 5, 3 ],
+            "wednesday": [ 4, 14, 24, 2 ],
+            "thursday": [ 3, 13, 23, 1 ],
+            "friday": [ 9, 19, 29, 5 ],
+            "saturday": [ 8, 18, 28, 6 ],
+            "sunday": [ 7, 17, 27, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 280,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/the-passion-of-the-christa-ramon-martinez.jpg',
+          title: 'The Passion Of The Christa Poster',
+          artist: 'Ramon Martinez',
+          year: '?',
+          rule: {
+            "monday": [ 8, 18, 28, 6 ],
+            "tuesday": [ 7, 17, 27, 5 ],
+            "wednesday": [ 16, 26, 6, 4 ],
+            "thursday": [ 5, 15, 25, 3 ],
+            "friday": [ 4, 14, 24, 2 ],
+            "saturday": [ 10, 20, 30, 6 ],
+            "sunday": [ 9, 19, 29, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
