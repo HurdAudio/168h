@@ -4504,6 +4504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 226,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/the-white-cube-1982.jpg',
+          title: 'The White Cube',
+          artist: 'Stephen Antonakos',
+          year: '1982',
+          rule: {
+            "monday": [ 10, 15, 21, 26 ],
+            "tuesday": [ 9, 14, 19, 25 ],
+            "wednesday": [ 8, 13, 19, 23 ],
+            "thursday": [ 7, 10, 18, 23 ],
+            "friday": [ 6, 10, 17, 22 ],
+            "saturday": [ 5, 10, 16, 21 ],
+            "sunday": [ 4, 9, 15, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 227,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/grille-color-branc-ii-1983.jpg',
+          title: 'Grille-Color Branc II',
+          artist: 'Jean Degottex',
+          year: '1983',
+          rule: {
+            "monday": [ 4, 9, 15, 22 ],
+            "tuesday": [ 10, 15, 21, 26 ],
+            "wednesday": [ 9, 14, 19, 25 ],
+            "thursday": [ 8, 13, 19, 23 ],
+            "friday": [ 7, 10, 18, 23 ],
+            "saturday": [ 6, 10, 17, 22 ],
+            "sunday": [ 5, 10, 16, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 228,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/ligne-rouge-ii-n-19-1984.jpg',
+          title: 'Ligne rouge II n°19',
+          artist: 'Genevieve Asse',
+          year: '1984',
+          rule: {
+            "monday": [ 5, 10, 16, 21 ],
+            "tuesday": [ 4, 9, 15, 22 ],
+            "wednesday": [ 10, 15, 21, 26 ],
+            "thursday": [ 9, 14, 19, 25 ],
+            "friday": [ 8, 13, 19, 23 ],
+            "saturday": [ 7, 10, 18, 23 ],
+            "sunday": [ 6, 10, 17, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 229,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/vermillion-diary-no-4-1984.jpg',
+          title: 'Vermillion Diary No. 4',
+          artist: 'Frederic Matys Thursz',
+          year: '1984',
+          rule: {
+            "monday": [ 6, 10, 17, 22 ],
+            "tuesday": [ 5, 10, 16, 21 ],
+            "wednesday": [ 4, 9, 15, 22 ],
+            "thursday": [ 10, 15, 21, 26 ],
+            "friday": [ 9, 14, 19, 25 ],
+            "saturday": [ 8, 13, 19, 23 ],
+            "sunday": [ 7, 10, 18, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 230,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/edge-3-1985.jpg',
+          title: 'Edge 3',
+          artist: 'Warren Rohrer',
+          year: '1985',
+          rule: {
+            "monday": [ 7, 10, 18, 23 ],
+            "tuesday": [ 6, 10, 17, 22 ],
+            "wednesday": [ 5, 10, 16, 21 ],
+            "thursday": [ 4, 9, 15, 22 ],
+            "friday": [ 10, 15, 21, 26 ],
+            "saturday": [ 9, 14, 19, 25 ],
+            "sunday": [ 8, 13, 19, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
