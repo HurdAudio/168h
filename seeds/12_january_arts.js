@@ -6504,6 +6504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 326,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/composition-1998.jpg',
+          title: 'Composition',
+          artist: 'Ion Alin Gheorghiu',
+          year: '1998',
+          rule: {
+            "monday": [ 30, 1, 2, 5 ],
+            "tuesday": [ 15, 16, 27, 19 ],
+            "wednesday": [ 18, 20, 12, 1 ],
+            "thursday": [ 20, 21, 13, 16 ],
+            "friday": [ 23, 24, 15, 19 ],
+            "saturday": [ 26, 28, 29, 31 ],
+            "sunday": [ 28, 30, 3, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 327,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/a-print-from-saundarya-lahiri-1974-2.jpg',
+          title: 'A Print from Saundarya Lahiri',
+          artist: 'Akkitham Narayanan',
+          year: '1974',
+          rule: {
+            "monday": [ 28, 30, 3, 6 ],
+            "tuesday": [ 30, 1, 2, 5 ],
+            "wednesday": [ 15, 16, 27, 19 ],
+            "thursday": [ 18, 20, 12, 1 ],
+            "friday": [ 20, 21, 13, 16 ],
+            "saturday": [ 23, 24, 15, 19 ],
+            "sunday": [ 26, 28, 29, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 328,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/composition-cubiste-1917.jpg',
+          title: 'Composition cubiste',
+          artist: 'Auguste Herbin',
+          year: '1917',
+          rule: {
+            "monday": [ 26, 28, 29, 31 ],
+            "tuesday": [ 28, 30, 3, 6 ],
+            "wednesday": [ 30, 1, 2, 5 ],
+            "thursday": [ 15, 16, 27, 19 ],
+            "friday": [ 18, 20, 12, 1 ],
+            "saturday": [ 20, 21, 13, 16 ],
+            "sunday": [ 23, 24, 15, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 329,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/dancer-in-pigalle-1912.jpg',
+          title: 'Dancer in Pigalle',
+          artist: 'Gino Severini',
+          year: '1912',
+          rule: {
+            "monday": [ 24, 25, 16, 20 ],
+            "tuesday": [ 27, 29, 30, 1 ],
+            "wednesday": [ 29, 31, 4, 7 ],
+            "thursday": [ 31, 2, 3, 6 ],
+            "friday": [ 16, 17, 28, 20 ],
+            "saturday": [ 19, 21, 13, 2 ],
+            "sunday": [ 21, 22, 14, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 330,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/free-wheeling-1971.jpg',
+          title: 'Free Wheeling',
+          artist: 'Helen Frankenthaler',
+          year: '1971',
+          rule: {
+            "monday": [ 21, 22, 14, 17 ],
+            "tuesday": [ 24, 25, 16, 20 ],
+            "wednesday": [ 27, 29, 30, 1 ],
+            "thursday": [ 29, 31, 4, 7 ],
+            "friday": [ 31, 2, 3, 6 ],
+            "saturday": [ 16, 17, 28, 20 ],
+            "sunday": [ 19, 21, 13, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
