@@ -4904,6 +4904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 246,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/self-portrait-1994.jpg',
+          title: 'Self Portrait',
+          artist: 'David Michael Hinnebusch',
+          year: '1994',
+          rule: {
+            "monday": [ 6, 12, 30, 8 ],
+            "tuesday": [ 5, 11, 29, 7 ],
+            "wednesday": [ 4, 10, 28, 6 ],
+            "thursday": [ 3, 9, 27, 6 ],
+            "friday": [ 2, 8, 26, 4 ],
+            "saturday": [ 1, 7, 25, 2 ],
+            "sunday": [ 7, 13, 1, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 247,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/metaesquema-dois-brancos-1958.jpg',
+          title: 'Metaesquema (Dois brancos)',
+          artist: 'Helio Oiticica',
+          year: '1958',
+          rule: {
+            "monday": [ 7, 13, 1, 9 ],
+            "tuesday": [ 6, 12, 30, 8 ],
+            "wednesday": [ 5, 11, 29, 7 ],
+            "thursday": [ 4, 10, 28, 6 ],
+            "friday": [ 3, 9, 27, 6 ],
+            "saturday": [ 2, 8, 26, 4 ],
+            "sunday": [ 1, 7, 25, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 248,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/le-poisson-choa-2000.jpg',
+          title: 'Le poisson choa',
+          artist: 'Nicolae Maniu',
+          year: '2000',
+          rule: {
+            "monday": [ 1, 7, 25, 2 ],
+            "tuesday": [ 7, 13, 1, 9 ],
+            "wednesday": [ 6, 12, 30, 8 ],
+            "thursday": [ 5, 11, 29, 7 ],
+            "friday": [ 4, 10, 28, 6 ],
+            "saturday": [ 3, 9, 27, 6 ],
+            "sunday": [ 2, 8, 26, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 249,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/invention-of-a-dream-1960.jpg',
+          title: 'Invention of a Dream',
+          artist: 'Richard Oelze',
+          year: '1960',
+          rule: {
+            "monday": [ 2, 8, 26, 4 ],
+            "tuesday": [ 1, 7, 25, 2 ],
+            "wednesday": [ 7, 13, 1, 9 ],
+            "thursday": [ 6, 12, 30, 8 ],
+            "friday": [ 5, 11, 29, 7 ],
+            "saturday": [ 4, 10, 28, 6 ],
+            "sunday": [ 3, 9, 27, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 250,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/she-dragon-1964.jpg',
+          title: 'She-Dragon',
+          artist: 'Konrad Klapheck',
+          year: '1964',
+          rule: {
+            "monday": [ 3, 9, 27, 6 ],
+            "tuesday": [ 2, 8, 26, 4 ],
+            "wednesday": [ 1, 7, 25, 2 ],
+            "thursday": [ 7, 13, 1, 9 ],
+            "friday": [ 6, 12, 30, 8 ],
+            "saturday": [ 5, 11, 29, 7 ],
+            "sunday": [ 4, 10, 28, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
