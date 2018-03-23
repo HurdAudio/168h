@@ -2488,6 +2488,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 139,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1417288821/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://americanhate.bandcamp.com/album/our-love-is-real-2',
+          a_string: 'Our Love Is Real by American Hate',
+          rule: {
+            "monday": [ 24, 3, 13, 16 ],
+            "tuesday": [ 23, 2, 13, 15 ],
+            "wednesday": [ 27, 6, 16, 19 ],
+            "thursday": [ 26, 5, 15, 18 ],
+            "saturday": [ 25, 4, 14, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 140,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=153042344/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://itstrashrecords.bandcamp.com/album/neo-neos-the-hammer-of-civilization-ep-7',
+          a_string: 'Neo Neos - The Hammer of Civilization EP 7&quot; by It&#39;s Trash! Records',
+          rule: {
+            "monday": [ 26, 5, 15, 18 ],
+            "tuesday": [ 25, 4, 14, 17 ],
+            "wednesday": [ 24, 3, 14, 16 ],
+            "thursday": [ 28, 7, 17, 20 ],
+            "saturday": [ 27, 6, 16, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 141,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1903351576/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cleanplate.bandcamp.com/album/mothercountry-motherfuckers-confidential-human-source',
+          a_string: 'Mothercountry Motherfuckers - Confidential Human Source by Mothercountry Motherfuckers',
+          rule: {
+            "monday": [ 27, 6, 16, 19 ],
+            "tuesday": [ 26, 5, 15, 18 ],
+            "wednesday": [ 25, 4, 14, 17 ],
+            "thursday": [ 24, 3, 14, 16 ],
+            "saturday": [ 28, 7, 17, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
