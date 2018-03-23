@@ -3460,6 +3460,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 193,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2706190147/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://toddbarton.bandcamp.com/album/music-from-the-studio',
+          a_string: 'Music From The Studio by todd barton',
+          rule: {
+            "monday": [ 5, 11, 13, 14 ],
+            "tuesday": [ 4, 11, 12, 13 ],
+            "wednesday": [ 3, 9, 10, 11 ],
+            "thursday": [ 2, 9, 10, 11 ],
+            "saturday": [ 6, 13, 14, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 194,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3687544079/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://toddbarton.bandcamp.com/album/ausprobieren-2',
+          a_string: 'ausprobieren by todd barton',
+          rule: {
+            "monday": [ 6, 13, 14, 15 ],
+            "tuesday": [ 5, 11, 13, 14 ],
+            "wednesday": [ 4, 11, 12, 13 ],
+            "thursday": [ 3, 9, 10, 11 ],
+            "saturday": [ 2, 9, 10, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 195,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'http://bandcamp.com/EmbeddedPlayer/album=580527785/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://records.theindustryla.org/album/young-caesar',
+          a_string: 'Young Caesar by Lou Harrison',
+          rule: {
+            "monday": [ 2, 9, 10, 11 ],
+            "tuesday": [ 6, 13, 14, 15 ],
+            "wednesday": [ 5, 11, 13, 14 ],
+            "thursday": [ 4, 11, 12, 13 ],
+            "saturday": [ 3, 9, 10, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
