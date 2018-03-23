@@ -6304,6 +6304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 316,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/220px-Booker_T._Washington_sculpture_at_National_Portrait_Gallery_IMG_4385.JPG',
+          title: 'Booker T. Washington',
+          artist: 'Richmond Barthé',
+          year: '1946',
+          rule: {
+            "monday": [ 17, 26, 5, 13 ],
+            "tuesday": [ 23, 28, 5, 15 ],
+            "wednesday": [ 22, 1, 9, 17 ],
+            "thursday": [ 24, 5, 11, 17 ],
+            "friday": [ 26, 5, 13, 23 ],
+            "saturday": [ 26, 7, 3, 22 ],
+            "sunday": [ 16, 24, 3, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 317,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/basquait_beef_ribs_longhorn.jpg',
+          title: 'Beef Ribs Longhorn',
+          artist: 'Jean‐Michel Basquiat',
+          year: '1982',
+          rule: {
+            "monday": [ 16, 24, 3, 11 ],
+            "tuesday": [ 17, 26, 5, 13 ],
+            "wednesday": [ 23, 28, 5, 15 ],
+            "thursday": [ 22, 1, 9, 17 ],
+            "friday": [ 24, 5, 11, 17 ],
+            "saturday": [ 26, 5, 13, 23 ],
+            "sunday": [ 26, 7, 3, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 318,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/Btul3DVIEAAx5bO.jpg',
+          title: 'unknown title',
+          artist: 'C. M. Battey',
+          year: '?',
+          rule: {
+            "monday": [ 26, 7, 3, 22 ],
+            "tuesday": [ 16, 24, 3, 11 ],
+            "wednesday": [ 17, 26, 5, 13 ],
+            "thursday": [ 23, 28, 5, 15 ],
+            "friday": [ 22, 1, 9, 17 ],
+            "saturday": [ 24, 5, 11, 17 ],
+            "sunday": [ 26, 5, 13, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 319,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/5f6371faba7dfb6a96ae16a8cd7e1fc9.jpeg',
+          title: 'Southern Recollections',
+          artist: 'Romare Bearden',
+          year: '?',
+          rule: {
+            "monday": [ 26, 5, 13, 23 ],
+            "tuesday": [ 26, 7, 3, 22 ],
+            "wednesday": [ 16, 24, 3, 11 ],
+            "thursday": [ 17, 26, 5, 13 ],
+            "friday": [ 23, 28, 5, 15 ],
+            "saturday": [ 22, 1, 9, 17 ],
+            "sunday": [ 24, 5, 11, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 320,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/beck04.jpg',
+          title: 'Water Barriers',
+          artist: 'Arthello Beck, Jr.',
+          year: '?',
+          rule: {
+            "monday": [ 24, 5, 11, 17 ],
+            "tuesday": [ 26, 5, 13, 23 ],
+            "wednesday": [ 26, 7, 3, 22 ],
+            "thursday": [ 16, 24, 3, 11 ],
+            "friday": [ 17, 26, 5, 13 ],
+            "saturday": [ 23, 28, 5, 15 ],
+            "sunday": [ 22, 1, 9, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
