@@ -5075,43 +5075,56 @@
 
         <div id="holidaySharesNotifier">
 
-            <div class="whoScheduledMe">
+          <div class="whoScheduledMe">
+            <main ng-repeat="holiday in $ctrl.activeHolidayShares | orderBy : $ctrl.sortBy">
 
 
-              <img src="https://media.licdn.com/media/AAEAAQAAAAAAAAf8AAAAJGMwZDYyMzc2LTAzOGEtNGYwOS1iMDViLTFlYjAyYjYzODIyMQ.jpg"><br>
-              <p id="holidayblockInviter">Devin Hurd has shared the following holiday with you on 17 July 2017</p>
+              <img src="{{holiday.inviterImg}}"><br>
+              <p id="holidayblockInviter{{holiday.id}}">{{holiday.inviter}} has shared the following holiday with you on {{holiday.cleanDate}}</p>
+              <p id="holidayblockInvitee{{holiday.id}}">You have shared the following holiday with {{holiday.inviter}} on {{holiday.cleanDate}}</p>
 
-            </div><br><br><br><br><br><br>
-            <h3>420 Day</h3>
-            <img src="./img/holidays/420day.jpg"><br><br>
-            <h3>Every 20 April</h3>
+              <br><br><br><br><br><br>
+              <h3>{{holiday.name}}</h3>
+              <img src="{{holiday.picture}}"><br><br>
+              <h3>{{holiday.annuality}}</h3>
 
-            <h3>Art: none</h3>
-            <h3>Music: none</h3>
+              <br><br><main ng-repeat="art in holiday.artWorks | orderBy : $ctrl.sortBy">
 
-            <h3>{{block.blockNotes}}</h3>
-            <h3>{{block.conflictStatus}}</h3>
-
-            <div class="holidayAcceptDenyButtons" id="holidayAcceptDecline">
-
-              <a class="btn">Decline</a>
-              <a class="btn">Accept</a>
-            </div>
-
-            <a href=""><h3>comment</h3></a>
-
-            <div class="holidayShareCommentsBar">
-
-              <h1>Comments:</h1>
-            </div>
-            <div id="holidayShareComments">
-              <main>
-                <img src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/1964977_10203532053928956_1620738254_n.jpg?oh=912289bc56416424f7d2e4ef3bfb8604&oe=5B41AE92"><br>
-                <p>From: Lucifer Sam <br>
-                on 31 March 2018</p><br><br>
-                <h3>I love me some pagan holidays!</h3><br>
+                <br><img src="{{art.img_paths}}"><br>
+                <br><h3><b>{{art.artists}}</b></h3><br>
+                <br><h3><em>{{art.titles}}</em>, {{art.years}}</h3><br>
               </main>
-            </div>
+              <main ng-repeat="music in holiday.musicWorks | orderBy : $ctrl.sortBy">
+                <div class="iframeDiv">
+                  <iframe style="border: 0; width: 100%; height: 510px;" src="{{music.src_strings}}" seamless><a href="{{music.href_strings}}">{{music.a_strings}}</a></iframe>
+                </div>
+
+              </main>
+
+
+              <div class="holidayAcceptDenyButtons" id="holidayAcceptDecline">
+
+                <a class="btn">Decline</a>
+                <a class="btn">Accept</a>
+              </div>
+
+              <a href=""><h3>comment</h3></a>
+
+              <div class="holidayShareCommentsBar">
+
+                <h1>Comments:</h1>
+              </div>
+              <div id="holidayShareComments">
+                <main>
+                  <img src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/1964977_10203532053928956_1620738254_n.jpg?oh=912289bc56416424f7d2e4ef3bfb8604&oe=5B41AE92"><br>
+                  <p>From: Lucifer Sam <br>
+                  on 31 March 2018</p><br><br>
+                  <h3>I love me some pagan holidays!</h3><br>
+                </main>
+              </div>
+            </main>
+          </div>
+
 
 
         </div>

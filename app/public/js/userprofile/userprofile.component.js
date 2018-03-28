@@ -13271,6 +13271,93 @@
         });
       }
 
+      function gatherHolidayInviterData(userId, index) {
+        $http.get(`/users/${userId}`)
+        .then(inUserData=>{
+          let inUser = inUserData.data;
+          vm.activeHolidayShares[index].inviterImg = inUser.user_avatar_url;
+          vm.activeHolidayShares[index].inviter = inUser.name;
+
+        });
+      }
+
+      function gatherHolidayShareHoliday(holidayId, index) {
+        let months = [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ];
+
+        $http.get(`/holidays/${holidayId}`)
+        .then(holidayData=>{
+          let holiday = holidayData.data;
+          let holidate;
+          vm.activeHolidayShares[index].name = holiday.name;
+          vm.activeHolidayShares[index].picture = holiday.picture;
+          if (holiday.is_annual) {
+            holidate = new Date(holiday.day_of);
+            vm.activeHolidayShares[index].annuality = 'On ' + holidate.getDate() + ' ' + months[holidate.getMonth()];
+          } else {
+            vm.activeHolidayShares[index].annuality = 'Floating Holiday';
+          }
+          if (holiday.art_override) {
+            vm.activeHolidayShares[index].artWorks = [];
+            for (let i = 0; i < holiday.override_content.img_paths.length; i++) {
+              vm.activeHolidayShares[index].artWorks[i] = {};
+              vm.activeHolidayShares[index].artWorks[i].img_paths = holiday.override_content.img_paths[i];
+              vm.activeHolidayShares[index].artWorks[i].titles = holiday.override_content.titles[i];
+              vm.activeHolidayShares[index].artWorks[i].artists = holiday.override_content.artists[i];
+              vm.activeHolidayShares[index].artWorks[i].years = holiday.override_content.years[i];
+            }
+          }
+          if (holiday.music_override) {
+            vm.activeHolidayShares[index].musicWorks = [];
+            for (let j = 0; j < holiday.override_content.sources.length; j++) {
+              vm.activeHolidayShares[index].musicWorks[j] = {};
+              vm.activeHolidayShares[index].musicWorks[j].src_strings = holiday.override_content.src_strings[j];
+              vm.activeHolidayShares[index].musicWorks[j].href_strings = holiday.override_content.href_strings[j];
+              vm.activeHolidayShares[index].musicWorks[j].a_strings = holiday.override_content.a_strings[j];
+            }
+          }
+        });
+      }
+
+      function retrieveUserHolidayShares() {
+        $http.get(`/users/${currentUserId}`)
+        .then(userData=>{
+          let user = userData.data;
+          $http.get('/holiday_shares')
+          .then(allHolidaySharesData=>{
+            let allHolidayShares = allHolidaySharesData.data;
+            let sharedHolidays = allHolidayShares.filter(day=>{
+              return(parseInt(day.share_associate_id) === parseInt(currentUserId));
+            });
+            let offeredHolidays = allHolidayShares.filter(day=>{
+              return((parseInt(day.user_id) === parseInt(currentUserId)) && (parseInt(day.share_associate_id) !== parseInt(currentUserId)));
+            });
+            let holidayShares = sharedHolidays.concat(offeredHolidays);
+            if (holidayShares.length > 0) {
+              vm.activeHolidayShares = [];
+              for (let i = 0; i < holidayShares.length; i++) {
+                vm.activeHolidayShares[i] = {};
+                vm.activeHolidayShares[i].id = holidayShares[i].id;
+                gatherHolidayInviterData(holidayShares[i].user_id, i);
+                vm.activeHolidayShares[i].cleanDate = cleanDateHoliday(holidayShares[i].updated_at) + ' - ' + timeDate(holidayShares[i].updated_at);
+                gatherHolidayShareHoliday(holidayShares[i].holiday_id, i);
+              }
+            }
+            setTimeout(()=>{
+              if (holidayShares.length > 0) {
+                for (let shared = 0; shared < holidayShares.length; shared++) {
+                  if (parseInt(holidayShares[shared].share_associate_id) === parseInt(currentUserId)) {
+                    document.getElementById('holidayblockInvitee' + holidayShares[shared].id).setAttribute("style", "display: none;");
+                  } else {
+                    document.getElementById('holidayblockInviter' + holidayShares[shared].id).setAttribute("style", "display: none;");
+                  }
+                }
+              }
+            }, 75);
+
+          });
+        });
+      }
+
       function retrieveUserMessages() {
         $http.get(`/users/${currentUserId}`)
         .then(userData=>{
@@ -13356,6 +13443,7 @@
             photoReference.setAttribute("style", "height: 10em; width: 10em; margin-left: 4.6em; margin-top: 1.2em; border: 2px solid #0000cc;");
             retrieveUserMessages();
             retrieveUserAppointments();
+            retrieveUserHolidayShares();
           });
         }
 
