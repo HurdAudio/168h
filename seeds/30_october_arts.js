@@ -4804,6 +4804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 241,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_industrysovpost_00006.jpg',
+          title: 'The train goes from the Socialism Station to the Communism Station.',
+          artist: '?',
+          year: '1939',
+          rule: {
+            "monday": [ 13, 14, 25, 29 ],
+            "tuesday": [ 9, 20, 31, 4 ],
+            "wednesday": [ 8, 19, 30, 3 ],
+            "thursday": [ 7, 18, 29, 2 ],
+            "friday": [ 6, 17, 28, 1 ],
+            "saturday": [ 5, 16, 27, 31 ],
+            "sunday": [ 4, 15, 16, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 242,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_stalin_wheel.jpg',
+          title: 'The captain of the country of Soviets, leads us from victory to victory!',
+          artist: 'B. Efimov',
+          year: '1933',
+          rule: {
+            "monday": [ 4, 15, 16, 30 ],
+            "tuesday": [ 13, 14, 25, 29 ],
+            "wednesday": [ 9, 20, 31, 4 ],
+            "thursday": [ 8, 19, 30, 3 ],
+            "friday": [ 7, 18, 29, 2 ],
+            "saturday": [ 6, 17, 28, 1 ],
+            "sunday": [ 5, 16, 27, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 243,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_St_039.jpg',
+          title: 'Red Army is a reliable guard of the Soviet country.',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 5, 16, 27, 31 ],
+            "tuesday": [ 4, 15, 16, 30 ],
+            "wednesday": [ 13, 14, 25, 29 ],
+            "thursday": [ 9, 20, 31, 4 ],
+            "friday": [ 8, 19, 30, 3 ],
+            "saturday": [ 7, 18, 29, 2 ],
+            "sunday": [ 6, 17, 28, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 244,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_St_038.jpg',
+          title: 'Stalin.',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 6, 17, 28, 1 ],
+            "tuesday": [ 5, 16, 27, 31 ],
+            "wednesday": [ 4, 15, 16, 30 ],
+            "thursday": [ 13, 14, 25, 29 ],
+            "friday": [ 9, 20, 31, 4 ],
+            "saturday": [ 8, 19, 30, 3 ],
+            "sunday": [ 7, 18, 29, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 245,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_St_037.jpg',
+          title: 'GPU. counter-revolutionary saboteur.',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 8, 19, 30, 3 ],
+            "tuesday": [ 7, 18, 29, 2 ],
+            "wednesday": [ 6, 17, 28, 1 ],
+            "thursday": [ 5, 16, 17, 31 ],
+            "friday": [ 14, 15, 26, 30 ],
+            "saturday": [ 10, 21, 1, 5 ],
+            "sunday": [ 9, 20, 31, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
