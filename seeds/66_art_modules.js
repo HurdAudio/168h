@@ -724,6 +724,66 @@ exports.seed = function(knex, Promise) {
           public: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 61,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/shoreditch-cat.jpg',
+          title: 'Shoreditch Cat',
+          artist: '?',
+          year: '2014',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 62,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/Mafia-cats.jpg',
+          title: 'Mafia Cats',
+          artist: '?',
+          year: '2014',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 63,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/winkcat.jpg',
+          title: 'Swiss Cat',
+          artist: '?',
+          year: '2014',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 64,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/mexican-cat-drinking-tequila-600x450-e1329934054533.jpg',
+          title: 'Mexican Cat Drinking Tequila',
+          artist: '?',
+          year: '2014',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 65,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/refer-e1329931959958.jpg',
+          title: 'Snow Cat',
+          artist: '?',
+          year: '2014',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
