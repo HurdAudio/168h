@@ -508,6 +508,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FEC5B7',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 37,
+          user_id: 1,
+          theme: 'Steam',
+          type: 'holiday',
+          src_string: '../img/july_tiles/cloudPink.jpeg',
+          repeat_value: 'no-repeat',
+          size_value: '153%',
+          color_dark: '#190B25',
+          color_medium: '#655890',
+          color_light: '#FDFDFD',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
