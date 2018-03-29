@@ -2650,6 +2650,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 148,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3650502038/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tortoise.bandcamp.com/album/standards',
+          a_string: 'Standards by Tortoise',
+          rule: {
+            "monday": [ 21, 11, 19, 13 ],
+            "tuesday": [ 25, 15, 23, 17 ],
+            "wednesday": [ 24, 14, 22, 16 ],
+            "thursday": [ 23, 13, 21, 16 ],
+            "saturday": [ 22, 12, 20, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 149,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1396897218/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tortoise.bandcamp.com/album/its-all-around-you',
+          a_string: 'It&#39;s All Around You by Tortoise',
+          rule: {
+            "monday": [ 22, 12, 20, 14 ],
+            "tuesday": [ 21, 11, 19, 13 ],
+            "wednesday": [ 25, 15, 23, 17 ],
+            "thursday": [ 24, 14, 22, 16 ],
+            "saturday": [ 23, 13, 21, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 150,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4176811270/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tortoise.bandcamp.com/album/a-lazarus-taxon',
+          a_string: 'A Lazarus Taxon by Tortoise',
+          rule: {
+            "monday": [ 23, 13, 21, 16 ],
+            "tuesday": [ 22, 12, 20, 14 ],
+            "wednesday": [ 21, 11, 19, 13 ],
+            "thursday": [ 25, 15, 23, 17 ],
+            "saturday": [ 24, 14, 22, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
