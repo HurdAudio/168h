@@ -592,6 +592,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FFFEFD',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 43,
+          user_id: 1,
+          theme: 'Ice',
+          type: 'week',
+          src_string: '../img/january_tiles/window-frost-glass-winter.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '180%',
+          color_dark: '#182B56',
+          color_medium: '#6AA4E3',
+          color_light: '#B1E0FB',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
