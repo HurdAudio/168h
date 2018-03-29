@@ -2758,6 +2758,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 154,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3030294946/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://gerpfastkolektif.bandcamp.com/album/lunatic-lovers',
+          a_string: 'Lunatic Lovers by Tissa Mawartyassari',
+          rule: {
+            "monday": [ 1, 9, 22, 21 ],
+            "tuesday": [ 31, 8, 21, 20 ],
+            "wednesday": [ 4, 12, 25, 24 ],
+            "thursday": [ 3, 11, 24, 23 ],
+            "saturday": [ 2, 10, 23, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 155,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2447479057/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://gerpfastkolektif.bandcamp.com/album/breath-of-insect',
+          a_string: 'Breath Of Insect by Incapacitants',
+          rule: {
+            "monday": [ 2, 10, 23, 22 ],
+            "tuesday": [ 1, 9, 22, 21 ],
+            "wednesday": [ 31, 8, 21, 20 ],
+            "thursday": [ 4, 12, 25, 24 ],
+            "saturday": [ 3, 11, 24, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 156,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1866601856/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://gerpfastkolektif.bandcamp.com/album/physical-barbaric-particles-ep',
+          a_string: 'Physical barbaric particles (物理野蠻顆粒) EP by Detroak',
+          rule: {
+            "monday": [ 3, 11, 24, 23 ],
+            "tuesday": [ 2, 10, 23, 22 ],
+            "wednesday": [ 1, 9, 22, 21 ],
+            "thursday": [ 31, 8, 21, 20 ],
+            "saturday": [ 4, 12, 25, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
