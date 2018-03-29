@@ -494,6 +494,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#D9C5BC',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 36,
+          user_id: 1,
+          theme: 'Primary Colors',
+          type: 'sunday',
+          src_string: '../img/august_tiles/Abstract-Yellow-Wallpaper-HD.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '160%',
+          color_dark: '#040404',
+          color_medium: '#887B29',
+          color_light: '#EACF0A',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
