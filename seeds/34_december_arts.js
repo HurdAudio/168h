@@ -4404,6 +4404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 221,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/23-02-20,Adv.jpg',
+          title: 'Adventure',
+          artist: 'James C. McKell',
+          year: '1923',
+          rule: {
+            "monday": [ 30, 11, 20, 26 ],
+            "tuesday": [ 29, 11, 30, 26 ],
+            "wednesday": [ 4, 17, 25, 31 ],
+            "thursday": [ 3, 16, 24, 30 ],
+            "friday": [ 2, 15, 23, 29 ],
+            "saturday": [ 1, 14, 22, 28 ],
+            "sunday": [ 31, 13, 21, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 222,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/28-10,Evrybdys.jpg',
+          title: 'Everybody\'s',
+          artist: 'Duncan McMillan',
+          year: '1928',
+          rule: {
+            "monday": [ 31, 13, 21, 27 ],
+            "tuesday": [ 30, 11, 20, 26 ],
+            "wednesday": [ 29, 11, 30, 26 ],
+            "thursday": [ 4, 17, 25, 31 ],
+            "friday": [ 3, 16, 24, 30 ],
+            "saturday": [ 2, 15, 23, 29 ],
+            "sunday": [ 1, 14, 22, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 223,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/11-01-25,Newspaper.jpg',
+          title: 'Newspaper',
+          artist: 'William McNulty',
+          year: '1911',
+          rule: {
+            "monday": [ 1, 14, 22, 28 ],
+            "tuesday": [ 31, 13, 21, 27 ],
+            "wednesday": [ 30, 11, 20, 26 ],
+            "thursday": [ 29, 11, 30, 26 ],
+            "friday": [ 4, 17, 25, 31 ],
+            "saturday": [ 3, 16, 24, 30 ],
+            "sunday": [ 2, 15, 23, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 224,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/38-00,FlyingAces1.jpg',
+          title: 'Flying Aces',
+          artist: 'Alden McWilliams',
+          year: '1938',
+          rule: {
+            "monday": [ 3, 16, 24, 30 ],
+            "tuesday": [ 2, 15, 23, 29 ],
+            "wednesday": [ 1, 14, 22, 28 ],
+            "thursday": [ 31, 12, 21, 27 ],
+            "friday": [ 30, 12, 31, 27 ],
+            "saturday": [ 5, 18, 26, 1 ],
+            "sunday": [ 4, 17, 25, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 225,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/32-00,HeroCamp.jpg',
+          title: 'Hero of the Camp',
+          artist: 'William Meilink',
+          year: '1932',
+          rule: {
+            "monday": [ 4, 17, 25, 31 ],
+            "tuesday": [ 3, 16, 24, 30 ],
+            "wednesday": [ 2, 15, 23, 29 ],
+            "thursday": [ 1, 14, 22, 28 ],
+            "friday": [ 31, 12, 21, 27 ],
+            "saturday": [ 30, 12, 31, 27 ],
+            "sunday": [ 5, 18, 26, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
