@@ -4604,6 +4604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 231,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/86-3-15q-1986.jpg',
+          title: '86-3-15Q',
+          artist: 'Angelo de Sousa',
+          year: '1986',
+          rule: {
+            "monday": [ 9, 14, 20, 24 ],
+            "tuesday": [ 8, 11, 19, 24 ],
+            "wednesday": [ 7, 11, 18, 23 ],
+            "thursday": [ 6, 11, 17, 22 ],
+            "friday": [ 5, 10, 16, 23 ],
+            "saturday": [ 11, 16, 22, 27 ],
+            "sunday": [ 10, 15, 20, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 232,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/creueta-del-coll-1987.jpg',
+          title: 'Creueta del Coll',
+          artist: 'Ellsworth Kelly',
+          year: '1987',
+          rule: {
+            "monday": [ 10, 15, 20, 26 ],
+            "tuesday": [ 9, 14, 20, 24 ],
+            "wednesday": [ 8, 11, 19, 24 ],
+            "thursday": [ 7, 11, 18, 23 ],
+            "friday": [ 6, 11, 17, 22 ],
+            "saturday": [ 5, 10, 16, 23 ],
+            "sunday": [ 11, 16, 22, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 233,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/enamel-on-wood-blue-green-1989.jpg',
+          title: 'Enamel on Wood: Blue Green',
+          artist: 'Marcia Hafif',
+          year: '1989',
+          rule: {
+            "monday": [ 11, 16, 22, 27 ],
+            "tuesday": [ 10, 15, 20, 26 ],
+            "wednesday": [ 9, 14, 20, 24 ],
+            "thursday": [ 8, 11, 19, 24 ],
+            "friday": [ 7, 11, 18, 23 ],
+            "saturday": [ 6, 11, 17, 22 ],
+            "sunday": [ 5, 10, 16, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 234,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/nine-singular-forms-1990.jpg',
+          title: 'Nine Singular Forms',
+          artist: 'Callum Innes',
+          year: '1990',
+          rule: {
+            "monday": [ 5, 10, 16, 23 ],
+            "tuesday": [ 11, 16, 22, 27 ],
+            "wednesday": [ 10, 15, 20, 26 ],
+            "thursday": [ 9, 14, 20, 24 ],
+            "friday": [ 8, 11, 19, 24 ],
+            "saturday": [ 7, 11, 18, 23 ],
+            "sunday": [ 6, 11, 17, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 235,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/untitled-4.jpg',
+          title: 'Untitled',
+          artist: 'Nasreen Mohamedi',
+          year: 'xx cent.',
+          rule: {
+            "monday": [ 6, 11, 17, 22 ],
+            "tuesday": [ 5, 10, 16, 23 ],
+            "wednesday": [ 11, 16, 22, 27 ],
+            "thursday": [ 10, 15, 20, 26 ],
+            "friday": [ 9, 14, 20, 24 ],
+            "saturday": [ 8, 11, 19, 24 ],
+            "sunday": [ 7, 11, 18, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
