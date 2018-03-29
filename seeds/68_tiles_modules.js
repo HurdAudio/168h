@@ -154,6 +154,21 @@ exports.seed = function(knex, Promise) {
           public: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 11,
+          user_author_id: 1,
+          theme: 'Paper',
+          type: 'sunday',
+          src_string: '../img/tiles/watercolour-2477944_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '130%',
+          color_dark: '#0921F5',
+          color_medium: '#54FBF4',
+          color_light: '#E3EFFB',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
