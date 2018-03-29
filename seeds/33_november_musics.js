@@ -2434,6 +2434,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 136,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2762412636/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://matsulimusic.bandcamp.com/album/genes-and-spirits',
+          a_string: 'Genes and Spirits by Moses Taiwa Molelekwa',
+          rule: {
+            "monday": [ 19, 30, 11, 15 ],
+            "tuesday": [ 18, 29, 10, 12 ],
+            "wednesday": [ 17, 28, 9, 11 ],
+            "thursday": [ 21, 2, 13, 17 ],
+            "saturday": [ 20, 1, 12, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 137,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=533968175/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://matsulimusic.bandcamp.com/album/witchdoctors-son',
+          a_string: 'Witchdoctor&#39;s Son by Okay Temiz / Johnny Dyani',
+          rule: {
+            "monday": [ 20, 1, 12, 16 ],
+            "tuesday": [ 19, 30, 11, 15 ],
+            "wednesday": [ 18, 29, 10, 12 ],
+            "thursday": [ 17, 28, 9, 11 ],
+            "saturday": [ 21, 2, 13, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 138,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3165775887/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://matsulimusic.bandcamp.com/album/mzanzi-afro-jazz-sounds-matsuli-label-sampler',
+          a_string: 'Mzanzi Afro Jazz Sounds - Matsuli Label Sampler by Various Artists',
+          rule: {
+            "monday": [ 21, 2, 13, 17 ],
+            "tuesday": [ 20, 1, 12, 16 ],
+            "wednesday": [ 19, 30, 11, 15 ],
+            "thursday": [ 18, 29, 10, 12 ],
+            "saturday": [ 17, 28, 9, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
