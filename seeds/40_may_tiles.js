@@ -536,6 +536,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FDFCF8',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 39,
+          user_id: 1,
+          theme: 'Greenery',
+          type: 'friday',
+          src_string: '../img/may_tiles/166504,xcitefun-green-living-walls-1.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '135%',
+          color_dark: '#101A12',
+          color_medium: '#4A732F',
+          color_light: '#FCFCFE',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
