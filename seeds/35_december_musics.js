@@ -2326,6 +2326,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 130,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2933140707/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://noproblematapes.bandcamp.com/album/crystalline-city',
+          a_string: 'Crystalline City by Vagrant',
+          rule: {
+            "monday": [ 23, 29, 4, 10 ],
+            "tuesday": [ 20, 28, 3, 9 ],
+            "wednesday": [ 21, 27, 2, 8 ],
+            "thursday": [ 25, 31, 6, 12 ],
+            "saturday": [ 24, 30, 5, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 131,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1406714306/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://infinitoaudio.bandcamp.com/album/black-ring-tunes',
+          a_string: 'Black Ring Tunes by Alejandro Palacios',
+          rule: {
+            "monday": [ 24, 30, 5, 10 ],
+            "tuesday": [ 23, 29, 4, 10 ],
+            "wednesday": [ 20, 28, 3, 9 ],
+            "thursday": [ 21, 27, 2, 8 ],
+            "saturday": [ 25, 31, 6, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 132,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4241321842/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://lunartapes.bandcamp.com/album/lunar-tapes-compilado-1',
+          a_string: 'Lunar Tapes Compilado 1 by Various Artists',
+          rule: {
+            "monday": [ 25, 31, 6, 12 ],
+            "tuesday": [ 24, 30, 5, 10 ],
+            "wednesday": [ 23, 29, 4, 10 ],
+            "thursday": [ 20, 28, 3, 9 ],
+            "saturday": [ 21, 27, 2, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
