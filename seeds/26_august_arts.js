@@ -5204,6 +5204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 261,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/the-fisherman.jpg',
+          title: 'The fisherman',
+          artist: 'Max Kurzweil',
+          year: 'c.1900',
+          rule: {
+            "monday": [ 10, 14, 22, 7 ],
+            "tuesday": [ 9, 12, 21, 6 ],
+            "wednesday": [ 8, 12, 20, 5 ],
+            "thursday": [ 7, 11, 19, 4 ],
+            "friday": [ 6, 8, 18, 3 ],
+            "saturday": [ 5, 8, 17, 2 ],
+            "sunday": [ 4, 7, 16, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 262,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/the-eastern-railway-station-at-night-1902.jpg',
+          title: 'The Eastern Railway Station at Night',
+          artist: 'Tivadar Kosztka Csontvary',
+          year: '1902',
+          rule: {
+            "monday": [ 4, 7, 16, 1 ],
+            "tuesday": [ 10, 14, 22, 7 ],
+            "wednesday": [ 9, 12, 21, 6 ],
+            "thursday": [ 8, 12, 20, 5 ],
+            "friday": [ 7, 11, 19, 4 ],
+            "saturday": [ 6, 8, 18, 3 ],
+            "sunday": [ 5, 8, 17, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 263,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/grand-canyon-1902.jpg',
+          title: 'Grand Canyon',
+          artist: 'Maxfield Parrish',
+          year: '1902',
+          rule: {
+            "monday": [ 5, 8, 17, 2 ],
+            "tuesday": [ 4, 7, 16, 1 ],
+            "wednesday": [ 10, 14, 22, 7 ],
+            "thursday": [ 9, 12, 21, 6 ],
+            "friday": [ 8, 12, 20, 5 ],
+            "saturday": [ 7, 11, 19, 4 ],
+            "sunday": [ 6, 8, 18, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 264,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/teacher-in-morocco-1908.jpg',
+          title: 'Teacher in Morocco',
+          artist: 'Tivadar Kosztka Csontvary',
+          year: '1908',
+          rule: {
+            "monday": [ 6, 8, 18, 3 ],
+            "tuesday": [ 5, 8, 17, 2 ],
+            "wednesday": [ 4, 7, 16, 1 ],
+            "thursday": [ 10, 14, 22, 7 ],
+            "friday": [ 9, 12, 21, 6 ],
+            "saturday": [ 8, 12, 20, 5 ],
+            "sunday": [ 7, 11, 19, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 265,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/soldiers-washing-1927.jpg',
+          title: 'Soldiers Washing',
+          artist: 'Stanley Spencer',
+          year: '1927',
+          rule: {
+            "monday": [ 7, 11, 19, 4 ],
+            "tuesday": [ 6, 8, 18, 3 ],
+            "wednesday": [ 5, 8, 17, 2 ],
+            "thursday": [ 4, 7, 16, 1 ],
+            "friday": [ 10, 14, 22, 7 ],
+            "saturday": [ 9, 12, 21, 6 ],
+            "sunday": [ 8, 12, 20, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
