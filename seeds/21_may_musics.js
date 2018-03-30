@@ -3082,6 +3082,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 172,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1866712287/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://karlrecords.bandcamp.com/album/organism-evolution',
+          a_string: 'Organism_evolution by AROVANE &amp; PORYA HATAMI',
+          rule: {
+            "monday": [ 29, 5, 11, 24 ],
+            "tuesday": [ 28, 3, 10, 23 ],
+            "wednesday": [ 27, 2, 9, 22 ],
+            "thursday": [ 26, 1, 8, 21 ],
+            "saturday": [ 25, 31, 7, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 173,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=483552563/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tomsmithksv.bandcamp.com/album/ksv-452-acr-x002-cup-of-indignation',
+          a_string: 'KSV 452 / ACR X002 Cup of Indignation by Boat Of',
+          rule: {
+            "monday": [ 25, 31, 7, 20 ],
+            "tuesday": [ 29, 5, 11, 24 ],
+            "wednesday": [ 28, 3, 10, 23 ],
+            "thursday": [ 27, 2, 9, 22 ],
+            "saturday": [ 26, 1, 8, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 174,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=371393138/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://protocell.bandcamp.com/album/prelude-to-a-certain-midnight',
+          a_string: 'Prelude To A Certain Midnight by Leo Okagawa',
+          rule: {
+            "monday": [ 26, 1, 8, 21 ],
+            "tuesday": [ 25, 31, 7, 20 ],
+            "wednesday": [ 29, 5, 11, 24 ],
+            "thursday": [ 28, 3, 10, 23 ],
+            "saturday": [ 27, 2, 9, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
