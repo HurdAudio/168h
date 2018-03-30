@@ -5604,6 +5604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 281,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/tumblr_mxpcjtcclu1qa4iv8o2_500.jpg',
+          title: 'unknown title',
+          artist: 'David Uzochukwu',
+          year: '2013',
+          rule: {
+            "monday": [ 9, 19, 29, 7 ],
+            "tuesday": [ 8, 18, 28, 6 ],
+            "wednesday": [ 7, 17, 27, 5 ],
+            "thursday": [ 16, 26, 6, 4 ],
+            "friday": [ 5, 15, 25, 3 ],
+            "saturday": [ 4, 14, 24, 2 ],
+            "sunday": [ 10, 20, 30, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 282,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/Phonsay-Phothisomphane2.jpg',
+          title: 'unknown title',
+          artist: 'Phonsay Phothisomphane',
+          year: '2017',
+          rule: {
+            "monday": [ 10, 20, 30, 6 ],
+            "tuesday": [ 9, 19, 29, 7 ],
+            "wednesday": [ 8, 18, 28, 6 ],
+            "thursday": [ 7, 17, 27, 5 ],
+            "friday": [ 16, 26, 6, 4 ],
+            "saturday": [ 5, 15, 25, 3 ],
+            "sunday": [ 4, 14, 24, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 283,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/helena-georgiou-minimalist-photo-10.jpg',
+          title: 'unknown title',
+          artist: 'Helena Georgiou',
+          year: '?',
+          rule: {
+            "monday": [ 4, 14, 24, 2 ],
+            "tuesday": [ 10, 20, 30, 6 ],
+            "wednesday": [ 9, 19, 29, 7 ],
+            "thursday": [ 8, 18, 28, 6 ],
+            "friday": [ 7, 17, 27, 5 ],
+            "saturday": [ 16, 26, 6, 4 ],
+            "sunday": [ 5, 15, 25, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 284,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/homegrown_landscape-2699-XL.jpg',
+          title: 'Minimalism - Miami, Florida',
+          artist: 'Christian Murillo',
+          year: '?',
+          rule: {
+            "monday": [ 5, 15, 25, 3 ],
+            "tuesday": [ 4, 14, 24, 2 ],
+            "wednesday": [ 10, 20, 30, 6 ],
+            "thursday": [ 9, 19, 29, 7 ],
+            "friday": [ 8, 18, 28, 6 ],
+            "saturday": [ 7, 17, 27, 5 ],
+            "sunday": [ 16, 26, 6, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 285,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/THE-THREE-POINT-SHOT.jpg',
+          title: 'The Three Point Shot',
+          artist: 'Justas Gulbinovičius',
+          year: '2017',
+          rule: {
+            "monday": [ 16, 26, 6, 4 ],
+            "tuesday": [ 5, 15, 25, 3 ],
+            "wednesday": [ 4, 14, 24, 2 ],
+            "thursday": [ 10, 20, 30, 6 ],
+            "friday": [ 9, 19, 29, 7 ],
+            "saturday": [ 8, 18, 28, 6 ],
+            "sunday": [ 7, 17, 27, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
