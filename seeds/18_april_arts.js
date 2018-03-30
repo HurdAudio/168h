@@ -6004,6 +6004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 301,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/636451787640126370-USP-MLB-WORLD-SERIES-HOUSTON-ASTROS-AT-LOS-ANGELE-95023141.JPG',
+          title: 'Astros win first World Series championship in franchise history',
+          artist: '?',
+          year: '2017',
+          rule: {
+            "monday": [ 12, 17, 23, 29 ],
+            "tuesday": [ 11, 15, 30, 28 ],
+            "wednesday": [ 10, 15, 20, 26 ],
+            "thursday": [ 9, 14, 20, 26 ],
+            "friday": [ 8, 13, 19, 25 ],
+            "saturday": [ 13, 19, 24, 1 ],
+            "sunday": [ 27, 17, 23, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 302,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/ALW-Uniform-HOU.png',
+          title: 'Houston Atros Uniform',
+          artist: '?',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 27, 17, 23, 30 ],
+            "tuesday": [ 12, 17, 23, 29 ],
+            "wednesday": [ 11, 15, 30, 28 ],
+            "thursday": [ 10, 15, 20, 26 ],
+            "friday": [ 9, 14, 20, 26 ],
+            "saturday": [ 8, 13, 19, 25 ],
+            "sunday": [ 13, 19, 24, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 303,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/springer_0422150_3bf1136a-d6b7-1879-c00ed6d3ea4b1689.jpg',
+          title: 'George Springer',
+          artist: '?',
+          year: '2017',
+          rule: {
+            "monday": [ 13, 19, 24, 1 ],
+            "tuesday": [ 27, 17, 23, 30 ],
+            "wednesday": [ 12, 17, 23, 29 ],
+            "thursday": [ 11, 15, 30, 28 ],
+            "friday": [ 10, 15, 20, 26 ],
+            "saturday": [ 9, 14, 20, 26 ],
+            "sunday": [ 8, 13, 19, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 304,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/2534731_630x354.jpg',
+          title: 'Houston Astros\' Jose Altuve scores the game-winning run past New York Yankees catcher Gary Sanchez during the ninth inning of Game 2',
+          artist: 'David J. Phillip',
+          year: '2017',
+          rule: {
+            "monday": [ 8, 13, 19, 25 ],
+            "tuesday": [ 13, 19, 24, 1 ],
+            "wednesday": [ 27, 17, 23, 30 ],
+            "thursday": [ 12, 17, 23, 29 ],
+            "friday": [ 11, 15, 30, 28 ],
+            "saturday": [ 10, 15, 20, 26 ],
+            "sunday": [ 9, 14, 20, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 305,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/IX5232PMUZCTZDEHYHYGK5OYV4.jpg',
+          title: 'Minute Maid Park and its retractable roof is ready for Games 3, 4 and 5 of the World Series.',
+          artist: 'Larry W. Smith',
+          year: '2017',
+          rule: {
+            "monday": [ 9, 14, 20, 26 ],
+            "tuesday": [ 8, 13, 19, 25 ],
+            "wednesday": [ 13, 19, 24, 1 ],
+            "thursday": [ 27, 17, 23, 30 ],
+            "friday": [ 12, 17, 23, 29 ],
+            "saturday": [ 11, 15, 30, 28 ],
+            "sunday": [ 10, 15, 20, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
