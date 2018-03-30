@@ -3406,6 +3406,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 190,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2125756147/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://mavisstaples.bandcamp.com/album/if-all-i-was-was-black',
+          a_string: 'If All I Was Was Black by Mavis Staples',
+          rule: {
+            "monday": [ 3, 6, 8, 12 ],
+            "tuesday": [ 4, 8, 10, 12 ],
+            "wednesday": [ 16, 10, 12, 18 ],
+            "thursday": [ 28, 4, 5, 18 ],
+            "saturday": [ 29, 4, 6, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 191,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1015323114/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://mavisstaples.bandcamp.com/album/livin-on-a-high-note',
+          a_string: 'Livin&#39; On A High Note by Mavis Staples',
+          rule: {
+            "monday": [ 29, 4, 6, 10 ],
+            "tuesday": [ 3, 6, 8, 12 ],
+            "wednesday": [ 4, 8, 10, 12 ],
+            "thursday": [ 16, 10, 12, 18 ],
+            "saturday": [ 28, 4, 5, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 192,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1078658689/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://mavisstaples.bandcamp.com/album/your-good-fortune',
+          a_string: 'Your Good Fortune by Mavis Staples',
+          rule: {
+            "monday": [ 28, 4, 5, 18 ],
+            "tuesday": [ 29, 4, 6, 10 ],
+            "wednesday": [ 3, 6, 8, 12 ],
+            "thursday": [ 4, 8, 10, 12 ],
+            "saturday": [ 16, 10, 12, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
