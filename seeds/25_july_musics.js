@@ -2866,6 +2866,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 160,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2107137839/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://blood-music.bandcamp.com/album/possessor',
+          a_string: 'Possessor by GosT',
+          rule: {
+            "monday": [ 21, 22, 27, 4 ],
+            "tuesday": [ 20, 22, 26, 3 ],
+            "wednesday": [ 24, 26, 30, 7 ],
+            "thursday": [ 23, 25, 29, 6 ],
+            "saturday": [ 22, 24, 28, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 161,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2905176306/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tomwaits.bandcamp.com/album/closing-time-remastered',
+          a_string: 'Closing Time (Remastered) by Tom Waits',
+          rule: {
+            "monday": [ 23, 25, 29, 6 ],
+            "tuesday": [ 22, 23, 28, 5 ],
+            "wednesday": [ 21, 23, 27, 4 ],
+            "thursday": [ 25, 27, 31, 8 ],
+            "saturday": [ 24, 26, 30, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 162,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2049458663/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tomwaits.bandcamp.com/album/blue-valentine-remastered',
+          a_string: 'Blue Valentine (Remastered) by Tom Waits',
+          rule: {
+            "monday": [ 24, 26, 30, 7 ],
+            "tuesday": [ 23, 25, 29, 6 ],
+            "wednesday": [ 22, 23, 28, 5 ],
+            "thursday": [ 21, 23, 27, 4 ],
+            "saturday": [ 25, 27, 31, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
