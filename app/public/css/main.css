@@ -7497,6 +7497,11 @@ footer img {
   margin: 1vmin 2vmin 1vmin 4vmin;
 }
 
+.profileDeleteOption a {
+  margin-right: 4vmin;
+  float: right;
+}
+
 
 /* .day {
   background-image: url(../img/january_tiles/window-frost-glass-winter.jpg);

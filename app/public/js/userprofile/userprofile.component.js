@@ -232,6 +232,43 @@
       vm.messageDirect = messageDirect;
       vm.userEditTimeblockShareComment = userEditTimeblockShareComment;
       vm.userEditTimeblockShareCommentCompleted = userEditTimeblockShareCommentCompleted;
+      vm.deleteTimeblockShare = deleteTimeblockShare;
+      vm.timeblockShareDeleteDeny = timeblockShareDeleteDeny;
+      vm.timeblockShareDeleteConfirm = timeblockShareDeleteConfirm;
+
+      function timeblockShareDeleteConfirm(timeblockShareId) {
+        let thisIsTimeblockShareDeleteDiv = document.getElementById("thisIsTimeblockShareDeleteDiv" + timeblockShareId);
+        let thisIsTimeblockShareDeleteConfirmDiv = document.getElementById("thisIsTimeblockShareDeleteConfirmDiv" + timeblockShareId);
+
+        $http.delete(`/timeblock_shares/${timeblockShareId}`)
+        .then(goneAppointmentData=>{
+          let goneAppointment = goneAppointmentData.data;
+          for (let i = 0; i < vm.activeTimeblockShares.length; i++) {
+            if (parseInt(vm.activeTimeblockShares[i].id) === parseInt(timeblockShareId)) {
+              vm.activeTimeblockShares.splice(i, 1);
+            }
+          }
+        });
+
+        thisIsTimeblockShareDeleteDiv.setAttribute("style", "display: initial;");
+        thisIsTimeblockShareDeleteConfirmDiv.setAttribute("style", "display: none;");
+      }
+
+      function timeblockShareDeleteDeny(timeblockShareId) {
+        let thisIsTimeblockShareDeleteDiv = document.getElementById("thisIsTimeblockShareDeleteDiv" + timeblockShareId);
+        let thisIsTimeblockShareDeleteConfirmDiv = document.getElementById("thisIsTimeblockShareDeleteConfirmDiv" + timeblockShareId);
+
+        thisIsTimeblockShareDeleteDiv.setAttribute("style", "display: initial;");
+        thisIsTimeblockShareDeleteConfirmDiv.setAttribute("style", "display: none;");
+      }
+
+      function deleteTimeblockShare(timeblockShareId) {
+        let thisIsTimeblockShareDeleteDiv = document.getElementById("thisIsTimeblockShareDeleteDiv" + timeblockShareId);
+        let thisIsTimeblockShareDeleteConfirmDiv = document.getElementById("thisIsTimeblockShareDeleteConfirmDiv" + timeblockShareId);
+
+        thisIsTimeblockShareDeleteDiv.setAttribute("style", "display: none;");
+        thisIsTimeblockShareDeleteConfirmDiv.setAttribute("style", "display: initial;");
+      }
 
       function userEditTimeblockShareCommentCompleted(timeblockShareId) {
 
@@ -13050,6 +13087,11 @@
 
       function inviteOrInvitee(appointment, index) {
         setTimeout(()=>{
+          if (appointment.user_id === parseInt(currentUserId)) {
+            document.getElementById("thisIsTimeblockShareDeleteDiv" + appointment.id).setAttribute("style", "display: initial;");
+          } else {
+            document.getElementById("thisIsTimeblockShareDeleteDiv" + appointment.id).setAttribute("style", "display: none;");
+          }
           if (appointment.share_associate_id === parseInt(currentUserId)) {
             document.getElementById('timeblockInviter' + appointment.id.toString()).setAttribute("style", "display: initial;");
             document.getElementById('timeblockInvitee' + appointment.id.toString()).setAttribute("style", "display: none;");

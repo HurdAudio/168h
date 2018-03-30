@@ -5018,6 +5018,16 @@
       <div id="timeblockSharesNotifier">
         <main ng-repeat="block in $ctrl.activeTimeblockShares | orderBy : $ctrl.sortBy">
           <div class="whoScheduledMe">
+            <div id="thisIsTimeblockShareDeleteDiv{{block.id}}" class="profileDeleteOption">
+
+              <a class="btn" href="#" ng-click="$ctrl.deleteTimeblockShare(block.id)">delete</a><br><br>
+            </div>
+            <div id="thisIsTimeblockShareDeleteConfirmDiv{{block.id}}" class="messageEditDelete">
+
+              <h3>Delete this appointment invite?</h3>
+              <a class="btn" href="#" ng-click="$ctrl.timeblockShareDeleteConfirm(block.id)">yes</a>
+              <a class="btn" href="#" ng-click="$ctrl.timeblockShareDeleteDeny(block.id)">no</a>
+            </div>
 
 
             <img src="{{block.inviterImg}}"><br>
