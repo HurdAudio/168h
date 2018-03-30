@@ -2974,6 +2974,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 166,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=966168502/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://weareacr.bandcamp.com/album/12-elegies-for-pierre-boulez-st-ost',
+          a_string: '12 Elegies For Pierre Boulez / Ústí OST by Wim Dehaen',
+          rule: {
+            "monday": [ 24, 27, 2, 14 ],
+            "tuesday": [ 23, 27, 2, 14 ],
+            "wednesday": [ 23, 26, 2, 13 ],
+            "thursday": [ 21, 29, 1, 12 ],
+            "saturday": [ 25, 29, 5, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 167,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1466775653/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://somta.bandcamp.com/album/aarde',
+          a_string: 'Aarde by somta',
+          rule: {
+            "monday": [ 25, 29, 5, 16 ],
+            "tuesday": [ 24, 27, 2, 14 ],
+            "wednesday": [ 23, 27, 2, 14 ],
+            "thursday": [ 23, 26, 2, 13 ],
+            "saturday": [ 21, 29, 1, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 168,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=454040844/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://damecook.bandcamp.com/album/music-for-snow-days',
+          a_string: 'music for snow days by Dame Cook',
+          rule: {
+            "monday": [ 22, 30, 2, 13 ],
+            "tuesday": [ 26, 30, 6, 17 ],
+            "wednesday": [ 25, 28, 3, 15 ],
+            "thursday": [ 24, 28, 3, 15 ],
+            "saturday": [ 24, 27, 3, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
