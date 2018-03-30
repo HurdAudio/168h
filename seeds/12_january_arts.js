@@ -6604,6 +6604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 331,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/rosace-ii-1941.jpg',
+          title: 'Rosace II',
+          artist: 'Otto Freundlich',
+          year: '1941',
+          rule: {
+            "monday": [ 19, 21, 13, 2 ],
+            "tuesday": [ 21, 22, 14, 17 ],
+            "wednesday": [ 24, 25, 16, 20 ],
+            "thursday": [ 27, 29, 30, 1 ],
+            "friday": [ 29, 31, 4, 7 ],
+            "saturday": [ 31, 2, 3, 6 ],
+            "sunday": [ 16, 17, 28, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 332,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/the-elimination-of-radiation-through-bombardment-1986.jpg',
+          title: 'The Elimination of Radiation through Bombardment',
+          artist: 'Ozdemir Atlan',
+          year: '1986',
+          rule: {
+            "monday": [ 16, 17, 28, 20 ],
+            "tuesday": [ 19, 21, 13, 2 ],
+            "wednesday": [ 21, 22, 14, 17 ],
+            "thursday": [ 24, 25, 16, 20 ],
+            "friday": [ 27, 29, 30, 1 ],
+            "saturday": [ 29, 31, 4, 7 ],
+            "sunday": [ 31, 2, 3, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 333,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/o2-43-44-ou-o-violino-1944.jpg',
+          title: 'O2-43-44 (ou O Violino)',
+          artist: 'Fernando Lanhas',
+          year: '1944',
+          rule: {
+            "monday": [ 31, 2, 3, 6 ],
+            "tuesday": [ 16, 17, 28, 20 ],
+            "wednesday": [ 19, 21, 13, 2 ],
+            "thursday": [ 21, 22, 14, 17 ],
+            "friday": [ 24, 25, 16, 20 ],
+            "saturday": [ 27, 29, 30, 1 ],
+            "sunday": [ 29, 31, 4, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 334,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/clous-1969.jpg',
+          title: 'Clous',
+          artist: 'Bernard Aubertin',
+          year: '1969',
+          rule: {
+            "monday": [ 29, 31, 4, 7 ],
+            "tuesday": [ 31, 2, 3, 6 ],
+            "wednesday": [ 16, 17, 28, 20 ],
+            "thursday": [ 19, 21, 13, 2 ],
+            "friday": [ 21, 22, 14, 17 ],
+            "saturday": [ 24, 25, 16, 20 ],
+            "sunday": [ 27, 29, 30, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 335,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/untitled__0__.jpg',
+          title: 'Untitled',
+          artist: 'Mario Prassinos',
+          year: '?',
+          rule: {
+            "monday": [ 27, 29, 30, 1 ],
+            "tuesday": [ 29, 31, 4, 7 ],
+            "wednesday": [ 31, 2, 3, 6 ],
+            "thursday": [ 16, 17, 28, 20 ],
+            "friday": [ 19, 21, 13, 2 ],
+            "saturday": [ 21, 22, 14, 17 ],
+            "sunday": [ 24, 25, 16, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
