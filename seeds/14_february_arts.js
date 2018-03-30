@@ -6404,6 +6404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 321,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/d0353fde6c13d090305c89905e3ffd74--washington-photographs.jpg',
+          title: 'Booker T. Washington',
+          artist: 'Arthur P. Bedou',
+          year: 'xix cent.',
+          rule: {
+            "monday": [ 22, 1, 9, 17 ],
+            "tuesday": [ 24, 5, 11, 17 ],
+            "wednesday": [ 26, 5, 13, 23 ],
+            "thursday": [ 26, 7, 3, 22 ],
+            "friday": [ 16, 24, 3, 11 ],
+            "saturday": [ 17, 26, 5, 13 ],
+            "sunday": [ 23, 28, 5, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 322,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/DarrinBellHuntingSeason.gif',
+          title: 'Hunting Season is Always Open',
+          artist: 'Darrin Bell',
+          year: '2014',
+          rule: {
+            "monday": [ 24, 29, 6, 16 ],
+            "tuesday": [ 23, 2, 10, 18 ],
+            "wednesday": [ 25, 6, 12, 18 ],
+            "thursday": [ 27, 6, 14, 24 ],
+            "friday": [ 27, 8, 4, 23 ],
+            "saturday": [ 17, 25, 4, 12 ],
+            "sunday": [ 18, 27, 6, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 323,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/51897b29a09da013105a1a7d2b8f90c6.jpg',
+          title: 'American Mixtures of the Ethiopian Race',
+          artist: 'Mary A. Bell',
+          year: '?',
+          rule: {
+            "monday": [ 18, 27, 6, 14 ],
+            "tuesday": [ 24, 29, 6, 16 ],
+            "wednesday": [ 23, 2, 10, 18 ],
+            "thursday": [ 25, 6, 12, 18 ],
+            "friday": [ 27, 6, 14, 24 ],
+            "saturday": [ 27, 8, 4, 23 ],
+            "sunday": [ 17, 25, 4, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 324,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/db_161.jpg',
+          title: 'Harlem, NY, 1978',
+          artist: 'Dawoud Bey',
+          year: '1978',
+          rule: {
+            "monday": [ 17, 25, 4, 12 ],
+            "tuesday": [ 18, 27, 6, 14 ],
+            "wednesday": [ 24, 29, 6, 16 ],
+            "thursday": [ 23, 2, 10, 18 ],
+            "friday": [ 25, 6, 12, 18 ],
+            "saturday": [ 27, 6, 14, 24 ],
+            "sunday": [ 27, 8, 4, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 325,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/1b75cbe648b4524d35683b26cf1ec5ad.jpg',
+          title: 'Shotgun',
+          artist: 'John T. Biggers',
+          year: '?',
+          rule: {
+            "monday": [ 27, 8, 4, 23 ],
+            "tuesday": [ 17, 25, 4, 12 ],
+            "wednesday": [ 18, 27, 6, 14 ],
+            "thursday": [ 24, 29, 6, 16 ],
+            "friday": [ 23, 2, 10, 18 ],
+            "saturday": [ 25, 6, 12, 18 ],
+            "sunday": [ 27, 6, 14, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
