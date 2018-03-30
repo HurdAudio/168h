@@ -3190,6 +3190,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 178,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3743710167/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://rempispietdaisy.bandcamp.com/album/throw-tomatoes',
+          a_string: 'Throw Tomatoes by Rempis / Piet / Daisy',
+          rule: {
+            "monday": [ 25, 3, 15, 20 ],
+            "tuesday": [ 29, 7, 19, 24 ],
+            "wednesday": [ 28, 6, 18, 23 ],
+            "thursday": [ 27, 5, 17, 22 ],
+            "saturday": [ 26, 4, 16, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 179,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2752869323/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tworiversrecords.bandcamp.com/album/love-and-protest',
+          a_string: 'LOVE AND PROTEST by COLLECTIVE X',
+          rule: {
+            "monday": [ 26, 4, 16, 21 ],
+            "tuesday": [ 25, 3, 15, 20 ],
+            "wednesday": [ 29, 7, 19, 24 ],
+            "thursday": [ 28, 6, 18, 23 ],
+            "saturday": [ 27, 5, 17, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 180,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=526341575/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://eavemontreal.bandcamp.com/album/eave',
+          a_string: 'Eave by Eave',
+          rule: {
+            "monday": [ 27, 5, 17, 22 ],
+            "tuesday": [ 26, 4, 16, 21 ],
+            "wednesday": [ 25, 3, 15, 20 ],
+            "thursday": [ 29, 7, 19, 24 ],
+            "saturday": [ 28, 6, 18, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
