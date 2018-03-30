@@ -5804,6 +5804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 291,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/sticking.jpg',
+          title: 'Sticking',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 1, 11, 21, 29 ],
+            "tuesday": [ 30, 8, 20, 29 ],
+            "wednesday": [ 11, 21, 31, 8 ],
+            "thursday": [ 9, 20, 29, 8 ],
+            "friday": [ 7, 17, 25, 6 ],
+            "saturday": [ 4, 15, 25, 14 ],
+            "sunday": [ 3, 14, 23, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 292,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/stock-yard.jpg',
+          title: 'Stock yard',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 3, 14, 23, 2 ],
+            "tuesday": [ 1, 11, 21, 29 ],
+            "wednesday": [ 30, 8, 20, 29 ],
+            "thursday": [ 11, 21, 31, 8 ],
+            "friday": [ 9, 20, 29, 8 ],
+            "saturday": [ 7, 17, 25, 6 ],
+            "sunday": [ 4, 15, 25, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 293,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/stuffed-jumbo-fragment.jpg',
+          title: 'Stuffed Jumbo (fragment)',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 4, 15, 25, 14 ],
+            "tuesday": [ 3, 14, 23, 2 ],
+            "wednesday": [ 1, 11, 21, 29 ],
+            "thursday": [ 30, 8, 20, 29 ],
+            "friday": [ 11, 21, 31, 8 ],
+            "saturday": [ 9, 20, 29, 8 ],
+            "sunday": [ 7, 17, 25, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 294,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/stuffed-jumbo-fragment-1.jpg',
+          title: 'Stuffed Jumbo (fragment)',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 8, 18, 26, 7 ],
+            "tuesday": [ 5, 16, 26, 15 ],
+            "wednesday": [ 4, 15, 24, 3 ],
+            "thursday": [ 2, 12, 22, 30 ],
+            "friday": [ 31, 9, 21, 30 ],
+            "saturday": [ 12, 22, 1, 9 ],
+            "sunday": [ 10, 21, 30, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 295,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/stuffed-jumbo-fragment-2.jpg',
+          title: 'Stuffed Jumbo (fragment)',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 10, 21, 30, 9 ],
+            "tuesday": [ 8, 18, 26, 7 ],
+            "wednesday": [ 5, 16, 26, 15 ],
+            "thursday": [ 4, 15, 24, 3 ],
+            "friday": [ 2, 12, 22, 30 ],
+            "saturday": [ 31, 9, 21, 30 ],
+            "sunday": [ 12, 22, 1, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
