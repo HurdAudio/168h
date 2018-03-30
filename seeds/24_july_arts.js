@@ -5404,6 +5404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 271,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/le-soleil-rouge-1950.jpg',
+          title: 'Le Soleil Rouge',
+          artist: 'Zao Wou-Ki',
+          year: '1950',
+          rule: {
+            "monday": [ 6, 17, 27, 29 ],
+            "tuesday": [ 5, 16, 27, 28 ],
+            "wednesday": [ 4, 15, 26, 6 ],
+            "thursday": [ 10, 21, 1, 11 ],
+            "friday": [ 9, 20, 31, 11 ],
+            "saturday": [ 8, 19, 30, 10 ],
+            "sunday": [ 7, 18, 29, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 272,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/portrait-d-une-am-ricaine.jpg',
+          title: 'Portrait d\'une Américaine',
+          artist: 'Maurice Boitel',
+          year: '?',
+          rule: {
+            "monday": [ 7, 18, 29, 30 ],
+            "tuesday": [ 6, 17, 27, 29 ],
+            "wednesday": [ 5, 16, 27, 28 ],
+            "thursday": [ 4, 15, 26, 6 ],
+            "friday": [ 10, 21, 1, 11 ],
+            "saturday": [ 9, 20, 31, 11 ],
+            "sunday": [ 8, 19, 30, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 273,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/sitges-iglesia-roja-1981.jpg',
+          title: 'Sitges – Iglesia Roja',
+          artist: 'Carlos Nadal',
+          year: '1981',
+          rule: {
+            "monday": [ 9, 20, 31, 11 ],
+            "tuesday": [ 8, 19, 30, 31 ],
+            "wednesday": [ 7, 18, 28, 30 ],
+            "thursday": [ 6, 17, 28, 29 ],
+            "friday": [ 5, 16, 27, 7 ],
+            "saturday": [ 11, 22, 2, 12 ],
+            "sunday": [ 10, 21, 1, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 274,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/composition-in-green.jpg',
+          title: 'Composition in Green',
+          artist: 'Natalia Dumitresco',
+          year: '?',
+          rule: {
+            "monday": [ 10, 21, 1, 12 ],
+            "tuesday": [ 9, 20, 31, 11 ],
+            "wednesday": [ 8, 19, 30, 31 ],
+            "thursday": [ 7, 18, 28, 30 ],
+            "friday": [ 6, 17, 28, 29 ],
+            "saturday": [ 5, 16, 27, 7 ],
+            "sunday": [ 11, 22, 2, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 275,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/the-autumn-1974.jpg',
+          title: 'The Autumn',
+          artist: 'Aurel Cojan',
+          year: '1974',
+          rule: {
+            "monday": [ 11, 22, 2, 12 ],
+            "tuesday": [ 10, 21, 1, 12 ],
+            "wednesday": [ 9, 20, 31, 11 ],
+            "thursday": [ 8, 19, 30, 31 ],
+            "friday": [ 7, 18, 28, 30 ],
+            "saturday": [ 6, 17, 28, 29 ],
+            "sunday": [ 5, 16, 27, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
