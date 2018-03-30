@@ -3514,6 +3514,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 196,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2786321812/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jonathanzorn.bandcamp.com/album/the-desert-hour',
+          a_string: 'The Desert Hour by Jonathan Zorn',
+          rule: {
+            "monday": [ 4, 10, 11, 12 ],
+            "tuesday": [ 3, 10, 11, 12 ],
+            "wednesday": [ 7, 14, 15, 16 ],
+            "thursday": [ 6, 12, 14, 15 ],
+            "saturday": [ 5, 12, 13, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 197,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4235904263/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jonathanzorn.bandcamp.com/album/new-works-for-trio-and-live-electronics',
+          a_string: 'New Works for Trio and Live Electronics by Jonathan Zorn Trio',
+          rule: {
+            "monday": [ 5, 12, 13, 14 ],
+            "tuesday": [ 4, 10, 11, 12 ],
+            "wednesday": [ 3, 10, 11, 12 ],
+            "thursday": [ 7, 14, 15, 16 ],
+            "saturday": [ 6, 12, 14, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 198,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'http://bandcamp.com/EmbeddedPlayer/album=156399437/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://records.theindustryla.org/album/invisible-cities-an-opera-by-christopher-cerrone',
+          a_string: 'INVISIBLE CITIES: An Opera by Christopher Cerrone by Christopher Cerrone, Marc Lowenstein, Cedric Berry, Ashley Faatoalia, Delaram Kamareh, Ashley Knight',
+          rule: {
+            "monday": [ 6, 12, 14, 15 ],
+            "tuesday": [ 5, 12, 13, 14 ],
+            "wednesday": [ 4, 10, 11, 12 ],
+            "thursday": [ 3, 10, 11, 12 ],
+            "saturday": [ 7, 14, 15, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
