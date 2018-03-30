@@ -6204,6 +6204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 311,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/whitby-linocut-25ed-g-lazzerini.jpg',
+          title: 'Whitby',
+          artist: 'Giuliana Lazzerini',
+          year: '2017',
+          rule: {
+            "monday": [ 14, 23, 2, 10 ],
+            "tuesday": [ 13, 23, 2, 10 ],
+            "wednesday": [ 13, 22, 30, 9 ],
+            "thursday": [ 11, 21, 29, 8 ],
+            "friday": [ 10, 20, 28, 7 ],
+            "saturday": [ 9, 19, 27, 6 ],
+            "sunday": [ 8, 18, 27, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 312,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/hands (1).jpg',
+          title: 'Hands',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 8, 18, 27, 5 ],
+            "tuesday": [ 14, 23, 2, 10 ],
+            "wednesday": [ 13, 23, 2, 10 ],
+            "thursday": [ 13, 22, 30, 9 ],
+            "friday": [ 11, 21, 29, 8 ],
+            "saturday": [ 10, 20, 28, 7 ],
+            "sunday": [ 9, 19, 27, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 313,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/canoe-woman-1988.jpg',
+          title: 'Canoe / Woman',
+          artist: 'Landon Mackenzie',
+          year: '1988',
+          rule: {
+            "monday": [ 9, 19, 27, 6 ],
+            "tuesday": [ 8, 18, 27, 5 ],
+            "wednesday": [ 14, 23, 2, 10 ],
+            "thursday": [ 13, 23, 2, 10 ],
+            "friday": [ 13, 22, 30, 9 ],
+            "saturday": [ 11, 21, 29, 8 ],
+            "sunday": [ 10, 20, 28, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 314,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/untitled-97-1982.jpg',
+          title: 'Untitled #97',
+          artist: 'Cindy Sherman',
+          year: '1982',
+          rule: {
+            "monday": [ 10, 20, 28, 7 ],
+            "tuesday": [ 9, 19, 27, 6 ],
+            "wednesday": [ 8, 18, 27, 5 ],
+            "thursday": [ 14, 23, 2, 10 ],
+            "friday": [ 13, 23, 2, 10 ],
+            "saturday": [ 13, 22, 30, 9 ],
+            "sunday": [ 11, 21, 29, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 315,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/untitled-from-the-series-still-water-the-river-thames-for-example-1999-10.jpg',
+          title: 'Untitled (from the series Still Water (The River Thames, for Example))',
+          artist: 'Roni Horn',
+          year: '1999',
+          rule: {
+            "monday": [ 12, 22, 30, 9 ],
+            "tuesday": [ 11, 21, 29, 8 ],
+            "wednesday": [ 10, 20, 28, 7 ],
+            "thursday": [ 9, 19, 28, 6 ],
+            "friday": [ 15, 24, 3, 11 ],
+            "saturday": [ 14, 24, 3, 11 ],
+            "sunday": [ 14, 23, 31, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
