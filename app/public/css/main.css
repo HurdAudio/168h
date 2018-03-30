@@ -3005,6 +3005,11 @@ footer img {
   margin-bottom: 0;
 }
 
+#timeblockComments textarea {
+  margin-left: 3vmin;
+  width: 89%;
+}
+
 
 
 #timeblockSharesNotifier h3 {

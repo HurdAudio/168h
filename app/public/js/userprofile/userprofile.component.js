@@ -230,6 +230,48 @@
       vm.messageForAllUsers = messageForAllUsers;
       vm.messageForAllFriends = messageForAllFriends;
       vm.messageDirect = messageDirect;
+      vm.userEditTimeblockShareComment = userEditTimeblockShareComment;
+      vm.userEditTimeblockShareCommentCompleted = userEditTimeblockShareCommentCompleted;
+
+      function userEditTimeblockShareCommentCompleted(timeblockShareId) {
+
+        let thisIsTheTimeblockShareCommentEditor = document.getElementById('thisIsTheTimeblockShareCommentEditor' + timeblockShareId);
+        let thisIsTimeblockShareCommentEditDoneDiv = document.getElementById('thisIsTimeblockShareCommentEditDoneDiv' + timeblockShareId);
+        let thisIsTheTimeblockShareComment = document.getElementById('thisIsTheTimeblockShareComment' + timeblockShareId);
+        let editDeleteTimeblockShareCommentDiv = document.getElementById('editDeleteTimeblockShareCommentDiv' + timeblockShareId);
+        let subObj = {
+          comment: thisIsTheTimeblockShareCommentEditor.value
+        };
+        $http.patch(`/timeblock_share_comments/${timeblockShareId}`, subObj)
+        .then(updatedCommentData=>{
+          let updatedComment = updatedCommentData.data;
+          thisIsTheTimeblockShareCommentEditor.setAttribute("style", "display: none;");
+          thisIsTimeblockShareCommentEditDoneDiv.setAttribute("style", "display: none;");
+          thisIsTheTimeblockShareComment.innerHTML = updatedComment.comment;
+          thisIsTheTimeblockShareComment.setAttribute("style", "visibility: visible;");
+          editDeleteTimeblockShareCommentDiv.setAttribute("style", "display: initial;");
+        });
+      }
+
+      function userEditTimeblockShareComment(timeblockShareId) {
+
+        let thisIsTheTimeblockShareCommentEditor = document.getElementById('thisIsTheTimeblockShareCommentEditor' + timeblockShareId);
+        let thisIsTimeblockShareCommentEditDoneDiv = document.getElementById('thisIsTimeblockShareCommentEditDoneDiv' + timeblockShareId);
+        let thisIsTheTimeblockShareComment = document.getElementById('thisIsTheTimeblockShareComment' + timeblockShareId);
+        let editDeleteTimeblockShareCommentDiv = document.getElementById('editDeleteTimeblockShareCommentDiv' + timeblockShareId);
+
+        $http.get(`/timeblock_share_comments/${timeblockShareId}`)
+        .then(timeblockShareCommentData=>{
+          let timeblockShareComment = timeblockShareCommentData.data;
+          thisIsTheTimeblockShareCommentEditor.setAttribute("style", "display: initial;");
+          thisIsTheTimeblockShareCommentEditor.value = timeblockShareComment.comment;
+          thisIsTheTimeblockShareCommentEditor.focus();
+          thisIsTimeblockShareCommentEditDoneDiv.setAttribute("style", "display: initial;");
+          thisIsTheTimeblockShareComment.setAttribute("style", "visibility: hidden;");
+          editDeleteTimeblockShareCommentDiv.setAttribute("style", "display: none;");
+
+        });
+      }
 
       function populateFriendsList(associatesList, userId) {
         $http.get(`/users/${userId}`)
@@ -13239,9 +13281,18 @@
               check = new Date(appointmentComments[i].updated_at);
               vm.activeTimeblockShares[index].comments[i] = {};
               vm.activeTimeblockShares[index].comments[i].comment = appointmentComments[i].comment;
+              vm.activeTimeblockShares[index].comments[i].id = appointmentComments[i].id;
               getUserInfosForAppointmentComment(appointment, index, appointmentComments[i], i);
               vm.activeTimeblockShares[index].comments[i].cleanDate = cleanDateHoliday(appointmentComments[i].updated_at) + ' at ' +  check.toLocaleTimeString('en-GB');
             }
+            setTimeout(()=>{
+              for (let j = 0; j < appointmentComments.length; j++) {
+                if (parseInt(appointmentComments[j].user_id) === parseInt(currentUserId)) {
+                  document.getElementById("editDeleteTimeblockShareCommentDiv" + vm.activeTimeblockShares[index].comments[j].id).setAttribute("style", "display: initial;");
+                }
+                document.getElementById("thisIsTheTimeblockShareCommentEditor" + vm.activeTimeblockShares[index].comments[j].id).setAttribute("style", "display: none;");
+              }
+            }, 75);
           }
         });
       }

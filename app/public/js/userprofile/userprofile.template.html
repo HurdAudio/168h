@@ -5055,8 +5055,14 @@
           <main ng-repeat="comment in block.comments | orderBy : $ctrl.sortBy">
             <img src="{{comment.commenterImg}}"><br>
             <p>From: {{comment.commenterName}}
-            on {{comment.cleanDate}}</p><br><br>
-            <h3>{{comment.comment}}</h3><br>
+            on {{comment.cleanDate}}</p><br><br><br>
+            <textarea id="thisIsTheTimeblockShareCommentEditor{{comment.id}}" class="pure-input-1" rows="5"></textarea>
+            <div class="thisIsMessageEditDoneDiv" id="thisIsTimeblockShareCommentEditDoneDiv{{comment.id}}"><a class="btn" id="thisIsTheTimeblockShareCommentEditorDoneButton{{comment.id}}" href="#" ng-click="$ctrl.userEditTimeblockShareCommentCompleted(comment.id)">done</a></div>
+            <h3 id="thisIsTheTimeblockShareComment{{comment.id}}">{{comment.comment}}</h3><br>
+            <div id="editDeleteTimeblockShareCommentDiv{{comment.id}}" class="messageEditDelete">
+              <a class="btn" href="#" ng-click="$ctrl.userEditTimeblockShareComment(comment.id)">edit</a>
+              <a class="btn" href="#" ng-click="$ctrl.userDeleteTimeblockShareComment(comment.id)">delete</a>
+            </div><br><br><br><br>
           </main>
         </div>
 
