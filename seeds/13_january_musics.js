@@ -3568,6 +3568,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 199,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=494160249/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://davidbuddin.bandcamp.com/album/quodlibet',
+          a_string: 'Quodlibet by David Buddin',
+          rule: {
+            "monday": [ 7, 14, 15, 16 ],
+            "tuesday": [ 6, 12, 14, 15 ],
+            "wednesday": [ 5, 12, 13, 14 ],
+            "thursday": [ 4, 10, 11, 12 ],
+            "saturday": [ 3, 10, 11, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 200,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1249749207/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://davidbuddin.bandcamp.com/album/canticles-for-electronic-music',
+          a_string: 'Canticles For Electronic Music by David Buddin',
+          rule: {
+            "monday": [ 3, 10, 11, 12 ],
+            "tuesday": [ 7, 14, 15, 16 ],
+            "wednesday": [ 6, 12, 14, 15 ],
+            "thursday": [ 5, 12, 13, 14 ],
+            "saturday": [ 4, 10, 11, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 201,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3326567894/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://evanziporyn.bandcamp.com/album/frogs-eye',
+          a_string: 'Frog&#39;s Eye by Evan Ziporyn',
+          rule: {
+            "monday": [ 4, 10, 11, 12 ],
+            "tuesday": [ 3, 10, 11, 12 ],
+            "wednesday": [ 7, 14, 15, 16 ],
+            "thursday": [ 6, 12, 14, 15 ],
+            "saturday": [ 5, 12, 13, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
