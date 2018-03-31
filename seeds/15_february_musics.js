@@ -3460,6 +3460,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 193,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1077671824/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://mavisstaples.bandcamp.com/album/one-true-vine',
+          a_string: 'One True Vine by Mavis Staples',
+          rule: {
+            "monday": [ 16, 10, 12, 18 ],
+            "tuesday": [ 28, 4, 5, 18 ],
+            "wednesday": [ 29, 4, 6, 10 ],
+            "thursday": [ 3, 6, 8, 12 ],
+            "saturday": [ 4, 8, 10, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 194,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=535295904/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://mavisstaples.bandcamp.com/album/you-are-not-alone',
+          a_string: 'You Are Not Alone by Mavis Staples',
+          rule: {
+            "monday": [ 4, 8, 10, 12 ],
+            "tuesday": [ 16, 10, 12, 18 ],
+            "wednesday": [ 28, 4, 5, 18 ],
+            "thursday": [ 29, 4, 6, 10 ],
+            "saturday": [ 3, 6, 8, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 195,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=719780519/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://mavisstaples.bandcamp.com/album/well-never-turn-back',
+          a_string: 'We&#39;ll Never Turn Back by Mavis Staples',
+          rule: {
+            "monday": [ 3, 6, 8, 12 ],
+            "tuesday": [ 4, 8, 10, 12 ],
+            "wednesday": [ 16, 10, 12, 18 ],
+            "thursday": [ 28, 4, 5, 18 ],
+            "saturday": [ 29, 4, 6, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
