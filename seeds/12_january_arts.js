@@ -6704,6 +6704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 336,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/untitled-1995 (1).jpg',
+          title: 'Untitled',
+          artist: 'Harriet Korman',
+          year: '1995',
+          rule: {
+            "monday": [ 25, 26, 17, 21 ],
+            "tuesday": [ 28, 30, 31, 2 ],
+            "wednesday": [ 30, 1, 5, 8 ],
+            "thursday": [ 1, 3, 4, 7 ],
+            "friday": [ 17, 18, 29, 21 ],
+            "saturday": [ 20, 22, 14, 3 ],
+            "sunday": [ 22, 23, 15, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 337,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/rits-rats-2004.jpg',
+          title: 'Rits rats',
+          artist: 'Rune Jansson',
+          year: '2004',
+          rule: {
+            "monday": [ 22, 23, 15, 18 ],
+            "tuesday": [ 25, 26, 17, 21 ],
+            "wednesday": [ 28, 30, 31, 2 ],
+            "thursday": [ 30, 1, 5, 8 ],
+            "friday": [ 1, 3, 4, 7 ],
+            "saturday": [ 17, 18, 29, 21 ],
+            "sunday": [ 20, 22, 14, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 338,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/paesaggio-interiore-apertura-del-diaframma-1921.jpg',
+          title: 'Paesaggio interiore, apertura del diaframma',
+          artist: 'Julius Evola',
+          year: '1921',
+          rule: {
+            "monday": [ 20, 22, 14, 3 ],
+            "tuesday": [ 22, 23, 15, 18 ],
+            "wednesday": [ 25, 26, 17, 21 ],
+            "thursday": [ 28, 30, 31, 2 ],
+            "friday": [ 30, 1, 5, 8 ],
+            "saturday": [ 1, 3, 4, 7 ],
+            "sunday": [ 17, 18, 29, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 339,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/27-october-1949-1949.jpg',
+          title: '27 October 1949',
+          artist: 'Frank Lobdell',
+          year: '1949',
+          rule: {
+            "monday": [ 17, 18, 29, 21 ],
+            "tuesday": [ 20, 22, 14, 3 ],
+            "wednesday": [ 22, 23, 15, 18 ],
+            "thursday": [ 25, 26, 17, 21 ],
+            "friday": [ 28, 30, 31, 2 ],
+            "saturday": [ 30, 1, 5, 8 ],
+            "sunday": [ 1, 3, 4, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 340,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/kinetisches-objekt-1967.jpg',
+          title: 'Kinetisches Objekt',
+          artist: 'Ludwig Wilding',
+          year: '1967',
+          rule: {
+            "monday": [ 1, 3, 4, 7 ],
+            "tuesday": [ 17, 18, 29, 21 ],
+            "wednesday": [ 20, 22, 14, 3 ],
+            "thursday": [ 22, 23, 15, 18 ],
+            "friday": [ 25, 26, 17, 21 ],
+            "saturday": [ 28, 30, 31, 2 ],
+            "sunday": [ 30, 1, 5, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
