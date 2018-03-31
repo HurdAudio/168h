@@ -2380,6 +2380,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 133,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2663500550/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://artesyoficios.bandcamp.com/album/leidan-ep',
+          a_string: 'Leidan EP by Leidan',
+          rule: {
+            "monday": [ 22, 28, 3, 9 ],
+            "tuesday": [ 26, 1, 7, 13 ],
+            "wednesday": [ 25, 31, 6, 11 ],
+            "thursday": [ 24, 30, 5, 11 ],
+            "saturday": [ 21, 29, 4, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 134,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2309034914/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://xqrsns.bandcamp.com/album/lo-fi-beats-un-collage-impresionista',
+          a_string: 'Lo-Fi Beats: Un Collage Impresionista by Flakodiablo',
+          rule: {
+            "monday": [ 21, 29, 4, 10 ],
+            "tuesday": [ 22, 28, 3, 9 ],
+            "wednesday": [ 26, 1, 7, 13 ],
+            "thursday": [ 25, 31, 6, 11 ],
+            "saturday": [ 24, 30, 5, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 135,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3100280079/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://panalrecords.bandcamp.com/album/kamila-govorcin-vibraciones-ep-pnl03',
+          a_string: 'Kamila Govorcin - Vibraciones EP #PNL03 by Kamila Govorcin',
+          rule: {
+            "monday": [ 24, 30, 5, 11 ],
+            "tuesday": [ 21, 29, 4, 10 ],
+            "wednesday": [ 22, 28, 3, 9 ],
+            "thursday": [ 26, 1, 7, 13 ],
+            "saturday": [ 25, 31, 6, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
