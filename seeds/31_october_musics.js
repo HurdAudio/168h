@@ -2596,6 +2596,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 145,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3896925743/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://blystex.bandcamp.com/album/somos-salvajes',
+          a_string: 'SOMOS SALVAJES by Blystex',
+          rule: {
+            "monday": [ 26, 5, 15, 18 ],
+            "tuesday": [ 25, 4, 14, 17 ],
+            "wednesday": [ 24, 3, 14, 16 ],
+            "thursday": [ 28, 7, 17, 20 ],
+            "saturday": [ 27, 6, 16, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 146,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=156314077/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sonidomuchacho.bandcamp.com/album/sm-043-desorden',
+          a_string: 'SM-043 Desorden by La Plata',
+          rule: {
+            "monday": [ 27, 6, 16, 19 ],
+            "tuesday": [ 26, 5, 15, 18 ],
+            "wednesday": [ 25, 4, 14, 17 ],
+            "thursday": [ 24, 3, 14, 16 ],
+            "saturday": [ 28, 7, 17, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 147,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1441323377/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://mujerespodridas.bandcamp.com/album/sobredosis',
+          a_string: 'SOBREDOSIS by MUJERES PODRIDAS',
+          rule: {
+            "monday": [ 29, 8, 18, 21 ],
+            "tuesday": [ 28, 7, 17, 20 ],
+            "wednesday": [ 27, 6, 16, 19 ],
+            "thursday": [ 26, 5, 15, 18 ],
+            "saturday": [ 25, 4, 15, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
