@@ -6304,6 +6304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 316,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/untitled-1997.jpg',
+          title: 'Untitled',
+          artist: 'Dilek Demirci',
+          year: '1997',
+          rule: {
+            "monday": [ 14, 23, 31, 10 ],
+            "tuesday": [ 12, 22, 30, 9 ],
+            "wednesday": [ 11, 21, 29, 8 ],
+            "thursday": [ 10, 20, 28, 7 ],
+            "friday": [ 9, 19, 28, 6 ],
+            "saturday": [ 15, 24, 3, 11 ],
+            "sunday": [ 14, 24, 3, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 317,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/limit-of-time.jpg',
+          title: 'Limit of Time',
+          artist: 'Nina Tokhtaman Valetova',
+          year: '2011',
+          rule: {
+            "monday": [ 14, 24, 3, 11 ],
+            "tuesday": [ 14, 23, 31, 10 ],
+            "wednesday": [ 12, 22, 30, 9 ],
+            "thursday": [ 11, 21, 29, 8 ],
+            "friday": [ 10, 20, 28, 7 ],
+            "saturday": [ 9, 19, 28, 6 ],
+            "sunday": [ 15, 24, 3, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 318,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/a-shift-in-the-stream-1995-97.jpg',
+          title: 'A Shift in the Stream',
+          artist: 'Maya Lin',
+          year: '1995 - 1997',
+          rule: {
+            "monday": [ 15, 24, 3, 11 ],
+            "tuesday": [ 14, 24, 3, 11 ],
+            "wednesday": [ 14, 23, 31, 10 ],
+            "thursday": [ 12, 22, 30, 9 ],
+            "friday": [ 11, 21, 29, 8 ],
+            "saturday": [ 10, 20, 28, 7 ],
+            "sunday": [ 9, 19, 28, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 319,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/imgp-rosa-rot-malwerk-silvia-l-lueftenegger-contemporary-art-design-performance-theater-shoe-6871p.jpg',
+          title: 'IMGP Rosa Rot Malwerk Silvia L Lueftenegger Contemporary Art Design Performance Theater Shoe 6871P Kopie',
+          artist: 'Silvia L. Lueftenegger RosaRot',
+          year: '2007',
+          rule: {
+            "monday": [ 9, 19, 28, 6 ],
+            "tuesday": [ 15, 24, 3, 11 ],
+            "wednesday": [ 14, 24, 3, 11 ],
+            "thursday": [ 14, 23, 31, 10 ],
+            "friday": [ 12, 22, 30, 9 ],
+            "saturday": [ 11, 21, 29, 8 ],
+            "sunday": [ 10, 20, 28, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 320,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/colormirror-bielefeld-1-2-2011.jpg',
+          title: 'Colormirror Bielefeld 1 & 2',
+          artist: 'Regine Schumann',
+          year: '2011',
+          rule: {
+            "monday": [ 10, 20, 28, 7 ],
+            "tuesday": [ 9, 19, 28, 6 ],
+            "wednesday": [ 15, 24, 3, 11 ],
+            "thursday": [ 14, 24, 3, 11 ],
+            "friday": [ 14, 23, 31, 10 ],
+            "saturday": [ 12, 22, 30, 9 ],
+            "sunday": [ 11, 21, 29, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
