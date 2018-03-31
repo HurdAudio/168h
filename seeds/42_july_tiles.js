@@ -522,6 +522,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FDFDFD',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 38,
+          user_id: 1,
+          theme: 'Steam',
+          type: 'week',
+          src_string: '../img/july_tiles/Smoke-Fog-Texture-Black.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '185%',
+          color_dark: '#060606',
+          color_medium: '#6C6C6C',
+          color_light: '#FAFAFA',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
