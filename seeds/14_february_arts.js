@@ -6504,6 +6504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 326,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/Laocoön.jpg',
+          title: 'Laocoön',
+          artist: 'Sanford Biggers',
+          year: '2016',
+          rule: {
+            "monday": [ 27, 6, 14, 24 ],
+            "tuesday": [ 27, 8, 4, 23 ],
+            "wednesday": [ 17, 25, 4, 12 ],
+            "thursday": [ 18, 27, 6, 14 ],
+            "friday": [ 24, 29, 6, 16 ],
+            "saturday": [ 23, 2, 10, 18 ],
+            "sunday": [ 25, 6, 12, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 327,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/DGVqacYUMAAxxhp.jpg',
+          title: 'Exotique Taschen',
+          artist: 'Gene Bilbrew',
+          year: '?',
+          rule: {
+            "monday": [ 25, 6, 12, 18 ],
+            "tuesday": [ 27, 6, 14, 24 ],
+            "wednesday": [ 27, 8, 4, 23 ],
+            "thursday": [ 17, 25, 4, 12 ],
+            "friday": [ 18, 27, 6, 14 ],
+            "saturday": [ 24, 29, 6, 16 ],
+            "sunday": [ 23, 2, 10, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 328,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/8a277663a5b661cda30b49dee2a660d2.jpeg',
+          title: 'dna Sketch IV',
+          artist: 'McArthur Binion',
+          year: '2015',
+          rule: {
+            "monday": [ 23, 2, 10, 18 ],
+            "tuesday": [ 25, 6, 12, 18 ],
+            "wednesday": [ 27, 6, 14, 24 ],
+            "thursday": [ 27, 8, 4, 23 ],
+            "friday": [ 17, 25, 4, 12 ],
+            "saturday": [ 18, 27, 6, 14 ],
+            "sunday": [ 24, 29, 6, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 329,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/a001201356-001.jpg',
+          title: 'unknown title',
+          artist: 'Robert Blackburn',
+          year: '?',
+          rule: {
+            "monday": [ 25, 1, 7, 17 ],
+            "tuesday": [ 24, 3, 11, 19 ],
+            "wednesday": [ 26, 7, 13, 19 ],
+            "thursday": [ 28, 7, 15, 25 ],
+            "friday": [ 28, 9, 5, 24 ],
+            "saturday": [ 18, 26, 5, 13 ],
+            "sunday": [ 19, 28, 7, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 330,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/Blackshearrr.jpg',
+          title: 'Preparing to Sound the Alarm',
+          artist: 'Thomas Blackshear',
+          year: '?',
+          rule: {
+            "monday": [ 19, 28, 7, 15 ],
+            "tuesday": [ 25, 1, 7, 17 ],
+            "wednesday": [ 24, 3, 11, 19 ],
+            "thursday": [ 26, 7, 13, 19 ],
+            "friday": [ 28, 7, 15, 25 ],
+            "saturday": [ 28, 9, 5, 24 ],
+            "sunday": [ 18, 26, 5, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
