@@ -5304,6 +5304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 266,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/sc206951.jpg',
+          title: 'Fishes of Honolulu',
+          artist: 'Hiroshi Yoshida',
+          year: '1925',
+          rule: {
+            "monday": [ 9, 13, 21, 6 ],
+            "tuesday": [ 8, 12, 20, 5 ],
+            "wednesday": [ 7, 9, 19, 4 ],
+            "thursday": [ 6, 9, 18, 3 ],
+            "friday": [ 5, 8, 17, 2 ],
+            "saturday": [ 11, 15, 23, 8 ],
+            "sunday": [ 10, 13, 22, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 267,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/fleurs-et-fruits-1920.jpg',
+          title: 'Fleurs et fruits',
+          artist: 'Seraphine Louis',
+          year: '1920',
+          rule: {
+            "monday": [ 10, 13, 22, 7 ],
+            "tuesday": [ 9, 13, 21, 6 ],
+            "wednesday": [ 8, 12, 20, 5 ],
+            "thursday": [ 7, 9, 19, 4 ],
+            "friday": [ 6, 9, 18, 3 ],
+            "saturday": [ 5, 8, 17, 2 ],
+            "sunday": [ 11, 15, 23, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 268,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/kansas-cornfield-1933.jpg',
+          title: 'Kansas Cornfield',
+          artist: 'John Steuart Curry',
+          year: '1933',
+          rule: {
+            "monday": [ 11, 15, 23, 8 ],
+            "tuesday": [ 10, 13, 22, 7 ],
+            "wednesday": [ 9, 13, 21, 6 ],
+            "thursday": [ 8, 12, 20, 5 ],
+            "friday": [ 7, 9, 19, 4 ],
+            "saturday": [ 6, 9, 18, 3 ],
+            "sunday": [ 5, 8, 17, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 269,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/mermaid-1914.jpg',
+          title: 'Mermaid',
+          artist: 'Koloman Moser',
+          year: '1914',
+          rule: {
+            "monday": [ 5, 8, 17, 2 ],
+            "tuesday": [ 11, 15, 23, 8 ],
+            "wednesday": [ 10, 13, 22, 7 ],
+            "thursday": [ 9, 13, 21, 6 ],
+            "friday": [ 8, 12, 20, 5 ],
+            "saturday": [ 7, 9, 19, 4 ],
+            "sunday": [ 6, 9, 18, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 270,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/child-portrait-1926.jpg',
+          title: 'Child Portrait',
+          artist: 'Nicolae Tonitza',
+          year: '1926',
+          rule: {
+            "monday": [ 6, 9, 18, 3 ],
+            "tuesday": [ 5, 8, 17, 2 ],
+            "wednesday": [ 11, 15, 23, 8 ],
+            "thursday": [ 10, 13, 22, 7 ],
+            "friday": [ 9, 13, 21, 6 ],
+            "saturday": [ 8, 12, 20, 5 ],
+            "sunday": [ 7, 9, 19, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
