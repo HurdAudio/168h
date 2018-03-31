@@ -6104,6 +6104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 306,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/reds654567654.jpg',
+          title: 'Cincinnatti Reds',
+          artist: '?',
+          year: '2015',
+          rule: {
+            "monday": [ 10, 15, 20, 26 ],
+            "tuesday": [ 9, 14, 20, 26 ],
+            "wednesday": [ 8, 13, 19, 25 ],
+            "thursday": [ 13, 19, 24, 1 ],
+            "friday": [ 27, 17, 23, 30 ],
+            "saturday": [ 12, 17, 23, 29 ],
+            "sunday": [ 11, 15, 30, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 307,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/cincinnati-reds-lose-three-in-a-row-to-san-francisco-giants.jpg',
+          title: 'Joey Votto #19 of the Cincinnati Reds reacts after striking out against the San Francisco Giants in Game Five of the National League Division Series at Great American Ball Park on October 11, 2012 in Cincinnati, Ohio.',
+          artist: ' Jonathan Daniel',
+          year: '2012',
+          rule: {
+            "monday": [ 11, 15, 30, 28 ],
+            "tuesday": [ 10, 15, 20, 26 ],
+            "wednesday": [ 9, 14, 20, 26 ],
+            "thursday": [ 8, 13, 19, 25 ],
+            "friday": [ 13, 19, 24, 1 ],
+            "saturday": [ 27, 17, 23, 30 ],
+            "sunday": [ 12, 17, 23, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 308,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/gettyimages-528551302.jpg',
+          title: 'Unfortunate',
+          artist: 'Joe Robbins',
+          year: '2016',
+          rule: {
+            "monday": [ 13, 18, 24, 30 ],
+            "tuesday": [ 12, 16, 1, 29 ],
+            "wednesday": [ 11, 16, 21, 27 ],
+            "thursday": [ 10, 15, 21, 27 ],
+            "friday": [ 9, 14, 20, 26 ],
+            "saturday": [ 14, 20, 25, 2 ],
+            "sunday": [ 28, 18, 24, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 309,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/2F665049766%2F960x0.jpg',
+          title: 'The Cincinnati Reds are a young enough team that the 2017 season must be hitting reset and taking a step back.',
+          artist: 'Andy Lyons',
+          year: '2017',
+          rule: {
+            "monday": [ 28, 18, 24, 1 ],
+            "tuesday": [ 13, 18, 24, 30 ],
+            "wednesday": [ 12, 16, 1, 29 ],
+            "thursday": [ 11, 16, 21, 27 ],
+            "friday": [ 10, 15, 21, 27 ],
+            "saturday": [ 9, 14, 20, 26 ],
+            "sunday": [ 14, 20, 25, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 310,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/0318_cincinnati-reds_400x280.jpg',
+          title: 'Cincinnati Reds',
+          artist: '?',
+          year: '2011',
+          rule: {
+            "monday": [ 14, 20, 25, 2 ],
+            "tuesday": [ 28, 18, 24, 1 ],
+            "wednesday": [ 13, 18, 24, 30 ],
+            "thursday": [ 12, 16, 1, 29 ],
+            "friday": [ 11, 16, 21, 27 ],
+            "saturday": [ 10, 15, 21, 27 ],
+            "sunday": [ 9, 14, 20, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
