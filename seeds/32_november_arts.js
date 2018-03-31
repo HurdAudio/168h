@@ -4704,6 +4704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 236,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/courtyard-xiii-1991.jpg',
+          title: 'Courtyard XIII',
+          artist: 'Katsuhito Nishikawa',
+          year: '1991',
+          rule: {
+            "monday": [ 7, 11, 18, 23 ],
+            "tuesday": [ 6, 11, 17, 22 ],
+            "wednesday": [ 5, 10, 16, 23 ],
+            "thursday": [ 11, 16, 22, 27 ],
+            "friday": [ 10, 15, 20, 26 ],
+            "saturday": [ 9, 14, 20, 24 ],
+            "sunday": [ 8, 11, 19, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 237,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/yin-yang-1992-1.jpg',
+          title: 'Yin-Yang',
+          artist: 'Victor Bonato',
+          year: '1992',
+          rule: {
+            "monday": [ 8, 11, 19, 24 ],
+            "tuesday": [ 7, 11, 18, 23 ],
+            "wednesday": [ 6, 11, 17, 22 ],
+            "thursday": [ 5, 10, 16, 23 ],
+            "friday": [ 11, 16, 22, 27 ],
+            "saturday": [ 10, 15, 20, 26 ],
+            "sunday": [ 9, 14, 20, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 238,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/dark-love-1993.jpg',
+          title: 'Dark Love',
+          artist: 'Pat Lipsky',
+          year: '1993',
+          rule: {
+            "monday": [ 10, 15, 21, 25 ],
+            "tuesday": [ 9, 12, 20, 25 ],
+            "wednesday": [ 8, 12, 19, 24 ],
+            "thursday": [ 7, 12, 18, 23 ],
+            "friday": [ 6, 11, 17, 24 ],
+            "saturday": [ 12, 17, 23, 28 ],
+            "sunday": [ 11, 16, 21, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 239,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/pittura-bl-g-1993.jpg',
+          title: 'Pittura BL.G.',
+          artist: 'Pino Pinelli',
+          year: '1993',
+          rule: {
+            "monday": [ 11, 16, 21, 27 ],
+            "tuesday": [ 10, 15, 21, 25 ],
+            "wednesday": [ 9, 12, 20, 25 ],
+            "thursday": [ 8, 12, 19, 24 ],
+            "friday": [ 7, 12, 18, 23 ],
+            "saturday": [ 6, 11, 17, 24 ],
+            "sunday": [ 12, 17, 23, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 240,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/untitled-1994-3.jpg',
+          title: 'Untitled',
+          artist: 'Moshe Kupferman',
+          year: '1994',
+          rule: {
+            "monday": [ 12, 17, 23, 28 ],
+            "tuesday": [ 11, 16, 21, 27 ],
+            "wednesday": [ 10, 15, 21, 25 ],
+            "thursday": [ 9, 12, 20, 25 ],
+            "friday": [ 8, 12, 19, 24 ],
+            "saturday": [ 7, 12, 18, 23 ],
+            "sunday": [ 6, 11, 17, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
