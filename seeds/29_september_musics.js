@@ -2704,6 +2704,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 151,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4061327368/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tortoise.bandcamp.com/album/beacons-of-ancestorship',
+          a_string: 'Beacons of Ancestorship by Tortoise',
+          rule: {
+            "monday": [ 24, 14, 22, 16 ],
+            "tuesday": [ 23, 13, 21, 16 ],
+            "wednesday": [ 22, 12, 20, 14 ],
+            "thursday": [ 21, 11, 19, 13 ],
+            "saturday": [ 25, 15, 23, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 152,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=95070257/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tortoise.bandcamp.com/album/the-catastrophist',
+          a_string: 'The Catastrophist by Tortoise',
+          rule: {
+            "monday": [ 25, 15, 23, 17 ],
+            "tuesday": [ 24, 14, 22, 16 ],
+            "wednesday": [ 23, 13, 21, 16 ],
+            "thursday": [ 22, 12, 20, 14 ],
+            "saturday": [ 21, 11, 19, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 153,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3227111390/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://wobbler.bandcamp.com/album/rites-at-dawn',
+          a_string: 'Rites At Dawn by Wobbler',
+          rule: {
+            "monday": [ 21, 11, 19, 13 ],
+            "tuesday": [ 25, 15, 23, 17 ],
+            "wednesday": [ 24, 14, 22, 16 ],
+            "thursday": [ 23, 13, 21, 16 ],
+            "saturday": [ 22, 12, 20, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
