@@ -4904,6 +4904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 246,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_St_034.jpg',
+          title: 'Soviet propaganda poster',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 9, 20, 31, 4 ],
+            "tuesday": [ 8, 19, 30, 3 ],
+            "wednesday": [ 7, 18, 29, 2 ],
+            "thursday": [ 6, 17, 28, 1 ],
+            "friday": [ 5, 16, 17, 31 ],
+            "saturday": [ 14, 15, 26, 30 ],
+            "sunday": [ 10, 21, 1, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 247,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_St_033.jpg',
+          title: 'Steelcast the strike detachments, into the through strike brigades',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 10, 21, 1, 5 ],
+            "tuesday": [ 9, 20, 31, 4 ],
+            "wednesday": [ 8, 19, 30, 3 ],
+            "thursday": [ 7, 18, 29, 2 ],
+            "friday": [ 6, 17, 28, 1 ],
+            "saturday": [ 5, 16, 17, 31 ],
+            "sunday": [ 14, 15, 26, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 248,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_St_031.jpg',
+          title: 'By all means, at any cost (we will) eliminate the gap.',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 14, 15, 26, 30 ],
+            "tuesday": [ 10, 21, 1, 5 ],
+            "wednesday": [ 9, 20, 31, 4 ],
+            "thursday": [ 8, 19, 30, 3 ],
+            "friday": [ 7, 18, 29, 2 ],
+            "saturday": [ 6, 17, 28, 1 ],
+            "sunday": [ 5, 16, 17, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 249,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_St_029.jpg',
+          title: 'Building of Socialism',
+          artist: '?',
+          year: '1930',
+          rule: {
+            "monday": [ 5, 16, 17, 31 ],
+            "tuesday": [ 14, 15, 26, 30 ],
+            "wednesday": [ 10, 21, 1, 5 ],
+            "thursday": [ 9, 20, 31, 4 ],
+            "friday": [ 8, 19, 30, 3 ],
+            "saturday": [ 7, 18, 29, 2 ],
+            "sunday": [ 6, 17, 28, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 250,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_St_027.jpg',
+          title: '(We will) Fulfil the plan of the great jobs',
+          artist: 'Gustav Klutsis',
+          year: '?',
+          rule: {
+            "monday": [ 6, 17, 28, 1 ],
+            "tuesday": [ 5, 16, 17, 31 ],
+            "wednesday": [ 14, 15, 26, 30 ],
+            "thursday": [ 10, 21, 1, 5 ],
+            "friday": [ 9, 20, 31, 4 ],
+            "saturday": [ 8, 19, 30, 3 ],
+            "sunday": [ 7, 18, 29, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
