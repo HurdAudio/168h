@@ -3028,6 +3028,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 169,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3834281211/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://hiroshiyoshimura.bandcamp.com/album/music-for-nine-post-cards',
+          a_string: 'Music for Nine Post Cards by Hiroshi Yoshimura',
+          rule: {
+            "monday": [ 24, 27, 3, 14 ],
+            "tuesday": [ 22, 30, 2, 13 ],
+            "wednesday": [ 26, 30, 6, 17 ],
+            "thursday": [ 25, 28, 3, 15 ],
+            "saturday": [ 24, 28, 3, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 170,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=612750820/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ilurecords.bandcamp.com/album/the-greys',
+          a_string: 'The Greys by Tape Sounds',
+          rule: {
+            "monday": [ 24, 28, 3, 15 ],
+            "tuesday": [ 24, 27, 3, 14 ],
+            "wednesday": [ 22, 30, 2, 13 ],
+            "thursday": [ 26, 30, 6, 17 ],
+            "saturday": [ 25, 28, 3, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 171,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2434158596/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://meitei.bandcamp.com/album/meisui',
+          a_string: 'Meisui / 冥水 by Meitei / 冥丁',
+          rule: {
+            "monday": [ 25, 28, 3, 15 ],
+            "tuesday": [ 24, 28, 3, 15 ],
+            "wednesday": [ 24, 27, 3, 14 ],
+            "thursday": [ 22, 30, 2, 13 ],
+            "saturday": [ 26, 30, 6, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
