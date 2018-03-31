@@ -2920,6 +2920,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 163,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1973033173/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://annavonhausswolffmusic.bandcamp.com/album/dead-magic',
+          a_string: 'Dead Magic by Anna von Hausswolff',
+          rule: {
+            "monday": [ 25, 27, 31, 8 ],
+            "tuesday": [ 24, 26, 30, 7 ],
+            "wednesday": [ 23, 25, 29, 6 ],
+            "thursday": [ 22, 23, 28, 5 ],
+            "saturday": [ 21, 23, 27, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 164,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3660724465/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ytst.bandcamp.com/album/dirt',
+          a_string: 'Dirt by Yamantaka//Sonic Titan',
+          rule: {
+            "monday": [ 21, 23, 27, 4 ],
+            "tuesday": [ 25, 27, 31, 8 ],
+            "wednesday": [ 24, 26, 30, 7 ],
+            "thursday": [ 23, 25, 29, 6 ],
+            "saturday": [ 22, 23, 28, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 165,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3056731136/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://quellechris360.bandcamp.com/album/everythings-fine',
+          a_string: 'Everything&#39;s Fine by Jean Grae &amp; Quelle Chris',
+          rule: {
+            "monday": [ 22, 23, 28, 5 ],
+            "tuesday": [ 21, 23, 27, 4 ],
+            "wednesday": [ 25, 27, 31, 8 ],
+            "thursday": [ 24, 26, 30, 7 ],
+            "saturday": [ 23, 25, 29, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
