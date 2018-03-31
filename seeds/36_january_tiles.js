@@ -606,6 +606,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#B1E0FB',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 44,
+          user_id: 1,
+          theme: 'Ice',
+          type: 'friday',
+          src_string: '../img/january_tiles/dionys-moser-deep-blue-ice.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '153%',
+          color_dark: '#031427',
+          color_medium: '#1689CC',
+          color_light: '#96CCE2',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
