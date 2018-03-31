@@ -4504,6 +4504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 226,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/36-03,NewMystAdv-1.jpg',
+          title: 'New Mystery Adventure',
+          artist: 'John Meola',
+          year: '1936',
+          rule: {
+            "monday": [ 5, 18, 26, 1 ],
+            "tuesday": [ 4, 17, 25, 31 ],
+            "wednesday": [ 3, 16, 24, 30 ],
+            "thursday": [ 2, 15, 23, 29 ],
+            "friday": [ 1, 14, 22, 28 ],
+            "saturday": [ 31, 12, 21, 27 ],
+            "sunday": [ 30, 12, 31, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 227,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/28-04-2,AceHi.jpg',
+          title: '2nd Ace-High',
+          artist: 'Arthur R. Mitchell',
+          year: '1928',
+          rule: {
+            "monday": [ 30, 12, 31, 27 ],
+            "tuesday": [ 5, 18, 26, 1 ],
+            "wednesday": [ 4, 17, 25, 31 ],
+            "thursday": [ 3, 16, 24, 30 ],
+            "friday": [ 2, 15, 23, 29 ],
+            "saturday": [ 1, 14, 22, 28 ],
+            "sunday": [ 31, 12, 21, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 228,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/43-11,CrackDet.jpg',
+          title: 'Crack Detective',
+          artist: 'Ed Moline',
+          year: '1943',
+          rule: {
+            "monday": [ 31, 12, 21, 27 ],
+            "tuesday": [ 30, 12, 31, 27 ],
+            "wednesday": [ 5, 18, 26, 1 ],
+            "thursday": [ 4, 17, 25, 31 ],
+            "friday": [ 3, 16, 24, 30 ],
+            "saturday": [ 2, 15, 23, 29 ],
+            "sunday": [ 1, 14, 22, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 229,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/10-00,PopePiusX.JPG',
+          title: 'Portrait Pope Puis X',
+          artist: 'P. J. Monahan',
+          year: '1910',
+          rule: {
+            "monday": [ 1, 14, 22, 28 ],
+            "tuesday": [ 31, 12, 21, 27 ],
+            "wednesday": [ 30, 12, 31, 27 ],
+            "thursday": [ 5, 18, 26, 1 ],
+            "friday": [ 4, 17, 25, 31 ],
+            "saturday": [ 3, 16, 24, 30 ],
+            "sunday": [ 2, 15, 23, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 230,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/37-08,DblActW1.jpg',
+          title: 'Double Action West',
+          artist: 'D. H. Moneypenny',
+          year: '1937',
+          rule: {
+            "monday": [ 2, 15, 23, 29 ],
+            "tuesday": [ 1, 14, 22, 28 ],
+            "wednesday": [ 31, 12, 21, 27 ],
+            "thursday": [ 30, 12, 31, 27 ],
+            "friday": [ 5, 18, 26, 1 ],
+            "saturday": [ 4, 17, 25, 31 ],
+            "sunday": [ 3, 16, 24, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
