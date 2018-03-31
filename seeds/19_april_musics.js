@@ -3244,6 +3244,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 181,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=367153313/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://samgendel.bandcamp.com/album/pass-if-music',
+          a_string: 'Pass If Music by Sam Gendel',
+          rule: {
+            "monday": [ 28, 6, 18, 23 ],
+            "tuesday": [ 27, 5, 17, 22 ],
+            "wednesday": [ 26, 4, 16, 21 ],
+            "thursday": [ 25, 3, 15, 20 ],
+            "saturday": [ 29, 7, 19, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 182,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2639239996/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://omlott.bandcamp.com/album/inhale-volume-i',
+          a_string: 'Inhale - Volume I by Luft (Mats Gustafsson &amp; Erwan Keravec)',
+          rule: {
+            "monday": [ 30, 8, 20, 25 ],
+            "tuesday": [ 29, 7, 19, 24 ],
+            "wednesday": [ 28, 6, 18, 23 ],
+            "thursday": [ 27, 5, 17, 22 ],
+            "saturday": [ 26, 4, 16, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 183,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2866398829/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://omlott.bandcamp.com/album/attack',
+          a_string: 'Attack by Anna Högberg',
+          rule: {
+            "monday": [ 26, 4, 16, 21 ],
+            "tuesday": [ 30, 8, 20, 25 ],
+            "wednesday": [ 29, 7, 19, 24 ],
+            "thursday": [ 28, 6, 18, 23 ],
+            "saturday": [ 27, 5, 17, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
