@@ -5704,6 +5704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 286,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/Seale1.jpg',
+          title: 'Temporal Form no. 10',
+          artist: 'Ansen Seale',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 7, 17, 27, 5 ],
+            "tuesday": [ 16, 26, 6, 4 ],
+            "wednesday": [ 5, 15, 25, 3 ],
+            "thursday": [ 4, 14, 24, 2 ],
+            "friday": [ 10, 20, 30, 6 ],
+            "saturday": [ 9, 19, 29, 7 ],
+            "sunday": [ 8, 18, 28, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 287,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/1382_lg.jpg',
+          title: 'Evergreen',
+          artist: 'Ansen Seale',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 9, 19, 29, 7 ],
+            "tuesday": [ 8, 18, 28, 6 ],
+            "wednesday": [ 17, 27, 7, 5 ],
+            "thursday": [ 6, 16, 26, 4 ],
+            "friday": [ 5, 15, 25, 3 ],
+            "saturday": [ 11, 21, 1, 7 ],
+            "sunday": [ 10, 20, 30, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 288,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/1385_lg.jpg',
+          title: 'Loco Motif',
+          artist: 'Ansen Seale',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 10, 20, 30, 8 ],
+            "tuesday": [ 9, 19, 29, 7 ],
+            "wednesday": [ 8, 18, 28, 6 ],
+            "thursday": [ 17, 27, 7, 5 ],
+            "friday": [ 6, 16, 26, 4 ],
+            "saturday": [ 5, 15, 25, 3 ],
+            "sunday": [ 11, 21, 1, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 289,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/1386_lg.jpg',
+          title: 'Morning Brakes',
+          artist: 'Ansen Seale',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 11, 21, 1, 7 ],
+            "tuesday": [ 10, 20, 30, 8 ],
+            "wednesday": [ 9, 19, 29, 7 ],
+            "thursday": [ 8, 18, 28, 6 ],
+            "friday": [ 17, 27, 7, 5 ],
+            "saturday": [ 6, 16, 26, 4 ],
+            "sunday": [ 5, 15, 25, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 290,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/1384_lg.jpg',
+          title: 'Red, White and Blue',
+          artist: 'Ansen Seale',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 5, 15, 25, 3 ],
+            "tuesday": [ 11, 21, 1, 7 ],
+            "wednesday": [ 10, 20, 30, 8 ],
+            "thursday": [ 9, 19, 29, 7 ],
+            "friday": [ 8, 18, 28, 6 ],
+            "saturday": [ 17, 27, 7, 5 ],
+            "sunday": [ 6, 16, 26, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
