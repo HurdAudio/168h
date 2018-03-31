@@ -2488,6 +2488,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 139,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1549916631/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://blipdiscs.bandcamp.com/album/mubashira-mataali-group',
+          a_string: 'Mubashira Mataali Group by Mubashira Mataali Group',
+          rule: {
+            "monday": [ 17, 28, 9, 11 ],
+            "tuesday": [ 21, 2, 13, 17 ],
+            "wednesday": [ 20, 1, 12, 16 ],
+            "thursday": [ 19, 30, 11, 15 ],
+            "saturday": [ 18, 29, 10, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 140,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=617363688/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://matsulimusic.bandcamp.com/album/one-night-on-earth-music-from-the-strings-of-mali',
+          a_string: 'One Night on Earth: Music from the Strings of Mali by Derek Gripper',
+          rule: {
+            "monday": [ 19, 30, 11, 13 ],
+            "tuesday": [ 18, 29, 10, 12 ],
+            "wednesday": [ 22, 3, 14, 18 ],
+            "thursday": [ 21, 2, 13, 17 ],
+            "saturday": [ 20, 1, 12, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 141,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2428709027/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://matsulimusic.bandcamp.com/album/ndikho-xaba-and-the-natives',
+          a_string: 'Ndikho Xaba and the Natives by Ndikho Xaba',
+          rule: {
+            "monday": [ 20, 1, 12, 16 ],
+            "tuesday": [ 19, 30, 11, 13 ],
+            "wednesday": [ 18, 29, 10, 12 ],
+            "thursday": [ 22, 3, 14, 18 ],
+            "saturday": [ 21, 2, 13, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
