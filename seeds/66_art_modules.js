@@ -784,6 +784,66 @@ exports.seed = function(knex, Promise) {
           public: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 66,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/https___www.picwallz.com_wp-content_uploads_2017_01_wallpaper-cute-cats-and-computers-hd-widescreen-x-litle-with-of-in-high-quality-computer-wallpapers-898x505.jpg',
+          title: 'unknown title',
+          artist: '?',
+          year: '2017',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 67,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/https___www.picwallz.com_wp-content_uploads_2017_01_widescreen-two-cute-cat-hd-screen-litle-pups-on-wallpaper-of-cats-in-full-pics-laptop-898x505.jpg',
+          title: 'unknown title',
+          artist: '?',
+          year: '2017',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 68,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/https___www.picwallz.com_wp-content_uploads_2017_01_backgrounds-cute-cat-hd-background-mobile-com-litle-pups-with-wallpaper-of-cats-in-full-pics-phones-898x505.jpg',
+          title: 'unknown title',
+          artist: '?',
+          year: '2017',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 69,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/https___www.picwallz.com_wp-content_uploads_2017_01_backgrounds-cute-cat-with-wallpaper-of-cats-in-hd-high-quality-for-laptop-898x505.jpg',
+          title: 'unknown title',
+          artist: '?',
+          year: '2017',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 70,
+          user_author_id: 1,
+          theme: 'Cute Kittens',
+          img_path: './img/modules/https___www.picwallz.com_wp-content_uploads_2017_01_backgrounds-cute-cat-amp-pics-hd-only-with-wallpaper-of-cats-in-for-laptop-wallpapers-wallpapershd-898x505.jpg',
+          title: 'unknown tile',
+          artist: '?',
+          year: '2017',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
