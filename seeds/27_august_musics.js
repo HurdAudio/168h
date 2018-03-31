@@ -2812,6 +2812,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 157,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3618978294/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://gerpfastkolektif.bandcamp.com/album/tribute-to-my-bloody-valentine-26th-loveless-purple-loveless',
+          a_string: '[Tribute To] My Bloody Valentine - 26th Loveless // PURPLE LOVELESS by Indonesian Noise',
+          rule: {
+            "monday": [ 4, 12, 25, 24 ],
+            "tuesday": [ 3, 11, 24, 23 ],
+            "wednesday": [ 2, 10, 23, 22 ],
+            "thursday": [ 1, 9, 22, 21 ],
+            "saturday": [ 31, 8, 21, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 158,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3139009821/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://richardramirez.bandcamp.com/album/love-hate-and-dishonor',
+          a_string: 'Love, Hate, and Dishonor by An Innocent Young Throat-Cutter',
+          rule: {
+            "monday": [ 31, 8, 21, 20 ],
+            "tuesday": [ 4, 12, 25, 24 ],
+            "wednesday": [ 3, 11, 24, 23 ],
+            "thursday": [ 2, 10, 23, 22 ],
+            "saturday": [ 1, 9, 22, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 159,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1243994825/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://peltusa.bandcamp.com/album/robs-choice',
+          a_string: 'Rob&#39;s Choice by Pelt',
+          rule: {
+            "monday": [ 1, 9, 22, 21 ],
+            "tuesday": [ 31, 8, 21, 20 ],
+            "wednesday": [ 4, 12, 25, 24 ],
+            "thursday": [ 3, 11, 24, 23 ],
+            "saturday": [ 2, 10, 23, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
