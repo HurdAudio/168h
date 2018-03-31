@@ -5504,6 +5504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 276,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/nicole-boubant-1933.jpg',
+          title: 'Nicole Boubant',
+          artist: 'Wols',
+          year: '1933',
+          rule: {
+            "monday": [ 5, 16, 27, 7 ],
+            "tuesday": [ 11, 22, 2, 12 ],
+            "wednesday": [ 10, 21, 1, 12 ],
+            "thursday": [ 9, 20, 31, 11 ],
+            "friday": [ 8, 19, 30, 31 ],
+            "saturday": [ 7, 18, 28, 30 ],
+            "sunday": [ 6, 17, 28, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 277,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/untitled-2 (1).jpg',
+          title: 'Untitled',
+          artist: 'Adrien Dax',
+          year: '?',
+          rule: {
+            "monday": [ 6, 17, 28, 29 ],
+            "tuesday": [ 5, 16, 27, 7 ],
+            "wednesday": [ 11, 22, 2, 12 ],
+            "thursday": [ 10, 21, 1, 12 ],
+            "friday": [ 9, 20, 31, 11 ],
+            "saturday": [ 8, 19, 30, 31 ],
+            "sunday": [ 7, 18, 28, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 278,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/partage-1963.jpg',
+          title: 'Partage',
+          artist: 'Aurelie Nemours',
+          year: '1963',
+          rule: {
+            "monday": [ 7, 18, 28, 30 ],
+            "tuesday": [ 6, 17, 28, 29 ],
+            "wednesday": [ 5, 16, 27, 7 ],
+            "thursday": [ 11, 22, 2, 12 ],
+            "friday": [ 10, 21, 1, 12 ],
+            "saturday": [ 9, 20, 31, 11 ],
+            "sunday": [ 8, 19, 30, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 279,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/composition-1938.jpg',
+          title: 'Composition',
+          artist: 'Gaston Chaissac',
+          year: '1938',
+          rule: {
+            "monday": [ 8, 19, 30, 31 ],
+            "tuesday": [ 7, 18, 28, 30 ],
+            "wednesday": [ 6, 17, 28, 29 ],
+            "thursday": [ 5, 16, 27, 7 ],
+            "friday": [ 11, 22, 2, 12 ],
+            "saturday": [ 10, 21, 1, 12 ],
+            "sunday": [ 9, 20, 31, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 280,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/le-buisson-ardent-1955.jpg',
+          title: 'Le buisson ardent',
+          artist: 'Jean Bertholle',
+          year: '1955',
+          rule: {
+            "monday": [ 10, 21, 1, 12 ],
+            "tuesday": [ 9, 20, 31, 1 ],
+            "wednesday": [ 8, 19, 29, 31 ],
+            "thursday": [ 7, 18, 29, 30 ],
+            "friday": [ 6, 17, 28, 8 ],
+            "saturday": [ 12, 23, 3, 13 ],
+            "sunday": [ 11, 22, 2, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
