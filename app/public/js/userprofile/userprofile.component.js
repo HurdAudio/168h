@@ -235,6 +235,41 @@
       vm.deleteTimeblockShare = deleteTimeblockShare;
       vm.timeblockShareDeleteDeny = timeblockShareDeleteDeny;
       vm.timeblockShareDeleteConfirm = timeblockShareDeleteConfirm;
+      vm.addNewComment = addNewComment;
+
+      function addNewComment(messageId) {
+        let newCommentButton = document.getElementById('newCommentButton' + messageId);
+        let index = 0;
+        let subObj = {
+          user_id: currentUserId,
+          message_id: messageId,
+          comment: ''
+        };
+        for (let i = 0; i < vm.userMessages.length; i++) {
+          if (parseInt(vm.userMessages[i].id) === parseInt(messageId)) {
+            index = i;
+          }
+        }
+        $http.post('/comments', subObj)
+        .then(commentData=>{
+          let comment = commentData.data[0];
+          console.log(comment);
+          comment.cleanDate = cleanDateHoliday(comment.created_at) + ' - ' + timeDate(comment.updated_at);
+          newCommentButton.setAttribute("style", "visibility: hidden;");
+          if (vm.userMessages[index].comments === undefined) {
+            vm.userMessages[index].comments = [];
+          }
+          vm.userMessages[index].comments.push(comment);
+          pullCommenterUserData(comment, (vm.userMessages[index].comments.length - 1), index);
+          setTimeout(()=>{
+            userEditComment(comment.id);
+            console.log(document.getElementById('commentSpace').clientHeight);
+            document.getElementById('commentSpace').scrollTop = (document.getElementById('commentSpace').scrollHeight - document.getElementById('commentSpace').clientHeight);
+            document.getElementById('thisIsTheCommentEditor' + comment.id).focus();
+          }, 100);
+
+        });
+      }
 
       function timeblockShareDeleteConfirm(timeblockShareId) {
         let thisIsTimeblockShareDeleteDiv = document.getElementById("thisIsTimeblockShareDeleteDiv" + timeblockShareId);
@@ -773,8 +808,38 @@
         deleteMessageConfirm.setAttribute("style", "display: initial;");
       }
 
+      function deleteTheEmptyComment(commentId) {
+        $http.delete(`/comments/${commentId}`)
+        .then(commentData=>{
+          let comment = commentData.data;
+          for (let i = 0; i < vm.userMessages.length; i++) {
+            if (parseInt(comment.message_id) === parseInt(vm.userMessages[i].id)) {
+              for (let j = 0; j < vm.userMessages[i].comments.length; j++) {
+                if (parseInt(comment.id) === parseInt(vm.userMessages[i].comments[j].id)) {
+                  vm.userMessages[i].comments.splice(j, 1);
+                }
+              }
+            }
+          }
+        });
+      }
+
+      function removeEmptyComments() {
+        $http.get(`/commentsbyuser/${currentUserId}`)
+        .then(userCommentsData=>{
+          let userComments = userCommentsData.data;
+          if (userComments.length > 0) {
+            for (let i = 0; i < userComments.length; i++) {
+              if (userComments[i].comment === '') {
+                deleteTheEmptyComment(userComments[i].id);
+              }
+            }
+          }
+        });
+      }
+
       function userEditCommentCompleted(commentId) {
-        console.log(commentId);
+
         let thisIsTheCommentEditor = document.getElementById('thisIsTheCommentEditor' + commentId);
         let thisIsTheComment = document.getElementById('thisIsTheComment' + commentId);
         let thisIsCommentEditDoneDiv = document.getElementById('thisIsCommentEditDoneDiv' + commentId);
@@ -785,12 +850,15 @@
         $http.patch(`/comments/${commentId}`, subObj)
         .then(commentData=>{
           let comment = commentData.data;
+          let newCommentButton = document.getElementById('newCommentButton' + comment.message_id);
           console.log(comment);
           thisIsTheComment.innerHTML = comment.comment;
           thisIsTheComment.setAttribute("style", "visibility: visible;");
           thisIsTheCommentEditor.setAttribute("style", "display: none;");
           thisIsCommentEditDoneDiv.setAttribute("style", "display: none;");
           editDeleteUserComments.setAttribute("style", "display: initial;");
+          newCommentButton.setAttribute("style", "visibility: visible;");
+          removeEmptyComments();
         });
 
 

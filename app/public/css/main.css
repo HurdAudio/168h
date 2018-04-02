@@ -7422,8 +7422,19 @@ footer img {
   background: -moz-linear-gradient(135deg, #22ac44, #abdada);
   background: linear-gradient(135deg, #22ac44, #abdada);
   border-radius: 5px;
-  height: 3em;
-  padding-left: 2vmin;
+  height: 4em;
+  padding-left: 4vmin;
+}
+
+.commentsBar h1 {
+  /* float: left; */
+  margin-left: 0.5vmin;
+}
+
+.commentsBar a {
+  float: right;
+  margin-right: 1vmin;
+  margin-top: -6vmin;
 }
 
 .timeblockShareCommentsBar {

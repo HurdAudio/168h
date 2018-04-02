@@ -3970,11 +3970,11 @@
           <h3>Delete message forever?</h3>
           <a class="btn" href="#" ng-click="$ctrl.userMessageDeleteCancel(message.id)">no</a>
           <a class="btn" href="#" ng-click="$ctrl.userMessageDeleteConfirmClick(message.id)">yes</a>
-        </div>
-        <a href=""><h3>comment</h3></a>
+        </div><br><br><br>
         <div class="commentsBar">
 
           <h1>Comments:</h1>
+          <a class="btn" href="#" ng-click="$ctrl.addNewComment(message.id)" id="newCommentButton{{message.id}}">add</a>
         </div>
         <main ng-repeat="comment in message.comments | orderBy : $ctrl.sortBy" id="commentSpace">
           <img src="{{comment.commenterImg}}"><p>From: {{comment.commenterName}}</p>
