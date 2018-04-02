@@ -372,9 +372,10 @@
               $http.post('/messages', messageSubObj)
               .then(messageData=>{
                 let message = messageData.data[0];
+                let cleanerMessage = cleanDateHoliday(message.created_at) + ' - ' + timeDate(message.created_at);
                 let userMessage = {
                   id: message.id,
-                  cleanDate: cleanDateHoliday(message.created_at) + ' - ' + timeDate(message.updated_at),
+                  cleanDate: cleanerMessage,
                   message: message.message,
                   senderImg: user.user_avatar_url,
                   senderName: user.name,
@@ -382,6 +383,7 @@
                 };
                 vm.userMessages.unshift(userMessage);
                 userEditMessage(message.id);
+
               });
             });
 
@@ -491,9 +493,10 @@
           $http.post('/messages', messageSubObj)
           .then(messageData=>{
             let message = messageData.data[0];
+            let cleaner = new Date();
             let userMessage = {
               id: message.id,
-              cleanDate: cleanDateHoliday(message.created_at) + ' - ' + timeDate(message.updated_at),
+              cleanDate: cleanDateHoliday(cleaner) + ' - ' + timeDate(cleaner),
               message: message.message,
               senderImg: user.user_avatar_url,
               senderName: user.name,
@@ -541,9 +544,10 @@
               $http.post('/messages', messageSub)
               .then(messageData=>{
                 let message = messageData.data[0];
+                let cleaner = new Date();
                 let userMessage = {
                   id: message.id,
-                  cleanDate: cleanDateHoliday(message.created_at) + ' - ' + timeDate(message.updated_at),
+                  cleanDate: cleanDateHoliday(cleaner) + ' - ' + timeDate(cleaner),
                   message: message.message,
                   senderImg: user.user_avatar_url,
                   senderName: user.name,
@@ -1220,9 +1224,11 @@
       }
 
       function userEditMessageCompleted(messageId) {
+        // let update = new Date();
         let thisIsTheMessageEditor = document.getElementById('thisIsTheMessageEditor' + messageId);
         let subObj = {
-          message: thisIsTheMessageEditor.value
+          message: thisIsTheMessageEditor.value,
+          updated_at: new Date()
         };
         $http.patch(`/messages/${messageId}`, subObj)
         .then(messageData=>{
@@ -1235,6 +1241,13 @@
           for (let i = 0; i < vm.userMessages.length; i++) {
             if (message.id === vm.userMessages[i].id) {
               thisIsTheMessage.innerHTML = message.message;
+              let created = new Date(message.created_at);
+              let updated = new Date(message.updated_at);
+              if (updated.getTime() <= (created.getTime() + 15000)) {
+                vm.userMessages[i].cleanDate = cleanDateHoliday(message.created_at) + ' - ' + timeDate(message.created_at);
+              } else {
+                vm.userMessages[i].cleanDate = cleanDateHoliday(message.created_at) + ' - ' + timeDate(message.created_at) + ' - - - updated at ' + cleanDateHoliday(message.updated_at) + ' - ' + timeDate(message.updated_at);
+              }
             }
           }
           cleanBlankMessages();
@@ -13105,6 +13118,11 @@
             return(msg.message_id === message.id);
           });
           if (messageComments.length > 0) {
+            if (messageComments.length === 1) {
+              vm.userMessages[index].commentsLength = '1 comment';
+            } else {
+              vm.userMessages[index].commentsLength = messageComments.length + ' comments';
+            }
             messageComments = messageComments.sort((a, b)=>{
               return((new Date(a.created_at)) - (new Date(b.created_at)));
             });
@@ -13117,6 +13135,8 @@
               pullCommenterUserData(messageComments[i], i, index);
               manageCommentEditButtons(messageComments[i], i, index);
             }
+          } else {
+            vm.userMessages[index].commentsLength = '0 comments';
           }
         });
       }
@@ -13520,12 +13540,30 @@
       }
 
       function retrieveUserMessages() {
+        let expireTime = new Date();
+        expireTime.setDate(expireTime.getDate() - 30);
+        let updated = new Date();
         $http.get(`/users/${currentUserId}`)
         .then(userData=>{
           let user = userData.data;
           $http.get('/messages')
           .then(allMessagesData=>{
             let allMessages = allMessagesData.data;
+            console.log(expireTime);
+            if (allMessages.length > 0) {
+              for (let i = 0; i < allMessages.length; i++) {
+                updated = new Date(allMessages[i].updated_at);
+                if (updated.getTime() < expireTime.getTime()) {
+                  allMessages.splice(i, 1);
+                  i--;
+                }
+              }
+            }
+            //filter out any messages not updated in the last 30 days.
+            // let allMessages = allMessages.filter(entry=>{
+            //   updated = new Date(entry.updated_at);
+            //   return(updated.getTime() > expireTime.getTime());
+            // });
             let directMessages = allMessages.filter(note=>{
               return((!note.public) && ((parseInt(note.to_user_id) === parseInt(currentUserId)) || (parseInt(note.user_id) === parseInt(currentUserId))));
             });
@@ -13546,12 +13584,22 @@
                 return((new Date(b.created_at)) - (new Date(a.created_at)));
               });
             }
+            let createTime;
+            let updateTime;
             vm.userMessages = [];
             vm.userMessages = directMessages.concat(friendMessages);
             if (vm.userMessages.length > 0) {
               for (let i = 0; i < vm.userMessages.length; i++) {
                 getProfileImageAndName(vm.userMessages[i], i);
-                vm.userMessages[i].cleanDate = cleanDateHoliday(vm.userMessages[i].created_at) + ' - ' + timeDate(vm.userMessages[i].updated_at);
+                createTime = new Date(vm.userMessages[i].created_at);
+                updateTime = new Date(vm.userMessages[i].updated_at);
+
+
+                if (updateTime.getTime() <= (updateTime.getTime() + 15000)) {
+                  vm.userMessages[i].cleanDate = cleanDateHoliday(vm.userMessages[i].created_at) + ' - ' + timeDate(vm.userMessages[i].updated_at);
+                } else {
+                  vm.userMessages[i].cleanDate = cleanDateHoliday(vm.userMessages[i].created_at) + ' - ' + timeDate(vm.userMessages[i].created_at) + ' - - - updated at ' + cleanDateHoliday(vm.userMessages[i].updated_at) + ' - ' + timeDate(vm.userMessages[i].updated_at);
+                }
                 retrieveComments(vm.userMessages[i], i);
               }
               setMessageCRUDStates();

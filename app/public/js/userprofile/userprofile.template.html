@@ -3952,13 +3952,13 @@
           </div><br><br><br>
         </div>
       </div>
-      <main ng-repeat="message in $ctrl.userMessages | orderBy : $ctrl.sortBy">
+      <main ng-repeat="message in $ctrl.userMessages | orderBy : $ctrl.sortBy" class="messageCell">
         <h3>Message:</h3>
         <img src="{{message.senderImg}}">
         <p>From: {{message.senderName}}<br><br>
         To: {{message.recipientName}}</p><br>
         <p>on {{message.cleanDate}}</p><br><br><br><br><br><br><br>
-        <h3 id="thisIsTheMessage{{message.id}}">{{message.message}}</h3><br><br>
+        <br><h3 id="thisIsTheMessage{{message.id}}">{{message.message}}</h3><br><br>
         <textarea id="thisIsTheMessageEditor{{message.id}}" class="pure-input-1" rows="5"></textarea>
         <div class="thisIsMessageEditDoneDiv" id="thisIsMessageEditDoneDiv{{message.id}}"><a class="btn" id="thisIsTheMessageEditorDoneButton{{message.id}}" href="#" ng-click="$ctrl.userEditMessageCompleted(message.id)">done</a></div>
         <div id="editDeleteDiv{{message.id}}" class="messageEditDelete">
@@ -3973,9 +3973,10 @@
         </div><br><br><br>
         <div class="commentsBar">
 
-          <h1>Comments:</h1>
+          <h3>Comments:</h3>
           <a class="btn" href="#" ng-click="$ctrl.addNewComment(message.id)" id="newCommentButton{{message.id}}">add</a>
         </div>
+        <h3>{{message.commentsLength}}</h3>
         <main ng-repeat="comment in message.comments | orderBy : $ctrl.sortBy" id="commentSpace">
           <img src="{{comment.commenterImg}}"><p>From: {{comment.commenterName}}</p>
           <p>on {{comment.cleanDate}}</p><br><br><br><br><br><br><br>
@@ -3994,6 +3995,7 @@
             <a class="btn" href="#" ng-click="$ctrl.userCommentDeleteConfirmClick(comment.id)">yes</a>
           </div>
         </main>
+        <br><br><br><br>
 
       </main>
 

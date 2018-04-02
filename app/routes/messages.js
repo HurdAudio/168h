@@ -60,7 +60,8 @@ router.patch('/:id', (req, res, next) => {
     user_id: req.body.user_id,
     to_user_id: req.body.to_user_id,
     message: req.body.message,
-    public: req.body.public
+    public: req.body.public,
+    updated_at: req.body.updated_at
   }, '*')
     .then((results)=>{
        res.status(200).send(results[0]);

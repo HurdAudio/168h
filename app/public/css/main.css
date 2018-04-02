@@ -7314,6 +7314,7 @@ footer img {
   background-repeat: repeat;
   background-size: 75%;
   padding-bottom: 5em;
+  padding-left: 8vmin;
 }
 
 #messagesSpace {
@@ -7416,12 +7417,12 @@ footer img {
 .commentsBar {
   font-family: 'Asul', serif;
   font-size: 18px
-  background: #22ac44;
+  /* background: #22ac44;
   background-color: -webkit-linear-gradient(135deg, #22ac44, #abdada);
   background: -o-linear-gradient(135deg, #22ac44, #abdada);
   background: -moz-linear-gradient(135deg, #22ac44, #abdada);
   background: linear-gradient(135deg, #22ac44, #abdada);
-  border-radius: 5px;
+  border-radius: 5px; */
   height: 4em;
   padding-left: 4vmin;
 }
@@ -7434,7 +7435,7 @@ footer img {
 .commentsBar a {
   float: right;
   margin-right: 1vmin;
-  margin-top: -6vmin;
+  margin-top: -3vmin;
 }
 
 .timeblockShareCommentsBar {
@@ -7511,6 +7512,10 @@ footer img {
 .profileDeleteOption a {
   margin-right: 4vmin;
   float: right;
+}
+
+.messageCell {
+  border: solid 2px #000000;
 }
 
 
