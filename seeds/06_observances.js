@@ -9596,6 +9596,39 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 614,
+          user_id: 1,
+          name: 'Misha Mengelberg (piano) born 1935',
+          color: '#613F12',
+          picture: './img/musicians/A-253447-1488582152-1957.jpg',
+          day_of: new Date ('1935-06-05T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: true,
+          override_content: {
+            "sources": [ 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp' ],
+            "src_strings": [ 'https://bandcamp.com/EmbeddedPlayer/album=2468601594/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=2350082314/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=3198590859/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=3652037694/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/' ],
+            "href_strings": [ 'http://destination-out.bandcamp.com/album/impromptus', 'http://idischidiangelica.bandcamp.com/album/s-t', 'http://abbaarsighennemanwig.bandcamp.com/album/sliptong', 'http://muteantsoundsnetlabel.bandcamp.com/album/humanplexity' ],
+            "a_strings": [ 'Impromptus by MISHA MENGELBERG', 'S/T by Misha Mengelberg', 'Sliptong by Ab Baars, Ig Henneman, Misha Mengelberg', 'HUMANPLEXITY by KENNY MILLIONS - MISHA MENGELBERG - HAN BENNINK' ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 615,
+          user_id: 1,
+          name: 'The world ended on this day in 1908 as predicted by Michael Paget Baxter in Future Worlds of Prophecy (published in 1894).',
+          color: '#19516C',
+          picture: './img/doomsday/51dHSXwf0zL._SX346_BO1,204,203,200_.jpg',
+          day_of: new Date ('1908-04-23T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
