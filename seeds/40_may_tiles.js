@@ -564,6 +564,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FFFFFC',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 41,
+          user_id: 1,
+          theme: 'Greenery',
+          type: 'sunday',
+          src_string: '../img/may_tiles/585958115-desktop-wallpaper-1280x1024.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '130%',
+          color_dark: '#111409',
+          color_medium: '#B791A3',
+          color_light: '#FFFD28',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
