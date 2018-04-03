@@ -480,6 +480,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#F7F8F3',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 35,
+          user_id: 1,
+          theme: 'Monochromatic',
+          type: 'saturday',
+          src_string: '../img/november_tiles/Mono-Landscape-Photo-Argentina-Jakub-Polomski-11ARC1087.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '150%',
+          color_dark: '#152026',
+          color_medium: '#758795',
+          color_light: '#DFE4EC',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
