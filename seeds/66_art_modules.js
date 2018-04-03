@@ -8,7 +8,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 1,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/cute-kittens-30-57b30ad41bc90__605.jpg',
           title: 'Purrrfect',
           artist: 'unknown artist',
@@ -20,7 +20,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 2,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/cute-kittens-7-57b30aa10707a__605.jpg',
           title: 'Here We See A Baby Wigglefloof Cleaning Its Tiny Squishbeans',
           artist: 'unknown artist',
@@ -32,7 +32,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 3,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/cute-kittens-64-57b32778a2fe1__605.jpg',
           title: 'Gimo, The Cat With The Biggest Eyes Ever',
           artist: 'unknown artist',
@@ -44,7 +44,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 4,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/cute-kittens-29-57b30ad229af3__605.jpg',
           title: 'Those Baby-tiger Paws',
           artist: 'unknown artist',
@@ -56,7 +56,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 5,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/cute-kittens-9-57b30aa5797eb__605.jpg',
           title: 'Commence Butt Wiggle',
           artist: 'unknown artist',
@@ -68,7 +68,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 6,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/27578350_187399011863664_1997306547377537024_n.jpg',
           title: 'margoylemonday',
           artist: 'Gary and supporting cast',
@@ -80,7 +80,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 7,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/27893604_340165616484522_7717492061187866624_n.jpg',
           title: 'Junior Miss Fun Police is here to protect, serve and stop you from fucking up the bathroom rug',
           artist: 'Gary and supporting cast',
@@ -92,7 +92,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 8,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/27577140_1773096326327941_8900686075844886528_n.jpg',
           title: 'It was a perfect day to slobber all over yourself',
           artist: 'Gary and supporting cast',
@@ -104,7 +104,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 9,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/27573874_283145278883286_2726589352833449984_n.jpg',
           title: 'When Hank is not strolling down the psycho path, he loves to be kissed and will lean into your face. Congrats to the 5% who guessed correctly.',
           artist: 'Gary and supporting cast',
@@ -116,7 +116,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 10,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/27574124_454217818358867_5470114251341299712_n.jpg',
           title: 'Who is the only member of team Gary that actually likes to receive kisses from the parents?',
           artist: 'Gary and supporting cast',
@@ -128,7 +128,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 11,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/cute-kittens-11-57b30aa95f3c6__605.jpg',
           title: 'Little Evil Kitty',
           artist: 'unknown artist',
@@ -140,7 +140,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 12,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/cute-kittens-4-57b30a939dff5__605.jpg',
           title: 'Sweet Dreams',
           artist: 'unknown artist',
@@ -152,7 +152,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 13,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/cute-kittens-10-57b30aa763583__605.jpg',
           title: 'We Found Him Crying All Alone In The Grass. He Was Only Two Weeks Old And Malnourished. This Was Taken After We Removed All The Ticks And Fleas And Gave Him A Bath',
           artist: 'Inga Ko',
@@ -164,7 +164,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 14,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/cute-kittens-31-57b30ad5ccbc8__605.jpg',
           title: 'Whatcha Doin, Human?',
           artist: 'unknown artist',
@@ -176,7 +176,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 15,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/cute-kittens-69-57b32c431e8a7__605.jpg',
           title: 'Ball of Kitten',
           artist: 'unknown artist',
@@ -188,7 +188,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 16,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/cute-kittens-67-57b32a998544a__605.jpg',
           title: 'Kiwi Kitten',
           artist: 'unknown artist',
@@ -200,7 +200,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 17,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/cute-kittens-68-57b32ad504168__605.jpg',
           title: 'Happy Sleeping Yoga Kitten',
           artist: 'unknown artist',
@@ -212,7 +212,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 18,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/cute-kittens-63-57b326d0e181d__605.jpg',
           title: 'Sleeping With A Friend',
           artist: 'unknown artist',
@@ -224,7 +224,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 19,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/cute-kittens-8-57b30aa345790__605.jpg',
           title: 'Daisy, Probably The World’s Cutest Kitten',
           artist: 'unkown artist',
@@ -236,7 +236,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 20,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/cute-kittens-33-57b31e94e94e6__605.jpg',
           title: 'Bat Cat',
           artist: 'unknown artist',
@@ -248,7 +248,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 21,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/catbuckets.jpg',
           title: 'Try Not to Say Aww Challlenge 2016',
           artist: '?',
@@ -260,7 +260,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 22,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/Cm2okj0WcAE5tC9.jpg',
           title: 'Awww, LOVE!',
           artist: '?',
@@ -272,7 +272,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 23,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/Cm2MMnBWgAEcPQN.jpg',
           title: 'Look at that face. Crazy Cute!',
           artist: '?',
@@ -284,7 +284,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 24,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/Cm1v0z4WcAAwZLI.jpg',
           title: 'cutest kitten EVER',
           artist: '?',
@@ -296,7 +296,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 25,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/Cmz1JmMWYAABeFW.jpg',
           title: 'me while ur gone',
           artist: '?',
@@ -308,7 +308,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 26,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/IMG_0742.jpg',
           title: 'Maya in Bed',
           artist: 'Ginger DeRusha',
@@ -320,7 +320,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 27,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/IMG_0315.jpg',
           title: 'Little Cat in the Bath',
           artist: 'Ginger DeRusha',
@@ -332,7 +332,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 28,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/IMG_0007.jpg',
           title: 'Nellie Wants to Play',
           artist: 'Ginger DeRusha',
@@ -344,7 +344,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 29,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/FullSizeR.jpg',
           title: 'The Purrfect Aesthetic',
           artist: '?',
@@ -356,7 +356,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 30,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/IMG_0959.jpg',
           title: 'Happy Happy Meal',
           artist: 'Ginger DeRusha',
@@ -368,7 +368,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 31,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/To-infinity-and-beyond.jpeg',
           title: 'To Infinity and Beyond',
           artist: '?',
@@ -380,7 +380,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 32,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/A-Cats-Life.jpeg',
           title: 'A Cat\'s Life',
           artist: '?',
@@ -392,7 +392,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 33,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/Simon-av-Flamingo.jpg',
           title: 'Simon av Flamingo',
           artist: '?',
@@ -404,7 +404,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 34,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/Guggugg.jpg',
           title: 'CutestPaw Editorial:',
           artist: '?',
@@ -416,7 +416,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 35,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/Kitty-Coat.jpg',
           title: 'Kitty Coat',
           artist: '?',
@@ -428,7 +428,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 36,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/iber_76493_web.900x600.jpg',
           title: 'Santiago, Chile Balancer',
           artist: '?',
@@ -440,7 +440,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 37,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/spl_z934629-domestic_media.900x600.jpg',
           title: 'Superstitious?',
           artist: '?',
@@ -452,7 +452,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 38,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/min_00900040.900x600.jpg',
           title: 'Snow Cat',
           artist: '?',
@@ -464,7 +464,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 39,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/tip_381bio1590_web.900x600.jpg',
           title: 'Day of the Black Cat',
           artist: 'Klein J. - L. & Hubert',
@@ -476,7 +476,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 40,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/20045518202_8.900x600.jpg',
           title: 'Tapetum Lucidum',
           artist: '?',
@@ -488,7 +488,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 41,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/294106-cute-cat.jpg',
           title: 'Cute Cat',
           artist: '?',
@@ -500,7 +500,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 42,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/294089-cute-cat.jpg',
           title: 'Cute Cat',
           artist: 'Kyle Rooney ',
@@ -512,7 +512,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 43,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/269732-cat-wallpapers.jpg',
           title: 'Cat Wallpaper',
           artist: 'Sarah Michelle',
@@ -524,7 +524,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 44,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/269629-cat-image.jpg',
           title: 'Cat',
           artist: 'Zalman Lent',
@@ -536,7 +536,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 45,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/269734-cat-wallpapers.jpg',
           title: 'Cat Wallpaper',
           artist: 'Colin Fichtner',
@@ -548,7 +548,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 46,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/cute_kitten_1.jpg',
           title: 'Cute Kitten',
           artist: 'Ivan Nava',
@@ -560,7 +560,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 47,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/cute_kitten_2.jpg',
           title: 'Blue Gaze',
           artist: 'Douzy',
@@ -572,7 +572,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 48,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/cute_kitten_3.jpg',
           title: 'title unknown',
           artist: '?',
@@ -584,7 +584,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 49,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/cute_kitten_4.jpg',
           title: 'title unknown',
           artist: '?',
@@ -596,7 +596,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 50,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/cute_kitten_5.jpg',
           title: 'title unknown',
           artist: '?',
@@ -608,7 +608,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 51,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/f60130d3-6d29-4a00-a07e-11ec943b0c62.jpg',
           title: 'Smiling Cat',
           artist: '?',
@@ -620,7 +620,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 52,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/993bb212-bae5-47f5-985b-7e8c1774195b.jpg',
           title: 'Smiling Cat',
           artist: '?',
@@ -632,7 +632,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 53,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/b156dc03-63c2-471f-b061-6d759a318da7.jpg',
           title: 'Smiling Cat',
           artist: '?',
@@ -644,7 +644,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 54,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/623243b4-6e86-4c45-9474-8b02f67143ed.jpg',
           title: 'Smiling Kitten',
           artist: '?',
@@ -656,7 +656,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 55,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/fe8841d5-bd9e-4d4f-86a2-f20bbb7b233b.jpg',
           title: 'Smiling Cat',
           artist: '?',
@@ -668,7 +668,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 56,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/cute_cat_06_hd_pictures_168991.jpg',
           title: 'Cute Cat',
           artist: 'ZCool',
@@ -680,7 +680,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 57,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/cute_cat_514193.jpg',
           title: 'Cute Cat',
           artist: 'Helgi Halldórsson',
@@ -692,7 +692,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 58,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/cute_kitty_hd_picture_168921.jpg',
           title: 'Cute Kitty',
           artist: 'buou866',
@@ -704,7 +704,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 59,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/cat_cuteness_219859.jpg',
           title: 'Cat Cuteness',
           artist: 'ninihouse',
@@ -716,7 +716,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 60,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/two_young_cats_189918.jpg',
           title: 'Two Young Cats',
           artist: 'Petr Kratochvil',
@@ -728,7 +728,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 61,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/shoreditch-cat.jpg',
           title: 'Shoreditch Cat',
           artist: '?',
@@ -740,7 +740,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 62,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/Mafia-cats.jpg',
           title: 'Mafia Cats',
           artist: '?',
@@ -752,7 +752,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 63,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/winkcat.jpg',
           title: 'Swiss Cat',
           artist: '?',
@@ -764,7 +764,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 64,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/mexican-cat-drinking-tequila-600x450-e1329934054533.jpg',
           title: 'Mexican Cat Drinking Tequila',
           artist: '?',
@@ -776,7 +776,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 65,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/refer-e1329931959958.jpg',
           title: 'Snow Cat',
           artist: '?',
@@ -788,7 +788,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 66,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/https___www.picwallz.com_wp-content_uploads_2017_01_wallpaper-cute-cats-and-computers-hd-widescreen-x-litle-with-of-in-high-quality-computer-wallpapers-898x505.jpg',
           title: 'unknown title',
           artist: '?',
@@ -800,7 +800,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 67,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/https___www.picwallz.com_wp-content_uploads_2017_01_widescreen-two-cute-cat-hd-screen-litle-pups-on-wallpaper-of-cats-in-full-pics-laptop-898x505.jpg',
           title: 'unknown title',
           artist: '?',
@@ -812,7 +812,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 68,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/https___www.picwallz.com_wp-content_uploads_2017_01_backgrounds-cute-cat-hd-background-mobile-com-litle-pups-with-wallpaper-of-cats-in-full-pics-phones-898x505.jpg',
           title: 'unknown title',
           artist: '?',
@@ -824,7 +824,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 69,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/https___www.picwallz.com_wp-content_uploads_2017_01_backgrounds-cute-cat-with-wallpaper-of-cats-in-hd-high-quality-for-laptop-898x505.jpg',
           title: 'unknown title',
           artist: '?',
@@ -836,11 +836,71 @@ exports.seed = function(knex, Promise) {
         {
           id: 70,
           user_author_id: 1,
-          theme: 'Cute Kittens',
+          theme: 'Cute Cats',
           img_path: './img/modules/https___www.picwallz.com_wp-content_uploads_2017_01_backgrounds-cute-cat-amp-pics-hd-only-with-wallpaper-of-cats-in-for-laptop-wallpapers-wallpapershd-898x505.jpg',
-          title: 'unknown tile',
+          title: 'unknown title',
           artist: '?',
           year: '2017',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 71,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/Cute-Cats-Wallpaper_brwn.jpg',
+          title: 'Cute Cat Wallpaper',
+          artist: 'Background',
+          year: '2018',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 72,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/Cool-Cats-Wallpaper_lennon.jpg',
+          title: 'Cool Cat Wallpaper',
+          artist: 'Background',
+          year: '2018',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 73,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/tn_207494_b75af00219d5.jpg',
+          title: 'unknown title',
+          artist: '?',
+          year: '?',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 74,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/cathat1.jpg',
+          title: 'Cat in Hat',
+          artist: '?',
+          year: '?',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 75,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/cathat14.jpg',
+          title: 'Cat in Hat',
+          artist: '?',
+          year: '?',
           public: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
