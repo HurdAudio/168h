@@ -522,6 +522,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#E7D290',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 38,
+          user_id: 1,
+          theme: 'Primary Colors',
+          type: 'week',
+          src_string: '../img/august_tiles/3eecbb9ce1002f5c4fae1f28e0d65b65--colorful-flowers-vibrant-colors.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '135%',
+          color_dark: '#1E012B',
+          color_medium: '#C00108',
+          color_light: '#FFFF4D',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
