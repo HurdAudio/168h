@@ -6404,6 +6404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 321,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/untitled-one-hundred-spaces-1997.jpg',
+          title: 'Untitled (One Hundred Spaces)',
+          artist: 'Rachel Whiteread',
+          year: '1997',
+          rule: {
+            "monday": [ 11, 21, 29, 8 ],
+            "tuesday": [ 10, 20, 28, 7 ],
+            "wednesday": [ 9, 19, 28, 6 ],
+            "thursday": [ 15, 24, 3, 11 ],
+            "friday": [ 14, 24, 3, 11 ],
+            "saturday": [ 14, 23, 31, 10 ],
+            "sunday": [ 12, 22, 30, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 322,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/tapis-de-lecture-2000.jpg',
+          title: 'Tapis de lecture',
+          artist: 'Dominique Gonzalez-Foerster',
+          year: '2000',
+          rule: {
+            "monday": [ 13, 23, 31, 10 ],
+            "tuesday": [ 12, 22, 30, 9 ],
+            "wednesday": [ 11, 21, 29, 8 ],
+            "thursday": [ 10, 20, 29, 7 ],
+            "friday": [ 16, 25, 4, 12 ],
+            "saturday": [ 15, 25, 4, 12 ],
+            "sunday": [ 15, 24, 1, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 323,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/pools-century-miami-2003.jpg',
+          title: 'Pools - Century [Miami]',
+          artist: 'Sarah Morris',
+          year: '2003',
+          rule: {
+            "monday": [ 15, 24, 1, 11 ],
+            "tuesday": [ 13, 23, 31, 10 ],
+            "wednesday": [ 12, 22, 30, 9 ],
+            "thursday": [ 11, 21, 29, 8 ],
+            "friday": [ 10, 20, 29, 7 ],
+            "saturday": [ 16, 25, 4, 12 ],
+            "sunday": [ 15, 25, 4, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 324,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/forward-sweep.jpg',
+          title: 'Forward Sweep',
+          artist: 'Dana Levin',
+          year: '?',
+          rule: {
+            "monday": [ 15, 25, 4, 12 ],
+            "tuesday": [ 15, 24, 1, 11 ],
+            "wednesday": [ 13, 23, 31, 10 ],
+            "thursday": [ 12, 22, 30, 9 ],
+            "friday": [ 11, 21, 29, 8 ],
+            "saturday": [ 10, 20, 29, 7 ],
+            "sunday": [ 16, 25, 4, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 325,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/36-who-is-who-11x14in-2017-2-svetlana-kanyo.jpg',
+          title: 'Still Life"Who is Who"',
+          artist: 'Svetlana Kanyo',
+          year: '2017',
+          rule: {
+            "monday": [ 16, 25, 4, 12 ],
+            "tuesday": [ 15, 25, 4, 12 ],
+            "wednesday": [ 15, 24, 1, 11 ],
+            "thursday": [ 13, 23, 31, 10 ],
+            "friday": [ 12, 22, 30, 9 ],
+            "saturday": [ 11, 21, 29, 8 ],
+            "sunday": [ 10, 20, 29, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
