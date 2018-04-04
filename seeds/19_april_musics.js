@@ -3298,6 +3298,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 184,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1539656772/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://natbirchalljazzman.bandcamp.com/album/cosmic-language',
+          a_string: 'Cosmic Language by Nat Birchall',
+          rule: {
+            "monday": [ 27, 5, 17, 22 ],
+            "tuesday": [ 26, 4, 16, 21 ],
+            "wednesday": [ 30, 8, 20, 25 ],
+            "thursday": [ 29, 7, 19, 24 ],
+            "saturday": [ 28, 6, 18, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 185,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1727024361/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://megokura.bandcamp.com/album/npo-trio-live-at-the-stone',
+          a_string: 'NPO Trio Live At The Stone by Meg Okura, Sam Newsome, Jean-Michel Pilc',
+          rule: {
+            "monday": [ 28, 6, 18, 23 ],
+            "tuesday": [ 27, 5, 17, 22 ],
+            "wednesday": [ 26, 4, 16, 21 ],
+            "thursday": [ 30, 8, 20, 25 ],
+            "saturday": [ 29, 7, 19, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 186,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1832604723/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://woutgooris.bandcamp.com/album/some-time',
+          a_string: 'Some Time by Wout Gooris Trio &amp; Chisholm/Vann',
+          rule: {
+            "monday": [ 29, 7, 19, 24 ],
+            "tuesday": [ 28, 6, 18, 23 ],
+            "wednesday": [ 27, 5, 17, 22 ],
+            "thursday": [ 26, 4, 16, 21 ],
+            "saturday": [ 30, 8, 20, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
