@@ -5404,6 +5404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 271,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/violinist-1915.jpg',
+          title: 'Violinist',
+          artist: 'Alexandre Jacovleff',
+          year: '1915',
+          rule: {
+            "monday": [ 7, 9, 19, 4 ],
+            "tuesday": [ 6, 9, 18, 3 ],
+            "wednesday": [ 5, 8, 17, 2 ],
+            "thursday": [ 11, 15, 23, 8 ],
+            "friday": [ 10, 13, 22, 7 ],
+            "saturday": [ 9, 13, 21, 6 ],
+            "sunday": [ 8, 12, 20, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 272,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/parakeet-on-table-1924.jpg',
+          title: 'Parakeet on Table',
+          artist: 'Yamamura Toyonari',
+          year: '1924',
+          rule: {
+            "monday": [ 8, 12, 20, 5 ],
+            "tuesday": [ 7, 9, 19, 4 ],
+            "wednesday": [ 6, 9, 18, 3 ],
+            "thursday": [ 5, 8, 17, 2 ],
+            "friday": [ 11, 15, 23, 8 ],
+            "saturday": [ 10, 13, 22, 7 ],
+            "sunday": [ 9, 13, 21, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 273,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/avenue-of-cherry-trees-1935.jpg',
+          title: 'Avenue of Cherry Trees',
+          artist: 'Hiroshi Yoshida',
+          year: '1935',
+          rule: {
+            "monday": [ 10, 14, 22, 7 ],
+            "tuesday": [ 9, 13, 21, 6 ],
+            "wednesday": [ 8, 10, 20, 5 ],
+            "thursday": [ 7, 10, 19, 4 ],
+            "friday": [ 6, 9, 18, 3 ],
+            "saturday": [ 12, 16, 24, 9 ],
+            "sunday": [ 11, 14, 23, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 274,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/cover-of-album-ukrainian-alphabet-1917.jpg',
+          title: 'Cover of album \'Ukrainian alphabet\'',
+          artist: 'Heorhiy Narbut',
+          year: '1917',
+          rule: {
+            "monday": [ 11, 14, 23, 8 ],
+            "tuesday": [ 10, 14, 22, 7 ],
+            "wednesday": [ 9, 13, 21, 6 ],
+            "thursday": [ 8, 10, 20, 5 ],
+            "friday": [ 7, 10, 19, 4 ],
+            "saturday": [ 6, 9, 18, 3 ],
+            "sunday": [ 12, 16, 24, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 275,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/two-sisters-1923.jpg',
+          title: 'Two Sisters',
+          artist: 'Vilhelm Lundstrom',
+          year: '1923',
+          rule: {
+            "monday": [ 12, 16, 24, 9 ],
+            "tuesday": [ 11, 14, 23, 8 ],
+            "wednesday": [ 10, 14, 22, 7 ],
+            "thursday": [ 9, 13, 21, 6 ],
+            "friday": [ 8, 10, 20, 5 ],
+            "saturday": [ 7, 10, 19, 4 ],
+            "sunday": [ 6, 9, 18, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
