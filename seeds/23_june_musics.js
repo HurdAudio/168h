@@ -3082,6 +3082,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 172,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=42342034/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://lahautdanslocean.bandcamp.com/album/cold-ubiquity',
+          a_string: 'Cold Ubiquity by Denis Morin',
+          rule: {
+            "monday": [ 26, 30, 6, 17 ],
+            "tuesday": [ 25, 28, 3, 15 ],
+            "wednesday": [ 24, 28, 3, 15 ],
+            "thursday": [ 24, 27, 3, 14 ],
+            "saturday": [ 22, 30, 2, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 173,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1559273782/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://lahautdanslocean.bandcamp.com/album/clavans-field-recording',
+          a_string: 'Clavans Field Recording by World&#39;s Blowings',
+          rule: {
+            "monday": [ 22, 30, 2, 13 ],
+            "tuesday": [ 26, 30, 6, 17 ],
+            "wednesday": [ 25, 28, 3, 15 ],
+            "thursday": [ 24, 28, 3, 15 ],
+            "saturday": [ 24, 27, 3, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 174,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2693586790/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://lahautdanslocean.bandcamp.com/album/reaching-time',
+          a_string: 'Reaching Time by Denis',
+          rule: {
+            "monday": [ 24, 27, 3, 14 ],
+            "tuesday": [ 22, 30, 2, 13 ],
+            "wednesday": [ 26, 30, 6, 17 ],
+            "thursday": [ 25, 28, 3, 15 ],
+            "saturday": [ 24, 28, 3, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
