@@ -2758,6 +2758,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 154,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1398604293/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://hella.bandcamp.com/album/the-devil-isnt-red',
+          a_string: 'The Devil Isn&#39;t Red by Hella',
+          rule: {
+            "monday": [ 23, 13, 21, 15 ],
+            "tuesday": [ 22, 12, 20, 14 ],
+            "wednesday": [ 26, 16, 24, 18 ],
+            "thursday": [ 25, 15, 23, 17 ],
+            "saturday": [ 24, 14, 22, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 155,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3478465787/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://hella.bandcamp.com/album/hold-your-horse-is',
+          a_string: 'Hold Your Horse Is by Hella',
+          rule: {
+            "monday": [ 24, 14, 22, 17 ],
+            "tuesday": [ 23, 13, 21, 15 ],
+            "wednesday": [ 22, 12, 20, 14 ],
+            "thursday": [ 26, 16, 24, 18 ],
+            "saturday": [ 25, 15, 23, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 156,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3850134741/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://horselords.bandcamp.com/album/interventions',
+          a_string: 'Interventions by Horse Lords',
+          rule: {
+            "monday": [ 25, 15, 23, 17 ],
+            "tuesday": [ 24, 14, 22, 17 ],
+            "wednesday": [ 23, 13, 21, 15 ],
+            "thursday": [ 22, 12, 20, 14 ],
+            "saturday": [ 26, 16, 24, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
