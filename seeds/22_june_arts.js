@@ -5804,6 +5804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 291,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/4-img_9553.jpg',
+          title: 'unknown title',
+          artist: 'Diana Miller',
+          year: '2018',
+          rule: {
+            "monday": [ 7, 17, 27, 5 ],
+            "tuesday": [ 6, 16, 26, 4 ],
+            "wednesday": [ 12, 22, 2, 8 ],
+            "thursday": [ 11, 21, 1, 9 ],
+            "friday": [ 10, 20, 30, 8 ],
+            "saturday": [ 9, 19, 29, 7 ],
+            "sunday": [ 18, 28, 8, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 292,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/cropped-163-4-DrillPress-pt.jpg',
+          title: 'Workings No. 163',
+          artist: 'Design Studios, LLC',
+          year: '?',
+          rule: {
+            "monday": [ 18, 28, 8, 6 ],
+            "tuesday": [ 7, 17, 27, 5 ],
+            "wednesday": [ 6, 16, 26, 4 ],
+            "thursday": [ 12, 22, 2, 8 ],
+            "friday": [ 11, 21, 1, 9 ],
+            "saturday": [ 10, 20, 30, 8 ],
+            "sunday": [ 9, 19, 29, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 293,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/FineArt-12.jpg',
+          title: 'Experimental Portrait',
+          artist: 'Parish Kohanim',
+          year: '?',
+          rule: {
+            "monday": [ 9, 19, 29, 7 ],
+            "tuesday": [ 18, 28, 8, 6 ],
+            "wednesday": [ 7, 17, 27, 5 ],
+            "thursday": [ 6, 16, 26, 4 ],
+            "friday": [ 12, 22, 2, 8 ],
+            "saturday": [ 11, 21, 1, 9 ],
+            "sunday": [ 10, 20, 30, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 294,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/FineArt-02.jpg',
+          title: 'Italian Sculptor\'s Studio',
+          artist: 'Parish Kohanim',
+          year: '?',
+          rule: {
+            "monday": [ 10, 20, 30, 8 ],
+            "tuesday": [ 9, 19, 29, 7 ],
+            "wednesday": [ 18, 28, 8, 6 ],
+            "thursday": [ 7, 17, 27, 5 ],
+            "friday": [ 6, 16, 26, 4 ],
+            "saturday": [ 12, 22, 2, 8 ],
+            "sunday": [ 11, 21, 1, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 295,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/penguinBanner.jpg',
+          title: 'Penguins Banner',
+          artist: 'Brendan Smith',
+          year: '?',
+          rule: {
+            "monday": [ 11, 21, 1, 9 ],
+            "tuesday": [ 10, 20, 30, 8 ],
+            "wednesday": [ 9, 19, 29, 7 ],
+            "thursday": [ 18, 28, 8, 6 ],
+            "friday": [ 7, 17, 27, 5 ],
+            "saturday": [ 6, 16, 26, 4 ],
+            "sunday": [ 12, 22, 2, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
