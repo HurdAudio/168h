@@ -6804,6 +6804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 341,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/licht-relief-1958.jpg',
+          title: 'Licht-Relief',
+          artist: 'Heinz Mack',
+          year: '1958',
+          rule: {
+            "monday": [ 30, 1, 5, 8 ],
+            "tuesday": [ 1, 3, 4, 7 ],
+            "wednesday": [ 17, 18, 29, 21 ],
+            "thursday": [ 20, 22, 14, 3 ],
+            "friday": [ 22, 23, 15, 18 ],
+            "saturday": [ 25, 26, 17, 21 ],
+            "sunday": [ 28, 30, 31, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 342,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/progression-21-a-1965.jpg',
+          title: 'Progression 21-A',
+          artist: 'Abraham Palatnik',
+          year: '1965',
+          rule: {
+            "monday": [ 28, 30, 31, 2 ],
+            "tuesday": [ 30, 1, 5, 8 ],
+            "wednesday": [ 1, 3, 4, 7 ],
+            "thursday": [ 17, 18, 29, 21 ],
+            "friday": [ 20, 22, 14, 3 ],
+            "saturday": [ 22, 23, 15, 18 ],
+            "sunday": [ 25, 26, 17, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 343,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/blue-waterfall-2011.jpg',
+          title: 'Blue Waterfall',
+          artist: 'Romul Nutiu',
+          year: '2011',
+          rule: {
+            "monday": [ 26, 27, 18, 22 ],
+            "tuesday": [ 29, 31, 1, 3 ],
+            "wednesday": [ 31, 2, 6, 9 ],
+            "thursday": [ 2, 4, 5, 8 ],
+            "friday": [ 18, 19, 30, 22 ],
+            "saturday": [ 21, 23, 15, 4 ],
+            "sunday": [ 23, 24, 16, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 344,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/movement-in-squares-1961.jpg',
+          title: 'Movement in Squares',
+          artist: 'Bridget Riley',
+          year: '1961',
+          rule: {
+            "monday": [ 23, 24, 16, 19 ],
+            "tuesday": [ 26, 27, 18, 22 ],
+            "wednesday": [ 29, 31, 1, 3 ],
+            "thursday": [ 31, 2, 6, 9 ],
+            "friday": [ 2, 4, 5, 8 ],
+            "saturday": [ 18, 19, 30, 22 ],
+            "sunday": [ 21, 23, 15, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 345,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/spring-1907(1).jpg',
+          title: 'Spring',
+          artist: 'David Burliuk',
+          year: '1907',
+          rule: {
+            "monday": [ 21, 23, 15, 4 ],
+            "tuesday": [ 23, 24, 16, 19 ],
+            "wednesday": [ 26, 27, 18, 22 ],
+            "thursday": [ 29, 31, 1, 3 ],
+            "friday": [ 31, 2, 6, 9 ],
+            "saturday": [ 2, 4, 5, 8 ],
+            "sunday": [ 18, 19, 30, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
