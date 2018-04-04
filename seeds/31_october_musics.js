@@ -2650,6 +2650,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 148,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=913726158/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://specialinterestno.bandcamp.com/album/spiraling',
+          a_string: 'Spiraling by SPECIAL INTEREST',
+          rule: {
+            "monday": [ 25, 4, 15, 17 ],
+            "tuesday": [ 29, 8, 18, 21 ],
+            "wednesday": [ 28, 7, 17, 20 ],
+            "thursday": [ 27, 6, 16, 19 ],
+            "saturday": [ 26, 5, 15, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 149,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1338028899/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://graveupheaval.bandcamp.com/album/-',
+          a_string: '-- by Grave Upheaval',
+          rule: {
+            "monday": [ 26, 5, 15, 18 ],
+            "tuesday": [ 25, 4, 15, 17 ],
+            "wednesday": [ 29, 8, 18, 21 ],
+            "thursday": [ 28, 7, 17, 20 ],
+            "saturday": [ 27, 6, 16, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 150,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=263923895/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://riversofnihil.bandcamp.com/album/where-owls-know-my-name',
+          a_string: 'Where Owls Know My Name by Rivers of Nihil',
+          rule: {
+            "monday": [ 27, 6, 16, 19 ],
+            "tuesday": [ 26, 5, 15, 18 ],
+            "wednesday": [ 25, 4, 15, 17 ],
+            "thursday": [ 29, 8, 18, 21 ],
+            "saturday": [ 28, 7, 17, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
