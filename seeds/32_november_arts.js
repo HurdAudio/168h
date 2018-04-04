@@ -4804,6 +4804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 241,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/horizontal-painting-in-7-vertical-parts-1996.jpg',
+          title: 'Horizontal Painting in 7 Vertical Parts',
+          artist: 'Alan Charlton',
+          year: '1996',
+          rule: {
+            "monday": [ 6, 11, 17, 24 ],
+            "tuesday": [ 12, 17, 23, 28 ],
+            "wednesday": [ 11, 16, 21, 27 ],
+            "thursday": [ 10, 15, 21, 25 ],
+            "friday": [ 9, 12, 20, 25 ],
+            "saturday": [ 8, 12, 19, 24 ],
+            "sunday": [ 7, 12, 18, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 242,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/parva-xxxviii-1996.jpg',
+          title: 'Parva XXXVIII',
+          artist: 'Anne Truitt',
+          year: '1996',
+          rule: {
+            "monday": [ 7, 12, 18, 23 ],
+            "tuesday": [ 6, 11, 17, 24 ],
+            "wednesday": [ 12, 17, 23, 28 ],
+            "thursday": [ 11, 16, 21, 27 ],
+            "friday": [ 10, 15, 21, 25 ],
+            "saturday": [ 9, 12, 20, 25 ],
+            "sunday": [ 8, 12, 19, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 243,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/oh-1996.jpg',
+          title: 'Oh!',
+          artist: 'Grazia Varisco',
+          year: '1996',
+          rule: {
+            "monday": [ 8, 12, 19, 24 ],
+            "tuesday": [ 7, 12, 18, 23 ],
+            "wednesday": [ 6, 11, 17, 24 ],
+            "thursday": [ 12, 17, 23, 28 ],
+            "friday": [ 11, 16, 21, 27 ],
+            "saturday": [ 10, 15, 21, 25 ],
+            "sunday": [ 9, 12, 20, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 244,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/untitled-1997-1.jpg',
+          title: 'Untitled',
+          artist: 'Moshe Kupferman',
+          year: '1997',
+          rule: {
+            "monday": [ 9, 12, 20, 25 ],
+            "tuesday": [ 8, 12, 19, 24 ],
+            "wednesday": [ 7, 12, 18, 23 ],
+            "thursday": [ 6, 11, 17, 24 ],
+            "friday": [ 12, 17, 23, 28 ],
+            "saturday": [ 11, 16, 21, 27 ],
+            "sunday": [ 10, 15, 21, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 245,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/exposed-painting-olive-green-1998.jpg',
+          title: 'Exposed Painting, Olive Green',
+          artist: 'Callum Innes',
+          year: '1998',
+          rule: {
+            "monday": [ 11, 16, 22, 26 ],
+            "tuesday": [ 10, 13, 21, 26 ],
+            "wednesday": [ 9, 13, 20, 25 ],
+            "thursday": [ 8, 13, 19, 24 ],
+            "friday": [ 7, 12, 18, 25 ],
+            "saturday": [ 13, 18, 24, 29 ],
+            "sunday": [ 12, 17, 22, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
