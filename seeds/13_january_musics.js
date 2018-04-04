@@ -3622,6 +3622,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 202,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2347485153/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jeffmercel.bandcamp.com/album/lunescapes-volume-one',
+          a_string: 'Lunescapes Volume One by Jeff Mercel',
+          rule: {
+            "monday": [ 5, 12, 13, 14 ],
+            "tuesday": [ 4, 10, 11, 12 ],
+            "wednesday": [ 3, 10, 11, 12 ],
+            "thursday": [ 7, 14, 15, 16 ],
+            "saturday": [ 6, 12, 14, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 203,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1825287635/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jeffmercel.bandcamp.com/album/5-shells-original-score-from-the-motion-picture',
+          a_string: '5 Shells (Original Score from the Motion Picture) by Jeff Mercel',
+          rule: {
+            "monday": [ 7, 13, 15, 16 ],
+            "tuesday": [ 6, 13, 14, 15 ],
+            "wednesday": [ 5, 11, 12, 13 ],
+            "thursday": [ 4, 11, 12, 13 ],
+            "saturday": [ 8, 15, 16, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 204,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3916538931/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jeffmercel.bandcamp.com/album/marvin-original-music-from-the-animated-film',
+          a_string: 'Marvin: Original Music from the Animated Film by Jeff Mercel',
+          rule: {
+            "monday": [ 8, 15, 16, 17 ],
+            "tuesday": [ 7, 13, 15, 16 ],
+            "wednesday": [ 6, 13, 14, 15 ],
+            "thursday": [ 5, 11, 12, 13 ],
+            "saturday": [ 4, 11, 12, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
