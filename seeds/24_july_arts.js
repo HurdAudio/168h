@@ -5604,6 +5604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 281,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/place-de-l-europe-gare-saint-lazare-paris-1932.jpg',
+          title: 'Place de l\'Europe, Gare Saint Lazare, Paris',
+          artist: 'Henri Cartier-Bresson',
+          year: '1932',
+          rule: {
+            "monday": [ 11, 22, 2, 13 ],
+            "tuesday": [ 10, 21, 1, 12 ],
+            "wednesday": [ 9, 20, 31, 1 ],
+            "thursday": [ 8, 19, 29, 31 ],
+            "friday": [ 7, 18, 29, 30 ],
+            "saturday": [ 6, 17, 28, 8 ],
+            "sunday": [ 12, 23, 3, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 282,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/mannequin-en-vitrine-1935.jpg',
+          title: 'Mannequin en vitrine',
+          artist: 'Dora Maar',
+          year: '1935',
+          rule: {
+            "monday": [ 12, 23, 3, 13 ],
+            "tuesday": [ 11, 22, 2, 13 ],
+            "wednesday": [ 10, 21, 1, 12 ],
+            "thursday": [ 9, 20, 31, 1 ],
+            "friday": [ 8, 19, 29, 31 ],
+            "saturday": [ 7, 18, 29, 30 ],
+            "sunday": [ 6, 17, 28, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 283,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/le-torchas-casqu-from-la-vie-amoureuse-des-spumif-res-1948.jpg',
+          title: 'Le Torchas Casqué (from La Vie Amoureuse des Spumifères)',
+          artist: 'Georges Hugnet',
+          year: '1948',
+          rule: {
+            "monday": [ 6, 17, 28, 8 ],
+            "tuesday": [ 12, 23, 3, 13 ],
+            "wednesday": [ 11, 22, 2, 13 ],
+            "thursday": [ 10, 21, 1, 12 ],
+            "friday": [ 9, 20, 31, 1 ],
+            "saturday": [ 8, 19, 29, 31 ],
+            "sunday": [ 7, 18, 29, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 284,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/ainsi-qu-un-doigt-geant-1962.jpg',
+          title: 'Ainsi qu\'un doigt geant',
+          artist: 'Pierre Tal-Coat',
+          year: '1962',
+          rule: {
+            "monday": [ 7, 18, 29, 30 ],
+            "tuesday": [ 6, 17, 28, 8 ],
+            "wednesday": [ 12, 23, 3, 13 ],
+            "thursday": [ 11, 22, 2, 13 ],
+            "friday": [ 10, 21, 1, 12 ],
+            "saturday": [ 9, 20, 31, 1 ],
+            "sunday": [ 8, 19, 29, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 285,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/the-desert-1938.jpg',
+          title: 'The Desert',
+          artist: 'John Ferren',
+          year: '1938',
+          rule: {
+            "monday": [ 8, 19, 29, 31 ],
+            "tuesday": [ 7, 18, 29, 30 ],
+            "wednesday": [ 6, 17, 28, 8 ],
+            "thursday": [ 12, 23, 3, 13 ],
+            "friday": [ 11, 22, 2, 13 ],
+            "saturday": [ 10, 21, 1, 12 ],
+            "sunday": [ 9, 20, 31, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
