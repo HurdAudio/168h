@@ -2866,6 +2866,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 160,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2776475078/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://wolf-eyes.bandcamp.com/album/deranged',
+          a_string: 'Deranged by Wolf Eyes',
+          rule: {
+            "monday": [ 2, 10, 23, 22 ],
+            "tuesday": [ 1, 9, 22, 21 ],
+            "wednesday": [ 31, 8, 21, 20 ],
+            "thursday": [ 4, 12, 25, 24 ],
+            "saturday": [ 3, 11, 24, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 161,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2522637749/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://killick.bandcamp.com/album/rain-of-the-roof-on-my-sound',
+          a_string: 'rain of the roof on my sound by Dale Inglett &amp; Killick Hinds',
+          rule: {
+            "monday": [ 4, 12, 25, 24 ],
+            "tuesday": [ 3, 11, 24, 23 ],
+            "wednesday": [ 2, 10, 23, 22 ],
+            "thursday": [ 1, 9, 22, 21 ],
+            "saturday": [ 5, 13, 26, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 162,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3883253373/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://killick.bandcamp.com/album/recipe-for-raster',
+          a_string: 'recipe for raster by Pre-Precipice',
+          rule: {
+            "monday": [ 5, 13, 26, 25 ],
+            "tuesday": [ 4, 12, 25, 24 ],
+            "wednesday": [ 3, 11, 24, 23 ],
+            "thursday": [ 2, 10, 23, 22 ],
+            "saturday": [ 1, 9, 22, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
