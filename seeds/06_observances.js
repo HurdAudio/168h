@@ -9629,6 +9629,39 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 616,
+          user_id: 1,
+          name: 'Ikue Mori (electronics) born 1953',
+          color: '#20344C',
+          picture: './img/musicians/ikuelive_wide.jpg',
+          day_of: new Date ('1953-12-17T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: true,
+          override_content: {
+            "sources": [ 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp' ],
+            "src_strings": [ 'https://bandcamp.com/EmbeddedPlayer/album=643175086/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=2104549245/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=426610632/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=2048684979/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/' ],
+            "href_strings": [ 'http://f-a-t-a-k-a.bandcamp.com/album/prediction-and-warning', 'http://bocian.bandcamp.com/album/scrumptious-sabotage', 'http://rvng.bandcamp.com/album/frkwys-vol-6', 'http://intaktrec.bandcamp.com/album/alien-huddle' ],
+            "a_strings": [ 'Prediction and Warning by Ikue Mori &amp; Steve Noble', 'Scrumptious Sabotage by Ikue Mori &amp; Maja S.K. Ratkje', 'FRKWYS Vol. 6 by Julianna Barwick &amp; Ikue Mori', 'Alien Huddle by Sylvie Courvoiser, Ikue Mori, Lotte Anker' ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 617,
+          user_id: 1,
+          name: 'The world ended on this day in 2018 just as Mathieu Jean-Marc Joseph Rodrigue pedicted using little more than basic math and a Bible.',
+          color: '#111514',
+          picture: './img/doomsday/teorico.png',
+          day_of: new Date ('2018-06-24T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
