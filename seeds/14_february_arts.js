@@ -6604,6 +6604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 331,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/3-Blayton_Shapes-_Of_-Sound-copy.jpg',
+          title: 'Shapes Of Sound',
+          artist: 'Betty Blayton-Taylor',
+          year: '2011',
+          rule: {
+            "monday": [ 18, 26, 5, 13 ],
+            "tuesday": [ 19, 28, 7, 15 ],
+            "wednesday": [ 25, 1, 7, 17 ],
+            "thursday": [ 24, 3, 11, 19 ],
+            "friday": [ 26, 7, 13, 19 ],
+            "saturday": [ 28, 7, 15, 25 ],
+            "sunday": [ 28, 9, 5, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 332,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/booker_chu_ching_600W_2012_rubber_and_stainless_steel_NON_52_137.jpg',
+          title: 'Chu Ching',
+          artist: 'Chakaia Booker',
+          year: '2012',
+          rule: {
+            "monday": [ 28, 9, 5, 24 ],
+            "tuesday": [ 18, 26, 5, 13 ],
+            "wednesday": [ 19, 28, 7, 15 ],
+            "thursday": [ 25, 1, 7, 17 ],
+            "friday": [ 24, 3, 11, 19 ],
+            "saturday": [ 26, 7, 13, 19 ],
+            "sunday": [ 28, 7, 15, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 333,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/pie-murals-0106-01-jpg.jpg',
+          title: 'Music on Our Minds',
+          artist: 'Edythe Boone',
+          year: '?',
+          rule: {
+            "monday": [ 28, 7, 15, 25 ],
+            "tuesday": [ 28, 9, 5, 24 ],
+            "wednesday": [ 18, 26, 5, 13 ],
+            "thursday": [ 19, 28, 7, 15 ],
+            "friday": [ 25, 1, 7, 17 ],
+            "saturday": [ 24, 3, 11, 19 ],
+            "sunday": [ 26, 7, 13, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 334,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/tmcom170726.png',
+          title: 'Compu-toon',
+          artist: 'Charles Boyce',
+          year: '2016',
+          rule: {
+            "monday": [ 26, 7, 13, 19 ],
+            "tuesday": [ 28, 7, 15, 25 ],
+            "wednesday": [ 28, 9, 5, 24 ],
+            "thursday": [ 18, 26, 5, 13 ],
+            "friday": [ 19, 28, 7, 15 ],
+            "saturday": [ 25, 1, 7, 17 ],
+            "sunday": [ 24, 3, 11, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 335,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/face2_0013flweb.jpg',
+          title: 'Face 2',
+          artist: 'Tina Williams Brewer',
+          year: '?',
+          rule: {
+            "monday": [ 24, 3, 11, 19 ],
+            "tuesday": [ 26, 7, 13, 19 ],
+            "wednesday": [ 28, 7, 15, 25 ],
+            "thursday": [ 28, 9, 5, 24 ],
+            "friday": [ 18, 26, 5, 13 ],
+            "saturday": [ 19, 28, 7, 15 ],
+            "sunday": [ 25, 1, 7, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
