@@ -2974,6 +2974,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 166,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=123979905/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://theclean.bandcamp.com/album/getaway-deluxe-2016-remaster',
+          a_string: 'Getaway (Deluxe 2016 Remaster) by The Clean',
+          rule: {
+            "monday": [ 23, 25, 29, 6 ],
+            "tuesday": [ 22, 23, 28, 5 ],
+            "wednesday": [ 21, 23, 27, 4 ],
+            "thursday": [ 25, 27, 31, 8 ],
+            "saturday": [ 24, 26, 30, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 167,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1148085794/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://fishriderrecords.bandcamp.com/album/the-shakespeare-monkey',
+          a_string: 'The Shakespeare Monkey by The Puddle',
+          rule: {
+            "monday": [ 24, 26, 30, 7 ],
+            "tuesday": [ 23, 25, 29, 6 ],
+            "wednesday": [ 22, 23, 28, 5 ],
+            "thursday": [ 21, 23, 27, 4 ],
+            "saturday": [ 25, 27, 31, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 168,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1125138796/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://fishriderrecords.bandcamp.com/album/shadow-self',
+          a_string: 'Shadow Self by Élan Vital',
+          rule: {
+            "monday": [ 26, 28, 1, 9 ],
+            "tuesday": [ 25, 27, 31, 8 ],
+            "wednesday": [ 24, 26, 30, 7 ],
+            "thursday": [ 23, 24, 29, 6 ],
+            "saturday": [ 22, 24, 28, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
