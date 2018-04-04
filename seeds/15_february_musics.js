@@ -3514,6 +3514,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 196,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2899847730/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://phonte.bandcamp.com/album/no-news-is-good-news',
+          a_string: 'No News Is Good News by Phonte',
+          rule: {
+            "monday": [ 1, 5, 7, 11 ],
+            "tuesday": [ 4, 7, 9, 13 ],
+            "wednesday": [ 5, 9, 11, 13 ],
+            "thursday": [ 17, 11, 13, 19 ],
+            "saturday": [ 29, 5, 6, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 197,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1519299837/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://planetpremrock.bandcamp.com/album/poets-payday',
+          a_string: 'Poet&#39;s Payday by PremRock &amp; Fresh Kils',
+          rule: {
+            "monday": [ 29, 5, 6, 19 ],
+            "tuesday": [ 1, 5, 7, 11 ],
+            "wednesday": [ 4, 7, 9, 13 ],
+            "thursday": [ 5, 9, 11, 13 ],
+            "saturday": [ 17, 11, 13, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 198,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2691678539/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://naturesounds.bandcamp.com/album/consumers-park',
+          a_string: 'Consumers Park by Chuck Strangers',
+          rule: {
+            "monday": [ 17, 11, 13, 19 ],
+            "tuesday": [ 29, 5, 6, 19 ],
+            "wednesday": [ 1, 5, 7, 11 ],
+            "thursday": [ 4, 7, 9, 13 ],
+            "saturday": [ 5, 9, 11, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
