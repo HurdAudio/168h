@@ -2434,6 +2434,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 136,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1595616171/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://uroborosrecords.bandcamp.com/album/oscillation-frequency',
+          a_string: 'Oscillation Frequency by Uroboros Records',
+          rule: {
+            "monday": [ 25, 31, 6, 11 ],
+            "tuesday": [ 24, 30, 5, 11 ],
+            "wednesday": [ 21, 29, 4, 10 ],
+            "thursday": [ 22, 28, 3, 9 ],
+            "saturday": [ 26, 1, 7, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 137,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3689999342/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://theblogthatcelebratesitself.bandcamp.com/album/u-f-o-stories-a-tribute-to-the-flaming-lips',
+          a_string: 'U.F.O. Stories, A Tribute To The Flaming Lips by TBTCI',
+          rule: {
+            "monday": [ 26, 1, 7, 13 ],
+            "tuesday": [ 25, 31, 6, 11 ],
+            "wednesday": [ 24, 30, 5, 11 ],
+            "thursday": [ 21, 29, 4, 10 ],
+            "saturday": [ 22, 28, 3, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 138,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=36313533/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://theblogthatcelebratesitself.bandcamp.com/album/a-tribute-to-cocteau-twins',
+          a_string: 'A Tribute To Cocteau Twins by The Blog That Celebrates Itself Records',
+          rule: {
+            "monday": [ 22, 28, 3, 9 ],
+            "tuesday": [ 26, 1, 7, 13 ],
+            "wednesday": [ 25, 31, 6, 11 ],
+            "thursday": [ 24, 30, 5, 11 ],
+            "saturday": [ 21, 29, 4, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
