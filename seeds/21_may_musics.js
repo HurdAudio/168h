@@ -3190,6 +3190,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 178,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4066709875/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://newfocusrecordings.bandcamp.com/album/ryan-muncy-hot',
+          a_string: 'Ryan Muncy: Hot by New Focus Recordings',
+          rule: {
+            "monday": [ 26, 1, 8, 21 ],
+            "tuesday": [ 26, 1, 8, 21 ],
+            "wednesday": [ 30, 6, 12, 25 ],
+            "thursday": [ 29, 4, 11, 24 ],
+            "saturday": [ 28, 3, 10, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 179,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2897674183/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://hemispharenokukyo.bandcamp.com/album/variations-on-plastic',
+          a_string: 'Variations on Plastic by Philip Sulidae',
+          rule: {
+            "monday": [ 28, 3, 10, 23 ],
+            "tuesday": [ 27, 2, 9, 22 ],
+            "wednesday": [ 26, 1, 8, 21 ],
+            "thursday": [ 30, 6, 12, 25 ],
+            "saturday": [ 29, 4, 11, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 180,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1096830546/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://robertcurgenven.bandcamp.com/album/they-tore-the-earth-and-like-a-scar-it-swallowed-them',
+          a_string: 'They tore the earth and, like a scar, it swallowed them by Robert Curgenven',
+          rule: {
+            "monday": [ 29, 4, 11, 24 ],
+            "tuesday": [ 28, 3, 10, 23 ],
+            "wednesday": [ 27, 2, 9, 22 ],
+            "thursday": [ 26, 1, 8, 21 ],
+            "saturday": [ 30, 6, 12, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
