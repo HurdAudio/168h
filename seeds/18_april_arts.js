@@ -6204,6 +6204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 311,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/BBIB474.png',
+          title: 'New York Yankees',
+          artist: 'Getty Images',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 9, 14, 20, 26 ],
+            "tuesday": [ 14, 20, 25, 2 ],
+            "wednesday": [ 28, 18, 24, 1 ],
+            "thursday": [ 13, 18, 24, 30 ],
+            "friday": [ 12, 16, 1, 29 ],
+            "saturday": [ 11, 16, 21, 27 ],
+            "sunday": [ 10, 15, 21, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 312,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/9484510-mlb-tampa-bay-rays-new-york-yankees.jpg',
+          title: 'Yanee Stadium',
+          artist: '?',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 10, 15, 21, 27 ],
+            "tuesday": [ 9, 14, 20, 26 ],
+            "wednesday": [ 14, 20, 25, 2 ],
+            "thursday": [ 28, 18, 24, 1 ],
+            "friday": [ 13, 18, 24, 30 ],
+            "saturday": [ 12, 16, 1, 29 ],
+            "sunday": [ 11, 16, 21, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 313,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/1_Sx08uBDOBZcW3H4Mz16_rw.jpeg',
+          title: '1939 Yankees',
+          artist: '?',
+          year: '1939',
+          rule: {
+            "monday": [ 11, 16, 21, 27 ],
+            "tuesday": [ 10, 15, 21, 27 ],
+            "wednesday": [ 9, 14, 20, 26 ],
+            "thursday": [ 14, 20, 25, 2 ],
+            "friday": [ 28, 18, 24, 1 ],
+            "saturday": [ 13, 18, 24, 30 ],
+            "sunday": [ 12, 16, 1, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 314,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/usa_today_10354368.0.jpg',
+          title: 'Yankees 2017 Postseason',
+          artist: 'Robert Deutsch',
+          year: '2017',
+          rule: {
+            "monday": [ 12, 16, 1, 29 ],
+            "tuesday": [ 11, 16, 21, 27 ],
+            "wednesday": [ 10, 15, 21, 27 ],
+            "thursday": [ 9, 14, 20, 26 ],
+            "friday": [ 14, 20, 25, 2 ],
+            "saturday": [ 28, 18, 24, 1 ],
+            "sunday": [ 13, 18, 24, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 315,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/1949-new-york-yankees-world-series-champions-patch.jpg',
+          title: '1949 New York Yankees World Series Champions Patch',
+          artist: '?',
+          year: '1949',
+          rule: {
+            "monday": [ 14, 19, 25, 1 ],
+            "tuesday": [ 13, 17, 2, 30 ],
+            "wednesday": [ 12, 17, 22, 28 ],
+            "thursday": [ 11, 16, 22, 28 ],
+            "friday": [ 10, 15, 21, 27 ],
+            "saturday": [ 15, 21, 26, 3 ],
+            "sunday": [ 29, 19, 25, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
