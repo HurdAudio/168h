@@ -2542,6 +2542,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 142,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4028634021/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://super11.bandcamp.com/album/super-onze-1st-worldwide-cd-release',
+          a_string: 'Super Onze - 1st Worldwide CD release by Super Onze, The Takamba champions of the Niger bend.',
+          rule: {
+            "monday": [ 21, 2, 13, 17 ],
+            "tuesday": [ 20, 1, 12, 16 ],
+            "wednesday": [ 19, 30, 11, 13 ],
+            "thursday": [ 18, 29, 10, 12 ],
+            "saturday": [ 22, 3, 14, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 143,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3098108820/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://super11.bandcamp.com/album/jo-kanga-djiribi',
+          a_string: 'Jo Kanga Djiribi by Super Onze, The Takamba champions of the Niger bend.',
+          rule: {
+            "monday": [ 22, 3, 14, 18 ],
+            "tuesday": [ 21, 2, 13, 17 ],
+            "wednesday": [ 20, 1, 12, 16 ],
+            "thursday": [ 19, 30, 11, 13 ],
+            "saturday": [ 18, 29, 10, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 144,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2438854733/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://super11.bandcamp.com/album/session-pour-yehia-le-marabout',
+          a_string: 'Session pour Yehia le Marabout by Super Onze, The Takamba champions of the Niger bend.',
+          rule: {
+            "monday": [ 18, 29, 10, 12 ],
+            "tuesday": [ 22, 3, 14, 18 ],
+            "wednesday": [ 21, 2, 13, 17 ],
+            "thursday": [ 20, 1, 12, 16 ],
+            "saturday": [ 19, 30, 11, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
