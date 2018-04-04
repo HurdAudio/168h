@@ -4604,6 +4604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 231,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/30-10,Amazng.jpg',
+          title: 'Amazing Stories',
+          artist: 'Leo Morey',
+          year: '1930',
+          rule: {
+            "monday": [ 4, 17, 25, 31 ],
+            "tuesday": [ 3, 16, 24, 30 ],
+            "wednesday": [ 2, 15, 23, 29 ],
+            "thursday": [ 1, 13, 22, 28 ],
+            "friday": [ 31, 13, 1, 8 ],
+            "saturday": [ 6, 19, 27, 2 ],
+            "sunday": [ 5, 18, 26, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 232,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/02-04,Cosmo.jpg',
+          title: 'The Cosmopolitan',
+          artist: 'Roger B. Morrison',
+          year: '1902',
+          rule: {
+            "monday": [ 5, 18, 26, 1 ],
+            "tuesday": [ 4, 17, 25, 31 ],
+            "wednesday": [ 3, 16, 24, 30 ],
+            "thursday": [ 2, 15, 23, 29 ],
+            "friday": [ 1, 13, 22, 28 ],
+            "saturday": [ 31, 13, 1, 8 ],
+            "sunday": [ 6, 19, 27, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 233,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/24-01,Shadowland.jpg',
+          title: 'Shadowland',
+          artist: 'Wesley Morse',
+          year: '1924',
+          rule: {
+            "monday": [ 6, 19, 27, 2 ],
+            "tuesday": [ 5, 18, 26, 1 ],
+            "wednesday": [ 4, 17, 25, 31 ],
+            "thursday": [ 3, 16, 24, 30 ],
+            "friday": [ 2, 15, 23, 29 ],
+            "saturday": [ 1, 13, 22, 28 ],
+            "sunday": [ 31, 13, 1, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 234,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/51-01,RR.jpg',
+          title: 'Railroad Magazine',
+          artist: 'Herb Mott',
+          year: '1951',
+          rule: {
+            "monday": [ 31, 13, 1, 8 ],
+            "tuesday": [ 6, 19, 27, 2 ],
+            "wednesday": [ 5, 18, 26, 1 ],
+            "thursday": [ 4, 17, 25, 31 ],
+            "friday": [ 3, 16, 24, 30 ],
+            "saturday": [ 2, 15, 23, 29 ],
+            "sunday": [ 1, 13, 22, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 235,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/34-04,LvRvls.jpg',
+          title: 'Love Revels',
+          artist: 'Zoe Mozert',
+          year: '1934',
+          rule: {
+            "monday": [ 1, 13, 22, 28 ],
+            "tuesday": [ 31, 13, 1, 8 ],
+            "wednesday": [ 6, 19, 27, 2 ],
+            "thursday": [ 5, 18, 26, 1 ],
+            "friday": [ 4, 17, 25, 31 ],
+            "saturday": [ 3, 16, 24, 30 ],
+            "sunday": [ 2, 15, 23, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
