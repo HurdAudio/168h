@@ -8249,7 +8249,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 525,
           user_id: 1,
-          name: 'The world ended on this day with the return of Jesus according to the prophet and convicted tax-evader Ronald Weinland',
+          name: 'The world ended on this day in 2012 with the return of Jesus according to the prophet and convicted tax-evader Ronald Weinland',
           color: '#704B44',
           picture: './img/doomsday/ronaldweinland.png',
           day_of: new Date ('2012-05-27T13:44:00.000Z'),
