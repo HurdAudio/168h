@@ -668,9 +668,9 @@
           case('March'):
             monthTilesString = 'march_tilesbyuser';
             break;
-          // case('April'):
-          //   monthTilesString = 'april_tilesbyuser';
-          //   break;
+          case('April'):
+            monthTilesString = 'april_tilesbyuser';
+            break;
           case('May'):
             monthTilesString = 'may_tilesbyuser';
             break;
