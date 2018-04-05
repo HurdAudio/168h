@@ -550,6 +550,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#E3D6EA',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 40,
+          user_id: 1,
+          theme: 'Steam',
+          type: 'saturday',
+          src_string: '../img/july_tiles/sky-background-for-photoshop-11.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '150%',
+          color_dark: '#3F5C84',
+          color_medium: '#1E6CC1',
+          color_light: '#F7F7F4',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
