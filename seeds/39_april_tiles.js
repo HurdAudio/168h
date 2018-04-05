@@ -592,6 +592,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FEFEFE',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 43,
+          user_id: 1,
+          theme: 'Water',
+          type: 'week',
+          src_string: '../img/april_tiles/ozark-166113_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '135%',
+          color_dark: '#070707',
+          color_medium: '#345542',
+          color_light: '#EFF0F2',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
