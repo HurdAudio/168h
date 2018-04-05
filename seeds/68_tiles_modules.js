@@ -199,6 +199,21 @@ exports.seed = function(knex, Promise) {
           public: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 14,
+          user_author_id: 1,
+          theme: 'Paper',
+          type: 'friday',
+          src_string: '../img/tiles/background-1981169_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '100%',
+          color_dark: '#03030B',
+          color_medium: '#16BDA7',
+          color_light: '#ACCBAD',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {

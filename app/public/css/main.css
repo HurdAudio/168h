@@ -7560,8 +7560,8 @@ footer img {
 }
 
 
-/* .day {
-  background-image: url(../img/january_tiles/satice.jpeg);
+.day {
+  background-image: url(../img/tiles/background-1981169_1920.jpg);
   background-repeat: no-repeat;
-  background-size: 154%;
-} */
+  background-size: 100%;
+}
