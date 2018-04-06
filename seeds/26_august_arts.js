@@ -5504,6 +5504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 276,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/cena-aberta-1940.jpg',
+          title: 'Cena Aberta',
+          artist: 'Antonio Dacosta',
+          year: '1940',
+          rule: {
+            "monday": [ 6, 9, 18, 3 ],
+            "tuesday": [ 12, 16, 24, 9 ],
+            "wednesday": [ 11, 14, 23, 8 ],
+            "thursday": [ 10, 14, 22, 7 ],
+            "friday": [ 9, 13, 21, 6 ],
+            "saturday": [ 8, 10, 20, 5 ],
+            "sunday": [ 7, 10, 19, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 277,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/bridge-repetition-of-composition-of-1911.jpg',
+          title: 'Bridge (Repetition of composition of 1911)',
+          artist: 'David Burliuk',
+          year: 'c.1911',
+          rule: {
+            "monday": [ 7, 10, 19, 4 ],
+            "tuesday": [ 6, 9, 18, 3 ],
+            "wednesday": [ 12, 16, 24, 9 ],
+            "thursday": [ 11, 14, 23, 8 ],
+            "friday": [ 10, 14, 22, 7 ],
+            "saturday": [ 9, 13, 21, 6 ],
+            "sunday": [ 8, 10, 20, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 278,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/girl-with-stork-1907.jpg',
+          title: 'Girl with Stork',
+          artist: 'Paula Modersohn-Becker',
+          year: '1906 - 1907',
+          rule: {
+            "monday": [ 8, 10, 20, 5 ],
+            "tuesday": [ 7, 10, 19, 4 ],
+            "wednesday": [ 6, 9, 18, 3 ],
+            "thursday": [ 12, 16, 24, 9 ],
+            "friday": [ 11, 14, 23, 8 ],
+            "saturday": [ 10, 14, 22, 7 ],
+            "sunday": [ 9, 13, 21, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 279,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/temple-gardens-1920.jpg',
+          title: 'Temple Gardens',
+          artist: 'Paul Klee',
+          year: '1920',
+          rule: {
+            "monday": [ 9, 13, 21, 6 ],
+            "tuesday": [ 8, 10, 20, 5 ],
+            "wednesday": [ 7, 10, 19, 4 ],
+            "thursday": [ 6, 9, 18, 3 ],
+            "friday": [ 12, 16, 24, 9 ],
+            "saturday": [ 11, 14, 23, 8 ],
+            "sunday": [ 10, 14, 22, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 280,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/marionettes-chinoises-chinois-1935.jpg',
+          title: 'Marionettes Chinoises. Chinois',
+          artist: 'Paul Jacoulet',
+          year: '1935',
+          rule: {
+            "monday": [ 11, 15, 23, 8 ],
+            "tuesday": [ 10, 14, 22, 7 ],
+            "wednesday": [ 9, 11, 21, 6 ],
+            "thursday": [ 8, 11, 20, 5 ],
+            "friday": [ 7, 10, 19, 4 ],
+            "saturday": [ 13, 17, 25, 10 ],
+            "sunday": [ 12, 15, 24, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
