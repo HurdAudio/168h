@@ -5704,6 +5704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 286,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/toudr-1971-1.jpg',
+          title: 'Toudré',
+          artist: 'Maurice Esteve',
+          year: '1971',
+          rule: {
+            "monday": [ 9, 20, 31, 1 ],
+            "tuesday": [ 8, 19, 29, 31 ],
+            "wednesday": [ 7, 18, 29, 30 ],
+            "thursday": [ 6, 17, 28, 8 ],
+            "friday": [ 12, 23, 3, 13 ],
+            "saturday": [ 11, 22, 2, 13 ],
+            "sunday": [ 10, 21, 1, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 287,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/untitled-1956.jpg',
+          title: 'Untitled',
+          artist: 'Germaine Richier',
+          year: '1956',
+          rule: {
+            "monday": [ 11, 22, 2, 13 ],
+            "tuesday": [ 10, 21, 1, 2 ],
+            "wednesday": [ 9, 20, 30, 1 ],
+            "thursday": [ 8, 19, 30, 31 ],
+            "friday": [ 7, 18, 29, 9 ],
+            "saturday": [ 13, 24, 4, 14 ],
+            "sunday": [ 12, 23, 3, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 288,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/pink-leopard-1940.jpg',
+          title: 'Pink Leopard',
+          artist: 'Sanyu',
+          year: '1940',
+          rule: {
+            "monday": [ 12, 23, 3, 14 ],
+            "tuesday": [ 11, 22, 2, 13 ],
+            "wednesday": [ 10, 21, 1, 2 ],
+            "thursday": [ 9, 20, 30, 1 ],
+            "friday": [ 8, 19, 30, 31 ],
+            "saturday": [ 7, 18, 29, 9 ],
+            "sunday": [ 13, 24, 4, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 289,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/composition-1928.jpg',
+          title: 'Composition',
+          artist: 'Michel Seuphor',
+          year: '1928',
+          rule: {
+            "monday": [ 13, 24, 4, 14 ],
+            "tuesday": [ 12, 23, 3, 14 ],
+            "wednesday": [ 11, 22, 2, 13 ],
+            "thursday": [ 10, 21, 1, 2 ],
+            "friday": [ 9, 20, 30, 1 ],
+            "saturday": [ 8, 19, 30, 31 ],
+            "sunday": [ 7, 18, 29, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 290,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/woman-with-cat-mask-1930.jpg',
+          title: 'Woman with cat mask',
+          artist: 'Brassai',
+          year: '1930',
+          rule: {
+            "monday": [ 7, 18, 29, 9 ],
+            "tuesday": [ 13, 24, 4, 14 ],
+            "wednesday": [ 12, 23, 3, 14 ],
+            "thursday": [ 11, 22, 2, 13 ],
+            "friday": [ 10, 21, 1, 2 ],
+            "saturday": [ 9, 20, 30, 1 ],
+            "sunday": [ 8, 19, 30, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
