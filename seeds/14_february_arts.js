@@ -6704,6 +6704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 336,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/25184_h960w1600gt.4.jpg',
+          title: 'A Large Work for Mike Kelly',
+          artist: 'Michael Bramwell',
+          year: '1996',
+          rule: {
+            "monday": [ 26, 2, 8, 18 ],
+            "tuesday": [ 25, 4, 12, 20 ],
+            "wednesday": [ 27, 8, 14, 20 ],
+            "thursday": [ 29, 8, 16, 26 ],
+            "friday": [ 29, 10, 6, 25 ],
+            "saturday": [ 19, 27, 6, 14 ],
+            "sunday": [ 20, 29, 8, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 337,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/Mark-Bradford-Amendment-5-2014B.jpg',
+          title: 'Amendment #5',
+          artist: 'Mark Bradford',
+          year: '2014',
+          rule: {
+            "monday": [ 20, 29, 8, 16 ],
+            "tuesday": [ 26, 2, 8, 18 ],
+            "wednesday": [ 25, 4, 12, 20 ],
+            "thursday": [ 27, 8, 14, 20 ],
+            "friday": [ 29, 8, 16, 26 ],
+            "saturday": [ 29, 10, 6, 25 ],
+            "sunday": [ 19, 27, 6, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 338,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/Brown2-jumbo.jpg',
+          title: 'The Castle of Marquis de Sade',
+          artist: 'Frank J. Brown',
+          year: '1983',
+          rule: {
+            "monday": [ 19, 27, 6, 14 ],
+            "tuesday": [ 20, 29, 8, 16 ],
+            "wednesday": [ 26, 2, 8, 18 ],
+            "thursday": [ 25, 4, 12, 20 ],
+            "friday": [ 27, 8, 14, 20 ],
+            "saturday": [ 29, 8, 16, 26 ],
+            "sunday": [ 29, 10, 6, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 339,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/H4175-L62136246_mid.jpg',
+          title: 'Louis Armstrong',
+          artist: 'Frederick J. Brown',
+          year: '2005',
+          rule: {
+            "monday": [ 29, 10, 6, 25 ],
+            "tuesday": [ 19, 27, 6, 14 ],
+            "wednesday": [ 20, 29, 8, 16 ],
+            "thursday": [ 26, 2, 8, 18 ],
+            "friday": [ 25, 4, 12, 20 ],
+            "saturday": [ 27, 8, 14, 20 ],
+            "sunday": [ 29, 8, 16, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 340,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/to-the-beat-of-the-drum-larry-poncho-brown.jpg',
+          title: 'Larry Poncho Brown',
+          artist: 'The Beat Of The Drum',
+          year: '2004',
+          rule: {
+            "monday": [ 29, 8, 16, 26 ],
+            "tuesday": [ 29, 10, 6, 25 ],
+            "wednesday": [ 19, 27, 6, 14 ],
+            "thursday": [ 20, 29, 8, 16 ],
+            "friday": [ 26, 2, 8, 18 ],
+            "saturday": [ 25, 4, 12, 20 ],
+            "sunday": [ 27, 8, 14, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
