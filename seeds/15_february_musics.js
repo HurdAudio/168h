@@ -3568,6 +3568,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 199,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1717407725/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bangyahead.bandcamp.com/album/loyaltyLoyalty by MED &amp; Guilty Simpson',
+          a_string: '',
+          rule: {
+            "monday": [ 5, 9, 11, 13 ],
+            "tuesday": [ 17, 11, 13, 19 ],
+            "wednesday": [ 29, 5, 6, 19 ],
+            "thursday": [ 1, 5, 7, 11 ],
+            "saturday": [ 4, 7, 9, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 200,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=471601909/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://pounds.bandcamp.com/album/borgata',
+          a_string: 'Borgata by POUNDS',
+          rule: {
+            "monday": [ 4, 7, 9, 13 ],
+            "tuesday": [ 5, 9, 11, 13 ],
+            "wednesday": [ 17, 11, 13, 19 ],
+            "thursday": [ 29, 5, 6, 19 ],
+            "saturday": [ 1, 5, 7, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 201,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2733838001/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://stahhr.bandcamp.com/album/respect-due-vol-1',
+          a_string: 'RESPECT DUE VOL. 1 by staHHr',
+          rule: {
+            "monday": [ 1, 5, 7, 11 ],
+            "tuesday": [ 4, 7, 9, 13 ],
+            "wednesday": [ 5, 9, 11, 13 ],
+            "thursday": [ 17, 11, 13, 19 ],
+            "saturday": [ 29, 5, 6, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
