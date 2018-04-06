@@ -5104,6 +5104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 256,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_St_001.jpg',
+          title: 'Fascism - is a starvation! Fascism - is a terror! Fascism - is a war!',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 6, 17, 18, 1 ],
+            "tuesday": [ 15, 16, 27, 31 ],
+            "wednesday": [ 11, 22, 2, 6 ],
+            "thursday": [ 10, 21, 1, 5 ],
+            "friday": [ 9, 20, 31, 4 ],
+            "saturday": [ 8, 19, 30, 3 ],
+            "sunday": [ 7, 18, 29, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 257,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_warsovpost_00029.jpg',
+          title: 'Drinking water of dear Dnepr!',
+          artist: 'Victor Ivanov',
+          year: '1943',
+          rule: {
+            "monday": [ 7, 18, 29, 2 ],
+            "tuesday": [ 6, 17, 18, 1 ],
+            "wednesday": [ 15, 16, 27, 31 ],
+            "thursday": [ 11, 22, 2, 6 ],
+            "friday": [ 10, 21, 1, 5 ],
+            "saturday": [ 9, 20, 31, 4 ],
+            "sunday": [ 8, 19, 30, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 258,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_worksovpost_00022.jpg',
+          title: 'Trading culturally - is a respectable job!',
+          artist: '?',
+          year: '1949',
+          rule: {
+            "monday": [ 8, 19, 30, 3 ],
+            "tuesday": [ 7, 18, 29, 2 ],
+            "wednesday": [ 6, 17, 18, 1 ],
+            "thursday": [ 15, 16, 27, 31 ],
+            "friday": [ 11, 22, 2, 6 ],
+            "saturday": [ 10, 21, 1, 5 ],
+            "sunday": [ 9, 20, 31, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 259,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_worksovpost_00016.jpg',
+          title: '(we) Will serve culturally each (and every) visitor!',
+          artist: '?',
+          year: '1948',
+          rule: {
+            "monday": [ 10, 21, 1, 5 ],
+            "tuesday": [ 9, 20, 31, 4 ],
+            "wednesday": [ 8, 19, 30, 3 ],
+            "thursday": [ 7, 18, 19, 2 ],
+            "friday": [ 16, 17, 28, 1 ],
+            "saturday": [ 12, 23, 3, 7 ],
+            "sunday": [ 11, 22, 2, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 260,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_worksovpost_00013.jpg',
+          title: 'At labor time (some people) work at night time as well!',
+          artist: '?',
+          year: '1947',
+          rule: {
+            "monday": [ 11, 22, 2, 6 ],
+            "tuesday": [ 10, 21, 1, 5 ],
+            "wednesday": [ 9, 20, 31, 4 ],
+            "thursday": [ 8, 19, 30, 3 ],
+            "friday": [ 7, 18, 19, 2 ],
+            "saturday": [ 16, 17, 28, 1 ],
+            "sunday": [ 12, 23, 3, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
