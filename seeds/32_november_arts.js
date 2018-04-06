@@ -4904,6 +4904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 246,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/magnetic-love-affair-1998.jpg',
+          title: 'Magnetic Love Affair',
+          artist: 'Sheila Hicks',
+          year: '1998',
+          rule: {
+            "monday": [ 12, 17, 22, 28 ],
+            "tuesday": [ 11, 16, 22, 26 ],
+            "wednesday": [ 10, 13, 21, 26 ],
+            "thursday": [ 9, 13, 20, 25 ],
+            "friday": [ 8, 13, 19, 24 ],
+            "saturday": [ 7, 12, 18, 25 ],
+            "sunday": [ 13, 18, 24, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 247,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/zobop-installation-view-1999-1.jpg',
+          title: 'Zobop (installation view)',
+          artist: 'Jim Lambie',
+          year: '1999',
+          rule: {
+            "monday": [ 13, 18, 24, 29 ],
+            "tuesday": [ 12, 17, 22, 28 ],
+            "wednesday": [ 11, 16, 22, 26 ],
+            "thursday": [ 10, 13, 21, 26 ],
+            "friday": [ 9, 13, 20, 25 ],
+            "saturday": [ 8, 13, 19, 24 ],
+            "sunday": [ 7, 12, 18, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 248,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/traces-2000.jpg',
+          title: 'Traces',
+          artist: 'Yves Gaucher',
+          year: '2000',
+          rule: {
+            "monday": [ 7, 12, 18, 25 ],
+            "tuesday": [ 13, 18, 24, 29 ],
+            "wednesday": [ 12, 17, 22, 28 ],
+            "thursday": [ 11, 16, 22, 26 ],
+            "friday": [ 10, 13, 21, 26 ],
+            "saturday": [ 9, 13, 20, 25 ],
+            "sunday": [ 8, 13, 19, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 249,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/senza-titolo-sottosopra-2000.jpg',
+          title: 'Senza Titolo, Sottosopra',
+          artist: 'Ettore Spalletti',
+          year: '2000',
+          rule: {
+            "monday": [ 8, 13, 19, 24 ],
+            "tuesday": [ 7, 12, 18, 25 ],
+            "wednesday": [ 13, 18, 24, 29 ],
+            "thursday": [ 12, 17, 22, 28 ],
+            "friday": [ 11, 16, 22, 26 ],
+            "saturday": [ 10, 13, 21, 26 ],
+            "sunday": [ 9, 13, 20, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 250,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/untitled-2001a.jpg',
+          title: 'Untitled',
+          artist: 'Edward Krasinski',
+          year: '2001',
+          rule: {
+            "monday": [ 9, 13, 20, 25 ],
+            "tuesday": [ 8, 13, 19, 24 ],
+            "wednesday": [ 7, 12, 18, 25 ],
+            "thursday": [ 13, 18, 24, 29 ],
+            "friday": [ 12, 17, 22, 28 ],
+            "saturday": [ 11, 16, 22, 26 ],
+            "sunday": [ 10, 13, 21, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {

@@ -4789,7 +4789,7 @@ exports.seed = function(knex, Promise) {
           id: 240,
           user_id: 1,
           theme: 'Pulp Art',
-          img_path: './img/december/.jpg',
+          img_path: './img/december/38-04-21,Ken.jpg',
           title: 'Ken Magazine',
           artist: 'Wesley Neff',
           year: '1938',
