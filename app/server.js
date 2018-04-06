@@ -148,6 +148,8 @@ const music_modules = require('./routes/music_modules.js');
 const music_modulesbyuser = require('./routes/music_modulesbyuser.js');
 const tiles_modules = require('./routes/tiles_modules.js');
 const tiles_modulesbyuser = require('./routes/tiles_modulesbyuser.js');
+const messages_reactions = require('./routes/messages_reactions.js');
+const messages_reactionsbyuser = require('./routes/messages_reactionsbyuser.js');
 
 const port = process.env.PORT || 3007;
 
@@ -296,6 +298,8 @@ app.use(fileUpload());
  app.use('/music_modulesbyuser', music_modulesbyuser);
  app.use('/tiles_modules', tiles_modules);
  app.use('/tiles_modulesbyuser', tiles_modulesbyuser);
+ app.use('/messages_reactions', messages_reactions);
+ app.use('/messages_reactionsbyuser', messages_reactionsbyuser);
 
 app.get('/onthisdayinhistory/:date', (req, res, next) =>{
   let newUrl = 'http://history.muffinlabs.com/date/';
