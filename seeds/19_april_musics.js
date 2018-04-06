@@ -3352,6 +3352,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 187,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2842545668/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://illconsidered.bandcamp.com/album/ill-considered-3',
+          a_string: 'ILL CONSIDERED 3 by ILL CONSIDERED',
+          rule: {
+            "monday": [ 30, 8, 20, 25 ],
+            "tuesday": [ 29, 7, 19, 24 ],
+            "wednesday": [ 28, 6, 18, 23 ],
+            "thursday": [ 27, 5, 17, 22 ],
+            "saturday": [ 26, 4, 16, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 188,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3452754172/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://salimwashington.bandcamp.com/album/dogon-revisited',
+          a_string: 'DOGON REVISITED by Salim Washington',
+          rule: {
+            "monday": [ 26, 4, 16, 21 ],
+            "tuesday": [ 30, 8, 20, 25 ],
+            "wednesday": [ 29, 7, 19, 24 ],
+            "thursday": [ 28, 6, 18, 23 ],
+            "saturday": [ 27, 5, 17, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 189,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2927667759/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://alexoliveriossunshineensemble.bandcamp.com/album/sunshine-ensemble',
+          a_string: 'Sunshine Ensemble by Alex Oliverio&#39;s Sunshine Ensemble',
+          rule: {
+            "monday": [ 28, 6, 18, 23 ],
+            "tuesday": [ 27, 5, 17, 22 ],
+            "wednesday": [ 1, 9, 21, 26 ],
+            "thursday": [ 30, 8, 20, 25 ],
+            "saturday": [ 29, 7, 19, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
