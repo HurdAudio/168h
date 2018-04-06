@@ -6904,6 +6904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 346,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/pintura-1974.jpg',
+          title: 'Pintura',
+          artist: 'Angelo de Sousa',
+          year: '1974',
+          rule: {
+            "monday": [ 18, 19, 30, 22 ],
+            "tuesday": [ 21, 23, 15, 4 ],
+            "wednesday": [ 23, 24, 16, 19 ],
+            "thursday": [ 26, 27, 18, 22 ],
+            "friday": [ 29, 31, 1, 3 ],
+            "saturday": [ 31, 2, 6, 9 ],
+            "sunday": [ 2, 4, 5, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 347,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/grid-9-saranac-1971.jpg',
+          title: 'Grid #9: Saranac',
+          artist: 'Thomas Downing',
+          year: '1971',
+          rule: {
+            "monday": [ 2, 4, 5, 8 ],
+            "tuesday": [ 18, 19, 30, 22 ],
+            "wednesday": [ 21, 23, 15, 4 ],
+            "thursday": [ 23, 24, 16, 19 ],
+            "friday": [ 26, 27, 18, 22 ],
+            "saturday": [ 29, 31, 1, 3 ],
+            "sunday": [ 31, 2, 6, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 348,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/l-amour-l-amour-1989.jpg',
+          title: 'L’amour, l’amour',
+          artist: 'Greta Freist',
+          year: '1989',
+          rule: {
+            "monday": [ 31, 2, 6, 9 ],
+            "tuesday": [ 2, 4, 5, 8 ],
+            "wednesday": [ 18, 19, 30, 22 ],
+            "thursday": [ 21, 23, 15, 4 ],
+            "friday": [ 23, 24, 16, 19 ],
+            "saturday": [ 26, 27, 18, 22 ],
+            "sunday": [ 29, 31, 1, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 349,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/mistral-1970.jpg',
+          title: 'Mistral',
+          artist: 'Tess Jaray',
+          year: '1970',
+          rule: {
+            "monday": [ 29, 31, 1, 3 ],
+            "tuesday": [ 31, 2, 6, 9 ],
+            "wednesday": [ 2, 4, 5, 8 ],
+            "thursday": [ 18, 19, 30, 22 ],
+            "friday": [ 21, 23, 15, 4 ],
+            "saturday": [ 23, 24, 16, 19 ],
+            "sunday": [ 26, 27, 18, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 350,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/10-stones-1989(1).jpg',
+          title: '10 Stones',
+          artist: 'John Cage',
+          year: '1989',
+          rule: {
+            "monday": [ 27, 28, 19, 23 ],
+            "tuesday": [ 30, 1, 2, 4 ],
+            "wednesday": [ 1, 3, 7, 10 ],
+            "thursday": [ 3, 5, 6, 9 ],
+            "friday": [ 19, 20, 31, 23 ],
+            "saturday": [ 22, 24, 16, 5 ],
+            "sunday": [ 24, 25, 17, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
