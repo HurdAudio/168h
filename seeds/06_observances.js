@@ -9662,6 +9662,34 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 618,
+          user_id: 1,
+          name: 'Earle Brown (composer) born in 1926',
+          color: '#232323',
+          picture: './img/musicians/earle-brown.jpg',
+          day_of: new Date ('1926-12-26T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 619,
+          user_id: 1,
+          name: 'Ernst Bloch (Marxist philosopher) born 1885',
+          color: '#992E1A',
+          picture: './img/dissent/ernst-bloch.jpg',
+          day_of: new Date ('1885-07-08T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
