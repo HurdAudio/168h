@@ -3136,6 +3136,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 175,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=58336510/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jonhassell.bandcamp.com/album/maarifa-street',
+          a_string: 'Maarifa Street by Jon Hassell',
+          rule: {
+            "monday": [ 24, 28, 3, 15 ],
+            "tuesday": [ 24, 27, 3, 14 ],
+            "wednesday": [ 22, 30, 2, 13 ],
+            "thursday": [ 26, 30, 6, 17 ],
+            "saturday": [ 25, 28, 3, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 176,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2423573174/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'https://bandcamp.com/EmbeddedPlayer/album=2423573174/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          a_string: 'City: Works Of Fiction (Expanded Edition) by Jon Hassell',
+          rule: {
+            "monday": [ 25, 28, 3, 15 ],
+            "tuesday": [ 24, 28, 3, 15 ],
+            "wednesday": [ 24, 27, 3, 14 ],
+            "thursday": [ 22, 30, 2, 13 ],
+            "saturday": [ 26, 30, 6, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 177,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2737996611/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jonhassell.bandcamp.com/album/remixes',
+          a_string: 'Remixes by Jon Hassell',
+          rule: {
+            "monday": [ 26, 30, 6, 17 ],
+            "tuesday": [ 25, 28, 3, 15 ],
+            "wednesday": [ 24, 28, 3, 15 ],
+            "thursday": [ 24, 27, 3, 14 ],
+            "saturday": [ 22, 30, 2, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
