@@ -3028,6 +3028,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 169,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=638000661/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://orangemilkrecords.bandcamp.com/album/maraschino-mic-drop',
+          a_string: 'Maraschino Mic Drop by Honnda',
+          rule: {
+            "monday": [ 22, 24, 28, 5 ],
+            "tuesday": [ 26, 28, 1, 9 ],
+            "wednesday": [ 25, 27, 31, 8 ],
+            "thursday": [ 24, 26, 30, 7 ],
+            "saturday": [ 23, 24, 29, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 170,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3938055437/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://partialsmusic.bandcamp.com/album/glossolalia',
+          a_string: 'Glossolalia by Partials',
+          rule: {
+            "monday": [ 23, 24, 29, 6 ],
+            "tuesday": [ 22, 24, 28, 5 ],
+            "wednesday": [ 26, 28, 1, 9 ],
+            "thursday": [ 25, 27, 31, 8 ],
+            "saturday": [ 24, 26, 30, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 171,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2190904739/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://pauldejong.bandcamp.com/album/you-fucken-sucker',
+          a_string: 'You Fucken Sucker by Paul de Jong',
+          rule: {
+            "monday": [ 24, 26, 30, 7 ],
+            "tuesday": [ 23, 24, 29, 6 ],
+            "wednesday": [ 22, 24, 28, 5 ],
+            "thursday": [ 26, 28, 1, 9 ],
+            "saturday": [ 25, 27, 31, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
