@@ -2704,6 +2704,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 151,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1399153639/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://primordialofficial.bandcamp.com/album/exile-amongst-the-ruins',
+          a_string: 'Exile Amongst the Ruins by Primordial',
+          rule: {
+            "monday": [ 28, 7, 17, 20 ],
+            "tuesday": [ 27, 6, 16, 19 ],
+            "wednesday": [ 26, 5, 15, 18 ],
+            "thursday": [ 25, 4, 15, 17 ],
+            "saturday": [ 29, 8, 18, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 152,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3558351474/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://darkdescentrecords.bandcamp.com/album/split-ep',
+          a_string: 'Split EP by Vastum/Spectral Voice',
+          rule: {
+            "monday": [ 29, 8, 18, 21 ],
+            "tuesday": [ 28, 7, 17, 20 ],
+            "wednesday": [ 27, 6, 16, 19 ],
+            "thursday": [ 26, 5, 15, 18 ],
+            "saturday": [ 25, 4, 15, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 153,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=801713348/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://offeatherandbone666.bandcamp.com/album/bestial-hymns-of-perversion',
+          a_string: 'Bestial Hymns Of Perversion by OF FEATHER AND BONE',
+          rule: {
+            "monday": [ 25, 4, 15, 17 ],
+            "tuesday": [ 29, 8, 18, 21 ],
+            "wednesday": [ 28, 7, 17, 20 ],
+            "thursday": [ 27, 6, 16, 19 ],
+            "saturday": [ 26, 5, 15, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
