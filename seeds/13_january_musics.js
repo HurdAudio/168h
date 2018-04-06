@@ -3676,6 +3676,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 205,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1698763114/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://newfocusrecordings.bandcamp.com/album/third-coast-percussion-philippe-manoury-the-book-of-keyboards',
+          a_string: 'Third Coast Percussion/Philippe Manoury: The Book of Keyboards by Third Coast Percussion',
+          rule: {
+            "monday": [ 4, 11, 12, 13 ],
+            "tuesday": [ 8, 15, 16, 17 ],
+            "wednesday": [ 7, 13, 15, 16 ],
+            "thursday": [ 6, 13, 14, 15 ],
+            "saturday": [ 5, 11, 12, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 206,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4066709875/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://newfocusrecordings.bandcamp.com/album/ryan-muncy-hot',
+          a_string: 'Ryan Muncy: Hot by New Focus Recordings',
+          rule: {
+            "monday": [ 5, 11, 12, 13 ],
+            "tuesday": [ 4, 11, 12, 13 ],
+            "wednesday": [ 8, 15, 16, 17 ],
+            "thursday": [ 7, 13, 15, 16 ],
+            "saturday": [ 6, 13, 14, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 207,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2300810728/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://newfocusrecordings.bandcamp.com/album/scott-l-miller-raba',
+          a_string: 'Scott L. Miller: Raba by Scott L. Miller',
+          rule: {
+            "monday": [ 6, 13, 14, 15 ],
+            "tuesday": [ 5, 11, 12, 13 ],
+            "wednesday": [ 4, 11, 12, 13 ],
+            "thursday": [ 8, 15, 16, 17 ],
+            "saturday": [ 7, 13, 15, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
