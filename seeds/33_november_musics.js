@@ -2596,6 +2596,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 145,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2040424877/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://topwzn.bandcamp.com/album/top-wzn',
+          a_string: 'Top WZN by Jeich Ould Badu and Ahmedou Ahmed Lewla',
+          rule: {
+            "monday": [ 19, 30, 11, 13 ],
+            "tuesday": [ 18, 29, 10, 12 ],
+            "wednesday": [ 22, 3, 14, 18 ],
+            "thursday": [ 21, 2, 13, 17 ],
+            "saturday": [ 20, 1, 12, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 146,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=37971376/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sahelsounds.bandcamp.com/album/waande-kadde',
+          a_string: 'Waande Kadde by Amadou Binta Konté and Tidiane Thiam',
+          rule: {
+            "monday": [ 20, 1, 12, 16 ],
+            "tuesday": [ 19, 30, 11, 13 ],
+            "wednesday": [ 18, 29, 10, 12 ],
+            "thursday": [ 22, 3, 14, 18 ],
+            "saturday": [ 21, 2, 13, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 147,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3731050177/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sahelsounds.bandcamp.com/album/field-recordings-from-the-sahel',
+          a_string: 'Field Recordings from the Sahel by sahelsounds',
+          rule: {
+            "monday": [ 22, 3, 14, 18 ],
+            "tuesday": [ 21, 2, 13, 17 ],
+            "wednesday": [ 20, 1, 12, 14 ],
+            "thursday": [ 19, 30, 11, 13 ],
+            "saturday": [ 23, 4, 15, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
