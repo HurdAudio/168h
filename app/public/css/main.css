@@ -3020,7 +3020,7 @@ footer img {
 }
 
 .whoScheduledMe p {
-  margin-left: 22vmin;
+  margin-left: 20vmin;
   margin-top: -11vmin;
   float: left;
 }
@@ -7503,6 +7503,10 @@ footer img {
   border-radius: 5px;
   height: 3em;
   padding-left: 2vmin;
+}
+
+#holidayShareComments p {
+  margin-left: 0;
 }
 
 #availableTilesModules {

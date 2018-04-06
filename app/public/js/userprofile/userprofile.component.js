@@ -13514,6 +13514,41 @@
         });
       }
 
+      function obtainUserDataHolidayShareComment(holidayShareIndex, commentIndex, comment) {
+        $http.get(`/users/${comment.user_id}`)
+        .then(userData=>{
+          let user = userData.data;
+          vm.activeHolidayShares[holidayShareIndex].comments[commentIndex].user_avatar_url = user.user_avatar_url;
+          vm.activeHolidayShares[holidayShareIndex].comments[commentIndex].name = user.name;
+        });
+      }
+
+      function gatherHolidayShareComments(index, holidayShare) {
+
+        $http.get('/holiday_share_comments')
+        .then(holidayCommentData=>{
+          let holidayComments = holidayCommentData.data;
+          let comments = holidayComments.filter(entry=>{
+            return(parseInt(entry.holiday_share) === parseInt(holidayShare.holiday_id));
+          });
+          if (comments.length > 0) {
+            vm.activeHolidayShares[index].comments = [];
+            comments = comments.sort((a, b)=>{
+
+              return((new Date(a.created_at)) - (new Date(b.created_at)));
+            });
+            console.log(comments);
+            for (let i = 0; i < comments.length; i++) {
+              vm.activeHolidayShares[index].comments[i] = {};
+              vm.activeHolidayShares[index].comments[i].comment = comments[i].comment;
+              vm.activeHolidayShares[index].comments[i].id = comments[i].id;
+              vm.activeHolidayShares[index].comments[i].cleanDate = cleanDateHoliday(comments[i].created_at) + ' - ' + timeDate(comments[i].created_at);
+              obtainUserDataHolidayShareComment(index, i, comments[i]);
+            }
+          }
+        });
+      }
+
       function gatherHolidayShareHoliday(holidayId, index) {
         let months = [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ];
 
@@ -13548,6 +13583,7 @@
               vm.activeHolidayShares[index].musicWorks[j].a_strings = holiday.override_content.a_strings[j];
             }
           }
+
         });
       }
 
@@ -13573,6 +13609,7 @@
                 gatherHolidayInviterData(holidayShares[i].user_id, i);
                 vm.activeHolidayShares[i].cleanDate = cleanDateHoliday(holidayShares[i].updated_at) + ' - ' + timeDate(holidayShares[i].updated_at);
                 gatherHolidayShareHoliday(holidayShares[i].holiday_id, i);
+                gatherHolidayShareComments(i, holidayShares[i]);
               }
             }
             setTimeout(()=>{
