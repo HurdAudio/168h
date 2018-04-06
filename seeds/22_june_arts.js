@@ -5904,6 +5904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 296,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/deb08be8cbdd6ec3e1f2ef7f9e13107b.jpg',
+          title: 'Nude',
+          artist: 'Edward Henry Weston',
+          year: 'xix - xx cent.',
+          rule: {
+            "monday": [ 12, 22, 2, 8 ],
+            "tuesday": [ 11, 21, 1, 9 ],
+            "wednesday": [ 10, 20, 30, 8 ],
+            "thursday": [ 9, 19, 29, 7 ],
+            "friday": [ 18, 28, 8, 6 ],
+            "saturday": [ 7, 17, 27, 5 ],
+            "sunday": [ 6, 16, 26, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 297,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/SC31481.jpg',
+          title: '?',
+          artist: 'Alfred Stieglitz',
+          year: 'xx cent.',
+          rule: {
+            "monday": [ 6, 16, 26, 4 ],
+            "tuesday": [ 12, 22, 2, 8 ],
+            "wednesday": [ 11, 21, 1, 9 ],
+            "thursday": [ 10, 20, 30, 8 ],
+            "friday": [ 9, 19, 29, 7 ],
+            "saturday": [ 18, 28, 8, 6 ],
+            "sunday": [ 7, 17, 27, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 298,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/1.bp_.blogspot.comalfred-stieglitz-georgia-d2f2431ef6166a356bba91a38212fba0e0127400.jpg',
+          title: 'Portrait of Georgia O\'Keeffe',
+          artist: 'Alfred Stieglitz',
+          year: 'xx cent.',
+          rule: {
+            "monday": [ 7, 17, 27, 5 ],
+            "tuesday": [ 6, 16, 26, 4 ],
+            "wednesday": [ 12, 22, 2, 8 ],
+            "thursday": [ 11, 21, 1, 9 ],
+            "friday": [ 10, 20, 30, 8 ],
+            "saturday": [ 9, 19, 29, 7 ],
+            "sunday": [ 18, 28, 8, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 299,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/slider-2017-01.png',
+          title: '?',
+          artist: 'Ana Santos',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 18, 28, 8, 6 ],
+            "tuesday": [ 7, 17, 27, 5 ],
+            "wednesday": [ 6, 16, 26, 4 ],
+            "thursday": [ 12, 22, 2, 8 ],
+            "friday": [ 11, 21, 1, 9 ],
+            "saturday": [ 10, 20, 30, 8 ],
+            "sunday": [ 9, 19, 29, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 300,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/FakingIt_teaser2.jpg',
+          title: 'Man on Rooftop with Eleven Men in Formation on His Shoulders',
+          artist: 'unknown artist',
+          year: '1930',
+          rule: {
+            "monday": [ 9, 19, 29, 7 ],
+            "tuesday": [ 18, 28, 8, 6 ],
+            "wednesday": [ 7, 17, 27, 5 ],
+            "thursday": [ 6, 16, 26, 4 ],
+            "friday": [ 12, 22, 2, 8 ],
+            "saturday": [ 11, 21, 1, 9 ],
+            "sunday": [ 10, 20, 30, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
