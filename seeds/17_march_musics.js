@@ -3460,6 +3460,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 193,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3926996843/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jadejackson.bandcamp.com/album/gilded',
+          a_string: 'Gilded by Jade Jackson',
+          rule: {
+            "monday": [ 28, 3, 9, 17 ],
+            "tuesday": [ 1, 7, 13, 21 ],
+            "wednesday": [ 31, 6, 12, 20 ],
+            "thursday": [ 30, 5, 11, 20 ],
+            "saturday": [ 28, 4, 10, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 194,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1561561466/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://girlpoool.bandcamp.com/album/powerplant',
+          a_string: 'Powerplant by girlpool',
+          rule: {
+            "monday": [ 28, 4, 10, 18 ],
+            "tuesday": [ 28, 3, 9, 17 ],
+            "wednesday": [ 1, 7, 13, 21 ],
+            "thursday": [ 31, 6, 12, 20 ],
+            "saturday": [ 30, 5, 11, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 195,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2783839739/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://joliehollandmusic.bandcamp.com/album/wine-dark-sea',
+          a_string: 'Wine Dark Sea by Jolie Holland',
+          rule: {
+            "monday": [ 30, 5, 11, 20 ],
+            "tuesday": [ 28, 4, 10, 18 ],
+            "wednesday": [ 28, 3, 9, 17 ],
+            "thursday": [ 1, 7, 13, 21 ],
+            "saturday": [ 31, 6, 12, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
