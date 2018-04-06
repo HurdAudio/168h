@@ -6504,6 +6504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 326,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/hundred-lavish-months-of-bushwack-2004.jpg',
+          title: 'Hundred Lavish Months of Bushwack',
+          artist: 'Wangechi Mutu',
+          year: '2004',
+          rule: {
+            "monday": [ 10, 20, 29, 7 ],
+            "tuesday": [ 16, 25, 4, 12 ],
+            "wednesday": [ 15, 25, 4, 12 ],
+            "thursday": [ 15, 24, 1, 11 ],
+            "friday": [ 13, 23, 31, 10 ],
+            "saturday": [ 12, 22, 30, 9 ],
+            "sunday": [ 11, 21, 29, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 327,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/chris-s-rubber-soul-2001.jpg',
+          title: 'Chris\'s Rubber Soul',
+          artist: 'Dana Schutz',
+          year: '2001',
+          rule: {
+            "monday": [ 11, 21, 29, 8 ],
+            "tuesday": [ 10, 20, 29, 7 ],
+            "wednesday": [ 16, 25, 4, 12 ],
+            "thursday": [ 15, 25, 4, 12 ],
+            "friday": [ 15, 24, 1, 11 ],
+            "saturday": [ 13, 23, 31, 10 ],
+            "sunday": [ 12, 22, 30, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 328,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/erin-hanson-oaks-in-green.jpg',
+          title: 'Oaks in Green',
+          artist: 'Erin Hanson',
+          year: '?',
+          rule: {
+            "monday": [ 12, 22, 30, 9 ],
+            "tuesday": [ 11, 21, 29, 8 ],
+            "wednesday": [ 10, 20, 29, 7 ],
+            "thursday": [ 16, 25, 4, 12 ],
+            "friday": [ 15, 25, 4, 12 ],
+            "saturday": [ 15, 24, 1, 11 ],
+            "sunday": [ 13, 23, 31, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 329,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/yy097-1.jpg',
+          title: 'Untitled',
+          artist: 'Yui Yaegashi',
+          year: '2017',
+          rule: {
+            "monday": [ 14, 24, 1, 11 ],
+            "tuesday": [ 13, 23, 31, 10 ],
+            "wednesday": [ 12, 22, 30, 9 ],
+            "thursday": [ 11, 21, 30, 8 ],
+            "friday": [ 17, 26, 5, 13 ],
+            "saturday": [ 16, 26, 5, 13 ],
+            "sunday": [ 16, 25, 2, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 330,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/eyes-study.JPG',
+          title: 'Eyes study',
+          artist: 'Lilian Greisse',
+          year: '2017',
+          rule: {
+            "monday": [ 16, 25, 2, 12 ],
+            "tuesday": [ 14, 24, 1, 11 ],
+            "wednesday": [ 13, 23, 31, 10 ],
+            "thursday": [ 12, 22, 30, 9 ],
+            "friday": [ 11, 21, 30, 8 ],
+            "saturday": [ 17, 26, 5, 13 ],
+            "sunday": [ 16, 26, 5, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
