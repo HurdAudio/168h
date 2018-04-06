@@ -2920,6 +2920,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 163,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3388044770/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://arrington.bandcamp.com/album/trance-music-for-crows',
+          a_string: 'Trance Music For Crows by Trance Music For Crows',
+          rule: {
+            "monday": [ 1, 9, 22, 21 ],
+            "tuesday": [ 5, 13, 26, 25 ],
+            "wednesday": [ 4, 12, 25, 24 ],
+            "thursday": [ 3, 11, 24, 23 ],
+            "saturday": [ 2, 10, 23, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 164,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2352224956/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://arrington.bandcamp.com/album/psicolomagicolo-2005',
+          a_string: 'Psicolomagicolo (2005) by Arrington de Dionyso and Nusch Werchowska',
+          rule: {
+            "monday": [ 2, 10, 23, 22 ],
+            "tuesday": [ 1, 9, 22, 21 ],
+            "wednesday": [ 5, 13, 26, 25 ],
+            "thursday": [ 4, 12, 25, 24 ],
+            "saturday": [ 3, 11, 24, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 165,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3928673971/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://arrington.bandcamp.com/album/open-the-crown',
+          a_string: 'Open the Crown by Arrington de Dionyso&#39;s Malaikat dan Singa',
+          rule: {
+            "monday": [ 3, 11, 24, 23 ],
+            "tuesday": [ 2, 10, 23, 22 ],
+            "wednesday": [ 1, 9, 22, 21 ],
+            "thursday": [ 5, 13, 26, 25 ],
+            "saturday": [ 4, 12, 25, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {

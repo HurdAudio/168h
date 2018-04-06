@@ -8521,7 +8521,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 543,
           user_id: 1,
-          name: 'The rapture occured after a devestating earthquake on this day in 2011 according to the prolific doomsday seer Harold Camping.',
+          name: 'The rapture occurred after a devestating earthquake on this day in 2011 according to the prolific doomsday seer Harold Camping.',
           color: '#8A4E4D',
           picture: './img/doomsday/wewasraptured.jpg',
           day_of: new Date ('2011-05-21T13:44:00.000Z'),
@@ -8615,7 +8615,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 549,
           user_id: 1,
-          name: 'The second coming of Jesus Christ occured on this day in 2000 according to James Harmston of the True and Living Church of Jesus Christ of Saints of the Last Days',
+          name: 'The second coming of Jesus Christ occurred on this day in 2000 according to James Harmston of the True and Living Church of Jesus Christ of Saints of the Last Days',
           color: '#598C75',
           picture: './img/doomsday/trueandlivingblahblahblah.jpg',
           day_of: new Date ('2000-04-06T13:44:00.000Z'),
@@ -8854,7 +8854,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 565,
           user_id: 1,
-          name: 'The rapture occured on this day in 1992 according to Lee Jang Rim (이장림 or 李長林) of the Dami Mission church.',
+          name: 'The rapture occurred on this day in 1992 according to Lee Jang Rim (이장림 or 李長林) of the Dami Mission church.',
           color: '#B8988A',
           picture: './img/doomsday/damimission.jpg',
           day_of: new Date ('1992-10-28T13:44:00.000Z'),
@@ -8943,7 +8943,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 571,
           user_id: 1,
-          name: 'The rapture occured on this date in 1988 as promised by Edgar C. Whisenant - author of 88 Reasons Why the Rapture Will Be in 1988. He settled on this date when the rapture failed to materialize between September 11-13.',
+          name: 'The rapture occurred on this date in 1988 as promised by Edgar C. Whisenant - author of 88 Reasons Why the Rapture Will Be in 1988. He settled on this date when the rapture failed to materialize between September 11-13.',
           color: '#E2C17C',
           picture: './img/doomsday/88reasons.jpg',
           day_of: new Date ('1988-10-03T13:44:00.000Z'),
@@ -9149,7 +9149,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 585,
           user_id: 1,
-          name: 'The second coming of Jesus Christ occured on this day in 1844, as oppowed to William Miller\'s original prediction of March 21 that same year',
+          name: 'The second coming of Jesus Christ occurred on this day in 1844, as oppowed to William Miller\'s original prediction of March 21 that same year',
           color: '#5C5C5C',
           picture: './img/doomsday/William_Miller.jpg',
           day_of: new Date ('1844-10-22T13:44:00.000Z'),
@@ -9205,7 +9205,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 589,
           user_id: 1,
-          name: 'The second coming of Jesus occured on this day in 1843 as per the expectations of the Millerites',
+          name: 'The second coming of Jesus occurred on this day in 1843 as per the expectations of the Millerites',
           color: '#5D616C',
           picture: './img/doomsday/William-Miller.jpg',
           day_of: new Date ('1843-04-28T13:44:00.000Z'),
