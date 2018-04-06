@@ -3244,6 +3244,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 181,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2014340314/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://gohleekwang.bandcamp.com/album/morning-study',
+          a_string: 'Morning (Study) by Goh Lee Kwang',
+          rule: {
+            "monday": [ 30, 6, 12, 25 ],
+            "tuesday": [ 29, 4, 11, 24 ],
+            "wednesday": [ 28, 3, 10, 23 ],
+            "thursday": [ 27, 2, 9, 22 ],
+            "saturday": [ 26, 1, 8, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 182,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3008094938/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://gohleekwang.bandcamp.com/album/androids-blues',
+          a_string: 'Android&#39;s Blues by Goh Lee Kwang',
+          rule: {
+            "monday": [ 27, 2, 9, 22 ],
+            "tuesday": [ 31, 7, 13, 26 ],
+            "wednesday": [ 30, 5, 12, 25 ],
+            "thursday": [ 29, 4, 11, 24 ],
+            "saturday": [ 28, 3, 10, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 183,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2409706674/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://gohleekwang.bandcamp.com/album/at-your-service-2',
+          a_string: 'At Your Service by Goh Lee Kwang',
+          rule: {
+            "monday": [ 28, 3, 10, 23 ],
+            "tuesday": [ 27, 2, 9, 22 ],
+            "wednesday": [ 31, 7, 13, 26 ],
+            "thursday": [ 30, 5, 12, 25 ],
+            "saturday": [ 29, 4, 11, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
