@@ -6304,6 +6304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 316,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/p19etn4pss1gfrlnb1dh812bf1v1k3.jpg',
+          title: 'San Diego Padres',
+          artist: 'Denis Poroy',
+          year: '2014',
+          rule: {
+            "monday": [ 29, 19, 25, 2 ],
+            "tuesday": [ 14, 19, 25, 1 ],
+            "wednesday": [ 13, 17, 2, 30 ],
+            "thursday": [ 12, 17, 22, 28 ],
+            "friday": [ 11, 16, 22, 28 ],
+            "saturday": [ 10, 15, 21, 27 ],
+            "sunday": [ 15, 21, 26, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 317,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/san_diego_padres_logo-1967.gif',
+          title: 'San Diego Padres Logo 1967',
+          artist: '?',
+          year: '1967',
+          rule: {
+            "monday": [ 15, 21, 26, 3 ],
+            "tuesday": [ 29, 19, 25, 2 ],
+            "wednesday": [ 14, 19, 25, 1 ],
+            "thursday": [ 13, 17, 2, 30 ],
+            "friday": [ 12, 17, 22, 28 ],
+            "saturday": [ 11, 16, 22, 28 ],
+            "sunday": [ 10, 15, 21, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 318,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/SDHosmer.jpg',
+          title: 'Eric Hosmer of the San Diego Padres',
+          artist: 'USA Sports',
+          year: '2018',
+          rule: {
+            "monday": [ 10, 15, 21, 27 ],
+            "tuesday": [ 15, 21, 26, 3 ],
+            "wednesday": [ 29, 19, 25, 2 ],
+            "thursday": [ 14, 19, 25, 1 ],
+            "friday": [ 13, 17, 2, 30 ],
+            "saturday": [ 12, 17, 22, 28 ],
+            "sunday": [ 11, 16, 22, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 319,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/Petco1200x600.jpg',
+          title: 'Petco Park',
+          artist: '?',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 11, 16, 22, 28 ],
+            "tuesday": [ 10, 15, 21, 27 ],
+            "wednesday": [ 15, 21, 26, 3 ],
+            "thursday": [ 29, 19, 25, 2 ],
+            "friday": [ 14, 19, 25, 1 ],
+            "saturday": [ 13, 17, 2, 30 ],
+            "sunday": [ 12, 17, 22, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 320,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/822799972.0.jpg',
+          title: 'Kyle Lloyd, RHP, San Diego Padres',
+          artist: 'Denis Poroy',
+          year: '2017',
+          rule: {
+            "monday": [ 12, 17, 22, 28 ],
+            "tuesday": [ 11, 16, 22, 28 ],
+            "wednesday": [ 10, 15, 21, 27 ],
+            "thursday": [ 15, 21, 26, 3 ],
+            "friday": [ 29, 19, 25, 2 ],
+            "saturday": [ 14, 19, 25, 1 ],
+            "sunday": [ 13, 17, 2, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
