@@ -2812,6 +2812,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 157,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1522581372/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jackotheclock.bandcamp.com/album/rare-weather',
+          a_string: 'Rare Weather by Jack O&#39; The Clock',
+          rule: {
+            "monday": [ 26, 16, 24, 18 ],
+            "tuesday": [ 25, 15, 23, 17 ],
+            "wednesday": [ 24, 14, 22, 17 ],
+            "thursday": [ 23, 13, 21, 15 ],
+            "saturday": [ 22, 12, 20, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 158,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3546949173/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jackotheclock.bandcamp.com/album/how-are-we-doing-and-who-will-tell-us',
+          a_string: 'How Are We Doing And Who Will Tell Us? by Jack O&#39; The Clock',
+          rule: {
+            "monday": [ 22, 12, 20, 14 ],
+            "tuesday": [ 26, 16, 24, 18 ],
+            "wednesday": [ 25, 15, 23, 17 ],
+            "thursday": [ 24, 14, 22, 17 ],
+            "saturday": [ 23, 13, 21, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 159,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3886216694/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jackotheclock.bandcamp.com/album/all-my-friends',
+          a_string: 'All My Friends by Jack O&#39; The Clock',
+          rule: {
+            "monday": [ 23, 13, 21, 15 ],
+            "tuesday": [ 22, 12, 20, 14 ],
+            "wednesday": [ 26, 16, 24, 18 ],
+            "thursday": [ 25, 15, 23, 17 ],
+            "saturday": [ 24, 14, 22, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
