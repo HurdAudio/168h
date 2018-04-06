@@ -236,6 +236,77 @@
       vm.timeblockShareDeleteDeny = timeblockShareDeleteDeny;
       vm.timeblockShareDeleteConfirm = timeblockShareDeleteConfirm;
       vm.addNewComment = addNewComment;
+      vm.declineHolidayShare = declineHolidayShare;
+      vm.acceptHolidayShare = acceptHolidayShare;
+
+      function holidayPoster(targetUserId, holiday) {
+        let subObj = {
+          user_id: targetUserId,
+          name: holiday.name,
+          color: holiday.color,
+          picture: holiday.picture,
+          day_of: holiday.day_of,
+          is_annual: holiday.is_annual,
+          rule: holiday.rule,
+          art_override: holiday.art_override,
+          music_override: holiday.music_override,
+          override_content: holiday.override_content
+        };
+        $http.post('/holidays', subObj).
+        then(()=>{
+          console.log('posted');
+        });
+      }
+
+      function addHolidayShare(share) {
+        let holidayName = '';
+        $http.get(`/holidaysbyuser/${share.user_id}`)
+        .then(holidayListData=>{
+          let holidayList = holidayListData.data;
+          let holidayRef = holidayList.filter(entry=>{
+            return(entry.id === share.holiday_id);
+          });
+          holidayName = holidayRef[0].name;
+          let insertableHolidays = holidayList.filter(ent=>{
+            return(ent.name === holidayName);
+          });
+          if (insertableHolidays.length > 0) {
+            for (let i = 0; i < insertableHolidays.length; i++) {
+              holidayPoster(share.share_associate_id, insertableHolidays[i]);
+            }
+          } else {
+            alert ('ERROR inserting holiday(s).');
+          }
+        });
+      }
+
+      function acceptHolidayShare(holidayShareId) {
+        let subObj = {
+          accepted: true,
+          responded: true
+        };
+        $http.patch(`/holiday_shares/${holidayShareId}`, subObj)
+        .then(holidayShareData=>{
+          let holidayShare = holidayShareData.data;
+          document.getElementById('holidayAcceptDecline' + holidayShare.id).setAttribute("style", "display: none;");
+          document.getElementById('holidayShareAccepted' + holidayShare.id).setAttribute("style", "display: initial;");
+          addHolidayShare(holidayShare);
+        });
+      }
+
+      function declineHolidayShare(holidayShareId) {
+        let subObj = {
+          accepted: false,
+          responded: true
+        };
+        $http.patch(`/holiday_shares/${holidayShareId}`, subObj)
+        .then(holidayShareData=>{
+          let holidayShare = holidayShareData.data;
+          document.getElementById('holidayAcceptDecline' + holidayShare.id).setAttribute("style", "display: none;");
+          document.getElementById('holidayShareDeclined' + holidayShare.id).setAttribute("style", "display: initial;");
+        });
+
+      }
 
       function addNewComment(messageId) {
         let newCommentButton = document.getElementById('newCommentButton' + messageId);
@@ -13504,6 +13575,15 @@
         });
       }
 
+      function gatherHolidayInviteeData(userId, index) {
+        $http.get(`/users/${userId}`)
+        .then(inviteeData=>{
+          let invitee = inviteeData.data;
+          vm.activeHolidayShares[index].inviteeImg = invitee.user_avatar_url;
+          vm.activeHolidayShares[index].invitee = invitee.name;
+        });
+      }
+
       function gatherHolidayInviterData(userId, index) {
         $http.get(`/users/${userId}`)
         .then(inUserData=>{
@@ -13558,6 +13638,8 @@
           let holidate;
           vm.activeHolidayShares[index].name = holiday.name;
           vm.activeHolidayShares[index].picture = holiday.picture;
+          // vm.activeHolidayShares[index].share_associate_id = holiday.share_associate_id;
+          // vm.activeHolidayShares[index].id = holiday.id;
           if (holiday.is_annual) {
             holidate = new Date(holiday.day_of);
             vm.activeHolidayShares[index].annuality = 'On ' + holidate.getDate() + ' ' + months[holidate.getMonth()];
@@ -13606,7 +13688,9 @@
               for (let i = 0; i < holidayShares.length; i++) {
                 vm.activeHolidayShares[i] = {};
                 vm.activeHolidayShares[i].id = holidayShares[i].id;
+                vm.activeHolidayShares[i].share_associate_id = holidayShares[i].share_associate_id;
                 gatherHolidayInviterData(holidayShares[i].user_id, i);
+                gatherHolidayInviteeData(holidayShares[i].share_associate_id, i);
                 vm.activeHolidayShares[i].cleanDate = cleanDateHoliday(holidayShares[i].updated_at) + ' - ' + timeDate(holidayShares[i].updated_at);
                 gatherHolidayShareHoliday(holidayShares[i].holiday_id, i);
                 gatherHolidayShareComments(i, holidayShares[i]);
@@ -13617,8 +13701,37 @@
                 for (let shared = 0; shared < holidayShares.length; shared++) {
                   if (parseInt(holidayShares[shared].share_associate_id) === parseInt(currentUserId)) {
                     document.getElementById('holidayblockInvitee' + holidayShares[shared].id).setAttribute("style", "display: none;");
+                    if (holidayShares[shared].responded) {
+                      document.getElementById('holidayAcceptDecline' + holidayShares[shared].id).setAttribute("style", "display: none;");
+                      if (holidayShares[shared].accepted) {
+                        document.getElementById('holidayShareAccepted' + holidayShares[shared].id).setAttribute("style", "display: initial;");
+                        document.getElementById('holidayShareDeclined' + holidayShares[shared].id).setAttribute("style", "display: none;");
+                      } else {
+                        document.getElementById('holidayShareAccepted' + holidayShares[shared].id).setAttribute("style", "display: none;");
+                        document.getElementById('holidayShareDeclined' + holidayShares[shared].id).setAttribute("style", "display: initial;");
+                      }
+                    } else {
+                      // document.getElementById('holidayAcceptDecline' + holidayShares[shared].id).setAttribute("style", "display: initial;");
+                      // document.getElementById('holidayAcceptDecline' + holidayShares[shared].id).className = 'holidayAcceptDenyButtons';
+                      document.getElementById('holidayShareAccepted' + holidayShares[shared].id).setAttribute("style", "display: none;");
+                      document.getElementById('holidayShareDeclined' + holidayShares[shared].id).setAttribute("style", "display: none;");
+                    }
+
                   } else {
                     document.getElementById('holidayblockInviter' + holidayShares[shared].id).setAttribute("style", "display: none;");
+                    document.getElementById('holidayAcceptDecline' + holidayShares[shared].id).setAttribute("style", "display: none;");
+                    if (holidayShares[shared].responded) {
+                      if (holidayShares[shared].accepted) {
+                        document.getElementById('holidayShareAccepted' + holidayShares[shared].id).setAttribute("style", "display: initial;");
+                        document.getElementById('holidayShareDeclined' + holidayShares[shared].id).setAttribute("style", "display: none;");
+                      } else {
+                        document.getElementById('holidayShareAccepted' + holidayShares[shared].id).setAttribute("style", "display: none;");
+                        document.getElementById('holidayShareDeclined' + holidayShares[shared].id).setAttribute("style", "display: initial;");
+                      }
+                    } else {
+                      document.getElementById('holidayShareAccepted' + holidayShares[shared].id).setAttribute("style", "display: none;");
+                      document.getElementById('holidayShareDeclined' + holidayShares[shared].id).setAttribute("style", "display: none;");
+                    }
                   }
                 }
               }

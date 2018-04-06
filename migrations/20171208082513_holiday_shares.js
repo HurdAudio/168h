@@ -6,6 +6,7 @@ exports.up = function(knex, Promise) {
     table.integer('holiday_id').nullable().references('id').inTable('holidays').onDelete('CASCADE').index();
     table.integer('share_associate_id').notNullable().defaultTo(1).references('id').inTable('users').onDelete('CASCADE').index();
     table.boolean('accepted').notNullable().defaultTo(false);
+    table.boolean('responded').notNullable().defaultTo(false);
     table.timestamps(true, true);
   });
 };

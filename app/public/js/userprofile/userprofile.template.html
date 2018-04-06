@@ -5101,7 +5101,7 @@
 
               <img src="{{holiday.inviterImg}}"><br>
               <p id="holidayblockInviter{{holiday.id}}">{{holiday.inviter}} has shared the following holiday with you on {{holiday.cleanDate}}</p>
-              <p id="holidayblockInvitee{{holiday.id}}">You have shared the following holiday with {{holiday.inviter}} on {{holiday.cleanDate}}</p>
+              <p id="holidayblockInvitee{{holiday.id}}">You have shared the following holiday with {{holiday.invitee}} on {{holiday.cleanDate}}</p>
 
               <br><br><br><br><br><br>
               <h3>{{holiday.name}}</h3>
@@ -5122,10 +5122,20 @@
               </main>
 
 
-              <div class="holidayAcceptDenyButtons" id="holidayAcceptDecline">
+              <div class="holidayAcceptDenyButtons" id="holidayAcceptDecline{{holiday.id}}">
 
-                <a class="btn">Decline</a>
-                <a class="btn">Accept</a>
+                <a class="btn" ng-click="$ctrl.declineHolidayShare(holiday.id)">Decline</a>
+                <a class="btn" ng-click="$ctrl.acceptHolidayShare(holiday.id)">Accept</a>
+              </div><br><br>
+              <br><br><div id="holidayShareAccepted{{holiday.id}}">
+
+                <img src="{{holiday.inviteeImg}}"><br>
+                <br><h3>{{holiday.invitee}} has accepted this holiday.</h3>
+              </div>
+              <br><br><div id="holidayShareDeclined{{holiday.id}}">
+
+                <img src="{{holiday.inviteeImg}}"><br>
+                <br><h3>{{holiday.invitee}} has declined this holiday.</h3>
               </div>
 
               <a href=""><h3>comment</h3></a>
