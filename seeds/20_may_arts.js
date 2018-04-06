@@ -6104,6 +6104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 306,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/suicide-8.jpg',
+          title: 'Suicide',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 5, 16, 25, 4 ],
+            "tuesday": [ 3, 13, 23, 31 ],
+            "wednesday": [ 1, 10, 22, 31 ],
+            "thursday": [ 13, 23, 2, 10 ],
+            "friday": [ 11, 22, 31, 10 ],
+            "saturday": [ 9, 19, 27, 8 ],
+            "sunday": [ 6, 17, 27, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 307,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/suicide-9.jpg',
+          title: 'Suicide',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 6, 17, 27, 16 ],
+            "tuesday": [ 5, 16, 25, 4 ],
+            "wednesday": [ 3, 13, 23, 31 ],
+            "thursday": [ 1, 10, 22, 31 ],
+            "friday": [ 13, 23, 2, 10 ],
+            "saturday": [ 11, 22, 31, 10 ],
+            "sunday": [ 9, 19, 27, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 308,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/suicide-10.jpg',
+          title: 'Suicide',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 10, 20, 28, 9 ],
+            "tuesday": [ 7, 18, 28, 17 ],
+            "wednesday": [ 6, 17, 26, 5 ],
+            "thursday": [ 4, 14, 24, 1 ],
+            "friday": [ 2, 11, 23, 1 ],
+            "saturday": [ 14, 24, 3, 11 ],
+            "sunday": [ 12, 23, 1, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 309,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/suicide-11.jpg',
+          title: 'Suicide',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 12, 23, 1, 11 ],
+            "tuesday": [ 10, 20, 28, 9 ],
+            "wednesday": [ 7, 18, 28, 17 ],
+            "thursday": [ 6, 17, 26, 5 ],
+            "friday": [ 4, 14, 24, 1 ],
+            "saturday": [ 2, 11, 23, 1 ],
+            "sunday": [ 14, 24, 3, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 310,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/suicide-12.jpg',
+          title: 'Suicide',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 14, 24, 3, 11 ],
+            "tuesday": [ 12, 23, 1, 11 ],
+            "wednesday": [ 10, 20, 28, 9 ],
+            "thursday": [ 7, 18, 28, 17 ],
+            "friday": [ 6, 17, 26, 5 ],
+            "saturday": [ 4, 14, 24, 1 ],
+            "sunday": [ 2, 11, 23, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
