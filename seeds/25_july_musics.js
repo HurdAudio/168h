@@ -3082,6 +3082,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 172,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3868454649/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://unknown-mortal-orchestra.bandcamp.com/album/sex-food',
+          a_string: 'Sex &amp; Food by Unknown Mortal Orchestra',
+          rule: {
+            "monday": [ 25, 27, 31, 8 ],
+            "tuesday": [ 24, 26, 30, 7 ],
+            "wednesday": [ 23, 24, 29, 6 ],
+            "thursday": [ 22, 24, 28, 5 ],
+            "saturday": [ 26, 28, 1, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 173,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4285268528/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://meltedicecream.bandcamp.com/album/sickest-smashes-from-arson-city',
+          a_string: 'Sickest Smashes from Arson City by Melted Ice Cream',
+          rule: {
+            "monday": [ 26, 28, 1, 9 ],
+            "tuesday": [ 25, 27, 31, 8 ],
+            "wednesday": [ 24, 26, 30, 7 ],
+            "thursday": [ 23, 24, 29, 6 ],
+            "saturday": [ 22, 24, 28, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 174,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3258870609/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://meltedicecream.bandcamp.com/album/difficult-listening',
+          a_string: 'Difficult Listening by Thrill Collins',
+          rule: {
+            "monday": [ 22, 24, 28, 5 ],
+            "tuesday": [ 26, 28, 1, 9 ],
+            "wednesday": [ 25, 27, 31, 8 ],
+            "thursday": [ 24, 26, 30, 7 ],
+            "saturday": [ 23, 24, 29, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
