@@ -4804,6 +4804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 241,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/04-12-25,NYTribune.jpg',
+          title: 'NY Tribune',
+          artist: 'John R. Neill',
+          year: '1904',
+          rule: {
+            "monday": [ 1, 14, 2, 9 ],
+            "tuesday": [ 7, 20, 28, 3 ],
+            "wednesday": [ 6, 19, 27, 2 ],
+            "thursday": [ 5, 18, 26, 1 ],
+            "friday": [ 4, 17, 25, 31 ],
+            "saturday": [ 3, 16, 24, 30 ],
+            "sunday": [ 2, 14, 23, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 242,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/31-04,FarmerAd.jpg',
+          title: 'Advertisement',
+          artist: 'Art Nelson',
+          year: '1931',
+          rule: {
+            "monday": [ 2, 14, 23, 29 ],
+            "tuesday": [ 1, 14, 2, 9 ],
+            "wednesday": [ 7, 20, 28, 3 ],
+            "thursday": [ 6, 19, 27, 2 ],
+            "friday": [ 5, 18, 26, 1 ],
+            "saturday": [ 4, 17, 25, 31 ],
+            "sunday": [ 3, 16, 24, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 243,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/19-03,BoysLife-2.jpg',
+          title: 'Boy\'s Life',
+          artist: 'Ralph Nelson',
+          year: '1919',
+          rule: {
+            "monday": [ 3, 16, 24, 30 ],
+            "tuesday": [ 2, 14, 23, 29 ],
+            "wednesday": [ 1, 14, 2, 9 ],
+            "thursday": [ 7, 20, 28, 3 ],
+            "friday": [ 6, 19, 27, 2 ],
+            "saturday": [ 5, 18, 26, 1 ],
+            "sunday": [ 4, 17, 25, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 244,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/17-00,BuffaloBill.jpg',
+          title: 'Buffalo Bill Book',
+          artist: 'Neil O\'Keeffe',
+          year: '1917',
+          rule: {
+            "monday": [ 4, 17, 25, 31 ],
+            "tuesday": [ 3, 16, 24, 30 ],
+            "wednesday": [ 2, 14, 23, 29 ],
+            "thursday": [ 1, 14, 2, 9 ],
+            "friday": [ 7, 20, 28, 3 ],
+            "saturday": [ 6, 19, 27, 2 ],
+            "sunday": [ 5, 18, 26, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 245,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/18-02-03,ChiSunTrb.jpg',
+          title: 'Chicago Tribune',
+          artist: 'Paul Orban',
+          year: '1918',
+          rule: {
+            "monday": [ 6, 19, 27, 2 ],
+            "tuesday": [ 5, 18, 26, 1 ],
+            "wednesday": [ 4, 17, 25, 31 ],
+            "thursday": [ 3, 15, 24, 30 ],
+            "friday": [ 2, 15, 3, 10 ],
+            "saturday": [ 8, 21, 29, 4 ],
+            "sunday": [ 7, 20, 28, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
