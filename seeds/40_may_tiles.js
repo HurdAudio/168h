@@ -592,6 +592,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FEFEFF',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 43,
+          user_id: 1,
+          theme: 'Greenery',
+          type: 'week',
+          src_string: '../img/may_tiles/Fern-Leaf-Landscapes-Nature-Leaves-Green-Nature-Fr-9444.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '133%',
+          color_dark: '#10150F',
+          color_medium: '#789159',
+          color_light: '#F0EEE6',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
