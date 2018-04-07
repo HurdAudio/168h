@@ -5604,6 +5604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 281,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/a-horseback-ride-1900.jpg',
+          title: 'A horseback ride',
+          artist: 'Richard Friese',
+          year: '1900',
+          rule: {
+            "monday": [ 12, 15, 24, 9 ],
+            "tuesday": [ 11, 15, 23, 8 ],
+            "wednesday": [ 10, 14, 22, 7 ],
+            "thursday": [ 9, 11, 21, 6 ],
+            "friday": [ 8, 11, 20, 5 ],
+            "saturday": [ 7, 10, 19, 4 ],
+            "sunday": [ 13, 17, 25, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 282,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/lady-with-flowers-anna-amiet-with-flowers-1923.jpg',
+          title: 'Lady With Flowers - Anna Amiet With Flowers',
+          artist: 'Cuno Amiet',
+          year: '1923',
+          rule: {
+            "monday": [ 13, 17, 25, 10 ],
+            "tuesday": [ 12, 15, 24, 9 ],
+            "wednesday": [ 11, 15, 23, 8 ],
+            "thursday": [ 10, 14, 22, 7 ],
+            "friday": [ 9, 11, 21, 6 ],
+            "saturday": [ 8, 11, 20, 5 ],
+            "sunday": [ 7, 10, 19, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 283,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/lucky-strike-1921.jpg',
+          title: 'Lucky Strike',
+          artist: 'Stuart Davis',
+          year: '1921',
+          rule: {
+            "monday": [ 7, 10, 19, 4 ],
+            "tuesday": [ 13, 17, 25, 10 ],
+            "wednesday": [ 12, 15, 24, 9 ],
+            "thursday": [ 11, 15, 23, 8 ],
+            "friday": [ 10, 14, 22, 7 ],
+            "saturday": [ 9, 11, 21, 6 ],
+            "sunday": [ 8, 11, 20, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 284,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/family-1940.jpg',
+          title: 'Family',
+          artist: 'Jose de Almada-Negreiros',
+          year: '1940',
+          rule: {
+            "monday": [ 8, 11, 20, 5 ],
+            "tuesday": [ 7, 10, 19, 4 ],
+            "wednesday": [ 13, 17, 25, 10 ],
+            "thursday": [ 12, 15, 24, 9 ],
+            "friday": [ 11, 15, 23, 8 ],
+            "saturday": [ 10, 14, 22, 7 ],
+            "sunday": [ 9, 11, 21, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 285,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/shepherd-1910.jpg',
+          title: 'Shepherd',
+          artist: 'Eugeniusz Zak',
+          year: '1910',
+          rule: {
+            "monday": [ 9, 11, 21, 6 ],
+            "tuesday": [ 8, 11, 20, 5 ],
+            "wednesday": [ 7, 10, 19, 4 ],
+            "thursday": [ 13, 17, 25, 10 ],
+            "friday": [ 12, 15, 24, 9 ],
+            "saturday": [ 11, 15, 23, 8 ],
+            "sunday": [ 10, 14, 22, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
