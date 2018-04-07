@@ -5804,6 +5804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 291,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/carr-de-couleurs-1960.jpg',
+          title: 'Carré de couleurs',
+          artist: 'Jean Fautrier',
+          year: '1960',
+          rule: {
+            "monday": [ 8, 19, 30, 31 ],
+            "tuesday": [ 7, 18, 29, 9 ],
+            "wednesday": [ 13, 24, 4, 14 ],
+            "thursday": [ 12, 23, 3, 14 ],
+            "friday": [ 11, 22, 2, 13 ],
+            "saturday": [ 10, 21, 1, 2 ],
+            "sunday": [ 9, 20, 30, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 292,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/no-name-1(8).jpg',
+          title: 'The Andalusian Reapers',
+          artist: 'Andre Masson',
+          year: '1935',
+          rule: {
+            "monday": [ 9, 20, 30, 1 ],
+            "tuesday": [ 8, 19, 30, 31 ],
+            "wednesday": [ 7, 18, 29, 9 ],
+            "thursday": [ 13, 24, 4, 14 ],
+            "friday": [ 12, 23, 3, 14 ],
+            "saturday": [ 11, 22, 2, 13 ],
+            "sunday": [ 10, 21, 1, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 293,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/les-m-tamorphoses-1929.jpg',
+          title: 'Les Métamorphoses',
+          artist: 'Jean Hugo',
+          year: '1929',
+          rule: {
+            "monday": [ 10, 21, 1, 2 ],
+            "tuesday": [ 9, 20, 30, 1 ],
+            "wednesday": [ 8, 19, 30, 31 ],
+            "thursday": [ 7, 18, 29, 9 ],
+            "friday": [ 13, 24, 4, 14 ],
+            "saturday": [ 12, 23, 3, 14 ],
+            "sunday": [ 11, 22, 2, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 294,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/at-the-theatre-ebony-and-white.jpg',
+          title: 'At the Theatre, Ebony and White',
+          artist: 'Erte',
+          year: '?',
+          rule: {
+            "monday": [ 12, 23, 3, 14 ],
+            "tuesday": [ 11, 22, 2, 3 ],
+            "wednesday": [ 10, 21, 31, 2 ],
+            "thursday": [ 9, 20, 31, 1 ],
+            "friday": [ 8, 19, 30, 10 ],
+            "saturday": [ 14, 25, 5, 15 ],
+            "sunday": [ 13, 24, 4, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 295,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/the-ball-july-14.jpg',
+          title: 'The Ball July 14',
+          artist: 'Ossip Zadkine',
+          year: '1922',
+          rule: {
+            "monday": [ 13, 24, 4, 15 ],
+            "tuesday": [ 12, 23, 3, 14 ],
+            "wednesday": [ 11, 22, 2, 3 ],
+            "thursday": [ 10, 21, 31, 2 ],
+            "friday": [ 9, 20, 31, 1 ],
+            "saturday": [ 8, 19, 30, 10 ],
+            "sunday": [ 14, 25, 5, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
