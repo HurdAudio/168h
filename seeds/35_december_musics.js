@@ -2542,6 +2542,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 142,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=312535481/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tomze.bandcamp.com/album/postmodern-platos',
+          a_string: 'Postmodern Platos by Tom Ze',
+          rule: {
+            "monday": [ 27, 2, 8, 14 ],
+            "tuesday": [ 26, 1, 7, 12 ],
+            "wednesday": [ 25, 31, 6, 12 ],
+            "thursday": [ 22, 30, 5, 11 ],
+            "saturday": [ 23, 29, 4, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 143,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=420687349/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tomze.bandcamp.com/album/estudando-a-bossa-nordeste-plaza',
+          a_string: 'Estudando a Bossa (Nordeste Plaza) by Tom Ze',
+          rule: {
+            "monday": [ 23, 29, 4, 10 ],
+            "tuesday": [ 27, 2, 8, 14 ],
+            "wednesday": [ 26, 1, 7, 12 ],
+            "thursday": [ 25, 31, 6, 12 ],
+            "saturday": [ 22, 30, 5, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 144,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4249545143/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tomze.bandcamp.com/album/estudando-o-pagode',
+          a_string: 'Estudando o Pagode by Tom Ze',
+          rule: {
+            "monday": [ 22, 30, 5, 11 ],
+            "tuesday": [ 23, 29, 4, 10 ],
+            "wednesday": [ 27, 2, 8, 14 ],
+            "thursday": [ 26, 1, 7, 12 ],
+            "saturday": [ 25, 31, 6, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
