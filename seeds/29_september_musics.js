@@ -2866,6 +2866,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 160,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=298253381/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://hella.bandcamp.com/album/hella-acoustics-ep',
+          a_string: 'Hella Acoustics (EP) by Hella',
+          rule: {
+            "monday": [ 24, 14, 22, 17 ],
+            "tuesday": [ 23, 13, 21, 15 ],
+            "wednesday": [ 22, 12, 20, 14 ],
+            "thursday": [ 26, 16, 24, 18 ],
+            "saturday": [ 25, 15, 23, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 161,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1915231525/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://hella.bandcamp.com/album/homeboy-ep',
+          a_string: 'Homeboy (EP) by Hella',
+          rule: {
+            "monday": [ 26, 16, 24, 18 ],
+            "tuesday": [ 25, 15, 23, 18 ],
+            "wednesday": [ 24, 14, 22, 16 ],
+            "thursday": [ 23, 13, 21, 15 ],
+            "saturday": [ 27, 17, 25, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 162,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1901548176/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://hella.bandcamp.com/album/total-bugs-bunny-on-wild-bass',
+          a_string: 'Total Bugs Bunny on Wild Bass by Hella',
+          rule: {
+            "monday": [ 27, 17, 25, 19 ],
+            "tuesday": [ 26, 16, 24, 18 ],
+            "wednesday": [ 25, 15, 23, 18 ],
+            "thursday": [ 24, 14, 22, 16 ],
+            "saturday": [ 23, 13, 21, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
