@@ -5004,6 +5004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 251,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/this-is-not-a-landscape-2002.jpg',
+          title: 'This Is Not a Landscape',
+          artist: 'Fernando Calhau',
+          year: '2002',
+          rule: {
+            "monday": [ 10, 13, 21, 26 ],
+            "tuesday": [ 9, 13, 20, 25 ],
+            "wednesday": [ 8, 13, 19, 24 ],
+            "thursday": [ 7, 12, 18, 25 ],
+            "friday": [ 13, 18, 24, 29 ],
+            "saturday": [ 12, 17, 22, 28 ],
+            "sunday": [ 11, 16, 22, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 252,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/work-no-275-small-things-2003.jpg',
+          title: 'Work No. 275 (Small Things)',
+          artist: 'Martin Creed',
+          year: '2003',
+          rule: {
+            "monday": [ 12, 17, 23, 27 ],
+            "tuesday": [ 11, 14, 22, 27 ],
+            "wednesday": [ 10, 14, 21, 26 ],
+            "thursday": [ 9, 14, 20, 25 ],
+            "friday": [ 8, 13, 19, 26 ],
+            "saturday": [ 14, 19, 25, 30 ],
+            "sunday": [ 13, 18, 23, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 253,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/20-pearls-1-2003.jpg',
+          title: '20 Pearls (1)',
+          artist: 'Richard Tuttle',
+          year: '2003',
+          rule: {
+            "monday": [ 13, 18, 23, 29 ],
+            "tuesday": [ 12, 17, 23, 27 ],
+            "wednesday": [ 11, 14, 22, 27 ],
+            "thursday": [ 10, 14, 21, 26 ],
+            "friday": [ 9, 14, 20, 25 ],
+            "saturday": [ 8, 13, 19, 26 ],
+            "sunday": [ 14, 19, 25, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 254,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/20-pearls-8-2003.jpg',
+          title: '20 Pearls (8)',
+          artist: 'Richard Tuttle',
+          year: '2003',
+          rule: {
+            "monday": [ 14, 19, 25, 30 ],
+            "tuesday": [ 13, 18, 23, 29 ],
+            "wednesday": [ 12, 17, 23, 27 ],
+            "thursday": [ 11, 14, 22, 27 ],
+            "friday": [ 10, 14, 21, 26 ],
+            "saturday": [ 9, 14, 20, 25 ],
+            "sunday": [ 8, 13, 19, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 255,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/gray-wood-2003.jpg',
+          title: 'Gray Wood',
+          artist: 'Alex Hay',
+          year: '2003',
+          rule: {
+            "monday": [ 8, 13, 19, 26 ],
+            "tuesday": [ 14, 19, 25, 30 ],
+            "wednesday": [ 13, 18, 23, 29 ],
+            "thursday": [ 12, 17, 23, 27 ],
+            "friday": [ 11, 14, 22, 27 ],
+            "saturday": [ 10, 14, 21, 26 ],
+            "sunday": [ 9, 14, 20, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
