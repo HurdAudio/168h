@@ -7564,8 +7564,8 @@ footer img {
 }
 
 
-/* .day {
-  background-image: url(../img/january_tiles/Abstract-Ice-Texture.jpg);
+.day {
+  background-image: url(../img/tiles/background-1986036_1920.jpg);
   background-repeat: no-repeat;
-  background-size: 153%;
-} */
+  background-size: 100%;
+}
