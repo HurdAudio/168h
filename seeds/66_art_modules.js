@@ -964,6 +964,66 @@ exports.seed = function(knex, Promise) {
           public: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 81,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/cat-markings-1-1-11.jpg',
+          title: 'Sam, The Cat With Eyebrows',
+          artist: 'samhaseyebrows',
+          year: 'xxi cent.',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 82,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/cat-markings-10.jpg',
+          title: 'Venus The Two-Faced Kitten',
+          artist: 'VenusTheAmazingChimeraCat',
+          year: 'xxi cent.',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 83,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/cat-markings-5.jpg',
+          title: 'Snowball The Kitler Cat',
+          artist: 'catsthatlooklikehitler',
+          year: 'xxi cent.',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 84,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/cat-markings-9.jpg',
+          title: 'Cat With Grandma-Hair',
+          artist: '?',
+          year: 'xxi cent.',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 85,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/cat-markings-7.jpg',
+          title: 'Monkey Hug From Behind',
+          artist: '?',
+          year: 'xxi cent.',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
