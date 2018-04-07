@@ -2650,6 +2650,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 148,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1780373484/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ukandanz.bandcamp.com/album/awo',
+          a_string: 'Awo by ukandanz',
+          rule: {
+            "monday": [ 23, 4, 15, 19 ],
+            "tuesday": [ 22, 3, 14, 18 ],
+            "wednesday": [ 21, 2, 13, 17 ],
+            "thursday": [ 20, 1, 12, 14 ],
+            "saturday": [ 19, 30, 11, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 149,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=470140445/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ukandanz.bandcamp.com/album/yetchalal',
+          a_string: 'Yetchalal by ukandanz',
+          rule: {
+            "monday": [ 19, 30, 11, 13 ],
+            "tuesday": [ 23, 4, 15, 19 ],
+            "wednesday": [ 22, 3, 14, 18 ],
+            "thursday": [ 21, 2, 13, 17 ],
+            "saturday": [ 20, 1, 12, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 150,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=500743045/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://blackflower1.bandcamp.com/album/intermediate-state',
+          a_string: 'Intermediate State by Black Flower',
+          rule: {
+            "monday": [ 20, 1, 12, 14 ],
+            "tuesday": [ 19, 30, 11, 13 ],
+            "wednesday": [ 23, 4, 15, 19 ],
+            "thursday": [ 22, 3, 14, 18 ],
+            "saturday": [ 21, 2, 13, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
