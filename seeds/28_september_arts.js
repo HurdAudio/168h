@@ -5404,6 +5404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 271,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/the-kora-quartet-1995.jpg',
+          title: 'The Kora Quartet',
+          artist: 'Nzante Spee',
+          year: '1995',
+          rule: {
+            "monday": [ 6, 12, 30, 9 ],
+            "tuesday": [ 5, 11, 29, 7 ],
+            "wednesday": [ 4, 10, 28, 5 ],
+            "thursday": [ 10, 16, 4, 12 ],
+            "friday": [ 9, 15, 3, 11 ],
+            "saturday": [ 8, 14, 2, 10 ],
+            "sunday": [ 7, 13, 1, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 272,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/quintais-de-lisboa-1956.jpg',
+          title: 'Quintais de Lisboa',
+          artist: '1956',
+          year: '',
+          rule: {
+            "monday": [ 7, 13, 1, 9 ],
+            "tuesday": [ 6, 12, 30, 9 ],
+            "wednesday": [ 5, 11, 29, 7 ],
+            "thursday": [ 4, 10, 28, 5 ],
+            "friday": [ 10, 16, 4, 12 ],
+            "saturday": [ 9, 15, 3, 11 ],
+            "sunday": [ 8, 14, 2, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 273,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/sunra-2006.jpg',
+          title: 'SunRa',
+          artist: 'Stanley Whitney',
+          year: '2006',
+          rule: {
+            "monday": [ 9, 15, 3, 11 ],
+            "tuesday": [ 8, 14, 2, 10 ],
+            "wednesday": [ 7, 13, 1, 10 ],
+            "thursday": [ 6, 12, 30, 8 ],
+            "friday": [ 4, 11, 29, 6 ],
+            "saturday": [ 11, 17, 5, 13 ],
+            "sunday": [ 10, 16, 4, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 274,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/crystals-2000.jpg',
+          title: 'Crystals',
+          artist: 'George Saru',
+          year: '2000',
+          rule: {
+            "monday": [ 10, 16, 4, 12 ],
+            "tuesday": [ 9, 15, 3, 11 ],
+            "wednesday": [ 8, 14, 2, 10 ],
+            "thursday": [ 7, 13, 1, 10 ],
+            "friday": [ 6, 12, 30, 8 ],
+            "saturday": [ 4, 11, 29, 6 ],
+            "sunday": [ 11, 17, 5, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 275,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/self-portrait-1977.jpg',
+          title: 'Self-Portrait',
+          artist: 'Joan Brown',
+          year: '1977',
+          rule: {
+            "monday": [ 11, 17, 5, 13 ],
+            "tuesday": [ 10, 16, 4, 12 ],
+            "wednesday": [ 9, 15, 3, 11 ],
+            "thursday": [ 8, 14, 2, 10 ],
+            "friday": [ 7, 13, 1, 10 ],
+            "saturday": [ 6, 12, 30, 8 ],
+            "sunday": [ 4, 11, 29, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
