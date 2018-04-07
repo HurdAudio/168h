@@ -522,6 +522,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#E6EFDD',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 38,
+          user_id: 1,
+          theme: 'Autumnal',
+          type: 'week',
+          src_string: '../img/october_tiles/road-2602778_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '150%',
+          color_dark: '#202020',
+          color_medium: '#FDB77C',
+          color_light: '#FFFFFB',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
