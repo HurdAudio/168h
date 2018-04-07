@@ -2758,6 +2758,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 154,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1520696292/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ironlungpv.bandcamp.com/album/punk-life-is-shit-mlp-lungs-117',
+          a_string: 'Punk Life Is Shit MLP (LUNGS-117) by PHYSIQUE',
+          rule: {
+            "monday": [ 27, 6, 16, 19 ],
+            "tuesday": [ 26, 5, 16, 18 ],
+            "wednesday": [ 30, 9, 19, 22 ],
+            "thursday": [ 29, 8, 18, 21 ],
+            "saturday": [ 28, 7, 17, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 155,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1584927828/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://erstetheketontraeger.bandcamp.com/album/ett-057-warm-bodies-s-t-lp',
+          a_string: 'ETT - 057 - Warm Bodies - s/t LP by Warm Bodies',
+          rule: {
+            "monday": [ 28, 7, 17, 20 ],
+            "tuesday": [ 27, 6, 16, 19 ],
+            "wednesday": [ 26, 5, 16, 18 ],
+            "thursday": [ 30, 9, 19, 22 ],
+            "saturday": [ 29, 8, 18, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 156,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2631531170/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://otobokebeaver.bandcamp.com/album/okoshiyasu-otoboke-beaver-remastered-2018',
+          a_string: 'Okoshiyasu!! Otoboke Beaver (Remastered 2018) by Otoboke Beaver',
+          rule: {
+            "monday": [ 29, 8, 18, 21 ],
+            "tuesday": [ 28, 7, 17, 20 ],
+            "wednesday": [ 27, 6, 16, 19 ],
+            "thursday": [ 26, 5, 16, 18 ],
+            "saturday": [ 30, 9, 19, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
