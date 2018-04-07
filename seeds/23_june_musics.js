@@ -3190,6 +3190,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 178,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3296574152/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://mickchillage.bandcamp.com/album/between-the-endless-silence',
+          a_string: 'Between the Endless Silence by Mick Chillage',
+          rule: {
+            "monday": [ 22, 30, 2, 13 ],
+            "tuesday": [ 26, 30, 6, 17 ],
+            "wednesday": [ 25, 28, 3, 15 ],
+            "thursday": [ 24, 28, 3, 15 ],
+            "saturday": [ 24, 27, 3, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 179,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3074000037/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://mickchillage.bandcamp.com/album/harmonic-connections',
+          a_string: 'Harmonic Connections by Mick Chillage',
+          rule: {
+            "monday": [ 24, 27, 3, 14 ],
+            "tuesday": [ 22, 30, 2, 13 ],
+            "wednesday": [ 26, 30, 6, 17 ],
+            "thursday": [ 25, 28, 3, 15 ],
+            "saturday": [ 24, 28, 3, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 180,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3468505756/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://mickchillage.bandcamp.com/album/skua-atlantic-atlantic-fusion',
+          a_string: 'Skua Atlantic: Atlantic Fusion by Mick Chillage',
+          rule: {
+            "monday": [ 24, 28, 3, 15 ],
+            "tuesday": [ 24, 27, 3, 14 ],
+            "wednesday": [ 22, 30, 2, 13 ],
+            "thursday": [ 26, 30, 6, 17 ],
+            "saturday": [ 25, 28, 3, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
