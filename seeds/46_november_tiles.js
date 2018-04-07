@@ -508,6 +508,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FAFAFA',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 37,
+          user_id: 1,
+          theme: 'Monochromatic',
+          type: 'holiday',
+          src_string: '../img/november_tiles/gallery-famous-monochromatic-paintings-drawings-art-gallery-home-design-famous-monochromatic-paintings-farmhouse-medium-the.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '130%',
+          color_dark: '#181321',
+          color_medium: '#2D69B7',
+          color_light: '#D1CFC4',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
