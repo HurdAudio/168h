@@ -606,6 +606,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#EFF0F2',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 44,
+          user_id: 1,
+          theme: 'Water',
+          type: 'friday',
+          src_string: '../img/april_tiles/school-of-fish-1272678_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '140%',
+          color_dark: '#14181D',
+          color_medium: '#20C8ED',
+          color_light: '#F8FEFF',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
