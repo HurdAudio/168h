@@ -5204,6 +5204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 261,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_worksovpost_00011.jpg',
+          title: '(we) Will build back to fame!',
+          artist: '?',
+          year: '1945',
+          rule: {
+            "monday": [ 12, 23, 3, 7 ],
+            "tuesday": [ 11, 22, 2, 6 ],
+            "wednesday": [ 10, 21, 1, 5 ],
+            "thursday": [ 9, 20, 31, 4 ],
+            "friday": [ 8, 19, 30, 3 ],
+            "saturday": [ 7, 18, 19, 2 ],
+            "sunday": [ 16, 17, 28, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 262,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_breadsovpost_00011.jpg',
+          title: '(if we) Seed at the right time - will get a mountain of grain!',
+          artist: 'V. Govorkov',
+          year: '1946',
+          rule: {
+            "monday": [ 16, 17, 28, 1 ],
+            "tuesday": [ 12, 23, 3, 7 ],
+            "wednesday": [ 11, 22, 2, 6 ],
+            "thursday": [ 10, 21, 1, 5 ],
+            "friday": [ 9, 20, 31, 4 ],
+            "saturday": [ 8, 19, 30, 3 ],
+            "sunday": [ 7, 18, 19, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 263,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_breadsovpost_00009.jpg',
+          title: '(We) will provide the highest yield in 1944...',
+          artist: '?',
+          year: '1944',
+          rule: {
+            "monday": [ 7, 18, 19, 2 ],
+            "tuesday": [ 16, 17, 28, 1 ],
+            "wednesday": [ 12, 23, 3, 7 ],
+            "thursday": [ 11, 22, 2, 6 ],
+            "friday": [ 10, 21, 1, 5 ],
+            "saturday": [ 9, 20, 31, 4 ],
+            "sunday": [ 8, 19, 30, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 264,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_cinsovpost_00005.jpg',
+          title: 'Poster of the film "Ivan the Terrible" directed by S. Eisenstein',
+          artist: '?',
+          year: '1945',
+          rule: {
+            "monday": [ 8, 19, 30, 3 ],
+            "tuesday": [ 7, 18, 19, 2 ],
+            "wednesday": [ 16, 17, 28, 1 ],
+            "thursday": [ 12, 23, 3, 7 ],
+            "friday": [ 11, 22, 2, 6 ],
+            "saturday": [ 10, 21, 1, 5 ],
+            "sunday": [ 9, 20, 31, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 265,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_cultsovpost_00010.jpg',
+          title: 'Salute. Jas-State Orchestra',
+          artist: '?',
+          year: '1944',
+          rule: {
+            "monday": [ 9, 20, 31, 4 ],
+            "tuesday": [ 8, 19, 30, 3 ],
+            "wednesday": [ 7, 18, 19, 2 ],
+            "thursday": [ 16, 17, 28, 1 ],
+            "friday": [ 12, 23, 3, 7 ],
+            "saturday": [ 11, 22, 2, 6 ],
+            "sunday": [ 10, 21, 1, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
