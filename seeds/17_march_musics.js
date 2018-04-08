@@ -3514,6 +3514,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 196,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1951911766/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://zolajesus.bandcamp.com/album/okovi-additions',
+          a_string: 'Okovi: Additions by Zola Jesus',
+          rule: {
+            "monday": [ 1, 7, 13, 21 ],
+            "tuesday": [ 31, 6, 12, 21 ],
+            "wednesday": [ 29, 5, 11, 19 ],
+            "thursday": [ 29, 4, 10, 18 ],
+            "saturday": [ 2, 8, 14, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 197,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1543755718/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://zolajesus.bandcamp.com/album/versions',
+          a_string: 'Versions by Zola Jesus',
+          rule: {
+            "monday": [ 2, 8, 14, 22 ],
+            "tuesday": [ 1, 7, 13, 21 ],
+            "wednesday": [ 31, 6, 12, 21 ],
+            "thursday": [ 29, 5, 11, 19 ],
+            "saturday": [ 29, 4, 10, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 198,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4252760398/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://zolajesus.bandcamp.com/album/conatus',
+          a_string: 'Conatus by Zola Jesus',
+          rule: {
+            "monday": [ 29, 4, 10, 18 ],
+            "tuesday": [ 2, 8, 14, 22 ],
+            "wednesday": [ 1, 7, 13, 21 ],
+            "thursday": [ 31, 6, 12, 21 ],
+            "saturday": [ 29, 5, 11, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
