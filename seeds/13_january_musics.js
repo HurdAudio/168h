@@ -3730,6 +3730,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 208,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3901700372/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://davidlangmusic.bandcamp.com/album/the-day',
+          a_string: 'the day by Maya Beiser &amp; David Lang',
+          rule: {
+            "monday": [ 7, 13, 15, 16 ],
+            "tuesday": [ 6, 13, 14, 15 ],
+            "wednesday": [ 5, 11, 12, 13 ],
+            "thursday": [ 4, 11, 12, 13 ],
+            "saturday": [ 8, 15, 16, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 209,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3565798458/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://michaelgordonmusic.bandcamp.com/album/natural-history',
+          a_string: 'Natural History by Michael Gordon w/ Britt Orchestra, Steiger Butte Drum &amp; Singers, Teddy Abrams',
+          rule: {
+            "monday": [ 8, 15, 16, 17 ],
+            "tuesday": [ 7, 13, 15, 16 ],
+            "wednesday": [ 6, 13, 14, 15 ],
+            "thursday": [ 5, 11, 12, 13 ],
+            "saturday": [ 4, 11, 12, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 210,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=57620550/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://davidlangmusic.bandcamp.com/album/writing-on-water',
+          a_string: 'writing on water by David Lang',
+          rule: {
+            "monday": [ 5, 12, 13, 14 ],
+            "tuesday": [ 9, 16, 17, 18 ],
+            "wednesday": [ 8, 14, 16, 17 ],
+            "thursday": [ 7, 14, 15, 16 ],
+            "saturday": [ 6, 12, 13, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
