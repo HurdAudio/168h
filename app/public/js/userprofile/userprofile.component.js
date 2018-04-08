@@ -238,6 +238,51 @@
       vm.addNewComment = addNewComment;
       vm.declineHolidayShare = declineHolidayShare;
       vm.acceptHolidayShare = acceptHolidayShare;
+      vm.userDeleteTimeblockShareComment = userDeleteTimeblockShareComment;
+      vm.userTimeblockCommentDeleteCancel = userTimeblockCommentDeleteCancel;
+      vm.userTimeblockCommentDeleteConfirmClick = userTimeblockCommentDeleteConfirmClick;
+
+      function userTimeblockCommentDeleteConfirmClick(timeblockShareCommentId) {
+        let deleteTimeblockCommentConfirm = document.getElementById('deleteTimeblockCommentConfirm' + timeblockShareCommentId);
+        let editDeleteTimeblockShareCommentDiv = document.getElementById('editDeleteTimeblockShareCommentDiv' + timeblockShareCommentId);
+        let timeblockIndex = 0;
+        let timeblockCommentIndex = 0;
+
+        $http.delete(`/timeblock_share_comments/${timeblockShareCommentId}`)
+        .then(goneCommentData=>{
+          let goneComment = goneCommentData.data;
+          for (let i = 0; i < vm.activeTimeblockShares.length; i++) {
+            if ((vm.activeTimeblockShares[i].comments !== undefined) && (vm.activeTimeblockShares[i].comments.length > 0)) {
+              for (let j = 0; j < vm.activeTimeblockShares[i].comments.length; j++) {
+                if (parseInt(vm.activeTimeblockShares[i].comments[j].id) === parseInt(goneComment.id)) {
+                  timeblockIndex = i;
+                  timeblockCommentIndex = j;
+                }
+              }
+            }
+          }
+          vm.activeTimeblockShares[timeblockIndex].comments.splice(timeblockCommentIndex, 1);
+        });
+
+        deleteTimeblockCommentConfirm.setAttribute("style", "display: none;");
+        editDeleteTimeblockShareCommentDiv.setAttribute("style", "display: initial;");
+      }
+
+      function userTimeblockCommentDeleteCancel(timeblockShareCommentId) {
+        let deleteTimeblockCommentConfirm = document.getElementById('deleteTimeblockCommentConfirm' + timeblockShareCommentId);
+        let editDeleteTimeblockShareCommentDiv = document.getElementById('editDeleteTimeblockShareCommentDiv' + timeblockShareCommentId);
+
+        deleteTimeblockCommentConfirm.setAttribute("style", "display: none;");
+        editDeleteTimeblockShareCommentDiv.setAttribute("style", "display: initial;");
+      }
+
+      function userDeleteTimeblockShareComment(timeblockShareCommentId) {
+        let deleteTimeblockCommentConfirm = document.getElementById('deleteTimeblockCommentConfirm' + timeblockShareCommentId);
+        let editDeleteTimeblockShareCommentDiv = document.getElementById('editDeleteTimeblockShareCommentDiv' + timeblockShareCommentId);
+
+        deleteTimeblockCommentConfirm.setAttribute("style", "display: initial;");
+        editDeleteTimeblockShareCommentDiv.setAttribute("style", "display: none;");
+      }
 
       function holidayPoster(targetUserId, holiday) {
         let subObj = {

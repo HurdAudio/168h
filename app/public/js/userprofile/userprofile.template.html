@@ -5073,6 +5073,12 @@
             <textarea id="thisIsTheTimeblockShareCommentEditor{{comment.id}}" class="pure-input-1" rows="5"></textarea>
             <div class="thisIsMessageEditDoneDiv" id="thisIsTimeblockShareCommentEditDoneDiv{{comment.id}}"><a class="btn" id="thisIsTheTimeblockShareCommentEditorDoneButton{{comment.id}}" href="#" ng-click="$ctrl.userEditTimeblockShareCommentCompleted(comment.id)">done</a></div>
             <h3 id="thisIsTheTimeblockShareComment{{comment.id}}">{{comment.comment}}</h3><br>
+            <div id="deleteTimeblockCommentConfirm{{comment.id}}" class="messageEditDelete">
+
+              <h3>Delete comment forever?</h3>
+              <a class="btn" href="#" ng-click="$ctrl.userTimeblockCommentDeleteCancel(comment.id)">no</a>
+              <a class="btn" href="#" ng-click="$ctrl.userTimeblockCommentDeleteConfirmClick(comment.id)">yes</a>
+            </div>
             <div id="editDeleteTimeblockShareCommentDiv{{comment.id}}" class="messageEditDelete">
               <a class="btn" href="#" ng-click="$ctrl.userEditTimeblockShareComment(comment.id)">edit</a>
               <a class="btn" href="#" ng-click="$ctrl.userDeleteTimeblockShareComment(comment.id)">delete</a>
