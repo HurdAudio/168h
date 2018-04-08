@@ -7004,6 +7004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 351,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/relief-in-orange-and-blue-1956.jpg',
+          title: 'Relief in Orange and Blue',
+          artist: 'Lygia Pape',
+          year: '1956',
+          rule: {
+            "monday": [ 24, 25, 17, 20 ],
+            "tuesday": [ 27, 28, 19, 23 ],
+            "wednesday": [ 30, 1, 2, 4 ],
+            "thursday": [ 1, 3, 7, 10 ],
+            "friday": [ 3, 5, 6, 9 ],
+            "saturday": [ 19, 20, 31, 23 ],
+            "sunday": [ 22, 24, 16, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 352,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/black-painting-1972.jpg',
+          title: 'Black Painting',
+          artist: 'Gary Kuehn',
+          year: '1972',
+          rule: {
+            "monday": [ 22, 24, 16, 5 ],
+            "tuesday": [ 24, 25, 17, 20 ],
+            "wednesday": [ 27, 28, 19, 23 ],
+            "thursday": [ 30, 1, 2, 4 ],
+            "friday": [ 1, 3, 7, 10 ],
+            "saturday": [ 3, 5, 6, 9 ],
+            "sunday": [ 19, 20, 31, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 353,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/red-staff-1937.jpg',
+          title: 'Red Staff',
+          artist: 'Rudolf Bauer',
+          year: '1937',
+          rule: {
+            "monday": [ 19, 20, 31, 23 ],
+            "tuesday": [ 22, 24, 16, 5 ],
+            "wednesday": [ 24, 25, 17, 20 ],
+            "thursday": [ 27, 28, 19, 23 ],
+            "friday": [ 30, 1, 2, 4 ],
+            "saturday": [ 1, 3, 7, 10 ],
+            "sunday": [ 3, 5, 6, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 354,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/composition-ii-2000.jpg',
+          title: 'Composition II',
+          artist: 'Ion Alin Gheorghiu',
+          year: '2000',
+          rule: {
+            "monday": [ 3, 5, 6, 9 ],
+            "tuesday": [ 19, 20, 31, 23 ],
+            "wednesday": [ 22, 24, 16, 5 ],
+            "thursday": [ 24, 25, 17, 20 ],
+            "friday": [ 27, 28, 19, 23 ],
+            "saturday": [ 30, 1, 2, 4 ],
+            "sunday": [ 1, 3, 7, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 355,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/black-jack-1964.jpg',
+          title: 'Black Jack',
+          artist: 'Howard Mehring',
+          year: '1964',
+          rule: {
+            "monday": [ 1, 3, 7, 10 ],
+            "tuesday": [ 3, 5, 6, 9 ],
+            "wednesday": [ 19, 20, 31, 23 ],
+            "thursday": [ 22, 24, 16, 5 ],
+            "friday": [ 24, 25, 17, 20 ],
+            "saturday": [ 27, 28, 19, 23 ],
+            "sunday": [ 30, 1, 2, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
