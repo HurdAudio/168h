@@ -6604,6 +6604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 331,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/play-school-2008.jpg',
+          title: 'Play School',
+          artist: 'Sharon Butler',
+          year: '2008',
+          rule: {
+            "monday": [ 16, 26, 5, 13 ],
+            "tuesday": [ 16, 25, 2, 12 ],
+            "wednesday": [ 14, 24, 1, 11 ],
+            "thursday": [ 13, 23, 31, 10 ],
+            "friday": [ 12, 22, 30, 9 ],
+            "saturday": [ 11, 21, 30, 8 ],
+            "sunday": [ 17, 26, 5, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 332,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/jonas-out-of-the-jaws-of-the-monster.jpg',
+          title: 'Jonas out of the jaws of the monster',
+          artist: 'Herrad of Landsberg',
+          year: '?',
+          rule: {
+            "monday": [ 17, 26, 5, 13 ],
+            "tuesday": [ 16, 26, 5, 13 ],
+            "wednesday": [ 16, 25, 2, 12 ],
+            "thursday": [ 14, 24, 1, 11 ],
+            "friday": [ 13, 23, 31, 10 ],
+            "saturday": [ 12, 22, 30, 9 ],
+            "sunday": [ 11, 21, 30, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 333,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/saint-catherine-receives-the-stigmata.jpg',
+          title: 'Saint Catherine Receives the Stigmata',
+          artist: 'Plautilla Nelli',
+          year: '?',
+          rule: {
+            "monday": [ 11, 21, 30, 8 ],
+            "tuesday": [ 17, 26, 5, 13 ],
+            "wednesday": [ 16, 26, 5, 13 ],
+            "thursday": [ 16, 25, 2, 12 ],
+            "friday": [ 14, 24, 1, 11 ],
+            "saturday": [ 13, 23, 31, 10 ],
+            "sunday": [ 12, 22, 30, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 334,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/virgin-and-child-with-saint-1595.jpg',
+          title: 'Virgin and Child with Saint',
+          artist: 'Barbara Longhi',
+          year: '1595',
+          rule: {
+            "monday": [ 12, 22, 30, 9 ],
+            "tuesday": [ 11, 21, 30, 8 ],
+            "wednesday": [ 17, 26, 5, 13 ],
+            "thursday": [ 16, 26, 5, 13 ],
+            "friday": [ 16, 25, 2, 12 ],
+            "saturday": [ 14, 24, 1, 11 ],
+            "sunday": [ 13, 23, 31, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 335,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/susanna-and-the-elders-1610.jpg',
+          title: 'Susanna and the Elders',
+          artist: 'Artemisia Gentileschi',
+          year: '1610',
+          rule: {
+            "monday": [ 13, 23, 31, 10 ],
+            "tuesday": [ 12, 22, 30, 9 ],
+            "wednesday": [ 11, 21, 30, 8 ],
+            "thursday": [ 17, 26, 5, 13 ],
+            "friday": [ 16, 26, 5, 13 ],
+            "saturday": [ 16, 25, 2, 12 ],
+            "sunday": [ 14, 24, 1, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
