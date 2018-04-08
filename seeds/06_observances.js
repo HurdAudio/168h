@@ -9690,6 +9690,39 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 620,
+          user_id: 1,
+          name: 'Steve Coleman (saxophone/M-base) born 1956',
+          color: '#483A2F',
+          picture: './img/musicians/SteveColeman_Credit-Michael_Weintrob-300x286.jpg',
+          day_of: new Date ('1956-09-20T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: true,
+          override_content: {
+            "sources": [ 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp' ],
+            "src_strings": [ 'https://bandcamp.com/EmbeddedPlayer/album=635988323/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=1212975563/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=483077184/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=1763406570/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=1393903022/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=2809226534/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/' ],
+            "href_strings": [ 'http://stevecoleman.bandcamp.com/album/morphogenesis', 'http://stevecoleman.bandcamp.com/album/synovial-joints', 'http://stevecoleman.bandcamp.com/album/functional-arrhythmias', 'http://stevecoleman.bandcamp.com/album/the-mancy-of-sound', 'http://stevecoleman.bandcamp.com/album/harvesting-semblances-and-affinities', 'http://ghostnoterecords.bandcamp.com/album/def-trance-beat-modalities-of-rhythm' ],
+            "a_strings": [ 'Morphogenesis by Steve Coleman', 'Synovial Joints by Steve Coleman and the Council of Balance', 'Functional Arrhythmias by Steve Coleman And Five Elements', 'The Mancy of Sound by Steve Coleman', 'Harvesting Semblances and Affinities by Steve Coleman', 'Def Trance Beat (Modalities of Rhythm) by Steve Coleman &amp; Five Elements' ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 621,
+          user_id: 1,
+          name: 'Edward Snowden (dissident/whistle blower) born 1983',
+          color: '#191025',
+          picture: './img/dissent/edward-snowden-5.jpg',
+          day_of: new Date ('1983-06-21T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
