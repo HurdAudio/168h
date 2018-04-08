@@ -150,6 +150,8 @@ const tiles_modules = require('./routes/tiles_modules.js');
 const tiles_modulesbyuser = require('./routes/tiles_modulesbyuser.js');
 const messages_reactions = require('./routes/messages_reactions.js');
 const messages_reactionsbyuser = require('./routes/messages_reactionsbyuser.js');
+const comment_reactions = require('./routes/comment_reactions.js');
+const comment_reactionsbyuser = require('./routes/comment_reactionsbyuser.js');
 
 const port = process.env.PORT || 3007;
 
@@ -300,6 +302,8 @@ app.use(fileUpload());
  app.use('/tiles_modulesbyuser', tiles_modulesbyuser);
  app.use('/messages_reactions', messages_reactions);
  app.use('/messages_reactionsbyuser', messages_reactionsbyuser);
+ app.use('/comment_reactions', comment_reactions);
+ app.use('/comment_reactionsbyuser', comment_reactionsbyuser);
 
 app.get('/onthisdayinhistory/:date', (req, res, next) =>{
   let newUrl = 'http://history.muffinlabs.com/date/';
