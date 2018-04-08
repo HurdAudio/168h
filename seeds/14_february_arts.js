@@ -6804,6 +6804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 341,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/Girlfriends-1.jpg',
+          title: 'Girl Friends',
+          artist: '2004',
+          year: 'Manuelita Brown',
+          rule: {
+            "monday": [ 27, 8, 14, 20 ],
+            "tuesday": [ 29, 8, 16, 26 ],
+            "wednesday": [ 29, 10, 6, 25 ],
+            "thursday": [ 19, 27, 6, 14 ],
+            "friday": [ 20, 29, 8, 16 ],
+            "saturday": [ 26, 2, 8, 18 ],
+            "sunday": [ 25, 4, 12, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 342,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/BrownD20171002_low.jpg',
+          title: 'Trump and Puerto Rico\'s recovery after hurricane maria',
+          artist: 'David G. Brown',
+          year: '2017',
+          rule: {
+            "monday": [ 25, 4, 12, 20 ],
+            "tuesday": [ 27, 8, 14, 20 ],
+            "wednesday": [ 29, 8, 16, 26 ],
+            "thursday": [ 29, 10, 6, 25 ],
+            "friday": [ 19, 27, 6, 14 ],
+            "saturday": [ 20, 29, 8, 16 ],
+            "sunday": [ 26, 2, 8, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 343,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/beverly-buchanan-survivor-800x800.jpg',
+          title: 'Survivor',
+          artist: 'Beverly Buchanan',
+          year: '2007',
+          rule: {
+            "monday": [ 27, 3, 9, 19 ],
+            "tuesday": [ 26, 5, 13, 21 ],
+            "wednesday": [ 28, 9, 15, 21 ],
+            "thursday": [ 1, 9, 17, 27 ],
+            "friday": [ 1, 11, 7, 26 ],
+            "saturday": [ 20, 28, 7, 15 ],
+            "sunday": [ 21, 1, 9, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 344,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/1009512086-ellen-grant-KI5-1260x800.jpg',
+          title: 'unknown title',
+          artist: 'Selma Burke',
+          year: '?',
+          rule: {
+            "monday": [ 21, 1, 9, 17 ],
+            "tuesday": [ 27, 3, 9, 19 ],
+            "wednesday": [ 26, 5, 13, 21 ],
+            "thursday": [ 28, 9, 15, 21 ],
+            "friday": [ 1, 9, 17, 27 ],
+            "saturday": [ 1, 11, 7, 26 ],
+            "sunday": [ 20, 28, 7, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 345,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/H0132-L15829851.jpg',
+          title: 'Beach Houses',
+          artist: 'Calvin Burnett',
+          year: '2010',
+          rule: {
+            "monday": [ 20, 28, 7, 15 ],
+            "tuesday": [ 21, 1, 9, 17 ],
+            "wednesday": [ 27, 3, 9, 19 ],
+            "thursday": [ 26, 5, 13, 21 ],
+            "friday": [ 28, 9, 15, 21 ],
+            "saturday": [ 1, 9, 17, 27 ],
+            "sunday": [ 1, 11, 7, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
