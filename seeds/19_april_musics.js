@@ -3406,6 +3406,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 190,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1335580777/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://eremiterecords.bandcamp.com/album/magnetoception',
+          a_string: 'Magnetoception by Joshua Abrams',
+          rule: {
+            "monday": [ 29, 7, 19, 24 ],
+            "tuesday": [ 28, 6, 18, 23 ],
+            "wednesday": [ 27, 5, 17, 22 ],
+            "thursday": [ 1, 9, 21, 26 ],
+            "saturday": [ 30, 8, 20, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 191,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3252766463/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://eremiterecords.bandcamp.com/album/simultonality',
+          a_string: 'Simultonality by Joshua Abrams &amp; Natural Information Society',
+          rule: {
+            "monday": [ 30, 8, 20, 25 ],
+            "tuesday": [ 29, 7, 19, 24 ],
+            "wednesday": [ 28, 6, 18, 23 ],
+            "thursday": [ 27, 5, 17, 22 ],
+            "saturday": [ 1, 9, 21, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 192,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3176410119/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://eremiterecords.bandcamp.com/album/natural-information',
+          a_string: 'Natural Information by Joshua Abrams',
+          rule: {
+            "monday": [ 1, 9, 21, 26 ],
+            "tuesday": [ 30, 8, 20, 25 ],
+            "wednesday": [ 29, 7, 19, 24 ],
+            "thursday": [ 28, 6, 18, 23 ],
+            "saturday": [ 27, 5, 17, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
