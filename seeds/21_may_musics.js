@@ -3298,6 +3298,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 184,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3295845270/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://gohleekwang.bandcamp.com/album/sunlight-variations',
+          a_string: 'Sunlight Variations by Goh Lee Kwang',
+          rule: {
+            "monday": [ 29, 4, 11, 24 ],
+            "tuesday": [ 28, 3, 10, 23 ],
+            "wednesday": [ 27, 2, 9, 22 ],
+            "thursday": [ 31, 7, 13, 26 ],
+            "saturday": [ 30, 5, 12, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 185,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2347154279/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://eileanrec.bandcamp.com/album/stay-sea',
+          a_string: 'Stay / Sea by HolyKindOf',
+          rule: {
+            "monday": [ 30, 5, 12, 25 ],
+            "tuesday": [ 29, 4, 11, 24 ],
+            "wednesday": [ 28, 3, 10, 23 ],
+            "thursday": [ 27, 2, 9, 22 ],
+            "saturday": [ 31, 7, 13, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 186,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=29983009/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://eileanrec.bandcamp.com/album/a-year-at-ushers-hill',
+          a_string: 'A Year at Usher&#39;s Hill by Monty Adkins',
+          rule: {
+            "monday": [ 31, 7, 13, 26 ],
+            "tuesday": [ 30, 5, 12, 25 ],
+            "wednesday": [ 29, 4, 11, 24 ],
+            "thursday": [ 28, 3, 10, 23 ],
+            "saturday": [ 27, 2, 9, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
