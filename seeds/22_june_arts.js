@@ -6004,6 +6004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 301,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/1W9A9631-III-web.jpg',
+          title: 'Remnant At Square Lake',
+          artist: 'Robert D. Flaherty',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 11, 21, 1, 9 ],
+            "tuesday": [ 10, 20, 30, 8 ],
+            "wednesday": [ 19, 29, 9, 7 ],
+            "thursday": [ 8, 18, 28, 6 ],
+            "friday": [ 7, 17, 27, 5 ],
+            "saturday": [ 13, 23, 3, 9 ],
+            "sunday": [ 12, 22, 2, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 302,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/1W9A2390-III-Rev-II-web.jpg',
+          title: 'Separators And Battery At Sunset ',
+          artist: 'Robert D. Flaherty',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 12, 22, 2, 10 ],
+            "tuesday": [ 11, 21, 1, 9 ],
+            "wednesday": [ 10, 20, 30, 8 ],
+            "thursday": [ 19, 29, 9, 7 ],
+            "friday": [ 8, 18, 28, 6 ],
+            "saturday": [ 7, 17, 27, 5 ],
+            "sunday": [ 13, 23, 3, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 303,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/AF4A4722-II-WEB.jpg',
+          title: 'Pioneer Sunset',
+          artist: 'Robert D. Flaherty',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 13, 23, 3, 9 ],
+            "tuesday": [ 12, 22, 2, 10 ],
+            "wednesday": [ 11, 21, 1, 9 ],
+            "thursday": [ 10, 20, 30, 8 ],
+            "friday": [ 19, 29, 9, 7 ],
+            "saturday": [ 8, 18, 28, 6 ],
+            "sunday": [ 7, 17, 27, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 304,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/resize4.jpg',
+          title: 'unknown title',
+          artist: 'Jorge Maia',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 7, 17, 27, 5 ],
+            "tuesday": [ 13, 23, 3, 9 ],
+            "wednesday": [ 12, 22, 2, 10 ],
+            "thursday": [ 11, 21, 1, 9 ],
+            "friday": [ 10, 20, 30, 8 ],
+            "saturday": [ 19, 29, 9, 7 ],
+            "sunday": [ 8, 18, 28, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 305,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/ItsHardlyNoticeable_15-200x300.jpg',
+          title: 'It\'s Hardly Noticeable',
+          artist: 'John William Keedy',
+          year: '?',
+          rule: {
+            "monday": [ 8, 18, 28, 6 ],
+            "tuesday": [ 7, 17, 27, 5 ],
+            "wednesday": [ 13, 23, 3, 9 ],
+            "thursday": [ 12, 22, 2, 10 ],
+            "friday": [ 11, 21, 1, 9 ],
+            "saturday": [ 10, 20, 30, 8 ],
+            "sunday": [ 19, 29, 9, 7 ],
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
