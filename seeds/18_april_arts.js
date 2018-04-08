@@ -6404,6 +6404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 321,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/10048887-mlb-oakland-athletics-at-minnesota-twins-850x560.jpeg',
+          title: 'May 4, 2017; Minneapolis, MN, USA; The Minnesota Twins logo in center field during a game against the Oakland Athletics at Target Field.',
+          artist: 'Brad Rempel',
+          year: '2017',
+          rule: {
+            "monday": [ 13, 17, 2, 30 ],
+            "tuesday": [ 12, 17, 22, 28 ],
+            "wednesday": [ 11, 16, 22, 28 ],
+            "thursday": [ 10, 15, 21, 27 ],
+            "friday": [ 15, 21, 26, 3 ],
+            "saturday": [ 29, 19, 25, 2 ],
+            "sunday": [ 14, 19, 25, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 322,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/9515096-mlb-chicago-white-sox-at-minnesota-twins-850x560.jpeg',
+          title: 'Sep 2, 2016; Minneapolis, MN, USA; A general view at Target Field during the third inning between the Minnesota Twins and the Chicago White Sox.',
+          artist: 'Jeffrey Becker',
+          year: '2016',
+          rule: {
+            "monday": [ 15, 20, 26, 2 ],
+            "tuesday": [ 14, 18, 3, 1 ],
+            "wednesday": [ 13, 18, 23, 29 ],
+            "thursday": [ 12, 17, 23, 29 ],
+            "friday": [ 11, 16, 22, 28 ],
+            "saturday": [ 16, 22, 27, 4 ],
+            "sunday": [ 30, 20, 26, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 323,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/10018330-mlb-minnesota-twins-at-detroit-tigers-850x560.jpeg',
+          title: 'Apr 13, 2017; Detroit, MI, USA; Minnesota Twins hat and glove in the dugout during the game against the Minnesota Twins at Comerica Park',
+          artist: 'Rick Osentoski',
+          year: '2017',
+          rule: {
+            "monday": [ 30, 20, 26, 3 ],
+            "tuesday": [ 15, 20, 26, 2 ],
+            "wednesday": [ 14, 18, 3, 1 ],
+            "thursday": [ 13, 18, 23, 29 ],
+            "friday": [ 12, 17, 23, 29 ],
+            "saturday": [ 11, 16, 22, 28 ],
+            "sunday": [ 16, 22, 27, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 324,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/AP_16274035565168-1775x1254.jpg',
+          title: 'Logan Morrison is not the final piece to an expertly crafted jigsaw puzzle of a roster for the Minnesota Twins',
+          artist: 'Derek Wetmore',
+          year: '2018',
+          rule: {
+            "monday": [ 16, 22, 27, 4 ],
+            "tuesday": [ 30, 20, 26, 3 ],
+            "wednesday": [ 15, 20, 26, 2 ],
+            "thursday": [ 14, 18, 3, 1 ],
+            "friday": [ 13, 18, 23, 29 ],
+            "saturday": [ 12, 17, 23, 29 ],
+            "sunday": [ 11, 16, 22, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 325,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/Minnesota-Twins-Home-Plate-Boxes.jpg',
+          title: 'Minnesota Twins Home Plate Boxes',
+          artist: '?',
+          year: '2016',
+          rule: {
+            "monday": [ 11, 16, 22, 28 ],
+            "tuesday": [ 16, 22, 27, 4 ],
+            "wednesday": [ 30, 20, 26, 3 ],
+            "thursday": [ 15, 20, 26, 2 ],
+            "friday": [ 14, 18, 3, 1 ],
+            "saturday": [ 13, 18, 23, 29 ],
+            "sunday": [ 12, 17, 23, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
