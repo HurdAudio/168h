@@ -3622,6 +3622,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 202,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'http://bandcamp.com/EmbeddedPlayer/album=856134361/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://awonandphoniks.com/album/the-actual-proof',
+          a_string: 'The Actual Proof by Awon &amp; Phoniks',
+          rule: {
+            "monday": [ 29, 5, 6, 19 ],
+            "tuesday": [ 1, 5, 7, 11 ],
+            "wednesday": [ 4, 7, 9, 13 ],
+            "thursday": [ 5, 9, 11, 13 ],
+            "saturday": [ 17, 11, 13, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 203,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3805724227/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://gourmetdeluxxx.bandcamp.com/album/griselda-ghost',
+          a_string: 'Griselda Ghost by GourmetDeluxxx',
+          rule: {
+            "monday": [ 18, 12, 14, 20 ],
+            "tuesday": [ 1, 6, 7, 20 ],
+            "wednesday": [ 2, 6, 8, 12 ],
+            "thursday": [ 5, 8, 10, 14 ],
+            "saturday": [ 6, 10, 12, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 204,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=61757149/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://divinestyler.bandcamp.com/album/word-power',
+          a_string: 'Word Power by Divine Styler',
+          rule: {
+            "monday": [ 6, 10, 12, 14 ],
+            "tuesday": [ 18, 12, 14, 20 ],
+            "wednesday": [ 1, 6, 7, 20 ],
+            "thursday": [ 2, 6, 8, 12 ],
+            "saturday": [ 5, 8, 10, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
