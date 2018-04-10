@@ -74,6 +74,170 @@
       vm.toDayview = toDayview;
       vm.gotoMonth = gotoMonth;
       vm.gotoProfile = gotoProfile;
+      vm.cancelShareCrud = cancelShareCrud;
+
+      function cancelShareCrud() {
+        let shareCRUDPopup = document.getElementById('shareCRUDPopup');
+        let shareCRUDFriendsSearch = document.getElementById('shareCRUDFriendsSearch');
+        // let timeCRUDPopup = document.getElementById('timeCRUDPopup');
+        // let weekStrip = document.getElementById('weekStrip');
+
+        // timeCRUDPopup.setAttribute("style", "visibility: visible; z-index: 3;");
+        // weekStrip.setAttribute("style", "opacity: 0.6;");
+        shareCRUDPopup.setAttribute("style", "visibility: hidden; z-index: -6; opacity: 0;");
+        shareCRUDFriendsSearch.value = '';
+      }
+
+      function headshotName(friendId, imgElement, pElement) {
+        $http.get(`/users/${friendId}`)
+        .then(friendData=>{
+          let friend = friendData.data;
+          imgElement.src = friend.user_avatar_url;
+          pElement.innerHTML = friend.name;
+        });
+      }
+
+      function manageFriendEventListener(divElement, friendId, timeblockId) {
+        divElement.addEventListener('click', ()=>{
+          let subObj = {
+            user_id: currentUserId,
+            timeblock_id: timeblockId,
+            share_associate_id: friendId,
+            accepted: false,
+            responded: false
+          };
+          $http.post('/timeblock_shares', subObj)
+          .then(timeData=>{
+            let time = timeData.data;
+            cancelShareCrud();
+          });
+        });
+      }
+
+      function populateShareFriendsList(friendsIds, timeblockId) {
+        let shareCRUDFriendsList = document.getElementById('shareCRUDFriendsList');
+        let divElement;
+        let imgElement;
+        let pElement;
+        let brElement;
+
+        while (shareCRUDFriendsList.firstChild) {
+          shareCRUDFriendsList.removeChild(shareCRUDFriendsList.firstChild);
+        }
+        for (let i = 0; i < friendsIds.length; i++) {
+          divElement = document.createElement('div');
+          shareCRUDFriendsList.appendChild(divElement);
+          divElement.setAttribute("style", "cursor: pointer;");
+          imgElement = document.createElement('img');
+          divElement.appendChild(imgElement);
+          pElement = document.createElement('p');
+          divElement.appendChild(pElement);
+          brElement = document.createElement('br');
+          divElement.appendChild(brElement);
+          brElement = document.createElement('br');
+          divElement.appendChild(brElement);
+          brElement = document.createElement('br');
+          divElement.appendChild(brElement);
+          brElement = document.createElement('br');
+          divElement.appendChild(brElement);
+          brElement = document.createElement('br');
+          divElement.appendChild(brElement);
+          brElement = document.createElement('br');
+          divElement.appendChild(brElement);
+          headshotName(friendsIds[i], imgElement, pElement);
+          manageFriendEventListener(divElement, friendsIds[i], timeblockId);
+        }
+      }
+
+      function fillOutListEntry(friendsArr, friendId) {
+        $http.get(`/users/${friendId}`)
+        .then(friendData=>{
+          let friend = friendData.data;
+          friendsArr.push(friend);
+        });
+      }
+
+      function filterFriendsListOnInput (filterText, friendsList, timeId) {
+        let shareCRUDFriendsList = document.getElementById('shareCRUDFriendsList');
+        let friendsArray = [];
+        let filteredArray = [];
+
+        while (shareCRUDFriendsList.firstChild) {
+          shareCRUDFriendsList.removeChild(shareCRUDFriendsList.firstChild);
+        }
+        for (let i = 0; i < friendsList.length; i++) {
+          fillOutListEntry(friendsArray, friendsList[i]);
+        }
+        setTimeout(()=>{
+          let filteredFriends = friendsArray.filter(entry=>{
+            return((entry.name.toLowerCase().indexOf(filterText) !== -1) || (entry.email.toLowerCase().indexOf(filterText) !== -1));
+          });
+          filteredFriends = filteredFriends.sort((a, b)=>{
+            if (a.name.toLowerCase() < b.name.toLowerCase()) {
+              return -1;
+            } else if (a.name.toLowerCase() > b.name.toLowerCase()) {
+              return 1;
+            } else {
+              return 0;
+            }
+          });
+          for (let k = 0; k < filteredFriends.length; k++) {
+            filteredArray[k] = filteredFriends[k].id;
+          }
+          populateShareFriendsList(filteredArray, timeId);
+        }, (75 * friendsList.length));
+      }
+
+      function shareAppointment(timeId) {
+        let shareCRUDPopup = document.getElementById('shareCRUDPopup');
+        let shareCRUDFriendsList = document.getElementById('shareCRUDFriendsList');
+        while (shareCRUDFriendsList.firstChild) {
+          shareCRUDFriendsList.removeChild(shareCRUDFriendsList.firstChild);
+        }
+        let shareCRUDFRiendsSearchDiv = document.getElementById('shareCRUDFRiendsSearchDiv');
+        let shareCRUDFriendsSearch = document.getElementById('shareCRUDFriendsSearch');
+        if (shareCRUDFriendsSearch) {
+          shareCRUDFriendsSearch.parentNode.removeChild(shareCRUDFriendsSearch);
+          shareCRUDFriendsSearch = document.createElement('input');
+          shareCRUDFRiendsSearchDiv.appendChild(shareCRUDFriendsSearch);
+          shareCRUDFriendsSearch.id = 'shareCRUDFriendsSearch';
+          shareCRUDFriendsSearch.type = 'text';
+          shareCRUDFriendsSearch.placeholder = 'search';
+        }
+        // let timeCRUDPopup = document.getElementById('timeCRUDPopup');
+        // let weekStrip = document.getElementById('weekStrip');
+
+
+        // timeCRUDPopup.setAttribute("style", "visibility: hidden; z-index: -1;");
+        // weekStrip.setAttribute("style", "opacity: 0.2; transition: opacity 0.5s linear;");
+
+        $http.get(`/timeblocks/${timeId}`)
+        .then(timeBlockData=>{
+          let timeBlock = timeBlockData.data;
+
+          $http.get(`/blocktypes/${timeBlock.block_type}`)
+          .then(blockData=>{
+            let block = blockData.data;
+            shareCRUDPopup.setAttribute("style", "visibility: visible; z-index: 6; opacity: 1; background: " + block.color + "; background-color: -webkit-linear-gradient(135deg, " + block.color + ", #000000); background: -o-linear-gradient(135deg, " + block.color + ", #000000); background: -moz-linear-gradient(135deg, " + block.color + ", #000000); background: linear-gradient(135deg, " + block.color + ", #000000); transition: opacity 0.5s linear;");
+
+            $http.get(`/users/${currentUserId}`)
+            .then(userData=>{
+              let user = userData.data;
+              if ((user.associates.friends !== undefined) && (user.associates.friends.length > 0)) {
+                populateShareFriendsList(user.associates.friends, timeId);
+              }
+              shareCRUDFriendsSearch.addEventListener('keyup', ()=>{
+                if (shareCRUDFriendsSearch.value === '') {
+                  populateShareFriendsList(user.associates.friends, timeId);
+                } else {
+                  filterFriendsListOnInput(shareCRUDFriendsSearch.value.toLowerCase(), user.associates.friends, timeId);
+                }
+              });
+            });
+          });
+        });
+
+      }
 
       function gotoProfile() {
         weekClock = false;
@@ -787,10 +951,10 @@
         let appointmentsArray = [];
         let checkDate;
 
-        $http.get(`/blocktypesbyuser/${currentUserId}`)
+        $http.get(`/blocktypes`)
         .then(blocksData=>{
           let blocks = blocksData.data;
-          $http.get(`/timeblocksbyuser/${currentUserId}`)
+          $http.get(`/timeblocks`)
           .then(timeblocksData=>{
             let timeblocks = timeblocksData.data;
             for (let i = 0; i < weekArray.length; i++) {
@@ -825,9 +989,12 @@
         element.innerHTML = dateString;
       }
 
-      function populateBlockTypesSelect(currentBlock, blocks, selectorElement) {
+      function populateBlockTypesSelect(currentBlock, blocks, selectorElement, timeblock) {
         let element;
-        let blockTypes = blocks.sort((a, b)=>{
+        let filteredBlocks = blocks.filter(bl=>{
+          return((parseInt(bl.user_id) === parseInt(currentUserId)) || (parseInt(timeblock.block_type) === parseInt(bl.id)));
+        });
+        let blockTypes = filteredBlocks.sort((a, b)=>{
           if (a.type.toLowerCase() < b.type.toLowerCase()) {
             return -1;
           } else if (a.type.toLowerCase() > b.type.toLowerCase()) {
@@ -1724,6 +1891,16 @@
           buttonImage.src = './img/noun_651094_cc.png';
           buttonImage.setAttribute("style", "height: 100%; width: 100%;");
         }
+        let timeCRUDShareButtonDiv = document.getElementById('timeCRUDShareButtonDiv');
+        let timeCRUDShareButton = document.getElementById('timeCRUDShareButton');
+        if (timeCRUDShareButton) {
+          timeCRUDShareButton.parentNode.removeChild(timeCRUDShareButton);
+          timeCRUDShareButton = document.createElement('a');
+          timeCRUDShareButtonDiv.appendChild(timeCRUDShareButton);
+          timeCRUDShareButton.id = 'timeCRUDShareButton';
+          timeCRUDShareButton.className = 'btn';
+          timeCRUDShareButton.innerHTML = 'share';
+        }
 
         //timeCRUDPopup.setAttribute("style", "visibility: visible; opacity: 0.9;");
         weekStrip.setAttribute("style", "opacity: 0.6;");
@@ -1731,7 +1908,10 @@
         $http.get(`/timeblocks/${appointment}`)
         .then(timeblockData=>{
           let timeblock = timeblockData.data;
-          $http.get(`/blocktypesbyuser/${currentUserId}`)
+          timeCRUDShareButton.addEventListener('click', ()=>{
+            shareAppointment(timeblock.id);
+          });
+          $http.get(`/blocktypes`)
           .then(blocksData=>{
             let blocks = blocksData.data;
             let currentBlock;
@@ -1741,7 +1921,7 @@
               }
             }
             updateToplineCRUD(timeblock, usernameTimeblock);
-            populateBlockTypesSelect(currentBlock, blocks, weekBlocktypeSelector);
+            populateBlockTypesSelect(currentBlock, blocks, weekBlocktypeSelector, timeblock);
             blockTypeHandler(weekBlocktypeSelector, appointment);
             if ((currentBlock.keys !== null) && (currentBlock.keys !== undefined) && (currentBlock.keys.keys.length > 0)) {
               populateBlockSubkeys(currentBlock, blocks, timeblock, weekBlockKeysSelector);

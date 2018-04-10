@@ -88,6 +88,16 @@
       vm.speakWord = speakWord;
       vm.speakHistory = speakHistory;
       vm.userProfile = userProfile;
+      vm.cancelAppointmentInvite = cancelAppointmentInvite;
+
+      function cancelAppointmentInvite() {
+        document.getElementById('dayviewWhoToShareSearch').value = '';
+        let shareAppointmentPane = document.getElementById('shareAppointmentPane');
+        let schedulePanel = document.getElementById('schedulePanel');
+
+        schedulePanel.setAttribute("style", "opacity: 1;");
+        shareAppointmentPane.setAttribute("style", "z-index: -6; opacity: 0;");
+      }
 
       function speakHistory() {
         let yearFact = document.getElementById('yearFact');
@@ -3382,6 +3392,151 @@
 
       }
 
+      function grabImageAndName(imgEl, nameEl, id) {
+        $http.get(`/users/${id}`)
+        .then(friendData=>{
+          let friend = friendData.data;
+          imgEl.src = friend.user_avatar_url;
+          nameEl.innerHTML = friend.name;
+        });
+      }
+
+      function supplyUser(friendsList, index, friendId) {
+        $http.get(`/users/${friendId}`)
+        .then(friendData=>{
+          friendsList[index] = friendData.data;
+        });
+      }
+
+      function timeblockShareCreate(divElement, timeblockId, friendId) {
+        divElement.addEventListener('click', ()=>{
+          let subObj = {
+            user_id: parseInt(currentUserId),
+            timeblock_id: timeblockId,
+            share_associate_id: friendId,
+            accepted: false,
+            responded: false
+          };
+          $http.post('timeblock_shares', subObj)
+          .then(sharedData=>{
+            let shared = sharedData.data;
+            document.getElementById('dayviewWhoToShareSearch').value = '';
+            let shareAppointmentPane = document.getElementById('shareAppointmentPane');
+            let schedulePanel = document.getElementById('schedulePanel');
+
+            schedulePanel.setAttribute("style", "opacity: 1;");
+            shareAppointmentPane.setAttribute("style", "z-index: -6; opacity: 0;");
+          });
+        });
+      }
+
+      function populateFriendsAndMaintainEventListenersWithString(charSet, timeblockId) {
+        let dayviewFriendsSearchList = document.getElementById('dayviewFriendsSearchList');
+        let divElement;
+        let imgElement;
+        let nameElement;
+        let lineBreak;
+        let userList = [];
+
+        $http.get(`/users/${currentUserId}`)
+        .then(userData=>{
+          let user = userData.data;
+          if (user.associates.friends.length > 0) {
+            for (let i = 0; i < user.associates.friends.length; i++) {
+              userList[i] = {};
+              supplyUser(userList, i, user.associates.friends[i]);
+
+            }
+            setTimeout(()=>{
+              let filteredList = userList.filter(entry=>{
+                return((entry.name.toLowerCase().indexOf(charSet) !== -1) || (entry.email.toLowerCase().indexOf(charSet) !== -1));
+              });
+              filteredList = filteredList.sort((a, b)=>{
+                if (a.name.toLowerCase() < b.name.toLowerCase()) {
+                  return -1;
+                } else if (a.name.toLowerCase() > b.name.toLowerCase()) {
+                  return 1;
+                } else {
+                  return 0;
+                }
+              });
+              if (filteredList.length > 0) {
+                while(dayviewFriendsSearchList.firstChild) {
+                  dayviewFriendsSearchList.removeChild(dayviewFriendsSearchList.firstChild);
+                }
+                for (let j = 0; j < filteredList.length; j++) {
+                  divElement = document.createElement('div');
+                  dayviewFriendsSearchList.appendChild(divElement);
+                  divElement.setAttribute("style", "cursor: pointer;");
+                  imgElement = document.createElement('img');
+                  divElement.appendChild(imgElement);
+                  imgElement.src = filteredList[j].user_avatar_url;
+                  nameElement = document.createElement('p');
+                  divElement.appendChild(nameElement);
+                  nameElement.innerHTML = filteredList[j].name;
+                  lineBreak = document.createElement('br');
+                  divElement.appendChild(lineBreak);
+                  lineBreak = document.createElement('br');
+                  divElement.appendChild(lineBreak);
+                  lineBreak = document.createElement('br');
+                  divElement.appendChild(lineBreak);
+                  lineBreak = document.createElement('br');
+                  divElement.appendChild(lineBreak);
+                  lineBreak = document.createElement('br');
+                  divElement.appendChild(lineBreak);
+                  lineBreak = document.createElement('br');
+                  divElement.appendChild(lineBreak);
+                  timeblockShareCreate(divElement, timeblockId, filteredList[j].id);
+                }
+              }
+            }, (user.associates.friends.length * 100));
+          }
+        });
+      }
+
+      function populateFriendsAndMaintainEventListeners(timeblockId) {
+        let dayviewFriendsSearchList = document.getElementById('dayviewFriendsSearchList');
+        let divElement;
+        let imgElement;
+        let nameElement;
+        let lineBreak;
+
+        while (dayviewFriendsSearchList.firstChild) {
+          dayviewFriendsSearchList.removeChild(dayviewFriendsSearchList.firstChild);
+        }
+
+        $http.get(`/users/${currentUserId}`)
+        .then(userData=>{
+          let user = userData.data;
+          console.log(user.associates.friends.length);
+          if (user.associates.friends.length > 0) {
+            for (let i = 0; i < user.associates.friends.length; i++) {
+              divElement = document.createElement('div');
+              dayviewFriendsSearchList.appendChild(divElement);
+              divElement.setAttribute("style", "cursor: pointer;");
+              imgElement = document.createElement('img');
+              divElement.appendChild(imgElement);
+              nameElement = document.createElement('p');
+              divElement.appendChild(nameElement);
+              lineBreak = document.createElement('br');
+              divElement.appendChild(lineBreak);
+              lineBreak = document.createElement('br');
+              divElement.appendChild(lineBreak);
+              lineBreak = document.createElement('br');
+              divElement.appendChild(lineBreak);
+              lineBreak = document.createElement('br');
+              divElement.appendChild(lineBreak);
+              lineBreak = document.createElement('br');
+              divElement.appendChild(lineBreak);
+              lineBreak = document.createElement('br');
+              divElement.appendChild(lineBreak);
+              grabImageAndName(imgElement, nameElement, user.associates.friends[i]);
+              timeblockShareCreate(divElement, timeblockId, user.associates.friends[i]);
+            }
+          }
+        });
+      }
+
       function editAppointment(blockID, divTimeString) {
         currentEdit = blockID;
         let editDeleteForm = document.getElementById('editDeleteForm');
@@ -3488,6 +3643,27 @@
           editUserNotes.setAttribute("style", "font-family: 'Alike Angular', serif; font-size: 18px; margin-left: 3em; width: 80%; rows: 5;");
         }
         let subtypeCRUD = document.getElementById('subtypeCRUD');
+        let shareButtonDiv = document.getElementById('shareButtonDiv');
+        let shareTimeblockButton = document.getElementById('shareTimeblockButton');
+        if (shareTimeblockButton) {
+          shareTimeblockButton.parentNode.removeChild(shareTimeblockButton);
+          shareTimeblockButton = document.createElement('a');
+          shareButtonDiv.appendChild(shareTimeblockButton);
+          shareTimeblockButton.id = 'shareTimeblockButton';
+          shareTimeblockButton.className = 'btn';
+          shareTimeblockButton.setAttribute("style", "cursor: pointer;");
+          shareTimeblockButton.innerHTML = 'share';
+        }
+        let shareAppointmentSearchBarDiv = document.getElementById('shareAppointmentSearchBarDiv');
+        let dayviewWhoToShareSearch = document.getElementById('dayviewWhoToShareSearch');
+        if (dayviewWhoToShareSearch) {
+          dayviewWhoToShareSearch.parentNode.removeChild(dayviewWhoToShareSearch);
+          dayviewWhoToShareSearch = document.createElement('input');
+          shareAppointmentSearchBarDiv.appendChild(dayviewWhoToShareSearch);
+          dayviewWhoToShareSearch.id = 'dayviewWhoToShareSearch';
+          dayviewWhoToShareSearch.type = 'text';
+          dayviewWhoToShareSearch.placeholder = 'search';
+        }
 
 
         let editAdditionalKeys = document.getElementById('editAdditionalKeys');
@@ -3513,36 +3689,99 @@
             $http.get(`/blocktypesbyuser/${currentUserId}`)
             .then(blocksData=>{
               let blocks = blocksData.data;
-              let sortedBlocks = blocks.sort((a, b)=>{
-                if (a.type.toLowerCase() < b.type.toLowerCase()) {
-                  return -1;
-                } else if (a.type.toLowerCase() > b.type.toLowerCase()) {
-                  return 1;
-                } else {
-                  return 0;
-                }
+              let currentBlocktype;
+              let inclusiveBlock = blocks.filter(bl=>{
+                return(bl.id === timeblock.id);
               });
-              let currentBlocktype = populateSelections(editDeleteBlocktypeSelector, sortedBlocks, 'add new blocktype...', timeblock);
-              if (currentBlocktype.keys === null) {
-                editBlockKeys.setAttribute("style", "display: none;");
-              } else {
-                editBlockKeys.setAttribute("style", "display: initial;");
-                let currentKey = populateKeys(blockKeysSelector, currentBlocktype, 'add new value...', timeblock);
-                blockKeysSelector.value = currentKey;
-                if (currentBlocktype.keys.keys.length > 1) {
-                  populateKeySubfields(editAdditionalKeys, timeblock, currentBlocktype);
+              if (inclusiveBlock.length === 0) {
+                $http.get(`/blocktypes/${timeblock.block_type}`)
+                .then(alienBlockData=>{
+                  let alienBlock = alienBlockData.data;
+                  blocks.push(alienBlock);
+                  let sortedBlocks = blocks.sort((a, b)=>{
+                    if (a.type.toLowerCase() < b.type.toLowerCase()) {
+                      return -1;
+                    } else if (a.type.toLowerCase() > b.type.toLowerCase()) {
+                      return 1;
+                    } else {
+                      return 0;
+                    }
+                  });
+                  currentBlocktype = populateSelections(editDeleteBlocktypeSelector, sortedBlocks, 'add new blocktype...', timeblock);
+                  if (currentBlocktype.keys === null) {
+                    editBlockKeys.setAttribute("style", "display: none;");
+                  } else {
+                    editBlockKeys.setAttribute("style", "display: initial;");
+                    let currentKey = populateKeys(blockKeysSelector, currentBlocktype, 'add new value...', timeblock);
+                    blockKeysSelector.value = currentKey;
+                    if (currentBlocktype.keys.keys.length > 1) {
+                      populateKeySubfields(editAdditionalKeys, timeblock, currentBlocktype);
 
+                    }
+                  }
+                  setEditorColor(editDeleteAppointments, currentBlocktype.color);
+                  editDeleteStart.innerHTML = timeString(timeblock.start_time);
+                  editDeleteEnd.innerHTML = timeString(timeblock.end_time);
+                  updateStartTimeButtons(timeblock.id, editDeleteStart.innerHTML, editDeleteEnd.innerHTML, editDeleteStartDecrease, editDeleteStartIncrease);
+                  updateEndTimeButtons(timeblock.id, editDeleteEnd.innerHTML, editDeleteEndDecrease, editDeleteEndIncrease);
+                  editLocation.value = timeblock.location;
+                  editUserNotes.value = timeblock.user_notes;
+                });
+              } else {
+                let sortedBlocks = blocks.sort((a, b)=>{
+                  if (a.type.toLowerCase() < b.type.toLowerCase()) {
+                    return -1;
+                  } else if (a.type.toLowerCase() > b.type.toLowerCase()) {
+                    return 1;
+                  } else {
+                    return 0;
+                  }
+                });
+                currentBlocktype = populateSelections(editDeleteBlocktypeSelector, sortedBlocks, 'add new blocktype...', timeblock);
+                if (currentBlocktype.keys === null) {
+                  editBlockKeys.setAttribute("style", "display: none;");
+                } else {
+                  editBlockKeys.setAttribute("style", "display: initial;");
+                  let currentKey = populateKeys(blockKeysSelector, currentBlocktype, 'add new value...', timeblock);
+                  blockKeysSelector.value = currentKey;
+                  if (currentBlocktype.keys.keys.length > 1) {
+                    populateKeySubfields(editAdditionalKeys, timeblock, currentBlocktype);
+
+                  }
                 }
+                setEditorColor(editDeleteAppointments, currentBlocktype.color);
+                editDeleteStart.innerHTML = timeString(timeblock.start_time);
+                editDeleteEnd.innerHTML = timeString(timeblock.end_time);
+                updateStartTimeButtons(timeblock.id, editDeleteStart.innerHTML, editDeleteEnd.innerHTML, editDeleteStartDecrease, editDeleteStartIncrease);
+                updateEndTimeButtons(timeblock.id, editDeleteEnd.innerHTML, editDeleteEndDecrease, editDeleteEndIncrease);
+                editLocation.value = timeblock.location;
+                editUserNotes.value = timeblock.user_notes;
               }
-              setEditorColor(editDeleteAppointments, currentBlocktype.color);
-              editDeleteStart.innerHTML = timeString(timeblock.start_time);
-              editDeleteEnd.innerHTML = timeString(timeblock.end_time);
-              updateStartTimeButtons(timeblock.id, editDeleteStart.innerHTML, editDeleteEnd.innerHTML, editDeleteStartDecrease, editDeleteStartIncrease);
-              updateEndTimeButtons(timeblock.id, editDeleteEnd.innerHTML, editDeleteEndDecrease, editDeleteEndIncrease);
-              editLocation.value = timeblock.location;
-              editUserNotes.value = timeblock.user_notes;
 
               //// Selector Block Type Listener
+
+              shareTimeblockButton.addEventListener('click', ()=>{
+                let schedulePanel = document.getElementById('schedulePanel');
+                let shareAppointmentPane = document.getElementById('shareAppointmentPane');
+                let dayviewFriendsSearchList = document.getElementById('dayviewFriendsSearchList');
+                while (dayviewFriendsSearchList.firstChild) {
+                  dayviewFriendsSearchList.removeChild(dayviewFriendsSearchList.firstChild);
+                }
+
+                schedulePanel.setAttribute("style", "opacity: 0.1;");
+                shareAppointmentPane.setAttribute("style", "background: #ffffff; background-color: -webkit-linear-gradient(135deg, #ffffff, " + currentBlocktype.color + "); background: -o-linear-gradient(135deg, #ffffff, " + currentBlocktype.color + "); background: -moz-linear-gradient(135deg, #ffffff, " + currentBlocktype.color + "); background: linear-gradient(135deg, #ffffff, " + currentBlocktype.color + "); z-index: 6; opacity: 1; transition: opacity 1s linear;");
+                populateFriendsAndMaintainEventListeners(blockID);
+                dayviewWhoToShareSearch.addEventListener('keyup', ()=>{
+                  while (dayviewFriendsSearchList.firstChild) {
+                    dayviewFriendsSearchList.removeChild(dayviewFriendsSearchList.firstChild);
+                  }
+                  if (dayviewWhoToShareSearch.value !== '') {
+                    populateFriendsAndMaintainEventListenersWithString(dayviewWhoToShareSearch.value.toLowerCase(), blockID);
+                  } else {
+                    populateFriendsAndMaintainEventListeners(blockID);
+                  }
+                });
+              });
 
               editDeleteBlocktypeSelector.addEventListener('change', ()=>{
                 if (editDeleteBlocktypeSelector.value !== 'add new blocktype...') {
@@ -3903,7 +4142,7 @@
               }
             }
           }
-          console.log(week);
+          // console.log(week);
           for (let k = 0; k < week.length; k++) {
             if (week[k].timeblocks.length > 0) {
               for (let m = 0; m < week[k].timeblocks.length; m++) {

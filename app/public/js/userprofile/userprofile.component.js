@@ -814,22 +814,22 @@
                       }
                     }
                   }
-                  let subObj = {
-                    user_id: currentUserId,
-                    block_type: appointmentBlock.block_type,
-                    start_time: appointmentBlock.start_time,
-                    end_time: appointmentBlock.end_time,
-                    user_notes: appointmentBlock.user_notes,
-                    location: appointmentBlock.location,
-                    block_data: appointmentBlock.block_data
-
-                  };
-                  $http.post(`/timeblocks`, subObj)
-                  .then(postedAppointmentData=>{
-                    let postedAppointment = postedAppointmentData.data;
-                    console.log(postedAppointment);
-                  });
                 }
+                let subObj = {
+                  user_id: currentUserId,
+                  block_type: appointmentBlock.block_type,
+                  start_time: appointmentBlock.start_time,
+                  end_time: appointmentBlock.end_time,
+                  user_notes: appointmentBlock.user_notes,
+                  location: appointmentBlock.location,
+                  block_data: appointmentBlock.block_data
+
+                };
+                $http.post(`/timeblocks`, subObj)
+                .then(postedAppointmentData=>{
+                  let postedAppointment = postedAppointmentData.data;
+                  console.log(postedAppointment);
+                });
               });
             });
           });
@@ -12964,6 +12964,7 @@
           let user = userData.data;
           document.cookie = 'h168userId' + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
           document.cookie = user.security.key + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+
           $http.post('/users/logout', {})
           .then(()=>{
             profileClock = false;
@@ -13516,8 +13517,8 @@
           .then(blocktypeData=>{
             let blocktype = blocktypeData.data;
             vm.activeTimeblockShares[index].typeName = blocktype.type;
-            vm.activeTimeblockShares[index].startTime = start.toLocaleTimeString('en-GB') + ' - ' + cleanDateHoliday(userTimeblock.start_time);
-            vm.activeTimeblockShares[index].endTime = end.toLocaleTimeString('en-GB') + ' - ' + cleanDateHoliday(userTimeblock.end_time);
+            vm.activeTimeblockShares[index].startTime = userTimeblock.start_time.slice(11, 16) + ' - ' + cleanDateHoliday(userTimeblock.start_time);
+            vm.activeTimeblockShares[index].endTime = userTimeblock.end_time.slice(11, 16) + ' - ' + cleanDateHoliday(userTimeblock.end_time);
             if (userTimeblock.location !== '') {
               vm.activeTimeblockShares[index].location = 'Location: ' + userTimeblock.location;
             }
