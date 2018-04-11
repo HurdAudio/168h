@@ -5710,7 +5710,7 @@ exports.seed = function(knex, Promise) {
           user_id: 1,
           theme: 'Baseball',
           img_path: './img/april/Royals_Dodgers_Baseball_69236-eb103.jpg',
-          title: 'layton Kershaw is a singular talent, the Dodgers have been powered by the back end of their roster.',
+          title: 'Clayton Kershaw is a singular talent, the Dodgers have been powered by the back end of their roster.',
           artist: 'Mark J. Terrill',
           year: '2017',
           rule: {

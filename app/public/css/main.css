@@ -7680,8 +7680,8 @@ footer img {
   height: 500px;
 }
 
-/* .day {
-  background-image: url(../img/january_tiles/apsdofih.jpg);
+.day {
+  background-image: url(../img/tiles/vintage-1283696_1920.jpg);
   background-repeat: no-repeat;
-  background-size: 180%;
-} */
+  background-size: 100%;
+}
