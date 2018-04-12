@@ -508,6 +508,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#DCDDD8',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 37,
+          user_id: 1,
+          theme: 'Snow',
+          type: 'holiday',
+          src_string: '../img/december_tiles/ice-crystal-64157_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '100%',
+          color_dark: '#000000',
+          color_medium: '#5E5E5D',
+          color_light: '#F4F4F2',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
