@@ -522,6 +522,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#D1CFC4',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 38,
+          user_id: 1,
+          theme: 'Monochromatic',
+          type: 'week',
+          src_string: '../img/november_tiles/nonagon-style-brutalist-architecture-structure-cement-window-perspective-building-1.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '180%',
+          color_dark: '#050704',
+          color_medium: '#837654',
+          color_light: '#C9C1AD',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
