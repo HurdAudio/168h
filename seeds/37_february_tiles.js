@@ -648,6 +648,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#AB8C3F',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 47,
+          user_id: 1,
+          theme: 'Silk/Velvet',
+          type: 'holiday',
+          src_string: '../img/february_tiles/Enchantress_Mulberry_repeat.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '110%',
+          color_dark: '#604F31',
+          color_medium: '#C43B41',
+          color_light: '#D5F7D8',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
