@@ -606,6 +606,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#F0EEE6',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 44,
+          user_id: 1,
+          theme: 'Greenery',
+          type: 'friday',
+          src_string: '../img/may_tiles/Peaceful_Greenery-_Nature_Photograph_ja0m2k.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '153%',
+          color_dark: '#030B0C',
+          color_medium: '#3AA600',
+          color_light: '#E7EAB1',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
