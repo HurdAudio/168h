@@ -4909,7 +4909,7 @@ exports.seed = function(knex, Promise) {
           id: 246,
           user_id: 1,
           theme: 'Baseball',
-          img_path: './img/april/9575371-mlb-cincinnati-reds-at-st.-louis-cardinals.jpg',
+          img_path: './img/april/9575371-mlb-cincinnati-reds-at-st.-louis-cardinals.jpeg',
           title: 'St. Louis Cardinals starting pitcher Alex Reyes (61) celebrates with catcher Yadier Molina (4) after getting the final out of the sixth inning against the Cincinnati Reds during the sixth inning at Busch Stadium',
           artist: 'Jeff Curry',
           year: '2016',

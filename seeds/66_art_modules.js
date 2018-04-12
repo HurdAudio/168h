@@ -1024,6 +1024,66 @@ exports.seed = function(knex, Promise) {
           public: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 86,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/50318b7da306954c7b8a5b65f7d0ccad.jpg',
+          title: 'title unknown',
+          artist: '?',
+          year: '?',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 87,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/jane-burton-domestic-cat-kittens-8-weeks-tortoiseshell-and-white-sisters-persian-cross_a-l-3199745-14258389.jpg',
+          title: 'Domestic Cat Kittens 8 Weeks',
+          artist: 'Jane Burton',
+          year: 'xxi cent.',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 88,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/30afcebed59dfd03e77dd094f7a8e868.jpg',
+          title: 'title unknown',
+          artist: '?',
+          year: '?',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 89,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/051848b05c9f090b99217feb8fedb965.jpg',
+          title: 'title unknown',
+          artist: '?',
+          year: '?',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 90,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/e7c192669521a3ff0b2dd137826f6e7a.jpg',
+          title: 'unknown title',
+          artist: 'unknown title',
+          year: '?',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
