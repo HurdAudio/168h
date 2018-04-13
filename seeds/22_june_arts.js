@@ -6100,7 +6100,107 @@ exports.seed = function(knex, Promise) {
             "thursday": [ 12, 22, 2, 10 ],
             "friday": [ 11, 21, 1, 9 ],
             "saturday": [ 10, 20, 30, 8 ],
-            "sunday": [ 19, 29, 9, 7 ],
+            "sunday": [ 19, 29, 9, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 306,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/photography-as-art-e2-80-94-crafthubs-my-object-of-title-impressionism-the-famous_famous-fine-art-photographers_apartment_interior-design-for-small-apartments-apartment-blog-studio-ideas-basement-your.jpg',
+          title: 'Impressionism of the Famous',
+          artist: 'Clipgoo',
+          year: '2016',
+          rule: {
+            "monday": [ 19, 29, 9, 7 ],
+            "tuesday": [ 8, 18, 28, 6 ],
+            "wednesday": [ 7, 17, 27, 5 ],
+            "thursday": [ 13, 23, 3, 9 ],
+            "friday": [ 12, 22, 2, 10 ],
+            "saturday": [ 11, 21, 1, 9 ],
+            "sunday": [ 10, 20, 30, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 307,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/nadine_rovner_9.jpg',
+          title: 'Nadine Rovner',
+          artist: 'Road Trip',
+          year: '2008',
+          rule: {
+            "monday": [ 10, 20, 30, 8 ],
+            "tuesday": [ 19, 29, 9, 7 ],
+            "wednesday": [ 8, 18, 28, 6 ],
+            "thursday": [ 7, 17, 27, 5 ],
+            "friday": [ 13, 23, 3, 9 ],
+            "saturday": [ 12, 22, 2, 10 ],
+            "sunday": [ 11, 21, 1, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 308,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/americanpatriotculture.jpeg',
+          title: 'American Patriot Culture',
+          artist: 'Eleonora 2005Gallery',
+          year: '2005',
+          rule: {
+            "monday": [ 12, 22, 2, 10 ],
+            "tuesday": [ 11, 21, 1, 9 ],
+            "wednesday": [ 20, 30, 10, 8 ],
+            "thursday": [ 9, 19, 29, 7 ],
+            "friday": [ 8, 18, 28, 6 ],
+            "saturday": [ 14, 24, 4, 10 ],
+            "sunday": [ 13, 23, 3, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 309,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/Ghazal-framed.jpg',
+          title: 'Ghazal',
+          artist: 'Adnan Samman',
+          year: '2017',
+          rule: {
+            "monday": [ 13, 23, 3, 11 ],
+            "tuesday": [ 12, 22, 2, 10 ],
+            "wednesday": [ 11, 21, 1, 9 ],
+            "thursday": [ 20, 30, 10, 8 ],
+            "friday": [ 9, 19, 29, 7 ],
+            "saturday": [ 8, 18, 28, 6 ],
+            "sunday": [ 14, 24, 4, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 310,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/Minnesota_Twins_1_tpfar4.jpg',
+          title: 'Minnesota Twins',
+          artist: 'William Drew',
+          year: '?',
+          rule: {
+            "monday": [ 14, 24, 4, 10 ],
+            "tuesday": [ 13, 23, 3, 11 ],
+            "wednesday": [ 12, 22, 2, 10 ],
+            "thursday": [ 11, 21, 1, 9 ],
+            "friday": [ 20, 30, 10, 8 ],
+            "saturday": [ 9, 19, 29, 7 ],
+            "sunday": [ 8, 18, 28, 6 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
