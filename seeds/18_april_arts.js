@@ -6504,6 +6504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 326,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/10017771-mlb-san-diego-padres-at-atlanta-braves.jpeg',
+          title: 'Atlanta Braves first baseman Freddie Freeman (5) gets high fives in the dugout after hitting a game tying home run against the St. Louis Cardinals during the eighth inning at SunTrust Park',
+          artist: 'Dale Zanine',
+          year: '2017',
+          rule: {
+            "monday": [ 12, 17, 23, 29 ],
+            "tuesday": [ 11, 16, 22, 28 ],
+            "wednesday": [ 16, 22, 27, 4 ],
+            "thursday": [ 30, 20, 26, 3 ],
+            "friday": [ 15, 20, 26, 2 ],
+            "saturday": [ 14, 18, 3, 1 ],
+            "sunday": [ 13, 18, 23, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 327,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/atlanta_braves_17-uai-1350x900.jpg',
+          title: 'Custom LED Baseball',
+          artist: 'Dimensional Innovations',
+          year: '2017',
+          rule: {
+            "monday": [ 13, 18, 23, 29 ],
+            "tuesday": [ 12, 17, 23, 29 ],
+            "wednesday": [ 11, 16, 22, 28 ],
+            "thursday": [ 16, 22, 27, 4 ],
+            "friday": [ 30, 20, 26, 3 ],
+            "saturday": [ 15, 20, 26, 2 ],
+            "sunday": [ 14, 18, 3, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 328,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/0429-braves-101001philliesbraves-005_1200xx2400-1350-0-124.jpg',
+          title: 'The Atlanta Braves will be back on FOX Sports South and FOX Sports Southeast this season',
+          artist: '?',
+          year: '2018',
+          rule: {
+            "monday": [ 14, 18, 3, 1 ],
+            "tuesday": [ 13, 18, 23, 29 ],
+            "wednesday": [ 12, 17, 23, 29 ],
+            "thursday": [ 11, 16, 22, 28 ],
+            "friday": [ 16, 22, 27, 4 ],
+            "saturday": [ 30, 20, 26, 3 ],
+            "sunday": [ 15, 20, 26, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 329,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/atlanta_braves_2012_uniforms_by_jayjaxon-d4ui793.png',
+          title: 'Atlanta Braves 2012 Uniforms',
+          artist: 'Jay Jaxon',
+          year: '2012',
+          rule: {
+            "monday": [ 16, 21, 27, 3 ],
+            "tuesday": [ 15, 19, 4, 2 ],
+            "wednesday": [ 14, 19, 24, 30 ],
+            "thursday": [ 13, 18, 24, 30 ],
+            "friday": [ 12, 17, 23, 29 ],
+            "saturday": [ 17, 23, 28, 5 ],
+            "sunday": [ 1, 21, 27, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 330,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/jarvis-1968.jpg',
+          title: 'Pat Jarvis',
+          artist: '?',
+          year: '1968',
+          rule: {
+            "monday": [ 1, 21, 27, 3 ],
+            "tuesday": [ 16, 21, 27, 3 ],
+            "wednesday": [ 15, 19, 4, 2 ],
+            "thursday": [ 14, 19, 24, 30 ],
+            "friday": [ 13, 18, 24, 30 ],
+            "saturday": [ 12, 17, 23, 29 ],
+            "sunday": [ 17, 23, 28, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
