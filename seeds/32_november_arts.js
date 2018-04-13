@@ -5104,6 +5104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 256,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/shared-space-2004.jpg',
+          title: 'Shared Space',
+          artist: 'Genevieve Asse',
+          year: '2004',
+          rule: {
+            "monday": [ 9, 14, 20, 25 ],
+            "tuesday": [ 8, 13, 19, 26 ],
+            "wednesday": [ 14, 19, 25, 30 ],
+            "thursday": [ 13, 18, 23, 29 ],
+            "friday": [ 12, 17, 23, 27 ],
+            "saturday": [ 11, 14, 22, 27 ],
+            "sunday": [ 10, 14, 21, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 257,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/peinture-130-x-81-cm-20-03-2004-2004.jpg',
+          title: 'Peinture 130 x 81 cm, 20-03-2004',
+          artist: 'Pierre Soulages',
+          year: '2004',
+          rule: {
+            "monday": [ 10, 14, 21, 26 ],
+            "tuesday": [ 9, 14, 20, 25 ],
+            "wednesday": [ 8, 13, 19, 26 ],
+            "thursday": [ 14, 19, 25, 30 ],
+            "friday": [ 13, 18, 23, 29 ],
+            "saturday": [ 12, 17, 23, 27 ],
+            "sunday": [ 11, 14, 22, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 258,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/plaza-2005.jpg',
+          title: 'Plaza',
+          artist: 'Jim Lambie',
+          year: '2005',
+          rule: {
+            "monday": [ 11, 14, 22, 27 ],
+            "tuesday": [ 10, 14, 21, 26 ],
+            "wednesday": [ 9, 14, 20, 25 ],
+            "thursday": [ 8, 13, 19, 26 ],
+            "friday": [ 14, 19, 25, 30 ],
+            "saturday": [ 13, 18, 23, 29 ],
+            "sunday": [ 12, 17, 23, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 259,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/exposed-painting-dioxazine-violet-2006.jpg',
+          title: 'Exposed Painting Dioxazine Violet',
+          artist: 'Callum Innes',
+          year: '2006',
+          rule: {
+            "monday": [ 13, 18, 24, 28 ],
+            "tuesday": [ 12, 15, 23, 28 ],
+            "wednesday": [ 11, 15, 22, 27 ],
+            "thursday": [ 10, 15, 21, 26 ],
+            "friday": [ 9, 14, 20, 27 ],
+            "saturday": [ 15, 20, 26, 1 ],
+            "sunday": [ 14, 19, 24, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 260,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/ecriture-no-070201-2007.jpg',
+          title: 'Ecriture No. 070201',
+          artist: 'Park Seo-Bo',
+          year: '2007',
+          rule: {
+            "monday": [ 14, 19, 24, 30 ],
+            "tuesday": [ 13, 18, 24, 28 ],
+            "wednesday": [ 12, 15, 23, 28 ],
+            "thursday": [ 11, 15, 22, 27 ],
+            "friday": [ 10, 15, 21, 26 ],
+            "saturday": [ 9, 14, 20, 27 ],
+            "sunday": [ 15, 20, 26, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
