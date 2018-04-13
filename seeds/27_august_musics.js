@@ -3028,6 +3028,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 169,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4226049073/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://turgidanimalrecordsitaliandivision.bandcamp.com/album/total-punishment-special',
+          a_string: 'Total Punishment Special by Fecalove / Taeter',
+          rule: {
+            "monday": [ 3, 11, 24, 23 ],
+            "tuesday": [ 2, 10, 23, 22 ],
+            "wednesday": [ 6, 14, 27, 26 ],
+            "thursday": [ 5, 13, 26, 25 ],
+            "saturday": [ 4, 12, 25, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 170,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4105390417/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://turgidanimalrecordsitaliandivision.bandcamp.com/album/untitled',
+          a_string: 'Untitled by Dead Body Love + Fecalove',
+          rule: {
+            "monday": [ 4, 12, 25, 24 ],
+            "tuesday": [ 3, 11, 24, 23 ],
+            "wednesday": [ 2, 10, 23, 22 ],
+            "thursday": [ 6, 14, 27, 26 ],
+            "saturday": [ 5, 13, 26, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 171,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3518618401/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://turgidanimalrecordsitaliandivision.bandcamp.com/album/c-n-t-i-9',
+          a_string: 'C.N.T.I.9 by Maximillian I',
+          rule: {
+            "monday": [ 5, 13, 26, 25 ],
+            "tuesday": [ 4, 12, 25, 24 ],
+            "wednesday": [ 3, 11, 24, 23 ],
+            "thursday": [ 2, 10, 23, 22 ],
+            "saturday": [ 6, 14, 27, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
