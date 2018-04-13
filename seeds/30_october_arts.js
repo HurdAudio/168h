@@ -5304,6 +5304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 266,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_industrysovpost_00016.jpg',
+          title: 'Oilmen, more oil to the Motherland!',
+          artist: 'P. Krivonogov',
+          year: '1948',
+          rule: {
+            "monday": [ 11, 22, 2, 6 ],
+            "tuesday": [ 10, 21, 1, 5 ],
+            "wednesday": [ 9, 20, 31, 4 ],
+            "thursday": [ 8, 19, 20, 3 ],
+            "friday": [ 17, 18, 29, 2 ],
+            "saturday": [ 13, 24, 4, 8 ],
+            "sunday": [ 12, 23, 3, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 267,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_industrysovpost_00013.jpg',
+          title: 'Transport (is) a sibling of the Red Army...',
+          artist: 'I. Gromitsky',
+          year: '1941',
+          rule: {
+            "monday": [ 12, 23, 3, 7 ],
+            "tuesday": [ 11, 22, 2, 6 ],
+            "wednesday": [ 10, 21, 1, 5 ],
+            "thursday": [ 9, 20, 31, 4 ],
+            "friday": [ 8, 19, 20, 3 ],
+            "saturday": [ 17, 18, 29, 2 ],
+            "sunday": [ 13, 24, 4, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 268,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_industrysovpost_00011.jpg',
+          title: 'Over 38 million tons of oil with gas in 1941...',
+          artist: '?',
+          year: '1941',
+          rule: {
+            "monday": [ 13, 24, 4, 8 ],
+            "tuesday": [ 12, 23, 3, 7 ],
+            "wednesday": [ 11, 22, 2, 6 ],
+            "thursday": [ 10, 21, 1, 5 ],
+            "friday": [ 9, 20, 31, 4 ],
+            "saturday": [ 8, 19, 20, 3 ],
+            "sunday": [ 17, 18, 29, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 269,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_ksssrpost_0060.jpg',
+          title: 'Everything for the front! Everything for the victory!',
+          artist: 'L. Lisitsky',
+          year: '1942',
+          rule: {
+            "monday": [ 17, 18, 29, 2 ],
+            "tuesday": [ 13, 24, 4, 8 ],
+            "wednesday": [ 12, 23, 3, 7 ],
+            "thursday": [ 11, 22, 2, 6 ],
+            "friday": [ 10, 21, 1, 5 ],
+            "saturday": [ 9, 20, 31, 4 ],
+            "sunday": [ 8, 19, 20, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 270,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_parenthoodsovpost_00031.jpg',
+          title: 'TalentsV. Koretsky',
+          artist: 'V. Koretsky',
+          year: '1948',
+          rule: {
+            "monday": [ 8, 19, 20, 3 ],
+            "tuesday": [ 17, 18, 29, 2 ],
+            "wednesday": [ 13, 24, 4, 8 ],
+            "thursday": [ 12, 23, 3, 7 ],
+            "friday": [ 11, 22, 2, 6 ],
+            "saturday": [ 10, 21, 1, 5 ],
+            "sunday": [ 9, 20, 31, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
