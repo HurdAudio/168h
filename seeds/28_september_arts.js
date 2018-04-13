@@ -5504,6 +5504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 276,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/old-block-of-houses-1958.jpg',
+          title: 'Old Block of Houses',
+          artist: 'Carlos Botelho',
+          year: '1958',
+          rule: {
+            "monday": [ 4, 11, 29, 6 ],
+            "tuesday": [ 11, 17, 5, 13 ],
+            "wednesday": [ 10, 16, 4, 12 ],
+            "thursday": [ 9, 15, 3, 11 ],
+            "friday": [ 8, 14, 2, 10 ],
+            "saturday": [ 7, 13, 1, 10 ],
+            "sunday": [ 6, 12, 30, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 277,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/red-spot-1954.jpg',
+          title: 'Red Spot',
+          artist: 'John Ferren',
+          year: '1954',
+          rule: {
+            "monday": [ 6, 12, 30, 8 ],
+            "tuesday": [ 4, 11, 29, 6 ],
+            "wednesday": [ 11, 17, 5, 13 ],
+            "thursday": [ 10, 16, 4, 12 ],
+            "friday": [ 9, 15, 3, 11 ],
+            "saturday": [ 8, 14, 2, 10 ],
+            "sunday": [ 7, 13, 1, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 278,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/gadal-10-11-86-1986.jpg',
+          title: 'Gadal 10.11.86',
+          artist: 'John Hoyland',
+          year: '1986',
+          rule: {
+            "monday": [ 7, 13, 1, 10 ],
+            "tuesday": [ 6, 12, 30, 8 ],
+            "wednesday": [ 4, 11, 29, 6 ],
+            "thursday": [ 11, 17, 5, 13 ],
+            "friday": [ 10, 16, 4, 12 ],
+            "saturday": [ 9, 15, 3, 11 ],
+            "sunday": [ 8, 14, 2, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 279,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/not-cia-violentada-1948.jpg',
+          title: 'Carne vegetal',
+          artist: 'Marcelino Vespeira',
+          year: '1948',
+          rule: {
+            "monday": [ 8, 14, 2, 10 ],
+            "tuesday": [ 7, 13, 1, 10 ],
+            "wednesday": [ 6, 12, 30, 8 ],
+            "thursday": [ 4, 11, 29, 6 ],
+            "friday": [ 11, 17, 5, 13 ],
+            "saturday": [ 10, 16, 4, 12 ],
+            "sunday": [ 9, 15, 3, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 280,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/portrait-of-woman-in-seascape.jpg',
+          title: 'Portrait of Woman in Seascape',
+          artist: 'Jose Manuel Capuletti',
+          year: '1958',
+          rule: {
+            "monday": [ 10, 16, 4, 12 ],
+            "tuesday": [ 9, 15, 3, 11 ],
+            "wednesday": [ 8, 14, 2, 11 ],
+            "thursday": [ 7, 13, 1, 9 ],
+            "friday": [ 5, 12, 30, 7 ],
+            "saturday": [ 12, 18, 6, 14 ],
+            "sunday": [ 11, 17, 5, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
