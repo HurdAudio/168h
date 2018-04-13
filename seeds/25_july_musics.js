@@ -3136,6 +3136,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 175,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3323718665/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://wharfcatrecords.bandcamp.com/album/take-the-fall',
+          a_string: 'Take the Fall by Bush Tetras',
+          rule: {
+            "monday": [ 24, 25, 30, 7 ],
+            "tuesday": [ 23, 25, 29, 6 ],
+            "wednesday": [ 27, 29, 2, 10 ],
+            "thursday": [ 26, 28, 1, 9 ],
+            "saturday": [ 25, 27, 31, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 176,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3198198308/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://doomtownrecords.bandcamp.com/album/discography-cs',
+          a_string: 'Discography CS by Nuclear Spring',
+          rule: {
+            "monday": [ 25, 27, 31, 8 ],
+            "tuesday": [ 24, 25, 30, 7 ],
+            "wednesday": [ 23, 25, 29, 6 ],
+            "thursday": [ 27, 29, 2, 10 ],
+            "saturday": [ 26, 28, 1, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 177,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2290564515/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://steeltippeddove.bandcamp.com/album/cui-bono',
+          a_string: 'cui bono by Steel Tipped Dove',
+          rule: {
+            "monday": [ 26, 28, 1, 9 ],
+            "tuesday": [ 25, 27, 31, 8 ],
+            "wednesday": [ 24, 25, 30, 7 ],
+            "thursday": [ 23, 25, 29, 6 ],
+            "saturday": [ 27, 29, 2, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
