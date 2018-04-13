@@ -152,6 +152,8 @@ const messages_reactions = require('./routes/messages_reactions.js');
 const messages_reactionsbyuser = require('./routes/messages_reactionsbyuser.js');
 const comment_reactions = require('./routes/comment_reactions.js');
 const comment_reactionsbyuser = require('./routes/comment_reactionsbyuser.js');
+const timeblock_share_reactions = require('./routes/timeblock_share_reactions.js');
+const timeblock_share_reactionsbyuser = require('./routes/timeblock_share_reactionsbyuser.js');
 
 const port = process.env.PORT || 3007;
 
@@ -304,6 +306,8 @@ app.use(fileUpload());
  app.use('/messages_reactionsbyuser', messages_reactionsbyuser);
  app.use('/comment_reactions', comment_reactions);
  app.use('/comment_reactionsbyuser', comment_reactionsbyuser);
+ app.use('/timeblock_share_reactions', timeblock_share_reactions);
+ app.use('/timeblock_share_reactionsbyuser', timeblock_share_reactionsbyuser);
 
 app.get('/onthisdayinhistory/:date', (req, res, next) =>{
   let newUrl = 'http://history.muffinlabs.com/date/';
