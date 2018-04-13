@@ -3244,6 +3244,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 181,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2255513558/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://christinavantzou.bandcamp.com/album/no-4',
+          a_string: 'No. 4 by christina vantzou',
+          rule: {
+            "monday": [ 25, 28, 3, 15 ],
+            "tuesday": [ 24, 28, 3, 15 ],
+            "wednesday": [ 24, 27, 3, 14 ],
+            "thursday": [ 22, 30, 2, 13 ],
+            "saturday": [ 26, 30, 6, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 182,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4182429613/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://williamselman.bandcamp.com/album/musica-enterrada',
+          a_string: 'Musica Enterrada by William Selman',
+          rule: {
+            "monday": [ 27, 1, 7, 18 ],
+            "tuesday": [ 26, 29, 4, 16 ],
+            "wednesday": [ 25, 29, 4, 16 ],
+            "thursday": [ 25, 28, 4, 15 ],
+            "saturday": [ 23, 1, 3, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 183,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1937315283/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://williamselman.bandcamp.com/album/urbanism-and-ecology',
+          a_string: 'Urbanism and Ecology by William Selman',
+          rule: {
+            "monday": [ 23, 1, 3, 14 ],
+            "tuesday": [ 27, 1, 7, 18 ],
+            "wednesday": [ 26, 29, 4, 16 ],
+            "thursday": [ 25, 29, 4, 16 ],
+            "saturday": [ 25, 28, 4, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
