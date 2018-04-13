@@ -2920,6 +2920,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 163,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2461531193/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://rlyr.bandcamp.com/album/actual-existence-2',
+          a_string: 'Actual Existence by RLYR',
+          rule: {
+            "monday": [ 23, 13, 21, 15 ],
+            "tuesday": [ 27, 17, 25, 19 ],
+            "wednesday": [ 26, 16, 24, 18 ],
+            "thursday": [ 25, 15, 23, 18 ],
+            "saturday": [ 24, 14, 22, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 164,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'http://bandcamp.com/EmbeddedPlayer/album=2525967287/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://slothandturtle.com/album/sloth-turtle',
+          a_string: 'Sloth &amp; Turtle by Sloth &amp; Turtle',
+          rule: {
+            "monday": [ 24, 14, 22, 16 ],
+            "tuesday": [ 23, 13, 21, 15 ],
+            "wednesday": [ 27, 17, 25, 19 ],
+            "thursday": [ 26, 16, 24, 18 ],
+            "saturday": [ 25, 15, 23, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 165,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3491432808/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://lisalaruemrrartist.bandcamp.com/album/origins',
+          a_string: 'Origins by Lisa LaRue',
+          rule: {
+            "monday": [ 25, 15, 23, 18 ],
+            "tuesday": [ 24, 14, 22, 16 ],
+            "wednesday": [ 23, 13, 21, 15 ],
+            "thursday": [ 27, 17, 25, 19 ],
+            "saturday": [ 26, 16, 24, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
