@@ -4904,6 +4904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 246,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/24-00,Bk2.jpg',
+          title: 'Book Cover',
+          artist: 'Delos Palmer',
+          year: '1924',
+          rule: {
+            "monday": [ 7, 20, 28, 3 ],
+            "tuesday": [ 6, 19, 27, 2 ],
+            "wednesday": [ 5, 18, 26, 1 ],
+            "thursday": [ 4, 17, 25, 31 ],
+            "friday": [ 3, 15, 24, 30 ],
+            "saturday": [ 2, 15, 3, 10 ],
+            "sunday": [ 8, 21, 29, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 247,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/00-08,TheMagnet.jpg',
+          title: 'The Magnet',
+          artist: 'Harry Parkhurst',
+          year: '1900',
+          rule: {
+            "monday": [ 8, 21, 29, 4 ],
+            "tuesday": [ 7, 20, 28, 3 ],
+            "wednesday": [ 6, 19, 27, 2 ],
+            "thursday": [ 5, 18, 26, 1 ],
+            "friday": [ 4, 17, 25, 31 ],
+            "saturday": [ 3, 15, 24, 30 ],
+            "sunday": [ 2, 15, 3, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 248,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/38-09,TenDA1.jpg',
+          title: 'Ten Detective Aces',
+          artist: 'R. Patenaude',
+          year: '1938',
+          rule: {
+            "monday": [ 2, 15, 3, 10 ],
+            "tuesday": [ 8, 21, 29, 4 ],
+            "wednesday": [ 7, 20, 28, 3 ],
+            "thursday": [ 6, 19, 27, 2 ],
+            "friday": [ 5, 18, 26, 1 ],
+            "saturday": [ 4, 17, 25, 31 ],
+            "sunday": [ 3, 15, 24, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 249,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/22-01,SciInvtn.jpg',
+          title: 'Science & Inventions',
+          artist: 'Frank R. Paul',
+          year: '1922',
+          rule: {
+            "monday": [ 3, 15, 24, 30 ],
+            "tuesday": [ 2, 15, 3, 10 ],
+            "wednesday": [ 8, 21, 29, 4 ],
+            "thursday": [ 7, 20, 28, 3 ],
+            "friday": [ 6, 19, 27, 2 ],
+            "saturday": [ 5, 18, 26, 1 ],
+            "sunday": [ 4, 17, 25, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 250,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/31-08,Ace-Hi.jpg',
+          title: 'Ace-High Magazine',
+          artist: 'Domingo Periconi',
+          year: '1931',
+          rule: {
+            "monday": [ 4, 17, 25, 31 ],
+            "tuesday": [ 3, 15, 24, 30 ],
+            "wednesday": [ 2, 15, 3, 10 ],
+            "thursday": [ 8, 21, 29, 4 ],
+            "friday": [ 7, 20, 28, 3 ],
+            "saturday": [ 6, 19, 27, 2 ],
+            "sunday": [ 5, 18, 26, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
