@@ -3568,6 +3568,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 199,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=209615438/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bsteady.bandcamp.com/album/queer-love-songs',
+          a_string: 'queer love songs by be steadwell',
+          rule: {
+            "monday": [ 29, 5, 11, 19 ],
+            "tuesday": [ 29, 4, 10, 18 ],
+            "wednesday": [ 2, 8, 14, 22 ],
+            "thursday": [ 1, 7, 13, 21 ],
+            "saturday": [ 31, 6, 12, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 200,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1621609874/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://inneroceanrecords.bandcamp.com/album/women-of-the-world-compilation',
+          a_string: 'Women Of The World Compilation by Various Artists',
+          rule: {
+            "monday": [ 31, 6, 12, 21 ],
+            "tuesday": [ 29, 5, 11, 19 ],
+            "wednesday": [ 29, 4, 10, 18 ],
+            "thursday": [ 2, 8, 14, 22 ],
+            "saturday": [ 1, 7, 13, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 201,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1969968798/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://zolajesus.bandcamp.com/album/stridulum',
+          a_string: 'Stridulum by Zola Jesus',
+          rule: {
+            "monday": [ 1, 7, 13, 21 ],
+            "tuesday": [ 31, 6, 12, 21 ],
+            "wednesday": [ 29, 5, 11, 19 ],
+            "thursday": [ 29, 4, 10, 18 ],
+            "saturday": [ 2, 8, 14, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
