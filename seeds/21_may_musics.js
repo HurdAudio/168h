@@ -3352,6 +3352,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 187,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2736807964/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://lionelmarchetti.bandcamp.com/album/4-tudes-despace-2009-4-compositions-de-musique-concr-te',
+          a_string: '4 études d&#39;espace / 2009 ~ 4 compositions de musique concrète by Lionel Marchetti &amp; quatuor Bomonstre',
+          rule: {
+            "monday": [ 27, 2, 9, 22 ],
+            "tuesday": [ 31, 7, 13, 26 ],
+            "wednesday": [ 30, 5, 12, 25 ],
+            "thursday": [ 29, 4, 11, 24 ],
+            "saturday": [ 28, 3, 10, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 188,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=289458274/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://kraak.bandcamp.com/album/s-t-2',
+          a_string: 's/t by Red Brut',
+          rule: {
+            "monday": [ 28, 3, 10, 23 ],
+            "tuesday": [ 27, 2, 9, 22 ],
+            "wednesday": [ 31, 7, 13, 26 ],
+            "thursday": [ 30, 5, 12, 25 ],
+            "saturday": [ 29, 4, 11, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 189,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1631630356/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://kraak.bandcamp.com/album/braublff-materie-und-laut',
+          a_string: 'Braublff (materie und laut) by KRAAK',
+          rule: {
+            "monday": [ 30, 5, 12, 25 ],
+            "tuesday": [ 29, 4, 11, 24 ],
+            "wednesday": [ 28, 3, 10, 23 ],
+            "thursday": [ 1, 8, 14, 27 ],
+            "saturday": [ 31, 6, 13, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
