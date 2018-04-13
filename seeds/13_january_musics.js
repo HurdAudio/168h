@@ -3784,6 +3784,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 211,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=112417670/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://newfocusrecordings.bandcamp.com/album/george-lewis-the-will-to-adorn',
+          a_string: 'George Lewis: The Will To Adorn by George Lewis, International Contemporary Ensemble, Steven Schick, David Fulmer',
+          rule: {
+            "monday": [ 6, 12, 13, 14 ],
+            "tuesday": [ 5, 12, 13, 14 ],
+            "wednesday": [ 9, 16, 17, 18 ],
+            "thursday": [ 8, 14, 16, 17 ],
+            "saturday": [ 7, 14, 15, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 212,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=66826354/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://newfocusrecordings.bandcamp.com/album/peter-gilbert-the-bold-arch-of-undreamt-bridges',
+          a_string: 'Peter Gilbert: The Bold Arch of Undreamt Bridges by Peter Gilbert, White Rabbit Ensemble, Phillip Staudlin, Mario Caroli',
+          rule: {
+            "monday": [ 7, 14, 15, 16 ],
+            "tuesday": [ 6, 12, 13, 14 ],
+            "wednesday": [ 5, 12, 13, 14 ],
+            "thursday": [ 9, 16, 17, 18 ],
+            "saturday": [ 8, 14, 16, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 213,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=412747050/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://newfocusrecordings.bandcamp.com/album/marcos-balter-aesopica',
+          a_string: 'Marcos Balter: Aesopica by International Contemporary Ensemble, Claire Chase, Ryan Muncy',
+          rule: {
+            "monday": [ 8, 14, 16, 17 ],
+            "tuesday": [ 7, 14, 15, 16 ],
+            "wednesday": [ 6, 12, 13, 14 ],
+            "thursday": [ 5, 12, 13, 14 ],
+            "saturday": [ 9, 16, 17, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
