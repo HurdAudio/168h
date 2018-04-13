@@ -6904,6 +6904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 346,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/74be2bd0-9d68-4fd3-8a05-33d688a1f256_570.jpeg',
+          title: 'Still life with fruit',
+          artist: 'Pauline Powell Burns',
+          year: '1890',
+          rule: {
+            "monday": [ 1, 11, 7, 26 ],
+            "tuesday": [ 20, 28, 7, 15 ],
+            "wednesday": [ 21, 1, 9, 17 ],
+            "thursday": [ 27, 3, 9, 19 ],
+            "friday": [ 26, 5, 13, 21 ],
+            "saturday": [ 28, 9, 15, 21 ],
+            "sunday": [ 1, 9, 17, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 347,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/59_1.jpg',
+          title: 'unknown title',
+          artist: 'Robert Butler',
+          year: '?',
+          rule: {
+            "monday": [ 1, 9, 17, 27 ],
+            "tuesday": [ 1, 11, 7, 26 ],
+            "wednesday": [ 20, 28, 7, 15 ],
+            "thursday": [ 21, 1, 9, 17 ],
+            "friday": [ 27, 3, 9, 19 ],
+            "saturday": [ 26, 5, 13, 21 ],
+            "sunday": [ 28, 9, 15, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 348,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/frank-calloway-untitled-800x800.jpg',
+          title: 'untitled',
+          artist: 'Frank Calloway',
+          year: '?',
+          rule: {
+            "monday": [ 28, 9, 15, 21 ],
+            "tuesday": [ 1, 9, 17, 27 ],
+            "wednesday": [ 1, 11, 7, 26 ],
+            "thursday": [ 20, 28, 7, 15 ],
+            "friday": [ 21, 1, 9, 17 ],
+            "saturday": [ 27, 3, 9, 19 ],
+            "sunday": [ 26, 5, 13, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 349,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/campbell,es_girlscounts_e47aug.jpg',
+          title: 'Playboy',
+          artist: 'E. Simms Campbell',
+          year: '1962',
+          rule: {
+            "monday": [ 26, 5, 13, 21 ],
+            "tuesday": [ 28, 9, 15, 21 ],
+            "wednesday": [ 1, 9, 17, 27 ],
+            "thursday": [ 1, 11, 7, 26 ],
+            "friday": [ 20, 28, 7, 15 ],
+            "saturday": [ 21, 1, 9, 17 ],
+            "sunday": [ 27, 3, 9, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 350,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/crusad3.jpg',
+          title: 'The Crusaders',
+          artist: 'Fred Carter',
+          year: 'xx cent.',
+          rule: {
+            "monday": [ 28, 4, 10, 20 ],
+            "tuesday": [ 27, 6, 14, 22 ],
+            "wednesday": [ 29, 10, 16, 22 ],
+            "thursday": [ 2, 10, 18, 28 ],
+            "friday": [ 2, 12, 8, 27 ],
+            "saturday": [ 21, 29, 8, 16 ],
+            "sunday": [ 22, 2, 10, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
