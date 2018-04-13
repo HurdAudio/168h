@@ -5904,6 +5904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 296,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/untitled-9.jpg',
+          title: 'Untitled',
+          artist: 'Jean Cocteau',
+          year: '?',
+          rule: {
+            "monday": [ 14, 25, 5, 15 ],
+            "tuesday": [ 13, 24, 4, 15 ],
+            "wednesday": [ 12, 23, 3, 14 ],
+            "thursday": [ 11, 22, 2, 3 ],
+            "friday": [ 10, 21, 31, 2 ],
+            "saturday": [ 9, 20, 31, 1 ],
+            "sunday": [ 8, 19, 30, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 297,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/la-dame-au-chat-et-la-th-i-re-1928.jpg',
+          title: 'La dame au chat et à la théière',
+          artist: 'Le Corbusier',
+          year: '1928',
+          rule: {
+            "monday": [ 8, 19, 30, 10 ],
+            "tuesday": [ 14, 25, 5, 15 ],
+            "wednesday": [ 13, 24, 4, 15 ],
+            "thursday": [ 12, 23, 3, 14 ],
+            "friday": [ 11, 22, 2, 3 ],
+            "saturday": [ 10, 21, 31, 2 ],
+            "sunday": [ 9, 20, 31, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 298,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/la-riviere-dans-l-ile-de-france.jpg',
+          title: 'La riviere dans l\'Ile de France',
+          artist: 'Jules Lefranc',
+          year: '?',
+          rule: {
+            "monday": [ 9, 20, 31, 1 ],
+            "tuesday": [ 8, 19, 30, 10 ],
+            "wednesday": [ 14, 25, 5, 15 ],
+            "thursday": [ 13, 24, 4, 15 ],
+            "friday": [ 12, 23, 3, 14 ],
+            "saturday": [ 11, 22, 2, 3 ],
+            "sunday": [ 10, 21, 31, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 299,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/leafage-and-drops.jpg',
+          title: 'Leafage and Drops',
+          artist: 'Jean Arp',
+          year: '1920',
+          rule: {
+            "monday": [ 10, 21, 31, 2 ],
+            "tuesday": [ 9, 20, 31, 1 ],
+            "wednesday": [ 8, 19, 30, 10 ],
+            "thursday": [ 14, 25, 5, 15 ],
+            "friday": [ 13, 24, 4, 15 ],
+            "saturday": [ 12, 23, 3, 14 ],
+            "sunday": [ 11, 22, 2, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 300,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/nude-1910.jpg',
+          title: 'Nude',
+          artist: 'Lajos Tihanyi',
+          year: '1910',
+          rule: {
+            "monday": [ 11, 22, 2, 3 ],
+            "tuesday": [ 10, 21, 31, 2 ],
+            "wednesday": [ 9, 20, 31, 1 ],
+            "thursday": [ 8, 19, 30, 10 ],
+            "friday": [ 14, 25, 5, 15 ],
+            "saturday": [ 13, 24, 4, 15 ],
+            "sunday": [ 12, 23, 3, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
