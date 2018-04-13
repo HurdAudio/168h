@@ -3676,6 +3676,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 205,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3150720355/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://elaquent-urbnet.bandcamp.com/album/celebrate-life',
+          a_string: 'Celebrate Life! by Elaquent',
+          rule: {
+            "monday": [ 5, 8, 10, 14 ],
+            "tuesday": [ 6, 10, 12, 14 ],
+            "wednesday": [ 18, 12, 14, 20 ],
+            "thursday": [ 1, 6, 7, 20 ],
+            "saturday": [ 2, 6, 8, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 206,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1375737435/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://rawkid.bandcamp.com/album/grum-vol-1',
+          a_string: 'Grum vol.1 by Rawkid',
+          rule: {
+            "monday": [ 2, 6, 8, 12 ],
+            "tuesday": [ 5, 8, 10, 14 ],
+            "wednesday": [ 6, 10, 12, 14 ],
+            "thursday": [ 18, 12, 14, 20 ],
+            "saturday": [ 1, 6, 7, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 207,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2638191048/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://denmarkvessey.bandcamp.com/album/sun-go-nova',
+          a_string: 'Sun Go Nova by Denmark Vessey',
+          rule: {
+            "monday": [ 1, 6, 7, 20 ],
+            "tuesday": [ 2, 6, 8, 12 ],
+            "wednesday": [ 5, 8, 10, 14 ],
+            "thursday": [ 6, 10, 12, 14 ],
+            "saturday": [ 18, 12, 14, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
