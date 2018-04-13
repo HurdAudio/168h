@@ -1384,6 +1384,26 @@ exports.seed = function(knex, Promise) {
           a_string: 'Of Mythic Worlds by Sun Ra &amp; His Arkestra',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 139,
+          user_id: 1,
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3918388682/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://p-mm.bandcamp.com/album/pmm-le-sun-ra-and-his-cosmo-discipline-arkestra-night-in-east-berlin-1986',
+          a_string: 'PMM# Le Sun Ra And His Cosmo Discipline Arkestra - Night In East Berlin 1986 by Le Sun Ra And His Cosmo Discipline Arkestra',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 140,
+          user_id: 1,
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1465038577/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sunramusic.bandcamp.com/album/discipline-99-out-beyond-the-kingdom-of',
+          a_string: 'Discipline 99 (Out Beyond the Kingdom Of) by Sun Ra &amp; His Arkestra',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
