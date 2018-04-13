@@ -2704,6 +2704,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 151,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=442969849/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://preschmedia.bandcamp.com/album/ronald-snijders-a-safe-return-1980-2018',
+          a_string: 'RONALD SNIJDERS - A Safe Return (1980) 2018 by Ronald Snijders',
+          rule: {
+            "monday": [ 21, 2, 13, 17 ],
+            "tuesday": [ 20, 1, 12, 14 ],
+            "wednesday": [ 19, 30, 11, 13 ],
+            "thursday": [ 23, 4, 15, 19 ],
+            "saturday": [ 22, 3, 14, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 152,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=286440587/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://preschmedia.bandcamp.com/album/alva-ja-tik-b-tu-cd-lp-1978-2015',
+          a_string: 'ALVA - Ja Tik Būtu CD/LP (1978) 2015 by Alva',
+          rule: {
+            "monday": [ 22, 3, 14, 18 ],
+            "tuesday": [ 21, 2, 13, 17 ],
+            "wednesday": [ 20, 1, 12, 14 ],
+            "thursday": [ 19, 30, 11, 13 ],
+            "saturday": [ 23, 4, 15, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 153,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=295213109/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://preschmedia.bandcamp.com/album/starvue-upward-bound-1980-2018',
+          a_string: 'STARVUE - Upward Bound (1980) 2018 by Starvue',
+          rule: {
+            "monday": [ 23, 4, 15, 19 ],
+            "tuesday": [ 22, 3, 14, 18 ],
+            "wednesday": [ 21, 2, 13, 17 ],
+            "thursday": [ 20, 1, 12, 14 ],
+            "saturday": [ 19, 30, 11, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
