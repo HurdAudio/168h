@@ -2596,6 +2596,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 145,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3890871436/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sonido-gallo-negro.bandcamp.com/album/mambo-c-smico',
+          a_string: 'Mambo Cósmico by Sonido Gallo Negro',
+          rule: {
+            "monday": [ 25, 31, 6, 12 ],
+            "tuesday": [ 22, 30, 5, 11 ],
+            "wednesday": [ 23, 29, 4, 10 ],
+            "thursday": [ 27, 2, 8, 14 ],
+            "saturday": [ 26, 1, 7, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 146,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3129067531/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sonido-gallo-negro.bandcamp.com/album/sendero-mistico',
+          a_string: 'Sendero Mistico by Sonido Gallo Negro',
+          rule: {
+            "monday": [ 26, 1, 7, 12 ],
+            "tuesday": [ 25, 31, 6, 12 ],
+            "wednesday": [ 22, 30, 5, 11 ],
+            "thursday": [ 23, 29, 4, 10 ],
+            "saturday": [ 27, 2, 8, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 147,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1413287566/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tomze.bandcamp.com/album/brazil-classics-5-the-return-of-tom-z-the-hips-of-tradition',
+          a_string: 'Brazil Classics 5: The Return of Tom Zé: The Hips of Tradition by Tom Ze',
+          rule: {
+            "monday": [ 28, 3, 9, 15 ],
+            "tuesday": [ 27, 2, 8, 13 ],
+            "wednesday": [ 26, 1, 7, 13 ],
+            "thursday": [ 23, 31, 6, 12 ],
+            "saturday": [ 24, 30, 5, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
