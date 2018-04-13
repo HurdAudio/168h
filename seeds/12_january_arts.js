@@ -7104,6 +7104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 356,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/crucifixion-1985.jpg',
+          title: 'Crucifixion',
+          artist: 'Philip Taaffe',
+          year: '1985',
+          rule: {
+            "monday": [ 30, 1, 2, 4 ],
+            "tuesday": [ 1, 3, 7, 10 ],
+            "wednesday": [ 3, 5, 6, 9 ],
+            "thursday": [ 19, 20, 31, 23 ],
+            "friday": [ 22, 24, 16, 5 ],
+            "saturday": [ 24, 25, 17, 20 ],
+            "sunday": [ 27, 28, 19, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 357,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/pale-colors-on-runs.jpg',
+          title: 'Pale colors on runs',
+          artist: 'Robert Goodnough',
+          year: 'xx - xxi cent.',
+          rule: {
+            "monday": [ 28, 29, 20, 24 ],
+            "tuesday": [ 31, 2, 3, 5 ],
+            "wednesday": [ 2, 4, 8, 11 ],
+            "thursday": [ 4, 6, 7, 10 ],
+            "friday": [ 20, 21, 1, 24 ],
+            "saturday": [ 23, 25, 17, 6 ],
+            "sunday": [ 25, 26, 18, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 358,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/espa-o-ilus-rio-1970.jpg',
+          title: 'Espaço Ilusório',
+          artist: 'Eduardo Nery',
+          year: '1970',
+          rule: {
+            "monday": [ 25, 26, 18, 21 ],
+            "tuesday": [ 28, 29, 20, 24 ],
+            "wednesday": [ 31, 2, 3, 5 ],
+            "thursday": [ 2, 4, 8, 11 ],
+            "friday": [ 4, 6, 7, 10 ],
+            "saturday": [ 20, 21, 1, 24 ],
+            "sunday": [ 23, 25, 17, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 359,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/the-man-the-women-and-the-child-1995.jpg',
+          title: 'The Man, the Women and the Child',
+          artist: 'Nzante Spee',
+          year: '1995',
+          rule: {
+            "monday": [ 23, 25, 17, 6 ],
+            "tuesday": [ 25, 26, 18, 21 ],
+            "wednesday": [ 28, 29, 20, 24 ],
+            "thursday": [ 31, 2, 3, 5 ],
+            "friday": [ 2, 4, 8, 11 ],
+            "saturday": [ 4, 6, 7, 10 ],
+            "sunday": [ 20, 21, 1, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 360,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/composition-red-forms.jpg',
+          title: 'Composition (Red Forms)',
+          artist: 'Lajos Kassak',
+          year: '?',
+          rule: {
+            "monday": [ 20, 21, 1, 24 ],
+            "tuesday": [ 23, 25, 17, 6 ],
+            "wednesday": [ 25, 26, 18, 21 ],
+            "thursday": [ 28, 29, 20, 24 ],
+            "friday": [ 31, 2, 3, 5 ],
+            "saturday": [ 2, 4, 8, 11 ],
+            "sunday": [ 4, 6, 7, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
