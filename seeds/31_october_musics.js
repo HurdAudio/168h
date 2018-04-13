@@ -2812,6 +2812,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 157,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=817964522/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://leilaabdulrauf.bandcamp.com/album/diminution',
+          a_string: 'Diminution by Leila A. Rauf',
+          rule: {
+            "monday": [ 30, 9, 19, 22 ],
+            "tuesday": [ 29, 8, 18, 21 ],
+            "wednesday": [ 28, 7, 17, 20 ],
+            "thursday": [ 27, 6, 16, 19 ],
+            "saturday": [ 26, 5, 16, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 158,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1128206723/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://leilaabdulrauf.bandcamp.com/album/insomnia',
+          a_string: 'Insomnia by Leila A. Rauf',
+          rule: {
+            "monday": [ 27, 6, 17, 19 ],
+            "tuesday": [ 31, 10, 20, 23 ],
+            "wednesday": [ 30, 9, 19, 22 ],
+            "thursday": [ 29, 8, 18, 21 ],
+            "saturday": [ 28, 7, 17, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 159,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1710486800/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://leilaabdulrauf.bandcamp.com/album/cold-and-cloud',
+          a_string: 'Cold And Cloud by Leila A. Rauf',
+          rule: {
+            "monday": [ 28, 7, 17, 20 ],
+            "tuesday": [ 27, 6, 17, 19 ],
+            "wednesday": [ 31, 10, 20, 23 ],
+            "thursday": [ 30, 9, 19, 22 ],
+            "saturday": [ 29, 8, 18, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
