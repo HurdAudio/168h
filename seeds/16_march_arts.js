@@ -6704,6 +6704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 336,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/tulip.jpg',
+          title: 'Tulip',
+          artist: 'Judith Leyster',
+          year: 'c.1643',
+          rule: {
+            "monday": [ 15, 25, 2, 12 ],
+            "tuesday": [ 14, 24, 1, 11 ],
+            "wednesday": [ 13, 23, 31, 10 ],
+            "thursday": [ 12, 22, 31, 9 ],
+            "friday": [ 18, 27, 6, 14 ],
+            "saturday": [ 17, 27, 6, 14 ],
+            "sunday": [ 17, 26, 3, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 337,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/spiders-ants-and-hummingbird-on-a-branch-of-a-guava-1705.jpg',
+          title: 'Spiders, ants and hummingbird on a branch of a guava',
+          artist: 'Maria Sibylla Merian',
+          year: '1705',
+          rule: {
+            "monday": [ 17, 26, 3, 13 ],
+            "tuesday": [ 15, 25, 2, 12 ],
+            "wednesday": [ 14, 24, 1, 11 ],
+            "thursday": [ 13, 23, 31, 10 ],
+            "friday": [ 12, 22, 31, 9 ],
+            "saturday": [ 18, 27, 6, 14 ],
+            "sunday": [ 17, 27, 6, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 338,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/unknown-title.jpg',
+          title: 'unknown title',
+          artist: 'Giulia Lama',
+          year: '?',
+          rule: {
+            "monday": [ 17, 27, 6, 14 ],
+            "tuesday": [ 17, 26, 3, 13 ],
+            "wednesday": [ 15, 25, 2, 12 ],
+            "thursday": [ 14, 24, 1, 11 ],
+            "friday": [ 13, 23, 31, 10 ],
+            "saturday": [ 12, 22, 31, 9 ],
+            "sunday": [ 18, 27, 6, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 339,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/hyacinthe-gabrielle-roland-1791.jpg',
+          title: 'Hyacinthe-Gabrielle Roland',
+          artist: 'Louise Elisabeth Vigee Le Brun',
+          year: '1791',
+          rule: {
+            "monday": [ 18, 27, 6, 14 ],
+            "tuesday": [ 17, 27, 6, 14 ],
+            "wednesday": [ 17, 26, 3, 13 ],
+            "thursday": [ 15, 25, 2, 12 ],
+            "friday": [ 14, 24, 1, 11 ],
+            "saturday": [ 13, 23, 31, 10 ],
+            "sunday": [ 12, 22, 31, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 340,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/portrait-of-grand-duchess-zinaida-yusupova.jpg',
+          title: 'Portrait of Grand Duchess Zinaida Yusupova',
+          artist: 'Christina Robertson',
+          year: 'c.1845',
+          rule: {
+            "monday": [ 12, 22, 31, 9 ],
+            "tuesday": [ 18, 27, 6, 14 ],
+            "wednesday": [ 17, 27, 6, 14 ],
+            "thursday": [ 17, 26, 3, 13 ],
+            "friday": [ 15, 25, 2, 12 ],
+            "saturday": [ 14, 24, 1, 11 ],
+            "sunday": [ 13, 23, 31, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
