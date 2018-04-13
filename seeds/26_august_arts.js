@@ -5704,6 +5704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 286,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/fisherman-in-a-red-shirt-1908(1).jpg',
+          title: 'Fisherman in a Red Shirt',
+          artist: 'Niko Pirosmani',
+          year: '1908',
+          rule: {
+            "monday": [ 10, 14, 22, 7 ],
+            "tuesday": [ 9, 11, 21, 6 ],
+            "wednesday": [ 8, 11, 20, 5 ],
+            "thursday": [ 7, 10, 19, 4 ],
+            "friday": [ 13, 17, 25, 10 ],
+            "saturday": [ 12, 15, 24, 9 ],
+            "sunday": [ 11, 15, 23, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 287,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/pegaso-de-sol-1922.jpg',
+          title: 'Pegaso de Sol',
+          artist: 'Xul Solar',
+          year: '1922',
+          rule: {
+            "monday": [ 12, 16, 24, 9 ],
+            "tuesday": [ 11, 15, 23, 8 ],
+            "wednesday": [ 10, 12, 22, 7 ],
+            "thursday": [ 9, 12, 21, 6 ],
+            "friday": [ 8, 11, 20, 5 ],
+            "saturday": [ 14, 18, 26, 11 ],
+            "sunday": [ 13, 16, 25, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 288,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/route-of-the-train-to-the-kahlenberg.jpg',
+          title: 'Railway to the Kahlenberg',
+          artist: 'Richard Gerstl',
+          year: '1907',
+          rule: {
+            "monday": [ 13, 16, 25, 10 ],
+            "tuesday": [ 12, 16, 24, 9 ],
+            "wednesday": [ 11, 15, 23, 8 ],
+            "thursday": [ 10, 12, 22, 7 ],
+            "friday": [ 9, 12, 21, 6 ],
+            "saturday": [ 8, 11, 20, 5 ],
+            "sunday": [ 14, 18, 26, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 289,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/bordeaux-1937.jpg',
+          title: 'Bordeaux',
+          artist: 'Jean Dupas',
+          year: '1937',
+          rule: {
+            "monday": [ 14, 18, 26, 11 ],
+            "tuesday": [ 13, 16, 25, 10 ],
+            "wednesday": [ 12, 16, 24, 9 ],
+            "thursday": [ 11, 15, 23, 8 ],
+            "friday": [ 10, 12, 22, 7 ],
+            "saturday": [ 9, 12, 21, 6 ],
+            "sunday": [ 8, 11, 20, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 290,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/brooklyn-bridge-1920.jpg',
+          title: 'Brooklyn Bridge',
+          artist: 'Joseph Stella',
+          year: '1920',
+          rule: {
+            "monday": [ 8, 11, 20, 5 ],
+            "tuesday": [ 14, 18, 26, 11 ],
+            "wednesday": [ 13, 16, 25, 10 ],
+            "thursday": [ 12, 16, 24, 9 ],
+            "friday": [ 11, 15, 23, 8 ],
+            "saturday": [ 10, 12, 22, 7 ],
+            "sunday": [ 9, 12, 21, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
