@@ -696,7 +696,7 @@
         authorNewMessageQuery.setAttribute("style", "display: initial;");
       }
 
-      function userCommentDeleteConfirmClick(commentId) {
+      function userCommentDeleteConfirmClick(commentId, messageId) {
         let messageIndex = 0;
         let index = 0;
         $http.delete(`/comments/${commentId}`)
@@ -713,6 +713,11 @@
             }
           }
           vm.userMessages[messageIndex].comments.splice(index, 1);
+          for (let i = 0; i < vm.userMessages.length; i++) {
+            if (vm.userMessages[i].id === messageId) {
+              updateCommentsNumber(i, messageId);
+            }
+          }
         });
       }
 
@@ -724,12 +729,13 @@
         deleteCommentConfirm.setAttribute("style", "display: none;");
       }
 
-      function userDeleteComment(commentId) {
+      function userDeleteComment(commentId, messageId) {
         let editDeleteUserComments = document.getElementById('editDeleteUserComments' + commentId.toString());
         let deleteCommentConfirm = document.getElementById('deleteCommentConfirm' + commentId.toString());
 
         editDeleteUserComments.setAttribute("style", "display: none;");
         deleteCommentConfirm.setAttribute("style", "display: initial;");
+
       }
 
       function appointmentNo(blockShare) {
@@ -958,19 +964,42 @@
         });
       }
 
-      function userEditCommentCompleted(commentId) {
+      function updateCommentsNumber(index, messageId) {
+        $http.get('/comments')
+        .then(allCommentsData=>{
+          let allComments = allCommentsData.data;
+          let filteredComments = allComments.filter(com=>{
+            return(com.message_id === messageId);
+          });
+          if (filteredComments.length > 0) {
+            if (filteredComments.length === 1) {
+              vm.userMessages[index].commentsLength = '1 comment';
+            } else {
+              vm.userMessages[index].commentsLength = filteredComments.length + ' comments';
+            }
+          } else {
+            vm.userMessages[index].commentsLength = '0 comments';
+          }
+        });
+      }
 
+      function userEditCommentCompleted(commentId, messageId) {
+
+        let update = new Date();
         let thisIsTheCommentEditor = document.getElementById('thisIsTheCommentEditor' + commentId);
         let thisIsTheComment = document.getElementById('thisIsTheComment' + commentId);
         let thisIsCommentEditDoneDiv = document.getElementById('thisIsCommentEditDoneDiv' + commentId);
         let editDeleteUserComments = document.getElementById('editDeleteUserComments' + commentId);
         let subObj = {
-          comment: thisIsTheCommentEditor.value
+          comment: thisIsTheCommentEditor.value,
+          updated_at: update
         };
         $http.patch(`/comments/${commentId}`, subObj)
         .then(commentData=>{
           let comment = commentData.data;
           let newCommentButton = document.getElementById('newCommentButton' + comment.message_id);
+          let updateTime = new Date(comment.updated_at);
+          let createTime = new Date(comment.created_at);
           console.log(comment);
           thisIsTheComment.innerHTML = comment.comment;
           thisIsTheComment.setAttribute("style", "visibility: visible;");
@@ -979,13 +1008,30 @@
           editDeleteUserComments.setAttribute("style", "display: initial;");
           newCommentButton.setAttribute("style", "visibility: visible;");
           removeEmptyComments();
+          //Clean Date update
+
+          for (let i = 0; i < vm.userMessages.length; i++) {
+            if (vm.userMessages[i].id === messageId) {
+              updateCommentsNumber(i, messageId);
+              for (let j = 0; j < vm.userMessages[i].comments.length; j++) {
+                if (vm.userMessages[i].comments[j].id === commentId) {
+                  if (updateTime.getTime() < (createTime.getTime() + 15001)) {
+                    vm.userMessages[i].comments[j].cleanDate = cleanDateHoliday(comment.created_at) + ' - ' + timeDate(comment.created_at);
+                  } else {
+                    vm.userMessages[i].comments[j].cleanDate = cleanDateHoliday(comment.created_at) + ' - ' + timeDate(comment.created_at) + ' - - - updated at ' + cleanDateHoliday(comment.updated_at) + ' - ' + timeDate(comment.updated_at);
+                  }
+                }
+              }
+
+            }
+          }
         });
 
 
 
       }
 
-      function userEditComment(commentId) {
+      function userEditComment(commentId, messageId) {
         let thisIsTheCommentEditor = document.getElementById('thisIsTheCommentEditor' + commentId);
         let thisIsTheComment = document.getElementById('thisIsTheComment' + commentId);
         let thisIsCommentEditDoneDiv = document.getElementById('thisIsCommentEditDoneDiv' + commentId);
@@ -996,6 +1042,12 @@
         thisIsTheComment.setAttribute("style", "visibility: hidden;");
         thisIsCommentEditDoneDiv.setAttribute("style", "display: initial;");
         editDeleteUserComments.setAttribute("style", "display: none;");
+
+        for (let i = 0; i < vm.userMessages.length; i++) {
+          if (vm.userMessages[i].id === messageId) {
+            updateCommentsNumber(i, messageId);
+          }
+        }
       }
 
       function musicCurratorReportDone() {
@@ -13280,6 +13332,8 @@
       }
 
       function retrieveComments(message, index) {
+        let createTime;
+        let updateTime;
         $http.get('/comments')
         .then(allCommentsData=>{
           let allComments = allCommentsData.data;
@@ -13297,10 +13351,18 @@
             });
             vm.userMessages[index].comments = [];
             for (let i = 0; i < messageComments.length; i++) {
+              createTime = new Date(messageComments[i].created_at);
+              updateTime = new Date(messageComments[i].updated_at);
               vm.userMessages[index].comments[i] = {};
               vm.userMessages[index].comments[i].id = messageComments[i].id;
               vm.userMessages[index].comments[i].comment = messageComments[i].comment;
-              vm.userMessages[index].comments[i].cleanDate = cleanDateHoliday(messageComments[i].created_at) + ' - ' + timeDate(messageComments[i].updated_at);
+              console.log(updateTime.getTime() < (createTime.getTime() + 15001));
+              if (updateTime.getTime() < (createTime.getTime() + 15001)) {
+                vm.userMessages[index].comments[i].cleanDate = cleanDateHoliday(messageComments[i].created_at) + ' - ' + timeDate(messageComments[i].created_at);
+              } else {
+                vm.userMessages[index].comments[i].cleanDate = cleanDateHoliday(messageComments[i].created_at) + ' - ' + timeDate(messageComments[i].created_at) + ' - - - updated at ' + cleanDateHoliday(messageComments[i].updated_at) + ' - ' + timeDate(messageComments[i].updated_at);
+              }
+              // vm.userMessages[index].comments[i].cleanDate = cleanDateHoliday(messageComments[i].created_at) + ' - ' + timeDate(messageComments[i].updated_at);
               pullCommenterUserData(messageComments[i], i, index);
               manageCommentEditButtons(messageComments[i], i, index);
             }

@@ -3982,19 +3982,19 @@
         <main ng-repeat="comment in message.comments | orderBy : $ctrl.sortBy" id="commentSpace">
           <img src="{{comment.commenterImg}}"><p>From: {{comment.commenterName}}</p>
           <p>on {{comment.cleanDate}}</p><br><br><br><br><br><br><br>
-          <h3 id="thisIsTheComment{{comment.id}}">{{comment.comment}}</h3>
+          <br><br><br><br><h3 id="thisIsTheComment{{comment.id}}">{{comment.comment}}</h3>
           <textarea id="thisIsTheCommentEditor{{comment.id}}" class="pure-input-1" rows="5"></textarea>
-          <div class="thisIsMessageEditDoneDiv" id="thisIsCommentEditDoneDiv{{comment.id}}"><a class="btn" id="thisIsTheCommentEditorDoneButton{{comment.id}}" href="#" ng-click="$ctrl.userEditCommentCompleted(comment.id)">done</a></div>
+          <div class="thisIsMessageEditDoneDiv" id="thisIsCommentEditDoneDiv{{comment.id}}"><a class="btn" id="thisIsTheCommentEditorDoneButton{{comment.id}}" href="#" ng-click="$ctrl.userEditCommentCompleted(comment.id, message.id)">done</a></div>
           <div id="editDeleteUserComments{{comment.id}}" class="messageEditDelete">
-            <a class="btn" href="#" id="commentEditButton{{comment.id}}" ng-click="$ctrl.userEditComment(comment.id)">edit</a>
-            <a class="btn" href="#" id="commendDeleteButton{{comment.id}}" ng-click="$ctrl.userDeleteComment(comment.id)">delete</a>
+            <a class="btn" href="#" id="commentEditButton{{comment.id}}" ng-click="$ctrl.userEditComment(comment.id, message.id)">edit</a>
+            <a class="btn" href="#" id="commendDeleteButton{{comment.id}}" ng-click="$ctrl.userDeleteComment(comment.id, message.id)">delete</a>
 
           </div>
           <div id="deleteCommentConfirm{{comment.id}}" class="messageEditDelete">
 
             <h3>Delete comment forever?</h3>
             <a class="btn" href="#" ng-click="$ctrl.userCommentDeleteCancel(comment.id)">no</a>
-            <a class="btn" href="#" ng-click="$ctrl.userCommentDeleteConfirmClick(comment.id)">yes</a>
+            <a class="btn" href="#" ng-click="$ctrl.userCommentDeleteConfirmClick(comment.id, message.id)">yes</a>
           </div>
         </main>
         <br><br><br><br>
