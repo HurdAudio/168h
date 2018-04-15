@@ -9723,6 +9723,34 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 622,
+          user_id: 1,
+          name: 'Henry Cowell (composer) born 1897',
+          color: '#141414',
+          picture: './img/musicians/cowell.jpg',
+          day_of: new Date ('1897-03-11T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 623,
+          user_id: 1,
+          name: 'George Padmore (Pan-Africanist/journalist/author) born 1903',
+          color: '#E89A38',
+          picture: './img/dissent/13-George-Padmore.jpg',
+          day_of: new Date ('1903-06-28T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
