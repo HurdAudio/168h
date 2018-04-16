@@ -5604,6 +5604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 281,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/surrealist-composition-1965.jpg',
+          title: 'Surrealist Composition',
+          artist: 'Friedrich Schroder-Sonnenstern',
+          year: '1965',
+          rule: {
+            "monday": [ 11, 17, 5, 13 ],
+            "tuesday": [ 10, 16, 4, 12 ],
+            "wednesday": [ 9, 15, 3, 11 ],
+            "thursday": [ 8, 14, 2, 11 ],
+            "friday": [ 7, 13, 1, 9 ],
+            "saturday": [ 5, 12, 30, 7 ],
+            "sunday": [ 12, 18, 6, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 282,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/map-of-labyrinth-1955.jpg',
+          title: 'Map Of Labyrinth',
+          artist: 'Kansuke Yamamoto',
+          year: '1955',
+          rule: {
+            "monday": [ 12, 18, 6, 14 ],
+            "tuesday": [ 11, 17, 5, 13 ],
+            "wednesday": [ 10, 16, 4, 12 ],
+            "thursday": [ 9, 15, 3, 11 ],
+            "friday": [ 8, 14, 2, 11 ],
+            "saturday": [ 7, 13, 1, 9 ],
+            "sunday": [ 5, 12, 30, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 283,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/622-mourning-schiele-1965(1).jpg',
+          title: '622 Mourning Schiele',
+          artist: 'Friedensreich Hundertwasser',
+          year: '1965',
+          rule: {
+            "monday": [ 5, 12, 30, 7 ],
+            "tuesday": [ 12, 18, 6, 14 ],
+            "wednesday": [ 11, 17, 5, 13 ],
+            "thursday": [ 10, 16, 4, 12 ],
+            "friday": [ 9, 15, 3, 11 ],
+            "saturday": [ 8, 14, 2, 11 ],
+            "sunday": [ 7, 13, 1, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 284,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/the-overpass-1984.jpg',
+          title: 'The overpass',
+          artist: 'Jeffrey Smart',
+          year: '1984',
+          rule: {
+            "monday": [ 7, 13, 1, 9 ],
+            "tuesday": [ 5, 12, 30, 7 ],
+            "wednesday": [ 12, 18, 6, 14 ],
+            "thursday": [ 11, 17, 5, 13 ],
+            "friday": [ 10, 16, 4, 12 ],
+            "saturday": [ 9, 15, 3, 11 ],
+            "sunday": [ 8, 14, 2, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 285,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/andy-mouse-1986.jpg',
+          title: 'Andy Mouse',
+          artist: 'Keith Haring',
+          year: '1986',
+          rule: {
+            "monday": [ 8, 14, 2, 11 ],
+            "tuesday": [ 7, 13, 1, 9 ],
+            "wednesday": [ 5, 12, 30, 7 ],
+            "thursday": [ 12, 18, 6, 14 ],
+            "friday": [ 11, 17, 5, 13 ],
+            "saturday": [ 10, 16, 4, 12 ],
+            "sunday": [ 9, 15, 3, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
