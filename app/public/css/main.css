@@ -7777,8 +7777,8 @@ footer img {
   margin: 4vmin 38vmin 2vmin 10vmin;
 }
 
-/* .day {
-  background-image: url(../img/january_tiles/frozen-bike-1424674.jpg);
+.day {
+  background-image: url(../img/tiles/flapper-928296_1920.jpg);
   background-repeat: no-repeat;
-  background-size: 150%;
-} */
+  background-size: 100%;
+}
