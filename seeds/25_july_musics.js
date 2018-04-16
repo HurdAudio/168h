@@ -3190,6 +3190,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 178,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1258024063/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ganser.bandcamp.com/album/odd-talk',
+          a_string: 'Odd Talk by Ganser',
+          rule: {
+            "monday": [ 27, 29, 2, 10 ],
+            "tuesday": [ 26, 28, 1, 9 ],
+            "wednesday": [ 25, 27, 31, 8 ],
+            "thursday": [ 24, 25, 30, 7 ],
+            "saturday": [ 23, 25, 29, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 179,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1407941256/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://spillerband.bandcamp.com/album/reuben-cold-cut',
+          a_string: 'Reuben+Cold Cut by Spiller',
+          rule: {
+            "monday": [ 23, 25, 29, 6 ],
+            "tuesday": [ 27, 29, 2, 10 ],
+            "wednesday": [ 26, 28, 1, 9 ],
+            "thursday": [ 25, 27, 31, 8 ],
+            "saturday": [ 24, 25, 30, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 180,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2850117490/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://eprom.bandcamp.com/album/pineapple-ep',
+          a_string: 'Pineapple EP by EPROM',
+          rule: {
+            "monday": [ 24, 25, 30, 7 ],
+            "tuesday": [ 23, 25, 29, 6 ],
+            "wednesday": [ 27, 29, 2, 10 ],
+            "thursday": [ 26, 28, 1, 9 ],
+            "saturday": [ 25, 27, 31, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
