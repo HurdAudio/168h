@@ -564,6 +564,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#F6F7F9',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 41,
+          user_id: 1,
+          theme: 'Leather',
+          type: 'sunday',
+          src_string: '../img/september_tiles/baseball-1091210_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '140%',
+          color_dark: '#211D38',
+          color_medium: '#4D7F27',
+          color_light: '#E6CFA5',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
