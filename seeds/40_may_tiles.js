@@ -620,6 +620,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#E7EAB1',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 45,
+          user_id: 1,
+          theme: 'Greenery',
+          type: 'saturday',
+          src_string: '../img/may_tiles/nature-full-hd-green-best-wallpaper-images.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '150%',
+          color_dark: '#151C0C',
+          color_medium: '#39C104',
+          color_light: '#F6F06E',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
