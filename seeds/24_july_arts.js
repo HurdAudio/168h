@@ -6004,6 +6004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 301,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/window-eiffel-tower.jpg',
+          title: 'Window, Eiffel Tower',
+          artist: 'Robert Delaunay',
+          year: '1910',
+          rule: {
+            "monday": [ 13, 24, 4, 15 ],
+            "tuesday": [ 12, 23, 3, 4 ],
+            "wednesday": [ 11, 22, 1, 3 ],
+            "thursday": [ 10, 21, 1, 2 ],
+            "friday": [ 9, 20, 31, 11 ],
+            "saturday": [ 15, 26, 6, 16 ],
+            "sunday": [ 14, 25, 5, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 302,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/la-bouteille-1916.jpg',
+          title: 'La bouteille',
+          artist: 'Henri Laurens',
+          year: '1916',
+          rule: {
+            "monday": [ 14, 25, 5, 16 ],
+            "tuesday": [ 13, 24, 4, 15 ],
+            "wednesday": [ 12, 23, 3, 4 ],
+            "thursday": [ 11, 22, 1, 3 ],
+            "friday": [ 10, 21, 1, 2 ],
+            "saturday": [ 9, 20, 31, 11 ],
+            "sunday": [ 15, 26, 6, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 303,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/nue-au-chapeau-de-paille.jpg',
+          title: 'Nue au chapeau de paille',
+          artist: 'Andre Dunoyer de Segonzac',
+          year: '?',
+          rule: {
+            "monday": [ 15, 26, 6, 16 ],
+            "tuesday": [ 14, 25, 5, 16 ],
+            "wednesday": [ 13, 24, 4, 15 ],
+            "thursday": [ 12, 23, 3, 4 ],
+            "friday": [ 11, 22, 1, 3 ],
+            "saturday": [ 10, 21, 1, 2 ],
+            "sunday": [ 9, 20, 31, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 304,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/a-peacock-1906.jpg',
+          title: 'A Peacock',
+          artist: 'Jean Metzinger',
+          year: '1906',
+          rule: {
+            "monday": [ 9, 20, 31, 11 ],
+            "tuesday": [ 15, 26, 6, 16 ],
+            "wednesday": [ 14, 25, 5, 16 ],
+            "thursday": [ 13, 24, 4, 15 ],
+            "friday": [ 12, 23, 3, 4 ],
+            "saturday": [ 11, 22, 1, 3 ],
+            "sunday": [ 10, 21, 1, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 305,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/out-of-this-world-stealers-of-light-by-the-queen-of-romania.jpg',
+          title: 'Out of This World (Stealers of Light by the Queen of Romania)',
+          artist: 'Edmund Dulac',
+          year: '?',
+          rule: {
+            "monday": [ 10, 21, 1, 2 ],
+            "tuesday": [ 9, 20, 31, 11 ],
+            "wednesday": [ 15, 26, 6, 16 ],
+            "thursday": [ 14, 25, 5, 16 ],
+            "friday": [ 13, 24, 4, 15 ],
+            "saturday": [ 12, 23, 3, 4 ],
+            "sunday": [ 11, 22, 1, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
