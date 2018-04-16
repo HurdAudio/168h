@@ -3082,6 +3082,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 172,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2270536876/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://turgidanimalrecordsitaliandivision.bandcamp.com/album/odium',
+          a_string: 'Odium by Bachir Gemayel &amp;  Terminal Erection',
+          rule: {
+            "monday": [ 6, 14, 27, 26 ],
+            "tuesday": [ 5, 13, 26, 25 ],
+            "wednesday": [ 4, 12, 25, 24 ],
+            "thursday": [ 3, 11, 24, 23 ],
+            "saturday": [ 2, 10, 23, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 173,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2249722881/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://turgidanimalrecordsitaliandivision.bandcamp.com/album/new-york-special',
+          a_string: 'New York Special by Fecalove / Taeter',
+          rule: {
+            "monday": [ 2, 10, 23, 22 ],
+            "tuesday": [ 6, 14, 27, 26 ],
+            "wednesday": [ 5, 13, 26, 25 ],
+            "thursday": [ 4, 12, 25, 24 ],
+            "saturday": [ 3, 11, 24, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 174,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1548643723/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://turgidanimalrecordsitaliandivision.bandcamp.com/album/metal',
+          a_string: 'Metal by Andreas Brandal &amp; Nicola Vinciguerra',
+          rule: {
+            "monday": [ 3, 11, 24, 23 ],
+            "tuesday": [ 2, 10, 23, 22 ],
+            "wednesday": [ 6, 14, 27, 26 ],
+            "thursday": [ 5, 13, 26, 25 ],
+            "saturday": [ 4, 12, 25, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
