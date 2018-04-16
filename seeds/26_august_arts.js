@@ -5804,6 +5804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 291,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/harlequin-and-death.jpg',
+          title: 'Harlequin and Death',
+          artist: 'Konstantin Somov',
+          year: '1907',
+          rule: {
+            "monday": [ 9, 12, 21, 6 ],
+            "tuesday": [ 8, 11, 20, 5 ],
+            "wednesday": [ 14, 18, 26, 11 ],
+            "thursday": [ 13, 16, 25, 10 ],
+            "friday": [ 12, 16, 24, 9 ],
+            "saturday": [ 11, 15, 23, 8 ],
+            "sunday": [ 10, 12, 22, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 292,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/open-circle-with-two-verticals-1920.jpg',
+          title: 'Open circle with two verticals',
+          artist: 'Erich Buchholz',
+          year: '1920',
+          rule: {
+            "monday": [ 10, 12, 22, 7 ],
+            "tuesday": [ 9, 12, 21, 6 ],
+            "wednesday": [ 8, 11, 20, 5 ],
+            "thursday": [ 14, 18, 26, 11 ],
+            "friday": [ 13, 16, 25, 10 ],
+            "saturday": [ 12, 16, 24, 9 ],
+            "sunday": [ 11, 15, 23, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 293,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/a-woodcock-1927.jpg',
+          title: 'A Woodcock',
+          artist: 'Archibald Thorburn',
+          year: '1927',
+          rule: {
+            "monday": [ 11, 15, 23, 8 ],
+            "tuesday": [ 10, 12, 22, 7 ],
+            "wednesday": [ 9, 12, 21, 6 ],
+            "thursday": [ 8, 11, 20, 5 ],
+            "friday": [ 14, 18, 26, 11 ],
+            "saturday": [ 13, 16, 25, 10 ],
+            "sunday": [ 12, 16, 24, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 294,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/view-of-langelinie-1924.jpg',
+          title: 'View of Langelinie',
+          artist: 'Edvard Weie',
+          year: '1924',
+          rule: {
+            "monday": [ 13, 17, 25, 10 ],
+            "tuesday": [ 12, 16, 24, 9 ],
+            "wednesday": [ 11, 13, 23, 8 ],
+            "thursday": [ 10, 13, 22, 7 ],
+            "friday": [ 9, 12, 21, 6 ],
+            "saturday": [ 15, 19, 27, 12 ],
+            "sunday": [ 14, 17, 26, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 295,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/after-the-storm-1921.jpg',
+          title: 'After the storm',
+          artist: 'Boris Kustodiev',
+          year: '1921',
+          rule: {
+            "monday": [ 14, 17, 26, 11 ],
+            "tuesday": [ 13, 17, 25, 10 ],
+            "wednesday": [ 12, 16, 24, 9 ],
+            "thursday": [ 11, 13, 23, 8 ],
+            "friday": [ 10, 13, 22, 7 ],
+            "saturday": [ 9, 12, 21, 6 ],
+            "sunday": [ 15, 19, 27, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
