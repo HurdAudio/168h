@@ -5390,7 +5390,7 @@ exports.seed = function(knex, Promise) {
           user_id: 1,
           theme: 'Russian Revolution',
           img_path: './img/october/popup_parenthoodsovpost_00031.jpg',
-          title: 'TalentsV. Koretsky',
+          title: 'Talents',
           artist: 'V. Koretsky',
           year: '1948',
           rule: {
@@ -5401,6 +5401,106 @@ exports.seed = function(knex, Promise) {
             "friday": [ 11, 22, 2, 6 ],
             "saturday": [ 10, 21, 1, 5 ],
             "sunday": [ 9, 20, 31, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 271,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_parenthoodsovpost_00030.jpg',
+          title: 'Study excellent!',
+          artist: 'M. Nesterov-Berzina',
+          year: '1948',
+          rule: {
+            "monday": [ 9, 20, 31, 4 ],
+            "tuesday": [ 8, 19, 20, 3 ],
+            "wednesday": [ 17, 18, 29, 2 ],
+            "thursday": [ 13, 24, 4, 8 ],
+            "friday": [ 12, 23, 3, 7 ],
+            "saturday": [ 11, 22, 2, 6 ],
+            "sunday": [ 10, 21, 1, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 272,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_parenthoodsovpost_00026.jpg',
+          title: 'I will become a metalworker!',
+          artist: 'N. Vatolina',
+          year: '1948',
+          rule: {
+            "monday": [ 10, 21, 1, 5 ],
+            "tuesday": [ 9, 20, 31, 4 ],
+            "wednesday": [ 8, 19, 20, 3 ],
+            "thursday": [ 17, 18, 29, 2 ],
+            "friday": [ 13, 24, 4, 8 ],
+            "saturday": [ 12, 23, 3, 7 ],
+            "sunday": [ 11, 22, 2, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 273,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_parenthoodsovpost_00022.jpg',
+          title: 'Healthy parents - healthy posterity',
+          artist: 'N. Vatolina',
+          year: '1948',
+          rule: {
+            "monday": [ 12, 23, 3, 7 ],
+            "tuesday": [ 11, 22, 2, 6 ],
+            "wednesday": [ 10, 21, 1, 5 ],
+            "thursday": [ 9, 20, 21, 4 ],
+            "friday": [ 18, 19, 30, 3 ],
+            "saturday": [ 14, 25, 5, 9 ],
+            "sunday": [ 13, 24, 4, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 274,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_parenthoodsovpost_00019.jpg',
+          title: 'Our children should not get sick with diarrhea',
+          artist: 'G. Shubina',
+          year: '1940',
+          rule: {
+            "monday": [ 13, 24, 4, 8 ],
+            "tuesday": [ 12, 23, 3, 7 ],
+            "wednesday": [ 11, 22, 2, 6 ],
+            "thursday": [ 10, 21, 1, 5 ],
+            "friday": [ 9, 20, 21, 4 ],
+            "saturday": [ 18, 19, 30, 3 ],
+            "sunday": [ 14, 25, 5, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 275,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_parenthoodsovpost_00018.jpg',
+          title: 'Glory to a mother - a heroine!',
+          artist: 'N. Vatolina',
+          year: '1944',
+          rule: {
+            "monday": [ 14, 25, 5, 9 ],
+            "tuesday": [ 13, 24, 4, 8 ],
+            "wednesday": [ 12, 23, 3, 7 ],
+            "thursday": [ 11, 22, 2, 6 ],
+            "friday": [ 10, 21, 1, 5 ],
+            "saturday": [ 9, 20, 21, 4 ],
+            "sunday": [ 18, 19, 30, 3 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
