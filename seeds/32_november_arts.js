@@ -5204,6 +5204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 261,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/past-time-2007.jpg',
+          title: 'Past Time',
+          artist: 'Alex Hay',
+          year: '2007',
+          rule: {
+            "monday": [ 15, 20, 26, 1 ],
+            "tuesday": [ 14, 19, 24, 30 ],
+            "wednesday": [ 13, 18, 24, 28 ],
+            "thursday": [ 12, 15, 23, 28 ],
+            "friday": [ 11, 15, 22, 27 ],
+            "saturday": [ 10, 15, 21, 26 ],
+            "sunday": [ 9, 14, 20, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 262,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/kiwa-2008.jpg',
+          title: 'KIWA',
+          artist: 'Jurgen Partenheimer',
+          year: '2008',
+          rule: {
+            "monday": [ 9, 14, 20, 27 ],
+            "tuesday": [ 15, 20, 26, 1 ],
+            "wednesday": [ 14, 19, 24, 30 ],
+            "thursday": [ 13, 18, 24, 28 ],
+            "friday": [ 12, 15, 23, 28 ],
+            "saturday": [ 11, 15, 22, 27 ],
+            "sunday": [ 10, 15, 21, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 263,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/photo-souvenir-westwind-vent-d-ouest-travail-situ-2010.jpg',
+          title: 'Photo-souvenir: Westwind (Vent d’ouest), travail situé',
+          artist: 'Daniel Buren',
+          year: '2010',
+          rule: {
+            "monday": [ 10, 15, 21, 26 ],
+            "tuesday": [ 9, 14, 20, 27 ],
+            "wednesday": [ 15, 20, 26, 1 ],
+            "thursday": [ 14, 19, 24, 30 ],
+            "friday": [ 13, 18, 24, 28 ],
+            "saturday": [ 12, 15, 23, 28 ],
+            "sunday": [ 11, 15, 22, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 264,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/sculpture-in-front-of-burgo-empreendimento.jpg',
+          title: 'Sculpture in front of Burgo Empreendimento',
+          artist: 'Angelo de Sousa',
+          year: 'xx - xxi cent.',
+          rule: {
+            "monday": [ 11, 15, 22, 27 ],
+            "tuesday": [ 10, 15, 21, 26 ],
+            "wednesday": [ 9, 14, 20, 27 ],
+            "thursday": [ 15, 20, 26, 1 ],
+            "friday": [ 14, 19, 24, 30 ],
+            "saturday": [ 13, 18, 24, 28 ],
+            "sunday": [ 12, 15, 23, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 265,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/https://uploads8.wikiart.org/images/david-batchelor/slugfest-2012.jpg',
+          title: 'Slugfest',
+          artist: 'David Batchelor',
+          year: '2012',
+          rule: {
+            "monday": [ 12, 15, 23, 28 ],
+            "tuesday": [ 11, 15, 22, 27 ],
+            "wednesday": [ 10, 15, 21, 26 ],
+            "thursday": [ 9, 14, 20, 27 ],
+            "friday": [ 15, 20, 26, 1 ],
+            "saturday": [ 14, 19, 24, 30 ],
+            "sunday": [ 13, 18, 24, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
