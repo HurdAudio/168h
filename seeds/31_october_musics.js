@@ -2866,6 +2866,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 160,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3363243878/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://theex.bandcamp.com/album/27-passports',
+          a_string: '27 passports by The Ex',
+          rule: {
+            "monday": [ 29, 8, 18, 21 ],
+            "tuesday": [ 28, 7, 17, 20 ],
+            "wednesday": [ 27, 6, 17, 19 ],
+            "thursday": [ 31, 10, 20, 23 ],
+            "saturday": [ 30, 9, 19, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 161,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3811922814/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://theex.bandcamp.com/album/dignity-of-labour',
+          a_string: 'Dignity Of Labour by The Ex',
+          rule: {
+            "monday": [ 31, 10, 20, 23 ],
+            "tuesday": [ 30, 9, 19, 22 ],
+            "wednesday": [ 29, 8, 18, 21 ],
+            "thursday": [ 28, 7, 18, 20 ],
+            "saturday": [ 1, 11, 21, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 162,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1591629871/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://theex.bandcamp.com/album/pokkeherrie',
+          a_string: 'Pokkeherrie by The Ex',
+          rule: {
+            "monday": [ 1, 11, 21, 24 ],
+            "tuesday": [ 31, 10, 20, 23 ],
+            "wednesday": [ 30, 9, 19, 22 ],
+            "thursday": [ 29, 8, 18, 21 ],
+            "saturday": [ 28, 7, 18, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
