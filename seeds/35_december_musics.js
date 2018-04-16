@@ -2650,6 +2650,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 148,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=881052363/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://firefriend.bandcamp.com/album/sulfur',
+          a_string: 'Sulfur by Firefriend',
+          rule: {
+            "monday": [ 24, 30, 5, 11 ],
+            "tuesday": [ 28, 3, 9, 15 ],
+            "wednesday": [ 27, 2, 8, 13 ],
+            "thursday": [ 26, 1, 7, 13 ],
+            "saturday": [ 23, 31, 6, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 149,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1408749183/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://windows96.bandcamp.com/album/nostalgi-gaius',
+          a_string: 'Nostalgi Gaius by Gudang',
+          rule: {
+            "monday": [ 23, 31, 6, 12 ],
+            "tuesday": [ 24, 30, 5, 11 ],
+            "wednesday": [ 28, 3, 9, 15 ],
+            "thursday": [ 27, 2, 8, 13 ],
+            "saturday": [ 26, 1, 7, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 150,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3651987928/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://nomadeorquestra.bandcamp.com/album/entremundos',
+          a_string: 'EntreMundos by Nomade Orquestra',
+          rule: {
+            "monday": [ 26, 1, 7, 13 ],
+            "tuesday": [ 23, 31, 6, 12 ],
+            "wednesday": [ 24, 30, 5, 11 ],
+            "thursday": [ 28, 3, 9, 15 ],
+            "saturday": [ 27, 2, 8, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
