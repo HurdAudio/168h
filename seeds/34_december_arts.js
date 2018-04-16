@@ -5004,6 +5004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 251,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/1891,Drive-3.jpg',
+          title: 'How To Drive Horses',
+          artist: 'Clinton Pettee',
+          year: '1891',
+          rule: {
+            "monday": [ 5, 18, 26, 1 ],
+            "tuesday": [ 4, 17, 25, 31 ],
+            "wednesday": [ 3, 15, 24, 30 ],
+            "thursday": [ 2, 15, 3, 10 ],
+            "friday": [ 8, 21, 29, 4 ],
+            "saturday": [ 7, 20, 28, 3 ],
+            "sunday": [ 6, 19, 27, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 252,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/37-04,DonWinslow.jpg',
+          title: 'Don Winslow',
+          artist: 'Jim H. Phillips',
+          year: '1937',
+          rule: {
+            "monday": [ 7, 20, 28, 3 ],
+            "tuesday": [ 6, 19, 27, 2 ],
+            "wednesday": [ 5, 18, 26, 1 ],
+            "thursday": [ 4, 16, 25, 31 ],
+            "friday": [ 3, 16, 4, 11 ],
+            "saturday": [ 9, 22, 30, 5 ],
+            "sunday": [ 8, 21, 29, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 253,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/32-00,Singer.jpg',
+          title: 'Portrait',
+          artist: 'Robert S. Pious',
+          year: '1932',
+          rule: {
+            "monday": [ 8, 21, 29, 4 ],
+            "tuesday": [ 7, 20, 28, 3 ],
+            "wednesday": [ 6, 19, 27, 2 ],
+            "thursday": [ 5, 18, 26, 1 ],
+            "friday": [ 4, 16, 25, 31 ],
+            "saturday": [ 3, 16, 4, 11 ],
+            "sunday": [ 9, 22, 30, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 254,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/37-05,SpcyMyst-001.jpg',
+          title: 'Spicy Mystery',
+          artist: 'Max Plaisted',
+          year: '1935',
+          rule: {
+            "monday": [ 9, 22, 30, 5 ],
+            "tuesday": [ 8, 21, 29, 4 ],
+            "wednesday": [ 7, 20, 28, 3 ],
+            "thursday": [ 6, 19, 27, 2 ],
+            "friday": [ 5, 18, 26, 1 ],
+            "saturday": [ 4, 16, 25, 31 ],
+            "sunday": [ 3, 16, 4, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 255,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/14-09,Cartoons.jpg',
+          title: 'Cartoons',
+          artist: 'Ethel Plummer',
+          year: '1914',
+          rule: {
+            "monday": [ 3, 16, 4, 11 ],
+            "tuesday": [ 9, 22, 30, 5 ],
+            "wednesday": [ 8, 21, 29, 4 ],
+            "thursday": [ 7, 20, 28, 3 ],
+            "friday": [ 6, 19, 27, 2 ],
+            "saturday": [ 5, 18, 26, 1 ],
+            "sunday": [ 4, 16, 25, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
