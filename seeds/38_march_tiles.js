@@ -648,6 +648,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#D9D5E4',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 47,
+          user_id: 1,
+          theme: 'Glass',
+          type: 'holiday',
+          src_string: '../img/march_tiles/museum-rietberg-66862_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '150%',
+          color_dark: '#12140F',
+          color_medium: '#42B37F',
+          color_light: '#F0F3F6',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
