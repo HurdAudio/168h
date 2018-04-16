@@ -522,6 +522,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#F4F4F2',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 38,
+          user_id: 1,
+          theme: 'Snow',
+          type: 'week',
+          src_string: '../img/december_tiles/castelluccio-1799889_1280.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '180%',
+          color_dark: '#323D53',
+          color_medium: '#365981',
+          color_light: '#CDC9C6',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
