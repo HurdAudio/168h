@@ -1084,6 +1084,66 @@ exports.seed = function(knex, Promise) {
           public: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 91,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/two-cute-cats-in-the-street.jpg',
+          title: 'Two Cute Cats in the street',
+          artist: 'Woong Hoe',
+          year: '2015',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 92,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/british-shorthair-3113513_1920.jpg',
+          title: 'British Shorthair',
+          artist: 'Alexas Fotos',
+          year: '2018',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 93,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/kitty-2948404_1920.jpg',
+          title: 'Kitty',
+          artist: 'Ilona Ilyés',
+          year: '2013',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 94,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/cat-3322620_1920.jpg',
+          title: 'Cat',
+          artist: 'Javiermirapeidro',
+          year: '2018',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 95,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/mammalia-3318614_1920.jpg',
+          title: 'Mammalia',
+          artist: 'Marc Pascual',
+          year: '2016',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
