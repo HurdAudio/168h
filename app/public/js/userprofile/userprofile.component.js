@@ -241,6 +241,121 @@
       vm.userDeleteTimeblockShareComment = userDeleteTimeblockShareComment;
       vm.userTimeblockCommentDeleteCancel = userTimeblockCommentDeleteCancel;
       vm.userTimeblockCommentDeleteConfirmClick = userTimeblockCommentDeleteConfirmClick;
+      vm.artModuleViewer = artModuleViewer;
+      vm.artModuleViewDone = artModuleViewDone;
+
+      function artModuleViewDone() {
+        let artModuleViewPane = document.getElementById('artModuleViewPane');
+        let dashboard = document.getElementById('dashboard');
+
+        artModuleViewPane.setAttribute("style", "visibility: hidden; opacity: 0; z-index: -6;");
+        dashboard.setAttribute("style", "z-index: 6; opacity: 1; transition: opacity 0.4s linear;");
+      }
+
+      function artModuleViewer(authorId, theme) {
+        let artModuleViewPane = document.getElementById('artModuleViewPane');
+        let dashboard = document.getElementById('dashboard');
+        let artModuleViewAuthorPic = document.getElementById('artModuleViewAuthorPic');
+        let artModuleViewAuthorName = document.getElementById('artModuleViewAuthorName');
+        let index = 0;
+        let artModuleViewTheme = document.getElementById('artModuleViewTheme');
+        let artModuleViewPictureLeft = document.getElementById('artModuleViewPictureLeft');
+        let artModuleViewPictureCenter = document.getElementById('artModuleViewPictureCenter');
+        let artModuleViewPictureRight = document.getElementById('artModuleViewPictureRight');
+        let artModuleViewNavButtons = document.getElementById('artModuleViewNavButtons');
+        let artModuleViewNavNext = document.getElementById('artModuleViewNavNext');
+        if (artModuleViewNavNext) {
+          artModuleViewNavNext.parentNode.removeChild(artModuleViewNavNext);
+          artModuleViewNavNext = document.createElement('a');
+          artModuleViewNavButtons.appendChild(artModuleViewNavNext);
+          artModuleViewNavNext.id = 'artModuleViewNavNext';
+          artModuleViewNavNext.className = 'btn';
+          artModuleViewNavNext.innerHTML = 'next';
+          artModuleViewNavNext.setAttribute("style", "cursor: pointer;");
+        }
+        let artModuleViewNavPrevious = document.getElementById('artModuleViewNavPrevious');
+        if (artModuleViewNavPrevious) {
+          artModuleViewNavPrevious.parentNode.removeChild(artModuleViewNavPrevious);
+          artModuleViewNavPrevious = document.createElement('a');
+          artModuleViewNavButtons.appendChild(artModuleViewNavPrevious);
+          artModuleViewNavPrevious.id = 'artModuleViewNavPrevious';
+          artModuleViewNavPrevious.className = 'btn';
+          artModuleViewNavPrevious.innerHTML = 'prev';
+          artModuleViewNavPrevious.setAttribute("style", "cursor: pointer;");
+        }
+
+        $http.get(`/users/${authorId}`)
+        .then(authorData=>{
+          let author = authorData.data;
+          artModuleViewAuthorPic.src = author.user_avatar_url;
+          artModuleViewAuthorName.innerHTML = 'Contributor: ' + author.name;
+          $http.get(`/art_modulesbyuser/${authorId}`)
+          .then(allArtModulesData=>{
+            let allArtModules = allArtModulesData.data;
+            let artModule = allArtModules.filter(art=>{
+              return(art.theme === theme);
+            });
+            artModule = artModule.sort((a, b)=>{
+              if (a.title.toLowerCase() < b.title.toLowerCase()) {
+                return -1;
+              } else if (a.title.toLowerCase() > b.title.toLowerCase()) {
+                return 1;
+              } else {
+                return 0;
+              }
+            });
+            index = artModule.length - 1;
+            artModuleViewTheme.innerHTML = artModule[0].theme + ' - ' + artModule[0].artist + ': ' + artModule[0].title + ', ' + artModule[0].year;
+            artModuleViewPictureLeft.src = artModule[index].img_path;
+            artModuleViewPictureCenter.src = artModule[0].img_path;
+            artModuleViewPictureRight.src = artModule[1].img_path;
+
+            artModuleViewNavNext.addEventListener('click', ()=>{
+              let centerIndex = 0;
+              let rightIndex = 0;
+              index++;
+              if (index === artModule.length) {
+                index = 0;
+              }
+              centerIndex = index + 1;
+              if (centerIndex === artModule.length) {
+                centerIndex = 0;
+              }
+              rightIndex = centerIndex + 1;
+              if (rightIndex === artModule.length) {
+                rightIndex = 0;
+              }
+              artModuleViewPictureLeft.src = artModule[index].img_path;
+              artModuleViewPictureCenter.src = artModule[centerIndex].img_path;
+              artModuleViewPictureRight.src = artModule[rightIndex].img_path;
+              artModuleViewTheme.innerHTML = artModule[centerIndex].theme + ' - ' + artModule[centerIndex].artist + ': ' + artModule[centerIndex].title + ', ' + artModule[centerIndex].year;
+            });
+            artModuleViewNavPrevious.addEventListener('click', ()=>{
+              let centerIndex = 0;
+              let rightIndex = 0;
+              index--;
+              if (index === -1) {
+                index = artModule.length - 1;
+              }
+              centerIndex = index + 1;
+              if (centerIndex === artModule.length) {
+                centerIndex = 0;
+              }
+              rightIndex = centerIndex + 1;
+              if (rightIndex === artModule.length) {
+                rightIndex = 0;
+              }
+              artModuleViewPictureLeft.src = artModule[index].img_path;
+              artModuleViewPictureCenter.src = artModule[centerIndex].img_path;
+              artModuleViewPictureRight.src = artModule[rightIndex].img_path;
+              artModuleViewTheme.innerHTML = artModule[centerIndex].theme + ' - ' + artModule[centerIndex].artist + ': ' + artModule[centerIndex].title + ', ' + artModule[centerIndex].year;
+            });
+          });
+        });
+
+        artModuleViewPane.setAttribute("style", "visibility: visible; opacity: 1; z-index: 6; transition: opacity 0.5s linear;");
+        dashboard.setAttribute("style", "z-index: -6; opacity: 0.3; transition: opacity 0.4s linear;");
+      }
 
       function userTimeblockCommentDeleteConfirmClick(timeblockShareCommentId) {
         let deleteTimeblockCommentConfirm = document.getElementById('deleteTimeblockCommentConfirm' + timeblockShareCommentId);
