@@ -2974,6 +2974,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 166,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1335363568/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://atsukochiba.bandcamp.com/album/the-memory-empire',
+          a_string: 'The Memory Empire by Atsuko Chiba',
+          rule: {
+            "monday": [ 26, 16, 24, 18 ],
+            "tuesday": [ 25, 15, 23, 18 ],
+            "wednesday": [ 24, 14, 22, 16 ],
+            "thursday": [ 23, 13, 21, 15 ],
+            "saturday": [ 27, 17, 25, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 167,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3425068624/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://atsukochiba.bandcamp.com/album/figure-and-ground',
+          a_string: 'Figure and Ground by Atsuko Chiba',
+          rule: {
+            "monday": [ 27, 17, 25, 19 ],
+            "tuesday": [ 26, 16, 24, 18 ],
+            "wednesday": [ 25, 15, 23, 18 ],
+            "thursday": [ 24, 14, 22, 16 ],
+            "saturday": [ 23, 13, 21, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 168,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3079212410/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://atsukochiba.bandcamp.com/album/jinn',
+          a_string: 'Jinn by Atsuko Chiba',
+          rule: {
+            "monday": [ 24, 14, 22, 16 ],
+            "tuesday": [ 28, 18, 26, 20 ],
+            "wednesday": [ 27, 17, 25, 19 ],
+            "thursday": [ 26, 16, 24, 19 ],
+            "saturday": [ 25, 15, 23, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
