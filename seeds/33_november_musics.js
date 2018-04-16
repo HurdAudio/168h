@@ -2758,6 +2758,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 154,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2528841103/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://africali.bandcamp.com/album/taught-of-a-culture',
+          a_string: 'Taught Of A Culture by AfriCali',
+          rule: {
+            "monday": [ 20, 31, 12, 14 ],
+            "tuesday": [ 24, 5, 16, 20 ],
+            "wednesday": [ 23, 4, 15, 19 ],
+            "thursday": [ 22, 3, 14, 18 ],
+            "saturday": [ 21, 2, 13, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 155,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2769423631/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sinkane.bandcamp.com/album/life-livin-it',
+          a_string: 'Life &amp; Livin&#39; It by SINKANE',
+          rule: {
+            "monday": [ 21, 2, 13, 15 ],
+            "tuesday": [ 20, 31, 12, 14 ],
+            "wednesday": [ 24, 5, 16, 20 ],
+            "thursday": [ 23, 4, 15, 19 ],
+            "saturday": [ 22, 3, 14, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 156,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1165302320/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://guarandinga.bandcamp.com/album/merendola-vol-1',
+          a_string: 'Merendola Vol. 1 by Guarandinga',
+          rule: {
+            "monday": [ 22, 3, 14, 18 ],
+            "tuesday": [ 21, 2, 13, 15 ],
+            "wednesday": [ 20, 31, 12, 14 ],
+            "thursday": [ 24, 5, 16, 20 ],
+            "saturday": [ 23, 4, 15, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
