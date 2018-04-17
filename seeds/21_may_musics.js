@@ -3406,6 +3406,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 190,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2131220717/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://1631recordings.bandcamp.com/album/memory-sketches',
+          a_string: 'Memory Sketches by Tim Linghaus',
+          rule: {
+            "monday": [ 31, 6, 13, 26 ],
+            "tuesday": [ 30, 5, 12, 25 ],
+            "wednesday": [ 29, 4, 11, 24 ],
+            "thursday": [ 28, 3, 10, 23 ],
+            "saturday": [ 1, 8, 14, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 191,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=71726943/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://1631recordings.bandcamp.com/album/piano-cloud-series-volume-one',
+          a_string: 'Piano Cloud Series - Volume One by V/A',
+          rule: {
+            "monday": [ 1, 8, 14, 27 ],
+            "tuesday": [ 31, 6, 13, 26 ],
+            "wednesday": [ 30, 5, 12, 25 ],
+            "thursday": [ 29, 4, 11, 24 ],
+            "saturday": [ 28, 3, 10, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 192,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3729758041/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://1631recordings.bandcamp.com/album/piano-cloud-series-volume-two',
+          a_string: 'Piano Cloud Series - Volume Two by V/A',
+          rule: {
+            "monday": [ 28, 3, 10, 23 ],
+            "tuesday": [ 1, 8, 14, 27 ],
+            "wednesday": [ 31, 6, 13, 26 ],
+            "thursday": [ 30, 5, 12, 25 ],
+            "saturday": [ 29, 4, 11, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
