@@ -3514,6 +3514,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 196,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3507100406/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://collectifspatule.bandcamp.com/album/colunia-live-soleils-bleus-digital-album',
+          a_string: 'Colunia - Live@Soleils Bleus Digital Album by Collectif SPATULE',
+          rule: {
+            "monday": [ 1, 9, 21, 26 ],
+            "tuesday": [ 30, 8, 20, 25 ],
+            "wednesday": [ 29, 7, 19, 24 ],
+            "thursday": [ 28, 6, 18, 23 ],
+            "saturday": [ 2, 10, 22, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 197,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'http://bandcamp.com/EmbeddedPlayer/album=1716639791/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://music.erikfriedlander.com/album/artemisia',
+          a_string: 'Artemisia by Erik Friedlander',
+          rule: {
+            "monday": [ 2, 10, 22, 27 ],
+            "tuesday": [ 1, 9, 21, 26 ],
+            "wednesday": [ 30, 8, 20, 25 ],
+            "thursday": [ 29, 7, 19, 24 ],
+            "saturday": [ 28, 6, 18, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 198,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'http://bandcamp.com/EmbeddedPlayer/album=3656065569/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://music.erikfriedlander.com/album/rings',
+          a_string: 'Rings by Erik Friedlander',
+          rule: {
+            "monday": [ 28, 6, 18, 23 ],
+            "tuesday": [ 2, 10, 22, 27 ],
+            "wednesday": [ 1, 9, 21, 26 ],
+            "thursday": [ 30, 8, 20, 25 ],
+            "saturday": [ 29, 7, 19, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
