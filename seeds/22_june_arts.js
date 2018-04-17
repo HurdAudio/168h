@@ -6204,6 +6204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 311,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/Ella-Rynehart-Amateur-Winner-Fine-Art-Photography-Awards-FAPA-2016.jpg',
+          title: 'Work',
+          artist: 'Ella Rynehart',
+          year: '2016',
+          rule: {
+            "monday": [ 8, 18, 28, 6 ],
+            "tuesday": [ 14, 24, 4, 10 ],
+            "wednesday": [ 13, 23, 3, 11 ],
+            "thursday": [ 12, 22, 2, 10 ],
+            "friday": [ 11, 21, 1, 9 ],
+            "saturday": [ 20, 30, 10, 8 ],
+            "sunday": [ 9, 19, 29, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 312,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/226.jpeg',
+          title: 'Candy Cigarette',
+          artist: 'Sally Mann',
+          year: '1989',
+          rule: {
+            "monday": [ 9, 19, 29, 7 ],
+            "tuesday": [ 8, 18, 28, 6 ],
+            "wednesday": [ 14, 24, 4, 10 ],
+            "thursday": [ 13, 23, 3, 11 ],
+            "friday": [ 12, 22, 2, 10 ],
+            "saturday": [ 11, 21, 1, 9 ],
+            "sunday": [ 20, 30, 10, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 313,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/d5559186a.jpg',
+          title: 'Untitled #96',
+          artist: 'Cindy Sherman',
+          year: '1981',
+          rule: {
+            "monday": [ 20, 30, 10, 8 ],
+            "tuesday": [ 9, 19, 29, 7 ],
+            "wednesday": [ 8, 18, 28, 6 ],
+            "thursday": [ 14, 24, 4, 10 ],
+            "friday": [ 13, 23, 3, 11 ],
+            "saturday": [ 12, 22, 2, 10 ],
+            "sunday": [ 11, 21, 1, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 314,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/U5drNkJ8ddZRWsPQyW5cFrhCwaY5wWX_1680x8400.jpeg',
+          title: 'Conceptual Fine Art Photography',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 11, 21, 1, 9 ],
+            "tuesday": [ 20, 30, 10, 8 ],
+            "wednesday": [ 9, 19, 29, 7 ],
+            "thursday": [ 8, 18, 28, 6 ],
+            "friday": [ 14, 24, 4, 10 ],
+            "saturday": [ 13, 23, 3, 11 ],
+            "sunday": [ 12, 22, 2, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 315,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/il_570xN.324722524.jpg',
+          title: 'Waiting',
+          artist: 'Vaida Petreikis',
+          year: '2017',
+          rule: {
+            "monday": [ 13, 23, 3, 11 ],
+            "tuesday": [ 12, 22, 2, 10 ],
+            "wednesday": [ 21, 1, 11, 9 ],
+            "thursday": [ 10, 20, 30, 8 ],
+            "friday": [ 9, 19, 29, 7 ],
+            "saturday": [ 15, 25, 5, 11 ],
+            "sunday": [ 14, 24, 4, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
