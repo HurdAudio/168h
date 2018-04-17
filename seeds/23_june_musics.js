@@ -3298,6 +3298,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 184,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3985436603/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://hiddenvibes.bandcamp.com/album/journey-to-the-end-of-august',
+          a_string: 'Journey To The End Of August by Chihei Hatakeyama',
+          rule: {
+            "monday": [ 25, 28, 4, 15 ],
+            "tuesday": [ 23, 1, 3, 14 ],
+            "wednesday": [ 27, 1, 7, 18 ],
+            "thursday": [ 26, 29, 4, 16 ],
+            "saturday": [ 25, 29, 4, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 185,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1081083562/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://hiddenvibes.bandcamp.com/album/betelgeuse',
+          a_string: 'Betelgeuse by Hakobune',
+          rule: {
+            "monday": [ 25, 29, 4, 16 ],
+            "tuesday": [ 25, 28, 4, 15 ],
+            "wednesday": [ 23, 1, 3, 14 ],
+            "thursday": [ 27, 1, 7, 18 ],
+            "saturday": [ 26, 29, 4, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 186,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1717427471/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://hiddenvibes.bandcamp.com/album/orient',
+          a_string: 'Orient by Olan Mill',
+          rule: {
+            "monday": [ 26, 29, 4, 16 ],
+            "tuesday": [ 25, 29, 4, 16 ],
+            "wednesday": [ 25, 28, 4, 15 ],
+            "thursday": [ 23, 1, 3, 14 ],
+            "saturday": [ 27, 1, 7, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
