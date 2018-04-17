@@ -6604,6 +6604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 331,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/BBpnEZB.png',
+          title: 'Los Angeles Angels of Anaheim',
+          artist: 'Getty Images',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 17, 23, 28, 5 ],
+            "tuesday": [ 1, 21, 27, 3 ],
+            "wednesday": [ 16, 21, 27, 3 ],
+            "thursday": [ 15, 19, 4, 2 ],
+            "friday": [ 14, 19, 24, 30 ],
+            "saturday": [ 13, 18, 24, 30 ],
+            "sunday": [ 12, 17, 23, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 332,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/1460915140-angels-artists-tickets.jpg',
+          title: 'Los Angeles Angels of Anaheim Tickets and Upcoming Events',
+          artist: '?',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 12, 17, 23, 29 ],
+            "tuesday": [ 17, 23, 28, 5 ],
+            "wednesday": [ 1, 21, 27, 3 ],
+            "thursday": [ 16, 21, 27, 3 ],
+            "friday": [ 15, 19, 4, 2 ],
+            "saturday": [ 14, 19, 24, 30 ],
+            "sunday": [ 13, 18, 24, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 333,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/0316_shohei_ohtani.jpg',
+          title: 'Shohei Ohtani',
+          artist: 'USA Today',
+          year: '2018',
+          rule: {
+            "monday": [ 13, 18, 24, 30 ],
+            "tuesday": [ 12, 17, 23, 29 ],
+            "wednesday": [ 17, 23, 28, 5 ],
+            "thursday": [ 1, 21, 27, 3 ],
+            "friday": [ 16, 21, 27, 3 ],
+            "saturday": [ 15, 19, 4, 2 ],
+            "sunday": [ 14, 19, 24, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 334,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/chris-coghlan-mike-trout-mlb-spring-training-oakland-athletics-los-angeles-angels-1.jpg',
+          title: 'Chris Coghlan of the Oakland Athletics Throws Over Mike Trout of the Los Angeles Angels',
+          artist: '?',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 14, 19, 24, 30 ],
+            "tuesday": [ 13, 18, 24, 30 ],
+            "wednesday": [ 12, 17, 23, 29 ],
+            "thursday": [ 17, 23, 28, 5 ],
+            "friday": [ 1, 21, 27, 3 ],
+            "saturday": [ 16, 21, 27, 3 ],
+            "sunday": [ 15, 19, 4, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 335,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/DHZ16091344_Mariners_at_Angels.jpg',
+          title: 'Mike Trout/Albert Pujols',
+          artist: 'Brian Rothmuller',
+          year: '2017',
+          rule: {
+            "monday": [ 15, 19, 4, 2 ],
+            "tuesday": [ 14, 19, 24, 30 ],
+            "wednesday": [ 13, 18, 24, 30 ],
+            "thursday": [ 12, 17, 23, 29 ],
+            "friday": [ 17, 23, 28, 5 ],
+            "saturday": [ 1, 21, 27, 3 ],
+            "sunday": [ 16, 21, 27, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
