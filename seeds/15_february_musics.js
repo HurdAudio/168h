@@ -3730,6 +3730,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 208,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3730575213/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bcuc.bandcamp.com/album/emakhosini',
+          a_string: 'Emakhosini by BCUC',
+          rule: {
+            "monday": [ 18, 12, 14, 20 ],
+            "tuesday": [ 1, 6, 7, 20 ],
+            "wednesday": [ 2, 6, 8, 12 ],
+            "thursday": [ 5, 8, 10, 14 ],
+            "saturday": [ 6, 10, 12, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 209,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2955726202/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bcuc.bandcamp.com/album/our-truth',
+          a_string: 'Our Truth by BCUC',
+          rule: {
+            "monday": [ 6, 10, 12, 14 ],
+            "tuesday": [ 18, 12, 14, 20 ],
+            "wednesday": [ 1, 6, 7, 20 ],
+            "thursday": [ 2, 6, 8, 12 ],
+            "saturday": [ 5, 8, 10, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 210,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3253333211/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://rawsh-t.bandcamp.com/album/strapped-4-survival',
+          a_string: 'Strapped 4 Survival by Blackfist',
+          rule: {
+            "monday": [ 6, 9, 11, 15 ],
+            "tuesday": [ 7, 11, 13, 15 ],
+            "wednesday": [ 19, 13, 15, 21 ],
+            "thursday": [ 2, 7, 8, 21 ],
+            "saturday": [ 3, 7, 9, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
