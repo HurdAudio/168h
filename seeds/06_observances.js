@@ -9751,6 +9751,39 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 624,
+          user_id: 1,
+          name: 'Irène Schweizer (piano) born 1941',
+          color: '#181A17',
+          picture: './img/musicians/411931.20160726_schweizer.jpg',
+          day_of: new Date ('1941-06-02T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: true,
+          override_content: {
+            "sources": [ 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp' ],
+            "src_strings": [ 'https://bandcamp.com/EmbeddedPlayer/album=1715661563/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=2109089480/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=3274164506/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=3955319069/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=527211015/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=3941044702/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=2267734439/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=3406526996/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=4231683784/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=1114701266/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=2958059388/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'http://juergwickihalder.bandcamp.com/album/jump', 'https://bandcamp.com/EmbeddedPlayer/album=1412806865/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/' ],
+            "href_strings": [ 'http://ireneschweizer.bandcamp.com/album/to-whom-it-may-concern-piano-solo-tonhalle-z-rich', 'https://bandcamp.com/EmbeddedPlayer/album=2109089480/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'http://ireneschweizer.bandcamp.com/album/portrait', 'http://ireneschweizer.bandcamp.com/album/wilde-se-oritas-hexensabbat', 'http://ireneschweizer.bandcamp.com/album/chicago-piano-solo', 'http://ireneschweizer.bandcamp.com/album/many-and-one-direction', 'http://ireneschweizer.bandcamp.com/album/piano-solo-vol-1', 'http://ireneschweizer.bandcamp.com/album/piano-solo-vol-2', 'http://destination-out.bandcamp.com/album/early-tapes', 'http://intaktrec.bandcamp.com/album/berne-concert', 'http://intaktrec.bandcamp.com/album/live', 'http://juergwickihalder.bandcamp.com/album/jump', 'http://mayarecordings.bandcamp.com/album/elsie-jo-live' ],
+            "a_strings": [ 'To Whom It May Concern - Piano Solo Tonhalle Zürich by Irène Schweizer', 'First Choice – Piano Solo KKL Luzern by Irène Schweizer', 'Portrait by Irène Schweizer', 'Wilde Señoritas / Hexensabbat by Irène Schweizer', 'Chicago Piano Solo by Irène Schweizer', 'Many and One Direction by Irène Schweizer', 'Piano Solo Vol. 1 by Irène Schweizer', 'Piano Solo Vol. 2 by Irène Schweizer', 'Early Tapes by IRÈNE SCHWEIZER TRIO', 'Berne Concert by Trio 3 + Irène Schweizer', 'Live! by Irène Schweizer – Joey Baron', 'Jump! by Jürg Wickihalder European Quartet feat. Irène Schweizer', 'Elsie Jo Live by Barry Guy, Iréne Schweizer, Evan Parker, Konrad Bauer, Barre Phillips, Paul Lytton' ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 625,
+          user_id: 1,
+          name: 'The rapture occurred on this day in 2018 according to the prolific doomsday seer David Meade',
+          color: '#725835',
+          picture: './img/doomsday/RaptureMeetJesus1.png',
+          day_of: new Date ('2018-04-23T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
