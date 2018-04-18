@@ -244,6 +244,74 @@
       vm.artModuleViewer = artModuleViewer;
       vm.artModuleViewDone = artModuleViewDone;
 
+      function occasionNameAndOccurance(occasionId, index) {
+
+        let months = [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ];
+
+        $http.get(`/occasions/${occasionId}`)
+        .then(occasionData=>{
+          let occasion = occasionData.data;
+          let dayOf = new Date(occasion.day_of);
+          vm.activeOccasionShares[index].name = occasion.name;
+          if (occasion.is_annual) {
+            vm.activeOccasionShares[index].occurance = 'Every ' + dayOf.getDate() + ' ' + months[dayOf.getMonth()];
+          } else {
+            vm.activeOccasionShares[index].occurance = 'On ' + dayOf.getDate() + ' ' + months[dayOf.getMonth()] + ' ' + dayOf.getYear();
+          }
+        });
+      }
+
+      function occasionImagerAndNames(inviter, invitee, index, isInviter, id) {
+        $http.get(`/users/${inviter}`)
+        .then(inviterUserData=>{
+          let inviterUser = inviterUserData.data;
+          $http.get(`/users/${invitee}`)
+          .then(inviteeUserData=>{
+            let inviteeUser = inviteeUserData.data;
+            if (isInviter) {
+              vm.activeOccasionShares[index].sharerImg = inviteeUser.user_avatar_url;
+            } else {
+              vm.activeOccasionShares[index].sharerImg = inviterUser.user_avatar_url;
+            }
+            vm.activeOccasionShares[index].sharrerName = inviterUser.name;
+            vm.activeOccasionShares[index].inviteeName = inviteeUser.name;
+            setTimeout(()=>{
+              if (isInviter) {
+                document.getElementById('occasionSharer' + id).setAttribute("style", "display: none;");
+                document.getElementById('occasionAcceptDecline' + id).setAttribute("style", "display: none;");
+              } else {
+                document.getElementById('occasionSharee' + id).setAttribute("style", "display: none;");
+              }
+            }, 75);
+          });
+        });
+      }
+
+      function retrieveUserOccasionShares() {
+
+        $http.get(`/occasions_shares`)
+        .then(allSharesData=>{
+          let allShares = allSharesData.data;
+          let inviterShares = allShares.filter(sh=>{
+            return((parseInt(sh.user_id) === parseInt(currentUserId)) && (parseInt(sh.share_associate_id) !== parseInt(currentUserId)));
+          });
+          let inviteeShares = allShares.filter(share=>{
+            return(parseInt(share.share_associate_id) === parseInt(currentUserId));
+          });
+          let shares = inviteeShares.concat(inviterShares);
+          if (shares.length > 0) {
+            vm.activeOccasionShares = [];
+            for (let i = 0; i < shares.length; i++) {
+              vm.activeOccasionShares[i] = {};
+              vm.activeOccasionShares[i].id = shares[i].id;
+              occasionImagerAndNames(shares[i].user_id, shares[i].share_associate_id, i, ((parseInt(shares[i].user_id) === parseInt(currentUserId)) && (parseInt(shares[i].share_associate_id) !== parseInt(currentUserId))), shares[i].id);
+              vm.activeOccasionShares[i].cleanDate = cleanDateHoliday(shares[i].created_at) + ' - ' + timeDate(shares[i].updated_at);
+              occasionNameAndOccurance(shares[i].occasion_id, i);
+            }
+          }
+        });
+      }
+
       function artModuleViewDone() {
         let artModuleViewPane = document.getElementById('artModuleViewPane');
         let dashboard = document.getElementById('dashboard');
@@ -14078,6 +14146,7 @@
             retrieveUserMessages();
             retrieveUserAppointments();
             retrieveUserHolidayShares();
+            retrieveUserOccasionShares();
           });
         }
 

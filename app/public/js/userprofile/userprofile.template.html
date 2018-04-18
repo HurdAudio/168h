@@ -5197,18 +5197,18 @@
         <div id="occasionSharesNotifier">
 
           <div class="whoScheduledMe">
-            <!-- <main ng-repeat="holiday in $ctrl.activeHolidayShares | orderBy : $ctrl.sortBy"> -->
+            <main ng-repeat="occasion in $ctrl.activeOccasionShares | orderBy : $ctrl.sortBy">
 
 
-              <img src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/1964977_10203532053928956_1620738254_n.jpg?oh=912289bc56416424f7d2e4ef3bfb8604&oe=5B41AE92"><br>
-              <p>Lucifer Sam has shared the following occasion with you on 4 April 2018 @ 16:56:00</p>
-              <!-- <p>You have shared the following holiday with {{holiday.inviter}} on {{holiday.cleanDate}}</p> -->
+              <img src="{{occasion.sharerImg}}"><br>
+              <p id="occasionSharer{{occasion.id}}">{{occasion.sharrerName}} has shared the following occasion with you on {{occasion.cleanDate}}</p>
+              <p id="occasionSharee{{occasion.id}}">You have shared the following occasion with {{holiday.inviteeName}} on {{holiday.cleanDate}}</p>
 
               <br><br><br><br><br><br>
-              <h3>End of the world!</h3>
-              <h3>Every June 6</h3>
+              <h3>{{occasion.name}}</h3>
+              <h3>{{occasion.occurance}}</h3>
 
-              <div class="holidayAcceptDenyButtons" id="occasionAcceptDecline">
+              <div class="holidayAcceptDenyButtons" id="occasionAcceptDecline{{occasion.id}}">
 
                 <a class="btn">Decline</a>
                 <a class="btn">Accept</a>
@@ -5220,7 +5220,7 @@
 
                 <h1>Comments:</h1>
               </div>
-              <div id="occasionShareComments">
+              <div class="occasionShareComments">
                 <!-- <main ng-repeat="comment in holiday.comments | orderBy : $ctrl.sortBy"> -->
                   <img src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/1964977_10203532053928956_1620738254_n.jpg?oh=912289bc56416424f7d2e4ef3bfb8604&oe=5B41AE92"><br><br><br>
                   <br><br><br><p>From: Lucifer Sam <br>
@@ -5229,7 +5229,7 @@
                 <!-- </main> -->
               </div>
 
-            <!-- </main> -->
+            </main>
           </div>
 
 
