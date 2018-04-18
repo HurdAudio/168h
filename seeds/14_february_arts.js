@@ -7004,6 +7004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 351,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/80.jpg',
+          title: 'You Can Win the Game if it\'s Your Turn',
+          artist: 'Bernie Casey',
+          year: 'xx cent.',
+          rule: {
+            "monday": [ 22, 2, 10, 18 ],
+            "tuesday": [ 28, 4, 10, 20 ],
+            "wednesday": [ 27, 6, 14, 22 ],
+            "thursday": [ 29, 10, 16, 22 ],
+            "friday": [ 2, 10, 18, 28 ],
+            "saturday": [ 2, 12, 8, 27 ],
+            "sunday": [ 21, 29, 8, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 352,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/elizabeth-catlett-which-way.jpg',
+          title: 'Which Way?',
+          artist: 'Elizabeth Catlett',
+          year: '1973',
+          rule: {
+            "monday": [ 21, 29, 8, 16 ],
+            "tuesday": [ 22, 2, 10, 18 ],
+            "wednesday": [ 28, 4, 10, 20 ],
+            "thursday": [ 27, 6, 14, 22 ],
+            "friday": [ 29, 10, 16, 22 ],
+            "saturday": [ 2, 10, 18, 28 ],
+            "sunday": [ 2, 12, 8, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 353,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/nick_cave-nc11.030_a_view_2_hr_2_credit_line_.jpg',
+          title: 'Costume for Alvin Ailey’s American Dance Theater',
+          artist: 'Nick Cave',
+          year: '2017',
+          rule: {
+            "monday": [ 2, 12, 8, 27 ],
+            "tuesday": [ 21, 29, 8, 16 ],
+            "wednesday": [ 22, 2, 10, 18 ],
+            "thursday": [ 28, 4, 10, 20 ],
+            "friday": [ 27, 6, 14, 22 ],
+            "saturday": [ 29, 10, 16, 22 ],
+            "sunday": [ 2, 10, 18, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 354,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/38.jpg',
+          title: 'Painting',
+          artist: 'Michael Ray Charles',
+          year: '?',
+          rule: {
+            "monday": [ 2, 10, 18, 28 ],
+            "tuesday": [ 2, 12, 8, 27 ],
+            "wednesday": [ 21, 29, 8, 16 ],
+            "thursday": [ 22, 2, 10, 18 ],
+            "friday": [ 28, 4, 10, 20 ],
+            "saturday": [ 27, 6, 14, 22 ],
+            "sunday": [ 29, 10, 16, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 355,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/c6147571c83f921b94ce10299dfa888f--contemporary-sculpture-one-million.jpg',
+          title: 'Tantra #4',
+          artist: 'Barbara Chase-Riboud',
+          year: '2007',
+          rule: {
+            "monday": [ 29, 10, 16, 22 ],
+            "tuesday": [ 2, 10, 18, 28 ],
+            "wednesday": [ 2, 12, 8, 27 ],
+            "thursday": [ 21, 29, 8, 16 ],
+            "friday": [ 22, 2, 10, 18 ],
+            "saturday": [ 28, 4, 10, 20 ],
+            "sunday": [ 27, 6, 14, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
