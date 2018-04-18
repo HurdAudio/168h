@@ -3622,6 +3622,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 202,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2539493127/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://slipimprint.bandcamp.com/album/lost-in-shadows',
+          a_string: 'Lost In Shadows by Ashley Paul',
+          rule: {
+            "monday": [ 2, 8, 14, 22 ],
+            "tuesday": [ 1, 7, 13, 21 ],
+            "wednesday": [ 31, 6, 12, 21 ],
+            "thursday": [ 29, 5, 11, 19 ],
+            "saturday": [ 29, 4, 10, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 203,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2048684979/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://intaktrec.bandcamp.com/album/alien-huddle',
+          a_string: 'Alien Huddle by Sylvie Courvoiser, Ikue Mori, Lotte Anker',
+          rule: {
+            "monday": [ 30, 5, 11, 19 ],
+            "tuesday": [ 3, 9, 15, 23 ],
+            "wednesday": [ 2, 8, 14, 22 ],
+            "thursday": [ 1, 7, 13, 22 ],
+            "saturday": [ 30, 6, 12, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 204,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3327527731/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://peggylee1.bandcamp.com/album/echo-painting',
+          a_string: 'ECHO PAINTING by Peggy Lee',
+          rule: {
+            "monday": [ 30, 6, 12, 20 ],
+            "tuesday":[ 30, 5, 11, 19 ],
+            "wednesday":  [ 3, 9, 15, 23 ],
+            "thursday": [ 2, 8, 14, 22 ],
+            "saturday": [ 1, 7, 13, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
