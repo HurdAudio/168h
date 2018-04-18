@@ -3838,6 +3838,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 214,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2730607147/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://mikelrouse.bandcamp.com/album/a-walk-in-the-woods',
+          a_string: 'A Walk In The Woods by Mikel Rouse Broken Consort',
+          rule: {
+            "monday": [ 9, 16, 17, 18 ],
+            "tuesday": [ 8, 14, 16, 17 ],
+            "wednesday": [ 7, 14, 15, 16 ],
+            "thursday": [ 6, 12, 13, 14 ],
+            "saturday": [ 5, 12, 13, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 215,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4204561049/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://mikelrouse.bandcamp.com/album/hemisphere',
+          a_string: 'Hemisphere by Mikel Rouse',
+          rule: {
+            "monday": [ 5, 12, 13, 14 ],
+            "tuesday": [ 9, 16, 17, 18 ],
+            "wednesday": [ 8, 14, 16, 17 ],
+            "thursday": [ 7, 14, 15, 16 ],
+            "saturday": [ 6, 12, 13, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 216,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3268244201/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://mikelrouse.bandcamp.com/album/take-down',
+          a_string: 'Take Down by Metronome',
+          rule: {
+            "monday": [ 6, 12, 13, 14 ],
+            "tuesday": [ 5, 12, 13, 14 ],
+            "wednesday": [ 9, 16, 17, 18 ],
+            "thursday": [ 8, 14, 16, 17 ],
+            "saturday": [ 7, 14, 15, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
