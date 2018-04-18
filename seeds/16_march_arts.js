@@ -6804,6 +6804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 341,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/carnivorous-flower.jpg',
+          title: 'Carnivorous Flower',
+          artist: 'Marianne North',
+          year: '?',
+          rule: {
+            "monday": [ 13, 23, 31, 10 ],
+            "tuesday": [ 12, 22, 31, 9 ],
+            "wednesday": [ 18, 27, 6, 14 ],
+            "thursday": [ 17, 27, 6, 14 ],
+            "friday": [ 17, 26, 3, 13 ],
+            "saturday": [ 15, 25, 2, 12 ],
+            "sunday": [ 14, 24, 1, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 342,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/the-port-of-nice.jpg',
+          title: 'The Port of Nice',
+          artist: 'Berthe Morisot',
+          year: '1882',
+          rule: {
+            "monday": [ 14, 24, 1, 11 ],
+            "tuesday": [ 13, 23, 31, 10 ],
+            "wednesday": [ 12, 22, 31, 9 ],
+            "thursday": [ 18, 27, 6, 14 ],
+            "friday": [ 17, 27, 6, 14 ],
+            "saturday": [ 17, 26, 3, 13 ],
+            "sunday": [ 15, 25, 2, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 343,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/https://uploads0.wikiart.org/images/lilla-cabot-perry/giverny-landscae-in-monet-s-garden-1897.jpg.jpg',
+          title: 'Giverny Landscae, in Monet\'s Garden',
+          artist: 'Lilla Cabot Perry',
+          year: '1897',
+          rule: {
+            "monday": [ 16, 26, 3, 13 ],
+            "tuesday": [ 15, 25, 2, 12 ],
+            "wednesday": [ 14, 24, 1, 11 ],
+            "thursday": [ 13, 23, 1, 10 ],
+            "friday": [ 19, 28, 7, 15 ],
+            "saturday": [ 18, 28, 7, 15 ],
+            "sunday": [ 18, 27, 4, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 344,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/louise-abb-ma-a-game-of-croquet.jpg',
+          title: 'A Game of Croquet',
+          artist: 'Louise Abbéma',
+          year: '1872',
+          rule: {
+            "monday": [ 18, 27, 4, 14 ],
+            "tuesday": [ 16, 26, 3, 13 ],
+            "wednesday": [ 15, 25, 2, 12 ],
+            "thursday": [ 14, 24, 1, 11 ],
+            "friday": [ 13, 23, 1, 10 ],
+            "saturday": [ 19, 28, 7, 15 ],
+            "sunday": [ 18, 28, 7, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 345,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/young-girl-before-a-lit-lamp-anna-ancher.jpg',
+          title: 'Young Girl Before a Lit Lamp',
+          artist: 'Anna Ancher',
+          year: '1887',
+          rule: {
+            "monday": [ 18, 28, 7, 15 ],
+            "tuesday": [ 18, 27, 4, 14 ],
+            "wednesday": [ 16, 26, 3, 13 ],
+            "thursday": [ 15, 25, 2, 12 ],
+            "friday": [ 14, 24, 1, 11 ],
+            "saturday": [ 13, 23, 1, 10 ],
+            "sunday": [ 19, 28, 7, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
