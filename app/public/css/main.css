@@ -7509,6 +7509,10 @@ footer img {
   margin-left: 0;
 }
 
+#occasionShareComments p {
+  margin-left: 0;
+}
+
 #availableTilesModules {
   display: none;
 }
