@@ -7204,6 +7204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 361,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/desenvainar-el-humo-2016.jpg',
+          title: 'Unsheathe the smoke',
+          artist: 'Chicote CFC',
+          year: '2016',
+          rule: {
+            "monday": [ 4, 6, 7, 10 ],
+            "tuesday": [ 20, 21, 1, 24 ],
+            "wednesday": [ 23, 25, 17, 6 ],
+            "thursday": [ 25, 26, 18, 21 ],
+            "friday": [ 28, 29, 20, 24 ],
+            "saturday": [ 31, 2, 3, 5 ],
+            "sunday": [ 2, 4, 8, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 362,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/work-1957-3.jpg',
+          title: 'Work',
+          artist: 'Akira Kanayama',
+          year: '1957',
+          rule: {
+            "monday": [ 2, 4, 8, 11 ],
+            "tuesday": [ 4, 6, 7, 10 ],
+            "wednesday": [ 20, 21, 1, 24 ],
+            "thursday": [ 23, 25, 17, 6 ],
+            "friday": [ 25, 26, 18, 21 ],
+            "saturday": [ 28, 29, 20, 24 ],
+            "sunday": [ 31, 2, 3, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 363,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/cor-luz-2008.jpg',
+          title: 'Cor-Luz',
+          artist: 'Eduardo Nery',
+          year: '2008',
+          rule: {
+            "monday": [ 31, 2, 3, 5 ],
+            "tuesday": [ 2, 4, 8, 11 ],
+            "wednesday": [ 4, 6, 7, 10 ],
+            "thursday": [ 20, 21, 1, 24 ],
+            "friday": [ 23, 25, 17, 6 ],
+            "saturday": [ 25, 26, 18, 21 ],
+            "sunday": [ 28, 29, 20, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 364,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/painterly-architectonic.jpg',
+          title: 'Painterly Architectonic',
+          artist: 'Lyubov Popova',
+          year: '1918',
+          rule: {
+            "monday": [ 29, 30, 21, 25 ],
+            "tuesday": [ 1, 3, 4, 6 ],
+            "wednesday": [ 3, 5, 9, 12 ],
+            "thursday": [ 5, 7, 8, 11 ],
+            "friday": [ 21, 22, 2, 25 ],
+            "saturday": [ 24, 26, 18, 7 ],
+            "sunday": [ 26, 27, 19, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 365,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/blobs-1993.jpg',
+          title: 'Blobs',
+          artist: 'Kenny Scharf',
+          year: '1993',
+          rule: {
+            "monday": [ 26, 27, 19, 22 ],
+            "tuesday": [ 29, 30, 21, 25 ],
+            "wednesday": [ 1, 3, 4, 6 ],
+            "thursday": [ 3, 5, 9, 12 ],
+            "friday": [ 5, 7, 8, 11 ],
+            "saturday": [ 21, 22, 2, 25 ],
+            "sunday": [ 24, 26, 18, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
