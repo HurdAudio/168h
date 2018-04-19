@@ -690,6 +690,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#F0EBDD',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 50,
+          user_id: 1,
+          theme: 'Ice',
+          type: 'saturday',
+          src_string: '../img/january_tiles/depositphotos_63077547-stock-photo-frozen-ice-seamless-and-tileable.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '100%',
+          color_dark: '#163248',
+          color_medium: '#B7DBD6',
+          color_light: '#FFFEFC',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
