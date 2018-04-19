@@ -578,6 +578,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#E6CFA5',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 42,
+          user_id: 1,
+          theme: 'Leather',
+          type: 'holiday',
+          src_string: '../img/september_tiles/impressive-green-leather-sofa-stunning-1960s-grass-desire-as-well-11.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '155%',
+          color_dark: '#010007',
+          color_medium: '#0F6500',
+          color_light: '#BDD3CB',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
