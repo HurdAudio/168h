@@ -1144,6 +1144,66 @@ exports.seed = function(knex, Promise) {
           public: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 96,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/portrait-3329180_1920.jpg',
+          title: 'Cat Portrait',
+          artist: 'Mark Burnett',
+          year: '2018',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 97,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/cat-3331658_1920.jpg',
+          title: 'Cat',
+          artist: 'Manfred Richter',
+          year: '2018',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 98,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/cat-3331467_1920.jpg',
+          title: 'Mackerel',
+          artist: 'minka2507',
+          year: '2018',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 99,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/cat-3328541_1920.jpg',
+          title: 'Cat',
+          artist: 'zifo',
+          year: '2016',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 100,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/cat-2273598_1920.jpg',
+          title: 'Cat',
+          artist: 'Susann Mielke',
+          year: '2016',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
