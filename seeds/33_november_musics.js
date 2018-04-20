@@ -2812,6 +2812,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 157,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3586901551/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://guyone.bandcamp.com/album/1',
+          a_string: '#1 by Guy One',
+          rule: {
+            "monday": [ 23, 4, 15, 19 ],
+            "tuesday": [ 22, 3, 14, 18 ],
+            "wednesday": [ 21, 2, 13, 15 ],
+            "thursday": [ 20, 31, 12, 14 ],
+            "saturday": [ 24, 5, 16, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 158,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1159572063/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ebotaylor.bandcamp.com/album/life-stories',
+          a_string: 'Life Stories by Ebo Taylor',
+          rule: {
+            "monday": [ 24, 5, 16, 20 ],
+            "tuesday": [ 23, 4, 15, 19 ],
+            "wednesday": [ 22, 3, 14, 18 ],
+            "thursday": [ 21, 2, 13, 15 ],
+            "saturday": [ 20, 31, 12, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 159,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3724197582/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ayuunesule.bandcamp.com/album/we-have-one-destiny',
+          a_string: 'We Have One Destiny by Ayuune Sule',
+          rule: {
+            "monday": [ 20, 31, 12, 14 ],
+            "tuesday": [ 24, 5, 16, 20 ],
+            "wednesday": [ 23, 4, 15, 19 ],
+            "thursday": [ 22, 3, 14, 18 ],
+            "saturday": [ 21, 2, 13, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
