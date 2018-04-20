@@ -2920,6 +2920,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 163,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2256160548/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://avantgardemusic.bandcamp.com/album/stars-wept-to-the-sea',
+          a_string: 'Stars Wept to the Sea by Unreqvited',
+          rule: {
+            "monday": [ 28, 7, 18, 20 ],
+            "tuesday": [ 1, 11, 21, 24 ],
+            "wednesday": [ 31, 10, 20, 23 ],
+            "thursday": [ 30, 9, 19, 22 ],
+            "saturday": [ 29, 8, 18, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 164,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=262063458/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bambara.bandcamp.com/album/shadow-on-everything',
+          a_string: 'Shadow On Everything by Bambara',
+          rule: {
+            "monday": [ 29, 8, 18, 21 ],
+            "tuesday": [ 28, 7, 18, 20 ],
+            "wednesday": [ 1, 11, 21, 24 ],
+            "thursday": [ 31, 10, 20, 23 ],
+            "saturday": [ 30, 9, 19, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 165,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3504127221/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://wildhunt.bandcamp.com/album/afterdream-of-the-reveller',
+          a_string: 'Afterdream of the Reveller by WILD HUNT',
+          rule: {
+            "monday": [ 30, 9, 19, 22 ],
+            "tuesday": [ 29, 8, 18, 21 ],
+            "wednesday": [ 28, 7, 18, 20 ],
+            "thursday": [ 1, 11, 21, 24 ],
+            "saturday": [ 31, 10, 20, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
