@@ -5289,7 +5289,7 @@ exports.seed = function(knex, Promise) {
           id: 265,
           user_id: 1,
           theme: 'Minimalism',
-          img_path: './img/november/https://uploads8.wikiart.org/images/david-batchelor/slugfest-2012.jpg',
+          img_path: './img/november/slugfest-2012.jpg',
           title: 'Slugfest',
           artist: 'David Batchelor',
           year: '2012',
@@ -5301,6 +5301,106 @@ exports.seed = function(knex, Promise) {
             "friday": [ 15, 20, 26, 1 ],
             "saturday": [ 14, 19, 24, 30 ],
             "sunday": [ 13, 18, 24, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 266,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/seen-unseen-known-unknown.jpg',
+          title: 'Seen/Unseen Known/Unknown',
+          artist: 'Walter De Maria',
+          year: 'xx-xxi cent.',
+          rule: {
+            "monday": [ 14, 19, 25, 29 ],
+            "tuesday": [ 13, 16, 24, 29 ],
+            "wednesday": [ 12, 16, 23, 28 ],
+            "thursday": [ 11, 16, 22, 27 ],
+            "friday": [ 10, 15, 21, 28 ],
+            "saturday": [ 16, 21, 27, 2 ],
+            "sunday": [ 15, 20, 25, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 267,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/yeux-delphique.jpg',
+          title: 'Yeux delphique',
+          artist: 'Daniel Dezeuze',
+          year: 'xx cent.',
+          rule: {
+            "monday": [ 15, 20, 25, 1 ],
+            "tuesday": [ 14, 19, 25, 29 ],
+            "wednesday": [ 13, 16, 24, 29 ],
+            "thursday": [ 12, 16, 23, 28 ],
+            "friday": [ 11, 16, 22, 27 ],
+            "saturday": [ 10, 15, 21, 28 ],
+            "sunday": [ 16, 21, 27, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 268,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/tape-floor.jpg',
+          title: 'Tape Floor',
+          artist: 'Jim Lambie',
+          year: 'xx cent.',
+          rule: {
+            "monday": [ 16, 21, 27, 2 ],
+            "tuesday": [ 15, 20, 25, 1 ],
+            "wednesday": [ 14, 19, 25, 29 ],
+            "thursday": [ 13, 16, 24, 29 ],
+            "friday": [ 12, 16, 23, 28 ],
+            "saturday": [ 11, 16, 22, 27 ],
+            "sunday": [ 10, 15, 21, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 269,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/gro-e-kn-pfung-1953.jpg',
+          title: 'Große Knüpfung',
+          artist: 'Herbert Zangs',
+          year: '1953',
+          rule: {
+            "monday": [ 10, 15, 21, 28 ],
+            "tuesday": [ 16, 21, 27, 2 ],
+            "wednesday": [ 15, 20, 25, 1 ],
+            "thursday": [ 14, 19, 25, 29 ],
+            "friday": [ 13, 16, 24, 29 ],
+            "saturday": [ 12, 16, 23, 28 ],
+            "sunday": [ 11, 16, 22, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 270,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/untitled-1955.jpg',
+          title: 'Untitled',
+          artist: 'Myron Stout',
+          year: '1955',
+          rule: {
+            "monday": [ 11, 16, 22, 27 ],
+            "tuesday": [ 10, 15, 21, 28 ],
+            "wednesday": [ 16, 21, 27, 2 ],
+            "thursday": [ 15, 20, 25, 1 ],
+            "friday": [ 14, 19, 25, 29 ],
+            "saturday": [ 13, 16, 24, 29 ],
+            "sunday": [ 12, 16, 23, 28 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
