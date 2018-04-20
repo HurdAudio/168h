@@ -2704,6 +2704,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 151,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1586188723/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://kafundrecords.bandcamp.com/album/kafund-vol-6-afrobeat-brazil',
+          a_string: 'Kafundó Vol. 6;  Afrobeat Brazil by Kafundó Records',
+          rule: {
+            "monday": [ 27, 2, 8, 13 ],
+            "tuesday": [ 26, 1, 7, 13 ],
+            "wednesday": [ 23, 31, 6, 12 ],
+            "thursday": [ 24, 30, 5, 11 ],
+            "saturday": [ 28, 3, 9, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 152,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1632714789/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://kafundrecords.bandcamp.com/album/maga-bo-apresenta-samba-de-coco-ra-zes-de-arcoverde',
+          a_string: 'Maga Bo Apresenta Samba de Coco Raízes de Arcoverde by Samba de Coco Raízes de Arcoverde',
+          rule: {
+            "monday": [ 28, 3, 9, 15 ],
+            "tuesday": [ 27, 2, 8, 13 ],
+            "wednesday": [ 26, 1, 7, 13 ],
+            "thursday": [ 23, 31, 6, 12 ],
+            "saturday": [ 24, 30, 5, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 153,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2057778744/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://kafundrecords.bandcamp.com/album/kafund-vol-5-afro-brazilian-roots-and-wires',
+          a_string: 'Kafundó Vol. 5;  Afro-Brazilian Roots and Wires by Kafundó Records',
+          rule: {
+            "monday": [ 24, 30, 5, 11 ],
+            "tuesday": [ 28, 3, 9, 15 ],
+            "wednesday": [ 27, 2, 8, 13 ],
+            "thursday": [ 26, 1, 7, 13 ],
+            "saturday": [ 23, 31, 6, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
