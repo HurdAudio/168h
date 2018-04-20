@@ -5504,6 +5504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 276,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_warsovpost_00005.jpg',
+          title: 'How did YOU help the front line?',
+          artist: 'D.Moor',
+          year: '1941',
+          rule: {
+            "monday": [ 18, 19, 30, 3 ],
+            "tuesday": [ 14, 25, 5, 9 ],
+            "wednesday": [ 13, 24, 4, 8 ],
+            "thursday": [ 12, 23, 3, 7 ],
+            "friday": [ 11, 22, 2, 6 ],
+            "saturday": [ 10, 21, 1, 5 ],
+            "sunday": [ 9, 20, 21, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 277,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_warsovpost_00040.jpg',
+          title: 'Our flag is a flag of the victory!',
+          artist: 'V.Koretsky',
+          year: '1945',
+          rule: {
+            "monday": [ 9, 20, 21, 4 ],
+            "tuesday": [ 18, 19, 30, 3 ],
+            "wednesday": [ 14, 25, 5, 9 ],
+            "thursday": [ 13, 24, 4, 8 ],
+            "friday": [ 12, 23, 3, 7 ],
+            "saturday": [ 11, 22, 2, 6 ],
+            "sunday": [ 10, 21, 1, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 278,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_warsovpost_00039.jpg',
+          title: 'You will live a happy life!',
+          artist: 'V. Ivanov',
+          year: '1944',
+          rule: {
+            "monday": [ 10, 21, 1, 5 ],
+            "tuesday": [ 9, 20, 21, 4 ],
+            "wednesday": [ 18, 19, 30, 3 ],
+            "thursday": [ 14, 25, 5, 9 ],
+            "friday": [ 13, 24, 4, 8 ],
+            "saturday": [ 12, 23, 3, 7 ],
+            "sunday": [ 11, 22, 2, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 279,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_warsovpost_00038.jpg',
+          title: 'Hi motherland!',
+          artist: 'N.Vatolina',
+          year: '1945',
+          rule: {
+            "monday": [ 11, 22, 2, 6 ],
+            "tuesday": [ 10, 21, 1, 5 ],
+            "wednesday": [ 9, 20, 21, 4 ],
+            "thursday": [ 18, 19, 30, 3 ],
+            "friday": [ 14, 25, 5, 9 ],
+            "saturday": [ 13, 24, 4, 8 ],
+            "sunday": [ 12, 23, 3, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 280,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_warsovpost_00036.jpg',
+          title: 'We will walk to Berlin',
+          artist: 'L.Golovanov',
+          year: '1944',
+          rule: {
+            "monday": [ 13, 24, 4, 8 ],
+            "tuesday": [ 12, 23, 3, 7 ],
+            "wednesday": [ 11, 22, 2, 6 ],
+            "thursday": [ 10, 21, 22, 5 ],
+            "friday": [ 19, 20, 31, 4 ],
+            "saturday": [ 15, 26, 6, 10 ],
+            "sunday": [ 14, 25, 5, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
