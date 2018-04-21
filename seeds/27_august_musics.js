@@ -3136,6 +3136,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 175,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1384344552/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://turgidanimalrecordsitaliandivision.bandcamp.com/album/elide',
+          a_string: 'Elide by Splinter Vs Stalin',
+          rule: {
+            "monday": [ 5, 13, 26, 25 ],
+            "tuesday": [ 4, 12, 25, 24 ],
+            "wednesday": [ 3, 11, 24, 23 ],
+            "thursday": [ 7, 15, 28, 27 ],
+            "saturday": [ 6, 14, 27, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 176,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1232320343/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://turgidanimalrecordsitaliandivision.bandcamp.com/album/barbed-wire-burger',
+          a_string: 'Barbed Wire Burger by Oleoresin Capsicum',
+          rule: {
+            "monday": [ 6, 14, 27, 26 ],
+            "tuesday": [ 5, 13, 26, 25 ],
+            "wednesday": [ 4, 12, 25, 24 ],
+            "thursday": [ 3, 11, 24, 23 ],
+            "saturday": [ 7, 15, 28, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 177,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=982879502/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://turgidanimalrecordsitaliandivision.bandcamp.com/album/diotrio',
+          a_string: 'Diotrio by Battistelli/Pica/Vinciguerra',
+          rule: {
+            "monday": [ 7, 15, 28, 27 ],
+            "tuesday": [ 6, 14, 27, 26 ],
+            "wednesday": [ 5, 13, 26, 25 ],
+            "thursday": [ 4, 12, 25, 24 ],
+            "saturday": [ 3, 11, 24, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
