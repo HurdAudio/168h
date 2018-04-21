@@ -3460,6 +3460,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 193,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2701992501/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://gohleekwang.bandcamp.com/album/magic-carpet',
+          a_string: 'Magic Carpet by Goh Lee Kwang',
+          rule: {
+            "monday": [ 29, 4, 11, 24 ],
+            "tuesday": [ 28, 3, 10, 23 ],
+            "wednesday": [ 1, 8, 14, 27 ],
+            "thursday": [ 31, 6, 13, 26 ],
+            "saturday": [ 30, 5, 12, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 194,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1174756314/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://whalesrecords.bandcamp.com/album/see',
+          a_string: 'See by Muriël Bostdorp',
+          rule: {
+            "monday": [ 30, 5, 12, 25 ],
+            "tuesday": [ 29, 4, 11, 24 ],
+            "wednesday": [ 28, 3, 10, 23 ],
+            "thursday": [ 1, 8, 14, 27 ],
+            "saturday": [ 31, 6, 13, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 195,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2345172765/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://mikeshiflet.bandcamp.com/album/tetracosa-volume-four',
+          a_string: 'Tetracosa, Volume Four by Mike Shiflet',
+          rule: {
+            "monday": [ 31, 6, 13, 26 ],
+            "tuesday": [ 30, 5, 12, 25 ],
+            "wednesday": [ 29, 4, 11, 24 ],
+            "thursday": [ 28, 3, 10, 23 ],
+            "saturday": [ 1, 8, 14, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
