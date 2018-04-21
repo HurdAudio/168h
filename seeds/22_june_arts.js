@@ -6304,6 +6304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 316,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/2152016122444684_Into_The_Sand_2__1_of_1_-Edit-Edit-Edit.jpg',
+          title: 'Seascape/Coastal',
+          artist: 'Bobby Baker',
+          year: '2014',
+          rule: {
+            "monday": [ 14, 24, 4, 12 ],
+            "tuesday": [ 13, 23, 3, 11 ],
+            "wednesday":[ 12, 22, 2, 10 ],
+            "thursday":  [ 21, 1, 11, 9 ],
+            "friday": [ 10, 20, 30, 8 ],
+            "saturday": [ 9, 19, 29, 7 ],
+            "sunday": [ 15, 25, 5, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 317,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/breathe-V-natalie-field-phogarty-web.jpg',
+          title: 'Breathe In... Breathe Out... Let the Human In...',
+          artist: 'Natalie Field',
+          year: '?',
+          rule: {
+            "monday": [ 15, 25, 5, 11 ],
+            "tuesday": [ 14, 24, 4, 12 ],
+            "wednesday": [ 13, 23, 3, 11 ],
+            "thursday": [ 12, 22, 2, 10 ],
+            "friday": [ 21, 1, 11, 9 ],
+            "saturday": [ 10, 20, 30, 8 ],
+            "sunday": [ 9, 19, 29, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 318,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/Loreal-Prystaj-photography-reflecting-on-nature-1.jpeg',
+          title: 'Reflections of Nature',
+          artist: 'Loreal Prystaj',
+          year: '2017',
+          rule: {
+            "monday": [ 9, 19, 29, 7 ],
+            "tuesday": [ 15, 25, 5, 11 ],
+            "wednesday": [ 14, 24, 4, 12 ],
+            "thursday": [ 13, 23, 3, 11 ],
+            "friday": [ 12, 22, 2, 10 ],
+            "saturday": [ 21, 1, 11, 9 ],
+            "sunday": [ 10, 20, 30, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 319,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/c79d7c924f0f696dd74292288c4cae54.jpg',
+          title: 'Self-Portrait',
+          artist: 'Milica Staletovic',
+          year: '2015',
+          rule: {
+            "monday": [ 10, 20, 30, 8 ],
+            "tuesday": [ 9, 19, 29, 7 ],
+            "wednesday": [ 15, 25, 5, 11 ],
+            "thursday": [ 14, 24, 4, 12 ],
+            "friday": [ 13, 23, 3, 11 ],
+            "saturday": [ 12, 22, 2, 10 ],
+            "sunday": [ 21, 1, 11, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 320,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/ec7cc38b761c5d9daa991f82b9bb5669.jpg',
+          title: 'title unknown',
+          artist: 'Martín De Pasquale',
+          year: '1988',
+          rule: {
+            "monday": [ 21, 1, 11, 9 ],
+            "tuesday": [ 10, 20, 30, 8 ],
+            "wednesday": [ 9, 19, 29, 7 ],
+            "thursday": [ 15, 25, 5, 11 ],
+            "friday": [ 14, 24, 4, 12 ],
+            "saturday": [ 13, 23, 3, 11 ],
+            "sunday": [ 12, 22, 2, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
