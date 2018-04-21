@@ -6504,6 +6504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 326,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/topsy-4.jpg',
+          title: 'Topsy',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 6, 16, 26, 3 ],
+            "tuesday": [ 4, 13, 25, 3 ],
+            "wednesday": [ 16, 26, 5, 13 ],
+            "thursday": [ 14, 25, 3, 13 ],
+            "friday": [ 12, 22, 30, 11 ],
+            "saturday": [ 9, 20, 30, 19 ],
+            "sunday": [ 8, 19, 28, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 327,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/topsy-cover.jpg',
+          title: 'Topsy cover',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 8, 19, 28, 7 ],
+            "tuesday": [ 6, 16, 26, 3 ],
+            "wednesday": [ 4, 13, 25, 3 ],
+            "thursday": [ 16, 26, 5, 13 ],
+            "friday": [ 14, 25, 3, 13 ],
+            "saturday": [ 12, 22, 30, 11 ],
+            "sunday": [ 9, 20, 30, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 328,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/topsy-kills-man.jpg',
+          title: 'Topsy kills man',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 9, 20, 30, 19 ],
+            "tuesday": [ 8, 19, 28, 7 ],
+            "wednesday": [ 6, 16, 26, 3 ],
+            "thursday": [ 4, 13, 25, 3 ],
+            "friday": [ 16, 26, 5, 13 ],
+            "saturday": [ 14, 25, 3, 13 ],
+            "sunday": [ 12, 22, 30, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 329,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/wheel-1.jpg',
+          title: 'Wheel',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 13, 23, 31, 12 ],
+            "tuesday": [ 10, 21, 31, 20 ],
+            "wednesday": [ 9, 20, 29, 8 ],
+            "thursday": [ 7, 17, 27, 4 ],
+            "friday": [ 5, 14, 26, 4 ],
+            "saturday": [ 17, 27, 6, 14 ],
+            "sunday": [ 15, 26, 4, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 330,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/wood.jpg',
+          title: 'Wood',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 15, 26, 4, 14 ],
+            "tuesday": [ 13, 23, 31, 12 ],
+            "wednesday": [ 10, 21, 31, 20 ],
+            "thursday": [ 9, 20, 29, 8 ],
+            "friday": [ 7, 17, 27, 4 ],
+            "saturday": [ 5, 14, 26, 4 ],
+            "sunday": [ 17, 27, 6, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
