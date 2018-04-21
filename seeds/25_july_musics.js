@@ -3244,6 +3244,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 181,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1236987261/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://monikerrecordsss.bandcamp.com/album/channels',
+          a_string: 'Channels by Gentle Leader XIV',
+          rule: {
+            "monday": [ 25, 27, 31, 8 ],
+            "tuesday": [ 24, 25, 30, 7 ],
+            "wednesday": [ 23, 25, 29, 6 ],
+            "thursday": [ 27, 29, 2, 10 ],
+            "saturday": [ 26, 28, 1, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 182,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1103145199/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://glowmatic.bandcamp.com/album/time-trip',
+          a_string: 'Time Trip by House of Blondes',
+          rule: {
+            "monday": [ 27, 29, 2, 10 ],
+            "tuesday": [ 26, 28, 1, 9 ],
+            "wednesday": [ 25, 26, 31, 8 ],
+            "thursday": [ 24, 26, 30, 7 ],
+            "saturday": [ 28, 30, 3, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 183,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2559229717/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://poster90210.bandcamp.com/album/elias-is-a-nice-guy',
+          a_string: 'Elias Is A Nice Guy by Poster',
+          rule: {
+            "monday": [ 28, 30, 3, 11 ],
+            "tuesday": [ 27, 29, 2, 10 ],
+            "wednesday": [ 26, 28, 1, 9 ],
+            "thursday": [ 25, 26, 31, 8 ],
+            "saturday": [ 24, 26, 30, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
