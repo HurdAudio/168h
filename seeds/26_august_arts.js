@@ -5904,6 +5904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 296,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/orfeu-nos-infernos-detail-1904.jpg',
+          title: 'Orfeu nos Infernos (detail)',
+          artist: 'Guilherme de Santa-Rita',
+          year: '1904',
+          rule: {
+            "monday": [ 15, 19, 27, 12 ],
+            "tuesday": [ 14, 17, 26, 11 ],
+            "wednesday": [ 13, 17, 25, 10 ],
+            "thursday": [ 12, 16, 24, 9 ],
+            "friday": [ 11, 13, 23, 8 ],
+            "saturday": [ 10, 13, 22, 7 ],
+            "sunday": [ 9, 12, 21, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 297,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/bibemus-quarry.jpg',
+          title: 'Bibemus Quarry',
+          artist: 'Paul Cezanne',
+          year: 'c.1900',
+          rule: {
+            "monday": [ 9, 12, 21, 6 ],
+            "tuesday": [ 15, 19, 27, 12 ],
+            "wednesday": [ 14, 17, 26, 11 ],
+            "thursday": [ 13, 17, 25, 10 ],
+            "friday": [ 12, 16, 24, 9 ],
+            "saturday": [ 11, 13, 23, 8 ],
+            "sunday": [ 10, 13, 22, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 298,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/the-poet-and-the-angel-1938.jpg',
+          title: 'The Poet and the Angel',
+          artist: 'Mario Eloy',
+          year: '1938',
+          rule: {
+            "monday": [ 10, 13, 22, 7 ],
+            "tuesday": [ 9, 12, 21, 6 ],
+            "wednesday": [ 15, 19, 27, 12 ],
+            "thursday": [ 14, 17, 26, 11 ],
+            "friday": [ 13, 17, 25, 10 ],
+            "saturday": [ 12, 16, 24, 9 ],
+            "sunday": [ 11, 13, 23, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 299,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/kiss-1913.jpg',
+          title: 'Kiss',
+          artist: 'Vsevolod Maksymovych',
+          year: '1913',
+          rule: {
+            "monday": [ 11, 13, 23, 8 ],
+            "tuesday": [ 10, 13, 22, 7 ],
+            "wednesday": [ 9, 12, 21, 6 ],
+            "thursday": [ 15, 19, 27, 12 ],
+            "friday": [ 14, 17, 26, 11 ],
+            "saturday": [ 13, 17, 25, 10 ],
+            "sunday": [ 12, 16, 24, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 300,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/vasya-1922.jpg',
+          title: 'Vasya',
+          artist: 'Kuzma Petrov-Vodkin',
+          year: 'c.1922',
+          rule: {
+            "monday": [ 12, 16, 24, 9 ],
+            "tuesday": [ 11, 13, 23, 8 ],
+            "wednesday": [ 10, 13, 22, 7 ],
+            "thursday": [ 9, 12, 21, 6 ],
+            "friday": [ 15, 19, 27, 12 ],
+            "saturday": [ 14, 17, 26, 11 ],
+            "sunday": [ 13, 17, 25, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
