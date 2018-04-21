@@ -5704,6 +5704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 286,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/two-smiles-1947.jpg',
+          title: 'Two Smiles',
+          artist: 'Steve Wheeler',
+          year: '1947',
+          rule: {
+            "monday": [ 9, 15, 3, 11 ],
+            "tuesday": [ 8, 14, 2, 11 ],
+            "wednesday": [ 7, 13, 1, 9 ],
+            "thursday": [ 5, 12, 30, 7 ],
+            "friday": [ 12, 18, 6, 14 ],
+            "saturday": [ 11, 17, 5, 13 ],
+            "sunday": [ 10, 16, 4, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 287,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/evening-lights-1959.jpg',
+          title: 'Evening Lights',
+          artist: 'Piroska Szanto',
+          year: '1959',
+          rule: {
+            "monday": [ 11, 17, 5, 13 ],
+            "tuesday": [ 10, 16, 4, 12 ],
+            "wednesday": [ 9, 15, 3, 12 ],
+            "thursday": [ 8, 14, 2, 10 ],
+            "friday": [ 6, 13, 1, 8 ],
+            "saturday": [ 13, 19, 7, 15 ],
+            "sunday": [ 12, 18, 6, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 288,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/western-christian-civilization-1965.jpg',
+          title: 'Western Christian Civilization',
+          artist: 'Leon Ferrari',
+          year: '1965',
+          rule: {
+            "monday": [ 12, 18, 6, 14 ],
+            "tuesday": [ 11, 17, 5, 13 ],
+            "wednesday": [ 10, 16, 4, 12 ],
+            "thursday": [ 9, 15, 3, 12 ],
+            "friday": [ 8, 14, 2, 10 ],
+            "saturday": [ 6, 13, 1, 8 ],
+            "sunday": [ 13, 19, 7, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 289,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/homan-ji-iii-1995.jpg',
+          title: 'Homan-Ji III',
+          artist: 'Jennifer Bartlett',
+          year: '1995',
+          rule: {
+            "monday": [ 13, 19, 7, 15 ],
+            "tuesday": [ 12, 18, 6, 14 ],
+            "wednesday": [ 11, 17, 5, 13 ],
+            "thursday": [ 10, 16, 4, 12 ],
+            "friday": [ 9, 15, 3, 12 ],
+            "saturday": [ 8, 14, 2, 10 ],
+            "sunday": [ 6, 13, 1, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 290,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/one-thing-1965-viet-nam-1965.jpg',
+          title: 'One Thing, 1965, Viet-Nam',
+          artist: 'On Kawara',
+          year: '1965',
+          rule: {
+            "monday": [ 6, 13, 1, 8 ],
+            "tuesday": [ 13, 19, 7, 15 ],
+            "wednesday": [ 12, 18, 6, 14 ],
+            "thursday": [ 11, 17, 5, 13 ],
+            "friday": [ 10, 16, 4, 12 ],
+            "saturday": [ 9, 15, 3, 12 ],
+            "sunday": [ 8, 14, 2, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
