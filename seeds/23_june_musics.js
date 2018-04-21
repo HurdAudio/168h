@@ -3352,6 +3352,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 187,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2960999910/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://senufoeditions.bandcamp.com/album/geelriandre-arthesis',
+          a_string: 'Geelriandre / Arthesis by Eliane Radigue',
+          rule: {
+            "monday": [ 27, 1, 7, 18 ],
+            "tuesday": [ 26, 29, 4, 16 ],
+            "wednesday": [ 25, 29, 4, 16 ],
+            "thursday": [ 25, 28, 4, 15 ],
+            "saturday": [ 23, 1, 3, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 188,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1359358707/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://senufoeditions.bandcamp.com/album/luftl-cher',
+          a_string: 'Luftlöcher by Jennifer Veillerobe',
+          rule: {
+            "monday": [ 23, 1, 3, 14 ],
+            "tuesday": [ 27, 1, 7, 18 ],
+            "wednesday": [ 26, 29, 4, 16 ],
+            "thursday": [ 25, 29, 4, 16 ],
+            "saturday": [ 25, 28, 4, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 189,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1346276534/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://senufoeditions.bandcamp.com/album/rhetorical-islands',
+          a_string: 'Rhetorical Islands by Giuseppe Ielasi',
+          rule: {
+            "monday": [ 26, 29, 5, 16 ],
+            "tuesday": [ 24, 2, 4, 15 ],
+            "wednesday": [ 28, 2, 8, 19 ],
+            "thursday": [ 27, 30, 5, 17 ],
+            "saturday": [ 26, 30, 5, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
