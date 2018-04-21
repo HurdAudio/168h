@@ -6104,6 +6104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 306,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/opera-and-the-café-de-la-paix.jpg',
+          title: 'Opera and the Café de la Paix',
+          artist: 'Edouard Cortes',
+          year: '?',
+          rule: {
+            "monday": [ 11, 22, 1, 3 ],
+            "tuesday": [ 10, 21, 1, 2 ],
+            "wednesday": [ 9, 20, 31, 11 ],
+            "thursday": [ 15, 26, 6, 16 ],
+            "friday": [ 14, 25, 5, 16 ],
+            "saturday": [ 13, 24, 4, 15 ],
+            "sunday": [ 12, 23, 3, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 307,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/modele-a-la-guitare.jpg',
+          title: 'MODELE A LA GUITARE',
+          artist: 'Henri Le Fauconnier',
+          year: '?',
+          rule: {
+            "monday": [ 12, 23, 3, 4 ],
+            "tuesday": [ 11, 22, 1, 3 ],
+            "wednesday": [ 10, 21, 1, 2 ],
+            "thursday": [ 9, 20, 31, 11 ],
+            "friday": [ 15, 26, 6, 16 ],
+            "saturday": [ 14, 25, 5, 16 ],
+            "sunday": [ 13, 24, 4, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 308,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/music-1904.jpg',
+          title: 'Music',
+          artist: 'Andre Derain',
+          year: '1904',
+          rule: {
+            "monday": [ 14, 25, 5, 16 ],
+            "tuesday": [ 13, 24, 4, 5 ],
+            "wednesday": [ 12, 23, 2, 4 ],
+            "thursday": [ 11, 22, 2, 3 ],
+            "friday": [ 10, 21, 1, 12 ],
+            "saturday": [ 16, 27, 7, 17 ],
+            "sunday": [ 15, 26, 6, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 309,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/women-and-bulldog-1942.jpg',
+          title: 'Women and Bulldog',
+          artist: 'Francis Picabia',
+          year: '1941 - 1942',
+          rule: {
+            "monday": [ 15, 26, 6, 17 ],
+            "tuesday": [ 14, 25, 5, 16 ],
+            "wednesday": [ 13, 24, 4, 5 ],
+            "thursday": [ 12, 23, 2, 4 ],
+            "friday": [ 11, 22, 2, 3 ],
+            "saturday": [ 10, 21, 1, 12 ],
+            "sunday": [ 16, 27, 7, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 310,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/femme-avec-cigarette-1908.jpg',
+          title: 'Femme avec cigarette',
+          artist: 'Kees van Dongen',
+          year: '1908',
+          rule: {
+            "monday": [ 16, 27, 7, 17 ],
+            "tuesday": [ 15, 26, 6, 17 ],
+            "wednesday": [ 14, 25, 5, 16 ],
+            "thursday": [ 13, 24, 4, 5 ],
+            "friday": [ 12, 23, 2, 4 ],
+            "saturday": [ 11, 22, 2, 3 ],
+            "sunday": [ 10, 21, 1, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
