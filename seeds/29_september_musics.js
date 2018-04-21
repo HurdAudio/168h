@@ -3028,6 +3028,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 169,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2589032814/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cuneiformrecords.bandcamp.com/album/far-corner',
+          a_string: 'Far Corner by Far Corner',
+          rule: {
+            "monday": [ 25, 15, 23, 17 ],
+            "tuesday": [ 24, 14, 22, 16 ],
+            "wednesday": [ 28, 18, 26, 20 ],
+            "thursday": [ 27, 17, 25, 19 ],
+            "saturday": [ 26, 16, 24, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 170,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3344594909/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cuneiformrecords.bandcamp.com/album/exterminating-angel',
+          a_string: 'Exterminating Angel by Alec K. Redfearn and The Seizures',
+          rule: {
+            "monday": [ 26, 16, 24, 19 ],
+            "tuesday": [ 25, 15, 23, 17 ],
+            "wednesday": [ 24, 14, 22, 16 ],
+            "thursday": [ 28, 18, 26, 20 ],
+            "saturday": [ 27, 17, 25, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 171,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=586174394/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cuneiformrecords.bandcamp.com/album/the-smother-party',
+          a_string: 'The Smother Party by Alec K. Redfearn and The Eyesores',
+          rule: {
+            "monday": [ 27, 17, 25, 19 ],
+            "tuesday": [ 26, 16, 24, 19 ],
+            "wednesday": [ 25, 15, 23, 17 ],
+            "thursday": [ 24, 14, 22, 16 ],
+            "saturday": [ 28, 18, 26, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
