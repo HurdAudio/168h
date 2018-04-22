@@ -6904,6 +6904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 346,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/display-image-1-1.jpg',
+          title: 'Princess with a spindle',
+          artist: 'Hanna Hirsch-Pauli',
+          year: '?',
+          rule: {
+            "monday": [ 19, 28, 7, 15 ],
+            "tuesday": [ 18, 28, 7, 15 ],
+            "wednesday": [ 18, 27, 4, 14 ],
+            "thursday": [ 16, 26, 3, 13 ],
+            "friday": [ 15, 25, 2, 12 ],
+            "saturday": [ 14, 24, 1, 11 ],
+            "sunday": [ 13, 23, 1, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 347,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/after-the-bath-1908.jpg',
+          title: 'After the bath',
+          artist: 'Suzanne Valadon',
+          year: '1908',
+          rule: {
+            "monday": [ 13, 23, 1, 10 ],
+            "tuesday": [ 19, 28, 7, 15 ],
+            "wednesday": [ 18, 28, 7, 15 ],
+            "thursday": [ 18, 27, 4, 14 ],
+            "friday": [ 16, 26, 3, 13 ],
+            "saturday": [ 15, 25, 2, 12 ],
+            "sunday": [ 14, 24, 1, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 348,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/not_detected_235985.jpg',
+          title: 'The Mothers',
+          artist: 'Kathe Kollwitz',
+          year: '1922',
+          rule: {
+            "monday": [ 14, 24, 1, 11 ],
+            "tuesday": [ 13, 23, 1, 10 ],
+            "wednesday": [ 19, 28, 7, 15 ],
+            "thursday": [ 18, 28, 7, 15 ],
+            "friday": [ 18, 27, 4, 14 ],
+            "saturday": [ 16, 26, 3, 13 ],
+            "sunday": [ 15, 25, 2, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 349,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/portrait-of-myself-1923.jpg',
+          title: 'Portrait of Myself',
+          artist: 'Florine Stettheimer',
+          year: '1923',
+          rule: {
+            "monday": [ 15, 25, 2, 12 ],
+            "tuesday": [ 14, 24, 1, 11 ],
+            "wednesday": [ 13, 23, 1, 10 ],
+            "thursday": [ 19, 28, 7, 15 ],
+            "friday": [ 18, 28, 7, 15 ],
+            "saturday": [ 18, 27, 4, 14 ],
+            "sunday": [ 16, 26, 3, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 350,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/la-mar-e-haute-a-saint-mal-high-tide-at-st-mal-1912.jpg',
+          title: 'La marée haute a Saint-Malô (High tide at St Malô)',
+          artist: 'Ethel Carrick',
+          year: '1912',
+          rule: {
+            "monday": [ 17, 27, 4, 14 ],
+            "tuesday": [ 16, 26, 3, 13 ],
+            "wednesday": [ 15, 25, 2, 12 ],
+            "thursday": [ 14, 24, 2, 11 ],
+            "friday": [ 20, 29, 8, 16 ],
+            "saturday": [ 19, 29, 8, 16 ],
+            "sunday": [ 19, 28, 5, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
