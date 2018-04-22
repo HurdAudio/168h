@@ -7304,6 +7304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 366,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/chord-1990.jpg',
+          title: 'Chord',
+          artist: 'Ward Jackson',
+          year: '1990',
+          rule: {
+            "monday": [ 24, 26, 18, 7 ],
+            "tuesday": [ 26, 27, 19, 22 ],
+            "wednesday": [ 29, 30, 21, 25 ],
+            "thursday": [ 1, 3, 4, 6 ],
+            "friday": [ 3, 5, 9, 12 ],
+            "saturday": [ 5, 7, 8, 11 ],
+            "sunday": [ 21, 22, 2, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 367,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/eroticon-1990.jpg',
+          title: 'Eroticon',
+          artist: 'Yiannis Moralis',
+          year: '1990',
+          rule: {
+            "monday": [ 21, 22, 2, 25 ],
+            "tuesday": [ 24, 26, 18, 7 ],
+            "wednesday": [ 26, 27, 19, 22 ],
+            "thursday": [ 29, 30, 21, 25 ],
+            "friday": [ 1, 3, 4, 6 ],
+            "saturday": [ 3, 5, 9, 12 ],
+            "sunday": [ 5, 7, 8, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 368,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/tensioni-formali-da-instabilit-luminosa-1967.jpg',
+          title: 'Tensioni formali da instabilità luminosa',
+          artist: 'Mario Ballocco',
+          year: '1967',
+          rule: {
+            "monday": [ 5, 7, 8, 11 ],
+            "tuesday": [ 21, 22, 2, 25 ],
+            "wednesday": [ 24, 26, 18, 7 ],
+            "thursday": [ 26, 27, 19, 22 ],
+            "friday": [ 29, 30, 21, 25 ],
+            "saturday": [ 1, 3, 4, 6 ],
+            "sunday": [ 3, 5, 9, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 369,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/happy-day-1947.jpg',
+          title: 'Happy Day',
+          artist: 'Willi Baumeister',
+          year: '1947',
+          rule: {
+            "monday": [ 3, 5, 9, 12 ],
+            "tuesday": [ 5, 7, 8, 11 ],
+            "wednesday": [ 21, 22, 2, 25 ],
+            "thursday": [ 24, 26, 18, 7 ],
+            "friday": [ 26, 27, 19, 22 ],
+            "saturday": [ 29, 30, 21, 25 ],
+            "sunday": [ 1, 3, 4, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 370,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/the-salamander-1984.jpg',
+          title: 'The Salamander',
+          artist: 'Vasile Dobrian',
+          year: '1984',
+          rule: {
+            "monday": [ 1, 3, 4, 6 ],
+            "tuesday": [ 3, 5, 9, 12 ],
+            "wednesday": [ 5, 7, 8, 11 ],
+            "thursday": [ 21, 22, 2, 25 ],
+            "friday": [ 24, 26, 18, 7 ],
+            "saturday": [ 26, 27, 19, 22 ],
+            "sunday": [ 29, 30, 21, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
