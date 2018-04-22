@@ -5125,6 +5125,10 @@
 
           <div class="whoScheduledMe">
             <main ng-repeat="holiday in $ctrl.activeHolidayShares | orderBy : $ctrl.sortBy">
+              <div id="thisIsHolidayShareDeleteDiv{{holiday.id}}" class="profileDeleteOption">
+
+                <a class="btn" href="#" ng-click="$ctrl.deleteHolidayShare(holiday.id)">delete</a><br><br>
+              </div>
 
 
               <img src="{{holiday.inviterImg}}"><br>

@@ -245,6 +245,23 @@
       vm.artModuleViewDone = artModuleViewDone;
       vm.userEditHolidayShareComment = userEditHolidayShareComment;
       vm.userEditHolidayShareCommentCompleted = userEditHolidayShareCommentCompleted;
+      vm.deleteHolidayShare = deleteHolidayShare;
+
+      function deleteHolidayShare(holidayShareId) {
+        // alert(holidayShareId);
+        $http.delete(`/holiday_shares/${holidayShareId}`)
+        .then(deletedHolidayShareData=>{
+          let deletedHolidayShare = deletedHolidayShareData.data;
+
+          for (let i = 0; i < vm.activeHolidayShares.length; i++) {
+            if (vm.activeHolidayShares[i].id === deletedHolidayShare.id) {
+              vm.activeHolidayShares.splice(i, 1);
+              i--;
+            }
+          }
+
+        });
+      }
 
       function userEditHolidayShareCommentCompleted(commentId) {
         // alert(commentId);
@@ -14049,6 +14066,9 @@
             setTimeout(()=>{
               if (holidayShares.length > 0) {
                 for (let shared = 0; shared < holidayShares.length; shared++) {
+                  if (parseInt(holidayShares[shared].user_id) !== parseInt(currentUserId)) {
+                    document.getElementById('thisIsHolidayShareDeleteDiv' + holidayShares[share].id).setAttribute("style", "display: none;");
+                  }
                   if (parseInt(holidayShares[shared].share_associate_id) === parseInt(currentUserId)) {
                     document.getElementById('holidayblockInvitee' + holidayShares[shared].id).setAttribute("style", "display: none;");
                     if (holidayShares[shared].responded) {
