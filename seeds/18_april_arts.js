@@ -6704,6 +6704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 336,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/usp_mlb__miami_marlins_at_milwaukee_brewers_92068013.jpg',
+          title: 'Corey Knebel',
+          artist: 'Ted Berg',
+          year: '2017',
+          rule: {
+            "monday": [ 16, 21, 27, 3 ],
+            "tuesday": [ 15, 19, 4, 2 ],
+            "wednesday": [ 14, 19, 24, 30 ],
+            "thursday": [ 13, 18, 24, 30 ],
+            "friday": [ 12, 17, 23, 29 ],
+            "saturday": [ 17, 23, 28, 5 ],
+            "sunday": [ 1, 21, 27, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 337,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/Brewers_Ryan-Braun13590_0.jpg',
+          title: 'Ryan Braun',
+          artist: 'Athlon Sports',
+          year: '2017',
+          rule: {
+            "monday": [ 1, 21, 27, 3 ],
+            "tuesday": [ 16, 21, 27, 3 ],
+            "wednesday": [ 15, 19, 4, 2 ],
+            "thursday": [ 14, 19, 24, 30 ],
+            "friday": [ 13, 18, 24, 30 ],
+            "saturday": [ 12, 17, 23, 29 ],
+            "sunday": [ 17, 23, 28, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 338,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/Milwaukee-Brewers-Primary-1978-1993-Logo-MLB-Neon-Sign-Neon-Sign.jpg',
+          title: 'Milwaukee Brewers Primary 1978 1993 Logo MLB Neon Sign Neon Sign',
+          artist: '?',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 17, 23, 28, 5 ],
+            "tuesday": [ 1, 21, 27, 3 ],
+            "wednesday": [ 16, 21, 27, 3 ],
+            "thursday": [ 15, 19, 4, 2 ],
+            "friday": [ 14, 19, 24, 30 ],
+            "saturday": [ 13, 18, 24, 30 ],
+            "sunday": [ 12, 17, 23, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 339,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/Milwaukee-Brewers-Jesus-Aguilars-blast-dooms-St-Louis-Cardinals.jpg',
+          title: 'Jesus Aguilar and the Milwaukee Brewers topped the St. Louis Cardinals on Thursday',
+          artist: 'Kevin Dietsch',
+          year: '2017',
+          rule: {
+            "monday": [ 13, 18, 24, 30 ],
+            "tuesday": [ 18, 24, 29, 6 ],
+            "wednesday": [ 2, 22, 28, 4 ],
+            "thursday": [ 17, 22, 28, 4 ],
+            "friday": [ 16, 20, 5, 3 ],
+            "saturday": [ 15, 20, 25, 1 ],
+            "sunday": [ 14, 19, 25, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 340,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/Aaron Henry MB75-B_HS_NBLMcWilliams_0.jpg',
+          title: 'The Braves Trade Henry Aaron to the Brewers',
+          artist: '?',
+          year: 'xx cent.',
+          rule: {
+            "monday": [ 14, 19, 25, 1 ],
+            "tuesday": [ 13, 18, 24, 30 ],
+            "wednesday":[ 18, 24, 29, 6 ],
+            "thursday":  [ 2, 22, 28, 4 ],
+            "friday": [ 17, 22, 28, 4 ],
+            "saturday": [ 16, 20, 5, 3 ],
+            "sunday": [ 15, 20, 25, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
