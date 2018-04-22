@@ -3892,6 +3892,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 217,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2191616582/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ghostensemble.bandcamp.com/album/we-who-walk-again',
+          a_string: 'We Who Walk Again by Ghost Ensemble',
+          rule: {
+            "monday": [ 8, 15, 16, 17 ],
+            "tuesday": [ 7, 13, 14, 15 ],
+            "wednesday": [ 6, 13, 14, 15 ],
+            "thursday": [ 10, 17, 18, 19 ],
+            "saturday": [ 9, 15, 17, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 218,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=275974018/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jamesonnathanjones.bandcamp.com/album/what-dreams-may-come',
+          a_string: 'What Dreams May Come by Jameson Nathan Jones',
+          rule: {
+            "monday": [ 9, 15, 17, 18 ],
+            "tuesday": [ 8, 15, 16, 17 ],
+            "wednesday": [ 7, 13, 14, 15 ],
+            "thursday": [ 6, 13, 14, 15 ],
+            "saturday": [ 10, 17, 18, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 219,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'http://bandcamp.com/EmbeddedPlayer/album=2446487798/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://listen.takenobumusic.com/album/reversal',
+          a_string: 'Reversal by Takenobu',
+          rule: {
+            "monday": [ 10, 17, 18, 19 ],
+            "tuesday": [ 9, 15, 17, 18 ],
+            "wednesday": [ 8, 15, 16, 17 ],
+            "thursday": [ 7, 13, 14, 15 ],
+            "saturday": [ 6, 13, 14, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
