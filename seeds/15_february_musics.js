@@ -3784,6 +3784,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 211,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=520703507/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://dywanethomasjr.bandcamp.com/album/i-dont-care-today-angels-demons-in-lo-fi',
+          a_string: 'I Don&#39;t Care Today (Angels &amp; Demons in Lo-Fi) by MonoNeon',
+          rule: {
+            "monday": [ 3, 7, 9, 13 ],
+            "tuesday": [ 6, 9, 11, 15 ],
+            "wednesday": [ 7, 11, 13, 15 ],
+            "thursday": [ 19, 13, 15, 21 ],
+            "saturday": [ 2, 7, 8, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 212,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1140779251/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://dywanethomasjr.bandcamp.com/album/a-place-called-fantasy',
+          a_string: 'A Place Called Fantasy by MonoNeon',
+          rule: {
+            "monday": [ 2, 7, 8, 21 ],
+            "tuesday": [ 3, 7, 9, 13 ],
+            "wednesday": [ 6, 9, 11, 15 ],
+            "thursday": [ 7, 11, 13, 15 ],
+            "saturday": [ 19, 13, 15, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 213,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1042936006/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://dywanethomasjr.bandcamp.com/album/welcome-2-whateva-the-fyuck',
+          a_string: 'Welcome 2 Whateva The Fyuck by MonoNeon',
+          rule: {
+            "monday": [ 19, 13, 15, 21 ],
+            "tuesday": [ 2, 7, 8, 21 ],
+            "wednesday": [ 3, 7, 9, 13 ],
+            "thursday": [ 6, 9, 11, 15 ],
+            "saturday": [ 7, 11, 13, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
