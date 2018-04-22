@@ -8915,7 +8915,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 569,
           user_id: 1,
-          name: 'The world ended on this day in 1989 exactly as fortold by Edgar C. Whisenant\'s second apocalyptic prediction.',
+          name: 'The world ended on this day in 1989 exactly as foretold by Edgar C. Whisenant\'s second apocalyptic prediction.',
           color: '#CB695D',
           picture: './img/doomsday/edgarcwhisenant.jpg',
           day_of: new Date ('1989-09-30T13:44:00.000Z'),
@@ -9093,7 +9093,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 581,
           user_id: 1,
-          name: 'The world ended on this day in 1959 as fortold by Florence Houteff - second prophet of the Branch Davidians.',
+          name: 'The world ended on this day in 1959 as foretold by Florence Houteff - second prophet of the Branch Davidians.',
           color: '#363535',
           picture: './img/doomsday/Florence_Houteff.png',
           day_of: new Date ('1959-04-22T13:44:00.000Z'),

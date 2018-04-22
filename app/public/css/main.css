@@ -3035,6 +3035,11 @@ footer img {
   width: 89%;
 }
 
+#holidayShareComments textarea {
+  margin-left: 3vmin;
+  width: 89%;
+}
+
 
 
 #timeblockSharesNotifier h3 {
