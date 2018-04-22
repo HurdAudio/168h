@@ -7104,6 +7104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 356,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/2791792-YVVYTANR-7.jpg',
+          title: 'Golden Gate',
+          artist: 'Jamour Chames',
+          year: '2017',
+          rule: {
+            "monday": [ 27, 6, 14, 22 ],
+            "tuesday": [ 29, 10, 16, 22 ],
+            "wednesday": [ 2, 10, 18, 28 ],
+            "thursday": [ 2, 12, 8, 27 ],
+            "friday": [ 21, 29, 8, 16 ],
+            "saturday": [ 22, 2, 10, 18 ],
+            "sunday": [ 28, 4, 10, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 357,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/20160211-lens-don-slide-II94-superJumbo.jpg',
+          title: 'Harlem',
+          artist: 'Don Hogan Charles',
+          year: '1966',
+          rule: {
+            "monday": [ 29, 5, 11, 21 ],
+            "tuesday": [ 28, 7, 15, 23 ],
+            "wednesday": [ 1, 11, 17, 23 ],
+            "thursday": [ 3, 11, 19, 29 ],
+            "friday": [ 3, 13, 9, 28 ],
+            "saturday": [ 22, 1, 9, 17 ],
+            "sunday": [ 23, 3, 11, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 358,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/clar_c_01.jpg',
+          title: 'Slave Lynching',
+          artist: 'Claude Clark',
+          year: '1946',
+          rule: {
+            "monday": [ 23, 3, 11, 19 ],
+            "tuesday": [ 29, 5, 11, 21 ],
+            "wednesday": [ 28, 7, 15, 23 ],
+            "thursday": [ 1, 11, 17, 23 ],
+            "friday": [ 3, 11, 19, 29 ],
+            "saturday": [ 3, 13, 9, 28 ],
+            "sunday": [ 22, 1, 9, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 359,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/silver-screen-c1957-70-x-90-this-painting-was-painted-on-an-old-movie-screen-found-on-the-streets-in-paris-work.jpg',
+          title: 'Silver Screen',
+          artist: 'Edward Clark',
+          year: '1959',
+          rule: {
+            "monday": [ 22, 1, 9, 17 ],
+            "tuesday": [ 23, 3, 11, 19 ],
+            "wednesday": [ 29, 5, 11, 21 ],
+            "thursday": [ 28, 7, 15, 23 ],
+            "friday": [ 1, 11, 17, 23 ],
+            "saturday": [ 3, 11, 19, 29 ],
+            "sunday": [ 3, 13, 9, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 360,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/timthumb.jpg',
+          title: 'Hair Craft Project',
+          artist: 'Sonya Clark',
+          year: '2015',
+          rule: {
+            "monday": [ 3, 13, 9, 28 ],
+            "tuesday": [ 22, 1, 9, 17 ],
+            "wednesday": [ 23, 3, 11, 19 ],
+            "thursday": [ 29, 5, 11, 21 ],
+            "friday": [ 28, 7, 15, 23 ],
+            "saturday": [ 1, 11, 17, 23 ],
+            "sunday": [ 3, 11, 19, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
