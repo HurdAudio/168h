@@ -9784,6 +9784,34 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 626,
+          user_id: 1,
+          name: 'June Tyson (vocalist/dancer) born 1936',
+          color: '#CDCFCA',
+          picture: './img/musicians/A-252035-1342324645-8192.jpg',
+          day_of: new Date ('1936-02-05T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 627,
+          user_id: 1,
+          name: 'The world ended on this day in 2017 with the appearance of the planet Niburu when David Meade\'s fourth predicted end date finally came to fruition.',
+          color: '#C73918',
+          picture: './img/doomsday/nibiru-871048.jpg',
+          day_of: new Date ('2017-11-19T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
