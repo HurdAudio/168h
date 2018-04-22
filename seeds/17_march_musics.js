@@ -3669,10 +3669,64 @@ exports.seed = function(knex, Promise) {
           a_string: 'ECHO PAINTING by Peggy Lee',
           rule: {
             "monday": [ 30, 6, 12, 20 ],
-            "tuesday":[ 30, 5, 11, 19 ],
-            "wednesday":  [ 3, 9, 15, 23 ],
+            "tuesday": [ 30, 5, 11, 19 ],
+            "wednesday": [ 3, 9, 15, 23 ],
             "thursday": [ 2, 8, 14, 22 ],
             "saturday": [ 1, 7, 13, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 205,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2108731929/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://southtexassuite.bandcamp.com/album/south-texas-suite',
+          a_string: 'South Texas Suite by Whitney Rose',
+          rule: {
+            "monday": [ 1, 7, 13, 22 ],
+            "tuesday": [ 30, 6, 12, 20 ],
+            "wednesday": [ 30, 5, 11, 19 ],
+            "thursday": [ 3, 9, 15, 23 ],
+            "saturday": [ 2, 8, 14, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 206,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2327477408/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ifellasleeplikethis.bandcamp.com/album/martyr-complex',
+          a_string: 'Martyr Complex by Oblivia',
+          rule: {
+            "monday": [ 2, 8, 14, 22 ],
+            "tuesday": [ 1, 7, 13, 22 ],
+            "wednesday": [ 30, 6, 12, 20 ],
+            "thursday": [ 30, 5, 11, 19 ],
+            "saturday": [ 3, 9, 15, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 207,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1390807095/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ifellasleeplikethis.bandcamp.com/album/i-fell-asleep-like-this',
+          a_string: 'I Fell Asleep Like This by Oblivia',
+          rule: {
+            "monday": [ 3, 9, 15, 23 ],
+            "tuesday": [ 2, 8, 14, 22 ],
+            "wednesday": [ 1, 7, 13, 22 ],
+            "thursday": [ 30, 6, 12, 20 ],
+            "saturday": [ 30, 5, 11, 19 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
