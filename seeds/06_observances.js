@@ -6554,7 +6554,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 415,
           user_id: 1,
-          name: 'Warran Spahn (pitcher), born 1921',
+          name: 'Warren Spahn (pitcher), born 1921',
           color: '#F2F0F0',
           picture: './img/baseball/warranspahn.jpg',
           day_of: new Date ('1921-04-23T13:44:00.000Z'),
