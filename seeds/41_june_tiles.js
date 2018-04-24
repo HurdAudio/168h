@@ -634,6 +634,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FDFEFE',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 46,
+          user_id: 1,
+          theme: 'Light',
+          type: 'sunday',
+          src_string: '../img/june_tiles/candle-1921517_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '135%',
+          color_dark: '#000000',
+          color_medium: '#2FC3EF',
+          color_light: '#FFFFFE',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
