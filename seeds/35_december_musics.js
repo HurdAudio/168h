@@ -2758,6 +2758,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 154,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1353651176/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://kafundrecords.bandcamp.com/album/kafund-vol-4-carimb-bai-o-and-beyond',
+          a_string: 'Kafundó Vol. 4;  Carimbó, Baião and Beyond by Kafundó Records',
+          rule: {
+            "monday": [ 24, 1, 7, 13 ],
+            "tuesday": [ 25, 31, 6, 12 ],
+            "wednesday": [ 29, 4, 10, 16 ],
+            "thursday": [ 28, 3, 9, 14 ],
+            "saturday": [ 27, 2, 8, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 155,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3645994535/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://kafundrecords.bandcamp.com/album/kafund-vol-3-electronic-roots-from-n-e-brazil',
+          a_string: 'Kafundó Vol. 3;  Electronic Roots from N/E Brazil by Various Artists',
+          rule: {
+            "monday":  [ 27, 2, 8, 14 ],
+            "tuesday": [ 24, 1, 7, 13 ],
+            "wednesday": [ 25, 31, 6, 12 ],
+            "thursday": [ 29, 4, 10, 16 ],
+            "saturday": [ 28, 3, 9, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 156,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1868713184/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://kafundrecords.bandcamp.com/album/kafund-vol-2-roots-and-bass-music-from-brazil',
+          a_string: 'Kafundó Vol. 2;  Roots and Bass Music from Brazil by Various Artists',
+          rule: {
+            "monday": [ 28, 3, 9, 14 ],
+            "tuesday":  [ 27, 2, 8, 14 ],
+            "wednesday": [ 24, 1, 7, 13 ],
+            "thursday": [ 25, 31, 6, 12 ],
+            "saturday": [ 29, 4, 10, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
