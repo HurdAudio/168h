@@ -578,6 +578,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FDFFFC',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 42,
+          user_id: 1,
+          theme: 'Autumnal',
+          type: 'holiday',
+          src_string: '../img/october_tiles/halloween-34781_1280.png',
+          repeat_value: 'no-repeat',
+          size_value: '120%',
+          color_dark: '#000000',
+          color_medium: '#745817',
+          color_light: '#CE9A1C',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
