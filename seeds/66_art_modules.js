@@ -1204,6 +1204,66 @@ exports.seed = function(knex, Promise) {
           public: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 101,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/pantlegcat.jpg',
+          title: 'unknown title',
+          artist: 'Brian Crain',
+          year: '2013',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 102,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/cute-picture-of-cat-with-her-kitten.jpg',
+          title: 'Cute Picture of Cat with Her Kitten',
+          artist: '?',
+          year: '2018',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 103,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/99c7eb8606fe9cda12a6b03c1fa2c3f4.jpg',
+          title: 'unknown title',
+          artist: '?',
+          year: '2018',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 104,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/catexposure.jpg',
+          title: 'unknown title',
+          artist: '?',
+          year: '2018',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 105,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/cute-kitten-wallpaper-background.jpg',
+          title: 'Cute Kitten Wallpaper Background',
+          artist: '?',
+          year: '2018',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
