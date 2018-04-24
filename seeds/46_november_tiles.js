@@ -564,6 +564,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#ECECEC',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 41,
+          user_id: 1,
+          theme: 'Monochromatic',
+          type: 'sunday',
+          src_string: '../img/november_tiles/Monochromatic-art-3.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '100%',
+          color_dark: '#333921',
+          color_medium: '#BBDD6B',
+          color_light: '#E6EDBE',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
