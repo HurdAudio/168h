@@ -690,6 +690,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#C3C6B0',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 50,
+          user_id: 1,
+          theme: 'Silk/Velvet',
+          type: 'saturday',
+          src_string: '../img/february_tiles/Antique-Swiss-White-Floral-Embroidery-On-Cotton-Batiste-_1.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '153%',
+          color_dark: '#3F4140',
+          color_medium: '#7B7C81',
+          color_light: '#B8B6B7',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
