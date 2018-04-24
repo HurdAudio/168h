@@ -704,6 +704,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FFFEFC',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 51,
+          user_id: 1,
+          theme: 'Ice',
+          type: 'sunday',
+          src_string: '../img/january_tiles/_47066186_iceyground_nyssa_brown_cornwall.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '150%',
+          color_dark: '#0A0B16',
+          color_medium: '#89939C',
+          color_light: '#F0F7FA',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
