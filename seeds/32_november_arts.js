@@ -5404,6 +5404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 271,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/peinture-relief-1955.jpg',
+          title: 'Peinture-Relief',
+          artist: 'Herbert Zangs',
+          year: '1955',
+          rule: {
+            "monday": [ 12, 16, 23, 28 ],
+            "tuesday": [ 11, 16, 22, 27 ],
+            "wednesday": [ 10, 15, 21, 28 ],
+            "thursday": [ 16, 21, 27, 2 ],
+            "friday": [ 15, 20, 25, 1 ],
+            "saturday": [ 14, 19, 25, 29 ],
+            "sunday": [ 13, 16, 24, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 272,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/untitled-white-monochrome-1957-1.jpg',
+          title: 'Untitled White Monochrome',
+          artist: 'Yves Klein',
+          year: 'c.1957',
+          rule: {
+            "monday": [ 13, 16, 24, 29 ],
+            "tuesday": [ 12, 16, 23, 28 ],
+            "wednesday": [ 11, 16, 22, 27 ],
+            "thursday": [ 10, 15, 21, 28 ],
+            "friday": [ 16, 21, 27, 2 ],
+            "saturday": [ 15, 20, 25, 1 ],
+            "sunday": [ 14, 19, 25, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 273,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/achrome-1958.jpg',
+          title: 'Achrome',
+          artist: 'Piero Manzoni',
+          year: '1958',
+          rule: {
+            "monday": [ 15, 20, 26, 30 ],
+            "tuesday": [ 14, 17, 25, 30 ],
+            "wednesday": [ 13, 17, 24, 29 ],
+            "thursday": [ 12, 17, 23, 28 ],
+            "friday": [ 11, 16, 22, 29 ],
+            "saturday": [ 17, 22, 28, 3 ],
+            "sunday": [ 16, 21, 26, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 274,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/hopewell-valley-sun-1959.jpg',
+          title: 'Hopewell Valley Sun',
+          artist: 'Walter Darby Bannard',
+          year: '1959',
+          rule: {
+            "monday": [ 16, 21, 26, 2 ],
+            "tuesday": [ 15, 20, 26, 30 ],
+            "wednesday": [ 14, 17, 25, 30 ],
+            "thursday": [ 13, 17, 24, 29 ],
+            "friday": [ 12, 17, 23, 28 ],
+            "saturday": [ 11, 16, 22, 29 ],
+            "sunday": [ 17, 22, 28, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 275,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/the-marriage-of-reason-and-squalor-1959.jpg',
+          title: 'The Marriage of Reason and Squalor',
+          artist: 'Frank Stella',
+          year: '1959',
+          rule: {
+            "monday": [ 17, 22, 28, 3 ],
+            "tuesday": [ 16, 21, 26, 2 ],
+            "wednesday": [ 15, 20, 26, 30 ],
+            "thursday": [ 14, 17, 25, 30 ],
+            "friday": [ 13, 17, 24, 29 ],
+            "saturday": [ 12, 17, 23, 28 ],
+            "sunday": [ 11, 16, 22, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
