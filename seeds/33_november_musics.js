@@ -2768,7 +2768,7 @@ exports.seed = function(knex, Promise) {
           href_string: 'http://africali.bandcamp.com/album/taught-of-a-culture',
           a_string: 'Taught Of A Culture by AfriCali',
           rule: {
-            "monday": [ 20, 31, 12, 14 ],
+            "monday": [ 20, 1, 12, 14 ],
             "tuesday": [ 24, 5, 16, 20 ],
             "wednesday": [ 23, 4, 15, 19 ],
             "thursday": [ 22, 3, 14, 18 ],
@@ -2787,7 +2787,7 @@ exports.seed = function(knex, Promise) {
           a_string: 'Life &amp; Livin&#39; It by SINKANE',
           rule: {
             "monday": [ 21, 2, 13, 15 ],
-            "tuesday": [ 20, 31, 12, 14 ],
+            "tuesday": [ 20, 1, 12, 14 ],
             "wednesday": [ 24, 5, 16, 20 ],
             "thursday": [ 23, 4, 15, 19 ],
             "saturday": [ 22, 3, 14, 18 ]
@@ -2806,7 +2806,7 @@ exports.seed = function(knex, Promise) {
           rule: {
             "monday": [ 22, 3, 14, 18 ],
             "tuesday": [ 21, 2, 13, 15 ],
-            "wednesday": [ 20, 31, 12, 14 ],
+            "wednesday": [ 20, 1, 12, 14 ],
             "thursday": [ 24, 5, 16, 20 ],
             "saturday": [ 23, 4, 15, 19 ]
           },
@@ -2825,7 +2825,7 @@ exports.seed = function(knex, Promise) {
             "monday": [ 23, 4, 15, 19 ],
             "tuesday": [ 22, 3, 14, 18 ],
             "wednesday": [ 21, 2, 13, 15 ],
-            "thursday": [ 20, 31, 12, 14 ],
+            "thursday": [ 20, 1, 12, 14 ],
             "saturday": [ 24, 5, 16, 20 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
@@ -2844,7 +2844,7 @@ exports.seed = function(knex, Promise) {
             "tuesday": [ 23, 4, 15, 19 ],
             "wednesday": [ 22, 3, 14, 18 ],
             "thursday": [ 21, 2, 13, 15 ],
-            "saturday": [ 20, 31, 12, 14 ]
+            "saturday": [ 20, 1, 12, 14 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
@@ -2858,11 +2858,65 @@ exports.seed = function(knex, Promise) {
           href_string: 'http://ayuunesule.bandcamp.com/album/we-have-one-destiny',
           a_string: 'We Have One Destiny by Ayuune Sule',
           rule: {
-            "monday": [ 20, 31, 12, 14 ],
+            "monday": [ 20, 1, 12, 14 ],
             "tuesday": [ 24, 5, 16, 20 ],
             "wednesday": [ 23, 4, 15, 19 ],
             "thursday": [ 22, 3, 14, 18 ],
             "saturday": [ 21, 2, 13, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 160,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=292577576/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ethiopiquesseries.bandcamp.com/album/ethiopiques-box7-2',
+          a_string: 'ETHIOPIQUES BOX7&quot; by ETHIOPIQUES SERIES',
+          rule: {
+            "monday": [ 21, 2, 13, 15 ],
+            "tuesday": [ 20, 1, 12, 14 ],
+            "wednesday": [ 24, 5, 16, 20 ],
+            "thursday": [ 23, 4, 15, 19 ],
+            "saturday": [ 22, 3, 14, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 161,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1486479560/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://anbessaorchestra.bandcamp.com/album/negestat',
+          a_string: 'Negestat by Anbessa Orchestra',
+          rule: {
+            "monday": [ 23, 4, 15, 19 ],
+            "tuesday": [ 22, 3, 14, 16 ],
+            "wednesday": [ 21, 2, 13, 25 ],
+            "thursday": [ 25, 6, 17, 21 ],
+            "saturday": [ 24, 5, 16, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 162,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1160806144/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://safarrepublique.bandcamp.com/album/safar-republique',
+          a_string: 'Safar Republique by Safar Republique',
+          rule: {
+            "monday": [ 24, 5, 16, 20 ],
+            "tuesday": [ 23, 4, 15, 19 ],
+            "wednesday": [ 22, 3, 14, 16 ],
+            "thursday": [ 21, 2, 13, 25 ],
+            "saturday": [ 25, 6, 17, 21 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
