@@ -3190,6 +3190,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 178,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=728683031/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://turgidanimalrecordsitaliandivision.bandcamp.com/album/split',
+          a_string: 'Split by Fecalove, Sexterminator 69',
+          rule: {
+            "monday": [ 3, 11, 24, 23 ],
+            "tuesday": [ 7, 15, 28, 27 ],
+            "wednesday": [ 6, 14, 27, 26 ],
+            "thursday": [ 5, 13, 26, 25 ],
+            "saturday": [ 4, 12, 25, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 179,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=515204596/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://turgidanimalrecordsitaliandivision.bandcamp.com/album/dyonisus-dyonisos',
+          a_string: 'Dyonisus/Dyonisos by Hoor Paar Kraat + Fecalove',
+          rule: {
+            "monday": [ 4, 12, 25, 24 ],
+            "tuesday": [ 3, 11, 24, 23 ],
+            "wednesday": [ 7, 15, 28, 27 ],
+            "thursday": [ 6, 14, 27, 26 ],
+            "saturday": [ 5, 13, 26, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 180,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3476128123/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://muteantsoundsnetlabel.bandcamp.com/album/rupert-holmes',
+          a_string: '&#39; Rupert Holmes &#39; by GRUDAKRIS',
+          rule: {
+            "monday": [ 5, 13, 26, 25 ],
+            "tuesday": [ 4, 12, 25, 24 ],
+            "wednesday": [ 3, 11, 24, 23 ],
+            "thursday": [ 7, 15, 28, 27 ],
+            "saturday": [ 6, 14, 27, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
