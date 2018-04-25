@@ -5804,6 +5804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 291,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/death-2005.jpg',
+          title: 'Death',
+          artist: 'Banksy',
+          year: '2005',
+          rule: {
+            "monday": [ 8, 14, 2, 10 ],
+            "tuesday": [ 6, 13, 1, 8 ],
+            "wednesday": [ 13, 19, 7, 15 ],
+            "thursday": [ 12, 18, 6, 14 ],
+            "friday": [ 11, 17, 5, 13 ],
+            "saturday": [ 10, 16, 4, 12 ],
+            "sunday": [ 9, 15, 3, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 292,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/boats-1979.jpg',
+          title: 'Boats',
+          artist: 'Lin Fengmian',
+          year: '1979',
+          rule: {
+            "monday": [ 9, 15, 3, 12 ],
+            "tuesday": [ 8, 14, 2, 10 ],
+            "wednesday": [ 6, 13, 1, 8 ],
+            "thursday": [ 13, 19, 7, 15 ],
+            "friday": [ 12, 18, 6, 14 ],
+            "saturday": [ 11, 17, 5, 13 ],
+            "sunday": [ 10, 16, 4, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 293,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/untitled-2005.jpg',
+          title: 'Untitled',
+          artist: 'Wang Guangyi',
+          year: '2005',
+          rule: {
+            "monday": [ 10, 16, 4, 12 ],
+            "tuesday": [ 9, 15, 3, 12 ],
+            "wednesday": [ 8, 14, 2, 10 ],
+            "thursday": [ 6, 13, 1, 8 ],
+            "friday": [ 13, 19, 7, 15 ],
+            "saturday": [ 12, 18, 6, 14 ],
+            "sunday": [ 11, 17, 5, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 294,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/parmi-les-peintres-1975.jpg',
+          title: 'Parmi les peintres',
+          artist: 'Eduardo Arroyo',
+          year: '1975',
+          rule: {
+            "monday": [ 12, 18, 6, 14 ],
+            "tuesday": [ 11, 17, 5, 13 ],
+            "wednesday": [ 10, 16, 4, 13 ],
+            "thursday": [ 9, 15, 3, 11 ],
+            "friday": [ 7, 14, 2, 9 ],
+            "saturday": [ 14, 20, 8, 16 ],
+            "sunday": [ 13, 19, 7, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 295,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/high-water-mark.jpg',
+          title: 'High Water Mark',
+          artist: 'Neil Welliver',
+          year: '1984',
+          rule: {
+            "monday": [ 13, 19, 7, 15 ],
+            "tuesday": [ 12, 18, 6, 14 ],
+            "wednesday": [ 11, 17, 5, 13 ],
+            "thursday": [ 10, 16, 4, 13 ],
+            "friday": [ 9, 15, 3, 11 ],
+            "saturday": [ 7, 14, 2, 9 ],
+            "sunday": [ 14, 20, 8, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
