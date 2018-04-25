@@ -2974,6 +2974,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 166,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=248364969/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sentientruin.bandcamp.com/album/hollow-of-the-void',
+          a_string: 'Hollow of the Void by Petrification',
+          rule: {
+            "monday": [ 31, 10, 20, 23 ],
+            "tuesday": [ 30, 9, 19, 22 ],
+            "wednesday": [ 29, 8, 18, 21 ],
+            "thursday": [ 28, 7, 18, 20 ],
+            "saturday": [ 1, 11, 21, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 167,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3160158356/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://avantgardemusic.bandcamp.com/album/vent-fant-me',
+          a_string: 'Vent Fantôme by Neige Et Noirceur',
+          rule: {
+            "monday": [ 1, 11, 21, 24 ],
+            "tuesday": [ 31, 10, 20, 23 ],
+            "wednesday": [ 30, 9, 19, 22 ],
+            "thursday": [ 29, 8, 18, 21 ],
+            "saturday": [ 28, 7, 18, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 168,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1464044653/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://powertripsl.bandcamp.com/album/nightmare-logic',
+          a_string: 'Nightmare Logic by Power Trip',
+          rule: {
+            "monday": [ 29, 8, 19, 21 ],
+            "tuesday": [ 2, 12, 22, 25 ],
+            "wednesday": [ 1, 11, 21, 24 ],
+            "thursday": [ 31, 10, 20, 23 ],
+            "saturday": [ 30, 9, 19, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
