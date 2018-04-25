@@ -3082,6 +3082,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 172,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=678791830/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cuneiformrecords.bandcamp.com/album/every-man-for-himself-god-against-all',
+          a_string: 'Every Man For Himself &amp; God Against All by Alec K. Redfearn and The Eyesores',
+          rule: {
+            "monday": [ 28, 18, 26, 20 ],
+            "tuesday": [ 27, 17, 25, 19 ],
+            "wednesday": [ 26, 16, 24, 19 ],
+            "thursday": [ 25, 15, 23, 17 ],
+            "saturday": [ 24, 14, 22, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 173,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2158710113/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cuneiformrecords.bandcamp.com/album/bent-at-the-waist',
+          a_string: 'Bent At The Waist by Alec K. Redfearn and The Eyesores',
+          rule: {
+            "monday": [ 24, 14, 22, 16 ],
+            "tuesday": [ 28, 18, 26, 20 ],
+            "wednesday": [ 27, 17, 25, 19 ],
+            "thursday": [ 26, 16, 24, 19 ],
+            "saturday": [ 25, 15, 23, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 174,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3405008016/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cuneiformrecords.bandcamp.com/album/may-you-dine-on-weeds-made-bitter-by-the-piss-of-drunkards',
+          a_string: 'May You Dine On Weeds Made Bitter By The Piss Of Drunkards by Alec K. Redfearn and The Eyesores',
+          rule: {
+            "monday": [ 25, 15, 23, 17 ],
+            "tuesday": [ 24, 14, 22, 16 ],
+            "wednesday": [ 28, 18, 26, 20 ],
+            "thursday": [ 27, 17, 25, 19 ],
+            "saturday": [ 26, 16, 24, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
