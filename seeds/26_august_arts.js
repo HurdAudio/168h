@@ -6004,6 +6004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 301,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/blauer-berg-1910.jpg',
+          title: 'Blauer Berg',
+          artist: 'Alexej von Jawlensky',
+          year: '1910',
+          rule: {
+            "monday": [ 14, 18, 26, 11 ],
+            "tuesday": [ 13, 17, 25, 10 ],
+            "wednesday": [ 12, 14, 24, 9 ],
+            "thursday": [ 11, 14, 23, 8 ],
+            "friday": [ 10, 13, 22, 7 ],
+            "saturday": [ 16, 20, 28, 13 ],
+            "sunday": [ 15, 18, 27, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 302,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/model-of-the-monument-iii-international-1920.jpg',
+          title: 'Model of the monument III International',
+          artist: 'Vladimir Tatlin',
+          year: '1919 - 1920',
+          rule: {
+            "monday": [ 15, 18, 27, 12 ],
+            "tuesday": [ 14, 18, 26, 11 ],
+            "wednesday": [ 13, 17, 25, 10 ],
+            "thursday": [ 12, 14, 24, 9 ],
+            "friday": [ 11, 14, 23, 8 ],
+            "saturday": [ 10, 13, 22, 7 ],
+            "sunday": [ 16, 20, 28, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 303,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/south-street-stoop-1935.jpg',
+          title: 'South Street Stoop',
+          artist: 'O. Louis Guglielmi',
+          year: '1935',
+          rule: {
+            "monday": [ 16, 20, 28, 13 ],
+            "tuesday": [ 15, 18, 27, 12 ],
+            "wednesday": [ 14, 18, 26, 11 ],
+            "thursday": [ 13, 17, 25, 10 ],
+            "friday": [ 12, 14, 24, 9 ],
+            "saturday": [ 11, 14, 23, 8 ],
+            "sunday": [ 10, 13, 22, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 304,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/hans-sollfrank-1908.jpg',
+          title: 'Hans Sollfrank',
+          artist: 'Fritz Rehm',
+          year: '1908',
+          rule: {
+            "monday": [ 10, 13, 22, 7 ],
+            "tuesday": [ 16, 20, 28, 13 ],
+            "wednesday": [ 15, 18, 27, 12 ],
+            "thursday": [ 14, 18, 26, 11 ],
+            "friday": [ 13, 17, 25, 10 ],
+            "saturday": [ 12, 14, 24, 9 ],
+            "sunday": [ 11, 14, 23, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 305,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/paar-in-interieur-1917(1).jpg',
+          title: 'Paar in Interieur',
+          artist: 'Gabriele Munter',
+          year: '1917',
+          rule: {
+            "monday": [ 11, 14, 23, 8 ],
+            "tuesday": [ 10, 13, 22, 7 ],
+            "wednesday": [ 16, 20, 28, 13 ],
+            "thursday": [ 15, 18, 27, 12 ],
+            "friday": [ 14, 18, 26, 11 ],
+            "saturday": [ 13, 17, 25, 10 ],
+            "sunday": [ 12, 14, 24, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
