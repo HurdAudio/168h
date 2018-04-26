@@ -3838,6 +3838,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 214,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2181951676/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://theforeignexchange.bandcamp.com/album/leave-it-all-behind-3',
+          a_string: 'Leave It All Behind by The Foreign Exchange',
+          rule: {
+            "monday": [ 7, 11, 13, 15 ],
+            "tuesday": [ 19, 13, 15, 21 ],
+            "wednesday": [ 2, 7, 8, 21 ],
+            "thursday": [ 3, 7, 9, 13 ],
+            "saturday": [ 6, 9, 11, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 215,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1189081297/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://theforeignexchange.bandcamp.com/album/authenticity',
+          a_string: 'Authenticity by The Foreign Exchange',
+          rule: {
+            "monday": [ 6, 9, 11, 15 ],
+            "tuesday": [ 7, 11, 13, 15 ],
+            "wednesday": [ 19, 13, 15, 21 ],
+            "thursday": [ 2, 7, 8, 21 ],
+            "saturday": [ 3, 7, 9, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 216,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3939352212/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://theforeignexchange.bandcamp.com/album/tales-from-the-land-of-milk-and-honey',
+          a_string: 'Tales From The Land Of Milk And Honey by The Foreign Exchange',
+          rule: {
+            "monday": [ 3, 7, 9, 13 ],
+            "tuesday": [ 6, 9, 11, 15 ],
+            "wednesday": [ 7, 11, 13, 15 ],
+            "thursday": [ 19, 13, 15, 21 ],
+            "saturday": [ 2, 7, 8, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
