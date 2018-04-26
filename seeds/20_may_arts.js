@@ -6604,6 +6604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 331,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/candle.jpg',
+          title: 'Candle',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 17, 27, 6, 14 ],
+            "tuesday": [ 15, 26, 4, 14 ],
+            "wednesday": [ 13, 23, 31, 12 ],
+            "thursday": [ 10, 21, 31, 20 ],
+            "friday": [ 9, 20, 29, 8 ],
+            "saturday": [ 7, 17, 27, 4 ],
+            "sunday": [ 5, 14, 26, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 332,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/egypt.jpg',
+          title: 'Egypt',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 5, 14, 26, 4 ],
+            "tuesday": [ 17, 27, 6, 14 ],
+            "wednesday": [ 15, 26, 4, 14 ],
+            "thursday": [ 13, 23, 31, 12 ],
+            "friday": [ 10, 21, 31, 20 ],
+            "saturday": [ 9, 20, 29, 8 ],
+            "sunday": [ 7, 17, 27, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 333,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/luck.jpg',
+          title: 'Luck',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 7, 17, 27, 4 ],
+            "tuesday": [ 5, 14, 26, 4 ],
+            "wednesday": [ 17, 27, 6, 14 ],
+            "thursday": [ 15, 26, 4, 14 ],
+            "friday": [ 13, 23, 31, 12 ],
+            "saturday": [ 10, 21, 31, 20 ],
+            "sunday": [ 9, 20, 29, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 334,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/she-packed-her-trunk.jpg',
+          title: 'She packed her trunk',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 9, 20, 29, 8 ],
+            "tuesday": [ 7, 17, 27, 4 ],
+            "wednesday": [ 5, 14, 26, 4 ],
+            "thursday": [ 17, 27, 6, 14 ],
+            "friday": [ 15, 26, 4, 14 ],
+            "saturday": [ 13, 23, 31, 12 ],
+            "sunday": [ 10, 21, 31, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 335,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/workclass.jpg',
+          title: 'Workclass',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 10, 21, 31, 20 ],
+            "tuesday": [ 9, 20, 29, 8 ],
+            "wednesday": [ 7, 17, 27, 4 ],
+            "thursday": [ 5, 14, 26, 4 ],
+            "friday": [ 17, 27, 6, 14 ],
+            "saturday": [ 15, 26, 4, 14 ],
+            "sunday": [ 13, 23, 31, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
