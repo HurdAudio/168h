@@ -6204,6 +6204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 311,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/the-girl-from-rat-mort-1906.jpg',
+          title: 'The Girl from Rat Mort',
+          artist: 'Maurice de Vlaminck',
+          year: '1905 - 1906',
+          rule: {
+            "monday": [ 10, 21, 1, 12 ],
+            "tuesday": [ 16, 27, 7, 17 ],
+            "wednesday": [ 15, 26, 6, 17 ],
+            "thursday": [ 14, 25, 5, 16 ],
+            "friday": [ 13, 24, 4, 5 ],
+            "saturday": [ 12, 23, 2, 4 ],
+            "sunday": [ 11, 22, 2, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 312,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/self-portrait-11.jpg',
+          title: 'Self-portrait',
+          artist: 'Armand Henrion',
+          year: '',
+          rule: {
+            "monday": [ 11, 22, 2, 3 ],
+            "tuesday": [ 10, 21, 1, 12 ],
+            "wednesday": [ 16, 27, 7, 17 ],
+            "thursday": [ 15, 26, 6, 17 ],
+            "friday": [ 14, 25, 5, 16 ],
+            "saturday": [ 13, 24, 4, 5 ],
+            "sunday": [ 12, 23, 2, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 313,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/apollon-1937.jpg',
+          title: 'Apollon',
+          artist: 'Charles Despiau',
+          year: '1937',
+          rule: {
+            "monday": [ 12, 23, 2, 4 ],
+            "tuesday": [ 11, 22, 2, 3 ],
+            "wednesday": [ 10, 21, 1, 12 ],
+            "thursday": [ 16, 27, 7, 17 ],
+            "friday": [ 15, 26, 6, 17 ],
+            "saturday": [ 14, 25, 5, 16 ],
+            "sunday": [ 13, 24, 4, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 314,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/ombres-d-optique-1929.jpg',
+          title: 'Ombres d\'Optique',
+          artist: 'Pierre Dubreuil',
+          year: '1929',
+          rule: {
+            "monday": [ 13, 24, 4, 5 ],
+            "tuesday": [ 12, 23, 2, 4 ],
+            "wednesday": [ 11, 22, 2, 3 ],
+            "thursday": [ 10, 21, 1, 12 ],
+            "friday": [ 16, 27, 7, 17 ],
+            "saturday": [ 15, 26, 6, 17 ],
+            "sunday": [ 14, 25, 5, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 315,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/le-figaro-1900-2.jpg',
+          title: 'Le Figaro',
+          artist: 'Michel Simonidy',
+          year: '1900',
+          rule: {
+            "monday": [ 15, 26, 6, 17 ],
+            "tuesday": [ 14, 25, 5, 6 ],
+            "wednesday": [ 13, 24, 3, 5 ],
+            "thursday": [ 12, 23, 3, 4 ],
+            "friday": [ 11, 22, 2, 13 ],
+            "saturday": [ 17, 28, 8, 18 ],
+            "sunday": [ 16, 27, 7, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
