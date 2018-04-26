@@ -7404,6 +7404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 371,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/adam-and-eve-2-1970.jpg',
+          title: 'Adam and Eve (#2)',
+          artist: 'Frederick Hammersley',
+          year: '1970',
+          rule: {
+            "monday": [ 30, 31, 22, 26 ],
+            "tuesday": [ 2, 4, 5, 7 ],
+            "wednesday": [ 4, 6, 10, 13 ],
+            "thursday": [ 6, 8, 9, 12 ],
+            "friday": [ 22, 23, 3, 26 ],
+            "saturday": [ 25, 27, 19, 8 ],
+            "sunday": [ 27, 28, 20, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 372,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/number-2-1950.jpg',
+          title: 'Number 2',
+          artist: 'Bradley Walker Tomlin',
+          year: '1950',
+          rule: {
+            "monday": [ 27, 28, 20, 23 ],
+            "tuesday": [ 30, 31, 22, 26 ],
+            "wednesday": [ 2, 4, 5, 7 ],
+            "thursday": [ 4, 6, 10, 13 ],
+            "friday": [ 6, 8, 9, 12 ],
+            "saturday": [ 22, 23, 3, 26 ],
+            "sunday": [ 25, 27, 19, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 373,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/abstra-o-1993.jpg',
+          title: 'Abstração',
+          artist: 'Amilcar de Castro',
+          year: '1993',
+          rule: {
+            "monday": [ 25, 27, 19, 8 ],
+            "tuesday": [ 27, 28, 20, 23 ],
+            "wednesday": [ 30, 31, 22, 26 ],
+            "thursday": [ 2, 4, 5, 7 ],
+            "friday": [ 4, 6, 10, 13 ],
+            "saturday": [ 6, 8, 9, 12 ],
+            "sunday": [ 22, 23, 3, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 374,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/dark-brown-orange-and-white-1963.jpg',
+          title: 'Dark Brown, Orange and White',
+          artist: 'William Scott',
+          year: '1963',
+          rule: {
+            "monday": [ 22, 23, 3, 26 ],
+            "tuesday": [ 25, 27, 19, 8 ],
+            "wednesday": [ 27, 28, 20, 23 ],
+            "thursday": [ 30, 31, 22, 26 ],
+            "friday": [ 2, 4, 5, 7 ],
+            "saturday": [ 4, 6, 10, 13 ],
+            "sunday": [ 6, 8, 9, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 375,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/moon-s-milk-2009.jpg',
+          title: 'Moon\'s Milk',
+          artist: 'John Hoyland',
+          year: '2009',
+          rule: {
+            "monday": [ 6, 8, 9, 12 ],
+            "tuesday": [ 22, 23, 3, 26 ],
+            "wednesday": [ 25, 27, 19, 8 ],
+            "thursday": [ 27, 28, 20, 23 ],
+            "friday": [ 30, 31, 22, 26 ],
+            "saturday": [ 2, 4, 5, 7 ],
+            "sunday": [ 4, 6, 10, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
