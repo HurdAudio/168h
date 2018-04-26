@@ -7204,6 +7204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 361,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/WIC-16-SC-279_view 1.jpg',
+          title: 'Eye Candy',
+          artist: 'Willie Cole',
+          year: '2016',
+          rule: {
+            "monday": [ 3, 11, 19, 29 ],
+            "tuesday": [ 3, 13, 9, 28 ],
+            "wednesday": [ 22, 1, 9, 17 ],
+            "thursday": [ 23, 3, 11, 19 ],
+            "friday": [ 29, 5, 11, 21 ],
+            "saturday": [ 28, 7, 15, 23 ],
+            "sunday": [ 1, 11, 17, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 362,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/colescott-saturday-night-800.jpg',
+          title: 'Saturday Night Special (I seen it on TV)',
+          artist: 'Robert Colescott',
+          year: '1988',
+          rule: {
+            "monday": [ 1, 11, 17, 23 ],
+            "tuesday": [ 3, 11, 19, 29 ],
+            "wednesday": [ 3, 13, 9, 28 ],
+            "thursday": [ 22, 1, 9, 17 ],
+            "friday": [ 23, 3, 11, 19 ],
+            "saturday": [ 29, 5, 11, 21 ],
+            "sunday": [ 28, 7, 15, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 363,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/getimage.jpeg',
+          title: 'Statue',
+          artist: 'Kennard Copeland',
+          year: '?',
+          rule: {
+            "monday": [ 28, 7, 15, 23 ],
+            "tuesday": [ 1, 11, 17, 23 ],
+            "wednesday": [ 3, 11, 19, 29 ],
+            "thursday": [ 3, 13, 9, 28 ],
+            "friday": [ 22, 1, 9, 17 ],
+            "saturday": [ 23, 3, 11, 19 ],
+            "sunday": [ 29, 5, 11, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 364,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/cortor.jpg',
+          title: 'Figure Composition IV',
+          artist: 'Eldzier Cortor',
+          year: '2000',
+          rule: {
+            "monday": [ 1, 6, 12, 22 ],
+            "tuesday": [ 29, 8, 16, 24 ],
+            "wednesday": [ 2, 12, 18, 24 ],
+            "thursday": [ 4, 12, 20, 1 ],
+            "friday": [ 4, 14, 10, 29 ],
+            "saturday": [ 23, 2, 10, 18 ],
+            "sunday": [ 24, 4, 12, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 365,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/TheBalcony.jpg',
+          title: 'The Balcony',
+          artist: 'Ernest Crichlow',
+          year: '1980',
+          rule: {
+            "monday": [ 24, 4, 12, 20 ],
+            "tuesday": [ 1, 6, 12, 22 ],
+            "wednesday": [ 29, 8, 16, 24 ],
+            "thursday": [ 2, 12, 18, 24 ],
+            "friday": [ 4, 12, 20, 1 ],
+            "saturday": [ 4, 14, 10, 29 ],
+            "sunday": [ 23, 2, 10, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
