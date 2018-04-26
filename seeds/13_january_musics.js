@@ -3946,6 +3946,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 220,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=75703261/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://michaelgordonmusic.bandcamp.com/album/clouded-yellow',
+          a_string: 'Clouded Yellow by Kronos Quartet &amp; Michael Gordon',
+          rule: {
+            "monday": [ 6, 13, 14, 15 ],
+            "tuesday": [ 10, 17, 18, 19 ],
+            "wednesday": [ 9, 15, 17, 18 ],
+            "thursday": [ 8, 15, 16, 17 ],
+            "saturday": [ 7, 13, 14, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 221,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2755599631/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://davidlangmusic.bandcamp.com/album/thorn',
+          a_string: 'thorn by Molly Barth',
+          rule: {
+            "monday": [ 7, 13, 14, 15 ],
+            "tuesday": [ 6, 13, 14, 15 ],
+            "wednesday": [ 10, 17, 18, 19 ],
+            "thursday": [ 9, 15, 17, 18 ],
+            "saturday": [ 8, 15, 16, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 222,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2933536105/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bearthoven.bandcamp.com/album/trios',
+          a_string: 'Trios by Bearthoven',
+          rule: {
+            "monday": [ 8, 15, 16, 17 ],
+            "tuesday": [ 7, 13, 14, 15 ],
+            "wednesday": [ 6, 13, 14, 15 ],
+            "thursday": [ 10, 17, 18, 19 ],
+            "saturday": [ 9, 15, 17, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
