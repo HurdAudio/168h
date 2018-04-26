@@ -3622,6 +3622,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 202,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1443017017/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jefgilson.bandcamp.com/album/jef-gilson',
+          a_string: 'Jef Gilson by Jef Gilson',
+          rule: {
+            "monday": [ 2, 10, 22, 27 ],
+            "tuesday": [ 1, 9, 21, 26 ],
+            "wednesday": [ 30, 8, 20, 25 ],
+            "thursday": [ 29, 7, 19, 24 ],
+            "saturday": [ 28, 6, 18, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 203,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3704093983/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jefgilson.bandcamp.com/album/archives',
+          a_string: 'Archives by Jef Gilson',
+          rule: {
+            "monday": [ 29, 7, 19, 24 ],
+            "tuesday": [ 3, 11, 23, 28 ],
+            "wednesday": [ 2, 10, 22, 27 ],
+            "thursday": [ 1, 9, 21, 26 ],
+            "saturday": [ 30, 8, 20, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 204,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2199448471/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jefgilson.bandcamp.com/album/gilson-et-malagasy',
+          a_string: 'Gilson et Malagasy by Jef Gilson',
+          rule: {
+            "monday": [ 30, 8, 20, 25 ],
+            "tuesday": [ 29, 7, 19, 24 ],
+            "wednesday": [ 3, 11, 23, 28 ],
+            "thursday": [ 2, 10, 22, 27 ],
+            "saturday": [ 1, 9, 21, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
