@@ -7004,6 +7004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 351,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/flower-basket-1915.jpg',
+          title: 'Flower Basket',
+          artist: 'Uemura Shoen',
+          year: '1915',
+          rule: {
+            "monday": [ 19, 28, 5, 15 ],
+            "tuesday": [ 17, 27, 4, 14 ],
+            "wednesday": [ 16, 26, 3, 13 ],
+            "thursday": [ 15, 25, 2, 12 ],
+            "friday": [ 14, 24, 2, 11 ],
+            "saturday": [ 20, 29, 8, 16 ],
+            "sunday": [ 19, 29, 8, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 352,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/the-cat.jpg',
+          title: 'The Cat',
+          artist: 'Gwen John',
+          year: 'c.1905 - c.1908',
+          rule: {
+            "monday": [ 19, 29, 8, 16 ],
+            "tuesday": [ 19, 28, 5, 15 ],
+            "wednesday": [ 17, 27, 4, 14 ],
+            "thursday": [ 16, 26, 3, 13 ],
+            "friday": [ 15, 25, 2, 12 ],
+            "saturday": [ 14, 24, 2, 11 ],
+            "sunday": [ 20, 29, 8, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 353,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/liegende-katze.jpg',
+          title: 'Liegende Katze',
+          artist: 'Helen Dahm',
+          year: '?',
+          rule: {
+            "monday": [ 20, 29, 8, 16 ],
+            "tuesday": [ 19, 29, 8, 16 ],
+            "wednesday": [ 19, 28, 5, 15 ],
+            "thursday": [ 17, 27, 4, 14 ],
+            "friday": [ 16, 26, 3, 13 ],
+            "saturday": [ 15, 25, 2, 12 ],
+            "sunday": [ 14, 24, 2, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 354,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/stone-maiden-still-life.jpg',
+          title: 'Stone maiden (Still life)',
+          artist: 'Natalia Goncharova',
+          year: '1908',
+          rule: {
+            "monday": [ 14, 24, 2, 11 ],
+            "tuesday": [ 20, 29, 8, 16 ],
+            "wednesday": [ 19, 29, 8, 16 ],
+            "thursday": [ 19, 28, 5, 15 ],
+            "friday": [ 17, 27, 4, 14 ],
+            "saturday": [ 16, 26, 3, 13 ],
+            "sunday": [ 15, 25, 2, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 355,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/spanish-dancers-1921.jpg',
+          title: 'Spanish Dancers',
+          artist: 'Marie Laurencin',
+          year: '1921',
+          rule: {
+            "monday": [ 15, 25, 2, 12 ],
+            "tuesday": [ 14, 24, 2, 11 ],
+            "wednesday": [ 20, 29, 8, 16 ],
+            "thursday": [ 19, 29, 8, 16 ],
+            "friday": [ 19, 28, 5, 15 ],
+            "saturday": [ 17, 27, 4, 14 ],
+            "sunday": [ 16, 26, 3, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
