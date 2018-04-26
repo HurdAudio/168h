@@ -3406,6 +3406,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 190,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2257094086/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://muzaneditions.bandcamp.com/album/ashenden',
+          a_string: 'Ashenden by Lee Noble',
+          rule: {
+            "monday": [ 26, 30, 5, 17 ],
+            "tuesday": [ 26, 29, 5, 16 ],
+            "wednesday": [ 24, 2, 4, 15 ],
+            "thursday": [ 28, 2, 8, 19 ],
+            "saturday": [ 27, 30, 5, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 191,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2849802117/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://artisanduson.bandcamp.com/album/polarities-2',
+          a_string: 'Polarities by ArtisanDuSon',
+          rule: {
+            "monday": [ 27, 30, 5, 17 ],
+            "tuesday": [ 26, 30, 5, 17 ],
+            "wednesday": [ 26, 29, 5, 16 ],
+            "thursday": [ 24, 2, 4, 15 ],
+            "saturday": [ 28, 2, 8, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 192,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=720184106/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://thomaswalsh.bandcamp.com/album/mechanics-of-deference',
+          a_string: 'Mechanics of Deference by Thomas Walsh',
+          rule: {
+            "monday": [ 28, 2, 8, 19 ],
+            "tuesday": [ 27, 30, 5, 17 ],
+            "wednesday": [ 26, 30, 5, 17 ],
+            "thursday": [ 26, 29, 5, 16 ],
+            "saturday": [ 24, 2, 4, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
