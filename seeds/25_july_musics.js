@@ -3298,6 +3298,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 184,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3574162760/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://holymotorsband.bandcamp.com/album/slow-sundown',
+          a_string: 'SLOW SUNDOWN by Holy Motors',
+          rule: {
+            "monday": [ 24, 26, 30, 7 ],
+            "tuesday": [ 28, 30, 3, 11 ],
+            "wednesday": [ 27, 29, 2, 10 ],
+            "thursday": [ 26, 28, 1, 9 ],
+            "saturday": [ 25, 26, 31, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 185,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2343052776/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://poisoncityrecords.bandcamp.com/album/modern-convenience',
+          a_string: 'Modern Convenience by MOD CON',
+          rule: {
+            "monday": [ 25, 26, 31, 8 ],
+            "tuesday": [ 24, 26, 30, 7 ],
+            "wednesday": [ 28, 30, 3, 11 ],
+            "thursday": [ 27, 29, 2, 10 ],
+            "saturday": [ 26, 28, 1, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 186,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1129661843/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://wharfcatrecords.bandcamp.com/album/stucco-thieves',
+          a_string: 'Stucco Thieves by The Sediment Club',
+          rule: {
+            "monday": [ 26, 28, 1, 9 ],
+            "tuesday": [ 25, 26, 31, 8 ],
+            "wednesday": [ 24, 26, 30, 7 ],
+            "thursday": [ 28, 30, 3, 11 ],
+            "saturday": [ 27, 29, 2, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
