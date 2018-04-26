@@ -6797,10 +6797,110 @@ exports.seed = function(knex, Promise) {
             "monday": [ 14, 19, 25, 1 ],
             "tuesday": [ 13, 18, 24, 30 ],
             "wednesday":[ 18, 24, 29, 6 ],
-            "thursday":  [ 2, 22, 28, 4 ],
+            "thursday": [ 2, 22, 28, 4 ],
             "friday": [ 17, 22, 28, 4 ],
             "saturday": [ 16, 20, 5, 3 ],
             "sunday": [ 15, 20, 25, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 341,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/r-generic-tampa-bay-rays-w_35298566_ver1.0_640_360.jpg',
+          title: 'Tampa Bay Rays',
+          artist: '?',
+          year: '2018',
+          rule: {
+            "monday": [ 15, 20, 25, 1 ],
+            "tuesday": [ 14, 19, 25, 1 ],
+            "wednesday":[ 13, 18, 24, 30 ],
+            "thursday": [ 18, 24, 29, 6 ],
+            "friday": [ 2, 22, 28, 4 ],
+            "saturday": [ 17, 22, 28, 4 ],
+            "sunday": [ 16, 20, 5, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 342,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/629d5763b643314238f28a863d6f3a3b.jpg',
+          title: 'Tampa Bay Rays Ball',
+          artist: '?',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 16, 20, 5, 3 ],
+            "tuesday": [ 15, 20, 25, 1 ],
+            "wednesday":[ 14, 19, 25, 1 ],
+            "thursday": [ 13, 18, 24, 30 ],
+            "friday": [ 18, 24, 29, 6 ],
+            "saturday": [ 2, 22, 28, 4 ],
+            "sunday": [ 17, 22, 28, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 343,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/Boston+Red+Sox+v+Tampa+Bay+Rays+bvxRO1zyceKl.jpg',
+          title: 'Mookie Betts #50 of the Boston Red Sox steals second base in front of second baseman Joey Wendle #18 of the Tampa Bay Rays during the first inning of a game on April 1, 2018 at Tropicana Field in St. Petersburg, Florida',
+          artist: 'Brian Blanco',
+          year: '2018',
+          rule: {
+            "monday": [ 18, 21, 29, 5 ],
+            "tuesday": [ 17, 21, 6, 4 ],
+            "wednesday":[ 16, 21, 26, 2 ],
+            "thursday": [ 15, 20, 26, 2 ],
+            "friday": [ 14, 19, 25, 1 ],
+            "saturday": [ 19, 25, 30, 7 ],
+            "sunday": [ 3, 23, 29, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 344,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/tampa_bay_rays_2012_uniforms_by_jayjaxon-d4ui9cm.png',
+          title: 'Tampa Bay Rays 2012 Uniforms',
+          artist: 'Jay Jaxon',
+          year: '2012',
+          rule: {
+            "monday": [ 3, 23, 29, 5 ],
+            "tuesday": [ 18, 21, 29, 5 ],
+            "wednesday":[ 17, 21, 6, 4 ],
+            "thursday": [ 16, 21, 26, 2 ],
+            "friday": [ 15, 20, 26, 2 ],
+            "saturday": [ 14, 19, 25, 1 ],
+            "sunday": [ 19, 25, 30, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 345,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/twins-rays-baseball.jpg',
+          title: 'Tampa Bay Rays\' Johnny Field scores the winning run when Minnesota Twins relief pitcher Zach Duke dropped the ball on a play at first base.',
+          artist: 'Chris O\'Meara',
+          year: '2018',
+          rule: {
+            "monday": [ 19, 25, 30, 7 ],
+            "tuesday": [ 3, 23, 29, 5 ],
+            "wednesday":[ 18, 21, 29, 5 ],
+            "thursday": [ 17, 21, 6, 4 ],
+            "friday": [ 16, 21, 26, 2 ],
+            "saturday": [ 15, 20, 26, 2 ],
+            "sunday": [ 14, 19, 25, 1 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
