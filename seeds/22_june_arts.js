@@ -6404,6 +6404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 321,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/p-19783-3290_Michelle_7881Chang_40x60_M_web.jpg',
+          title: 'Michelle Underwater',
+          artist: 'Aaron Chang',
+          year: '?',
+          rule: {
+            "monday": [ 12, 22, 2, 10 ],
+            "tuesday": [ 21, 1, 11, 9 ],
+            "wednesday": [ 10, 20, 30, 8 ],
+            "thursday": [ 9, 19, 29, 7 ],
+            "friday": [ 15, 25, 5, 11 ],
+            "saturday": [ 14, 24, 4, 12 ],
+            "sunday": [ 13, 23, 3, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 322,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/4231_SilverLining_5598_1k.jpg',
+          title: 'Silver Lining',
+          artist: 'Aaron Chang',
+          year: '?',
+          rule: {
+            "monday": [ 14, 24, 4, 12 ],
+            "tuesday": [ 13, 23, 3, 11 ],
+            "wednesday": [ 22, 2, 12, 10 ],
+            "thursday": [ 11, 21, 1, 9 ],
+            "friday": [ 10, 20, 30, 8 ],
+            "saturday": [ 16, 26, 6, 12 ],
+            "sunday": [ 15, 25, 5, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 323,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/Max-In-Flight-1-1024x731.jpg',
+          title: 'Luminosa 1',
+          artist: 'Parish Kohanim',
+          year: '?',
+          rule: {
+            "monday": [ 15, 25, 5, 13 ],
+            "tuesday": [ 14, 24, 4, 12 ],
+            "wednesday": [ 13, 23, 3, 11 ],
+            "thursday": [ 22, 2, 12, 10 ],
+            "friday": [ 11, 21, 1, 9 ],
+            "saturday": [ 10, 20, 30, 8 ],
+            "sunday": [ 16, 26, 6, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 324,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/figurative-01.jpg',
+          title: 'Ella on Red Sphere',
+          artist: 'Parish Kohanim',
+          year: '?',
+          rule: {
+            "monday": [ 16, 26, 6, 12 ],
+            "tuesday": [ 15, 25, 5, 13 ],
+            "wednesday": [ 14, 24, 4, 12 ],
+            "thursday": [ 13, 23, 3, 11 ],
+            "friday": [ 22, 2, 12, 10 ],
+            "saturday": [ 11, 21, 1, 9 ],
+            "sunday": [ 10, 20, 30, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 325,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/55.jpg',
+          title: 'Search of Light',
+          artist: 'Josep Sumalla',
+          year: '2014',
+          rule: {
+            "monday": [ 10, 20, 30, 8 ],
+            "tuesday": [ 16, 26, 6, 12 ],
+            "wednesday": [ 15, 25, 5, 13 ],
+            "thursday": [ 14, 24, 4, 12 ],
+            "friday": [ 13, 23, 3, 11 ],
+            "saturday": [ 22, 2, 12, 10 ],
+            "sunday": [ 11, 21, 1, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
