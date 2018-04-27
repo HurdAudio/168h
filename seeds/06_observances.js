@@ -9812,6 +9812,39 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 628,
+          user_id: 1,
+          name: 'Alice Coltrane (piano/jarporgan/voice/composer) born 1937',
+          color: '#5EB2F0',
+          picture: './img/musicians/alice-coltrane-photo2.jpg',
+          day_of: new Date ('1937-08-27T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: true,
+          override_content: {
+            "sources": [ 'bandcamp' ],
+            "src_strings": [ 'https://bandcamp.com/EmbeddedPlayer/album=979604399/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/' ],
+            "href_strings": [ 'http://alicecoltrane.bandcamp.com/album/world-sprituality-classics-1-the-ecstatic-music-of-alice-coltrane-turiyasangitananda' ],
+            "a_strings": [ 'World Sprituality Classics 1: The Ecstatic Music of Alice Coltrane Turiyasangitananda by Alice Coltrane' ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 629,
+          user_id: 1,
+          name: 'The world ended on this day as per David Meade\'s third-time-is-a-charm prediction.',
+          color: '#C73918',
+          picture: './img/doomsday/nibiru-871048.jpg',
+          day_of: new Date ('2017-10-15T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
