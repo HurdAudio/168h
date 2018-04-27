@@ -578,6 +578,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#E6EDBE',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 42,
+          user_id: 1,
+          theme: 'Monochromatic',
+          type: 'holiday',
+          src_string: '../img/november_tiles/flower-designs-for-embroidery-bedroom-monochromatic-drawing-stone-general-contractors-ikea-youth-regarding-dream-birds-and-flowers-design-easy-drawings-bedrooms-at-living-room-colors-850x844.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '105%',
+          color_dark: '#030406',
+          color_medium: '#00A41F',
+          color_light: '#B9FCDE',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
