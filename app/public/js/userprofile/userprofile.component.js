@@ -1057,9 +1057,11 @@
       }
 
       function appointmentNo(blockShare) {
+        let now = new Date();
         let subObj = {
           accepted: false,
-          responded: true
+          responded: true,
+          updated_at: now
         };
         let declineAppointment = document.getElementById('declineAppointment' + blockShare.toString());
         let acceptDecline = document.getElementById('acceptDecline' + blockShare.toString());
@@ -1082,7 +1084,7 @@
             element = document.createElement('h3');
             declineAppointment.appendChild(element);
             element.setAttribute("style", "float: left; margin-left: 2vmin;");
-            element.innerHTML = invitee.name + ' has declined this invitation.';
+            element.innerHTML = invitee.name + ' has declined this invitation at ' + cleanDateHoliday(block.updated_at) + ' - ' + timeDate(block.updated_at) + '.';
           });
         });
       }
@@ -1096,9 +1098,11 @@
       }
 
       function appointmentYes(blockShare) {
+        let now = new Date();
         let subObj = {
           accepted: true,
-          responded: true
+          responded: true,
+          updated_at: now
         };
         let acceptedAppointment = document.getElementById('acceptedAppointment' + blockShare.toString());
         let acceptDecline = document.getElementById('acceptDecline' + blockShare.toString());
@@ -1121,7 +1125,7 @@
             element = document.createElement('h3');
             acceptedAppointment.appendChild(element);
             element.setAttribute("style", "float: left; margin-left: 2vmin;");
-            element.innerHTML = invitee.name + ' has accepted this invitation.';
+            element.innerHTML = invitee.name + ' has accepted this invitation at ' + cleanDateHoliday(block.updated_at) + ' - ' + timeDate(block.updated_at) + '.';
             $http.get(`/timeblocksbyuser/${currentUserId}`)
             .then(userBlocksData=>{
               let userBlocks = userBlocksData.data;
@@ -13976,6 +13980,22 @@
         });
       }
 
+      function pruneOutdatedAppointments(index) {
+
+        let now = new Date();
+        console.log(vm.activeTimeblockShares[index]);
+
+
+        $http.get(`/timeblocks/${vm.activeTimeblockShares[index].timeblock_id}`)
+        .then(timeblockData=>{
+          let timeblock = timeblockData.data;
+          let appointmentEnded = new Date(timeblock.end_time);
+          if (now.getTime() > appointmentEnded.getTime()) {
+            vm.activeTimeblockShares.splice(index, 1);
+          }
+        });
+      }
+
       function retrieveUserAppointments() {
         let check;
         $http.get('/timeblock_shares')
@@ -13990,6 +14010,7 @@
               check = new Date(userAppointments[i].updated_at);
               vm.activeTimeblockShares[i] = {};
               vm.activeTimeblockShares[i].id = userAppointments[i].id;
+              vm.activeTimeblockShares[i].timeblock_id = userAppointments[i].timeblock_id;
               timeblockInviteUserData(userAppointments[i], i);
               vm.activeTimeblockShares[i].cleanDate = cleanDateHoliday(userAppointments[i].updated_at) + ' at ' +  check.toLocaleTimeString('en-GB');
               inviteOrInvitee(userAppointments[i], i);
@@ -13999,6 +14020,7 @@
             setTimeout(()=>{
               if (vm.activeTimeblockShares.length > 0) {
                 for (let j = 0; j < vm.activeTimeblockShares.length; j++) {
+                  pruneOutdatedAppointments(j);
                   if (vm.activeTimeblockShares[j].comments !== undefined) {
                     if (vm.activeTimeblockShares[j].comments.length === 1) {
                       vm.activeTimeblockShares[j].commentsLength = '1 comment';
