@@ -5083,11 +5083,13 @@
           <a href=""><h3>comment</h3></a>
 
 
-        <div class="timeblockShareCommentsBar">
+        <div class="commentsBar">
 
           <h1>Comments:</h1>
+          <a class="btn" href="#" ng-click="$ctrl.addNewTimeblockComment(block.id)" id="newTimeblockCommentButton{{block.id}}">add</a>
         </div>
         <div id="timeblockComments">
+          <h3>{{block.commentsLength}}</h3>
           <main ng-repeat="comment in block.comments | orderBy : $ctrl.sortBy">
             <img src="{{comment.commenterImg}}"><br>
             <p>From: {{comment.commenterName}}

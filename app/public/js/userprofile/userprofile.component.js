@@ -246,6 +246,42 @@
       vm.userEditHolidayShareComment = userEditHolidayShareComment;
       vm.userEditHolidayShareCommentCompleted = userEditHolidayShareCommentCompleted;
       vm.deleteHolidayShare = deleteHolidayShare;
+      vm.addNewTimeblockComment = addNewTimeblockComment;
+
+      function addNewTimeblockComment(timeblockId) {
+        let check = new Date();
+        let subObj = {
+          user_id: currentUserId,
+          timeblock_share: timeblockId,
+          comment: ''
+        };
+        $http.post(`/timeblock_share_comments`, subObj)
+        .then(commentData=>{
+          let comment = commentData.data[0];
+          let index = 0;
+          for (let i = 0; i < vm.activeTimeblockShares.length; i++) {
+            if (vm.activeTimeblockShares[i].id === timeblockId) {
+              if (vm.activeTimeblockShares[i].comments === undefined) {
+                vm.activeTimeblockShares[i].comments = [];
+                index = 0;
+              } else {
+                index = vm.activeTimeblockShares[i].comments.length;
+              }
+              vm.activeTimeblockShares[i].comments[index] = {};
+              vm.activeTimeblockShares[i].comments[index].comment = comment.comment;
+              vm.activeTimeblockShares[i].comments[index].id = comment.id;
+              getUserInfosForAppointmentComment(timeblockId, i, comment, index);
+              vm.activeTimeblockShares[i].comments[index].cleanDate = cleanDateHoliday(comment.updated_at) + ' at ' +  check.toLocaleTimeString('en-GB');
+
+            }
+          }
+          setTimeout(()=>{
+            userEditTimeblockShareComment(comment.id);
+          }, 100);
+
+
+        });
+      }
 
       function deleteHolidayShare(holidayShareId) {
         // alert(holidayShareId);
@@ -672,6 +708,36 @@
         thisIsTimeblockShareDeleteConfirmDiv.setAttribute("style", "display: initial;");
       }
 
+      function removeEmptyTimeblockShareComment(id) {
+        $http.delete(`/timeblock_share_comments/${id}`)
+        .then(emptyData=>{
+          let empty = emptyData.data;
+          for (let i = 0; i < vm.activeTimeblockShares.length; i++) {
+            if (vm.activeTimeblockShares[i].comments !== undefined) {
+              for (let j = 0; j < vm.activeTimeblockShares[i].comments.length; j++) {
+                if (vm.activeTimeblockShares[i].comments[j].id === id) {
+                  vm.activeTimeblockShares[i].comments.splice(j, 1);
+                }
+              }
+            }
+          }
+        });
+      }
+
+      function deleteEmptyAppointmentComments() {
+        $http.get(`/timeblock_share_commentsbyuser/${currentUserId}`)
+        .then(commentsData=>{
+          let comments = commentsData.data;
+          if (comments.length > 0) {
+            for (let i = 0; i < comments.length; i++) {
+              if (comments[i].comment === '') {
+                removeEmptyTimeblockShareComment(comments[i].id);
+              }
+            }
+          }
+        });
+      }
+
       function userEditTimeblockShareCommentCompleted(timeblockShareId) {
 
         let thisIsTheTimeblockShareCommentEditor = document.getElementById('thisIsTheTimeblockShareCommentEditor' + timeblockShareId);
@@ -689,6 +755,7 @@
           thisIsTheTimeblockShareComment.innerHTML = updatedComment.comment;
           thisIsTheTimeblockShareComment.setAttribute("style", "visibility: visible;");
           editDeleteTimeblockShareCommentDiv.setAttribute("style", "display: initial;");
+          deleteEmptyAppointmentComments();
         });
       }
 
@@ -13929,6 +13996,21 @@
               timeblockShareAppointmentData(userAppointments[i], i);
               grabTimeblockShareComments(userAppointments[i], i);
             }
+            setTimeout(()=>{
+              if (vm.activeTimeblockShares.length > 0) {
+                for (let j = 0; j < vm.activeTimeblockShares.length; j++) {
+                  if (vm.activeTimeblockShares[j].comments !== undefined) {
+                    if (vm.activeTimeblockShares[j].comments.length === 1) {
+                      vm.activeTimeblockShares[j].commentsLength = '1 comment';
+                    } else {
+                      vm.activeTimeblockShares[j].commentsLength = vm.activeTimeblockShares[j].comments.length + ' comments';
+                    }
+                  } else {
+                    vm.activeTimeblockShares[j].commentsLength = '0 comments';
+                  }
+                }
+              }
+            }, 75);
 
           }
         });
