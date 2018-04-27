@@ -1264,6 +1264,66 @@ exports.seed = function(knex, Promise) {
           public: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 106,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/catincouch.jpg',
+          title: 'Funny Cats 2017',
+          artist: 'MashupZone',
+          year: '2017',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 107,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/imrs.jpeg',
+          title: 'Do pet cats cause schizophrenia? A new study suggests no.',
+          artist: 'iStock',
+          year: '2016',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 108,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/grief-and-loss.jpg',
+          title: 'Ginger Cat',
+          artist: 'unknown artist',
+          year: '?',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 109,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/p0517py6.jpg',
+          title: 'Should Scottish fold cats be banned?',
+          artist: 'unknown artist',
+          year: '2017',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 110,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/How-old-is-my-cat-in-human-years_0af22fe2-0f4a-4b24-821f-695be0d18cee.jpg',
+          title: 'Your cat’s age in human years',
+          artist: 'unknown artist',
+          year: '?',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
