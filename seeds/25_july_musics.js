@@ -3352,6 +3352,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 187,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=592165065/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://anemonelovesyou.bandcamp.com/album/baby-only-you-i',
+          a_string: 'Baby Only You &amp; I by Anemone',
+          rule: {
+            "monday": [ 27, 29, 2, 10 ],
+            "tuesday": [ 26, 28, 1, 9 ],
+            "wednesday": [ 25, 26, 31, 8 ],
+            "thursday": [ 24, 26, 30, 7 ],
+            "saturday": [ 28, 30, 3, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 188,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2297409709/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://emotional-response-recs.bandcamp.com/album/guess-work',
+          a_string: 'Guess Work by BLUES LAWYER',
+          rule: {
+            "monday": [ 28, 30, 3, 11 ],
+            "tuesday": [ 27, 29, 2, 10 ],
+            "wednesday": [ 26, 28, 1, 9 ],
+            "thursday": [ 25, 26, 31, 8 ],
+            "saturday": [ 24, 26, 30, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 189,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3098710388/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://porlolomusic.bandcamp.com/album/awards',
+          a_string: 'Awards by Porlolo',
+          rule: {
+            "monday": [ 25, 27, 31, 8 ],
+            "tuesday": [ 29, 31, 4, 12 ],
+            "wednesday": [ 28, 30, 3, 11 ],
+            "thursday": [ 27, 29, 2, 10 ],
+            "saturday": [ 26, 27, 1, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
