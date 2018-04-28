@@ -5904,6 +5904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 296,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/the-diagnostic-of-view-v-1992.jpg',
+          title: 'The diagnostic of view V',
+          artist: 'Luc Tuymans',
+          year: '1992',
+          rule: {
+            "monday": [ 14, 20, 8, 16 ],
+            "tuesday": [ 13, 19, 7, 15 ],
+            "wednesday": [ 12, 18, 6, 14 ],
+            "thursday": [ 11, 17, 5, 13 ],
+            "friday": [ 10, 16, 4, 13 ],
+            "saturday": [ 9, 15, 3, 11 ],
+            "sunday": [ 7, 14, 2, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 297,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/o41-69-1969.jpg',
+          title: 'O41 - 69',
+          artist: 'Fernando Lanhas',
+          year: '1969',
+          rule: {
+            "monday": [ 7, 14, 2, 9 ],
+            "tuesday": [ 14, 20, 8, 16 ],
+            "wednesday": [ 13, 19, 7, 15 ],
+            "thursday": [ 12, 18, 6, 14 ],
+            "friday": [ 11, 17, 5, 13 ],
+            "saturday": [ 10, 16, 4, 13 ],
+            "sunday": [ 9, 15, 3, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 298,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/cafeti-re-1949.jpg',
+          title: 'Cafetière',
+          artist: 'Mario Prassinos',
+          year: '1949',
+          rule: {
+            "monday": [ 9, 15, 3, 11 ],
+            "tuesday": [ 7, 14, 2, 9 ],
+            "wednesday": [ 14, 20, 8, 16 ],
+            "thursday": [ 13, 19, 7, 15 ],
+            "friday": [ 12, 18, 6, 14 ],
+            "saturday": [ 11, 17, 5, 13 ],
+            "sunday": [ 10, 16, 4, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 299,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/la-pres-1950.jpg',
+          title: 'La Presó',
+          artist: 'Joan Ponc',
+          year: '1950',
+          rule: {
+            "monday": [ 10, 16, 4, 13 ],
+            "tuesday": [ 9, 15, 3, 11 ],
+            "wednesday": [ 7, 14, 2, 9 ],
+            "thursday": [ 14, 20, 8, 16 ],
+            "friday": [ 13, 19, 7, 15 ],
+            "saturday": [ 12, 18, 6, 14 ],
+            "sunday": [ 11, 17, 5, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 300,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/sem-t-tulo-1954.jpg',
+          title: 'Sem título',
+          artist: 'Menez',
+          year: '1954',
+          rule: {
+            "monday": [ 11, 17, 5, 13 ],
+            "tuesday": [ 10, 16, 4, 13 ],
+            "wednesday": [ 9, 15, 3, 11 ],
+            "thursday": [ 7, 14, 2, 9 ],
+            "friday": [ 14, 20, 8, 16 ],
+            "saturday": [ 13, 19, 7, 15 ],
+            "sunday": [ 12, 18, 6, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
