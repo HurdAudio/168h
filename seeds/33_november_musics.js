@@ -2920,6 +2920,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 163,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=828453224/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://theholyforest.bandcamp.com/album/holy-forest',
+          a_string: 'Holy Forest by Holy Forest',
+          rule: {
+            "monday": [ 25, 6, 17, 21 ],
+            "tuesday": [ 24, 5, 16, 20 ],
+            "wednesday": [ 23, 4, 15, 19 ],
+            "thursday": [ 22, 3, 14, 16 ],
+            "saturday": [ 21, 2, 13, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 164,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2153268527/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://amerigo.bandcamp.com/album/fela-soul-deluxe-edition',
+          a_string: 'Fela Soul [Deluxe Edition] by Amerigo Gazaway',
+          rule: {
+            "monday": [ 21, 2, 13, 25 ],
+            "tuesday": [ 25, 6, 17, 21 ],
+            "wednesday": [ 24, 5, 16, 20 ],
+            "thursday": [ 23, 4, 15, 19 ],
+            "saturday": [ 22, 3, 14, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 165,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=370222511/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://hereliesman.bandcamp.com/album/here-lies-man',
+          a_string: 'Here Lies Man by Here Lies Man',
+          rule: {
+            "monday": [ 22, 3, 14, 16 ],
+            "tuesday": [ 21, 2, 13, 25 ],
+            "wednesday": [ 25, 6, 17, 21 ],
+            "thursday": [ 24, 5, 16, 20 ],
+            "saturday": [ 23, 4, 15, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
