@@ -5504,6 +5504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 276,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/volume-a-moduli-sfasati-1960.jpg',
+          title: 'Volume a moduli sfasati',
+          artist: 'Dadamaino',
+          year: '1960',
+          rule: {
+            "monday": [ 11, 16, 22, 29 ],
+            "tuesday": [ 17, 22, 28, 3 ],
+            "wednesday": [ 16, 21, 26, 2 ],
+            "thursday": [ 15, 20, 26, 30 ],
+            "friday": [ 14, 17, 25, 30 ],
+            "saturday": [ 13, 17, 24, 29 ],
+            "sunday": [ 12, 17, 23, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 277,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/the-islands-1961(1).jpg',
+          title: 'The Islands',
+          artist: 'Agnes Martin',
+          year: 'c.1961',
+          rule: {
+            "monday": [ 12, 17, 23, 28 ],
+            "tuesday": [ 11, 16, 22, 29 ],
+            "wednesday": [ 17, 22, 28, 3 ],
+            "thursday": [ 16, 21, 26, 2 ],
+            "friday": [ 15, 20, 26, 30 ],
+            "saturday": [ 14, 17, 25, 30 ],
+            "sunday": [ 13, 17, 24, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 278,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/one-1962.jpg',
+          title: 'One',
+          artist: 'Anne Truitt',
+          year: '1962',
+          rule: {
+            "monday": [ 13, 17, 24, 29 ],
+            "tuesday": [ 12, 17, 23, 28 ],
+            "wednesday": [ 11, 16, 22, 29 ],
+            "thursday": [ 17, 22, 28, 3 ],
+            "friday": [ 16, 21, 26, 2 ],
+            "saturday": [ 15, 20, 26, 30 ],
+            "sunday": [ 14, 17, 25, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 279,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/squiggle-1962.jpg',
+          title: 'Squiggle',
+          artist: 'Sheila Hicks',
+          year: '1962',
+          rule: {
+            "monday": [ 14, 17, 25, 30 ],
+            "tuesday": [ 13, 17, 24, 29 ],
+            "wednesday": [ 12, 17, 23, 28 ],
+            "thursday": [ 11, 16, 22, 29 ],
+            "friday": [ 17, 22, 28, 3 ],
+            "saturday": [ 16, 21, 26, 2 ],
+            "sunday": [ 15, 20, 26, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 280,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/folding-scroll-1963.jpg',
+          title: 'Folding Scroll',
+          artist: 'Li Yuan-chia',
+          year: '1963',
+          rule: {
+            "monday": [ 16, 21, 27, 1 ],
+            "tuesday": [ 15, 18, 25, 30 ],
+            "wednesday": [ 14, 18, 25, 30 ],
+            "thursday": [ 13, 18, 24, 29 ],
+            "friday": [ 12, 17, 23, 30 ],
+            "saturday": [ 18, 23, 29, 4 ],
+            "sunday": [ 17, 22, 27, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
