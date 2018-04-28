@@ -2812,6 +2812,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 157,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3852214307/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://kafundrecords.bandcamp.com/album/kafund-vol-1-digital-roots-music-from-brazil',
+          a_string: 'Kafundó Vol. 1;  Digital Roots Music from Brazil by Various Artists',
+          rule: {
+            "monday": [ 29, 4, 10, 16 ],
+            "tuesday": [ 28, 3, 9, 14 ],
+            "wednesday": [ 27, 2, 8, 14 ],
+            "thursday": [ 24, 1, 7, 13 ],
+            "saturday": [ 25, 31, 6, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 158,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1980957318/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://oituyo.bandcamp.com/album/pra-doer',
+          a_string: 'Pra Doer by Tuyo',
+          rule: {
+            "monday": [ 25, 31, 6, 12 ],
+            "tuesday": [ 29, 4, 10, 16 ],
+            "wednesday": [ 28, 3, 9, 14 ],
+            "thursday": [ 27, 2, 8, 14 ],
+            "saturday": [ 24, 1, 7, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 159,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2213952639/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://arcazas.bandcamp.com/album/felipe-arcazas-vintage-cucumber-split',
+          a_string: 'Felipe Arcazas &amp; Vintage Cucumber Split by Felipe Arcazas &amp; Vintage Cucumber',
+          rule: {
+            "monday": [ 24, 1, 7, 13 ],
+            "tuesday": [ 25, 31, 6, 12 ],
+            "wednesday": [ 29, 4, 10, 16 ],
+            "thursday": [ 28, 3, 9, 14 ],
+            "saturday": [ 27, 2, 8, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
