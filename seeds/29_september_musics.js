@@ -3136,6 +3136,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 175,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3102081202/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://grandtetras.bandcamp.com/album/abiogen-se',
+          a_string: 'Abiogenèse by Grand Tétras',
+          rule: {
+            "monday": [ 27, 17, 25, 20 ],
+            "tuesday": [ 26, 16, 24, 18 ],
+            "wednesday": [ 25, 15, 23, 17 ],
+            "thursday": [ 29, 19, 27, 21 ],
+            "saturday": [ 28, 18, 26, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 176,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1626748900/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cuneiformrecords.bandcamp.com/album/carnival-detournement',
+          a_string: 'Carnival Detournement by Hamster Theatre',
+          rule: {
+            "monday": [ 28, 18, 26, 20 ],
+            "tuesday": [ 27, 17, 25, 20 ],
+            "wednesday": [ 26, 16, 24, 18 ],
+            "thursday": [ 25, 15, 23, 17 ],
+            "saturday": [ 29, 19, 27, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 177,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3639143363/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://universzero.bandcamp.com/album/h-r-sie',
+          a_string: 'Hérésie by Univers Zero',
+          rule: {
+            "monday": [ 29, 19, 27, 21 ],
+            "tuesday": [ 28, 18, 26, 20 ],
+            "wednesday": [ 27, 17, 25, 20 ],
+            "thursday": [ 26, 16, 24, 18 ],
+            "saturday": [ 25, 15, 23, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
