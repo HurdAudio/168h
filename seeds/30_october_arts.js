@@ -5704,6 +5704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 286,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_warsovpost_00021.jpg',
+          title: 'For the motherland!',
+          artist: 'A.Kokorekin',
+          year: '1942',
+          rule: {
+            "monday": [ 12, 23, 3, 7 ],
+            "tuesday": [ 11, 22, 2, 6 ],
+            "wednesday": [ 10, 21, 22, 5 ],
+            "thursday": [ 19, 20, 31, 4 ],
+            "friday": [ 15, 26, 6, 10 ],
+            "saturday": [ 14, 25, 5, 9 ],
+            "sunday": [ 13, 24, 4, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 287,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_warsovpost_00020.jpg',
+          title: 'Red Army soldier SAVE!',
+          artist: 'V.Kopecky',
+          year: '1942',
+          rule: {
+            "monday": [ 14, 25, 5, 9 ],
+            "tuesday": [ 13, 24, 4, 8 ],
+            "wednesday": [ 12, 23, 3, 7 ],
+            "thursday": [ 11, 22, 23, 6 ],
+            "friday": [ 20, 21, 1, 5 ],
+            "saturday": [ 16, 27, 7, 11 ],
+            "sunday": [ 15, 26, 6, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 288,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_warsovpost_00018.jpg',
+          title: 'German invaders!',
+          artist: 'B. Efimov, N. Dolgorukov',
+          year: '1942',
+          rule: {
+            "monday": [ 15, 26, 6, 10 ],
+            "tuesday": [ 14, 25, 5, 9 ],
+            "wednesday": [ 13, 24, 4, 8 ],
+            "thursday": [ 12, 23, 3, 7 ],
+            "friday": [ 11, 22, 23, 6 ],
+            "saturday": [ 20, 21, 1, 5 ],
+            "sunday": [ 16, 27, 7, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 289,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_warsovpost_00013.jpg',
+          title: 'To Moscow! From Moscow!',
+          artist: 'V. Deni',
+          year: '1941 - 1942',
+          rule: {
+            "monday": [ 16, 27, 7, 11 ],
+            "tuesday": [ 15, 26, 6, 10 ],
+            "wednesday": [ 14, 25, 5, 9 ],
+            "thursday": [ 13, 24, 4, 8 ],
+            "friday": [ 12, 23, 3, 7 ],
+            "saturday": [ 11, 22, 23, 6 ],
+            "sunday": [ 20, 21, 1, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 290,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_warsovpost_00012.jpg',
+          title: 'The people and the army are invincible!',
+          artist: 'V. Koretsky',
+          year: '1941',
+          rule: {
+            "monday": [ 20, 21, 1, 5 ],
+            "tuesday": [ 16, 27, 7, 11 ],
+            "wednesday": [ 15, 26, 6, 10 ],
+            "thursday": [ 14, 25, 5, 9 ],
+            "friday": [ 13, 24, 4, 8 ],
+            "saturday": [ 12, 23, 3, 7 ],
+            "sunday": [ 11, 22, 23, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
