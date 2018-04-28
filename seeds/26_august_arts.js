@@ -6104,6 +6104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 306,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/walchensee-1920.jpg',
+          title: 'Walchensee',
+          artist: 'Lovis Corinth',
+          year: '1920',
+          rule: {
+            "monday": [ 12, 14, 24, 9 ],
+            "tuesday": [ 11, 14, 23, 8 ],
+            "wednesday": [ 10, 13, 22, 7 ],
+            "thursday": [ 16, 20, 28, 13 ],
+            "friday": [ 15, 18, 27, 12 ],
+            "saturday": [ 14, 18, 26, 11 ],
+            "sunday": [ 13, 17, 25, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 307,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/the-pier-dordrecht.jpg',
+          title: 'The Pier, Dordrecht',
+          artist: 'Frits Thaulow',
+          year: '1905',
+          rule: {
+            "monday": [ 13, 17, 25, 10 ],
+            "tuesday": [ 12, 14, 24, 9 ],
+            "wednesday": [ 11, 14, 23, 8 ],
+            "thursday": [ 10, 13, 22, 7 ],
+            "friday": [ 16, 20, 28, 13 ],
+            "saturday": [ 15, 18, 27, 12 ],
+            "sunday": [ 14, 18, 26, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 308,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/at-balcic-1936.jpg',
+          title: 'At Balcic',
+          artist: 'George Stefanescu',
+          year: '1936',
+          rule: {
+            "monday": [ 15, 19, 27, 12 ],
+            "tuesday": [ 14, 18, 26, 11 ],
+            "wednesday": [ 13, 15, 25, 10 ],
+            "thursday": [ 12, 15, 24, 9 ],
+            "friday": [ 11, 14, 23, 8 ],
+            "saturday": [ 17, 21, 29, 14 ],
+            "sunday": [ 16, 19, 28, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 309,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/the-opium-smoker-s-dream-1918.jpg',
+          title: 'The Opium Smoker\'s Dream',
+          artist: 'Lajos Gulacsy',
+          year: '1918',
+          rule: {
+            "monday": [ 16, 19, 28, 13 ],
+            "tuesday": [ 15, 19, 27, 12 ],
+            "wednesday": [ 14, 18, 26, 11 ],
+            "thursday": [ 13, 15, 25, 10 ],
+            "friday": [ 12, 15, 24, 9 ],
+            "saturday": [ 11, 14, 23, 8 ],
+            "sunday": [ 17, 21, 29, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 310,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/two-poets-1929.jpg',
+          title: 'Two Poets',
+          artist: 'Louis Marcoussis',
+          year: '1929',
+          rule: {
+            "monday": [ 17, 21, 29, 14 ],
+            "tuesday": [ 16, 19, 28, 13 ],
+            "wednesday": [ 15, 19, 27, 12 ],
+            "thursday": [ 14, 18, 26, 11 ],
+            "friday": [ 13, 15, 25, 10 ],
+            "saturday": [ 12, 15, 24, 9 ],
+            "sunday": [ 11, 14, 23, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
