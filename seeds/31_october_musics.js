@@ -3028,6 +3028,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 169,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1755169736/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://thrillingliving.bandcamp.com/album/aqu-no-eres-nadie-ep',
+          a_string: '&quot;Aquí no eres nadie&quot; EP by Riña',
+          rule: {
+            "monday": [ 30, 9, 19, 22 ],
+            "tuesday": [ 29, 8, 19, 21 ],
+            "wednesday": [ 2, 12, 22, 25 ],
+            "thursday": [ 1, 11, 21, 24 ],
+            "saturday": [ 31, 10, 20, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 170,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3488827219/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://gumming.bandcamp.com/album/human-values',
+          a_string: 'HUMAN VALUES by Gumming',
+          rule: {
+            "monday": [ 31, 10, 20, 23 ],
+            "tuesday": [ 30, 9, 19, 22 ],
+            "wednesday": [ 29, 8, 19, 21 ],
+            "thursday": [ 2, 12, 22, 25 ],
+            "saturday": [ 1, 11, 21, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 171,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1160278118/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://notnormaltapes.bandcamp.com/album/nnt-060-accela-demo-cs',
+          a_string: 'NNT#060 Accela - Demo CS by Not Normal Tapes',
+          rule: {
+            "monday": [ 1, 11, 21, 24 ],
+            "tuesday": [ 31, 10, 20, 23 ],
+            "wednesday": [ 30, 9, 19, 22 ],
+            "thursday": [ 29, 8, 19, 21 ],
+            "saturday": [ 2, 12, 22, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
