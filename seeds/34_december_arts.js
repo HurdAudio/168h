@@ -5304,6 +5304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 266,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/39-12,SptSty.jpg',
+          title: 'Sport Story',
+          artist: 'Carl Reed',
+          year: '1939',
+          rule: {
+            "monday": [ 9, 22, 30, 5 ],
+            "tuesday": [ 8, 21, 29, 4 ],
+            "wednesday": [ 7, 20, 28, 3 ],
+            "thursday": [ 6, 18, 27, 2 ],
+            "friday": [ 5, 18, 6, 13 ],
+            "saturday": [ 11, 24, 1, 7 ],
+            "sunday": [ 10, 23, 31, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 267,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/26-05,Frontier.jpg',
+          title: 'The Frontier',
+          artist: 'William Reusswig',
+          year: '1926',
+          rule: {
+            "monday": [ 10, 23, 31, 6 ],
+            "tuesday": [ 9, 22, 30, 5 ],
+            "wednesday": [ 8, 21, 29, 4 ],
+            "thursday": [ 7, 20, 28, 3 ],
+            "friday": [ 6, 18, 27, 2 ],
+            "saturday": [ 5, 18, 6, 13 ],
+            "sunday": [ 11, 24, 1, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 268,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/29-10,RadioNews.jpg',
+          title: 'Radio News',
+          artist: 'Gus Ricca',
+          year: '1929',
+          rule: {
+            "monday": [ 11, 24, 1, 7 ],
+            "tuesday": [ 10, 23, 31, 6 ],
+            "wednesday": [ 9, 22, 30, 5 ],
+            "thursday": [ 8, 21, 29, 4 ],
+            "friday": [ 7, 20, 28, 3 ],
+            "saturday": [ 6, 18, 27, 2 ],
+            "sunday": [ 5, 18, 6, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 269,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/1914-03,ThePop.jpg',
+          title: 'The Popular',
+          artist: 'Sidney Riesenberg',
+          year: '1914',
+          rule: {
+            "monday": [ 5, 18, 6, 13 ],
+            "tuesday": [ 11, 24, 1, 7 ],
+            "wednesday": [ 10, 23, 31, 6 ],
+            "thursday": [ 9, 22, 30, 5 ],
+            "friday": [ 8, 21, 29, 4 ],
+            "saturday": [ 7, 20, 28, 3 ],
+            "sunday": [ 6, 18, 27, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 270,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/38-04,AceSpts2.jpg',
+          title: 'Ace Sports',
+          artist: 'Robert Robison',
+          year: '1938',
+          rule: {
+            "monday": [ 6, 18, 27, 2 ],
+            "tuesday": [ 5, 18, 6, 13 ],
+            "wednesday": [ 11, 24, 1, 7 ],
+            "thursday": [ 10, 23, 31, 6 ],
+            "friday": [ 9, 22, 30, 5 ],
+            "saturday": [ 8, 21, 29, 4 ],
+            "sunday": [ 7, 20, 28, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
