@@ -3244,6 +3244,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 181,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1195461427/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://skatinjector.bandcamp.com/album/mescaline-massacre',
+          a_string: 'Mescaline Massacre by Skat Injector',
+          rule: {
+            "monday": [ 6, 14, 27, 26 ],
+            "tuesday": [ 5, 13, 26, 25 ],
+            "wednesday": [ 4, 12, 25, 24 ],
+            "thursday": [ 3, 11, 24, 23 ],
+            "saturday": [ 7, 15, 28, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 182,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2687099287/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://legsakimborecords.bandcamp.com/album/legs-net-110-intact-hypervessel',
+          a_string: 'LEGS-NET 110: Intact Hypervessel by Gridbug',
+          rule: {
+            "monday": [ 8, 16, 29, 28 ],
+            "tuesday": [ 7, 15, 28, 27 ],
+            "wednesday": [ 6, 14, 27, 26 ],
+            "thursday": [ 5, 13, 26, 25 ],
+            "saturday": [ 4, 12, 25, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 183,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2884053876/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://splitterstormrecords.bandcamp.com/album/splitterstorm-alpha',
+          a_string: 'Splitterstorm Alpha by Various',
+          rule: {
+            "monday": [ 4, 12, 25, 24 ],
+            "tuesday": [ 8, 16, 29, 28 ],
+            "wednesday": [ 7, 15, 28, 27 ],
+            "thursday": [ 6, 14, 27, 26 ],
+            "saturday": [ 5, 13, 26, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
