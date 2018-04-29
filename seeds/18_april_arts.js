@@ -6796,7 +6796,7 @@ exports.seed = function(knex, Promise) {
           rule: {
             "monday": [ 14, 19, 25, 1 ],
             "tuesday": [ 13, 18, 24, 30 ],
-            "wednesday":[ 18, 24, 29, 6 ],
+            "wednesday": [ 18, 24, 29, 6 ],
             "thursday": [ 2, 22, 28, 4 ],
             "friday": [ 17, 22, 28, 4 ],
             "saturday": [ 16, 20, 5, 3 ],
@@ -6816,7 +6816,7 @@ exports.seed = function(knex, Promise) {
           rule: {
             "monday": [ 15, 20, 25, 1 ],
             "tuesday": [ 14, 19, 25, 1 ],
-            "wednesday":[ 13, 18, 24, 30 ],
+            "wednesday": [ 13, 18, 24, 30 ],
             "thursday": [ 18, 24, 29, 6 ],
             "friday": [ 2, 22, 28, 4 ],
             "saturday": [ 17, 22, 28, 4 ],
@@ -6836,7 +6836,7 @@ exports.seed = function(knex, Promise) {
           rule: {
             "monday": [ 16, 20, 5, 3 ],
             "tuesday": [ 15, 20, 25, 1 ],
-            "wednesday":[ 14, 19, 25, 1 ],
+            "wednesday": [ 14, 19, 25, 1 ],
             "thursday": [ 13, 18, 24, 30 ],
             "friday": [ 18, 24, 29, 6 ],
             "saturday": [ 2, 22, 28, 4 ],
@@ -6856,7 +6856,7 @@ exports.seed = function(knex, Promise) {
           rule: {
             "monday": [ 18, 21, 29, 5 ],
             "tuesday": [ 17, 21, 6, 4 ],
-            "wednesday":[ 16, 21, 26, 2 ],
+            "wednesday": [ 16, 21, 26, 2 ],
             "thursday": [ 15, 20, 26, 2 ],
             "friday": [ 14, 19, 25, 1 ],
             "saturday": [ 19, 25, 30, 7 ],
@@ -6876,7 +6876,7 @@ exports.seed = function(knex, Promise) {
           rule: {
             "monday": [ 3, 23, 29, 5 ],
             "tuesday": [ 18, 21, 29, 5 ],
-            "wednesday":[ 17, 21, 6, 4 ],
+            "wednesday": [ 17, 21, 6, 4 ],
             "thursday": [ 16, 21, 26, 2 ],
             "friday": [ 15, 20, 26, 2 ],
             "saturday": [ 14, 19, 25, 1 ],
@@ -6896,11 +6896,111 @@ exports.seed = function(knex, Promise) {
           rule: {
             "monday": [ 19, 25, 30, 7 ],
             "tuesday": [ 3, 23, 29, 5 ],
-            "wednesday":[ 18, 21, 29, 5 ],
+            "wednesday": [ 18, 21, 29, 5 ],
             "thursday": [ 17, 21, 6, 4 ],
             "friday": [ 16, 21, 26, 2 ],
             "saturday": [ 15, 20, 26, 2 ],
             "sunday": [ 14, 19, 25, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 346,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/images.jpeg',
+          title: 'AT&T Park',
+          artist: 'Dan Donnelly',
+          year: '2016',
+          rule: {
+            "monday": [ 14, 19, 25, 1 ],
+            "tuesday": [ 19, 25, 30, 7 ],
+            "wednesday": [ 3, 23, 29, 5 ],
+            "thursday": [ 18, 21, 29, 5 ],
+            "friday": [ 17, 21, 6, 4 ],
+            "saturday": [ 16, 21, 26, 2 ],
+            "sunday": [ 15, 20, 26, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 347,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/cheap-san-francisco-giants-tickets.jpg',
+          title: 'Buster Posey',
+          artist: 'unknown artist',
+          year: '2018',
+          rule: {
+            "monday": [ 15, 20, 26, 2 ],
+            "tuesday": [ 15, 20, 26, 2 ],
+            "wednesday": [ 14, 19, 25, 1 ],
+            "thursday": [ 19, 25, 30, 7 ],
+            "friday": [ 3, 23, 29, 5 ],
+            "saturday": [ 18, 21, 29, 5 ],
+            "sunday": [ 17, 21, 6, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 348,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/RMLB02GIANTS-2.jpg',
+          title: 'San Francisco National League Championship Ring',
+          artist: 'unknown artist',
+          year: '2002',
+          rule: {
+            "monday": [ 17, 21, 6, 4 ],
+            "tuesday": [ 15, 20, 26, 2 ],
+            "wednesday": [ 15, 20, 26, 2 ],
+            "thursday": [ 14, 19, 25, 1 ],
+            "friday": [ 19, 25, 30, 7 ],
+            "saturday": [ 3, 23, 29, 5 ],
+            "sunday": [ 18, 21, 29, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 349,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/giants-angels-baseball_25874203_8320151.jpg',
+          title: 'San Francisco Giants starting pitcher Johnny Cueto celebrates after the sixth inning',
+          artist: 'Chris Carlson',
+          year: '2018',
+          rule: {
+            "monday": [ 18, 21, 29, 5 ],
+            "tuesday": [ 17, 21, 6, 4 ],
+            "wednesday": [ 15, 20, 26, 2 ],
+            "thursday": [ 15, 20, 26, 2 ],
+            "friday": [ 14, 19, 25, 1 ],
+            "saturday": [ 19, 25, 30, 7 ],
+            "sunday": [ 3, 23, 29, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 350,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/920x920.jpg',
+          title: 'Andrew McCutchen #22 of the San Francisco Giants leaves the dugout prior to a game against the Chicago Cubs',
+          artist: 'Alex Trautwig',
+          year: '2018',
+          rule: {
+            "monday": [ 4, 24, 30, 6 ],
+            "tuesday": [ 19, 22, 30, 6 ],
+            "wednesday": [ 18, 22, 7, 5 ],
+            "thursday": [ 16, 21, 27, 3 ],
+            "friday": [ 16, 21, 27, 3 ],
+            "saturday": [ 15, 20, 26, 2 ],
+            "sunday": [ 20, 26, 1, 8 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
