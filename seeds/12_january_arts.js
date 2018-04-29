@@ -7504,6 +7504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 376,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/palabras-sin-contenido-el-percutor-2016.jpg',
+          title: 'Words Without Content. The Percutor',
+          artist: 'Chicote CFC',
+          year: '2016',
+          rule: {
+            "monday": [ 4, 6, 10, 13 ],
+            "tuesday": [ 6, 8, 9, 12 ],
+            "wednesday": [ 22, 23, 3, 26 ],
+            "thursday": [ 25, 27, 19, 8 ],
+            "friday": [ 27, 28, 20, 23 ],
+            "saturday": [ 30, 31, 22, 26 ],
+            "sunday": [ 2, 4, 5, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 377,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/abstraction-white-rose.jpg',
+          title: 'Abstraction White Rose',
+          artist: 'Georgia O\'Keeffe',
+          year: '1927',
+          rule: {
+            "monday": [ 2, 4, 5, 7 ],
+            "tuesday": [ 4, 6, 10, 13 ],
+            "wednesday": [ 6, 8, 9, 12 ],
+            "thursday": [ 22, 23, 3, 26 ],
+            "friday": [ 25, 27, 19, 8 ],
+            "saturday": [ 27, 28, 20, 23 ],
+            "sunday": [ 30, 31, 22, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 378,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/variation-field-of-tulips-1916.jpg',
+          title: 'Variation: Field of Tulips',
+          artist: 'Alexej von Jawlensky',
+          year: '1916',
+          rule: {
+            "monday": [ 31, 1, 23, 27 ],
+            "tuesday": [ 3, 5, 6, 8 ],
+            "wednesday": [ 5, 7, 11, 14 ],
+            "thursday": [ 7, 9, 10, 11 ],
+            "friday": [ 23, 24, 4, 27 ],
+            "saturday": [ 26, 28, 20, 9 ],
+            "sunday": [ 31, 29, 21, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 379,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/indian-summer-1941.jpg',
+          title: 'Indian Summer',
+          artist: 'Arthur Dove',
+          year: '1941',
+          rule: {
+            "monday": [ 31, 29, 21, 24 ],
+            "tuesday": [ 31, 1, 23, 27 ],
+            "wednesday": [ 3, 5, 6, 8 ],
+            "thursday": [ 5, 7, 11, 14 ],
+            "friday": [ 7, 9, 10, 11 ],
+            "saturday": [ 23, 24, 4, 27 ],
+            "sunday": [ 26, 28, 20, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 380,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/soulflowers.jpg',
+          title: 'Soulflowers',
+          artist: 'Janos Mattis-Teutsch',
+          year: '?',
+          rule: {
+            "monday": [ 26, 28, 20, 9 ],
+            "tuesday": [ 31, 29, 21, 24 ],
+            "wednesday": [ 31, 1, 23, 27 ],
+            "thursday": [ 3, 5, 6, 8 ],
+            "friday": [ 5, 7, 11, 14 ],
+            "saturday": [ 7, 9, 10, 11 ],
+            "sunday": [ 23, 24, 4, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
