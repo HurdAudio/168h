@@ -160,6 +160,8 @@ const occasions_share_reactions = require('./routes/occasions_share_reactions.js
 const occasions_share_reactionsbyuser = require('./routes/occasions_share_reactionsbyuser.js');
 const task_share_reactions = require('./routes/task_share_reactions.js');
 const task_share_reactionsbyuser = require('./routes/task_share_reactionsbyuser.js');
+const observance_share_reactions = require('./routes/observance_share_reactions.js');
+const observance_share_reactionsbyuser = require('./routes/observance_share_reactionsbyuser.js');
 
 const port = process.env.PORT || 3007;
 
@@ -320,6 +322,8 @@ app.use(fileUpload());
  app.use('/occasions_share_reactionsbyuser', occasions_share_reactionsbyuser);
  app.use('/task_share_reactions', task_share_reactions);
  app.use('/task_share_reactionsbyuser', task_share_reactionsbyuser);
+ app.use('/observance_share_reactions', observance_share_reactions);
+ app.use('/observance_share_reactionsbyuser', observance_share_reactionsbyuser);
 
 app.get('/onthisdayinhistory/:date', (req, res, next) =>{
   let newUrl = 'http://history.muffinlabs.com/date/';
