@@ -6304,6 +6304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 316,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/au-cr-puscule-chabas-colour-reproduction.jpg',
+          title: 'Au Crépuscule',
+          artist: 'Paul Émile Chabas',
+          year: '1905',
+          rule: {
+            "monday": [ 16, 27, 7, 18 ],
+            "tuesday": [ 15, 26, 6, 17 ],
+            "wednesday": [ 14, 25, 5, 6 ],
+            "thursday": [ 13, 24, 3, 5 ],
+            "friday": [ 12, 23, 3, 4 ],
+            "saturday": [ 11, 22, 2, 13 ],
+            "sunday": [ 17, 28, 8, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 317,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/boatwomen-in-brittany.jpg',
+          title: 'Boatwomen in Brittany',
+          artist: 'Georges Lacombe',
+          year: '?',
+          rule: {
+            "monday": [ 17, 28, 8, 18 ],
+            "tuesday": [ 16, 27, 7, 18 ],
+            "wednesday": [ 15, 26, 6, 17 ],
+            "thursday": [ 14, 25, 5, 6 ],
+            "friday": [ 13, 24, 3, 5 ],
+            "saturday": [ 12, 23, 3, 4 ],
+            "sunday": [ 11, 22, 2, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 318,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/alley-of-poplars-1900.jpg',
+          title: 'Alley of Poplars',
+          artist: 'Gustave Loiseau',
+          year: '1900',
+          rule: {
+            "monday": [ 11, 22, 2, 13 ],
+            "tuesday": [ 17, 28, 8, 18 ],
+            "wednesday": [ 16, 27, 7, 18 ],
+            "thursday": [ 15, 26, 6, 17 ],
+            "friday": [ 14, 25, 5, 6 ],
+            "saturday": [ 13, 24, 3, 5 ],
+            "sunday": [ 12, 23, 3, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 319,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/fisherman-on-the-laita-1890.jpg',
+          title: 'Fisherman on the Laita',
+          artist: 'Paul Serusier',
+          year: '1890',
+          rule: {
+            "monday": [ 12, 23, 3, 4 ],
+            "tuesday": [ 11, 22, 2, 13 ],
+            "wednesday": [ 17, 28, 8, 18 ],
+            "thursday": [ 16, 27, 7, 18 ],
+            "friday": [ 15, 26, 6, 17 ],
+            "saturday": [ 14, 25, 5, 6 ],
+            "sunday": [ 13, 24, 3, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 320,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/rue-caulaincourt-mills-on-montmarte-1884.jpg',
+          title: 'Rue Caulaincourt. Mills on Montmarte',
+          artist: 'Paul Signac',
+          year: '1884',
+          rule: {
+            "monday": [ 13, 24, 3, 5 ],
+            "tuesday": [ 12, 23, 3, 4 ],
+            "wednesday": [ 11, 22, 2, 13 ],
+            "thursday": [ 17, 28, 8, 18 ],
+            "friday": [ 16, 27, 7, 18 ],
+            "saturday": [ 15, 26, 6, 17 ],
+            "sunday": [ 14, 25, 5, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
