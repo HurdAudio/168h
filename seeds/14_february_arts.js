@@ -7304,6 +7304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 366,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/allan-rohan-crite-deble-rhythm-pounder,-senufo-republic-of-the-ivory-coast.jpg',
+          title: 'Deble Rhythm Pounder, Senufo Republic of the Ivory Coast',
+          artist: 'Allan Rohan Crite',
+          year: '1979 - 1980',
+          rule: {
+            "monday": [ 23, 2, 10, 18 ],
+            "tuesday": [ 24, 4, 12, 20 ],
+            "wednesday": [ 1, 6, 12, 22 ],
+            "thursday": [ 29, 8, 16, 24 ],
+            "friday": [ 2, 12, 18, 24 ],
+            "saturday": [ 4, 12, 20, 1 ],
+            "sunday": [ 4, 14, 10, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 367,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/73.jpg',
+          title: 'Origins',
+          artist: 'Emilio Cruz',
+          year: '?',
+          rule: {
+            "monday": [ 4, 14, 10, 29 ],
+            "tuesday": [ 23, 2, 10, 18 ],
+            "wednesday": [ 24, 4, 12, 20 ],
+            "thursday": [ 1, 6, 12, 22 ],
+            "friday": [ 29, 8, 16, 24 ],
+            "saturday": [ 2, 12, 18, 24 ],
+            "sunday": [ 4, 12, 20, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 368,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/Cummings-Frank_Carousel-fe.jpg',
+          title: 'Carousel Age of Awareness',
+          artist: 'Frank E. Cummings III',
+          year: '?',
+          rule: {
+            "monday": [ 4, 12, 20, 1 ],
+            "tuesday": [ 4, 14, 10, 29 ],
+            "wednesday": [ 23, 2, 10, 18 ],
+            "thursday": [ 24, 4, 12, 20 ],
+            "friday": [ 1, 6, 12, 22 ],
+            "saturday": [ 29, 8, 16, 24 ],
+            "sunday": [ 2, 12, 18, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 369,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/1567913_FLYAWAY.jpg',
+          title: 'I\'ll Fly Away',
+          artist: 'Michael Cummings',
+          year: '2007',
+          rule: {
+            "monday": [ 2, 12, 18, 24 ],
+            "tuesday": [ 4, 12, 20, 1 ],
+            "wednesday": [ 4, 14, 10, 29 ],
+            "thursday": [ 23, 2, 10, 18 ],
+            "friday": [ 24, 4, 12, 20 ],
+            "saturday": [ 1, 6, 12, 22 ],
+            "sunday": [ 29, 8, 16, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 370,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/ulysses-davis-lost-tribe-in-the-swamp-with-alligators.jpg',
+          title: 'Lost Tribe in the Swamp with Alligators',
+          artist: 'Ulysses Davis',
+          year: '2012',
+          rule: {
+            "monday": [ 29, 8, 16, 24 ],
+            "tuesday": [ 2, 12, 18, 24 ],
+            "wednesday": [ 4, 12, 20, 1 ],
+            "thursday": [ 4, 14, 10, 29 ],
+            "friday": [ 23, 2, 10, 18 ],
+            "saturday": [ 24, 4, 12, 20 ],
+            "sunday": [ 1, 6, 12, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
