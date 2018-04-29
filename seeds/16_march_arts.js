@@ -7104,6 +7104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 356,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/sleeping-girl.jpg',
+          title: 'Sleeping girl',
+          artist: 'Sonia Delaunay',
+          year: '1907',
+          rule: {
+            "monday": [ 16, 26, 3, 13 ],
+            "tuesday": [ 15, 25, 2, 12 ],
+            "wednesday": [ 14, 24, 2, 11 ],
+            "thursday": [ 20, 29, 8, 16 ],
+            "friday": [ 19, 29, 8, 16 ],
+            "saturday": [ 19, 28, 5, 15 ],
+            "sunday": [ 17, 27, 4, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 357,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/e-f-c-b-estrada-de-ferro-central-do-brasil-1924.jpg',
+          title: 'E.F.C.B. (Estrada de Ferro Central do Brasil)',
+          artist: 'Tarsila do Amaral',
+          year: '1924',
+          rule: {
+            "monday": [ 18, 28, 5, 15 ],
+            "tuesday": [ 17, 27, 4, 14 ],
+            "wednesday": [ 16, 26, 3, 13 ],
+            "thursday": [ 15, 25, 3, 12 ],
+            "friday": [ 21, 30, 9, 17 ],
+            "saturday": [ 20, 30, 7, 17 ],
+            "sunday": [ 20, 29, 6, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 358,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/number-319-1949.jpg',
+          title: 'Number 319',
+          artist: 'Anne Ryan',
+          year: '1949',
+          rule: {
+            "monday": [ 20, 29, 6, 16 ],
+            "tuesday": [ 18, 28, 5, 15 ],
+            "wednesday": [ 17, 27, 4, 14 ],
+            "thursday": [ 16, 26, 3, 13 ],
+            "friday": [ 15, 25, 3, 12 ],
+            "saturday": [ 21, 30, 9, 17 ],
+            "sunday": [ 20, 30, 7, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 359,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/usine-de-mes-pens-es-1920.jpg',
+          title: 'Usine de Mes Pensées',
+          artist: 'Suzanne Duchamp',
+          year: '1920',
+          rule: {
+            "monday": [ 20, 30, 7, 17 ],
+            "tuesday": [ 20, 29, 6, 16 ],
+            "wednesday": [ 18, 28, 5, 15 ],
+            "thursday": [ 17, 27, 4, 14 ],
+            "friday": [ 16, 26, 3, 13 ],
+            "saturday": [ 15, 25, 3, 12 ],
+            "sunday": [ 21, 30, 9, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 360,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/professionalization-albeeg-goldfish-1931.jpg',
+          title: 'Goldfish',
+          artist: 'Grace Albee',
+          year: '1931',
+          rule: {
+            "monday": [ 21, 30, 9, 17 ],
+            "tuesday": [ 20, 30, 7, 17 ],
+            "wednesday": [ 20, 29, 6, 16 ],
+            "thursday": [ 18, 28, 5, 15 ],
+            "friday": [ 17, 27, 4, 14 ],
+            "saturday": [ 16, 26, 3, 13 ],
+            "sunday": [ 15, 25, 3, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
