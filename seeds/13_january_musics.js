@@ -4000,6 +4000,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 223,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2177790453/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://gyanriley.bandcamp.com/album/sprig',
+          a_string: 'Sprig by Gyan Riley',
+          rule: {
+            "monday": [ 9, 15, 17, 18 ],
+            "tuesday": [ 8, 15, 16, 17 ],
+            "wednesday": [ 7, 13, 14, 15 ],
+            "thursday": [ 6, 13, 14, 15 ],
+            "saturday": [ 10, 17, 18, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 224,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1460522739/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jeffsnyder.bandcamp.com/album/sunspots',
+          a_string: 'Sunspots by Jeff Snyder',
+          rule: {
+            "monday": [ 11, 18, 19, 20 ],
+            "tuesday": [ 10, 16, 18, 19 ],
+            "wednesday": [ 9, 16, 17, 18 ],
+            "thursday": [ 8, 14, 15, 16 ],
+            "saturday": [ 7, 14, 15, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 225,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4123164387/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://gregstuart.bandcamp.com/album/eva-maria-houben-duos',
+          a_string: 'Eva-Maria Houben: Duos by Erik Carlson and Greg Stuart',
+          rule: {
+            "monday": [ 7, 14, 15, 16 ],
+            "tuesday": [ 11, 18, 19, 20 ],
+            "wednesday": [ 10, 16, 18, 19 ],
+            "thursday": [ 9, 16, 17, 18 ],
+            "saturday": [ 8, 14, 15, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
