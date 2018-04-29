@@ -3568,6 +3568,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 199,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3619344087/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://fathermurphy.bandcamp.com/album/rising-a-requiem-for-father-murphy',
+          a_string: 'Rising. A Requiem For Father Murphy by Father Murphy',
+          rule: {
+            "monday": [ 31, 6, 13, 26 ],
+            "tuesday": [ 30, 5, 12, 25 ],
+            "wednesday": [ 29, 4, 11, 24 ],
+            "thursday": [ 2, 9, 15, 28 ],
+            "saturday": [ 1, 7, 14, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 200,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'http://bandcamp.com/EmbeddedPlayer/album=3499180334/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://shop.diatribe.ie/album/togetherness',
+          a_string: 'Togetherness by Ed Bennett / Decibel',
+          rule: {
+            "monday": [ 1, 7, 14, 27 ],
+            "tuesday": [ 31, 6, 13, 26 ],
+            "wednesday": [ 30, 5, 12, 25 ],
+            "thursday": [ 29, 4, 11, 24 ],
+            "saturday": [ 2, 9, 15, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 201,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3406352578/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://michaelpisaro.bandcamp.com/album/shades-of-eternal-night',
+          a_string: 'Shades of Eternal Night by Michael Pisaro/Reinier van Houdt',
+          rule: {
+            "monday": [ 2, 9, 15, 28 ],
+            "tuesday": [ 1, 7, 14, 27 ],
+            "wednesday": [ 31, 6, 13, 26 ],
+            "thursday": [ 30, 5, 12, 25 ],
+            "saturday": [ 29, 4, 11, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
