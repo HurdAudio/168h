@@ -6704,6 +6704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 336,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/xeno.jpg',
+          title: 'Xeno',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 14, 24, 1, 13 ],
+            "tuesday": [ 11, 22, 1, 21 ],
+            "wednesday": [ 10, 21, 30, 9 ],
+            "thursday": [ 8, 18, 28, 5 ],
+            "friday": [ 6, 15, 27, 5 ],
+            "saturday": [ 18, 28, 7, 15 ],
+            "sunday": [ 16, 27, 5, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 337,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/cross-heart.jpg',
+          title: 'Cross heart',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 16, 27, 5, 15 ],
+            "tuesday": [ 14, 24, 1, 13 ],
+            "wednesday": [ 11, 22, 1, 21 ],
+            "thursday": [ 10, 21, 30, 9 ],
+            "friday": [ 8, 18, 28, 5 ],
+            "saturday": [ 6, 15, 27, 5 ],
+            "sunday": [ 18, 28, 7, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 338,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/market-1920.jpg',
+          title: 'Market',
+          artist: 'M. H. Maxy',
+          year: '1920',
+          rule: {
+            "monday": [ 18, 28, 7, 15 ],
+            "tuesday": [ 16, 27, 5, 15 ],
+            "wednesday": [ 14, 24, 1, 13 ],
+            "thursday": [ 11, 22, 1, 21 ],
+            "friday": [ 10, 21, 30, 9 ],
+            "saturday": [ 8, 18, 28, 5 ],
+            "sunday": [ 6, 15, 27, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 339,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/human-construction-1926.jpg',
+          title: 'Human Construction',
+          artist: 'M. H. Maxy',
+          year: '1926',
+          rule: {
+            "monday": [ 6, 15, 27, 5 ],
+            "tuesday": [ 18, 28, 7, 15 ],
+            "wednesday": [ 16, 27, 5, 15 ],
+            "thursday": [ 14, 24, 1, 13 ],
+            "friday": [ 11, 22, 1, 21 ],
+            "saturday": [ 10, 21, 30, 9 ],
+            "sunday": [ 8, 18, 28, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 340,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/peasant-weaving-at-war-1930.jpg',
+          title: 'Peasant weaving at war',
+          artist: 'M. H. Maxy',
+          year: '1930',
+          rule: {
+            "monday": [ 8, 18, 28, 5 ],
+            "tuesday": [ 6, 15, 27, 5 ],
+            "wednesday": [ 18, 28, 7, 15 ],
+            "thursday": [ 16, 27, 5, 15 ],
+            "friday": [ 14, 24, 1, 13 ],
+            "saturday": [ 11, 22, 1, 21 ],
+            "sunday": [ 10, 21, 30, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
