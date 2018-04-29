@@ -9845,6 +9845,39 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 630,
+          user_id: 1,
+          name: 'Dave Holland (bass) born 1946',
+          color: '#094EB6',
+          picture: './img/musicians/dh_highres.jpg',
+          day_of: new Date ('1946-10-01T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: true,
+          override_content: {
+            "sources": [ 'bandcamp' ],
+            "src_strings": [ 'https://bandcamp.com/EmbeddedPlayer/album=3214736202/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/' ],
+            "href_strings": [ 'http://samrivers.bandcamp.com/album/reunion-live-in-new-york' ],
+            "a_strings": [ 'Reunion: Live in New York by Sam Rivers | Dave Holland | Barry Altschul' ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 631,
+          user_id: 1,
+          name: 'The world came to an end on this day in 2016 and was "100% Guaranteed" to do so by Walid Shoebat.',
+          color: '#1E0A05',
+          picture: './img/doomsday/crackpotshoebat.jpg',
+          day_of: new Date ('2016-10-31T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
