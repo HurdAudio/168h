@@ -3784,6 +3784,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 211,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3837097434/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://grouper.bandcamp.com/album/grid-of-points',
+          a_string: 'Grid Of Points by Grouper',
+          rule: {
+            "monday": [ 3, 9, 15, 23 ],
+            "tuesday": [ 2, 8, 14, 23 ],
+            "wednesday": [ 31, 7, 13, 21 ],
+            "thursday": [ 31, 6, 12, 20 ],
+            "saturday": [ 4, 10, 16, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 212,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3538167430/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://newfocusrecordings.bandcamp.com/album/streya',
+          a_string: 'Streya by Olivia De Prato',
+          rule: {
+            "monday": [ 4, 10, 16, 24 ],
+            "tuesday": [ 3, 9, 15, 23 ],
+            "wednesday": [ 2, 8, 14, 23 ],
+            "thursday": [ 31, 7, 13, 21 ],
+            "saturday": [ 31, 6, 12, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 213,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1162201326/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://claricejensen.bandcamp.com/album/for-this-from-that-will-be-filled',
+          a_string: 'For This From That Will Be Filled by Clarice Jensen',
+          rule: {
+            "monday": [ 31, 6, 12, 20 ],
+            "tuesday": [ 4, 10, 16, 24 ],
+            "wednesday": [ 3, 9, 15, 23 ],
+            "thursday": [ 2, 8, 14, 23 ],
+            "saturday": [ 31, 7, 13, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
