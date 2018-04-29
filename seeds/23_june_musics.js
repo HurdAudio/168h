@@ -3460,6 +3460,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 193,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3110761447/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tsone.bandcamp.com/album/the-topography-of-vibrating-bodies-tracks-for-nagual-4',
+          a_string: 'The Topography of Vibrating Bodies (tracks for Nagual 4) by tsone',
+          rule: {
+            "monday": [ 24, 2, 4, 15 ],
+            "tuesday": [ 28, 2, 8, 19 ],
+            "wednesday": [ 27, 30, 5, 17 ],
+            "thursday": [ 26, 30, 5, 17 ],
+            "saturday": [ 26, 29, 5, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 194,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2848898848/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://odysmod.bandcamp.com/album/i-dreamt-of-forest',
+          a_string: 'I dreamt of forest by odysmod',
+          rule: {
+            "monday": [ 26, 29, 5, 16 ],
+            "tuesday": [ 24, 2, 4, 15 ],
+            "wednesday": [ 28, 2, 8, 19 ],
+            "thursday": [ 27, 30, 5, 17 ],
+            "saturday": [ 26, 30, 5, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 195,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3109580302/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://alaskantapes.bandcamp.com/album/signals-tell',
+          a_string: 'Signals/Tell by Alaskan Tapes',
+          rule: {
+            "monday": [ 26, 30, 5, 17 ],
+            "tuesday": [ 26, 29, 5, 16 ],
+            "wednesday": [ 24, 2, 4, 15 ],
+            "thursday": [ 28, 2, 8, 19 ],
+            "saturday": [ 27, 30, 5, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
