@@ -3892,6 +3892,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 217,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4223965056/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://dywanethomasjr.bandcamp.com/album/selfie-quickie',
+          a_string: 'SELFIE QUICKIE by MonoNeon',
+          rule: {
+            "monday": [ 3, 8, 9, 22 ],
+            "tuesday": [ 4, 8, 10, 14 ],
+            "wednesday": [ 7, 10, 12, 16 ],
+            "thursday": [ 8, 12, 14, 16 ],
+            "saturday": [ 20, 14, 16, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 218,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2868949692/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://dywanethomasjr.bandcamp.com/album/john-cage-on-soul-train',
+          a_string: 'John Cage on Soul Train by MonoNeon &amp; Michael Vick',
+          rule: {
+            "monday": [ 20, 14, 16, 22 ],
+            "tuesday": [ 3, 8, 9, 22 ],
+            "wednesday": [ 4, 8, 10, 14 ],
+            "thursday": [ 7, 10, 12, 16 ],
+            "saturday": [ 8, 12, 14, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 219,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3004778503/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://dywanethomasjr.bandcamp.com/album/weonWEON by WEON (Kriswontwo x MonoNeon)',
+          a_string: '',
+          rule: {
+            "monday": [ 8, 12, 14, 16 ],
+            "tuesday": [ 20, 14, 16, 22 ],
+            "wednesday": [ 3, 8, 9, 22 ],
+            "thursday": [ 4, 8, 10, 14 ],
+            "saturday": [ 7, 10, 12, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
