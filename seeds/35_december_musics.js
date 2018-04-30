@@ -2866,6 +2866,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 160,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2686633782/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://luakabop.bandcamp.com/album/cuba-classics-2-dancing-with-the-enemy',
+          a_string: 'Cuba Classics 2: Dancing With the Enemy by Luaka Bop',
+          rule: {
+            "monday": [ 27, 2, 8, 14 ],
+            "tuesday": [ 24, 1, 7, 13 ],
+            "wednesday": [ 25, 31, 6, 12 ],
+            "thursday": [ 29, 4, 10, 16 ],
+            "saturday": [ 28, 3, 9, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 161,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1103010905/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://orquestaakokan.bandcamp.com/album/orquesta-akok-n',
+          a_string: 'Orquesta Akokán by Orquesta Akokán',
+          rule: {
+            "monday": [ 29, 4, 10, 15 ],
+            "tuesday": [ 26, 3, 9, 15 ],
+            "wednesday": [ 25, 2, 8, 14 ],
+            "thursday": [ 26, 1, 7, 13 ],
+            "saturday": [ 30, 5, 11, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 162,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2305932870/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://obbatuke.bandcamp.com/album/obbatuk',
+          a_string: 'Obbatuké by Obbatuké',
+          rule: {
+            "monday": [ 30, 5, 11, 17 ],
+            "tuesday": [ 29, 4, 10, 15 ],
+            "wednesday": [ 26, 3, 9, 15 ],
+            "thursday": [ 25, 2, 8, 14 ],
+            "saturday": [ 26, 1, 7, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
