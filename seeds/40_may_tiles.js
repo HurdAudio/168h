@@ -676,6 +676,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#C1C6C4',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 49,
+          user_id: 1,
+          theme: 'Greenery',
+          type: 'friday',
+          src_string: '../img/may_tiles/rays-sunlight-falling-leaves-fresh-lush-beech-trees-green-forest-creating-surreal-pleasing-atmosphere-53511140.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '150%',
+          color_dark: '#0C0C07',
+          color_medium: '#355F09',
+          color_light: '#E6F4C6',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
