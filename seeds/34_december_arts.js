@@ -5404,6 +5404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 271,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/16-11-20,Popular.jpg',
+          title: 'The Popular',
+          artist: 'Norman Rockwell',
+          year: '1916',
+          rule: {
+            "monday": [ 7, 20, 28, 3 ],
+            "tuesday": [ 6, 18, 27, 2 ],
+            "wednesday": [ 5, 18, 6, 13 ],
+            "thursday": [ 11, 24, 1, 7 ],
+            "friday": [ 10, 23, 31, 6 ],
+            "saturday": [ 9, 22, 30, 5 ],
+            "sunday": [ 8, 21, 29, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 272,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/37-00,GodwinPub.jpg',
+          title: 'Godwin Publications',
+          artist: 'Fred Rodewald',
+          year: '1936',
+          rule: {
+            "monday": [ 8, 21, 29, 4 ],
+            "tuesday": [ 7, 20, 28, 3 ],
+            "wednesday": [ 6, 18, 27, 2 ],
+            "thursday": [ 5, 18, 6, 13 ],
+            "friday": [ 11, 24, 1, 7 ],
+            "saturday": [ 10, 23, 31, 6 ],
+            "sunday": [ 9, 22, 30, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 273,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/30-12,Ace-High.jpg',
+          title: 'Ace-High Magazine',
+          artist: 'Hubert Rogers',
+          year: '1930',
+          rule: {
+            "monday": [ 10, 23, 31, 6 ],
+            "tuesday": [ 9, 22, 30, 5 ],
+            "wednesday": [ 8, 21, 29, 4 ],
+            "thursday": [ 7, 19, 28, 3 ],
+            "friday": [ 6, 19, 7, 14 ],
+            "saturday": [ 12, 25, 2, 8 ],
+            "sunday": [ 11, 24, 1, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 274,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/49-04,CompSpts2.jpg',
+          title: 'Complete Sports',
+          artist: 'Herb Rogoff',
+          year: '1949',
+          rule: {
+            "monday": [ 11, 24, 1, 7 ],
+            "tuesday": [ 10, 23, 31, 6 ],
+            "wednesday": [ 9, 22, 30, 5 ],
+            "thursday": [ 8, 21, 29, 4 ],
+            "friday": [ 7, 19, 28, 3 ],
+            "saturday": [ 6, 19, 7, 14 ],
+            "sunday": [ 12, 25, 2, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 275,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/37-03,WesternAces1.jpg',
+          title: 'Western Aces',
+          artist: 'Tom Smith Roots',
+          year: '1937',
+          rule: {
+            "monday": [ 12, 25, 2, 8 ],
+            "tuesday": [ 11, 24, 1, 7 ],
+            "wednesday": [ 10, 23, 31, 6 ],
+            "thursday": [ 9, 22, 30, 5 ],
+            "friday": [ 8, 21, 29, 4 ],
+            "saturday": [ 7, 19, 28, 3 ],
+            "sunday": [ 6, 19, 7, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
