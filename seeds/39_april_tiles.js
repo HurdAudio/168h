@@ -690,6 +690,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#F9F7EB',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 50,
+          user_id: 1,
+          theme: 'Water',
+          type: 'saturday',
+          src_string: '../img/april_tiles/water-jet-266412_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '150%',
+          color_dark: '#323E6F',
+          color_medium: '#737FAF',
+          color_light: '#A8B6DD',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
