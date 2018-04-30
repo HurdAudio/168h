@@ -732,6 +732,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FDFFFE',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 53,
+          user_id: 1,
+          theme: 'Ice',
+          type: 'week',
+          src_string: '../img/january_tiles/melting-ice-water-drop_1600.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '175%',
+          color_dark: '#020C3B',
+          color_medium: '#008CA8',
+          color_light: '#E4F6F6',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
