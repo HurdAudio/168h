@@ -634,6 +634,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#43CADE',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 46,
+          user_id: 1,
+          theme: 'Primary Colors',
+          type: 'sunday',
+          src_string: '../img/august_tiles/glass-mosaic-tile-sheets-red-crystal-glass-tile-idea-bathroom-p1294.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '100%',
+          color_dark: '#550905',
+          color_medium: '#9C0005',
+          color_light: '#E07894',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
