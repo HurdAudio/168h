@@ -1324,6 +1324,66 @@ exports.seed = function(knex, Promise) {
           public: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 111,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/171109_SCI_liquidCat.jpg.CROP.promo-xlarge2.jpg',
+          title: 'Are Cats Liquid?',
+          artist: 'iStock',
+          year: '2017',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 112,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/pexels-photo_640x345_acf_cropped.jpg',
+          title: 'Can cats be gay, lesbian or bisexual?',
+          artist: 'Pexels',
+          year: '2018',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 113,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/pexels-photo-127028-650x433.jpeg',
+          title: 'unknown title',
+          artist: 'Pexel',
+          year: '2018',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 114,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/pexels-photo-596590-650x433.jpeg',
+          title: 'unknown title',
+          artist: 'Pexel',
+          year: '2018',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 115,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/pexels-photo-749212-650x406.jpeg',
+          title: 'Cats',
+          artist: 'Pexel',
+          year: '2018',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
