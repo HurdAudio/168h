@@ -7463,7 +7463,7 @@ exports.seed = function(knex, Promise) {
           name: 'Luigi Russolo (composer), born 1885',
           color: '#585858',
           picture: './img/musicians/luigirussolo.jpg',
-          day_of: new Date ('1885-04-30T13:44:00.000Z'),
+          day_of: new Date ('1883-04-30T13:44:00.000Z'),
           is_annual: true,
           art_override: false,
           music_override: false,

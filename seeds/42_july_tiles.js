@@ -648,6 +648,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FEFBF9',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 47,
+          user_id: 1,
+          theme: 'Steam',
+          type: 'holiday',
+          src_string: '../img/july_tiles/molten-1084181_1280.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '135%',
+          color_dark: '#101012',
+          color_medium: '#D4E3F7',
+          color_light: '#FBFFFB',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
