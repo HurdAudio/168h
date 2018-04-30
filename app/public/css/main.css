@@ -7868,8 +7868,8 @@ footer img {
   margin: 4vmin 38vmin 2vmin 10vmin;
 }
 
-/* .day {
-  background-image: url(../img/january_tiles/ice-2219574_1920.jpg);
+.day {
+  background-image: url(../img/tiles/background-2011040_1920.jpg);
   background-repeat: no-repeat;
-  background-size: 135%;
-} */
+  background-size: 100%;
+}
