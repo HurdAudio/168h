@@ -5804,6 +5804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 291,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_warsovpost_00011.jpg',
+          title: 'Every hit of a hammer hits the enemy!',
+          artist: 'V. Deni, N. Dolgorukov',
+          year: '1941',
+          rule: {
+            "monday": [ 11, 22, 23, 6 ],
+            "tuesday": [ 20, 21, 1, 5 ],
+            "wednesday": [ 16, 27, 7, 11 ],
+            "thursday": [ 15, 26, 6, 10 ],
+            "friday": [ 14, 25, 5, 9 ],
+            "saturday": [ 13, 24, 4, 8 ],
+            "sunday": [ 12, 23, 3, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 292,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_warsovpost_00009.jpg',
+          title: 'How it was - how it will be!',
+          artist: 'N. Golgorukov',
+          year: '1941',
+          rule: {
+            "monday": [ 12, 23, 3, 7 ],
+            "tuesday": [ 11, 22, 23, 6 ],
+            "wednesday": [ 20, 21, 1, 5 ],
+            "thursday": [ 16, 27, 7, 11 ],
+            "friday": [ 15, 26, 6, 10 ],
+            "saturday": [ 14, 25, 5, 9 ],
+            "sunday": [ 13, 24, 4, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 293,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_warsovpost_00008.jpg',
+          title: 'All on G',
+          artist: 'D. Moore',
+          year: '1941',
+          rule: {
+            "monday": [ 13, 24, 4, 8 ],
+            "tuesday": [ 12, 23, 3, 7 ],
+            "wednesday": [ 11, 22, 23, 6 ],
+            "thursday": [ 20, 21, 1, 5 ],
+            "friday": [ 16, 27, 7, 11 ],
+            "saturday": [ 15, 26, 6, 10 ],
+            "sunday": [ 14, 25, 5, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 294,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_warsovpost_00006.jpg',
+          title: 'Partisans, kill the enemy without mercy!',
+          artist: 'V.Koretsky',
+          year: '1941',
+          rule: {
+            "monday": [ 15, 26, 6, 10 ],
+            "tuesday": [ 14, 25, 5, 9 ],
+            "wednesday": [ 13, 24, 4, 8 ],
+            "thursday": [ 12, 23, 24, 7 ],
+            "friday": [ 21, 22, 2, 6 ],
+            "saturday": [ 17, 28, 8, 12 ],
+            "sunday": [ 16, 27, 7, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 295,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_sportsovpost_00013.jpg',
+          title: 'Youth - to the stadiums!',
+          artist: 'L.Golovanov',
+          year: '1947',
+          rule: {
+            "monday": [ 16, 27, 7, 11 ],
+            "tuesday": [ 15, 26, 6, 10 ],
+            "wednesday": [ 14, 25, 5, 9 ],
+            "thursday": [ 13, 24, 4, 8 ],
+            "friday": [ 12, 23, 24, 7 ],
+            "saturday": [ 21, 22, 2, 6 ],
+            "sunday": [ 17, 28, 8, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
