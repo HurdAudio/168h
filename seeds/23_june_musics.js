@@ -3514,6 +3514,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 196,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=420111763/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://chiheihatakeyama.bandcamp.com/album/tears',
+          a_string: 'Tears by Rhucle',
+          rule: {
+            "monday": [ 28, 1, 6, 18 ],
+            "tuesday": [ 27, 1, 6, 18 ],
+            "wednesday": [ 27, 30, 6, 17 ],
+            "thursday": [ 25, 3, 5, 16 ],
+            "saturday": [ 29, 3, 9, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 197,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1100160292/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://deathbybokeh.bandcamp.com/album/polar-night-extremity',
+          a_string: 'Polar Night Extremity by B O K E H',
+          rule: {
+            "monday": [ 29, 3, 9, 20 ],
+            "tuesday": [ 28, 1, 6, 18 ],
+            "wednesday": [ 27, 1, 6, 18 ],
+            "thursday": [ 27, 30, 6, 17 ],
+            "saturday": [ 25, 3, 5, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 198,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=162988102/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://deathbybokeh.bandcamp.com/album/north-south',
+          a_string: 'North/South by B O K E H',
+          rule: {
+            "monday": [ 25, 3, 5, 16 ],
+            "tuesday": [ 29, 3, 9, 20 ],
+            "wednesday": [ 28, 1, 6, 18 ],
+            "thursday": [ 27, 1, 6, 18 ],
+            "saturday": [ 27, 30, 6, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
