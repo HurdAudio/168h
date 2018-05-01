@@ -3082,6 +3082,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 172,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3406012893/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://debbyfriday.bandcamp.com/album/bitchpunk',
+          a_string: 'BITCHPUNK by DEBBY FRIDAY',
+          rule: {
+            "monday": [ 2, 12, 22, 25 ],
+            "tuesday": [ 1, 11, 21, 24 ],
+            "wednesday": [ 31, 10, 20, 23 ],
+            "thursday": [ 30, 9, 19, 22 ],
+            "saturday": [ 29, 8, 19, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 173,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3217797135/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://deathtopuzzlehead.bandcamp.com/album/artless',
+          a_string: 'ساده (artless) by Puzzlehead',
+          rule: {
+            "monday": [ 29, 8, 19, 21 ],
+            "tuesday": [ 2, 12, 22, 25 ],
+            "wednesday": [ 1, 11, 21, 24 ],
+            "thursday": [ 31, 10, 20, 23 ],
+            "saturday": [ 30, 9, 19, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 174,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3659096024/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://soulglophl.bandcamp.com/album/tour-tape-2k18-for-the-homie',
+          a_string: 'Tour Tape 2K18 (for the homie) by SOUL GLO',
+          rule: {
+            "monday": [ 30, 9, 19, 22 ],
+            "tuesday": [ 29, 8, 19, 21 ],
+            "wednesday": [ 2, 12, 22, 25 ],
+            "thursday": [ 1, 11, 21, 24 ],
+            "saturday": [ 31, 10, 20, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
