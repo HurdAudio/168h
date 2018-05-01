@@ -2974,6 +2974,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 166,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=843590072/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://akuphone.bandcamp.com/album/rats-don-t-eat-synthesizers',
+          a_string: 'Rats Don’t Eat Synthesizers by Dwarfs of East Agouza',
+          rule: {
+            "monday": [ 23, 4, 15, 19 ],
+            "tuesday": [ 22, 3, 14, 16 ],
+            "wednesday": [ 21, 2, 13, 25 ],
+            "thursday": [ 25, 6, 17, 21 ],
+            "saturday": [ 24, 5, 16, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 167,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=8920850/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://akuphone.bandcamp.com/album/saba-saba-fighting',
+          a_string: 'Saba-Saba Fighting by Mushapata',
+          rule: {
+            "monday": [ 24, 5, 16, 20 ],
+            "tuesday": [ 23, 4, 15, 19 ],
+            "wednesday": [ 22, 3, 14, 16 ],
+            "thursday": [ 21, 2, 13, 25 ],
+            "saturday": [ 25, 6, 17, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 168,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3780079413/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ablayecissoko.bandcamp.com/album/diam',
+          a_string: 'Diam by Ablaye Cissoko',
+          rule: {
+            "monday": [ 26, 7, 18, 22 ],
+            "tuesday": [ 25, 6, 17, 21 ],
+            "wednesday": [ 24, 5, 16, 20 ],
+            "thursday": [ 23, 4, 15, 17 ],
+            "saturday": [ 22, 3, 14, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
