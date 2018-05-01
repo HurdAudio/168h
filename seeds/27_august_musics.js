@@ -3298,6 +3298,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 184,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3219329185/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ligeiamare.bandcamp.com/album/power-conditioner',
+          a_string: 'Power Conditioner by J.A. Deane and Farrell Lowe',
+          rule: {
+            "monday": [ 5, 13, 26, 25 ],
+            "tuesday": [ 4, 12, 25, 24 ],
+            "wednesday": [ 8, 16, 29, 28 ],
+            "thursday": [ 7, 15, 28, 27 ],
+            "saturday": [ 6, 14, 27, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 185,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=884365374/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://idmtheftable.bandcamp.com/album/and-the-smell-of-a-blown-out-candle',
+          a_string: 'and the smell of a blown out candle. by id m theft able',
+          rule: {
+            "monday": [ 6, 14, 27, 26 ],
+            "tuesday": [ 5, 13, 26, 25 ],
+            "wednesday": [ 4, 12, 25, 24 ],
+            "thursday": [ 8, 16, 29, 28 ],
+            "saturday": [ 7, 15, 28, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 186,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3440741442/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bakedtapes.bandcamp.com/album/livin-the-die-high-bias-version',
+          a_string: 'Livin&#39; The Die (HIGH BIAS version) by Wet Tuna',
+          rule: {
+            "monday": [ 7, 15, 28, 27 ],
+            "tuesday": [ 6, 14, 27, 26 ],
+            "wednesday": [ 5, 13, 26, 25 ],
+            "thursday": [ 4, 12, 25, 24 ],
+            "saturday": [ 8, 16, 29, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
