@@ -5604,6 +5604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 281,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/number-14-1963.jpg',
+          title: 'Number 14',
+          artist: 'John McLaughlin',
+          year: '1963',
+          rule: {
+            "monday": [ 17, 22, 27, 3 ],
+            "tuesday": [ 16, 21, 27, 1 ],
+            "wednesday": [ 15, 18, 25, 30 ],
+            "thursday": [ 14, 18, 25, 30 ],
+            "friday": [ 13, 18, 24, 29 ],
+            "saturday": [ 12, 17, 23, 30 ],
+            "sunday": [ 18, 23, 29, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 282,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/60-t-18-1960.jpg',
+          title: '60-T-18',
+          artist: 'Martin Barre',
+          year: '1960',
+          rule: {
+            "monday": [ 18, 23, 29, 4 ],
+            "tuesday": [ 17, 22, 27, 3 ],
+            "wednesday": [ 16, 21, 27, 1 ],
+            "thursday": [ 15, 18, 25, 30 ],
+            "friday": [ 14, 18, 25, 30 ],
+            "saturday": [ 13, 18, 24, 29 ],
+            "sunday": [ 12, 17, 23, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 283,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/chicken-wire-1963.jpg',
+          title: 'Chicken Wire',
+          artist: 'Alex Hay',
+          year: '1963',
+          rule: {
+            "monday": [ 12, 17, 23, 30 ],
+            "tuesday": [ 18, 23, 29, 4 ],
+            "wednesday": [ 17, 22, 27, 3 ],
+            "thursday": [ 16, 21, 27, 1 ],
+            "friday": [ 15, 18, 25, 30 ],
+            "saturday": [ 14, 18, 25, 30 ],
+            "sunday": [ 13, 18, 24, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 284,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/untitled-1963(1).jpg',
+          title: 'Untitled',
+          artist: 'Mira Schendel',
+          year: '1963',
+          rule: {
+            "monday": [ 13, 18, 24, 29 ],
+            "tuesday": [ 12, 17, 23, 30 ],
+            "wednesday": [ 18, 23, 29, 4 ],
+            "thursday": [ 17, 22, 27, 3 ],
+            "friday": [ 16, 21, 27, 1 ],
+            "saturday": [ 15, 18, 25, 30 ],
+            "sunday": [ 14, 18, 25, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 285,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/a-primary-picture-1964.jpg',
+          title: 'A primary picture',
+          artist: 'Dan Flavin',
+          year: '1964',
+          rule: {
+            "monday": [ 14, 18, 25, 30 ],
+            "tuesday": [ 13, 18, 24, 29 ],
+            "wednesday": [ 12, 17, 23, 30 ],
+            "thursday": [ 18, 23, 29, 4 ],
+            "friday": [ 17, 22, 27, 3 ],
+            "saturday": [ 16, 21, 27, 1 ],
+            "sunday": [ 15, 18, 25, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
