@@ -6204,6 +6204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 311,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/baba-yaga-illustration-for-the-fairy-tale-vasilisa-the-beautiful-1900(2).jpg',
+          title: 'Baba Yaga. Illustration for the fairy tale "Vasilisa the Beautiful"',
+          artist: 'Ivan Bilibin',
+          year: '1900',
+          rule: {
+            "monday": [ 11, 14, 23, 8 ],
+            "tuesday": [ 17, 21, 29, 14 ],
+            "wednesday": [ 16, 19, 28, 13 ],
+            "thursday": [ 15, 19, 27, 12 ],
+            "friday": [ 14, 18, 26, 11 ],
+            "saturday": [ 13, 15, 25, 10 ],
+            "sunday": [ 12, 15, 24, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 312,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/sailboats-1921(1).jpg',
+          title: 'Sailboats',
+          artist: 'David Kakabadze',
+          year: '1921',
+          rule: {
+            "monday": [ 12, 15, 24, 9 ],
+            "tuesday": [ 11, 14, 23, 8 ],
+            "wednesday": [ 17, 21, 29, 14 ],
+            "thursday": [ 16, 19, 28, 13 ],
+            "friday": [ 15, 19, 27, 12 ],
+            "saturday": [ 14, 18, 26, 11 ],
+            "sunday": [ 13, 15, 25, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 313,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/miranda-1916.jpg',
+          title: 'Miranda',
+          artist: 'John William Waterhouse',
+          year: '1916',
+          rule: {
+            "monday": [ 13, 15, 25, 10 ],
+            "tuesday": [ 12, 15, 24, 9 ],
+            "wednesday": [ 11, 14, 23, 8 ],
+            "thursday": [ 17, 21, 29, 14 ],
+            "friday": [ 16, 19, 28, 13 ],
+            "saturday": [ 15, 19, 27, 12 ],
+            "sunday": [ 14, 18, 26, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 314,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/returning-from-the-work-1930.jpg',
+          title: 'Returning from the Work',
+          artist: 'Konstantin Yuon',
+          year: '1930',
+          rule: {
+            "monday": [ 14, 18, 26, 11 ],
+            "tuesday": [ 13, 15, 25, 10 ],
+            "wednesday": [ 12, 15, 24, 9 ],
+            "thursday": [ 11, 14, 23, 8 ],
+            "friday": [ 17, 21, 29, 14 ],
+            "saturday": [ 16, 19, 28, 13 ],
+            "sunday": [ 15, 19, 27, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 315,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/jeanne-hebuterne-in-front-of-a-door-1919.jpg',
+          title: 'Jeanne Hebuterne in Red Shawl',
+          artist: 'Amedeo Modigliani',
+          year: '1917',
+          rule: {
+            "monday": [ 16, 20, 28, 13 ],
+            "tuesday": [ 15, 19, 27, 12 ],
+            "wednesday": [ 14, 16, 26, 11 ],
+            "thursday": [ 13, 16, 25, 10 ],
+            "friday": [ 12, 15, 24, 9 ],
+            "saturday": [ 18, 22, 30, 15 ],
+            "sunday": [ 17, 20, 29, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
