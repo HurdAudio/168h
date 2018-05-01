@@ -6404,6 +6404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 321,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/le-pont-du-rialto.jpg',
+          title: 'Le Pont du Rialto',
+          artist: 'Louis Vivin',
+          year: '?',
+          rule: {
+            "monday": [ 14, 25, 5, 6 ],
+            "tuesday": [ 13, 24, 3, 5 ],
+            "wednesday": [ 12, 23, 3, 4 ],
+            "thursday": [ 11, 22, 2, 13 ],
+            "friday": [ 17, 28, 8, 18 ],
+            "saturday": [ 16, 27, 7, 18 ],
+            "sunday": [ 15, 26, 6, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 322,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/port-en-bessin-entrance-to-the-harbor-1888.jpg',
+          title: 'Port-en-Bessin Entrance to the Harbor',
+          artist: 'Georges Seurat',
+          year: '1888',
+          rule: {
+            "monday": [ 16, 27, 7, 18 ],
+            "tuesday": [ 15, 26, 6, 7 ],
+            "wednesday": [ 14, 25, 4, 6 ],
+            "thursday": [ 13, 24, 4, 5 ],
+            "friday": [ 12, 23, 3, 14 ],
+            "saturday": [ 18, 29, 9, 19 ],
+            "sunday": [ 17, 28, 8, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 323,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/une-rue-de-paris-en-mai-1871.jpg',
+          title: 'Une Rue De Paris En Mai 1871',
+          artist: 'Maximilien Luce',
+          year: 'c.1903 - c.1905',
+          rule: {
+            "monday": [ 17, 28, 8, 19 ],
+            "tuesday": [ 16, 27, 7, 18 ],
+            "wednesday": [ 15, 26, 6, 7 ],
+            "thursday": [ 14, 25, 4, 6 ],
+            "friday": [ 13, 24, 4, 5 ],
+            "saturday": [ 12, 23, 3, 14 ],
+            "sunday": [ 18, 29, 9, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 324,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/half-naked-woman-1877(1).jpg',
+          title: 'Half Naked Woman',
+          artist: 'Julius LeBlanc Stewart',
+          year: '1877',
+          rule: {
+            "monday": [ 18, 29, 9, 19 ],
+            "tuesday": [ 17, 28, 8, 19 ],
+            "wednesday": [ 16, 27, 7, 18 ],
+            "thursday": [ 15, 26, 6, 7 ],
+            "friday": [ 14, 25, 4, 6 ],
+            "saturday": [ 13, 24, 4, 5 ],
+            "sunday": [ 12, 23, 3, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 325,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/cae-19-abbema079.jpg',
+          title: 'Muse de la Musique',
+          artist: 'Louise Abbéma',
+          year: '1893',
+          rule: {
+            "monday": [ 12, 23, 3, 14 ],
+            "tuesday": [ 18, 29, 9, 19 ],
+            "wednesday": [ 17, 28, 8, 19 ],
+            "thursday": [ 16, 27, 7, 18 ],
+            "friday": [ 15, 26, 6, 7 ],
+            "saturday": [ 14, 25, 4, 6 ],
+            "sunday": [ 13, 24, 4, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
