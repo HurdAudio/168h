@@ -3190,6 +3190,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 178,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3470289651/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://kiln-audio.bandcamp.com/album/meadow-watt',
+          a_string: 'meadow:watt by KILN',
+          rule: {
+            "monday": [ 25, 15, 23, 17 ],
+            "tuesday": [ 29, 19, 27, 21 ],
+            "wednesday": [ 28, 18, 26, 20 ],
+            "thursday": [ 27, 17, 25, 20 ],
+            "saturday": [ 26, 16, 24, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 179,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=53475480/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://infraction.bandcamp.com/album/treedrums',
+          a_string: 'Treedrums by Fibreforms',
+          rule: {
+            "monday": [ 26, 16, 24, 18 ],
+            "tuesday": [ 25, 15, 23, 17 ],
+            "wednesday": [ 29, 19, 27, 21 ],
+            "thursday": [ 28, 18, 26, 20 ],
+            "saturday": [ 27, 17, 25, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 180,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3529642756/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://infraction.bandcamp.com/album/relaxation-tape-for-solo-space-travel',
+          a_string: 'Relaxation Tape for Solo Space Travel by The National Pool',
+          rule: {
+            "monday": [ 27, 17, 25, 20 ],
+            "tuesday": [ 26, 16, 24, 18 ],
+            "wednesday": [ 25, 15, 23, 17 ],
+            "thursday": [ 29, 19, 27, 21 ],
+            "saturday": [ 28, 18, 26, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
