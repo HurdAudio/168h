@@ -3406,6 +3406,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 190,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2754826868/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://dva2.bandcamp.com/album/cherries-on-air-chuchel-ost',
+          a_string: 'CHERRIES ON AIR - CHUCHEL OST by Dva',
+          rule: {
+            "monday": [ 26, 27, 1, 9 ],
+            "tuesday": [ 25, 27, 31, 8 ],
+            "wednesday": [ 29, 31, 4, 12 ],
+            "thursday": [ 28, 30, 3, 11 ],
+            "saturday": [ 27, 29, 2, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 191,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=617950688/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://speedyortiz.bandcamp.com/album/twerp-verse',
+          a_string: 'Twerp Verse by Speedy Ortiz',
+          rule: {
+            "monday": [ 27, 29, 2, 10 ],
+            "tuesday": [ 26, 27, 1, 9 ],
+            "wednesday": [ 25, 27, 31, 8 ],
+            "thursday": [ 29, 31, 4, 12 ],
+            "saturday": [ 28, 30, 3, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 192,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=884656180/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://speedyortiz.bandcamp.com/album/foil-deer',
+          a_string: 'Foil Deer by Speedy Ortiz',
+          rule: {
+            "monday": [ 28, 30, 3, 11 ],
+            "tuesday": [ 27, 29, 2, 10 ],
+            "wednesday": [ 26, 27, 1, 9 ],
+            "thursday": [ 25, 27, 31, 8 ],
+            "saturday": [ 29, 31, 4, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
