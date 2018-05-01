@@ -6004,6 +6004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 301,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/opera-figures-farewell-my-concubine-1975.jpg',
+          title: 'Opera Figures: Farewell my Concubine',
+          artist: 'Ding Yanyong',
+          year: '1975',
+          rule: {
+            "monday": [ 13, 19, 7, 15 ],
+            "tuesday": [ 12, 18, 6, 14 ],
+            "wednesday": [ 11, 17, 5, 14 ],
+            "thursday": [ 10, 16, 4, 12 ],
+            "friday": [ 8, 15, 3, 10 ],
+            "saturday": [ 15, 21, 9, 17 ],
+            "sunday": [ 14, 20, 8, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 302,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/water-ceremony-1972.jpg',
+          title: 'Water Ceremony',
+          artist: 'Johnny Warangkula Tjupurrula',
+          year: '1972',
+          rule: {
+            "monday": [ 14, 20, 8, 16 ],
+            "tuesday": [ 13, 19, 7, 15 ],
+            "wednesday": [ 12, 18, 6, 14 ],
+            "thursday": [ 11, 17, 5, 14 ],
+            "friday": [ 10, 16, 4, 12 ],
+            "saturday": [ 8, 15, 3, 10 ],
+            "sunday": [ 15, 21, 9, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 303,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/composizione-1955.jpg',
+          title: 'Composizione',
+          artist: 'Antonio Sanfilippo',
+          year: '1955',
+          rule: {
+            "monday": [ 15, 21, 9, 17 ],
+            "tuesday": [ 14, 20, 8, 16 ],
+            "wednesday": [ 13, 19, 7, 15 ],
+            "thursday": [ 12, 18, 6, 14 ],
+            "friday": [ 11, 17, 5, 14 ],
+            "saturday": [ 10, 16, 4, 12 ],
+            "sunday": [ 8, 15, 3, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 304,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/drawing-for-ian-wedde-pathway-to-the-sea-1975.jpg',
+          title: 'Drawing for Ian Wedde - Pathway to the Sea',
+          artist: 'Ralph Hotere',
+          year: '1975',
+          rule: {
+            "monday": [ 8, 15, 3, 10 ],
+            "tuesday": [ 15, 21, 9, 17 ],
+            "wednesday": [ 14, 20, 8, 16 ],
+            "thursday": [ 13, 19, 7, 15 ],
+            "friday": [ 12, 18, 6, 14 ],
+            "saturday": [ 11, 17, 5, 14 ],
+            "sunday": [ 10, 16, 4, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 305,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/still-life-with-dagger-1963.jpg',
+          title: 'Still Life with Dagger',
+          artist: 'Patrick Caulfield',
+          year: '1963',
+          rule: {
+            "monday": [ 10, 16, 4, 12 ],
+            "tuesday": [ 8, 15, 3, 10 ],
+            "wednesday": [ 15, 21, 9, 17 ],
+            "thursday": [ 14, 20, 8, 16 ],
+            "friday": [ 13, 19, 7, 15 ],
+            "saturday": [ 12, 18, 6, 14 ],
+            "sunday": [ 11, 17, 5, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
