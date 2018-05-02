@@ -3838,6 +3838,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 214,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4035595196/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://erica.bandcamp.com/album/beautiful',
+          a_string: 'Beautiful by ÉRICA',
+          rule: {
+            "monday": [ 31, 7, 13, 21 ],
+            "tuesday": [ 31, 6, 12, 20 ],
+            "wednesday": [ 4, 10, 16, 24 ],
+            "thursday": [ 3, 9, 15, 23 ],
+            "saturday": [ 2, 8, 14, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 215,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=659659137/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ctatsu.bandcamp.com/album/a-480',
+          a_string: 'A 480 by Kara-Lis Coverdale',
+          rule: {
+            "monday": [ 2, 8, 14, 23 ],
+            "tuesday": [ 31, 7, 13, 21 ],
+            "wednesday": [ 31, 6, 12, 20 ],
+            "thursday": [ 4, 10, 16, 24 ],
+            "saturday": [ 3, 9, 15, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 216,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4039746508/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ctatsu.bandcamp.com/album/qualities-of-bodies-permanent',
+          a_string: 'Qualities of Bodies Permanent by Sarah Davachi',
+          rule: {
+            "monday": [ 3, 9, 15, 23 ],
+            "tuesday": [ 2, 8, 14, 23 ],
+            "wednesday": [ 31, 7, 13, 21 ],
+            "thursday": [ 31, 6, 12, 20 ],
+            "saturday": [ 4, 10, 16, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
