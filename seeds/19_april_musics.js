@@ -3730,6 +3730,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 208,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1207650234/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://thandintuli.bandcamp.com/album/exiled',
+          a_string: 'Exiled by Thandi Ntuli',
+          rule: {
+            "monday": [ 29, 7, 19, 24 ],
+            "tuesday": [ 3, 11, 23, 28 ],
+            "wednesday": [ 2, 10, 22, 27 ],
+            "thursday": [ 1, 9, 21, 26 ],
+            "saturday": [ 30, 8, 20, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 209,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3598785858/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://lindasikhakhane.bandcamp.com/album/two-sides-one-mirror',
+          a_string: 'Two Sides, One Mirror by Linda Sikhakhane',
+          rule: {
+            "monday": [ 30, 8, 20, 25 ],
+            "tuesday": [ 29, 7, 19, 24 ],
+            "wednesday": [ 3, 11, 23, 28 ],
+            "thursday": [ 2, 10, 22, 27 ],
+            "saturday": [ 1, 9, 21, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 210,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4176142662/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://siyamakuzenisextet.bandcamp.com/album/out-of-this-world',
+          a_string: 'Out Of This World by Siya Makuzeni',
+          rule: {
+            "monday": [ 2, 10, 22, 27 ],
+            "tuesday": [ 1, 9, 21, 26 ],
+            "wednesday": [ 30, 8, 20, 25 ],
+            "thursday": [ 4, 12, 24, 29 ],
+            "saturday": [ 3, 11, 23, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
