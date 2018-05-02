@@ -3622,6 +3622,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 202,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2224524672/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://aeolian.bandcamp.com/album/a-channel-for-water',
+          a_string: 'A Channel for Water by Richard Skelton',
+          rule: {
+            "monday": [ 29, 4, 11, 24 ],
+            "tuesday": [ 2, 9, 15, 28 ],
+            "wednesday": [ 1, 7, 14, 27 ],
+            "thursday": [ 31, 6, 13, 26 ],
+            "saturday": [ 30, 5, 12, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 203,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2976735091/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://coldspring.bandcamp.com/album/the-hymn-of-the-7th-illusion-csr241lp',
+          a_string: 'The Hymn Of The 7th Illusion (CSR241LP) by Barry Adamson + Pan Sonic + The Hafler Trio',
+          rule: {
+            "monday": [ 31, 6, 13, 26 ],
+            "tuesday": [ 30, 5, 12, 25 ],
+            "wednesday": [ 3, 10, 16, 29 ],
+            "thursday": [ 2, 8, 15, 28 ],
+            "saturday": [ 1, 7, 14, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 204,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1045954673/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tomsmithksv.bandcamp.com/album/ksv-419-the-propagation-of-negation-ii-expanded-reissue-with-cd-option',
+          a_string: 'KSV 419 The Propagation of Negation II (expanded reissue with CD option) by To Live and Shave in H.H.',
+          rule: {
+            "monday": [ 1, 7, 14, 27 ],
+            "tuesday": [ 31, 6, 13, 26 ],
+            "wednesday": [ 30, 5, 12, 25 ],
+            "thursday": [ 3, 10, 16, 29 ],
+            "saturday": [ 2, 8, 15, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
