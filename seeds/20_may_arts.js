@@ -6804,6 +6804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 341,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/peasant-portrait-1931.jpg',
+          title: 'Peasant Portrait',
+          artist: 'M. H. Maxy',
+          year: '1931',
+          rule: {
+            "monday": [ 10, 21, 30, 9 ],
+            "tuesday": [ 8, 18, 28, 5 ],
+            "wednesday": [ 6, 15, 27, 5 ],
+            "thursday": [ 18, 28, 7, 15 ],
+            "friday": [ 16, 27, 5, 15 ],
+            "saturday": [ 14, 24, 1, 13 ],
+            "sunday": [ 11, 22, 1, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 342,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/women-and-fishermen-of-hornbaek-1875.jpg',
+          title: 'Women and Fishermen of Hornbaek',
+          artist: 'Peder Severin Kroyer',
+          year: '1875',
+          rule: {
+            "monday": [ 11, 22, 1, 21 ],
+            "tuesday": [ 10, 21, 30, 9 ],
+            "wednesday": [ 8, 18, 28, 5 ],
+            "thursday": [ 6, 15, 27, 5 ],
+            "friday": [ 18, 28, 7, 15 ],
+            "saturday": [ 16, 27, 5, 15 ],
+            "sunday": [ 14, 24, 1, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 343,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/women-of-concarneau-1879.jpg',
+          title: 'Women of Concarneau',
+          artist: 'Peder Severin Kroyer',
+          year: '1879',
+          rule: {
+            "monday": [ 15, 25, 2, 14 ],
+            "tuesday": [ 12, 23, 2, 22 ],
+            "wednesday": [ 11, 22, 31, 10 ],
+            "thursday": [ 9, 19, 29, 6 ],
+            "friday": [ 7, 16, 28, 6 ],
+            "saturday": [ 19, 29, 8, 16 ],
+            "sunday": [ 17, 28, 6, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 344,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/in-the-store-during-a-pause-from-fishing-1882.jpg',
+          title: 'In the Store During a Pause from Fishing',
+          artist: 'Peder Severin Kroyer',
+          year: '1882',
+          rule: {
+            "monday": [ 17, 28, 6, 16 ],
+            "tuesday": [ 15, 25, 2, 14 ],
+            "wednesday": [ 12, 23, 2, 22 ],
+            "thursday": [ 11, 22, 31, 10 ],
+            "friday": [ 9, 19, 29, 6 ],
+            "saturday": [ 7, 16, 28, 6 ],
+            "sunday": [ 19, 29, 8, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 345,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/fishermen-hauling-the-net-on-skagen-s-north-beach-1883.jpg',
+          title: 'Fishermen Hauling the Net on Skagen\'s North Beach',
+          artist: 'Peder Severin Kroyer',
+          year: '1883',
+          rule: {
+            "monday": [ 19, 29, 8, 16 ],
+            "tuesday": [ 17, 28, 6, 16 ],
+            "wednesday": [ 15, 25, 2, 14 ],
+            "thursday": [ 12, 23, 2, 22 ],
+            "friday": [ 11, 22, 31, 10 ],
+            "saturday": [ 9, 19, 29, 6 ],
+            "sunday": [ 7, 16, 28, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
