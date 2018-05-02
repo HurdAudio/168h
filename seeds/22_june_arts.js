@@ -6604,6 +6604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 331,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/e9dba218c5f1fe04ff9b81b6e980767e.jpg',
+          title: 'Girl',
+          artist: 'John Chacon',
+          year: '?',
+          rule: {
+            "monday": [ 17, 27, 7, 13 ],
+            "tuesday": [ 16, 26, 6, 14 ],
+            "wednesday": [ 15, 25, 5, 13 ],
+            "thursday": [ 14, 24, 4, 12 ],
+            "friday": [ 23, 3, 13, 11 ],
+            "saturday": [ 12, 22, 2, 10 ],
+            "sunday": [ 11, 21, 1, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 332,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/4c298521a087de23073a6d64dc50809b.jpg',
+          title: 'Else Fangs',
+          artist: 'Richard Turley',
+          year: '?',
+          rule: {
+            "monday": [ 11, 21, 1, 9 ],
+            "tuesday": [ 17, 27, 7, 13 ],
+            "wednesday": [ 16, 26, 6, 14 ],
+            "thursday": [ 15, 25, 5, 13 ],
+            "friday": [ 14, 24, 4, 12 ],
+            "saturday": [ 23, 3, 13, 11 ],
+            "sunday": [ 12, 22, 2, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 333,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/7f7977b4721e865d3da9a0a35a3f806a.jpg',
+          title: 'Another Chance To Love',
+          artist: 'Alexis Cuarezma',
+          year: '?',
+          rule: {
+            "monday": [ 12, 22, 2, 10 ],
+            "tuesday": [ 11, 21, 1, 9 ],
+            "wednesday": [ 17, 27, 7, 13 ],
+            "thursday": [ 16, 26, 6, 14 ],
+            "friday": [ 15, 25, 5, 13 ],
+            "saturday": [ 14, 24, 4, 12 ],
+            "sunday": [ 23, 3, 13, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 334,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/e587c5eac25b581a33ffcbbb07a4a532.jpg',
+          title: 'Double Exposure',
+          artist: 'Lucie Desmond',
+          year: '?',
+          rule: {
+            "monday": [ 23, 3, 13, 11 ],
+            "tuesday": [ 12, 22, 2, 10 ],
+            "wednesday": [ 11, 21, 1, 9 ],
+            "thursday": [ 17, 27, 7, 13 ],
+            "friday": [ 16, 26, 6, 14 ],
+            "saturday": [ 15, 25, 5, 13 ],
+            "sunday": [ 14, 24, 4, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 335,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/5047d48be5fa7844ea8a552aa39eee90.jpg',
+          title: 'Unknown Title',
+          artist: 'Nick Turpin',
+          year: '?',
+          rule: {
+            "monday": [ 14, 24, 4, 12 ],
+            "tuesday": [ 23, 3, 13, 11 ],
+            "wednesday": [ 12, 22, 2, 10 ],
+            "thursday": [ 11, 21, 1, 9 ],
+            "friday": [ 17, 27, 7, 13 ],
+            "saturday": [ 16, 26, 6, 14 ],
+            "sunday": [ 15, 25, 5, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
