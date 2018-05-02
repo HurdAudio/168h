@@ -7004,6 +7004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 351,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/abstract-baseball-david-g-paul.jpg',
+          title: 'Abstract Baseball',
+          artist: 'David G. Paul',
+          year: '2012',
+          rule: {
+            "monday": [ 20, 26, 1, 8 ],
+            "tuesday": [ 4, 24, 30, 6 ],
+            "wednesday": [ 19, 22, 30, 6 ],
+            "thursday": [ 18, 22, 7, 5 ],
+            "friday": [ 16, 21, 27, 3 ],
+            "saturday": [ 16, 21, 27, 3 ],
+            "sunday": [ 15, 20, 26, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 352,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/ruth.jpg',
+          title: 'Ruth',
+          artist: 'Jeff Suntala',
+          year: '?',
+          rule: {
+            "monday": [ 15, 20, 26, 2 ],
+            "tuesday": [ 20, 26, 1, 8 ],
+            "wednesday": [ 4, 24, 30, 6 ],
+            "thursday": [ 19, 22, 30, 6 ],
+            "friday": [ 18, 22, 7, 5 ],
+            "saturday": [ 16, 21, 27, 3 ],
+            "sunday": [ 16, 21, 27, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 353,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/833234b0b939dd2303f1641ffda0e1c3--baseball-pics-baseball-teams.jpg',
+          title: 'Jimmie Foxx',
+          artist: 'Bruce Stark',
+          year: '?',
+          rule: {
+            "monday": [ 16, 21, 27, 3 ],
+            "tuesday": [ 15, 20, 26, 2 ],
+            "wednesday": [ 20, 26, 1, 8 ],
+            "thursday": [ 4, 24, 30, 6 ],
+            "friday": [ 19, 22, 30, 6 ],
+            "saturday": [ 18, 22, 7, 5 ],
+            "sunday": [ 16, 21, 27, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 354,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/il_fullxfull.768320959_1kdp.jpg',
+          title: 'Jose Altuve',
+          artist: 'Jim Petrillo',
+          year: '2018',
+          rule: {
+            "monday": [ 16, 21, 27, 3 ],
+            "tuesday": [ 16, 21, 27, 3 ],
+            "wednesday": [ 15, 20, 26, 2 ],
+            "thursday": [ 20, 26, 1, 8 ],
+            "friday": [ 4, 24, 30, 6 ],
+            "saturday": [ 19, 22, 30, 6 ],
+            "sunday": [ 18, 22, 7, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 355,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/e557bbb4f55f7c1d895f595efd0554f9.jpg',
+          title: 'Greatest All Stars',
+          artist: 'Jamie Cooper',
+          year: '2018',
+          rule: {
+            "monday": [ 18, 22, 7, 5 ],
+            "tuesday": [ 16, 21, 27, 3 ],
+            "wednesday": [ 16, 21, 27, 3 ],
+            "thursday": [ 15, 20, 26, 2 ],
+            "friday": [ 20, 26, 1, 8 ],
+            "saturday": [ 4, 24, 30, 6 ],
+            "sunday": [ 19, 22, 30, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
