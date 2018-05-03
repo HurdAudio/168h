@@ -7604,6 +7604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 381,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/sage-3-1968.jpg',
+          title: 'Sage #3',
+          artist: 'Walter Darby Bannard',
+          year: '1968',
+          rule: {
+            "monday": [ 23, 24, 4, 27 ],
+            "tuesday": [ 26, 28, 20, 9 ],
+            "wednesday": [ 31, 29, 21, 24 ],
+            "thursday": [ 31, 1, 23, 27 ],
+            "friday": [ 3, 5, 6, 8 ],
+            "saturday": [ 5, 7, 11, 14 ],
+            "sunday": [ 7, 9, 10, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 382,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/untitled.jpg',
+          title: 'Untitled',
+          artist: 'Abdul Qader Al Raes',
+          year: 'XX Cent.',
+          rule: {
+            "monday": [ 7, 9, 10, 11 ],
+            "tuesday": [ 23, 24, 4, 27 ],
+            "wednesday": [ 26, 28, 20, 9 ],
+            "thursday": [ 31, 29, 21, 24 ],
+            "friday": [ 31, 1, 23, 27 ],
+            "saturday": [ 3, 5, 6, 8 ],
+            "sunday": [ 5, 7, 11, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 383,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/din-1969.jpg',
+          title: 'DIN',
+          artist: 'Vladimir Bonacic',
+          year: '1969',
+          rule: {
+            "monday": [ 5, 7, 11, 14 ],
+            "tuesday": [ 7, 9, 10, 11 ],
+            "wednesday": [ 23, 24, 4, 27 ],
+            "thursday": [ 26, 28, 20, 9 ],
+            "friday": [ 31, 29, 21, 24 ],
+            "saturday": [ 31, 1, 23, 27 ],
+            "sunday": [ 3, 5, 6, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 384,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/untitled-2012.jpg',
+          title: 'Untitled',
+          artist: 'Aki Kuroda',
+          year: '2012',
+          rule: {
+            "monday": [ 3, 5, 6, 8 ],
+            "tuesday": [ 5, 7, 11, 14 ],
+            "wednesday": [ 7, 9, 10, 11 ],
+            "thursday": [ 23, 24, 4, 27 ],
+            "friday": [ 26, 28, 20, 9 ],
+            "saturday": [ 31, 29, 21, 24 ],
+            "sunday": [ 31, 1, 23, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 385,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/intersuperficie-curva-bianca-1969.jpg',
+          title: 'Intersuperficie curva bianca',
+          artist: 'Paolo Scheggi',
+          year: '1969',
+          rule: {
+            "monday": [ 1, 2, 24, 28 ],
+            "tuesday": [ 4, 6, 7, 9 ],
+            "wednesday": [ 6, 8, 12, 15 ],
+            "thursday": [ 8, 10, 11, 12 ],
+            "friday": [ 24, 25, 5, 28 ],
+            "saturday": [ 27, 29, 21, 10 ],
+            "sunday": [ 1, 30, 22, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
