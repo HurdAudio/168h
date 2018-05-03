@@ -7404,6 +7404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 371,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/wbdavis-see-yourself.jpg',
+          title: 'See Yourself In All Your Glory',
+          artist: 'Bing Davis',
+          year: '2009',
+          rule: {
+            "monday": [ 2, 7, 13, 23 ],
+            "tuesday": [ 1, 9, 17, 25 ],
+            "wednesday": [ 3, 13, 19, 25 ],
+            "thursday": [ 5, 13, 21, 2 ],
+            "friday": [ 5, 15, 11, 1 ],
+            "saturday": [ 24, 3, 11, 19 ],
+            "sunday": [ 25, 5, 13, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 372,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/img_0009a_e_custom-19b7056f45f421081149abd317014aefb76d7600-s800-c15.jpg',
+          title: 'The Sweet Flypaper of Life,',
+          artist: 'Roy DeCarava',
+          year: '1984',
+          rule: {
+            "monday": [ 25, 5, 13, 21 ],
+            "tuesday": [ 2, 7, 13, 23 ],
+            "wednesday": [ 1, 9, 17, 25 ],
+            "thursday": [ 3, 13, 19, 25 ],
+            "friday": [ 5, 13, 21, 2 ],
+            "saturday": [ 5, 15, 11, 1 ],
+            "sunday": [ 24, 3, 11, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 373,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/08iht-rartdelaney-3-master768.jpg',
+          title: 'The Time of Your Life',
+          artist: 'Beauford Delaney',
+          year: '1945',
+          rule: {
+            "monday": [ 24, 3, 11, 19 ],
+            "tuesday": [ 25, 5, 13, 21 ],
+            "wednesday": [ 2, 7, 13, 23 ],
+            "thursday": [ 1, 9, 17, 25 ],
+            "friday": [ 3, 13, 19, 25 ],
+            "saturday": [ 5, 13, 21, 2 ],
+            "sunday": [ 5, 15, 11, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 374,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/Delaney-Revival_pg.jpg',
+          title: 'Revival',
+          artist: 'Joseph Delaney',
+          year: '1940',
+          rule: {
+            "monday": [ 5, 15, 11, 1 ],
+            "tuesday": [ 24, 3, 11, 19 ],
+            "wednesday": [ 25, 5, 13, 21 ],
+            "thursday": [ 2, 7, 13, 23 ],
+            "friday": [ 1, 9, 17, 25 ],
+            "saturday": [ 3, 13, 19, 25 ],
+            "sunday": [ 5, 13, 21, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 375,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/tranquility.jpg',
+          title: 'Tranquility',
+          artist: 'Louis Delsarte',
+          year: '2012',
+          rule: {
+            "monday": [ 5, 13, 21, 2 ],
+            "tuesday": [ 5, 15, 11, 1 ],
+            "wednesday": [ 24, 3, 11, 19 ],
+            "thursday": [ 25, 5, 13, 21 ],
+            "friday": [ 2, 7, 13, 23 ],
+            "saturday": [ 1, 9, 17, 25 ],
+            "sunday": [ 3, 13, 19, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
