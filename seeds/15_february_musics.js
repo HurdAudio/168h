@@ -3935,14 +3935,68 @@ exports.seed = function(knex, Promise) {
           theme: 'Black History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3004778503/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
-          href_string: 'http://dywanethomasjr.bandcamp.com/album/weonWEON by WEON (Kriswontwo x MonoNeon)',
-          a_string: '',
+          href_string: 'http://dywanethomasjr.bandcamp.com/album/weon',
+          a_string: 'WEON by WEON (Kriswontwo x MonoNeon)',
           rule: {
             "monday": [ 8, 12, 14, 16 ],
             "tuesday": [ 20, 14, 16, 22 ],
             "wednesday": [ 3, 8, 9, 22 ],
             "thursday": [ 4, 8, 10, 14 ],
             "saturday": [ 7, 10, 12, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 220,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'http://bandcamp.com/EmbeddedPlayer/album=2409971227/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bokeh-versions.com/album/miro-tape',
+          a_string: 'Miro Tape by Duppy Gun Productions',
+          rule: {
+            "monday": [ 7, 10, 12, 16 ],
+            "tuesday": [ 8, 12, 14, 16 ],
+            "wednesday": [ 20, 14, 16, 22 ],
+            "thursday": [ 3, 8, 9, 22 ],
+            "saturday": [ 4, 8, 10, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 221,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2874152417/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://matthewshipp.bandcamp.com/album/zero',
+          a_string: 'Zero by Matthew Shipp',
+          rule: {
+            "monday": [ 4, 8, 10, 14 ],
+            "tuesday": [ 7, 10, 12, 16 ],
+            "wednesday": [ 8, 12, 14, 16 ],
+            "thursday": [ 20, 14, 16, 22 ],
+            "saturday": [ 3, 8, 9, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 222,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3854515748/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://dariusjones.bandcamp.com/album/the-darkseid-recital',
+          a_string: 'The Darkseid Recital by Darius Jones &amp; Matthew Shipp',
+          rule: {
+            "monday": [ 3, 8, 9, 22 ],
+            "tuesday": [ 4, 8, 10, 14 ],
+            "wednesday": [ 7, 10, 12, 16 ],
+            "thursday": [ 8, 12, 14, 16 ],
+            "saturday": [ 20, 14, 16, 22 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
