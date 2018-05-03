@@ -7204,6 +7204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 361,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/eastern-road-turramurra-1926.jpg',
+          title: 'Eastern Road, Turramurra',
+          artist: 'Grace Cossington Smith',
+          year: '1926',
+          rule: {
+            "monday": [ 15, 25, 3, 12 ],
+            "tuesday": [ 21, 30, 9, 17 ],
+            "wednesday": [ 20, 30, 7, 17 ],
+            "thursday": [ 20, 29, 6, 16 ],
+            "friday": [ 18, 28, 5, 15 ],
+            "saturday": [ 17, 27, 4, 14 ],
+            "sunday": [ 16, 26, 3, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 362,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/mamut-s-caf.jpg',
+          title: 'Mamut\'s Café',
+          artist: 'Nutzi Acontz',
+          year: '?',
+          rule: {
+            "monday": [ 16, 26, 3, 13 ],
+            "tuesday": [ 15, 25, 3, 12 ],
+            "wednesday": [ 21, 30, 9, 17 ],
+            "thursday": [ 20, 30, 7, 17 ],
+            "friday": [ 20, 29, 6, 16 ],
+            "saturday": [ 18, 28, 5, 15 ],
+            "sunday": [ 17, 27, 4, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 363,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/trois-disques-1966.jpg',
+          title: 'Trois disques',
+          artist: 'Marcelle Cahn',
+          year: '1966',
+          rule: {
+            "monday": [ 17, 27, 4, 14 ],
+            "tuesday": [ 16, 26, 3, 13 ],
+            "wednesday": [ 15, 25, 3, 12 ],
+            "thursday": [ 21, 30, 9, 17 ],
+            "friday": [ 20, 30, 7, 17 ],
+            "saturday": [ 20, 29, 6, 16 ],
+            "sunday": [ 18, 28, 5, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 364,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/1933-synthesis-322-edit.jpg',
+          title: 'Synthesis of Radio Communications',
+          artist: 'Benedetta',
+          year: '1933 - 1934',
+          rule: {
+            "monday": [ 19, 29, 6, 16 ],
+            "tuesday": [ 18, 28, 5, 15 ],
+            "wednesday": [ 17, 27, 4, 14 ],
+            "thursday": [ 16, 26, 4, 13 ],
+            "friday": [ 22, 31, 10, 18 ],
+            "saturday": [ 21, 31, 8, 18 ],
+            "sunday": [ 21, 30, 7, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 365,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/the-girls.jpg',
+          title: 'The Girls',
+          artist: 'Tamara de Lempicka',
+          year: 'c.1930',
+          rule: {
+            "monday": [ 21, 30, 7, 17 ],
+            "tuesday": [ 19, 29, 6, 16 ],
+            "wednesday": [ 18, 28, 5, 15 ],
+            "thursday": [ 17, 27, 4, 14 ],
+            "friday": [ 16, 26, 4, 13 ],
+            "saturday": [ 22, 31, 10, 18 ],
+            "sunday": [ 21, 31, 8, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
