@@ -4054,6 +4054,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 226,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2900186348/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://davidgarland.bandcamp.com/album/verdancy',
+          a_string: 'Verdancy by David Garland',
+          rule: {
+            "monday": [ 8, 14, 15, 16 ],
+            "tuesday": [ 7, 14, 15, 16 ],
+            "wednesday": [ 11, 18, 19, 20 ],
+            "thursday": [ 10, 16, 18, 19 ],
+            "saturday": [ 9, 16, 17, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 227,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2570329810/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jonahsirota.bandcamp.com/album/strong-sad',
+          a_string: 'Strong Sad by Jonah Sirota',
+          rule: {
+            "monday": [ 9, 16, 17, 18 ],
+            "tuesday": [ 8, 14, 15, 16 ],
+            "wednesday": [ 7, 14, 15, 16 ],
+            "thursday": [ 11, 18, 19, 20 ],
+            "saturday": [ 10, 16, 18, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 228,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3614986916/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://brianbaxter.bandcamp.com/album/roots-run-deep',
+          a_string: 'Roots Run Deep by Chicago Q Ensemble &amp; Angela Tomasino',
+          rule: {
+            "monday": [ 10, 16, 18, 19 ],
+            "tuesday": [ 9, 16, 17, 18 ],
+            "wednesday": [ 8, 14, 15, 16 ],
+            "thursday": [ 7, 14, 15, 16 ],
+            "saturday": [ 11, 18, 19, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
