@@ -1414,6 +1414,26 @@ exports.seed = function(knex, Promise) {
           a_string: 'The Cymbals/Symbols Sessions (New York, 1973) by Sun Ra &amp; His Arkestra',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 142,
+          user_id: 1,
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2652567313/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sunramusic.bandcamp.com/album/pleiades-a-jazz-symphonique',
+          a_string: 'Pleiades: A Jazz Symphonique by Sun Ra &amp; His Arkestra with Chamber Orchestra',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 143,
+          user_id: 1,
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4264938093/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sunramusic.bandcamp.com/album/space-age-rhythm-bop-the-1950s',
+          a_string: 'Space Age Rhythm &amp; Bop (The 1950s) by Sun Ra, Nu Sounds, Yochanan, Cosmic Rays',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
