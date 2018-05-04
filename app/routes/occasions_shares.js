@@ -42,6 +42,7 @@ router.post('/', (req, res, next) => {
     user_id: req.body.user_id,
     occasion_id: req.body.occasion_id,
     share_associate_id: req.body.share_associate_id,
+    responded: req.body.responded,
     accepted: req.body.accepted
   }, '*')
   .then((result) => {
@@ -60,6 +61,7 @@ router.patch('/:id', (req, res, next) => {
     user_id: req.body.user_id,
     occasion_id: req.body.occasion_id,
     share_associate_id: req.body.share_associate_id,
+    responded: req.body.responded,
     accepted: req.body.accepted
   }, '*')
     .then((results)=>{
@@ -97,6 +99,7 @@ router.delete('/:id', (req, res, next) => {
             user_id: record.user_id,
             occasion_id: record.occasion_id,
             share_associate_id: record.share_associate_id,
+            responded: record.responded,
             accepted: record.accepted
           };
 

@@ -5233,8 +5233,18 @@
 
               <div class="holidayAcceptDenyButtons" id="occasionAcceptDecline{{occasion.id}}">
 
-                <a class="btn">Decline</a>
-                <a class="btn">Accept</a>
+                <a class="btn" ng-click="$ctrl.occasionDeclineSelect(occasion.id)">Decline</a>
+                <a class="btn" ng-click="$ctrl.occasionAcceptSelect(occasion.id)">Accept</a>
+              </div>
+              <br><br><div id="occasionShareAccepted{{occasion.id}}">
+
+                <img src="{{occasion.inviteeImg}}"><br>
+                <br><h3>{{occasion.invitee}} has accepted this occasion.</h3>
+              </div>
+              <br><br><div id="occasionShareDeclined{{occasion.id}}">
+
+                <img src="{{occasion.inviteeImg}}"><br>
+                <br><h3>{{occasion.invitee}} has declined this occasion.</h3>
               </div>
 
               <a href=""><h3>comment</h3></a>

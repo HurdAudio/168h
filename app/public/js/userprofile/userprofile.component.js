@@ -248,6 +248,34 @@
       vm.userEditHolidayShareCommentCompleted = userEditHolidayShareCommentCompleted;
       vm.deleteHolidayShare = deleteHolidayShare;
       vm.addNewTimeblockComment = addNewTimeblockComment;
+      vm.occasionDeclineSelect = occasionDeclineSelect;
+      vm.occasionAcceptSelect = occasionAcceptSelect;
+
+      function occasionAcceptSelect(occasionId) {
+        let subObj = {
+          responded: true,
+          accepted: true
+        };
+        $http.patch(`/occasions_shares/${occasionId}`, subObj)
+        .then(patchedShareData=>{
+          let patchedShare = patchedShareData.data;
+          document.getElementById('occasionAcceptDecline' + occasionId).setAttribute("style", "display: none;");
+          document.getElementById('occasionShareAccepted' + occasionId).setAttribute("style", "display: initial;");
+        });
+      }
+
+      function occasionDeclineSelect(occasionId) {
+        let subObj = {
+          responded: true,
+          accepted: false
+        };
+        $http.patch(`/occasions_shares/${occasionId}`, subObj)
+        .then(patchedShareData=>{
+          let patchedShare = patchedShareData.data;
+          document.getElementById('occasionAcceptDecline' + occasionId).setAttribute("style", "display: none;");
+          document.getElementById('occasionShareDeclined' + occasionId).setAttribute("style", "display: initial;");
+        });
+      }
 
       function addNewTimeblockComment(timeblockId) {
         let check = new Date();
@@ -373,10 +401,15 @@
           $http.get(`/users/${invitee}`)
           .then(inviteeUserData=>{
             let inviteeUser = inviteeUserData.data;
+
             if (isInviter) {
               vm.activeOccasionShares[index].sharerImg = inviteeUser.user_avatar_url;
+              vm.activeOccasionShares[index].inviteeImg = inviteeUser.user_avatar_url;
+              vm.activeOccasionShares[index].invitee = inviteeUser.name;
             } else {
               vm.activeOccasionShares[index].sharerImg = inviterUser.user_avatar_url;
+              vm.activeOccasionShares[index].inviteeImg = inviteeUser.user_avatar_url;
+              vm.activeOccasionShares[index].invitee = inviteeUser.name;
             }
             vm.activeOccasionShares[index].sharrerName = inviterUser.name;
             vm.activeOccasionShares[index].inviteeName = inviteeUser.name;
@@ -384,6 +417,7 @@
               if (isInviter) {
                 document.getElementById('occasionSharer' + id).setAttribute("style", "display: none;");
                 document.getElementById('occasionAcceptDecline' + id).setAttribute("style", "display: none;");
+
               } else {
                 document.getElementById('occasionSharee' + id).setAttribute("style", "display: none;");
               }
@@ -449,6 +483,23 @@
               occasionNameAndOccurance(shares[i].occasion_id, i);
               retreiveOccasionShareComments(shares[i], i);
             }
+            setTimeout(()=>{
+              for (let j = 0; j <shares.length; j++) {
+                if (shares[j].responded) {
+                  document.getElementById('occasionAcceptDecline' + shares[j].id).setAttribute("style", "display: none;");
+                  if (shares[j].accepted) {
+                    document.getElementById('occasionShareAccepted' + shares[j].id).setAttribute("style", "display: initial;");
+                    document.getElementById('occasionShareDeclined' + shares[j].id).setAttribute("style", "display: none;");
+                  } else {
+                    document.getElementById('occasionShareAccepted' + shares[j].id).setAttribute("style", "display: none;");
+                    document.getElementById('occasionShareDeclined' + shares[j].id).setAttribute("style", "display: initial;");
+                  }
+                } else {
+                  document.getElementById('occasionShareAccepted' + shares[j].id).setAttribute("style", "display: none;");
+                  document.getElementById('occasionShareDeclined' + shares[j].id).setAttribute("style", "display: none;");
+                }
+              }
+            }, 100);
           }
         });
       }

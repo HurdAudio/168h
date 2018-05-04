@@ -10,6 +10,7 @@ exports.seed = function(knex, Promise) {
           user_id: 1,
           occasion_id: 1,
           share_associate_id: 1,
+          responded: false,
           accepted: false,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
