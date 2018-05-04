@@ -6,6 +6,7 @@
   var profileClock = true;
   var currentUserId = 0;
   var toggle = {};
+  var pastAppointmentIds = [];
 
 
   function setClock(){
@@ -391,6 +392,41 @@
         });
       }
 
+      function obtainCommenterNameAndPic(comment, index, index2) {
+        $http.get(`/users/${comment.user_id}`)
+        .then(userData=>{
+          let user = userData.data;
+          vm.activeOccasionShares[index].comments[index2].user_avatar_url = user.user_avatar_url;
+          vm.activeOccasionShares[index].comments[index2].name = user.name;
+        });
+      }
+
+      function retreiveOccasionShareComments(share, index) {
+        let aDate;
+        let bDate;
+        $http.get('/occasions_share_comments')
+        .then(allCommentsData=>{
+          let allComments = allCommentsData.data;
+          let shareComments = allComments.filter(entry=>{
+            return(entry.occasions_share === share.id);
+          });
+          shareComments = shareComments.sort((a, b)=>{
+            aDate = new Date(a.created_at);
+            bDate = new Date(b.created_at);
+            return(aDate.getDate() - bDate.getDate());
+          });
+          if (shareComments.length > 0) {
+            vm.activeOccasionShares[index].comments = [];
+            for (let i = 0; i < shareComments.length; i++) {
+              vm.activeOccasionShares[index].comments[i] = {};
+              vm.activeOccasionShares[index].comments[i].comment = shareComments[i].comment;
+              obtainCommenterNameAndPic(shareComments[i], index, i);
+              vm.activeOccasionShares[index].comments[i].cleanDate = cleanDateHoliday(shareComments[i].updated_at) + ' - ' + timeDate(shareComments[i].updated_at);
+            }
+          }
+        });
+      }
+
       function retrieveUserOccasionShares() {
 
         $http.get(`/occasions_shares`)
@@ -411,6 +447,7 @@
               occasionImagerAndNames(shares[i].user_id, shares[i].share_associate_id, i, ((parseInt(shares[i].user_id) === parseInt(currentUserId)) && (parseInt(shares[i].share_associate_id) !== parseInt(currentUserId))), shares[i].id);
               vm.activeOccasionShares[i].cleanDate = cleanDateHoliday(shares[i].created_at) + ' - ' + timeDate(shares[i].updated_at);
               occasionNameAndOccurance(shares[i].occasion_id, i);
+              retreiveOccasionShareComments(shares[i], i);
             }
           }
         });
@@ -13969,13 +14006,20 @@
               vm.activeTimeblockShares[index].comments[i].cleanDate = cleanDateHoliday(appointmentComments[i].updated_at) + ' at ' +  check.toLocaleTimeString('en-GB');
             }
             setTimeout(()=>{
-              for (let j = 0; j < appointmentComments.length; j++) {
-                if (parseInt(appointmentComments[j].user_id) === parseInt(currentUserId)) {
-                  document.getElementById("editDeleteTimeblockShareCommentDiv" + vm.activeTimeblockShares[index].comments[j].id).setAttribute("style", "display: initial;");
+              let appointmentTime;
+              if (appointmentComments.length > 0) {
+                for (let j = 0; j < appointmentComments.length; j++) {
+                  if (parseInt(appointmentComments[j].user_id) === parseInt(currentUserId)) {
+                    if (vm.activeTimeblockShares[index] !== undefined) {
+                      document.getElementById("editDeleteTimeblockShareCommentDiv" + vm.activeTimeblockShares[index].comments[j].id).setAttribute("style", "display: initial;");
+                    }
+                  }
+                  if (vm.activeTimeblockShares[index] !== undefined) {
+                    document.getElementById("thisIsTheTimeblockShareCommentEditor" + vm.activeTimeblockShares[index].comments[j].id).setAttribute("style", "display: none;");
+                  }
                 }
-                document.getElementById("thisIsTheTimeblockShareCommentEditor" + vm.activeTimeblockShares[index].comments[j].id).setAttribute("style", "display: none;");
               }
-            }, 75);
+            }, 250);
           }
         });
       }
@@ -13991,13 +14035,16 @@
           let timeblock = timeblockData.data;
           let appointmentEnded = new Date(timeblock.end_time);
           if (now.getTime() > appointmentEnded.getTime()) {
-            vm.activeTimeblockShares.splice(index, 1);
+            // vm.activeTimeblockShares.splice(index, 1);
+            pastAppointmentIds.push(index);
+            // console.log(pastAppointmentIds);
           }
         });
       }
 
       function retrieveUserAppointments() {
         let check;
+        pastAppointmentIds = [];
         $http.get('/timeblock_shares')
         .then(allTimeblockSharesData=>{
           let allTimeblockShares = allTimeblockSharesData.data;
@@ -14032,6 +14079,16 @@
                   }
                 }
               }
+              setTimeout(()=>{
+
+                if (pastAppointmentIds.length > 0) {
+                  for (let k = pastAppointmentIds.length - 1; k !== -1; k--) {
+                    vm.activeTimeblockShares.splice(pastAppointmentIds[k], 1);
+
+                  }
+                }
+              }, (vm.activeTimeblockShares.length * 150));
+
             }, 75);
 
           }

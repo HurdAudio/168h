@@ -8,7 +8,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 1,
           user_id: 1,
-          name: 'Ginger Derusha\'s birthday',
+          name: 'Ginger DeRusha\'s birthday',
           day_of: new Date('2018-01-30T13:44:00.000Z'),
           is_annual: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),

@@ -5244,12 +5244,12 @@
                 <h1>Comments:</h1>
               </div>
               <div class="occasionShareComments">
-                <!-- <main ng-repeat="comment in holiday.comments | orderBy : $ctrl.sortBy"> -->
-                  <img src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/1964977_10203532053928956_1620738254_n.jpg?oh=912289bc56416424f7d2e4ef3bfb8604&oe=5B41AE92"><br><br><br>
-                  <br><br><br><p>From: Lucifer Sam <br>
-                  on 20 April 2018</p><br><br>
-                  <h3>It's the end of the world as we know it.</h3><br>
-                <!-- </main> -->
+                <main ng-repeat="comment in occasion.comments | orderBy : $ctrl.sortBy">
+                  <img src="{{comment.user_avatar_url}}"><br><br><br>
+                  <br><br><br><p>From: {{comment.name}} <br>
+                  on {{comment.cleanDate}}</p><br><br>
+                  <h3>{{comment.comment}}</h3><br>
+                </main>
               </div>
 
             </main>
