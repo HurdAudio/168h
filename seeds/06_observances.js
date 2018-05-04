@@ -9878,6 +9878,34 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 632,
+          user_id: 1,
+          name: 'Jane Addams (activist/reformer/social worker/public philosopher/sociologist/public administrator/protestor/author/leader in women\'s suffrage and world peace) born 1860',
+          color: '#1C1C1C',
+          picture: './img/dissent/jane-addams-3.jpg',
+          day_of: new Date ('1860-09-06T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 633,
+          user_id: 1,
+          name: 'Pastor Richardo Salazar was allegedly told by God that an asteroid fully made of ice, with a 9km diameter, traveling at 30,000km per hour would strike earth killing 1,200 million people on this day in 2016.',
+          color: '#B6ACA0',
+          picture: './img/doomsday/RicardoSalazar.jpg',
+          day_of: new Date ('2016-05-16T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
