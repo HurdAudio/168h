@@ -6350,7 +6350,7 @@ exports.seed = function(knex, Promise) {
           name: 'Rich "Goose" Gossage (pitcher), born 1951',
           color: '#377B3E',
           picture: './img/baseball/richgossage.jpg',
-          day_of: new Date ('1951-05-05T13:44:00.000Z'),
+          day_of: new Date ('1951-07-05T13:44:00.000Z'),
           is_annual: true,
           art_override: false,
           music_override: false,
