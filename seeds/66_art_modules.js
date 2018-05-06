@@ -1384,6 +1384,66 @@ exports.seed = function(knex, Promise) {
           public: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 116,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/1845.jpg',
+          title: 'Understanding paw preference could offer insights into an animal’s vulnerability to stress, say the scientists.',
+          artist: 'Alexander Natruskin',
+          year: '2018',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 117,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/18huxz4bvnfjbjpg.jpg',
+          title: 'The Attraction Between Cats & Computers',
+          artist: 'Brian Ashcraft',
+          year: '2017',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 118,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/desktop-hd-download-pictures-of-cats.jpg',
+          title: 'Desktop hd download pictures of cats',
+          artist: 'unknown artist',
+          year: '?',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 119,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/Birman-2.jpg',
+          title: 'Birman Picture',
+          artist: 'unknown artist',
+          year: '?',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 120,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/Korat-2.jpg',
+          title: 'Korat Picture',
+          artist: 'unknown artist',
+          year: '?',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
