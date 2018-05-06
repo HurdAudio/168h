@@ -7868,8 +7868,8 @@ footer img {
   margin: 4vmin 38vmin 2vmin 10vmin;
 }
 
-/* .day {
-  background-image: url(../img/january_tiles/melting-ice-water-drop_1600.jpg);
+.day {
+  background-image: url(../img/tiles/steampunk-1122553_1920.jpg);
   background-repeat: no-repeat;
-  background-size: 175%;
-} */
+  background-size: 100%;
+}
