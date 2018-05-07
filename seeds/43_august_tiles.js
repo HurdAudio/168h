@@ -648,6 +648,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#E07894',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 47,
+          user_id: 1,
+          theme: 'Primary Colors',
+          type: 'holiday',
+          src_string: '../img/august_tiles/bry-color-wheel_2-300x294.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '105%',
+          color_dark: '#082297',
+          color_medium: '#C81115',
+          color_light: '#FFFFFF',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
