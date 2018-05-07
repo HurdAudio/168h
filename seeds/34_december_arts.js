@@ -5504,6 +5504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 276,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/37-05,CmpCwbyNvl.jpg',
+          title: 'Complete Cowboy',
+          artist: 'A. Leslie Ross',
+          year: '1937',
+          rule: {
+            "monday": [ 6, 19, 7, 14 ],
+            "tuesday": [ 12, 25, 2, 8 ],
+            "wednesday": [ 11, 24, 1, 7 ],
+            "thursday": [ 10, 23, 31, 6 ],
+            "friday": [ 9, 22, 30, 5 ],
+            "saturday": [ 8, 21, 29, 4 ],
+            "sunday": [ 7, 19, 28, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 277,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/30-04,Battle.jpg',
+          title: 'Battle Stories',
+          artist: 'George Rozen',
+          year: '1930',
+          rule: {
+            "monday": [ 7, 19, 28, 3 ],
+            "tuesday": [ 6, 19, 7, 14 ],
+            "wednesday": [ 12, 25, 2, 8 ],
+            "thursday": [ 11, 24, 1, 7 ],
+            "friday": [ 10, 23, 31, 6 ],
+            "saturday": [ 9, 22, 30, 5 ],
+            "sunday": [ 8, 21, 29, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 278,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/25-00,Western.jpg',
+          title: 'Western Illustration',
+          artist: 'Jerome Rozen',
+          year: '1925',
+          rule: {
+            "monday": [ 8, 21, 29, 4 ],
+            "tuesday": [ 7, 19, 28, 3 ],
+            "wednesday": [ 6, 19, 7, 14 ],
+            "thursday": [ 12, 25, 2, 8 ],
+            "friday": [ 11, 24, 1, 7 ],
+            "saturday": [ 10, 23, 31, 6 ],
+            "sunday": [ 9, 22, 30, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 279,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/05-00,FacePool.jpg',
+          title: 'The Face In The Pool',
+          artist: 'J. Allen St. John',
+          year: '1905',
+          rule: {
+            "monday": [ 9, 22, 30, 5 ],
+            "tuesday": [ 8, 21, 29, 4 ],
+            "wednesday": [ 7, 19, 28, 3 ],
+            "thursday": [ 6, 19, 7, 14 ],
+            "friday": [ 12, 25, 2, 8 ],
+            "saturday": [ 11, 24, 1, 7 ],
+            "sunday": [ 10, 23, 31, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 280,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/45-10,FightW1.jpg',
+          title: 'Fighting Western',
+          artist: 'Al Savitt',
+          year: '1945',
+          rule: {
+            "monday": [ 11, 24, 1, 7 ],
+            "tuesday": [ 10, 23, 31, 6 ],
+            "wednesday": [ 9, 22, 30, 5 ],
+            "thursday": [ 8, 20, 29, 4 ],
+            "friday": [ 7, 20, 8, 15 ],
+            "saturday": [ 13, 26, 3, 9 ],
+            "sunday": [ 12, 25, 2, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
