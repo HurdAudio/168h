@@ -6104,6 +6104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 306,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/untitled-1955.jpg',
+          title: 'Untitled',
+          artist: 'Lolo Soldevilla',
+          year: '1955',
+          rule: {
+            "monday": [ 11, 17, 5, 14 ],
+            "tuesday": [ 10, 16, 4, 12 ],
+            "wednesday": [ 8, 15, 3, 10 ],
+            "thursday": [ 15, 21, 9, 17 ],
+            "friday": [ 14, 20, 8, 16 ],
+            "saturday": [ 13, 19, 7, 15 ],
+            "sunday": [ 12, 18, 6, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 307,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/ocean-park-no-30.jpg',
+          title: 'Ocean Park No. 30',
+          artist: 'Richard Diebenkorn',
+          year: '1970',
+          rule: {
+            "monday": [ 12, 18, 6, 14 ],
+            "tuesday": [ 11, 17, 5, 14 ],
+            "wednesday": [ 10, 16, 4, 12 ],
+            "thursday": [ 8, 15, 3, 10 ],
+            "friday": [ 15, 21, 9, 17 ],
+            "saturday": [ 14, 20, 8, 16 ],
+            "sunday": [ 13, 19, 7, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 308,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/composi-o-1964(1).jpg',
+          title: 'Composição',
+          artist: 'Lothar Charoux',
+          year: '1964',
+          rule: {
+            "monday": [ 14, 20, 8, 16 ],
+            "tuesday": [ 13, 19, 7, 15 ],
+            "wednesday": [ 12, 18, 6, 15 ],
+            "thursday": [ 11, 17, 5, 13 ],
+            "friday": [ 9, 16, 4, 11 ],
+            "saturday": [ 16, 22, 10, 18 ],
+            "sunday": [ 15, 21, 9, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 309,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/endukugga-1995.jpg',
+          title: 'Endukugga',
+          artist: 'Enrico Baj',
+          year: '1995',
+          rule: {
+            "monday": [ 15, 21, 9, 17 ],
+            "tuesday": [ 14, 20, 8, 16 ],
+            "wednesday": [ 13, 19, 7, 15 ],
+            "thursday": [ 12, 18, 6, 15 ],
+            "friday": [ 11, 17, 5, 13 ],
+            "saturday": [ 9, 16, 4, 11 ],
+            "sunday": [ 16, 22, 10, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 310,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/cosmic-attraction-2011.jpg',
+          title: 'Cosmic Attraction',
+          artist: 'Paul du Toit',
+          year: '2011',
+          rule: {
+            "monday": [ 16, 22, 10, 18 ],
+            "tuesday": [ 15, 21, 9, 17 ],
+            "wednesday": [ 14, 20, 8, 16 ],
+            "thursday": [ 13, 19, 7, 15 ],
+            "friday": [ 12, 18, 6, 15 ],
+            "saturday": [ 11, 17, 5, 13 ],
+            "sunday": [ 9, 16, 4, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
