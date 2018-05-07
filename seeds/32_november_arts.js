@@ -5704,6 +5704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 286,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/black-painting-1964.jpg',
+          title: 'Black Painting',
+          artist: 'Ralph Hotere',
+          year: '1964',
+          rule: {
+            "monday": [ 15, 18, 25, 30 ],
+            "tuesday": [ 14, 18, 25, 30 ],
+            "wednesday": [ 13, 18, 24, 29 ],
+            "thursday": [ 12, 17, 23, 30 ],
+            "friday": [ 18, 23, 29, 4 ],
+            "saturday": [ 17, 22, 27, 3 ],
+            "sunday": [ 16, 21, 27, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 287,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/the-negative-way-4-1964.jpg',
+          title: 'The Negative Way #4',
+          artist: 'Paul Brach',
+          year: '1964',
+          rule: {
+            "monday": [ 17, 22, 28, 2 ],
+            "tuesday": [ 16, 19, 26, 1 ],
+            "wednesday": [ 15, 19, 26, 1 ],
+            "thursday": [ 14, 19, 25, 30 ],
+            "friday": [ 13, 18, 24, 1 ],
+            "saturday": [ 19, 24, 30, 5 ],
+            "sunday": [ 18, 23, 28, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 288,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/vertical-man-1964.jpg',
+          title: 'Vertical Man',
+          artist: 'Noguchi Isamu',
+          year: '1964',
+          rule: {
+            "monday": [ 18, 23, 28, 4 ],
+            "tuesday": [ 17, 22, 28, 2 ],
+            "wednesday": [ 16, 19, 26, 1 ],
+            "thursday": [ 15, 19, 26, 1 ],
+            "friday": [ 14, 19, 25, 30 ],
+            "saturday": [ 13, 18, 24, 1 ],
+            "sunday": [ 19, 24, 30, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 289,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/the-harvest-1965.jpg',
+          title: 'The Harvest',
+          artist: 'Agnes Martin',
+          year: '1965',
+          rule: {
+            "monday": [ 19, 24, 30, 5 ],
+            "tuesday": [ 18, 23, 28, 4 ],
+            "wednesday": [ 17, 22, 28, 2 ],
+            "thursday": [ 16, 19, 26, 1 ],
+            "friday": [ 15, 19, 26, 1 ],
+            "saturday": [ 14, 19, 25, 30 ],
+            "sunday": [ 13, 18, 24, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 290,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/wave-1965.jpg',
+          title: 'Wave',
+          artist: 'Richard Tuttle',
+          year: '1965',
+          rule: {
+            "monday": [ 13, 18, 24, 1 ],
+            "tuesday": [ 19, 24, 30, 5 ],
+            "wednesday": [ 18, 23, 28, 4 ],
+            "thursday": [ 17, 22, 28, 2 ],
+            "friday": [ 16, 19, 26, 1 ],
+            "saturday": [ 15, 19, 26, 1 ],
+            "sunday": [ 14, 19, 25, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
