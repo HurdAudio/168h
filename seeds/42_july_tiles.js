@@ -662,6 +662,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FBFFFB',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 48,
+          user_id: 1,
+          theme: 'Steam',
+          type: 'week',
+          src_string: '../img/july_tiles/1440x900-data_out_26_402634173-cloud-wallpapers.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '165%',
+          color_dark: '#040207',
+          color_medium: '#37567C',
+          color_light: '#F3F1F3',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
