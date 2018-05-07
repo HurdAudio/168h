@@ -3244,6 +3244,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 181,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1903374515/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cuneiformrecords.bandcamp.com/album/waxed-oop',
+          a_string: 'Waxed Oop by Fast &#39;N&#39; Bulbous',
+          rule: {
+            "monday": [ 28, 18, 26, 20 ],
+            "tuesday": [ 27, 17, 25, 20 ],
+            "wednesday": [ 26, 16, 24, 18 ],
+            "thursday": [ 25, 15, 23, 17 ],
+            "saturday": [ 29, 19, 27, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 182,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1099831436/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://marcribotsceramicdog.bandcamp.com/album/yru-still-here',
+          a_string: 'YRU Still Here? by Marc Ribot&#39;s Ceramic Dog',
+          rule: {
+            "monday": [ 30, 20, 28, 22 ],
+            "tuesday": [ 29, 19, 27, 21 ],
+            "wednesday": [ 28, 18, 26, 21 ],
+            "thursday": [ 27, 17, 25, 19 ],
+            "saturday": [ 26, 16, 24, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 183,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2569045970/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cuneiformrecords.bandcamp.com/album/reflections-from-the-firepool',
+          a_string: 'Reflections from the Firepool by Djam Karet',
+          rule: {
+            "monday": [ 26, 16, 24, 18 ],
+            "tuesday": [ 30, 20, 28, 22 ],
+            "wednesday": [ 29, 19, 27, 21 ],
+            "thursday": [ 28, 18, 26, 21 ],
+            "saturday": [ 27, 17, 25, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
