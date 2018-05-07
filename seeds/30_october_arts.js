@@ -5904,6 +5904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 296,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_sportsovpost_00011.jpg',
+          title: 'Youth to ski!',
+          artist: 'M.Nestorova-Berzina,O.Nesterova',
+          year: '1945',
+          rule: {
+            "monday": [ 17, 28, 8, 12 ],
+            "tuesday": [ 16, 27, 7, 11 ],
+            "wednesday": [ 15, 26, 6, 10 ],
+            "thursday": [ 14, 25, 5, 9 ],
+            "friday": [ 13, 24, 4, 8 ],
+            "saturday": [ 12, 23, 24, 7 ],
+            "sunday": [ 21, 22, 2, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 297,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_sportsovpost_00009.jpg',
+          title: 'Everyone to skis!',
+          artist: 'A.Nemukhin',
+          year: '1942',
+          rule: {
+            "monday": [ 21, 22, 2, 6 ],
+            "tuesday": [ 17, 28, 8, 12 ],
+            "wednesday": [ 16, 27, 7, 11 ],
+            "thursday": [ 15, 26, 6, 10 ],
+            "friday": [ 14, 25, 5, 9 ],
+            "saturday": [ 13, 24, 4, 8 ],
+            "sunday": [ 12, 23, 24, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 298,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_warsovpost_00004.jpg',
+          title: 'Be a hero',
+          artist: 'V.Koretsky',
+          year: 'c.1940',
+          rule: {
+            "monday": [ 12, 23, 24, 7 ],
+            "tuesday": [ 21, 22, 2, 6 ],
+            "wednesday": [ 17, 28, 8, 12 ],
+            "thursday": [ 16, 27, 7, 11 ],
+            "friday": [ 15, 26, 6, 10 ],
+            "saturday": [ 14, 25, 5, 9 ],
+            "sunday": [ 13, 24, 4, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 299,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_warsovpost_00002.jpg',
+          title: 'Our forces are countless!',
+          artist: 'V.Koretsky',
+          year: '1941',
+          rule: {
+            "monday": [ 13, 24, 4, 8 ],
+            "tuesday": [ 12, 23, 24, 7 ],
+            "wednesday": [ 21, 22, 2, 6 ],
+            "thursday": [ 17, 28, 8, 12 ],
+            "friday": [ 16, 27, 7, 11 ],
+            "saturday": [ 15, 26, 6, 10 ],
+            "sunday": [ 14, 25, 5, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 300,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_warsovpost_00001.jpg',
+          title: 'Homeland - Mother is Calling!',
+          artist: 'I.Toidze',
+          year: '1941',
+          rule: {
+            "monday": [ 14, 25, 5, 9 ],
+            "tuesday": [ 13, 24, 4, 8 ],
+            "wednesday": [ 12, 23, 24, 7 ],
+            "thursday": [ 21, 22, 2, 6 ],
+            "friday": [ 17, 28, 8, 12 ],
+            "saturday": [ 16, 27, 7, 11 ],
+            "sunday": [ 15, 26, 6, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
