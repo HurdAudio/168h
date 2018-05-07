@@ -2920,6 +2920,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 163,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=201660388/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://domenico2.bandcamp.com/album/the-good-is-a-big-god',
+          a_string: 'The Good is a Big God by Domenico Lancellotti',
+          rule: {
+            "monday": [ 26, 1, 7, 13 ],
+            "tuesday": [ 30, 5, 11, 17 ],
+            "wednesday": [ 29, 4, 10, 15 ],
+            "thursday": [ 26, 3, 9, 15 ],
+            "saturday": [ 25, 2, 8, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 164,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1985016392/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://domenico2.bandcamp.com/album/sincerely-hot',
+          a_string: 'sincerely hot by Domenico Lancellotti',
+          rule: {
+            "monday": [ 25, 2, 8, 14 ],
+            "tuesday": [ 26, 1, 7, 13 ],
+            "wednesday": [ 30, 5, 11, 17 ],
+            "thursday": [ 29, 4, 10, 15 ],
+            "saturday": [ 26, 3, 9, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 165,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2995255316/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://timmaia.bandcamp.com/album/world-psychedelic-classics-4-nobody-can-live-forever-the-existential-soul-of-tim-maia',
+          a_string: 'World Psychedelic Classics 4: Nobody Can Live Forever – The Existential Soul of Tim Maia by Tim Maia',
+          rule: {
+            "monday": [ 26, 3, 9, 15 ],
+            "tuesday": [ 25, 2, 8, 14 ],
+            "wednesday": [ 26, 1, 7, 13 ],
+            "thursday": [ 30, 5, 11, 17 ],
+            "saturday": [ 29, 4, 10, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
