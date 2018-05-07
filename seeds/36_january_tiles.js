@@ -746,6 +746,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#E4F6F6',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 54,
+          user_id: 1,
+          theme: 'Ice',
+          type: 'friday',
+          src_string: '../img/january_tiles/Blue-Ice-Wallpaper-Desktop.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '145%',
+          color_dark: '#04133F',
+          color_medium: '#1337BF',
+          color_light: '#FCFCFA',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
