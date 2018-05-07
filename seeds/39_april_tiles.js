@@ -704,6 +704,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#A8B6DD',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 51,
+          user_id: 1,
+          theme: 'Water',
+          type: 'sunday',
+          src_string: '../img/april_tiles/sunset-942101_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '152%',
+          color_dark: '#000000',
+          color_medium: '#BF7A34',
+          color_light: '#FFED80',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
