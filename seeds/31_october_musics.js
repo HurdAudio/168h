@@ -3136,6 +3136,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 175,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1457951735/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://breathinglight.bandcamp.com/album/cold-static-world',
+          a_string: 'Cold Static World by Breathing Light',
+          rule: {
+            "monday": [ 1, 11, 21, 24 ],
+            "tuesday": [ 31, 10, 20, 23 ],
+            "wednesday": [ 30, 9, 20, 22 ],
+            "thursday": [ 3, 13, 23, 26 ],
+            "saturday": [ 2, 12, 22, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 176,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2397977898/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://krimewatch.bandcamp.com/album/krimewatch',
+          a_string: 'Krimewatch by KRIMEWATCH',
+          rule: {
+            "monday": [ 2, 12, 22, 25 ],
+            "tuesday": [ 1, 11, 21, 24 ],
+            "wednesday": [ 31, 10, 20, 23 ],
+            "thursday": [ 30, 9, 20, 22 ],
+            "saturday": [ 3, 13, 23, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 177,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1156350708/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://nikander.bandcamp.com/album/sekyra-prohnan-kolenem',
+          a_string: 'Sekyra prohnaná kolenem by Nikander',
+          rule: {
+            "monday": [ 3, 13, 23, 26 ],
+            "tuesday": [ 2, 12, 22, 25 ],
+            "wednesday": [ 1, 11, 21, 24 ],
+            "thursday": [ 31, 10, 20, 23 ],
+            "saturday": [ 30, 9, 20, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
