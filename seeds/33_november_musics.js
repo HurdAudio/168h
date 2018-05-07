@@ -3028,6 +3028,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 169,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2896243937/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://parisdjs.bandcamp.com/album/grant-phabao-afrofunk-arkestra',
+          a_string: 'Grant Phabao Afrofunk Arkestra by Grant Phabao Afrofunk Arkestra',
+          rule: {
+            "monday": [ 22, 3, 14, 26 ],
+            "tuesday": [ 26, 7, 18, 22 ],
+            "wednesday": [ 25, 6, 17, 21 ],
+            "thursday": [ 24, 5, 16, 20 ],
+            "saturday": [ 23, 4, 15, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 170,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2338045655/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://paralele.bandcamp.com/album/para-lele',
+          a_string: 'Para Lele by Para Lele',
+          rule: {
+            "monday": [ 23, 4, 15, 17 ],
+            "tuesday": [ 22, 3, 14, 26 ],
+            "wednesday": [ 26, 7, 18, 22 ],
+            "thursday": [ 25, 6, 17, 21 ],
+            "saturday": [ 24, 5, 16, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 171,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2899067869/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://mrbongo.bandcamp.com/album/shango',
+          a_string: 'Shango by Peter King',
+          rule: {
+            "monday": [ 24, 5, 16, 20 ],
+            "tuesday": [ 23, 4, 15, 17 ],
+            "wednesday": [ 22, 3, 14, 26 ],
+            "thursday": [ 26, 7, 18, 22 ],
+            "saturday": [ 25, 6, 17, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
