@@ -6304,6 +6304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 316,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/shepherd-and-sheep-at-vlaici-1912.jpg',
+          title: 'Shepherd and Sheep at Vlaici',
+          artist: 'Nicolae Darascu',
+          year: '1912',
+          rule: {
+            "monday": [ 17, 20, 29, 14 ],
+            "tuesday": [ 16, 20, 28, 13 ],
+            "wednesday": [ 15, 19, 27, 12 ],
+            "thursday": [ 14, 16, 26, 11 ],
+            "friday": [ 13, 16, 25, 10 ],
+            "saturday": [ 12, 15, 24, 9 ],
+            "sunday": [ 18, 22, 30, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 317,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/massacre-at-dinant-1918.jpg',
+          title: 'Massacre at Dinant',
+          artist: 'George Bellows',
+          year: '1918',
+          rule: {
+            "monday": [ 18, 22, 30, 15 ],
+            "tuesday": [ 17, 20, 29, 14 ],
+            "wednesday": [ 16, 20, 28, 13 ],
+            "thursday": [ 15, 19, 27, 12 ],
+            "friday": [ 14, 16, 26, 11 ],
+            "saturday": [ 13, 16, 25, 10 ],
+            "sunday": [ 12, 15, 24, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 318,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/fortress-fortress-fairy-tale-1908.jpg',
+          title: 'Fortress (Fortress Fairy Tale)',
+          artist: 'Mikalojus Konstantinas Ciurlionis',
+          year: '1908',
+          rule: {
+            "monday": [ 12, 15, 24, 9 ],
+            "tuesday": [ 18, 22, 30, 15 ],
+            "wednesday": [ 17, 20, 29, 14 ],
+            "thursday": [ 16, 20, 28, 13 ],
+            "friday": [ 15, 19, 27, 12 ],
+            "saturday": [ 14, 16, 26, 11 ],
+            "sunday": [ 13, 16, 25, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 319,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/obruchenie-1923.jpg',
+          title: 'Obruchenie',
+          artist: 'Ivan Milev',
+          year: '1923',
+          rule: {
+            "monday": [ 13, 16, 25, 10 ],
+            "tuesday": [ 12, 15, 24, 9 ],
+            "wednesday": [ 18, 22, 30, 15 ],
+            "thursday": [ 17, 20, 29, 14 ],
+            "friday": [ 16, 20, 28, 13 ],
+            "saturday": [ 15, 19, 27, 12 ],
+            "sunday": [ 14, 16, 26, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 320,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/violets-for-perfume-1913.jpg',
+          title: 'Violets for Perfume',
+          artist: 'Henry Herbert La Thangue',
+          year: '1913',
+          rule: {
+            "monday": [ 14, 16, 26, 11 ],
+            "tuesday": [ 13, 16, 25, 10 ],
+            "wednesday": [ 12, 15, 24, 9 ],
+            "thursday": [ 18, 22, 30, 15 ],
+            "friday": [ 17, 20, 29, 14 ],
+            "saturday": [ 16, 20, 28, 13 ],
+            "sunday": [ 15, 19, 27, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
