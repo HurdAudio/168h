@@ -3460,6 +3460,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 193,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2386636327/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cutworms.bandcamp.com/album/hollow-ground',
+          a_string: 'Hollow Ground by Cut Worms',
+          rule: {
+            "monday": [ 29, 31, 4, 12 ],
+            "tuesday": [ 28, 30, 3, 11 ],
+            "wednesday": [ 27, 29, 2, 10 ],
+            "thursday": [ 26, 27, 1, 9 ],
+            "saturday": [ 25, 27, 31, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 194,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3380203305/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://justmustard.bandcamp.com/album/wednesday',
+          a_string: 'Wednesday by Just Mustard',
+          rule: {
+            "monday": [ 25, 27, 31, 8 ],
+            "tuesday": [ 29, 31, 4, 12 ],
+            "wednesday": [ 28, 30, 3, 11 ],
+            "thursday": [ 27, 29, 2, 10 ],
+            "saturday": [ 26, 27, 1, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 195,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=222235301/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://thatwhichisnotsaid.bandcamp.com/album/that-which-is-not-said',
+          a_string: 'That Which Is Not Said by TWINS',
+          rule: {
+            "monday": [ 26, 27, 1, 9 ],
+            "tuesday": [ 25, 27, 31, 8 ],
+            "wednesday": [ 29, 31, 4, 12 ],
+            "thursday": [ 28, 30, 3, 11 ],
+            "saturday": [ 27, 29, 2, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
