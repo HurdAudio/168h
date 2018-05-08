@@ -7104,6 +7104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 356,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/baseball-speed-facts.jpg',
+          title: 'Baseball Speed Facts',
+          artist: 'JT Moore',
+          year: '2018',
+          rule: {
+            "monday": [ 19, 22, 30, 6 ],
+            "tuesday": [ 18, 22, 7, 5 ],
+            "wednesday": [ 16, 21, 27, 3 ],
+            "thursday": [ 16, 21, 27, 3 ],
+            "friday": [ 15, 20, 26, 2 ],
+            "saturday": [ 20, 26, 1, 8 ],
+            "sunday": [ 4, 24, 30, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 357,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/minnesota-twins-baseball-team-vintage-logo-recycled-license-plate-art-design-turnpike.jpg',
+          title: 'Minnesota Twins Baseball Team Vintage Logo Recycled License Plate Art',
+          artist: 'Design Turnpike',
+          year: '2015',
+          rule: {
+            "monday": [ 5, 25, 1, 7 ],
+            "tuesday": [ 20, 23, 1, 7 ],
+            "wednesday": [ 19, 23, 8, 6 ],
+            "thursday": [ 17, 22, 28, 4 ],
+            "friday": [ 17, 22, 28, 4 ],
+            "saturday": [ 16, 21, 27, 3 ],
+            "sunday": [ 21, 27, 2, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 358,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/baltimore-orioles-vintage-baseball-logo-license-plate-art-design-turnpike.jpg',
+          title: 'Baltimore Orioles Vintage Baseball Logo License Plate Art',
+          artist: 'Design Turnpike',
+          year: '2014',
+          rule: {
+            "monday": [ 21, 27, 2, 9 ],
+            "tuesday": [ 5, 25, 1, 7 ],
+            "wednesday": [ 20, 23, 1, 7 ],
+            "thursday": [ 19, 23, 8, 6 ],
+            "friday": [ 17, 22, 28, 4 ],
+            "saturday": [ 17, 22, 28, 4 ],
+            "sunday": [ 16, 21, 27, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 359,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/Baseball_Memorabilla_3-1312826720m.jpg',
+          title: 'Baseball Memorabilla 3',
+          artist: 'Romy Galicia',
+          year: '2007',
+          rule: {
+            "monday": [ 16, 21, 27, 3 ],
+            "tuesday": [ 21, 27, 2, 9 ],
+            "wednesday": [ 5, 25, 1, 7 ],
+            "thursday": [ 20, 23, 1, 7 ],
+            "friday": [ 19, 23, 8, 6 ],
+            "saturday": [ 17, 22, 28, 4 ],
+            "sunday": [ 17, 22, 28, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 360,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/IMG_2122-e1518800662710.jpg',
+          title: 'unknown title',
+          artist: 'Joni Peters',
+          year: '?',
+          rule: {
+            "monday": [ 17, 22, 28, 4 ],
+            "tuesday": [ 16, 21, 27, 3 ],
+            "wednesday": [ 21, 27, 2, 9 ],
+            "thursday": [ 5, 25, 1, 7 ],
+            "friday": [ 20, 23, 1, 7 ],
+            "saturday": [ 19, 23, 8, 6 ],
+            "sunday": [ 17, 22, 28, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
