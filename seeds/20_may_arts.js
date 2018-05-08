@@ -6904,6 +6904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 346,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/fishing-boats-1884.jpg',
+          title: 'Fishing Boats',
+          artist: 'Peder Severin Kroyer',
+          year: '1884',
+          rule: {
+            "monday": [ 7, 16, 28, 6 ],
+            "tuesday": [ 19, 29, 8, 16 ],
+            "wednesday": [ 17, 28, 6, 16 ],
+            "thursday": [ 15, 25, 2, 14 ],
+            "friday": [ 12, 23, 2, 22 ],
+            "saturday": [ 11, 22, 31, 10 ],
+            "sunday": [ 9, 19, 29, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 347,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/burmeister-and-wain-iron-foundry-1885.jpg',
+          title: 'Burmeister and Wain Iron Foundry',
+          artist: 'Peder Severin Kroyer',
+          year: '1885',
+          rule: {
+            "monday": [ 9, 19, 29, 6 ],
+            "tuesday": [ 7, 16, 28, 6 ],
+            "wednesday": [ 19, 29, 8, 16 ],
+            "thursday": [ 17, 28, 6, 16 ],
+            "friday": [ 15, 25, 2, 14 ],
+            "saturday": [ 12, 23, 2, 22 ],
+            "sunday": [ 11, 22, 31, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 348,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/a-doctor-s-waiting-room-1920.jpg',
+          title: 'A Doctor\'s Waiting Room',
+          artist: 'L. S. Lowry',
+          year: '1920',
+          rule: {
+            "monday": [ 11, 22, 31, 10 ],
+            "tuesday": [ 9, 19, 29, 6 ],
+            "wednesday": [ 7, 16, 28, 6 ],
+            "thursday": [ 19, 29, 8, 16 ],
+            "friday": [ 17, 28, 6, 16 ],
+            "saturday": [ 15, 25, 2, 14 ],
+            "sunday": [ 12, 23, 2, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 349,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/going-to-the-mill-1925.jpg',
+          title: 'Going to the Mill',
+          artist: 'L. S. Lowry',
+          year: '1925',
+          rule: {
+            "monday": [ 12, 23, 2, 22 ],
+            "tuesday": [ 11, 22, 31, 10 ],
+            "wednesday": [ 9, 19, 29, 6 ],
+            "thursday": [ 7, 16, 28, 6 ],
+            "friday": [ 19, 29, 8, 16 ],
+            "saturday": [ 17, 28, 6, 16 ],
+            "sunday": [ 15, 25, 2, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 350,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/going-to-work-1943.png',
+          title: 'Going to Work',
+          artist: 'L. S. Lowry',
+          year: '1943',
+          rule: {
+            "monday": [ 16, 26, 3, 15 ],
+            "tuesday": [ 13, 24, 3, 23 ],
+            "wednesday": [ 12, 23, 1, 11 ],
+            "thursday": [ 10, 20, 30, 7 ],
+            "friday": [ 8, 17, 29, 7 ],
+            "saturday": [ 20, 30, 9, 17 ],
+            "sunday": [ 18, 29, 7, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
