@@ -6504,6 +6504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 326,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/secretly-1878.jpg',
+          title: 'Secretly',
+          artist: 'Eva Gonzales',
+          year: '1877 - 1878',
+          rule: {
+            "monday": [ 13, 24, 4, 5 ],
+            "tuesday": [ 12, 23, 3, 14 ],
+            "wednesday": [ 18, 29, 9, 19 ],
+            "thursday": [ 17, 28, 8, 19 ],
+            "friday": [ 16, 27, 7, 18 ],
+            "saturday": [ 15, 26, 6, 7 ],
+            "sunday": [ 14, 25, 4, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 327,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/the-yerres-rain.jpg',
+          title: 'The Yerres, Rain',
+          artist: 'Gustave Caillebotte',
+          year: '1878',
+          rule: {
+            "monday": [ 14, 25, 4, 6 ],
+            "tuesday": [ 13, 24, 4, 5 ],
+            "wednesday": [ 12, 23, 3, 14 ],
+            "thursday": [ 18, 29, 9, 19 ],
+            "friday": [ 17, 28, 8, 19 ],
+            "saturday": [ 16, 27, 7, 18 ],
+            "sunday": [ 15, 26, 6, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 328,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/springtime-awakening-1884.jpg',
+          title: 'Springtime Awakening',
+          artist: 'Luc-Olivier Merson',
+          year: '1884',
+          rule: {
+            "monday": [ 15, 26, 6, 7 ],
+            "tuesday": [ 14, 25, 4, 6 ],
+            "wednesday": [ 13, 24, 4, 5 ],
+            "thursday": [ 12, 23, 3, 14 ],
+            "friday": [ 18, 29, 9, 19 ],
+            "saturday": [ 17, 28, 8, 19 ],
+            "sunday": [ 16, 27, 7, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 329,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/the-towers-saint-sulpice-1887.jpg',
+          title: 'The Towers, Saint-Sulpice',
+          artist: 'Albert Dubois-Pillet',
+          year: '1887',
+          rule: {
+            "monday": [ 16, 28, 8, 19 ],
+            "tuesday": [ 16, 27, 7, 8 ],
+            "wednesday": [ 15, 26, 5, 7 ],
+            "thursday": [ 14, 25, 5, 6 ],
+            "friday": [ 13, 24, 4, 15 ],
+            "saturday": [ 19, 30, 10, 20 ],
+            "sunday": [ 18, 29, 9, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 330,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/view-of-the-outskirts-of-paris-1896.jpg',
+          title: 'View of the Outskirts of Paris',
+          artist: 'Henri Rousseau',
+          year: '1896',
+          rule: {
+            "monday": [ 18, 29, 9, 20 ],
+            "tuesday": [ 16, 28, 8, 19 ],
+            "wednesday": [ 16, 27, 7, 8 ],
+            "thursday": [ 15, 26, 5, 7 ],
+            "friday": [ 14, 25, 5, 6 ],
+            "saturday": [ 13, 24, 4, 15 ],
+            "sunday": [ 19, 30, 10, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
