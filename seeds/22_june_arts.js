@@ -6704,6 +6704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 336,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/2548753_orig.jpg',
+          title: 'Krispy Kreme, "$20 Still Life" series',
+          artist: 'Joshua Band & Emily Berger',
+          year: '2013',
+          rule: {
+            "monday": [ 16, 26, 6, 14 ],
+            "tuesday": [ 15, 25, 15, 13 ],
+            "wednesday": [ 24, 4, 14, 12 ],
+            "thursday": [ 13, 23, 3, 11 ],
+            "friday": [ 12, 22, 2, 10 ],
+            "saturday": [ 18, 28, 8, 14 ],
+            "sunday": [ 17, 27, 7, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 337,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/6276600_orig.jpg',
+          title: 'Starbucks, "$20 Still Life" series',
+          artist: 'Joshua Band & Emily Berger',
+          year: '2013',
+          rule: {
+            "monday": [ 17, 27, 7, 15 ],
+            "tuesday": [ 16, 26, 6, 14 ],
+            "wednesday": [ 15, 25, 15, 13 ],
+            "thursday": [ 24, 4, 14, 12 ],
+            "friday": [ 13, 23, 3, 11 ],
+            "saturday": [ 12, 22, 2, 10 ],
+            "sunday": [ 18, 28, 8, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 338,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/ground-cherries.jpg',
+          title: 'Ground Cherries',
+          artist: 'Erin FitzGibbon',
+          year: '?',
+          rule: {
+            "monday": [ 18, 28, 8, 14 ],
+            "tuesday": [ 17, 27, 7, 15 ],
+            "wednesday": [ 16, 26, 6, 14 ],
+            "thursday": [ 15, 25, 15, 13 ],
+            "friday": [ 24, 4, 14, 12 ],
+            "saturday": [ 13, 23, 3, 11 ],
+            "sunday": [ 12, 22, 2, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 339,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/something_1_website.jpg',
+          title: 'Still Life',
+          artist: 'Jamila Clarke',
+          year: '?',
+          rule: {
+            "monday": [ 12, 22, 2, 10 ],
+            "tuesday": [ 18, 28, 8, 14 ],
+            "wednesday": [ 17, 27, 7, 15 ],
+            "thursday": [ 16, 26, 6, 14 ],
+            "friday": [ 15, 25, 15, 13 ],
+            "saturday": [ 24, 4, 14, 12 ],
+            "sunday": [ 13, 23, 3, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 340,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/web_wrotenothinga.jpg',
+          title: 'Web Wrote Nothing',
+          artist: 'Jamila Clarke',
+          year: '?',
+          rule: {
+            "monday": [ 13, 23, 3, 11 ],
+            "tuesday": [ 12, 22, 2, 10 ],
+            "wednesday": [ 18, 28, 8, 14 ],
+            "thursday": [ 17, 27, 7, 15 ],
+            "friday": [ 16, 26, 6, 14 ],
+            "saturday": [ 15, 25, 15, 13 ],
+            "sunday": [ 24, 4, 14, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
