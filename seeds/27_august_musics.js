@@ -3352,6 +3352,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 187,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3151943143/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jaapblonk.bandcamp.com/album/kurt-schwitters-ursonate',
+          a_string: 'Kurt Schwitters&#39; Ursonate by Jaap Blonk',
+          rule: {
+            "monday": [ 8, 16, 29, 28 ],
+            "tuesday": [ 7, 15, 28, 27 ],
+            "wednesday": [ 6, 14, 27, 26 ],
+            "thursday": [ 5, 13, 26, 25 ],
+            "saturday": [ 4, 12, 25, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 188,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2245502658/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jaapblonk.bandcamp.com/album/de-grote-grebbegraai',
+          a_string: 'De Grote Grebbegraai by Jaap Blonk',
+          rule: {
+            "monday": [ 4, 12, 25, 24 ],
+            "tuesday": [ 8, 16, 29, 28 ],
+            "wednesday": [ 7, 15, 28, 27 ],
+            "thursday": [ 6, 14, 27, 26 ],
+            "saturday": [ 5, 13, 26, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 189,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3025315180/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jaapblonk.bandcamp.com/album/blonk-nijdam-van-der-putten',
+          a_string: 'Blonk, Nijdam &amp; Van der Putten by Jaap Blonk, Jan Nijdam en Bart van der Putten',
+          rule: {
+            "monday": [ 6, 14, 27, 26 ],
+            "tuesday": [ 5, 13, 26, 25 ],
+            "wednesday": [ 9, 17, 30, 29 ],
+            "thursday": [ 8, 16, 29, 28 ],
+            "saturday": [ 7, 15, 28, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
