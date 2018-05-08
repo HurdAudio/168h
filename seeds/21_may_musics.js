@@ -3676,6 +3676,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 205,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2746851934/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://dauw.bandcamp.com/album/excess',
+          a_string: 'Excess by Lambert',
+          rule: {
+            "monday": [ 2, 8, 15, 28 ],
+            "tuesday": [ 1, 7, 14, 27 ],
+            "wednesday": [ 31, 6, 13, 26 ],
+            "thursday": [ 30, 5, 12, 25 ],
+            "saturday": [ 3, 10, 16, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 206,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1136290339/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://aeolian.bandcamp.com/album/h-nefssta-afjall',
+          a_string: 'Hánefsstaðafjall by Richard Skelton',
+          rule: {
+            "monday": [ 3, 10, 16, 29 ],
+            "tuesday": [ 2, 8, 15, 28 ],
+            "wednesday": [ 1, 7, 14, 27 ],
+            "thursday": [ 31, 6, 13, 26 ],
+            "saturday": [ 30, 5, 12, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 207,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2692223279/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://subrosalabel.bandcamp.com/album/vowel-architecture',
+          a_string: 'Vowel Architecture by Tobias Hazan',
+          rule: {
+            "monday": [ 30, 5, 12, 25 ],
+            "tuesday": [ 3, 10, 16, 29 ],
+            "wednesday": [ 2, 8, 15, 28 ],
+            "thursday": [ 1, 7, 14, 27 ],
+            "saturday": [ 31, 6, 13, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
