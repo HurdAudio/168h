@@ -3784,6 +3784,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 211,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3271440558/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://idrisackamoorandthepyramids.bandcamp.com/album/an-angel-fell',
+          a_string: 'An Angel Fell by Idris Ackamoor and the Pyramids',
+          rule: {
+            "monday": [ 3, 11, 23, 28 ],
+            "tuesday": [ 2, 10, 22, 27 ],
+            "wednesday": [ 1, 9, 21, 26 ],
+            "thursday": [ 30, 8, 20, 25 ],
+            "saturday": [ 4, 12, 24, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 212,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=923598507/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://idrisackamoor.bandcamp.com/album/centurian',
+          a_string: 'CENTURIAN by Idris Ackamoor',
+          rule: {
+            "monday": [ 4, 12, 24, 29 ],
+            "tuesday": [ 3, 11, 23, 28 ],
+            "wednesday": [ 2, 10, 22, 27 ],
+            "thursday": [ 1, 9, 21, 26 ],
+            "saturday": [ 30, 8, 20, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 213,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1414051275/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://idrisackamoor.bandcamp.com/album/idris-ackamoor-paris-quartet',
+          a_string: 'Idris Ackamoor Paris Quartet by Idris Ackamoor',
+          rule: {
+            "monday": [ 30, 8, 20, 25 ],
+            "tuesday": [ 4, 12, 24, 29 ],
+            "wednesday": [ 3, 11, 23, 28 ],
+            "thursday": [ 2, 10, 22, 27 ],
+            "saturday": [ 1, 9, 21, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
