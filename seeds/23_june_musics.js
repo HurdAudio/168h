@@ -3568,6 +3568,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 199,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3929264978/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://irisarri.bandcamp.com/album/sirimiri',
+          a_string: 'Sirimiri by rafael anton irisarri',
+          rule: {
+            "monday": [ 27, 30, 6, 17 ],
+            "tuesday": [ 25, 3, 5, 16 ],
+            "wednesday": [ 29, 3, 9, 20 ],
+            "thursday": [ 28, 1, 6, 18 ],
+            "saturday": [ 27, 1, 6, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 200,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2555543799/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://emerge.bandcamp.com/album/admin',
+          a_string: 'admin by FezayaFirar',
+          rule: {
+            "monday": [ 27, 1, 6, 18 ],
+            "tuesday": [ 27, 30, 6, 17 ],
+            "wednesday": [ 25, 3, 5, 16 ],
+            "thursday": [ 29, 3, 9, 20 ],
+            "saturday": [ 28, 1, 6, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 201,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3924268770/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://pascalsavy.bandcamp.com/album/dislocations',
+          a_string: 'Dislocations by pascal savy',
+          rule: {
+            "monday": [ 28, 1, 6, 18 ],
+            "tuesday": [ 27, 1, 6, 18 ],
+            "wednesday": [ 27, 30, 6, 17 ],
+            "thursday": [ 25, 3, 5, 16 ],
+            "saturday": [ 29, 3, 9, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
