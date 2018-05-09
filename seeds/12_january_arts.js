@@ -7704,6 +7704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 386,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/opus-ii-n-40-1961.jpg',
+          title: 'Opus II nº 40',
+          artist: 'Antonio Areal',
+          year: '1961',
+          rule: {
+            "monday": [ 1, 30, 22, 25 ],
+            "tuesday": [ 1, 2, 24, 28 ],
+            "wednesday": [ 4, 6, 7, 9 ],
+            "thursday": [ 6, 8, 12, 15 ],
+            "friday": [ 8, 10, 11, 12 ],
+            "saturday": [ 24, 25, 5, 28 ],
+            "sunday": [ 27, 29, 21, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 387,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/fall-1964.jpg',
+          title: 'Fall',
+          artist: 'Bernard Cohen',
+          year: '1964',
+          rule: {
+            "monday": [ 27, 29, 21, 10 ],
+            "tuesday": [ 1, 30, 22, 25 ],
+            "wednesday": [ 1, 2, 24, 28 ],
+            "thursday": [ 4, 6, 7, 9 ],
+            "friday": [ 6, 8, 12, 15 ],
+            "saturday": [ 8, 10, 11, 12 ],
+            "sunday": [ 24, 25, 5, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 388,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/city-landscape-1955(1).jpg',
+          title: 'City Landscape',
+          artist: 'Joan Mitchell',
+          year: '1955',
+          rule: {
+            "monday": [ 24, 25, 5, 28 ],
+            "tuesday": [ 27, 29, 21, 10 ],
+            "wednesday": [ 1, 30, 22, 25 ],
+            "thursday": [ 1, 2, 24, 28 ],
+            "friday": [ 4, 6, 7, 9 ],
+            "saturday": [ 6, 8, 12, 15 ],
+            "sunday": [ 8, 10, 11, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 389,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/suite-reacci-1970.jpg',
+          title: 'Suite Reacció',
+          artist: 'Joan Ponc',
+          year: '1970',
+          rule: {
+            "monday": [ 8, 10, 11, 12 ],
+            "tuesday": [ 24, 25, 5, 28 ],
+            "wednesday": [ 27, 29, 21, 10 ],
+            "thursday": [ 1, 30, 22, 25 ],
+            "friday": [ 1, 2, 24, 28 ],
+            "saturday": [ 4, 6, 7, 9 ],
+            "sunday": [ 6, 8, 12, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 390,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/yellow-white-sun-1959.jpg',
+          title: 'Yellow White [Sun]',
+          artist: 'Leon Polk Smith',
+          year: '1959',
+          rule: {
+            "monday": [ 6, 8, 12, 15 ],
+            "tuesday": [ 8, 10, 11, 12 ],
+            "wednesday": [ 24, 25, 5, 28 ],
+            "thursday": [ 27, 29, 21, 10 ],
+            "friday": [ 1, 30, 22, 25 ],
+            "saturday": [ 1, 2, 24, 28 ],
+            "sunday": [ 4, 6, 7, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
