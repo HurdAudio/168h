@@ -7504,6 +7504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 376,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/Dial_BlackTree_500.jpg',
+          title: 'Everything is Under the Black Tree',
+          artist: 'Thornton Dial, Sr.',
+          year: 'c.1928',
+          rule: {
+            "monday": [ 3, 13, 19, 25 ],
+            "tuesday": [ 5, 13, 21, 2 ],
+            "wednesday": [ 5, 15, 11, 1 ],
+            "thursday": [ 24, 3, 11, 19 ],
+            "friday": [ 25, 5, 13, 21 ],
+            "saturday": [ 2, 7, 13, 23 ],
+            "sunday": [ 1, 9, 17, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 377,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/ArtistSpotlight_3575.jpg',
+          title: 'Let Me Say That We Have Failed To Say Something To America Enough',
+          artist: 'Terry Dixon',
+          year: '2015',
+          rule: {
+            "monday": [ 1, 9, 17, 25 ],
+            "tuesday": [ 3, 13, 19, 25 ],
+            "wednesday": [ 5, 13, 21, 2 ],
+            "thursday": [ 5, 15, 11, 1 ],
+            "friday": [ 24, 3, 11, 19 ],
+            "saturday": [ 25, 5, 13, 21 ],
+            "sunday": [ 2, 7, 13, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 378,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/jeffdonaldson4.jpg',
+          title: 'unknown title',
+          artist: 'Jeff Donaldson',
+          year: '?',
+          rule: {
+            "monday": [ 3, 8, 14, 24 ],
+            "tuesday": [ 2, 10, 18, 26 ],
+            "wednesday": [ 4, 14, 20, 26 ],
+            "thursday": [ 6, 14, 22, 3 ],
+            "friday": [ 6, 16, 12, 2 ],
+            "saturday": [ 25, 4, 12, 20 ],
+            "sunday": [ 26, 6, 14, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 379,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/Aaron-Douglas-From-Slavery-through-Reconstruction-1934.jpg',
+          title: 'Aspects of Negro Life',
+          artist: 'Aaron Douglas',
+          year: '1934',
+          rule: {
+            "monday": [ 26, 6, 14, 22 ],
+            "tuesday": [ 3, 8, 14, 24 ],
+            "wednesday": [ 2, 10, 18, 26 ],
+            "thursday": [ 4, 14, 20, 26 ],
+            "friday": [ 6, 14, 22, 3 ],
+            "saturday": [ 6, 16, 12, 2 ],
+            "sunday": [ 25, 4, 12, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 380,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/motherchildpeace3x5-Emory-e1505240539297.jpg',
+          title: 'Mother, Child, Peace',
+          artist: 'Emory Douglas',
+          year: '?',
+          rule: {
+            "monday": [ 25, 4, 12, 20 ],
+            "tuesday": [ 26, 6, 14, 22 ],
+            "wednesday": [ 3, 8, 14, 24 ],
+            "thursday": [ 2, 10, 18, 26 ],
+            "friday": [ 4, 14, 20, 26 ],
+            "saturday": [ 6, 14, 22, 3 ],
+            "sunday": [ 6, 16, 12, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
