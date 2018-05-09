@@ -261,6 +261,20 @@
           let patchedShare = patchedShareData.data;
           document.getElementById('occasionAcceptDecline' + occasionId).setAttribute("style", "display: none;");
           document.getElementById('occasionShareAccepted' + occasionId).setAttribute("style", "display: initial;");
+          $http.get(`/occasions/${patchedShare.occasion_id}`)
+          .then(occasionData=>{
+            let occasion = occasionData.data;
+            let occObj = {
+              user_id: currentUserId,
+              name: occasion.name,
+              day_of: occasion.day_of,
+              is_annual: occasion.is_annual
+            };
+            $http.post('/occasions', occObj)
+            .then(addedData=>{
+              console.log(addedData.data);
+            });
+          });
         });
       }
 
