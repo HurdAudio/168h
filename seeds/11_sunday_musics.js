@@ -1434,6 +1434,26 @@ exports.seed = function(knex, Promise) {
           a_string: 'Space Age Rhythm &amp; Bop (The 1950s) by Sun Ra, Nu Sounds, Yochanan, Cosmic Rays',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 144,
+          user_id: 1,
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2746280952/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sunra-mh.bandcamp.com/album/the-complete-concert',
+          a_string: 'The Complete Concert by John Cage Meets Sun Ra',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 145,
+          user_id: 1,
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2686409150/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sunra-mh.bandcamp.com/album/the-space-age-is-here-to-stay',
+          a_string: 'The Space Age Is Here To Stay by Sun Ra',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
