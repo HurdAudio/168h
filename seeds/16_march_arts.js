@@ -7304,6 +7304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 366,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/tikal-1958.jpg',
+          title: 'Tikal',
+          artist: 'Anni Albers',
+          year: '1958',
+          rule: {
+            "monday": [ 21, 31, 8, 18 ],
+            "tuesday": [ 21, 30, 7, 17 ],
+            "wednesday": [ 19, 29, 6, 16 ],
+            "thursday": [ 18, 28, 5, 15 ],
+            "friday": [ 17, 27, 4, 14 ],
+            "saturday": [ 16, 26, 4, 13 ],
+            "sunday": [ 22, 31, 10, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 367,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/past-and-present-1990.jpg',
+          title: 'Past and Present',
+          artist: 'Eileen Agar',
+          year: '1990',
+          rule: {
+            "monday": [ 22, 31, 10, 18 ],
+            "tuesday": [ 21, 31, 8, 18 ],
+            "wednesday": [ 21, 30, 7, 17 ],
+            "thursday": [ 19, 29, 6, 16 ],
+            "friday": [ 18, 28, 5, 15 ],
+            "saturday": [ 17, 27, 4, 14 ],
+            "sunday": [ 16, 26, 4, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 368,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/eye-of-the-cross-1976.jpg',
+          title: 'Eye of the Cross',
+          artist: 'Betty Parsons',
+          year: '1976',
+          rule: {
+            "monday": [ 16, 26, 4, 13 ],
+            "tuesday": [ 22, 31, 10, 18 ],
+            "wednesday": [ 21, 31, 8, 18 ],
+            "thursday": [ 21, 30, 7, 17 ],
+            "friday": [ 19, 29, 6, 16 ],
+            "saturday": [ 18, 28, 5, 15 ],
+            "sunday": [ 17, 27, 4, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 369,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/grigio-giallo-gray-and-yellow-1966(2).jpg',
+          title: 'Grigio + Giallo (Gray and Yellow)',
+          artist: 'Bice Lazzari',
+          year: '1966',
+          rule: {
+            "monday": [ 17, 27, 4, 14 ],
+            "tuesday": [ 16, 26, 4, 13 ],
+            "wednesday": [ 22, 31, 10, 18 ],
+            "thursday": [ 21, 31, 8, 18 ],
+            "friday": [ 21, 30, 7, 17 ],
+            "saturday": [ 19, 29, 6, 16 ],
+            "sunday": [ 18, 28, 5, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 370,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/diptych-1956.jpg',
+          title: 'Diptych',
+          artist: 'Lolo Soldevilla',
+          year: '1956',
+          rule: {
+            "monday": [ 18, 28, 5, 15 ],
+            "tuesday": [ 17, 27, 4, 14 ],
+            "wednesday": [ 16, 26, 4, 13 ],
+            "thursday": [ 22, 31, 10, 18 ],
+            "friday": [ 21, 31, 8, 18 ],
+            "saturday": [ 21, 30, 7, 17 ],
+            "sunday": [ 19, 29, 6, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
