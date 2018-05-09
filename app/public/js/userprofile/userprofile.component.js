@@ -250,6 +250,47 @@
       vm.addNewTimeblockComment = addNewTimeblockComment;
       vm.occasionDeclineSelect = occasionDeclineSelect;
       vm.occasionAcceptSelect = occasionAcceptSelect;
+      vm.userDeleteHolidayShareComment = userDeleteHolidayShareComment;
+      vm.userHolidayShareCommentDeleteCancel = userHolidayShareCommentDeleteCancel;
+      vm.userHolidayShareCommentDeleteConfirmClick = userHolidayShareCommentDeleteConfirmClick;
+
+      function userHolidayShareCommentDeleteConfirmClick(holidayShareCommentId) {
+        let editDeleteHolidayShareCommentDiv = document.getElementById('editDeleteHolidayShareCommentDiv' + holidayShareCommentId);
+        let deleteHolidayShareCommentConfirm = document.getElementById('deleteHolidayShareCommentConfirm' + holidayShareCommentId);
+
+        $http.delete(`/holiday_share_comments/${holidayShareCommentId}`)
+        .then(goneCommentData=>{
+          let goneComment = goneCommentData.data;
+          for (let i = 0; i < vm.activeHolidayShares.length; i++) {
+            if (vm.activeHolidayShares[i].id === goneComment.holiday_share) {
+              for (let j = 0; j < vm.activeHolidayShares[i].comments.length; j++) {
+                if (vm.activeHolidayShares[i].comments[j].id === holidayShareCommentId) {
+                  vm.activeHolidayShares[i].comments.splice(j, 1);
+                }
+              }
+            }
+          }
+        });
+
+        editDeleteHolidayShareCommentDiv.setAttribute("style", "display: initial;");
+        deleteHolidayShareCommentConfirm.setAttribute("style", "display: none;");
+      }
+
+      function userHolidayShareCommentDeleteCancel(holidayShareCommentId) {
+        let editDeleteHolidayShareCommentDiv = document.getElementById('editDeleteHolidayShareCommentDiv' + holidayShareCommentId);
+        let deleteHolidayShareCommentConfirm = document.getElementById('deleteHolidayShareCommentConfirm' + holidayShareCommentId);
+
+        editDeleteHolidayShareCommentDiv.setAttribute("style", "display: initial;");
+        deleteHolidayShareCommentConfirm.setAttribute("style", "display: none;");
+      }
+
+      function userDeleteHolidayShareComment(holidayShareCommentId) {
+        let editDeleteHolidayShareCommentDiv = document.getElementById('editDeleteHolidayShareCommentDiv' + holidayShareCommentId);
+        let deleteHolidayShareCommentConfirm = document.getElementById('deleteHolidayShareCommentConfirm' + holidayShareCommentId);
+
+        editDeleteHolidayShareCommentDiv.setAttribute("style", "display: none;");
+        deleteHolidayShareCommentConfirm.setAttribute("style", "display: initial;");
+      }
 
       function occasionAcceptSelect(occasionId) {
         let subObj = {

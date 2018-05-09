@@ -5197,6 +5197,13 @@
                   <div class="thisIsMessageEditDoneDiv" id="thisIsHolidayShareCommentEditDoneDiv{{comment.id}}"><a class="btn" id="thisIsTheHolidayShareCommentEditorDoneButton{{comment.id}}" href="#" ng-click="$ctrl.userEditHolidayShareCommentCompleted(comment.id)">done</a></div>
                   <h3 id="thisIsHolidayShareCommentComment{{comment.id}}">{{comment.comment}}</h3><br>
 
+                  <div id="deleteHolidayShareCommentConfirm{{comment.id}}" class="messageEditDelete">
+
+                    <h3>Delete comment forever?</h3>
+                    <a class="btn" href="#" ng-click="$ctrl.userHolidayShareCommentDeleteCancel(comment.id)">no</a>
+                    <a class="btn" href="#" ng-click="$ctrl.userHolidayShareCommentDeleteConfirmClick(comment.id)">yes</a>
+                  </div>
+
                   <div id="editDeleteHolidayShareCommentDiv{{comment.id}}" class="messageEditDelete">
                     <a class="btn" href="#" ng-click="$ctrl.userEditHolidayShareComment(comment.id)">edit</a>
                     <a class="btn" href="#" ng-click="$ctrl.userDeleteHolidayShareComment(comment.id)">delete</a>
