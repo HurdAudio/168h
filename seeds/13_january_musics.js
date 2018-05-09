@@ -4108,6 +4108,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 229,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'http://bandcamp.com/EmbeddedPlayer/album=2493377535/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://handaxe.org/album/finissage',
+          a_string: 'Finissage by Nies - Phillipp - Geisselbrecht',
+          rule: {
+            "monday": [ 11, 18, 19, 20 ],
+            "tuesday": [ 10, 16, 18, 19 ],
+            "wednesday": [ 9, 16, 17, 18 ],
+            "thursday": [ 8, 14, 15, 16 ],
+            "saturday": [ 7, 14, 15, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 230,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1932205670/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://subrosalabel.bandcamp.com/album/early-electronic-tape-music',
+          a_string: 'Early Electronic &amp; Tape Music by John Cage',
+          rule: {
+            "monday": [ 7, 14, 15, 16 ],
+            "tuesday": [ 11, 18, 19, 20 ],
+            "wednesday": [ 10, 16, 18, 19 ],
+            "thursday": [ 9, 16, 17, 18 ],
+            "saturday": [ 8, 14, 15, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 231,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3341763892/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://subrosalabel.bandcamp.com/album/red-bird-a-political-prisoners-dream',
+          a_string: 'Red Bird: A Political Prisoner&#39;s Dream by Trevor Wishart',
+          rule: {
+            "monday": [ 9, 15, 16, 17 ],
+            "tuesday": [ 8, 15, 16, 17 ],
+            "wednesday": [ 12, 19, 20, 21 ],
+            "thursday": [ 11, 17, 19, 20 ],
+            "saturday": [ 10, 17, 18, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
