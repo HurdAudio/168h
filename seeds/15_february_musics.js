@@ -4000,6 +4000,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 223,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2780930414/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://intlanthem.bandcamp.com/album/downtown-castles-can-never-block-the-sun',
+          a_string: 'Downtown Castles Can Never Block The Sun by Ben LaMar Gay',
+          rule: {
+            "monday": [ 20, 14, 16, 22 ],
+            "tuesday": [ 3, 8, 9, 22 ],
+            "wednesday": [ 4, 8, 10, 14 ],
+            "thursday": [ 7, 10, 12, 16 ],
+            "saturday": [ 8, 12, 14, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 224,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1283504063/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://henrythreadgill.bandcamp.com/album/dirt-and-more-dirt',
+          a_string: 'Dirt... And More Dirt by Henry Threadgill 14 or 15 Kestra: Agg',
+          rule: {
+            "monday": [ 9, 13, 15, 17 ],
+            "tuesday": [ 21, 15, 17, 23 ],
+            "wednesday": [ 4, 9, 10, 23 ],
+            "thursday": [ 5, 9, 11, 15 ],
+            "saturday": [ 8, 11, 13, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 225,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1270717580/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://prophetla.bandcamp.com/album/wanna-be-your-man',
+          a_string: 'Wanna Be Your Man by Prophet',
+          rule: {
+            "monday": [ 8, 11, 13, 17 ],
+            "tuesday": [ 9, 13, 15, 17 ],
+            "wednesday": [ 21, 15, 17, 23 ],
+            "thursday": [ 4, 9, 10, 23 ],
+            "saturday": [ 5, 9, 11, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
