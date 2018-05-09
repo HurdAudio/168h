@@ -3892,6 +3892,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 217,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2920851769/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://halfwaif.bandcamp.com/album/lavender',
+          a_string: 'Lavender by Half Waif',
+          rule: {
+            "monday": [ 5, 11, 17, 25 ],
+            "tuesday": [ 4, 10, 16, 24 ],
+            "wednesday": [ 3, 9, 15, 24 ],
+            "thursday": [ 1, 8, 14, 22 ],
+            "saturday": [ 1, 7, 13, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 218,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4186738415/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://heavenstobetsykrs.bandcamp.com/album/these-monsters-are-real',
+          a_string: 'These Monsters Are Real by Heavens To Betsy',
+          rule: {
+            "monday": [ 1, 7, 13, 21 ],
+            "tuesday": [ 5, 11, 17, 25 ],
+            "wednesday": [ 4, 10, 16, 24 ],
+            "thursday": [ 3, 9, 15, 24 ],
+            "saturday": [ 1, 8, 14, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 219,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=692240413/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://heavenstobetsykrs.bandcamp.com/album/calculated',
+          a_string: 'Calculated by Heavens To Betsy',
+          rule: {
+            "monday": [ 1, 8, 14, 22 ],
+            "tuesday": [ 1, 7, 13, 21 ],
+            "wednesday": [ 5, 11, 17, 25 ],
+            "thursday": [ 4, 10, 16, 24 ],
+            "saturday": [ 3, 9, 15, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
