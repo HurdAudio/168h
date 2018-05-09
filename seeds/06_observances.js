@@ -9906,6 +9906,34 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 634,
+          user_id: 1,
+          name: 'James Paxton pitched a no-hitter for the Seattle Mariners vs. Toronto Blue Jays on this day in 2018.',
+          color: '#262835',
+          picture: './img/baseball/bba-mariners-blue-jays-paxton-canadian-no-hitter.jpg',
+          day_of: new Date ('2018-05-08T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 635,
+          user_id: 1,
+          name: 'The world ended on this day in 2018 as per the predictions of Eiji Hoffman carrying on the stellar traditions of Harold Camping\'s multiple failed predictions.',
+          color: '#2B3E2A',
+          picture: './img/doomsday/300242_104618306307454_2148728_n.jpg',
+          day_of: new Date ('2018-05-20T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
