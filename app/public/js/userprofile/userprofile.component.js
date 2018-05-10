@@ -253,6 +253,199 @@
       vm.userDeleteHolidayShareComment = userDeleteHolidayShareComment;
       vm.userHolidayShareCommentDeleteCancel = userHolidayShareCommentDeleteCancel;
       vm.userHolidayShareCommentDeleteConfirmClick = userHolidayShareCommentDeleteConfirmClick;
+      vm.shareHolidayWithFriend = shareHolidayWithFriend;
+      vm.cancelHolidayInvite = cancelHolidayInvite;
+
+      function cancelHolidayInvite() {
+        let shareHolidayPane = document.getElementById('shareHolidayPane');
+        let holidayShareImage = document.getElementById('holidayShareImage');
+        let holidayShareHolidayName = document.getElementById('holidayShareHolidayName');
+
+        shareHolidayPane.setAttribute("style", "z-index: -6; opacity: 0; transition: opacity 0.5s linear;");
+        holidayShareImage.src = '';
+        holidayShareHolidayName.innerHTML = '';
+      }
+
+      function userHolidayFriendAdd(fullFriendsList, userId) {
+        $http.get(`/users/${userId}`)
+        .then(friendData=>{
+          let friend = friendData.data;
+          fullFriendsList.push(friend);
+        });
+      }
+
+      function setHolidayShareListener(theDiv, holidayId, friendId) {
+
+        theDiv.addEventListener('click', ()=>{
+          let subObj = {
+            user_id: currentUserId,
+            holiday_id: holidayId,
+            share_associate_id: friendId,
+            accepted: false,
+            responded: false
+          }
+          $http.post('/holiday_shares', subObj)
+          .then(holidayShareData=>{
+            let holidayShare = holidayShareData.data[0];
+            cancelHolidayInvite();
+            retrieveUserHolidayShares();
+          });
+        });
+      }
+
+      function shareHolidayWithFriend(holidayId){
+        let shareHolidayPane = document.getElementById('shareHolidayPane');
+        let holidayShareImage = document.getElementById('holidayShareImage');
+        let holidayShareHolidayName = document.getElementById('holidayShareHolidayName');
+        let shareHolidaySearchBarDiv = document.getElementById('shareHolidaySearchBarDiv');
+        let holidayWhoToShareSearch = document.getElementById('holidayWhoToShareSearch');
+        if (holidayWhoToShareSearch) {
+          holidayWhoToShareSearch.parentNode.removeChild(holidayWhoToShareSearch);
+          holidayWhoToShareSearch = document.createElement('input');
+          shareHolidaySearchBarDiv.appendChild(holidayWhoToShareSearch);
+          holidayWhoToShareSearch.id = 'holidayWhoToShareSearch';
+          holidayWhoToShareSearch.type = 'text';
+          holidayWhoToShareSearch.placeholder = 'search';
+        }
+        let holidayFriendsSearchList = document.getElementById('holidayFriendsSearchList');
+        while (holidayFriendsSearchList.firstChild) {
+          holidayFriendsSearchList.removeChild(holidayFriendsSearchList.firstChild);
+        }
+
+        $http.get(`/holidays/${holidayId}`)
+        .then(holidayData=>{
+          let holiday = holidayData.data;
+          holidayShareImage.src = holiday.picture;
+          holidayShareHolidayName.innerHTML = holiday.name;
+        });
+
+        $http.get(`/users/${currentUserId}`)
+        .then(userData=>{
+          let user = userData.data;
+          let fullFriendsList = [];
+          let filteredFriends = [];
+          let theDiv;
+          let theImg;
+          let theName;
+          let theBr;
+          if ((user.associates !== undefined) && (user.associates.friends !== undefined)) {
+            if (user.associates.friends.length > 0) {
+              for (let i = 0; i < user.associates.friends.length; i++) {
+                userHolidayFriendAdd(fullFriendsList, user.associates.friends[i]);
+              }
+              setTimeout(()=>{
+                fullFriendsList = fullFriendsList.sort((a, b)=>{
+                  if (a.name.toLowerCase() < b.name.toLowerCase()) {
+                    return -1;
+                  } else if (a.name.toLowerCase() > b.name.toLowerCase()) {
+                    return 1;
+                  } else {
+                    return 0;
+                  }
+                });
+                for (let j = 0; j < fullFriendsList.length; j++) {
+                  theDiv = document.createElement('div');
+                  holidayFriendsSearchList.appendChild(theDiv);
+                  theImg = document.createElement('img');
+                  theDiv.appendChild(theImg);
+                  theImg.src = fullFriendsList[j].user_avatar_url;
+                  theName = document.createElement('p');
+                  theDiv.appendChild(theName);
+                  theName.innerHTML = fullFriendsList[j].name;
+                  theBr = document.createElement('br');
+                  theDiv.appendChild(theBr);
+                  theBr = document.createElement('br');
+                  theDiv.appendChild(theBr);
+                  theBr = document.createElement('br');
+                  theDiv.appendChild(theBr);
+                  theBr = document.createElement('br');
+                  theDiv.appendChild(theBr);
+                  theBr = document.createElement('br');
+                  theDiv.appendChild(theBr);
+                  theBr = document.createElement('br');
+                  theDiv.appendChild(theBr);
+                  setHolidayShareListener(theDiv, holidayId, fullFriendsList[j].id);
+                  theDiv.setAttribute("style", "cursor: pointer;");
+                }
+                holidayWhoToShareSearch.addEventListener('keyup', ()=>{
+                  while (holidayFriendsSearchList.firstChild) {
+                    holidayFriendsSearchList.removeChild(holidayFriendsSearchList.firstChild);
+                  }
+                  if (holidayWhoToShareSearch.value !== '') {
+                    filteredFriends = fullFriendsList.filter(entry=>{
+                      return((entry.name.toLowerCase().indexOf(holidayWhoToShareSearch.value) !== -1) || (entry.email.toLowerCase().indexOf(holidayWhoToShareSearch.value) !== -1));
+                    });
+                    filteredFriends = filteredFriends.sort((a, b)=>{
+                      if (a.name.toLowerCase() < b.name.toLowerCase()) {
+                        return -1;
+                      } else if (a.name.toLowerCase() > b.name.toLowerCase()) {
+                        return 1;
+                      } else {
+                        return 0;
+                      }
+                    });
+                    if (filteredFriends.length > 0) {
+                      for (let k = 0; k < filteredFriends.length; k++) {
+                        theDiv = document.createElement('div');
+                        holidayFriendsSearchList.appendChild(theDiv);
+                        theImg = document.createElement('img');
+                        theDiv.appendChild(theImg);
+                        theImg.src = filteredFriends[k].user_avatar_url;
+                        theName = document.createElement('p');
+                        theDiv.appendChild(theName);
+                        theName.innerHTML = filteredFriends[k].name;
+                        theBr = document.createElement('br');
+                        theDiv.appendChild(theBr);
+                        theBr = document.createElement('br');
+                        theDiv.appendChild(theBr);
+                        theBr = document.createElement('br');
+                        theDiv.appendChild(theBr);
+                        theBr = document.createElement('br');
+                        theDiv.appendChild(theBr);
+                        theBr = document.createElement('br');
+                        theDiv.appendChild(theBr);
+                        theBr = document.createElement('br');
+                        theDiv.appendChild(theBr);
+                        setHolidayShareListener(theDiv, holidayId, filteredFriends[k].id);
+                        theDiv.setAttribute("style", "cursor: pointer;");
+                      }
+                    }
+                  } else {
+                    for (let j = 0; j < fullFriendsList.length; j++) {
+                      theDiv = document.createElement('div');
+                      holidayFriendsSearchList.appendChild(theDiv);
+                      theImg = document.createElement('img');
+                      theDiv.appendChild(theImg);
+                      theImg.src = fullFriendsList[j].user_avatar_url;
+                      theName = document.createElement('p');
+                      theDiv.appendChild(theName);
+                      theName.innerHTML = fullFriendsList[j].name;
+                      theBr = document.createElement('br');
+                      theDiv.appendChild(theBr);
+                      theBr = document.createElement('br');
+                      theDiv.appendChild(theBr);
+                      theBr = document.createElement('br');
+                      theDiv.appendChild(theBr);
+                      theBr = document.createElement('br');
+                      theDiv.appendChild(theBr);
+                      theBr = document.createElement('br');
+                      theDiv.appendChild(theBr);
+                      theBr = document.createElement('br');
+                      theDiv.appendChild(theBr);
+                      setHolidayShareListener(theDiv, holidayId, fullFriendsList[j].id);
+                      theDiv.setAttribute("style", "cursor: pointer;");
+                    }
+                  }
+                });
+              }, (user.associates.friends.length * 100));
+
+
+            }
+          }
+        });
+
+        shareHolidayPane.setAttribute("style", "z-index: 6; opacity: 1; transition: opacity 0.5s linear;");
+      }
 
       function userHolidayShareCommentDeleteConfirmClick(holidayShareCommentId) {
         let editDeleteHolidayShareCommentDiv = document.getElementById('editDeleteHolidayShareCommentDiv' + holidayShareCommentId);

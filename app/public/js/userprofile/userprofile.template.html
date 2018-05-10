@@ -70,6 +70,29 @@
   </div>
 </div>
 
+<div id="shareHolidayPane">
+  <a class="btn" ng-click="$ctrl.cancelHolidayInvite()" href="#">cancel</a>
+  <div id="holidayShareIdentifierFields">
+
+    <img id="holidayShareImage">
+    <h3 id="holidayShareHolidayName"></h3>
+  </div><br><br>
+  <h3>Select who you want to share this holiday with:</h3>
+  <div id="shareHolidaySearchBarDiv">
+    <input type="text" id="holidayWhoToShareSearch" placeholder="search">
+  </div>
+  <div id="holidayFriendsSearchList">
+
+
+    <div>
+
+      <img src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/1964977_10203532053928956_1620738254_n.jpg?oh=912289bc56416424f7d2e4ef3bfb8604&oe=5B41AE92">
+      <p>Lucifer Sam</p>
+      <br><br><br>
+    </div>
+  </div>
+</div>
+
 <div id="dashboard" class="pure-g">
   <div id="userProfilePortal" class="pure-u-1-3">
     <div id="profileZone">
@@ -236,7 +259,8 @@
               <br>
               <div class="holidayEdit">
                 <a href="" class="btn" ng-click="$ctrl.editHoliday(holiday.id)">edit</a>
-              <a href="" class="btn" ng-click="$ctrl.deleteHoliday(holiday.id)">delete</a>
+                <a href="" class="btn" ng-click="$ctrl.deleteHoliday(holiday.id)">delete</a>
+                <a href="" class="btn" ng-click="$ctrl.shareHolidayWithFriend(holiday.id)">share</a>
               <br><br><br>
 
               </div>

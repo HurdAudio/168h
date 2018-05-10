@@ -89,6 +89,196 @@
       vm.speakHistory = speakHistory;
       vm.userProfile = userProfile;
       vm.cancelAppointmentInvite = cancelAppointmentInvite;
+      vm.shareHoliday = shareHoliday;
+      vm.cancelHolidayInvite = cancelHolidayInvite;
+
+      function populateUserFriendsListForHolidays(allFriendsList, friendId) {
+        $http.get(`/users/${friendId}`)
+        .then(friendData=>{
+          let friend = friendData.data;
+          allFriendsList.push(friend);
+        });
+      }
+
+      function cancelHolidayInvite() {
+        let shareHolidayPane = document.getElementById('shareHolidayPane');
+        let holidayShareImage = document.getElementById('holidayShareImage');
+        let holidayShareHolidayName = document.getElementById('holidayShareHolidayName');
+
+        shareHolidayPane.setAttribute("style", "z-index: -6; opacity: 0; transition: opacity 0.5s linear;");
+        holidayShareImage.src = '';
+        holidayShareHolidayName.innerHTML = '';
+      }
+
+      function handleHolidayShareEvents(theDiv, holidayId, friendId) {
+        theDiv.addEventListener('click', ()=>{
+          let subObj = {
+            user_id: currentUserId,
+            holiday_id: holidayId,
+            share_associate_id: friendId,
+            accepted: false,
+            responded: false
+          };
+          $http.post('/holiday_shares', subObj)
+          .then(shareData=>{
+            let share = shareData.data;
+            cancelHolidayInvite();
+          });
+        });
+      }
+
+      function shareHoliday(holidayId) {
+        let shareHolidayPane = document.getElementById('shareHolidayPane');
+        let holidayShareImage = document.getElementById('holidayShareImage');
+        let holidayShareHolidayName = document.getElementById('holidayShareHolidayName');
+        let allFriendsList = [];
+        let shareHolidaySearchBarDiv = document.getElementById('shareHolidaySearchBarDiv');
+        let holidayWhoToShareSearch = document.getElementById('holidayWhoToShareSearch');
+        if (holidayWhoToShareSearch) {
+          holidayWhoToShareSearch.parentNode.removeChild(holidayWhoToShareSearch);
+          holidayWhoToShareSearch = document.createElement('input');
+          shareHolidaySearchBarDiv.appendChild(holidayWhoToShareSearch);
+          holidayWhoToShareSearch.id = 'holidayWhoToShareSearch';
+          holidayWhoToShareSearch.type = 'text';
+          holidayWhoToShareSearch.placeholder = 'search';
+        }
+        let holidayFriendsSearchList = document.getElementById('holidayFriendsSearchList');
+        while (holidayFriendsSearchList.firstChild) {
+          holidayFriendsSearchList.removeChild(holidayFriendsSearchList.firstChild);
+        }
+
+        $http.get(`/holidays/${holidayId}`)
+        .then(holidayData=>{
+          let holiday = holidayData.data;
+          holidayShareImage.src = holiday.picture;
+          holidayShareHolidayName.innerHTML = holiday.name;
+        });
+
+        $http.get(`/users/${currentUserId}`)
+        .then(userData=>{
+          let user = userData.data;
+          let theDiv;
+          let theImg;
+          let theName;
+          let theBr;
+          let filteredList;
+          if ((user.associates !== undefined) && (user.associates.friends !== undefined)) {
+            if (user.associates.friends.length > 0) {
+              for (let i = 0; i < user.associates.friends.length; i++) {
+                populateUserFriendsListForHolidays(allFriendsList, user.associates.friends[i]);
+              }
+              setTimeout(()=>{
+                allFriendsList = allFriendsList.sort((a, b)=>{
+                  if (a.name.toLowerCase() < b.name.toLowerCase()) {
+                    return -1;
+                  } else if (a.name.toLowerCase() > b.name.toLowerCase()) {
+                    return 1;
+                  } else {
+                    return 0;
+                  }
+                });
+                for (let j = 0; j < allFriendsList.length; j++) {
+                  theDiv = document.createElement('div');
+                  holidayFriendsSearchList.appendChild(theDiv);
+                  theImg = document.createElement('img');
+                  theDiv.appendChild(theImg);
+                  theImg.src = allFriendsList[j].user_avatar_url;
+                  theName = document.createElement('p');
+                  theDiv.appendChild(theName);
+                  theName.innerHTML = allFriendsList[j].name;
+                  theBr = document.createElement('br');
+                  theDiv.appendChild(theBr);
+                  theBr = document.createElement('br');
+                  theDiv.appendChild(theBr);
+                  theBr = document.createElement('br');
+                  theDiv.appendChild(theBr);
+                  theBr = document.createElement('br');
+                  theDiv.appendChild(theBr);
+                  theBr = document.createElement('br');
+                  theDiv.appendChild(theBr);
+                  theBr = document.createElement('br');
+                  theDiv.appendChild(theBr);
+                  theDiv.setAttribute("style", "cursor: pointer;");
+                  handleHolidayShareEvents(theDiv, holidayId, allFriendsList[j].id);
+                }
+                holidayWhoToShareSearch.addEventListener('keyup', ()=>{
+                  while (holidayFriendsSearchList.firstChild) {
+                    holidayFriendsSearchList.removeChild(holidayFriendsSearchList.firstChild);
+                  }
+                  if (holidayWhoToShareSearch.value === '') {
+                    for (let k = 0; k < allFriendsList.length; k++) {
+                      theDiv = document.createElement('div');
+                      holidayFriendsSearchList.appendChild(theDiv);
+                      theImg = document.createElement('img');
+                      theDiv.appendChild(theImg);
+                      theImg.src = allFriendsList[k].user_avatar_url;
+                      theName = document.createElement('p');
+                      theDiv.appendChild(theName);
+                      theName.innerHTML = allFriendsList[k].name;
+                      theBr = document.createElement('br');
+                      theDiv.appendChild(theBr);
+                      theBr = document.createElement('br');
+                      theDiv.appendChild(theBr);
+                      theBr = document.createElement('br');
+                      theDiv.appendChild(theBr);
+                      theBr = document.createElement('br');
+                      theDiv.appendChild(theBr);
+                      theBr = document.createElement('br');
+                      theDiv.appendChild(theBr);
+                      theBr = document.createElement('br');
+                      theDiv.appendChild(theBr);
+                      theDiv.setAttribute("style", "cursor: pointer;");
+                      handleHolidayShareEvents(theDiv, holidayId, allFriendsList[k].id);
+                    }
+                  } else {
+                    filteredList = allFriendsList.filter(entry=>{
+                      return((entry.name.toLowerCase().indexOf(holidayWhoToShareSearch.value) !== -1) || (entry.email.toLowerCase().indexOf(holidayWhoToShareSearch.value) !== -1));
+                    });
+                    filteredList = filteredList.sort((a, b)=>{
+                      if (a.name.toLowerCase() < b.name.toLowerCase()) {
+                        return -1;
+                      } else if (a.name.toLowerCase() > b.name.toLowerCase()) {
+                        return 1;
+                      } else {
+                        return 0;
+                      }
+                    });
+                    if (filteredList.length > 0) {
+                      for (let l = 0; l < filteredList.length; l++) {
+                        theDiv = document.createElement('div');
+                        holidayFriendsSearchList.appendChild(theDiv);
+                        theImg = document.createElement('img');
+                        theDiv.appendChild(theImg);
+                        theImg.src = filteredList[l].user_avatar_url;
+                        theName = document.createElement('p');
+                        theDiv.appendChild(theName);
+                        theName.innerHTML = filteredList[l].name;
+                        theBr = document.createElement('br');
+                        theDiv.appendChild(theBr);
+                        theBr = document.createElement('br');
+                        theDiv.appendChild(theBr);
+                        theBr = document.createElement('br');
+                        theDiv.appendChild(theBr);
+                        theBr = document.createElement('br');
+                        theDiv.appendChild(theBr);
+                        theBr = document.createElement('br');
+                        theDiv.appendChild(theBr);
+                        theBr = document.createElement('br');
+                        theDiv.appendChild(theBr);
+                        theDiv.setAttribute("style", "cursor: pointer;");
+                        handleHolidayShareEvents(theDiv, holidayId, filteredList[l].id);
+                      }
+                    }
+                  }
+                });
+              }, (user.associates.friends.length * 100));
+            }
+          }
+
+        });
+
+        shareHolidayPane.setAttribute("style", "z-index: 6; opacity: 1; transition: opacity 0.5s linear;");
+      }
 
       function cancelAppointmentInvite() {
         document.getElementById('dayviewWhoToShareSearch').value = '';

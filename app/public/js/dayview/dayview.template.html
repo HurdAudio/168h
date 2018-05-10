@@ -533,6 +533,7 @@
 
         <img src="{{holiday.picture}}">
         <p class="holidayName">{{holiday.name}}</p>
+        <a href="" class="btn" ng-click="$ctrl.shareHoliday(holiday.id)">share</a>
       </div>
     </main>
     <div class="occasions">
@@ -790,6 +791,29 @@
     <input type="text" id="dayviewWhoToShareSearch" placeholder="search">
   </div>
   <div id="dayviewFriendsSearchList">
+
+
+    <div>
+
+      <img src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/1964977_10203532053928956_1620738254_n.jpg?oh=912289bc56416424f7d2e4ef3bfb8604&oe=5B41AE92">
+      <p>Lucifer Sam</p>
+      <br><br><br>
+    </div>
+  </div>
+</div>
+
+<div id="shareHolidayPane">
+  <a class="btn" ng-click="$ctrl.cancelHolidayInvite()" href="#">cancel</a>
+  <div id="holidayShareIdentifierFields">
+
+    <img id="holidayShareImage">
+    <h3 id="holidayShareHolidayName"></h3>
+  </div><br><br>
+  <h3>Select who you want to share this holiday with:</h3>
+  <div id="shareHolidaySearchBarDiv">
+    <input type="text" id="holidayWhoToShareSearch" placeholder="search">
+  </div>
+  <div id="holidayFriendsSearchList">
 
 
     <div>
