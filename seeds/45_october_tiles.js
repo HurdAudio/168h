@@ -634,6 +634,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FFFEE3',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 46,
+          user_id: 1,
+          theme: 'Autumnal',
+          type: 'sunday',
+          src_string: '../img/october_tiles/leaf-13907_640.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '150%',
+          color_dark: '#272B2E',
+          color_medium: '#E2B790',
+          color_light: '#ECE113',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
