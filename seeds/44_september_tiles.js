@@ -648,6 +648,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#BBCFDA',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 47,
+          user_id: 1,
+          theme: 'Leather',
+          type: 'holiday',
+          src_string: '../img/september_tiles/cdc9a70a6782dd298d2e54131853de60.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '100%',
+          color_dark: '#372F37',
+          color_medium: '#AD937E',
+          color_light: '#F6F4F5',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
