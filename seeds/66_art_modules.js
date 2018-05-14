@@ -1444,6 +1444,66 @@ exports.seed = function(knex, Promise) {
           public: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 121,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/Turkish_Van-1024x526.jpg',
+          title: 'Turkish Van',
+          artist: 'unknown artist',
+          year: '2015',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 122,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/Angora.jpg',
+          title: 'Turkish Angora',
+          artist: 'unknown artist',
+          year: '2015',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 123,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/maine-coon.jpg',
+          title: 'Maine Coon',
+          artist: 'unknown artist',
+          year: '2015',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 124,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/bengal.jpg',
+          title: 'Bengal',
+          artist: 'unknown artist',
+          year: '2015',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 125,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/american-bobtail.jpg',
+          title: 'American Bobtail',
+          artist: 'unknown artist',
+          year: '2015',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
