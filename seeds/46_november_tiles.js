@@ -620,6 +620,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FFFFFF',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 45,
+          user_id: 1,
+          theme: 'Monochromatic',
+          type: 'saturday',
+          src_string: '../img/november_tiles/sunlight-trees-landscape-white-black-monochrome-560628-wallhere.com.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '163%',
+          color_dark: '#1A1A1A',
+          color_medium: '#454545',
+          color_light: '#CFCFCF',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
