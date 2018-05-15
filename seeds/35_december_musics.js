@@ -2974,6 +2974,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 166,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1857962217/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://losamigosinvisibles.bandcamp.com/album/the-venezuelan-zinga-son-vol-1',
+          a_string: 'The Venezuelan Zinga Son Vol. 1 by Los Amigos Invisibles',
+          rule: {
+            "monday": [ 29, 4, 10, 15 ],
+            "tuesday": [ 26, 3, 9, 15 ],
+            "wednesday": [ 25, 2, 8, 14 ],
+            "thursday": [ 26, 1, 7, 13 ],
+            "saturday": [ 30, 5, 11, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 167,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'http://osmutantes.bandcamp.com/album/world-psychedelic-classics-1-everything-is-possible-the-best-of-os-mutantes',
+          href_string: 'http://osmutantes.bandcamp.com/album/world-psychedelic-classics-1-everything-is-possible-the-best-of-os-mutantes',
+          a_string: 'World Psychedelic Classics 1: Everything is Possible: The Best of Os Mutantes by Os Mutantes',
+          rule: {
+            "monday": [ 30, 5, 11, 17 ],
+            "tuesday": [ 29, 4, 10, 15 ],
+            "wednesday": [ 26, 3, 9, 15 ],
+            "thursday": [ 25, 2, 8, 14 ],
+            "saturday": [ 26, 1, 7, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 168,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=245005884/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://luakabop.bandcamp.com/album/brazil-classics-6-beleza-tropical-2-novo-mais-melhor',
+          a_string: 'Brazil Classics 6: Beleza Tropical 2: Novo! Mais! Melhor! by Luaka Bop',
+          rule: {
+            "monday": [ 27, 2, 8, 14 ],
+            "tuesday": [ 31, 6, 12, 18 ],
+            "wednesday": [ 30, 5, 11, 16 ],
+            "thursday": [ 27, 4, 10, 16 ],
+            "saturday": [ 26, 3, 9, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
