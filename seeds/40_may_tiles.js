@@ -704,6 +704,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#C7DFC7',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 51,
+          user_id: 1,
+          theme: 'Greenery',
+          type: 'sunday',
+          src_string: '../img/may_tiles/fields-greenery-nice-sunlight-field-sunset-sky-dazzling-flwoers-meadow-pretty-nature-aamzing-sunshine-sunrise-clouds-spring-light-beautiful-grass-rays-path-wallpaper-green-1600x1080.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '150%',
+          color_dark: '#000105',
+          color_medium: '#61910F',
+          color_light: '#FFFFFF',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
