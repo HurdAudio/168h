@@ -3406,6 +3406,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 190,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2278952623/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://coldspring.bandcamp.com/album/charnel-transmissions-csr256cd',
+          a_string: 'Charnel Transmissions (CSR256CD) by Tunnels Of Ah',
+          rule: {
+            "monday": [ 7, 15, 28, 27 ],
+            "tuesday": [ 6, 14, 27, 26 ],
+            "wednesday": [ 5, 13, 26, 25 ],
+            "thursday": [ 9, 17, 30, 29 ],
+            "saturday": [ 8, 16, 29, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 191,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2550726273/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://picadisk.bandcamp.com/album/dietrichs',
+          a_string: 'Dietrichs by Don &amp; Camille Dietrich',
+          rule: {
+            "monday": [ 8, 16, 29, 28 ],
+            "tuesday": [ 7, 15, 28, 27 ],
+            "wednesday": [ 6, 14, 27, 26 ],
+            "thursday": [ 5, 13, 26, 25 ],
+            "saturday": [ 9, 17, 30, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 192,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2361898125/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://linearobsessional.bandcamp.com/album/conurb',
+          a_string: 'Conurb by Philip Sulidae',
+          rule: {
+            "monday": [ 9, 17, 30, 29 ],
+            "tuesday": [ 8, 16, 29, 28 ],
+            "wednesday": [ 7, 15, 28, 27 ],
+            "thursday": [ 6, 14, 27, 26 ],
+            "saturday": [ 5, 13, 26, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
