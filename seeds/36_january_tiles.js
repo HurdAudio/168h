@@ -760,6 +760,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FCFCFA',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 55,
+          user_id: 1,
+          theme: 'Ice',
+          type: 'saturday',
+          src_string: '../img/january_tiles/Matej-Kriz-Ice-Cave-photography-1.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '160%',
+          color_dark: '#000511',
+          color_medium: '#01B5CE',
+          color_light: '#C4C5C5',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
