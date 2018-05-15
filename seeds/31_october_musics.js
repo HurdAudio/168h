@@ -3190,6 +3190,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 178,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2706575371/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://thebody.bandcamp.com/album/i-have-fought-against-it-but-i-can-t-any-longer',
+          a_string: 'I Have Fought Against It, But I Can’t Any Longer. by the body',
+          rule: {
+            "monday": [ 30, 9, 20, 22 ],
+            "tuesday": [ 3, 13, 23, 26 ],
+            "wednesday": [ 2, 12, 22, 25 ],
+            "thursday": [ 1, 11, 21, 24 ],
+            "saturday": [ 31, 10, 20, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 179,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2779739662/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://kinglychee.bandcamp.com/album/time-will-prove-2012',
+          a_string: 'Time Will Prove (2012) by King Ly Chee',
+          rule: {
+            "monday": [ 31, 10, 20, 23 ],
+            "tuesday": [ 30, 9, 20, 22 ],
+            "wednesday": [ 3, 13, 23, 26 ],
+            "thursday": [ 2, 12, 22, 25 ],
+            "saturday": [ 1, 11, 21, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 180,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2452933156/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://kinglychee.bandcamp.com/album/cnhc-2014',
+          a_string: 'CNHC (2014) by King Ly Chee',
+          rule: {
+            "monday": [ 1, 11, 21, 24 ],
+            "tuesday": [ 31, 10, 20, 23 ],
+            "wednesday": [ 30, 9, 20, 22 ],
+            "thursday": [ 3, 13, 23, 26 ],
+            "saturday": [ 2, 12, 22, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
