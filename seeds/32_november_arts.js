@@ -5804,6 +5804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 291,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/peinture-n-10-1965.jpg',
+          title: 'Peinture n°10',
+          artist: 'Michel Parmentier',
+          year: '1965',
+          rule: {
+            "monday": [ 14, 19, 25, 30 ],
+            "tuesday": [ 13, 18, 24, 1 ],
+            "wednesday": [ 19, 24, 30, 5 ],
+            "thursday": [ 18, 23, 28, 4 ],
+            "friday": [ 17, 22, 28, 2 ],
+            "saturday": [ 16, 19, 26, 1 ],
+            "sunday": [ 15, 19, 26, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 292,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/rainbow-pickett-1965.jpg',
+          title: 'Rainbow Pickett',
+          artist: 'Judy Chicago',
+          year: '1965',
+          rule: {
+            "monday": [ 15, 19, 26, 1 ],
+            "tuesday": [ 14, 19, 25, 30 ],
+            "wednesday": [ 13, 18, 24, 1 ],
+            "thursday": [ 19, 24, 30, 5 ],
+            "friday": [ 18, 23, 28, 4 ],
+            "saturday": [ 17, 22, 28, 2 ],
+            "sunday": [ 16, 19, 26, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 293,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/the-dylan-painting-1966(1).jpg',
+          title: 'The Dylan Painting',
+          artist: 'Brice Marden',
+          year: '1966',
+          rule: {
+            "monday": [ 16, 19, 26, 1 ],
+            "tuesday": [ 15, 19, 26, 1 ],
+            "wednesday": [ 14, 19, 25, 30 ],
+            "thursday": [ 13, 18, 24, 1 ],
+            "friday": [ 19, 24, 30, 5 ],
+            "saturday": [ 18, 23, 28, 4 ],
+            "sunday": [ 17, 22, 28, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 294,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/fold-1966-1(1).jpg',
+          title: 'Fold',
+          artist: 'Charlotte Posenenske',
+          year: '1966',
+          rule: {
+            "monday": [ 18, 23, 29, 3 ],
+            "tuesday": [ 17, 20, 27, 2 ],
+            "wednesday": [ 16, 20, 27, 2 ],
+            "thursday": [ 15, 20, 26, 1 ],
+            "friday": [ 14, 19, 25, 2 ],
+            "saturday": [ 20, 25, 1, 6 ],
+            "sunday": [ 19, 24, 29, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 295,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/golden-age-1966.jpg',
+          title: 'Golden Age',
+          artist: 'Jeremy Moon',
+          year: '1966',
+          rule: {
+            "monday": [ 19, 24, 29, 5 ],
+            "tuesday": [ 18, 23, 29, 3 ],
+            "wednesday": [ 17, 20, 27, 2 ],
+            "thursday": [ 16, 20, 27, 2 ],
+            "friday": [ 15, 20, 26, 1 ],
+            "saturday": [ 14, 19, 25, 2 ],
+            "sunday": [ 20, 25, 1, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
