@@ -5604,6 +5604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 281,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/39-00,NewW1.jpg',
+          title: 'New Western',
+          artist: 'Sam Savitt',
+          year: '1939',
+          rule: {
+            "monday": [ 12, 25, 2, 8 ],
+            "tuesday": [ 11, 24, 1, 7 ],
+            "wednesday": [ 10, 23, 31, 6 ],
+            "thursday": [ 9, 22, 30, 5 ],
+            "friday": [ 8, 20, 29, 4 ],
+            "saturday": [ 7, 20, 8, 15 ],
+            "sunday": [ 13, 26, 3, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 282,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/28-05-10,WarS.jpg',
+          title: 'War Stories',
+          artist: 'Chris Schaare',
+          year: '1928',
+          rule: {
+            "monday": [ 13, 26, 3, 9 ],
+            "tuesday": [ 12, 25, 2, 8 ],
+            "wednesday": [ 11, 24, 1, 7 ],
+            "thursday": [ 10, 23, 31, 6 ],
+            "friday": [ 9, 22, 30, 5 ],
+            "saturday": [ 8, 20, 29, 4 ],
+            "sunday": [ 7, 20, 8, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 283,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/27-04,Evrbys.jpg',
+          title: 'Everybody\'s',
+          artist: 'Jes Schlaikjer',
+          year: '1927',
+          rule: {
+            "monday": [ 7, 20, 8, 15 ],
+            "tuesday": [ 13, 26, 3, 9 ],
+            "wednesday": [ 12, 25, 2, 8 ],
+            "thursday": [ 11, 24, 1, 7 ],
+            "friday": [ 10, 23, 31, 6 ],
+            "saturday": [ 9, 22, 30, 5 ],
+            "sunday": [ 8, 20, 29, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 284,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/40-09,KeenDet-Centaur.jpg',
+          title: 'Keen Detective',
+          artist: 'Mark Schneider',
+          year: '1940',
+          rule: {
+            "monday": [ 8, 20, 29, 4 ],
+            "tuesday": [ 7, 20, 8, 15 ],
+            "wednesday": [ 13, 26, 3, 9 ],
+            "thursday": [ 12, 25, 2, 8 ],
+            "friday": [ 11, 24, 1, 7 ],
+            "saturday": [ 10, 23, 31, 6 ],
+            "sunday": [ 9, 22, 30, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 285,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/39-04,MvlSciIllus.jpg',
+          title: 'Marvel Science',
+          artist: 'Alex Schomburg',
+          year: '1939',
+          rule: {
+            "monday": [ 9, 22, 30, 5 ],
+            "tuesday": [ 8, 20, 29, 4 ],
+            "wednesday": [ 7, 20, 8, 15 ],
+            "thursday": [ 13, 26, 3, 9 ],
+            "friday": [ 12, 25, 2, 8 ],
+            "saturday": [ 11, 24, 1, 7 ],
+            "sunday": [ 10, 23, 31, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
