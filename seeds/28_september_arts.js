@@ -6204,6 +6204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 311,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/el-laberinto-de-minos-vitral-2014.jpg',
+          title: 'The labyrinth of Minos. Stained glass window',
+          artist: 'Chicote CFC',
+          year: '2014',
+          rule: {
+            "monday": [ 9, 16, 4, 11 ],
+            "tuesday": [ 16, 22, 10, 18 ],
+            "wednesday": [ 15, 21, 9, 17 ],
+            "thursday": [ 14, 20, 8, 16 ],
+            "friday": [ 13, 19, 7, 15 ],
+            "saturday": [ 12, 18, 6, 15 ],
+            "sunday": [ 11, 17, 5, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 312,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/what-should-i-do-1988.jpg',
+          title: 'What Should I Do?',
+          artist: 'Allen Ruppersberg',
+          year: '1988',
+          rule: {
+            "monday": [ 11, 17, 5, 13 ],
+            "tuesday": [ 9, 16, 4, 11 ],
+            "wednesday": [ 16, 22, 10, 18 ],
+            "thursday": [ 15, 21, 9, 17 ],
+            "friday": [ 14, 20, 8, 16 ],
+            "saturday": [ 13, 19, 7, 15 ],
+            "sunday": [ 12, 18, 6, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 313,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/velasquez-mon-p-re-1964.jpg',
+          title: 'Velazquez, mon père',
+          artist: 'Eduardo Arroyo',
+          year: '1964',
+          rule: {
+            "monday": [ 12, 18, 6, 15 ],
+            "tuesday": [ 11, 17, 5, 13 ],
+            "wednesday": [ 9, 16, 4, 11 ],
+            "thursday": [ 16, 22, 10, 18 ],
+            "friday": [ 15, 21, 9, 17 ],
+            "saturday": [ 14, 20, 8, 16 ],
+            "sunday": [ 13, 19, 7, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 314,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/snow-white-swallows-the-poisoned-apple-1995.jpg',
+          title: 'Snow White Swallows the Poisoned Apple',
+          artist: 'Paula Rego',
+          year: '1995',
+          rule: {
+            "monday": [ 13, 19, 7, 15 ],
+            "tuesday": [ 12, 18, 6, 15 ],
+            "wednesday": [ 11, 17, 5, 13 ],
+            "thursday": [ 9, 16, 4, 11 ],
+            "friday": [ 16, 22, 10, 18 ],
+            "saturday": [ 15, 21, 9, 17 ],
+            "sunday": [ 14, 20, 8, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 315,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/phil-1976.jpg',
+          title: 'Phil',
+          artist: 'Chuck Close',
+          year: '1976',
+          rule: {
+            "monday": [ 15, 21, 9, 17 ],
+            "tuesday": [ 14, 20, 8, 16 ],
+            "wednesday": [ 13, 19, 7, 16 ],
+            "thursday": [ 2, 18, 6, 14 ],
+            "friday": [ 10, 17, 5, 12 ],
+            "saturday": [ 17, 23, 11, 19 ],
+            "sunday": [ 16, 22, 10, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
