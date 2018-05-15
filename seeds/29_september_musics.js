@@ -3298,6 +3298,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 184,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1587050591/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cuneiformrecords.bandcamp.com/album/regarding-purgatories',
+          a_string: 'Regarding Purgatories by Dave Kerman / 5uu&#39;s',
+          rule: {
+            "monday": [ 27, 17, 25, 19 ],
+            "tuesday": [ 26, 16, 24, 18 ],
+            "wednesday": [ 30, 20, 28, 22 ],
+            "thursday": [ 29, 19, 27, 21 ],
+            "saturday": [ 28, 18, 26, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 185,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2824057389/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cuneiformrecords.bandcamp.com/album/abandonship',
+          a_string: 'Abandonship by Dave Kerman / 5uu&#39;s',
+          rule: {
+            "monday": [ 28, 18, 26, 21 ],
+            "tuesday": [ 27, 17, 25, 19 ],
+            "wednesday": [ 26, 16, 24, 18 ],
+            "thursday": [ 30, 20, 28, 22 ],
+            "saturday": [ 29, 19, 27, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 186,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2412768210/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cuneiformrecords.bandcamp.com/album/point-of-views',
+          a_string: 'Point of Views by Dave Kerman / 5uu&#39;s',
+          rule: {
+            "monday": [ 29, 19, 27, 21 ],
+            "tuesday": [ 28, 18, 26, 21 ],
+            "wednesday": [ 27, 17, 25, 19 ],
+            "thursday": [ 26, 16, 24, 18 ],
+            "saturday": [ 30, 20, 28, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
