@@ -676,6 +676,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#F3F1F3',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 49,
+          user_id: 1,
+          theme: 'Steam',
+          type: 'friday',
+          src_string: '../img/july_tiles/Cumulus_clouds_Montenegro.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '110%',
+          color_dark: '#001D5F',
+          color_medium: '#2C6FBD',
+          color_light: '#FBFBFF',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
