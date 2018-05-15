@@ -3082,6 +3082,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 172,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=238733733/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://luakabop.bandcamp.com/album/world-psychedelic-classics-vol-3-love-s-a-real-thing-the-funky-fuzzy-sounds-of-west-africa',
+          a_string: 'World Psychedelic Classics, Vol. 3: Love’s A Real Thing: The Funky Fuzzy Sounds of West Africa by Luaka Bop',
+          rule: {
+            "monday": [ 25, 6, 17, 21 ],
+            "tuesday": [ 24, 5, 16, 20 ],
+            "wednesday": [ 23, 4, 15, 17 ],
+            "thursday": [ 22, 3, 14, 26 ],
+            "saturday": [ 26, 7, 18, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 173,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4191899623/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://zapmama.bandcamp.com/album/adventures-in-afropea',
+          a_string: 'Adventures in Afropea by Zap Mama',
+          rule: {
+            "monday": [ 26, 7, 18, 22 ],
+            "tuesday": [ 25, 6, 17, 21 ],
+            "wednesday": [ 24, 5, 16, 20 ],
+            "thursday": [ 23, 4, 15, 17 ],
+            "saturday": [ 22, 3, 14, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 174,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=390686560/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://zapmama.bandcamp.com/album/ancestry-in-progress',
+          a_string: 'Ancestry in Progress by Zap Mama',
+          rule: {
+            "monday": [ 22, 3, 14, 26 ],
+            "tuesday": [ 26, 7, 18, 22 ],
+            "wednesday": [ 25, 6, 17, 21 ],
+            "thursday": [ 24, 5, 16, 20 ],
+            "saturday": [ 23, 4, 15, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
