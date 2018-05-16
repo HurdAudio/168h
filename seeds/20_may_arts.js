@@ -7004,6 +7004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 351,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/an-industrial-town-1944.jpg',
+          title: 'An Industrial Town',
+          artist: 'L. S. Lowry',
+          year: '1944',
+          rule: {
+            "monday": [ 18, 29, 7, 17 ],
+            "tuesday": [ 16, 26, 3, 15 ],
+            "wednesday": [ 13, 24, 3, 23 ],
+            "thursday": [ 12, 23, 1, 11 ],
+            "friday": [ 10, 20, 30, 7 ],
+            "saturday": [ 8, 17, 29, 7 ],
+            "sunday": [ 20, 30, 9, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 352,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/industrial-landscape-the-canal-1945.jpg',
+          title: 'Industrial Landscape. The Canal',
+          artist: 'L. S. Lowry',
+          year: '1945',
+          rule: {
+            "monday": [ 20, 30, 9, 17 ],
+            "tuesday": [ 18, 29, 7, 17 ],
+            "wednesday": [ 16, 26, 3, 15 ],
+            "thursday": [ 13, 24, 3, 23 ],
+            "friday": [ 12, 23, 1, 11 ],
+            "saturday": [ 10, 20, 30, 7 ],
+            "sunday": [ 8, 17, 29, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 353,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/monday-morning-1946.jpg',
+          title: 'Monday Morning',
+          artist: 'L. S. Lowry',
+          year: '1946',
+          rule: {
+            "monday": [ 8, 17, 29, 7 ],
+            "tuesday": [ 20, 30, 9, 17 ],
+            "wednesday": [ 18, 29, 7, 17 ],
+            "thursday": [ 16, 26, 3, 15 ],
+            "friday": [ 13, 24, 3, 23 ],
+            "saturday": [ 12, 23, 1, 11 ],
+            "sunday": [ 10, 20, 30, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 354,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/level-crossing-1946.jpg',
+          title: 'Level Crossing',
+          artist: 'L. S. Lowry',
+          year: '1946',
+          rule: {
+            "monday": [ 10, 20, 30, 7 ],
+            "tuesday": [ 8, 17, 29, 7 ],
+            "wednesday": [ 20, 30, 9, 17 ],
+            "thursday": [ 18, 29, 7, 17 ],
+            "friday": [ 16, 26, 3, 15 ],
+            "saturday": [ 13, 24, 3, 23 ],
+            "sunday": [ 12, 23, 1, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 355,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/cranes-and-ships-glasgow-docks-1947.jpg',
+          title: 'Cranes and Ships, Glasgow Docks',
+          artist: 'L. S. Lowry',
+          year: '1947',
+          rule: {
+            "monday": [ 12, 23, 1, 11 ],
+            "tuesday": [ 10, 20, 30, 7 ],
+            "wednesday": [ 8, 17, 29, 7 ],
+            "thursday": [ 20, 30, 9, 17 ],
+            "friday": [ 18, 29, 7, 17 ],
+            "saturday": [ 16, 26, 3, 15 ],
+            "sunday": [ 13, 24, 3, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {

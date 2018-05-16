@@ -6889,7 +6889,7 @@ exports.seed = function(knex, Promise) {
           id: 345,
           user_id: 1,
           theme: 'Photography',
-          img_path: './img/june/.jpg',
+          img_path: './img/june/160414-0037_ATLANTA_GEORGIA_X_large.jpg',
           title: 'Skyview Ferris Wheel Downtown Atlanta, Georgia',
           artist: 'Robert Wojtowicz',
           year: '?',
