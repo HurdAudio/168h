@@ -3514,6 +3514,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 196,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1030921102/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://beachhouse.bandcamp.com/album/7',
+          a_string: '7 by Beach House',
+          rule: {
+            "monday": [ 28, 30, 3, 11 ],
+            "tuesday": [ 27, 28, 2, 10 ],
+            "wednesday": [ 26, 28, 1, 9 ],
+            "thursday": [ 30, 1, 5, 13 ],
+            "saturday": [ 29, 31, 4, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 197,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1408804214/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://laluz.bandcamp.com/album/floating-features',
+          a_string: 'Floating Features by La Luz',
+          rule: {
+            "monday": [ 29, 31, 4, 12 ],
+            "tuesday": [ 28, 30, 3, 11 ],
+            "wednesday": [ 27, 28, 2, 10 ],
+            "thursday": [ 26, 28, 1, 9 ],
+            "saturday": [ 30, 1, 5, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 198,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2338461462/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://earwiguk.bandcamp.com/album/under-my-skin-i-am-laughing',
+          a_string: 'under my skin I am laughing by earwig uk',
+          rule: {
+            "monday": [ 30, 1, 5, 13 ],
+            "tuesday": [ 29, 31, 4, 12 ],
+            "wednesday": [ 28, 30, 3, 11 ],
+            "thursday": [ 27, 28, 2, 10 ],
+            "saturday": [ 26, 28, 1, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
