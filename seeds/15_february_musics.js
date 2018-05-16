@@ -4054,6 +4054,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 226,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1304539686/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://thelastpoets.bandcamp.com/album/understand-what-black-is',
+          a_string: 'Understand What Black Is by The Last Poets',
+          rule: {
+            "monday": [ 5, 9, 11, 15 ],
+            "tuesday": [ 8, 11, 13, 17 ],
+            "wednesday": [ 9, 13, 15, 17 ],
+            "thursday": [ 21, 15, 17, 23 ],
+            "saturday": [ 4, 9, 10, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 227,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=913736923/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://thelastpoets.bandcamp.com/album/the-last-poets',
+          a_string: 'The Last Poets by The Last Poets',
+          rule: {
+            "monday": [ 4, 9, 10, 23 ],
+            "tuesday": [ 5, 9, 11, 15 ],
+            "wednesday": [ 8, 11, 13, 17 ],
+            "thursday": [ 9, 13, 15, 17 ],
+            "saturday": [ 21, 15, 17, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 228,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2778186586/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://thelastpoets.bandcamp.com/album/this-is-madness',
+          a_string: 'This Is Madness by The Last Poets',
+          rule: {
+            "monday": [ 21, 15, 17, 23 ],
+            "tuesday": [ 4, 9, 10, 23 ],
+            "wednesday": [ 5, 9, 11, 15 ],
+            "thursday": [ 8, 11, 13, 17 ],
+            "saturday": [ 9, 13, 15, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
