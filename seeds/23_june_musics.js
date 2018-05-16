@@ -3622,6 +3622,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 202,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3110502580/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://chiheihatakeyama.bandcamp.com/album/butterflys-summer-and-vanished',
+          a_string: 'Butterfly&#39;s Summer And Vanished by Chihei Hatakeyama',
+          rule: {
+            "monday": [ 29, 3, 9, 20 ],
+            "tuesday": [ 28, 1, 6, 18 ],
+            "wednesday": [ 27, 1, 6, 18 ],
+            "thursday": [ 27, 30, 6, 17 ],
+            "saturday": [ 25, 3, 5, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 203,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=792489759/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://chiheihatakeyama.bandcamp.com/album/scene',
+          a_string: 'Scene by Chihei Hatakeyama',
+          rule: {
+            "monday": [ 26, 4, 6, 17 ],
+            "tuesday": [ 30, 4, 10, 21 ],
+            "wednesday": [ 29, 2, 7, 19 ],
+            "thursday": [ 28, 2, 7, 19 ],
+            "saturday": [ 28, 1, 7, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 204,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3975055609/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://chiheihatakeyama.bandcamp.com/album/journey-to-the-end-of-august',
+          a_string: 'Journey To The End Of August by Chihei Hatakeyama',
+          rule: {
+            "monday": [ 28, 1, 7, 18 ],
+            "tuesday": [ 26, 4, 6, 17 ],
+            "wednesday": [ 30, 4, 10, 21 ],
+            "thursday": [ 29, 2, 7, 19 ],
+            "saturday": [ 28, 2, 7, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
