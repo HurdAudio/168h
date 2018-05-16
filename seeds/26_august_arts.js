@@ -6404,6 +6404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 321,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/people-1923.jpg',
+          title: 'People',
+          artist: 'Konstantin Yuon',
+          year: '1923',
+          rule: {
+            "monday": [ 15, 19, 27, 12 ],
+            "tuesday": [ 14, 16, 26, 11 ],
+            "wednesday": [ 13, 16, 25, 10 ],
+            "thursday": [ 12, 15, 24, 9 ],
+            "friday": [ 18, 22, 30, 15 ],
+            "saturday": [ 17, 20, 29, 14 ],
+            "sunday": [ 16, 20, 28, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 322,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/mirror-lake-1929.jpg',
+          title: 'Mirror Lake',
+          artist: 'Franklin Carmichael',
+          year: '1929',
+          rule: {
+            "monday": [ 17, 21, 29, 14 ],
+            "tuesday": [ 16, 20, 28, 13 ],
+            "wednesday": [ 15, 17, 27, 12 ],
+            "thursday": [ 14, 17, 26, 11 ],
+            "friday": [ 13, 16, 25, 10 ],
+            "saturday": [ 19, 23, 31, 16 ],
+            "sunday": [ 18, 21, 30, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 323,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/the-running-man-1933.jpg',
+          title: 'The Running Man',
+          artist: 'Kazimir Malevich',
+          year: '1932 - 1933',
+          rule: {
+            "monday": [ 18, 21, 30, 15 ],
+            "tuesday": [ 17, 21, 29, 14 ],
+            "wednesday": [ 16, 20, 28, 13 ],
+            "thursday": [ 15, 17, 27, 12 ],
+            "friday": [ 14, 17, 26, 11 ],
+            "saturday": [ 13, 16, 25, 10 ],
+            "sunday": [ 19, 23, 31, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 324,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/a-onda-1917.jpg',
+          title: 'A Onda',
+          artist: 'Anita Malfatti',
+          year: '1917',
+          rule: {
+            "monday": [ 19, 23, 31, 16 ],
+            "tuesday": [ 18, 21, 30, 15 ],
+            "wednesday": [ 17, 21, 29, 14 ],
+            "thursday": [ 16, 20, 28, 13 ],
+            "friday": [ 15, 17, 27, 12 ],
+            "saturday": [ 14, 17, 26, 11 ],
+            "sunday": [ 13, 16, 25, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 325,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/nagyb-nya-1929.jpg',
+          title: 'Nagybánya',
+          artist: 'Istvan Ilosvai Varga',
+          year: '1929',
+          rule: {
+            "monday": [ 13, 16, 25, 10 ],
+            "tuesday": [ 19, 23, 31, 16 ],
+            "wednesday": [ 18, 21, 30, 15 ],
+            "thursday": [ 17, 21, 29, 14 ],
+            "friday": [ 16, 20, 28, 13 ],
+            "saturday": [ 15, 17, 27, 12 ],
+            "sunday": [ 14, 17, 26, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
