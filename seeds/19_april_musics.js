@@ -3838,6 +3838,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 214,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=165167252/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://trevorwatts.bandcamp.com/album/no-fear',
+          a_string: 'No Fear by John Stevens, Trevor Watts, Barry Guy',
+          rule: {
+            "monday": [ 1, 9, 21, 26 ],
+            "tuesday": [ 30, 8, 20, 25 ],
+            "wednesday": [ 4, 12, 24, 29 ],
+            "thursday": [ 3, 11, 23, 28 ],
+            "saturday": [ 2, 10, 22, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 215,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3467860411/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://robbrown.bandcamp.com/album/rob-brown-juan-p-carletti-duo',
+          a_string: 'Rob Brown Juan P Carletti Duo by Rob Brown and Juan P Carletti',
+          rule: {
+            "monday": [ 2, 10, 22, 27 ],
+            "tuesday": [ 1, 9, 21, 26 ],
+            "wednesday": [ 30, 8, 20, 25 ],
+            "thursday": [ 4, 12, 24, 29 ],
+            "saturday": [ 3, 11, 23, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 216,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2877333412/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://validrecords.bandcamp.com/album/masters-of-improvisation',
+          a_string: 'Masters of Improvisation by Kidd Jordan, Alvin Fielder, Joel Futterman &amp;  Steve Swell',
+          rule: {
+            "monday": [ 3, 11, 23, 28 ],
+            "tuesday": [ 2, 10, 22, 27 ],
+            "wednesday": [ 1, 9, 21, 26 ],
+            "thursday": [ 30, 8, 20, 25 ],
+            "saturday": [ 4, 12, 24, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
