@@ -7404,6 +7404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 371,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/the-abandoned-burrow-1937.jpg',
+          title: 'The Abandoned Burrow',
+          artist: 'Toyen',
+          year: '1937',
+          rule: {
+            "monday": [ 20, 30, 7, 17 ],
+            "tuesday": [ 19, 29, 6, 16 ],
+            "wednesday": [ 18, 28, 5, 15 ],
+            "thursday": [ 17, 27, 5, 14 ],
+            "friday": [ 23, 1, 11, 19 ],
+            "saturday": [ 22, 1, 9, 19 ],
+            "sunday": [ 22, 31, 8, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 372,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/ideomorphic-composition-1-1942.jpg',
+          title: 'Ideomorphic Composition #1',
+          artist: 'Perle Fine',
+          year: '1942',
+          rule: {
+            "monday": [ 22, 31, 8, 18 ],
+            "tuesday": [ 20, 30, 7, 17 ],
+            "wednesday": [ 19, 29, 6, 16 ],
+            "thursday": [ 18, 28, 5, 15 ],
+            "friday": [ 17, 27, 5, 14 ],
+            "saturday": [ 23, 1, 11, 19 ],
+            "sunday": [ 22, 1, 9, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 373,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/bird-boy-1995.jpg',
+          title: 'Bird Boy',
+          artist: 'Lenore Tawney',
+          year: '1995',
+          rule: {
+            "monday": [ 22, 1, 9, 19 ],
+            "tuesday": [ 22, 31, 8, 18 ],
+            "wednesday": [ 20, 30, 7, 17 ],
+            "thursday": [ 19, 29, 6, 16 ],
+            "friday": [ 18, 28, 5, 15 ],
+            "saturday": [ 17, 27, 5, 14 ],
+            "sunday": [ 23, 1, 11, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 374,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/shepherds-1959.jpg',
+          title: 'Shepherds',
+          artist: 'Maria Primachenko',
+          year: '1959',
+          rule: {
+            "monday": [ 23, 1, 11, 19 ],
+            "tuesday": [ 22, 1, 9, 19 ],
+            "wednesday": [ 22, 31, 8, 18 ],
+            "thursday": [ 20, 30, 7, 17 ],
+            "friday": [ 19, 29, 6, 16 ],
+            "saturday": [ 18, 28, 5, 15 ],
+            "sunday": [ 17, 27, 5, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 375,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/rising-green-1972.jpg',
+          title: 'Rising Green',
+          artist: 'Lee Krasner',
+          year: '1972',
+          rule: {
+            "monday": [ 17, 27, 5, 14 ],
+            "tuesday": [ 23, 1, 11, 19 ],
+            "wednesday": [ 22, 1, 9, 19 ],
+            "thursday": [ 22, 31, 8, 18 ],
+            "friday": [ 20, 30, 7, 17 ],
+            "saturday": [ 19, 29, 6, 16 ],
+            "sunday": [ 18, 28, 5, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
