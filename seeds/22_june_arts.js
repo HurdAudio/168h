@@ -6715,7 +6715,7 @@ exports.seed = function(knex, Promise) {
           year: '2013',
           rule: {
             "monday": [ 16, 26, 6, 14 ],
-            "tuesday": [ 15, 25, 15, 13 ],
+            "tuesday": [ 15, 25, 5, 13 ],
             "wednesday": [ 24, 4, 14, 12 ],
             "thursday": [ 13, 23, 3, 11 ],
             "friday": [ 12, 22, 2, 10 ],
@@ -6736,7 +6736,7 @@ exports.seed = function(knex, Promise) {
           rule: {
             "monday": [ 17, 27, 7, 15 ],
             "tuesday": [ 16, 26, 6, 14 ],
-            "wednesday": [ 15, 25, 15, 13 ],
+            "wednesday": [ 15, 25, 5, 13 ],
             "thursday": [ 24, 4, 14, 12 ],
             "friday": [ 13, 23, 3, 11 ],
             "saturday": [ 12, 22, 2, 10 ],
@@ -6757,7 +6757,7 @@ exports.seed = function(knex, Promise) {
             "monday": [ 18, 28, 8, 14 ],
             "tuesday": [ 17, 27, 7, 15 ],
             "wednesday": [ 16, 26, 6, 14 ],
-            "thursday": [ 15, 25, 15, 13 ],
+            "thursday": [ 15, 25, 5, 13 ],
             "friday": [ 24, 4, 14, 12 ],
             "saturday": [ 13, 23, 3, 11 ],
             "sunday": [ 12, 22, 2, 10 ]
@@ -6778,7 +6778,7 @@ exports.seed = function(knex, Promise) {
             "tuesday": [ 18, 28, 8, 14 ],
             "wednesday": [ 17, 27, 7, 15 ],
             "thursday": [ 16, 26, 6, 14 ],
-            "friday": [ 15, 25, 15, 13 ],
+            "friday": [ 15, 25, 5, 13 ],
             "saturday": [ 24, 4, 14, 12 ],
             "sunday": [ 13, 23, 3, 11 ]
           },
@@ -6799,8 +6799,108 @@ exports.seed = function(knex, Promise) {
             "wednesday": [ 18, 28, 8, 14 ],
             "thursday": [ 17, 27, 7, 15 ],
             "friday": [ 16, 26, 6, 14 ],
-            "saturday": [ 15, 25, 15, 13 ],
+            "saturday": [ 15, 25, 5, 13 ],
             "sunday": [ 24, 4, 14, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 341,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/mayall-victoria.jpg',
+          title: 'Queen Victoria & Prince Albert',
+          artist: 'John Jabez Edwin Mayall',
+          year: '1861',
+          rule: {
+            "monday": [ 24, 4, 14, 12 ],
+            "tuesday": [ 13, 23, 3, 11 ],
+            "wednesday": [ 12, 22, 2, 10 ],
+            "thursday": [ 18, 28, 8, 14 ],
+            "friday": [ 17, 27, 7, 15 ],
+            "saturday": [ 16, 26, 6, 14 ],
+            "sunday": [ 15, 25, 5, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 342,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/steiglitz-canal.jpg',
+          title: 'Venetian Canal',
+          artist: 'Alfred Stieglitz',
+          year: '1894',
+          rule: {
+            "monday": [ 15, 25, 5, 13 ],
+            "tuesday": [ 24, 4, 14, 12 ],
+            "wednesday": [ 13, 23, 3, 11 ],
+            "thursday": [ 12, 22, 2, 10 ],
+            "friday": [ 18, 28, 8, 14 ],
+            "saturday": [ 17, 27, 7, 15 ],
+            "sunday": [ 16, 26, 6, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 343,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/lynching-1930.jpg',
+          title: 'Lynching in Marion, Indiana',
+          artist: 'unknown artist',
+          year: '1930',
+          rule: {
+            "monday": [ 17, 27, 7, 15 ],
+            "tuesday": [ 16, 26, 6, 14 ],
+            "wednesday": [ 25, 5, 15, 13 ],
+            "thursday": [ 14, 24, 4, 12 ],
+            "friday": [ 13, 23, 3, 11 ],
+            "saturday": [ 19, 29, 9, 15 ],
+            "sunday": [ 18, 28, 8, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 344,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/4CICGMM9va0yl9iqZUvVcZT6_400.jpg',
+          title: 'unknown title',
+          artist: 'Michele Clement',
+          year: '2007',
+          rule: {
+            "monday": [ 18, 28, 8, 16 ],
+            "tuesday": [ 17, 27, 7, 15 ],
+            "wednesday": [ 16, 26, 6, 14 ],
+            "thursday": [ 25, 5, 15, 13 ],
+            "friday": [ 14, 24, 4, 12 ],
+            "saturday": [ 13, 23, 3, 11 ],
+            "sunday": [ 19, 29, 9, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 345,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/.jpg',
+          title: 'Skyview Ferris Wheel Downtown Atlanta, Georgia',
+          artist: 'Robert Wojtowicz',
+          year: '?',
+          rule: {
+            "monday": [ 19, 29, 9, 15 ],
+            "tuesday": [ 18, 28, 8, 16 ],
+            "wednesday": [ 17, 27, 7, 15 ],
+            "thursday": [ 16, 26, 6, 14 ],
+            "friday": [ 25, 5, 15, 13 ],
+            "saturday": [ 14, 24, 4, 12 ],
+            "sunday": [ 13, 23, 3, 11 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
