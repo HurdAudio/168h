@@ -3946,6 +3946,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 220,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1945894059/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://carlabozulich.bandcamp.com/album/quieter',
+          a_string: 'Quieter by Carla Bozulich',
+          rule: {
+            "monday": [ 3, 9, 15, 24 ],
+            "tuesday": [ 1, 8, 14, 22 ],
+            "wednesday": [ 1, 7, 13, 21 ],
+            "thursday": [ 5, 11, 17, 25 ],
+            "saturday": [ 4, 10, 16, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 221,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=242629237/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://carlabozulich.bandcamp.com/album/boy',
+          a_string: 'Boy by Carla Bozulich',
+          rule: {
+            "monday": [ 4, 10, 16, 24 ],
+            "tuesday": [ 3, 9, 15, 24 ],
+            "wednesday": [ 1, 8, 14, 22 ],
+            "thursday": [ 1, 7, 13, 21 ],
+            "saturday": [ 5, 11, 17, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 222,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=400644888/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://carlabozulich.bandcamp.com/album/in-animal-tongue',
+          a_string: 'In Animal Tongue by Evangelista',
+          rule: {
+            "monday": [ 5, 11, 17, 25 ],
+            "tuesday": [ 4, 10, 16, 24 ],
+            "wednesday": [ 3, 9, 15, 24 ],
+            "thursday": [ 1, 8, 14, 22 ],
+            "saturday": [ 1, 7, 13, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
