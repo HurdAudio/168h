@@ -6604,6 +6604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 331,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/torso-before-the-bath.jpg',
+          title: 'Torso Before the Bath',
+          artist: 'Pierre-Auguste Renoir',
+          year: 'c.1875',
+          rule: {
+            "monday": [ 19, 30, 10, 20 ],
+            "tuesday": [ 18, 29, 9, 20 ],
+            "wednesday": [ 16, 28, 8, 19 ],
+            "thursday": [ 16, 27, 7, 8 ],
+            "friday": [ 15, 26, 5, 7 ],
+            "saturday": [ 14, 25, 5, 6 ],
+            "sunday": [ 13, 24, 4, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 332,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/three-ladies-with-parasol-aka-three-graces-1880.jpg',
+          title: 'Three ladies with parasol (aka Three Graces)',
+          artist: 'Marie Bracquemond',
+          year: '1880',
+          rule: {
+            "monday": [ 13, 24, 4, 15 ],
+            "tuesday": [ 19, 30, 10, 20 ],
+            "wednesday": [ 18, 29, 9, 20 ],
+            "thursday": [ 16, 28, 8, 19 ],
+            "friday": [ 16, 27, 7, 8 ],
+            "saturday": [ 15, 26, 5, 7 ],
+            "sunday": [ 14, 25, 5, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 333,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/young-girl-arranging-flowers-1862.jpg',
+          title: 'Young Girl Arranging Flowers',
+          artist: 'Jehan Georges Vibert',
+          year: '1862',
+          rule: {
+            "monday": [ 14, 25, 5, 6 ],
+            "tuesday": [ 13, 24, 4, 15 ],
+            "wednesday": [ 19, 30, 10, 20 ],
+            "thursday": [ 18, 29, 9, 20 ],
+            "friday": [ 16, 28, 8, 19 ],
+            "saturday": [ 16, 27, 7, 8 ],
+            "sunday": [ 15, 26, 5, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 334,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/the-eternal-woman.jpg',
+          title: 'The Eternal Woman',
+          artist: 'Paul Cezanne',
+          year: 'c.1877',
+          rule: {
+            "monday": [ 15, 26, 5, 7 ],
+            "tuesday": [ 14, 25, 5, 6 ],
+            "wednesday": [ 13, 24, 4, 15 ],
+            "thursday": [ 19, 30, 10, 20 ],
+            "friday": [ 18, 29, 9, 20 ],
+            "saturday": [ 16, 28, 8, 19 ],
+            "sunday": [ 16, 27, 7, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 335,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/on-the-thames-a-heron.jpg',
+          title: 'On the Thames, a Heron',
+          artist: 'James Tissot',
+          year: '1871',
+          rule: {
+            "monday": [ 16, 27, 7, 8 ],
+            "tuesday": [ 15, 26, 5, 7 ],
+            "wednesday": [ 14, 25, 5, 6 ],
+            "thursday": [ 13, 24, 4, 15 ],
+            "friday": [ 19, 30, 10, 20 ],
+            "saturday": [ 18, 29, 9, 20 ],
+            "sunday": [ 16, 28, 8, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
