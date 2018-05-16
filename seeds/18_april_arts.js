@@ -7204,6 +7204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 361,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/baseball_painting_two.jpg',
+          title: 'Baseball Two',
+          artist: 'Dan Nolan',
+          year: '2009',
+          rule: {
+            "monday": [ 17, 22, 28, 4 ],
+            "tuesday": [ 17, 22, 28, 4 ],
+            "wednesday": [ 16, 21, 27, 3 ],
+            "thursday":[ 21, 27, 2, 9 ],
+            "friday":  [ 5, 25, 1, 7 ],
+            "saturday": [ 20, 23, 1, 7 ],
+            "sunday": [ 19, 23, 8, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 362,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/455478553.jpg',
+          title: 'Baseball Doodles Background',
+          artist: 'mecaleha',
+          year: '?',
+          rule: {
+            "monday": [ 19, 23, 8, 6 ],
+            "tuesday": [ 17, 22, 28, 4 ],
+            "wednesday": [ 17, 22, 28, 4 ],
+            "thursday": [ 16, 21, 27, 3 ],
+            "friday": [ 21, 27, 2, 9 ],
+            "saturday": [ 5, 25, 1, 7 ],
+            "sunday": [ 20, 23, 1, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 363,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/excellent-baseball-pictures-to-print-patent-wall-decor-art.jpg',
+          title: 'Baseball Patent',
+          artist: '?',
+          year: '1924',
+          rule: {
+            "monday": [ 20, 23, 1, 7 ],
+            "tuesday": [ 19, 23, 8, 6 ],
+            "wednesday": [ 17, 22, 28, 4 ],
+            "thursday": [ 17, 22, 28, 4 ],
+            "friday": [ 16, 21, 27, 3 ],
+            "saturday": [ 21, 27, 2, 9 ],
+            "sunday": [ 5, 25, 1, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 364,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/abstract-baseball-player-vintage-illustration-vector.jpg',
+          title: 'Vector illustration of abstract baseball player,',
+          artist: 'Vecteezy',
+          year: '?',
+          rule: {
+            "monday": [ 6, 26, 2, 8 ],
+            "tuesday": [ 21, 24, 2, 8 ],
+            "wednesday": [ 20, 24, 9, 7 ],
+            "thursday": [ 18, 23, 29, 5 ],
+            "friday": [ 18, 23, 29, 5 ],
+            "saturday": [ 17, 22, 28, 4 ],
+            "sunday": [ 22, 28, 3, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 365,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/baseball-and-penuts-clinton-hobart.jpg',
+          title: 'Baseball and Peanuts',
+          artist: 'Clinton Hobart',
+          year: '2012',
+          rule: {
+            "monday": [ 22, 28, 3, 10 ],
+            "tuesday": [ 6, 26, 2, 8 ],
+            "wednesday": [ 21, 24, 2, 8 ],
+            "thursday": [ 20, 24, 9, 7 ],
+            "friday": [ 18, 23, 29, 5 ],
+            "saturday": [ 18, 23, 29, 5 ],
+            "sunday": [ 17, 22, 28, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
