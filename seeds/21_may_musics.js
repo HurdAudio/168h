@@ -3730,6 +3730,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 208,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=818932694/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://grannyrecords.bandcamp.com/album/s-t',
+          a_string: 's/t [κασέτα] by The Pitch',
+          rule: {
+            "monday": [ 31, 6, 13, 26 ],
+            "tuesday": [ 30, 5, 12, 25 ],
+            "wednesday": [ 3, 10, 16, 29 ],
+            "thursday": [ 2, 8, 15, 28 ],
+            "saturday": [ 1, 7, 14, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 209,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1725404776/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://koenraadecker.bandcamp.com/album/a-biology-of-shadows',
+          a_string: 'A Biology of Shadows by Koenraad Ecker',
+          rule: {
+            "monday": [ 1, 7, 14, 27 ],
+            "tuesday": [ 31, 6, 13, 26 ],
+            "wednesday": [ 30, 5, 12, 25 ],
+            "thursday": [ 3, 10, 16, 29 ],
+            "saturday": [ 2, 8, 15, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 210,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2880676917/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://gosheven.bandcamp.com/album/bivaq',
+          a_string: 'Bivaq by Gosheven',
+          rule: {
+            "monday": [ 3, 9, 16, 29 ],
+            "tuesday": [ 2, 8, 15, 28 ],
+            "wednesday": [ 1, 7, 14, 27 ],
+            "thursday": [ 31, 6, 13, 26 ],
+            "saturday": [ 4, 11, 17, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
