@@ -7604,6 +7604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 381,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/H0062-L06413091.jpg',
+          title: '\'Thinking',
+          artist: 'John E. Dowell Jr.',
+          year: '1941',
+          rule: {
+            "monday": [ 6, 16, 12, 2 ],
+            "tuesday": [ 25, 4, 12, 20 ],
+            "wednesday": [ 26, 6, 14, 22 ],
+            "thursday": [ 3, 8, 14, 24 ],
+            "friday": [ 2, 10, 18, 26 ],
+            "saturday": [ 4, 14, 20, 26 ],
+            "sunday": [ 6, 14, 22, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 382,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/ExhibitImgs-DriskellEvolution.jpg',
+          title: 'Spirits Watching',
+          artist: 'David C. Driskell',
+          year: '1986',
+          rule: {
+            "monday": [ 6, 14, 22, 3 ],
+            "tuesday": [ 6, 16, 12, 2 ],
+            "wednesday": [ 25, 4, 12, 20 ],
+            "thursday": [ 26, 6, 14, 22 ],
+            "friday": [ 3, 8, 14, 24 ],
+            "saturday": [ 2, 10, 18, 26 ],
+            "sunday": [ 4, 14, 20, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 383,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/Robert-Duncanson-Summer-1849-7.jpg',
+          title: 'Summer',
+          artist: 'Robert S. Duncanson',
+          year: '1849',
+          rule: {
+            "monday": [ 4, 14, 20, 26 ],
+            "tuesday": [ 6, 14, 22, 3 ],
+            "wednesday": [ 6, 16, 12, 2 ],
+            "thursday": [ 25, 4, 12, 20 ],
+            "friday": [ 26, 6, 14, 22 ],
+            "saturday": [ 3, 8, 14, 24 ],
+            "sunday": [ 2, 10, 18, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 384,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/889f5537b4d03d7745a346fd527cbbb8--visionary-art-art-brut.jpg',
+          title: 'Homegrown Mosaic',
+          artist: 'William Edmondson',
+          year: '?',
+          rule: {
+            "monday": [ 2, 10, 18, 26 ],
+            "tuesday": [ 4, 14, 20, 26 ],
+            "wednesday": [ 6, 14, 22, 3 ],
+            "thursday": [ 6, 16, 12, 2 ],
+            "friday": [ 25, 4, 12, 20 ],
+            "saturday": [ 26, 6, 14, 22 ],
+            "sunday": [ 3, 8, 14, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 385,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/476b7686965356c68cb1cf78ee722ab5.jpg',
+          title: 'Steel Life',
+          artist: 'Mel Edwards',
+          year: '1985 - 1991',
+          rule: {
+            "monday": [ 4, 9, 15, 25 ],
+            "tuesday": [ 3, 11, 19, 27 ],
+            "wednesday": [ 5, 15, 21, 27 ],
+            "thursday": [ 7, 15, 23, 4 ],
+            "friday": [ 7, 17, 13, 3 ],
+            "saturday": [ 26, 5, 13, 21 ],
+            "sunday": [ 27, 7, 15, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
