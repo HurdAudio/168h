@@ -9934,6 +9934,34 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 636,
+          user_id: 1,
+          name: 'Carla Bley (piano/composer) born 1936',
+          color: '#1F0004',
+          picture: './img/musicians/fb77bed7caf15dd4a6c7e5e06ca82cdc.jpg',
+          day_of: new Date ('1936-05-11T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 637,
+          user_id: 1,
+          name: 'The world ended on this day in 2016 with the onset of a catastrophic earthquake according to Warren Jeffs of the Fundamentalist Latter Day Saints',
+          color: '#F7BDC9',
+          picture: './img/doomsday/flds.jpg',
+          day_of: new Date ('2016-04-06T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
