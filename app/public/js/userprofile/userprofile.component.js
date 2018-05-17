@@ -536,6 +536,8 @@
         .then(commentData=>{
           let comment = commentData.data[0];
           let index = 0;
+          let createDate = new Date(comment.created_at);
+          let updateDate = new Date(comment.updated_at);
           for (let i = 0; i < vm.activeTimeblockShares.length; i++) {
             if (vm.activeTimeblockShares[i].id === timeblockId) {
               if (vm.activeTimeblockShares[i].comments === undefined) {
@@ -548,7 +550,16 @@
               vm.activeTimeblockShares[i].comments[index].comment = comment.comment;
               vm.activeTimeblockShares[i].comments[index].id = comment.id;
               getUserInfosForAppointmentComment(timeblockId, i, comment, index);
-              vm.activeTimeblockShares[i].comments[index].cleanDate = cleanDateHoliday(comment.updated_at) + ' at ' +  check.toLocaleTimeString('en-GB');
+              if (updateDate.getTime() < (createDate.getTime() + 150001)) {
+                vm.activeTimeblockShares[i].comments[index].cleanDate = cleanDateHoliday(comment.created_at) + ' at ' +  check.toLocaleTimeString('en-GB');
+              } else {
+                vm.activeTimeblockShares[i].comments[index].cleanDate = cleanDateHoliday(comment.created_at) + ' at ' +  check.toLocaleTimeString('en-GB') + ' - updated - ' + cleanDateHoliday(comment.updated_at) + ' at ' + updateDate.toLocaleTimeString('en-GB');
+              }
+              if (vm.activeTimeblockShares[i].comments.length === 1) {
+                vm.activeTimeblockShares[i].commentsLength = '1 comment';
+              } else {
+                vm.activeTimeblockShares[i].commentsLength = vm.activeTimeblockShares[i].comments.length + ' comments';
+              }
 
             }
           }
@@ -885,6 +896,13 @@
             }
           }
           vm.activeTimeblockShares[timeblockIndex].comments.splice(timeblockCommentIndex, 1);
+          if (vm.activeTimeblockShares[timeblockIndex].comments.length === 0) {
+            vm.activeTimeblockShares[timeblockIndex].commentsLength = '0 comments';
+          } else if (vm.activeTimeblockShares[timeblockIndex].comments.length === 1) {
+            vm.activeTimeblockShares[timeblockIndex].commentsLength = '1 comment';
+          } else {
+            vm.activeTimeblockShares[timeblockIndex].commentsLength = vm.activeTimeblockShares[timeblockIndex].comments.length + ' comments';
+          }
         });
 
         deleteTimeblockCommentConfirm.setAttribute("style", "display: none;");
@@ -1081,7 +1099,8 @@
         let thisIsTheTimeblockShareComment = document.getElementById('thisIsTheTimeblockShareComment' + timeblockShareId);
         let editDeleteTimeblockShareCommentDiv = document.getElementById('editDeleteTimeblockShareCommentDiv' + timeblockShareId);
         let subObj = {
-          comment: thisIsTheTimeblockShareCommentEditor.value
+          comment: thisIsTheTimeblockShareCommentEditor.value,
+          updated_at: new Date()
         };
         $http.patch(`/timeblock_share_comments/${timeblockShareId}`, subObj)
         .then(updatedCommentData=>{
@@ -14014,7 +14033,7 @@
               vm.userMessages[index].comments[i] = {};
               vm.userMessages[index].comments[i].id = messageComments[i].id;
               vm.userMessages[index].comments[i].comment = messageComments[i].comment;
-              console.log(updateTime.getTime() < (createTime.getTime() + 15001));
+
               if (updateTime.getTime() < (createTime.getTime() + 15001)) {
                 vm.userMessages[index].comments[i].cleanDate = cleanDateHoliday(messageComments[i].created_at) + ' - ' + timeDate(messageComments[i].created_at);
               } else {
@@ -14291,6 +14310,8 @@
             let aDate;
             let bDate;
             let check;
+            let createDate;
+            let updateDate;
             appointmentComments = appointmentComments.sort((a, b)=>{
               aDate = new Date(a.updated_at);
               bDate = new Date(b.updated_at);
@@ -14298,11 +14319,17 @@
             });
             for (let i = 0; i < appointmentComments.length; i++) {
               check = new Date(appointmentComments[i].updated_at);
+              createDate = new Date(appointmentComments[i].created_at);
+              updateDate = new Date(appointmentComments[i].updated_at);
               vm.activeTimeblockShares[index].comments[i] = {};
               vm.activeTimeblockShares[index].comments[i].comment = appointmentComments[i].comment;
               vm.activeTimeblockShares[index].comments[i].id = appointmentComments[i].id;
               getUserInfosForAppointmentComment(appointment, index, appointmentComments[i], i);
-              vm.activeTimeblockShares[index].comments[i].cleanDate = cleanDateHoliday(appointmentComments[i].updated_at) + ' at ' +  check.toLocaleTimeString('en-GB');
+              if (updateDate.getTime() < (createDate.getTime() + 150001)) {
+                vm.activeTimeblockShares[index].comments[i].cleanDate = cleanDateHoliday(appointmentComments[i].created_at) + ' at ' +  createDate.toLocaleTimeString('en-GB');
+              } else {
+                 vm.activeTimeblockShares[index].comments[i].cleanDate = cleanDateHoliday(appointmentComments[i].updated_at) + ' at ' +  check.toLocaleTimeString('en-GB') + ' - updated - ' + cleanDateHoliday(appointmentComments[i].updated_at) + ' at ' + updateDate.toLocaleTimeString('en-GB');
+               }
             }
             setTimeout(()=>{
               let appointmentTime;
