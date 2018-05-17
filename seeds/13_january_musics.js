@@ -4162,6 +4162,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 232,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=527197427/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://unseenworlds.bandcamp.com/album/electronic-music-from-the-eighties-and-nineties',
+          a_string: 'Electronic Music from the Eighties and Nineties by Carl Stone',
+          rule: {
+            "monday": [ 10, 17, 18, 19 ],
+            "tuesday": [ 9, 15, 16, 17 ],
+            "wednesday": [ 8, 15, 16, 17 ],
+            "thursday": [ 12, 19, 20, 21 ],
+            "saturday": [ 11, 17, 19, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 233,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1593112987/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://unseenworlds.bandcamp.com/album/creatures-of-the-deep',
+          a_string: 'Creatures of the Deep by Robert Haigh',
+          rule: {
+            "monday": [ 11, 17, 19, 20 ],
+            "tuesday": [ 10, 17, 18, 19 ],
+            "wednesday": [ 9, 15, 16, 17 ],
+            "thursday": [ 8, 15, 16, 17 ],
+            "saturday": [ 12, 19, 20, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 234,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=432503504/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://xirecords.bandcamp.com/album/the-chord-catalogue',
+          a_string: 'The Chord Catalogue by Tom Johnson',
+          rule: {
+            "monday": [ 12, 19, 20, 21 ],
+            "tuesday": [ 11, 17, 19, 20 ],
+            "wednesday": [ 10, 17, 18, 19 ],
+            "thursday": [ 9, 15, 16, 17 ],
+            "saturday": [ 8, 15, 16, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
