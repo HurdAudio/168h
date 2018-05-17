@@ -7804,6 +7804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 391,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/tomorrow-s-apples-5-in-white-1965.jpg',
+          title: 'Tomorrow\'s Apples (5 in White)',
+          artist: 'Eva Hesse',
+          year: '1965',
+          rule: {
+            "monday": [ 4, 6, 7, 9 ],
+            "tuesday": [ 6, 8, 12, 15 ],
+            "wednesday": [ 8, 10, 11, 12 ],
+            "thursday": [ 24, 25, 5, 28 ],
+            "friday": [ 27, 29, 21, 10 ],
+            "saturday": [ 1, 30, 22, 25 ],
+            "sunday": [ 1, 2, 24, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 392,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/on-white-ii-1923.jpg',
+          title: 'On White II',
+          artist: 'Wassily Kandinsky',
+          year: '1923',
+          rule: {
+            "monday": [ 2, 3, 25, 29 ],
+            "tuesday": [ 5, 7, 8, 10 ],
+            "wednesday": [ 7, 9, 13, 16 ],
+            "thursday": [ 9, 11, 12, 13 ],
+            "friday": [ 25, 26, 6, 29 ],
+            "saturday": [ 28, 30, 22, 11 ],
+            "sunday": [ 2, 31, 23, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 393,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/espiral-laranja.jpg',
+          title: 'Espiral Laranja',
+          artist: 'Rubem Ludolf',
+          year: 'XX - XXI Cent.',
+          rule: {
+            "monday": [ 2, 31, 23, 26 ],
+            "tuesday": [ 2, 3, 25, 29 ],
+            "wednesday": [ 5, 7, 8, 10 ],
+            "thursday": [ 7, 9, 13, 16 ],
+            "friday": [ 9, 11, 12, 13 ],
+            "saturday": [ 25, 26, 6, 29 ],
+            "sunday": [ 28, 30, 22, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 394,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/can-be-joined-any-way-2002.jpg',
+          title: 'Can be joined any way',
+          artist: 'Harriet Korman',
+          year: '2002',
+          rule: {
+            "monday": [ 28, 30, 22, 11 ],
+            "tuesday": [ 2, 31, 23, 26 ],
+            "wednesday": [ 2, 3, 25, 29 ],
+            "thursday": [ 5, 7, 8, 10 ],
+            "friday": [ 7, 9, 13, 16 ],
+            "saturday": [ 9, 11, 12, 13 ],
+            "sunday": [ 25, 26, 6, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 395,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/optical-painting-1964.jpg',
+          title: 'Optical Painting',
+          artist: 'Wen-Ying Tsai',
+          year: '1964',
+          rule: {
+            "monday": [ 25, 26, 6, 29 ],
+            "tuesday": [ 28, 30, 22, 11 ],
+            "wednesday": [ 2, 31, 23, 26 ],
+            "thursday": [ 2, 3, 25, 29 ],
+            "friday": [ 5, 7, 8, 10 ],
+            "saturday": [ 7, 9, 13, 16 ],
+            "sunday": [ 9, 11, 12, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
