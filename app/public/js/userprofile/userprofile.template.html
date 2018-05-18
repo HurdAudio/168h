@@ -3948,11 +3948,12 @@
           <a href="" class="btn" ng-click="$ctrl.musicModuleDisplay()" id="musicModuleDisplayButton">Music</a>
         </div>
         <div id="availableMusicModules">
+          <main ng-repeat="musicmod in $ctrl.musicModulePreview | orderBy : $ctrl.sortBy">
             <div class="iframeDiv">
-                <iframe style="border: 0; width: 100%; height: 510px;" src="https://bandcamp.com/EmbeddedPlayer/album=2223328995/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="http://fadimoutouwalletinamoud.bandcamp.com/album/isswat">Isswat by Fadimoutou Wallet Inamoud</a></iframe>
+              <iframe ng-src="{{musicmod.src_string}}" style="border: 0; width: 100%; height: 600px;" seamless><a href="{{musicmod.href_string}}">{{musicmod.a_string}}</a></iframe>
               </div>
-            <p>Black History</p>
-            <p>added by: Devin Hurd</p>
+            <p>Theme: {{musicmod.theme}}</p>
+            <p>added by: {{musicmod.authorName}}</p>
             <a class="btn" href="#">view</a>
             <a class="btn" href="#">install</a>
             <div class="musicModuleCommentsBar">
@@ -3965,6 +3966,7 @@
               <p>Lucifer Sam commented <br> on 11 August 2017 at 07:07:00</p><br><br><br>
               <h3>Seems kind of identity-politicky to me.</h3>
             </div>
+          </main>
 
         </div><br><br><br>
         <div id="tileModules">

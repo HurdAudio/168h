@@ -2548,6 +2548,14 @@
         tileModuleDisplayButton.setAttribute("style", "visibility: hidden;");
       }
 
+      function musicModuleAuthorName(index, userId) {
+        $http.get(`/users/${userId}`)
+        .then(userData=>{
+          let user = userData.data;
+          vm.musicModulePreview[index].authorName = user.name;
+        });
+      }
+
       function musicModuleDisplay() {
         let tileModuleDisplayButton = document.getElementById('tileModuleDisplayButton');
         let availableArtModules = document.getElementById('availableArtModules');
@@ -2555,6 +2563,47 @@
         let availableMusicModules = document.getElementById('availableMusicModules');
         let musicModuleDisplayButton = document.getElementById('musicModuleDisplayButton');
         let availableTilesModules = document.getElementById('availableTilesModules');
+
+        $http.get('/music_modules')
+        .then(allMusicModsData=>{
+          let allMusicMods = allMusicModsData.data;
+          let musicModsPublic = allMusicMods.filter(mus=>{
+            return(mus.public);
+          });
+          let modules = [];
+          let pushed = false;
+          for (let i = 0; i < musicModsPublic.length; i++) {
+            pushed = false;
+            if (modules.length > 0) {
+              for (let j = 0; j < modules.length; j++) {
+                if ((modules[j][0].theme === musicModsPublic[i].theme) && (modules[j][0].user_author_id === musicModsPublic[i].user_author_id)) {
+                  modules[j].push(musicModsPublic[i]);
+                  pushed = true;
+                }
+              }
+            } else {
+              modules[0] = [];
+              modules[0].push(musicModsPublic[i]);
+              pushed = true;
+            }
+            if (!pushed) {
+              modules[modules.length] = [];
+              modules[modules.length - 1].push(musicModsPublic[i]);
+            }
+          }
+          console.log(modules);
+          vm.musicModulePreview = [];
+          let selection = 0;
+          for (let k = 0; k < modules.length; k++) {
+            vm.musicModulePreview[k] = {};
+            selection = Math.floor(Math.random() * modules[k].length);
+            vm.musicModulePreview[k].src_string = modules[k][selection].src_string;
+            vm.musicModulePreview[k].href_string = modules[k][selection].href_string;
+            vm.musicModulePreview[k].a_string = modules[k][selection].a_string;
+            vm.musicModulePreview[k].theme = modules[k][selection].theme;
+            musicModuleAuthorName(k, modules[k][selection].user_author_id);
+          }
+        });
 
         availableArtModules.setAttribute("style", "display: none;");
         artModuleDisplayButton.setAttribute("style", "visibility: visible;");
