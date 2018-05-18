@@ -349,6 +349,21 @@ exports.seed = function(knex, Promise) {
           public: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 24,
+          user_author_id: 1,
+          theme: 'Paper',
+          type: 'friday',
+          src_string: '../img/tiles/handwritten-1763282_1280.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '100%',
+          color_dark: '#000000',
+          color_medium: '#E6A88E',
+          color_light: '#E2D2C2',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
