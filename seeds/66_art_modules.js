@@ -1504,6 +1504,66 @@ exports.seed = function(knex, Promise) {
           public: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 126,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/animal-3359871_1920.jpg',
+          title: 'Cat in Bed',
+          artist: 'Karsten Paulick',
+          year: '2018',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 127,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/cat-1333926_1920.jpg',
+          title: 'Cat Wink',
+          artist: 'Alexas Alexandra',
+          year: '2016',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 128,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/cat-177069_1920.jpg',
+          title: 'Cat',
+          artist: 'jann',
+          year: '2012',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 129,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/cat-755018_1920.jpg',
+          title: 'Cat',
+          artist: 'wulfcb',
+          year: '2015',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 130,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/sofa-792507_1920.jpg',
+          title: 'Sofa Cat',
+          artist: 'Alexas Alexandra',
+          year: '2015',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
