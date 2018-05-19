@@ -648,6 +648,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#ECE113',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 47,
+          user_id: 1,
+          theme: 'Autumnal',
+          type: 'holiday',
+          src_string: '../img/october_tiles/pumpkin-1653007_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '150%',
+          color_dark: '#120B01',
+          color_medium: '#DC5015',
+          color_light: '#FFF6BA',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
