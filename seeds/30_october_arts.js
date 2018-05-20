@@ -6104,6 +6104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 306,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_capitalism_socialism.jpg',
+          title: 'Under capitalism...Under socialism!',
+          artist: 'V. Koretsky',
+          year: '1948',
+          rule: {
+            "monday": [ 14, 25, 5, 9 ],
+            "tuesday": [ 13, 24, 25, 8 ],
+            "wednesday": [ 22, 23, 3, 7 ],
+            "thursday": [ 18, 29, 9, 13 ],
+            "friday": [ 17, 28, 8, 12 ],
+            "saturday": [ 16, 27, 7, 11 ],
+            "sunday": [ 15, 26, 6, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 307,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_sovpolpost_00079.jpg',
+          title: 'Delegate - is a servant of people',
+          artist: 'L.Golovanov',
+          year: '1947',
+          rule: {
+            "monday": [ 15, 26, 6, 10 ],
+            "tuesday": [ 14, 25, 5, 9 ],
+            "wednesday": [ 13, 24, 25, 8 ],
+            "thursday": [ 22, 23, 3, 7 ],
+            "friday": [ 18, 29, 9, 13 ],
+            "saturday": [ 17, 28, 8, 12 ],
+            "sunday": [ 16, 27, 7, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 308,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_sovpolpost_00077.jpg',
+          title: 'We will beat drought!',
+          artist: 'V. Govorkov',
+          year: '1949',
+          rule: {
+            "monday": [ 17, 28, 8, 12 ],
+            "tuesday": [ 16, 27, 7, 11 ],
+            "wednesday": [ 15, 26, 6, 10 ],
+            "thursday": [ 14, 25, 26, 9 ],
+            "friday": [ 23, 24, 4, 8 ],
+            "saturday": [ 19, 30, 10, 14 ],
+            "sunday": [ 18, 29, 9, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 309,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_sovpolpost_00075.jpg',
+          title: '(we) Will come to plenty!',
+          artist: 'V.Ivanov',
+          year: '1949',
+          rule: {
+            "monday": [ 18, 29, 9, 13 ],
+            "tuesday": [ 17, 28, 8, 12 ],
+            "wednesday": [ 16, 27, 7, 11 ],
+            "thursday": [ 15, 26, 6, 10 ],
+            "friday": [ 14, 25, 26, 9 ],
+            "saturday": [ 23, 24, 4, 8 ],
+            "sunday": [ 19, 30, 10, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 310,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_sovpolpost_00074.jpg',
+          title: 'Vote for the prosperity of each town, each village of our beloved Motherland!',
+          artist: 'G.Shubina',
+          year: '1947',
+          rule: {
+            "monday": [ 19, 30, 10, 14 ],
+            "tuesday": [ 18, 29, 9, 13 ],
+            "wednesday": [ 17, 28, 8, 12 ],
+            "thursday": [ 16, 27, 7, 11 ],
+            "friday": [ 15, 26, 6, 10 ],
+            "saturday": [ 14, 25, 26, 9 ],
+            "sunday": [ 23, 24, 4, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
