@@ -760,6 +760,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#D2A8B8',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 55,
+          user_id: 1,
+          theme: 'Silk/Velvet',
+          type: 'saturday',
+          src_string: '../img/february_tiles/Special-clearance-Blue-floral-gold-dyed-silk-fabrics-advanced-thin-refreshing-summer-elegant-silk-chiffon-fabric.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '100%',
+          color_dark: '#437B64',
+          color_medium: '#B4D9E4',
+          color_light: '#D4D0C9',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
