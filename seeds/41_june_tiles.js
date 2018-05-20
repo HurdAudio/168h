@@ -704,6 +704,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FFFFFA',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 51,
+          user_id: 1,
+          theme: 'Light',
+          type: 'sunday',
+          src_string: '../img/june_tiles/bulbs-2521549_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '168%',
+          color_dark: '#282822',
+          color_medium: '#4F1F07',
+          color_light: '#FDFEF9',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
