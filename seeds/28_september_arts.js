@@ -6304,6 +6304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 316,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/head-1960.jpg',
+          title: 'Head',
+          artist: 'David Park',
+          year: '1960',
+          rule: {
+            "monday": [ 16, 22, 10, 18 ],
+            "tuesday": [ 15, 21, 9, 17 ],
+            "wednesday": [ 14, 20, 8, 16 ],
+            "thursday": [ 13, 19, 7, 16 ],
+            "friday": [ 2, 18, 6, 14 ],
+            "saturday": [ 10, 17, 5, 12 ],
+            "sunday": [ 17, 23, 11, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 317,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/staccato-1965.jpg',
+          title: 'Staccato',
+          artist: 'Cesar Paternosto',
+          year: '1965',
+          rule: {
+            "monday": [ 17, 23, 11, 19 ],
+            "tuesday": [ 16, 22, 10, 18 ],
+            "wednesday": [ 15, 21, 9, 17 ],
+            "thursday": [ 14, 20, 8, 16 ],
+            "friday": [ 13, 19, 7, 16 ],
+            "saturday": [ 2, 18, 6, 14 ],
+            "sunday": [ 10, 17, 5, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 318,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/hypergraphie-1971.jpg',
+          title: 'Hypergraphie',
+          artist: 'Isidore Isou',
+          year: '1971',
+          rule: {
+            "monday": [ 10, 17, 5, 12 ],
+            "tuesday": [ 17, 23, 11, 19 ],
+            "wednesday": [ 16, 22, 10, 18 ],
+            "thursday": [ 15, 21, 9, 17 ],
+            "friday": [ 14, 20, 8, 16 ],
+            "saturday": [ 13, 19, 7, 16 ],
+            "sunday": [ 2, 18, 6, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 319,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/amazon-woman-of-the-mountain-1961.jpg',
+          title: 'Amazon Woman of the mountain',
+          artist: 'Johannes Sveinsson Kjarval',
+          year: '1961',
+          rule: {
+            "monday": [ 2, 18, 6, 14 ],
+            "tuesday": [ 10, 17, 5, 12 ],
+            "wednesday": [ 17, 23, 11, 19 ],
+            "thursday": [ 16, 22, 10, 18 ],
+            "friday": [ 15, 21, 9, 17 ],
+            "saturday": [ 14, 20, 8, 16 ],
+            "sunday": [ 13, 19, 7, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 320,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/yellow-sky-1986.jpg',
+          title: 'Yellow Sky',
+          artist: 'Martha Diamond',
+          year: '1986',
+          rule: {
+            "monday": [ 13, 19, 7, 16 ],
+            "tuesday": [ 2, 18, 6, 14 ],
+            "wednesday": [ 10, 17, 5, 12 ],
+            "thursday": [ 17, 23, 11, 19 ],
+            "friday": [ 16, 22, 10, 18 ],
+            "saturday": [ 15, 21, 9, 17 ],
+            "sunday": [ 14, 20, 8, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
