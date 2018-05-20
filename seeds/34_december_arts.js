@@ -5704,6 +5704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 286,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/12-00,Illus.JPG',
+          title: 'McClure\'s Magazine',
+          artist: 'Frank Schoonover',
+          year: '1912',
+          rule: {
+            "monday": [ 10, 23, 31, 6 ],
+            "tuesday": [ 9, 22, 30, 5 ],
+            "wednesday": [ 8, 20, 29, 4 ],
+            "thursday": [ 7, 20, 8, 15 ],
+            "friday": [ 13, 26, 3, 9 ],
+            "saturday": [ 12, 25, 2, 8 ],
+            "sunday": [ 11, 24, 1, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 287,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/26-07-10,SS.jpg',
+          title: 'Short Stories',
+          artist: 'Louis G. Schroeder',
+          year: '1926',
+          rule: {
+            "monday": [ 12, 25, 2, 8 ],
+            "tuesday": [ 11, 24, 1, 7 ],
+            "wednesday": [ 10, 23, 31, 6 ],
+            "thursday": [ 9, 21, 30, 5 ],
+            "friday": [ 8, 21, 9, 16 ],
+            "saturday": [ 14, 27, 4, 10 ],
+            "sunday": [ 13, 26, 3, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 288,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/44-00,YlwJkt3.jpg',
+          title: 'Yellow Jacket Comics',
+          artist: 'Gustav Schrotter',
+          year: '1944',
+          rule: {
+            "monday": [ 13, 26, 3, 9 ],
+            "tuesday": [ 12, 25, 2, 8 ],
+            "wednesday": [ 11, 24, 1, 7 ],
+            "thursday": [ 10, 23, 31, 6 ],
+            "friday": [ 9, 21, 30, 5 ],
+            "saturday": [ 8, 21, 9, 16 ],
+            "sunday": [ 14, 27, 4, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 289,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/11-08,TheCentury.jpg',
+          title: 'The Century',
+          artist: 'Remington Schuyler',
+          year: '1911',
+          rule: {
+            "monday": [ 14, 27, 4, 10 ],
+            "tuesday": [ 13, 26, 3, 9 ],
+            "wednesday": [ 12, 25, 2, 8 ],
+            "thursday": [ 11, 24, 1, 7 ],
+            "friday": [ 10, 23, 31, 6 ],
+            "saturday": [ 9, 21, 30, 5 ],
+            "sunday": [ 8, 21, 9, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 290,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/26-12,DangerTrl.jpg',
+          title: 'Danger Trail',
+          artist: 'H. Winfield Scott',
+          year: '1926',
+          rule: {
+            "monday": [ 8, 21, 9, 16 ],
+            "tuesday": [ 14, 27, 4, 10 ],
+            "wednesday": [ 13, 26, 3, 9 ],
+            "thursday": [ 12, 25, 2, 8 ],
+            "friday": [ 11, 24, 1, 7 ],
+            "saturday": [ 10, 23, 31, 6 ],
+            "sunday": [ 9, 21, 30, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
