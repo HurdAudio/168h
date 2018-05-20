@@ -3244,6 +3244,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 181,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4098179232/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://waxidols.bandcamp.com/album/happy-ending',
+          a_string: 'Happy Ending by Wax Idols',
+          rule: {
+            "monday": [ 2, 12, 22, 25 ],
+            "tuesday": [ 1, 11, 21, 24 ],
+            "wednesday": [ 31, 10, 20, 23 ],
+            "thursday": [ 30, 9, 20, 22 ],
+            "saturday": [ 3, 13, 23, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 182,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1060728591/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://skinless.bandcamp.com/album/savagery',
+          a_string: 'Savagery by Skinless',
+          rule: {
+            "monday": [ 4, 14, 24, 27 ],
+            "tuesday": [ 3, 13, 23, 26 ],
+            "wednesday": [ 2, 12, 22, 25 ],
+            "thursday": [ 1, 11, 22, 24 ],
+            "saturday": [ 31, 10, 21, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 183,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2026848533/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://remembersports.bandcamp.com/album/slow-buzz',
+          a_string: 'Slow Buzz by Remember Sports',
+          rule: {
+            "monday": [ 31, 10, 21, 23 ],
+            "tuesday": [ 4, 14, 24, 27 ],
+            "wednesday": [ 3, 13, 23, 26 ],
+            "thursday": [ 2, 12, 22, 25 ],
+            "saturday": [ 1, 11, 22, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
