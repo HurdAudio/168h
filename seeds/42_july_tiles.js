@@ -690,6 +690,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FBFBFF',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 50,
+          user_id: 1,
+          theme: 'Steam',
+          type: 'saturday',
+          src_string: '../img/july_tiles/fluffy_clouds_1937.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '155%',
+          color_dark: '#000000',
+          color_medium: '#9A9FB2',
+          color_light: '#D8D4D5',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
