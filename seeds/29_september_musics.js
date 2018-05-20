@@ -3352,6 +3352,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 187,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1307757516/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bigups.bandcamp.com/album/two-parts-together',
+          a_string: 'Two Parts Together by Big Ups',
+          rule: {
+            "monday": [ 30, 20, 28, 22 ],
+            "tuesday": [ 29, 19, 27, 21 ],
+            "wednesday": [ 28, 18, 26, 21 ],
+            "thursday": [ 27, 17, 25, 19 ],
+            "saturday": [ 26, 16, 24, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 188,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4247980252/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bigups.bandcamp.com/album/big-ups-audiotree-live',
+          a_string: 'Big Ups - Audiotree Live by Big Ups',
+          rule: {
+            "monday": [ 26, 16, 24, 18 ],
+            "tuesday": [ 30, 20, 28, 22 ],
+            "wednesday": [ 29, 19, 27, 21 ],
+            "thursday": [ 28, 18, 26, 21 ],
+            "saturday": [ 27, 17, 25, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 189,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3040569775/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bigups.bandcamp.com/album/before-a-million-universes',
+          a_string: 'Before A Million Universes by Big Ups',
+          rule: {
+            "monday": [ 28, 18, 26, 20 ],
+            "tuesday": [ 27, 17, 25, 19 ],
+            "wednesday": [ 1, 21, 29, 23 ],
+            "thursday": [ 30, 20, 28, 22 ],
+            "saturday": [ 29, 19, 27, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
