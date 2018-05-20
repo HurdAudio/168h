@@ -3028,6 +3028,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 169,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1806774964/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://zomvrilla.bandcamp.com/album/lullaby-for-a-mirror',
+          a_string: 'Lullaby For A Mirror by Zomvrilla',
+          rule: {
+            "monday": [ 26, 3, 9, 15 ],
+            "tuesday": [ 27, 2, 8, 14 ],
+            "wednesday": [ 31, 6, 12, 18 ],
+            "thursday": [ 30, 5, 11, 16 ],
+            "saturday": [ 27, 4, 10, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 170,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1839852229/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://zomvrilla.bandcamp.com/album/ilha-do-limbo',
+          a_string: 'Ilha do Limbo by Zomvrilla',
+          rule: {
+            "monday": [ 27, 4, 10, 16 ],
+            "tuesday": [ 26, 3, 9, 15 ],
+            "wednesday": [ 27, 2, 8, 14 ],
+            "thursday": [ 31, 6, 12, 18 ],
+            "saturday": [ 30, 5, 11, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 171,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2296640708/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://zomvrilla.bandcamp.com/album/6-leos-de-flores-preciosas',
+          a_string: '6 Óleos de flores preciosas by Zomvrilla',
+          rule: {
+            "monday": [ 30, 5, 11, 16 ],
+            "tuesday": [ 27, 4, 10, 16 ],
+            "wednesday": [ 26, 3, 9, 15 ],
+            "thursday": [ 27, 2, 8, 14 ],
+            "saturday": [ 31, 6, 12, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
