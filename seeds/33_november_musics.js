@@ -3136,6 +3136,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 175,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=580948882/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://youngmontana.bandcamp.com/album/-',
+          a_string: '💐  🌷  🌸  🌹  🌺  🌻  🌼  🥀 by Young Montana?',
+          rule: {
+            "monday": [ 24, 5, 16, 18 ],
+            "tuesday": [ 23, 4, 15, 27 ],
+            "wednesday": [ 27, 8, 19, 23 ],
+            "thursday": [ 26, 7, 18, 22 ],
+            "saturday": [ 25, 6, 17, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 176,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1761486499/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ostinatorecords.bandcamp.com/album/abu-obaida-hassan-his-tambour-the-shaigiya-sound-of-sudan',
+          a_string: 'Abu Obaida Hassan &amp; His Tambour: The Shaigiya Sound of Sudan by Abu Obaida Hassan',
+          rule: {
+            "monday": [ 25, 6, 17, 21 ],
+            "tuesday": [ 24, 5, 16, 18 ],
+            "wednesday": [ 23, 4, 15, 27 ],
+            "thursday": [ 27, 8, 19, 23 ],
+            "saturday": [ 26, 7, 18, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 177,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1514440964/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bashiralgamar.bandcamp.com/album/bashir-al-gamar',
+          a_string: 'Bashir Al Gamar by Bashir Al Gamar',
+          rule: {
+            "monday": [ 26, 7, 18, 22 ],
+            "tuesday": [ 25, 6, 17, 21 ],
+            "wednesday": [ 24, 5, 16, 18 ],
+            "thursday": [ 23, 4, 15, 27 ],
+            "saturday": [ 27, 8, 19, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
