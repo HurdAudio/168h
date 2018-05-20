@@ -5904,6 +5904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 296,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/slant-1966.jpg',
+          title: 'Slant',
+          artist: 'Phillip King',
+          year: '1966',
+          rule: {
+            "monday": [ 20, 25, 1, 6 ],
+            "tuesday": [ 19, 24, 29, 5 ],
+            "wednesday": [ 18, 23, 29, 3 ],
+            "thursday": [ 17, 20, 27, 2 ],
+            "friday": [ 16, 20, 27, 2 ],
+            "saturday": [ 15, 20, 26, 1 ],
+            "sunday": [ 14, 19, 25, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 297,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/serial-project-set-b-1966.jpg',
+          title: 'Serial Project (Set B)',
+          artist: 'Sol LeWitt',
+          year: '1966',
+          rule: {
+            "monday": [ 14, 19, 25, 2 ],
+            "tuesday": [ 20, 25, 1, 6 ],
+            "wednesday": [ 19, 24, 29, 5 ],
+            "thursday": [ 18, 23, 29, 3 ],
+            "friday": [ 17, 20, 27, 2 ],
+            "saturday": [ 16, 20, 27, 2 ],
+            "sunday": [ 15, 20, 26, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 298,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/square-tubes-series-d-1967-1(1).jpg',
+          title: 'Square Tubes [Series D]',
+          artist: 'Charlotte Posenenske',
+          year: '1967',
+          rule: {
+            "monday": [ 15, 20, 26, 1 ],
+            "tuesday": [ 14, 19, 25, 2 ],
+            "wednesday": [ 20, 25, 1, 6 ],
+            "thursday": [ 19, 24, 29, 5 ],
+            "friday": [ 18, 23, 29, 3 ],
+            "saturday": [ 17, 20, 27, 2 ],
+            "sunday": [ 16, 20, 27, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 299,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/no-62-black-blue-violet-blue-1967.jpg',
+          title: 'No. 62 (Black/Blue/Violet/Blue)',
+          artist: 'Bob Law',
+          year: '1967',
+          rule: {
+            "monday": [ 16, 20, 27, 2 ],
+            "tuesday": [ 15, 20, 26, 1 ],
+            "wednesday": [ 14, 19, 25, 2 ],
+            "thursday": [ 20, 25, 1, 6 ],
+            "friday": [ 19, 24, 29, 5 ],
+            "saturday": [ 18, 23, 29, 3 ],
+            "sunday": [ 17, 20, 27, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 300,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/print-1-1967.jpg',
+          title: 'Print 1',
+          artist: 'Bernard Cohen',
+          year: '1967',
+          rule: {
+            "monday": [ 17, 20, 27, 2 ],
+            "tuesday": [ 16, 20, 27, 2 ],
+            "wednesday": [ 15, 20, 26, 1 ],
+            "thursday": [ 14, 19, 25, 2 ],
+            "friday": [ 20, 25, 1, 6 ],
+            "saturday": [ 19, 24, 29, 5 ],
+            "sunday": [ 18, 23, 29, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
