@@ -774,6 +774,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#C4C5C5',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 56,
+          user_id: 1,
+          theme: 'Ice',
+          type: 'sunday',
+          src_string: '../img/january_tiles/Antarctica-Ice.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '150%',
+          color_dark: '#0E284C',
+          color_medium: '#5CBAEE',
+          color_light: '#B7DFFD',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
