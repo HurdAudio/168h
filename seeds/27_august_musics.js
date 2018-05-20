@@ -3460,6 +3460,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 193,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=203560107/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://leavingrecords.bandcamp.com/album/m-geddes-gengras-ishi',
+          a_string: 'M Geddes Gengras - Ishi by M Geddes Gengras',
+          rule: {
+            "monday": [ 5, 13, 26, 25 ],
+            "tuesday": [ 9, 17, 30, 29 ],
+            "wednesday": [ 8, 16, 29, 28 ],
+            "thursday": [ 7, 15, 28, 27 ],
+            "saturday": [ 6, 14, 27, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 194,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1967349624/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://keithfullertonwhitman.bandcamp.com/album/nadra-phalanx',
+          a_string: 'Nadra Phalanx + by Keith Fullerton Whitman',
+          rule: {
+            "monday": [ 6, 14, 27, 26 ],
+            "tuesday": [ 5, 13, 26, 25 ],
+            "wednesday": [ 9, 17, 30, 29 ],
+            "thursday": [ 8, 16, 29, 28 ],
+            "saturday": [ 7, 15, 28, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 195,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2609324614/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://brettnaucke.bandcamp.com/album/seed-lp',
+          a_string: 'Seed LP by Brett Naucke',
+          rule: {
+            "monday": [ 7, 15, 28, 27 ],
+            "tuesday": [ 6, 14, 27, 26 ],
+            "wednesday": [ 5, 13, 26, 25 ],
+            "thursday": [ 9, 17, 30, 29 ],
+            "saturday": [ 8, 16, 29, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
