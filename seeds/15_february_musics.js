@@ -4108,6 +4108,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 229,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1298440127/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://fatbeatsrecords.bandcamp.com/album/never-come-down',
+          a_string: 'Never Come Down by Kooley High',
+          rule: {
+            "monday": [ 9, 13, 15, 17 ],
+            "tuesday": [ 21, 15, 17, 23 ],
+            "wednesday": [ 4, 9, 10, 23 ],
+            "thursday": [ 5, 9, 11, 15 ],
+            "saturday": [ 8, 11, 13, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 230,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=429818355/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://delandamplive.bandcamp.com/album/gate13',
+          a_string: 'Gate13 by Del &amp; Amp Live',
+          rule: {
+            "monday": [ 8, 11, 13, 17 ],
+            "tuesday": [ 9, 13, 15, 17 ],
+            "wednesday": [ 21, 15, 17, 23 ],
+            "thursday": [ 4, 9, 10, 23 ],
+            "saturday": [ 5, 9, 11, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 231,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=699533933/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://thesororityyz.bandcamp.com/album/pledge',
+          a_string: 'Pledge by The Sorority',
+          rule: {
+            "monday": [ 6, 10, 12, 16 ],
+            "tuesday": [ 9, 12, 14, 18 ],
+            "wednesday": [ 10, 14, 16, 18 ],
+            "thursday": [ 22, 16, 18, 24 ],
+            "saturday": [ 5, 10, 11, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
