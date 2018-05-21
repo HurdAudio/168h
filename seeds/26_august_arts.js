@@ -6504,6 +6504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 326,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/the-church-of-souain-in-sihlouette-1917.jpg',
+          title: 'The Church of Souain in Sihlouette',
+          artist: 'Felix Vallotton',
+          year: '1917',
+          rule: {
+            "monday": [ 14, 17, 26, 11 ],
+            "tuesday": [ 13, 16, 25, 10 ],
+            "wednesday": [ 19, 23, 31, 16 ],
+            "thursday": [ 18, 21, 30, 15 ],
+            "friday": [ 17, 21, 29, 14 ],
+            "saturday": [ 16, 20, 28, 13 ],
+            "sunday": [ 15, 17, 27, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 327,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/east-of-the-sun-and-west-of-the-moon-1914-1.jpg',
+          title: 'East of the Sun and West of the Moon',
+          artist: 'Kay Nielsen',
+          year: '1914',
+          rule: {
+            "monday": [ 15, 17, 27, 12 ],
+            "tuesday": [ 14, 17, 26, 11 ],
+            "wednesday": [ 13, 16, 25, 10 ],
+            "thursday": [ 19, 23, 31, 16 ],
+            "friday": [ 18, 21, 30, 15 ],
+            "saturday": [ 17, 21, 29, 14 ],
+            "sunday": [ 16, 20, 28, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 328,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/flower-basket-1915.jpg',
+          title: 'Flower Basket',
+          artist: 'Uemura Shoen',
+          year: '1915',
+          rule: {
+            "monday": [ 16, 20, 28, 13 ],
+            "tuesday": [ 15, 17, 27, 12 ],
+            "wednesday": [ 14, 17, 26, 11 ],
+            "thursday": [ 13, 16, 25, 10 ],
+            "friday": [ 19, 23, 31, 16 ],
+            "saturday": [ 18, 21, 30, 15 ],
+            "sunday": [ 17, 21, 29, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 329,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/schokko-with-red-hat-1909.jpg',
+          title: 'Schokko with Red Hat',
+          artist: 'Alexej von Jawlensky',
+          year: '1909',
+          rule: {
+            "monday": [ 18, 22, 30, 15 ],
+            "tuesday": [ 17, 21, 29, 14 ],
+            "wednesday": [ 16, 18, 28, 13 ],
+            "thursday": [ 15, 18, 27, 12 ],
+            "friday": [ 14, 17, 26, 11 ],
+            "saturday": [ 20, 24, 1, 17 ],
+            "sunday": [ 19, 22, 31, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 330,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/red-staff-1937.jpg',
+          title: 'Red Staff',
+          artist: 'Rudolf Bauer',
+          year: '1937',
+          rule: {
+            "monday": [ 19, 22, 31, 16 ],
+            "tuesday": [ 18, 22, 30, 15 ],
+            "wednesday": [ 17, 21, 29, 14 ],
+            "thursday": [ 16, 18, 28, 13 ],
+            "friday": [ 15, 18, 27, 12 ],
+            "saturday": [ 14, 17, 26, 11 ],
+            "sunday": [ 20, 24, 1, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
