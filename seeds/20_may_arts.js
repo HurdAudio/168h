@@ -7104,6 +7104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 356,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/a-river-bank-1947.jpg',
+          title: 'A River Bank',
+          artist: 'L. S. Lowry',
+          year: '1947',
+          rule: {
+            "monday": [ 13, 24, 3, 23 ],
+            "tuesday": [ 12, 23, 1, 11 ],
+            "wednesday": [ 10, 20, 30, 7 ],
+            "thursday": [ 8, 17, 29, 7 ],
+            "friday": [ 20, 30, 9, 17 ],
+            "saturday": [ 18, 29, 7, 17 ],
+            "sunday": [ 16, 26, 3, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 357,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/queen-s-dock-glasgow-1947.jpg',
+          title: 'Queen\'s Dock, Glasgow',
+          artist: 'L. S. Lowry',
+          year: '1947',
+          rule: {
+            "monday": [ 17, 27, 4, 16 ],
+            "tuesday": [ 14, 25, 4, 24 ],
+            "wednesday": [ 13, 24, 2, 12 ],
+            "thursday": [ 11, 21, 31, 8 ],
+            "friday": [ 9, 18, 30, 8 ],
+            "saturday": [ 21, 31, 10, 18 ],
+            "sunday": [ 19, 30, 8, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 358,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/millworkers-1948.jpg',
+          title: 'Millworkers',
+          artist: 'L. S. Lowry',
+          year: '1948',
+          rule: {
+            "monday": [ 19, 30, 8, 18 ],
+            "tuesday": [ 17, 27, 4, 16 ],
+            "wednesday": [ 14, 25, 4, 24 ],
+            "thursday": [ 13, 24, 2, 12 ],
+            "friday": [ 11, 21, 31, 8 ],
+            "saturday": [ 9, 18, 30, 8 ],
+            "sunday": [ 21, 31, 10, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 359,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/industrial-city-1948.jpg',
+          title: 'Industrial City',
+          artist: 'L. S. Lowry',
+          year: '1948',
+          rule: {
+            "monday": [ 21, 31, 10, 18 ],
+            "tuesday": [ 19, 30, 8, 18 ],
+            "wednesday": [ 17, 27, 4, 16 ],
+            "thursday": [ 14, 25, 4, 24 ],
+            "friday": [ 13, 24, 2, 12 ],
+            "saturday": [ 11, 21, 31, 8 ],
+            "sunday": [ 9, 18, 30, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 360,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/industrial-landscape-river-scene-1950.jpg',
+          title: 'Industrial Landscape, River Scene',
+          artist: 'L. S. Lowry',
+          year: '1950',
+          rule: {
+            "monday": [ 9, 18, 30, 8 ],
+            "tuesday": [ 21, 31, 10, 18 ],
+            "wednesday": [ 19, 30, 8, 18 ],
+            "thursday": [ 17, 27, 4, 16 ],
+            "friday": [ 14, 25, 4, 24 ],
+            "saturday": [ 13, 24, 2, 12 ],
+            "sunday": [ 11, 21, 31, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
