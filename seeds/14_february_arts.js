@@ -7704,6 +7704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 386,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/4fd06e4c-9e18-4810-98aa-9c5b9eacfdb3_570.jpeg',
+          title: 'Untitled',
+          artist: 'Walter Ellison',
+          year: '1937',
+          rule: {
+            "monday": [ 27, 7, 15, 23 ],
+            "tuesday": [ 4, 9, 15, 25 ],
+            "wednesday": [ 3, 11, 19, 27 ],
+            "thursday": [ 5, 15, 21, 27 ],
+            "friday": [ 7, 15, 23, 4 ],
+            "saturday": [ 7, 17, 13, 3 ],
+            "sunday": [ 26, 5, 13, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 387,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/minnie.evans3_.jpg',
+          title: 'Untitled (central portrait)',
+          artist: 'Minnie Evans',
+          year: '1946/1951/1968',
+          rule: {
+            "monday": [ 26, 5, 13, 21 ],
+            "tuesday": [ 27, 7, 15, 23 ],
+            "wednesday": [ 4, 9, 15, 25 ],
+            "thursday": [ 3, 11, 19, 27 ],
+            "friday": [ 5, 15, 21, 27 ],
+            "saturday": [ 7, 15, 23, 4 ],
+            "sunday": [ 7, 17, 13, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 388,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/Meta-Fuller-Emancipation-196x300.jpg',
+          title: 'Emancipation',
+          artist: 'Meta Vaux Warrick Fuller',
+          year: '1913',
+          rule: {
+            "monday": [ 7, 17, 13, 3 ],
+            "tuesday": [ 26, 5, 13, 21 ],
+            "wednesday": [ 27, 7, 15, 23 ],
+            "thursday": [ 4, 9, 15, 25 ],
+            "friday": [ 3, 11, 19, 27 ],
+            "saturday": [ 5, 15, 21, 27 ],
+            "sunday": [ 7, 15, 23, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 389,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/GALLA80360-web.jpg',
+          title: 'Aquajujidsu',
+          artist: 'Ellen Gallagher',
+          year: '2017',
+          rule: {
+            "monday": [ 7, 15, 23, 4 ],
+            "tuesday": [ 7, 17, 13, 3 ],
+            "wednesday": [ 26, 5, 13, 21 ],
+            "thursday": [ 27, 7, 15, 23 ],
+            "friday": [ 4, 9, 15, 25 ],
+            "saturday": [ 3, 11, 19, 27 ],
+            "sunday": [ 5, 15, 21, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 390,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/theaster-gates-migration-rickshaw.jpg',
+          title: 'Migration Rickshaw for Sleeping, Playing, and Building',
+          artist: 'Theaster Gates',
+          year: '2013',
+          rule: {
+            "monday": [ 5, 15, 21, 27 ],
+            "tuesday": [ 7, 15, 23, 4 ],
+            "wednesday": [ 7, 17, 13, 3 ],
+            "thursday": [ 26, 5, 13, 21 ],
+            "friday": [ 27, 7, 15, 23 ],
+            "saturday": [ 4, 9, 15, 25 ],
+            "sunday": [ 3, 11, 19, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
