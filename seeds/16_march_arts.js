@@ -7504,6 +7504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 376,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/the-siren.jpg',
+          title: 'The Siren',
+          artist: 'Greta Freist',
+          year: '?',
+          rule: {
+            "monday": [ 18, 28, 5, 15 ],
+            "tuesday": [ 17, 27, 5, 14 ],
+            "wednesday": [ 23, 1, 11, 19 ],
+            "thursday": [ 22, 1, 9, 19 ],
+            "friday": [ 22, 31, 8, 18 ],
+            "saturday": [ 20, 30, 7, 17 ],
+            "sunday": [ 19, 29, 6, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 377,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/angle-noir-1989.jpg',
+          title: 'Angle Noir',
+          artist: 'Aurelie Nemours',
+          year: '1989',
+          rule: {
+            "monday": [ 19, 29, 6, 16 ],
+            "tuesday": [ 18, 28, 5, 15 ],
+            "wednesday": [ 17, 27, 5, 14 ],
+            "thursday": [ 23, 1, 11, 19 ],
+            "friday": [ 22, 1, 9, 19 ],
+            "saturday": [ 22, 31, 8, 18 ],
+            "sunday": [ 20, 30, 7, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 378,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/drops-1961.jpg',
+          title: 'Drops',
+          artist: 'Agnes Martin',
+          year: '1961',
+          rule: {
+            "monday": [ 21, 31, 8, 18 ],
+            "tuesday": [ 20, 30, 7, 17 ],
+            "wednesday": [ 19, 29, 6, 16 ],
+            "thursday": [ 18, 28, 6, 15 ],
+            "friday": [ 24, 2, 12, 20 ],
+            "saturday": [ 23, 2, 10, 20 ],
+            "sunday": [ 23, 1, 9, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 379,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/untitled-1966-2.jpg',
+          title: 'Untitled',
+          artist: 'Gego',
+          year: '1966',
+          rule: {
+            "monday": [ 23, 1, 9, 19 ],
+            "tuesday": [ 21, 31, 8, 18 ],
+            "wednesday": [ 20, 30, 7, 17 ],
+            "thursday": [ 19, 29, 6, 16 ],
+            "friday": [ 18, 28, 6, 15 ],
+            "saturday": [ 24, 2, 12, 20 ],
+            "sunday": [ 23, 2, 10, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 380,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/spiral-nature-s-way-1971.jpg',
+          title: 'Spiral (Nature\'s Way)',
+          artist: 'Meret Oppenheim',
+          year: '1971',
+          rule: {
+            "monday": [ 23, 2, 10, 20 ],
+            "tuesday": [ 23, 1, 9, 19 ],
+            "wednesday": [ 21, 31, 8, 18 ],
+            "thursday": [ 20, 30, 7, 17 ],
+            "friday": [ 19, 29, 6, 16 ],
+            "saturday": [ 18, 28, 6, 15 ],
+            "sunday": [ 24, 2, 12, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
