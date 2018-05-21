@@ -3784,6 +3784,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 211,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4275370243/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://springbreaktapes.bandcamp.com/album/the-evening-hopefuls',
+          a_string: 'The Evening Hopefuls by Hainbach',
+          rule: {
+            "monday": [ 4, 11, 17, 30 ],
+            "tuesday": [ 3, 9, 16, 29 ],
+            "wednesday": [ 2, 8, 15, 28 ],
+            "thursday": [ 1, 7, 14, 27 ],
+            "saturday": [ 31, 6, 13, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 212,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3336927687/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://slowcraft.bandcamp.com/album/hidden-for-the-eyes',
+          a_string: 'Hidden for the Eyes by Alapastel',
+          rule: {
+            "monday": [ 31, 6, 13, 26 ],
+            "tuesday": [ 4, 11, 17, 30 ],
+            "wednesday": [ 3, 9, 16, 29 ],
+            "thursday": [ 2, 8, 15, 28 ],
+            "saturday": [ 1, 7, 14, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 213,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2829221749/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://poppy.bandcamp.com/album/resolve',
+          a_string: 'Resolve by Poppy Ackroyd',
+          rule: {
+            "monday": [ 1, 7, 14, 27 ],
+            "tuesday": [ 31, 6, 13, 26 ],
+            "wednesday": [ 4, 11, 17, 30 ],
+            "thursday": [ 3, 9, 16, 29 ],
+            "saturday": [ 2, 8, 15, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
