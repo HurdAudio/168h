@@ -3676,6 +3676,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 205,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1093677203/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://muzaneditions.bandcamp.com/album/liederbuch',
+          a_string: 'Liederbuch by Günter Schlienz',
+          rule: {
+            "monday": [ 28, 2, 7, 19 ],
+            "tuesday": [ 28, 1, 7, 18 ],
+            "wednesday": [ 26, 4, 6, 17 ],
+            "thursday": [ 30, 4, 10, 21 ],
+            "saturday": [ 29, 2, 7, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 206,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3396160897/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://muzaneditions.bandcamp.com/album/elegy',
+          a_string: 'Elegy by H. Takahashi',
+          rule: {
+            "monday": [ 29, 2, 7, 19 ],
+            "tuesday": [ 28, 2, 7, 19 ],
+            "wednesday": [ 28, 1, 7, 18 ],
+            "thursday": [ 26, 4, 6, 17 ],
+            "saturday": [ 30, 4, 10, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 207,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1309080454/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://muzaneditions.bandcamp.com/album/the-are-no-endings',
+          a_string: 'The Are No Endings by April Larson',
+          rule: {
+            "monday": [ 30, 4, 10, 21 ],
+            "tuesday": [ 29, 2, 7, 19 ],
+            "wednesday": [ 28, 2, 7, 19 ],
+            "thursday": [ 28, 1, 7, 18 ],
+            "saturday": [ 26, 4, 6, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
