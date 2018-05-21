@@ -7904,6 +7904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 396,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/voix-du-jura-n-3296-2008.jpg',
+          title: 'Voix du Jura n°3296',
+          artist: 'Jean-Francois Dubreuil',
+          year: '2008',
+          rule: {
+            "monday": [ 9, 11, 12, 13 ],
+            "tuesday": [ 25, 26, 6, 29 ],
+            "wednesday": [ 28, 30, 22, 11 ],
+            "thursday": [ 2, 31, 23, 26 ],
+            "friday": [ 2, 3, 25, 29 ],
+            "saturday": [ 5, 7, 8, 10 ],
+            "sunday": [ 7, 9, 13, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 397,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/composition-26.jpg',
+          title: 'Composition 26',
+          artist: 'Stefan Sevastre',
+          year: '?',
+          rule: {
+            "monday": [ 7, 9, 13, 16 ],
+            "tuesday": [ 9, 11, 12, 13 ],
+            "wednesday": [ 25, 26, 6, 29 ],
+            "thursday": [ 28, 30, 22, 11 ],
+            "friday": [ 2, 31, 23, 26 ],
+            "saturday": [ 2, 3, 25, 29 ],
+            "sunday": [ 5, 7, 8, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 398,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/season-s-greeting-card-1968.jpg',
+          title: '[Season\'s greeting card]',
+          artist: 'Friedrich Vordemberge-Gildewart',
+          year: '1968',
+          rule: {
+            "monday": [ 5, 7, 8, 10 ],
+            "tuesday": [ 7, 9, 13, 16 ],
+            "wednesday": [ 9, 11, 12, 13 ],
+            "thursday": [ 25, 26, 6, 29 ],
+            "friday": [ 28, 30, 22, 11 ],
+            "saturday": [ 2, 31, 23, 26 ],
+            "sunday": [ 2, 3, 25, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 399,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/six-open-forms-1971.jpg',
+          title: 'Six Open Forms',
+          artist: 'William Scott',
+          year: '1971',
+          rule: {
+            "monday": [ 3, 4, 26, 30 ],
+            "tuesday": [ 6, 8, 9, 11 ],
+            "wednesday": [ 8, 10, 14, 17 ],
+            "thursday": [ 10, 12, 13, 14 ],
+            "friday": [ 26, 27, 7, 30 ],
+            "saturday": [ 29, 31, 23, 12 ],
+            "sunday": [ 3, 1, 24, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 400,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/atmosph-re-chromoplastique-n-109-1963.jpg',
+          title: 'Atmosphère chromoplastique N° 109',
+          artist: 'Luis Tomasello',
+          year: '1963',
+          rule: {
+            "monday": [ 3, 1, 24, 27 ],
+            "tuesday": [ 3, 4, 26, 30 ],
+            "wednesday": [ 6, 8, 9, 11 ],
+            "thursday": [ 8, 10, 14, 17 ],
+            "friday": [ 10, 12, 13, 14 ],
+            "saturday": [ 26, 27, 7, 30 ],
+            "sunday": [ 29, 31, 23, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
