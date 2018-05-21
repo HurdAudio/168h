@@ -168,6 +168,8 @@ const music_share_reactions = require('./routes/music_share_reactions.js');
 const music_share_reactionsbyuser = require('./routes/music_share_reactionsbyuser.js');
 const tile_share_reactions = require('./routes/tile_share_reactions.js');
 const tile_share_reactionsbyuser = require('./routes/tile_share_reactionsbyuser.js');
+const timeblock_share_comment_reactions = require('./routes/timeblock_share_comment_reactions.js');
+const timeblock_share_comment_reactionsbyuser = require('./routes/timeblock_share_comment_reactionsbyuser.js');
 
 const port = process.env.PORT || 3007;
 
@@ -336,6 +338,8 @@ app.use(fileUpload());
  app.use('/music_share_reactionsbyuser', music_share_reactionsbyuser);
  app.use('/tile_share_reactions', tile_share_reactions);
  app.use('/tile_share_reactionsbyuser', tile_share_reactionsbyuser);
+ app.use('/timeblock_share_comment_reactions', timeblock_share_comment_reactions);
+ app.use('/timeblock_share_comment_reactionsbyuser', timeblock_share_comment_reactionsbyuser);
 
 app.get('/onthisdayinhistory/:date', (req, res, next) =>{
   let newUrl = 'http://history.muffinlabs.com/date/';
