@@ -4000,6 +4000,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 223,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=550432153/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://courtneybarnett.bandcamp.com/album/tell-me-how-you-really-feel',
+          a_string: 'Tell Me How You Really Feel by courtney barnett',
+          rule: {
+            "monday": [ 1, 7, 13, 21 ],
+            "tuesday": [ 5, 11, 17, 25 ],
+            "wednesday": [ 4, 10, 16, 24 ],
+            "thursday": [ 3, 9, 15, 24 ],
+            "saturday": [ 1, 8, 14, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 224,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=190883348/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://witchprophet.bandcamp.com/album/the-golden-octave',
+          a_string: 'The Golden Octave by Witch Prophet',
+          rule: {
+            "monday": [ 2, 9, 15, 23 ],
+            "tuesday": [ 2, 8, 14, 22 ],
+            "wednesday": [ 6, 12, 18, 26 ],
+            "thursday": [ 5, 11, 17, 25 ],
+            "saturday": [ 4, 10, 16, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 225,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1791534101/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://africaseven.bandcamp.com/album/mothers-garden-the-funky-sounds-of-female-africa-1975-1984',
+          a_string: 'Mothers Garden (The Funky Sounds Of Female Africa 1975 - 1984) by Various Artists',
+          rule: {
+            "monday": [ 4, 10, 16, 25 ],
+            "tuesday": [ 2, 9, 15, 23 ],
+            "wednesday": [ 2, 8, 14, 22 ],
+            "thursday": [ 6, 12, 18, 26 ],
+            "saturday": [ 5, 11, 17, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
