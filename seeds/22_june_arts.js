@@ -6904,6 +6904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 346,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/barn+logs.jpg',
+          title: 'Barn Logs',
+          artist: 'Alison Francis',
+          year: '?',
+          rule: {
+            "monday": [ 13, 23, 3, 11 ],
+            "tuesday": [ 19, 29, 9, 15 ],
+            "wednesday": [ 18, 28, 8, 16 ],
+            "thursday": [ 17, 27, 7, 15 ],
+            "friday": [ 16, 26, 6, 14 ],
+            "saturday": [ 25, 5, 15, 13 ],
+            "sunday": [ 14, 24, 4, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 347,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/October+Skies#3.jpg',
+          title: 'October Skies #3',
+          artist: 'Alison Francis',
+          year: '?',
+          rule: {
+            "monday": [ 14, 24, 4, 12 ],
+            "tuesday": [ 13, 23, 3, 11 ],
+            "wednesday": [ 19, 29, 9, 15 ],
+            "thursday": [ 18, 28, 8, 16 ],
+            "friday": [ 17, 27, 7, 15 ],
+            "saturday": [ 16, 26, 6, 14 ],
+            "sunday": [ 25, 5, 15, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 348,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/barndoordetail-edit.jpg',
+          title: 'Barn Door Detail',
+          artist: 'Alison Francis',
+          year: '?',
+          rule: {
+            "monday": [ 25, 5, 15, 13 ],
+            "tuesday": [ 14, 24, 4, 12 ],
+            "wednesday": [ 13, 23, 3, 11 ],
+            "thursday": [ 19, 29, 9, 15 ],
+            "friday": [ 18, 28, 8, 16 ],
+            "saturday": [ 17, 27, 7, 15 ],
+            "sunday": [ 16, 26, 6, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 349,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/tree.jpg',
+          title: 'Tree',
+          artist: 'Aleah Michele',
+          year: '2017',
+          rule: {
+            "monday": [ 16, 26, 6, 14 ],
+            "tuesday": [ 25, 5, 15, 13 ],
+            "wednesday": [ 14, 24, 4, 12 ],
+            "thursday": [ 13, 23, 3, 11 ],
+            "friday": [ 19, 29, 9, 15 ],
+            "saturday": [ 18, 28, 8, 16 ],
+            "sunday": [ 17, 27, 7, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 350,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/boy.jpg',
+          title: 'Boy',
+          artist: 'Aleah Michele',
+          year: '2017',
+          rule: {
+            "monday": [ 18, 28, 8, 16 ],
+            "tuesday": [ 17, 27, 7, 15 ],
+            "wednesday": [ 26, 6, 16, 14 ],
+            "thursday": [ 15, 25, 5, 13 ],
+            "friday": [ 14, 24, 4, 12 ],
+            "saturday": [ 20, 30, 10, 16 ],
+            "sunday": [ 19, 29, 9, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
