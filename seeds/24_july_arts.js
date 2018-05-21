@@ -6704,6 +6704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 336,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/small-brunette-bather-1884.jpg',
+          title: 'Small Brunette Bather',
+          artist: 'Henri Fantin-Latour',
+          year: '1884',
+          rule: {
+            "monday": [ 17, 29, 9, 20 ],
+            "tuesday": [ 17, 28, 8, 9 ],
+            "wednesday": [ 16, 27, 6, 8 ],
+            "thursday": [ 15, 26, 6, 7 ],
+            "friday": [ 14, 25, 5, 16 ],
+            "saturday": [ 20, 31, 11, 21 ],
+            "sunday": [ 19, 30, 10, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 337,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/idylle-1890.jpg',
+          title: 'Idylle',
+          artist: 'Leon Bonnat',
+          year: '1890',
+          rule: {
+            "monday": [ 19, 30, 10, 21 ],
+            "tuesday": [ 17, 29, 9, 20 ],
+            "wednesday": [ 17, 28, 8, 9 ],
+            "thursday": [ 16, 27, 6, 8 ],
+            "friday": [ 15, 26, 6, 7 ],
+            "saturday": [ 14, 25, 5, 16 ],
+            "sunday": [ 20, 31, 11, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 338,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/the-admiring-glance-1868.jpg',
+          title: 'The Admiring Glance',
+          artist: 'Auguste Toulmouche',
+          year: '1868',
+          rule: {
+            "monday": [ 20, 31, 11, 21 ],
+            "tuesday": [ 19, 30, 10, 21 ],
+            "wednesday": [ 17, 29, 9, 20 ],
+            "thursday": [ 17, 28, 8, 9 ],
+            "friday": [ 16, 27, 6, 8 ],
+            "saturday": [ 15, 26, 6, 7 ],
+            "sunday": [ 14, 25, 5, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 339,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/the-chimera-1867-1.jpg',
+          title: 'The Chimera',
+          artist: 'Gustave Moreau',
+          year: '1867',
+          rule: {
+            "monday": [ 14, 25, 5, 16 ],
+            "tuesday": [ 20, 31, 11, 21 ],
+            "wednesday": [ 19, 30, 10, 21 ],
+            "thursday": [ 17, 29, 9, 20 ],
+            "friday": [ 17, 28, 8, 9 ],
+            "saturday": [ 16, 27, 6, 8 ],
+            "sunday": [ 15, 26, 6, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 340,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/the-terrace-of-the-chateau-de-st-germain.jpg',
+          title: 'The terrace of the Chateau de St. Germain',
+          artist: 'Adolphe Joseph Thomas Monticelli',
+          year: '?',
+          rule: {
+            "monday": [ 15, 26, 6, 7 ],
+            "tuesday": [ 14, 25, 5, 16 ],
+            "wednesday": [ 20, 31, 11, 21 ],
+            "thursday": [ 19, 30, 10, 21 ],
+            "friday": [ 17, 29, 9, 20 ],
+            "saturday": [ 17, 28, 8, 9 ],
+            "sunday": [ 16, 27, 6, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
