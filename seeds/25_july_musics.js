@@ -3568,6 +3568,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 199,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1633164646/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://maitrimusic.bandcamp.com/album/after-glow',
+          a_string: 'AFTER GLOW by Maitri',
+          rule: {
+            "monday": [ 26, 28, 1, 9 ],
+            "tuesday": [ 30, 1, 5, 13 ],
+            "wednesday": [ 29, 31, 4, 12 ],
+            "thursday": [ 28, 30, 3, 11 ],
+            "saturday": [ 27, 28, 2, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 200,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2619640816/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://necromonkey.bandcamp.com/album/a-glimpse-of-possible-endings',
+          a_string: 'A Glimpse Of Possible Endings by Necromonkey',
+          rule: {
+            "monday": [ 27, 28, 2, 10 ],
+            "tuesday": [ 26, 28, 1, 9 ],
+            "wednesday": [ 30, 1, 5, 13 ],
+            "thursday": [ 29, 31, 4, 12 ],
+            "saturday": [ 28, 30, 3, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 201,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3740133466/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cloudbecomesyourhand.bandcamp.com/album/cloud-becomes-your-hand',
+          a_string: 'cloud becomes your hand by cloud becomes your hand',
+          rule: {
+            "monday": [ 28, 30, 3, 11 ],
+            "tuesday": [ 27, 28, 2, 10 ],
+            "wednesday": [ 26, 28, 1, 9 ],
+            "thursday": [ 30, 1, 5, 13 ],
+            "saturday": [ 29, 31, 4, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
