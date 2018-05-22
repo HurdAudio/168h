@@ -4562,7 +4562,7 @@ exports.seed = function(knex, Promise) {
           name: 'Iannis Xenakis (architect/composer/anarchist), born 1922',
           color: '#E2E9F2',
           picture: './img/musicians/iannisxenakis.jpg',
-          day_of: new Date ('1922-05-22T13:44:00.000Z'),
+          day_of: new Date ('1922-05-29T13:44:00.000Z'),
           is_annual: true,
           art_override: false,
           music_override: true,
