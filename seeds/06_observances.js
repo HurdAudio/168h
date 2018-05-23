@@ -9962,6 +9962,34 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 638,
+          user_id: 1,
+          name: 'Christopher Hitchens (author/columnist/social critic) born 1949',
+          color: '#BBB6B0',
+          picture: './img/dissent/HITCHENS-obit-popup.jpg',
+          day_of: new Date ('1949-04-13T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 639,
+          user_id: 1,
+          name: 'The world ended on this very day in 2015 according to the razor-sharp prophecy of eBible Fellowship.',
+          color: '#FAE25E',
+          picture: './img/doomsday/ebible.jpg',
+          day_of: new Date ('2015-10-07T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
