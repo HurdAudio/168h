@@ -14717,6 +14717,81 @@
 
       }
 
+      function getTaskShareUserAndPicture(userId, context, index) {
+        $http.get(`/users/${userId}`)
+        .then(theUserData=>{
+          let theUser = theUserData.data;
+          vm.activeTaskShares[index].task_pic = theUser.user_avatar_url;
+          if (context === 'tasker') {
+            vm.activeTaskShares[index].sharerName = theUser.name;
+          } else {
+            vm.activeTaskShares[index].shareeName = theUser.name;
+          }
+        });
+      }
+
+      function getTaskShareTaskDetails(taskId, index) {
+        $http.get(`/tasks/${taskId}`)
+        .then(theTaskData=>{
+          let theTask = theTaskData.data;
+          vm.activeTaskShares[index].taskName = theTask.name;
+          vm.activeTaskShares[index].taskUserNotes = theTask.user_notes;
+          vm.activeTaskShares[index].dueDate = 'Due on ' + cleanDateHoliday(theTask.due_date);
+          if (theTask.is_completed) {
+            vm.activeTaskShares[index].completionStatus = 'Task is marked as completed on ' + cleanDateHoliday(theTask.completed_date);
+          } else {
+            vm.activeTaskShares[index].completionStatus = 'Task is not yet completed.';
+          }
+        });
+      }
+
+      function retrieveUserTaskShares() {
+        let aDate;
+        let bDate;
+        let cDate;
+
+        $http.get(`/task_shares`)
+        .then(allTaskSharesData=>{
+          let allTaskShares = allTaskSharesData.data;
+          console.log(allTaskShares);
+          let userTaskShares = allTaskShares.filter(tsk=>{
+            return((parseInt(tsk.share_associate_id) === parseInt(currentUserId)) || (parseInt(tsk.user_id) === parseInt(currentUserId)));
+          });
+          console.log(userTaskShares);
+          userTaskShares = userTaskShares.sort((a, b)=>{
+            aDate = new Date(a.created_at);
+            bDate = new Date(b.created_at);
+            return(aDate.getDate() - bDate.getDate());
+          });
+          if (userTaskShares.length > 0) {
+            vm.activeTaskShares = [];
+            for (let i = 0; i < userTaskShares.length; i++) {
+              vm.activeTaskShares[i] = {};
+              if (userTaskShares[i].share_associate_id !== currentUserId) {
+                getTaskShareUserAndPicture(userTaskShares[i].user_id, 'tasker', i);
+              } else {
+                getTaskShareUserAndPicture(userTaskShares[i].share_associate_id, 'taskee', i);
+              }
+              cDate = new Date(userTaskShares[i].created_at);
+              vm.activeTaskShares[i].cleanDate =  cleanDateHoliday(userTaskShares[i].created_at) + ' at ' +  cDate.toLocaleTimeString('en-GB');
+              getTaskShareTaskDetails(userTaskShares[i].task_id, i);
+              vm.activeTaskShares[i].id = userTaskShares[i].id;
+            }
+            setTimeout(()=>{
+              for (let j = 0; j < userTaskShares.length; j++) {
+                if (userTaskShares[j].share_associate_id !== currentUserId) {
+                  document.getElementById('taskSharer' + vm.activeTaskShares[j].id).setAttribute("style", "display: initial;");
+                  document.getElementById('taskSharee' + vm.activeTaskShares[j].id).setAttribute("style", "display: none;");
+                } else {
+                  document.getElementById('taskSharer' + vm.activeTaskShares[j].id).setAttribute("style", "display: none;");
+                  document.getElementById('taskSharee' + vm.activeTaskShares[j].id).setAttribute("style", "display: initial;");
+                }
+              }
+            }, (userTaskShares.length * 50));
+          }
+        });
+      }
+
 
 
 
@@ -14762,6 +14837,7 @@
             retrieveUserAppointments();
             retrieveUserHolidayShares();
             retrieveUserOccasionShares();
+            retrieveUserTaskShares();
           });
         }
 

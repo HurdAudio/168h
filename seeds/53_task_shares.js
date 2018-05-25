@@ -7,7 +7,7 @@ exports.seed = function(knex, Promise) {
       return knex('task_shares').insert([
         {
           id: 1,
-          user_id: 1,
+          user_id: 2,
           task_id: 1,
           share_associate_id: 1,
           accepted: false,
