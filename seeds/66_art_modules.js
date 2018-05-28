@@ -1564,6 +1564,66 @@ exports.seed = function(knex, Promise) {
           public: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 131,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/Siberian-cat-768x502.jpg',
+          title: 'Humans have loved cats for a long time',
+          artist: 'Johannes Eisele',
+          year: '?',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 132,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/Maine-coon-2.png',
+          title: 'A Maine Coon, just like Nicky and Little Nicky',
+          artist: 'unknown artist',
+          year: '?',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 133,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/Birman-cats-768x516.jpg',
+          title: 'These fluffy white cats resemble Snowball',
+          artist: 'Jack Guez',
+          year: '?',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 134,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/oscar-therapy-cat.jpg',
+          title: 'This cat comforted those who needed it most',
+          artist: 'unknown artist',
+          year: '?',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 135,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/stubbs-mayor-cat-e1505491719968-768x638.jpg',
+          title: 'The town had enough of typical politicians',
+          artist: 'unknown artist',
+          year: '?',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
