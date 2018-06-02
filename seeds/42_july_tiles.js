@@ -704,6 +704,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#D8D4D5',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 51,
+          user_id: 1,
+          theme: 'Steam',
+          type: 'sunday',
+          src_string: '../img/july_tiles/ke-atlas-475464-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '150%',
+          color_dark: '#010101',
+          color_medium: '#BBF7FD',
+          color_light: '#FFFFFD',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
