@@ -774,6 +774,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#D4D0C9',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 56,
+          user_id: 1,
+          theme: 'Silk/Velvet',
+          type: 'sunday',
+          src_string: '../img/february_tiles/prince-abid-640396-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '135%',
+          color_dark: '#0C0B11',
+          color_medium: '#EA2654',
+          color_light: '#FCF4AB',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
