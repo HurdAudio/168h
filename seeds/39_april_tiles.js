@@ -746,6 +746,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FBFBFB',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 54,
+          user_id: 1,
+          theme: 'Water',
+          type: 'friday',
+          src_string: '../img/april_tiles/jong-marshes-458354-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '135%',
+          color_dark: '#020E1A',
+          color_medium: '#43A0C1',
+          color_light: '#C6D8D4',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
