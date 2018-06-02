@@ -690,6 +690,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FFFFFF',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 50,
+          user_id: 1,
+          theme: 'Primary Colors',
+          type: 'saturday',
+          src_string: '../img/august_tiles/chris-barbalis-580629-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '145%',
+          color_dark: '#28221F',
+          color_medium: '#D0983F',
+          color_light: '#D4C3B9',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
