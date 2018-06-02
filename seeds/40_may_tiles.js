@@ -732,6 +732,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#E5E4DF',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 53,
+          user_id: 1,
+          theme: 'Greenery',
+          type: 'week',
+          src_string: '../img/may_tiles/nina-rumbines-87900-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '150%',
+          color_dark: '#252827',
+          color_medium: '#005F1B',
+          color_light: '#BBFF26',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
