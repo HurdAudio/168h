@@ -648,6 +648,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FFFBE8',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 47,
+          user_id: 1,
+          theme: 'Monochromatic',
+          type: 'holiday',
+          src_string: '../img/november_tiles/daniel-spase-572387-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '153%',
+          color_dark: '#202020',
+          color_medium: '#55534F',
+          color_light: '#CCC7C4',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
