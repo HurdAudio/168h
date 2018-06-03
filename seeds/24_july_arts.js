@@ -6804,6 +6804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 341,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/the-amorous-dancers.jpg',
+          title: 'The Amorous Dancers',
+          artist: 'Gustave Boulanger',
+          year: '?',
+          rule: {
+            "monday": [ 16, 27, 6, 8 ],
+            "tuesday": [ 15, 26, 6, 7 ],
+            "wednesday": [ 14, 25, 5, 16 ],
+            "thursday": [ 20, 31, 11, 21 ],
+            "friday": [ 19, 30, 10, 21 ],
+            "saturday": [ 17, 29, 9, 20 ],
+            "sunday": [ 17, 28, 8, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 342,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/the-return-from-the-mill-1870.jpg',
+          title: 'The Return from the Mill',
+          artist: 'Rosa Bonheur',
+          year: '1870',
+          rule: {
+            "monday": [ 17, 28, 8, 9 ],
+            "tuesday": [ 16, 27, 6, 8 ],
+            "wednesday": [ 15, 26, 6, 7 ],
+            "thursday": [ 14, 25, 5, 16 ],
+            "friday": [ 20, 31, 11, 21 ],
+            "saturday": [ 19, 30, 10, 21 ],
+            "sunday": [ 17, 29, 9, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 343,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/portrait-of-a-spanish-lady-1855.jpg',
+          title: 'Portrait of a Spanish Lady',
+          artist: 'Gustave Courbet',
+          year: '1855',
+          rule: {
+            "monday": [ 18, 30, 10, 21 ],
+            "tuesday": [ 18, 29, 9, 10 ],
+            "wednesday": [ 17, 28, 7, 9 ],
+            "thursday": [ 16, 27, 7, 8 ],
+            "friday": [ 15, 26, 6, 17 ],
+            "saturday": [ 21, 1, 12, 22 ],
+            "sunday": [ 20, 31, 11, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 344,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/the-end-of-the-game-of-cards-1870.jpg',
+          title: 'The End of the Game of Cards',
+          artist: 'Ernest Meissonier',
+          year: '1970',
+          rule: {
+            "monday": [ 20, 31, 11, 22 ],
+            "tuesday": [ 18, 30, 10, 21 ],
+            "wednesday": [ 18, 29, 9, 10 ],
+            "thursday": [ 17, 28, 7, 9 ],
+            "friday": [ 16, 27, 7, 8 ],
+            "saturday": [ 15, 26, 6, 17 ],
+            "sunday": [ 21, 1, 12, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 345,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/the-old-forest-1870.jpg',
+          title: 'The Old Forest',
+          artist: 'Charles Jacque',
+          year: '1870',
+          rule: {
+            "monday": [ 21, 1, 12, 22 ],
+            "tuesday": [ 20, 31, 11, 22 ],
+            "wednesday": [ 18, 30, 10, 21 ],
+            "thursday": [ 18, 29, 9, 10 ],
+            "friday": [ 17, 28, 7, 9 ],
+            "saturday": [ 16, 27, 7, 8 ],
+            "sunday": [ 15, 26, 6, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
