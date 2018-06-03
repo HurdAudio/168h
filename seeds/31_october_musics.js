@@ -3298,6 +3298,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 184,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3982772932/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://peachkellipop.bandcamp.com/album/gentle-leader-2',
+          a_string: 'Gentle Leader by Peach Kelli Pop',
+          rule: {
+            "monday": [ 1, 11, 22, 24 ],
+            "tuesday": [ 31, 10, 21, 23 ],
+            "wednesday": [ 4, 14, 24, 27 ],
+            "thursday": [ 3, 13, 23, 26 ],
+            "saturday": [ 2, 12, 22, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 185,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3712237853/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://lavidaesunmus.bandcamp.com/album/what-do-you-stand-for-lp',
+          a_string: 'What do you Stand for? LP by S.H.I.T.',
+          rule: {
+            "monday": [ 2, 12, 22, 25 ],
+            "tuesday": [ 1, 11, 22, 24 ],
+            "wednesday": [ 31, 10, 21, 23 ],
+            "thursday": [ 4, 14, 24, 27 ],
+            "saturday": [ 3, 13, 23, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 186,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3618923078/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://wharfcatrecords.bandcamp.com/album/the-weight-of-the-world-leaves-a-broken-back',
+          a_string: 'The Weight of the World Leaves a Broken Back by Decisions',
+          rule: {
+            "monday": [ 3, 13, 23, 26 ],
+            "tuesday": [ 2, 12, 22, 25 ],
+            "wednesday": [ 1, 11, 22, 24 ],
+            "thursday": [ 31, 10, 21, 23 ],
+            "saturday": [ 4, 14, 24, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
