@@ -3946,6 +3946,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 220,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=863352611/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://joearmon-jones.bandcamp.com/album/starting-today',
+          a_string: 'Starting Today by Joe Armon-Jones',
+          rule: {
+            "monday": [ 3, 11, 23, 28 ],
+            "tuesday": [ 2, 10, 22, 27 ],
+            "wednesday": [ 1, 9, 21, 26 ],
+            "thursday": [ 5, 13, 25, 30 ],
+            "saturday": [ 4, 12, 24, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 221,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=531781330/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://anthonypirog.bandcamp.com/album/duo',
+          a_string: 'Duo by Anthony Pirog/Emre Kartari',
+          rule: {
+            "monday": [ 4, 12, 24, 29 ],
+            "tuesday": [ 3, 11, 23, 28 ],
+            "wednesday": [ 2, 10, 22, 27 ],
+            "thursday": [ 1, 9, 21, 26 ],
+            "saturday": [ 5, 13, 25, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 222,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1554656875/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://destination-out.bandcamp.com/album/corona',
+          a_string: 'Corona by CECIL TAYLOR &amp; SUNNY MURRAY',
+          rule: {
+            "monday": [ 5, 13, 25, 30 ],
+            "tuesday": [ 4, 12, 24, 29 ],
+            "wednesday": [ 3, 11, 23, 28 ],
+            "thursday": [ 2, 10, 22, 27 ],
+            "saturday": [ 1, 9, 21, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
