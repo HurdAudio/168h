@@ -7604,6 +7604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 381,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/amarillo-1971.jpg',
+          title: 'Amarillo',
+          artist: 'Carmen Herrera',
+          year: '1971',
+          rule: {
+            "monday": [ 24, 2, 12, 20 ],
+            "tuesday": [ 23, 2, 10, 20 ],
+            "wednesday": [ 23, 1, 9, 19 ],
+            "thursday": [ 21, 31, 8, 18 ],
+            "friday": [ 20, 30, 7, 17 ],
+            "saturday": [ 19, 29, 6, 16 ],
+            "sunday": [ 18, 28, 6, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 382,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/swans-1966.jpg',
+          title: 'Swans',
+          artist: 'Tetyana Yablonska',
+          year: '1966',
+          rule: {
+            "monday": [ 18, 28, 6, 15 ],
+            "tuesday": [ 24, 2, 12, 20 ],
+            "wednesday": [ 23, 2, 10, 20 ],
+            "thursday": [ 23, 1, 9, 19 ],
+            "friday": [ 21, 31, 8, 18 ],
+            "saturday": [ 20, 30, 7, 17 ],
+            "sunday": [ 19, 29, 6, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 383,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/aerial-series-ploughed-fields-maryland-1974.jpg',
+          title: 'Aerial Series - Ploughed Fields, Maryland',
+          artist: 'Jane Frank',
+          year: '1974',
+          rule: {
+            "monday": [ 19, 29, 6, 16 ],
+            "tuesday": [ 18, 28, 6, 15 ],
+            "wednesday": [ 24, 2, 12, 20 ],
+            "thursday": [ 23, 2, 10, 20 ],
+            "friday": [ 23, 1, 9, 19 ],
+            "saturday": [ 21, 31, 8, 18 ],
+            "sunday": [ 20, 30, 7, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 384,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/obliquement-un-peu-1987.jpg',
+          title: 'Obliquement un peu',
+          artist: 'Huguette Arthur Bertrand',
+          year: '1987',
+          rule: {
+            "monday": [ 20, 30, 7, 17 ],
+            "tuesday": [ 19, 29, 6, 16 ],
+            "wednesday": [ 18, 28, 6, 15 ],
+            "thursday": [ 24, 2, 12, 20 ],
+            "friday": [ 23, 2, 10, 20 ],
+            "saturday": [ 23, 1, 9, 19 ],
+            "sunday": [ 21, 31, 8, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 385,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/first-1961.jpg',
+          title: 'First',
+          artist: 'Anne Truitt',
+          year: '1961',
+          rule: {
+            "monday": [ 22, 1, 9, 19 ],
+            "tuesday": [ 21, 31, 8, 18 ],
+            "wednesday": [ 20, 30, 7, 17 ],
+            "thursday": [ 19, 29, 7, 16 ],
+            "friday": [ 25, 3, 13, 21 ],
+            "saturday": [ 24, 3, 11, 21 ],
+            "sunday": [ 24, 2, 10, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
