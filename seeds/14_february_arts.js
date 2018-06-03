@@ -7804,6 +7804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 391,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/reginaldlee.jpeg',
+          title: 'Dedicated to Harold Washington Mayor of Chicago, IL, USA, 1999',
+          artist: 'Reginald K Gee',
+          year: '1999',
+          rule: {
+            "monday": [ 3, 11, 19, 27 ],
+            "tuesday": [ 5, 15, 21, 27 ],
+            "wednesday": [ 7, 15, 23, 4 ],
+            "thursday": [ 7, 17, 13, 3 ],
+            "friday": [ 26, 5, 13, 21 ],
+            "saturday": [ 27, 7, 15, 23 ],
+            "sunday": [ 4, 9, 15, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 392,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/Gentry_The_Tree_lo_res9.jpg',
+          title: 'The Tree',
+          artist: 'Herbert Gentry',
+          year: '1992',
+          rule: {
+            "monday": [ 5, 10, 16, 26 ],
+            "tuesday": [ 4, 12, 20, 28 ],
+            "wednesday": [ 6, 16, 22, 28 ],
+            "thursday": [ 8, 16, 24, 5 ],
+            "friday": [ 8, 18, 14, 4 ],
+            "saturday": [ 27, 6, 14, 22 ],
+            "sunday": [ 28, 8, 16, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 393,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/gilda01.jpg',
+          title: 'Flutes',
+          artist: 'Wilda Gerideau-Squires',
+          year: '2011',
+          rule: {
+            "monday": [ 28, 8, 16, 24 ],
+            "tuesday": [ 5, 10, 16, 26 ],
+            "wednesday": [ 4, 12, 20, 28 ],
+            "thursday": [ 6, 16, 22, 28 ],
+            "friday": [ 8, 16, 24, 5 ],
+            "saturday": [ 8, 18, 14, 4 ],
+            "sunday": [ 27, 6, 14, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 394,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/gilbert_phantom_and_west_side_oil_24x36_1000pixels.jpg',
+          title: 'Phantom and West Side Oil',
+          artist: 'Robert A. Gilbert',
+          year: '?',
+          rule: {
+            "monday": [ 27, 6, 14, 22 ],
+            "tuesday": [ 28, 8, 16, 24 ],
+            "wednesday": [ 5, 10, 16, 26 ],
+            "thursday": [ 4, 12, 20, 28 ],
+            "friday": [ 6, 16, 22, 28 ],
+            "saturday": [ 8, 16, 24, 5 ],
+            "sunday": [ 8, 18, 14, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 395,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/Gilliam-Swann-2456-147-669x1024.jpg',
+          title: 'Not Spinning',
+          artist: 'Sam Gilliam',
+          year: '2000 - 2004',
+          rule: {
+            "monday": [ 8, 18, 14, 4 ],
+            "tuesday": [ 27, 6, 14, 22 ],
+            "wednesday": [ 28, 8, 16, 24 ],
+            "thursday": [ 5, 10, 16, 26 ],
+            "friday": [ 4, 12, 20, 28 ],
+            "saturday": [ 6, 16, 22, 28 ],
+            "sunday": [ 8, 16, 24, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
