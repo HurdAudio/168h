@@ -4270,6 +4270,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 238,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1036596058/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://robertblackbass.bandcamp.com/album/possessed',
+          a_string: 'Possessed by Robert Black',
+          rule: {
+            "monday": [ 12, 18, 19, 21 ],
+            "tuesday": [ 11, 18, 19, 20 ],
+            "wednesday": [ 10, 16, 17, 18 ],
+            "thursday": [ 9, 16, 17, 18 ],
+            "saturday": [ 13, 20, 21, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 239,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2767539101/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://oliveros.bandcamp.com/album/alien-bog-beautiful-soop',
+          a_string: 'Alien Bog/Beautiful Soop by Pauline Oliveros',
+          rule: {
+            "monday": [ 13, 20, 21, 22 ],
+            "tuesday": [ 12, 18, 19, 21 ],
+            "wednesday": [ 11, 18, 19, 20 ],
+            "thursday": [ 10, 16, 17, 18 ],
+            "saturday": [ 9, 16, 17, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 240,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2690630852/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://oliveros.bandcamp.com/album/no-mo',
+          a_string: 'No Mo by Pauline Oliveros',
+          rule: {
+            "monday": [ 9, 16, 17, 18 ],
+            "tuesday": [ 13, 20, 21, 22 ],
+            "wednesday": [ 12, 18, 19, 21 ],
+            "thursday": [ 11, 18, 19, 20 ],
+            "saturday": [ 10, 16, 17, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
