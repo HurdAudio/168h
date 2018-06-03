@@ -7204,6 +7204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 361,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/industrial-landscape-ashton-under-lyne-1952.jpg',
+          title: 'Industrial Landscape, Ashton Under Lyne',
+          artist: 'L. S. Lowry',
+          year: '1952',
+          rule: {
+            "monday": [ 11, 21, 31, 8 ],
+            "tuesday": [ 9, 18, 30, 8 ],
+            "wednesday": [ 21, 31, 10, 18 ],
+            "thursday": [ 19, 30, 8, 18 ],
+            "friday": [ 17, 27, 4, 16 ],
+            "saturday": [ 14, 25, 4, 24 ],
+            "sunday": [ 13, 24, 2, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 362,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/industrial-panorama-1953.jpg',
+          title: 'Industrial Panorama',
+          artist: 'L. S. Lowry',
+          year: '1953',
+          rule: {
+            "monday": [ 13, 24, 2, 12 ],
+            "tuesday": [ 11, 21, 31, 8 ],
+            "wednesday": [ 9, 18, 30, 8 ],
+            "thursday": [ 21, 31, 10, 18 ],
+            "friday": [ 19, 30, 8, 18 ],
+            "saturday": [ 17, 27, 4, 16 ],
+            "sunday": [ 14, 25, 4, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 363,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/industrial-landscape-1953.jpg',
+          title: 'Industrial Landscape',
+          artist: 'L. S. Lowry',
+          year: '1953',
+          rule: {
+            "monday": [ 14, 25, 4, 24 ],
+            "tuesday": [ 13, 24, 2, 12 ],
+            "wednesday": [ 11, 21, 31, 8 ],
+            "thursday": [ 9, 18, 30, 8 ],
+            "friday": [ 21, 31, 10, 18 ],
+            "saturday": [ 19, 30, 8, 18 ],
+            "sunday": [ 17, 27, 4, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 364,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/canal-and-factories-1955.jpg',
+          title: 'Canal and Factories',
+          artist: 'L. S. Lowry',
+          year: '1955',
+          rule: {
+            "monday": [ 18, 28, 5, 17 ],
+            "tuesday": [ 15, 26, 5, 25 ],
+            "wednesday": [ 14, 25, 3, 13 ],
+            "thursday": [ 12, 22, 1, 9 ],
+            "friday": [ 10, 19, 31, 9 ],
+            "saturday": [ 22, 1, 11, 19 ],
+            "sunday": [ 20, 31, 9, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 365,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/industrial-landscape-1955.jpg',
+          title: 'Industrial Landscape',
+          artist: 'L. S. Lowry',
+          year: '1955',
+          rule: {
+            "monday": [ 20, 31, 9, 19 ],
+            "tuesday": [ 18, 28, 5, 17 ],
+            "wednesday": [ 15, 26, 5, 25 ],
+            "thursday": [ 14, 25, 3, 13 ],
+            "friday": [ 12, 22, 1, 9 ],
+            "saturday": [ 10, 19, 31, 9 ],
+            "sunday": [ 22, 1, 11, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
