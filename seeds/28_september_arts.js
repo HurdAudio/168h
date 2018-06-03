@@ -6404,6 +6404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 321,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/umea-sweden-1979.jpg',
+          title: 'Umea, Sweden',
+          artist: 'Terry Frost',
+          year: '1979',
+          rule: {
+            "monday": [ 14, 20, 8, 16 ],
+            "tuesday": [ 13, 19, 7, 16 ],
+            "wednesday": [ 2, 18, 6, 14 ],
+            "thursday": [ 10, 17, 5, 12 ],
+            "friday": [ 17, 23, 11, 19 ],
+            "saturday": [ 16, 22, 10, 18 ],
+            "sunday": [ 15, 21, 9, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 322,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/the-rolling-general-1971.jpg',
+          title: 'The Rolling General',
+          artist: 'Enrico Baj',
+          year: '1971',
+          rule: {
+            "monday": [ 16, 22, 10, 18 ],
+            "tuesday": [ 15, 21, 9, 17 ],
+            "wednesday": [ 14, 20, 8, 17 ],
+            "thursday": [ 3, 19, 7, 15 ],
+            "friday": [ 11, 18, 6, 13 ],
+            "saturday": [ 18, 24, 12, 20 ],
+            "sunday": [ 17, 23, 11, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 323,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/my-mona-lisa-1972.jpg',
+          title: 'My Mona Lisa',
+          artist: 'Ivan Generalic',
+          year: '1972',
+          rule: {
+            "monday": [ 17, 23, 11, 19 ],
+            "tuesday": [ 16, 22, 10, 18 ],
+            "wednesday": [ 15, 21, 9, 17 ],
+            "thursday": [ 14, 20, 8, 17 ],
+            "friday": [ 3, 19, 7, 15 ],
+            "saturday": [ 11, 18, 6, 13 ],
+            "sunday": [ 18, 24, 12, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 324,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/a-kiss-from-johnny-mccall-s-magazine-illustration-1952.jpg',
+          title: 'A Kiss From Johnny, McCall’s Magazine illustration',
+          artist: 'Robert G. Harris',
+          year: '1952',
+          rule: {
+            "monday": [ 18, 24, 12, 20 ],
+            "tuesday": [ 17, 23, 11, 19 ],
+            "wednesday": [ 16, 22, 10, 18 ],
+            "thursday": [ 15, 21, 9, 17 ],
+            "friday": [ 14, 20, 8, 17 ],
+            "saturday": [ 3, 19, 7, 15 ],
+            "sunday": [ 11, 18, 6, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 325,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/keep-it-spotless-defaced-hirst-2007.jpg',
+          title: 'Keep It Spotless (Defaced Hirst)',
+          artist: 'Banksy',
+          year: '2007',
+          rule: {
+            "monday": [ 11, 18, 6, 13 ],
+            "tuesday": [ 18, 24, 12, 20 ],
+            "wednesday": [ 17, 23, 11, 19 ],
+            "thursday": [ 16, 22, 10, 18 ],
+            "friday": [ 15, 21, 9, 17 ],
+            "saturday": [ 14, 20, 8, 17 ],
+            "sunday": [ 3, 19, 7, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
