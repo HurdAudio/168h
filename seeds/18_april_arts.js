@@ -7404,6 +7404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 371,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/clipart-baseball-15-j-baseball-clip-art-free-printable-clipart-images-2.jpg',
+          title: 'Unique Clipart Baseball Design',
+          artist: 'clipartix',
+          year: '?',
+          rule: {
+            "monday": [ 7, 27, 3, 9 ],
+            "tuesday": [ 22, 25, 3, 9 ],
+            "wednesday": [ 21, 25, 10, 8 ],
+            "thursday": [ 19, 24, 30, 6 ],
+            "friday": [ 19, 24, 30, 6 ],
+            "saturday": [ 18, 23, 29, 5 ],
+            "sunday": [ 23, 29, 4, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 372,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/albert_pujols_mvp_baseball_art_by_esportsart.jpg',
+          title: 'Albert Pujols MVP',
+          artist: 'esportsart',
+          year: '?',
+          rule: {
+            "monday": [ 23, 29, 4, 11 ],
+            "tuesday": [ 7, 27, 3, 9 ],
+            "wednesday": [ 22, 25, 3, 9 ],
+            "thursday": [ 21, 25, 10, 8 ],
+            "friday": [ 19, 24, 30, 6 ],
+            "saturday": [ 19, 24, 30, 6 ],
+            "sunday": [ 18, 23, 29, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 373,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/baseball_poster_by_bigrdesign-d3b77m4.jpg',
+          title: 'Baseball Poster',
+          artist: 'Ryan Shaffer',
+          year: '2011',
+          rule: {
+            "monday": [ 18, 23, 29, 5 ],
+            "tuesday": [ 23, 29, 4, 11 ],
+            "wednesday": [ 7, 27, 3, 9 ],
+            "thursday": [ 22, 25, 3, 9 ],
+            "friday": [ 21, 25, 10, 8 ],
+            "saturday": [ 19, 24, 30, 6 ],
+            "sunday": [ 19, 24, 30, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 374,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/baseball___tilt_shift_by_zantaff-d332xml.jpg',
+          title: 'Baseball - tilt shift',
+          artist: 'Buehler',
+          year: '2011',
+          rule: {
+            "monday": [ 19, 24, 30, 6 ],
+            "tuesday": [ 18, 23, 29, 5 ],
+            "wednesday": [ 23, 29, 4, 11 ],
+            "thursday": [ 7, 27, 3, 9 ],
+            "friday": [ 22, 25, 3, 9 ],
+            "saturday": [ 21, 25, 10, 8 ],
+            "sunday": [ 19, 24, 30, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 375,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/softball_by_superdino.jpg',
+          title: 'Softball',
+          artist: 'Steph',
+          year: '2009',
+          rule: {
+            "monday": [ 19, 24, 30, 6 ],
+            "tuesday": [ 19, 24, 30, 6 ],
+            "wednesday": [ 18, 23, 29, 5 ],
+            "thursday": [ 23, 29, 4, 11 ],
+            "friday": [ 7, 27, 3, 9 ],
+            "saturday": [ 22, 25, 3, 9 ],
+            "sunday": [ 21, 25, 10, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
