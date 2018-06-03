@@ -6604,6 +6604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 331,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/gypsy-with-a-guitar-1921.jpg',
+          title: 'Gypsy with a Guitar',
+          artist: 'Eugeniusz Zak',
+          year: '1921',
+          rule: {
+            "monday": [ 20, 24, 1, 17 ],
+            "tuesday": [ 19, 22, 31, 16 ],
+            "wednesday": [ 18, 22, 30, 15 ],
+            "thursday": [ 17, 21, 29, 14 ],
+            "friday": [ 16, 18, 28, 13 ],
+            "saturday": [ 15, 18, 27, 12 ],
+            "sunday": [ 14, 17, 26, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 332,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/huge-landscape-mask-1938.jpg',
+          title: 'Huge Landscape Mask',
+          artist: 'Vajda Lajos',
+          year: '1938',
+          rule: {
+            "monday": [ 14, 17, 26, 11 ],
+            "tuesday": [ 20, 24, 1, 17 ],
+            "wednesday": [ 19, 22, 31, 16 ],
+            "thursday": [ 18, 22, 30, 15 ],
+            "friday": [ 17, 21, 29, 14 ],
+            "saturday": [ 16, 18, 28, 13 ],
+            "sunday": [ 15, 18, 27, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 333,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/le-voile-persan-1909.jpg',
+          title: 'Le voile Persan',
+          artist: 'John Duncan Fergusson',
+          year: '1909',
+          rule: {
+            "monday": [ 15, 18, 27, 12 ],
+            "tuesday": [ 14, 17, 26, 11 ],
+            "wednesday": [ 20, 24, 1, 17 ],
+            "thursday": [ 19, 22, 31, 16 ],
+            "friday": [ 18, 22, 30, 15 ],
+            "saturday": [ 17, 21, 29, 14 ],
+            "sunday": [ 16, 18, 28, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 334,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/chaos-1906.jpg',
+          title: 'Chaos',
+          artist: 'Kuzma Petrov-Vodkin',
+          year: '1906',
+          rule: {
+            "monday": [ 16, 18, 28, 13 ],
+            "tuesday": [ 15, 18, 27, 12 ],
+            "wednesday": [ 14, 17, 26, 11 ],
+            "thursday": [ 20, 24, 1, 17 ],
+            "friday": [ 19, 22, 31, 16 ],
+            "saturday": [ 18, 22, 30, 15 ],
+            "sunday": [ 17, 21, 29, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 335,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/the-black-mask-1908.jpg',
+          title: 'The Black Mask',
+          artist: 'Lovis Corinth',
+          year: '1908',
+          rule: {
+            "monday": [ 17, 21, 29, 14 ],
+            "tuesday": [ 16, 18, 28, 13 ],
+            "wednesday": [ 15, 18, 27, 12 ],
+            "thursday": [ 14, 17, 26, 11 ],
+            "friday": [ 20, 24, 1, 17 ],
+            "saturday": [ 19, 22, 31, 16 ],
+            "sunday": [ 18, 22, 30, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
