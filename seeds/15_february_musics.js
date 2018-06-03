@@ -4162,6 +4162,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 232,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2589299565/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://fatbeatsrecords.bandcamp.com/album/fear-of-a-brown-planet',
+          a_string: 'Fear Of A Brown Planet by Brownout',
+          rule: {
+            "monday": [ 5, 10, 11, 24 ],
+            "tuesday": [ 6, 10, 12, 16 ],
+            "wednesday": [ 9, 12, 14, 18 ],
+            "thursday": [ 10, 14, 16, 18 ],
+            "saturday": [ 22, 16, 18, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 233,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=129509118/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://leftofcenter.bandcamp.com/album/theraputic',
+          a_string: 'Theraputic by A Minus &amp; Chanes',
+          rule: {
+            "monday": [ 22, 16, 18, 24 ],
+            "tuesday": [ 5, 10, 11, 24 ],
+            "wednesday": [ 6, 10, 12, 16 ],
+            "thursday": [ 9, 12, 14, 18 ],
+            "saturday": [ 10, 14, 16, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 234,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=399468470/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://elaquent.bandcamp.com/album/bakers-dozen-elaquent',
+          a_string: 'Baker&#39;s Dozen: Elaquent by Elaquent',
+          rule: {
+            "monday": [ 10, 14, 16, 18 ],
+            "tuesday": [ 22, 16, 18, 24 ],
+            "wednesday": [ 5, 10, 11, 24 ],
+            "thursday": [ 6, 10, 12, 16 ],
+            "saturday": [ 9, 12, 14, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
