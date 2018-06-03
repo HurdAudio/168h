@@ -4054,6 +4054,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 226,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=654121247/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://alexdrewchin.bandcamp.com/album/irisiri',
+          a_string: 'IRISIRI by Eartheater',
+          rule: {
+            "monday": [ 5, 11, 17, 25 ],
+            "tuesday": [ 4, 10, 16, 25 ],
+            "wednesday": [ 2, 9, 15, 23 ],
+            "thursday": [ 2, 8, 14, 22 ],
+            "saturday": [ 6, 12, 18, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 227,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3768340399/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://marylattimoreharpist.bandcamp.com/album/hundreds-of-days',
+          a_string: 'Hundreds of Days by Mary Lattimore',
+          rule: {
+            "monday": [ 6, 12, 18, 26 ],
+            "tuesday": [ 5, 11, 17, 25 ],
+            "wednesday": [ 4, 10, 16, 25 ],
+            "thursday": [ 2, 9, 15, 23 ],
+            "saturday": [ 2, 8, 14, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 228,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3315783497/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jennyhval.bandcamp.com/album/the-long-sleep-ep',
+          a_string: 'The Long Sleep EP by Jenny Hval',
+          rule: {
+            "monday": [ 2, 8, 14, 22 ],
+            "tuesday": [ 6, 12, 18, 26 ],
+            "wednesday": [ 5, 11, 17, 25 ],
+            "thursday": [ 4, 10, 16, 25 ],
+            "saturday": [ 2, 9, 15, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
