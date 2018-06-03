@@ -3622,6 +3622,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 202,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1639912580/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://agentbla.bandcamp.com/album/medium-rare',
+          a_string: 'Medium Rare by Agent Blå',
+          rule: {
+            "monday": [ 29, 31, 4, 12 ],
+            "tuesday": [ 28, 30, 3, 11 ],
+            "wednesday": [ 27, 28, 2, 10 ],
+            "thursday": [ 26, 28, 1, 9 ],
+            "saturday": [ 30, 1, 5, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 203,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=967142206/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://evernever-records.bandcamp.com/album/proper-release',
+          a_string: 'Proper Release by Patois Counselors',
+          rule: {
+            "monday": [ 31, 2, 6, 14 ],
+            "tuesday": [ 30, 1, 5, 13 ],
+            "wednesday": [ 29, 31, 4, 12 ],
+            "thursday": [ 28, 29, 3, 11 ],
+            "saturday": [ 27, 29, 2, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 204,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=288507213/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://woodenshjips.bandcamp.com/album/v',
+          a_string: 'V. by Wooden Shjips',
+          rule: {
+            "monday": [ 27, 29, 2, 10 ],
+            "tuesday": [ 31, 2, 6, 14 ],
+            "wednesday": [ 30, 1, 5, 13 ],
+            "thursday": [ 29, 31, 4, 12 ],
+            "saturday": [ 28, 29, 3, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
