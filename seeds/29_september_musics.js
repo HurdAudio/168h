@@ -3406,6 +3406,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 190,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1050746289/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jackotheclock.bandcamp.com/album/repetitions-of-the-old-city-ii',
+          a_string: 'Repetitions of the Old City - II by Jack O&#39; The Clock',
+          rule: {
+            "monday": [ 29, 19, 27, 22 ],
+            "tuesday": [ 28, 18, 26, 20 ],
+            "wednesday": [ 27, 17, 25, 19 ],
+            "thursday": [ 1, 21, 29, 23 ],
+            "saturday": [ 30, 20, 28, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 191,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1820255621/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://skingraftrecords.bandcamp.com/album/fades',
+          a_string: 'Fades by Cheer-Accident',
+          rule: {
+            "monday": [ 30, 20, 28, 22 ],
+            "tuesday": [ 29, 19, 27, 22 ],
+            "wednesday": [ 28, 18, 26, 20 ],
+            "thursday": [ 27, 17, 25, 19 ],
+            "saturday": [ 1, 21, 29, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 192,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4262861211/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cuneiformrecords.bandcamp.com/album/edit-peptide',
+          a_string: 'Edit Peptide by Bubblemath',
+          rule: {
+            "monday": [ 1, 21, 29, 23 ],
+            "tuesday": [ 30, 20, 28, 22 ],
+            "wednesday": [ 29, 19, 27, 22 ],
+            "thursday": [ 28, 18, 26, 20 ],
+            "saturday": [ 27, 17, 25, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
