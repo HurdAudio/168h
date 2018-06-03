@@ -3730,6 +3730,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 208,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=784018938/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://shimmeringmoodsrecords.bandcamp.com/album/the-turn-of-the-screw',
+          a_string: 'The turn of the screw by Boban Ristevski',
+          rule: {
+            "monday": [ 26, 4, 6, 17 ],
+            "tuesday": [ 30, 4, 10, 21 ],
+            "wednesday": [ 29, 2, 7, 19 ],
+            "thursday": [ 28, 2, 7, 19 ],
+            "saturday": [ 28, 1, 7, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 209,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1360884465/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://lichens-are-alive.bandcamp.com/album/the-psychic-nature-of-being',
+          a_string: 'The Psychic Nature Of Being by Lichens',
+          rule: {
+            "monday": [ 28, 1, 7, 18 ],
+            "tuesday": [ 26, 4, 6, 17 ],
+            "wednesday": [ 30, 4, 10, 21 ],
+            "thursday": [ 29, 2, 7, 19 ],
+            "saturday": [ 28, 2, 7, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 210,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1880505340/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://hallowground.bandcamp.com/album/kali-malone-cast-of-mind',
+          a_string: 'KALI MALONE - Cast of Mind by Kali Malone',
+          rule: {
+            "monday": [ 29, 3, 8, 20 ],
+            "tuesday": [ 29, 2, 8, 19 ],
+            "wednesday": [ 27, 5, 7, 18 ],
+            "thursday": [ 1, 5, 11, 22 ],
+            "saturday": [ 30, 3, 8, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
