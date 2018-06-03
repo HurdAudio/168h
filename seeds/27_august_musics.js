@@ -3514,6 +3514,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 196,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2707105826/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://rsteviemoore.bandcamp.com/album/4-from-phonography',
+          a_string: '4 from &quot;Phonography&quot; by R. STEVIE MOORE',
+          rule: {
+            "monday": [ 9, 17, 30, 29 ],
+            "tuesday": [ 8, 16, 29, 28 ],
+            "wednesday": [ 7, 15, 28, 27 ],
+            "thursday": [ 6, 14, 27, 26 ],
+            "saturday": [ 10, 18, 31, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 197,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1380952966/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://fraternityasvanity.bandcamp.com/album/in-the-eyes-of-violence-iris-lies-in-silks',
+          a_string: 'In the Eyes of Violence Iris Lies in Silks by V/A',
+          rule: {
+            "monday": [ 10, 18, 31, 30 ],
+            "tuesday": [ 9, 17, 30, 29 ],
+            "wednesday": [ 8, 16, 29, 28 ],
+            "thursday": [ 7, 15, 28, 27 ],
+            "saturday": [ 6, 14, 27, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 198,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3483903408/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cgirecords.bandcamp.com/album/trench-foot',
+          a_string: 'Trench Foot by Grey People',
+          rule: {
+            "monday": [ 6, 14, 27, 26 ],
+            "tuesday": [ 10, 18, 31, 30 ],
+            "wednesday": [ 9, 17, 30, 29 ],
+            "thursday": [ 8, 16, 29, 28 ],
+            "saturday": [ 7, 15, 28, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
