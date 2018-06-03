@@ -7004,6 +7004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 351,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/2-copy.jpg',
+          title: 'unknown title',
+          artist: 'Jamaica Wedding Photography',
+          year: '2017',
+          rule: {
+            "monday": [ 19, 29, 9, 17 ],
+            "tuesday": [ 18, 28, 8, 16 ],
+            "wednesday": [ 17, 27, 7, 15 ],
+            "thursday": [ 26, 6, 16, 14 ],
+            "friday": [ 15, 25, 5, 13 ],
+            "saturday": [ 14, 24, 4, 12 ],
+            "sunday": [ 20, 30, 10, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 352,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/DSC_4977.jpg',
+          title: 'unknown title',
+          artist: 'Jamaican Wedding Photography',
+          year: '2017',
+          rule: {
+            "monday": [ 20, 30, 10, 16 ],
+            "tuesday": [ 19, 29, 9, 17 ],
+            "wednesday": [ 18, 28, 8, 16 ],
+            "thursday": [ 17, 27, 7, 15 ],
+            "friday": [ 26, 6, 16, 14 ],
+            "saturday": [ 15, 25, 5, 13 ],
+            "sunday": [ 14, 24, 4, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 353,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/basic-photographic-composition-01-620x348.jpg',
+          title: 'unknown title',
+          artist: 'Dylan Goldby',
+          year: '2018',
+          rule: {
+            "monday": [ 14, 24, 4, 12 ],
+            "tuesday": [ 20, 30, 10, 16 ],
+            "wednesday": [ 19, 29, 9, 17 ],
+            "thursday": [ 18, 28, 8, 16 ],
+            "friday": [ 17, 27, 7, 15 ],
+            "saturday": [ 26, 6, 16, 14 ],
+            "sunday": [ 15, 25, 5, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 354,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/truckinfield.png',
+          title: 'End of the Road',
+          artist: 'Kyle Wilson',
+          year: '?',
+          rule: {
+            "monday": [ 15, 25, 5, 13 ],
+            "tuesday": [ 14, 24, 4, 12 ],
+            "wednesday": [ 20, 30, 10, 16 ],
+            "thursday": [ 19, 29, 9, 17 ],
+            "friday": [ 18, 28, 8, 16 ],
+            "saturday": [ 17, 27, 7, 15 ],
+            "sunday": [ 26, 6, 16, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 355,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/WomanwithPipe480X320.jpg',
+          title: 'Woman with Pipe',
+          artist: 'Dana Gluckstein',
+          year: '1981',
+          rule: {
+            "monday": [ 26, 6, 16, 14 ],
+            "tuesday": [ 15, 25, 5, 13 ],
+            "wednesday": [ 14, 24, 4, 12 ],
+            "thursday": [ 20, 30, 10, 16 ],
+            "friday": [ 19, 29, 9, 17 ],
+            "saturday": [ 18, 28, 8, 16 ],
+            "sunday": [ 17, 27, 7, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
