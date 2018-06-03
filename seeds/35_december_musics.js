@@ -3082,6 +3082,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 172,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2603368333/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://madaboutrecordslabel.bandcamp.com/album/erlon-chaves-procura-se-uma-virgem-for-sale-in-august',
+          a_string: 'Erlon Chaves &quot;Procura-se uma Virgem&quot; (for sale in August) by Erlon Chaves',
+          rule: {
+            "monday": [ 31, 6, 12, 18 ],
+            "tuesday": [ 30, 5, 11, 16 ],
+            "wednesday": [ 27, 4, 10, 16 ],
+            "thursday": [ 26, 3, 9, 15 ],
+            "saturday": [ 27, 2, 8, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 173,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=83326288/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://nervosa-brazil.bandcamp.com/album/downfall-of-mankind',
+          a_string: 'Downfall Of Mankind by Nervosa',
+          rule: {
+            "monday": [ 27, 2, 8, 14 ],
+            "tuesday": [ 31, 6, 12, 18 ],
+            "wednesday": [ 30, 5, 11, 16 ],
+            "thursday": [ 27, 4, 10, 16 ],
+            "saturday": [ 26, 3, 9, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 174,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2337727748/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://firefriend.bandcamp.com/album/yellow-spider',
+          a_string: 'Yellow Spider by Firefriend',
+          rule: {
+            "monday": [ 26, 3, 9, 15 ],
+            "tuesday": [ 27, 2, 8, 14 ],
+            "wednesday": [ 31, 6, 12, 18 ],
+            "thursday": [ 30, 5, 11, 16 ],
+            "saturday": [ 27, 4, 10, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
