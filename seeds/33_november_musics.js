@@ -3190,6 +3190,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 178,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=643718792/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://professorrhythm.bandcamp.com/album/professor-3',
+          a_string: 'Professor 3 by Professor Rhythm',
+          rule: {
+            "monday": [ 27, 8, 19, 23 ],
+            "tuesday": [ 26, 7, 18, 22 ],
+            "wednesday": [ 25, 6, 17, 21 ],
+            "thursday": [ 24, 5, 16, 18 ],
+            "saturday": [ 23, 4, 15, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 179,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3765249079/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://maalemmahmoudgania.bandcamp.com/album/colours-of-the-night',
+          a_string: 'Colours of the Night by Maalem Mahmoud Gania',
+          rule: {
+            "monday": [ 23, 4, 15, 27 ],
+            "tuesday": [ 27, 8, 19, 23 ],
+            "wednesday": [ 26, 7, 18, 22 ],
+            "thursday": [ 25, 6, 17, 21 ],
+            "saturday": [ 24, 5, 16, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 180,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4259399763/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://majidbekkas.bandcamp.com/album/african-gnaoua-blues',
+          a_string: 'African Gnaoua Blues by MAJID BEKKAS',
+          rule: {
+            "monday": [ 24, 5, 16, 18 ],
+            "tuesday": [ 23, 4, 15, 27 ],
+            "wednesday": [ 27, 8, 19, 23 ],
+            "thursday": [ 26, 7, 18, 22 ],
+            "saturday": [ 25, 6, 17, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
