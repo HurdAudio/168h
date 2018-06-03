@@ -8004,6 +8004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 401,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/to-draw-on-1977.jpg',
+          title: 'To Draw On',
+          artist: 'Denise Green',
+          year: '1977',
+          rule: {
+            "monday": [ 29, 31, 23, 12 ],
+            "tuesday": [ 3, 1, 24, 27 ],
+            "wednesday": [ 3, 4, 26, 30 ],
+            "thursday": [ 6, 8, 9, 11 ],
+            "friday": [ 8, 10, 14, 17 ],
+            "saturday": [ 10, 12, 13, 14 ],
+            "sunday": [ 26, 27, 7, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 402,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/red-rain-1967.jpg',
+          title: 'Red Rain',
+          artist: 'Forrest Bess',
+          year: '1967',
+          rule: {
+            "monday": [ 26, 27, 7, 30 ],
+            "tuesday": [ 29, 31, 23, 12 ],
+            "wednesday": [ 3, 1, 24, 27 ],
+            "thursday": [ 3, 4, 26, 30 ],
+            "friday": [ 6, 8, 9, 11 ],
+            "saturday": [ 8, 10, 14, 17 ],
+            "sunday": [ 10, 12, 13, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 403,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/connection-1978.jpg',
+          title: 'Connection',
+          artist: 'Miriam Schapiro',
+          year: '1978',
+          rule: {
+            "monday": [ 10, 12, 13, 14 ],
+            "tuesday": [ 26, 27, 7, 30 ],
+            "wednesday": [ 29, 31, 23, 12 ],
+            "thursday": [ 3, 1, 24, 27 ],
+            "friday": [ 3, 4, 26, 30 ],
+            "saturday": [ 6, 8, 9, 11 ],
+            "sunday": [ 8, 10, 14, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 404,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/karin-1976.jpg',
+          title: 'Karin',
+          artist: 'Kazuo Shiraga',
+          year: '1976',
+          rule: {
+            "monday": [ 8, 10, 14, 17 ],
+            "tuesday": [ 10, 12, 13, 14 ],
+            "wednesday": [ 26, 27, 7, 30 ],
+            "thursday": [ 29, 31, 23, 12 ],
+            "friday": [ 3, 1, 24, 27 ],
+            "saturday": [ 3, 4, 26, 30 ],
+            "sunday": [ 6, 8, 9, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 405,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/painting-1974.jpg',
+          title: 'Painting',
+          artist: 'Roberto Aizenberg',
+          year: '1974',
+          rule: {
+            "monday": [ 6, 8, 9, 11 ],
+            "tuesday": [ 8, 10, 14, 17 ],
+            "wednesday": [ 10, 12, 13, 14 ],
+            "thursday": [ 26, 27, 7, 30 ],
+            "friday": [ 29, 31, 23, 12 ],
+            "saturday": [ 3, 1, 24, 27 ],
+            "sunday": [ 3, 4, 26, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
