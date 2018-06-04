@@ -9990,6 +9990,34 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 640,
+          user_id: 1,
+          name: 'Jean-Jacques Rousseau (composer/writer/philosopher) born 1712',
+          color: '#453825',
+          picture: './img/musicians/jean-jacques-rousseau-9465453-1-402.jpg',
+          day_of: new Date ('1712-06-28T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 641,
+          user_id: 1,
+          name: 'The world ended on this day in 2015 when a "mile-wide" asteroid struck the Earth as predicted by Lyn Leahz.',
+          color: '#000000',
+          picture: './img/doomsday/22000b545d70a4d24fdec643e7190c4e--end-times-prophecy-news-update.jpg',
+          day_of: new Date ('2015-09-23T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
