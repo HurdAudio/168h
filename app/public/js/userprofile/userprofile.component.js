@@ -255,6 +255,49 @@
       vm.userHolidayShareCommentDeleteConfirmClick = userHolidayShareCommentDeleteConfirmClick;
       vm.shareHolidayWithFriend = shareHolidayWithFriend;
       vm.cancelHolidayInvite = cancelHolidayInvite;
+      vm.userEditOccasionShareComment = userEditOccasionShareComment;
+      vm.userEditOccasionShareCommentCompleted = userEditOccasionShareCommentCompleted;
+
+      function userEditOccasionShareCommentCompleted(commentId) {
+        let thisIsTheOccasionShareCommentEditor = document.getElementById('thisIsTheOccasionShareCommentEditor' + commentId);
+        let thisIsOccasionShareCommentEditDoneDiv = document.getElementById('thisIsOccasionShareCommentEditDoneDiv' + commentId);
+        let thisIsOccasionShareComment = document.getElementById('thisIsOccasionShareComment' + commentId);
+        let editDeleteOccasionShareCommentDiv = document.getElementById('editDeleteOccasionShareCommentDiv' + commentId);
+        let subObj = {
+          comment: thisIsTheOccasionShareCommentEditor.value
+        };
+
+        $http.patch(`/occasions_share_comments/${commentId}`, subObj)
+        .then(editedData=>{
+          let edited = editedData.data;
+          thisIsTheOccasionShareCommentEditor.setAttribute("style", "display: none;");
+          thisIsOccasionShareCommentEditDoneDiv.setAttribute("style", "display: none;");
+          thisIsOccasionShareComment.innerHTML = edited.comment;
+          thisIsOccasionShareComment.setAttribute("style", "visibility: visible;");
+          editDeleteOccasionShareCommentDiv.setAttribute("style", "display: initial;");
+
+        });
+
+      }
+
+      function userEditOccasionShareComment(commentId) {
+        let thisIsTheOccasionShareCommentEditor = document.getElementById('thisIsTheOccasionShareCommentEditor' + commentId);
+        let thisIsOccasionShareCommentEditDoneDiv = document.getElementById('thisIsOccasionShareCommentEditDoneDiv' + commentId);
+        let thisIsOccasionShareComment = document.getElementById('thisIsOccasionShareComment' + commentId);
+        let editDeleteOccasionShareCommentDiv = document.getElementById('editDeleteOccasionShareCommentDiv' + commentId);
+
+        $http.get(`/occasions_share_comments/${commentId}`)
+        .then(commentData=>{
+          let comment = commentData.data;
+          thisIsTheOccasionShareCommentEditor.setAttribute("style", "display: initial;");
+          thisIsTheOccasionShareCommentEditor.value = comment.comment;
+          thisIsOccasionShareCommentEditDoneDiv.setAttribute("style", "display: initial;");
+          thisIsOccasionShareComment.setAttribute("style", "visibility: hidden;");
+          editDeleteOccasionShareCommentDiv.setAttribute("style", "display: none;");
+
+
+        });
+      }
 
       function cancelHolidayInvite() {
         let shareHolidayPane = document.getElementById('shareHolidayPane');
@@ -713,9 +756,24 @@
             for (let i = 0; i < shareComments.length; i++) {
               vm.activeOccasionShares[index].comments[i] = {};
               vm.activeOccasionShares[index].comments[i].comment = shareComments[i].comment;
+              vm.activeOccasionShares[index].comments[i].id = shareComments[i].id;
+              vm.activeOccasionShares[index].comments[i].user_id = shareComments[i].user_id;
               obtainCommenterNameAndPic(shareComments[i], index, i);
               vm.activeOccasionShares[index].comments[i].cleanDate = cleanDateHoliday(shareComments[i].updated_at) + ' - ' + timeDate(shareComments[i].updated_at);
             }
+            setTimeout(()=>{
+
+              for (let j = 0; j < vm.activeOccasionShares[index].comments.length; j++) {
+
+                if (parseInt(vm.activeOccasionShares[index].comments[j].user_id) === parseInt(currentUserId)) {
+                  document.getElementById('editDeleteOccasionShareCommentDiv' + vm.activeOccasionShares[index].comments[j].id).setAttribute("style", "display: initial;");
+                  // document.getElementById('thisIsTheOccasionShareCommentEditor' + vm.activeOccasionShares[index].comments[j].id).setAttribute("style", "visibility: hidden;");
+                }
+                document.getElementById('thisIsTheOccasionShareCommentEditor' + vm.activeOccasionShares[index].comments[j].id).setAttribute("style", "display: none;");
+
+              }
+
+            }, (shareComments.length * 100));
           }
         });
       }

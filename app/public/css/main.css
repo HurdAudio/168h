@@ -3071,6 +3071,11 @@ footer img {
   width: 89%;
 }
 
+.occasionShareComments textarea {
+  margin-left: 3vmin;
+  width: 89%;
+}
+
 
 
 #timeblockSharesNotifier h3 {

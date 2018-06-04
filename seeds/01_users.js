@@ -11,7 +11,7 @@ exports.seed = function(knex, Promise) {
           email: 'devin@devinhurd.com',
           hashed_password: '$2a$12$zlJZuGFGcqgLQyy/nVtoQeafv47g8dNTGTJL/x7EmSbPSiFLi.aMS',
           is_admin: true,
-          user_avatar_url: 'https://media.licdn.com/dms/image/C5603AQFLD_nG1nXJgw/profile-displayphoto-shrink_200_200/0?e=1527822000&v=alpha&t=_sHEOD8fj-dYwo9oPE1uKIOwpdf61K0E4R1MdutVFys',
+          user_avatar_url: 'https://media.licdn.com/dms/image/C5603AQFLD_nG1nXJgw/profile-displayphoto-shrink_200_200/0?e=1533772800&v=beta&t=6_zhjMUC7FVn7LnFCxRIufdtlG6BV7BEwPM9eUtCGRM',
           associates: {
             "friends": [ 2, 3 ]
           },

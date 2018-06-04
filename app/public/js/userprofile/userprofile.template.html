@@ -5291,7 +5291,21 @@
                   <img src="{{comment.user_avatar_url}}"><br><br><br>
                   <br><br><br><p>From: {{comment.name}} <br>
                   on {{comment.cleanDate}}</p><br><br>
-                  <h3>{{comment.comment}}</h3><br>
+
+                  <textarea id="thisIsTheOccasionShareCommentEditor{{comment.id}}" class="pure-input-1" rows="5"></textarea>
+                  <div class="thisIsMessageEditDoneDiv" id="thisIsOccasionShareCommentEditDoneDiv{{comment.id}}"><a class="btn" id="thisIsTheOccasionShareCommentEditorDoneButton{{comment.id}}" href="#" ng-click="$ctrl.userEditOccasionShareCommentCompleted(comment.id)">done</a></div>
+
+
+                  <h3 id="thisIsOccasionShareComment{{comment.id}}">{{comment.comment}}</h3><br>
+
+
+
+                  <div id="editDeleteOccasionShareCommentDiv{{comment.id}}" class="messageEditDelete">
+                    <a class="btn" href="#" ng-click="$ctrl.userEditOccasionShareComment(comment.id)">edit</a>
+                    <a class="btn" href="#" ng-click="$ctrl.userDeleteOccasionShareComment(comment.id)">delete</a>
+                  </div><br><br><br><br>
+
+
                 </main>
               </div>
 
