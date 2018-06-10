@@ -5254,6 +5254,10 @@
 
           <div class="whoScheduledMe">
             <main ng-repeat="occasion in $ctrl.activeOccasionShares | orderBy : $ctrl.sortBy">
+              <div id="thisIsOccasionShareDeleteDiv{{occasion.id}}" class="profileDeleteOption">
+
+                <a class="btn" href="#" ng-click="$ctrl.deleteOccasionShare(occasion.id)">delete</a><br><br>
+              </div>
 
 
               <img src="{{occasion.sharerImg}}"><br>

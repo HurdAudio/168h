@@ -257,6 +257,22 @@
       vm.cancelHolidayInvite = cancelHolidayInvite;
       vm.userEditOccasionShareComment = userEditOccasionShareComment;
       vm.userEditOccasionShareCommentCompleted = userEditOccasionShareCommentCompleted;
+      vm.deleteOccasionShare = deleteOccasionShare;
+
+      function deleteOccasionShare(occasionId) {
+
+        $http.delete(`/occasions_shares/${occasionId}`)
+        .then(deletedOccasionData=>{
+          let deletedOccasion = deletedOccasionData.data;
+
+          for (let i = 0; i < vm.activeOccasionShares.length; i++) {
+            if (vm.activeOccasionShares[i].id === deletedOccasion.id) {
+              vm.activeOccasionShares.splice(i, 1);
+              return;
+            }
+          }
+        });
+      }
 
       function userEditOccasionShareCommentCompleted(commentId) {
         let thisIsTheOccasionShareCommentEditor = document.getElementById('thisIsTheOccasionShareCommentEditor' + commentId);
@@ -795,6 +811,7 @@
             for (let i = 0; i < shares.length; i++) {
               vm.activeOccasionShares[i] = {};
               vm.activeOccasionShares[i].id = shares[i].id;
+              vm.activeOccasionShares[i].user_id = shares[i].user_id;
               occasionImagerAndNames(shares[i].user_id, shares[i].share_associate_id, i, ((parseInt(shares[i].user_id) === parseInt(currentUserId)) && (parseInt(shares[i].share_associate_id) !== parseInt(currentUserId))), shares[i].id);
               vm.activeOccasionShares[i].cleanDate = cleanDateHoliday(shares[i].created_at) + ' - ' + timeDate(shares[i].updated_at);
               occasionNameAndOccurance(shares[i].occasion_id, i);
@@ -802,6 +819,9 @@
             }
             setTimeout(()=>{
               for (let j = 0; j <shares.length; j++) {
+                if (parseInt(shares[j].user_id) !== parseInt(currentUserId)) {
+                  document.getElementById('thisIsOccasionShareDeleteDiv' + shares[j].id).setAttribute("style", "display: none;");
+                }
                 if (shares[j].responded) {
                   document.getElementById('occasionAcceptDecline' + shares[j].id).setAttribute("style", "display: none;");
                   if (shares[j].accepted) {
