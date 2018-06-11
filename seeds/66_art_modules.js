@@ -1624,6 +1624,66 @@ exports.seed = function(knex, Promise) {
           public: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 136,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/meg-amey-463532-unsplash.jpg',
+          title: 'title unknown',
+          artist: 'Meg Amey',
+          year: '2018',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 137,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/jacalyn-beales-416667-unsplash.jpg',
+          title: 'title unknown',
+          artist: 'Jacalyn Beales',
+          year: '2018',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 138,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/david-vazquez-426247-unsplash.jpg',
+          title: 'title unknown',
+          artist: 'David Vázquez',
+          year: '2018',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 139,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/wayne-low-477098-unsplash.jpg',
+          title: 'title unknown',
+          artist: 'Wayne Low',
+          year: '2018',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 140,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/ng-2332-unsplash.jpg',
+          title: 'title unknown',
+          artist: '贝莉儿 NG',
+          year: '2018',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
