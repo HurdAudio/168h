@@ -3352,6 +3352,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 187,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=330393363/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://maternalvoice.bandcamp.com/album/maraudeur-maraudeur-lp',
+          a_string: 'Maraudeur + Maraudeur [LP] by Maraudeur',
+          rule: {
+            "monday": [ 4, 14, 24, 27 ],
+            "tuesday": [ 3, 13, 23, 26 ],
+            "wednesday": [ 2, 12, 22, 25 ],
+            "thursday": [ 1, 11, 22, 24 ],
+            "saturday": [ 31, 10, 21, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 188,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=26636830/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://hawkwind.bandcamp.com/album/space-rock-1969-1979',
+          a_string: 'Space Rock - 1969-1979 by Hawkwind',
+          rule: {
+            "monday": [ 31, 10, 21, 23 ],
+            "tuesday": [ 4, 14, 24, 27 ],
+            "wednesday": [ 3, 13, 23, 26 ],
+            "thursday": [ 2, 12, 22, 25 ],
+            "saturday": [ 1, 11, 22, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 189,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3402468007/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sigh.bandcamp.com/album/scenes-from-hell',
+          a_string: 'Scenes from Hell by Sigh',
+          rule: {
+            "monday": [ 2, 12, 23, 25 ],
+            "tuesday": [ 1, 11, 22, 24 ],
+            "wednesday": [ 5, 15, 25, 28 ],
+            "thursday": [ 4, 14, 24, 27 ],
+            "saturday": [ 3, 13, 23, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
