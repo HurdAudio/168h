@@ -6904,6 +6904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 346,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/plowing.jpg',
+          title: 'Plowing',
+          artist: 'Constant Troyon',
+          year: '?',
+          rule: {
+            "monday": [ 15, 26, 6, 17 ],
+            "tuesday": [ 21, 1, 12, 22 ],
+            "wednesday": [ 20, 31, 11, 22 ],
+            "thursday": [ 18, 30, 10, 21 ],
+            "friday": [ 18, 29, 9, 10 ],
+            "saturday": [ 17, 28, 7, 9 ],
+            "sunday": [ 16, 27, 7, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 347,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/la-pudeur-gyptienne-1838.jpg',
+          title: 'La Pudeur Égyptienne',
+          artist: 'Charles Gleyre',
+          year: '1838',
+          rule: {
+            "monday": [ 16, 27, 7, 8 ],
+            "tuesday": [ 15, 26, 6, 17 ],
+            "wednesday": [ 21, 1, 12, 22 ],
+            "thursday": [ 20, 31, 11, 22 ],
+            "friday": [ 18, 30, 10, 21 ],
+            "saturday": [ 18, 29, 9, 10 ],
+            "sunday": [ 17, 28, 7, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 348,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/marine-terrace-with-initials-1855.jpg',
+          title: 'Marine Terrace with initials',
+          artist: 'Victor Hugo',
+          year: '1855',
+          rule: {
+            "monday": [ 17, 28, 7, 9 ],
+            "tuesday": [ 16, 27, 7, 8 ],
+            "wednesday": [ 15, 26, 6, 17 ],
+            "thursday": [ 21, 1, 12, 22 ],
+            "friday": [ 20, 31, 11, 22 ],
+            "saturday": [ 18, 30, 10, 21 ],
+            "sunday": [ 18, 29, 9, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 349,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/young-italian-woman-from-papigno-with-her-spindle.jpg',
+          title: 'Young Italian Woman from Papigno with Her Spindle',
+          artist: 'Camille Corot',
+          year: 'c.1826 - c.1827',
+          rule: {
+            "monday": [ 18, 29, 9, 10 ],
+            "tuesday": [ 17, 28, 7, 9 ],
+            "wednesday": [ 16, 27, 7, 8 ],
+            "thursday": [ 15, 26, 6, 17 ],
+            "friday": [ 21, 1, 12, 22 ],
+            "saturday": [ 20, 31, 11, 22 ],
+            "sunday": [ 18, 30, 10, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 350,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/polish-prometheus-1831(1).jpg',
+          title: 'Polish Prometheus',
+          artist: 'Horace Vernet',
+          year: '1831',
+          rule: {
+            "monday": [ 19, 31, 11, 22 ],
+            "tuesday": [ 19, 30, 10, 11 ],
+            "wednesday": [ 18, 29, 8, 10 ],
+            "thursday": [ 17, 28, 8, 9 ],
+            "friday": [ 16, 27, 7, 18 ],
+            "saturday": [ 22, 2, 13, 23 ],
+            "sunday": [ 21, 1, 12, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
