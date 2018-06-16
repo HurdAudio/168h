@@ -774,6 +774,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#E9ECE9',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 56,
+          user_id: 1,
+          theme: 'Glass',
+          type: 'sunday',
+          src_string: '../img/march_tiles/sarah-w-380843-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '135%',
+          color_dark: '#050203',
+          color_medium: '#FFB333',
+          color_light: '#DDE5F5',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
