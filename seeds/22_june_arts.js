@@ -7104,6 +7104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 356,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/3620397-VUNNYEZP-6.jpg',
+          title: 'Insomnia no. I',
+          artist: 'Flora Borsi',
+          year: '?',
+          rule: {
+            "monday": [ 17, 27, 7, 15 ],
+            "tuesday": [ 26, 6, 16, 14 ],
+            "wednesday": [ 15, 25, 5, 13 ],
+            "thursday": [ 14, 24, 4, 12 ],
+            "friday": [ 20, 30, 10, 16 ],
+            "saturday": [ 19, 29, 9, 17 ],
+            "sunday": [ 18, 28, 8, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 357,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/1495875-PSFCHTOJ-32.jpg',
+          title: 'Finding the Gold',
+          artist: 'Paul Brouns',
+          year: '?',
+          rule: {
+            "monday": [ 19, 29, 9, 17 ],
+            "tuesday": [ 18, 28, 8, 16 ],
+            "wednesday": [ 27, 7, 17, 15 ],
+            "thursday": [ 16, 26, 6, 14 ],
+            "friday": [ 15, 25, 5, 13 ],
+            "saturday": [ 21, 1, 11, 17 ],
+            "sunday": [ 20, 30, 10, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 358,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/2637188-COPBYQNO-32.jpg',
+          title: 'The walk 2',
+          artist: 'Alfonso Batalla',
+          year: '?',
+          rule: {
+            "monday": [ 20, 30, 10, 18 ],
+            "tuesday": [ 19, 29, 9, 17 ],
+            "wednesday": [ 18, 28, 8, 16 ],
+            "thursday": [ 27, 7, 17, 15 ],
+            "friday": [ 16, 26, 6, 14 ],
+            "saturday": [ 15, 25, 5, 13 ],
+            "sunday": [ 21, 1, 11, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 359,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/1951137-HDWLEJLN-32.jpg',
+          title: 'Imagine Landscape',
+          artist: 'igor vitomirov',
+          year: '?',
+          rule: {
+            "monday": [ 21, 1, 11, 17 ],
+            "tuesday": [ 20, 30, 10, 18 ],
+            "wednesday": [ 19, 29, 9, 17 ],
+            "thursday": [ 18, 28, 8, 16 ],
+            "friday": [ 27, 7, 17, 15 ],
+            "saturday": [ 16, 26, 6, 14 ],
+            "sunday": [ 15, 25, 5, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 360,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/2849157-XZLVVUJR-32.jpg',
+          title: 'Jarred Windflowers',
+          artist: 'Christoffer Relander',
+          year: '?',
+          rule: {
+            "monday": [ 15, 25, 5, 13 ],
+            "tuesday": [ 21, 1, 11, 17 ],
+            "wednesday": [ 20, 30, 10, 18 ],
+            "thursday": [ 19, 29, 9, 17 ],
+            "friday": [ 18, 28, 8, 16 ],
+            "saturday": [ 27, 7, 17, 15 ],
+            "sunday": [ 16, 26, 6, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
