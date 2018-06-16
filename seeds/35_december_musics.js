@@ -3136,6 +3136,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 175,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1884971035/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://neciorecords.bandcamp.com/album/rapa-nui-rigel-kentaur-nr-001',
+          a_string: 'Rapa Nui - Rigel Kentaur [NR - 001] by Necio Records',
+          rule: {
+            "monday": [ 28, 5, 11, 17 ],
+            "tuesday": [ 27, 4, 10, 16 ],
+            "wednesday": [ 28, 3, 9, 15 ],
+            "thursday": [ 1, 7, 13, 19 ],
+            "saturday": [ 31, 6, 12, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 176,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3575139770/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://neciorecords.bandcamp.com/album/cuadrado-negro-true-haters-nr-c-001',
+          a_string: 'Cuadrado Negro - True Haters [NR-C/001] by Necio Records',
+          rule: {
+            "monday": [ 31, 6, 12, 17 ],
+            "tuesday": [ 28, 5, 11, 17 ],
+            "wednesday": [ 27, 4, 10, 16 ],
+            "thursday": [ 28, 3, 9, 15 ],
+            "saturday": [ 1, 7, 13, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 177,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1700410833/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://neciorecords.bandcamp.com/album/perpetuo-transcurrir-de-las-cosas-cintas-nr-c-002',
+          a_string: 'Perpetuo transcurrir de las cosas - Cintas [NR - C/002] by Necio Records',
+          rule: {
+            "monday": [ 1, 7, 13, 19 ],
+            "tuesday": [ 31, 6, 12, 17 ],
+            "wednesday": [ 28, 5, 11, 17 ],
+            "thursday": [ 27, 4, 10, 16 ],
+            "saturday": [ 28, 3, 9, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
