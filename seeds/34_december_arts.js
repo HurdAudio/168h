@@ -5904,6 +5904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 296,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/26-03,Hunter.jpg',
+          title: 'Hunter Trapper Trader',
+          artist: 'J. Clinton Shepherd',
+          year: '1926',
+          rule: {
+            "monday": [ 15, 28, 5, 11 ],
+            "tuesday": [ 14, 27, 4, 10 ],
+            "wednesday": [ 13, 26, 3, 9 ],
+            "thursday": [ 12, 25, 2, 8 ],
+            "friday": [ 11, 24, 1, 7 ],
+            "saturday": [ 10, 22, 31, 6 ],
+            "sunday": [ 9, 22, 10, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 297,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/35-03,RealWestern.jpg',
+          title: 'Real Western',
+          artist: 'Howard Sherman',
+          year: '1935',
+          rule: {
+            "monday": [ 9, 22, 10, 17 ],
+            "tuesday": [ 15, 28, 5, 11 ],
+            "wednesday": [ 14, 27, 4, 10 ],
+            "thursday": [ 13, 26, 3, 9 ],
+            "friday": [ 12, 25, 2, 8 ],
+            "saturday": [ 11, 24, 1, 7 ],
+            "sunday": [ 10, 22, 31, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 298,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/25-03-10,Adv.jpg',
+          title: 'Adventure',
+          artist: 'Alfred N. Simpkin',
+          year: '1925',
+          rule: {
+            "monday": [ 10, 22, 31, 6 ],
+            "tuesday": [ 9, 22, 10, 17 ],
+            "wednesday": [ 15, 28, 5, 11 ],
+            "thursday": [ 14, 27, 4, 10 ],
+            "friday": [ 13, 26, 3, 9 ],
+            "saturday": [ 12, 25, 2, 8 ],
+            "sunday": [ 11, 24, 1, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 299,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/36-05,AceG-Man.jpg',
+          title: 'Ace G-Man',
+          artist: 'Malvin Singer',
+          year: '1936',
+          rule: {
+            "monday": [ 11, 24, 1, 7 ],
+            "tuesday": [ 10, 22, 31, 6 ],
+            "wednesday": [ 9, 22, 10, 17 ],
+            "thursday": [ 15, 28, 5, 11 ],
+            "friday": [ 14, 27, 4, 10 ],
+            "saturday": [ 13, 26, 3, 9 ],
+            "sunday": [ 12, 25, 2, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 300,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/18-11-25,ChicagoTribune2.jpg',
+          title: 'Chicago Tribune',
+          artist: 'Raymond Sisley',
+          year: '1918',
+          rule: {
+            "monday": [ 12, 25, 2, 8 ],
+            "tuesday": [ 11, 24, 1, 7 ],
+            "wednesday": [ 10, 22, 31, 6 ],
+            "thursday": [ 9, 22, 10, 17 ],
+            "friday": [ 15, 28, 5, 11 ],
+            "saturday": [ 14, 27, 4, 10 ],
+            "sunday": [ 13, 26, 3, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
