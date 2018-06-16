@@ -3676,6 +3676,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 205,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2381170004/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://melodysechochamber.bandcamp.com/album/bon-voyage',
+          a_string: 'Bon Voyage by Melody&#39;s Echo Chamber',
+          rule: {
+            "monday": [ 28, 29, 3, 11 ],
+            "tuesday": [ 27, 29, 2, 10 ],
+            "wednesday": [ 31, 2, 6, 14 ],
+            "thursday": [ 30, 1, 5, 13 ],
+            "saturday": [ 29, 31, 4, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 206,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=32438955/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://hilarywoodsmusic.bandcamp.com/album/colt',
+          a_string: 'Colt by Hilary Woods',
+          rule: {
+            "monday": [ 29, 31, 4, 12 ],
+            "tuesday": [ 28, 29, 3, 11 ],
+            "wednesday": [ 27, 29, 2, 10 ],
+            "thursday": [ 31, 2, 6, 14 ],
+            "saturday": [ 30, 1, 5, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 207,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4031028685/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://baywitch.bandcamp.com/album/moonstoners',
+          a_string: 'Moonstoners by Baywitch',
+          rule: {
+            "monday": [ 30, 1, 5, 13 ],
+            "tuesday": [ 29, 31, 4, 12 ],
+            "wednesday": [ 28, 29, 3, 11 ],
+            "thursday": [ 27, 29, 2, 10 ],
+            "saturday": [ 31, 2, 6, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
