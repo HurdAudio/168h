@@ -6104,6 +6104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 306,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/asteriskos-1968.jpg',
+          title: 'Asteriskos',
+          artist: 'Tony Smith',
+          year: '1968',
+          rule: {
+            "monday": [ 17, 21, 28, 3 ],
+            "tuesday": [ 16, 21, 27, 2 ],
+            "wednesday": [ 15, 20, 26, 3 ],
+            "thursday": [ 21, 26, 2, 7 ],
+            "friday": [ 20, 25, 30, 6 ],
+            "saturday": [ 19, 23, 30, 4 ],
+            "sunday": [ 18, 21, 28, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 307,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/18-f-vrier-1968.jpg',
+          title: '18 février',
+          artist: 'Michel Parmentier',
+          year: '1968',
+          rule: {
+            "monday": [ 18, 21, 28, 3 ],
+            "tuesday": [ 17, 21, 28, 3 ],
+            "wednesday": [ 16, 21, 27, 2 ],
+            "thursday": [ 15, 20, 26, 3 ],
+            "friday": [ 21, 26, 2, 7 ],
+            "saturday": [ 20, 25, 30, 6 ],
+            "sunday": [ 19, 23, 30, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 308,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/zeshoeken-1968.jpg',
+          title: 'Zeshoeken',
+          artist: 'Johannes Jan Schoonhoven',
+          year: '1968',
+          rule: {
+            "monday": [ 20, 24, 1, 5 ],
+            "tuesday": [ 19, 22, 29, 4 ],
+            "wednesday": [ 18, 22, 29, 4 ],
+            "thursday": [ 17, 22, 28, 3 ],
+            "friday": [ 16, 21, 27, 4 ],
+            "saturday": [ 22, 27, 3, 8 ],
+            "sunday": [ 21, 26, 1, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 309,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/architectural-details-with-shadows-1969.jpg',
+          title: 'Architectural Details with Shadows',
+          artist: 'Robert Huot',
+          year: '1969',
+          rule: {
+            "monday": [ 21, 26, 1, 7 ],
+            "tuesday": [ 20, 24, 1, 5 ],
+            "wednesday": [ 19, 22, 29, 4 ],
+            "thursday": [ 18, 22, 29, 4 ],
+            "friday": [ 17, 22, 28, 3 ],
+            "saturday": [ 16, 21, 27, 4 ],
+            "sunday": [ 22, 27, 3, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 310,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/butterfly-ii-1969.jpg',
+          title: 'Butterfly II',
+          artist: 'Blinky Palermo',
+          year: '1969',
+          rule: {
+            "monday": [ 22, 27, 3, 8 ],
+            "tuesday": [ 21, 26, 1, 7 ],
+            "wednesday": [ 20, 24, 1, 5 ],
+            "thursday": [ 19, 22, 29, 4 ],
+            "friday": [ 18, 22, 29, 4 ],
+            "saturday": [ 17, 22, 28, 3 ],
+            "sunday": [ 16, 21, 27, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
