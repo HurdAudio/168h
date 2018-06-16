@@ -3244,6 +3244,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 181,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=436003912/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sitiandtheband.bandcamp.com/album/fusing-the-roots',
+          a_string: 'Fusing the Roots by Siti &amp; The Band',
+          rule: {
+            "monday": [ 25, 6, 17, 21 ],
+            "tuesday": [ 24, 5, 16, 18 ],
+            "wednesday": [ 23, 4, 15, 27 ],
+            "thursday": [ 27, 8, 19, 23 ],
+            "saturday": [ 26, 7, 18, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 182,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2477978841/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ammar808.bandcamp.com/album/maghreb-united',
+          a_string: 'Maghreb United by AMMAR 808',
+          rule: {
+            "monday": [ 27, 8, 19, 23 ],
+            "tuesday": [ 26, 7, 18, 22 ],
+            "wednesday": [ 25, 6, 17, 19 ],
+            "thursday": [ 24, 5, 16, 28 ],
+            "saturday": [ 28, 9, 20, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 183,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1143115327/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://kwesitumtum.bandcamp.com/album/kwesi-tumtum',
+          a_string: 'Kwesi TumTum by Kwesi TumTum',
+          rule: {
+            "monday": [ 28, 9, 20, 24 ],
+            "tuesday": [ 27, 8, 19, 23 ],
+            "wednesday": [ 26, 7, 18, 22 ],
+            "thursday": [ 25, 6, 17, 19 ],
+            "saturday": [ 24, 5, 16, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
