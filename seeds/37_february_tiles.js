@@ -788,6 +788,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FCF4AB',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 57,
+          user_id: 1,
+          theme: 'Silk/Velvet',
+          type: 'holiday',
+          src_string: '../img/february_tiles/kyler-nixon-208875-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '151%',
+          color_dark: '#322F80',
+          color_medium: '#FE027B',
+          color_light: '#F0B303',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
