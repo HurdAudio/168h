@@ -6304,6 +6304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 316,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_sovpolpost_00065.jpg',
+          title: 'Do not fool around!',
+          artist: 'V. Govorkov',
+          year: '1948',
+          rule: {
+            "monday": [ 19, 30, 10, 14 ],
+            "tuesday": [ 18, 29, 9, 13 ],
+            "wednesday": [ 17, 28, 8, 12 ],
+            "thursday": [ 16, 27, 7, 11 ],
+            "friday": [ 15, 26, 27, 10 ],
+            "saturday": [ 24, 25, 5, 9 ],
+            "sunday": [ 20, 31, 11, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 317,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_sovpolpost_00063.jpg',
+          title: 'Look: singing and dancing...',
+          artist: 'P.Golub, A.Chernov',
+          year: '1946',
+          rule: {
+            "monday": [ 20, 31, 11, 15 ],
+            "tuesday": [ 19, 30, 10, 14 ],
+            "wednesday": [ 18, 29, 9, 13 ],
+            "thursday": [ 17, 28, 8, 12 ],
+            "friday": [ 16, 27, 7, 11 ],
+            "saturday": [ 15, 26, 27, 10 ],
+            "sunday": [ 24, 25, 5, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 318,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_sovpolpost_00060.jpg',
+          title: 'About each one of us takes care Stalin in Kremlin',
+          artist: 'V. Govorkov',
+          year: '1940',
+          rule: {
+            "monday": [ 24, 25, 5, 9 ],
+            "tuesday": [ 20, 31, 11, 15 ],
+            "wednesday": [ 19, 30, 10, 14 ],
+            "thursday": [ 18, 29, 9, 13 ],
+            "friday": [ 17, 28, 8, 12 ],
+            "saturday": [ 16, 27, 7, 11 ],
+            "sunday": [ 15, 26, 27, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 319,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_sovaviapost_0015.jpg',
+          title: 'Ram - is a weapon of heroes!',
+          artist: 'A. Voloshin',
+          year: '1941',
+          rule: {
+            "monday": [ 15, 26, 27, 10 ],
+            "tuesday": [ 24, 25, 5, 9 ],
+            "wednesday": [ 20, 31, 11, 15 ],
+            "thursday": [ 19, 30, 10, 14 ],
+            "friday": [ 18, 29, 9, 13 ],
+            "saturday": [ 17, 28, 8, 12 ],
+            "sunday": [ 16, 27, 7, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 320,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_sovaviapost_0013.jpg',
+          title: 'Glory to the heroes of World War II!',
+          artist: 'P. Vandyshev, L. Torich',
+          year: '1941',
+          rule: {
+            "monday": [ 16, 27, 7, 11 ],
+            "tuesday": [ 15, 26, 27, 10 ],
+            "wednesday": [ 24, 25, 5, 9 ],
+            "thursday": [ 20, 31, 11, 15 ],
+            "friday": [ 19, 30, 10, 14 ],
+            "saturday": [ 18, 29, 9, 13 ],
+            "sunday": [ 17, 28, 8, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
