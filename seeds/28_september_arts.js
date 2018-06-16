@@ -6504,6 +6504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 326,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/the-gift-1993.jpg',
+          title: 'The Gift',
+          artist: 'Harmony Hammond',
+          year: '1993',
+          rule: {
+            "monday": [ 3, 19, 7, 15 ],
+            "tuesday": [ 11, 18, 6, 13 ],
+            "wednesday": [ 18, 24, 12, 20 ],
+            "thursday": [ 17, 23, 11, 19 ],
+            "friday": [ 16, 22, 10, 18 ],
+            "saturday": [ 15, 21, 9, 17 ],
+            "sunday": [ 14, 20, 8, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 327,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/primavera-1997.jpg',
+          title: 'Primavera',
+          artist: 'Esteban Vicente',
+          year: '1997',
+          rule: {
+            "monday": [ 14, 20, 8, 17 ],
+            "tuesday": [ 3, 19, 7, 15 ],
+            "wednesday": [ 11, 18, 6, 13 ],
+            "thursday": [ 18, 24, 12, 20 ],
+            "friday": [ 17, 23, 11, 19 ],
+            "saturday": [ 16, 22, 10, 18 ],
+            "sunday": [ 15, 21, 9, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 328,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/i-suppose-it-is-2001.jpg',
+          title: 'I Suppose It Is',
+          artist: 'Tess Jaray',
+          year: '2001',
+          rule: {
+            "monday": [ 15, 21, 9, 17 ],
+            "tuesday": [ 14, 20, 8, 17 ],
+            "wednesday": [ 3, 19, 7, 15 ],
+            "thursday": [ 11, 18, 6, 13 ],
+            "friday": [ 18, 24, 12, 20 ],
+            "saturday": [ 17, 23, 11, 19 ],
+            "sunday": [ 16, 22, 10, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 329,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/telefoni-l-incomunicabilit-1980.jpg',
+          title: 'Telefoni. L\'incomunicabilità',
+          artist: 'Renato Guttuso',
+          year: '1980',
+          rule: {
+            "monday": [ 17, 23, 11, 19 ],
+            "tuesday": [ 16, 22, 10, 18 ],
+            "wednesday": [ 5, 21, 9, 18 ],
+            "thursday": [ 4, 20, 8, 16 ],
+            "friday": [ 12, 19, 7, 14 ],
+            "saturday": [ 19, 25, 13, 21 ],
+            "sunday": [ 18, 24, 12, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 330,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/deux-nuages-1967.jpg',
+          title: 'Deux Nuages',
+          artist: 'Rene Bertholo',
+          year: '1967',
+          rule: {
+            "monday": [ 18, 24, 12, 20 ],
+            "tuesday": [ 17, 23, 11, 19 ],
+            "wednesday": [ 16, 22, 10, 18 ],
+            "thursday": [ 5, 21, 9, 18 ],
+            "friday": [ 4, 20, 8, 16 ],
+            "saturday": [ 12, 19, 7, 14 ],
+            "sunday": [ 19, 25, 13, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
