@@ -3892,6 +3892,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 217,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2850889179/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://newfocusrecordings.bandcamp.com/album/new-morse-code-simplicity-itself',
+          a_string: 'New Morse Code: Simplicity Itself by New Focus Recordings',
+          rule: {
+            "monday": [ 1, 7, 14, 27 ],
+            "tuesday": [ 5, 12, 18, 31 ],
+            "wednesday": [ 4, 10, 17, 30 ],
+            "thursday": [ 3, 9, 16, 29 ],
+            "saturday": [ 2, 8, 15, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 218,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=60493557/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://intaktrec.bandcamp.com/album/julius-eastman-piano-interpretations-24bit-96khz',
+          a_string: 'Julius Eastman Piano Interpretations (24bit 96khz) by Kukuruz Quartet',
+          rule: {
+            "monday": [ 2, 8, 15, 28 ],
+            "tuesday": [ 1, 7, 14, 27 ],
+            "wednesday": [ 5, 12, 18, 31 ],
+            "thursday": [ 4, 10, 17, 30 ],
+            "saturday": [ 3, 9, 16, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 219,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1440899379/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://highplains.bandcamp.com/album/pilot-hill',
+          a_string: 'Pilot Hill by High Plains',
+          rule: {
+            "monday": [ 3, 9, 16, 29 ],
+            "tuesday": [ 2, 8, 15, 28 ],
+            "wednesday": [ 1, 7, 14, 27 ],
+            "thursday": [ 5, 12, 18, 31 ],
+            "saturday": [ 4, 10, 17, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
