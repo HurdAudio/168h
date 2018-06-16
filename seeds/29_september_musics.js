@@ -3460,6 +3460,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 193,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=593575225/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cuneiformrecords.bandcamp.com/album/open-city',
+          a_string: 'Open City by The Muffins',
+          rule: {
+            "monday": [ 27, 17, 25, 19 ],
+            "tuesday": [ 1, 21, 29, 23 ],
+            "wednesday": [ 30, 20, 28, 22 ],
+            "thursday": [ 29, 19, 27, 22 ],
+            "saturday": [ 28, 18, 26, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 194,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=481996268/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cuneiformrecords.bandcamp.com/album/mekano',
+          a_string: 'Mekano by Miriodor',
+          rule: {
+            "monday": [ 28, 18, 26, 20 ],
+            "tuesday": [ 27, 17, 25, 19 ],
+            "wednesday": [ 1, 21, 29, 23 ],
+            "thursday": [ 30, 20, 28, 22 ],
+            "saturday": [ 29, 19, 27, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 195,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2969318032/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cuneiformrecords.bandcamp.com/album/le-feu-du-tigre',
+          a_string: 'Le Feu Du Tigre by Volapuk',
+          rule: {
+            "monday": [ 29, 19, 27, 22 ],
+            "tuesday": [ 28, 18, 26, 20 ],
+            "wednesday": [ 27, 17, 25, 19 ],
+            "thursday": [ 1, 21, 29, 23 ],
+            "saturday": [ 30, 20, 28, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
