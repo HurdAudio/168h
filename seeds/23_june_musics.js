@@ -3784,6 +3784,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 211,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4035040445/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://newatlantismusic.bandcamp.com/album/jq-invisible',
+          a_string: 'JQ - INVISIBLE by New Atlantis',
+          rule: {
+            "monday": [ 30, 3, 8, 20 ],
+            "tuesday": [ 29, 3, 8, 20 ],
+            "wednesday": [ 29, 2, 8, 19 ],
+            "thursday": [ 27, 5, 7, 18 ],
+            "saturday": [ 1, 5, 11, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 212,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1188515852/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://humanhoodrecordings.bandcamp.com/album/five-ghosts',
+          a_string: 'five ghosts by Thaniel Ion Lee',
+          rule: {
+            "monday": [ 1, 5, 11, 22 ],
+            "tuesday": [ 30, 3, 8, 20 ],
+            "wednesday": [ 29, 3, 8, 20 ],
+            "thursday": [ 29, 2, 8, 19 ],
+            "saturday": [ 27, 5, 7, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 213,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3774818434/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bloompunch.bandcamp.com/album/dawn-on-bridge-277',
+          a_string: 'Dawn on Bridge 277 by Wolfarena',
+          rule: {
+            "monday": [ 27, 5, 7, 18 ],
+            "tuesday": [ 1, 5, 11, 22 ],
+            "wednesday": [ 30, 3, 8, 20 ],
+            "thursday": [ 29, 3, 8, 20 ],
+            "saturday": [ 29, 2, 8, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
