@@ -746,6 +746,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#BBFF26',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 54,
+          user_id: 1,
+          theme: 'Greenery',
+          type: 'friday',
+          src_string: '../img/may_tiles/qingbao-meng-330658-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '170%',
+          color_dark: '#0B0B03',
+          color_medium: '#577714',
+          color_light: '#AAAD98',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
