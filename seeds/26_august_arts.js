@@ -6704,6 +6704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 336,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/blue-black-red-1918.jpg',
+          title: 'Blue, black, red',
+          artist: 'Aleksandra Ekster',
+          year: '1917 - 1918',
+          rule: {
+            "monday": [ 19, 23, 31, 16 ],
+            "tuesday": [ 18, 22, 30, 15 ],
+            "wednesday": [ 17, 19, 29, 14 ],
+            "thursday": [ 16, 19, 28, 13 ],
+            "friday": [ 15, 18, 27, 12 ],
+            "saturday": [ 21, 25, 2, 18 ],
+            "sunday": [ 20, 23, 1, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 337,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/river-with-poplars-1912.jpg',
+          title: 'River with Poplars',
+          artist: 'Roger Fry',
+          year: '1912',
+          rule: {
+            "monday": [ 20, 23, 1, 17 ],
+            "tuesday": [ 19, 23, 31, 16 ],
+            "wednesday": [ 18, 22, 30, 15 ],
+            "thursday": [ 17, 19, 29, 14 ],
+            "friday": [ 16, 19, 28, 13 ],
+            "saturday": [ 15, 18, 27, 12 ],
+            "sunday": [ 21, 25, 2, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 338,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/peter-i-the-great-1907.jpg',
+          title: 'Peter I the Great',
+          artist: 'Valentin Serov',
+          year: '1907',
+          rule: {
+            "monday": [ 21, 25, 2, 18 ],
+            "tuesday": [ 20, 23, 1, 17 ],
+            "wednesday": [ 19, 23, 31, 16 ],
+            "thursday": [ 18, 22, 30, 15 ],
+            "friday": [ 17, 19, 29, 14 ],
+            "saturday": [ 16, 19, 28, 13 ],
+            "sunday": [ 15, 18, 27, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 339,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/beggars-1933.jpg',
+          title: 'Beggars',
+          artist: 'Louis Schanker',
+          year: '1933',
+          rule: {
+            "monday": [ 15, 18, 27, 12 ],
+            "tuesday": [ 21, 25, 2, 18 ],
+            "wednesday": [ 20, 23, 1, 17 ],
+            "thursday": [ 19, 23, 31, 16 ],
+            "friday": [ 18, 22, 30, 15 ],
+            "saturday": [ 17, 19, 29, 14 ],
+            "sunday": [ 16, 19, 28, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 340,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/tale-of-the-doomed-prince-1915.jpg',
+          title: 'Tale of the doomed prince',
+          artist: 'Max Kurzweil',
+          year: '1915',
+          rule: {
+            "monday": [ 16, 19, 28, 13 ],
+            "tuesday": [ 15, 18, 27, 12 ],
+            "wednesday": [ 21, 25, 2, 18 ],
+            "thursday": [ 20, 23, 1, 17 ],
+            "friday": [ 19, 23, 31, 16 ],
+            "saturday": [ 18, 22, 30, 15 ],
+            "sunday": [ 17, 19, 29, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
