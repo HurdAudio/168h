@@ -7304,6 +7304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 366,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/right-to-create.jpg',
+          title: '848A Right to Create',
+          artist: 'Friedensreich Hundertwasser',
+          year: '1986',
+          rule: {
+            "monday": [ 22, 1, 11, 19 ],
+            "tuesday": [ 20, 31, 9, 19 ],
+            "wednesday": [ 18, 28, 5, 17 ],
+            "thursday": [ 15, 26, 5, 25 ],
+            "friday": [ 14, 25, 3, 13 ],
+            "saturday": [ 12, 22, 1, 9 ],
+            "sunday": [ 10, 19, 31, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 367,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/right-to-dream.jpg',
+          title: '851A The Right to Dream',
+          artist: 'Friedensreich Hundertwasser',
+          year: '1987',
+          rule: {
+            "monday": [ 10, 19, 31, 9 ],
+            "tuesday": [ 22, 1, 11, 19 ],
+            "wednesday": [ 20, 31, 9, 19 ],
+            "thursday": [ 18, 28, 5, 17 ],
+            "friday": [ 15, 26, 5, 25 ],
+            "saturday": [ 14, 25, 3, 13 ],
+            "sunday": [ 12, 22, 1, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 368,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/allegory-on-social-injustice.jpg',
+          title: 'Allegory on Social Injustice',
+          artist: 'Albrecht Durer',
+          year: '1526',
+          rule: {
+            "monday": [ 12, 22, 1, 9 ],
+            "tuesday": [ 10, 19, 31, 9 ],
+            "wednesday": [ 22, 1, 11, 19 ],
+            "thursday": [ 20, 31, 9, 19 ],
+            "friday": [ 18, 28, 5, 17 ],
+            "saturday": [ 15, 26, 5, 25 ],
+            "sunday": [ 14, 25, 3, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 369,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/for-complete-social-security-of-all-mexicans-1956.jpg',
+          title: 'For Complete Social Security of All Mexicans',
+          artist: 'David Alfaro Siqueiros',
+          year: '1953 - 1956',
+          rule: {
+            "monday": [ 14, 25, 3, 13 ],
+            "tuesday": [ 12, 22, 1, 9 ],
+            "wednesday": [ 10, 19, 31, 9 ],
+            "thursday": [ 22, 1, 11, 19 ],
+            "friday": [ 20, 31, 9, 19 ],
+            "saturday": [ 18, 28, 5, 17 ],
+            "sunday": [ 15, 26, 5, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 370,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/the-people-for-the-university-the-university-for-the-people-1956.jpg.jpg',
+          title: 'The People for the University. The University for the People.',
+          artist: 'David Alfaro Siqueiros',
+          year: '1952 - 1956',
+          rule: {
+            "monday": [ 15, 26, 5, 25 ],
+            "tuesday": [ 14, 25, 3, 13 ],
+            "wednesday": [ 12, 22, 1, 9 ],
+            "thursday": [ 10, 19, 31, 9 ],
+            "friday": [ 22, 1, 11, 19 ],
+            "saturday": [ 20, 31, 9, 19 ],
+            "sunday": [ 18, 28, 5, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
