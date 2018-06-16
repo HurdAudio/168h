@@ -760,6 +760,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#C6D8D4',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 55,
+          user_id: 1,
+          theme: 'Water',
+          type: 'saturday',
+          src_string: '../img/april_tiles/leo-rivas-25956-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '151%',
+          color_dark: '#031222',
+          color_medium: '#76ADC5',
+          color_light: '#FAF9F7',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
