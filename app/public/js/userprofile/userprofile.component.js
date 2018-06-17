@@ -258,6 +258,36 @@
       vm.userEditOccasionShareComment = userEditOccasionShareComment;
       vm.userEditOccasionShareCommentCompleted = userEditOccasionShareCommentCompleted;
       vm.deleteOccasionShare = deleteOccasionShare;
+      vm.addNewHolidayShareComment = addNewHolidayShareComment;
+
+      function addNewHolidayShareComment(holidayShareId) {
+        let subObj = {
+          user_id: currentUserId,
+          holiday_share: holidayShareId,
+          comment: ''
+        };
+        $http.post('/holiday_share_comments', subObj)
+        .then(shareData=>{
+          let share = shareData.data[0];
+          let index = 0;
+          for (let i = 0; i < vm.activeHolidayShares.length; i++) {
+            if (vm.activeHolidayShares[i].id === holidayShareId) {
+              index = i;
+            }
+          }
+          if (vm.activeHolidayShares[index].comments === undefined) {
+            vm.activeHolidayShares[index].comments = []
+          }
+          vm.activeHolidayShares[index].comments.push(share);
+
+          obtainUserDataHolidayShareComment(index, (vm.activeHolidayShares[index].comments.length - 1), share);
+
+          setTimeout(()=>{
+            userEditHolidayShareComment(share.id);
+            // document.getElementById('thisIsHolidayShareCommentEditDoneDiv' + share.id).setAttribute("style", "display: initial;");
+          }, 50);
+        });
+      }
 
       function deleteOccasionShare(occasionId) {
 
@@ -646,8 +676,43 @@
         });
       }
 
+      function pruneTheEmptyHolidayShareComment(commentId) {
+        $http.delete(`/holiday_share_comments/${commentId}`)
+        .then(()=>{
+          if (vm.activeHolidayShares.length > 0) {
+            for (let i = 0; i < vm.activeHolidayShares.length; i++) {
+              if ((vm.activeHolidayShares[i].comments !== undefined) && (vm.activeHolidayShares[i].comments.length > 0)) {
+                for (let j = 0; j < vm.activeHolidayShares[i].comments.length; j++) {
+                  if (vm.activeHolidayShares[i].comments[j].id === commentId) {
+                    vm.activeHolidayShares[i].comments.splice(j, 1);
+                  }
+                }
+              }
+            }
+          }
+        });
+      }
+
+
+
+      function clearOutBlankHolidayShareComments() {
+        // alert('called!!');
+        $http.get(`/holiday_share_commentsbyuser/${currentUserId}`)
+        .then(allCommentsData=>{
+          let allComments = allCommentsData.data;
+          if (allComments.length > 0) {
+            for (let i = 0; i < allComments.length; i++) {
+              if (allComments[i].comment === '') {
+                pruneTheEmptyHolidayShareComment(allComments[i].id);
+              }
+            }
+          }
+        });
+      }
+
       function userEditHolidayShareCommentCompleted(commentId) {
         // alert(commentId);
+        clearOutBlankHolidayShareComments();
         let thisIsTheHolidayShareCommentEditor = document.getElementById('thisIsTheHolidayShareCommentEditor' + commentId);
         let thisIsHolidayShareCommentEditDoneDiv = document.getElementById('thisIsHolidayShareCommentEditDoneDiv' + commentId);
         let editDeleteHolidayShareCommentDiv = document.getElementById('editDeleteHolidayShareCommentDiv' + commentId);
@@ -664,10 +729,12 @@
             $http.patch(`/holiday_share_comments/${commentId}`, subObj)
             .then(updatedCommentData=>{
               let updatedComment = updatedCommentData.data;
+
             });
           } else {
             thisIsTheHolidayShareCommentEditor.value = '';
           }
+
         });
 
         thisIsTheHolidayShareCommentEditor.setAttribute("style", "display: none;");
@@ -675,6 +742,7 @@
         thisIsHolidayShareCommentEditDoneDiv.setAttribute("style", "display: none;");
         editDeleteHolidayShareCommentDiv.setAttribute("style", "visibility: visible; display: initial;");
         thisIsHolidayShareCommentComment.setAttribute("style", "visibility: visible;");
+
       }
 
       function userEditHolidayShareComment(commentId) {
