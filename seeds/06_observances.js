@@ -10018,6 +10018,34 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 642,
+          user_id: 1,
+          name: 'Mahatma Gandhi (activist) born 1869.',
+          color: '#2A2A28',
+          picture: './img/dissent/mahatma-gandhi-anecdotes-3.jpg',
+          day_of: new Date ('1869-10-02T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 643,
+          user_id: 1,
+          name: 'The world ended on this day in 2014 when asteroid 2003 QQ47 slammed into the earth exactly as DailyMotion and numerous other "reputable" online sourced reported it would.',
+          color: '#1D1A25',
+          picture: './img/doomsday/METEOR.jpg',
+          day_of: new Date ('2014-03-21T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
