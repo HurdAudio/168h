@@ -4324,6 +4324,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 241,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4174680654/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://newamsterdamrecords.bandcamp.com/album/orpheus-unsung',
+          a_string: 'Orpheus Unsung by Steven Mackey with Jason Treuting',
+          rule: {
+            "monday": [ 10, 16, 17, 18 ],
+            "tuesday": [ 9, 16, 17, 18 ],
+            "wednesday": [ 13, 20, 21, 22 ],
+            "thursday": [ 12, 18, 19, 21 ],
+            "saturday": [ 11, 18, 19, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 242,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4224883234/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://thehandsfree.bandcamp.com/album/the-hands-free',
+          a_string: 'The Hands Free by The Hands Free',
+          rule: {
+            "monday": [ 11, 18, 19, 20 ],
+            "tuesday": [ 10, 16, 17, 18 ],
+            "wednesday": [ 9, 16, 17, 18 ],
+            "thursday": [ 13, 20, 21, 22 ],
+            "saturday": [ 12, 18, 19, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 243,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3716052331/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tigue.bandcamp.com/album/strange-paradise',
+          a_string: 'Strange Paradise by TIGUE',
+          rule: {
+            "monday": [ 12, 18, 19, 21 ],
+            "tuesday": [ 11, 18, 19, 20 ],
+            "wednesday": [ 10, 16, 17, 18 ],
+            "thursday": [ 9, 16, 17, 18 ],
+            "saturday": [ 13, 20, 21, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
