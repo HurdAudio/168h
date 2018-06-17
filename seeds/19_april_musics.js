@@ -4000,6 +4000,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 223,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4172470766/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://don-cherry.bandcamp.com/album/home-boy-sister-out',
+          a_string: 'Home Boy, Sister Out by Don Cherry',
+          rule: {
+            "monday": [ 1, 9, 21, 26 ],
+            "tuesday": [ 5, 13, 25, 30 ],
+            "wednesday": [ 4, 12, 24, 29 ],
+            "thursday": [ 3, 11, 23, 28 ],
+            "saturday": [ 2, 10, 22, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 224,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=544986837/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://intlanthem.bandcamp.com/album/logos',
+          a_string: 'Logos by Dos Santos',
+          rule: {
+            "monday": [ 3, 11, 23, 28 ],
+            "tuesday": [ 2, 10, 22, 27 ],
+            "wednesday": [ 6, 14, 26, 1 ],
+            "thursday": [ 5, 13, 25, 30 ],
+            "saturday": [ 4, 12, 24, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 225,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4175182504/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://thecontemporaryjazzquintet.bandcamp.com/album/location',
+          a_string: 'Location by The Contemporary Jazz Quintet',
+          rule: {
+            "monday": [ 4, 12, 24, 29 ],
+            "tuesday": [ 3, 11, 23, 28 ],
+            "wednesday": [ 2, 10, 22, 27 ],
+            "thursday": [ 6, 14, 26, 1 ],
+            "saturday": [ 5, 13, 25, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
