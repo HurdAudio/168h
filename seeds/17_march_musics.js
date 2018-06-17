@@ -4108,6 +4108,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 229,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=596621089/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://anjutunes.bandcamp.com/album/water-garden',
+          a_string: 'Water Garden by Anju',
+          rule: {
+            "monday": [ 2, 9, 15, 23 ],
+            "tuesday": [ 2, 8, 14, 22 ],
+            "wednesday": [ 6, 12, 18, 26 ],
+            "thursday": [ 5, 11, 17, 25 ],
+            "saturday": [ 4, 10, 16, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 230,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'http://bandcamp.com/EmbeddedPlayer/album=3944623789/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://kbonet.com/album/childqueen',
+          a_string: 'Childqueen by Kadhja Bonet',
+          rule: {
+            "monday": [ 4, 10, 16, 25 ],
+            "tuesday": [ 2, 9, 15, 23 ],
+            "wednesday": [ 2, 8, 14, 22 ],
+            "thursday": [ 6, 12, 18, 26 ],
+            "saturday": [ 5, 11, 17, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 231,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'http://bandcamp.com/EmbeddedPlayer/album=967539469/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sunnysidezone.com/album/bridges',
+          a_string: 'Bridges by Jamie Baum Septet +',
+          rule: {
+            "monday": [ 6, 12, 18, 26 ],
+            "tuesday": [ 5, 11, 17, 26 ],
+            "wednesday": [ 3, 10, 16, 24 ],
+            "thursday": [ 3, 9, 15, 23 ],
+            "saturday": [ 7, 13, 19, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
