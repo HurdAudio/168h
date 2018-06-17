@@ -7504,6 +7504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 376,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/82224e36902eca36b95c8341ab87afc8.jpg',
+          title: 'Don Drysdale. LA Dodgers',
+          artist: 'Bill Purdom',
+          year: '?',
+          rule: {
+            "monday": [ 21, 25, 10, 8 ],
+            "tuesday": [ 19, 24, 30, 6 ],
+            "wednesday": [ 19, 24, 30, 6 ],
+            "thursday": [ 18, 23, 29, 5 ],
+            "friday": [ 23, 29, 4, 11 ],
+            "saturday": [ 7, 27, 3, 9 ],
+            "sunday": [ 22, 25, 3, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 377,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/11442377b5d63e3be48701bc5cb7003a.jpg',
+          title: 'Brooks Robinson',
+          artist: 'Bill Purdom',
+          year: '?',
+          rule: {
+            "monday": [ 22, 25, 3, 9 ],
+            "tuesday": [ 21, 25, 10, 8 ],
+            "wednesday": [ 19, 24, 30, 6 ],
+            "thursday": [ 19, 24, 30, 6 ],
+            "friday": [ 18, 23, 29, 5 ],
+            "saturday": [ 23, 29, 4, 11 ],
+            "sunday": [ 7, 27, 3, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 378,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/Ty-Cobb-on-Third.jpg',
+          title: 'Ty Cobb on Third',
+          artist: 'Bill Purdom',
+          year: '?',
+          rule: {
+            "monday": [ 8, 28, 4, 10 ],
+            "tuesday": [ 23, 26, 4, 10 ],
+            "wednesday": [ 22, 26, 11, 9 ],
+            "thursday": [ 20, 25, 1, 7 ],
+            "friday": [ 20, 25, 1, 7 ],
+            "saturday": [ 19, 24, 30, 6 ],
+            "sunday": [ 24, 30, 5, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 379,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/Lince920x920.jpg',
+          title: 'our 2010 World Champions San Francisco Giants',
+          artist: 'Mark Ulriksen',
+          year: '2010',
+          rule: {
+            "monday": [ 24, 30, 5, 12 ],
+            "tuesday": [ 8, 28, 4, 10 ],
+            "wednesday": [ 23, 26, 4, 10 ],
+            "thursday": [ 22, 26, 11, 9 ],
+            "friday": [ 20, 25, 1, 7 ],
+            "saturday": [ 20, 25, 1, 7 ],
+            "sunday": [ 19, 24, 30, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 380,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/coach-newton-painting.jpg',
+          title: 'Coach Newton',
+          artist: 'title unknown',
+          year: '?',
+          rule: {
+            "monday": [ 19, 24, 30, 6 ],
+            "tuesday": [ 24, 30, 5, 12 ],
+            "wednesday": [ 8, 28, 4, 10 ],
+            "thursday": [ 23, 26, 4, 10 ],
+            "friday": [ 22, 26, 11, 9 ],
+            "saturday": [ 20, 25, 1, 7 ],
+            "sunday": [ 20, 25, 1, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
