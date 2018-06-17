@@ -4216,6 +4216,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 235,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2143936539/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://themidnighthour.bandcamp.com/album/the-midnight-hour',
+          a_string: 'The Midnight Hour by The Midnight Hour',
+          rule: {
+            "monday": [ 9, 12, 14, 18 ],
+            "tuesday": [ 10, 14, 16, 18 ],
+            "wednesday": [ 22, 16, 18, 24 ],
+            "thursday": [ 5, 10, 11, 24 ],
+            "saturday": [ 6, 10, 12, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 236,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=593769597/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://serpentwithfeet.bandcamp.com/album/blisters-2',
+          a_string: 'blisters by serpentwithfeet',
+          rule: {
+            "monday": [ 6, 10, 12, 16 ],
+            "tuesday": [ 9, 12, 14, 18 ],
+            "wednesday": [ 10, 14, 16, 18 ],
+            "thursday": [ 22, 16, 18, 24 ],
+            "saturday": [ 5, 10, 11, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 237,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1451564269/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://serpentwithfeet.bandcamp.com/album/soil',
+          a_string: 'soil by serpentwithfeet',
+          rule: {
+            "monday": [ 5, 10, 11, 24 ],
+            "tuesday": [ 6, 10, 12, 16 ],
+            "wednesday": [ 9, 12, 14, 18 ],
+            "thursday": [ 10, 14, 16, 18 ],
+            "saturday": [ 22, 16, 18, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
