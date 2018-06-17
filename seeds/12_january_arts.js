@@ -8104,6 +8104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 406,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/inner-space-1986-2.jpg',
+          title: 'Inner Space',
+          artist: 'Luciano Bartolini',
+          year: '1986',
+          rule: {
+            "monday": [ 4, 5, 27, 31 ],
+            "tuesday": [ 7, 9, 10, 12 ],
+            "wednesday": [ 9, 11, 15, 18 ],
+            "thursday": [ 11, 13, 14, 15 ],
+            "friday": [ 27, 28, 8, 31 ],
+            "saturday": [ 30, 1, 24, 13 ],
+            "sunday": [ 4, 2, 25, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 407,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/untitled-collage-1979.jpg',
+          title: 'Untitled Collage',
+          artist: 'Robert Nickle',
+          year: '1979',
+          rule: {
+            "monday": [ 4, 2, 25, 28 ],
+            "tuesday": [ 4, 5, 27, 31 ],
+            "wednesday": [ 7, 9, 10, 12 ],
+            "thursday": [ 9, 11, 15, 18 ],
+            "friday": [ 11, 13, 14, 15 ],
+            "saturday": [ 27, 28, 8, 31 ],
+            "sunday": [ 30, 1, 24, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 408,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/composition.jpg',
+          title: 'Composition',
+          artist: 'Francois Rouan',
+          year: '?',
+          rule: {
+            "monday": [ 30, 1, 24, 13 ],
+            "tuesday": [ 4, 2, 25, 28 ],
+            "wednesday": [ 4, 5, 27, 31 ],
+            "thursday": [ 7, 9, 10, 12 ],
+            "friday": [ 9, 11, 15, 18 ],
+            "saturday": [ 11, 13, 14, 15 ],
+            "sunday": [ 27, 28, 8, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 409,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/the-and-picture-1919.jpg',
+          title: 'The And-Picture',
+          artist: 'Kurt Schwitters',
+          year: '1919',
+          rule: {
+            "monday": [ 27, 28, 8, 31 ],
+            "tuesday": [ 30, 1, 24, 13 ],
+            "wednesday": [ 4, 2, 25, 28 ],
+            "thursday": [ 4, 5, 27, 31 ],
+            "friday": [ 7, 9, 10, 12 ],
+            "saturday": [ 9, 11, 15, 18 ],
+            "sunday": [ 11, 13, 14, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 410,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/komposition-in-schwarz-und-wei-1936.jpg',
+          title: 'Komposition in Schwarz und Weiß',
+          artist: 'Otto Freundlich',
+          year: '1936',
+          rule: {
+            "monday": [ 11, 13, 14, 15 ],
+            "tuesday": [ 27, 28, 8, 31 ],
+            "wednesday": [ 30, 1, 24, 13 ],
+            "thursday": [ 4, 2, 25, 28 ],
+            "friday": [ 4, 5, 27, 31 ],
+            "saturday": [ 7, 9, 10, 12 ],
+            "sunday": [ 9, 11, 15, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
