@@ -7704,6 +7704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 386,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/flag-man.jpg',
+          title: 'Patriotic Young Man with a Flag',
+          artist: 'Diane Arbus',
+          year: '1967',
+          rule: {
+            "monday": [ 24, 2, 10, 20 ],
+            "tuesday": [ 22, 1, 9, 19 ],
+            "wednesday": [ 21, 31, 8, 18 ],
+            "thursday": [ 20, 30, 7, 17 ],
+            "friday": [ 19, 29, 7, 16 ],
+            "saturday": [ 25, 3, 13, 21 ],
+            "sunday": [ 24, 3, 11, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 387,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/blue-angel-1987.jpg',
+          title: 'Blue Angel',
+          artist: 'Miriam Schapiro',
+          year: '1987',
+          rule: {
+            "monday": [ 24, 3, 11, 21 ],
+            "tuesday": [ 24, 2, 10, 20 ],
+            "wednesday": [ 22, 1, 9, 19 ],
+            "thursday": [ 21, 31, 8, 18 ],
+            "friday": [ 20, 30, 7, 17 ],
+            "saturday": [ 19, 29, 7, 16 ],
+            "sunday": [ 25, 3, 13, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 388,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/masculin-feminin-1959.jpg',
+          title: 'Masculin feminin',
+          artist: 'Mimi Parent',
+          year: '1959',
+          rule: {
+            "monday": [ 25, 3, 13, 21 ],
+            "tuesday": [ 24, 3, 11, 21 ],
+            "wednesday": [ 24, 2, 10, 20 ],
+            "thursday": [ 22, 1, 9, 19 ],
+            "friday": [ 21, 31, 8, 18 ],
+            "saturday": [ 20, 30, 7, 17 ],
+            "sunday": [ 19, 29, 7, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 389,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/giraffe-1985.jpg',
+          title: 'Giraffe',
+          artist: 'Tsuruko Yamazaki',
+          year: '1985',
+          rule: {
+            "monday": [ 19, 29, 7, 16 ],
+            "tuesday": [ 25, 3, 13, 21 ],
+            "wednesday": [ 24, 3, 11, 21 ],
+            "thursday": [ 24, 2, 10, 20 ],
+            "friday": [ 22, 1, 9, 19 ],
+            "saturday": [ 21, 31, 8, 18 ],
+            "sunday": [ 20, 30, 7, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 390,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/cement-factory-1987.jpg',
+          title: 'Cement Factory',
+          artist: 'Maria Stolarova',
+          year: '1987',
+          rule: {
+            "monday": [ 20, 30, 7, 17 ],
+            "tuesday": [ 19, 29, 7, 16 ],
+            "wednesday": [ 25, 3, 13, 21 ],
+            "thursday": [ 24, 3, 11, 21 ],
+            "friday": [ 24, 2, 10, 20 ],
+            "saturday": [ 22, 1, 9, 19 ],
+            "sunday": [ 21, 31, 8, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
