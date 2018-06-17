@@ -7904,6 +7904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 396,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/79cbb9d6bd39b05984868853cc6a4158.jpg',
+          title: 'Rainbow Factory Headquarters',
+          artist: 'Russell T. Gordon',
+          year: '?',
+          rule: {
+            "monday": [ 8, 16, 24, 5 ],
+            "tuesday": [ 8, 18, 14, 4 ],
+            "wednesday": [ 27, 6, 14, 22 ],
+            "thursday": [ 28, 8, 16, 24 ],
+            "friday": [ 5, 10, 16, 26 ],
+            "saturday": [ 4, 12, 20, 28 ],
+            "sunday": [ 6, 16, 22, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 397,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/tuskagrahampowerman.jpg',
+          title: 'Tuska Graham Powerman',
+          artist: 'Billy Graham',
+          year: '1972',
+          rule: {
+            "monday": [ 6, 16, 22, 28 ],
+            "tuesday": [ 8, 16, 24, 5 ],
+            "wednesday": [ 8, 18, 14, 4 ],
+            "thursday": [ 27, 6, 14, 22 ],
+            "friday": [ 28, 8, 16, 24 ],
+            "saturday": [ 5, 10, 16, 26 ],
+            "sunday": [ 4, 12, 20, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 398,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/Graham+_+Lonnie+Graham+Print+2+_+Adia.jpg',
+          title: 'Adia',
+          artist: 'Lonnie Graham',
+          year: '?',
+          rule: {
+            "monday": [ 4, 12, 20, 28 ],
+            "tuesday": [ 6, 16, 22, 28 ],
+            "wednesday": [ 8, 16, 24, 5 ],
+            "thursday": [ 8, 18, 14, 4 ],
+            "friday": [ 27, 6, 14, 22 ],
+            "saturday": [ 28, 8, 16, 24 ],
+            "sunday": [ 5, 10, 16, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 399,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/66b7a8c93e1e7841f2aeebb586d7b55d38adbd2c.jpg',
+          title: 'God\'s Voice in the Midnight Hour (detail)',
+          artist: 'Deborah Grant',
+          year: '2013',
+          rule: {
+            "monday": [ 6, 11, 17, 27 ],
+            "tuesday": [ 5, 13, 21, 29 ],
+            "wednesday": [ 7, 17, 23, 29 ],
+            "thursday": [ 9, 17, 25, 6 ],
+            "friday": [ 9, 19, 15, 5 ],
+            "saturday": [ 28, 7, 15, 23 ],
+            "sunday": [ 29, 9, 17, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 400,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/167.jpg',
+          title: 'Uncle John\'s Band',
+          artist: 'Todd Gray',
+          year: 'xx cent.',
+          rule: {
+            "monday": [ 29, 9, 17, 25 ],
+            "tuesday": [ 6, 11, 17, 27 ],
+            "wednesday": [ 5, 13, 21, 29 ],
+            "thursday": [ 7, 17, 23, 29 ],
+            "friday": [ 9, 17, 25, 6 ],
+            "saturday": [ 9, 19, 15, 5 ],
+            "sunday": [ 28, 7, 15, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
