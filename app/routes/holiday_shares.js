@@ -62,7 +62,8 @@ router.patch('/:id', (req, res, next) => {
     holiday_id: req.body.holiday_id,
     share_associate_id: req.body.share_associate_id,
     accepted: req.body.accepted,
-    responded: req.body.responded
+    responded: req.body.responded,
+    updated_at: req.body.updated_at
   }, '*')
     .then((results)=>{
        res.status(200).send(results[0]);
@@ -102,7 +103,7 @@ router.delete('/:id', (req, res, next) => {
             accepted: record.accepted,
             responded: record.responded,
             updated_at: record.updated_at,
-            created_at: record.updated_at
+            created_at: record.created_at
           };
 
           res.send(obj);

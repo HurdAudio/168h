@@ -269,6 +269,7 @@
         $http.post('/holiday_share_comments', subObj)
         .then(shareData=>{
           let share = shareData.data[0];
+          console.log(share);
           let index = 0;
           for (let i = 0; i < vm.activeHolidayShares.length; i++) {
             if (vm.activeHolidayShares[i].id === holidayShareId) {
@@ -712,7 +713,7 @@
 
       function userEditHolidayShareCommentCompleted(commentId) {
         // alert(commentId);
-        clearOutBlankHolidayShareComments();
+
         let thisIsTheHolidayShareCommentEditor = document.getElementById('thisIsTheHolidayShareCommentEditor' + commentId);
         let thisIsHolidayShareCommentEditDoneDiv = document.getElementById('thisIsHolidayShareCommentEditDoneDiv' + commentId);
         let editDeleteHolidayShareCommentDiv = document.getElementById('editDeleteHolidayShareCommentDiv' + commentId);
@@ -729,10 +730,11 @@
             $http.patch(`/holiday_share_comments/${commentId}`, subObj)
             .then(updatedCommentData=>{
               let updatedComment = updatedCommentData.data;
-
+              clearOutBlankHolidayShareComments();
             });
           } else {
             thisIsTheHolidayShareCommentEditor.value = '';
+            clearOutBlankHolidayShareComments();
           }
 
         });
@@ -1113,9 +1115,11 @@
       }
 
       function acceptHolidayShare(holidayShareId) {
+        let now = new Date();
         let subObj = {
           accepted: true,
-          responded: true
+          responded: true,
+          updated_at: now
         };
         $http.patch(`/holiday_shares/${holidayShareId}`, subObj)
         .then(holidayShareData=>{
@@ -1127,9 +1131,11 @@
       }
 
       function declineHolidayShare(holidayShareId) {
+        let now = new Date();
         let subObj = {
           accepted: false,
-          responded: true
+          responded: true,
+          updated_at: now
         };
         $http.patch(`/holiday_shares/${holidayShareId}`, subObj)
         .then(holidayShareData=>{
@@ -14650,7 +14656,7 @@
         .then(holidayCommentData=>{
           let holidayComments = holidayCommentData.data;
           let comments = holidayComments.filter(entry=>{
-            return(parseInt(entry.holiday_share) === parseInt(holidayShare.holiday_id));
+            return(parseInt(entry.holiday_share) === parseInt(holidayShare.id));
           });
           if (comments.length > 0) {
             vm.activeHolidayShares[index].comments = [];
@@ -14719,15 +14725,28 @@
       }
 
       function retrieveUserHolidayShares() {
+        let expireTime = new Date();
+        expireTime.setDate(expireTime.getDate() - 30);
+        let checkTime;
         $http.get(`/users/${currentUserId}`)
         .then(userData=>{
           let user = userData.data;
           $http.get('/holiday_shares')
           .then(allHolidaySharesData=>{
             let allHolidayShares = allHolidaySharesData.data;
+            if (allHolidayShares.length > 0) {
+              for (let i = 0; i < allHolidayShares.length; i++) {
+                checkTime = new Date(allHolidayShares[i].created_at);
+                if (expireTime.getTime() > checkTime.getTime()) {
+                  allHolidayShares.splice(i, 1);
+                  i--;
+                }
+              }
+            }
             let sharedHolidays = allHolidayShares.filter(day=>{
               return(parseInt(day.share_associate_id) === parseInt(currentUserId));
             });
+
             let offeredHolidays = allHolidayShares.filter(day=>{
               return((parseInt(day.user_id) === parseInt(currentUserId)) && (parseInt(day.share_associate_id) !== parseInt(currentUserId)));
             });
@@ -14740,7 +14759,15 @@
                 vm.activeHolidayShares[i].share_associate_id = holidayShares[i].share_associate_id;
                 gatherHolidayInviterData(holidayShares[i].user_id, i);
                 gatherHolidayInviteeData(holidayShares[i].share_associate_id, i);
-                vm.activeHolidayShares[i].cleanDate = cleanDateHoliday(holidayShares[i].updated_at) + ' - ' + timeDate(holidayShares[i].updated_at);
+                if (holidayShares[i].responded) {
+                  if (holidayShares[i].accepted) {
+                    vm.activeHolidayShares[i].cleanDate = cleanDateHoliday(holidayShares[i].created_at) + ' - ' + timeDate(holidayShares[i].created_at) + ' - ' + 'accepted at: ' + cleanDateHoliday(holidayShares[i].updated_at) + ' - ' + timeDate(holidayShares[i].updated_at);
+                  } else {
+                    vm.activeHolidayShares[i].cleanDate = cleanDateHoliday(holidayShares[i].created_at) + ' - ' + timeDate(holidayShares[i].created_at) + ' - ' + 'declined at: ' + cleanDateHoliday(holidayShares[i].updated_at) + ' - ' + timeDate(holidayShares[i].updated_at);
+                  }
+                } else {
+                  vm.activeHolidayShares[i].cleanDate = cleanDateHoliday(holidayShares[i].updated_at) + ' - ' + timeDate(holidayShares[i].updated_at);
+                }
                 gatherHolidayShareHoliday(holidayShares[i].holiday_id, i);
                 gatherHolidayShareComments(i, holidayShares[i]);
               }
@@ -14749,7 +14776,7 @@
               if (holidayShares.length > 0) {
                 for (let shared = 0; shared < holidayShares.length; shared++) {
                   if (parseInt(holidayShares[shared].user_id) !== parseInt(currentUserId)) {
-                    document.getElementById('thisIsHolidayShareDeleteDiv' + holidayShares[share].id).setAttribute("style", "display: none;");
+                    document.getElementById('thisIsHolidayShareDeleteDiv' + holidayShares[shared].id).setAttribute("style", "display: none;");
                   }
                   if (parseInt(holidayShares[shared].share_associate_id) === parseInt(currentUserId)) {
                     document.getElementById('holidayblockInvitee' + holidayShares[shared].id).setAttribute("style", "display: none;");
