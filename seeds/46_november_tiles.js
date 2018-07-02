@@ -676,6 +676,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#ECECEC',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 49,
+          user_id: 1,
+          theme: 'Monochromatic',
+          type: 'friday',
+          src_string: '../img/november_tiles/amy-shamblen-650504-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '110%',
+          color_dark: '#F84945',
+          color_medium: '#FBC4C2',
+          color_light: '#FFEFF2',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
