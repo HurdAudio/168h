@@ -718,6 +718,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FEFFFF',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 52,
+          user_id: 1,
+          theme: 'Primary Colors',
+          type: 'holiday',
+          src_string: '../img/august_tiles/neonbrand-350176-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '180%',
+          color_dark: '#2D3A42',
+          color_medium: '#01BCDB',
+          color_light: '#D3DBE6',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
