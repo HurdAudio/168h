@@ -1684,6 +1684,66 @@ exports.seed = function(knex, Promise) {
           public: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 141,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/cat-mapper-max-ogden-204436-unsplash.jpg',
+          title: 'A cat in a Biketown bike basket while crossing a Portland bridge',
+          artist: 'Max Ogden',
+          year: '2018',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 142,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/timothy-meinberg-248173-unsplash.jpg',
+          title: 'A tabby cat walking along a ledge over a harbor',
+          artist: 'Timothy Meinberg',
+          year: '2018',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 143,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/sabri-tuzcu-213760-unsplash.jpg',
+          title: 'A tabby cat sleeping on an a couch armrest',
+          artist: 'Sabri Tuzcu',
+          year: '2018',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 144,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/kiven-zhao-536685-unsplash.jpg',
+          title: 'Backpack Kitten',
+          artist: 'Kiven Zhao',
+          year: '2018',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 145,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/q-aila-162475-unsplash.jpg',
+          title: 'Close-up of several tabby kittens snuggled together on a blanket',
+          artist: 'Q\'aila',
+          year: '2018',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
