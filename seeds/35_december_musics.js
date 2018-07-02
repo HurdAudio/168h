@@ -3190,6 +3190,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 178,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2268106322/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://satanicosmarihuanos.bandcamp.com/album/sat-nicos-marihuanos-i',
+          a_string: 'Satánicos Marihuanos I by Satánicos Marihuanos',
+          rule: {
+            "monday": [ 28, 3, 9, 15 ],
+            "tuesday": [ 1, 7, 13, 19 ],
+            "wednesday": [ 31, 6, 12, 17 ],
+            "thursday": [ 28, 5, 11, 17 ],
+            "saturday": [ 27, 4, 10, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 179,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1156962889/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://fredclarke.bandcamp.com/album/nasca',
+          a_string: 'Nasca by Ronald Sanchez &amp; Fred Clarke',
+          rule: {
+            "monday": [ 27, 4, 10, 16 ],
+            "tuesday": [ 28, 3, 9, 15 ],
+            "wednesday": [ 1, 7, 13, 19 ],
+            "thursday": [ 31, 6, 12, 17 ],
+            "saturday": [ 28, 5, 11, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 180,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1359562215/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://kill-amigo.bandcamp.com/album/el-filin-ha-muerto',
+          a_string: 'EL FILIN HA MUERTO by KILL AMIGO',
+          rule: {
+            "monday": [ 28, 5, 11, 17 ],
+            "tuesday": [ 27, 4, 10, 16 ],
+            "wednesday": [ 28, 3, 9, 15 ],
+            "thursday": [ 1, 7, 13, 19 ],
+            "saturday": [ 31, 6, 12, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
