@@ -662,6 +662,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#E0DDE8',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 48,
+          user_id: 1,
+          theme: 'Snow',
+          type: 'week',
+          src_string: '../img/december_tiles/jessica-fadel-453102-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '160%',
+          color_dark: '#2D2D2D',
+          color_medium: '#545454',
+          color_light: '#D8D6D7',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
