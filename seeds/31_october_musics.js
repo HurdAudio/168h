@@ -3406,6 +3406,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 190,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2238107708/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://i-voidhangerrecords.bandcamp.com/album/self-annihilating-consciousness',
+          a_string: 'Self-Annihilating Consciousness by EIGENLICHT',
+          rule: {
+            "monday": [ 3, 13, 23, 26 ],
+            "tuesday": [ 2, 12, 23, 25 ],
+            "wednesday": [ 1, 11, 22, 24 ],
+            "thursday": [ 5, 15, 25, 28 ],
+            "saturday": [ 4, 14, 24, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 191,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'http://bandcamp.com/EmbeddedPlayer/album=2249211452/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://listen.20buckspin.com/album/desolation',
+          a_string: 'Desolation by Khemmis',
+          rule: {
+            "monday": [ 4, 14, 24, 27 ],
+            "tuesday": [ 3, 13, 23, 26 ],
+            "wednesday": [ 2, 12, 23, 25 ],
+            "thursday": [ 1, 11, 22, 24 ],
+            "saturday": [ 5, 15, 25, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 192,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3765643685/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://regionaljusticecenter.bandcamp.com/album/world-of-inconvenience',
+          a_string: 'World of Inconvenience by Regional Justice Center',
+          rule: {
+            "monday": [ 5, 15, 25, 28 ],
+            "tuesday": [ 4, 14, 24, 27 ],
+            "wednesday": [ 3, 13, 23, 26 ],
+            "thursday": [ 2, 12, 23, 25 ],
+            "saturday": [ 1, 11, 22, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
