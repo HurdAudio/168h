@@ -6204,6 +6204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 311,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/menhir-ii-1969.jpg',
+          title: 'Menhir II',
+          artist: 'Sheila Hicks',
+          year: '1969',
+          rule: {
+            "monday": [ 16, 21, 27, 4 ],
+            "tuesday": [ 22, 27, 3, 8 ],
+            "wednesday": [ 21, 26, 1, 7 ],
+            "thursday": [ 20, 24, 1, 5 ],
+            "friday": [ 19, 22, 29, 4 ],
+            "saturday": [ 18, 22, 29, 4 ],
+            "sunday": [ 17, 22, 28, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 312,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/slack-of-net-1969.jpg',
+          title: 'Slack of Net',
+          artist: 'Takamatsu Jiro',
+          year: '1969',
+          rule: {
+            "monday": [ 17, 22, 28, 3 ],
+            "tuesday": [ 16, 21, 27, 4 ],
+            "wednesday": [ 22, 27, 3, 8 ],
+            "thursday": [ 21, 26, 1, 7 ],
+            "friday": [ 20, 24, 1, 5 ],
+            "saturday": [ 19, 22, 29, 4 ],
+            "sunday": [ 18, 22, 29, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 313,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/fourths-1969.jpg',
+          title: 'Fourths',
+          artist: 'Mark Lancaster',
+          year: '1969',
+          rule: {
+            "monday": [ 18, 22, 29, 4 ],
+            "tuesday": [ 17, 22, 28, 3 ],
+            "wednesday": [ 16, 21, 27, 4 ],
+            "thursday": [ 22, 27, 3, 8 ],
+            "friday": [ 21, 26, 1, 7 ],
+            "saturday": [ 20, 24, 1, 5 ],
+            "sunday": [ 19, 22, 29, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 314,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/to-martha-s-memory-1970.jpg',
+          title: 'To Martha\'s Memory',
+          artist: 'Jiro Yoshihara',
+          year: '1970',
+          rule: {
+            "monday": [ 19, 22, 29, 4 ],
+            "tuesday": [ 18, 22, 29, 4 ],
+            "wednesday": [ 17, 22, 28, 3 ],
+            "thursday": [ 16, 21, 27, 4 ],
+            "friday": [ 22, 27, 3, 8 ],
+            "saturday": [ 21, 26, 1, 7 ],
+            "sunday": [ 20, 24, 1, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 315,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/untitled-polychrome-bar-1970.jpg',
+          title: 'Untitled (Polychrome Bar)',
+          artist: 'Andre Cadere',
+          year: '1970',
+          rule: {
+            "monday": [ 21, 25, 2, 6 ],
+            "tuesday": [ 20, 23, 30, 5 ],
+            "wednesday": [ 19, 23, 30, 5 ],
+            "thursday": [ 18, 23, 29, 4 ],
+            "friday": [ 17, 22, 28, 5 ],
+            "saturday": [ 23, 28, 4, 9 ],
+            "sunday": [ 22, 27, 2, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
