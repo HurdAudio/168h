@@ -7896,7 +7896,7 @@ exports.seed = function(knex, Promise) {
           name: 'Mike Piazza (catcher), born 1968',
           color: '#120F44',
           picture: './img/baseball/mikepiazza.jpg',
-          day_of: new Date ('1937-06-26T13:44:00.000Z'),
+          day_of: new Date ('1968-09-04T13:44:00.000Z'),
           is_annual: true,
           art_override: false,
           music_override: false,

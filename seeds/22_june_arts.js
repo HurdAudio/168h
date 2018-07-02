@@ -6909,7 +6909,7 @@ exports.seed = function(knex, Promise) {
           id: 346,
           user_id: 1,
           theme: 'Photography',
-          img_path: './img/june/barn+logs.jpg',
+          img_path: './img/june/barnlogs.jpg',
           title: 'Barn Logs',
           artist: 'Alison Francis',
           year: '?',
