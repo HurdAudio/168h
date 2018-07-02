@@ -774,6 +774,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FAF9F7',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 56,
+          user_id: 1,
+          theme: 'Water',
+          type: 'sunday',
+          src_string: '../img/april_tiles/ant-rozetsky-226345-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '160%',
+          color_dark: '#050D10',
+          color_medium: '#717872',
+          color_light: '#FCF9EC',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
