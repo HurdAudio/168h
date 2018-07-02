@@ -3298,6 +3298,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 184,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3849705144/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://yossifine.bandcamp.com/album/blue-desert',
+          a_string: 'http://yossifine.bandcamp.com/album/blue-desert',
+          rule: {
+            "monday": [ 24, 5, 16, 28 ],
+            "tuesday": [ 28, 9, 20, 24 ],
+            "wednesday": [ 27, 8, 19, 23 ],
+            "thursday": [ 26, 7, 18, 22 ],
+            "saturday": [ 25, 6, 17, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 185,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=703304363/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://azizabrahim.bandcamp.com/album/abbar-el-hamada',
+          a_string: 'Abbar el Hamada by Aziza Brahim',
+          rule: {
+            "monday": [ 25, 6, 17, 19 ],
+            "tuesday": [ 24, 5, 16, 28 ],
+            "wednesday": [ 28, 9, 20, 24 ],
+            "thursday": [ 27, 8, 19, 23 ],
+            "saturday": [ 26, 7, 18, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 186,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3839399932/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://nouramintseymali.bandcamp.com/album/azawan-ii',
+          a_string: 'Azawan II by Noura Mint Seymali',
+          rule: {
+            "monday": [ 26, 7, 18, 22 ],
+            "tuesday": [ 25, 6, 17, 19 ],
+            "wednesday": [ 24, 5, 16, 28 ],
+            "thursday": [ 28, 9, 20, 24 ],
+            "saturday": [ 27, 8, 19, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
