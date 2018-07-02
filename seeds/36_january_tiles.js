@@ -816,6 +816,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#F5F5F5',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 59,
+          user_id: 1,
+          theme: 'Ice',
+          type: 'saturday',
+          src_string: '../img/january_tiles/chris-liverani-510544-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '145%',
+          color_dark: '#221E14',
+          color_medium: '#79070A',
+          color_light: '#E1F0FC',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
