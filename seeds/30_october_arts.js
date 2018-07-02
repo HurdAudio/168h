@@ -6404,6 +6404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 321,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_sovaviapost_0012.jpg',
+          title: 'Proud of son!',
+          artist: 'V. Govorkov',
+          year: '1941',
+          rule: {
+            "monday": [ 17, 28, 8, 12 ],
+            "tuesday": [ 16, 27, 7, 11 ],
+            "wednesday": [ 15, 26, 27, 10 ],
+            "thursday": [ 24, 25, 5, 9 ],
+            "friday": [ 20, 31, 11, 15 ],
+            "saturday": [ 19, 30, 10, 14 ],
+            "sunday": [ 18, 29, 9, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 322,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_sovaviapost_0010.jpg',
+          title: 'On the land and above...',
+          artist: 'P. Sokolov-Skalya',
+          year: '1941',
+          rule: {
+            "monday": [ 19, 30, 10, 14 ],
+            "tuesday": [ 18, 29, 9, 13 ],
+            "wednesday": [ 17, 28, 8, 12 ],
+            "thursday": [ 16, 27, 28, 11 ],
+            "friday": [ 25, 26, 6, 10 ],
+            "saturday": [ 21, 1, 12, 16 ],
+            "sunday": [ 20, 31, 11, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 323,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_5in4plan.jpg',
+          title: 'Five-Year plan in four years - (we) will complete!',
+          artist: 'Victor Ivanov',
+          year: '?',
+          rule: {
+            "monday": [ 20, 31, 11, 15 ],
+            "tuesday": [ 19, 30, 10, 14 ],
+            "wednesday": [ 18, 29, 9, 13 ],
+            "thursday": [ 17, 28, 8, 12 ],
+            "friday": [ 16, 27, 28, 11 ],
+            "saturday": [ 25, 26, 6, 10 ],
+            "sunday": [ 21, 1, 12, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 324,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_worksovpost_00012.jpg',
+          title: 'Comrades loggers! Let’s keep promise given to Comrade Stalin!',
+          artist: '?',
+          year: '1948',
+          rule: {
+            "monday": [ 21, 1, 12, 16 ],
+            "tuesday": [ 20, 31, 11, 15 ],
+            "wednesday": [ 19, 30, 10, 14 ],
+            "thursday": [ 18, 29, 9, 13 ],
+            "friday": [ 17, 28, 8, 12 ],
+            "saturday": [ 16, 27, 28, 11 ],
+            "sunday": [ 25, 26, 6, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 325,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_St_069.jpg',
+          title: 'Glory to Stalin - to the great architect of communism!',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 25, 26, 6, 10 ],
+            "tuesday": [ 21, 1, 12, 16 ],
+            "wednesday": [ 20, 31, 11, 15 ],
+            "thursday": [ 19, 30, 10, 14 ],
+            "friday": [ 18, 29, 9, 13 ],
+            "saturday": [ 17, 28, 8, 12 ],
+            "sunday": [ 16, 27, 28, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
