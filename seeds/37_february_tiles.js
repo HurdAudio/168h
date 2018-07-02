@@ -802,6 +802,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#F0B303',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 58,
+          user_id: 1,
+          theme: 'Silk/Velvet',
+          type: 'week',
+          src_string: '../img/february_tiles/lloyd-dirks-74271-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '165%',
+          color_dark: '#050E1D',
+          color_medium: '#570518',
+          color_light: '#D70614',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
