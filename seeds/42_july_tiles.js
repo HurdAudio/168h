@@ -732,6 +732,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#EDD2CB',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 53,
+          user_id: 1,
+          theme: 'Steam',
+          type: 'week',
+          src_string: '../img/july_tiles/austin-prock-316054-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '160%',
+          color_dark: '#232225',
+          color_medium: '#3D4544',
+          color_light: '#EAE7E8',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
