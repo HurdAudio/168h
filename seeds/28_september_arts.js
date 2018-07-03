@@ -6604,6 +6604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 331,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/lost-2001.jpg',
+          title: 'Lost',
+          artist: 'Tetsuya Ishida',
+          year: '2001',
+          rule: {
+            "monday": [ 19, 25, 13, 21 ],
+            "tuesday": [ 18, 24, 12, 20 ],
+            "wednesday": [ 17, 23, 11, 19 ],
+            "thursday": [ 16, 22, 10, 18 ],
+            "friday": [ 5, 21, 9, 18 ],
+            "saturday": [ 4, 20, 8, 16 ],
+            "sunday": [ 12, 19, 7, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 332,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/portrait-of-hassel-smith-1951.jpg',
+          title: 'Portrait of Hassel Smith',
+          artist: 'David Park',
+          year: '1951',
+          rule: {
+            "monday": [ 12, 19, 7, 14 ],
+            "tuesday": [ 19, 25, 13, 21 ],
+            "wednesday": [ 18, 24, 12, 20 ],
+            "thursday": [ 17, 23, 11, 19 ],
+            "friday": [ 16, 22, 10, 18 ],
+            "saturday": [ 5, 21, 9, 18 ],
+            "sunday": [ 4, 20, 8, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 333,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/never-before-2001.jpg',
+          title: 'Never Before',
+          artist: 'Basil Beattie',
+          year: '2001',
+          rule: {
+            "monday": [ 4, 20, 8, 16 ],
+            "tuesday": [ 12, 19, 7, 14 ],
+            "wednesday": [ 19, 25, 13, 21 ],
+            "thursday": [ 18, 24, 12, 20 ],
+            "friday": [ 17, 23, 11, 19 ],
+            "saturday": [ 16, 22, 10, 18 ],
+            "sunday": [ 5, 21, 9, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 334,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/the-crush-2006.jpg',
+          title: 'The Crush',
+          artist: 'Luke Chueh',
+          year: '2006',
+          rule: {
+            "monday": [ 5, 21, 9, 18 ],
+            "tuesday": [ 4, 20, 8, 16 ],
+            "wednesday": [ 12, 19, 7, 14 ],
+            "thursday": [ 19, 25, 13, 21 ],
+            "friday": [ 18, 24, 12, 20 ],
+            "saturday": [ 17, 23, 11, 19 ],
+            "sunday": [ 16, 22, 10, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 335,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/cool-grays-11-6-2011.jpg',
+          title: 'Cool Grays 11-6',
+          artist: 'Gregg Renfrow',
+          year: '2011',
+          rule: {
+            "monday": [ 16, 22, 10, 18 ],
+            "tuesday": [ 5, 21, 9, 18 ],
+            "wednesday": [ 4, 20, 8, 16 ],
+            "thursday": [ 12, 19, 7, 14 ],
+            "friday": [ 19, 25, 13, 21 ],
+            "saturday": [ 18, 24, 12, 20 ],
+            "sunday": [ 17, 23, 11, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
