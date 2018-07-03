@@ -3622,6 +3622,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 202,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2377749480/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ligeiamare.bandcamp.com/album/k-k-shell',
+          a_string: 'K+K Shell by J.A. Deane and Farrell Lowe',
+          rule: {
+            "monday": [ 10, 18, 31, 30 ],
+            "tuesday": [ 9, 17, 30, 29 ],
+            "wednesday": [ 8, 16, 29, 28 ],
+            "thursday": [ 7, 15, 28, 27 ],
+            "saturday": [ 6, 14, 27, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 203,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=977874523/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ligeiamare.bandcamp.com/album/the-7th-circle',
+          a_string: 'The 7th Circle by 7th Circle Group',
+          rule: {
+            "monday": [ 7, 15, 28, 27 ],
+            "tuesday": [ 11, 19, 1, 31 ],
+            "wednesday": [ 10, 18, 31, 30 ],
+            "thursday": [ 9, 17, 30, 29 ],
+            "saturday": [ 8, 16, 29, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 204,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2445799159/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ligeiamare.bandcamp.com/album/thought-leader',
+          a_string: 'Thought Leader by J.A. Deane and Farrell Lowe',
+          rule: {
+            "monday": [ 8, 16, 29, 28 ],
+            "tuesday": [ 7, 15, 28, 27 ],
+            "wednesday": [ 11, 19, 1, 31 ],
+            "thursday": [ 10, 18, 31, 30 ],
+            "saturday": [ 9, 17, 30, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
