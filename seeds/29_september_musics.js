@@ -3514,6 +3514,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 196,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3383885759/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://dwellingsband.bandcamp.com/album/lavender-town',
+          a_string: 'Lavender Town by Dwellings',
+          rule: {
+            "monday": [ 1, 21, 29, 23 ],
+            "tuesday": [ 30, 20, 28, 23 ],
+            "wednesday": [ 29, 19, 27, 21 ],
+            "thursday": [ 28, 18, 26, 20 ],
+            "saturday": [ 2, 22, 30, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 197,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3408776844/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://welostthesea.bandcamp.com/album/departure-songs',
+          a_string: 'Departure Songs by We Lost The Sea',
+          rule: {
+            "monday": [ 2, 22, 30, 24 ],
+            "tuesday": [ 1, 21, 29, 23 ],
+            "wednesday": [ 30, 20, 28, 23 ],
+            "thursday": [ 29, 19, 27, 21 ],
+            "saturday": [ 28, 18, 26, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 198,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=688807833/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tuber.bandcamp.com/album/desert-overcrowded',
+          a_string: 'Desert Overcrowded by Tuber',
+          rule: {
+            "monday": [ 28, 18, 26, 20 ],
+            "tuesday": [ 2, 22, 30, 24 ],
+            "wednesday": [ 1, 21, 29, 23 ],
+            "thursday": [ 30, 20, 28, 23 ],
+            "saturday": [ 29, 19, 27, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
