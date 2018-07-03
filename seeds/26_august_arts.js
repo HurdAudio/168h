@@ -6804,6 +6804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 341,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/poster-for-the-berlin-secession-art-and-artist-magazine-1906.jpg',
+          title: 'Poster for the Berlin Secession, Art and Artist magazine',
+          artist: 'Thomas Theodor Heine',
+          year: '1906',
+          rule: {
+            "monday": [ 17, 19, 29, 14 ],
+            "tuesday": [ 16, 19, 28, 13 ],
+            "wednesday": [ 15, 18, 27, 12 ],
+            "thursday": [ 21, 25, 2, 18 ],
+            "friday": [ 20, 23, 1, 17 ],
+            "saturday": [ 19, 23, 31, 16 ],
+            "sunday": [ 18, 22, 30, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 342,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/il-trittico-della-velocit-l-arrivo-1927.jpg',
+          title: 'il Trittico della Velocità: L\'Arrivo',
+          artist: 'Gerardo Dottori',
+          year: '1927',
+          rule: {
+            "monday": [ 18, 22, 30, 15 ],
+            "tuesday": [ 17, 19, 29, 14 ],
+            "wednesday": [ 16, 19, 28, 13 ],
+            "thursday": [ 15, 18, 27, 12 ],
+            "friday": [ 21, 25, 2, 18 ],
+            "saturday": [ 20, 23, 1, 17 ],
+            "sunday": [ 19, 23, 31, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 343,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/a-boca-da-esfinge-lisboa-capa-1924.jpg',
+          title: 'A Boca da Esfinge Lisboa (Capa)',
+          artist: 'Bernardo Marques',
+          year: '1924',
+          rule: {
+            "monday": [ 20, 24, 1, 17 ],
+            "tuesday": [ 19, 23, 31, 16 ],
+            "wednesday": [ 18, 20, 30, 15 ],
+            "thursday": [ 17, 20, 29, 14 ],
+            "friday": [ 16, 19, 28, 13 ],
+            "saturday": [ 22, 26, 3, 19 ],
+            "sunday": [ 21, 24, 2, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 344,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/passing-rain-1917.jpg',
+          title: 'Passing Rain',
+          artist: 'Ito Shinsui',
+          year: '1917',
+          rule: {
+            "monday": [ 21, 24, 2, 18 ],
+            "tuesday": [ 20, 24, 1, 17 ],
+            "wednesday": [ 19, 23, 31, 16 ],
+            "thursday": [ 18, 20, 30, 15 ],
+            "friday": [ 17, 20, 29, 14 ],
+            "saturday": [ 16, 19, 28, 13 ],
+            "sunday": [ 22, 26, 3, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 345,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/unloading-sand-1902.jpg',
+          title: 'Unloading Sand',
+          artist: 'Albert Marquet',
+          year: '1902',
+          rule: {
+            "monday": [ 22, 26, 3, 19 ],
+            "tuesday": [ 21, 24, 2, 18 ],
+            "wednesday": [ 20, 24, 1, 17 ],
+            "thursday": [ 19, 23, 31, 16 ],
+            "friday": [ 18, 20, 30, 15 ],
+            "saturday": [ 17, 20, 29, 14 ],
+            "sunday": [ 16, 19, 28, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
