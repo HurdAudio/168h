@@ -4378,6 +4378,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 244,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=421884570/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://invisibleanatomy.bandcamp.com/album/dissections-2',
+          a_string: 'Dissections by Invisible Anatomy',
+          rule: {
+            "monday": [ 13, 20, 21, 22 ],
+            "tuesday": [ 12, 18, 19, 21 ],
+            "wednesday": [ 11, 18, 19, 20 ],
+            "thursday": [ 10, 16, 17, 18 ],
+            "saturday": [ 9, 16, 17, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 245,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3711416575/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://subtledegrees.bandcamp.com/album/a-dance-that-empties',
+          a_string: 'A Dance That Empties by Subtle Degrees',
+          rule: {
+            "monday": [ 10, 17, 18, 19 ],
+            "tuesday": [ 14, 21, 22, 23 ],
+            "wednesday": [ 13, 19, 20, 22 ],
+            "thursday": [ 12, 19, 20, 21 ],
+            "saturday": [ 11, 17, 18, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 246,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2724184341/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://newamsterdamrecords.bandcamp.com/album/all-can-work',
+          a_string: 'All Can Work by John Hollenbeck Large Ensemble',
+          rule: {
+            "monday": [ 11, 17, 18, 19 ],
+            "tuesday": [ 10, 17, 18, 19 ],
+            "wednesday": [ 14, 21, 22, 23 ],
+            "thursday": [ 13, 19, 20, 22 ],
+            "saturday": [ 12, 19, 20, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
