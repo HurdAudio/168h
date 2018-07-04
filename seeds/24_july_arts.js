@@ -7004,6 +7004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 351,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/perseus-and-andromeda.jpg',
+          title: 'Perseus and Andromeda',
+          artist: 'Jean Auguste Dominique Ingres',
+          year: '?',
+          rule: {
+            "monday": [ 21, 1, 12, 23 ],
+            "tuesday": [ 19, 31, 11, 22 ],
+            "wednesday": [ 19, 30, 10, 11 ],
+            "thursday": [ 18, 29, 8, 10 ],
+            "friday": [ 17, 28, 8, 9 ],
+            "saturday": [ 16, 27, 7, 18 ],
+            "sunday": [ 22, 2, 13, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 352,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/atelier-of-a-painter.jpg',
+          title: 'Atelier of a painter',
+          artist: 'Marie-Denise Villers',
+          year: '?',
+          rule: {
+            "monday": [ 22, 2, 13, 23 ],
+            "tuesday": [ 21, 1, 12, 23 ],
+            "wednesday": [ 19, 31, 11, 22 ],
+            "thursday": [ 19, 30, 10, 11 ],
+            "friday": [ 18, 29, 8, 10 ],
+            "saturday": [ 17, 28, 8, 9 ],
+            "sunday": [ 16, 27, 7, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 353,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/aurora-and-cephalus-1810(1).jpg',
+          title: 'Aurora and Cephalus',
+          artist: 'Anne-Louis Girodet',
+          year: '1810',
+          rule: {
+            "monday": [ 16, 27, 7, 18 ],
+            "tuesday": [ 22, 2, 13, 23 ],
+            "wednesday": [ 21, 1, 12, 23 ],
+            "thursday": [ 19, 31, 11, 22 ],
+            "friday": [ 19, 30, 10, 11 ],
+            "saturday": [ 18, 29, 8, 10 ],
+            "sunday": [ 17, 28, 8, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 354,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/napoleoncrossing-the-alps-at-the-st-bernard-pass-20th-may-1800-1801.jpg',
+          title: 'Napoleon Crossing the Alps at the St Bernard Pass, 20th May 1800',
+          artist: 'Jacques-Louis David',
+          year: 'c.1800 - 1801',
+          rule: {
+            "monday": [ 17, 28, 8, 9 ],
+            "tuesday": [ 16, 27, 7, 18 ],
+            "wednesday": [ 22, 2, 13, 23 ],
+            "thursday": [ 21, 1, 12, 23 ],
+            "friday": [ 19, 31, 11, 22 ],
+            "saturday": [ 19, 30, 10, 11 ],
+            "sunday": [ 18, 29, 8, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 355,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/architectural-landscape-with-a-canal-1783.jpg',
+          title: 'Architectural Landscape with a Canal',
+          artist: 'Hubert Robert',
+          year: '1783',
+          rule: {
+            "monday": [ 18, 29, 8, 10 ],
+            "tuesday": [ 17, 28, 8, 9 ],
+            "wednesday": [ 16, 27, 7, 18 ],
+            "thursday": [ 22, 2, 13, 23 ],
+            "friday": [ 21, 1, 12, 23 ],
+            "saturday": [ 19, 31, 11, 22 ],
+            "sunday": [ 19, 30, 10, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
