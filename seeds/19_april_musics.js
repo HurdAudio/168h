@@ -4054,6 +4054,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 226,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3959304174/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://alanbraufman.bandcamp.com/album/valley-of-search-reissue',
+          a_string: 'Valley of Search (Reissue) by Alan Braufman',
+          rule: {
+            "monday": [ 5, 13, 25, 30 ],
+            "tuesday": [ 4, 12, 24, 29 ],
+            "wednesday": [ 3, 11, 23, 28 ],
+            "thursday": [ 2, 10, 22, 27 ],
+            "saturday": [ 6, 14, 26, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 227,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2878658332/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://orendarecords.bandcamp.com/album/walt-weiskopf-european-quartet',
+          a_string: 'Walt Weiskopf European Quartet by Walt Weiskopf',
+          rule: {
+            "monday": [ 6, 14, 26, 1 ],
+            "tuesday": [ 5, 13, 25, 30 ],
+            "wednesday": [ 4, 12, 24, 29 ],
+            "thursday": [ 3, 11, 23, 28 ],
+            "saturday": [ 2, 10, 22, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 228,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=323317358/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jamiesaft.bandcamp.com/album/nowness',
+          a_string: 'Nowness by Jerry Granelli &amp; Jamie Saft',
+          rule: {
+            "monday": [ 2, 10, 22, 27 ],
+            "tuesday": [ 6, 14, 26, 1 ],
+            "wednesday": [ 5, 13, 25, 30 ],
+            "thursday": [ 4, 12, 24, 29 ],
+            "saturday": [ 3, 11, 23, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
