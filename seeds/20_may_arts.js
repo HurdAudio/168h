@@ -7389,7 +7389,7 @@ exports.seed = function(knex, Promise) {
           id: 370,
           user_id: 1,
           theme: 'Socialism & Worker\'s Rights',
-          img_path: './img/may/the-people-for-the-university-the-university-for-the-people-1956.jpg.jpg',
+          img_path: './img/may/the-people-for-the-university-the-university-for-the-people-1956.jpg',
           title: 'The People for the University. The University for the People.',
           artist: 'David Alfaro Siqueiros',
           year: '1952 - 1956',
@@ -7401,6 +7401,106 @@ exports.seed = function(knex, Promise) {
             "friday": [ 22, 1, 11, 19 ],
             "saturday": [ 20, 31, 9, 19 ],
             "sunday": [ 18, 28, 5, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 371,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/from-the-dictatorship-of-porfirio-diaz-to-the-revolution-the-people-in-arms-1957.jpg',
+          title: 'From the Dictatorship of Porfirio Diaz to the Revolution – The People in Arms',
+          artist: 'David Alfaro Siqueiros',
+          year: '1957',
+          rule: {
+            "monday": [ 19, 29, 6, 18 ],
+            "tuesday": [ 16, 27, 6, 26 ],
+            "wednesday": [ 15, 26, 4, 14 ],
+            "thursday": [ 13, 23, 2, 10 ],
+            "friday": [ 11, 20, 1, 10 ],
+            "saturday": [ 23, 2, 12, 20 ],
+            "sunday": [ 21, 1, 10, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 372,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/the-revolutionary-1957.jpg',
+          title: 'The Revolutionary',
+          artist: 'David Alfaro Siqueiros',
+          year: '1957',
+          rule: {
+            "monday": [ 21, 1, 10, 20 ],
+            "tuesday": [ 19, 29, 6, 18 ],
+            "wednesday": [ 16, 27, 6, 26 ],
+            "thursday": [ 15, 26, 4, 14 ],
+            "friday": [ 13, 23, 2, 10 ],
+            "saturday": [ 11, 20, 1, 10 ],
+            "sunday": [ 23, 2, 12, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 373,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/women-of-chilpancingo-1960.jpg',
+          title: 'Women of Chilpancingo',
+          artist: 'David Alfaro Siqueiros',
+          year: '1960',
+          rule: {
+            "monday": [ 23, 2, 12, 20 ],
+            "tuesday": [ 21, 1, 10, 20 ],
+            "wednesday": [ 19, 29, 6, 18 ],
+            "thursday": [ 16, 27, 6, 26 ],
+            "friday": [ 15, 26, 4, 14 ],
+            "saturday": [ 13, 23, 2, 10 ],
+            "sunday": [ 11, 20, 1, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 374,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/enough-1961.jpg',
+          title: 'Enough',
+          artist: 'David Alfaro Siqueiros',
+          year: '1961',
+          rule: {
+            "monday": [ 11, 20, 1, 10 ],
+            "tuesday": [ 23, 2, 12, 20 ],
+            "wednesday": [ 21, 1, 10, 20 ],
+            "thursday": [ 19, 29, 6, 18 ],
+            "friday": [ 16, 27, 6, 26 ],
+            "saturday": [ 15, 26, 4, 14 ],
+            "sunday": [ 13, 23, 2, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 375,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/peace-1961.jpg',
+          title: 'Peace',
+          artist: 'David Alfaro Siqueiros',
+          year: '1961',
+          rule: {
+            "monday": [ 13, 23, 2, 10 ],
+            "tuesday": [ 11, 20, 1, 10 ],
+            "wednesday": [ 23, 2, 12, 20 ],
+            "thursday": [ 21, 1, 10, 20 ],
+            "friday": [ 19, 29, 6, 18 ],
+            "saturday": [ 16, 27, 6, 26 ],
+            "sunday": [ 15, 26, 4, 14 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
