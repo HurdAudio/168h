@@ -70,6 +70,46 @@
   </div>
 </div>
 
+<div id="musicModuleViewPane">
+
+  <a class="btn" href="#" ng-click="$ctrl.musicModuleViewDone()">done</a>
+  <a class="btn" href="#">install</a>
+  <img id="musicModuleViewAuthorPic">
+  <p id="musicModuleViewAuthorName"></p><br><br>
+  <br><br>
+  <div id="musicModuleViewThemeDiv">
+    <h3 id="musicModuleViewTheme"></h3>
+  </div>
+  <div id="musicModuleViewSelections" class="pure-g">
+
+    <div id="musicSelectionLeft" class="pure-u-1-4">
+      <p id="musicLeftTitle"></p>
+    </div>
+    <div id="musicSelectionCenter" class="pure-u-1-4">
+
+      <p  id="musicCenterTitle"></p>
+      <br>
+      <div id="musicLoader">
+        <p id="musicCenterLoader">load</p>
+      </div>
+    </div>
+    <div id="musicSelectionRight" class="pure-u-1-4">
+
+      <p id="musicRightTitle"></p>
+    </div>
+    <div id="musicSelectorPlayer" class="pure-u-1-4">
+
+      <iframe id="musicModulePlayerIframe" style="border: 0; width: 350px; height: 470px;" ng-src="{{$ctrl.musicViewerSource}}" seamless><a id="musicModulePlayerAnchor" href="{{$ctrl.musicViewerHref}}">{{$ctrl.musicViewerAnchor}}</a></iframe>
+    </div>
+
+  </div>
+  <div id="musicModuleViewNavButtons">
+
+    <a class="btn" id="musicModuleViewNavNext">next</a>
+    <a class="btn" id="musicModuleViewNavPrevious">prev</a>
+  </div>
+</div>
+
 <div id="shareHolidayPane">
   <a class="btn" ng-click="$ctrl.cancelHolidayInvite()" href="#">cancel</a>
   <div id="holidayShareIdentifierFields">
@@ -3954,7 +3994,7 @@
               </div>
             <p>Theme: {{musicmod.theme}}</p>
             <p>added by: {{musicmod.authorName}}</p>
-            <a class="btn" href="#">view</a>
+            <a class="btn" href="#" ng-click="$ctrl.musicModuleViewer(musicmod.user_author_id, musicmod.theme)">view</a>
             <a class="btn" href="#">install</a>
             <div class="musicModuleCommentsBar">
 

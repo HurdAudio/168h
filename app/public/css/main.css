@@ -7862,7 +7862,7 @@ footer img {
 
 #artModuleViewPane a {
   float: right;
-  margin: 1vmin 4vmin 0 4vmin;
+  margin: 1vmin 2vmin 0 2vmin;
 }
 
 #artModuleViewPane img {
@@ -7929,7 +7929,162 @@ footer img {
 }
 
 #artModuleViewNavButtons {
-  margin: 4vmin 38vmin 2vmin 10vmin;
+  margin: 4vmin 38vmin 2vmin 8vmin;
+}
+
+#musicModuleViewPane {
+  position: fixed;
+  visibility: hidden;
+  width: 75%;
+  height: 76%;
+  top: 2%;
+  background: #ffffff;
+  background-color: -webkit-linear-gradient(135deg, #ffffff, #000000);
+  background: -o-linear-gradient(135deg, #ffffff, #000000);
+  background: -moz-linear-gradient(135deg, #ffffff, #000000);
+  background: linear-gradient(135deg, #ffffff, #000000);
+  border-radius: 10px;
+  opacity: 0;
+  margin: 6vmin 10vmin 1vmin 10vmin;
+  padding: 4vmin 0 4vmin 25vmin;
+  z-index: -6;
+  border: 3px solid #ffffff;
+}
+
+#musicModuleViewThemeDiv {
+  margin: 1vmin 1vmin 1vmin -10vmin;
+  height: 20%;
+  overflow: scroll;
+}
+
+#musicModuleViewSelections {
+  width: 100%;
+  margin: 0 0 0 0;
+  height: 45%;
+}
+
+#musicModuleViewPane a {
+  float: right;
+  margin: 1vmin 2vmin 0 2vmin;
+}
+
+#musicModuleViewPane img {
+  width: 10%;
+  float: left;
+  margin: 1vmin 2vmin 1vmin -15vmin;
+}
+
+#musicModuleViewPane p {
+  float: left;
+  font-family: 'Neuton', serif;
+  font-size: 24px;
+}
+
+#musicModuleViewPane h3 {
+  font-family: 'Neuton', serif;
+  font-size: 36px;
+}
+
+#musicModuleViewImages {
+  margin-left: -20vmin;
+}
+
+
+
+#musicModuleViewNavButtons {
+  margin: 4vmin 80vmin 2vmin -15vmin;
+}
+
+#musicSelectionLeft {
+  position: relative;
+  background-image: url(../img/blank-vinyl-record-jacket-2924018_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 24%;
+  height: 100%;
+  margin: 0 1vmin 1vmin -18vmin;
+  -webkit-transform: rotateY(-60deg);
+  -moz-transform: rotateY(-60deg);
+  -o-transform: rotateY(-60deg);
+  -ms-transform: rotateY(-60deg);
+  transform: rotateY(-60deg) rotateZ(2deg);
+  border: 2px solid #000000;
+  -moz-box-shadow: -1px 1px 1px #19262E, -2px 2px 2px #1E2A33, -3px 3px  3px #242F38, -4px 4px 4px #29343D, -5px 5px 7px #2E3942, -6px 6px 8px #333E47, -7px 7px 9px #38434C, -8px 8px 10px #4C4851;
+  -webkit-box-shadow: -1px 1px 1px #19262E, -2px 2px 2px #1E2A33, -3px 3px  3px #242F38, -4px 4px 4px #29343D, -5px 5px 7px #2E3942, -6px 6px 8px #333E47, -7px 7px 9px #38434C, -8px 8px 10px #4C4851;
+  box-shadow: -1px 1px 1px #19262E, -2px 2px 2px #1E2A33, -3px 3px  3px #242F38, -4px 4px 4px #29343D, -5px 5px 7px #2E3942, -6px 6px 8px #333E47, -7px 7px 9px #38434C, -8px 8px 10px #4C4851;
+  opacity: 0.5;
+  filter: blur(2px);
+
+}
+
+#musicSelectionLeft p {
+  font-family: 'Asul', sans-serif;
+  font-size: 30px;
+  margin: 1vmin;
+  font-weight: 500;
+  color: #ffff77;
+  text-shadow: -1px 1px 1px #19262E, -2px 2px 2px #1E2A33;
+}
+
+#musicSelectionCenter {
+  position: relative;
+  background-image: url(../img/phonograph-record-3148686_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 24%;
+  height: 100%;
+  margin: 0 1vmin 1vmin 1vmin;
+
+}
+
+#musicSelectionCenter p {
+  font-family: 'Asul', sans-serif;
+  font-size: 30px;
+  margin: 1vmin;
+  font-weight: 500;
+  color: #ffff77;
+  text-shadow: -1px 1px 1px #19262E, -2px 2px 2px #1E2A33;
+}
+
+#musicCenterLoader {
+  position: absolute;
+  bottom: 5%;
+  right: 1%;
+}
+
+#musicSelectionRight {
+  position: relative;
+  background-image: url(../img/blank-vinyl-record-jacket-2924018_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 24%;
+  height: 100%;
+  margin: 0 1vmin 1vmin 1vmin;
+  -webkit-transform: rotateY(60deg);
+  -moz-transform: rotateY(60deg);
+  -o-transform: rotateY(60deg);
+  -ms-transform: rotateY(60deg);
+  transform: rotateY(60deg) rotateZ(-2deg);
+  border: 2px solid #000000;
+  -moz-box-shadow: -1px 1px 1px #19262E, -2px 2px 2px #1E2A33, -3px 3px  3px #242F38, -4px 4px 4px #29343D, -5px 5px 7px #2E3942, -6px 6px 8px #333E47, -7px 7px 9px #38434C, -8px 8px 10px #4C4851;
+  -webkit-box-shadow: -1px 1px 1px #19262E, -2px 2px 2px #1E2A33, -3px 3px  3px #242F38, -4px 4px 4px #29343D, -5px 5px 7px #2E3942, -6px 6px 8px #333E47, -7px 7px 9px #38434C, -8px 8px 10px #4C4851;
+  box-shadow: -1px 1px 1px #19262E, -2px 2px 2px #1E2A33, -3px 3px  3px #242F38, -4px 4px 4px #29343D, -5px 5px 7px #2E3942, -6px 6px 8px #333E47, -7px 7px 9px #38434C, -8px 8px 10px #4C4851;
+  opacity: 0.5;
+  filter: blur(2px);
+
+}
+
+#musicSelectionRight p {
+  font-family: 'Asul', sans-serif;
+  font-size: 30px;
+  margin: 1vmin;
+  font-weight: 500;
+  color: #ffff77;
+  text-shadow: -1px 1px 1px #19262E, -2px 2px 2px #1E2A33;
+}
+
+#musicSelectorPlayer {
+  margin: -15vmin 1vmin 1vmin 3vmin;
 }
 
 

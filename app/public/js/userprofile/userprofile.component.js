@@ -259,6 +259,137 @@
       vm.userEditOccasionShareCommentCompleted = userEditOccasionShareCommentCompleted;
       vm.deleteOccasionShare = deleteOccasionShare;
       vm.addNewHolidayShareComment = addNewHolidayShareComment;
+      vm.musicModuleViewer = musicModuleViewer;
+      vm.musicModuleViewDone = musicModuleViewDone;
+      vm.musicViewerSource = '';
+      vm.musicViewerAnchor = '';
+      vm.musicViewerHref = '';
+
+
+      function musicModuleViewDone() {
+        let musicModuleViewPane = document.getElementById('musicModuleViewPane');
+
+        musicModuleViewPane.setAttribute("style", "visibility: hidden; opacity: 0; z-index: -6; transition: opacity 0.5s linear;");
+      }
+
+      function musicModuleViewer(userId, theme) {
+        let musicModuleViewPane = document.getElementById('musicModuleViewPane');
+        let musicModuleViewAuthorPic = document.getElementById('musicModuleViewAuthorPic');
+        let musicModuleViewAuthorName = document.getElementById('musicModuleViewAuthorName');
+        let leftIndex = 0;
+        let centerIndex = 0;
+        let rightIndex = 0;
+        let musicModuleViewTheme = document.getElementById('musicModuleViewTheme');
+        let musicLeftTitle = document.getElementById('musicLeftTitle');
+        let musicCenterTitle = document.getElementById('musicCenterTitle');
+        let musicRightTitle = document.getElementById('musicRightTitle');
+        let musicModulePlayerIframe = document.getElementById('musicModulePlayerIframe');
+        let musicModulePlayerAnchor = document.getElementById('musicModulePlayerAnchor');
+        let musicModuleViewNavButtons = document.getElementById('musicModuleViewNavButtons');
+        let musicModuleViewNavNext = document.getElementById('musicModuleViewNavNext');
+        if (musicModuleViewNavNext) {
+          musicModuleViewNavNext.parentNode.removeChild(musicModuleViewNavNext);
+          musicModuleViewNavNext = document.createElement('a');
+          musicModuleViewNavButtons.appendChild(musicModuleViewNavNext);
+          musicModuleViewNavNext.id = 'musicModuleViewNavNext';
+          musicModuleViewNavNext.className = 'btn';
+          musicModuleViewNavNext.innerHTML = 'next';
+          musicModuleViewNavNext.setAttribute("style", "cursor: pointer;");
+        }
+        let musicModuleViewNavPrevious = document.getElementById('musicModuleViewNavPrevious');
+        if (musicModuleViewNavPrevious) {
+          musicModuleViewNavPrevious.parentNode.removeChild(musicModuleViewNavPrevious);
+          musicModuleViewNavPrevious = document.createElement('a');
+          musicModuleViewNavButtons.appendChild(musicModuleViewNavPrevious);
+          musicModuleViewNavPrevious.id = 'musicModuleViewNavPrevious';
+          musicModuleViewNavPrevious.className = 'btn';
+          musicModuleViewNavPrevious.innerHTML = 'prev';
+          musicModuleViewNavPrevious.setAttribute("style", "cursor: pointer;");
+        }
+        let musicLoader = document.getElementById('musicLoader');
+        let musicCenterLoader = document.getElementById('musicCenterLoader');
+        if (musicCenterLoader) {
+          musicCenterLoader.parentNode.removeChild(musicCenterLoader);
+          musicCenterLoader = document.createElement('p');
+          musicLoader.appendChild(musicCenterLoader);
+          musicCenterLoader.id = 'musicCenterLoader';
+          musicCenterLoader.innerHTML = 'load';
+          musicCenterLoader.setAttribute("style", "cursor: pointer;");
+        }
+
+
+        musicModuleViewTheme.innerHTML = 'Theme: ' + theme;
+
+        $http.get(`/users/${userId}`)
+        .then(authorData=>{
+          let author = authorData.data;
+          musicModuleViewAuthorPic.src = author.user_avatar_url;
+          musicModuleViewAuthorName.innerHTML = 'Author: ' + author.name;
+
+          $http.get(`/music_modulesbyuser/${userId}`)
+          .then(allModulesData=>{
+            let allModules = allModulesData.data;
+            let selectedMusicModule = allModules.filter(entry=>{
+              return(entry.theme === theme);
+            });
+            selectedMusicModule = selectedMusicModule.sort((a, b)=>{
+              if (a.a_string.toLowerCase() < b.a_string.toLowerCase()) {
+                return -1;
+              } else if (a.a_string.toLowerCase() > b.a_string.toLowerCase()) {
+                return 1;
+              } else {
+                return 0;
+              }
+            });
+
+            leftIndex = selectedMusicModule.length - 1;
+            centerIndex = 0;
+            rightIndex = 1;
+            musicLeftTitle.innerHTML = selectedMusicModule[leftIndex].a_string;
+            musicCenterTitle.innerHTML = selectedMusicModule[centerIndex].a_string;
+            musicRightTitle.innerHTML = selectedMusicModule[rightIndex].a_string;
+            vm.musicViewerSource = selectedMusicModule[centerIndex].src_string;
+            vm.musicViewerHref = selectedMusicModule[centerIndex].href_string;
+            vm.musicViewerAnchor = selectedMusicModule[centerIndex].a_string;
+
+            musicModuleViewNavNext.addEventListener('click', ()=>{
+              leftIndex = centerIndex;
+              centerIndex = rightIndex;
+              ++rightIndex;
+              if (rightIndex === selectedMusicModule.length) {
+                rightIndex = 0;
+              }
+              musicLeftTitle.innerHTML = selectedMusicModule[leftIndex].a_string;
+              musicCenterTitle.innerHTML = selectedMusicModule[centerIndex].a_string;
+              musicRightTitle.innerHTML = selectedMusicModule[rightIndex].a_string;
+            });
+            musicModuleViewNavPrevious.addEventListener('click', ()=>{
+              rightIndex = centerIndex;
+              centerIndex = leftIndex;
+              --leftIndex;
+              if (leftIndex === selectedMusicModule.length) {
+                leftIndex = 0;
+              }
+              musicLeftTitle.innerHTML = selectedMusicModule[leftIndex].a_string;
+              musicCenterTitle.innerHTML = selectedMusicModule[centerIndex].a_string;
+              musicRightTitle.innerHTML = selectedMusicModule[rightIndex].a_string;
+            });
+            musicCenterLoader.addEventListener('click', ()=>{
+              if (vm.musicViewerSource !== selectedMusicModule[centerIndex].src_string) {
+                vm.musicViewerSource = selectedMusicModule[centerIndex].src_string;
+                vm.musicViewerHref = selectedMusicModule[centerIndex].href_string;
+                vm.musicViewerAnchor = selectedMusicModule[centerIndex].a_string;
+                musicModulePlayerIframe.src = vm.musicViewerSource;
+                musicModulePlayerAnchor.href = vm.musicViewerHref;
+                vm.musicViewerHref.innerHTML = vm.musicViewerAnchor;
+              }
+            });
+          });
+
+        });
+
+        musicModuleViewPane.setAttribute("style", "visibility: visible; opacity: 1; z-index: 6; transition: opacity 0.5s linear;");
+      }
 
       function addNewHolidayShareComment(holidayShareId) {
         let subObj = {
@@ -2749,6 +2880,7 @@
           for (let k = 0; k < modules.length; k++) {
             vm.musicModulePreview[k] = {};
             selection = Math.floor(Math.random() * modules[k].length);
+            vm.musicModulePreview[k].user_author_id = modules[k][selection].user_author_id;
             vm.musicModulePreview[k].src_string = modules[k][selection].src_string;
             vm.musicModulePreview[k].href_string = modules[k][selection].href_string;
             vm.musicModulePreview[k].a_string = modules[k][selection].a_string;
