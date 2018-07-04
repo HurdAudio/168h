@@ -8204,6 +8204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 411,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/composizione-dada.jpg',
+          title: 'Composizione Dada',
+          artist: 'Julius Evola',
+          year: '?',
+          rule: {
+            "monday": [ 9, 11, 15, 18 ],
+            "tuesday": [ 11, 13, 14, 15 ],
+            "wednesday": [ 27, 28, 8, 31 ],
+            "thursday": [ 30, 1, 24, 13 ],
+            "friday": [ 4, 2, 25, 28 ],
+            "saturday": [ 4, 5, 27, 31 ],
+            "sunday": [ 7, 9, 10, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 412,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/vincent-s-moon-11-7-07-2007.jpg',
+          title: 'Vincent\'s Moon - 11.7.07',
+          artist: 'John Hoyland',
+          year: '2007',
+          rule: {
+            "monday": [ 7, 9, 10, 12 ],
+            "tuesday": [ 9, 11, 15, 18 ],
+            "wednesday": [ 11, 13, 14, 15 ],
+            "thursday": [ 27, 28, 8, 31 ],
+            "friday": [ 30, 1, 24, 13 ],
+            "saturday": [ 4, 2, 25, 28 ],
+            "sunday": [ 4, 5, 27, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 413,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/formas.jpg',
+          title: 'Formas',
+          artist: 'Almir Mavignier',
+          year: '?',
+          rule: {
+            "monday": [ 5, 6, 28, 1 ],
+            "tuesday": [ 8, 10, 11, 13 ],
+            "wednesday": [ 10, 12, 16, 19 ],
+            "thursday": [ 12, 14, 15, 16 ],
+            "friday": [ 28, 29, 9, 1 ],
+            "saturday": [ 31, 2, 25, 14 ],
+            "sunday": [ 5, 3, 26, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 414,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/polyptych-m-1968.jpg',
+          title: 'Polyptych M',
+          artist: 'Alberto Biasi',
+          year: '1968',
+          rule: {
+            "monday": [ 5, 3, 26, 29 ],
+            "tuesday": [ 5, 6, 28, 1 ],
+            "wednesday": [ 8, 10, 11, 13 ],
+            "thursday": [ 10, 12, 16, 19 ],
+            "friday": [ 12, 14, 15, 16 ],
+            "saturday": [ 28, 29, 9, 1 ],
+            "sunday": [ 31, 2, 25, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 415,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/echoed-forms-1947.jpg',
+          title: 'Echoed Forms',
+          artist: 'Boris Margo',
+          year: '1947',
+          rule: {
+            "monday": [ 31, 2, 25, 14 ],
+            "tuesday": [ 5, 3, 26, 29 ],
+            "wednesday": [ 5, 6, 28, 1 ],
+            "thursday": [ 8, 10, 11, 13 ],
+            "friday": [ 10, 12, 16, 19 ],
+            "saturday": [ 12, 14, 15, 16 ],
+            "sunday": [ 28, 29, 9, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
