@@ -4162,6 +4162,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 232,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3210669649/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://nicemusiclabel.bandcamp.com/album/020-all-in-the-same-room',
+          a_string: '020 &#39;All In The Same Room&#39; by Fia Fiell',
+          rule: {
+            "monday": [ 7, 13, 19, 27 ],
+            "tuesday": [ 6, 12, 18, 26 ],
+            "wednesday": [ 5, 11, 17, 26 ],
+            "thursday": [ 3, 10, 16, 24 ],
+            "saturday": [ 3, 9, 15, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 233,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4101620376/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://annemalin.bandcamp.com/album/am',
+          a_string: 'AM by Anne Malin',
+          rule: {
+            "monday": [ 3, 9, 15, 23 ],
+            "tuesday": [ 7, 13, 19, 27 ],
+            "wednesday": [ 6, 12, 18, 26 ],
+            "thursday": [ 5, 11, 17, 26 ],
+            "saturday": [ 3, 10, 16, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 234,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=874159921/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jenshyu-pi.bandcamp.com/album/song-of-silver-geese',
+          a_string: 'Song of Silver Geese by Jen Shyu',
+          rule: {
+            "monday": [ 4, 11, 17, 25 ],
+            "tuesday": [ 4, 10, 16, 24 ],
+            "wednesday": [ 8, 14, 20, 28 ],
+            "thursday": [ 7, 13, 19, 27 ],
+            "saturday": [ 6, 12, 18, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
