@@ -4270,6 +4270,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 238,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1236766671/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://rpboo.bandcamp.com/album/the-ultimate',
+          a_string: 'The Ultimate by RP Boo',
+          rule: {
+            "monday": [ 23, 17, 19, 25 ],
+            "tuesday": [ 24, 18, 20, 26 ],
+            "wednesday": [ 7, 11, 13, 17 ],
+            "thursday": [ 10, 13, 15, 19 ],
+            "saturday": [ 11, 15, 17, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 239,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3809640767/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://rpboo.bandcamp.com/album/fingers-bank-pads-and-foot-prints',
+          a_string: 'Fingers, Bank Pads and Foot Prints by RP Boo',
+          rule: {
+            "monday": [ 11, 15, 17, 19 ],
+            "tuesday": [ 23, 17, 19, 25 ],
+            "wednesday": [ 24, 18, 20, 26 ],
+            "thursday": [ 7, 11, 13, 17 ],
+            "saturday": [ 10, 13, 15, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 240,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3279189397/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://busdriver-thumbs.bandcamp.com/album/electricity-is-on-our-side-2',
+          a_string: 'Electricity is on our Side by BUSDRIVER',
+          rule: {
+            "monday": [ 10, 13, 15, 19 ],
+            "tuesday": [ 11, 15, 17, 19 ],
+            "wednesday": [ 23, 17, 19, 25 ],
+            "thursday": [ 24, 18, 20, 26 ],
+            "saturday": [ 7, 11, 13, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
