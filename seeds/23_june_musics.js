@@ -3838,6 +3838,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 214,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4081210137/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://yialmelicfrequencies.bandcamp.com/album/yililok',
+          a_string: 'Yililok by Yialmelic Frequencies',
+          rule: {
+            "monday": [ 29, 2, 8, 19 ],
+            "tuesday": [ 27, 5, 7, 18 ],
+            "wednesday": [ 1, 5, 11, 22 ],
+            "thursday": [ 30, 3, 8, 20 ],
+            "saturday": [ 29, 3, 8, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 215,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3639965039/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://auralsonification.bandcamp.com/album/sonic-metamorphosis-arl001',
+          a_string: 'Sonic Metamorphosis - [ARL001] by AURAL',
+          rule: {
+            "monday": [ 29, 3, 8, 20 ],
+            "tuesday": [ 29, 2, 8, 19 ],
+            "wednesday": [ 27, 5, 7, 18 ],
+            "thursday": [ 1, 5, 11, 22 ],
+            "saturday": [ 30, 3, 8, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 216,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3112761787/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bruinebeer.bandcamp.com/album/non-particular-dream-keno-uitslag',
+          a_string: 'Non-particular dream/keno uitslag by Bruine Beer',
+          rule: {
+            "monday": [ 30, 3, 8, 20 ],
+            "tuesday": [ 29, 3, 8, 20 ],
+            "wednesday": [ 29, 2, 8, 19 ],
+            "thursday": [ 27, 5, 7, 18 ],
+            "saturday": [ 1, 5, 11, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
