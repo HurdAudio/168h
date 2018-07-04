@@ -2982,6 +2982,22 @@ footer img {
   opacity: 1;
 }
 
+#observanceSharesBar {
+  font-family: 'Asul', serif;
+  font-size: 18px
+  background: #BC3608;
+  background-color: -webkit-linear-gradient(-135deg, #BC3608, #F0F1F6);
+  background: -o-linear-gradient(-135deg, #BC3608, #F0F1F6);
+  background: -moz-linear-gradient(-135deg, #BC3608, #F0F1F6);
+  background: linear-gradient(-135deg, #BC3608, #F0F1F6);
+  border-radius: 5px;
+  margin: 0;
+  padding:0;
+  height: 3.8em;
+  top: 0%;
+  opacity: 1;
+}
+
 #occasionSharesBar {
   font-family: 'Asul', serif;
   font-size: 18px
@@ -3024,6 +3040,15 @@ footer img {
 }
 
 #holidaySharesNotifier {
+  background-image: url(../img/background-2030242.jpg);
+  background-repeat: repeat;
+  background-size: 75%;
+  font-family: 'Alike Angular', serif;
+  font-weight: 200;
+  font-size: 18px;
+}
+
+#observanceSharesNotifier {
   background-image: url(../img/background-2030242.jpg);
   background-repeat: repeat;
   background-size: 75%;
@@ -3100,6 +3125,22 @@ footer img {
 
 
 #holidaySharesNotifier img {
+  float: left;
+  height: 7em;
+  width: 7em;
+  margin-left: 1.6em;
+  margin-top: 1.2em;
+  margin-right: 1.2em;
+  border: 2px solid #0000cc;
+}
+
+#observanceSharesNotifier h3 {
+  margin: 1vmin 1vmin 1vmin 4vmin;
+}
+
+
+
+#observanceSharesNotifier img {
   float: left;
   height: 7em;
   width: 7em;

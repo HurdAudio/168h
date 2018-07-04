@@ -4100,6 +4100,98 @@
       </main>
 
     </div>
+    <div id="observanceSharesNotification">
+      <div id="observanceSharesBar">
+
+        <h1 id="observanceSharesBarTitle">Shared Observances:</h1>
+
+      </div>
+
+      <div id="observanceSharesNotifier">
+
+        <div class="whoScheduledMe">
+          <!-- <main ng-repeat="observe in $ctrl.activeObservanceShares | orderBy : $ctrl.sortBy"> -->
+            <div id="thisIsObservanceShareDeleteDiv{{observe.id}}" class="profileDeleteOption">
+
+              <!-- <a class="btn" href="#" ng-click="$ctrl.deleteObservanceShare(observance.id)">delete</a><br><br> -->
+            </div>
+
+
+            <img src="{{observance.inviterImg}}"><br>
+            <p id="observanceblockInviter{{observance.id}}">{{observance.inviter}} has shared the following holiday with you on {{observance.cleanDate}}</p>
+            <!-- <p id="observanceblockInvitee{{observance.id}}">You have shared the following holiday with {{observance.invitee}} on {{observance.cleanDate}}</p> -->
+
+            <br><br><br><br><br><br>
+            <h3>{{observance.name}}</h3>
+            <img src="{{observance.picture}}"><br><br>
+            <h3>{{observance.cleanDayOf}}</h3>
+
+            <!-- <br><br><main ng-repeat="art in observance.artWorks | orderBy : $ctrl.sortBy"> -->
+
+              <br><img src="{{art.img_paths}}"><br>
+              <br><h3><b>{{art.artists}}</b></h3><br>
+              <br><h3><em>{{art.titles}}</em>, {{art.years}}</h3><br>
+            <!-- </main> -->
+            <!-- <main ng-repeat="music in observance.musicWorks | orderBy : $ctrl.sortBy"> -->
+              <div class="iframeDiv">
+                <iframe style="border: 0; width: 100%; height: 510px;" src="{{music.src_strings}}" seamless><a href="{{music.href_strings}}">{{music.a_strings}}</a></iframe>
+              </div>
+
+            <!-- </main> -->
+
+
+            <div class="holidayAcceptDenyButtons" id="observanceAcceptDecline{{observance.id}}">
+
+              <a class="btn" ng-click="$ctrl.declineObservanceShare(observance.id)">Decline</a>
+              <a class="btn" ng-click="$ctrl.acceptObservanceShare(observance.id)">Accept</a>
+            </div><br><br>
+            <br><br><div id="observanceShareAccepted{{observance.id}}">
+
+              <img src="{{observance.inviteeImg}}"><br>
+              <br><h3>{{observance.invitee}} has accepted this holiday.</h3>
+            </div>
+            <br><br><div id="observanceShareDeclined{{observance.id}}">
+
+              <img src="{{observance.inviteeImg}}"><br>
+              <br><h3>{{observance.invitee}} has declined this holiday.</h3>
+            </div>
+
+            <!-- <a href=""><h3>comment</h3></a> -->
+
+            <!-- <div class="commentsBar">
+
+              <h1>Comments:</h1>
+              <a class="btn" href="#" ng-click="$ctrl.addNewHolidayShareComment(holiday.id)" id="newHolidayShareCommentButton{{holiday.id}}">add</a>
+            </div> -->
+            <!-- <div id="holidayShareComments">
+              <main ng-repeat="comment in holiday.comments | orderBy : $ctrl.sortBy">
+                <img src="{{comment.user_avatar_url}}"><br><br><br>
+                <br><br><br><p>From: {{comment.name}} <br>
+                on {{comment.cleanDate}}</p><br><br>
+                <textarea id="thisIsTheHolidayShareCommentEditor{{comment.id}}" class="pure-input-1" rows="5"></textarea>
+                <div class="thisIsMessageEditDoneDiv" id="thisIsHolidayShareCommentEditDoneDiv{{comment.id}}"><a class="btn" id="thisIsTheHolidayShareCommentEditorDoneButton{{comment.id}}" href="#" ng-click="$ctrl.userEditHolidayShareCommentCompleted(comment.id)">done</a></div>
+                <h3 id="thisIsHolidayShareCommentComment{{comment.id}}">{{comment.comment}}</h3><br>
+
+                <div id="deleteHolidayShareCommentConfirm{{comment.id}}" class="messageEditDelete">
+
+                  <h3>Delete comment forever?</h3>
+                  <a class="btn" href="#" ng-click="$ctrl.userHolidayShareCommentDeleteCancel(comment.id)">no</a>
+                  <a class="btn" href="#" ng-click="$ctrl.userHolidayShareCommentDeleteConfirmClick(comment.id)">yes</a>
+                </div>
+
+                <div id="editDeleteHolidayShareCommentDiv{{comment.id}}" class="messageEditDelete">
+                  <a class="btn" href="#" ng-click="$ctrl.userEditHolidayShareComment(comment.id)">edit</a>
+                  <a class="btn" href="#" ng-click="$ctrl.userDeleteHolidayShareComment(comment.id)">delete</a>
+                </div><br><br><br><br>
+              </main>
+            </div> -->
+          <!-- </main> -->
+        </div>
+
+
+
+      </div>
+    </div>
 
 
   </div>
