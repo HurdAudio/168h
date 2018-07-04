@@ -10046,6 +10046,39 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 644,
+          user_id: 1,
+          name: 'Sylvie Courvoisier (piano) born 1968.',
+          color: '#F62038',
+          picture: './img/musicians/sylviecourvosier.jpg',
+          day_of: new Date ('1968-11-30T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: true,
+          override_content: {
+            "sources": [ 'bandcamp', 'bandcamp', 'bandcamp' ],
+            "src_strings": [ 'https://bandcamp.com/EmbeddedPlayer/album=1439897988/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=3090462033/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=2273220188/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/' ],
+            "href_strings": [ 'http://intaktrec.bandcamp.com/album/lonelyville', 'http://intaktrec.bandcamp.com/album/d-agala', 'http://natewooleypleasureofthetextsoundamerican.bandcamp.com/album/salt-task' ],
+            "a_strings": [ 'Lonelyville by Sylvie Courvoisier', 'D’Agala by Sylvie Courvoisier Trio', 'Salt Task by Chris Corsano, Sylvie Courvoisier &amp; Nate Wooley' ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 645,
+          user_id: 1,
+          name: 'The world ended on this day in 2014 with Ragnarök - the End of Gods - according to Norse mythology',
+          color: '#DD6C20',
+          picture: './img/doomsday/Equals-Doom-or-Twilight-for-Norse-Gods.jpg',
+          day_of: new Date ('2014-02-22T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
