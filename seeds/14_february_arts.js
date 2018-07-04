@@ -8004,6 +8004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 401,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/green_boxer_2.jpg',
+          title: 'Boxer 2',
+          artist: 'Leamon Green',
+          year: '?',
+          rule: {
+            "monday": [ 28, 7, 15, 23 ],
+            "tuesday": [ 29, 9, 17, 25 ],
+            "wednesday": [ 6, 11, 17, 27 ],
+            "thursday": [ 5, 13, 21, 29 ],
+            "friday": [ 7, 17, 23, 29 ],
+            "saturday": [ 9, 17, 25, 6 ],
+            "sunday": [ 9, 19, 15, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 402,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/Green.jpg',
+          title: 'Installation',
+          artist: 'Renée Green',
+          year: '1993',
+          rule: {
+            "monday": [ 9, 19, 15, 5 ],
+            "tuesday": [ 28, 7, 15, 23 ],
+            "wednesday": [ 29, 9, 17, 25 ],
+            "thursday": [ 6, 11, 17, 27 ],
+            "friday": [ 5, 13, 21, 29 ],
+            "saturday": [ 7, 17, 23, 29 ],
+            "sunday": [ 9, 17, 25, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 403,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/mario-4-400x350.jpg',
+          title: 'Ant',
+          artist: 'Mario Gully',
+          year: '2016',
+          rule: {
+            "monday": [ 9, 17, 25, 6 ],
+            "tuesday": [ 9, 19, 15, 5 ],
+            "wednesday": [ 28, 7, 15, 23 ],
+            "thursday": [ 29, 9, 17, 25 ],
+            "friday": [ 6, 11, 17, 27 ],
+            "saturday": [ 5, 13, 21, 29 ],
+            "sunday": [ 7, 17, 23, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 404,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/Guyton-JoytotheworldLR.jpg',
+          title: 'Joy to the World',
+          artist: 'Tyree Guyton',
+          year: '1999',
+          rule: {
+            "monday": [ 7, 17, 23, 29 ],
+            "tuesday": [ 9, 17, 25, 6 ],
+            "wednesday": [ 9, 19, 15, 5 ],
+            "thursday": [ 28, 7, 15, 23 ],
+            "friday": [ 29, 9, 17, 25 ],
+            "saturday": [ 6, 11, 17, 27 ],
+            "sunday": [ 5, 13, 21, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 405,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/edhamitlton2_York-2003-769x1024.jpg',
+          title: 'York',
+          artist: 'Ed Hamilton',
+          year: '2003',
+          rule: {
+            "monday": [ 5, 13, 21, 29 ],
+            "tuesday": [ 7, 17, 23, 29 ],
+            "wednesday": [ 9, 17, 25, 6 ],
+            "thursday": [ 9, 19, 15, 5 ],
+            "friday": [ 28, 7, 15, 23 ],
+            "saturday": [ 29, 9, 17, 25 ],
+            "sunday": [ 6, 11, 17, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
