@@ -7804,6 +7804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 391,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/unknown-title-1.jpg',
+          title: 'unknown title',
+          artist: 'Menez',
+          year: '?',
+          rule: {
+            "monday": [ 21, 31, 8, 18 ],
+            "tuesday": [ 20, 30, 7, 17 ],
+            "wednesday": [ 19, 29, 7, 16 ],
+            "thursday": [ 25, 3, 13, 21 ],
+            "friday": [ 24, 3, 11, 21 ],
+            "saturday": [ 24, 2, 10, 20 ],
+            "sunday": [ 22, 1, 9, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 392,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/untitled-c78-01-1978.jpg',
+          title: 'Untitled (C78 01)',
+          artist: 'Hannelore Baron',
+          year: '1978',
+          rule: {
+            "monday": [ 23, 2, 10, 20 ],
+            "tuesday": [ 22, 1, 9, 19 ],
+            "wednesday": [ 21, 31, 8, 18 ],
+            "thursday": [ 20, 30, 8, 17 ],
+            "friday": [ 26, 4, 14, 22 ],
+            "saturday": [ 25, 4, 12, 22 ],
+            "sunday": [ 25, 3, 11, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 393,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/mary-mary-1987.jpg',
+          title: 'Mary, Mary',
+          artist: 'Helen Frankenthaler',
+          year: '1987',
+          rule: {
+            "monday": [ 25, 3, 11, 21 ],
+            "tuesday": [ 23, 2, 10, 20 ],
+            "wednesday": [ 22, 1, 9, 19 ],
+            "thursday": [ 21, 31, 8, 18 ],
+            "friday": [ 20, 30, 8, 17 ],
+            "saturday": [ 26, 4, 14, 22 ],
+            "sunday": [ 25, 4, 12, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 394,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/amphora-frieze-2004.jpg',
+          title: 'Amphora Frieze',
+          artist: 'Jo Baer',
+          year: '2004',
+          rule: {
+            "monday": [ 25, 4, 12, 22 ],
+            "tuesday": [ 25, 3, 11, 21 ],
+            "wednesday": [ 23, 2, 10, 20 ],
+            "thursday": [ 22, 1, 9, 19 ],
+            "friday": [ 21, 31, 8, 18 ],
+            "saturday": [ 20, 30, 8, 17 ],
+            "sunday": [ 26, 4, 14, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 395,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/high-summer-world-of-light-2009.jpg',
+          title: 'High Summer World of Light',
+          artist: 'Gillian Ayres',
+          year: '2009',
+          rule: {
+            "monday": [ 26, 4, 14, 22 ],
+            "tuesday": [ 25, 4, 12, 22 ],
+            "wednesday": [ 25, 3, 11, 21 ],
+            "thursday": [ 23, 2, 10, 20 ],
+            "friday": [ 22, 1, 9, 19 ],
+            "saturday": [ 21, 31, 8, 18 ],
+            "sunday": [ 20, 30, 8, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
