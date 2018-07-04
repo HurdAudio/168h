@@ -7604,6 +7604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 381,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/1aVintageCards.JPG',
+          title: 'Rogers Hornsby, Joe Medwick, Johnny Mize',
+          artist: 'Jon Oye',
+          year: 'circa late 1980\'s ',
+          rule: {
+            "monday": [ 20, 25, 1, 7 ],
+            "tuesday": [ 19, 24, 30, 6 ],
+            "wednesday": [ 24, 30, 5, 12 ],
+            "thursday": [ 8, 28, 4, 10 ],
+            "friday": [ 23, 26, 4, 10 ],
+            "saturday": [ 22, 26, 11, 9 ],
+            "sunday": [ 20, 25, 1, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 382,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/4749f273080a7f450eb671d303638984--baseball-art-baseball-games.jpg',
+          title: 'Baseball Sketch',
+          artist: 'John Conrad Berkey',
+          year: '?',
+          rule: {
+            "monday": [ 20, 25, 1, 7 ],
+            "tuesday": [ 20, 25, 1, 7 ],
+            "wednesday": [ 19, 24, 30, 6 ],
+            "thursday": [ 24, 30, 5, 12 ],
+            "friday": [ 8, 28, 4, 10 ],
+            "saturday": [ 23, 26, 4, 10 ],
+            "sunday": [ 22, 26, 11, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 383,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/56b9f3c5fa1dc4cd5fab8ae46925d788.jpg',
+          title: 'The Winning Run',
+          artist: 'Vincent Civiletti',
+          year: '?',
+          rule: {
+            "monday": [ 22, 26, 11, 9 ],
+            "tuesday": [ 20, 25, 1, 7 ],
+            "wednesday": [ 20, 25, 1, 7 ],
+            "thursday": [ 19, 24, 30, 6 ],
+            "friday": [ 24, 30, 5, 12 ],
+            "saturday": [ 8, 28, 4, 10 ],
+            "sunday": [ 23, 26, 4, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 384,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/Lefty_Grove.jpg',
+          title: 'Lefty Grove',
+          artist: 'Arthur K. Miller',
+          year: '1935',
+          rule: {
+            "monday": [ 23, 26, 4, 10 ],
+            "tuesday": [ 22, 26, 11, 9 ],
+            "wednesday": [ 20, 25, 1, 7 ],
+            "thursday": [ 20, 25, 1, 7 ],
+            "friday": [ 19, 24, 30, 6 ],
+            "saturday": [ 24, 30, 5, 12 ],
+            "sunday": [ 8, 28, 4, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 385,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/Winter_Blues.jpg',
+          title: 'Fenway Winter Blues',
+          artist: 'Mark Waitkus',
+          year: '?',
+          rule: {
+            "monday": [ 9, 29, 5, 11 ],
+            "tuesday": [ 24, 27, 5, 11 ],
+            "wednesday": [ 23, 27, 12, 10 ],
+            "thursday": [ 21, 26, 2, 8 ],
+            "friday": [ 21, 26, 2, 8 ],
+            "saturday": [ 20, 25, 1, 7 ],
+            "sunday": [ 25, 1, 6, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
