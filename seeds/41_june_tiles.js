@@ -760,6 +760,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FFFBFE',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 55,
+          user_id: 1,
+          theme: 'Light',
+          type: 'saturday',
+          src_string: '../img/june_tiles/mikael-kristenson-242079-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '160%',
+          color_dark: '#010D1E',
+          color_medium: '#763927',
+          color_light: '#E4ECD4',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
