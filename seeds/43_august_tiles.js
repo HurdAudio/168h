@@ -732,6 +732,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#D3DBE6',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 53,
+          user_id: 1,
+          theme: 'Primary Colors',
+          type: 'week',
+          src_string: '../img/august_tiles/sharon-mccutcheon-535844-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '160%',
+          color_dark: '#120733',
+          color_medium: '#A8DCE5',
+          color_light: '#FBF6F3',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
