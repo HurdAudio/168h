@@ -676,6 +676,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#D8D6D7',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 49,
+          user_id: 1,
+          theme: 'Snow',
+          type: 'friday',
+          src_string: '../img/december_tiles/jonathan-knepper-402493-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '190%',
+          color_dark: '#575B5C',
+          color_medium: '#B5BEBD',
+          color_light: '#F8F9FD',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
