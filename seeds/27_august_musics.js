@@ -874,9 +874,9 @@ exports.seed = function(knex, Promise) {
           user_id: 1,
           theme: 'Noise Music & Non-idiomatic Improvisation',
           source: 'bandcamp',
-          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2674951238/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
-          href_string: 'http://hansonrecords.bandcamp.com/album/slicer',
-          a_string: 'Slicer by Wolf Eyes',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1232351721/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://wolf-eyes.bandcamp.com/album/undertakers-part-one',
+          a_string: 'Undertakers Part One by Wolf Eyes',
           rule: {
             "monday": [ 12, 20, 5, 4 ],
             "tuesday": [ 16, 24, 6, 5 ],

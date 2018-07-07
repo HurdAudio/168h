@@ -4355,7 +4355,7 @@ exports.seed = function(knex, Promise) {
           name: 'Joanne Brackeen (pianist), born 1938',
           color: '#CA7F94',
           picture: './img/musicians/joannebrackeen.jpg',
-          day_of: new Date ('1938-07-06T13:44:00.000Z'),
+          day_of: new Date ('1938-07-26T13:44:00.000Z'),
           is_annual: true,
           art_override: false,
           music_override: false,
