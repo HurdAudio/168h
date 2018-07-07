@@ -802,6 +802,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#C3C7C7',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 58,
+          user_id: 1,
+          theme: 'Glass',
+          type: 'week',
+          src_string: '../img/march_tiles/michael-murphy-116043-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '160%',
+          color_dark: '#1E2420',
+          color_medium: '#51ACD0',
+          color_light: '#F2F4F5',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
