@@ -788,6 +788,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FCF9EC',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 57,
+          user_id: 1,
+          theme: 'Water',
+          type: 'holiday',
+          src_string: '../img/april_tiles/kyaw-tun-263670-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '163%',
+          color_dark: '#08141E',
+          color_medium: '#D69990',
+          color_light: '#C7CFD4',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
