@@ -1744,6 +1744,66 @@ exports.seed = function(knex, Promise) {
           public: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 146,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/federica-diliberto-57819-unsplash.jpg',
+          title: 'Gray and white cat looks up on a yellow bench',
+          artist: 'Federica Diliberto',
+          year: '2018',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 147,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/simone-dalmeri-114593-unsplash.jpg',
+          title: 'A ginger cat looks at the camera while lying down on its side',
+          artist: 'Simone Dalmeri',
+          year: '2018',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 148,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/marina-khrapova-670759-unsplash.jpg',
+          title: 'Angry Face in Bucket',
+          artist: 'Marina Khrapova',
+          year: '2018',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 149,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/caleb-woods-331298-unsplash.jpg',
+          title: 'Window Couch',
+          artist: 'Caleb Woods',
+          year: '2018',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 150,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/linnea-sandbakk-91478-unsplash.jpg',
+          title: 'Close-up of a blue-eyed hairless Sphynx cat',
+          artist: 'Linnea Sandbakk',
+          year: '2018',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
