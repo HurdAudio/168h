@@ -6304,6 +6304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 316,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/untitled-1970.jpg',
+          title: 'Untitled',
+          artist: 'Olivier Mosset',
+          year: '1970',
+          rule: {
+            "monday": [ 22, 27, 2, 8 ],
+            "tuesday": [ 21, 25, 2, 6 ],
+            "wednesday": [ 20, 23, 30, 5 ],
+            "thursday": [ 19, 23, 30, 5 ],
+            "friday": [ 18, 23, 29, 4 ],
+            "saturday": [ 17, 22, 28, 5 ],
+            "sunday": [ 23, 28, 4, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 317,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/the-void-1970.jpg',
+          title: 'The Void',
+          artist: 'Noguchi Isamu',
+          year: '1970',
+          rule: {
+            "monday": [ 23, 28, 4, 9 ],
+            "tuesday": [ 22, 27, 2, 8 ],
+            "wednesday": [ 21, 25, 2, 6 ],
+            "thursday": [ 20, 23, 30, 5 ],
+            "friday": [ 19, 23, 30, 5 ],
+            "saturday": [ 18, 23, 29, 4 ],
+            "sunday": [ 17, 22, 28, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 318,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/utopia-table-lamp-1970.jpg',
+          title: 'Utopia Table Lamp',
+          artist: 'Nanda Vigo',
+          year: '1970',
+          rule: {
+            "monday": [ 17, 22, 28, 5 ],
+            "tuesday": [ 23, 28, 4, 9 ],
+            "wednesday": [ 22, 27, 2, 8 ],
+            "thursday": [ 21, 25, 2, 6 ],
+            "friday": [ 20, 23, 30, 5 ],
+            "saturday": [ 19, 23, 30, 5 ],
+            "sunday": [ 18, 23, 29, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 319,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/r-partition-r-guli-re-de-carr-s-1971.jpg',
+          title: 'Répartition régulière de carrés',
+          artist: 'Francois Morellet',
+          year: '1971',
+          rule: {
+            "monday": [ 18, 23, 29, 4 ],
+            "tuesday": [ 17, 22, 28, 5 ],
+            "wednesday": [ 23, 28, 4, 9 ],
+            "thursday": [ 22, 27, 2, 8 ],
+            "friday": [ 21, 25, 2, 6 ],
+            "saturday": [ 20, 23, 30, 5 ],
+            "sunday": [ 19, 23, 30, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 320,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/work-1971.jpg',
+          title: 'Work',
+          artist: 'Jiro Yoshihara',
+          year: '1971',
+          rule: {
+            "monday": [ 19, 23, 30, 5 ],
+            "tuesday": [ 18, 23, 29, 4 ],
+            "wednesday": [ 17, 22, 28, 5 ],
+            "thursday": [ 23, 28, 4, 9 ],
+            "friday": [ 22, 27, 2, 8 ],
+            "saturday": [ 21, 25, 2, 6 ],
+            "sunday": [ 20, 23, 30, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
