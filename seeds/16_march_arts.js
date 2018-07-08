@@ -7904,6 +7904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 396,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/do-you-like-my-brain-1999.jpg',
+          title: 'Do You Like My Brain?',
+          artist: 'Niki de Sainte Phalle',
+          year: '1999',
+          rule: {
+            "monday": [ 20, 30, 8, 17 ],
+            "tuesday": [ 26, 4, 14, 22 ],
+            "wednesday": [ 25, 4, 12, 22 ],
+            "thursday": [ 25, 3, 11, 21 ],
+            "friday": [ 23, 2, 10, 20 ],
+            "saturday": [ 22, 1, 9, 19 ],
+            "sunday": [ 21, 31, 8, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 397,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/macarena-esperanza-1971.jpg',
+          title: 'Macarena Esperanza',
+          artist: 'Audrey Flack',
+          year: '1971',
+          rule: {
+            "monday": [ 21, 31, 8, 18 ],
+            "tuesday": [ 20, 30, 8, 17 ],
+            "wednesday": [ 26, 4, 14, 22 ],
+            "thursday": [ 25, 4, 12, 22 ],
+            "friday": [ 25, 3, 11, 21 ],
+            "saturday": [ 23, 2, 10, 20 ],
+            "sunday": [ 22, 1, 9, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 398,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/drawing-which-makes-itself-1972.jpg',
+          title: 'Drawing Which Makes Itself',
+          artist: 'Dorothea Rockburne',
+          year: '1972',
+          rule: {
+            "monday": [ 22, 1, 9, 19 ],
+            "tuesday": [ 21, 31, 8, 18 ],
+            "wednesday": [ 20, 30, 8, 17 ],
+            "thursday": [ 26, 4, 14, 22 ],
+            "friday": [ 25, 4, 12, 22 ],
+            "saturday": [ 25, 3, 11, 21 ],
+            "sunday": [ 23, 2, 10, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 399,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/waterdrop-painting-version-1-1961-2015.jpg',
+          title: 'Waterdrop Painting (Version 1)',
+          artist: 'Yoko Ono',
+          year: '1961 - 2015',
+          rule: {
+            "monday": [ 24, 3, 11, 21 ],
+            "tuesday": [ 23, 2, 10, 20 ],
+            "wednesday": [ 22, 1, 9, 19 ],
+            "thursday": [ 21, 31, 9, 18 ],
+            "friday": [ 27, 5, 15, 23 ],
+            "saturday": [ 26, 5, 13, 23 ],
+            "sunday": [ 26, 4, 12, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 400,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/elliptical-spheriod-1969.jpg',
+          title: 'Elliptical Spheriod',
+          artist: 'Helen Pashgian',
+          year: '1969',
+          rule: {
+            "monday": [ 26, 4, 12, 22 ],
+            "tuesday": [ 24, 3, 11, 21 ],
+            "wednesday": [ 23, 2, 10, 20 ],
+            "thursday": [ 22, 1, 9, 19 ],
+            "friday": [ 21, 31, 9, 18 ],
+            "saturday": [ 27, 5, 15, 23 ],
+            "sunday": [ 26, 5, 13, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
