@@ -7304,6 +7304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 366,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/28-14-3-17-11-57-13m.jpg',
+          title: 'Thunderhead Clouds',
+          artist: 'unknown artist',
+          year: '?',
+          rule: {
+            "monday": [ 22, 2, 12, 18 ],
+            "tuesday": [ 21, 1, 11, 19 ],
+            "wednesday": [ 20, 30, 10, 18 ],
+            "thursday": [ 19, 29, 9, 17 ],
+            "friday": [ 28, 8, 18, 16 ],
+            "saturday": [ 17, 27, 7, 15 ],
+            "sunday": [ 16, 26, 6, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 367,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/1mara2217.jpg',
+          title: 'Torrent',
+          artist: 'Anup Shah',
+          year: '2017',
+          rule: {
+            "monday": [ 16, 26, 6, 14 ],
+            "tuesday": [ 22, 2, 12, 18 ],
+            "wednesday": [ 21, 1, 11, 19 ],
+            "thursday": [ 20, 30, 10, 18 ],
+            "friday": [ 19, 29, 9, 17 ],
+            "saturday": [ 28, 8, 18, 16 ],
+            "sunday": [ 17, 27, 7, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 368,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/thumbnail_231201714546734_The_Mara-43.jpg',
+          title: 'Enigma',
+          artist: 'Anup Shah',
+          year: '2017',
+          rule: {
+            "monday": [ 17, 27, 7, 15 ],
+            "tuesday": [ 16, 26, 6, 14 ],
+            "wednesday": [ 22, 2, 12, 18 ],
+            "thursday": [ 21, 1, 11, 19 ],
+            "friday": [ 20, 30, 10, 18 ],
+            "saturday": [ 19, 29, 9, 17 ],
+            "sunday": [ 28, 8, 18, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 369,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/Jib15.jpg',
+          title: 'title unknown',
+          artist: 'Jib Peter',
+          year: '2015',
+          rule: {
+            "monday": [ 28, 8, 18, 16 ],
+            "tuesday": [ 17, 27, 7, 15 ],
+            "wednesday": [ 16, 26, 6, 14 ],
+            "thursday": [ 22, 2, 12, 18 ],
+            "friday": [ 21, 1, 11, 19 ],
+            "saturday": [ 20, 30, 10, 18 ],
+            "sunday": [ 19, 29, 9, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 370,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/25.jpg',
+          title: 'Brainwash',
+          artist: 'Matthieu G',
+          year: '2008',
+          rule: {
+            "monday": [ 19, 29, 9, 17 ],
+            "tuesday": [ 28, 8, 18, 16 ],
+            "wednesday": [ 17, 27, 7, 15 ],
+            "thursday": [ 16, 26, 6, 14 ],
+            "friday": [ 22, 2, 12, 18 ],
+            "saturday": [ 21, 1, 11, 19 ],
+            "sunday": [ 20, 30, 10, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
