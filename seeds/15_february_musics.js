@@ -4324,6 +4324,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 241,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1924295824/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://stevecoleman.bandcamp.com/album/live-at-the-village-vanguard-vol-1-the-embedded-sets',
+          a_string: 'Live at the Village Vanguard, Vol. 1 (The Embedded Sets) by Steve Coleman',
+          rule: {
+            "monday": [ 7, 11, 13, 17 ],
+            "tuesday": [ 10, 13, 15, 19 ],
+            "wednesday": [ 11, 15, 17, 19 ],
+            "thursday": [ 23, 17, 19, 25 ],
+            "saturday": [ 24, 18, 20, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 242,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=635988323/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://stevecoleman.bandcamp.com/album/morphogenesis',
+          a_string: 'Morphogenesis by Steve Coleman',
+          rule: {
+            "monday": [ 24, 18, 20, 26 ],
+            "tuesday": [ 7, 11, 13, 17 ],
+            "wednesday": [ 10, 13, 15, 19 ],
+            "thursday": [ 11, 15, 17, 19 ],
+            "saturday": [ 23, 17, 19, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 243,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1212975563/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://stevecoleman.bandcamp.com/album/synovial-joints',
+          a_string: 'Synovial Joints by Steve Coleman and the Council of Balance',
+          rule: {
+            "monday": [ 23, 17, 19, 25 ],
+            "tuesday": [ 24, 18, 20, 26 ],
+            "wednesday": [ 7, 11, 13, 17 ],
+            "thursday": [ 10, 13, 15, 19 ],
+            "saturday": [ 11, 15, 17, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
