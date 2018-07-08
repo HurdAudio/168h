@@ -4216,6 +4216,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 235,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=612432049/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://loriscacco.bandcamp.com/album/desire-loop',
+          a_string: 'Desire Loop by Lori Scacco',
+          rule: {
+            "monday": [ 6, 12, 18, 27 ],
+            "tuesday": [ 4, 11, 17, 25 ],
+            "wednesday": [ 4, 10, 16, 24 ],
+            "thursday": [ 8, 14, 20, 28 ],
+            "saturday": [ 7, 13, 19, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 236,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1356252312/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://fperecs.bandcamp.com/album/maroon-cloud',
+          a_string: 'maroon cloud by Nicole Mitchell',
+          rule: {
+            "monday": [ 7, 13, 19, 27 ],
+            "tuesday": [ 6, 12, 18, 27 ],
+            "wednesday": [ 4, 11, 17, 25 ],
+            "thursday": [ 4, 10, 16, 24 ],
+            "saturday": [ 8, 14, 20, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 237,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3972681609/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bellsatlas.bandcamp.com/album/be-brave',
+          a_string: 'Be Brave by Bells Atlas',
+          rule: {
+            "monday": [ 8, 14, 20, 28 ],
+            "tuesday": [ 7, 13, 19, 27 ],
+            "wednesday": [ 6, 12, 18, 27 ],
+            "thursday": [ 4, 11, 17, 25 ],
+            "saturday": [ 4, 10, 16, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
