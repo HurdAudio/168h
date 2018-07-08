@@ -7104,6 +7104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 356,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/claude-joseph-vernet-nuit-sce-ne-co-te-me-diterrane-enne-avec-les-pe-cheurs-et-les-bateaux.jpg',
+          title: 'Nuit - Scène de côte méditerranéenne avec des pêcheurs et des bateaux',
+          artist: 'Claude-Joseph Vernet',
+          year: '1753',
+          rule: {
+            "monday": [ 19, 30, 10, 11 ],
+            "tuesday": [ 18, 29, 8, 10 ],
+            "wednesday": [ 17, 28, 8, 9 ],
+            "thursday": [ 16, 27, 7, 18 ],
+            "friday": [ 22, 2, 13, 23 ],
+            "saturday": [ 21, 1, 12, 23 ],
+            "sunday": [ 19, 31, 11, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 357,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/the-venetian-ladys-morning.jpg',
+          title: 'The Venetian Ladys Morning',
+          artist: 'Pietro Longhi',
+          year: '?',
+          rule: {
+            "monday": [ 20, 1, 12, 23 ],
+            "tuesday": [ 20, 31, 11, 12 ],
+            "wednesday": [ 19, 30, 9, 11 ],
+            "thursday": [ 18, 29, 9, 10 ],
+            "friday": [ 17, 28, 8, 19 ],
+            "saturday": [ 23, 3, 14, 24 ],
+            "sunday": [ 22, 2, 13, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 358,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/thalia-muse-of-comedy-1739.jpg',
+          title: 'Thalia, Muse of Comedy',
+          artist: 'Jean-Marc Nattier',
+          year: '1739',
+          rule: {
+            "monday": [ 22, 2, 13, 24 ],
+            "tuesday": [ 20, 1, 12, 23 ],
+            "wednesday": [ 20, 31, 11, 12 ],
+            "thursday": [ 19, 30, 9, 11 ],
+            "friday": [ 18, 29, 9, 10 ],
+            "saturday": [ 17, 28, 8, 19 ],
+            "sunday": [ 23, 3, 14, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 359,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/sainte-madeleine-par-rigaud.jpg',
+          title: 'Sainte Madeleine',
+          artist: 'Hyacinthe Rigaud',
+          year: '?',
+          rule: {
+            "monday": [ 23, 3, 14, 24 ],
+            "tuesday": [ 22, 2, 13, 24 ],
+            "wednesday": [ 20, 1, 12, 23 ],
+            "thursday": [ 20, 31, 11, 12 ],
+            "friday": [ 19, 30, 9, 11 ],
+            "saturday": [ 18, 29, 9, 10 ],
+            "sunday": [ 17, 28, 8, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 360,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/display-image-4.jpg',
+          title: 'Basket of Peaches, with Quinces, and Plums',
+          artist: 'Louise Moillon',
+          year: '?',
+          rule: {
+            "monday": [ 17, 28, 8, 19 ],
+            "tuesday": [ 23, 3, 14, 24 ],
+            "wednesday": [ 22, 2, 13, 24 ],
+            "thursday": [ 20, 1, 12, 23 ],
+            "friday": [ 20, 31, 11, 12 ],
+            "saturday": [ 19, 30, 9, 11 ],
+            "sunday": [ 18, 29, 9, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
