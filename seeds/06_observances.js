@@ -10079,6 +10079,34 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 646,
+          user_id: 1,
+          name: 'Louis Brandeis (lawyer/Supreme Court Justice/advocate for restraining corporate power) born in 1856',
+          color: '#22211C',
+          picture: './img/dissent/Picture_of_Louis_Brandeis.jpg',
+          day_of: new Date ('1856-11-13T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 647,
+          user_id: 1,
+          name: 'The world ended on this day in 2012 exactly as predicted by the Eastern Lightning cult in China - based on their interpretation of Mayan Prophecy.',
+          color: '#EA6D34',
+          picture: './img/doomsday/B84-HwvCUAEoZDE.jpg',
+          day_of: new Date ('2012-12-21T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
