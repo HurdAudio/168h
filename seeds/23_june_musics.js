@@ -3892,6 +3892,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 217,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=349351652/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://alexzhanghungtai.bandcamp.com/album/divine-weight-2',
+          a_string: 'Divine Weight by Alex Zhang Hungtai',
+          rule: {
+            "monday": [ 2, 6, 12, 23 ],
+            "tuesday": [ 1, 4, 9, 21 ],
+            "wednesday": [ 30, 4, 9, 21 ],
+            "thursday": [ 30, 3, 9, 20 ],
+            "saturday": [ 28, 6, 8, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 218,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1682048125/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://rhucle.bandcamp.com/album/a-little-long-day',
+          a_string: 'A Little Long Day by Rhucle',
+          rule: {
+            "monday": [ 28, 6, 8, 19 ],
+            "tuesday": [ 2, 6, 12, 23 ],
+            "wednesday": [ 1, 4, 9, 21 ],
+            "thursday": [ 30, 4, 9, 21 ],
+            "saturday": [ 30, 3, 9, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 219,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3730046507/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'endless descent EP by dandelion',
+          a_string: '',
+          rule: {
+            "monday": [ 30, 3, 9, 20 ],
+            "tuesday": [ 28, 6, 8, 19 ],
+            "wednesday": [ 2, 6, 12, 23 ],
+            "thursday": [ 1, 4, 9, 21 ],
+            "saturday": [ 30, 4, 9, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
