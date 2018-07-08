@@ -7704,6 +7704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 386,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/historic-baseball.png',
+          title: 'Mariners Stock Photo',
+          artist: 'artist unknown',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 25, 1, 6, 13 ],
+            "tuesday": [ 9, 29, 5, 11 ],
+            "wednesday": [ 24, 27, 5, 11 ],
+            "thursday": [ 23, 27, 12, 10 ],
+            "friday": [ 21, 26, 2, 8 ],
+            "saturday": [ 21, 26, 2, 8 ],
+            "sunday": [ 20, 25, 1, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 387,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/13_04376v.jpg',
+          title: 'Men playing baseball',
+          artist: 'Library of Congress',
+          year: '1921',
+          rule: {
+            "monday": [ 20, 25, 1, 7 ],
+            "tuesday": [ 25, 1, 6, 13 ],
+            "wednesday": [ 9, 29, 5, 11 ],
+            "thursday": [ 24, 27, 5, 11 ],
+            "friday": [ 23, 27, 12, 10 ],
+            "saturday": [ 21, 26, 2, 8 ],
+            "sunday": [ 21, 26, 2, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 388,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/Baseball-Lou-Gehrig6802.1.jpg',
+          title: 'Lou Gehrig',
+          artist: 'unknown artist',
+          year: '?',
+          rule: {
+            "monday": [ 21, 26, 2, 8 ],
+            "tuesday": [ 20, 25, 1, 7 ],
+            "wednesday": [ 25, 1, 6, 13 ],
+            "thursday": [ 9, 29, 5, 11 ],
+            "friday": [ 24, 27, 5, 11 ],
+            "saturday": [ 23, 27, 12, 10 ],
+            "sunday": [ 21, 26, 2, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 389,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/Hank-Greenberg-hitting-a-third-inning-homer-against-the-Philadelphia-Phillies-April-29-1947.jpg',
+          title: 'Hank Greenberg Hitting a Third Inning Homer Against the Philadelphia Phillies',
+          artist: 'unknown artist',
+          year: '1947',
+          rule: {
+            "monday": [ 21, 26, 2, 8 ],
+            "tuesday": [ 21, 26, 2, 8 ],
+            "wednesday": [ 20, 25, 1, 7 ],
+            "thursday": [ 25, 1, 6, 13 ],
+            "friday": [ 9, 29, 5, 11 ],
+            "saturday": [ 24, 27, 5, 11 ],
+            "sunday": [ 23, 27, 12, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 390,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/13527u_Photistoric_HD_LOC.jpg',
+          title: 'Mathewson of N.Y. Nat.',
+          artist: 'Paul Thompson',
+          year: '1910',
+          rule: {
+            "monday": [ 23, 27, 12, 10 ],
+            "tuesday": [ 21, 26, 2, 8 ],
+            "wednesday": [ 21, 26, 2, 8 ],
+            "thursday": [ 20, 25, 1, 7 ],
+            "friday": [ 25, 1, 6, 13 ],
+            "saturday": [ 9, 29, 5, 11 ],
+            "sunday": [ 24, 27, 5, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
