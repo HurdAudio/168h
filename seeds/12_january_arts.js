@@ -8304,6 +8304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 416,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/folium-argentum-1968.jpg',
+          title: 'Folium Argentum',
+          artist: 'Heinz Mack',
+          year: '1968',
+          rule: {
+            "monday": [ 28, 29, 9, 1 ],
+            "tuesday": [ 31, 2, 25, 14 ],
+            "wednesday": [ 5, 3, 26, 29 ],
+            "thursday": [ 5, 6, 28, 1 ],
+            "friday": [ 8, 10, 11, 13 ],
+            "saturday": [ 10, 12, 16, 19 ],
+            "sunday": [ 12, 14, 15, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 417,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/end-gable-1972.jpg',
+          title: 'End Gable',
+          artist: 'Leon Polk Smith',
+          year: '1972',
+          rule: {
+            "monday": [ 12, 14, 15, 16 ],
+            "tuesday": [ 28, 29, 9, 1 ],
+            "wednesday": [ 31, 2, 25, 14 ],
+            "thursday": [ 5, 3, 26, 29 ],
+            "friday": [ 5, 6, 28, 1 ],
+            "saturday": [ 8, 10, 11, 13 ],
+            "sunday": [ 10, 12, 16, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 418,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/675-73-sequenz-kalt-warm-portrait-der-farbe-cerise-1973.jpg',
+          title: '675/73 (Sequenz Kalt Warm – Portrait der Farbe Cerise)',
+          artist: 'Rupprecht Geiger',
+          year: '1973',
+          rule: {
+            "monday": [ 10, 12, 16, 19 ],
+            "tuesday": [ 12, 14, 15, 16 ],
+            "wednesday": [ 28, 29, 9, 1 ],
+            "thursday": [ 31, 2, 25, 14 ],
+            "friday": [ 5, 3, 26, 29 ],
+            "saturday": [ 5, 6, 28, 1 ],
+            "sunday": [ 8, 10, 11, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 419,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/pygmalion-1979.jpg',
+          title: 'Pygmalion',
+          artist: 'Norman Bluhm',
+          year: '1979',
+          rule: {
+            "monday": [ 8, 10, 11, 13 ],
+            "tuesday": [ 10, 12, 16, 19 ],
+            "wednesday": [ 12, 14, 15, 16 ],
+            "thursday": [ 28, 29, 9, 1 ],
+            "friday": [ 31, 2, 25, 14 ],
+            "saturday": [ 5, 3, 26, 29 ],
+            "sunday": [ 5, 6, 28, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 420,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/battal-ebru-4.jpg',
+          title: 'Battal Ebru',
+          artist: 'Mustafa Duzgunman',
+          year: '?',
+          rule: {
+            "monday": [ 6, 7, 29, 2 ],
+            "tuesday": [ 9, 11, 12, 14 ],
+            "wednesday": [ 11, 13, 17, 20 ],
+            "thursday": [ 13, 15, 16, 17 ],
+            "friday": [ 29, 30, 10, 2 ],
+            "saturday": [ 1, 3, 26, 15 ],
+            "sunday": [ 6, 4, 27, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
