@@ -4000,6 +4000,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 223,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3682264759/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://weighter.bandcamp.com/album/stries-ton-tripes-et-poils',
+          a_string: 'Stries ton, tripes et poils by Prune Bécheau',
+          rule: {
+            "monday": [ 2, 8, 15, 28 ],
+            "tuesday": [ 1, 7, 14, 27 ],
+            "wednesday": [ 5, 12, 18, 31 ],
+            "thursday": [ 4, 10, 17, 30 ],
+            "saturday": [ 3, 9, 16, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 224,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1968818633/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://oraclehysterical.bandcamp.com/album/hecuba',
+          a_string: 'Hecuba by Oracle Hysterical',
+          rule: {
+            "monday": [ 4, 10, 17, 30 ],
+            "tuesday": [ 3, 9, 16, 29 ],
+            "wednesday": [ 2, 8, 15, 28 ],
+            "thursday": [ 6, 13, 19, 1 ],
+            "saturday": [ 5, 11, 18, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 225,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2321937059/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://elsewheremusic.bandcamp.com/album/musique-pour-le-lever-du-jour',
+          a_string: 'Musique pour le lever du jour by Melaine Dalibert',
+          rule: {
+            "monday": [ 5, 11, 18, 31 ],
+            "tuesday": [ 4, 10, 17, 30 ],
+            "wednesday": [ 3, 9, 16, 29 ],
+            "thursday": [ 2, 8, 15, 28 ],
+            "saturday": [ 6, 13, 19, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
