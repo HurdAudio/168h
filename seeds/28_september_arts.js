@@ -6704,6 +6704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 336,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/lilith-1994.jpg',
+          title: 'Lilith',
+          artist: 'Kiki Smith',
+          year: '1994',
+          rule: {
+            "monday": [ 18, 24, 12, 20 ],
+            "tuesday": [ 17, 23, 11, 19 ],
+            "wednesday": [ 6, 22, 10, 19 ],
+            "thursday": [ 5, 12, 9, 17 ],
+            "friday": [ 13, 20, 8, 15 ],
+            "saturday": [ 20, 26, 14, 22 ],
+            "sunday": [ 19, 25, 13, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 337,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/genii-loci-ii-1970.jpg',
+          title: 'Genii Loci II',
+          artist: 'Nikos Hadjikyriakos-Ghikas',
+          year: '1970',
+          rule: {
+            "monday": [ 19, 25, 13, 21 ],
+            "tuesday": [ 18, 24, 12, 20 ],
+            "wednesday": [ 17, 23, 11, 19 ],
+            "thursday": [ 6, 22, 10, 19 ],
+            "friday": [ 5, 12, 9, 17 ],
+            "saturday": [ 13, 20, 8, 15 ],
+            "sunday": [ 20, 26, 14, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 338,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/heart-2009.jpg',
+          title: 'Heart',
+          artist: 'Peter Max',
+          year: '2009',
+          rule: {
+            "monday": [ 20, 26, 14, 22 ],
+            "tuesday": [ 19, 25, 13, 21 ],
+            "wednesday": [ 18, 24, 12, 20 ],
+            "thursday": [ 17, 23, 11, 19 ],
+            "friday": [ 6, 22, 10, 19 ],
+            "saturday": [ 5, 12, 9, 17 ],
+            "sunday": [ 13, 20, 8, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 339,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/blossoms-1977.jpg',
+          title: 'Blossoms',
+          artist: 'Huang Yongyu',
+          year: '1977',
+          rule: {
+            "monday": [ 13, 20, 8, 15 ],
+            "tuesday": [ 20, 26, 14, 22 ],
+            "wednesday": [ 19, 25, 13, 21 ],
+            "thursday": [ 18, 24, 12, 20 ],
+            "friday": [ 17, 23, 11, 19 ],
+            "saturday": [ 6, 22, 10, 19 ],
+            "sunday": [ 5, 12, 9, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 340,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/structures-1956.jpg',
+          title: 'Structures',
+          artist: 'Kazuo Nakamura',
+          year: '1956',
+          rule: {
+            "monday": [ 5, 12, 9, 17 ],
+            "tuesday": [ 13, 20, 8, 15 ],
+            "wednesday": [ 20, 26, 14, 22 ],
+            "thursday": [ 19, 25, 13, 21 ],
+            "friday": [ 18, 24, 12, 20 ],
+            "saturday": [ 17, 23, 11, 19 ],
+            "sunday": [ 6, 22, 10, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
