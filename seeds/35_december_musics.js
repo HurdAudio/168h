@@ -3244,6 +3244,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 181,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3997040447/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ansiedaed.bandcamp.com/album/ansiedaed',
+          a_string: 'ANSIEDAED by ANSIEDAED',
+          rule: {
+            "monday": [ 31, 6, 12, 17 ],
+            "tuesday": [ 28, 5, 11, 17 ],
+            "wednesday": [ 27, 4, 10, 16 ],
+            "thursday": [ 28, 3, 9, 15 ],
+            "saturday": [ 1, 7, 13, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 182,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2013281606/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://vhslogos.bandcamp.com/album/mantra',
+          a_string: 'Mantra by VHS LOGOS',
+          rule: {
+            "monday": [ 2, 8, 14, 20 ],
+            "tuesday": [ 1, 7, 13, 18 ],
+            "wednesday": [ 29, 6, 12, 18 ],
+            "thursday": [ 28, 5, 11, 17 ],
+            "saturday": [ 29, 4, 10, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 183,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=468808540/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://loomerband.bandcamp.com/album/coward-soul',
+          a_string: 'Coward Soul by Loomer',
+          rule: {
+            "monday": [ 29, 4, 10, 16 ],
+            "tuesday": [ 2, 8, 14, 20 ],
+            "wednesday": [ 1, 7, 13, 18 ],
+            "thursday": [ 29, 6, 12, 18 ],
+            "saturday": [ 28, 5, 11, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
