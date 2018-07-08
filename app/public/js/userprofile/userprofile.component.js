@@ -15050,6 +15050,40 @@
         });
       }
 
+      function retrieveTaskCommenterProfileInfo(commenterId, taskIndex, commentIndex) {
+        $http.get(`/users/${commenterId}`)
+        .then(commenterData=>{
+          let commenter = commenterData.data;
+          vm.activeTaskShares[taskIndex].comments[commentIndex].commenterImg = commenter.user_avatar_url;
+          vm.activeTaskShares[taskIndex].comments[commentIndex].commenterName = commenter.name;
+        });
+      }
+
+      function retrieveTaskShareComments(taskShare, index) {
+        let cDate;
+        $http.get('/task_share_comments')
+        .then(allTaskShareCommentsData=>{
+          let allTaskShareComments = allTaskShareCommentsData.data;
+          let taskComments = allTaskShareComments.filter(cmnt=>{
+            return(cmnt.task_share === taskShare.id);
+          });
+          if (taskComments.length > 0) {
+            vm.activeTaskShares[index].comments = [];
+            for (let i = 0; i < taskComments.length; i++) {
+              cDate = new Date(taskComments[i].created_at);
+              vm.activeTaskShares[index].comments[i] = {
+                id: taskComments[i].id,
+                comment: taskComments[i].comment,
+                cleanDate: cleanDateHoliday(taskComments[i].created_at) + ' at ' +  cDate.toLocaleTimeString('en-GB'),
+                updated_at: taskComments[i].updated_at,
+                created_at: taskComments[i].created_at
+              };
+              retrieveTaskCommenterProfileInfo(taskComments[i].user_id, index, i);
+            }
+          }
+        });
+      }
+
       function retrieveUserTaskShares() {
         let aDate;
         let bDate;
@@ -15081,6 +15115,7 @@
               vm.activeTaskShares[i].cleanDate =  cleanDateHoliday(userTaskShares[i].created_at) + ' at ' +  cDate.toLocaleTimeString('en-GB');
               getTaskShareTaskDetails(userTaskShares[i].task_id, i);
               vm.activeTaskShares[i].id = userTaskShares[i].id;
+              retrieveTaskShareComments(userTaskShares[i], i);
             }
             setTimeout(()=>{
               for (let j = 0; j < userTaskShares.length; j++) {

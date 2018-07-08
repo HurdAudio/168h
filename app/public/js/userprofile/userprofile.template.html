@@ -4118,8 +4118,8 @@
 
 
             <img src="{{observance.inviterImg}}"><br>
-            <p id="observanceblockInviter{{observance.id}}">{{observance.inviter}} has shared the following holiday with you on {{observance.cleanDate}}</p>
-            <!-- <p id="observanceblockInvitee{{observance.id}}">You have shared the following holiday with {{observance.invitee}} on {{observance.cleanDate}}</p> -->
+            <p id="observanceblockInviter{{observance.id}}">{{observance.inviter}} has shared the following observance with you on {{observance.cleanDate}}</p>
+            <!-- <p id="observanceblockInvitee{{observance.id}}">You have shared the following observance with {{observance.invitee}} on {{observance.cleanDate}}</p> -->
 
             <br><br><br><br><br><br>
             <h3>{{observance.name}}</h3>
@@ -5489,12 +5489,12 @@
                 <h1>Comments:</h1>
               </div>
               <div class="occasionShareComments">
-                <!-- <main ng-repeat="comment in holiday.comments | orderBy : $ctrl.sortBy"> -->
-                  <img src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/1964977_10203532053928956_1620738254_n.jpg?oh=912289bc56416424f7d2e4ef3bfb8604&oe=5B41AE92"><br><br><br>
-                  <br><br><br><p>From: Lucifer Sam <br>
-                  on 20 April 2018</p><br><br>
-                  <h3>Data is for fools.</h3><br>
-                <!-- </main> -->
+                <main ng-repeat="comment in task.comments | orderBy : $ctrl.sortBy">
+                  <img src="{{comment.commenterImg}}"><br><br><br>
+                  <br><br><br><p>From: {{comment.commenterName}} <br>
+                  on {{comment.cleanDate}}</p><br><br>
+                  <h3>{{comment.comment}}</h3><br>
+                </main>
               </div>
 
             </main>

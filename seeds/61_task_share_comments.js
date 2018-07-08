@@ -9,7 +9,7 @@ exports.seed = function(knex, Promise) {
           id: 1,
           user_id: 1,
           task_share: 1,
-          comment: 'Don\'t forget tow write them RESTful routes.',
+          comment: 'Don\'t forget to write them RESTful routes.',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
