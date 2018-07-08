@@ -3352,6 +3352,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 187,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2526125338/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://habibifunkrecords.bandcamp.com/album/habibi-funk-008-muslims-and-christians',
+          a_string: 'Habibi Funk 008: Muslims and Christians by Kamal Keila',
+          rule: {
+            "monday": [ 27, 8, 19, 23 ],
+            "tuesday": [ 26, 7, 18, 22 ],
+            "wednesday": [ 25, 6, 17, 19 ],
+            "thursday": [ 24, 5, 16, 28 ],
+            "saturday": [ 28, 9, 20, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 188,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1464668603/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://mamanthereal249.bandcamp.com/album/eyes-of-a-gemini',
+          a_string: 'http://mamanthereal249.bandcamp.com/album/eyes-of-a-gemini',
+          rule: {
+            "monday": [ 28, 9, 20, 24 ],
+            "tuesday": [ 27, 8, 19, 23 ],
+            "wednesday": [ 26, 7, 18, 22 ],
+            "thursday": [ 25, 6, 17, 19 ],
+            "saturday": [ 24, 5, 16, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 189,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=646846745/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://youngmontana.bandcamp.com/album/young-montana',
+          a_string: 'Young Montana? by RIP',
+          rule: {
+            "monday": [ 25, 6, 17, 29 ],
+            "tuesday": [ 29, 10, 21, 25 ],
+            "wednesday": [ 28, 9, 20, 24 ],
+            "thursday": [ 27, 8, 19, 23 ],
+            "saturday": [ 26, 7, 18, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
