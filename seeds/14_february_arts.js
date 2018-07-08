@@ -8104,6 +8104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 406,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/Auditor.jpg',
+          title: 'Auditor',
+          artist: 'Patrick Earl Hammie',
+          year: '2016',
+          rule: {
+            "monday": [ 7, 12, 18, 28 ],
+            "tuesday": [ 6, 14, 22, 1 ],
+            "wednesday": [ 8, 18, 24, 1 ],
+            "thursday": [ 10, 18, 26, 7 ],
+            "friday": [ 10, 20, 16, 6 ],
+            "saturday": [ 29, 8, 16, 24 ],
+            "sunday": [ 1, 10, 18, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 407,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/p1070824-e1423951185291.jpg',
+          title: 'Untitled (Night Train)',
+          artist: 'David Hammons',
+          year: '1989',
+          rule: {
+            "monday": [ 1, 10, 18, 26 ],
+            "tuesday": [ 7, 12, 18, 28 ],
+            "wednesday": [ 6, 14, 22, 1 ],
+            "thursday": [ 8, 18, 24, 1 ],
+            "friday": [ 10, 18, 26, 7 ],
+            "saturday": [ 10, 20, 16, 6 ],
+            "sunday": [ 29, 8, 16, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 408,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/trenton-doyle-hancock-skin-and-bones-61.jpg',
+          title: 'The Doorstop',
+          artist: 'Trenton Doyle Hancock',
+          year: '2010',
+          rule: {
+            "monday": [ 29, 8, 16, 24 ],
+            "tuesday": [ 1, 10, 18, 26 ],
+            "wednesday": [ 7, 12, 18, 28 ],
+            "thursday": [ 6, 14, 22, 1 ],
+            "friday": [ 8, 18, 24, 1 ],
+            "saturday": [ 10, 18, 26, 7 ],
+            "sunday": [ 10, 20, 16, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 409,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/e8977485c2bd4b7ee750f1dd2cba7010.jpg',
+          title: 'American Beauty',
+          artist: 'Edwin Harleston',
+          year: 'xix - xx cent.',
+          rule: {
+            "monday": [ 10, 20, 16, 6 ],
+            "tuesday": [ 29, 8, 16, 24 ],
+            "wednesday": [ 1, 10, 18, 26 ],
+            "thursday": [ 7, 12, 18, 28 ],
+            "friday": [ 6, 14, 22, 1 ],
+            "saturday": [ 8, 18, 24, 1 ],
+            "sunday": [ 10, 18, 26, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 410,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/5dd417f42367bdb5ba3694e21269489d.jpg',
+          title: 'The Block | Bellona (Detail 1)',
+          artist: 'Kira Lynn Harris',
+          year: '2011',
+          rule: {
+            "monday": [ 10, 18, 26, 7 ],
+            "tuesday": [ 10, 20, 16, 6 ],
+            "wednesday": [ 29, 8, 16, 24 ],
+            "thursday": [ 1, 10, 18, 26 ],
+            "friday": [ 7, 12, 18, 28 ],
+            "saturday": [ 6, 14, 22, 1 ],
+            "sunday": [ 8, 18, 24, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
