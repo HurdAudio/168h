@@ -264,6 +264,47 @@
       vm.musicViewerSource = '';
       vm.musicViewerAnchor = '';
       vm.musicViewerHref = '';
+      vm.declineTask = declineTask;
+      vm.acceptTask = acceptTask;
+
+      function acceptTask(taskId) {
+        let taskPatcher = {
+          responded: true,
+          accepted: true,
+          updated_at: new Date()
+        };
+        $http.patch(`/task_shares/${taskId}`, taskPatcher)
+        .then(patchedTaskData=>{
+          let patchedTask = patchedTaskData.data;
+          $http.get(`/tasks/${patchedTask.task_id}`)
+          .then(assignedTaskData=>{
+            let assignedTask = assignedTaskData.data;
+            $http.post('/tasks', assignedTask)
+            .then(taskInData=>{
+              let taskIn = taskInData.data;
+              document.getElementById('taskAcceptDecline' + patchedTask.id).setAttribute("style", "display: none;");
+              document.getElementById('taskShareAccepted' + patchedTask.id).setAttribute("style", "display: initial;");
+              document.getElementById('taskShareDeclined' + patchedTask.id).setAttribute("style", "display: none;");
+            });
+          });
+        });
+      }
+
+      function declineTask(taskId) {
+        let taskPatcher = {
+          responded: true,
+          accepted: false,
+          updated_at: new Date()
+        };
+        $http.patch(`/task_shares/${taskId}`, taskPatcher)
+        .then(patchedTaskData=>{
+          let patchedTask = patchedTaskData.data;
+          document.getElementById('taskAcceptDecline' + patchedTask.id).setAttribute("style", "display: none;");
+          document.getElementById('taskShareAccepted' + patchedTask.id).setAttribute("style", "display: none;");
+          document.getElementById('taskShareDeclined' + patchedTask.id).setAttribute("style", "display: initial;");
+        });
+
+      }
 
 
       function musicModuleViewDone() {
@@ -15026,11 +15067,15 @@
         $http.get(`/users/${userId}`)
         .then(theUserData=>{
           let theUser = theUserData.data;
-          vm.activeTaskShares[index].task_pic = theUser.user_avatar_url;
+          if (parseInt(currentUserId) !== parseInt(userId)) {
+            vm.activeTaskShares[index].task_pic = theUser.user_avatar_url;
+          }
           if (context === 'tasker') {
             vm.activeTaskShares[index].sharerName = theUser.name;
           } else {
             vm.activeTaskShares[index].shareeName = theUser.name;
+            vm.activeTaskShares[index].sharee_pic = theUser.user_avatar_url;
+
           }
         });
       }
@@ -15088,6 +15133,7 @@
         let aDate;
         let bDate;
         let cDate;
+        let uDate;
 
         $http.get(`/task_shares`)
         .then(allTaskSharesData=>{
@@ -15108,23 +15154,57 @@
               vm.activeTaskShares[i] = {};
               if (userTaskShares[i].share_associate_id !== currentUserId) {
                 getTaskShareUserAndPicture(userTaskShares[i].user_id, 'tasker', i);
+                getTaskShareUserAndPicture(userTaskShares[i].share_associate_id, 'taskee', i);
               } else {
                 getTaskShareUserAndPicture(userTaskShares[i].share_associate_id, 'taskee', i);
               }
               cDate = new Date(userTaskShares[i].created_at);
+              uDate = new Date(userTaskShares[i].updated_at);
               vm.activeTaskShares[i].cleanDate =  cleanDateHoliday(userTaskShares[i].created_at) + ' at ' +  cDate.toLocaleTimeString('en-GB');
+              if (cDate.getTime() < uDate.getTime()) {
+                vm.activeTaskShares[i].updatedClean = cleanDateHoliday(userTaskShares[i].updated_at) + ' at ' + uDate.toLocaleTimeString('en-GB');
+              }
+
               getTaskShareTaskDetails(userTaskShares[i].task_id, i);
               vm.activeTaskShares[i].id = userTaskShares[i].id;
               retrieveTaskShareComments(userTaskShares[i], i);
+              console.log(vm.activeTaskShares);
             }
             setTimeout(()=>{
               for (let j = 0; j < userTaskShares.length; j++) {
                 if (userTaskShares[j].share_associate_id !== currentUserId) {
                   document.getElementById('taskSharer' + vm.activeTaskShares[j].id).setAttribute("style", "display: initial;");
                   document.getElementById('taskSharee' + vm.activeTaskShares[j].id).setAttribute("style", "display: none;");
+                  if (userTaskShares[j].responded) {
+                    document.getElementById('taskAcceptDecline' + vm.activeTaskShares[j].id).setAttribute("style", "display: none;");
+                    if (userTaskShares[j].accepted) {
+
+                      document.getElementById('taskShareDeclined' + userTaskShares[j].id).setAttribute("style", "display: none;");
+                    } else {
+                      document.getElementById('taskShareAccepted' + userTaskShares[j].id).setAttribute("style", "display: none;");
+
+                    }
+                  } else {
+                    document.getElementById('taskShareAccepted' + userTaskShares[j].id).setAttribute("style", "display: none;");
+                    document.getElementById('taskShareDeclined' + userTaskShares[j].id).setAttribute("style", "display: none;");
+                  }
+
                 } else {
                   document.getElementById('taskSharer' + vm.activeTaskShares[j].id).setAttribute("style", "display: none;");
                   document.getElementById('taskSharee' + vm.activeTaskShares[j].id).setAttribute("style", "display: initial;");
+                  document.getElementById('taskAcceptDecline' + vm.activeTaskShares[j].id).setAttribute("style", "display: none;");
+                  if (userTaskShares[j].responded) {
+                    if (userTaskShares[j].accepted) {
+
+                      document.getElementById('taskShareDeclined' + userTaskShares[j].id).setAttribute("style", "display: none;");
+                    } else {
+                      document.getElementById('taskShareAccepted' + userTaskShares[j].id).setAttribute("style", "display: none;");
+
+                    }
+                  } else {
+                    document.getElementById('taskShareAccepted' + userTaskShares[j].id).setAttribute("style", "display: none;");
+                    document.getElementById('taskShareDeclined' + userTaskShares[j].id).setAttribute("style", "display: none;");
+                  }
                 }
               }
             }, (userTaskShares.length * 50));

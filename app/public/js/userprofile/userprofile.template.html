@@ -5476,10 +5476,20 @@
               <h3>{{task.dueDate}}</h3>
               <h3>{{task.completionStatus}}</h3>
 
-              <div class="holidayAcceptDenyButtons" id="taskAcceptDecline{{occasion.id}}">
+              <div class="holidayAcceptDenyButtons" id="taskAcceptDecline{{task.id}}">
 
-                <a class="btn">Decline</a>
-                <a class="btn">Accept</a>
+                <a class="btn" ng-click="$ctrl.declineTask(task.id)">Decline</a>
+                <a class="btn" ng-click="$ctrl.acceptTask(task.id)">Accept</a>
+              </div><br><br>
+              <br><br><div id="taskShareAccepted{{task.id}}">
+
+                <img src="{{task.sharee_pic}}"><br>
+                <br><h3>{{task.shareeName}} has accepted this task |  {{task.updatedClean}}.</h3>
+              </div>
+              <br><br><div id="taskShareDeclined{{task.id}}">
+
+                <img src="{{task.sharee_pic}}"><br>
+                <br><h3>{{task.shareeName}} has declined this task |  {{task.updatedClean}}.</h3>
               </div>
 
               <a href=""><h3>comment</h3></a>
@@ -5527,4 +5537,3 @@
     </div>
   </div>
 </footer>
-dem

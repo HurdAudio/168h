@@ -656,7 +656,7 @@
         let taskCompletion = {};
         let doneDate = new Date();
         taskCompletion.is_completed = true;
-        taskCompletion.completed_date = new Date(doneDate + 'T13:44:00.000Z');
+        taskCompletion.completed_date = doneDate;
         $http.get(`/tasks/${taskID}`)
         .then(completedTaskData=>{
           let completedTask = completedTaskData.data;
