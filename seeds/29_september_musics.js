@@ -3568,6 +3568,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 199,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4098725441/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://softmachine-moonjune.bandcamp.com/album/hidden-details-hd',
+          a_string: 'Hidden Details (HD) by Soft Machine',
+          rule: {
+            "monday": [ 29, 19, 27, 21 ],
+            "tuesday": [ 28, 18, 26, 20 ],
+            "wednesday": [ 2, 22, 30, 24 ],
+            "thursday": [ 1, 21, 29, 23 ],
+            "saturday": [ 30, 20, 28, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 200,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2962792069/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://regalworm.bandcamp.com/album/pig-views',
+          a_string: 'Pig Views by Regal Worm',
+          rule: {
+            "monday": [ 30, 20, 28, 23 ],
+            "tuesday": [ 29, 19, 27, 21 ],
+            "wednesday": [ 28, 18, 26, 20 ],
+            "thursday": [ 2, 22, 30, 24 ],
+            "saturday": [ 1, 21, 29, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 201,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=138950917/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://kawriswhisper.bandcamp.com/album/belle-epoque',
+          a_string: 'Belle Epoque by Kawri&#39;s Whisper',
+          rule: {
+            "monday": [ 1, 21, 29, 23 ],
+            "tuesday": [ 30, 20, 28, 23 ],
+            "wednesday": [ 29, 19, 27, 21 ],
+            "thursday": [ 28, 18, 26, 20 ],
+            "saturday": [ 2, 22, 30, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
