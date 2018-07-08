@@ -6904,6 +6904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 346,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/church-at-tr-boul-1930.jpg',
+          title: 'Church at Tréboul',
+          artist: 'Christopher Wood',
+          year: '1930',
+          rule: {
+            "monday": [ 16, 19, 28, 13 ],
+            "tuesday": [ 22, 26, 3, 19 ],
+            "wednesday": [ 21, 24, 2, 18 ],
+            "thursday": [ 20, 24, 1, 17 ],
+            "friday": [ 19, 23, 31, 16 ],
+            "saturday": [ 18, 20, 30, 15 ],
+            "sunday": [ 17, 20, 29, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 347,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/things-suspended-in-the-sky-1914.jpg',
+          title: 'Things Suspended in the Sky',
+          artist: 'Koshiro Onchi',
+          year: '1914',
+          rule: {
+            "monday": [ 17, 20, 29, 14 ],
+            "tuesday": [ 16, 19, 28, 13 ],
+            "wednesday": [ 22, 26, 3, 19 ],
+            "thursday": [ 21, 24, 2, 18 ],
+            "friday": [ 20, 24, 1, 17 ],
+            "saturday": [ 19, 23, 31, 16 ],
+            "sunday": [ 18, 20, 30, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 348,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/skating-rink-in-winter-1915.jpg',
+          title: 'Skating Rink in Winter',
+          artist: 'Konstantin Somov',
+          year: '1915',
+          rule: {
+            "monday": [ 18, 20, 30, 15 ],
+            "tuesday": [ 17, 20, 29, 14 ],
+            "wednesday": [ 16, 19, 28, 13 ],
+            "thursday": [ 22, 26, 3, 19 ],
+            "friday": [ 21, 24, 2, 18 ],
+            "saturday": [ 20, 24, 1, 17 ],
+            "sunday": [ 19, 23, 31, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 349,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/patterned-hillside-1918.jpg',
+          title: 'Patterned Hillside',
+          artist: 'Frank Johnston',
+          year: '1918',
+          rule: {
+            "monday": [ 19, 23, 31, 16 ],
+            "tuesday": [ 18, 20, 30, 15 ],
+            "wednesday": [ 17, 20, 29, 14 ],
+            "thursday": [ 16, 19, 28, 13 ],
+            "friday": [ 22, 26, 3, 19 ],
+            "saturday": [ 21, 24, 2, 18 ],
+            "sunday": [ 20, 24, 1, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 350,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/crucifixion-1928.jpg',
+          title: 'Crucifixion',
+          artist: 'Gerardo Dottori',
+          year: '1928',
+          rule: {
+            "monday": [ 21, 25, 2, 18 ],
+            "tuesday": [ 20, 24, 1, 17 ],
+            "wednesday": [ 19, 21, 31, 16 ],
+            "thursday": [ 18, 21, 30, 15 ],
+            "friday": [ 17, 20, 29, 14 ],
+            "saturday": [ 23, 27, 4, 20 ],
+            "sunday": [ 22, 25, 3, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
