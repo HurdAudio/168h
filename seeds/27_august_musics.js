@@ -3676,6 +3676,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 205,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2784610279/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://mariamrezaei.bandcamp.com/album/the-war-of-the-worlds',
+          a_string: 'The War Of The Worlds by Mariam Rezaei',
+          rule: {
+            "monday": [ 9, 17, 30, 29 ],
+            "tuesday": [ 8, 16, 29, 28 ],
+            "wednesday": [ 7, 15, 28, 27 ],
+            "thursday": [ 11, 19, 1, 31 ],
+            "saturday": [ 10, 18, 31, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 206,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2426930105/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://harshnoisemovement.bandcamp.com/album/four-people-in-different-rooms',
+          a_string: 'Four People in Different Rooms by Asmus Tietchens / Jetzmann / TBC / Harsh Noise Movement',
+          rule: {
+            "monday": [ 10, 18, 31, 30 ],
+            "tuesday": [ 9, 17, 30, 29 ],
+            "wednesday": [ 8, 16, 29, 28 ],
+            "thursday": [ 7, 15, 28, 27 ],
+            "saturday": [ 11, 19, 1, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 207,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=394902706/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://harshnoisemovement.bandcamp.com/album/split-album-5',
+          a_string: 'Split Album by Rudolf Eb.er / Harsh Noise Movement',
+          rule: {
+            "monday": [ 11, 19, 1, 31 ],
+            "tuesday": [ 10, 18, 31, 30 ],
+            "wednesday": [ 9, 17, 30, 29 ],
+            "thursday": [ 8, 16, 29, 28 ],
+            "saturday": [ 7, 15, 28, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
