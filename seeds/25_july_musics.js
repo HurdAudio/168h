@@ -3784,6 +3784,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 211,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=933580018/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jayejayle.bandcamp.com/album/no-trail-and-other-unholy-paths',
+          a_string: 'No Trail and Other Unholy Paths by Jaye Jayle',
+          rule: {
+            "monday": [ 30, 1, 5, 13 ],
+            "tuesday": [ 29, 30, 4, 12 ],
+            "wednesday": [ 28, 30, 3, 11 ],
+            "thursday": [ 1, 3, 7, 15 ],
+            "saturday": [ 31, 2, 6, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 212,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2458337656/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://hanavu.bandcamp.com/album/how-many-times-have-you-driven-by',
+          a_string: 'How Many Times Have You Driven By by hana vu',
+          rule: {
+            "monday": [ 31, 2, 6, 14 ],
+            "tuesday": [ 30, 1, 5, 13 ],
+            "wednesday": [ 29, 30, 4, 12 ],
+            "thursday": [ 28, 30, 3, 11 ],
+            "saturday": [ 1, 3, 7, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 213,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4083820156/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://wharfcatrecords.bandcamp.com/album/roach-goin-down',
+          a_string: 'Roach Goin&#39; Down by Palberta',
+          rule: {
+            "monday": [ 1, 3, 7, 15 ],
+            "tuesday": [ 31, 2, 6, 14 ],
+            "wednesday": [ 30, 1, 5, 13 ],
+            "thursday": [ 29, 30, 4, 12 ],
+            "saturday": [ 28, 30, 3, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
