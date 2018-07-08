@@ -3460,6 +3460,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 193,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4150705894/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://whatwedoissecrete.bandcamp.com/album/what-do-you-stand-for',
+          a_string: 'What Do You Stand For? by S.H.I.T.',
+          rule: {
+            "monday": [ 1, 11, 22, 24 ],
+            "tuesday": [ 5, 15, 25, 28 ],
+            "wednesday": [ 4, 14, 24, 27 ],
+            "thursday": [ 3, 13, 23, 26 ],
+            "saturday": [ 2, 12, 23, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 194,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=879531568/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://zealandardor.bandcamp.com/album/stranger-fruit',
+          a_string: 'Stranger Fruit by Zeal and Ardor',
+          rule: {
+            "monday": [ 2, 12, 23, 25 ],
+            "tuesday": [ 1, 11, 22, 24 ],
+            "wednesday": [ 5, 15, 25, 28 ],
+            "thursday": [ 4, 14, 24, 27 ],
+            "saturday": [ 3, 13, 23, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 195,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=454848065/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://flasherdc.bandcamp.com/album/constant-image',
+          a_string: 'Constant Image by Flasher',
+          rule: {
+            "monday": [ 3, 13, 23, 26 ],
+            "tuesday": [ 2, 12, 23, 25 ],
+            "wednesday": [ 1, 11, 22, 24 ],
+            "thursday": [ 5, 15, 25, 28 ],
+            "saturday": [ 4, 14, 24, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
