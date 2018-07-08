@@ -4432,6 +4432,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 247,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=625814160/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://newfocusrecordings.bandcamp.com/album/robert-honstein-an-economy-of-means',
+          a_string: 'Robert Honstein: An Economy of Means by Doug Perkins, Karl Larson',
+          rule: {
+            "monday": [ 12, 19, 20, 21 ],
+            "tuesday": [ 11, 17, 18, 19 ],
+            "wednesday": [ 10, 17, 18, 19 ],
+            "thursday": [ 14, 21, 22, 23 ],
+            "saturday": [ 13, 19, 20, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 248,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3765512785/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://newfocusrecordings.bandcamp.com/album/quince-ensemble-motherland',
+          a_string: 'Quince Ensemble: Motherland by New Focus Recordings',
+          rule: {
+            "monday": [ 13, 19, 20, 22 ],
+            "tuesday": [ 12, 19, 20, 21 ],
+            "wednesday": [ 11, 17, 18, 19 ],
+            "thursday": [ 10, 17, 18, 19 ],
+            "saturday": [ 14, 21, 22, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 249,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=711014210/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://roomfulofteeth.bandcamp.com/album/how-a-rose',
+          a_string: 'How A Rose by Roomful of Teeth',
+          rule: {
+            "monday": [ 14, 21, 22, 23 ],
+            "tuesday": [ 13, 19, 20, 22 ],
+            "wednesday": [ 12, 19, 20, 21 ],
+            "thursday": [ 11, 17, 18, 19 ],
+            "saturday": [ 10, 17, 18, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
