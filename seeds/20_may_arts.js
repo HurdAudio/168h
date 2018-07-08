@@ -7504,6 +7504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 376,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/solitary-confinement-1961.jpg',
+          title: 'Solitary Confinement',
+          artist: 'David Alfaro Siqueiros',
+          year: '1961',
+          rule: {
+            "monday": [ 15, 26, 4, 14 ],
+            "tuesday": [ 13, 23, 2, 10 ],
+            "wednesday": [ 11, 20, 1, 10 ],
+            "thursday": [ 23, 2, 12, 20 ],
+            "friday": [ 21, 1, 10, 20 ],
+            "saturday": [ 19, 29, 6, 18 ],
+            "sunday": [ 16, 27, 6, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 377,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/struggle-for-emancipation-1961.jpg',
+          title: 'Struggle for Emancipation',
+          artist: 'David Alfaro Siqueiros',
+          year: '1961',
+          rule: {
+            "monday": [ 16, 27, 6, 26 ],
+            "tuesday": [ 15, 26, 4, 14 ],
+            "wednesday": [ 13, 23, 2, 10 ],
+            "thursday": [ 11, 20, 1, 10 ],
+            "friday": [ 23, 2, 12, 20 ],
+            "saturday": [ 21, 1, 10, 20 ],
+            "sunday": [ 19, 29, 6, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 378,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/peasant-mother-1962-oil-on-canvas-1962.jpg',
+          title: 'Peasant Mother',
+          artist: 'David Alfaro Siqueiros',
+          year: '1962',
+          rule: {
+            "monday": [ 20, 30, 7, 19 ],
+            "tuesday": [ 17, 28, 7, 27 ],
+            "wednesday": [ 16, 27, 5, 15 ],
+            "thursday": [ 14, 24, 3, 11 ],
+            "friday": [ 12, 21, 2, 11 ],
+            "saturday": [ 24, 3, 13, 21 ],
+            "sunday": [ 22, 2, 11, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 379,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/the-march-of-humanity-1971.jpg',
+          title: 'The March of Humanity',
+          artist: 'David Alfaro Siqueiros',
+          year: '1971',
+          rule: {
+            "monday": [ 22, 2, 11, 21 ],
+            "tuesday": [ 20, 30, 7, 19 ],
+            "wednesday": [ 17, 28, 7, 27 ],
+            "thursday": [ 16, 27, 5, 15 ],
+            "friday": [ 14, 24, 3, 11 ],
+            "saturday": [ 12, 21, 2, 11 ],
+            "sunday": [ 24, 3, 13, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 380,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/the-march-of-humanity-1971-1.jpg',
+          title: 'The March of Humanity',
+          artist: 'David Alfaro Siqueiros',
+          year: '1971',
+          rule: {
+            "monday": [ 24, 3, 13, 21 ],
+            "tuesday": [ 22, 2, 11, 21 ],
+            "wednesday": [ 20, 30, 7, 19 ],
+            "thursday": [ 17, 28, 7, 27 ],
+            "friday": [ 16, 27, 5, 15 ],
+            "saturday": [ 14, 24, 3, 11 ],
+            "sunday": [ 12, 21, 2, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
