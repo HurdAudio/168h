@@ -1804,6 +1804,66 @@ exports.seed = function(knex, Promise) {
           public: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 151,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/karina-vorozheeva-666313-unsplash.jpg',
+          title: 'Butterfly Cat',
+          artist: 'Karina Vorozheeva',
+          year: '2018',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 152,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/freddie-marriage-40645-unsplash.jpg',
+          title: 'A furry kitten on a white sheet',
+          artist: 'freddie marriage',
+          year: '2018',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 153,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/kitsanoo-65241-unsplash.jpg',
+          title: 'A white and brown cat with big blue eyes and a cat bell on its collar lying on the ground',
+          artist: 'kitsanoo',
+          year: '2018',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 154,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/matheus-queiroz-361095-unsplash.jpg',
+          title: 'A gray cat with orange eyes lying down and looking at the camera.',
+          artist: 'Matheus Queiroz',
+          year: '2018',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 155,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/jari-hytonen-538885-unsplash.jpg',
+          title: 'First Outdoor Day',
+          artist: 'Jari Hytönen',
+          year: '2018',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
