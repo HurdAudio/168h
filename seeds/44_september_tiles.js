@@ -732,6 +732,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#C8C3AB',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 53,
+          user_id: 1,
+          theme: 'Leather',
+          type: 'week',
+          src_string: '../img/september_tiles/lazlo-panaflex-131345-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '180%',
+          color_dark: '#050505',
+          color_medium: '#654226',
+          color_light: '#D0C3B0',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
