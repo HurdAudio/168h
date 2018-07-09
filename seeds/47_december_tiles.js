@@ -690,6 +690,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#F8F9FD',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 50,
+          user_id: 1,
+          theme: 'Snow',
+          type: 'saturday',
+          src_string: '../img/december_tiles/andreea-popa-602586-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '170%',
+          color_dark: '#12252C',
+          color_medium: '#B58D54',
+          color_light: '#D0D4D7',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
