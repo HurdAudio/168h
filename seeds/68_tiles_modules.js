@@ -424,6 +424,21 @@ exports.seed = function(knex, Promise) {
           public: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 29,
+          user_author_id: 1,
+          theme: 'Paper',
+          type: 'friday',
+          src_string: '../img/tiles/annie-spratt-695482-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '100%',
+          color_dark: '#6B5B48',
+          color_medium: '#A5A4A0',
+          color_light: '#C8CBCB',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
