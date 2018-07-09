@@ -704,6 +704,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#F2EBF3',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 51,
+          user_id: 1,
+          theme: 'Monochromatic',
+          type: 'sunday',
+          src_string: '../img/november_tiles/esther-jiao-640129-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '175%',
+          color_dark: '#000000',
+          color_medium: '#040404',
+          color_light: '#888888',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
