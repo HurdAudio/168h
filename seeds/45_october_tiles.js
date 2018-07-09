@@ -718,6 +718,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#DBC1B2',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 52,
+          user_id: 1,
+          theme: 'Autumnal',
+          type: 'holiday',
+          src_string: '../img/october_tiles/rodrigo-rodriguez-397538-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '190%',
+          color_dark: '#010103',
+          color_medium: '#B35F3B',
+          color_light: '#E8E0D5',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
