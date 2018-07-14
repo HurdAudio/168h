@@ -816,6 +816,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#F2F4F5',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 59,
+          user_id: 1,
+          theme: 'Glass',
+          type: 'friday',
+          src_string: '../img/march_tiles/david-becker-677440-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '165%',
+          color_dark: '#000212',
+          color_medium: '#05B7C6',
+          color_light: '#F6FFFC',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
