@@ -8071,7 +8071,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 513,
           user_id: 1,
-          name: 'The southeastern US was destroyed by a Soviet nuclear attack as the beginning of the third woe of the Apocalypse according to the UFO prophet George Van Tassel.',
+          name: 'The southeastern US was destroyed by a Soviet nuclear attack in 1967 as the beginning of the third woe of the Apocalypse according to UFO prophet George Van Tassel.',
           color: '#9509FF',
           picture: './img/doomsday/georgevanfruitloop.jpg',
           day_of: new Date ('1967-08-20T13:44:00.000Z'),

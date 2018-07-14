@@ -3409,7 +3409,7 @@ exports.seed = function(knex, Promise) {
           id: 171,
           user_id: 1,
           theme: 'Minimalism',
-          img_path: './img/november/tegn-iii-1966.jpg',
+          img_path: './img/november/tegniii1966.jpg',
           title: 'Tegn III',
           artist: 'Jan Groth',
           year: '1966',
