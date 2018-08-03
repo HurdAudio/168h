@@ -7950,7 +7950,7 @@ exports.seed = function(knex, Promise) {
           id: 505,
           user_id: 1,
           name: 'Nam June Paik (artist), born 1932',
-          color: '151517',
+          color: '#151517',
           picture: './img/artists/namjunepaik.jpg',
           day_of: new Date ('1932-07-20T13:44:00.000Z'),
           is_annual: true,

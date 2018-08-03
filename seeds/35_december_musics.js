@@ -3298,6 +3298,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 184,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3439862810/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://maisumdiscos.bandcamp.com/album/real-rio-rock-pop-noise-and-electronic-music-from-rio-de-janeiro-2cd-30-tracks-5',
+          a_string: 'Real Rio: rock, pop, noise and electronic music from Rio de Janeiro (2CD - 30 tracks - £5) by Various Artists',
+          rule: {
+            "monday": [ 28, 5, 11, 17 ],
+            "tuesday": [ 29, 4, 10, 16 ],
+            "wednesday": [ 2, 8, 14, 20 ],
+            "thursday": [ 1, 7, 13, 18 ],
+            "saturday": [ 29, 6, 12, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 185,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3227089762/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://chinesecookiepoets.bandcamp.com/album/chinese-cookie-poets-ep',
+          a_string: 'Chinese Cookie Poets EP by Chinese Cookie Poets',
+          rule: {
+            "monday": [ 29, 6, 12, 18 ],
+            "tuesday": [ 28, 5, 11, 17 ],
+            "wednesday": [ 29, 4, 10, 16 ],
+            "thursday": [ 2, 8, 14, 20 ],
+            "saturday": [ 1, 7, 13, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 186,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2130893271/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bemonio.bandcamp.com/album/opus-dei-live',
+          a_string: 'OPUS DEI (live) by OPUS DEI',
+          rule: {
+            "monday": [ 1, 7, 13, 18 ],
+            "tuesday": [ 29, 6, 12, 18 ],
+            "wednesday": [ 28, 5, 11, 17 ],
+            "thursday": [ 29, 4, 10, 16 ],
+            "saturday": [ 2, 8, 14, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
