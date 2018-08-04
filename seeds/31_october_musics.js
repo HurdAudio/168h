@@ -3514,6 +3514,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 196,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1853134337/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://riesgochi.bandcamp.com/album/demo-mmxviii',
+          a_string: 'Demo MMXVIII by RIESGO',
+          rule: {
+            "monday": [ 5, 15, 25, 28 ],
+            "tuesday": [ 4, 14, 24, 27 ],
+            "wednesday": [ 3, 13, 24, 26 ],
+            "thursday": [ 2, 12, 23, 25 ],
+            "saturday": [ 6, 16, 26, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 197,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=737696296/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://notnormaltapes.bandcamp.com/album/nnt-062-cb-radio-gorgeous-plays-cb-radio-gorgeous',
+          a_string: 'NNT#062 CB Radio Gorgeous - Plays CB Radio Gorgeous by Not Normal Tapes',
+          rule: {
+            "monday": [ 6, 16, 26, 29 ],
+            "tuesday": [ 5, 15, 25, 28 ],
+            "wednesday": [ 4, 14, 24, 27 ],
+            "thursday": [ 3, 13, 24, 26 ],
+            "saturday": [ 2, 12, 23, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 198,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3629590149/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://perravida.bandcamp.com/album/ep',
+          a_string: 'EP by PERRA VIDA',
+          rule: {
+            "monday": [ 2, 12, 23, 25 ],
+            "tuesday": [ 6, 16, 26, 29 ],
+            "wednesday": [ 5, 15, 25, 28 ],
+            "thursday": [ 4, 14, 24, 27 ],
+            "saturday": [ 3, 13, 24, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
