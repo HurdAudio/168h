@@ -3622,6 +3622,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 202,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4123841563/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://qui31g.bandcamp.com/album/snuh',
+          a_string: 'Snuh by QUI',
+          rule: {
+            "monday": [ 2, 22, 30, 24 ],
+            "tuesday": [ 1, 21, 29, 23 ],
+            "wednesday": [ 30, 20, 28, 23 ],
+            "thursday": [ 29, 19, 27, 21 ],
+            "saturday": [ 28, 18, 26, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 203,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2003550962/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://covetband.bandcamp.com/album/effloresce',
+          a_string: 'effloresce by covet',
+          rule: {
+            "monday": [ 29, 19, 27, 21 ],
+            "tuesday": [ 3, 23, 1, 25 ],
+            "wednesday": [ 2, 22, 30, 24 ],
+            "thursday": [ 1, 21, 29, 24 ],
+            "saturday": [ 30, 20, 28, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 204,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=750164355/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://themercurytree.bandcamp.com/album/cryptic-tree',
+          a_string: 'Cryptic Tree by The Mercury Tree + Cryptic Ruse',
+          rule: {
+            "monday": [ 30, 20, 28, 22 ],
+            "tuesday": [ 29, 19, 27, 21 ],
+            "wednesday": [ 3, 23, 1, 25 ],
+            "thursday": [ 2, 22, 30, 24 ],
+            "saturday": [ 1, 21, 29, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
