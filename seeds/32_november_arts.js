@@ -6404,6 +6404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 321,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/untitled-1971.jpg',
+          title: 'Untitled',
+          artist: 'Fred Sandback',
+          year: '1971',
+          rule: {
+            "monday": [ 20, 23, 30, 5 ],
+            "tuesday": [ 19, 23, 30, 5 ],
+            "wednesday": [ 18, 23, 29, 4 ],
+            "thursday": [ 17, 22, 28, 5 ],
+            "friday": [ 23, 28, 4, 9 ],
+            "saturday": [ 22, 27, 2, 8 ],
+            "sunday": [ 21, 25, 2, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 322,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/rodeo-1971.jpg',
+          title: 'Rodeo',
+          artist: 'Brice Marden',
+          year: '1971',
+          rule: {
+            "monday": [ 22, 26, 3, 7 ],
+            "tuesday": [ 21, 24, 1, 6 ],
+            "wednesday": [ 20, 24, 1, 6 ],
+            "thursday": [ 19, 24, 30, 5 ],
+            "friday": [ 18, 23, 29, 6 ],
+            "saturday": [ 24, 29, 5, 10 ],
+            "sunday": [ 23, 28, 3, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 323,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/axa-kk-69-1971.jpg',
+          title: 'Axa-KK-69',
+          artist: 'Victor Bonato',
+          year: '1971',
+          rule: {
+            "monday": [ 23, 28, 3, 9 ],
+            "tuesday": [ 22, 26, 3, 7 ],
+            "wednesday": [ 21, 24, 1, 6 ],
+            "thursday": [ 20, 24, 1, 6 ],
+            "friday": [ 19, 24, 30, 5 ],
+            "saturday": [ 18, 23, 29, 6 ],
+            "sunday": [ 24, 29, 5, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 324,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/tina-turner-1971.jpg',
+          title: 'Tina Turner',
+          artist: 'Christopher Wilmarth',
+          year: '1971',
+          rule: {
+            "monday": [ 24, 29, 5, 10 ],
+            "tuesday": [ 23, 28, 3, 9 ],
+            "wednesday": [ 22, 26, 3, 7 ],
+            "thursday": [ 21, 24, 1, 6 ],
+            "friday": [ 20, 24, 1, 6 ],
+            "saturday": [ 19, 24, 30, 5 ],
+            "sunday": [ 18, 23, 29, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 325,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/distorted-circle-within-a-polygon-i-1972.jpg',
+          title: 'Distorted Circle within a Polygon I',
+          artist: 'Robert Mangold',
+          year: '1972',
+          rule: {
+            "monday": [ 18, 23, 29, 6 ],
+            "tuesday": [ 24, 29, 5, 10 ],
+            "wednesday": [ 23, 28, 3, 9 ],
+            "thursday": [ 22, 26, 3, 7 ],
+            "friday": [ 21, 24, 1, 6 ],
+            "saturday": [ 20, 24, 1, 6 ],
+            "sunday": [ 19, 24, 30, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
