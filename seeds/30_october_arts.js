@@ -6689,7 +6689,7 @@ exports.seed = function(knex, Promise) {
           id: 335,
           user_id: 1,
           theme: 'Russian Revolution',
-          img_path: './img/october/popup_St_013.jpg',
+          img_path: './img/october/popup_St_014.jpg',
           title: 'I am waiting for you, soldier - the liberator!',
           artist: '?',
           year: '?',
