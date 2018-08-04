@@ -3406,6 +3406,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 190,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1250977659/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://mulatuastatke.bandcamp.com/album/afro-latin-soul',
+          a_string: 'Afro Latin Soul by Mulatu Astatke',
+          rule: {
+            "monday": [ 26, 7, 18, 20 ],
+            "tuesday": [ 25, 6, 17, 29 ],
+            "wednesday": [ 29, 10, 21, 25 ],
+            "thursday": [ 28, 9, 20, 24 ],
+            "saturday": [ 27, 8, 19, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 191,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4028593955/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://rvdicalthekid.bandcamp.com/album/carte-blanche',
+          a_string: 'Carte Blanche by Rvdical The Kid',
+          rule: {
+            "monday": [ 27, 8, 19, 23 ],
+            "tuesday": [ 26, 7, 18, 20 ],
+            "wednesday": [ 25, 6, 17, 29 ],
+            "thursday": [ 29, 10, 21, 25 ],
+            "saturday": [ 28, 9, 20, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 192,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3721060560/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://riaboss.bandcamp.com/album/find-your-free',
+          a_string: 'Find Your Free by Ria Boss',
+          rule: {
+            "monday": [ 28, 9, 20, 24 ],
+            "tuesday": [ 27, 8, 19, 23 ],
+            "wednesday": [ 26, 7, 18, 20 ],
+            "thursday": [ 25, 6, 17, 29 ],
+            "saturday": [ 29, 10, 21, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
