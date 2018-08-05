@@ -7804,6 +7804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 391,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/emirates.jpg',
+          title: 'Emirates steals the show with the Los Angeles Dodgers',
+          artist: 'Emirates Marketing',
+          year: '2016',
+          rule: {
+            "monday": [ 24, 27, 5, 11 ],
+            "tuesday": [ 23, 27, 12, 10 ],
+            "wednesday": [ 21, 26, 2, 8 ],
+            "thursday": [ 21, 26, 2, 8 ],
+            "friday": [ 20, 25, 1, 7 ],
+            "saturday": [ 25, 1, 6, 13 ],
+            "sunday": [ 9, 29, 5, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 392,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/baseball-pixel-art-pixel-art-baseball-bat-ball-pixel-8bit.jpg',
+          title: 'Baseball Pixel Art',
+          artist: 'Brik',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 10, 30, 6, 12 ],
+            "tuesday": [ 25, 28, 6, 12 ],
+            "wednesday": [ 24, 28, 13, 11 ],
+            "thursday": [ 22, 27, 3, 9 ],
+            "friday": [ 22, 27, 3, 9 ],
+            "saturday": [ 21, 26, 2, 8 ],
+            "sunday": [ 26, 2, 7, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 393,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/Kadir-Nelson-kansas-city-dugout_1024x1024.jpeg',
+          title: 'Kansas City Dugout',
+          artist: 'Kadir Nelson',
+          year: 'xx cent.',
+          rule: {
+            "monday": [ 26, 2, 7, 14 ],
+            "tuesday": [ 10, 30, 6, 12 ],
+            "wednesday": [ 25, 28, 6, 12 ],
+            "thursday": [ 24, 28, 13, 11 ],
+            "friday": [ 22, 27, 3, 9 ],
+            "saturday": [ 22, 27, 3, 9 ],
+            "sunday": [ 21, 26, 2, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 394,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/baseball-wall-art-baseball-wall-art-detail-baseball-wall-art-amazon.jpg',
+          title: 'Baseball Wall Art',
+          artist: 'Magic Malgarve',
+          year: '2018',
+          rule: {
+            "monday": [ 21, 26, 2, 8 ],
+            "tuesday": [ 26, 2, 7, 14 ],
+            "wednesday": [ 10, 30, 6, 12 ],
+            "thursday": [ 25, 28, 6, 12 ],
+            "friday": [ 24, 28, 13, 11 ],
+            "saturday": [ 22, 27, 3, 9 ],
+            "sunday": [ 22, 27, 3, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 395,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/stilllife-andrew-pacheco.jpg',
+          title: 'Baseball Still Life',
+          artist: 'Andrew Pacheco',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 22, 27, 3, 9 ],
+            "tuesday": [ 21, 26, 2, 8 ],
+            "wednesday": [ 26, 2, 7, 14 ],
+            "thursday": [ 10, 30, 6, 12 ],
+            "friday": [ 25, 28, 6, 12 ],
+            "saturday": [ 24, 28, 13, 11 ],
+            "sunday": [ 22, 27, 3, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
