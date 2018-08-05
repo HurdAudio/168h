@@ -8204,6 +8204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 411,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/H0137-L00028968.jpg',
+          title: 'Boy Fishing',
+          artist: 'John W. Hardrick',
+          year: 'c.1940',
+          rule: {
+            "monday": [ 8, 18, 24, 1 ],
+            "tuesday": [ 10, 18, 26, 7 ],
+            "wednesday": [ 10, 20, 16, 6 ],
+            "thursday": [ 29, 8, 16, 24 ],
+            "friday": [ 1, 10, 18, 26 ],
+            "saturday": [ 7, 12, 18, 28 ],
+            "sunday": [ 6, 14, 22, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 412,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/5-red3.jpg',
+          title: 'Red Sculpture',
+          artist: 'Jerry Harris',
+          year: 'xx cent.',
+          rule: {
+            "monday": [ 6, 14, 22, 1 ],
+            "tuesday": [ 8, 18, 24, 1 ],
+            "wednesday": [ 10, 18, 26, 7 ],
+            "thursday": [ 10, 20, 16, 6 ],
+            "friday": [ 29, 8, 16, 24 ],
+            "saturday": [ 1, 10, 18, 26 ],
+            "sunday": [ 7, 12, 18, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 413,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/lharrisoil.jpeg',
+          title: 'title unknown',
+          artist: 'Lawrence Harris',
+          year: 'xx cent.',
+          rule: {
+            "monday": [ 8, 13, 19, 29 ],
+            "tuesday": [ 7, 15, 23, 2 ],
+            "wednesday": [ 9, 19, 25, 2 ],
+            "thursday": [ 11, 19, 27, 8 ],
+            "friday": [ 11, 21, 17, 7 ],
+            "saturday": [ 1, 9, 17, 25 ],
+            "sunday": [ 2, 11, 19, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 414,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/PS-1996-Hassinger-1_copy.jpg',
+          title: 'Paradise',
+          artist: 'Maren Hassinger',
+          year: '1990',
+          rule: {
+            "monday": [ 2, 11, 19, 27 ],
+            "tuesday": [ 8, 13, 19, 29 ],
+            "wednesday": [ 7, 15, 23, 2 ],
+            "thursday": [ 9, 19, 25, 2 ],
+            "friday": [ 11, 19, 27, 8 ],
+            "saturday": [ 11, 21, 17, 7 ],
+            "sunday": [ 1, 9, 17, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 415,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/2016_234_v1_ds_201610_o3-p1b8bv0v7e1pbpvoqs155r21mk1.jpg',
+          title: 'Untitled (Dreamer)',
+          artist: 'Palmer Hayden',
+          year: '1930',
+          rule: {
+            "monday": [ 1, 9, 17, 25 ],
+            "tuesday": [ 2, 11, 19, 27 ],
+            "wednesday": [ 8, 13, 19, 29 ],
+            "thursday": [ 7, 15, 23, 2 ],
+            "friday": [ 9, 19, 25, 2 ],
+            "saturday": [ 11, 19, 27, 8 ],
+            "sunday": [ 11, 21, 17, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
