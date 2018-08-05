@@ -7004,6 +7004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 351,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/thirsty-warrior-1915.jpg',
+          title: 'Thirsty Warrior',
+          artist: 'Kuzma Petrov-Vodkin',
+          year: '1915',
+          rule: {
+            "monday": [ 22, 25, 3, 19 ],
+            "tuesday": [ 21, 25, 2, 18 ],
+            "wednesday": [ 20, 24, 1, 17 ],
+            "thursday": [ 19, 21, 31, 16 ],
+            "friday": [ 18, 21, 30, 15 ],
+            "saturday": [ 17, 20, 29, 14 ],
+            "sunday": [ 23, 27, 4, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 352,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/de-wiedster-1930(1).jpg',
+          title: 'De Wiedster',
+          artist: 'Gustave de Smet',
+          year: '1930',
+          rule: {
+            "monday": [ 23, 27, 4, 20 ],
+            "tuesday": [ 22, 25, 3, 19 ],
+            "wednesday": [ 21, 25, 2, 18 ],
+            "thursday": [ 20, 24, 1, 17 ],
+            "friday": [ 19, 21, 31, 16 ],
+            "saturday": [ 18, 21, 30, 15 ],
+            "sunday": [ 17, 20, 29, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 353,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/percolator-1927.jpg',
+          title: 'Percolator',
+          artist: 'Stuart Davis',
+          year: '1927',
+          rule: {
+            "monday": [ 17, 20, 29, 14 ],
+            "tuesday": [ 23, 27, 4, 20 ],
+            "wednesday": [ 22, 25, 3, 19 ],
+            "thursday": [ 21, 25, 2, 18 ],
+            "friday": [ 20, 24, 1, 17 ],
+            "saturday": [ 19, 21, 31, 16 ],
+            "sunday": [ 18, 21, 30, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 354,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/pentecast-1909.jpg',
+          title: 'Pentecast',
+          artist: 'Emil Nolde',
+          year: '1909',
+          rule: {
+            "monday": [ 18, 21, 30, 15 ],
+            "tuesday": [ 17, 20, 29, 14 ],
+            "wednesday": [ 23, 27, 4, 20 ],
+            "thursday": [ 22, 25, 3, 19 ],
+            "friday": [ 21, 25, 2, 18 ],
+            "saturday": [ 20, 24, 1, 17 ],
+            "sunday": [ 19, 21, 31, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 355,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/not_detected_235988.jpg',
+          title: 'Old Man with Noose',
+          artist: 'Kathe Kollwitz',
+          year: '1923',
+          rule: {
+            "monday": [ 19, 21, 31, 16 ],
+            "tuesday": [ 18, 21, 30, 15 ],
+            "wednesday": [ 17, 20, 29, 14 ],
+            "thursday": [ 23, 27, 4, 20 ],
+            "friday": [ 22, 25, 3, 19 ],
+            "saturday": [ 21, 25, 2, 18 ],
+            "sunday": [ 20, 24, 1, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
