@@ -4378,6 +4378,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 244,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4190276032/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://dobie.bandcamp.com/album/dobie-the-sound-of-one-hand-clapping-v25',
+          a_string: 'Dobie - the sound of one hand clapping V2.5 by Dobie',
+          rule: {
+            "monday": [ 11, 15, 17, 19 ],
+            "tuesday": [ 23, 17, 19, 25 ],
+            "wednesday": [ 24, 18, 20, 26 ],
+            "thursday": [ 7, 11, 13, 17 ],
+            "saturday": [ 10, 13, 15, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 245,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=389000528/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://38spesh.bandcamp.com/album/son-of-g-rap',
+          a_string: 'Son of G Rap by Kool G Rap &amp; 38 Spesh',
+          rule: {
+            "monday": [ 11, 14, 16, 20 ],
+            "tuesday": [ 22, 16, 18, 20 ],
+            "wednesday": [ 24, 18, 20, 26 ],
+            "thursday": [ 25, 19, 21, 27 ],
+            "saturday": [ 8, 12, 14, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 246,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=323561392/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://belowsystem.bandcamp.com/album/carte-blanche-deluxe-edition',
+          a_string: 'Carte Blanche (Deluxe Edition) by Phat Kat',
+          rule: {
+            "monday": [ 8, 12, 14, 18 ],
+            "tuesday": [ 11, 14, 16, 20 ],
+            "wednesday": [ 22, 16, 18, 20 ],
+            "thursday": [ 24, 18, 20, 26 ],
+            "saturday": [ 25, 19, 21, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
