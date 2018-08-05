@@ -7404,6 +7404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 371,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/jason_matias_for_fstoppers_1.jpg',
+          title: 'St. Peter\'s Birds',
+          artist: 'Jason Matais',
+          year: '?',
+          rule: {
+            "monday": [ 21, 1, 11, 19 ],
+            "tuesday": [ 20, 30, 10, 18 ],
+            "wednesday": [ 29, 9, 19, 17 ],
+            "thursday": [ 18, 28, 8, 16 ],
+            "friday": [ 17, 27, 7, 15 ],
+            "saturday": [ 23, 3, 13, 19 ],
+            "sunday": [ 22, 2, 12, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 372,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/large_a61c0be1c_powder5-14.jpg',
+          title: 'Project Powder',
+          artist: 'Joshua Krause',
+          year: '?',
+          rule: {
+            "monday": [ 22, 2, 12, 20 ],
+            "tuesday": [ 21, 1, 11, 19 ],
+            "wednesday": [ 20, 30, 10, 18 ],
+            "thursday": [ 29, 9, 19, 17 ],
+            "friday": [ 18, 28, 8, 16 ],
+            "saturday": [ 17, 27, 7, 15 ],
+            "sunday": [ 23, 3, 13, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 373,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/Fine-art-photography-8.jpg',
+          title: 'Deep Soul Mates',
+          artist: 'unknown artist',
+          year: '?',
+          rule: {
+            "monday": [ 23, 3, 13, 19 ],
+            "tuesday": [ 22, 2, 12, 20 ],
+            "wednesday": [ 21, 1, 11, 19 ],
+            "thursday": [ 20, 30, 10, 18 ],
+            "friday": [ 29, 9, 19, 17 ],
+            "saturday": [ 18, 28, 8, 16 ],
+            "sunday": [ 17, 27, 7, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 374,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/Fine-Art-Portrait-Photographer-Creates-Magical-Images-Of-Children-586aedcea9189__880.jpg',
+          title: 'unknown title',
+          artist: 'Annelise Sophiea',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 17, 27, 7, 15 ],
+            "tuesday": [ 23, 3, 13, 19 ],
+            "wednesday": [ 22, 2, 12, 20 ],
+            "thursday": [ 21, 1, 11, 19 ],
+            "friday": [ 20, 30, 10, 18 ],
+            "saturday": [ 29, 9, 19, 17 ],
+            "sunday": [ 18, 28, 8, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 375,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/NUIT_DE_NOEL_HAPPY_CLUB_1963_WEB.jpg',
+          title: 'Nuit De Noel Happy Club 1963',
+          artist: 'Malick Sidibe',
+          year: '1963',
+          rule: {
+            "monday": [ 18, 28, 8, 16 ],
+            "tuesday": [ 17, 27, 7, 15 ],
+            "wednesday": [ 23, 3, 13, 19 ],
+            "thursday": [ 22, 2, 12, 20 ],
+            "friday": [ 21, 1, 11, 19 ],
+            "saturday": [ 20, 30, 10, 18 ],
+            "sunday": [ 29, 9, 19, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
