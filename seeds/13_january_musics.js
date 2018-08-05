@@ -4486,6 +4486,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 250,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3098360805/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jordanmunson.bandcamp.com/album/until-my-last',
+          a_string: 'Until My Last by Jordan Munson',
+          rule: {
+            "monday": [ 10, 17, 18, 19 ],
+            "tuesday": [ 14, 21, 22, 23 ],
+            "wednesday": [ 13, 19, 20, 22 ],
+            "thursday": [ 12, 19, 20, 21 ],
+            "saturday": [ 11, 17, 18, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 251,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1097314928/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://williambrittelle.bandcamp.com/album/without-chasms',
+          a_string: 'Without Chasms by William Brittelle',
+          rule: {
+            "monday": [ 11, 17, 18, 19 ],
+            "tuesday": [ 10, 17, 18, 19 ],
+            "wednesday": [ 14, 21, 22, 23 ],
+            "thursday": [ 13, 19, 20, 22 ],
+            "saturday": [ 12, 19, 20, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 252,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3153996353/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://nowensemble.bandcamp.com/album/rounder-songs',
+          a_string: 'Rounder Songs by Emily Pinkerton and Patrick Burke with NOW Ensemble',
+          rule: {
+            "monday": [ 13, 20, 21, 22 ],
+            "tuesday": [ 12, 18, 19, 20 ],
+            "wednesday": [ 11, 18, 19, 20 ],
+            "thursday": [ 15, 22, 23, 24 ],
+            "saturday": [ 14, 20, 21, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
