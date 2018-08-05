@@ -3730,6 +3730,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 208,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=873176353/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ligeiamare.bandcamp.com/album/for-the-time-being',
+          a_string: 'For the Time Being by J.A. Deane, Ron Miles, and Farrell Lowe',
+          rule: {
+            "monday": [ 7, 15, 28, 27 ],
+            "tuesday": [ 11, 19, 1, 31 ],
+            "wednesday": [ 10, 18, 31, 30 ],
+            "thursday": [ 9, 17, 30, 29 ],
+            "saturday": [ 8, 16, 29, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 209,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=210519564/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://unifactor.bandcamp.com/album/staceys-spacey',
+          a_string: 'Stacey&#39;s Spacey by Marcia Custer',
+          rule: {
+            "monday": [ 8, 16, 29, 28 ],
+            "tuesday": [ 7, 15, 28, 27 ],
+            "wednesday": [ 11, 19, 1, 31 ],
+            "thursday": [ 10, 18, 31, 30 ],
+            "saturday": [ 9, 17, 30, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 210,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2117826397/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://dinzuartefacts.bandcamp.com/album/sial',
+          a_string: 'SiAl by Matthias Urban',
+          rule: {
+            "monday": [ 10, 18, 31, 30 ],
+            "tuesday": [ 9, 17, 30, 29 ],
+            "wednesday": [ 8, 16, 29, 28 ],
+            "thursday": [ 12, 20, 2, 1 ],
+            "saturday": [ 11, 19, 1, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
