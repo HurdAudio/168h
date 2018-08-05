@@ -10107,6 +10107,34 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 648,
+          user_id: 1,
+          name: 'Maximilien "The Incorruptable" Robespierre (lawyer, politician) born 1758',
+          color: '#98470B',
+          picture: './img/dissent/Robespierre_crop.jpg',
+          day_of: new Date ('1758-05-06T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 649,
+          user_id: 1,
+          name: 'The world ended on this day in 2002 exactly as predicted by survivalist Bruce Beach on an episode of Penn & Teller: Bullshit that aired in 2003.',
+          color: '#A7221D',
+          picture: './img/doomsday/Bruce_Beach.jpg',
+          day_of: new Date ('2002-12-08T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
