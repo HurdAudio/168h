@@ -8004,6 +8004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 401,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/eggs-in-an-egg-crate-1975.jpg',
+          title: 'Eggs in an Egg Crate',
+          artist: 'Mary Pratt',
+          year: '1975',
+          rule: {
+            "monday": [ 26, 5, 13, 23 ],
+            "tuesday": [ 26, 4, 12, 22 ],
+            "wednesday": [ 24, 3, 11, 21 ],
+            "thursday": [ 23, 2, 10, 20 ],
+            "friday": [ 22, 1, 9, 19 ],
+            "saturday": [ 21, 31, 9, 18 ],
+            "sunday": [ 27, 5, 15, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 402,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/a-cloverleaf-on-4-light-sensitive-plates-1981.jpg',
+          title: 'A cloverleaf on 4 light-sensitive plates - photogravure',
+          artist: 'Hubertine Heijermans',
+          year: '1981',
+          rule: {
+            "monday": [ 27, 5, 15, 23 ],
+            "tuesday": [ 26, 5, 13, 23 ],
+            "wednesday": [ 26, 4, 12, 22 ],
+            "thursday": [ 24, 3, 11, 21 ],
+            "friday": [ 23, 2, 10, 20 ],
+            "saturday": [ 22, 1, 9, 19 ],
+            "sunday": [ 21, 31, 9, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 403,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/no-where-to-run.jpg',
+          title: 'No Where To Run',
+          artist: 'Rochelle Blumenfeld',
+          year: '2012',
+          rule: {
+            "monday": [ 21, 31, 9, 18 ],
+            "tuesday": [ 27, 5, 15, 23 ],
+            "wednesday": [ 26, 5, 13, 23 ],
+            "thursday": [ 26, 4, 12, 22 ],
+            "friday": [ 24, 3, 11, 21 ],
+            "saturday": [ 23, 2, 10, 20 ],
+            "sunday": [ 22, 1, 9, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 404,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/mercuriale-1967.jpg',
+          title: 'Mercuriale',
+          artist: 'Grazia Varisco',
+          year: '1967',
+          rule: {
+            "monday": [ 22, 1, 9, 19 ],
+            "tuesday": [ 21, 31, 9, 18 ],
+            "wednesday": [ 27, 5, 15, 23 ],
+            "thursday": [ 26, 5, 13, 23 ],
+            "friday": [ 26, 4, 12, 22 ],
+            "saturday": [ 24, 3, 11, 21 ],
+            "sunday": [ 23, 2, 10, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 405,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/dance-of-the-crows-2012.jpg',
+          title: 'Dance of the Crows',
+          artist: 'Fusun Onur',
+          year: '2012',
+          rule: {
+            "monday": [ 23, 2, 10, 20 ],
+            "tuesday": [ 22, 1, 9, 19 ],
+            "wednesday": [ 21, 31, 9, 18 ],
+            "thursday": [ 27, 5, 15, 23 ],
+            "friday": [ 26, 5, 13, 23 ],
+            "saturday": [ 26, 4, 12, 22 ],
+            "sunday": [ 24, 3, 11, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
