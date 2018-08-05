@@ -7604,6 +7604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 381,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/the-march-of-humanity-1971-2.jpg',
+          title: 'The March of Humanity',
+          artist: '1971',
+          year: '',
+          rule: {
+            "monday": [ 12, 21, 2, 11 ],
+            "tuesday": [ 24, 3, 13, 21 ],
+            "wednesday": [ 22, 2, 11, 21 ],
+            "thursday": [ 20, 30, 7, 19 ],
+            "friday": [ 17, 28, 7, 27 ],
+            "saturday": [ 16, 27, 5, 15 ],
+            "sunday": [ 14, 24, 3, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 382,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/the-march-of-humanity-1971-3.jpg',
+          title: 'The March of Humanity',
+          artist: 'David Alfaro Siqueiros',
+          year: '1971',
+          rule: {
+            "monday": [ 14, 24, 3, 11 ],
+            "tuesday": [ 12, 21, 2, 11 ],
+            "wednesday": [ 24, 3, 13, 21 ],
+            "thursday": [ 22, 2, 11, 21 ],
+            "friday": [ 20, 30, 7, 19 ],
+            "saturday": [ 17, 28, 7, 27 ],
+            "sunday": [ 16, 27, 5, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 383,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/detail-of-fresque.jpg',
+          title: 'Detail of fresque',
+          artist: 'David Alfaro Siqueiros',
+          year: '?',
+          rule: {
+            "monday": [ 16, 27, 5, 15 ],
+            "tuesday": [ 14, 24, 3, 11 ],
+            "wednesday": [ 12, 21, 2, 11 ],
+            "thursday": [ 24, 3, 13, 21 ],
+            "friday": [ 22, 2, 11, 21 ],
+            "saturday": [ 20, 30, 7, 19 ],
+            "sunday": [ 17, 28, 7, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 384,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/guerilla-fighters.jpg',
+          title: 'Guerilla Fighters',
+          artist: 'David Alfaro Siqueiros',
+          year: '?',
+          rule: {
+            "monday": [ 17, 28, 7, 27 ],
+            "tuesday": [ 16, 27, 5, 15 ],
+            "wednesday": [ 14, 24, 3, 11 ],
+            "thursday": [ 12, 21, 2, 11 ],
+            "friday": [ 24, 3, 13, 21 ],
+            "saturday": [ 22, 2, 11, 21 ],
+            "sunday": [ 20, 30, 7, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 385,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/the-march-of-humanity.jpg',
+          title: 'The March of Humanity (detail)',
+          artist: 'David Alfaro Siqueiros',
+          year: '1971',
+          rule: {
+            "monday": [ 21, 31, 8, 20 ],
+            "tuesday": [ 18, 29, 8, 28 ],
+            "wednesday": [ 17, 28, 6, 16 ],
+            "thursday": [ 15, 25, 4, 12 ],
+            "friday": [ 13, 22, 3, 12 ],
+            "saturday": [ 23, 4, 14, 22 ],
+            "sunday": [ 23, 3, 12, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
