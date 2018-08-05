@@ -3935,14 +3935,68 @@ exports.seed = function(knex, Promise) {
           theme: 'Drone',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3730046507/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
-          href_string: 'endless descent EP by dandelion',
-          a_string: '',
+          href_string: 'http://dandelion111.bandcamp.com/album/endless-descent-ep',
+          a_string: 'endless descent EP by dandelion',
           rule: {
             "monday": [ 30, 3, 9, 20 ],
             "tuesday": [ 28, 6, 8, 19 ],
             "wednesday": [ 2, 6, 12, 23 ],
             "thursday": [ 1, 4, 9, 21 ],
             "saturday": [ 30, 4, 9, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 220,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1734420541/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://newatlantismusic.bandcamp.com/album/wild-adoration-ep1',
+          a_string: 'Wild Adoration - EP1 by Wild Adoration',
+          rule: {
+            "monday": [ 30, 4, 9, 21 ],
+            "tuesday": [ 30, 3, 9, 20 ],
+            "wednesday": [ 28, 6, 8, 19 ],
+            "thursday": [ 2, 6, 12, 23 ],
+            "saturday": [ 1, 4, 9, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 221,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3894302610/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://deeplearning.bandcamp.com/album/soft-confidence',
+          a_string: 'Soft Confidence by D E E P  L E A R N I N G',
+          rule: {
+            "monday": [ 1, 4, 9, 21 ],
+            "tuesday": [ 30, 4, 9, 21 ],
+            "wednesday": [ 30, 3, 9, 20 ],
+            "thursday": [ 28, 6, 8, 19 ],
+            "saturday": [ 2, 6, 12, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 222,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3976001204/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://metronrecords.bandcamp.com/album/moment-selected-works-2012-2017',
+          a_string: 'Moment (Selected Works 2012-2017) by 7FO',
+          rule: {
+            "monday": [ 2, 6, 12, 23 ],
+            "tuesday": [ 1, 4, 9, 21 ],
+            "wednesday": [ 30, 4, 9, 21 ],
+            "thursday": [ 30, 3, 9, 20 ],
+            "saturday": [ 28, 6, 8, 19 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
