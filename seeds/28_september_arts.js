@@ -6804,6 +6804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 341,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/night-2011.jpg',
+          title: 'Night',
+          artist: 'Aki Kuroda',
+          year: '2011',
+          rule: {
+            "monday": [ 6, 22, 10, 19 ],
+            "tuesday": [ 5, 12, 9, 17 ],
+            "wednesday": [ 13, 20, 8, 15 ],
+            "thursday": [ 20, 26, 14, 22 ],
+            "friday": [ 19, 25, 13, 21 ],
+            "saturday": [ 18, 24, 12, 20 ],
+            "sunday": [ 17, 23, 11, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 342,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/self-portrait-with-cloud-cigarette-1964.jpg',
+          title: 'Self Portrait with Cloud & Cigarette',
+          artist: 'Joan Brown',
+          year: '1964',
+          rule: {
+            "monday": [ 17, 23, 11, 19 ],
+            "tuesday": [ 6, 22, 10, 19 ],
+            "wednesday": [ 5, 12, 9, 17 ],
+            "thursday": [ 13, 20, 8, 15 ],
+            "friday": [ 20, 26, 14, 22 ],
+            "saturday": [ 19, 25, 13, 21 ],
+            "sunday": [ 18, 24, 12, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 343,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/repose-1954.jpg',
+          title: 'Repose',
+          artist: 'Paul Wonner',
+          year: '1954',
+          rule: {
+            "monday": [ 19, 25, 13, 21 ],
+            "tuesday": [ 18, 24, 12, 20 ],
+            "wednesday": [ 7, 23, 11, 20 ],
+            "thursday": [ 6, 13, 10, 18 ],
+            "friday": [ 14, 21, 9, 16 ],
+            "saturday": [ 21, 27, 15, 23 ],
+            "sunday": [ 20, 26, 14, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 344,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/figuras-1993.jpg',
+          title: 'Figuras',
+          artist: 'Menez',
+          year: '1993',
+          rule: {
+            "monday": [ 20, 26, 14, 22 ],
+            "tuesday": [ 19, 25, 13, 21 ],
+            "wednesday": [ 18, 24, 12, 20 ],
+            "thursday": [ 7, 23, 11, 20 ],
+            "friday": [ 6, 13, 10, 18 ],
+            "saturday": [ 14, 21, 9, 16 ],
+            "sunday": [ 21, 27, 15, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 345,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/industrial-painting-1958.jpg',
+          title: 'Industrial Painting',
+          artist: 'Giuseppe Pinot-Gallizio',
+          year: '1958',
+          rule: {
+            "monday": [ 21, 27, 15, 23 ],
+            "tuesday": [ 20, 26, 14, 22 ],
+            "wednesday": [ 19, 25, 13, 21 ],
+            "thursday": [ 18, 24, 12, 20 ],
+            "friday": [ 7, 23, 11, 20 ],
+            "saturday": [ 6, 13, 10, 18 ],
+            "sunday": [ 14, 21, 9, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
