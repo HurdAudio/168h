@@ -7204,6 +7204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 361,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/massacre-of-the-innocents.jpg',
+          title: 'Massacre of the Innocents',
+          artist: 'Jacques Stella',
+          year: '?',
+          rule: {
+            "monday": [ 18, 29, 9, 10 ],
+            "tuesday": [ 17, 28, 8, 19 ],
+            "wednesday": [ 23, 3, 14, 24 ],
+            "thursday": [ 22, 2, 13, 24 ],
+            "friday": [ 20, 1, 12, 23 ],
+            "saturday": [ 20, 31, 11, 12 ],
+            "sunday": [ 19, 30, 9, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 362,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/soldier-1626.jpg',
+          title: 'Soldier',
+          artist: 'Nicolas Tournier',
+          year: '1625 - 1626',
+          rule: {
+            "monday": [ 19, 30, 9, 11 ],
+            "tuesday": [ 18, 29, 9, 10 ],
+            "wednesday": [ 17, 28, 8, 19 ],
+            "thursday": [ 23, 3, 14, 24 ],
+            "friday": [ 22, 2, 13, 24 ],
+            "saturday": [ 20, 1, 12, 23 ],
+            "sunday": [ 20, 31, 11, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 363,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/madeleine-of-bourgogne-presented-by-st-mary-magdalene-1490.jpg',
+          title: 'Madeleine of Bourgogne presented by St. Mary Magdalene',
+          artist: 'Jean Hey',
+          year: '1490',
+          rule: {
+            "monday": [ 20, 31, 11, 12 ],
+            "tuesday": [ 19, 30, 9, 11 ],
+            "wednesday": [ 18, 29, 9, 10 ],
+            "thursday": [ 17, 28, 8, 19 ],
+            "friday": [ 23, 3, 14, 24 ],
+            "saturday": [ 22, 2, 13, 24 ],
+            "sunday": [ 20, 1, 12, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 364,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/esther-and-ahashuerus-at-a-banquet-1.jpg',
+          title: 'Esther and Ahashuerus at a banquet',
+          artist: 'Herrad of Landsberg',
+          year: '?',
+          rule: {
+            "monday": [ 21, 1, 13, 24 ],
+            "tuesday": [ 21, 1, 12, 13 ],
+            "wednesday": [ 20, 31, 10, 12 ],
+            "thursday": [ 19, 30, 10, 11 ],
+            "friday": [ 18, 29, 9, 20 ],
+            "saturday": [ 24, 4, 15, 25 ],
+            "sunday": [ 23, 3, 14, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 365,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/hng.jpg',
+          title: 'Orisha',
+          artist: 'Andrew Yago',
+          year: '?',
+          rule: {
+            "monday": [ 23, 3, 14, 25 ],
+            "tuesday": [ 21, 1, 13, 24 ],
+            "wednesday": [ 21, 1, 12, 13 ],
+            "thursday": [ 20, 31, 10, 12 ],
+            "friday": [ 19, 30, 10, 11 ],
+            "saturday": [ 18, 29, 9, 20 ],
+            "sunday": [ 24, 4, 15, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
