@@ -8404,6 +8404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 421,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/untitled-after-joan-mir-1985.jpg',
+          title: 'Untitled (After Joan Miró)',
+          artist: 'Sherrie Levine',
+          year: '1985',
+          rule: {
+            "monday": [ 6, 4, 27, 30 ],
+            "tuesday": [ 6, 7, 29, 2 ],
+            "wednesday": [ 9, 11, 12, 14 ],
+            "thursday": [ 11, 13, 17, 20 ],
+            "friday": [ 13, 15, 16, 17 ],
+            "saturday": [ 29, 30, 10, 2 ],
+            "sunday": [ 1, 3, 26, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 422,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/the-changeling-1964.jpg',
+          title: 'The Changeling',
+          artist: 'John Ferren',
+          year: '1964',
+          rule: {
+            "monday": [ 1, 3, 26, 15 ],
+            "tuesday": [ 6, 4, 27, 30 ],
+            "wednesday": [ 6, 7, 29, 2 ],
+            "thursday": [ 9, 11, 12, 14 ],
+            "friday": [ 11, 13, 17, 20 ],
+            "saturday": [ 13, 15, 16, 17 ],
+            "sunday": [ 29, 30, 10, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 423,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/composition-no-56.jpg',
+          title: 'Composition No. 56',
+          artist: 'Friedrich Vordemberge-Gildewart',
+          year: '?',
+          rule: {
+            "monday": [ 29, 30, 10, 2 ],
+            "tuesday": [ 1, 3, 26, 15 ],
+            "wednesday": [ 6, 4, 27, 30 ],
+            "thursday": [ 6, 7, 29, 2 ],
+            "friday": [ 9, 11, 12, 14 ],
+            "saturday": [ 11, 13, 17, 20 ],
+            "sunday": [ 13, 15, 16, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 424,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/ra-2-1981.jpg',
+          title: 'RA 2',
+          artist: 'Bridget Riley',
+          year: '1981',
+          rule: {
+            "monday": [ 13, 15, 16, 17 ],
+            "tuesday": [ 29, 30, 10, 2 ],
+            "wednesday": [ 1, 3, 26, 15 ],
+            "thursday": [ 6, 4, 27, 30 ],
+            "friday": [ 6, 7, 29, 2 ],
+            "saturday": [ 9, 11, 12, 14 ],
+            "sunday": [ 11, 13, 17, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 425,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/a-mediod-a-1967.jpg',
+          title: 'A mediodía',
+          artist: 'Lilia Carrillo',
+          year: '1967',
+          rule: {
+            "monday": [ 11, 13, 17, 20 ],
+            "tuesday": [ 13, 15, 16, 17 ],
+            "wednesday": [ 29, 30, 10, 2 ],
+            "thursday": [ 1, 3, 26, 15 ],
+            "friday": [ 6, 4, 27, 30 ],
+            "saturday": [ 6, 7, 29, 2 ],
+            "sunday": [ 9, 11, 12, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
