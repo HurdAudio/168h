@@ -4148,12 +4148,12 @@
             <br><br><div id="observanceShareAccepted{{observance.id}}">
 
               <img src="{{observance.inviteeImg}}"><br>
-              <br><h3>{{observance.invitee}} has accepted this holiday.</h3>
+              <br><h3>{{observance.invitee}} has accepted this observance.</h3>
             </div>
             <br><br><div id="observanceShareDeclined{{observance.id}}">
 
               <img src="{{observance.inviteeImg}}"><br>
-              <br><h3>{{observance.invitee}} has declined this holiday.</h3>
+              <br><h3>{{observance.invitee}} has declined this observance.</h3>
             </div>
 
             <!-- <a href=""><h3>comment</h3></a> -->
@@ -5439,7 +5439,7 @@
 
                   <div id="editDeleteOccasionShareCommentDiv{{comment.id}}" class="messageEditDelete">
                     <a class="btn" href="#" ng-click="$ctrl.userEditOccasionShareComment(comment.id)">edit</a>
-                    <a class="btn" href="#" ng-click="$ctrl.userDeleteOccasionShareComment(comment.id)">delete</a>
+                    <a class="btn" href="#" ng-click="$ctrl.userDeleteOccasionShareComment(comment.id, occasion.id)">delete</a>
                   </div><br><br><br><br>
 
 

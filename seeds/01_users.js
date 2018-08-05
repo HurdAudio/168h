@@ -11,7 +11,7 @@ exports.seed = function(knex, Promise) {
           email: 'devin@devinhurd.com',
           hashed_password: '$2a$12$zlJZuGFGcqgLQyy/nVtoQeafv47g8dNTGTJL/x7EmSbPSiFLi.aMS',
           is_admin: true,
-          user_avatar_url: 'https://media.licdn.com/dms/image/C5603AQFLD_nG1nXJgw/profile-displayphoto-shrink_200_200/0?e=1533772800&v=beta&t=6_zhjMUC7FVn7LnFCxRIufdtlG6BV7BEwPM9eUtCGRM',
+          user_avatar_url: 'https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-9/37583709_10217288463910608_4577623758084243456_n.jpg?_nc_cat=0&oh=6181b58d05576a31df3f5c6ce6b6dcfd&oe=5BCAA135',
           associates: {
             "friends": [ 2, 3 ]
           },
@@ -28,7 +28,7 @@ exports.seed = function(knex, Promise) {
           email: 'mayacat505@gmail.com',
           hashed_password: '$2a$12$zlJZuGFGcqgLQyy/nVtoQeafv47g8dNTGTJL/x7EmSbPSiFLi.aMS',
           is_admin: false,
-          user_avatar_url: 'https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/19105867_209052646348289_2681967601890487066_n.jpg?_nc_cat=0&oh=002009e9f6318b54291f9a3d3368d790&oe=5BD335F4',
+          user_avatar_url: 'https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-9/37641088_261522804434606_8030668212985135104_n.jpg?_nc_cat=0&oh=ae47280826f35dc9ee8548a58b912c81&oe=5C006D40',
           associates: {
             "friends": [ 1, 3 ]
           },
@@ -45,7 +45,7 @@ exports.seed = function(knex, Promise) {
           email: 'cia_pope@yahoo.com',
           hashed_password: '$2a$12$zlJZuGFGcqgLQyy/nVtoQeafv47g8dNTGTJL/x7EmSbPSiFLi.aMS',
           is_admin: false,
-          user_avatar_url: 'https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/1964977_10203532053928956_1620738254_n.jpg?oh=912289bc56416424f7d2e4ef3bfb8604&oe=5B41AE92',
+          user_avatar_url: 'https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-9/38280496_10217375809614196_7070618103205330944_n.jpg?_nc_cat=0&oh=ca110f9c9c6368964545e97a15dd33fe&oe=5C0A80B7',
           associates: {
             "friends": [ 1, 2 ]
           },

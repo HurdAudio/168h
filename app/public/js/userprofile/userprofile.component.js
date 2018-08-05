@@ -266,6 +266,24 @@
       vm.musicViewerHref = '';
       vm.declineTask = declineTask;
       vm.acceptTask = acceptTask;
+      vm.userDeleteOccasionShareComment = userDeleteOccasionShareComment;
+
+      function userDeleteOccasionShareComment(commentId, occasionId) {
+        $http.delete(`/occasions_share_comments/${commentId}`)
+        .then(delCommentData=>{
+          let delComment = delCommentData.data;
+          for (let i = 0; i < vm.activeOccasionShares.length; i++) {
+            if (vm.activeOccasionShares[i].id === occasionId) {
+              for (let j = 0; j < vm.activeOccasionShares[i].comments.length; j++) {
+                if (vm.activeOccasionShares[i].comments[j].id === commentId) {
+                  vm.activeOccasionShares[i].comments.splice(j, 1);
+                }
+              }
+            }
+          }
+
+        });
+      }
 
       function acceptTask(taskId) {
         let taskPatcher = {
