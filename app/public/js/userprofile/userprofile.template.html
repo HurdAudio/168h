@@ -133,6 +133,30 @@
   </div>
 </div>
 
+<div id="shareOccasionPane">
+  <a class="btn" ng-click="$ctrl.cancelOccasionInvite()" href="#">cancel</a>
+  <div id="occasionShareIdentifierFields">
+
+    <h3 id="occasionShareName"></h3>
+    <h3 id="occasionShareDate"></h3>
+    <h3 id="occasionShareAnnuality"></h3>
+  </div><br><br>
+  <h3>Select who you want to share this occasion with:</h3>
+  <div id="shareOccasionSearchBarDiv">
+    <input type="text" id="occasionWhoToShareSearch" placeholder="search">
+  </div>
+  <div id="occasionFriendsSearchList">
+
+
+    <div>
+
+      <img src="https://pbs.twimg.com/profile_images/3511787126/e23647c60fe7cee53e4d2d37a50a255c_400x400.jpeg">
+      <p>Lucifer Sam</p>
+      <br><br><br>
+    </div>
+  </div>
+</div>
+
 <div id="dashboard" class="pure-g">
   <div id="userProfilePortal" class="pure-u-1-3">
     <div id="profileZone">
@@ -4561,6 +4585,9 @@
         <h1 id="occasionEditorTitle">Occasion</h1>
       </div>
       <form id="userOccasionsEditorForm" class="pure-form pure-form-stacked">
+        <div id="userOccasionsEditorShareDiv">
+          <a href="" class="btn" id="userOccasionsEditorShare">share</a>
+        </div>
         <p>Occasion name:</p>
         <div id="userOccasionNameDiv">
           <input type="text" id="userOccasionsEditName" class="pure-input-1">
@@ -5395,7 +5422,7 @@
 
               <img src="{{occasion.sharerImg}}"><br>
               <p id="occasionSharer{{occasion.id}}">{{occasion.sharrerName}} has shared the following occasion with you on {{occasion.cleanDate}}</p>
-              <p id="occasionSharee{{occasion.id}}">You have shared the following occasion with {{holiday.inviteeName}} on {{holiday.cleanDate}}</p>
+              <p id="occasionSharee{{occasion.id}}">You have shared the following occasion with {{occasion.inviteeName}} on {{occasion.cleanDate}}</p>
 
               <br><br><br><br><br><br>
               <h3>{{occasion.name}}</h3>

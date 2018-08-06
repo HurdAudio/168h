@@ -5328,7 +5328,7 @@ footer img {
 }
 
 #occasionsManagerBar h1 {
-  margin-left: 2em;
+  margin-left: 1em;
   padding-top: 0.4em;
 }
 
@@ -5707,7 +5707,7 @@ footer img {
 
 #occasionsManagerForm a {
   float: left;
-  margin-left: 1.5em;
+  margin-left: 0.5em;
 }
 
 #billsManagerForm {
@@ -8178,6 +8178,11 @@ footer img {
 
 #musicSelectorPlayer {
   margin: -15vmin 1vmin 1vmin 3vmin;
+}
+
+#userOccasionsEditorShare {
+  float: right;
+  margin-right: 0.5em;
 }
 
 

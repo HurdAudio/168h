@@ -267,6 +267,13 @@
       vm.declineTask = declineTask;
       vm.acceptTask = acceptTask;
       vm.userDeleteOccasionShareComment = userDeleteOccasionShareComment;
+      vm.cancelOccasionInvite = cancelOccasionInvite;
+
+      function cancelOccasionInvite() {
+        let shareOccasionPane = document.getElementById('shareOccasionPane');
+
+        shareOccasionPane.setAttribute("style", "z-index: -6; opacity: 0; transition: all 0.5s linear;");
+      }
 
       function userDeleteOccasionShareComment(commentId, occasionId) {
         $http.delete(`/occasions_share_comments/${commentId}`)
@@ -12188,6 +12195,70 @@
         populateOccasionManager();
       }
 
+      function shareTheOccasion(friendId, occasionId) {
+        let subObj = {
+          user_id: currentUserId,
+          occasion_id: occasionId,
+          share_associate_id: friendId,
+          responded: false,
+          accepted: false
+        };
+        $http.post('/occasions_shares', subObj)
+        .then(()=>{
+          cancelOccasionInvite();
+        });
+      }
+
+      function occasionShareFriendSlot(friendId, listDiv, filter, occasionId) {
+        let entryDiv;
+        let entryImg;
+        let entryName;
+        let entryBr;
+
+        $http.get(`/users/${friendId}`)
+        .then(friendData=>{
+          let friend = friendData.data;
+          if ((friend.name.toString().toLowerCase().indexOf(filter.toLowerCase()) !== -1) || (friend.email.toString().toLowerCase().indexOf(filter.toLowerCase()) !== -1)) {
+            entryDiv = document.createElement('div');
+            entryDiv.setAttribute("style", "cursor: pointer;");
+            listDiv.appendChild(entryDiv);
+            entryImg = document.createElement('img');
+            entryDiv.appendChild(entryImg);
+            entryImg.src = friend.user_avatar_url;
+            entryName = document.createElement('p');
+            entryDiv.appendChild(entryName);
+            entryName.innerHTML = friend.name;
+            entryBr = document.createElement('br');
+            entryDiv.appendChild(entryBr);
+            entryBr = document.createElement('br');
+            entryDiv.appendChild(entryBr);
+            entryBr = document.createElement('br');
+            entryDiv.appendChild(entryBr);
+            entryBr = document.createElement('br');
+            entryDiv.appendChild(entryBr);
+            entryBr = document.createElement('br');
+            entryDiv.appendChild(entryBr);
+            entryDiv.addEventListener('click', ()=>{
+              shareTheOccasion(friendId, occasionId);
+            });
+          }
+        });
+      }
+
+      function populateOccasionShareFriendsList(listDiv, filter, occasionId) {
+        $http.get(`/users/${currentUserId}`)
+        .then(userData=>{
+          let user = userData.data;
+          if (user.associates.friends !== null) {
+            if (user.associates.friends.length > 0) {
+              for (let i = 0; i < user.associates.friends.length; i++) {
+                occasionShareFriendSlot(user.associates.friends[i], listDiv, filter, occasionId);
+              }
+            }
+          }
+        });
+      }
+
       function editOccaision(occasionId) {
         let occasionsManagerDone = document.getElementById('occasionsManagerDone');
         let userOccasionsEditingDiv = document.getElementById('userOccasionsEditingDiv');
@@ -12219,6 +12290,34 @@
           userOccasionAnnualCheckboxDiv.appendChild(userOccasionsAnnualState);
           userOccasionsAnnualState.id = userOccasionsAnnualState;
           userOccasionsAnnualState.type = 'checkbox';
+        }
+        let userOccasionsEditorShareDiv = document.getElementById('userOccasionsEditorShareDiv');
+        let userOccasionsEditorShare = document.getElementById('userOccasionsEditorShare');
+        if (userOccasionsEditorShare) {
+          userOccasionsEditorShare.parentNode.removeChild(userOccasionsEditorShare);
+          userOccasionsEditorShare = document.createElement('a');
+          userOccasionsEditorShareDiv.appendChild(userOccasionsEditorShare);
+          userOccasionsEditorShare.id = 'userOccasionsEditorShare';
+          userOccasionsEditorShare.className = 'btn';
+          userOccasionsEditorShare.innerHTML = 'share';
+          userOccasionsEditorShare.setAttribute("style", "cursor: pointer;");
+        }
+        let shareOccasionPane = document.getElementById('shareOccasionPane');
+        let occasionShareName = document.getElementById('occasionShareName');
+        let occasionShareDate = document.getElementById('occasionShareDate');
+        let ocDate;
+        let months = [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ];
+        let occasionShareAnnuality = document.getElementById('occasionShareAnnuality');
+        let occasionFriendsSearchList = document.getElementById('occasionFriendsSearchList');
+        let shareOccasionSearchBarDiv = document.getElementById('shareOccasionSearchBarDiv');
+        let occasionWhoToShareSearch = document.getElementById('occasionWhoToShareSearch');
+        if (occasionWhoToShareSearch) {
+          occasionWhoToShareSearch.parentNode.removeChild(occasionWhoToShareSearch);
+          occasionWhoToShareSearch = document.createElement('input');
+          shareOccasionSearchBarDiv.appendChild(occasionWhoToShareSearch);
+          occasionWhoToShareSearch.id = 'occasionWhoToShareSearch';
+          occasionWhoToShareSearch.type = 'text';
+          occasionWhoToShareSearch.placeholder = 'search';
         }
 
         $http.get(`/occasions/${occasionId}`)
@@ -12259,6 +12358,28 @@
             $http.patch(`/occasions/${occasionId}`, subObj)
             .then(()=>{
               occasion.is_annual = userOccasionsAnnualState.checked;
+            });
+          });
+          userOccasionsEditorShare.addEventListener('click', () => {
+            shareOccasionPane.setAttribute("style", "z-index: 6; opacity: 1; transition: all 0.5s linear;");
+            ocDate = new Date(occasion.day_of);
+
+            occasionShareName.innerHTML = occasion.name;
+            occasionShareDate.innerHTML = ocDate.getDate() + ' ' + months[ocDate.getMonth()];
+            if (occasion.is_annual) {
+              occasionShareAnnuality.innerHTML = 'Observed Annually';
+            } else {
+              occasionShareAnnuality.innerHTML = 'Observed in ' + ocDate.getFullYear();
+            }
+            while(occasionFriendsSearchList.firstChild) {
+              occasionFriendsSearchList.removeChild(occasionFriendsSearchList.firstChild);
+            }
+            populateOccasionShareFriendsList(occasionFriendsSearchList, '', occasion.id);
+            occasionWhoToShareSearch.addEventListener('keyup', ()=>{
+              while(occasionFriendsSearchList.firstChild) {
+                occasionFriendsSearchList.removeChild(occasionFriendsSearchList.firstChild);
+              }
+              populateOccasionShareFriendsList(occasionFriendsSearchList, occasionWhoToShareSearch.value, occasion.id);
             });
           });
         });
