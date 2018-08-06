@@ -540,7 +540,9 @@
       <h2 id="occasionsTitle">Occasions:</h2>
       <div id="occasionsList">
         <main ng-repeat="occasion in $ctrl.occasions | orderBy : $ctrl.sortBy">
+          <a class="btn" href="" ng-click="$ctrl.shareOccasion(occasion.id)">share</a>
           <p ng-click="$ctrl.editOccasion(occasion.id)" id="{{occasion.name + occasion.id}}"> - {{occasion.name}}</p>
+
         </main>
       </div>
       <a href="" class="btn" id="addOccasionButton" ng-click="$ctrl.addOccasionToDay()">add</a>
@@ -818,7 +820,32 @@
 
     <div>
 
-      <img src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/1964977_10203532053928956_1620738254_n.jpg?oh=912289bc56416424f7d2e4ef3bfb8604&oe=5B41AE92">
+      <img src="https://pbs.twimg.com/profile_images/3511787126/e23647c60fe7cee53e4d2d37a50a255c_400x400.jpeg">
+      <p>Lucifer Sam</p>
+      <br><br><br>
+    </div>
+  </div>
+</div>
+
+<div id="shareOccasionPane">
+  <a class="btn" ng-click="$ctrl.cancelOccasionInvite()" href="#">cancel</a>
+  <div id="occasionShareIdentifierFields">
+
+    <h3 id="occasionShareName"></h3>
+    <h3 id="occasionShareDate"></h3>
+    <h3 id="occasionShareAnnuality"></h3>
+
+  </div><br><br>
+  <h3>Select who you want to share this occasion with:</h3>
+  <div id="shareOccasionSearchBarDiv">
+    <input type="text" id="occasionWhoToShareSearch" placeholder="search">
+  </div>
+  <div id="occasionFriendsSearchList">
+
+
+    <div>
+
+      <img src="https://pbs.twimg.com/profile_images/3511787126/e23647c60fe7cee53e4d2d37a50a255c_400x400.jpeg">
       <p>Lucifer Sam</p>
       <br><br><br>
     </div>

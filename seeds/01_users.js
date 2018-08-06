@@ -45,7 +45,7 @@ exports.seed = function(knex, Promise) {
           email: 'cia_pope@yahoo.com',
           hashed_password: '$2a$12$zlJZuGFGcqgLQyy/nVtoQeafv47g8dNTGTJL/x7EmSbPSiFLi.aMS',
           is_admin: false,
-          user_avatar_url: 'https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-9/38280496_10217375809614196_7070618103205330944_n.jpg?_nc_cat=0&oh=ca110f9c9c6368964545e97a15dd33fe&oe=5C0A80B7',
+          user_avatar_url: 'https://pbs.twimg.com/profile_images/3511787126/e23647c60fe7cee53e4d2d37a50a255c_400x400.jpeg',
           associates: {
             "friends": [ 1, 2 ]
           },

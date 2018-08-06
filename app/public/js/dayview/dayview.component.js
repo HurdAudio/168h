@@ -91,6 +91,111 @@
       vm.cancelAppointmentInvite = cancelAppointmentInvite;
       vm.shareHoliday = shareHoliday;
       vm.cancelHolidayInvite = cancelHolidayInvite;
+      vm.shareOccasion = shareOccasion;
+      vm.cancelOccasionInvite = cancelOccasionInvite;
+
+      function cancelOccasionInvite() {
+        let shareOccasionPane = document.getElementById('shareOccasionPane');
+
+        shareOccasionPane.setAttribute("style", "opacity: 0; z-index: -6; transition: all 0.5s linear;");
+      }
+
+      function occasionShareListEntry(friendId, listDiv, filter, occasionId) {
+        let entryDiv;
+        let entryImg;
+        let entryP;
+        let entryBr;
+
+        $http.get(`/users/${friendId}`)
+        .then(friendData=>{
+          let friend = friendData.data;
+          console.log(friend.email + ' ' + filter);
+          console.log(friend.email.toLowerCase().toString().indexOf(filter.toString().toLowerCase()));
+          if ((friend.name.toString().toLowerCase().indexOf(filter.toLowerCase()) !== -1) || (friend.email.toString().toLowerCase().indexOf(filter.toLowerCase()) !== -1)) {
+            entryDiv = document.createElement('div');
+            listDiv.appendChild(entryDiv);
+            entryDiv.setAttribute("style", "cursor: pointer;");
+            entryImg = document.createElement('img');
+            entryDiv.appendChild(entryImg);
+            entryImg.src = friend.user_avatar_url;
+            entryP = document.createElement('p');
+            entryDiv.appendChild(entryP);
+            entryP.innerHTML = friend.name;
+            entryBr = document.createElement('br');
+            entryDiv.appendChild(entryBr);
+            entryBr = document.createElement('br');
+            entryDiv.appendChild(entryBr);
+            entryBr = document.createElement('br');
+            entryDiv.appendChild(entryBr);
+            entryBr = document.createElement('br');
+            entryDiv.appendChild(entryBr);
+            entryBr = document.createElement('br');
+            entryDiv.appendChild(entryBr);
+            entryDiv.addEventListener('click', ()=>{
+              let subObj = {
+                user_id: currentUserId,
+                occasion_id: occasionId,
+                share_associate_id: friend.id,
+                responded: false,
+                accepted: false
+              };
+              $http.post('occasions_shares', subObj)
+              .then(shareData=>{
+                let share = shareData.data;
+                cancelOccasionInvite();
+              });
+            });
+          }
+        });
+      }
+
+      function populateOccasionShareList(listDiv, filter, occasionId) {
+
+        $http.get(`/users/${currentUserId}`)
+        .then(userData=>{
+          let user = userData.data;
+          if ((user.associates.friends !== null) && (user.associates.friends.length > 0)) {
+            for (let i = 0; i < user.associates.friends.length; i++) {
+              occasionShareListEntry(user.associates.friends[i], listDiv, filter, occasionId);
+            }
+          }
+        });
+      }
+
+      function shareOccasion(occasionId) {
+        let shareOccasionPane = document.getElementById('shareOccasionPane');
+        let occasionShareName = document.getElementById('occasionShareName');
+        let occasionShareDate = document.getElementById('occasionShareDate');
+        let ocDay;
+        let occasionShareAnnuality = document.getElementById('occasionShareAnnuality');
+        let occasionFriendsSearchList = document.getElementById('occasionFriendsSearchList');
+        while (occasionFriendsSearchList.firstChild) {
+          occasionFriendsSearchList.removeChild(occasionFriendsSearchList.firstChild);
+        }
+        let occasionWhoToShareSearch = document.getElementById('occasionWhoToShareSearch');
+
+        $http.get(`/occasions/${occasionId}`)
+        .then(occasionData=>{
+          let occasion = occasionData.data;
+          ocDay = new Date(occasion.day_of);
+          occasionShareName.innerHTML = occasion.name;
+          occasionShareDate.innerHTML = ocDay.getDate() + ' ' + months[ocDay.getMonth()];
+          if (occasion.is_annual) {
+            occasionShareAnnuality.innerHTML = 'Observed Annually'
+          } else {
+            occasionShareAnnuality.innerHTML = 'Observed in ' + ocDay.getFullYear();
+          }
+          populateOccasionShareList(occasionFriendsSearchList, '', occasionId);
+          occasionWhoToShareSearch.addEventListener('keyup', () => {
+            while (occasionFriendsSearchList.firstChild) {
+              occasionFriendsSearchList.removeChild(occasionFriendsSearchList.firstChild);
+            }
+            populateOccasionShareList(occasionFriendsSearchList, occasionWhoToShareSearch.value, occasionId);
+          });
+        });
+
+        shareOccasionPane.setAttribute("style", "opacity: 1; z-index: 6; transition: all 0.5s linear;");
+      }
 
       function populateUserFriendsListForHolidays(allFriendsList, friendId) {
         $http.get(`/users/${friendId}`)
