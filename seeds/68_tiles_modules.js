@@ -439,6 +439,21 @@ exports.seed = function(knex, Promise) {
           public: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 30,
+          user_author_id: 1,
+          theme: 'Paper',
+          type: 'saturday',
+          src_string: '../img/tiles/scrapbook-2351352_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '110%',
+          color_dark: '#434636',
+          color_medium: '#A6A68E',
+          color_light: '#E6E1C4',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
