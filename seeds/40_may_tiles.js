@@ -802,6 +802,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FED698',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 58,
+          user_id: 1,
+          theme: 'Greenery',
+          type: 'week',
+          src_string: '../img/may_tiles/pandu-ior-204429-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '100%',
+          color_dark: '#041205',
+          color_medium: '#0E7810',
+          color_light: '#7FB22E',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
