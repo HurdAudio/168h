@@ -6904,6 +6904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 346,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/golden-gate-1955.jpg',
+          title: 'Golden Gate',
+          artist: 'Charles Sheeler',
+          year: '1955',
+          rule: {
+            "monday": [ 14, 21, 9, 16 ],
+            "tuesday": [ 21, 27, 15, 23 ],
+            "wednesday": [ 20, 26, 14, 22 ],
+            "thursday": [ 19, 25, 13, 21 ],
+            "friday": [ 18, 24, 12, 20 ],
+            "saturday": [ 7, 23, 11, 20 ],
+            "sunday": [ 6, 13, 10, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 347,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/going-to-heaven-1993.jpg',
+          title: 'Going to Heaven',
+          artist: 'Glennray Tutor',
+          year: '1993',
+          rule: {
+            "monday": [ 6, 13, 10, 18 ],
+            "tuesday": [ 14, 21, 9, 16 ],
+            "wednesday": [ 21, 27, 15, 23 ],
+            "thursday": [ 20, 26, 14, 22 ],
+            "friday": [ 19, 25, 13, 21 ],
+            "saturday": [ 18, 24, 12, 20 ],
+            "sunday": [ 7, 23, 11, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 348,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/yellow-man-with-trolley-1952.jpg',
+          title: 'Yellow man with Trolley',
+          artist: 'Roger Raveel',
+          year: '1952',
+          rule: {
+            "monday": [ 7, 23, 11, 20 ],
+            "tuesday": [ 6, 13, 10, 18 ],
+            "wednesday": [ 14, 21, 9, 16 ],
+            "thursday": [ 21, 27, 15, 23 ],
+            "friday": [ 20, 26, 14, 22 ],
+            "saturday": [ 19, 25, 13, 21 ],
+            "sunday": [ 18, 24, 12, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 349,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/mauve-barn-1985.jpg',
+          title: 'Mauve Barn',
+          artist: 'Eyvind Earle',
+          year: '1985',
+          rule: {
+            "monday": [ 18, 24, 12, 20 ],
+            "tuesday": [ 7, 23, 11, 20 ],
+            "wednesday": [ 6, 13, 10, 18 ],
+            "thursday": [ 14, 21, 9, 16 ],
+            "friday": [ 21, 27, 15, 23 ],
+            "saturday": [ 20, 26, 14, 22 ],
+            "sunday": [ 19, 25, 13, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 350,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/wine-crucifix-1978.jpg',
+          title: 'Wine Crucifix',
+          artist: 'Arnulf Rainer',
+          year: '1978',
+          rule: {
+            "monday": [ 20, 26, 14, 22 ],
+            "tuesday": [ 19, 25, 13, 21 ],
+            "wednesday": [ 8, 24, 12, 21 ],
+            "thursday": [ 7, 14, 11, 19 ],
+            "friday": [ 15, 22, 10, 17 ],
+            "saturday": [ 22, 28, 16, 24 ],
+            "sunday": [ 21, 27, 15, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
