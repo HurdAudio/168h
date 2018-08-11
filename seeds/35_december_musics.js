@@ -3352,6 +3352,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 187,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3608705339/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://quintavant.bandcamp.com/album/qtv-001-hey-babe',
+          a_string: 'QTV 001 – Hey Babe by Baby Hitler',
+          rule: {
+            "monday": [ 2, 8, 14, 20 ],
+            "tuesday": [ 1, 7, 13, 18 ],
+            "wednesday": [ 29, 6, 12, 18 ],
+            "thursday": [ 28, 5, 11, 17 ],
+            "saturday": [ 29, 4, 10, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 188,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3897001071/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://quintavant.bandcamp.com/album/qtv-013-anganga',
+          a_string: 'QTV 013 – Anganga by Juçara Marçal &amp; Cadu Tenório',
+          rule: {
+            "monday": [ 29, 4, 10, 16 ],
+            "tuesday": [ 2, 8, 14, 20 ],
+            "wednesday": [ 1, 7, 13, 18 ],
+            "thursday": [ 29, 6, 12, 18 ],
+            "saturday": [ 28, 5, 11, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 189,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=960816160/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://quintavant.bandcamp.com/album/qtv023-espectro',
+          a_string: 'QTV023 – Espectro by Tantão e os Fita',
+          rule: {
+            "monday": [ 29, 6, 12, 18 ],
+            "tuesday": [ 30, 5, 11, 17 ],
+            "wednesday": [ 3, 9, 15, 21 ],
+            "thursday": [ 2, 8, 14, 19 ],
+            "saturday": [ 30, 7, 13, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
