@@ -6704,6 +6704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 336,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_St_010.jpg',
+          title: 'Under the flag of Lenin - Forward for the Motherland, for our victory!',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 21, 1, 12, 16 ],
+            "tuesday": [ 20, 31, 11, 15 ],
+            "wednesday": [ 19, 30, 10, 14 ],
+            "thursday": [ 18, 29, 30, 13 ],
+            "friday": [ 27, 28, 8, 12 ],
+            "saturday": [ 23, 3, 14, 18 ],
+            "sunday": [ 22, 2, 13, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 337,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_warsovpost_00028.jpg',
+          title: 'You brought back to us (our) life!',
+          artist: '?',
+          year: '1943',
+          rule: {
+            "monday": [ 22, 2, 13, 17 ],
+            "tuesday": [ 21, 1, 12, 16 ],
+            "wednesday": [ 20, 31, 11, 15 ],
+            "thursday": [ 19, 30, 10, 14 ],
+            "friday": [ 18, 29, 30, 13 ],
+            "saturday": [ 27, 28, 8, 12 ],
+            "sunday": [ 23, 3, 14, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 338,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_St_015.jpg',
+          title: 'More metal - more weapons!',
+          artist: '?',
+          year: '?',
+          rule: {
+            "monday": [ 23, 3, 14, 18 ],
+            "tuesday": [ 22, 2, 13, 17 ],
+            "wednesday": [ 21, 1, 12, 16 ],
+            "thursday": [ 20, 31, 11, 15 ],
+            "friday": [ 19, 30, 10, 14 ],
+            "saturday": [ 18, 29, 30, 13 ],
+            "sunday": [ 27, 28, 8, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 339,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_do_not_blab.jpg',
+          title: 'Do not blab!',
+          artist: '?',
+          year: '1941',
+          rule: {
+            "monday": [ 27, 28, 8, 12 ],
+            "tuesday": [ 23, 3, 14, 18 ],
+            "wednesday": [ 22, 2, 13, 17 ],
+            "thursday": [ 21, 1, 12, 16 ],
+            "friday": [ 20, 31, 11, 15 ],
+            "saturday": [ 19, 30, 10, 14 ],
+            "sunday": [ 18, 29, 30, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 340,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_breadsovpost_00021.jpg',
+          title: 'Breed rabbits!',
+          artist: 'G. Shchetkin',
+          year: '1957',
+          rule: {
+            "monday": [ 18, 29, 30, 13 ],
+            "tuesday": [ 27, 28, 8, 12 ],
+            "wednesday": [ 23, 3, 14, 18 ],
+            "thursday": [ 22, 2, 13, 17 ],
+            "friday": [ 21, 1, 12, 16 ],
+            "saturday": [ 20, 31, 11, 15 ],
+            "sunday": [ 19, 30, 10, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
