@@ -3460,6 +3460,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 193,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=382935178/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ebotaylor.bandcamp.com/album/love-death',
+          a_string: 'Love &amp; Death by Ebo Taylor',
+          rule: {
+            "monday": [ 29, 10, 21, 25 ],
+            "tuesday": [ 28, 9, 20, 24 ],
+            "wednesday": [ 27, 8, 19, 23 ],
+            "thursday": [ 26, 7, 18, 20 ],
+            "saturday": [ 25, 6, 17, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 194,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3837302998/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://gafacci.bandcamp.com/album/ahunda-ep',
+          a_string: 'Ahunda EP by Gafacci',
+          rule: {
+            "monday": [ 25, 6, 17, 29 ],
+            "tuesday": [ 29, 10, 21, 25 ],
+            "wednesday": [ 28, 9, 20, 24 ],
+            "thursday": [ 27, 8, 19, 23 ],
+            "saturday": [ 26, 7, 18, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 195,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1190584333/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://alexwondergem.bandcamp.com/album/buying-our-freedom',
+          a_string: 'Buying Our Freedom by Eli &amp; Alex Wondergem',
+          rule: {
+            "monday": [ 26, 7, 18, 20 ],
+            "tuesday": [ 25, 6, 17, 29 ],
+            "wednesday": [ 29, 10, 21, 25 ],
+            "thursday": [ 28, 9, 20, 24 ],
+            "saturday": [ 27, 8, 19, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
