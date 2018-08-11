@@ -732,6 +732,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#E8E0D5',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 53,
+          user_id: 1,
+          theme: 'Autumnal',
+          type: 'week',
+          src_string: '../img/october_tiles/jeremy-thomas-79493-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '160%',
+          color_dark: '#140E08',
+          color_medium: '#B8CE52',
+          color_light: '#F3C2F4',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
