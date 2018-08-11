@@ -3676,6 +3676,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 205,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1288952570/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bigups.bandcamp.com/album/eighteen-hours-of-static',
+          a_string: 'Eighteen Hours of Static by Big Ups',
+          rule: {
+            "monday": [ 1, 21, 29, 24 ],
+            "tuesday": [ 30, 20, 28, 22 ],
+            "wednesday": [ 29, 19, 27, 21 ],
+            "thursday": [ 3, 23, 1, 25 ],
+            "saturday": [ 2, 22, 30, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 206,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2849359676/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bigups.bandcamp.com/album/wake-up',
+          a_string: 'Wake Up by Big Ups',
+          rule: {
+            "monday": [ 2, 22, 30, 24 ],
+            "tuesday": [ 1, 21, 29, 24 ],
+            "wednesday": [ 30, 20, 28, 22 ],
+            "thursday": [ 29, 19, 27, 21 ],
+            "saturday": [ 3, 23, 1, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 207,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1827602380/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://hivebentmd.bandcamp.com/album/dyatlov',
+          a_string: 'Dyatlov by Hive Bent',
+          rule: {
+            "monday": [ 3, 23, 1, 25 ],
+            "tuesday": [ 2, 22, 30, 24 ],
+            "wednesday": [ 1, 21, 29, 24 ],
+            "thursday": [ 30, 20, 28, 22 ],
+            "saturday": [ 29, 19, 27, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
