@@ -6504,6 +6504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 326,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/pliage-folded-painting-1972.jpg',
+          title: 'Pliage (Folded Painting)',
+          artist: 'Andre-Pierre Arnal',
+          year: '1972',
+          rule: {
+            "monday": [ 19, 24, 30, 5 ],
+            "tuesday": [ 18, 23, 29, 6 ],
+            "wednesday": [ 24, 29, 5, 10 ],
+            "thursday": [ 23, 28, 3, 9 ],
+            "friday": [ 22, 26, 3, 7 ],
+            "saturday": [ 21, 24, 1, 6 ],
+            "sunday": [ 20, 24, 1, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 327,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/summer-table-1972.jpg',
+          title: 'Summer Table',
+          artist: 'Brice Marden',
+          year: '1972',
+          rule: {
+            "monday": [ 20, 24, 1, 6 ],
+            "tuesday": [ 19, 24, 30, 5 ],
+            "wednesday": [ 18, 23, 29, 6 ],
+            "thursday": [ 24, 29, 5, 10 ],
+            "friday": [ 23, 28, 3, 9 ],
+            "saturday": [ 22, 26, 3, 7 ],
+            "sunday": [ 21, 24, 1, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 328,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/january-01-1972-1972.jpg',
+          title: 'January 01, 1972',
+          artist: 'Marcia Hafif',
+          year: '1972',
+          rule: {
+            "monday": [ 21, 24, 1, 6 ],
+            "tuesday": [ 20, 24, 1, 6 ],
+            "wednesday": [ 19, 24, 30, 5 ],
+            "thursday": [ 18, 23, 29, 6 ],
+            "friday": [ 24, 29, 5, 10 ],
+            "saturday": [ 23, 28, 3, 9 ],
+            "sunday": [ 22, 26, 3, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 329,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/circle-in-and-out-of-a-polygon-2-1973.jpg',
+          title: 'Circle In and Out of a Polygon 2',
+          artist: 'Robert Mangold',
+          year: '1973',
+          rule: {
+            "monday": [ 23, 27, 4, 8 ],
+            "tuesday": [ 22, 25, 2, 7 ],
+            "wednesday": [ 21, 25, 2, 7 ],
+            "thursday": [ 20, 25, 1, 6 ],
+            "friday": [ 19, 24, 30, 7 ],
+            "saturday": [ 25, 30, 6, 11 ],
+            "sunday": [ 24, 29, 4, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 330,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/mirror-object-1973.jpg',
+          title: 'Mirror Object',
+          artist: 'Blinky Palermo',
+          year: '1973',
+          rule: {
+            "monday": [ 24, 29, 4, 10 ],
+            "tuesday": [ 23, 27, 4, 8 ],
+            "wednesday": [ 22, 25, 2, 7 ],
+            "thursday": [ 21, 25, 2, 7 ],
+            "friday": [ 20, 25, 1, 6 ],
+            "saturday": [ 19, 24, 30, 7 ],
+            "sunday": [ 25, 30, 6, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
