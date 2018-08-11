@@ -3784,6 +3784,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 211,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4182450099/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tylerdamon.bandcamp.com/album/full-yum',
+          a_string: 'Full Yum by Tyler Damon &amp; Dave Rempis',
+          rule: {
+            "monday": [ 11, 19, 1, 31 ],
+            "tuesday": [ 10, 18, 31, 30 ],
+            "wednesday": [ 9, 17, 30, 29 ],
+            "thursday": [ 8, 16, 29, 28 ],
+            "saturday": [ 12, 20, 2, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 212,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3316323587/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://subrosalabel.bandcamp.com/album/four-parabolic-mixes',
+          a_string: 'Four Parabolic Mixes by Henri Pousseur / Robert Hampson / Markus Popp - Oval',
+          rule: {
+            "monday": [ 12, 20, 2, 1 ],
+            "tuesday": [ 11, 19, 1, 31 ],
+            "wednesday": [ 10, 18, 31, 30 ],
+            "thursday": [ 9, 17, 30, 29 ],
+            "saturday": [ 8, 16, 29, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 213,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=305681587/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://richardramirez.bandcamp.com/album/audio-negativism',
+          a_string: 'Audio Negativism by Richard Ramirez',
+          rule: {
+            "monday": [ 8, 16, 29, 28 ],
+            "tuesday": [ 12, 20, 2, 1 ],
+            "wednesday": [ 11, 19, 1, 31 ],
+            "thursday": [ 10, 18, 31, 30 ],
+            "saturday": [ 9, 17, 30, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
