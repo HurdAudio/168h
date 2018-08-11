@@ -1864,6 +1864,66 @@ exports.seed = function(knex, Promise) {
           public: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 156,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/mikhail-vasilyev-253977-unsplash.jpg',
+          title: 'Cat Face',
+          artist: 'Mikhail Vasilyev',
+          year: '2018',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 157,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/mikhail-vasilyev-130018-unsplash.jpg',
+          title: 'Close-up of a blue-eyed cat looking up',
+          artist: 'Mikhail Vasilyev',
+          year: '2018',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 158,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/alexandru-zdrobau-176844-unsplash.jpg',
+          title: 'Close-up of a sleeping white and brown tabby cat',
+          artist: 'Alexandru Zdrobău',
+          year: '2018',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 159,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/marko-blazevic-219788-unsplash.jpg',
+          title: 'My Beautiful Cat :)',
+          artist: 'Marko Blažević',
+          year: '2018',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 160,
+          user_author_id: 1,
+          theme: 'Cute Cats',
+          img_path: './img/modules/dan-gold-222487-unsplash.jpg',
+          title: 'Two ginger cats playing in dirt near an old building',
+          artist: 'Dan Gold',
+          year: '2018',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
