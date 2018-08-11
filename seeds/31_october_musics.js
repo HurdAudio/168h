@@ -3568,6 +3568,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 199,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4060774432/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://thecoolgreenhouse.bandcamp.com/album/london',
+          a_string: 'London by The Cool Greenhouse',
+          rule: {
+            "monday": [ 3, 13, 24, 26 ],
+            "tuesday": [ 2, 12, 23, 25 ],
+            "wednesday": [ 6, 16, 26, 29 ],
+            "thursday": [ 5, 15, 25, 28 ],
+            "saturday": [ 4, 14, 24, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 200,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3222170659/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://lavidaesunmus.bandcamp.com/album/hitos-y-derrotas-mlp',
+          a_string: 'Hitos Y Derrotas MLP by Nueva Fuerza',
+          rule: {
+            "monday": [ 4, 14, 24, 27 ],
+            "tuesday": [ 3, 13, 24, 26 ],
+            "wednesday": [ 2, 12, 23, 25 ],
+            "thursday": [ 6, 16, 26, 29 ],
+            "saturday": [ 5, 15, 25, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 201,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2411420538/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://preening.bandcamp.com/album/nice-dice',
+          a_string: 'Nice Dice by Preening',
+          rule: {
+            "monday": [ 5, 15, 25, 28 ],
+            "tuesday": [ 4, 14, 24, 27 ],
+            "wednesday": [ 3, 13, 24, 26 ],
+            "thursday": [ 2, 12, 23, 25 ],
+            "saturday": [ 6, 16, 26, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
