@@ -746,6 +746,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#D0C3B0',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 54,
+          user_id: 1,
+          theme: 'Leather',
+          type: 'friday',
+          src_string: '../img/september_tiles/rebecca-aldama-585108-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '160%',
+          color_dark: '#0D0101',
+          color_medium: '#734826',
+          color_light: '#CDD8DA',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
