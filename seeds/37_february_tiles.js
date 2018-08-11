@@ -844,6 +844,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FDFCF7',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 61,
+          user_id: 1,
+          theme: 'Silk/Velvet',
+          type: 'sunday',
+          src_string: '../img/february_tiles/naomi-koelemans-634004-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '160%',
+          color_dark: '#020117',
+          color_medium: '#FB1D44',
+          color_light: '#E0F9FA',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
