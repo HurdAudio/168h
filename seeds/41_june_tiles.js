@@ -788,6 +788,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#DFDFDF',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 57,
+          user_id: 1,
+          theme: 'Light',
+          type: 'holiday',
+          src_string: '../img/june_tiles/jf-martin-655838-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '170%',
+          color_dark: '#050302',
+          color_medium: '#D8A44A',
+          color_light: '#FDFDFD',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
