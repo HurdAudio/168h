@@ -10135,6 +10135,39 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 650,
+          user_id: 1,
+          name: 'Dave Rempis (reedsman) born in 1975',
+          color: '#FFFFEA',
+          picture: './img/musicians/daverempis.jpeg',
+          day_of: new Date ('1975-03-24T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: true,
+          override_content: {
+            "sources": [ 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp' ],
+            "src_strings": [ 'https://bandcamp.com/EmbeddedPlayer/album=3923641399/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=1919535659/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=2292751615/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=2934864250/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=4127204634/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/' ],
+            "href_strings": [ 'http://aerophonicrecords.bandcamp.com/album/lattice', 'http://kevindavis.bandcamp.com/album/duets-i', 'http://park70.bandcamp.com/album/full-yum', 'http://killick.bandcamp.com/album/live-at-earthshaking-music', 'http://music.amalgamusic.org/album/cure-for-the-quotidian' ],
+            "a_strings": [ 'Lattice by Dave Rempis Solo', 'Duets I by Kevin Davis/Dave Rempis', 'Full Yum by Tyler Damon &amp; Dave Rempis', 'Live at Earthshaking Music by SS Puft Quartet with Dave Rempis', 'Cure For the Quotidian by Dave Rempis / Matt Piet / Tim Daisy' ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 651,
+          user_id: 1,
+          name: 'The world ended on this day in 2000 when the Earth spun fast enough to displace and rearrange all the continents exactly as predicted by Richard W. Noone.',
+          color: '#2287B5',
+          picture: './img/doomsday/6329734.jpg',
+          day_of: new Date ('2000-05-05T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
