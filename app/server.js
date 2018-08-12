@@ -180,6 +180,8 @@ const observance_share_comment_reactions = require('./routes/observance_share_co
 const observance_share_comment_reactionsbyuser = require('./routes/observance_share_comment_reactionsbyuser.js');
 const art_share_comment_reactions = require('./routes/art_share_comment_reactions.js');
 const art_share_comment_reactionsbyuser = require('./routes/art_share_comment_reactionsbyuser.js');
+const music_share_comment_reactions = require('./routes/music_share_comment_reactions.js');
+const music_share_comment_reactionsbyuser = require('./routes/music_share_comment_reactionsbyuser.js');
 
 const port = process.env.PORT || 3007;
 
@@ -360,6 +362,8 @@ app.use(fileUpload());
  app.use('/observance_share_comment_reactionsbyuser', observance_share_comment_reactionsbyuser);
  app.use('/art_share_comment_reactions', art_share_comment_reactions);
  app.use('/art_share_comment_reactionsbyuser', art_share_comment_reactionsbyuser);
+ app.use('/music_share_comment_reactions', music_share_comment_reactions);
+ app.use('/music_share_comment_reactionsbyuser', music_share_comment_reactionsbyuser);
 
 app.get('/onthisdayinhistory/:date', (req, res, next) =>{
   let newUrl = 'http://history.muffinlabs.com/date/';
