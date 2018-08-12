@@ -7104,6 +7104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 356,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/red-square-in-moscow-1910.jpg',
+          title: 'Red Square in Moscow',
+          artist: 'Konstantin Korovin',
+          year: '1910',
+          rule: {
+            "monday": [ 20, 24, 1, 17 ],
+            "tuesday": [ 19, 21, 31, 16 ],
+            "wednesday": [ 18, 21, 30, 15 ],
+            "thursday": [ 17, 20, 29, 14 ],
+            "friday": [ 23, 27, 4, 20 ],
+            "saturday": [ 22, 25, 3, 19 ],
+            "sunday": [ 21, 25, 2, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 357,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/vanity-1904.jpg',
+          title: 'Vanity',
+          artist: 'Aladar Korosfoi-Kriesch',
+          year: '1904',
+          rule: {
+            "monday": [ 22, 26, 3, 19 ],
+            "tuesday": [ 21, 25, 2, 18 ],
+            "wednesday": [ 20, 22, 1, 17 ],
+            "thursday": [ 19, 22, 31, 16 ],
+            "friday": [ 18, 21, 30, 15 ],
+            "saturday": [ 24, 28, 5, 21 ],
+            "sunday": [ 23, 26, 4, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 358,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/the-blimp-1933.jpg',
+          title: 'The Blimp',
+          artist: 'Carel Willink',
+          year: '1933',
+          rule: {
+            "monday": [ 23, 26, 4, 20 ],
+            "tuesday": [ 22, 26, 3, 19 ],
+            "wednesday": [ 21, 25, 2, 18 ],
+            "thursday": [ 20, 22, 1, 17 ],
+            "friday": [ 19, 22, 31, 16 ],
+            "saturday": [ 18, 21, 30, 15 ],
+            "sunday": [ 24, 28, 5, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 359,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/sextant-1917.jpg',
+          title: 'Sextant',
+          artist: 'Marsden Hartley',
+          year: '1917',
+          rule: {
+            "monday": [ 24, 28, 5, 21 ],
+            "tuesday": [ 23, 26, 4, 20 ],
+            "wednesday": [ 22, 26, 3, 19 ],
+            "thursday": [ 21, 25, 2, 18 ],
+            "friday": [ 20, 22, 1, 17 ],
+            "saturday": [ 19, 22, 31, 16 ],
+            "sunday": [ 18, 21, 30, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 360,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/the-future-man-1933(1).jpg',
+          title: 'The Future Man',
+          artist: 'Paul Klee',
+          year: '1933',
+          rule: {
+            "monday": [ 18, 21, 30, 15 ],
+            "tuesday": [ 24, 28, 5, 21 ],
+            "wednesday": [ 23, 26, 4, 20 ],
+            "thursday": [ 22, 26, 3, 19 ],
+            "friday": [ 21, 25, 2, 18 ],
+            "saturday": [ 20, 22, 1, 17 ],
+            "sunday": [ 19, 22, 31, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
