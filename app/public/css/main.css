@@ -7698,6 +7698,22 @@ footer img {
   margin: 1vmin 2vmin 1vmin 4vmin;
 }
 
+#tilesModuleCommentSpace img {
+  float: left;
+  height: 3em;
+  width: 3em;
+  margin: 1vmin 2vmin 1vmin 4vmin;
+}
+
+#tilesModuleCommentSpace p {
+  float: left;
+  margin: 1vmin 2vmin 1vmin 2vmin;
+}
+
+#tilesModuleCommentSpace h3 {
+  margin: 1vmin 2vmin 1vmin 4vmin;
+}
+
 .profileDeleteOption a {
   margin-right: 4vmin;
   float: right;
