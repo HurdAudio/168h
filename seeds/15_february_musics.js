@@ -4432,6 +4432,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 247,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4216895511/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://mayyadda.bandcamp.com/album/holding-space',
+          a_string: 'Holding Space by Mayyadda',
+          rule: {
+            "monday": [ 25, 19, 21, 27 ],
+            "tuesday": [ 8, 12, 14, 18 ],
+            "wednesday": [ 11, 14, 16, 20 ],
+            "thursday": [ 22, 16, 18, 20 ],
+            "saturday": [ 24, 18, 20, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 248,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=945376779/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://yazminlacey.bandcamp.com/album/when-the-sun-dips-90-degrees',
+          a_string: 'When The Sun Dips 90 Degrees by Yazmin Lacey',
+          rule: {
+            "monday": [ 24, 18, 20, 26 ],
+            "tuesday": [ 25, 19, 21, 27 ],
+            "wednesday": [ 8, 12, 14, 18 ],
+            "thursday": [ 11, 14, 16, 20 ],
+            "saturday": [ 22, 16, 18, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 249,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1658579446/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://thehitandrun.bandcamp.com/album/daffi-hnr91',
+          a_string: 'DAFFI [HNR91] by JEREMIAH JAE',
+          rule: {
+            "monday": [ 22, 16, 18, 20 ],
+            "tuesday": [ 24, 18, 20, 26 ],
+            "wednesday": [ 25, 19, 21, 27 ],
+            "thursday": [ 8, 12, 14, 18 ],
+            "saturday": [ 11, 14, 16, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
