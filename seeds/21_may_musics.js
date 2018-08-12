@@ -4108,6 +4108,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 229,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=487753064/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://newfocusrecordings.bandcamp.com/album/duo-noire-night-triptych',
+          a_string: 'Duo Noire: Night Triptych by Duo Noire',
+          rule: {
+            "monday": [ 4, 10, 17, 30 ],
+            "tuesday": [ 3, 9, 16, 29 ],
+            "wednesday": [ 2, 8, 15, 28 ],
+            "thursday": [ 6, 13, 19, 1 ],
+            "saturday": [ 5, 11, 18, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 230,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2858244511/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://newfocusrecordings.bandcamp.com/album/through-which-the-past-shines-works-by-nils-vigeland-and-reiko-fu-ting',
+          a_string: '&quot;...through which the past shines...&quot;: Works by Nils Vigeland and Reiko Füting by Daniel Lippel, John Popham, Nils Vigeland',
+          rule: {
+            "monday": [ 5, 11, 18, 31 ],
+            "tuesday": [ 4, 10, 17, 30 ],
+            "wednesday": [ 3, 9, 16, 29 ],
+            "thursday": [ 2, 8, 15, 28 ],
+            "saturday": [ 6, 13, 19, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 231,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=348919945/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://newfocusrecordings.bandcamp.com/album/le-boeuf-brothers-jack-quartet',
+          a_string: 'Le Boeuf Brothers + JACK Quartet by Le Boeuf Brothers + JACK Quartet',
+          rule: {
+            "monday": [ 6, 13, 19, 1 ],
+            "tuesday": [ 5, 11, 18, 31 ],
+            "wednesday": [ 4, 10, 17, 30 ],
+            "thursday": [ 3, 9, 16, 29 ],
+            "saturday": [ 2, 8, 15, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
