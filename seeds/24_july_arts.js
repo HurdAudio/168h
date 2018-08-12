@@ -7304,6 +7304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 366,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/beno-t-maire-cloud-painting-2016.jpg',
+          title: 'Cloud Painting',
+          artist: 'Benoit Maire',
+          year: '2016',
+          rule: {
+            "monday": [ 24, 4, 15, 25 ],
+            "tuesday": [ 23, 3, 14, 25 ],
+            "wednesday": [ 21, 1, 13, 24 ],
+            "thursday": [ 21, 1, 12, 13 ],
+            "friday": [ 20, 31, 10, 12 ],
+            "saturday": [ 19, 30, 10, 11 ],
+            "sunday": [ 18, 29, 9, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 367,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/disposition-1990.jpg',
+          title: 'Disposition',
+          artist: 'Absalon',
+          year: '1990',
+          rule: {
+            "monday": [ 18, 29, 9, 20 ],
+            "tuesday": [ 24, 4, 15, 25 ],
+            "wednesday": [ 23, 3, 14, 25 ],
+            "thursday": [ 21, 1, 13, 24 ],
+            "friday": [ 21, 1, 12, 13 ],
+            "saturday": [ 20, 31, 10, 12 ],
+            "sunday": [ 19, 30, 10, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 368,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/untilled-detail-2012.jpg',
+          title: 'Untilled (detail)',
+          artist: 'Pierre Huyghe',
+          year: '2012',
+          rule: {
+            "monday": [ 19, 30, 10, 11 ],
+            "tuesday": [ 18, 29, 9, 20 ],
+            "wednesday": [ 24, 4, 15, 25 ],
+            "thursday": [ 23, 3, 14, 25 ],
+            "friday": [ 21, 1, 13, 24 ],
+            "saturday": [ 21, 1, 12, 13 ],
+            "sunday": [ 20, 31, 10, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 369,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/paris-xv-2010.jpg',
+          title: 'Paris XV',
+          artist: 'Speedy Graphito',
+          year: '2010',
+          rule: {
+            "monday": [ 20, 31, 10, 12 ],
+            "tuesday": [ 19, 30, 10, 11 ],
+            "wednesday": [ 18, 29, 9, 20 ],
+            "thursday": [ 24, 4, 15, 25 ],
+            "friday": [ 23, 3, 14, 25 ],
+            "saturday": [ 21, 1, 13, 24 ],
+            "sunday": [ 21, 1, 12, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 370,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/slow-death-1987.jpg',
+          title: 'Slow Death',
+          artist: 'Jef Aerosol',
+          year: '1987',
+          rule: {
+            "monday": [ 21, 1, 12, 13 ],
+            "tuesday": [ 20, 31, 10, 12 ],
+            "wednesday": [ 19, 30, 10, 11 ],
+            "thursday": [ 18, 29, 9, 20 ],
+            "friday": [ 24, 4, 15, 25 ],
+            "saturday": [ 23, 3, 14, 25 ],
+            "sunday": [ 21, 1, 13, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
