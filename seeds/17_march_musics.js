@@ -4324,6 +4324,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 241,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2568407260/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://peoplelikeus-vickibennett.bandcamp.com/album/lowest-common-dominator',
+          a_string: 'Lowest Common Dominator by People Like Us',
+          rule: {
+            "monday": [ 8, 14, 20, 28 ],
+            "tuesday": [ 7, 13, 19, 28 ],
+            "wednesday": [ 5, 12, 18, 26 ],
+            "thursday": [ 5, 11, 17, 25 ],
+            "saturday": [ 9, 15, 21, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 242,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1123542052/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://andreakeller.bandcamp.com/album/five-below-live',
+          a_string: 'Five Below Live by Andrea Keller',
+          rule: {
+            "monday": [ 9, 15, 21, 29 ],
+            "tuesday": [ 8, 14, 20, 28 ],
+            "wednesday": [ 7, 13, 19, 28 ],
+            "thursday": [ 5, 12, 18, 26 ],
+            "saturday": [ 5, 11, 17, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 243,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1311744596/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://helenahauff.bandcamp.com/album/qualm',
+          a_string: 'Qualm by Helena Hauff',
+          rule: {
+            "monday": [ 5, 11, 17, 25 ],
+            "tuesday": [ 9, 15, 21, 29 ],
+            "wednesday": [ 8, 14, 20, 28 ],
+            "thursday": [ 7, 13, 19, 28 ],
+            "saturday": [ 5, 12, 18, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
