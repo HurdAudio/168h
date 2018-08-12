@@ -8304,6 +8304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 416,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/tumblr_mgn1qorCmh1ruhplso1_1280.jpg',
+          title: 'Sir Charles, Alias Willie Harris, 1972',
+          artist: 'Barkley L. Hendricks',
+          year: '1972',
+          rule: {
+            "monday": [ 11, 21, 17, 7 ],
+            "tuesday": [ 1, 9, 17, 25 ],
+            "wednesday": [ 2, 11, 19, 27 ],
+            "thursday": [ 8, 13, 19, 29 ],
+            "friday": [ 7, 15, 23, 2 ],
+            "saturday": [ 9, 19, 25, 2 ],
+            "sunday": [ 11, 19, 27, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 417,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/Header_George_Herriman_Krazy_Kat.jpg',
+          title: 'Krazy Kat',
+          artist: 'George Herriman',
+          year: 'xx cent.',
+          rule: {
+            "monday": [ 11, 19, 27, 8 ],
+            "tuesday": [ 11, 21, 17, 7 ],
+            "wednesday": [ 1, 9, 17, 25 ],
+            "thursday": [ 2, 11, 19, 27 ],
+            "friday": [ 8, 13, 19, 29 ],
+            "saturday": [ 7, 15, 23, 2 ],
+            "sunday": [ 9, 19, 25, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 418,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/Hollingsworth_DQ6.jpg',
+          title: 'Don Quixote Series, # 6',
+          artist: 'Alvin Hollingsworth',
+          year: '1979 - 1980',
+          rule: {
+            "monday": [ 9, 19, 25, 2 ],
+            "tuesday": [ 11, 19, 27, 8 ],
+            "wednesday": [ 11, 21, 17, 7 ],
+            "thursday": [ 1, 9, 17, 25 ],
+            "friday": [ 2, 11, 19, 27 ],
+            "saturday": [ 8, 13, 19, 29 ],
+            "sunday": [ 7, 15, 23, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 419,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/7691283148_5eae6c5c12.jpg',
+          title: 'Number 16',
+          artist: 'Bryce Hudson',
+          year: '2012',
+          rule: {
+            "monday": [ 7, 15, 23, 2 ],
+            "tuesday": [ 9, 19, 25, 2 ],
+            "wednesday": [ 11, 19, 27, 8 ],
+            "thursday": [ 11, 21, 17, 7 ],
+            "friday": [ 1, 9, 17, 25 ],
+            "saturday": [ 2, 11, 19, 27 ],
+            "sunday": [ 8, 13, 19, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 420,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/5924fbc2cc3bbd1ba9918b8cdf3f1ead.jpg',
+          title: 'Marie Thereze Carmelite Anty Metoyer',
+          artist: 'Julien Hudson',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 9, 14, 20, 1 ],
+            "tuesday": [ 8, 16, 24, 3 ],
+            "wednesday": [ 10, 20, 26, 3 ],
+            "thursday": [ 12, 20, 28, 9 ],
+            "friday": [ 12, 22, 18, 8 ],
+            "saturday": [ 2, 10, 18, 26 ],
+            "sunday": [ 3, 12, 20, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
