@@ -7704,6 +7704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 386,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/the-revolution-mural.jpg',
+          title: 'The Revolution (mural)',
+          artist: 'David Alfaro Siqueiros',
+          year: '?',
+          rule: {
+            "monday": [ 23, 3, 12, 22 ],
+            "tuesday": [ 21, 31, 8, 20 ],
+            "wednesday": [ 18, 29, 8, 28 ],
+            "thursday": [ 17, 28, 6, 16 ],
+            "friday": [ 15, 25, 4, 12 ],
+            "saturday": [ 13, 22, 3, 12 ],
+            "sunday": [ 23, 4, 14, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 387,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/gargantua.jpg',
+          title: 'Gargantua',
+          artist: 'Honore Daumier',
+          year: '1831',
+          rule: {
+            "monday": [ 23, 4, 14, 22 ],
+            "tuesday": [ 23, 3, 12, 22 ],
+            "wednesday": [ 21, 31, 8, 20 ],
+            "thursday": [ 18, 29, 8, 28 ],
+            "friday": [ 17, 28, 6, 16 ],
+            "saturday": [ 15, 25, 4, 12 ],
+            "sunday": [ 13, 22, 3, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 388,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/the-beggars.jpg',
+          title: 'The Beggars',
+          artist: 'Honore Daumier',
+          year: 'c.1845',
+          rule: {
+            "monday": [ 13, 22, 3, 12 ],
+            "tuesday": [ 23, 4, 14, 22 ],
+            "wednesday": [ 23, 3, 12, 22 ],
+            "thursday": [ 21, 31, 8, 20 ],
+            "friday": [ 18, 29, 8, 28 ],
+            "saturday": [ 17, 28, 6, 16 ],
+            "sunday": [ 15, 25, 4, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 389,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/tenants-and-owners.jpg',
+          title: 'Tenants and owners',
+          artist: 'Honore Daumier',
+          year: '1847',
+          rule: {
+            "monday": [ 15, 25, 4, 12 ],
+            "tuesday": [ 13, 22, 3, 12 ],
+            "wednesday": [ 23, 4, 14, 22 ],
+            "thursday": [ 23, 3, 12, 22 ],
+            "friday": [ 21, 31, 8, 20 ],
+            "saturday": [ 18, 29, 8, 28 ],
+            "sunday": [ 17, 28, 6, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 390,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/the-miller-his-son-and-the-donkey.jpg',
+          title: 'The Miller, His Son and the Donkey',
+          artist: 'Honore Daumier',
+          year: '1849',
+          rule: {
+            "monday": [ 17, 28, 6, 16 ],
+            "tuesday": [ 15, 25, 4, 12 ],
+            "wednesday": [ 13, 22, 3, 12 ],
+            "thursday": [ 23, 4, 14, 22 ],
+            "friday": [ 23, 3, 12, 22 ],
+            "saturday": [ 21, 31, 8, 20 ],
+            "sunday": [ 18, 29, 8, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
