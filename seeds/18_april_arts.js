@@ -7904,6 +7904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 396,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/Montreal-street-art-Mural-Fest-baseball-player-artist-Fluke-RoarLoud.net_.jpg',
+          title: 'Jackie Robinson',
+          artist: 'Fluke Roar Loud',
+          year: '2017',
+          rule: {
+            "monday": [ 22, 27, 3, 9 ],
+            "tuesday": [ 22, 27, 3, 9 ],
+            "wednesday": [ 21, 26, 2, 8 ],
+            "thursday": [ 26, 2, 7, 14 ],
+            "friday": [ 10, 30, 6, 12 ],
+            "saturday": [ 25, 28, 6, 12 ],
+            "sunday": [ 24, 28, 13, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 397,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/sintex-tigers-graffiti-1-600x322.jpg',
+          title: 'Go Tigers!',
+          artist: 'Sintex',
+          year: '2013',
+          rule: {
+            "monday": [ 24, 28, 13, 11 ],
+            "tuesday": [ 22, 27, 3, 9 ],
+            "wednesday": [ 22, 27, 3, 9 ],
+            "thursday": [ 21, 26, 2, 8 ],
+            "friday": [ 26, 2, 7, 14 ],
+            "saturday": [ 10, 30, 6, 12 ],
+            "sunday": [ 25, 28, 6, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 398,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/IMAG1256.jpg',
+          title: 'Pirates Street Art',
+          artist: 'unknown artist',
+          year: '2011',
+          rule: {
+            "monday": [ 25, 28, 6, 12 ],
+            "tuesday": [ 24, 28, 13, 11 ],
+            "wednesday": [ 22, 27, 3, 9 ],
+            "thursday": [ 22, 27, 3, 9 ],
+            "friday": [ 21, 26, 2, 8 ],
+            "saturday": [ 26, 2, 7, 14 ],
+            "sunday": [ 10, 30, 6, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 399,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/33615802-33615802.jpg',
+          title: 'Baseball Mural',
+          artist: 'Justin Quell',
+          year: '2015',
+          rule: {
+            "monday": [ 11, 1, 7, 13 ],
+            "tuesday": [ 26, 29, 7, 13 ],
+            "wednesday": [ 25, 29, 14, 12 ],
+            "thursday": [ 23, 28, 4, 10 ],
+            "friday": [ 23, 28, 4, 10 ],
+            "saturday": [ 22, 27, 3, 9 ],
+            "sunday": [ 27, 3, 8, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 400,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/wall-art-for-sale-throw-the-baseball-canvas-wall-art-sale-wall-art-sale-sydney.jpg',
+          title: 'Throw the Baseball',
+          artist: 'Aaron Christensen',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 27, 3, 8, 15 ],
+            "tuesday": [ 11, 1, 7, 13 ],
+            "wednesday": [ 26, 29, 7, 13 ],
+            "thursday": [ 25, 29, 14, 12 ],
+            "friday": [ 23, 28, 4, 10 ],
+            "saturday": [ 23, 28, 4, 10 ],
+            "sunday": [ 22, 27, 3, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
