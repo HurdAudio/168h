@@ -4000,6 +4000,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 223,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1358508695/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'https://bandcamp.com/EmbeddedPlayer/album=1358508695/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          a_string: 'Hollow Siren by Clara Warnaar',
+          rule: {
+            "monday": [ 28, 6, 8, 19 ],
+            "tuesday": [ 2, 6, 12, 23 ],
+            "wednesday": [ 1, 4, 9, 21 ],
+            "thursday": [ 30, 4, 9, 21 ],
+            "saturday": [ 30, 3, 9, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 224,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=434031615/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://111sound.bandcamp.com/album/absolute',
+          a_string: '⊙ (Absolute) by 111',
+          rule: {
+            "monday": [ 1, 4, 10, 21 ],
+            "tuesday": [ 29, 7, 9, 20 ],
+            "wednesday": [ 3, 7, 13, 24 ],
+            "thursday": [ 2, 5, 10, 22 ],
+            "saturday": [ 1, 5, 10, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 225,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=98421795/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://mlnkym.bandcamp.com/album/floating-to-kill-time',
+          a_string: 'FLOATING TO KILL TIME by Nakayama Munetoshi',
+          rule: {
+            "monday": [ 1, 5, 10, 22 ],
+            "tuesday": [ 1, 4, 10, 21 ],
+            "wednesday": [ 29, 7, 9, 20 ],
+            "thursday": [ 3, 7, 13, 24 ],
+            "saturday": [ 2, 5, 10, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
