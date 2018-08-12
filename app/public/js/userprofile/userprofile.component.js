@@ -919,10 +919,12 @@
         $http.get(`/holiday_share_comments/${commentId}`)
         .then(commentData=>{
           let comment = commentData.data;
+          let now = new Date();
           if (thisIsTheHolidayShareCommentEditor.value !== comment.comment) {
             thisIsHolidayShareCommentComment.innerHTML = thisIsTheHolidayShareCommentEditor.value;
             let subObj = {
-              comment: thisIsTheHolidayShareCommentEditor.value
+              comment: thisIsTheHolidayShareCommentEditor.value,
+              updated_at: now
             };
             $http.patch(`/holiday_share_comments/${commentId}`, subObj)
             .then(updatedCommentData=>{
@@ -14963,6 +14965,8 @@
       }
 
       function gatherHolidayShareComments(index, holidayShare) {
+        let checkDate;
+        let upDate;
 
         $http.get('/holiday_share_comments')
         .then(holidayCommentData=>{
@@ -14978,10 +14982,16 @@
             });
             console.log(comments);
             for (let i = 0; i < comments.length; i++) {
+              checkDate = new Date(comments[i].created_at);
+              upDate = new Date(comments[i].updated_at);
               vm.activeHolidayShares[index].comments[i] = {};
               vm.activeHolidayShares[index].comments[i].comment = comments[i].comment;
               vm.activeHolidayShares[index].comments[i].id = comments[i].id;
-              vm.activeHolidayShares[index].comments[i].cleanDate = cleanDateHoliday(comments[i].created_at) + ' - ' + timeDate(comments[i].created_at);
+              if ((upDate.getTime() - checkDate.getTime()) > 10000) {
+                vm.activeHolidayShares[index].comments[i].cleanDate = cleanDateHoliday(comments[i].created_at) + ' - ' + timeDate(comments[i].created_at) + ' - Updated at: ' + cleanDateHoliday(comments[i].updated_at) + ' - ' + timeDate(comments[i].updated_at);
+              } else {
+                vm.activeHolidayShares[index].comments[i].cleanDate = cleanDateHoliday(comments[i].created_at) + ' - ' + timeDate(comments[i].created_at);
+              }
               obtainUserDataHolidayShareComment(index, i, comments[i]);
             }
             setTimeout(()=>{
