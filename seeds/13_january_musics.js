@@ -4540,6 +4540,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 253,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2565163406/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://michaelmizrahi.bandcamp.com/album/currents',
+          a_string: 'Currents by Michael Mizrahi',
+          rule: {
+            "monday": [ 14, 20, 21, 23 ],
+            "tuesday": [ 13, 20, 21, 22 ],
+            "wednesday": [ 12, 18, 19, 20 ],
+            "thursday": [ 11, 18, 19, 20 ],
+            "saturday": [ 15, 22, 23, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 254,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3469467683/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'vhttp://finneganshanahan.bandcamp.com/album/the-two-halves-2',
+          a_string: 'The Two Halves by Finnegan Shanahan',
+          rule: {
+            "monday": [ 15, 22, 23, 24 ],
+            "tuesday": [ 14, 20, 21, 23 ],
+            "wednesday": [ 13, 20, 21, 22 ],
+            "thursday": [ 12, 18, 19, 20 ],
+            "saturday": [ 11, 18, 19, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 255,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3638220828/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://danielwohl.bandcamp.com/album/holographic',
+          a_string: 'Holographic by Daniel Wohl',
+          rule: {
+            "monday": [ 11, 18, 19, 20 ],
+            "tuesday": [ 15, 22, 23, 24 ],
+            "wednesday": [ 14, 20, 21, 23 ],
+            "thursday": [ 13, 20, 21, 22 ],
+            "saturday": [ 12, 18, 19, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {

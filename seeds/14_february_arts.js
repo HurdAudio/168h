@@ -8309,7 +8309,7 @@ exports.seed = function(knex, Promise) {
           id: 416,
           user_id: 1,
           theme: 'Black History Month',
-          img_path: './img/february/tumblr_mgn1qorCmh1ruhplso1_1280.jpg',
+          img_path: './img/february/tumblr_mgn1qorCmh1ruhplso1_1280.jpeg',
           title: 'Sir Charles, Alias Willie Harris, 1972',
           artist: 'Barkley L. Hendricks',
           year: '1972',
