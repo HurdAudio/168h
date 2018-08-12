@@ -8104,6 +8104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 406,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/sun-tunnels-1976.jpg',
+          title: 'Sun Tunnels',
+          artist: 'Nancy Holt',
+          year: '1976',
+          rule: {
+            "monday": [ 25, 4, 12, 22 ],
+            "tuesday": [ 24, 3, 11, 21 ],
+            "wednesday": [ 23, 2, 10, 20 ],
+            "thursday": [ 22, 1, 10, 19 ],
+            "friday": [ 28, 6, 16, 24 ],
+            "saturday": [ 27, 6, 14, 24 ],
+            "sunday": [ 27, 5, 13, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 407,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/birth-tear-tear-1985.jpg',
+          title: 'Birth Tear-Tear',
+          artist: 'Judy Chicago',
+          year: '1985',
+          rule: {
+            "monday": [ 27, 5, 13, 23 ],
+            "tuesday": [ 25, 4, 12, 22 ],
+            "wednesday": [ 24, 3, 11, 21 ],
+            "thursday": [ 23, 2, 10, 20 ],
+            "friday": [ 22, 1, 10, 19 ],
+            "saturday": [ 28, 6, 16, 24 ],
+            "sunday": [ 27, 6, 14, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 408,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/arkerrthe-awelye-mountain-devil-lizard-dreaming-1998.jpg',
+          title: 'Arkerrthe Awelye, Mountain Devil Lizard Dreaming',
+          artist: 'Kathleen Petyarre',
+          year: '1998',
+          rule: {
+            "monday": [ 27, 6, 14, 24 ],
+            "tuesday": [ 27, 5, 13, 23 ],
+            "wednesday": [ 25, 4, 12, 22 ],
+            "thursday": [ 24, 3, 11, 21 ],
+            "friday": [ 23, 2, 10, 20 ],
+            "saturday": [ 22, 1, 10, 19 ],
+            "sunday": [ 28, 6, 16, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 409,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/woman-floating-1997.jpg',
+          title: 'Woman Floating',
+          artist: 'Jennifer Bartlett',
+          year: '1997',
+          rule: {
+            "monday": [ 28, 6, 16, 24 ],
+            "tuesday": [ 27, 6, 14, 24 ],
+            "wednesday": [ 27, 5, 13, 23 ],
+            "thursday": [ 25, 4, 12, 22 ],
+            "friday": [ 24, 3, 11, 21 ],
+            "saturday": [ 23, 2, 10, 20 ],
+            "sunday": [ 22, 1, 10, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 410,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/quartered-meteor-1969.jpg',
+          title: 'Quartered Meteor',
+          artist: 'Lynda Benglis',
+          year: '1969',
+          rule: {
+            "monday": [ 22, 1, 10, 19 ],
+            "tuesday": [ 28, 6, 16, 24 ],
+            "wednesday": [ 27, 6, 14, 24 ],
+            "thursday": [ 27, 5, 13, 23 ],
+            "friday": [ 25, 4, 12, 22 ],
+            "saturday": [ 24, 3, 11, 21 ],
+            "sunday": [ 23, 2, 10, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
