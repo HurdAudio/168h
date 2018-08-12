@@ -3892,6 +3892,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 217,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3863393374/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://thebethsnz.bandcamp.com/album/future-me-hates-me',
+          a_string: 'Future Me Hates Me by The Beths',
+          rule: {
+            "monday": [ 1, 3, 7, 15 ],
+            "tuesday": [ 31, 2, 6, 14 ],
+            "wednesday": [ 30, 31, 5, 13 ],
+            "thursday": [ 29, 31, 4, 12 ],
+            "saturday": [ 2, 4, 8, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 218,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3147550827/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://batteryoperatedorchestra.bandcamp.com/album/snare',
+          a_string: 'Snare by BOO',
+          rule: {
+            "monday": [ 2, 4, 8, 16 ],
+            "tuesday": [ 1, 3, 7, 15 ],
+            "wednesday": [ 31, 2, 6, 14 ],
+            "thursday": [ 30, 31, 5, 13 ],
+            "saturday": [ 29, 31, 4, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 219,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3451101493/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://dumdumgirls.bandcamp.com/album/i-will-be',
+          a_string: 'I Will Be by Dum Dum Girls',
+          rule: {
+            "monday": [ 29, 31, 4, 12 ],
+            "tuesday": [ 2, 4, 8, 16 ],
+            "wednesday": [ 1, 3, 7, 15 ],
+            "thursday": [ 31, 2, 6, 14 ],
+            "saturday": [ 30, 31, 5, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
