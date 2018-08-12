@@ -8504,6 +8504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 426,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/music-of-the-jaguar-1977.jpg',
+          title: 'Music of the Jaguar',
+          artist: 'Alice Baber',
+          year: '1977',
+          rule: {
+            "monday": [ 9, 11, 12, 14 ],
+            "tuesday": [ 11, 13, 17, 20 ],
+            "wednesday": [ 13, 15, 16, 17 ],
+            "thursday": [ 29, 30, 10, 2 ],
+            "friday": [ 1, 3, 26, 15 ],
+            "saturday": [ 6, 4, 27, 30 ],
+            "sunday": [ 6, 7, 29, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 427,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/autunno-1982.jpg',
+          title: 'Autunno',
+          artist: 'Antonio Corpora',
+          year: '1982',
+          rule: {
+            "monday": [ 7, 8, 30, 3 ],
+            "tuesday": [ 10, 12, 13, 15 ],
+            "wednesday": [ 12, 14, 18, 21 ],
+            "thursday": [ 14, 16, 17, 18 ],
+            "friday": [ 30, 31, 11, 3 ],
+            "saturday": [ 2, 4, 27, 16 ],
+            "sunday": [ 7, 5, 28, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 428,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/nocturno-de-veneza-i.jpg',
+          title: 'Nocturno de Veneza I',
+          artist: 'Gil Teixeira Lopes',
+          year: 'xx cent.',
+          rule: {
+            "monday": [ 7, 5, 28, 31 ],
+            "tuesday": [ 7, 8, 30, 3 ],
+            "wednesday": [ 10, 12, 13, 15 ],
+            "thursday": [ 12, 14, 18, 21 ],
+            "friday": [ 14, 16, 17, 18 ],
+            "saturday": [ 30, 31, 11, 3 ],
+            "sunday": [ 2, 4, 27, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 429,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/pink-colour-with-brown-1986.jpg',
+          title: 'Pink Colour with Brown',
+          artist: 'Peter Joseph',
+          year: '1986',
+          rule: {
+            "monday": [ 2, 4, 27, 16 ],
+            "tuesday": [ 7, 5, 28, 31 ],
+            "wednesday": [ 7, 8, 30, 3 ],
+            "thursday": [ 10, 12, 13, 15 ],
+            "friday": [ 12, 14, 18, 21 ],
+            "saturday": [ 14, 16, 17, 18 ],
+            "sunday": [ 30, 31, 11, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 430,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/marrakech.jpg',
+          title: 'Marrakech',
+          artist: 'Brion Gysin',
+          year: '?',
+          rule: {
+            "monday": [ 30, 31, 11, 3 ],
+            "tuesday": [ 2, 4, 27, 16 ],
+            "wednesday": [ 7, 5, 28, 31 ],
+            "thursday": [ 7, 8, 30, 3 ],
+            "friday": [ 10, 12, 13, 15 ],
+            "saturday": [ 12, 14, 18, 21 ],
+            "sunday": [ 14, 16, 17, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
