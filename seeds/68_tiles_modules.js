@@ -454,6 +454,21 @@ exports.seed = function(knex, Promise) {
           public: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 31,
+          user_author_id: 1,
+          theme: 'Paper',
+          type: 'sunday',
+          src_string: '../img/tiles/art-by-lonfeldt-726333-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '140%',
+          color_dark: '#383E47',
+          color_medium: '#65A02F',
+          color_light: '#F1F2EA',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
