@@ -6604,6 +6604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 331,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/steiner-surface-1973.jpg',
+          title: 'Steiner Surface',
+          artist: 'Ruth Vollmer',
+          year: '1973',
+          rule: {
+            "monday": [ 25, 30, 6, 11 ],
+            "tuesday": [ 24, 29, 4, 10 ],
+            "wednesday": [ 23, 27, 4, 8 ],
+            "thursday": [ 22, 25, 2, 7 ],
+            "friday": [ 21, 25, 2, 7 ],
+            "saturday": [ 20, 25, 1, 6 ],
+            "sunday": [ 19, 24, 30, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 332,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/maquette-for-beach-sculpture-1973.jpg',
+          title: 'Maquette for Beach Sculpture',
+          artist: 'Lyman Kipp',
+          year: '1973',
+          rule: {
+            "monday": [ 19, 24, 30, 7 ],
+            "tuesday": [ 25, 30, 6, 11 ],
+            "wednesday": [ 24, 29, 4, 10 ],
+            "thursday": [ 23, 27, 4, 8 ],
+            "friday": [ 22, 25, 2, 7 ],
+            "saturday": [ 21, 25, 2, 7 ],
+            "sunday": [ 20, 25, 1, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 333,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/untitled-from-seven-aquatints-1973.jpg',
+          title: 'Untitled from Seven Aquatints',
+          artist: 'Robert Mangold',
+          year: '1973',
+          rule: {
+            "monday": [ 20, 25, 1, 6 ],
+            "tuesday": [ 19, 24, 30, 7 ],
+            "wednesday": [ 25, 30, 6, 11 ],
+            "thursday": [ 24, 29, 4, 10 ],
+            "friday": [ 23, 27, 4, 8 ],
+            "saturday": [ 22, 25, 2, 7 ],
+            "sunday": [ 21, 25, 2, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 334,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/time-and-space-series-2-1974.jpg',
+          title: 'Time and Space Series 2',
+          artist: 'Kazuo Nakamura',
+          year: '1974',
+          rule: {
+            "monday": [ 21, 25, 2, 7 ],
+            "tuesday": [ 20, 25, 1, 6 ],
+            "wednesday": [ 19, 24, 30, 7 ],
+            "thursday": [ 25, 30, 6, 11 ],
+            "friday": [ 24, 29, 4, 10 ],
+            "saturday": [ 23, 27, 4, 8 ],
+            "sunday": [ 22, 25, 2, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 335,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/kleenex-1974.jpg',
+          title: 'Kleenex',
+          artist: 'Luciano Bartolini',
+          year: '1974',
+          rule: {
+            "monday": [ 22, 25, 2, 7 ],
+            "tuesday": [ 21, 25, 2, 7 ],
+            "wednesday": [ 20, 25, 1, 6 ],
+            "thursday": [ 19, 24, 30, 7 ],
+            "friday": [ 25, 30, 6, 11 ],
+            "saturday": [ 24, 29, 4, 10 ],
+            "sunday": [ 23, 27, 4, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
