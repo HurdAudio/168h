@@ -760,6 +760,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#CDD8DA',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 55,
+          user_id: 1,
+          theme: 'Leather',
+          type: 'saturday',
+          src_string: '../img/september_tiles/ember-ivory-431240-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '100%',
+          color_dark: '#0D1215',
+          color_medium: '#C48867',
+          color_light: '#E5E7EB',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
