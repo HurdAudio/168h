@@ -3406,6 +3406,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 190,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3226077073/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://repsych.bandcamp.com/album/traffic-sound-virgin-peru-psych-rock-masterpiece-1970',
+          a_string: 'Traffic Sound - Virgin (Peru Psych Rock Masterpiece) (1970) by Traffic Sound',
+          rule: {
+            "monday": [ 30, 7, 13, 19 ],
+            "tuesday": [ 29, 6, 12, 18 ],
+            "wednesday": [ 30, 5, 11, 17 ],
+            "thursday": [ 3, 9, 15, 21 ],
+            "saturday": [ 2, 8, 14, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 191,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2348428476/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://repsych.bandcamp.com/album/tarkus-peru-argentina-psych-heavy-rock-masterpiece-this-is-a-blast-1972',
+          a_string: 'Tarkus (Peru Argentina Psych Heavy Rock Masterpiece) This is a blast ! (1972) by Tarkus',
+          rule: {
+            "monday": [ 2, 8, 14, 19 ],
+            "tuesday": [ 30, 7, 13, 19 ],
+            "wednesday": [ 29, 6, 12, 18 ],
+            "thursday": [ 30, 5, 11, 17 ],
+            "saturday": [ 3, 9, 15, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 192,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4250216082/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://repsych.bandcamp.com/album/kim-jung-mi-now-1973-korean-female-psych-folk',
+          a_string: 'Kim Jung Mi &quot;Now&quot; (1973 Korean Female Psych Folk) by Kim Jung Mi (w/. Shin Joong Hyun)',
+          rule: {
+            "monday": [ 3, 9, 15, 21 ],
+            "tuesday": [ 2, 8, 14, 19 ],
+            "wednesday": [ 30, 7, 13, 19 ],
+            "thursday": [ 29, 6, 12, 18 ],
+            "saturday": [ 30, 5, 11, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
