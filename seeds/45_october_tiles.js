@@ -746,6 +746,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#F3C2F4',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 54,
+          user_id: 1,
+          theme: 'Autumnal',
+          type: 'friday',
+          src_string: '../img/october_tiles/stephen-ellis-501607-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '100%',
+          color_dark: '#02000A',
+          color_medium: '#61C2EC',
+          color_light: '#F6FEC1',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
