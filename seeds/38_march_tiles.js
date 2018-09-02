@@ -844,6 +844,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#F7F7FF',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 61,
+          user_id: 1,
+          theme: 'Glass',
+          type: 'sunday',
+          src_string: '../img/march_tiles/felix-dubois-robert-93143-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '100%',
+          color_dark: '#352E2D',
+          color_medium: '#F704C3',
+          color_light: '#BDF683',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
