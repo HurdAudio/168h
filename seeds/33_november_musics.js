@@ -3514,6 +3514,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 196,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3919098799/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jojoabot.bandcamp.com/album/ngiwunkulunkulu',
+          a_string: 'NGIWUNKULUNKULU by Jojo Abot',
+          rule: {
+            "monday": [ 28, 9, 20, 24 ],
+            "tuesday": [ 27, 8, 19, 21 ],
+            "wednesday": [ 26, 7, 18, 30 ],
+            "thursday": [ 30, 11, 22, 26 ],
+            "saturday": [ 29, 10, 21, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 197,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3926583073/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jojoabot.bandcamp.com/album/fyfya-woto',
+          a_string: 'Fyfya Woto by Jojo Abot',
+          rule: {
+            "monday": [ 29, 10, 21, 25 ],
+            "tuesday": [ 28, 9, 20, 24 ],
+            "wednesday": [ 27, 8, 19, 21 ],
+            "thursday": [ 26, 7, 18, 30 ],
+            "saturday": [ 30, 11, 22, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 198,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2959055025/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jesssahbipeterone.bandcamp.com/album/our-garden-needs-its-flowers',
+          a_string: 'Our Garden Needs Its Flowers by Jess Sah Bi &amp; Peter One',
+          rule: {
+            "monday": [ 30, 11, 22, 26 ],
+            "tuesday": [ 29, 10, 21, 25 ],
+            "wednesday": [ 28, 9, 20, 24 ],
+            "thursday": [ 27, 8, 19, 21 ],
+            "saturday": [ 26, 7, 18, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
