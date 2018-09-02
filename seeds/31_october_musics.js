@@ -3622,6 +3622,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 202,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1660216600/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://buzzrecordsto.bandcamp.com/album/fixed-ideals-lp',
+          a_string: 'Fixed Ideals [LP] by Muncie Girls',
+          rule: {
+            "monday": [ 6, 16, 26, 29 ],
+            "tuesday": [ 5, 15, 25, 28 ],
+            "wednesday": [ 4, 14, 24, 27 ],
+            "thursday": [ 3, 13, 24, 26 ],
+            "saturday": [ 2, 12, 23, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 203,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3436968866/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://idlesband.bandcamp.com/album/joy-as-an-act-of-resistance',
+          a_string: 'Joy as an Act of Resistance. by IDLES',
+          rule: {
+            "monday": [ 3, 13, 24, 26 ],
+            "tuesday": [ 7, 17, 27, 30 ],
+            "wednesday": [ 6, 16, 26, 29 ],
+            "thursday": [ 5, 15, 25, 28 ],
+            "saturday": [ 4, 14, 25, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 204,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=42142352/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://avantgardemusic.bandcamp.com/album/dark-space-iii-i',
+          a_string: 'Dark Space III I by Darkspace',
+          rule: {
+            "monday": [ 4, 14, 25, 27 ],
+            "tuesday": [ 3, 13, 24, 26 ],
+            "wednesday": [ 7, 17, 27, 30 ],
+            "thursday": [ 6, 16, 26, 29 ],
+            "saturday": [ 5, 15, 25, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
