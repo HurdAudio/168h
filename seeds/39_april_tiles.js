@@ -830,6 +830,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FFF9F9',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 60,
+          user_id: 1,
+          theme: 'Water',
+          type: 'saturday',
+          src_string: '../img/april_tiles/fatima-fuentes-696809-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '145%',
+          color_dark: '#0C261B',
+          color_medium: '#54A5CA',
+          color_light: '#F3F6FB',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
