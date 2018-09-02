@@ -6082,7 +6082,7 @@ exports.seed = function(knex, Promise) {
           name: 'Colin Ward (anarchist/writer), born 1924',
           color: '#CBCAC2',
           picture: './img/dissent/colinward.jpg',
-          day_of: new Date ('1924-08-24T13:44:00.000Z'),
+          day_of: new Date ('1924-08-14T13:44:00.000Z'),
           is_annual: true,
           art_override: false,
           music_override: false,
