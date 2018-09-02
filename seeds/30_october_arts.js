@@ -6804,6 +6804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 341,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_breadsovpost_00018.jpg',
+          title: '(we) Will get a rich harvest from a virgin land!',
+          artist: 'V. Koretsky, K. Ivanov, O. Savostyuk',
+          year: '1954',
+          rule: {
+            "monday": [ 19, 30, 10, 14 ],
+            "tuesday": [ 18, 29, 30, 13 ],
+            "wednesday": [ 27, 28, 8, 12 ],
+            "thursday": [ 23, 3, 14, 18 ],
+            "friday": [ 22, 2, 13, 17 ],
+            "saturday": [ 21, 1, 12, 16 ],
+            "sunday": [ 20, 31, 11, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 342,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_breadsovpost_00015.jpg',
+          title: 'Expand pig farming!',
+          artist: 'A.Mosin',
+          year: '1955',
+          rule: {
+            "monday": [ 20, 31, 11, 15 ],
+            "tuesday": [ 19, 30, 10, 14 ],
+            "wednesday": [ 18, 29, 30, 13 ],
+            "thursday": [ 27, 28, 8, 12 ],
+            "friday": [ 23, 3, 14, 18 ],
+            "saturday": [ 22, 2, 13, 17 ],
+            "sunday": [ 21, 1, 12, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 343,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_breadsovpost_00013.jpg',
+          title: 'Milkmaids get high milk yields from every forage cow!',
+          artist: 'B. Zelenskii',
+          year: '1950',
+          rule: {
+            "monday": [ 22, 2, 13, 17 ],
+            "tuesday": [ 21, 1, 12, 16 ],
+            "wednesday": [ 20, 31, 11, 15 ],
+            "thursday": [ 19, 30, 31, 14 ],
+            "friday": [ 28, 29, 9, 13 ],
+            "saturday": [ 24, 4, 15, 19 ],
+            "sunday": [ 23, 3, 14, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 344,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_breadsovpost_00012.jpg',
+          title: 'Get ready for the nationwide agricultural exhibition.',
+          artist: 'V.Livanova',
+          year: '1950',
+          rule: {
+            "monday": [ 23, 3, 14, 18 ],
+            "tuesday": [ 22, 2, 13, 17 ],
+            "wednesday": [ 21, 1, 12, 16 ],
+            "thursday": [ 20, 31, 11, 15 ],
+            "friday": [ 19, 30, 31, 14 ],
+            "saturday": [ 28, 29, 9, 13 ],
+            "sunday": [ 24, 4, 15, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 345,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_cinsovpost_00014.jpg',
+          title: '"The Cranes Are Flying" movie (film) poster, directed by M. Kalatozov',
+          artist: 'B. Zelensky',
+          year: '1957',
+          rule: {
+            "monday": [ 24, 4, 15, 19 ],
+            "tuesday": [ 23, 3, 14, 18 ],
+            "wednesday": [ 22, 2, 13, 17 ],
+            "thursday": [ 21, 1, 12, 16 ],
+            "friday": [ 20, 31, 11, 15 ],
+            "saturday": [ 19, 30, 31, 14 ],
+            "sunday": [ 28, 29, 9, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
