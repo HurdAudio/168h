@@ -4378,6 +4378,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 244,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=163970836/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ctatsu.bandcamp.com/album/moments-in-golden-lightMoments in Golden Light by poemme',
+          a_string: '',
+          rule: {
+            "monday": [ 5, 12, 18, 26 ],
+            "tuesday": [ 5, 11, 17, 25 ],
+            "wednesday": [ 9, 15, 21, 29 ],
+            "thursday": [ 8, 14, 20, 28 ],
+            "saturday": [ 7, 13, 19, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 245,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3531324841/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://fortevilfruit.bandcamp.com/album/i-am-come-from-a-place',
+          a_string: 'I Am Come From a Place by Claire Potter &amp; Bridget Hayden',
+          rule: {
+            "monday": [ 8, 14, 20, 29 ],
+            "tuesday": [ 6, 13, 19, 27 ],
+            "wednesday": [ 6, 12, 18, 26 ],
+            "thursday": [ 10, 16, 22, 30 ],
+            "saturday": [ 9, 15, 21, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 246,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=245225388/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://negativescanner.bandcamp.com/album/nose-picker',
+          a_string: 'Nose Picker by Negative Scanner',
+          rule: {
+            "monday": [ 9, 15, 21, 29 ],
+            "tuesday": [ 8, 14, 20, 29 ],
+            "wednesday": [ 6, 13, 19, 27 ],
+            "thursday": [ 6, 12, 18, 26 ],
+            "saturday": [ 10, 16, 22, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
