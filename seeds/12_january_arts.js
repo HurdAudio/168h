@@ -8604,6 +8604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 431,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/football-3-1950.jpg',
+          title: 'Football #3',
+          artist: 'Louis Schanker',
+          year: '1950',
+          rule: {
+            "monday": [ 14, 16, 17, 18 ],
+            "tuesday": [ 30, 31, 11, 3 ],
+            "wednesday": [ 2, 4, 27, 16 ],
+            "thursday": [ 7, 5, 28, 31 ],
+            "friday": [ 7, 8, 30, 3 ],
+            "saturday": [ 10, 12, 13, 15 ],
+            "sunday": [ 12, 14, 18, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 432,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/into-space-3-1957.jpg',
+          title: 'Into Space 3',
+          artist: 'Kazuo Nakamura',
+          year: '1957',
+          rule: {
+            "monday": [ 12, 14, 18, 21 ],
+            "tuesday": [ 14, 16, 17, 18 ],
+            "wednesday": [ 30, 31, 11, 3 ],
+            "thursday": [ 2, 4, 27, 16 ],
+            "friday": [ 7, 5, 28, 31 ],
+            "saturday": [ 7, 8, 30, 3 ],
+            "sunday": [ 10, 12, 13, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 433,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/origin-1956.jpg',
+          title: 'Origin',
+          artist: 'Jay DeFeo',
+          year: '1956',
+          rule: {
+            "monday": [ 10, 12, 13, 15 ],
+            "tuesday": [ 12, 14, 18, 21 ],
+            "wednesday": [ 14, 16, 17, 18 ],
+            "thursday": [ 30, 31, 11, 3 ],
+            "friday": [ 2, 4, 27, 16 ],
+            "saturday": [ 7, 5, 28, 31 ],
+            "sunday": [ 7, 8, 30, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 434,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/blue-sky-painting-1960.jpg',
+          title: 'Blue Sky Painting',
+          artist: 'Sam Francis',
+          year: '1960',
+          rule: {
+            "monday": [ 8, 9, 31, 4 ],
+            "tuesday": [ 11, 13, 14, 16 ],
+            "wednesday": [ 13, 15, 19, 22 ],
+            "thursday": [ 15, 17, 18, 19 ],
+            "friday": [ 31, 1, 12, 4 ],
+            "saturday": [ 3, 5, 28, 17 ],
+            "sunday": [ 8, 6, 29, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 435,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/middle-blue-iii-1959.jpg',
+          title: 'Middle Blue III',
+          artist: 'Sam Francis',
+          year: '1959',
+          rule: {
+            "monday": [ 8, 6, 29, 1 ],
+            "tuesday": [ 8, 9, 31, 4 ],
+            "wednesday": [ 11, 13, 14, 16 ],
+            "thursday": [ 13, 15, 19, 22 ],
+            "friday": [ 15, 17, 18, 19 ],
+            "saturday": [ 31, 1, 12, 4 ],
+            "sunday": [ 3, 5, 28, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
