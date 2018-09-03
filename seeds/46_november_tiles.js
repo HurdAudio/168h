@@ -746,6 +746,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#E3EBEE',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 54,
+          user_id: 1,
+          theme: 'Monochromatic',
+          type: 'friday',
+          src_string: '../img/november_tiles/vali-sachadonig-406306-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '100%',
+          color_dark: '#141015',
+          color_medium: '#C17E05',
+          color_light: '#F4F8FB',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
