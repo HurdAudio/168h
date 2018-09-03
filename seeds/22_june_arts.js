@@ -7604,6 +7604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 381,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/128393.jpg',
+          title: 'Ntozakhe II, Parktown',
+          artist: 'Zanele Muholi',
+          year: '2016',
+          rule: {
+            "monday": [ 18, 28, 8, 16 ],
+            "tuesday": [ 24, 4, 14, 21 ],
+            "wednesday": [ 23, 3, 13, 21 ],
+            "thursday": [ 22, 2, 12, 20 ],
+            "friday": [ 21, 1, 11, 19 ],
+            "saturday": [ 30, 10, 20, 18 ],
+            "sunday": [ 19, 29, 9, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 382,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/chateauxballoon-jinkyart-tur-2-1100.jpg',
+          title: 'To let go of burden is to run free like a child',
+          artist: 'Barb Uil',
+          year: '2014',
+          rule: {
+            "monday": [ 19, 29, 9, 17 ],
+            "tuesday": [ 18, 28, 8, 16 ],
+            "wednesday": [ 24, 4, 14, 21 ],
+            "thursday": [ 23, 3, 13, 21 ],
+            "friday": [ 22, 2, 12, 20 ],
+            "saturday": [ 21, 1, 11, 19 ],
+            "sunday": [ 30, 10, 20, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 383,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/152115cd799216fe427a4f57462cea38.jpg',
+          title: 'untitled',
+          artist: 'Ravshaniya Azulye',
+          year: '',
+          rule: {
+            "monday": [ 30, 10, 20, 18 ],
+            "tuesday": [ 19, 29, 9, 17 ],
+            "wednesday": [ 18, 28, 8, 16 ],
+            "thursday": [ 24, 4, 14, 21 ],
+            "friday": [ 23, 3, 13, 21 ],
+            "saturday": [ 22, 2, 12, 20 ],
+            "sunday": [ 21, 1, 11, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 384,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/Toad-Stool.jpg',
+          title: 'Toad Stool',
+          artist: 'Bernard Wolf',
+          year: '?',
+          rule: {
+            "monday": [ 21, 1, 11, 19 ],
+            "tuesday": [ 30, 10, 20, 18 ],
+            "wednesday": [ 19, 29, 9, 17 ],
+            "thursday": [ 18, 28, 8, 16 ],
+            "friday": [ 24, 4, 14, 21 ],
+            "saturday": [ 23, 3, 13, 21 ],
+            "sunday": [ 22, 2, 12, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 385,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/hiding_behind_the_flowers_photos_omerika_03.jpg',
+          title: 'Hiding Behind the Flowers',
+          artist: 'Omerika',
+          year: '?',
+          rule: {
+            "monday": [ 23, 3, 13, 21 ],
+            "tuesday": [ 22, 2, 12, 20 ],
+            "wednesday": [ 1, 11, 21, 19 ],
+            "thursday": [ 20, 30, 10, 18 ],
+            "friday": [ 19, 29, 9, 17 ],
+            "saturday": [ 25, 5, 15, 22 ],
+            "sunday": [ 24, 4, 14, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
