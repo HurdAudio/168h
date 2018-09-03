@@ -7804,6 +7804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 391,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/the-burden-the-laundress-1853.jpg',
+          title: 'The Burden (The Laundress)',
+          artist: 'Honore Daumier',
+          year: '1850 - 1853',
+          rule: {
+            "monday": [ 18, 29, 8, 28 ],
+            "tuesday": [ 17, 28, 6, 16 ],
+            "wednesday": [ 15, 25, 4, 12 ],
+            "thursday": [ 13, 22, 3, 12 ],
+            "friday": [ 23, 4, 14, 22 ],
+            "saturday": [ 23, 3, 12, 22 ],
+            "sunday": [ 21, 31, 8, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 392,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/the-insurrection.jpg',
+          title: 'The Insurrection',
+          artist: 'Honore Daumier',
+          year: 'c.1852 - c.1858',
+          rule: {
+            "monday": [ 22, 1, 9, 21 ],
+            "tuesday": [ 19, 30, 9, 29 ],
+            "wednesday": [ 18, 29, 7, 17 ],
+            "thursday": [ 16, 26, 5, 13 ],
+            "friday": [ 14, 23, 4, 13 ],
+            "saturday": [ 24, 5, 15, 23 ],
+            "sunday": [ 24, 4, 13, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 393,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/the-laundress.jpg',
+          title: 'The Laundress',
+          artist: 'Honore Daumier',
+          year: 'c.1860 - c.1861',
+          rule: {
+            "monday": [ 24, 4, 13, 23 ],
+            "tuesday": [ 22, 1, 9, 21 ],
+            "wednesday": [ 19, 30, 9, 29 ],
+            "thursday": [ 18, 29, 7, 17 ],
+            "friday": [ 16, 26, 5, 13 ],
+            "saturday": [ 14, 23, 4, 13 ],
+            "sunday": [ 24, 5, 15, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 394,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/a-wagon-of-the-third-class.jpg',
+          title: 'A Wagon of the Third Class',
+          artist: 'Honore Daumier',
+          year: '1862',
+          rule: {
+            "monday": [ 24, 5, 15, 23 ],
+            "tuesday": [ 24, 4, 13, 23 ],
+            "wednesday": [ 22, 1, 9, 21 ],
+            "thursday": [ 19, 30, 9, 29 ],
+            "friday": [ 18, 29, 7, 17 ],
+            "saturday": [ 16, 26, 5, 13 ],
+            "sunday": [ 14, 23, 4, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 395,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/a-wagon-of-the-third-class-1.jpg',
+          title: 'A Wagon of the Third Class',
+          artist: 'Honore Daumier',
+          year: 'c.1862 - c.1864',
+          rule: {
+            "monday": [ 14, 23, 4, 13 ],
+            "tuesday": [ 24, 5, 15, 23 ],
+            "wednesday": [ 24, 4, 13, 23 ],
+            "thursday": [ 22, 1, 9, 21 ],
+            "friday": [ 19, 30, 9, 29 ],
+            "saturday": [ 18, 29, 7, 17 ],
+            "sunday": [ 16, 26, 5, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
