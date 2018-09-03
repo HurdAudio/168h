@@ -8404,6 +8404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 421,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/basketballpyramid.jpg',
+          title: 'Basketball Pyramid',
+          artist: 'David Huffman',
+          year: '2007',
+          rule: {
+            "monday": [ 3, 12, 20, 28 ],
+            "tuesday": [ 9, 14, 20, 1 ],
+            "wednesday": [ 8, 16, 24, 3 ],
+            "thursday": [ 10, 20, 26, 3 ],
+            "friday": [ 12, 20, 28, 9 ],
+            "saturday": [ 12, 22, 18, 8 ],
+            "sunday": [ 2, 10, 18, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 422,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/RichardHunt1.jpg',
+          title: 'Sculptural Improvisation #2',
+          artist: 'Richard Hunt',
+          year: '1991',
+          rule: {
+            "monday": [ 2, 10, 18, 26 ],
+            "tuesday": [ 3, 12, 20, 28 ],
+            "wednesday": [ 9, 14, 20, 1 ],
+            "thursday": [ 8, 16, 24, 3 ],
+            "friday": [ 10, 20, 26, 3 ],
+            "saturday": [ 12, 20, 28, 9 ],
+            "sunday": [ 12, 22, 18, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 423,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/IMG_2921.jpg',
+          title: 'Chicken Hauling Flowers',
+          artist: 'Clementine Hunter ',
+          year: 'xx cent.',
+          rule: {
+            "monday": [ 12, 22, 18, 8 ],
+            "tuesday": [ 2, 10, 18, 26 ],
+            "wednesday": [ 3, 12, 20, 28 ],
+            "thursday": [ 9, 14, 20, 1 ],
+            "friday": [ 8, 16, 24, 3 ],
+            "saturday": [ 10, 20, 26, 3 ],
+            "sunday": [ 12, 20, 28, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 424,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/Jemison_Plant_You_Now_3-23-17_Revised-17_1000.jpg',
+          title: 'Revelation',
+          artist: 'Steffani Jemison',
+          year: '2017',
+          rule: {
+            "monday": [ 12, 20, 28, 9 ],
+            "tuesday": [ 12, 22, 18, 8 ],
+            "wednesday": [ 2, 10, 18, 26 ],
+            "thursday": [ 3, 12, 20, 28 ],
+            "friday": [ 9, 14, 20, 1 ],
+            "saturday": [ 8, 16, 24, 3 ],
+            "sunday": [ 10, 20, 26, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 425,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/WJAACM-1994-Courtesy-of-the-artist-Photo-Adgar-Cowans.jpg',
+          title: 'AACM',
+          artist: 'Wadsworth Jarrell',
+          year: '1994',
+          rule: {
+            "monday": [ 10, 20, 26, 3 ],
+            "tuesday": [ 12, 20, 28, 9 ],
+            "wednesday": [ 12, 22, 18, 8 ],
+            "thursday": [ 2, 10, 18, 26 ],
+            "friday": [ 3, 12, 20, 28 ],
+            "saturday": [ 9, 14, 20, 1 ],
+            "sunday": [ 8, 16, 24, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
