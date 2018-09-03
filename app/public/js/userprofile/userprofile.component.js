@@ -269,6 +269,99 @@
       vm.userDeleteOccasionShareComment = userDeleteOccasionShareComment;
       vm.cancelOccasionInvite = cancelOccasionInvite;
 
+      function obtainObservanceInviterInviteeDatas(observanceShare, index) {
+        let otherId = 0;
+        if (parseInt(observanceShare.user_id) === parseInt(currentUserId)) {
+          otherId = parseInt(observanceShare.share_associate_id);
+        } else {
+          otherId = parseInt(observanceShare.user_id);
+        }
+
+        $http.get(`/users/${currentUserId}`)
+        .then(currentUserData => {
+          let currentUser = currentUserData.data;
+          $http.get(`/users/${otherId}`)
+          .then(otherUserData => {
+            let otherUser = otherUserData.data;
+            vm.activeObservanceShares[index].inviterImg = otherUser.user_avatar_url;
+            if (parseInt(observanceShare.user_id) === parseInt(otherId)) {
+              vm.activeObservanceShares[index].inviter = currentUser.name;
+              vm.activeObservanceShares[index].invitee = otherUser.name;
+            } else {
+              vm.activeObservanceShares[index].inviter = otherUser.name;
+              vm.activeObservanceShares[index].invitee = currentUser.name;
+            }
+          });
+        });
+      }
+
+      function obtainObservanceDatas(observanceShare, index) {
+
+        let months = [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ];
+
+        $http.get(`/observances/${observanceShare.observance_id}`)
+        .then(observanceData => {
+          let observance = observanceData.data;
+          let dayOf = new Date(observance.day_of);
+          vm.activeObservanceShares[index].name = observance.name;
+          vm.activeObservanceShares[index].picture = observance.picture;
+          vm.activeObservanceShares[index].cleanDayOf = 'Every ' + dayOf.getDate() + ' ' + months[dayOf.getMonth()];
+          if (observance.art_override) {
+            vm.activeObservanceShares[index].artWorks = [];
+            for (let i = 0; i < observance.override_content.img_paths.length; i++) {
+              vm.activeObservanceShares[index].artWorks[i] = {};
+              vm.activeObservanceShares[index].artWorks[i].img_paths = observance.override_content.img_paths[i];
+              vm.activeObservanceShares[index].artWorks[i].artists = observance.override_content.artists[i];
+              vm.activeObservanceShares[index].artWorks[i].titles = observance.override_content.titles[i];
+              vm.activeObservanceShares[index].artWorks[i].years = observance.override_content.years[i];
+            }
+          }
+          if (observance.music_override) {
+            vm.activeObservanceShares[index].musicWorks = [];
+            for (let j = 0; j < observance.override_content.src_strings.length; j++) {
+              vm.activeObservanceShares[index].musicWorks[j] = {};
+              vm.activeObservanceShares[index].musicWorks[j].src_strings = observance.override_content.src_strings[j];
+              vm.activeObservanceShares[index].musicWorks[j].href_strings = observance.override_content.href_strings[j];
+              vm.activeObservanceShares[index].musicWorks[j].a_strings = observance.override_content.a_strings[j];
+            }
+          }
+        });
+      }
+
+      function retrieveUserObservanceShares() {
+        let check;
+
+        $http.get('/observance_shares')
+        .then(allObservanceData => {
+          let allObservance = allObservanceData.data;
+          let userObservanceShares = allObservance.filter(entry => {
+            return((parseInt(entry.user_id) === parseInt(currentUserId)) || (parseInt(entry.share_associate_id) === parseInt(currentUserId)));
+          });
+          if (userObservanceShares.length > 0) {
+            vm.activeObservanceShares = [];
+            for (let i = 0; i < userObservanceShares.length; i++) {
+              check = new Date(userObservanceShares[i].created_at);
+              vm.activeObservanceShares[i] = {};
+              vm.activeObservanceShares[i].id = userObservanceShares[i].id;
+              vm.activeObservanceShares[i].cleanDate = cleanDateHoliday(userObservanceShares[i].created_at) + ' at ' + check.toLocaleTimeString('en-GB') + '.';
+              obtainObservanceInviterInviteeDatas(userObservanceShares[i], i);
+              obtainObservanceDatas(userObservanceShares[i], i);
+            }
+          }
+          setTimeout(() => {
+            for (let j = 0; j < userObservanceShares.length; j++) {
+              if ((parseInt(userObservanceShares[j].user_id)) === (parseInt(currentUserId))) {
+                document.getElementById('observanceblockInviter' + userObservanceShares[j].id).setAttribute("style", "display: none;");
+                document.getElementById('observanceblockInvitee' + userObservanceShares[j].id).setAttribute("style", "display: initial;");
+              } else {
+                document.getElementById('observanceblockInviter' + userObservanceShares[j].id).setAttribute("style", "display: initial;");
+                document.getElementById('observanceblockInvitee' + userObservanceShares[j].id).setAttribute("style", "display: none;");
+              }
+            }
+          }, (userObservanceShares.length * 25));
+        });
+      }
+
       function cancelOccasionInvite() {
         let shareOccasionPane = document.getElementById('shareOccasionPane');
 
@@ -15407,6 +15500,7 @@
             retrieveUserHolidayShares();
             retrieveUserOccasionShares();
             retrieveUserTaskShares();
+            retrieveUserObservanceShares();
           });
         }
 

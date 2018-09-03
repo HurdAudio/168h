@@ -4144,51 +4144,51 @@
       <div id="observanceSharesNotifier">
 
         <div class="whoScheduledMe">
-          <!-- <main ng-repeat="observe in $ctrl.activeObservanceShares | orderBy : $ctrl.sortBy"> -->
+          <main ng-repeat="observe in $ctrl.activeObservanceShares | orderBy : $ctrl.sortBy">
             <div id="thisIsObservanceShareDeleteDiv{{observe.id}}" class="profileDeleteOption">
 
-              <!-- <a class="btn" href="#" ng-click="$ctrl.deleteObservanceShare(observance.id)">delete</a><br><br> -->
+              <!-- <a class="btn" href="#" ng-click="$ctrl.deleteObservanceShare(observe.id)">delete</a><br><br> -->
             </div>
 
 
-            <img src="{{observance.inviterImg}}"><br>
-            <p id="observanceblockInviter{{observance.id}}">{{observance.inviter}} has shared the following observance with you on {{observance.cleanDate}}</p>
-            <!-- <p id="observanceblockInvitee{{observance.id}}">You have shared the following observance with {{observance.invitee}} on {{observance.cleanDate}}</p> -->
+            <img src="{{observe.inviterImg}}"><br>
+            <p id="observanceblockInviter{{observe.id}}">{{observe.inviter}} has shared the following observance with you on {{observe.cleanDate}}</p>
+            <p id="observanceblockInvitee{{observe.id}}">You have shared the following observance with {{observe.invitee}} on {{observe.cleanDate}}</p>
 
             <br><br><br><br><br><br>
-            <h3>{{observance.name}}</h3>
-            <img src="{{observance.picture}}"><br><br>
-            <h3>{{observance.cleanDayOf}}</h3>
+            <h3>{{observe.name}}</h3>
+            <img src="{{observe.picture}}"><br><br>
+            <h3>{{observe.cleanDayOf}}</h3>
 
-            <!-- <br><br><main ng-repeat="art in observance.artWorks | orderBy : $ctrl.sortBy"> -->
+            <br><br><main ng-repeat="art in observe.artWorks | orderBy : $ctrl.sortBy">
 
               <br><img src="{{art.img_paths}}"><br>
               <br><h3><b>{{art.artists}}</b></h3><br>
               <br><h3><em>{{art.titles}}</em>, {{art.years}}</h3><br>
-            <!-- </main> -->
-            <!-- <main ng-repeat="music in observance.musicWorks | orderBy : $ctrl.sortBy"> -->
+            </main>
+            <main ng-repeat="music in observe.musicWorks | orderBy : $ctrl.sortBy">
               <div class="iframeDiv">
                 <iframe style="border: 0; width: 100%; height: 510px;" src="{{music.src_strings}}" seamless><a href="{{music.href_strings}}">{{music.a_strings}}</a></iframe>
               </div>
 
-            <!-- </main> -->
+            </main>
 
 
-            <div class="holidayAcceptDenyButtons" id="observanceAcceptDecline{{observance.id}}">
+            <!-- <div class="holidayAcceptDenyButtons" id="observanceAcceptDecline{{observe.id}}">
 
-              <a class="btn" ng-click="$ctrl.declineObservanceShare(observance.id)">Decline</a>
-              <a class="btn" ng-click="$ctrl.acceptObservanceShare(observance.id)">Accept</a>
+              <a class="btn" ng-click="$ctrl.declineObservanceShare(observe.id)">Decline</a>
+              <a class="btn" ng-click="$ctrl.acceptObservanceShare(observe.id)">Accept</a>
             </div><br><br>
-            <br><br><div id="observanceShareAccepted{{observance.id}}">
+            <br><br><div id="observanceShareAccepted{{observe.id}}">
 
-              <img src="{{observance.inviteeImg}}"><br>
-              <br><h3>{{observance.invitee}} has accepted this observance.</h3>
+              <img src="{{observe.inviterImg}}"><br>
+              <br><h3>{{observe.invitee}} has accepted this observance.</h3>
             </div>
-            <br><br><div id="observanceShareDeclined{{observance.id}}">
+            <br><br><div id="observanceShareDeclined{{observe.id}}">
 
-              <img src="{{observance.inviteeImg}}"><br>
-              <br><h3>{{observance.invitee}} has declined this observance.</h3>
-            </div>
+              <img src="{{observe.inviterImg}}"><br>
+              <br><h3>{{observe.invitee}} has declined this observance.</h3>
+            </div> -->
 
             <a href=""><h3>comment</h3></a>
 
@@ -4219,7 +4219,7 @@
                 </div><br><br><br><br>
               <!-- </main> -->
             </div>
-          <!-- </main> -->
+          </main>
         </div>
 
 
