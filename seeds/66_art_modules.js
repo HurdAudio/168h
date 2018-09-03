@@ -1984,6 +1984,66 @@ exports.seed = function(knex, Promise) {
           public: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 166,
+          user_author_id: 1,
+          theme: 'Abandoned Places',
+          img_path: './img/modules/abandoned-places-4.jpg',
+          title: 'Farmhouse, Seneca Lake, New York',
+          artist: 'unknown artist',
+          year: '2014',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 167,
+          user_author_id: 1,
+          theme: 'Abandoned Places',
+          img_path: './img/modules/abandoned-places-5.jpg',
+          title: 'Farmhouse, Seneca Lake, New York',
+          artist: 'unknown artist',
+          year: '2014',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 168,
+          user_author_id: 1,
+          theme: 'Abandoned Places',
+          img_path: './img/modules/abandoned-places-6.jpg',
+          title: 'Ryugyong Hotel, Pyongyang, North Korea',
+          artist: 'unknown artist',
+          year: '2014',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 169,
+          user_author_id: 1,
+          theme: 'Abandoned Places',
+          img_path: './img/modules/abandoned-places-7.jpg',
+          title: 'Willard Asylum, Willard, New York',
+          artist: 'unknown artist',
+          year: '2014',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 170,
+          user_author_id: 1,
+          theme: 'Abandoned Places',
+          img_path: './img/modules/abandoned-places-8.jpg',
+          title: 'Willard Asylum, Willard, New York',
+          artist: 'unknown artist',
+          year: '2014',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
