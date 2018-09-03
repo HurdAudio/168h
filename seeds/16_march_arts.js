@@ -8204,6 +8204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 411,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/mist-1980.jpg',
+          title: 'Mist',
+          artist: 'Martha Diamond',
+          year: '1980',
+          rule: {
+            "monday": [ 23, 2, 10, 20 ],
+            "tuesday": [ 22, 1, 10, 19 ],
+            "wednesday": [ 28, 6, 16, 24 ],
+            "thursday": [ 27, 6, 14, 24 ],
+            "friday": [ 27, 5, 13, 23 ],
+            "saturday": [ 25, 4, 12, 22 ],
+            "sunday": [ 24, 3, 11, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 412,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/cockfeather-mask-1973.jpg',
+          title: 'Cockfeather Mask',
+          artist: 'Rebecca Horn',
+          year: '1973',
+          rule: {
+            "monday": [ 24, 3, 11, 21 ],
+            "tuesday": [ 23, 2, 10, 20 ],
+            "wednesday": [ 22, 1, 10, 19 ],
+            "thursday": [ 28, 6, 16, 24 ],
+            "friday": [ 27, 6, 14, 24 ],
+            "saturday": [ 27, 5, 13, 23 ],
+            "sunday": [ 25, 4, 12, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 413,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/pink-couch-2003.jpg',
+          title: 'Pink Couch',
+          artist: 'Susan Rothenberg',
+          year: '2003',
+          rule: {
+            "monday": [ 26, 5, 13, 23 ],
+            "tuesday": [ 25, 4, 12, 22 ],
+            "wednesday": [ 24, 3, 11, 21 ],
+            "thursday": [ 23, 2, 11, 20 ],
+            "friday": [ 29, 7, 17, 25 ],
+            "saturday": [ 28, 7, 15, 25 ],
+            "sunday": [ 28, 6, 14, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 414,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/avalon-1976.jpg',
+          title: 'Avalon',
+          artist: 'Valerie Jaudon',
+          year: '1976',
+          rule: {
+            "monday": [ 28, 6, 14, 24 ],
+            "tuesday": [ 26, 5, 13, 23 ],
+            "wednesday": [ 25, 4, 12, 22 ],
+            "thursday": [ 24, 3, 11, 21 ],
+            "friday": [ 23, 2, 11, 20 ],
+            "saturday": [ 29, 7, 17, 25 ],
+            "sunday": [ 28, 7, 15, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 415,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/under-the-snow-2003.jpg',
+          title: 'Under the Snow',
+          artist: 'Catherine Murphy',
+          year: '2003',
+          rule: {
+            "monday": [ 28, 7, 15, 25 ],
+            "tuesday": [ 28, 6, 14, 24 ],
+            "wednesday": [ 26, 5, 13, 23 ],
+            "thursday": [ 25, 4, 12, 22 ],
+            "friday": [ 24, 3, 11, 21 ],
+            "saturday": [ 23, 2, 11, 20 ],
+            "sunday": [ 29, 7, 17, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
