@@ -8004,6 +8004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 401,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/chicago-white-sox-team-colors.jpg',
+          title: 'Chicago White Sox Team Colors',
+          artist: 'unknown',
+          year: '2017',
+          rule: {
+            "monday": [ 22, 27, 3, 9 ],
+            "tuesday": [ 27, 3, 8, 15 ],
+            "wednesday": [ 11, 1, 7, 13 ],
+            "thursday": [ 26, 29, 7, 13 ],
+            "friday": [ 25, 29, 14, 12 ],
+            "saturday": [ 23, 28, 4, 10 ],
+            "sunday": [ 23, 28, 4, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 402,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/fworksSox.jpeg',
+          title: 'Comiskey Park Fireworks Minimalist Art',
+          artist: 'mlb shop',
+          year: '2018',
+          rule: {
+            "monday": [ 23, 28, 4, 10 ],
+            "tuesday": [ 22, 27, 3, 9 ],
+            "wednesday": [ 27, 3, 8, 15 ],
+            "thursday": [ 11, 1, 7, 13 ],
+            "friday": [ 26, 29, 7, 13 ],
+            "saturday": [ 25, 29, 14, 12 ],
+            "sunday": [ 23, 28, 4, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 403,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/2219737-NPWEZPQK-7.jpg',
+          title: 'Chicago White Sox 1917',
+          artist: 'Toby Towers',
+          year: '2017',
+          rule: {
+            "monday": [ 23, 28, 4, 10 ],
+            "tuesday": [ 23, 28, 4, 10 ],
+            "wednesday": [ 22, 27, 3, 9 ],
+            "thursday": [ 27, 3, 8, 15 ],
+            "friday": [ 11, 1, 7, 13 ],
+            "saturday": [ 26, 29, 7, 13 ],
+            "sunday": [ 25, 29, 14, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 404,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/9-16-1919-whitesoxteam.jpg',
+          title: '1919 White Sox Team',
+          artist: 'unknown artist',
+          year: '1919',
+          rule: {
+            "monday": [ 25, 29, 14, 12 ],
+            "tuesday": [ 23, 28, 4, 10 ],
+            "wednesday": [ 23, 28, 4, 10 ],
+            "thursday": [ 22, 27, 3, 9 ],
+            "friday": [ 27, 3, 8, 15 ],
+            "saturday": [ 11, 1, 7, 13 ],
+            "sunday": [ 26, 29, 7, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 405,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/L9okw6B8yIqVsia5.jpg',
+          title: 'Crowd Goes Wild',
+          artist: 'M. Samantha',
+          year: '2015',
+          rule: {
+            "monday": [ 26, 29, 7, 13 ],
+            "tuesday": [ 25, 29, 14, 12 ],
+            "wednesday": [ 23, 28, 4, 10 ],
+            "thursday": [ 23, 28, 4, 10 ],
+            "friday": [ 22, 27, 3, 9 ],
+            "saturday": [ 27, 3, 8, 15 ],
+            "sunday": [ 11, 1, 7, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
