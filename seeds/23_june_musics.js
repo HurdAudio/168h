@@ -4054,6 +4054,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 226,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2061323533/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://polarseasrecordings.bandcamp.com/album/obsolescence-programm-e',
+          a_string: 'Obsolescence Programmée by Mathieu Lamontagne',
+          rule: {
+            "monday": [ 2, 5, 10, 22 ],
+            "tuesday": [ 1, 5, 10, 22 ],
+            "wednesday": [ 1, 4, 10, 21 ],
+            "thursday": [ 29, 7, 9, 20 ],
+            "saturday": [ 3, 7, 13, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 227,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2502707117/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://polarseasrecordings.bandcamp.com/album/strings-and-clusters',
+          a_string: 'Strings and Clusters by Mikael Lind',
+          rule: {
+            "monday": [ 3, 7, 13, 24 ],
+            "tuesday": [ 2, 5, 10, 22 ],
+            "wednesday": [ 1, 5, 10, 22 ],
+            "thursday": [ 1, 4, 10, 21 ],
+            "saturday": [ 29, 7, 9, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 228,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2894965600/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://primitiveair.bandcamp.com/album/creation-hymn-pre-order',
+          a_string: 'Creation Hymn (PRE-ORDER) by Primitive Air',
+          rule: {
+            "monday": [ 29, 7, 9, 20 ],
+            "tuesday": [ 3, 7, 13, 24 ],
+            "wednesday": [ 2, 5, 10, 22 ],
+            "thursday": [ 1, 5, 10, 22 ],
+            "saturday": [ 1, 4, 10, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
