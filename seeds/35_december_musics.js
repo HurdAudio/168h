@@ -3460,6 +3460,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 193,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1761194515/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://repsych.bandcamp.com/album/nils-jazz-ensemble-latin-jazz-funk-soul-killer-album-1976',
+          a_string: 'Nils Jazz Ensemble (Latin Jazz - Funk Soul) Killer album (1976) by Nil&#39;s Jazz Ensemble',
+          rule: {
+            "monday": [ 30, 5, 11, 17 ],
+            "tuesday": [ 3, 9, 15, 21 ],
+            "wednesday": [ 2, 8, 14, 19 ],
+            "thursday": [ 30, 7, 13, 19 ],
+            "saturday": [ 29, 6, 12, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 194,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1311532989/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://repsych.bandcamp.com/album/laurence-vanay-galaxies-1974-female-french-folk-jazz-rock-experimental',
+          a_string: 'Laurence Vanay - Galaxies (1974 Female French Folk Jazz Rock Experimental) by Laurence Vanay',
+          rule: {
+            "monday": [ 29, 6, 12, 18 ],
+            "tuesday": [ 30, 5, 11, 17 ],
+            "wednesday": [ 3, 9, 15, 21 ],
+            "thursday": [ 2, 8, 14, 19 ],
+            "saturday": [ 30, 7, 13, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 195,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3075855525/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://repsych.bandcamp.com/album/mag-all-stars-mambo-descarga-guaracha-cumbias-50s-y-60s-vol-1',
+          a_string: 'Mag All Stars (Mambo Descarga Guaracha Cumbias 50&#39;s y 60&#39;s) Vol 1. by Mag All Stars',
+          rule: {
+            "monday": [ 30, 7, 13, 19 ],
+            "tuesday": [ 29, 6, 12, 18 ],
+            "wednesday": [ 30, 5, 11, 17 ],
+            "thursday": [ 3, 9, 15, 21 ],
+            "saturday": [ 2, 8, 14, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
