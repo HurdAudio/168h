@@ -7404,6 +7404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 371,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/les-trois-muses-117x117cm-1280x1275-640x638.jpg',
+          title: 'Les Trois Muses',
+          artist: 'Pietropoli Patrick',
+          year: '2012',
+          rule: {
+            "monday": [ 22, 2, 14, 25 ],
+            "tuesday": [ 22, 2, 13, 14 ],
+            "wednesday": [ 21, 1, 11, 13 ],
+            "thursday": [ 20, 31, 11, 12 ],
+            "friday": [ 19, 30, 10, 21 ],
+            "saturday": [ 25, 5, 16, 26 ],
+            "sunday": [ 24, 4, 15, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 372,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/eurydice-n-10-1996.jpg',
+          title: 'Eurydice n. 10',
+          artist: 'Bracha L. Ettinger',
+          year: '1996',
+          rule: {
+            "monday": [ 24, 4, 15, 26 ],
+            "tuesday": [ 22, 2, 14, 25 ],
+            "wednesday": [ 22, 2, 13, 14 ],
+            "thursday": [ 21, 1, 11, 13 ],
+            "friday": [ 20, 31, 11, 12 ],
+            "saturday": [ 19, 30, 10, 21 ],
+            "sunday": [ 25, 5, 16, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 373,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/attempt-at-recreation-three-drawers-1971.jpg',
+          title: 'Attempt at Recreation (Three Drawers)',
+          artist: 'Christian Boltanski',
+          year: '1971',
+          rule: {
+            "monday": [ 25, 5, 16, 26 ],
+            "tuesday": [ 24, 4, 15, 26 ],
+            "wednesday": [ 22, 2, 14, 25 ],
+            "thursday": [ 22, 2, 13, 14 ],
+            "friday": [ 21, 1, 11, 13 ],
+            "saturday": [ 20, 31, 11, 12 ],
+            "sunday": [ 19, 30, 10, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 374,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/painted-window-1971.jpg',
+          title: 'Painted Window',
+          artist: 'Ivan Tovar',
+          year: '1971',
+          rule: {
+            "monday": [ 19, 30, 10, 21 ],
+            "tuesday": [ 25, 5, 16, 26 ],
+            "wednesday": [ 24, 4, 15, 26 ],
+            "thursday": [ 22, 2, 14, 25 ],
+            "friday": [ 22, 2, 13, 14 ],
+            "saturday": [ 21, 1, 11, 13 ],
+            "sunday": [ 20, 31, 11, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 375,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/les-vitraux-de-la-chapelle-de-st-rapha-l-2008.jpg',
+          title: 'Les vitraux de la Chapelle de St Raphaël',
+          artist: 'Andre-Pierre Arnal',
+          year: '2008',
+          rule: {
+            "monday": [ 20, 31, 11, 12 ],
+            "tuesday": [ 19, 30, 10, 21 ],
+            "wednesday": [ 25, 5, 16, 26 ],
+            "thursday": [ 24, 4, 15, 26 ],
+            "friday": [ 22, 2, 14, 25 ],
+            "saturday": [ 22, 2, 13, 14 ],
+            "sunday": [ 21, 1, 11, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
