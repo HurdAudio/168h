@@ -7204,6 +7204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 361,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/around-the-circle-1940.jpg',
+          title: 'Around the circle',
+          artist: 'Wassily Kandinsky',
+          year: '1940',
+          rule: {
+            "monday": [ 19, 22, 31, 16 ],
+            "tuesday": [ 18, 21, 30, 15 ],
+            "wednesday": [ 24, 28, 5, 21 ],
+            "thursday": [ 23, 26, 4, 20 ],
+            "friday": [ 22, 26, 3, 19 ],
+            "saturday": [ 21, 25, 2, 18 ],
+            "sunday": [ 20, 22, 1, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 362,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/algoma-in-november-1935.jpg',
+          title: 'Algoma in November',
+          artist: 'A.Y. Jackson',
+          year: '1935',
+          rule: {
+            "monday": [ 20, 22, 1, 17 ],
+            "tuesday": [ 19, 22, 31, 16 ],
+            "wednesday": [ 18, 21, 30, 15 ],
+            "thursday": [ 24, 28, 5, 21 ],
+            "friday": [ 23, 26, 4, 20 ],
+            "saturday": [ 22, 26, 3, 19 ],
+            "sunday": [ 21, 25, 2, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 363,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/imbarcadero-a-zurigo-1927.jpg',
+          title: 'Imbarcadero a Zurigo',
+          artist: 'Julius Bissier',
+          year: '1927',
+          rule: {
+            "monday": [ 21, 25, 2, 18 ],
+            "tuesday": [ 20, 22, 1, 17 ],
+            "wednesday": [ 19, 22, 31, 16 ],
+            "thursday": [ 18, 21, 30, 15 ],
+            "friday": [ 24, 28, 5, 21 ],
+            "saturday": [ 23, 26, 4, 20 ],
+            "sunday": [ 22, 26, 3, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 364,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/golden-yellow-corn-1929.jpg',
+          title: 'Golden Yellow Corn',
+          artist: 'Sanyu',
+          year: '1929',
+          rule: {
+            "monday": [ 23, 27, 4, 20 ],
+            "tuesday": [ 22, 26, 3, 19 ],
+            "wednesday": [ 21, 23, 2, 18 ],
+            "thursday": [ 20, 23, 1, 17 ],
+            "friday": [ 19, 22, 31, 16 ],
+            "saturday": [ 25, 29, 6, 22 ],
+            "sunday": [ 24, 27, 5, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 365,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/loads-with-a-crane-barge-on-the-seine-1932.jpg',
+          title: 'Loads with a crane barge on the Seine',
+          artist: 'Alekos Kontopoulos',
+          year: '1932',
+          rule: {
+            "monday": [ 24, 27, 5, 21 ],
+            "tuesday": [ 23, 27, 4, 20 ],
+            "wednesday": [ 22, 26, 3, 19 ],
+            "thursday": [ 21, 23, 2, 18 ],
+            "friday": [ 20, 23, 1, 17 ],
+            "saturday": [ 19, 22, 31, 16 ],
+            "sunday": [ 25, 29, 6, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
