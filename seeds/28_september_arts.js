@@ -7004,6 +7004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 351,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/the-green-cat-man-and-the-flying-snakes-2004.jpg',
+          title: 'The Green Cat Man and the Flying Snakes',
+          artist: 'Twins Seven Seven',
+          year: '2004',
+          rule: {
+            "monday": [ 21, 27, 15, 23 ],
+            "tuesday": [ 20, 26, 14, 22 ],
+            "wednesday": [ 19, 25, 13, 21 ],
+            "thursday": [ 8, 24, 12, 21 ],
+            "friday": [ 7, 14, 11, 19 ],
+            "saturday": [ 15, 22, 10, 17 ],
+            "sunday": [ 22, 28, 16, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 352,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/maenads-2-2005.jpg',
+          title: 'Maenads 2',
+          artist: 'Sorin Ilfoveanu',
+          year: '2005',
+          rule: {
+            "monday": [ 22, 28, 16, 24 ],
+            "tuesday": [ 21, 27, 15, 23 ],
+            "wednesday": [ 20, 26, 14, 22 ],
+            "thursday": [ 19, 25, 13, 21 ],
+            "friday": [ 8, 24, 12, 21 ],
+            "saturday": [ 7, 14, 11, 19 ],
+            "sunday": [ 15, 22, 10, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 353,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/carolina-morning-1974.jpg',
+          title: 'Carolina Morning',
+          artist: 'Romare Bearden',
+          year: '1974',
+          rule: {
+            "monday": [ 15, 22, 10, 17 ],
+            "tuesday": [ 22, 28, 16, 24 ],
+            "wednesday": [ 21, 27, 15, 23 ],
+            "thursday": [ 20, 26, 14, 22 ],
+            "friday": [ 19, 25, 13, 21 ],
+            "saturday": [ 8, 24, 12, 21 ],
+            "sunday": [ 7, 14, 11, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 354,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/rhubarb-1989.jpg',
+          title: 'Rhubarb',
+          artist: 'Avigdor Arikha',
+          year: '1989',
+          rule: {
+            "monday": [ 7, 14, 11, 19 ],
+            "tuesday": [ 15, 22, 10, 17 ],
+            "wednesday": [ 22, 28, 16, 24 ],
+            "thursday": [ 21, 27, 15, 23 ],
+            "friday": [ 20, 26, 14, 22 ],
+            "saturday": [ 19, 25, 13, 21 ],
+            "sunday": [ 8, 24, 12, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 355,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/farbmodulationen-1962.jpg',
+          title: 'Farbmodulationen',
+          artist: 'Rupprecht Geiger',
+          year: '1962',
+          rule: {
+            "monday": [ 8, 24, 12, 21 ],
+            "tuesday": [ 7, 14, 11, 19 ],
+            "wednesday": [ 15, 22, 10, 17 ],
+            "thursday": [ 22, 28, 16, 24 ],
+            "friday": [ 21, 27, 15, 23 ],
+            "saturday": [ 20, 26, 14, 22 ],
+            "sunday": [ 19, 25, 13, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
