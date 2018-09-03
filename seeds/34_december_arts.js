@@ -6504,6 +6504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 326,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/19-08-03,Adv.jpg',
+          title: 'Adventure',
+          artist: 'Paul Strayer',
+          year: '1919',
+          rule: {
+            "monday": [ 14, 26, 4, 10 ],
+            "tuesday": [ 13, 26, 14, 21 ],
+            "wednesday": [ 19, 1, 9, 15 ],
+            "thursday": [ 18, 31, 8, 14 ],
+            "friday": [ 17, 30, 7, 13 ],
+            "saturday": [ 16, 29, 6, 12 ],
+            "sunday": [ 15, 28, 5, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 327,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/29-10,FvNvls2.jpg',
+          title: 'Five-Novels',
+          artist: 'William Streib',
+          year: '1929',
+          rule: {
+            "monday": [ 15, 28, 5, 11 ],
+            "tuesday": [ 14, 26, 4, 10 ],
+            "wednesday": [ 13, 26, 14, 21 ],
+            "thursday": [ 19, 1, 9, 15 ],
+            "friday": [ 18, 31, 8, 14 ],
+            "saturday": [ 17, 30, 7, 13 ],
+            "sunday": [ 16, 29, 6, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 328,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/20-00,Newspaper.jpg',
+          title: 'Newspaper Comic',
+          artist: 'John H. Striebel',
+          year: '1920',
+          rule: {
+            "monday": [ 16, 29, 6, 12 ],
+            "tuesday": [ 15, 28, 5, 11 ],
+            "wednesday": [ 14, 26, 4, 10 ],
+            "thursday": [ 13, 26, 14, 21 ],
+            "friday": [ 19, 1, 9, 15 ],
+            "saturday": [ 18, 31, 8, 14 ],
+            "sunday": [ 17, 30, 7, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 329,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/50-05,Pirates.jpg',
+          title: 'Pirates Comics',
+          artist: 'Michael Suchorsky',
+          year: '1940',
+          rule: {
+            "monday": [ 18, 31, 8, 14 ],
+            "tuesday": [ 17, 30, 7, 13 ],
+            "wednesday": [ 16, 29, 6, 12 ],
+            "thursday": [ 15, 27, 5, 11 ],
+            "friday": [ 14, 27, 15, 22 ],
+            "saturday": [ 20, 2, 10, 16 ],
+            "sunday": [ 19, 1, 9, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 330,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/37-02,AllStarAdv1.jpg',
+          title: 'All Star Adventure',
+          artist: 'Charles Sultan',
+          year: '1937',
+          rule: {
+            "monday": [ 19, 1, 9, 15 ],
+            "tuesday": [ 18, 31, 8, 14 ],
+            "wednesday": [ 17, 30, 7, 13 ],
+            "thursday": [ 16, 29, 6, 12 ],
+            "friday": [ 15, 27, 5, 11 ],
+            "saturday": [ 14, 27, 15, 22 ],
+            "sunday": [ 20, 2, 10, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
