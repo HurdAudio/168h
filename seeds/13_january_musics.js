@@ -4594,6 +4594,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 256,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=420755283/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://marginalfrequency.bandcamp.com/album/mfcs-k-tim-feeney-burrow',
+          a_string: 'MFCS K | Tim Feeney - Burrow by Marginal Frequency',
+          rule: {
+            "monday": [ 12, 18, 19, 20 ],
+            "tuesday": [ 11, 18, 19, 20 ],
+            "wednesday": [ 15, 22, 23, 24 ],
+            "thursday": [ 14, 20, 21, 23 ],
+            "saturday": [ 13, 20, 21, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 257,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2531114297/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://othermindsrecords.bandcamp.com/album/from-ground',
+          a_string: 'from &quot;Ground&quot; by Jerry Hunt',
+          rule: {
+            "monday": [ 13, 20, 21, 22 ],
+            "tuesday": [ 12, 18, 19, 20 ],
+            "wednesday": [ 11, 18, 19, 20 ],
+            "thursday": [ 15, 22, 23, 24 ],
+            "saturday": [ 14, 20, 21, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 258,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1236291002/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://othermindsrecords.bandcamp.com/album/hyperchromatica',
+          a_string: 'Hyperchromatica by Kyle Gann',
+          rule: {
+            "monday": [ 14, 20, 21, 23 ],
+            "tuesday": [ 13, 20, 21, 22 ],
+            "wednesday": [ 12, 18, 19, 20 ],
+            "thursday": [ 11, 18, 19, 20 ],
+            "saturday": [ 15, 22, 23, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
