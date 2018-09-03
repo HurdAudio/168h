@@ -774,6 +774,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#E5E7EB',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 56,
+          user_id: 1,
+          theme: 'Leather',
+          type: 'sunday',
+          src_string: '../img/september_tiles/natalia-y-504860-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '190%',
+          color_dark: '#2D271B',
+          color_medium: '#811518',
+          color_light: '#D1D6C2',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
