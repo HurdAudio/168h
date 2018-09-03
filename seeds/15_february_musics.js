@@ -4486,6 +4486,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 250,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=960921452/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://armandhammer.bandcamp.com/album/paraffin',
+          a_string: 'Paraffin by Armand Hammer',
+          rule: {
+            "monday": [ 11, 14, 16, 20 ],
+            "tuesday": [ 22, 16, 18, 20 ],
+            "wednesday": [ 24, 18, 20, 26 ],
+            "thursday": [ 25, 19, 21, 27 ],
+            "saturday": [ 8, 12, 14, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 251,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2193002094/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bloodorangenyc.bandcamp.com/album/negro-swan',
+          a_string: 'Negro Swan by Blood Orange',
+          rule: {
+            "monday": [ 8, 12, 14, 18 ],
+            "tuesday": [ 11, 14, 16, 20 ],
+            "wednesday": [ 22, 16, 18, 20 ],
+            "thursday": [ 24, 18, 20, 26 ],
+            "saturday": [ 25, 19, 21, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 252,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=84766419/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://nimbuswest.bandcamp.com/album/the-call',
+          a_string: 'The Call by Pan Afrikan People&#39;s Arkestra',
+          rule: {
+            "monday": [ 26, 20, 22, 28 ],
+            "tuesday": [ 9, 13, 15, 19 ],
+            "wednesday": [ 12, 15, 17, 21 ],
+            "thursday": [ 23, 17, 19, 21 ],
+            "saturday": [ 25, 19, 21, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
