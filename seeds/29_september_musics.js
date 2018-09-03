@@ -3730,6 +3730,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 208,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2088132159/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://music.7dmedia.com/album/the-repercussions-of-angelic-behavior',
+          a_string: 'The Repercussions of Angelic Behavior by Bill Reiflin, Robert Fripp, Trey Gunn',
+          rule: {
+            "monday": [ 29, 19, 27, 21 ],
+            "tuesday": [ 3, 23, 1, 25 ],
+            "wednesday": [ 2, 22, 30, 24 ],
+            "thursday": [ 1, 21, 29, 24 ],
+            "saturday": [ 30, 20, 28, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 209,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1598091346/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://music.7dmedia.com/album/the-news',
+          a_string: 'The News by N.y.X.',
+          rule: {
+            "monday": [ 30, 20, 28, 22 ],
+            "tuesday": [ 29, 19, 27, 21 ],
+            "wednesday": [ 3, 23, 1, 25 ],
+            "thursday": [ 2, 22, 30, 24 ],
+            "saturday": [ 1, 21, 29, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 210,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3589442295/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://music.7dmedia.com/album/the-veneer-of-logic',
+          a_string: 'The Veneer of Logic by Matte Henderson',
+          rule: {
+            "monday": [ 2, 22, 30, 25 ],
+            "tuesday": [ 1, 21, 29, 23 ],
+            "wednesday": [ 30, 20, 28, 22 ],
+            "thursday": [ 4, 24, 2, 26 ],
+            "saturday": [ 3, 23, 1, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
