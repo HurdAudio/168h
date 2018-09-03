@@ -4190,35 +4190,35 @@
               <br><h3>{{observance.invitee}} has declined this observance.</h3>
             </div>
 
-            <!-- <a href=""><h3>comment</h3></a> -->
+            <a href=""><h3>comment</h3></a>
 
-            <!-- <div class="commentsBar">
+            <div class="commentsBar">
 
               <h1>Comments:</h1>
-              <a class="btn" href="#" ng-click="$ctrl.addNewHolidayShareComment(holiday.id)" id="newHolidayShareCommentButton{{holiday.id}}">add</a>
-            </div> -->
-            <!-- <div id="holidayShareComments">
-              <main ng-repeat="comment in holiday.comments | orderBy : $ctrl.sortBy">
+              <!-- <a class="btn" href="#" ng-click="$ctrl.addNewObservanceShareComment(observance.id)" id="newObservanceShareCommentButton{{observance.id}}">add</a> -->
+            </div>
+            <div id="observanceShareComments" class="occasionShareComments">
+              <!-- <main ng-repeat="comment in observance.comments | orderBy : $ctrl.sortBy"> -->
                 <img src="{{comment.user_avatar_url}}"><br><br><br>
                 <br><br><br><p>From: {{comment.name}} <br>
                 on {{comment.cleanDate}}</p><br><br>
-                <textarea id="thisIsTheHolidayShareCommentEditor{{comment.id}}" class="pure-input-1" rows="5"></textarea>
-                <div class="thisIsMessageEditDoneDiv" id="thisIsHolidayShareCommentEditDoneDiv{{comment.id}}"><a class="btn" id="thisIsTheHolidayShareCommentEditorDoneButton{{comment.id}}" href="#" ng-click="$ctrl.userEditHolidayShareCommentCompleted(comment.id)">done</a></div>
-                <h3 id="thisIsHolidayShareCommentComment{{comment.id}}">{{comment.comment}}</h3><br>
+                <!-- <textarea id="thisIsTheObservanceShareCommentEditor{{comment.id}}" class="pure-input-1" rows="5"></textarea> -->
+                <!-- <div class="thisIsObservanceShareCommentEditDoneDiv" id="thisIsObservanceShareCommentEditDoneDiv{{comment.id}}"><a class="btn" id="thisIsTheObservanceShareCommentEditorDoneButton{{comment.id}}" href="#" ng-click="$ctrl.userEditObservanceShareCommentCompleted(comment.id)">done</a></div> -->
+                <h3 id="thisIsObservanceShareCommentComment{{comment.id}}">{{comment.comment}}</h3><br>
 
-                <div id="deleteHolidayShareCommentConfirm{{comment.id}}" class="messageEditDelete">
+                <div id="deleteObservanceShareCommentConfirm{{comment.id}}" class="messageEditDelete">
 
                   <h3>Delete comment forever?</h3>
-                  <a class="btn" href="#" ng-click="$ctrl.userHolidayShareCommentDeleteCancel(comment.id)">no</a>
-                  <a class="btn" href="#" ng-click="$ctrl.userHolidayShareCommentDeleteConfirmClick(comment.id)">yes</a>
+                  <a class="btn" href="#" ng-click="$ctrl.userObservanceShareCommentDeleteCancel(comment.id)">no</a>
+                  <a class="btn" href="#" ng-click="$ctrl.userObservanceShareCommentDeleteConfirmClick(comment.id)">yes</a>
                 </div>
 
-                <div id="editDeleteHolidayShareCommentDiv{{comment.id}}" class="messageEditDelete">
-                  <a class="btn" href="#" ng-click="$ctrl.userEditHolidayShareComment(comment.id)">edit</a>
-                  <a class="btn" href="#" ng-click="$ctrl.userDeleteHolidayShareComment(comment.id)">delete</a>
+                <div id="editDeleteObservanceShareCommentDiv{{comment.id}}" class="messageEditDelete">
+                  <a class="btn" href="#" ng-click="$ctrl.userEditObservanceShareComment(comment.id)">edit</a>
+                  <a class="btn" href="#" ng-click="$ctrl.userDeleteObservanceShareComment(comment.id)">delete</a>
                 </div><br><br><br><br>
-              </main>
-            </div> -->
+              <!-- </main> -->
+            </div>
           <!-- </main> -->
         </div>
 
