@@ -4270,6 +4270,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 238,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1123542052/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://andreakeller.bandcamp.com/album/five-below-live',
+          a_string: 'Five Below Live by Andrea Keller',
+          rule: {
+            "monday": [ 4, 12, 24, 29 ],
+            "tuesday": [ 8, 16, 28, 3 ],
+            "wednesday": [ 7, 15, 27, 2 ],
+            "thursday": [ 6, 14, 26, 1 ],
+            "saturday": [ 5, 13, 25, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 239,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=162228622/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ledesmaangelillohurtadobrandan.bandcamp.com/album/gato-barbieri-revisitado',
+          a_string: 'Gato Barbieri Revisitado by Ledesma Angelillo Hurtado Brandán',
+          rule: {
+            "monday": [ 5, 13, 25, 30 ],
+            "tuesday": [ 4, 12, 24, 29 ],
+            "wednesday": [ 8, 16, 28, 3 ],
+            "thursday": [ 7, 15, 27, 2 ],
+            "saturday": [ 6, 14, 26, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 240,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1894593390/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://jamiesaft.bandcamp.com/album/blue-dream',
+          a_string: 'Blue Dream by Jamie Saft Quartet',
+          rule: {
+            "monday": [ 6, 14, 26, 1 ],
+            "tuesday": [ 5, 13, 25, 30 ],
+            "wednesday": [ 4, 12, 24, 29 ],
+            "thursday": [ 8, 16, 28, 3 ],
+            "saturday": [ 7, 15, 27, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
