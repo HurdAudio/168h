@@ -10168,6 +10168,34 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 652,
+          user_id: 1,
+          name: 'Alexander John Ellis (mathematician/philologist/phonetician) born in 1814',
+          color: '#AA4D46',
+          picture: './img/maths/ellisM.jpeg',
+          day_of: new Date ('1814-06-14T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 653,
+          user_id: 1,
+          name: 'A great flood covered the world on this day in 1524 and everybody drowned according to German astrologer Johannes Stöffler',
+          color: '#CE512E',
+          picture: './img/doomsday/JohannesStöffler.jpeg',
+          day_of: new Date ('1524-02-25T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
