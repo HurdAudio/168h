@@ -7104,6 +7104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 356,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/dark-blue-world-1947.jpg',
+          title: 'Dark Blue World',
+          artist: 'Endre Balint',
+          year: '1947',
+          rule: {
+            "monday": [ 19, 25, 13, 21 ],
+            "tuesday": [ 8, 24, 12, 21 ],
+            "wednesday": [ 7, 14, 11, 19 ],
+            "thursday": [ 15, 22, 10, 17 ],
+            "friday": [ 22, 28, 16, 24 ],
+            "saturday": [ 21, 27, 15, 23 ],
+            "sunday": [ 20, 26, 14, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 357,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/from-point-1978.jpg',
+          title: 'From Point',
+          artist: 'Lee Ufan',
+          year: '1978',
+          rule: {
+            "monday": [ 21, 27, 15, 23 ],
+            "tuesday": [ 20, 26, 14, 22 ],
+            "wednesday": [ 9, 25, 13, 22 ],
+            "thursday": [ 8, 15, 12, 20 ],
+            "friday": [ 16, 23, 11, 18 ],
+            "saturday": [ 23, 29, 17, 25 ],
+            "sunday": [ 22, 28, 16, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 358,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/mushrooms-1995.jpg',
+          title: 'Mushrooms',
+          artist: 'Yayoi Kusama',
+          year: '1995',
+          rule: {
+            "monday": [ 22, 28, 16, 24 ],
+            "tuesday": [ 21, 27, 15, 23 ],
+            "wednesday": [ 20, 26, 14, 22 ],
+            "thursday": [ 9, 25, 13, 22 ],
+            "friday": [ 8, 15, 12, 20 ],
+            "saturday": [ 16, 23, 11, 18 ],
+            "sunday": [ 23, 29, 17, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 359,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/babel-2001.jpg',
+          title: 'Babel',
+          artist: 'Cildo Meireles',
+          year: '2001',
+          rule: {
+            "monday": [ 23, 29, 17, 25 ],
+            "tuesday": [ 22, 28, 16, 24 ],
+            "wednesday": [ 21, 27, 15, 23 ],
+            "thursday": [ 20, 26, 14, 22 ],
+            "friday": [ 9, 25, 13, 22 ],
+            "saturday": [ 8, 15, 12, 20 ],
+            "sunday": [ 16, 23, 11, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 360,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/the-tempest-2005.jpg',
+          title: 'The Tempest',
+          artist: 'Carlo Maria Mariani',
+          year: '2005',
+          rule: {
+            "monday": [ 16, 23, 11, 18 ],
+            "tuesday": [ 23, 29, 17, 25 ],
+            "wednesday": [ 22, 28, 16, 24 ],
+            "thursday": [ 21, 27, 15, 23 ],
+            "friday": [ 20, 26, 14, 22 ],
+            "saturday": [ 9, 25, 13, 22 ],
+            "sunday": [ 8, 15, 12, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
