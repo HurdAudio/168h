@@ -7704,6 +7704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 386,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/ruth-st-denis-ca-1900.jpg',
+          title: 'Ruth St. Denis',
+          artist: 'Alice Boughton',
+          year: 'c.1900',
+          rule: {
+            "monday": [ 24, 4, 14, 22 ],
+            "tuesday": [ 23, 3, 13, 21 ],
+            "wednesday": [ 22, 2, 12, 20 ],
+            "thursday": [ 1, 11, 21, 19 ],
+            "friday": [ 20, 30, 10, 18 ],
+            "saturday": [ 19, 29, 9, 17 ],
+            "sunday": [ 25, 5, 15, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 387,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/roger-fry-1900-ca.jpg',
+          title: 'Roger Fry',
+          artist: 'Alice Boughton',
+          year: 'c.1900',
+          rule: {
+            "monday": [ 25, 5, 15, 22 ],
+            "tuesday": [ 24, 4, 14, 22 ],
+            "wednesday": [ 23, 3, 13, 21 ],
+            "thursday": [ 22, 2, 12, 20 ],
+            "friday": [ 1, 11, 21, 19 ],
+            "saturday": [ 20, 30, 10, 18 ],
+            "sunday": [ 19, 29, 9, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 388,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/sand-and-wild-roses-1909.jpg',
+          title: 'Sand and Wild Roses',
+          artist: 'Alice Boughton',
+          year: 'c.1909',
+          rule: {
+            "monday": [ 19, 29, 9, 17 ],
+            "tuesday": [ 25, 5, 15, 22 ],
+            "wednesday": [ 24, 4, 14, 22 ],
+            "thursday": [ 23, 3, 13, 21 ],
+            "friday": [ 22, 2, 12, 20 ],
+            "saturday": [ 1, 11, 21, 19 ],
+            "sunday": [ 20, 30, 10, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 389,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/comforted-1906.jpg',
+          title: 'Comforted',
+          artist: 'Alice Boughton',
+          year: '1906',
+          rule: {
+            "monday": [ 20, 30, 10, 18 ],
+            "tuesday": [ 19, 29, 9, 17 ],
+            "wednesday": [ 25, 5, 15, 22 ],
+            "thursday": [ 24, 4, 14, 22 ],
+            "friday": [ 23, 3, 13, 21 ],
+            "saturday": [ 22, 2, 12, 20 ],
+            "sunday": [ 1, 11, 21, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 390,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/john-drinkwater-ca-1920s.jpg',
+          title: 'John Drinkwater',
+          artist: 'Alice Boughton',
+          year: 'c.1920',
+          rule: {
+            "monday": [ 1, 11, 21, 19 ],
+            "tuesday": [ 20, 30, 10, 18 ],
+            "wednesday": [ 19, 29, 9, 17 ],
+            "thursday": [ 25, 5, 15, 22 ],
+            "friday": [ 24, 4, 14, 22 ],
+            "saturday": [ 23, 3, 13, 21 ],
+            "sunday": [ 22, 2, 12, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
