@@ -3568,6 +3568,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 199,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1428360488/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://asnakechworku.bandcamp.com/album/asnakech',
+          a_string: 'Asnakech by Asnakech Worku',
+          rule: {
+            "monday": [ 26, 7, 18, 30 ],
+            "tuesday": [ 30, 11, 22, 26 ],
+            "wednesday": [ 29, 10, 21, 25 ],
+            "thursday": [ 28, 9, 20, 24 ],
+            "saturday": [ 27, 8, 19, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 200,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=339067473/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://nahawadoumbia.bandcamp.com/album/la-grande-cantatrice-malienne-vol-3',
+          a_string: 'La Grande Cantatrice Malienne Vol 3 by Na Hawa Doumbia',
+          rule: {
+            "monday": [ 27, 8, 19, 21 ],
+            "tuesday": [ 26, 7, 18, 30 ],
+            "wednesday": [ 30, 11, 22, 26 ],
+            "thursday": [ 29, 10, 21, 25 ],
+            "saturday": [ 28, 9, 20, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 201,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2446604127/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bolamusic.bandcamp.com/album/volume-7',
+          a_string: 'Volume 7 by Bola',
+          rule: {
+            "monday": [ 28, 9, 20, 24 ],
+            "tuesday": [ 27, 8, 19, 21 ],
+            "wednesday": [ 26, 7, 18, 30 ],
+            "thursday": [ 30, 11, 22, 26 ],
+            "saturday": [ 29, 10, 21, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
