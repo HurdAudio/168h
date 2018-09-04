@@ -7504,6 +7504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 376,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/double-rhythm-1991.jpg',
+          title: 'Double Rhythm',
+          artist: 'Daniel Buren',
+          year: '1991',
+          rule: {
+            "monday": [ 21, 1, 11, 13 ],
+            "tuesday": [ 20, 31, 11, 12 ],
+            "wednesday": [ 19, 30, 10, 21 ],
+            "thursday": [ 25, 5, 16, 26 ],
+            "friday": [ 24, 4, 15, 26 ],
+            "saturday": [ 22, 2, 14, 25 ],
+            "sunday": [ 22, 2, 13, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 377,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/imprints-of-a-no-50-paintbrush-repeated-at-regular-intervals-of-30-cm.jpg',
+          title: 'Imprints of a No. 50 Paintbrush Repeated at Regular Intervals of 30 cm.',
+          artist: 'Niele Toroni',
+          year: '?',
+          rule: {
+            "monday": [ 22, 2, 13, 14 ],
+            "tuesday": [ 21, 1, 11, 13 ],
+            "wednesday": [ 20, 31, 11, 12 ],
+            "thursday": [ 19, 30, 10, 21 ],
+            "friday": [ 25, 5, 16, 26 ],
+            "saturday": [ 24, 4, 15, 26 ],
+            "sunday": [ 22, 2, 14, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 378,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/tue-moi-yasmina-2011.jpg',
+          title: 'Tue moi Yasmina',
+          artist: 'Martial Raysse',
+          year: '2011',
+          rule: {
+            "monday": [ 23, 3, 15, 26 ],
+            "tuesday": [ 23, 3, 14, 15 ],
+            "wednesday": [ 22, 2, 12, 14 ],
+            "thursday": [ 21, 1, 12, 13 ],
+            "friday": [ 20, 31, 11, 22 ],
+            "saturday": [ 26, 6, 17, 27 ],
+            "sunday": [ 25, 5, 16, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 379,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/cham-n-2006.jpg',
+          title: 'Chamán',
+          artist: 'Jorge Camacho',
+          year: '2006',
+          rule: {
+            "monday": [ 25, 5, 16, 27 ],
+            "tuesday": [ 23, 3, 15, 26 ],
+            "wednesday": [ 23, 3, 14, 15 ],
+            "thursday": [ 22, 2, 12, 14 ],
+            "friday": [ 21, 1, 12, 13 ],
+            "saturday": [ 20, 31, 11, 22 ],
+            "sunday": [ 26, 6, 17, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 380,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/untitled-bar-a-00013020.jpg',
+          title: 'Untitled Bar (A 00013020)',
+          artist: 'Andre Cadere',
+          year: '?',
+          rule: {
+            "monday": [ 26, 6, 17, 27 ],
+            "tuesday": [ 25, 5, 16, 27 ],
+            "wednesday": [ 23, 3, 15, 26 ],
+            "thursday": [ 23, 3, 14, 15 ],
+            "friday": [ 22, 2, 12, 14 ],
+            "saturday": [ 21, 1, 12, 13 ],
+            "sunday": [ 20, 31, 11, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
