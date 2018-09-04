@@ -3892,6 +3892,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 217,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2223262309/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://torarecords.bandcamp.com/album/goya',
+          a_string: 'GOYA by Giuseppe Doronzo',
+          rule: {
+            "monday": [ 13, 21, 3, 2 ],
+            "tuesday": [ 12, 20, 2, 1 ],
+            "wednesday": [ 11, 19, 1, 31 ],
+            "thursday": [ 10, 18, 31, 30 ],
+            "saturday": [ 9, 17, 30, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 218,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2730712772/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://excitebiketapes.bandcamp.com/album/crystal-marvelous-fruit',
+          a_string: 'Crystal Marvelous Fruit by Xiphiidae',
+          rule: {
+            "monday": [ 9, 17, 30, 29 ],
+            "tuesday": [ 13, 21, 3, 2 ],
+            "wednesday": [ 12, 20, 2, 1 ],
+            "thursday": [ 11, 19, 1, 31 ],
+            "saturday": [ 10, 18, 31, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 219,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2095715924/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://rawtonkrecords.bandcamp.com/album/static-garbled-dreams',
+          a_string: 'Static Garbled Dreams by Colin Webster / Andrew Lisle / Otto Willberg',
+          rule: {
+            "monday": [ 10, 18, 31, 30 ],
+            "tuesday": [ 9, 17, 30, 29 ],
+            "wednesday": [ 13, 21, 3, 2 ],
+            "thursday": [ 12, 20, 2, 1 ],
+            "saturday": [ 11, 19, 1, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
