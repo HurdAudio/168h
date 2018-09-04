@@ -4000,6 +4000,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 223,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1363883248/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://steadyholiday.bandcamp.com/album/nobodys-watching',
+          a_string: 'Nobody&#39;s Watching by Steady Holiday',
+          rule: {
+            "monday": [ 2, 4, 8, 16 ],
+            "tuesday": [ 1, 3, 7, 15 ],
+            "wednesday": [ 31, 2, 6, 14 ],
+            "thursday": [ 30, 31, 5, 13 ],
+            "saturday": [ 29, 31, 4, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 224,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3003784461/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://thisishellola.bandcamp.com/album/nibiru-tut',
+          a_string: 'Nibiru Tut by Beans',
+          rule: {
+            "monday": [ 30, 1, 5, 13 ],
+            "tuesday": [ 3, 5, 9, 17 ],
+            "wednesday": [ 2, 4, 8, 16 ],
+            "thursday": [ 1, 3, 7, 15 ],
+            "saturday": [ 31, 1, 6, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 225,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=311549248/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://etherschi.bandcamp.com/album/s-t',
+          a_string: 's/t by Ethers',
+          rule: {
+            "monday": [ 31, 1, 6, 14 ],
+            "tuesday": [ 30, 1, 5, 13 ],
+            "wednesday": [ 3, 5, 9, 17 ],
+            "thursday": [ 2, 4, 8, 16 ],
+            "saturday": [ 1, 3, 7, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
