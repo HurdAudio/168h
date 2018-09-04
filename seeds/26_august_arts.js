@@ -7304,6 +7304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 366,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/old-schoolhouse-ryders.jpg',
+          title: 'Old Schoolhouse, Ryders',
+          artist: 'George Luks',
+          year: 'c.1929',
+          rule: {
+            "monday": [ 25, 29, 6, 22 ],
+            "tuesday": [ 24, 27, 5, 21 ],
+            "wednesday": [ 23, 27, 4, 20 ],
+            "thursday": [ 22, 26, 3, 19 ],
+            "friday": [ 21, 23, 2, 18 ],
+            "saturday": [ 20, 23, 1, 17 ],
+            "sunday": [ 19, 22, 31, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 367,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/figures-and-donkeys-also-known-as-fantasy-with-horse.jpg',
+          title: 'Figures and Donkeys (also known as Fantasy with Horse)',
+          artist: 'Maurice Prendergast',
+          year: 'c.1913 - c.1915',
+          rule: {
+            "monday": [ 19, 22, 31, 16 ],
+            "tuesday": [ 25, 29, 6, 22 ],
+            "wednesday": [ 24, 27, 5, 21 ],
+            "thursday": [ 23, 27, 4, 20 ],
+            "friday": [ 22, 26, 3, 19 ],
+            "saturday": [ 21, 23, 2, 18 ],
+            "sunday": [ 20, 23, 1, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 368,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/early-spring-1913.jpg',
+          title: 'The Spring Sun',
+          artist: 'Abraham Manievich',
+          year: '1913',
+          rule: {
+            "monday": [ 20, 23, 1, 17 ],
+            "tuesday": [ 19, 22, 31, 16 ],
+            "wednesday": [ 25, 29, 6, 22 ],
+            "thursday": [ 24, 27, 5, 21 ],
+            "friday": [ 23, 27, 4, 20 ],
+            "saturday": [ 22, 26, 3, 19 ],
+            "sunday": [ 21, 23, 2, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 369,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/pesta-i-trappen-1900.jpg',
+          title: 'Pesta I Trappen',
+          artist: 'Theodor Severin Kittelsen',
+          year: '1900',
+          rule: {
+            "monday": [ 21, 23, 2, 18 ],
+            "tuesday": [ 20, 23, 1, 17 ],
+            "wednesday": [ 19, 22, 31, 16 ],
+            "thursday": [ 25, 29, 6, 22 ],
+            "friday": [ 24, 27, 5, 21 ],
+            "saturday": [ 23, 27, 4, 20 ],
+            "sunday": [ 22, 26, 3, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 370,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/polo-at-lakewood-1910.jpg',
+          title: 'Polo at Lakewood',
+          artist: 'George Bellows',
+          year: '1910',
+          rule: {
+            "monday": [ 22, 26, 3, 19 ],
+            "tuesday": [ 21, 23, 2, 18 ],
+            "wednesday": [ 20, 23, 1, 17 ],
+            "thursday": [ 19, 22, 31, 16 ],
+            "friday": [ 25, 29, 6, 22 ],
+            "saturday": [ 24, 27, 5, 21 ],
+            "sunday": [ 23, 27, 4, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
