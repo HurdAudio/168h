@@ -4108,6 +4108,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 229,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3478549820/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://aguirrerecords.bandcamp.com/album/pass-hidingly-seek',
+          a_string: 'Pass Hidingly Seek by Xiphiidae',
+          rule: {
+            "monday": [ 1, 4, 10, 21 ],
+            "tuesday": [ 29, 7, 9, 20 ],
+            "wednesday": [ 3, 7, 13, 24 ],
+            "thursday": [ 2, 5, 10, 22 ],
+            "saturday": [ 1, 5, 10, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 230,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3241180374/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://aguirrerecords.bandcamp.com/album/quaking-myth',
+          a_string: 'Quaking Myth by Xiphiidae',
+          rule: {
+            "monday": [ 1, 5, 10, 22 ],
+            "tuesday": [ 1, 4, 10, 21 ],
+            "wednesday": [ 29, 7, 9, 20 ],
+            "thursday": [ 3, 7, 13, 24 ],
+            "saturday": [ 2, 5, 10, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 231,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1822968555/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://whitelabrecs.bandcamp.com/album/mirage-reworks',
+          a_string: 'mirage (reworks) by dziadosz/mreńca',
+          rule: {
+            "monday": [ 3, 6, 11, 23 ],
+            "tuesday": [ 2, 6, 11, 23 ],
+            "wednesday": [ 2, 5, 11, 22 ],
+            "thursday": [ 30, 8, 10, 21 ],
+            "saturday": [ 4, 8, 14, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
