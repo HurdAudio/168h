@@ -6904,6 +6904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 346,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_idiot_movie_poster.jpg',
+          title: '"The idiot" movie (film) poster, directed by I. Pyryev ',
+          artist: 'M.Hazanovsky',
+          year: '1958',
+          rule: {
+            "monday": [ 28, 29, 9, 13 ],
+            "tuesday": [ 24, 4, 15, 19 ],
+            "wednesday": [ 23, 3, 14, 18 ],
+            "thursday": [ 22, 2, 13, 17 ],
+            "friday": [ 21, 1, 12, 16 ],
+            "saturday": [ 20, 31, 11, 15 ],
+            "sunday": [ 19, 30, 31, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 347,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_cinsovpost_00011.jpg',
+          title: 'M.Hazanovsky',
+          artist: 'N.Homov',
+          year: '1956',
+          rule: {
+            "monday": [ 19, 30, 31, 14 ],
+            "tuesday": [ 28, 29, 9, 13 ],
+            "wednesday": [ 24, 4, 15, 19 ],
+            "thursday": [ 23, 3, 14, 18 ],
+            "friday": [ 22, 2, 13, 17 ],
+            "saturday": [ 21, 1, 12, 16 ],
+            "sunday": [ 20, 31, 11, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 348,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_cinsovpost_00008.jpg',
+          title: '"Kuban Cossacks" movie poster, directed by I. Pyryev',
+          artist: 'B.Zelensky',
+          year: '1950',
+          rule: {
+            "monday": [ 20, 31, 11, 15 ],
+            "tuesday": [ 19, 30, 31, 14 ],
+            "wednesday": [ 28, 29, 9, 13 ],
+            "thursday": [ 24, 4, 15, 19 ],
+            "friday": [ 23, 3, 14, 18 ],
+            "saturday": [ 22, 2, 13, 17 ],
+            "sunday": [ 21, 1, 12, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 349,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_cultsovpost_00014.jpg',
+          title: 'Tours in Moscow',
+          artist: 'A. Chernomordik',
+          year: '1957',
+          rule: {
+            "monday": [ 21, 1, 12, 16 ],
+            "tuesday": [ 20, 31, 11, 15 ],
+            "wednesday": [ 19, 30, 31, 14 ],
+            "thursday": [ 28, 29, 9, 13 ],
+            "friday": [ 24, 4, 15, 19 ],
+            "saturday": [ 23, 3, 14, 18 ],
+            "sunday": [ 22, 2, 13, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 350,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_cultsovpost_00012.jpg',
+          title: 'Unusual Concert',
+          artist: 'V.Andrievich',
+          year: '1952',
+          rule: {
+            "monday": [ 23, 3, 14, 18 ],
+            "tuesday": [ 22, 2, 13, 17 ],
+            "wednesday": [ 21, 1, 12, 16 ],
+            "thursday": [ 20, 31, 1, 15 ],
+            "friday": [ 29, 30, 10, 14 ],
+            "saturday": [ 25, 5, 16, 20 ],
+            "sunday": [ 24, 4, 15, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
