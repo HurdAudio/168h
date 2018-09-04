@@ -3676,6 +3676,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 205,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=744294917/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://marecognitum.bandcamp.com/album/luminiferous-aether',
+          a_string: 'Luminiferous Aether by Mare Cognitum',
+          rule: {
+            "monday": [ 5, 15, 25, 28 ],
+            "tuesday": [ 4, 14, 25, 27 ],
+            "wednesday": [ 3, 13, 24, 26 ],
+            "thursday": [ 7, 17, 27, 30 ],
+            "saturday": [ 6, 16, 26, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 206,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=855264640/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://selfmutilationservices.com/album/echoes-from-eta-carinae',
+          a_string: 'Echoes From Eta Carinae by Alrakis',
+          rule: {
+            "monday": [ 6, 16, 26, 29 ],
+            "tuesday": [ 5, 15, 25, 28 ],
+            "wednesday": [ 4, 14, 25, 27 ],
+            "thursday": [ 3, 13, 24, 26 ],
+            "saturday": [ 7, 17, 27, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 207,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1828148304/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://i-voidhangerrecords.bandcamp.com/album/shards-of-silver-fade',
+          a_string: 'Shards Of Silver Fade by MIDNIGHT ODYSSEY',
+          rule: {
+            "monday": [ 7, 17, 27, 30 ],
+            "tuesday": [ 6, 16, 26, 29 ],
+            "wednesday": [ 5, 15, 25, 28 ],
+            "thursday": [ 4, 14, 25, 27 ],
+            "saturday": [ 3, 13, 24, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
