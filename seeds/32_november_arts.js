@@ -6704,6 +6704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 336,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/17th-summer-1974.jpg',
+          title: '17th Summer',
+          artist: 'Anne Truitt',
+          year: '1974',
+          rule: {
+            "monday": [ 24, 28, 5, 9 ],
+            "tuesday": [ 23, 26, 3, 8 ],
+            "wednesday": [ 22, 26, 3, 8 ],
+            "thursday": [ 21, 26, 2, 7 ],
+            "friday": [ 20, 25, 1, 8 ],
+            "saturday": [ 26, 1, 7, 12 ],
+            "sunday": [ 25, 30, 5, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 337,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/untitled-1974 (1).jpg',
+          title: 'Untitled',
+          artist: 'Tony DeLap',
+          year: '1974',
+          rule: {
+            "monday": [ 25, 30, 5, 11 ],
+            "tuesday": [ 24, 28, 5, 9 ],
+            "wednesday": [ 23, 26, 3, 8 ],
+            "thursday": [ 22, 26, 3, 8 ],
+            "friday": [ 21, 26, 2, 7 ],
+            "saturday": [ 20, 25, 1, 8 ],
+            "sunday": [ 26, 1, 7, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 338,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/the-seasons-1975.jpg',
+          title: 'The Seasons',
+          artist: 'Brice Marden',
+          year: '1974 - 1975',
+          rule: {
+            "monday": [ 26, 1, 7, 12 ],
+            "tuesday": [ 25, 30, 5, 11 ],
+            "wednesday": [ 24, 28, 5, 9 ],
+            "thursday": [ 23, 26, 3, 8 ],
+            "friday": [ 22, 26, 3, 8 ],
+            "saturday": [ 21, 26, 2, 7 ],
+            "sunday": [ 20, 25, 1, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 339,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/untitled-0-1975.jpg',
+          title: 'Untitled #0',
+          artist: 'Agnes Martin',
+          year: '1975',
+          rule: {
+            "monday": [ 20, 25, 1, 8 ],
+            "tuesday": [ 26, 1, 7, 12 ],
+            "wednesday": [ 25, 30, 5, 11 ],
+            "thursday": [ 24, 28, 5, 9 ],
+            "friday": [ 23, 26, 3, 8 ],
+            "saturday": [ 22, 26, 3, 8 ],
+            "sunday": [ 21, 26, 2, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 340,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/six-round-wooden-bars-1975.jpg',
+          title: 'Six Round Wooden Bars',
+          artist: 'Andre Cadere',
+          year: '1975',
+          rule: {
+            "monday": [ 21, 26, 2, 7 ],
+            "tuesday": [ 20, 25, 1, 8 ],
+            "wednesday": [ 26, 1, 7, 12 ],
+            "thursday": [ 25, 30, 5, 11 ],
+            "friday": [ 24, 28, 5, 9 ],
+            "saturday": [ 23, 26, 3, 8 ],
+            "sunday": [ 22, 26, 3, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
