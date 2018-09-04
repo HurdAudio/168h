@@ -3784,6 +3784,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 211,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1708285711/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://billlaswell.bandcamp.com/album/seven-souls',
+          a_string: 'Seven Souls by Material',
+          rule: {
+            "monday": [ 3, 23, 1, 25 ],
+            "tuesday": [ 2, 22, 30, 25 ],
+            "wednesday": [ 1, 21, 29, 23 ],
+            "thursday": [ 30, 20, 28, 22 ],
+            "saturday": [ 4, 24, 2, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 212,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=712605690/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://billlaswell.bandcamp.com/album/imaginary-cuba',
+          a_string: 'Imaginary Cuba by Bill Laswell',
+          rule: {
+            "monday": [ 4, 24, 2, 26 ],
+            "tuesday": [ 3, 23, 1, 25 ],
+            "wednesday": [ 2, 22, 30, 25 ],
+            "thursday": [ 1, 21, 29, 23 ],
+            "saturday": [ 30, 20, 28, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 213,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=626832581/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://billlaswell.bandcamp.com/album/hear-no-evil-bill-laswell',
+          a_string: 'Hear No Evil - Bill Laswell by Bill Laswell',
+          rule: {
+            "monday": [ 30, 20, 28, 22 ],
+            "tuesday": [ 4, 24, 2, 26 ],
+            "wednesday": [ 3, 23, 1, 25 ],
+            "thursday": [ 2, 22, 30, 25 ],
+            "saturday": [ 1, 21, 29, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
