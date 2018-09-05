@@ -8304,6 +8304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 416,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/untitled-2007.jpg',
+          title: 'Untitled',
+          artist: 'Harriet Korman',
+          year: '2007',
+          rule: {
+            "monday": [ 29, 7, 17, 25 ],
+            "tuesday": [ 28, 7, 15, 25 ],
+            "wednesday": [ 28, 6, 14, 24 ],
+            "thursday": [ 26, 5, 13, 23 ],
+            "friday": [ 25, 4, 12, 22 ],
+            "saturday": [ 24, 3, 11, 21 ],
+            "sunday": [ 23, 2, 11, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 417,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/mlr-1992-1.jpg',
+          title: 'MLR',
+          artist: 'Isa Genzken',
+          year: '1992',
+          rule: {
+            "monday": [ 23, 2, 11, 20 ],
+            "tuesday": [ 29, 7, 17, 25 ],
+            "wednesday": [ 28, 7, 15, 25 ],
+            "thursday": [ 28, 6, 14, 24 ],
+            "friday": [ 26, 5, 13, 23 ],
+            "saturday": [ 25, 4, 12, 22 ],
+            "sunday": [ 24, 3, 11, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 418,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/p77395-10.jpg',
+          title: '[no title]',
+          artist: 'Jenny Holzer',
+          year: '1979 - 1982',
+          rule: {
+            "monday": [ 24, 3, 11, 21 ],
+            "tuesday": [ 23, 2, 11, 20 ],
+            "wednesday": [ 29, 7, 17, 25 ],
+            "thursday": [ 28, 7, 15, 25 ],
+            "friday": [ 28, 6, 14, 24 ],
+            "saturday": [ 26, 5, 13, 23 ],
+            "sunday": [ 25, 4, 12, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 419,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/green-hedgerow-acrylic-canvas-40x40cm-website.JPG',
+          title: 'Green Hedgerow',
+          artist: 'Giuliana Lazzerini',
+          year: '2017',
+          rule: {
+            "monday": [ 25, 4, 12, 22 ],
+            "tuesday": [ 24, 3, 11, 21 ],
+            "wednesday": [ 23, 2, 11, 20 ],
+            "thursday": [ 29, 7, 17, 25 ],
+            "friday": [ 28, 7, 15, 25 ],
+            "saturday": [ 28, 6, 14, 24 ],
+            "sunday": [ 26, 5, 13, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 420,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/blind-children-feel-an-elephant.jpg',
+          title: 'Blind children feel an elephant',
+          artist: 'Sue Coe',
+          year: '?',
+          rule: {
+            "monday": [ 27, 6, 14, 24 ],
+            "tuesday": [ 26, 5, 13, 23 ],
+            "wednesday": [ 25, 4, 12, 22 ],
+            "thursday": [ 24, 3, 12, 21 ],
+            "friday": [ 30, 8, 18, 26 ],
+            "saturday": [ 29, 8, 16, 26 ],
+            "sunday": [ 29, 7, 15, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
