@@ -8104,6 +8104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 406,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/0000250836.JPG',
+          title: 'Miami Marlins Mascots',
+          artist: 'unknown artist',
+          year: '2015',
+          rule: {
+            "monday": [ 12, 2, 8, 14 ],
+            "tuesday": [ 27, 30, 8, 14 ],
+            "wednesday": [ 26, 30, 15, 13 ],
+            "thursday": [ 24, 29, 5, 11 ],
+            "friday": [ 24, 29, 5, 11 ],
+            "saturday": [ 23, 28, 4, 10 ],
+            "sunday": [ 28, 4, 9, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 407,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/usa-today-9273525.0.jpg',
+          title: 'Dee Gordon',
+          artist: 'Gary A. Vasquez',
+          year: '2017',
+          rule: {
+            "monday": [ 28, 4, 9, 16 ],
+            "tuesday": [ 12, 2, 8, 14 ],
+            "wednesday": [ 27, 30, 8, 14 ],
+            "thursday": [ 26, 30, 15, 13 ],
+            "friday": [ 24, 29, 5, 11 ],
+            "saturday": [ 24, 29, 5, 11 ],
+            "sunday": [ 23, 28, 4, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 408,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/405d7a33422745.5605dbae74761.jpg',
+          title: 'Miami Marlins Brand Identity',
+          artist: 'Behance',
+          year: '2012',
+          rule: {
+            "monday": [ 23, 28, 4, 10 ],
+            "tuesday": [ 28, 4, 9, 16 ],
+            "wednesday": [ 12, 2, 8, 14 ],
+            "thursday": [ 27, 30, 8, 14 ],
+            "friday": [ 26, 30, 15, 13 ],
+            "saturday": [ 24, 29, 5, 11 ],
+            "sunday": [ 24, 29, 5, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 409,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/marlins16.jpeg',
+          title: 'Fans at Marlins Park in Little Havana pay tribute in September 2016 to their idol, Miami Marlins pitcher Jose Fernandez, who died in a boat accident.',
+          artist: 'Pedro Portal',
+          year: '2016',
+          rule: {
+            "monday": [ 24, 29, 5, 11 ],
+            "tuesday": [ 23, 28, 4, 10 ],
+            "wednesday": [ 28, 4, 9, 16 ],
+            "thursday": [ 12, 2, 8, 14 ],
+            "friday": [ 27, 30, 8, 14 ],
+            "saturday": [ 26, 30, 15, 13 ],
+            "sunday": [ 24, 29, 5, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 410,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/fced7864-a226-48a3-a816-635dcdad555f.jpg',
+          title: 'Miami Marlins\' Ichiro Suzuki ',
+          artist: 'Lynne Sladky',
+          year: '2017',
+          rule: {
+            "monday": [ 24, 29, 5, 11 ],
+            "tuesday": [ 24, 29, 5, 11 ],
+            "wednesday": [ 23, 28, 4, 10 ],
+            "thursday": [ 28, 4, 9, 16 ],
+            "friday": [ 12, 2, 8, 14 ],
+            "saturday": [ 27, 30, 8, 14 ],
+            "sunday": [ 26, 30, 15, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
