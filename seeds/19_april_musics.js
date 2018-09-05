@@ -4324,6 +4324,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 241,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=773856115/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://music.beatsnpieces.net/album/ten',
+          a_string: 'ten by Beats &amp; Pieces Big Band',
+          rule: {
+            "monday": [ 7, 15, 27, 2 ],
+            "tuesday": [ 6, 14, 26, 1 ],
+            "wednesday": [ 5, 13, 25, 30 ],
+            "thursday": [ 4, 12, 24, 29 ],
+            "saturday": [ 8, 16, 28, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 242,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3372724650/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://outsideinmusic.bandcamp.com/album/climbing-trees',
+          a_string: 'Climbing Trees by Rafal Sarnecki',
+          rule: {
+            "monday": [ 8, 16, 28, 3 ],
+            "tuesday": [ 7, 15, 27, 2 ],
+            "wednesday": [ 6, 14, 26, 1 ],
+            "thursday": [ 5, 13, 25, 30 ],
+            "saturday": [ 4, 12, 24, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 243,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3204506686/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://buggewesseltoftprinsthomas.bandcamp.com/album/bugge-wesseltoft-prins-thomas',
+          a_string: 'Bugge Wesseltoft &amp; Prins Thomas by Bugge Wesseltoft &amp; Prins Thomas',
+          rule: {
+            "monday": [ 4, 12, 24, 29 ],
+            "tuesday": [ 8, 16, 28, 3 ],
+            "wednesday": [ 7, 15, 27, 2 ],
+            "thursday": [ 6, 14, 26, 1 ],
+            "saturday": [ 5, 13, 25, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
