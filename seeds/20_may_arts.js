@@ -7904,6 +7904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 396,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/in-the-omnibus-1864.jpg',
+          title: 'In the Omnibus',
+          artist: 'Honore Daumier',
+          year: '1864',
+          rule: {
+            "monday": [ 16, 26, 5, 13 ],
+            "tuesday": [ 14, 23, 4, 13 ],
+            "wednesday": [ 24, 5, 15, 23 ],
+            "thursday": [ 24, 4, 13, 23 ],
+            "friday": [ 22, 1, 9, 21 ],
+            "saturday": [ 19, 30, 9, 29 ],
+            "sunday": [ 18, 29, 7, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 397,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/returning-from-the-market.jpg',
+          title: 'Returning from the market',
+          artist: 'Honore Daumier',
+          year: '1870',
+          rule: {
+            "monday": [ 18, 29, 7, 17 ],
+            "tuesday": [ 16, 26, 5, 13 ],
+            "wednesday": [ 14, 23, 4, 13 ],
+            "thursday": [ 24, 5, 15, 23 ],
+            "friday": [ 24, 4, 13, 23 ],
+            "saturday": [ 22, 1, 9, 21 ],
+            "sunday": [ 19, 30, 9, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 398,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/fighting-bricklayer.jpg',
+          title: 'Fighting Bricklayer',
+          artist: 'Honore Daumier',
+          year: '?',
+          rule: {
+            "monday": [ 19, 30, 9, 29 ],
+            "tuesday": [ 18, 29, 7, 17 ],
+            "wednesday": [ 16, 26, 5, 13 ],
+            "thursday": [ 14, 23, 4, 13 ],
+            "friday": [ 24, 5, 15, 23 ],
+            "saturday": [ 24, 4, 13, 23 ],
+            "sunday": [ 22, 1, 9, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 399,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/the-butcher.jpg',
+          title: 'The Butcher',
+          artist: 'Honore Daumier',
+          year: '?',
+          rule: {
+            "monday": [ 23, 2, 10, 22 ],
+            "tuesday": [ 20, 31, 10, 30 ],
+            "wednesday": [ 19, 30, 8, 18 ],
+            "thursday": [ 17, 27, 6, 14 ],
+            "friday": [ 15, 24, 5, 14 ],
+            "saturday": [ 25, 6, 16, 24 ],
+            "sunday": [ 25, 5, 14, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 400,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/diggers.jpg',
+          title: 'Diggers',
+          artist: 'Nicholas Roerich',
+          year: 'c.1900',
+          rule: {
+            "monday": [ 25, 5, 14, 24 ],
+            "tuesday": [ 23, 2, 10, 22 ],
+            "wednesday": [ 20, 31, 10, 30 ],
+            "thursday": [ 19, 30, 8, 18 ],
+            "friday": [ 17, 27, 6, 14 ],
+            "saturday": [ 15, 24, 5, 14 ],
+            "sunday": [ 25, 6, 16, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
