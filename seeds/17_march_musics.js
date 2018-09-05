@@ -4432,6 +4432,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 247,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1216917825/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://heavenly.bandcamp.com/album/atta-girl',
+          a_string: 'Atta Girl by Heavenly',
+          rule: {
+            "monday": [ 10, 16, 22, 30 ],
+            "tuesday": [ 9, 15, 21, 29 ],
+            "wednesday": [ 8, 14, 20, 29 ],
+            "thursday": [ 6, 13, 19, 27 ],
+            "saturday": [ 6, 12, 18, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 248,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2114842515/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://risarubin.bandcamp.com/album/im-reliving-the-end-over-and-over-and-over-again-and-its-only-the-beginning',
+          a_string: 'I&#39;m Reliving the End Over and Over and Over Again and Its Only the Beginning by Risa Rubin',
+          rule: {
+            "monday": [ 6, 12, 18, 26 ],
+            "tuesday": [ 10, 16, 22, 30 ],
+            "wednesday": [ 9, 15, 21, 29 ],
+            "thursday": [ 8, 14, 20, 29 ],
+            "saturday": [ 6, 13, 19, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 249,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1505537099/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://nenehcherry.bandcamp.com/album/the-cherry-thing',
+          a_string: 'The Cherry Thing by Neneh Cherry &amp; The Thing',
+          rule: {
+            "monday": [ 6, 13, 19, 27 ],
+            "tuesday": [ 6, 12, 18, 26 ],
+            "wednesday": [ 10, 16, 22, 30 ],
+            "thursday": [ 9, 15, 21, 29 ],
+            "saturday": [ 8, 14, 20, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
