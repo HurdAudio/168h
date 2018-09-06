@@ -8504,6 +8504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 426,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/windows_2_the_soul_by_annettejimerson-d5czyev.jpg',
+          title: 'Windows 2 the Soul',
+          artist: 'Annette P. Jimerson',
+          year: '2012',
+          rule: {
+            "monday": [ 8, 16, 24, 3 ],
+            "tuesday": [ 10, 20, 26, 3 ],
+            "wednesday": [ 12, 20, 28, 9 ],
+            "thursday": [ 12, 22, 18, 8 ],
+            "friday": [ 2, 10, 18, 26 ],
+            "saturday": [ 3, 12, 20, 28 ],
+            "sunday": [ 9, 14, 20, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 427,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/SAAM-1983.95.55_1.jpg',
+          title: 'Portrait of Adelia Ellender',
+          artist: 'Joshua Johnson',
+          year: 'c.1803 - c.1805',
+          rule: {
+            "monday": [ 10, 15, 21, 2 ],
+            "tuesday": [ 9, 17, 25, 4 ],
+            "wednesday": [ 11, 21, 27, 4 ],
+            "thursday": [ 13, 21, 29, 10 ],
+            "friday": [ 13, 23, 19, 9 ],
+            "saturday": [ 3, 11, 19, 27 ],
+            "sunday": [ 4, 13, 21, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 428,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/3480866852_6082d8e659_b.jpg',
+          title: 'Brothers',
+          artist: 'Malvin Gray Johnson',
+          year: '1934',
+          rule: {
+            "monday": [ 4, 13, 21, 29 ],
+            "tuesday": [ 10, 15, 21, 2 ],
+            "wednesday": [ 9, 17, 25, 4 ],
+            "thursday": [ 11, 21, 27, 4 ],
+            "friday": [ 13, 21, 29, 10 ],
+            "saturday": [ 13, 23, 19, 9 ],
+            "sunday": [ 3, 11, 19, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 429,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/TripleConsciousness_WEB400x220.jpg',
+          title: 'Triple Consciousness',
+          artist: 'Rashid Johnson',
+          year: '2009',
+          rule: {
+            "monday": [ 3, 11, 19, 27 ],
+            "tuesday": [ 4, 13, 21, 29 ],
+            "wednesday": [ 10, 15, 21, 2 ],
+            "thursday": [ 9, 17, 25, 4 ],
+            "friday": [ 11, 21, 27, 4 ],
+            "saturday": [ 13, 21, 29, 10 ],
+            "sunday": [ 13, 23, 19, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 430,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/25281296477_6d408612a9_b.jpg',
+          title: 'Negro Woman',
+          artist: 'Sargent Claude Johnson',
+          year: '1935',
+          rule: {
+            "monday": [ 13, 23, 19, 9 ],
+            "tuesday": [ 3, 11, 19, 27 ],
+            "wednesday": [ 4, 13, 21, 29 ],
+            "thursday": [ 10, 15, 21, 2 ],
+            "friday": [ 9, 17, 25, 4 ],
+            "saturday": [ 11, 21, 27, 4 ],
+            "sunday": [ 13, 21, 29, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
