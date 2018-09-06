@@ -4648,6 +4648,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 259,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=436157870/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://othermindsrecords.bandcamp.com/album/drones',
+          a_string: 'Drones by Alden Jenks',
+          rule: {
+            "monday": [ 16, 23, 24, 25 ],
+            "tuesday": [ 15, 21, 22, 24 ],
+            "wednesday": [ 14, 21, 22, 23 ],
+            "thursday": [ 13, 19, 20, 21 ],
+            "saturday": [ 12, 19, 20, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 260,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=246306780/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://othermindsrecords.bandcamp.com/album/angels-cats-shackles',
+          a_string: 'Angels, Cats &amp; Shackles by Phillip Bimstein',
+          rule: {
+            "monday": [ 12, 19, 20, 21 ],
+            "tuesday": [ 16, 23, 24, 25 ],
+            "wednesday": [ 15, 21, 22, 24 ],
+            "thursday": [ 14, 21, 22, 23 ],
+            "saturday": [ 13, 19, 20, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 261,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=895643885/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://othermindsrecords.bandcamp.com/album/serge-works',
+          a_string: 'Serge Works by Tom Djll',
+          rule: {
+            "monday": [ 13, 19, 20, 21 ],
+            "tuesday": [ 12, 19, 20, 21 ],
+            "wednesday": [ 16, 23, 24, 25 ],
+            "thursday": [ 15, 21, 22, 24 ],
+            "saturday": [ 14, 21, 22, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
