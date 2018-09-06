@@ -8704,6 +8704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 436,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/induzione-figurale-del-rettangolo-in-diagonale-sfalsata-1977.jpg',
+          title: 'Induzione figurale (del rettangolo in diagonale) sfalsata',
+          artist: 'Mario Ballocco',
+          year: '1977',
+          rule: {
+            "monday": [ 3, 5, 28, 17 ],
+            "tuesday": [ 8, 6, 29, 1 ],
+            "wednesday": [ 8, 9, 31, 4 ],
+            "thursday": [ 11, 13, 14, 16 ],
+            "friday": [ 13, 15, 19, 22 ],
+            "saturday": [ 15, 17, 18, 19 ],
+            "sunday": [ 31, 1, 12, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 437,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/vista-1963-1.jpg',
+          title: 'Vista',
+          artist: 'Richard Smith',
+          year: '1963',
+          rule: {
+            "monday": [ 31, 1, 12, 4 ],
+            "tuesday": [ 3, 5, 28, 17 ],
+            "wednesday": [ 8, 6, 29, 1 ],
+            "thursday": [ 8, 9, 31, 4 ],
+            "friday": [ 11, 13, 14, 16 ],
+            "saturday": [ 13, 15, 19, 22 ],
+            "sunday": [ 15, 17, 18, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 438,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/calan-1975.jpg',
+          title: 'Calan',
+          artist: 'Mario Prassinos',
+          year: '1975',
+          rule: {
+            "monday": [ 15, 17, 18, 19 ],
+            "tuesday": [ 31, 1, 12, 4 ],
+            "wednesday": [ 3, 5, 28, 17 ],
+            "thursday": [ 8, 6, 29, 1 ],
+            "friday": [ 8, 9, 31, 4 ],
+            "saturday": [ 11, 13, 14, 16 ],
+            "sunday": [ 13, 15, 19, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 439,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/crossfield-i-1968.jpg',
+          title: 'Crossfield I',
+          artist: 'Jack Tworkov',
+          year: '1968',
+          rule: {
+            "monday": [ 13, 15, 19, 22 ],
+            "tuesday": [ 15, 17, 18, 19 ],
+            "wednesday": [ 31, 1, 12, 4 ],
+            "thursday": [ 3, 5, 28, 17 ],
+            "friday": [ 8, 6, 29, 1 ],
+            "saturday": [ 8, 9, 31, 4 ],
+            "sunday": [ 11, 13, 14, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 440,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/po-me-no-7-landscape-of-may-1948.jpg',
+          title: 'Poème No. 7: Landscape of May',
+          artist: 'Koshiro Onchi',
+          year: '1948',
+          rule: {
+            "monday": [ 11, 13, 14, 16 ],
+            "tuesday": [ 13, 15, 19, 22 ],
+            "wednesday": [ 15, 17, 18, 19 ],
+            "thursday": [ 31, 1, 12, 4 ],
+            "friday": [ 3, 5, 28, 17 ],
+            "saturday": [ 8, 6, 29, 1 ],
+            "sunday": [ 8, 9, 31, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
