@@ -4540,6 +4540,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 253,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1571021980/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://fatbeatsrecords.bandcamp.com/album/immortal-titans',
+          a_string: 'Immortal Titans by Tragedy Khadafi &amp; BP',
+          rule: {
+            "monday": [ 25, 19, 21, 27 ],
+            "tuesday": [ 26, 20, 22, 28 ],
+            "wednesday": [ 9, 13, 15, 19 ],
+            "thursday": [ 12, 15, 17, 21 ],
+            "saturday": [ 23, 17, 19, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 254,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3820222414/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://nostrumgrocers.bandcamp.com/album/nostrum-grocers',
+          a_string: 'Nostrum Grocers by Nostrum Grocers',
+          rule: {
+            "monday": [ 23, 17, 19, 21 ],
+            "tuesday": [ 25, 19, 21, 27 ],
+            "wednesday": [ 26, 20, 22, 28 ],
+            "thursday": [ 9, 13, 15, 19 ],
+            "saturday": [ 12, 15, 17, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 255,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4090872437/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://wearethekarmakids.bandcamp.com/album/floating-polygons',
+          a_string: 'Floating Polygons by Googie',
+          rule: {
+            "monday": [ 12, 15, 17, 21 ],
+            "tuesday": [ 23, 17, 19, 21 ],
+            "wednesday": [ 25, 19, 21, 27 ],
+            "thursday": [ 26, 20, 22, 28 ],
+            "saturday": [ 9, 13, 15, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
