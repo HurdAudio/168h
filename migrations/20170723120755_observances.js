@@ -3,7 +3,7 @@ exports.up = function(knex, Promise) {
   return knex.schema.createTable('observances', function(table) {
     table.increments().primary();
     table.integer('user_id').notNullable().defaultTo(1).references('id').inTable('users').onDelete('CASCADE').index();
-    table.string('name').defaultTo(null);
+    table.text('name').defaultTo(null);
     table.string('color').notNullable().defaultTo('#ffffff');
     table.string('picture').defaultTo(null);
     table.date('day_of').notNullable().defaultTo('1970-01-01');

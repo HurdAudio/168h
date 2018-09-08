@@ -10196,6 +10196,39 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 654,
+          user_id: 1,
+          name: 'Jerry Hunt (composer) born 1943',
+          color: '#010101',
+          picture: './img/musicians/A-216595-1183312937.jpg',
+          day_of: new Date ('1943-11-30T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: true,
+          override_content: {
+            "sources": [ 'bandcamp' ],
+            "src_strings": [ 'https://bandcamp.com/EmbeddedPlayer/album=2531114297/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/' ],
+            "href_strings": [ 'http://othermindsrecords.bandcamp.com/album/from-ground' ],
+            "a_strings": [ 'from &quot;Ground&quot; by Jerry Hunt' ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 655,
+          user_id: 1,
+          name: 'The world ended on this day at 7:00AM in 1998 according to the Church of the SubGenius. Godlike aliens from planet X ruptured all the dues-paying SubGenii to a never-ending tour of the universe, while converting Planet Earth into the intergalactic equivalent of a greasy-spoon truck-stop.',
+          color: '#D5C12C',
+          picture: './img/doomsday/450px-The_Head_Shop.jpg',
+          day_of: new Date ('1998-07-05T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
