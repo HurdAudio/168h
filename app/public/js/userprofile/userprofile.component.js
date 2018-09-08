@@ -270,6 +270,19 @@
       vm.cancelOccasionInvite = cancelOccasionInvite;
       vm.userEditTaskShareComment = userEditTaskShareComment;
       vm.userEditTaskShareCommentCompleted = userEditTaskShareCommentCompleted;
+      vm.deleteTaskShare = deleteTaskShare;
+
+      function deleteTaskShare(taskId) {
+        $http.delete(`/task_shares/${taskId}`)
+        .then(taskData=>{
+          let task = taskData.data;
+          for (let i = 0; i < vm.activeTaskShares.length; i++) {
+            if (vm.activeTaskShares[i].id === taskId) {
+              vm.activeTaskShares.splice(i, 1);
+            }
+          }
+        });
+      }
 
       function userEditTaskShareCommentCompleted(commentId) {
         let editor = document.getElementById('thisIsTheTaskShareCommentEditor' + commentId);
@@ -15461,6 +15474,7 @@
                 if (userTaskShares[j].share_associate_id !== currentUserId) {
                   document.getElementById('taskSharer' + vm.activeTaskShares[j].id).setAttribute("style", "display: initial;");
                   document.getElementById('taskSharee' + vm.activeTaskShares[j].id).setAttribute("style", "display: none;");
+                  document.getElementById('thisIsTaskShareDeleteDiv' + userTaskShares[j].id).setAttribute("style", "display: initial;");
                   if (userTaskShares[j].responded) {
                     document.getElementById('taskAcceptDecline' + vm.activeTaskShares[j].id).setAttribute("style", "display: none;");
                     if (userTaskShares[j].accepted) {
@@ -15479,6 +15493,7 @@
                   document.getElementById('taskSharer' + vm.activeTaskShares[j].id).setAttribute("style", "display: none;");
                   document.getElementById('taskSharee' + vm.activeTaskShares[j].id).setAttribute("style", "display: initial;");
                   document.getElementById('taskAcceptDecline' + vm.activeTaskShares[j].id).setAttribute("style", "display: none;");
+                  document.getElementById('thisIsTaskShareDeleteDiv' + userTaskShares[j].id).setAttribute("style", "display: none;");
                   if (userTaskShares[j].responded) {
                     if (userTaskShares[j].accepted) {
 

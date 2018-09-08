@@ -5502,6 +5502,11 @@
           <div class="whoScheduledMe">
             <main ng-repeat="task in $ctrl.activeTaskShares | orderBy : $ctrl.sortBy">
 
+            <div id="thisIsTaskShareDeleteDiv{{task.id}}" class="profileDeleteOption">
+
+              <a class="btn" href="#" ng-click="$ctrl.deleteTaskShare(task.id)">delete</a><br><br>
+            </div>
+
 
               <img src="{{task.task_pic}}"><br>
               <p id="taskSharer{{task.id}}">{{task.sharerName}} has shared the following task with you on {{task.cleanDate}}</p>
