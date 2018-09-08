@@ -5540,7 +5540,18 @@
                   <img src="{{comment.commenterImg}}"><br><br><br>
                   <br><br><br><p>From: {{comment.commenterName}} <br>
                   on {{comment.cleanDate}}</p><br><br>
-                  <h3>{{comment.comment}}</h3><br>
+                  <div id="thisIsTheTaskShareComment{{comment.id}}">
+                    <h3 id="taskCommentComment{{comment.id}}">{{comment.comment}}</h3>
+                  </div><br>
+
+                  <textarea id="thisIsTheTaskShareCommentEditor{{comment.id}}" class="pure-input-1" rows="5"></textarea>
+                  <div class="thisIsMessageEditDoneDiv" id="thisIsTaskCommentEditDoneDiv{{comment.id}}"><a class="btn" id="thisIsTheTaskShareCommentEditorDoneButton{{comment.id}}" href="#" ng-click="$ctrl.userEditTaskShareCommentCompleted(comment.id)">done</a></div>
+
+                  <div id="editDeleteTaskShareCommentDiv{{comment.id}}" class="messageEditDelete">
+                    <a class="btn" href="#" ng-click="$ctrl.userEditTaskShareComment(comment.id)">edit</a>
+                    <a class="btn" href="#" ng-click="$ctrl.userDeleteTaskShareComment(comment.id, occasion.id)">delete</a>
+                  </div><br><br><br><br>
+
                 </main>
               </div>
 

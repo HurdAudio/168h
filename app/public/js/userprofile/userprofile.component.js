@@ -268,6 +268,39 @@
       vm.acceptTask = acceptTask;
       vm.userDeleteOccasionShareComment = userDeleteOccasionShareComment;
       vm.cancelOccasionInvite = cancelOccasionInvite;
+      vm.userEditTaskShareComment = userEditTaskShareComment;
+      vm.userEditTaskShareCommentCompleted = userEditTaskShareCommentCompleted;
+
+      function userEditTaskShareCommentCompleted(commentId) {
+        let editor = document.getElementById('thisIsTheTaskShareCommentEditor' + commentId);
+        let commentSpot = document.getElementById('thisIsTheTaskShareComment' + commentId);
+        let subObj = {
+          comment: editor.value
+        };
+        $http.patch(`/task_share_comments/${commentId}`, subObj)
+        .then(commentData=>{
+          let comment = commentData.data;
+          commentSpot.setAttribute("style", "visibility: visible;");
+          document.getElementById('taskCommentComment' + commentId).innerHTML = comment.comment;
+          editor.setAttribute("style", "display: none;");
+          document.getElementById('thisIsTaskCommentEditDoneDiv' + commentId).setAttribute("style", "display: none;");
+          document.getElementById('editDeleteTaskShareCommentDiv' + commentId).setAttribute("style", "display: initial;");
+        });
+      }
+
+      function userEditTaskShareComment(commentId) {
+        let editor = document.getElementById('thisIsTheTaskShareCommentEditor' + commentId);
+        document.getElementById('thisIsTheTaskShareComment' + commentId).setAttribute("style", "visibility: hidden;");
+        $http.get(`/task_share_comments/${commentId}`)
+        .then(commentData=>{
+          let comment = commentData.data;
+          editor.setAttribute("style", "display: initial;");
+          editor.value = comment.comment;
+          document.getElementById('thisIsTaskCommentEditDoneDiv' + commentId).setAttribute("style", "display: initial;");
+          document.getElementById('editDeleteTaskShareCommentDiv' + commentId).setAttribute("style", "display: none;");
+        });
+
+      }
 
       function obtainObservanceInviterInviteeDatas(observanceShare, index) {
         let otherId = 0;
@@ -1180,7 +1213,7 @@
               retreiveOccasionShareComments(shares[i], i);
             }
             setTimeout(()=>{
-              for (let j = 0; j <shares.length; j++) {
+              for (let j = 0; j < shares.length; j++) {
                 if (parseInt(shares[j].user_id) !== parseInt(currentUserId)) {
                   document.getElementById('thisIsOccasionShareDeleteDiv' + shares[j].id).setAttribute("style", "display: none;");
                 }
@@ -15367,6 +15400,17 @@
               };
               retrieveTaskCommenterProfileInfo(taskComments[i].user_id, index, i);
             }
+            setTimeout(() => {
+              for (let j = 0; j < taskComments.length; j++) {
+                document.getElementById('thisIsTheTaskShareCommentEditor' + taskComments[j].id).setAttribute("style", "display: none;");
+                document.getElementById('thisIsTaskCommentEditDoneDiv' + taskComments[j].id).setAttribute("style", "display: none;");
+                if (parseInt(taskComments[j].user_id) === parseInt(currentUserId)) {
+                  document.getElementById('editDeleteTaskShareCommentDiv' + taskComments[j].id).setAttribute("style", "display: initial;");
+                } else {
+                  document.getElementById('editDeleteTaskShareCommentDiv' + taskComments[j].id).setAttribute("style", "display: none;");
+                }
+              }
+            }, (taskComments.length * 25));
           }
         });
       }
