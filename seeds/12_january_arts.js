@@ -6309,9 +6309,9 @@ exports.seed = function(knex, Promise) {
           id: 316,
           user_id: 1,
           theme: 'Abstract Art',
-          img_path: './img/january/unknown-title.jpg',
-          title: 'unknown title',
-          artist: 'Michel Carrade',
+          img_path: './img/january/q1.jpg',
+          title: 'Q1',
+          artist: 'Jean-Francois Dubreuil',
           year: '?',
           rule: {
             "monday": [ 19, 20, 12, 15 ],
