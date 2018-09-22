@@ -4270,6 +4270,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 238,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2765787919/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bocian.bandcamp.com/album/agitation-stagnation',
+          a_string: 'Agitation | Stagnation by Kasper T. Toeplitz / zeitkratzer',
+          rule: {
+            "monday": [ 4, 10, 17, 30 ],
+            "tuesday": [ 3, 9, 16, 29 ],
+            "wednesday": [ 7, 14, 20, 2 ],
+            "thursday": [ 6, 12, 19, 1 ],
+            "saturday": [ 5, 11, 18, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 239,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1707020186/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bocian.bandcamp.com/album/constitutional',
+          a_string: 'Constitutional by Russell Haswell',
+          rule: {
+            "monday": [ 5, 11, 18, 31 ],
+            "tuesday": [ 4, 10, 17, 30 ],
+            "wednesday": [ 3, 9, 16, 29 ],
+            "thursday": [ 7, 14, 20, 2 ],
+            "saturday": [ 6, 12, 19, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 240,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3496856814/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bocian.bandcamp.com/album/a-map-of-guilt',
+          a_string: 'A Map of Guilt by Mats Gustafsson &amp; Joachim Nordwall',
+          rule: {
+            "monday": [ 6, 12, 19, 1 ],
+            "tuesday": [ 5, 11, 18, 31 ],
+            "wednesday": [ 4, 10, 17, 30 ],
+            "thursday": [ 3, 9, 16, 29 ],
+            "saturday": [ 7, 14, 20, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
