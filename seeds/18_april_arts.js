@@ -8190,7 +8190,7 @@ exports.seed = function(knex, Promise) {
           user_id: 1,
           theme: 'Baseball',
           img_path: './img/april/fced7864-a226-48a3-a816-635dcdad555f.jpg',
-          title: 'Miami Marlins\' Ichiro Suzuki ',
+          title: 'Miami Marlins\' Ichiro Suzuki',
           artist: 'Lynne Sladky',
           year: '2017',
           rule: {
@@ -8201,6 +8201,106 @@ exports.seed = function(knex, Promise) {
             "friday": [ 12, 2, 8, 14 ],
             "saturday": [ 27, 30, 8, 14 ],
             "sunday": [ 26, 30, 15, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 411,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/c3a8f7ce6506fae6b9f503037baa25f9--baseball-signs-oakland-baseball.jpg',
+          title: 'Baseball Signs: Oakland Baseball',
+          artist: 'unknown artist',
+          year: 'xx cent.',
+          rule: {
+            "monday": [ 26, 30, 15, 13 ],
+            "tuesday": [ 24, 29, 5, 11 ],
+            "wednesday": [ 24, 29, 5, 11 ],
+            "thursday": [ 23, 28, 4, 10 ],
+            "friday": [ 28, 4, 9, 16 ],
+            "saturday": [ 12, 2, 8, 14 ],
+            "sunday": [ 27, 30, 8, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 412,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/587712074-612x612.jpg',
+          title: 'Sonny Gray #54 of the Oakland Athletics',
+          artist: 'Michael Zagaris',
+          year: '2016',
+          rule: {
+            "monday": [ 27, 30, 8, 14 ],
+            "tuesday": [ 26, 30, 15, 13 ],
+            "wednesday": [ 24, 29, 5, 11 ],
+            "thursday": [ 24, 29, 5, 11 ],
+            "friday": [ 23, 28, 4, 10 ],
+            "saturday": [ 28, 4, 9, 16 ],
+            "sunday": [ 12, 2, 8, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 413,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/AsThumb.jpeg',
+          title: 'Oakland Athletics Sports Art Print',
+          artist: 'unknown artist',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 13, 3, 9, 15 ],
+            "tuesday": [ 28, 1, 9, 15 ],
+            "wednesday": [ 27, 1, 16, 14 ],
+            "thursday": [ 24, 30, 6, 12 ],
+            "friday": [ 25, 30, 6, 12 ],
+            "saturday": [ 24, 29, 5, 11 ],
+            "sunday": [ 29, 5, 10, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 414,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/ed71d39aa83f4d60a9a2aa5757e00ff2.jpg',
+          title: 'Oakland Athletics\' mascots representing former A\'s pitchers Dennis Eckersley upper left, and Rollie Fingers',
+          artist: 'Ben Margot',
+          year: '2017',
+          rule: {
+            "monday": [ 29, 5, 10, 17 ],
+            "tuesday": [ 13, 3, 9, 15 ],
+            "wednesday": [ 28, 1, 9, 15 ],
+            "thursday": [ 27, 1, 16, 14 ],
+            "friday": [ 24, 30, 6, 12 ],
+            "saturday": [ 25, 30, 6, 12 ],
+            "sunday": [ 24, 29, 5, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 415,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/3-Oakland-Athletics-MLB-Cooperstown-Hat-For-Yeezy-2-Glow-In-The-Dark-Custom-New-Era-Snapback-With-Gray-Under-Visor-950-9fifty-Snapback-3.jpg',
+          title: 'Oakland Athletics Logo',
+          artist: 'unknown artist',
+          year: 'xx cent.',
+          rule: {
+            "monday": [ 24, 29, 5, 11 ],
+            "tuesday": [ 29, 5, 10, 17 ],
+            "wednesday": [ 13, 3, 9, 15 ],
+            "thursday": [ 28, 1, 9, 15 ],
+            "friday": [ 27, 1, 16, 14 ],
+            "saturday": [ 24, 30, 6, 12 ],
+            "sunday": [ 25, 30, 6, 12 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
