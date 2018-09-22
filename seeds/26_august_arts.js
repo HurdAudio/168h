@@ -7404,6 +7404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 371,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/from-thorheiten-1901-4.jpg',
+          title: 'from Thorheiten',
+          artist: 'Thomas Theodor Heine',
+          year: '1901',
+          rule: {
+            "monday": [ 24, 28, 5, 21 ],
+            "tuesday": [ 23, 27, 4, 20 ],
+            "wednesday": [ 22, 24, 3, 19 ],
+            "thursday": [ 21, 24, 2, 18 ],
+            "friday": [ 20, 23, 1, 17 ],
+            "saturday": [ 26, 30, 7, 23 ],
+            "sunday": [ 25, 28, 6, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 372,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/pancake-parsley.jpg',
+          title: 'Pancake Parsley',
+          artist: 'Serge Sudeikin',
+          year: 'c.1915',
+          rule: {
+            "monday": [ 25, 28, 6, 22 ],
+            "tuesday": [ 24, 28, 5, 21 ],
+            "wednesday": [ 23, 27, 4, 20 ],
+            "thursday": [ 22, 24, 3, 19 ],
+            "friday": [ 21, 24, 2, 18 ],
+            "saturday": [ 20, 23, 1, 17 ],
+            "sunday": [ 26, 30, 7, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 373,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/vanquished-1931.jpg',
+          title: 'Vanquished',
+          artist: 'Emily Carr',
+          year: '1931',
+          rule: {
+            "monday": [ 26, 30, 7, 23 ],
+            "tuesday": [ 25, 28, 6, 22 ],
+            "wednesday": [ 24, 28, 5, 21 ],
+            "thursday": [ 23, 27, 4, 20 ],
+            "friday": [ 22, 24, 3, 19 ],
+            "saturday": [ 21, 24, 2, 18 ],
+            "sunday": [ 20, 23, 1, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 374,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/girl-reading-1904.jpg',
+          title: 'Girl Reading',
+          artist: 'Helene Schjerfbeck',
+          year: '1904',
+          rule: {
+            "monday": [ 20, 23, 1, 17 ],
+            "tuesday": [ 26, 30, 7, 23 ],
+            "wednesday": [ 25, 28, 6, 22 ],
+            "thursday": [ 24, 28, 5, 21 ],
+            "friday": [ 23, 27, 4, 20 ],
+            "saturday": [ 22, 24, 3, 19 ],
+            "sunday": [ 21, 24, 2, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 375,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/picnic-on-a-hill-1915.jpg',
+          title: 'Picnic On a Hill',
+          artist: 'Heinrich Kuhn',
+          year: '1915',
+          rule: {
+            "monday": [ 21, 24, 2, 18 ],
+            "tuesday": [ 20, 23, 1, 17 ],
+            "wednesday": [ 26, 30, 7, 23 ],
+            "thursday": [ 25, 28, 6, 22 ],
+            "friday": [ 24, 28, 5, 21 ],
+            "saturday": [ 23, 27, 4, 20 ],
+            "sunday": [ 22, 24, 3, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
