@@ -802,6 +802,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#9DEEFA',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 58,
+          user_id: 1,
+          theme: 'Primary Colors',
+          type: 'week',
+          src_string: '../img/august_tiles/steve-johnson-702311-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '160%',
+          color_dark: '#181A47',
+          color_medium: '#E20403',
+          color_light: '#DFCB0C',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
