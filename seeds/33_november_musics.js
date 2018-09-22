@@ -3622,6 +3622,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 202,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1836407496/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://hailumergia.bandcamp.com/album/wede-harer-guzo',
+          a_string: 'Wede Harer Guzo by Hailu Mergia',
+          rule: {
+            "monday": [ 29, 10, 21, 25 ],
+            "tuesday": [ 28, 9, 20, 24 ],
+            "wednesday": [ 27, 8, 19, 21 ],
+            "thursday": [ 26, 7, 18, 30 ],
+            "saturday": [ 30, 11, 22, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 203,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=707266281/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://hailumergia.bandcamp.com/album/yegle-nesh-hailu',
+          a_string: 'Yegle Nesh / Hailu by Hailu Mergia',
+          rule: {
+            "monday": [ 1, 12, 23, 27 ],
+            "tuesday": [ 30, 11, 22, 26 ],
+            "wednesday": [ 29, 10, 21, 25 ],
+            "thursday": [ 28, 9, 20, 22 ],
+            "saturday": [ 27, 8, 19, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 204,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3227102425/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://pennypenny.bandcamp.com/album/shaka-bundu',
+          a_string: 'Shaka Bundu by Penny Penny',
+          rule: {
+            "monday": [ 27, 8, 19, 1 ],
+            "tuesday": [ 1, 12, 23, 27 ],
+            "wednesday": [ 30, 11, 22, 26 ],
+            "thursday": [ 29, 10, 21, 25 ],
+            "saturday": [ 28, 9, 20, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
