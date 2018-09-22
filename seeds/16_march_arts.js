@@ -8404,6 +8404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 421,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/verona-variation-10-2003.jpg',
+          title: 'Verona Variation #10',
+          artist: 'Anne Appleby',
+          year: '2003',
+          rule: {
+            "monday": [ 29, 7, 15, 25 ],
+            "tuesday": [ 27, 6, 14, 24 ],
+            "wednesday": [ 26, 5, 13, 23 ],
+            "thursday": [ 25, 4, 12, 22 ],
+            "friday": [ 24, 3, 12, 21 ],
+            "saturday": [ 30, 8, 18, 26 ],
+            "sunday": [ 29, 8, 16, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 422,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/sitting-with-snake-self-portrait-2007.jpg',
+          title: 'Sitting with Snake (Self Portrait)',
+          artist: 'Kiki Smith',
+          year: '2007',
+          rule: {
+            "monday": [ 29, 8, 16, 26 ],
+            "tuesday": [ 29, 7, 15, 25 ],
+            "wednesday": [ 27, 6, 14, 24 ],
+            "thursday": [ 26, 5, 13, 23 ],
+            "friday": [ 25, 4, 12, 22 ],
+            "saturday": [ 24, 3, 12, 21 ],
+            "sunday": [ 30, 8, 18, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 423,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/untitled-2006.jpg',
+          title: 'Untitled',
+          artist: 'Doreen Reid Nakamarra',
+          year: '2004',
+          rule: {
+            "monday": [ 30, 8, 18, 26 ],
+            "tuesday": [ 29, 8, 16, 26 ],
+            "wednesday": [ 29, 7, 15, 25 ],
+            "thursday": [ 27, 6, 14, 24 ],
+            "friday": [ 26, 5, 13, 23 ],
+            "saturday": [ 25, 4, 12, 22 ],
+            "sunday": [ 24, 3, 12, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 424,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/corpus-2004.jpg',
+          title: 'corpus',
+          artist: 'Ann Hamilton',
+          year: '2004',
+          rule: {
+            "monday": [ 24, 3, 12, 21 ],
+            "tuesday": [ 30, 8, 18, 26 ],
+            "wednesday": [ 29, 8, 16, 26 ],
+            "thursday": [ 29, 7, 15, 25 ],
+            "friday": [ 27, 6, 14, 24 ],
+            "saturday": [ 26, 5, 13, 23 ],
+            "sunday": [ 25, 4, 12, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 425,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/daniel-meyerplein-6-2007.jpg',
+          title: 'Daniel Meyerplein No 6.',
+          artist: 'Hilly van Eerten',
+          year: '2007',
+          rule: {
+            "monday": [ 25, 4, 12, 22 ],
+            "tuesday": [ 24, 3, 12, 21 ],
+            "wednesday": [ 30, 8, 18, 26 ],
+            "thursday": [ 29, 8, 16, 26 ],
+            "friday": [ 29, 7, 15, 25 ],
+            "saturday": [ 27, 6, 14, 24 ],
+            "sunday": [ 26, 5, 13, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
