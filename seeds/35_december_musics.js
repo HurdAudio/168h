@@ -3514,6 +3514,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 196,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1744243940/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://repsych.bandcamp.com/album/mazo-mentenegra-doom-heavy-rock-lima-peru-1987',
+          a_string: 'MAZO: Mentenegra (Doom Heavy Rock Lima Peru 1987) by MAZO',
+          rule: {
+            "monday": [ 3, 9, 15, 20 ],
+            "tuesday": [ 31, 8, 14, 20 ],
+            "wednesday": [ 30, 7, 13, 19 ],
+            "thursday": [ 31, 6, 12, 18 ],
+            "saturday": [ 4, 10, 16, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 197,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4209997604/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://repsych.bandcamp.com/album/los-diamantes-de-llacta-single-folkways-folk-huayno-carnaval-cusco-peru-1971',
+          a_string: 'Los Diamantes de Llacta single (Folkways * Folk Huayno * Carnaval Cusco Peru 1971) by Los Diamantes de Llacta (Cusco)',
+          rule: {
+            "monday": [ 4, 10, 16, 22 ],
+            "tuesday": [ 3, 9, 15, 20 ],
+            "wednesday": [ 31, 8, 14, 20 ],
+            "thursday": [ 30, 7, 13, 19 ],
+            "saturday": [ 31, 6, 12, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 198,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2610071884/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://repsych.bandcamp.com/album/beto-villena-singles-suavecito-monica-latin-soul-guajira-descarga-peru-72',
+          a_string: 'Beto Villena singles: Suavecito / Monica (Latin Soul * Guajira Descarga Peru &#39;72) by Beto Villena y su mensaje',
+          rule: {
+            "monday": [ 31, 6, 12, 18 ],
+            "tuesday": [ 4, 10, 16, 22 ],
+            "wednesday": [ 3, 9, 15, 20 ],
+            "thursday": [ 31, 8, 14, 20 ],
+            "saturday": [ 30, 7, 13, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
