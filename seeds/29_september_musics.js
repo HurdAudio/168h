@@ -3838,6 +3838,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 214,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2550309392/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://charlestheosprey.bandcamp.com/album/to-capture',
+          a_string: 'To Capture by Charles the Osprey',
+          rule: {
+            "monday": [ 1, 21, 29, 23 ],
+            "tuesday": [ 30, 20, 28, 22 ],
+            "wednesday": [ 4, 24, 2, 26 ],
+            "thursday": [ 3, 23, 1, 25 ],
+            "saturday": [ 2, 22, 30, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 215,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1950375948/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://charlestheosprey.bandcamp.com/album/consider',
+          a_string: 'Consider by Charles the Osprey',
+          rule: {
+            "monday": [ 2, 22, 30, 25 ],
+            "tuesday": [ 1, 21, 29, 23 ],
+            "wednesday": [ 30, 20, 28, 22 ],
+            "thursday": [ 4, 24, 2, 26 ],
+            "saturday": [ 3, 23, 1, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 216,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3694539204/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cuneiformrecords.bandcamp.com/album/optical-delusions-2',
+          a_string: 'Optical Delusions by Planeta Imaginario',
+          rule: {
+            "monday": [ 3, 23, 1, 25 ],
+            "tuesday": [ 2, 22, 30, 25 ],
+            "wednesday": [ 1, 21, 29, 23 ],
+            "thursday": [ 30, 20, 28, 22 ],
+            "saturday": [ 4, 24, 2, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
