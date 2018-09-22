@@ -760,6 +760,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#F4F8FB',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 55,
+          user_id: 1,
+          theme: 'Monochromatic',
+          type: 'saturday',
+          src_string: '../img/november_tiles/annie-spratt-446144-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '150%',
+          color_dark: '#000000',
+          color_medium: '#223135',
+          color_light: '#B0B9B4',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
