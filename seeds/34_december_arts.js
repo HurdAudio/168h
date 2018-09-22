@@ -6604,6 +6604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 331,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/35-03,PirateS.jpg',
+          title: 'Pirate Stories',
+          artist: 'Joseph Szokoli',
+          year: '1935',
+          rule: {
+            "monday": [ 20, 2, 10, 16 ],
+            "tuesday": [ 19, 1, 9, 15 ],
+            "wednesday": [ 18, 31, 8, 14 ],
+            "thursday": [ 17, 30, 7, 13 ],
+            "friday": [ 16, 29, 6, 12 ],
+            "saturday": [ 15, 27, 5, 11 ],
+            "sunday": [ 14, 27, 15, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 332,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/11-07-23,WshngtnPost.jpg',
+          title: 'Washington Post',
+          artist: 'Raymond Thayer',
+          year: '1911',
+          rule: {
+            "monday": [ 14, 27, 15, 22 ],
+            "tuesday": [ 20, 2, 10, 16 ],
+            "wednesday": [ 19, 1, 9, 15 ],
+            "thursday": [ 18, 31, 8, 14 ],
+            "friday": [ 17, 30, 7, 13 ],
+            "saturday": [ 16, 29, 6, 12 ],
+            "sunday": [ 15, 27, 5, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 333,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/29-04,MystS.jpg',
+          title: 'Mystery Stories',
+          artist: 'Wilbur Thomas',
+          year: '1929',
+          rule: {
+            "monday": [ 15, 27, 5, 11 ],
+            "tuesday": [ 14, 27, 15, 22 ],
+            "wednesday": [ 20, 2, 10, 16 ],
+            "thursday": [ 19, 1, 9, 15 ],
+            "friday": [ 18, 31, 8, 14 ],
+            "saturday": [ 17, 30, 7, 13 ],
+            "sunday": [ 16, 29, 6, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 334,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/27-02-05,LoveS.jpg',
+          title: 'Love Story',
+          artist: 'C. R. Thomson',
+          year: '1927',
+          rule: {
+            "monday": [ 16, 29, 6, 12 ],
+            "tuesday": [ 15, 27, 5, 11 ],
+            "wednesday": [ 14, 27, 15, 22 ],
+            "thursday": [ 20, 2, 10, 16 ],
+            "friday": [ 19, 1, 9, 15 ],
+            "saturday": [ 18, 31, 8, 14 ],
+            "sunday": [ 17, 30, 7, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 335,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/28-11-17,Newspaper.jpg',
+          title: 'Sports Comic',
+          artist: 'Jimmy Thompson',
+          year: '1928',
+          rule: {
+            "monday": [ 17, 30, 7, 13 ],
+            "tuesday": [ 16, 29, 6, 12 ],
+            "wednesday": [ 15, 27, 5, 11 ],
+            "thursday": [ 14, 27, 15, 22 ],
+            "friday": [ 20, 2, 10, 16 ],
+            "saturday": [ 19, 1, 9, 15 ],
+            "sunday": [ 18, 31, 8, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
