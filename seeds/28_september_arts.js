@@ -7204,6 +7204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 361,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/june-moon-1963.jpg',
+          title: 'June Moon',
+          artist: 'Allan D\'Arcangelo',
+          year: '1963',
+          rule: {
+            "monday": [ 8, 15, 12, 20 ],
+            "tuesday": [ 16, 23, 11, 18 ],
+            "wednesday": [ 23, 29, 17, 25 ],
+            "thursday": [ 22, 28, 16, 24 ],
+            "friday": [ 21, 27, 15, 23 ],
+            "saturday": [ 20, 26, 14, 22 ],
+            "sunday": [ 9, 25, 13, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 362,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/c-mon-baby-light-my-fire-2007.jpg',
+          title: 'C\'mon Baby Light My Fire',
+          artist: 'Luke Chueh',
+          year: '2007',
+          rule: {
+            "monday": [ 9, 25, 13, 22 ],
+            "tuesday": [ 8, 15, 12, 20 ],
+            "wednesday": [ 16, 23, 11, 18 ],
+            "thursday": [ 23, 29, 17, 25 ],
+            "friday": [ 22, 28, 16, 24 ],
+            "saturday": [ 21, 27, 15, 23 ],
+            "sunday": [ 20, 26, 14, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 363,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/project-asberry-ii-1970.jpg',
+          title: 'Project Asberry II',
+          artist: 'Willem van Genk',
+          year: '1970',
+          rule: {
+            "monday": [ 20, 26, 14, 22 ],
+            "tuesday": [ 9, 25, 13, 22 ],
+            "wednesday": [ 8, 15, 12, 20 ],
+            "thursday": [ 16, 23, 11, 18 ],
+            "friday": [ 23, 29, 17, 25 ],
+            "saturday": [ 22, 28, 16, 24 ],
+            "sunday": [ 21, 27, 15, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 364,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/untitled-plakat-carton-1962.jpg',
+          title: 'Untitled (Plakat Carton)',
+          artist: 'Giulio Paolini',
+          year: '1962',
+          rule: {
+            "monday": [ 22, 28, 16, 24 ],
+            "tuesday": [ 21, 27, 15, 23 ],
+            "wednesday": [ 10, 26, 14, 23 ],
+            "thursday": [ 9, 16, 13, 21 ],
+            "friday": [ 17, 24, 12, 19 ],
+            "saturday": [ 24, 30, 18, 26 ],
+            "sunday": [ 23, 29, 17, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 365,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/shy-cowboy-1980.jpg',
+          title: 'Shy Cowboy',
+          artist: 'Derek Boshier',
+          year: '1980',
+          rule: {
+            "monday": [ 23, 29, 17, 25 ],
+            "tuesday": [ 22, 28, 16, 24 ],
+            "wednesday": [ 21, 27, 15, 23 ],
+            "thursday": [ 10, 26, 14, 23 ],
+            "friday": [ 9, 16, 13, 21 ],
+            "saturday": [ 17, 24, 12, 19 ],
+            "sunday": [ 24, 30, 18, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
