@@ -8804,6 +8804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 441,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/r-tine-ma-jolie-1969.jpg',
+          title: 'Rétine ma jolie',
+          artist: 'Marcel Barbeau',
+          year: '1969',
+          rule: {
+            "monday": [ 9, 10, 1, 5 ],
+            "tuesday": [ 12, 14, 15, 17 ],
+            "wednesday": [ 14, 16, 20, 23 ],
+            "thursday": [ 16, 18, 19, 20 ],
+            "friday": [ 1, 2, 13, 5 ],
+            "saturday": [ 4, 6, 29, 18 ],
+            "sunday": [ 9, 7, 30, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 442,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/foley-1967.jpg',
+          title: 'Foley',
+          artist: 'Ron Gorchov',
+          year: '1967',
+          rule: {
+            "monday": [ 9, 7, 30, 2 ],
+            "tuesday": [ 9, 10, 1, 5 ],
+            "wednesday": [ 12, 14, 15, 17 ],
+            "thursday": [ 14, 16, 20, 23 ],
+            "friday": [ 16, 18, 19, 20 ],
+            "saturday": [ 1, 2, 13, 5 ],
+            "sunday": [ 4, 6, 29, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 443,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/volumi-blu-1964.jpg',
+          title: 'Volumi (blu)',
+          artist: 'Paolo Scheggi',
+          year: '1964',
+          rule: {
+            "monday": [ 4, 6, 29, 18 ],
+            "tuesday": [ 9, 7, 30, 2 ],
+            "wednesday": [ 9, 10, 1, 5 ],
+            "thursday": [ 12, 14, 15, 17 ],
+            "friday": [ 14, 16, 20, 23 ],
+            "saturday": [ 16, 18, 19, 20 ],
+            "sunday": [ 1, 2, 13, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 444,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/red-4-1990.jpg',
+          title: 'Red 4',
+          artist: 'Jurgen Partenheimer',
+          year: '1990',
+          rule: {
+            "monday": [ 1, 2, 13, 5 ],
+            "tuesday": [ 4, 6, 29, 18 ],
+            "wednesday": [ 9, 7, 30, 2 ],
+            "thursday": [ 9, 10, 1, 5 ],
+            "friday": [ 12, 14, 15, 17 ],
+            "saturday": [ 14, 16, 20, 23 ],
+            "sunday": [ 16, 18, 19, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 445,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/dichotomic-organization-stripes-1959.jpg',
+          title: 'Dichotomic Organization: Stripes',
+          artist: 'Lorser Feitelson',
+          year: '1959',
+          rule: {
+            "monday": [ 16, 18, 19, 20 ],
+            "tuesday": [ 1, 2, 13, 5 ],
+            "wednesday": [ 4, 6, 29, 18 ],
+            "thursday": [ 9, 7, 30, 2 ],
+            "friday": [ 9, 10, 1, 5 ],
+            "saturday": [ 12, 14, 15, 17 ],
+            "sunday": [ 14, 16, 20, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
