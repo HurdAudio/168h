@@ -7004,6 +7004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 351,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_cultsovpost_00009.jpg',
+          title: 'Circus. Tamer of lions Irina Bugrimova...',
+          artist: 'M.Bulanov',
+          year: '1950',
+          rule: {
+            "monday": [ 24, 4, 15, 19 ],
+            "tuesday": [ 23, 3, 14, 18 ],
+            "wednesday": [ 22, 2, 13, 17 ],
+            "thursday": [ 21, 1, 12, 16 ],
+            "friday": [ 20, 31, 1, 15 ],
+            "saturday": [ 29, 30, 10, 14 ],
+            "sunday": [ 25, 5, 16, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 352,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_industrysovpost_00018.jpg',
+          title: 'Transport More Oil',
+          artist: 'V.Elkin',
+          year: '1950',
+          rule: {
+            "monday": [ 25, 5, 16, 20 ],
+            "tuesday": [ 24, 4, 15, 19 ],
+            "wednesday": [ 23, 3, 14, 18 ],
+            "thursday": [ 22, 2, 13, 17 ],
+            "friday": [ 21, 1, 12, 16 ],
+            "saturday": [ 20, 31, 1, 15 ],
+            "sunday": [ 29, 30, 10, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 353,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_industrysovpost_00017.jpg',
+          title: 'To the Motherland, New Millions of KiloWatts!',
+          artist: 'A.Kokorekin',
+          year: '1955',
+          rule: {
+            "monday": [ 29, 30, 10, 14 ],
+            "tuesday": [ 25, 5, 16, 20 ],
+            "wednesday": [ 24, 4, 15, 19 ],
+            "thursday": [ 23, 3, 14, 18 ],
+            "friday": [ 22, 2, 13, 17 ],
+            "saturday": [ 21, 1, 12, 16 ],
+            "sunday": [ 20, 31, 1, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 354,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_industrysovpost_00015.jpg',
+          title: 'Glory to the Soviet railway workers!',
+          artist: 'V.Tsarev',
+          year: '1951',
+          rule: {
+            "monday": [ 20, 31, 1, 15 ],
+            "tuesday": [ 29, 30, 10, 14 ],
+            "wednesday": [ 25, 5, 16, 20 ],
+            "thursday": [ 24, 4, 15, 19 ],
+            "friday": [ 23, 3, 14, 18 ],
+            "saturday": [ 22, 2, 13, 17 ],
+            "sunday": [ 21, 1, 12, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 355,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_industrysovpost_00014.jpg',
+          title: 'Electric power to Kolkhoz, Sovhoz and MTS',
+          artist: 'V.Koretsky',
+          year: '1950',
+          rule: {
+            "monday": [ 21, 1, 12, 16 ],
+            "tuesday": [ 20, 31, 1, 15 ],
+            "wednesday": [ 29, 30, 10, 14 ],
+            "thursday": [ 25, 5, 16, 20 ],
+            "friday": [ 24, 4, 15, 19 ],
+            "saturday": [ 23, 3, 14, 18 ],
+            "sunday": [ 22, 2, 13, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
