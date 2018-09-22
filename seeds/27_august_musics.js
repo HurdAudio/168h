@@ -3946,6 +3946,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 220,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3819555654/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://karlrecords.bandcamp.com/album/whitehouse',
+          a_string: 'Whitehouse by zeitkratzer',
+          rule: {
+            "monday": [ 11, 19, 1, 31 ],
+            "tuesday": [ 10, 18, 31, 30 ],
+            "wednesday": [ 9, 17, 30, 29 ],
+            "thursday": [ 13, 21, 3, 2 ],
+            "saturday": [ 12, 20, 2, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 221,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2174839893/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://nursewithwound1.bandcamp.com/album/acts-of-senseless-beauty-santoor-lena-bicycle',
+          a_string: 'Acts Of Senseless Beauty / Santoor Lena Bicycle by Nurse With Wound',
+          rule: {
+            "monday": [ 12, 20, 2, 1 ],
+            "tuesday": [ 11, 19, 1, 31 ],
+            "wednesday": [ 10, 18, 31, 30 ],
+            "thursday": [ 9, 17, 30, 29 ],
+            "saturday": [ 13, 21, 3, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 222,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=395425664/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://nursewithwound1.bandcamp.com/album/thunder-perfect-mind-deluxe',
+          a_string: 'Thunder Perfect Mind Deluxe by Nurse With Wound',
+          rule: {
+            "monday": [ 13, 21, 3, 2 ],
+            "tuesday": [ 12, 20, 2, 1 ],
+            "wednesday": [ 11, 19, 1, 31 ],
+            "thursday": [ 10, 18, 31, 30 ],
+            "saturday": [ 9, 17, 30, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
