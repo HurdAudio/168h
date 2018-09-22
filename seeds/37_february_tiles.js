@@ -886,6 +886,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#ECECEB',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 64,
+          user_id: 1,
+          theme: 'Silk/Velvet',
+          type: 'friday',
+          src_string: '../img/february_tiles/frank-holleman-498568-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '160%',
+          color_dark: '#34130A',
+          color_medium: '#E03775',
+          color_light: '#FCE4F3',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
