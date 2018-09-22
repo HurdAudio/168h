@@ -858,6 +858,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FBF9FE',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 62,
+          user_id: 1,
+          theme: 'Water',
+          type: 'holiday',
+          src_string: '../img/april_tiles/david-clode-341229-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '165%',
+          color_dark: '#0F2147',
+          color_medium: '#B2BE4E',
+          color_light: '#9A979E',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
