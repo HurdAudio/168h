@@ -830,6 +830,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FDFFFF',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 60,
+          user_id: 1,
+          theme: 'Light',
+          type: 'saturday',
+          src_string: '../img/june_tiles/diz-play-31367-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '160%',
+          color_dark: '#080405',
+          color_medium: '#BA7C15',
+          color_light: '#F9FFFE',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
