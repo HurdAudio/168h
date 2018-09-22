@@ -6804,6 +6804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 341,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/channel-painting-no-6-1975.jpg',
+          title: 'Channel Painting No. 6',
+          artist: 'Alan Charlton',
+          year: '1975',
+          rule: {
+            "monday": [ 22, 26, 3, 8 ],
+            "tuesday": [ 21, 26, 2, 7 ],
+            "wednesday": [ 20, 25, 1, 8 ],
+            "thursday": [ 26, 1, 7, 12 ],
+            "friday": [ 25, 30, 5, 11 ],
+            "saturday": [ 24, 28, 5, 9 ],
+            "sunday": [ 23, 26, 3, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 342,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/intervention-1975.jpg',
+          title: 'Intervention',
+          artist: 'Edward Krasinski',
+          year: '1975',
+          rule: {
+            "monday": [ 23, 26, 3, 8 ],
+            "tuesday": [ 22, 26, 3, 8 ],
+            "wednesday": [ 21, 26, 2, 7 ],
+            "thursday": [ 20, 25, 1, 8 ],
+            "friday": [ 26, 1, 7, 12 ],
+            "saturday": [ 25, 30, 5, 11 ],
+            "sunday": [ 24, 28, 5, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 343,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/75-76-d-157x145-1976.jpg',
+          title: '75-76-D-157x145',
+          artist: 'Martin Barre',
+          year: '1976',
+          rule: {
+            "monday": [ 25, 29, 6, 10 ],
+            "tuesday": [ 24, 27, 4, 9 ],
+            "wednesday": [ 23, 27, 4, 9 ],
+            "thursday": [ 22, 27, 3, 8 ],
+            "friday": [ 21, 26, 2, 9 ],
+            "saturday": [ 27, 2, 8, 13 ],
+            "sunday": [ 26, 1, 6, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 344,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/24-colors-for-blinky-1977.jpg',
+          title: '24 Colors (for Blinky)',
+          artist: 'Imi Knoebel',
+          year: '1977',
+          rule: {
+            "monday": [ 26, 1, 6, 12 ],
+            "tuesday": [ 25, 29, 6, 10 ],
+            "wednesday": [ 24, 27, 4, 9 ],
+            "thursday": [ 23, 27, 4, 9 ],
+            "friday": [ 22, 27, 3, 8 ],
+            "saturday": [ 21, 26, 2, 9 ],
+            "sunday": [ 27, 2, 8, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 345,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/untitled-antibuch-1977.jpg',
+          title: 'Untitled (Antibuch)',
+          artist: 'Herbert Zangs',
+          year: '1977',
+          rule: {
+            "monday": [ 27, 2, 8, 13 ],
+            "tuesday": [ 26, 1, 6, 12 ],
+            "wednesday": [ 25, 29, 6, 10 ],
+            "thursday": [ 24, 27, 4, 9 ],
+            "friday": [ 23, 27, 4, 9 ],
+            "saturday": [ 22, 27, 3, 8 ],
+            "sunday": [ 21, 26, 2, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
