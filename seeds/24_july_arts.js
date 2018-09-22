@@ -7604,6 +7604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 381,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/1965-1-unknown-detail-of-detail.jpg',
+          title: '1965 / 1 - ∞ / unknown detail of detail',
+          artist: 'Roman Opalka',
+          year: '?',
+          rule: {
+            "monday": [ 20, 31, 11, 22 ],
+            "tuesday": [ 26, 6, 17, 27 ],
+            "wednesday": [ 25, 5, 16, 27 ],
+            "thursday": [ 23, 3, 15, 26 ],
+            "friday": [ 23, 3, 14, 15 ],
+            "saturday": [ 22, 2, 12, 14 ],
+            "sunday": [ 21, 1, 12, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 382,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/cultural-head-1973.jpg',
+          title: 'Cultural Head',
+          artist: 'Marisol Escobar',
+          year: '1973',
+          rule: {
+            "monday": [ 21, 1, 12, 13 ],
+            "tuesday": [ 20, 31, 11, 22 ],
+            "wednesday": [ 26, 6, 17, 27 ],
+            "thursday": [ 25, 5, 16, 27 ],
+            "friday": [ 23, 3, 15, 26 ],
+            "saturday": [ 23, 3, 14, 15 ],
+            "sunday": [ 22, 2, 12, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 383,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/couleur-lumi-re-1993.jpg',
+          title: 'Couleur lumière',
+          artist: 'Horacio Garcia-Rossi',
+          year: '1993',
+          rule: {
+            "monday": [ 22, 2, 12, 14 ],
+            "tuesday": [ 21, 1, 12, 13 ],
+            "wednesday": [ 20, 31, 11, 22 ],
+            "thursday": [ 26, 6, 17, 27 ],
+            "friday": [ 25, 5, 16, 27 ],
+            "saturday": [ 23, 3, 15, 26 ],
+            "sunday": [ 23, 3, 14, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 384,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/femme-au-po-le-1947.jpg',
+          title: 'Femme au poêle',
+          artist: 'Bernard Buffet',
+          year: '1947',
+          rule: {
+            "monday": [ 23, 3, 14, 15 ],
+            "tuesday": [ 22, 2, 12, 14 ],
+            "wednesday": [ 21, 1, 12, 13 ],
+            "thursday": [ 20, 31, 11, 22 ],
+            "friday": [ 26, 6, 17, 27 ],
+            "saturday": [ 25, 5, 16, 27 ],
+            "sunday": [ 23, 3, 15, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 385,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/le-ministre-de-la-guerre-atomis.jpg',
+          title: 'Le ministre de la guerre atomisé',
+          artist: 'Jacques Le Marechal',
+          year: '?',
+          rule: {
+            "monday": [ 24, 4, 16, 27 ],
+            "tuesday": [ 24, 4, 15, 16 ],
+            "wednesday": [ 23, 3, 13, 15 ],
+            "thursday": [ 22, 2, 13, 14 ],
+            "friday": [ 21, 1, 12, 23 ],
+            "saturday": [ 27, 7, 18, 28 ],
+            "sunday": [ 26, 6, 17, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
