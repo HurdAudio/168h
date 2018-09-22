@@ -4702,6 +4702,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 262,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1138183453/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://othermindsrecords.bandcamp.com/album/composer-critics-of-the-new-york-herald-tribune',
+          a_string: 'Composer-Critics of the New York Herald Tribune by Other Minds Records',
+          rule: {
+            "monday": [ 14, 21, 22, 23 ],
+            "tuesday": [ 13, 19, 20, 21 ],
+            "wednesday": [ 12, 19, 20, 21 ],
+            "thursday": [ 16, 23, 24, 25 ],
+            "saturday": [ 15, 21, 22, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 263,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4202379229/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://othermindsrecords.bandcamp.com/album/lexical-music',
+          a_string: 'Lexical Music by Charles Amirkhanian',
+          rule: {
+            "monday": [ 15, 21, 22, 24 ],
+            "tuesday": [ 14, 21, 22, 23 ],
+            "wednesday": [ 13, 19, 20, 21 ],
+            "thursday": [ 12, 19, 20, 21 ],
+            "saturday": [ 16, 23, 24, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 264,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3579859813/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://othermindsrecords.bandcamp.com/album/gallivants-and-garnishes',
+          a_string: 'Gallivants and Garnishes by Ramón Sender',
+          rule: {
+            "monday": [ 16, 23, 24, 25 ],
+            "tuesday": [ 15, 21, 22, 24 ],
+            "wednesday": [ 14, 21, 22, 23 ],
+            "thursday": [ 13, 19, 20, 21 ],
+            "saturday": [ 12, 19, 20, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
