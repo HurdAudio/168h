@@ -8004,6 +8004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 401,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/building-a-city-1902.jpg',
+          title: 'Building a City',
+          artist: 'Nicholas Roerich',
+          year: '1902',
+          rule: {
+            "monday": [ 25, 6, 16, 24 ],
+            "tuesday": [ 25, 5, 14, 24 ],
+            "wednesday": [ 23, 2, 10, 22 ],
+            "thursday": [ 20, 31, 10, 30 ],
+            "friday": [ 19, 30, 8, 18 ],
+            "saturday": [ 17, 27, 6, 14 ],
+            "sunday": [ 15, 24, 5, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 402,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/building-the-ships-1903.jpg',
+          title: 'Building the ships',
+          artist: 'Nicholas Roerich',
+          year: '1903',
+          rule: {
+            "monday": [ 15, 24, 5, 14 ],
+            "tuesday": [ 25, 6, 16, 24 ],
+            "wednesday": [ 25, 5, 14, 24 ],
+            "thursday": [ 23, 2, 10, 22 ],
+            "friday": [ 20, 31, 10, 30 ],
+            "saturday": [ 19, 30, 8, 18 ],
+            "sunday": [ 17, 27, 6, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 403,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/they-build-the-ships-1903-1.jpg',
+          title: 'They build the ships',
+          artist: 'Nicholas Roerich',
+          year: '1903',
+          rule: {
+            "monday": [ 17, 27, 6, 14 ],
+            "tuesday": [ 15, 24, 5, 14 ],
+            "wednesday": [ 25, 6, 16, 24 ],
+            "thursday": [ 25, 5, 14, 24 ],
+            "friday": [ 23, 2, 10, 22 ],
+            "saturday": [ 20, 31, 10, 30 ],
+            "sunday": [ 19, 30, 8, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 404,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/a-laborer-at-celeyran-1882.jpg',
+          title: 'A Laborer at Celeyran',
+          artist: 'Henri de Toulouse-Lautrec',
+          year: '1882',
+          rule: {
+            "monday": [ 19, 30, 8, 18 ],
+            "tuesday": [ 17, 27, 6, 14 ],
+            "wednesday": [ 15, 24, 5, 14 ],
+            "thursday": [ 25, 6, 16, 24 ],
+            "friday": [ 25, 5, 14, 24 ],
+            "saturday": [ 23, 2, 10, 22 ],
+            "sunday": [ 20, 31, 10, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 405,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/study-for-the-laundress-1888.jpg',
+          title: 'Study for the Laundress',
+          artist: 'Henri de Toulouse-Lautrec',
+          year: '1888',
+          rule: {
+            "monday": [ 20, 31, 10, 30 ],
+            "tuesday": [ 19, 30, 8, 18 ],
+            "wednesday": [ 17, 27, 6, 14 ],
+            "thursday": [ 15, 24, 5, 14 ],
+            "friday": [ 25, 6, 16, 24 ],
+            "saturday": [ 25, 5, 14, 24 ],
+            "sunday": [ 23, 2, 10, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
