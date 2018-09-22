@@ -1192,6 +1192,42 @@ exports.seed = function(knex, Promise) {
           public: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 100,
+          user_author_id: 1,
+          theme: 'Shoegaze',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=141357358/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://holyfawn.bandcamp.com/album/death-spells',
+          a_string: 'DEATH SPELLS by HOLY FAWN',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 101,
+          user_author_id: 1,
+          theme: 'Shoegaze',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3069566909/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://hiddenvibes.bandcamp.com/album/i-thought-id-never-find-you',
+          a_string: 'I Thought I&#39;d Never Find You by Desolate Horizons',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 102,
+          user_author_id: 1,
+          theme: 'Shoegaze',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2035241822/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://hiddenvibes.bandcamp.com/album/hidden-vibes-vol-3',
+          a_string: 'Hidden Vibes Vol. 3 by Various Artists',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
