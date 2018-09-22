@@ -4162,6 +4162,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 232,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2921453655/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'ttp://olivercoates.bandcamp.com/album/shelleys-on-zenn-la',
+          a_string: 'Shelley&#39;s on Zenn-La by Oliver Coates',
+          rule: {
+            "monday": [ 4, 8, 14, 25 ],
+            "tuesday": [ 3, 6, 11, 23 ],
+            "wednesday": [ 2, 6, 11, 23 ],
+            "thursday": [ 2, 5, 11, 22 ],
+            "saturday": [ 30, 8, 10, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 233,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2731154045/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://olivercoates.bandcamp.com/album/upstepping',
+          a_string: 'Upstepping by Oliver Coates',
+          rule: {
+            "monday": [ 30, 8, 10, 21 ],
+            "tuesday": [ 4, 8, 14, 25 ],
+            "wednesday": [ 3, 6, 11, 23 ],
+            "thursday": [ 2, 6, 11, 23 ],
+            "saturday": [ 2, 5, 11, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 234,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=259905057/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://muzaneditions.bandcamp.com/album/idea-region',
+          a_string: 'Idea Region by N. Chambers',
+          rule: {
+            "monday": [ 2, 5, 11, 22 ],
+            "tuesday": [ 30, 8, 10, 21 ],
+            "wednesday": [ 4, 8, 14, 25 ],
+            "thursday": [ 3, 6, 11, 23 ],
+            "saturday": [ 2, 6, 11, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
