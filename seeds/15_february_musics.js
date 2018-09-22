@@ -4594,6 +4594,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 256,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3603991383/size=large/bgcol=ffffff/linkcol=0687f5/license_id=78/tracklist=false/transparent=true/',
+          href_string: 'http://kamasiwashington.bandcamp.com/album/the-epic-1',
+          a_string: 'The Epic by Kamasi Washington',
+          rule: {
+            "monday": [ 9, 13, 15, 19 ],
+            "tuesday": [ 12, 15, 17, 21 ],
+            "wednesday": [ 23, 17, 19, 21 ],
+            "thursday": [ 25, 19, 21, 27 ],
+            "saturday": [ 26, 20, 22, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 257,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3794237863/size=large/bgcol=ffffff/linkcol=0687f5/license_id=74/tracklist=false/transparent=true/',
+          href_string: 'http://thundercat.bandcamp.com/album/drunk-1',
+          a_string: 'Drunk by Thundercat',
+          rule: {
+            "monday": [ 26, 20, 22, 28 ],
+            "tuesday": [ 9, 13, 15, 19 ],
+            "wednesday": [ 12, 15, 17, 21 ],
+            "thursday": [ 23, 17, 19, 21 ],
+            "saturday": [ 25, 19, 21, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 258,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1931742968/size=large/bgcol=ffffff/linkcol=0687f5/license_id=110/tracklist=false/transparent=true/',
+          href_string: 'http://teebs.bandcamp.com/album/ardour',
+          a_string: 'Ardour by Teebs',
+          rule: {
+            "monday": [ 25, 19, 21, 27 ],
+            "tuesday": [ 26, 20, 22, 28 ],
+            "wednesday": [ 9, 13, 15, 19 ],
+            "thursday": [ 12, 15, 17, 21 ],
+            "saturday": [ 23, 17, 19, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
