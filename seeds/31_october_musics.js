@@ -3730,6 +3730,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 208,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2842598779/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://lavidaesunmus.bandcamp.com/album/living-in-excellence',
+          a_string: 'Living in Excellence by Constant Mongrel',
+          rule: {
+            "monday": [ 3, 13, 24, 26 ],
+            "tuesday": [ 7, 17, 27, 30 ],
+            "wednesday": [ 6, 16, 26, 29 ],
+            "thursday": [ 5, 15, 25, 28 ],
+            "saturday": [ 4, 14, 25, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 209,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=860230252/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://lavidaesunmus.bandcamp.com/album/binasa',
+          a_string: 'Binasa by Sial',
+          rule: {
+            "monday": [ 4, 14, 25, 27 ],
+            "tuesday": [ 3, 13, 24, 26 ],
+            "wednesday": [ 7, 17, 27, 30 ],
+            "thursday": [ 6, 16, 26, 29 ],
+            "saturday": [ 5, 15, 25, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 210,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3866328804/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://stickwiththebeat.bandcamp.com/album/meat-market',
+          a_string: 'Meat Market by MEAT MARKET',
+          rule: {
+            "monday": [ 6, 16, 26, 29 ],
+            "tuesday": [ 5, 15, 26, 28 ],
+            "wednesday": [ 4, 14, 24, 27 ],
+            "thursday": [ 8, 18, 28, 31 ],
+            "saturday": [ 7, 17, 27, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
