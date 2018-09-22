@@ -7804,6 +7804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 391,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/8368080_orig.jpg',
+          title: 'Spider Woman\'s Home, Canyon de Chelly, Navajo Nation',
+          artist: 'Kent Winchester',
+          year: '?',
+          rule: {
+            "monday": [ 22, 2, 12, 20 ],
+            "tuesday": [ 1, 11, 21, 19 ],
+            "wednesday": [ 20, 30, 10, 18 ],
+            "thursday": [ 19, 29, 9, 17 ],
+            "friday": [ 25, 5, 15, 22 ],
+            "saturday": [ 24, 4, 14, 22 ],
+            "sunday": [ 23, 3, 13, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 392,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/garlic-4_orig.jpg',
+          title: 'Garlic',
+          artist: 'M. Axel Wikstrom',
+          year: '?',
+          rule: {
+            "monday": [ 24, 4, 14, 22 ],
+            "tuesday": [ 23, 3, 13, 21 ],
+            "wednesday": [ 2, 12, 22, 20 ],
+            "thursday": [ 21, 1, 11, 19 ],
+            "friday": [ 20, 30, 10, 18 ],
+            "saturday": [ 26, 6, 16, 23 ],
+            "sunday": [ 25, 5, 15, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 393,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/farm-183_orig.jpg',
+          title: 'Farm',
+          artist: 'M. Axel Wikstrom',
+          year: '?',
+          rule: {
+            "monday": [ 25, 5, 15, 23 ],
+            "tuesday": [ 24, 4, 14, 22 ],
+            "wednesday": [ 23, 3, 13, 21 ],
+            "thursday": [ 2, 12, 22, 20 ],
+            "friday": [ 21, 1, 11, 19 ],
+            "saturday": [ 20, 30, 10, 18 ],
+            "sunday": [ 26, 6, 16, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 394,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/eaglehunterseptember-30-2016e-8711-edit_orig.jpg',
+          title: 'Eagle Hunter',
+          artist: 'John Simmons',
+          year: '2016',
+          rule: {
+            "monday": [ 26, 6, 16, 23 ],
+            "tuesday": [ 25, 5, 15, 23 ],
+            "wednesday": [ 24, 4, 14, 22 ],
+            "thursday": [ 23, 3, 13, 21 ],
+            "friday": [ 2, 12, 22, 20 ],
+            "saturday": [ 21, 1, 11, 19 ],
+            "sunday": [ 20, 30, 10, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 395,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/165810_orig.jpg',
+          title: 'unknown title',
+          artist: 'Knate Myers',
+          year: '?',
+          rule: {
+            "monday": [ 20, 30, 10, 18 ],
+            "tuesday": [ 26, 6, 16, 23 ],
+            "wednesday": [ 25, 5, 15, 23 ],
+            "thursday": [ 24, 4, 14, 22 ],
+            "friday": [ 23, 3, 13, 21 ],
+            "saturday": [ 2, 12, 22, 20 ],
+            "sunday": [ 21, 1, 11, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
