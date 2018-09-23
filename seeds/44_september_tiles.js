@@ -802,6 +802,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#D1C8C1',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 58,
+          user_id: 1,
+          theme: 'Leather',
+          type: 'week',
+          src_string: '../img/september_tiles/robbie-noble-220875-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '156%',
+          color_dark: '#131313',
+          color_medium: '#64312E',
+          color_light: '#F8F7F9',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
