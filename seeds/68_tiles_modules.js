@@ -499,6 +499,21 @@ exports.seed = function(knex, Promise) {
           public: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 34,
+          user_author_id: 1,
+          theme: 'wood',
+          type: 'mtwt',
+          src_string: '../img/tiles/adam-smigielski-536767-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '160%',
+          color_dark: '#000000',
+          color_medium: '#F59F3F',
+          color_light: '#FFDEB1',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
