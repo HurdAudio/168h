@@ -389,6 +389,7 @@
         if (element.parentNode.color_light) {
           mouseoverColor = element.parentNode.color_light;
         }
+        element.setAttribute("style", "color: " + mouseoutColor + ";");
         element.addEventListener('mouseover', ()=>{
           element.setAttribute("style", "color: " + mouseoverColor + ";");
         });
@@ -406,6 +407,7 @@
         if (element.parentNode.color_light) {
           mouseoutColor = element.parentNode.color_light;
         }
+        element.setAttribute("style", "color: " + mouseoutColor + ";");
         element.addEventListener('mouseover', ()=>{
           element.setAttribute("style", "color: " + mouseoverColor + "; opacity: 0.8;");
         });
@@ -464,38 +466,64 @@
             element.color_dark = tiles[defaultTile][specificTile].color_dark;
             element.color_medium = tiles[defaultTile][specificTile].color_medium;
             element.color_light = tiles[defaultTile][specificTile].color_light;
+            element.specificTile = tiles[defaultTile][specificTile].src_string;
           } else {
             holidayList = grabHolidays(allHolidays, dateString);
             if (holidayList.length > 0) {
               specificTile = Math.floor(Math.random() * tiles[holidayTile].length);
-              element.setAttribute("style", "background-image: url(" + tiles[holidayTile][specificTile].src_string + "); background-repeat: " + tiles[holidayTile][specificTile].repeat_value + "; background-size: " + tiles[holidayTile][specificTile].size_value + ";");
+              if (pastPresentFuture(tileDay) === 'present') {
+                element.setAttribute("style", "background-image: url(" + tiles[holidayTile][specificTile].src_string + "); background-repeat: " + tiles[holidayTile][specificTile].repeat_value + "; background-size: " + tiles[holidayTile][specificTile].size_value + "; border: solid 5px " + tiles[holidayTile][specificTile].color_medium + ";");
+              } else {
+                element.setAttribute("style", "background-image: url(" + tiles[holidayTile][specificTile].src_string + "); background-repeat: " + tiles[holidayTile][specificTile].repeat_value + "; background-size: " + tiles[holidayTile][specificTile].size_value + ";");
+              }
               element.color_dark = tiles[holidayTile][specificTile].color_dark;
               element.color_medium = tiles[holidayTile][specificTile].color_medium;
               element.color_light = tiles[holidayTile][specificTile].color_light;
+              element.specificTile = tiles[holidayTile][specificTile].src_string;
             } else if ((tileDay.getDay() > 0) && (tileDay.getDay() < 5)) {
               specificTile = Math.floor(Math.random() * tiles[mtwtTile].length);
-              element.setAttribute("style", "background-image: url(" + tiles[mtwtTile][specificTile].src_string + "); background-repeat: " + tiles[mtwtTile][specificTile].repeat_value + "; background-size: " + tiles[mtwtTile][specificTile].size_value + ";");
+              if (pastPresentFuture(tileDay) === 'present') {
+                element.setAttribute("style", "background-image: url(" + tiles[mtwtTile][specificTile].src_string + "); background-repeat: " + tiles[mtwtTile][specificTile].repeat_value + "; background-size: " + tiles[mtwtTile][specificTile].size_value + "; border: solid 5px " + tiles[mtwtTile][specificTile].color_medium + ";");
+              } else {
+                element.setAttribute("style", "background-image: url(" + tiles[mtwtTile][specificTile].src_string + "); background-repeat: " + tiles[mtwtTile][specificTile].repeat_value + "; background-size: " + tiles[mtwtTile][specificTile].size_value + ";");
+              }
               element.color_dark = tiles[mtwtTile][specificTile].color_dark;
               element.color_medium = tiles[mtwtTile][specificTile].color_medium;
               element.color_light = tiles[mtwtTile][specificTile].color_light;
+              element.specificTile = tiles[mtwtTile][specificTile].src_string;
             } else if (tileDay.getDay() === 5) {
               specificTile = Math.floor(Math.random() * tiles[fridayTile].length);
-              element.setAttribute("style", "background-image: url(" + tiles[fridayTile][specificTile].src_string + "); background-repeat: " + tiles[fridayTile][specificTile].repeat_value + "; background-size: " + tiles[fridayTile][specificTile].size_value + ";");
+              if (pastPresentFuture(tileDay) === 'present') {
+                element.setAttribute("style", "background-image: url(" + tiles[fridayTile][specificTile].src_string + "); background-repeat: " + tiles[fridayTile][specificTile].repeat_value + "; background-size: " + tiles[fridayTile][specificTile].size_value + "; border: solid 5px " + tiles[fridayTile][specificTile].color_medium + ";");
+              } else {
+                element.setAttribute("style", "background-image: url(" + tiles[fridayTile][specificTile].src_string + "); background-repeat: " + tiles[fridayTile][specificTile].repeat_value + "; background-size: " + tiles[fridayTile][specificTile].size_value + ";");
+              }
               element.color_dark = tiles[fridayTile][specificTile].color_dark;
               element.color_medium = tiles[fridayTile][specificTile].color_medium;
               element.color_light = tiles[fridayTile][specificTile].color_light;
+              element.specificTile = tiles[fridayTile][specificTile].src_string;
             } else if (tileDay.getDay() === 6) {
               specificTile = Math.floor(Math.random() * tiles[saturdayTile].length);
-              element.setAttribute("style", "background-image: url(" + tiles[saturdayTile][specificTile].src_string + "); background-repeat: " + tiles[saturdayTile][specificTile].repeat_value + "; background-size: " + tiles[saturdayTile][specificTile].size_value + ";");
+              if (pastPresentFuture(tileDay) === 'present') {
+                element.setAttribute("style", "background-image: url(" + tiles[saturdayTile][specificTile].src_string + "); background-repeat: " + tiles[saturdayTile][specificTile].repeat_value + "; background-size: " + tiles[saturdayTile][specificTile].size_value + "; border: solid 5px " + tiles[saturdayTile][specificTile].color_medium + ";");
+              } else {
+                element.setAttribute("style", "background-image: url(" + tiles[saturdayTile][specificTile].src_string + "); background-repeat: " + tiles[saturdayTile][specificTile].repeat_value + "; background-size: " + tiles[saturdayTile][specificTile].size_value + ";");
+              }
               element.color_dark = tiles[saturdayTile][specificTile].color_dark;
               element.color_medium = tiles[saturdayTile][specificTile].color_medium;
               element.color_light = tiles[saturdayTile][specificTile].color_light;
+              element.specificTile = tiles[saturdayTile][specificTile].src_string;
             } else if (tileDay.getDay() === 0) {
               specificTile = Math.floor(Math.random() * tiles[sundayTile].length);
-              element.setAttribute("style", "background-image: url(" + tiles[sundayTile][specificTile].src_string + "); background-repeat: " + tiles[sundayTile][specificTile].repeat_value + "; background-size: " + tiles[sundayTile][specificTile].size_value + ";");
+              if (pastPresentFuture(tileDay) === 'present') {
+                element.setAttribute("style", "background-image: url(" + tiles[sundayTile][specificTile].src_string + "); background-repeat: " + tiles[sundayTile][specificTile].repeat_value + "; background-size: " + tiles[sundayTile][specificTile].size_value + "; border: solid 5px " + tiles[sundayTile][specificTile].color_medium + ";");
+              } else {
+                element.setAttribute("style", "background-image: url(" + tiles[sundayTile][specificTile].src_string + "); background-repeat: " + tiles[sundayTile][specificTile].repeat_value + "; background-size: " + tiles[sundayTile][specificTile].size_value + ";");
+              }
               element.color_dark = tiles[sundayTile][specificTile].color_dark;
               element.color_medium = tiles[sundayTile][specificTile].color_medium;
               element.color_light = tiles[sundayTile][specificTile].color_light;
+              element.specificTile = tiles[sundayTile][specificTile].src_string;
             }
           }
 
@@ -508,9 +536,6 @@
             element.children[0].setAttribute("style", "color: " + element.color_dark + ";");
             element.children[0].setAttribute("style", "opacity: 0.6;");
             offMonthMouseover(element.children[0]);
-          }
-          if (pastPresentFuture(tileDay) === 'present') {
-            element.setAttribute("style", "border: solid 5px " + element.color_medium + ";");
           }
 
           //holiday tiles
@@ -655,7 +680,7 @@
         }
         viewMonth = pullMonthFromParams(userDateViewString);
         viewYear = parseInt(pullYearFromParams(userDateViewString));
-        console.log(viewMonth);
+        // console.log(viewMonth);
         //console.log(viewYear);
 
         switch(viewMonth) {
