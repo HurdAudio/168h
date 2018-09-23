@@ -7629,6 +7629,12 @@ footer img {
   padding-left: 2vmin;
 }
 
+.holidayShareCommentsBar a {
+  float: right;
+  margin-right: 1vmin;
+  margin-top: -4vmin;
+}
+
 #holidayShareComments p {
   margin-left: 9.1em;
 }

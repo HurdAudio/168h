@@ -271,6 +271,39 @@
       vm.userEditTaskShareComment = userEditTaskShareComment;
       vm.userEditTaskShareCommentCompleted = userEditTaskShareCommentCompleted;
       vm.deleteTaskShare = deleteTaskShare;
+      vm.addNewOccasionShareComment = addNewOccasionShareComment;
+
+      function addNewOccasionShareComment(occasionId) {
+        let subObj = {
+          user_id: currentUserId,
+          occasions_share: occasionId,
+          comment: ''
+        };
+        $http.post('/occasions_share_comments', subObj)
+        .then(shareData=>{
+          let share = shareData.data[0];
+          console.log(share);
+          let index = 0;
+          for (let i = 0; i < vm.activeOccasionShares.length; i++) {
+            if (vm.activeOccasionShares[i].id === occasionId) {
+              index = i;
+            }
+          }
+          if (vm.activeOccasionShares[index].comments === undefined) {
+            vm.activeOccasionShares[index].comments = []
+          }
+          vm.activeOccasionShares[index].comments.push(share);
+
+          obtainCommenterNameAndPic(share, index, (vm.activeOccasionShares[index].comments.length - 1));
+
+          setTimeout(()=>{
+            userEditOccasionShareComment(share.id);
+            document.getElementById('thisIsTheOccasionShareCommentEditor' + share.id).focus();
+
+          }, 50);
+        });
+
+      }
 
       function deleteTaskShare(taskId) {
         $http.delete(`/task_shares/${taskId}`)
@@ -641,6 +674,35 @@
         });
       }
 
+      function removeTheBlankOccasionComment(commentId) {
+        $http.delete(`/occasions_share_comments/${commentId}`)
+        .then(deletedData => {
+          let deleted = deletedData.data;
+          for (let i = 0; i < vm.activeOccasionShares.length; i++) {
+            if ((vm.activeOccasionShares[i].comments !== undefined) && (vm.activeOccasionShares[i].comments.length > 0)) {
+              for (let j = 0; j <vm.activeOccasionShares[i].comments.length; j++) {
+                if (parseInt(vm.activeOccasionShares[i].comments[j].id) === parseInt(commentId)) {
+                  vm.activeOccasionShares[i].comments.splice(j, 1);
+                  return;
+                }
+              }
+            }
+          }
+        });
+      }
+
+      function removeBlankOccasionComments() {
+        $http.get(`/occasions_share_commentsbyuser/${currentUserId}`)
+        .then(userCommentsData=>{
+          let userComments = userCommentsData.data;
+          for (let i = 0; i < userComments.length; i++) {
+            if (userComments[i].comment === '') {
+              removeTheBlankOccasionComment(userComments[i].id);
+            }
+          }
+        });
+      }
+
       function userEditOccasionShareCommentCompleted(commentId) {
         let thisIsTheOccasionShareCommentEditor = document.getElementById('thisIsTheOccasionShareCommentEditor' + commentId);
         let thisIsOccasionShareCommentEditDoneDiv = document.getElementById('thisIsOccasionShareCommentEditDoneDiv' + commentId);
@@ -658,6 +720,7 @@
           thisIsOccasionShareComment.innerHTML = edited.comment;
           thisIsOccasionShareComment.setAttribute("style", "visibility: visible;");
           editDeleteOccasionShareCommentDiv.setAttribute("style", "display: initial;");
+          removeBlankOccasionComments();
 
         });
 
