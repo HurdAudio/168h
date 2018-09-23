@@ -886,6 +886,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FFFFFF',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 64,
+          user_id: 1,
+          theme: 'Glass',
+          type: 'friday',
+          src_string: '../img/march_tiles/henry-fournier-68573-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '156%',
+          color_dark: '#020202',
+          color_medium: '#D39856',
+          color_light: '#FAF7F8',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
