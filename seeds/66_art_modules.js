@@ -2104,6 +2104,66 @@ exports.seed = function(knex, Promise) {
           public: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 176,
+          user_author_id: 1,
+          theme: 'Abandoned Places',
+          img_path: './img/modules/abandoned-places-14.jpg',
+          title: 'Disney’s Discovery Island, Lake Buena Vista, Florida',
+          artist: 'unknown artist',
+          year: '2014',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 177,
+          user_author_id: 1,
+          theme: 'Abandoned Places',
+          img_path: './img/modules/abandoned-places-15.jpg',
+          title: 'Aniva Rock Lighthouse, Sakhalinskaya Oblast, Russia',
+          artist: 'unknown artist',
+          year: '2014',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 178,
+          user_author_id: 1,
+          theme: 'Abandoned Places',
+          img_path: './img/modules/abandoned-places-16.jpg',
+          title: 'Canfranc Rail Station, Spain',
+          artist: 'unknown artist',
+          year: '2014',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 179,
+          user_author_id: 1,
+          theme: 'Abandoned Places',
+          img_path: './img/modules/abandoned-places-17.jpg',
+          title: 'Chateau Miranda, Celles, Belgium',
+          artist: 'unknown artist',
+          year: '2014',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 180,
+          user_author_id: 1,
+          theme: 'Abandoned Places',
+          img_path: './img/modules/abandoned-places-18.jpg',
+          title: 'Abandoned Coal Plant, France',
+          artist: 'unknown artist',
+          year: '2014',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
