@@ -3568,6 +3568,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 199,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1740268148/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://repsych.bandcamp.com/album/al-valdes-jr-single-oye-como-va-latin-descarga-boogaloo-guaguanco-peru-65-killer',
+          a_string: 'Al Valdes Jr. single: Oye como va (Latin Descarga * Boogaloo Guaguanco Peru &#39;65) KILLER !!! by Al Valdes Jr. y su conjunto',
+          rule: {
+            "monday": [ 30, 7, 13, 19 ],
+            "tuesday": [ 31, 6, 12, 18 ],
+            "wednesday": [ 4, 10, 16, 22 ],
+            "thursday": [ 3, 9, 15, 20 ],
+            "saturday": [ 31, 8, 14, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 200,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2577618082/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://repsych.bandcamp.com/album/los-yorks-single-peruvian-garage-wild-killer-psych-rock-1968',
+          a_string: 'Los York&#39;s single: Peruvian Garage Wild * Killer Psych Rock 1968 by Los York&#39;s',
+          rule: {
+            "monday": [ 31, 8, 14, 20 ],
+            "tuesday": [ 30, 7, 13, 19 ],
+            "wednesday": [ 31, 6, 12, 18 ],
+            "thursday": [ 4, 10, 16, 22 ],
+            "saturday": [ 3, 9, 15, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 201,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4080612337/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://repsych.bandcamp.com/album/smog-single-peruvian-heavy-psych-wild-dangerous-space-rock-1972',
+          a_string: 'SMOG single: Peruvian heavy psych * wild dangerous * space rock 1972 by SMOG',
+          rule: {
+            "monday": [ 3, 9, 15, 20 ],
+            "tuesday": [ 31, 8, 14, 20 ],
+            "wednesday": [ 30, 7, 13, 19 ],
+            "thursday": [ 31, 6, 12, 18 ],
+            "saturday": [ 4, 10, 16, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
