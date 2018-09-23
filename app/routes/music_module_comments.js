@@ -7,7 +7,7 @@ const router = express.Router();
 
 
 router.get('/', (req, res, next) => {
-  knex('art_module_comments')
+  knex('music_module_comments')
   .select('*')
   .then((results) => {
     res.send(results);
@@ -19,7 +19,7 @@ router.get('/', (req, res, next) => {
 
 router.get('/:id', (req, res, next) => {
 
-  knex('art_module_comments')
+  knex('music_module_comments')
     .select()
     .where('id', req.params.id)
     .first()
@@ -37,10 +37,10 @@ router.get('/:id', (req, res, next) => {
 
 
 router.post('/', (req, res, next) => {
-  knex('art_module_comments')
+  knex('music_module_comments')
   .insert({
     user_id: req.body.user_id,
-    art_module: req.body.art_module,
+    music_module: req.body.music_module,
     comment: req.body.comment
   }, '*')
   .then((result) => {
@@ -53,11 +53,11 @@ router.post('/', (req, res, next) => {
 
 
 router.patch('/:id', (req, res, next) => {
-  knex('art_module_comments')
+  knex('music_module_comments')
   .where('id', req.params.id)
   .update({
     user_id: req.body.user_id,
-    art_module: req.body.art_module,
+    music_module: req.body.music_module,
     comment: req.body.comment
   }, '*')
     .then((results)=>{
@@ -71,7 +71,7 @@ router.patch('/:id', (req, res, next) => {
 router.delete('/:id', (req, res, next) => {
     let record;
 
-      knex('art_module_comments')
+      knex('music_module_comments')
         .where('id', req.params.id)
         .first()
         .then((row) => {
@@ -82,7 +82,7 @@ router.delete('/:id', (req, res, next) => {
           record = row;
 
 
-          return knex('art_module_comments')
+          return knex('music_module_comments')
             .del()
             .where('id', req.params.id);
         })
@@ -93,7 +93,7 @@ router.delete('/:id', (req, res, next) => {
           var obj = {
             id: holder,
             user_id: record.user_id,
-            art_module: record.art_module,
+            music_module: record.music_module,
             comment: record.comment,
             created_at: record.created_at,
             updated_at: record.updated_at
