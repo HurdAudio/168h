@@ -975,10 +975,13 @@
       }
 
       function occasionAcceptSelect(occasionId) {
+        let now = new Date();
         let subObj = {
           responded: true,
-          accepted: true
+          accepted: true,
+          updated_at: now
         };
+
         $http.patch(`/occasions_shares/${occasionId}`, subObj)
         .then(patchedShareData=>{
           let patchedShare = patchedShareData.data;
@@ -1002,9 +1005,11 @@
       }
 
       function occasionDeclineSelect(occasionId) {
+        let now = new Date();
         let subObj = {
           responded: true,
-          accepted: false
+          accepted: false,
+          updated_at: now
         };
         $http.patch(`/occasions_shares/${occasionId}`, subObj)
         .then(patchedShareData=>{
@@ -1287,6 +1292,7 @@
               vm.activeOccasionShares[i].cleanDate = cleanDateHoliday(shares[i].created_at) + ' - ' + timeDate(shares[i].updated_at);
               occasionNameAndOccurance(shares[i].occasion_id, i);
               retreiveOccasionShareComments(shares[i], i);
+              vm.activeOccasionShares[i].cleanUpdatedAt = cleanDateHoliday(shares[i].updated_at) + ' - ' + timeDate(shares[i].updated_at);
             }
             setTimeout(()=>{
               for (let j = 0; j < shares.length; j++) {
