@@ -10229,6 +10229,34 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 656,
+          user_id: 1,
+          name: 'César Estrada Chávez (labor leader/civil rights activist) born 1927',
+          color: '#790F0F',
+          picture: './img/dissent/cesar-estrada-chavez.jpg',
+          day_of: new Date ('1927-03-31T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 657,
+          user_id: 1,
+          name: 'Jesus returned to this world on this day in 2019, according to Ronald Weinland after correcting his previously inaccurate predictions from 2011, 2012 and 2013.',
+          color: '#704B44',
+          picture: './img/doomsday/ronaldweinland.png',
+          day_of: new Date ('2019-06-09T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
