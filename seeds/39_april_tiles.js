@@ -872,6 +872,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#9A979E',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 63,
+          user_id: 1,
+          theme: 'Water',
+          type: 'week',
+          src_string: '../img/april_tiles/jason-leung-719219-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '156%',
+          color_dark: '#000002',
+          color_medium: '#FEAE47',
+          color_light: '#9C9F93',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
