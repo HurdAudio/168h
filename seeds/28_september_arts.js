@@ -7304,6 +7304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 366,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/is-your-life-sweet-1996.jpg',
+          title: 'Is Your Life Sweet?',
+          artist: 'Lygia Pape',
+          year: '1996',
+          rule: {
+            "monday": [ 24, 30, 18, 26 ],
+            "tuesday": [ 23, 29, 17, 25 ],
+            "wednesday": [ 22, 28, 16, 24 ],
+            "thursday": [ 21, 27, 15, 23 ],
+            "friday": [ 10, 26, 14, 23 ],
+            "saturday": [ 9, 16, 13, 21 ],
+            "sunday": [ 17, 24, 12, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 367,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/hibernation-1954.jpg',
+          title: 'Hibernation',
+          artist: 'Morris Graves',
+          year: '1954',
+          rule: {
+            "monday": [ 17, 24, 12, 19 ],
+            "tuesday": [ 24, 30, 18, 26 ],
+            "wednesday": [ 23, 29, 17, 25 ],
+            "thursday": [ 22, 28, 16, 24 ],
+            "friday": [ 21, 27, 15, 23 ],
+            "saturday": [ 10, 26, 14, 23 ],
+            "sunday": [ 9, 16, 13, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 368,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/young-southern-girls-1980.jpg',
+          title: 'Young Southern Girls',
+          artist: 'Lin Fengmian',
+          year: '1980',
+          rule: {
+            "monday": [ 9, 16, 13, 21 ],
+            "tuesday": [ 17, 24, 12, 19 ],
+            "wednesday": [ 24, 30, 18, 26 ],
+            "thursday": [ 23, 29, 17, 25 ],
+            "friday": [ 22, 28, 16, 24 ],
+            "saturday": [ 21, 27, 15, 23 ],
+            "sunday": [ 10, 26, 14, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 369,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/no-work-1948.jpg',
+          title: 'No Work',
+          artist: 'George Pemba',
+          year: '1948',
+          rule: {
+            "monday": [ 10, 26, 14, 23 ],
+            "tuesday": [ 9, 16, 13, 21 ],
+            "wednesday": [ 17, 24, 12, 19 ],
+            "thursday": [ 24, 30, 18, 26 ],
+            "friday": [ 23, 29, 17, 25 ],
+            "saturday": [ 22, 28, 16, 24 ],
+            "sunday": [ 21, 27, 15, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 370,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/3d-1984.jpg',
+          title: '3D',
+          artist: '3D',
+          year: '1984',
+          rule: {
+            "monday": [ 21, 27, 15, 23 ],
+            "tuesday": [ 10, 26, 14, 23 ],
+            "wednesday": [ 9, 16, 13, 21 ],
+            "thursday": [ 17, 24, 12, 19 ],
+            "friday": [ 24, 30, 18, 26 ],
+            "saturday": [ 23, 29, 17, 25 ],
+            "sunday": [ 22, 28, 16, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
