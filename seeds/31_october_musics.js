@@ -3784,6 +3784,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 211,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2305592401/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bosse-de-nage.bandcamp.com/album/further-still',
+          a_string: 'Further Still by Bosse-de-Nage',
+          rule: {
+            "monday": [ 7, 17, 27, 30 ],
+            "tuesday": [ 6, 16, 26, 29 ],
+            "wednesday": [ 5, 15, 26, 28 ],
+            "thursday": [ 4, 14, 24, 27 ],
+            "saturday": [ 8, 18, 28, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 212,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=369013589/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sweatyandcramped.bandcamp.com/album/emotion-no',
+          a_string: '&quot;Emotion, No&quot; by V/A',
+          rule: {
+            "monday": [ 8, 18, 28, 31 ],
+            "tuesday": [ 7, 17, 27, 30 ],
+            "wednesday": [ 6, 16, 26, 29 ],
+            "thursday": [ 5, 15, 26, 28 ],
+            "saturday": [ 4, 14, 24, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 213,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1715383355/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sweatyandcramped.bandcamp.com/album/victims-7',
+          a_string: 'VICTIMS [7&quot;] by DAVID BORING',
+          rule: {
+            "monday": [ 4, 14, 24, 27 ],
+            "tuesday": [ 8, 18, 28, 31 ],
+            "wednesday": [ 7, 17, 27, 30 ],
+            "thursday": [ 6, 16, 26, 29 ],
+            "saturday": [ 5, 15, 26, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
