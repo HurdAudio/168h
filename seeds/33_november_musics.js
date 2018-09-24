@@ -3676,6 +3676,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 205,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2220074960/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://onenessofjuju.bandcamp.com/album/african-rhythms',
+          a_string: 'African Rhythms by Oneness of Juju',
+          rule: {
+            "monday": [ 28, 9, 20, 22 ],
+            "tuesday": [ 27, 8, 19, 1 ],
+            "wednesday": [ 1, 12, 23, 27 ],
+            "thursday": [ 30, 11, 22, 26 ],
+            "saturday": [ 29, 10, 21, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 206,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3598762176/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ibaaku.bandcamp.com/album/alien-cartoon-2',
+          a_string: 'Alien Cartoon by Ibaaku',
+          rule: {
+            "monday": [ 29, 10, 21, 25 ],
+            "tuesday": [ 28, 9, 20, 22 ],
+            "wednesday": [ 27, 8, 19, 1 ],
+            "thursday": [ 1, 12, 23, 27 ],
+            "saturday": [ 30, 11, 22, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 207,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2023254203/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://oseikorankye.bandcamp.com/album/seperewa-of-ghana-3mmer3-nhyina-ns3',
+          a_string: 'Seperewa of Ghana: 3mmer3 Nhyina Ns3 by Osei Korankye',
+          rule: {
+            "monday": [ 30, 11, 22, 26 ],
+            "tuesday": [ 29, 10, 21, 25 ],
+            "wednesday": [ 28, 9, 20, 22 ],
+            "thursday": [ 27, 8, 19, 1 ],
+            "saturday": [ 1, 12, 23, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
