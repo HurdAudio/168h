@@ -6904,6 +6904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 346,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/blue-depth-1978.jpg',
+          title: 'Blue Depth',
+          artist: 'Genevieve Asse',
+          year: '1978',
+          rule: {
+            "monday": [ 21, 26, 2, 9 ],
+            "tuesday": [ 27, 2, 8, 13 ],
+            "wednesday": [ 26, 1, 6, 12 ],
+            "thursday": [ 25, 29, 6, 10 ],
+            "friday": [ 24, 27, 4, 9 ],
+            "saturday": [ 23, 27, 4, 9 ],
+            "sunday": [ 22, 27, 3, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 347,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/bunker-iv-1978.jpg',
+          title: 'Bunker IV',
+          artist: 'Joachim Bandau',
+          year: '1978',
+          rule: {
+            "monday": [ 22, 27, 3, 8 ],
+            "tuesday": [ 21, 26, 2, 9 ],
+            "wednesday": [ 27, 2, 8, 13 ],
+            "thursday": [ 26, 1, 6, 12 ],
+            "friday": [ 25, 29, 6, 10 ],
+            "saturday": [ 24, 27, 4, 9 ],
+            "sunday": [ 23, 27, 4, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 348,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/depli-bleu-ii-1979.jpg',
+          title: 'Depli bleu (II)',
+          artist: 'Jean Degottex',
+          year: '1979',
+          rule: {
+            "monday": [ 23, 27, 4, 9 ],
+            "tuesday": [ 22, 27, 3, 8 ],
+            "wednesday": [ 21, 26, 2, 9 ],
+            "thursday": [ 27, 2, 8, 13 ],
+            "friday": [ 26, 1, 6, 12 ],
+            "saturday": [ 25, 29, 6, 10 ],
+            "sunday": [ 24, 27, 4, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 349,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/broken-kilometer-1979.jpg',
+          title: 'Broken Kilometer',
+          artist: 'Walter De Maria',
+          year: '1979',
+          rule: {
+            "monday": [ 24, 27, 4, 9 ],
+            "tuesday": [ 23, 27, 4, 9 ],
+            "wednesday": [ 22, 27, 3, 8 ],
+            "thursday": [ 21, 26, 2, 9 ],
+            "friday": [ 27, 2, 8, 13 ],
+            "saturday": [ 26, 1, 6, 12 ],
+            "sunday": [ 25, 29, 6, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 350,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/colonna-1979.jpg',
+          title: 'Colonna',
+          artist: 'Ettore Spalletti',
+          year: '1979',
+          rule: {
+            "monday": [ 26, 30, 7, 11 ],
+            "tuesday": [ 25, 28, 5, 10 ],
+            "wednesday": [ 24, 28, 5, 10 ],
+            "thursday": [ 23, 28, 4, 9 ],
+            "friday": [ 22, 27, 3, 10 ],
+            "saturday": [ 28, 3, 9, 14 ],
+            "sunday": [ 27, 2, 7, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
