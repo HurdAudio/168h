@@ -8361,7 +8361,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 533,
           user_id: 1,
-          name: 'Jordan Zimmermann pitches a no-hitter for the Washington Nationals vs. Miami Marlins',
+          name: 'Jordan Zimmermann pitches a no-hitter for the Washington Nationals vs. Miami Marlins in 2014',
           color: '#A90109',
           picture: './img/baseball/jordanzimmermannnono.jpg',
           day_of: new Date ('2014-09-28T13:44:00.000Z'),
