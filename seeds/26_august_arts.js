@@ -7504,6 +7504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 376,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/sennoy-market-kiev-1914.jpg',
+          title: 'Sennoy market. Kiev.',
+          artist: 'Oleksandr Bogomazov',
+          year: '1914',
+          rule: {
+            "monday": [ 22, 24, 3, 19 ],
+            "tuesday": [ 21, 24, 2, 18 ],
+            "wednesday": [ 20, 23, 1, 17 ],
+            "thursday": [ 26, 30, 7, 23 ],
+            "friday": [ 25, 28, 6, 22 ],
+            "saturday": [ 24, 28, 5, 21 ],
+            "sunday": [ 23, 27, 4, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 377,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/adolescente-1928.jpg',
+          title: 'Adolescente',
+          artist: 'Antonietta Raphael',
+          year: '1928',
+          rule: {
+            "monday": [ 23, 27, 4, 20 ],
+            "tuesday": [ 22, 24, 3, 19 ],
+            "wednesday": [ 21, 24, 2, 18 ],
+            "thursday": [ 20, 23, 1, 17 ],
+            "friday": [ 26, 30, 7, 23 ],
+            "saturday": [ 25, 28, 6, 22 ],
+            "sunday": [ 24, 28, 5, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 378,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/street-moscow-1910.jpg',
+          title: 'Street, Moscow',
+          artist: 'Aristarkh Lentulov',
+          year: '1910',
+          rule: {
+            "monday": [ 25, 29, 6, 22 ],
+            "tuesday": [ 24, 28, 5, 21 ],
+            "wednesday": [ 23, 25, 4, 20 ],
+            "thursday": [ 22, 25, 3, 19 ],
+            "friday": [ 21, 24, 2, 18 ],
+            "saturday": [ 27, 31, 8, 24 ],
+            "sunday": [ 26, 29, 7, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 379,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/machinery-1920.jpg',
+          title: 'Machinery',
+          artist: 'Charles Demuth',
+          year: '1920',
+          rule: {
+            "monday": [ 26, 29, 7, 23 ],
+            "tuesday": [ 25, 29, 6, 22 ],
+            "wednesday": [ 24, 28, 5, 21 ],
+            "thursday": [ 23, 25, 4, 20 ],
+            "friday": [ 22, 25, 3, 19 ],
+            "saturday": [ 21, 24, 2, 18 ],
+            "sunday": [ 27, 31, 8, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 380,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/witch-s-head-1915.jpg',
+          title: 'Witch\'s head',
+          artist: 'August Natterer',
+          year: '1915',
+          rule: {
+            "monday": [ 27, 31, 8, 24 ],
+            "tuesday": [ 26, 29, 7, 23 ],
+            "wednesday": [ 25, 29, 6, 22 ],
+            "thursday": [ 24, 28, 5, 21 ],
+            "friday": [ 23, 25, 4, 20 ],
+            "saturday": [ 22, 25, 3, 19 ],
+            "sunday": [ 21, 24, 2, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
