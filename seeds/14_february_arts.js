@@ -8704,6 +8704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 436,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/eab8adbf-f059-4917-bfa7-da279d708fb5_570.jpeg',
+          title: 'Girl in Armchair',
+          artist: 'Gwendolyn Knight',
+          year: '1950',
+          rule: {
+            "monday": [ 4, 12, 20, 28 ],
+            "tuesday": [ 5, 14, 22, 1 ],
+            "wednesday": [ 11, 16, 22, 3 ],
+            "thursday": [ 10, 18, 26, 5 ],
+            "friday": [ 12, 22, 28, 5 ],
+            "saturday": [ 14, 22, 1, 11 ],
+            "sunday": [ 14, 24, 20, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 437,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/7028frm_546241d91428a06.jpg',
+          title: 'Dreams #1',
+          artist: 'Jacob Lawrence',
+          year: '1965',
+          rule: {
+            "monday": [ 14, 24, 20, 10 ],
+            "tuesday": [ 4, 12, 20, 28 ],
+            "wednesday": [ 5, 14, 22, 1 ],
+            "thursday": [ 11, 16, 22, 3 ],
+            "friday": [ 10, 18, 26, 5 ],
+            "saturday": [ 12, 22, 28, 5 ],
+            "sunday": [ 14, 22, 1, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 438,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/85ee5c98da4c4a9c37eed8945fe0ca5e.jpg',
+          title: 'Portrait of a woman and a young boy in a living room',
+          artist: 'Deana Lawson',
+          year: '2017',
+          rule: {
+            "monday": [ 14, 22, 1, 11 ],
+            "tuesday": [ 14, 24, 20, 10 ],
+            "wednesday": [ 4, 12, 20, 28 ],
+            "thursday": [ 5, 14, 22, 1 ],
+            "friday": [ 11, 16, 22, 3 ],
+            "saturday": [ 10, 18, 26, 5 ],
+            "sunday": [ 12, 22, 28, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 439,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/30051180774_8a7a840af2_b.jpg',
+          title: 'Stroll with Balloons',
+          artist: 'Hughie Lee-Smith',
+          year: '1987',
+          rule: {
+            "monday": [ 12, 22, 28, 5 ],
+            "tuesday": [ 14, 22, 1, 11 ],
+            "wednesday": [ 14, 24, 20, 10 ],
+            "thursday": [ 4, 12, 20, 28 ],
+            "friday": [ 5, 14, 22, 1 ],
+            "saturday": [ 11, 16, 22, 3 ],
+            "sunday": [ 10, 18, 26, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 440,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/SAAM-1994.17_1.jpg',
+          title: 'The Death of Cleopatra',
+          artist: 'dmonia Lewis',
+          year: '1876',
+          rule: {
+            "monday": [ 10, 18, 26, 5 ],
+            "tuesday": [ 12, 22, 28, 5 ],
+            "wednesday": [ 14, 22, 1, 11 ],
+            "thursday": [ 14, 24, 20, 10 ],
+            "friday": [ 4, 12, 20, 28 ],
+            "saturday": [ 5, 14, 22, 1 ],
+            "sunday": [ 11, 16, 22, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
