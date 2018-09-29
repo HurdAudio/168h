@@ -4756,6 +4756,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 265,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3444343969/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://othermindsrecords.bandcamp.com/album/the-complete-music-of-carl-ruggles',
+          a_string: 'The Complete Music of Carl Ruggles by Carl Ruggles',
+          rule: {
+            "monday": [ 12, 19, 20, 21 ],
+            "tuesday": [ 16, 23, 24, 25 ],
+            "wednesday": [ 15, 21, 22, 24 ],
+            "thursday": [ 14, 21, 22, 23 ],
+            "saturday": [ 13, 19, 20, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 266,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2973744928/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://othermindsrecords.bandcamp.com/album/is-there-anybody-out-there',
+          a_string: 'Is There Anybody Out There? by Sheila Booth',
+          rule: {
+            "monday": [ 14, 20, 21, 22 ],
+            "tuesday": [ 13, 20, 21, 22 ],
+            "wednesday": [ 17, 24, 25, 26 ],
+            "thursday": [ 16, 22, 23, 25 ],
+            "saturday": [ 15, 22, 23, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 267,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1263479695/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://othermindsrecords.bandcamp.com/album/next-tone-please',
+          a_string: 'Next Tone, Please by John Bischoff',
+          rule: {
+            "monday": [ 15, 22, 23, 24 ],
+            "tuesday": [ 14, 20, 21, 22 ],
+            "wednesday": [ 13, 20, 21, 22 ],
+            "thursday": [ 17, 24, 25, 26 ],
+            "saturday": [ 16, 22, 23, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
