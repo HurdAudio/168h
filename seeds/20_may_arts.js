@@ -8104,6 +8104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 406,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/the-coastal-bus-company-1888.jpg',
+          title: 'The Coastal bus company',
+          artist: 'Henri de Toulouse-Lautrec',
+          year: '1888',
+          rule: {
+            "monday": [ 24, 3, 11, 23 ],
+            "tuesday": [ 21, 1, 11, 31 ],
+            "wednesday": [ 20, 31, 9, 19 ],
+            "thursday": [ 18, 28, 7, 15 ],
+            "friday": [ 16, 25, 6, 15 ],
+            "saturday": [ 26, 7, 17, 25 ],
+            "sunday": [ 26, 6, 15, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 407,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/the-flower-seller-1894.jpg',
+          title: 'The Flower Seller',
+          artist: 'Henri de Toulouse-Lautrec',
+          year: '1894',
+          rule: {
+            "monday": [ 26, 6, 15, 25 ],
+            "tuesday": [ 24, 3, 11, 23 ],
+            "wednesday": [ 21, 1, 11, 31 ],
+            "thursday": [ 20, 31, 9, 19 ],
+            "friday": [ 18, 28, 7, 15 ],
+            "saturday": [ 16, 25, 6, 15 ],
+            "sunday": [ 26, 7, 17, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 408,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/the-laundryman-calling-at-the-brothal-1894.jpg',
+          title: 'The Laundryman Calling at the Brothal',
+          artist: 'Henri de Toulouse-Lautrec',
+          year: '1894',
+          rule: {
+            "monday": [ 26, 7, 17, 25 ],
+            "tuesday": [ 26, 6, 15, 25 ],
+            "wednesday": [ 24, 3, 11, 23 ],
+            "thursday": [ 21, 1, 11, 31 ],
+            "friday": [ 20, 31, 9, 19 ],
+            "saturday": [ 18, 28, 7, 15 ],
+            "sunday": [ 16, 25, 6, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 409,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/the-bartender-1900.jpg',
+          title: 'The Bartender',
+          artist: 'Henri de Toulouse-Lautrec',
+          year: '1900',
+          rule: {
+            "monday": [ 16, 25, 6, 15 ],
+            "tuesday": [ 26, 7, 17, 25 ],
+            "wednesday": [ 26, 6, 15, 25 ],
+            "thursday": [ 24, 3, 11, 23 ],
+            "friday": [ 21, 1, 11, 31 ],
+            "saturday": [ 20, 31, 9, 19 ],
+            "sunday": [ 18, 28, 7, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 410,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/craftsman-modern.jpg',
+          title: 'Craftsman modern',
+          artist: 'Henri de Toulouse-Lautrec',
+          year: '?',
+          rule: {
+            "monday": [ 18, 28, 7, 15 ],
+            "tuesday": [ 16, 25, 6, 15 ],
+            "wednesday": [ 26, 7, 17, 25 ],
+            "thursday": [ 26, 6, 15, 25 ],
+            "friday": [ 24, 3, 11, 23 ],
+            "saturday": [ 21, 1, 11, 31 ],
+            "sunday": [ 20, 31, 9, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
