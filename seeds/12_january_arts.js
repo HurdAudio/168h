@@ -8904,6 +8904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 446,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/nude-1960.jpg',
+          title: 'Nude',
+          artist: 'Auguste Herbin',
+          year: '1960',
+          rule: {
+            "monday": [ 14, 16, 20, 23 ],
+            "tuesday": [ 16, 18, 19, 20 ],
+            "wednesday": [ 1, 2, 13, 5 ],
+            "thursday": [ 4, 6, 29, 18 ],
+            "friday": [ 9, 7, 30, 2 ],
+            "saturday": [ 9, 10, 1, 5 ],
+            "sunday": [ 12, 14, 15, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 447,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/surya-chandra-1-1986.jpg',
+          title: 'Surya-Chandra #1',
+          artist: 'Denise Green',
+          year: '1986',
+          rule: {
+            "monday": [ 12, 14, 15, 17 ],
+            "tuesday": [ 14, 16, 20, 23 ],
+            "wednesday": [ 16, 18, 19, 20 ],
+            "thursday": [ 1, 2, 13, 5 ],
+            "friday": [ 4, 6, 29, 18 ],
+            "saturday": [ 9, 7, 30, 2 ],
+            "sunday": [ 9, 10, 1, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 448,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/untitled-1969.jpg',
+          title: 'Untitled',
+          artist: 'Kazuo Shiraga',
+          year: '1969',
+          rule: {
+            "monday": [ 10, 11, 2, 6 ],
+            "tuesday": [ 13, 15, 16, 18 ],
+            "wednesday": [ 15, 17, 21, 24 ],
+            "thursday": [ 17, 19, 20, 21 ],
+            "friday": [ 2, 3, 14, 6 ],
+            "saturday": [ 5, 7, 30, 19 ],
+            "sunday": [ 10, 8, 31, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 449,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/never-before-2001.jpg',
+          title: 'Never Before',
+          artist: 'Basil Beattie',
+          year: '2001',
+          rule: {
+            "monday": [ 10, 8, 31, 3 ],
+            "tuesday": [ 10, 11, 2, 6 ],
+            "wednesday": [ 13, 15, 16, 18 ],
+            "thursday": [ 15, 17, 21, 24 ],
+            "friday": [ 17, 19, 20, 21 ],
+            "saturday": [ 2, 3, 14, 6 ],
+            "sunday": [ 5, 7, 30, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 450,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/four-seasons-1980.jpg',
+          title: 'Four Seasons',
+          artist: 'Leo Valledor',
+          year: '1980',
+          rule: {
+            "monday": [ 5, 7, 30, 19 ],
+            "tuesday": [ 10, 8, 31, 3 ],
+            "wednesday": [ 10, 11, 2, 6 ],
+            "thursday": [ 13, 15, 16, 18 ],
+            "friday": [ 15, 17, 21, 24 ],
+            "saturday": [ 17, 19, 20, 21 ],
+            "sunday": [ 2, 3, 14, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
