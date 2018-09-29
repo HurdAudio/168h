@@ -10257,6 +10257,34 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 658,
+          user_id: 1,
+          name: 'Nelson Cruikshank (expert on Social Security/Medicare/policy on aging/labor union activist) born 1902.',
+          color: '#202626',
+          picture: './img/dissent/1311000086-l.jpg',
+          day_of: new Date ('1902-06-21T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 659,
+          user_id: 1,
+          name: 'Thomas R. Donahue (former Secretary-Treasurer, President and President Emeritus) born in 1928',
+          color: '#71392A',
+          picture: './img/dissent/Thomas-Reilly-Donahue_medium.jpg',
+          day_of: new Date ('1928-09-04T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
