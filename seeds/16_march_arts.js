@@ -8504,6 +8504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 426,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/sweet-for-three-oranges-1995.jpg',
+          title: 'Sweet for Three Oranges',
+          artist: 'Jessica Stockholder',
+          year: '1995',
+          rule: {
+            "monday": [ 26, 5, 13, 23 ],
+            "tuesday": [ 25, 4, 12, 22 ],
+            "wednesday": [ 24, 3, 12, 21 ],
+            "thursday": [ 30, 8, 18, 26 ],
+            "friday": [ 29, 8, 16, 26 ],
+            "saturday": [ 29, 7, 15, 25 ],
+            "sunday": [ 27, 6, 14, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 427,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/nu-azul-1997.jpg',
+          title: 'Nu Azul',
+          artist: 'Beatriz Milhazes',
+          year: '1997',
+          rule: {
+            "monday": [ 28, 7, 15, 25 ],
+            "tuesday": [ 27, 7, 14, 24 ],
+            "wednesday": [ 26, 5, 13, 23 ],
+            "thursday": [ 25, 4, 13, 22 ],
+            "friday": [ 31, 9, 19, 27 ],
+            "saturday": [ 30, 9, 17, 27 ],
+            "sunday": [ 30, 8, 16, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 428,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/48a8.jpg',
+          title: 'Mother 3',
+          artist: 'Małgorzata Serwatka',
+          year: '1993',
+          rule: {
+            "monday": [ 30, 8, 16, 26 ],
+            "tuesday": [ 28, 7, 15, 25 ],
+            "wednesday": [ 27, 7, 14, 24 ],
+            "thursday": [ 26, 5, 13, 23 ],
+            "friday": [ 25, 4, 13, 22 ],
+            "saturday": [ 31, 9, 19, 27 ],
+            "sunday": [ 30, 9, 17, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 429,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/l-entre-2015-150-by-70cm-copy.jpg',
+          title: 'L\'Entre',
+          artist: 'Li CHEVALIER',
+          year: '2015',
+          rule: {
+            "monday": [ 30, 9, 17, 27 ],
+            "tuesday": [ 30, 8, 16, 26 ],
+            "wednesday": [ 28, 7, 15, 25 ],
+            "thursday": [ 27, 7, 14, 24 ],
+            "friday": [ 26, 5, 13, 23 ],
+            "saturday": [ 25, 4, 13, 22 ],
+            "sunday": [ 31, 9, 19, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 430,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/hate-and-power-can-be-a-terrible-thing-2004.jpg',
+          title: 'Hate and Power Can be a Terrible Thing',
+          artist: 'Tracey Emin',
+          year: '2004',
+          rule: {
+            "monday": [ 31, 9, 19, 27 ],
+            "tuesday": [ 30, 9, 17, 27 ],
+            "wednesday": [ 30, 8, 16, 26 ],
+            "thursday": [ 28, 7, 15, 25 ],
+            "friday": [ 27, 7, 14, 24 ],
+            "saturday": [ 26, 5, 13, 23 ],
+            "sunday": [ 25, 4, 13, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
