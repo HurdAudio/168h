@@ -4216,6 +4216,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 235,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4042999787/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://billygomberg.bandcamp.com/album/quiet-barrier',
+          a_string: 'quiet barrier by Billy Gomberg',
+          rule: {
+            "monday": [ 2, 6, 11, 23 ],
+            "tuesday": [ 2, 5, 11, 22 ],
+            "wednesday": [ 30, 8, 10, 21 ],
+            "thursday": [ 4, 8, 14, 25 ],
+            "saturday": [ 3, 6, 11, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 236,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=174282234/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://billygomberg.bandcamp.com/album/beginners',
+          a_string: 'Beginners by Billy Gomberg',
+          rule: {
+            "monday": [ 3, 6, 11, 23 ],
+            "tuesday": [ 2, 6, 11, 23 ],
+            "wednesday": [ 2, 5, 11, 22 ],
+            "thursday": [ 30, 8, 10, 21 ],
+            "saturday": [ 4, 8, 14, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 237,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=760632817/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://billygomberg.bandcamp.com/album/a-changed-meaning',
+          a_string: 'A Changed Meaning by Billy Gomberg',
+          rule: {
+            "monday": [ 4, 8, 14, 25 ],
+            "tuesday": [ 3, 6, 11, 23 ],
+            "wednesday": [ 2, 6, 11, 23 ],
+            "thursday": [ 2, 5, 11, 22 ],
+            "saturday": [ 30, 8, 10, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
