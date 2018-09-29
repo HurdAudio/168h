@@ -2997,6 +2997,22 @@ footer img {
   opacity: 1;
 }
 
+#artSharesBar {
+  font-family: 'Asul', serif;
+  font-size: 18px
+  background: #3F2E15;
+  background-color: -webkit-linear-gradient(-135deg, #3F2E15, #C2AF0A);
+  background: -o-linear-gradient(-135deg, #3F2E15, #C2AF0A);
+  background: -moz-linear-gradient(-135deg, #3F2E15, #C2AF0A);
+  background: linear-gradient(-135deg, #3F2E15, #C2AF0A);
+  border-radius: 5px;
+  margin: 0;
+  padding:0;
+  height: 3.8em;
+  top: 0%;
+  opacity: 1;
+}
+
 #occasionSharesBar {
   font-family: 'Asul', serif;
   font-size: 18px
@@ -3048,6 +3064,15 @@ footer img {
 }
 
 #observanceSharesNotifier {
+  background-image: url(../img/background-2030242.jpg);
+  background-repeat: repeat;
+  background-size: 75%;
+  font-family: 'Alike Angular', serif;
+  font-weight: 200;
+  font-size: 18px;
+}
+
+#artSharesNotifier {
   background-image: url(../img/background-2030242.jpg);
   background-repeat: repeat;
   background-size: 75%;
@@ -3140,6 +3165,26 @@ footer img {
 
 
 #observanceSharesNotifier img {
+  float: left;
+  height: 7em;
+  width: 7em;
+  margin-left: 1.6em;
+  margin-top: 1.2em;
+  margin-right: 1.2em;
+  border: 2px solid #0000cc;
+}
+
+.artShareDisplay {
+  width: 80%;
+}
+
+#artSharesNotifier h3 {
+  margin: 1vmin 1vmin 1vmin 4vmin;
+}
+
+
+
+#artSharesNotifier img {
   float: left;
   height: 7em;
   width: 7em;
