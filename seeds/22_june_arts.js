@@ -7904,6 +7904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 396,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/21-2009_375.JPG',
+          title: 'Allegiance with Wakefulness',
+          artist: 'Shirin Neshat',
+          year: '1994',
+          rule: {
+            "monday": [ 21, 1, 11, 19 ],
+            "tuesday": [ 20, 30, 10, 18 ],
+            "wednesday": [ 26, 6, 16, 23 ],
+            "thursday": [ 25, 5, 15, 23 ],
+            "friday": [ 24, 4, 14, 22 ],
+            "saturday": [ 23, 3, 13, 21 ],
+            "sunday": [ 2, 12, 22, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 397,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/irene-liebler-fine-art-photography-portfolio-12-638.jpg',
+          title: 'Who Moved My Cheese',
+          artist: 'Irene Liebler',
+          year: '2014',
+          rule: {
+            "monday": [ 2, 12, 22, 20 ],
+            "tuesday": [ 21, 1, 11, 19 ],
+            "wednesday": [ 20, 30, 10, 18 ],
+            "thursday": [ 26, 6, 16, 23 ],
+            "friday": [ 25, 5, 15, 23 ],
+            "saturday": [ 24, 4, 14, 22 ],
+            "sunday": [ 23, 3, 13, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 398,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/photography-art-wallpaper-pictures-5.jpg',
+          title: 'Ivy Bruce',
+          artist: 'unknown title',
+          year: '2016',
+          rule: {
+            "monday": [ 23, 3, 13, 21 ],
+            "tuesday": [ 2, 12, 22, 20 ],
+            "wednesday": [ 21, 1, 11, 19 ],
+            "thursday": [ 20, 30, 10, 18 ],
+            "friday": [ 26, 6, 16, 23 ],
+            "saturday": [ 25, 5, 15, 23 ],
+            "sunday": [ 24, 4, 14, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 399,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/122531751-98e8b9c9-4559-4212-8200-4928ea4daa89.jpg',
+          title: 'Ero lì da turista, senza le mie apparecchiature - racconta  - E come molti miei colleghi, mi sono ritrovato nel mezzo degli attentati più sanguinari che la Francia abbia mai conosciuto. La mattina dopo ho raggiunto i luoghi della tragedia e con il mio smartphone ho raccolto le immagini in bianco e nero',
+          artist: 'Valéry Hache',
+          year: '2015',
+          rule: {
+            "monday": [ 25, 5, 15, 23 ],
+            "tuesday": [ 24, 4, 14, 22 ],
+            "wednesday": [ 3, 13, 23, 21 ],
+            "thursday": [ 22, 2, 12, 20 ],
+            "friday": [ 21, 1, 11, 19 ],
+            "saturday": [ 27, 7, 17, 24 ],
+            "sunday": [ 26, 6, 16, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 400,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/Richard-Avedon-Photography-1.jpg',
+          title: 'Audrey Hepburn',
+          artist: 'Richard Avedon',
+          year: '1967',
+          rule: {
+            "monday": [ 26, 6, 16, 24 ],
+            "tuesday": [ 25, 5, 15, 23 ],
+            "wednesday": [ 24, 4, 14, 22 ],
+            "thursday": [ 3, 13, 23, 21 ],
+            "friday": [ 22, 2, 12, 20 ],
+            "saturday": [ 21, 1, 11, 19 ],
+            "sunday": [ 27, 7, 17, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
