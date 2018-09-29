@@ -4324,6 +4324,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 241,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=445688392/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://kalimalone.bandcamp.com/album/cast-of-mind',
+          a_string: 'Cast of Mind by Kali Malone',
+          rule: {
+            "monday": [ 7, 14, 20, 2 ],
+            "tuesday": [ 6, 12, 19, 1 ],
+            "wednesday": [ 5, 11, 18, 31 ],
+            "thursday": [ 4, 10, 17, 30 ],
+            "saturday": [ 3, 9, 16, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 242,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1715502580/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://kalimalone.bandcamp.com/album/organ-dirges-2016-2017',
+          a_string: 'Organ Dirges 2016-2017 by Kali Malone',
+          rule: {
+            "monday": [ 3, 9, 16, 29 ],
+            "tuesday": [ 7, 14, 20, 2 ],
+            "wednesday": [ 6, 12, 19, 1 ],
+            "thursday": [ 5, 11, 18, 31 ],
+            "saturday": [ 4, 10, 17, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 243,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2209518498/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://kalimalone.bandcamp.com/album/velocity-of-sleep',
+          a_string: 'Velocity of Sleep by Kali Malone',
+          rule: {
+            "monday": [ 4, 10, 17, 30 ],
+            "tuesday": [ 3, 9, 16, 29 ],
+            "wednesday": [ 7, 14, 20, 2 ],
+            "thursday": [ 6, 12, 19, 1 ],
+            "saturday": [ 5, 11, 18, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
