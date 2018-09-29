@@ -4037,9 +4037,10 @@
           <a href="" class="btn" ng-click="$ctrl.tileModuleDisplay()" id="tileModuleDisplayButton">Tiles</a>
         </div>
         <div id="availableTilesModules">
-            <img src="../img/march_tiles/the-wait-2061662_1920.jpg">
-            <p>Glass</p>
-            <p>added by: Devin Hurd</p>
+          <main ng-repeat="tilemod in $ctrl.tileModulePreview | orderBy : $ctrl.sortBy">
+            <img src="{{tilemod.src_string}}">
+            <p>{{tilemod.theme}}</p>
+            <p>added by: {{tilemod.authorName}}</p>
             <a class="btn" href="#">view</a>
             <a class="btn" href="#">install</a>
             <div class="musicModuleCommentsBar">
@@ -4052,6 +4053,7 @@
               <p>Lucifer Sam commented <br> on 11 August 2017 at 07:07:00</p><br><br><br>
               <h3>Textures are for the weak minded.</h3>
             </div>
+          </main>
 
         </div><br><br><br>
 

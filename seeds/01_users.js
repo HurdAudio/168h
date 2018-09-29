@@ -45,7 +45,7 @@ exports.seed = function(knex, Promise) {
           email: 'cia_pope@yahoo.com',
           hashed_password: '$2a$12$zlJZuGFGcqgLQyy/nVtoQeafv47g8dNTGTJL/x7EmSbPSiFLi.aMS',
           is_admin: false,
-          user_avatar_url: 'https://pbs.twimg.com/profile_images/3511787126/e23647c60fe7cee53e4d2d37a50a255c_400x400.jpeg',
+          user_avatar_url: 'https://vignette.wikia.nocookie.net/southpark/images/d/db/Satan_2.png',
           associates: {
             "friends": [ 1, 2 ]
           },

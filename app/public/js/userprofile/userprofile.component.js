@@ -3091,6 +3091,14 @@
         userTilesCurratorEditorDiv.setAttribute("style", "display: none;");
       }
 
+      function getAuthorTileModAuthorName(authorId, index) {
+        $http.get(`/users/${authorId}`)
+        .then(authorData=>{
+          let author = authorData.data;
+          vm.tileModulePreview[index].authorName = author.name;
+        });
+      }
+
       function tileModuleDisplay() {
         let tileModuleDisplayButton = document.getElementById('tileModuleDisplayButton');
         let availableArtModules = document.getElementById('availableArtModules');
@@ -3098,6 +3106,47 @@
         let availableMusicModules = document.getElementById('availableMusicModules');
         let musicModuleDisplayButton = document.getElementById('musicModuleDisplayButton');
         let availableTilesModules = document.getElementById('availableTilesModules');
+        let tileMember = false;
+        let previewIndex = 0;
+
+        $http.get('/tiles_modules')
+        .then(allTilesData=>{
+          let allTiles = allTilesData.data;
+          if (allTiles.length > 0) {
+            vm.tileModulePreview = [];
+            for (let i = 0; i < allTiles.length; i++) {
+              if (vm.tileModulePreview.length === 0) {
+                vm.tileModulePreview[0] = {};
+                vm.tileModulePreview[0].theme = allTiles[0].theme;
+                getAuthorTileModAuthorName(allTiles[0].user_author_id, 0);
+                vm.tileModulePreview[0].storage = [];
+                vm.tileModulePreview[0].storage.push(allTiles[0]);
+              } else {
+                tileMember = false;
+                for (let j = 0; j < vm.tileModulePreview.length; j++) {
+                  if ((vm.tileModulePreview[j].storage[0].user_author_id === allTiles[i].user_author_id) && (vm.tileModulePreview[j].theme === allTiles[i].theme)) {
+                    tileMember = true;
+                    previewIndex = j;
+                  }
+                }
+                if (tileMember) {
+                  vm.tileModulePreview[previewIndex].storage.push(allTiles[i]);
+                } else {
+                  previewIndex = vm.tileModulePreview.length;
+                  vm.tileModulePreview[previewIndex] = {};
+                  vm.tileModulePreview[previewIndex].theme = allTiles[i].theme;
+                  getAuthorTileModAuthorName(allTiles[i].user_author_id, previewIndex);
+                  vm.tileModulePreview[previewIndex].storage = [];
+                  vm.tileModulePreview[previewIndex].storage.push(allTiles[i]);
+                }
+              }
+            }
+            for (let k = 0; k < vm.tileModulePreview.length; k++) {
+              vm.tileModulePreview[k].src_string = vm.tileModulePreview[k].storage[Math.floor(Math.random() * vm.tileModulePreview[k].storage.length)].src_string;
+            }
+          }
+        });
+
 
         availableArtModules.setAttribute("style", "display: none;");
         artModuleDisplayButton.setAttribute("style", "visibility: visible;");
@@ -3218,7 +3267,7 @@
                   themeIndex = vm.artModulePreview.length;
                   vm.artModulePreview[themeIndex] = {};
                   vm.artModulePreview[themeIndex].theme = allArtModules[i].theme;
-                  vm.artModulesPreview[themeIndex].storage = [];
+                  vm.artModulePreview[themeIndex].storage = [];
                   vm.artModulePreview[themeIndex].storage.push(allArtModules[i]);
                   getArtAuthorName(allArtModules[i].user_author_id, themeIndex);
                   vm.artModulePreview[themeIndex].user_author_id = allArtModules[i].user_author_id;
