@@ -4648,6 +4648,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 259,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=431116668/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://redefinitionrecords.bandcamp.com/album/homework',
+          a_string: 'Homework by Kev Brown',
+          rule: {
+            "monday": [ 24, 18, 20, 22 ],
+            "tuesday": [ 26, 20, 22, 28 ],
+            "wednesday": [ 27, 21, 23, 29 ],
+            "thursday": [ 10, 14, 16, 20 ],
+            "saturday": [ 13, 16, 18, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 260,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4130828356/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ronee.bandcamp.com/album/ensley-2',
+          a_string: 'ensley by Pink Siifu',
+          rule: {
+            "monday": [ 13, 16, 18, 22 ],
+            "tuesday": [ 24, 18, 20, 22 ],
+            "wednesday": [ 26, 20, 22, 28 ],
+            "thursday": [ 27, 21, 23, 29 ],
+            "saturday": [ 10, 14, 16, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 261,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3042324310/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://nouvelleambiance.bandcamp.com/album/nouvelle-ambiance',
+          a_string: 'Nouvelle Ambiance !!! by Various Artists',
+          rule: {
+            "monday": [ 10, 14, 16, 20 ],
+            "tuesday": [ 13, 16, 18, 22 ],
+            "wednesday": [ 24, 18, 20, 22 ],
+            "thursday": [ 26, 20, 22, 28 ],
+            "saturday": [ 27, 21, 23, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
