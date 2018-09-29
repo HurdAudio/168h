@@ -7704,6 +7704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 386,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/le-photographe-1990.jpg',
+          title: 'Le photographe',
+          artist: 'Louis Pons',
+          year: '1990',
+          rule: {
+            "monday": [ 26, 6, 17, 28 ],
+            "tuesday": [ 24, 4, 16, 27 ],
+            "wednesday": [ 24, 4, 15, 16 ],
+            "thursday": [ 23, 3, 13, 15 ],
+            "friday": [ 22, 2, 13, 14 ],
+            "saturday": [ 21, 1, 12, 23 ],
+            "sunday": [ 27, 7, 18, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 387,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/composition-1962.jpg',
+          title: 'Composition',
+          artist: 'Jean Miotte',
+          year: '1962',
+          rule: {
+            "monday": [ 27, 7, 18, 28 ],
+            "tuesday": [ 26, 6, 17, 28 ],
+            "wednesday": [ 24, 4, 16, 27 ],
+            "thursday": [ 24, 4, 15, 16 ],
+            "friday": [ 23, 3, 13, 15 ],
+            "saturday": [ 22, 2, 13, 14 ],
+            "sunday": [ 21, 1, 12, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 388,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/boule-lectromagn-tique-1965.jpg',
+          title: 'Boule électromagnétique',
+          artist: 'Takis',
+          year: '1965',
+          rule: {
+            "monday": [ 21, 1, 12, 23 ],
+            "tuesday": [ 27, 7, 18, 28 ],
+            "wednesday": [ 26, 6, 17, 28 ],
+            "thursday": [ 24, 4, 16, 27 ],
+            "friday": [ 24, 4, 15, 16 ],
+            "saturday": [ 23, 3, 13, 15 ],
+            "sunday": [ 22, 2, 13, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 389,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/composition-abstraite-sur-fond-blanc-1993.jpg',
+          title: 'Composition abstraite sur fond blanc',
+          artist: 'Francois Arnal',
+          year: '1993',
+          rule: {
+            "monday": [ 22, 2, 13, 14 ],
+            "tuesday": [ 21, 1, 12, 23 ],
+            "wednesday": [ 27, 7, 18, 28 ],
+            "thursday": [ 26, 6, 17, 28 ],
+            "friday": [ 24, 4, 16, 27 ],
+            "saturday": [ 24, 4, 15, 16 ],
+            "sunday": [ 23, 3, 13, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 390,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/rouge-gris-2009.jpg',
+          title: 'Rouge-gris',
+          artist: 'Genevieve Asse',
+          year: '2009',
+          rule: {
+            "monday": [ 23, 3, 13, 15 ],
+            "tuesday": [ 22, 2, 13, 14 ],
+            "wednesday": [ 21, 1, 12, 23 ],
+            "thursday": [ 27, 7, 18, 28 ],
+            "friday": [ 26, 6, 17, 28 ],
+            "saturday": [ 24, 4, 16, 27 ],
+            "sunday": [ 24, 4, 15, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
