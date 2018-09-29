@@ -8304,6 +8304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 416,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/pittsburgh-pirates-art-joe-hamilton.jpg',
+          title: 'Pittsburgh Pirates Art',
+          artist: 'Joe Hamilton',
+          year: '2016',
+          rule: {
+            "monday": [ 25, 30, 6, 12 ],
+            "tuesday": [ 24, 29, 5, 11 ],
+            "wednesday": [ 29, 5, 10, 17 ],
+            "thursday": [ 13, 3, 9, 15 ],
+            "friday": [ 28, 1, 9, 15 ],
+            "saturday": [ 27, 1, 16, 14 ],
+            "sunday": [ 24, 30, 6, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 417,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/pittsburgh-pirates-poster-art-florian-rodarte.jpg',
+          title: 'Pittsburgh Pirates Poster Art',
+          artist: 'Florian Rodarte',
+          year: '2014',
+          rule: {
+            "monday": [ 24, 30, 6, 12 ],
+            "tuesday": [ 25, 30, 6, 12 ],
+            "wednesday": [ 24, 29, 5, 11 ],
+            "thursday": [ 29, 5, 10, 17 ],
+            "friday": [ 13, 3, 9, 15 ],
+            "saturday": [ 28, 1, 9, 15 ],
+            "sunday": [ 27, 1, 16, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 418,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/6f46caa307319edbbdeb0810c6c04fae--baseball-art-baseball-stuff.jpg',
+          title: 'Pittsburgh Pirates MLB Baseball Art Print',
+          artist: 'Paul Waner',
+          year: '?',
+          rule: {
+            "monday": [ 27, 1, 16, 14 ],
+            "tuesday": [ 24, 30, 6, 12 ],
+            "wednesday": [ 25, 30, 6, 12 ],
+            "thursday": [ 24, 29, 5, 11 ],
+            "friday": [ 29, 5, 10, 17 ],
+            "saturday": [ 13, 3, 9, 15 ],
+            "sunday": [ 28, 1, 9, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 419,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/1-andrew-mccutchen-pittsburgh-pirates-art-joe-hamilton.jpg',
+          title: 'Andrew Mccutchen Pittsburgh Pirates Art',
+          artist: 'Joe Hamilton',
+          year: '2016',
+          rule: {
+            "monday": [ 28, 1, 9, 15 ],
+            "tuesday": [ 27, 1, 16, 14 ],
+            "wednesday": [ 24, 30, 6, 12 ],
+            "thursday": [ 25, 30, 6, 12 ],
+            "friday": [ 24, 29, 5, 11 ],
+            "saturday": [ 29, 5, 10, 17 ],
+            "sunday": [ 13, 3, 9, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 420,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/pittsburgh-pirates-1492178210.jpg',
+          title: 'Pittsburgh Pirates',
+          artist: 'Gregg Hinlicky',
+          year: '2012',
+          rule: {
+            "monday": [ 14, 4, 10, 16 ],
+            "tuesday": [ 29, 2, 10, 16 ],
+            "wednesday": [ 28, 2, 17, 15 ],
+            "thursday": [ 25, 1, 7, 13 ],
+            "friday": [ 26, 1, 7, 13 ],
+            "saturday": [ 25, 30, 6, 12 ],
+            "sunday": [ 30, 6, 11, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
