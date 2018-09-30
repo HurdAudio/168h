@@ -4162,6 +4162,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 232,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2779766002/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://thesewimps.bandcamp.com/album/garbage-people',
+          a_string: 'Garbage People by wimps',
+          rule: {
+            "monday": [ 3, 5, 9, 17 ],
+            "tuesday": [ 2, 4, 8, 16 ],
+            "wednesday": [ 1, 2, 7, 15 ],
+            "thursday": [ 31, 2, 6, 14 ],
+            "saturday": [ 4, 6, 10, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 233,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4068370712/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://woolenmen.bandcamp.com/album/post',
+          a_string: 'Post by Woolen Men',
+          rule: {
+            "monday": [ 4, 6, 10, 18 ],
+            "tuesday": [ 3, 5, 9, 17 ],
+            "wednesday": [ 2, 4, 8, 16 ],
+            "thursday": [ 1, 2, 7, 15 ],
+            "saturday": [ 31, 2, 6, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 234,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4211276127/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://citruscityrecords.bandcamp.com/album/young-scum',
+          a_string: 'Young Scum by Young Scum',
+          rule: {
+            "monday": [ 31, 2, 6, 14 ],
+            "tuesday": [ 4, 6, 10, 18 ],
+            "wednesday": [ 3, 5, 9, 17 ],
+            "thursday": [ 2, 4, 8, 16 ],
+            "saturday": [ 1, 2, 7, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
