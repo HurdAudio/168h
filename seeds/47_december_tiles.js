@@ -774,6 +774,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#F8FAF9',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 56,
+          user_id: 1,
+          theme: 'Snow',
+          type: 'sunday',
+          src_string: '../img/december_tiles/mira-kemppainen-212226-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '140%',
+          color_dark: '#16131A',
+          color_medium: '#FAC785',
+          color_light: '#ACB1CE',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
