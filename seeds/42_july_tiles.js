@@ -844,6 +844,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FFFFFF',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 61,
+          user_id: 1,
+          theme: 'Steam',
+          type: 'sunday',
+          src_string: '../img/july_tiles/nacho-rochon-517487-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '155%',
+          color_dark: '#03060F',
+          color_medium: '#936265',
+          color_light: '#F9DCD4',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
