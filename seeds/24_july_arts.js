@@ -7804,6 +7804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 391,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/eboulis.jpg',
+          title: 'Eboulis',
+          artist: 'Jacques Busse',
+          year: '?',
+          rule: {
+            "monday": [ 24, 4, 15, 16 ],
+            "tuesday": [ 23, 3, 13, 15 ],
+            "wednesday": [ 22, 2, 13, 14 ],
+            "thursday": [ 21, 1, 12, 23 ],
+            "friday": [ 27, 7, 18, 28 ],
+            "saturday": [ 26, 6, 17, 28 ],
+            "sunday": [ 24, 4, 16, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 392,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/kinetic-object-with-eggs-and-potatoes-1972.jpg',
+          title: 'Kinetic Object with Eggs and Potatoes',
+          artist: 'Pol Bury',
+          year: '1972',
+          rule: {
+            "monday": [ 25, 5, 17, 28 ],
+            "tuesday": [ 25, 5, 16, 17 ],
+            "wednesday": [ 24, 4, 14, 16 ],
+            "thursday": [ 23, 3, 14, 15 ],
+            "friday": [ 22, 2, 13, 24 ],
+            "saturday": [ 28, 8, 19, 29 ],
+            "sunday": [ 27, 5, 18, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 393,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/untitled-3a.jpg',
+          title: 'Untitled',
+          artist: 'Jean Benoit',
+          year: '?',
+          rule: {
+            "monday": [ 27, 5, 18, 29 ],
+            "tuesday": [ 25, 5, 17, 28 ],
+            "wednesday": [ 25, 5, 16, 17 ],
+            "thursday": [ 24, 4, 14, 16 ],
+            "friday": [ 23, 3, 14, 15 ],
+            "saturday": [ 22, 2, 13, 24 ],
+            "sunday": [ 28, 8, 19, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 394,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/3-noisettes-dans-le-ciel-1972.jpg',
+          title: '3 noisettes dans le ciel',
+          artist: 'Jean Messagier',
+          year: '1972',
+          rule: {
+            "monday": [ 28, 8, 19, 29 ],
+            "tuesday": [ 27, 5, 18, 29 ],
+            "wednesday": [ 25, 5, 17, 28 ],
+            "thursday": [ 25, 5, 16, 17 ],
+            "friday": [ 24, 4, 14, 16 ],
+            "saturday": [ 23, 3, 14, 15 ],
+            "sunday": [ 22, 2, 13, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 395,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/21-08-1995-1995.jpg',
+          title: '21-08-1995',
+          artist: 'Zao Wou-Ki',
+          year: '1995',
+          rule: {
+            "monday": [ 22, 2, 13, 24 ],
+            "tuesday": [ 28, 8, 19, 29 ],
+            "wednesday": [ 27, 5, 18, 29 ],
+            "thursday": [ 25, 5, 17, 28 ],
+            "friday": [ 25, 5, 16, 17 ],
+            "saturday": [ 24, 4, 14, 16 ],
+            "sunday": [ 23, 3, 14, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
