@@ -3730,6 +3730,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 208,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3717332757/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ostinatorecords.bandcamp.com/album/two-niles-to-sing-a-melody-the-violins-synths-of-sudan',
+          a_string: 'Two Niles to Sing a Melody: The Violins &amp; Synths of Sudan by Various Artists',
+          rule: {
+            "monday": [ 1, 12, 23, 27 ],
+            "tuesday": [ 30, 11, 22, 26 ],
+            "wednesday": [ 29, 10, 21, 25 ],
+            "thursday": [ 28, 9, 20, 22 ],
+            "saturday": [ 27, 8, 19, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 209,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3679496837/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ostinatorecords.bandcamp.com/album/ost45002-nhu-djon-volta-pa-terra',
+          a_string: 'OST45002 Nhu Djon / Volta Pa Terra by Conjunto Jovens Africanos',
+          rule: {
+            "monday": [ 27, 8, 19, 1 ],
+            "tuesday": [ 1, 12, 23, 27 ],
+            "wednesday": [ 30, 11, 22, 26 ],
+            "thursday": [ 29, 10, 21, 25 ],
+            "saturday": [ 28, 9, 20, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 210,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2497963513/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://youngmontana.bandcamp.com/album/limerence',
+          a_string: 'Limerence by Young Montana?',
+          rule: {
+            "monday": [ 29, 10, 21, 23 ],
+            "tuesday": [ 28, 9, 20, 2 ],
+            "wednesday": [ 2, 13, 24, 28 ],
+            "thursday": [ 1, 12, 23, 27 ],
+            "saturday": [ 30, 11, 22, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
