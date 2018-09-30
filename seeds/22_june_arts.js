@@ -8004,6 +8004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 401,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/35831658980.jpg',
+          title: 'Only Two',
+          artist: 'unknown artist',
+          year: '?',
+          rule: {
+            "monday": [ 27, 7, 17, 24 ],
+            "tuesday": [ 26, 6, 16, 24 ],
+            "wednesday": [ 25, 5, 15, 23 ],
+            "thursday": [ 24, 4, 14, 22 ],
+            "friday": [ 3, 13, 23, 21 ],
+            "saturday": [ 22, 2, 12, 20 ],
+            "sunday": [ 21, 1, 11, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 402,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/35831868177.jpg',
+          title: 'Habitat',
+          artist: 'artist unknown',
+          year: '?',
+          rule: {
+            "monday": [ 21, 1, 11, 19 ],
+            "tuesday": [ 27, 7, 17, 24 ],
+            "wednesday": [ 26, 6, 16, 24 ],
+            "thursday": [ 25, 5, 15, 23 ],
+            "friday": [ 24, 4, 14, 22 ],
+            "saturday": [ 3, 13, 23, 21 ],
+            "sunday": [ 22, 2, 12, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 403,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/35831142246.jpg',
+          title: 'Lunchtime atop a skyscraper',
+          artist: 'artist unknown',
+          year: '?',
+          rule: {
+            "monday": [ 22, 2, 12, 20 ],
+            "tuesday": [ 21, 1, 11, 19 ],
+            "wednesday": [ 27, 7, 17, 24 ],
+            "thursday": [ 26, 6, 16, 24 ],
+            "friday": [ 25, 5, 15, 23 ],
+            "saturday": [ 24, 4, 14, 22 ],
+            "sunday": [ 3, 13, 23, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 404,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/35831306577.jpg',
+          title: 'Still Life',
+          artist: 'artist unknown',
+          year: '?',
+          rule: {
+            "monday": [ 3, 13, 23, 21 ],
+            "tuesday": [ 22, 2, 12, 20 ],
+            "wednesday": [ 21, 1, 11, 19 ],
+            "thursday": [ 27, 7, 17, 24 ],
+            "friday": [ 26, 6, 16, 24 ],
+            "saturday": [ 25, 5, 15, 23 ],
+            "sunday": [ 24, 4, 14, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 405,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/35831670705.jpg',
+          title: 'Still Life',
+          artist: 'artist unknown',
+          year: '?',
+          rule: {
+            "monday": [ 24, 4, 14, 22 ],
+            "tuesday": [ 3, 13, 23, 21 ],
+            "wednesday": [ 22, 2, 12, 20 ],
+            "thursday": [ 21, 1, 11, 19 ],
+            "friday": [ 27, 7, 17, 24 ],
+            "saturday": [ 26, 6, 16, 24 ],
+            "sunday": [ 25, 5, 15, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
