@@ -7004,6 +7004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 351,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/smoke.jpg',
+          title: 'Smoke',
+          artist: 'Tony Smith',
+          year: '1979',
+          rule: {
+            "monday": [ 27, 2, 7, 13 ],
+            "tuesday": [ 26, 30, 7, 11 ],
+            "wednesday": [ 25, 28, 5, 10 ],
+            "thursday": [ 24, 28, 5, 10 ],
+            "friday": [ 23, 28, 4, 9 ],
+            "saturday": [ 22, 27, 3, 10 ],
+            "sunday": [ 28, 3, 9, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 352,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/untitled-xviii-1981.jpg',
+          title: 'Untitled XVIII',
+          artist: 'Nasreen Mohamedi',
+          year: '1981',
+          rule: {
+            "monday": [ 28, 3, 9, 14 ],
+            "tuesday": [ 27, 2, 7, 13 ],
+            "wednesday": [ 26, 30, 7, 11 ],
+            "thursday": [ 25, 28, 5, 10 ],
+            "friday": [ 24, 28, 5, 10 ],
+            "saturday": [ 23, 28, 4, 9 ],
+            "sunday": [ 22, 27, 3, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 353,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/le-temps-perdu-1982.jpg',
+          title: 'Le temps perdu',
+          artist: 'Katsuhito Nishikawa',
+          year: '1982',
+          rule: {
+            "monday": [ 22, 27, 3, 10 ],
+            "tuesday": [ 28, 3, 9, 14 ],
+            "wednesday": [ 27, 2, 7, 13 ],
+            "thursday": [ 26, 30, 7, 11 ],
+            "friday": [ 25, 28, 5, 10 ],
+            "saturday": [ 24, 28, 5, 10 ],
+            "sunday": [ 23, 28, 4, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 354,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/human-need-desire-1983.jpg',
+          title: 'Human/Need/Desire',
+          artist: 'Bruce Nauman',
+          year: '1983',
+          rule: {
+            "monday": [ 23, 28, 4, 9 ],
+            "tuesday": [ 22, 27, 3, 10 ],
+            "wednesday": [ 28, 3, 9, 14 ],
+            "thursday": [ 27, 2, 7, 13 ],
+            "friday": [ 26, 30, 7, 11 ],
+            "saturday": [ 25, 28, 5, 10 ],
+            "sunday": [ 24, 28, 5, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 355,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/one-hundred-live-and-die-1984.jpg',
+          title: 'One Hundred Live and Die',
+          artist: 'Bruce Nauman',
+          year: '1984',
+          rule: {
+            "monday": [ 24, 28, 5, 10 ],
+            "tuesday": [ 23, 28, 4, 9 ],
+            "wednesday": [ 22, 27, 3, 10 ],
+            "thursday": [ 28, 3, 9, 14 ],
+            "friday": [ 27, 2, 7, 13 ],
+            "saturday": [ 26, 30, 7, 11 ],
+            "sunday": [ 25, 28, 5, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
