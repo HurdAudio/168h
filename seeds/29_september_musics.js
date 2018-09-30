@@ -3946,6 +3946,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 220,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=199926154/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://piniol.bandcamp.com/album/bran-coucou',
+          a_string: 'Bran Coucou by PinioL',
+          rule: {
+            "monday": [ 3, 23, 1, 26 ],
+            "tuesday": [ 2, 22, 30, 24 ],
+            "wednesday": [ 1, 21, 29, 23 ],
+            "thursday": [ 5, 25, 3, 27 ],
+            "saturday": [ 4, 24, 2, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 221,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=298538617/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cuneiformrecords.bandcamp.com/album/rights',
+          a_string: 'Rights by Schnellertollermeier',
+          rule: {
+            "monday": [ 4, 24, 2, 26 ],
+            "tuesday": [ 3, 23, 1, 26 ],
+            "wednesday": [ 2, 22, 30, 24 ],
+            "thursday": [ 1, 21, 29, 23 ],
+            "saturday": [ 5, 25, 3, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 222,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1952619866/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://altrockproductions.bandcamp.com/album/negative-toe',
+          a_string: 'NEGATIVE TOE by CAMEMBERT',
+          rule: {
+            "monday": [ 5, 25, 3, 27 ],
+            "tuesday": [ 4, 24, 2, 26 ],
+            "wednesday": [ 3, 23, 1, 26 ],
+            "thursday": [ 2, 22, 30, 24 ],
+            "saturday": [ 1, 21, 29, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
