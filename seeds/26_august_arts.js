@@ -7604,6 +7604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 381,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/portrait-of-a-girl-1909.jpg',
+          title: 'Portrait of a Girl',
+          artist: 'Alexej von Jawlensky',
+          year: '1909',
+          rule: {
+            "monday": [ 21, 24, 2, 18 ],
+            "tuesday": [ 27, 31, 8, 24 ],
+            "wednesday": [ 26, 29, 7, 23 ],
+            "thursday": [ 25, 29, 6, 22 ],
+            "friday": [ 24, 28, 5, 21 ],
+            "saturday": [ 23, 25, 4, 20 ],
+            "sunday": [ 22, 25, 3, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 382,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/the-beached-margin-1937.jpg',
+          title: 'The Beached Margin',
+          artist: 'Edward Wadsworth',
+          year: '1937',
+          rule: {
+            "monday": [ 22, 25, 3, 19 ],
+            "tuesday": [ 21, 24, 2, 18 ],
+            "wednesday": [ 27, 31, 8, 24 ],
+            "thursday": [ 26, 29, 7, 23 ],
+            "friday": [ 25, 29, 6, 22 ],
+            "saturday": [ 24, 28, 5, 21 ],
+            "sunday": [ 23, 25, 4, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 383,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/south-indian-villagers-going-to-a-market-1937.jpg',
+          title: 'South Indian Villagers Going to a Market',
+          artist: 'Amrita Sher-Gil',
+          year: '1937',
+          rule: {
+            "monday": [ 23, 25, 4, 20 ],
+            "tuesday": [ 22, 25, 3, 19 ],
+            "wednesday": [ 21, 24, 2, 18 ],
+            "thursday": [ 27, 31, 8, 24 ],
+            "friday": [ 26, 29, 7, 23 ],
+            "saturday": [ 25, 29, 6, 22 ],
+            "sunday": [ 24, 28, 5, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 384,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/at-olympia-s-design-for-tales-of-hoffmann-by-j-offenbach-1915.jpg',
+          title: 'At Olympia\'s. Design for "Tales of Hoffmann" by J. Offenbach.',
+          artist: 'Serge Sudeikin',
+          year: '1915',
+          rule: {
+            "monday": [ 24, 28, 5, 21 ],
+            "tuesday": [ 23, 25, 4, 20 ],
+            "wednesday": [ 22, 25, 3, 19 ],
+            "thursday": [ 21, 24, 2, 18 ],
+            "friday": [ 27, 31, 8, 24 ],
+            "saturday": [ 26, 29, 7, 23 ],
+            "sunday": [ 25, 29, 6, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 385,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/obatan-parrot-1926.jpg',
+          title: 'Obatan Parrot',
+          artist: 'Hiroshi Yoshida',
+          year: '1926',
+          rule: {
+            "monday": [ 26, 30, 7, 23 ],
+            "tuesday": [ 25, 29, 6, 22 ],
+            "wednesday": [ 24, 26, 5, 21 ],
+            "thursday": [ 23, 26, 4, 20 ],
+            "friday": [ 22, 25, 3, 19 ],
+            "saturday": [ 28, 1, 9, 25 ],
+            "sunday": [ 27, 30, 8, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
