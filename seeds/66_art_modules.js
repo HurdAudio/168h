@@ -2164,6 +2164,66 @@ exports.seed = function(knex, Promise) {
           public: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 181,
+          user_author_id: 1,
+          theme: 'Abandoned Places',
+          img_path: './img/modules/abandoned-places-19.jpg',
+          title: 'Eilean Donan, Loch Duich, Scotland',
+          artist: 'unknown artist',
+          year: '2014',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 182,
+          user_author_id: 1,
+          theme: 'Abandoned Places',
+          img_path: './img/modules/abandoned-places-20.jpg',
+          title: 'Hashima Island, Japan',
+          artist: 'unknown artist',
+          year: '2014',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 183,
+          user_author_id: 1,
+          theme: 'Abandoned Places',
+          img_path: './img/modules/abandoned-places-21.jpg',
+          title: 'Hashima Island, Japan',
+          artist: 'unknown artist',
+          year: '2014',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 184,
+          user_author_id: 1,
+          theme: 'Abandoned Places',
+          img_path: './img/modules/abandoned-places-22.jpg',
+          title: 'Abandoned Mill, Ontario, Canada',
+          artist: 'unknown artist',
+          year: '2014',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 185,
+          user_author_id: 1,
+          theme: 'Abandoned Places',
+          img_path: './img/modules/abandoned-places-23.jpg',
+          title: 'City Hall Station, New York City, New York',
+          artist: 'unknown artist',
+          year: '2014',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
