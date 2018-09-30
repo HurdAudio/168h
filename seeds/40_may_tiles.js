@@ -872,6 +872,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#AFCDC5',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 63,
+          user_id: 1,
+          theme: 'Greenery',
+          type: 'week',
+          src_string: '../img/may_tiles/christian-lambert-789650-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '155%',
+          color_dark: '#01180E',
+          color_medium: '#468420',
+          color_light: '#AEE36F',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
