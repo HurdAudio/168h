@@ -3838,6 +3838,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 214,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=81057073/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://horrendoussom.bandcamp.com/album/idol',
+          a_string: 'Idol by Horrendous',
+          rule: {
+            "monday": [ 5, 15, 26, 28 ],
+            "tuesday": [ 4, 14, 24, 27 ],
+            "wednesday": [ 8, 18, 28, 31 ],
+            "thursday": [ 7, 17, 27, 30 ],
+            "saturday": [ 6, 16, 26, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 215,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3887666805/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://non-serviam-records.bandcamp.com/album/end-of-the-circle',
+          a_string: 'End Of The Circle by Ennui',
+          rule: {
+            "monday": [ 6, 16, 26, 29 ],
+            "tuesday": [ 5, 15, 26, 28 ],
+            "wednesday": [ 4, 14, 24, 27 ],
+            "thursday": [ 8, 18, 28, 31 ],
+            "saturday": [ 7, 17, 27, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 216,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2139075094/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://satanuk.bandcamp.com/album/cruel-magic',
+          a_string: 'Cruel Magic by Satan',
+          rule: {
+            "monday": [ 7, 17, 27, 30 ],
+            "tuesday": [ 6, 16, 26, 29 ],
+            "wednesday": [ 5, 15, 26, 28 ],
+            "thursday": [ 4, 14, 24, 27 ],
+            "saturday": [ 8, 18, 28, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
