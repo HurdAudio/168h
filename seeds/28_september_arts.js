@@ -7404,6 +7404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 371,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/la-larva-1967.jpg',
+          title: 'La larva',
+          artist: 'Emilio Scanavino',
+          year: '1967',
+          rule: {
+            "monday": [ 23, 29, 17, 25 ],
+            "tuesday": [ 22, 28, 16, 24 ],
+            "wednesday": [ 11, 27, 15, 24 ],
+            "thursday": [ 10, 17, 14, 22 ],
+            "friday": [ 18, 25, 13, 20 ],
+            "saturday": [ 25, 1, 19, 27 ],
+            "sunday": [ 24, 30, 18, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 372,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/tubes-of-paint-in-their-drawer-1985.jpg',
+          title: 'Tubes of Paint in their Drawer',
+          artist: 'Avigdor Arikha',
+          year: '1985',
+          rule: {
+            "monday": [ 24, 30, 18, 26 ],
+            "tuesday": [ 23, 29, 17, 25 ],
+            "wednesday": [ 22, 28, 16, 24 ],
+            "thursday": [ 11, 27, 15, 24 ],
+            "friday": [ 10, 17, 14, 22 ],
+            "saturday": [ 18, 25, 13, 20 ],
+            "sunday": [ 25, 1, 19, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 373,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/auto-retrato-en-blanco-self-portrait-in-white-1998.jpg',
+          title: 'Auto retrato en blanco (self portrait in white)',
+          artist: 'Ramon Oviedo',
+          year: '1998',
+          rule: {
+            "monday": [ 25, 1, 19, 27 ],
+            "tuesday": [ 24, 30, 18, 26 ],
+            "wednesday": [ 23, 29, 17, 25 ],
+            "thursday": [ 22, 28, 16, 24 ],
+            "friday": [ 11, 27, 15, 24 ],
+            "saturday": [ 10, 17, 14, 22 ],
+            "sunday": [ 18, 25, 13, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 374,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/reflets-printanieres-1989.jpg',
+          title: 'Reflets Printanieres',
+          artist: 'Marcel Barbeau',
+          year: '1989',
+          rule: {
+            "monday": [ 18, 25, 13, 20 ],
+            "tuesday": [ 25, 1, 19, 27 ],
+            "wednesday": [ 24, 30, 18, 26 ],
+            "thursday": [ 23, 29, 17, 25 ],
+            "friday": [ 22, 28, 16, 24 ],
+            "saturday": [ 11, 27, 15, 24 ],
+            "sunday": [ 10, 17, 14, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 375,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/voar-2001.jpg',
+          title: 'Voar',
+          artist: 'Helena Almeida',
+          year: '2001',
+          rule: {
+            "monday": [ 10, 17, 14, 22 ],
+            "tuesday": [ 18, 25, 13, 20 ],
+            "wednesday": [ 25, 1, 19, 27 ],
+            "thursday": [ 24, 30, 18, 26 ],
+            "friday": [ 23, 29, 17, 25 ],
+            "saturday": [ 22, 28, 16, 24 ],
+            "sunday": [ 11, 27, 15, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
