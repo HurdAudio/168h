@@ -7204,6 +7204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 361,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_parenthoodsovpost_00034.jpg',
+          title: 'This is not my job!',
+          artist: 'S.Nizovaya',
+          year: '1956',
+          rule: {
+            "monday": [ 21, 1, 2, 16 ],
+            "tuesday": [ 30, 31, 11, 15 ],
+            "wednesday": [ 26, 6, 17, 21 ],
+            "thursday": [ 25, 5, 16, 20 ],
+            "friday": [ 24, 4, 15, 19 ],
+            "saturday": [ 23, 3, 14, 18 ],
+            "sunday": [ 22, 2, 13, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 362,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_parenthoodsovpost_00033.jpg',
+          title: 'I (will do it) by myself!',
+          artist: 'S. Nizova',
+          year: '1956',
+          rule: {
+            "monday": [ 22, 2, 13, 17 ],
+            "tuesday": [ 21, 1, 2, 16 ],
+            "wednesday": [ 30, 31, 11, 15 ],
+            "thursday": [ 26, 6, 17, 21 ],
+            "friday": [ 25, 5, 16, 20 ],
+            "saturday": [ 24, 4, 15, 19 ],
+            "sunday": [ 23, 3, 14, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 363,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_parenthoodsovpost_00032.jpg',
+          title: 'Glory to our beloved motherland',
+          artist: 'M. Bri-Bain',
+          year: '1950',
+          rule: {
+            "monday": [ 23, 3, 14, 18 ],
+            "tuesday": [ 22, 2, 13, 17 ],
+            "wednesday": [ 21, 1, 2, 16 ],
+            "thursday": [ 30, 31, 11, 15 ],
+            "friday": [ 26, 6, 17, 21 ],
+            "saturday": [ 25, 5, 16, 20 ],
+            "sunday": [ 24, 4, 15, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 364,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_parenthoodsovpost_00029.jpg',
+          title: 'Love books - the source of knowledge!',
+          artist: 'B. Suryaninov',
+          year: '1952',
+          rule: {
+            "monday": [ 25, 5, 16, 20 ],
+            "tuesday": [ 24, 4, 15, 19 ],
+            "wednesday": [ 23, 3, 14, 18 ],
+            "thursday": [ 22, 2, 3, 17 ],
+            "friday": [ 31, 1, 12, 16 ],
+            "saturday": [ 27, 7, 18, 22 ],
+            "sunday": [ 26, 6, 17, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 365,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_parenthoodsovpost_00028.jpg',
+          title: 'Long live peace!',
+          artist: 'N. Tereshchenko',
+          year: '1955',
+          rule: {
+            "monday": [ 26, 6, 17, 21 ],
+            "tuesday": [ 25, 5, 16, 20 ],
+            "wednesday": [ 24, 4, 15, 19 ],
+            "thursday": [ 23, 3, 14, 18 ],
+            "friday": [ 22, 2, 3, 17 ],
+            "saturday": [ 31, 1, 12, 16 ],
+            "sunday": [ 27, 7, 18, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
