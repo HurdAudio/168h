@@ -4270,6 +4270,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 238,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3298343998/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://muzaneditions.bandcamp.com/album/reflections-in-dust',
+          a_string: 'Reflections in Dust by Anthéne',
+          rule: {
+            "monday": [ 1, 9, 11, 22 ],
+            "tuesday": [ 5, 9, 15, 26 ],
+            "wednesday": [ 4, 7, 12, 24 ],
+            "thursday": [ 3, 7, 12, 24 ],
+            "saturday": [ 3, 6, 12, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 239,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1788200600/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://blankembrace.bandcamp.com/album/ledice',
+          a_string: 'ledice by Blank Embrace',
+          rule: {
+            "monday": [ 3, 6, 12, 23 ],
+            "tuesday": [ 1, 9, 11, 22 ],
+            "wednesday": [ 5, 9, 15, 26 ],
+            "thursday": [ 4, 7, 12, 24 ],
+            "saturday": [ 3, 7, 12, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 240,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3312029543/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://eiderdownrecords.bandcamp.com/album/somesurprises-serious-dreams',
+          a_string: 'somesurprises &quot;serious dreams&quot; by somesurprises',
+          rule: {
+            "monday": [ 3, 7, 12, 24 ],
+            "tuesday": [ 3, 6, 12, 23 ],
+            "wednesday": [ 1, 9, 11, 22 ],
+            "thursday": [ 5, 9, 15, 26 ],
+            "saturday": [ 4, 7, 12, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
