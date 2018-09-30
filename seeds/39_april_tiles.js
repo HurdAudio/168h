@@ -886,6 +886,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#9C9F93',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 64,
+          user_id: 1,
+          theme: 'Water',
+          type: 'friday',
+          src_string: '../img/april_tiles/tomoko-uji-630443-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '155%',
+          color_dark: '#121818',
+          color_medium: '#3F3E39',
+          color_light: '#B7C6CF',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
