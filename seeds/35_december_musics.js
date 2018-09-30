@@ -3622,6 +3622,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 202,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1085471559/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://repsych.bandcamp.com/album/laghonia-single-world-full-of-nuts-psych-rock-1972-non-lp-tracks-killer',
+          a_string: 'Laghonia single: World full of nuts (Psych Rock) (1972) NON LP TRACKS KILLER by Laghonia',
+          rule: {
+            "monday": [ 4, 10, 16, 22 ],
+            "tuesday": [ 3, 9, 15, 20 ],
+            "wednesday": [ 31, 8, 14, 20 ],
+            "thursday": [ 30, 7, 13, 19 ],
+            "saturday": [ 31, 6, 12, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 203,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1473087841/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://repsych.bandcamp.com/album/mag-all-stars-latin-jazz-blues-boogaloo-peru-60s-vol-4',
+          a_string: 'MAG ALL STARS (Latin Jazz Blues Boogaloo PERU 60&#39;s) - Vol 4 by MAG ALL STARS',
+          rule: {
+            "monday": [ 1, 7, 13, 19 ],
+            "tuesday": [ 5, 11, 17, 23 ],
+            "wednesday": [ 4, 10, 16, 21 ],
+            "thursday": [ 1, 9, 15, 21 ],
+            "saturday": [ 31, 8, 14, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 204,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1348766996/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://repsych.bandcamp.com/album/ptarmigan-canada-1972-acoustic-folk-psych-rock',
+          a_string: 'Ptarmigan (Canada 1972 * Acoustic Folk Psych Rock) by Ptarmigan (Glen Dias and Monte Nordstrom)',
+          rule: {
+            "monday": [ 31, 8, 14, 20 ],
+            "tuesday": [ 1, 7, 13, 19 ],
+            "wednesday": [ 5, 11, 17, 23 ],
+            "thursday": [ 4, 10, 16, 21 ],
+            "saturday": [ 1, 9, 15, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
