@@ -4054,6 +4054,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 226,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2574391143/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ernestorodrigues.bandcamp.com/album/3-phases-ii-grey',
+          a_string: '3 Phases (II) GREY by Ernesto Rodrigues, Bruno Parrinha, Nuno Torres &amp; Paulo Galão',
+          rule: {
+            "monday": [ 13, 21, 3, 2 ],
+            "tuesday": [ 12, 20, 2, 1 ],
+            "wednesday": [ 11, 19, 1, 31 ],
+            "thursday": [ 10, 18, 31, 30 ],
+            "saturday": [ 14, 22, 4, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 227,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2431769680/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ernestorodrigues.bandcamp.com/album/3-phases-i-white',
+          a_string: '3 Phases (I) WHITE by Ernesto Rodrigues, Albert Cirera, Rodrigo Pinheiro &amp; Carlos Santos',
+          rule: {
+            "monday": [ 14, 22, 4, 3 ],
+            "tuesday": [ 13, 21, 3, 2 ],
+            "wednesday": [ 12, 20, 2, 1 ],
+            "thursday": [ 11, 19, 1, 31 ],
+            "saturday": [ 10, 18, 31, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 228,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3454748420/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ernestorodrigues.bandcamp.com/album/penedo',
+          a_string: 'Penedo by Ernesto Rodrigues, Guilherme Rodrigues, Miguel Mira &amp; Carlos Santos',
+          rule: {
+            "monday": [ 10, 18, 31, 30 ],
+            "tuesday": [ 14, 22, 4, 3 ],
+            "wednesday": [ 13, 21, 3, 2 ],
+            "thursday": [ 12, 20, 2, 1 ],
+            "saturday": [ 11, 19, 1, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
