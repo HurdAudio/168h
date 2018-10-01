@@ -8404,6 +8404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 421,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/1hCC_BlueJaysArt_0727___Gallery.jpg',
+          title: 'Bleeding Blue',
+          artist: 'Samara Marlee',
+          year: '2017',
+          rule: {
+            "monday": [ 30, 6, 11, 18 ],
+            "tuesday": [ 14, 4, 10, 16 ],
+            "wednesday": [ 29, 2, 10, 16 ],
+            "thursday": [ 28, 2, 17, 15 ],
+            "friday": [ 25, 1, 7, 13 ],
+            "saturday": [ 26, 1, 7, 13 ],
+            "sunday": [ 25, 30, 6, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 422,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/bleeding-blue-art-exhibit-toronto-768x576.jpg',
+          title: 'Bleeding Blue',
+          artist: 'Samara Marlee',
+          year: '2017',
+          rule: {
+            "monday": [ 25, 30, 6, 12 ],
+            "tuesday": [ 30, 6, 11, 18 ],
+            "wednesday": [ 14, 4, 10, 16 ],
+            "thursday": [ 29, 2, 10, 16 ],
+            "friday": [ 28, 2, 17, 15 ],
+            "saturday": [ 25, 1, 7, 13 ],
+            "sunday": [ 26, 1, 7, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 423,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/bleeding-blue-exhibit-1.jpg',
+          title: 'Bleeding Blue',
+          artist: 'Samara Marlee',
+          year: '2017',
+          rule: {
+            "monday": [ 26, 1, 7, 13 ],
+            "tuesday": [ 25, 30, 6, 12 ],
+            "wednesday": [ 30, 6, 11, 18 ],
+            "thursday": [ 14, 4, 10, 16 ],
+            "friday": [ 29, 2, 10, 16 ],
+            "saturday": [ 28, 2, 17, 15 ],
+            "sunday": [ 25, 1, 7, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 424,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/bleeding-blue-exhibit-2.jpg',
+          title: 'Bleeding Blue',
+          artist: 'Samara Marlee',
+          year: '2017',
+          rule: {
+            "monday": [ 25, 1, 7, 13 ],
+            "tuesday": [ 26, 1, 7, 13 ],
+            "wednesday": [ 25, 30, 6, 12 ],
+            "thursday": [ 30, 6, 11, 18 ],
+            "friday": [ 14, 4, 10, 16 ],
+            "saturday": [ 29, 2, 10, 16 ],
+            "sunday": [ 28, 2, 17, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 425,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/JDWalkoff.gif',
+          title: 'JD Walkoff',
+          artist: 'artist unknown',
+          year: '2016',
+          rule: {
+            "monday": [ 28, 2, 17, 15 ],
+            "tuesday": [ 25, 1, 7, 13 ],
+            "wednesday": [ 26, 1, 7, 13 ],
+            "thursday": [ 25, 30, 6, 12 ],
+            "friday": [ 30, 6, 11, 18 ],
+            "saturday": [ 14, 4, 10, 16 ],
+            "sunday": [ 29, 2, 10, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
