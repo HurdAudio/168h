@@ -8604,6 +8604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 431,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/slab-glo-pod-iridescent-green-blue-2013.jpg',
+          title: 'Slab Glo-Pod (Iridescent Green Blue)',
+          artist: 'Gisela Colon',
+          year: '2013',
+          rule: {
+            "monday": [ 25, 4, 13, 22 ],
+            "tuesday": [ 31, 9, 19, 27 ],
+            "wednesday": [ 30, 9, 17, 27 ],
+            "thursday": [ 30, 8, 16, 26 ],
+            "friday": [ 28, 7, 15, 25 ],
+            "saturday": [ 27, 7, 14, 24 ],
+            "sunday": [ 26, 5, 13, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 432,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/am-ende-des-wegen.jpg',
+          title: 'At the End of the Way',
+          artist: 'Ilse D\'Hollander',
+          year: '1995',
+          rule: {
+            "monday": [ 26, 5, 13, 23 ],
+            "tuesday": [ 25, 4, 13, 22 ],
+            "wednesday": [ 31, 9, 19, 27 ],
+            "thursday": [ 30, 9, 17, 27 ],
+            "friday": [ 30, 8, 16, 26 ],
+            "saturday": [ 28, 7, 15, 25 ],
+            "sunday": [ 27, 7, 14, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 433,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/free-range.jpg',
+          title: 'Free range',
+          artist: 'Julie Mehretu',
+          year: '?',
+          rule: {
+            "monday": [ 27, 7, 14, 24 ],
+            "tuesday": [ 26, 5, 13, 23 ],
+            "wednesday": [ 25, 4, 13, 22 ],
+            "thursday": [ 31, 9, 19, 27 ],
+            "friday": [ 30, 9, 17, 27 ],
+            "saturday": [ 30, 8, 16, 26 ],
+            "sunday": [ 28, 7, 15, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 434,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/monika-blatton-krolewna.jpeg',
+          title: 'Princess',
+          artist: 'Monica Blatton',
+          year: '2009',
+          rule: {
+            "monday": [ 29, 8, 16, 26 ],
+            "tuesday": [ 28, 8, 15, 25 ],
+            "wednesday": [ 27, 6, 14, 24 ],
+            "thursday": [ 26, 5, 14, 23 ],
+            "friday": [ 1, 10, 20, 28 ],
+            "saturday": [ 31, 10, 18, 28 ],
+            "sunday": [ 31, 9, 17, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 435,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/untitled-2003.jpg',
+          title: 'Untitled',
+          artist: 'Wangechi Mutu',
+          year: '2003',
+          rule: {
+            "monday": [ 31, 9, 17, 27 ],
+            "tuesday": [ 29, 8, 16, 26 ],
+            "wednesday": [ 28, 8, 15, 25 ],
+            "thursday": [ 27, 6, 14, 24 ],
+            "friday": [ 26, 5, 14, 23 ],
+            "saturday": [ 1, 10, 20, 28 ],
+            "sunday": [ 31, 10, 18, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
