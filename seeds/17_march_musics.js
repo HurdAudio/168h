@@ -4594,6 +4594,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 256,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2316472413/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://luxuryrecords.bandcamp.com/album/a-sort-of-company',
+          a_string: 'A sort of company by Call me',
+          rule: {
+            "monday": [ 10, 16, 22, 30 ],
+            "tuesday": [ 9, 15, 21, 30 ],
+            "wednesday": [ 7, 14, 20, 28 ],
+            "thursday": [ 7, 13, 19, 27 ],
+            "saturday": [ 11, 17, 23, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 257,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=579699959/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://othermindsrecords.bandcamp.com/album/om-live-hommage',
+          a_string: 'OM Live: Hommage by Joan Jeanrenaud',
+          rule: {
+            "monday": [ 11, 17, 23, 31 ],
+            "tuesday": [ 10, 16, 22, 30 ],
+            "wednesday": [ 9, 15, 21, 30 ],
+            "thursday": [ 7, 14, 20, 28 ],
+            "saturday": [ 7, 13, 19, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 258,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2759726993/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sluchaj.bandcamp.com/album/joelle-leandre-strings-garden',
+          a_string: 'Joelle Leandre - Strings Garden by Fundacja Słuchaj',
+          rule: {
+            "monday": [ 7, 13, 19, 27 ],
+            "tuesday": [ 11, 17, 23, 31 ],
+            "wednesday": [ 10, 16, 22, 30 ],
+            "thursday": [ 9, 15, 21, 30 ],
+            "saturday": [ 7, 14, 20, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
