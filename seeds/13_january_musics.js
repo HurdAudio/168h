@@ -4810,6 +4810,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 268,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3890016261/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://othermindsrecords.bandcamp.com/album/clouds-in-an-emerald-sky',
+          a_string: 'Clouds in an Emerald Sky by Jan Pusina',
+          rule: {
+            "monday": [ 16, 22, 23, 25 ],
+            "tuesday": [ 15, 22, 23, 24 ],
+            "wednesday": [ 14, 20, 21, 22 ],
+            "thursday": [ 13, 20, 21, 22 ],
+            "saturday": [ 17, 24, 25, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 269,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4064801324/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://othermindsrecords.bandcamp.com/album/first-things-first',
+          a_string: 'First Things First by Anthony Gnazzo',
+          rule: {
+            "monday": [ 17, 24, 25, 26 ],
+            "tuesday": [ 16, 22, 23, 25 ],
+            "wednesday": [ 15, 22, 23, 24 ],
+            "thursday": [ 14, 20, 21, 22 ],
+            "saturday": [ 13, 20, 21, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 270,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1868854351/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://othermindsrecords.bandcamp.com/album/lexicon-plus',
+          a_string: 'Lexicon Plus by Carter Scholz',
+          rule: {
+            "monday": [ 13, 20, 21, 22 ],
+            "tuesday": [ 17, 24, 25, 26 ],
+            "wednesday": [ 16, 22, 23, 25 ],
+            "thursday": [ 15, 22, 23, 24 ],
+            "saturday": [ 14, 20, 21, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
