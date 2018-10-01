@@ -4702,6 +4702,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 262,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3449845602/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bloodorangenyc.bandcamp.com/album/freetown-sound',
+          a_string: 'Freetown Sound by Blood Orange',
+          rule: {
+            "monday": [ 27, 21, 23, 29 ],
+            "tuesday": [ 10, 14, 16, 20 ],
+            "wednesday": [ 13, 16, 18, 22 ],
+            "thursday": [ 24, 18, 20, 22 ],
+            "saturday": [ 26, 20, 22, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 263,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2019290815/size=large/bgcol=ffffff/linkcol=0687f5/license_id=77/tracklist=false/transparent=true/',
+          href_string: 'http://thundercat.bandcamp.com/album/the-beyond-where-the-giants-roam-1',
+          a_string: 'The Beyond / Where the Giants Roam by Thundercat',
+          rule: {
+            "monday": [ 26, 20, 22, 28 ],
+            "tuesday": [ 27, 21, 23, 29 ],
+            "wednesday": [ 10, 14, 16, 20 ],
+            "thursday": [ 13, 16, 18, 22 ],
+            "saturday": [ 24, 18, 20, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 264,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=454850283/size=large/bgcol=ffffff/linkcol=0687f5/license_id=92/tracklist=false/transparent=true/',
+          href_string: 'http://thundercat.bandcamp.com/album/apocalypse',
+          a_string: 'Apocalypse by Thundercat',
+          rule: {
+            "monday": [ 24, 18, 20, 22 ],
+            "tuesday": [ 26, 20, 22, 28 ],
+            "wednesday": [ 27, 21, 23, 29 ],
+            "thursday": [ 10, 14, 16, 20 ],
+            "saturday": [ 13, 16, 18, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
