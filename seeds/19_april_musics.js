@@ -4486,6 +4486,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 250,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2855453514/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://nedrothenberg.bandcamp.com/album/are-you-be',
+          a_string: 'Are You Be by R.U.B.',
+          rule: {
+            "monday": [ 7, 15, 27, 2 ],
+            "tuesday": [ 6, 14, 26, 1 ],
+            "wednesday": [ 5, 13, 25, 30 ],
+            "thursday": [ 9, 17, 29, 4 ],
+            "saturday": [ 8, 16, 28, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 251,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=964271222/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://nedrothenberg.bandcamp.com/album/decisive-action',
+          a_string: 'Decisive Action by Ned Rothenberg &amp; Satoh Masahiko',
+          rule: {
+            "monday": [ 8, 16, 28, 3 ],
+            "tuesday": [ 7, 15, 27, 2 ],
+            "wednesday": [ 6, 14, 26, 1 ],
+            "thursday": [ 5, 13, 25, 30 ],
+            "saturday": [ 9, 17, 29, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 252,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2746868704/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://nedrothenberg.bandcamp.com/album/intervals-solo-work-for-woodwinds-2001',
+          a_string: 'Intervals (Solo Work for Woodwinds, 2001) by Ned Rothenberg',
+          rule: {
+            "monday": [ 10, 18, 30, 5 ],
+            "tuesday": [ 9, 17, 29, 4 ],
+            "wednesday": [ 8, 16, 28, 3 ],
+            "thursday": [ 7, 15, 26, 2 ],
+            "saturday": [ 6, 14, 26, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
