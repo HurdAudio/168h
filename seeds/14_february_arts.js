@@ -8791,7 +8791,7 @@ exports.seed = function(knex, Promise) {
           theme: 'Black History Month',
           img_path: './img/february/SAAM-1994.17_1.jpg',
           title: 'The Death of Cleopatra',
-          artist: 'dmonia Lewis',
+          artist: 'Edmonia Lewis',
           year: '1876',
           rule: {
             "monday": [ 10, 18, 26, 5 ],
@@ -8801,6 +8801,106 @@ exports.seed = function(knex, Promise) {
             "friday": [ 4, 12, 20, 28 ],
             "saturday": [ 5, 14, 22, 1 ],
             "sunday": [ 11, 16, 22, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 441,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/norman-lewis-jazz.jpg',
+          title: 'Jazz',
+          artist: 'Norman Lewis',
+          year: '1943 - 1944',
+          rule: {
+            "monday": [ 12, 17, 23, 4 ],
+            "tuesday": [ 11, 19, 27, 6 ],
+            "wednesday": [ 13, 23, 29, 6 ],
+            "thursday": [ 15, 23, 2, 12 ],
+            "friday": [ 15, 25, 21, 11 ],
+            "saturday": [ 5, 13, 21, 29 ],
+            "sunday": [ 6, 15, 23, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 442,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/2017_ECO_15008_0055_000(glenn_ligon_untitled).jpg',
+          title: 'Untitled (Chanterelle Menu)',
+          artist: 'Glenn Ligon',
+          year: '1991',
+          rule: {
+            "monday": [ 6, 15, 23, 2 ],
+            "tuesday": [ 12, 17, 23, 4 ],
+            "wednesday": [ 11, 19, 27, 6 ],
+            "thursday": [ 13, 23, 29, 6 ],
+            "friday": [ 15, 23, 2, 12 ],
+            "saturday": [ 15, 25, 21, 11 ],
+            "sunday": [ 5, 13, 21, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 443,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/81dabfe63b7e08ee283a21229230c38b.jpg',
+          title: 'Digital Illustration',
+          artist: 'Llanakila',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 5, 13, 21, 29 ],
+            "tuesday": [ 6, 15, 23, 2 ],
+            "wednesday": [ 12, 17, 23, 4 ],
+            "thursday": [ 11, 19, 27, 6 ],
+            "friday": [ 13, 23, 29, 6 ],
+            "saturday": [ 15, 23, 2, 12 ],
+            "sunday": [ 15, 25, 21, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 444,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/89436_856b31dd-5708-4b03-8a18-74f9dc9adf76_-1_570.jpeg',
+          title: 'Sunday Afternoon',
+          artist: 'Edward L. Loper Sr.',
+          year: '1948',
+          rule: {
+            "monday": [ 15, 25, 21, 11 ],
+            "tuesday": [ 5, 13, 21, 29 ],
+            "wednesday": [ 6, 15, 23, 2 ],
+            "thursday": [ 12, 17, 23, 4 ],
+            "friday": [ 11, 19, 27, 6 ],
+            "saturday": [ 13, 23, 29, 6 ],
+            "sunday": [ 15, 23, 2, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 445,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/Kin-I-Our-Folks-720x974.jpg',
+          title: 'Kin I (Our Folks)',
+          artist: '￼Whitfield Lovell',
+          year: '2008',
+          rule: {
+            "monday": [ 15, 23, 2, 12 ],
+            "tuesday": [ 15, 25, 21, 11 ],
+            "wednesday": [ 5, 13, 21, 29 ],
+            "thursday": [ 6, 15, 23, 2 ],
+            "friday": [ 12, 17, 23, 4 ],
+            "saturday": [ 11, 19, 27, 6 ],
+            "sunday": [ 13, 23, 29, 6 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
