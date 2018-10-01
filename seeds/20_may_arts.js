@@ -8204,6 +8204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 411,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/bb4a5b-20071109-raisingthebanner.jpg',
+          title: 'Raising the Banner',
+          artist: 'Geli Korzhev',
+          year: '1958-1960',
+          rule: {
+            "monday": [ 20, 31, 9, 19 ],
+            "tuesday": [ 18, 28, 7, 15 ],
+            "wednesday": [ 16, 25, 6, 15 ],
+            "thursday": [ 26, 7, 17, 25 ],
+            "friday": [ 26, 6, 15, 25 ],
+            "saturday": [ 24, 3, 11, 23 ],
+            "sunday": [ 21, 1, 11, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 412,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/577b37-20071109-clouds.jpg',
+          title: 'Clouds',
+          artist: 'Geli Korzhev',
+          year: 'xx cent.',
+          rule: {
+            "monday": [ 21, 1, 11, 31 ],
+            "tuesday": [ 20, 31, 9, 19 ],
+            "wednesday": [ 18, 28, 7, 15 ],
+            "thursday": [ 16, 25, 6, 15 ],
+            "friday": [ 26, 7, 17, 25 ],
+            "saturday": [ 26, 6, 15, 25 ],
+            "sunday": [ 24, 3, 11, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 413,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/fa4f8a-20071109-bellygod.jpg',
+          title: 'Belly God',
+          artist: 'Geli Korzhev',
+          year: 'xx cent.',
+          rule: {
+            "monday": [ 25, 4, 12, 24 ],
+            "tuesday": [ 22, 2, 12, 1 ],
+            "wednesday": [ 21, 1, 10, 20 ],
+            "thursday": [ 19, 29, 8, 16 ],
+            "friday": [ 17, 26, 7, 16 ],
+            "saturday": [ 27, 8, 18, 26 ],
+            "sunday": [ 27, 7, 16, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 414,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/9d330c-20071109-donquixote.jpg',
+          title: 'Don Quixote',
+          artist: 'Geli Korzhev',
+          year: 'xx cent.',
+          rule: {
+            "monday": [ 27, 7, 16, 26 ],
+            "tuesday": [ 25, 4, 12, 24 ],
+            "wednesday": [ 22, 2, 12, 1 ],
+            "thursday": [ 21, 1, 10, 20 ],
+            "friday": [ 19, 29, 8, 16 ],
+            "saturday": [ 17, 26, 7, 16 ],
+            "sunday": [ 27, 8, 18, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 415,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/unitedweb.jpg',
+          title: 'Fire Fighter',
+          artist: 'Vicky Stonebridge',
+          year: '2011',
+          rule: {
+            "monday": [ 27, 8, 18, 26 ],
+            "tuesday": [ 27, 7, 16, 26 ],
+            "wednesday": [ 25, 4, 12, 24 ],
+            "thursday": [ 22, 2, 12, 1 ],
+            "friday": [ 21, 1, 10, 20 ],
+            "saturday": [ 19, 29, 8, 16 ],
+            "sunday": [ 17, 26, 7, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
