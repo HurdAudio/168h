@@ -9004,6 +9004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 451,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/untitled1963.jpg',
+          title: 'Untitled',
+          artist: 'Adolf Fleischmann',
+          year: '1963',
+          rule: {
+            "monday": [ 2, 3, 14, 6 ],
+            "tuesday": [ 5, 7, 30, 19 ],
+            "wednesday": [ 10, 8, 31, 3 ],
+            "thursday": [ 10, 11, 2, 6 ],
+            "friday": [ 13, 15, 16, 18 ],
+            "saturday": [ 15, 17, 21, 24 ],
+            "sunday": [ 17, 19, 20, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 452,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/composition-with-one-grey-stripe-1958.jpg',
+          title: 'Composition with one grey stripe',
+          artist: 'Bart van der Leck',
+          year: '1958',
+          rule: {
+            "monday": [ 17, 19, 20, 21 ],
+            "tuesday": [ 2, 3, 14, 6 ],
+            "wednesday": [ 5, 7, 30, 19 ],
+            "thursday": [ 10, 8, 31, 3 ],
+            "friday": [ 10, 11, 2, 6 ],
+            "saturday": [ 13, 15, 16, 18 ],
+            "sunday": [ 15, 17, 21, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 453,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/contoy-1988.jpg',
+          title: 'Contoy',
+          artist: 'Peter Alexander',
+          year: '1988',
+          rule: {
+            "monday": [ 15, 17, 21, 24 ],
+            "tuesday": [ 17, 19, 20, 21 ],
+            "wednesday": [ 2, 3, 14, 6 ],
+            "thursday": [ 5, 7, 30, 19 ],
+            "friday": [ 10, 8, 31, 3 ],
+            "saturday": [ 10, 11, 2, 6 ],
+            "sunday": [ 13, 15, 16, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 454,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/bianco-1989.jpg',
+          title: 'Bianco',
+          artist: 'Agostino Bonalumi',
+          year: '1989',
+          rule: {
+            "monday": [ 13, 15, 16, 18 ],
+            "tuesday": [ 15, 17, 21, 24 ],
+            "wednesday": [ 17, 19, 20, 21 ],
+            "thursday": [ 2, 3, 14, 6 ],
+            "friday": [ 5, 7, 30, 19 ],
+            "saturday": [ 10, 8, 31, 3 ],
+            "sunday": [ 10, 11, 2, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 455,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/untitled-1990.jpg',
+          title: 'Untitled',
+          artist: 'Amilcar de Castro',
+          year: '1990',
+          rule: {
+            "monday": [ 11, 12, 3, 7 ],
+            "tuesday": [ 14, 16, 17, 19 ],
+            "wednesday": [ 16, 18, 22, 25 ],
+            "thursday": [ 18, 20, 21, 22 ],
+            "friday": [ 3, 4, 15, 7 ],
+            "saturday": [ 6, 8, 31, 20 ],
+            "sunday": [ 11, 9, 1, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
