@@ -4200,7 +4200,7 @@
               <!-- <a class="btn" href="#" ng-click="$ctrl.addNewObservanceShareComment(observance.id)" id="newObservanceShareCommentButton{{observance.id}}">add</a> -->
             </div>
             <div id="observanceShareComments" class="occasionShareComments">
-              <!-- <main ng-repeat="comment in observance.comments | orderBy : $ctrl.sortBy"> -->
+              <main ng-repeat="comment in observe.comments | orderBy : $ctrl.sortBy">
                 <img src="{{comment.user_avatar_url}}"><br><br><br>
                 <br><br><br><p>From: {{comment.name}} <br>
                 on {{comment.cleanDate}}</p><br><br>
@@ -4208,18 +4208,18 @@
                 <!-- <div class="thisIsObservanceShareCommentEditDoneDiv" id="thisIsObservanceShareCommentEditDoneDiv{{comment.id}}"><a class="btn" id="thisIsTheObservanceShareCommentEditorDoneButton{{comment.id}}" href="#" ng-click="$ctrl.userEditObservanceShareCommentCompleted(comment.id)">done</a></div> -->
                 <h3 id="thisIsObservanceShareCommentComment{{comment.id}}">{{comment.comment}}</h3><br>
 
-                <div id="deleteObservanceShareCommentConfirm{{comment.id}}" class="messageEditDelete">
+                <!-- <div id="deleteObservanceShareCommentConfirm{{comment.id}}" class="messageEditDelete">
 
                   <h3>Delete comment forever?</h3>
                   <a class="btn" href="#" ng-click="$ctrl.userObservanceShareCommentDeleteCancel(comment.id)">no</a>
                   <a class="btn" href="#" ng-click="$ctrl.userObservanceShareCommentDeleteConfirmClick(comment.id)">yes</a>
-                </div>
+                </div> -->
 
-                <div id="editDeleteObservanceShareCommentDiv{{comment.id}}" class="messageEditDelete">
+                <!-- <div id="editDeleteObservanceShareCommentDiv{{comment.id}}" class="messageEditDelete">
                   <a class="btn" href="#" ng-click="$ctrl.userEditObservanceShareComment(comment.id)">edit</a>
                   <a class="btn" href="#" ng-click="$ctrl.userDeleteObservanceShareComment(comment.id)">delete</a>
-                </div><br><br><br><br>
-              <!-- </main> -->
+                </div><br><br><br><br> -->
+              </main>
             </div>
           </main>
         </div>

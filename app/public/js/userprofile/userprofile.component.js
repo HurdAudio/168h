@@ -407,6 +407,44 @@
         });
       }
 
+      function obtainObservanceCommenterDatas(comment, observeIndex, index) {
+        $http.get(`/users/${comment.user_id}`)
+        .then(commenterData => {
+          let commenter = commenterData.data;
+          vm.activeObservanceShares[observeIndex].comments[index].user_avatar_url = commenter.user_avatar_url;
+          vm.activeObservanceShares[observeIndex].comments[index].name = commenter.name;
+        });
+      }
+
+      function obstainObservanceComments(observance, index) {
+        let aDate;
+        let bDate;
+        let check;
+
+        $http.get('/observance_share_comments')
+        .then(allObservanceShareData => {
+          let allObservanceShare = allObservanceShareData.data;
+          let observanceComments = allObservanceShare.filter(entry => {
+            return(entry.observance_share === observance.id);
+          });
+          observanceComments = observanceComments.sort((a, b) => {
+            aDate = new Date(a.created_at);
+            bDate = new Date(b.created_at);
+            return(aDate.getDate() - bDate.getDate());
+          });
+          if (observanceComments.length > 0) {
+            vm.activeObservanceShares[index].comments = [];
+            for (let i = 0; i < observanceComments.length; i++) {
+              vm.activeObservanceShares[index].comments[i] = {};
+              vm.activeObservanceShares[index].comments[i].comment = observanceComments[i].comment;
+              check = new Date(observanceComments[i].created_at);
+              vm.activeObservanceShares[index].comments[i].cleanDate = cleanDateHoliday(observanceComments[i].created_at) + ' at ' + check.toLocaleTimeString('en-GB') + '.';
+              obtainObservanceCommenterDatas(observanceComments[i], index, i);
+            }
+          }
+        });
+      }
+
       function retrieveUserObservanceShares() {
         let check;
 
@@ -425,6 +463,7 @@
               vm.activeObservanceShares[i].cleanDate = cleanDateHoliday(userObservanceShares[i].created_at) + ' at ' + check.toLocaleTimeString('en-GB') + '.';
               obtainObservanceInviterInviteeDatas(userObservanceShares[i], i);
               obtainObservanceDatas(userObservanceShares[i], i);
+              obstainObservanceComments(userObservanceShares[i], i);
             }
           }
           setTimeout(() => {
