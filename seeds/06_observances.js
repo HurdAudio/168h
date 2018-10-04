@@ -10285,6 +10285,34 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 660,
+          user_id: 1,
+          name: 'John Steinbeck (author) born 1902',
+          color: '#596476',
+          picture: './img/authors/steinbeck.jpg',
+          day_of: new Date ('1902-02-27T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 661,
+          user_id: 1,
+          name: 'Pier Paolo Pasolini (film director/poet/writer/intellectual) born 1922',
+          color: '#D8D8D8',
+          picture: './img/dissent/Palomaxresdefault1-800x400.jpg',
+          day_of: new Date ('1922-03-05T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
