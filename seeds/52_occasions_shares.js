@@ -12,6 +12,7 @@ exports.seed = function(knex, Promise) {
           share_associate_id: 1,
           responded: false,
           accepted: false,
+          responded: false,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
         }

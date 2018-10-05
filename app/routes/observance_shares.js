@@ -42,7 +42,8 @@ router.post('/', (req, res, next) => {
     user_id: req.body.user_id,
     observance_id: req.body.observance_id,
     share_associate_id: req.body.share_associate_id,
-    accepted: req.body.accepted
+    accepted: req.body.accepted,
+    responded: req.body.responded
   }, '*')
   .then((result) => {
     res.status(200).send(result);
@@ -60,7 +61,9 @@ router.patch('/:id', (req, res, next) => {
     user_id: req.body.user_id,
     observance_id: req.body.observance_id,
     share_associate_id: req.body.share_associate_id,
-    accepted: req.body.accepted
+    accepted: req.body.accepted,
+    responded: req.body.responded,
+    updated_at: req.body.updated_at
   }, '*')
     .then((results)=>{
        res.status(200).send(results[0]);
@@ -98,6 +101,7 @@ router.delete('/:id', (req, res, next) => {
             observance_id: record.observance_id,
             share_associate_id: record.share_associate_id,
             accepted: record.accepted,
+            responded: record.responded,
             created_at: record.created_at,
             updated_at: record.updated_at
           };

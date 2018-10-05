@@ -272,6 +272,60 @@
       vm.userEditTaskShareCommentCompleted = userEditTaskShareCommentCompleted;
       vm.deleteTaskShare = deleteTaskShare;
       vm.addNewOccasionShareComment = addNewOccasionShareComment;
+      vm.declineObservanceShare = declineObservanceShare;
+      vm.acceptObservanceShare = acceptObservanceShare;
+
+      function acceptObservanceShare(observanceId) {
+        let now = new Date();
+        let subObj = {
+          responded: true,
+          accepted: true,
+          updated_at: now
+        };
+        $http.patch(`/observance_shares/${observanceId}`, subObj)
+        .then(observeData => {
+          let observe = observeData.data;
+          document.getElementById('observanceAcceptDecline' + observanceId).setAttribute("style", "display: none;");
+          document.getElementById('observanceShareAccepted' + observanceId).setAttribute("style", "display: initial;");
+          document.getElementById('observanceShareDeclined' + observanceId).setAttribute("style", "display: none;");
+          $http.get(`/observances/${observe.observance_id}`)
+          .then(sharedObserveData => {
+            let sharedObserve = sharedObserveData.data;
+            let sub = {
+              user_id: currentUserId,
+              name: sharedObserve.name,
+              color: sharedObserve.color,
+              picture: sharedObserve.picture,
+              day_of: sharedObserve.day_of,
+              is_annual: sharedObserve.is_annual,
+              art_override: sharedObserve.art_override,
+              music_override: sharedObserve.music_override,
+              override_content: sharedObserve.override_content
+            };
+            $http.post(`/observances`, sub)
+            .then(addedObserveData => {
+              let addedObserve = addedObserveData.data;
+              console.log('success!');
+            });
+          });
+        });
+      }
+
+      function declineObservanceShare(observanceId) {
+        let now = new Date();
+        let subObj = {
+          responded: true,
+          accepted: false,
+          updated_at: now
+        };
+        $http.patch(`/observance_shares/${observanceId}`, subObj)
+        .then(observeData=>{
+          let observe = observeData.data;
+          document.getElementById('observanceAcceptDecline' + observanceId).setAttribute("style", "display: none;");
+          document.getElementById('observanceShareAccepted' + observanceId).setAttribute("style", "display: none;");
+          document.getElementById('observanceShareDeclined' + observanceId).setAttribute("style", "display: initial;");
+        });
+      }
 
       function addNewOccasionShareComment(occasionId) {
         let subObj = {
@@ -471,9 +525,37 @@
               if ((parseInt(userObservanceShares[j].user_id)) === (parseInt(currentUserId))) {
                 document.getElementById('observanceblockInviter' + userObservanceShares[j].id).setAttribute("style", "display: none;");
                 document.getElementById('observanceblockInvitee' + userObservanceShares[j].id).setAttribute("style", "display: initial;");
+                if (userObservanceShares[j].responded) {
+                  document.getElementById('observanceAcceptDecline' + userObservanceShares[j].id).setAttribute("style", "display: none;");
+                  if (userObservanceShares[j].accepted) {
+                    document.getElementById('observanceShareAccepted' + userObservanceShares[j].id).setAttribute("style", "display: initial;");
+                    document.getElementById('observanceShareDeclined' + userObservanceShares[j].id).setAttribute("style", "display: none;");
+                  } else {
+                    document.getElementById('observanceShareAccepted' + userObservanceShares[j].id).setAttribute("style", "display: none;");
+                    document.getElementById('observanceShareDeclined' + userObservanceShares[j].id).setAttribute("style", "display: initial;");
+                  }
+                } else {
+                  document.getElementById('observanceAcceptDecline' + userObservanceShares[j].id).setAttribute("style", "display: initial;");
+                  document.getElementById('observanceShareAccepted' + userObservanceShares[j].id).setAttribute("style", "display: none;");
+                  document.getElementById('observanceShareDeclined' + userObservanceShares[j].id).setAttribute("style", "display: none;");
+                }
+
               } else {
                 document.getElementById('observanceblockInviter' + userObservanceShares[j].id).setAttribute("style", "display: initial;");
                 document.getElementById('observanceblockInvitee' + userObservanceShares[j].id).setAttribute("style", "display: none;");
+                document.getElementById('observanceAcceptDecline' + userObservanceShares[j].id).setAttribute("style", "display: none;");
+                if (userObservanceShares[j].responded) {
+                  if (userObservanceShares[j].accepted) {
+                    document.getElementById('observanceShareAccepted' + userObservanceShares[j].id).setAttribute("style", "display: initial;");
+                    document.getElementById('observanceShareDeclined' + userObservanceShares[j].id).setAttribute("style", "display: none;");
+                  } else {
+                    document.getElementById('observanceShareAccepted' + userObservanceShares[j].id).setAttribute("style", "display: none;");
+                    document.getElementById('observanceShareDeclined' + userObservanceShares[j].id).setAttribute("style", "display: initial;");
+                  }
+                } else {
+                  document.getElementById('observanceShareAccepted' + userObservanceShares[j].id).setAttribute("style", "display: none;");
+                  document.getElementById('observanceShareDeclined' + userObservanceShares[j].id).setAttribute("style", "display: none;");
+                }
               }
             }
           }, (userObservanceShares.length * 25));
