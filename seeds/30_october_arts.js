@@ -7304,6 +7304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 366,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_parenthoodsovpost_00024.jpg',
+          title: 'Let our motherland to have a long life and prosper!',
+          artist: 'P. Golub',
+          year: '1949',
+          rule: {
+            "monday": [ 27, 7, 18, 22 ],
+            "tuesday": [ 26, 6, 17, 21 ],
+            "wednesday": [ 25, 5, 16, 20 ],
+            "thursday": [ 24, 4, 15, 19 ],
+            "friday": [ 23, 3, 14, 18 ],
+            "saturday": [ 22, 2, 3, 17 ],
+            "sunday": [ 31, 1, 12, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 367,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_parenthoodsovpost_00013.jpg',
+          title: 'The whole world will be ours!',
+          artist: 'I.Zavyalov',
+          year: '1935',
+          rule: {
+            "monday": [ 31, 1, 12, 16 ],
+            "tuesday": [ 27, 7, 18, 22 ],
+            "wednesday": [ 26, 6, 17, 21 ],
+            "thursday": [ 25, 5, 16, 20 ],
+            "friday": [ 24, 4, 15, 19 ],
+            "saturday": [ 23, 3, 14, 18 ],
+            "sunday": [ 22, 2, 3, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 368,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_parenthoodsovpost_00001.jpg',
+          title: 'Be happy, darling!',
+          artist: 'V. Ivanov',
+          year: '1955',
+          rule: {
+            "monday": [ 22, 2, 3, 17 ],
+            "tuesday": [ 31, 1, 12, 16 ],
+            "wednesday": [ 27, 7, 18, 22 ],
+            "thursday": [ 26, 6, 17, 21 ],
+            "friday": [ 25, 5, 16, 20 ],
+            "saturday": [ 24, 4, 15, 19 ],
+            "sunday": [ 23, 3, 14, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 369,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_shame.jpg',
+          title: 'Feeling ashamed!',
+          artist: 'N. Velezheva, N. Kuzovkin',
+          year: '1958',
+          rule: {
+            "monday": [ 23, 3, 14, 18 ],
+            "tuesday": [ 22, 2, 3, 17 ],
+            "wednesday": [ 31, 1, 12, 16 ],
+            "thursday": [ 27, 7, 18, 22 ],
+            "friday": [ 26, 6, 17, 21 ],
+            "saturday": [ 25, 5, 16, 20 ],
+            "sunday": [ 24, 4, 15, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 370,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_socialsovpost_00015.jpg',
+          title: 'Sin - (go) over the doorstep!',
+          artist: 'V.Govorkov',
+          year: '1959',
+          rule: {
+            "monday": [ 24, 4, 15, 19 ],
+            "tuesday": [ 23, 3, 14, 18 ],
+            "wednesday": [ 22, 2, 3, 17 ],
+            "thursday": [ 31, 1, 12, 16 ],
+            "friday": [ 27, 7, 18, 22 ],
+            "saturday": [ 26, 6, 17, 21 ],
+            "sunday": [ 25, 5, 16, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
