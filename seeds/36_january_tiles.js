@@ -942,6 +942,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#D8D5DF',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 68,
+          user_id: 1,
+          theme: 'Ice',
+          type: 'week',
+          src_string: '../img/january_tiles/robin-vet-435901-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '155%',
+          color_dark: '#030D0E',
+          color_medium: '#197E86',
+          color_light: '#FAFDFC',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
