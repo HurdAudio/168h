@@ -4108,6 +4108,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 229,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3929975378/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://advaitarecords.bandcamp.com/album/macronympha-guilty-c',
+          a_string: 'Macronympha / GUILTY C. by Macronympha / GUILTY C.',
+          rule: {
+            "monday": [ 11, 19, 1, 31 ],
+            "tuesday": [ 10, 18, 31, 30 ],
+            "wednesday": [ 14, 22, 4, 3 ],
+            "thursday": [ 13, 21, 3, 2 ],
+            "saturday": [ 12, 20, 2, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 230,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1844530422/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://splooshrecords.bandcamp.com/album/monkey-cop',
+          a_string: 'Monkey Cop by Martín &amp; Teté',
+          rule: {
+            "monday": [ 12, 20, 2, 1 ],
+            "tuesday": [ 11, 19, 1, 31 ],
+            "wednesday": [ 10, 18, 31, 30 ],
+            "thursday": [ 14, 22, 4, 3 ],
+            "saturday": [ 13, 21, 3, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 231,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2950135151/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://paraphrasetimberne.bandcamp.com/album/pre-emptive-denial',
+          a_string: 'Pre-Emptive Denial by Paraphrase &amp; Tim Berne',
+          rule: {
+            "monday": [ 14, 22, 4, 3 ],
+            "tuesday": [ 13, 21, 3, 2 ],
+            "wednesday": [ 12, 20, 2, 1 ],
+            "thursday": [ 11, 19, 1, 31 ],
+            "saturday": [ 15, 23, 5, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
