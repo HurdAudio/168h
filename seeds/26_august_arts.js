@@ -7704,6 +7704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 386,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/cassandra-1908.jpg',
+          title: 'Cassandra',
+          artist: 'Aladar Korosfoi-Kriesch',
+          year: '1908',
+          rule: {
+            "monday": [ 27, 30, 8, 24 ],
+            "tuesday": [ 26, 30, 7, 23 ],
+            "wednesday": [ 25, 29, 6, 22 ],
+            "thursday": [ 24, 26, 5, 21 ],
+            "friday": [ 23, 26, 4, 20 ],
+            "saturday": [ 22, 25, 3, 19 ],
+            "sunday": [ 28, 1, 9, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 387,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/gladiators-1932.jpg',
+          title: 'Gladiators',
+          artist: 'Rafael Zabaleta',
+          year: '1932',
+          rule: {
+            "monday": [ 28, 1, 9, 25 ],
+            "tuesday": [ 27, 30, 8, 24 ],
+            "wednesday": [ 26, 30, 7, 23 ],
+            "thursday": [ 25, 29, 6, 22 ],
+            "friday": [ 24, 26, 5, 21 ],
+            "saturday": [ 23, 26, 4, 20 ],
+            "sunday": [ 22, 25, 3, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 388,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/siesta-1913.jpg',
+          title: 'Siesta',
+          artist: 'Jules Pascin',
+          year: '1913',
+          rule: {
+            "monday": [ 22, 25, 3, 19 ],
+            "tuesday": [ 28, 1, 9, 25 ],
+            "wednesday": [ 27, 30, 8, 24 ],
+            "thursday": [ 26, 30, 7, 23 ],
+            "friday": [ 25, 29, 6, 22 ],
+            "saturday": [ 24, 26, 5, 21 ],
+            "sunday": [ 23, 26, 4, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 389,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/valley-road-1920.jpg',
+          title: 'Valley Road',
+          artist: 'Marsden Hartley',
+          year: '1920',
+          rule: {
+            "monday": [ 23, 26, 4, 20 ],
+            "tuesday": [ 22, 25, 3, 19 ],
+            "wednesday": [ 28, 1, 9, 25 ],
+            "thursday": [ 27, 30, 8, 24 ],
+            "friday": [ 26, 30, 7, 23 ],
+            "saturday": [ 25, 29, 6, 22 ],
+            "sunday": [ 24, 26, 5, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 390,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/lancaster-1920.jpg',
+          title: 'Lancaster',
+          artist: 'Charles Demuth',
+          year: '1920',
+          rule: {
+            "monday": [ 24, 26, 5, 21 ],
+            "tuesday": [ 23, 26, 4, 20 ],
+            "wednesday": [ 22, 25, 3, 19 ],
+            "thursday": [ 28, 1, 9, 25 ],
+            "friday": [ 27, 30, 8, 24 ],
+            "saturday": [ 26, 30, 7, 23 ],
+            "sunday": [ 25, 29, 6, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
