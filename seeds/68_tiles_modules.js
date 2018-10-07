@@ -529,6 +529,21 @@ exports.seed = function(knex, Promise) {
           public: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 36,
+          user_author_id: 1,
+          theme: 'wood',
+          type: 'friday',
+          src_string: '../img/tiles/bruno-ramos-lara-5136-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '140%',
+          color_dark: '#15151F',
+          color_medium: '#97C8E8',
+          color_light: '#E1E2D4',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
