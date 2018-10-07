@@ -4216,6 +4216,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 235,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=118774042/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://slumberlandrecs.bandcamp.com/album/modern-meta-physic',
+          a_string: 'Modern Meta Physic by Peel Dream Magazine',
+          rule: {
+            "monday": [ 1, 2, 7, 15 ],
+            "tuesday": [ 31, 2, 6, 14 ],
+            "wednesday": [ 4, 6, 10, 18 ],
+            "thursday": [ 3, 5, 9, 17 ],
+            "saturday": [ 2, 4, 8, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 236,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=478610650/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://thebuddysystemproject.com/album/tbs-008',
+          a_string: 'TBS 008 by Puerto Rican Space Program',
+          rule: {
+            "monday": [ 2, 4, 8, 16 ],
+            "tuesday": [ 1, 2, 7, 15 ],
+            "wednesday": [ 31, 2, 6, 14 ],
+            "thursday": [ 4, 6, 10, 18 ],
+            "saturday": [ 3, 5, 9, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 237,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3340782085/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://roseette.bandcamp.com/album/ignore-the-feeling',
+          a_string: 'Ignore the Feeling by Rose Ette',
+          rule: {
+            "monday": [ 3, 5, 9, 17 ],
+            "tuesday": [ 2, 4, 8, 16 ],
+            "wednesday": [ 1, 2, 7, 15 ],
+            "thursday": [ 31, 2, 6, 14 ],
+            "saturday": [ 4, 6, 10, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
