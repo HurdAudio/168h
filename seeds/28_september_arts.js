@@ -7504,6 +7504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 376,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/centrifugal-1970.jpg',
+          title: 'Centrifugal',
+          artist: 'Fred Eversley',
+          year: '1970',
+          rule: {
+            "monday": [ 11, 27, 15, 24 ],
+            "tuesday": [ 10, 17, 14, 22 ],
+            "wednesday": [ 18, 25, 13, 20 ],
+            "thursday": [ 25, 1, 19, 27 ],
+            "friday": [ 24, 30, 18, 26 ],
+            "saturday": [ 23, 29, 17, 25 ],
+            "sunday": [ 22, 28, 16, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 377,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/mensaje-xv-leviticos-xx-18-1959.jpg',
+          title: 'Mensaje XV, Leviticos XX: 18',
+          artist: 'Mathias Goeritz',
+          year: '1959',
+          rule: {
+            "monday": [ 22, 28, 16, 24 ],
+            "tuesday": [ 11, 27, 15, 24 ],
+            "wednesday": [ 10, 17, 14, 22 ],
+            "thursday": [ 18, 25, 13, 20 ],
+            "friday": [ 25, 1, 19, 27 ],
+            "saturday": [ 24, 30, 18, 26 ],
+            "sunday": [ 23, 29, 17, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 378,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/throwing-away-bad-luck-2003.jpg',
+          title: 'Throwing Away Bad Luck',
+          artist: 'Nyoman Masriadi',
+          year: '2003',
+          rule: {
+            "monday": [ 24, 30, 18, 26 ],
+            "tuesday": [ 23, 29, 17, 25 ],
+            "wednesday": [ 12, 28, 16, 25 ],
+            "thursday": [ 11, 18, 15, 23 ],
+            "friday": [ 19, 26, 14, 21 ],
+            "saturday": [ 26, 2, 20, 28 ],
+            "sunday": [ 25, 1, 19, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 379,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/coal-face-drawers-1950.jpg',
+          title: 'Coal-Face Drawers',
+          artist: 'Oliver Kilbourn',
+          year: '1950',
+          rule: {
+            "monday": [ 25, 1, 19, 27 ],
+            "tuesday": [ 24, 30, 18, 26 ],
+            "wednesday": [ 23, 29, 17, 25 ],
+            "thursday": [ 12, 28, 16, 25 ],
+            "friday": [ 11, 18, 15, 23 ],
+            "saturday": [ 19, 26, 14, 21 ],
+            "sunday": [ 26, 2, 20, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 380,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/portrait-of-man-sitting-1980.jpg',
+          title: 'Portrait of man sitting',
+          artist: 'Dimitris Mytaras',
+          year: 'c.1979 - c.1980',
+          rule: {
+            "monday": [ 26, 2, 20, 28 ],
+            "tuesday": [ 25, 1, 19, 27 ],
+            "wednesday": [ 24, 30, 18, 26 ],
+            "thursday": [ 23, 29, 17, 25 ],
+            "friday": [ 12, 28, 16, 25 ],
+            "saturday": [ 11, 18, 15, 23 ],
+            "sunday": [ 19, 26, 14, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
