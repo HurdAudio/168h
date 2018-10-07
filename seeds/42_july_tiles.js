@@ -858,6 +858,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#F9DCD4',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 62,
+          user_id: 1,
+          theme: 'Steam',
+          type: 'holiday',
+          src_string: '../img/july_tiles/tom-mussak-99823-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '155%',
+          color_dark: '#0D0201',
+          color_medium: '#948E92',
+          color_light: '#B1B5C0',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
