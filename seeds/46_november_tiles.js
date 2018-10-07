@@ -802,6 +802,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#F1FCFA',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 58,
+          user_id: 1,
+          theme: 'Monochromatic',
+          type: 'week',
+          src_string: '../img/november_tiles/pierre-chatel-innocenti-998343-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '100%',
+          color_dark: '#1C1C19',
+          color_medium: '#9D9C9A',
+          color_light: '#F3F5F9',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
