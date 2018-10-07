@@ -6904,6 +6904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 346,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/50-09,SuperScience.jpg',
+          title: 'Super Science',
+          artist: 'H. R. Van Dongen',
+          year: '1950',
+          rule: {
+            "monday": [ 16, 29, 17, 24 ],
+            "tuesday": [ 22, 4, 12, 18 ],
+            "wednesday": [ 21, 3, 11, 17 ],
+            "thursday": [ 20, 2, 10, 16 ],
+            "friday": [ 19, 1, 9, 15 ],
+            "saturday": [ 18, 31, 8, 14 ],
+            "sunday": [ 17, 29, 7, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 347,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/43-00,Newspaper.jpg',
+          title: 'Newspaper Article',
+          artist: 'Herman Vestal',
+          year: '1943',
+          rule: {
+            "monday": [ 17, 29, 7, 13 ],
+            "tuesday": [ 16, 29, 17, 24 ],
+            "wednesday": [ 22, 4, 12, 18 ],
+            "thursday": [ 21, 3, 11, 17 ],
+            "friday": [ 20, 2, 10, 16 ],
+            "saturday": [ 19, 1, 9, 15 ],
+            "sunday": [ 18, 31, 8, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 348,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/35-06,RealW.jpg',
+          title: 'Real Western',
+          artist: 'Frank Volp',
+          year: '1935',
+          rule: {
+            "monday": [ 18, 31, 8, 14 ],
+            "tuesday": [ 17, 29, 7, 13 ],
+            "wednesday": [ 16, 29, 17, 24 ],
+            "thursday": [ 22, 4, 12, 18 ],
+            "friday": [ 21, 3, 11, 17 ],
+            "saturday": [ 20, 2, 10, 16 ],
+            "sunday": [ 19, 1, 9, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 349,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/37-00,Strativari.jpg',
+          title: 'Stratavari',
+          artist: 'Oren Waggener',
+          year: '1937',
+          rule: {
+            "monday": [ 19, 1, 9, 15 ],
+            "tuesday": [ 18, 31, 8, 14 ],
+            "wednesday": [ 17, 29, 7, 13 ],
+            "thursday": [ 16, 29, 17, 24 ],
+            "friday": [ 22, 4, 12, 18 ],
+            "saturday": [ 21, 3, 11, 17 ],
+            "sunday": [ 20, 2, 10, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 350,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/31-12-09,West.jpg',
+          title: 'West',
+          artist: 'Stephen Waite',
+          year: '1931',
+          rule: {
+            "monday": [ 21, 3, 11, 17 ],
+            "tuesday": [ 20, 2, 10, 16 ],
+            "wednesday": [ 19, 1, 9, 15 ],
+            "thursday": [ 18, 30, 8, 14 ],
+            "friday": [ 17, 30, 18, 25 ],
+            "saturday": [ 23, 5, 13, 19 ],
+            "sunday": [ 22, 4, 12, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
