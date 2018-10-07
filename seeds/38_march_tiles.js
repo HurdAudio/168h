@@ -914,6 +914,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FFFBFF',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 66,
+          user_id: 1,
+          theme: 'Glass',
+          type: 'sunday',
+          src_string: '../img/march_tiles/logan-cameron-639735-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '100%',
+          color_dark: '#100000',
+          color_medium: '#E22800',
+          color_light: '#BEC3C5',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
