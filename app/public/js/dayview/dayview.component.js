@@ -443,19 +443,22 @@
       }
 
       function advanceArt(index) {
-        let nextArt = Math.floor(Math.random()*vm.arts.length);
+        let nextArt = index + 1;
         let currentArt = document.getElementById('art' + index);
-        if (vm.arts.length > 1) {
-          if (nextArt === index) {
-            while(nextArt === index) {
-              nextArt = Math.floor(Math.random()*vm.arts.length);
-            }
-          }
-        }
-        let nextElement;
-        if (nextArt === vm.arts.length) {
+        if (nextArt === vm.dailyArts.length) {
           nextArt = 0;
         }
+        // if (vm.dailyArts.length > 1) {
+        //   if (nextArt === index) {
+        //     while(nextArt === index) {
+        //       nextArt = Math.floor(Math.random()*vm.arts.length);
+        //     }
+        //   }
+        // }
+        let nextElement;
+        // if (nextArt === vm.arts.length) {
+        //   nextArt = 0;
+        // }
         nextElement = document.getElementById('art' + nextArt);
         transitionPane(currentArt, nextElement);
         // currentArt.setAttribute("style", "display: none;");
@@ -1924,8 +1927,6 @@
             // alert(observanceDate);
             if ((viewDate.getMonth() === observanceDate.getMonth()) && (viewDate.getDate() === (observanceDate.getDate()))) {
               vm.observances.push(userObservances[i]);
-              console.log(observanceDate);
-              console.log(viewDate);
             }
           }
           if (vm.observances.length < 1) {
@@ -1955,7 +1956,6 @@
               }
 
             }
-            console.log(vm.arts);
           }
           //art override content
 
@@ -2037,9 +2037,17 @@
                 ++indexMusic;
               }
             }
+            while (vm.musics.length > 9) {
+              vm.musics.splice((Math.floor(Math.random()) * vm.musics.length), 1);
+            }
+            for (let uu = 0; uu < vm.musics.length; uu++) {
+              vm.musics[uu].index = uu;
+            }
+            vm.dailyMusics = [];
+            vm.dailyMusics = vm.musics;
             setTimeout(()=>{
-              if (vm.musics.length > 0) {
-                indiceArray = randomizedArray(vm.musics.length);
+              if (vm.dailyMusics.length > 0) {
+                indiceArray = randomizedArray(vm.dailyMusics.length);
                 for (let qq = 1; qq < indiceArray.length; qq++) {
                   element = document.getElementById('musics' + indiceArray[qq]);
                   element.setAttribute("style", "display: none;");
@@ -2068,13 +2076,13 @@
                   //secondElement.children[0].contentWindow.location(vm.musics[indiceArray[indice]].href_string);
                 });
               } else {
-                if (vm.musics.length !== 0) {
+                if (vm.dailyMusics.length !== 0) {
                   musicPlayer.setAttribute("style", "display: initial;");
                 }
                 musicPlayerBackSelection.setAttribute("style", "display: none;");
                 musicPlayerNextSelection.setAttribute("style", "display: none;");
               }
-            }, (vm.musics.length * 1500));
+            }, (vm.dailyMusics.length * 1500));
           });
         } else {
           switch(theDate.getDay()) {
@@ -2152,9 +2160,17 @@
                 }
 
               }
+              while(vm.musics.length > 9) {
+                vm.musics.splice((Math.floor(Math.random() * vm.musics.length)), 1);
+              }
+              for (let uu = 0; uu < vm.musics.length; uu++) {
+                vm.musics[uu].index = uu;
+              }
+              vm.dailyMusics = [];
+              vm.dailyMusics = vm.musics;
               setTimeout(()=>{
-                if (vm.musics.length > 0) {
-                  indiceArray = randomizedArray(vm.musics.length);
+                if (vm.dailyMusics.length > 0) {
+                  indiceArray = randomizedArray(vm.dailyMusics.length);
                   for (let qq = 1; qq < indiceArray.length; qq++) {
                     element = document.getElementById('musics' + indiceArray[qq]);
                     if (element) {
@@ -2180,25 +2196,25 @@
                     }
                     secondElement = document.getElementById('musics' + indiceArray[indice]);
                     transitionPane(element, secondElement);
-                    secondElement.children[0]["ng-src"] = vm.musics[indiceArray[indice]].src_string;
-                    secondElement.children[0].href = vm.musics[indiceArray[indice]].href_string;
-                    secondElement.children[0].contentWindow.location(vm.musics[indiceArray[indice]].href_string);
+                    secondElement.children[0]["ng-src"] = vm.dailyMusics[indiceArray[indice]].src_string;
+                    secondElement.children[0].href = vm.dailyMusics[indiceArray[indice]].href_string;
+                    secondElement.children[0].contentWindow.location(vm.dailyMusics[indiceArray[indice]].href_string);
                   });
                 } else {
-                  if (vm.musics.length !== 0) {
+                  if (vm.dailyMusics.length !== 0) {
                     musicPlayer.setAttribute("style", "display: initial;");
                   }
                   musicPlayerBackSelection.setAttribute("style", "display: none;");
                   musicPlayerNextSelection.setAttribute("style", "display: none;");
                 }
-              }, (vm.musics.length * 1500));
+              }, (vm.dailyMusics.length * 1500));
             });
           } else {
             setTimeout(()=>{
-              if (vm.musics.length < 1) {
+              if (vm.dailyMusics.length < 1) {
                 musicPlayer.setAttribute("style", "display: none;");
               } else {
-                console.log(vm.musics);
+                console.log(vm.dailyMusics);
               }
             }, 55);
 
@@ -2296,19 +2312,23 @@
                 ++indexArt;
               }
             }
-            console.log(vm.arts);
-            if (vm.arts.length > 1) {
-              let indice = 0;
 
-              //console.log(vm.arts.length);
+            if (vm.arts.length > 0) {
+              let indice = 0;
+              while(vm.arts.length > 8) {
+                vm.arts.splice((Math.floor(Math.random() * vm.arts.length)));
+              }
+              vm.dailyArts = vm.arts;
+
+
               setTimeout(()=>{
-                for (let a = 0; a <vm.arts.length; a++) {
+                for (let a = 0; a <vm.dailyArts.length; a++) {
                   element = document.getElementById('art' + a);
                   if (element !== null) {
                     element.setAttribute("style", "display: none;");
                   }
                 }
-                indice = Math.floor(Math.random() * (vm.arts.length));
+                indice = Math.floor(Math.random() * (vm.dailyArts.length));
                 element = document.getElementById('art' + indice);
                 element.setAttribute("style", "display: initial;");
                 artPane.setAttribute("style", "display: initial;");

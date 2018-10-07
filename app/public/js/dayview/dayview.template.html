@@ -453,7 +453,7 @@
   </div>
   <div id="focusPanel" class="pure-u-1-3">
     <div id="artPane">
-      <main ng-repeat="art in $ctrl.arts">
+      <main ng-repeat="art in $ctrl.dailyArts">
         <div id="art{{art.index}}">
           <img ng-click="$ctrl.advanceArt(art.index)" src="{{art.img_path}}" width="100%">
           <h3>{{art.artist}}</h3>
@@ -513,7 +513,7 @@
     </div>
 
     <div id="musicPlayer">
-      <main ng-repeat="music in $ctrl.musics">
+      <main ng-repeat="music in $ctrl.dailyMusics">
         <div id="musics{{music.index}}">
           <iframe ng-src="{{music.src_string}}" style="border: 0; width: 100%; height: 600px;" seamless><a href="{{music.href_string}}">{{music.a_string}}</a></iframe>
         </div>

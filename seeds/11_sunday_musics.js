@@ -649,9 +649,9 @@ exports.seed = function(knex, Promise) {
           id: 65,
           user_id: 1,
           source: 'bandcamp',
-          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1715626612/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
-          href_string: 'http://sunramusic.bandcamp.com/album/the-other-side-of-the-sun',
-          a_string: 'The Other Side of the Sun by Sun Ra &amp; His Arkestra',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1054678028/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sunra-mh.bandcamp.com/album/saturn-mystery-mr-ra',
+          a_string: 'Saturn / Mystery, Mr. Ra by Sun Ra',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
         },
