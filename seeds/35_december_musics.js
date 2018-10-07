@@ -3676,6 +3676,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 205,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3076197901/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://repsych.bandcamp.com/album/the-search-party-st-pius-x-seminary-choir-each-one-heard-us-1968-west-coast-xtian-folk',
+          a_string: 'The Search Party * St. Pius X Seminary Choir &quot;Each One Heard...&quot; (US 1968 West Coast Xtian Folk) by The Search Party',
+          rule: {
+            "monday": [ 1, 9, 15, 21 ],
+            "tuesday": [ 31, 8, 14, 20 ],
+            "wednesday": [ 1, 7, 13, 19 ],
+            "thursday": [ 5, 11, 17, 23 ],
+            "saturday": [ 4, 10, 16, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 206,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3663769440/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://repsych.bandcamp.com/album/bonus-1969-us-west-coast-psych-xtian-folk-female-rock',
+          a_string: 'Bonus 1969 (US West Coast Psych * Xtian Folk * Female Rock) by The Search Party',
+          rule: {
+            "monday": [ 4, 10, 16, 21 ],
+            "tuesday": [ 1, 9, 15, 21 ],
+            "wednesday": [ 31, 8, 14, 20 ],
+            "thursday": [ 1, 7, 13, 19 ],
+            "saturday": [ 5, 11, 17, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 207,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1366857996/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://repsych.bandcamp.com/album/cold-waves-of-color-vol-4-uk-new-wave-post-punk-electronic-1981-1985',
+          a_string: 'Cold Waves of Color * Vol 4 (UK new wave post punk electronic 1981​-​1985) by Various Artists: Cold Waves of Color',
+          rule: {
+            "monday": [ 5, 11, 17, 23 ],
+            "tuesday": [ 4, 10, 16, 21 ],
+            "wednesday": [ 1, 9, 15, 21 ],
+            "thursday": [ 31, 8, 14, 20 ],
+            "saturday": [ 1, 7, 13, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
