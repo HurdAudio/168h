@@ -3784,6 +3784,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 211,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2834942753/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://manudibango.bandcamp.com/album/manu-76',
+          a_string: 'Manu 76 by Manu Dibango',
+          rule: {
+            "monday": [ 30, 11, 22, 26 ],
+            "tuesday": [ 29, 10, 21, 23 ],
+            "wednesday": [ 28, 9, 20, 2 ],
+            "thursday": [ 2, 13, 24, 28 ],
+            "saturday": [ 1, 12, 23, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 212,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1969518197/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://manudibango.bandcamp.com/album/ceddo-bande-originale-du-film',
+          a_string: 'Ceddo (Bande originale du film) by Manu Dibango',
+          rule: {
+            "monday": [ 1, 12, 23, 27 ],
+            "tuesday": [ 30, 11, 22, 26 ],
+            "wednesday": [ 29, 10, 21, 23 ],
+            "thursday": [ 28, 9, 20, 2 ],
+            "saturday": [ 2, 13, 24, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 213,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3593571827/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://africaseven.bandcamp.com/album/african-experimentals-1972-1979',
+          a_string: 'African Experimentals (1972-1979) by Afro National',
+          rule: {
+            "monday": [ 2, 13, 24, 28 ],
+            "tuesday": [ 1, 12, 23, 27 ],
+            "wednesday": [ 30, 11, 22, 26 ],
+            "thursday": [ 29, 10, 21, 23 ],
+            "saturday": [ 28, 9, 20, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
