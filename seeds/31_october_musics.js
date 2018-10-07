@@ -3892,6 +3892,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 217,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4181361550/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://witchripper.bandcamp.com/album/homestead',
+          a_string: 'Homestead by Witch Ripper',
+          rule: {
+            "monday": [ 9, 19, 29, 1 ],
+            "tuesday": [ 8, 18, 28, 31 ],
+            "wednesday": [ 7, 17, 27, 30 ],
+            "thursday": [ 6, 16, 27, 29 ],
+            "saturday": [ 5, 15, 25, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 218,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2131497285/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://pigdestroyer.bandcamp.com/album/head-cage',
+          a_string: 'Head Cage by Pig Destroyer',
+          rule: {
+            "monday": [ 5, 15, 25, 28 ],
+            "tuesday": [ 9, 19, 29, 1 ],
+            "wednesday": [ 8, 18, 28, 31 ],
+            "thursday": [ 7, 17, 27, 30 ],
+            "saturday": [ 6, 16, 27, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 219,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2618949784/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://rideforrevenge.bandcamp.com/album/sinking-the-song',
+          a_string: 'Sinking The Song by Ride For Revenge',
+          rule: {
+            "monday": [ 6, 16, 27, 29 ],
+            "tuesday": [ 5, 15, 25, 28 ],
+            "wednesday": [ 9, 19, 29, 1 ],
+            "thursday": [ 8, 18, 28, 31 ],
+            "saturday": [ 7, 17, 27, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
