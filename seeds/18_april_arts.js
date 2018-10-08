@@ -8504,6 +8504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 426,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/kisspng-character-fiction-logo-clip-art-arizona-diamondbacks-5b13ca87e4fd57.902748011528023687938.jpg',
+          title: 'Arizona Diamondbacks',
+          artist: 'Character Fiction Logo Clip art',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 29, 2, 10, 16 ],
+            "tuesday": [ 28, 2, 17, 15 ],
+            "wednesday": [ 25, 1, 7, 13 ],
+            "thursday": [ 26, 1, 7, 13 ],
+            "friday": [ 25, 30, 6, 12 ],
+            "saturday": [ 30, 6, 11, 18 ],
+            "sunday": [ 14, 4, 10, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 427,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/mlbad2001opt1_grande.jpg',
+          title: 'Arizona Diamondbacks 200',
+          artist: 'Nola McConnan',
+          year: '2001',
+          rule: {
+            "monday": [ 15, 5, 11, 17 ],
+            "tuesday": [ 30, 3, 11, 17 ],
+            "wednesday": [ 29, 3, 18, 16 ],
+            "thursday": [ 26, 2, 8, 14 ],
+            "friday": [ 27, 2, 8, 14 ],
+            "saturday": [ 26, 1, 7, 13 ],
+            "sunday": [ 1, 7, 12, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 428,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/wp2190765-arizona-diamondbacks-wallpapers.jpg',
+          title: 'Arizona Diamondbacks Wallpaper',
+          artist: 'artist unknown',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 1, 7, 12, 19 ],
+            "tuesday": [ 15, 5, 11, 17 ],
+            "wednesday": [ 30, 3, 11, 17 ],
+            "thursday": [ 29, 3, 18, 16 ],
+            "friday": [ 26, 2, 8, 14 ],
+            "saturday": [ 27, 2, 8, 14 ],
+            "sunday": [ 26, 1, 7, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 429,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/wp2190737-arizona-diamondbacks-wallpapers.jpg',
+          title: 'Arizona Diamondbacks Wallpaper',
+          artist: 'artist unknown',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 26, 1, 7, 13 ],
+            "tuesday": [ 1, 7, 12, 19 ],
+            "wednesday": [ 15, 5, 11, 17 ],
+            "thursday": [ 30, 3, 11, 17 ],
+            "friday": [ 29, 3, 18, 16 ],
+            "saturday": [ 26, 2, 8, 14 ],
+            "sunday": [ 27, 2, 8, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 430,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/wp2190751-arizona-diamondbacks-wallpapers.jpg',
+          title: 'Arizona Diamondbacks Wallpaper',
+          artist: 'artist unknown',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 27, 2, 8, 14 ],
+            "tuesday": [ 26, 1, 7, 13 ],
+            "wednesday": [ 1, 7, 12, 19 ],
+            "thursday": [ 15, 5, 11, 17 ],
+            "friday": [ 30, 3, 11, 17 ],
+            "saturday": [ 29, 3, 18, 16 ],
+            "sunday": [ 26, 2, 8, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
