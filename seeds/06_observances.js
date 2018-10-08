@@ -10313,6 +10313,34 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 662,
+          user_id: 1,
+          name: 'Denis Diderot (philosopher/chief editor of L\'Encyclopédie/Enlightenment figure) born 1713',
+          color: '#325868',
+          picture: './img/dissent/Louis-Michel_van_Loo_001.jpg',
+          day_of: new Date ('1713-10-05T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 663,
+          user_id: 1,
+          name: 'Sebastião José de Carvalho e Melo (first Marquis of Pombal/abolished slavery in Portugal) born 1699',
+          color: '#282A25',
+          picture: './img/dissent/SebastiãoJoseph.png',
+          day_of: new Date ('1699-05-13T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
