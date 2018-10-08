@@ -8104,6 +8104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 406,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/emel-karakozak-budding-nudes-abstract-photographer-20.jpg',
+          title: 'Abstract Nudes',
+          artist: 'Emel Karakozak',
+          year: '2016',
+          rule: {
+            "monday": [ 26, 6, 16, 24 ],
+            "tuesday": [ 25, 5, 15, 23 ],
+            "wednesday": [ 4, 14, 24, 22 ],
+            "thursday": [ 23, 3, 13, 21 ],
+            "friday": [ 22, 2, 12, 20 ],
+            "saturday": [ 28, 8, 18, 25 ],
+            "sunday": [ 27, 7, 17, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 407,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/emel-karakozak-budding-nudes-abstract-photographer-19.jpg',
+          title: 'Abstract Nudes',
+          artist: 'Emel Karakozak',
+          year: '2016',
+          rule: {
+            "monday": [ 27, 7, 17, 25 ],
+            "tuesday": [ 26, 6, 16, 24 ],
+            "wednesday": [ 25, 5, 15, 23 ],
+            "thursday": [ 4, 14, 24, 22 ],
+            "friday": [ 23, 3, 13, 21 ],
+            "saturday": [ 22, 2, 12, 20 ],
+            "sunday": [ 28, 8, 18, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 408,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/emel-karakozak-budding-nudes-abstract-photographer-18.jpg',
+          title: 'Abstract Nudes',
+          artist: 'Emel Karakozak',
+          year: '2016',
+          rule: {
+            "monday": [ 28, 8, 18, 25 ],
+            "tuesday": [ 27, 7, 17, 25 ],
+            "wednesday": [ 26, 6, 16, 24 ],
+            "thursday": [ 25, 5, 15, 23 ],
+            "friday": [ 4, 14, 24, 22 ],
+            "saturday": [ 23, 3, 13, 21 ],
+            "sunday": [ 22, 2, 12, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 409,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/emel-karakozak-budding-nudes-abstract-photographer-17.jpg',
+          title: 'Abstract Nudes',
+          artist: 'Emel Karakozak',
+          year: '2016',
+          rule: {
+            "monday": [ 22, 2, 12, 20 ],
+            "tuesday": [ 28, 8, 18, 25 ],
+            "wednesday": [ 27, 7, 17, 25 ],
+            "thursday": [ 26, 6, 16, 24 ],
+            "friday": [ 25, 5, 15, 23 ],
+            "saturday": [ 4, 14, 24, 22 ],
+            "sunday": [ 23, 3, 13, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 410,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/emel-karakozak-budding-nudes-abstract-photographer-16.jpg',
+          title: 'Abstract Nudes',
+          artist: 'Emel Karakozak',
+          year: '2016',
+          rule: {
+            "monday": [ 23, 3, 13, 21 ],
+            "tuesday": [ 22, 2, 12, 20 ],
+            "wednesday": [ 28, 8, 18, 25 ],
+            "thursday": [ 27, 7, 17, 25 ],
+            "friday": [ 26, 6, 16, 24 ],
+            "saturday": [ 25, 5, 15, 23 ],
+            "sunday": [ 4, 14, 24, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
