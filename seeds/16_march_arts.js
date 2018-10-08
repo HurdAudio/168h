@@ -8704,6 +8704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 436,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/her-arms-2003.jpg',
+          title: 'Her Arms',
+          artist: 'Dana Schutz',
+          year: '2003',
+          rule: {
+            "monday": [ 31, 10, 18, 28 ],
+            "tuesday": [ 31, 9, 17, 27 ],
+            "wednesday": [ 29, 8, 16, 26 ],
+            "thursday": [ 28, 8, 15, 25 ],
+            "friday": [ 27, 6, 14, 24 ],
+            "saturday": [ 26, 5, 14, 23 ],
+            "sunday": [ 1, 10, 20, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 437,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/goodbye-eden.jpg',
+          title: 'Goodbye, Eden',
+          artist: 'Jana Brike',
+          year: '?',
+          rule: {
+            "monday": [ 1, 10, 20, 28 ],
+            "tuesday": [ 31, 10, 18, 28 ],
+            "wednesday": [ 31, 9, 17, 27 ],
+            "thursday": [ 29, 8, 16, 26 ],
+            "friday": [ 28, 8, 15, 25 ],
+            "saturday": [ 27, 6, 14, 24 ],
+            "sunday": [ 26, 5, 14, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 438,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/img-0345.jpg',
+          title: 'People\'s Revolution',
+          artist: 'Charuvi Agrawal',
+          year: '2016',
+          rule: {
+            "monday": [ 26, 5, 14, 23 ],
+            "tuesday": [ 1, 10, 20, 28 ],
+            "wednesday": [ 31, 10, 18, 28 ],
+            "thursday": [ 31, 9, 17, 27 ],
+            "friday": [ 29, 8, 16, 26 ],
+            "saturday": [ 28, 8, 15, 25 ],
+            "sunday": [ 27, 6, 14, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 439,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/toys-and-reasons.jpg',
+          title: 'Toys and Reasons',
+          artist: 'Hannah Faith Yata',
+          year: '?',
+          rule: {
+            "monday": [ 27, 6, 14, 24 ],
+            "tuesday": [ 26, 5, 14, 23 ],
+            "wednesday": [ 1, 10, 20, 28 ],
+            "thursday": [ 31, 10, 18, 28 ],
+            "friday": [ 31, 9, 17, 27 ],
+            "saturday": [ 29, 8, 16, 26 ],
+            "sunday": [ 28, 8, 15, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 440,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/1017143-1435842546647966-1643038606-n.jpg',
+          title: 'White',
+          artist: 'Boglarka Tornai',
+          year: 'c.2012',
+          rule: {
+            "monday": [ 28, 8, 15, 25 ],
+            "tuesday": [ 27, 6, 14, 24 ],
+            "wednesday": [ 26, 5, 14, 23 ],
+            "thursday": [ 1, 10, 20, 28 ],
+            "friday": [ 31, 10, 18, 28 ],
+            "saturday": [ 31, 9, 17, 27 ],
+            "sunday": [ 29, 8, 16, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
