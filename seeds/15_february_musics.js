@@ -4756,6 +4756,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 265,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=639116243/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://newbraxtonhouse.bandcamp.com/album/trio-new-haven-2013',
+          a_string: 'Trio (New Haven) 2013 by Anthony Braxton',
+          rule: {
+            "monday": [ 13, 16, 18, 22 ],
+            "tuesday": [ 24, 18, 20, 22 ],
+            "wednesday": [ 26, 20, 22, 28 ],
+            "thursday": [ 27, 21, 23, 29 ],
+            "saturday": [ 10, 14, 16, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 266,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3123042263/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://newbraxtonhouse.bandcamp.com/album/creative-music-orchestra-nyc-2011',
+          a_string: 'Creative Music Orchestra (NYC) 2011 by Anthony Braxton',
+          rule: {
+            "monday": [ 11, 15, 17, 21 ],
+            "tuesday": [ 14, 17, 19, 21 ],
+            "wednesday": [ 25, 19, 21, 23 ],
+            "thursday": [ 27, 21, 23, 29 ],
+            "saturday": [ 28, 22, 24, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 267,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2535910985/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://newbraxtonhouse.bandcamp.com/album/trillium-r',
+          a_string: 'Trillium R by Anthony Braxton',
+          rule: {
+            "monday": [ 28, 22, 24, 1 ],
+            "tuesday": [ 11, 15, 17, 21 ],
+            "wednesday": [ 14, 17, 19, 21 ],
+            "thursday": [ 25, 19, 21, 23 ],
+            "saturday": [ 27, 21, 23, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
