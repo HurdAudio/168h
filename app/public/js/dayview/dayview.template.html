@@ -713,6 +713,7 @@
 
           </div>
           <a href="" ng-click="$ctrl.taskInfo(task.id)" class="btn" id="{{task.name + task.id + task.name + task.id + task.name}}">info</a>
+          <a href="" ng-click="$ctrl.taskShareNow(task.id)" class="btn">share</a>
         </div>
       </main>
     </div>
@@ -841,6 +842,32 @@
     <input type="text" id="occasionWhoToShareSearch" placeholder="search">
   </div>
   <div id="occasionFriendsSearchList">
+
+
+    <div>
+
+      <img src="https://pbs.twimg.com/profile_images/3511787126/e23647c60fe7cee53e4d2d37a50a255c_400x400.jpeg">
+      <p>Lucifer Sam</p>
+      <br><br><br>
+    </div>
+  </div>
+</div>
+
+<div id="shareTaskPane">
+  <a class="btn" ng-click="$ctrl.cancelTaskInvite()" href="#">cancel</a>
+  <div id="taskShareIdentifierFields">
+
+    <h3 id="taskShareName"></h3>
+    <h3 id="taskShareNotes"></h3>
+    <h3 id="taskShareDueDate"></h3>
+    <h3 id="taskShareCompletionStatus"></h3>
+
+  </div><br><br>
+  <h3>Select who you want to share this task with:</h3>
+  <div id="shareTaskSearchBarDiv">
+    <input type="text" id="taskWhoToShareSearch" placeholder="search">
+  </div>
+  <div id="taskFriendsSearchList">
 
 
     <div>

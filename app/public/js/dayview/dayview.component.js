@@ -93,6 +93,158 @@
       vm.cancelHolidayInvite = cancelHolidayInvite;
       vm.shareOccasion = shareOccasion;
       vm.cancelOccasionInvite = cancelOccasionInvite;
+      vm.taskShareNow = taskShareNow;
+      vm.cancelTaskInvite = cancelTaskInvite;
+
+      function cancelTaskInvite() {
+        let shareTaskPane = document.getElementById('shareTaskPane');
+
+        shareTaskPane.setAttribute("style", "z-index: -6; opacity: 0; transition: opacity 0.5s linear;");
+      }
+
+      function populateTaskFriendsList(friendId, imgBlock, nameBlock) {
+        $http.get(`/users/${friendId}`)
+        .then(friendData => {
+          let friend = friendData.data;
+          imgBlock.src = friend.user_avatar_url;
+          nameBlock.innerHTML = friend.name;
+        });
+      }
+
+      function taskFriendClick(friendDiv, friendId, taskId) {
+        friendDiv.addEventListener('click', () => {
+          let subObj = {
+            user_id: currentUserId,
+            task_id: taskId,
+            share_associate_id: friendId,
+            responded: false,
+            accepted: false
+          };
+
+          $http.post('/task_shares', subObj)
+          .then(subTaskData => {
+            let subTask = subTaskData.data;
+            cancelTaskInvite();
+          });
+        });
+      }
+
+      function filterTheTaskFriendsList(friendList, friendId, filter, taskId) {
+        let theDiv;
+        let theImg;
+        let theName;
+        let theBr;
+
+        $http.get(`/users/${friendId}`)
+        .then(friendData => {
+          let friend = friendData.data;
+          if ((friend.name.toLowerCase().indexOf(filter.toLowerCase()) !== -1) || (friend.email.toLowerCase().indexOf(filter.toLowerCase()) !== -1)) {
+            theDiv = document.createElement('div');
+            friendList.appendChild(theDiv);
+            theImg = document.createElement('img');
+            theDiv.appendChild(theImg);
+            theImg.src = friend.user_avatar_url;
+            theName = document.createElement('p');
+            theDiv.appendChild(theName);
+            theName.innerHTML = friend.name;
+            theBr = document.createElement('br');
+            theDiv.appendChild(theBr);
+            theBr = document.createElement('br');
+            theDiv.appendChild(theBr);
+            theBr = document.createElement('br');
+            theDiv.appendChild(theBr);
+            theBr = document.createElement('br');
+            theDiv.appendChild(theBr);
+            theBr = document.createElement('br');
+            theDiv.appendChild(theBr);
+            theDiv.setAttribute("style", "cursor: pointer;");
+            taskFriendClick(theDiv, friendId, taskId);
+          }
+        });
+      }
+
+      function taskShareNow(taskId) {
+        let months = [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ];
+        let shareTaskPane = document.getElementById('shareTaskPane');
+        let taskShareName = document.getElementById('taskShareName');
+        let taskShareNotes = document.getElementById('taskShareNotes');
+        let taskShareDueDate = document.getElementById('taskShareDueDate');
+        let taskShareCompletionStatus = document.getElementById('taskShareCompletionStatus');
+        let taskFriendsSearchList = document.getElementById('taskFriendsSearchList');
+        while(taskFriendsSearchList.firstChild) {
+          taskFriendsSearchList.removeChild(taskFriendsSearchList.firstChild);
+        }
+        let shareTaskSearchBarDiv = document.getElementById('shareTaskSearchBarDiv');
+        let taskWhoToShareSearch = document.getElementById('taskWhoToShareSearch');
+        if (taskWhoToShareSearch) {
+          taskWhoToShareSearch.parentNode.removeChild(taskWhoToShareSearch);
+          taskWhoToShareSearch = document.createElement('input');
+          shareTaskSearchBarDiv.appendChild(taskWhoToShareSearch);
+          taskWhoToShareSearch.id = 'taskWhoToShareSearch';
+          taskWhoToShareSearch.type = 'text';
+          taskWhoToShareSearch.placeholder = 'search';
+        }
+        let friendDiv;
+        let theImg;
+        let theName;
+        let theBr;
+
+
+        $http.get(`/users/${currentUserId}`)
+        .then(userData => {
+          let user = userData.data;
+          $http.get(`/tasks/${taskId}`)
+          .then(taskData => {
+            let task = taskData.data;
+            let due = new Date(task.due_date);
+            let completion;
+            if (task.is_completed) {
+              completion = new Date(task.completed_date);
+            }
+            taskShareName.innerHTML = 'Task: ' + task.name;
+            taskShareNotes.innerHTML = 'Notes: ' + task.user_notes;
+            taskShareDueDate.innerHTML = 'Due: ' + due.getDate() + ' ' + months[due.getMonth()] + ' ' + due.getFullYear();
+            if (task.is_completed) {
+              taskShareCompletionStatus.innerHTML = 'Completed on ' + completion.getDate() + ' ' + months[completion.getMonth()] + ' ' + completion.getFullYear() + '.';
+            } else {
+              taskShareCompletionStatus.innerHTML = 'Task not yet completed';
+            }
+            if ((user.associates !== null) && (user.associates.friends !== undefined) && (user.associates.friends.length > 0)) {
+              for (let i = 0; i < user.associates.friends.length; i++) {
+                friendDiv = document.createElement('div');
+                taskFriendsSearchList.appendChild(friendDiv);
+                theImg = document.createElement('img');
+                friendDiv.appendChild(theImg);
+                theName = document.createElement('p');
+                friendDiv.appendChild(theName);
+                populateTaskFriendsList(user.associates.friends[i], theImg, theName);
+                theBr = document.createElement('br');
+                friendDiv.appendChild(theBr);
+                theBr = document.createElement('br');
+                friendDiv.appendChild(theBr);
+                theBr = document.createElement('br');
+                friendDiv.appendChild(theBr);
+                theBr = document.createElement('br');
+                friendDiv.appendChild(theBr);
+                theBr = document.createElement('br');
+                friendDiv.appendChild(theBr);
+                friendDiv.setAttribute("style", "cursor: pointer;");
+                taskFriendClick(friendDiv, user.associates.friends[i], taskId);
+              }
+              taskWhoToShareSearch.addEventListener('keyup', () => {
+                while(taskFriendsSearchList.firstChild) {
+                  taskFriendsSearchList.removeChild(taskFriendsSearchList.firstChild);
+                }
+                for (let k = 0; k < user.associates.friends.length; k++) {
+                  filterTheTaskFriendsList(taskFriendsSearchList, user.associates.friends[k], taskWhoToShareSearch.value, taskId);
+                }
+              });
+            }
+          });
+        });
+
+        shareTaskPane.setAttribute("style", "z-index: 6; opacity: 1; transition: opacity 0.5s linear;");
+      }
 
       function cancelOccasionInvite() {
         let shareOccasionPane = document.getElementById('shareOccasionPane');
