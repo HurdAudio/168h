@@ -4540,6 +4540,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 253,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=347543189/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://trostrecords.bandcamp.com/album/live-in-rio',
+          a_string: 'Live in Rio by FULL BLAST',
+          rule: {
+            "monday": [ 6, 14, 26, 1 ],
+            "tuesday": [ 10, 18, 30, 5 ],
+            "wednesday": [ 9, 17, 29, 4 ],
+            "thursday": [ 8, 16, 28, 3 ],
+            "saturday": [ 7, 15, 26, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 254,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4173026397/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://trostrecords.bandcamp.com/album/risc',
+          a_string: 'Risc by FULL BLAST',
+          rule: {
+            "monday": [ 7, 15, 26, 2 ],
+            "tuesday": [ 6, 14, 26, 1 ],
+            "wednesday": [ 10, 18, 30, 5 ],
+            "thursday": [ 9, 17, 29, 4 ],
+            "saturday": [ 8, 16, 28, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 255,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3361618420/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://theloniousmonk.bandcamp.com/album/m-nk',
+          a_string: 'Mønk by Thelonious Monk',
+          rule: {
+            "monday": [ 8, 16, 28, 3 ],
+            "tuesday": [ 7, 15, 26, 2 ],
+            "wednesday": [ 6, 14, 26, 1 ],
+            "thursday": [ 10, 18, 30, 5 ],
+            "saturday": [ 9, 17, 29, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
