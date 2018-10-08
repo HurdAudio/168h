@@ -8304,6 +8304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 416,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/samuel-luke-fildes-the-empty-chair-engraving-of-a-water-color-the-graphic-1870.jpg',
+          title: 'the Empty Chair',
+          artist: 'Luke Fildes',
+          year: '1870',
+          rule: {
+            "monday": [ 17, 26, 7, 16 ],
+            "tuesday": [ 27, 8, 18, 26 ],
+            "wednesday": [ 27, 7, 16, 26 ],
+            "thursday": [ 25, 4, 12, 24 ],
+            "friday": [ 22, 2, 12, 1 ],
+            "saturday": [ 21, 1, 10, 20 ],
+            "sunday": [ 19, 29, 8, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 417,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/the-widower.jpg',
+          title: 'The Widower',
+          artist: 'Luke Fildes',
+          year: '1875',
+          rule: {
+            "monday": [ 19, 29, 8, 16 ],
+            "tuesday": [ 17, 26, 7, 16 ],
+            "wednesday": [ 27, 8, 18, 26 ],
+            "thursday": [ 27, 7, 16, 26 ],
+            "friday": [ 25, 4, 12, 24 ],
+            "saturday": [ 22, 2, 12, 1 ],
+            "sunday": [ 21, 1, 10, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 418,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/rosa-siega.jpg',
+          title: 'Rosa Siega',
+          artist: 'Luke Fildes',
+          year: '1876',
+          rule: {
+            "monday": [ 21, 1, 10, 20 ],
+            "tuesday": [ 19, 29, 8, 16 ],
+            "wednesday": [ 17, 26, 7, 16 ],
+            "thursday": [ 27, 8, 18, 26 ],
+            "friday": [ 27, 7, 16, 26 ],
+            "saturday": [ 25, 4, 12, 24 ],
+            "sunday": [ 22, 2, 12, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 419,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/a-venetian-flower-girl.jpg',
+          title: 'a Venetian Flower Girl',
+          artist: 'Luke Fildes',
+          year: '1877',
+          rule: {
+            "monday": [ 22, 2, 12, 1 ],
+            "tuesday": [ 21, 1, 10, 20 ],
+            "wednesday": [ 19, 29, 8, 16 ],
+            "thursday": [ 17, 26, 7, 16 ],
+            "friday": [ 27, 8, 18, 26 ],
+            "saturday": [ 27, 7, 16, 26 ],
+            "sunday": [ 25, 4, 12, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 420,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/jessica.jpg',
+          title: 'Jessica',
+          artist: 'Luke Fildes',
+          year: '1888',
+          rule: {
+            "monday": [ 26, 5, 13, 25 ],
+            "tuesday": [ 23, 3, 13, 2 ],
+            "wednesday": [ 22, 2, 11, 21 ],
+            "thursday": [ 20, 30, 9, 17 ],
+            "friday": [ 18, 27, 8, 17 ],
+            "saturday": [ 28, 9, 19, 27 ],
+            "sunday": [ 28, 8, 17, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
