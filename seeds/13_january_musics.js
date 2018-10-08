@@ -4864,6 +4864,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 271,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2445415665/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://othermindsrecords.bandcamp.com/album/differences-within-oneness',
+          a_string: 'Differences Within Oneness by Kui Dong',
+          rule: {
+            "monday": [ 14, 20, 21, 22 ],
+            "tuesday": [ 13, 20, 21, 22 ],
+            "wednesday": [ 17, 24, 25, 26 ],
+            "thursday": [ 16, 22, 23, 25 ],
+            "saturday": [ 15, 22, 23, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 272,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2912684962/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://othermindsrecords.bandcamp.com/album/om-live-the-hear-and-now',
+          a_string: 'OM Live: The Hear and Now by Jon Raskin',
+          rule: {
+            "monday": [ 15, 22, 23, 24 ],
+            "tuesday": [ 14, 20, 21, 22 ],
+            "wednesday": [ 13, 20, 21, 22 ],
+            "thursday": [ 17, 24, 25, 26 ],
+            "saturday": [ 16, 22, 23, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 273,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=985033832/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://othermindsrecords.bandcamp.com/album/om-live-one13',
+          a_string: 'OM Live: One13 by John Cage &amp; Michael Bach Bachtischa',
+          rule: {
+            "monday": [ 17, 23, 24, 26 ],
+            "tuesday": [ 16, 23, 24, 25 ],
+            "wednesday": [ 15, 21, 22, 23 ],
+            "thursday": [ 14, 21, 22, 23 ],
+            "saturday": [ 18, 25, 26, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
