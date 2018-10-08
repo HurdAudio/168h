@@ -8904,6 +8904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 446,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/H0132-L114458307.jpg',
+          title: 'Untitled',
+          artist: 'Alvin D. Loving',
+          year: 'xx cent.',
+          rule: {
+            "monday": [ 13, 23, 29, 6 ],
+            "tuesday": [ 15, 23, 2, 12 ],
+            "wednesday": [ 15, 25, 21, 11 ],
+            "thursday": [ 5, 13, 21, 29 ],
+            "friday": [ 6, 15, 23, 2 ],
+            "saturday": [ 12, 17, 23, 4 ],
+            "sunday": [ 11, 19, 27, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 447,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/moye-007-southernheritagesouthernshame-sm.png',
+          title: 'Southern Heritage/Southern Shame',
+          artist: 'Gwendolyn Ann Magee',
+          year: '2001',
+          rule: {
+            "monday": [ 11, 19, 27, 6 ],
+            "tuesday": [ 13, 23, 29, 6 ],
+            "wednesday": [ 15, 23, 2, 12 ],
+            "thursday": [ 15, 25, 21, 11 ],
+            "friday": [ 5, 13, 21, 29 ],
+            "saturday": [ 6, 15, 23, 2 ],
+            "sunday": [ 12, 17, 23, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 448,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/3782.jpg',
+          title: 'The Waiting Room',
+          artist: 'Clarence Major',
+          year: '?',
+          rule: {
+            "monday": [ 13, 18, 24, 5 ],
+            "tuesday": [ 12, 20, 28, 7 ],
+            "wednesday": [ 14, 24, 1, 7 ],
+            "thursday": [ 16, 24, 3, 13 ],
+            "friday": [ 16, 26, 22, 12 ],
+            "saturday": [ 6, 14, 22, 1 ],
+            "sunday": [ 7, 16, 24, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 449,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/kjm_dz_club_couple_custom-bea7d3692cacddecd45bd3c5523020f42b9aa762-s800-c85.jpg',
+          title: 'Untitled (Club Couple)',
+          artist: 'Kerry James Marshall',
+          year: '2014',
+          rule: {
+            "monday": [ 7, 16, 24, 3 ],
+            "tuesday": [ 13, 18, 24, 5 ],
+            "wednesday": [ 12, 20, 28, 7 ],
+            "thursday": [ 14, 24, 1, 7 ],
+            "friday": [ 16, 24, 3, 13 ],
+            "saturday": [ 16, 26, 22, 12 ],
+            "sunday": [ 6, 14, 22, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 450,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/eugene-martiN.jpg',
+          title: 'Clever Sheriff',
+          artist: 'Eugene J. Martin',
+          year: '1995',
+          rule: {
+            "monday": [ 6, 14, 22, 1 ],
+            "tuesday": [ 7, 16, 24, 3 ],
+            "wednesday": [ 13, 18, 24, 5 ],
+            "thursday": [ 12, 20, 28, 7 ],
+            "friday": [ 14, 24, 1, 7 ],
+            "saturday": [ 16, 24, 3, 13 ],
+            "sunday": [ 16, 26, 22, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
