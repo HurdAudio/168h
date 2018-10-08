@@ -274,6 +274,42 @@
       vm.addNewOccasionShareComment = addNewOccasionShareComment;
       vm.declineObservanceShare = declineObservanceShare;
       vm.acceptObservanceShare = acceptObservanceShare;
+      vm.userDeleteTaskShareComment = userDeleteTaskShareComment;
+      vm.userTaskShareCommentDeleteCancel = userTaskShareCommentDeleteCancel;
+      vm.userTaskShareCommentDeleteConfirmClick = userTaskShareCommentDeleteConfirmClick;
+
+      function userTaskShareCommentDeleteConfirmClick(commentId, taskId) {
+        $http.delete(`/task_share_comments/${commentId}`)
+        .then(goneCommentData => {
+          let goneComment = goneCommentData.data;
+          for (let i = 0; i < vm.activeTaskShares.length; i++) {
+            if (vm.activeTaskShares[i].id === taskId) {
+              for (let j = 0; j < vm.activeTaskShares[i].comments.length; j++) {
+                if (vm.activeTaskShares[i].comments[j].id === taskId) {
+                  vm.activeTaskShares[i].comments.splice(j, 1);
+                  return;
+                }
+              }
+            }
+          }
+        });
+      }
+
+      function userTaskShareCommentDeleteCancel(commentId) {
+        let deleteTaskShareCommentConfirm = document.getElementById('deleteTaskShareCommentConfirm' + commentId);
+        let editDeleteTaskShareCommentDiv = document.getElementById('editDeleteTaskShareCommentDiv' + commentId);
+
+        deleteTaskShareCommentConfirm.setAttribute("style", "display: none;");
+        editDeleteTaskShareCommentDiv.setAttribute("style", "display: initial;");
+      }
+
+      function userDeleteTaskShareComment(commentId, taskId) {
+        let deleteTaskShareCommentConfirm = document.getElementById('deleteTaskShareCommentConfirm' + commentId);
+        let editDeleteTaskShareCommentDiv = document.getElementById('editDeleteTaskShareCommentDiv' + commentId);
+
+        deleteTaskShareCommentConfirm.setAttribute("style", "display: initial;");
+        editDeleteTaskShareCommentDiv.setAttribute("style", "display: none;");
+      }
 
       function acceptObservanceShare(observanceId) {
         let now = new Date();

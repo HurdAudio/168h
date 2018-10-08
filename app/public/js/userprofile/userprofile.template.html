@@ -5634,9 +5634,16 @@
                   <textarea id="thisIsTheTaskShareCommentEditor{{comment.id}}" class="pure-input-1" rows="5"></textarea>
                   <div class="thisIsMessageEditDoneDiv" id="thisIsTaskCommentEditDoneDiv{{comment.id}}"><a class="btn" id="thisIsTheTaskShareCommentEditorDoneButton{{comment.id}}" href="#" ng-click="$ctrl.userEditTaskShareCommentCompleted(comment.id)">done</a></div>
 
+                  <div id="deleteTaskShareCommentConfirm{{comment.id}}" class="messageEditDelete">
+
+                    <h3>Delete comment forever?</h3>
+                    <a class="btn" href="#" ng-click="$ctrl.userTaskShareCommentDeleteCancel(comment.id)">no</a>
+                    <a class="btn" href="#" ng-click="$ctrl.userTaskShareCommentDeleteConfirmClick(comment.id, task.id)">yes</a>
+                  </div>
+
                   <div id="editDeleteTaskShareCommentDiv{{comment.id}}" class="messageEditDelete">
                     <a class="btn" href="#" ng-click="$ctrl.userEditTaskShareComment(comment.id)">edit</a>
-                    <a class="btn" href="#" ng-click="$ctrl.userDeleteTaskShareComment(comment.id, occasion.id)">delete</a>
+                    <a class="btn" href="#" ng-click="$ctrl.userDeleteTaskShareComment(comment.id, task.id)">delete</a>
                   </div><br><br><br><br>
 
                 </main>
