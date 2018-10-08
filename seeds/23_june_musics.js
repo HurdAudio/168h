@@ -4324,6 +4324,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 241,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2904319098/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bubble9.bandcamp.com/album/--6',
+          a_string: 'म by Bubble',
+          rule: {
+            "monday": [ 4, 7, 12, 24 ],
+            "tuesday": [ 3, 7, 12, 24 ],
+            "wednesday": [ 3, 6, 12, 23 ],
+            "thursday": [ 1, 9, 11, 22 ],
+            "saturday": [ 5, 9, 15, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 242,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2736589653/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://slowtide89.bandcamp.com/album/without-you',
+          a_string: 'Without You by Slow Tide',
+          rule: {
+            "monday": [ 5, 9, 15, 26 ],
+            "tuesday": [ 4, 7, 12, 24 ],
+            "wednesday": [ 3, 7, 12, 24 ],
+            "thursday": [ 3, 6, 12, 23 ],
+            "saturday": [ 1, 9, 11, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 243,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4196900354/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://yamaneko.bandcamp.com/album/afterglow',
+          a_string: 'Afterglow by Yamaneko',
+          rule: {
+            "monday": [ 1, 9, 11, 22 ],
+            "tuesday": [ 5, 9, 15, 26 ],
+            "wednesday": [ 4, 7, 12, 24 ],
+            "thursday": [ 3, 7, 12, 24 ],
+            "saturday": [ 3, 6, 12, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
