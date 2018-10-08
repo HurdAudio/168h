@@ -7904,6 +7904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 396,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/le-pont-des-arts.jpg',
+          title: 'Le Pont des Arts',
+          artist: 'Maurice Boitel',
+          year: '?',
+          rule: {
+            "monday": [ 23, 3, 14, 15 ],
+            "tuesday": [ 22, 2, 13, 24 ],
+            "wednesday": [ 28, 8, 19, 29 ],
+            "thursday": [ 27, 5, 18, 29 ],
+            "friday": [ 25, 5, 17, 28 ],
+            "saturday": [ 25, 5, 16, 17 ],
+            "sunday": [ 24, 4, 14, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 397,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/interieur-jaune-1980.jpg',
+          title: 'Interieur Jaune',
+          artist: 'Carlos Nadal',
+          year: '1980',
+          rule: {
+            "monday": [ 24, 4, 14, 16 ],
+            "tuesday": [ 23, 3, 14, 15 ],
+            "wednesday": [ 22, 2, 13, 24 ],
+            "thursday": [ 28, 8, 19, 29 ],
+            "friday": [ 27, 5, 18, 29 ],
+            "saturday": [ 25, 5, 17, 28 ],
+            "sunday": [ 25, 5, 16, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 398,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/cannes-1987.jpg',
+          title: 'Cannes',
+          artist: 'Natalia Dumitresco',
+          year: '1987',
+          rule: {
+            "monday": [ 25, 5, 16, 17 ],
+            "tuesday": [ 24, 4, 14, 16 ],
+            "wednesday": [ 23, 3, 14, 15 ],
+            "thursday": [ 22, 2, 13, 24 ],
+            "friday": [ 28, 8, 19, 29 ],
+            "saturday": [ 27, 5, 18, 29 ],
+            "sunday": [ 25, 5, 17, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 399,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/dispute-d-argent-1999.jpg',
+          title: 'Dispute d\'argent',
+          artist: 'Aurel Cojan',
+          year: '1999',
+          rule: {
+            "monday": [ 26, 6, 18, 29 ],
+            "tuesday": [ 26, 6, 17, 18 ],
+            "wednesday": [ 25, 5, 15, 17 ],
+            "thursday": [ 24, 4, 15, 16 ],
+            "friday": [ 23, 3, 14, 25 ],
+            "saturday": [ 29, 9, 20, 30 ],
+            "sunday": [ 28, 6, 19, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 400,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/l-homme-terrifie-1940.jpg',
+          title: 'L\'homme terrifie',
+          artist: 'Wols',
+          year: '1940',
+          rule: {
+            "monday": [ 28, 6, 19, 30 ],
+            "tuesday": [ 26, 6, 18, 29 ],
+            "wednesday": [ 26, 6, 17, 18 ],
+            "thursday": [ 25, 5, 15, 17 ],
+            "friday": [ 24, 4, 15, 16 ],
+            "saturday": [ 23, 3, 14, 25 ],
+            "sunday": [ 29, 9, 20, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
