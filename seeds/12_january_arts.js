@@ -9104,6 +9104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 456,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/untitled-aqar-7-12.jpg',
+          title: 'Untitled (AQAR 7-12)',
+          artist: 'Abdul Qader Al Raes',
+          year: '2007',
+          rule: {
+            "monday": [ 11, 9, 1, 4 ],
+            "tuesday": [ 11, 12, 3, 7 ],
+            "wednesday": [ 14, 16, 17, 19 ],
+            "thursday": [ 16, 18, 22, 25 ],
+            "friday": [ 18, 20, 21, 22 ],
+            "saturday": [ 3, 4, 15, 7 ],
+            "sunday": [ 6, 8, 31, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 457,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/the-reaper-1938.jpg',
+          title: 'The Reaper',
+          artist: 'Eileen Agar',
+          year: '1938',
+          rule: {
+            "monday": [ 6, 8, 31, 20 ],
+            "tuesday": [ 11, 9, 1, 4 ],
+            "wednesday": [ 11, 12, 3, 7 ],
+            "thursday": [ 14, 16, 17, 19 ],
+            "friday": [ 16, 18, 22, 25 ],
+            "saturday": [ 18, 20, 21, 22 ],
+            "sunday": [ 3, 4, 15, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 458,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/painting-1959.jpg',
+          title: 'Painting',
+          artist: 'William Scott',
+          year: '1959',
+          rule: {
+            "monday": [ 3, 4, 15, 7 ],
+            "tuesday": [ 6, 8, 31, 20 ],
+            "wednesday": [ 11, 9, 1, 4 ],
+            "thursday": [ 11, 12, 3, 7 ],
+            "friday": [ 14, 16, 17, 19 ],
+            "saturday": [ 16, 18, 22, 25 ],
+            "sunday": [ 18, 20, 21, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 459,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/untitled-1964kk.jpg',
+          title: 'Untitled',
+          artist: 'Edward Avedisian',
+          year: '1964',
+          rule: {
+            "monday": [ 18, 20, 21, 22 ],
+            "tuesday": [ 3, 4, 15, 7 ],
+            "wednesday": [ 6, 8, 31, 20 ],
+            "thursday": [ 11, 9, 1, 4 ],
+            "friday": [ 11, 12, 3, 7 ],
+            "saturday": [ 14, 16, 17, 19 ],
+            "sunday": [ 16, 18, 22, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 460,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/primavera-1997.jpg',
+          title: 'Primavera',
+          artist: 'Esteban Vicente',
+          year: '1997',
+          rule: {
+            "monday": [ 16, 18, 22, 25 ],
+            "tuesday": [ 18, 20, 21, 22 ],
+            "wednesday": [ 3, 4, 15, 7 ],
+            "thursday": [ 6, 8, 31, 20 ],
+            "friday": [ 11, 9, 1, 4 ],
+            "saturday": [ 11, 12, 3, 7 ],
+            "sunday": [ 14, 16, 17, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
