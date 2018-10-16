@@ -802,6 +802,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FDFFFF',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 58,
+          user_id: 1,
+          theme: 'Snow',
+          type: 'week',
+          src_string: '../img/december_tiles/luc-van-loon-195067-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '140%',
+          color_dark: '#7A8FA0',
+          color_medium: '#C8D9E0',
+          color_light: '#F8FCFB',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
