@@ -830,6 +830,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FDFDFF',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 60,
+          user_id: 1,
+          theme: 'Autumnal',
+          type: 'saturday',
+          src_string: '../img/october_tiles/aaron-burden-134268-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '143%',
+          color_dark: '#151B1E',
+          color_medium: '#C5AB5E',
+          color_light: '#CCEFF1',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
