@@ -3838,6 +3838,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 214,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=943647176/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://africaseven.bandcamp.com/album/africa-airways-03-the-afro-psych-excursion-1972-1984',
+          a_string: 'Africa Airways 03 (The Afro-Psych Excursion 1972 - 1984) by Various Artists',
+          rule: {
+            "monday": [ 28, 9, 20, 2 ],
+            "tuesday": [ 2, 13, 24, 28 ],
+            "wednesday": [ 1, 12, 23, 27 ],
+            "thursday": [ 30, 11, 22, 26 ],
+            "saturday": [ 29, 10, 21, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 215,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4145648681/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://africaseven.bandcamp.com/album/du-mali',
+          a_string: 'Du Mali by Sory Bamba',
+          rule: {
+            "monday": [ 29, 10, 21, 23 ],
+            "tuesday": [ 28, 9, 20, 2 ],
+            "wednesday": [ 2, 13, 24, 28 ],
+            "thursday": [ 1, 12, 23, 27 ],
+            "saturday": [ 30, 11, 22, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 216,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1861636519/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ekambibrillant.bandcamp.com/album/africa-oumba',
+          a_string: 'Africa Oumba by Ekambi Brillant',
+          rule: {
+            "monday": [ 30, 11, 22, 26 ],
+            "tuesday": [ 29, 10, 21, 23 ],
+            "wednesday": [ 28, 9, 20, 2 ],
+            "thursday": [ 2, 13, 24, 28 ],
+            "saturday": [ 1, 12, 23, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
