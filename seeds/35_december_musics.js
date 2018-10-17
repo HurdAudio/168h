@@ -3730,6 +3730,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 208,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1386205957/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://repsych.bandcamp.com/album/the-search-party-montgomery-chapel-1969-us-west-coast-psych-female-xtian-folk-rock',
+          a_string: 'The Search Party * Montgomery Chapel (1969 US West Coast Psych * Female Xtian Folk Rock) by The Search Party',
+          rule: {
+            "monday": [ 1, 7, 13, 19 ],
+            "tuesday": [ 5, 11, 17, 23 ],
+            "wednesday": [ 4, 10, 16, 21 ],
+            "thursday": [ 1, 9, 15, 21 ],
+            "saturday": [ 31, 8, 14, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 209,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=853530802/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://repsych.bandcamp.com/album/recordando-la-nueva-ola-garage-psych-rock-peru-1967-1974-traffic-sound-telegraph-avenue-los-yorks-we-all-together-others-masterpiece',
+          a_string: 'Recordando La Nueva Ola (Garage Psych Rock Peru 1967-1974) - Traffic Sound * Telegraph Avenue * Los York&#39;s * We all together + others MASTERPIECE by Various Artists (Recordando la nueva ola)',
+          rule: {
+            "monday": [ 31, 8, 14, 20 ],
+            "tuesday": [ 1, 7, 13, 19 ],
+            "wednesday": [ 5, 11, 17, 23 ],
+            "thursday": [ 4, 10, 16, 21 ],
+            "saturday": [ 1, 9, 15, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 210,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1454100427/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://repsych.bandcamp.com/album/boogaloo-sabroso-ep-peru-boogaloo-guaracha-cumbia-latin-60s',
+          a_string: 'Boogaloo Sabroso EP (PERU Boogaloo Guaracha Cumbia Latin 60&#39;s) by Ñico Estrada y su Sonora',
+          rule: {
+            "monday": [ 2, 10, 16, 22 ],
+            "tuesday": [ 1, 9, 15, 21 ],
+            "wednesday": [ 2, 8, 14, 20 ],
+            "thursday": [ 6, 12, 18, 24 ],
+            "saturday": [ 5, 11, 17, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
