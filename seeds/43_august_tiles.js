@@ -858,6 +858,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FFBBB2',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 62,
+          user_id: 1,
+          theme: 'Primary Colors',
+          type: 'holiday',
+          src_string: '../img/august_tiles/artem-kniaz-563082-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '154%',
+          color_dark: '#021347',
+          color_medium: '#FF0004',
+          color_light: '#F3F6FB',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
