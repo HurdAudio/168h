@@ -914,6 +914,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#F3F3F4',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 66,
+          user_id: 1,
+          theme: 'Water',
+          type: 'sunday',
+          src_string: '../img/april_tiles/gonard-fluit-269094-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '100%',
+          color_dark: '#006696',
+          color_medium: '#00A3B5',
+          color_light: '#B3B3D0',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
