@@ -900,6 +900,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#F8F8F8',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 65,
+          user_id: 1,
+          theme: 'Greenery',
+          type: 'saturday',
+          src_string: '../img/may_tiles/julie-laiymani-622790-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '155%',
+          color_dark: '#091902',
+          color_medium: '#009D0C',
+          color_light: '#DBF3D8',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
