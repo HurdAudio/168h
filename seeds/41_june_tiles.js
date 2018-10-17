@@ -886,6 +886,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FEFFFF',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 64,
+          user_id: 1,
+          theme: 'Light',
+          type: 'friday',
+          src_string: '../img/june_tiles/jesse-collins-264791-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '156%',
+          color_dark: '#200100',
+          color_medium: '#A40001',
+          color_light: '#FEFCEF',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
