@@ -816,6 +816,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#F3F5F9',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 59,
+          user_id: 1,
+          theme: 'Monochromatic',
+          type: 'friday',
+          src_string: '../img/november_tiles/alex-kalinin-1069153-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '100%',
+          color_dark: '#182023',
+          color_medium: '#84898D',
+          color_light: '#BEBFC3',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
