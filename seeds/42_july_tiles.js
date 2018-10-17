@@ -872,6 +872,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#B1B5C0',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 63,
+          user_id: 1,
+          theme: 'Steam',
+          type: 'week',
+          src_string: '../img/july_tiles/tomasz-sroka-459752-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '155%',
+          color_dark: '#344B6A',
+          color_medium: '#A8C8D3',
+          color_light: '#F8FFFF',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
