@@ -7004,6 +7004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 351,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/35-06,SpcyMyst.jpg',
+          title: 'Spicy Mystery',
+          artist: 'H. J. Ward',
+          year: '1935',
+          rule: {
+            "monday": [ 22, 4, 12, 18 ],
+            "tuesday": [ 21, 3, 11, 17 ],
+            "wednesday": [ 20, 2, 10, 16 ],
+            "thursday": [ 19, 1, 9, 15 ],
+            "friday": [ 18, 30, 8, 14 ],
+            "saturday": [ 17, 30, 18, 25 ],
+            "sunday": [ 23, 5, 13, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 352,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/23-09,PractlElec.jpg',
+          title: 'Practical Electrics',
+          artist: 'R. C. Wardell',
+          year: '1923',
+          rule: {
+            "monday": [ 23, 5, 13, 19 ],
+            "tuesday": [ 22, 4, 12, 18 ],
+            "wednesday": [ 21, 3, 11, 17 ],
+            "thursday": [ 20, 2, 10, 16 ],
+            "friday": [ 19, 1, 9, 15 ],
+            "saturday": [ 18, 30, 8, 14 ],
+            "sunday": [ 17, 30, 18, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 353,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/28-12,Screenland.jpg',
+          title: 'Screenland',
+          artist: 'Georgia Warren',
+          year: '1928',
+          rule: {
+            "monday": [ 17, 30, 18, 25 ],
+            "tuesday": [ 23, 5, 13, 19 ],
+            "wednesday": [ 22, 4, 12, 18 ],
+            "thursday": [ 21, 3, 11, 17 ],
+            "friday": [ 20, 2, 10, 16 ],
+            "saturday": [ 19, 1, 9, 15 ],
+            "sunday": [ 18, 30, 8, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 354,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/02-05-03,Newspaper.jpg',
+          title: 'Newspaper',
+          artist: 'Jack A. Warren',
+          year: '1902',
+          rule: {
+            "monday": [ 18, 30, 8, 14 ],
+            "tuesday": [ 17, 30, 18, 25 ],
+            "wednesday": [ 23, 5, 13, 19 ],
+            "thursday": [ 22, 4, 12, 18 ],
+            "friday": [ 21, 3, 11, 17 ],
+            "saturday": [ 20, 2, 10, 16 ],
+            "sunday": [ 19, 1, 9, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 355,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/28-00,Illus.jpg',
+          title: 'Story Illustration',
+          artist: 'Emmett Watson',
+          year: '1928',
+          rule: {
+            "monday": [ 19, 1, 9, 15 ],
+            "tuesday": [ 18, 30, 8, 14 ],
+            "wednesday": [ 17, 30, 18, 25 ],
+            "thursday": [ 23, 5, 13, 19 ],
+            "friday": [ 22, 4, 12, 18 ],
+            "saturday": [ 21, 3, 11, 17 ],
+            "sunday": [ 20, 2, 10, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
