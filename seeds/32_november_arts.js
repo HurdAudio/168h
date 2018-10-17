@@ -7204,6 +7204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 361,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/untitled-wall-construction-1985.jpg',
+          title: 'Untitled (Wall Construction)',
+          artist: 'Fred Sandback',
+          year: '1985',
+          rule: {
+            "monday": [ 24, 29, 5, 10 ],
+            "tuesday": [ 23, 28, 4, 11 ],
+            "wednesday": [ 29, 4, 10, 15 ],
+            "thursday": [ 28, 3, 8, 14 ],
+            "friday": [ 27, 1, 8, 12 ],
+            "saturday": [ 26, 29, 6, 11 ],
+            "sunday": [ 25, 29, 6, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 362,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/pittura-r-1985.jpg',
+          title: 'Pittura R',
+          artist: 'Pino Pinelli',
+          year: '1985',
+          rule: {
+            "monday": [ 25, 29, 6, 11 ],
+            "tuesday": [ 24, 29, 5, 10 ],
+            "wednesday": [ 23, 28, 4, 11 ],
+            "thursday": [ 29, 4, 10, 15 ],
+            "friday": [ 28, 3, 8, 14 ],
+            "saturday": [ 27, 1, 8, 12 ],
+            "sunday": [ 26, 29, 6, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 363,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/untitled-1985.jpg',
+          title: 'Untitled',
+          artist: 'Phil Sims',
+          year: '1985',
+          rule: {
+            "monday": [ 26, 29, 6, 11 ],
+            "tuesday": [ 25, 29, 6, 11 ],
+            "wednesday": [ 24, 29, 5, 10 ],
+            "thursday": [ 23, 28, 4, 11 ],
+            "friday": [ 29, 4, 10, 15 ],
+            "saturday": [ 28, 3, 8, 14 ],
+            "sunday": [ 27, 1, 8, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 364,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/pittura-r-bl-1986.jpg',
+          title: 'Pittura R BL',
+          artist: 'Pino Pinelli',
+          year: '1986',
+          rule: {
+            "monday": [ 28, 2, 9, 13 ],
+            "tuesday": [ 27, 30, 7, 12 ],
+            "wednesday": [ 26, 30, 7, 12 ],
+            "thursday": [ 25, 30, 6, 11 ],
+            "friday": [ 24, 29, 5, 12 ],
+            "saturday": [ 30, 5, 11, 16 ],
+            "sunday": [ 29, 4, 9, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 365,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/work-no-3-yellow-painting-1986.jpg',
+          title: 'Work No. 3 (Yellow Painting)',
+          artist: 'Martin Creed',
+          year: '1986',
+          rule: {
+            "monday": [ 29, 4, 9, 15 ],
+            "tuesday": [ 28, 2, 9, 13 ],
+            "wednesday": [ 27, 30, 7, 12 ],
+            "thursday": [ 26, 30, 7, 12 ],
+            "friday": [ 25, 30, 6, 11 ],
+            "saturday": [ 24, 29, 5, 12 ],
+            "sunday": [ 30, 5, 11, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
