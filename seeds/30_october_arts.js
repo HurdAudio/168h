@@ -7404,6 +7404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 371,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_socialsovpost_00014.jpg',
+          title: 'Tobacco - poison, quit smoking!',
+          artist: 'N.Ignatiev',
+          year: '1957',
+          rule: {
+            "monday": [ 26, 6, 17, 21 ],
+            "tuesday": [ 25, 5, 16, 20 ],
+            "wednesday": [ 24, 4, 15, 19 ],
+            "thursday": [ 23, 3, 4, 18 ],
+            "friday": [ 1, 2, 13, 17 ],
+            "saturday": [ 28, 8, 19, 23 ],
+            "sunday": [ 27, 7, 18, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 372,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_socialsovpost_00012.jpg',
+          title: 'They say we are pigs...',
+          artist: 'A.Mosin',
+          year: '1958',
+          rule: {
+            "monday": [ 27, 7, 18, 22 ],
+            "tuesday": [ 26, 6, 17, 21 ],
+            "wednesday": [ 25, 5, 16, 20 ],
+            "thursday": [ 24, 4, 15, 19 ],
+            "friday": [ 23, 3, 4, 18 ],
+            "saturday": [ 1, 2, 13, 17 ],
+            "sunday": [ 28, 8, 19, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 373,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_sportsovpost_00018.jpg',
+          title: 'Spartakiada Nations USSR!',
+          artist: 'V. Ivanov',
+          year: '1955',
+          rule: {
+            "monday": [ 28, 8, 19, 23 ],
+            "tuesday": [ 27, 7, 18, 22 ],
+            "wednesday": [ 26, 6, 17, 21 ],
+            "thursday": [ 25, 5, 16, 20 ],
+            "friday": [ 24, 4, 15, 19 ],
+            "saturday": [ 23, 3, 4, 18 ],
+            "sunday": [ 1, 2, 13, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 374,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_sportsovpost_00017.jpg',
+          title: 'World Allround Speed Skating Championships for Women',
+          artist: 'B. Zelenskyi',
+          year: '1950',
+          rule: {
+            "monday": [ 1, 2, 13, 17 ],
+            "tuesday": [ 28, 8, 19, 23 ],
+            "wednesday": [ 27, 7, 18, 22 ],
+            "thursday": [ 26, 6, 17, 21 ],
+            "friday": [ 25, 5, 16, 20 ],
+            "saturday": [ 24, 4, 15, 19 ],
+            "sunday": [ 23, 3, 4, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 375,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_tradesovpost_00029.jpg',
+          title: 'Soviet Champagne',
+          artist: 'N. Martynov',
+          year: '1952',
+          rule: {
+            "monday": [ 23, 3, 4, 18 ],
+            "tuesday": [ 1, 2, 13, 17 ],
+            "wednesday": [ 28, 8, 19, 23 ],
+            "thursday": [ 27, 7, 18, 22 ],
+            "friday": [ 26, 6, 17, 21 ],
+            "saturday": [ 25, 5, 16, 20 ],
+            "sunday": [ 24, 4, 15, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
