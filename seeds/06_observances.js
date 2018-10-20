@@ -9586,7 +9586,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 613,
           user_id: 1,
-          name: 'The world ended on this day in 1814 when then 64-year-old Prophetess Joanna Southcott gave birth to the Christ child and ushered in the final judement.',
+          name: 'The world ended on this day in 1814 when then 64-year-old Prophetess Joanna Southcott gave birth to the Christ child and ushered in the final judgement.',
           color: '#454545',
           picture: './img/doomsday/JOANNA_SOUTHCOTT-Devonshire_Characters_and_Strange_Events.jpg',
           day_of: new Date ('1814-10-19T13:44:00.000Z'),
