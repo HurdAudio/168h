@@ -7604,6 +7604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 381,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/200-miles-to-los-angeles-2009.jpg',
+          title: '200 Miles to Los Angeles',
+          artist: 'David Michael Hinnebusch',
+          year: 'c.2009',
+          rule: {
+            "monday": [ 19, 26, 14, 21 ],
+            "tuesday": [ 26, 2, 20, 28 ],
+            "wednesday": [ 25, 1, 19, 27 ],
+            "thursday": [ 24, 30, 18, 26 ],
+            "friday": [ 23, 29, 17, 25 ],
+            "saturday": [ 12, 28, 16, 25 ],
+            "sunday": [ 11, 18, 15, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 382,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/the-bird-fancier-2009.jpg',
+          title: 'The Bird Fancier',
+          artist: 'Sorin Ilfoveanu',
+          year: '2009',
+          rule: {
+            "monday": [ 11, 18, 15, 23 ],
+            "tuesday": [ 19, 26, 14, 21 ],
+            "wednesday": [ 26, 2, 20, 28 ],
+            "thursday": [ 25, 1, 19, 27 ],
+            "friday": [ 24, 30, 18, 26 ],
+            "saturday": [ 23, 29, 17, 25 ],
+            "sunday": [ 12, 28, 16, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 383,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/dreammachine-in-collaboration-with-ian-sommerville-1962.jpg',
+          title: 'Dreammachine (in collaboration with Ian Sommerville)',
+          artist: 'Brion Gysin',
+          year: '1962',
+          rule: {
+            "monday": [ 12, 28, 16, 25 ],
+            "tuesday": [ 11, 18, 15, 23 ],
+            "wednesday": [ 19, 26, 14, 21 ],
+            "thursday": [ 26, 2, 20, 28 ],
+            "friday": [ 25, 1, 19, 27 ],
+            "saturday": [ 24, 30, 18, 26 ],
+            "sunday": [ 23, 29, 17, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 384,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/face-over-horizon-2008.jpg',
+          title: 'Face over Horizon',
+          artist: 'Leiko Ikemura',
+          year: '2008',
+          rule: {
+            "monday": [ 23, 29, 17, 25 ],
+            "tuesday": [ 12, 28, 16, 25 ],
+            "wednesday": [ 11, 18, 15, 23 ],
+            "thursday": [ 19, 26, 14, 21 ],
+            "friday": [ 26, 2, 20, 28 ],
+            "saturday": [ 25, 1, 19, 27 ],
+            "sunday": [ 24, 30, 18, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 385,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/star-dust-2009.jpg',
+          title: 'Star Dust',
+          artist: 'Glenn Brown',
+          year: '2009',
+          rule: {
+            "monday": [ 25, 1, 19, 27 ],
+            "tuesday": [ 24, 30, 18, 26 ],
+            "wednesday": [ 13, 29, 17, 26 ],
+            "thursday": [ 12, 19, 16, 24 ],
+            "friday": [ 20, 27, 15, 22 ],
+            "saturday": [ 27, 3, 21, 29 ],
+            "sunday": [ 26, 1, 20, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
