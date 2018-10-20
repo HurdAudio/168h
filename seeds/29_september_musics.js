@@ -4054,6 +4054,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 226,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1315558555/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://pierrevervloesem.bandcamp.com/album/the-art-of-going-nowhere-1-extended',
+          a_string: 'The Art of going Nowhere 1 - Extended by Pierre Vervloesem',
+          rule: {
+            "monday": [ 5, 25, 3, 27 ],
+            "tuesday": [ 4, 24, 2, 27 ],
+            "wednesday": [ 3, 23, 1, 25 ],
+            "thursday": [ 2, 22, 30, 24 ],
+            "saturday": [ 6, 26, 4, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 227,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3086509739/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://pierrevervloesem.bandcamp.com/album/the-art-of-going-nowhere-2-extended',
+          a_string: 'The Art of going Nowhere 2 - Extended by Pierre Vervloesem',
+          rule: {
+            "monday": [ 6, 26, 4, 28 ],
+            "tuesday": [ 5, 25, 3, 27 ],
+            "wednesday": [ 4, 24, 2, 27 ],
+            "thursday": [ 3, 23, 1, 25 ],
+            "saturday": [ 2, 22, 30, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 228,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=212137216/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://pierrevervloesem.bandcamp.com/album/the-art-of-going-nowhere-3-extended',
+          a_string: 'The Art of going Nowhere 3 - Extended by Pierre Vervloesem',
+          rule: {
+            "monday": [ 2, 22, 30, 24 ],
+            "tuesday": [ 6, 26, 4, 28 ],
+            "wednesday": [ 5, 25, 3, 27 ],
+            "thursday": [ 4, 24, 2, 27 ],
+            "saturday": [ 3, 23, 1, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
