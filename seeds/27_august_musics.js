@@ -4162,6 +4162,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 232,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=233334309/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://pbksound.bandcamp.com/album/shifts-in-strategy',
+          a_string: 'SHIFTS IN STRATEGY by AMK / PBK',
+          rule: {
+            "monday": [ 15, 23, 5, 4 ],
+            "tuesday": [ 14, 22, 4, 3 ],
+            "wednesday": [ 13, 21, 3, 2 ],
+            "thursday": [ 12, 20, 2, 1 ],
+            "saturday": [ 11, 19, 1, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 233,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2666317245/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://pbksound.bandcamp.com/album/life-sense-revoked',
+          a_string: 'LIFE-SENSE REVOKED by PBK',
+          rule: {
+            "monday": [ 11, 19, 1, 31 ],
+            "tuesday": [ 15, 23, 5, 4 ],
+            "wednesday": [ 14, 22, 4, 3 ],
+            "thursday": [ 13, 21, 3, 2 ],
+            "saturday": [ 12, 20, 2, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 234,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=652655309/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://pbksound.bandcamp.com/album/listening-to-the-world-vibrate',
+          a_string: 'LISTENING TO THE WORLD VIBRATE by PBK',
+          rule: {
+            "monday": [ 12, 20, 2, 1 ],
+            "tuesday": [ 11, 19, 1, 31 ],
+            "wednesday": [ 15, 23, 5, 4 ],
+            "thursday": [ 14, 22, 4, 3 ],
+            "saturday": [ 13, 21, 3, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
