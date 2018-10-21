@@ -10341,6 +10341,34 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 664,
+          user_id: 1,
+          name: 'Howard Zinn (historian/playwright/social activist) born in 1922',
+          color: '#F7311D',
+          picture: './img/dissent/howardZinn.jpeg',
+          day_of: new Date ('1922-08-24T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 665,
+          user_id: 1,
+          name: 'Emma Goldman (anarchist/political activist/writer) born in 1869',
+          color: '#5C5C5C',
+          picture: './img/dissent/Emma_Goldman_1901_mugshot_single_portrait-1381x900.png',
+          day_of: new Date ('1869-06-27T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
