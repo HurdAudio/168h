@@ -4810,6 +4810,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 268,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2782771395/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://coalminerecords.bandcamp.com/album/land-of-the-crooks',
+          a_string: 'Land of the Crooks by Sean Price &amp; M-Phazes',
+          rule: {
+            "monday": [ 27, 21, 23, 29 ],
+            "tuesday": [ 28, 22, 24, 1 ],
+            "wednesday": [ 11, 15, 17, 21 ],
+            "thursday": [ 14, 17, 19, 21 ],
+            "saturday": [ 25, 19, 21, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 269,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1277651767/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://coalminerecords.bandcamp.com/album/gods-in-the-spirit-titans-in-the-flesh',
+          a_string: 'Gods in the Spirit, Titans in the Flesh by Blu &amp; Nottz',
+          rule: {
+            "monday": [ 25, 19, 21, 23 ],
+            "tuesday": [ 27, 21, 23, 29 ],
+            "wednesday": [ 28, 22, 24, 1 ],
+            "thursday": [ 11, 15, 17, 21 ],
+            "saturday": [ 14, 17, 19, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 270,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=892399869/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://coalminerecords.bandcamp.com/album/elixir',
+          a_string: 'Elixir by Aaron Rose',
+          rule: {
+            "monday": [ 14, 17, 19, 21 ],
+            "tuesday": [ 25, 19, 21, 23 ],
+            "wednesday": [ 27, 21, 23, 29 ],
+            "thursday": [ 28, 22, 24, 1 ],
+            "saturday": [ 11, 15, 17, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
