@@ -7804,6 +7804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 391,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/personnages-aux-chevaux-1935.jpg',
+          title: 'Personnages aux chevaux',
+          artist: 'Marcelle Cahn',
+          year: '1935',
+          rule: {
+            "monday": [ 25, 29, 6, 22 ],
+            "tuesday": [ 24, 26, 5, 21 ],
+            "wednesday": [ 23, 26, 4, 20 ],
+            "thursday": [ 22, 25, 3, 19 ],
+            "friday": [ 28, 1, 9, 25 ],
+            "saturday": [ 27, 30, 8, 24 ],
+            "sunday": [ 26, 30, 7, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 392,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/artillery-1911.jpg',
+          title: 'Artillery',
+          artist: 'Roger de La Fresnaye',
+          year: '1911',
+          rule: {
+            "monday": [ 27, 31, 8, 24 ],
+            "tuesday": [ 26, 30, 7, 23 ],
+            "wednesday": [ 25, 27, 6, 22 ],
+            "thursday": [ 24, 27, 5, 21 ],
+            "friday": [ 23, 26, 4, 20 ],
+            "saturday": [ 29, 2, 10, 26 ],
+            "sunday": [ 28, 31, 9, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 393,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/the-birth-of-venus-1.jpg',
+          title: 'The Birth of Venus',
+          artist: 'Odilon Redon',
+          year: 'c.1912',
+          rule: {
+            "monday": [ 28, 31, 9, 25 ],
+            "tuesday": [ 27, 31, 8, 24 ],
+            "wednesday": [ 26, 30, 7, 23 ],
+            "thursday": [ 25, 27, 6, 22 ],
+            "friday": [ 24, 27, 5, 21 ],
+            "saturday": [ 23, 26, 4, 20 ],
+            "sunday": [ 29, 2, 10, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 394,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/the-sisters-1921.jpg',
+          title: 'The Sisters',
+          artist: '1921',
+          year: '',
+          rule: {
+            "monday": [ 29, 2, 10, 26 ],
+            "tuesday": [ 28, 31, 9, 25 ],
+            "wednesday": [ 27, 31, 8, 24 ],
+            "thursday": [ 26, 30, 7, 23 ],
+            "friday": [ 25, 27, 6, 22 ],
+            "saturday": [ 24, 27, 5, 21 ],
+            "sunday": [ 23, 26, 4, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 395,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/small-table-upper-surface-1920.jpg',
+          title: 'Small table (upper surface)',
+          artist: 'Julius Evola',
+          year: '1920',
+          rule: {
+            "monday": [ 23, 26, 4, 20 ],
+            "tuesday": [ 29, 2, 10, 26 ],
+            "wednesday": [ 28, 31, 9, 25 ],
+            "thursday": [ 27, 31, 8, 24 ],
+            "friday": [ 26, 30, 7, 23 ],
+            "saturday": [ 25, 27, 6, 22 ],
+            "sunday": [ 24, 27, 5, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
