@@ -9004,6 +9004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 451,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/largerMahew.jpg',
+          title: 'Transgression #2',
+          artist: 'Richard Mayhew',
+          year: '?',
+          rule: {
+            "monday": [ 16, 26, 22, 12 ],
+            "tuesday": [ 6, 14, 22, 1 ],
+            "wednesday": [ 7, 16, 24, 3 ],
+            "thursday": [ 13, 18, 24, 5 ],
+            "friday": [ 12, 20, 28, 7 ],
+            "saturday": [ 14, 24, 1, 7 ],
+            "sunday": [ 16, 24, 3, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 452,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/valerie_maynard_asain_gent1.jpg',
+          title: 'Asian Black Gentleman',
+          artist: 'Valerie Maynard',
+          year: '1961',
+          rule: {
+            "monday": [ 16, 24, 3, 13 ],
+            "tuesday": [ 16, 26, 22, 12 ],
+            "wednesday": [ 6, 14, 22, 1 ],
+            "thursday": [ 7, 16, 24, 3 ],
+            "friday": [ 13, 18, 24, 5 ],
+            "saturday": [ 12, 20, 28, 7 ],
+            "sunday": [ 14, 24, 1, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 453,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/Guardian+Angel,+if+Children+had+wings.jpeg',
+          title: 'Guardian Angel, if children had wings',
+          artist: 'Ealy Mays',
+          year: '2012',
+          rule: {
+            "monday": [ 14, 24, 1, 7 ],
+            "tuesday": [ 16, 24, 3, 13 ],
+            "wednesday": [ 16, 26, 22, 12 ],
+            "thursday": [ 6, 14, 22, 1 ],
+            "friday": [ 7, 16, 24, 3 ],
+            "saturday": [ 13, 18, 24, 5 ],
+            "sunday": [ 12, 20, 28, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 454,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/pierw025.jpg',
+          title: 'Silent City',
+          artist: 'Howard McCalebb',
+          year: '1995',
+          rule: {
+            "monday": [ 12, 20, 28, 7 ],
+            "tuesday": [ 14, 24, 1, 7 ],
+            "wednesday": [ 16, 24, 3, 13 ],
+            "thursday": [ 16, 26, 22, 12 ],
+            "friday": [ 6, 14, 22, 1 ],
+            "saturday": [ 7, 16, 24, 3 ],
+            "sunday": [ 13, 18, 24, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 455,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/141532074839.jpg',
+          title: 'Losing Team',
+          artist: 'Corky McCoy',
+          year: 'c.1980',
+          rule: {
+            "monday": [ 14, 19, 25, 6 ],
+            "tuesday": [ 13, 21, 29, 8 ],
+            "wednesday": [ 15, 25, 2, 8 ],
+            "thursday": [ 17, 25, 4, 14 ],
+            "friday": [ 17, 27, 23, 13 ],
+            "saturday": [ 7, 15, 23, 2 ],
+            "sunday": [ 8, 17, 25, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
