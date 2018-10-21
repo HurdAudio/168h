@@ -8004,6 +8004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 401,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/perspective-automatique.jpg',
+          title: 'Perspective automatique',
+          artist: 'Adrien Dax',
+          year: '?',
+          rule: {
+            "monday": [ 29, 9, 20, 30 ],
+            "tuesday": [ 28, 6, 19, 30 ],
+            "wednesday": [ 26, 6, 18, 29 ],
+            "thursday": [ 26, 6, 17, 18 ],
+            "friday": [ 25, 5, 15, 17 ],
+            "saturday": [ 24, 4, 15, 16 ],
+            "sunday": [ 23, 3, 14, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 402,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/le-pierre-au-rouge-1960.jpg',
+          title: 'Le pierre au rouge',
+          artist: 'Aurelie Nemours',
+          year: '1960',
+          rule: {
+            "monday": [ 23, 3, 14, 25 ],
+            "tuesday": [ 29, 9, 20, 30 ],
+            "wednesday": [ 28, 6, 19, 30 ],
+            "thursday": [ 26, 6, 18, 29 ],
+            "friday": [ 26, 6, 17, 18 ],
+            "saturday": [ 25, 5, 15, 17 ],
+            "sunday": [ 24, 4, 15, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 403,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/vix-1960.jpg',
+          title: 'Vix',
+          artist: 'Gaston Chaissac',
+          year: '1960',
+          rule: {
+            "monday": [ 24, 4, 15, 16 ],
+            "tuesday": [ 23, 3, 14, 25 ],
+            "wednesday": [ 29, 9, 20, 30 ],
+            "thursday": [ 28, 6, 19, 30 ],
+            "friday": [ 26, 6, 18, 29 ],
+            "saturday": [ 26, 6, 17, 18 ],
+            "sunday": [ 25, 5, 15, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 404,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/l-apocalypse-5-me-trompette-1973.jpg',
+          title: 'L\'apocalypse, 5ème trompette',
+          artist: 'Jean Bertholle',
+          year: '1973',
+          rule: {
+            "monday": [ 25, 5, 15, 17 ],
+            "tuesday": [ 24, 4, 15, 16 ],
+            "wednesday": [ 23, 3, 14, 25 ],
+            "thursday": [ 29, 9, 20, 30 ],
+            "friday": [ 28, 6, 19, 30 ],
+            "saturday": [ 26, 6, 18, 29 ],
+            "sunday": [ 26, 6, 17, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 405,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/hy-res-france-1932.jpg',
+          title: 'Hyères, France',
+          artist: 'Henri Cartier-Bresson',
+          year: '1932',
+          rule: {
+            "monday": [ 26, 6, 17, 18 ],
+            "tuesday": [ 25, 5, 15, 17 ],
+            "wednesday": [ 24, 4, 15, 16 ],
+            "thursday": [ 23, 3, 14, 25 ],
+            "friday": [ 29, 9, 20, 30 ],
+            "saturday": [ 28, 6, 19, 30 ],
+            "sunday": [ 26, 6, 18, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
