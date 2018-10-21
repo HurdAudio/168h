@@ -4270,6 +4270,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 238,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=414327979/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://empressof.bandcamp.com/album/us',
+          a_string: 'Us by Empress Of',
+          rule: {
+            "monday": [ 5, 7, 11, 19 ],
+            "tuesday": [ 4, 6, 10, 18 ],
+            "wednesday": [ 3, 5, 9, 17 ],
+            "thursday": [ 2, 3, 8, 16 ],
+            "saturday": [ 1, 3, 7, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 239,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2126793544/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://shalgamrecords.bandcamp.com/album/g-lgelerine',
+          a_string: 'Gölgelerine by Tuğçe Şenoğul',
+          rule: {
+            "monday": [ 1, 3, 7, 15 ],
+            "tuesday": [ 5, 7, 11, 19 ],
+            "wednesday": [ 4, 6, 10, 18 ],
+            "thursday": [ 3, 5, 9, 17 ],
+            "saturday": [ 2, 3, 8, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 240,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2850458725/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://coughdrop.bandcamp.com/album/yell-heah',
+          a_string: 'Yell Heah by Cough Drop',
+          rule: {
+            "monday": [ 2, 3, 8, 16 ],
+            "tuesday": [ 1, 3, 7, 15 ],
+            "wednesday": [ 5, 7, 11, 19 ],
+            "thursday": [ 4, 6, 10, 18 ],
+            "saturday": [ 3, 5, 9, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
