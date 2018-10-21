@@ -4594,6 +4594,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 256,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3218879049/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://peterevansmusic.bandcamp.com/album/eye-of-the-mind',
+          a_string: 'Eye of the Mind by David Byrd-Marrow and Peter Evans',
+          rule: {
+            "monday": [ 9, 17, 29, 4 ],
+            "tuesday": [ 8, 16, 28, 3 ],
+            "wednesday": [ 7, 15, 26, 2 ],
+            "thursday": [ 6, 14, 26, 1 ],
+            "saturday": [ 10, 18, 30, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 257,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2956511788/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://peterevansmusic.bandcamp.com/album/digital-light',
+          a_string: 'Digital Light by Aaron Burnett',
+          rule: {
+            "monday": [ 10, 18, 30, 5 ],
+            "tuesday": [ 9, 17, 29, 4 ],
+            "wednesday": [ 8, 16, 28, 3 ],
+            "thursday": [ 7, 15, 26, 2 ],
+            "saturday": [ 6, 14, 26, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 258,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2304001614/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://peterevansmusic.bandcamp.com/album/q',
+          a_string: 'Q by Levy Lorenzo &amp; Peter Evans',
+          rule: {
+            "monday": [ 6, 14, 26, 1 ],
+            "tuesday": [ 10, 18, 30, 5 ],
+            "wednesday": [ 9, 17, 29, 4 ],
+            "thursday": [ 8, 16, 28, 3 ],
+            "saturday": [ 7, 15, 26, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
