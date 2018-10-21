@@ -4918,6 +4918,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 274,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2916159212/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://othermindsrecords.bandcamp.com/album/om-live-string-quartet-no-2',
+          a_string: 'OM Live: String Quartet No. 2 by Aleksandra Vrebalov',
+          rule: {
+            "monday": [ 18, 25, 26, 27 ],
+            "tuesday": [ 17, 23, 24, 26 ],
+            "wednesday": [ 16, 23, 24, 25 ],
+            "thursday": [ 15, 21, 22, 23 ],
+            "saturday": [ 14, 21, 22, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 275,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1004209927/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://othermindsrecords.bandcamp.com/album/om-live-dilations',
+          a_string: 'OM Live: Dilations by Catherine Lamb',
+          rule: {
+            "monday": [ 14, 21, 22, 23 ],
+            "tuesday": [ 18, 25, 26, 27 ],
+            "wednesday": [ 17, 23, 24, 26 ],
+            "thursday": [ 16, 23, 24, 25 ],
+            "saturday": [ 15, 21, 22, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 276,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=71741597/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://othermindsrecords.bandcamp.com/album/om-live-string-quartet-no-2-nostalgia',
+          a_string: 'OM Live: String Quartet No. 2, Nostalgia by Ronald Bruce Smith',
+          rule: {
+            "monday": [ 15, 21, 22, 23 ],
+            "tuesday": [ 14, 21, 22, 23 ],
+            "wednesday": [ 18, 25, 26, 27 ],
+            "thursday": [ 17, 23, 24, 26 ],
+            "saturday": [ 16, 23, 24, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
