@@ -279,6 +279,214 @@
       vm.userTaskShareCommentDeleteConfirmClick = userTaskShareCommentDeleteConfirmClick;
       vm.shareTask = shareTask;
       vm.cancelTaskInvite = cancelTaskInvite;
+      vm.tileModuleViewer = tileModuleViewer;
+      vm.tileModuleViewDone = tileModuleViewDone;
+
+      function tileModuleViewDone() {
+        let tileModuleViewPane = document.getElementById('tileModuleViewPane');
+        let dashboard = document.getElementById('dashboard');
+
+        tileModuleViewPane.setAttribute("style", "visibility: hidden; opacity: 0; z-index: -6; transition: opacity 0.5s linear;");
+        dashboard.setAttribute("style", "z-index: 6; opacity: 1; transition: opacity 0.4s linear;");
+      }
+
+      function tileModuleViewer(userId, theme) {
+        let tileModuleViewPane = document.getElementById('tileModuleViewPane');
+        let dashboard = document.getElementById('dashboard');
+        let tileModuleViewAuthorPic = document.getElementById('tileModuleViewAuthorPic');
+        let tileModuleViewAuthorName = document.getElementById('tileModuleViewAuthorName');
+        let tileModuleViewTheme = document.getElementById('tileModuleViewTheme');
+        let indexLeft = 0;
+        let indexCenter = 0;
+        let indexRight = 0;
+        let tileModuleViewPictureCenter = document.getElementById('tileModuleViewPictureCenter');
+        let randomDate = 0;
+        let hoverOverColor = '#000000';
+        let hoverOutColor = '#ffffff';
+        let tileModuleViewPictureLeft = document.getElementById('tileModuleViewPictureLeft');
+        let tileModuleViewPictureRight = document.getElementById('tileModuleViewPictureRight');
+        while(tileModuleViewPictureCenter.firstChild) {
+          tileModuleViewPictureCenter.removeChild(tileModuleViewPictureCenter.firstChild);
+        }
+        let numberDate = document.createElement('p');
+        tileModuleViewPictureCenter.appendChild(numberDate);
+        let tileModuleViewNavButtons = document.getElementById('tileModuleViewNavButtons');
+        let tileModuleViewNavNext = document.getElementById('tileModuleViewNavNext');
+        if (tileModuleViewNavNext) {
+          tileModuleViewNavNext.parentNode.removeChild(tileModuleViewNavNext);
+          tileModuleViewNavNext = document.createElement('a');
+          tileModuleViewNavButtons.appendChild(tileModuleViewNavNext);
+          tileModuleViewNavNext.id = 'tileModuleViewNavNext';
+          tileModuleViewNavNext.className = 'btn';
+          tileModuleViewNavNext.setAttribute("style", "cursor: pointer;");
+          tileModuleViewNavNext.innerHTML = 'next';
+        }
+        let tileModuleViewNavPrevious = document.getElementById('tileModuleViewNavPrevious');
+        if (tileModuleViewNavPrevious) {
+          tileModuleViewNavPrevious.parentNode.removeChild(tileModuleViewNavPrevious);
+          tileModuleViewNavPrevious = document.createElement('a');
+          tileModuleViewNavButtons.appendChild(tileModuleViewNavPrevious);
+          tileModuleViewNavPrevious.id = 'tileModuleViewNavPrevious';
+          tileModuleViewNavPrevious.className = 'btn';
+          tileModuleViewNavPrevious.setAttribute("style", "cursor: pointer;");
+          tileModuleViewNavPrevious.innerHTML = 'prev';
+        }
+
+
+        $http.get(`/users/${userId}`)
+        .then(authorData => {
+          let author = authorData.data;
+          tileModuleViewAuthorPic.src = author.user_avatar_url;
+          tileModuleViewAuthorName.innerHTML = 'Contributor: ' + author.name;
+          tileModuleViewTheme.innerHTML = 'Theme: ' + theme;
+          $http.get('/tiles_modules')
+          .then(allTilesData => {
+            let allTiles = allTilesData.data;
+            let tileModule = allTiles.filter(entry => {
+              return((parseInt(entry.user_author_id) === parseInt(userId)) && (entry.theme === theme));
+            });
+            tileModule = tileModule.sort((a, b) => {
+              if (a.type.toLowerCase() < b.type.toLowerCase()) {
+                return -1;
+              } else if (a.type.toLowerCase() > b.type.toLowerCase()) {
+                return 1;
+              } else {
+                return 0;
+              }
+            });
+            indexLeft = tileModule.length - 1;
+            indexRight = 1;
+            randomDate = Math.floor(Math.random() * 31) + 1;
+            tileModuleViewPictureCenter.firstChild.innerHTML = randomDate.toString();
+            tileModuleViewPictureCenter.firstChild.setAttribute("style", "color: " + tileModule[0].color_dark + ";");
+            hoverOverColor = tileModule[0].color_light;
+            hoverOutColor = tileModule[0].color_dark;
+            tileModuleViewPictureCenter.setAttribute("style", "background-image: url(" + tileModule[0].src_string + "); background-repeat: " + tileModule[0].repeat_value + "; background-size: " + tileModule[0].size_value + "; border: 10px solid " + tileModule[0].color_medium + ";");
+            switch(tileModule[0].type) {
+              case('default'):
+                tileModuleViewTheme.innerHTML = 'Theme: ' + theme + ' -  ' + 'off-month tile';
+                break;
+              case('mtwt'):
+                tileModuleViewTheme.innerHTML = 'Theme: ' + theme + ' -  ' + 'Mon/Tue/Wed/Thu tile';
+                break;
+              case('week'):
+                tileModuleViewTheme.innerHTML = 'Theme: ' + theme + '  - ' + 'week tile';
+                break;
+              case('friday'):
+                tileModuleViewTheme.innerHTML = 'Theme: ' + theme + '  - ' + 'friday tile';
+                break;
+              case('saturday'):
+                tileModuleViewTheme.innerHTML = 'Theme: ' + theme + '  - ' + 'saturday tile';
+                break;
+              case('sunday'):
+                tileModuleViewTheme.innerHTML = 'Theme: ' + theme + ' -  ' + 'sunday tile';
+                break;
+              case('holiday'):
+                tileModuleViewTheme.innerHTML = 'Theme: ' + theme + '  - ' + 'holiday tile';
+                break;
+              default:
+                console.log('unsupported tile type');
+            }
+            tileModuleViewPictureLeft.firstChild.src = tileModule[indexLeft].src_string;
+            tileModuleViewPictureRight.firstChild.src = tileModule[indexRight].src_string;
+
+            numberDate.addEventListener('mouseover', () => {
+              numberDate.setAttribute("style", "color: " + hoverOverColor + "; cursor: pointer;");
+            });
+            numberDate.addEventListener('mouseout', () => {
+              numberDate.setAttribute("style", "color: " + hoverOutColor + "; cursor: pointer;");
+            });
+
+            tileModuleViewNavNext.addEventListener('click', () => {
+              indexLeft = indexCenter;
+              indexCenter = indexRight;
+              indexRight += 1;
+              if (indexRight === tileModule.length) {
+                indexRight = 0;
+              }
+              randomDate = Math.floor(Math.random() * 31) + 1;
+              tileModuleViewPictureCenter.firstChild.innerHTML = randomDate.toString();
+              tileModuleViewPictureCenter.firstChild.setAttribute("style", "color: " + tileModule[indexCenter].color_dark + ";");
+              hoverOverColor = tileModule[indexCenter].color_light;
+              hoverOutColor = tileModule[indexCenter].color_dark;
+              tileModuleViewPictureCenter.setAttribute("style", "background-image: url(" + tileModule[indexCenter].src_string + "); background-repeat: " + tileModule[indexCenter].repeat_value + "; background-size: " + tileModule[indexCenter].size_value + "; border: 10px solid " + tileModule[indexCenter].color_medium + ";");
+              switch(tileModule[indexCenter].type) {
+                case('default'):
+                  tileModuleViewTheme.innerHTML = 'Theme: ' + theme + ' -  ' + 'off-month tile';
+                  break;
+                case('mtwt'):
+                  tileModuleViewTheme.innerHTML = 'Theme: ' + theme + ' -  ' + 'Mon/Tue/Wed/Thu tile';
+                  break;
+                case('week'):
+                  tileModuleViewTheme.innerHTML = 'Theme: ' + theme + '  - ' + 'week tile';
+                  break;
+                case('friday'):
+                  tileModuleViewTheme.innerHTML = 'Theme: ' + theme + '  - ' + 'friday tile';
+                  break;
+                case('saturday'):
+                  tileModuleViewTheme.innerHTML = 'Theme: ' + theme + '  - ' + 'saturday tile';
+                  break;
+                case('sunday'):
+                  tileModuleViewTheme.innerHTML = 'Theme: ' + theme + ' -  ' + 'sunday tile';
+                  break;
+                case('holiday'):
+                  tileModuleViewTheme.innerHTML = 'Theme: ' + theme + '  - ' + 'holiday tile';
+                  break;
+                default:
+                  console.log('unsupported tile type');
+              }
+              tileModuleViewPictureLeft.firstChild.src = tileModule[indexLeft].src_string;
+              tileModuleViewPictureRight.firstChild.src = tileModule[indexRight].src_string;
+
+            });
+            tileModuleViewNavPrevious.addEventListener('click', () => {
+              indexRight = indexCenter;
+              indexCenter = indexLeft;
+              indexLeft -= 1;
+              if (indexLeft < 0) {
+                indexLeft = tileModule.length - 1;
+              }
+              randomDate = Math.floor(Math.random() * 31) + 1;
+              tileModuleViewPictureCenter.firstChild.innerHTML = randomDate.toString();
+              tileModuleViewPictureCenter.firstChild.setAttribute("style", "color: " + tileModule[indexCenter].color_dark + ";");
+              hoverOverColor = tileModule[indexCenter].color_light;
+              hoverOutColor = tileModule[indexCenter].color_dark;
+              tileModuleViewPictureCenter.setAttribute("style", "background-image: url(" + tileModule[indexCenter].src_string + "); background-repeat: " + tileModule[indexCenter].repeat_value + "; background-size: " + tileModule[indexCenter].size_value + "; border: 10px solid " + tileModule[indexCenter].color_medium + ";");
+              switch(tileModule[indexCenter].type) {
+                case('default'):
+                  tileModuleViewTheme.innerHTML = 'Theme: ' + theme + ' -  ' + 'off-month tile';
+                  break;
+                case('mtwt'):
+                  tileModuleViewTheme.innerHTML = 'Theme: ' + theme + ' -  ' + 'Mon/Tue/Wed/Thu tile';
+                  break;
+                case('week'):
+                  tileModuleViewTheme.innerHTML = 'Theme: ' + theme + '  - ' + 'week tile';
+                  break;
+                case('friday'):
+                  tileModuleViewTheme.innerHTML = 'Theme: ' + theme + '  - ' + 'friday tile';
+                  break;
+                case('saturday'):
+                  tileModuleViewTheme.innerHTML = 'Theme: ' + theme + '  - ' + 'saturday tile';
+                  break;
+                case('sunday'):
+                  tileModuleViewTheme.innerHTML = 'Theme: ' + theme + ' -  ' + 'sunday tile';
+                  break;
+                case('holiday'):
+                  tileModuleViewTheme.innerHTML = 'Theme: ' + theme + '  - ' + 'holiday tile';
+                  break;
+                default:
+                  console.log('unsupported tile type');
+              }
+              tileModuleViewPictureLeft.firstChild.src = tileModule[indexLeft].src_string;
+              tileModuleViewPictureRight.firstChild.src = tileModule[indexRight].src_string;
+            });
+
+          });
+        });
+
+        tileModuleViewPane.setAttribute("style", "visibility: visible; opacity: 1; z-index: 6; transition: opacity 0.5s linear;");
+        dashboard.setAttribute("style", "z-index: -6; opacity: 0.3; transition: opacity 0.4s linear;");
+      }
 
       function cancelTaskInvite() {
         let shareTaskPane = document.getElementById('shareTaskPane');
@@ -3451,6 +3659,7 @@
               if (vm.tileModulePreview.length === 0) {
                 vm.tileModulePreview[0] = {};
                 vm.tileModulePreview[0].theme = allTiles[0].theme;
+                vm.tileModulePreview[0].user_author_id = allTiles[0].user_author_id;
                 getAuthorTileModAuthorName(allTiles[0].user_author_id, 0);
                 vm.tileModulePreview[0].storage = [];
                 vm.tileModulePreview[0].storage.push(allTiles[0]);
@@ -3464,9 +3673,11 @@
                 }
                 if (tileMember) {
                   vm.tileModulePreview[previewIndex].storage.push(allTiles[i]);
+                  vm.tileModulePreview[previewIndex].user_author_id = allTiles[i].user_author_id;
                 } else {
                   previewIndex = vm.tileModulePreview.length;
                   vm.tileModulePreview[previewIndex] = {};
+                  vm.tileModulePreview[previewIndex].user_author_id = allTiles[i].user_author_id;
                   vm.tileModulePreview[previewIndex].theme = allTiles[i].theme;
                   getAuthorTileModAuthorName(allTiles[i].user_author_id, previewIndex);
                   vm.tileModulePreview[previewIndex].storage = [];
