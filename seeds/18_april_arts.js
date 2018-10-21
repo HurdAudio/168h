@@ -8604,6 +8604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 431,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/MICHAE3.jpg',
+          title: 'Hometeam Baseball',
+          artist: 'Gearhart',
+          year: '?',
+          rule: {
+            "monday": [ 26, 2, 8, 14 ],
+            "tuesday": [ 27, 2, 8, 14 ],
+            "wednesday": [ 26, 1, 7, 13 ],
+            "thursday": [ 1, 7, 12, 19 ],
+            "friday": [ 15, 5, 11, 17 ],
+            "saturday": [ 30, 3, 11, 17 ],
+            "sunday": [ 29, 3, 18, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 432,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/fd73f974ee1a1c0aa99e88b9b37ee9c2.jpg',
+          title: 'Game Face',
+          artist: 'unknown artist',
+          year: '?',
+          rule: {
+            "monday": [ 29, 3, 18, 16 ],
+            "tuesday": [ 26, 2, 8, 14 ],
+            "wednesday": [ 27, 2, 8, 14 ],
+            "thursday": [ 26, 1, 7, 13 ],
+            "friday": [ 1, 7, 12, 19 ],
+            "saturday": [ 15, 5, 11, 17 ],
+            "sunday": [ 30, 3, 11, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 433,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/inidans-art.jpg',
+          title: 'Corey Kluber, Trevor Bauer, Edwin Encarnacion and Bryan Shaw ',
+          artist: 'Carlos Carrasco and Trevor Bauer',
+          year: '2017',
+          rule: {
+            "monday": [ 30, 3, 11, 17 ],
+            "tuesday": [ 29, 3, 18, 16 ],
+            "wednesday": [ 26, 2, 8, 14 ],
+            "thursday": [ 27, 2, 8, 14 ],
+            "friday": [ 26, 1, 7, 13 ],
+            "saturday": [ 1, 7, 12, 19 ],
+            "sunday": [ 15, 5, 11, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 434,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/img495.jpg',
+          title: 'Nap LaJoie Cleveland Indians ',
+          artist: 'Helmar Baseball Art Card',
+          year: 'xx cent.',
+          rule: {
+            "monday": [ 16, 6, 12, 18 ],
+            "tuesday": [ 1, 4, 12, 18 ],
+            "wednesday": [ 30, 4, 19, 17 ],
+            "thursday": [ 27, 3, 9, 15 ],
+            "friday": [ 28, 3, 9, 15 ],
+            "saturday": [ 27, 2, 8, 14 ],
+            "sunday": [ 2, 8, 13, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 435,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/kissclipart-bond-street-station-clipart-cleveland-indians-chic-ac2c9206943a39ea.gif',
+          title: 'Cleveland Indians Chicago Cubs Clipart',
+          artist: 'unknown artist',
+          year: '?',
+          rule: {
+            "monday": [ 2, 8, 13, 20 ],
+            "tuesday": [ 16, 6, 12, 18 ],
+            "wednesday": [ 1, 4, 12, 18 ],
+            "thursday": [ 30, 4, 19, 17 ],
+            "friday": [ 27, 3, 9, 15 ],
+            "saturday": [ 28, 3, 9, 15 ],
+            "sunday": [ 27, 2, 8, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
