@@ -9204,6 +9204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 461,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/untitled-1968-jo.jpg',
+          title: 'Untitled',
+          artist: 'Giuseppe Santomaso',
+          year: '1968',
+          rule: {
+            "monday": [ 14, 16, 17, 19 ],
+            "tuesday": [ 16, 18, 22, 25 ],
+            "wednesday": [ 18, 20, 21, 22 ],
+            "thursday": [ 3, 4, 15, 7 ],
+            "friday": [ 6, 8, 31, 20 ],
+            "saturday": [ 11, 9, 1, 4 ],
+            "sunday": [ 11, 12, 3, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 462,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/frame-ii-1970.jpg',
+          title: 'Frame II',
+          artist: 'Eduardo Nery',
+          year: '1970',
+          rule: {
+            "monday": [ 12, 13, 4, 8 ],
+            "tuesday": [ 15, 17, 18, 20 ],
+            "wednesday": [ 17, 19, 23, 26 ],
+            "thursday": [ 19, 21, 22, 23 ],
+            "friday": [ 4, 5, 16, 8 ],
+            "saturday": [ 7, 9, 1, 21 ],
+            "sunday": [ 12, 10, 2, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 463,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/composition-abstraite-1.jpg',
+          title: 'Composition abstraite',
+          artist: 'Luigi Guardigli',
+          year: '?',
+          rule: {
+            "monday": [ 12, 10, 2, 5 ],
+            "tuesday": [ 12, 13, 4, 8 ],
+            "wednesday": [ 15, 17, 18, 20 ],
+            "thursday": [ 17, 19, 23, 26 ],
+            "friday": [ 19, 21, 22, 23 ],
+            "saturday": [ 4, 5, 16, 8 ],
+            "sunday": [ 7, 9, 1, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 464,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/composizione-grigio-rosa-1957.jpg',
+          title: 'Composizione grigio-rosa',
+          artist: 'Giulio Turcato',
+          year: '1957',
+          rule: {
+            "monday": [ 7, 9, 1, 21 ],
+            "tuesday": [ 12, 10, 2, 5 ],
+            "wednesday": [ 12, 13, 4, 8 ],
+            "thursday": [ 15, 17, 18, 20 ],
+            "friday": [ 17, 19, 23, 26 ],
+            "saturday": [ 19, 21, 22, 23 ],
+            "sunday": [ 4, 5, 16, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 465,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/o32-60-1960.jpg',
+          title: 'O32-60',
+          artist: 'Fernando Lanhas',
+          year: '1960',
+          rule: {
+            "monday": [ 4, 5, 16, 8 ],
+            "tuesday": [ 7, 9, 1, 21 ],
+            "wednesday": [ 12, 10, 2, 5 ],
+            "thursday": [ 12, 13, 4, 8 ],
+            "friday": [ 15, 17, 18, 20 ],
+            "saturday": [ 17, 19, 23, 26 ],
+            "sunday": [ 19, 21, 22, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
