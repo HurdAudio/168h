@@ -4702,6 +4702,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 262,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1784542514/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://yokoono.bandcamp.com/album/warzone',
+          a_string: 'Warzone by Yoko Ono',
+          rule: {
+            "monday": [ 12, 18, 24, 1 ],
+            "tuesday": [ 11, 17, 23, 31 ],
+            "wednesday": [ 10, 16, 22, 31 ],
+            "thursday": [ 8, 15, 21, 29 ],
+            "saturday": [ 8, 14, 20, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 263,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=288322092/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://shida-shahabi.bandcamp.com/album/homes',
+          a_string: 'Homes by Shida Shahabi',
+          rule: {
+            "monday": [ 8, 14, 20, 28 ],
+            "tuesday": [ 12, 18, 24, 1 ],
+            "wednesday": [ 11, 17, 23, 31 ],
+            "thursday": [ 10, 16, 22, 31 ],
+            "saturday": [ 8, 15, 21, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 264,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1493191993/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://rqlrod.bandcamp.com/album/the-310-pt-2',
+          a_string: 'The 310, Pt. 2 by Raquel Rodriguez',
+          rule: {
+            "monday": [ 8, 15, 21, 29 ],
+            "tuesday": [ 8, 14, 20, 28 ],
+            "wednesday": [ 12, 18, 24, 1 ],
+            "thursday": [ 11, 17, 23, 31 ],
+            "saturday": [ 10, 16, 22, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
