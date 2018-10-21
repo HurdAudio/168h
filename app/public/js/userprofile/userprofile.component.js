@@ -1016,8 +1016,10 @@
         let thisIsOccasionShareCommentEditDoneDiv = document.getElementById('thisIsOccasionShareCommentEditDoneDiv' + commentId);
         let thisIsOccasionShareComment = document.getElementById('thisIsOccasionShareComment' + commentId);
         let editDeleteOccasionShareCommentDiv = document.getElementById('editDeleteOccasionShareCommentDiv' + commentId);
+        let now = new Date();
         let subObj = {
-          comment: thisIsTheOccasionShareCommentEditor.value
+          comment: thisIsTheOccasionShareCommentEditor.value,
+          updated_at: now
         };
 
         $http.patch(`/occasions_share_comments/${commentId}`, subObj)
@@ -1540,6 +1542,8 @@
       function retreiveOccasionShareComments(share, index) {
         let aDate;
         let bDate;
+        let createDate;
+        let updateDate;
         $http.get('/occasions_share_comments')
         .then(allCommentsData=>{
           let allComments = allCommentsData.data;
@@ -1551,15 +1555,23 @@
             bDate = new Date(b.created_at);
             return(aDate.getDate() - bDate.getDate());
           });
+          console.log(shareComments);
           if (shareComments.length > 0) {
             vm.activeOccasionShares[index].comments = [];
+            console.log(vm.activeOccasionShares[index]);
             for (let i = 0; i < shareComments.length; i++) {
+              createDate = new Date(shareComments[i].created_at);
+              updateDate = new Date(shareComments[i].updated_at);
               vm.activeOccasionShares[index].comments[i] = {};
               vm.activeOccasionShares[index].comments[i].comment = shareComments[i].comment;
               vm.activeOccasionShares[index].comments[i].id = shareComments[i].id;
               vm.activeOccasionShares[index].comments[i].user_id = shareComments[i].user_id;
               obtainCommenterNameAndPic(shareComments[i], index, i);
-              vm.activeOccasionShares[index].comments[i].cleanDate = cleanDateHoliday(shareComments[i].updated_at) + ' - ' + timeDate(shareComments[i].updated_at);
+              if (updateDate.getTime() < (createDate.getTime() + 15001)) {
+                vm.activeOccasionShares[index].comments[i].cleanDate = cleanDateHoliday(shareComments[i].updated_at) + ' - ' + timeDate(shareComments[i].updated_at);
+              } else {
+                vm.activeOccasionShares[index].comments[i].cleanDate = cleanDateHoliday(shareComments[i].created_at) + ' - ' + timeDate(shareComments[i].created_at) + ' - updated - ' + cleanDateHoliday(shareComments[i].updated_at) + ' - ' + timeDate(shareComments[i].updated_at);
+              }
             }
             setTimeout(()=>{
 
@@ -1579,6 +1591,9 @@
       }
 
       function retrieveUserOccasionShares() {
+        let now = new Date();
+        let shareDate;
+        let expireTime;
 
         $http.get(`/occasions_shares`)
         .then(allSharesData=>{
@@ -1595,6 +1610,7 @@
             for (let i = 0; i < shares.length; i++) {
               vm.activeOccasionShares[i] = {};
               vm.activeOccasionShares[i].id = shares[i].id;
+              vm.activeOccasionShares[i].updated_at = shares[i].updated_at;
               vm.activeOccasionShares[i].user_id = shares[i].user_id;
               occasionImagerAndNames(shares[i].user_id, shares[i].share_associate_id, i, ((parseInt(shares[i].user_id) === parseInt(currentUserId)) && (parseInt(shares[i].share_associate_id) !== parseInt(currentUserId))), shares[i].id);
               vm.activeOccasionShares[i].cleanDate = cleanDateHoliday(shares[i].created_at) + ' - ' + timeDate(shares[i].updated_at);
@@ -1619,6 +1635,15 @@
                 } else {
                   document.getElementById('occasionShareAccepted' + shares[j].id).setAttribute("style", "display: none;");
                   document.getElementById('occasionShareDeclined' + shares[j].id).setAttribute("style", "display: none;");
+                }
+              }
+              for (let k = 0; k < vm.activeOccasionShares.length; k++) {
+                shareDate = new Date(vm.activeOccasionShares[k].updated_at);
+                expireTime = new Date(vm.activeOccasionShares[k].updated_at);
+                expireTime.setDate(expireTime.getDate() + 30);
+                if (now.getTime() > expireTime.getTime()) {
+                  vm.activeOccasionShares.splice(k, 1);
+                  k--;
                 }
               }
             }, 100);
