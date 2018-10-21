@@ -8204,6 +8204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 411,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/sam_moeller___amazing_creative_art_photography_by_sammoeller-dadkjmz.jpg',
+          title: 'Amazing creative art photography',
+          artist: 'Sam Moeller',
+          year: '2016',
+          rule: {
+            "monday": [ 4, 14, 24, 22 ],
+            "tuesday": [ 23, 3, 13, 21 ],
+            "wednesday": [ 22, 2, 12, 20 ],
+            "thursday": [ 28, 8, 18, 25 ],
+            "friday": [ 27, 7, 17, 25 ],
+            "saturday": [ 26, 6, 16, 24 ],
+            "sunday": [ 25, 5, 15, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 412,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/sam_moeller___sunset_and_sunrise_photography_by_sammoeller-dadkfno.jpg',
+          title: 'Sunset and Sunrise Photography',
+          artist: 'Sam Moeller',
+          year: '2016',
+          rule: {
+            "monday": [ 25, 5, 15, 23 ],
+            "tuesday": [ 4, 14, 24, 22 ],
+            "wednesday": [ 23, 3, 13, 21 ],
+            "thursday": [ 22, 2, 12, 20 ],
+            "friday": [ 28, 8, 18, 25 ],
+            "saturday": [ 27, 7, 17, 25 ],
+            "sunday": [ 26, 6, 16, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 413,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/sam_moeller__awesome_digital_art_of_emi_by_sammoeller-daf2yvj.jpg',
+          title: 'Awesome Digital Art of Emi',
+          artist: 'Sam Moeller',
+          year: '2016',
+          rule: {
+            "monday": [ 27, 7, 17, 25 ],
+            "tuesday": [ 26, 6, 16, 24 ],
+            "wednesday": [ 5, 15, 25, 23 ],
+            "thursday": [ 24, 4, 14, 22 ],
+            "friday": [ 23, 3, 13, 21 ],
+            "saturday": [ 29, 9, 19, 26 ],
+            "sunday": [ 28, 8, 18, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 414,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/sam_moeller__beautiful_desert_creative_art_by_sammoeller-dadkkqo.jpg',
+          title: 'Beautiful Desert Creative Art',
+          artist: 'Sam Moeller',
+          year: '2016',
+          rule: {
+            "monday": [ 28, 8, 18, 26 ],
+            "tuesday": [ 27, 7, 17, 25 ],
+            "wednesday": [ 26, 6, 16, 24 ],
+            "thursday": [ 5, 15, 25, 23 ],
+            "friday": [ 24, 4, 14, 22 ],
+            "saturday": [ 23, 3, 13, 21 ],
+            "sunday": [ 29, 9, 19, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 415,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/sam_moeller___beautiful_tortoise_photography_by_sammoeller-da8xl85.jpg',
+          title: 'Beautiful Tortoise Photography',
+          artist: 'Sam Moeller',
+          year: '2016',
+          rule: {
+            "monday": [ 29, 9, 19, 26 ],
+            "tuesday": [ 28, 8, 18, 26 ],
+            "wednesday": [ 27, 7, 17, 25 ],
+            "thursday": [ 26, 6, 16, 24 ],
+            "friday": [ 5, 15, 25, 23 ],
+            "saturday": [ 24, 4, 14, 22 ],
+            "sunday": [ 23, 3, 13, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
