@@ -8404,6 +8404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 421,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/the-doctor.png',
+          title: 'The Doctor.',
+          artist: 'Luke Fildes',
+          year: '1891',
+          rule: {
+            "monday": [ 28, 8, 17, 27 ],
+            "tuesday": [ 26, 5, 13, 25 ],
+            "wednesday": [ 23, 3, 13, 2 ],
+            "thursday": [ 22, 2, 11, 21 ],
+            "friday": [ 20, 30, 9, 17 ],
+            "saturday": [ 18, 27, 8, 17 ],
+            "sunday": [ 28, 9, 19, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 422,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/winter-in-kursk-1916.jpg',
+          title: 'Winter in Kursk',
+          artist: 'Aleksandr Deyneka',
+          year: '1916',
+          rule: {
+            "monday": [ 28, 9, 19, 27 ],
+            "tuesday": [ 28, 8, 17, 27 ],
+            "wednesday": [ 26, 5, 13, 25 ],
+            "thursday": [ 23, 3, 13, 2 ],
+            "friday": [ 22, 2, 11, 21 ],
+            "saturday": [ 20, 30, 9, 17 ],
+            "sunday": [ 18, 27, 8, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 423,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/y-issue-donbass-1924.jpg',
+          title: 'Donbass',
+          artist: 'Aleksandr Deyneka',
+          year: '1924',
+          rule: {
+            "monday": [ 18, 27, 8, 17 ],
+            "tuesday": [ 28, 9, 19, 27 ],
+            "wednesday": [ 28, 8, 17, 27 ],
+            "thursday": [ 26, 5, 13, 25 ],
+            "friday": [ 23, 3, 13, 2 ],
+            "saturday": [ 22, 2, 11, 21 ],
+            "sunday": [ 20, 30, 9, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 424,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/with-change-1927.jpg',
+          title: 'With change',
+          artist: 'Aleksandr Deyneka',
+          year: '1927',
+          rule: {
+            "monday": [ 20, 30, 9, 17 ],
+            "tuesday": [ 18, 27, 8, 17 ],
+            "wednesday": [ 28, 9, 19, 27 ],
+            "thursday": [ 28, 8, 17, 27 ],
+            "friday": [ 26, 5, 13, 25 ],
+            "saturday": [ 23, 3, 13, 2 ],
+            "sunday": [ 22, 2, 11, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 425,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/9368a0cf03931d10f7f0d65fefdbdae8.jpg',
+          title: 'The defense of Petrograd',
+          artist: 'Aleksandr Deyneka',
+          year: '1928',
+          rule: {
+            "monday": [ 22, 2, 11, 21 ],
+            "tuesday": [ 20, 30, 9, 17 ],
+            "wednesday": [ 18, 27, 8, 17 ],
+            "thursday": [ 28, 9, 19, 27 ],
+            "friday": [ 28, 8, 17, 27 ],
+            "saturday": [ 26, 5, 13, 25 ],
+            "sunday": [ 23, 3, 13, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
