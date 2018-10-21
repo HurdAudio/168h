@@ -4378,6 +4378,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 244,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=214417448/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://danieldorobantu.bandcamp.com/album/cartea-de-piatra',
+          a_string: 'Cartea De Piatra by Petre Ionutescu &amp; Daniel Dorobantu',
+          rule: {
+            "monday": [ 3, 6, 12, 23 ],
+            "tuesday": [ 1, 9, 11, 22 ],
+            "wednesday": [ 5, 9, 15, 26 ],
+            "thursday": [ 4, 7, 12, 24 ],
+            "saturday": [ 3, 7, 12, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 245,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1122323130/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://danielfine.bandcamp.com/album/still-life',
+          a_string: 'still life by still life',
+          rule: {
+            "monday": [ 4, 8, 13, 25 ],
+            "tuesday": [ 4, 7, 13, 24 ],
+            "wednesday": [ 2, 10, 12, 27 ],
+            "thursday": [ 6, 10, 16, 27 ],
+            "saturday": [ 5, 8, 13, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 246,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4022061967/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://mlesprg.bandcamp.com/album/mount-vision',
+          a_string: 'Mount Vision by Emily A. Sprague',
+          rule: {
+            "monday": [ 5, 8, 13, 25 ],
+            "tuesday": [ 4, 8, 13, 25 ],
+            "wednesday": [ 4, 7, 13, 24 ],
+            "thursday": [ 2, 10, 12, 27 ],
+            "saturday": [ 6, 10, 16, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
