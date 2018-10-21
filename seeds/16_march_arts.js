@@ -8804,6 +8804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 441,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/dsc-0232-2.jpg',
+          title: 'Lightning watercolor fabric embroidery hoop',
+          artist: 'Samantha Troulis',
+          year: '2017',
+          rule: {
+            "monday": [ 30, 9, 17, 27 ],
+            "tuesday": [ 29, 9, 16, 26 ],
+            "wednesday": [ 28, 7, 15, 25 ],
+            "thursday": [ 27, 6, 15, 24 ],
+            "friday": [ 2, 11, 21, 29 ],
+            "saturday": [ 1, 11, 19, 29 ],
+            "sunday": [ 1, 10, 18, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 442,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/the-stadium-pen-web.jpg',
+          title: 'The Stadium (Pen/web)',
+          artist: 'Sharon Butler',
+          year: '2014',
+          rule: {
+            "monday": [ 1, 10, 18, 28 ],
+            "tuesday": [ 30, 9, 17, 27 ],
+            "wednesday": [ 29, 9, 16, 26 ],
+            "thursday": [ 28, 7, 15, 25 ],
+            "friday": [ 27, 6, 15, 24 ],
+            "saturday": [ 2, 11, 21, 29 ],
+            "sunday": [ 1, 11, 19, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 443,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/beato-de-gerona-f-176v.jpg',
+          title: 'Beato de Gerona Fº 176v',
+          artist: 'Ende',
+          year: 'c.975',
+          rule: {
+            "monday": [ 1, 11, 19, 29 ],
+            "tuesday": [ 1, 10, 18, 28 ],
+            "wednesday": [ 30, 9, 17, 27 ],
+            "thursday": [ 29, 9, 16, 26 ],
+            "friday": [ 28, 7, 15, 25 ],
+            "saturday": [ 27, 6, 15, 24 ],
+            "sunday": [ 2, 11, 21, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 444,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/claricia-swinging-on-an-initial-q.jpg',
+          title: '"Claricia" swinging on an initial "Q"',
+          artist: 'Claricia',
+          year: '?',
+          rule: {
+            "monday": [ 2, 11, 21, 29 ],
+            "tuesday": [ 1, 11, 19, 29 ],
+            "wednesday": [ 1, 10, 18, 28 ],
+            "thursday": [ 30, 9, 17, 27 ],
+            "friday": [ 29, 9, 16, 26 ],
+            "saturday": [ 28, 7, 15, 25 ],
+            "sunday": [ 27, 6, 15, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 445,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/portrait-of-caterina-micaela-of-spain-1578.jpg',
+          title: 'Portrait of Caterina Micaela of Spain',
+          artist: 'Sofonisba Anguissola',
+          year: '1578',
+          rule: {
+            "monday": [ 27, 6, 15, 24 ],
+            "tuesday": [ 2, 11, 21, 29 ],
+            "wednesday": [ 1, 11, 19, 29 ],
+            "thursday": [ 1, 10, 18, 28 ],
+            "friday": [ 30, 9, 17, 27 ],
+            "saturday": [ 29, 9, 16, 26 ],
+            "sunday": [ 28, 7, 15, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
