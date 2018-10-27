@@ -6936,13 +6936,13 @@ footer img {
   text-shadow:  -1px 1px 1px #ffffff;
 }
 
-.daysOfWeek input[type=radio] {
+/* .daysOfWeek input[type=radio] {
   transform: scale(1.9);
-}
+} */
 
-.daysOfWeek input[type=radio]:checked {
+/* .daysOfWeek input[type=radio]:checked {
   transform: scale(2.9);
-}
+} */
 
 .daysOfMonth {
   /*margin-left: -4vmin;*/
@@ -6956,13 +6956,13 @@ footer img {
   text-shadow:  -1px 1px 1px #ffffff;
 }
 
-.daysOfMonth input[type=radio] {
+/* .daysOfMonth input[type=radio] {
   transform: scale(1.9);
-}
+} */
 
-.daysOfMonth input[type=radio]:checked {
+/* .daysOfMonth input[type=radio]:checked {
   transform: scale(2.9);
-}
+} */
 
 .monthDayClass {
   border: 1px solid #000000;
@@ -6986,6 +6986,11 @@ footer img {
   filter: blur(1px) hue-rotate(90deg);
   transition: filter 250ms linear;
 }
+
+
+/* .daysOfWeekClass input[type=radio] {
+  transform: scale(1.1);
+} */
 
 .daysOfWeekClass {
   border: 1px solid #000000;
@@ -8420,6 +8425,13 @@ footer img {
 #userOccasionsEditorShare {
   float: right;
   margin-right: 0.5em;
+}
+
+.monthDayClass input[type=radio] {
+  transform: scale(1);
+  position: absolute;
+  margin-left: -1vmin;
+  margin-right: 1vmin;
 }
 
 

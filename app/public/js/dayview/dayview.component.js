@@ -1384,18 +1384,12 @@
       function getCurrentTimePosition() {
         let position = 0;
         let timer = new Date();
-        //timer = new Date(timer.getTime() + timer.getTimeZoneOffset() * 60 * 1000);
-        let offset = (timer.getTimezoneOffset() / 60) - 6;
-        console.log(timer);
-        console.log(offset);
 
-        //timer = timer.getTimezoneOffset()/60;
-        let nowHour = timer.getHours() + offset;
+        let nowHour = timer.getHours();
         if (nowHour < 0) {
           nowHour = 24 - nowHour;
         }
         let nowMinute = timer.getMinutes();
-
 
         if (nowMinute < 30) {
           position = nowHour * 2;
@@ -1408,28 +1402,27 @@
         return(position);
       }
 
-      function pulseThePresent(currentTimePoint, pulseColor) {
+      function pulseThePresent(currentTimePoint) {
         if (getTense(viewDate) !== 'present') {
           return;
         }
         let element = document.getElementById(hours[currentTimePoint]);
         if (currentTimePoint !== getCurrentTimePosition()) {
 
-          element.setAttribute("style", "color: #bb9933;");
+          element.setAttribute("style", "color: #bb9933; filter: hue-rotate(0deg);");
           if (currentTimePoint !== (hours.length - 1)) {
-            pulseThePresent((currentTimePoint + 1), pulseColor);
+            pulseThePresent((currentTimePoint + 1));
           }
         } else {
           setTimeout(()=>{
             if (element) {
-              element.setAttribute("style", "color: " + pulses[pulseColor] + ";");
-              if (pulseColor === (pulses.length - 1)) {
-                pulseThePresent(currentTimePoint, 0);
-              } else {
-                pulseThePresent(currentTimePoint, (pulseColor + 1));
-              }
+              element.setAttribute("style", "color: #ff0000; filter: hue-rotate(180deg); transition: filter 2s linear;");
+              setTimeout(() => {
+                element.setAttribute("style", "color: #ff0000; filter: hue-rotate(0deg); transition: filter 2s linear;");
+                pulseThePresent(currentTimePoint);
+              }, 2000)
             }
-          }, 150);
+          }, 2000);
         }
       }
 

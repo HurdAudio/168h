@@ -4261,7 +4261,7 @@ exports.seed = function(knex, Promise) {
           name: 'Katherine Johnson (mathematician), born 1918',
           color: '#949396',
           picture: './img/maths/katherinejohnson.png',
-          day_of: new Date ('1918-10-26T13:44:00.000Z'),
+          day_of: new Date ('1918-08-26T13:44:00.000Z'),
           is_annual: true,
           art_override: false,
           music_override: false,
@@ -9149,7 +9149,7 @@ exports.seed = function(knex, Promise) {
         {
           id: 585,
           user_id: 1,
-          name: 'The second coming of Jesus Christ occurred on this day in 1844, as oppowed to William Miller\'s original prediction of March 21 that same year',
+          name: 'The second coming of Jesus Christ occurred on this day in 1844, according to William Miller\'s original prediction of March 21 that same year',
           color: '#5C5C5C',
           picture: './img/doomsday/William_Miller.jpg',
           day_of: new Date ('1844-10-22T13:44:00.000Z'),
