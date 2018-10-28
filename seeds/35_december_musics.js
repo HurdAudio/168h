@@ -3784,6 +3784,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 211,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=737220887/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://repsych.bandcamp.com/album/camaleon-ep-peru-latin-guaracha-hard-salsa-60shttp://repsych.bandcamp.com/album/camaleon-ep-peru-latin-guaracha-hard-salsa-60s',
+          a_string: 'Camaleon EP (PERU Latin Guaracha Hard Salsa 60&#39;s) by Tito Chicoma y su Orquesta',
+          rule: {
+            "monday": [ 5, 11, 17, 22 ],
+            "tuesday": [ 2, 10, 16, 22 ],
+            "wednesday": [ 1, 9, 15, 21 ],
+            "thursday": [ 2, 8, 14, 20 ],
+            "saturday": [ 6, 12, 18, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 212,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4050647740/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://repsych.bandcamp.com/album/introducing-the-pompo-sound-peru-pompo-latin-guaracha-60s',
+          a_string: 'Introducing the Pompo Sound (PERU Pompo Latin Guaracha 60&#39;s) by Mario Allison y su Combo',
+          rule: {
+            "monday": [ 6, 12, 18, 24 ],
+            "tuesday": [ 5, 11, 17, 22 ],
+            "wednesday": [ 2, 10, 16, 22 ],
+            "thursday": [ 1, 9, 15, 21 ],
+            "saturday": [ 2, 8, 14, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 213,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=530323485/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://repsych.bandcamp.com/album/los-silvertons-la-vuelta-peru-garage-surf-beat-rock-60s',
+          a_string: 'Los Silverton&#39;s - La Vuelta (Peru Garage Surf Beat Rock 60&#39;s) by Los Silverton&#39;s',
+          rule: {
+            "monday": [ 2, 8, 14, 20 ],
+            "tuesday": [ 6, 12, 18, 24 ],
+            "wednesday": [ 5, 11, 17, 22 ],
+            "thursday": [ 2, 10, 16, 22 ],
+            "saturday": [ 1, 9, 15, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
