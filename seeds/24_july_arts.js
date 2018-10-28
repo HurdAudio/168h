@@ -8104,6 +8104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 406,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/leonor-fini.jpg',
+          title: 'Leonor Fini',
+          artist: 'Dora Maar',
+          year: '?',
+          rule: {
+            "monday": [ 27, 7, 19, 30 ],
+            "tuesday": [ 27, 7, 18, 19 ],
+            "wednesday": [ 26, 6, 16, 18 ],
+            "thursday": [ 25, 5, 16, 17 ],
+            "friday": [ 24, 4, 15, 26 ],
+            "saturday": [ 30, 10, 21, 31 ],
+            "sunday": [ 29, 7, 20, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 407,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/untitled-1962.jpg',
+          title: 'Untitled',
+          artist: 'Georges Hugnet',
+          year: '1962',
+          rule: {
+            "monday": [ 29, 7, 20, 31 ],
+            "tuesday": [ 27, 7, 19, 30 ],
+            "wednesday": [ 27, 7, 18, 19 ],
+            "thursday": [ 26, 6, 16, 18 ],
+            "friday": [ 25, 5, 16, 17 ],
+            "saturday": [ 24, 4, 15, 26 ],
+            "sunday": [ 30, 10, 21, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 408,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/untitled-1980.jpg',
+          title: 'Untitled',
+          artist: 'Pierre Tal-Coat',
+          year: '1980',
+          rule: {
+            "monday": [ 30, 10, 21, 31 ],
+            "tuesday": [ 29, 7, 20, 31 ],
+            "wednesday": [ 27, 7, 19, 30 ],
+            "thursday": [ 27, 7, 18, 19 ],
+            "friday": [ 26, 6, 16, 18 ],
+            "saturday": [ 25, 5, 16, 17 ],
+            "sunday": [ 24, 4, 15, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 409,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/rock-totems-1948.jpg',
+          title: 'Rock Totems',
+          artist: 'John Ferren',
+          year: '1948',
+          rule: {
+            "monday": [ 24, 4, 15, 26 ],
+            "tuesday": [ 30, 10, 21, 31 ],
+            "wednesday": [ 29, 7, 20, 31 ],
+            "thursday": [ 27, 7, 19, 30 ],
+            "friday": [ 27, 7, 18, 19 ],
+            "saturday": [ 26, 6, 16, 18 ],
+            "sunday": [ 25, 5, 16, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 410,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/arizovert-1972.jpg',
+          title: 'Arizovert',
+          artist: 'Maurice Esteve',
+          year: '1972',
+          rule: {
+            "monday": [ 25, 5, 16, 17 ],
+            "tuesday": [ 24, 4, 15, 26 ],
+            "wednesday": [ 30, 10, 21, 31 ],
+            "thursday": [ 29, 7, 20, 31 ],
+            "friday": [ 27, 7, 19, 30 ],
+            "saturday": [ 27, 7, 18, 19 ],
+            "sunday": [ 26, 6, 16, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
