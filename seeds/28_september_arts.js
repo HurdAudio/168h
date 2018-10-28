@@ -7704,6 +7704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 386,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/laguna-e-deserto-1992.jpg',
+          title: 'Laguna e deserto',
+          artist: 'Antonio Corpora',
+          year: '1992',
+          rule: {
+            "monday": [ 26, 1, 20, 28 ],
+            "tuesday": [ 25, 1, 19, 27 ],
+            "wednesday": [ 24, 30, 18, 26 ],
+            "thursday": [ 13, 29, 17, 26 ],
+            "friday": [ 12, 19, 16, 24 ],
+            "saturday": [ 20, 27, 15, 22 ],
+            "sunday": [ 27, 3, 21, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 387,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/hannah-barbaric-paradise-1981.jpg',
+          title: 'Hannah Barbaric Paradise',
+          artist: 'Kenny Scharf',
+          year: '1981',
+          rule: {
+            "monday": [ 27, 3, 21, 29 ],
+            "tuesday": [ 26, 1, 20, 28 ],
+            "wednesday": [ 25, 1, 19, 27 ],
+            "thursday": [ 24, 30, 18, 26 ],
+            "friday": [ 13, 29, 17, 26 ],
+            "saturday": [ 12, 19, 16, 24 ],
+            "sunday": [ 20, 27, 15, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 388,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/yellow-bowl-cup-and-flowers-1966.jpg',
+          title: 'Yellow Bowl, Cup And Flowers',
+          artist: 'Paul Wonner',
+          year: '1966',
+          rule: {
+            "monday": [ 20, 27, 15, 22 ],
+            "tuesday": [ 27, 3, 21, 29 ],
+            "wednesday": [ 26, 1, 20, 28 ],
+            "thursday": [ 25, 1, 19, 27 ],
+            "friday": [ 24, 30, 18, 26 ],
+            "saturday": [ 13, 29, 17, 26 ],
+            "sunday": [ 12, 19, 16, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 389,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/creueta-del-coll-1987.jpg',
+          title: 'Little Utah',
+          artist: 'Norman Ackroyd',
+          year: '1971',
+          rule: {
+            "monday": [ 12, 19, 16, 24 ],
+            "tuesday": [ 20, 27, 15, 22 ],
+            "wednesday": [ 27, 3, 21, 29 ],
+            "thursday": [ 26, 1, 20, 28 ],
+            "friday": [ 25, 1, 19, 27 ],
+            "saturday": [ 24, 30, 18, 26 ],
+            "sunday": [ 13, 29, 17, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 390,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/839-the-third-skin-1982(1).jpg',
+          title: '839 The Third Skin',
+          artist: 'Friedensreich Hundertwasser',
+          year: '1982',
+          rule: {
+            "monday": [ 13, 29, 17, 26 ],
+            "tuesday": [ 12, 19, 16, 24 ],
+            "wednesday": [ 20, 27, 15, 22 ],
+            "thursday": [ 27, 3, 21, 29 ],
+            "friday": [ 26, 1, 20, 28 ],
+            "saturday": [ 25, 1, 19, 27 ],
+            "sunday": [ 24, 30, 18, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
