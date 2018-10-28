@@ -816,6 +816,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#F8FCFB',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 59,
+          user_id: 1,
+          theme: 'Snow',
+          type: 'friday',
+          src_string: '../img/december_tiles/damian-mccoig-527817-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '143%',
+          color_dark: '#343D4B',
+          color_medium: '#93A1BB',
+          color_light: '#CADBF0',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
