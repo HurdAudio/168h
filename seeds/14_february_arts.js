@@ -9104,6 +9104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 456,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/Celebration_2007.jpg',
+          title: 'Celebration',
+          artist: 'Charles McGee',
+          year: '2007',
+          rule: {
+            "monday": [ 8, 17, 25, 4 ],
+            "tuesday": [ 14, 19, 25, 6 ],
+            "wednesday": [ 13, 21, 29, 8 ],
+            "thursday": [ 15, 25, 2, 8 ],
+            "friday": [ 17, 25, 4, 14 ],
+            "saturday": [ 17, 27, 23, 13 ],
+            "sunday": [ 7, 15, 23, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 457,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/tarnowski-web1.jpg',
+          title: 'he Defiant Ones – To the Gallows',
+          artist: 'Charles McGill',
+          year: '2011',
+          rule: {
+            "monday": [ 7, 15, 23, 2 ],
+            "tuesday": [ 8, 17, 25, 4 ],
+            "wednesday": [ 14, 19, 25, 6 ],
+            "thursday": [ 13, 21, 29, 8 ],
+            "friday": [ 15, 25, 2, 8 ],
+            "saturday": [ 17, 25, 4, 14 ],
+            "sunday": [ 17, 27, 23, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 458,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/2016_NYR_12159_0429_000(julie_mehretu_excerpt).jpg',
+          title: 'Excerpt (citadel)',
+          artist: 'Julie Mehretu',
+          year: '2003',
+          rule: {
+            "monday": [ 17, 27, 23, 13 ],
+            "tuesday": [ 7, 15, 23, 2 ],
+            "wednesday": [ 8, 17, 25, 4 ],
+            "thursday": [ 14, 19, 25, 6 ],
+            "friday": [ 13, 21, 29, 8 ],
+            "saturday": [ 15, 25, 2, 8 ],
+            "sunday": [ 17, 25, 4, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 459,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/taliesin-west.jpg',
+          title: 'watercolor',
+          artist: 'Dean Mitchell',
+          year: '?',
+          rule: {
+            "monday": [ 17, 25, 4, 14 ],
+            "tuesday": [ 17, 27, 23, 13 ],
+            "wednesday": [ 7, 15, 23, 2 ],
+            "thursday": [ 8, 17, 25, 4 ],
+            "friday": [ 14, 19, 25, 6 ],
+            "saturday": [ 13, 21, 29, 8 ],
+            "sunday": [ 15, 25, 2, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 460,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/out-of-shadows2.jpg',
+          title: 'The Hunted Slave in the Dismal Swamp',
+          artist: 'Scipio Moorhead',
+          year: '1865',
+          rule: {
+            "monday": [ 15, 25, 2, 8 ],
+            "tuesday": [ 17, 25, 4, 14 ],
+            "wednesday": [ 17, 27, 23, 13 ],
+            "thursday": [ 7, 15, 23, 2 ],
+            "friday": [ 8, 17, 25, 4 ],
+            "saturday": [ 14, 19, 25, 6 ],
+            "sunday": [ 13, 21, 29, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
