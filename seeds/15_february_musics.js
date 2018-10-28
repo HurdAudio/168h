@@ -4864,6 +4864,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 271,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3654595443/size=large/bgcol=ffffff/linkcol=0687f5/license_id=111/tracklist=false/transparent=true/',
+          href_string: 'http://georgiaannemuldrow.bandcamp.com/album/overload',
+          a_string: 'Overload by Georgia Anne Muldrow',
+          rule: {
+            "monday": [ 11, 15, 17, 21 ],
+            "tuesday": [ 14, 17, 19, 21 ],
+            "wednesday": [ 25, 19, 21, 23 ],
+            "thursday": [ 27, 21, 23, 29 ],
+            "saturday": [ 28, 22, 24, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 272,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3588418751/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://nenehcherry.bandcamp.com/album/broken-politics',
+          a_string: 'Broken Politics by Neneh Cherry',
+          rule: {
+            "monday": [ 28, 22, 24, 1 ],
+            "tuesday": [ 11, 15, 17, 21 ],
+            "wednesday": [ 14, 17, 19, 21 ],
+            "thursday": [ 25, 19, 21, 23 ],
+            "saturday": [ 27, 21, 23, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 273,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1284736399/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://coalminerecords.bandcamp.com/album/unearthed-deluxe-edition',
+          a_string: 'Unearthed (Deluxe Edition) by Coalmine Records Presents',
+          rule: {
+            "monday": [ 28, 22, 24, 1 ],
+            "tuesday": [ 29, 23, 25, 2 ],
+            "wednesday": [ 12, 16, 18, 22 ],
+            "thursday": [ 15, 18, 20, 22 ],
+            "saturday": [ 26, 20, 22, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
