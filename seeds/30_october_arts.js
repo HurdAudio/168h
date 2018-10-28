@@ -7504,6 +7504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 376,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_tradesovpost_00028.jpg',
+          title: 'Kvass',
+          artist: 'S.Lapaev',
+          year: '1959',
+          rule: {
+            "monday": [ 24, 4, 15, 19 ],
+            "tuesday": [ 23, 3, 4, 18 ],
+            "wednesday": [ 1, 2, 13, 17 ],
+            "thursday": [ 28, 8, 19, 23 ],
+            "friday": [ 27, 7, 18, 22 ],
+            "saturday": [ 26, 6, 17, 21 ],
+            "sunday": [ 25, 5, 16, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 377,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_1528809768citrus_juice.jpg',
+          title: 'Citrus Juice - Natural Drink',
+          artist: 'S.Sakharov',
+          year: '1951',
+          rule: {
+            "monday": [ 25, 5, 16, 20 ],
+            "tuesday": [ 24, 4, 15, 19 ],
+            "wednesday": [ 23, 3, 4, 18 ],
+            "thursday": [ 1, 2, 13, 17 ],
+            "friday": [ 28, 8, 19, 23 ],
+            "saturday": [ 27, 7, 18, 22 ],
+            "sunday": [ 26, 6, 17, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 378,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_hats_ad.jpg',
+          title: 'Headgear Hats Fashion Advertisement',
+          artist: 'B.Truhachev',
+          year: '1953',
+          rule: {
+            "monday": [ 27, 7, 18, 22 ],
+            "tuesday": [ 26, 6, 17, 21 ],
+            "wednesday": [ 25, 5, 16, 20 ],
+            "thursday": [ 24, 4, 5, 19 ],
+            "friday": [ 2, 3, 14, 18 ],
+            "saturday": [ 29, 9, 20, 24 ],
+            "sunday": [ 28, 8, 19, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 379,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/.jpg',
+          title: 'Black caviar',
+          artist: 'Black caviar',
+          year: '1952',
+          rule: {
+            "monday": [ 28, 8, 19, 23 ],
+            "tuesday": [ 27, 7, 18, 22 ],
+            "wednesday": [ 26, 6, 17, 21 ],
+            "thursday": [ 25, 5, 16, 20 ],
+            "friday": [ 24, 4, 5, 19 ],
+            "saturday": [ 2, 3, 14, 18 ],
+            "sunday": [ 29, 9, 20, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 380,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_red_october_chocolate.jpg',
+          title: 'Chocolate sets of Red October factory',
+          artist: 'A.Pobedinsky',
+          year: '1950',
+          rule: {
+            "monday": [ 29, 9, 20, 24 ],
+            "tuesday": [ 28, 8, 19, 23 ],
+            "wednesday": [ 27, 7, 18, 22 ],
+            "thursday": [ 26, 6, 17, 21 ],
+            "friday": [ 25, 5, 16, 20 ],
+            "saturday": [ 24, 4, 5, 19 ],
+            "sunday": [ 2, 3, 14, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
