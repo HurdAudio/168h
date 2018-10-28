@@ -3892,6 +3892,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 217,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2158923454/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://collocutor.bandcamp.com/album/instead',
+          a_string: 'Instead by Collocutor',
+          rule: {
+            "monday": [ 2, 13, 24, 28 ],
+            "tuesday": [ 1, 12, 23, 27 ],
+            "wednesday": [ 30, 11, 22, 24 ],
+            "thursday": [ 29, 10, 21, 3 ],
+            "saturday": [ 3, 14, 25, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 218,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1213338299/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://analogafrica.bandcamp.com/album/dur-dur-of-somalia-volume-1-volume-2-previously-unreleased-tracks',
+          a_string: 'Dur Dur of Somalia - Volume 1, Volume 2 &amp; Previously Unreleased Tracks by Dur-Dur Band',
+          rule: {
+            "monday": [ 3, 14, 25, 29 ],
+            "tuesday": [ 2, 13, 24, 28 ],
+            "wednesday": [ 1, 12, 23, 27 ],
+            "thursday": [ 30, 11, 22, 24 ],
+            "saturday": [ 29, 10, 21, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 219,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3946406059/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://super11.bandcamp.com/album/super-onze-gao',
+          a_string: 'Super Onze - Gao by Super Onze, The Takamba champions of the Niger bend.',
+          rule: {
+            "monday": [ 29, 10, 21, 3 ],
+            "tuesday": [ 3, 14, 25, 29 ],
+            "wednesday": [ 2, 13, 24, 28 ],
+            "thursday": [ 1, 12, 23, 27 ],
+            "saturday": [ 30, 11, 22, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
