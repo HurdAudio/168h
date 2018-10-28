@@ -4216,6 +4216,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 235,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=791264815/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://nevernotagravedigger.bandcamp.com/album/the-nothings-sweetly',
+          a_string: 'The Nothings, Sweetly by Brandon Lopez Trio',
+          rule: {
+            "monday": [ 13, 21, 3, 2 ],
+            "tuesday": [ 12, 20, 2, 1 ],
+            "wednesday": [ 11, 19, 1, 31 ],
+            "thursday": [ 15, 23, 5, 4 ],
+            "saturday": [ 14, 22, 4, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 236,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3524400742/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://nevernotagravedigger.bandcamp.com/album/the-industry-of-entropy',
+          a_string: 'The Industry of Entropy by Brandon Lopez, Gerald Cleaver, Andria Nicodemou, Matt Nelson',
+          rule: {
+            "monday": [ 14, 22, 4, 3 ],
+            "tuesday": [ 13, 21, 3, 2 ],
+            "wednesday": [ 12, 20, 2, 1 ],
+            "thursday": [ 11, 19, 1, 31 ],
+            "saturday": [ 15, 23, 5, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 237,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2653528630/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://nevernotagravedigger.bandcamp.com/album/the-mess-holy-holy',
+          a_string: 'The Mess - Holy Holy by Brandon Lopez, Chris Corsano, Sam Yulsman',
+          rule: {
+            "monday": [ 15, 23, 5, 4 ],
+            "tuesday": [ 14, 22, 4, 3 ],
+            "wednesday": [ 13, 21, 3, 2 ],
+            "thursday": [ 12, 20, 2, 1 ],
+            "saturday": [ 11, 19, 1, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
