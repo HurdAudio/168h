@@ -830,6 +830,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#BEBFC3',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 60,
+          user_id: 1,
+          theme: 'Monochromatic',
+          type: 'saturday',
+          src_string: '../img/november_tiles/ahmed-syed-501759-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '155%',
+          color_dark: '#070304',
+          color_medium: '#D75D65',
+          color_light: '#CCFEFF',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
