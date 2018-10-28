@@ -8504,6 +8504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 426,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/yard-board.jpg',
+          title: 'Yard. Board',
+          artist: 'Aleksandr Deyneka',
+          year: 'c.1920 - c.1930',
+          rule: {
+            "monday": [ 23, 3, 13, 2 ],
+            "tuesday": [ 22, 2, 11, 21 ],
+            "wednesday": [ 20, 30, 9, 17 ],
+            "thursday": [ 18, 27, 8, 17 ],
+            "friday": [ 28, 9, 19, 27 ],
+            "saturday": [ 28, 8, 17, 27 ],
+            "sunday": [ 26, 5, 13, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 427,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/we-have-to-become-specialists-1931.jpg',
+          title: 'We have to become specialists',
+          artist: 'Aleksandr Deyneka',
+          year: '1931',
+          rule: {
+            "monday": [ 27, 6, 14, 26 ],
+            "tuesday": [ 24, 4, 14, 3 ],
+            "wednesday": [ 23, 3, 10, 22 ],
+            "thursday": [ 21, 31, 10, 18 ],
+            "friday": [ 19, 28, 9, 18 ],
+            "saturday": [ 29, 10, 20, 28 ],
+            "sunday": [ 29, 9, 18, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 428,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/who-will-defeat-whom-1932.jpg',
+          title: 'Who will defeat whom',
+          artist: 'Aleksandr Deyneka',
+          year: '1932',
+          rule: {
+            "monday": [ 29, 9, 18, 28 ],
+            "tuesday": [ 27, 6, 14, 26 ],
+            "wednesday": [ 24, 4, 14, 3 ],
+            "thursday": [ 23, 3, 10, 22 ],
+            "friday": [ 21, 31, 10, 18 ],
+            "saturday": [ 19, 28, 9, 18 ],
+            "sunday": [ 29, 10, 20, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 429,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/work-build-and-don-t-weep-1933.jpg',
+          title: 'Work, build and don\'t weep',
+          artist: 'Aleksandr Deyneka',
+          year: '1933',
+          rule: {
+            "monday": [ 29, 10, 20, 28 ],
+            "tuesday": [ 29, 9, 18, 28 ],
+            "wednesday": [ 27, 6, 14, 26 ],
+            "thursday": [ 24, 4, 14, 3 ],
+            "friday": [ 23, 3, 10, 22 ],
+            "saturday": [ 21, 31, 10, 18 ],
+            "sunday": [ 19, 28, 9, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 430,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/youth-ebony-1935.jpg',
+          title: 'Youth Negro',
+          artist: 'Aleksandr Deyneka',
+          year: '1935',
+          rule: {
+            "monday": [ 19, 28, 9, 18 ],
+            "tuesday": [ 29, 10, 20, 28 ],
+            "wednesday": [ 29, 9, 18, 28 ],
+            "thursday":[ 27, 6, 14, 26 ],
+            "friday":  [ 24, 4, 14, 3 ],
+            "saturday": [ 23, 3, 10, 22 ],
+            "sunday": [ 21, 31, 10, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
