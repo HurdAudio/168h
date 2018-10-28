@@ -7304,6 +7304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 366,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/corner-paintings-in-8-parts-1986.jpg',
+          title: 'Corner Paintings (in 8 parts)',
+          artist: 'Alan Charlton',
+          year: '1986',
+          rule: {
+            "monday": [ 30, 5, 11, 16 ],
+            "tuesday": [ 29, 4, 9, 15 ],
+            "wednesday": [ 28, 2, 9, 13 ],
+            "thursday": [ 27, 30, 7, 12 ],
+            "friday": [ 26, 30, 7, 12 ],
+            "saturday": [ 25, 30, 6, 11 ],
+            "sunday": [ 24, 29, 5, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 367,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/img-6128-1986.jpg',
+          title: 'IMG 6128',
+          artist: 'Katsuhito Nishikawa',
+          year: '1986',
+          rule: {
+            "monday": [ 24, 29, 5, 12 ],
+            "tuesday": [ 30, 5, 11, 16 ],
+            "wednesday": [ 29, 4, 9, 15 ],
+            "thursday": [ 28, 2, 9, 13 ],
+            "friday": [ 27, 30, 7, 12 ],
+            "saturday": [ 26, 30, 7, 12 ],
+            "sunday": [ 25, 30, 6, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 368,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/belgische-kiste-iv-trailer-1986.jpg',
+          title: 'Belgische Kiste IV-Trailer',
+          artist: 'Joachim Bandau',
+          year: '1986',
+          rule: {
+            "monday": [ 25, 30, 6, 11 ],
+            "tuesday": [ 24, 29, 5, 12 ],
+            "wednesday": [ 30, 5, 11, 16 ],
+            "thursday": [ 29, 4, 9, 15 ],
+            "friday": [ 28, 2, 9, 13 ],
+            "saturday": [ 27, 30, 7, 12 ],
+            "sunday": [ 26, 30, 7, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 369,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/the-duck-iv-1987.jpg',
+          title: 'The Duck IV',
+          artist: 'Richard Tuttle',
+          year: '1987',
+          rule: {
+            "monday": [ 26, 30, 7, 12 ],
+            "tuesday": [ 25, 30, 6, 11 ],
+            "wednesday": [ 24, 29, 5, 12 ],
+            "thursday": [ 30, 5, 11, 16 ],
+            "friday": [ 29, 4, 9, 15 ],
+            "saturday": [ 28, 2, 9, 13 ],
+            "sunday": [ 27, 30, 7, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 370,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/untitled-for-my-mother-evangelia-1987.jpg',
+          title: 'Untitled (for my mother Evangelia)',
+          artist: 'Stephen Antonakos',
+          year: '1987',
+          rule: {
+            "monday": [ 27, 30, 7, 12 ],
+            "tuesday": [ 26, 30, 7, 12 ],
+            "wednesday": [ 25, 30, 6, 11 ],
+            "thursday": [ 24, 29, 5, 12 ],
+            "friday": [ 30, 5, 11, 16 ],
+            "saturday": [ 29, 4, 9, 15 ],
+            "sunday": [ 28, 2, 9, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
