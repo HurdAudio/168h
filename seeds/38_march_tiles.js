@@ -942,6 +942,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#D8D7BB',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 68,
+          user_id: 1,
+          theme: 'Glass',
+          type: 'week',
+          src_string: '../img/march_tiles/valery-rabchenyuk-474574-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '150%',
+          color_dark: '#0B0C0D',
+          color_medium: '#C48557',
+          color_light: '#F6FAFB',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
