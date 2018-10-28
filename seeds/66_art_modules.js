@@ -2344,6 +2344,66 @@ exports.seed = function(knex, Promise) {
           public: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 196,
+          user_author_id: 1,
+          theme: 'Abandoned Places',
+          img_path: './img/modules/abandoned-places-35.jpg',
+          title: 'Dadipark, Dadizel, Belgium',
+          artist: 'unknown artist',
+          year: '2014',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 197,
+          user_author_id: 1,
+          theme: 'Abandoned Places',
+          img_path: './img/modules/abandoned-places-36.jpg',
+          title: 'Military Hospital, Beelitz, Germany',
+          artist: 'unknown artist',
+          year: '2014',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 198,
+          user_author_id: 1,
+          theme: 'Abandoned Places',
+          img_path: './img/modules/abandoned-places-37.jpg',
+          title: 'Military Hospital, Beelitz, Germany',
+          artist: 'unknown artist',
+          year: '2014',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 199,
+          user_author_id: 1,
+          theme: 'Abandoned Places',
+          img_path: './img/modules/abandoned-places-38.jpg',
+          title: 'Empty Organ Room',
+          artist: 'unknown artist',
+          year: '2014',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 200,
+          user_author_id: 1,
+          theme: 'Abandoned Places',
+          img_path: './img/modules/abandoned-places-39.jpg',
+          title: 'Abandoned church with the chairs still standing',
+          artist: 'artist unknown',
+          year: '2014',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
