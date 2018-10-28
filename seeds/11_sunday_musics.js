@@ -1834,6 +1834,36 @@ exports.seed = function(knex, Promise) {
           a_string: 'SUNN O))) - 2012.12.20, The Fonda Theater, Los Angeles, CA, USA by SUNN O)))',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 184,
+          user_id: 1,
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2794699661/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sunn-live.bandcamp.com/album/sunn-o-20121214-roseland-theater-portland-or-usa',
+          a_string: 'SUNN O))) - 2012.12.14, Roseland Theater, Portland, OR, USA by SUNN O)))',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 185,
+          user_id: 1,
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4128884508/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sunn-live.bandcamp.com/album/sunn-o-20120908-memorial-hall-raleigh-nc-usa',
+          a_string: 'SUNN O))) - 2012.09.08, Memorial Hall, Raleigh, NC, USA by SUNN O)))',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 186,
+          user_id: 1,
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2047945520/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://sunn-live.bandcamp.com/album/sunn-o-20120902-warsaw-brooklyn-ny-usa',
+          a_string: 'SUNN O))) - 2012.09.02, Warsaw, Brooklyn, NY, USA by SUNN O)))',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
