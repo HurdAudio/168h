@@ -4648,6 +4648,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 259,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1059062676/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://intlanthem.bandcamp.com/album/universal-beings',
+          a_string: 'Universal Beings by Makaya McCraven',
+          rule: {
+            "monday": [ 8, 16, 27, 3 ],
+            "tuesday": [ 7, 15, 27, 2 ],
+            "wednesday": [ 11, 19, 1, 6 ],
+            "thursday": [ 10, 18, 30, 5 ],
+            "saturday": [ 9, 17, 29, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 260,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2657716495/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://intlanthem.bandcamp.com/album/500-chains',
+          a_string: '500 Chains by Ben LaMar Gay',
+          rule: {
+            "monday": [ 9, 17, 29, 4 ],
+            "tuesday": [ 8, 16, 27, 3 ],
+            "wednesday": [ 7, 15, 27, 2 ],
+            "thursday": [ 11, 19, 1, 6 ],
+            "saturday": [ 10, 18, 30, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 261,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=541219158/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://intlanthem.bandcamp.com/album/blackman',
+          a_string: 'Blackman by Jeff Parker',
+          rule: {
+            "monday": [ 10, 18, 30, 5 ],
+            "tuesday": [ 9, 17, 29, 4 ],
+            "wednesday": [ 8, 16, 27, 3 ],
+            "thursday": [ 7, 15, 27, 2 ],
+            "saturday": [ 11, 19, 1, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
