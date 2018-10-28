@@ -8904,6 +8904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 446,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/portrait-of-ottavio-strada-attributed-1568.jpg',
+          title: 'Portrait of Ottavio Strada (attributed)',
+          artist: 'Marietta Robusti',
+          year: '1568',
+          rule: {
+            "monday": [ 28, 7, 15, 25 ],
+            "tuesday": [ 27, 6, 15, 24 ],
+            "wednesday": [ 2, 11, 21, 29 ],
+            "thursday": [ 1, 11, 19, 29 ],
+            "friday": [ 1, 10, 18, 28 ],
+            "saturday": [ 30, 9, 17, 27 ],
+            "sunday": [ 29, 9, 16, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 447,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/still-life-with-cheeses-almonds-and-pretzels-1615.jpg',
+          title: 'Still Life with Cheeses, Almonds and Pretzels',
+          artist: 'Clara Peeters',
+          year: '1615',
+          rule: {
+            "monday": [ 29, 9, 16, 26 ],
+            "tuesday": [ 28, 7, 15, 25 ],
+            "wednesday": [ 27, 6, 15, 24 ],
+            "thursday": [ 2, 11, 21, 29 ],
+            "friday": [ 1, 11, 19, 29 ],
+            "saturday": [ 1, 10, 18, 28 ],
+            "sunday": [ 30, 9, 17, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 448,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/transverbera-o-de-santa-teresa-1672.jpg',
+          title: 'Transverberação de Santa Teresa',
+          artist: 'Josefa de Obidos',
+          year: '1672',
+          rule: {
+            "monday": [ 31, 10, 18, 28 ],
+            "tuesday": [ 30, 10, 17, 27 ],
+            "wednesday": [ 29, 8, 16, 26 ],
+            "thursday": [ 28, 7, 16, 25 ],
+            "friday": [ 3, 12, 22, 30 ],
+            "saturday": [ 2, 12, 20, 30 ],
+            "sunday": [ 2, 11, 19, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 449,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/spray-of-flowers-with-insects-and-butterflies-on-a-marble-slab-1690.jpg',
+          title: 'Spray of Flowers with Insects and Butterflies on a Marble Slab',
+          artist: 'Rachel Ruysch',
+          year: '1690',
+          rule: {
+            "monday": [ 2, 11, 19, 29 ],
+            "tuesday": [ 31, 10, 18, 28 ],
+            "wednesday": [ 30, 10, 17, 27 ],
+            "thursday": [ 29, 8, 16, 26 ],
+            "friday": [ 28, 7, 16, 25 ],
+            "saturday": [ 3, 12, 22, 30 ],
+            "sunday": [ 2, 12, 20, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 450,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/portrait-of-augusta-of-hanover-with-her-first-born-son-karl-georg-of-brunswick-1767.jpg',
+          title: 'Portrait of Augusta of Hanover with her first born son Karl Georg of Brunswick',
+          artist: 'Angelica Kauffman',
+          year: '1767',
+          rule: {
+            "monday": [ 2, 12, 20, 30 ],
+            "tuesday": [ 2, 11, 19, 29 ],
+            "wednesday": [ 31, 10, 18, 28 ],
+            "thursday": [ 30, 10, 17, 27 ],
+            "friday": [ 29, 8, 16, 26 ],
+            "saturday": [ 28, 7, 16, 25 ],
+            "sunday": [ 3, 12, 22, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
