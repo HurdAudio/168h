@@ -7904,6 +7904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 396,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/from-thorheiten-1901.jpg',
+          title: 'from Thorheiten',
+          artist: 'Thomas Theodor Heine',
+          year: '1901',
+          rule: {
+            "monday": [ 24, 27, 5, 21 ],
+            "tuesday": [ 23, 26, 4, 20 ],
+            "wednesday": [ 29, 2, 10, 26 ],
+            "thursday": [ 28, 31, 9, 25 ],
+            "friday": [ 27, 31, 8, 24 ],
+            "saturday": [ 26, 30, 7, 23 ],
+            "sunday": [ 25, 27, 6, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 397,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/cleopatre-a-dancer-1909.jpg',
+          title: 'Costume design for the ballet "Cleopatra"',
+          artist: 'Leon Bakst',
+          year: '1909',
+          rule: {
+            "monday": [ 25, 27, 6, 22 ],
+            "tuesday": [ 24, 27, 5, 21 ],
+            "wednesday": [ 23, 26, 4, 20 ],
+            "thursday": [ 29, 2, 10, 26 ],
+            "friday": [ 28, 31, 9, 25 ],
+            "saturday": [ 27, 31, 8, 24 ],
+            "sunday": [ 26, 30, 7, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 398,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/grey-weather-at-pipervika-akershus-1922.jpg',
+          title: 'Grey weather at Pipervika, Akershus',
+          artist: 'Karl Edvard Diriks',
+          year: '1922',
+          rule: {
+            "monday": [ 26, 30, 7, 23 ],
+            "tuesday": [ 25, 27, 6, 22 ],
+            "wednesday": [ 24, 27, 5, 21 ],
+            "thursday": [ 23, 26, 4, 20 ],
+            "friday": [ 29, 2, 10, 26 ],
+            "saturday": [ 28, 31, 9, 25 ],
+            "sunday": [ 27, 31, 8, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 399,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/figurer-i-trappa-1923.jpg',
+          title: 'Figurer I Trappa',
+          artist: 'Gosta Adrian-Nilsson',
+          year: '1923',
+          rule: {
+            "monday": [ 28, 1, 9, 25 ],
+            "tuesday": [ 27, 31, 8, 24 ],
+            "wednesday": [ 26, 28, 7, 23 ],
+            "thursday": [ 25, 28, 6, 22 ],
+            "friday": [ 24, 27, 5, 21 ],
+            "saturday": [ 30, 3, 11, 27 ],
+            "sunday": [ 29, 1, 10, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 400,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/the-white-horse-1920.jpg',
+          title: 'The White Horse',
+          artist: 'Camille Bombois',
+          year: '1920',
+          rule: {
+            "monday": [ 29, 1, 10, 26 ],
+            "tuesday": [ 28, 1, 9, 25 ],
+            "wednesday": [ 27, 31, 8, 24 ],
+            "thursday": [ 26, 28, 7, 23 ],
+            "friday": [ 25, 28, 6, 22 ],
+            "saturday": [ 24, 27, 5, 21 ],
+            "sunday": [ 30, 3, 11, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
