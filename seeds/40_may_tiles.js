@@ -914,6 +914,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#DBF3D8',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 66,
+          user_id: 1,
+          theme: 'Greenery',
+          type: 'sunday',
+          src_string: '../img/may_tiles/meiying-ng-71588-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '158%',
+          color_dark: '#000600',
+          color_medium: '#2C802B',
+          color_light: '#62F258',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
