@@ -10369,6 +10369,44 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 666,
+          user_id: 1,
+          name: 'Ben Goldberg (clarinet/composer) born 1959.',
+          color: '#1BC109',
+          picture: './img/musicians/ben-goldberg.jpg',
+          day_of: new Date ('1959-08-08T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: true,
+          override_content: {
+            "sources": [ 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp' ],
+            "src_strings": [ 'https://bandcamp.com/EmbeddedPlayer/album=3527923352/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=4050736965/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=1297586379/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=1334656987/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=245513594/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=3845442054/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=3388349123/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=2842517659/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=3817093493/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=299632868/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=3291495781/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'http://ben-goldberg--bag-production-records.bandcamp.com/album/unfold-ordinary-mind', 'https://bandcamp.com/EmbeddedPlayer/album=582787171/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=2202493147/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/track=839819780/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=2315330506/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=4125540409/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=2652355938/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/' ],
+            "href_strings": [ 'http://ben-goldberg--bag-production-records.bandcamp.com/album/simon-jermyn-ben-goldberg-silence', 'http://ben-goldberg--bag-production-records.bandcamp.com/album/from-the-granary', 'http://ben-goldberg--bag-production-records.bandcamp.com/album/the-door-the-hat-the-chair-the-fact', 'http://ben-goldberg--bag-production-records.bandcamp.com/album/a-sibling-mystery', 'http://ben-goldberg--bag-production-records.bandcamp.com/album/knuckle-sandwich', 'http://ben-goldberg--bag-production-records.bandcamp.com/album/ben-goldberg-at-the-stone-february-march-2014-lets-cool-one', 'http://ben-goldberg--bag-production-records.bandcamp.com/album/orphic-machine-2', 'http://ben-goldberg--bag-production-records.bandcamp.com/album/worry-later', 'http://ben-goldberg--bag-production-records.bandcamp.com/album/twelve-minor-2', 'http://ben-goldberg--bag-production-records.bandcamp.com/album/here-by-now', 'http://ben-goldberg--bag-production-records.bandcamp.com/album/go-home', 'http://ben-goldberg--bag-production-records.bandcamp.com/album/unfold-ordinary-mind', 'http://ben-goldberg--bag-production-records.bandcamp.com/album/subatomic-particle-homesick-blues', 'http://ben-goldberg--bag-production-records.bandcamp.com/album/junk-genius', 'http://ben-goldberg--bag-production-records.bandcamp.com/track/ben-goldberg-on-kcsms-desert-island-jazz', 'http://ben-goldberg--bag-production-records.bandcamp.com/album/foreign-legion', 'http://ben-goldberg--bag-production-records.bandcamp.com/album/the-relative-value-of-things', 'http://marcocolonna.bandcamp.com/album/an-evening-in-roma' ],
+            "a_strings": [ 'Simon Jermyn + Ben Goldberg: Silence by Ben Goldberg / BAG Production Records', 'From the Granary by Ben Goldberg', 'The Door The Hat The Chair The Fact by Ben Goldberg', 'A Sibling Mystery by Invisible Guy', 'Knuckle Sandwich by Invisible Guy', 'Ben Goldberg At The Stone, February/March 2014: Let&#39;s Cool One by Ben Goldberg', 'Orphic Machine by Ben Goldberg', 'Worry Later by Ben Goldberg, Adam Levy, Smith Dobson', 'Twelve Minor by Ben Goldberg', 'Here By Now by Ben Goldberg Trio', 'Go Home by Ben Goldberg', 'Unfold Ordinary Mind by Ben Goldberg', 'Subatomic Particle Homesick Blues by Ben Goldberg', 'Junk Genius by Junk Genius', 'Ben Goldberg on KCSM&#39;s &quot;Desert Island Jazz&quot; by Ben Goldberg / BAG Production Records', 'Foreign Legion by Tin Hat', 'The Relative Value of Things by Kenny Wollesen + Ben Goldberg', 'An evening in Roma by Ben Goldberg, Marco Colonna' ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 667,
+          user_id: 1,
+          name: 'Sonny Sharrock (guitar/composer) born 1940.',
+          color: '#0A070E',
+          picture: './img/musicians/11e4eccea0e35582ce9ea1fbcc125210.jpg',
+          day_of: new Date ('1940-08-27T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: true,
+          override_content: {
+            "sources": [ 'bandcamp', 'bandcamp', 'bandcamp' ],
+            "src_strings": [ 'https://bandcamp.com/EmbeddedPlayer/album=3693384567/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=3251343418/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=1255821310/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/' ],
+            "href_strings": [ 'http://billlaswell.bandcamp.com/album/guitar', 'http://billlaswell.bandcamp.com/album/seize-the-rainbow', 'http://trostrecords.bandcamp.com/album/whatthefuckdoyouwant' ],
+            "a_strings": [ 'Guitar by Sonny Sharrock', 'Seize The Rainbow by Sonny Sharrock Band', 'WHATTHEFUCKDOYOUWANT by PETER BRÖTZMANN / SONNY SHARROCK' ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
