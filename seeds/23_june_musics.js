@@ -4432,6 +4432,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 247,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1574299415/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://endurance010010.bandcamp.com/album/celestial-governors',
+          a_string: 'Celestial Governors by Endurance',
+          rule: {
+            "monday": [ 6, 10, 16, 27 ],
+            "tuesday": [ 5, 8, 13, 25 ],
+            "wednesday": [ 4, 8, 13, 25 ],
+            "thursday": [ 4, 7, 13, 24 ],
+            "saturday": [ 2, 10, 12, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 248,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3692626582/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://intergalacticresearchinstituteforsound.bandcamp.com/album/the-moment-just',
+          a_string: 'The Moment Just by Irakli &amp; Zesknel',
+          rule: {
+            "monday": [ 2, 10, 12, 27 ],
+            "tuesday": [ 6, 10, 16, 27 ],
+            "wednesday": [ 5, 8, 13, 25 ],
+            "thursday": [ 4, 8, 13, 25 ],
+            "saturday": [ 4, 7, 13, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 249,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=18581670/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://handsinthedarkrecords.bandcamp.com/album/roche',
+          a_string: 'Roche by Mayerling',
+          rule: {
+            "monday": [ 4, 7, 13, 24 ],
+            "tuesday": [ 2, 10, 12, 27 ],
+            "wednesday": [ 6, 10, 16, 27 ],
+            "thursday": [ 5, 8, 13, 25 ],
+            "saturday": [ 4, 8, 13, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
