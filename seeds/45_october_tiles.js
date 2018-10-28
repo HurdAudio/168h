@@ -844,6 +844,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#CCEFF1',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 61,
+          user_id: 1,
+          theme: 'Autumnal',
+          type: 'sunday',
+          src_string: '../img/october_tiles/timothy-eberly-1086898-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '155%',
+          color_dark: '#081C14',
+          color_medium: '#CB5700',
+          color_light: '#FFEAE2',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
