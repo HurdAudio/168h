@@ -8704,6 +8704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 436,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/1165449.jpg',
+          title: 'New York Mets Watercolor',
+          artist: 'Raymond Davidson',
+          year: '?',
+          rule: {
+            "monday": [ 27, 2, 8, 14 ],
+            "tuesday": [ 2, 8, 13, 20 ],
+            "wednesday": [ 16, 6, 12, 18 ],
+            "thursday": [ 1, 4, 12, 18 ],
+            "friday": [ 30, 4, 19, 17 ],
+            "saturday": [ 27, 3, 9, 15 ],
+            "sunday": [ 28, 3, 9, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 437,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/52c96ae61c0c0eba9758c2365ca69ed7--noah-syndergaard-thor-mets-baseball.jpg',
+          title: 'Noah Syndergaard',
+          artist: 'unknown artist',
+          year: 'xxi century',
+          rule: {
+            "monday": [ 28, 3, 9, 15 ],
+            "tuesday": [ 27, 2, 8, 14 ],
+            "wednesday": [ 2, 8, 13, 20 ],
+            "thursday": [ 16, 6, 12, 18 ],
+            "friday": [ 1, 4, 12, 18 ],
+            "saturday": [ 30, 4, 19, 17 ],
+            "sunday": [ 27, 3, 9, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 438,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/2d1bc08cc2deba76e123b3b3f06d5492.jpg',
+          title: 'Rain Out',
+          artist: 'unknown artist',
+          year: '?',
+          rule: {
+            "monday": [ 27, 3, 9, 15 ],
+            "tuesday": [ 28, 3, 9, 15 ],
+            "wednesday": [ 27, 2, 8, 14 ],
+            "thursday": [ 2, 8, 13, 20 ],
+            "friday": [ 16, 6, 12, 18 ],
+            "saturday": [ 1, 4, 12, 18 ],
+            "sunday": [ 30, 4, 19, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 439,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/9cb69164f3593bc5626b25befcefae30.jpg',
+          title: 'Mets Noah Syndergaard Ace',
+          artist: 'Joe Petruccio',
+          year: '?',
+          rule: {
+            "monday": [ 30, 4, 19, 17 ],
+            "tuesday": [ 27, 3, 9, 15 ],
+            "wednesday": [ 28, 3, 9, 15 ],
+            "thursday": [ 27, 2, 8, 14 ],
+            "friday": [ 2, 8, 13, 20 ],
+            "saturday": [ 16, 6, 12, 18 ],
+            "sunday": [ 1, 4, 12, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 440,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/41b592379ba8dbf6a26a6f2022d06a63--mets-baseball-baseball-art.jpg',
+          title: 'It\'s \'86 Again!',
+          artist: 'unknown artist',
+          year: '2016',
+          rule: {
+            "monday": [ 1, 4, 12, 18 ],
+            "tuesday": [ 30, 4, 19, 17 ],
+            "wednesday": [ 27, 3, 9, 15 ],
+            "thursday": [ 28, 3, 9, 15 ],
+            "friday": [ 27, 2, 8, 14 ],
+            "saturday": [ 2, 8, 13, 20 ],
+            "sunday": [ 16, 6, 12, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
