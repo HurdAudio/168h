@@ -4756,6 +4756,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 265,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=641918857/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tashamusic.bandcamp.com/album/alone-at-last',
+          a_string: 'Alone at Last by Tasha',
+          rule: {
+            "monday": [ 10, 16, 22, 31 ],
+            "tuesday": [ 8, 15, 21, 29 ],
+            "wednesday": [ 8, 14, 20, 28 ],
+            "thursday": [ 12, 18, 24, 1 ],
+            "saturday": [ 11, 17, 23, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 266,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=989980970/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://juliaholter.bandcamp.com/album/aviary',
+          a_string: 'Aviary by Julia Holter',
+          rule: {
+            "monday": [ 12, 18, 24, 1 ],
+            "tuesday": [ 11, 17, 23, 1 ],
+            "wednesday": [ 9, 16, 22, 30 ],
+            "thursday": [ 9, 15, 21, 29 ],
+            "saturday": [ 13, 19, 25, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 267,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2302433109/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://juliaholter.bandcamp.com/album/in-the-same-room',
+          a_string: 'In The Same Room by Julia Holter',
+          rule: {
+            "monday": [ 13, 19, 25, 2 ],
+            "tuesday": [ 12, 18, 24, 1 ],
+            "wednesday": [ 11, 17, 23, 1 ],
+            "thursday": [ 9, 16, 22, 30 ],
+            "saturday": [ 9, 15, 21, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
