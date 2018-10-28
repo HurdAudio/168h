@@ -4972,6 +4972,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 277,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2526713840/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://othermindsrecords.bandcamp.com/album/om-live-taif-prayer-in-the-garden-of-hijaz',
+          a_string: 'OM Live: Taif: Prayer in the Garden of Hijaz by Ishmael Wadada Leo Smith',
+          rule: {
+            "monday": [ 16, 23, 24, 25 ],
+            "tuesday": [ 15, 21, 22, 23 ],
+            "wednesday": [ 14, 21, 22, 23 ],
+            "thursday": [ 18, 25, 26, 27 ],
+            "saturday": [ 17, 23, 24, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 278,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2543758787/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://othermindsrecords.bandcamp.com/album/om-live-new-works',
+          a_string: 'OM Live: new works by Fred Frith &amp; Sudhu Tewari',
+          rule: {
+            "monday": [ 17, 23, 24, 26 ],
+            "tuesday": [ 16, 23, 24, 25 ],
+            "wednesday": [ 15, 21, 22, 23 ],
+            "thursday": [ 14, 21, 22, 23 ],
+            "saturday": [ 18, 25, 26, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 279,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2450697299/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://othermindsrecords.bandcamp.com/album/om-live-inner-cities-8',
+          a_string: 'OM Live: Inner Cities 8 by Alvin Curran',
+          rule: {
+            "monday": [ 18, 25, 26, 27 ],
+            "tuesday": [ 17, 23, 24, 26 ],
+            "wednesday": [ 16, 23, 24, 25 ],
+            "thursday": [ 15, 21, 22, 23 ],
+            "saturday": [ 14, 21, 22, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
