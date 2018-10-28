@@ -4000,6 +4000,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 223,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=409654917/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://rata-negra.bandcamp.com/album/justicia-c-smica',
+          a_string: 'Justicia Cósmica by Rata Negra',
+          rule: {
+            "monday": [ 5, 15, 25, 28 ],
+            "tuesday": [ 9, 19, 29, 1 ],
+            "wednesday": [ 8, 18, 28, 31 ],
+            "thursday": [ 7, 17, 27, 30 ],
+            "saturday": [ 6, 16, 27, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 224,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=563785673/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://notnormaltapes.bandcamp.com/album/nnt-067-ct-85-self-titled-cs',
+          a_string: 'NNT#067 CT-85 - Self-Titled CS by Not Normal Tapes',
+          rule: {
+            "monday": [ 7, 17, 28, 30 ],
+            "tuesday": [ 6, 16, 26, 29 ],
+            "wednesday": [ 10, 20, 30, 2 ],
+            "thursday": [ 9, 19, 29, 1 ],
+            "saturday": [ 8, 18, 28, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 225,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3537979781/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://verdugodiscos.bandcamp.com/album/sue-os-deceptivos',
+          a_string: 'Sueños Deceptivos by Tozcos',
+          rule: {
+            "monday": [ 8, 18, 28, 31 ],
+            "tuesday": [ 7, 17, 28, 30 ],
+            "wednesday": [ 6, 16, 26, 29 ],
+            "thursday": [ 10, 20, 30, 2 ],
+            "saturday": [ 9, 19, 29, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
