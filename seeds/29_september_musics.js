@@ -4108,6 +4108,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 229,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=128861424/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://pierrevervloesem.bandcamp.com/album/the-art-of-going-nowhere-4-extended',
+          a_string: 'The Art of going Nowhere 4 - Extended by Pierre Vervloesem',
+          rule: {
+            "monday": [ 3, 23, 1, 25 ],
+            "tuesday": [ 2, 22, 30, 24 ],
+            "wednesday": [ 6, 26, 4, 28 ],
+            "thursday": [ 5, 25, 3, 27 ],
+            "saturday": [ 4, 24, 2, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 230,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3453012875/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://zwoyld.bandcamp.com/album/zgond',
+          a_string: 'ZGOND by ZWOYLD',
+          rule: {
+            "monday": [ 4, 24, 2, 27 ],
+            "tuesday": [ 3, 23, 1, 25 ],
+            "wednesday": [ 2, 22, 30, 24 ],
+            "thursday": [ 6, 26, 4, 28 ],
+            "saturday": [ 5, 25, 3, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 231,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1079407873/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://detieti.bandcamp.com/album/frogressive-punk',
+          a_string: 'Frogressive Punk by Detieti',
+          rule: {
+            "monday": [ 6, 26, 4, 28 ],
+            "tuesday": [ 5, 25, 3, 26 ],
+            "wednesday": [ 5, 24, 2, 26 ],
+            "thursday": [ 3, 23, 1, 25 ],
+            "saturday": [ 7, 27, 5, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
