@@ -196,6 +196,8 @@ const music_module_reactions = require('./routes/music_module_reactions.js');
 const music_module_reactionsbyuser = require('./routes/music_module_reactionsbyuser.js');
 const tile_module_reactions = require('./routes/tile_module_reactions.js');
 const tile_module_reactionsbyuser = require('./routes/tile_module_reactionsbyuser.js');
+const art_module_comment_reactions = require('./routes/art_module_comment_reactions.js');
+const art_module_comment_reactionsbyuser = require('./routes/art_module_comment_reactionsbyuser.js');
 
 const port = process.env.PORT || 3007;
 
@@ -392,6 +394,8 @@ app.use(fileUpload());
  app.use('/music_module_reactionsbyuser', music_module_reactionsbyuser);
  app.use('/tile_module_reactions', tile_module_reactions);
  app.use('/tile_module_reactionsbyuser', tile_module_reactionsbyuser);
+ app.use('/art_module_comment_reactions', art_module_comment_reactions);
+ app.use('/art_module_comment_reactionsbyuser', art_module_comment_reactionsbyuser);
 
 app.get('/onthisdayinhistory/:date', (req, res, next) =>{
   let newUrl = 'http://history.muffinlabs.com/date/';
