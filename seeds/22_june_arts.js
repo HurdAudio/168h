@@ -8304,6 +8304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 416,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/Chris-Rivera13.jpg',
+          title: 'untitled',
+          artist: 'Chris Rivera',
+          year: '2015',
+          rule: {
+            "monday": [ 23, 3, 13, 21 ],
+            "tuesday": [ 29, 9, 19, 26 ],
+            "wednesday": [ 28, 8, 18, 26 ],
+            "thursday": [ 27, 7, 17, 25 ],
+            "friday": [ 26, 6, 16, 24 ],
+            "saturday": [ 5, 15, 25, 23 ],
+            "sunday": [ 24, 4, 14, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 417,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/Chris-Rivera8.jpg',
+          title: 'untitled',
+          artist: 'Chris Rivera',
+          year: '2015',
+          rule: {
+            "monday": [ 24, 4, 14, 22 ],
+            "tuesday": [ 23, 3, 13, 21 ],
+            "wednesday": [ 29, 9, 19, 26 ],
+            "thursday": [ 28, 8, 18, 26 ],
+            "friday": [ 27, 7, 17, 25 ],
+            "saturday": [ 26, 6, 16, 24 ],
+            "sunday": [ 5, 15, 25, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 418,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/wom_silver-gal-01-SILVEREYE.jpg',
+          title: 'Silvereye',
+          artist: 'Guido Argentini',
+          year: '?',
+          rule: {
+            "monday": [ 5, 15, 25, 23 ],
+            "tuesday": [ 24, 4, 14, 22 ],
+            "wednesday": [ 23, 3, 13, 21 ],
+            "thursday": [ 29, 9, 19, 26 ],
+            "friday": [ 28, 8, 18, 26 ],
+            "saturday": [ 27, 7, 17, 25 ],
+            "sunday": [ 26, 6, 16, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 419,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/wom_silver-gal-03-AIRMID.jpg',
+          title: 'Airmid',
+          artist: 'Guido Argentini',
+          year: '?',
+          rule: {
+            "monday": [ 26, 6, 16, 24 ],
+            "tuesday": [ 5, 15, 25, 23 ],
+            "wednesday": [ 24, 4, 14, 22 ],
+            "thursday": [ 23, 3, 13, 21 ],
+            "friday": [ 29, 9, 19, 26 ],
+            "saturday": [ 28, 8, 18, 26 ],
+            "sunday": [ 27, 7, 17, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 420,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/WE-ARE-ASLEEP-UNTIL-WE-FALL-IN-LOVE.jpg',
+          title: 'We Are Asleep Until We Fall in Love',
+          artist: 'Guido Argentini',
+          year: '?',
+          rule: {
+            "monday": [ 28, 8, 18, 26 ],
+            "tuesday": [ 27, 7, 17, 25 ],
+            "wednesday": [ 6, 16, 26, 24 ],
+            "thursday": [ 25, 5, 15, 23 ],
+            "friday": [ 24, 4, 14, 22 ],
+            "saturday": [ 30, 10, 20, 27 ],
+            "sunday": [ 29, 9, 19, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
