@@ -9304,6 +9304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 466,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/untitled-1978.jpg',
+          title: 'Untitled',
+          artist: 'Betty Parsons',
+          year: '1978',
+          rule: {
+            "monday": [ 19, 21, 22, 23 ],
+            "tuesday": [ 4, 5, 16, 8 ],
+            "wednesday": [ 7, 9, 1, 21 ],
+            "thursday": [ 12, 10, 2, 5 ],
+            "friday": [ 12, 13, 4, 8 ],
+            "saturday": [ 15, 17, 18, 20 ],
+            "sunday": [ 17, 19, 23, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 467,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/the-afterlife-of-a-painter-s-palette.jpg',
+          title: 'The afterlife of a painter\'s palette',
+          artist: 'Endre Bartos',
+          year: 'xx - xxi cent.',
+          rule: {
+            "monday": [ 17, 19, 23, 26 ],
+            "tuesday": [ 19, 21, 22, 23 ],
+            "wednesday": [ 4, 5, 16, 8 ],
+            "thursday": [ 7, 9, 1, 21 ],
+            "friday": [ 12, 10, 2, 5 ],
+            "saturday": [ 12, 13, 4, 8 ],
+            "sunday": [ 15, 17, 18, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 468,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/rules-of-inference-1974.jpg',
+          title: 'Rules of Inference',
+          artist: 'Mel Bochner',
+          year: '1974',
+          rule: {
+            "monday": [ 15, 17, 18, 20 ],
+            "tuesday": [ 17, 19, 23, 26 ],
+            "wednesday": [ 19, 21, 22, 23 ],
+            "thursday": [ 4, 5, 16, 8 ],
+            "friday": [ 7, 9, 1, 21 ],
+            "saturday": [ 12, 10, 2, 5 ],
+            "sunday": [ 12, 13, 4, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 469,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/untitled-september-22-1964.jpg',
+          title: 'Untitled (September 22)',
+          artist: 'Lorser Feitelson',
+          year: '1964',
+          rule: {
+            "monday": [ 13, 14, 5, 9 ],
+            "tuesday": [ 16, 18, 19, 21 ],
+            "wednesday": [ 18, 20, 24, 27 ],
+            "thursday": [ 20, 22, 23, 24 ],
+            "friday": [ 5, 6, 17, 9 ],
+            "saturday": [ 8, 10, 2, 22 ],
+            "sunday": [ 13, 11, 3, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 470,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/untitled-1932.jpg',
+          title: 'Untitled',
+          artist: 'John Ferren',
+          year: '1932',
+          rule: {
+            "monday": [ 13, 11, 3, 6 ],
+            "tuesday": [ 13, 14, 5, 9 ],
+            "wednesday": [ 16, 18, 19, 21 ],
+            "thursday": [ 18, 20, 24, 27 ],
+            "friday": [ 20, 22, 23, 24 ],
+            "saturday": [ 5, 6, 17, 9 ],
+            "sunday": [ 8, 10, 2, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
