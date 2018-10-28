@@ -4324,6 +4324,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 241,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=388968183/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://projektrecords.bandcamp.com/album/in-flickers',
+          a_string: 'In Flickers by Lycia',
+          rule: {
+            "monday": [ 3, 5, 9, 17 ],
+            "tuesday": [ 2, 3, 8, 16 ],
+            "wednesday": [ 1, 3, 7, 15 ],
+            "thursday": [ 5, 7, 11, 19 ],
+            "saturday": [ 4, 6, 10, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 242,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2539808219/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://handdrawndracula.bandcamp.com/album/another-side-of-the-seams',
+          a_string: 'Another Side of The Seams by The Seams',
+          rule: {
+            "monday": [ 4, 6, 10, 18 ],
+            "tuesday": [ 3, 5, 9, 17 ],
+            "wednesday": [ 2, 3, 8, 16 ],
+            "thursday": [ 1, 3, 7, 15 ],
+            "saturday": [ 5, 7, 11, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 243,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2471497688/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://racheltaylorbrown.bandcamp.com/album/run-tiny-human',
+          a_string: 'run tiny human by Rachel Taylor Brown',
+          rule: {
+            "monday": [ 5, 7, 11, 19 ],
+            "tuesday": [ 4, 6, 10, 18 ],
+            "wednesday": [ 3, 5, 9, 17 ],
+            "thursday": [ 2, 3, 8, 16 ],
+            "saturday": [ 1, 3, 7, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
