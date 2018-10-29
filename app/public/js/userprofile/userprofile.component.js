@@ -282,6 +282,92 @@
       vm.tileModuleViewer = tileModuleViewer;
       vm.tileModuleViewDone = tileModuleViewDone;
 
+      function getArtDatas(artShare, index) {
+        $http.get(`/${artShare.art_month}/${artShare.art_id}`)
+        .then(artData => {
+          let art = artData.data;
+          vm.activeArtShares[index].img_path = art.img_path;
+          vm.activeArtShares[index].title = art.title;
+          vm.activeArtShares[index].artist = art.artist;
+          vm.activeArtShares[index].year = art.year;
+          if (art.theme !== '') {
+            vm.activeArtShares[index].suggestedTheme = 'Suggested Theme: ' + art.theme;
+          } else {
+            vm.activeArtShares[index].suggestedTheme = '';
+          }
+
+        });
+      }
+
+      function getArtShareUserData(artShare, index) {
+        $http.get(`/users/${artShare.share_associate_id}`)
+        .then(inviteeData => {
+          let invitee = inviteeData.data;
+          $http.get(`/users/${artShare.user_id}`)
+          .then(inviterData => {
+            let inviter = inviterData.data;
+            vm.activeArtShares[index].inviter = inviter.name;
+            vm.activeArtShares[index].invitee = invitee.name;
+            if (parseInt(artShare.share_associate_id) === parseInt(currentUserId)) {
+              vm.activeArtShares[index].inv_img = inviter.user_avatar_url;
+            } else {
+              vm.activeArtShares[index].inv_img = invitee.user_avatar_url;
+            }
+          });
+        });
+      }
+
+      function retrieveUserArtShares() {
+        let aDate;
+        let bDate;
+        let check;
+
+        $http.get('/art_shares')
+        .then(allArtSharesData => {
+          let allArtShares = allArtSharesData.data;
+          let artShares = allArtShares.filter(entry => {
+            return((parseInt(entry.share_associate_id) === parseInt(currentUserId)) || (parseInt(entry.user_id) === parseInt(currentUserIs)));
+          });
+          artShares = artShares.sort((a, b) => {
+            aDate = new Date(a.created_at);
+            bDate = new Date(b.created_at);
+            return(aDate.getDate() - bDate.getDate());
+          });
+          if (artShares.length > 0) {
+            vm.activeArtShares = [];
+            for (let i = 0; i < artShares.length; i++) {
+              check = new Date(artShares[i].created_at);
+              vm.activeArtShares[i] = {};
+              vm.activeArtShares[i].id = artShares[i].id;
+              vm.activeArtShares[i].user_id = artShares[i].user_id;
+              vm.activeArtShares[i].share_associate_id = artShares[i].share_associate_id;
+              vm.activeArtShares[i].responded = artShares[i].responded;
+              vm.activeArtShares[i].accepted = artShares[i].accepted;
+              vm.activeArtShares[i].cleanDate = cleanDateHoliday(artShares[i].created_at) + ' at ' + check.toLocaleTimeString('en-GB') + '.';
+              getArtShareUserData(artShares[i], i);
+              getArtDatas(artShares[i], i);
+            }
+            setTimeout(() => {
+              for (let j = 0; j < vm.activeArtShares.length; j++) {
+                if ((parseInt(vm.activeArtShares[j].share_associate_id) === parseInt(currentUserId))) {
+                  document.getElementById('artblockInviter' + vm.activeArtShares[j].id).setAttribute("style", "display: initial;");
+                  document.getElementById('artblockInvitee' + vm.activeArtShares[j].id).setAttribute("style", "display: none;");
+                  if (vm.activeArtShares[j].responded) {
+                    document.getElementById('artAcceptDecline' + vm.activeArtShares[j].id).setAttribute("style", "display: none;");
+                  } else {
+                    document.getElementById('artAcceptDecline' + vm.activeArtShares[j].id).setAttribute("style", "display: initial; margin-left: 5vmin;");
+                  }
+                } else {
+                  document.getElementById('artblockInviter' + vm.activeArtShares[j].id).setAttribute("style", "display: none;");
+                  document.getElementById('artblockInvitee' + vm.activeArtShares[j].id).setAttribute("style", "display: initial;");
+                  document.getElementById('artAcceptDecline' + vm.activeArtShares[j].id).setAttribute("style", "display: none;");
+                }
+              }
+            }, 150);
+          }
+        });
+      }
+
       function tileModuleViewDone() {
         let tileModuleViewPane = document.getElementById('tileModuleViewPane');
         let dashboard = document.getElementById('dashboard');
@@ -16223,6 +16309,7 @@
             retrieveUserOccasionShares();
             retrieveUserTaskShares();
             retrieveUserObservanceShares();
+            retrieveUserArtShares();
           });
         }
 

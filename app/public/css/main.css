@@ -3174,10 +3174,6 @@ footer img {
   border: 2px solid #0000cc;
 }
 
-.artShareDisplay {
-  width: 80%;
-}
-
 #artSharesNotifier h3 {
   margin: 1vmin 1vmin 1vmin 4vmin;
 }
@@ -3192,6 +3188,10 @@ footer img {
   margin-top: 1.2em;
   margin-right: 1.2em;
   border: 2px solid #0000cc;
+}
+
+#artSharesNotifier a {
+  margin-left: 5vmin;
 }
 
 #occasionSharesNotifier h3 {
@@ -8432,6 +8432,12 @@ footer img {
   position: absolute;
   margin-left: -1vmin;
   margin-right: 1vmin;
+}
+
+.artShareDisplay {
+  width: 90% !important;
+  height: auto !important;
+  border: solid 1px transparent !important;
 }
 
 

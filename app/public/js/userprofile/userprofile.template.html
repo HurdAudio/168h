@@ -4288,8 +4288,8 @@
       <div id="artSharesNotifier">
 
         <div class="whoScheduledMe">
-          <!-- <main ng-repeat="art in $ctrl.activeArtShares | orderBy : $ctrl.sortBy"> -->
-            <div id="thisIsArtShareDeleteDiv{{obsarterve.id}}" class="profileDeleteOption">
+          <main ng-repeat="art in $ctrl.activeArtShares | orderBy : $ctrl.sortBy">
+            <div id="thisIsArtShareDeleteDiv{{art.id}}" class="profileDeleteOption">
 
               <!-- <a class="btn" href="#" ng-click="$ctrl.deleteObservanceShare(observe.id)">delete</a><br><br> -->
             </div>
@@ -4304,13 +4304,15 @@
             <h3>{{art.title}}</h3>
 
             <h3>{{art.artist}}, {{art.year}}</h3>
+            <h3>{{art.suggestedTheme}}</h3>
+            <br><br>
 
 
-            <!-- <div class="holidayAcceptDenyButtons" id="artAcceptDecline{{art.id}}">
+            <div class="holidayAcceptDenyButtons" id="artAcceptDecline{{art.id}}">
 
               <a class="btn" ng-click="$ctrl.declineArtShare(art.id)">Decline</a>
               <a class="btn" ng-click="$ctrl.acceptArtShare(art.id)">Accept</a>
-            </div><br><br> -->
+            </div><br><br>
             <!-- <br><br><div id="artShareAccepted{{art.id}}">
 
               <img src="{{art.inviterImg}}"><br>
@@ -4351,7 +4353,7 @@
                 </div><br><br><br><br> -->
               <!-- </main> -->
             </div>
-          <!-- </main> -->
+          </main>
         </div>
 
 
