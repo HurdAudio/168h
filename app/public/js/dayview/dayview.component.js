@@ -2305,6 +2305,18 @@
                 }
 
               }
+              let swap1 = 0;
+              let swap2 = 0;
+              let temp;
+              for (let swp = 0; swp < (vm.musics.length * 2); swp++) {
+                swap1 = Math.floor(Math.random() * vm.musics.length);
+                swap2 = Math.floor(Math.random() * vm.musics.length);
+                if (swap1 !== swap2) {
+                  temp = vm.musics[swap1];
+                  vm.musics[swap1] = vm.musics[swap2];
+                  vm.musics[swap2] = temp;
+                }
+              }
               while(vm.musics.length > 9) {
                 vm.musics.splice((Math.floor(Math.random() * vm.musics.length)), 1);
               }
@@ -2460,9 +2472,20 @@
 
             if (vm.arts.length > 0) {
               let indice = 0;
-              while(vm.arts.length > 8) {
-                vm.arts.splice((Math.floor(Math.random() * vm.arts.length)));
+              let swapa = Math.floor(Math.random() * vm.arts.length);
+              let swapb = Math.floor(Math.random() * vm.arts.length);
+              let temp;
+              for (let ra = 0; ra < (vm.arts.length * 2); ra++) {
+                swapa = Math.floor(Math.random() * vm.arts.length);
+                swapb = Math.floor(Math.random() * vm.arts.length);
+                if (swapa !== swapb) {
+                  temp = vm.arts[swapa];
+                  vm.arts[swapa] = vm.arts[swapb];
+                  vm.arts[swapb] = temp;
+                }
               }
+
+
               vm.dailyArts = vm.arts;
 
 
