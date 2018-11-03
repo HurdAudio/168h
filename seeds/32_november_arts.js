@@ -7404,6 +7404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 371,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/peinture-11-juillet-1987-1987.jpg',
+          title: 'Peinture 11 Juillet 1987',
+          artist: 'Pierre Soulages',
+          year: '1987',
+          rule: {
+            "monday": [ 29, 3, 10, 14 ],
+            "tuesday": [ 28, 1, 8, 13 ],
+            "wednesday": [ 27, 1, 8, 13 ],
+            "thursday": [ 26, 1, 7, 12 ],
+            "friday": [ 25, 30, 6, 13 ],
+            "saturday": [ 1, 6, 12, 17 ],
+            "sunday": [ 30, 3, 10, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 372,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/white-black-1988.jpg',
+          title: 'White Black',
+          artist: 'Ellsworth Kelly',
+          year: '1988',
+          rule: {
+            "monday": [ 30, 3, 10, 16 ],
+            "tuesday": [ 29, 3, 10, 14 ],
+            "wednesday": [ 28, 1, 8, 13 ],
+            "thursday": [ 27, 1, 8, 13 ],
+            "friday": [ 26, 1, 7, 12 ],
+            "saturday": [ 25, 30, 6, 13 ],
+            "sunday": [ 1, 6, 12, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 373,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/parsec-1988.jpg',
+          title: 'Parsec',
+          artist: 'John McCracken',
+          year: '1988',
+          rule: {
+            "monday": [ 1, 6, 12, 17 ],
+            "tuesday": [ 30, 3, 10, 16 ],
+            "wednesday": [ 29, 3, 10, 14 ],
+            "thursday": [ 28, 1, 8, 13 ],
+            "friday": [ 27, 1, 8, 13 ],
+            "saturday": [ 26, 1, 7, 12 ],
+            "sunday": [ 25, 30, 6, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 374,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/untitled-1988.jpg',
+          title: 'Untitled',
+          artist: 'Imi Knoebel',
+          year: '1988',
+          rule: {
+            "monday": [ 25, 30, 6, 13 ],
+            "tuesday": [ 1, 6, 12, 17 ],
+            "wednesday": [ 30, 3, 10, 16 ],
+            "thursday": [ 29, 3, 10, 14 ],
+            "friday": [ 28, 1, 8, 13 ],
+            "saturday": [ 27, 1, 8, 13 ],
+            "sunday": [ 26, 1, 7, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 375,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/poligonale-orfico-1988.jpg',
+          title: 'Poligonale orfico',
+          artist: 'Rodolfo Arico',
+          year: '1988',
+          rule: {
+            "monday": [ 26, 1, 7, 12 ],
+            "tuesday": [ 25, 30, 6, 13 ],
+            "wednesday": [ 1, 6, 12, 17 ],
+            "thursday": [ 30, 3, 10, 16 ],
+            "friday": [ 29, 3, 10, 14 ],
+            "saturday": [ 28, 1, 8, 13 ],
+            "sunday": [ 27, 1, 8, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
