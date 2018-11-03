@@ -4594,6 +4594,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 256,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=391996517/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bocian.bandcamp.com/album/both-ends',
+          a_string: 'Both Ends by Ballister',
+          rule: {
+            "monday": [ 9, 16, 22, 4 ],
+            "tuesday": [ 8, 14, 21, 3 ],
+            "wednesday": [ 7, 13, 20, 2 ],
+            "thursday": [ 6, 12, 19, 1 ],
+            "saturday": [ 5, 11, 18, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 257,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3973363956/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bocian.bandcamp.com/album/no-new-age',
+          a_string: 'No New Age by Kapital',
+          rule: {
+            "monday": [ 5, 11, 18, 31 ],
+            "tuesday": [ 9, 16, 22, 4 ],
+            "wednesday": [ 8, 14, 21, 3 ],
+            "thursday": [ 7, 13, 20, 2 ],
+            "saturday": [ 6, 12, 19, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 258,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3298473719/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bocian.bandcamp.com/album/why-is-there-something-instead-of-nothing',
+          a_string: 'Why Is There Something Instead Of Nothing? by Mike Majkowski',
+          rule: {
+            "monday": [ 6, 12, 19, 1 ],
+            "tuesday": [ 5, 11, 18, 31 ],
+            "wednesday": [ 9, 16, 22, 4 ],
+            "thursday": [ 8, 14, 21, 3 ],
+            "saturday": [ 7, 13, 20, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
