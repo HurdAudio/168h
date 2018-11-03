@@ -7604,6 +7604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 381,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_foods.jpg',
+          title: 'Foods Sold at Potreb-cooperation stores',
+          artist: 'B.Trukhachev',
+          year: '1954',
+          rule: {
+            "monday": [ 2, 3, 14, 18 ],
+            "tuesday": [ 29, 9, 20, 24 ],
+            "wednesday": [ 28, 8, 19, 23 ],
+            "thursday": [ 27, 7, 18, 22 ],
+            "friday": [ 26, 6, 17, 21 ],
+            "saturday": [ 25, 5, 16, 20 ],
+            "sunday": [ 24, 4, 5, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 382,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_factory_brand.jpg',
+          title: 'Fight for the honor of (your) Factory Trademark',
+          artist: 'V. Koretsky',
+          year: '1950',
+          rule: {
+            "monday": [ 24, 4, 5, 19 ],
+            "tuesday": [ 2, 3, 14, 18 ],
+            "wednesday": [ 29, 9, 20, 24 ],
+            "thursday": [ 28, 8, 19, 23 ],
+            "friday": [ 27, 7, 18, 22 ],
+            "saturday": [ 26, 6, 17, 21 ],
+            "sunday": [ 25, 5, 16, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 383,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_young_engineer.jpg',
+          title: 'Young engineer - To the Manufacturing Department! ',
+          artist: 'V. Govorkov',
+          year: '1956',
+          rule: {
+            "monday": [ 25, 5, 16, 20 ],
+            "tuesday": [ 24, 4, 5, 19 ],
+            "wednesday": [ 2, 3, 14, 18 ],
+            "thursday": [ 29, 9, 20, 24 ],
+            "friday": [ 28, 8, 19, 23 ],
+            "saturday": [ 27, 7, 18, 22 ],
+            "sunday": [ 26, 6, 17, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 384,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_close_to_life.jpg',
+          title: 'Closer to life, to alive deed!',
+          artist: 'K. Ivanov, V. Briskin',
+          year: '1954',
+          rule: {
+            "monday": [ 26, 6, 17, 21 ],
+            "tuesday": [ 25, 5, 16, 20 ],
+            "wednesday": [ 24, 4, 5, 19 ],
+            "thursday": [ 2, 3, 14, 18 ],
+            "friday": [ 29, 9, 20, 24 ],
+            "saturday": [ 28, 8, 19, 23 ],
+            "sunday": [ 27, 7, 18, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 385,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_restaurant.jpg',
+          title: 'Deserve a praise!',
+          artist: 'V. Govorkov',
+          year: '1954',
+          rule: {
+            "monday": [ 28, 8, 19, 23 ],
+            "tuesday": [ 27, 7, 18, 22 ],
+            "wednesday": [ 26, 6, 17, 21 ],
+            "thursday": [ 25, 5, 6, 20 ],
+            "friday": [ 3, 4, 15, 19 ],
+            "saturday": [ 30, 10, 21, 25 ],
+            "sunday": [ 29, 9, 20, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
