@@ -4810,6 +4810,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 268,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=766515467/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://miserablegrl.bandcamp.com/album/loverboy-dog-days',
+          a_string: 'Loverboy / Dog Days by Miserable',
+          rule: {
+            "monday": [ 9, 15, 21, 29 ],
+            "tuesday": [ 13, 19, 25, 2 ],
+            "wednesday": [ 12, 18, 24, 1 ],
+            "thursday": [ 11, 17, 23, 1 ],
+            "saturday": [ 9, 16, 22, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 269,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2884039919/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://miserablegrl.bandcamp.com/album/uncontrollable',
+          a_string: 'Uncontrollable by Miserable',
+          rule: {
+            "monday": [ 9, 16, 22, 30 ],
+            "tuesday": [ 9, 15, 21, 29 ],
+            "wednesday": [ 13, 19, 25, 2 ],
+            "thursday": [ 12, 18, 24, 1 ],
+            "saturday": [ 11, 17, 23, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 270,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2027118462/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://miserablegrl.bandcamp.com/album/halloween-dream-ep',
+          a_string: 'Halloween Dream EP by Miserable',
+          rule: {
+            "monday": [ 11, 17, 23, 1 ],
+            "tuesday": [ 9, 16, 22, 30 ],
+            "wednesday": [ 9, 15, 21, 29 ],
+            "thursday": [ 13, 19, 25, 2 ],
+            "saturday": [ 12, 18, 24, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
