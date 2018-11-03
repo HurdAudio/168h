@@ -4619,7 +4619,7 @@ exports.seed = function(knex, Promise) {
           name: 'Roger Kellaway (pianist), born 1939',
           color: '#F54F46',
           picture: './img/musicians/rogerkellaway.jpg',
-          day_of: new Date ('1939-11-01T13:44:00.000Z'),
+          day_of: new Date ('1939-11-11T13:44:00.000Z'),
           is_annual: true,
           art_override: false,
           music_override: false,
