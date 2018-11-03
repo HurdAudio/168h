@@ -8597,10 +8597,110 @@ exports.seed = function(knex, Promise) {
             "monday": [ 19, 28, 9, 18 ],
             "tuesday": [ 29, 10, 20, 28 ],
             "wednesday": [ 29, 9, 18, 28 ],
-            "thursday":[ 27, 6, 14, 26 ],
-            "friday":  [ 24, 4, 14, 3 ],
+            "thursday": [ 27, 6, 14, 26 ],
+            "friday": [ 24, 4, 14, 3 ],
             "saturday": [ 23, 3, 10, 22 ],
             "sunday": [ 21, 31, 10, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 431,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/future-pilots-1938(1).jpg',
+          title: 'Future Pilots',
+          artist: 'Aleksandr Deyneka',
+          year: '1938',
+          rule: {
+            "monday": [ 21, 31, 10, 18 ],
+            "tuesday": [ 19, 28, 9, 18 ],
+            "wednesday": [ 29, 10, 20, 28 ],
+            "thursday": [ 29, 9, 18, 28 ],
+            "friday": [ 27, 6, 14, 26 ],
+            "saturday": [ 24, 4, 14, 3 ],
+            "sunday": [ 23, 3, 10, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 432,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/gagarin-s-day-in-paris-1962.jpg',
+          title: 'Gagarin\'s Day in Paris',
+          artist: 'Aleksandr Deyneka',
+          year: '1962',
+          rule: {
+            "monday": [ 23, 3, 10, 22 ],
+            "tuesday": [ 21, 31, 10, 18 ],
+            "wednesday": [ 19, 28, 9, 18 ],
+            "thursday": [ 29, 10, 20, 28 ],
+            "friday": [ 29, 9, 18, 28 ],
+            "saturday": [ 27, 6, 14, 26 ],
+            "sunday": [ 24, 4, 14, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 433,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/youth-1962.jpg',
+          title: 'Youth',
+          artist: 'Aleksandr Deyneka',
+          year: '1961 - 1962',
+          rule: {
+            "monday": [ 24, 4, 14, 3 ],
+            "tuesday": [ 23, 3, 10, 22 ],
+            "wednesday": [ 21, 31, 10, 18 ],
+            "thursday": [ 19, 28, 9, 18 ],
+            "friday": [ 29, 10, 20, 28 ],
+            "saturday": [ 29, 9, 18, 28 ],
+            "sunday": [ 27, 6, 14, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 434,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/fajrant-w-nowej-hucie.jpg',
+          title: 'Fajrant W Nowej Hucie',
+          artist: 'Andrzej Wróblewski',
+          year: '1953',
+          rule: {
+            "monday": [ 28, 7, 15, 17 ],
+            "tuesday": [ 25, 5, 15, 4 ],
+            "wednesday": [ 24, 4, 14, 23 ],
+            "thursday": [ 22, 1, 11, 19 ],
+            "friday": [ 20, 29, 10, 19 ],
+            "saturday": [ 30, 11, 21, 29 ],
+            "sunday": [ 30, 10, 19, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 435,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/szofer-niebieski-1948.jpg',
+          title: 'Blue Chauffeur',
+          artist: 'Andrzej Wróblewski',
+          year: '1948',
+          rule: {
+            "monday": [ 30, 10, 19, 29 ],
+            "tuesday": [ 28, 7, 15, 17 ],
+            "wednesday": [ 25, 5, 15, 4 ],
+            "thursday": [ 24, 4, 14, 23 ],
+            "friday": [ 22, 1, 11, 19 ],
+            "saturday": [ 20, 29, 10, 19 ],
+            "sunday": [ 30, 11, 21, 29 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
