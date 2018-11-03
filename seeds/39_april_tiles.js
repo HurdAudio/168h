@@ -942,6 +942,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#F3F2EE',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 68,
+          user_id: 1,
+          theme: 'Water',
+          type: 'week',
+          src_string: '../img/april_tiles/anton-sulsky-126-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '157%',
+          color_dark: '#221C1C',
+          color_medium: '#3D1E03',
+          color_light: '#FCFAFD',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
