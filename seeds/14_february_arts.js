@@ -9204,6 +9204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 461,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/motley00.jpg',
+          title: 'Hot Rhythm',
+          artist: 'Archibald Motley',
+          year: '1961',
+          rule: {
+            "monday": [ 13, 21, 29, 8 ],
+            "tuesday": [ 15, 25, 2, 8 ],
+            "wednesday": [ 17, 25, 4, 14 ],
+            "thursday": [ 17, 27, 23, 13 ],
+            "friday": [ 7, 15, 23, 2 ],
+            "saturday": [ 8, 17, 25, 4 ],
+            "sunday": [ 14, 19, 25, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 462,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/4652fd7e-ff43-4309-a871-a2d18413bbe4_570.Jpeg',
+          title: 'A Pair of Works',
+          artist: 'Gus Nall',
+          year: '?',
+          rule: {
+            "monday": [ 14, 19, 25, 6 ],
+            "tuesday": [ 13, 21, 29, 8 ],
+            "wednesday": [ 15, 25, 2, 8 ],
+            "thursday": [ 17, 25, 4, 14 ],
+            "friday": [ 17, 27, 23, 13 ],
+            "saturday": [ 7, 15, 23, 2 ],
+            "sunday": [ 8, 17, 25, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 463,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/harold-newton-highwaymen-eddies-place.jpg',
+          title: 'Eddie\'s Place',
+          artist: 'Harold Newton',
+          year: '?',
+          rule: {
+            "monday": [ 8, 17, 25, 4 ],
+            "tuesday": [ 14, 19, 25, 6 ],
+            "wednesday": [ 13, 21, 29, 8 ],
+            "thursday": [ 15, 25, 2, 8 ],
+            "friday": [ 17, 25, 4, 14 ],
+            "saturday": [ 17, 27, 23, 13 ],
+            "sunday": [ 7, 15, 23, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 464,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/lorraine-ogrady-on-the-making-of-her-1980s-parade-performance-harlem-900x450-c.jpg',
+          title: 'Art Is... ',
+          artist: 'Lorraine O\'Grady',
+          year: '1983/2009',
+          rule: {
+            "monday": [ 7, 15, 23, 2 ],
+            "tuesday": [ 8, 17, 25, 4 ],
+            "wednesday": [ 14, 19, 25, 6 ],
+            "thursday": [ 13, 21, 29, 8 ],
+            "friday": [ 15, 25, 2, 8 ],
+            "saturday": [ 17, 25, 4, 14 ],
+            "sunday": [ 17, 27, 23, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 465,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/h2SvCI1KJvPAprY2dXir9WX9zUqvWKUIveZ7IZVocQyrkUla1RZrN1eDbMtIOILY4lnZfaT8jdmdl5UflrFVvHkcqd4bV1_banner3.jpg',
+          title: 'Father of the Black Age of Comics',
+          artist: 'Turtel Onli',
+          year: '2015',
+          rule: {
+            "monday": [ 18, 28, 24, 14 ],
+            "tuesday": [ 8, 16, 24, 3 ],
+            "wednesday": [ 9, 18, 26, 5 ],
+            "thursday": [ 15, 20, 26, 7 ],
+            "friday": [ 14, 22, 1, 9 ],
+            "saturday": [ 16, 26, 3, 9 ],
+            "sunday": [ 18, 26, 5, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
