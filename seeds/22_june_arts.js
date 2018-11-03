@@ -8404,6 +8404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 421,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/Photography-Wallpapers-And-Backgrounds-24-1024x576.jpg',
+          title: 'Wallpaper/Background',
+          artist: 'artist unknown',
+          year: '?',
+          rule: {
+            "monday": [ 29, 9, 19, 27 ],
+            "tuesday": [ 28, 8, 18, 26 ],
+            "wednesday": [ 27, 7, 17, 25 ],
+            "thursday": [ 6, 16, 26, 24 ],
+            "friday": [ 25, 5, 15, 23 ],
+            "saturday": [ 24, 4, 14, 22 ],
+            "sunday": [ 30, 10, 20, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 422,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/Photography-Wallpapers-And-Backgrounds-23-1024x640.jpg',
+          title: 'Wallpaper/Background',
+          artist: 'artist unknown',
+          year: '?',
+          rule: {
+            "monday": [ 30, 10, 20, 27 ],
+            "tuesday": [ 29, 9, 19, 27 ],
+            "wednesday": [ 28, 8, 18, 26 ],
+            "thursday": [ 27, 7, 17, 25 ],
+            "friday": [ 6, 16, 26, 24 ],
+            "saturday": [ 25, 5, 15, 23 ],
+            "sunday": [ 24, 4, 14, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 423,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/Photography-Wallpapers-And-Backgrounds-22-1024x640.jpg',
+          title: 'Wallpaper/Background',
+          artist: 'artist unknown',
+          year: '?',
+          rule: {
+            "monday": [ 24, 4, 14, 22 ],
+            "tuesday": [ 30, 10, 20, 27 ],
+            "wednesday": [ 29, 9, 19, 27 ],
+            "thursday": [ 28, 8, 18, 26 ],
+            "friday": [ 27, 7, 17, 25 ],
+            "saturday": [ 6, 16, 26, 24 ],
+            "sunday": [ 25, 5, 15, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 424,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/Photography-Wallpapers-And-Backgrounds-21-1024x640.jpg',
+          title: 'Wallpaper/Background',
+          artist: 'unknown artist',
+          year: '?',
+          rule: {
+            "monday": [ 25, 5, 15, 23 ],
+            "tuesday": [ 24, 4, 14, 22 ],
+            "wednesday": [ 30, 10, 20, 27 ],
+            "thursday": [ 29, 9, 19, 27 ],
+            "friday": [ 28, 8, 18, 26 ],
+            "saturday": [ 27, 7, 17, 25 ],
+            "sunday": [ 6, 16, 26, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 425,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/Photography-Wallpapers-And-Backgrounds-20-1024x640.jpg',
+          title: 'Wallpaper/Background',
+          artist: 'unknown artist',
+          year: '?',
+          rule: {
+            "monday": [ 6, 16, 26, 24 ],
+            "tuesday": [ 25, 5, 15, 23 ],
+            "wednesday": [ 24, 4, 14, 22 ],
+            "thursday": [ 30, 10, 20, 27 ],
+            "friday": [ 29, 9, 19, 27 ],
+            "saturday": [ 28, 8, 18, 26 ],
+            "sunday": [ 27, 7, 17, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
