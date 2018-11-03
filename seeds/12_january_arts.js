@@ -9404,6 +9404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 471,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/the-green-earth-1980.jpg',
+          title: 'The Green Earth',
+          artist: 'Victor Pasmore',
+          year: '1979 - 1980',
+          rule: {
+            "monday": [ 8, 10, 2, 22 ],
+            "tuesday": [ 13, 11, 3, 6 ],
+            "wednesday": [ 13, 14, 5, 9 ],
+            "thursday": [ 16, 18, 19, 21 ],
+            "friday": [ 18, 20, 24, 27 ],
+            "saturday": [ 20, 22, 23, 24 ],
+            "sunday": [ 5, 6, 17, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 472,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/print-2-1967.jpg',
+          title: 'Print 2',
+          artist: 'Bernard Cohen',
+          year: '1967',
+          rule: {
+            "monday": [ 5, 6, 17, 9 ],
+            "tuesday": [ 8, 10, 2, 22 ],
+            "wednesday": [ 13, 11, 3, 6 ],
+            "thursday": [ 13, 14, 5, 9 ],
+            "friday": [ 16, 18, 19, 21 ],
+            "saturday": [ 18, 20, 24, 27 ],
+            "sunday": [ 20, 22, 23, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 473,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/pondlife-2010.jpg',
+          title: 'Pondlife',
+          artist: 'Frank Bowling',
+          year: '2010',
+          rule: {
+            "monday": [ 20, 22, 23, 24 ],
+            "tuesday": [ 5, 6, 17, 9 ],
+            "wednesday": [ 8, 10, 2, 22 ],
+            "thursday": [ 13, 11, 3, 6 ],
+            "friday": [ 13, 14, 5, 9 ],
+            "saturday": [ 16, 18, 19, 21 ],
+            "sunday": [ 18, 20, 24, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 474,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/ascona-1976.jpg',
+          title: 'Ascona',
+          artist: 'Friedel Dzubas',
+          year: '1976',
+          rule: {
+            "monday": [ 18, 20, 24, 27 ],
+            "tuesday": [ 20, 22, 23, 24 ],
+            "wednesday": [ 5, 6, 17, 9 ],
+            "thursday": [ 8, 10, 2, 22 ],
+            "friday": [ 13, 11, 3, 6 ],
+            "saturday": [ 13, 14, 5, 9 ],
+            "sunday": [ 16, 18, 19, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 475,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/untitled-6.jpg',
+          title: 'Untitled',
+          artist: 'Antonio Sanfilippo',
+          year: '?',
+          rule: {
+            "monday": [ 16, 18, 19, 21 ],
+            "tuesday": [ 18, 20, 24, 27 ],
+            "wednesday": [ 20, 22, 23, 24 ],
+            "thursday": [ 5, 6, 17, 9 ],
+            "friday": [ 8, 10, 2, 22 ],
+            "saturday": [ 13, 11, 3, 6 ],
+            "sunday": [ 13, 14, 5, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
