@@ -7804,6 +7804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 391,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/psychic-pedestrians-on-a-spiral-horizon-barycenter-1970.jpg',
+          title: 'Psychic Pedestrians On a Spiral Horizon (Barycenter)',
+          artist: 'Robert Williams',
+          year: '1970',
+          rule: {
+            "monday": [ 24, 30, 18, 26 ],
+            "tuesday": [ 13, 29, 17, 26 ],
+            "wednesday": [ 12, 19, 16, 24 ],
+            "thursday": [ 20, 27, 15, 22 ],
+            "friday": [ 27, 3, 21, 29 ],
+            "saturday": [ 26, 1, 20, 28 ],
+            "sunday": [ 25, 1, 19, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 392,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/self-portrait-1953.jpg',
+          title: 'Self Portrait',
+          artist: 'John Bratby',
+          year: '1953',
+          rule: {
+            "monday": [ 26, 2, 20, 28 ],
+            "tuesday": [ 25, 1, 19, 27 ],
+            "wednesday": [ 14, 30, 18, 27 ],
+            "thursday": [ 13, 20, 17, 25 ],
+            "friday": [ 21, 28, 16, 23 ],
+            "saturday": [ 28, 4, 22, 30 ],
+            "sunday": [ 27, 2, 21, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 393,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/paisagem-da-trafaria-1955.jpg',
+          title: 'Paisagem da Trafaria',
+          artist: 'Nikias Skapinakis',
+          year: '1955',
+          rule: {
+            "monday": [ 27, 2, 21, 29 ],
+            "tuesday": [ 26, 2, 20, 28 ],
+            "wednesday": [ 25, 1, 19, 27 ],
+            "thursday": [ 14, 30, 18, 27 ],
+            "friday": [ 13, 20, 17, 25 ],
+            "saturday": [ 21, 28, 16, 23 ],
+            "sunday": [ 28, 4, 22, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 394,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/untitled-1982-2.jpg',
+          title: 'Untitled',
+          artist: 'Joan Ponc',
+          year: '1982',
+          rule: {
+            "monday": [ 28, 4, 22, 30 ],
+            "tuesday": [ 27, 2, 21, 29 ],
+            "wednesday": [ 26, 2, 20, 28 ],
+            "thursday": [ 25, 1, 19, 27 ],
+            "friday": [ 14, 30, 18, 27 ],
+            "saturday": [ 13, 20, 17, 25 ],
+            "sunday": [ 21, 28, 16, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 395,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/corridor-1960.jpg',
+          title: 'Corridor',
+          artist: 'Karl Benjamin',
+          year: '1960',
+          rule: {
+            "monday": [ 21, 28, 16, 23 ],
+            "tuesday": [ 28, 4, 22, 30 ],
+            "wednesday": [ 27, 2, 21, 29 ],
+            "thursday": [ 26, 2, 20, 28 ],
+            "friday": [ 25, 1, 19, 27 ],
+            "saturday": [ 14, 30, 18, 27 ],
+            "sunday": [ 13, 20, 17, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
