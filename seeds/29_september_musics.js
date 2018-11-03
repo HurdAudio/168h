@@ -4162,6 +4162,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 232,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2052333263/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cuneiformrecords.bandcamp.com/album/hopper-tunity-box',
+          a_string: 'Hopper Tunity Box by Hugh Hopper',
+          rule: {
+            "monday": [ 7, 27, 5, 29 ],
+            "tuesday": [ 6, 26, 4, 28 ],
+            "wednesday": [ 5, 25, 3, 26 ],
+            "thursday": [ 5, 24, 2, 26 ],
+            "saturday": [ 3, 23, 1, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 233,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3286011693/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cuneiformrecords.bandcamp.com/album/l-oreille-lectrique-the-electric-ear',
+          a_string: 'L’Oreille Électrique (The Electric Ear) by Forgas Band Phenomena',
+          rule: {
+            "monday": [ 3, 23, 1, 25 ],
+            "tuesday": [ 7, 27, 5, 29 ],
+            "wednesday": [ 6, 26, 4, 28 ],
+            "thursday": [ 5, 25, 3, 26 ],
+            "saturday": [ 5, 24, 2, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 234,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1269734453/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cuneiformrecords.bandcamp.com/album/risk-hd-24b-96k',
+          a_string: 'Risk [HD 24b/96k] by Far Corner',
+          rule: {
+            "monday": [ 6, 25, 3, 27 ],
+            "tuesday": [ 4, 24, 2, 26 ],
+            "wednesday": [ 8, 28, 6, 30 ],
+            "thursday": [ 7, 27, 5, 29 ],
+            "saturday": [ 6, 26, 4, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
