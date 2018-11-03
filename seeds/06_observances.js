@@ -10407,6 +10407,34 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 668,
+          user_id: 1,
+          name: 'Francisco Ascaso (Anarcho-syndicalist) born in 1901.',
+          color: '#A73747',
+          picture: './img/dissent/48f44fcde49720291e55d55f698c42d9.jpg',
+          day_of: new Date ('1901-04-01T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 669,
+          user_id: 1,
+          name: 'Albert Camus (author/philosopher/journalist) born in 1913.',
+          color: '#313131',
+          picture: './img/dissent/20161112_blp502_hr.jpg',
+          day_of: new Date ('1913-11-07T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
