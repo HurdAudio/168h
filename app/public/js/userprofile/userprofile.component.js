@@ -283,6 +283,24 @@
       vm.tileModuleViewDone = tileModuleViewDone;
       vm.userEditObservanceShareComment = userEditObservanceShareComment;
       vm.userEditObservanceShareCommentCompleted = userEditObservanceShareCommentCompleted;
+      vm.deleteObservanceShare = deleteObservanceShare;
+
+      function deleteObservanceShare(shareId) {
+        let index;
+        for (let i = 0; i < vm.activeObservanceShares.length; i++) {
+          if (parseInt(vm.activeObservanceShares[i].id) === parseInt(shareId)) {
+            index = i;
+          }
+        }
+        if (index !== undefined) {
+          $http.delete(`/observance_shares/${shareId}`)
+          .then(shareData => {
+            let share = shareData.data;
+            console.log(share);
+            vm.activeObservanceShares.splice(index, 1);
+          });
+        }
+      }
 
       function userEditObservanceShareCommentCompleted (commentId) {
         let thisIsTheObservanceShareCommentEditor = document.getElementById('thisIsTheObservanceShareCommentEditor' + commentId);
@@ -1060,6 +1078,7 @@
           setTimeout(() => {
             for (let j = 0; j < userObservanceShares.length; j++) {
               if ((parseInt(userObservanceShares[j].user_id)) === (parseInt(currentUserId))) {
+                document.getElementById('thisIsObservanceShareDeleteDiv' + userObservanceShares[j].id).setAttribute("style", "display: initial;");
                 document.getElementById('observanceblockInviter' + userObservanceShares[j].id).setAttribute("style", "display: none;");
                 document.getElementById('observanceblockInvitee' + userObservanceShares[j].id).setAttribute("style", "display: initial;");
                 if (userObservanceShares[j].responded) {
@@ -1078,6 +1097,7 @@
                 }
 
               } else {
+                document.getElementById('thisIsObservanceShareDeleteDiv' + userObservanceShares[j].id).setAttribute("style", "display: none;");
                 document.getElementById('observanceblockInviter' + userObservanceShares[j].id).setAttribute("style", "display: initial;");
                 document.getElementById('observanceblockInvitee' + userObservanceShares[j].id).setAttribute("style", "display: none;");
                 document.getElementById('observanceAcceptDecline' + userObservanceShares[j].id).setAttribute("style", "display: none;");
