@@ -9004,6 +9004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 451,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/il-sonno-dell-infanzia-e-della-vecchiaia.jpg',
+          title: 'Il sonno dell\'infanzia e della vecchiaia',
+          artist: 'Marie-Guillemine Benoist',
+          year: '?',
+          rule: {
+            "monday": [ 3, 12, 22, 30 ],
+            "tuesday": [ 2, 12, 20, 30 ],
+            "wednesday": [ 2, 11, 19, 29 ],
+            "thursday": [ 31, 10, 18, 28 ],
+            "friday": [ 30, 10, 17, 27 ],
+            "saturday": [ 29, 8, 16, 26 ],
+            "sunday": [ 28, 7, 16, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 452,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/my-grand-child-archie-son-of-eugene-cameron-r-a-aged-2-years-3-months-1865.jpg',
+          title: 'My Grand Child Archie Son of Eugene Cameron R.A. Aged 2 Years & 3 Months',
+          artist: 'Julia Margaret Cameron',
+          year: '1865',
+          rule: {
+            "monday": [ 28, 7, 16, 25 ],
+            "tuesday": [ 3, 12, 22, 30 ],
+            "wednesday": [ 2, 12, 20, 30 ],
+            "thursday": [ 2, 11, 19, 29 ],
+            "friday": [ 31, 10, 18, 28 ],
+            "saturday": [ 30, 10, 17, 27 ],
+            "sunday": [ 29, 8, 16, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 453,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/children-playing-on-the-beach-1884.jpg',
+          title: 'Children Playing On The Beach',
+          artist: 'Mary Cassatt',
+          year: '1884',
+          rule: {
+            "monday": [ 29, 8, 16, 26 ],
+            "tuesday": [ 28, 7, 16, 25 ],
+            "wednesday": [ 3, 12, 22, 30 ],
+            "thursday": [ 2, 12, 20, 30 ],
+            "friday": [ 2, 11, 19, 29 ],
+            "saturday": [ 31, 10, 18, 28 ],
+            "sunday": [ 30, 10, 17, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 454,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/secretly-1878.jpg',
+          title: 'Secretly',
+          artist: 'Eva Gonzales',
+          year: '1877 - 1888',
+          rule: {
+            "monday": [ 30, 10, 17, 27 ],
+            "tuesday": [ 29, 8, 16, 26 ],
+            "wednesday": [ 28, 7, 16, 25 ],
+            "thursday": [ 3, 12, 22, 30 ],
+            "friday": [ 2, 12, 20, 30 ],
+            "saturday": [ 2, 11, 19, 29 ],
+            "sunday": [ 31, 10, 18, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 455,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/a-woman-sketching-in-a-glade.jpg',
+          title: 'A Woman Sketching In A Glade',
+          artist: 'Mildred Anne Butler',
+          year: '?',
+          rule: {
+            "monday": [ 1, 11, 19, 29 ],
+            "tuesday": [ 31, 11, 18, 28 ],
+            "wednesday": [ 30, 9, 17, 27 ],
+            "thursday": [ 29, 8, 17, 26 ],
+            "friday": [ 4, 13, 23, 31 ],
+            "saturday": [ 3, 13, 21, 31 ],
+            "sunday": [ 31, 102, 20, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
