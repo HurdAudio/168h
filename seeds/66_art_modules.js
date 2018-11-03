@@ -2404,6 +2404,66 @@ exports.seed = function(knex, Promise) {
           public: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 201,
+          user_author_id: 1,
+          theme: 'Abandoned Places',
+          img_path: './img/modules/abandoned-places-40.jpg',
+          title: 'Wonderland Amusement Park, Beijing, China',
+          artist: 'artist unknown',
+          year: '2014',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 202,
+          user_author_id: 1,
+          theme: 'Abandoned Places',
+          img_path: './img/modules/abandoned-places-41.jpg',
+          title: 'Częstochowa Train Depot, Poland',
+          artist: 'artist unknown',
+          year: '2014',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 203,
+          user_author_id: 1,
+          theme: 'Abandoned Places',
+          img_path: './img/modules/abandoned-places-42.jpg',
+          title: 'An Abandoned Rocket Factory in Russia',
+          artist: 'artist unknown',
+          year: '2014',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 204,
+          user_author_id: 1,
+          theme: 'Abandoned Places',
+          img_path: './img/modules/abandoned-places-43.jpg',
+          title: 'El Hotel del Salto, Colombia',
+          artist: 'artist unknown',
+          year: '2014',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 205,
+          user_author_id: 1,
+          theme: 'Abandoned Places',
+          img_path: './img/modules/abandoned-places-44.jpg',
+          title: 'Christ of the Abyss, San Fruttuoso, Italy',
+          artist: 'Guido Galletti',
+          year: '1954',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
