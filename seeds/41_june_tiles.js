@@ -914,6 +914,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#C5CFD1',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 66,
+          user_id: 1,
+          theme: 'Light',
+          type: 'sunday',
+          src_string: '../img/june_tiles/berrak-soyral-766399-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '140%',
+          color_dark: '#05090C',
+          color_medium: '#151D31',
+          color_light: '#DCDFCF',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
