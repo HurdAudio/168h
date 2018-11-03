@@ -4918,6 +4918,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 274,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1474936833/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://electriccowbellrecords.bandcamp.com/album/the-garner-poems',
+          a_string: 'The Garner Poems by Mourning [A] BLKstar',
+          rule: {
+            "monday": [ 26, 20, 22, 24 ],
+            "tuesday": [ 28, 22, 24, 1 ],
+            "wednesday": [ 29, 23, 25, 2 ],
+            "thursday": [ 12, 16, 18, 22 ],
+            "saturday": [ 15, 18, 20, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 275,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2588823966/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://willsessions.bandcamp.com/album/the-one',
+          a_string: 'The One by Will Sessions &amp; Amp Fiddler ft. Dames Brown',
+          rule: {
+            "monday": [ 15, 18, 20, 22 ],
+            "tuesday": [ 26, 20, 22, 24 ],
+            "wednesday": [ 28, 22, 24, 1 ],
+            "thursday": [ 29, 23, 25, 2 ],
+            "saturday": [ 12, 16, 18, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 276,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1905484953/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://autoreverserecords.bandcamp.com/album/what-happens-when-i-try-to-relax',
+          a_string: 'What Happens When I Try To Relax by Open Mike Eagle',
+          rule: {
+            "monday": [ 12, 16, 18, 22 ],
+            "tuesday": [ 15, 18, 20, 22 ],
+            "wednesday": [ 26, 20, 22, 24 ],
+            "thursday": [ 28, 22, 24, 1 ],
+            "saturday": [ 29, 23, 25, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
