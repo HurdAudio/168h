@@ -928,6 +928,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#62F258',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 67,
+          user_id: 1,
+          theme: 'Greenery',
+          type: 'holiday',
+          src_string: '../img/may_tiles/kumiko-shimizu-760478-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '158%',
+          color_dark: '#060B11',
+          color_medium: '#2B8E71',
+          color_light: '#F7DEDF',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
