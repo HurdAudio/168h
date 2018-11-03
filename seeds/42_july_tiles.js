@@ -900,6 +900,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#ECF1F1',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 65,
+          user_id: 1,
+          theme: 'Steam',
+          type: 'saturday',
+          src_string: '../img/july_tiles/linh-toet-566587-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '140%',
+          color_dark: '#143793',
+          color_medium: '#467EB6',
+          color_light: '#CFDFEC',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
