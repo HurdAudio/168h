@@ -830,6 +830,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#CADBF0',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 60,
+          user_id: 1,
+          theme: 'Snow',
+          type: 'saturday',
+          src_string: '../img/december_tiles/ricardo-gomez-angel-574749-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '155%',
+          color_dark: '#060607',
+          color_medium: '#785F41',
+          color_light: '#EAEAE8',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
