@@ -8204,6 +8204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 411,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/the-hydra-1955.jpg',
+          title: 'The Hydra',
+          artist: 'Germaine Richier',
+          year: '1955',
+          rule: {
+            "monday": [ 26, 6, 16, 18 ],
+            "tuesday": [ 25, 5, 16, 17 ],
+            "wednesday": [ 24, 4, 15, 26 ],
+            "thursday": [ 30, 10, 21, 31 ],
+            "friday": [ 29, 7, 20, 31 ],
+            "saturday": [ 27, 7, 19, 30 ],
+            "sunday": [ 27, 7, 18, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 412,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/potted-chrysanthemums-1950.jpg',
+          title: 'Potted Chrysanthemums',
+          artist: 'Sanyu',
+          year: '1950',
+          rule: {
+            "monday": [ 27, 7, 18, 19 ],
+            "tuesday": [ 26, 6, 16, 18 ],
+            "wednesday": [ 25, 5, 16, 17 ],
+            "thursday": [ 24, 4, 15, 26 ],
+            "friday": [ 30, 10, 21, 31 ],
+            "saturday": [ 29, 7, 20, 31 ],
+            "sunday": [ 27, 7, 19, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 413,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/composition-v-1929.jpg',
+          title: 'Composition V',
+          artist: 'Michel Seuphor',
+          year: '1929',
+          rule: {
+            "monday": [ 28, 8, 20, 31 ],
+            "tuesday": [ 28, 8, 19, 20 ],
+            "wednesday": [ 27, 7, 17, 19 ],
+            "thursday": [ 26, 6, 17, 18 ],
+            "friday": [ 25, 5, 16, 27 ],
+            "saturday": [ 31, 11, 22, 1 ],
+            "sunday": [ 30, 8, 21, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 414,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/a-monastic-brothel-1931.jpg',
+          title: 'A Monastic Brothel',
+          artist: 'Brassai',
+          year: '1931',
+          rule: {
+            "monday": [ 30, 8, 21, 1 ],
+            "tuesday": [ 28, 8, 20, 31 ],
+            "wednesday": [ 28, 8, 19, 20 ],
+            "thursday": [ 27, 7, 17, 19 ],
+            "friday": [ 26, 6, 17, 18 ],
+            "saturday": [ 25, 5, 16, 27 ],
+            "sunday": [ 31, 11, 22, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 415,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/green-seas-1958.jpg',
+          title: 'Green Seas',
+          artist: 'Jean Fautrier',
+          year: '1958',
+          rule: {
+            "monday": [ 31, 11, 22, 1 ],
+            "tuesday": [ 30, 8, 21, 1 ],
+            "wednesday": [ 28, 8, 20, 31 ],
+            "thursday": [ 28, 8, 19, 20 ],
+            "friday": [ 27, 7, 17, 19 ],
+            "saturday": [ 26, 6, 17, 18 ],
+            "sunday": [ 25, 5, 16, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
