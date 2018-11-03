@@ -8804,6 +8804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 441,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/Top40Mariners-webILLO-780x520.jpg',
+          title: 'Top 40 greatest players in Seattle Mariners history',
+          artist: 'Rich Boudet',
+          year: '2017',
+          rule: {
+            "monday": [ 17, 7, 13, 19 ],
+            "tuesday": [ 2, 5, 13, 19 ],
+            "wednesday": [ 1, 5, 20, 18 ],
+            "thursday": [ 28, 4, 10, 16 ],
+            "friday": [ 29, 4, 10, 16 ],
+            "saturday": [ 28, 3, 9, 15 ],
+            "sunday": [ 3, 9, 14, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 442,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/30441429_10156333563038979_7208496156953804800_n.jpg',
+          title: 'Ben Gamel Cap Night ',
+          artist: 'artist unknown',
+          year: '2018',
+          rule: {
+            "monday": [ 3, 9, 14, 21 ],
+            "tuesday": [ 17, 7, 13, 19 ],
+            "wednesday": [ 2, 5, 13, 19 ],
+            "thursday": [ 1, 5, 20, 18 ],
+            "friday": [ 28, 4, 10, 16 ],
+            "saturday": [ 29, 4, 10, 16 ],
+            "sunday": [ 28, 3, 9, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 443,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/DpKNsPqUcAEfYuD.jpg',
+          title: 'Mariners Painting',
+          artist: 'artist unknown',
+          year: 'xxi cent.',
+          rule: {
+            "monday": [ 28, 3, 9, 15 ],
+            "tuesday": [ 3, 9, 14, 21 ],
+            "wednesday": [ 17, 7, 13, 19 ],
+            "thursday": [ 2, 5, 13, 19 ],
+            "friday": [ 1, 5, 20, 18 ],
+            "saturday": [ 28, 4, 10, 16 ],
+            "sunday": [ 29, 4, 10, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 444,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/Baseball-art-for-blog-post.png',
+          title: 'Baseball Art for Blog Post',
+          artist: 'artist unknown',
+          year: '2018',
+          rule: {
+            "monday": [ 29, 4, 10, 16 ],
+            "tuesday": [ 28, 3, 9, 15 ],
+            "wednesday": [ 3, 9, 14, 21 ],
+            "thursday": [ 17, 7, 13, 19 ],
+            "friday": [ 2, 5, 13, 19 ],
+            "saturday": [ 1, 5, 20, 18 ],
+            "sunday": [ 28, 4, 10, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 445,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/1_2a912d7cb38ff700f35eb8dcd60d7517.jpg',
+          title: 'Still Starring Ichiro',
+          artist: 'Bill Williams',
+          year: '2001',
+          rule: {
+            "monday": [ 28, 4, 10, 16 ],
+            "tuesday": [ 29, 4, 10, 16 ],
+            "wednesday": [ 28, 3, 9, 15 ],
+            "thursday": [ 3, 9, 14, 21 ],
+            "friday": [ 17, 7, 13, 19 ],
+            "saturday": [ 2, 5, 13, 19 ],
+            "sunday": [ 1, 5, 20, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
