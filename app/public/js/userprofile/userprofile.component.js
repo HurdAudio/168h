@@ -281,6 +281,49 @@
       vm.cancelTaskInvite = cancelTaskInvite;
       vm.tileModuleViewer = tileModuleViewer;
       vm.tileModuleViewDone = tileModuleViewDone;
+      vm.userEditObservanceShareComment = userEditObservanceShareComment;
+      vm.userEditObservanceShareCommentCompleted = userEditObservanceShareCommentCompleted;
+
+      function userEditObservanceShareCommentCompleted (commentId) {
+        let thisIsTheObservanceShareCommentEditor = document.getElementById('thisIsTheObservanceShareCommentEditor' + commentId);
+        let thisIsObservanceShareCommentEditDoneDiv = document.getElementById('thisIsObservanceShareCommentEditDoneDiv' + commentId);
+        let thisIsObservanceShareCommentComment = document.getElementById('thisIsObservanceShareCommentComment' + commentId);
+
+        $http.get(`/observance_share_comments/${commentId}`)
+        .then(commentData => {
+          let comment = commentData;
+          thisIsTheObservanceShareCommentEditor.setAttribute("style", "display: none;");
+          thisIsObservanceShareCommentEditDoneDiv.setAttribute("style", "display: none;");
+          thisIsObservanceShareCommentComment.setAttribute("style", "visibility: visible;");
+          if (thisIsTheObservanceShareCommentEditor.value !== comment.comment) {
+            let now = new Date();
+            let subObj = {
+              comment: thisIsTheObservanceShareCommentEditor.value,
+              updated_at: now
+            }
+            $http.patch(`/observance_share_comments/${commentId}`, subObj)
+            .then(editedCommentData => {
+              let editedComment = editedCommentData.data;
+              thisIsObservanceShareCommentComment.innerHTML = subObj.comment;
+            });
+          }
+        });
+      }
+
+      function userEditObservanceShareComment(commentId) {
+        let thisIsTheObservanceShareCommentEditor = document.getElementById('thisIsTheObservanceShareCommentEditor' + commentId);
+        let thisIsObservanceShareCommentEditDoneDiv = document.getElementById('thisIsObservanceShareCommentEditDoneDiv' + commentId);
+        let thisIsObservanceShareCommentComment = document.getElementById('thisIsObservanceShareCommentComment' + commentId);
+
+        $http.get(`/observance_share_comments/${commentId}`)
+        .then(commentData => {
+          let comment = commentData.data;
+          thisIsTheObservanceShareCommentEditor.setAttribute("style", "display: initial;");
+          thisIsTheObservanceShareCommentEditor.value = comment.comment;
+          thisIsObservanceShareCommentEditDoneDiv.setAttribute("style", "display: initial;");
+          thisIsObservanceShareCommentComment.setAttribute("style", "visibility: hidden;");
+        });
+      }
 
       function getArtDatas(artShare, index) {
         $http.get(`/${artShare.art_month}/${artShare.art_id}`)
@@ -972,10 +1015,23 @@
             for (let i = 0; i < observanceComments.length; i++) {
               vm.activeObservanceShares[index].comments[i] = {};
               vm.activeObservanceShares[index].comments[i].comment = observanceComments[i].comment;
+              vm.activeObservanceShares[index].comments[i].id = observanceComments[i].id;
               check = new Date(observanceComments[i].created_at);
               vm.activeObservanceShares[index].comments[i].cleanDate = cleanDateHoliday(observanceComments[i].created_at) + ' at ' + check.toLocaleTimeString('en-GB') + '.';
               obtainObservanceCommenterDatas(observanceComments[i], index, i);
+              vm.activeObservanceShares[index].comments[i].user_id = observanceComments[i].user_id;
             }
+            setTimeout(() => {
+              for (let k = 0; k < vm.activeObservanceShares[index].comments.length; k++) {
+                document.getElementById('thisIsTheObservanceShareCommentEditor' + vm.activeObservanceShares[index].comments[k].id).setAttribute("style", "display: none;");
+                document.getElementById('thisIsObservanceShareCommentEditDoneDiv' + vm.activeObservanceShares[index].comments[k].id).setAttribute("style", "display: none;");
+                if (parseInt(vm.activeObservanceShares[index].comments[k].user_id) === parseInt(currentUserId)) {
+                  document.getElementById('editDeleteObservanceShareCommentDiv' + vm.activeObservanceShares[index].id).setAttribute("style", "display: initial;");
+                } else {
+                  document.getElementById('editDeleteObservanceShareCommentDiv' + vm.activeObservanceShares[index].id).setAttribute("style", "display: none;");
+                }
+              }
+            }, 150);
           }
         });
       }
