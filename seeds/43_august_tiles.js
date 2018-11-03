@@ -886,6 +886,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#E8F18C',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 64,
+          user_id: 1,
+          theme: 'Primary Colors',
+          type: 'friday',
+          src_string: '../img/august_tiles/mozaico-1590101_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '155%',
+          color_dark: '#026C98',
+          color_medium: '#53D0E7',
+          color_light: '#ADE4F0',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
