@@ -8004,6 +8004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 401,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/the-factory-chimney-meulan-landscape-1912.jpg',
+          title: 'The Factory Chimney, Meulan Landscape',
+          artist: 'Roger de La Fresnaye',
+          year: '1912',
+          rule: {
+            "monday": [ 30, 3, 11, 27 ],
+            "tuesday": [ 29, 1, 10, 26 ],
+            "wednesday": [ 28, 1, 9, 25 ],
+            "thursday": [ 27, 31, 8, 24 ],
+            "friday": [ 26, 28, 7, 23 ],
+            "saturday": [ 25, 28, 6, 22 ],
+            "sunday": [ 24, 27, 5, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 402,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/marche-aux-fleurs-venise-1907.jpg',
+          title: 'Marche aux fleurs à Venise',
+          artist: 'Ethel Carrick',
+          year: '1907',
+          rule: {
+            "monday": [ 24, 27, 5, 21 ],
+            "tuesday": [ 30, 3, 11, 27 ],
+            "wednesday": [ 29, 1, 10, 26 ],
+            "thursday": [ 28, 1, 9, 25 ],
+            "friday": [ 27, 31, 8, 24 ],
+            "saturday": [ 26, 28, 7, 23 ],
+            "sunday": [ 25, 28, 6, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 403,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/paysage-montagneux-1929.jpg',
+          title: 'Paysage montagneux',
+          artist: 'Andre Bauchant',
+          year: '1929',
+          rule: {
+            "monday": [ 25, 28, 6, 22 ],
+            "tuesday": [ 24, 27, 5, 21 ],
+            "wednesday": [ 30, 3, 11, 27 ],
+            "thursday": [ 29, 1, 10, 26 ],
+            "friday": [ 28, 1, 9, 25 ],
+            "saturday": [ 27, 31, 8, 24 ],
+            "sunday": [ 26, 28, 7, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 404,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/menina-com-gato-maria-1900.jpg',
+          title: 'Menina com Gato (Maria)',
+          artist: 'Antonio Carneiro',
+          year: '1900',
+          rule: {
+            "monday": [ 26, 28, 7, 23 ],
+            "tuesday": [ 25, 28, 6, 22 ],
+            "wednesday": [ 24, 27, 5, 21 ],
+            "thursday": [ 30, 3, 11, 27 ],
+            "friday": [ 29, 1, 10, 26 ],
+            "saturday": [ 28, 1, 9, 25 ],
+            "sunday": [ 27, 31, 8, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 405,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/visitors-from-over-the-sea-1901.jpg',
+          title: 'Visitors from over the sea',
+          artist: 'Nicholas Roerich',
+          year: '1901',
+          rule: {
+            "monday": [ 27, 31, 8, 24 ],
+            "tuesday": [ 26, 28, 7, 23 ],
+            "wednesday": [ 25, 28, 6, 22 ],
+            "thursday": [ 24, 27, 5, 21 ],
+            "friday": [ 30, 3, 11, 27 ],
+            "saturday": [ 29, 1, 10, 26 ],
+            "sunday": [ 28, 1, 9, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
