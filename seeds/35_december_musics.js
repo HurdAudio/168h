@@ -3838,6 +3838,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 214,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2518965220/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://repsych.bandcamp.com/album/isaiah-unreleased-demos-austria-psych-rock-prog-killer-tracks-1973-1977-master-piece',
+          a_string: 'Isaiah - Unreleased demos (Austria Psych Rock Prog) KILLER TRACKS 1973 - 1977 * MASTER PIECE !!! by Isaiah',
+          rule: {
+            "monday": [ 1, 9, 15, 21 ],
+            "tuesday": [ 2, 8, 14, 20 ],
+            "wednesday": [ 6, 12, 18, 24 ],
+            "thursday": [ 5, 11, 17, 22 ],
+            "saturday": [ 2, 10, 16, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 215,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1378068656/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://repsych.bandcamp.com/album/isaiah-s-t-austria-psych-rock-prog-lp-killer-1975-lp-master-piece',
+          a_string: 'Isaiah S/T (Austria Psych Rock Prog LP) KILLER 1975 LP - MASTER PIECE !!! by Isaiah',
+          rule: {
+            "monday": [ 2, 10, 16, 22 ],
+            "tuesday": [ 1, 9, 15, 21 ],
+            "wednesday": [ 2, 8, 14, 20 ],
+            "thursday": [ 6, 12, 18, 24 ],
+            "saturday": [ 5, 11, 17, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 216,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2965698237/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://repsych.bandcamp.com/album/gerhard-heinz-schamlos-soundtrack-soul-jazz-funk-psych-rock-austria-1968',
+          a_string: 'Gerhard Heinz - Schamlos Soundtrack (Soul Jazz Funk - Psych Rock - Austria 1968 ) by Gerhard Heinz',
+          rule: {
+            "monday": [ 5, 11, 17, 22 ],
+            "tuesday": [ 2, 10, 16, 22 ],
+            "wednesday": [ 1, 9, 15, 21 ],
+            "thursday": [ 2, 8, 14, 20 ],
+            "saturday": [ 6, 12, 18, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
