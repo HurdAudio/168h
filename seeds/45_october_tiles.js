@@ -858,6 +858,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FFEAE2',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 62,
+          user_id: 1,
+          theme: 'Autumnal',
+          type: 'holiday',
+          src_string: '../img/october_tiles/lampion-204067_1920.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '155%',
+          color_dark: '#070805',
+          color_medium: '#A5342B',
+          color_light: '#FDFBB5',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
