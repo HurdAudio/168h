@@ -7204,6 +7204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 361,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/41-07,Skyman.jpg',
+          title: 'Skyman Comics',
+          artist: 'Ogden Whitney',
+          year: '1941',
+          rule: {
+            "monday": [ 19, 31, 9, 15 ],
+            "tuesday": [ 18, 31, 19, 26 ],
+            "wednesday": [ 24, 6, 14, 20 ],
+            "thursday": [ 23, 5, 13, 19 ],
+            "friday": [ 22, 4, 12, 18 ],
+            "saturday": [ 21, 3, 11, 17 ],
+            "sunday": [ 20, 2, 10, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 362,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/32-12,WeirdTales.jpg',
+          title: 'Weird Tales',
+          artist: 'J. M. Wilcox',
+          year: '1933',
+          rule: {
+            "monday": [ 20, 2, 10, 16 ],
+            "tuesday": [ 19, 31, 9, 15 ],
+            "wednesday": [ 18, 31, 19, 26 ],
+            "thursday": [ 24, 6, 14, 20 ],
+            "friday": [ 23, 5, 13, 19 ],
+            "saturday": [ 22, 4, 12, 18 ],
+            "sunday": [ 21, 3, 11, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 363,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/02-00,LeopardsSpots.jpg',
+          title: 'Book Illustration',
+          artist: 'C. D. Williams',
+          year: '1902',
+          rule: {
+            "monday": [ 21, 3, 11, 17 ],
+            "tuesday": [ 20, 2, 10, 16 ],
+            "wednesday": [ 19, 31, 9, 15 ],
+            "thursday": [ 18, 31, 19, 26 ],
+            "friday": [ 24, 6, 14, 20 ],
+            "saturday": [ 23, 5, 13, 19 ],
+            "sunday": [ 22, 4, 12, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 364,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/40-03,Champion.jpg',
+          title: 'Champion Comics',
+          artist: 'Ray Willner',
+          year: '1940',
+          rule: {
+            "monday": [ 23, 5, 13, 19 ],
+            "tuesday": [ 22, 4, 12, 18 ],
+            "wednesday": [ 21, 3, 11, 17 ],
+            "thursday": [ 20, 1, 10, 16 ],
+            "friday": [ 19, 1, 20, 27 ],
+            "saturday": [ 25, 7, 15, 21 ],
+            "sunday": [ 24, 5, 14, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 365,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/31-06-13,AllSLv1.jpg',
+          title: 'All-Story Love',
+          artist: 'George Wilson',
+          year: '1931',
+          rule: {
+            "monday": [ 24, 5, 14, 20 ],
+            "tuesday": [ 23, 5, 13, 19 ],
+            "wednesday": [ 22, 4, 12, 18 ],
+            "thursday": [ 21, 3, 11, 17 ],
+            "friday": [ 20, 1, 10, 16 ],
+            "saturday": [ 19, 1, 20, 27 ],
+            "sunday": [ 25, 7, 15, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
