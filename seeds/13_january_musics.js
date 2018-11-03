@@ -5026,6 +5026,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 280,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3835770900/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://othermindsrecords.bandcamp.com/album/om-live-melody',
+          a_string: 'OM Live: Melody by Christian Wolff',
+          rule: {
+            "monday": [ 15, 22, 23, 24 ],
+            "tuesday": [ 19, 26, 27, 28 ],
+            "wednesday": [ 18, 24, 25, 27 ],
+            "thursday": [ 17, 24, 25, 26 ],
+            "saturday": [ 16, 22, 23, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 281,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=579699959/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://othermindsrecords.bandcamp.com/album/om-live-hommage',
+          a_string: 'OM Live: Hommage by Joan Jeanrenaud',
+          rule: {
+            "monday": [ 16, 22, 23, 24 ],
+            "tuesday": [ 15, 22, 23, 24 ],
+            "wednesday": [ 19, 26, 27, 28 ],
+            "thursday": [ 18, 24, 25, 27 ],
+            "saturday": [ 17, 24, 25, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 282,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3698732001/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://othermindsrecords.bandcamp.com/album/om-live-the-sands-of-time',
+          a_string: 'OM Live: The Sands of Time by Mark Grey',
+          rule: {
+            "monday": [ 17, 24, 25, 26 ],
+            "tuesday": [ 16, 22, 23, 24 ],
+            "wednesday": [ 15, 22, 23, 24 ],
+            "thursday": [ 19, 26, 27, 28 ],
+            "saturday": [ 18, 24, 25, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
