@@ -4486,6 +4486,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 250,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2560569141/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://quiettimetapes.bandcamp.com/album/love-discipline-qtt11',
+          a_string: 'Love Discipline (QTT11) by Debit',
+          rule: {
+            "monday": [ 4, 8, 13, 25 ],
+            "tuesday": [ 4, 7, 13, 24 ],
+            "wednesday": [ 2, 10, 12, 27 ],
+            "thursday": [ 6, 10, 16, 27 ],
+            "saturday": [ 5, 8, 13, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 251,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3965364011/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://touch333.bandcamp.com/album/ecce-homo',
+          a_string: 'ECCE HOMO by Ipek Gorgun',
+          rule: {
+            "monday": [ 5, 8, 13, 25 ],
+            "tuesday": [ 4, 8, 13, 25 ],
+            "wednesday": [ 4, 7, 13, 24 ],
+            "thursday": [ 2, 10, 12, 27 ],
+            "saturday": [ 6, 10, 16, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 252,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1907411715/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://lunariamusic.bandcamp.com/album/water-mind',
+          a_string: 'Water Mind by Lunaria',
+          rule: {
+            "monday": [ 7, 11, 17, 28 ],
+            "tuesday": [ 6, 9, 14, 26 ],
+            "wednesday": [ 5, 8, 14, 26 ],
+            "thursday": [ 5, 8, 14, 25 ],
+            "saturday": [ 3, 11, 13, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
