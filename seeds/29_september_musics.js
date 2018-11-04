@@ -4216,6 +4216,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 235,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1418981282/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tangents.bandcamp.com/album/new-bodies',
+          a_string: 'New Bodies by Tangents',
+          rule: {
+            "monday": [ 6, 26, 4, 27 ],
+            "tuesday": [ 6, 25, 3, 27 ],
+            "wednesday": [ 4, 24, 2, 26 ],
+            "thursday": [ 8, 28, 6, 30 ],
+            "saturday": [ 7, 27, 5, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 236,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1828057142/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://tangents.bandcamp.com/album/stents-arteries',
+          a_string: 'Stents + Arteries by Tangents',
+          rule: {
+            "monday": [ 7, 27, 5, 29 ],
+            "tuesday": [ 6, 26, 4, 27 ],
+            "wednesday": [ 6, 25, 3, 27 ],
+            "thursday": [ 4, 24, 2, 26 ],
+            "saturday": [ 8, 28, 6, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 237,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=996945265/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://umen.bandcamp.com/album/u-men',
+          a_string: 'U-Men by U-Men',
+          rule: {
+            "monday": [ 8, 28, 6, 30 ],
+            "tuesday": [ 7, 27, 5, 29 ],
+            "wednesday": [ 6, 26, 4, 27 ],
+            "thursday": [ 6, 25, 3, 27 ],
+            "saturday": [ 4, 24, 2, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
