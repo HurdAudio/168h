@@ -7504,6 +7504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 376,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/rivage-de-chablis-1988.jpg',
+          title: 'Rivage de Chablis',
+          artist: 'Sheila Hicks',
+          year: '1988',
+          rule: {
+            "monday": [ 27, 1, 8, 13 ],
+            "tuesday": [ 26, 1, 7, 12 ],
+            "wednesday": [ 25, 30, 6, 13 ],
+            "thursday": [ 1, 6, 12, 17 ],
+            "friday": [ 30, 3, 10, 16 ],
+            "saturday": [ 29, 3, 10, 14 ],
+            "sunday": [ 28, 1, 8, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 377,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/container-z-ro-1988-1.jpg',
+          title: 'Container Zéro',
+          artist: 'Jean-Pierre Raynaud',
+          year: '1988',
+          rule: {
+            "monday": [ 28, 1, 8, 13 ],
+            "tuesday": [ 27, 1, 8, 13 ],
+            "wednesday": [ 26, 1, 7, 12 ],
+            "thursday": [ 25, 30, 6, 13 ],
+            "friday": [ 1, 6, 12, 17 ],
+            "saturday": [ 30, 3, 10, 16 ],
+            "sunday": [ 29, 3, 10, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 378,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/depli-graphite-v.jpg',
+          title: 'Depli graphite (V)',
+          artist: 'Jean Degottex',
+          year: 'XX cent.',
+          rule: {
+            "monday": [ 30, 4, 11, 15 ],
+            "tuesday": [ 29, 2, 9, 14 ],
+            "wednesday": [ 28, 2, 9, 14 ],
+            "thursday": [ 27, 2, 8, 13 ],
+            "friday": [ 26, 1, 7, 14 ],
+            "saturday": [ 2, 7, 13, 18 ],
+            "sunday": [ 1, 4, 11, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 379,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/pli-x-pli-iii.jpg',
+          title: 'Pli x Pli III',
+          artist: 'Jean Degottex',
+          year: 'XX cent.',
+          rule: {
+            "monday": [ 1, 4, 11, 17 ],
+            "tuesday": [ 30, 4, 11, 15 ],
+            "wednesday": [ 29, 2, 9, 14 ],
+            "thursday": [ 28, 2, 9, 14 ],
+            "friday": [ 27, 2, 8, 13 ],
+            "saturday": [ 26, 1, 7, 14 ],
+            "sunday": [ 2, 7, 13, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 380,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/untitled-2.jpg',
+          title: 'Untitled',
+          artist: 'Jean Degottex',
+          year: 'XX cent.',
+          rule: {
+            "monday": [ 2, 7, 13, 18 ],
+            "tuesday": [ 1, 4, 11, 17 ],
+            "wednesday": [ 30, 4, 11, 15 ],
+            "thursday": [ 29, 2, 9, 14 ],
+            "friday": [ 28, 2, 9, 14 ],
+            "saturday": [ 27, 2, 8, 13 ],
+            "sunday": [ 26, 1, 7, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
