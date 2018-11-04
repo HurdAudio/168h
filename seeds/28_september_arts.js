@@ -7904,6 +7904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 396,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/pieta-2012(2).jpg',
+          title: 'Pieta',
+          artist: 'Paulo Tercio',
+          year: '2012',
+          rule: {
+            "monday": [ 13, 20, 17, 25 ],
+            "tuesday": [ 21, 28, 16, 23 ],
+            "wednesday": [ 28, 4, 22, 30 ],
+            "thursday": [ 27, 2, 21, 29 ],
+            "friday": [ 26, 2, 20, 28 ],
+            "saturday": [ 25, 1, 19, 27 ],
+            "sunday": [ 14, 30, 18, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 397,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/crimson-glory-1988.jpg',
+          title: 'Crimson Glory',
+          artist: 'Eyvind Earle',
+          year: '1988',
+          rule: {
+            "monday": [ 14, 30, 18, 27 ],
+            "tuesday": [ 13, 20, 17, 25 ],
+            "wednesday": [ 21, 28, 16, 23 ],
+            "thursday": [ 28, 4, 22, 30 ],
+            "friday": [ 27, 2, 21, 29 ],
+            "saturday": [ 26, 2, 20, 28 ],
+            "sunday": [ 25, 1, 19, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 398,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/black-metamorphosis-1950.jpg',
+          title: 'Black Metamorphosis',
+          artist: 'Willi Baumeister',
+          year: '1950',
+          rule: {
+            "monday": [ 25, 1, 19, 27 ],
+            "tuesday": [ 14, 30, 18, 27 ],
+            "wednesday": [ 13, 20, 17, 25 ],
+            "thursday": [ 21, 28, 16, 23 ],
+            "friday": [ 28, 4, 22, 30 ],
+            "saturday": [ 27, 2, 21, 29 ],
+            "sunday": [ 26, 2, 20, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 399,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/water-painting-1999.jpg',
+          title: 'Water Painting',
+          artist: 'Gary Hume',
+          year: '1999',
+          rule: {
+            "monday": [ 27, 3, 21, 29 ],
+            "tuesday": [ 26, 2, 20, 28 ],
+            "wednesday": [ 15, 1, 19, 28 ],
+            "thursday": [ 14, 21, 18, 26 ],
+            "friday": [ 22, 29, 17, 24 ],
+            "saturday": [ 29, 5, 23, 1 ],
+            "sunday": [ 28, 3, 22, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 400,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/kandy-kane-rainbow-1994.jpg',
+          title: 'Kandy Kane Rainbow',
+          artist: 'Charles Bell',
+          year: '1994',
+          rule: {
+            "monday": [ 28, 3, 22, 30 ],
+            "tuesday": [ 27, 3, 21, 29 ],
+            "wednesday": [ 26, 2, 20, 28 ],
+            "thursday": [ 15, 1, 19, 28 ],
+            "friday": [ 14, 21, 18, 26 ],
+            "saturday": [ 22, 29, 17, 24 ],
+            "sunday": [ 29, 5, 23, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
