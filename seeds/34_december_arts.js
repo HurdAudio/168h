@@ -7304,6 +7304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 366,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/50-02,GldnWRom.jpg',
+          title: 'Golden West Romance',
+          artist: 'Kirk Wilson',
+          year: '1950',
+          rule: {
+            "monday": [ 25, 7, 15, 21 ],
+            "tuesday": [ 24, 5, 14, 20 ],
+            "wednesday": [ 23, 5, 13, 19 ],
+            "thursday": [ 22, 4, 12, 18 ],
+            "friday": [ 21, 3, 11, 17 ],
+            "saturday": [ 20, 1, 10, 16 ],
+            "sunday": [ 19, 1, 20, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 367,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/18-12-23,SciAmer.jpg',
+          title: 'Scientific American',
+          artist: 'Edgar Franklin Wittmack',
+          year: '1918',
+          rule: {
+            "monday": [ 19, 1, 20, 27 ],
+            "tuesday": [ 25, 7, 15, 21 ],
+            "wednesday": [ 24, 5, 14, 20 ],
+            "thursday": [ 23, 5, 13, 19 ],
+            "friday": [ 22, 4, 12, 18 ],
+            "saturday": [ 21, 3, 11, 17 ],
+            "sunday": [ 20, 1, 10, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 368,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/29-00,Stranded.jpg',
+          title: 'Stranded',
+          artist: 'Frederick Witton',
+          year: '1929',
+          rule: {
+            "monday": [ 20, 1, 10, 16 ],
+            "tuesday": [ 19, 1, 20, 27 ],
+            "wednesday": [ 25, 7, 15, 21 ],
+            "thursday": [ 24, 5, 14, 20 ],
+            "friday": [ 23, 5, 13, 19 ],
+            "saturday": [ 22, 4, 12, 18 ],
+            "sunday": [ 21, 3, 11, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 369,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/50-06,Six-GunW.jpg',
+          title: 'Six-Gun Western',
+          artist: 'Wally Wood',
+          year: '1950',
+          rule: {
+            "monday": [ 21, 3, 11, 17 ],
+            "tuesday": [ 20, 1, 10, 16 ],
+            "wednesday": [ 19, 1, 20, 27 ],
+            "thursday": [ 25, 7, 15, 21 ],
+            "friday": [ 24, 5, 14, 20 ],
+            "saturday": [ 23, 5, 13, 19 ],
+            "sunday": [ 22, 4, 12, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 370,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/39-11-25,LoveStory.jpg',
+          title: 'Love Story',
+          artist: 'J. Clark Work',
+          year: '1939',
+          rule: {
+            "monday": [ 22, 4, 12, 18 ],
+            "tuesday": [ 21, 3, 11, 17 ],
+            "wednesday": [ 20, 1, 10, 16 ],
+            "thursday": [ 19, 1, 20, 27 ],
+            "friday": [ 25, 7, 15, 21 ],
+            "saturday": [ 24, 5, 14, 20 ],
+            "sunday": [ 23, 5, 13, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
