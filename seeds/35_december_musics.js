@@ -3892,6 +3892,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 217,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1209161622/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://repsych.bandcamp.com/album/gerhard-heinz-geissel-des-fleisches-soundtrack-scat-vocal-jazz-exotica-library-austria-1965-draft',
+          a_string: 'Gerhard Heinz ‎- Geissel Des Fleisches Soundtrack (Scat Vocal Jazz - Exotica Library - Austria 1965) (draft) by Gerhard Heinz',
+          rule: {
+            "monday": [ 7, 13, 19, 25 ],
+            "tuesday": [ 6, 12, 18, 23 ],
+            "wednesday": [ 3, 11, 17, 23 ],
+            "thursday": [ 2, 10, 16, 22 ],
+            "saturday": [ 3, 9, 15, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 218,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=44899947/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://repsych.bandcamp.com/album/mamblues-peru-latin-descarga-mambo-boogaloo-jala-jala-60s-killer',
+          a_string: 'Mamblues (PERU Latin Descarga Mambo Boogaloo Jala Jala 60&#39;s) KILLER !! by Coco Lagos y sus Orates',
+          rule: {
+            "monday": [ 3, 9, 15, 21 ],
+            "tuesday": [ 7, 13, 19, 25 ],
+            "wednesday": [ 6, 12, 18, 23 ],
+            "thursday": [ 3, 11, 17, 23 ],
+            "saturday": [ 2, 10, 16, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 219,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=255130136/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://repsych.bandcamp.com/album/tito-chicomas-boogaloo-peru-boogaloo-descarga-sax-latin-killer-ep',
+          a_string: 'Tito Chicoma&#39;s Boogaloo (PERU Boogaloo Descarga Sax Latin) KILLER EP ! by Tito Chicoma y su Orquesta',
+          rule: {
+            "monday": [ 2, 10, 16, 22 ],
+            "tuesday": [ 3, 9, 15, 21 ],
+            "wednesday": [ 7, 13, 19, 25 ],
+            "thursday": [ 6, 12, 18, 23 ],
+            "saturday": [ 3, 11, 17, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
