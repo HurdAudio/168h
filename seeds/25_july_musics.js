@@ -4432,6 +4432,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 247,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=856886061/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://hotmule.bandcamp.com/album/cosmic-sounds',
+          a_string: 'Cosmic Sounds by N&#39;Draman Blintch',
+          rule: {
+            "monday": [ 5, 7, 11, 19 ],
+            "tuesday": [ 4, 6, 10, 18 ],
+            "wednesday": [ 3, 4, 9, 17 ],
+            "thursday": [ 2, 4, 8, 16 ],
+            "saturday": [ 6, 8, 12, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 248,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2889016530/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://thepastelsmusic.bandcamp.com/album/up-for-a-bit-with-the-pastels',
+          a_string: 'Up For A Bit With The Pastels by The Pastels',
+          rule: {
+            "monday": [ 6, 8, 12, 20 ],
+            "tuesday": [ 5, 7, 11, 19 ],
+            "wednesday": [ 4, 6, 10, 18 ],
+            "thursday": [ 3, 4, 9, 17 ],
+            "saturday": [ 2, 4, 8, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 249,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1437665138/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://spinningcoin.bandcamp.com/album/permo',
+          a_string: 'Permo by Spinning Coin',
+          rule: {
+            "monday": [ 2, 4, 8, 16 ],
+            "tuesday": [ 6, 8, 12, 20 ],
+            "wednesday": [ 5, 7, 11, 19 ],
+            "thursday": [ 4, 6, 10, 18 ],
+            "saturday": [ 3, 4, 9, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
