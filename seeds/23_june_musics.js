@@ -4540,6 +4540,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 253,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3644717018/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://orphax.bandcamp.com/album/saxophone-studies',
+          a_string: 'Saxophone Studies by Orphax',
+          rule: {
+            "monday": [ 3, 11, 13, 28 ],
+            "tuesday": [ 7, 11, 17, 28 ],
+            "wednesday": [ 6, 9, 14, 26 ],
+            "thursday": [ 5, 8, 14, 26 ],
+            "saturday": [ 5, 8, 14, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 254,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3674765725/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://orphax.bandcamp.com/album/circles',
+          a_string: 'Circles by Orphax',
+          rule: {
+            "monday": [ 5, 8, 14, 25 ],
+            "tuesday": [ 3, 11, 13, 28 ],
+            "wednesday": [ 7, 11, 17, 28 ],
+            "thursday": [ 6, 9, 14, 26 ],
+            "saturday": [ 5, 8, 14, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 255,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4159491793/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://orphax.bandcamp.com/album/a-summers-end',
+          a_string: 'A Summer&#39;s End by Orphax',
+          rule: {
+            "monday": [ 5, 8, 14, 26 ],
+            "tuesday": [ 5, 8, 14, 25 ],
+            "wednesday": [ 3, 11, 13, 28 ],
+            "thursday": [ 7, 11, 17, 28 ],
+            "saturday": [ 6, 9, 14, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
