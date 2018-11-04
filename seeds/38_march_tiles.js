@@ -970,6 +970,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#EDEEF0',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 70,
+          user_id: 1,
+          theme: 'Glass',
+          type: 'saturday',
+          src_string: '../img/march_tiles/gabriele-diwald-474996-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '100%',
+          color_dark: '#35221C',
+          color_medium: '#D1B3A5',
+          color_light: '#F6F2F0',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
