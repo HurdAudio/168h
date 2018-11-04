@@ -4324,6 +4324,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 241,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=400041436/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://zoharum.bandcamp.com/album/short-scenes',
+          a_string: 'Short Scenes by Machinefabriek with Anne Bakker',
+          rule: {
+            "monday": [ 15, 23, 5, 4 ],
+            "tuesday": [ 14, 22, 4, 3 ],
+            "wednesday": [ 13, 21, 3, 2 ],
+            "thursday": [ 12, 20, 2, 1 ],
+            "saturday": [ 16, 24, 6, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 242,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1168675539/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bdta.bandcamp.com/album/of-loops',
+          a_string: 'Of Loops by Micromelancolié',
+          rule: {
+            "monday": [ 16, 24, 6, 5 ],
+            "tuesday": [ 15, 23, 5, 4 ],
+            "wednesday": [ 14, 22, 4, 3 ],
+            "thursday": [ 13, 21, 3, 2 ],
+            "saturday": [ 12, 20, 2, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 243,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=316362309/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://mozdok.bandcamp.com/album/nagawor',
+          a_string: 'Nagawor by Urok',
+          rule: {
+            "monday": [ 12, 20, 2, 1 ],
+            "tuesday": [ 16, 24, 6, 5 ],
+            "wednesday": [ 15, 23, 5, 4 ],
+            "thursday": [ 14, 22, 4, 3 ],
+            "saturday": [ 13, 21, 3, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
