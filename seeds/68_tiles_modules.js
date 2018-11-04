@@ -589,6 +589,21 @@ exports.seed = function(knex, Promise) {
           public: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 40,
+          user_author_id: 1,
+          theme: 'wood',
+          type: 'week',
+          src_string: '../img/tiles/math-83287-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '157%',
+          color_dark: '#060000',
+          color_medium: '#374A5B',
+          color_light: '#5F6F80',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
