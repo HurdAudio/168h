@@ -8104,6 +8104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 406,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/maternity-1935.jpg',
+          title: 'Maternity',
+          artist: 'Jose de Almada-Negreiros',
+          year: '1935',
+          rule: {
+            "monday": [ 29, 2, 10, 26 ],
+            "tuesday": [ 28, 1, 9, 25 ],
+            "wednesday": [ 27, 29, 8, 24 ],
+            "thursday": [ 26, 29, 7, 23 ],
+            "friday": [ 25, 28, 6, 22 ],
+            "saturday": [ 31, 4, 12, 28 ],
+            "sunday": [ 30, 2, 11, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 407,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/mountaineers-attacked-by-bears-1912.jpg',
+          title: 'Mountaineers Attacked by Bears',
+          artist: 'Henri Le Fauconnier',
+          year: '1912',
+          rule: {
+            "monday": [ 30, 2, 11, 27 ],
+            "tuesday": [ 29, 2, 10, 26 ],
+            "wednesday": [ 28, 1, 9, 25 ],
+            "thursday": [ 27, 29, 8, 24 ],
+            "friday": [ 26, 29, 7, 23 ],
+            "saturday": [ 25, 28, 6, 22 ],
+            "sunday": [ 31, 4, 12, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 408,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/the-port-in-cannes-1926.jpg',
+          title: 'The Port of Cannes',
+          artist: 'Pierre Bonnard',
+          year: '1926 - 1927',
+          rule: {
+            "monday": [ 31, 4, 12, 28 ],
+            "tuesday": [ 30, 2, 11, 27 ],
+            "wednesday": [ 29, 2, 10, 26 ],
+            "thursday": [ 28, 1, 9, 25 ],
+            "friday": [ 27, 29, 8, 24 ],
+            "saturday": [ 26, 29, 7, 23 ],
+            "sunday": [ 25, 28, 6, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 409,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/yaroslavna-s-lament-1909.jpg',
+          title: 'Yaroslavna\'s Lament',
+          artist: 'Konstantin Korovin',
+          year: '1909',
+          rule: {
+            "monday": [ 25, 28, 6, 22 ],
+            "tuesday": [ 31, 4, 12, 28 ],
+            "wednesday": [ 30, 2, 11, 27 ],
+            "thursday": [ 29, 2, 10, 26 ],
+            "friday": [ 28, 1, 9, 25 ],
+            "saturday": [ 27, 29, 8, 24 ],
+            "sunday": [ 26, 29, 7, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 410,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/still-life-with-guitar-1928.jpg',
+          title: 'Still Life with Guitar',
+          artist: 'Antonietta Raphael',
+          year: '1928',
+          rule: {
+            "monday": [ 26, 29, 7, 23 ],
+            "tuesday": [ 25, 28, 6, 22 ],
+            "wednesday": [ 31, 4, 12, 28 ],
+            "thursday": [ 30, 2, 11, 27 ],
+            "friday": [ 29, 2, 10, 26 ],
+            "saturday": [ 28, 1, 9, 25 ],
+            "sunday": [ 27, 29, 8, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
