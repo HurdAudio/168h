@@ -8504,6 +8504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 426,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/photography-untitled-miscellaneous-people-nude-female-large-open.jpg',
+          title: 'Untitled',
+          artist: 'Aleksandra Aleks',
+          year: '2012',
+          rule: {
+            "monday": [ 27, 7, 17, 25 ],
+            "tuesday": [ 6, 16, 26, 24 ],
+            "wednesday": [ 25, 5, 15, 23 ],
+            "thursday": [ 24, 4, 14, 22 ],
+            "friday": [ 30, 10, 20, 27 ],
+            "saturday": [ 29, 9, 19, 27 ],
+            "sunday": [ 28, 8, 18, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 427,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/photography-j-2-medium-format-film-people-portrait-female-large-open.jpg',
+          title: 'J. - 2',
+          artist: 'Gregor L.',
+          year: '2011',
+          rule: {
+            "monday": [ 29, 9, 19, 27 ],
+            "tuesday": [ 28, 8, 18, 26 ],
+            "wednesday": [ 7, 17, 27, 25 ],
+            "thursday": [ 26, 6, 16, 24 ],
+            "friday": [ 25, 5, 15, 23 ],
+            "saturday": [ 1, 11, 21, 28 ],
+            "sunday": [ 30, 10, 20, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 428,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/photography-untitled-medium-format-film-people-portrait-female-large-open.jpg',
+          title: 'Untitled',
+          artist: 'Wojciech Skibicki',
+          year: '2011',
+          rule: {
+            "monday": [ 30, 10, 20, 28 ],
+            "tuesday": [ 29, 9, 19, 27 ],
+            "wednesday": [ 28, 8, 18, 26 ],
+            "thursday": [ 7, 17, 27, 25 ],
+            "friday": [ 26, 6, 16, 24 ],
+            "saturday": [ 25, 5, 15, 23 ],
+            "sunday": [ 1, 11, 21, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 429,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/self-portrait-4-large-open.jpg',
+          title: 'Self-Portrait 4',
+          artist: 'Anna Shakina',
+          year: '2012',
+          rule: {
+            "monday": [ 1, 11, 21, 28 ],
+            "tuesday": [ 30, 10, 20, 28 ],
+            "wednesday": [ 29, 9, 19, 27 ],
+            "thursday": [ 28, 8, 18, 26 ],
+            "friday": [ 7, 17, 27, 25 ],
+            "saturday": [ 26, 6, 16, 24 ],
+            "sunday": [ 25, 5, 15, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 430,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/photography-amsterdam-1972-medium-format-film-people-miscellaneous-female-large-open.jpg',
+          title: 'Amsterdam 1972',
+          artist: 'Dave Orsava',
+          year: '1972',
+          rule: {
+            "monday": [ 25, 5, 15, 23 ],
+            "tuesday": [ 1, 11, 21, 28 ],
+            "wednesday": [ 30, 10, 20, 28 ],
+            "thursday": [ 29, 9, 19, 27 ],
+            "friday": [ 28, 8, 18, 26 ],
+            "saturday": [ 7, 17, 27, 25 ],
+            "sunday": [ 26, 6, 16, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
