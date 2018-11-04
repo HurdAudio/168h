@@ -7704,6 +7704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 386,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_exhibition_cows.jpg',
+          title: 'In a good shape are my beauties',
+          artist: 'O.Savostyuk, B. Uspenskii',
+          year: '1955',
+          rule: {
+            "monday": [ 29, 9, 20, 24 ],
+            "tuesday": [ 28, 8, 19, 23 ],
+            "wednesday": [ 27, 7, 18, 22 ],
+            "thursday": [ 26, 6, 17, 21 ],
+            "friday": [ 25, 5, 6, 20 ],
+            "saturday": [ 3, 4, 15, 19 ],
+            "sunday": [ 30, 10, 21, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 387,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_night_job.jpg',
+          title: 'Night does not interrupt the work!',
+          artist: 'B.Reshetnikov, A.Dobrov',
+          year: '1956',
+          rule: {
+            "monday": [ 30, 10, 21, 25 ],
+            "tuesday": [ 29, 9, 20, 24 ],
+            "wednesday": [ 28, 8, 19, 23 ],
+            "thursday": [ 27, 7, 18, 22 ],
+            "friday": [ 26, 6, 17, 21 ],
+            "saturday": [ 25, 5, 6, 20 ],
+            "sunday": [ 3, 4, 15, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 388,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_plan_completed.jpg',
+          title: 'We\'ve completed a (daily) plan...How about you?',
+          artist: 'O.Savostyuk',
+          year: '1954',
+          rule: {
+            "monday": [ 3, 4, 15, 19 ],
+            "tuesday": [ 30, 10, 21, 25 ],
+            "wednesday": [ 29, 9, 20, 24 ],
+            "thursday": [ 28, 8, 19, 23 ],
+            "friday": [ 27, 7, 18, 22 ],
+            "saturday": [ 26, 6, 17, 21 ],
+            "sunday": [ 25, 5, 6, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 389,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_new_lands.jpg',
+          title: 'The whole family to the new lands',
+          artist: 'V. Govorkov',
+          year: '1957',
+          rule: {
+            "monday": [ 25, 5, 6, 20 ],
+            "tuesday": [ 3, 4, 15, 19 ],
+            "wednesday": [ 30, 10, 21, 25 ],
+            "thursday": [ 29, 9, 20, 24 ],
+            "friday": [ 28, 8, 19, 23 ],
+            "saturday": [ 27, 7, 18, 22 ],
+            "sunday": [ 26, 6, 17, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 390,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_happy_customers.jpg',
+          title: 'Your best results - happy customers!',
+          artist: 'V.Ivanov,O. Burova',
+          year: '1955',
+          rule: {
+            "monday": [ 26, 6, 17, 21 ],
+            "tuesday": [ 25, 5, 6, 20 ],
+            "wednesday": [ 3, 4, 15, 19 ],
+            "thursday": [ 30, 10, 21, 25 ],
+            "friday": [ 29, 9, 20, 24 ],
+            "saturday": [ 28, 8, 19, 23 ],
+            "sunday": [ 27, 7, 18, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
