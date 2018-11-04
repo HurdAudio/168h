@@ -1517,7 +1517,7 @@
             ++sequenceIndex;
           }
 
-          function runTheTimer(sequence) {
+          function runTheTimer(sequence, time) {
             if (cancelled) {
               runTheTimer([]);
               return;
@@ -1536,12 +1536,14 @@
               //Start of sequence, reset display values
               countdownClock.setAttribute("style", "color: #000000;");
               pomoFocusCounter.innerHTML = sequence[0].interval + sequence[0].pomo;
+              sequence[0].timeStamp = new Date(time);
               spokenOutput('Focus now.');
             }
             if ((sequence[0].interval === 'Break: ') && (sequence[0].timer === breakTimerValue)) {
               //Start of Sequence, reset display values
               countdownClock.setAttribute("style", "color: #000000;");
               pomoFocusCounter.innerHTML = sequence[0].interval + sequence[0].pomo;
+              sequence[0].timeStamp = new Date(time);
               spokenOutput('Break time.');
             }
             countdownClock.innerHTML = getClockString(sequence[0].timer);
@@ -1565,8 +1567,23 @@
               spokenOutput('One... and ');
             }
             if (!paused) {
-              --sequence[0].timer;
+              let current = new Date();
+              let stamp = new Date(sequence[0].timeStamp);
+              sequence[0].timeStamp = current;
+              let difference = (current.getTime() - stamp.getTime());
+              if (difference > 100) {
+                console.log(difference);
+                sequence[0].timer -= Math.floor(difference/10);
+                if (sequence[0].timer < 0) {
+                  runTheTimer(sequence.slice(1));
+                  return;
+                }
+              } else {
+                --sequence[0].timer;
+              }
             }
+            let pauserTime = new Date();
+            sequence[0].timeStamp = pauserTime;
             setTimeout(()=>{
               if (sequence[0].timer === 0) {
                 runTheTimer(sequence.slice(1));
@@ -1576,7 +1593,9 @@
             }, 10);
           }
 
-          runTheTimer(pomoSequencer);
+          let currentTime = new Date();
+
+          runTheTimer(pomoSequencer, currentTime);
 
 
 
