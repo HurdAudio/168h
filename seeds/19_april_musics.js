@@ -4756,6 +4756,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 265,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=83375248/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://leapoffaith1.bandcamp.com/album/cloud-taxonomies-double-live-album',
+          a_string: 'Cloud Taxonomies (double live album) by Leap of Faith Orchestra &amp; Sub-Units',
+          rule: {
+            "monday": [ 9, 17, 29, 4 ],
+            "tuesday": [ 8, 16, 27, 3 ],
+            "wednesday": [ 7, 15, 27, 2 ],
+            "thursday": [ 11, 19, 1, 6 ],
+            "saturday": [ 10, 18, 30, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 266,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1000152922/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://vandermark1.bandcamp.com/album/side-a-in-the-abstract',
+          a_string: 'Side A: In the Abstract by Ken Vandermark',
+          rule: {
+            "monday": [ 11, 19, 1, 6 ],
+            "tuesday": [ 10, 18, 30, 5 ],
+            "wednesday": [ 9, 17, 28, 4 ],
+            "thursday": [ 8, 16, 28, 3 ],
+            "saturday": [ 12, 20, 2, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 267,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3988965391/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://motiansickness.bandcamp.com/album/alternating-current',
+          a_string: 'Alternating Current by Jeff Cosgrove - Matthew Shipp - William Parker',
+          rule: {
+            "monday": [ 12, 20, 2, 7 ],
+            "tuesday": [ 11, 19, 1, 6 ],
+            "wednesday": [ 10, 18, 30, 5 ],
+            "thursday": [ 9, 17, 28, 4 ],
+            "saturday": [ 8, 16, 28, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
