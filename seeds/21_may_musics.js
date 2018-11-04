@@ -4648,6 +4648,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 259,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1920900259/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bocian.bandcamp.com/album/the-oslo-tapes',
+          a_string: 'The Oslo Tapes by Mats Gustafsson &amp; Lasse Marhaug',
+          rule: {
+            "monday": [ 8, 14, 21, 3 ],
+            "tuesday": [ 7, 13, 20, 2 ],
+            "wednesday": [ 6, 12, 19, 1 ],
+            "thursday": [ 10, 17, 23, 5 ],
+            "saturday": [ 9, 15, 22, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 260,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=492441560/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bocian.bandcamp.com/album/daturas',
+          a_string: 'Daturas by Rogelio Sosa',
+          rule: {
+            "monday": [ 9, 15, 22, 4 ],
+            "tuesday": [ 8, 14, 21, 3 ],
+            "wednesday": [ 7, 13, 20, 2 ],
+            "thursday": [ 6, 12, 19, 1 ],
+            "saturday": [ 10, 17, 23, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 261,
+          user_id: 1,
+          theme: 'Avant Garde/New Music',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=524045785/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bocian.bandcamp.com/album/sin-gas',
+          a_string: 'Sin Gas by Paal Nilssen-Love &amp; Mats Gustafsson',
+          rule: {
+            "monday": [ 10, 17, 23, 5 ],
+            "tuesday": [ 9, 15, 22, 4 ],
+            "wednesday": [ 8, 14, 21, 3 ],
+            "thursday": [ 7, 13, 20, 2 ],
+            "saturday": [ 6, 12, 19, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
