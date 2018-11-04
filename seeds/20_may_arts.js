@@ -8704,6 +8704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 436,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/kolejka-trwa-1856.jpg',
+          title: 'Queue',
+          artist: 'Andrzej Wróblewski',
+          year: '1956',
+          rule: {
+            "monday": [ 30, 11, 21, 29 ],
+            "tuesday": [ 30, 10, 19, 29 ],
+            "wednesday": [ 28, 7, 15, 17 ],
+            "thursday": [ 25, 5, 15, 4 ],
+            "friday": [ 24, 4, 14, 23 ],
+            "saturday": [ 22, 1, 11, 19 ],
+            "sunday": [ 20, 29, 10, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 437,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/matki-1955.jpg',
+          title: 'Mothers',
+          artist: 'Andrzej Wróblewski',
+          year: '1955',
+          rule: {
+            "monday": [ 20, 29, 10, 19 ],
+            "tuesday": [ 30, 11, 21, 29 ],
+            "wednesday": [ 30, 10, 19, 29 ],
+            "thursday": [ 28, 7, 15, 17 ],
+            "friday": [ 25, 5, 15, 4 ],
+            "saturday": [ 24, 4, 14, 23 ],
+            "sunday": [ 22, 1, 11, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 438,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/pranie-1955.jpg',
+          title: 'Washing',
+          artist: 'Andrzej Wróblewski',
+          year: '1955',
+          rule: {
+            "monday": [ 22, 1, 11, 19 ],
+            "tuesday": [ 20, 29, 10, 19 ],
+            "wednesday": [ 30, 11, 21, 29 ],
+            "thursday": [ 30, 10, 19, 29 ],
+            "friday": [ 28, 7, 15, 17 ],
+            "saturday": [ 25, 5, 15, 4 ],
+            "sunday": [ 24, 4, 14, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 439,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/rozstrzelanie-z-ch-opczykiem-1949.jpg',
+          title: 'Execution V',
+          artist: 'Andrzej Wróblewski',
+          year: '1949',
+          rule: {
+            "monday": [ 24, 4, 14, 23 ],
+            "tuesday": [ 22, 1, 11, 19 ],
+            "wednesday": [ 20, 29, 10, 19 ],
+            "thursday": [ 30, 11, 21, 29 ],
+            "friday": [ 30, 10, 19, 29 ],
+            "saturday": [ 28, 7, 15, 17 ],
+            "sunday": [ 25, 5, 15, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 440,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/rozstrzelanie-surrealistyczne-1949.jpg',
+          title: 'Execution',
+          artist: 'Andrzej Wróblewski',
+          year: '1949',
+          rule: {
+            "monday": [ 25, 5, 15, 4 ],
+            "tuesday": [ 24, 4, 14, 23 ],
+            "wednesday": [ 22, 1, 11, 19 ],
+            "thursday": [ 20, 29, 10, 19 ],
+            "friday": [ 30, 11, 21, 29 ],
+            "saturday": [ 30, 10, 19, 29 ],
+            "sunday": [ 28, 7, 15, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
