@@ -8304,6 +8304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 416,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/hesp-ride.jpg',
+          title: 'Hespéride',
+          artist: 'Andre Masson',
+          year: '1947',
+          rule: {
+            "monday": [ 25, 5, 16, 27 ],
+            "tuesday": [ 31, 11, 22, 1 ],
+            "wednesday": [ 30, 8, 21, 1 ],
+            "thursday": [ 28, 8, 20, 31 ],
+            "friday": [ 28, 8, 19, 20 ],
+            "saturday": [ 27, 7, 17, 19 ],
+            "sunday": [ 26, 6, 17, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 417,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/interieur-d-un-bar-1917.jpg',
+          title: 'Interieur d\'un bar',
+          artist: 'Jean Hugo',
+          year: '1917',
+          rule: {
+            "monday": [ 26, 6, 17, 18 ],
+            "tuesday": [ 25, 5, 16, 27 ],
+            "wednesday": [ 31, 11, 22, 1 ],
+            "thursday": [ 30, 8, 21, 1 ],
+            "friday": [ 28, 8, 20, 31 ],
+            "saturday": [ 28, 8, 19, 20 ],
+            "sunday": [ 27, 7, 17, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 418,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/compact-vanities.jpg',
+          title: 'Compact Vanities',
+          artist: 'Erte',
+          year: '?',
+          rule: {
+            "monday": [ 27, 7, 17, 19 ],
+            "tuesday": [ 26, 6, 17, 18 ],
+            "wednesday": [ 25, 5, 16, 27 ],
+            "thursday": [ 31, 11, 22, 1 ],
+            "friday": [ 30, 8, 21, 1 ],
+            "saturday": [ 28, 8, 20, 31 ],
+            "sunday": [ 28, 8, 19, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 419,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/inspiration.jpg',
+          title: 'Inspiration',
+          artist: 'Ossip Zadkine',
+          year: '1955',
+          rule: {
+            "monday": [ 28, 8, 19, 20 ],
+            "tuesday": [ 27, 7, 17, 19 ],
+            "wednesday": [ 26, 6, 17, 18 ],
+            "thursday": [ 25, 5, 16, 27 ],
+            "friday": [ 31, 11, 22, 1 ],
+            "saturday": [ 30, 8, 21, 1 ],
+            "sunday": [ 28, 8, 20, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 420,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/prometheus-1946.jpg',
+          title: 'Prometheus',
+          artist: 'Jean Cocteau',
+          year: '1946',
+          rule: {
+            "monday": [ 29, 9, 21, 1 ],
+            "tuesday": [ 29, 9, 20, 21 ],
+            "wednesday": [ 28, 8, 18, 20 ],
+            "thursday": [ 27, 7, 18, 19 ],
+            "friday": [ 26, 6, 17, 28 ],
+            "saturday": [ 1, 12, 23, 2 ],
+            "sunday": [ 31, 9, 22, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
