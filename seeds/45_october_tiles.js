@@ -872,6 +872,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FDFBB5',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 63,
+          user_id: 1,
+          theme: 'Autumnal',
+          type: 'week',
+          src_string: '../img/october_tiles/krzysztof-niewolny-1088739-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '160%',
+          color_dark: '#140109',
+          color_medium: '#F25400',
+          color_light: '#FFE403',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
