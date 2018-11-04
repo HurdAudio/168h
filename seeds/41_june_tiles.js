@@ -928,6 +928,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#DCDFCF',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 67,
+          user_id: 1,
+          theme: 'Light',
+          type: 'holiday',
+          src_string: '../img/june_tiles/weiwei-hsu-763729-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '100%',
+          color_dark: '#00272B',
+          color_medium: '#069599',
+          color_light: '#E4FFFF',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
