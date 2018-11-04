@@ -844,6 +844,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#EAEAE8',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 61,
+          user_id: 1,
+          theme: 'Snow',
+          type: 'sunday',
+          src_string: '../img/december_tiles/heping-270019-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '145%',
+          color_dark: '#060F0C',
+          color_medium: '#F4A41B',
+          color_light: '#FFDF21',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
