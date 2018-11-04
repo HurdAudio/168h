@@ -4000,6 +4000,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 223,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4066333948/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://mrbongo.bandcamp.com/album/simigwa',
+          a_string: 'Simigwa by Gyedu-Blay Ambolley',
+          rule: {
+            "monday": [ 3, 14, 25, 29 ],
+            "tuesday": [ 2, 13, 24, 28 ],
+            "wednesday": [ 1, 12, 23, 27 ],
+            "thursday": [ 30, 11, 22, 24 ],
+            "saturday": [ 29, 10, 21, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 224,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=570097741/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ethiopiquesseries.bandcamp.com/album/asnake-gebreyes-ahadu',
+          a_string: 'Asnake Gebreyes - Ahadu by Asnake Gebreyes',
+          rule: {
+            "monday": [ 30, 11, 22, 4 ],
+            "tuesday": [ 4, 15, 26, 30 ],
+            "wednesday": [ 3, 14, 25, 29 ],
+            "thursday": [ 2, 13, 24, 28 ],
+            "saturday": [ 1, 12, 23, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 225,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3136582805/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://zerfiekebede.bandcamp.com/album/selene-yemimaldew',
+          a_string: 'ስለእኔ የሚማልደው ኢዩሱስ ነው Selene Yemimaldew by Zerfie Kebede',
+          rule: {
+            "monday": [ 1, 12, 23, 25 ],
+            "tuesday": [ 30, 11, 22, 4 ],
+            "wednesday": [ 4, 15, 26, 30 ],
+            "thursday": [ 3, 14, 25, 29 ],
+            "saturday": [ 2, 13, 24, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
