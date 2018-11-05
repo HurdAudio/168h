@@ -4972,6 +4972,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 277,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2381473554/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://firehouse12records.com/album/pillars',
+          a_string: 'Pillars by Tyshawn Sorey',
+          rule: {
+            "monday": [ 29, 23, 25, 2 ],
+            "tuesday": [ 12, 16, 18, 22 ],
+            "wednesday": [ 15, 18, 20, 22 ],
+            "thursday": [ 26, 20, 22, 24 ],
+            "saturday": [ 28, 22, 24, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 278,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3308831432/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://firehouse12records.com/album/3-compositions-eemhm-2011',
+          a_string: '3 Compositions (EEMHM) 2011 by Anthony Braxton',
+          rule: {
+            "monday": [ 28, 22, 24, 1 ],
+            "tuesday": [ 29, 23, 25, 2 ],
+            "wednesday": [ 12, 16, 18, 22 ],
+            "thursday": [ 15, 18, 20, 22 ],
+            "saturday": [ 26, 20, 22, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 279,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2605840089/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://newbraxtonhouse.bandcamp.com/album/syntactical-gtm-choir-nyc-2011',
+          a_string: 'Syntactical GTM Choir (NYC) 2011 by Anthony Braxton',
+          rule: {
+            "monday": [ 26, 20, 22, 24 ],
+            "tuesday": [ 28, 22, 24, 1 ],
+            "wednesday": [ 29, 23, 25, 2 ],
+            "thursday": [ 12, 16, 18, 22 ],
+            "saturday": [ 15, 18, 20, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
