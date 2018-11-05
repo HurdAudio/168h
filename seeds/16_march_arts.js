@@ -9100,7 +9100,107 @@ exports.seed = function(knex, Promise) {
             "thursday": [ 29, 8, 17, 26 ],
             "friday": [ 4, 13, 23, 31 ],
             "saturday": [ 3, 13, 21, 31 ],
-            "sunday": [ 31, 102, 20, 30 ]
+            "sunday": [ 31, 12, 20, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 456,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/k8iiy3rglfc.jpg',
+          title: 'K8IIY3rGlfc',
+          artist: 'Marianne von Werefkin',
+          year: '?',
+          rule: {
+            "monday": [ 31, 12, 20, 30 ],
+            "tuesday": [ 1, 11, 19, 29 ],
+            "wednesday": [ 31, 11, 18, 28 ],
+            "thursday": [ 30, 9, 17, 27 ],
+            "friday": [ 29, 8, 17, 26 ],
+            "saturday": [ 4, 13, 23, 31 ],
+            "sunday": [ 3, 13, 21, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 457,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/svanen-1914.jpg',
+          title: 'Svanen',
+          artist: 'Hilma af Klint',
+          year: '1914',
+          rule: {
+            "monday": [ 3, 13, 21, 31 ],
+            "tuesday": [ 31, 12, 20, 30 ],
+            "wednesday": [ 1, 11, 19, 29 ],
+            "thursday": [ 31, 11, 18, 28 ],
+            "friday": [ 30, 9, 17, 27 ],
+            "saturday": [ 29, 8, 17, 26 ],
+            "sunday": [ 4, 13, 23, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 458,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/the-little-hills-1.jpg',
+          title: 'The Little Hills',
+          artist: 'Margaret Macdonald',
+          year: 'c.1914 - c.1915',
+          rule: {
+            "monday": [ 4, 13, 23, 31 ],
+            "tuesday": [ 3, 13, 21, 31 ],
+            "wednesday": [ 31, 12, 20, 30 ],
+            "thursday": [ 1, 11, 19, 29 ],
+            "friday": [ 31, 11, 18, 28 ],
+            "saturday": [ 30, 9, 17, 27 ],
+            "sunday": [ 29, 8, 17, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 459,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/yvette-guilbert-2.jpg',
+          title: 'Yvette Guilbert',
+          artist: 'Alice Boughton',
+          year: '?',
+          rule: {
+            "monday": [ 29, 8, 17, 26 ],
+            "tuesday": [ 4, 13, 23, 31 ],
+            "wednesday": [ 3, 13, 21, 31 ],
+            "thursday": [ 31, 12, 20, 30 ],
+            "friday": [ 1, 11, 19, 29 ],
+            "saturday": [ 31, 11, 18, 28 ],
+            "sunday": [ 30, 9, 17, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 460,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/059-anne-w-brigman-c-1915.jpg',
+          title: 'Erotische Fotografie',
+          artist: 'Anne Brigman',
+          year: 'c.1915',
+          rule: {
+            "monday": [ 30, 9, 17, 27 ],
+            "tuesday": [ 29, 8, 17, 26 ],
+            "wednesday": [ 4, 13, 23, 31 ],
+            "thursday": [ 3, 13, 21, 31 ],
+            "friday": [ 31, 12, 20, 30 ],
+            "saturday": [ 1, 11, 19, 29 ],
+            "sunday": [ 31, 11, 18, 28 ]
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
