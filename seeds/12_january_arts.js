@@ -9504,6 +9504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 476,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/ohne-titel-gleiche-dreiecke-1967.jpg',
+          title: 'Ohne Titel (Gleiche Dreiecke)',
+          artist: 'Almir Mavignier',
+          year: '1967',
+          rule: {
+            "monday": [ 14, 15, 6, 10 ],
+            "tuesday": [ 17, 19, 20, 22 ],
+            "wednesday": [ 19, 21, 25, 28 ],
+            "thursday": [ 21, 23, 24, 25 ],
+            "friday": [ 6, 7, 18, 10 ],
+            "saturday": [ 9, 11, 3, 23 ],
+            "sunday": [ 14, 12, 4, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 477,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/deseret-1959.jpg',
+          title: 'Deseret',
+          artist: 'Theodoros Stamos',
+          year: '1959',
+          rule: {
+            "monday": [ 14, 12, 4, 7 ],
+            "tuesday": [ 14, 15, 6, 10 ],
+            "wednesday": [ 17, 19, 20, 22 ],
+            "thursday": [ 19, 21, 25, 28 ],
+            "friday": [ 21, 23, 24, 25 ],
+            "saturday": [ 6, 7, 18, 10 ],
+            "sunday": [ 9, 11, 3, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 478,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/pink-mirror-1969.jpg',
+          title: 'Pink Mirror',
+          artist: 'Ronald Davis',
+          year: '1969',
+          rule: {
+            "monday": [ 9, 11, 3, 23 ],
+            "tuesday": [ 14, 12, 4, 7 ],
+            "wednesday": [ 14, 15, 6, 10 ],
+            "thursday": [ 17, 19, 20, 22 ],
+            "friday": [ 19, 21, 25, 28 ],
+            "saturday": [ 21, 23, 24, 25 ],
+            "sunday": [ 6, 7, 18, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 479,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/paris-green-1990.jpg',
+          title: 'Paris Green',
+          artist: 'Doug Ohlson',
+          year: '1990',
+          rule: {
+            "monday": [ 6, 7, 18, 10 ],
+            "tuesday": [ 9, 11, 3, 23 ],
+            "wednesday": [ 14, 12, 4, 7 ],
+            "thursday": [ 14, 15, 6, 10 ],
+            "friday": [ 17, 19, 20, 22 ],
+            "saturday": [ 19, 21, 25, 28 ],
+            "sunday": [ 21, 23, 24, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 480,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/unknown-title-7.jpg',
+          title: 'unknown title',
+          artist: 'Luigi Guardigli',
+          year: '?',
+          rule: {
+            "monday": [ 21, 23, 24, 25 ],
+            "tuesday": [ 6, 7, 18, 10 ],
+            "wednesday": [ 9, 11, 3, 23 ],
+            "thursday": [ 14, 12, 4, 7 ],
+            "friday": [ 14, 15, 6, 10 ],
+            "saturday": [ 17, 19, 20, 22 ],
+            "sunday": [ 19, 21, 25, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
