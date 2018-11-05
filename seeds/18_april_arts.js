@@ -8904,6 +8904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 446,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/st-louis-cardinals-brick-wall-joe-hamilton.jpg',
+          title: 'St Louis Cardinals Brick Wall',
+          artist: 'Joe Hamilton',
+          year: '2016',
+          rule: {
+            "monday": [ 1, 5, 20, 18 ],
+            "tuesday": [ 28, 4, 10, 16 ],
+            "wednesday": [ 29, 4, 10, 16 ],
+            "thursday": [ 28, 3, 9, 15 ],
+            "friday": [ 3, 9, 14, 21 ],
+            "saturday": [ 17, 7, 13, 19 ],
+            "sunday": [ 2, 5, 13, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 447,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/main_2-St-Louis-Cardinals-Stadium-Unique-Original-Antique-Dictionary-Page-Art-Print-PristineAuction.com.jpg',
+          title: 'St. Louis Cardinals Stadium Unique Original Antique Dictionary Page Art Print',
+          artist: 'artist unknown',
+          year: '?',
+          rule: {
+            "monday": [ 2, 5, 13, 19 ],
+            "tuesday": [ 1, 5, 20, 18 ],
+            "wednesday": [ 28, 4, 10, 16 ],
+            "thursday": [ 29, 4, 10, 16 ],
+            "friday": [ 28, 3, 9, 15 ],
+            "saturday": [ 3, 9, 14, 21 ],
+            "sunday": [ 17, 7, 13, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 448,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/St_Louis_st21_large.jpg',
+          title: 'St. Louis Cardinals Baseball Tradition',
+          artist: 'unknown artist',
+          year: '?',
+          rule: {
+            "monday": [ 18, 8, 14, 20 ],
+            "tuesday": [ 3, 6, 14, 20 ],
+            "wednesday": [ 2, 6, 21, 19 ],
+            "thursday": [ 29, 5, 11, 17 ],
+            "friday": [ 30, 5, 11, 17 ],
+            "saturday": [ 29, 4, 10, 16 ],
+            "sunday": [ 4, 10, 15, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 449,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/saint-louis-cardinals-handmade-distressed-wood-sign-vintage-art-weathered-recycled-baseball-home-decor-wall-art-man-cave-blue-red-59b7325a4.jpg',
+          title: 'Saint Louis Cardinals Handmade Distressed Wood Sign',
+          artist: 'unknown artist',
+          year: '?',
+          rule: {
+            "monday": [ 4, 10, 15, 22 ],
+            "tuesday": [ 18, 8, 14, 20 ],
+            "wednesday": [ 3, 6, 14, 20 ],
+            "thursday": [ 2, 6, 21, 19 ],
+            "friday": [ 29, 5, 11, 17 ],
+            "saturday": [ 30, 5, 11, 17 ],
+            "sunday": [ 29, 4, 10, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 450,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/x354-q80.jpg',
+          title: 'Saint Louis Cardinals Ticket Stub',
+          artist: 'artist unknown',
+          year: '?',
+          rule: {
+            "monday": [ 29, 4, 10, 16 ],
+            "tuesday": [ 4, 10, 15, 22 ],
+            "wednesday": [ 18, 8, 14, 20 ],
+            "thursday": [ 3, 6, 14, 20 ],
+            "friday": [ 2, 6, 21, 19 ],
+            "saturday": [ 29, 5, 11, 17 ],
+            "sunday": [ 30, 5, 11, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
