@@ -5080,6 +5080,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 283,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3337622640/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://othermindsrecords.bandcamp.com/album/a-sweeter-music',
+          a_string: 'A Sweeter Music by Sarah Cahill',
+          rule: {
+            "monday": [ 18, 24, 25, 27 ],
+            "tuesday": [ 17, 24, 25, 26 ],
+            "wednesday": [ 16, 22, 23, 24 ],
+            "thursday": [ 15, 22, 23, 24 ],
+            "saturday": [ 19, 26, 27, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 284,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=792175340/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://othermindsrecords.bandcamp.com/album/scenes-from-a-new-music-s-ance',
+          a_string: 'Scenes from a New Music Séance by Kate Stenberg and Eva-Maria Zimmermann',
+          rule: {
+            "monday": [ 19, 26, 27, 28 ],
+            "tuesday": [ 18, 24, 25, 27 ],
+            "wednesday": [ 17, 24, 25, 26 ],
+            "thursday": [ 16, 22, 23, 24 ],
+            "saturday": [ 15, 22, 23, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 285,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1051281039/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://othermindsrecords.bandcamp.com/album/since-when-has-the-bright-moon-existed',
+          a_string: 'Since When Has the Bright Moon Existed? by Kui Dong',
+          rule: {
+            "monday": [ 15, 22, 23, 24 ],
+            "tuesday": [ 19, 26, 27, 28 ],
+            "wednesday": [ 18, 24, 25, 27 ],
+            "thursday": [ 17, 24, 25, 26 ],
+            "saturday": [ 16, 22, 23, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
