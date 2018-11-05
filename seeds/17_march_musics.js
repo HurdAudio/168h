@@ -4864,6 +4864,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 271,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2561797139/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://elenasetien.bandcamp.com/album/another-kind-of-revolution',
+          a_string: 'Another Kind Of Revolution by Elena Setien',
+          rule: {
+            "monday": [ 12, 18, 24, 1 ],
+            "tuesday": [ 11, 17, 23, 1 ],
+            "wednesday": [ 9, 16, 22, 30 ],
+            "thursday": [ 9, 15, 21, 29 ],
+            "saturday": [ 13, 19, 25, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 272,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=75664521/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://firehouse12records.com/album/12-from-25',
+          a_string: '12 From 25 by Myra Melford',
+          rule: {
+            "monday": [ 13, 19, 25, 2 ],
+            "tuesday": [ 12, 18, 24, 1 ],
+            "wednesday": [ 11, 17, 23, 1 ],
+            "thursday": [ 9, 16, 22, 30 ],
+            "saturday": [ 9, 15, 21, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 273,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=430151978/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://firehouse12records.com/album/the-other-side-of-air',
+          a_string: 'The Other Side Of Air by Myra Melford&#39;s Snowy Egret',
+          rule: {
+            "monday": [ 10, 16, 22, 30 ],
+            "tuesday": [ 14, 20, 26, 3 ],
+            "wednesday": [ 13, 19, 25, 2 ],
+            "thursday": [ 12, 18, 24, 2 ],
+            "saturday": [ 10, 17, 23, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
