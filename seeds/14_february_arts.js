@@ -9304,6 +9304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 466,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/ormes_torchystogs1950.jpg',
+          title: 'America Comes Alive',
+          artist: 'Jackie Ormes',
+          year: 'xx cent.',
+          rule: {
+            "monday": [ 18, 26, 5, 15 ],
+            "tuesday": [ 18, 28, 24, 14 ],
+            "wednesday": [ 8, 16, 24, 3 ],
+            "thursday": [ 9, 18, 26, 5 ],
+            "friday": [ 15, 20, 26, 7 ],
+            "saturday": [ 14, 22, 1, 9 ],
+            "sunday": [ 16, 26, 3, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 467,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/Arts-atw-100616-1-1240x825.jpg',
+          title: 'Case in Point',
+          artist: 'John Outterbridge',
+          year: '?',
+          rule: {
+            "monday": [ 16, 26, 3, 9 ],
+            "tuesday": [ 18, 26, 5, 15 ],
+            "wednesday": [ 18, 28, 24, 14 ],
+            "thursday": [ 8, 16, 24, 3 ],
+            "friday": [ 9, 18, 26, 5 ],
+            "saturday": [ 15, 20, 26, 7 ],
+            "sunday": [ 14, 22, 1, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 468,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/BtbRzLNCMAEZJOw.jpg',
+          title: 'New Jemima',
+          artist: 'Joe Overstreet',
+          year: '?',
+          rule: {
+            "monday": [ 14, 22, 1, 9 ],
+            "tuesday": [ 16, 26, 3, 9 ],
+            "wednesday": [ 18, 26, 5, 15 ],
+            "thursday": [ 18, 28, 24, 14 ],
+            "friday": [ 8, 16, 24, 3 ],
+            "saturday": [ 9, 18, 26, 5 ],
+            "sunday": [ 15, 20, 26, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 469,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/gordon-parks-foam-museum.jpg',
+          title: 'The Invisible Man',
+          artist: 'Gordon Parks',
+          year: '1952',
+          rule: {
+            "monday": [ 16, 21, 27, 8 ],
+            "tuesday": [ 15, 23, 2, 10 ],
+            "wednesday": [ 17, 27, 4, 10 ],
+            "thursday": [ 19, 27, 6, 16 ],
+            "friday": [ 19, 29, 25, 15 ],
+            "saturday": [ 9, 17, 25, 4 ],
+            "sunday": [ 10, 19, 27, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 470,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/Tapplette-Pedescleaux-Occupy-29x34jpg.jpg',
+          title: 'Occupy Wall Street',
+          artist: 'Cecelia Pedescleaux',
+          year: '2009',
+          rule: {
+            "monday": [ 10, 19, 27, 6 ],
+            "tuesday": [ 16, 21, 27, 8 ],
+            "wednesday": [ 15, 23, 2, 10 ],
+            "thursday": [ 17, 27, 4, 10 ],
+            "friday": [ 19, 27, 6, 16 ],
+            "saturday": [ 19, 29, 25, 15 ],
+            "sunday": [ 9, 17, 25, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
