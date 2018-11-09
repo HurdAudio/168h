@@ -5667,11 +5667,11 @@
                 <br><h3>{{task.shareeName}} has declined this task |  {{task.updatedClean}}.</h3>
               </div>
 
-              <a href=""><h3>comment</h3></a>
 
               <div class="holidayShareCommentsBar">
 
                 <h1>Comments:</h1>
+                <a class="btn" href="#" ng-click="$ctrl.addNewTaskShareComment(task.id)" id="newTaskShareCommentButton{{task.id}}">add</a>
               </div>
               <div class="occasionShareComments">
                 <main ng-repeat="comment in task.comments | orderBy : $ctrl.sortBy">

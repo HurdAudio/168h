@@ -284,6 +284,43 @@
       vm.userEditObservanceShareComment = userEditObservanceShareComment;
       vm.userEditObservanceShareCommentCompleted = userEditObservanceShareCommentCompleted;
       vm.deleteObservanceShare = deleteObservanceShare;
+      vm.addNewTaskShareComment = addNewTaskShareComment;
+
+      function addNewTaskShareComment(taskId) {
+        let cDate = new Date();
+        let index;
+        let subObj = {
+          user_id: currentUserId,
+          task_share: taskId,
+          comment: ''
+        };
+        $http.post('/task_share_comments', subObj)
+        .then(commentData => {
+          let comment = commentData.data[0];
+          for (let i = 0; i < vm.activeTaskShares.length; i++) {
+            if (vm.activeTaskShares[i].id === taskId) {
+              index = i;
+            }
+          }
+
+          if (vm.activeTaskShares[index].comments === undefined) {
+            vm.activeTaskShares[index].comments = [];
+          }
+          vm.activeTaskShares[index].comments[vm.activeTaskShares[index].comments.length] = {
+            id: comment.id,
+            comment: comment.comment,
+            cleanDate: cleanDateHoliday(comment.created_at) + ' at ' +  cDate.toLocaleTimeString('en-GB'),
+            updated_at: comment.updated_at,
+            created_at: comment.created_at
+          };
+          retrieveTaskCommenterProfileInfo(comment.user_id, index, (vm.activeTaskShares[index].comments.length - 1));
+
+          setTimeout(() => {
+            userEditTaskShareComment(comment.id);
+            document.getElementById('thisIsTheTaskShareCommentEditor' + comment.id).focus();
+          }, 100);
+        });
+      }
 
       function deleteObservanceShare(shareId) {
         let index;
@@ -913,21 +950,48 @@
         });
       }
 
+      function purgeIndividualEmptyTaskComment(commentId) {
+        $http.delete(`/task_share_comments/${commentId}`)
+        .then(purgedData => {
+          let purged = purgedData.data;
+          console.log(purged);
+        });
+      }
+
+      function purgeEmptyTaskComments() {
+        $http.get(`/task_share_commentsbyuser/${currentUserId}`)
+        .then(commentsData => {
+          let comments = commentsData.data;
+          for (let i = 0; i < comments.length; i++) {
+            if (comments[i].comment === '') {
+              purgeIndividualEmptyTaskComment(comments[i].id);
+            }
+          }
+        });
+      }
+
       function userEditTaskShareCommentCompleted(commentId) {
         let editor = document.getElementById('thisIsTheTaskShareCommentEditor' + commentId);
         let commentSpot = document.getElementById('thisIsTheTaskShareComment' + commentId);
         let subObj = {
           comment: editor.value
         };
-        $http.patch(`/task_share_comments/${commentId}`, subObj)
-        .then(commentData=>{
-          let comment = commentData.data;
-          commentSpot.setAttribute("style", "visibility: visible;");
-          document.getElementById('taskCommentComment' + commentId).innerHTML = comment.comment;
+        if (subObj.comment !== '') {
+          $http.patch(`/task_share_comments/${commentId}`, subObj)
+          .then(commentData=>{
+            let comment = commentData.data;
+            commentSpot.setAttribute("style", "visibility: visible;");
+            document.getElementById('taskCommentComment' + commentId).innerHTML = comment.comment;
+            editor.setAttribute("style", "display: none;");
+            document.getElementById('thisIsTaskCommentEditDoneDiv' + commentId).setAttribute("style", "display: none;");
+            document.getElementById('editDeleteTaskShareCommentDiv' + commentId).setAttribute("style", "display: initial;");
+          });
+        } else {
           editor.setAttribute("style", "display: none;");
           document.getElementById('thisIsTaskCommentEditDoneDiv' + commentId).setAttribute("style", "display: none;");
           document.getElementById('editDeleteTaskShareCommentDiv' + commentId).setAttribute("style", "display: initial;");
-        });
+        }
+        purgeEmptyTaskComments();
       }
 
       function userEditTaskShareComment(commentId) {
