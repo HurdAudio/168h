@@ -16363,7 +16363,7 @@
                 if (userTaskShares[j].share_associate_id !== currentUserId) {
                   document.getElementById('taskSharer' + vm.activeTaskShares[j].id).setAttribute("style", "display: initial;");
                   document.getElementById('taskSharee' + vm.activeTaskShares[j].id).setAttribute("style", "display: none;");
-                  document.getElementById('thisIsTaskShareDeleteDiv' + userTaskShares[j].id).setAttribute("style", "display: initial;");
+                  document.getElementById('thisIsTaskShareDeleteDiv' + userTaskShares[j].id).setAttribute("style", "display: none;");
                   if (userTaskShares[j].responded) {
                     document.getElementById('taskAcceptDecline' + vm.activeTaskShares[j].id).setAttribute("style", "display: none;");
                     if (userTaskShares[j].accepted) {
@@ -16382,7 +16382,7 @@
                   document.getElementById('taskSharer' + vm.activeTaskShares[j].id).setAttribute("style", "display: none;");
                   document.getElementById('taskSharee' + vm.activeTaskShares[j].id).setAttribute("style", "display: initial;");
                   document.getElementById('taskAcceptDecline' + vm.activeTaskShares[j].id).setAttribute("style", "display: none;");
-                  document.getElementById('thisIsTaskShareDeleteDiv' + userTaskShares[j].id).setAttribute("style", "display: none;");
+                  document.getElementById('thisIsTaskShareDeleteDiv' + userTaskShares[j].id).setAttribute("style", "display: initial;");
                   if (userTaskShares[j].responded) {
                     if (userTaskShares[j].accepted) {
 
