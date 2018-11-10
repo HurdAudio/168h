@@ -10435,6 +10435,34 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 670,
+          user_id: 1,
+          name: 'Murray Bookchin (social theorist/ author/ orator/ historian/ political philosopher) born 1921',
+          color: '#593232',
+          picture: './img/dissent/220px-Murray_Bookchin_in_Burlington.jpg',
+          day_of: new Date ('1921-01-14T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 671,
+          user_id: 1,
+          name: 'Nestor Makhno (Ukrainian anarcho-communist revolutionary) born 1888.',
+          color: '#282828',
+          picture: './img/dissent/250px-1921._Нестор_Махно_в_лагере_для_перемещенных_лиц_в_Румынии.jpg',
+          day_of: new Date ('1888-11-07T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
