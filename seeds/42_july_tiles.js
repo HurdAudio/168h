@@ -928,6 +928,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#E6E6E8',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 67,
+          user_id: 1,
+          theme: 'Steam',
+          type: 'holiday',
+          src_string: '../img/july_tiles/zain-bhatti-48792-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '100%',
+          color_dark: '#16091D',
+          color_medium: '#FFB06D',
+          color_light: '#FFFFFF',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
