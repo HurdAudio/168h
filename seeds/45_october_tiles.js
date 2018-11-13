@@ -886,6 +886,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FFE403',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 64,
+          user_id: 1,
+          theme: 'Autumnal',
+          type: 'friday',
+          src_string: '../img/october_tiles/chris-lawton-1115819-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '158%',
+          color_dark: '#2A2335',
+          color_medium: '#E3B44A',
+          color_light: '#E1E5E8',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
