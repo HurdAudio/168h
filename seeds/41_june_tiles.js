@@ -942,6 +942,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#E4FFFF',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 68,
+          user_id: 1,
+          theme: 'Light',
+          type: 'week',
+          src_string: '../img/june_tiles/chris-knight-428765-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '100%',
+          color_dark: '#00060A',
+          color_medium: '#F8D901',
+          color_light: '#F6FFE3',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
