@@ -2524,6 +2524,66 @@ exports.seed = function(knex, Promise) {
           public: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 211,
+          user_author_id: 1,
+          theme: 'Abandoned Places',
+          img_path: './img/modules/lostroom-L.jpg',
+          title: 'Lost Room',
+          artist: 'Niki Feijen',
+          year: '?',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 212,
+          user_author_id: 1,
+          theme: 'Abandoned Places',
+          img_path: './img/modules/cell4-L.jpg',
+          title: 'Cell 4',
+          artist: 'Niki Feijen',
+          year: '?',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 213,
+          user_author_id: 1,
+          theme: 'Abandoned Places',
+          img_path: './img/modules/lines-M.jpg',
+          title: 'Lines',
+          artist: 'Niki Feijen',
+          year: '?',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 214,
+          user_author_id: 1,
+          theme: 'Abandoned Places',
+          img_path: './img/modules/vespa-L.jpg',
+          title: 'Vespa',
+          artist: 'Niki Feijen',
+          year: '?',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 215,
+          user_author_id: 1,
+          theme: 'Abandoned Places',
+          img_path: './img/modules/junglechapel-L.jpg',
+          title: 'Jungle Chapel',
+          artist: 'Niki Feijen',
+          year: '?',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
