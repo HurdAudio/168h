@@ -872,6 +872,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FFABA9',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 63,
+          user_id: 1,
+          theme: 'Monochromatic',
+          type: 'week',
+          src_string: '../img/november_tiles/manuel-polo-29108-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '100%',
+          color_dark: '#1F211D',
+          color_medium: '#AFB0A8',
+          color_light: '#F4F5EF',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
