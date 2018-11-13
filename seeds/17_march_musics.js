@@ -1234,9 +1234,9 @@ exports.seed = function(knex, Promise) {
           user_id: 1,
           theme: 'Women\'s History Month',
           source: 'bandcamp',
-          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2635428819/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
-          href_string: 'http://waitingroomrecords.bandcamp.com/album/subnormal-girls-diy-post-punk-1979-1983-volume-1',
-          a_string: 'SUBNORMAL GIRLS - DIY/POST PUNK 1979-1983 - VOLUME 1 by SUBNORMAL GIRLS',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2337293507/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://waitingroomrecords.bandcamp.com/album/subnormal-girls-volume-3',
+          a_string: 'SUBNORMAL GIRLS VOLUME 3 by WAITING ROOM RECORDS',
           rule: {
             "monday": [ 11, 17, 23, 31 ],
             "tuesday": [ 10, 16, 22, 30 ],
@@ -4385,8 +4385,8 @@ exports.seed = function(knex, Promise) {
           theme: 'Women\'s History Month',
           source: 'bandcamp',
           src_string: 'https://bandcamp.com/EmbeddedPlayer/album=163970836/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
-          href_string: 'http://ctatsu.bandcamp.com/album/moments-in-golden-lightMoments in Golden Light by poemme',
-          a_string: '',
+          href_string: 'http://ctatsu.bandcamp.com/album/moments-in-golden-light',
+          a_string: 'Moments in Golden Light by poemme',
           rule: {
             "monday": [ 5, 12, 18, 26 ],
             "tuesday": [ 5, 11, 17, 25 ],
