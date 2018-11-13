@@ -970,6 +970,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#5EAFFF',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 70,
+          user_id: 1,
+          theme: 'Water',
+          type: 'saturday',
+          src_string: '../img/april_tiles/jean-gerber-633824-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '100%',
+          color_dark: '#16353E',
+          color_medium: '#0FD4DF',
+          color_light: '#FBF1F2',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
