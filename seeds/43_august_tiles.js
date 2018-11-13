@@ -914,6 +914,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#E7E0E6',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 66,
+          user_id: 1,
+          theme: 'Primary Colors',
+          type: 'sunday',
+          src_string: '../img/august_tiles/jason-leung-606126-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '156%',
+          color_dark: '#4A0005',
+          color_medium: '#F5C300',
+          color_light: '#FFEDD3',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
