@@ -4486,6 +4486,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 250,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1141845157/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://mutantbeatdance.bandcamp.com/album/mutant-beat-dance',
+          a_string: 'Mutant Beat Dance by Mutant Beat Dance',
+          rule: {
+            "monday": [ 3, 4, 9, 17 ],
+            "tuesday": [ 2, 4, 8, 16 ],
+            "wednesday": [ 6, 8, 12, 20 ],
+            "thursday": [ 5, 7, 11, 19 ],
+            "saturday": [ 4, 6, 10, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 251,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1387105591/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://vesseluk.bandcamp.com/album/queen-of-golden-dogs',
+          a_string: 'Queen of Golden Dogs by Vessel',
+          rule: {
+            "monday": [ 4, 6, 10, 18 ],
+            "tuesday": [ 3, 4, 9, 17 ],
+            "wednesday": [ 2, 4, 8, 16 ],
+            "thursday": [ 6, 8, 12, 20 ],
+            "saturday": [ 5, 7, 11, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 252,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2204232820/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://avantdalebowlingclub.bandcamp.com/album/avantdale-bowling-club',
+          a_string: 'Avantdale Bowling Club by Avantdale Bowling Club',
+          rule: {
+            "monday": [ 6, 8, 12, 20 ],
+            "tuesday": [ 5, 7, 11, 19 ],
+            "wednesday": [ 4, 5, 10, 18 ],
+            "thursday": [ 3, 5, 9, 17 ],
+            "saturday": [ 7, 9, 13, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
