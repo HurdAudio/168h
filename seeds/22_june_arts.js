@@ -8604,6 +8604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 431,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/photography-10-miscellaneous-people-female-large-open.jpg',
+          title: '10',
+          artist: 'Anna Shakina',
+          year: '2012',
+          rule: {
+            "monday": [ 26, 6, 16, 24 ],
+            "tuesday": [ 25, 5, 15, 23 ],
+            "wednesday": [ 1, 11, 21, 28 ],
+            "thursday": [ 30, 10, 20, 28 ],
+            "friday": [ 29, 9, 19, 27 ],
+            "saturday": [ 28, 8, 18, 26 ],
+            "sunday": [ 7, 17, 27, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 432,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/photography-k-b-medium-format-film-people-portrait-female-large-open.jpg',
+          title: 'K. B.',
+          artist: 'Magda Andrzejewska',
+          year: '2011',
+          rule: {
+            "monday": [ 7, 17, 27, 25 ],
+            "tuesday": [ 26, 6, 16, 24 ],
+            "wednesday": [ 25, 5, 15, 23 ],
+            "thursday": [ 1, 11, 21, 28 ],
+            "friday": [ 30, 10, 20, 28 ],
+            "saturday": [ 29, 9, 19, 27 ],
+            "sunday": [ 28, 8, 18, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 433,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/stay-on-these-roads-large-open.jpg',
+          title: 'Stay on These Roads',
+          artist: 'Bogdan Panait',
+          year: '2011',
+          rule: {
+            "monday": [ 28, 8, 18, 26 ],
+            "tuesday": [ 7, 17, 27, 25 ],
+            "wednesday": [ 26, 6, 16, 24 ],
+            "thursday": [ 25, 5, 15, 23 ],
+            "friday": [ 1, 11, 21, 28 ],
+            "saturday": [ 30, 10, 20, 28 ],
+            "sunday": [ 29, 9, 19, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 434,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/photography-miscellaneous-people-portrait-large-open.jpg',
+          title: 'untitled',
+          artist: 'Kalua K Krynska',
+          year: '2008',
+          rule: {
+            "monday": [ 30, 10, 20, 28 ],
+            "tuesday": [ 29, 9, 19, 27 ],
+            "wednesday": [ 8, 18, 28, 26 ],
+            "thursday": [ 27, 7, 17, 25 ],
+            "friday": [ 26, 6, 16, 24 ],
+            "saturday": [ 2, 12, 22, 29 ],
+            "sunday": [ 1, 11, 21, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 435,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/photography-untitled-miscellaneous-people-female-large-open.jpg',
+          title: 'Untitled',
+          artist: 'Ivan Palis',
+          year: '2012',
+          rule: {
+            "monday": [ 1, 11, 21, 29 ],
+            "tuesday": [ 30, 10, 20, 28 ],
+            "wednesday": [ 29, 9, 19, 27 ],
+            "thursday": [ 8, 18, 28, 26 ],
+            "friday": [ 27, 7, 17, 25 ],
+            "saturday": [ 26, 6, 16, 24 ],
+            "sunday": [ 2, 12, 22, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
