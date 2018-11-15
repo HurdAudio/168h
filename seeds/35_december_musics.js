@@ -3946,6 +3946,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 220,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2587400384/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://repsych.bandcamp.com/album/fiesta-en-el-barrio-ep-peru-descarga-jala-jala-boogaloo-latin-60s',
+          a_string: 'Fiesta en el barrio EP (PERU Descarga Jala Jala Boogaloo Latin 60&#39;s) by Carlos Muñoz y su Orquesta',
+          rule: {
+            "monday": [ 3, 11, 17, 23 ],
+            "tuesday": [ 2, 10, 16, 22 ],
+            "wednesday": [ 3, 9, 15, 21 ],
+            "thursday": [ 7, 13, 19, 25 ],
+            "saturday": [ 6, 12, 18, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 221,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2249569107/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://repsych.bandcamp.com/album/silbando-ep-peru-latin-guaracha-guajira-descarga-60s',
+          a_string: 'Silbando EP (PERU Latin Guaracha Guajira Descarga 60&#39;s) by Silvestre Montes y sus Guantanameros',
+          rule: {
+            "monday": [ 6, 12, 18, 23 ],
+            "tuesday": [ 3, 11, 17, 23 ],
+            "wednesday": [ 2, 10, 16, 22 ],
+            "thursday": [ 3, 9, 15, 21 ],
+            "saturday": [ 7, 13, 19, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 222,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2260147828/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://repsych.bandcamp.com/album/astoria-jazz-club-ep-peru-50s-jazz-blues-acid-cabaret-style-orchestra',
+          a_string: 'Astoria Jazz Club EP (Peru 50&#39;s Jazz Blues Acid Cabaret Style Orchestra) by Astoria Jazz Club',
+          rule: {
+            "monday": [ 7, 13, 19, 25 ],
+            "tuesday": [ 6, 12, 18, 23 ],
+            "wednesday": [ 3, 11, 17, 23 ],
+            "thursday": [ 2, 10, 16, 22 ],
+            "saturday": [ 3, 9, 15, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
