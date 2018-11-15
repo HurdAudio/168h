@@ -8404,6 +8404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 421,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/taureau-1963.jpg',
+          title: 'Taureau',
+          artist: 'Le Corbusier',
+          year: '1963',
+          rule: {
+            "monday": [ 31, 9, 22, 2 ],
+            "tuesday": [ 29, 9, 21, 1 ],
+            "wednesday": [ 29, 9, 20, 21 ],
+            "thursday": [ 28, 8, 18, 20 ],
+            "friday": [ 27, 7, 18, 19 ],
+            "saturday": [ 26, 6, 17, 28 ],
+            "sunday": [ 1, 12, 23, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 422,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/le-metro-aerien.jpg',
+          title: 'Le Metro aerien',
+          artist: 'Jules Lefranc',
+          year: '?',
+          rule: {
+            "monday": [ 1, 12, 23, 2 ],
+            "tuesday": [ 31, 9, 22, 2 ],
+            "wednesday": [ 29, 9, 21, 1 ],
+            "thursday": [ 29, 9, 20, 21 ],
+            "friday": [ 28, 8, 18, 20 ],
+            "saturday": [ 27, 7, 18, 19 ],
+            "sunday": [ 26, 6, 17, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 423,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/the-sun-recircled-1966.jpg',
+          title: 'The Sun Recircled',
+          artist: 'Jean Arp',
+          year: '1966',
+          rule: {
+            "monday": [ 26, 6, 17, 28 ],
+            "tuesday": [ 1, 12, 23, 2 ],
+            "wednesday": [ 31, 9, 22, 2 ],
+            "thursday": [ 29, 9, 21, 1 ],
+            "friday": [ 29, 9, 20, 21 ],
+            "saturday": [ 28, 8, 18, 20 ],
+            "sunday": [ 27, 7, 18, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 424,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/portrait-of-tristan-tzara-1927.jpg',
+          title: 'Portrait of Tristan Tzara',
+          artist: 'Lajos Tihanyi',
+          year: '1927',
+          rule: {
+            "monday": [ 27, 7, 18, 19 ],
+            "tuesday": [ 26, 6, 17, 28 ],
+            "wednesday": [ 1, 12, 23, 2 ],
+            "thursday": [ 31, 9, 22, 2 ],
+            "friday": [ 29, 9, 21, 1 ],
+            "saturday": [ 29, 9, 20, 21 ],
+            "sunday": [ 28, 8, 18, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 425,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/the-cardiff-team-1.jpg',
+          title: 'The Cardiff Team',
+          artist: 'Robert Delaunay',
+          year: '1922',
+          rule: {
+            "monday": [ 28, 8, 18, 20 ],
+            "tuesday": [ 27, 7, 18, 19 ],
+            "wednesday": [ 26, 6, 17, 28 ],
+            "thursday": [ 1, 12, 23, 2 ],
+            "friday": [ 31, 9, 22, 2 ],
+            "saturday": [ 29, 9, 21, 1 ],
+            "sunday": [ 29, 9, 20, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
