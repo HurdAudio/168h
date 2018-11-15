@@ -4594,6 +4594,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 256,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3141208454/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://handsinthedarkrecords.bandcamp.com/album/alpestres',
+          a_string: 'Alpestres by Matthias Puech',
+          rule: {
+            "monday": [ 6, 9, 14, 26 ],
+            "tuesday": [ 5, 8, 14, 26 ],
+            "wednesday": [ 5, 8, 14, 25 ],
+            "thursday": [ 3, 11, 13, 28 ],
+            "saturday": [ 7, 11, 17, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 257,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=327223299/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://whitelabrecs.bandcamp.com/album/ways-of-stillness',
+          a_string: 'ways of stillness by vau',
+          rule: {
+            "monday": [ 7, 11, 17, 28 ],
+            "tuesday": [ 6, 9, 14, 26 ],
+            "wednesday": [ 5, 8, 14, 26 ],
+            "thursday": [ 5, 8, 14, 25 ],
+            "saturday": [ 3, 11, 13, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 258,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=465410635/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://celer.bandcamp.com/album/torn-to-ribbons',
+          a_string: 'Torn To Ribbons by Celer',
+          rule: {
+            "monday": [ 3, 11, 13, 28 ],
+            "tuesday": [ 7, 11, 17, 28 ],
+            "wednesday": [ 6, 9, 14, 26 ],
+            "thursday": [ 5, 8, 14, 26 ],
+            "saturday": [ 5, 8, 14, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
