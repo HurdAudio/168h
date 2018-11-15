@@ -4378,6 +4378,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 244,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2383799292/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://capturethecobra.bandcamp.com/album/the-forest-hates-you',
+          a_string: 'The Forest Hates You by Infirmary',
+          rule: {
+            "monday": [ 13, 21, 3, 2 ],
+            "tuesday": [ 12, 20, 2, 1 ],
+            "wednesday": [ 16, 24, 6, 5 ],
+            "thursday": [ 15, 23, 5, 4 ],
+            "saturday": [ 14, 22, 4, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 245,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3263451295/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://kevindrumm.bandcamp.com/album/the-gas-bill-ep',
+          a_string: 'THE GAS BILL EP by Kevin Drumm',
+          rule: {
+            "monday": [ 15, 23, 5, 4 ],
+            "tuesday": [ 14, 22, 4, 3 ],
+            "wednesday": [ 13, 21, 3, 2 ],
+            "thursday": [ 17, 25, 7, 6 ],
+            "saturday": [ 16, 24, 6, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 246,
+          user_id: 1,
+          theme: 'Noise Music & Non-idiomatic Improvisation',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1973631656/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://ernestorodrigues.bandcamp.com/album/kuori',
+          a_string: 'Kuori by Ernesto Rodrigues, Lauri Hyvärinen, Abdul Moimême &amp; Carlos Santos',
+          rule: {
+            "monday": [ 16, 24, 6, 5 ],
+            "tuesday": [ 15, 23, 5, 4 ],
+            "wednesday": [ 14, 22, 4, 3 ],
+            "thursday": [ 13, 21, 3, 2 ],
+            "saturday": [ 17, 25, 7, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
