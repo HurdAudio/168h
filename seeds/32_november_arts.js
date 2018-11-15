@@ -7604,6 +7604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 381,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/no-mandatory-patriotism-1989.jpg',
+          title: 'No Mandatory Patriotism',
+          artist: 'Richard Serra',
+          year: '1989',
+          rule: {
+            "monday": [ 26, 1, 7, 14 ],
+            "tuesday": [ 2, 7, 13, 18 ],
+            "wednesday": [ 1, 4, 11, 17 ],
+            "thursday": [ 30, 4, 11, 15 ],
+            "friday": [ 29, 2, 9, 14 ],
+            "saturday": [ 28, 2, 9, 14 ],
+            "sunday": [ 27, 2, 8, 13 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 382,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/untitled-9-1-a-15-1989.jpg',
+          title: 'Untitled (9 - 1 - A - 15)',
+          artist: 'Yves Gaucher',
+          year: '1989',
+          rule: {
+            "monday": [ 27, 2, 8, 13 ],
+            "tuesday": [ 26, 1, 7, 14 ],
+            "wednesday": [ 2, 7, 13, 18 ],
+            "thursday": [ 1, 4, 11, 17 ],
+            "friday": [ 30, 4, 11, 15 ],
+            "saturday": [ 29, 2, 9, 14 ],
+            "sunday": [ 28, 2, 9, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 383,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/skulptur-viii-1989.jpg',
+          title: 'Skulptur VIII',
+          artist: 'Jan Groth',
+          year: '1989',
+          rule: {
+            "monday": [ 28, 2, 9, 14 ],
+            "tuesday": [ 27, 2, 8, 13 ],
+            "wednesday": [ 26, 1, 7, 14 ],
+            "thursday": [ 2, 7, 13, 18 ],
+            "friday": [ 1, 4, 11, 17 ],
+            "saturday": [ 30, 4, 11, 15 ],
+            "sunday": [ 29, 2, 9, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 384,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/container-1989.jpg',
+          title: 'Container',
+          artist: 'Jean-Pierre Raynaud',
+          year: '1989',
+          rule: {
+            "monday": [ 29, 2, 9, 14 ],
+            "tuesday": [ 28, 2, 9, 14 ],
+            "wednesday": [ 27, 2, 8, 13 ],
+            "thursday": [ 26, 1, 7, 14 ],
+            "friday": [ 2, 7, 13, 18 ],
+            "saturday": [ 1, 4, 11, 17 ],
+            "sunday": [ 30, 4, 11, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 385,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/consecutive-space-for-a-vertical-wall-1990.jpg',
+          title: 'Consecutive Space (for a vertical wall)',
+          artist: 'Richard Tuttle',
+          year: '1990',
+          rule: {
+            "monday": [ 1, 5, 12, 16 ],
+            "tuesday": [ 30, 3, 10, 15 ],
+            "wednesday": [ 29, 3, 10, 15 ],
+            "thursday": [ 28, 3, 9, 14 ],
+            "friday": [ 27, 2, 8, 15 ],
+            "saturday": [ 3, 8, 14, 19 ],
+            "sunday": [ 2, 4, 12, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
