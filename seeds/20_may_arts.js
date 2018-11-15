@@ -8804,6 +8804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 441,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/postaci-1950.jpg',
+          title: 'Postaci',
+          artist: 'Wojciech Fangor',
+          year: '1950',
+          rule: {
+            "monday": [ 29, 8, 16, 18 ],
+            "tuesday": [ 26, 6, 16, 5 ],
+            "wednesday": [ 25, 5, 15, 24 ],
+            "thursday": [ 23, 2, 12, 20 ],
+            "friday": [ 21, 30, 11, 20 ],
+            "saturday": [ 31, 12, 22, 30 ],
+            "sunday": [ 31, 11, 20, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 442,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/budowa-1951.jpg',
+          title: 'Budowa',
+          artist: 'Wojciech Fangor',
+          year: '1951',
+          rule: {
+            "monday": [ 31, 11, 20, 30 ],
+            "tuesday": [ 29, 8, 16, 18 ],
+            "wednesday": [ 26, 6, 16, 5 ],
+            "thursday": [ 25, 5, 15, 24 ],
+            "friday": [ 23, 2, 12, 20 ],
+            "saturday": [ 21, 30, 11, 20 ],
+            "sunday": [ 31, 12, 22, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 443,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/matka-koreanka-1951(1).jpg',
+          title: 'Matka Koreanka',
+          artist: 'Wojciech Fangor',
+          year: '1951',
+          rule: {
+            "monday": [ 31, 12, 22, 30 ],
+            "tuesday": [ 31, 11, 20, 30 ],
+            "wednesday": [ 29, 8, 16, 18 ],
+            "thursday": [ 26, 6, 16, 5 ],
+            "friday": [ 25, 5, 15, 24 ],
+            "saturday": [ 23, 2, 12, 20 ],
+            "sunday": [ 21, 30, 11, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 444,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/dovbush-1931.jpg',
+          title: 'Dovbush',
+          artist: 'Fedir Krychevsky',
+          year: '1931',
+          rule: {
+            "monday": [ 21, 30, 11, 20 ],
+            "tuesday": [ 31, 12, 22, 30 ],
+            "wednesday": [ 31, 11, 20, 30 ],
+            "thursday": [ 29, 8, 16, 18 ],
+            "friday": [ 26, 6, 16, 5 ],
+            "saturday": [ 25, 5, 15, 24 ],
+            "sunday": [ 23, 2, 12, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 445,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/12fk.jpg',
+          title: 'Sketch',
+          artist: 'Fedir Krychevsky',
+          year: '?',
+          rule: {
+            "monday": [ 23, 2, 12, 20 ],
+            "tuesday": [ 21, 30, 11, 20 ],
+            "wednesday": [ 31, 12, 22, 30 ],
+            "thursday": [ 31, 11, 20, 30 ],
+            "friday": [ 29, 8, 16, 18 ],
+            "saturday": [ 26, 6, 16, 5 ],
+            "sunday": [ 25, 5, 15, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
