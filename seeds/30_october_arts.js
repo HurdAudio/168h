@@ -7804,6 +7804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 391,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_built_to_last.jpg',
+          title: 'To Build to Last, To Deliver Ahead of Schedule!',
+          artist: 'V.Govorkov',
+          year: '1955',
+          rule: {
+            "monday": [ 27, 7, 18, 22 ],
+            "tuesday": [ 26, 6, 17, 21 ],
+            "wednesday": [ 25, 5, 6, 20 ],
+            "thursday": [ 3, 4, 15, 19 ],
+            "friday": [ 30, 10, 21, 25 ],
+            "saturday": [ 29, 9, 20, 24 ],
+            "sunday": [ 28, 8, 19, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 392,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_1527364509honor_family.jpg',
+          title: 'Value the honor of (your) family!',
+          artist: 'V.Govorkov',
+          year: '1949',
+          rule: {
+            "monday": [ 29, 9, 20, 24 ],
+            "tuesday": [ 28, 8, 19, 23 ],
+            "wednesday": [ 27, 7, 18, 22 ],
+            "thursday": [ 26, 6, 7, 21 ],
+            "friday": [ 4, 5, 16, 20 ],
+            "saturday": [ 31, 11, 22, 26 ],
+            "sunday": [ 30, 10, 21, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 393,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_look-out.jpg',
+          title: 'Soviet soldier! Be on the alert!',
+          artist: 'K. Ivanov',
+          year: '1954',
+          rule: {
+            "monday": [ 30, 10, 21, 25 ],
+            "tuesday": [ 29, 9, 20, 24 ],
+            "wednesday": [ 28, 8, 19, 23 ],
+            "thursday": [ 27, 7, 18, 22 ],
+            "friday": [ 26, 6, 7, 21 ],
+            "saturday": [ 4, 5, 16, 20 ],
+            "sunday": [ 31, 11, 22, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 394,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_police_alert.jpg',
+          title: 'Militsia officer! Look-out!',
+          artist: 'M. Soloviyov',
+          year: '1953',
+          rule: {
+            "monday": [ 31, 11, 22, 26 ],
+            "tuesday": [ 30, 10, 21, 25 ],
+            "wednesday": [ 29, 9, 20, 24 ],
+            "thursday": [ 28, 8, 19, 23 ],
+            "friday": [ 27, 7, 18, 22 ],
+            "saturday": [ 26, 6, 7, 21 ],
+            "sunday": [ 4, 5, 16, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 395,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_blabber.jpg',
+          title: 'Gossip (blabber) - is a godsend for the enemy!',
+          artist: 'V.Koretsky',
+          year: '1954',
+          rule: {
+            "monday": [ 4, 5, 16, 20 ],
+            "tuesday": [ 31, 11, 22, 26 ],
+            "wednesday": [ 30, 10, 21, 25 ],
+            "thursday": [ 29, 9, 20, 24 ],
+            "friday": [ 28, 8, 19, 23 ],
+            "saturday": [ 27, 7, 18, 22 ],
+            "sunday": [ 26, 6, 7, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
