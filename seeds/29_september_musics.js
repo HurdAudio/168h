@@ -4270,6 +4270,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 238,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4086513590/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cuneiformrecords.bandcamp.com/album/we-are-the-rowboats',
+          a_string: 'We Are The Rowboats by Krakatoa',
+          rule: {
+            "monday": [ 5, 25, 3, 27 ],
+            "tuesday": [ 9, 29, 7, 1 ],
+            "wednesday": [ 8, 28, 6, 30 ],
+            "thursday": [ 7, 27, 5, 28 ],
+            "saturday": [ 7, 26, 4, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 239,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2387443778/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://vasilhadzimanov.bandcamp.com/album/alive',
+          a_string: 'Alive by Vasil Hadzimanov Band feat. David Binney',
+          rule: {
+            "monday": [ 7, 26, 4, 28 ],
+            "tuesday": [ 5, 25, 3, 27 ],
+            "wednesday": [ 9, 29, 7, 1 ],
+            "thursday": [ 8, 28, 6, 30 ],
+            "saturday": [ 7, 27, 5, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 240,
+          user_id: 1,
+          theme: 'Math Rock & Progressive Rock',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3639899694/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://dwikidharmawan-moonjune.bandcamp.com/album/pasar-klewer-hd',
+          a_string: 'Pasar Klewer (HD) by Dwiki Dharmawan',
+          rule: {
+            "monday": [ 7, 27, 5, 28 ],
+            "tuesday": [ 7, 26, 4, 28 ],
+            "wednesday": [ 5, 25, 3, 27 ],
+            "thursday": [ 9, 29, 7, 1 ],
+            "saturday": [ 8, 28, 6, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
