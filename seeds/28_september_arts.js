@@ -8004,6 +8004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 401,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/untitled-1950.jpg',
+          title: 'Untitled',
+          artist: 'Gaston Chaissac',
+          year: '1950',
+          rule: {
+            "monday": [ 29, 5, 23, 1 ],
+            "tuesday": [ 28, 3, 22, 30 ],
+            "wednesday": [ 27, 3, 21, 29 ],
+            "thursday": [ 26, 2, 20, 28 ],
+            "friday": [ 15, 1, 19, 28 ],
+            "saturday": [ 14, 21, 18, 26 ],
+            "sunday": [ 22, 29, 17, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 402,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/joseph-s-liquors-1981.jpg',
+          title: 'Joseph\'s Liquors',
+          artist: 'Robert Cottingham',
+          year: '1981',
+          rule: {
+            "monday": [ 22, 29, 17, 24 ],
+            "tuesday": [ 29, 5, 23, 1 ],
+            "wednesday": [ 28, 3, 22, 30 ],
+            "thursday": [ 27, 3, 21, 29 ],
+            "friday": [ 26, 2, 20, 28 ],
+            "saturday": [ 15, 1, 19, 28 ],
+            "sunday": [ 14, 21, 18, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 403,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/man-carrying-his-own-sun-on-a-string-1973.jpg',
+          title: 'Man Carrying His Own Sun on a String',
+          artist: 'Robert Filliou',
+          year: '1973',
+          rule: {
+            "monday": [ 14, 21, 18, 26 ],
+            "tuesday": [ 22, 29, 17, 24 ],
+            "wednesday": [ 29, 5, 23, 1 ],
+            "thursday": [ 28, 3, 22, 30 ],
+            "friday": [ 27, 3, 21, 29 ],
+            "saturday": [ 26, 2, 20, 28 ],
+            "sunday": [ 15, 1, 19, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 404,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/shoe-shine-boys-1967.jpg',
+          title: 'Shoe Shine Boys',
+          artist: 'Gebre Kristos Desta',
+          year: '1967',
+          rule: {
+            "monday": [ 15, 1, 19, 28 ],
+            "tuesday": [ 14, 21, 18, 26 ],
+            "wednesday": [ 22, 29, 17, 24 ],
+            "thursday": [ 29, 5, 23, 1 ],
+            "friday": [ 28, 3, 22, 30 ],
+            "saturday": [ 27, 3, 21, 29 ],
+            "sunday": [ 26, 2, 20, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 405,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/still-life-with-napkins-and-gift-box-1981.jpg',
+          title: 'Still Life with Napkins and Gift Box',
+          artist: 'Paul Wonner',
+          year: '1981',
+          rule: {
+            "monday": [ 26, 2, 20, 28 ],
+            "tuesday": [ 15, 1, 19, 28 ],
+            "wednesday": [ 14, 21, 18, 26 ],
+            "thursday": [ 22, 29, 17, 24 ],
+            "friday": [ 29, 5, 23, 1 ],
+            "saturday": [ 28, 3, 22, 30 ],
+            "sunday": [ 27, 3, 21, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
