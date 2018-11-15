@@ -8204,6 +8204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 411,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/the-egg-1928.jpg',
+          title: 'The Egg',
+          artist: 'Tarsila do Amaral',
+          year: '1928',
+          rule: {
+            "monday": [ 27, 29, 8, 24 ],
+            "tuesday": [ 26, 29, 7, 23 ],
+            "wednesday": [ 25, 28, 6, 22 ],
+            "thursday": [ 31, 4, 12, 28 ],
+            "friday": [ 30, 2, 11, 27 ],
+            "saturday": [ 29, 2, 10, 26 ],
+            "sunday": [ 28, 1, 9, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 412,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/woman-from-muscel-1935.jpg',
+          title: 'Woman from Muscel',
+          artist: 'Iosif Iser',
+          year: '1935',
+          rule: {
+            "monday": [ 28, 1, 9, 25 ],
+            "tuesday": [ 27, 29, 8, 24 ],
+            "wednesday": [ 26, 29, 7, 23 ],
+            "thursday": [ 25, 28, 6, 22 ],
+            "friday": [ 31, 4, 12, 28 ],
+            "saturday": [ 30, 2, 11, 27 ],
+            "sunday": [ 29, 2, 10, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 413,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/the-dinky-bird-1904.jpg',
+          title: 'The Dinky Bird',
+          artist: 'Maxfield Parrish',
+          year: '1904',
+          rule: {
+            "monday": [ 30, 3, 11, 27 ],
+            "tuesday": [ 29, 2, 10, 26 ],
+            "wednesday": [ 28, 30, 9, 25 ],
+            "thursday": [ 27, 30, 8, 24 ],
+            "friday": [ 26, 29, 7, 23 ],
+            "saturday": [ 1, 5, 13, 29 ],
+            "sunday": [ 31, 3, 12, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 414,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/a-proven-al-stream-1903.jpg',
+          title: 'A Provençal Stream',
+          artist: 'Henry Herbert La Thangue',
+          year: '1903',
+          rule: {
+            "monday": [ 31, 3, 12, 28 ],
+            "tuesday": [ 30, 3, 11, 27 ],
+            "wednesday": [ 29, 2, 10, 26 ],
+            "thursday": [ 28, 30, 9, 25 ],
+            "friday": [ 27, 30, 8, 24 ],
+            "saturday": [ 26, 29, 7, 23 ],
+            "sunday": [ 1, 5, 13, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 415,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/futurist-1931(1).jpg',
+          title: 'Futurist',
+          artist: 'Bruno Munari',
+          year: '1931',
+          rule: {
+            "monday": [ 1, 5, 13, 29 ],
+            "tuesday": [ 31, 3, 12, 28 ],
+            "wednesday": [ 30, 3, 11, 27 ],
+            "thursday": [ 29, 2, 10, 26 ],
+            "friday": [ 28, 30, 9, 25 ],
+            "saturday": [ 27, 30, 8, 24 ],
+            "sunday": [ 26, 29, 7, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
