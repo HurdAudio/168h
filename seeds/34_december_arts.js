@@ -7404,6 +7404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 371,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/10-00,YellowBk.jpg',
+          title: 'Yellow Book #7',
+          artist: 'Charles Wrenn',
+          year: '1910',
+          rule: {
+            "monday": [ 24, 6, 14, 20 ],
+            "tuesday": [ 23, 5, 13, 19 ],
+            "wednesday": [ 22, 4, 12, 18 ],
+            "thursday": [ 21, 2, 1, 17 ],
+            "friday": [ 20, 2, 21, 28 ],
+            "saturday": [ 26, 8, 16, 22 ],
+            "sunday": [ 25, 6, 15, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 372,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/26-00,Advert.jpg',
+          title: 'Advertisement',
+          artist: 'Xena Wright',
+          year: '1926',
+          rule: {
+            "monday": [ 25, 6, 15, 21 ],
+            "tuesday": [ 24, 6, 14, 20 ],
+            "wednesday": [ 23, 5, 13, 19 ],
+            "thursday": [ 22, 4, 12, 18 ],
+            "friday": [ 21, 2, 1, 17 ],
+            "saturday": [ 20, 2, 21, 28 ],
+            "sunday": [ 26, 8, 16, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 373,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/30-00,SwampGirl.jpg',
+          title: 'The No-Nation Girl',
+          artist: 'Irene Zimmermann',
+          year: '1930',
+          rule: {
+            "monday": [ 26, 8, 16, 22 ],
+            "tuesday": [ 25, 6, 15, 21 ],
+            "wednesday": [ 24, 6, 14, 20 ],
+            "thursday": [ 23, 5, 13, 19 ],
+            "friday": [ 22, 4, 12, 18 ],
+            "saturday": [ 21, 2, 1, 17 ],
+            "sunday": [ 20, 2, 21, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 374,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/33-01-2,AceHigh.jpg',
+          title: '2nd Ace-High',
+          artist: 'Rudolph Zirm',
+          year: '1933',
+          rule: {
+            "monday": [ 20, 2, 21, 28 ],
+            "tuesday": [ 26, 8, 16, 22 ],
+            "wednesday": [ 25, 6, 15, 21 ],
+            "thursday": [ 24, 6, 14, 20 ],
+            "friday": [ 23, 5, 13, 19 ],
+            "saturday": [ 22, 4, 12, 18 ],
+            "sunday": [ 21, 2, 1, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 375,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/47-01,Target.jpg',
+          title: 'Target Comics',
+          artist: 'Nina Albright',
+          year: '1947',
+          rule: {
+            "monday": [ 21, 2, 1, 17 ],
+            "tuesday": [ 20, 2, 21, 28 ],
+            "wednesday": [ 26, 8, 16, 22 ],
+            "thursday": [ 25, 6, 15, 21 ],
+            "friday": [ 24, 6, 14, 20 ],
+            "saturday": [ 23, 5, 13, 19 ],
+            "sunday": [ 22, 4, 12, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
