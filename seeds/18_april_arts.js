@@ -9004,6 +9004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 451,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/baltimore_orioles__.jpg',
+          title: 'Baltimore Orioles',
+          artist: 'Ang Bay',
+          year: '2014',
+          rule: {
+            "monday": [ 30, 5, 11, 17 ],
+            "tuesday": [ 29, 4, 10, 16 ],
+            "wednesday": [ 4, 10, 15, 22 ],
+            "thursday": [ 18, 8, 14, 20 ],
+            "friday": [ 3, 6, 14, 20 ],
+            "saturday": [ 2, 6, 21, 19 ],
+            "sunday": [ 29, 5, 11, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 452,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/altimore-orioles-baseball-crab-maryland-joe-barsin.jpg',
+          title: 'Baltimore Orioles Baseball Crab Maryland',
+          artist: 'Joe Barsin',
+          year: '2017',
+          rule: {
+            "monday": [ 29, 5, 11, 17 ],
+            "tuesday": [ 30, 5, 11, 17 ],
+            "wednesday": [ 29, 4, 10, 16 ],
+            "thursday": [ 4, 10, 15, 22 ],
+            "friday": [ 18, 8, 14, 20 ],
+            "saturday": [ 3, 6, 14, 20 ],
+            "sunday": [ 2, 6, 21, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 453,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/mlb-baltimore-orioles-tampa-bay-rays.jpg',
+          title: 'A general view of Baltimore Orioles glove and hat lays in the dugout against the Tampa Bay Rays at Tropicana Field.',
+          artist: 'Kim Klement',
+          year: '2016',
+          rule: {
+            "monday": [ 2, 6, 21, 19 ],
+            "tuesday": [ 29, 5, 11, 17 ],
+            "wednesday": [ 30, 5, 11, 17 ],
+            "thursday": [ 29, 4, 10, 16 ],
+            "friday": [ 4, 10, 15, 22 ],
+            "saturday": [ 18, 8, 14, 20 ],
+            "sunday": [ 3, 6, 14, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 454,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/Baltimore-Orioles-Art-Natty-Boh.jpg',
+          title: 'Baltimore Orioles Art Natty Boh',
+          artist: 'Lake Still Life Gallery',
+          year: '2014',
+          rule: {
+            "monday": [ 3, 6, 14, 20 ],
+            "tuesday": [ 2, 6, 21, 19 ],
+            "wednesday": [ 29, 5, 11, 17 ],
+            "thursday": [ 30, 5, 11, 17 ],
+            "friday": [ 29, 4, 10, 16 ],
+            "saturday": [ 4, 10, 15, 22 ],
+            "sunday": [ 18, 8, 14, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 455,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/sketch-BAL_ed8f40e7-9c16-4b66-8a04-cfe89a6393c3_1024x1024.jpg',
+          title: 'Camden Yards Ink Sketch',
+          artist: 'S. Preston',
+          year: '?',
+          rule: {
+            "monday": [ 19, 9, 15, 21 ],
+            "tuesday": [ 4, 7, 15, 21 ],
+            "wednesday": [ 3, 7, 22, 20 ],
+            "thursday": [ 30, 6, 12, 18 ],
+            "friday": [ 1, 6, 12, 18 ],
+            "saturday": [ 30, 5, 11, 17 ],
+            "sunday": [ 5, 11, 16, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
