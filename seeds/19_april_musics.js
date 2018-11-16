@@ -4810,6 +4810,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 268,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2876696499/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://balancepointacoustics.bandcamp.com/album/unhesitating-nuscope-cd-1032',
+          a_string: 'Unhesitating Nuscope CD 1032 by Georg Graewe / Damon Smith / Michael Vatcher',
+          rule: {
+            "monday": [ 8, 16, 28, 3 ],
+            "tuesday": [ 12, 20, 2, 7 ],
+            "wednesday": [ 11, 19, 1, 6 ],
+            "thursday": [ 10, 18, 30, 5 ],
+            "saturday": [ 9, 17, 28, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 269,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1969476423/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://balancepointacoustics.bandcamp.com/album/spill-plus-nuscope-cd-1028',
+          a_string: 'Spill Plus Nuscope CD 1028 by Magda Mayas / Damon Smith / Tony Buck',
+          rule: {
+            "monday": [ 9, 17, 28, 4 ],
+            "tuesday": [ 8, 16, 28, 3 ],
+            "wednesday": [ 12, 20, 2, 7 ],
+            "thursday": [ 11, 19, 1, 6 ],
+            "saturday": [ 10, 18, 30, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 270,
+          user_id: 1,
+          theme: 'Free Jazz',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2801484183/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://balancepointacoustics.bandcamp.com/album/elegans-nuscope-cd-1017',
+          a_string: 'Elegans Nuscope CD 1017 by Vinkeloe | Smith | Nordeson',
+          rule: {
+            "monday": [ 10, 18, 30, 5 ],
+            "tuesday": [ 9, 17, 28, 4 ],
+            "wednesday": [ 8, 16, 28, 3 ],
+            "thursday": [ 12, 20, 2, 7 ],
+            "saturday": [ 11, 19, 1, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
