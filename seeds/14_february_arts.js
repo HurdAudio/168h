@@ -9404,6 +9404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 471,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/piercea.jpg',
+          title: 'Seaside Symphony #1',
+          artist: 'Delilah Pierce',
+          year: 'xx cent.',
+          rule: {
+            "monday": [ 9, 17, 25, 4 ],
+            "tuesday": [ 10, 19, 27, 6 ],
+            "wednesday": [ 16, 21, 27, 8 ],
+            "thursday": [ 15, 23, 2, 10 ],
+            "friday": [ 17, 27, 4, 10 ],
+            "saturday": [ 19, 27, 6, 16 ],
+            "sunday": [ 19, 29, 25, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 472,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/Untitled_(Seated_Woman,_Wife_of_the_Artist,_Lily_Pilgrim).jpg',
+          title: 'Untitled(Seated Woman, Wife of the Artist, Lily Pilgrim)',
+          artist: 'Earle M. Pilgrim',
+          year: '1970',
+          rule: {
+            "monday": [ 19, 29, 25, 15 ],
+            "tuesday": [ 9, 17, 25, 4 ],
+            "wednesday": [ 10, 19, 27, 6 ],
+            "thursday": [ 16, 21, 27, 8 ],
+            "friday": [ 15, 23, 2, 10 ],
+            "saturday": [ 17, 27, 4, 10 ],
+            "sunday": [ 19, 27, 6, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 473,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/PINPP006-5blo-res5d.jpg',
+          title: 'Video Drawings: Baseball',
+          artist: 'Howardena Pindell',
+          year: '1976',
+          rule: {
+            "monday": [ 19, 27, 6, 16 ],
+            "tuesday": [ 19, 29, 25, 15 ],
+            "wednesday": [ 9, 17, 25, 4 ],
+            "thursday": [ 10, 19, 27, 6 ],
+            "friday": [ 16, 21, 27, 8 ],
+            "saturday": [ 15, 23, 2, 10 ],
+            "sunday": [ 17, 27, 4, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 474,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/sweethearts-of-rhythm_take-the-a-train1.jpg',
+          title: 'Sweethearts of Rhythm',
+          artist: 'Jerry Pinkney',
+          year: '2009',
+          rule: {
+            "monday": [ 17, 27, 4, 10 ],
+            "tuesday": [ 19, 27, 6, 16 ],
+            "wednesday": [ 19, 29, 25, 15 ],
+            "thursday": [ 9, 17, 25, 4 ],
+            "friday": [ 10, 19, 27, 6 ],
+            "saturday": [ 16, 21, 27, 8 ],
+            "sunday": [ 15, 23, 2, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 475,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/2003_Everything-_2_8.jpg',
+          title: 'Everything #2.8',
+          artist: 'Adrian Piper',
+          year: '2003',
+          rule: {
+            "monday": [ 15, 23, 2, 10 ],
+            "tuesday": [ 17, 27, 4, 10 ],
+            "wednesday": [ 19, 27, 6, 16 ],
+            "thursday": [ 19, 29, 25, 15 ],
+            "friday": [ 9, 17, 25, 4 ],
+            "saturday": [ 10, 19, 27, 6 ],
+            "sunday": [ 16, 21, 27, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
