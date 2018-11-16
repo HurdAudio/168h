@@ -9204,6 +9204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 461,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/the-cathedrals-of-broadway-1929.jpg',
+          title: 'The Cathedrals of Broadway',
+          artist: 'Florine Stettheimer',
+          year: '1929',
+          rule: {
+            "monday": [ 31, 11, 18, 28 ],
+            "tuesday": [ 30, 9, 17, 27 ],
+            "wednesday": [ 29, 8, 17, 26 ],
+            "thursday": [ 4, 13, 23, 31 ],
+            "friday": [ 3, 13, 21, 31 ],
+            "saturday": [ 31, 12, 20, 30 ],
+            "sunday": [ 1, 11, 19, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 462,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/loves-me-loves-me-not-1909.jpg',
+          title: 'Loves Me, Loves Me Not',
+          artist: 'Ethel Carrick',
+          year: '1909',
+          rule: {
+            "monday": [ 2, 12, 20, 30 ],
+            "tuesday": [ 1, 12, 19, 29 ],
+            "wednesday": [ 31, 10, 18, 28 ],
+            "thursday": [ 30, 9, 18, 27 ],
+            "friday": [ 5, 14, 24, 1 ],
+            "saturday": [ 4, 14, 22, 1 ],
+            "sunday": [ 1, 13, 21, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 463,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/folly-or-saintless.jpg',
+          title: 'Folly or Saintless',
+          artist: 'Ethel Reed',
+          year: '1895',
+          rule: {
+            "monday": [ 1, 13, 21, 31 ],
+            "tuesday": [ 2, 12, 20, 30 ],
+            "wednesday": [ 1, 12, 19, 29 ],
+            "thursday": [ 31, 10, 18, 28 ],
+            "friday": [ 30, 9, 18, 27 ],
+            "saturday": [ 5, 14, 24, 1 ],
+            "sunday": [ 4, 14, 22, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 464,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/bos-1912.jpg',
+          title: 'Bos',
+          artist: 'Jacoba van Heemskerck',
+          year: '1912',
+          rule: {
+            "monday": [ 4, 14, 22, 1 ],
+            "tuesday": [ 1, 13, 21, 31 ],
+            "wednesday": [ 2, 12, 20, 30 ],
+            "thursday": [ 1, 12, 19, 29 ],
+            "friday": [ 31, 10, 18, 28 ],
+            "saturday": [ 30, 9, 18, 27 ],
+            "sunday": [ 5, 14, 24, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 465,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/meditation-1917(1).jpg',
+          title: 'Meditation',
+          artist: 'Gabriele Munter',
+          year: '1917',
+          rule: {
+            "monday": [ 5, 14, 24, 1 ],
+            "tuesday": [ 4, 14, 22, 1 ],
+            "wednesday": [ 1, 13, 21, 31 ],
+            "thursday": [ 2, 12, 20, 30 ],
+            "friday": [ 1, 12, 19, 29 ],
+            "saturday": [ 31, 10, 18, 28 ],
+            "sunday": [ 30, 9, 18, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
