@@ -5026,6 +5026,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 280,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=709765212/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://kiydrah.bandcamp.com/album/muse',
+          a_string: 'Muse by Kiydrah',
+          rule: {
+            "monday": [ 16, 19, 21, 23 ],
+            "tuesday": [ 27, 21, 23, 25 ],
+            "wednesday": [ 29, 23, 25, 2 ],
+            "thursday": [ 1, 24, 26, 3 ],
+            "saturday": [ 13, 17, 19, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 281,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2038688701/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://j-anthxny.bandcamp.com/album/wave-n9ne',
+          a_string: 'Wave N9ne by J. Anthxny',
+          rule: {
+            "monday": [ 13, 17, 19, 23 ],
+            "tuesday": [ 16, 19, 21, 23 ],
+            "wednesday": [ 27, 21, 23, 25 ],
+            "thursday": [ 29, 23, 25, 2 ],
+            "saturday": [ 1, 24, 26, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 282,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2116410171/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://michaeljudahmusic.bandcamp.com/album/colloquial-setup',
+          a_string: 'Colloquial Setup by Michael Judah',
+          rule: {
+            "monday": [ 1, 24, 26, 3 ],
+            "tuesday": [ 13, 17, 19, 23 ],
+            "wednesday": [ 16, 19, 21, 23 ],
+            "thursday": [ 27, 21, 23, 25 ],
+            "saturday": [ 29, 23, 25, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
