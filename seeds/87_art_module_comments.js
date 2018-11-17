@@ -8,7 +8,8 @@ exports.seed = function(knex, Promise) {
         {
           id: 1,
           user_id: 1,
-          art_module: 1,
+          art_module_author_id: 1,
+          theme: 'Cute Cats',
           comment: 'I never knew I liked art before.',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')

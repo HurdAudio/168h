@@ -3992,6 +3992,36 @@
         tileModuleDisplayButton.setAttribute("style", "visibility: visible;");
       }
 
+      function artModuleCommenterIdentity(userId, index, commentIndex) {
+        $http.get(`/users/${userId}`)
+        .then(commenterData => {
+          let commenter = commenterData.data;
+          vm.artModulePreview[index].comments[commentIndex].authorImg = commenter.user_avatar_url;
+          vm.artModulePreview[index].comments[commentIndex].authorName = commenter.name;
+        });
+      }
+
+      function getArtModuleComments(index) {
+        console.log(vm.artModulePreview[index]);
+        $http.get('/art_module_comments')
+        .then(allModuleCommentsData => {
+          let allModuleComments = allModuleCommentsData.data;
+          let moduleComments = allModuleComments.filter(entry => {
+            return((entry.art_module_author_id === vm.artModulePreview[index].user_author_id) && (entry.theme === vm.artModulePreview[index].theme));
+          });
+          if (moduleComments.length > 0) {
+            vm.artModulePreview[index].comments = [];
+            for (let i = 0; i < moduleComments.length; i++) {
+              vm.artModulePreview[index].comments[i] = {
+                comment: moduleComments[i].comment
+              }
+              artModuleCommenterIdentity(moduleComments[i].user_id, index, i);
+              vm.artModulePreview[index].comments[i].cleanDate = cleanDateHoliday(moduleComments[i].created_at) + ' - ' + timeDate(moduleComments[i].created_at);
+            }
+          }
+        });
+      }
+
       function getArtAuthorName (authorId, index) {
         $http.get(`/users/${authorId}`)
         .then(authorData=>{
@@ -4047,6 +4077,7 @@
             if (vm.artModulePreview.length > 0) {
               for (let k = 0; k < vm.artModulePreview.length; k++) {
                 vm.artModulePreview[k].img_path = vm.artModulePreview[k].storage[Math.floor(Math.random() * (vm.artModulePreview[k].storage.length))].img_path;
+                getArtModuleComments(k);
               }
             }
           }

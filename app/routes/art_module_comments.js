@@ -40,7 +40,8 @@ router.post('/', (req, res, next) => {
   knex('art_module_comments')
   .insert({
     user_id: req.body.user_id,
-    art_module: req.body.art_module,
+    art_module_author_id: req.body.art_module_author_id,
+    theme: req.body.theme,
     comment: req.body.comment
   }, '*')
   .then((result) => {
@@ -57,7 +58,8 @@ router.patch('/:id', (req, res, next) => {
   .where('id', req.params.id)
   .update({
     user_id: req.body.user_id,
-    art_module: req.body.art_module,
+    art_module_author_id: req.body.art_module_author_id,
+    theme: req.body.theme,
     comment: req.body.comment
   }, '*')
     .then((results)=>{
@@ -93,7 +95,8 @@ router.delete('/:id', (req, res, next) => {
           var obj = {
             id: holder,
             user_id: record.user_id,
-            art_module: record.art_module,
+            art_module_author_id: record.art_module_author_id,
+            theme: record.theme,
             comment: record.comment,
             created_at: record.created_at,
             updated_at: record.updated_at
