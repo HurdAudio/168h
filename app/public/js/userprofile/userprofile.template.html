@@ -4364,6 +4364,87 @@
       </div>
     </div>
 
+    <div id="musicSharesNotification">
+      <div id="musicSharesBar">
+
+        <h1 id="musicSharesBarTitle">Shared Music:</h1>
+
+      </div>
+
+      <div id="musicSharesNotifier">
+
+        <div class="whoScheduledMe">
+          <!-- <main ng-repeat="music in $ctrl.activeMusicShares | orderBy : $ctrl.sortBy"> -->
+            <div id="thisIsMusicShareDeleteDiv{{music.id}}" class="profileDeleteOption">
+
+              <!-- <a class="btn" href="#" ng-click="$ctrl.deleteObservanceShare(observe.id)">delete</a><br><br> -->
+            </div>
+
+
+            <img src="{{music.inv_img}}"><br>
+            <p id="musicInviter{{music.id}}">{{music.inviter}} has shared the following music with you on {{music.cleanDate}}</p>
+            <p id="musicInvitee{{music.id}}">You have shared the following music with {{music.invitee}} on {{music.cleanDate}}</p>
+
+            <br><br><br><br><br><br>
+            <div class="iframeDiv">
+              <iframe style="border: 0; width: 100%; height: 510px;" src="{{music.src_strings}}" seamless><a href="{{music.href_strings}}">{{music.a_strings}}</a></iframe>
+            </div>
+            <br><br>
+
+
+            <div class="holidayAcceptDenyButtons" id="musicAcceptDecline{{art.id}}">
+
+              <a class="btn" ng-click="$ctrl.declineMusicShare(music.id)">Decline</a>
+              <a class="btn" ng-click="$ctrl.acceptMusicShare(music.id)">Accept</a>
+            </div><br><br>
+            <!-- <br><br><div id="artShareAccepted{{art.id}}">
+
+              <img src="{{art.inviterImg}}"><br>
+              <br><h3>{{art.invitee}} has accepted this observance.</h3>
+            </div>
+            <br><br><div id="artShareDeclined{{observe.id}}">
+
+              <img src="{{art.inviterImg}}"><br>
+              <br><h3>{{art.invitee}} has declined this observance.</h3>
+            </div> -->
+
+            <!-- <a href=""><h3>comment</h3></a> -->
+
+            <!-- <div class="commentsBar"> -->
+
+              <!-- <h1>Comments:</h1> -->
+              <!-- <a class="btn" href="#" ng-click="$ctrl.addNewArtShareComment(art.id)" id="newArtShareCommentButton{{art.id}}">add</a> -->
+            <!-- </div> -->
+            <!-- <div id="artShareComments" class="occasionShareComments">
+              <!-- <main ng-repeat="comment in art.comments | orderBy : $ctrl.sortBy"> -->
+                <!-- <img src="{{comment.user_avatar_url}}"><br><br><br>
+                <br><br><br><p>From: {{comment.name}} <br>
+                on {{comment.cleanDate}}</p><br><br> -->
+                <!-- <textarea id="thisIsTheObservanceShareCommentEditor{{comment.id}}" class="pure-input-1" rows="5"></textarea> -->
+                <!-- <div class="thisIsObservanceShareCommentEditDoneDiv" id="thisIsObservanceShareCommentEditDoneDiv{{comment.id}}"><a class="btn" id="thisIsTheObservanceShareCommentEditorDoneButton{{comment.id}}" href="#" ng-click="$ctrl.userEditObservanceShareCommentCompleted(comment.id)">done</a></div> -->
+                <!-- <h3 id="thisIsArtShareCommentComment{{art.id}}">{{comment.comment}}</h3><br>
+
+                <div id="deleteArtShareCommentConfirm{{art.id}}" class="messageEditDelete">
+
+                  <h3>Delete comment forever?</h3>
+                  <a class="btn" href="#" ng-click="$ctrl.userArtShareCommentDeleteCancel(art.id)">no</a>
+                  <a class="btn" href="#" ng-click="$ctrl.userArtShareCommentDeleteConfirmClick(art.id)">yes</a>
+                </div> -->
+
+                <!-- <div id="editDeleteArtShareCommentDiv{{art.id}}" class="messageEditDelete">
+                  <a class="btn" href="#" ng-click="$ctrl.userEditArtShareComment(art.id)">edit</a>
+                  <a class="btn" href="#" ng-click="$ctrl.userDeleteArtShareComment(art.id)">delete</a>
+                </div><br><br><br><br> -->
+              <!-- </main> -->
+            <!-- </div> -->
+          <!-- </main> -->
+        </div>
+
+
+
+      </div>
+    </div>
+
 
   </div>
   <div id="secondaryEditing" class="pure-u-1-3">
