@@ -5134,6 +5134,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 286,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=903400886/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://othermindsrecords.bandcamp.com/album/first-life-the-rare-early-works',
+          a_string: 'First Life: The Rare Early Works by Marc Blitzstein',
+          rule: {
+            "monday": [ 16, 22, 23, 24 ],
+            "tuesday": [ 15, 22, 23, 24 ],
+            "wednesday": [ 19, 26, 27, 28 ],
+            "thursday": [ 18, 24, 25, 27 ],
+            "saturday": [ 17, 24, 25, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 287,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2600689504/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://othermindsrecords.bandcamp.com/album/ring-of-fire-music-of-the-pacific-rim',
+          a_string: 'Ring of Fire: Music of the Pacific Rim by Del Sol String Quartet',
+          rule: {
+            "monday": [ 18, 25, 26, 27 ],
+            "tuesday": [ 17, 23, 24, 25 ],
+            "wednesday": [ 16, 23, 24, 25 ],
+            "thursday": [ 20, 27, 28, 29 ],
+            "saturday": [ 19, 25, 26, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 288,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=916187690/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://aizuriquartet.bandcamp.com/album/blueprinting',
+          a_string: 'Blueprinting by Aizuri Quartet',
+          rule: {
+            "monday": [ 19, 25, 26, 28 ],
+            "tuesday": [ 18, 25, 26, 27 ],
+            "wednesday": [ 17, 23, 24, 25 ],
+            "thursday": [ 16, 23, 24, 25 ],
+            "saturday": [ 20, 27, 28, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
