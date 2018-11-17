@@ -10463,6 +10463,39 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 672,
+          user_id: 1,
+          name: 'Suzanne Valadon (painter) born 1865',
+          color: '#ECECEC',
+          picture: './img/artists/9001153_128617713976.jpg',
+          day_of: new Date ('1865-09-23T13:44:00.000Z'),
+          is_annual: true,
+          art_override: true,
+          music_override: false,
+          override_content: {
+            "img_paths": [ './img/artists/self-portrait-1883.jpg', './img/artists/my-utrillo-at-the-age-of-nine-1892.jpg', './img/artists/portrait-of-erik-satie.jpg', './img/artists/maurice-utrillo-playing-with-a-sling-shot-1895.jpg', './img/artists/utrillo-nude-sitting-on-a-couch-1895.jpg', './img/artists/woman-preparing-for-a-bath-1895.jpg', './img/artists/my-son-1896.jpg', './img/artists/after-the-bath-1908.jpg', './img/artists/mother-and-daughter-after-the-bath-ii-1908.jpg', './img/artists/nude-getting-into-the-bath-beside-the-seated-grandmother-1908.jpg', './img/artists/the-bath-1908.jpg', './img/artists/woman-with-a-double-bass-1908.jpg', './img/artists/adam-and-eve-1909.jpg', './img/artists/nude-at-the-mirror-1909.jpg', './img/artists/femme-a-la-toilette-1913.jpg', './img/artists/portrait-of-marie-coca-and-her-daughter-1913.jpg', './img/artists/casting-the-net-1914.jpg', './img/artists/roses-in-a-vase-1914.jpg', './img/artists/portrait-of-a-woman-1917.jpg', './img/artists/farm-montcorin-1918.jpg', './img/artists/self-portrait-1918.jpg', './img/artists/study-of-a-cat-1918.jpg', './img/artists/two-cats-1918.jpg', './img/artists/bouquet-and-a-cat-1919.jpg', './img/artists/nude-woman-with-drapery-1919.jpg', './img/artists/nudes-1919.jpg', './img/artists/flower-vase-on-a-round-table-1920.jpg', './img/artists/louison-and-raminou-1920.jpg', './img/artists/nude-on-the-sofa-1920.jpg', './img/artists/raminou-sitting-on-a-cloth-1920.jpg', './img/artists/woman-looking-at-herself-in-the-mirror-1920.jpg', './img/artists/portrait-of-maurice-utrillo-1921.jpg', './img/artists/the-cast-off-doll-1921.jpg', './img/artists/miss-lily-walton-1922.jpg', './img/artists/nude-with-a-striped-blanket-1922.jpg', './img/artists/portrait-of-monsieur-mori-1922.jpg', './img/artists/view-from-my-window-in-genets-brittany-1922.jpg', './img/artists/the-blue-room-1923.jpg', './img/artists/the-two-bathers-1923.jpg', './img/artists/untitled-1.png', './img/artists/women-in-white-stockings-1924.jpg', './img/artists/self-portrait-1927.jpg', './img/artists/nude-reclining-on-a-sofa-1928.jpg', './img/artists/reclining-nude-1928.jpg', './img/artists/andre-utter-and-his-dogs-1932.jpg', './img/artists/raminou-and-pitcher-with-carnations-1932.jpg', './img/artists/geneviève-camax-zoegger-1936.jpg', './img/artists/self-portrait-1938.jpg', './img/artists/bouquet-of-flowers.jpg', './img/artists/female-nude-washing-herself.jpg', './img/artists/still-life.jpg' ],
+            "titles": [ 'Self-Portrait', 'My Utrillo at the Age of Nine', 'Portrait of Erik Satie', 'Maurice Utrillo Playing with a Sling Shot', 'Utrillo Nude Sitting on a Couch', 'Woman Preparing for a Bath', 'My Son', 'After the bath', 'Mother and Daughter After the Bath II', 'Nude Getting into the Bath beside the Seated Grandmother', 'The Bath', 'Woman with a Double Bass', 'Adam and Eve', 'Nude at the Mirror', 'Femme a la Toilette', 'Portrait of Marie Coca and her Daughter', 'Casting the Net', 'Roses in a Vase', 'Portrait of a Woman', 'Farm Montcorin', 'Self-Portrait', 'Study of a cat', 'Two cats', 'Bouquet and a Cat', 'Nude Woman with Drapery', 'Nudes', 'Flower vase on a round table', 'Louison and Raminou', 'Nude on the sofa', 'Raminou sitting on a cloth', 'Woman Looking at Herself in the Mirror', 'Portrait of Maurice Utrillo', 'The Cast-Off Doll', 'Miss Lily Walton', 'Nude with a Striped Blanket', 'Portrait of Monsieur Mori', 'View from My Window in Genets (Brittany)', 'The Blue Room', 'The Two Bathers', 'Maria Lani', 'Women in white stockings', 'Self-Portrait', 'Nude Reclining on a Sofa', 'Reclining nude', 'Andre Utter and His Dogs', 'Raminou and pitcher with carnations', 'Geneviève Camax-Zoegger', 'Self-Portrait', 'Bouquet of flowers', 'Female Nude, washing herself', 'Still Life' ],
+            "artists": [ 'Suzanne Valadon', 'Suzanne Valadon', 'Suzanne Valadon', 'Suzanne Valadon', 'Suzanne Valadon', 'Suzanne Valadon', 'Suzanne Valadon', 'Suzanne Valadon', 'Suzanne Valadon', 'Suzanne Valadon', 'Suzanne Valadon', 'Suzanne Valadon', 'Suzanne Valadon', 'Suzanne Valadon', 'Suzanne Valadon', 'Suzanne Valadon', 'Suzanne Valadon', 'Suzanne Valadon', 'Suzanne Valadon', 'Suzanne Valadon', 'Suzanne Valadon', 'Suzanne Valadon', 'Suzanne Valadon', 'Suzanne Valadon', 'Suzanne Valadon', 'Suzanne Valadon', 'Suzanne Valadon', 'Suzanne Valadon', 'Suzanne Valadon', 'Suzanne Valadon', 'Suzanne Valadon', 'Suzanne Valadon', 'Suzanne Valadon', 'Suzanne Valadon', 'Suzanne Valadon', 'Suzanne Valadon', 'Suzanne Valadon', 'Suzanne Valadon', 'Suzanne Valadon', 'Suzanne Valadon', 'Suzanne Valadon', 'Suzanne Valadon', 'Suzanne Valadon', 'Suzanne Valadon', 'Suzanne Valadon', 'Suzanne Valadon', 'Suzanne Valadon', 'Suzanne Valadon', 'Suzanne Valadon', 'Suzanne Valadon' ],
+            "years": [ '1883', '1892', 'c.1892', '1895', '1895', '1895', '1896', '1908', '1908', '1908', '1908', '1908', '1909', '1909', '1913', '1913', '1914', '1914', '1917', '1918', '1918', '1918', '1918', '1919', '1919', '1919', '1920', '1920', '1920', '1920', '1920', '1921', '1921', '1922', '1922', '1922', '1922', '1923', '1923', '1924', '1924', '1927', '1928', '1928', '1932', '1932', '1936', '1938', '?', '?', '?' ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 673,
+          user_id: 1,
+          name: 'Buenaventura Durruti (Spanish insurrectionary/anarcho-syndicalist) born 1896.',
+          color: '#A4A4AC',
+          picture: './img/dissent/BuenaventuraDurruti.jpg',
+          day_of: new Date ('1896-07-14T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
