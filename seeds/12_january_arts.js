@@ -9604,6 +9604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 481,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/grace-kelly-iii-1994.jpg',
+          title: 'Grace Kelly III',
+          artist: 'Imi Knoebel',
+          year: '1994',
+          rule: {
+            "monday": [ 19, 21, 25, 28 ],
+            "tuesday": [ 21, 23, 24, 25 ],
+            "wednesday": [ 6, 7, 18, 10 ],
+            "thursday":[  9, 11, 3, 23 ],
+            "friday": [ 14, 12, 4, 7 ],
+            "saturday": [ 14, 15, 6, 10 ],
+            "sunday": [ 17, 19, 20, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 482,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/untitled-lens-painting-2007.jpg',
+          title: 'Untitled (Lens Painting)',
+          artist: 'Sigmar Polke',
+          year: '2007',
+          rule: {
+            "monday": [ 17, 19, 20, 22 ],
+            "tuesday": [ 19, 21, 25, 28 ],
+            "wednesday": [ 21, 23, 24, 25 ],
+            "thursday":[ 6, 7, 18, 10 ],
+            "friday": [ 9, 11, 3, 23 ],
+            "saturday": [ 14, 12, 4, 7 ],
+            "sunday": [ 14, 15, 6, 10 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 483,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/untitled-yellows-and-greens-1975.jpg',
+          title: 'Untitled [yellows and greens]',
+          artist: 'Edward Avedisian',
+          year: '1975',
+          rule: {
+            "monday": [ 15, 16, 7, 11 ],
+            "tuesday": [ 18, 20, 21, 23 ],
+            "wednesday": [ 20, 22, 26, 29 ],
+            "thursday": [ 22, 24, 25, 26 ],
+            "friday": [ 7, 8, 19, 11 ],
+            "saturday": [ 10, 12, 4, 24 ],
+            "sunday": [ 15, 13, 5, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 484,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/pensando-em-chartres-1971.jpg',
+          title: 'Pensando em Chartres',
+          artist: 'Jose Escada',
+          year: '1971',
+          rule: {
+            "monday": [ 15, 13, 5, 8 ],
+            "tuesday": [ 15, 16, 7, 11 ],
+            "wednesday": [ 18, 20, 21, 23 ],
+            "thursday": [ 20, 22, 26, 29 ],
+            "friday": [ 22, 24, 25, 26 ],
+            "saturday": [ 7, 8, 19, 11 ],
+            "sunday": [ 10, 12, 4, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 485,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/untitled-1968__.jpg',
+          title: 'Untitled',
+          artist: 'Marcelle Cahn',
+          year: '1968',
+          rule: {
+            "monday": [ 10, 12, 4, 24 ],
+            "tuesday": [ 15, 13, 5, 8 ],
+            "wednesday": [ 15, 16, 7, 11 ],
+            "thursday": [ 18, 20, 21, 23 ],
+            "friday": [ 20, 22, 26, 29 ],
+            "saturday": [ 22, 24, 25, 26 ],
+            "sunday": [ 7, 8, 19, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
