@@ -562,6 +562,7 @@
 
       function userProfile() {
         dayClock = false;
+        window.clearInterval(setClockDay);
         $state.go('userprofile', {id: currentUserId});
       }
 
@@ -591,6 +592,7 @@
         }
         let idString = 'user=' + currentUserId + '&year=' + dayYear + '&month=' + dayMonth;
         dayClock = false;
+        window.clearInterval(setClockDay);
         $state.go('monthview', {id: idString});
       }
 
@@ -1248,6 +1250,7 @@
         }
         let idString = 'user=' + currentUserId + '&weekof=' + navDay.getFullYear() + '-' + (navDay.getMonth() + 1) + '-' + navDay.getDate();
         dayClock = false;
+        window.clearInterval(setClockDay);
         $state.go('weekview', {id: idString});
       }
 
@@ -1256,6 +1259,7 @@
         navDay.setDate(navDay.getDate()-1);
         let idString = 'user=' + currentUserId + '&dayof=' + navDay.getFullYear() + '-' + (navDay.getMonth() + 1) + '-' + navDay.getDate();
         dayClock = false;
+        window.clearInterval(setClockDay);
         $state.go('dayview', {id: idString});
 
       }
@@ -1265,6 +1269,7 @@
         navDay.setDate(navDay.getDate() + 1);
         let idString = 'user=' + currentUserId + '&dayof=' + navDay.getFullYear() + '-' + (navDay.getMonth() + 1) + '-' + navDay.getDate();
         dayClock = false;
+        window.clearInterval(setClockDay);
         $state.go('dayview', {id: idString});
       }
 
@@ -1273,6 +1278,7 @@
         navDay.setDate(navDay.getDate());
         let idString = 'user=' + currentUserId + '&dayof=' + navDay.getFullYear() + '-' + (navDay.getMonth() + 1) + '-' + navDay.getDate();
         dayClock = false;
+        window.clearInterval(setClockDay);
         $state.go('dayview', {id: idString});
       }
 
@@ -5555,18 +5561,34 @@
         // check user ID cookies and reject bad cookies
         let userCookie = getCookie('h168userId');
         if (parseInt(userCookie) !== parseInt(currentUserId)) {
+          let res = document.cookie;
+          let multiple = res.split(';');
+          let key;
+          for (let i = 0; i < multiple.length; i++) {
+            key = multiple[i].split('=');
+            document.cookie = key[0] + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;'
+          }
 
           alert('forbidden user access');
           dayClock = false;
+          window.clearInterval(setClockDay);
           $state.go('landing');
         } else {
           $http.get(`/users/${currentUserId}`)
           .then(userData=>{
             var userAccount = userData.data;
             if ((getCookie(userAccount.security.key)) !== (userAccount.security.value)) {
+              let res = document.cookie;
+              let multiple = res.split(';');
+              let key;
+              for (let i = 0; i < multiple.length; i++) {
+                key = multiple[i].split('=');
+                document.cookie = key[0] + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;'
+              }
 
               alert('access denied');
               dayClock = false;
+              window.clearInterval(setClockDay);
               $state.go('landing');
             }
           });

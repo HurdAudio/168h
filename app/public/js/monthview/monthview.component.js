@@ -662,6 +662,13 @@
         // check user ID cookies and reject bad cookies
         let userCookie = getCookie('h168userId');
         if (parseInt(userCookie) !== parseInt(currentUserId)) {
+          let res = document.cookie;
+          let multiple = res.split(';');
+          let key;
+          for (let i = 0; i < multiple.length; i++) {
+            key = multiple[i].split('=');
+            document.cookie = key[0] + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;'
+          }
 
           alert('forbidden user access');
           monthClock = false;

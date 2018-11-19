@@ -15267,6 +15267,14 @@
           document.cookie = 'h168userId' + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
           document.cookie = user.security.key + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
 
+          let res = document.cookie;
+          let multiple = res.split(';');
+          let key;
+          for (let i = 0; i < multiple.length; i++) {
+            key = multiple[i].split('=');
+            document.cookie = key[0] + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;'
+          }
+
           $http.post('/users/logout', {})
           .then(()=>{
             profileClock = false;
@@ -15462,7 +15470,7 @@
       function gotoDayview() {
         let navDay = new Date();
         navDay.setDate(navDay.getDate());
-        let idString = 'user=' + 1 + '&dayof=' + navDay.getFullYear() + '-' + (navDay.getMonth() + 1) + '-' + navDay.getDate();
+        let idString = 'user=' + currentUserId + '&dayof=' + navDay.getFullYear() + '-' + (navDay.getMonth() + 1) + '-' + navDay.getDate();
         //myTimer = undefined;
         //weekClock = false;
         $state.go('dayview', {id: idString});
@@ -16446,6 +16454,13 @@
 
           alert('forbidden user access');
           profileClock = false;
+          let res = document.cookie;
+          let multiple = res.split(';');
+          let key;
+          for (let i = 0; i < multiple.length; i++) {
+            key = multiple[i].split('=');
+            document.cookie = key[0] + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;'
+          }
           $state.go('landing');
         } else {
           $http.get(`/users/${currentUserId}`)
