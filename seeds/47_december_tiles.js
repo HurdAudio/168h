@@ -872,6 +872,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#D0CDC1',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 63,
+          user_id: 1,
+          theme: 'Snow',
+          type: 'week',
+          src_string: '../img/december_tiles/eric-kuck-684577-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '142%',
+          color_dark: '#39414D',
+          color_medium: '#8DB5C5',
+          color_light: '#D2D4CE',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
