@@ -886,6 +886,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#F4F5EF',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 64,
+          user_id: 1,
+          theme: 'Monochromatic',
+          type: 'friday',
+          src_string: '../img/november_tiles/naphtali-marshall-45606-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '163%',
+          color_dark: '#1D1D1D',
+          color_medium: '#242424',
+          color_light: '#929292',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
