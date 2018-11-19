@@ -2584,6 +2584,66 @@ exports.seed = function(knex, Promise) {
           public: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 216,
+          user_author_id: 1,
+          theme: 'Abandoned Places',
+          img_path: './img/modules/ItalianMedeivalVillage.jpg',
+          title: 'Medieval Village; Craco, Italy',
+          artist: 'Jane Drumsara',
+          year: '2013',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 217,
+          user_author_id: 1,
+          theme: 'Abandoned Places',
+          img_path: './img/modules/ChesaIsland.jpg',
+          title: 'Holland Island; Chesapeake Bay',
+          artist: 'baldeaglebluff',
+          year: '2013',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 218,
+          user_author_id: 1,
+          theme: 'Abandoned Places',
+          img_path: './img/modules/Pripyat.jpg',
+          title: 'Pripyat, Ukraine',
+          artist: 'unknown artist',
+          year: '2013',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 219,
+          user_author_id: 1,
+          theme: 'Abandoned Places',
+          img_path: './img/modules/waterChrist.jpg',
+          title: 'Christ of the Abyss; San Fruttuoso, Italy',
+          artist: 'David Smith',
+          year: '2013',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 220,
+          user_author_id: 1,
+          theme: 'Abandoned Places',
+          img_path: './img/modules/villa.jpg',
+          title: 'Villa Epecuén; Argentina',
+          artist: 'Fernando J. Toucedo Urban',
+          year: '2013',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
