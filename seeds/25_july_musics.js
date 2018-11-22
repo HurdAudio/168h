@@ -4540,6 +4540,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 253,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1646324565/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://kouroshyaghmaei.bandcamp.com/album/back-from-the-brink',
+          a_string: 'Back From The Brink by Kourosh Yaghmaei',
+          rule: {
+            "monday": [ 7, 9, 13, 21 ],
+            "tuesday": [ 6, 8, 12, 20 ],
+            "wednesday": [ 5, 7, 11, 19 ],
+            "thursday": [ 4, 5, 10, 18 ],
+            "saturday": [ 3, 5, 9, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 254,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3822467491/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://heladonegro.bandcamp.com/album/this-is-how-you-smile',
+          a_string: '',
+          rule: {
+            "monday": [ 3, 5, 9, 17 ],
+            "tuesday": [ 7, 9, 13, 21 ],
+            "wednesday": [ 6, 8, 12, 20 ],
+            "thursday": [ 5, 7, 11, 19 ],
+            "saturday": [ 4, 5, 10, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 255,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1118515103/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://eeriewanda.bandcamp.com/album/pet-town',
+          a_string: 'Pet Town by Eerie Wanda',
+          rule: {
+            "monday": [ 4, 5, 10, 18 ],
+            "tuesday": [ 3, 5, 9, 17 ],
+            "wednesday": [ 7, 9, 13, 21 ],
+            "thursday": [ 6, 8, 12, 20 ],
+            "saturday": [ 5, 7, 11, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
