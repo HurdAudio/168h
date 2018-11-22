@@ -9304,6 +9304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 466,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/the-tub-1917.jpg',
+          title: 'The Tub',
+          artist: 'Vanessa Bell',
+          year: '1917',
+          rule: {
+            "monday": [ 30, 9, 18, 27 ],
+            "tuesday": [ 5, 14, 24, 1 ],
+            "wednesday": [ 4, 14, 22, 1 ],
+            "thursday": [ 1, 13, 21, 31 ],
+            "friday": [ 2, 12, 20, 30 ],
+            "saturday": [ 1, 12, 19, 29 ],
+            "sunday": [ 31, 10, 18, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 467,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/city-1927.jpg',
+          title: 'City',
+          artist: 'Aleksandra Ekster',
+          year: '1927',
+          rule: {
+            "monday": [ 31, 10, 18, 28 ],
+            "tuesday": [ 30, 9, 18, 27 ],
+            "wednesday": [ 5, 14, 24, 1 ],
+            "thursday": [ 4, 14, 22, 1 ],
+            "friday": [ 1, 13, 21, 31 ],
+            "saturday": [ 2, 12, 20, 30 ],
+            "sunday": [ 1, 12, 19, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 468,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/portrait-of-mademoiselle-chanel-1923.jpg',
+          title: 'Portrait of Mademoiselle Chanel',
+          artist: 'Marie Laurencin',
+          year: '1923',
+          rule: {
+            "monday": [ 1, 12, 19, 29 ],
+            "tuesday": [ 31, 10, 18, 28 ],
+            "wednesday": [ 30, 9, 18, 27 ],
+            "thursday": [ 5, 14, 24, 1 ],
+            "friday": [ 4, 14, 22, 1 ],
+            "saturday": [ 1, 13, 21, 31 ],
+            "sunday": [ 2, 12, 20, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 469,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/swimsuits.jpg',
+          title: 'Swimsuits',
+          artist: 'Sonia Delaunay',
+          year: '?',
+          rule: {
+            "monday": [ 3, 13, 21, 31 ],
+            "tuesday": [ 2, 13, 20, 30 ],
+            "wednesday": [ 1, 11, 19, 29 ],
+            "thursday": [ 31, 10, 19, 28 ],
+            "friday": [ 6, 15, 25, 2 ],
+            "saturday": [ 5, 15, 23, 2 ],
+            "sunday": [ 2, 14, 22, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 470,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/a-cuca-1924.jpg',
+          title: 'A Cuca',
+          artist: 'Tarsila do Amaral',
+          year: '1924',
+          rule: {
+            "monday": [ 2, 14, 22, 1 ],
+            "tuesday": [ 3, 13, 21, 31 ],
+            "wednesday": [ 2, 13, 20, 30 ],
+            "thursday": [ 1, 11, 19, 29 ],
+            "friday": [ 31, 10, 19, 28 ],
+            "saturday": [ 6, 15, 25, 2 ],
+            "sunday": [ 5, 15, 23, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
