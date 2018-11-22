@@ -5080,6 +5080,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 283,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3043759318/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://hopeforthetapedeck.bandcamp.com/album/dennehy',
+          a_string: 'Dennehy by Serengeti',
+          rule: {
+            "monday": [ 29, 23, 25, 2 ],
+            "tuesday": [ 1, 24, 26, 3 ],
+            "wednesday": [ 13, 17, 19, 23 ],
+            "thursday": [ 16, 19, 21, 23 ],
+            "saturday": [ 27, 21, 23, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 284,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3677204173/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://anticon.bandcamp.com/album/theres-a-situation-on-the-homefront',
+          a_string: 'There&#39;s A Situation On The Homefront by Tha Grimm Teachaz',
+          rule: {
+            "monday": [ 27, 21, 23, 25 ],
+            "tuesday": [ 29, 23, 25, 2 ],
+            "wednesday": [ 1, 24, 26, 3 ],
+            "thursday": [ 13, 17, 19, 23 ],
+            "saturday": [ 16, 19, 21, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 285,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=524158919/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://anticon.bandcamp.com/album/kenny-dennis-ep',
+          a_string: 'Kenny Dennis EP by SERENGETI',
+          rule: {
+            "monday": [ 16, 19, 21, 23 ],
+            "tuesday": [ 27, 21, 23, 25 ],
+            "wednesday": [ 29, 23, 25, 2 ],
+            "thursday": [ 1, 24, 26, 3 ],
+            "saturday": [ 13, 17, 19, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
