@@ -8304,6 +8304,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 416,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/st-george-killing-the-dragon-1918.jpg',
+          title: 'St. George killing the dragon',
+          artist: 'Ilya Mashkov',
+          year: '1918',
+          rule: {
+            "monday": [ 26, 29, 7, 23 ],
+            "tuesday": [ 1, 5, 13, 29 ],
+            "wednesday": [ 31, 3, 12, 28 ],
+            "thursday": [ 30, 3, 11, 27 ],
+            "friday": [ 29, 2, 10, 26 ],
+            "saturday": [ 28, 30, 9, 25 ],
+            "sunday": [ 27, 30, 8, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 417,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/sunspots-1904.jpg',
+          title: 'Sunspots',
+          artist: 'Cuno Amiet',
+          year: '1904',
+          rule: {
+            "monday": [ 27, 30, 8, 24 ],
+            "tuesday": [ 26, 29, 7, 23 ],
+            "wednesday": [ 1, 5, 13, 29 ],
+            "thursday": [ 31, 3, 12, 28 ],
+            "friday": [ 30, 3, 11, 27 ],
+            "saturday": [ 29, 2, 10, 26 ],
+            "sunday": [ 28, 30, 9, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 418,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/a-sussex-farm-1904.jpg',
+          title: 'A Sussex Farm',
+          artist: 'Henry Herbert La Thangue',
+          year: '1904',
+          rule: {
+            "monday": [ 28, 30, 9, 25 ],
+            "tuesday": [ 27, 30, 8, 24 ],
+            "wednesday": [ 26, 29, 7, 23 ],
+            "thursday": [ 1, 5, 13, 29 ],
+            "friday": [ 31, 3, 12, 28 ],
+            "saturday": [ 30, 3, 11, 27 ],
+            "sunday": [ 29, 2, 10, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 419,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/soldat-1917.jpg',
+          title: 'Soldat',
+          artist: 'Gosta Adrian-Nilsson',
+          year: '1917',
+          rule: {
+            "monday": [ 29, 2, 10, 26 ],
+            "tuesday": [ 28, 30, 9, 25 ],
+            "wednesday": [ 27, 30, 8, 24 ],
+            "thursday": [ 26, 29, 7, 23 ],
+            "friday": [ 1, 5, 13, 29 ],
+            "saturday": [ 31, 3, 12, 28 ],
+            "sunday": [ 30, 3, 11, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 420,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/girl-in-white-1924.jpg',
+          title: 'Girl in White',
+          artist: 'Nicolae Tonitza',
+          year: '1924',
+          rule: {
+            "monday": [ 31, 4, 12, 28 ],
+            "tuesday": [ 30, 3, 11, 27 ],
+            "wednesday": [ 29, 31, 10, 26 ],
+            "thursday": [ 28, 31, 9, 25 ],
+            "friday": [ 27, 30, 8, 24 ],
+            "saturday": [ 2, 6, 14, 30 ],
+            "sunday": [ 1, 4, 13, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
