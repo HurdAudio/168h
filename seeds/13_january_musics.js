@@ -5188,6 +5188,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 289,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=796296857/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://erstwhilerecords.bandcamp.com/album/green-ways',
+          a_string: 'Green Ways by Áine O&#39;Dwyer/Graham Lambkin',
+          rule: {
+            "monday": [ 20, 27, 28, 29 ],
+            "tuesday": [ 19, 25, 26, 28 ],
+            "wednesday": [ 18, 25, 26, 27 ],
+            "thursday": [ 17, 23, 24, 25 ],
+            "saturday": [ 16, 23, 24, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 290,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2411600158/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://erstwhilerecords.bandcamp.com/album/everyone-needs-a-plan',
+          a_string: 'Everyone Needs A Plan by Matthew Revert/Vanessa Rossetto',
+          rule: {
+            "monday": [ 16, 23, 24, 25 ],
+            "tuesday": [ 20, 27, 28, 29 ],
+            "wednesday": [ 19, 25, 26, 28 ],
+            "thursday": [ 18, 25, 26, 27 ],
+            "saturday": [ 17, 23, 24, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 291,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2988050534/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://erstwhilerecords.bandcamp.com/album/my-trust-in-you',
+          a_string: 'My Trust In You by Lucio Capece/Marc Baron',
+          rule: {
+            "monday": [ 17, 23, 24, 25 ],
+            "tuesday": [ 16, 23, 24, 25 ],
+            "wednesday": [ 20, 27, 28, 29 ],
+            "thursday": [ 19, 25, 26, 28 ],
+            "saturday": [ 18, 25, 26, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
