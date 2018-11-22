@@ -415,6 +415,41 @@
         });
       }
 
+      function getArtShareCommenterDetails(shareComment, shareIndex, commentIndex) {
+        $http.get(`/users/${shareComment.user_id}`)
+        .then(commenterData => {
+          let commenter = commenterData.data;
+          vm.activeArtShares[shareIndex].comments[commentIndex].user_avatar_url = commenter.user_avatar_url;
+          vm.activeArtShares[shareIndex].comments[commentIndex].name = commenter.name;
+        });
+      }
+
+      function getArtShareComments(artShare, index) {
+        let check;
+
+        $http.get('/art_share_comments')
+        .then(artShareCommentsData => {
+          let artShareComments = artShareCommentsData.data;
+          let shareComments = artShareComments.filter(entry => {
+            return(entry.art_share === artShare.id);
+          });
+          if (shareComments.length > 0) {
+            for (let i = 0; i < shareComments.length; i++) {
+              if (i === 0) {
+                vm.activeArtShares[index].comments = [];
+              }
+              vm.activeArtShares[index].comments[i] = {
+                id: shareComments[i].id,
+                comment: shareComments[i].comment
+              };
+              getArtShareCommenterDetails(shareComments[i], index, i);
+              check = new Date(shareComments[i].created_at);
+              vm.activeArtShares[index].comments[i].cleanDate = cleanDateHoliday(shareComments[i].created_at) + ' at ' + check.toLocaleTimeString('en-GB') + '.';
+            }
+          }
+        });
+      }
+
       function retrieveUserArtShares() {
         let aDate;
         let bDate;
@@ -444,6 +479,7 @@
               vm.activeArtShares[i].cleanDate = cleanDateHoliday(artShares[i].created_at) + ' at ' + check.toLocaleTimeString('en-GB') + '.';
               getArtShareUserData(artShares[i], i);
               getArtDatas(artShares[i], i);
+              getArtShareComments(artShares[i], i);
             }
             setTimeout(() => {
               for (let j = 0; j < vm.activeArtShares.length; j++) {
