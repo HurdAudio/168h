@@ -4216,6 +4216,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 235,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1110099553/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://bauhaus.bandcamp.com/album/the-bela-session',
+          a_string: 'The Bela Session by Bauhaus',
+          rule: {
+            "monday": [ 9, 19, 29, 1 ],
+            "tuesday": [ 8, 18, 29, 31 ],
+            "wednesday": [ 7, 17, 27, 30 ],
+            "thursday": [ 11, 21, 31, 3 ],
+            "saturday": [ 10, 20, 30, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 236,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2253179393/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://warhaus.bandcamp.com/album/warhaus',
+          a_string: 'Warhaus by Warhaus',
+          rule: {
+            "monday": [ 10, 20, 30, 2 ],
+            "tuesday": [ 9, 19, 29, 1 ],
+            "wednesday": [ 8, 18, 29, 31 ],
+            "thursday": [ 7, 17, 27, 30 ],
+            "saturday": [ 11, 21, 31, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 237,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3426643449/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://wearetheacid.bandcamp.com/album/the-acid-ep',
+          a_string: 'The Acid EP by The Acid',
+          rule: {
+            "monday": [ 11, 21, 31, 3 ],
+            "tuesday": [ 10, 20, 30, 2 ],
+            "wednesday": [ 9, 19, 29, 1 ],
+            "thursday": [ 8, 18, 29, 31 ],
+            "saturday": [ 7, 17, 27, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
