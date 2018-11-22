@@ -8704,6 +8704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 436,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/untitled-large-open.jpg',
+          title: 'Untitled',
+          artist: 'Ivan Palis',
+          year: '2011',
+          rule: {
+            "monday": [ 2, 12, 22, 29 ],
+            "tuesday": [ 1, 11, 21, 29 ],
+            "wednesday": [ 30, 10, 20, 28 ],
+            "thursday": [ 29, 9, 19, 27 ],
+            "friday": [ 8, 18, 28, 26 ],
+            "saturday": [ 27, 7, 17, 25 ],
+            "sunday": [ 26, 6, 16, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 437,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/photography-the-necklace-medium-format-film-people-nude-female-large-open.jpg',
+          title: 'The Necklace',
+          artist: 'Matthieu G.',
+          year: '2012',
+          rule: {
+            "monday": [ 26, 6, 16, 24 ],
+            "tuesday": [ 2, 12, 22, 29 ],
+            "wednesday": [ 1, 11, 21, 29 ],
+            "thursday": [ 30, 10, 20, 28 ],
+            "friday": [ 29, 9, 19, 27 ],
+            "saturday": [ 8, 18, 28, 26 ],
+            "sunday": [ 27, 7, 17, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 438,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/photography-kejt-medium-format-film-people-miscellaneous-female-large-open.jpg',
+          title: 'Kejt',
+          artist: 'Magda Andrzejewska',
+          year: '2011',
+          rule: {
+            "monday": [ 27, 7, 17, 25 ],
+            "tuesday": [ 26, 6, 16, 24 ],
+            "wednesday": [ 2, 12, 22, 29 ],
+            "thursday": [ 1, 11, 21, 29 ],
+            "friday": [ 30, 10, 20, 28 ],
+            "saturday": [ 29, 9, 19, 27 ],
+            "sunday": [ 8, 18, 28, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 439,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/image-ekaterina-medium-open.jpg',
+          title: 'Ekaterina',
+          artist: 'Yuriy K',
+          year: '2012',
+          rule: {
+            "monday": [ 8, 18, 28, 26 ],
+            "tuesday": [ 27, 7, 17, 25 ],
+            "wednesday": [ 26, 6, 16, 24 ],
+            "thursday": [ 2, 12, 22, 29 ],
+            "friday": [ 1, 11, 21, 29 ],
+            "saturday": [ 30, 10, 20, 28 ],
+            "sunday": [ 29, 9, 19, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 440,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/photography-the-way-i-see-her-miscellaneous-people-female-large-open.jpg',
+          title: 'The Way I See Her',
+          artist: 'Aleksander Smid',
+          year: '2012',
+          rule: {
+            "monday": [ 29, 9, 19, 27 ],
+            "tuesday": [ 8, 18, 28, 26 ],
+            "wednesday": [ 27, 7, 17, 25 ],
+            "thursday": [ 26, 6, 16, 24 ],
+            "friday": [ 2, 12, 22, 29 ],
+            "saturday": [ 1, 11, 21, 29 ],
+            "sunday": [ 30, 10, 20, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
