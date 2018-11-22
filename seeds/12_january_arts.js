@@ -9704,6 +9704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 486,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/exposed-painting-olive-green-1998.jpg',
+          title: 'Exposed Painting, Olive Green',
+          artist: 'Callum Innes',
+          year: '1998',
+          rule: {
+            "monday": [ 7, 8, 19, 11 ],
+            "tuesday": [ 10, 12, 4, 24 ],
+            "wednesday": [ 15, 13, 5, 8 ],
+            "thursday": [ 15, 16, 7, 11 ],
+            "friday": [ 18, 20, 21, 23 ],
+            "saturday": [ 20, 22, 26, 29 ],
+            "sunday": [ 22, 24, 25, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 487,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/struttura-1967.jpg',
+          title: 'Struttura',
+          artist: 'Rodolfo Arico',
+          year: '1967',
+          rule: {
+            "monday": [ 22, 24, 25, 26 ],
+            "tuesday": [ 7, 8, 19, 11 ],
+            "wednesday": [ 10, 12, 4, 24 ],
+            "thursday": [ 15, 13, 5, 8 ],
+            "friday": [ 15, 16, 7, 11 ],
+            "saturday": [ 18, 20, 21, 23 ],
+            "sunday": [ 20, 22, 26, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 488,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/delta-theta-1961.jpg',
+          title: 'Delta Theta',
+          artist: 'Morris Louis',
+          year: '1961',
+          rule: {
+            "monday": [ 20, 22, 26, 29 ],
+            "tuesday": [ 22, 24, 25, 26 ],
+            "wednesday": [ 7, 8, 19, 11 ],
+            "thursday": [ 10, 12, 4, 24 ],
+            "friday": [ 15, 13, 5, 8 ],
+            "saturday": [ 15, 16, 7, 11 ],
+            "sunday": [ 18, 20, 21, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 489,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/fractured-image-1972.jpg',
+          title: 'Fractured Image',
+          artist: 'Vasile Dobrian',
+          year: '1972',
+          rule: {
+            "monday": [ 18, 20, 21, 23 ],
+            "tuesday": [ 20, 22, 26, 29 ],
+            "wednesday": [ 22, 24, 25, 26 ],
+            "thursday": [ 7, 8, 19, 11 ],
+            "friday": [ 10, 12, 4, 24 ],
+            "saturday": [ 15, 13, 5, 8 ],
+            "sunday": [ 15, 16, 7, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 490,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/red-1966.jpg',
+          title: 'Red',
+          artist: 'Thomas Downing',
+          year: '1966',
+          rule: {
+            "monday": [ 16, 17, 8, 12 ],
+            "tuesday": [ 19, 21, 22, 24 ],
+            "wednesday": [ 21, 23, 27, 30 ],
+            "thursday": [ 23, 25, 26, 27 ],
+            "friday": [ 8, 9, 20, 12 ],
+            "saturday": [ 11, 13, 5, 25 ],
+            "sunday": [ 16, 14, 6, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
