@@ -8104,6 +8104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 406,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/a-haystack-near-antagnes-under-a-primitive-cover-in-canton-vaud-region-romandie-1977.jpg',
+          title: 'A haystack near Antagnes, in Canton Vaud - region Romandie - watercolor plain air, in Swiss landscape',
+          artist: 'Hubertine Heijermans',
+          year: '1977',
+          rule: {
+            "monday": [ 28, 4, 22, 30 ],
+            "tuesday": [ 27, 3, 21, 29 ],
+            "wednesday": [ 16, 2, 20, 29 ],
+            "thursday": [ 15, 22, 19, 27 ],
+            "friday": [ 23, 30, 18, 25 ],
+            "saturday": [ 30, 6, 24, 2 ],
+            "sunday": [ 29, 4, 23, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 407,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/robert-de-niro-taxi-driver-1988.jpg',
+          title: 'Robert De Niro, Taxi Driver',
+          artist: '3D',
+          year: '1988',
+          rule: {
+            "monday": [ 29, 4, 23, 1 ],
+            "tuesday": [ 28, 4, 22, 30 ],
+            "wednesday": [ 27, 3, 21, 29 ],
+            "thursday": [ 16, 2, 20, 29 ],
+            "friday": [ 15, 22, 19, 27 ],
+            "saturday": [ 23, 30, 18, 25 ],
+            "sunday": [ 30, 6, 24, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 408,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/2-to-the-moon-1961.jpg',
+          title: '2 to the Moon',
+          artist: 'Hassel Smith',
+          year: '1961',
+          rule: {
+            "monday": [ 30, 6, 24, 2 ],
+            "tuesday": [ 29, 4, 23, 1 ],
+            "wednesday": [ 28, 4, 22, 30 ],
+            "thursday": [ 27, 3, 21, 29 ],
+            "friday": [ 16, 2, 20, 29 ],
+            "saturday": [ 15, 22, 19, 27 ],
+            "sunday": [ 23, 30, 18, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 409,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/sacred-flame-1975.jpg',
+          title: 'Sacred Flame',
+          artist: 'Kazuo Shiraga',
+          year: '1975',
+          rule: {
+            "monday": [ 23, 30, 18, 25 ],
+            "tuesday": [ 30, 6, 24, 2 ],
+            "wednesday": [ 29, 4, 23, 1 ],
+            "thursday": [ 28, 4, 22, 30 ],
+            "friday": [ 27, 3, 21, 29 ],
+            "saturday": [ 16, 2, 20, 29 ],
+            "sunday": [ 15, 22, 19, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 410,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/o-casamento-1967.jpg',
+          title: 'O Casamento',
+          artist: 'Alvaro Lapa',
+          year: '1967',
+          rule: {
+            "monday": [ 15, 22, 19, 27 ],
+            "tuesday": [ 23, 30, 18, 25 ],
+            "wednesday": [ 30, 6, 24, 2 ],
+            "thursday": [ 29, 4, 23, 1 ],
+            "friday": [ 28, 4, 22, 30 ],
+            "saturday": [ 27, 3, 21, 29 ],
+            "sunday": [ 16, 2, 20, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
