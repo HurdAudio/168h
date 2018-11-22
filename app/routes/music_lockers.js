@@ -7,7 +7,7 @@ const router = express.Router();
 
 
 router.get('/', (req, res, next) => {
-  knex('art_lockers')
+  knex('music_lockers')
   .select('*')
   .then((results) => {
     res.send(results);
@@ -19,7 +19,7 @@ router.get('/', (req, res, next) => {
 
 router.get('/:id', (req, res, next) => {
 
-  knex('art_lockers')
+  knex('music_lockers')
     .select()
     .where('id', req.params.id)
     .first()
@@ -37,15 +37,15 @@ router.get('/:id', (req, res, next) => {
 
 
 router.post('/', (req, res, next) => {
-  knex('art_lockers')
+  knex('music_lockers')
   .insert({
     user_id: req.body.user_id,
     theme: req.body.theme,
     former_month: req.body.former_month,
-    img_path: req.body.img_path,
-    title: req.body.title,
-    artist: req.body.artist,
-    year: req.body.year,
+    source: req.body.source,
+    src_string: req.body.src_string,
+    href_string: req.body.href_string,
+    a_string: req.body.a_string,
     rule: req.body.rule
   }, '*')
   .then((result) => {
@@ -58,16 +58,16 @@ router.post('/', (req, res, next) => {
 
 
 router.patch('/:id', (req, res, next) => {
-  knex('art_lockers')
+  knex('music_lockers')
   .where('id', req.params.id)
   .update({
     user_id: req.body.user_id,
     theme: req.body.theme,
     former_month: req.body.former_month,
-    img_path: req.body.img_path,
-    title: req.body.title,
-    artist: req.body.artist,
-    year: req.body.year,
+    source: req.body.source,
+    src_string: req.body.src_string,
+    href_string: req.body.href_string,
+    a_string: req.body.a_string,
     rule: req.body.rule
   }, '*')
     .then((results)=>{
@@ -81,7 +81,7 @@ router.patch('/:id', (req, res, next) => {
 router.delete('/:id', (req, res, next) => {
     let record;
 
-      knex('art_lockers')
+      knex('music_lockers')
         .where('id', req.params.id)
         .first()
         .then((row) => {
@@ -92,7 +92,7 @@ router.delete('/:id', (req, res, next) => {
           record = row;
 
 
-          return knex('art_lockers')
+          return knex('music_lockers')
             .del()
             .where('id', req.params.id);
         })
@@ -105,10 +105,10 @@ router.delete('/:id', (req, res, next) => {
             user_id: record.user_id,
             theme: record.theme,
             former_month: record.former_month,
-            img_path: record.img_path,
-            title: record.title,
-            artist: record.artist,
-            year: record.year,
+            source: record.source,
+            src_string: record.src_string,
+            href_string: record.href_string,
+            a_string: record.a_string,
             rule: record.rule,
             created_at: record.created_at,
             updated_at: record.updated_at
