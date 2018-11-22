@@ -9504,6 +9504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 476,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/220px-I_Want_Yuh_to_Go_Down,_Death,_Easy_by_Rose_Piper_ca._1988.jpg',
+          title: 'I Want Yuh to Go Down, Death, Easy / An\' Bring My Servant Home',
+          artist: 'Rose Piper',
+          year: '1988',
+          rule: {
+            "monday": [ 17, 22, 28, 9 ],
+            "tuesday": [ 16, 24, 3, 11 ],
+            "wednesday": [ 18, 28, 5, 11 ],
+            "thursday": [ 20, 28, 7, 17 ],
+            "friday": [ 20, 1, 26, 16 ],
+            "saturday": [ 10, 18, 26, 5 ],
+            "sunday": [ 11, 20, 28, 7 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 477,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/Interior-aka-Interior-of-Cabin-by-Horace-Pippin-680uw.jpg',
+          title: 'Interior',
+          artist: 'Horace Pippin',
+          year: '1944',
+          rule: {
+            "monday": [ 11, 20, 28, 7 ],
+            "tuesday": [ 17, 22, 28, 9 ],
+            "wednesday": [ 16, 24, 3, 11 ],
+            "thursday": [ 18, 28, 5, 11 ],
+            "friday": [ 20, 28, 7, 17 ],
+            "saturday": [ 20, 1, 26, 16 ],
+            "sunday": [ 10, 18, 26, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 478,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/a4d8caaf28f4b298a8bd90bea8416740.jpg',
+          title: 'Skulduggery Pleasant!',
+          artist: 'Rae Pleasant',
+          year: '?',
+          rule: {
+            "monday": [ 10, 18, 26, 5 ],
+            "tuesday": [ 11, 20, 28, 7 ],
+            "wednesday": [ 17, 22, 28, 9 ],
+            "thursday": [ 16, 24, 3, 11 ],
+            "friday": [ 18, 28, 5, 11 ],
+            "saturday": [ 20, 28, 7, 17 ],
+            "sunday": [ 20, 1, 26, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 479,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/GreatAunt-692x1024.jpg',
+          title: 'The Artist’s Great-Aunt Shugg Lampley',
+          artist: 'P. H. Polk',
+          year: '1968',
+          rule: {
+            "monday": [ 20, 1, 26, 16 ],
+            "tuesday": [ 10, 18, 26, 5 ],
+            "wednesday": [ 11, 20, 28, 7 ],
+            "thursday": [ 17, 22, 28, 9 ],
+            "friday": [ 16, 24, 3, 11 ],
+            "saturday": [ 18, 28, 5, 11 ],
+            "sunday": [ 20, 28, 7, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 480,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/2008.195.jpg',
+          title: 'Created with a purpose look deeper than the surface (C.N. Cleveland Heights, Ohio) from The Mind of Cleveland Poster Series',
+          artist: 'Carl Robert Pope',
+          year: '2008',
+          rule: {
+            "monday": [ 20, 28, 7, 17 ],
+            "tuesday": [ 20, 1, 26, 16 ],
+            "wednesday": [ 10, 18, 26, 5 ],
+            "thursday": [ 11, 20, 28, 7 ],
+            "friday": [ 17, 22, 28, 9 ],
+            "saturday": [ 16, 24, 3, 11 ],
+            "sunday": [ 18, 28, 5, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
