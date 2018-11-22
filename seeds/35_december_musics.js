@@ -4000,6 +4000,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 223,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3189468635/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://repsych.bandcamp.com/album/peruvian-psychedelic-rock-vol-3-1965-1971',
+          a_string: 'Peruvian Psychedelic Rock - Vol 3 (1965-1971) by Various Artists',
+          rule: {
+            "monday": [ 3, 9, 15, 21 ],
+            "tuesday": [ 7, 13, 19, 25 ],
+            "wednesday": [ 6, 12, 18, 23 ],
+            "thursday": [ 3, 11, 17, 23 ],
+            "saturday": [ 2, 10, 16, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 224,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3311226516/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://repsych.bandcamp.com/album/los-yorks-67-peru-garage-rock-wild-beat-1967',
+          a_string: 'Los York&#39;s &#39;67 (Peru Garage Rock Wild Beat) 1967 by Los York&#39;s',
+          rule: {
+            "monday": [ 3, 11, 17, 23 ],
+            "tuesday": [ 4, 10, 16, 22 ],
+            "wednesday": [ 8, 14, 20, 26 ],
+            "thursday": [ 7, 13, 19, 25 ],
+            "saturday": [ 4, 12, 18, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 225,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1822686084/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://repsych.bandcamp.com/album/los-yorks-69-peru-garage-rock-fuzz-wild-crazy-melcochita-1969',
+          a_string: 'Los York&#39;s &#39;69 (Peru Garage Rock Fuzz Wild Crazy Melcochita) 1969 by Los York&#39;s',
+          rule: {
+            "monday": [ 4, 12, 18, 24 ],
+            "tuesday": [ 3, 11, 17, 23 ],
+            "wednesday": [ 4, 10, 16, 22 ],
+            "thursday": [ 8, 14, 20, 26 ],
+            "saturday": [ 7, 13, 19, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
