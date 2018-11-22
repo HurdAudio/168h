@@ -4972,6 +4972,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 277,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4199762733/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://rustblade.bandcamp.com/album/marchesa',
+          a_string: 'Marchesa by Lydia Lunch',
+          rule: {
+            "monday": [ 14, 20, 26, 3 ],
+            "tuesday": [ 13, 19, 25, 2 ],
+            "wednesday": [ 12, 18, 24, 2 ],
+            "thursday": [ 10, 17, 23, 31 ],
+            "saturday": [ 10, 16, 22, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 278,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1195266483/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://rustblade.bandcamp.com/album/under-the-covers',
+          a_string: 'Under The Covers by Lydia Lunch &amp; Cypress Grove',
+          rule: {
+            "monday": [ 10, 16, 22, 30 ],
+            "tuesday": [ 14, 20, 26, 3 ],
+            "wednesday": [ 13, 19, 25, 2 ],
+            "thursday": [ 12, 18, 24, 2 ],
+            "saturday": [ 10, 17, 23, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 279,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2839275529/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://rustblade.bandcamp.com/album/a-fistful-of-desert-blues',
+          a_string: 'A Fistful Of Desert Blues by Lydia Lunch &amp; Cypress Grove',
+          rule: {
+            "monday": [ 10, 17, 23, 31 ],
+            "tuesday": [ 10, 16, 22, 30 ],
+            "wednesday": [ 14, 20, 26, 3 ],
+            "thursday": [ 13, 19, 25, 2 ],
+            "saturday": [ 12, 18, 24, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
