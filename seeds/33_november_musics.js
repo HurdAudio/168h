@@ -4108,6 +4108,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 229,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2206969211/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cheikhlo.bandcamp.com/album/lamp-fall',
+          a_string: 'Lamp Fall by Cheikh Lo',
+          rule: {
+            "monday": [ 30, 11, 22, 4 ],
+            "tuesday": [ 4, 15, 26, 30 ],
+            "wednesday": [ 3, 14, 25, 29 ],
+            "thursday": [ 2, 13, 24, 28 ],
+            "saturday": [ 1, 12, 23, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 230,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2099982909/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cheikhlo.bandcamp.com/album/bambay-gueej',
+          a_string: 'Bambay Gueej by Cheikh Lo',
+          rule: {
+            "monday": [ 1, 12, 23, 25 ],
+            "tuesday": [ 30, 11, 22, 4 ],
+            "wednesday": [ 4, 15, 26, 30 ],
+            "thursday": [ 3, 14, 25, 29 ],
+            "saturday": [ 2, 13, 24, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 231,
+          user_id: 1,
+          theme: 'Ethiopian & Pan-African',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=572366773/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cheikhlo.bandcamp.com/album/n-la-thiass',
+          a_string: 'Né La Thiass by Cheikh Lo',
+          rule: {
+            "monday": [ 3, 14, 25, 29 ],
+            "tuesday": [ 2, 13, 24, 26 ],
+            "wednesday": [ 1, 12, 23, 5 ],
+            "thursday": [ 5, 16, 27, 1 ],
+            "saturday": [ 4, 15, 26, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
