@@ -9104,6 +9104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 456,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/ap,550x550,12x12,1,transparent,t.png',
+          title: 'Nolan Arenado Heat Map - Colorado Rockies',
+          artist: 'Art Prints',
+          year: '2017',
+          rule: {
+            "monday": [ 5, 11, 16, 23 ],
+            "tuesday": [ 19, 9, 15, 21 ],
+            "wednesday": [ 4, 7, 15, 21 ],
+            "thursday": [ 3, 7, 22, 20 ],
+            "friday": [ 30, 6, 12, 18 ],
+            "saturday": [ 1, 6, 12, 18 ],
+            "sunday": [ 30, 5, 11, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 457,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/Rock+On!+Colorado+Rockies.jpg',
+          title: 'Rock On! Colorado Rockies',
+          artist: 'The Wet Paintbrush',
+          year: '2017',
+          rule: {
+            "monday": [ 30, 5, 11, 17 ],
+            "tuesday": [ 5, 11, 16, 23 ],
+            "wednesday": [ 19, 9, 15, 21 ],
+            "thursday": [ 4, 7, 15, 21 ],
+            "friday": [ 3, 7, 22, 20 ],
+            "saturday": [ 30, 6, 12, 18 ],
+            "sunday": [ 1, 6, 12, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 458,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/rockies-cards_AC29342x.jpg',
+          title: 'Colorado Rockies third baseman Nolan Arenado #28 enters the batters box against the St. Louis Cardinals in the first inning at Coors Field',
+          artist: 'Andy Cross',
+          year: '2018',
+          rule: {
+            "monday": [ 1, 6, 12, 18 ],
+            "tuesday": [ 30, 5, 11, 17 ],
+            "wednesday": [ 5, 11, 16, 23 ],
+            "thursday": [ 19, 9, 15, 21 ],
+            "friday": [ 4, 7, 15, 21 ],
+            "saturday": [ 3, 7, 22, 20 ],
+            "sunday": [ 30, 6, 12, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 459,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/gettyimages-479393666-612x612.jpg',
+          title: 'Colorado Rockies v Arizona Diamondbacks',
+          artist: 'Christian Petersen',
+          year: '2015',
+          rule: {
+            "monday": [ 30, 6, 12, 18 ],
+            "tuesday": [ 1, 6, 12, 18 ],
+            "wednesday": [ 30, 5, 11, 17 ],
+            "thursday": [ 5, 11, 16, 23 ],
+            "friday": [ 19, 9, 15, 21 ],
+            "saturday": [ 4, 7, 15, 21 ],
+            "sunday": [ 3, 7, 22, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 460,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/il_570xN.1529476865_h8m6.jpg',
+          title: 'Colorado Rockies Baseball Stadium Art',
+          artist: 'unknown artist',
+          year: '?',
+          rule: {
+            "monday": [ 3, 7, 22, 20 ],
+            "tuesday": [ 30, 6, 12, 18 ],
+            "wednesday": [ 1, 6, 12, 18 ],
+            "thursday": [ 30, 5, 11, 17 ],
+            "friday": [ 5, 11, 16, 23 ],
+            "saturday": [ 19, 9, 15, 21 ],
+            "sunday": [ 4, 7, 15, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
