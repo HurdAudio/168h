@@ -8504,6 +8504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 426,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/head-of-a-woman-1915.jpg',
+          title: 'Head of a Woman',
+          artist: 'Henri Laurens',
+          year: '1915',
+          rule: {
+            "monday": [ 29, 9, 20, 21 ],
+            "tuesday": [ 28, 8, 18, 20 ],
+            "wednesday": [ 27, 7, 18, 19 ],
+            "thursday": [ 26, 6, 17, 28 ],
+            "friday": [ 1, 12, 23, 2 ],
+            "saturday": [ 31, 9, 22, 2 ],
+            "sunday": [ 29, 9, 21, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 427,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/the-farm-on-the-estate-1923.jpg',
+          title: 'The Farm on the Estate',
+          artist: 'Andre Dunoyer de Segonzac',
+          year: '1923',
+          rule: {
+            "monday": [ 30, 10, 22, 2 ],
+            "tuesday": [ 30, 10, 21, 22 ],
+            "wednesday": [ 29, 9, 19, 21 ],
+            "thursday": [ 28, 8, 19, 20 ],
+            "friday": [ 27, 7, 18, 29 ],
+            "saturday": [ 2, 13, 24, 3 ],
+            "sunday": [ 1, 10, 23, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 428,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/yachting-1937.jpg',
+          title: 'Yachting',
+          artist: 'Jean Metzinger',
+          year: '1937',
+          rule: {
+            "monday": [ 1, 10, 23, 3 ],
+            "tuesday": [ 30, 10, 22, 2 ],
+            "wednesday": [ 30, 10, 21, 22 ],
+            "thursday": [ 29, 9, 19, 21 ],
+            "friday": [ 28, 8, 19, 20 ],
+            "saturday": [ 27, 7, 18, 29 ],
+            "sunday": [ 2, 13, 24, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 429,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/a1e279eeef740826b7237013c8d93fd1.jpg',
+          title: 'Elle',
+          artist: 'Gustav Adolf Mossa',
+          year: '1906',
+          rule: {
+            "monday": [ 2, 13, 24, 3 ],
+            "tuesday": [ 1, 10, 23, 3 ],
+            "wednesday": [ 30, 10, 22, 2 ],
+            "thursday": [ 30, 10, 21, 22 ],
+            "friday": [ 29, 9, 19, 21 ],
+            "saturday": [ 28, 8, 19, 20 ],
+            "sunday": [ 27, 7, 18, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 430,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/untitled-1931-3.jpg',
+          title: 'Untitled',
+          artist: 'Auguste Herbin',
+          year: '1931',
+          rule: {
+            "monday": [ 27, 7, 18, 29 ],
+            "tuesday": [ 2, 13, 24, 3 ],
+            "wednesday": [ 1, 10, 23, 3 ],
+            "thursday": [ 30, 10, 22, 2 ],
+            "friday": [ 30, 10, 21, 22 ],
+            "saturday": [ 29, 9, 19, 21 ],
+            "sunday": [ 28, 8, 19, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
