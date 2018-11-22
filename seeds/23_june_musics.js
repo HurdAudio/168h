@@ -4648,6 +4648,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 259,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/track=4071517596/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://longformeditions.bandcamp.com/track/improvisation-for-piano-in-summer-2018',
+          a_string: 'Improvisation for Piano in Summer 2018 by Midori Hirano',
+          rule: {
+            "monday": [ 6, 9, 15, 26 ],
+            "tuesday": [ 4, 12, 14, 29 ],
+            "wednesday": [ 8, 12, 18, 29 ],
+            "thursday": [ 7, 10, 15, 27 ],
+            "saturday": [ 6, 9, 15, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 260,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/track=1762135904/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://longformeditions.bandcamp.com/track/monolithic-nuance',
+          a_string: 'Monolithic Nuance by Cruel Diagonals',
+          rule: {
+            "monday": [ 6, 9, 15, 27 ],
+            "tuesday": [ 6, 9, 15, 26 ],
+            "wednesday": [ 4, 12, 14, 29 ],
+            "thursday": [ 8, 12, 18, 29 ],
+            "saturday": [ 7, 10, 15, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 261,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=689288959/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://penelopetrappes.bandcamp.com/album/penelope-two',
+          a_string: 'Penelope Two by Penelope Trappes',
+          rule: {
+            "monday": [ 7, 10, 15, 27 ],
+            "tuesday": [ 6, 9, 15, 27 ],
+            "wednesday": [ 6, 9, 15, 26 ],
+            "thursday": [ 4, 12, 14, 29 ],
+            "saturday": [ 8, 12, 18, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
