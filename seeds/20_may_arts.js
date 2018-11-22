@@ -8904,6 +8904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 446,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/15fk.jpg',
+          title: 'Untitled',
+          artist: 'Fedir Krychevsky',
+          year: '?',
+          rule: {
+            "monday": [ 25, 5, 15, 24 ],
+            "tuesday": [ 23, 2, 12, 20 ],
+            "wednesday": [ 21, 30, 11, 20 ],
+            "thursday": [ 31, 12, 22, 30 ],
+            "friday": [ 31, 11, 20, 30 ],
+            "saturday": [ 29, 8, 16, 18 ],
+            "sunday": [ 26, 6, 16, 5 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 447,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/mother.jpg',
+          title: 'Mother',
+          artist: 'Fedir Krychevsky',
+          year: '?',
+          rule: {
+            "monday": [ 26, 6, 16, 5 ],
+            "tuesday": [ 25, 5, 15, 24 ],
+            "wednesday": [ 23, 2, 12, 20 ],
+            "thursday": [ 21, 30, 11, 20 ],
+            "friday": [ 31, 12, 22, 30 ],
+            "saturday": [ 31, 11, 20, 30 ],
+            "sunday": [ 29, 8, 16, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 448,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/self-portrait-1945.jpg',
+          title: 'Self Portrait',
+          artist: 'Tetyana Yablonska',
+          year: '1945',
+          rule: {
+            "monday": [ 30, 9, 17, 19 ],
+            "tuesday": [ 27, 7, 17, 6 ],
+            "wednesday": [ 26, 6, 16, 25 ],
+            "thursday": [ 24, 3, 13, 21 ],
+            "friday": [ 22, 31, 12, 21 ],
+            "saturday": [ 1, 13, 23, 31 ],
+            "sunday": [ 1, 12, 21, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 449,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/self-portrait-in-ukrainian-costume-1946.jpg',
+          title: 'Self Portrait in Ukrainian Costume',
+          artist: 'Tetyana Yablonska',
+          year: '1946',
+          rule: {
+            "monday": [ 1, 12, 21, 31 ],
+            "tuesday": [ 30, 9, 17, 19 ],
+            "wednesday": [ 27, 7, 17, 6 ],
+            "thursday": [ 26, 6, 16, 25 ],
+            "friday": [ 24, 3, 13, 21 ],
+            "saturday": [ 22, 31, 12, 21 ],
+            "sunday": [ 1, 13, 23, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 450,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/before-the-start-1947.jpg',
+          title: 'Before the Start',
+          artist: 'Tetyana Yablonska',
+          year: '1947',
+          rule: {
+            "monday": [ 1, 13, 23, 31 ],
+            "tuesday": [ 1, 12, 21, 31 ],
+            "wednesday": [ 30, 9, 17, 19 ],
+            "thursday": [ 27, 7, 17, 6 ],
+            "friday": [ 26, 6, 16, 25 ],
+            "saturday": [ 24, 3, 13, 21 ],
+            "sunday": [ 22, 31, 12, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
