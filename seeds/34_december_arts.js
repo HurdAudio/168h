@@ -7504,6 +7504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 376,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/40-07,Master.jpg',
+          title: 'Master Comics',
+          artist: 'Newton H. Alfred',
+          year: '1940',
+          rule: {
+            "monday": [ 22, 4, 12, 18 ],
+            "tuesday": [ 21, 2, 1, 17 ],
+            "wednesday": [ 20, 2, 21, 28 ],
+            "thursday": [ 26, 8, 16, 22 ],
+            "friday": [ 25, 6, 15, 21 ],
+            "saturday": [ 24, 6, 14, 20 ],
+            "sunday": [ 23, 5, 13, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 377,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/20-00,McClures.jpg',
+          title: 'McClure\'s',
+          artist: 'J. E. Allen',
+          year: '1920',
+          rule: {
+            "monday": [ 23, 5, 13, 19 ],
+            "tuesday": [ 22, 4, 12, 18 ],
+            "wednesday": [ 21, 2, 1, 17 ],
+            "thursday": [ 20, 2, 21, 28 ],
+            "friday": [ 26, 8, 16, 22 ],
+            "saturday": [ 25, 6, 15, 21 ],
+            "sunday": [ 24, 6, 14, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 378,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/09-02,TechWrld.jpg',
+          title: 'Technical World',
+          artist: 'W. M. Allison',
+          year: '1909',
+          rule: {
+            "monday": [ 25, 7, 15, 21 ],
+            "tuesday": [ 24, 6, 14, 20 ],
+            "wednesday": [ 23, 5, 13, 19 ],
+            "thursday": [ 22, 3, 2, 18 ],
+            "friday": [ 21, 3, 22, 29 ],
+            "saturday": [ 27, 9, 17, 23 ],
+            "sunday": [ 26, 7, 16, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 379,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/1941-12,SpicyAdv.jpg',
+          title: 'Spicy Adventure',
+          artist: 'Allen Anderson',
+          year: '1941',
+          rule: {
+            "monday": [ 26, 7, 16, 22 ],
+            "tuesday": [ 25, 7, 15, 21 ],
+            "wednesday": [ 24, 6, 14, 20 ],
+            "thursday": [ 23, 5, 13, 19 ],
+            "friday": [ 22, 3, 2, 18 ],
+            "saturday": [ 21, 3, 22, 29 ],
+            "sunday": [ 27, 9, 17, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 380,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/21-07,TheAmer2.jpg',
+          title: 'The American',
+          artist: 'Frederic A. Anderson',
+          year: '1921',
+          rule: {
+            "monday": [ 27, 9, 17, 23 ],
+            "tuesday": [ 26, 7, 16, 22 ],
+            "wednesday": [ 25, 7, 15, 21 ],
+            "thursday": [ 24, 6, 14, 20 ],
+            "friday": [ 23, 5, 13, 19 ],
+            "saturday": [ 22, 3, 2, 18 ],
+            "sunday": [ 21, 3, 22, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
