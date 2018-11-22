@@ -7904,6 +7904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 396,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_blabber_phone.jpg',
+          title: 'Do not blab at the phone! Blabber is a find of a spy.',
+          artist: 'P. Golub',
+          year: '1951',
+          rule: {
+            "monday": [ 26, 6, 7, 21 ],
+            "tuesday": [ 4, 5, 16, 20 ],
+            "wednesday": [ 31, 11, 22, 26 ],
+            "thursday": [ 30, 10, 21, 25 ],
+            "friday": [ 29, 9, 20, 24 ],
+            "saturday": [ 28, 8, 19, 23 ],
+            "sunday": [ 27, 7, 18, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 397,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_secrets.jpg',
+          title: 'Strictly keep the state and military secrets!',
+          artist: 'A. Intezarov and N. Sokolov',
+          year: '1952',
+          rule: {
+            "monday": [ 27, 7, 18, 22 ],
+            "tuesday": [ 26, 6, 7, 21 ],
+            "wednesday": [ 4, 5, 16, 20 ],
+            "thursday": [ 31, 11, 22, 26 ],
+            "friday": [ 30, 10, 21, 25 ],
+            "saturday": [ 29, 9, 20, 24 ],
+            "sunday": [ 28, 8, 19, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 398,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_military_secret.jpg',
+          title: 'In the letter home, watch out, accidently do not blab out a military secret!',
+          artist: 'K.Ivanov',
+          year: '1954',
+          rule: {
+            "monday": [ 28, 8, 19, 23 ],
+            "tuesday": [ 27, 7, 18, 22 ],
+            "wednesday": [ 26, 6, 7, 21 ],
+            "thursday": [ 4, 5, 16, 20 ],
+            "friday": [ 31, 11, 22, 26 ],
+            "saturday": [ 30, 10, 21, 25 ],
+            "sunday": [ 29, 9, 20, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 399,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_state_secret.jpg',
+          title: 'Do not blab! Strictly keep the military and state secrets! ',
+          artist: 'U. Chudov',
+          year: '1958',
+          rule: {
+            "monday": [ 30, 10, 21, 25 ],
+            "tuesday": [ 29, 9, 20, 24 ],
+            "wednesday": [ 28, 8, 19, 23 ],
+            "thursday": [ 27, 7, 8, 22 ],
+            "friday": [ 5, 6, 17, 21 ],
+            "saturday": [ 1, 12, 23, 27 ],
+            "sunday": [ 31, 11, 22, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 400,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_blabbing_enemy.jpg',
+          title: 'To blab - is to help an enemy!',
+          artist: 'V. Koretskiy',
+          year: '1954',
+          rule: {
+            "monday": [ 31, 11, 22, 26 ],
+            "tuesday": [ 30, 10, 21, 25 ],
+            "wednesday": [ 29, 9, 20, 24 ],
+            "thursday": [ 28, 8, 19, 23 ],
+            "friday": [ 27, 7, 8, 22 ],
+            "saturday": [ 5, 6, 17, 21 ],
+            "sunday": [ 1, 12, 23, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
