@@ -7704,6 +7704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 386,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/with-winds-1990.jpg',
+          title: 'With Winds',
+          artist: 'Lee Ufan',
+          year: '1990',
+          rule: {
+            "monday": [ 2, 4, 12, 18 ],
+            "tuesday": [ 1, 5, 12, 16 ],
+            "wednesday": [ 30, 3, 10, 15 ],
+            "thursday": [ 29, 3, 10, 15 ],
+            "friday": [ 28, 3, 9, 14 ],
+            "saturday": [ 27, 2, 8, 15 ],
+            "sunday": [ 3, 8, 14, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 387,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/grande-duetto-1990.jpg',
+          title: 'Grande duetto',
+          artist: 'Grazia Varisco',
+          year: '1990',
+          rule: {
+            "monday": [ 3, 8, 14, 19 ],
+            "tuesday": [ 2, 4, 12, 18 ],
+            "wednesday": [ 1, 5, 12, 16 ],
+            "thursday": [ 30, 3, 10, 15 ],
+            "friday": [ 29, 3, 10, 15 ],
+            "saturday": [ 28, 3, 9, 14 ],
+            "sunday": [ 27, 2, 8, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 388,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/untitled-1990.jpg',
+          title: 'Untitled',
+          artist: 'Katsuhito Nishikawa',
+          year: '1990',
+          rule: {
+            "monday": [ 27, 2, 8, 15 ],
+            "tuesday": [ 3, 8, 14, 19 ],
+            "wednesday": [ 2, 4, 12, 18 ],
+            "thursday": [ 1, 5, 12, 16 ],
+            "friday": [ 30, 3, 10, 15 ],
+            "saturday": [ 29, 3, 10, 15 ],
+            "sunday": [ 28, 3, 9, 14 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 389,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/revolution-001-n-atlantic-ocean-newfoundland-1990.jpg',
+          title: 'Revolution 001, N. Atlantic Ocean, Newfoundland',
+          artist: 'Hiroshi Sugimoto',
+          year: '1990',
+          rule: {
+            "monday": [ 28, 3, 9, 14 ],
+            "tuesday": [ 27, 2, 8, 15 ],
+            "wednesday": [ 3, 8, 14, 19 ],
+            "thursday": [ 2, 4, 12, 18 ],
+            "friday": [ 1, 5, 12, 16 ],
+            "saturday": [ 30, 3, 10, 15 ],
+            "sunday": [ 29, 3, 10, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 390,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/revolution-008-caribbean-sea-yucatan-1990.jpg',
+          title: 'Revolution 008, Caribbean Sea, Yucatan',
+          artist: 'Hiroshi Sugimoto',
+          year: '1990',
+          rule: {
+            "monday": [ 29, 3, 10, 15 ],
+            "tuesday": [ 28, 3, 9, 14 ],
+            "wednesday": [ 27, 2, 8, 15 ],
+            "thursday": [ 3, 8, 14, 19 ],
+            "friday": [ 2, 4, 12, 18 ],
+            "saturday": [ 1, 5, 12, 16 ],
+            "sunday": [ 30, 3, 10, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
