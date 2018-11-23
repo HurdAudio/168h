@@ -205,6 +205,51 @@
   </div>
 </div>
 
+<div id="acceptArtPane">
+
+  <h1>Add Shared Art:</h1>
+  <div id="artShareParameters">
+
+    <p>Please select a month:</p>
+    <div id="artShareMonthSelectorDiv">
+      <select id="artShareArtMonthSelect" value="none">
+        <option value="none"></option>
+        <option value="january_arts">January</option>
+        <option value="february_arts">February</option>
+        <option value="march_arts">March</option>
+        <option value="april_arts">April</option>
+        <option value="may_arts">May</option>
+        <option value="june_arts">June</option>
+        <option value="july_arts">July</option>
+        <option value="august_arts">August</option>
+        <option value="september_arts">September</option>
+        <option value="october_arts">October</option>
+        <option value="november_arts">November</option>
+        <option value="december_arts">December</option>
+      </select>
+    </div>
+    <br><br><br><br>
+    <p id="artShareThemeLabel">Theme: </p>
+    <div id="artShareAcceptUserThemeInputDiv">
+
+      <input type="text" id="artShareAcceptUserThemeInput">
+    </div>
+    <br><br><br><br>
+    <div id="artSharePaneCancelOrNotDiv">
+
+      <a class="btn" id="artSharePaneCancel">cancel</a>
+      <a class="btn" id="artSharePaneAccept">accept</a>
+    </div>
+  </div>
+  <div id="theArtForShare">
+
+    <img id="acceptArtArt">
+    <p id="acceptedArtTitle"></p>
+    <br><br><br>
+    <p id="acceptedArtArtistYear"></p>
+  </div>
+</div>
+
 <div id="dashboard" class="pure-g">
   <div id="userProfilePortal" class="pure-u-1-3">
     <div id="profileZone">
@@ -4314,18 +4359,18 @@
             <div class="holidayAcceptDenyButtons" id="artAcceptDecline{{art.id}}">
 
               <a class="btn" ng-click="$ctrl.declineArtShare(art.id)">Decline</a>
-              <a class="btn" ng-click="$ctrl.acceptArtShare(art.id)">Accept</a>
+              <a class="btn" ng-click="$ctrl.acceptArtShare(art.id, art.suggestedTheme)">Accept</a>
             </div><br><br>
-            <!-- <br><br><div id="artShareAccepted{{art.id}}">
+            <br><br><div id="artShareAccepted{{art.id}}">
 
-              <img src="{{art.inviterImg}}"><br>
+              <img src="{{art.invitedImg}}"><br>
               <br><h3>{{art.invitee}} has accepted this observance.</h3>
             </div>
-            <br><br><div id="artShareDeclined{{observe.id}}">
+            <br><br><div id="artShareDeclined{{art.id}}">
 
-              <img src="{{art.inviterImg}}"><br>
+              <img src="{{art.invitedImg}}"><br>
               <br><h3>{{art.invitee}} has declined this observance.</h3>
-            </div> -->
+            </div>
 
             <!-- <a href=""><h3>comment</h3></a> -->
 

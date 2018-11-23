@@ -7,6 +7,7 @@
   var currentUserId = 0;
   var toggle = {};
   var pastAppointmentIds = [];
+  var themeSet = false;
 
 
   function setClock(){
@@ -285,6 +286,302 @@
       vm.userEditObservanceShareCommentCompleted = userEditObservanceShareCommentCompleted;
       vm.deleteObservanceShare = deleteObservanceShare;
       vm.addNewTaskShareComment = addNewTaskShareComment;
+      vm.declineArtShare = declineArtShare;
+      vm.acceptArtShare = acceptArtShare;
+
+      function obtainArtShareMonthThemeData(artMonth, artSharePaneAccept, artShareThemeLabel, artShareAcceptUserThemeInput, suggestedTheme) {
+        let path = artMonth + 'byuser';
+        $http.get(`/${path}/${currentUserId}`)
+        .then(userArtData => {
+          let userArt = userArtData.data;
+          if (userArt.length > 0) {
+            artShareThemeLabel.innerHTML = 'Theme: ' + userArt[0].theme;
+            themeSet = true;
+            artShareAcceptUserThemeInput.setAttribute("style", "display: none;");
+            artSharePaneAccept.setAttribute("style", "visibility: visible;");
+          } else {
+            if (suggestedTheme !== '') {
+              artShareThemeLabel.innerHTML = 'Theme: ' + suggestedTheme;
+              themeSet = true;
+              artShareAcceptUserThemeInput.setAttribute("style", "display: none;");
+              artSharePaneAccept.setAttribute("style", "visibility: visible;");
+            } else {
+              artShareThemeLabel.innerHTML = 'Theme: ';
+              themeSet = false;
+              artShareAcceptUserThemeInput.setAttribute("style", "display: initial;");
+              artSharePaneAccept.setAttribute("style", "visibility: hidden;");
+            }
+          }
+        });
+      }
+
+      function addArtShare(artMonth, suggestedTheme, themeInputValue, acceptArtPane, art, artShareId) {
+
+        let daysInMonth = 0;
+        let theTheme = '';
+        if (suggestedTheme === '') {
+          theTheme = themeInputValue;
+        } else {
+          theTheme = suggestedTheme;
+        }
+        switch(artMonth) {
+          case('january_arts'):
+            daysInMonth = 31;
+            break;
+          case('february_arts'):
+            daysInMonth = 29;
+            break;
+          case('march_arts'):
+            daysInMonth = 31;
+            break;
+          case('april_arts'):
+            daysInMonth = 30;
+            break;
+          case('may_arts'):
+            daysInMonth = 31;
+            break;
+          case('june_arts'):
+            daysInMonth = 30;
+            break;
+          case('july_arts'):
+            daysInMonth = 31;
+            break;
+          case('august_arts'):
+            daysInMonth = 31;
+            break;
+          case('september_arts'):
+            daysInMonth = 30;
+            break;
+          case('october_arts'):
+            daysInMonth = 31;
+            break;
+          case('november_arts'):
+            daysInMonth = 30;
+            break;
+          case('december_arts'):
+            daysInMonth = 31;
+            break;
+          default:
+            console.log('unsupported month');
+        }
+
+        function setRulesArray(len, monthDays) {
+          let arr = [];
+          let total = ((Math.floor(monthDays/len)) + (Math.floor(Math.random() * 4))) + 2;
+          let random = 0;
+
+          while (arr.length < total) {
+            random = (Math.floor(Math.random() * monthDays)) + 1;
+            if (arr.length === 0) {
+              arr[0] = random;
+            } else {
+              if (arr.indexOf(random) === -1) {
+                arr.push(random);
+              }
+            }
+
+          }
+
+          return(arr);
+        }
+
+        let path = artMonth + 'byuser';
+
+        $http.get(`/${path}/${currentUserId}`)
+        .then(userMonthArtsData => {
+          let userMonthArts = userMonthArtsData.data;
+          if (userMonthArts.length > 0) {
+            let subObj = {
+              user_id: currentUserId,
+              theme: userMonthArts[0].theme,
+              img_path: art.img_path,
+              title: art.title,
+              artist: art.artist,
+              year: art.year,
+              rule: {
+                monday: setRulesArray(userMonthArts.length, daysInMonth),
+                tuesday: setRulesArray(userMonthArts.length, daysInMonth),
+                wednesday: setRulesArray(userMonthArts.length, daysInMonth),
+                thursday: setRulesArray(userMonthArts.length, daysInMonth),
+                friday: setRulesArray(userMonthArts.length, daysInMonth),
+                saturday: setRulesArray(userMonthArts.length, daysInMonth),
+                sunday: setRulesArray(userMonthArts.length, daysInMonth)
+              }
+            }
+            $http.post(`/${artMonth}`, subObj)
+            .then(postedArtData => {
+              let postedArt = postedArtData.data;
+              acceptArtPane.setAttribute("style", "opacity: 0; z-index: -6; transition: opacity 0.5s linear;");
+              let shareObj = {
+                accepted: true,
+                responded: true
+              };
+              $http.patch(`/art_shares/${artShareId}`, shareObj)
+              .then(sharedData => {
+                let shared = sharedData.data;
+                console.log(shared);
+              });
+            });
+          } else {
+            let subNewObj = {
+              user_id: currentUserId,
+              theme: theTheme,
+              img_path: art.img_path,
+              title: art.title,
+              artist: art.artist,
+              year: art.year,
+              rule: {
+                monday: setRulesArray(userMonthArts.length, daysInMonth),
+                tuesday: setRulesArray(userMonthArts.length, daysInMonth),
+                wednesday: setRulesArray(userMonthArts.length, daysInMonth),
+                thursday: setRulesArray(userMonthArts.length, daysInMonth),
+                friday: setRulesArray(userMonthArts.length, daysInMonth),
+                saturday: setRulesArray(userMonthArts.length, daysInMonth),
+                sunday: setRulesArray(userMonthArts.length, daysInMonth)
+              }
+            }
+            $http.post(`/${artMonth}`, subNewObj)
+            .then(postedNArtData => {
+              let postedNArt = postedNArtData.data;
+              acceptArtPane.setAttribute("style", "opacity: 0; z-index: -6; transition: opacity 0.5s linear;");
+              let sharedNObj = {
+                accepted: true,
+                responded: true
+              };
+              $http.patch(`/art_shares/${artShareId}`, sharedNObj)
+              .then(sharedNData => {
+                let sharedN = sharedNData.data;
+                console.log(sharedN);
+              });
+            });
+          }
+
+          document.getElementById('artAcceptDecline' + artShareId).setAttribute("style", "display: none;");
+          document.getElementById('artShareAccepted' + artShareId).setAttribute("style", "display: initial;");
+          document.getElementById('artShareDeclined' + artShareId).setAttribute("style", "display: none;");
+        });
+      }
+
+      function acceptArtShare(artShareId, suggestedTheme) {
+        let selectorValues = [ 'none', 'january_arts', 'february_arts', 'march_arts', 'april_arts', 'may_arts', 'june_arts', 'july_arts', 'august_arts', 'september_arts', 'october_arts', 'november_arts', 'december_arts' ];
+        let selectorLabels = [ '', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ];
+        let ele;
+        let acceptArtPane = document.getElementById('acceptArtPane');
+        let acceptArtArt = document.getElementById('acceptArtArt');
+        let acceptedArtTitle = document.getElementById('acceptedArtTitle');
+        let acceptedArtArtistYear = document.getElementById('acceptedArtArtistYear');
+        let artShareMonthSelectorDiv = document.getElementById('artShareMonthSelectorDiv');
+        while(artShareMonthSelectorDiv.firstChild) {
+          artShareMonthSelectorDiv.removeChild(artShareMonthSelectorDiv.firstChild);
+        }
+        let artShareArtMonthSelect = document.createElement('select');
+        artShareMonthSelectorDiv.appendChild(artShareArtMonthSelect);
+        artShareArtMonthSelect.id = 'artShareArtMonthSelect';
+        for (let ind = 0; ind < selectorValues.length; ind++) {
+          ele = document.createElement('option');
+          artShareArtMonthSelect.appendChild(ele);
+          ele.value = selectorValues[ind];
+          ele.innerHTML = selectorLabels[ind];
+        }
+        artShareArtMonthSelect.value = 'none';
+        let artShareAcceptUserThemeInputDiv = document.getElementById('artShareAcceptUserThemeInputDiv');
+        let artShareAcceptUserThemeInput = document.getElementById('artShareAcceptUserThemeInput');
+        if (artShareAcceptUserThemeInput) {
+          artShareAcceptUserThemeInput.parentNode.removeChild(artShareAcceptUserThemeInput);
+          artShareAcceptUserThemeInput = document.createElement('input');
+          artShareAcceptUserThemeInputDiv.appendChild(artShareAcceptUserThemeInput);
+          artShareAcceptUserThemeInput.id = 'artShareAcceptUserThemeInput';
+          artShareAcceptUserThemeInput.type = 'text';
+          artShareAcceptUserThemeInput.value = '';
+        }
+        let artSharePaneCancelOrNotDiv = document.getElementById('artSharePaneCancelOrNotDiv');
+        let artSharePaneCancel = document.getElementById('artSharePaneCancel');
+        if (artSharePaneCancel) {
+          artSharePaneCancel.parentNode.removeChild(artSharePaneCancel);
+          artSharePaneCancel = document.createElement('a');
+          artSharePaneCancelOrNotDiv.appendChild(artSharePaneCancel);
+          artSharePaneCancel.id = 'artSharePaneCancel';
+          artSharePaneCancel.className = 'btn';
+          artSharePaneCancel.innerHTML = 'cancel';
+          artSharePaneCancel.setAttribute("style", "cursor: pointer;");
+        }
+        let artSharePaneAccept = document.getElementById('artSharePaneAccept');
+        if (artSharePaneAccept) {
+          artSharePaneAccept.parentNode.removeChild(artSharePaneAccept);
+          artSharePaneAccept = document.createElement('a');
+          artSharePaneCancelOrNotDiv.appendChild(artSharePaneAccept);
+          artSharePaneAccept.id = 'artSharePaneAccept';
+          artSharePaneAccept.className = 'btn';
+          artSharePaneAccept.innerHTML = 'accept';
+          artSharePaneAccept.setAttribute("style", "cursor: pointer; visibility: hidden;");
+
+        }
+        themeSet = false;
+        let artShareThemeLabel = document.getElementById('artShareThemeLabel');
+
+        $http.get(`/art_shares/${artShareId}`)
+        .then(shareData => {
+          let share = shareData.data;
+          $http.get(`/${share.art_month}/${share.art_id}`)
+          .then(artData => {
+            let art = artData.data;
+            acceptArtPane.setAttribute("style", "opacity: 1; z-index: 6; transition: opacity 0.5s linear;");
+            acceptArtArt.src = art.img_path;
+            acceptedArtTitle.innerHTML = art.title;
+            acceptedArtArtistYear.innerHTML = art.artist + ', ' + art.year;
+
+            artShareArtMonthSelect.addEventListener('change', () => {
+              if (artShareArtMonthSelect.value === 'none') {
+                artSharePaneAccept.setAttribute("style", "visibility: hidden;");
+              } else {
+                if (themeSet) {
+                  artSharePaneAccept.setAttribute("style", "visibility: visible; cursor: pointer;");
+                } else {
+                  artSharePaneAccept.setAttribute("style", "visibility: hidden;");
+                }
+                obtainArtShareMonthThemeData(artShareArtMonthSelect.value, artSharePaneAccept, artShareThemeLabel, artShareAcceptUserThemeInput, suggestedTheme);
+
+              }
+            });
+
+            artShareAcceptUserThemeInput.addEventListener('keyup', () => {
+              if (artShareAcceptUserThemeInput.value === '') {
+                themeSet = false;
+                artSharePaneAccept.setAttribute("style", "visibility: hidden;");
+              } else {
+                themeSet = true;
+                artSharePaneAccept.setAttribute("style", "visibility: visible; cursor: pointer;");
+              }
+            });
+
+            artSharePaneCancel.addEventListener('click', () => {
+              acceptArtPane.setAttribute("style", "opacity: 0; z-index: -6; transition: opacity 0.5s linear;");
+            });
+
+            artSharePaneAccept.addEventListener('click', () => {
+              addArtShare(artShareArtMonthSelect.value, suggestedTheme, artShareAcceptUserThemeInput.value, acceptArtPane, art, artShareId);
+            });
+          });
+        });
+      }
+
+      function declineArtShare(artShareId) {
+        let subObj = {
+          accepted: false,
+          responded: true
+        };
+        let artAcceptDecline = document.getElementById('artAcceptDecline' + artShareId);
+        let artShareAccepted = document.getElementById('artShareAccepted' + artShareId);
+        let artShareDeclined = document.getElementById('artShareDeclined' + artShareId);
+
+        $http.patch(`/art_shares/${artShareId}`, subObj)
+        .then(subbedData => {
+          let subbed = subbedData.data;
+          artAcceptDecline.setAttribute("style", "display: none;");
+          artShareAccepted.setAttribute("style", "display: none;");
+          artShareDeclined.setAttribute("style", "display: initial;");
+        });
+      }
 
       function addNewTaskShareComment(taskId) {
         let cDate = new Date();
@@ -411,6 +708,7 @@
             } else {
               vm.activeArtShares[index].inv_img = invitee.user_avatar_url;
             }
+            vm.activeArtShares[index].invitedImg = invitee.user_avatar_url;
           });
         });
       }
@@ -488,13 +786,34 @@
                   document.getElementById('artblockInvitee' + vm.activeArtShares[j].id).setAttribute("style", "display: none;");
                   if (vm.activeArtShares[j].responded) {
                     document.getElementById('artAcceptDecline' + vm.activeArtShares[j].id).setAttribute("style", "display: none;");
+                    if (vm.activeArtShares[j].accepted) {
+                      document.getElementById('artShareAccepted' + vm.activeArtShares[j].id).setAttribute("style", "display: initial;");
+                      document.getElementById('artShareDeclined' + vm.activeArtShares[j].id).setAttribute("style", "display: none;");
+                    } else {
+                      document.getElementById('artShareAccepted' + vm.activeArtShares[j].id).setAttribute("style", "display: none;");
+                      document.getElementById('artShareDeclined' + vm.activeArtShares[j].id).setAttribute("style", "display: initial;");
+                    }
                   } else {
                     document.getElementById('artAcceptDecline' + vm.activeArtShares[j].id).setAttribute("style", "display: initial; margin-left: 5vmin;");
+                    document.getElementById('artShareAccepted' + vm.activeArtShares[j].id).setAttribute("style", "display: none;");
+                    document.getElementById('artShareDeclined' + vm.activeArtShares[j].id).setAttribute("style", "display: none;");
                   }
                 } else {
                   document.getElementById('artblockInviter' + vm.activeArtShares[j].id).setAttribute("style", "display: none;");
                   document.getElementById('artblockInvitee' + vm.activeArtShares[j].id).setAttribute("style", "display: initial;");
                   document.getElementById('artAcceptDecline' + vm.activeArtShares[j].id).setAttribute("style", "display: none;");
+                  if (vm.activeArtShares[j].responded) {
+                    if (vm.activeArtShares[j].accepted) {
+                      document.getElementById('artShareAccepted' + vm.activeArtShares[j].id).setAttribute("style", "display: initial;");
+                      document.getElementById('artShareDeclined' + vm.activeArtShares[j].id).setAttribute("style", "display: none;");
+                    } else {
+                      document.getElementById('artShareAccepted' + vm.activeArtShares[j].id).setAttribute("style", "display: none;");
+                      document.getElementById('artShareDeclined' + vm.activeArtShares[j].id).setAttribute("style", "display: initial;");
+                    }
+                  } else {
+                    document.getElementById('artShareAccepted' + vm.activeArtShares[j].id).setAttribute("style", "display: none;");
+                    document.getElementById('artShareDeclined' + vm.activeArtShares[j].id).setAttribute("style", "display: none;");
+                  }
                 }
               }
             }, 150);
