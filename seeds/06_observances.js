@@ -10496,6 +10496,39 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 674,
+          user_id: 1,
+          name: 'Marie Laurencin (painter) born 1883',
+          color: '#2C2C2C',
+          picture: './img/artists/Marie_Laurencin,_c.1912,_Paris.jpg',
+          day_of: new Date ('1883-10-31T13:44:00.000Z'),
+          is_annual: true,
+          art_override: true,
+          music_override: false,
+          override_content: {
+            "img_paths": [ './img/artists/self-portrait-1.jpg', './img/artists/self-portrait-1906.jpg', './img/artists/pablo-picasso-1908.jpg', './img/artists/self-portrait-2.jpg', './img/artists/apollinaire-and-his-friends-1909.jpg', './img/artists/the-blue-plume-1914.jpg', './img/artists/les-deux-espagnoles-1915.jpg', './img/artists/girl-s-head-1918.jpg', './img/artists/the-dancer-1919.jpg', './img/artists/woman-with-dove-1919.jpg', './img/artists/girl-with-a-bow-1920.jpg', './img/artists/spanish-dancers-1921.jpg', './img/artists/deer-1923.jpg', './img/artists/portrait-of-baroness-gourgaud-with-pink-coat-1923.jpg', './img/artists/portrait-of-mademoiselle-chanel-1923.jpg', './img/artists/portrait-of-baroness-gourgaud-in-black-mantilla-1924.jpg', './img/artists/the-kiss-1927.jpg', './img/artists/portrait-of-madame-paul-guillaume-1928.jpg', './img/artists/self-portrait-1928.jpg', './img/artists/judith-1930.jpg', './img/artists/jeune-fille-la-guirlande-de-fleurs-1935.jpg', './img/artists/two-heads-1935.jpg', './img/artists/the-rehearsal-1936.jpg', './img/artists/ile-de-france-1940.jpg', './img/artists/young-girl-with-guitar-1940.jpg', './img/artists/woman-with-turban-1941.jpg', './img/artists/portrait-of-andr-salmon-1942.jpg', './img/artists/portrait-of-doctor-robert-le-masle-1949.jpg', './img/artists/artemis.jpg', './img/artists/self-portrait.jpg', './img/artists/self-portrait-3.jpg', './img/artists/aleutian-islands.jpg', './img/artists/3e1e297a-e9bd-41d2-9e36-d0f55883453c.jpg' ],
+            "titles": [ 'Self-Portrait', 'Self-Portrait', 'Pablo Picasso', 'Self-Portrait', 'Apollinaire and His Friends', 'The Blue Plume', 'Les deux Espagnoles', 'Girl\'s Head', 'The Dancer', 'Woman with Dove', 'Girl with a Bow', 'Spanish Dancers', 'Deer', 'Portrait of Baroness Gourgaud with Pink Coat', 'Portrait of Mademoiselle Chanel', 'Portrait of Baroness Gourgaud in Black Mantilla', 'The Kiss', 'Portrait of Madame Paul Guillaume', 'Self-Portrait', 'Judith', 'Jeune Fille à la Guirlande de Fleurs', 'Two Heads', 'The Rehearsal', 'Ile-de-France', 'Young Girl with Guitar', 'Woman with Turban', 'Portrait of André Salmon', 'Portrait of Doctor Robert Le Masle', 'Artemis', 'Self-Portrait', 'Self-Portrait', 'Aleutian Islands', 'Балерины на отдыхе' ],
+            "artists": [ 'Marie Laurencin', 'Marie Laurencin', 'Marie Laurencin', 'Marie Laurencin', 'Marie Laurencin', 'Marie Laurencin', 'Marie Laurencin', 'Marie Laurencin', 'Marie Laurencin', 'Marie Laurencin', 'Marie Laurencin', 'Marie Laurencin', 'Marie Laurencin', 'Marie Laurencin', 'Marie Laurencin', 'Marie Laurencin', 'Marie Laurencin', 'Marie Laurencin', 'Marie Laurencin', 'Marie Laurencin', 'Marie Laurencin', 'Marie Laurencin', 'Marie Laurencin', 'Marie Laurencin', 'Marie Laurencin', 'Marie Laurencin', 'Marie Laurencin', 'Marie Laurencin', 'Marie Laurencin', 'Marie Laurencin', 'Marie Laurencin', 'Marie Laurencin', 'Marie Laurencin' ],
+            "years": [ '1905', '1906', '1908', '1908', '1909', '1914', '1915', '1918', '1919', '1919', '1920', '1921', '1923', '1923', '1923', '1924', '1927', '1928', '1928', '1930', '1935', '1935', '1936', '1940', '1940', '1941', '1942', '1949', '?', '?', '?', '?', '?' ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 675,
+          user_id: 1,
+          name: 'Malcom X (human rights activist) born in 1925',
+          color: '#080808',
+          picture: './img/dissent/Malcolm_X_NYWTS_2a.jpg',
+          day_of: new Date ('1925-05-19T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
