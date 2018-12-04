@@ -2644,6 +2644,66 @@ exports.seed = function(knex, Promise) {
           public: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 221,
+          user_author_id: 1,
+          theme: 'Abandoned Places',
+          img_path: './img/modules/storm-sandy-abandoned-places_resize_md.jpg',
+          title: 'Jet Star Rollercoaster',
+          artist: 'Anthony Quintano',
+          year: '2018',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 222,
+          user_author_id: 1,
+          theme: 'Abandoned Places',
+          img_path: './img/modules/Creepy_Abandoned_Pripyat_resize_md.jpg',
+          title: 'Azure Swimming Pool. Pripyat',
+          artist: 'Hiob',
+          year: '2009',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 223,
+          user_author_id: 1,
+          theme: 'Abandoned Places',
+          img_path: './img/modules/Creepy_Abandoned_Places_SS_Ayrfield_resize_md.jpg',
+          title: 'The 107-Year-Old Floating Forest - SS Ayrfield',
+          artist: 'mezuni',
+          year: '2018',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 224,
+          user_author_id: 1,
+          theme: 'Abandoned Places',
+          img_path: './img/modules/Creepy_Abandoned_Pavlovsk_resize_md.jpg',
+          title: 'Pacific Submarine Fleet Nuclear Shelter, Pavlovsk, Russia',
+          artist: 'Mucking Fagnets',
+          year: '2018',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 225,
+          user_author_id: 1,
+          theme: 'Abandoned Places',
+          img_path: './img/modules/Creepy_Abandoned_Places_beelitz_resize_md.jpg',
+          title: 'Beelitz-Heilstätten Hospital, Beelitz, Germany',
+          artist: 'Olygraphie',
+          year: '2018',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
