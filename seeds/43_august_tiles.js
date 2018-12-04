@@ -942,6 +942,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#C1C5BE',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 68,
+          user_id: 1,
+          theme: 'Primary Colors',
+          type: 'week',
+          src_string: '../img/august_tiles/tumblr_odre1c15Ta1um139jo3_500.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '110%',
+          color_dark: '#0D1B19',
+          color_medium: '#035196',
+          color_light: '#ECF2F0',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
