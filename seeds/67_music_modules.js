@@ -1552,6 +1552,42 @@ exports.seed = function(knex, Promise) {
           public: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 130,
+          user_author_id: 1,
+          theme: 'Shoegaze',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=4271592975/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://milanku.bandcamp.com/album/monument-du-non-tre-mouvement-du-non-vivant',
+          a_string: 'Monument du non-être &amp; Mouvement du non-vivant by Milanku',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 131,
+          user_author_id: 1,
+          theme: 'Shoegaze',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=681429213/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://nadja.bandcamp.com/album/artifical-act-of-god',
+          a_string: 'Artifical Act of God by Nadja &amp; Vampillia',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 132,
+          user_author_id: 1,
+          theme: 'Shoegaze',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=386996282/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://squallrecordings1.bandcamp.com/album/skryvaj',
+          a_string: 'Skryvaj by Nürnberg',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
