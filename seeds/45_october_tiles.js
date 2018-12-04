@@ -914,6 +914,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#FEF8D1',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 66,
+          user_id: 1,
+          theme: 'Autumnal',
+          type: 'sunday',
+          src_string: '../img/october_tiles/arseny-togulev-1135188-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '185%',
+          color_dark: '#001E3A',
+          color_medium: '#F15B35',
+          color_light: '#D7CDD5',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
