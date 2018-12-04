@@ -715,7 +715,7 @@ a.btn:hover {
 
 #schedulePanel {
   height: 41em;
-  overflow: scroll;
+  overflow-y: hidden;
 
   margin-left: 0.1em;
   background-color: #eeeeee;
