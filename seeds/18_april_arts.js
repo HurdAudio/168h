@@ -9204,6 +9204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 461,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/334_Lance_Parrish_Hand_Painted_Baseball_Bat.jpg',
+          title: 'Lance Parrish hand painted baseball bat',
+          artist: 'Paul Nichols',
+          year: '1984',
+          rule: {
+            "monday": [ 4, 7, 15, 21 ],
+            "tuesday": [ 3, 7, 22, 20 ],
+            "wednesday": [ 30, 6, 12, 18 ],
+            "thursday": [ 1, 6, 12, 18 ],
+            "friday": [ 30, 5, 11, 17 ],
+            "saturday": [ 5, 11, 16, 23 ],
+            "sunday": [ 19, 9, 15, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 462,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/Nicklos_Detroit_Folk_Art.jpg',
+          title: 'Detroit Baseball Club',
+          artist: 'Nicklos Richards',
+          year: '?',
+          rule: {
+            "monday": [ 20, 10, 16, 22 ],
+            "tuesday": [ 5, 8, 16, 22 ],
+            "wednesday": [ 4, 8, 23, 21 ],
+            "thursday": [ 1, 7, 13, 19 ],
+            "friday": [ 2, 7, 13, 19 ],
+            "saturday": [ 1, 6, 12, 18 ],
+            "sunday": [ 6, 12, 17, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 463,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/d44a7b4839854995c3a18989a27cb093.jpg',
+          title: 'Ty Cobb Art Detroit Tigers',
+          artist: '?',
+          year: '1928',
+          rule: {
+            "monday": [ 6, 12, 17, 24 ],
+            "tuesday": [ 20, 10, 16, 22 ],
+            "wednesday": [ 5, 8, 16, 22 ],
+            "thursday": [ 4, 8, 23, 21 ],
+            "friday": [ 1, 7, 13, 19 ],
+            "saturday": [ 2, 7, 13, 19 ],
+            "sunday": [ 1, 6, 12, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 464,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/sean-kane-detroit-tigers-custom-glove-art-cobb-verlander-cabrera.jpg',
+          title: 'Tigers Baselball Glove Art',
+          artist: 'Sean Kane',
+          year: '?',
+          rule: {
+            "monday": [ 1, 6, 12, 18 ],
+            "tuesday": [ 6, 12, 17, 24 ],
+            "wednesday": [ 20, 10, 16, 22 ],
+            "thursday": [ 5, 8, 16, 22 ],
+            "friday": [ 4, 8, 23, 21 ],
+            "saturday": [ 1, 7, 13, 19 ],
+            "sunday": [ 2, 7, 13, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 465,
+          user_id: 1,
+          theme: 'Baseball',
+          img_path: './img/april/7f3e2746-287c-43f1-bb2f-66b7c46ee0d7_lg.jpeg',
+          title: 'Original Illustration Artwork',
+          artist: 'unknown artist',
+          year: '?',
+          rule: {
+            "monday": [ 2, 7, 13, 19 ],
+            "tuesday": [ 1, 6, 12, 18 ],
+            "wednesday": [ 6, 12, 17, 24 ],
+            "thursday": [ 20, 10, 16, 22 ],
+            "friday": [ 5, 8, 16, 22 ],
+            "saturday": [ 4, 8, 23, 21 ],
+            "sunday": [ 1, 7, 13, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
