@@ -9004,6 +9004,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 451,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/study-for-bread-1949.jpg',
+          title: 'Study for \'Bread\'',
+          artist: 'Tetyana Yablonska',
+          year: '1949',
+          rule: {
+            "monday": [ 22, 31, 12, 21 ],
+            "tuesday": [ 1, 13, 23, 31 ],
+            "wednesday": [ 1, 12, 21, 31 ],
+            "thursday": [ 30, 9, 17, 19 ],
+            "friday": [ 27, 7, 17, 6 ],
+            "saturday": [ 26, 6, 16, 25 ],
+            "sunday": [ 24, 3, 13, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 452,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/a-girl-rollingup-her-sleeves-study-for-bread-1949.jpg',
+          title: 'A Girl Rollingup Her Sleeves. Study for \'Bread\'',
+          artist: 'Tetyana Yablonska',
+          year: '1949',
+          rule: {
+            "monday": [ 24, 3, 13, 21 ],
+            "tuesday": [ 22, 31, 12, 21 ],
+            "wednesday": [ 1, 13, 23, 31 ],
+            "thursday": [ 1, 12, 21, 31 ],
+            "friday": [ 30, 9, 17, 19 ],
+            "saturday": [ 27, 7, 17, 6 ],
+            "sunday": [ 26, 6, 16, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 453,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/in-a-park-1949.jpg',
+          title: 'In a Park',
+          artist: 'Tetyana Yablonska',
+          year: '1949',
+          rule: {
+            "monday": [ 26, 6, 16, 25 ],
+            "tuesday": [ 24, 3, 13, 21 ],
+            "wednesday": [ 22, 31, 12, 21 ],
+            "thursday": [ 1, 13, 23, 31 ],
+            "friday": [ 1, 12, 21, 31 ],
+            "saturday": [ 30, 9, 17, 19 ],
+            "sunday": [ 27, 7, 17, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 454,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/bread-1949.jpg',
+          title: 'Bread',
+          artist: 'Tetyana Yablonska',
+          year: '1949',
+          rule: {
+            "monday": [ 27, 7, 17, 6 ],
+            "tuesday": [ 26, 6, 16, 25 ],
+            "wednesday": [ 24, 3, 13, 21 ],
+            "thursday": [ 22, 31, 12, 21 ],
+            "friday": [ 1, 13, 23, 31 ],
+            "saturday": [ 1, 12, 21, 31 ],
+            "sunday": [ 30, 9, 17, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 455,
+          user_id: 1,
+          theme: 'Socialism & Worker\'s Rights',
+          img_path: './img/may/has-caught-a-cold-1953.jpg',
+          title: 'Has Caught a Cold',
+          artist: 'Tetyana Yablonska',
+          year: '1953',
+          rule: {
+            "monday": [ 31, 10, 18, 20 ],
+            "tuesday": [ 28, 8, 18, 7 ],
+            "wednesday": [ 27, 7, 17, 26 ],
+            "thursday": [ 25, 4, 14, 22 ],
+            "friday": [ 23, 1, 13, 22 ],
+            "saturday": [ 2, 14, 24, 1 ],
+            "sunday": [ 2, 13, 22, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
