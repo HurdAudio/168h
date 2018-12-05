@@ -8804,6 +8804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 441,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/photography-hanka-digital-people-portrait-female-large-open.jpg',
+          title: 'Hanka',
+          artist: 'Andrea Ehrenreich',
+          year: '2010',
+          rule: {
+            "monday": [ 1, 11, 21, 29 ],
+            "tuesday": [ 30, 10, 20, 28 ],
+            "wednesday": [ 9, 19, 29, 27 ],
+            "thursday": [ 28, 8, 18, 26 ],
+            "friday": [ 27, 7, 17, 25 ],
+            "saturday": [ 3, 13, 23, 30 ],
+            "sunday": [ 2, 12, 23, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 442,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/photography-self-portrait-miscellaneous-people-female-large-open.jpg',
+          title: 'Self Portrait',
+          artist: 'Anna Shakina',
+          year: '2011',
+          rule: {
+            "monday": [ 1, 11, 21, 29 ],
+            "tuesday": [ 30, 10, 20, 28 ],
+            "wednesday": [ 9, 19, 29, 27 ],
+            "thursday": [ 28, 8, 18, 26 ],
+            "friday": [ 27, 7, 17, 25 ],
+            "saturday": [ 3, 13, 23, 30 ],
+            "sunday": [ 2, 12, 23, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 443,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/photography-untitled-digital-people-nude-female-large-open.jpg',
+          title: 'Untitled',
+          artist: 'Paluksht Mark',
+          year: '2011',
+          rule: {
+            "monday": [ 2, 12, 23, 30 ],
+            "tuesday": [ 1, 11, 21, 29 ],
+            "wednesday": [ 30, 10, 20, 28 ],
+            "thursday": [ 9, 19, 29, 27 ],
+            "friday": [ 28, 8, 18, 26 ],
+            "saturday": [ 27, 7, 17, 25 ],
+            "sunday": [ 3, 13, 23, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 444,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/photography-lisa-medium-format-film-people-infant-children-girl-large-open.jpg',
+          title: 'Lisa',
+          artist: 'Dumbo I.gledam',
+          year: '2011',
+          rule: {
+            "monday": [ 3, 13, 23, 30 ],
+            "tuesday": [ 2, 12, 23, 30 ],
+            "wednesday": [ 1, 11, 21, 29 ],
+            "thursday": [ 30, 10, 20, 28 ],
+            "friday": [ 9, 19, 29, 27 ],
+            "saturday": [ 28, 8, 18, 26 ],
+            "sunday": [ 27, 7, 17, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 445,
+          user_id: 1,
+          theme: 'Photography',
+          img_path: './img/june/star-people-portrait-female-large-open.jpg',
+          title: 'Star',
+          artist: 'Sara Braun',
+          year: '2011',
+          rule: {
+            "monday": [ 27, 7, 17, 25 ],
+            "tuesday": [ 3, 13, 23, 30 ],
+            "wednesday": [ 2, 12, 23, 30 ],
+            "thursday": [ 1, 11, 21, 29 ],
+            "friday": [ 30, 10, 20, 28 ],
+            "saturday": [ 9, 19, 29, 27 ],
+            "sunday": [ 28, 8, 18, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
