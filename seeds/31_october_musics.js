@@ -4270,6 +4270,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 238,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1433902603/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://profoundlorerecords.bandcamp.com/album/hypnagogia',
+          a_string: 'Hypnagogia by EVOKEN',
+          rule: {
+            "monday": [ 8, 18, 28, 31 ],
+            "tuesday": [ 12, 22, 1, 4 ],
+            "wednesday": [ 11, 21, 31, 3 ],
+            "thursday": [ 10, 20, 30, 2 ],
+            "saturday": [ 9, 19, 30, 1 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 239,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3360662541/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://cantiquelepreux.bandcamp.com/album/paysages-polaires',
+          a_string: 'Paysages Polaires by CANTIQUE LÉPREUX',
+          rule: {
+            "monday": [ 9, 19, 30, 1 ],
+            "tuesday": [ 8, 18, 28, 31 ],
+            "wednesday": [ 12, 22, 1, 4 ],
+            "thursday": [ 11, 21, 31, 3 ],
+            "saturday": [ 10, 20, 30, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 240,
+          user_id: 1,
+          theme: 'Punk, Metal & Nurse with Wound',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2277136561/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://conventguilt.bandcamp.com/album/diamond-cut-diamond-2',
+          a_string: 'Diamond Cut Diamond by CONVENT GUILT',
+          rule: {
+            "monday": [ 10, 20, 30, 2 ],
+            "tuesday": [ 9, 19, 30, 1 ],
+            "wednesday": [ 8, 18, 28, 31 ],
+            "thursday": [ 12, 22, 1, 4 ],
+            "saturday": [ 11, 21, 31, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
