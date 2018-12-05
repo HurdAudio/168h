@@ -7604,6 +7604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 381,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/41-12,VictoryComics.jpg',
+          title: 'Victory Comics',
+          artist: 'Harry V. R. Anderson',
+          year: '1941',
+          rule: {
+            "monday": [ 21, 3, 22, 29 ],
+            "tuesday": [ 27, 9, 17, 23 ],
+            "wednesday": [ 26, 7, 16, 22 ],
+            "thursday": [ 25, 7, 15, 21 ],
+            "friday": [ 24, 6, 14, 20 ],
+            "saturday": [ 23, 5, 13, 19 ],
+            "sunday": [ 22, 3, 2, 18 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 382,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/30-00,Interior2.jpg',
+          title: 'Clues illustrated',
+          artist: 'Lyman Anderson',
+          year: '1930',
+          rule: {
+            "monday": [ 22, 3, 2, 18 ],
+            "tuesday": [ 21, 3, 22, 29 ],
+            "wednesday": [ 27, 9, 17, 23 ],
+            "thursday": [ 26, 7, 16, 22 ],
+            "friday": [ 25, 7, 15, 21 ],
+            "saturday": [ 24, 6, 14, 20 ],
+            "sunday": [ 23, 5, 13, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 383,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/45-00,PlntCmx.jpg',
+          title: 'Planet Comics',
+          artist: 'Murphy Anderson',
+          year: '1945',
+          rule: {
+            "monday": [ 23, 5, 13, 19 ],
+            "tuesday": [ 22, 3, 2, 18 ],
+            "wednesday": [ 21, 3, 22, 29 ],
+            "thursday": [ 27, 9, 17, 23 ],
+            "friday": [ 26, 7, 16, 22 ],
+            "saturday": [ 25, 7, 15, 21 ],
+            "sunday": [ 24, 6, 14, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 384,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/27-12-23,Newspaper.jpg',
+          title: 'Newspaper',
+          artist: 'Joe Archibald',
+          year: '1927',
+          rule: {
+            "monday": [ 24, 6, 14, 20 ],
+            "tuesday": [ 23, 5, 13, 19 ],
+            "wednesday": [ 22, 3, 2, 18 ],
+            "thursday": [ 21, 3, 22, 29 ],
+            "friday": [ 27, 9, 17, 23 ],
+            "saturday": [ 26, 7, 16, 22 ],
+            "sunday": [ 25, 7, 15, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 385,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/50-00,FantPubCo-18.jpg',
+          title: 'book cover',
+          artist: 'Jon Arfstrom',
+          year: '1950',
+          rule: {
+            "monday": [ 26, 8, 16, 22 ],
+            "tuesday": [ 25, 7, 15, 21 ],
+            "wednesday": [ 24, 6, 14, 20 ],
+            "thursday": [ 23, 4, 3, 19 ],
+            "friday": [ 22, 4, 23, 30 ],
+            "saturday": [ 28, 10, 18, 24 ],
+            "sunday": [ 27, 8, 17, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
