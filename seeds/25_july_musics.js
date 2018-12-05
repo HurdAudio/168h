@@ -4594,6 +4594,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 256,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1434211584/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://blackesteverblack.bandcamp.com/album/enter-silence',
+          a_string: 'Enter Silence by BREMEN',
+          rule: {
+            "monday": [ 5, 7, 11, 19 ],
+            "tuesday": [ 4, 5, 10, 18 ],
+            "wednesday": [ 3, 5, 9, 17 ],
+            "thursday": [ 7, 9, 13, 21 ],
+            "saturday": [ 6, 8, 12, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 257,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1890651160/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://pearlcrush.bandcamp.com/album/coax-me-out',
+          a_string: 'Coax Me Out by Pearl Crush',
+          rule: {
+            "monday": [ 6, 8, 12, 20 ],
+            "tuesday": [ 5, 7, 11, 19 ],
+            "wednesday": [ 4, 5, 10, 18 ],
+            "thursday": [ 3, 5, 9, 17 ],
+            "saturday": [ 7, 9, 13, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 258,
+          user_id: 1,
+          theme: 'Commercially Viable Genres',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2704103695/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://deerhoof.bandcamp.com/album/holdypaws',
+          a_string: 'Holdypaws by Deerhoof',
+          rule: {
+            "monday": [ 7, 9, 13, 21 ],
+            "tuesday": [ 6, 8, 12, 20 ],
+            "wednesday": [ 5, 7, 11, 19 ],
+            "thursday": [ 4, 5, 10, 18 ],
+            "saturday": [ 3, 5, 9, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
