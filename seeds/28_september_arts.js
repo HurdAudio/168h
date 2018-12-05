@@ -8204,6 +8204,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 411,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/suzuki-hiroshima-1963.jpg',
+          title: 'Suzuki (Hiroshima)',
+          artist: 'Jean Tinguely',
+          year: '1963',
+          rule: {
+            "monday": [ 16, 2, 20, 29 ],
+            "tuesday": [ 15, 22, 19, 27 ],
+            "wednesday": [ 23, 30, 18, 25 ],
+            "thursday": [ 30, 6, 24, 2 ],
+            "friday": [ 29, 4, 23, 1 ],
+            "saturday": [ 28, 4, 22, 30 ],
+            "sunday": [ 27, 3, 21, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 412,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/young-girl-making-soap-bubbles-2001.jpg',
+          title: 'Young Girl Making Soap Bubbles',
+          artist: 'Paritosh Sen',
+          year: '2001',
+          rule: {
+            "monday": [ 27, 3, 21, 29 ],
+            "tuesday": [ 16, 2, 20, 29 ],
+            "wednesday": [ 15, 22, 19, 27 ],
+            "thursday": [ 23, 30, 18, 25 ],
+            "friday": [ 30, 6, 24, 2 ],
+            "saturday": [ 29, 4, 23, 1 ],
+            "sunday": [ 28, 4, 22, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 413,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/galo-1977.jpg',
+          title: 'Galo',
+          artist: 'Aldemir Martins',
+          year: '1977',
+          rule: {
+            "monday": [ 29, 5, 23, 1 ],
+            "tuesday": [ 28, 4, 22, 30 ],
+            "wednesday": [ 17, 3, 21, 30 ],
+            "thursday": [ 16, 23, 20, 28 ],
+            "friday": [ 24, 1, 19, 26 ],
+            "saturday": [ 1, 7, 25, 3 ],
+            "sunday": [ 30, 5, 24, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 414,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/janus.jpg',
+          title: 'Janus',
+          artist: 'Christo Coetzee',
+          year: 'XX - XXI Cent.',
+          rule: {
+            "monday": [ 30, 5, 24, 2 ],
+            "tuesday": [ 29, 5, 23, 1 ],
+            "wednesday": [ 28, 4, 22, 30 ],
+            "thursday": [ 17, 3, 21, 30 ],
+            "friday": [ 16, 23, 20, 28 ],
+            "saturday": [ 24, 1, 19, 26 ],
+            "sunday": [ 1, 7, 25, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 415,
+          user_id: 1,
+          theme: 'Modern Art after World War II',
+          img_path: './img/september/fall-1964.jpg',
+          title: 'Fall',
+          artist: 'Bernard Cohen',
+          year: '1964',
+          rule: {
+            "monday": [ 1, 7, 25, 3 ],
+            "tuesday": [ 30, 5, 24, 2 ],
+            "wednesday": [ 29, 5, 23, 1 ],
+            "thursday": [ 28, 4, 22, 30 ],
+            "friday": [ 17, 3, 21, 30 ],
+            "saturday": [ 16, 23, 20, 28 ],
+            "sunday": [ 24, 1, 19, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
