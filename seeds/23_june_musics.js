@@ -4702,6 +4702,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 262,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3856124138/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://allsaintscompilations.bandcamp.com/album/music-for-films-iii',
+          a_string: 'Music For Films III by Various Artists',
+          rule: {
+            "monday": [ 8, 12, 18, 29 ],
+            "tuesday": [ 7, 10, 15, 27 ],
+            "wednesday": [ 6, 9, 15, 27 ],
+            "thursday": [ 6, 9, 15, 26 ],
+            "saturday": [ 4, 12, 14, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 263,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2973834649/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://rogereno.bandcamp.com/album/damage',
+          a_string: 'Damage by Roger Eno &amp; Lol Hammond',
+          rule: {
+            "monday": [ 4, 12, 14, 29 ],
+            "tuesday": [ 8, 12, 18, 29 ],
+            "wednesday": [ 7, 10, 15, 27 ],
+            "thursday": [ 6, 9, 15, 27 ],
+            "saturday": [ 6, 9, 15, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 264,
+          user_id: 1,
+          theme: 'Drone',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1131155234/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://rogereno.bandcamp.com/album/swimming',
+          a_string: 'Swimming by Roger Eno',
+          rule: {
+            "monday": [ 6, 9, 15, 26 ],
+            "tuesday": [ 4, 12, 14, 29 ],
+            "wednesday": [ 8, 12, 18, 29 ],
+            "thursday": [ 7, 10, 15, 27 ],
+            "saturday": [ 6, 9, 15, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
