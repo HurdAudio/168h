@@ -9404,6 +9404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 471,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/number-126-1948.jpg',
+          title: 'Number 126',
+          artist: 'Anne Ryan',
+          year: '1948',
+          rule: {
+            "monday": [ 5, 15, 23, 2 ],
+            "tuesday": [ 2, 14, 22, 1 ],
+            "wednesday": [ 3, 13, 21, 31 ],
+            "thursday": [ 2, 13, 20, 30 ],
+            "friday": [ 1, 11, 19, 29 ],
+            "saturday": [ 31, 10, 19, 28 ],
+            "sunday": [ 6, 15, 25, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 472,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/solitude-entonnoir-funnel-of-solitude-1921.jpg',
+          title: 'Solitude entonnoir (Funnel of solitude)',
+          artist: 'Suzanne Duchamp',
+          year: '1921',
+          rule: {
+            "monday": [ 6, 15, 25, 2 ],
+            "tuesday": [ 5, 15, 23, 2 ],
+            "wednesday": [ 2, 14, 22, 1 ],
+            "thursday": [ 3, 13, 21, 31 ],
+            "friday": [ 2, 13, 20, 30 ],
+            "saturday": [ 1, 11, 19, 29 ],
+            "sunday": [ 31, 10, 19, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 473,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/professionalization-albeeg-cyclamen-1932.jpg',
+          title: 'Cyclamen',
+          artist: 'Grace Albee',
+          year: '1932',
+          rule: {
+            "monday": [ 31, 10, 19, 28 ],
+            "tuesday": [ 6, 15, 25, 2 ],
+            "wednesday": [ 5, 15, 23, 2 ],
+            "thursday": [ 2, 14, 22, 1 ],
+            "friday": [ 3, 13, 21, 31 ],
+            "saturday": [ 2, 13, 20, 30 ],
+            "sunday": [ 1, 11, 19, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 474,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/marika-with-a-bouquet-of-flowers-1970.jpg',
+          title: 'Marika with a bouquet of flowers',
+          artist: 'Marevna (Marie Vorobieff)',
+          year: '1970',
+          rule: {
+            "monday": [ 1, 11, 19, 29 ],
+            "tuesday": [ 31, 10, 19, 28 ],
+            "wednesday": [ 6, 15, 25, 2 ],
+            "thursday": [ 5, 15, 23, 2 ],
+            "friday": [ 2, 14, 22, 1 ],
+            "saturday": [ 3, 13, 21, 31 ],
+            "sunday": [ 2, 13, 20, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 475,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          img_path: './img/march/portrait-of-a-young-girl-1939.jpg',
+          title: 'Portrait of a Young Girl',
+          artist: 'Irma Stern',
+          year: '1939',
+          rule: {
+            "monday": [ 2, 13, 20, 30 ],
+            "tuesday": [ 1, 11, 19, 29 ],
+            "wednesday": [ 31, 10, 19, 28 ],
+            "thursday": [ 6, 15, 25, 2 ],
+            "friday": [ 5, 15, 23, 2 ],
+            "saturday": [ 2, 14, 22, 1 ],
+            "sunday": [ 3, 13, 21, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
