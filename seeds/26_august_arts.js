@@ -8404,6 +8404,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 421,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/twee-bomen-olieverf-op-doek-1910.jpg',
+          title: 'Twee bomen, olieverf op doek',
+          artist: 'Jacoba van Heemskerck',
+          year: '1910',
+          rule: {
+            "monday": [ 1, 4, 13, 29 ],
+            "tuesday": [ 31, 4, 12, 28 ],
+            "wednesday": [ 30, 3, 11, 27 ],
+            "thursday": [ 29, 31, 10, 26 ],
+            "friday": [ 28, 31, 9, 25 ],
+            "saturday": [ 27, 30, 8, 24 ],
+            "sunday": [ 2, 6, 14, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 422,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/pilgrimage-to-the-cedars-in-lebanon-1907.jpg',
+          title: 'Pilgrimage to the Cedars in Lebanon',
+          artist: 'Tivadar Kosztka Csontvary',
+          year: '1907',
+          rule: {
+            "monday": [ 2, 6, 14, 30 ],
+            "tuesday": [ 1, 4, 13, 29 ],
+            "wednesday": [ 31, 4, 12, 28 ],
+            "thursday": [ 30, 3, 11, 27 ],
+            "friday": [ 29, 31, 10, 26 ],
+            "saturday": [ 28, 31, 9, 25 ],
+            "sunday": [ 27, 30, 8, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 423,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/poster-portrait-dove-1924.jpg',
+          title: 'Dove (Arthur G. Dove)',
+          artist: 'Charles Demuth',
+          year: '1924',
+          rule: {
+            "monday": [ 27, 30, 8, 24 ],
+            "tuesday": [ 2, 6, 14, 30 ],
+            "wednesday": [ 1, 4, 13, 29 ],
+            "thursday": [ 31, 4, 12, 28 ],
+            "friday": [ 30, 3, 11, 27 ],
+            "saturday": [ 29, 31, 10, 26 ],
+            "sunday": [ 28, 31, 9, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 424,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/marsh-channel-with-peat-barges.jpg',
+          title: 'Marsh channel with peat barges',
+          artist: 'Paula Modersohn-Becker',
+          year: 'c.1900',
+          rule: {
+            "monday": [ 28, 31, 9, 25 ],
+            "tuesday": [ 27, 30, 8, 24 ],
+            "wednesday": [ 2, 6, 14, 30 ],
+            "thursday": [ 1, 4, 13, 29 ],
+            "friday": [ 31, 4, 12, 28 ],
+            "saturday": [ 30, 3, 11, 27 ],
+            "sunday": [ 29, 31, 10, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 425,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/untitled-1938.jpg',
+          title: 'Untitled',
+          artist: 'Kansuke Yamamoto',
+          year: '1938',
+          rule: {
+            "monday": [ 29, 31, 10, 26 ],
+            "tuesday": [ 28, 31, 9, 25 ],
+            "wednesday": [ 27, 30, 8, 24 ],
+            "thursday": [ 2, 6, 14, 30 ],
+            "friday": [ 1, 4, 13, 29 ],
+            "saturday": [ 31, 4, 12, 28 ],
+            "sunday": [ 30, 3, 11, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
