@@ -5026,6 +5026,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 280,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2394163692/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://unifactor.bandcamp.com/album/another-time',
+          a_string: 'Another Time by Shells',
+          rule: {
+            "monday": [ 13, 19, 25, 3 ],
+            "tuesday": [ 11, 18, 24, 1 ],
+            "wednesday": [ 11, 17, 23, 31 ],
+            "thursday": [ 15, 21, 27, 4 ],
+            "saturday": [ 14, 20, 26, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 281,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3751024190/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://hausumountain.bandcamp.com/album/ask-me-how-satan-started',
+          a_string: 'Ask Me How Satan Started by Bonnie Baxter',
+          rule: {
+            "monday": [ 14, 20, 26, 3 ],
+            "tuesday": [ 13, 19, 25, 3 ],
+            "wednesday": [ 11, 18, 24, 1 ],
+            "thursday": [ 11, 17, 23, 31 ],
+            "saturday": [ 15, 21, 27, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 282,
+          user_id: 1,
+          theme: 'Women\'s History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1858937030/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://weareacr.bandcamp.com/album/organs-in-the-wind',
+          a_string: 'Organs in the Wind by Jax Deluca',
+          rule: {
+            "monday": [ 15, 21, 27, 4 ],
+            "tuesday": [ 14, 20, 26, 3 ],
+            "wednesday": [ 13, 19, 25, 3 ],
+            "thursday": [ 11, 18, 24, 1 ],
+            "saturday": [ 11, 17, 23, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
