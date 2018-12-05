@@ -8604,6 +8604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 431,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/femme-cubiste-1921.jpg',
+          title: 'Femme Cubiste',
+          artist: 'Albert Gleizes',
+          year: '1921',
+          rule: {
+            "monday": [ 28, 8, 19, 20 ],
+            "tuesday": [ 27, 7, 18, 29 ],
+            "wednesday": [ 2, 13, 24, 3 ],
+            "thursday": [ 1, 10, 23, 3 ],
+            "friday": [ 30, 10, 22, 2 ],
+            "saturday": [ 30, 10, 21, 22 ],
+            "sunday": [ 29, 9, 19, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 432,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/fairy-pipe-1928.jpg',
+          title: 'Fairy Pipe',
+          artist: 'Pierre Roy',
+          year: '1928',
+          rule: {
+            "monday": [ 29, 9, 19, 21 ],
+            "tuesday": [ 28, 8, 19, 20 ],
+            "wednesday": [ 27, 7, 18, 29 ],
+            "thursday": [ 2, 13, 24, 3 ],
+            "friday": [ 1, 10, 23, 3 ],
+            "saturday": [ 30, 10, 22, 2 ],
+            "sunday": [ 30, 10, 21, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 433,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/the-port-of-anvers-1906.jpg',
+          title: 'The Port of Anvers',
+          artist: 'Othon Friesz',
+          year: '1906',
+          rule: {
+            "monday": [ 30, 10, 21, 22 ],
+            "tuesday": [ 29, 9, 19, 21 ],
+            "wednesday": [ 28, 8, 19, 20 ],
+            "thursday": [ 27, 7, 18, 29 ],
+            "friday": [ 2, 13, 24, 3 ],
+            "saturday": [ 1, 10, 23, 3 ],
+            "sunday": [ 30, 10, 22, 2 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 434,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/the-english-yacht-1906.jpg',
+          title: 'The English yacht',
+          artist: 'Raoul Dufy',
+          year: '1906',
+          rule: {
+            "monday": [ 31, 11, 23, 3 ],
+            "tuesday": [ 31, 11, 22, 23 ],
+            "wednesday": [ 30, 10, 20, 22 ],
+            "thursday": [ 29, 9, 20, 21 ],
+            "friday": [ 28, 8, 19, 30 ],
+            "saturday": [ 3, 14, 25, 4 ],
+            "sunday": [ 2, 11, 24, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 435,
+          user_id: 1,
+          theme: 'French',
+          img_path: './img/july/vaches-dans-un-paysage-1943.jpg',
+          title: 'Vaches Dans Un Paysage',
+          artist: 'Max Jacob',
+          year: '1943',
+          rule: {
+            "monday": [ 2, 11, 24, 4 ],
+            "tuesday": [ 31, 11, 23, 3 ],
+            "wednesday": [ 31, 11, 22, 23 ],
+            "thursday": [ 30, 10, 20, 22 ],
+            "friday": [ 29, 9, 20, 21 ],
+            "saturday": [ 28, 8, 19, 30 ],
+            "sunday": [ 3, 14, 25, 4 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
