@@ -7804,6 +7804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 391,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/untitled-2a.jpg',
+          title: 'Untitled',
+          artist: 'Nasreen Mohamedi',
+          year: 'XX Cent.',
+          rule: {
+            "monday": [ 30, 3, 10, 15 ],
+            "tuesday": [ 29, 3, 10, 15 ],
+            "wednesday": [ 28, 3, 9, 14 ],
+            "thursday": [ 27, 2, 8, 15 ],
+            "friday": [ 3, 8, 14, 19 ],
+            "saturday": [ 2, 4, 12, 18 ],
+            "sunday": [ 1, 5, 12, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 392,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/untitled-6.jpg',
+          title: 'Untitled',
+          artist: 'Nasreen Mohamedi',
+          year: 'XX Cent.',
+          rule: {
+            "monday": [ 2, 6, 13, 17 ],
+            "tuesday": [ 1, 4, 11, 16 ],
+            "wednesday": [ 30, 4, 11, 16 ],
+            "thursday": [ 29, 4, 10, 15 ],
+            "friday": [ 28, 3, 9, 16 ],
+            "saturday": [ 4, 9, 15, 20 ],
+            "sunday": [ 3, 5, 13, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 393,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/gold.jpg',
+          title: 'Gold',
+          artist: 'Mathias Goeritz',
+          year: 'XX cent.',
+          rule: {
+            "monday": [ 3, 5, 13, 19 ],
+            "tuesday": [ 2, 6, 13, 17 ],
+            "wednesday": [ 1, 4, 11, 16 ],
+            "thursday": [ 30, 4, 11, 16 ],
+            "friday": [ 29, 4, 10, 15 ],
+            "saturday": [ 28, 3, 9, 16 ],
+            "sunday": [ 4, 9, 15, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 394,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/rule-1991.jpg',
+          title: 'Rule',
+          artist: 'Robert Ryman',
+          year: '1991',
+          rule: {
+            "monday": [ 4, 9, 15, 20 ],
+            "tuesday": [ 3, 5, 13, 19 ],
+            "wednesday": [ 2, 6, 13, 17 ],
+            "thursday": [ 1, 4, 11, 16 ],
+            "friday": [ 30, 4, 11, 16 ],
+            "saturday": [ 29, 4, 10, 15 ],
+            "sunday": [ 28, 3, 9, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 395,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/untitled-march-5th-2-1991.jpg',
+          title: '"Untitled" (March 5th) #2',
+          artist: 'Felix Gonzalez-Torres',
+          year: '1991',
+          rule: {
+            "monday": [ 28, 3, 9, 16 ],
+            "tuesday": [ 4, 9, 15, 20 ],
+            "wednesday": [ 3, 5, 13, 19 ],
+            "thursday": [ 2, 6, 13, 17 ],
+            "friday": [ 1, 4, 11, 16 ],
+            "saturday": [ 30, 4, 11, 16 ],
+            "sunday": [ 29, 4, 10, 15 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
