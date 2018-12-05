@@ -4054,6 +4054,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 226,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3378209747/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://repsych.bandcamp.com/album/laghonia-the-new-juggler-sound-rock-beat-garage-fuzz-60s-peru-1965-1969',
+          a_string: 'Laghonia - The New Juggler Sound (Rock Beat Garage Fuzz 60&#39;s PERU) (1965-1969) by Laghonia - The New Juggler Sound',
+          rule: {
+            "monday": [ 7, 13, 19, 25 ],
+            "tuesday": [ 4, 12, 18, 24 ],
+            "wednesday": [ 3, 11, 17, 23 ],
+            "thursday": [ 4, 10, 16, 22 ],
+            "saturday": [ 8, 14, 20, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 227,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2665303563/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://repsych.bandcamp.com/album/the-mads-en-concierto-peru-psych-rock-wild-live-1969',
+          a_string: 'The Mad&#39;s - En concierto (Peru Psych Rock Wild - LIVE !) (1969) by The Mad&#39;s',
+          rule: {
+            "monday": [ 8, 14, 20, 26 ],
+            "tuesday": [ 7, 13, 19, 25 ],
+            "wednesday": [ 4, 12, 18, 24 ],
+            "thursday": [ 3, 11, 17, 23 ],
+            "saturday": [ 4, 10, 16, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 228,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1807348043/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://repsych.bandcamp.com/album/ecuacion-purpura-70s-peru-latin-funk-soul-rock',
+          a_string: 'Ecuacion Purpura (70&#39;s Peru Latin Funk - Soul Rock) by Ecuacion Purpura',
+          rule: {
+            "monday": [ 4, 10, 16, 22 ],
+            "tuesday": [ 8, 14, 20, 26 ],
+            "wednesday": [ 7, 13, 19, 25 ],
+            "thursday": [ 4, 12, 18, 24 ],
+            "saturday": [ 3, 11, 17, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
