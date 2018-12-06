@@ -5242,6 +5242,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 292,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2291442782/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://erstwhilerecords.bandcamp.com/album/wovenland',
+          a_string: 'Wovenland by Toshiya Tsunoda/Taku Unami',
+          rule: {
+            "monday": [ 18, 25, 26, 27 ],
+            "tuesday": [ 17, 23, 24, 25 ],
+            "wednesday": [ 16, 23, 24, 25 ],
+            "thursday": [ 20, 27, 28, 29 ],
+            "saturday": [ 19, 25, 26, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 293,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1538868150/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://erstwhilerecords.bandcamp.com/album/where-are-we-going-today',
+          a_string: 'Where Are We Going, Today by Christian Wolff/Antoine Beuger',
+          rule: {
+            "monday": [ 19, 25, 26, 28 ],
+            "tuesday": [ 18, 25, 26, 27 ],
+            "wednesday": [ 17, 23, 24, 25 ],
+            "thursday": [ 16, 23, 24, 25 ],
+            "saturday": [ 20, 27, 28, 29 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 294,
+          user_id: 1,
+          theme: 'American Maverick Tradition',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2585905106/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://erstwhilerecords.bandcamp.com/album/mosquitoes-and-crabs',
+          a_string: 'Mosquitoes and Crabs by Hong Chulki/Will Guthrie',
+          rule: {
+            "monday": [ 21, 28, 29, 30 ],
+            "tuesday": [ 20, 26, 27, 29 ],
+            "wednesday": [ 19, 26, 27, 28 ],
+            "thursday": [ 18, 24, 25, 26 ],
+            "saturday": [ 17, 24, 25, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
