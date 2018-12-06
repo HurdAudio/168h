@@ -206,6 +206,8 @@ const art_lockers = require('./routes/art_lockers.js');
 const art_lockersbyuser = require('./routes/art_lockersbyuser.js');
 const music_lockers = require('./routes/music_lockers.js');
 const music_lockersbyuser = require('./routes/music_lockersbyuser.js');
+const tile_lockers = require('./routes/tile_lockers.js');
+const tile_lockersbyuser = require('./routes/tile_lockersbyuser.js');
 
 const port = process.env.PORT || 3007;
 
@@ -412,6 +414,8 @@ app.use(fileUpload());
  app.use('/art_lockersbyuser', art_lockersbyuser);
  app.use('/music_lockers', music_lockers);
  app.use('/music_lockersbyuser', music_lockersbyuser);
+ app.use('/tile_lockers', tile_lockers);
+ app.use('/tile_lockersbyuser', tile_lockersbyuser);
 
 app.get('/onthisdayinhistory/:date', (req, res, next) =>{
   let newUrl = 'http://history.muffinlabs.com/date/';
