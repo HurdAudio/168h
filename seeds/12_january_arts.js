@@ -9804,6 +9804,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 491,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/untitled-1962.jpg',
+          title: 'Untitled',
+          artist: 'Charlotte Posenenske',
+          year: '1962',
+          rule: {
+            "monday": [ 16, 14, 6, 9 ],
+            "tuesday": [ 16, 17, 8, 12 ],
+            "wednesday": [ 19, 21, 22, 24 ],
+            "thursday": [ 21, 23, 27, 30 ],
+            "friday": [ 23, 25, 26, 27 ],
+            "saturday": [ 8, 9, 20, 12 ],
+            "sunday": [ 11, 13, 5, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 492,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/untitled-from-the-amerim-series-1997(3).jpg',
+          title: 'Untitled (from the Amerim series)',
+          artist: 'Vasile Dobrian',
+          year: '1997',
+          rule: {
+            "monday": [ 11, 13, 5, 25 ],
+            "tuesday": [ 16, 14, 6, 9 ],
+            "wednesday": [ 16, 17, 8, 12 ],
+            "thursday": [ 19, 21, 22, 24 ],
+            "friday": [ 21, 23, 27, 30 ],
+            "saturday": [ 23, 25, 26, 27 ],
+            "sunday": [ 8, 9, 20, 12 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 493,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/untitled-graphic-composition-1951-5(1).jpg',
+          title: 'Untitled (Graphic Composition)',
+          artist: 'Bruno Munari',
+          year: '1951',
+          rule: {
+            "monday": [ 8, 9, 20, 12 ],
+            "tuesday": [ 11, 13, 5, 25 ],
+            "wednesday": [ 16, 14, 6, 9 ],
+            "thursday": [ 16, 17, 8, 12 ],
+            "friday": [ 19, 21, 22, 24 ],
+            "saturday": [ 21, 23, 27, 30 ],
+            "sunday": [ 23, 25, 26, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 494,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/dialogue-10-1993.jpg',
+          title: 'Dialogue 10',
+          artist: 'Vasile Dobrian',
+          year: '1993',
+          rule: {
+            "monday": [ 23, 25, 26, 27 ],
+            "tuesday": [ 8, 9, 20, 12 ],
+            "wednesday": [ 11, 13, 5, 25 ],
+            "thursday": [ 16, 14, 6, 9 ],
+            "friday": [ 16, 17, 8, 12 ],
+            "saturday": [ 19, 21, 22, 24 ],
+            "sunday": [ 21, 23, 27, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 495,
+          user_id: 1,
+          theme: 'Abstract Art',
+          img_path: './img/january/sakuhin-1964.jpg',
+          title: 'Sakuhin',
+          artist: 'Sadamasa Motonaga',
+          year: '1964',
+          rule: {
+            "monday": [ 21, 23, 27, 30 ],
+            "tuesday": [ 23, 25, 26, 27 ],
+            "wednesday": [ 8, 9, 20, 12 ],
+            "thursday": [ 11, 13, 5, 25 ],
+            "friday": [ 16, 14, 6, 9 ],
+            "saturday": [ 16, 17, 8, 12 ],
+            "sunday": [ 19, 21, 22, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
