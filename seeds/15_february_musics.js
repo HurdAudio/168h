@@ -5134,6 +5134,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 286,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2569617277/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://allchucaneat.bandcamp.com/album/hubris',
+          a_string: ':HUBRIS by Chuuwee',
+          rule: {
+            "monday": [ 13, 17, 19, 23 ],
+            "tuesday": [ 16, 19, 21, 23 ],
+            "wednesday": [ 27, 21, 23, 25 ],
+            "thursday": [ 29, 23, 25, 2 ],
+            "saturday": [ 1, 24, 26, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 287,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1358079150/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://allchucaneat.bandcamp.com/album/the-bag',
+          a_string: 'The $ Bag by Chuuwee &amp; Rich ICY',
+          rule: {
+            "monday": [ 2, 25, 27, 4 ],
+            "tuesday": [ 14, 18, 20, 24 ],
+            "wednesday": [ 17, 20, 22, 24 ],
+            "thursday": [ 28, 22, 24, 26 ],
+            "saturday": [ 1, 24, 26, 3 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 288,
+          user_id: 1,
+          theme: 'Black History Month',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3115569455/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://allchucaneat.bandcamp.com/album/passover',
+          a_string: 'PassOver by Chuuwee',
+          rule: {
+            "monday": [ 1, 24, 26, 3 ],
+            "tuesday": [ 2, 25, 27, 4 ],
+            "wednesday": [ 14, 18, 20, 24 ],
+            "thursday": [ 17, 20, 22, 24 ],
+            "saturday": [ 28, 22, 24, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
