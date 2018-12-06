@@ -9604,6 +9604,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 481,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/22POPEL1-articleLarge.jpg',
+          title: 'Trinket',
+          artist: 'William Pope.L',
+          year: '2015',
+          rule: {
+            "monday": [ 18, 28, 5, 11 ],
+            "tuesday": [ 20, 28, 7, 17 ],
+            "wednesday": [ 20, 1, 26, 16 ],
+            "thursday": [ 10, 18, 26, 5 ],
+            "friday": [ 11, 20, 28, 7 ],
+            "saturday": [ 17, 22, 28, 9 ],
+            "sunday": [ 16, 24, 3, 11 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 482,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/Adam-and-Eve-in-the-Garden-of-Eden-Harriet-Powers-1885-300x173.jpg',
+          title: 'Adam and Eve in the Garden of Eden ',
+          artist: 'Harriet Powers',
+          year: '1885',
+          rule: {
+            "monday": [ 16, 24, 3, 11 ],
+            "tuesday": [ 18, 28, 5, 11 ],
+            "wednesday": [ 20, 28, 7, 17 ],
+            "thursday": [ 20, 1, 26, 16 ],
+            "friday": [ 10, 18, 26, 5 ],
+            "saturday": [ 11, 20, 28, 7 ],
+            "sunday": [ 17, 22, 28, 9 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 483,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/cri_000000115896.jpg',
+          title: 'Horsefly',
+          artist: 'Martin Puryear',
+          year: '1996 - 2000',
+          rule: {
+            "monday": [ 18, 23, 29, 10 ],
+            "tuesday": [ 17, 25, 4, 12 ],
+            "wednesday": [ 19, 29, 6, 12 ],
+            "thursday": [ 21, 29, 8, 18 ],
+            "friday": [ 21, 2, 27, 17 ],
+            "saturday": [ 11, 19, 27, 6 ],
+            "sunday": [ 12, 21, 29, 8 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 484,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/Patrick-H.-Reason-A-Colored-Young-Man-in-the-City-of-New-York-1855-engraving.jpg',
+          title: 'A Colored Young Man in the City of New York',
+          artist: 'Patrick H. Reason',
+          year: '1885',
+          rule: {
+            "monday": [ 12, 21, 29, 8 ],
+            "tuesday": [ 18, 23, 29, 10 ],
+            "wednesday": [ 17, 25, 4, 12 ],
+            "thursday": [ 19, 29, 6, 12 ],
+            "friday": [ 21, 29, 8, 18 ],
+            "saturday": [ 21, 2, 27, 17 ],
+            "sunday": [ 11, 19, 27, 6 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 485,
+          user_id: 1,
+          theme: 'Black History Month',
+          img_path: './img/february/wpa.jpg',
+          title: 'WPA',
+          artist: 'Earle Wilton Richardson',
+          year: '1934',
+          rule: {
+            "monday": [ 11, 19, 27, 6 ],
+            "tuesday": [ 12, 21, 29, 8 ],
+            "wednesday": [ 18, 23, 29, 10 ],
+            "thursday": [ 17, 25, 4, 12 ],
+            "friday": [ 19, 29, 6, 12 ],
+            "saturday": [ 21, 29, 8, 18 ],
+            "sunday": [ 21, 2, 27, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
