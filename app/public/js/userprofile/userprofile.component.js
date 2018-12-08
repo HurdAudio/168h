@@ -288,6 +288,43 @@
       vm.addNewTaskShareComment = addNewTaskShareComment;
       vm.declineArtShare = declineArtShare;
       vm.acceptArtShare = acceptArtShare;
+      vm.userDeleteObservanceShareComment = userDeleteObservanceShareComment;
+      vm.userObservanceShareCommentDeleteCancel = userObservanceShareCommentDeleteCancel;
+      vm.userObservanceShareCommentDeleteConfirmClick = userObservanceShareCommentDeleteConfirmClick;
+
+      function userObservanceShareCommentDeleteConfirmClick(commentId, observeId) {
+        $http.delete(`/observance_share_comments/${commentId}`)
+        .then(deletedData => {
+          let deleted = deletedData.data;
+          let delIndex = -1;
+          for (let i = 0; i < vm.activeObservanceShares.length; i++) {
+            if (parseInt(vm.activeObservanceShares[i].id) === parseInt(observeId)) {
+              delIndex = i;
+            }
+          }
+          for (let j = 0; j < vm.activeObservanceShares[delIndex].comments.length; j++) {
+            if (parseInt(vm.activeObservanceShares[delIndex].comments[j].id) === parseInt(commentId)) {
+              vm.activeObservanceShares[delIndex].comments.splice(j, 1);
+            }
+          }
+        });
+      }
+
+      function userObservanceShareCommentDeleteCancel(commentId) {
+        let deleteObservanceShareCommentConfirm = document.getElementById('deleteObservanceShareCommentConfirm' + commentId);
+        let editDeleteObservanceShareCommentDiv = document.getElementById('editDeleteObservanceShareCommentDiv' + commentId);
+
+        deleteObservanceShareCommentConfirm.setAttribute("style", "display: none;");
+        editDeleteObservanceShareCommentDiv.setAttribute("style", "display: initial;");
+      }
+
+      function userDeleteObservanceShareComment(commentId) {
+        let deleteObservanceShareCommentConfirm = document.getElementById('deleteObservanceShareCommentConfirm' + commentId);
+        let editDeleteObservanceShareCommentDiv = document.getElementById('editDeleteObservanceShareCommentDiv' + commentId);
+
+        deleteObservanceShareCommentConfirm.setAttribute("style", "display: initial;");
+        editDeleteObservanceShareCommentDiv.setAttribute("style", "display: none;");
+      }
 
       function obtainArtShareMonthThemeData(artMonth, artSharePaneAccept, artShareThemeLabel, artShareAcceptUserThemeInput, suggestedTheme) {
         let path = artMonth + 'byuser';
