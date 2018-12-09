@@ -10529,6 +10529,39 @@ exports.seed = function(knex, Promise) {
           override_content: null,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 676,
+          user_id: 1,
+          name: 'Malachi Favors (bass) born 1927.',
+          color: '#D25962',
+          picture: './img/musicians/2826dd59234c9f7868b47c9adc948.jpg',
+          day_of: new Date ('1927-08-22T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: false,
+          override_content: null,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 677,
+          user_id: 1,
+          name: 'Oliver Lake (reeds/poet) born 1942.',
+          color: '#420733',
+          picture: './img/musicians/79818627c6dfe08af615ea46d4a7b.jpg',
+          day_of: new Date ('1942-09-14T13:44:00.000Z'),
+          is_annual: true,
+          art_override: false,
+          music_override: true,
+          override_content: {
+            "sources": [ 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp', 'bandcamp' ],
+            "src_strings": [ 'https://bandcamp.com/EmbeddedPlayer/album=836618089/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=1210304271/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=1823902121/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=918828186/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=1866362531/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=3572771551/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=2260715301/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=3365221900/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=510494321/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=2812602332/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/', 'https://bandcamp.com/EmbeddedPlayer/album=4167459803/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/' ],
+            "href_strings": [ 'http://oliverlake.bandcamp.com/album/lake-tchicai-osgood-westergaard', 'http://oliverlake.bandcamp.com/album/what-i-heard', 'http://oliverlake.bandcamp.com/album/wheels', 'http://oliverlake.bandcamp.com/album/lakes-at-the-stone', 'http://oliverlake.bandcamp.com/album/plan', 'http://oliverlake.bandcamp.com/album/makin-it', 'http://oliverlake.bandcamp.com/album/live-featuring-mary-redhouse-santi-debriano-gene-lake', 'http://oliverlake.bandcamp.com/album/dat-love', 'http://oliverlake.bandcamp.com/album/cloth', 'http://oliverlake.bandcamp.com/album/movement-turns-switches', 'http://oliverlake.bandcamp.com/album/matador-of-1st-1st' ],
+            "a_strings": [ 'Lake | Tchicai | Osgood | Westergaard by Oliver Lake, John Tchaicai, Kresten Osgood, Jonas Westergaard', 'What I Heard by Oliver Lake Organ Quartet', 'Wheels by Oliver Lake Big Band', 'Lakes at the Stone by Oliver Lake &amp; Jahi Sundance', 'Plan by Oliver Lake Organt Quartet', 'Makin&#39; It by Oliver Lake Organ Trio', 'Live Featuring Mary Redhouse/Santi Debriano/Gene Lake by Oliver Lake Quartet', 'Dat Love by Oliver Lake Steel Quartet', 'Cloth by Oliver Lake Big Band', 'Movement, Turns &amp; Switches by Oliver Lake String Project', 'Matador of 1st &amp; 1st by Oliver Lake' ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
