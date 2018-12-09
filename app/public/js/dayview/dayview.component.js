@@ -95,6 +95,123 @@
       vm.cancelOccasionInvite = cancelOccasionInvite;
       vm.taskShareNow = taskShareNow;
       vm.cancelTaskInvite = cancelTaskInvite;
+      vm.shareObservance = shareObservance;
+      vm.cancelObservanceInvite = cancelObservanceInvite;
+
+      function cancelObservanceInvite() {
+        let shareObservancePane = document.getElementById('shareObservancePane');
+        let schedulePanel = document.getElementById('schedulePanel');
+
+        shareObservancePane.setAttribute("style", "opacity: 0; z-index: -6; transition: opacity 0.5s linear;");
+        schedulePanel.setAttribute("style", "opacity: 1; z-index: 6; transition: opacity 0.5s linear;");
+      }
+
+      function friendFieldObservanceShare(user, observance, searchString, friendId) {
+        let observanceFriendsSearchList = document.getElementById('observanceFriendsSearchList');
+
+        $http.get(`/users/${friendId}`)
+        .then(friendData => {
+          let friend = friendData.data;
+          if (searchString !== '') {
+            if ((friend.name.toLowerCase().indexOf(searchString.toLowerCase()) === -1) && (friend.email.toLowerCase().indexOf(searchString.toLowerCase()) === -1)) {
+              return;
+            }
+          }
+          let theDiv = document.createElement('div');
+          observanceFriendsSearchList.appendChild(theDiv);
+          let theImg = document.createElement('img');
+          theDiv.appendChild(theImg);
+          theImg.src = friend.user_avatar_url;
+          let theP = document.createElement('p');
+          theDiv.appendChild(theP);
+          theP.innerHTML = friend.name;
+          let theBr = document.createElement('br');
+          theDiv.appendChild(theBr);
+          theBr = document.createElement('br');
+          theDiv.appendChild(theBr);
+          theBr = document.createElement('br');
+          theDiv.appendChild(theBr);
+          theBr = document.createElement('br');
+          theDiv.appendChild(theBr);
+          theBr = document.createElement('br');
+          theDiv.appendChild(theBr);
+          theBr = document.createElement('br');
+          theDiv.appendChild(theBr);
+          theDiv.setAttribute("style", "cursor: pointer;");
+
+          theDiv.addEventListener('click', () => {
+            let subObj = {
+              user_id: currentUserId,
+              observance_id: observance.id,
+              share_associate_id: friend.id,
+              accepted: false,
+              responded: false
+            };
+            $http.post('/observance_shares', subObj)
+            .then(sharedObservanceData => {
+              let sharedObservance = sharedObservanceData.data;
+              cancelObservanceInvite();
+            });
+          });
+        });
+      }
+
+      function populateUserForSharingObservance(user, observance, searchString) {
+        if ((user.associates !== null) && (user.associates.friends !== null) && (user.associates.friends.length > 0)) {
+          for (let i = 0; i <user.associates.friends.length; i++) {
+            friendFieldObservanceShare(user, observance, searchString, user.associates.friends[i]);
+          }
+        }
+      }
+
+      function shareObservance(observeId) {
+        let shareObservancePane = document.getElementById('shareObservancePane');
+        let schedulePanel = document.getElementById('schedulePanel');
+        let observanceShareImage = document.getElementById('observanceShareImage');
+        let observanceShareName = document.getElementById('observanceShareName');
+        let observanceShareDate = document.getElementById('observanceShareDate');
+        let month = [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ];
+        let observanceFriendsSearchList = document.getElementById('observanceFriendsSearchList');
+        while (observanceFriendsSearchList.firstChild) {
+          observanceFriendsSearchList.removeChild(observanceFriendsSearchList.firstChild);
+        }
+        let shareObservanceSearchBarDiv = document.getElementById('shareObservanceSearchBarDiv');
+        let taskWhoToShareObservanceSearch = document.getElementById('taskWhoToShareObservanceSearch');
+        if (taskWhoToShareObservanceSearch) {
+          taskWhoToShareObservanceSearch.parentNode.removeChild(taskWhoToShareObservanceSearch);
+          taskWhoToShareObservanceSearch = document.createElement('input');
+          shareObservanceSearchBarDiv.appendChild(taskWhoToShareObservanceSearch);
+          taskWhoToShareObservanceSearch.id = 'taskWhoToShareObservanceSearch';
+          taskWhoToShareObservanceSearch.type = 'text';
+          taskWhoToShareObservanceSearch.placeholder = 'search';
+        }
+
+        $http.get(`/observances/${observeId}`)
+        .then(observanceData => {
+          let observance = observanceData.data;
+          let dayOf = new Date(observance.day_of);
+          observanceShareImage.src = observance.picture;
+          observanceShareName.innerHTML = observance.name;
+          observanceShareDate.innerHTML = 'Every ' + dayOf.getDate() + ' ' + month[dayOf.getMonth()];
+          $http.get(`/users/${currentUserId}`)
+          .then(userData => {
+            let user = userData.data;
+            populateUserForSharingObservance(user, observance, taskWhoToShareObservanceSearch.value);
+
+            taskWhoToShareObservanceSearch.addEventListener('keyup', () => {
+              while (observanceFriendsSearchList.firstChild) {
+                observanceFriendsSearchList.removeChild(observanceFriendsSearchList.firstChild);
+              }
+              populateUserForSharingObservance(user, observance, taskWhoToShareObservanceSearch.value);
+            });
+          });
+
+
+        });
+
+        shareObservancePane.setAttribute("style", "opacity: 1; z-index: 6; transition: opacity 0.5s linear;");
+        schedulePanel.setAttribute("style", "opacity: 0; z-index: -6; transition: opacity 0.5s linear;");
+      }
 
       function cancelTaskInvite() {
         let shareTaskPane = document.getElementById('shareTaskPane');

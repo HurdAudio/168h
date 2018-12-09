@@ -205,6 +205,31 @@
   </div>
 </div>
 
+<div id="shareObservancePane">
+  <a class="btn" ng-click="$ctrl.cancelObservanceInvite()" href="#">cancel</a>
+  <div id="taskObservanceIdentifierFields">
+
+    <img id="observanceShareImage">
+
+    <h3 id="observanceShareName"></h3>
+    <h3 id="observanceShareDate"></h3>
+  </div>
+  <h3>Select who you want to share this observance with:</h3>
+  <div id="observanceShareSearchBarDiv">
+    <input type="text" id="observanceWhoToShareSearch" placeholder="search">
+  </div>
+  <div id="observanceFriendsSearchList">
+
+
+    <div>
+
+      <img src="https://pbs.twimg.com/profile_images/3511787126/e23647c60fe7cee53e4d2d37a50a255c_400x400.jpeg">
+      <p>Lucifer Sam</p>
+      <br><br><br>
+    </div>
+  </div>
+</div>
+
 <div id="acceptArtPane">
 
   <h1>Add Shared Art:</h1>
@@ -688,6 +713,7 @@
                 <div class="goalEdit">
                   <a href="" class="btn" ng-click="$ctrl.editObservance(observe.id)">edit</a>
                   <a href="" class="btn" ng-click="$ctrl.deleteObservance(observe.id)">delete</a>
+                  <a href="" class="btn" ng-click="$ctrl.shareObservance(observe.id)">share</a>
                 </div><br><br><br>
               </main>
             </div><br>
@@ -704,6 +730,7 @@
                 <div class="goalEdit">
                   <a href="" class="btn" ng-click="$ctrl.editObservance(observe.id)">edit</a>
                   <a href="" class="btn" ng-click="$ctrl.deleteObservance(observe.id)">delete</a>
+                  <a href="" class="btn" ng-click="$ctrl.shareObservance(observe.id)">share</a>
                 </div><br><br><br>
               </main>
             </div><br>
@@ -720,6 +747,7 @@
                 <div class="goalEdit">
                   <a href="" class="btn" ng-click="$ctrl.editObservance(observe.id)">edit</a>
                   <a href="" class="btn" ng-click="$ctrl.deleteObservance(observe.id)">delete</a>
+                  <a href="" class="btn" ng-click="$ctrl.shareObservance(observe.id)">share</a>
                 </div><br><br><br>
               </main>
             </div><br>
@@ -736,6 +764,7 @@
                 <div class="goalEdit">
                   <a href="" class="btn" ng-click="$ctrl.editObservance(observe.id)">edit</a>
                   <a href="" class="btn" ng-click="$ctrl.deleteObservance(observe.id)">delete</a>
+                  <a href="" class="btn" ng-click="$ctrl.shareObservance(observe.id)">share</a>
                 </div><br><br><br>
               </main>
             </div><br>
@@ -752,6 +781,7 @@
                 <div class="goalEdit">
                   <a href="" class="btn" ng-click="$ctrl.editObservance(observe.id)">edit</a>
                   <a href="" class="btn" ng-click="$ctrl.deleteObservance(observe.id)">delete</a>
+                  <a href="" class="btn" ng-click="$ctrl.shareObservance(observe.id)">share</a>
                 </div><br><br><br>
               </main>
             </div><br>
@@ -768,6 +798,7 @@
                 <div class="goalEdit">
                   <a href="" class="btn" ng-click="$ctrl.editObservance(observe.id)">edit</a>
                   <a href="" class="btn" ng-click="$ctrl.deleteObservance(observe.id)">delete</a>
+                  <a href="" class="btn" ng-click="$ctrl.shareObservance(observe.id)">share</a>
                 </div><br><br><br>
               </main>
             </div><br>
@@ -784,6 +815,7 @@
                 <div class="goalEdit">
                   <a href="" class="btn" ng-click="$ctrl.editObservance(observe.id)">edit</a>
                   <a href="" class="btn" ng-click="$ctrl.deleteObservance(observe.id)">delete</a>
+                  <a href="" class="btn" ng-click="$ctrl.shareObservance(observe.id)">share</a>
                 </div><br><br><br>
               </main>
             </div><br>
@@ -800,6 +832,7 @@
                 <div class="goalEdit">
                   <a href="" class="btn" ng-click="$ctrl.editObservance(observe.id)">edit</a>
                   <a href="" class="btn" ng-click="$ctrl.deleteObservance(observe.id)">delete</a>
+                  <a href="" class="btn" ng-click="$ctrl.shareObservance(observe.id)">share</a>
                 </div><br><br><br>
               </main>
             </div><br>
@@ -816,6 +849,7 @@
                 <div class="goalEdit">
                   <a href="" class="btn" ng-click="$ctrl.editObservance(observe.id)">edit</a>
                   <a href="" class="btn" ng-click="$ctrl.deleteObservance(observe.id)">delete</a>
+                  <a href="" class="btn" ng-click="$ctrl.shareObservance(observe.id)">share</a>
                 </div><br><br><br>
               </main>
             </div><br>
@@ -832,6 +866,7 @@
                 <div class="goalEdit">
                   <a href="" class="btn" ng-click="$ctrl.editObservance(observe.id)">edit</a>
                   <a href="" class="btn" ng-click="$ctrl.deleteObservance(observe.id)">delete</a>
+                  <a href="" class="btn" ng-click="$ctrl.shareObservance(observe.id)">share</a>
                 </div><br><br><br>
               </main>
             </div><br>
@@ -848,6 +883,7 @@
                 <div class="goalEdit">
                   <a href="" class="btn" ng-click="$ctrl.editObservance(observe.id)">edit</a>
                   <a href="" class="btn" ng-click="$ctrl.deleteObservance(observe.id)">delete</a>
+                  <a href="" class="btn" ng-click="$ctrl.shareObservance(observe.id)">share</a>
                 </div><br><br><br>
               </main>
             </div><br>
@@ -864,6 +900,7 @@
                 <div class="goalEdit">
                   <a href="" class="btn" ng-click="$ctrl.editObservance(observe.id)">edit</a>
                   <a href="" class="btn" ng-click="$ctrl.deleteObservance(observe.id)">delete</a>
+                  <a href="" class="btn" ng-click="$ctrl.shareObservance(observe.id)">share</a>
                 </div><br><br><br>
               </main>
             </div><br>

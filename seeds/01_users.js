@@ -28,7 +28,7 @@ exports.seed = function(knex, Promise) {
           email: 'mayacat505@gmail.com',
           hashed_password: '$2a$12$zlJZuGFGcqgLQyy/nVtoQeafv47g8dNTGTJL/x7EmSbPSiFLi.aMS',
           is_admin: false,
-          user_avatar_url: 'https://scontent-dfw5-2.xx.fbcdn.net/v/t1.0-1/p160x160/37641088_261522804434606_8030668212985135104_n.jpg?_nc_cat=0&oh=ec09ef98cf4d53b3ba4bfd9ee9b40ca9&oe=5BF41101',
+          user_avatar_url: 'https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/44939494_312991242621095_235389956149739520_n.jpg?_nc_cat=105&_nc_ht=scontent-dfw5-1.xx&oh=8c120ad07acbf5688539bd7596ffdf4d&oe=5CA02993',
           associates: {
             "friends": [ 1, 3 ]
           },

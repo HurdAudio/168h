@@ -291,6 +291,122 @@
       vm.userDeleteObservanceShareComment = userDeleteObservanceShareComment;
       vm.userObservanceShareCommentDeleteCancel = userObservanceShareCommentDeleteCancel;
       vm.userObservanceShareCommentDeleteConfirmClick = userObservanceShareCommentDeleteConfirmClick;
+      vm.shareObservance = shareObservance;
+      vm.cancelObservanceInvite = cancelObservanceInvite;
+
+      function cancelObservanceInvite() {
+        let shareObservancePane = document.getElementById('shareObservancePane');
+        let dashboard = document.getElementById('dashboard');
+
+        shareObservancePane.setAttribute("style", "opacity: 0; z-index: -6; transition: opacity 0.5s linear;");
+        dashboard.setAttribute("style", "opacity: 1; z-index: 6; transition: opacity 0.5s linear;");
+      }
+
+      function userDataForObservanceShare(observance, user, searchString, friendId) {
+        let observanceFriendsSearchList = document.getElementById('observanceFriendsSearchList');
+
+        $http.get(`/users/${friendId}`)
+        .then(friendData => {
+          let friend = friendData.data;
+          if (searchString !== '') {
+            if ((friend.name.toLowerCase().indexOf(searchString.toLowerCase()) === -1) && (friend.email.toLowerCase().indexOf(searchString.toLowerCase()) === -1)) {
+              return;
+            }
+          }
+          let theDiv = document.createElement('div');
+          observanceFriendsSearchList.appendChild(theDiv);
+          let theImg = document.createElement('img');
+          theDiv.appendChild(theImg);
+          theImg.src = friend.user_avatar_url;
+          let theP = document.createElement('p');
+          theDiv.appendChild(theP);
+          theP.innerHTML = friend.name;
+          let theBr = document.createElement('br');
+          theDiv.appendChild(theBr);
+          theBr = document.createElement('br');
+          theDiv.appendChild(theBr);
+          theBr = document.createElement('br');
+          theDiv.appendChild(theBr);
+          theBr = document.createElement('br');
+          theDiv.appendChild(theBr);
+          theBr = document.createElement('br');
+          theDiv.appendChild(theBr);
+          theBr = document.createElement('br');
+          theDiv.appendChild(theBr);
+          theDiv.setAttribute("style", "cursor: pointer;");
+
+          theDiv.addEventListener('click', () => {
+            let subObj = {
+              user_id: currentUserId,
+              observance_id: observance.id,
+              share_associate_id: friend.id,
+              accepted: false,
+              responded: false
+            };
+            $http.post('/observance_shares', subObj)
+            .then(postedObservanceShareData => {
+              let postedObservanceShare = postedObservanceShareData.data;
+              cancelObservanceInvite();
+            });
+          });
+
+        });
+      }
+
+      function populateObservanceShareFriendsList(observance, user, searchString) {
+        if ((user.associates !== null) && (user.associates.friends !== null) && (user.associates.friends.length > 0)) {
+          for (let i = 0; i < user.associates.friends.length; i++) {
+            userDataForObservanceShare(observance, user, searchString, user.associates.friends[i]);
+          }
+        }
+      }
+
+      function shareObservance(observanceId) {
+        let shareObservancePane = document.getElementById('shareObservancePane');
+        let dashboard = document.getElementById('dashboard');
+        let observanceShareImage = document.getElementById('observanceShareImage');
+        let observanceShareName = document.getElementById('observanceShareName');
+        let observanceShareDate = document.getElementById('observanceShareDate');
+        let month = [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ];
+        let observanceShareSearchBarDiv = document.getElementById('observanceShareSearchBarDiv');
+        let observanceWhoToShareSearch = document.getElementById('observanceWhoToShareSearch');
+        if (observanceWhoToShareSearch) {
+          observanceWhoToShareSearch.parentNode.removeChild(observanceWhoToShareSearch);
+          observanceWhoToShareSearch = document.createElement('input');
+          observanceShareSearchBarDiv.appendChild(observanceWhoToShareSearch);
+          observanceWhoToShareSearch.id = 'observanceWhoToShareSearch';
+          observanceWhoToShareSearch.type = 'text';
+          observanceWhoToShareSearch.placeholder = 'search';
+        }
+        let observanceFriendsSearchList = document.getElementById('observanceFriendsSearchList');
+        while(observanceFriendsSearchList.firstChild) {
+          observanceFriendsSearchList.removeChild(observanceFriendsSearchList.firstChild);
+        }
+
+        $http.get(`/observances/${observanceId}`)
+        .then(observanceData => {
+          let observance = observanceData.data;
+          let dayOf = new Date(observance.day_of);
+          observanceShareImage.src = observance.picture;
+          observanceShareName.innerHTML = observance.name;
+          observanceShareDate.innerHTML = 'Every ' + dayOf.getDate() + ' ' + month[dayOf.getMonth()];
+          $http.get(`/users/${currentUserId}`)
+          .then(userData => {
+            let user = userData.data;
+            populateObservanceShareFriendsList(observance, user, observanceWhoToShareSearch.value);
+
+            observanceWhoToShareSearch.addEventListener('keyup', () => {
+              while(observanceFriendsSearchList.firstChild) {
+                observanceFriendsSearchList.removeChild(observanceFriendsSearchList.firstChild);
+              }
+              populateObservanceShareFriendsList(observance, user, observanceWhoToShareSearch.value);
+            });
+          });
+        });
+
+        shareObservancePane.setAttribute("style", "opacity: 1; z-index: 6; transition: opacity 0.5s linear;");
+        dashboard.setAttribute("style", "opacity: 0; z-index: -6; transition: opacity 0.5s linear;");
+      }
 
       function userObservanceShareCommentDeleteConfirmClick(commentId, observeId) {
         $http.delete(`/observance_share_comments/${commentId}`)
@@ -1416,11 +1532,11 @@
             let otherUser = otherUserData.data;
             vm.activeObservanceShares[index].inviterImg = otherUser.user_avatar_url;
             if (parseInt(observanceShare.user_id) === parseInt(otherId)) {
-              vm.activeObservanceShares[index].inviter = currentUser.name;
-              vm.activeObservanceShares[index].invitee = otherUser.name;
-            } else {
-              vm.activeObservanceShares[index].inviter = otherUser.name;
               vm.activeObservanceShares[index].invitee = currentUser.name;
+              vm.activeObservanceShares[index].inviter = otherUser.name;
+            } else {
+              vm.activeObservanceShares[index].invitee = otherUser.name;
+              vm.activeObservanceShares[index].inviter = currentUser.name;
             }
           });
         });
@@ -1547,7 +1663,7 @@
                     document.getElementById('observanceShareDeclined' + userObservanceShares[j].id).setAttribute("style", "display: initial;");
                   }
                 } else {
-                  document.getElementById('observanceAcceptDecline' + userObservanceShares[j].id).setAttribute("style", "display: initial;");
+                  document.getElementById('observanceAcceptDecline' + userObservanceShares[j].id).setAttribute("style", "display: none;");
                   document.getElementById('observanceShareAccepted' + userObservanceShares[j].id).setAttribute("style", "display: none;");
                   document.getElementById('observanceShareDeclined' + userObservanceShares[j].id).setAttribute("style", "display: none;");
                 }

@@ -501,9 +501,12 @@
           <br>
           <img src="{{observance.picture}}">
           <p>{{observance.name}}</p>
+
+          <a class="btn" href="#" ng-click="$ctrl.shareObservance(observance.id)">share</a>
           <br>
           <br>
         </div>
+
 
 
       </main>
@@ -868,6 +871,33 @@
     <input type="text" id="taskWhoToShareSearch" placeholder="search">
   </div>
   <div id="taskFriendsSearchList">
+
+
+    <div>
+
+      <img src="https://pbs.twimg.com/profile_images/3511787126/e23647c60fe7cee53e4d2d37a50a255c_400x400.jpeg">
+      <p>Lucifer Sam</p>
+      <br><br><br>
+    </div>
+  </div>
+</div>
+
+<div id="shareObservancePane">
+  <a class="btn" ng-click="$ctrl.cancelObservanceInvite()" href="#">cancel</a>
+  <div id="observanceShareIdentifierFields">
+
+    <img id="observanceShareImage">
+
+    <h3 id="observanceShareName"></h3>
+    <h3 id="observanceShareDate"></h3>
+
+
+  </div>
+  <h3>Select who you want to share this observance with:</h3>
+  <div id="shareObservanceSearchBarDiv">
+    <input type="text" id="taskWhoToShareObservanceSearch" placeholder="search">
+  </div>
+  <div id="observanceFriendsSearchList">
 
 
     <div>
