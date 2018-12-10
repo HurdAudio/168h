@@ -998,6 +998,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#EAFA84',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 72,
+          user_id: 1,
+          theme: 'Greenery',
+          type: 'holiday',
+          src_string: '../img/may_tiles/ryan-waxberg-133317-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '155%',
+          color_dark: '#1B1611',
+          color_medium: '#E5A803',
+          color_light: '#ECF0FF',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
