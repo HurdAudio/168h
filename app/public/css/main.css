@@ -1534,7 +1534,7 @@ a.btn:hover {
 }
 
 #pomodoro h4 {
-  font-size: 36px;
+  font-size: 30px;
   background-image: url(../img/food-2027563.svg);
   background-repeat: no-repeat;
   background-size: 50%;
@@ -4018,6 +4018,8 @@ footer img {
 #blockEditorForm a {
   float: left;
   margin-left: 1.5em;
+  margin-right: 80%;
+
 }
 
 #userProfilePhotoForm {

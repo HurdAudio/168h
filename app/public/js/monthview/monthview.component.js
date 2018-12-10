@@ -300,6 +300,7 @@
 
       function gotoProfile() {
         monthClock = false;
+        window.clearInterval(setClock);
         $state.go('userprofile', {id: currentUserId});
       }
 
@@ -308,6 +309,7 @@
         navDay.setDate(navDay.getDate());
         let idString = 'user=' + currentUserId + '&dayof=' + navDay.getFullYear() + '-' + (navDay.getMonth() + 1) + '-' + navDay.getDate();
         monthClock = false;
+        window.clearInterval(setClock);
         $state.go('dayview', {id: idString});
       }
 
@@ -321,6 +323,7 @@
           }
         }
         let idString = 'user=' + currentUserId + '&weekof=' + navDay.getFullYear() + '-' + (navDay.getMonth() + 1) + '-' + navDay.getDate();
+        window.clearInterval(setClock);
         $state.go('weekview', {id: idString});
       }
 
@@ -328,6 +331,7 @@
         let navDay = new Date();
         navDay.setDate(navDay.getDate());
         let idString = 'user=' +currentUserId + '&year=' + navDay.getFullYear() + '&month=' + (navDay.getMonth() + 1);
+        window.clearInterval(setClock);
         $state.go('monthview', {id: idString});
       }
 
@@ -342,6 +346,7 @@
           --month;
         }
         let idString = 'user=' + currentUserId + '&year=' + year + '&month=' + month;
+        window.clearInterval(setClock);
         $state.go('monthview', {id: idString});
       }
 
@@ -356,6 +361,7 @@
           ++month;
         }
         let idString = 'user=' + currentUserId + '&year=' + year + '&month=' + month;
+        window.clearInterval(setClock);
         $state.go('monthview', {id: idString});
       }
 
@@ -423,6 +429,7 @@
           let navDate = new Date(indexDate);
           let idString = 'user=' + currentUserId + '&dayof=' + navDate.getFullYear() + '-' + (navDate.getMonth() + 1) + '-' + navDate.getDate();
           monthClock = false;
+          window.clearInterval(setClock);
           $state.go('dayview', {id: idString});
         });
       }
@@ -448,6 +455,7 @@
           let navDay = new Date(dateString);
           let idString = 'user=' + currentUserId + '&weekof=' + navDay.getFullYear() + '-' + (navDay.getMonth() + 1) + '-' + navDay.getDate();
           monthClock = false;
+          window.clearInterval(setClock);
           $state.go('weekview', {id: idString});
         });
       }
@@ -672,6 +680,7 @@
 
           alert('forbidden user access');
           monthClock = false;
+          window.clearInterval(setClock);
           $state.go('landing');
         } else {
           $http.get(`/users/${currentUserId}`)
@@ -681,6 +690,7 @@
 
               alert('access denied');
               monthClock = false;
+              window.clearInterval(setClock);
               $state.go('landing');
             }
           });
