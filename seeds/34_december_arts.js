@@ -7704,6 +7704,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 386,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/40-06,TopNotch.jpg',
+          title: 'Top-Notch',
+          artist: 'Ed Ashe, Jr.',
+          year: '1940',
+          rule: {
+            "monday": [ 27, 8, 17, 23 ],
+            "tuesday": [ 26, 8, 16, 22 ],
+            "wednesday": [ 25, 7, 15, 21 ],
+            "thursday": [ 24, 6, 14, 20 ],
+            "friday": [ 23, 4, 3, 19 ],
+            "saturday": [ 22, 4, 23, 30 ],
+            "sunday": [ 28, 10, 18, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 387,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/42-07,Samar.jpg',
+          title: 'Samar',
+          artist: 'Raphael Astarita',
+          year: '1942',
+          rule: {
+            "monday": [ 28, 10, 18, 24 ],
+            "tuesday": [ 27, 8, 17, 23 ],
+            "wednesday": [ 26, 8, 16, 22 ],
+            "thursday": [ 25, 7, 15, 21 ],
+            "friday": [ 24, 6, 14, 20 ],
+            "saturday": [ 23, 4, 3, 19 ],
+            "sunday": [ 22, 4, 23, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 388,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/19-11,TheCentury.jpg',
+          title: 'The Century',
+          artist: 'George Avison',
+          year: '1919',
+          rule: {
+            "monday": [ 22, 4, 23, 30 ],
+            "tuesday": [ 28, 10, 18, 24 ],
+            "wednesday": [ 27, 8, 17, 23 ],
+            "thursday": [ 26, 8, 16, 22 ],
+            "friday": [ 25, 7, 15, 21 ],
+            "saturday": [ 24, 6, 14, 20 ],
+            "sunday": [ 23, 4, 3, 19 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 389,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/39-00,CliffCornwall2.jpg',
+          title: 'Cliff Cornwall',
+          artist: 'John E. Ayman',
+          year: '1940',
+          rule: {
+            "monday": [ 23, 4, 3, 19 ],
+            "tuesday": [ 22, 4, 23, 30 ],
+            "wednesday": [ 28, 10, 18, 24 ],
+            "thursday": [ 27, 8, 17, 23 ],
+            "friday": [ 26, 8, 16, 22 ],
+            "saturday": [ 25, 7, 15, 21 ],
+            "sunday": [ 24, 6, 14, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 390,
+          user_id: 1,
+          theme: 'Pulp Art',
+          img_path: './img/december/28-01-28,LoveS.jpg',
+          title: 'Love Story',
+          artist: 'Constance Benson Bailey',
+          year: '1928',
+          rule: {
+            "monday": [ 24, 6, 14, 20 ],
+            "tuesday": [ 23, 4, 3, 19 ],
+            "wednesday": [ 22, 4, 23, 30 ],
+            "thursday": [ 28, 10, 18, 24 ],
+            "friday": [ 27, 8, 17, 23 ],
+            "saturday": [ 26, 8, 16, 22 ],
+            "sunday": [ 25, 7, 15, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
