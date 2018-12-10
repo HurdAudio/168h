@@ -1026,6 +1026,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#DFF5FD',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 74,
+          user_id: 1,
+          theme: 'Glass',
+          type: 'friday',
+          src_string: '../img/march_tiles/sandra-seitamaa-1207206-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '160%',
+          color_dark: '#072221',
+          color_medium: '#238D25',
+          color_light: '#FBFBFB',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
