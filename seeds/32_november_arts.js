@@ -7904,6 +7904,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 396,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/double-rhythm-1991.jpg',
+          title: 'Double Rhythm',
+          artist: 'Daniel Buren',
+          year: '1991',
+          rule: {
+            "monday": [ 29, 4, 10, 15 ],
+            "tuesday": [ 28, 3, 9, 16 ],
+            "wednesday": [ 4, 9, 15, 20 ],
+            "thursday": [ 3, 5, 13, 19 ],
+            "friday": [ 2, 6, 13, 17 ],
+            "saturday": [ 1, 4, 11, 16 ],
+            "sunday": [ 30, 4, 11, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 397,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/signal-1991.jpg',
+          title: 'Signal',
+          artist: 'Yves Gaucher',
+          year: '1991',
+          rule: {
+            "monday": [ 30, 4, 11, 16 ],
+            "tuesday": [ 29, 4, 10, 15 ],
+            "wednesday": [ 28, 3, 9, 16 ],
+            "thursday": [ 4, 9, 15, 20 ],
+            "friday": [ 3, 5, 13, 19 ],
+            "saturday": [ 2, 6, 13, 17 ],
+            "sunday": [ 1, 4, 11, 16 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 398,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/monologue-1991.jpg',
+          title: 'Monologue',
+          artist: 'Callum Innes',
+          year: '1991',
+          rule: {
+            "monday": [ 1, 4, 11, 16 ],
+            "tuesday": [ 30, 4, 11, 16 ],
+            "wednesday": [ 29, 4, 10, 15 ],
+            "thursday": [ 28, 3, 9, 16 ],
+            "friday": [ 4, 9, 15, 20 ],
+            "saturday": [ 3, 5, 13, 19 ],
+            "sunday": [ 2, 6, 13, 17 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 399,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/20-part-line-painting-1991.jpg',
+          title: '20 Part Line Painting',
+          artist: 'Alan Charlton',
+          year: '1991',
+          rule: {
+            "monday": [ 3, 7, 14, 18 ],
+            "tuesday": [ 2, 5, 12, 17 ],
+            "wednesday": [ 1, 5, 12, 17 ],
+            "thursday": [ 30, 5, 11, 16 ],
+            "friday": [ 29, 4, 10, 17 ],
+            "saturday": [ 5, 10, 16, 21 ],
+            "sunday": [ 4, 6, 14, 20 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 400,
+          user_id: 1,
+          theme: 'Minimalism',
+          img_path: './img/november/scatola-di-colore-1991.jpg',
+          title: 'Scatola di colore',
+          artist: 'Ettore Spalletti',
+          year: '1991',
+          rule: {
+            "monday": [ 4, 6, 14, 20 ],
+            "tuesday": [ 3, 7, 14, 18 ],
+            "wednesday": [ 2, 5, 12, 17 ],
+            "thursday": [ 1, 5, 12, 17 ],
+            "friday": [ 30, 5, 11, 16 ],
+            "saturday": [ 29, 4, 10, 17 ],
+            "sunday": [ 5, 10, 16, 21 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
