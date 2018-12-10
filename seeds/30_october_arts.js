@@ -8104,6 +8104,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 406,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_sovpolpost_00090.jpg',
+          title: 'They only have plenty for the rich...',
+          artist: 'V. Govorkov',
+          year: '1957',
+          rule: {
+            "monday": [ 31, 11, 22, 26 ],
+            "tuesday": [ 30, 10, 21, 25 ],
+            "wednesday": [ 29, 9, 20, 24 ],
+            "thursday": [ 28, 8, 18, 23 ],
+            "friday": [ 6, 7, 18, 22 ],
+            "saturday": [ 2, 13, 24, 28 ],
+            "sunday": [ 1, 12, 23, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 407,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_sovpolpost_00089.jpg',
+          title: 'Freedom of the Arab nation can not be strangled.',
+          artist: 'V. Koretsky',
+          year: '1958',
+          rule: {
+            "monday": [ 1, 12, 23, 27 ],
+            "tuesday": [ 31, 11, 22, 26 ],
+            "wednesday": [ 30, 10, 21, 25 ],
+            "thursday": [ 29, 9, 20, 24 ],
+            "friday": [ 28, 8, 18, 23 ],
+            "saturday": [ 6, 7, 18, 22 ],
+            "sunday": [ 2, 13, 24, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 408,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_sovpolpost_00088.jpg',
+          title: 'To stop an aggressor!',
+          artist: 'N.Tereshenko',
+          year: '1958',
+          rule: {
+            "monday": [ 2, 13, 24, 28 ],
+            "tuesday": [ 1, 12, 23, 27 ],
+            "wednesday": [ 31, 11, 22, 26 ],
+            "thursday": [ 30, 10, 21, 25 ],
+            "friday": [ 29, 9, 20, 24 ],
+            "saturday": [ 28, 8, 18, 23 ],
+            "sunday": [ 6, 7, 18, 22 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 409,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_sovpolpost_00086.jpg',
+          title: 'The 6th World Festival of Youth and Students',
+          artist: '?',
+          year: '1956',
+          rule: {
+            "monday": [ 6, 7, 18, 22 ],
+            "tuesday": [ 2, 13, 24, 28 ],
+            "wednesday": [ 1, 12, 23, 27 ],
+            "thursday": [ 31, 11, 22, 26 ],
+            "friday": [ 30, 10, 21, 25 ],
+            "saturday": [ 29, 9, 20, 24 ],
+            "sunday": [ 28, 8, 18, 23 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 410,
+          user_id: 1,
+          theme: 'Russian Revolution',
+          img_path: './img/october/popup_sovpolpost_00085.jpg',
+          title: 'Let the unbreakable friendship and cooperation of Soviet and Chinese nations live and become stronger! ',
+          artist: '?',
+          year: '1951',
+          rule: {
+            "monday": [ 28, 8, 18, 23 ],
+            "tuesday": [ 6, 7, 18, 22 ],
+            "wednesday": [ 2, 13, 24, 28 ],
+            "thursday": [ 1, 12, 23, 27 ],
+            "friday": [ 31, 11, 22, 26 ],
+            "saturday": [ 30, 10, 21, 25 ],
+            "sunday": [ 29, 9, 20, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
