@@ -4108,6 +4108,60 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 229,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=1948892528/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://repsych.bandcamp.com/album/freddy-roland-la-danza-de-la-chiva-cumbia-peru-60s-afro-roots-latin-sax-descarga',
+          a_string: 'Freddy Roland &quot;La danza de la chiva&quot; (Cumbia Peru 60&#39;s Afro Roots * Latin Sax Descarga) by Freddy Roland',
+          rule: {
+            "monday": [ 3, 11, 17, 23 ],
+            "tuesday": [ 4, 10, 16, 22 ],
+            "wednesday": [ 8, 14, 20, 26 ],
+            "thursday": [ 7, 13, 19, 25 ],
+            "saturday": [ 4, 12, 18, 24 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 230,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=3976533638/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://repsych.bandcamp.com/album/guaranguito-peru-70s-afro-andean-cumbia-roots-breaks-sax-percussions-dj-samples',
+          a_string: 'Guaranguito (Peru 70&#39;s Afro Andean Cumbia Roots Breaks - Sax &amp; Percussions - DJ Samples) by Los Ases de Huarochiri',
+          rule: {
+            "monday": [ 4, 12, 18, 24 ],
+            "tuesday": [ 3, 11, 17, 23 ],
+            "wednesday": [ 4, 10, 16, 22 ],
+            "thursday": [ 8, 14, 20, 26 ],
+            "saturday": [ 7, 13, 19, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 231,
+          user_id: 1,
+          theme: 'Brazil & Pan-South American',
+          source: 'bandcamp',
+          src_string: 'https://bandcamp.com/EmbeddedPlayer/album=2231993916/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/',
+          href_string: 'http://repsych.bandcamp.com/album/ritmo-veregua-peru-60s-afro-boogaloo-descarga-latin-mambo-roots-guaracha',
+          a_string: 'Ritmo Veregua (Peru 60s Afro Boogaloo Descarga Latin Mambo Roots Guaracha) by Tito Chicoma y orquesta',
+          rule: {
+            "monday": [ 8, 14, 20, 26 ],
+            "tuesday": [ 5, 13, 19, 25 ],
+            "wednesday": [ 4, 12, 18, 24 ],
+            "thursday": [ 5, 11, 17, 23 ],
+            "saturday": [ 9, 15, 21, 27 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
