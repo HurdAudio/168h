@@ -956,6 +956,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#ECF2F0',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 69,
+          user_id: 1,
+          theme: 'Primary Colors',
+          type: 'friday',
+          src_string: '../img/august_tiles/jon-moore-407162-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '155%',
+          color_dark: '#0F0203',
+          color_medium: '#D70029',
+          color_light: '#FF98B6',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
