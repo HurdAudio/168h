@@ -900,6 +900,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#F9F9F9',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 65,
+          user_id: 1,
+          theme: 'Snow',
+          type: 'saturday',
+          src_string: '../img/december_tiles/denys-nevozhai-185408-unsplash.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '155%',
+          color_dark: '#070603',
+          color_medium: '#575E7E',
+          color_light: '#FFFCFB',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {

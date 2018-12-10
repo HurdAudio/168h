@@ -2704,6 +2704,66 @@ exports.seed = function(knex, Promise) {
           public: true,
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 226,
+          user_author_id: 1,
+          theme: 'Abandoned Places',
+          img_path: './img/modules/Adam-Jacobs-Photography-Abandoned-Spaces-Landscape-9(web).jpg',
+          title: 'Abandoned Spaces Landscape #9',
+          artist: 'Adam Jacobs',
+          year: '?',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 227,
+          user_author_id: 1,
+          theme: 'Abandoned Places',
+          img_path: './img/modules/Miami+Marine+Stadium_Adam+Jacobs+Photography-1.jpg',
+          title: 'Miami Marine Stadium',
+          artist: 'Adam Jacobs',
+          year: '?',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 228,
+          user_author_id: 1,
+          theme: 'Abandoned Places',
+          img_path: './img/modules/Abandoned+Spaces_Detroit_Adam+Jacobs+Photography+(2+of+24).jpg',
+          title: 'Abandoned Spaces - Detroit',
+          artist: 'Adam Jacobs',
+          year: '?',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 229,
+          user_author_id: 1,
+          theme: 'Abandoned Places',
+          img_path: './img/modules/Abandoned+Assembly+Hall-2.jpg',
+          title: 'Abandoned Assembly Hall',
+          artist: '',
+          year: '',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 230,
+          user_author_id: 1,
+          theme: 'Abandoned Places',
+          img_path: './img/modules/Abandoned+Spaces_Detroit_Adam+Jacobs+Photography+(11+of+24).jpg',
+          title: 'Abandoned Spaces - Detroit',
+          artist: 'Adam Jacobs',
+          year: '?',
+          public: true,
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
