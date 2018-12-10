@@ -942,6 +942,20 @@ exports.seed = function(knex, Promise) {
           color_light: '#CAC6AF',
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 68,
+          user_id: 1,
+          theme: 'Leather',
+          type: 'week',
+          src_string: '../img/september_tiles/clean-leather-chair.jpg',
+          repeat_value: 'no-repeat',
+          size_value: '160%',
+          color_dark: '#010607',
+          color_medium: '#6B221B',
+          color_light: '#E4D2C4',
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
