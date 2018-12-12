@@ -8504,6 +8504,106 @@ exports.seed = function(knex, Promise) {
           },
           created_at: new Date('2017-07-20T13:44:00.000Z'),
           updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 426,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/woman-in-black-stockings-1913.jpg',
+          title: 'Woman in Black Stockings',
+          artist: 'Egon Schiele',
+          year: '1913',
+          rule: {
+            "monday": [ 30, 3, 11, 27 ],
+            "tuesday": [ 29, 31, 10, 26 ],
+            "wednesday": [ 28, 31, 9, 25 ],
+            "thursday": [ 27, 30, 8, 24 ],
+            "friday": [ 2, 6, 14, 30 ],
+            "saturday": [ 1, 4, 13, 29 ],
+            "sunday": [ 31, 4, 12, 28 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 427,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/frances-foley-1927.jpg',
+          title: 'Frances Foley',
+          artist: 'Edwin Dickinson',
+          year: '1927',
+          rule: {
+            "monday": [ 1, 5, 13, 29 ],
+            "tuesday": [ 31, 4, 12, 28 ],
+            "wednesday": [ 30, 1, 11, 27 ],
+            "thursday": [ 29, 1, 10, 26 ],
+            "friday": [ 28, 31, 9, 25 ],
+            "saturday": [ 3, 7, 15, 31 ],
+            "sunday": [ 2, 5, 14, 30 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 428,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/marina-1927.jpg',
+          title: 'Marina',
+          artist: 'Armando Reveron',
+          year: '1927',
+          rule: {
+            "monday": [ 2, 5, 14, 30 ],
+            "tuesday": [ 1, 5, 13, 29 ],
+            "wednesday": [ 31, 4, 12, 28 ],
+            "thursday": [ 30, 1, 11, 27 ],
+            "friday": [ 29, 1, 10, 26 ],
+            "saturday": [ 28, 31, 9, 25 ],
+            "sunday": [ 3, 7, 15, 31 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 429,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/old-kahala-home-1928.jpg',
+          title: 'Old Kahala Home',
+          artist: 'Arman Manookian',
+          year: '1928',
+          rule: {
+            "monday": [ 3, 7, 15, 31 ],
+            "tuesday": [ 2, 5, 14, 30 ],
+            "wednesday": [ 1, 5, 13, 29 ],
+            "thursday": [ 31, 4, 12, 28 ],
+            "friday": [ 30, 1, 11, 27 ],
+            "saturday": [ 29, 1, 10, 26 ],
+            "sunday": [ 28, 31, 9, 25 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
+        },
+        {
+          id: 430,
+          user_id: 1,
+          theme: 'Modern Art before World War II',
+          img_path: './img/august/reptil-que-sube-1920.jpg',
+          title: 'Reptil que sube',
+          artist: 'Xul Solar',
+          year: '1920',
+          rule: {
+            "monday": [ 28, 31, 9, 25 ],
+            "tuesday": [ 3, 7, 15, 31 ],
+            "wednesday": [ 2, 5, 14, 30 ],
+            "thursday": [ 1, 5, 13, 29 ],
+            "friday": [ 31, 4, 12, 28 ],
+            "saturday": [ 30, 1, 11, 27 ],
+            "sunday": [ 29, 1, 10, 26 ]
+          },
+          created_at: new Date('2017-07-20T13:44:00.000Z'),
+          updated_at: new Date('2017-07-20T13:44:00.000Z')
         }
       ]);
     }).then(() => {
